@@ -10,30 +10,30 @@
    "CRM",
    "DXCM",
    "AXON",
-   "VOW3.DE",
    "MELI",
    "SY1.DE",
-   "HEN3.DE",
    "BNR.DE",
    "KHC",
-   "P911.DE"
+   "HEN3.DE",
+   "P911.DE",
+   "DASH"
   ],
   "momentum": [
    "ALV.DE",
    "MRK",
-   "DB1.DE",
    "PANW",
+   "DB1.DE",
    "ABNB",
    "CRWD",
    "RWE.DE",
    "FTNT",
    "DHL.DE",
-   "TRV",
+   "CBK.DE",
+   "AMZN",
    "JNJ",
    "KO",
-   "AMZN",
-   "MMM",
-   "CVX"
+   "AMGN",
+   "CSX"
   ],
   "value": [
    "MU",
@@ -57,22 +57,14 @@
   "turnaround": {
    "entries": [
     {
-     "ticker": "VOW3.DE",
-     "rank": 9
-    },
-    {
-     "ticker": "P911.DE",
+     "ticker": "DASH",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "DASH",
-     "old_rank": 14
-    },
-    {
-     "ticker": "SHW",
-     "old_rank": 15
+     "ticker": "VOW3.DE",
+     "old_rank": 9
     }
    ],
    "moves": []
@@ -80,14 +72,30 @@
   "momentum": {
    "entries": [
     {
-     "ticker": "CVX",
+     "ticker": "CBK.DE",
+     "rank": 10
+    },
+    {
+     "ticker": "AMGN",
+     "rank": 14
+    },
+    {
+     "ticker": "CSX",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "SIE.DE",
+     "ticker": "TRV",
+     "old_rank": 10
+    },
+    {
+     "ticker": "MMM",
      "old_rank": 14
+    },
+    {
+     "ticker": "CVX",
+     "old_rank": 15
     }
    ],
    "moves": []

@@ -1,0 +1,7505 @@
+{
+ "date": "2026-08-20",
+ "generated": "2026-08-20T08:30:16+00:00",
+ "ranks": {
+  "turnaround": [
+   "ROP",
+   "WDAY",
+   "BAYN.DE",
+   "FRE.DE",
+   "BEI.DE",
+   "CRM",
+   "CDW",
+   "DXCM",
+   "ADSK",
+   "SHL.DE",
+   "AXON",
+   "BIIB",
+   "MELI",
+   "ZS",
+   "QIA.DE"
+  ],
+  "momentum": [
+   "ALV.DE",
+   "MRK",
+   "DB1.DE",
+   "PANW",
+   "ABNB",
+   "CRWD",
+   "RWE.DE",
+   "FTNT",
+   "DHL.DE",
+   "CBK.DE",
+   "TRV",
+   "DBK.DE",
+   "JNJ",
+   "AMZN",
+   "KO"
+  ],
+  "value": [
+   "MU",
+   "ADBE",
+   "NVDA",
+   "ADSK",
+   "CSCO",
+   "NXPI",
+   "AMAT",
+   "AVGO",
+   "REGN",
+   "CRM",
+   "CVX",
+   "TXN",
+   "LRCX",
+   "ENR.DE",
+   "MSFT"
+  ]
+ },
+ "rows": {
+  "AAPL": {
+   "name": "Apple Inc.",
+   "index": "NASDAQ/DOW",
+   "metrics": {
+    "last": 316.83,
+    "dd_ath": -6.8,
+    "days_since_ath": 22,
+    "range_pos": 80.2,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 1.51,
+    "sma200_slope": 2.15,
+    "higher_low": true,
+    "rsi14": 54.0,
+    "rsi_min60": 32.2,
+    "perf": {
+     "m1": -3.2,
+     "m3": 6.1,
+     "m6": 20.1,
+     "m12": 37.7
+    },
+    "rs6": 1.9,
+    "vol_ratio": 1.02
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 59.3,
+    "momentum": 61.1,
+    "value": 77.9
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben",
+     "RSI erholt sich aus dem ueberverkauften Bereich"
+    ],
+    "momentum": [
+     "nur 7% unter ATH",
+     "ueber 50- und 200-Tage-Linie"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 16%"
+    ]
+   }
+  },
+  "ABNB": {
+   "name": "Airbnb, Inc.",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 186.39,
+    "dd_ath": -14.0,
+    "days_since_ath": 2015,
+    "range_pos": 100.0,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 8.71,
+    "sma200_slope": 3.06,
+    "higher_low": true,
+    "rsi14": 72.4,
+    "rsi_min60": 39.0,
+    "perf": {
+     "m1": 29.3,
+     "m3": 42.1,
+     "m6": 50.0,
+     "m12": 48.5
+    },
+    "rs6": 31.8,
+    "vol_ratio": 1.32
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 58.5,
+    "momentum": 84.6,
+    "value": 84.7
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben",
+     "Anstiege auf hoeherem Volumen"
+    ],
+    "momentum": [
+     "relative Staerke +32% vs. Index",
+     "ueber 50- und 200-Tage-Linie",
+     "200-Tage-Linie steigt"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 16%"
+    ]
+   }
+  },
+  "ADBE": {
+   "name": "Adobe Inc.",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 272.47,
+    "dd_ath": -60.4,
+    "days_since_ath": 1734,
+    "range_pos": 45.4,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 0.98,
+    "sma200_slope": -3.22,
+    "higher_low": true,
+    "rsi14": 61.4,
+    "rsi_min60": 27.7,
+    "perf": {
+     "m1": 19.9,
+     "m3": 6.9,
+     "m6": 3.5,
+     "m12": -23.7
+    },
+    "rs6": -14.6,
+    "vol_ratio": 0.89
+   },
+   "flags": [],
+   "earnings_in": 21,
+   "scores": {
+    "turnaround": 78.2,
+    "momentum": 20.0,
+    "value": 100.2
+   },
+   "why": {
+    "turnaround": [
+     "-60% unter ATH",
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "RSI erholt sich aus dem ueberverkauften Bereich"
+    ],
+    "momentum": [
+     "ueber 50- und 200-Tage-Linie"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "PEG 0.64",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 13%"
+    ]
+   }
+  },
+  "ADI": {
+   "name": "Analog Devices, Inc.",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 373.26,
+    "dd_ath": -16.2,
+    "days_since_ath": 58,
+    "range_pos": 67.5,
+    "above_sma50": false,
+    "above_sma200": true,
+    "sma50_slope": -3.72,
+    "sma200_slope": 4.3,
+    "higher_low": true,
+    "rsi14": 45.0,
+    "rsi_min60": 34.8,
+    "perf": {
+     "m1": -2.5,
+     "m3": -9.7,
+     "m6": 8.4,
+     "m12": 63.4
+    },
+    "rs6": -9.8,
+    "vol_ratio": 0.96
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 40.4,
+    "momentum": 31.8,
+    "value": 87.3
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "RSI erholt sich aus dem ueberverkauften Bereich"
+    ],
+    "momentum": [
+     "200-Tage-Linie steigt"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "PEG 0.69",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 37%"
+    ]
+   }
+  },
+  "ADP": {
+   "name": "Automatic Data Processing, Inc.",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 277.22,
+    "dd_ath": -12.4,
+    "days_since_ath": 439,
+    "range_pos": 79.3,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 8.33,
+    "sma200_slope": -0.38,
+    "higher_low": true,
+    "rsi14": 63.3,
+    "rsi_min60": 42.5,
+    "perf": {
+     "m1": 12.6,
+     "m3": 26.7,
+     "m6": 29.7,
+     "m12": -5.9
+    },
+    "rs6": 11.5,
+    "vol_ratio": 1.08
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 56.5,
+    "momentum": 59.0,
+    "value": 68.6
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben"
+    ],
+    "momentum": [
+     "ueber 50- und 200-Tage-Linie"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "ADSK": {
+   "name": "Autodesk, Inc.",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 251.29,
+    "dd_ath": -26.6,
+    "days_since_ath": 1820,
+    "range_pos": 45.7,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 0.62,
+    "sma200_slope": -2.67,
+    "higher_low": true,
+    "rsi14": 60.6,
+    "rsi_min60": 26.0,
+    "perf": {
+     "m1": 19.0,
+     "m3": 2.9,
+     "m6": 9.4,
+     "m12": -13.2
+    },
+    "rs6": -8.8,
+    "vol_ratio": 1.09
+   },
+   "flags": [],
+   "earnings_in": 7,
+   "scores": {
+    "turnaround": 83.1,
+    "momentum": 25.4,
+    "value": 94.8
+   },
+   "why": {
+    "turnaround": [
+     "-27% unter ATH",
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "RSI erholt sich aus dem ueberverkauften Bereich"
+    ],
+    "momentum": [
+     "ueber 50- und 200-Tage-Linie"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "PEG 0.96",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 18%"
+    ]
+   }
+  },
+  "AEP": {
+   "name": "American Electric Power Company",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 126.27,
+    "dd_ath": -8.3,
+    "days_since_ath": 54,
+    "range_pos": 66.9,
+    "above_sma50": false,
+    "above_sma200": true,
+    "sma50_slope": -0.03,
+    "sma200_slope": 1.08,
+    "higher_low": false,
+    "rsi14": 44.4,
+    "rsi_min60": 31.4,
+    "perf": {
+     "m1": -2.5,
+     "m3": -1.3,
+     "m6": 0.7,
+     "m12": 17.6
+    },
+    "rs6": -17.5,
+    "vol_ratio": 0.95
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 20.7,
+    "momentum": 32.6,
+    "value": 46.0
+   },
+   "why": {
+    "turnaround": [
+     "RSI erholt sich aus dem ueberverkauften Bereich"
+    ],
+    "momentum": [
+     "nur 8% unter ATH"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem"
+    ]
+   }
+  },
+  "AMAT": {
+   "name": "Applied Materials, Inc.",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 496.17,
+    "dd_ath": -31.4,
+    "days_since_ath": 50,
+    "range_pos": 60.0,
+    "above_sma50": false,
+    "above_sma200": true,
+    "sma50_slope": 5.24,
+    "sma200_slope": 8.17,
+    "higher_low": true,
+    "rsi14": 43.8,
+    "rsi_min60": 33.6,
+    "perf": {
+     "m1": -12.1,
+     "m3": 22.1,
+     "m6": 34.7,
+     "m12": 205.6
+    },
+    "rs6": 16.5,
+    "vol_ratio": 0.97
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 75.5,
+    "momentum": 37.9,
+    "value": 92.4
+   },
+   "why": {
+    "turnaround": [
+     "-31% unter ATH",
+     "hoeheres Tief",
+     "50-Tage-Linie dreht nach oben",
+     "RSI erholt sich aus dem ueberverkauften Bereich"
+    ],
+    "momentum": [
+     "relative Staerke +16% vs. Index",
+     "200-Tage-Linie steigt"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "PEG 1.09",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 25%"
+    ]
+   }
+  },
+  "AMD": {
+   "name": "Advanced Micro Devices, Inc.",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 466.42,
+    "dd_ath": -19.7,
+    "days_since_ath": 50,
+    "range_pos": 73.4,
+    "above_sma50": false,
+    "above_sma200": true,
+    "sma50_slope": 0.9,
+    "sma200_slope": 8.44,
+    "higher_low": true,
+    "rsi14": 44.2,
+    "rsi_min60": 36.0,
+    "perf": {
+     "m1": -14.3,
+     "m3": 12.6,
+     "m6": 133.1,
+     "m12": 164.8
+    },
+    "rs6": 114.9,
+    "vol_ratio": 0.91
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 39.9,
+    "momentum": 53.5,
+    "value": 82.7
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief"
+    ],
+    "momentum": [
+     "relative Staerke +115% vs. Index",
+     "200-Tage-Linie steigt"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "PEG 1.10",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 50%"
+    ]
+   }
+  },
+  "AMGN": {
+   "name": "Amgen Inc.",
+   "index": "NASDAQ/DOW",
+   "metrics": {
+    "last": 442.36,
+    "dd_ath": 0.0,
+    "days_since_ath": 0,
+    "range_pos": 100.0,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 7.68,
+    "sma200_slope": 3.36,
+    "higher_low": true,
+    "rsi14": 79.8,
+    "rsi_min60": 42.1,
+    "perf": {
+     "m1": 20.8,
+     "m3": 33.7,
+     "m6": 17.4,
+     "m12": 55.7
+    },
+    "rs6": -0.8,
+    "vol_ratio": 1.02
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 48.1,
+    "momentum": 70.3,
+    "value": 71.4
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben"
+    ],
+    "momentum": [
+     "nur 0% unter ATH",
+     "ueber 50- und 200-Tage-Linie",
+     "200-Tage-Linie steigt"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 10%"
+    ]
+   }
+  },
+  "AMZN": {
+   "name": "Amazon.com, Inc.",
+   "index": "NASDAQ/DOW",
+   "metrics": {
+    "last": 265.84,
+    "dd_ath": -6.4,
+    "days_since_ath": 16,
+    "range_pos": 78.7,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": -0.64,
+    "sma200_slope": 1.6,
+    "higher_low": false,
+    "rsi14": 55.6,
+    "rsi_min60": 32.5,
+    "perf": {
+     "m1": 7.4,
+     "m3": 2.5,
+     "m6": 29.8,
+     "m12": 14.8
+    },
+    "rs6": 11.6,
+    "vol_ratio": 1.4
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 40.9,
+    "momentum": 74.3,
+    "value": 73.1
+   },
+   "why": {
+    "turnaround": [
+     "ueber 50-Tage-Linie",
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "Anstiege auf hoeherem Volumen"
+    ],
+    "momentum": [
+     "nur 6% unter ATH",
+     "ueber 50- und 200-Tage-Linie"
+    ],
+    "value": [
+     "PEG 1.40",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 20%"
+    ]
+   }
+  },
+  "APP": {
+   "name": "Applovin Corporation",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 310.79,
+    "dd_ath": -57.6,
+    "days_since_ath": 240,
+    "range_pos": 1.6,
+    "above_sma50": false,
+    "above_sma200": false,
+    "sma50_slope": -13.26,
+    "sma200_slope": -4.58,
+    "higher_low": false,
+    "rsi14": 30.5,
+    "rsi_min60": 26.6,
+    "perf": {
+     "m1": -27.5,
+     "m3": -34.8,
+     "m6": -23.1,
+     "m12": -29.1
+    },
+    "rs6": -41.3,
+    "vol_ratio": 0.87
+   },
+   "flags": [
+    "200-Tage-Linie faellt steil"
+   ],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 22.0,
+    "momentum": 0.0,
+    "value": 90.9
+   },
+   "why": {
+    "turnaround": [
+     "-58% unter ATH"
+    ],
+    "momentum": [],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "PEG 0.87",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 53%"
+    ]
+   }
+  },
+  "ARM": {
+   "name": "Arm Holdings plc",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 249.34,
+    "dd_ath": -43.3,
+    "days_since_ath": 62,
+    "range_pos": 43.2,
+    "above_sma50": false,
+    "above_sma200": true,
+    "sma50_slope": -4.59,
+    "sma200_slope": 5.15,
+    "higher_low": true,
+    "rsi14": 40.8,
+    "rsi_min60": 32.4,
+    "perf": {
+     "m1": -13.9,
+     "m3": 11.7,
+     "m6": 96.0,
+     "m12": 76.8
+    },
+    "rs6": 77.8,
+    "vol_ratio": 1.28
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 74.5,
+    "momentum": 53.0,
+    "value": 76.0
+   },
+   "why": {
+    "turnaround": [
+     "-43% unter ATH",
+     "hoeheres Tief",
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "Anstiege auf hoeherem Volumen"
+    ],
+    "momentum": [
+     "relative Staerke +78% vs. Index",
+     "200-Tage-Linie steigt"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 22%"
+    ]
+   }
+  },
+  "ASML": {
+   "name": "ASML Holding N.V. - New York Re",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 1751.73,
+    "dd_ath": -11.8,
+    "days_since_ath": 50,
+    "range_pos": 81.4,
+    "above_sma50": false,
+    "above_sma200": true,
+    "sma50_slope": 2.89,
+    "sma200_slope": 5.24,
+    "higher_low": true,
+    "rsi14": 49.4,
+    "rsi_min60": 35.2,
+    "perf": {
+     "m1": -2.6,
+     "m3": 20.2,
+     "m6": 19.7,
+     "m12": 135.9
+    },
+    "rs6": 1.5,
+    "vol_ratio": 0.92
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 37.2,
+    "momentum": 45.5,
+    "value": 82.5
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "50-Tage-Linie dreht nach oben"
+    ],
+    "momentum": [
+     "200-Tage-Linie steigt"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 21%"
+    ]
+   }
+  },
+  "AVGO": {
+   "name": "Broadcom Inc.",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 362.48,
+    "dd_ath": -24.6,
+    "days_since_ath": 78,
+    "range_pos": 38.8,
+    "above_sma50": false,
+    "above_sma200": false,
+    "sma50_slope": -2.85,
+    "sma200_slope": 1.37,
+    "higher_low": true,
+    "rsi14": 35.3,
+    "rsi_min60": 35.3,
+    "perf": {
+     "m1": -6.2,
+     "m3": -11.7,
+     "m6": 9.1,
+     "m12": 19.4
+    },
+    "rs6": -9.1,
+    "vol_ratio": 0.92
+   },
+   "flags": [],
+   "earnings_in": 13,
+   "scores": {
+    "turnaround": 44.0,
+    "momentum": 4.4,
+    "value": 91.7
+   },
+   "why": {
+    "turnaround": [
+     "-25% unter ATH",
+     "hoeheres Tief"
+    ],
+    "momentum": [],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "PEG 0.44",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 48%"
+    ]
+   }
+  },
+  "AXON": {
+   "name": "Axon Enterprise, Inc.",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 645.72,
+    "dd_ath": -25.9,
+    "days_since_ath": 377,
+    "range_pos": 68.8,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 12.54,
+    "sma200_slope": -2.66,
+    "higher_low": true,
+    "rsi14": 62.5,
+    "rsi_min60": 41.8,
+    "perf": {
+     "m1": 26.3,
+     "m3": 64.6,
+     "m6": 50.1,
+     "m12": -18.4
+    },
+    "rs6": 31.9,
+    "vol_ratio": 1.24
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 80.2,
+    "momentum": 57.6,
+    "value": 63.1
+   },
+   "why": {
+    "turnaround": [
+     "-26% unter ATH",
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben",
+     "Anstiege auf hoeherem Volumen"
+    ],
+    "momentum": [
+     "relative Staerke +32% vs. Index",
+     "ueber 50- und 200-Tage-Linie"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 35%"
+    ]
+   }
+  },
+  "AZN": {
+   "name": "AstraZeneca PLC",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 164.95,
+    "dd_ath": -20.9,
+    "days_since_ath": 181,
+    "range_pos": 30.8,
+    "above_sma50": false,
+    "above_sma200": false,
+    "sma50_slope": -4.57,
+    "sma200_slope": -0.18,
+    "higher_low": false,
+    "rsi14": 49.6,
+    "rsi_min60": 30.7,
+    "perf": {
+     "m1": -2.6,
+     "m3": -10.7,
+     "m6": -20.1,
+     "m12": 5.3
+    },
+    "rs6": -38.3,
+    "vol_ratio": 0.83
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 29.8,
+    "momentum": 4.5,
+    "value": 78.2
+   },
+   "why": {
+    "turnaround": [
+     "RSI erholt sich aus dem ueberverkauften Bereich"
+    ],
+    "momentum": [],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "PEG 1.35",
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "BIIB": {
+   "name": "Biogen Inc.",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 221.56,
+    "dd_ath": -46.6,
+    "days_since_ath": 1896,
+    "range_pos": 100.0,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 2.61,
+    "sma200_slope": 3.23,
+    "higher_low": true,
+    "rsi14": 65.7,
+    "rsi_min60": 42.4,
+    "perf": {
+     "m1": 9.1,
+     "m3": 16.3,
+     "m6": 14.1,
+     "m12": 63.0
+    },
+    "rs6": -4.1,
+    "vol_ratio": 1.08
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 80.2,
+    "momentum": 44.0,
+    "value": 59.1
+   },
+   "why": {
+    "turnaround": [
+     "-47% unter ATH",
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben"
+    ],
+    "momentum": [
+     "ueber 50- und 200-Tage-Linie",
+     "200-Tage-Linie steigt"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "BKNG": {
+   "name": "Booking Holdings Inc. Common St",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 213.0,
+    "dd_ath": -7.7,
+    "days_since_ath": 408,
+    "range_pos": 81.0,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 9.42,
+    "sma200_slope": -0.24,
+    "higher_low": true,
+    "rsi14": 65.2,
+    "rsi_min60": 43.6,
+    "perf": {
+     "m1": 18.7,
+     "m3": 38.2,
+     "m6": 25.3,
+     "m12": -2.9
+    },
+    "rs6": 7.1,
+    "vol_ratio": 1.31
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 61.9,
+    "momentum": 65.9,
+    "value": 71.5
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben",
+     "Anstiege auf hoeherem Volumen"
+    ],
+    "momentum": [
+     "nur 8% unter ATH",
+     "ueber 50- und 200-Tage-Linie"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "PEG 0.93",
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "BKR": {
+   "name": "Baker Hughes Company",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 64.48,
+    "dd_ath": -6.8,
+    "days_since_ath": 111,
+    "range_pos": 82.6,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": -2.0,
+    "sma200_slope": 2.76,
+    "higher_low": true,
+    "rsi14": 63.8,
+    "rsi_min60": 25.0,
+    "perf": {
+     "m1": 14.8,
+     "m3": -1.1,
+     "m6": 5.5,
+     "m12": 52.8
+    },
+    "rs6": -12.7,
+    "vol_ratio": 1.0
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 52.5,
+    "momentum": 57.1,
+    "value": 56.1
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "RSI erholt sich aus dem ueberverkauften Bereich"
+    ],
+    "momentum": [
+     "nur 7% unter ATH",
+     "ueber 50- und 200-Tage-Linie",
+     "200-Tage-Linie steigt"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "CCEP": {
+   "name": "Coca-Cola Europacific Partners ",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 106.68,
+    "dd_ath": -4.5,
+    "days_since_ath": 20,
+    "range_pos": 81.9,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 6.29,
+    "sma200_slope": 2.19,
+    "higher_low": true,
+    "rsi14": 50.7,
+    "rsi_min60": 39.9,
+    "perf": {
+     "m1": 1.4,
+     "m3": 16.1,
+     "m6": 3.0,
+     "m12": 22.0
+    },
+    "rs6": -15.2,
+    "vol_ratio": 0.94
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 53.0,
+    "momentum": 56.2,
+    "value": 60.8
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben"
+    ],
+    "momentum": [
+     "nur 4% unter ATH",
+     "ueber 50- und 200-Tage-Linie"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "CDNS": {
+   "name": "Cadence Design Systems, Inc.",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 314.98,
+    "dd_ath": -24.4,
+    "days_since_ath": 78,
+    "range_pos": 32.7,
+    "above_sma50": false,
+    "above_sma200": false,
+    "sma50_slope": -4.53,
+    "sma200_slope": -0.19,
+    "higher_low": true,
+    "rsi14": 32.1,
+    "rsi_min60": 28.6,
+    "perf": {
+     "m1": -8.6,
+     "m3": -6.8,
+     "m6": 3.3,
+     "m12": -11.6
+    },
+    "rs6": -14.9,
+    "vol_ratio": 1.13
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 47.4,
+    "momentum": 7.2,
+    "value": 74.1
+   },
+   "why": {
+    "turnaround": [
+     "-24% unter ATH",
+     "hoeheres Tief"
+    ],
+    "momentum": [],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 24%"
+    ]
+   }
+  },
+  "CDW": {
+   "name": "CDW Corporation",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 137.2,
+    "dd_ath": -44.9,
+    "days_since_ath": 875,
+    "range_pos": 55.4,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 8.04,
+    "sma200_slope": -0.93,
+    "higher_low": true,
+    "rsi14": 48.8,
+    "rsi_min60": 41.8,
+    "perf": {
+     "m1": 5.5,
+     "m3": 32.7,
+     "m6": 10.8,
+     "m12": -14.6
+    },
+    "rs6": -7.3,
+    "vol_ratio": 1.13
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 87.7,
+    "momentum": 26.6,
+    "value": 75.6
+   },
+   "why": {
+    "turnaround": [
+     "-45% unter ATH",
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben"
+    ],
+    "momentum": [
+     "ueber 50- und 200-Tage-Linie"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "PEG 1.33",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 10%"
+    ]
+   }
+  },
+  "CEG": {
+   "name": "Constellation Energy Corporatio",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 274.17,
+    "dd_ath": -31.7,
+    "days_since_ath": 308,
+    "range_pos": 23.0,
+    "above_sma50": true,
+    "above_sma200": false,
+    "sma50_slope": -0.93,
+    "sma200_slope": -3.4,
+    "higher_low": true,
+    "rsi14": 54.3,
+    "rsi_min60": 31.9,
+    "perf": {
+     "m1": 4.7,
+     "m3": 5.3,
+     "m6": -6.3,
+     "m12": -14.6
+    },
+    "rs6": -24.5,
+    "vol_ratio": 0.85
+   },
+   "flags": [
+    "200-Tage-Linie faellt steil"
+   ],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 80.2,
+    "momentum": 0.0,
+    "value": 48.3
+   },
+   "why": {
+    "turnaround": [
+     "-32% unter ATH",
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "RSI erholt sich aus dem ueberverkauften Bereich"
+    ],
+    "momentum": [],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "Umsatzwachstum 23%"
+    ]
+   }
+  },
+  "CHTR": {
+   "name": "Charter Communications, Inc.",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 152.47,
+    "dd_ath": -81.4,
+    "days_since_ath": 1812,
+    "range_pos": 18.3,
+    "above_sma50": true,
+    "above_sma200": false,
+    "sma50_slope": 1.36,
+    "sma200_slope": -5.61,
+    "higher_low": false,
+    "rsi14": 55.9,
+    "rsi_min60": 26.3,
+    "perf": {
+     "m1": 19.3,
+     "m3": 7.0,
+     "m6": -36.2,
+     "m12": -42.9
+    },
+    "rs6": -54.4,
+    "vol_ratio": 0.92
+   },
+   "flags": [
+    "fallender Umsatz bei hoher Verschuldung",
+    "200-Tage-Linie faellt steil",
+    "mehr als 80% unter ATH"
+   ],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 41.4,
+    "momentum": 0.6,
+    "value": 68.0
+   },
+   "why": {
+    "turnaround": [
+     "ueber 50-Tage-Linie",
+     "RSI erholt sich aus dem ueberverkauften Bereich"
+    ],
+    "momentum": [],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "PEG 0.97",
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "CMCSA": {
+   "name": "Comcast Corporation",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 26.59,
+    "dd_ath": -45.9,
+    "days_since_ath": 1812,
+    "range_pos": 47.9,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 0.63,
+    "sma200_slope": -0.76,
+    "higher_low": false,
+    "rsi14": 65.5,
+    "rsi_min60": 25.3,
+    "perf": {
+     "m1": 11.7,
+     "m3": 8.7,
+     "m6": -13.7,
+     "m12": -11.0
+    },
+    "rs6": -31.9,
+    "vol_ratio": 1.0
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 66.6,
+    "momentum": 22.9,
+    "value": 58.9
+   },
+   "why": {
+    "turnaround": [
+     "-46% unter ATH",
+     "ueber 50-Tage-Linie",
+     "RSI erholt sich aus dem ueberverkauften Bereich"
+    ],
+    "momentum": [
+     "ueber 50- und 200-Tage-Linie"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "COST": {
+   "name": "Costco Wholesale Corporation",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 956.99,
+    "dd_ath": -12.4,
+    "days_since_ath": 92,
+    "range_pos": 45.0,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": -2.34,
+    "sma200_slope": 0.28,
+    "higher_low": false,
+    "rsi14": 53.0,
+    "rsi_min60": 32.5,
+    "perf": {
+     "m1": 3.2,
+     "m3": -12.4,
+     "m6": -3.6,
+     "m12": -1.7
+    },
+    "rs6": -21.8,
+    "vol_ratio": 0.95
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 36.2,
+    "momentum": 35.8,
+    "value": 70.2
+   },
+   "why": {
+    "turnaround": [
+     "ueber 50-Tage-Linie",
+     "RSI erholt sich aus dem ueberverkauften Bereich"
+    ],
+    "momentum": [
+     "ueber 50- und 200-Tage-Linie"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 22%"
+    ]
+   }
+  },
+  "CPRT": {
+   "name": "Copart, Inc.",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 33.85,
+    "dd_ath": -47.0,
+    "days_since_ath": 460,
+    "range_pos": 29.3,
+    "above_sma50": true,
+    "above_sma200": false,
+    "sma50_slope": -3.49,
+    "sma200_slope": -3.97,
+    "higher_low": false,
+    "rsi14": 73.2,
+    "rsi_min60": 30.6,
+    "perf": {
+     "m1": 24.6,
+     "m3": 2.2,
+     "m6": -10.3,
+     "m12": -28.5
+    },
+    "rs6": -28.5,
+    "vol_ratio": 1.26
+   },
+   "flags": [
+    "200-Tage-Linie faellt steil"
+   ],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 57.2,
+    "momentum": 10.0,
+    "value": 43.4
+   },
+   "why": {
+    "turnaround": [
+     "-47% unter ATH",
+     "ueber 50-Tage-Linie",
+     "Anstiege auf hoeherem Volumen"
+    ],
+    "momentum": [],
+    "value": [
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "CRWD": {
+   "name": "CrowdStrike Holdings, Inc.",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 201.63,
+    "dd_ath": -10.6,
+    "days_since_ath": 6,
+    "range_pos": 82.7,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 9.06,
+    "sma200_slope": 5.86,
+    "higher_low": true,
+    "rsi14": 48.6,
+    "rsi_min60": 44.5,
+    "perf": {
+     "m1": 5.5,
+     "m3": 30.7,
+     "m6": 94.0,
+     "m12": 89.2
+    },
+    "rs6": 75.8,
+    "vol_ratio": 1.07
+   },
+   "flags": [],
+   "earnings_in": 6,
+   "scores": {
+    "turnaround": 56.2,
+    "momentum": 83.1,
+    "value": 45.0
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben"
+    ],
+    "momentum": [
+     "nur 11% unter ATH",
+     "relative Staerke +76% vs. Index",
+     "ueber 50- und 200-Tage-Linie",
+     "200-Tage-Linie steigt"
+    ],
+    "value": [
+     "positiver Free Cashflow",
+     "Umsatzwachstum 26%"
+    ]
+   }
+  },
+  "CSCO": {
+   "name": "Cisco Systems, Inc.",
+   "index": "NASDAQ/DOW",
+   "metrics": {
+    "last": 110.55,
+    "dd_ath": -14.6,
+    "days_since_ath": 76,
+    "range_pos": 70.5,
+    "above_sma50": false,
+    "above_sma200": true,
+    "sma50_slope": -0.23,
+    "sma200_slope": 5.43,
+    "higher_low": true,
+    "rsi14": 40.8,
+    "rsi_min60": 40.8,
+    "perf": {
+     "m1": -1.5,
+     "m3": -3.8,
+     "m6": 42.7,
+     "m12": 68.5
+    },
+    "rs6": 24.5,
+    "vol_ratio": 0.99
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 30.3,
+    "momentum": 60.0,
+    "value": 94.2
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief"
+    ],
+    "momentum": [
+     "relative Staerke +24% vs. Index",
+     "200-Tage-Linie steigt"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "PEG 1.10",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 18%"
+    ]
+   }
+  },
+  "CSGP": {
+   "name": "CoStar Group, Inc.",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 33.73,
+    "dd_ath": -66.2,
+    "days_since_ath": 1758,
+    "range_pos": 10.3,
+    "above_sma50": true,
+    "above_sma200": false,
+    "sma50_slope": -3.54,
+    "sma200_slope": -9.17,
+    "higher_low": false,
+    "rsi14": 62.8,
+    "rsi_min60": 26.6,
+    "perf": {
+     "m1": 18.4,
+     "m3": -0.2,
+     "m6": -31.1,
+     "m12": -61.7
+    },
+    "rs6": -49.3,
+    "vol_ratio": 0.93
+   },
+   "flags": [
+    "200-Tage-Linie faellt steil"
+   ],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 44.4,
+    "momentum": 0.9,
+    "value": 74.2
+   },
+   "why": {
+    "turnaround": [
+     "ueber 50-Tage-Linie",
+     "RSI erholt sich aus dem ueberverkauften Bereich"
+    ],
+    "momentum": [],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "PEG 0.64",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 18%"
+    ]
+   }
+  },
+  "CSX": {
+   "name": "CSX Corporation",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 50.68,
+    "dd_ath": -4.8,
+    "days_since_ath": 26,
+    "range_pos": 88.1,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 4.16,
+    "sma200_slope": 3.74,
+    "higher_low": true,
+    "rsi14": 55.2,
+    "rsi_min60": 46.5,
+    "perf": {
+     "m1": 1.6,
+     "m3": 10.3,
+     "m6": 23.3,
+     "m12": 42.8
+    },
+    "rs6": 5.1,
+    "vol_ratio": 0.98
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 54.0,
+    "momentum": 71.4,
+    "value": 72.7
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben"
+    ],
+    "momentum": [
+     "nur 5% unter ATH",
+     "ueber 50- und 200-Tage-Linie",
+     "200-Tage-Linie steigt"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 10%"
+    ]
+   }
+  },
+  "CTAS": {
+   "name": "Cintas Corporation",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 203.08,
+    "dd_ath": -9.7,
+    "days_since_ath": 439,
+    "range_pos": 75.8,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 7.48,
+    "sma200_slope": 0.8,
+    "higher_low": true,
+    "rsi14": 56.9,
+    "rsi_min60": 42.5,
+    "perf": {
+     "m1": 1.6,
+     "m3": 18.2,
+     "m6": 3.9,
+     "m12": -4.3
+    },
+    "rs6": -14.2,
+    "vol_ratio": 1.1
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 57.0,
+    "momentum": 49.6,
+    "value": 72.0
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben"
+    ],
+    "momentum": [
+     "nur 10% unter ATH",
+     "ueber 50- und 200-Tage-Linie"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "CTSH": {
+   "name": "Cognizant Technology Solutions ",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 60.93,
+    "dd_ath": -30.5,
+    "days_since_ath": 551,
+    "range_pos": 48.1,
+    "above_sma50": true,
+    "above_sma200": false,
+    "sma50_slope": 2.91,
+    "sma200_slope": -1.82,
+    "higher_low": true,
+    "rsi14": 71.3,
+    "rsi_min60": 21.4,
+    "perf": {
+     "m1": 40.5,
+     "m3": 20.5,
+     "m6": -7.6,
+     "m12": -11.1
+    },
+    "rs6": -25.8,
+    "vol_ratio": 0.9
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 78.8,
+    "momentum": 0.0,
+    "value": 77.4
+   },
+   "why": {
+    "turnaround": [
+     "-30% unter ATH",
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben"
+    ],
+    "momentum": [],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "PEG 0.94",
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "DASH": {
+   "name": "DoorDash, Inc.",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 220.22,
+    "dd_ath": -21.8,
+    "days_since_ath": 317,
+    "range_pos": 54.5,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 10.81,
+    "sma200_slope": -3.27,
+    "higher_low": true,
+    "rsi14": 67.9,
+    "rsi_min60": 40.0,
+    "perf": {
+     "m1": 17.1,
+     "m3": 42.4,
+     "m6": 27.0,
+     "m12": -13.1
+    },
+    "rs6": 8.8,
+    "vol_ratio": 1.1
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 72.0,
+    "momentum": 40.7,
+    "value": 64.6
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben"
+    ],
+    "momentum": [
+     "ueber 50- und 200-Tage-Linie"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 36%"
+    ]
+   }
+  },
+  "DDOG": {
+   "name": "Datadog, Inc.",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 233.52,
+    "dd_ath": -19.0,
+    "days_since_ath": 15,
+    "range_pos": 70.6,
+    "above_sma50": false,
+    "above_sma200": true,
+    "sma50_slope": 4.76,
+    "sma200_slope": 5.91,
+    "higher_low": true,
+    "rsi14": 42.7,
+    "rsi_min60": 39.0,
+    "perf": {
+     "m1": -8.3,
+     "m3": 8.5,
+     "m6": 91.8,
+     "m12": 80.9
+    },
+    "rs6": 73.6,
+    "vol_ratio": 1.06
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 47.7,
+    "momentum": 57.6,
+    "value": 70.4
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "50-Tage-Linie dreht nach oben"
+    ],
+    "momentum": [
+     "relative Staerke +74% vs. Index",
+     "200-Tage-Linie steigt"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 36%"
+    ]
+   }
+  },
+  "DXCM": {
+   "name": "DexCom, Inc.",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 89.88,
+    "dd_ath": -44.8,
+    "days_since_ath": 1736,
+    "range_pos": 95.6,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 8.08,
+    "sma200_slope": 2.29,
+    "higher_low": true,
+    "rsi14": 66.4,
+    "rsi_min60": 41.7,
+    "perf": {
+     "m1": 20.2,
+     "m3": 34.2,
+     "m6": 23.5,
+     "m12": 11.2
+    },
+    "rs6": 5.3,
+    "vol_ratio": 1.25
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 85.1,
+    "momentum": 54.3,
+    "value": 84.4
+   },
+   "why": {
+    "turnaround": [
+     "-45% unter ATH",
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben",
+     "Anstiege auf hoeherem Volumen"
+    ],
+    "momentum": [
+     "ueber 50- und 200-Tage-Linie"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 13%"
+    ]
+   }
+  },
+  "EXC": {
+   "name": "Exelon Corporation",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 45.3,
+    "dd_ath": -9.1,
+    "days_since_ath": 156,
+    "range_pos": 44.9,
+    "above_sma50": false,
+    "above_sma200": false,
+    "sma50_slope": 1.12,
+    "sma200_slope": -0.03,
+    "higher_low": true,
+    "rsi14": 44.8,
+    "rsi_min60": 37.1,
+    "perf": {
+     "m1": -1.3,
+     "m3": 2.5,
+     "m6": -2.4,
+     "m12": 5.7
+    },
+    "rs6": -20.6,
+    "vol_ratio": 1.06
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 41.2,
+    "momentum": 21.9,
+    "value": 40.1
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief"
+    ],
+    "momentum": [
+     "nur 9% unter ATH"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "Umsatzwachstum 10%"
+    ]
+   }
+  },
+  "FANG": {
+   "name": "Diamondback Energy, Inc.",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 208.55,
+    "dd_ath": -1.3,
+    "days_since_ath": 107,
+    "range_pos": 96.5,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": -0.08,
+    "sma200_slope": 3.42,
+    "higher_low": true,
+    "rsi14": 62.6,
+    "rsi_min60": 30.8,
+    "perf": {
+     "m1": 5.0,
+     "m3": 0.9,
+     "m6": 21.9,
+     "m12": 53.1
+    },
+    "rs6": 3.7,
+    "vol_ratio": 0.77
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 52.3,
+    "momentum": 70.8,
+    "value": 72.4
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "RSI erholt sich aus dem ueberverkauften Bereich"
+    ],
+    "momentum": [
+     "nur 1% unter ATH",
+     "ueber 50- und 200-Tage-Linie",
+     "200-Tage-Linie steigt"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 52%"
+    ]
+   }
+  },
+  "FAST": {
+   "name": "Fastenal Company",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 51.44,
+    "dd_ath": -1.8,
+    "days_since_ath": 8,
+    "range_pos": 93.2,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 4.8,
+    "sma200_slope": 1.55,
+    "higher_low": true,
+    "rsi14": 65.1,
+    "rsi_min60": 41.4,
+    "perf": {
+     "m1": 14.9,
+     "m3": 18.7,
+     "m6": 13.1,
+     "m12": 7.0
+    },
+    "rs6": -5.1,
+    "vol_ratio": 0.98
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 54.0,
+    "momentum": 61.2,
+    "value": 77.4
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben"
+    ],
+    "momentum": [
+     "nur 2% unter ATH",
+     "ueber 50- und 200-Tage-Linie"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 15%"
+    ]
+   }
+  },
+  "FTNT": {
+   "name": "Fortinet, Inc.",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 152.85,
+    "dd_ath": -9.2,
+    "days_since_ath": 15,
+    "range_pos": 83.4,
+    "above_sma50": false,
+    "above_sma200": true,
+    "sma50_slope": 7.19,
+    "sma200_slope": 7.52,
+    "higher_low": true,
+    "rsi14": 44.3,
+    "rsi_min60": 44.3,
+    "perf": {
+     "m1": -3.3,
+     "m3": 19.8,
+     "m6": 89.4,
+     "m12": 89.3
+    },
+    "rs6": 71.2,
+    "vol_ratio": 1.28
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 46.2,
+    "momentum": 78.0,
+    "value": 82.6
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "50-Tage-Linie dreht nach oben",
+     "Anstiege auf hoeherem Volumen"
+    ],
+    "momentum": [
+     "nur 9% unter ATH",
+     "relative Staerke +71% vs. Index",
+     "200-Tage-Linie steigt"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 26%"
+    ]
+   }
+  },
+  "GEHC": {
+   "name": "GE HealthCare Technologies Inc.",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 74.62,
+    "dd_ath": -20.2,
+    "days_since_ath": 688,
+    "range_pos": 53.1,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 4.0,
+    "sma200_slope": -0.83,
+    "higher_low": true,
+    "rsi14": 66.9,
+    "rsi_min60": 38.2,
+    "perf": {
+     "m1": 18.8,
+     "m3": 21.4,
+     "m6": -8.5,
+     "m12": 1.9
+    },
+    "rs6": -26.7,
+    "vol_ratio": 1.08
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 69.3,
+    "momentum": 30.4,
+    "value": 70.0
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben"
+    ],
+    "momentum": [
+     "ueber 50- und 200-Tage-Linie"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "GFS": {
+   "name": "GlobalFoundries Inc.",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 48.58,
+    "dd_ath": -45.9,
+    "days_since_ath": 85,
+    "range_pos": 29.1,
+    "above_sma50": false,
+    "above_sma200": false,
+    "sma50_slope": -14.08,
+    "sma200_slope": 3.22,
+    "higher_low": false,
+    "rsi14": 37.4,
+    "rsi_min60": 24.0,
+    "perf": {
+     "m1": -18.2,
+     "m3": -27.0,
+     "m6": 4.5,
+     "m12": 44.2
+    },
+    "rs6": -13.7,
+    "vol_ratio": 0.76
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 33.5,
+    "momentum": 8.1,
+    "value": 68.1
+   },
+   "why": {
+    "turnaround": [
+     "-46% unter ATH"
+    ],
+    "momentum": [
+     "200-Tage-Linie steigt"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "PEG 1.06",
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "GILD": {
+   "name": "Gilead Sciences, Inc.",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 147.6,
+    "dd_ath": -4.1,
+    "days_since_ath": 189,
+    "range_pos": 86.1,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 1.22,
+    "sma200_slope": 1.39,
+    "higher_low": true,
+    "rsi14": 74.1,
+    "rsi_min60": 29.3,
+    "perf": {
+     "m1": 13.3,
+     "m3": 13.8,
+     "m6": -2.2,
+     "m12": 28.4
+    },
+    "rs6": -20.4,
+    "vol_ratio": 0.91
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 43.6,
+    "momentum": 55.2,
+    "value": 39.3
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie"
+    ],
+    "momentum": [
+     "nur 4% unter ATH",
+     "ueber 50- und 200-Tage-Linie"
+    ],
+    "value": [
+     "positiver Free Cashflow",
+     "Umsatzwachstum 10%"
+    ]
+   }
+  },
+  "GOOGL": {
+   "name": "Alphabet Inc.",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 344.72,
+    "dd_ath": -14.3,
+    "days_since_ath": 98,
+    "range_pos": 71.7,
+    "above_sma50": false,
+    "above_sma200": true,
+    "sma50_slope": -4.06,
+    "sma200_slope": 2.87,
+    "higher_low": false,
+    "rsi14": 46.5,
+    "rsi_min60": 31.0,
+    "perf": {
+     "m1": -0.7,
+     "m3": -11.0,
+     "m6": 13.8,
+     "m12": 69.9
+    },
+    "rs6": -4.4,
+    "vol_ratio": 0.83
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 15.8,
+    "momentum": 31.2,
+    "value": 78.8
+   },
+   "why": {
+    "turnaround": [
+     "RSI erholt sich aus dem ueberverkauften Bereich"
+    ],
+    "momentum": [
+     "200-Tage-Linie steigt"
+    ],
+    "value": [
+     "PEG 0.94",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 24%"
+    ]
+   }
+  },
+  "HON": {
+   "name": "Honeywell International Inc.",
+   "index": "NASDAQ/DOW",
+   "metrics": {
+    "last": 221.73,
+    "dd_ath": -14.0,
+    "days_since_ath": 170,
+    "range_pos": 42.8,
+    "above_sma50": false,
+    "above_sma200": false,
+    "sma50_slope": 1.05,
+    "sma200_slope": 1.64,
+    "higher_low": true,
+    "rsi14": 37.4,
+    "rsi_min60": 34.9,
+    "perf": {
+     "m1": -3.2,
+     "m3": -2.3,
+     "m6": -11.1,
+     "m12": 5.7
+    },
+    "rs6": -29.3,
+    "vol_ratio": 1.04
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 37.1,
+    "momentum": 20.1,
+    "value": 40.2
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief"
+    ],
+    "momentum": [],
+    "value": [
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "IDXX": {
+   "name": "IDEXX Laboratories, Inc.",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 562.2,
+    "dd_ath": -26.7,
+    "days_since_ath": 267,
+    "range_pos": 14.9,
+    "above_sma50": true,
+    "above_sma200": false,
+    "sma50_slope": 1.18,
+    "sma200_slope": -1.07,
+    "higher_low": true,
+    "rsi14": 48.8,
+    "rsi_min60": 38.8,
+    "perf": {
+     "m1": 1.8,
+     "m3": 2.9,
+     "m6": -11.5,
+     "m12": -11.9
+    },
+    "rs6": -29.6,
+    "vol_ratio": 1.09
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 76.7,
+    "momentum": 5.4,
+    "value": 68.0
+   },
+   "why": {
+    "turnaround": [
+     "-27% unter ATH",
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie"
+    ],
+    "momentum": [],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 10%"
+    ]
+   }
+  },
+  "INTC": {
+   "name": "Intel Corporation",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 92.8,
+    "dd_ath": -34.2,
+    "days_since_ath": 58,
+    "range_pos": 59.0,
+    "above_sma50": false,
+    "above_sma200": true,
+    "sma50_slope": -6.51,
+    "sma200_slope": 8.95,
+    "higher_low": true,
+    "rsi14": 42.0,
+    "rsi_min60": 31.5,
+    "perf": {
+     "m1": -12.0,
+     "m3": -16.2,
+     "m6": 104.1,
+     "m12": 292.2
+    },
+    "rs6": 86.0,
+    "vol_ratio": 1.04
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 67.5,
+    "momentum": 47.0,
+    "value": 54.5
+   },
+   "why": {
+    "turnaround": [
+     "-34% unter ATH",
+     "hoeheres Tief",
+     "RSI erholt sich aus dem ueberverkauften Bereich"
+    ],
+    "momentum": [
+     "relative Staerke +86% vs. Index",
+     "200-Tage-Linie steigt"
+    ],
+    "value": [
+     "PEG 1.36",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 25%"
+    ]
+   }
+  },
+  "INTU": {
+   "name": "Intuit Inc.",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 362.47,
+    "dd_ath": -54.6,
+    "days_since_ath": 385,
+    "range_pos": 24.6,
+    "above_sma50": true,
+    "above_sma200": false,
+    "sma50_slope": -2.12,
+    "sma200_slope": -6.95,
+    "higher_low": true,
+    "rsi14": 67.0,
+    "rsi_min60": 29.3,
+    "perf": {
+     "m1": 25.0,
+     "m3": -8.9,
+     "m6": -6.3,
+     "m12": -48.9
+    },
+    "rs6": -24.4,
+    "vol_ratio": 0.99
+   },
+   "flags": [
+    "200-Tage-Linie faellt steil"
+   ],
+   "earnings_in": 5,
+   "scores": {
+    "turnaround": 82.2,
+    "momentum": 2.6,
+    "value": 90.2
+   },
+   "why": {
+    "turnaround": [
+     "-55% unter ATH",
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "RSI erholt sich aus dem ueberverkauften Bereich"
+    ],
+    "momentum": [],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "PEG 0.90",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 10%"
+    ]
+   }
+  },
+  "ISRG": {
+   "name": "Intuitive Surgical, Inc.",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 397.72,
+    "dd_ath": -34.8,
+    "days_since_ath": 574,
+    "range_pos": 25.2,
+    "above_sma50": true,
+    "above_sma200": false,
+    "sma50_slope": -5.05,
+    "sma200_slope": -2.14,
+    "higher_low": false,
+    "rsi14": 57.1,
+    "rsi_min60": 29.0,
+    "perf": {
+     "m1": 13.6,
+     "m3": -9.9,
+     "m6": -20.6,
+     "m12": -17.4
+    },
+    "rs6": -38.8,
+    "vol_ratio": 0.99
+   },
+   "flags": [
+    "200-Tage-Linie faellt steil"
+   ],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 62.2,
+    "momentum": 2.6,
+    "value": 66.2
+   },
+   "why": {
+    "turnaround": [
+     "-35% unter ATH",
+     "ueber 50-Tage-Linie",
+     "RSI erholt sich aus dem ueberverkauften Bereich"
+    ],
+    "momentum": [],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 18%"
+    ]
+   }
+  },
+  "KDP": {
+   "name": "Keurig Dr Pepper Inc.",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 31.06,
+    "dd_ath": -13.5,
+    "days_since_ath": 1464,
+    "range_pos": 68.0,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 1.47,
+    "sma200_slope": 1.49,
+    "higher_low": true,
+    "rsi14": 53.2,
+    "rsi_min60": 36.7,
+    "perf": {
+     "m1": 2.8,
+     "m3": 8.4,
+     "m6": 8.3,
+     "m12": -7.3
+    },
+    "rs6": -9.9,
+    "vol_ratio": 1.0
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 52.4,
+    "momentum": 41.7,
+    "value": 79.9
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben"
+    ],
+    "momentum": [
+     "ueber 50- und 200-Tage-Linie"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "PEG 1.08",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 76%"
+    ]
+   }
+  },
+  "KHC": {
+   "name": "The Kraft Heinz Company",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 25.68,
+    "dd_ath": -58.5,
+    "days_since_ath": 3470,
+    "range_pos": 71.4,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 4.43,
+    "sma200_slope": 0.7,
+    "higher_low": true,
+    "rsi14": 52.9,
+    "rsi_min60": 38.4,
+    "perf": {
+     "m1": -0.4,
+     "m3": 12.3,
+     "m6": 11.0,
+     "m12": 0.5
+    },
+    "rs6": -7.2,
+    "vol_ratio": 0.9
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 73.5,
+    "momentum": 25.6,
+    "value": 50.0
+   },
+   "why": {
+    "turnaround": [
+     "-58% unter ATH",
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben"
+    ],
+    "momentum": [
+     "ueber 50- und 200-Tage-Linie"
+    ],
+    "value": [
+     "PEG 0.99",
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "KLAC": {
+   "name": "KLA Corporation",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 187.27,
+    "dd_ath": -37.9,
+    "days_since_ath": 50,
+    "range_pos": 47.5,
+    "above_sma50": false,
+    "above_sma200": true,
+    "sma50_slope": 0.8,
+    "sma200_slope": 5.31,
+    "higher_low": false,
+    "rsi14": 41.4,
+    "rsi_min60": 32.3,
+    "perf": {
+     "m1": -13.8,
+     "m3": 7.7,
+     "m6": 26.8,
+     "m12": 113.1
+    },
+    "rs6": 8.6,
+    "vol_ratio": 0.91
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 49.8,
+    "momentum": 29.6,
+    "value": 81.3
+   },
+   "why": {
+    "turnaround": [
+     "-38% unter ATH",
+     "RSI erholt sich aus dem ueberverkauften Bereich"
+    ],
+    "momentum": [
+     "200-Tage-Linie steigt"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 15%"
+    ]
+   }
+  },
+  "LIN": {
+   "name": "Linde plc",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 481.13,
+    "dd_ath": -12.0,
+    "days_since_ath": 48,
+    "range_pos": 59.0,
+    "above_sma50": false,
+    "above_sma200": true,
+    "sma50_slope": -1.09,
+    "sma200_slope": 0.93,
+    "higher_low": false,
+    "rsi14": 39.9,
+    "rsi_min60": 30.2,
+    "perf": {
+     "m1": -4.7,
+     "m3": -4.6,
+     "m6": -0.2,
+     "m12": 1.9
+    },
+    "rs6": -18.4,
+    "vol_ratio": 0.99
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 10.9,
+    "momentum": 27.0,
+    "value": 73.1
+   },
+   "why": {
+    "turnaround": [],
+    "momentum": [],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 9%"
+    ]
+   }
+  },
+  "LRCX": {
+   "name": "Lam Research Corporation",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 307.17,
+    "dd_ath": -29.1,
+    "days_since_ath": 50,
+    "range_pos": 62.5,
+    "above_sma50": false,
+    "above_sma200": true,
+    "sma50_slope": 0.06,
+    "sma200_slope": 6.9,
+    "higher_low": true,
+    "rsi14": 46.2,
+    "rsi_min60": 31.1,
+    "perf": {
+     "m1": -4.6,
+     "m3": 12.4,
+     "m6": 28.2,
+     "m12": 212.4
+    },
+    "rs6": 10.0,
+    "vol_ratio": 1.04
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 67.8,
+    "momentum": 35.3,
+    "value": 88.4
+   },
+   "why": {
+    "turnaround": [
+     "-29% unter ATH",
+     "hoeheres Tief",
+     "RSI erholt sich aus dem ueberverkauften Bereich"
+    ],
+    "momentum": [
+     "200-Tage-Linie steigt"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 30%"
+    ]
+   }
+  },
+  "LULU": {
+   "name": "lululemon athletica inc.",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 119.45,
+    "dd_ath": -76.6,
+    "days_since_ath": 964,
+    "range_pos": 12.7,
+    "above_sma50": true,
+    "above_sma200": false,
+    "sma50_slope": -1.38,
+    "sma200_slope": -3.27,
+    "higher_low": true,
+    "rsi14": 48.8,
+    "rsi_min60": 27.1,
+    "perf": {
+     "m1": 2.4,
+     "m3": 0.2,
+     "m6": -34.4,
+     "m12": -41.3
+    },
+    "rs6": -52.6,
+    "vol_ratio": 0.88
+   },
+   "flags": [
+    "200-Tage-Linie faellt steil"
+   ],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 53.9,
+    "momentum": 0.0,
+    "value": 68.0
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "RSI erholt sich aus dem ueberverkauften Bereich"
+    ],
+    "momentum": [],
+    "value": [
+     "PEG 0.92",
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "MAR": {
+   "name": "Marriott International",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 359.95,
+    "dd_ath": -10.6,
+    "days_since_ath": 68,
+    "range_pos": 70.7,
+    "above_sma50": false,
+    "above_sma200": true,
+    "sma50_slope": -0.86,
+    "sma200_slope": 2.95,
+    "higher_low": false,
+    "rsi14": 47.9,
+    "rsi_min60": 32.1,
+    "perf": {
+     "m1": -2.1,
+     "m3": 0.5,
+     "m6": 1.5,
+     "m12": 36.4
+    },
+    "rs6": -16.7,
+    "vol_ratio": 0.83
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 16.4,
+    "momentum": 34.6,
+    "value": 60.3
+   },
+   "why": {
+    "turnaround": [
+     "RSI erholt sich aus dem ueberverkauften Bereich"
+    ],
+    "momentum": [
+     "nur 11% unter ATH",
+     "200-Tage-Linie steigt"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 11%"
+    ]
+   }
+  },
+  "MCHP": {
+   "name": "Microchip Technology Incorporat",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 77.08,
+    "dd_ath": -25.0,
+    "days_since_ath": 58,
+    "range_pos": 53.1,
+    "above_sma50": false,
+    "above_sma200": true,
+    "sma50_slope": -7.18,
+    "sma200_slope": 1.95,
+    "higher_low": false,
+    "rsi14": 44.8,
+    "rsi_min60": 31.2,
+    "perf": {
+     "m1": -7.6,
+     "m3": -15.6,
+     "m6": -1.5,
+     "m12": 20.8
+    },
+    "rs6": -19.7,
+    "vol_ratio": 0.97
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 38.4,
+    "momentum": 14.9,
+    "value": 82.8
+   },
+   "why": {
+    "turnaround": [
+     "-25% unter ATH",
+     "RSI erholt sich aus dem ueberverkauften Bereich"
+    ],
+    "momentum": [],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "PEG 0.24",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 38%"
+    ]
+   }
+  },
+  "MDLZ": {
+   "name": "Mondelez International, Inc.",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 64.16,
+    "dd_ath": -10.2,
+    "days_since_ath": 1196,
+    "range_pos": 94.2,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 0.94,
+    "sma200_slope": 0.46,
+    "higher_low": true,
+    "rsi14": 59.8,
+    "rsi_min60": 37.1,
+    "perf": {
+     "m1": 7.2,
+     "m3": 5.6,
+     "m6": 8.6,
+     "m12": 7.4
+    },
+    "rs6": -9.6,
+    "vol_ratio": 0.94
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 47.9,
+    "momentum": 48.4,
+    "value": 71.3
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie"
+    ],
+    "momentum": [
+     "nur 10% unter ATH",
+     "ueber 50- und 200-Tage-Linie"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "PEG 1.05",
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "MELI": {
+   "name": "MercadoLibre, Inc.",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 1908.65,
+    "dd_ath": -27.0,
+    "days_since_ath": 415,
+    "range_pos": 37.5,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 5.15,
+    "sma200_slope": -1.69,
+    "higher_low": true,
+    "rsi14": 57.7,
+    "rsi_min60": 40.3,
+    "perf": {
+     "m1": 4.7,
+     "m3": 19.7,
+     "m6": -5.0,
+     "m12": -19.3
+    },
+    "rs6": -23.2,
+    "vol_ratio": 1.0
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 79.5,
+    "momentum": 22.9,
+    "value": 75.1
+   },
+   "why": {
+    "turnaround": [
+     "-27% unter ATH",
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben"
+    ],
+    "momentum": [
+     "ueber 50- und 200-Tage-Linie"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "PEG 1.31",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 50%"
+    ]
+   }
+  },
+  "META": {
+   "name": "Meta Platforms, Inc.",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 546.03,
+    "dd_ath": -30.7,
+    "days_since_ath": 372,
+    "range_pos": 8.2,
+    "above_sma50": false,
+    "above_sma200": false,
+    "sma50_slope": -1.93,
+    "sma200_slope": -2.18,
+    "higher_low": false,
+    "rsi14": 37.1,
+    "rsi_min60": 32.1,
+    "perf": {
+     "m1": -15.2,
+     "m3": -9.3,
+     "m6": -15.0,
+     "m12": -28.6
+    },
+    "rs6": -33.1,
+    "vol_ratio": 1.14
+   },
+   "flags": [
+    "200-Tage-Linie faellt steil"
+   ],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 35.9,
+    "momentum": 6.9,
+    "value": 94.6
+   },
+   "why": {
+    "turnaround": [
+     "-31% unter ATH"
+    ],
+    "momentum": [],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "PEG 0.88",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 28%"
+    ]
+   }
+  },
+  "MNST": {
+   "name": "Monster Beverage Corporation",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 47.43,
+    "dd_ath": -52.5,
+    "days_since_ath": 34,
+    "range_pos": 3.5,
+    "above_sma50": false,
+    "above_sma200": false,
+    "sma50_slope": -4.14,
+    "sma200_slope": 1.15,
+    "higher_low": false,
+    "rsi14": 15.5,
+    "rsi_min60": 10.2,
+    "perf": {
+     "m1": -50.3,
+     "m3": -46.4,
+     "m6": -42.8,
+     "m12": -26.6
+    },
+    "rs6": -61.0,
+    "vol_ratio": 1.05
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 28.8,
+    "momentum": 7.2,
+    "value": 75.0
+   },
+   "why": {
+    "turnaround": [
+     "-52% unter ATH"
+    ],
+    "momentum": [],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 20%"
+    ]
+   }
+  },
+  "MRVL": {
+   "name": "Marvell Technology, Inc.",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 237.27,
+    "dd_ath": -25.0,
+    "days_since_ath": 76,
+    "range_pos": 68.9,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": -1.38,
+    "sma200_slope": 9.05,
+    "higher_low": true,
+    "rsi14": 57.5,
+    "rsi_min60": 31.9,
+    "perf": {
+     "m1": 14.1,
+     "m3": 34.6,
+     "m6": 200.2,
+     "m12": 209.8
+    },
+    "rs6": 182.0,
+    "vol_ratio": 1.26
+   },
+   "flags": [],
+   "earnings_in": 7,
+   "scores": {
+    "turnaround": 77.2,
+    "momentum": 68.0,
+    "value": 86.5
+   },
+   "why": {
+    "turnaround": [
+     "-25% unter ATH",
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "Anstiege auf hoeherem Volumen"
+    ],
+    "momentum": [
+     "relative Staerke +182% vs. Index",
+     "ueber 50- und 200-Tage-Linie",
+     "200-Tage-Linie steigt"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "PEG 1.25",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 28%"
+    ]
+   }
+  },
+  "MSFT": {
+   "name": "Microsoft Corporation",
+   "index": "NASDAQ/DOW",
+   "metrics": {
+    "last": 484.31,
+    "dd_ath": -10.1,
+    "days_since_ath": 295,
+    "range_pos": 70.8,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 4.1,
+    "sma200_slope": -1.27,
+    "higher_low": true,
+    "rsi14": 63.5,
+    "rsi_min60": 28.8,
+    "perf": {
+     "m1": 21.8,
+     "m3": 16.3,
+     "m6": 21.7,
+     "m12": -5.6
+    },
+    "rs6": 3.6,
+    "vol_ratio": 1.3
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 71.0,
+    "momentum": 57.0,
+    "value": 87.9
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben",
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "Anstiege auf hoeherem Volumen"
+    ],
+    "momentum": [
+     "nur 10% unter ATH",
+     "ueber 50- und 200-Tage-Linie"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 18%"
+    ]
+   }
+  },
+  "MSTR": {
+   "name": "Strategy Inc",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 104.25,
+    "dd_ath": -78.0,
+    "days_since_ath": 637,
+    "range_pos": 7.9,
+    "above_sma50": true,
+    "above_sma200": false,
+    "sma50_slope": -19.83,
+    "sma200_slope": -12.41,
+    "higher_low": true,
+    "rsi14": 55.7,
+    "rsi_min60": 23.6,
+    "perf": {
+     "m1": 2.3,
+     "m3": -36.7,
+     "m6": -16.7,
+     "m12": -71.3
+    },
+    "rs6": -34.9,
+    "vol_ratio": 1.04
+   },
+   "flags": [
+    "200-Tage-Linie faellt steil"
+   ],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 55.0,
+    "momentum": 4.0,
+    "value": 26.9
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "RSI erholt sich aus dem ueberverkauften Bereich"
+    ],
+    "momentum": [],
+    "value": []
+   }
+  },
+  "MU": {
+   "name": "Micron Technology, Inc.",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 937.11,
+    "dd_ath": -22.8,
+    "days_since_ath": 55,
+    "range_pos": 74.8,
+    "above_sma50": false,
+    "above_sma200": true,
+    "sma50_slope": 1.47,
+    "sma200_slope": 14.02,
+    "higher_low": true,
+    "rsi14": 51.8,
+    "rsi_min60": 35.7,
+    "perf": {
+     "m1": -3.5,
+     "m3": 34.1,
+     "m6": 122.7,
+     "m12": 659.7
+    },
+    "rs6": 104.6,
+    "vol_ratio": 0.9
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 46.2,
+    "momentum": 50.3,
+    "value": 105.0
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "50-Tage-Linie dreht nach oben"
+    ],
+    "momentum": [
+     "relative Staerke +105% vs. Index",
+     "200-Tage-Linie steigt"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "PEG 0.14",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 346%"
+    ]
+   }
+  },
+  "NFLX": {
+   "name": "Netflix, Inc.",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 80.22,
+    "dd_ath": -40.1,
+    "days_since_ath": 415,
+    "range_pos": 21.5,
+    "above_sma50": true,
+    "above_sma200": false,
+    "sma50_slope": -6.03,
+    "sma200_slope": -4.59,
+    "higher_low": false,
+    "rsi14": 63.9,
+    "rsi_min60": 19.1,
+    "perf": {
+     "m1": 16.8,
+     "m3": -10.2,
+     "m6": 2.9,
+     "m12": -35.6
+    },
+    "rs6": -15.3,
+    "vol_ratio": 0.99
+   },
+   "flags": [
+    "200-Tage-Linie faellt steil"
+   ],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 62.2,
+    "momentum": 2.6,
+    "value": 79.1
+   },
+   "why": {
+    "turnaround": [
+     "-40% unter ATH",
+     "ueber 50-Tage-Linie",
+     "RSI erholt sich aus dem ueberverkauften Bereich"
+    ],
+    "momentum": [],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 13%"
+    ]
+   }
+  },
+  "NVDA": {
+   "name": "NVIDIA Corporation",
+   "index": "NASDAQ/DOW",
+   "metrics": {
+    "last": 217.56,
+    "dd_ath": -7.6,
+    "days_since_ath": 97,
+    "range_pos": 74.6,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": -1.18,
+    "sma200_slope": 1.3,
+    "higher_low": true,
+    "rsi14": 54.2,
+    "rsi_min60": 37.6,
+    "perf": {
+     "m1": 5.0,
+     "m3": -1.3,
+     "m6": 15.9,
+     "m12": 19.7
+    },
+    "rs6": -2.3,
+    "vol_ratio": 0.97
+   },
+   "flags": [],
+   "earnings_in": 6,
+   "scores": {
+    "turnaround": 43.9,
+    "momentum": 51.3,
+    "value": 99.7
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie"
+    ],
+    "momentum": [
+     "nur 8% unter ATH",
+     "ueber 50- und 200-Tage-Linie"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "PEG 0.62",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 85%"
+    ]
+   }
+  },
+  "NXPI": {
+   "name": "NXP Semiconductors N.V.",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 226.02,
+    "dd_ath": -31.8,
+    "days_since_ath": 85,
+    "range_pos": 29.5,
+    "above_sma50": false,
+    "above_sma200": false,
+    "sma50_slope": -9.16,
+    "sma200_slope": 1.06,
+    "higher_low": true,
+    "rsi14": 35.1,
+    "rsi_min60": 27.7,
+    "perf": {
+     "m1": -17.3,
+     "m3": -22.9,
+     "m6": -3.9,
+     "m12": -0.9
+    },
+    "rs6": -22.1,
+    "vol_ratio": 0.84
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 52.4,
+    "momentum": 2.7,
+    "value": 94.0
+   },
+   "why": {
+    "turnaround": [
+     "-32% unter ATH",
+     "hoeheres Tief"
+    ],
+    "momentum": [],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "PEG 0.57",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 20%"
+    ]
+   }
+  },
+  "ODFL": {
+   "name": "Old Dominion Freight Line, Inc.",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 205.08,
+    "dd_ath": -17.5,
+    "days_since_ath": 71,
+    "range_pos": 64.5,
+    "above_sma50": false,
+    "above_sma200": true,
+    "sma50_slope": 0.04,
+    "sma200_slope": 4.23,
+    "higher_low": true,
+    "rsi14": 37.5,
+    "rsi_min60": 36.3,
+    "perf": {
+     "m1": -12.7,
+     "m3": 0.4,
+     "m6": 6.1,
+     "m12": 37.2
+    },
+    "rs6": -12.1,
+    "vol_ratio": 1.03
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 36.1,
+    "momentum": 31.4,
+    "value": 75.0
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief"
+    ],
+    "momentum": [
+     "200-Tage-Linie steigt"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 10%"
+    ]
+   }
+  },
+  "ON": {
+   "name": "ON Semiconductor Corporation",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 76.58,
+    "dd_ath": -42.8,
+    "days_since_ath": 77,
+    "range_pos": 35.6,
+    "above_sma50": false,
+    "above_sma200": false,
+    "sma50_slope": -13.24,
+    "sma200_slope": 4.2,
+    "higher_low": true,
+    "rsi14": 37.9,
+    "rsi_min60": 34.9,
+    "perf": {
+     "m1": -15.9,
+     "m3": -27.8,
+     "m6": 8.4,
+     "m12": 51.6
+    },
+    "rs6": -9.8,
+    "vol_ratio": 0.87
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 53.7,
+    "momentum": 10.0,
+    "value": 74.1
+   },
+   "why": {
+    "turnaround": [
+     "-43% unter ATH",
+     "hoeheres Tief"
+    ],
+    "momentum": [
+     "200-Tage-Linie steigt"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "PEG 0.26",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 9%"
+    ]
+   }
+  },
+  "ORLY": {
+   "name": "O'Reilly Automotive, Inc.",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 91.2,
+    "dd_ath": -15.4,
+    "days_since_ath": 342,
+    "range_pos": 33.8,
+    "above_sma50": true,
+    "above_sma200": false,
+    "sma50_slope": 0.52,
+    "sma200_slope": -1.0,
+    "higher_low": false,
+    "rsi14": 53.0,
+    "rsi_min60": 33.4,
+    "perf": {
+     "m1": 3.7,
+     "m3": -0.8,
+     "m6": -1.7,
+     "m12": -10.1
+    },
+    "rs6": -19.9,
+    "vol_ratio": 0.95
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 40.7,
+    "momentum": 11.9,
+    "value": 50.3
+   },
+   "why": {
+    "turnaround": [
+     "ueber 50-Tage-Linie",
+     "RSI erholt sich aus dem ueberverkauften Bereich"
+    ],
+    "momentum": [],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "PANW": {
+   "name": "Palo Alto Networks, Inc.",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 359.76,
+    "dd_ath": -9.2,
+    "days_since_ath": 6,
+    "range_pos": 85.8,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 13.51,
+    "sma200_slope": 6.75,
+    "higher_low": true,
+    "rsi14": 52.4,
+    "rsi_min60": 46.1,
+    "perf": {
+     "m1": 5.1,
+     "m3": 49.8,
+     "m6": 136.1,
+     "m12": 104.2
+    },
+    "rs6": 118.0,
+    "vol_ratio": 1.08
+   },
+   "flags": [],
+   "earnings_in": 12,
+   "scores": {
+    "turnaround": 56.5,
+    "momentum": 85.9,
+    "value": 64.0
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben"
+    ],
+    "momentum": [
+     "nur 9% unter ATH",
+     "relative Staerke +118% vs. Index",
+     "ueber 50- und 200-Tage-Linie",
+     "200-Tage-Linie steigt"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 31%"
+    ]
+   }
+  },
+  "PAYX": {
+   "name": "Paychex, Inc.",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 122.5,
+    "dd_ath": -19.3,
+    "days_since_ath": 439,
+    "range_pos": 75.9,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 9.69,
+    "sma200_slope": -0.11,
+    "higher_low": true,
+    "rsi14": 61.5,
+    "rsi_min60": 46.4,
+    "perf": {
+     "m1": 10.6,
+     "m3": 31.0,
+     "m6": 33.0,
+     "m12": -7.0
+    },
+    "rs6": 14.8,
+    "vol_ratio": 1.09
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 63.9,
+    "momentum": 53.4,
+    "value": 53.8
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben"
+    ],
+    "momentum": [
+     "relative Staerke +15% vs. Index",
+     "ueber 50- und 200-Tage-Linie"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "Umsatzwachstum 12%"
+    ]
+   }
+  },
+  "PCAR": {
+   "name": "PACCAR Inc.",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 127.47,
+    "dd_ath": -7.5,
+    "days_since_ath": 22,
+    "range_pos": 78.0,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 6.75,
+    "sma200_slope": 3.27,
+    "higher_low": true,
+    "rsi14": 45.4,
+    "rsi_min60": 38.5,
+    "perf": {
+     "m1": 1.2,
+     "m3": 16.8,
+     "m6": 2.4,
+     "m12": 32.8
+    },
+    "rs6": -15.8,
+    "vol_ratio": 1.01
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 54.8,
+    "momentum": 56.3,
+    "value": 66.6
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben"
+    ],
+    "momentum": [
+     "nur 8% unter ATH",
+     "ueber 50- und 200-Tage-Linie",
+     "200-Tage-Linie steigt"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "PEG 1.30",
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "PDD": {
+   "name": "PDD Holdings Inc.",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 90.2,
+    "dd_ath": -55.5,
+    "days_since_ath": 2009,
+    "range_pos": 26.1,
+    "above_sma50": true,
+    "above_sma200": false,
+    "sma50_slope": -1.68,
+    "sma200_slope": -4.16,
+    "higher_low": true,
+    "rsi14": 57.1,
+    "rsi_min60": 24.0,
+    "perf": {
+     "m1": 6.3,
+     "m3": -7.3,
+     "m6": -12.4,
+     "m12": -23.8
+    },
+    "rs6": -30.5,
+    "vol_ratio": 0.92
+   },
+   "flags": [
+    "200-Tage-Linie faellt steil"
+   ],
+   "earnings_in": 4,
+   "scores": {
+    "turnaround": 79.9,
+    "momentum": 0.6,
+    "value": 96.0
+   },
+   "why": {
+    "turnaround": [
+     "-56% unter ATH",
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "RSI erholt sich aus dem ueberverkauften Bereich"
+    ],
+    "momentum": [],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "PEG 0.78",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 11%"
+    ]
+   }
+  },
+  "PEP": {
+   "name": "Pepsico, Inc.",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 142.58,
+    "dd_ath": -18.7,
+    "days_since_ath": 1195,
+    "range_pos": 25.0,
+    "above_sma50": true,
+    "above_sma200": false,
+    "sma50_slope": -1.6,
+    "sma200_slope": -0.33,
+    "higher_low": false,
+    "rsi14": 57.8,
+    "rsi_min60": 31.2,
+    "perf": {
+     "m1": 5.6,
+     "m3": -4.2,
+     "m6": -11.6,
+     "m12": -0.9
+    },
+    "rs6": -29.8,
+    "vol_ratio": 0.91
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 41.4,
+    "momentum": 7.1,
+    "value": 65.8
+   },
+   "why": {
+    "turnaround": [
+     "ueber 50-Tage-Linie",
+     "RSI erholt sich aus dem ueberverkauften Bereich"
+    ],
+    "momentum": [],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "PLTR": {
+   "name": "Palantir Technologies Inc.",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 175.19,
+    "dd_ath": -15.4,
+    "days_since_ath": 289,
+    "range_pos": 68.0,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 3.75,
+    "sma200_slope": -1.97,
+    "higher_low": true,
+    "rsi14": 67.6,
+    "rsi_min60": 27.4,
+    "perf": {
+     "m1": 32.1,
+     "m3": 29.5,
+     "m6": 29.4,
+     "m12": 0.7
+    },
+    "rs6": 11.2,
+    "vol_ratio": 1.39
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 72.4,
+    "momentum": 56.6,
+    "value": 81.4
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben",
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "Anstiege auf hoeherem Volumen"
+    ],
+    "momentum": [
+     "ueber 50- und 200-Tage-Linie"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 93%"
+    ]
+   }
+  },
+  "PYPL": {
+   "name": "PayPal Holdings, Inc.",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 61.25,
+    "dd_ath": -80.0,
+    "days_since_ath": 1853,
+    "range_pos": 61.2,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 13.08,
+    "sma200_slope": -2.07,
+    "higher_low": true,
+    "rsi14": 71.4,
+    "rsi_min60": 28.1,
+    "perf": {
+     "m1": 9.7,
+     "m3": 40.2,
+     "m6": 48.7,
+     "m12": -11.1
+    },
+    "rs6": 30.5,
+    "vol_ratio": 1.44
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 62.5,
+    "momentum": 55.4,
+    "value": 85.3
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben",
+     "Anstiege auf hoeherem Volumen"
+    ],
+    "momentum": [
+     "relative Staerke +30% vs. Index",
+     "ueber 50- und 200-Tage-Linie"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "PEG 1.13",
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "QCOM": {
+   "name": "QUALCOMM Incorporated",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 161.91,
+    "dd_ath": -35.3,
+    "days_since_ath": 82,
+    "range_pos": 30.3,
+    "above_sma50": false,
+    "above_sma200": false,
+    "sma50_slope": -12.16,
+    "sma200_slope": -0.28,
+    "higher_low": true,
+    "rsi14": 44.6,
+    "rsi_min60": 28.9,
+    "perf": {
+     "m1": -6.7,
+     "m3": -16.9,
+     "m6": 14.2,
+     "m12": 4.0
+    },
+    "rs6": -4.0,
+    "vol_ratio": 0.88
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 65.0,
+    "momentum": 0.8,
+    "value": 79.4
+   },
+   "why": {
+    "turnaround": [
+     "-35% unter ATH",
+     "hoeheres Tief",
+     "RSI erholt sich aus dem ueberverkauften Bereich"
+    ],
+    "momentum": [],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "PEG 0.71",
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "REGN": {
+   "name": "Regeneron Pharmaceuticals, Inc.",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 840.84,
+    "dd_ath": -29.4,
+    "days_since_ath": 722,
+    "range_pos": 100.0,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 6.95,
+    "sma200_slope": 2.46,
+    "higher_low": true,
+    "rsi14": 83.1,
+    "rsi_min60": 25.0,
+    "perf": {
+     "m1": 24.7,
+     "m3": 33.8,
+     "m6": 6.6,
+     "m12": 47.3
+    },
+    "rs6": -11.6,
+    "vol_ratio": 1.03
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 72.2,
+    "momentum": 39.9,
+    "value": 91.1
+   },
+   "why": {
+    "turnaround": [
+     "-29% unter ATH",
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben"
+    ],
+    "momentum": [
+     "ueber 50- und 200-Tage-Linie",
+     "200-Tage-Linie steigt"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "PEG 1.36",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 17%"
+    ]
+   }
+  },
+  "ROP": {
+   "name": "Roper Technologies, Inc.",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 407.32,
+    "dd_ath": -30.6,
+    "days_since_ath": 532,
+    "range_pos": 42.1,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 7.87,
+    "sma200_slope": -2.56,
+    "higher_low": true,
+    "rsi14": 64.1,
+    "rsi_min60": 33.2,
+    "perf": {
+     "m1": 16.1,
+     "m3": 24.1,
+     "m6": 25.0,
+     "m12": -22.8
+    },
+    "rs6": 6.8,
+    "vol_ratio": 1.1
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 95.0,
+    "momentum": 35.5,
+    "value": 62.9
+   },
+   "why": {
+    "turnaround": [
+     "-31% unter ATH",
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben",
+     "RSI erholt sich aus dem ueberverkauften Bereich"
+    ],
+    "momentum": [
+     "ueber 50- und 200-Tage-Linie"
+    ],
+    "value": [
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "ROST": {
+   "name": "Ross Stores, Inc.",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 234.69,
+    "dd_ath": -8.0,
+    "days_since_ath": 12,
+    "range_pos": 81.6,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 4.33,
+    "sma200_slope": 4.67,
+    "higher_low": true,
+    "rsi14": 40.9,
+    "rsi_min60": 32.8,
+    "perf": {
+     "m1": -0.5,
+     "m3": 10.6,
+     "m6": 17.6,
+     "m12": 62.1
+    },
+    "rs6": -0.6,
+    "vol_ratio": 0.86
+   },
+   "flags": [],
+   "earnings_in": 0,
+   "scores": {
+    "turnaround": 60.0,
+    "momentum": 59.3,
+    "value": 72.7
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben",
+     "RSI erholt sich aus dem ueberverkauften Bereich"
+    ],
+    "momentum": [
+     "nur 8% unter ATH",
+     "ueber 50- und 200-Tage-Linie",
+     "200-Tage-Linie steigt"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 21%"
+    ]
+   }
+  },
+  "SBUX": {
+   "name": "Starbucks Corporation",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 104.98,
+    "dd_ath": -5.9,
+    "days_since_ath": 1850,
+    "range_pos": 90.6,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 1.55,
+    "sma200_slope": 2.54,
+    "higher_low": true,
+    "rsi14": 49.9,
+    "rsi_min60": 29.4,
+    "perf": {
+     "m1": 1.1,
+     "m3": -0.7,
+     "m6": 10.9,
+     "m12": 16.3
+    },
+    "rs6": -7.3,
+    "vol_ratio": 1.2
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 63.9,
+    "momentum": 65.7,
+    "value": 48.1
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben",
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "Anstiege auf hoeherem Volumen"
+    ],
+    "momentum": [
+     "nur 6% unter ATH",
+     "ueber 50- und 200-Tage-Linie",
+     "200-Tage-Linie steigt"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "PEG 1.31",
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "SNPS": {
+   "name": "Synopsys, Inc.",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 401.24,
+    "dd_ath": -37.8,
+    "days_since_ath": 385,
+    "range_pos": 12.0,
+    "above_sma50": false,
+    "above_sma200": false,
+    "sma50_slope": -8.88,
+    "sma200_slope": -1.33,
+    "higher_low": false,
+    "rsi14": 45.2,
+    "rsi_min60": 22.7,
+    "perf": {
+     "m1": 3.1,
+     "m3": -18.8,
+     "m6": -9.3,
+     "m12": -35.8
+    },
+    "rs6": -27.5,
+    "vol_ratio": 0.86
+   },
+   "flags": [],
+   "earnings_in": 6,
+   "scores": {
+    "turnaround": 43.5,
+    "momentum": 0.0,
+    "value": 61.6
+   },
+   "why": {
+    "turnaround": [
+     "-38% unter ATH",
+     "RSI erholt sich aus dem ueberverkauften Bereich"
+    ],
+    "momentum": [],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 42%"
+    ]
+   }
+  },
+  "TEAM": {
+   "name": "Atlassian Corporation",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 174.23,
+    "dd_ath": -62.0,
+    "days_since_ath": 1755,
+    "range_pos": 93.5,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 15.4,
+    "sma200_slope": -2.63,
+    "higher_low": true,
+    "rsi14": 79.6,
+    "rsi_min60": 35.1,
+    "perf": {
+     "m1": 92.3,
+     "m3": 101.1,
+     "m6": 108.4,
+     "m12": 3.0
+    },
+    "rs6": 90.2,
+    "vol_ratio": 1.18
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 68.4,
+    "momentum": 63.0,
+    "value": 47.2
+   },
+   "why": {
+    "turnaround": [
+     "-62% unter ATH",
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben",
+     "Anstiege auf hoeherem Volumen"
+    ],
+    "momentum": [
+     "relative Staerke +90% vs. Index",
+     "ueber 50- und 200-Tage-Linie"
+    ],
+    "value": [
+     "positiver Free Cashflow",
+     "Umsatzwachstum 28%"
+    ]
+   }
+  },
+  "TMUS": {
+   "name": "T-Mobile US, Inc.",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 182.36,
+    "dd_ath": -31.6,
+    "days_since_ath": 534,
+    "range_pos": 16.9,
+    "above_sma50": true,
+    "above_sma200": false,
+    "sma50_slope": -1.86,
+    "sma200_slope": -2.15,
+    "higher_low": true,
+    "rsi14": 51.9,
+    "rsi_min60": 30.5,
+    "perf": {
+     "m1": -4.4,
+     "m3": -5.2,
+     "m6": -13.6,
+     "m12": -27.2
+    },
+    "rs6": -31.8,
+    "vol_ratio": 0.98
+   },
+   "flags": [
+    "200-Tage-Linie faellt steil"
+   ],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 82.0,
+    "momentum": 2.3,
+    "value": 72.0
+   },
+   "why": {
+    "turnaround": [
+     "-32% unter ATH",
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "RSI erholt sich aus dem ueberverkauften Bereich"
+    ],
+    "momentum": [],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "PEG 0.84",
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "TSLA": {
+   "name": "Tesla, Inc.",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 351.12,
+    "dd_ath": -28.3,
+    "days_since_ath": 246,
+    "range_pos": 27.6,
+    "above_sma50": false,
+    "above_sma200": false,
+    "sma50_slope": -9.87,
+    "sma200_slope": -2.78,
+    "higher_low": false,
+    "rsi14": 53.4,
+    "rsi_min60": 25.4,
+    "perf": {
+     "m1": -7.3,
+     "m3": -13.1,
+     "m6": -14.6,
+     "m12": 4.8
+    },
+    "rs6": -32.8,
+    "vol_ratio": 0.97
+   },
+   "flags": [
+    "200-Tage-Linie faellt steil"
+   ],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 43.9,
+    "momentum": 2.0,
+    "value": 56.8
+   },
+   "why": {
+    "turnaround": [
+     "-28% unter ATH",
+     "RSI erholt sich aus dem ueberverkauften Bereich"
+    ],
+    "momentum": [],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 26%"
+    ]
+   }
+  },
+  "TTD": {
+   "name": "The Trade Desk, Inc.",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 13.54,
+    "dd_ath": -90.3,
+    "days_since_ath": 623,
+    "range_pos": 0.4,
+    "above_sma50": false,
+    "above_sma200": false,
+    "sma50_slope": -10.26,
+    "sma200_slope": -11.78,
+    "higher_low": false,
+    "rsi14": 33.0,
+    "rsi_min60": 27.3,
+    "perf": {
+     "m1": -25.8,
+     "m3": -36.0,
+     "m6": -46.9,
+     "m12": -75.4
+    },
+    "rs6": -65.1,
+    "vol_ratio": 0.9
+   },
+   "flags": [
+    "200-Tage-Linie faellt steil",
+    "mehr als 80% unter ATH"
+   ],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 1.4,
+    "momentum": 0.0,
+    "value": 73.2
+   },
+   "why": {
+    "turnaround": [],
+    "momentum": [],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "PEG 1.20",
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "TTWO": {
+   "name": "Take-Two Interactive Software, ",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 237.04,
+    "dd_ath": -9.6,
+    "days_since_ath": 303,
+    "range_pos": 65.2,
+    "above_sma50": false,
+    "above_sma200": true,
+    "sma50_slope": 2.7,
+    "sma200_slope": -0.63,
+    "higher_low": true,
+    "rsi14": 45.9,
+    "rsi_min60": 38.2,
+    "perf": {
+     "m1": 0.5,
+     "m3": -0.5,
+     "m6": 19.0,
+     "m12": 1.9
+    },
+    "rs6": 0.9,
+    "vol_ratio": 1.16
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 45.2,
+    "momentum": 38.8,
+    "value": 29.4
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "50-Tage-Linie dreht nach oben",
+     "Anstiege auf hoeherem Volumen"
+    ],
+    "momentum": [
+     "nur 10% unter ATH"
+    ],
+    "value": [
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "TXN": {
+   "name": "Texas Instruments Incorporated",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 267.45,
+    "dd_ath": -19.1,
+    "days_since_ath": 58,
+    "range_pos": 64.9,
+    "above_sma50": false,
+    "above_sma200": true,
+    "sma50_slope": -3.35,
+    "sma200_slope": 4.89,
+    "higher_low": true,
+    "rsi14": 40.9,
+    "rsi_min60": 38.3,
+    "perf": {
+     "m1": -7.7,
+     "m3": -11.1,
+     "m6": 21.0,
+     "m12": 41.2
+    },
+    "rs6": 2.8,
+    "vol_ratio": 0.91
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 34.7,
+    "momentum": 32.8,
+    "value": 88.8
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief"
+    ],
+    "momentum": [
+     "200-Tage-Linie steigt"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "PEG 1.23",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 23%"
+    ]
+   }
+  },
+  "VRSK": {
+   "name": "Verisk Analytics, Inc.",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 186.45,
+    "dd_ath": -41.4,
+    "days_since_ath": 441,
+    "range_pos": 26.3,
+    "above_sma50": false,
+    "above_sma200": false,
+    "sma50_slope": 4.38,
+    "sma200_slope": -2.17,
+    "higher_low": true,
+    "rsi14": 48.6,
+    "rsi_min60": 37.2,
+    "perf": {
+     "m1": -4.5,
+     "m3": 9.5,
+     "m6": 1.8,
+     "m12": -29.2
+    },
+    "rs6": -16.4,
+    "vol_ratio": 0.87
+   },
+   "flags": [
+    "200-Tage-Linie faellt steil"
+   ],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 67.0,
+    "momentum": 0.0,
+    "value": 51.3
+   },
+   "why": {
+    "turnaround": [
+     "-41% unter ATH",
+     "hoeheres Tief",
+     "50-Tage-Linie dreht nach oben"
+    ],
+    "momentum": [],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "VRTX": {
+   "name": "Vertex Pharmaceuticals Incorpor",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 552.06,
+    "dd_ath": 0.0,
+    "days_since_ath": 0,
+    "range_pos": 100.0,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 5.13,
+    "sma200_slope": 1.85,
+    "higher_low": true,
+    "rsi14": 71.3,
+    "rsi_min60": 41.1,
+    "perf": {
+     "m1": 14.5,
+     "m3": 27.1,
+     "m6": 17.4,
+     "m12": 41.6
+    },
+    "rs6": -0.8,
+    "vol_ratio": 1.2
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 56.6,
+    "momentum": 71.7,
+    "value": 83.6
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben",
+     "Anstiege auf hoeherem Volumen"
+    ],
+    "momentum": [
+     "nur 0% unter ATH",
+     "ueber 50- und 200-Tage-Linie"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 12%"
+    ]
+   }
+  },
+  "WBD": {
+   "name": "Warner Bros. Discovery, Inc. - ",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 28.53,
+    "dd_ath": -63.1,
+    "days_since_ath": 1979,
+    "range_pos": 92.1,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": -0.56,
+    "sma200_slope": 2.8,
+    "higher_low": false,
+    "rsi14": 72.2,
+    "rsi_min60": 30.2,
+    "perf": {
+     "m1": 10.5,
+     "m3": 5.3,
+     "m6": -0.9,
+     "m12": 141.4
+    },
+    "rs6": -19.1,
+    "vol_ratio": 0.91
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 34.9,
+    "momentum": 37.3,
+    "value": 26.6
+   },
+   "why": {
+    "turnaround": [
+     "ueber 50-Tage-Linie"
+    ],
+    "momentum": [
+     "ueber 50- und 200-Tage-Linie",
+     "200-Tage-Linie steigt"
+    ],
+    "value": [
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "WDAY": {
+   "name": "Workday, Inc.",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 198.42,
+    "dd_ath": -35.4,
+    "days_since_ath": 905,
+    "range_pos": 63.6,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 11.96,
+    "sma200_slope": -3.87,
+    "higher_low": true,
+    "rsi14": 66.6,
+    "rsi_min60": 33.3,
+    "perf": {
+     "m1": 40.6,
+     "m3": 53.4,
+     "m6": 39.1,
+     "m12": -14.4
+    },
+    "rs6": 20.9,
+    "vol_ratio": 1.14
+   },
+   "flags": [],
+   "earnings_in": 7,
+   "scores": {
+    "turnaround": 93.8,
+    "momentum": 49.6,
+    "value": 85.1
+   },
+   "why": {
+    "turnaround": [
+     "-35% unter ATH",
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben",
+     "RSI erholt sich aus dem ueberverkauften Bereich"
+    ],
+    "momentum": [
+     "relative Staerke +21% vs. Index",
+     "ueber 50- und 200-Tage-Linie"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "PEG 0.78",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 14%"
+    ]
+   }
+  },
+  "XEL": {
+   "name": "Xcel Energy Inc.",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 79.41,
+    "dd_ath": -3.9,
+    "days_since_ath": 176,
+    "range_pos": 75.0,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 0.08,
+    "sma200_slope": -0.04,
+    "higher_low": true,
+    "rsi14": 53.6,
+    "rsi_min60": 36.0,
+    "perf": {
+     "m1": 0.9,
+     "m3": 0.3,
+     "m6": 1.2,
+     "m12": 13.4
+    },
+    "rs6": -17.0,
+    "vol_ratio": 0.86
+   },
+   "flags": [
+    "fallender Umsatz bei hoher Verschuldung"
+   ],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 44.7,
+    "momentum": 47.9,
+    "value": 39.3
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie"
+    ],
+    "momentum": [
+     "nur 4% unter ATH",
+     "ueber 50- und 200-Tage-Linie"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem"
+    ]
+   }
+  },
+  "ZS": {
+   "name": "Zscaler, Inc.",
+   "index": "NASDAQ",
+   "metrics": {
+    "last": 184.6,
+    "dd_ath": -49.9,
+    "days_since_ath": 1734,
+    "range_pos": 30.5,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 3.53,
+    "sma200_slope": -7.46,
+    "higher_low": true,
+    "rsi14": 70.3,
+    "rsi_min60": 37.3,
+    "perf": {
+     "m1": 24.1,
+     "m3": 5.3,
+     "m6": 7.2,
+     "m12": -33.4
+    },
+    "rs6": -10.9,
+    "vol_ratio": 0.87
+   },
+   "flags": [],
+   "earnings_in": 14,
+   "scores": {
+    "turnaround": 79.5,
+    "momentum": 20.0,
+    "value": 47.0
+   },
+   "why": {
+    "turnaround": [
+     "-50% unter ATH",
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben"
+    ],
+    "momentum": [
+     "ueber 50- und 200-Tage-Linie"
+    ],
+    "value": [
+     "positiver Free Cashflow",
+     "Umsatzwachstum 25%"
+    ]
+   }
+  },
+  "AXP": {
+   "name": "American Express Company",
+   "index": "DOW",
+   "metrics": {
+    "last": 339.9,
+    "dd_ath": -11.0,
+    "days_since_ath": 251,
+    "range_pos": 54.1,
+    "above_sma50": false,
+    "above_sma200": true,
+    "sma50_slope": 3.51,
+    "sma200_slope": 0.05,
+    "higher_low": true,
+    "rsi14": 48.7,
+    "rsi_min60": 34.7,
+    "perf": {
+     "m1": -3.1,
+     "m3": 10.2,
+     "m6": -1.3,
+     "m12": 11.9
+    },
+    "rs6": -8.9,
+    "vol_ratio": 0.94
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 51.0,
+    "momentum": 24.5,
+    "value": 65.3
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "50-Tage-Linie dreht nach oben",
+     "RSI erholt sich aus dem ueberverkauften Bereich"
+    ],
+    "momentum": [
+     "nur 11% unter ATH"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "Umsatzwachstum 13%"
+    ]
+   }
+  },
+  "BA": {
+   "name": "Boeing Company (The)",
+   "index": "DOW",
+   "metrics": {
+    "last": 222.2,
+    "dd_ath": -48.4,
+    "days_since_ath": 2728,
+    "range_pos": 59.0,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 0.4,
+    "sma200_slope": 0.42,
+    "higher_low": false,
+    "rsi14": 47.0,
+    "rsi_min60": 35.2,
+    "perf": {
+     "m1": 8.5,
+     "m3": 3.3,
+     "m6": -7.0,
+     "m12": -4.4
+    },
+    "rs6": -14.7,
+    "vol_ratio": 1.07
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 58.8,
+    "momentum": 25.9,
+    "value": 54.3
+   },
+   "why": {
+    "turnaround": [
+     "-48% unter ATH",
+     "ueber 50-Tage-Linie"
+    ],
+    "momentum": [
+     "ueber 50- und 200-Tage-Linie"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "CAT": {
+   "name": "Caterpillar, Inc.",
+   "index": "DOW",
+   "metrics": {
+    "last": 816.15,
+    "dd_ath": -23.2,
+    "days_since_ath": 50,
+    "range_pos": 62.1,
+    "above_sma50": false,
+    "above_sma200": true,
+    "sma50_slope": -2.02,
+    "sma200_slope": 4.57,
+    "higher_low": true,
+    "rsi14": 39.8,
+    "rsi_min60": 29.2,
+    "perf": {
+     "m1": -8.3,
+     "m3": -4.9,
+     "m6": 8.9,
+     "m12": 99.6
+    },
+    "rs6": 1.3,
+    "vol_ratio": 0.86
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 41.5,
+    "momentum": 25.9,
+    "value": 72.5
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief"
+    ],
+    "momentum": [
+     "200-Tage-Linie steigt"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 24%"
+    ]
+   }
+  },
+  "CRM": {
+   "name": "Salesforce, Inc.",
+   "index": "DOW",
+   "metrics": {
+    "last": 206.09,
+    "dd_ath": -43.3,
+    "days_since_ath": 623,
+    "range_pos": 48.8,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 1.57,
+    "sma200_slope": -2.86,
+    "higher_low": true,
+    "rsi14": 64.8,
+    "rsi_min60": 30.0,
+    "perf": {
+     "m1": 21.2,
+     "m3": 15.2,
+     "m6": 10.3,
+     "m12": -14.8
+    },
+    "rs6": 2.7,
+    "vol_ratio": 1.0
+   },
+   "flags": [],
+   "earnings_in": 6,
+   "scores": {
+    "turnaround": 88.9,
+    "momentum": 29.3,
+    "value": 90.2
+   },
+   "why": {
+    "turnaround": [
+     "-43% unter ATH",
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben",
+     "RSI erholt sich aus dem ueberverkauften Bereich"
+    ],
+    "momentum": [
+     "ueber 50- und 200-Tage-Linie"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "PEG 0.81",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 13%"
+    ]
+   }
+  },
+  "CVX": {
+   "name": "Chevron Corporation",
+   "index": "DOW",
+   "metrics": {
+    "last": 205.76,
+    "dd_ath": -0.8,
+    "days_since_ath": 145,
+    "range_pos": 97.4,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 1.58,
+    "sma200_slope": 2.66,
+    "higher_low": true,
+    "rsi14": 71.3,
+    "rsi_min60": 28.0,
+    "perf": {
+     "m1": 8.6,
+     "m3": 5.2,
+     "m6": 13.9,
+     "m12": 39.2
+    },
+    "rs6": 6.3,
+    "vol_ratio": 0.84
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 45.5,
+    "momentum": 71.1,
+    "value": 89.1
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben"
+    ],
+    "momentum": [
+     "nur 1% unter ATH",
+     "ueber 50- und 200-Tage-Linie",
+     "200-Tage-Linie steigt"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "PEG 0.77",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 54%"
+    ]
+   }
+  },
+  "DIS": {
+   "name": "Walt Disney Company (The)",
+   "index": "DOW",
+   "metrics": {
+    "last": 106.93,
+    "dd_ath": -45.4,
+    "days_since_ath": 1990,
+    "range_pos": 59.8,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": -0.44,
+    "sma200_slope": -0.88,
+    "higher_low": false,
+    "rsi14": 63.8,
+    "rsi_min60": 35.6,
+    "perf": {
+     "m1": 11.2,
+     "m3": 5.3,
+     "m6": 0.6,
+     "m12": -6.9
+    },
+    "rs6": -7.0,
+    "vol_ratio": 1.07
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 56.5,
+    "momentum": 24.9,
+    "value": 63.9
+   },
+   "why": {
+    "turnaround": [
+     "-45% unter ATH",
+     "ueber 50-Tage-Linie"
+    ],
+    "momentum": [
+     "ueber 50- und 200-Tage-Linie"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "GS": {
+   "name": "Goldman Sachs Group, Inc. (The)",
+   "index": "DOW",
+   "metrics": {
+    "last": 1021.65,
+    "dd_ath": -11.3,
+    "days_since_ath": 35,
+    "range_pos": 71.0,
+    "above_sma50": false,
+    "above_sma200": true,
+    "sma50_slope": 1.65,
+    "sma200_slope": 3.05,
+    "higher_low": true,
+    "rsi14": 44.6,
+    "rsi_min60": 37.7,
+    "perf": {
+     "m1": -5.9,
+     "m3": 10.5,
+     "m6": 10.5,
+     "m12": 42.6
+    },
+    "rs6": 2.8,
+    "vol_ratio": 0.93
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 35.2,
+    "momentum": 41.5,
+    "value": 66.5
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "50-Tage-Linie dreht nach oben"
+    ],
+    "momentum": [
+     "200-Tage-Linie steigt"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "Umsatzwachstum 42%"
+    ]
+   }
+  },
+  "HD": {
+   "name": "Home Depot, Inc. (The)",
+   "index": "DOW",
+   "metrics": {
+    "last": 344.3,
+    "dd_ath": -17.0,
+    "days_since_ath": 621,
+    "range_pos": 41.0,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 4.16,
+    "sma200_slope": -1.03,
+    "higher_low": true,
+    "rsi14": 52.4,
+    "rsi_min60": 41.3,
+    "perf": {
+     "m1": 3.8,
+     "m3": 14.7,
+     "m6": -8.9,
+     "m12": -10.4
+    },
+    "rs6": -16.6,
+    "vol_ratio": 1.03
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 63.6,
+    "momentum": 32.4,
+    "value": 59.2
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben"
+    ],
+    "momentum": [
+     "ueber 50- und 200-Tage-Linie"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "IBM": {
+   "name": "International Business Machines",
+   "index": "DOW",
+   "metrics": {
+    "last": 237.16,
+    "dd_ath": -27.4,
+    "days_since_ath": 78,
+    "range_pos": 26.8,
+    "above_sma50": false,
+    "above_sma200": false,
+    "sma50_slope": -4.33,
+    "sma200_slope": -2.04,
+    "higher_low": false,
+    "rsi14": 51.5,
+    "rsi_min60": 29.2,
+    "perf": {
+     "m1": 13.5,
+     "m3": 7.4,
+     "m6": -7.7,
+     "m12": 1.6
+    },
+    "rs6": -15.4,
+    "vol_ratio": 0.87
+   },
+   "flags": [
+    "200-Tage-Linie faellt steil"
+   ],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 40.7,
+    "momentum": 0.0,
+    "value": 54.7
+   },
+   "why": {
+    "turnaround": [
+     "-27% unter ATH",
+     "RSI erholt sich aus dem ueberverkauften Bereich"
+    ],
+    "momentum": [],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "JNJ": {
+   "name": "Johnson & Johnson",
+   "index": "DOW",
+   "metrics": {
+    "last": 273.41,
+    "dd_ath": 0.0,
+    "days_since_ath": 0,
+    "range_pos": 100.0,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 5.6,
+    "sma200_slope": 3.34,
+    "higher_low": true,
+    "rsi14": 68.6,
+    "rsi_min60": 40.7,
+    "perf": {
+     "m1": 9.1,
+     "m3": 19.6,
+     "m6": 12.8,
+     "m12": 59.0
+    },
+    "rs6": 5.2,
+    "vol_ratio": 1.0
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 52.8,
+    "momentum": 74.7,
+    "value": 70.5
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben"
+    ],
+    "momentum": [
+     "nur 0% unter ATH",
+     "ueber 50- und 200-Tage-Linie",
+     "200-Tage-Linie steigt"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "JPM": {
+   "name": "JP Morgan Chase & Co.",
+   "index": "DOW",
+   "metrics": {
+    "last": 357.26,
+    "dd_ath": -2.2,
+    "days_since_ath": 7,
+    "range_pos": 90.7,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 7.03,
+    "sma200_slope": 1.9,
+    "higher_low": true,
+    "rsi14": 55.5,
+    "rsi_min60": 42.7,
+    "perf": {
+     "m1": 3.5,
+     "m3": 21.4,
+     "m6": 16.8,
+     "m12": 24.9
+    },
+    "rs6": 9.2,
+    "vol_ratio": 0.94
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 53.0,
+    "momentum": 72.5,
+    "value": 64.1
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben"
+    ],
+    "momentum": [
+     "nur 2% unter ATH",
+     "ueber 50- und 200-Tage-Linie"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "Umsatzwachstum 30%"
+    ]
+   }
+  },
+  "KO": {
+   "name": "Coca-Cola Company (The)",
+   "index": "DOW",
+   "metrics": {
+    "last": 90.35,
+    "dd_ath": 0.0,
+    "days_since_ath": 0,
+    "range_pos": 100.0,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 3.6,
+    "sma200_slope": 2.68,
+    "higher_low": true,
+    "rsi14": 68.8,
+    "rsi_min60": 37.7,
+    "perf": {
+     "m1": 10.2,
+     "m3": 11.0,
+     "m6": 15.2,
+     "m12": 34.4
+    },
+    "rs6": 7.5,
+    "vol_ratio": 0.97
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 52.0,
+    "momentum": 74.1,
+    "value": 67.0
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben"
+    ],
+    "momentum": [
+     "nur 0% unter ATH",
+     "ueber 50- und 200-Tage-Linie",
+     "200-Tage-Linie steigt"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "MCD": {
+   "name": "McDonald's Corporation",
+   "index": "DOW",
+   "metrics": {
+    "last": 267.45,
+    "dd_ath": -20.6,
+    "days_since_ath": 173,
+    "range_pos": 6.3,
+    "above_sma50": false,
+    "above_sma200": false,
+    "sma50_slope": -0.89,
+    "sma200_slope": -0.91,
+    "higher_low": false,
+    "rsi14": 44.8,
+    "rsi_min60": 33.4,
+    "perf": {
+     "m1": 1.3,
+     "m3": -4.1,
+     "m6": -17.4,
+     "m12": -11.3
+    },
+    "rs6": -25.1,
+    "vol_ratio": 1.01
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 28.0,
+    "momentum": 7.9,
+    "value": 47.2
+   },
+   "why": {
+    "turnaround": [
+     "RSI erholt sich aus dem ueberverkauften Bereich"
+    ],
+    "momentum": [],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "MMM": {
+   "name": "3M Company",
+   "index": "DOW",
+   "metrics": {
+    "last": 180.66,
+    "dd_ath": -1.7,
+    "days_since_ath": 7,
+    "range_pos": 92.8,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 7.53,
+    "sma200_slope": 1.44,
+    "higher_low": true,
+    "rsi14": 60.9,
+    "rsi_min60": 42.7,
+    "perf": {
+     "m1": 5.8,
+     "m3": 21.6,
+     "m6": 10.6,
+     "m12": 20.4
+    },
+    "rs6": 3.0,
+    "vol_ratio": 1.12
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 57.5,
+    "momentum": 71.6,
+    "value": 63.1
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben"
+    ],
+    "momentum": [
+     "nur 2% unter ATH",
+     "ueber 50- und 200-Tage-Linie"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "MRK": {
+   "name": "Merck & Company, Inc.",
+   "index": "DOW",
+   "metrics": {
+    "last": 152.2,
+    "dd_ath": 0.0,
+    "days_since_ath": 0,
+    "range_pos": 100.0,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 5.61,
+    "sma200_slope": 4.37,
+    "higher_low": true,
+    "rsi14": 83.2,
+    "rsi_min60": 44.3,
+    "perf": {
+     "m1": 20.5,
+     "m3": 34.2,
+     "m6": 26.9,
+     "m12": 86.8
+    },
+    "rs6": 19.3,
+    "vol_ratio": 0.98
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 47.0,
+    "momentum": 87.5,
+    "value": 53.3
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben"
+    ],
+    "momentum": [
+     "nur 0% unter ATH",
+     "relative Staerke +19% vs. Index",
+     "ueber 50- und 200-Tage-Linie",
+     "200-Tage-Linie steigt"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "NKE": {
+   "name": "Nike, Inc.",
+   "index": "DOW",
+   "metrics": {
+    "last": 41.05,
+    "dd_ath": -74.9,
+    "days_since_ath": 1748,
+    "range_pos": 5.2,
+    "above_sma50": false,
+    "above_sma200": false,
+    "sma50_slope": -1.84,
+    "sma200_slope": -4.57,
+    "higher_low": false,
+    "rsi14": 46.6,
+    "rsi_min60": 35.6,
+    "perf": {
+     "m1": -4.4,
+     "m3": -2.4,
+     "m6": -36.4,
+     "m12": -45.5
+    },
+    "rs6": -44.0,
+    "vol_ratio": 1.06
+   },
+   "flags": [
+    "200-Tage-Linie faellt steil"
+   ],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 11.2,
+    "momentum": 4.6,
+    "value": 62.7
+   },
+   "why": {
+    "turnaround": [],
+    "momentum": [],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "PG": {
+   "name": "Procter & Gamble Company (The)",
+   "index": "DOW",
+   "metrics": {
+    "last": 144.38,
+    "dd_ath": -15.7,
+    "days_since_ath": 625,
+    "range_pos": 31.5,
+    "above_sma50": false,
+    "above_sma200": false,
+    "sma50_slope": 1.0,
+    "sma200_slope": -0.06,
+    "higher_low": true,
+    "rsi14": 45.7,
+    "rsi_min60": 41.3,
+    "perf": {
+     "m1": -1.8,
+     "m3": 2.9,
+     "m6": -6.6,
+     "m12": -4.6
+    },
+    "rs6": -14.2,
+    "vol_ratio": 0.95
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 39.4,
+    "momentum": 11.5,
+    "value": 62.4
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief"
+    ],
+    "momentum": [],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "SHW": {
+   "name": "Sherwin-Williams Company (The)",
+   "index": "DOW",
+   "metrics": {
+    "last": 353.59,
+    "dd_ath": -10.3,
+    "days_since_ath": 632,
+    "range_pos": 76.2,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 5.86,
+    "sma200_slope": 0.49,
+    "higher_low": true,
+    "rsi14": 53.5,
+    "rsi_min60": 33.5,
+    "perf": {
+     "m1": 11.0,
+     "m3": 18.5,
+     "m6": -2.9,
+     "m12": -0.8
+    },
+    "rs6": -10.5,
+    "vol_ratio": 1.25
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 68.8,
+    "momentum": 52.6,
+    "value": 58.0
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben",
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "Anstiege auf hoeherem Volumen"
+    ],
+    "momentum": [
+     "nur 10% unter ATH",
+     "ueber 50- und 200-Tage-Linie"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "TRV": {
+   "name": "The Travelers Companies, Inc.",
+   "index": "DOW",
+   "metrics": {
+    "last": 362.22,
+    "dd_ath": -8.8,
+    "days_since_ath": 22,
+    "range_pos": 74.8,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 10.1,
+    "sma200_slope": 3.69,
+    "higher_low": true,
+    "rsi14": 46.7,
+    "rsi_min60": 33.3,
+    "perf": {
+     "m1": -2.0,
+     "m3": 19.1,
+     "m6": 22.3,
+     "m12": 38.9
+    },
+    "rs6": 14.7,
+    "vol_ratio": 1.19
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 67.3,
+    "momentum": 76.5,
+    "value": 57.7
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben",
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "Anstiege auf hoeherem Volumen"
+    ],
+    "momentum": [
+     "nur 9% unter ATH",
+     "relative Staerke +15% vs. Index",
+     "ueber 50- und 200-Tage-Linie",
+     "200-Tage-Linie steigt"
+    ],
+    "value": [
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "UNH": {
+   "name": "UnitedHealth Group Incorporated",
+   "index": "DOW",
+   "metrics": {
+    "last": 388.61,
+    "dd_ath": -35.2,
+    "days_since_ath": 646,
+    "range_pos": 73.3,
+    "above_sma50": false,
+    "above_sma200": true,
+    "sma50_slope": 2.28,
+    "sma200_slope": 1.65,
+    "higher_low": true,
+    "rsi14": 35.2,
+    "rsi_min60": 35.2,
+    "perf": {
+     "m1": -10.9,
+     "m3": 0.4,
+     "m6": 36.7,
+     "m12": 29.3
+    },
+    "rs6": 29.0,
+    "vol_ratio": 1.3
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 66.1,
+    "momentum": 51.6,
+    "value": 65.4
+   },
+   "why": {
+    "turnaround": [
+     "-35% unter ATH",
+     "hoeheres Tief",
+     "50-Tage-Linie dreht nach oben",
+     "Anstiege auf hoeherem Volumen"
+    ],
+    "momentum": [
+     "relative Staerke +29% vs. Index"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "PEG 1.24",
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "V": {
+   "name": "Visa Inc.",
+   "index": "DOW",
+   "metrics": {
+    "last": 365.54,
+    "dd_ath": -1.1,
+    "days_since_ath": 13,
+    "range_pos": 94.4,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 4.7,
+    "sma200_slope": 0.61,
+    "higher_low": true,
+    "rsi14": 56.6,
+    "rsi_min60": 38.9,
+    "perf": {
+     "m1": 2.9,
+     "m3": 11.0,
+     "m6": 14.6,
+     "m12": 7.5
+    },
+    "rs6": 6.9,
+    "vol_ratio": 1.03
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 55.2,
+    "momentum": 70.2,
+    "value": 85.2
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben"
+    ],
+    "momentum": [
+     "nur 1% unter ATH",
+     "ueber 50- und 200-Tage-Linie"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 14%"
+    ]
+   }
+  },
+  "VZ": {
+   "name": "Verizon Communications Inc.",
+   "index": "DOW",
+   "metrics": {
+    "last": 49.36,
+    "dd_ath": -0.8,
+    "days_since_ath": 159,
+    "range_pos": 96.9,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 0.68,
+    "sma200_slope": 2.1,
+    "higher_low": true,
+    "rsi14": 67.9,
+    "rsi_min60": 30.6,
+    "perf": {
+     "m1": 12.7,
+     "m3": 5.2,
+     "m6": 6.0,
+     "m12": 18.8
+    },
+    "rs6": -1.6,
+    "vol_ratio": 0.82
+   },
+   "flags": [
+    "fallender Umsatz bei hoher Verschuldung"
+   ],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 54.2,
+    "momentum": 63.1,
+    "value": 70.4
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "RSI erholt sich aus dem ueberverkauften Bereich"
+    ],
+    "momentum": [
+     "nur 1% unter ATH",
+     "ueber 50- und 200-Tage-Linie"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "PEG 0.92",
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "WMT": {
+   "name": "Walmart Inc.",
+   "index": "DOW",
+   "metrics": {
+    "last": 114.3,
+    "dd_ath": -14.8,
+    "days_since_ath": 92,
+    "range_pos": 48.6,
+    "above_sma50": true,
+    "above_sma200": false,
+    "sma50_slope": -3.57,
+    "sma200_slope": 0.74,
+    "higher_low": false,
+    "rsi14": 52.4,
+    "rsi_min60": 25.9,
+    "perf": {
+     "m1": 3.5,
+     "m3": -14.8,
+     "m6": -9.4,
+     "m12": 14.2
+    },
+    "rs6": -17.0,
+    "vol_ratio": 0.91
+   },
+   "flags": [],
+   "earnings_in": 0,
+   "scores": {
+    "turnaround": 35.2,
+    "momentum": 13.2,
+    "value": 56.3
+   },
+   "why": {
+    "turnaround": [
+     "ueber 50-Tage-Linie",
+     "RSI erholt sich aus dem ueberverkauften Bereich"
+    ],
+    "momentum": [],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "ADS.DE": {
+   "name": "adidas AG                     N",
+   "index": "DAX",
+   "metrics": {
+    "last": 154.4,
+    "dd_ath": -51.6,
+    "days_since_ath": 1842,
+    "range_pos": 41.3,
+    "above_sma50": false,
+    "above_sma200": false,
+    "sma50_slope": 2.02,
+    "sma200_slope": -1.13,
+    "higher_low": true,
+    "rsi14": 34.7,
+    "rsi_min60": 31.7,
+    "perf": {
+     "m1": -14.9,
+     "m3": 2.9,
+     "m6": 0.2,
+     "m12": -7.1
+    },
+    "rs6": -2.7,
+    "vol_ratio": 0.71
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 59.7,
+    "momentum": 1.9,
+    "value": 83.0
+   },
+   "why": {
+    "turnaround": [
+     "-52% unter ATH",
+     "hoeheres Tief",
+     "50-Tage-Linie dreht nach oben"
+    ],
+    "momentum": [],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "PEG 0.93",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 13%"
+    ]
+   }
+  },
+  "AIR.DE": {
+   "name": "Airbus SE                     A",
+   "index": "DAX",
+   "metrics": {
+    "last": 207.0,
+    "dd_ath": -4.3,
+    "days_since_ath": 219,
+    "range_pos": 84.6,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 8.13,
+    "sma200_slope": 0.5,
+    "higher_low": true,
+    "rsi14": 49.7,
+    "rsi_min60": 46.0,
+    "perf": {
+     "m1": 8.0,
+     "m3": 24.7,
+     "m6": 5.1,
+     "m12": 14.7
+    },
+    "rs6": 2.3,
+    "vol_ratio": 1.0
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 54.5,
+    "momentum": 60.9,
+    "value": 62.6
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben"
+    ],
+    "momentum": [
+     "nur 4% unter ATH",
+     "ueber 50- und 200-Tage-Linie"
+    ],
+    "value": [
+     "positiver Free Cashflow",
+     "Umsatzwachstum 28%"
+    ]
+   }
+  },
+  "ALV.DE": {
+   "name": "Allianz SE                    v",
+   "index": "DAX",
+   "metrics": {
+    "last": 436.8,
+    "dd_ath": -1.3,
+    "days_since_ath": 6,
+    "range_pos": 94.8,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 5.49,
+    "sma200_slope": 2.48,
+    "higher_low": true,
+    "rsi14": 57.4,
+    "rsi_min60": 42.7,
+    "perf": {
+     "m1": 3.3,
+     "m3": 13.2,
+     "m6": 22.7,
+     "m12": 22.0
+    },
+    "rs6": 19.8,
+    "vol_ratio": 1.15
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 58.2,
+    "momentum": 89.0,
+    "value": 75.7
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben",
+     "Anstiege auf hoeherem Volumen"
+    ],
+    "momentum": [
+     "nur 1% unter ATH",
+     "relative Staerke +20% vs. Index",
+     "ueber 50- und 200-Tage-Linie",
+     "200-Tage-Linie steigt"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 12%"
+    ]
+   }
+  },
+  "BAS.DE": {
+   "name": "BASF SE                       N",
+   "index": "DAX",
+   "metrics": {
+    "last": 51.05,
+    "dd_ath": -14.0,
+    "days_since_ath": 3135,
+    "range_pos": 79.1,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": -0.74,
+    "sma200_slope": 1.94,
+    "higher_low": true,
+    "rsi14": 56.8,
+    "rsi_min60": 30.2,
+    "perf": {
+     "m1": 6.2,
+     "m3": -1.6,
+     "m6": 6.7,
+     "m12": 11.9
+    },
+    "rs6": 3.8,
+    "vol_ratio": 0.92
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 51.1,
+    "momentum": 51.1,
+    "value": 82.8
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "RSI erholt sich aus dem ueberverkauften Bereich"
+    ],
+    "momentum": [
+     "ueber 50- und 200-Tage-Linie"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "PEG 0.66",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 16%"
+    ]
+   }
+  },
+  "BAYN.DE": {
+   "name": "Bayer AG                      N",
+   "index": "DAX",
+   "metrics": {
+    "last": 48.44,
+    "dd_ath": -49.1,
+    "days_since_ath": 3349,
+    "range_pos": 82.0,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 10.46,
+    "sma200_slope": 5.42,
+    "higher_low": true,
+    "rsi14": 54.1,
+    "rsi_min60": 28.3,
+    "perf": {
+     "m1": 2.4,
+     "m3": 24.5,
+     "m6": 6.0,
+     "m12": 72.9
+    },
+    "rs6": 3.2,
+    "vol_ratio": 1.16
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 91.5,
+    "momentum": 51.6,
+    "value": 34.3
+   },
+   "why": {
+    "turnaround": [
+     "-49% unter ATH",
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben",
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "Anstiege auf hoeherem Volumen"
+    ],
+    "momentum": [
+     "ueber 50- und 200-Tage-Linie",
+     "200-Tage-Linie steigt"
+    ],
+    "value": [
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "BEI.DE": {
+   "name": "BEIERSDORF AG                 I",
+   "index": "DAX",
+   "metrics": {
+    "last": 78.1,
+    "dd_ath": -45.8,
+    "days_since_ath": 832,
+    "range_pos": 26.4,
+    "above_sma50": true,
+    "above_sma200": false,
+    "sma50_slope": 4.83,
+    "sma200_slope": -1.46,
+    "higher_low": true,
+    "rsi14": 49.0,
+    "rsi_min60": 32.6,
+    "perf": {
+     "m1": -1.1,
+     "m3": 7.7,
+     "m6": -25.5,
+     "m12": -23.1
+    },
+    "rs6": -28.3,
+    "vol_ratio": 0.9
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 90.0,
+    "momentum": 0.0,
+    "value": 36.2
+   },
+   "why": {
+    "turnaround": [
+     "-46% unter ATH",
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben",
+     "RSI erholt sich aus dem ueberverkauften Bereich"
+    ],
+    "momentum": [],
+    "value": [
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "BMW.DE": {
+   "name": "BAYERISCHE MOTOREN WERKE AG   S",
+   "index": "DAX",
+   "metrics": {
+    "last": 58.6,
+    "dd_ath": -39.5,
+    "days_since_ath": 864,
+    "range_pos": 4.8,
+    "above_sma50": false,
+    "above_sma200": false,
+    "sma50_slope": -8.97,
+    "sma200_slope": -2.35,
+    "higher_low": false,
+    "rsi14": 45.5,
+    "rsi_min60": 19.3,
+    "perf": {
+     "m1": 0.4,
+     "m3": -21.2,
+     "m6": -32.5,
+     "m12": -32.2
+    },
+    "rs6": -35.3,
+    "vol_ratio": 0.97
+   },
+   "flags": [
+    "200-Tage-Linie faellt steil"
+   ],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 41.8,
+    "momentum": 2.0,
+    "value": 48.3
+   },
+   "why": {
+    "turnaround": [
+     "-40% unter ATH",
+     "RSI erholt sich aus dem ueberverkauften Bereich"
+    ],
+    "momentum": [],
+    "value": [
+     "PEG 0.78",
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "BNR.DE": {
+   "name": "Brenntag SE                   N",
+   "index": "DAX",
+   "metrics": {
+    "last": 60.02,
+    "dd_ath": -22.7,
+    "days_since_ath": 902,
+    "range_pos": 78.7,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 2.98,
+    "sma200_slope": 2.5,
+    "higher_low": true,
+    "rsi14": 47.8,
+    "rsi_min60": 32.9,
+    "perf": {
+     "m1": 3.3,
+     "m3": 3.6,
+     "m6": 13.3,
+     "m12": 12.2
+    },
+    "rs6": 10.4,
+    "vol_ratio": 1.02
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 75.8,
+    "momentum": 51.2,
+    "value": 73.9
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben",
+     "RSI erholt sich aus dem ueberverkauften Bereich"
+    ],
+    "momentum": [
+     "ueber 50- und 200-Tage-Linie",
+     "200-Tage-Linie steigt"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "PEG 1.14",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 10%"
+    ]
+   }
+  },
+  "CBK.DE": {
+   "name": "Commerzbank AG                I",
+   "index": "DAX",
+   "metrics": {
+    "last": 38.85,
+    "dd_ath": -2.5,
+    "days_since_ath": 7,
+    "range_pos": 90.9,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 2.39,
+    "sma200_slope": 2.56,
+    "higher_low": true,
+    "rsi14": 52.5,
+    "rsi_min60": 42.7,
+    "perf": {
+     "m1": 5.3,
+     "m3": 8.3,
+     "m6": 17.1,
+     "m12": 8.4
+    },
+    "rs6": 14.2,
+    "vol_ratio": 0.92
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 51.0,
+    "momentum": 77.4,
+    "value": 64.5
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben"
+    ],
+    "momentum": [
+     "nur 2% unter ATH",
+     "relative Staerke +14% vs. Index",
+     "ueber 50- und 200-Tage-Linie",
+     "200-Tage-Linie steigt"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "PEG 0.99",
+     "Umsatzwachstum 10%"
+    ]
+   }
+  },
+  "CON.DE": {
+   "name": "CONTINENTAL AG                I",
+   "index": "DAX",
+   "metrics": {
+    "last": 68.32,
+    "dd_ath": -43.6,
+    "days_since_ath": 3145,
+    "range_pos": 68.6,
+    "above_sma50": false,
+    "above_sma200": true,
+    "sma50_slope": 0.41,
+    "sma200_slope": 1.86,
+    "higher_low": true,
+    "rsi14": 43.0,
+    "rsi_min60": 39.0,
+    "perf": {
+     "m1": -4.2,
+     "m3": 3.5,
+     "m6": -3.2,
+     "m12": 23.4
+    },
+    "rs6": -6.0,
+    "vol_ratio": 0.98
+   },
+   "flags": [
+    "fallender Umsatz bei hoher Verschuldung"
+   ],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 58.2,
+    "momentum": 17.8,
+    "value": 31.2
+   },
+   "why": {
+    "turnaround": [
+     "-44% unter ATH",
+     "hoeheres Tief"
+    ],
+    "momentum": [],
+    "value": [
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "DTG.DE": {
+   "name": "Daimler Truck Holding AG      N",
+   "index": "DAX",
+   "metrics": {
+    "last": 45.51,
+    "dd_ath": -8.2,
+    "days_since_ath": 17,
+    "range_pos": 76.2,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 5.37,
+    "sma200_slope": 3.45,
+    "higher_low": true,
+    "rsi14": 50.0,
+    "rsi_min60": 44.7,
+    "perf": {
+     "m1": 7.1,
+     "m3": 14.6,
+     "m6": 12.4,
+     "m12": 14.5
+    },
+    "rs6": 9.6,
+    "vol_ratio": 0.96
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 53.5,
+    "momentum": 66.2,
+    "value": 71.8
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben"
+    ],
+    "momentum": [
+     "nur 8% unter ATH",
+     "ueber 50- und 200-Tage-Linie",
+     "200-Tage-Linie steigt"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "PEG 0.46",
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "DBK.DE": {
+   "name": "DEUTSCHE BANK AG              N",
+   "index": "DAX",
+   "metrics": {
+    "last": 32.61,
+    "dd_ath": -2.3,
+    "days_since_ath": 6,
+    "range_pos": 91.8,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 7.01,
+    "sma200_slope": 1.21,
+    "higher_low": true,
+    "rsi14": 56.0,
+    "rsi_min60": 45.8,
+    "perf": {
+     "m1": 6.4,
+     "m3": 20.4,
+     "m6": 9.0,
+     "m12": 7.2
+    },
+    "rs6": 6.2,
+    "vol_ratio": 1.2
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 59.5,
+    "momentum": 75.6,
+    "value": 55.5
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben",
+     "Anstiege auf hoeherem Volumen"
+    ],
+    "momentum": [
+     "nur 2% unter ATH",
+     "ueber 50- und 200-Tage-Linie"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem"
+    ]
+   }
+  },
+  "DB1.DE": {
+   "name": "DEUTSCHE BOERSE AG            N",
+   "index": "DAX",
+   "metrics": {
+    "last": 277.0,
+    "dd_ath": -2.4,
+    "days_since_ath": 472,
+    "range_pos": 97.2,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 3.13,
+    "sma200_slope": 2.05,
+    "higher_low": true,
+    "rsi14": 64.8,
+    "rsi_min60": 35.9,
+    "perf": {
+     "m1": 8.5,
+     "m3": 7.4,
+     "m6": 29.9,
+     "m12": 10.6
+    },
+    "rs6": 27.1,
+    "vol_ratio": 0.96
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 53.5,
+    "momentum": 86.4,
+    "value": 73.3
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben"
+    ],
+    "momentum": [
+     "nur 2% unter ATH",
+     "relative Staerke +27% vs. Index",
+     "ueber 50- und 200-Tage-Linie"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 12%"
+    ]
+   }
+  },
+  "DHL.DE": {
+   "name": "DEUTSCHE POST AG              N",
+   "index": "DAX",
+   "metrics": {
+    "last": 55.42,
+    "dd_ath": -4.2,
+    "days_since_ath": 21,
+    "range_pos": 88.9,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 4.67,
+    "sma200_slope": 4.04,
+    "higher_low": true,
+    "rsi14": 48.5,
+    "rsi_min60": 40.9,
+    "perf": {
+     "m1": -1.4,
+     "m3": 15.7,
+     "m6": 16.4,
+     "m12": 38.3
+    },
+    "rs6": 13.6,
+    "vol_ratio": 0.9
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 52.0,
+    "momentum": 77.7,
+    "value": 67.5
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben"
+    ],
+    "momentum": [
+     "nur 4% unter ATH",
+     "relative Staerke +14% vs. Index",
+     "ueber 50- und 200-Tage-Linie",
+     "200-Tage-Linie steigt"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 13%"
+    ]
+   }
+  },
+  "DTE.DE": {
+   "name": "DEUTSCHE TELEKOM AG           N",
+   "index": "DAX",
+   "metrics": {
+    "last": 28.95,
+    "dd_ath": -14.2,
+    "days_since_ath": 535,
+    "range_pos": 55.6,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": -0.95,
+    "sma200_slope": -0.15,
+    "higher_low": true,
+    "rsi14": 59.9,
+    "rsi_min60": 21.4,
+    "perf": {
+     "m1": 6.9,
+     "m3": -0.6,
+     "m6": -7.7,
+     "m12": -4.4
+    },
+    "rs6": -10.5,
+    "vol_ratio": 0.78
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 55.0,
+    "momentum": 31.7,
+    "value": 59.0
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "RSI erholt sich aus dem ueberverkauften Bereich"
+    ],
+    "momentum": [
+     "ueber 50- und 200-Tage-Linie"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "EOAN.DE": {
+   "name": "E.ON SE                       N",
+   "index": "DAX",
+   "metrics": {
+    "last": 17.36,
+    "dd_ath": -11.9,
+    "days_since_ath": 156,
+    "range_pos": 56.8,
+    "above_sma50": false,
+    "above_sma200": false,
+    "sma50_slope": 0.97,
+    "sma200_slope": 1.7,
+    "higher_low": false,
+    "rsi14": 31.0,
+    "rsi_min60": 29.2,
+    "perf": {
+     "m1": -9.8,
+     "m3": -6.2,
+     "m6": -3.8,
+     "m12": 14.0
+    },
+    "rs6": -6.6,
+    "vol_ratio": 0.92
+   },
+   "flags": [
+    "fallender Umsatz bei hoher Verschuldung"
+   ],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 10.4,
+    "momentum": 19.1,
+    "value": 30.6
+   },
+   "why": {
+    "turnaround": [],
+    "momentum": [],
+    "value": [
+     "PEG 0.96"
+    ]
+   }
+  },
+  "FRE.DE": {
+   "name": "Fresenius SE & Co. KGaA       N",
+   "index": "DAX",
+   "metrics": {
+    "last": 46.42,
+    "dd_ath": -30.1,
+    "days_since_ath": 3349,
+    "range_pos": 71.9,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 8.38,
+    "sma200_slope": -0.3,
+    "higher_low": true,
+    "rsi14": 63.8,
+    "rsi_min60": 29.2,
+    "perf": {
+     "m1": 7.9,
+     "m3": 19.5,
+     "m6": -7.9,
+     "m12": 2.3
+    },
+    "rs6": -10.8,
+    "vol_ratio": 1.09
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 90.5,
+    "momentum": 29.4,
+    "value": 75.9
+   },
+   "why": {
+    "turnaround": [
+     "-30% unter ATH",
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben",
+     "RSI erholt sich aus dem ueberverkauften Bereich"
+    ],
+    "momentum": [
+     "ueber 50- und 200-Tage-Linie"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "PEG 0.91",
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "HNR1.DE": {
+   "name": "HANNOVER RUECK SE NA O.N.",
+   "index": "DAX",
+   "metrics": {
+    "last": 250.0,
+    "dd_ath": -7.6,
+    "days_since_ath": 440,
+    "range_pos": 64.4,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 2.81,
+    "sma200_slope": 0.28,
+    "higher_low": true,
+    "rsi14": 48.9,
+    "rsi_min60": 27.9,
+    "perf": {
+     "m1": -1.4,
+     "m3": 2.6,
+     "m6": 7.1,
+     "m12": 3.8
+    },
+    "rs6": 4.3,
+    "vol_ratio": 0.93
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 62.9,
+    "momentum": 49.7,
+    "value": 68.1
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben",
+     "RSI erholt sich aus dem ueberverkauften Bereich"
+    ],
+    "momentum": [
+     "nur 8% unter ATH",
+     "ueber 50- und 200-Tage-Linie"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "HEI.DE": {
+   "name": "Heidelberg Materials AG       I",
+   "index": "DAX",
+   "metrics": {
+    "last": 158.8,
+    "dd_ath": -32.2,
+    "days_since_ath": 205,
+    "range_pos": 4.2,
+    "above_sma50": false,
+    "above_sma200": false,
+    "sma50_slope": -3.42,
+    "sma200_slope": -1.43,
+    "higher_low": false,
+    "rsi14": 38.5,
+    "rsi_min60": 30.3,
+    "perf": {
+     "m1": -6.6,
+     "m3": -7.9,
+     "m6": -20.6,
+     "m12": -21.9
+    },
+    "rs6": -23.4,
+    "vol_ratio": 0.85
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 29.0,
+    "momentum": 0.0,
+    "value": 65.0
+   },
+   "why": {
+    "turnaround": [
+     "-32% unter ATH"
+    ],
+    "momentum": [],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "HEN3.DE": {
+   "name": "Henkel AG & Co. KGaA          I",
+   "index": "DAX",
+   "metrics": {
+    "last": 75.28,
+    "dd_ath": -27.0,
+    "days_since_ath": 3349,
+    "range_pos": 69.7,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 5.99,
+    "sma200_slope": 1.15,
+    "higher_low": true,
+    "rsi14": 47.7,
+    "rsi_min60": 45.4,
+    "perf": {
+     "m1": 1.0,
+     "m3": 14.9,
+     "m6": -6.4,
+     "m12": 7.1
+    },
+    "rs6": -9.2,
+    "vol_ratio": 0.96
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 74.8,
+    "momentum": 27.8,
+    "value": 59.1
+   },
+   "why": {
+    "turnaround": [
+     "-27% unter ATH",
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben"
+    ],
+    "momentum": [
+     "ueber 50- und 200-Tage-Linie"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "IFX.DE": {
+   "name": "INFINEON TECHNOLOGIES AG      N",
+   "index": "DAX",
+   "metrics": {
+    "last": 55.11,
+    "dd_ath": -37.4,
+    "days_since_ath": 79,
+    "range_pos": 42.3,
+    "above_sma50": false,
+    "above_sma200": true,
+    "sma50_slope": -7.3,
+    "sma200_slope": 5.73,
+    "higher_low": true,
+    "rsi14": 33.7,
+    "rsi_min60": 28.7,
+    "perf": {
+     "m1": -13.9,
+     "m3": -19.0,
+     "m6": 20.5,
+     "m12": 50.1
+    },
+    "rs6": 17.7,
+    "vol_ratio": 0.94
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 52.7,
+    "momentum": 38.1,
+    "value": 80.5
+   },
+   "why": {
+    "turnaround": [
+     "-37% unter ATH",
+     "hoeheres Tief"
+    ],
+    "momentum": [
+     "relative Staerke +18% vs. Index",
+     "200-Tage-Linie steigt"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "PEG 0.55",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 13%"
+    ]
+   }
+  },
+  "MBG.DE": {
+   "name": "Mercedes-Benz Group AG        N",
+   "index": "DAX",
+   "metrics": {
+    "last": 44.99,
+    "dd_ath": -26.4,
+    "days_since_ath": 864,
+    "range_pos": 13.0,
+    "above_sma50": false,
+    "above_sma200": false,
+    "sma50_slope": -3.49,
+    "sma200_slope": -0.83,
+    "higher_low": true,
+    "rsi14": 41.8,
+    "rsi_min60": 29.1,
+    "perf": {
+     "m1": -0.3,
+     "m3": -9.6,
+     "m6": -18.9,
+     "m12": -11.1
+    },
+    "rs6": -21.8,
+    "vol_ratio": 0.98
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 60.0,
+    "momentum": 2.3,
+    "value": 47.9
+   },
+   "why": {
+    "turnaround": [
+     "-26% unter ATH",
+     "hoeheres Tief",
+     "RSI erholt sich aus dem ueberverkauften Bereich"
+    ],
+    "momentum": [],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "PEG 0.59"
+    ]
+   }
+  },
+  "MRK.DE": {
+   "name": "MERCK KGAA                    I",
+   "index": "DAX",
+   "metrics": {
+    "last": 136.6,
+    "dd_ath": -35.7,
+    "days_since_ath": 1696,
+    "range_pos": 76.7,
+    "above_sma50": false,
+    "above_sma200": true,
+    "sma50_slope": 3.71,
+    "sma200_slope": 2.29,
+    "higher_low": true,
+    "rsi14": 40.5,
+    "rsi_min60": 39.4,
+    "perf": {
+     "m1": 1.2,
+     "m3": 8.1,
+     "m6": 8.4,
+     "m12": 25.6
+    },
+    "rs6": 5.6,
+    "vol_ratio": 1.09
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 64.7,
+    "momentum": 33.6,
+    "value": 61.1
+   },
+   "why": {
+    "turnaround": [
+     "-36% unter ATH",
+     "hoeheres Tief",
+     "50-Tage-Linie dreht nach oben"
+    ],
+    "momentum": [],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "MTX.DE": {
+   "name": "MTU Aero Engines AG           N",
+   "index": "DAX",
+   "metrics": {
+    "last": 363.6,
+    "dd_ath": -8.5,
+    "days_since_ath": 181,
+    "range_pos": 72.8,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 8.46,
+    "sma200_slope": -0.39,
+    "higher_low": true,
+    "rsi14": 49.6,
+    "rsi_min60": 41.8,
+    "perf": {
+     "m1": 8.8,
+     "m3": 26.6,
+     "m6": -8.0,
+     "m12": -4.8
+    },
+    "rs6": -10.9,
+    "vol_ratio": 1.08
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 57.0,
+    "momentum": 47.3,
+    "value": 84.0
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben"
+    ],
+    "momentum": [
+     "nur 8% unter ATH",
+     "ueber 50- und 200-Tage-Linie"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 17%"
+    ]
+   }
+  },
+  "MUV2.DE": {
+   "name": "MUENCHENER RUECKVERS.-GES. AG N",
+   "index": "DAX",
+   "metrics": {
+    "last": 510.6,
+    "dd_ath": -12.0,
+    "days_since_ath": 378,
+    "range_pos": 66.5,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 4.53,
+    "sma200_slope": -0.27,
+    "higher_low": true,
+    "rsi14": 49.1,
+    "rsi_min60": 25.9,
+    "perf": {
+     "m1": -1.2,
+     "m3": 7.7,
+     "m6": 0.6,
+     "m12": -3.8
+    },
+    "rs6": -2.2,
+    "vol_ratio": 0.97
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 63.9,
+    "momentum": 40.6,
+    "value": 58.1
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben",
+     "RSI erholt sich aus dem ueberverkauften Bereich"
+    ],
+    "momentum": [
+     "ueber 50- und 200-Tage-Linie"
+    ],
+    "value": [
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "PAH3.DE": {
+   "name": "Porsche Automobil Holding SE  I",
+   "index": "DAX",
+   "metrics": {
+    "last": 27.82,
+    "dd_ath": -64.2,
+    "days_since_ath": 1900,
+    "range_pos": 7.2,
+    "above_sma50": false,
+    "above_sma200": false,
+    "sma50_slope": -2.65,
+    "sma200_slope": -1.32,
+    "higher_low": true,
+    "rsi14": 46.2,
+    "rsi_min60": 26.0,
+    "perf": {
+     "m1": 1.5,
+     "m3": -7.9,
+     "m6": -19.1,
+     "m12": -21.1
+    },
+    "rs6": -21.9,
+    "vol_ratio": 1.17
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 56.3,
+    "momentum": 7.7,
+    "value": 50.0
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "Anstiege auf hoeherem Volumen"
+    ],
+    "momentum": [],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "PEG 0.05"
+    ]
+   }
+  },
+  "P911.DE": {
+   "name": "Dr. Ing. h.c. F. Porsche AG   I",
+   "index": "DAX",
+   "metrics": {
+    "last": 45.04,
+    "dd_ath": -58.1,
+    "days_since_ath": 1186,
+    "range_pos": 72.1,
+    "above_sma50": false,
+    "above_sma200": true,
+    "sma50_slope": -1.19,
+    "sma200_slope": 0.36,
+    "higher_low": true,
+    "rsi14": 53.6,
+    "rsi_min60": 33.4,
+    "perf": {
+     "m1": 0.4,
+     "m3": 1.5,
+     "m6": 8.9,
+     "m12": -2.7
+    },
+    "rs6": 6.1,
+    "vol_ratio": 0.83
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 56.9,
+    "momentum": 22.2,
+    "value": 60.5
+   },
+   "why": {
+    "turnaround": [
+     "-58% unter ATH",
+     "hoeheres Tief",
+     "RSI erholt sich aus dem ueberverkauften Bereich"
+    ],
+    "momentum": [],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "PEG 0.52",
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "QIA.DE": {
+   "name": "Qiagen N.V.                   A",
+   "index": "DAX",
+   "metrics": {
+    "last": 38.08,
+    "dd_ath": -22.6,
+    "days_since_ath": 1728,
+    "range_pos": 56.6,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 8.14,
+    "sma200_slope": -0.99,
+    "higher_low": true,
+    "rsi14": 61.8,
+    "rsi_min60": 49.1,
+    "perf": {
+     "m1": 6.5,
+     "m3": 27.9,
+     "m6": -7.4,
+     "m12": -8.3
+    },
+    "rs6": -10.2,
+    "vol_ratio": 1.3
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 79.3,
+    "momentum": 32.6,
+    "value": 75.2
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben",
+     "Anstiege auf hoeherem Volumen"
+    ],
+    "momentum": [
+     "ueber 50- und 200-Tage-Linie"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "PEG 1.08",
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "RHM.DE": {
+   "name": "RHEINMETALL AG                I",
+   "index": "DAX",
+   "metrics": {
+    "last": 1161.4,
+    "dd_ath": -41.0,
+    "days_since_ath": 325,
+    "range_pos": 21.0,
+    "above_sma50": true,
+    "above_sma200": false,
+    "sma50_slope": -2.4,
+    "sma200_slope": -4.34,
+    "higher_low": true,
+    "rsi14": 54.8,
+    "rsi_min60": 24.0,
+    "perf": {
+     "m1": 17.3,
+     "m3": -4.0,
+     "m6": -30.8,
+     "m12": -25.2
+    },
+    "rs6": -33.6,
+    "vol_ratio": 0.98
+   },
+   "flags": [
+    "200-Tage-Linie faellt steil"
+   ],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 82.0,
+    "momentum": 2.3,
+    "value": 82.4
+   },
+   "why": {
+    "turnaround": [
+     "-41% unter ATH",
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "RSI erholt sich aus dem ueberverkauften Bereich"
+    ],
+    "momentum": [],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "PEG 0.60",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 69%"
+    ]
+   }
+  },
+  "RWE.DE": {
+   "name": "RWE AG                        I",
+   "index": "DAX",
+   "metrics": {
+    "last": 57.48,
+    "dd_ath": -5.4,
+    "days_since_ath": 112,
+    "range_pos": 88.0,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 0.93,
+    "sma200_slope": 3.42,
+    "higher_low": true,
+    "rsi14": 51.1,
+    "rsi_min60": 37.4,
+    "perf": {
+     "m1": -0.9,
+     "m3": 1.7,
+     "m6": 11.1,
+     "m12": 66.2
+    },
+    "rs6": 8.3,
+    "vol_ratio": 1.42
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 56.8,
+    "momentum": 80.3,
+    "value": 30.6
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "Anstiege auf hoeherem Volumen"
+    ],
+    "momentum": [
+     "nur 5% unter ATH",
+     "ueber 50- und 200-Tage-Linie",
+     "200-Tage-Linie steigt"
+    ],
+    "value": []
+   }
+  },
+  "SAP.DE": {
+   "name": "SAP SE                        I",
+   "index": "DAX",
+   "metrics": {
+    "last": 183.12,
+    "dd_ath": -33.0,
+    "days_since_ath": 553,
+    "range_pos": 50.0,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 3.4,
+    "sma200_slope": -3.66,
+    "higher_low": false,
+    "rsi14": 72.4,
+    "rsi_min60": 34.2,
+    "perf": {
+     "m1": 32.4,
+     "m3": 21.4,
+     "m6": 7.4,
+     "m12": -21.4
+    },
+    "rs6": 4.6,
+    "vol_ratio": 0.99
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 60.8,
+    "momentum": 30.6,
+    "value": 77.2
+   },
+   "why": {
+    "turnaround": [
+     "-33% unter ATH",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben"
+    ],
+    "momentum": [
+     "ueber 50- und 200-Tage-Linie"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 9%"
+    ]
+   }
+  },
+  "SRT3.DE": {
+   "name": "SARTORIUS AG                  V",
+   "index": "DAX",
+   "metrics": {
+    "last": 248.0,
+    "dd_ath": -58.5,
+    "days_since_ath": 1724,
+    "range_pos": 78.6,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": -0.47,
+    "sma200_slope": 0.11,
+    "higher_low": true,
+    "rsi14": 62.6,
+    "rsi_min60": 35.0,
+    "perf": {
+     "m1": 4.5,
+     "m3": 5.4,
+     "m6": 6.8,
+     "m12": 26.3
+    },
+    "rs6": 4.0,
+    "vol_ratio": 1.0
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 66.5,
+    "momentum": 36.8,
+    "value": 61.9
+   },
+   "why": {
+    "turnaround": [
+     "-58% unter ATH",
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie"
+    ],
+    "momentum": [
+     "ueber 50- und 200-Tage-Linie"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "PEG 0.94",
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "SIE.DE": {
+   "name": "SIEMENS AG                    N",
+   "index": "DAX",
+   "metrics": {
+    "last": 276.15,
+    "dd_ath": -3.9,
+    "days_since_ath": 16,
+    "range_pos": 86.5,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 1.35,
+    "sma200_slope": 1.63,
+    "higher_low": true,
+    "rsi14": 48.9,
+    "rsi_min60": 43.7,
+    "perf": {
+     "m1": 4.1,
+     "m3": 4.6,
+     "m6": 12.8,
+     "m12": 18.4
+    },
+    "rs6": 10.0,
+    "vol_ratio": 0.95
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 49.1,
+    "momentum": 69.8,
+    "value": 59.3
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie"
+    ],
+    "momentum": [
+     "nur 4% unter ATH",
+     "ueber 50- und 200-Tage-Linie"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "ENR.DE": {
+   "name": "Siemens Energy AG             N",
+   "index": "DAX",
+   "metrics": {
+    "last": 153.46,
+    "dd_ath": -18.2,
+    "days_since_ath": 118,
+    "range_pos": 67.0,
+    "above_sma50": false,
+    "above_sma200": true,
+    "sma50_slope": -3.82,
+    "sma200_slope": 3.38,
+    "higher_low": false,
+    "rsi14": 48.3,
+    "rsi_min60": 25.9,
+    "perf": {
+     "m1": 0.5,
+     "m3": -11.6,
+     "m6": -7.5,
+     "m12": 63.1
+    },
+    "rs6": -10.3,
+    "vol_ratio": 0.82
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 22.3,
+    "momentum": 26.2,
+    "value": 88.2
+   },
+   "why": {
+    "turnaround": [
+     "RSI erholt sich aus dem ueberverkauften Bereich"
+    ],
+    "momentum": [
+     "200-Tage-Linie steigt"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "PEG 0.60",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 18%"
+    ]
+   }
+  },
+  "SHL.DE": {
+   "name": "Siemens Healthineers AG       N",
+   "index": "DAX",
+   "metrics": {
+    "last": 39.94,
+    "dd_ath": -34.8,
+    "days_since_ath": 1715,
+    "range_pos": 43.7,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 4.21,
+    "sma200_slope": -2.31,
+    "higher_low": true,
+    "rsi14": 69.0,
+    "rsi_min60": 37.3,
+    "perf": {
+     "m1": 13.0,
+     "m3": 15.7,
+     "m6": -3.8,
+     "m12": -14.2
+    },
+    "rs6": -6.6,
+    "vol_ratio": 0.98
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 82.1,
+    "momentum": 22.3,
+    "value": 64.3
+   },
+   "why": {
+    "turnaround": [
+     "-35% unter ATH",
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben"
+    ],
+    "momentum": [
+     "ueber 50- und 200-Tage-Linie"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "SY1.DE": {
+   "name": "Symrise AG                    I",
+   "index": "DAX",
+   "metrics": {
+    "last": 88.46,
+    "dd_ath": -28.6,
+    "days_since_ath": 1732,
+    "range_pos": 86.8,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 5.72,
+    "sma200_slope": 1.75,
+    "higher_low": true,
+    "rsi14": 49.0,
+    "rsi_min60": 40.1,
+    "perf": {
+     "m1": -0.2,
+     "m3": 14.0,
+     "m6": 21.4,
+     "m12": 8.8
+    },
+    "rs6": 18.6,
+    "vol_ratio": 1.05
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 78.4,
+    "momentum": 57.3,
+    "value": 47.1
+   },
+   "why": {
+    "turnaround": [
+     "-29% unter ATH",
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben"
+    ],
+    "momentum": [
+     "relative Staerke +19% vs. Index",
+     "ueber 50- und 200-Tage-Linie"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "VOW3.DE": {
+   "name": "VOLKSWAGEN AG                 V",
+   "index": "DAX",
+   "metrics": {
+    "last": 74.92,
+    "dd_ath": -49.7,
+    "days_since_ath": 1962,
+    "range_pos": 15.6,
+    "above_sma50": false,
+    "above_sma200": false,
+    "sma50_slope": -4.73,
+    "sma200_slope": -1.25,
+    "higher_low": true,
+    "rsi14": 51.6,
+    "rsi_min60": 23.6,
+    "perf": {
+     "m1": 3.3,
+     "m3": -9.8,
+     "m6": -23.2,
+     "m12": -20.8
+    },
+    "rs6": -26.0,
+    "vol_ratio": 0.83
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 65.0,
+    "momentum": 0.0,
+    "value": 61.7
+   },
+   "why": {
+    "turnaround": [
+     "-50% unter ATH",
+     "hoeheres Tief",
+     "RSI erholt sich aus dem ueberverkauften Bereich"
+    ],
+    "momentum": [],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "PEG 0.68",
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "VNA.DE": {
+   "name": "Vonovia SE                    N",
+   "index": "DAX",
+   "metrics": {
+    "last": 20.12,
+    "dd_ath": -47.0,
+    "days_since_ath": 2178,
+    "range_pos": 5.7,
+    "above_sma50": false,
+    "above_sma200": false,
+    "sma50_slope": 0.03,
+    "sma200_slope": -2.13,
+    "higher_low": true,
+    "rsi14": 39.2,
+    "rsi_min60": 32.9,
+    "perf": {
+     "m1": -3.5,
+     "m3": -4.4,
+     "m6": -20.8,
+     "m12": -23.7
+    },
+    "rs6": -23.6,
+    "vol_ratio": 0.91
+   },
+   "flags": [
+    "200-Tage-Linie faellt steil"
+   ],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 52.5,
+    "momentum": 0.3,
+    "value": 43.9
+   },
+   "why": {
+    "turnaround": [
+     "-47% unter ATH",
+     "hoeheres Tief"
+    ],
+    "momentum": [],
+    "value": [
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "ZAL.DE": {
+   "name": "Zalando SE                    I",
+   "index": "DAX",
+   "metrics": {
+    "last": 22.39,
+    "dd_ath": -78.6,
+    "days_since_ath": 1870,
+    "range_pos": 29.6,
+    "above_sma50": false,
+    "above_sma200": false,
+    "sma50_slope": 6.41,
+    "sma200_slope": -0.25,
+    "higher_low": true,
+    "rsi14": 30.1,
+    "rsi_min60": 30.1,
+    "perf": {
+     "m1": -21.0,
+     "m3": 8.4,
+     "m6": 5.8,
+     "m12": -7.5
+    },
+    "rs6": 3.0,
+    "vol_ratio": 0.8
+   },
+   "flags": [],
+   "earnings_in": null,
+   "scores": {
+    "turnaround": 35.0,
+    "momentum": 6.7,
+    "value": 77.1
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "50-Tage-Linie dreht nach oben"
+    ],
+    "momentum": [],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "PEG 0.46",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 21%"
+    ]
+   }
+  }
+ }
+}

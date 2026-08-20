@@ -1,0 +1,57 @@
+{
+ "date": "2026-08-20",
+ "ranks": {
+  "turnaround": [
+   "ROP",
+   "WDAY",
+   "BAYN.DE",
+   "FRE.DE",
+   "BEI.DE",
+   "CRM",
+   "CDW",
+   "DXCM",
+   "ADSK",
+   "SHL.DE",
+   "AXON",
+   "BIIB",
+   "MELI",
+   "ZS",
+   "QIA.DE"
+  ],
+  "momentum": [
+   "ALV.DE",
+   "MRK",
+   "DB1.DE",
+   "PANW",
+   "ABNB",
+   "CRWD",
+   "RWE.DE",
+   "FTNT",
+   "DHL.DE",
+   "CBK.DE",
+   "TRV",
+   "DBK.DE",
+   "JNJ",
+   "AMZN",
+   "KO"
+  ],
+  "value": [
+   "MU",
+   "ADBE",
+   "NVDA",
+   "ADSK",
+   "CSCO",
+   "NXPI",
+   "AMAT",
+   "AVGO",
+   "REGN",
+   "CRM",
+   "CVX",
+   "TXN",
+   "LRCX",
+   "ENR.DE",
+   "MSFT"
+  ]
+ },
+ "changes": {}
+}

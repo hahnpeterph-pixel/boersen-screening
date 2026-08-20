@@ -5,35 +5,35 @@
    "BEI.DE",
    "MELI",
    "HNR1.DE",
-   "ADBE",
-   "AXON",
-   "KHC",
+   "TRV",
    "BAYN.DE",
+   "KHC",
+   "QIA.DE",
+   "ADBE",
+   "TTWO",
+   "CCEP",
    "ROP",
-   "AXP",
-   "HEN3.DE",
-   "CRM",
-   "DTG.DE",
-   "PYPL",
+   "PCAR",
    "BNR.DE",
-   "DASH"
+   "DHL.DE",
+   "PYPL"
   ],
   "momentum": [
    "MRK",
-   "ABNB",
    "MRVL",
+   "MU",
+   "ALV.DE",
    "TEAM",
    "DB1.DE",
-   "ALV.DE",
-   "MU",
-   "FANG",
-   "CSX",
-   "KO",
-   "DXCM",
+   "ABNB",
    "DHL.DE",
    "TRV",
    "BNR.DE",
-   "AXON"
+   "DXCM",
+   "FANG",
+   "CSX",
+   "KO",
+   "JNJ"
   ],
   "value": [
    "MU",
@@ -57,68 +57,82 @@
   "turnaround": {
    "entries": [
     {
-     "ticker": "ADBE",
+     "ticker": "TRV",
      "rank": 4
-    }
-   ],
-   "exits": [
+    },
     {
-     "ticker": "GEHC",
-     "old_rank": 15
-    }
-   ],
-   "moves": [
+     "ticker": "QIA.DE",
+     "rank": 7
+    },
     {
-     "ticker": "DASH",
-     "rank": 15,
-     "delta": -6
-    }
-   ]
-  },
-  "momentum": {
-   "entries": [
+     "ticker": "TTWO",
+     "rank": 9
+    },
     {
-     "ticker": "DHL.DE",
+     "ticker": "CCEP",
+     "rank": 10
+    },
+    {
+     "ticker": "PCAR",
      "rank": 12
     },
     {
-     "ticker": "TRV",
-     "rank": 13
-    },
-    {
-     "ticker": "BNR.DE",
+     "ticker": "DHL.DE",
      "rank": 14
     }
    ],
    "exits": [
     {
-     "ticker": "PYPL",
-     "old_rank": 13
+     "ticker": "AXON",
+     "old_rank": 5
     },
     {
-     "ticker": "JNJ",
-     "old_rank": 14
+     "ticker": "AXP",
+     "old_rank": 9
+    },
+    {
+     "ticker": "HEN3.DE",
+     "old_rank": 10
+    },
+    {
+     "ticker": "CRM",
+     "old_rank": 11
     },
     {
      "ticker": "DTG.DE",
+     "old_rank": 12
+    },
+    {
+     "ticker": "DASH",
      "old_rank": 15
     }
    ],
    "moves": []
   },
-  "value": {
+  "momentum": {
    "entries": [
     {
-     "ticker": "ADSK",
-     "rank": 2
+     "ticker": "JNJ",
+     "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "MSFT",
-     "old_rank": 3
+     "ticker": "AXON",
+     "old_rank": 15
     }
    ],
+   "moves": [
+    {
+     "ticker": "ABNB",
+     "rank": 7,
+     "delta": -5
+    }
+   ]
+  },
+  "value": {
+   "entries": [],
+   "exits": [],
    "moves": []
   },
   "analyst_flips": []

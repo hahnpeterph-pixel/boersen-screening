@@ -1,29 +1,29 @@
 {
  "date": "2026-08-20",
- "generated": "2026-08-20T08:49:18+00:00",
+ "generated": "2026-08-20T10:17:14+00:00",
  "ranks": {
   "turnaround": [
    "ROP",
    "WDAY",
-   "BAYN.DE",
    "FRE.DE",
+   "BAYN.DE",
    "BEI.DE",
    "CRM",
    "DXCM",
    "AXON",
-   "SY1.DE",
+   "VOW3.DE",
    "MELI",
-   "BNR.DE",
+   "SY1.DE",
    "HEN3.DE",
+   "BNR.DE",
    "KHC",
-   "DASH",
-   "SHW"
+   "P911.DE"
   ],
   "momentum": [
    "ALV.DE",
    "MRK",
-   "PANW",
    "DB1.DE",
+   "PANW",
    "ABNB",
    "CRWD",
    "RWE.DE",
@@ -31,10 +31,10 @@
    "DHL.DE",
    "TRV",
    "JNJ",
-   "AMZN",
    "KO",
-   "SIE.DE",
-   "MMM"
+   "AMZN",
+   "MMM",
+   "CVX"
   ],
   "value": [
    "MU",
@@ -52,6 +52,134 @@
    "CVX",
    "ENR.DE",
    "MNST"
+  ]
+ },
+ "ranks_full": {
+  "turnaround": [
+   "ROP",
+   "WDAY",
+   "FRE.DE",
+   "BAYN.DE",
+   "BEI.DE",
+   "CRM",
+   "DXCM",
+   "AXON",
+   "VOW3.DE",
+   "MELI",
+   "SY1.DE",
+   "HEN3.DE",
+   "BNR.DE",
+   "KHC",
+   "P911.DE",
+   "SHW",
+   "TRV",
+   "CMCSA",
+   "MUV2.DE",
+   "HNR1.DE",
+   "BA",
+   "MTX.DE",
+   "RWE.DE",
+   "DIS",
+   "DTE.DE",
+   "BKR",
+   "FANG",
+   "CVX",
+   "EXC",
+   "AEP",
+   "CDW",
+   "ADSK",
+   "SHL.DE",
+   "BIIB",
+   "ZS",
+   "CTSH",
+   "ADBE",
+   "MRVL",
+   "QIA.DE",
+   "IDXX"
+  ],
+  "momentum": [
+   "ALV.DE",
+   "MRK",
+   "DB1.DE",
+   "PANW",
+   "ABNB",
+   "CRWD",
+   "RWE.DE",
+   "FTNT",
+   "DHL.DE",
+   "TRV",
+   "JNJ",
+   "KO",
+   "AMZN",
+   "MMM",
+   "CVX",
+   "AMGN",
+   "CSX",
+   "FANG",
+   "BKNG",
+   "BKR",
+   "CCEP",
+   "SY1.DE",
+   "SHW",
+   "BAS.DE",
+   "MDLZ",
+   "TTWO",
+   "WBD",
+   "AEP",
+   "DTE.DE",
+   "EXC",
+   "CBK.DE",
+   "JPM",
+   "DBK.DE",
+   "SIE.DE",
+   "V",
+   "VRTX",
+   "MRVL",
+   "SBUX",
+   "DTG.DE",
+   "AIR.DE"
+  ],
+  "value": [
+   "MU",
+   "ADSK",
+   "NVDA",
+   "REGN",
+   "ABNB",
+   "V",
+   "MTX.DE",
+   "VRTX",
+   "DB1.DE",
+   "DXCM",
+   "FAST",
+   "ALV.DE",
+   "CVX",
+   "ENR.DE",
+   "MNST",
+   "ROST",
+   "FANG",
+   "GOOGL",
+   "LIN",
+   "KDP",
+   "AMZN",
+   "COST",
+   "BAS.DE",
+   "DIS",
+   "BNR.DE",
+   "DTE.DE",
+   "BKR",
+   "AEP",
+   "EXC",
+   "RWE.DE",
+   "MSFT",
+   "ADBE",
+   "FTNT",
+   "PLTR",
+   "LRCX",
+   "AMAT",
+   "CSCO",
+   "ASML",
+   "TXN",
+   "AVGO"
   ]
  },
  "rows": {
@@ -77,7 +205,7 @@
      "m6": 20.1,
      "m12": 37.7
     },
-    "rs6": 1.9,
+    "rs6": 0.9,
     "vol_ratio": 1.02
    },
    "flags": [],
@@ -93,7 +221,7 @@
    "revision_note": "Analysten ↓2 in 30T (Jefferies, 2026-08-10)",
    "scores": {
     "turnaround": 59.3,
-    "momentum": 61.1,
+    "momentum": 60.2,
     "value": 72.6
    },
    "why": {
@@ -137,7 +265,7 @@
      "m6": 50.0,
      "m12": 48.5
     },
-    "rs6": 31.8,
+    "rs6": 30.8,
     "vol_ratio": 1.32
    },
    "flags": [],
@@ -164,7 +292,7 @@
      "Anstiege auf hoeherem Volumen"
     ],
     "momentum": [
-     "relative Staerke +32% vs. Index",
+     "relative Staerke +31% vs. Index",
      "ueber 50- und 200-Tage-Linie",
      "200-Tage-Linie steigt"
     ],
@@ -198,7 +326,7 @@
      "m6": 3.5,
      "m12": -23.7
     },
-    "rs6": -14.6,
+    "rs6": -15.7,
     "vol_ratio": 0.89
    },
    "flags": [],
@@ -257,7 +385,7 @@
      "m6": 8.4,
      "m12": 63.4
     },
-    "rs6": -9.8,
+    "rs6": -10.8,
     "vol_ratio": 0.96
    },
    "flags": [],
@@ -313,7 +441,7 @@
      "m6": 32.8,
      "m12": -5.6
     },
-    "rs6": 14.6,
+    "rs6": 13.6,
     "vol_ratio": 1.08
    },
    "flags": [],
@@ -329,7 +457,7 @@
    "revision_note": null,
    "scores": {
     "turnaround": 56.5,
-    "momentum": 61.6,
+    "momentum": 60.8,
     "value": 73.2
    },
    "why": {
@@ -339,7 +467,7 @@
      "50-Tage-Linie dreht nach oben"
     ],
     "momentum": [
-     "relative Staerke +15% vs. Index",
+     "relative Staerke +14% vs. Index",
      "ueber 50- und 200-Tage-Linie"
     ],
     "value": [
@@ -359,19 +487,19 @@
     "range_pos": 45.7,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 0.62,
-    "sma200_slope": -2.67,
+    "sma50_slope": 0.01,
+    "sma200_slope": -2.78,
     "higher_low": true,
-    "rsi14": 60.6,
+    "rsi14": 60.5,
     "rsi_min60": 26.0,
     "perf": {
-     "m1": 19.0,
-     "m3": 2.9,
-     "m6": 9.4,
-     "m12": -13.2
+     "m1": 15.8,
+     "m3": 7.5,
+     "m6": 12.4,
+     "m12": -12.4
     },
-    "rs6": -8.8,
-    "vol_ratio": 1.09
+    "rs6": -6.8,
+    "vol_ratio": 1.12
    },
    "flags": [],
    "earnings_in": 7,
@@ -385,8 +513,8 @@
    },
    "revision_note": "Analysten ↑2 in 30T (Goldman Sachs, 2026-08-11)",
    "scores": {
-    "turnaround": 83.1,
-    "momentum": 25.4,
+    "turnaround": 82.4,
+    "momentum": 26.3,
     "value": 88.1
    },
    "why": {
@@ -429,7 +557,7 @@
      "m6": -1.6,
      "m12": 16.2
     },
-    "rs6": -19.8,
+    "rs6": -20.8,
     "vol_ratio": 0.98
    },
    "flags": [],
@@ -482,7 +610,7 @@
      "m6": 34.7,
      "m12": 205.6
     },
-    "rs6": 16.5,
+    "rs6": 15.5,
     "vol_ratio": 0.97
    },
    "flags": [],
@@ -498,7 +626,7 @@
    "revision_note": null,
    "scores": {
     "turnaround": 75.5,
-    "momentum": 37.9,
+    "momentum": 37.1,
     "value": 81.5
    },
    "why": {
@@ -541,7 +669,7 @@
      "m6": 133.1,
      "m12": 164.8
     },
-    "rs6": 114.9,
+    "rs6": 113.9,
     "vol_ratio": 0.91
    },
    "flags": [],
@@ -565,7 +693,7 @@
      "hoeheres Tief"
     ],
     "momentum": [
-     "relative Staerke +115% vs. Index",
+     "relative Staerke +114% vs. Index",
      "200-Tage-Linie steigt"
     ],
     "value": [
@@ -586,19 +714,19 @@
     "range_pos": 100.0,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 7.68,
-    "sma200_slope": 3.36,
+    "sma50_slope": 7.79,
+    "sma200_slope": 3.35,
     "higher_low": true,
-    "rsi14": 79.8,
+    "rsi14": 79.6,
     "rsi_min60": 42.1,
     "perf": {
-     "m1": 20.8,
-     "m3": 33.7,
-     "m6": 17.4,
-     "m12": 55.7
+     "m1": 21.5,
+     "m3": 36.4,
+     "m6": 19.4,
+     "m12": 53.7
     },
-    "rs6": -0.8,
-    "vol_ratio": 1.02
+    "rs6": 0.2,
+    "vol_ratio": 1.0
    },
    "flags": [],
    "earnings_in": null,
@@ -612,8 +740,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 48.1,
-    "momentum": 70.3,
+    "turnaround": 47.7,
+    "momentum": 70.6,
     "value": 70.4
    },
    "why": {
@@ -656,7 +784,7 @@
      "m6": 29.8,
      "m12": 14.8
     },
-    "rs6": 11.6,
+    "rs6": 10.6,
     "vol_ratio": 1.4
    },
    "flags": [],
@@ -672,7 +800,7 @@
    "revision_note": null,
    "scores": {
     "turnaround": 40.9,
-    "momentum": 74.3,
+    "momentum": 73.5,
     "value": 70.6
    },
    "why": {
@@ -713,7 +841,7 @@
      "m6": -23.1,
      "m12": -29.1
     },
-    "rs6": -41.3,
+    "rs6": -42.3,
     "vol_ratio": 0.87
    },
    "flags": [
@@ -769,7 +897,7 @@
      "m6": 96.0,
      "m12": 76.8
     },
-    "rs6": 77.8,
+    "rs6": 76.8,
     "vol_ratio": 1.28
    },
    "flags": [],
@@ -796,7 +924,7 @@
      "Anstiege auf hoeherem Volumen"
     ],
     "momentum": [
-     "relative Staerke +78% vs. Index",
+     "relative Staerke +77% vs. Index",
      "200-Tage-Linie steigt"
     ],
     "value": [
@@ -828,7 +956,7 @@
      "m6": 19.7,
      "m12": 135.9
     },
-    "rs6": 1.5,
+    "rs6": 0.5,
     "vol_ratio": 0.92
    },
    "flags": [],
@@ -844,7 +972,7 @@
    "revision_note": null,
    "scores": {
     "turnaround": 37.2,
-    "momentum": 45.5,
+    "momentum": 44.6,
     "value": 80.3
    },
    "why": {
@@ -884,7 +1012,7 @@
      "m6": 9.1,
      "m12": 19.4
     },
-    "rs6": -9.1,
+    "rs6": -10.1,
     "vol_ratio": 0.92
    },
    "flags": [],
@@ -924,21 +1052,21 @@
     "last": 645.72,
     "dd_ath": -25.9,
     "days_since_ath": 377,
-    "range_pos": 67.3,
+    "range_pos": 68.8,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 13.8,
-    "sma200_slope": -2.55,
+    "sma50_slope": 12.54,
+    "sma200_slope": -2.66,
     "higher_low": true,
-    "rsi14": 61.9,
+    "rsi14": 62.5,
     "rsi_min60": 41.8,
     "perf": {
-     "m1": 19.2,
-     "m3": 66.3,
-     "m6": 48.2,
-     "m12": -15.6
+     "m1": 26.3,
+     "m3": 64.6,
+     "m6": 50.1,
+     "m12": -18.4
     },
-    "rs6": 30.0,
+    "rs6": 30.9,
     "vol_ratio": 1.24
    },
    "flags": [],
@@ -953,8 +1081,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 80.6,
-    "momentum": 57.1,
+    "turnaround": 80.2,
+    "momentum": 57.6,
     "value": 63.1
    },
    "why": {
@@ -966,7 +1094,7 @@
      "Anstiege auf hoeherem Volumen"
     ],
     "momentum": [
-     "relative Staerke +30% vs. Index",
+     "relative Staerke +31% vs. Index",
      "ueber 50- und 200-Tage-Linie"
     ],
     "value": [
@@ -987,19 +1115,19 @@
     "range_pos": 30.8,
     "above_sma50": false,
     "above_sma200": false,
-    "sma50_slope": -4.61,
+    "sma50_slope": -4.57,
     "sma200_slope": -0.18,
     "higher_low": false,
-    "rsi14": 49.0,
-    "rsi_min60": 31.6,
+    "rsi14": 49.6,
+    "rsi_min60": 30.7,
     "perf": {
      "m1": -2.6,
-     "m3": -10.8,
-     "m6": -18.5,
-     "m12": 6.9
+     "m3": -10.7,
+     "m6": -20.1,
+     "m12": 5.3
     },
-    "rs6": -36.7,
-    "vol_ratio": 0.82
+    "rs6": -39.3,
+    "vol_ratio": 0.83
    },
    "flags": [],
    "earnings_in": null,
@@ -1050,7 +1178,7 @@
      "m6": 13.3,
      "m12": 63.9
     },
-    "rs6": -4.9,
+    "rs6": -5.9,
     "vol_ratio": 1.09
    },
    "flags": [],
@@ -1066,7 +1194,7 @@
    "revision_note": "Analysten ↑1 in 30T (Wolfe Research, 2026-08-13)",
    "scores": {
     "turnaround": 80.9,
-    "momentum": 43.6,
+    "momentum": 43.5,
     "value": 63.1
    },
    "why": {
@@ -1109,7 +1237,7 @@
      "m6": 29.2,
      "m12": -1.5
     },
-    "rs6": 11.1,
+    "rs6": 10.0,
     "vol_ratio": 1.28
    },
    "flags": [],
@@ -1125,7 +1253,7 @@
    "revision_note": null,
    "scores": {
     "turnaround": 61.5,
-    "momentum": 69.2,
+    "momentum": 68.3,
     "value": 59.5
    },
    "why": {
@@ -1167,7 +1295,7 @@
      "m6": 5.5,
      "m12": 52.8
     },
-    "rs6": -12.7,
+    "rs6": -13.7,
     "vol_ratio": 1.0
    },
    "flags": [],
@@ -1225,7 +1353,7 @@
      "m6": 8.9,
      "m12": 19.1
     },
-    "rs6": -9.3,
+    "rs6": -10.3,
     "vol_ratio": 0.97
    },
    "flags": [],
@@ -1283,7 +1411,7 @@
      "m6": 3.3,
      "m12": -11.6
     },
-    "rs6": -14.9,
+    "rs6": -15.9,
     "vol_ratio": 1.13
    },
    "flags": [],
@@ -1337,7 +1465,7 @@
      "m6": 11.6,
      "m12": -15.7
     },
-    "rs6": -6.6,
+    "rs6": -7.6,
     "vol_ratio": 1.14
    },
    "flags": [],
@@ -1395,7 +1523,7 @@
      "m6": -6.3,
      "m12": -14.6
     },
-    "rs6": -24.5,
+    "rs6": -25.5,
     "vol_ratio": 0.85
    },
    "flags": [
@@ -1452,7 +1580,7 @@
      "m6": -36.2,
      "m12": -42.9
     },
-    "rs6": -54.4,
+    "rs6": -55.4,
     "vol_ratio": 0.92
    },
    "flags": [
@@ -1509,7 +1637,7 @@
      "m6": -13.7,
      "m12": -11.0
     },
-    "rs6": -31.9,
+    "rs6": -32.9,
     "vol_ratio": 1.0
    },
    "flags": [],
@@ -1565,7 +1693,7 @@
      "m6": -3.6,
      "m12": -1.7
     },
-    "rs6": -21.8,
+    "rs6": -22.8,
     "vol_ratio": 0.95
    },
    "flags": [],
@@ -1621,7 +1749,7 @@
      "m6": -10.3,
      "m12": -28.5
     },
-    "rs6": -28.5,
+    "rs6": -29.5,
     "vol_ratio": 1.26
    },
    "flags": [
@@ -1676,7 +1804,7 @@
      "m6": 94.0,
      "m12": 89.2
     },
-    "rs6": 75.8,
+    "rs6": 74.8,
     "vol_ratio": 1.07
    },
    "flags": [],
@@ -1703,7 +1831,7 @@
     ],
     "momentum": [
      "nur 11% unter ATH",
-     "relative Staerke +76% vs. Index",
+     "relative Staerke +75% vs. Index",
      "ueber 50- und 200-Tage-Linie",
      "200-Tage-Linie steigt"
     ],
@@ -1736,7 +1864,7 @@
      "m6": 42.7,
      "m12": 68.5
     },
-    "rs6": 24.5,
+    "rs6": 23.5,
     "vol_ratio": 0.99
    },
    "flags": [],
@@ -1752,7 +1880,7 @@
    "revision_note": "Analysten ↓1 in 30T (HSBC, 2026-08-14)",
    "scores": {
     "turnaround": 30.3,
-    "momentum": 60.0,
+    "momentum": 59.1,
     "value": 81.4
    },
    "why": {
@@ -1793,7 +1921,7 @@
      "m6": -25.0,
      "m12": -61.7
     },
-    "rs6": -43.2,
+    "rs6": -44.2,
     "vol_ratio": 0.91
    },
    "flags": [
@@ -1850,7 +1978,7 @@
      "m6": 23.3,
      "m12": 42.8
     },
-    "rs6": 5.1,
+    "rs6": 4.1,
     "vol_ratio": 0.98
    },
    "flags": [],
@@ -1866,7 +1994,7 @@
    "revision_note": null,
    "scores": {
     "turnaround": 54.0,
-    "momentum": 71.4,
+    "momentum": 70.5,
     "value": 72.5
    },
    "why": {
@@ -1898,19 +2026,19 @@
     "range_pos": 75.8,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 7.73,
-    "sma200_slope": 0.69,
+    "sma50_slope": 7.48,
+    "sma200_slope": 0.8,
     "higher_low": true,
-    "rsi14": 57.6,
+    "rsi14": 56.9,
     "rsi_min60": 42.5,
     "perf": {
-     "m1": -0.4,
-     "m3": 21.0,
-     "m6": 5.5,
-     "m12": -7.1
+     "m1": 1.6,
+     "m3": 18.2,
+     "m6": 3.9,
+     "m12": -4.3
     },
-    "rs6": -12.6,
-    "vol_ratio": 1.09
+    "rs6": -15.2,
+    "vol_ratio": 1.1
    },
    "flags": [],
    "earnings_in": null,
@@ -1924,8 +2052,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 56.8,
-    "momentum": 49.1,
+    "turnaround": 57.0,
+    "momentum": 49.6,
     "value": 72.0
    },
    "why": {
@@ -1955,19 +2083,19 @@
     "range_pos": 48.1,
     "above_sma50": true,
     "above_sma200": false,
-    "sma50_slope": 2.91,
-    "sma200_slope": -1.82,
+    "sma50_slope": 3.03,
+    "sma200_slope": -1.74,
     "higher_low": true,
-    "rsi14": 71.3,
+    "rsi14": 70.6,
     "rsi_min60": 21.4,
     "perf": {
-     "m1": 40.5,
-     "m3": 20.5,
-     "m6": -7.6,
-     "m12": -11.1
+     "m1": 36.9,
+     "m3": 31.0,
+     "m6": -6.8,
+     "m12": -9.8
     },
-    "rs6": -25.8,
-    "vol_ratio": 0.9
+    "rs6": -26.0,
+    "vol_ratio": 0.88
    },
    "flags": [],
    "earnings_in": null,
@@ -1981,7 +2109,7 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 78.8,
+    "turnaround": 79.4,
     "momentum": 0.0,
     "value": 64.6
    },
@@ -2010,19 +2138,19 @@
     "range_pos": 54.5,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 10.81,
-    "sma200_slope": -3.27,
+    "sma50_slope": 10.71,
+    "sma200_slope": -3.3,
     "higher_low": true,
-    "rsi14": 67.9,
-    "rsi_min60": 40.0,
+    "rsi14": 67.8,
+    "rsi_min60": 40.9,
     "perf": {
-     "m1": 17.1,
-     "m3": 42.4,
-     "m6": 27.0,
-     "m12": -13.1
+     "m1": 16.5,
+     "m3": 35.4,
+     "m6": 35.7,
+     "m12": -11.2
     },
-    "rs6": 8.8,
-    "vol_ratio": 1.1
+    "rs6": 16.5,
+    "vol_ratio": 1.08
    },
    "flags": [],
    "earnings_in": null,
@@ -2036,8 +2164,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 72.0,
-    "momentum": 40.7,
+    "turnaround": 71.5,
+    "momentum": 46.5,
     "value": 65.7
    },
    "why": {
@@ -2047,6 +2175,7 @@
      "50-Tage-Linie dreht nach oben"
     ],
     "momentum": [
+     "relative Staerke +16% vs. Index",
      "ueber 50- und 200-Tage-Linie"
     ],
     "value": [
@@ -2078,7 +2207,7 @@
      "m6": 91.8,
      "m12": 80.9
     },
-    "rs6": 73.6,
+    "rs6": 72.6,
     "vol_ratio": 1.06
    },
    "flags": [],
@@ -2103,7 +2232,7 @@
      "50-Tage-Linie dreht nach oben"
     ],
     "momentum": [
-     "relative Staerke +74% vs. Index",
+     "relative Staerke +73% vs. Index",
      "200-Tage-Linie steigt"
     ],
     "value": [
@@ -2136,7 +2265,7 @@
      "m6": 23.5,
      "m12": 11.2
     },
-    "rs6": 5.3,
+    "rs6": 4.3,
     "vol_ratio": 1.25
    },
    "flags": [],
@@ -2152,7 +2281,7 @@
    "revision_note": null,
    "scores": {
     "turnaround": 85.1,
-    "momentum": 54.3,
+    "momentum": 53.5,
     "value": 77.9
    },
    "why": {
@@ -2184,19 +2313,19 @@
     "range_pos": 44.9,
     "above_sma50": false,
     "above_sma200": false,
-    "sma50_slope": 1.12,
-    "sma200_slope": -0.03,
+    "sma50_slope": 1.18,
+    "sma200_slope": -0.01,
     "higher_low": true,
-    "rsi14": 44.8,
-    "rsi_min60": 37.1,
+    "rsi14": 45.0,
+    "rsi_min60": 37.6,
     "perf": {
-     "m1": -1.3,
-     "m3": 2.5,
-     "m6": -2.4,
-     "m12": 5.7
+     "m1": -1.4,
+     "m3": 4.0,
+     "m6": -4.0,
+     "m12": 4.4
     },
-    "rs6": -20.6,
-    "vol_ratio": 1.06
+    "rs6": -23.2,
+    "vol_ratio": 1.04
    },
    "flags": [],
    "earnings_in": null,
@@ -2210,8 +2339,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 41.2,
-    "momentum": 21.9,
+    "turnaround": 41.0,
+    "momentum": 21.3,
     "value": 41.7
    },
    "why": {
@@ -2249,7 +2378,7 @@
      "m6": 21.9,
      "m12": 53.1
     },
-    "rs6": 3.7,
+    "rs6": 2.7,
     "vol_ratio": 0.77
    },
    "flags": [],
@@ -2265,7 +2394,7 @@
    "revision_note": null,
    "scores": {
     "turnaround": 52.3,
-    "momentum": 70.8,
+    "momentum": 70.0,
     "value": 73.7
    },
    "why": {
@@ -2308,7 +2437,7 @@
      "m6": 13.8,
      "m12": 7.5
     },
-    "rs6": -4.4,
+    "rs6": -5.4,
     "vol_ratio": 0.98
    },
    "flags": [],
@@ -2324,7 +2453,7 @@
    "revision_note": null,
    "scores": {
     "turnaround": 54.0,
-    "momentum": 61.5,
+    "momentum": 61.0,
     "value": 77.4
    },
    "why": {
@@ -2366,7 +2495,7 @@
      "m6": 89.4,
      "m12": 89.3
     },
-    "rs6": 71.2,
+    "rs6": 70.2,
     "vol_ratio": 1.28
    },
    "flags": [],
@@ -2393,7 +2522,7 @@
     ],
     "momentum": [
      "nur 9% unter ATH",
-     "relative Staerke +71% vs. Index",
+     "relative Staerke +70% vs. Index",
      "200-Tage-Linie steigt"
     ],
     "value": [
@@ -2426,7 +2555,7 @@
      "m6": -9.9,
      "m12": 2.2
     },
-    "rs6": -28.1,
+    "rs6": -29.1,
     "vol_ratio": 1.09
    },
    "flags": [],
@@ -2482,7 +2611,7 @@
      "m6": 4.5,
      "m12": 44.2
     },
-    "rs6": -13.7,
+    "rs6": -14.7,
     "vol_ratio": 0.76
    },
    "flags": [],
@@ -2536,7 +2665,7 @@
      "m6": -2.2,
      "m12": 28.4
     },
-    "rs6": -20.4,
+    "rs6": -21.4,
     "vol_ratio": 0.91
    },
    "flags": [],
@@ -2593,7 +2722,7 @@
      "m6": 13.8,
      "m12": 69.9
     },
-    "rs6": -4.4,
+    "rs6": -5.4,
     "vol_ratio": 0.83
    },
    "flags": [],
@@ -2609,7 +2738,7 @@
    "revision_note": null,
    "scores": {
     "turnaround": 15.8,
-    "momentum": 31.2,
+    "momentum": 30.7,
     "value": 73.4
    },
    "why": {
@@ -2637,18 +2766,18 @@
     "above_sma50": false,
     "above_sma200": false,
     "sma50_slope": 1.05,
-    "sma200_slope": 1.64,
+    "sma200_slope": 1.65,
     "higher_low": true,
-    "rsi14": 37.4,
+    "rsi14": 37.6,
     "rsi_min60": 34.9,
     "perf": {
-     "m1": -3.2,
-     "m3": -2.3,
-     "m6": -11.1,
-     "m12": 5.7
+     "m1": -1.7,
+     "m3": -2.4,
+     "m6": -11.7,
+     "m12": 5.5
     },
-    "rs6": -29.3,
-    "vol_ratio": 1.04
+    "rs6": -30.9,
+    "vol_ratio": 1.08
    },
    "flags": [],
    "earnings_in": null,
@@ -2662,8 +2791,8 @@
    },
    "revision_note": "Analysten ↑1 in 30T (RBC Capital, 2026-08-18)",
    "scores": {
-    "turnaround": 37.1,
-    "momentum": 20.1,
+    "turnaround": 38.2,
+    "momentum": 21.2,
     "value": 51.6
    },
    "why": {
@@ -2699,7 +2828,7 @@
      "m6": -11.5,
      "m12": -11.9
     },
-    "rs6": -29.6,
+    "rs6": -30.6,
     "vol_ratio": 1.09
    },
    "flags": [],
@@ -2754,7 +2883,7 @@
      "m6": 104.1,
      "m12": 292.2
     },
-    "rs6": 86.0,
+    "rs6": 84.9,
     "vol_ratio": 1.04
    },
    "flags": [],
@@ -2780,7 +2909,7 @@
      "RSI erholt sich aus dem ueberverkauften Bereich"
     ],
     "momentum": [
-     "relative Staerke +86% vs. Index",
+     "relative Staerke +85% vs. Index",
      "200-Tage-Linie steigt"
     ],
     "value": [
@@ -2811,7 +2940,7 @@
      "m6": -6.3,
      "m12": -48.9
     },
-    "rs6": -24.4,
+    "rs6": -25.4,
     "vol_ratio": 0.99
    },
    "flags": [
@@ -2870,7 +2999,7 @@
      "m6": -20.6,
      "m12": -17.4
     },
-    "rs6": -38.8,
+    "rs6": -39.8,
     "vol_ratio": 0.99
    },
    "flags": [
@@ -2914,21 +3043,21 @@
     "dd_ath": -13.5,
     "days_since_ath": 1464,
     "range_pos": 68.0,
-    "above_sma50": false,
+    "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 1.6,
-    "sma200_slope": 1.52,
+    "sma50_slope": 1.47,
+    "sma200_slope": 1.49,
     "higher_low": true,
-    "rsi14": 53.1,
-    "rsi_min60": 36.9,
+    "rsi14": 53.2,
+    "rsi_min60": 36.7,
     "perf": {
-     "m1": 2.0,
-     "m3": 6.3,
+     "m1": 2.8,
+     "m3": 8.4,
      "m6": 8.3,
-     "m12": -7.7
+     "m12": -7.3
     },
-    "rs6": -9.8,
-    "vol_ratio": 1.01
+    "rs6": -10.9,
+    "vol_ratio": 1.0
    },
    "flags": [],
    "earnings_in": null,
@@ -2942,16 +3071,19 @@
    },
    "revision_note": "Analysten ↑1 in 30T (HSBC, 2026-08-13)",
    "scores": {
-    "turnaround": 38.0,
-    "momentum": 30.1,
+    "turnaround": 52.4,
+    "momentum": 41.7,
     "value": 71.2
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
+     "ueber 50-Tage-Linie",
      "50-Tage-Linie dreht nach oben"
     ],
-    "momentum": [],
+    "momentum": [
+     "ueber 50- und 200-Tage-Linie"
+    ],
     "value": [
      "erwartetes KGV unter aktuellem",
      "positiver Free Cashflow",
@@ -2982,7 +3114,7 @@
      "m6": 11.0,
      "m12": 0.5
     },
-    "rs6": -7.2,
+    "rs6": -8.2,
     "vol_ratio": 0.9
    },
    "flags": [],
@@ -3038,7 +3170,7 @@
      "m6": 26.8,
      "m12": 113.1
     },
-    "rs6": 8.6,
+    "rs6": 7.6,
     "vol_ratio": 0.91
    },
    "flags": [],
@@ -3054,7 +3186,7 @@
    "revision_note": null,
    "scores": {
     "turnaround": 49.8,
-    "momentum": 29.6,
+    "momentum": 28.8,
     "value": 77.3
    },
    "why": {
@@ -3083,18 +3215,18 @@
     "range_pos": 59.0,
     "above_sma50": false,
     "above_sma200": true,
-    "sma50_slope": -0.99,
-    "sma200_slope": 0.85,
+    "sma50_slope": -1.09,
+    "sma200_slope": 0.93,
     "higher_low": false,
-    "rsi14": 39.7,
-    "rsi_min60": 30.1,
+    "rsi14": 39.9,
+    "rsi_min60": 30.2,
     "perf": {
-     "m1": -6.3,
+     "m1": -4.7,
      "m3": -4.6,
-     "m6": 0.7,
-     "m12": 2.1
+     "m6": -0.2,
+     "m12": 1.9
     },
-    "rs6": -17.5,
+    "rs6": -19.4,
     "vol_ratio": 0.99
    },
    "flags": [],
@@ -3109,8 +3241,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 10.8,
-    "momentum": 26.8,
+    "turnaround": 10.9,
+    "momentum": 27.0,
     "value": 71.9
    },
    "why": {
@@ -3145,7 +3277,7 @@
      "m6": 28.2,
      "m12": 212.4
     },
-    "rs6": 10.0,
+    "rs6": 9.0,
     "vol_ratio": 1.04
    },
    "flags": [],
@@ -3161,7 +3293,7 @@
    "revision_note": null,
    "scores": {
     "turnaround": 67.8,
-    "momentum": 35.3,
+    "momentum": 34.5,
     "value": 81.7
    },
    "why": {
@@ -3202,7 +3334,7 @@
      "m6": -34.4,
      "m12": -41.3
     },
-    "rs6": -52.6,
+    "rs6": -53.6,
     "vol_ratio": 0.88
    },
    "flags": [
@@ -3257,7 +3389,7 @@
      "m6": 0.4,
      "m12": 36.9
     },
-    "rs6": -17.8,
+    "rs6": -18.8,
     "vol_ratio": 0.84
    },
    "flags": [],
@@ -3314,7 +3446,7 @@
      "m6": -1.5,
      "m12": 20.8
     },
-    "rs6": -19.7,
+    "rs6": -20.7,
     "vol_ratio": 0.97
    },
    "flags": [],
@@ -3368,7 +3500,7 @@
      "m6": 8.6,
      "m12": 7.4
     },
-    "rs6": -9.6,
+    "rs6": -10.6,
     "vol_ratio": 0.94
    },
    "flags": [],
@@ -3424,7 +3556,7 @@
      "m6": -4.9,
      "m12": -18.0
     },
-    "rs6": -23.1,
+    "rs6": -24.1,
     "vol_ratio": 0.96
    },
    "flags": [],
@@ -3482,7 +3614,7 @@
      "m6": -15.0,
      "m12": -28.6
     },
-    "rs6": -33.1,
+    "rs6": -34.2,
     "vol_ratio": 1.14
    },
    "flags": [
@@ -3526,19 +3658,19 @@
     "range_pos": 3.5,
     "above_sma50": false,
     "above_sma200": false,
-    "sma50_slope": -3.89,
-    "sma200_slope": 1.14,
+    "sma50_slope": -4.14,
+    "sma200_slope": 1.15,
     "higher_low": false,
-    "rsi14": 15.3,
-    "rsi_min60": 9.8,
+    "rsi14": 15.5,
+    "rsi_min60": 10.2,
     "perf": {
-     "m1": -51.4,
-     "m3": -45.5,
-     "m6": -41.8,
-     "m12": -26.1
+     "m1": -50.3,
+     "m3": -46.4,
+     "m6": -42.8,
+     "m12": -26.6
     },
-    "rs6": -60.0,
-    "vol_ratio": 1.04
+    "rs6": -62.0,
+    "vol_ratio": 1.05
    },
    "flags": [],
    "earnings_in": null,
@@ -3552,8 +3684,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 28.5,
-    "momentum": 6.9,
+    "turnaround": 28.8,
+    "momentum": 7.2,
     "value": 75.0
    },
    "why": {
@@ -3590,7 +3722,7 @@
      "m6": 200.2,
      "m12": 209.8
     },
-    "rs6": 182.0,
+    "rs6": 181.0,
     "vol_ratio": 1.26
    },
    "flags": [],
@@ -3618,7 +3750,7 @@
      "Anstiege auf hoeherem Volumen"
     ],
     "momentum": [
-     "relative Staerke +182% vs. Index",
+     "relative Staerke +181% vs. Index",
      "ueber 50- und 200-Tage-Linie",
      "200-Tage-Linie steigt"
     ],
@@ -3651,7 +3783,7 @@
      "m6": 21.7,
      "m12": -5.6
     },
-    "rs6": 3.6,
+    "rs6": 2.5,
     "vol_ratio": 1.3
    },
    "flags": [],
@@ -3667,7 +3799,7 @@
    "revision_note": null,
    "scores": {
     "turnaround": 71.0,
-    "momentum": 57.0,
+    "momentum": 56.0,
     "value": 84.7
    },
    "why": {
@@ -3711,7 +3843,7 @@
      "m6": -16.7,
      "m12": -71.3
     },
-    "rs6": -34.9,
+    "rs6": -35.9,
     "vol_ratio": 1.04
    },
    "flags": [
@@ -3764,7 +3896,7 @@
      "m6": 122.7,
      "m12": 659.7
     },
-    "rs6": 104.6,
+    "rs6": 103.6,
     "vol_ratio": 0.9
    },
    "flags": [],
@@ -3789,7 +3921,7 @@
      "50-Tage-Linie dreht nach oben"
     ],
     "momentum": [
-     "relative Staerke +105% vs. Index",
+     "relative Staerke +104% vs. Index",
      "200-Tage-Linie steigt"
     ],
     "value": [
@@ -3821,7 +3953,7 @@
      "m6": 2.9,
      "m12": -35.6
     },
-    "rs6": -15.3,
+    "rs6": -16.3,
     "vol_ratio": 0.99
    },
    "flags": [
@@ -3878,7 +4010,7 @@
      "m6": 15.9,
      "m12": 19.7
     },
-    "rs6": -2.3,
+    "rs6": -3.3,
     "vol_ratio": 0.97
    },
    "flags": [],
@@ -3894,7 +4026,7 @@
    "revision_note": null,
    "scores": {
     "turnaround": 43.9,
-    "momentum": 51.3,
+    "momentum": 50.4,
     "value": 86.5
    },
    "why": {
@@ -3935,7 +4067,7 @@
      "m6": -3.9,
      "m12": -0.9
     },
-    "rs6": -22.1,
+    "rs6": -23.1,
     "vol_ratio": 0.84
    },
    "flags": [],
@@ -3990,7 +4122,7 @@
      "m6": 10.8,
      "m12": 34.5
     },
-    "rs6": -7.3,
+    "rs6": -8.3,
     "vol_ratio": 1.04
    },
    "flags": [],
@@ -4046,7 +4178,7 @@
      "m6": 8.4,
      "m12": 51.6
     },
-    "rs6": -9.8,
+    "rs6": -10.8,
     "vol_ratio": 0.87
    },
    "flags": [],
@@ -4091,19 +4223,19 @@
     "range_pos": 33.8,
     "above_sma50": true,
     "above_sma200": false,
-    "sma50_slope": 0.52,
-    "sma200_slope": -1.0,
+    "sma50_slope": 0.43,
+    "sma200_slope": -1.05,
     "higher_low": false,
-    "rsi14": 53.0,
+    "rsi14": 52.9,
     "rsi_min60": 33.4,
     "perf": {
-     "m1": 3.7,
-     "m3": -0.8,
-     "m6": -1.7,
-     "m12": -10.1
+     "m1": 7.9,
+     "m3": -0.6,
+     "m6": -1.5,
+     "m12": -10.2
     },
-    "rs6": -19.9,
-    "vol_ratio": 0.95
+    "rs6": -20.7,
+    "vol_ratio": 0.96
    },
    "flags": [],
    "earnings_in": null,
@@ -4118,7 +4250,7 @@
    "revision_note": null,
    "scores": {
     "turnaround": 40.7,
-    "momentum": 11.9,
+    "momentum": 12.1,
     "value": 47.7
    },
    "why": {
@@ -4155,7 +4287,7 @@
      "m6": 136.1,
      "m12": 104.2
     },
-    "rs6": 118.0,
+    "rs6": 116.9,
     "vol_ratio": 1.08
    },
    "flags": [],
@@ -4182,7 +4314,7 @@
     ],
     "momentum": [
      "nur 9% unter ATH",
-     "relative Staerke +118% vs. Index",
+     "relative Staerke +117% vs. Index",
      "ueber 50- und 200-Tage-Linie",
      "200-Tage-Linie steigt"
     ],
@@ -4204,19 +4336,19 @@
     "range_pos": 75.9,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 9.69,
-    "sma200_slope": -0.11,
+    "sma50_slope": 9.85,
+    "sma200_slope": -0.14,
     "higher_low": true,
-    "rsi14": 61.5,
+    "rsi14": 61.6,
     "rsi_min60": 46.4,
     "perf": {
-     "m1": 10.6,
+     "m1": 7.4,
      "m3": 31.0,
-     "m6": 33.0,
-     "m12": -7.0
+     "m6": 34.4,
+     "m12": -7.5
     },
-    "rs6": 14.8,
-    "vol_ratio": 1.09
+    "rs6": 15.2,
+    "vol_ratio": 1.1
    },
    "flags": [],
    "earnings_in": null,
@@ -4230,8 +4362,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 63.9,
-    "momentum": 53.4,
+    "turnaround": 64.2,
+    "momentum": 54.0,
     "value": 52.7
    },
    "why": {
@@ -4272,7 +4404,7 @@
      "m6": 1.3,
      "m12": 33.0
     },
-    "rs6": -16.9,
+    "rs6": -17.9,
     "vol_ratio": 1.03
    },
    "flags": [],
@@ -4330,7 +4462,7 @@
      "m6": -12.4,
      "m12": -23.8
     },
-    "rs6": -30.5,
+    "rs6": -31.6,
     "vol_ratio": 0.92
    },
    "flags": [
@@ -4388,7 +4520,7 @@
      "m6": -11.6,
      "m12": -0.9
     },
-    "rs6": -29.8,
+    "rs6": -30.8,
     "vol_ratio": 0.91
    },
    "flags": [],
@@ -4441,7 +4573,7 @@
      "m6": 29.4,
      "m12": 0.7
     },
-    "rs6": 11.2,
+    "rs6": 10.2,
     "vol_ratio": 1.39
    },
    "flags": [],
@@ -4457,7 +4589,7 @@
    "revision_note": "Analysten ↑1 in 30T (UBS, 2026-08-04)",
    "scores": {
     "turnaround": 72.4,
-    "momentum": 56.6,
+    "momentum": 55.8,
     "value": 82.5
    },
    "why": {
@@ -4501,7 +4633,7 @@
      "m6": 48.7,
      "m12": -11.1
     },
-    "rs6": 30.5,
+    "rs6": 29.5,
     "vol_ratio": 1.44
    },
    "flags": [],
@@ -4560,7 +4692,7 @@
      "m6": 14.2,
      "m12": 4.0
     },
-    "rs6": -4.0,
+    "rs6": -5.0,
     "vol_ratio": 0.88
    },
    "flags": [],
@@ -4576,7 +4708,7 @@
    "revision_note": null,
    "scores": {
     "turnaround": 65.0,
-    "momentum": 0.8,
+    "momentum": 0.0,
     "value": 66.1
    },
    "why": {
@@ -4614,7 +4746,7 @@
      "m6": 7.7,
      "m12": 50.7
     },
-    "rs6": -10.5,
+    "rs6": -11.5,
     "vol_ratio": 0.99
    },
    "flags": [],
@@ -4673,7 +4805,7 @@
      "m6": 28.0,
      "m12": -21.4
     },
-    "rs6": 9.8,
+    "rs6": 8.8,
     "vol_ratio": 1.05
    },
    "flags": [],
@@ -4689,7 +4821,7 @@
    "revision_note": "Analysten ↑1 in 30T (RBC Capital, 2026-08-18)",
    "scores": {
     "turnaround": 93.8,
-    "momentum": 36.6,
+    "momentum": 35.8,
     "value": 65.4
    },
    "why": {
@@ -4731,7 +4863,7 @@
      "m6": 19.9,
      "m12": 60.7
     },
-    "rs6": 1.7,
+    "rs6": 0.7,
     "vol_ratio": 0.88
    },
    "flags": [],
@@ -4747,7 +4879,7 @@
    "revision_note": null,
    "scores": {
     "turnaround": 60.0,
-    "momentum": 61.3,
+    "momentum": 60.4,
     "value": 74.1
    },
    "why": {
@@ -4791,7 +4923,7 @@
      "m6": 10.9,
      "m12": 16.3
     },
-    "rs6": -7.3,
+    "rs6": -8.3,
     "vol_ratio": 1.2
    },
    "flags": [],
@@ -4851,7 +4983,7 @@
      "m6": -9.3,
      "m12": -35.8
     },
-    "rs6": -27.5,
+    "rs6": -28.5,
     "vol_ratio": 0.86
    },
    "flags": [],
@@ -4905,7 +5037,7 @@
      "m6": 108.4,
      "m12": 3.0
     },
-    "rs6": 90.2,
+    "rs6": 89.2,
     "vol_ratio": 1.18
    },
    "flags": [],
@@ -4933,7 +5065,7 @@
      "Anstiege auf hoeherem Volumen"
     ],
     "momentum": [
-     "relative Staerke +90% vs. Index",
+     "relative Staerke +89% vs. Index",
      "ueber 50- und 200-Tage-Linie"
     ],
     "value": [
@@ -4964,7 +5096,7 @@
      "m6": -13.6,
      "m12": -27.2
     },
-    "rs6": -31.8,
+    "rs6": -32.8,
     "vol_ratio": 0.98
    },
    "flags": [
@@ -5022,7 +5154,7 @@
      "m6": -14.6,
      "m12": 4.8
     },
-    "rs6": -32.8,
+    "rs6": -33.8,
     "vol_ratio": 0.97
    },
    "flags": [
@@ -5078,7 +5210,7 @@
      "m6": -46.9,
      "m12": -75.4
     },
-    "rs6": -65.1,
+    "rs6": -66.1,
     "vol_ratio": 0.9
    },
    "flags": [
@@ -5132,7 +5264,7 @@
      "m6": 19.0,
      "m12": 1.9
     },
-    "rs6": 0.9,
+    "rs6": -0.2,
     "vol_ratio": 1.16
    },
    "flags": [],
@@ -5148,7 +5280,7 @@
    "revision_note": null,
    "scores": {
     "turnaround": 45.2,
-    "momentum": 38.8,
+    "momentum": 37.9,
     "value": 37.9
    },
    "why": {
@@ -5187,7 +5319,7 @@
      "m6": 21.0,
      "m12": 41.2
     },
-    "rs6": 2.8,
+    "rs6": 1.8,
     "vol_ratio": 0.91
    },
    "flags": [],
@@ -5203,7 +5335,7 @@
    "revision_note": null,
    "scores": {
     "turnaround": 34.7,
-    "momentum": 32.8,
+    "momentum": 32.0,
     "value": 79.8
    },
    "why": {
@@ -5242,7 +5374,7 @@
      "m6": 4.7,
      "m12": -28.8
     },
-    "rs6": -13.5,
+    "rs6": -14.5,
     "vol_ratio": 0.87
    },
    "flags": [
@@ -5299,7 +5431,7 @@
      "m6": 15.7,
      "m12": 40.5
     },
-    "rs6": -2.5,
+    "rs6": -3.5,
     "vol_ratio": 1.16
    },
    "flags": [],
@@ -5315,7 +5447,7 @@
    "revision_note": null,
    "scores": {
     "turnaround": 55.7,
-    "momentum": 69.2,
+    "momentum": 68.3,
     "value": 79.1
    },
    "why": {
@@ -5358,7 +5490,7 @@
      "m6": -0.9,
      "m12": 141.4
     },
-    "rs6": -19.1,
+    "rs6": -20.1,
     "vol_ratio": 0.91
    },
    "flags": [],
@@ -5413,7 +5545,7 @@
      "m6": 39.1,
      "m12": -14.4
     },
-    "rs6": 20.9,
+    "rs6": 19.9,
     "vol_ratio": 1.14
    },
    "flags": [],
@@ -5429,7 +5561,7 @@
    "revision_note": "Analysten ↓2 in 30T (B of A Securities, 2026-08-19)",
    "scores": {
     "turnaround": 93.8,
-    "momentum": 49.6,
+    "momentum": 48.8,
     "value": 66.8
    },
    "why": {
@@ -5441,7 +5573,7 @@
      "RSI erholt sich aus dem ueberverkauften Bereich"
     ],
     "momentum": [
-     "relative Staerke +21% vs. Index",
+     "relative Staerke +20% vs. Index",
      "ueber 50- und 200-Tage-Linie"
     ],
     "value": [
@@ -5474,7 +5606,7 @@
      "m6": -0.2,
      "m12": 13.8
     },
-    "rs6": -18.4,
+    "rs6": -19.4,
     "vol_ratio": 0.88
    },
    "flags": [
@@ -5531,7 +5663,7 @@
      "m6": 7.2,
      "m12": -33.4
     },
-    "rs6": -10.9,
+    "rs6": -11.9,
     "vol_ratio": 0.87
    },
    "flags": [],
@@ -5588,7 +5720,7 @@
      "m6": -0.8,
      "m12": 12.5
     },
-    "rs6": -8.4,
+    "rs6": -8.9,
     "vol_ratio": 0.94
    },
    "flags": [],
@@ -5644,7 +5776,7 @@
      "m6": -7.0,
      "m12": -4.4
     },
-    "rs6": -14.7,
+    "rs6": -15.1,
     "vol_ratio": 1.07
    },
    "flags": [],
@@ -5700,7 +5832,7 @@
      "m6": 8.9,
      "m12": 99.6
     },
-    "rs6": 1.3,
+    "rs6": 0.8,
     "vol_ratio": 0.86
    },
    "flags": [],
@@ -5716,7 +5848,7 @@
    "revision_note": null,
    "scores": {
     "turnaround": 41.5,
-    "momentum": 25.9,
+    "momentum": 25.5,
     "value": 69.6
    },
    "why": {
@@ -5755,7 +5887,7 @@
      "m6": 10.3,
      "m12": -14.8
     },
-    "rs6": 2.7,
+    "rs6": 2.2,
     "vol_ratio": 1.0
    },
    "flags": [],
@@ -5771,7 +5903,7 @@
    "revision_note": "Analysten ↓1 in 30T (Citigroup, 2026-08-18)",
    "scores": {
     "turnaround": 88.9,
-    "momentum": 29.3,
+    "momentum": 28.9,
     "value": 74.2
    },
    "why": {
@@ -5815,7 +5947,7 @@
      "m6": 13.9,
      "m12": 39.2
     },
-    "rs6": 6.3,
+    "rs6": 5.8,
     "vol_ratio": 0.84
    },
    "flags": [],
@@ -5831,7 +5963,7 @@
    "revision_note": null,
    "scores": {
     "turnaround": 45.5,
-    "momentum": 71.1,
+    "momentum": 70.7,
     "value": 75.8
    },
    "why": {
@@ -5874,7 +6006,7 @@
      "m6": 0.6,
      "m12": -6.9
     },
-    "rs6": -7.0,
+    "rs6": -7.5,
     "vol_ratio": 1.07
    },
    "flags": [],
@@ -5929,7 +6061,7 @@
      "m6": 10.5,
      "m12": 42.6
     },
-    "rs6": 2.8,
+    "rs6": 2.4,
     "vol_ratio": 0.93
    },
    "flags": [],
@@ -5945,7 +6077,7 @@
    "revision_note": "Analysten ↑1 in 30T (UBS, 2026-08-03)",
    "scores": {
     "turnaround": 35.2,
-    "momentum": 41.5,
+    "momentum": 41.2,
     "value": 61.6
    },
    "why": {
@@ -5985,7 +6117,7 @@
      "m6": -8.9,
      "m12": -10.4
     },
-    "rs6": -16.6,
+    "rs6": -17.1,
     "vol_ratio": 1.03
    },
    "flags": [],
@@ -6041,7 +6173,7 @@
      "m6": -7.7,
      "m12": 1.6
     },
-    "rs6": -15.4,
+    "rs6": -15.8,
     "vol_ratio": 0.87
    },
    "flags": [
@@ -6097,7 +6229,7 @@
      "m6": 12.8,
      "m12": 59.0
     },
-    "rs6": 5.2,
+    "rs6": 4.7,
     "vol_ratio": 1.0
    },
    "flags": [],
@@ -6113,7 +6245,7 @@
    "revision_note": null,
    "scores": {
     "turnaround": 52.8,
-    "momentum": 74.7,
+    "momentum": 74.3,
     "value": 74.4
    },
    "why": {
@@ -6155,7 +6287,7 @@
      "m6": 16.8,
      "m12": 24.9
     },
-    "rs6": 9.2,
+    "rs6": 8.7,
     "vol_ratio": 0.94
    },
    "flags": [],
@@ -6171,7 +6303,7 @@
    "revision_note": null,
    "scores": {
     "turnaround": 53.0,
-    "momentum": 72.5,
+    "momentum": 72.1,
     "value": 59.3
    },
    "why": {
@@ -6212,7 +6344,7 @@
      "m6": 15.2,
      "m12": 34.4
     },
-    "rs6": 7.5,
+    "rs6": 7.1,
     "vol_ratio": 0.97
    },
    "flags": [],
@@ -6228,7 +6360,7 @@
    "revision_note": null,
    "scores": {
     "turnaround": 52.0,
-    "momentum": 74.1,
+    "momentum": 73.8,
     "value": 69.2
    },
    "why": {
@@ -6270,7 +6402,7 @@
      "m6": -17.4,
      "m12": -11.3
     },
-    "rs6": -25.1,
+    "rs6": -25.5,
     "vol_ratio": 1.01
    },
    "flags": [],
@@ -6322,7 +6454,7 @@
      "m6": 10.6,
      "m12": 20.4
     },
-    "rs6": 3.0,
+    "rs6": 2.5,
     "vol_ratio": 1.12
    },
    "flags": [],
@@ -6338,7 +6470,7 @@
    "revision_note": null,
    "scores": {
     "turnaround": 57.5,
-    "momentum": 71.6,
+    "momentum": 71.1,
     "value": 59.2
    },
    "why": {
@@ -6379,7 +6511,7 @@
      "m6": 26.9,
      "m12": 86.8
     },
-    "rs6": 19.3,
+    "rs6": 18.8,
     "vol_ratio": 0.98
    },
    "flags": [],
@@ -6395,7 +6527,7 @@
    "revision_note": "Analysten ↑1 in 30T (Daiwa Capital, 2026-08-12)",
    "scores": {
     "turnaround": 47.0,
-    "momentum": 87.5,
+    "momentum": 87.1,
     "value": 57.5
    },
    "why": {
@@ -6439,7 +6571,7 @@
      "m6": -36.4,
      "m12": -45.5
     },
-    "rs6": -44.0,
+    "rs6": -44.5,
     "vol_ratio": 1.06
    },
    "flags": [
@@ -6492,7 +6624,7 @@
      "m6": -6.6,
      "m12": -4.6
     },
-    "rs6": -14.2,
+    "rs6": -14.7,
     "vol_ratio": 0.95
    },
    "flags": [],
@@ -6545,7 +6677,7 @@
      "m6": -2.9,
      "m12": -0.8
     },
-    "rs6": -10.5,
+    "rs6": -11.0,
     "vol_ratio": 1.25
    },
    "flags": [],
@@ -6605,7 +6737,7 @@
      "m6": 22.0,
      "m12": 38.6
     },
-    "rs6": 14.3,
+    "rs6": 13.9,
     "vol_ratio": 1.19
    },
    "flags": [],
@@ -6621,7 +6753,7 @@
    "revision_note": "Analysten ↓1 in 30T (Mizuho, 2026-07-24)",
    "scores": {
     "turnaround": 67.3,
-    "momentum": 76.1,
+    "momentum": 75.8,
     "value": 60.3
    },
    "why": {
@@ -6666,7 +6798,7 @@
      "m6": 36.7,
      "m12": 29.3
     },
-    "rs6": 29.0,
+    "rs6": 28.6,
     "vol_ratio": 1.3
    },
    "flags": [],
@@ -6723,7 +6855,7 @@
      "m6": 14.6,
      "m12": 7.5
     },
-    "rs6": 6.9,
+    "rs6": 6.5,
     "vol_ratio": 1.03
    },
    "flags": [],
@@ -6739,7 +6871,7 @@
    "revision_note": null,
    "scores": {
     "turnaround": 55.2,
-    "momentum": 70.2,
+    "momentum": 69.8,
     "value": 80.5
    },
    "why": {
@@ -6781,7 +6913,7 @@
      "m6": 6.0,
      "m12": 18.8
     },
-    "rs6": -1.6,
+    "rs6": -2.1,
     "vol_ratio": 0.82
    },
    "flags": [
@@ -6799,7 +6931,7 @@
    "revision_note": null,
    "scores": {
     "turnaround": 54.2,
-    "momentum": 63.1,
+    "momentum": 62.7,
     "value": 57.2
    },
    "why": {
@@ -6840,7 +6972,7 @@
      "m6": -9.4,
      "m12": 14.2
     },
-    "rs6": -17.0,
+    "rs6": -17.5,
     "vol_ratio": 0.91
    },
    "flags": [],
@@ -6877,25 +7009,25 @@
    "index": "DAX",
    "sector": "Consumer Cyclical",
    "metrics": {
-    "last": 152.5,
-    "dd_ath": -52.2,
+    "last": 153.15,
+    "dd_ath": -52.0,
     "days_since_ath": 1842,
-    "range_pos": 38.3,
+    "range_pos": 39.3,
     "above_sma50": false,
     "above_sma200": false,
-    "sma50_slope": 2.31,
-    "sma200_slope": -1.2,
+    "sma50_slope": 1.73,
+    "sma200_slope": -1.21,
     "higher_low": true,
-    "rsi14": 33.3,
+    "rsi14": 34.5,
     "rsi_min60": 31.9,
     "perf": {
-     "m1": -15.8,
-     "m3": 2.9,
+     "m1": -14.6,
+     "m3": 2.1,
      "m6": -0.7,
-     "m12": -6.9
+     "m12": -7.8
     },
-    "rs6": -4.4,
-    "vol_ratio": 0.76
+    "rs6": -4.6,
+    "vol_ratio": 0.71
    },
    "flags": [],
    "earnings_in": null,
@@ -6909,8 +7041,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 59.8,
-    "momentum": 0.5,
+    "turnaround": 58.9,
+    "momentum": 0.3,
     "value": 70.6
    },
    "why": {
@@ -6932,24 +7064,24 @@
    "index": "DAX",
    "sector": "Industrials",
    "metrics": {
-    "last": 206.75,
-    "dd_ath": -4.4,
+    "last": 207.25,
+    "dd_ath": -4.2,
     "days_since_ath": 219,
-    "range_pos": 84.1,
+    "range_pos": 85.0,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 8.18,
-    "sma200_slope": 0.53,
+    "sma50_slope": 8.01,
+    "sma200_slope": 0.43,
     "higher_low": true,
-    "rsi14": 49.3,
+    "rsi14": 49.8,
     "rsi_min60": 46.0,
     "perf": {
-     "m1": 6.4,
-     "m3": 19.2,
-     "m6": 7.2,
-     "m12": 14.4
+     "m1": -0.5,
+     "m3": 18.8,
+     "m6": 11.3,
+     "m12": 16.5
     },
-    "rs6": 3.5,
+    "rs6": 7.3,
     "vol_ratio": 0.99
    },
    "flags": [],
@@ -6965,7 +7097,7 @@
    "revision_note": null,
    "scores": {
     "turnaround": 54.2,
-    "momentum": 61.4,
+    "momentum": 64.8,
     "value": 62.0
    },
    "why": {
@@ -6989,25 +7121,25 @@
    "index": "DAX",
    "sector": "Financial Services",
    "metrics": {
-    "last": 436.05,
-    "dd_ath": -1.5,
+    "last": 437.2,
+    "dd_ath": -1.2,
     "days_since_ath": 6,
-    "range_pos": 94.1,
+    "range_pos": 95.2,
     "above_sma50": true,
     "above_sma200": true,
     "sma50_slope": 5.55,
-    "sma200_slope": 2.47,
+    "sma200_slope": 2.49,
     "higher_low": true,
-    "rsi14": 56.6,
+    "rsi14": 58.0,
     "rsi_min60": 42.7,
     "perf": {
-     "m1": 3.1,
-     "m3": 13.1,
-     "m6": 22.5,
+     "m1": 3.4,
+     "m3": 13.3,
+     "m6": 22.8,
      "m12": 22.1
     },
     "rs6": 18.8,
-    "vol_ratio": 1.13
+    "vol_ratio": 1.12
    },
    "flags": [],
    "earnings_in": null,
@@ -7021,8 +7153,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 57.8,
-    "momentum": 87.6,
+    "turnaround": 57.5,
+    "momentum": 87.3,
     "value": 77.2
    },
    "why": {
@@ -7032,7 +7164,7 @@
      "50-Tage-Linie dreht nach oben"
     ],
     "momentum": [
-     "nur 2% unter ATH",
+     "nur 1% unter ATH",
      "relative Staerke +19% vs. Index",
      "ueber 50- und 200-Tage-Linie",
      "200-Tage-Linie steigt"
@@ -7049,25 +7181,25 @@
    "index": "DAX",
    "sector": "Basic Materials",
    "metrics": {
-    "last": 51.15,
-    "dd_ath": -13.8,
+    "last": 50.99,
+    "dd_ath": -14.1,
     "days_since_ath": 3135,
-    "range_pos": 79.8,
+    "range_pos": 78.7,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": -0.13,
-    "sma200_slope": 2.01,
+    "sma50_slope": -0.62,
+    "sma200_slope": 1.97,
     "higher_low": true,
-    "rsi14": 55.5,
+    "rsi14": 54.7,
     "rsi_min60": 30.2,
     "perf": {
-     "m1": 4.5,
-     "m3": -0.4,
-     "m6": 9.1,
-     "m12": 12.3
+     "m1": 5.7,
+     "m3": -1.7,
+     "m6": 6.5,
+     "m12": 11.8
     },
-    "rs6": 5.4,
-    "vol_ratio": 0.91
+    "rs6": 2.6,
+    "vol_ratio": 0.96
    },
    "flags": [],
    "earnings_in": null,
@@ -7081,8 +7213,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 52.4,
-    "momentum": 52.8,
+    "turnaround": 52.5,
+    "momentum": 51.1,
     "value": 69.6
    },
    "why": {
@@ -7106,24 +7238,24 @@
    "index": "DAX",
    "sector": "Healthcare",
    "metrics": {
-    "last": 48.27,
-    "dd_ath": -49.3,
+    "last": 48.13,
+    "dd_ath": -49.5,
     "days_since_ath": 3349,
-    "range_pos": 81.4,
+    "range_pos": 80.9,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 10.79,
+    "sma50_slope": 10.78,
     "sma200_slope": 5.49,
     "higher_low": true,
-    "rsi14": 52.5,
+    "rsi14": 51.6,
     "rsi_min60": 28.3,
     "perf": {
-     "m1": 2.8,
-     "m3": 25.7,
-     "m6": 10.8,
-     "m12": 72.1
+     "m1": 2.5,
+     "m3": 25.3,
+     "m6": 10.5,
+     "m12": 71.6
     },
-    "rs6": 7.1,
+    "rs6": 6.6,
     "vol_ratio": 1.13
    },
    "flags": [],
@@ -7139,12 +7271,12 @@
    "revision_note": null,
    "scores": {
     "turnaround": 90.8,
-    "momentum": 53.8,
+    "momentum": 53.2,
     "value": 40.5
    },
    "why": {
     "turnaround": [
-     "-49% unter ATH",
+     "-50% unter ATH",
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
      "50-Tage-Linie dreht nach oben",
@@ -7164,25 +7296,25 @@
    "index": "DAX",
    "sector": "Consumer Defensive",
    "metrics": {
-    "last": 78.08,
-    "dd_ath": -45.8,
+    "last": 78.24,
+    "dd_ath": -45.7,
     "days_since_ath": 832,
-    "range_pos": 26.3,
+    "range_pos": 26.7,
     "above_sma50": true,
     "above_sma200": false,
-    "sma50_slope": 4.85,
-    "sma200_slope": -1.46,
+    "sma50_slope": 4.81,
+    "sma200_slope": -1.47,
     "higher_low": true,
-    "rsi14": 48.6,
+    "rsi14": 49.8,
     "rsi_min60": 32.6,
     "perf": {
-     "m1": -0.8,
-     "m3": 7.4,
-     "m6": -25.7,
-     "m12": -21.4
+     "m1": -0.4,
+     "m3": 7.9,
+     "m6": -25.4,
+     "m12": -22.9
     },
-    "rs6": -29.4,
-    "vol_ratio": 0.9
+    "rs6": -29.3,
+    "vol_ratio": 0.87
    },
    "flags": [],
    "earnings_in": null,
@@ -7219,25 +7351,25 @@
    "index": "DAX",
    "sector": "Consumer Cyclical",
    "metrics": {
-    "last": 58.34,
-    "dd_ath": -39.7,
+    "last": 58.3,
+    "dd_ath": -39.8,
     "days_since_ath": 864,
-    "range_pos": 4.0,
+    "range_pos": 3.9,
     "above_sma50": false,
     "above_sma200": false,
-    "sma50_slope": -9.14,
-    "sma200_slope": -2.39,
+    "sma50_slope": -8.96,
+    "sma200_slope": -2.35,
     "higher_low": false,
-    "rsi14": 43.9,
+    "rsi14": 43.7,
     "rsi_min60": 19.3,
     "perf": {
-     "m1": -0.3,
-     "m3": -21.5,
-     "m6": -31.9,
-     "m12": -30.9
+     "m1": 1.3,
+     "m3": -21.6,
+     "m6": -32.8,
+     "m12": -32.6
     },
-    "rs6": -35.6,
-    "vol_ratio": 0.96
+    "rs6": -36.8,
+    "vol_ratio": 1.01
    },
    "flags": [
     "200-Tage-Linie faellt steil"
@@ -7253,8 +7385,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 41.5,
-    "momentum": 1.7,
+    "turnaround": 42.8,
+    "momentum": 3.1,
     "value": 38.3
    },
    "why": {
@@ -7273,25 +7405,25 @@
    "index": "DAX",
    "sector": "Basic Materials",
    "metrics": {
-    "last": 60.06,
-    "dd_ath": -22.6,
+    "last": 59.84,
+    "dd_ath": -22.9,
     "days_since_ath": 902,
-    "range_pos": 78.9,
+    "range_pos": 77.9,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 2.81,
-    "sma200_slope": 2.46,
+    "sma50_slope": 3.37,
+    "sma200_slope": 2.63,
     "higher_low": true,
-    "rsi14": 48.1,
+    "rsi14": 46.5,
     "rsi_min60": 32.9,
     "perf": {
-     "m1": 0.9,
-     "m3": 5.5,
-     "m6": 8.0,
-     "m12": 15.5
+     "m1": 1.3,
+     "m3": 4.8,
+     "m6": 14.4,
+     "m12": 14.6
     },
-    "rs6": 4.3,
-    "vol_ratio": 1.05
+    "rs6": 10.4,
+    "vol_ratio": 0.95
    },
    "flags": [],
    "earnings_in": null,
@@ -7305,8 +7437,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 75.9,
-    "momentum": 47.1,
+    "turnaround": 74.4,
+    "momentum": 49.1,
     "value": 63.5
    },
    "why": {
@@ -7332,25 +7464,25 @@
    "index": "DAX",
    "sector": "Financial Services",
    "metrics": {
-    "last": 38.69,
-    "dd_ath": -2.9,
+    "last": 38.86,
+    "dd_ath": -2.5,
     "days_since_ath": 7,
-    "range_pos": 89.5,
+    "range_pos": 91.0,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 2.38,
+    "sma50_slope": 2.39,
     "sma200_slope": 2.58,
     "higher_low": true,
-    "rsi14": 51.2,
+    "rsi14": 52.5,
     "rsi_min60": 42.7,
     "perf": {
-     "m1": 0.7,
-     "m3": 3.7,
-     "m6": 15.6,
-     "m12": 5.2
+     "m1": 1.1,
+     "m3": 4.1,
+     "m6": 16.1,
+     "m12": 5.7
     },
-    "rs6": 11.9,
-    "vol_ratio": 0.71
+    "rs6": 12.2,
+    "vol_ratio": 0.72
    },
    "flags": [],
    "earnings_in": null,
@@ -7365,7 +7497,7 @@
    "revision_note": null,
    "scores": {
     "turnaround": 50.5,
-    "momentum": 74.4,
+    "momentum": 75.2,
     "value": 52.4
    },
    "why": {
@@ -7375,7 +7507,7 @@
      "50-Tage-Linie dreht nach oben"
     ],
     "momentum": [
-     "nur 3% unter ATH",
+     "nur 2% unter ATH",
      "ueber 50- und 200-Tage-Linie",
      "200-Tage-Linie steigt"
     ],
@@ -7390,24 +7522,24 @@
    "index": "DAX",
    "sector": "Consumer Cyclical",
    "metrics": {
-    "last": 68.16,
-    "dd_ath": -43.7,
+    "last": 68.08,
+    "dd_ath": -43.8,
     "days_since_ath": 3145,
-    "range_pos": 68.0,
+    "range_pos": 67.6,
     "above_sma50": false,
     "above_sma200": true,
-    "sma50_slope": 0.36,
-    "sma200_slope": 1.74,
+    "sma50_slope": 0.29,
+    "sma200_slope": 1.83,
     "higher_low": true,
-    "rsi14": 43.3,
-    "rsi_min60": 38.5,
+    "rsi14": 43.1,
+    "rsi_min60": 38.7,
     "perf": {
-     "m1": -4.2,
-     "m3": -0.7,
-     "m6": -3.1,
-     "m12": 24.2
+     "m1": -5.2,
+     "m3": 3.2,
+     "m6": -3.5,
+     "m12": 23.0
     },
-    "rs6": -6.8,
+    "rs6": -7.5,
     "vol_ratio": 1.01
    },
    "flags": [
@@ -7424,8 +7556,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 59.1,
-    "momentum": 18.2,
+    "turnaround": 58.9,
+    "momentum": 18.3,
     "value": 37.4
    },
    "why": {
@@ -7444,25 +7576,25 @@
    "index": "DAX",
    "sector": "Industrials",
    "metrics": {
-    "last": 45.4,
-    "dd_ath": -8.5,
+    "last": 45.6,
+    "dd_ath": -8.1,
     "days_since_ath": 17,
-    "range_pos": 75.6,
+    "range_pos": 76.7,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 5.47,
-    "sma200_slope": 3.45,
+    "sma50_slope": 5.43,
+    "sma200_slope": 3.47,
     "higher_low": true,
-    "rsi14": 49.4,
+    "rsi14": 50.7,
     "rsi_min60": 44.7,
     "perf": {
-     "m1": 6.8,
-     "m3": 13.9,
-     "m6": 13.3,
-     "m12": 16.7
+     "m1": 5.5,
+     "m3": 14.8,
+     "m6": 12.6,
+     "m12": 14.8
     },
-    "rs6": 9.5,
-    "vol_ratio": 0.96
+    "rs6": 8.7,
+    "vol_ratio": 0.94
    },
    "flags": [],
    "earnings_in": null,
@@ -7476,8 +7608,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 53.5,
-    "momentum": 65.6,
+    "turnaround": 53.0,
+    "momentum": 65.2,
     "value": 57.7
    },
    "why": {
@@ -7502,22 +7634,22 @@
    "index": "DAX",
    "sector": "Financial Services",
    "metrics": {
-    "last": 32.53,
-    "dd_ath": -2.6,
+    "last": 32.6,
+    "dd_ath": -2.4,
     "days_since_ath": 6,
-    "range_pos": 90.9,
+    "range_pos": 91.7,
     "above_sma50": true,
     "above_sma200": true,
     "sma50_slope": 7.09,
     "sma200_slope": 1.22,
     "higher_low": true,
-    "rsi14": 54.7,
+    "rsi14": 55.7,
     "rsi_min60": 45.8,
     "perf": {
-     "m1": 4.2,
-     "m3": 15.1,
-     "m6": 8.6,
-     "m12": 6.8
+     "m1": 4.4,
+     "m3": 15.4,
+     "m6": 8.8,
+     "m12": 7.0
     },
     "rs6": 4.9,
     "vol_ratio": 1.11
@@ -7535,7 +7667,7 @@
    "revision_note": null,
    "scores": {
     "turnaround": 57.2,
-    "momentum": 71.6,
+    "momentum": 71.9,
     "value": 50.6
    },
    "why": {
@@ -7545,7 +7677,7 @@
      "50-Tage-Linie dreht nach oben"
     ],
     "momentum": [
-     "nur 3% unter ATH",
+     "nur 2% unter ATH",
      "ueber 50- und 200-Tage-Linie"
     ],
     "value": [
@@ -7558,25 +7690,25 @@
    "index": "DAX",
    "sector": "Financial Services",
    "metrics": {
-    "last": 278.1,
-    "dd_ath": -2.0,
+    "last": 277.5,
+    "dd_ath": -2.3,
     "days_since_ath": 472,
-    "range_pos": 98.6,
+    "range_pos": 97.9,
     "above_sma50": true,
     "above_sma200": true,
     "sma50_slope": 3.33,
-    "sma200_slope": 2.14,
+    "sma200_slope": 2.1,
     "higher_low": true,
-    "rsi14": 66.4,
+    "rsi14": 65.5,
     "rsi_min60": 35.9,
     "perf": {
-     "m1": 9.6,
-     "m3": 8.4,
-     "m6": 28.7,
-     "m12": 9.6
+     "m1": 9.9,
+     "m3": 7.6,
+     "m6": 30.1,
+     "m12": 10.8
     },
-    "rs6": 25.0,
-    "vol_ratio": 0.92
+    "rs6": 26.2,
+    "vol_ratio": 0.97
    },
    "flags": [],
    "earnings_in": null,
@@ -7590,8 +7722,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 51.8,
-    "momentum": 85.9,
+    "turnaround": 53.5,
+    "momentum": 86.9,
     "value": 78.1
    },
    "why": {
@@ -7602,7 +7734,7 @@
     ],
     "momentum": [
      "nur 2% unter ATH",
-     "relative Staerke +25% vs. Index",
+     "relative Staerke +26% vs. Index",
      "ueber 50- und 200-Tage-Linie"
     ],
     "value": [
@@ -7617,24 +7749,24 @@
    "index": "DAX",
    "sector": "Industrials",
    "metrics": {
-    "last": 55.4,
-    "dd_ath": -4.2,
+    "last": 55.54,
+    "dd_ath": -3.9,
     "days_since_ath": 21,
-    "range_pos": 88.9,
+    "range_pos": 89.5,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 4.37,
+    "sma50_slope": 4.38,
     "sma200_slope": 4.0,
     "higher_low": true,
-    "rsi14": 47.9,
+    "rsi14": 49.1,
     "rsi_min60": 40.0,
     "perf": {
-     "m1": -2.9,
-     "m3": 10.2,
-     "m6": 15.7,
-     "m12": 42.5
+     "m1": -2.7,
+     "m3": 10.5,
+     "m6": 16.0,
+     "m12": 42.8
     },
-    "rs6": 11.9,
+    "rs6": 12.0,
     "vol_ratio": 0.89
    },
    "flags": [],
@@ -7650,7 +7782,7 @@
    "revision_note": null,
    "scores": {
     "turnaround": 52.0,
-    "momentum": 76.3,
+    "momentum": 76.9,
     "value": 69.1
    },
    "why": {
@@ -7676,24 +7808,24 @@
    "index": "DAX",
    "sector": "Communication Services",
    "metrics": {
-    "last": 28.9,
-    "dd_ath": -14.3,
+    "last": 28.84,
+    "dd_ath": -14.5,
     "days_since_ath": 535,
-    "range_pos": 55.1,
+    "range_pos": 54.4,
     "above_sma50": true,
     "above_sma200": true,
     "sma50_slope": -0.81,
-    "sma200_slope": -0.02,
+    "sma200_slope": -0.11,
     "higher_low": true,
-    "rsi14": 58.4,
+    "rsi14": 58.0,
     "rsi_min60": 21.4,
     "perf": {
-     "m1": 6.1,
-     "m3": -1.9,
-     "m6": -8.8,
-     "m12": -5.6
+     "m1": 8.1,
+     "m3": -1.0,
+     "m6": -8.0,
+     "m12": -4.7
     },
-    "rs6": -12.5,
+    "rs6": -12.0,
     "vol_ratio": 0.81
    },
    "flags": [],
@@ -7709,7 +7841,7 @@
    "revision_note": null,
    "scores": {
     "turnaround": 55.5,
-    "momentum": 31.6,
+    "momentum": 31.4,
     "value": 59.3
    },
    "why": {
@@ -7732,25 +7864,25 @@
    "index": "DAX",
    "sector": "Utilities",
    "metrics": {
-    "last": 17.31,
-    "dd_ath": -12.2,
+    "last": 17.33,
+    "dd_ath": -12.0,
     "days_since_ath": 156,
-    "range_pos": 55.8,
+    "range_pos": 56.3,
     "above_sma50": false,
     "above_sma200": false,
-    "sma50_slope": 0.95,
-    "sma200_slope": 1.71,
+    "sma50_slope": 0.72,
+    "sma200_slope": 1.64,
     "higher_low": false,
-    "rsi14": 30.9,
+    "rsi14": 31.2,
     "rsi_min60": 29.8,
     "perf": {
      "m1": -10.0,
-     "m3": -5.6,
-     "m6": -4.3,
-     "m12": 13.1
+     "m3": -6.3,
+     "m6": -3.9,
+     "m12": 13.8
     },
-    "rs6": -8.1,
-    "vol_ratio": 0.94
+    "rs6": -7.8,
+    "vol_ratio": 0.93
    },
    "flags": [
     "fallender Umsatz bei hoher Verschuldung"
@@ -7766,8 +7898,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 11.1,
-    "momentum": 19.3,
+    "turnaround": 10.3,
+    "momentum": 19.1,
     "value": 23.5
    },
    "why": {
@@ -7781,25 +7913,25 @@
    "index": "DAX",
    "sector": "Healthcare",
    "metrics": {
-    "last": 46.26,
-    "dd_ath": -30.3,
+    "last": 46.17,
+    "dd_ath": -30.5,
     "days_since_ath": 3349,
-    "range_pos": 70.9,
+    "range_pos": 70.3,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 8.32,
-    "sma200_slope": -0.26,
+    "sma50_slope": 8.52,
+    "sma200_slope": -0.27,
     "higher_low": true,
-    "rsi14": 62.2,
+    "rsi14": 60.8,
     "rsi_min60": 29.2,
     "perf": {
-     "m1": 10.9,
-     "m3": 18.4,
-     "m6": -8.8,
-     "m12": 2.0
+     "m1": 4.9,
+     "m3": 18.9,
+     "m6": -8.4,
+     "m12": 1.7
     },
-    "rs6": -12.5,
-    "vol_ratio": 1.08
+    "rs6": -12.4,
+    "vol_ratio": 1.09
    },
    "flags": [],
    "earnings_in": null,
@@ -7813,8 +7945,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 90.5,
-    "momentum": 28.8,
+    "turnaround": 90.9,
+    "momentum": 28.9,
     "value": 63.2
    },
    "why": {
@@ -7839,25 +7971,25 @@
    "index": "DAX",
    "sector": "Financial Services",
    "metrics": {
-    "last": 249.0,
-    "dd_ath": -8.0,
+    "last": 248.6,
+    "dd_ath": -8.1,
     "days_since_ath": 440,
-    "range_pos": 62.0,
+    "range_pos": 61.0,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 2.75,
-    "sma200_slope": 0.27,
+    "sma50_slope": 2.82,
+    "sma200_slope": 0.28,
     "higher_low": true,
-    "rsi14": 47.7,
+    "rsi14": 47.0,
     "rsi_min60": 27.9,
     "perf": {
-     "m1": -2.4,
-     "m3": 0.6,
-     "m6": 5.6,
-     "m12": 4.0
+     "m1": 0.6,
+     "m3": 2.1,
+     "m6": 6.5,
+     "m12": 3.2
     },
-    "rs6": 1.8,
-    "vol_ratio": 0.94
+    "rs6": 2.6,
+    "vol_ratio": 0.93
    },
    "flags": [],
    "earnings_in": null,
@@ -7871,7 +8003,7 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 63.6,
+    "turnaround": 63.8,
     "momentum": 46.6,
     "value": 69.3
    },
@@ -7897,25 +8029,25 @@
    "index": "DAX",
    "sector": "Basic Materials",
    "metrics": {
-    "last": 158.4,
-    "dd_ath": -32.4,
+    "last": 158.55,
+    "dd_ath": -32.3,
     "days_since_ath": 205,
-    "range_pos": 3.7,
+    "range_pos": 3.9,
     "above_sma50": false,
     "above_sma200": false,
-    "sma50_slope": -3.46,
-    "sma200_slope": -1.56,
+    "sma50_slope": -3.57,
+    "sma200_slope": -1.46,
     "higher_low": false,
-    "rsi14": 37.8,
-    "rsi_min60": 30.1,
+    "rsi14": 38.1,
+    "rsi_min60": 30.5,
     "perf": {
-     "m1": -7.4,
-     "m3": -12.5,
-     "m6": -21.5,
-     "m12": -19.7
+     "m1": -7.2,
+     "m3": -8.0,
+     "m6": -20.7,
+     "m12": -22.1
     },
-    "rs6": -25.2,
-    "vol_ratio": 0.77
+    "rs6": -24.7,
+    "vol_ratio": 0.86
    },
    "flags": [],
    "earnings_in": null,
@@ -7929,7 +8061,7 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 28.6,
+    "turnaround": 28.8,
     "momentum": 0.0,
     "value": 58.5
    },
@@ -7949,24 +8081,24 @@
    "index": "DAX",
    "sector": "Consumer Defensive",
    "metrics": {
-    "last": 75.28,
-    "dd_ath": -27.0,
+    "last": 75.42,
+    "dd_ath": -26.9,
     "days_since_ath": 3349,
-    "range_pos": 69.7,
+    "range_pos": 70.4,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 5.74,
-    "sma200_slope": 1.16,
+    "sma50_slope": 6.01,
+    "sma200_slope": 1.15,
     "higher_low": true,
-    "rsi14": 47.5,
-    "rsi_min60": 45.2,
+    "rsi14": 48.5,
+    "rsi_min60": 45.6,
     "perf": {
-     "m1": 0.5,
-     "m3": 13.0,
-     "m6": -5.9,
-     "m12": 6.0
+     "m1": 0.8,
+     "m3": 15.1,
+     "m6": -6.2,
+     "m12": 7.3
     },
-    "rs6": -9.6,
+    "rs6": -10.1,
     "vol_ratio": 1.0
    },
    "flags": [],
@@ -7981,8 +8113,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 75.8,
-    "momentum": 29.0,
+    "turnaround": 75.5,
+    "momentum": 29.2,
     "value": 60.5
    },
    "why": {
@@ -8006,25 +8138,25 @@
    "index": "DAX",
    "sector": "Technology",
    "metrics": {
-    "last": 54.93,
-    "dd_ath": -37.6,
+    "last": 55.18,
+    "dd_ath": -37.3,
     "days_since_ath": 79,
-    "range_pos": 41.9,
+    "range_pos": 42.4,
     "above_sma50": false,
     "above_sma200": true,
-    "sma50_slope": -6.85,
-    "sma200_slope": 5.75,
+    "sma50_slope": -7.68,
+    "sma200_slope": 5.58,
     "higher_low": true,
-    "rsi14": 33.5,
+    "rsi14": 34.1,
     "rsi_min60": 29.0,
     "perf": {
-     "m1": -13.7,
-     "m3": -19.1,
-     "m6": 24.2,
-     "m12": 51.0
+     "m1": -18.3,
+     "m3": -18.9,
+     "m6": 20.6,
+     "m12": 50.3
     },
-    "rs6": 20.4,
-    "vol_ratio": 0.95
+    "rs6": 16.7,
+    "vol_ratio": 0.9
    },
    "flags": [],
    "earnings_in": null,
@@ -8038,17 +8170,17 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 52.9,
-    "momentum": 40.6,
+    "turnaround": 51.9,
+    "momentum": 36.1,
     "value": 67.5
    },
    "why": {
     "turnaround": [
-     "-38% unter ATH",
+     "-37% unter ATH",
      "hoeheres Tief"
     ],
     "momentum": [
-     "relative Staerke +20% vs. Index",
+     "relative Staerke +17% vs. Index",
      "200-Tage-Linie steigt"
     ],
     "value": [
@@ -8063,25 +8195,25 @@
    "index": "DAX",
    "sector": "Consumer Cyclical",
    "metrics": {
-    "last": 44.76,
-    "dd_ath": -26.8,
+    "last": 44.79,
+    "dd_ath": -26.7,
     "days_since_ath": 864,
-    "range_pos": 11.4,
+    "range_pos": 11.6,
     "above_sma50": false,
     "above_sma200": false,
-    "sma50_slope": -3.6,
-    "sma200_slope": -0.82,
+    "sma50_slope": -3.49,
+    "sma200_slope": -0.83,
     "higher_low": true,
-    "rsi14": 40.6,
+    "rsi14": 40.7,
     "rsi_min60": 29.1,
     "perf": {
-     "m1": -1.6,
-     "m3": -10.5,
-     "m6": -18.6,
-     "m12": -9.3
+     "m1": -0.2,
+     "m3": -10.0,
+     "m6": -19.3,
+     "m12": -11.5
     },
-    "rs6": -22.3,
-    "vol_ratio": 1.03
+    "rs6": -23.2,
+    "vol_ratio": 0.98
    },
    "flags": [],
    "earnings_in": null,
@@ -8095,8 +8227,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 61.1,
-    "momentum": 3.7,
+    "turnaround": 59.8,
+    "momentum": 2.3,
     "value": 32.9
    },
    "why": {
@@ -8116,25 +8248,25 @@
    "index": "DAX",
    "sector": "Healthcare",
    "metrics": {
-    "last": 136.4,
-    "dd_ath": -35.8,
+    "last": 135.25,
+    "dd_ath": -36.3,
     "days_since_ath": 1696,
-    "range_pos": 76.2,
+    "range_pos": 73.8,
     "above_sma50": false,
     "above_sma200": true,
-    "sma50_slope": 4.1,
-    "sma200_slope": 2.27,
+    "sma50_slope": 3.71,
+    "sma200_slope": 2.29,
     "higher_low": true,
-    "rsi14": 40.1,
-    "rsi_min60": 39.5,
+    "rsi14": 39.0,
+    "rsi_min60": 39.0,
     "perf": {
-     "m1": 0.1,
-     "m3": 11.1,
-     "m6": 9.6,
-     "m12": 25.6
+     "m1": 0.7,
+     "m3": 7.0,
+     "m6": 7.3,
+     "m12": 24.3
     },
-    "rs6": 5.8,
-    "vol_ratio": 1.05
+    "rs6": 3.4,
+    "vol_ratio": 1.06
    },
    "flags": [],
    "earnings_in": null,
@@ -8149,7 +8281,7 @@
    "revision_note": null,
    "scores": {
     "turnaround": 63.5,
-    "momentum": 32.4,
+    "momentum": 29.9,
     "value": 62.8
    },
    "why": {
@@ -8170,25 +8302,25 @@
    "index": "DAX",
    "sector": "Industrials",
    "metrics": {
-    "last": 363.0,
-    "dd_ath": -8.7,
+    "last": 365.4,
+    "dd_ath": -8.1,
     "days_since_ath": 181,
-    "range_pos": 72.3,
+    "range_pos": 74.2,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 8.52,
-    "sma200_slope": -0.27,
+    "sma50_slope": 8.62,
+    "sma200_slope": -0.35,
     "higher_low": true,
-    "rsi14": 48.6,
-    "rsi_min60": 41.8,
+    "rsi14": 50.8,
+    "rsi_min60": 42.9,
     "perf": {
-     "m1": 6.5,
-     "m3": 15.6,
-     "m6": -8.7,
-     "m12": -3.6
+     "m1": 8.7,
+     "m3": 27.2,
+     "m6": -7.6,
+     "m12": -4.3
     },
-    "rs6": -12.4,
-    "vol_ratio": 1.11
+    "rs6": -11.5,
+    "vol_ratio": 1.13
    },
    "flags": [],
    "earnings_in": null,
@@ -8202,8 +8334,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 57.9,
-    "momentum": 47.8,
+    "turnaround": 58.0,
+    "momentum": 49.7,
     "value": 79.2
    },
    "why": {
@@ -8213,7 +8345,7 @@
      "50-Tage-Linie dreht nach oben"
     ],
     "momentum": [
-     "nur 9% unter ATH",
+     "nur 8% unter ATH",
      "ueber 50- und 200-Tage-Linie"
     ],
     "value": [
@@ -8228,25 +8360,25 @@
    "index": "DAX",
    "sector": "Financial Services",
    "metrics": {
-    "last": 510.0,
-    "dd_ath": -12.1,
+    "last": 510.2,
+    "dd_ath": -12.0,
     "days_since_ath": 378,
-    "range_pos": 65.9,
+    "range_pos": 66.1,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 4.49,
-    "sma200_slope": -0.28,
+    "sma50_slope": 4.58,
+    "sma200_slope": -0.26,
     "higher_low": true,
-    "rsi14": 48.9,
+    "rsi14": 48.8,
     "rsi_min60": 25.9,
     "perf": {
-     "m1": -1.1,
-     "m3": 5.0,
-     "m6": -0.4,
-     "m12": -4.1
+     "m1": 1.6,
+     "m3": 7.6,
+     "m6": 0.5,
+     "m12": -3.9
     },
-    "rs6": -4.1,
-    "vol_ratio": 0.99
+    "rs6": -3.4,
+    "vol_ratio": 0.98
    },
    "flags": [],
    "earnings_in": null,
@@ -8260,8 +8392,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 64.5,
-    "momentum": 39.3,
+    "turnaround": 64.2,
+    "momentum": 39.8,
     "value": 60.0
    },
    "why": {
@@ -8284,25 +8416,25 @@
    "index": "DAX",
    "sector": "Consumer Cyclical",
    "metrics": {
-    "last": 27.77,
+    "last": 27.79,
     "dd_ath": -64.2,
     "days_since_ath": 1900,
-    "range_pos": 6.7,
+    "range_pos": 6.9,
     "above_sma50": false,
     "above_sma200": false,
-    "sma50_slope": -2.36,
-    "sma200_slope": -1.32,
+    "sma50_slope": -2.66,
+    "sma200_slope": -1.33,
     "higher_low": true,
-    "rsi14": 45.5,
+    "rsi14": 45.8,
     "rsi_min60": 26.0,
     "perf": {
-     "m1": -0.1,
-     "m3": -9.7,
-     "m6": -20.5,
-     "m12": -21.7
+     "m1": 1.4,
+     "m3": -8.0,
+     "m6": -19.1,
+     "m12": -21.1
     },
-    "rs6": -24.2,
-    "vol_ratio": 1.07
+    "rs6": -23.1,
+    "vol_ratio": 1.13
    },
    "flags": [],
    "earnings_in": null,
@@ -8316,8 +8448,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 53.6,
-    "momentum": 4.9,
+    "turnaround": 55.2,
+    "momentum": 6.6,
     "value": 35.0
    },
    "why": {
@@ -8336,24 +8468,24 @@
    "index": "DAX",
    "sector": "Consumer Cyclical",
    "metrics": {
-    "last": 44.96,
-    "dd_ath": -58.1,
+    "last": 45.08,
+    "dd_ath": -58.0,
     "days_since_ath": 1186,
-    "range_pos": 71.5,
-    "above_sma50": false,
+    "range_pos": 72.4,
+    "above_sma50": true,
     "above_sma200": true,
     "sma50_slope": -1.52,
     "sma200_slope": 0.24,
     "higher_low": true,
-    "rsi14": 53.5,
+    "rsi14": 54.2,
     "rsi_min60": 33.4,
     "perf": {
-     "m1": -2.6,
-     "m3": -1.0,
-     "m6": 8.5,
-     "m12": -1.3
+     "m1": -2.3,
+     "m3": -0.7,
+     "m6": 8.8,
+     "m12": -1.0
     },
-    "rs6": 4.8,
+    "rs6": 4.9,
     "vol_ratio": 0.81
    },
    "flags": [],
@@ -8368,17 +8500,20 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 57.0,
-    "momentum": 20.6,
+    "turnaround": 71.9,
+    "momentum": 33.0,
     "value": 50.1
    },
    "why": {
     "turnaround": [
      "-58% unter ATH",
      "hoeheres Tief",
+     "ueber 50-Tage-Linie",
      "RSI erholt sich aus dem ueberverkauften Bereich"
     ],
-    "momentum": [],
+    "momentum": [
+     "ueber 50- und 200-Tage-Linie"
+    ],
     "value": [
      "erwartetes KGV unter aktuellem",
      "positiver Free Cashflow"
@@ -8390,24 +8525,24 @@
    "index": "DAX",
    "sector": "Healthcare",
    "metrics": {
-    "last": 38.08,
+    "last": 38.06,
     "dd_ath": -22.6,
     "days_since_ath": 1728,
-    "range_pos": 56.6,
+    "range_pos": 56.5,
     "above_sma50": true,
     "above_sma200": true,
     "sma50_slope": 7.69,
     "sma200_slope": -0.97,
     "higher_low": true,
-    "rsi14": 61.8,
+    "rsi14": 61.7,
     "rsi_min60": 49.1,
     "perf": {
-     "m1": 7.4,
-     "m3": 25.8,
-     "m6": -6.1,
+     "m1": 7.3,
+     "m3": 25.7,
+     "m6": -6.2,
      "m12": -9.0
     },
-    "rs6": -9.8,
+    "rs6": -10.1,
     "vol_ratio": 1.21
    },
    "flags": [],
@@ -8447,24 +8582,24 @@
    "index": "DAX",
    "sector": "Industrials",
    "metrics": {
-    "last": 1164.4,
-    "dd_ath": -40.9,
+    "last": 1175.8,
+    "dd_ath": -40.3,
     "days_since_ath": 325,
-    "range_pos": 21.3,
+    "range_pos": 22.4,
     "above_sma50": true,
     "above_sma200": false,
-    "sma50_slope": -2.28,
-    "sma200_slope": -4.42,
+    "sma50_slope": -2.07,
+    "sma200_slope": -4.28,
     "higher_low": true,
-    "rsi14": 55.0,
+    "rsi14": 57.1,
     "rsi_min60": 24.0,
     "perf": {
-     "m1": 18.3,
-     "m3": -5.6,
-     "m6": -27.0,
-     "m12": -28.6
+     "m1": 18.1,
+     "m3": -2.8,
+     "m6": -29.9,
+     "m12": -24.3
     },
-    "rs6": -30.7,
+    "rs6": -33.8,
     "vol_ratio": 1.0
    },
    "flags": [
@@ -8487,7 +8622,7 @@
    },
    "why": {
     "turnaround": [
-     "-41% unter ATH",
+     "-40% unter ATH",
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
      "RSI erholt sich aus dem ueberverkauften Bereich"
@@ -8505,25 +8640,25 @@
    "index": "DAX",
    "sector": "Utilities",
    "metrics": {
-    "last": 57.44,
-    "dd_ath": -5.5,
+    "last": 57.34,
+    "dd_ath": -5.7,
     "days_since_ath": 112,
-    "range_pos": 87.9,
+    "range_pos": 87.5,
     "above_sma50": true,
     "above_sma200": true,
     "sma50_slope": 0.86,
-    "sma200_slope": 3.46,
+    "sma200_slope": 3.4,
     "higher_low": true,
-    "rsi14": 51.0,
+    "rsi14": 50.5,
     "rsi_min60": 37.4,
     "perf": {
-     "m1": 2.6,
-     "m3": 1.4,
-     "m6": 13.3,
-     "m12": 66.5
+     "m1": -1.5,
+     "m3": 1.5,
+     "m6": 10.9,
+     "m12": 65.8
     },
-    "rs6": 9.6,
-    "vol_ratio": 1.42
+    "rs6": 6.9,
+    "vol_ratio": 1.33
    },
    "flags": [],
    "earnings_in": null,
@@ -8538,7 +8673,7 @@
    "revision_note": null,
    "scores": {
     "turnaround": 56.6,
-    "momentum": 81.3,
+    "momentum": 78.6,
     "value": 37.4
    },
    "why": {
@@ -8560,25 +8695,25 @@
    "index": "DAX",
    "sector": "Technology",
    "metrics": {
-    "last": 183.1,
-    "dd_ath": -33.0,
+    "last": 184.16,
+    "dd_ath": -32.6,
     "days_since_ath": 553,
-    "range_pos": 50.0,
+    "range_pos": 50.9,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 3.57,
-    "sma200_slope": -3.67,
+    "sma50_slope": 4.16,
+    "sma200_slope": -3.51,
     "higher_low": false,
-    "rsi14": 72.2,
+    "rsi14": 71.0,
     "rsi_min60": 34.6,
     "perf": {
-     "m1": 32.8,
-     "m3": 19.3,
-     "m6": 9.8,
-     "m12": -21.3
+     "m1": 35.0,
+     "m3": 22.0,
+     "m6": 8.0,
+     "m12": -20.9
     },
-    "rs6": 6.0,
-    "vol_ratio": 1.02
+    "rs6": 4.1,
+    "vol_ratio": 1.06
    },
    "flags": [],
    "earnings_in": null,
@@ -8592,8 +8727,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 61.6,
-    "momentum": 32.6,
+    "turnaround": 63.2,
+    "momentum": 32.2,
     "value": 75.1
    },
    "why": {
@@ -8617,25 +8752,25 @@
    "index": "DAX",
    "sector": "Healthcare",
    "metrics": {
-    "last": 247.7,
+    "last": 247.3,
     "dd_ath": -58.6,
     "days_since_ath": 1724,
-    "range_pos": 78.3,
+    "range_pos": 77.7,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": -0.26,
+    "sma50_slope": -0.36,
     "sma200_slope": 0.14,
     "higher_low": true,
-    "rsi14": 62.3,
+    "rsi14": 62.6,
     "rsi_min60": 35.0,
     "perf": {
-     "m1": 1.8,
-     "m3": 8.6,
-     "m6": 10.2,
-     "m12": 27.9
+     "m1": 13.9,
+     "m3": 5.1,
+     "m6": 6.5,
+     "m12": 26.0
     },
-    "rs6": 6.5,
-    "vol_ratio": 1.01
+    "rs6": 2.6,
+    "vol_ratio": 0.98
    },
    "flags": [],
    "earnings_in": null,
@@ -8649,8 +8784,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 67.1,
-    "momentum": 39.2,
+    "turnaround": 66.1,
+    "momentum": 34.9,
     "value": 48.1
    },
    "why": {
@@ -8673,25 +8808,25 @@
    "index": "DAX",
    "sector": "Industrials",
    "metrics": {
-    "last": 274.9,
-    "dd_ath": -4.4,
+    "last": 276.0,
+    "dd_ath": -4.0,
     "days_since_ath": 16,
-    "range_pos": 85.0,
+    "range_pos": 86.3,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 1.34,
-    "sma200_slope": 1.64,
+    "sma50_slope": 1.67,
+    "sma200_slope": 1.65,
     "higher_low": true,
-    "rsi14": 47.5,
+    "rsi14": 48.3,
     "rsi_min60": 43.7,
     "perf": {
-     "m1": 3.9,
-     "m3": 4.1,
-     "m6": 16.6,
-     "m12": 20.2
+     "m1": 1.8,
+     "m3": -0.3,
+     "m6": 12.6,
+     "m12": 20.6
     },
-    "rs6": 12.9,
-    "vol_ratio": 1.02
+    "rs6": 8.6,
+    "vol_ratio": 1.0
    },
    "flags": [],
    "earnings_in": null,
@@ -8705,14 +8840,15 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 50.9,
-    "momentum": 73.2,
+    "turnaround": 51.2,
+    "momentum": 69.9,
     "value": 63.6
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
-     "ueber 50-Tage-Linie"
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben"
     ],
     "momentum": [
      "nur 4% unter ATH",
@@ -8729,24 +8865,24 @@
    "index": "DAX",
    "sector": "Industrials",
    "metrics": {
-    "last": 153.54,
-    "dd_ath": -18.2,
+    "last": 153.92,
+    "dd_ath": -18.0,
     "days_since_ath": 118,
-    "range_pos": 67.1,
+    "range_pos": 67.5,
     "above_sma50": false,
     "above_sma200": true,
-    "sma50_slope": -4.07,
-    "sma200_slope": 3.37,
+    "sma50_slope": -3.0,
+    "sma200_slope": 3.35,
     "higher_low": false,
-    "rsi14": 48.3,
+    "rsi14": 48.9,
     "rsi_min60": 25.9,
     "perf": {
-     "m1": 4.0,
-     "m3": -11.9,
-     "m6": -4.3,
-     "m12": 59.3
+     "m1": 1.1,
+     "m3": -15.1,
+     "m6": -6.5,
+     "m12": 66.2
     },
-    "rs6": -8.0,
+    "rs6": -10.4,
     "vol_ratio": 0.83
    },
    "flags": [],
@@ -8761,8 +8897,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 22.3,
-    "momentum": 26.2,
+    "turnaround": 21.9,
+    "momentum": 26.5,
     "value": 75.8
    },
    "why": {
@@ -8784,25 +8920,25 @@
    "index": "DAX",
    "sector": "Healthcare",
    "metrics": {
-    "last": 39.87,
-    "dd_ath": -34.9,
+    "last": 39.9,
+    "dd_ath": -34.8,
     "days_since_ath": 1715,
-    "range_pos": 43.2,
+    "range_pos": 43.4,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 4.28,
-    "sma200_slope": -2.28,
+    "sma50_slope": 4.6,
+    "sma200_slope": -2.23,
     "higher_low": true,
-    "rsi14": 68.8,
+    "rsi14": 67.7,
     "rsi_min60": 37.3,
     "perf": {
-     "m1": 13.5,
-     "m3": 16.5,
-     "m6": -2.4,
-     "m12": -13.6
+     "m1": 15.4,
+     "m3": 13.6,
+     "m6": -5.8,
+     "m12": -14.5
     },
-    "rs6": -6.1,
-    "vol_ratio": 0.98
+    "rs6": -9.7,
+    "vol_ratio": 0.91
    },
    "flags": [],
    "earnings_in": null,
@@ -8816,8 +8952,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 82.2,
-    "momentum": 22.3,
+    "turnaround": 81.0,
+    "momentum": 20.3,
     "value": 59.3
    },
    "why": {
@@ -8841,25 +8977,25 @@
    "index": "DAX",
    "sector": "Basic Materials",
    "metrics": {
-    "last": 88.36,
+    "last": 88.4,
     "dd_ath": -28.7,
     "days_since_ath": 1732,
-    "range_pos": 86.4,
+    "range_pos": 86.6,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 5.91,
-    "sma200_slope": 1.74,
+    "sma50_slope": 5.34,
+    "sma200_slope": 1.81,
     "higher_low": true,
     "rsi14": 48.8,
-    "rsi_min60": 40.4,
+    "rsi_min60": 39.6,
     "perf": {
-     "m1": -0.3,
-     "m3": 16.7,
-     "m6": 20.3,
-     "m12": 11.3
+     "m1": 0.5,
+     "m3": 10.9,
+     "m6": 18.5,
+     "m12": 7.8
     },
-    "rs6": 16.6,
-    "vol_ratio": 1.05
+    "rs6": 14.6,
+    "vol_ratio": 1.03
    },
    "flags": [],
    "earnings_in": null,
@@ -8873,8 +9009,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 78.6,
-    "momentum": 55.4,
+    "turnaround": 78.1,
+    "momentum": 53.4,
     "value": 51.8
    },
    "why": {
@@ -8885,7 +9021,7 @@
      "50-Tage-Linie dreht nach oben"
     ],
     "momentum": [
-     "relative Staerke +17% vs. Index",
+     "relative Staerke +15% vs. Index",
      "ueber 50- und 200-Tage-Linie"
     ],
     "value": [
@@ -8899,25 +9035,25 @@
    "index": "DAX",
    "sector": "Consumer Cyclical",
    "metrics": {
-    "last": 74.64,
-    "dd_ath": -49.8,
+    "last": 75.12,
+    "dd_ath": -49.5,
     "days_since_ath": 1962,
-    "range_pos": 14.7,
-    "above_sma50": false,
+    "range_pos": 16.3,
+    "above_sma50": true,
     "above_sma200": false,
-    "sma50_slope": -4.58,
+    "sma50_slope": -4.57,
     "sma200_slope": -1.21,
     "higher_low": true,
-    "rsi14": 50.4,
+    "rsi14": 52.2,
     "rsi_min60": 23.6,
     "perf": {
-     "m1": 2.3,
-     "m3": -12.4,
-     "m6": -22.3,
-     "m12": -21.2
+     "m1": 3.0,
+     "m3": -11.9,
+     "m6": -21.8,
+     "m12": -20.7
     },
-    "rs6": -26.0,
-    "vol_ratio": 0.89
+    "rs6": -25.8,
+    "vol_ratio": 0.84
    },
    "flags": [],
    "earnings_in": null,
@@ -8931,7 +9067,7 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 64.8,
+    "turnaround": 80.0,
     "momentum": 0.0,
     "value": 46.7
    },
@@ -8939,6 +9075,7 @@
     "turnaround": [
      "-50% unter ATH",
      "hoeheres Tief",
+     "ueber 50-Tage-Linie",
      "RSI erholt sich aus dem ueberverkauften Bereich"
     ],
     "momentum": [],
@@ -8953,25 +9090,25 @@
    "index": "DAX",
    "sector": "Real Estate",
    "metrics": {
-    "last": 20.05,
-    "dd_ath": -47.2,
+    "last": 20.09,
+    "dd_ath": -47.1,
     "days_since_ath": 2178,
-    "range_pos": 4.7,
+    "range_pos": 5.3,
     "above_sma50": false,
     "above_sma200": false,
-    "sma50_slope": -0.09,
-    "sma200_slope": -2.14,
+    "sma50_slope": 0.22,
+    "sma200_slope": -2.1,
     "higher_low": true,
-    "rsi14": 38.1,
+    "rsi14": 38.5,
     "rsi_min60": 32.9,
     "perf": {
-     "m1": -4.9,
-     "m3": -5.2,
-     "m6": -22.6,
-     "m12": -24.5
+     "m1": -3.6,
+     "m3": -6.8,
+     "m6": -22.5,
+     "m12": -24.1
     },
-    "rs6": -26.3,
-    "vol_ratio": 0.9
+    "rs6": -26.4,
+    "vol_ratio": 0.91
    },
    "flags": [
     "200-Tage-Linie faellt steil"
@@ -8987,8 +9124,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 51.1,
-    "momentum": 0.0,
+    "turnaround": 52.4,
+    "momentum": 0.3,
     "value": 50.2
    },
    "why": {
@@ -9007,24 +9144,24 @@
    "index": "DAX",
    "sector": "Consumer Cyclical",
    "metrics": {
-    "last": 22.4,
-    "dd_ath": -78.6,
+    "last": 22.45,
+    "dd_ath": -78.5,
     "days_since_ath": 1870,
-    "range_pos": 29.7,
+    "range_pos": 30.2,
     "above_sma50": false,
     "above_sma200": false,
-    "sma50_slope": 5.04,
-    "sma200_slope": -0.22,
+    "sma50_slope": 5.05,
+    "sma200_slope": -0.21,
     "higher_low": true,
-    "rsi14": 30.8,
-    "rsi_min60": 30.8,
+    "rsi14": 31.0,
+    "rsi_min60": 31.0,
     "perf": {
-     "m1": -20.6,
-     "m3": 3.1,
-     "m6": 8.3,
-     "m12": -8.0
+     "m1": -20.4,
+     "m3": 3.4,
+     "m6": 8.5,
+     "m12": -7.8
     },
-    "rs6": 4.5,
+    "rs6": 4.6,
     "vol_ratio": 0.75
    },
    "flags": [],
@@ -9039,8 +9176,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 35.4,
-    "momentum": 7.9,
+    "turnaround": 35.5,
+    "momentum": 8.0,
     "value": 63.5
    },
    "why": {
@@ -9057,9 +9194,5 @@
    }
   }
  },
- "missing": [
-  "1COV.DE",
-  "ANSS",
-  "EA"
- ]
+ "missing": []
 }

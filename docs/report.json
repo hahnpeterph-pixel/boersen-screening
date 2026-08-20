@@ -4,25 +4,25 @@
   "turnaround": [
    "ROP",
    "WDAY",
-   "BAYN.DE",
    "FRE.DE",
+   "BAYN.DE",
    "BEI.DE",
    "CRM",
    "DXCM",
    "AXON",
-   "SY1.DE",
+   "VOW3.DE",
    "MELI",
-   "BNR.DE",
+   "SY1.DE",
    "HEN3.DE",
+   "BNR.DE",
    "KHC",
-   "DASH",
-   "SHW"
+   "P911.DE"
   ],
   "momentum": [
    "ALV.DE",
    "MRK",
-   "PANW",
    "DB1.DE",
+   "PANW",
    "ABNB",
    "CRWD",
    "RWE.DE",
@@ -30,10 +30,10 @@
    "DHL.DE",
    "TRV",
    "JNJ",
-   "AMZN",
    "KO",
-   "SIE.DE",
-   "MMM"
+   "AMZN",
+   "MMM",
+   "CVX"
   ],
   "value": [
    "MU",
@@ -57,53 +57,21 @@
   "turnaround": {
    "entries": [
     {
-     "ticker": "SY1.DE",
+     "ticker": "VOW3.DE",
      "rank": 9
     },
     {
-     "ticker": "BNR.DE",
-     "rank": 11
-    },
-    {
-     "ticker": "HEN3.DE",
-     "rank": 12
-    },
-    {
-     "ticker": "KHC",
-     "rank": 13
-    },
-    {
-     "ticker": "DASH",
-     "rank": 14
-    },
-    {
-     "ticker": "SHW",
+     "ticker": "P911.DE",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "CDW",
-     "old_rank": 7
-    },
-    {
-     "ticker": "ADSK",
-     "old_rank": 9
-    },
-    {
-     "ticker": "SHL.DE",
-     "old_rank": 10
-    },
-    {
-     "ticker": "BIIB",
-     "old_rank": 12
-    },
-    {
-     "ticker": "ZS",
+     "ticker": "DASH",
      "old_rank": 14
     },
     {
-     "ticker": "QIA.DE",
+     "ticker": "SHW",
      "old_rank": 15
     }
    ],
@@ -112,162 +80,23 @@
   "momentum": {
    "entries": [
     {
-     "ticker": "SIE.DE",
-     "rank": 14
-    },
-    {
-     "ticker": "MMM",
+     "ticker": "CVX",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "CBK.DE",
-     "old_rank": 10
-    },
-    {
-     "ticker": "DBK.DE",
-     "old_rank": 12
+     "ticker": "SIE.DE",
+     "old_rank": 14
     }
    ],
    "moves": []
   },
   "value": {
-   "entries": [
-    {
-     "ticker": "ABNB",
-     "rank": 5
-    },
-    {
-     "ticker": "V",
-     "rank": 6
-    },
-    {
-     "ticker": "MTX.DE",
-     "rank": 7
-    },
-    {
-     "ticker": "VRTX",
-     "rank": 8
-    },
-    {
-     "ticker": "DB1.DE",
-     "rank": 9
-    },
-    {
-     "ticker": "DXCM",
-     "rank": 10
-    },
-    {
-     "ticker": "FAST",
-     "rank": 11
-    },
-    {
-     "ticker": "ALV.DE",
-     "rank": 12
-    },
-    {
-     "ticker": "MNST",
-     "rank": 15
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "ADBE",
-     "old_rank": 2
-    },
-    {
-     "ticker": "CSCO",
-     "old_rank": 5
-    },
-    {
-     "ticker": "NXPI",
-     "old_rank": 6
-    },
-    {
-     "ticker": "AMAT",
-     "old_rank": 7
-    },
-    {
-     "ticker": "AVGO",
-     "old_rank": 8
-    },
-    {
-     "ticker": "CRM",
-     "old_rank": 10
-    },
-    {
-     "ticker": "TXN",
-     "old_rank": 12
-    },
-    {
-     "ticker": "LRCX",
-     "old_rank": 13
-    },
-    {
-     "ticker": "MSFT",
-     "old_rank": 15
-    }
-   ],
-   "moves": [
-    {
-     "ticker": "REGN",
-     "rank": 4,
-     "delta": 5
-    }
-   ]
+   "entries": [],
+   "exits": [],
+   "moves": []
   },
-  "analyst_flips": [
-   {
-    "ticker": "ABNB",
-    "now": 1,
-    "old": 0
-   },
-   {
-    "ticker": "ADSK",
-    "now": 2,
-    "old": 0
-   },
-   {
-    "ticker": "CRM",
-    "now": -1,
-    "old": 0
-   },
-   {
-    "ticker": "CRWD",
-    "now": 1,
-    "old": 0
-   },
-   {
-    "ticker": "FTNT",
-    "now": 1,
-    "old": 0
-   },
-   {
-    "ticker": "MRK",
-    "now": 1,
-    "old": 0
-   },
-   {
-    "ticker": "ROP",
-    "now": 1,
-    "old": 0
-   },
-   {
-    "ticker": "SHW",
-    "now": 1,
-    "old": 0
-   },
-   {
-    "ticker": "TRV",
-    "now": -1,
-    "old": 0
-   },
-   {
-    "ticker": "WDAY",
-    "now": -2,
-    "old": 0
-   }
-  ]
+  "analyst_flips": []
  }
 }

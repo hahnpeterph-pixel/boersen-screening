@@ -1,12 +1,15 @@
 #!/usr/bin/env python3
 """
 Boersen-Screening: NASDAQ-100, Dow Jones 30, DAX 40.
-Version 7 (2026-08-20): Top-10-Tabelle zeigt jetzt jeden Einzelscore als
-eigene Spalte (Punkte/Maximum + zugrundeliegender Wert), z.B. "18/20 (-31%)".
-Die bisherige "Score"-Spalte heisst jetzt "Gesamt" und ist rechnerisch exakt
-die Summe aller Einzelscores der Zeile - Ranking erfolgt weiterhin danach.
-Kurzbegruendung entfaellt (durch die Einzelscores ueberfluessig geworden).
-Baut auf Version 6 auf (Cache-Versionierung).
+Version 9 (2026-08-20): RSI-Erholung inhaltlich neu kalibriert nach
+Constance Browns "RSI Range Shift"-Konzept (Technical Analysis for the
+Trading Professional): starke Aktien in einem echten Aufwaertstrend
+erreichen den klassischen RSI-30-Wert oft gar nicht, die Spanne verschiebt
+sich stattdessen auf ca. 40-90, wobei 40-50 als Unterstuetzung/verlaesslicher
+Einstieg gilt statt des klassischen 30er-Bounce (der eher in noch nicht
+trendbestaetigten Werten funktioniert). Optimum daher jetzt bei RSI 40-50
+statt vorher 42-58, mit deutlich staerkerem Abfall Richtung RSI 70+.
+Baut auf Version 8 auf (Log-Skala Kauf/Verkaufsdruck, stufenlose RSI-Kurve).
 
 Erzeugt drei getrennte Ranglisten (Turnaround, Momentum, Value/Qualitaet),
 vergleicht sie mit dem Vortag und schreibt einen Report, der NUR
@@ -447,6 +450,45 @@ def compute_metrics(df: pd.DataFrame, bench: pd.Series | None) -> dict | None:
 # Scores
 # ---------------------------------------------------------------------------
 
+def pressure_score(vp: float | None, weight: float) -> tuple[float, str]:
+    """Punkte-Beitrag des 5-Tage-Kauf-/Verkaufsdrucks auf LOG-Skala statt
+    linear: linear deckelte z.B. 1.3x und 3.9x auf denselben Maximalwert
+    (nicht plausibel, da 3.9x ein deutlich staerkeres Signal ist als 1.3x).
+    Auf der Log-Skala braucht es einen Sprung von 0.8x auf 2.2x fuer die
+    volle Punktzahl - jeder Wert dazwischen wird sichtbar unterschieden."""
+    if vp is None:
+        return weight * 0.5, "k.A."
+    if vp <= 0:
+        return 0.0, f"{vp:.2f}x"
+    v = ramp(math.log(vp), math.log(0.8), math.log(2.2))
+    return weight * v, f"{vp:.2f}x"
+
+
+def rsi_recovery_score(rsi14: float, rsi_min60: float, weight_base: float,
+                        weight_bonus: float) -> tuple[float, str]:
+    """RSI-Erholung, stufenlos statt Ja/Nein-Sprung.
+
+    Optimum bewusst bei 40-50, nicht "je niedriger desto besser" und nicht
+    bei 50-58: nach Constance Browns "RSI Range Shift" (Standardwerk
+    "Technical Analysis for the Trading Professional", vielfach bestaetigt
+    von Chart-Technikern) pendelt der RSI starker Aktien in einem echten
+    Aufwaertstrend eher zwischen 40 und 80-90 statt zwischen 30 und 70 - die
+    40-50-Zone wirkt dort als Unterstuetzung und ist der zuverlaessigere
+    Einstieg als der klassische 30er-Bounce, der eher in noch nicht
+    trendbestaetigten, seitwaertslaufenden Werten funktioniert. Deshalb
+    Optimum bei 40-50, mit Abfall nach oben (ab RSI 70 ueberkauft, egal in
+    welchem Regime) UND nach unten (unter 25 ggf. noch im freien Fall, keine
+    bestaetigte Wende). "Kam aus einem echten Tief" bleibt ein kleiner Bonus:
+    genau das ist der eigentliche Range-Shift-Moment (Wechsel von
+    Baeren- auf Bullen-Spanne), aber kein Alles-oder-Nichts-Schalter.
+    """
+    base = weight_base * plateau(rsi14, 25, 40, 50, 70)
+    came_from_low = rsi_min60 < 35
+    bonus = weight_bonus if came_from_low else 0.0
+    detail = f"RSI {rsi14:.0f}" + (", aus Ueberverkauft" if came_from_low else "")
+    return base + bonus, detail
+
+
 def score_turnaround(m: dict) -> tuple[float, list[str], list[dict]]:
     """Gefallen, aber Boden erkennbar UND die Wende passiert erkennbar JETZT
     (nicht nur "war mal ueberverkauft"). Gewichte summieren sich zu 100.
@@ -475,15 +517,11 @@ def score_turnaround(m: dict) -> tuple[float, list[str], list[dict]]:
     if p > 6:
         why.append("50-Tage-Linie dreht nach oben")
 
-    # RSI aus der Ueberverkauftheit heraus
-    if m["rsi_min60"] < 35 and 40 <= m["rsi14"] <= 70:
-        p = 15.0
-        detail = f"RSI {m['rsi14']:.0f}, erholt"
-        why.append("RSI erholt sich aus dem ueberverkauften Bereich")
-    else:
-        p = 7 * plateau(m["rsi14"], 30, 45, 65, 80)
-        detail = f"RSI {m['rsi14']:.0f}"
+    # RSI aus der Ueberverkauftheit heraus - stufenlos, siehe rsi_recovery_score
+    p, detail = rsi_recovery_score(m["rsi14"], m["rsi_min60"], 12, 3)
     b.append({"label": "RSI-Erholung", "points": round(p, 1), "max": 15, "detail": detail})
+    if p > 10:
+        why.append("RSI erholt sich aus dem ueberverkauften Bereich")
 
     if m["vol_ratio"] is not None:
         p = 5 * ramp(m["vol_ratio"], 0.9, 1.3)
@@ -497,11 +535,10 @@ def score_turnaround(m: dict) -> tuple[float, list[str], list[dict]]:
 
     # NEU: Bestaetigt der Handel der letzten 5 Tage die Wende JETZT, oder
     # wird trotz guter Vorgeschichte gerade verkauft? Unbekannt (None)
-    # bekommt neutralen Halbwert statt Abzug.
+    # bekommt neutralen Halbwert statt Abzug. Log-Skala siehe pressure_score.
     vp = m.get("vol_pressure_5d")
-    p = 15 * (ramp(vp, 0.8, 1.3) if vp is not None else 0.5)
-    b.append({"label": "Kauf/Verkauf 5T", "points": round(p, 1), "max": 15,
-              "detail": f"{vp:.2f}x" if vp is not None else "k.A."})
+    p, detail = pressure_score(vp, 15)
+    b.append({"label": "Kauf/Verkauf 5T", "points": round(p, 1), "max": 15, "detail": detail})
     if vp is not None and p > 10:
         why.append("Kaufdruck der letzten 5 Tage bestaetigt die Wende")
     elif vp is not None and p < 5:
@@ -556,10 +593,10 @@ def score_momentum(m: dict) -> tuple[float, list[str], list[dict]]:
     b.append({"label": "Volumen 60T", "points": round(p, 1), "max": 5, "detail": detail})
 
     # NEU: bestaetigt der Handel der letzten 5 Tage die Staerke JETZT?
+    # Log-Skala siehe pressure_score.
     vp = m.get("vol_pressure_5d")
-    p = 15 * (ramp(vp, 0.8, 1.3) if vp is not None else 0.5)
-    b.append({"label": "Kauf/Verkauf 5T", "points": round(p, 1), "max": 15,
-              "detail": f"{vp:.2f}x" if vp is not None else "k.A."})
+    p, detail = pressure_score(vp, 15)
+    b.append({"label": "Kauf/Verkauf 5T", "points": round(p, 1), "max": 15, "detail": detail})
     if vp is not None and p > 10:
         why.append("Kaufdruck der letzten 5 Tage bestaetigt die Staerke")
     elif vp is not None and p < 5:

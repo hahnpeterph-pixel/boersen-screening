@@ -1,12 +1,16 @@
 #!/usr/bin/env python3
 """
 Boersen-Screening: NASDAQ-100, Dow Jones 30, DAX 40.
-Version 12 (2026-08-20): Neue Spalte "Kursziel-Abstand" in allen drei Top-10-
-Tabellen (nicht nur bei Value): Abstand des Kurses zum mittleren Analysten-
-Kursziel, gekennzeichnet als "frisch" (Ratingaenderung innerhalb der letzten
-14 Tage, Kursziel damit vermutlich aktuell bestaetigt) oder "evtl. aelter"
-(kein Datum-Beleg fuer Aktualitaet, aber trotzdem angezeigt statt weggelassen).
-Baut auf Version 11 auf (Plateau-Kurven, 100T-Linie, Rohstoffe/Krypto).
+Version 15 (2026-08-20): Zwei Nachbesserungen aus konkretem Nutzer-Feedback
+(Vergleich mit einer Broker-App):
+1) "% zum Kurs" war mehrdeutig - jetzt eindeutig "X% unter/ueber aktuellem
+   Kurs".
+2) Neue Kaufen/Halten/Verkaufen-Prozentaufteilung der Analysten (wie in
+   vielen Broker-Apps ueblich), aus yfinance's Recommendations-Endpoint.
+   Das browserinterne "Long/Short"-Verhaeltnis mancher Apps (z.B. Trade
+   Republic, Handelsaktivitaet bei Derivaten) ist NICHT nachbaubar - das ist
+   proprietaere, nicht oeffentlich zugaengliche Handelsdaten des Brokers.
+Baut auf Version 14 auf.
 
 Erzeugt drei getrennte Ranglisten (Turnaround, Momentum, Value/Qualitaet),
 vergleicht sie mit dem Vortag und schreibt einen Report, der NUR
@@ -62,7 +66,7 @@ ANALYST_MAX_AGE_DAYS = 1  # Ratingaenderungen taeglich frisch - das ist das kurz
 # mit abweichender Version wird ignoriert (sofort neu geholt), egal wie
 # frisch er nach dem Alter waere - sonst benutzt ein neuer Programmlauf
 # unbemerkt einen Cache mit alter, unvollstaendiger Datenstruktur.
-FUND_CACHE_VERSION = 3
+FUND_CACHE_VERSION = 4
 ANALYST_CACHE_VERSION = 2
 REVISION_WINDOW_DAYS = 30  # Fenster fuer "kurzfristige" Analysten-Ratingaenderungen
 TARGET_FRESH_DAYS = 14     # Kursziel gilt als "frisch", wenn eine Ratingaenderung diese Zeit nicht ueberschreitet
@@ -269,6 +273,25 @@ def get_fundamentals(tickers: list[str]) -> dict:
                 data[t]["isin"] = isin if isin and isin != "-" else None
             except Exception:  # noqa: BLE001
                 data[t]["isin"] = None
+            try:
+                rec = tk.recommendations
+                if rec is not None and not rec.empty:
+                    row0 = rec.iloc[0]  # aktuellster Zeitraum (i.d.R. "0m")
+                    sb = int(row0.get("strongBuy", 0) or 0)
+                    b = int(row0.get("buy", 0) or 0)
+                    h = int(row0.get("hold", 0) or 0)
+                    s = int(row0.get("sell", 0) or 0)
+                    ss = int(row0.get("strongSell", 0) or 0)
+                    total = sb + b + h + s + ss
+                    if total > 0:
+                        data[t]["rec_breakdown"] = {
+                            "kaufen_pct": round((sb + b) / total * 100),
+                            "halten_pct": round(h / total * 100),
+                            "verkaufen_pct": round((s + ss) / total * 100),
+                            "total": total,
+                        }
+            except Exception:  # noqa: BLE001
+                pass
         except Exception:  # noqa: BLE001
             data[t] = {}
         if n % 25 == 0:
@@ -453,6 +476,9 @@ def compute_metrics(df: pd.DataFrame, bench: pd.Series | None) -> dict | None:
         "above_sma50": last > sma50,
         "above_sma100": (last > sma100) if sma100 is not None else None,
         "above_sma200": last > sma200,
+        "pct_above_sma50": (last / sma50 - 1) * 100 if sma50 else None,
+        "pct_above_sma100": (last / sma100 - 1) * 100 if sma100 else None,
+        "pct_above_sma200": (last / sma200 - 1) * 100 if sma200 else None,
         "sma50_slope": round(float(sma50_slope), 2),
         "sma200_slope": round(float(sma200_slope), 2),
         "higher_low": bool(higher_low),
@@ -471,23 +497,20 @@ def compute_metrics(df: pd.DataFrame, bench: pd.Series | None) -> dict | None:
 # ---------------------------------------------------------------------------
 
 def pressure_score(vp: float | None, weight: float) -> tuple[float, str]:
-    """Punkte-Beitrag von Kauf-/Verkaufsdruck-Kennzahlen (Verhaeltnis
-    Anstiegs- zu Ruecksetzervolumen) als PLATEAU auf Log-Skala:
+    """Kauf-/Verkaufsdruck: Verhaeltnis von Volumen an Anstiegs- zu
+    Ruecksetzertagen. 1.0 = ausgeglichen. PLATEAU auf Log-Skala:
 
     - unter 0.6x: klar mehr Verkaufs- als Kaufvolumen -> 0 Punkte
-      (kein gutes Zeichen, verdient auch keine Punkte)
-    - 0.6x bis 1.2x: Uebergangszone, steigt linear von 0 auf voll
-    - 1.2x bis 2.5x: die eigentliche "gute" Zone -> volle Punktzahl
-    - ueber 2.5x: faellt wieder leicht ab, bis auf einen Sockel von 55%
-      der Punktzahl. Grund: ein Vielfaches wie 4x oder 6x an nur 5 Tagen
-      ist bei Einzelwerten oft ein einzelner Ausreissertag (duenn gehandelte
-      Aktie, ein Grossauftrag) statt breiter Kaufbereitschaft - bleibt aber
-      klar im positiven Bereich, wird nur nicht weiter blind belohnt.
+    - 0.6x-1.2x: Uebergangszone, steigt linear von 0 auf voll
+    - 1.2x-2.5x: die "gute" Zone -> volle Punktzahl
+    - ueber 2.5x: faellt wieder leicht ab, Sockel bei 55% (Grund: ein
+      Vielfaches wie 4x oder 6x an nur 5 Tagen ist bei Einzelwerten oft ein
+      einzelner Ausreissertag statt breiter Kaufbereitschaft)
     """
     if vp is None:
-        return weight * 0.5, "k.A."
+        return weight * 0.5, "keine Daten"
     if vp <= 0:
-        return 0.0, f"{vp:.2f}x"
+        return 0.0, "keine Daten"
 
     lv = math.log(vp)
     lo, opt_lo, opt_hi, hi = math.log(0.6), math.log(1.2), math.log(2.5), math.log(6.0)
@@ -504,7 +527,64 @@ def pressure_score(vp: float | None, weight: float) -> tuple[float, str]:
     else:
         frac = floor
 
-    return weight * frac, f"{vp:.2f}x"
+    label = "mehr Kaeufer als Verkaeufer" if vp > 1.15 else (
+        "mehr Verkaeufer als Kaeufer" if vp < 0.87 else "ausgeglichen")
+    return weight * frac, f"{label} ({vp:.2f}x)"
+
+
+def breakout_score(vb: float | None, weight: float) -> tuple[float, str]:
+    """Heutiges Volumen vs. 20-Tage-Durchschnitt davor. ACHTUNG andere Zone
+    als pressure_score: hier bedeutet 1.0 = genau Durchschnittsvolumen, also
+    KEIN Ausbruch. Die "gute" Zone beginnt daher erst deutlich darueber -
+    ein Wert von 0.9 (unterdurchschnittliches Volumen) darf keine
+    nennenswerten Punkte bekommen, auch wenn er "nah an 1" liegt.
+
+    - bis 1.0x (Durchschnitt oder darunter): 0 Punkte
+    - 1.0x-1.5x: leichter Anstieg, aber noch kein echter Ausbruch
+    - 2.0x-4.0x: die "gute" Zone -> volle Punktzahl (klarer Ausbruch)
+    - ueber 4.0x: faellt wieder leicht ab, Sockel bei 60% (moeglicherweise
+      ein einzelnes Sonderereignis wie ein Index-Rebalancing statt echtes
+      neues Kaufinteresse)
+    """
+    if vb is None:
+        return weight * 0.5, "keine Daten"
+    if vb <= 0:
+        return 0.0, "keine Daten"
+
+    lv = math.log(vb)
+    lo, opt_lo, opt_hi, hi = math.log(1.0), math.log(2.0), math.log(4.0), math.log(8.0)
+    floor = 0.60
+
+    if lv <= lo:
+        frac = 0.0
+    elif lv < opt_lo:
+        frac = (lv - lo) / (opt_lo - lo)
+    elif lv <= opt_hi:
+        frac = 1.0
+    elif lv < hi:
+        frac = 1.0 - (1.0 - floor) * (lv - opt_hi) / (hi - opt_hi)
+    else:
+        frac = floor
+
+    if vb < 1.0:
+        label = "unterdurchschnittlich"
+    elif vb < 2.0:
+        label = "leicht erhoeht"
+    else:
+        label = "Ausbruch"
+    return weight * frac, f"{label} ({vb:.2f}x Ø20T)"
+
+
+def ma_distance_score(pct_above: float | None, weight: float, ma_label: str) -> tuple[float, str]:
+    """Abstand des Kurses zur gleitenden Linie in Prozent, graduell statt
+    starrem Ja/Nein - ein Kurs knapp UNTER der Linie (kurz vor Durchbruch)
+    bekommt so noch Teilpunkte, ein Kurs weit darueber die volle Punktzahl,
+    ein Kurs weit darunter 0."""
+    if pct_above is None:
+        return weight * 0.5, "keine Daten"
+    frac = ramp(pct_above, -3, 3)
+    status = "darueber" if pct_above > 0 else "darunter"
+    return weight * frac, f"{pct_above:+.1f}% {status} {ma_label}"
 
 
 def rsi_recovery_score(rsi14: float, rsi_min60: float, weight_base: float,
@@ -535,44 +615,43 @@ def rsi_recovery_score(rsi14: float, rsi_min60: float, weight_base: float,
 def score_turnaround(m: dict) -> tuple[float, list[str], list[dict]]:
     """Gefallen, aber Boden erkennbar UND die Wende passiert erkennbar JETZT
     (nicht nur "war mal ueberverkauft"). Gewichte summieren sich zu 100.
+    Abstand zum Allzeithoch fliesst NICHT mehr ein (siehe Notiz am
+    Berichtsende: keine belegte Schwelle, wird nur noch angezeigt).
     Gibt (Gesamt-Score, Kurzbegruendungen, Einzelscore-Aufschluesselung) zurueck."""
     why = []
     b: list[dict] = []
 
-    # Drawdown-Zone: interessant zwischen 25 und 60 Prozent, optimal 35-50
-    p = 20 * plateau(-m["dd_ath"], 15, 30, 55, 75)
-    b.append({"label": "Abstand ATH", "points": round(p, 1), "max": 20, "detail": f"{m['dd_ath']:.0f}%"})
-    if p > 12:
-        why.append(f"{m['dd_ath']:.0f}% unter ATH")
-
-    # Basis (15) fuer "ueberhaupt ein hoeheres Tief", plus Bonus (bis 5) je
-    # nachdem WIE VIEL hoeher - vorher reines Ja/Nein, das einen Hauch
-    # ueber dem vorherigen Tief genauso behandelte wie deutlich darueber.
+    # Basis (18.75) fuer "ueberhaupt ein hoeheres Tief", plus Bonus (bis 6.25)
+    # je nachdem WIE VIEL hoeher (Vergleich: Tiefpunkt der letzten 30
+    # Handelstage vs. Tiefpunkt der 90 Tage davor).
     hl_pct = m.get("higher_low_pct")
     if m["higher_low"]:
-        bonus = 5 * ramp(hl_pct, 0, 15) if hl_pct is not None else 0.0
-        p = 15.0 + bonus
-        detail = f"ja, +{hl_pct:.1f}%" if hl_pct is not None else "ja"
+        bonus = 6.25 * ramp(hl_pct, 0, 15) if hl_pct is not None else 0.0
+        p = 18.75 + bonus
+        detail = f"ja, 30T-Tief liegt {hl_pct:.1f}% ueber dem 90T-Tief davor" if hl_pct is not None else "ja"
     else:
-        p, detail = 0.0, (f"nein, {hl_pct:.1f}%" if hl_pct is not None else "nein")
-    b.append({"label": "Hoeheres Tief", "points": round(p, 1), "max": 20, "detail": detail})
+        p, detail = 0.0, (f"nein, 30T-Tief liegt {hl_pct:.1f}% unter dem 90T-Tief davor" if hl_pct is not None else "nein")
+    b.append({"label": "Hoeheres Tief", "points": round(p, 1), "max": 25, "detail": detail})
     if m["higher_low"]:
         why.append("hoeheres Tief")
 
-    p = 7.0 if m["above_sma50"] else 0.0
-    b.append({"label": "Ueber 50T-Linie", "points": p, "max": 7, "detail": "ja" if m["above_sma50"] else "nein"})
+    p, detail = ma_distance_score(m.get("pct_above_sma50"), 10, "50T-Linie")
+    b.append({"label": "Abstand 50T-Linie", "points": round(p, 1), "max": 10, "detail": detail})
     if m["above_sma50"]:
         why.append("ueber 50-Tage-Linie")
 
-    # NEU: 100-Tage-Linie als Zwischenschritt zwischen dem kurzfristigen
-    # 50T- und dem langfristigen 200T-Trend.
+    # 100-Tage-Linie als Zwischenschritt zwischen dem kurzfristigen 50T- und
+    # dem langfristigen 200T-Trend.
     a100 = m.get("above_sma100")
     p = 5.0 if a100 else 0.0
     b.append({"label": "Ueber 100T-Linie", "points": p, "max": 5,
-              "detail": "ja" if a100 else ("nein" if a100 is False else "k.A.")})
+              "detail": "ja" if a100 else ("nein" if a100 is False else "keine Daten")})
 
+    # Steigt die 50-Tage-Linie SELBST (nicht der Kurs) - ein traeger
+    # Trendwende-Fruehindikator, unabhaengig von "Abstand 50T-Linie" oben.
     p = 10 * ramp(m["sma50_slope"], -1, 3)
-    b.append({"label": "50T dreht", "points": round(p, 1), "max": 10, "detail": f"{m['sma50_slope']:+.1f}%"})
+    b.append({"label": "50T-Linie im Aufwaertstrend", "points": round(p, 1), "max": 10,
+              "detail": f"{m['sma50_slope']:+.1f}% Veraenderung der Linie in 21 Tagen"})
     if p > 6:
         why.append("50-Tage-Linie dreht nach oben")
 
@@ -582,24 +661,24 @@ def score_turnaround(m: dict) -> tuple[float, list[str], list[dict]]:
     if p > 10:
         why.append("RSI erholt sich aus dem ueberverkauften Bereich")
 
-    # Volumen-Ausbruch: heutiges Volumen vs. 20-Tage-Durchschnitt. Nutzt
-    # dieselbe Plateau-Funktion wie pressure_score.
+    # Volumen-Ausbruch: heutiges Volumen vs. 20-Tage-Durchschnitt.
     vb = m.get("vol_breakout")
-    p, detail = pressure_score(vb, 3)
-    b.append({"label": "Volumen-Ausbruch", "points": round(p, 1), "max": 3, "detail": detail})
+    p, detail = breakout_score(vb, 5)
+    b.append({"label": "Volumen-Ausbruch", "points": round(p, 1), "max": 5, "detail": detail})
 
-    p = 5 * plateau(m["range_pos"], 5, 15, 55, 75)
-    b.append({"label": "Range-Pos", "points": round(p, 1), "max": 5, "detail": f"{m['range_pos']:.0f}%"})
+    p = 10 * plateau(m["range_pos"], 5, 15, 55, 75)
+    b.append({"label": "Position 52W-Spanne", "points": round(p, 1), "max": 10,
+              "detail": f"{m['range_pos']:.0f}% der Jahres-Spanne (0%=Jahrestief, 100%=Jahreshoch)"})
 
-    # NEU: Bestaetigt der Handel der letzten 5 Tage die Wende JETZT, oder
-    # wird trotz guter Vorgeschichte gerade verkauft? Unbekannt (None)
-    # bekommt neutralen Halbwert statt Abzug. Log-Skala siehe pressure_score.
+    # Bestaetigt der Handel der letzten 5 Tage die Wende JETZT, oder wird
+    # trotz guter Vorgeschichte gerade verkauft? Unbekannt (None) bekommt
+    # neutralen Halbwert statt Abzug. Log-Skala siehe pressure_score.
     vp = m.get("vol_pressure_5d")
-    p, detail = pressure_score(vp, 15)
-    b.append({"label": "Kauf/Verkauf 5T", "points": round(p, 1), "max": 15, "detail": detail})
-    if vp is not None and p > 10:
+    p, detail = pressure_score(vp, 20)
+    b.append({"label": "Kauf-/Verkaufsdruck 5T", "points": round(p, 1), "max": 20, "detail": detail})
+    if vp is not None and p > 13:
         why.append("Kaufdruck der letzten 5 Tage bestaetigt die Wende")
-    elif vp is not None and p < 5:
+    elif vp is not None and p < 7:
         why.append("aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt")
 
     total = round(min(sum(x["points"] for x in b), 100.0), 1)
@@ -608,56 +687,52 @@ def score_turnaround(m: dict) -> tuple[float, list[str], list[dict]]:
 
 def score_momentum(m: dict) -> tuple[float, list[str], list[dict]]:
     """Staerke, nahe am Hoch UND der Ausbruch wird gerade JETZT bestaetigt.
-    Gewichte summieren sich zu 100."""
+    Gewichte summieren sich zu 100. Abstand zum Allzeithoch fliesst NICHT
+    mehr ein (siehe Notiz am Berichtsende), wird nur noch angezeigt."""
     why = []
     b: list[dict] = []
 
-    p = 20 * ramp(m["dd_ath"], -25, -2)
-    b.append({"label": "Naehe ATH", "points": round(p, 1), "max": 20, "detail": f"{m['dd_ath']:.0f}%"})
-    if p > 12:
-        why.append(f"nur {abs(m['dd_ath']):.0f}% unter ATH")
-
     if m["rs6"] is not None:
-        p = 20 * ramp(m["rs6"], -5, 25)
-        detail = f"{m['rs6']:+.0f}%"
-        if p > 12:
+        p = 28 * ramp(m["rs6"], -5, 25)
+        detail = f"{m['rs6']:+.0f}% staerker/schwaecher als der Index"
+        if p > 17:
             why.append(f"relative Staerke +{m['rs6']:.0f}% vs. Index")
     else:
-        p, detail = 0.0, "k.A."
-    b.append({"label": "Rel. Staerke 6M", "points": round(p, 1), "max": 20, "detail": detail})
+        p, detail = 0.0, "keine Daten"
+    b.append({"label": "Rel. Staerke 6M", "points": round(p, 1), "max": 28, "detail": detail})
 
+    p, detail = ma_distance_score(m.get("pct_above_sma50"), 10, "50T-Linie")
+    b.append({"label": "Abstand 50T-Linie", "points": round(p, 1), "max": 10, "detail": detail})
+
+    p, detail = ma_distance_score(m.get("pct_above_sma200"), 10, "200T-Linie")
+    b.append({"label": "Abstand 200T-Linie", "points": round(p, 1), "max": 10, "detail": detail})
     if m["above_sma50"] and m["above_sma200"]:
-        p, detail = 10.0, "beide"
         why.append("ueber 50- und 200-Tage-Linie")
-    elif m["above_sma200"]:
-        p, detail = 4.0, "nur 200T"
-    else:
-        p, detail = 0.0, "keine"
-    b.append({"label": "Ueber 50T+200T", "points": p, "max": 10, "detail": detail})
 
-    # NEU: 100-Tage-Linie als Zwischenschritt.
+    # 100-Tage-Linie als Zwischenschritt.
     a100 = m.get("above_sma100")
     p = 5.0 if a100 else 0.0
     b.append({"label": "Ueber 100T-Linie", "points": p, "max": 5,
-              "detail": "ja" if a100 else ("nein" if a100 is False else "k.A.")})
+              "detail": "ja" if a100 else ("nein" if a100 is False else "keine Daten")})
 
     p = 10 * ramp(m["sma200_slope"], 0, 4)
-    b.append({"label": "200T steigt", "points": round(p, 1), "max": 10, "detail": f"{m['sma200_slope']:+.1f}%"})
+    b.append({"label": "200T-Linie im Aufwaertstrend", "points": round(p, 1), "max": 10,
+              "detail": f"{m['sma200_slope']:+.1f}% Veraenderung der Linie in 21 Tagen"})
     if p > 6:
         why.append("200-Tage-Linie steigt")
 
     p = 15 * ramp(m["range_pos"], 60, 90)
-    b.append({"label": "Range-Pos", "points": round(p, 1), "max": 15, "detail": f"{m['range_pos']:.0f}%"})
+    b.append({"label": "Position 52W-Spanne", "points": round(p, 1), "max": 15,
+              "detail": f"{m['range_pos']:.0f}% der Jahres-Spanne (0%=Jahrestief, 100%=Jahreshoch)"})
 
     vb = m.get("vol_breakout")
-    p, detail = pressure_score(vb, 5)
-    b.append({"label": "Volumen-Ausbruch", "points": round(p, 1), "max": 5, "detail": detail})
+    p, detail = breakout_score(vb, 4)
+    b.append({"label": "Volumen-Ausbruch", "points": round(p, 1), "max": 4, "detail": detail})
 
-    # NEU: bestaetigt der Handel der letzten 5 Tage die Staerke JETZT?
-    # Log-Skala siehe pressure_score.
+    # Bestaetigt der Handel der letzten 5 Tage die Staerke JETZT?
     vp = m.get("vol_pressure_5d")
-    p, detail = pressure_score(vp, 15)
-    b.append({"label": "Kauf/Verkauf 5T", "points": round(p, 1), "max": 15, "detail": detail})
+    p, detail = pressure_score(vp, 18)
+    b.append({"label": "Kauf-/Verkaufsdruck 5T", "points": round(p, 1), "max": 18, "detail": detail})
     if vp is not None and p > 10:
         why.append("Kaufdruck der letzten 5 Tage bestaetigt die Staerke")
     elif vp is not None and p < 5:
@@ -790,7 +865,8 @@ def format_revision(a: dict) -> str | None:
 
 
 def target_price_info(f: dict, a: dict, last: float) -> dict:
-    """Abstand des aktuellen Kurses zum mittleren Analysten-Kursziel.
+    """Kursziel-Informationen: absoluter Wert, Abstand zum Kurs in Prozent,
+    Anzahl Analysten, Empfehlung im Klartext, Aktualitaets-Kennzeichnung.
 
     Yahoo liefert keinen Zeitstempel dafuer, wann das Kursziel zuletzt gesetzt
     wurde. Als Naeherung: gab es innerhalb der letzten TARGET_FRESH_DAYS Tage
@@ -800,9 +876,21 @@ def target_price_info(f: dict, a: dict, last: float) -> dict:
     klar als moeglicherweise aelter gekennzeichnet - lieber ehrlich unsicher
     als falsch sicher.
     """
+    empfehlung_text = {
+        "strong_buy": "klar kaufen", "buy": "kaufen", "hold": "halten",
+        "sell": "verkaufen", "strong_sell": "klar verkaufen",
+        "none": "keine Angabe", "underperform": "unterdurchschnittlich",
+        "outperform": "ueberdurchschnittlich",
+    }
     target = safe(f, "targetMeanPrice")
+    n_analysts = safe(f, "numberOfAnalystOpinions")
+    empfehlung = empfehlung_text.get(safe(f, "recommendationKey"), None)
+    rec_breakdown = safe(f, "rec_breakdown")
+
     if not target or target <= 0 or not last or last <= 0:
-        return {"upside_pct": None, "fresh": None}
+        return {"target_abs": None, "upside_pct": None, "fresh": None,
+                "n_analysts": n_analysts, "empfehlung": empfehlung, "rec_breakdown": rec_breakdown}
+
     upside = (target / last - 1) * 100
     fresh = None
     last_action_date = safe(a, "last_date")
@@ -813,14 +901,46 @@ def target_price_info(f: dict, a: dict, last: float) -> dict:
             fresh = age_days <= TARGET_FRESH_DAYS
         except Exception:  # noqa: BLE001
             fresh = None
-    return {"upside_pct": round(upside, 1), "fresh": fresh}
+    return {"target_abs": round(target, 2), "upside_pct": round(upside, 1), "fresh": fresh,
+            "n_analysts": n_analysts, "empfehlung": empfehlung, "rec_breakdown": rec_breakdown}
 
 
-def format_target(info: dict) -> str:
-    if info.get("upside_pct") is None:
-        return "k.A."
-    tag = "frisch" if info.get("fresh") else ("evtl. aelter" if info.get("fresh") is False else "Datum unbekannt")
-    return f"{info['upside_pct']:+.0f}% ({tag})"
+def format_target(info: dict, actions: list | None = None) -> str:
+    """Kursziel-Zelle: absoluter Wert + Abstand, PLUS Kaufen/Halten/Verkaufen-
+    Aufteilung in Prozent (wie bei den meisten Broker-Apps ueblich), PLUS die
+    konkrete(n) juengste(n) Ratingaenderung(en) mit Bank und Datum - "12
+    Analysten" allein ist zu vage, aber welche einzelne Bank welchen genauen
+    Kurszielwert genannt hat, liefert Yahoo kostenlos nicht (nur den
+    Durchschnitt aller Analysten). Was es kostenlos gibt: die Aufteilung
+    in Kaufen/Halten/Verkaufen UND wer wann seine EINSTUFUNG geaendert hat."""
+    if info.get("target_abs") is None:
+        emp = info.get("empfehlung")
+        base = "kein Kursziel verfuegbar" + (f" (Empfehlung: {emp})" if emp else "")
+    else:
+        rb = info.get("rec_breakdown")
+        if rb:
+            n_txt = f" ({rb['total']} Analysten)"
+            rec_txt = f", {rb['kaufen_pct']}% Kaufen / {rb['halten_pct']}% Halten / {rb['verkaufen_pct']}% Verkaufen{n_txt}"
+        else:
+            n = info.get("n_analysts")
+            emp = info.get("empfehlung")
+            rec_txt = (f", Schnitt aus {n} Analysten" if n else "") + (f", Empfehlung: {emp}" if emp else "")
+        richtung = "unter" if info["upside_pct"] < 0 else "ueber"
+        base = f"{info['target_abs']:.2f} ({abs(info['upside_pct']):.0f}% {richtung} aktuellem Kurs{rec_txt})"
+
+    if actions:
+        richtung_kurz = {"up": "hoch", "down": "runter", "init": "Start", "reit": "bestaetigt"}
+        named = []
+        for act in actions[:2]:
+            firm = act.get("firm") or "unbekannte Bank"
+            date = act.get("date") or "?"
+            rk = richtung_kurz.get(act.get("action"), act.get("action") or "-")
+            grade = f" auf {act['to_grade']}" if act.get("to_grade") else ""
+            named.append(f"{date} {firm} ({rk}gestuft{grade})")
+        base += " | zuletzt: " + "; ".join(named)
+    else:
+        base += " | keine Ratingaenderung in den letzten 30 Tagen bekannt"
+    return base
 
 
 def exclusions(m: dict, f: dict) -> list[str]:
@@ -1066,32 +1186,79 @@ def build_rank_lookup(history: list[dict], today_date: str):
     return get_rank
 
 
+def build_glossary() -> str:
+    return "\n".join([
+        "## 📖 Glossar (was die Spalten bedeuten)", "",
+        "**Kopfdaten (immer zuerst):**",
+        "- **Kurs**: letzter Schlusskurs.",
+        "- **Abstand ATH**: wie weit der Kurs unter dem Allzeithoch liegt. "
+        "Rein informativ, fliesst NICHT in den Score ein - es gibt keine belegte "
+        "\"gesunde\" Schwelle dafuer (siehe Hinweis am Ende).",
+        "- **Analysten-Ziel**: mittleres Kursziel der Analysten (absoluter Wert, "
+        "Durchschnitt aller erfassten Analysten), z.B. \"67% unter aktuellem Kurs\" "
+        "heisst: das Kursziel liegt 67% UNTER dem, was die Aktie gerade kostet. "
+        "Kaufen/Halten/Verkaufen-Prozente: Anteil der Analysten je Einstufung, "
+        "wie in vielen Broker-Apps ueblich. WICHTIG: das Kursziel ist ein "
+        "Durchschnitt, keine Einzelmeinung - welcher konkrete Analyst welchen "
+        "genauen Kurszielwert genannt hat, liefert die kostenlose Datenquelle "
+        "nicht (dafuer braeuchte es einen kostenpflichtigen Dienst wie "
+        "TipRanks). Was es kostenlos gibt und mit ausgewiesen wird: die "
+        "juengste(n) namentliche(n) Rating-AENDERUNG(EN) mit Bank und Datum "
+        "(z.B. \"15.08. Morgan Stanley (hochgestuft auf Buy)\") - eine "
+        "Ratingaenderung ist nicht dasselbe wie ein neuer Kurszielwert, geht "
+        "aber in der Praxis meist damit einher. Das \"Long/Short\"-Verhaeltnis "
+        "aus manchen Broker-Apps (z.B. Trade Republic) ist NICHT enthalten - "
+        "das ist brokerinterne Handelsaktivitaet bei Derivaten, nirgendwo "
+        "oeffentlich als Datenquelle verfuegbar.",
+        "",
+        "**Technische Bestaetigung (Score-Spalten):** je Spalte \"erzielte Punkte / "
+        "Maximum (zugrundeliegender Wert im Klartext)\".",
+        "- **Hoeheres Tief**: Tiefpunkt der letzten 30 Handelstage vs. Tiefpunkt der "
+        "90 Tage davor - ein hoeheres Tief spricht fuer eine beginnende Bodenbildung.",
+        "- **Abstand 50T-/100T-/200T-Linie**: wie weit der Kurs prozentual ueber "
+        "oder unter der jeweiligen gleitenden Durchschnittslinie liegt (0% = Kurs "
+        "genau auf der Linie).",
+        "- **50T-/200T-Linie im Aufwaertstrend**: steigt die Linie SELBST gerade "
+        "(nicht der Kurs) - ein traeger Fruehindikator fuer eine Trendwende.",
+        "- **RSI-Erholung**: Momentum-Indikator (0-100). Optimum bei 40-50 (siehe "
+        "Notiz am Ende, Quelle: Constance Brown), nicht bei 30 wie oft angenommen.",
+        "- **Volumen-Ausbruch**: heutiges Handelsvolumen im Vergleich zum "
+        "20-Tage-Durchschnitt davor. \"unterdurchschnittlich\" (unter 1x) bekommt "
+        "bewusst 0 Punkte - kein Ausbruch, egal wie nah an 1x.",
+        "- **Kauf-/Verkaufsdruck 5T**: Verhaeltnis von Handelsvolumen an "
+        "Anstiegs- zu Ruecksetzertagen der letzten 5 Tage. Ueber 1x = mehr Kaeufer "
+        "als Verkaeufer, unter 1x = mehr Verkaeufer als Kaeufer. Kein "
+        "Leerverkaufs-/Shortdaten-Wert (siehe Hinweis am Ende).",
+        "- **Rel. Staerke 6M**: Wertentwicklung der letzten 6 Monate im Vergleich "
+        "zum eigenen Index (NASDAQ/Dow/DAX).",
+        "- **Position 52W-Spanne**: wo der Kurs innerhalb der 52-Wochen-Spanne "
+        "steht (0% = Jahrestief, 100% = Jahreshoch).",
+        "- **Gesamt**: Summe aller Punkte-Spalten dieser Zeile, 0-100. **Kein "
+        "statistisch ermitteltes Erfolgsmass** - ein Kennzahlen-Score, keine "
+        "Prognose (kein Backtest dahinter).",
+        "- **Rang gestern / Rang Vorwoche**: Platzierung am letzten Handelstag "
+        "bzw. vor rund einer Woche in derselben Liste. \"neu\" = damals nicht in "
+        "den Top 40.",
+        "",
+    ])
+
+
 def build_top10_tables(today: dict, get_rank) -> str:
-    L = ["## 📊 Aktuelle Top 10", "",
-         "_Jede Spalte vor \"Gesamt\" ist ein Einzelscore dieser Kategorie: "
-         "erzielte Punkte von den maximal moeglichen, dahinter in Klammern der "
-         "zugrundeliegende Wert. Gesamt = Summe aller Einzelscores dieser Zeile, "
-         "0-100 - Ranking erfolgt danach. Kein statistisch ermitteltes "
-         "Erfolgsmass, siehe Hinweis am Berichtsende. Rang-Spalten: letzter "
-         "Handelstag / vor rund einer Woche, \"neu\" = damals nicht in den Top 40 "
-         "dieser Liste. Kursziel-Abstand: Abstand des Kurses zum mittleren "
-         f"Analysten-Kursziel - \"frisch\" heisst, es gab in den letzten "
-         f"{TARGET_FRESH_DAYS} Tagen eine Ratingaenderung (Kursziel damit "
-         "vermutlich aktuell bestaetigt), \"evtl. aelter\" heisst nicht "
-         "unbedingt veraltet, nur nicht kuerzlich bestaetigt._", ""]
+    L = ["## 📊 Aktuelle Top 10", ""]
     for name in LISTS:
         sample = today["rows"][today["ranks_full"][name][0]]["breakdown"][name] if today["ranks_full"][name] else []
         labels = [x["label"] for x in sample]
 
         L.append(f"### {LIST_TITLES[name]}")
         L.append("")
-        header = ["Rang", "Ticker", "ISIN", "Name", "Index"] + labels + \
-                 ["**Gesamt**", "Einordnung", "Rang gestern", "Rang Vorwoche", "Kursziel-Abstand"]
+        header = ["Rang", "Ticker", "ISIN", "Name", "Index", "Kurs", "Abstand ATH (Info)",
+                   "Analysten-Ziel"] + labels + ["**Gesamt**", "Einordnung", "Rang gestern", "Rang Vorwoche"]
         L.append("| " + " | ".join(header) + " |")
         L.append("|" + "---|" * len(header))
 
         for i, t in enumerate(today["ranks_full"][name][:10], 1):
             row = today["rows"][t]
+            m = row["metrics"]
             score = row["scores"][name]
             bd = row["breakdown"][name]
             ry = get_rank(name, t, "yesterday")
@@ -1099,8 +1266,10 @@ def build_top10_tables(today: dict, get_rank) -> str:
             ry_s = str(ry) if ry else "neu"
             rw_s = str(rw) if rw else "neu"
             factor_cells = [f"{x['points']:.0f}/{x['max']:.0f} ({x['detail']})" for x in bd]
-            cells = [str(i), t, row.get("isin") or "-", row["name"], row["index"]] + factor_cells + \
-                    [f"**{score:.0f}**", score_label(score), ry_s, rw_s, format_target(row.get("target", {}))]
+            cells = [str(i), t, row.get("isin") or "-", row["name"], row["index"],
+                     f"{m['last']:.2f}", f"{m['dd_ath']:.0f}%",
+                     format_target(row.get("target", {}), row.get("analyst", {}).get("actions"))] + factor_cells + \
+                    [f"**{score:.0f}**", score_label(score), ry_s, rw_s]
             L.append("| " + " | ".join(cells) + " |")
         L.append("")
     return "\n".join(L)
@@ -1177,6 +1346,7 @@ def build_report(today: dict, prev: dict, changes: dict, get_rank, extras_rows: 
     L.append(f"_Stand: Schlusskurse vom Vortag. Erstellt {today['generated']} UTC. "
              f"{len(today['rows'])} Werte ausgewertet._")
     L.append("")
+    L.append(build_glossary())
     L.append(build_top10_tables(today, get_rank))
     L.append("")
     L.append(build_analyst_section(today))

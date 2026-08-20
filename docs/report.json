@@ -7,16 +7,16 @@
    "BEI.DE",
    "BAYN.DE",
    "CRM",
-   "SHL.DE",
    "DXCM",
-   "VOW3.DE",
+   "SHL.DE",
    "AXON",
    "BNR.DE",
    "KHC",
    "HEN3.DE",
-   "P911.DE",
    "DASH",
-   "HNR1.DE"
+   "VOW3.DE",
+   "HNR1.DE",
+   "CMCSA"
   ],
   "momentum": [
    "MRK",
@@ -29,9 +29,9 @@
    "AMGN",
    "ALV.DE",
    "PANW",
-   "DTG.DE",
    "CVX",
    "CRWD",
+   "DTG.DE",
    "FAST",
    "MRVL"
   ],
@@ -39,139 +39,75 @@
    "MU",
    "ADSK",
    "NVDA",
+   "V",
    "REGN",
    "ABNB",
-   "V",
    "MTX.DE",
+   "ENR.DE",
    "VRTX",
    "DB1.DE",
    "DXCM",
-   "FAST",
+   "GOOGL",
+   "ODFL",
    "ALV.DE",
-   "CVX",
-   "ENR.DE",
-   "MNST"
+   "CVX"
   ]
  },
  "changes": {
   "turnaround": {
    "entries": [
     {
-     "ticker": "SHL.DE",
-     "rank": 6
-    },
-    {
-     "ticker": "VOW3.DE",
-     "rank": 8
-    },
-    {
-     "ticker": "HNR1.DE",
+     "ticker": "CMCSA",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "FRE.DE",
-     "old_rank": 3
-    },
-    {
-     "ticker": "MELI",
-     "old_rank": 9
-    },
-    {
-     "ticker": "SY1.DE",
-     "old_rank": 10
-    }
-   ],
-   "moves": []
-  },
-  "momentum": {
-   "entries": [
-    {
-     "ticker": "FANG",
-     "rank": 7
-    },
-    {
-     "ticker": "DTG.DE",
-     "rank": 11
-    },
-    {
-     "ticker": "CVX",
-     "rank": 12
-    },
-    {
-     "ticker": "FAST",
-     "rank": 14
-    },
-    {
-     "ticker": "MRVL",
-     "rank": 15
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "RWE.DE",
-     "old_rank": 7
-    },
-    {
-     "ticker": "FTNT",
-     "old_rank": 8
-    },
-    {
-     "ticker": "DHL.DE",
-     "old_rank": 9
-    },
-    {
-     "ticker": "CBK.DE",
-     "old_rank": 10
-    },
-    {
-     "ticker": "AMZN",
-     "old_rank": 11
+     "ticker": "P911.DE",
+     "old_rank": 13
     }
    ],
    "moves": [
     {
-     "ticker": "JNJ",
-     "rank": 4,
-     "delta": 8
-    },
-    {
-     "ticker": "KO",
-     "rank": 5,
-     "delta": 8
-    },
-    {
-     "ticker": "CSX",
-     "rank": 6,
-     "delta": 9
-    },
-    {
-     "ticker": "AMGN",
-     "rank": 8,
-     "delta": 6
-    },
-    {
-     "ticker": "ALV.DE",
-     "rank": 9,
-     "delta": -8
-    },
-    {
-     "ticker": "PANW",
-     "rank": 10,
-     "delta": -7
-    },
-    {
-     "ticker": "CRWD",
+     "ticker": "VOW3.DE",
      "rank": 13,
-     "delta": -7
+     "delta": -5
     }
    ]
   },
-  "value": {
+  "momentum": {
    "entries": [],
    "exits": [],
    "moves": []
+  },
+  "value": {
+   "entries": [
+    {
+     "ticker": "GOOGL",
+     "rank": 12
+    },
+    {
+     "ticker": "ODFL",
+     "rank": 13
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "FAST",
+     "old_rank": 11
+    },
+    {
+     "ticker": "MNST",
+     "old_rank": 15
+    }
+   ],
+   "moves": [
+    {
+     "ticker": "ENR.DE",
+     "rank": 8,
+     "delta": 6
+    }
+   ]
   },
   "analyst_flips": []
  }

@@ -1,21 +1,51 @@
 {
- "updated": "2026-08-20T08:49:17.564192+00:00",
+ "updated": "2026-08-20T12:35:26.363082+00:00",
+ "version": 2,
  "data": {
-  "1COV.DE": {
-   "upgrades_30d": 0,
-   "downgrades_30d": 0,
-   "net_30d": 0,
-   "last_action": null,
-   "last_firm": null,
-   "last_date": null
-  },
   "AAPL": {
    "upgrades_30d": 0,
    "downgrades_30d": 2,
    "net_30d": -2,
    "last_action": "down",
    "last_firm": "Jefferies",
-   "last_date": "2026-08-10"
+   "last_date": "2026-08-10",
+   "actions": [
+    {
+     "date": "2026-08-10",
+     "firm": "Jefferies",
+     "action": "down",
+     "to_grade": "Underperform",
+     "from_grade": "Hold"
+    },
+    {
+     "date": "2026-08-04",
+     "firm": "China Renaissance",
+     "action": "down",
+     "to_grade": "Hold",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-07-31",
+     "firm": "JP Morgan",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-07-31",
+     "firm": "TD Cowen",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-07-31",
+     "firm": "DA Davidson",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    }
+   ]
   },
   "ABNB": {
    "upgrades_30d": 1,
@@ -23,23 +53,85 @@
    "net_30d": 1,
    "last_action": "main",
    "last_firm": "BMO Capital",
-   "last_date": "2026-08-10"
+   "last_date": "2026-08-10",
+   "actions": [
+    {
+     "date": "2026-08-10",
+     "firm": "BMO Capital",
+     "action": "main",
+     "to_grade": "Market Perform",
+     "from_grade": "Market Perform"
+    },
+    {
+     "date": "2026-08-08",
+     "firm": "DA Davidson",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-07",
+     "firm": "UBS",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-08-07",
+     "firm": "Citigroup",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-07",
+     "firm": "RBC Capital",
+     "action": "main",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    }
+   ]
   },
   "ADBE": {
    "upgrades_30d": 0,
-   "downgrades_30d": 1,
-   "net_30d": -1,
+   "downgrades_30d": 0,
+   "net_30d": 0,
    "last_action": "main",
    "last_firm": "B of A Securities",
-   "last_date": "2026-08-19"
+   "last_date": "2026-08-19",
+   "actions": [
+    {
+     "date": "2026-08-19",
+     "firm": "B of A Securities",
+     "action": "main",
+     "to_grade": "Underperform",
+     "from_grade": "Underperform"
+    }
+   ]
   },
   "ADI": {
    "upgrades_30d": 0,
    "downgrades_30d": 0,
    "net_30d": 0,
-   "last_action": "reit",
-   "last_firm": "Cantor Fitzgerald",
-   "last_date": "2026-08-17"
+   "last_action": "main",
+   "last_firm": "Needham",
+   "last_date": "2026-08-20",
+   "actions": [
+    {
+     "date": "2026-08-20",
+     "firm": "Needham",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-17",
+     "firm": "Cantor Fitzgerald",
+     "action": "reit",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    }
+   ]
   },
   "ADP": {
    "upgrades_30d": 0,
@@ -47,7 +139,44 @@
    "net_30d": 0,
    "last_action": "reit",
    "last_firm": "Cantor Fitzgerald",
-   "last_date": "2026-08-05"
+   "last_date": "2026-08-05",
+   "actions": [
+    {
+     "date": "2026-08-05",
+     "firm": "Cantor Fitzgerald",
+     "action": "reit",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-08-03",
+     "firm": "Cantor Fitzgerald",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-07-30",
+     "firm": "Citigroup",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-07-30",
+     "firm": "Morgan Stanley",
+     "action": "main",
+     "to_grade": "Equal-Weight",
+     "from_grade": "Equal-Weight"
+    },
+    {
+     "date": "2026-07-30",
+     "firm": "Stifel",
+     "action": "main",
+     "to_grade": "Hold",
+     "from_grade": "Hold"
+    }
+   ]
   },
   "ADS.DE": {
    "upgrades_30d": 0,
@@ -55,7 +184,8 @@
    "net_30d": 0,
    "last_action": null,
    "last_firm": null,
-   "last_date": null
+   "last_date": null,
+   "actions": []
   },
   "ADSK": {
    "upgrades_30d": 2,
@@ -63,7 +193,23 @@
    "net_30d": 2,
    "last_action": "init",
    "last_firm": "Goldman Sachs",
-   "last_date": "2026-08-11"
+   "last_date": "2026-08-11",
+   "actions": [
+    {
+     "date": "2026-08-11",
+     "firm": "Goldman Sachs",
+     "action": "init",
+     "to_grade": "Neutral",
+     "from_grade": "Sell"
+    },
+    {
+     "date": "2026-07-23",
+     "firm": "Guggenheim",
+     "action": "init",
+     "to_grade": "Buy",
+     "from_grade": null
+    }
+   ]
   },
   "AEP": {
    "upgrades_30d": 0,
@@ -71,7 +217,44 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "Truist Securities",
-   "last_date": "2026-08-17"
+   "last_date": "2026-08-17",
+   "actions": [
+    {
+     "date": "2026-08-17",
+     "firm": "Truist Securities",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-05",
+     "firm": "Citigroup",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-08-03",
+     "firm": "Barclays",
+     "action": "main",
+     "to_grade": "Equal-Weight",
+     "from_grade": "Equal-Weight"
+    },
+    {
+     "date": "2026-07-31",
+     "firm": "Mizuho",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-07-22",
+     "firm": "Morgan Stanley",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    }
+   ]
   },
   "AIR.DE": {
    "upgrades_30d": 0,
@@ -79,7 +262,8 @@
    "net_30d": 0,
    "last_action": null,
    "last_firm": null,
-   "last_date": null
+   "last_date": null,
+   "actions": []
   },
   "ALV.DE": {
    "upgrades_30d": 0,
@@ -87,7 +271,8 @@
    "net_30d": 0,
    "last_action": null,
    "last_firm": null,
-   "last_date": null
+   "last_date": null,
+   "actions": []
   },
   "AMAT": {
    "upgrades_30d": 0,
@@ -95,7 +280,44 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "UBS",
-   "last_date": "2026-08-14"
+   "last_date": "2026-08-14",
+   "actions": [
+    {
+     "date": "2026-08-14",
+     "firm": "UBS",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-14",
+     "firm": "Craig-Hallum",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-14",
+     "firm": "Morgan Stanley",
+     "action": "main",
+     "to_grade": "Equal-Weight",
+     "from_grade": "Equal-Weight"
+    },
+    {
+     "date": "2026-08-14",
+     "firm": "Bernstein",
+     "action": "main",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    },
+    {
+     "date": "2026-08-14",
+     "firm": "TD Cowen",
+     "action": "reit",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    }
+   ]
   },
   "AMD": {
    "upgrades_30d": 0,
@@ -103,7 +325,44 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "Argus Research",
-   "last_date": "2026-08-06"
+   "last_date": "2026-08-06",
+   "actions": [
+    {
+     "date": "2026-08-06",
+     "firm": "Argus Research",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-06",
+     "firm": "Rosenblatt",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-05",
+     "firm": "DA Davidson",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-05",
+     "firm": "Morgan Stanley",
+     "action": "main",
+     "to_grade": "Equal-Weight",
+     "from_grade": "Equal-Weight"
+    },
+    {
+     "date": "2026-08-05",
+     "firm": "JP Morgan",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    }
+   ]
   },
   "AMGN": {
    "upgrades_30d": 0,
@@ -111,7 +370,44 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "Argus Research",
-   "last_date": "2026-08-19"
+   "last_date": "2026-08-19",
+   "actions": [
+    {
+     "date": "2026-08-19",
+     "firm": "Argus Research",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-18",
+     "firm": "Mizuho",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-08-18",
+     "firm": "Cantor Fitzgerald",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-08-14",
+     "firm": "Barclays",
+     "action": "main",
+     "to_grade": "Equal-Weight",
+     "from_grade": "Equal-Weight"
+    },
+    {
+     "date": "2026-08-10",
+     "firm": "Guggenheim",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    }
+   ]
   },
   "AMZN": {
    "upgrades_30d": 0,
@@ -119,15 +415,44 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "UBS",
-   "last_date": "2026-07-31"
-  },
-  "ANSS": {
-   "upgrades_30d": 0,
-   "downgrades_30d": 0,
-   "net_30d": 0,
-   "last_action": null,
-   "last_firm": null,
-   "last_date": null
+   "last_date": "2026-07-31",
+   "actions": [
+    {
+     "date": "2026-07-31",
+     "firm": "UBS",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-07-31",
+     "firm": "Telsey Advisory Group",
+     "action": "main",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    },
+    {
+     "date": "2026-07-31",
+     "firm": "Bernstein",
+     "action": "main",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    },
+    {
+     "date": "2026-07-31",
+     "firm": "Citigroup",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-07-31",
+     "firm": "RBC Capital",
+     "action": "main",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    }
+   ]
   },
   "APP": {
    "upgrades_30d": 0,
@@ -135,7 +460,44 @@
    "net_30d": -3,
    "last_action": "main",
    "last_firm": "Wells Fargo",
-   "last_date": "2026-08-19"
+   "last_date": "2026-08-19",
+   "actions": [
+    {
+     "date": "2026-08-19",
+     "firm": "Wells Fargo",
+     "action": "main",
+     "to_grade": "Equal-Weight",
+     "from_grade": "Equal-Weight"
+    },
+    {
+     "date": "2026-08-17",
+     "firm": "Benchmark",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-12",
+     "firm": "BTIG",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-11",
+     "firm": "B of A Securities",
+     "action": "down",
+     "to_grade": "Neutral",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-07",
+     "firm": "Citigroup",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    }
+   ]
   },
   "ARM": {
    "upgrades_30d": 0,
@@ -143,7 +505,44 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "Rosenblatt",
-   "last_date": "2026-07-31"
+   "last_date": "2026-07-31",
+   "actions": [
+    {
+     "date": "2026-07-31",
+     "firm": "Rosenblatt",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-07-30",
+     "firm": "UBS",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-07-30",
+     "firm": "Morgan Stanley",
+     "action": "main",
+     "to_grade": "Equal-Weight",
+     "from_grade": "Equal-Weight"
+    },
+    {
+     "date": "2026-07-30",
+     "firm": "RBC Capital",
+     "action": "main",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    },
+    {
+     "date": "2026-07-30",
+     "firm": "TD Cowen",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    }
+   ]
   },
   "ASML": {
    "upgrades_30d": 0,
@@ -151,7 +550,8 @@
    "net_30d": 0,
    "last_action": null,
    "last_firm": null,
-   "last_date": null
+   "last_date": null,
+   "actions": []
   },
   "AVGO": {
    "upgrades_30d": 0,
@@ -159,7 +559,8 @@
    "net_30d": 0,
    "last_action": null,
    "last_firm": null,
-   "last_date": null
+   "last_date": null,
+   "actions": []
   },
   "AXON": {
    "upgrades_30d": 0,
@@ -167,7 +568,37 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "UBS",
-   "last_date": "2026-08-06"
+   "last_date": "2026-08-06",
+   "actions": [
+    {
+     "date": "2026-08-06",
+     "firm": "UBS",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-08-06",
+     "firm": "Morgan Stanley",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-08-06",
+     "firm": "Piper Sandler",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-08-06",
+     "firm": "Barclays",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    }
+   ]
   },
   "AXP": {
    "upgrades_30d": 0,
@@ -175,7 +606,44 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "Piper Sandler",
-   "last_date": "2026-08-12"
+   "last_date": "2026-08-12",
+   "actions": [
+    {
+     "date": "2026-08-12",
+     "firm": "Piper Sandler",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-08-03",
+     "firm": "UBS",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-07-27",
+     "firm": "Morgan Stanley",
+     "action": "main",
+     "to_grade": "Equal-Weight",
+     "from_grade": "Equal-Weight"
+    },
+    {
+     "date": "2026-07-27",
+     "firm": "Evercore ISI Group",
+     "action": "main",
+     "to_grade": "In-Line",
+     "from_grade": "In-Line"
+    },
+    {
+     "date": "2026-07-27",
+     "firm": "BTIG",
+     "action": "main",
+     "to_grade": "Sell",
+     "from_grade": "Sell"
+    }
+   ]
   },
   "AZN": {
    "upgrades_30d": 0,
@@ -183,7 +651,8 @@
    "net_30d": 0,
    "last_action": null,
    "last_firm": null,
-   "last_date": null
+   "last_date": null,
+   "actions": []
   },
   "BA": {
    "upgrades_30d": 2,
@@ -191,7 +660,44 @@
    "net_30d": 2,
    "last_action": "up",
    "last_firm": "Argus Research",
-   "last_date": "2026-08-11"
+   "last_date": "2026-08-11",
+   "actions": [
+    {
+     "date": "2026-08-11",
+     "firm": "Argus Research",
+     "action": "up",
+     "to_grade": "Buy",
+     "from_grade": "Hold"
+    },
+    {
+     "date": "2026-08-06",
+     "firm": "Tigress Financial",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-03",
+     "firm": "BNP Paribas",
+     "action": "up",
+     "to_grade": "Outperform",
+     "from_grade": "Underperform"
+    },
+    {
+     "date": "2026-07-29",
+     "firm": "JP Morgan",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-07-29",
+     "firm": "RBC Capital",
+     "action": "main",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    }
+   ]
   },
   "BAS.DE": {
    "upgrades_30d": 0,
@@ -199,7 +705,8 @@
    "net_30d": 0,
    "last_action": null,
    "last_firm": null,
-   "last_date": null
+   "last_date": null,
+   "actions": []
   },
   "BAYN.DE": {
    "upgrades_30d": 0,
@@ -207,7 +714,8 @@
    "net_30d": 0,
    "last_action": null,
    "last_firm": null,
-   "last_date": null
+   "last_date": null,
+   "actions": []
   },
   "BEI.DE": {
    "upgrades_30d": 0,
@@ -215,7 +723,8 @@
    "net_30d": 0,
    "last_action": null,
    "last_firm": null,
-   "last_date": null
+   "last_date": null,
+   "actions": []
   },
   "BIIB": {
    "upgrades_30d": 1,
@@ -223,7 +732,44 @@
    "net_30d": 1,
    "last_action": "up",
    "last_firm": "Wolfe Research",
-   "last_date": "2026-08-13"
+   "last_date": "2026-08-13",
+   "actions": [
+    {
+     "date": "2026-08-13",
+     "firm": "Wolfe Research",
+     "action": "up",
+     "to_grade": "Outperform",
+     "from_grade": "Peer Perform"
+    },
+    {
+     "date": "2026-08-04",
+     "firm": "Mizuho",
+     "action": "main",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    },
+    {
+     "date": "2026-08-03",
+     "firm": "Citigroup",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-07-30",
+     "firm": "UBS",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-07-30",
+     "firm": "HC Wainwright & Co.",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    }
+   ]
   },
   "BKNG": {
    "upgrades_30d": 0,
@@ -231,7 +777,44 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "Argus Research",
-   "last_date": "2026-08-10"
+   "last_date": "2026-08-10",
+   "actions": [
+    {
+     "date": "2026-08-10",
+     "firm": "Argus Research",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-05",
+     "firm": "UBS",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-05",
+     "firm": "Benchmark",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-05",
+     "firm": "Citigroup",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-05",
+     "firm": "Oppenheimer",
+     "action": "main",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    }
+   ]
   },
   "BKR": {
    "upgrades_30d": 0,
@@ -239,7 +822,44 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "UBS",
-   "last_date": "2026-07-28"
+   "last_date": "2026-07-28",
+   "actions": [
+    {
+     "date": "2026-07-28",
+     "firm": "UBS",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-07-28",
+     "firm": "TD Cowen",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-07-28",
+     "firm": "Piper Sandler",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-07-28",
+     "firm": "Stifel",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-07-28",
+     "firm": "Susquehanna",
+     "action": "main",
+     "to_grade": "Positive",
+     "from_grade": "Positive"
+    }
+   ]
   },
   "BMW.DE": {
    "upgrades_30d": 0,
@@ -247,7 +867,8 @@
    "net_30d": 0,
    "last_action": null,
    "last_firm": null,
-   "last_date": null
+   "last_date": null,
+   "actions": []
   },
   "BNR.DE": {
    "upgrades_30d": 0,
@@ -255,7 +876,8 @@
    "net_30d": 0,
    "last_action": null,
    "last_firm": null,
-   "last_date": null
+   "last_date": null,
+   "actions": []
   },
   "CAT": {
    "upgrades_30d": 0,
@@ -263,7 +885,8 @@
    "net_30d": 0,
    "last_action": null,
    "last_firm": null,
-   "last_date": null
+   "last_date": null,
+   "actions": []
   },
   "CBK.DE": {
    "upgrades_30d": 0,
@@ -271,7 +894,8 @@
    "net_30d": 0,
    "last_action": null,
    "last_firm": null,
-   "last_date": null
+   "last_date": null,
+   "actions": []
   },
   "CCEP": {
    "upgrades_30d": 0,
@@ -279,7 +903,44 @@
    "net_30d": -1,
    "last_action": "down",
    "last_firm": "UBS",
-   "last_date": "2026-08-13"
+   "last_date": "2026-08-13",
+   "actions": [
+    {
+     "date": "2026-08-13",
+     "firm": "UBS",
+     "action": "down",
+     "to_grade": "Neutral",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-06",
+     "firm": "Barclays",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-08-05",
+     "firm": "Evercore ISI Group",
+     "action": "main",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    },
+    {
+     "date": "2026-08-03",
+     "firm": "Wells Fargo",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-07-21",
+     "firm": "Barclays",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    }
+   ]
   },
   "CDNS": {
    "upgrades_30d": 0,
@@ -287,7 +948,44 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "B of A Securities",
-   "last_date": "2026-07-28"
+   "last_date": "2026-07-28",
+   "actions": [
+    {
+     "date": "2026-07-28",
+     "firm": "B of A Securities",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-07-28",
+     "firm": "Rosenblatt",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-07-28",
+     "firm": "Citigroup",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-07-28",
+     "firm": "Baird",
+     "action": "main",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    },
+    {
+     "date": "2026-07-28",
+     "firm": "Needham",
+     "action": "reit",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    }
+   ]
   },
   "CDW": {
    "upgrades_30d": 0,
@@ -295,7 +993,16 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "Morgan Stanley",
-   "last_date": "2026-08-06"
+   "last_date": "2026-08-06",
+   "actions": [
+    {
+     "date": "2026-08-06",
+     "firm": "Morgan Stanley",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    }
+   ]
   },
   "CEG": {
    "upgrades_30d": 0,
@@ -303,7 +1010,44 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "Argus Research",
-   "last_date": "2026-08-11"
+   "last_date": "2026-08-11",
+   "actions": [
+    {
+     "date": "2026-08-11",
+     "firm": "Argus Research",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-07-28",
+     "firm": "UBS",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-07-28",
+     "firm": "Barclays",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-07-27",
+     "firm": "TD Cowen",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-07-27",
+     "firm": "Wells Fargo",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    }
+   ]
   },
   "CHTR": {
    "upgrades_30d": 0,
@@ -311,7 +1055,44 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "JP Morgan",
-   "last_date": "2026-07-29"
+   "last_date": "2026-07-29",
+   "actions": [
+    {
+     "date": "2026-07-29",
+     "firm": "JP Morgan",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-07-28",
+     "firm": "Citigroup",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-07-27",
+     "firm": "UBS",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-07-27",
+     "firm": "TD Cowen",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-07-27",
+     "firm": "RBC Capital",
+     "action": "main",
+     "to_grade": "Sector Perform",
+     "from_grade": "Sector Perform"
+    }
+   ]
   },
   "CMCSA": {
    "upgrades_30d": 0,
@@ -319,7 +1100,37 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "Wells Fargo",
-   "last_date": "2026-07-24"
+   "last_date": "2026-07-24",
+   "actions": [
+    {
+     "date": "2026-07-24",
+     "firm": "Wells Fargo",
+     "action": "main",
+     "to_grade": "Underweight",
+     "from_grade": "Underweight"
+    },
+    {
+     "date": "2026-07-24",
+     "firm": "RBC Capital",
+     "action": "main",
+     "to_grade": "Sector Perform",
+     "from_grade": "Sector Perform"
+    },
+    {
+     "date": "2026-07-24",
+     "firm": "Barclays",
+     "action": "main",
+     "to_grade": "Equal-Weight",
+     "from_grade": "Equal-Weight"
+    },
+    {
+     "date": "2026-07-24",
+     "firm": "Rosenblatt",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    }
+   ]
   },
   "CON.DE": {
    "upgrades_30d": 0,
@@ -327,7 +1138,8 @@
    "net_30d": 0,
    "last_action": null,
    "last_firm": null,
-   "last_date": null
+   "last_date": null,
+   "actions": []
   },
   "COST": {
    "upgrades_30d": 0,
@@ -335,7 +1147,8 @@
    "net_30d": 0,
    "last_action": null,
    "last_firm": null,
-   "last_date": null
+   "last_date": null,
+   "actions": []
   },
   "CPRT": {
    "upgrades_30d": 0,
@@ -343,15 +1156,54 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "Barclays",
-   "last_date": "2026-07-22"
+   "last_date": "2026-07-22",
+   "actions": [
+    {
+     "date": "2026-07-22",
+     "firm": "Barclays",
+     "action": "main",
+     "to_grade": "Underweight",
+     "from_grade": "Underweight"
+    }
+   ]
   },
   "CRM": {
    "upgrades_30d": 0,
-   "downgrades_30d": 1,
-   "net_30d": -1,
-   "last_action": "main",
-   "last_firm": "Citigroup",
-   "last_date": "2026-08-18"
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "reit",
+   "last_firm": "Cantor Fitzgerald",
+   "last_date": "2026-08-20",
+   "actions": [
+    {
+     "date": "2026-08-20",
+     "firm": "Cantor Fitzgerald",
+     "action": "reit",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-08-18",
+     "firm": "Citigroup",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-08-12",
+     "firm": "UBS",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-08-12",
+     "firm": "Wells Fargo",
+     "action": "main",
+     "to_grade": "Equal-Weight",
+     "from_grade": "Equal-Weight"
+    }
+   ]
   },
   "CRWD": {
    "upgrades_30d": 1,
@@ -359,7 +1211,44 @@
    "net_30d": 1,
    "last_action": "main",
    "last_firm": "Mizuho",
-   "last_date": "2026-08-19"
+   "last_date": "2026-08-19",
+   "actions": [
+    {
+     "date": "2026-08-19",
+     "firm": "Mizuho",
+     "action": "main",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    },
+    {
+     "date": "2026-08-19",
+     "firm": "Truist Securities",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-19",
+     "firm": "Cantor Fitzgerald",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-08-18",
+     "firm": "Barclays",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-08-18",
+     "firm": "Benchmark",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    }
+   ]
   },
   "CSCO": {
    "upgrades_30d": 0,
@@ -367,7 +1256,44 @@
    "net_30d": -1,
    "last_action": "down",
    "last_firm": "HSBC",
-   "last_date": "2026-08-14"
+   "last_date": "2026-08-14",
+   "actions": [
+    {
+     "date": "2026-08-14",
+     "firm": "HSBC",
+     "action": "down",
+     "to_grade": "Hold",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-13",
+     "firm": "UBS",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-13",
+     "firm": "Truist Securities",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-13",
+     "firm": "Barclays",
+     "action": "main",
+     "to_grade": "Equal-Weight",
+     "from_grade": "Equal-Weight"
+    },
+    {
+     "date": "2026-08-13",
+     "firm": "Wells Fargo",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    }
+   ]
   },
   "CSGP": {
    "upgrades_30d": 0,
@@ -375,7 +1301,44 @@
    "net_30d": -3,
    "last_action": "down",
    "last_firm": "Citigroup",
-   "last_date": "2026-07-29"
+   "last_date": "2026-07-29",
+   "actions": [
+    {
+     "date": "2026-07-29",
+     "firm": "Citigroup",
+     "action": "down",
+     "to_grade": "Neutral",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-07-29",
+     "firm": "JP Morgan",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-07-29",
+     "firm": "William Blair",
+     "action": "down",
+     "to_grade": "Market Perform",
+     "from_grade": "Outperform"
+    },
+    {
+     "date": "2026-07-29",
+     "firm": "Citizens",
+     "action": "main",
+     "to_grade": "Market Outperform",
+     "from_grade": "Market Outperform"
+    },
+    {
+     "date": "2026-07-29",
+     "firm": "Wolfe Research",
+     "action": "main",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    }
+   ]
   },
   "CSX": {
    "upgrades_30d": 0,
@@ -383,7 +1346,44 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "Citigroup",
-   "last_date": "2026-07-24"
+   "last_date": "2026-07-24",
+   "actions": [
+    {
+     "date": "2026-07-24",
+     "firm": "Citigroup",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-07-23",
+     "firm": "JP Morgan",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-07-23",
+     "firm": "B of A Securities",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-07-23",
+     "firm": "TD Cowen",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-07-23",
+     "firm": "BMO Capital",
+     "action": "main",
+     "to_grade": "Market Perform",
+     "from_grade": "Market Perform"
+    }
+   ]
   },
   "CTAS": {
    "upgrades_30d": 0,
@@ -391,7 +1391,8 @@
    "net_30d": 0,
    "last_action": null,
    "last_firm": null,
-   "last_date": null
+   "last_date": null,
+   "actions": []
   },
   "CTSH": {
    "upgrades_30d": 0,
@@ -399,7 +1400,44 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "Citigroup",
-   "last_date": "2026-07-30"
+   "last_date": "2026-07-30",
+   "actions": [
+    {
+     "date": "2026-07-30",
+     "firm": "Citigroup",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-07-30",
+     "firm": "Susquehanna",
+     "action": "main",
+     "to_grade": "Positive",
+     "from_grade": "Positive"
+    },
+    {
+     "date": "2026-07-30",
+     "firm": "Morgan Stanley",
+     "action": "main",
+     "to_grade": "Equal-Weight",
+     "from_grade": "Equal-Weight"
+    },
+    {
+     "date": "2026-07-30",
+     "firm": "TD Cowen",
+     "action": "main",
+     "to_grade": "Hold",
+     "from_grade": "Hold"
+    },
+    {
+     "date": "2026-07-30",
+     "firm": "Wells Fargo",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    }
+   ]
   },
   "CVX": {
    "upgrades_30d": 0,
@@ -407,7 +1445,44 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "Morgan Stanley",
-   "last_date": "2026-08-19"
+   "last_date": "2026-08-19",
+   "actions": [
+    {
+     "date": "2026-08-19",
+     "firm": "Morgan Stanley",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-08-17",
+     "firm": "Barclays",
+     "action": "main",
+     "to_grade": "Equal-Weight",
+     "from_grade": "Equal-Weight"
+    },
+    {
+     "date": "2026-08-05",
+     "firm": "TD Cowen",
+     "action": "main",
+     "to_grade": "Hold",
+     "from_grade": "Hold"
+    },
+    {
+     "date": "2026-08-03",
+     "firm": "Bernstein",
+     "action": "main",
+     "to_grade": "Market Perform",
+     "from_grade": "Market Perform"
+    },
+    {
+     "date": "2026-08-03",
+     "firm": "Barclays",
+     "action": "main",
+     "to_grade": "Equal-Weight",
+     "from_grade": "Equal-Weight"
+    }
+   ]
   },
   "DASH": {
    "upgrades_30d": 0,
@@ -415,7 +1490,44 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "Roth Capital",
-   "last_date": "2026-08-10"
+   "last_date": "2026-08-10",
+   "actions": [
+    {
+     "date": "2026-08-10",
+     "firm": "Roth Capital",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-08-07",
+     "firm": "Wells Fargo",
+     "action": "main",
+     "to_grade": "Equal-Weight",
+     "from_grade": "Equal-Weight"
+    },
+    {
+     "date": "2026-08-07",
+     "firm": "Susquehanna",
+     "action": "main",
+     "to_grade": "Positive",
+     "from_grade": "Positive"
+    },
+    {
+     "date": "2026-08-06",
+     "firm": "Citigroup",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-06",
+     "firm": "TD Cowen",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    }
+   ]
   },
   "DB1.DE": {
    "upgrades_30d": 0,
@@ -423,7 +1535,8 @@
    "net_30d": 0,
    "last_action": null,
    "last_firm": null,
-   "last_date": null
+   "last_date": null,
+   "actions": []
   },
   "DBK.DE": {
    "upgrades_30d": 0,
@@ -431,15 +1544,53 @@
    "net_30d": 0,
    "last_action": null,
    "last_firm": null,
-   "last_date": null
+   "last_date": null,
+   "actions": []
   },
   "DDOG": {
    "upgrades_30d": 0,
-   "downgrades_30d": 1,
-   "net_30d": -1,
+   "downgrades_30d": 0,
+   "net_30d": 0,
    "last_action": "main",
    "last_firm": "Scotiabank",
-   "last_date": "2026-08-08"
+   "last_date": "2026-08-08",
+   "actions": [
+    {
+     "date": "2026-08-08",
+     "firm": "Scotiabank",
+     "action": "main",
+     "to_grade": "Sector Outperform",
+     "from_grade": "Sector Outperform"
+    },
+    {
+     "date": "2026-08-07",
+     "firm": "UBS",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-07",
+     "firm": "Citigroup",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-07",
+     "firm": "Macquarie",
+     "action": "main",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    },
+    {
+     "date": "2026-08-07",
+     "firm": "Needham",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    }
+   ]
   },
   "DHL.DE": {
    "upgrades_30d": 0,
@@ -447,7 +1598,8 @@
    "net_30d": 0,
    "last_action": null,
    "last_firm": null,
-   "last_date": null
+   "last_date": null,
+   "actions": []
   },
   "DIS": {
    "upgrades_30d": 0,
@@ -455,7 +1607,44 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "Wells Fargo",
-   "last_date": "2026-08-06"
+   "last_date": "2026-08-06",
+   "actions": [
+    {
+     "date": "2026-08-06",
+     "firm": "Wells Fargo",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-08-06",
+     "firm": "Argus Research",
+     "action": "reit",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-06",
+     "firm": "Benchmark",
+     "action": "reit",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-06",
+     "firm": "Barclays",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-08-06",
+     "firm": "Guggenheim",
+     "action": "reit",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    }
+   ]
   },
   "DTE.DE": {
    "upgrades_30d": 0,
@@ -463,7 +1652,8 @@
    "net_30d": 0,
    "last_action": null,
    "last_firm": null,
-   "last_date": null
+   "last_date": null,
+   "actions": []
   },
   "DTG.DE": {
    "upgrades_30d": 0,
@@ -471,7 +1661,8 @@
    "net_30d": 0,
    "last_action": null,
    "last_firm": null,
-   "last_date": null
+   "last_date": null,
+   "actions": []
   },
   "DXCM": {
    "upgrades_30d": 0,
@@ -479,15 +1670,44 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "Argus Research",
-   "last_date": "2026-08-04"
-  },
-  "EA": {
-   "upgrades_30d": 0,
-   "downgrades_30d": 0,
-   "net_30d": 0,
-   "last_action": null,
-   "last_firm": null,
-   "last_date": null
+   "last_date": "2026-08-04",
+   "actions": [
+    {
+     "date": "2026-08-04",
+     "firm": "Argus Research",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-03",
+     "firm": "Canaccord Genuity",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-07-31",
+     "firm": "Citigroup",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-07-31",
+     "firm": "RBC Capital",
+     "action": "main",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    },
+    {
+     "date": "2026-07-31",
+     "firm": "Mizuho",
+     "action": "main",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    }
+   ]
   },
   "ENR.DE": {
    "upgrades_30d": 0,
@@ -495,7 +1715,8 @@
    "net_30d": 0,
    "last_action": null,
    "last_firm": null,
-   "last_date": null
+   "last_date": null,
+   "actions": []
   },
   "EOAN.DE": {
    "upgrades_30d": 0,
@@ -503,7 +1724,8 @@
    "net_30d": 0,
    "last_action": null,
    "last_firm": null,
-   "last_date": null
+   "last_date": null,
+   "actions": []
   },
   "EXC": {
    "upgrades_30d": 0,
@@ -511,7 +1733,16 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "Truist Securities",
-   "last_date": "2026-08-13"
+   "last_date": "2026-08-13",
+   "actions": [
+    {
+     "date": "2026-08-13",
+     "firm": "Truist Securities",
+     "action": "main",
+     "to_grade": "Hold",
+     "from_grade": "Hold"
+    }
+   ]
   },
   "FANG": {
    "upgrades_30d": 0,
@@ -519,7 +1750,8 @@
    "net_30d": 0,
    "last_action": null,
    "last_firm": null,
-   "last_date": null
+   "last_date": null,
+   "actions": []
   },
   "FAST": {
    "upgrades_30d": 0,
@@ -527,7 +1759,8 @@
    "net_30d": 0,
    "last_action": null,
    "last_firm": null,
-   "last_date": null
+   "last_date": null,
+   "actions": []
   },
   "FRE.DE": {
    "upgrades_30d": 0,
@@ -535,15 +1768,53 @@
    "net_30d": 0,
    "last_action": null,
    "last_firm": null,
-   "last_date": null
+   "last_date": null,
+   "actions": []
   },
   "FTNT": {
-   "upgrades_30d": 1,
+   "upgrades_30d": 0,
    "downgrades_30d": 0,
-   "net_30d": 1,
+   "net_30d": 0,
    "last_action": "main",
    "last_firm": "Susquehanna",
-   "last_date": "2026-07-31"
+   "last_date": "2026-07-31",
+   "actions": [
+    {
+     "date": "2026-07-31",
+     "firm": "Susquehanna",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-07-30",
+     "firm": "Citigroup",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-07-30",
+     "firm": "Piper Sandler",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-07-30",
+     "firm": "RBC Capital",
+     "action": "main",
+     "to_grade": "Sector Perform",
+     "from_grade": "Sector Perform"
+    },
+    {
+     "date": "2026-07-30",
+     "firm": "Morgan Stanley",
+     "action": "main",
+     "to_grade": "Equal-Weight",
+     "from_grade": "Equal-Weight"
+    }
+   ]
   },
   "GEHC": {
    "upgrades_30d": 0,
@@ -551,7 +1822,44 @@
    "net_30d": 0,
    "last_action": "reit",
    "last_firm": "BTIG",
-   "last_date": "2026-08-19"
+   "last_date": "2026-08-19",
+   "actions": [
+    {
+     "date": "2026-08-19",
+     "firm": "BTIG",
+     "action": "reit",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-07-31",
+     "firm": "UBS",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-07-30",
+     "firm": "Citigroup",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-07-30",
+     "firm": "Evercore ISI Group",
+     "action": "main",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    },
+    {
+     "date": "2026-07-30",
+     "firm": "Wells Fargo",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    }
+   ]
   },
   "GFS": {
    "upgrades_30d": 0,
@@ -559,7 +1867,23 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "TD Cowen",
-   "last_date": "2026-08-06"
+   "last_date": "2026-08-06",
+   "actions": [
+    {
+     "date": "2026-08-06",
+     "firm": "TD Cowen",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-06",
+     "firm": "UBS",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    }
+   ]
   },
   "GILD": {
    "upgrades_30d": 0,
@@ -567,7 +1891,44 @@
    "net_30d": -1,
    "last_action": "main",
    "last_firm": "RBC Capital",
-   "last_date": "2026-08-05"
+   "last_date": "2026-08-05",
+   "actions": [
+    {
+     "date": "2026-08-05",
+     "firm": "RBC Capital",
+     "action": "main",
+     "to_grade": "Sector Perform",
+     "from_grade": "Sector Perform"
+    },
+    {
+     "date": "2026-08-05",
+     "firm": "Cantor Fitzgerald",
+     "action": "reit",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-08-05",
+     "firm": "Needham",
+     "action": "reit",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-07-29",
+     "firm": "Barclays",
+     "action": "main",
+     "to_grade": "Equal-Weight",
+     "from_grade": "Equal-Weight"
+    },
+    {
+     "date": "2026-07-27",
+     "firm": "Morgan Stanley",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    }
+   ]
   },
   "GOOGL": {
    "upgrades_30d": 0,
@@ -575,15 +1936,61 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "UBS",
-   "last_date": "2026-07-23"
+   "last_date": "2026-07-23",
+   "actions": [
+    {
+     "date": "2026-07-23",
+     "firm": "UBS",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-07-23",
+     "firm": "Morgan Stanley",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-07-23",
+     "firm": "Truist Securities",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-07-23",
+     "firm": "BMO Capital",
+     "action": "main",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    },
+    {
+     "date": "2026-07-23",
+     "firm": "DA Davidson",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    }
+   ]
   },
   "GS": {
-   "upgrades_30d": 1,
+   "upgrades_30d": 0,
    "downgrades_30d": 0,
-   "net_30d": 1,
+   "net_30d": 0,
    "last_action": "main",
    "last_firm": "UBS",
-   "last_date": "2026-08-03"
+   "last_date": "2026-08-03",
+   "actions": [
+    {
+     "date": "2026-08-03",
+     "firm": "UBS",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    }
+   ]
   },
   "HD": {
    "upgrades_30d": 0,
@@ -591,7 +1998,44 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "Mizuho",
-   "last_date": "2026-08-19"
+   "last_date": "2026-08-19",
+   "actions": [
+    {
+     "date": "2026-08-19",
+     "firm": "Mizuho",
+     "action": "main",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    },
+    {
+     "date": "2026-08-19",
+     "firm": "DA Davidson",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-19",
+     "firm": "UBS",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-19",
+     "firm": "Truist Securities",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-19",
+     "firm": "Keybanc",
+     "action": "reit",
+     "to_grade": "Sector Weight",
+     "from_grade": "Sector Weight"
+    }
+   ]
   },
   "HEI.DE": {
    "upgrades_30d": 0,
@@ -599,7 +2043,8 @@
    "net_30d": 0,
    "last_action": null,
    "last_firm": null,
-   "last_date": null
+   "last_date": null,
+   "actions": []
   },
   "HEN3.DE": {
    "upgrades_30d": 0,
@@ -607,7 +2052,8 @@
    "net_30d": 0,
    "last_action": null,
    "last_firm": null,
-   "last_date": null
+   "last_date": null,
+   "actions": []
   },
   "HNR1.DE": {
    "upgrades_30d": 0,
@@ -615,7 +2061,8 @@
    "net_30d": 0,
    "last_action": null,
    "last_firm": null,
-   "last_date": null
+   "last_date": null,
+   "actions": []
   },
   "HON": {
    "upgrades_30d": 1,
@@ -623,7 +2070,44 @@
    "net_30d": 1,
    "last_action": "main",
    "last_firm": "RBC Capital",
-   "last_date": "2026-08-18"
+   "last_date": "2026-08-18",
+   "actions": [
+    {
+     "date": "2026-08-18",
+     "firm": "RBC Capital",
+     "action": "main",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    },
+    {
+     "date": "2026-08-14",
+     "firm": "JP Morgan",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-07-28",
+     "firm": "B of A Securities",
+     "action": "up",
+     "to_grade": "Neutral",
+     "from_grade": "Underperform"
+    },
+    {
+     "date": "2026-07-27",
+     "firm": "Mizuho",
+     "action": "main",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    },
+    {
+     "date": "2026-07-27",
+     "firm": "BMO Capital",
+     "action": "main",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    }
+   ]
   },
   "IBM": {
    "upgrades_30d": 1,
@@ -631,7 +2115,44 @@
    "net_30d": 1,
    "last_action": "main",
    "last_firm": "Citigroup",
-   "last_date": "2026-07-24"
+   "last_date": "2026-07-24",
+   "actions": [
+    {
+     "date": "2026-07-24",
+     "firm": "Citigroup",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-07-24",
+     "firm": "Susquehanna",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-07-23",
+     "firm": "Morgan Stanley",
+     "action": "main",
+     "to_grade": "Equal-Weight",
+     "from_grade": "Equal-Weight"
+    },
+    {
+     "date": "2026-07-23",
+     "firm": "BMO Capital",
+     "action": "main",
+     "to_grade": "Market Perform",
+     "from_grade": "Market Perform"
+    },
+    {
+     "date": "2026-07-23",
+     "firm": "RBC Capital",
+     "action": "reit",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    }
+   ]
   },
   "IDXX": {
    "upgrades_30d": 0,
@@ -639,7 +2160,37 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "Barclays",
-   "last_date": "2026-08-11"
+   "last_date": "2026-08-11",
+   "actions": [
+    {
+     "date": "2026-08-11",
+     "firm": "Barclays",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-08-05",
+     "firm": "UBS",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-08-05",
+     "firm": "Citigroup",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-07-27",
+     "firm": "UBS",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    }
+   ]
   },
   "IFX.DE": {
    "upgrades_30d": 0,
@@ -647,7 +2198,8 @@
    "net_30d": 0,
    "last_action": null,
    "last_firm": null,
-   "last_date": null
+   "last_date": null,
+   "actions": []
   },
   "INTC": {
    "upgrades_30d": 0,
@@ -655,15 +2207,89 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "B of A Securities",
-   "last_date": "2026-08-12"
+   "last_date": "2026-08-12",
+   "actions": [
+    {
+     "date": "2026-08-12",
+     "firm": "B of A Securities",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-12",
+     "firm": "UBS",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-07-28",
+     "firm": "B of A Securities",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-07-27",
+     "firm": "Baird",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-07-25",
+     "firm": "DA Davidson",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    }
+   ]
   },
   "INTU": {
    "upgrades_30d": 0,
-   "downgrades_30d": 3,
-   "net_30d": -3,
+   "downgrades_30d": 2,
+   "net_30d": -2,
    "last_action": "main",
    "last_firm": "Deutsche Bank",
-   "last_date": "2026-08-19"
+   "last_date": "2026-08-19",
+   "actions": [
+    {
+     "date": "2026-08-19",
+     "firm": "Deutsche Bank",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-19",
+     "firm": "Piper Sandler",
+     "action": "main",
+     "to_grade": "Underweight",
+     "from_grade": "Underweight"
+    },
+    {
+     "date": "2026-08-17",
+     "firm": "Mizuho",
+     "action": "main",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    },
+    {
+     "date": "2026-08-13",
+     "firm": "Citigroup",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-11",
+     "firm": "TD Cowen",
+     "action": "main",
+     "to_grade": "Hold",
+     "from_grade": "Hold"
+    }
+   ]
   },
   "ISRG": {
    "upgrades_30d": 1,
@@ -671,7 +2297,23 @@
    "net_30d": 0,
    "last_action": "up",
    "last_firm": "Oppenheimer",
-   "last_date": "2026-08-12"
+   "last_date": "2026-08-12",
+   "actions": [
+    {
+     "date": "2026-08-12",
+     "firm": "Oppenheimer",
+     "action": "up",
+     "to_grade": "Outperform",
+     "from_grade": "Perform"
+    },
+    {
+     "date": "2026-07-30",
+     "firm": "HSBC",
+     "action": "down",
+     "to_grade": "Hold",
+     "from_grade": "Buy"
+    }
+   ]
   },
   "JNJ": {
    "upgrades_30d": 0,
@@ -679,7 +2321,23 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "Guggenheim",
-   "last_date": "2026-08-06"
+   "last_date": "2026-08-06",
+   "actions": [
+    {
+     "date": "2026-08-06",
+     "firm": "Guggenheim",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-03",
+     "firm": "Wells Fargo",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    }
+   ]
   },
   "JPM": {
    "upgrades_30d": 0,
@@ -687,7 +2345,23 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "Wells Fargo",
-   "last_date": "2026-08-14"
+   "last_date": "2026-08-14",
+   "actions": [
+    {
+     "date": "2026-08-14",
+     "firm": "Wells Fargo",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-08-03",
+     "firm": "UBS",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    }
+   ]
   },
   "KDP": {
    "upgrades_30d": 1,
@@ -695,7 +2369,44 @@
    "net_30d": 1,
    "last_action": "up",
    "last_firm": "HSBC",
-   "last_date": "2026-08-13"
+   "last_date": "2026-08-13",
+   "actions": [
+    {
+     "date": "2026-08-13",
+     "firm": "HSBC",
+     "action": "up",
+     "to_grade": "Buy",
+     "from_grade": "Hold"
+    },
+    {
+     "date": "2026-08-10",
+     "firm": "Barclays",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-08-07",
+     "firm": "UBS",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-07",
+     "firm": "Evercore ISI Group",
+     "action": "main",
+     "to_grade": "In-Line",
+     "from_grade": "In-Line"
+    },
+    {
+     "date": "2026-07-23",
+     "firm": "JP Morgan",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    }
+   ]
   },
   "KHC": {
    "upgrades_30d": 0,
@@ -703,7 +2414,44 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "Barclays",
-   "last_date": "2026-08-07"
+   "last_date": "2026-08-07",
+   "actions": [
+    {
+     "date": "2026-08-07",
+     "firm": "Barclays",
+     "action": "main",
+     "to_grade": "Equal-Weight",
+     "from_grade": "Equal-Weight"
+    },
+    {
+     "date": "2026-08-06",
+     "firm": "TD Cowen",
+     "action": "main",
+     "to_grade": "Hold",
+     "from_grade": "Hold"
+    },
+    {
+     "date": "2026-08-06",
+     "firm": "UBS",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-08-06",
+     "firm": "Piper Sandler",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-08-06",
+     "firm": "Evercore ISI Group",
+     "action": "main",
+     "to_grade": "In-Line",
+     "from_grade": "In-Line"
+    }
+   ]
   },
   "KLAC": {
    "upgrades_30d": 0,
@@ -711,7 +2459,44 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "Stifel",
-   "last_date": "2026-07-29"
+   "last_date": "2026-07-29",
+   "actions": [
+    {
+     "date": "2026-07-29",
+     "firm": "Stifel",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-07-29",
+     "firm": "RBC Capital",
+     "action": "main",
+     "to_grade": "Sector Perform",
+     "from_grade": "Sector Perform"
+    },
+    {
+     "date": "2026-07-29",
+     "firm": "Susquehanna",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-07-29",
+     "firm": "Wells Fargo",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-07-29",
+     "firm": "Cantor Fitzgerald",
+     "action": "reit",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    }
+   ]
   },
   "KO": {
    "upgrades_30d": 0,
@@ -719,7 +2504,44 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "Argus Research",
-   "last_date": "2026-07-30"
+   "last_date": "2026-07-30",
+   "actions": [
+    {
+     "date": "2026-07-30",
+     "firm": "Argus Research",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-07-30",
+     "firm": "Barclays",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-07-29",
+     "firm": "JP Morgan",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-07-29",
+     "firm": "TD Cowen",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-07-29",
+     "firm": "Piper Sandler",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    }
+   ]
   },
   "LIN": {
    "upgrades_30d": 0,
@@ -727,7 +2549,37 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "BMO Capital",
-   "last_date": "2026-08-10"
+   "last_date": "2026-08-10",
+   "actions": [
+    {
+     "date": "2026-08-10",
+     "firm": "BMO Capital",
+     "action": "main",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    },
+    {
+     "date": "2026-08-03",
+     "firm": "Citigroup",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-03",
+     "firm": "RBC Capital",
+     "action": "main",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    },
+    {
+     "date": "2026-08-03",
+     "firm": "Bernstein",
+     "action": "main",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    }
+   ]
   },
   "LRCX": {
    "upgrades_30d": 0,
@@ -735,7 +2587,44 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "Morgan Stanley",
-   "last_date": "2026-07-30"
+   "last_date": "2026-07-30",
+   "actions": [
+    {
+     "date": "2026-07-30",
+     "firm": "Morgan Stanley",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-07-30",
+     "firm": "B. Riley Securities",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-07-30",
+     "firm": "Wells Fargo",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-07-30",
+     "firm": "Needham",
+     "action": "reit",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-07-30",
+     "firm": "Jefferies",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    }
+   ]
   },
   "LULU": {
    "upgrades_30d": 0,
@@ -743,7 +2632,23 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "JP Morgan",
-   "last_date": "2026-08-04"
+   "last_date": "2026-08-04",
+   "actions": [
+    {
+     "date": "2026-08-04",
+     "firm": "JP Morgan",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-07-21",
+     "firm": "Wells Fargo",
+     "action": "main",
+     "to_grade": "Equal-Weight",
+     "from_grade": "Equal-Weight"
+    }
+   ]
   },
   "MAR": {
    "upgrades_30d": 1,
@@ -751,7 +2656,44 @@
    "net_30d": 1,
    "last_action": "init",
    "last_firm": "CICC",
-   "last_date": "2026-08-12"
+   "last_date": "2026-08-12",
+   "actions": [
+    {
+     "date": "2026-08-12",
+     "firm": "CICC",
+     "action": "init",
+     "to_grade": "Outperform",
+     "from_grade": null
+    },
+    {
+     "date": "2026-08-05",
+     "firm": "Macquarie",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-08-04",
+     "firm": "Mizuho",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-08-04",
+     "firm": "Wells Fargo",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-08-04",
+     "firm": "BMO Capital",
+     "action": "main",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    }
+   ]
   },
   "MBG.DE": {
    "upgrades_30d": 0,
@@ -759,7 +2701,8 @@
    "net_30d": 0,
    "last_action": null,
    "last_firm": null,
-   "last_date": null
+   "last_date": null,
+   "actions": []
   },
   "MCD": {
    "upgrades_30d": 0,
@@ -767,7 +2710,44 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "Guggenheim",
-   "last_date": "2026-08-06"
+   "last_date": "2026-08-06",
+   "actions": [
+    {
+     "date": "2026-08-06",
+     "firm": "Guggenheim",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-08-05",
+     "firm": "Citigroup",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-05",
+     "firm": "RBC Capital",
+     "action": "main",
+     "to_grade": "Sector Perform",
+     "from_grade": "Sector Perform"
+    },
+    {
+     "date": "2026-08-05",
+     "firm": "Keybanc",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-08-05",
+     "firm": "BTIG",
+     "action": "reit",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    }
+   ]
   },
   "MCHP": {
    "upgrades_30d": 0,
@@ -775,7 +2755,44 @@
    "net_30d": 0,
    "last_action": "reit",
    "last_firm": "Cantor Fitzgerald",
-   "last_date": "2026-08-17"
+   "last_date": "2026-08-17",
+   "actions": [
+    {
+     "date": "2026-08-17",
+     "firm": "Cantor Fitzgerald",
+     "action": "reit",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-08-07",
+     "firm": "UBS",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-07",
+     "firm": "Citigroup",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-07",
+     "firm": "Truist Securities",
+     "action": "main",
+     "to_grade": "Hold",
+     "from_grade": "Hold"
+    },
+    {
+     "date": "2026-08-07",
+     "firm": "Rosenblatt",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    }
+   ]
   },
   "MDLZ": {
    "upgrades_30d": 0,
@@ -783,7 +2800,37 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "Barclays",
-   "last_date": "2026-07-30"
+   "last_date": "2026-07-30",
+   "actions": [
+    {
+     "date": "2026-07-30",
+     "firm": "Barclays",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-07-29",
+     "firm": "BNP Paribas",
+     "action": "main",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    },
+    {
+     "date": "2026-07-29",
+     "firm": "JP Morgan",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-07-29",
+     "firm": "TD Cowen",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    }
+   ]
   },
   "MELI": {
    "upgrades_30d": 0,
@@ -791,7 +2838,30 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "JP Morgan",
-   "last_date": "2026-08-11"
+   "last_date": "2026-08-11",
+   "actions": [
+    {
+     "date": "2026-08-11",
+     "firm": "JP Morgan",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-08-06",
+     "firm": "Cantor Fitzgerald",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-08-06",
+     "firm": "BTIG",
+     "action": "reit",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    }
+   ]
   },
   "META": {
    "upgrades_30d": 0,
@@ -799,7 +2869,8 @@
    "net_30d": 0,
    "last_action": null,
    "last_firm": null,
-   "last_date": null
+   "last_date": null,
+   "actions": []
   },
   "MMM": {
    "upgrades_30d": 0,
@@ -807,7 +2878,44 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "Mizuho",
-   "last_date": "2026-07-23"
+   "last_date": "2026-07-23",
+   "actions": [
+    {
+     "date": "2026-07-23",
+     "firm": "Mizuho",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-07-22",
+     "firm": "UBS",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-07-22",
+     "firm": "Bernstein",
+     "action": "main",
+     "to_grade": "Underperform",
+     "from_grade": "Underperform"
+    },
+    {
+     "date": "2026-07-22",
+     "firm": "Citigroup",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-07-22",
+     "firm": "RBC Capital",
+     "action": "main",
+     "to_grade": "Underperform",
+     "from_grade": "Underperform"
+    }
+   ]
   },
   "MNST": {
    "upgrades_30d": 0,
@@ -815,15 +2923,82 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "UBS",
-   "last_date": "2026-08-07"
+   "last_date": "2026-08-07",
+   "actions": [
+    {
+     "date": "2026-08-07",
+     "firm": "UBS",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-08-07",
+     "firm": "RBC Capital",
+     "action": "main",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    },
+    {
+     "date": "2026-08-07",
+     "firm": "Piper Sandler",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-08-07",
+     "firm": "Evercore ISI Group",
+     "action": "main",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    }
+   ]
   },
   "MRK": {
-   "upgrades_30d": 1,
+   "upgrades_30d": 2,
    "downgrades_30d": 0,
-   "net_30d": 1,
+   "net_30d": 2,
    "last_action": "up",
-   "last_firm": "Daiwa Capital",
-   "last_date": "2026-08-12"
+   "last_firm": "Morgan Stanley",
+   "last_date": "2026-08-20",
+   "actions": [
+    {
+     "date": "2026-08-20",
+     "firm": "Morgan Stanley",
+     "action": "up",
+     "to_grade": "Overweight",
+     "from_grade": "Equal-Weight"
+    },
+    {
+     "date": "2026-08-12",
+     "firm": "Daiwa Capital",
+     "action": "up",
+     "to_grade": "Outperform",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-08-11",
+     "firm": "Argus Research",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-05",
+     "firm": "Guggenheim",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-07-29",
+     "firm": "Barclays",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    }
+   ]
   },
   "MRK.DE": {
    "upgrades_30d": 0,
@@ -831,7 +3006,8 @@
    "net_30d": 0,
    "last_action": null,
    "last_firm": null,
-   "last_date": null
+   "last_date": null,
+   "actions": []
   },
   "MRVL": {
    "upgrades_30d": 0,
@@ -839,7 +3015,23 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "TD Cowen",
-   "last_date": "2026-08-18"
+   "last_date": "2026-08-18",
+   "actions": [
+    {
+     "date": "2026-08-18",
+     "firm": "TD Cowen",
+     "action": "main",
+     "to_grade": "Hold",
+     "from_grade": "Hold"
+    },
+    {
+     "date": "2026-08-17",
+     "firm": "UBS",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    }
+   ]
   },
   "MSFT": {
    "upgrades_30d": 0,
@@ -847,7 +3039,44 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "Wells Fargo",
-   "last_date": "2026-08-12"
+   "last_date": "2026-08-12",
+   "actions": [
+    {
+     "date": "2026-08-12",
+     "firm": "Wells Fargo",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-08-05",
+     "firm": "Tigress Financial",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-07-30",
+     "firm": "Bernstein",
+     "action": "main",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    },
+    {
+     "date": "2026-07-30",
+     "firm": "Citigroup",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-07-30",
+     "firm": "RBC Capital",
+     "action": "reit",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    }
+   ]
   },
   "MSTR": {
    "upgrades_30d": 0,
@@ -855,7 +3084,44 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "B. Riley Securities",
-   "last_date": "2026-08-03"
+   "last_date": "2026-08-03",
+   "actions": [
+    {
+     "date": "2026-08-03",
+     "firm": "B. Riley Securities",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-03",
+     "firm": "Cantor Fitzgerald",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-08-03",
+     "firm": "Barclays",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-07-31",
+     "firm": "Benchmark",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-07-31",
+     "firm": "BTIG",
+     "action": "reit",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    }
+   ]
   },
   "MTX.DE": {
    "upgrades_30d": 0,
@@ -863,7 +3129,8 @@
    "net_30d": 0,
    "last_action": null,
    "last_firm": null,
-   "last_date": null
+   "last_date": null,
+   "actions": []
   },
   "MU": {
    "upgrades_30d": 0,
@@ -871,7 +3138,16 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "Citigroup",
-   "last_date": "2026-08-07"
+   "last_date": "2026-08-07",
+   "actions": [
+    {
+     "date": "2026-08-07",
+     "firm": "Citigroup",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    }
+   ]
   },
   "MUV2.DE": {
    "upgrades_30d": 0,
@@ -879,7 +3155,8 @@
    "net_30d": 0,
    "last_action": null,
    "last_firm": null,
-   "last_date": null
+   "last_date": null,
+   "actions": []
   },
   "NFLX": {
    "upgrades_30d": 0,
@@ -887,7 +3164,16 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "Baird",
-   "last_date": "2026-07-22"
+   "last_date": "2026-07-22",
+   "actions": [
+    {
+     "date": "2026-07-22",
+     "firm": "Baird",
+     "action": "main",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    }
+   ]
   },
   "NKE": {
    "upgrades_30d": 0,
@@ -895,7 +3181,16 @@
    "net_30d": -1,
    "last_action": "down",
    "last_firm": "JP Morgan",
-   "last_date": "2026-08-04"
+   "last_date": "2026-08-04",
+   "actions": [
+    {
+     "date": "2026-08-04",
+     "firm": "JP Morgan",
+     "action": "down",
+     "to_grade": "Underweight",
+     "from_grade": "Neutral"
+    }
+   ]
   },
   "NVDA": {
    "upgrades_30d": 0,
@@ -903,7 +3198,16 @@
    "net_30d": 0,
    "last_action": "reit",
    "last_firm": "Wells Fargo",
-   "last_date": "2026-08-11"
+   "last_date": "2026-08-11",
+   "actions": [
+    {
+     "date": "2026-08-11",
+     "firm": "Wells Fargo",
+     "action": "reit",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    }
+   ]
   },
   "NXPI": {
    "upgrades_30d": 0,
@@ -911,7 +3215,44 @@
    "net_30d": -1,
    "last_action": "reit",
    "last_firm": "Cantor Fitzgerald",
-   "last_date": "2026-08-17"
+   "last_date": "2026-08-17",
+   "actions": [
+    {
+     "date": "2026-08-17",
+     "firm": "Cantor Fitzgerald",
+     "action": "reit",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-08-03",
+     "firm": "UBS",
+     "action": "down",
+     "to_grade": "Neutral",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-07-29",
+     "firm": "TD Cowen",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-07-29",
+     "firm": "Wells Fargo",
+     "action": "main",
+     "to_grade": "Equal-Weight",
+     "from_grade": "Equal-Weight"
+    },
+    {
+     "date": "2026-07-29",
+     "firm": "Mizuho",
+     "action": "main",
+     "to_grade": "Underperform",
+     "from_grade": "Underperform"
+    }
+   ]
   },
   "ODFL": {
    "upgrades_30d": 0,
@@ -919,7 +3260,44 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "UBS",
-   "last_date": "2026-07-30"
+   "last_date": "2026-07-30",
+   "actions": [
+    {
+     "date": "2026-07-30",
+     "firm": "UBS",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-07-30",
+     "firm": "Citigroup",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-07-30",
+     "firm": "Stifel",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-07-30",
+     "firm": "Evercore ISI Group",
+     "action": "main",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    },
+    {
+     "date": "2026-07-21",
+     "firm": "Stifel",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    }
+   ]
   },
   "ON": {
    "upgrades_30d": 0,
@@ -927,7 +3305,44 @@
    "net_30d": 0,
    "last_action": "reit",
    "last_firm": "Cantor Fitzgerald",
-   "last_date": "2026-08-17"
+   "last_date": "2026-08-17",
+   "actions": [
+    {
+     "date": "2026-08-17",
+     "firm": "Cantor Fitzgerald",
+     "action": "reit",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-08-05",
+     "firm": "Citigroup",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-08-05",
+     "firm": "Truist Securities",
+     "action": "main",
+     "to_grade": "Hold",
+     "from_grade": "Hold"
+    },
+    {
+     "date": "2026-08-04",
+     "firm": "Mizuho",
+     "action": "main",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    },
+    {
+     "date": "2026-08-04",
+     "firm": "B. Riley Securities",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    }
+   ]
   },
   "ORLY": {
    "upgrades_30d": 0,
@@ -935,7 +3350,37 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "Citigroup",
-   "last_date": "2026-08-03"
+   "last_date": "2026-08-03",
+   "actions": [
+    {
+     "date": "2026-08-03",
+     "firm": "Citigroup",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-07-31",
+     "firm": "TD Cowen",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-07-30",
+     "firm": "Morgan Stanley",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-07-22",
+     "firm": "DA Davidson",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    }
+   ]
   },
   "P911.DE": {
    "upgrades_30d": 0,
@@ -943,7 +3388,8 @@
    "net_30d": 0,
    "last_action": null,
    "last_firm": null,
-   "last_date": null
+   "last_date": null,
+   "actions": []
   },
   "PAH3.DE": {
    "upgrades_30d": 0,
@@ -951,7 +3397,8 @@
    "net_30d": 0,
    "last_action": null,
    "last_firm": null,
-   "last_date": null
+   "last_date": null,
+   "actions": []
   },
   "PANW": {
    "upgrades_30d": 0,
@@ -959,7 +3406,44 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "Mizuho",
-   "last_date": "2026-08-19"
+   "last_date": "2026-08-19",
+   "actions": [
+    {
+     "date": "2026-08-19",
+     "firm": "Mizuho",
+     "action": "main",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    },
+    {
+     "date": "2026-08-19",
+     "firm": "Stifel",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-19",
+     "firm": "UBS",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-08-19",
+     "firm": "Truist Securities",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-19",
+     "firm": "Cantor Fitzgerald",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    }
+   ]
   },
   "PAYX": {
    "upgrades_30d": 0,
@@ -967,7 +3451,30 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "Jefferies",
-   "last_date": "2026-08-13"
+   "last_date": "2026-08-13",
+   "actions": [
+    {
+     "date": "2026-08-13",
+     "firm": "Jefferies",
+     "action": "main",
+     "to_grade": "Hold",
+     "from_grade": "Hold"
+    },
+    {
+     "date": "2026-07-30",
+     "firm": "Citigroup",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-07-22",
+     "firm": "UBS",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    }
+   ]
   },
   "PCAR": {
    "upgrades_30d": 0,
@@ -975,7 +3482,37 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "Evercore ISI Group",
-   "last_date": "2026-08-11"
+   "last_date": "2026-08-11",
+   "actions": [
+    {
+     "date": "2026-08-11",
+     "firm": "Evercore ISI Group",
+     "action": "main",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    },
+    {
+     "date": "2026-07-30",
+     "firm": "Citigroup",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-07-30",
+     "firm": "Wells Fargo",
+     "action": "main",
+     "to_grade": "Equal-Weight",
+     "from_grade": "Equal-Weight"
+    },
+    {
+     "date": "2026-07-29",
+     "firm": "JP Morgan",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    }
+   ]
   },
   "PDD": {
    "upgrades_30d": 0,
@@ -983,7 +3520,8 @@
    "net_30d": 0,
    "last_action": null,
    "last_firm": null,
-   "last_date": null
+   "last_date": null,
+   "actions": []
   },
   "PEP": {
    "upgrades_30d": 0,
@@ -991,7 +3529,16 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "Barclays",
-   "last_date": "2026-07-21"
+   "last_date": "2026-07-21",
+   "actions": [
+    {
+     "date": "2026-07-21",
+     "firm": "Barclays",
+     "action": "main",
+     "to_grade": "Equal-Weight",
+     "from_grade": "Equal-Weight"
+    }
+   ]
   },
   "PG": {
    "upgrades_30d": 0,
@@ -999,7 +3546,37 @@
    "net_30d": -2,
    "last_action": "down",
    "last_firm": "Argus Research",
-   "last_date": "2026-08-07"
+   "last_date": "2026-08-07",
+   "actions": [
+    {
+     "date": "2026-08-07",
+     "firm": "Argus Research",
+     "action": "down",
+     "to_grade": "Hold",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-07-30",
+     "firm": "HSBC",
+     "action": "down",
+     "to_grade": "Hold",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-07-30",
+     "firm": "Citigroup",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-07-21",
+     "firm": "Barclays",
+     "action": "main",
+     "to_grade": "Equal-Weight",
+     "from_grade": "Equal-Weight"
+    }
+   ]
   },
   "PLTR": {
    "upgrades_30d": 1,
@@ -1007,7 +3584,44 @@
    "net_30d": 1,
    "last_action": "main",
    "last_firm": "UBS",
-   "last_date": "2026-08-04"
+   "last_date": "2026-08-04",
+   "actions": [
+    {
+     "date": "2026-08-04",
+     "firm": "UBS",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-04",
+     "firm": "Mizuho",
+     "action": "main",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    },
+    {
+     "date": "2026-08-04",
+     "firm": "Citigroup",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-04",
+     "firm": "DA Davidson",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-04",
+     "firm": "Cantor Fitzgerald",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    }
+   ]
   },
   "PYPL": {
    "upgrades_30d": 1,
@@ -1015,7 +3629,44 @@
    "net_30d": 1,
    "last_action": "main",
    "last_firm": "Truist Securities",
-   "last_date": "2026-08-19"
+   "last_date": "2026-08-19",
+   "actions": [
+    {
+     "date": "2026-08-19",
+     "firm": "Truist Securities",
+     "action": "main",
+     "to_grade": "Hold",
+     "from_grade": "Hold"
+    },
+    {
+     "date": "2026-08-17",
+     "firm": "Piper Sandler",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-08-03",
+     "firm": "Cantor Fitzgerald",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-07-29",
+     "firm": "JP Morgan",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-07-29",
+     "firm": "TD Cowen",
+     "action": "main",
+     "to_grade": "Hold",
+     "from_grade": "Hold"
+    }
+   ]
   },
   "QCOM": {
    "upgrades_30d": 0,
@@ -1023,7 +3674,44 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "Benchmark",
-   "last_date": "2026-07-30"
+   "last_date": "2026-07-30",
+   "actions": [
+    {
+     "date": "2026-07-30",
+     "firm": "Benchmark",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-07-30",
+     "firm": "UBS",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-07-30",
+     "firm": "Susquehanna",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-07-30",
+     "firm": "RBC Capital",
+     "action": "main",
+     "to_grade": "Sector Perform",
+     "from_grade": "Sector Perform"
+    },
+    {
+     "date": "2026-07-30",
+     "firm": "Citigroup",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    }
+   ]
   },
   "QIA.DE": {
    "upgrades_30d": 0,
@@ -1031,7 +3719,30 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "Citigroup",
-   "last_date": "2026-08-10"
+   "last_date": "2026-08-10",
+   "actions": [
+    {
+     "date": "2026-08-10",
+     "firm": "Citigroup",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-08-07",
+     "firm": "Barclays",
+     "action": "main",
+     "to_grade": "Equal-Weight",
+     "from_grade": "Equal-Weight"
+    },
+    {
+     "date": "2026-08-07",
+     "firm": "JP Morgan",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    }
+   ]
   },
   "REGN": {
    "upgrades_30d": 0,
@@ -1039,7 +3750,44 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "Leerink Partners",
-   "last_date": "2026-08-17"
+   "last_date": "2026-08-17",
+   "actions": [
+    {
+     "date": "2026-08-17",
+     "firm": "Leerink Partners",
+     "action": "main",
+     "to_grade": "Market Perform",
+     "from_grade": "Market Perform"
+    },
+    {
+     "date": "2026-08-03",
+     "firm": "Citigroup",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-08-03",
+     "firm": "Guggenheim",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-07-31",
+     "firm": "RBC Capital",
+     "action": "main",
+     "to_grade": "Sector Perform",
+     "from_grade": "Sector Perform"
+    },
+    {
+     "date": "2026-07-31",
+     "firm": "Morgan Stanley",
+     "action": "main",
+     "to_grade": "Equal-Weight",
+     "from_grade": "Equal-Weight"
+    }
+   ]
   },
   "RHM.DE": {
    "upgrades_30d": 0,
@@ -1047,7 +3795,8 @@
    "net_30d": 0,
    "last_action": null,
    "last_firm": null,
-   "last_date": null
+   "last_date": null,
+   "actions": []
   },
   "ROP": {
    "upgrades_30d": 1,
@@ -1055,7 +3804,44 @@
    "net_30d": 1,
    "last_action": "reit",
    "last_firm": "RBC Capital",
-   "last_date": "2026-08-18"
+   "last_date": "2026-08-18",
+   "actions": [
+    {
+     "date": "2026-08-18",
+     "firm": "RBC Capital",
+     "action": "reit",
+     "to_grade": "Sector Perform",
+     "from_grade": "Sector Perform"
+    },
+    {
+     "date": "2026-08-06",
+     "firm": "Argus Research",
+     "action": "up",
+     "to_grade": "Buy",
+     "from_grade": "Hold"
+    },
+    {
+     "date": "2026-07-29",
+     "firm": "JP Morgan",
+     "action": "main",
+     "to_grade": "Underweight",
+     "from_grade": "Underweight"
+    },
+    {
+     "date": "2026-07-24",
+     "firm": "RBC Capital",
+     "action": "main",
+     "to_grade": "Sector Perform",
+     "from_grade": "Sector Perform"
+    },
+    {
+     "date": "2026-07-24",
+     "firm": "Piper Sandler",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    }
+   ]
   },
   "ROST": {
    "upgrades_30d": 0,
@@ -1063,7 +3849,23 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "Evercore ISI Group",
-   "last_date": "2026-08-17"
+   "last_date": "2026-08-17",
+   "actions": [
+    {
+     "date": "2026-08-17",
+     "firm": "Evercore ISI Group",
+     "action": "main",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    },
+    {
+     "date": "2026-08-14",
+     "firm": "Telsey Advisory Group",
+     "action": "main",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    }
+   ]
   },
   "RWE.DE": {
    "upgrades_30d": 0,
@@ -1071,7 +3873,8 @@
    "net_30d": 0,
    "last_action": null,
    "last_firm": null,
-   "last_date": null
+   "last_date": null,
+   "actions": []
   },
   "SAP.DE": {
    "upgrades_30d": 0,
@@ -1079,7 +3882,8 @@
    "net_30d": 0,
    "last_action": null,
    "last_firm": null,
-   "last_date": null
+   "last_date": null,
+   "actions": []
   },
   "SBUX": {
    "upgrades_30d": 0,
@@ -1087,7 +3891,44 @@
    "net_30d": 0,
    "last_action": "reit",
    "last_firm": "BTIG",
-   "last_date": "2026-07-31"
+   "last_date": "2026-07-31",
+   "actions": [
+    {
+     "date": "2026-07-31",
+     "firm": "BTIG",
+     "action": "reit",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-07-30",
+     "firm": "UBS",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-07-30",
+     "firm": "Citigroup",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-07-30",
+     "firm": "BNP Paribas",
+     "action": "main",
+     "to_grade": "Underperform",
+     "from_grade": "Underperform"
+    },
+    {
+     "date": "2026-07-30",
+     "firm": "RBC Capital",
+     "action": "main",
+     "to_grade": "Sector Perform",
+     "from_grade": "Sector Perform"
+    }
+   ]
   },
   "SHL.DE": {
    "upgrades_30d": 0,
@@ -1095,7 +3936,8 @@
    "net_30d": 0,
    "last_action": null,
    "last_firm": null,
-   "last_date": null
+   "last_date": null,
+   "actions": []
   },
   "SHW": {
    "upgrades_30d": 1,
@@ -1103,7 +3945,44 @@
    "net_30d": 1,
    "last_action": "init",
    "last_firm": "Guggenheim",
-   "last_date": "2026-08-03"
+   "last_date": "2026-08-03",
+   "actions": [
+    {
+     "date": "2026-08-03",
+     "firm": "Guggenheim",
+     "action": "init",
+     "to_grade": "Buy",
+     "from_grade": null
+    },
+    {
+     "date": "2026-07-29",
+     "firm": "Morgan Stanley",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-07-29",
+     "firm": "JP Morgan",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-07-29",
+     "firm": "Wells Fargo",
+     "action": "main",
+     "to_grade": "Equal-Weight",
+     "from_grade": "Equal-Weight"
+    },
+    {
+     "date": "2026-07-29",
+     "firm": "BMO Capital",
+     "action": "main",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    }
+   ]
   },
   "SIE.DE": {
    "upgrades_30d": 0,
@@ -1111,7 +3990,8 @@
    "net_30d": 0,
    "last_action": null,
    "last_firm": null,
-   "last_date": null
+   "last_date": null,
+   "actions": []
   },
   "SNPS": {
    "upgrades_30d": 0,
@@ -1119,7 +3999,23 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "Morgan Stanley",
-   "last_date": "2026-08-19"
+   "last_date": "2026-08-19",
+   "actions": [
+    {
+     "date": "2026-08-19",
+     "firm": "Morgan Stanley",
+     "action": "main",
+     "to_grade": "Equal-Weight",
+     "from_grade": "Equal-Weight"
+    },
+    {
+     "date": "2026-08-11",
+     "firm": "Wells Fargo",
+     "action": "main",
+     "to_grade": "Equal-Weight",
+     "from_grade": "Equal-Weight"
+    }
+   ]
   },
   "SRT3.DE": {
    "upgrades_30d": 0,
@@ -1127,7 +4023,8 @@
    "net_30d": 0,
    "last_action": null,
    "last_firm": null,
-   "last_date": null
+   "last_date": null,
+   "actions": []
   },
   "SY1.DE": {
    "upgrades_30d": 0,
@@ -1135,7 +4032,8 @@
    "net_30d": 0,
    "last_action": null,
    "last_firm": null,
-   "last_date": null
+   "last_date": null,
+   "actions": []
   },
   "TEAM": {
    "upgrades_30d": 0,
@@ -1143,7 +4041,44 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "Citigroup",
-   "last_date": "2026-08-10"
+   "last_date": "2026-08-10",
+   "actions": [
+    {
+     "date": "2026-08-10",
+     "firm": "Citigroup",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-10",
+     "firm": "Barclays",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-08-08",
+     "firm": "UBS",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-08-07",
+     "firm": "TD Cowen",
+     "action": "main",
+     "to_grade": "Hold",
+     "from_grade": "Hold"
+    },
+    {
+     "date": "2026-08-07",
+     "firm": "Morgan Stanley",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    }
+   ]
   },
   "TMUS": {
    "upgrades_30d": 0,
@@ -1151,15 +4086,75 @@
    "net_30d": -1,
    "last_action": "down",
    "last_firm": "Wolfe Research",
-   "last_date": "2026-08-14"
+   "last_date": "2026-08-14",
+   "actions": [
+    {
+     "date": "2026-08-14",
+     "firm": "Wolfe Research",
+     "action": "down",
+     "to_grade": "Peer Perform",
+     "from_grade": "Outperform"
+    },
+    {
+     "date": "2026-07-25",
+     "firm": "UBS",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-07-24",
+     "firm": "TD Cowen",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-07-24",
+     "firm": "Wells Fargo",
+     "action": "main",
+     "to_grade": "Equal-Weight",
+     "from_grade": "Equal-Weight"
+    },
+    {
+     "date": "2026-07-24",
+     "firm": "Barclays",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    }
+   ]
   },
   "TRV": {
    "upgrades_30d": 0,
-   "downgrades_30d": 1,
-   "net_30d": -1,
+   "downgrades_30d": 0,
+   "net_30d": 0,
    "last_action": "main",
    "last_firm": "Mizuho",
-   "last_date": "2026-07-24"
+   "last_date": "2026-07-24",
+   "actions": [
+    {
+     "date": "2026-07-24",
+     "firm": "Mizuho",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-07-21",
+     "firm": "Roth Capital",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-07-21",
+     "firm": "Barclays",
+     "action": "main",
+     "to_grade": "Underweight",
+     "from_grade": "Underweight"
+    }
+   ]
   },
   "TSLA": {
    "upgrades_30d": 0,
@@ -1167,7 +4162,44 @@
    "net_30d": 0,
    "last_action": "reit",
    "last_firm": "GLJ Research",
-   "last_date": "2026-08-18"
+   "last_date": "2026-08-18",
+   "actions": [
+    {
+     "date": "2026-08-18",
+     "firm": "GLJ Research",
+     "action": "reit",
+     "to_grade": "Sell",
+     "from_grade": "Sell"
+    },
+    {
+     "date": "2026-08-03",
+     "firm": "Stifel",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-07-24",
+     "firm": "Piper Sandler",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-07-23",
+     "firm": "UBS",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-07-23",
+     "firm": "JP Morgan",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    }
+   ]
   },
   "TTD": {
    "upgrades_30d": 0,
@@ -1175,7 +4207,44 @@
    "net_30d": -8,
    "last_action": "down",
    "last_firm": "DA Davidson",
-   "last_date": "2026-08-10"
+   "last_date": "2026-08-10",
+   "actions": [
+    {
+     "date": "2026-08-10",
+     "firm": "DA Davidson",
+     "action": "down",
+     "to_grade": "Neutral",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-10",
+     "firm": "HSBC",
+     "action": "down",
+     "to_grade": "Reduce",
+     "from_grade": "Hold"
+    },
+    {
+     "date": "2026-08-08",
+     "firm": "Scotiabank",
+     "action": "main",
+     "to_grade": "Sector Perform",
+     "from_grade": "Sector Perform"
+    },
+    {
+     "date": "2026-08-07",
+     "firm": "UBS",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-07",
+     "firm": "Citigroup",
+     "action": "down",
+     "to_grade": "Sell",
+     "from_grade": "Neutral"
+    }
+   ]
   },
   "TTWO": {
    "upgrades_30d": 0,
@@ -1183,7 +4252,44 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "Roth Capital",
-   "last_date": "2026-08-10"
+   "last_date": "2026-08-10",
+   "actions": [
+    {
+     "date": "2026-08-10",
+     "firm": "Roth Capital",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-10",
+     "firm": "Oppenheimer",
+     "action": "main",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    },
+    {
+     "date": "2026-08-10",
+     "firm": "Wells Fargo",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-08-10",
+     "firm": "DA Davidson",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-10",
+     "firm": "Wedbush",
+     "action": "reit",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    }
+   ]
   },
   "TXN": {
    "upgrades_30d": 0,
@@ -1191,7 +4297,44 @@
    "net_30d": 0,
    "last_action": "reit",
    "last_firm": "Cantor Fitzgerald",
-   "last_date": "2026-08-17"
+   "last_date": "2026-08-17",
+   "actions": [
+    {
+     "date": "2026-08-17",
+     "firm": "Cantor Fitzgerald",
+     "action": "reit",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-07-24",
+     "firm": "Rosenblatt",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-07-23",
+     "firm": "Bernstein",
+     "action": "main",
+     "to_grade": "Market Perform",
+     "from_grade": "Market Perform"
+    },
+    {
+     "date": "2026-07-23",
+     "firm": "JP Morgan",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-07-23",
+     "firm": "Morgan Stanley",
+     "action": "main",
+     "to_grade": "Underweight",
+     "from_grade": "Underweight"
+    }
+   ]
   },
   "UNH": {
    "upgrades_30d": 0,
@@ -1199,7 +4342,23 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "JP Morgan",
-   "last_date": "2026-07-21"
+   "last_date": "2026-07-21",
+   "actions": [
+    {
+     "date": "2026-07-21",
+     "firm": "JP Morgan",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-07-21",
+     "firm": "Mizuho",
+     "action": "main",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    }
+   ]
   },
   "V": {
    "upgrades_30d": 0,
@@ -1207,7 +4366,44 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "Truist Securities",
-   "last_date": "2026-08-05"
+   "last_date": "2026-08-05",
+   "actions": [
+    {
+     "date": "2026-08-05",
+     "firm": "Truist Securities",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-03",
+     "firm": "Cantor Fitzgerald",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-07-30",
+     "firm": "Wells Fargo",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-07-29",
+     "firm": "Piper Sandler",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-07-29",
+     "firm": "Susquehanna",
+     "action": "main",
+     "to_grade": "Positive",
+     "from_grade": "Positive"
+    }
+   ]
   },
   "VNA.DE": {
    "upgrades_30d": 0,
@@ -1215,7 +4411,8 @@
    "net_30d": 0,
    "last_action": null,
    "last_firm": null,
-   "last_date": null
+   "last_date": null,
+   "actions": []
   },
   "VOW3.DE": {
    "upgrades_30d": 0,
@@ -1223,7 +4420,8 @@
    "net_30d": 0,
    "last_action": null,
    "last_firm": null,
-   "last_date": null
+   "last_date": null,
+   "actions": []
   },
   "VRSK": {
    "upgrades_30d": 1,
@@ -1231,7 +4429,37 @@
    "net_30d": 1,
    "last_action": "main",
    "last_firm": "UBS",
-   "last_date": "2026-07-30"
+   "last_date": "2026-07-30",
+   "actions": [
+    {
+     "date": "2026-07-30",
+     "firm": "UBS",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-07-30",
+     "firm": "Evercore ISI Group",
+     "action": "main",
+     "to_grade": "In-Line",
+     "from_grade": "In-Line"
+    },
+    {
+     "date": "2026-07-30",
+     "firm": "Wells Fargo",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-07-23",
+     "firm": "Jefferies",
+     "action": "up",
+     "to_grade": "Buy",
+     "from_grade": "Hold"
+    }
+   ]
   },
   "VRTX": {
    "upgrades_30d": 0,
@@ -1239,7 +4467,44 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "Truist Securities",
-   "last_date": "2026-08-05"
+   "last_date": "2026-08-05",
+   "actions": [
+    {
+     "date": "2026-08-05",
+     "firm": "Truist Securities",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-05",
+     "firm": "Barclays",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-08-04",
+     "firm": "TD Cowen",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-04",
+     "firm": "Cantor Fitzgerald",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-08-04",
+     "firm": "Canaccord Genuity",
+     "action": "main",
+     "to_grade": "Hold",
+     "from_grade": "Hold"
+    }
+   ]
   },
   "VZ": {
    "upgrades_30d": 0,
@@ -1247,7 +4512,44 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "TD Cowen",
-   "last_date": "2026-07-27"
+   "last_date": "2026-07-27",
+   "actions": [
+    {
+     "date": "2026-07-27",
+     "firm": "TD Cowen",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-07-27",
+     "firm": "Morgan Stanley",
+     "action": "main",
+     "to_grade": "Equal-Weight",
+     "from_grade": "Equal-Weight"
+    },
+    {
+     "date": "2026-07-27",
+     "firm": "RBC Capital",
+     "action": "main",
+     "to_grade": "Sector Perform",
+     "from_grade": "Sector Perform"
+    },
+    {
+     "date": "2026-07-27",
+     "firm": "Scotiabank",
+     "action": "main",
+     "to_grade": "Sector Outperform",
+     "from_grade": "Sector Outperform"
+    },
+    {
+     "date": "2026-07-27",
+     "firm": "Wells Fargo",
+     "action": "main",
+     "to_grade": "Equal-Weight",
+     "from_grade": "Equal-Weight"
+    }
+   ]
   },
   "WBD": {
    "upgrades_30d": 0,
@@ -1255,15 +4557,61 @@
    "net_30d": -1,
    "last_action": "down",
    "last_firm": "Seaport Global",
-   "last_date": "2026-07-27"
+   "last_date": "2026-07-27",
+   "actions": [
+    {
+     "date": "2026-07-27",
+     "firm": "Seaport Global",
+     "action": "down",
+     "to_grade": "Neutral",
+     "from_grade": "Buy"
+    }
+   ]
   },
   "WDAY": {
    "upgrades_30d": 0,
-   "downgrades_30d": 2,
-   "net_30d": -2,
+   "downgrades_30d": 1,
+   "net_30d": -1,
    "last_action": "main",
    "last_firm": "B of A Securities",
-   "last_date": "2026-08-19"
+   "last_date": "2026-08-19",
+   "actions": [
+    {
+     "date": "2026-08-19",
+     "firm": "B of A Securities",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-08-17",
+     "firm": "BTIG",
+     "action": "down",
+     "to_grade": "Neutral",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-14",
+     "firm": "Jefferies",
+     "action": "main",
+     "to_grade": "Hold",
+     "from_grade": "Hold"
+    },
+    {
+     "date": "2026-08-14",
+     "firm": "Baird",
+     "action": "main",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    },
+    {
+     "date": "2026-08-14",
+     "firm": "UBS",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    }
+   ]
   },
   "WMT": {
    "upgrades_30d": 0,
@@ -1271,7 +4619,44 @@
    "net_30d": -1,
    "last_action": "main",
    "last_firm": "DA Davidson",
-   "last_date": "2026-08-17"
+   "last_date": "2026-08-17",
+   "actions": [
+    {
+     "date": "2026-08-17",
+     "firm": "DA Davidson",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-17",
+     "firm": "Guggenheim",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-12",
+     "firm": "RBC Capital",
+     "action": "reit",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    },
+    {
+     "date": "2026-08-04",
+     "firm": "Oppenheimer",
+     "action": "down",
+     "to_grade": "Perform",
+     "from_grade": "Outperform"
+    },
+    {
+     "date": "2026-07-31",
+     "firm": "Bernstein",
+     "action": "main",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    }
+   ]
   },
   "XEL": {
    "upgrades_30d": 0,
@@ -1279,7 +4664,23 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "Truist Securities",
-   "last_date": "2026-08-13"
+   "last_date": "2026-08-13",
+   "actions": [
+    {
+     "date": "2026-08-13",
+     "firm": "Truist Securities",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-07-22",
+     "firm": "BMO Capital",
+     "action": "main",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    }
+   ]
   },
   "ZAL.DE": {
    "upgrades_30d": 0,
@@ -1287,7 +4688,8 @@
    "net_30d": 0,
    "last_action": null,
    "last_firm": null,
-   "last_date": null
+   "last_date": null,
+   "actions": []
   },
   "ZS": {
    "upgrades_30d": 0,
@@ -1295,7 +4697,44 @@
    "net_30d": 0,
    "last_action": "main",
    "last_firm": "Mizuho",
-   "last_date": "2026-08-19"
+   "last_date": "2026-08-19",
+   "actions": [
+    {
+     "date": "2026-08-19",
+     "firm": "Mizuho",
+     "action": "main",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    },
+    {
+     "date": "2026-08-19",
+     "firm": "Stifel",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-19",
+     "firm": "Cantor Fitzgerald",
+     "action": "reit",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-08-17",
+     "firm": "TD Cowen",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-17",
+     "firm": "Wells Fargo",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    }
+   ]
   }
  }
 }

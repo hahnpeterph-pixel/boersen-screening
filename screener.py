@@ -1,28 +1,31 @@
 #!/usr/bin/env python3
 """
 Boersen-Screening: NASDAQ-100, Dow Jones 30, DAX 40.
-Version 19 (2026-08-20): RSI auf drei Zeitebenen (Tag/Woche/Stunde) in der
-Analysten-Filter-Tabelle - jede Ebene ECHT neu berechnet auf echten Kerzen
-dieser Zeitebene, nicht rechnerisch aus dem Tages-RSI umgerechnet:
-- RSI Tag: wie bisher, Standard-14-Tage-RSI auf Tagesschlusskursen.
-- RSI Woche: Tagesdaten (haben wir schon) zu echten Wochenschlusskursen
-  resampled, RSI(14) darauf neu berechnet. Kein zusaetzlicher Datenabruf.
-- RSI Stunde: echte 60-Minuten-Kerzen via neuer Funktion get_hourly_rsi().
-  Laut Recherche liefert Yahoo Stundendaten bis zu ca. 730 Tage zurueck -
-  fuer RSI(14) reicht das locker. Bewusst NUR fuer die Analysten-Filter-
-  Treffer geladen (max. 20 Werte), nicht fuer das ganze Universum, um den
-  taeglichen Lauf nicht unnoetig zu verlangsamen.
-Baut auf Version 18 auf.
-jetzt NUR NOCH den Analysten-Filter (Kursziel >=15%, Kaufen-Anteil >=75%)
-plus die zugehoerige Einzelaufstellung der Ratingaenderungen darunter.
-Entfernt: die drei Turnaround-/Momentum-Value-Top-10-Tabellen, die
-Rohstoffe/Krypto-Uebersicht, die taeglichen Veraenderungsmeldungen. Die
-Filtertabelle ist jetzt nach Kaufen-Anteil sortiert (vorher: Kurspotenzial),
-bei Gleichstand nach Kurspotenzial. Die Einzelaufstellung bezieht sich jetzt
-auf die Filtertreffer (vorher: alte Top-10-Listen). Score-Berechnung laeuft
-intern unveraendert weiter (u.a. fuer den Value-Trap-Ausschluss im Filter),
-wird aber nicht mehr angezeigt.
-Baut auf Version 17 auf.
+Version 20 (2026-08-20): Kaufen-Anteil Analysten komplett neu berechnet -
+nicht mehr Yahoos eigene "aktueller Konsens"-Zahl (deren genaue Aktualitaet
+nicht nachvollziehbar war), sondern eigene Berechnung aus den rohen
+Einzel-Ratings: pro Bank zaehlt NUR die zeitlich juengste Einstufung
+(Dedupe), aelter als CONSENSUS_MAX_AGE_DAYS (120 Tage, ca. 4 Monate) faellt
+die Bank komplett raus. Freitext-Grades (Overweight, Outperform,
+Equal-Weight, Underperform etc.) werden ueber eine Mapping-Tabelle zu
+Kaufen/Halten/Verkaufen zusammengefasst; nicht zuordenbare Begriffe zaehlen
+nicht mit. Nutzt dieselbe schon geladene Tabelle, kein Mehraufwand - die
+alte, separate Yahoo-Konsens-Abfrage in get_fundamentals ist entfernt
+(spart sogar einen Netzwerkaufruf pro Wert).
+
+Version 19: RSI auf drei Zeitebenen (Tag/Woche/Stunde) in der
+Analysten-Filter-Tabelle, jede Ebene ECHT neu berechnet auf echten Kerzen
+dieser Zeitebene (RSI Woche: Wochenschlusskurse resampled aus den
+Tagesdaten; RSI Stunde: echte 60-Minuten-Kerzen, nur fuer die
+Filtertreffer geladen, um den taeglichen Lauf nicht zu verlangsamen).
+
+Version 18: Radikal vereinfacht - der Bericht zeigt jetzt nur noch den
+Analysten-Filter (Kursziel >=X%, Kaufen-Anteil >=Y%) plus die zugehoerige
+Einzelaufstellung der Ratingaenderungen. Die frueheren Turnaround-/
+Momentum-/Value-Top-10-Tabellen, die Rohstoffe/Krypto-Uebersicht und die
+taeglichen Veraenderungsmeldungen sind entfernt. Score-Berechnung laeuft
+intern unveraendert weiter (u.a. fuer den Value-Trap-Ausschluss im
+Filter), wird aber nicht mehr angezeigt.
 
 Erzeugt drei getrennte Ranglisten (Turnaround, Momentum, Value/Qualitaet),
 vergleicht sie mit dem Vortag und schreibt einen Report, der NUR
@@ -79,9 +82,10 @@ ANALYST_MAX_AGE_DAYS = 1  # Ratingaenderungen taeglich frisch - das ist das kurz
 # frisch er nach dem Alter waere - sonst benutzt ein neuer Programmlauf
 # unbemerkt einen Cache mit alter, unvollstaendiger Datenstruktur.
 FUND_CACHE_VERSION = 4
-ANALYST_CACHE_VERSION = 2
+ANALYST_CACHE_VERSION = 3
 REVISION_WINDOW_DAYS = 30  # Fenster fuer "kurzfristige" Analysten-Ratingaenderungen
 TARGET_FRESH_DAYS = 14     # Kursziel gilt als "frisch", wenn eine Ratingaenderung diese Zeit nicht ueberschreitet
+CONSENSUS_MAX_AGE_DAYS = 120  # ~4 Monate: aeltere Einzelwertungen zaehlen nicht mehr mit
 ANALYST_FILTER_MIN_UPSIDE = 15    # Mindest-Kurspotenzial zum Analysten-Kursziel, in Prozent
 ANALYST_FILTER_MIN_KAUFEN_PCT = 75  # Mindestanteil "Kaufen"-Einstufungen, in Prozent
 ANALYST_FILTER_TOP_N = 20
@@ -118,6 +122,82 @@ def plateau(x: float, lo: float, opt_lo: float, opt_hi: float, hi: float) -> flo
     if x > opt_hi:
         return ramp(x, hi, opt_hi)
     return 1.0
+
+
+# Zuordnung der von Banken verwendeten Freitext-Begriffe zu Kaufen/Halten/
+# Verkaufen. Nicht erschoepfend (jede Bank hat eigene Begriffe) - unbekannte
+# Begriffe werden NICHT geraten, sondern als "nicht zuordenbar" ausgewiesen
+# und aus der Prozentrechnung rausgehalten, um die Zahl nicht zu verfaelschen.
+GRADE_BUY_TERMS = {
+    "buy", "strong buy", "outperform", "overweight", "accumulate", "add",
+    "positive", "conviction buy", "top pick", "sector outperform",
+}
+GRADE_HOLD_TERMS = {
+    "hold", "neutral", "equal-weight", "equalweight", "equal weight",
+    "market perform", "sector perform", "in-line", "inline", "peer perform",
+    "perform", "market weight",
+}
+GRADE_SELL_TERMS = {
+    "sell", "underperform", "underweight", "reduce", "negative",
+    "strong sell", "sector underperform",
+}
+
+
+def classify_grade(grade: str | None) -> str | None:
+    """Ordnet einen Freitext-Grade (z.B. 'Overweight') in Kaufen/Halten/
+    Verkaufen ein. Gibt None zurueck, wenn der Begriff nicht sicher
+    zuordenbar ist - lieber ausschliessen als falsch einordnen."""
+    if not grade:
+        return None
+    g = grade.strip().lower()
+    if g in GRADE_BUY_TERMS:
+        return "buy"
+    if g in GRADE_HOLD_TERMS:
+        return "hold"
+    if g in GRADE_SELL_TERMS:
+        return "sell"
+    return None
+
+
+def compute_consensus_from_actions(ud: pd.DataFrame, date_col: str, cutoff) -> dict:
+    """Eigene, saubere Kaufen/Halten/Verkaufen-Aufteilung statt Yahoos
+    undurchsichtiger 'aktueller Konsens'-Zahl: pro Bank NUR die juengste
+    Einstufung, und nur wenn diese nicht aelter als CONSENSUS_MAX_AGE_DAYS
+    ist - eine Bank, die vor 5 Monaten zuletzt bewertet hat, zaehlt gar
+    nicht mehr mit (nicht nur "die alte Wertung ignorieren", sondern die
+    Bank faellt komplett raus, wie gewuenscht)."""
+    recent = ud[ud[date_col] >= cutoff]
+    if recent.empty or "Firm" not in recent.columns:
+        return {"kaufen_pct": None, "halten_pct": None, "verkaufen_pct": None,
+                "total": 0, "unclassified": 0}
+
+    # Pro Bank die zeitlich juengste Zeile behalten
+    latest_per_firm = recent.sort_values(date_col).groupby("Firm", as_index=False).last()
+
+    buy = hold = sell = unclassified = 0
+    for _, r in latest_per_firm.iterrows():
+        grade = r.get("ToGrade")
+        cls = classify_grade(grade)
+        if cls == "buy":
+            buy += 1
+        elif cls == "hold":
+            hold += 1
+        elif cls == "sell":
+            sell += 1
+        else:
+            unclassified += 1
+
+    total = buy + hold + sell
+    if total == 0:
+        return {"kaufen_pct": None, "halten_pct": None, "verkaufen_pct": None,
+                "total": 0, "unclassified": unclassified}
+    return {
+        "kaufen_pct": round(buy / total * 100),
+        "halten_pct": round(hold / total * 100),
+        "verkaufen_pct": round(sell / total * 100),
+        "total": total,
+        "unclassified": unclassified,
+    }
 
 
 def rsi(series: pd.Series, period: int = 14) -> pd.Series:
@@ -326,25 +406,6 @@ def get_fundamentals(tickers: list[str]) -> dict:
                 data[t]["isin"] = isin if isin and isin != "-" else None
             except Exception:  # noqa: BLE001
                 data[t]["isin"] = None
-            try:
-                rec = tk.recommendations
-                if rec is not None and not rec.empty:
-                    row0 = rec.iloc[0]  # aktuellster Zeitraum (i.d.R. "0m")
-                    sb = int(row0.get("strongBuy", 0) or 0)
-                    b = int(row0.get("buy", 0) or 0)
-                    h = int(row0.get("hold", 0) or 0)
-                    s = int(row0.get("sell", 0) or 0)
-                    ss = int(row0.get("strongSell", 0) or 0)
-                    total = sb + b + h + s + ss
-                    if total > 0:
-                        data[t]["rec_breakdown"] = {
-                            "kaufen_pct": round((sb + b) / total * 100),
-                            "halten_pct": round(h / total * 100),
-                            "verkaufen_pct": round((s + ss) / total * 100),
-                            "total": total,
-                        }
-            except Exception:  # noqa: BLE001
-                pass
         except Exception:  # noqa: BLE001
             data[t] = {}
         if n % 25 == 0:
@@ -398,12 +459,15 @@ def get_analyst_data(tickers: list[str]) -> dict:
     # Fundamentaldaten (siehe get_fundamentals), um den teuren vollen
     # Datenabruf nicht zusaetzlich taeglich zu wiederholen.
     cutoff = datetime.now(timezone.utc) - pd.Timedelta(days=REVISION_WINDOW_DAYS)
+    cutoff_consensus = datetime.now(timezone.utc) - pd.Timedelta(days=CONSENSUS_MAX_AGE_DAYS)
     data: dict[str, dict] = {}
     for n, t in enumerate(tickers, 1):
         entry = {
             "upgrades_30d": 0, "downgrades_30d": 0, "net_30d": 0,
             "last_action": None, "last_firm": None, "last_date": None,
             "actions": [],  # bis zu 5 juengste Einzelaktionen, neueste zuerst
+            "consensus": {"kaufen_pct": None, "halten_pct": None, "verkaufen_pct": None,
+                          "total": 0, "unclassified": 0},
         }
         try:
             ud = yf.Ticker(t).upgrades_downgrades
@@ -411,6 +475,13 @@ def get_analyst_data(tickers: list[str]) -> dict:
                 ud = ud.reset_index()
                 date_col = "GradeDate" if "GradeDate" in ud.columns else ud.columns[0]
                 ud[date_col] = pd.to_datetime(ud[date_col], utc=True, errors="coerce")
+
+                # Eigene Kaufen/Halten/Verkaufen-Aufteilung: pro Bank nur die
+                # juengste Wertung, aeltere als CONSENSUS_MAX_AGE_DAYS zaehlen
+                # nicht mehr mit. Nutzt dieselbe schon geladene Tabelle wie
+                # unten - kein zusaetzlicher Datenabruf.
+                entry["consensus"] = compute_consensus_from_actions(ud, date_col, cutoff_consensus)
+
                 recent = ud[ud[date_col] >= cutoff].sort_values(date_col)
                 if not recent.empty:
                     actions = recent["Action"].astype(str).str.lower()
@@ -930,7 +1001,13 @@ def format_revision(a: dict) -> str | None:
 
 def target_price_info(f: dict, a: dict, last: float) -> dict:
     """Kursziel-Informationen: absoluter Wert, Abstand zum Kurs in Prozent,
-    Anzahl Analysten, Empfehlung im Klartext, Aktualitaets-Kennzeichnung.
+    Kaufen/Halten/Verkaufen-Aufteilung, Aktualitaets-Kennzeichnung.
+
+    Die Kaufen/Halten/Verkaufen-Aufteilung kommt aus a["consensus"]
+    (compute_consensus_from_actions) - eine eigene Berechnung aus den
+    rohen Einzel-Ratings (pro Bank nur die juengste, maximal
+    CONSENSUS_MAX_AGE_DAYS alt), NICHT aus Yahoos eigener "aktueller
+    Konsens"-Zahl (deren genaue Aktualitaet nicht nachvollziehbar war).
 
     Yahoo liefert keinen Zeitstempel dafuer, wann das Kursziel zuletzt gesetzt
     wurde. Als Naeherung: gab es innerhalb der letzten TARGET_FRESH_DAYS Tage
@@ -949,7 +1026,7 @@ def target_price_info(f: dict, a: dict, last: float) -> dict:
     target = safe(f, "targetMeanPrice")
     n_analysts = safe(f, "numberOfAnalystOpinions")
     empfehlung = empfehlung_text.get(safe(f, "recommendationKey"), None)
-    rec_breakdown = safe(f, "rec_breakdown")
+    rec_breakdown = safe(a, "consensus")
 
     if not target or target <= 0 or not last or last <= 0:
         return {"target_abs": None, "upside_pct": None, "fresh": None,
@@ -989,10 +1066,10 @@ def kaufen_pct_cell(info: dict) -> str:
     Halten/Verkaufen interessieren hier nicht extra, die stecken implizit
     im Rest."""
     rb = info.get("rec_breakdown")
-    if rb:
-        return f"{rb['kaufen_pct']}% ({rb['total']} Analysten)"
+    if rb and rb.get("kaufen_pct") is not None:
+        return f"{rb['kaufen_pct']}% ({rb['total']} Banken, \u2264{CONSENSUS_MAX_AGE_DAYS}T)"
     emp = info.get("empfehlung")
-    return emp if emp else "keine Daten"
+    return (emp + " (kein aktueller Konsens)") if emp else "keine aktuelle Bewertung (>4 Monate)"
 
 
 def kursziel_cell(info: dict) -> str:
@@ -1263,9 +1340,17 @@ def build_glossary() -> str:
         "- **Kurs**: letzter Schlusskurs.",
         "- **Abstand ATH**: wie weit der Kurs unter dem Allzeithoch liegt. "
         "Rein informativ, dient nur der Einordnung.",
-        "- **Kaufen-Anteil Analysten**: Anteil der Analysten mit einer "
-        "Kaufen-Einstufung, z.B. \"89% (46 Analysten)\" heisst: 89% von 46 "
-        "erfassten Analysten empfehlen den Kauf.",
+        "- **Kaufen-Anteil Analysten**: EIGENE Berechnung (nicht Yahoos "
+        "eigene 'aktueller Konsens'-Zahl, deren genaue Aktualitaet nicht "
+        "nachvollziehbar war): pro Bank zaehlt NUR die juengste Einstufung, "
+        f"und nur wenn diese nicht aelter als {CONSENSUS_MAX_AGE_DAYS} Tage "
+        "(ca. 4 Monate) ist - eine Bank, die seit ueber 4 Monaten nichts "
+        "Neues gesagt hat, faellt komplett raus. Freitext-Einstufungen wie "
+        "'Overweight' oder 'Outperform' werden zu Kaufen/Halten/Verkaufen "
+        "zusammengefasst; nicht sicher zuordenbare Begriffe zaehlen NICHT "
+        "mit (lieber ausschliessen als falsch einordnen). Format z.B. "
+        "\"75% (12 Banken, \u2264120T)\" heisst: von 12 Banken mit einer "
+        "Wertung juenger als 120 Tage empfehlen 75% den Kauf.",
         "- **Kursziel**: mittleres Kursziel aller Analysten (Durchschnitt, keine "
         "Einzelmeinung) und Abstand zum aktuellen Kurs, z.B. \"67% unter "
         "aktuellem Kurs\" heisst: das Kursziel liegt 67% UNTER dem, was die "
@@ -1307,7 +1392,7 @@ def analyst_filter_hits(today: dict) -> list:
         target = row.get("target", {})
         upside = target.get("upside_pct")
         rb = target.get("rec_breakdown")
-        if upside is None or rb is None:
+        if upside is None or not rb or rb.get("kaufen_pct") is None:
             continue
         if upside >= ANALYST_FILTER_MIN_UPSIDE and rb["kaufen_pct"] >= ANALYST_FILTER_MIN_KAUFEN_PCT:
             hits.append((t, row, rb["kaufen_pct"], upside))

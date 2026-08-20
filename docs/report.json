@@ -3,25 +3,25 @@
  "ranks": {
   "turnaround": [
    "BEI.DE",
-   "HNR1.DE",
    "MELI",
+   "HNR1.DE",
+   "ADBE",
+   "AXON",
    "KHC",
-   "AXP",
    "BAYN.DE",
    "ROP",
-   "AXON",
-   "DASH",
+   "AXP",
    "HEN3.DE",
    "CRM",
-   "PYPL",
    "DTG.DE",
+   "PYPL",
    "BNR.DE",
-   "GEHC"
+   "DASH"
   ],
   "momentum": [
+   "MRK",
    "ABNB",
    "MRVL",
-   "MRK",
    "TEAM",
    "DB1.DE",
    "ALV.DE",
@@ -30,15 +30,15 @@
    "CSX",
    "KO",
    "DXCM",
-   "AXON",
-   "PYPL",
-   "JNJ",
-   "DTG.DE"
+   "DHL.DE",
+   "TRV",
+   "BNR.DE",
+   "AXON"
   ],
   "value": [
    "MU",
+   "ADSK",
    "NVDA",
-   "MSFT",
    "V",
    "REGN",
    "ABNB",
@@ -57,37 +57,51 @@
   "turnaround": {
    "entries": [
     {
-     "ticker": "BNR.DE",
-     "rank": 14
-    },
-    {
-     "ticker": "GEHC",
-     "rank": 15
+     "ticker": "ADBE",
+     "rank": 4
     }
    ],
    "exits": [
     {
-     "ticker": "ADSK",
-     "old_rank": 11
-    },
-    {
-     "ticker": "CSX",
+     "ticker": "GEHC",
      "old_rank": 15
     }
    ],
-   "moves": []
+   "moves": [
+    {
+     "ticker": "DASH",
+     "rank": 15,
+     "delta": -6
+    }
+   ]
   },
   "momentum": {
    "entries": [
     {
-     "ticker": "JNJ",
+     "ticker": "DHL.DE",
+     "rank": 12
+    },
+    {
+     "ticker": "TRV",
+     "rank": 13
+    },
+    {
+     "ticker": "BNR.DE",
      "rank": 14
     }
    ],
    "exits": [
     {
-     "ticker": "BAYN.DE",
-     "old_rank": 9
+     "ticker": "PYPL",
+     "old_rank": 13
+    },
+    {
+     "ticker": "JNJ",
+     "old_rank": 14
+    },
+    {
+     "ticker": "DTG.DE",
+     "old_rank": 15
     }
    ],
    "moves": []
@@ -95,14 +109,14 @@
   "value": {
    "entries": [
     {
-     "ticker": "MSFT",
-     "rank": 3
+     "ticker": "ADSK",
+     "rank": 2
     }
    ],
    "exits": [
     {
-     "ticker": "ADSK",
-     "old_rank": 2
+     "ticker": "MSFT",
+     "old_rank": 3
     }
    ],
    "moves": []

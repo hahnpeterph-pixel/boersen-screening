@@ -1,6 +1,6 @@
 {
- "updated": "2026-08-20T12:35:26.363082+00:00",
- "version": 2,
+ "updated": "2026-08-20T15:35:33.549363+00:00",
+ "version": 3,
  "data": {
   "AAPL": {
    "upgrades_30d": 0,
@@ -45,7 +45,14 @@
      "to_grade": "Neutral",
      "from_grade": "Neutral"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 57,
+    "halten_pct": 29,
+    "verkaufen_pct": 14,
+    "total": 21,
+    "unclassified": 0
+   }
   },
   "ABNB": {
    "upgrades_30d": 1,
@@ -90,7 +97,14 @@
      "to_grade": "Outperform",
      "from_grade": "Outperform"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 60,
+    "halten_pct": 35,
+    "verkaufen_pct": 5,
+    "total": 20,
+    "unclassified": 1
+   }
   },
   "ADBE": {
    "upgrades_30d": 0,
@@ -107,16 +121,44 @@
      "to_grade": "Underperform",
      "from_grade": "Underperform"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 29,
+    "halten_pct": 54,
+    "verkaufen_pct": 17,
+    "total": 24,
+    "unclassified": 0
+   }
   },
   "ADI": {
-   "upgrades_30d": 0,
+   "upgrades_30d": 1,
    "downgrades_30d": 0,
-   "net_30d": 0,
+   "net_30d": 1,
    "last_action": "main",
-   "last_firm": "Needham",
+   "last_firm": "Wells Fargo",
    "last_date": "2026-08-20",
    "actions": [
+    {
+     "date": "2026-08-20",
+     "firm": "Wells Fargo",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-08-20",
+     "firm": "TD Cowen",
+     "action": "reit",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
+     "date": "2026-08-20",
+     "firm": "Seaport Global",
+     "action": "up",
+     "to_grade": "Buy",
+     "from_grade": "Neutral"
+    },
     {
      "date": "2026-08-20",
      "firm": "Needham",
@@ -131,7 +173,14 @@
      "to_grade": "Overweight",
      "from_grade": "Overweight"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 94,
+    "halten_pct": 6,
+    "verkaufen_pct": 0,
+    "total": 16,
+    "unclassified": 0
+   }
   },
   "ADP": {
    "upgrades_30d": 0,
@@ -176,7 +225,14 @@
      "to_grade": "Hold",
      "from_grade": "Hold"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 33,
+    "halten_pct": 67,
+    "verkaufen_pct": 0,
+    "total": 9,
+    "unclassified": 0
+   }
   },
   "ADS.DE": {
    "upgrades_30d": 0,
@@ -185,16 +241,30 @@
    "last_action": null,
    "last_firm": null,
    "last_date": null,
-   "actions": []
+   "actions": [],
+   "consensus": {
+    "kaufen_pct": null,
+    "halten_pct": null,
+    "verkaufen_pct": null,
+    "total": 0,
+    "unclassified": 0
+   }
   },
   "ADSK": {
    "upgrades_30d": 2,
    "downgrades_30d": 0,
    "net_30d": 2,
-   "last_action": "init",
-   "last_firm": "Goldman Sachs",
-   "last_date": "2026-08-11",
+   "last_action": "main",
+   "last_firm": "Guggenheim",
+   "last_date": "2026-08-20",
    "actions": [
+    {
+     "date": "2026-08-20",
+     "firm": "Guggenheim",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
     {
      "date": "2026-08-11",
      "firm": "Goldman Sachs",
@@ -209,7 +279,14 @@
      "to_grade": "Buy",
      "from_grade": null
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 79,
+    "halten_pct": 21,
+    "verkaufen_pct": 0,
+    "total": 14,
+    "unclassified": 0
+   }
   },
   "AEP": {
    "upgrades_30d": 0,
@@ -254,7 +331,14 @@
      "to_grade": "Overweight",
      "from_grade": "Overweight"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 45,
+    "halten_pct": 55,
+    "verkaufen_pct": 0,
+    "total": 11,
+    "unclassified": 0
+   }
   },
   "AIR.DE": {
    "upgrades_30d": 0,
@@ -263,7 +347,14 @@
    "last_action": null,
    "last_firm": null,
    "last_date": null,
-   "actions": []
+   "actions": [],
+   "consensus": {
+    "kaufen_pct": null,
+    "halten_pct": null,
+    "verkaufen_pct": null,
+    "total": 0,
+    "unclassified": 0
+   }
   },
   "ALV.DE": {
    "upgrades_30d": 0,
@@ -272,7 +363,14 @@
    "last_action": null,
    "last_firm": null,
    "last_date": null,
-   "actions": []
+   "actions": [],
+   "consensus": {
+    "kaufen_pct": null,
+    "halten_pct": null,
+    "verkaufen_pct": null,
+    "total": 0,
+    "unclassified": 0
+   }
   },
   "AMAT": {
    "upgrades_30d": 0,
@@ -317,7 +415,14 @@
      "to_grade": "Buy",
      "from_grade": "Buy"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 96,
+    "halten_pct": 4,
+    "verkaufen_pct": 0,
+    "total": 26,
+    "unclassified": 0
+   }
   },
   "AMD": {
    "upgrades_30d": 0,
@@ -362,7 +467,14 @@
      "to_grade": "Neutral",
      "from_grade": "Neutral"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 82,
+    "halten_pct": 18,
+    "verkaufen_pct": 0,
+    "total": 33,
+    "unclassified": 0
+   }
   },
   "AMGN": {
    "upgrades_30d": 0,
@@ -407,7 +519,14 @@
      "to_grade": "Neutral",
      "from_grade": "Neutral"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 47,
+    "halten_pct": 53,
+    "verkaufen_pct": 0,
+    "total": 17,
+    "unclassified": 0
+   }
   },
   "AMZN": {
    "upgrades_30d": 0,
@@ -452,7 +571,14 @@
      "to_grade": "Outperform",
      "from_grade": "Outperform"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 96,
+    "halten_pct": 4,
+    "verkaufen_pct": 0,
+    "total": 28,
+    "unclassified": 1
+   }
   },
   "APP": {
    "upgrades_30d": 0,
@@ -497,7 +623,14 @@
      "to_grade": "Buy",
      "from_grade": "Buy"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 67,
+    "halten_pct": 33,
+    "verkaufen_pct": 0,
+    "total": 15,
+    "unclassified": 0
+   }
   },
   "ARM": {
    "upgrades_30d": 0,
@@ -542,7 +675,14 @@
      "to_grade": "Buy",
      "from_grade": "Buy"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 72,
+    "halten_pct": 22,
+    "verkaufen_pct": 6,
+    "total": 18,
+    "unclassified": 0
+   }
   },
   "ASML": {
    "upgrades_30d": 0,
@@ -551,7 +691,14 @@
    "last_action": null,
    "last_firm": null,
    "last_date": null,
-   "actions": []
+   "actions": [],
+   "consensus": {
+    "kaufen_pct": 100,
+    "halten_pct": 0,
+    "verkaufen_pct": 0,
+    "total": 5,
+    "unclassified": 0
+   }
   },
   "AVGO": {
    "upgrades_30d": 0,
@@ -560,7 +707,14 @@
    "last_action": null,
    "last_firm": null,
    "last_date": null,
-   "actions": []
+   "actions": [],
+   "consensus": {
+    "kaufen_pct": 81,
+    "halten_pct": 19,
+    "verkaufen_pct": 0,
+    "total": 21,
+    "unclassified": 0
+   }
   },
   "AXON": {
    "upgrades_30d": 0,
@@ -598,7 +752,14 @@
      "to_grade": "Overweight",
      "from_grade": "Overweight"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 83,
+    "halten_pct": 17,
+    "verkaufen_pct": 0,
+    "total": 6,
+    "unclassified": 1
+   }
   },
   "AXP": {
    "upgrades_30d": 0,
@@ -643,7 +804,14 @@
      "to_grade": "Sell",
      "from_grade": "Sell"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 46,
+    "halten_pct": 46,
+    "verkaufen_pct": 8,
+    "total": 13,
+    "unclassified": 0
+   }
   },
   "AZN": {
    "upgrades_30d": 0,
@@ -652,7 +820,14 @@
    "last_action": null,
    "last_firm": null,
    "last_date": null,
-   "actions": []
+   "actions": [],
+   "consensus": {
+    "kaufen_pct": null,
+    "halten_pct": null,
+    "verkaufen_pct": null,
+    "total": 0,
+    "unclassified": 0
+   }
   },
   "BA": {
    "upgrades_30d": 2,
@@ -697,7 +872,14 @@
      "to_grade": "Outperform",
      "from_grade": "Outperform"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 86,
+    "halten_pct": 14,
+    "verkaufen_pct": 0,
+    "total": 7,
+    "unclassified": 0
+   }
   },
   "BAS.DE": {
    "upgrades_30d": 0,
@@ -706,7 +888,14 @@
    "last_action": null,
    "last_firm": null,
    "last_date": null,
-   "actions": []
+   "actions": [],
+   "consensus": {
+    "kaufen_pct": null,
+    "halten_pct": null,
+    "verkaufen_pct": null,
+    "total": 0,
+    "unclassified": 0
+   }
   },
   "BAYN.DE": {
    "upgrades_30d": 0,
@@ -715,7 +904,14 @@
    "last_action": null,
    "last_firm": null,
    "last_date": null,
-   "actions": []
+   "actions": [],
+   "consensus": {
+    "kaufen_pct": null,
+    "halten_pct": null,
+    "verkaufen_pct": null,
+    "total": 0,
+    "unclassified": 0
+   }
   },
   "BEI.DE": {
    "upgrades_30d": 0,
@@ -724,7 +920,14 @@
    "last_action": null,
    "last_firm": null,
    "last_date": null,
-   "actions": []
+   "actions": [],
+   "consensus": {
+    "kaufen_pct": null,
+    "halten_pct": null,
+    "verkaufen_pct": null,
+    "total": 0,
+    "unclassified": 0
+   }
   },
   "BIIB": {
    "upgrades_30d": 1,
@@ -769,7 +972,14 @@
      "to_grade": "Buy",
      "from_grade": "Buy"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 69,
+    "halten_pct": 31,
+    "verkaufen_pct": 0,
+    "total": 16,
+    "unclassified": 0
+   }
   },
   "BKNG": {
    "upgrades_30d": 0,
@@ -814,7 +1024,14 @@
      "to_grade": "Outperform",
      "from_grade": "Outperform"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 80,
+    "halten_pct": 20,
+    "verkaufen_pct": 0,
+    "total": 20,
+    "unclassified": 0
+   }
   },
   "BKR": {
    "upgrades_30d": 0,
@@ -859,7 +1076,14 @@
      "to_grade": "Positive",
      "from_grade": "Positive"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 82,
+    "halten_pct": 18,
+    "verkaufen_pct": 0,
+    "total": 11,
+    "unclassified": 0
+   }
   },
   "BMW.DE": {
    "upgrades_30d": 0,
@@ -868,7 +1092,14 @@
    "last_action": null,
    "last_firm": null,
    "last_date": null,
-   "actions": []
+   "actions": [],
+   "consensus": {
+    "kaufen_pct": null,
+    "halten_pct": null,
+    "verkaufen_pct": null,
+    "total": 0,
+    "unclassified": 0
+   }
   },
   "BNR.DE": {
    "upgrades_30d": 0,
@@ -877,7 +1108,14 @@
    "last_action": null,
    "last_firm": null,
    "last_date": null,
-   "actions": []
+   "actions": [],
+   "consensus": {
+    "kaufen_pct": null,
+    "halten_pct": null,
+    "verkaufen_pct": null,
+    "total": 0,
+    "unclassified": 0
+   }
   },
   "CAT": {
    "upgrades_30d": 0,
@@ -886,7 +1124,14 @@
    "last_action": null,
    "last_firm": null,
    "last_date": null,
-   "actions": []
+   "actions": [],
+   "consensus": {
+    "kaufen_pct": null,
+    "halten_pct": null,
+    "verkaufen_pct": null,
+    "total": 0,
+    "unclassified": 0
+   }
   },
   "CBK.DE": {
    "upgrades_30d": 0,
@@ -895,7 +1140,14 @@
    "last_action": null,
    "last_firm": null,
    "last_date": null,
-   "actions": []
+   "actions": [],
+   "consensus": {
+    "kaufen_pct": null,
+    "halten_pct": null,
+    "verkaufen_pct": null,
+    "total": 0,
+    "unclassified": 0
+   }
   },
   "CCEP": {
    "upgrades_30d": 0,
@@ -932,15 +1184,15 @@
      "action": "main",
      "to_grade": "Overweight",
      "from_grade": "Overweight"
-    },
-    {
-     "date": "2026-07-21",
-     "firm": "Barclays",
-     "action": "main",
-     "to_grade": "Overweight",
-     "from_grade": "Overweight"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 75,
+    "halten_pct": 25,
+    "verkaufen_pct": 0,
+    "total": 4,
+    "unclassified": 0
+   }
   },
   "CDNS": {
    "upgrades_30d": 0,
@@ -985,7 +1237,14 @@
      "to_grade": "Buy",
      "from_grade": "Buy"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 90,
+    "halten_pct": 10,
+    "verkaufen_pct": 0,
+    "total": 10,
+    "unclassified": 0
+   }
   },
   "CDW": {
    "upgrades_30d": 0,
@@ -1002,7 +1261,14 @@
      "to_grade": "Overweight",
      "from_grade": "Overweight"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 67,
+    "halten_pct": 33,
+    "verkaufen_pct": 0,
+    "total": 6,
+    "unclassified": 0
+   }
   },
   "CEG": {
    "upgrades_30d": 0,
@@ -1047,7 +1313,14 @@
      "to_grade": "Overweight",
      "from_grade": "Overweight"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 70,
+    "halten_pct": 30,
+    "verkaufen_pct": 0,
+    "total": 10,
+    "unclassified": 0
+   }
   },
   "CHTR": {
    "upgrades_30d": 0,
@@ -1092,7 +1365,14 @@
      "to_grade": "Sector Perform",
      "from_grade": "Sector Perform"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 33,
+    "halten_pct": 33,
+    "verkaufen_pct": 33,
+    "total": 12,
+    "unclassified": 0
+   }
   },
   "CMCSA": {
    "upgrades_30d": 0,
@@ -1130,7 +1410,14 @@
      "to_grade": "Buy",
      "from_grade": "Buy"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 33,
+    "halten_pct": 50,
+    "verkaufen_pct": 17,
+    "total": 12,
+    "unclassified": 0
+   }
   },
   "CON.DE": {
    "upgrades_30d": 0,
@@ -1139,7 +1426,14 @@
    "last_action": null,
    "last_firm": null,
    "last_date": null,
-   "actions": []
+   "actions": [],
+   "consensus": {
+    "kaufen_pct": null,
+    "halten_pct": null,
+    "verkaufen_pct": null,
+    "total": 0,
+    "unclassified": 0
+   }
   },
   "COST": {
    "upgrades_30d": 0,
@@ -1148,16 +1442,30 @@
    "last_action": null,
    "last_firm": null,
    "last_date": null,
-   "actions": []
+   "actions": [],
+   "consensus": {
+    "kaufen_pct": 75,
+    "halten_pct": 25,
+    "verkaufen_pct": 0,
+    "total": 8,
+    "unclassified": 0
+   }
   },
   "CPRT": {
    "upgrades_30d": 0,
    "downgrades_30d": 0,
    "net_30d": 0,
-   "last_action": "main",
-   "last_firm": "Barclays",
-   "last_date": "2026-07-22",
+   "last_action": "reit",
+   "last_firm": "Stephens & Co.",
+   "last_date": "2026-08-20",
    "actions": [
+    {
+     "date": "2026-08-20",
+     "firm": "Stephens & Co.",
+     "action": "reit",
+     "to_grade": "Equal-Weight",
+     "from_grade": "Equal-Weight"
+    },
     {
      "date": "2026-07-22",
      "firm": "Barclays",
@@ -1165,16 +1473,30 @@
      "to_grade": "Underweight",
      "from_grade": "Underweight"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 33,
+    "halten_pct": 33,
+    "verkaufen_pct": 33,
+    "total": 3,
+    "unclassified": 0
+   }
   },
   "CRM": {
    "upgrades_30d": 0,
    "downgrades_30d": 0,
    "net_30d": 0,
    "last_action": "reit",
-   "last_firm": "Cantor Fitzgerald",
+   "last_firm": "Guggenheim",
    "last_date": "2026-08-20",
    "actions": [
+    {
+     "date": "2026-08-20",
+     "firm": "Guggenheim",
+     "action": "reit",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
     {
      "date": "2026-08-20",
      "firm": "Cantor Fitzgerald",
@@ -1203,16 +1525,30 @@
      "to_grade": "Equal-Weight",
      "from_grade": "Equal-Weight"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 60,
+    "halten_pct": 35,
+    "verkaufen_pct": 5,
+    "total": 20,
+    "unclassified": 2
+   }
   },
   "CRWD": {
    "upgrades_30d": 1,
    "downgrades_30d": 0,
    "net_30d": 1,
    "last_action": "main",
-   "last_firm": "Mizuho",
-   "last_date": "2026-08-19",
+   "last_firm": "Evercore ISI Group",
+   "last_date": "2026-08-20",
    "actions": [
+    {
+     "date": "2026-08-20",
+     "firm": "Evercore ISI Group",
+     "action": "main",
+     "to_grade": "In-Line",
+     "from_grade": "In-Line"
+    },
     {
      "date": "2026-08-19",
      "firm": "Mizuho",
@@ -1240,15 +1576,15 @@
      "action": "main",
      "to_grade": "Overweight",
      "from_grade": "Overweight"
-    },
-    {
-     "date": "2026-08-18",
-     "firm": "Benchmark",
-     "action": "main",
-     "to_grade": "Buy",
-     "from_grade": "Buy"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 79,
+    "halten_pct": 21,
+    "verkaufen_pct": 0,
+    "total": 33,
+    "unclassified": 1
+   }
   },
   "CSCO": {
    "upgrades_30d": 0,
@@ -1293,7 +1629,14 @@
      "to_grade": "Overweight",
      "from_grade": "Overweight"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 75,
+    "halten_pct": 25,
+    "verkaufen_pct": 0,
+    "total": 12,
+    "unclassified": 1
+   }
   },
   "CSGP": {
    "upgrades_30d": 0,
@@ -1338,7 +1681,14 @@
      "to_grade": "Outperform",
      "from_grade": "Outperform"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 50,
+    "halten_pct": 43,
+    "verkaufen_pct": 7,
+    "total": 14,
+    "unclassified": 1
+   }
   },
   "CSX": {
    "upgrades_30d": 0,
@@ -1383,7 +1733,14 @@
      "to_grade": "Market Perform",
      "from_grade": "Market Perform"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 60,
+    "halten_pct": 33,
+    "verkaufen_pct": 7,
+    "total": 15,
+    "unclassified": 0
+   }
   },
   "CTAS": {
    "upgrades_30d": 0,
@@ -1392,7 +1749,14 @@
    "last_action": null,
    "last_firm": null,
    "last_date": null,
-   "actions": []
+   "actions": [],
+   "consensus": {
+    "kaufen_pct": 83,
+    "halten_pct": 17,
+    "verkaufen_pct": 0,
+    "total": 6,
+    "unclassified": 0
+   }
   },
   "CTSH": {
    "upgrades_30d": 0,
@@ -1437,7 +1801,14 @@
      "to_grade": "Overweight",
      "from_grade": "Overweight"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 42,
+    "halten_pct": 58,
+    "verkaufen_pct": 0,
+    "total": 12,
+    "unclassified": 0
+   }
   },
   "CVX": {
    "upgrades_30d": 0,
@@ -1482,7 +1853,14 @@
      "to_grade": "Equal-Weight",
      "from_grade": "Equal-Weight"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 60,
+    "halten_pct": 40,
+    "verkaufen_pct": 0,
+    "total": 10,
+    "unclassified": 0
+   }
   },
   "DASH": {
    "upgrades_30d": 0,
@@ -1527,7 +1905,14 @@
      "to_grade": "Buy",
      "from_grade": "Buy"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 65,
+    "halten_pct": 35,
+    "verkaufen_pct": 0,
+    "total": 17,
+    "unclassified": 0
+   }
   },
   "DB1.DE": {
    "upgrades_30d": 0,
@@ -1536,7 +1921,14 @@
    "last_action": null,
    "last_firm": null,
    "last_date": null,
-   "actions": []
+   "actions": [],
+   "consensus": {
+    "kaufen_pct": null,
+    "halten_pct": null,
+    "verkaufen_pct": null,
+    "total": 0,
+    "unclassified": 0
+   }
   },
   "DBK.DE": {
    "upgrades_30d": 0,
@@ -1545,7 +1937,14 @@
    "last_action": null,
    "last_firm": null,
    "last_date": null,
-   "actions": []
+   "actions": [],
+   "consensus": {
+    "kaufen_pct": null,
+    "halten_pct": null,
+    "verkaufen_pct": null,
+    "total": 0,
+    "unclassified": 0
+   }
   },
   "DDOG": {
    "upgrades_30d": 0,
@@ -1590,7 +1989,14 @@
      "to_grade": "Buy",
      "from_grade": "Buy"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 90,
+    "halten_pct": 7,
+    "verkaufen_pct": 3,
+    "total": 29,
+    "unclassified": 2
+   }
   },
   "DHL.DE": {
    "upgrades_30d": 0,
@@ -1599,7 +2005,14 @@
    "last_action": null,
    "last_firm": null,
    "last_date": null,
-   "actions": []
+   "actions": [],
+   "consensus": {
+    "kaufen_pct": null,
+    "halten_pct": null,
+    "verkaufen_pct": null,
+    "total": 0,
+    "unclassified": 0
+   }
   },
   "DIS": {
    "upgrades_30d": 0,
@@ -1644,7 +2057,14 @@
      "to_grade": "Buy",
      "from_grade": "Buy"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 100,
+    "halten_pct": 0,
+    "verkaufen_pct": 0,
+    "total": 11,
+    "unclassified": 0
+   }
   },
   "DTE.DE": {
    "upgrades_30d": 0,
@@ -1653,7 +2073,14 @@
    "last_action": null,
    "last_firm": null,
    "last_date": null,
-   "actions": []
+   "actions": [],
+   "consensus": {
+    "kaufen_pct": null,
+    "halten_pct": null,
+    "verkaufen_pct": null,
+    "total": 0,
+    "unclassified": 0
+   }
   },
   "DTG.DE": {
    "upgrades_30d": 0,
@@ -1662,7 +2089,14 @@
    "last_action": null,
    "last_firm": null,
    "last_date": null,
-   "actions": []
+   "actions": [],
+   "consensus": {
+    "kaufen_pct": null,
+    "halten_pct": null,
+    "verkaufen_pct": null,
+    "total": 0,
+    "unclassified": 0
+   }
   },
   "DXCM": {
    "upgrades_30d": 0,
@@ -1707,7 +2141,14 @@
      "to_grade": "Outperform",
      "from_grade": "Outperform"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 88,
+    "halten_pct": 6,
+    "verkaufen_pct": 6,
+    "total": 16,
+    "unclassified": 0
+   }
   },
   "ENR.DE": {
    "upgrades_30d": 0,
@@ -1716,7 +2157,14 @@
    "last_action": null,
    "last_firm": null,
    "last_date": null,
-   "actions": []
+   "actions": [],
+   "consensus": {
+    "kaufen_pct": null,
+    "halten_pct": null,
+    "verkaufen_pct": null,
+    "total": 0,
+    "unclassified": 0
+   }
   },
   "EOAN.DE": {
    "upgrades_30d": 0,
@@ -1725,7 +2173,14 @@
    "last_action": null,
    "last_firm": null,
    "last_date": null,
-   "actions": []
+   "actions": [],
+   "consensus": {
+    "kaufen_pct": null,
+    "halten_pct": null,
+    "verkaufen_pct": null,
+    "total": 0,
+    "unclassified": 0
+   }
   },
   "EXC": {
    "upgrades_30d": 0,
@@ -1742,7 +2197,14 @@
      "to_grade": "Hold",
      "from_grade": "Hold"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 0,
+    "halten_pct": 67,
+    "verkaufen_pct": 33,
+    "total": 3,
+    "unclassified": 0
+   }
   },
   "FANG": {
    "upgrades_30d": 0,
@@ -1751,7 +2213,14 @@
    "last_action": null,
    "last_firm": null,
    "last_date": null,
-   "actions": []
+   "actions": [],
+   "consensus": {
+    "kaufen_pct": null,
+    "halten_pct": null,
+    "verkaufen_pct": null,
+    "total": 0,
+    "unclassified": 0
+   }
   },
   "FAST": {
    "upgrades_30d": 0,
@@ -1760,7 +2229,14 @@
    "last_action": null,
    "last_firm": null,
    "last_date": null,
-   "actions": []
+   "actions": [],
+   "consensus": {
+    "kaufen_pct": 25,
+    "halten_pct": 75,
+    "verkaufen_pct": 0,
+    "total": 4,
+    "unclassified": 0
+   }
   },
   "FRE.DE": {
    "upgrades_30d": 0,
@@ -1769,7 +2245,14 @@
    "last_action": null,
    "last_firm": null,
    "last_date": null,
-   "actions": []
+   "actions": [],
+   "consensus": {
+    "kaufen_pct": null,
+    "halten_pct": null,
+    "verkaufen_pct": null,
+    "total": 0,
+    "unclassified": 0
+   }
   },
   "FTNT": {
    "upgrades_30d": 0,
@@ -1814,7 +2297,14 @@
      "to_grade": "Equal-Weight",
      "from_grade": "Equal-Weight"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 23,
+    "halten_pct": 59,
+    "verkaufen_pct": 18,
+    "total": 22,
+    "unclassified": 0
+   }
   },
   "GEHC": {
    "upgrades_30d": 0,
@@ -1859,7 +2349,14 @@
      "to_grade": "Overweight",
      "from_grade": "Overweight"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 36,
+    "halten_pct": 64,
+    "verkaufen_pct": 0,
+    "total": 11,
+    "unclassified": 0
+   }
   },
   "GFS": {
    "upgrades_30d": 0,
@@ -1883,7 +2380,14 @@
      "to_grade": "Neutral",
      "from_grade": "Neutral"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 50,
+    "halten_pct": 50,
+    "verkaufen_pct": 0,
+    "total": 10,
+    "unclassified": 0
+   }
   },
   "GILD": {
    "upgrades_30d": 0,
@@ -1928,7 +2432,14 @@
      "to_grade": "Overweight",
      "from_grade": "Overweight"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 67,
+    "halten_pct": 33,
+    "verkaufen_pct": 0,
+    "total": 9,
+    "unclassified": 0
+   }
   },
   "GOOGL": {
    "upgrades_30d": 0,
@@ -1973,7 +2484,14 @@
      "to_grade": "Neutral",
      "from_grade": "Neutral"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 81,
+    "halten_pct": 19,
+    "verkaufen_pct": 0,
+    "total": 26,
+    "unclassified": 1
+   }
   },
   "GS": {
    "upgrades_30d": 0,
@@ -1990,7 +2508,14 @@
      "to_grade": "Neutral",
      "from_grade": "Neutral"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 33,
+    "halten_pct": 58,
+    "verkaufen_pct": 8,
+    "total": 12,
+    "unclassified": 0
+   }
   },
   "HD": {
    "upgrades_30d": 0,
@@ -2035,7 +2560,14 @@
      "to_grade": "Sector Weight",
      "from_grade": "Sector Weight"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 68,
+    "halten_pct": 32,
+    "verkaufen_pct": 0,
+    "total": 19,
+    "unclassified": 1
+   }
   },
   "HEI.DE": {
    "upgrades_30d": 0,
@@ -2044,7 +2576,14 @@
    "last_action": null,
    "last_firm": null,
    "last_date": null,
-   "actions": []
+   "actions": [],
+   "consensus": {
+    "kaufen_pct": null,
+    "halten_pct": null,
+    "verkaufen_pct": null,
+    "total": 0,
+    "unclassified": 0
+   }
   },
   "HEN3.DE": {
    "upgrades_30d": 0,
@@ -2053,7 +2592,14 @@
    "last_action": null,
    "last_firm": null,
    "last_date": null,
-   "actions": []
+   "actions": [],
+   "consensus": {
+    "kaufen_pct": null,
+    "halten_pct": null,
+    "verkaufen_pct": null,
+    "total": 0,
+    "unclassified": 0
+   }
   },
   "HNR1.DE": {
    "upgrades_30d": 0,
@@ -2062,7 +2608,14 @@
    "last_action": null,
    "last_firm": null,
    "last_date": null,
-   "actions": []
+   "actions": [],
+   "consensus": {
+    "kaufen_pct": null,
+    "halten_pct": null,
+    "verkaufen_pct": null,
+    "total": 0,
+    "unclassified": 0
+   }
   },
   "HON": {
    "upgrades_30d": 1,
@@ -2107,7 +2660,14 @@
      "to_grade": "Outperform",
      "from_grade": "Outperform"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 79,
+    "halten_pct": 21,
+    "verkaufen_pct": 0,
+    "total": 14,
+    "unclassified": 0
+   }
   },
   "IBM": {
    "upgrades_30d": 1,
@@ -2152,7 +2712,14 @@
      "to_grade": "Outperform",
      "from_grade": "Outperform"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 69,
+    "halten_pct": 25,
+    "verkaufen_pct": 6,
+    "total": 16,
+    "unclassified": 0
+   }
   },
   "IDXX": {
    "upgrades_30d": 0,
@@ -2190,7 +2757,14 @@
      "to_grade": "Neutral",
      "from_grade": "Neutral"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 33,
+    "halten_pct": 67,
+    "verkaufen_pct": 0,
+    "total": 3,
+    "unclassified": 0
+   }
   },
   "IFX.DE": {
    "upgrades_30d": 0,
@@ -2199,7 +2773,14 @@
    "last_action": null,
    "last_firm": null,
    "last_date": null,
-   "actions": []
+   "actions": [],
+   "consensus": {
+    "kaufen_pct": null,
+    "halten_pct": null,
+    "verkaufen_pct": null,
+    "total": 0,
+    "unclassified": 0
+   }
   },
   "INTC": {
    "upgrades_30d": 0,
@@ -2244,7 +2825,14 @@
      "to_grade": "Neutral",
      "from_grade": "Neutral"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 28,
+    "halten_pct": 64,
+    "verkaufen_pct": 8,
+    "total": 25,
+    "unclassified": 0
+   }
   },
   "INTU": {
    "upgrades_30d": 0,
@@ -2289,7 +2877,14 @@
      "to_grade": "Hold",
      "from_grade": "Hold"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 55,
+    "halten_pct": 35,
+    "verkaufen_pct": 10,
+    "total": 20,
+    "unclassified": 0
+   }
   },
   "ISRG": {
    "upgrades_30d": 1,
@@ -2313,7 +2908,14 @@
      "to_grade": "Hold",
      "from_grade": "Buy"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 85,
+    "halten_pct": 15,
+    "verkaufen_pct": 0,
+    "total": 20,
+    "unclassified": 0
+   }
   },
   "JNJ": {
    "upgrades_30d": 0,
@@ -2337,7 +2939,14 @@
      "to_grade": "Overweight",
      "from_grade": "Overweight"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 89,
+    "halten_pct": 11,
+    "verkaufen_pct": 0,
+    "total": 9,
+    "unclassified": 0
+   }
   },
   "JPM": {
    "upgrades_30d": 0,
@@ -2361,7 +2970,14 @@
      "to_grade": "Buy",
      "from_grade": "Buy"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 64,
+    "halten_pct": 36,
+    "verkaufen_pct": 0,
+    "total": 11,
+    "unclassified": 0
+   }
   },
   "KDP": {
    "upgrades_30d": 1,
@@ -2406,7 +3022,14 @@
      "to_grade": "Overweight",
      "from_grade": "Overweight"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 75,
+    "halten_pct": 25,
+    "verkaufen_pct": 0,
+    "total": 8,
+    "unclassified": 0
+   }
   },
   "KHC": {
    "upgrades_30d": 0,
@@ -2451,7 +3074,14 @@
      "to_grade": "In-Line",
      "from_grade": "In-Line"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 0,
+    "halten_pct": 75,
+    "verkaufen_pct": 25,
+    "total": 8,
+    "unclassified": 0
+   }
   },
   "KLAC": {
    "upgrades_30d": 0,
@@ -2496,7 +3126,14 @@
      "to_grade": "Overweight",
      "from_grade": "Overweight"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 76,
+    "halten_pct": 24,
+    "verkaufen_pct": 0,
+    "total": 17,
+    "unclassified": 0
+   }
   },
   "KO": {
    "upgrades_30d": 0,
@@ -2541,7 +3178,14 @@
      "to_grade": "Overweight",
      "from_grade": "Overweight"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 92,
+    "halten_pct": 8,
+    "verkaufen_pct": 0,
+    "total": 13,
+    "unclassified": 0
+   }
   },
   "LIN": {
    "upgrades_30d": 0,
@@ -2579,7 +3223,14 @@
      "to_grade": "Outperform",
      "from_grade": "Outperform"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 100,
+    "halten_pct": 0,
+    "verkaufen_pct": 0,
+    "total": 6,
+    "unclassified": 0
+   }
   },
   "LRCX": {
    "upgrades_30d": 0,
@@ -2624,7 +3275,14 @@
      "to_grade": "Buy",
      "from_grade": "Buy"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 95,
+    "halten_pct": 5,
+    "verkaufen_pct": 0,
+    "total": 19,
+    "unclassified": 0
+   }
   },
   "LULU": {
    "upgrades_30d": 0,
@@ -2648,7 +3306,14 @@
      "to_grade": "Equal-Weight",
      "from_grade": "Equal-Weight"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 0,
+    "halten_pct": 94,
+    "verkaufen_pct": 6,
+    "total": 17,
+    "unclassified": 0
+   }
   },
   "MAR": {
    "upgrades_30d": 1,
@@ -2693,7 +3358,14 @@
      "to_grade": "Outperform",
      "from_grade": "Outperform"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 44,
+    "halten_pct": 56,
+    "verkaufen_pct": 0,
+    "total": 16,
+    "unclassified": 0
+   }
   },
   "MBG.DE": {
    "upgrades_30d": 0,
@@ -2702,7 +3374,14 @@
    "last_action": null,
    "last_firm": null,
    "last_date": null,
-   "actions": []
+   "actions": [],
+   "consensus": {
+    "kaufen_pct": null,
+    "halten_pct": null,
+    "verkaufen_pct": null,
+    "total": 0,
+    "unclassified": 0
+   }
   },
   "MCD": {
    "upgrades_30d": 0,
@@ -2747,7 +3426,14 @@
      "to_grade": "Buy",
      "from_grade": "Buy"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 60,
+    "halten_pct": 40,
+    "verkaufen_pct": 0,
+    "total": 15,
+    "unclassified": 0
+   }
   },
   "MCHP": {
    "upgrades_30d": 0,
@@ -2792,7 +3478,14 @@
      "to_grade": "Buy",
      "from_grade": "Buy"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 67,
+    "halten_pct": 33,
+    "verkaufen_pct": 0,
+    "total": 12,
+    "unclassified": 0
+   }
   },
   "MDLZ": {
    "upgrades_30d": 0,
@@ -2830,7 +3523,14 @@
      "to_grade": "Buy",
      "from_grade": "Buy"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 83,
+    "halten_pct": 17,
+    "verkaufen_pct": 0,
+    "total": 6,
+    "unclassified": 0
+   }
   },
   "MELI": {
    "upgrades_30d": 0,
@@ -2861,7 +3561,14 @@
      "to_grade": "Buy",
      "from_grade": "Buy"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 67,
+    "halten_pct": 33,
+    "verkaufen_pct": 0,
+    "total": 9,
+    "unclassified": 0
+   }
   },
   "META": {
    "upgrades_30d": 0,
@@ -2870,7 +3577,14 @@
    "last_action": null,
    "last_firm": null,
    "last_date": null,
-   "actions": []
+   "actions": [],
+   "consensus": {
+    "kaufen_pct": null,
+    "halten_pct": null,
+    "verkaufen_pct": null,
+    "total": 0,
+    "unclassified": 0
+   }
   },
   "MMM": {
    "upgrades_30d": 0,
@@ -2915,7 +3629,14 @@
      "to_grade": "Underperform",
      "from_grade": "Underperform"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 33,
+    "halten_pct": 33,
+    "verkaufen_pct": 33,
+    "total": 6,
+    "unclassified": 0
+   }
   },
   "MNST": {
    "upgrades_30d": 0,
@@ -2953,16 +3674,30 @@
      "to_grade": "Outperform",
      "from_grade": "Outperform"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 62,
+    "halten_pct": 38,
+    "verkaufen_pct": 0,
+    "total": 13,
+    "unclassified": 0
+   }
   },
   "MRK": {
    "upgrades_30d": 2,
-   "downgrades_30d": 0,
-   "net_30d": 2,
-   "last_action": "up",
-   "last_firm": "Morgan Stanley",
+   "downgrades_30d": 1,
+   "net_30d": 1,
+   "last_action": "down",
+   "last_firm": "RBC Capital",
    "last_date": "2026-08-20",
    "actions": [
+    {
+     "date": "2026-08-20",
+     "firm": "RBC Capital",
+     "action": "down",
+     "to_grade": "Sector Perform",
+     "from_grade": "Outperform"
+    },
     {
      "date": "2026-08-20",
      "firm": "Morgan Stanley",
@@ -2990,15 +3725,15 @@
      "action": "main",
      "to_grade": "Buy",
      "from_grade": "Buy"
-    },
-    {
-     "date": "2026-07-29",
-     "firm": "Barclays",
-     "action": "main",
-     "to_grade": "Overweight",
-     "from_grade": "Overweight"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 85,
+    "halten_pct": 15,
+    "verkaufen_pct": 0,
+    "total": 13,
+    "unclassified": 0
+   }
   },
   "MRK.DE": {
    "upgrades_30d": 0,
@@ -3007,16 +3742,30 @@
    "last_action": null,
    "last_firm": null,
    "last_date": null,
-   "actions": []
+   "actions": [],
+   "consensus": {
+    "kaufen_pct": null,
+    "halten_pct": null,
+    "verkaufen_pct": null,
+    "total": 0,
+    "unclassified": 0
+   }
   },
   "MRVL": {
    "upgrades_30d": 0,
    "downgrades_30d": 0,
    "net_30d": 0,
-   "last_action": "main",
-   "last_firm": "TD Cowen",
-   "last_date": "2026-08-18",
+   "last_action": "reit",
+   "last_firm": "RBC Capital",
+   "last_date": "2026-08-20",
    "actions": [
+    {
+     "date": "2026-08-20",
+     "firm": "RBC Capital",
+     "action": "reit",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    },
     {
      "date": "2026-08-18",
      "firm": "TD Cowen",
@@ -3031,7 +3780,14 @@
      "to_grade": "Buy",
      "from_grade": "Buy"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 86,
+    "halten_pct": 14,
+    "verkaufen_pct": 0,
+    "total": 22,
+    "unclassified": 0
+   }
   },
   "MSFT": {
    "upgrades_30d": 0,
@@ -3076,7 +3832,14 @@
      "to_grade": "Outperform",
      "from_grade": "Outperform"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 96,
+    "halten_pct": 4,
+    "verkaufen_pct": 0,
+    "total": 24,
+    "unclassified": 1
+   }
   },
   "MSTR": {
    "upgrades_30d": 0,
@@ -3121,7 +3884,14 @@
      "to_grade": "Buy",
      "from_grade": "Buy"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 100,
+    "halten_pct": 0,
+    "verkaufen_pct": 0,
+    "total": 9,
+    "unclassified": 0
+   }
   },
   "MTX.DE": {
    "upgrades_30d": 0,
@@ -3130,7 +3900,14 @@
    "last_action": null,
    "last_firm": null,
    "last_date": null,
-   "actions": []
+   "actions": [],
+   "consensus": {
+    "kaufen_pct": null,
+    "halten_pct": null,
+    "verkaufen_pct": null,
+    "total": 0,
+    "unclassified": 0
+   }
   },
   "MU": {
    "upgrades_30d": 0,
@@ -3147,7 +3924,14 @@
      "to_grade": "Buy",
      "from_grade": "Buy"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 95,
+    "halten_pct": 5,
+    "verkaufen_pct": 0,
+    "total": 22,
+    "unclassified": 0
+   }
   },
   "MUV2.DE": {
    "upgrades_30d": 0,
@@ -3156,7 +3940,14 @@
    "last_action": null,
    "last_firm": null,
    "last_date": null,
-   "actions": []
+   "actions": [],
+   "consensus": {
+    "kaufen_pct": null,
+    "halten_pct": null,
+    "verkaufen_pct": null,
+    "total": 0,
+    "unclassified": 0
+   }
   },
   "NFLX": {
    "upgrades_30d": 0,
@@ -3173,7 +3964,14 @@
      "to_grade": "Outperform",
      "from_grade": "Outperform"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 75,
+    "halten_pct": 25,
+    "verkaufen_pct": 0,
+    "total": 20,
+    "unclassified": 0
+   }
   },
   "NKE": {
    "upgrades_30d": 0,
@@ -3190,16 +3988,30 @@
      "to_grade": "Underweight",
      "from_grade": "Neutral"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 35,
+    "halten_pct": 55,
+    "verkaufen_pct": 10,
+    "total": 20,
+    "unclassified": 1
+   }
   },
   "NVDA": {
    "upgrades_30d": 0,
    "downgrades_30d": 0,
    "net_30d": 0,
    "last_action": "reit",
-   "last_firm": "Wells Fargo",
-   "last_date": "2026-08-11",
+   "last_firm": "RBC Capital",
+   "last_date": "2026-08-20",
    "actions": [
+    {
+     "date": "2026-08-20",
+     "firm": "RBC Capital",
+     "action": "reit",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    },
     {
      "date": "2026-08-11",
      "firm": "Wells Fargo",
@@ -3207,7 +4019,14 @@
      "to_grade": "Overweight",
      "from_grade": "Overweight"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 100,
+    "halten_pct": 0,
+    "verkaufen_pct": 0,
+    "total": 22,
+    "unclassified": 0
+   }
   },
   "NXPI": {
    "upgrades_30d": 0,
@@ -3252,7 +4071,14 @@
      "to_grade": "Underperform",
      "from_grade": "Underperform"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 58,
+    "halten_pct": 37,
+    "verkaufen_pct": 5,
+    "total": 19,
+    "unclassified": 0
+   }
   },
   "ODFL": {
    "upgrades_30d": 0,
@@ -3297,7 +4123,14 @@
      "to_grade": "Buy",
      "from_grade": "Buy"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 44,
+    "halten_pct": 56,
+    "verkaufen_pct": 0,
+    "total": 16,
+    "unclassified": 0
+   }
   },
   "ON": {
    "upgrades_30d": 0,
@@ -3342,7 +4175,14 @@
      "to_grade": "Buy",
      "from_grade": "Buy"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 47,
+    "halten_pct": 53,
+    "verkaufen_pct": 0,
+    "total": 19,
+    "unclassified": 0
+   }
   },
   "ORLY": {
    "upgrades_30d": 0,
@@ -3380,7 +4220,14 @@
      "to_grade": "Buy",
      "from_grade": "Buy"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 100,
+    "halten_pct": 0,
+    "verkaufen_pct": 0,
+    "total": 8,
+    "unclassified": 0
+   }
   },
   "P911.DE": {
    "upgrades_30d": 0,
@@ -3389,7 +4236,14 @@
    "last_action": null,
    "last_firm": null,
    "last_date": null,
-   "actions": []
+   "actions": [],
+   "consensus": {
+    "kaufen_pct": null,
+    "halten_pct": null,
+    "verkaufen_pct": null,
+    "total": 0,
+    "unclassified": 0
+   }
   },
   "PAH3.DE": {
    "upgrades_30d": 0,
@@ -3398,7 +4252,14 @@
    "last_action": null,
    "last_firm": null,
    "last_date": null,
-   "actions": []
+   "actions": [],
+   "consensus": {
+    "kaufen_pct": null,
+    "halten_pct": null,
+    "verkaufen_pct": null,
+    "total": 0,
+    "unclassified": 0
+   }
   },
   "PANW": {
    "upgrades_30d": 0,
@@ -3443,7 +4304,14 @@
      "to_grade": "Overweight",
      "from_grade": "Overweight"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 90,
+    "halten_pct": 10,
+    "verkaufen_pct": 0,
+    "total": 30,
+    "unclassified": 1
+   }
   },
   "PAYX": {
    "upgrades_30d": 0,
@@ -3474,7 +4342,14 @@
      "to_grade": "Neutral",
      "from_grade": "Neutral"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 14,
+    "halten_pct": 71,
+    "verkaufen_pct": 14,
+    "total": 7,
+    "unclassified": 0
+   }
   },
   "PCAR": {
    "upgrades_30d": 0,
@@ -3512,7 +4387,14 @@
      "to_grade": "Overweight",
      "from_grade": "Overweight"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 33,
+    "halten_pct": 67,
+    "verkaufen_pct": 0,
+    "total": 6,
+    "unclassified": 0
+   }
   },
   "PDD": {
    "upgrades_30d": 0,
@@ -3521,24 +4403,30 @@
    "last_action": null,
    "last_firm": null,
    "last_date": null,
-   "actions": []
+   "actions": [],
+   "consensus": {
+    "kaufen_pct": 29,
+    "halten_pct": 57,
+    "verkaufen_pct": 14,
+    "total": 7,
+    "unclassified": 0
+   }
   },
   "PEP": {
    "upgrades_30d": 0,
    "downgrades_30d": 0,
    "net_30d": 0,
-   "last_action": "main",
-   "last_firm": "Barclays",
-   "last_date": "2026-07-21",
-   "actions": [
-    {
-     "date": "2026-07-21",
-     "firm": "Barclays",
-     "action": "main",
-     "to_grade": "Equal-Weight",
-     "from_grade": "Equal-Weight"
-    }
-   ]
+   "last_action": null,
+   "last_firm": null,
+   "last_date": null,
+   "actions": [],
+   "consensus": {
+    "kaufen_pct": 36,
+    "halten_pct": 64,
+    "verkaufen_pct": 0,
+    "total": 14,
+    "unclassified": 0
+   }
   },
   "PG": {
    "upgrades_30d": 0,
@@ -3568,15 +4456,15 @@
      "action": "main",
      "to_grade": "Buy",
      "from_grade": "Buy"
-    },
-    {
-     "date": "2026-07-21",
-     "firm": "Barclays",
-     "action": "main",
-     "to_grade": "Equal-Weight",
-     "from_grade": "Equal-Weight"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 45,
+    "halten_pct": 55,
+    "verkaufen_pct": 0,
+    "total": 11,
+    "unclassified": 0
+   }
   },
   "PLTR": {
    "upgrades_30d": 1,
@@ -3621,7 +4509,14 @@
      "to_grade": "Neutral",
      "from_grade": "Neutral"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 71,
+    "halten_pct": 21,
+    "verkaufen_pct": 7,
+    "total": 14,
+    "unclassified": 0
+   }
   },
   "PYPL": {
    "upgrades_30d": 1,
@@ -3666,7 +4561,14 @@
      "to_grade": "Hold",
      "from_grade": "Hold"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 16,
+    "halten_pct": 79,
+    "verkaufen_pct": 5,
+    "total": 19,
+    "unclassified": 0
+   }
   },
   "QCOM": {
    "upgrades_30d": 0,
@@ -3711,7 +4613,14 @@
      "to_grade": "Neutral",
      "from_grade": "Neutral"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 28,
+    "halten_pct": 61,
+    "verkaufen_pct": 11,
+    "total": 18,
+    "unclassified": 0
+   }
   },
   "QIA.DE": {
    "upgrades_30d": 0,
@@ -3742,7 +4651,14 @@
      "to_grade": "Overweight",
      "from_grade": "Overweight"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 43,
+    "halten_pct": 57,
+    "verkaufen_pct": 0,
+    "total": 7,
+    "unclassified": 0
+   }
   },
   "REGN": {
    "upgrades_30d": 0,
@@ -3787,7 +4703,14 @@
      "to_grade": "Equal-Weight",
      "from_grade": "Equal-Weight"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 69,
+    "halten_pct": 31,
+    "verkaufen_pct": 0,
+    "total": 16,
+    "unclassified": 0
+   }
   },
   "RHM.DE": {
    "upgrades_30d": 0,
@@ -3796,7 +4719,14 @@
    "last_action": null,
    "last_firm": null,
    "last_date": null,
-   "actions": []
+   "actions": [],
+   "consensus": {
+    "kaufen_pct": null,
+    "halten_pct": null,
+    "verkaufen_pct": null,
+    "total": 0,
+    "unclassified": 0
+   }
   },
   "ROP": {
    "upgrades_30d": 1,
@@ -3841,7 +4771,14 @@
      "to_grade": "Overweight",
      "from_grade": "Overweight"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 43,
+    "halten_pct": 29,
+    "verkaufen_pct": 29,
+    "total": 7,
+    "unclassified": 0
+   }
   },
   "ROST": {
    "upgrades_30d": 0,
@@ -3865,7 +4802,14 @@
      "to_grade": "Outperform",
      "from_grade": "Outperform"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 75,
+    "halten_pct": 25,
+    "verkaufen_pct": 0,
+    "total": 8,
+    "unclassified": 0
+   }
   },
   "RWE.DE": {
    "upgrades_30d": 0,
@@ -3874,7 +4818,14 @@
    "last_action": null,
    "last_firm": null,
    "last_date": null,
-   "actions": []
+   "actions": [],
+   "consensus": {
+    "kaufen_pct": null,
+    "halten_pct": null,
+    "verkaufen_pct": null,
+    "total": 0,
+    "unclassified": 0
+   }
   },
   "SAP.DE": {
    "upgrades_30d": 0,
@@ -3883,7 +4834,14 @@
    "last_action": null,
    "last_firm": null,
    "last_date": null,
-   "actions": []
+   "actions": [],
+   "consensus": {
+    "kaufen_pct": null,
+    "halten_pct": null,
+    "verkaufen_pct": null,
+    "total": 0,
+    "unclassified": 0
+   }
   },
   "SBUX": {
    "upgrades_30d": 0,
@@ -3928,7 +4886,14 @@
      "to_grade": "Sector Perform",
      "from_grade": "Sector Perform"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 57,
+    "halten_pct": 36,
+    "verkaufen_pct": 7,
+    "total": 14,
+    "unclassified": 0
+   }
   },
   "SHL.DE": {
    "upgrades_30d": 0,
@@ -3937,7 +4902,14 @@
    "last_action": null,
    "last_firm": null,
    "last_date": null,
-   "actions": []
+   "actions": [],
+   "consensus": {
+    "kaufen_pct": null,
+    "halten_pct": null,
+    "verkaufen_pct": null,
+    "total": 0,
+    "unclassified": 0
+   }
   },
   "SHW": {
    "upgrades_30d": 1,
@@ -3982,7 +4954,14 @@
      "to_grade": "Outperform",
      "from_grade": "Outperform"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 78,
+    "halten_pct": 22,
+    "verkaufen_pct": 0,
+    "total": 9,
+    "unclassified": 0
+   }
   },
   "SIE.DE": {
    "upgrades_30d": 0,
@@ -3991,7 +4970,14 @@
    "last_action": null,
    "last_firm": null,
    "last_date": null,
-   "actions": []
+   "actions": [],
+   "consensus": {
+    "kaufen_pct": null,
+    "halten_pct": null,
+    "verkaufen_pct": null,
+    "total": 0,
+    "unclassified": 0
+   }
   },
   "SNPS": {
    "upgrades_30d": 0,
@@ -4015,7 +5001,14 @@
      "to_grade": "Equal-Weight",
      "from_grade": "Equal-Weight"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 70,
+    "halten_pct": 20,
+    "verkaufen_pct": 10,
+    "total": 10,
+    "unclassified": 0
+   }
   },
   "SRT3.DE": {
    "upgrades_30d": 0,
@@ -4024,7 +5017,14 @@
    "last_action": null,
    "last_firm": null,
    "last_date": null,
-   "actions": []
+   "actions": [],
+   "consensus": {
+    "kaufen_pct": null,
+    "halten_pct": null,
+    "verkaufen_pct": null,
+    "total": 0,
+    "unclassified": 0
+   }
   },
   "SY1.DE": {
    "upgrades_30d": 0,
@@ -4033,7 +5033,14 @@
    "last_action": null,
    "last_firm": null,
    "last_date": null,
-   "actions": []
+   "actions": [],
+   "consensus": {
+    "kaufen_pct": null,
+    "halten_pct": null,
+    "verkaufen_pct": null,
+    "total": 0,
+    "unclassified": 0
+   }
   },
   "TEAM": {
    "upgrades_30d": 0,
@@ -4078,7 +5085,14 @@
      "to_grade": "Overweight",
      "from_grade": "Overweight"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 76,
+    "halten_pct": 24,
+    "verkaufen_pct": 0,
+    "total": 17,
+    "unclassified": 0
+   }
   },
   "TMUS": {
    "upgrades_30d": 0,
@@ -4123,7 +5137,14 @@
      "to_grade": "Overweight",
      "from_grade": "Overweight"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 85,
+    "halten_pct": 15,
+    "verkaufen_pct": 0,
+    "total": 13,
+    "unclassified": 0
+   }
   },
   "TRV": {
    "upgrades_30d": 0,
@@ -4146,15 +5167,15 @@
      "action": "main",
      "to_grade": "Buy",
      "from_grade": "Buy"
-    },
-    {
-     "date": "2026-07-21",
-     "firm": "Barclays",
-     "action": "main",
-     "to_grade": "Underweight",
-     "from_grade": "Underweight"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 28,
+    "halten_pct": 50,
+    "verkaufen_pct": 22,
+    "total": 18,
+    "unclassified": 0
+   }
   },
   "TSLA": {
    "upgrades_30d": 0,
@@ -4199,7 +5220,14 @@
      "to_grade": "Neutral",
      "from_grade": "Neutral"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 45,
+    "halten_pct": 45,
+    "verkaufen_pct": 10,
+    "total": 20,
+    "unclassified": 0
+   }
   },
   "TTD": {
    "upgrades_30d": 0,
@@ -4244,7 +5272,14 @@
      "to_grade": "Sell",
      "from_grade": "Neutral"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 20,
+    "halten_pct": 60,
+    "verkaufen_pct": 20,
+    "total": 20,
+    "unclassified": 1
+   }
   },
   "TTWO": {
    "upgrades_30d": 0,
@@ -4289,7 +5324,14 @@
      "to_grade": "Outperform",
      "from_grade": "Outperform"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 100,
+    "halten_pct": 0,
+    "verkaufen_pct": 0,
+    "total": 10,
+    "unclassified": 0
+   }
   },
   "TXN": {
    "upgrades_30d": 0,
@@ -4334,7 +5376,14 @@
      "to_grade": "Underweight",
      "from_grade": "Underweight"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 59,
+    "halten_pct": 32,
+    "verkaufen_pct": 9,
+    "total": 22,
+    "unclassified": 0
+   }
   },
   "UNH": {
    "upgrades_30d": 0,
@@ -4350,15 +5399,15 @@
      "action": "main",
      "to_grade": "Overweight",
      "from_grade": "Overweight"
-    },
-    {
-     "date": "2026-07-21",
-     "firm": "Mizuho",
-     "action": "main",
-     "to_grade": "Outperform",
-     "from_grade": "Outperform"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 81,
+    "halten_pct": 19,
+    "verkaufen_pct": 0,
+    "total": 16,
+    "unclassified": 0
+   }
   },
   "V": {
    "upgrades_30d": 0,
@@ -4403,7 +5452,14 @@
      "to_grade": "Positive",
      "from_grade": "Positive"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 94,
+    "halten_pct": 6,
+    "verkaufen_pct": 0,
+    "total": 16,
+    "unclassified": 0
+   }
   },
   "VNA.DE": {
    "upgrades_30d": 0,
@@ -4412,7 +5468,14 @@
    "last_action": null,
    "last_firm": null,
    "last_date": null,
-   "actions": []
+   "actions": [],
+   "consensus": {
+    "kaufen_pct": null,
+    "halten_pct": null,
+    "verkaufen_pct": null,
+    "total": 0,
+    "unclassified": 0
+   }
   },
   "VOW3.DE": {
    "upgrades_30d": 0,
@@ -4421,7 +5484,14 @@
    "last_action": null,
    "last_firm": null,
    "last_date": null,
-   "actions": []
+   "actions": [],
+   "consensus": {
+    "kaufen_pct": null,
+    "halten_pct": null,
+    "verkaufen_pct": null,
+    "total": 0,
+    "unclassified": 0
+   }
   },
   "VRSK": {
    "upgrades_30d": 1,
@@ -4459,7 +5529,14 @@
      "to_grade": "Buy",
      "from_grade": "Hold"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 50,
+    "halten_pct": 50,
+    "verkaufen_pct": 0,
+    "total": 6,
+    "unclassified": 0
+   }
   },
   "VRTX": {
    "upgrades_30d": 0,
@@ -4504,7 +5581,14 @@
      "to_grade": "Hold",
      "from_grade": "Hold"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 80,
+    "halten_pct": 10,
+    "verkaufen_pct": 10,
+    "total": 10,
+    "unclassified": 0
+   }
   },
   "VZ": {
    "upgrades_30d": 0,
@@ -4549,7 +5633,14 @@
      "to_grade": "Equal-Weight",
      "from_grade": "Equal-Weight"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 22,
+    "halten_pct": 78,
+    "verkaufen_pct": 0,
+    "total": 9,
+    "unclassified": 0
+   }
   },
   "WBD": {
    "upgrades_30d": 0,
@@ -4566,7 +5657,14 @@
      "to_grade": "Neutral",
      "from_grade": "Buy"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 0,
+    "halten_pct": 100,
+    "verkaufen_pct": 0,
+    "total": 3,
+    "unclassified": 0
+   }
   },
   "WDAY": {
    "upgrades_30d": 0,
@@ -4611,7 +5709,14 @@
      "to_grade": "Neutral",
      "from_grade": "Neutral"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 33,
+    "halten_pct": 47,
+    "verkaufen_pct": 20,
+    "total": 15,
+    "unclassified": 0
+   }
   },
   "WMT": {
    "upgrades_30d": 0,
@@ -4656,7 +5761,14 @@
      "to_grade": "Outperform",
      "from_grade": "Outperform"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 86,
+    "halten_pct": 14,
+    "verkaufen_pct": 0,
+    "total": 14,
+    "unclassified": 0
+   }
   },
   "XEL": {
    "upgrades_30d": 0,
@@ -4680,7 +5792,14 @@
      "to_grade": "Outperform",
      "from_grade": "Outperform"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 100,
+    "halten_pct": 0,
+    "verkaufen_pct": 0,
+    "total": 6,
+    "unclassified": 0
+   }
   },
   "ZAL.DE": {
    "upgrades_30d": 0,
@@ -4689,7 +5808,14 @@
    "last_action": null,
    "last_firm": null,
    "last_date": null,
-   "actions": []
+   "actions": [],
+   "consensus": {
+    "kaufen_pct": null,
+    "halten_pct": null,
+    "verkaufen_pct": null,
+    "total": 0,
+    "unclassified": 0
+   }
   },
   "ZS": {
    "upgrades_30d": 0,
@@ -4734,7 +5860,14 @@
      "to_grade": "Overweight",
      "from_grade": "Overweight"
     }
-   ]
+   ],
+   "consensus": {
+    "kaufen_pct": 89,
+    "halten_pct": 11,
+    "verkaufen_pct": 0,
+    "total": 27,
+    "unclassified": 1
+   }
   }
  }
 }

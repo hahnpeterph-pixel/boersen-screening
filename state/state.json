@@ -1,6 +1,6 @@
 {
  "date": "2026-08-20",
- "generated": "2026-08-20T08:30:16+00:00",
+ "generated": "2026-08-20T08:49:18+00:00",
  "ranks": {
   "turnaround": [
    "ROP",
@@ -9,55 +9,56 @@
    "FRE.DE",
    "BEI.DE",
    "CRM",
-   "CDW",
    "DXCM",
-   "ADSK",
-   "SHL.DE",
    "AXON",
-   "BIIB",
+   "SY1.DE",
    "MELI",
-   "ZS",
-   "QIA.DE"
+   "BNR.DE",
+   "HEN3.DE",
+   "KHC",
+   "DASH",
+   "SHW"
   ],
   "momentum": [
    "ALV.DE",
    "MRK",
-   "DB1.DE",
    "PANW",
+   "DB1.DE",
    "ABNB",
    "CRWD",
    "RWE.DE",
    "FTNT",
    "DHL.DE",
-   "CBK.DE",
    "TRV",
-   "DBK.DE",
    "JNJ",
    "AMZN",
-   "KO"
+   "KO",
+   "SIE.DE",
+   "MMM"
   ],
   "value": [
    "MU",
-   "ADBE",
-   "NVDA",
    "ADSK",
-   "CSCO",
-   "NXPI",
-   "AMAT",
-   "AVGO",
+   "NVDA",
    "REGN",
-   "CRM",
+   "ABNB",
+   "V",
+   "MTX.DE",
+   "VRTX",
+   "DB1.DE",
+   "DXCM",
+   "FAST",
+   "ALV.DE",
    "CVX",
-   "TXN",
-   "LRCX",
    "ENR.DE",
-   "MSFT"
+   "MNST"
   ]
  },
  "rows": {
   "AAPL": {
    "name": "Apple Inc.",
    "index": "NASDAQ/DOW",
+   "sector": "Technology",
    "metrics": {
     "last": 316.83,
     "dd_ath": -6.8,
@@ -81,10 +82,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 2,
+    "net_30d": -2,
+    "last_action": "down",
+    "last_firm": "Jefferies",
+    "last_date": "2026-08-10"
+   },
+   "revision_note": "Analysten ↓2 in 30T (Jefferies, 2026-08-10)",
    "scores": {
     "turnaround": 59.3,
     "momentum": 61.1,
-    "value": 77.9
+    "value": 72.6
    },
    "why": {
     "turnaround": [
@@ -100,13 +110,15 @@
     "value": [
      "erwartetes KGV unter aktuellem",
      "positiver Free Cashflow",
-     "Umsatzwachstum 16%"
+     "Umsatzwachstum 16%",
+     "Analysten zuletzt netto 2x herabgestuft (30 Tage)"
     ]
    }
   },
   "ABNB": {
    "name": "Airbnb, Inc.",
    "index": "NASDAQ",
+   "sector": "Consumer Cyclical",
    "metrics": {
     "last": 186.39,
     "dd_ath": -14.0,
@@ -130,10 +142,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 1,
+    "downgrades_30d": 0,
+    "net_30d": 1,
+    "last_action": "main",
+    "last_firm": "BMO Capital",
+    "last_date": "2026-08-10"
+   },
+   "revision_note": "Analysten ↑1 in 30T (BMO Capital, 2026-08-10)",
    "scores": {
     "turnaround": 58.5,
     "momentum": 84.6,
-    "value": 84.7
+    "value": 82.5
    },
    "why": {
     "turnaround": [
@@ -150,13 +171,15 @@
     "value": [
      "erwartetes KGV unter aktuellem",
      "positiver Free Cashflow",
-     "Umsatzwachstum 16%"
+     "Umsatzwachstum 16%",
+     "Analysten zuletzt netto 1x hochgestuft (30 Tage)"
     ]
    }
   },
   "ADBE": {
    "name": "Adobe Inc.",
    "index": "NASDAQ",
+   "sector": "Technology",
    "metrics": {
     "last": 272.47,
     "dd_ath": -60.4,
@@ -180,10 +203,19 @@
    },
    "flags": [],
    "earnings_in": 21,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 1,
+    "net_30d": -1,
+    "last_action": "main",
+    "last_firm": "B of A Securities",
+    "last_date": "2026-08-19"
+   },
+   "revision_note": "Analysten ↓1 in 30T (B of A Securities, 2026-08-19)",
    "scores": {
     "turnaround": 78.2,
     "momentum": 20.0,
-    "value": 100.2
+    "value": 83.9
    },
    "why": {
     "turnaround": [
@@ -197,15 +229,16 @@
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "PEG 0.64",
      "positiver Free Cashflow",
-     "Umsatzwachstum 13%"
+     "Umsatzwachstum 13%",
+     "Analysten zuletzt netto 1x herabgestuft (30 Tage)"
     ]
    }
   },
   "ADI": {
    "name": "Analog Devices, Inc.",
    "index": "NASDAQ",
+   "sector": "Technology",
    "metrics": {
     "last": 373.26,
     "dd_ath": -16.2,
@@ -229,10 +262,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "reit",
+    "last_firm": "Cantor Fitzgerald",
+    "last_date": "2026-08-17"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 40.4,
     "momentum": 31.8,
-    "value": 87.3
+    "value": 75.7
    },
    "why": {
     "turnaround": [
@@ -244,7 +286,6 @@
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "PEG 0.69",
      "positiver Free Cashflow",
      "Umsatzwachstum 37%"
     ]
@@ -253,6 +294,7 @@
   "ADP": {
    "name": "Automatic Data Processing, Inc.",
    "index": "NASDAQ",
+   "sector": "Technology",
    "metrics": {
     "last": 277.22,
     "dd_ath": -12.4,
@@ -260,26 +302,35 @@
     "range_pos": 79.3,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 8.33,
-    "sma200_slope": -0.38,
+    "sma50_slope": 8.67,
+    "sma200_slope": -0.5,
     "higher_low": true,
-    "rsi14": 63.3,
+    "rsi14": 63.0,
     "rsi_min60": 42.5,
     "perf": {
-     "m1": 12.6,
-     "m3": 26.7,
-     "m6": 29.7,
-     "m12": -5.9
+     "m1": 8.6,
+     "m3": 30.2,
+     "m6": 32.8,
+     "m12": -5.6
     },
-    "rs6": 11.5,
+    "rs6": 14.6,
     "vol_ratio": 1.08
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "reit",
+    "last_firm": "Cantor Fitzgerald",
+    "last_date": "2026-08-05"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 56.5,
-    "momentum": 59.0,
-    "value": 68.6
+    "momentum": 61.6,
+    "value": 73.2
    },
    "why": {
     "turnaround": [
@@ -288,6 +339,7 @@
      "50-Tage-Linie dreht nach oben"
     ],
     "momentum": [
+     "relative Staerke +15% vs. Index",
      "ueber 50- und 200-Tage-Linie"
     ],
     "value": [
@@ -299,6 +351,7 @@
   "ADSK": {
    "name": "Autodesk, Inc.",
    "index": "NASDAQ",
+   "sector": "Technology",
    "metrics": {
     "last": 251.29,
     "dd_ath": -26.6,
@@ -322,10 +375,19 @@
    },
    "flags": [],
    "earnings_in": 7,
+   "analyst": {
+    "upgrades_30d": 2,
+    "downgrades_30d": 0,
+    "net_30d": 2,
+    "last_action": "init",
+    "last_firm": "Goldman Sachs",
+    "last_date": "2026-08-11"
+   },
+   "revision_note": "Analysten ↑2 in 30T (Goldman Sachs, 2026-08-11)",
    "scores": {
     "turnaround": 83.1,
     "momentum": 25.4,
-    "value": 94.8
+    "value": 88.1
    },
    "why": {
     "turnaround": [
@@ -339,15 +401,16 @@
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "PEG 0.96",
      "positiver Free Cashflow",
-     "Umsatzwachstum 18%"
+     "Umsatzwachstum 18%",
+     "Analysten zuletzt netto 2x hochgestuft (30 Tage)"
     ]
    }
   },
   "AEP": {
    "name": "American Electric Power Company",
    "index": "NASDAQ",
+   "sector": "Utilities",
    "metrics": {
     "last": 126.27,
     "dd_ath": -8.3,
@@ -355,26 +418,35 @@
     "range_pos": 66.9,
     "above_sma50": false,
     "above_sma200": true,
-    "sma50_slope": -0.03,
-    "sma200_slope": 1.08,
+    "sma50_slope": -0.08,
+    "sma200_slope": 1.12,
     "higher_low": false,
-    "rsi14": 44.4,
-    "rsi_min60": 31.4,
+    "rsi14": 44.5,
+    "rsi_min60": 32.0,
     "perf": {
-     "m1": -2.5,
-     "m3": -1.3,
-     "m6": 0.7,
-     "m12": 17.6
+     "m1": -2.9,
+     "m3": -0.4,
+     "m6": -1.6,
+     "m12": 16.2
     },
-    "rs6": -17.5,
-    "vol_ratio": 0.95
+    "rs6": -19.8,
+    "vol_ratio": 0.98
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "Truist Securities",
+    "last_date": "2026-08-17"
+   },
+   "revision_note": null,
    "scores": {
-    "turnaround": 20.7,
-    "momentum": 32.6,
-    "value": 46.0
+    "turnaround": 21.3,
+    "momentum": 33.5,
+    "value": 44.7
    },
    "why": {
     "turnaround": [
@@ -391,6 +463,7 @@
   "AMAT": {
    "name": "Applied Materials, Inc.",
    "index": "NASDAQ",
+   "sector": "Technology",
    "metrics": {
     "last": 496.17,
     "dd_ath": -31.4,
@@ -414,10 +487,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "UBS",
+    "last_date": "2026-08-14"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 75.5,
     "momentum": 37.9,
-    "value": 92.4
+    "value": 81.5
    },
    "why": {
     "turnaround": [
@@ -432,7 +514,6 @@
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "PEG 1.09",
      "positiver Free Cashflow",
      "Umsatzwachstum 25%"
     ]
@@ -441,6 +522,7 @@
   "AMD": {
    "name": "Advanced Micro Devices, Inc.",
    "index": "NASDAQ",
+   "sector": "Technology",
    "metrics": {
     "last": 466.42,
     "dd_ath": -19.7,
@@ -464,10 +546,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "Argus Research",
+    "last_date": "2026-08-06"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 39.9,
     "momentum": 53.5,
-    "value": 82.7
+    "value": 70.4
    },
    "why": {
     "turnaround": [
@@ -479,7 +570,6 @@
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "PEG 1.10",
      "positiver Free Cashflow",
      "Umsatzwachstum 50%"
     ]
@@ -488,6 +578,7 @@
   "AMGN": {
    "name": "Amgen Inc.",
    "index": "NASDAQ/DOW",
+   "sector": "Healthcare",
    "metrics": {
     "last": 442.36,
     "dd_ath": 0.0,
@@ -511,10 +602,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "Argus Research",
+    "last_date": "2026-08-19"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 48.1,
     "momentum": 70.3,
-    "value": 71.4
+    "value": 70.4
    },
    "why": {
     "turnaround": [
@@ -537,6 +637,7 @@
   "AMZN": {
    "name": "Amazon.com, Inc.",
    "index": "NASDAQ/DOW",
+   "sector": "Consumer Cyclical",
    "metrics": {
     "last": 265.84,
     "dd_ath": -6.4,
@@ -560,10 +661,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "UBS",
+    "last_date": "2026-07-31"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 40.9,
     "momentum": 74.3,
-    "value": 73.1
+    "value": 70.6
    },
    "why": {
     "turnaround": [
@@ -576,7 +686,6 @@
      "ueber 50- und 200-Tage-Linie"
     ],
     "value": [
-     "PEG 1.40",
      "positiver Free Cashflow",
      "Umsatzwachstum 20%"
     ]
@@ -585,6 +694,7 @@
   "APP": {
    "name": "Applovin Corporation",
    "index": "NASDAQ",
+   "sector": "Communication Services",
    "metrics": {
     "last": 310.79,
     "dd_ath": -57.6,
@@ -610,10 +720,19 @@
     "200-Tage-Linie faellt steil"
    ],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 3,
+    "net_30d": -3,
+    "last_action": "main",
+    "last_firm": "Wells Fargo",
+    "last_date": "2026-08-19"
+   },
+   "revision_note": "Analysten ↓3 in 30T (Wells Fargo, 2026-08-19)",
    "scores": {
     "turnaround": 22.0,
     "momentum": 0.0,
-    "value": 90.9
+    "value": 73.2
    },
    "why": {
     "turnaround": [
@@ -622,15 +741,16 @@
     "momentum": [],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "PEG 0.87",
      "positiver Free Cashflow",
-     "Umsatzwachstum 53%"
+     "Umsatzwachstum 53%",
+     "Analysten zuletzt netto 3x herabgestuft (30 Tage)"
     ]
    }
   },
   "ARM": {
    "name": "Arm Holdings plc",
    "index": "NASDAQ",
+   "sector": "Technology",
    "metrics": {
     "last": 249.34,
     "dd_ath": -43.3,
@@ -654,10 +774,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "Rosenblatt",
+    "last_date": "2026-07-31"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 74.5,
     "momentum": 53.0,
-    "value": 76.0
+    "value": 74.2
    },
    "why": {
     "turnaround": [
@@ -680,6 +809,7 @@
   "ASML": {
    "name": "ASML Holding N.V. - New York Re",
    "index": "NASDAQ",
+   "sector": "Technology",
    "metrics": {
     "last": 1751.73,
     "dd_ath": -11.8,
@@ -703,10 +833,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": null,
+    "last_firm": null,
+    "last_date": null
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 37.2,
     "momentum": 45.5,
-    "value": 82.5
+    "value": 80.3
    },
    "why": {
     "turnaround": [
@@ -726,6 +865,7 @@
   "AVGO": {
    "name": "Broadcom Inc.",
    "index": "NASDAQ",
+   "sector": "Technology",
    "metrics": {
     "last": 362.48,
     "dd_ath": -24.6,
@@ -749,10 +889,19 @@
    },
    "flags": [],
    "earnings_in": 13,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": null,
+    "last_firm": null,
+    "last_date": null
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 44.0,
     "momentum": 4.4,
-    "value": 91.7
+    "value": 78.6
    },
    "why": {
     "turnaround": [
@@ -762,7 +911,6 @@
     "momentum": [],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "PEG 0.44",
      "positiver Free Cashflow",
      "Umsatzwachstum 48%"
     ]
@@ -771,32 +919,42 @@
   "AXON": {
    "name": "Axon Enterprise, Inc.",
    "index": "NASDAQ",
+   "sector": "Industrials",
    "metrics": {
     "last": 645.72,
     "dd_ath": -25.9,
     "days_since_ath": 377,
-    "range_pos": 68.8,
+    "range_pos": 67.3,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 12.54,
-    "sma200_slope": -2.66,
+    "sma50_slope": 13.8,
+    "sma200_slope": -2.55,
     "higher_low": true,
-    "rsi14": 62.5,
+    "rsi14": 61.9,
     "rsi_min60": 41.8,
     "perf": {
-     "m1": 26.3,
-     "m3": 64.6,
-     "m6": 50.1,
-     "m12": -18.4
+     "m1": 19.2,
+     "m3": 66.3,
+     "m6": 48.2,
+     "m12": -15.6
     },
-    "rs6": 31.9,
+    "rs6": 30.0,
     "vol_ratio": 1.24
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "UBS",
+    "last_date": "2026-08-06"
+   },
+   "revision_note": null,
    "scores": {
-    "turnaround": 80.2,
-    "momentum": 57.6,
+    "turnaround": 80.6,
+    "momentum": 57.1,
     "value": 63.1
    },
    "why": {
@@ -808,7 +966,7 @@
      "Anstiege auf hoeherem Volumen"
     ],
     "momentum": [
-     "relative Staerke +32% vs. Index",
+     "relative Staerke +30% vs. Index",
      "ueber 50- und 200-Tage-Linie"
     ],
     "value": [
@@ -821,6 +979,7 @@
   "AZN": {
    "name": "AstraZeneca PLC",
    "index": "NASDAQ",
+   "sector": "Healthcare",
    "metrics": {
     "last": 164.95,
     "dd_ath": -20.9,
@@ -828,26 +987,35 @@
     "range_pos": 30.8,
     "above_sma50": false,
     "above_sma200": false,
-    "sma50_slope": -4.57,
+    "sma50_slope": -4.61,
     "sma200_slope": -0.18,
     "higher_low": false,
-    "rsi14": 49.6,
-    "rsi_min60": 30.7,
+    "rsi14": 49.0,
+    "rsi_min60": 31.6,
     "perf": {
      "m1": -2.6,
-     "m3": -10.7,
-     "m6": -20.1,
-     "m12": 5.3
+     "m3": -10.8,
+     "m6": -18.5,
+     "m12": 6.9
     },
-    "rs6": -38.3,
-    "vol_ratio": 0.83
+    "rs6": -36.7,
+    "vol_ratio": 0.82
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": null,
+    "last_firm": null,
+    "last_date": null
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 29.8,
     "momentum": 4.5,
-    "value": 78.2
+    "value": 69.6
    },
    "why": {
     "turnaround": [
@@ -856,7 +1024,6 @@
     "momentum": [],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "PEG 1.35",
      "positiver Free Cashflow"
     ]
    }
@@ -864,6 +1031,7 @@
   "BIIB": {
    "name": "Biogen Inc.",
    "index": "NASDAQ",
+   "sector": "Healthcare",
    "metrics": {
     "last": 221.56,
     "dd_ath": -46.6,
@@ -871,26 +1039,35 @@
     "range_pos": 100.0,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 2.61,
+    "sma50_slope": 2.67,
     "sma200_slope": 3.23,
     "higher_low": true,
-    "rsi14": 65.7,
+    "rsi14": 65.1,
     "rsi_min60": 42.4,
     "perf": {
-     "m1": 9.1,
-     "m3": 16.3,
-     "m6": 14.1,
-     "m12": 63.0
+     "m1": 6.1,
+     "m3": 15.8,
+     "m6": 13.3,
+     "m12": 63.9
     },
-    "rs6": -4.1,
-    "vol_ratio": 1.08
+    "rs6": -4.9,
+    "vol_ratio": 1.09
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 1,
+    "downgrades_30d": 0,
+    "net_30d": 1,
+    "last_action": "up",
+    "last_firm": "Wolfe Research",
+    "last_date": "2026-08-13"
+   },
+   "revision_note": "Analysten ↑1 in 30T (Wolfe Research, 2026-08-13)",
    "scores": {
-    "turnaround": 80.2,
-    "momentum": 44.0,
-    "value": 59.1
+    "turnaround": 80.9,
+    "momentum": 43.6,
+    "value": 63.1
    },
    "why": {
     "turnaround": [
@@ -905,13 +1082,15 @@
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "positiver Free Cashflow"
+     "positiver Free Cashflow",
+     "Analysten zuletzt netto 1x hochgestuft (30 Tage)"
     ]
    }
   },
   "BKNG": {
    "name": "Booking Holdings Inc. Common St",
    "index": "NASDAQ",
+   "sector": "Consumer Cyclical",
    "metrics": {
     "last": 213.0,
     "dd_ath": -7.7,
@@ -919,26 +1098,35 @@
     "range_pos": 81.0,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 9.42,
-    "sma200_slope": -0.24,
+    "sma50_slope": 9.4,
+    "sma200_slope": -0.28,
     "higher_low": true,
-    "rsi14": 65.2,
+    "rsi14": 65.1,
     "rsi_min60": 43.6,
     "perf": {
      "m1": 18.7,
-     "m3": 38.2,
-     "m6": 25.3,
-     "m12": -2.9
+     "m3": 37.7,
+     "m6": 29.2,
+     "m12": -1.5
     },
-    "rs6": 7.1,
-    "vol_ratio": 1.31
+    "rs6": 11.1,
+    "vol_ratio": 1.28
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "Argus Research",
+    "last_date": "2026-08-10"
+   },
+   "revision_note": null,
    "scores": {
-    "turnaround": 61.9,
-    "momentum": 65.9,
-    "value": 71.5
+    "turnaround": 61.5,
+    "momentum": 69.2,
+    "value": 59.5
    },
    "why": {
     "turnaround": [
@@ -953,7 +1141,6 @@
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "PEG 0.93",
      "positiver Free Cashflow"
     ]
    }
@@ -961,6 +1148,7 @@
   "BKR": {
    "name": "Baker Hughes Company",
    "index": "NASDAQ",
+   "sector": "Energy",
    "metrics": {
     "last": 64.48,
     "dd_ath": -6.8,
@@ -984,10 +1172,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "UBS",
+    "last_date": "2026-07-28"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 52.5,
     "momentum": 57.1,
-    "value": 56.1
+    "value": 58.6
    },
    "why": {
     "turnaround": [
@@ -1007,8 +1204,9 @@
    }
   },
   "CCEP": {
-   "name": "Coca-Cola Europacific Partners ",
+   "name": "Coca-Cola Europacific Partners",
    "index": "NASDAQ",
+   "sector": "Consumer Defensive",
    "metrics": {
     "last": 106.68,
     "dd_ath": -4.5,
@@ -1016,26 +1214,35 @@
     "range_pos": 81.9,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 6.29,
-    "sma200_slope": 2.19,
+    "sma50_slope": 6.31,
+    "sma200_slope": 2.18,
     "higher_low": true,
-    "rsi14": 50.7,
+    "rsi14": 51.4,
     "rsi_min60": 39.9,
     "perf": {
-     "m1": 1.4,
-     "m3": 16.1,
-     "m6": 3.0,
-     "m12": 22.0
+     "m1": 0.6,
+     "m3": 18.7,
+     "m6": 8.9,
+     "m12": 19.1
     },
-    "rs6": -15.2,
-    "vol_ratio": 0.94
+    "rs6": -9.3,
+    "vol_ratio": 0.97
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 1,
+    "net_30d": -1,
+    "last_action": "down",
+    "last_firm": "UBS",
+    "last_date": "2026-08-13"
+   },
+   "revision_note": "Analysten ↓1 in 30T (UBS, 2026-08-13)",
    "scores": {
-    "turnaround": 53.0,
-    "momentum": 56.2,
-    "value": 60.8
+    "turnaround": 53.8,
+    "momentum": 57.0,
+    "value": 60.3
    },
    "why": {
     "turnaround": [
@@ -1049,13 +1256,15 @@
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "positiver Free Cashflow"
+     "positiver Free Cashflow",
+     "Analysten zuletzt netto 1x herabgestuft (30 Tage)"
     ]
    }
   },
   "CDNS": {
    "name": "Cadence Design Systems, Inc.",
    "index": "NASDAQ",
+   "sector": "Technology",
    "metrics": {
     "last": 314.98,
     "dd_ath": -24.4,
@@ -1079,6 +1288,15 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "B of A Securities",
+    "last_date": "2026-07-28"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 47.4,
     "momentum": 7.2,
@@ -1100,6 +1318,7 @@
   "CDW": {
    "name": "CDW Corporation",
    "index": "NASDAQ",
+   "sector": "Technology",
    "metrics": {
     "last": 137.2,
     "dd_ath": -44.9,
@@ -1107,26 +1326,35 @@
     "range_pos": 55.4,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 8.04,
-    "sma200_slope": -0.93,
+    "sma50_slope": 7.61,
+    "sma200_slope": -0.9,
     "higher_low": true,
-    "rsi14": 48.8,
+    "rsi14": 49.0,
     "rsi_min60": 41.8,
     "perf": {
-     "m1": 5.5,
-     "m3": 32.7,
-     "m6": 10.8,
-     "m12": -14.6
+     "m1": 5.8,
+     "m3": 32.3,
+     "m6": 11.6,
+     "m12": -15.7
     },
-    "rs6": -7.3,
-    "vol_ratio": 1.13
+    "rs6": -6.6,
+    "vol_ratio": 1.14
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "Morgan Stanley",
+    "last_date": "2026-08-06"
+   },
+   "revision_note": null,
    "scores": {
-    "turnaround": 87.7,
-    "momentum": 26.6,
-    "value": 75.6
+    "turnaround": 87.9,
+    "momentum": 26.9,
+    "value": 66.6
    },
    "why": {
     "turnaround": [
@@ -1140,7 +1368,6 @@
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "PEG 1.33",
      "positiver Free Cashflow",
      "Umsatzwachstum 10%"
     ]
@@ -1149,6 +1376,7 @@
   "CEG": {
    "name": "Constellation Energy Corporatio",
    "index": "NASDAQ",
+   "sector": "Utilities",
    "metrics": {
     "last": 274.17,
     "dd_ath": -31.7,
@@ -1174,10 +1402,19 @@
     "200-Tage-Linie faellt steil"
    ],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "Argus Research",
+    "last_date": "2026-08-11"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 80.2,
     "momentum": 0.0,
-    "value": 48.3
+    "value": 53.0
    },
    "why": {
     "turnaround": [
@@ -1196,6 +1433,7 @@
   "CHTR": {
    "name": "Charter Communications, Inc.",
    "index": "NASDAQ",
+   "sector": "Communication Services",
    "metrics": {
     "last": 152.47,
     "dd_ath": -81.4,
@@ -1223,10 +1461,19 @@
     "mehr als 80% unter ATH"
    ],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "JP Morgan",
+    "last_date": "2026-07-29"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 41.4,
     "momentum": 0.6,
-    "value": 68.0
+    "value": 54.5
    },
    "why": {
     "turnaround": [
@@ -1236,7 +1483,6 @@
     "momentum": [],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "PEG 0.97",
      "positiver Free Cashflow"
     ]
    }
@@ -1244,6 +1490,7 @@
   "CMCSA": {
    "name": "Comcast Corporation",
    "index": "NASDAQ",
+   "sector": "Communication Services",
    "metrics": {
     "last": 26.59,
     "dd_ath": -45.9,
@@ -1267,6 +1514,15 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "Wells Fargo",
+    "last_date": "2026-07-24"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 66.6,
     "momentum": 22.9,
@@ -1290,6 +1546,7 @@
   "COST": {
    "name": "Costco Wholesale Corporation",
    "index": "NASDAQ",
+   "sector": "Consumer Defensive",
    "metrics": {
     "last": 956.99,
     "dd_ath": -12.4,
@@ -1313,6 +1570,15 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": null,
+    "last_firm": null,
+    "last_date": null
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 36.2,
     "momentum": 35.8,
@@ -1336,6 +1602,7 @@
   "CPRT": {
    "name": "Copart, Inc.",
    "index": "NASDAQ",
+   "sector": "Industrials",
    "metrics": {
     "last": 33.85,
     "dd_ath": -47.0,
@@ -1361,10 +1628,19 @@
     "200-Tage-Linie faellt steil"
    ],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "Barclays",
+    "last_date": "2026-07-22"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 57.2,
     "momentum": 10.0,
-    "value": 43.4
+    "value": 53.3
    },
    "why": {
     "turnaround": [
@@ -1381,6 +1657,7 @@
   "CRWD": {
    "name": "CrowdStrike Holdings, Inc.",
    "index": "NASDAQ",
+   "sector": "Technology",
    "metrics": {
     "last": 201.63,
     "dd_ath": -10.6,
@@ -1404,10 +1681,19 @@
    },
    "flags": [],
    "earnings_in": 6,
+   "analyst": {
+    "upgrades_30d": 1,
+    "downgrades_30d": 0,
+    "net_30d": 1,
+    "last_action": "main",
+    "last_firm": "Mizuho",
+    "last_date": "2026-08-19"
+   },
+   "revision_note": "Analysten ↑1 in 30T (Mizuho, 2026-08-19)",
    "scores": {
     "turnaround": 56.2,
     "momentum": 83.1,
-    "value": 45.0
+    "value": 52.5
    },
    "why": {
     "turnaround": [
@@ -1423,13 +1709,15 @@
     ],
     "value": [
      "positiver Free Cashflow",
-     "Umsatzwachstum 26%"
+     "Umsatzwachstum 26%",
+     "Analysten zuletzt netto 1x hochgestuft (30 Tage)"
     ]
    }
   },
   "CSCO": {
    "name": "Cisco Systems, Inc.",
    "index": "NASDAQ/DOW",
+   "sector": "Technology",
    "metrics": {
     "last": 110.55,
     "dd_ath": -14.6,
@@ -1453,10 +1741,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 1,
+    "net_30d": -1,
+    "last_action": "down",
+    "last_firm": "HSBC",
+    "last_date": "2026-08-14"
+   },
+   "revision_note": "Analysten ↓1 in 30T (HSBC, 2026-08-14)",
    "scores": {
     "turnaround": 30.3,
     "momentum": 60.0,
-    "value": 94.2
+    "value": 81.4
    },
    "why": {
     "turnaround": [
@@ -1468,15 +1765,16 @@
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "PEG 1.10",
      "positiver Free Cashflow",
-     "Umsatzwachstum 18%"
+     "Umsatzwachstum 18%",
+     "Analysten zuletzt netto 1x herabgestuft (30 Tage)"
     ]
    }
   },
   "CSGP": {
    "name": "CoStar Group, Inc.",
    "index": "NASDAQ",
+   "sector": "Real Estate",
    "metrics": {
     "last": 33.73,
     "dd_ath": -66.2,
@@ -1484,28 +1782,37 @@
     "range_pos": 10.3,
     "above_sma50": true,
     "above_sma200": false,
-    "sma50_slope": -3.54,
-    "sma200_slope": -9.17,
+    "sma50_slope": -3.55,
+    "sma200_slope": -9.34,
     "higher_low": false,
-    "rsi14": 62.8,
+    "rsi14": 62.2,
     "rsi_min60": 26.6,
     "perf": {
-     "m1": 18.4,
-     "m3": -0.2,
-     "m6": -31.1,
+     "m1": 13.3,
+     "m3": 3.2,
+     "m6": -25.0,
      "m12": -61.7
     },
-    "rs6": -49.3,
-    "vol_ratio": 0.93
+    "rs6": -43.2,
+    "vol_ratio": 0.91
    },
    "flags": [
     "200-Tage-Linie faellt steil"
    ],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 3,
+    "net_30d": -3,
+    "last_action": "down",
+    "last_firm": "Citigroup",
+    "last_date": "2026-07-29"
+   },
+   "revision_note": "Analysten ↓3 in 30T (Citigroup, 2026-07-29)",
    "scores": {
-    "turnaround": 44.4,
-    "momentum": 0.9,
-    "value": 74.2
+    "turnaround": 43.9,
+    "momentum": 0.3,
+    "value": 56.3
    },
    "why": {
     "turnaround": [
@@ -1515,15 +1822,16 @@
     "momentum": [],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "PEG 0.64",
      "positiver Free Cashflow",
-     "Umsatzwachstum 18%"
+     "Umsatzwachstum 18%",
+     "Analysten zuletzt netto 3x herabgestuft (30 Tage)"
     ]
    }
   },
   "CSX": {
    "name": "CSX Corporation",
    "index": "NASDAQ",
+   "sector": "Industrials",
    "metrics": {
     "last": 50.68,
     "dd_ath": -4.8,
@@ -1547,10 +1855,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "Citigroup",
+    "last_date": "2026-07-24"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 54.0,
     "momentum": 71.4,
-    "value": 72.7
+    "value": 72.5
    },
    "why": {
     "turnaround": [
@@ -1573,6 +1890,7 @@
   "CTAS": {
    "name": "Cintas Corporation",
    "index": "NASDAQ",
+   "sector": "Industrials",
    "metrics": {
     "last": 203.08,
     "dd_ath": -9.7,
@@ -1580,25 +1898,34 @@
     "range_pos": 75.8,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 7.48,
-    "sma200_slope": 0.8,
+    "sma50_slope": 7.73,
+    "sma200_slope": 0.69,
     "higher_low": true,
-    "rsi14": 56.9,
+    "rsi14": 57.6,
     "rsi_min60": 42.5,
     "perf": {
-     "m1": 1.6,
-     "m3": 18.2,
-     "m6": 3.9,
-     "m12": -4.3
+     "m1": -0.4,
+     "m3": 21.0,
+     "m6": 5.5,
+     "m12": -7.1
     },
-    "rs6": -14.2,
-    "vol_ratio": 1.1
+    "rs6": -12.6,
+    "vol_ratio": 1.09
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": null,
+    "last_firm": null,
+    "last_date": null
+   },
+   "revision_note": null,
    "scores": {
-    "turnaround": 57.0,
-    "momentum": 49.6,
+    "turnaround": 56.8,
+    "momentum": 49.1,
     "value": 72.0
    },
    "why": {
@@ -1618,8 +1945,9 @@
    }
   },
   "CTSH": {
-   "name": "Cognizant Technology Solutions ",
+   "name": "Cognizant Technology Solutions",
    "index": "NASDAQ",
+   "sector": "Technology",
    "metrics": {
     "last": 60.93,
     "dd_ath": -30.5,
@@ -1643,10 +1971,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "Citigroup",
+    "last_date": "2026-07-30"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 78.8,
     "momentum": 0.0,
-    "value": 77.4
+    "value": 64.6
    },
    "why": {
     "turnaround": [
@@ -1658,7 +1995,6 @@
     "momentum": [],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "PEG 0.94",
      "positiver Free Cashflow"
     ]
    }
@@ -1666,6 +2002,7 @@
   "DASH": {
    "name": "DoorDash, Inc.",
    "index": "NASDAQ",
+   "sector": "Consumer Cyclical",
    "metrics": {
     "last": 220.22,
     "dd_ath": -21.8,
@@ -1689,10 +2026,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "Roth Capital",
+    "last_date": "2026-08-10"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 72.0,
     "momentum": 40.7,
-    "value": 64.6
+    "value": 65.7
    },
    "why": {
     "turnaround": [
@@ -1713,6 +2059,7 @@
   "DDOG": {
    "name": "Datadog, Inc.",
    "index": "NASDAQ",
+   "sector": "Technology",
    "metrics": {
     "last": 233.52,
     "dd_ath": -19.0,
@@ -1736,10 +2083,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 1,
+    "net_30d": -1,
+    "last_action": "main",
+    "last_firm": "Scotiabank",
+    "last_date": "2026-08-08"
+   },
+   "revision_note": "Analysten ↓1 in 30T (Scotiabank, 2026-08-08)",
    "scores": {
     "turnaround": 47.7,
     "momentum": 57.6,
-    "value": 70.4
+    "value": 59.7
    },
    "why": {
     "turnaround": [
@@ -1753,13 +2109,15 @@
     "value": [
      "erwartetes KGV unter aktuellem",
      "positiver Free Cashflow",
-     "Umsatzwachstum 36%"
+     "Umsatzwachstum 36%",
+     "Analysten zuletzt netto 1x herabgestuft (30 Tage)"
     ]
    }
   },
   "DXCM": {
    "name": "DexCom, Inc.",
    "index": "NASDAQ",
+   "sector": "Healthcare",
    "metrics": {
     "last": 89.88,
     "dd_ath": -44.8,
@@ -1783,10 +2141,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "Argus Research",
+    "last_date": "2026-08-04"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 85.1,
     "momentum": 54.3,
-    "value": 84.4
+    "value": 77.9
    },
    "why": {
     "turnaround": [
@@ -1809,6 +2176,7 @@
   "EXC": {
    "name": "Exelon Corporation",
    "index": "NASDAQ",
+   "sector": "Utilities",
    "metrics": {
     "last": 45.3,
     "dd_ath": -9.1,
@@ -1832,10 +2200,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "Truist Securities",
+    "last_date": "2026-08-13"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 41.2,
     "momentum": 21.9,
-    "value": 40.1
+    "value": 41.7
    },
    "why": {
     "turnaround": [
@@ -1853,6 +2230,7 @@
   "FANG": {
    "name": "Diamondback Energy, Inc.",
    "index": "NASDAQ",
+   "sector": "Energy",
    "metrics": {
     "last": 208.55,
     "dd_ath": -1.3,
@@ -1876,10 +2254,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": null,
+    "last_firm": null,
+    "last_date": null
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 52.3,
     "momentum": 70.8,
-    "value": 72.4
+    "value": 73.7
    },
    "why": {
     "turnaround": [
@@ -1902,6 +2289,7 @@
   "FAST": {
    "name": "Fastenal Company",
    "index": "NASDAQ",
+   "sector": "Industrials",
    "metrics": {
     "last": 51.44,
     "dd_ath": -1.8,
@@ -1909,25 +2297,34 @@
     "range_pos": 93.2,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 4.8,
-    "sma200_slope": 1.55,
+    "sma50_slope": 4.88,
+    "sma200_slope": 1.48,
     "higher_low": true,
-    "rsi14": 65.1,
+    "rsi14": 64.7,
     "rsi_min60": 41.4,
     "perf": {
-     "m1": 14.9,
-     "m3": 18.7,
-     "m6": 13.1,
-     "m12": 7.0
+     "m1": 15.6,
+     "m3": 17.6,
+     "m6": 13.8,
+     "m12": 7.5
     },
-    "rs6": -5.1,
+    "rs6": -4.4,
     "vol_ratio": 0.98
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": null,
+    "last_firm": null,
+    "last_date": null
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 54.0,
-    "momentum": 61.2,
+    "momentum": 61.5,
     "value": 77.4
    },
    "why": {
@@ -1950,6 +2347,7 @@
   "FTNT": {
    "name": "Fortinet, Inc.",
    "index": "NASDAQ",
+   "sector": "Technology",
    "metrics": {
     "last": 152.85,
     "dd_ath": -9.2,
@@ -1973,10 +2371,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 1,
+    "downgrades_30d": 0,
+    "net_30d": 1,
+    "last_action": "main",
+    "last_firm": "Susquehanna",
+    "last_date": "2026-07-31"
+   },
+   "revision_note": "Analysten ↑1 in 30T (Susquehanna, 2026-07-31)",
    "scores": {
     "turnaround": 46.2,
     "momentum": 78.0,
-    "value": 82.6
+    "value": 82.5
    },
    "why": {
     "turnaround": [
@@ -1992,13 +2399,15 @@
     "value": [
      "erwartetes KGV unter aktuellem",
      "positiver Free Cashflow",
-     "Umsatzwachstum 26%"
+     "Umsatzwachstum 26%",
+     "Analysten zuletzt netto 1x hochgestuft (30 Tage)"
     ]
    }
   },
   "GEHC": {
    "name": "GE HealthCare Technologies Inc.",
    "index": "NASDAQ",
+   "sector": "Healthcare",
    "metrics": {
     "last": 74.62,
     "dd_ath": -20.2,
@@ -2006,26 +2415,35 @@
     "range_pos": 53.1,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 4.0,
-    "sma200_slope": -0.83,
+    "sma50_slope": 4.33,
+    "sma200_slope": -0.74,
     "higher_low": true,
     "rsi14": 66.9,
     "rsi_min60": 38.2,
     "perf": {
-     "m1": 18.8,
-     "m3": 21.4,
-     "m6": -8.5,
-     "m12": 1.9
+     "m1": 20.3,
+     "m3": 21.2,
+     "m6": -9.9,
+     "m12": 2.2
     },
-    "rs6": -26.7,
-    "vol_ratio": 1.08
+    "rs6": -28.1,
+    "vol_ratio": 1.09
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "reit",
+    "last_firm": "BTIG",
+    "last_date": "2026-08-19"
+   },
+   "revision_note": null,
    "scores": {
-    "turnaround": 69.3,
-    "momentum": 30.4,
-    "value": 70.0
+    "turnaround": 69.5,
+    "momentum": 30.6,
+    "value": 67.4
    },
    "why": {
     "turnaround": [
@@ -2045,6 +2463,7 @@
   "GFS": {
    "name": "GlobalFoundries Inc.",
    "index": "NASDAQ",
+   "sector": "Technology",
    "metrics": {
     "last": 48.58,
     "dd_ath": -45.9,
@@ -2068,10 +2487,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "TD Cowen",
+    "last_date": "2026-08-06"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 33.5,
     "momentum": 8.1,
-    "value": 68.1
+    "value": 57.3
    },
    "why": {
     "turnaround": [
@@ -2082,7 +2510,6 @@
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "PEG 1.06",
      "positiver Free Cashflow"
     ]
    }
@@ -2090,6 +2517,7 @@
   "GILD": {
    "name": "Gilead Sciences, Inc.",
    "index": "NASDAQ",
+   "sector": "Healthcare",
    "metrics": {
     "last": 147.6,
     "dd_ath": -4.1,
@@ -2113,10 +2541,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 1,
+    "net_30d": -1,
+    "last_action": "main",
+    "last_firm": "RBC Capital",
+    "last_date": "2026-08-05"
+   },
+   "revision_note": "Analysten ↓1 in 30T (RBC Capital, 2026-08-05)",
    "scores": {
     "turnaround": 43.6,
     "momentum": 55.2,
-    "value": 39.3
+    "value": 40.2
    },
    "why": {
     "turnaround": [
@@ -2129,13 +2566,15 @@
     ],
     "value": [
      "positiver Free Cashflow",
-     "Umsatzwachstum 10%"
+     "Umsatzwachstum 10%",
+     "Analysten zuletzt netto 1x herabgestuft (30 Tage)"
     ]
    }
   },
   "GOOGL": {
    "name": "Alphabet Inc.",
    "index": "NASDAQ",
+   "sector": "Communication Services",
    "metrics": {
     "last": 344.72,
     "dd_ath": -14.3,
@@ -2159,10 +2598,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "UBS",
+    "last_date": "2026-07-23"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 15.8,
     "momentum": 31.2,
-    "value": 78.8
+    "value": 73.4
    },
    "why": {
     "turnaround": [
@@ -2172,7 +2620,6 @@
      "200-Tage-Linie steigt"
     ],
     "value": [
-     "PEG 0.94",
      "positiver Free Cashflow",
      "Umsatzwachstum 24%"
     ]
@@ -2181,6 +2628,7 @@
   "HON": {
    "name": "Honeywell International Inc.",
    "index": "NASDAQ/DOW",
+   "sector": "Industrials",
    "metrics": {
     "last": 221.73,
     "dd_ath": -14.0,
@@ -2204,10 +2652,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 1,
+    "downgrades_30d": 0,
+    "net_30d": 1,
+    "last_action": "main",
+    "last_firm": "RBC Capital",
+    "last_date": "2026-08-18"
+   },
+   "revision_note": "Analysten ↑1 in 30T (RBC Capital, 2026-08-18)",
    "scores": {
     "turnaround": 37.1,
     "momentum": 20.1,
-    "value": 40.2
+    "value": 51.6
    },
    "why": {
     "turnaround": [
@@ -2215,13 +2672,15 @@
     ],
     "momentum": [],
     "value": [
-     "positiver Free Cashflow"
+     "positiver Free Cashflow",
+     "Analysten zuletzt netto 1x hochgestuft (30 Tage)"
     ]
    }
   },
   "IDXX": {
    "name": "IDEXX Laboratories, Inc.",
    "index": "NASDAQ",
+   "sector": "Healthcare",
    "metrics": {
     "last": 562.2,
     "dd_ath": -26.7,
@@ -2245,6 +2704,15 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "Barclays",
+    "last_date": "2026-08-11"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 76.7,
     "momentum": 5.4,
@@ -2267,6 +2735,7 @@
   "INTC": {
    "name": "Intel Corporation",
    "index": "NASDAQ",
+   "sector": "Technology",
    "metrics": {
     "last": 92.8,
     "dd_ath": -34.2,
@@ -2290,10 +2759,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "B of A Securities",
+    "last_date": "2026-08-12"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 67.5,
     "momentum": 47.0,
-    "value": 54.5
+    "value": 49.4
    },
    "why": {
     "turnaround": [
@@ -2306,7 +2784,6 @@
      "200-Tage-Linie steigt"
     ],
     "value": [
-     "PEG 1.36",
      "positiver Free Cashflow",
      "Umsatzwachstum 25%"
     ]
@@ -2315,6 +2792,7 @@
   "INTU": {
    "name": "Intuit Inc.",
    "index": "NASDAQ",
+   "sector": "Technology",
    "metrics": {
     "last": 362.47,
     "dd_ath": -54.6,
@@ -2340,10 +2818,19 @@
     "200-Tage-Linie faellt steil"
    ],
    "earnings_in": 5,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 3,
+    "net_30d": -3,
+    "last_action": "main",
+    "last_firm": "Deutsche Bank",
+    "last_date": "2026-08-19"
+   },
+   "revision_note": "Analysten ↓3 in 30T (Deutsche Bank, 2026-08-19)",
    "scores": {
     "turnaround": 82.2,
     "momentum": 2.6,
-    "value": 90.2
+    "value": 72.5
    },
    "why": {
     "turnaround": [
@@ -2355,15 +2842,16 @@
     "momentum": [],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "PEG 0.90",
      "positiver Free Cashflow",
-     "Umsatzwachstum 10%"
+     "Umsatzwachstum 10%",
+     "Analysten zuletzt netto 3x herabgestuft (30 Tage)"
     ]
    }
   },
   "ISRG": {
    "name": "Intuitive Surgical, Inc.",
    "index": "NASDAQ",
+   "sector": "Healthcare",
    "metrics": {
     "last": 397.72,
     "dd_ath": -34.8,
@@ -2389,10 +2877,19 @@
     "200-Tage-Linie faellt steil"
    ],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 1,
+    "downgrades_30d": 1,
+    "net_30d": 0,
+    "last_action": "up",
+    "last_firm": "Oppenheimer",
+    "last_date": "2026-08-12"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 62.2,
     "momentum": 2.6,
-    "value": 66.2
+    "value": 61.2
    },
    "why": {
     "turnaround": [
@@ -2411,54 +2908,62 @@
   "KDP": {
    "name": "Keurig Dr Pepper Inc.",
    "index": "NASDAQ",
+   "sector": "Consumer Defensive",
    "metrics": {
     "last": 31.06,
     "dd_ath": -13.5,
     "days_since_ath": 1464,
     "range_pos": 68.0,
-    "above_sma50": true,
+    "above_sma50": false,
     "above_sma200": true,
-    "sma50_slope": 1.47,
-    "sma200_slope": 1.49,
+    "sma50_slope": 1.6,
+    "sma200_slope": 1.52,
     "higher_low": true,
-    "rsi14": 53.2,
-    "rsi_min60": 36.7,
+    "rsi14": 53.1,
+    "rsi_min60": 36.9,
     "perf": {
-     "m1": 2.8,
-     "m3": 8.4,
+     "m1": 2.0,
+     "m3": 6.3,
      "m6": 8.3,
-     "m12": -7.3
+     "m12": -7.7
     },
-    "rs6": -9.9,
-    "vol_ratio": 1.0
+    "rs6": -9.8,
+    "vol_ratio": 1.01
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 1,
+    "downgrades_30d": 0,
+    "net_30d": 1,
+    "last_action": "up",
+    "last_firm": "HSBC",
+    "last_date": "2026-08-13"
+   },
+   "revision_note": "Analysten ↑1 in 30T (HSBC, 2026-08-13)",
    "scores": {
-    "turnaround": 52.4,
-    "momentum": 41.7,
-    "value": 79.9
+    "turnaround": 38.0,
+    "momentum": 30.1,
+    "value": 71.2
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
-     "ueber 50-Tage-Linie",
      "50-Tage-Linie dreht nach oben"
     ],
-    "momentum": [
-     "ueber 50- und 200-Tage-Linie"
-    ],
+    "momentum": [],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "PEG 1.08",
      "positiver Free Cashflow",
-     "Umsatzwachstum 76%"
+     "Umsatzwachstum 76%",
+     "Analysten zuletzt netto 1x hochgestuft (30 Tage)"
     ]
    }
   },
   "KHC": {
    "name": "The Kraft Heinz Company",
    "index": "NASDAQ",
+   "sector": "Consumer Defensive",
    "metrics": {
     "last": 25.68,
     "dd_ath": -58.5,
@@ -2482,10 +2987,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "Barclays",
+    "last_date": "2026-08-07"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 73.5,
     "momentum": 25.6,
-    "value": 50.0
+    "value": 43.1
    },
    "why": {
     "turnaround": [
@@ -2498,7 +3012,6 @@
      "ueber 50- und 200-Tage-Linie"
     ],
     "value": [
-     "PEG 0.99",
      "positiver Free Cashflow"
     ]
    }
@@ -2506,6 +3019,7 @@
   "KLAC": {
    "name": "KLA Corporation",
    "index": "NASDAQ",
+   "sector": "Technology",
    "metrics": {
     "last": 187.27,
     "dd_ath": -37.9,
@@ -2529,10 +3043,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "Stifel",
+    "last_date": "2026-07-29"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 49.8,
     "momentum": 29.6,
-    "value": 81.3
+    "value": 77.3
    },
    "why": {
     "turnaround": [
@@ -2552,6 +3075,7 @@
   "LIN": {
    "name": "Linde plc",
    "index": "NASDAQ",
+   "sector": "Basic Materials",
    "metrics": {
     "last": 481.13,
     "dd_ath": -12.0,
@@ -2559,26 +3083,35 @@
     "range_pos": 59.0,
     "above_sma50": false,
     "above_sma200": true,
-    "sma50_slope": -1.09,
-    "sma200_slope": 0.93,
+    "sma50_slope": -0.99,
+    "sma200_slope": 0.85,
     "higher_low": false,
-    "rsi14": 39.9,
-    "rsi_min60": 30.2,
+    "rsi14": 39.7,
+    "rsi_min60": 30.1,
     "perf": {
-     "m1": -4.7,
+     "m1": -6.3,
      "m3": -4.6,
-     "m6": -0.2,
-     "m12": 1.9
+     "m6": 0.7,
+     "m12": 2.1
     },
-    "rs6": -18.4,
+    "rs6": -17.5,
     "vol_ratio": 0.99
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "BMO Capital",
+    "last_date": "2026-08-10"
+   },
+   "revision_note": null,
    "scores": {
-    "turnaround": 10.9,
-    "momentum": 27.0,
-    "value": 73.1
+    "turnaround": 10.8,
+    "momentum": 26.8,
+    "value": 71.9
    },
    "why": {
     "turnaround": [],
@@ -2593,6 +3126,7 @@
   "LRCX": {
    "name": "Lam Research Corporation",
    "index": "NASDAQ",
+   "sector": "Technology",
    "metrics": {
     "last": 307.17,
     "dd_ath": -29.1,
@@ -2616,10 +3150,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "Morgan Stanley",
+    "last_date": "2026-07-30"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 67.8,
     "momentum": 35.3,
-    "value": 88.4
+    "value": 81.7
    },
    "why": {
     "turnaround": [
@@ -2640,6 +3183,7 @@
   "LULU": {
    "name": "lululemon athletica inc.",
    "index": "NASDAQ",
+   "sector": "Consumer Cyclical",
    "metrics": {
     "last": 119.45,
     "dd_ath": -76.6,
@@ -2665,10 +3209,19 @@
     "200-Tage-Linie faellt steil"
    ],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "JP Morgan",
+    "last_date": "2026-08-04"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 53.9,
     "momentum": 0.0,
-    "value": 68.0
+    "value": 60.2
    },
    "why": {
     "turnaround": [
@@ -2678,7 +3231,6 @@
     ],
     "momentum": [],
     "value": [
-     "PEG 0.92",
      "positiver Free Cashflow"
     ]
    }
@@ -2686,6 +3238,7 @@
   "MAR": {
    "name": "Marriott International",
    "index": "NASDAQ",
+   "sector": "Consumer Cyclical",
    "metrics": {
     "last": 359.95,
     "dd_ath": -10.6,
@@ -2693,26 +3246,35 @@
     "range_pos": 70.7,
     "above_sma50": false,
     "above_sma200": true,
-    "sma50_slope": -0.86,
+    "sma50_slope": -0.65,
     "sma200_slope": 2.95,
     "higher_low": false,
     "rsi14": 47.9,
-    "rsi_min60": 32.1,
+    "rsi_min60": 31.9,
     "perf": {
-     "m1": -2.1,
-     "m3": 0.5,
-     "m6": 1.5,
-     "m12": 36.4
+     "m1": -1.9,
+     "m3": 0.4,
+     "m6": 0.4,
+     "m12": 36.9
     },
-    "rs6": -16.7,
-    "vol_ratio": 0.83
+    "rs6": -17.8,
+    "vol_ratio": 0.84
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 1,
+    "downgrades_30d": 0,
+    "net_30d": 1,
+    "last_action": "init",
+    "last_firm": "CICC",
+    "last_date": "2026-08-12"
+   },
+   "revision_note": "Analysten ↑1 in 30T (CICC, 2026-08-12)",
    "scores": {
-    "turnaround": 16.4,
+    "turnaround": 16.9,
     "momentum": 34.6,
-    "value": 60.3
+    "value": 59.9
    },
    "why": {
     "turnaround": [
@@ -2725,13 +3287,15 @@
     "value": [
      "erwartetes KGV unter aktuellem",
      "positiver Free Cashflow",
-     "Umsatzwachstum 11%"
+     "Umsatzwachstum 11%",
+     "Analysten zuletzt netto 1x hochgestuft (30 Tage)"
     ]
    }
   },
   "MCHP": {
    "name": "Microchip Technology Incorporat",
    "index": "NASDAQ",
+   "sector": "Technology",
    "metrics": {
     "last": 77.08,
     "dd_ath": -25.0,
@@ -2755,10 +3319,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "reit",
+    "last_firm": "Cantor Fitzgerald",
+    "last_date": "2026-08-17"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 38.4,
     "momentum": 14.9,
-    "value": 82.8
+    "value": 69.6
    },
    "why": {
     "turnaround": [
@@ -2768,7 +3341,6 @@
     "momentum": [],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "PEG 0.24",
      "positiver Free Cashflow",
      "Umsatzwachstum 38%"
     ]
@@ -2777,6 +3349,7 @@
   "MDLZ": {
    "name": "Mondelez International, Inc.",
    "index": "NASDAQ",
+   "sector": "Consumer Defensive",
    "metrics": {
     "last": 64.16,
     "dd_ath": -10.2,
@@ -2800,10 +3373,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "Barclays",
+    "last_date": "2026-07-30"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 47.9,
     "momentum": 48.4,
-    "value": 71.3
+    "value": 60.5
    },
    "why": {
     "turnaround": [
@@ -2816,7 +3398,6 @@
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "PEG 1.05",
      "positiver Free Cashflow"
     ]
    }
@@ -2824,6 +3405,7 @@
   "MELI": {
    "name": "MercadoLibre, Inc.",
    "index": "NASDAQ",
+   "sector": "Consumer Cyclical",
    "metrics": {
     "last": 1908.65,
     "dd_ath": -27.0,
@@ -2831,26 +3413,35 @@
     "range_pos": 37.5,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 5.15,
-    "sma200_slope": -1.69,
+    "sma50_slope": 4.52,
+    "sma200_slope": -1.64,
     "higher_low": true,
-    "rsi14": 57.7,
+    "rsi14": 57.9,
     "rsi_min60": 40.3,
     "perf": {
-     "m1": 4.7,
-     "m3": 19.7,
-     "m6": -5.0,
-     "m12": -19.3
+     "m1": 2.8,
+     "m3": 18.7,
+     "m6": -4.9,
+     "m12": -18.0
     },
-    "rs6": -23.2,
-    "vol_ratio": 1.0
+    "rs6": -23.1,
+    "vol_ratio": 0.96
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "JP Morgan",
+    "last_date": "2026-08-11"
+   },
+   "revision_note": null,
    "scores": {
-    "turnaround": 79.5,
-    "momentum": 22.9,
-    "value": 75.1
+    "turnaround": 78.5,
+    "momentum": 21.7,
+    "value": 64.6
    },
    "why": {
     "turnaround": [
@@ -2864,7 +3455,6 @@
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "PEG 1.31",
      "positiver Free Cashflow",
      "Umsatzwachstum 50%"
     ]
@@ -2873,6 +3463,7 @@
   "META": {
    "name": "Meta Platforms, Inc.",
    "index": "NASDAQ",
+   "sector": "Communication Services",
    "metrics": {
     "last": 546.03,
     "dd_ath": -30.7,
@@ -2898,10 +3489,19 @@
     "200-Tage-Linie faellt steil"
    ],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": null,
+    "last_firm": null,
+    "last_date": null
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 35.9,
     "momentum": 6.9,
-    "value": 94.6
+    "value": 81.9
    },
    "why": {
     "turnaround": [
@@ -2910,7 +3510,6 @@
     "momentum": [],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "PEG 0.88",
      "positiver Free Cashflow",
      "Umsatzwachstum 28%"
     ]
@@ -2919,6 +3518,7 @@
   "MNST": {
    "name": "Monster Beverage Corporation",
    "index": "NASDAQ",
+   "sector": "Consumer Defensive",
    "metrics": {
     "last": 47.43,
     "dd_ath": -52.5,
@@ -2926,25 +3526,34 @@
     "range_pos": 3.5,
     "above_sma50": false,
     "above_sma200": false,
-    "sma50_slope": -4.14,
-    "sma200_slope": 1.15,
+    "sma50_slope": -3.89,
+    "sma200_slope": 1.14,
     "higher_low": false,
-    "rsi14": 15.5,
-    "rsi_min60": 10.2,
+    "rsi14": 15.3,
+    "rsi_min60": 9.8,
     "perf": {
-     "m1": -50.3,
-     "m3": -46.4,
-     "m6": -42.8,
-     "m12": -26.6
+     "m1": -51.4,
+     "m3": -45.5,
+     "m6": -41.8,
+     "m12": -26.1
     },
-    "rs6": -61.0,
-    "vol_ratio": 1.05
+    "rs6": -60.0,
+    "vol_ratio": 1.04
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "UBS",
+    "last_date": "2026-08-07"
+   },
+   "revision_note": null,
    "scores": {
-    "turnaround": 28.8,
-    "momentum": 7.2,
+    "turnaround": 28.5,
+    "momentum": 6.9,
     "value": 75.0
    },
    "why": {
@@ -2962,6 +3571,7 @@
   "MRVL": {
    "name": "Marvell Technology, Inc.",
    "index": "NASDAQ",
+   "sector": "Technology",
    "metrics": {
     "last": 237.27,
     "dd_ath": -25.0,
@@ -2985,10 +3595,19 @@
    },
    "flags": [],
    "earnings_in": 7,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "TD Cowen",
+    "last_date": "2026-08-18"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 77.2,
     "momentum": 68.0,
-    "value": 86.5
+    "value": 75.5
    },
    "why": {
     "turnaround": [
@@ -3005,7 +3624,6 @@
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "PEG 1.25",
      "positiver Free Cashflow",
      "Umsatzwachstum 28%"
     ]
@@ -3014,6 +3632,7 @@
   "MSFT": {
    "name": "Microsoft Corporation",
    "index": "NASDAQ/DOW",
+   "sector": "Technology",
    "metrics": {
     "last": 484.31,
     "dd_ath": -10.1,
@@ -3037,10 +3656,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "Wells Fargo",
+    "last_date": "2026-08-12"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 71.0,
     "momentum": 57.0,
-    "value": 87.9
+    "value": 84.7
    },
    "why": {
     "turnaround": [
@@ -3064,6 +3692,7 @@
   "MSTR": {
    "name": "Strategy Inc",
    "index": "NASDAQ",
+   "sector": "Technology",
    "metrics": {
     "last": 104.25,
     "dd_ath": -78.0,
@@ -3089,10 +3718,19 @@
     "200-Tage-Linie faellt steil"
    ],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "B. Riley Securities",
+    "last_date": "2026-08-03"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 55.0,
     "momentum": 4.0,
-    "value": 26.9
+    "value": 31.9
    },
    "why": {
     "turnaround": [
@@ -3107,6 +3745,7 @@
   "MU": {
    "name": "Micron Technology, Inc.",
    "index": "NASDAQ",
+   "sector": "Technology",
    "metrics": {
     "last": 937.11,
     "dd_ath": -22.8,
@@ -3130,10 +3769,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "Citigroup",
+    "last_date": "2026-08-07"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 46.2,
     "momentum": 50.3,
-    "value": 105.0
+    "value": 90.0
    },
    "why": {
     "turnaround": [
@@ -3146,7 +3794,6 @@
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "PEG 0.14",
      "positiver Free Cashflow",
      "Umsatzwachstum 346%"
     ]
@@ -3155,6 +3802,7 @@
   "NFLX": {
    "name": "Netflix, Inc.",
    "index": "NASDAQ",
+   "sector": "Communication Services",
    "metrics": {
     "last": 80.22,
     "dd_ath": -40.1,
@@ -3180,10 +3828,19 @@
     "200-Tage-Linie faellt steil"
    ],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "Baird",
+    "last_date": "2026-07-22"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 62.2,
     "momentum": 2.6,
-    "value": 79.1
+    "value": 77.0
    },
    "why": {
     "turnaround": [
@@ -3202,6 +3859,7 @@
   "NVDA": {
    "name": "NVIDIA Corporation",
    "index": "NASDAQ/DOW",
+   "sector": "Technology",
    "metrics": {
     "last": 217.56,
     "dd_ath": -7.6,
@@ -3225,10 +3883,19 @@
    },
    "flags": [],
    "earnings_in": 6,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "reit",
+    "last_firm": "Wells Fargo",
+    "last_date": "2026-08-11"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 43.9,
     "momentum": 51.3,
-    "value": 99.7
+    "value": 86.5
    },
    "why": {
     "turnaround": [
@@ -3241,7 +3908,6 @@
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "PEG 0.62",
      "positiver Free Cashflow",
      "Umsatzwachstum 85%"
     ]
@@ -3250,6 +3916,7 @@
   "NXPI": {
    "name": "NXP Semiconductors N.V.",
    "index": "NASDAQ",
+   "sector": "Technology",
    "metrics": {
     "last": 226.02,
     "dd_ath": -31.8,
@@ -3273,10 +3940,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 1,
+    "net_30d": -1,
+    "last_action": "reit",
+    "last_firm": "Cantor Fitzgerald",
+    "last_date": "2026-08-17"
+   },
+   "revision_note": "Analysten ↓1 in 30T (Cantor Fitzgerald, 2026-08-17)",
    "scores": {
     "turnaround": 52.4,
     "momentum": 2.7,
-    "value": 94.0
+    "value": 77.9
    },
    "why": {
     "turnaround": [
@@ -3286,15 +3962,16 @@
     "momentum": [],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "PEG 0.57",
      "positiver Free Cashflow",
-     "Umsatzwachstum 20%"
+     "Umsatzwachstum 20%",
+     "Analysten zuletzt netto 1x herabgestuft (30 Tage)"
     ]
    }
   },
   "ODFL": {
    "name": "Old Dominion Freight Line, Inc.",
    "index": "NASDAQ",
+   "sector": "Industrials",
    "metrics": {
     "last": 205.08,
     "dd_ath": -17.5,
@@ -3302,30 +3979,40 @@
     "range_pos": 64.5,
     "above_sma50": false,
     "above_sma200": true,
-    "sma50_slope": 0.04,
-    "sma200_slope": 4.23,
+    "sma50_slope": 1.47,
+    "sma200_slope": 4.29,
     "higher_low": true,
-    "rsi14": 37.5,
-    "rsi_min60": 36.3,
+    "rsi14": 37.9,
+    "rsi_min60": 37.3,
     "perf": {
-     "m1": -12.7,
-     "m3": 0.4,
-     "m6": 6.1,
-     "m12": 37.2
+     "m1": -13.5,
+     "m3": 3.3,
+     "m6": 10.8,
+     "m12": 34.5
     },
-    "rs6": -12.1,
-    "vol_ratio": 1.03
+    "rs6": -7.3,
+    "vol_ratio": 1.04
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "UBS",
+    "last_date": "2026-07-30"
+   },
+   "revision_note": null,
    "scores": {
-    "turnaround": 36.1,
-    "momentum": 31.4,
+    "turnaround": 40.2,
+    "momentum": 31.7,
     "value": 75.0
    },
    "why": {
     "turnaround": [
-     "hoeheres Tief"
+     "hoeheres Tief",
+     "50-Tage-Linie dreht nach oben"
     ],
     "momentum": [
      "200-Tage-Linie steigt"
@@ -3340,6 +4027,7 @@
   "ON": {
    "name": "ON Semiconductor Corporation",
    "index": "NASDAQ",
+   "sector": "Technology",
    "metrics": {
     "last": 76.58,
     "dd_ath": -42.8,
@@ -3363,10 +4051,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "reit",
+    "last_firm": "Cantor Fitzgerald",
+    "last_date": "2026-08-17"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 53.7,
     "momentum": 10.0,
-    "value": 74.1
+    "value": 60.9
    },
    "why": {
     "turnaround": [
@@ -3378,7 +4075,6 @@
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "PEG 0.26",
      "positiver Free Cashflow",
      "Umsatzwachstum 9%"
     ]
@@ -3387,6 +4083,7 @@
   "ORLY": {
    "name": "O'Reilly Automotive, Inc.",
    "index": "NASDAQ",
+   "sector": "Consumer Cyclical",
    "metrics": {
     "last": 91.2,
     "dd_ath": -15.4,
@@ -3410,10 +4107,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "Citigroup",
+    "last_date": "2026-08-03"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 40.7,
     "momentum": 11.9,
-    "value": 50.3
+    "value": 47.7
    },
    "why": {
     "turnaround": [
@@ -3430,6 +4136,7 @@
   "PANW": {
    "name": "Palo Alto Networks, Inc.",
    "index": "NASDAQ",
+   "sector": "Technology",
    "metrics": {
     "last": 359.76,
     "dd_ath": -9.2,
@@ -3453,6 +4160,15 @@
    },
    "flags": [],
    "earnings_in": 12,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "Mizuho",
+    "last_date": "2026-08-19"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 56.5,
     "momentum": 85.9,
@@ -3480,6 +4196,7 @@
   "PAYX": {
    "name": "Paychex, Inc.",
    "index": "NASDAQ",
+   "sector": "Technology",
    "metrics": {
     "last": 122.5,
     "dd_ath": -19.3,
@@ -3503,10 +4220,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "Jefferies",
+    "last_date": "2026-08-13"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 63.9,
     "momentum": 53.4,
-    "value": 53.8
+    "value": 52.7
    },
    "why": {
     "turnaround": [
@@ -3527,6 +4253,7 @@
   "PCAR": {
    "name": "PACCAR Inc.",
    "index": "NASDAQ",
+   "sector": "Industrials",
    "metrics": {
     "last": 127.47,
     "dd_ath": -7.5,
@@ -3534,26 +4261,35 @@
     "range_pos": 78.0,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 6.75,
+    "sma50_slope": 6.84,
     "sma200_slope": 3.27,
     "higher_low": true,
-    "rsi14": 45.4,
-    "rsi_min60": 38.5,
+    "rsi14": 45.8,
+    "rsi_min60": 36.5,
     "perf": {
-     "m1": 1.2,
-     "m3": 16.8,
-     "m6": 2.4,
-     "m12": 32.8
+     "m1": 2.8,
+     "m3": 14.4,
+     "m6": 1.3,
+     "m12": 33.0
     },
-    "rs6": -15.8,
-    "vol_ratio": 1.01
+    "rs6": -16.9,
+    "vol_ratio": 1.03
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "Evercore ISI Group",
+    "last_date": "2026-08-11"
+   },
+   "revision_note": null,
    "scores": {
-    "turnaround": 54.8,
-    "momentum": 56.3,
-    "value": 66.6
+    "turnaround": 55.2,
+    "momentum": 56.9,
+    "value": 57.9
    },
    "why": {
     "turnaround": [
@@ -3568,7 +4304,6 @@
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "PEG 1.30",
      "positiver Free Cashflow"
     ]
    }
@@ -3576,6 +4311,7 @@
   "PDD": {
    "name": "PDD Holdings Inc.",
    "index": "NASDAQ",
+   "sector": "Consumer Cyclical",
    "metrics": {
     "last": 90.2,
     "dd_ath": -55.5,
@@ -3601,10 +4337,19 @@
     "200-Tage-Linie faellt steil"
    ],
    "earnings_in": 4,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": null,
+    "last_firm": null,
+    "last_date": null
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 79.9,
     "momentum": 0.6,
-    "value": 96.0
+    "value": 81.0
    },
    "why": {
     "turnaround": [
@@ -3616,7 +4361,6 @@
     "momentum": [],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "PEG 0.78",
      "positiver Free Cashflow",
      "Umsatzwachstum 11%"
     ]
@@ -3625,6 +4369,7 @@
   "PEP": {
    "name": "Pepsico, Inc.",
    "index": "NASDAQ",
+   "sector": "Consumer Defensive",
    "metrics": {
     "last": 142.58,
     "dd_ath": -18.7,
@@ -3648,10 +4393,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "Barclays",
+    "last_date": "2026-07-21"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 41.4,
     "momentum": 7.1,
-    "value": 65.8
+    "value": 58.9
    },
    "why": {
     "turnaround": [
@@ -3668,6 +4422,7 @@
   "PLTR": {
    "name": "Palantir Technologies Inc.",
    "index": "NASDAQ",
+   "sector": "Technology",
    "metrics": {
     "last": 175.19,
     "dd_ath": -15.4,
@@ -3691,10 +4446,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 1,
+    "downgrades_30d": 0,
+    "net_30d": 1,
+    "last_action": "main",
+    "last_firm": "UBS",
+    "last_date": "2026-08-04"
+   },
+   "revision_note": "Analysten ↑1 in 30T (UBS, 2026-08-04)",
    "scores": {
     "turnaround": 72.4,
     "momentum": 56.6,
-    "value": 81.4
+    "value": 82.5
    },
    "why": {
     "turnaround": [
@@ -3710,13 +4474,15 @@
     "value": [
      "erwartetes KGV unter aktuellem",
      "positiver Free Cashflow",
-     "Umsatzwachstum 93%"
+     "Umsatzwachstum 93%",
+     "Analysten zuletzt netto 1x hochgestuft (30 Tage)"
     ]
    }
   },
   "PYPL": {
    "name": "PayPal Holdings, Inc.",
    "index": "NASDAQ",
+   "sector": "Financial Services",
    "metrics": {
     "last": 61.25,
     "dd_ath": -80.0,
@@ -3740,10 +4506,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 1,
+    "downgrades_30d": 0,
+    "net_30d": 1,
+    "last_action": "main",
+    "last_firm": "Truist Securities",
+    "last_date": "2026-08-19"
+   },
+   "revision_note": "Analysten ↑1 in 30T (Truist Securities, 2026-08-19)",
    "scores": {
     "turnaround": 62.5,
     "momentum": 55.4,
-    "value": 85.3
+    "value": 77.0
    },
    "why": {
     "turnaround": [
@@ -3758,14 +4533,15 @@
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "PEG 1.13",
-     "positiver Free Cashflow"
+     "positiver Free Cashflow",
+     "Analysten zuletzt netto 1x hochgestuft (30 Tage)"
     ]
    }
   },
   "QCOM": {
    "name": "QUALCOMM Incorporated",
    "index": "NASDAQ",
+   "sector": "Technology",
    "metrics": {
     "last": 161.91,
     "dd_ath": -35.3,
@@ -3789,10 +4565,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "Benchmark",
+    "last_date": "2026-07-30"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 65.0,
     "momentum": 0.8,
-    "value": 79.4
+    "value": 66.1
    },
    "why": {
     "turnaround": [
@@ -3803,7 +4588,6 @@
     "momentum": [],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "PEG 0.71",
      "positiver Free Cashflow"
     ]
    }
@@ -3811,6 +4595,7 @@
   "REGN": {
    "name": "Regeneron Pharmaceuticals, Inc.",
    "index": "NASDAQ",
+   "sector": "Healthcare",
    "metrics": {
     "last": 840.84,
     "dd_ath": -29.4,
@@ -3818,26 +4603,35 @@
     "range_pos": 100.0,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 6.95,
-    "sma200_slope": 2.46,
+    "sma50_slope": 5.82,
+    "sma200_slope": 2.54,
     "higher_low": true,
-    "rsi14": 83.1,
+    "rsi14": 83.2,
     "rsi_min60": 25.0,
     "perf": {
-     "m1": 24.7,
-     "m3": 33.8,
-     "m6": 6.6,
-     "m12": 47.3
+     "m1": 24.0,
+     "m3": 18.3,
+     "m6": 7.7,
+     "m12": 50.7
     },
-    "rs6": -11.6,
-    "vol_ratio": 1.03
+    "rs6": -10.5,
+    "vol_ratio": 0.99
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "Leerink Partners",
+    "last_date": "2026-08-17"
+   },
+   "revision_note": null,
    "scores": {
-    "turnaround": 72.2,
-    "momentum": 39.9,
-    "value": 91.1
+    "turnaround": 71.2,
+    "momentum": 38.9,
+    "value": 82.6
    },
    "why": {
     "turnaround": [
@@ -3852,7 +4646,6 @@
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "PEG 1.36",
      "positiver Free Cashflow",
      "Umsatzwachstum 17%"
     ]
@@ -3861,6 +4654,7 @@
   "ROP": {
    "name": "Roper Technologies, Inc.",
    "index": "NASDAQ",
+   "sector": "Technology",
    "metrics": {
     "last": 407.32,
     "dd_ath": -30.6,
@@ -3868,26 +4662,35 @@
     "range_pos": 42.1,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 7.87,
-    "sma200_slope": -2.56,
+    "sma50_slope": 7.41,
+    "sma200_slope": -2.77,
     "higher_low": true,
-    "rsi14": 64.1,
+    "rsi14": 65.1,
     "rsi_min60": 33.2,
     "perf": {
-     "m1": 16.1,
-     "m3": 24.1,
-     "m6": 25.0,
-     "m12": -22.8
+     "m1": 11.8,
+     "m3": 28.4,
+     "m6": 28.0,
+     "m12": -21.4
     },
-    "rs6": 6.8,
-    "vol_ratio": 1.1
+    "rs6": 9.8,
+    "vol_ratio": 1.05
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 1,
+    "downgrades_30d": 0,
+    "net_30d": 1,
+    "last_action": "reit",
+    "last_firm": "RBC Capital",
+    "last_date": "2026-08-18"
+   },
+   "revision_note": "Analysten ↑1 in 30T (RBC Capital, 2026-08-18)",
    "scores": {
-    "turnaround": 95.0,
-    "momentum": 35.5,
-    "value": 62.9
+    "turnaround": 93.8,
+    "momentum": 36.6,
+    "value": 65.4
    },
    "why": {
     "turnaround": [
@@ -3901,13 +4704,15 @@
      "ueber 50- und 200-Tage-Linie"
     ],
     "value": [
-     "positiver Free Cashflow"
+     "positiver Free Cashflow",
+     "Analysten zuletzt netto 1x hochgestuft (30 Tage)"
     ]
    }
   },
   "ROST": {
    "name": "Ross Stores, Inc.",
    "index": "NASDAQ",
+   "sector": "Consumer Cyclical",
    "metrics": {
     "last": 234.69,
     "dd_ath": -8.0,
@@ -3915,26 +4720,35 @@
     "range_pos": 81.6,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 4.33,
-    "sma200_slope": 4.67,
+    "sma50_slope": 4.41,
+    "sma200_slope": 4.71,
     "higher_low": true,
-    "rsi14": 40.9,
+    "rsi14": 41.5,
     "rsi_min60": 32.8,
     "perf": {
-     "m1": -0.5,
-     "m3": 10.6,
-     "m6": 17.6,
-     "m12": 62.1
+     "m1": 0.5,
+     "m3": 10.5,
+     "m6": 19.9,
+     "m12": 60.7
     },
-    "rs6": -0.6,
-    "vol_ratio": 0.86
+    "rs6": 1.7,
+    "vol_ratio": 0.88
    },
    "flags": [],
    "earnings_in": 0,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "Evercore ISI Group",
+    "last_date": "2026-08-17"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 60.0,
-    "momentum": 59.3,
-    "value": 72.7
+    "momentum": 61.3,
+    "value": 74.1
    },
    "why": {
     "turnaround": [
@@ -3958,6 +4772,7 @@
   "SBUX": {
    "name": "Starbucks Corporation",
    "index": "NASDAQ",
+   "sector": "Consumer Cyclical",
    "metrics": {
     "last": 104.98,
     "dd_ath": -5.9,
@@ -3981,10 +4796,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "reit",
+    "last_firm": "BTIG",
+    "last_date": "2026-07-31"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 63.9,
     "momentum": 65.7,
-    "value": 48.1
+    "value": 37.6
    },
    "why": {
     "turnaround": [
@@ -4001,7 +4825,6 @@
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "PEG 1.31",
      "positiver Free Cashflow"
     ]
    }
@@ -4009,6 +4832,7 @@
   "SNPS": {
    "name": "Synopsys, Inc.",
    "index": "NASDAQ",
+   "sector": "Technology",
    "metrics": {
     "last": 401.24,
     "dd_ath": -37.8,
@@ -4032,10 +4856,19 @@
    },
    "flags": [],
    "earnings_in": 6,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "Morgan Stanley",
+    "last_date": "2026-08-19"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 43.5,
     "momentum": 0.0,
-    "value": 61.6
+    "value": 62.8
    },
    "why": {
     "turnaround": [
@@ -4053,6 +4886,7 @@
   "TEAM": {
    "name": "Atlassian Corporation",
    "index": "NASDAQ",
+   "sector": "Technology",
    "metrics": {
     "last": 174.23,
     "dd_ath": -62.0,
@@ -4076,10 +4910,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "Citigroup",
+    "last_date": "2026-08-10"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 68.4,
     "momentum": 63.0,
-    "value": 47.2
+    "value": 47.3
    },
    "why": {
     "turnaround": [
@@ -4102,6 +4945,7 @@
   "TMUS": {
    "name": "T-Mobile US, Inc.",
    "index": "NASDAQ",
+   "sector": "Communication Services",
    "metrics": {
     "last": 182.36,
     "dd_ath": -31.6,
@@ -4127,10 +4971,19 @@
     "200-Tage-Linie faellt steil"
    ],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 1,
+    "net_30d": -1,
+    "last_action": "down",
+    "last_firm": "Wolfe Research",
+    "last_date": "2026-08-14"
+   },
+   "revision_note": "Analysten ↓1 in 30T (Wolfe Research, 2026-08-14)",
    "scores": {
     "turnaround": 82.0,
     "momentum": 2.3,
-    "value": 72.0
+    "value": 56.3
    },
    "why": {
     "turnaround": [
@@ -4142,14 +4995,15 @@
     "momentum": [],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "PEG 0.84",
-     "positiver Free Cashflow"
+     "positiver Free Cashflow",
+     "Analysten zuletzt netto 1x herabgestuft (30 Tage)"
     ]
    }
   },
   "TSLA": {
    "name": "Tesla, Inc.",
    "index": "NASDAQ",
+   "sector": "Consumer Cyclical",
    "metrics": {
     "last": 351.12,
     "dd_ath": -28.3,
@@ -4175,6 +5029,15 @@
     "200-Tage-Linie faellt steil"
    ],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "reit",
+    "last_firm": "GLJ Research",
+    "last_date": "2026-08-18"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 43.9,
     "momentum": 2.0,
@@ -4196,6 +5059,7 @@
   "TTD": {
    "name": "The Trade Desk, Inc.",
    "index": "NASDAQ",
+   "sector": "Communication Services",
    "metrics": {
     "last": 13.54,
     "dd_ath": -90.3,
@@ -4222,24 +5086,34 @@
     "mehr als 80% unter ATH"
    ],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 8,
+    "net_30d": -8,
+    "last_action": "down",
+    "last_firm": "DA Davidson",
+    "last_date": "2026-08-10"
+   },
+   "revision_note": "Analysten ↓8 in 30T (DA Davidson, 2026-08-10)",
    "scores": {
     "turnaround": 1.4,
     "momentum": 0.0,
-    "value": 73.2
+    "value": 58.2
    },
    "why": {
     "turnaround": [],
     "momentum": [],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "PEG 1.20",
-     "positiver Free Cashflow"
+     "positiver Free Cashflow",
+     "Analysten zuletzt netto 8x herabgestuft (30 Tage)"
     ]
    }
   },
   "TTWO": {
-   "name": "Take-Two Interactive Software, ",
+   "name": "Take-Two Interactive Software,",
    "index": "NASDAQ",
+   "sector": "Communication Services",
    "metrics": {
     "last": 237.04,
     "dd_ath": -9.6,
@@ -4263,10 +5137,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "Roth Capital",
+    "last_date": "2026-08-10"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 45.2,
     "momentum": 38.8,
-    "value": 29.4
+    "value": 37.9
    },
    "why": {
     "turnaround": [
@@ -4285,6 +5168,7 @@
   "TXN": {
    "name": "Texas Instruments Incorporated",
    "index": "NASDAQ",
+   "sector": "Technology",
    "metrics": {
     "last": 267.45,
     "dd_ath": -19.1,
@@ -4308,10 +5192,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "reit",
+    "last_firm": "Cantor Fitzgerald",
+    "last_date": "2026-08-17"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 34.7,
     "momentum": 32.8,
-    "value": 88.8
+    "value": 79.8
    },
    "why": {
     "turnaround": [
@@ -4322,7 +5215,6 @@
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "PEG 1.23",
      "positiver Free Cashflow",
      "Umsatzwachstum 23%"
     ]
@@ -4331,6 +5223,7 @@
   "VRSK": {
    "name": "Verisk Analytics, Inc.",
    "index": "NASDAQ",
+   "sector": "Industrials",
    "metrics": {
     "last": 186.45,
     "dd_ath": -41.4,
@@ -4338,28 +5231,37 @@
     "range_pos": 26.3,
     "above_sma50": false,
     "above_sma200": false,
-    "sma50_slope": 4.38,
-    "sma200_slope": -2.17,
+    "sma50_slope": 4.75,
+    "sma200_slope": -2.37,
     "higher_low": true,
-    "rsi14": 48.6,
-    "rsi_min60": 37.2,
+    "rsi14": 48.9,
+    "rsi_min60": 38.2,
     "perf": {
-     "m1": -4.5,
-     "m3": 9.5,
-     "m6": 1.8,
-     "m12": -29.2
+     "m1": -7.5,
+     "m3": 19.2,
+     "m6": 4.7,
+     "m12": -28.8
     },
-    "rs6": -16.4,
+    "rs6": -13.5,
     "vol_ratio": 0.87
    },
    "flags": [
     "200-Tage-Linie faellt steil"
    ],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 1,
+    "downgrades_30d": 0,
+    "net_30d": 1,
+    "last_action": "main",
+    "last_firm": "UBS",
+    "last_date": "2026-07-30"
+   },
+   "revision_note": "Analysten ↑1 in 30T (UBS, 2026-07-30)",
    "scores": {
     "turnaround": 67.0,
     "momentum": 0.0,
-    "value": 51.3
+    "value": 51.2
    },
    "why": {
     "turnaround": [
@@ -4370,13 +5272,15 @@
     "momentum": [],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "positiver Free Cashflow"
+     "positiver Free Cashflow",
+     "Analysten zuletzt netto 1x hochgestuft (30 Tage)"
     ]
    }
   },
   "VRTX": {
    "name": "Vertex Pharmaceuticals Incorpor",
    "index": "NASDAQ",
+   "sector": "Healthcare",
    "metrics": {
     "last": 552.06,
     "dd_ath": 0.0,
@@ -4384,26 +5288,35 @@
     "range_pos": 100.0,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 5.13,
-    "sma200_slope": 1.85,
+    "sma50_slope": 5.2,
+    "sma200_slope": 1.86,
     "higher_low": true,
-    "rsi14": 71.3,
+    "rsi14": 71.1,
     "rsi_min60": 41.1,
     "perf": {
-     "m1": 14.5,
-     "m3": 27.1,
-     "m6": 17.4,
-     "m12": 41.6
+     "m1": 14.9,
+     "m3": 26.5,
+     "m6": 15.7,
+     "m12": 40.5
     },
-    "rs6": -0.8,
-    "vol_ratio": 1.2
+    "rs6": -2.5,
+    "vol_ratio": 1.16
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "Truist Securities",
+    "last_date": "2026-08-05"
+   },
+   "revision_note": null,
    "scores": {
-    "turnaround": 56.6,
-    "momentum": 71.7,
-    "value": 83.6
+    "turnaround": 55.7,
+    "momentum": 69.2,
+    "value": 79.1
    },
    "why": {
     "turnaround": [
@@ -4424,8 +5337,9 @@
    }
   },
   "WBD": {
-   "name": "Warner Bros. Discovery, Inc. - ",
+   "name": "Warner Bros. Discovery, Inc. -",
    "index": "NASDAQ",
+   "sector": "Communication Services",
    "metrics": {
     "last": 28.53,
     "dd_ath": -63.1,
@@ -4449,10 +5363,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 1,
+    "net_30d": -1,
+    "last_action": "down",
+    "last_firm": "Seaport Global",
+    "last_date": "2026-07-27"
+   },
+   "revision_note": "Analysten ↓1 in 30T (Seaport Global, 2026-07-27)",
    "scores": {
     "turnaround": 34.9,
     "momentum": 37.3,
-    "value": 26.6
+    "value": 29.1
    },
    "why": {
     "turnaround": [
@@ -4463,13 +5386,15 @@
      "200-Tage-Linie steigt"
     ],
     "value": [
-     "positiver Free Cashflow"
+     "positiver Free Cashflow",
+     "Analysten zuletzt netto 1x herabgestuft (30 Tage)"
     ]
    }
   },
   "WDAY": {
    "name": "Workday, Inc.",
    "index": "NASDAQ",
+   "sector": "Technology",
    "metrics": {
     "last": 198.42,
     "dd_ath": -35.4,
@@ -4493,10 +5418,19 @@
    },
    "flags": [],
    "earnings_in": 7,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 2,
+    "net_30d": -2,
+    "last_action": "main",
+    "last_firm": "B of A Securities",
+    "last_date": "2026-08-19"
+   },
+   "revision_note": "Analysten ↓2 in 30T (B of A Securities, 2026-08-19)",
    "scores": {
     "turnaround": 93.8,
     "momentum": 49.6,
-    "value": 85.1
+    "value": 66.8
    },
    "why": {
     "turnaround": [
@@ -4512,15 +5446,16 @@
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "PEG 0.78",
      "positiver Free Cashflow",
-     "Umsatzwachstum 14%"
+     "Umsatzwachstum 14%",
+     "Analysten zuletzt netto 2x herabgestuft (30 Tage)"
     ]
    }
   },
   "XEL": {
    "name": "Xcel Energy Inc.",
    "index": "NASDAQ",
+   "sector": "Utilities",
    "metrics": {
     "last": 79.41,
     "dd_ath": -3.9,
@@ -4528,28 +5463,37 @@
     "range_pos": 75.0,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 0.08,
-    "sma200_slope": -0.04,
+    "sma50_slope": 0.04,
+    "sma200_slope": -0.03,
     "higher_low": true,
     "rsi14": 53.6,
     "rsi_min60": 36.0,
     "perf": {
      "m1": 0.9,
-     "m3": 0.3,
-     "m6": 1.2,
-     "m12": 13.4
+     "m3": 2.4,
+     "m6": -0.2,
+     "m12": 13.8
     },
-    "rs6": -17.0,
-    "vol_ratio": 0.86
+    "rs6": -18.4,
+    "vol_ratio": 0.88
    },
    "flags": [
     "fallender Umsatz bei hoher Verschuldung"
    ],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "Truist Securities",
+    "last_date": "2026-08-13"
+   },
+   "revision_note": null,
    "scores": {
-    "turnaround": 44.7,
+    "turnaround": 44.6,
     "momentum": 47.9,
-    "value": 39.3
+    "value": 38.0
    },
    "why": {
     "turnaround": [
@@ -4568,6 +5512,7 @@
   "ZS": {
    "name": "Zscaler, Inc.",
    "index": "NASDAQ",
+   "sector": "Technology",
    "metrics": {
     "last": 184.6,
     "dd_ath": -49.9,
@@ -4591,10 +5536,19 @@
    },
    "flags": [],
    "earnings_in": 14,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "Mizuho",
+    "last_date": "2026-08-19"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 79.5,
     "momentum": 20.0,
-    "value": 47.0
+    "value": 47.6
    },
    "why": {
     "turnaround": [
@@ -4615,6 +5569,7 @@
   "AXP": {
    "name": "American Express Company",
    "index": "DOW",
+   "sector": "Financial Services",
    "metrics": {
     "last": 339.9,
     "dd_ath": -11.0,
@@ -4622,26 +5577,35 @@
     "range_pos": 54.1,
     "above_sma50": false,
     "above_sma200": true,
-    "sma50_slope": 3.51,
-    "sma200_slope": 0.05,
+    "sma50_slope": 3.5,
+    "sma200_slope": 0.09,
     "higher_low": true,
-    "rsi14": 48.7,
+    "rsi14": 48.8,
     "rsi_min60": 34.7,
     "perf": {
-     "m1": -3.1,
-     "m3": 10.2,
-     "m6": -1.3,
-     "m12": 11.9
+     "m1": -3.4,
+     "m3": 9.2,
+     "m6": -0.8,
+     "m12": 12.5
     },
-    "rs6": -8.9,
+    "rs6": -8.4,
     "vol_ratio": 0.94
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "Piper Sandler",
+    "last_date": "2026-08-12"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 51.0,
-    "momentum": 24.5,
-    "value": 65.3
+    "momentum": 24.6,
+    "value": 59.1
    },
    "why": {
     "turnaround": [
@@ -4661,6 +5625,7 @@
   "BA": {
    "name": "Boeing Company (The)",
    "index": "DOW",
+   "sector": "Industrials",
    "metrics": {
     "last": 222.2,
     "dd_ath": -48.4,
@@ -4684,10 +5649,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 2,
+    "downgrades_30d": 0,
+    "net_30d": 2,
+    "last_action": "up",
+    "last_firm": "Argus Research",
+    "last_date": "2026-08-11"
+   },
+   "revision_note": "Analysten ↑2 in 30T (Argus Research, 2026-08-11)",
    "scores": {
     "turnaround": 58.8,
     "momentum": 25.9,
-    "value": 54.3
+    "value": 59.3
    },
    "why": {
     "turnaround": [
@@ -4699,13 +5673,15 @@
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "positiver Free Cashflow"
+     "positiver Free Cashflow",
+     "Analysten zuletzt netto 2x hochgestuft (30 Tage)"
     ]
    }
   },
   "CAT": {
    "name": "Caterpillar, Inc.",
    "index": "DOW",
+   "sector": "Industrials",
    "metrics": {
     "last": 816.15,
     "dd_ath": -23.2,
@@ -4729,10 +5705,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": null,
+    "last_firm": null,
+    "last_date": null
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 41.5,
     "momentum": 25.9,
-    "value": 72.5
+    "value": 69.6
    },
    "why": {
     "turnaround": [
@@ -4751,6 +5736,7 @@
   "CRM": {
    "name": "Salesforce, Inc.",
    "index": "DOW",
+   "sector": "Technology",
    "metrics": {
     "last": 206.09,
     "dd_ath": -43.3,
@@ -4774,10 +5760,19 @@
    },
    "flags": [],
    "earnings_in": 6,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 1,
+    "net_30d": -1,
+    "last_action": "main",
+    "last_firm": "Citigroup",
+    "last_date": "2026-08-18"
+   },
+   "revision_note": "Analysten ↓1 in 30T (Citigroup, 2026-08-18)",
    "scores": {
     "turnaround": 88.9,
     "momentum": 29.3,
-    "value": 90.2
+    "value": 74.2
    },
    "why": {
     "turnaround": [
@@ -4792,15 +5787,16 @@
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "PEG 0.81",
      "positiver Free Cashflow",
-     "Umsatzwachstum 13%"
+     "Umsatzwachstum 13%",
+     "Analysten zuletzt netto 1x herabgestuft (30 Tage)"
     ]
    }
   },
   "CVX": {
    "name": "Chevron Corporation",
    "index": "DOW",
+   "sector": "Energy",
    "metrics": {
     "last": 205.76,
     "dd_ath": -0.8,
@@ -4824,10 +5820,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "Morgan Stanley",
+    "last_date": "2026-08-19"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 45.5,
     "momentum": 71.1,
-    "value": 89.1
+    "value": 75.8
    },
    "why": {
     "turnaround": [
@@ -4842,7 +5847,6 @@
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "PEG 0.77",
      "positiver Free Cashflow",
      "Umsatzwachstum 54%"
     ]
@@ -4851,6 +5855,7 @@
   "DIS": {
    "name": "Walt Disney Company (The)",
    "index": "DOW",
+   "sector": "Communication Services",
    "metrics": {
     "last": 106.93,
     "dd_ath": -45.4,
@@ -4874,10 +5879,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "Wells Fargo",
+    "last_date": "2026-08-06"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 56.5,
     "momentum": 24.9,
-    "value": 63.9
+    "value": 65.5
    },
    "why": {
     "turnaround": [
@@ -4896,6 +5910,7 @@
   "GS": {
    "name": "Goldman Sachs Group, Inc. (The)",
    "index": "DOW",
+   "sector": "Financial Services",
    "metrics": {
     "last": 1021.65,
     "dd_ath": -11.3,
@@ -4919,10 +5934,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 1,
+    "downgrades_30d": 0,
+    "net_30d": 1,
+    "last_action": "main",
+    "last_firm": "UBS",
+    "last_date": "2026-08-03"
+   },
+   "revision_note": "Analysten ↑1 in 30T (UBS, 2026-08-03)",
    "scores": {
     "turnaround": 35.2,
     "momentum": 41.5,
-    "value": 66.5
+    "value": 61.6
    },
    "why": {
     "turnaround": [
@@ -4934,13 +5958,15 @@
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "Umsatzwachstum 42%"
+     "Umsatzwachstum 42%",
+     "Analysten zuletzt netto 1x hochgestuft (30 Tage)"
     ]
    }
   },
   "HD": {
    "name": "Home Depot, Inc. (The)",
    "index": "DOW",
+   "sector": "Consumer Cyclical",
    "metrics": {
     "last": 344.3,
     "dd_ath": -17.0,
@@ -4964,10 +5990,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "Mizuho",
+    "last_date": "2026-08-19"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 63.6,
     "momentum": 32.4,
-    "value": 59.2
+    "value": 58.3
    },
    "why": {
     "turnaround": [
@@ -4987,6 +6022,7 @@
   "IBM": {
    "name": "International Business Machines",
    "index": "DOW",
+   "sector": "Technology",
    "metrics": {
     "last": 237.16,
     "dd_ath": -27.4,
@@ -5012,10 +6048,19 @@
     "200-Tage-Linie faellt steil"
    ],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 1,
+    "downgrades_30d": 0,
+    "net_30d": 1,
+    "last_action": "main",
+    "last_firm": "Citigroup",
+    "last_date": "2026-07-24"
+   },
+   "revision_note": "Analysten ↑1 in 30T (Citigroup, 2026-07-24)",
    "scores": {
     "turnaround": 40.7,
     "momentum": 0.0,
-    "value": 54.7
+    "value": 58.0
    },
    "why": {
     "turnaround": [
@@ -5025,13 +6070,15 @@
     "momentum": [],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "positiver Free Cashflow"
+     "positiver Free Cashflow",
+     "Analysten zuletzt netto 1x hochgestuft (30 Tage)"
     ]
    }
   },
   "JNJ": {
    "name": "Johnson & Johnson",
    "index": "DOW",
+   "sector": "Healthcare",
    "metrics": {
     "last": 273.41,
     "dd_ath": 0.0,
@@ -5055,10 +6102,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "Guggenheim",
+    "last_date": "2026-08-06"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 52.8,
     "momentum": 74.7,
-    "value": 70.5
+    "value": 74.4
    },
    "why": {
     "turnaround": [
@@ -5080,6 +6136,7 @@
   "JPM": {
    "name": "JP Morgan Chase & Co.",
    "index": "DOW",
+   "sector": "Financial Services",
    "metrics": {
     "last": 357.26,
     "dd_ath": -2.2,
@@ -5103,10 +6160,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "Wells Fargo",
+    "last_date": "2026-08-14"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 53.0,
     "momentum": 72.5,
-    "value": 64.1
+    "value": 59.3
    },
    "why": {
     "turnaround": [
@@ -5127,6 +6193,7 @@
   "KO": {
    "name": "Coca-Cola Company (The)",
    "index": "DOW",
+   "sector": "Consumer Defensive",
    "metrics": {
     "last": 90.35,
     "dd_ath": 0.0,
@@ -5150,10 +6217,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "Argus Research",
+    "last_date": "2026-07-30"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 52.0,
     "momentum": 74.1,
-    "value": 67.0
+    "value": 69.2
    },
    "why": {
     "turnaround": [
@@ -5175,6 +6251,7 @@
   "MCD": {
    "name": "McDonald's Corporation",
    "index": "DOW",
+   "sector": "Consumer Cyclical",
    "metrics": {
     "last": 267.45,
     "dd_ath": -20.6,
@@ -5198,10 +6275,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "Guggenheim",
+    "last_date": "2026-08-06"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 28.0,
     "momentum": 7.9,
-    "value": 47.2
+    "value": 49.1
    },
    "why": {
     "turnaround": [
@@ -5217,6 +6303,7 @@
   "MMM": {
    "name": "3M Company",
    "index": "DOW",
+   "sector": "Industrials",
    "metrics": {
     "last": 180.66,
     "dd_ath": -1.7,
@@ -5240,10 +6327,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "Mizuho",
+    "last_date": "2026-07-23"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 57.5,
     "momentum": 71.6,
-    "value": 63.1
+    "value": 59.2
    },
    "why": {
     "turnaround": [
@@ -5264,6 +6360,7 @@
   "MRK": {
    "name": "Merck & Company, Inc.",
    "index": "DOW",
+   "sector": "Healthcare",
    "metrics": {
     "last": 152.2,
     "dd_ath": 0.0,
@@ -5287,10 +6384,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 1,
+    "downgrades_30d": 0,
+    "net_30d": 1,
+    "last_action": "up",
+    "last_firm": "Daiwa Capital",
+    "last_date": "2026-08-12"
+   },
+   "revision_note": "Analysten ↑1 in 30T (Daiwa Capital, 2026-08-12)",
    "scores": {
     "turnaround": 47.0,
     "momentum": 87.5,
-    "value": 53.3
+    "value": 57.5
    },
    "why": {
     "turnaround": [
@@ -5306,13 +6412,15 @@
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "positiver Free Cashflow"
+     "positiver Free Cashflow",
+     "Analysten zuletzt netto 1x hochgestuft (30 Tage)"
     ]
    }
   },
   "NKE": {
    "name": "Nike, Inc.",
    "index": "DOW",
+   "sector": "Consumer Cyclical",
    "metrics": {
     "last": 41.05,
     "dd_ath": -74.9,
@@ -5338,23 +6446,34 @@
     "200-Tage-Linie faellt steil"
    ],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 1,
+    "net_30d": -1,
+    "last_action": "down",
+    "last_firm": "JP Morgan",
+    "last_date": "2026-08-04"
+   },
+   "revision_note": "Analysten ↓1 in 30T (JP Morgan, 2026-08-04)",
    "scores": {
     "turnaround": 11.2,
     "momentum": 4.6,
-    "value": 62.7
+    "value": 53.3
    },
    "why": {
     "turnaround": [],
     "momentum": [],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "positiver Free Cashflow"
+     "positiver Free Cashflow",
+     "Analysten zuletzt netto 1x herabgestuft (30 Tage)"
     ]
    }
   },
   "PG": {
    "name": "Procter & Gamble Company (The)",
    "index": "DOW",
+   "sector": "Consumer Defensive",
    "metrics": {
     "last": 144.38,
     "dd_ath": -15.7,
@@ -5378,10 +6497,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 2,
+    "net_30d": -2,
+    "last_action": "down",
+    "last_firm": "Argus Research",
+    "last_date": "2026-08-07"
+   },
+   "revision_note": "Analysten ↓2 in 30T (Argus Research, 2026-08-07)",
    "scores": {
     "turnaround": 39.4,
     "momentum": 11.5,
-    "value": 62.4
+    "value": 59.4
    },
    "why": {
     "turnaround": [
@@ -5390,13 +6518,15 @@
     "momentum": [],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "positiver Free Cashflow"
+     "positiver Free Cashflow",
+     "Analysten zuletzt netto 2x herabgestuft (30 Tage)"
     ]
    }
   },
   "SHW": {
    "name": "Sherwin-Williams Company (The)",
    "index": "DOW",
+   "sector": "Basic Materials",
    "metrics": {
     "last": 353.59,
     "dd_ath": -10.3,
@@ -5420,10 +6550,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 1,
+    "downgrades_30d": 0,
+    "net_30d": 1,
+    "last_action": "init",
+    "last_firm": "Guggenheim",
+    "last_date": "2026-08-03"
+   },
+   "revision_note": "Analysten ↑1 in 30T (Guggenheim, 2026-08-03)",
    "scores": {
     "turnaround": 68.8,
     "momentum": 52.6,
-    "value": 58.0
+    "value": 62.5
    },
    "why": {
     "turnaround": [
@@ -5439,13 +6578,15 @@
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "positiver Free Cashflow"
+     "positiver Free Cashflow",
+     "Analysten zuletzt netto 1x hochgestuft (30 Tage)"
     ]
    }
   },
   "TRV": {
    "name": "The Travelers Companies, Inc.",
    "index": "DOW",
+   "sector": "Financial Services",
    "metrics": {
     "last": 362.22,
     "dd_ath": -8.8,
@@ -5453,26 +6594,35 @@
     "range_pos": 74.8,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 10.1,
-    "sma200_slope": 3.69,
+    "sma50_slope": 10.14,
+    "sma200_slope": 3.68,
     "higher_low": true,
-    "rsi14": 46.7,
+    "rsi14": 47.3,
     "rsi_min60": 33.3,
     "perf": {
-     "m1": -2.0,
-     "m3": 19.1,
-     "m6": 22.3,
-     "m12": 38.9
+     "m1": -1.7,
+     "m3": 18.9,
+     "m6": 22.0,
+     "m12": 38.6
     },
-    "rs6": 14.7,
+    "rs6": 14.3,
     "vol_ratio": 1.19
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 1,
+    "net_30d": -1,
+    "last_action": "main",
+    "last_firm": "Mizuho",
+    "last_date": "2026-07-24"
+   },
+   "revision_note": "Analysten ↓1 in 30T (Mizuho, 2026-07-24)",
    "scores": {
     "turnaround": 67.3,
-    "momentum": 76.5,
-    "value": 57.7
+    "momentum": 76.1,
+    "value": 60.3
    },
    "why": {
     "turnaround": [
@@ -5484,18 +6634,20 @@
     ],
     "momentum": [
      "nur 9% unter ATH",
-     "relative Staerke +15% vs. Index",
+     "relative Staerke +14% vs. Index",
      "ueber 50- und 200-Tage-Linie",
      "200-Tage-Linie steigt"
     ],
     "value": [
-     "positiver Free Cashflow"
+     "positiver Free Cashflow",
+     "Analysten zuletzt netto 1x herabgestuft (30 Tage)"
     ]
    }
   },
   "UNH": {
    "name": "UnitedHealth Group Incorporated",
    "index": "DOW",
+   "sector": "Healthcare",
    "metrics": {
     "last": 388.61,
     "dd_ath": -35.2,
@@ -5519,10 +6671,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "JP Morgan",
+    "last_date": "2026-07-21"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 66.1,
     "momentum": 51.6,
-    "value": 65.4
+    "value": 56.1
    },
    "why": {
     "turnaround": [
@@ -5536,7 +6697,6 @@
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "PEG 1.24",
      "positiver Free Cashflow"
     ]
    }
@@ -5544,6 +6704,7 @@
   "V": {
    "name": "Visa Inc.",
    "index": "DOW",
+   "sector": "Financial Services",
    "metrics": {
     "last": 365.54,
     "dd_ath": -1.1,
@@ -5567,10 +6728,19 @@
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "Truist Securities",
+    "last_date": "2026-08-05"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 55.2,
     "momentum": 70.2,
-    "value": 85.2
+    "value": 80.5
    },
    "why": {
     "turnaround": [
@@ -5592,6 +6762,7 @@
   "VZ": {
    "name": "Verizon Communications Inc.",
    "index": "DOW",
+   "sector": "Communication Services",
    "metrics": {
     "last": 49.36,
     "dd_ath": -0.8,
@@ -5617,10 +6788,19 @@
     "fallender Umsatz bei hoher Verschuldung"
    ],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "TD Cowen",
+    "last_date": "2026-07-27"
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 54.2,
     "momentum": 63.1,
-    "value": 70.4
+    "value": 57.2
    },
    "why": {
     "turnaround": [
@@ -5634,7 +6814,6 @@
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "PEG 0.92",
      "positiver Free Cashflow"
     ]
    }
@@ -5642,6 +6821,7 @@
   "WMT": {
    "name": "Walmart Inc.",
    "index": "DOW",
+   "sector": "Consumer Defensive",
    "metrics": {
     "last": 114.3,
     "dd_ath": -14.8,
@@ -5665,10 +6845,19 @@
    },
    "flags": [],
    "earnings_in": 0,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 1,
+    "net_30d": -1,
+    "last_action": "main",
+    "last_firm": "DA Davidson",
+    "last_date": "2026-08-17"
+   },
+   "revision_note": "Analysten ↓1 in 30T (DA Davidson, 2026-08-17)",
    "scores": {
     "turnaround": 35.2,
     "momentum": 13.2,
-    "value": 56.3
+    "value": 53.8
    },
    "why": {
     "turnaround": [
@@ -5678,40 +6867,51 @@
     "momentum": [],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "positiver Free Cashflow"
+     "positiver Free Cashflow",
+     "Analysten zuletzt netto 1x herabgestuft (30 Tage)"
     ]
    }
   },
   "ADS.DE": {
-   "name": "adidas AG                     N",
+   "name": "adidas AG",
    "index": "DAX",
+   "sector": "Consumer Cyclical",
    "metrics": {
-    "last": 154.4,
-    "dd_ath": -51.6,
+    "last": 152.5,
+    "dd_ath": -52.2,
     "days_since_ath": 1842,
-    "range_pos": 41.3,
+    "range_pos": 38.3,
     "above_sma50": false,
     "above_sma200": false,
-    "sma50_slope": 2.02,
-    "sma200_slope": -1.13,
+    "sma50_slope": 2.31,
+    "sma200_slope": -1.2,
     "higher_low": true,
-    "rsi14": 34.7,
-    "rsi_min60": 31.7,
+    "rsi14": 33.3,
+    "rsi_min60": 31.9,
     "perf": {
-     "m1": -14.9,
+     "m1": -15.8,
      "m3": 2.9,
-     "m6": 0.2,
-     "m12": -7.1
+     "m6": -0.7,
+     "m12": -6.9
     },
-    "rs6": -2.7,
-    "vol_ratio": 0.71
+    "rs6": -4.4,
+    "vol_ratio": 0.76
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": null,
+    "last_firm": null,
+    "last_date": null
+   },
+   "revision_note": null,
    "scores": {
-    "turnaround": 59.7,
-    "momentum": 1.9,
-    "value": 83.0
+    "turnaround": 59.8,
+    "momentum": 0.5,
+    "value": 70.6
    },
    "why": {
     "turnaround": [
@@ -5722,42 +6922,51 @@
     "momentum": [],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "PEG 0.93",
      "positiver Free Cashflow",
      "Umsatzwachstum 13%"
     ]
    }
   },
   "AIR.DE": {
-   "name": "Airbus SE                     A",
+   "name": "Airbus SE",
    "index": "DAX",
+   "sector": "Industrials",
    "metrics": {
-    "last": 207.0,
-    "dd_ath": -4.3,
+    "last": 206.75,
+    "dd_ath": -4.4,
     "days_since_ath": 219,
-    "range_pos": 84.6,
+    "range_pos": 84.1,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 8.13,
-    "sma200_slope": 0.5,
+    "sma50_slope": 8.18,
+    "sma200_slope": 0.53,
     "higher_low": true,
-    "rsi14": 49.7,
+    "rsi14": 49.3,
     "rsi_min60": 46.0,
     "perf": {
-     "m1": 8.0,
-     "m3": 24.7,
-     "m6": 5.1,
-     "m12": 14.7
+     "m1": 6.4,
+     "m3": 19.2,
+     "m6": 7.2,
+     "m12": 14.4
     },
-    "rs6": 2.3,
-    "vol_ratio": 1.0
+    "rs6": 3.5,
+    "vol_ratio": 0.99
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": null,
+    "last_firm": null,
+    "last_date": null
+   },
+   "revision_note": null,
    "scores": {
-    "turnaround": 54.5,
-    "momentum": 60.9,
-    "value": 62.6
+    "turnaround": 54.2,
+    "momentum": 61.4,
+    "value": 62.0
    },
    "why": {
     "turnaround": [
@@ -5776,46 +6985,55 @@
    }
   },
   "ALV.DE": {
-   "name": "Allianz SE                    v",
+   "name": "Allianz SE v",
    "index": "DAX",
+   "sector": "Financial Services",
    "metrics": {
-    "last": 436.8,
-    "dd_ath": -1.3,
+    "last": 436.05,
+    "dd_ath": -1.5,
     "days_since_ath": 6,
-    "range_pos": 94.8,
+    "range_pos": 94.1,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 5.49,
-    "sma200_slope": 2.48,
+    "sma50_slope": 5.55,
+    "sma200_slope": 2.47,
     "higher_low": true,
-    "rsi14": 57.4,
+    "rsi14": 56.6,
     "rsi_min60": 42.7,
     "perf": {
-     "m1": 3.3,
-     "m3": 13.2,
-     "m6": 22.7,
-     "m12": 22.0
+     "m1": 3.1,
+     "m3": 13.1,
+     "m6": 22.5,
+     "m12": 22.1
     },
-    "rs6": 19.8,
-    "vol_ratio": 1.15
+    "rs6": 18.8,
+    "vol_ratio": 1.13
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": null,
+    "last_firm": null,
+    "last_date": null
+   },
+   "revision_note": null,
    "scores": {
-    "turnaround": 58.2,
-    "momentum": 89.0,
-    "value": 75.7
+    "turnaround": 57.8,
+    "momentum": 87.6,
+    "value": 77.2
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
-     "50-Tage-Linie dreht nach oben",
-     "Anstiege auf hoeherem Volumen"
+     "50-Tage-Linie dreht nach oben"
     ],
     "momentum": [
-     "nur 1% unter ATH",
-     "relative Staerke +20% vs. Index",
+     "nur 2% unter ATH",
+     "relative Staerke +19% vs. Index",
      "ueber 50- und 200-Tage-Linie",
      "200-Tage-Linie steigt"
     ],
@@ -5827,35 +7045,45 @@
    }
   },
   "BAS.DE": {
-   "name": "BASF SE                       N",
+   "name": "BASF SE",
    "index": "DAX",
+   "sector": "Basic Materials",
    "metrics": {
-    "last": 51.05,
-    "dd_ath": -14.0,
+    "last": 51.15,
+    "dd_ath": -13.8,
     "days_since_ath": 3135,
-    "range_pos": 79.1,
+    "range_pos": 79.8,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": -0.74,
-    "sma200_slope": 1.94,
+    "sma50_slope": -0.13,
+    "sma200_slope": 2.01,
     "higher_low": true,
-    "rsi14": 56.8,
+    "rsi14": 55.5,
     "rsi_min60": 30.2,
     "perf": {
-     "m1": 6.2,
-     "m3": -1.6,
-     "m6": 6.7,
-     "m12": 11.9
+     "m1": 4.5,
+     "m3": -0.4,
+     "m6": 9.1,
+     "m12": 12.3
     },
-    "rs6": 3.8,
-    "vol_ratio": 0.92
+    "rs6": 5.4,
+    "vol_ratio": 0.91
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": null,
+    "last_firm": null,
+    "last_date": null
+   },
+   "revision_note": null,
    "scores": {
-    "turnaround": 51.1,
-    "momentum": 51.1,
-    "value": 82.8
+    "turnaround": 52.4,
+    "momentum": 52.8,
+    "value": 69.6
    },
    "why": {
     "turnaround": [
@@ -5868,42 +7096,51 @@
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "PEG 0.66",
      "positiver Free Cashflow",
      "Umsatzwachstum 16%"
     ]
    }
   },
   "BAYN.DE": {
-   "name": "Bayer AG                      N",
+   "name": "Bayer AG",
    "index": "DAX",
+   "sector": "Healthcare",
    "metrics": {
-    "last": 48.44,
-    "dd_ath": -49.1,
+    "last": 48.27,
+    "dd_ath": -49.3,
     "days_since_ath": 3349,
-    "range_pos": 82.0,
+    "range_pos": 81.4,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 10.46,
-    "sma200_slope": 5.42,
+    "sma50_slope": 10.79,
+    "sma200_slope": 5.49,
     "higher_low": true,
-    "rsi14": 54.1,
+    "rsi14": 52.5,
     "rsi_min60": 28.3,
     "perf": {
-     "m1": 2.4,
-     "m3": 24.5,
-     "m6": 6.0,
-     "m12": 72.9
+     "m1": 2.8,
+     "m3": 25.7,
+     "m6": 10.8,
+     "m12": 72.1
     },
-    "rs6": 3.2,
-    "vol_ratio": 1.16
+    "rs6": 7.1,
+    "vol_ratio": 1.13
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": null,
+    "last_firm": null,
+    "last_date": null
+   },
+   "revision_note": null,
    "scores": {
-    "turnaround": 91.5,
-    "momentum": 51.6,
-    "value": 34.3
+    "turnaround": 90.8,
+    "momentum": 53.8,
+    "value": 40.5
    },
    "why": {
     "turnaround": [
@@ -5911,8 +7148,7 @@
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
      "50-Tage-Linie dreht nach oben",
-     "RSI erholt sich aus dem ueberverkauften Bereich",
-     "Anstiege auf hoeherem Volumen"
+     "RSI erholt sich aus dem ueberverkauften Bereich"
     ],
     "momentum": [
      "ueber 50- und 200-Tage-Linie",
@@ -5924,35 +7160,45 @@
    }
   },
   "BEI.DE": {
-   "name": "BEIERSDORF AG                 I",
+   "name": "BEIERSDORF AG",
    "index": "DAX",
+   "sector": "Consumer Defensive",
    "metrics": {
-    "last": 78.1,
+    "last": 78.08,
     "dd_ath": -45.8,
     "days_since_ath": 832,
-    "range_pos": 26.4,
+    "range_pos": 26.3,
     "above_sma50": true,
     "above_sma200": false,
-    "sma50_slope": 4.83,
+    "sma50_slope": 4.85,
     "sma200_slope": -1.46,
     "higher_low": true,
-    "rsi14": 49.0,
+    "rsi14": 48.6,
     "rsi_min60": 32.6,
     "perf": {
-     "m1": -1.1,
-     "m3": 7.7,
-     "m6": -25.5,
-     "m12": -23.1
+     "m1": -0.8,
+     "m3": 7.4,
+     "m6": -25.7,
+     "m12": -21.4
     },
-    "rs6": -28.3,
+    "rs6": -29.4,
     "vol_ratio": 0.9
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": null,
+    "last_firm": null,
+    "last_date": null
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 90.0,
     "momentum": 0.0,
-    "value": 36.2
+    "value": 43.2
    },
    "why": {
     "turnaround": [
@@ -5969,37 +7215,47 @@
    }
   },
   "BMW.DE": {
-   "name": "BAYERISCHE MOTOREN WERKE AG   S",
+   "name": "BAYERISCHE MOTOREN WERKE AG",
    "index": "DAX",
+   "sector": "Consumer Cyclical",
    "metrics": {
-    "last": 58.6,
-    "dd_ath": -39.5,
+    "last": 58.34,
+    "dd_ath": -39.7,
     "days_since_ath": 864,
-    "range_pos": 4.8,
+    "range_pos": 4.0,
     "above_sma50": false,
     "above_sma200": false,
-    "sma50_slope": -8.97,
-    "sma200_slope": -2.35,
+    "sma50_slope": -9.14,
+    "sma200_slope": -2.39,
     "higher_low": false,
-    "rsi14": 45.5,
+    "rsi14": 43.9,
     "rsi_min60": 19.3,
     "perf": {
-     "m1": 0.4,
-     "m3": -21.2,
-     "m6": -32.5,
-     "m12": -32.2
+     "m1": -0.3,
+     "m3": -21.5,
+     "m6": -31.9,
+     "m12": -30.9
     },
-    "rs6": -35.3,
-    "vol_ratio": 0.97
+    "rs6": -35.6,
+    "vol_ratio": 0.96
    },
    "flags": [
     "200-Tage-Linie faellt steil"
    ],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": null,
+    "last_firm": null,
+    "last_date": null
+   },
+   "revision_note": null,
    "scores": {
-    "turnaround": 41.8,
-    "momentum": 2.0,
-    "value": 48.3
+    "turnaround": 41.5,
+    "momentum": 1.7,
+    "value": 38.3
    },
    "why": {
     "turnaround": [
@@ -6008,41 +7264,50 @@
     ],
     "momentum": [],
     "value": [
-     "PEG 0.78",
      "positiver Free Cashflow"
     ]
    }
   },
   "BNR.DE": {
-   "name": "Brenntag SE                   N",
+   "name": "Brenntag SE",
    "index": "DAX",
+   "sector": "Basic Materials",
    "metrics": {
-    "last": 60.02,
-    "dd_ath": -22.7,
+    "last": 60.06,
+    "dd_ath": -22.6,
     "days_since_ath": 902,
-    "range_pos": 78.7,
+    "range_pos": 78.9,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 2.98,
-    "sma200_slope": 2.5,
+    "sma50_slope": 2.81,
+    "sma200_slope": 2.46,
     "higher_low": true,
-    "rsi14": 47.8,
+    "rsi14": 48.1,
     "rsi_min60": 32.9,
     "perf": {
-     "m1": 3.3,
-     "m3": 3.6,
-     "m6": 13.3,
-     "m12": 12.2
+     "m1": 0.9,
+     "m3": 5.5,
+     "m6": 8.0,
+     "m12": 15.5
     },
-    "rs6": 10.4,
-    "vol_ratio": 1.02
+    "rs6": 4.3,
+    "vol_ratio": 1.05
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": null,
+    "last_firm": null,
+    "last_date": null
+   },
+   "revision_note": null,
    "scores": {
-    "turnaround": 75.8,
-    "momentum": 51.2,
-    "value": 73.9
+    "turnaround": 75.9,
+    "momentum": 47.1,
+    "value": 63.5
    },
    "why": {
     "turnaround": [
@@ -6057,42 +7322,51 @@
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "PEG 1.14",
      "positiver Free Cashflow",
      "Umsatzwachstum 10%"
     ]
    }
   },
   "CBK.DE": {
-   "name": "Commerzbank AG                I",
+   "name": "Commerzbank AG",
    "index": "DAX",
+   "sector": "Financial Services",
    "metrics": {
-    "last": 38.85,
-    "dd_ath": -2.5,
+    "last": 38.69,
+    "dd_ath": -2.9,
     "days_since_ath": 7,
-    "range_pos": 90.9,
+    "range_pos": 89.5,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 2.39,
-    "sma200_slope": 2.56,
+    "sma50_slope": 2.38,
+    "sma200_slope": 2.58,
     "higher_low": true,
-    "rsi14": 52.5,
+    "rsi14": 51.2,
     "rsi_min60": 42.7,
     "perf": {
-     "m1": 5.3,
-     "m3": 8.3,
-     "m6": 17.1,
-     "m12": 8.4
+     "m1": 0.7,
+     "m3": 3.7,
+     "m6": 15.6,
+     "m12": 5.2
     },
-    "rs6": 14.2,
-    "vol_ratio": 0.92
+    "rs6": 11.9,
+    "vol_ratio": 0.71
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": null,
+    "last_firm": null,
+    "last_date": null
+   },
+   "revision_note": null,
    "scores": {
-    "turnaround": 51.0,
-    "momentum": 77.4,
-    "value": 64.5
+    "turnaround": 50.5,
+    "momentum": 74.4,
+    "value": 52.4
    },
    "why": {
     "turnaround": [
@@ -6101,50 +7375,58 @@
      "50-Tage-Linie dreht nach oben"
     ],
     "momentum": [
-     "nur 2% unter ATH",
-     "relative Staerke +14% vs. Index",
+     "nur 3% unter ATH",
      "ueber 50- und 200-Tage-Linie",
      "200-Tage-Linie steigt"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "PEG 0.99",
      "Umsatzwachstum 10%"
     ]
    }
   },
   "CON.DE": {
-   "name": "CONTINENTAL AG                I",
+   "name": "CONTINENTAL AG",
    "index": "DAX",
+   "sector": "Consumer Cyclical",
    "metrics": {
-    "last": 68.32,
-    "dd_ath": -43.6,
+    "last": 68.16,
+    "dd_ath": -43.7,
     "days_since_ath": 3145,
-    "range_pos": 68.6,
+    "range_pos": 68.0,
     "above_sma50": false,
     "above_sma200": true,
-    "sma50_slope": 0.41,
-    "sma200_slope": 1.86,
+    "sma50_slope": 0.36,
+    "sma200_slope": 1.74,
     "higher_low": true,
-    "rsi14": 43.0,
-    "rsi_min60": 39.0,
+    "rsi14": 43.3,
+    "rsi_min60": 38.5,
     "perf": {
      "m1": -4.2,
-     "m3": 3.5,
-     "m6": -3.2,
-     "m12": 23.4
+     "m3": -0.7,
+     "m6": -3.1,
+     "m12": 24.2
     },
-    "rs6": -6.0,
-    "vol_ratio": 0.98
+    "rs6": -6.8,
+    "vol_ratio": 1.01
    },
    "flags": [
     "fallender Umsatz bei hoher Verschuldung"
    ],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": null,
+    "last_firm": null,
+    "last_date": null
+   },
+   "revision_note": null,
    "scores": {
-    "turnaround": 58.2,
-    "momentum": 17.8,
-    "value": 31.2
+    "turnaround": 59.1,
+    "momentum": 18.2,
+    "value": 37.4
    },
    "why": {
     "turnaround": [
@@ -6158,35 +7440,45 @@
    }
   },
   "DTG.DE": {
-   "name": "Daimler Truck Holding AG      N",
+   "name": "Daimler Truck Holding AG",
    "index": "DAX",
+   "sector": "Industrials",
    "metrics": {
-    "last": 45.51,
-    "dd_ath": -8.2,
+    "last": 45.4,
+    "dd_ath": -8.5,
     "days_since_ath": 17,
-    "range_pos": 76.2,
+    "range_pos": 75.6,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 5.37,
+    "sma50_slope": 5.47,
     "sma200_slope": 3.45,
     "higher_low": true,
-    "rsi14": 50.0,
+    "rsi14": 49.4,
     "rsi_min60": 44.7,
     "perf": {
-     "m1": 7.1,
-     "m3": 14.6,
-     "m6": 12.4,
-     "m12": 14.5
+     "m1": 6.8,
+     "m3": 13.9,
+     "m6": 13.3,
+     "m12": 16.7
     },
-    "rs6": 9.6,
+    "rs6": 9.5,
     "vol_ratio": 0.96
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": null,
+    "last_firm": null,
+    "last_date": null
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 53.5,
-    "momentum": 66.2,
-    "value": 71.8
+    "momentum": 65.6,
+    "value": 57.7
    },
    "why": {
     "turnaround": [
@@ -6201,51 +7493,59 @@
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "PEG 0.46",
      "positiver Free Cashflow"
     ]
    }
   },
   "DBK.DE": {
-   "name": "DEUTSCHE BANK AG              N",
+   "name": "DEUTSCHE BANK AG",
    "index": "DAX",
+   "sector": "Financial Services",
    "metrics": {
-    "last": 32.61,
-    "dd_ath": -2.3,
+    "last": 32.53,
+    "dd_ath": -2.6,
     "days_since_ath": 6,
-    "range_pos": 91.8,
+    "range_pos": 90.9,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 7.01,
-    "sma200_slope": 1.21,
+    "sma50_slope": 7.09,
+    "sma200_slope": 1.22,
     "higher_low": true,
-    "rsi14": 56.0,
+    "rsi14": 54.7,
     "rsi_min60": 45.8,
     "perf": {
-     "m1": 6.4,
-     "m3": 20.4,
-     "m6": 9.0,
-     "m12": 7.2
+     "m1": 4.2,
+     "m3": 15.1,
+     "m6": 8.6,
+     "m12": 6.8
     },
-    "rs6": 6.2,
-    "vol_ratio": 1.2
+    "rs6": 4.9,
+    "vol_ratio": 1.11
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": null,
+    "last_firm": null,
+    "last_date": null
+   },
+   "revision_note": null,
    "scores": {
-    "turnaround": 59.5,
-    "momentum": 75.6,
-    "value": 55.5
+    "turnaround": 57.2,
+    "momentum": 71.6,
+    "value": 50.6
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
-     "50-Tage-Linie dreht nach oben",
-     "Anstiege auf hoeherem Volumen"
+     "50-Tage-Linie dreht nach oben"
     ],
     "momentum": [
-     "nur 2% unter ATH",
+     "nur 3% unter ATH",
      "ueber 50- und 200-Tage-Linie"
     ],
     "value": [
@@ -6254,35 +7554,45 @@
    }
   },
   "DB1.DE": {
-   "name": "DEUTSCHE BOERSE AG            N",
+   "name": "DEUTSCHE BOERSE AG",
    "index": "DAX",
+   "sector": "Financial Services",
    "metrics": {
-    "last": 277.0,
-    "dd_ath": -2.4,
+    "last": 278.1,
+    "dd_ath": -2.0,
     "days_since_ath": 472,
-    "range_pos": 97.2,
+    "range_pos": 98.6,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 3.13,
-    "sma200_slope": 2.05,
+    "sma50_slope": 3.33,
+    "sma200_slope": 2.14,
     "higher_low": true,
-    "rsi14": 64.8,
+    "rsi14": 66.4,
     "rsi_min60": 35.9,
     "perf": {
-     "m1": 8.5,
-     "m3": 7.4,
-     "m6": 29.9,
-     "m12": 10.6
+     "m1": 9.6,
+     "m3": 8.4,
+     "m6": 28.7,
+     "m12": 9.6
     },
-    "rs6": 27.1,
-    "vol_ratio": 0.96
+    "rs6": 25.0,
+    "vol_ratio": 0.92
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": null,
+    "last_firm": null,
+    "last_date": null
+   },
+   "revision_note": null,
    "scores": {
-    "turnaround": 53.5,
-    "momentum": 86.4,
-    "value": 73.3
+    "turnaround": 51.8,
+    "momentum": 85.9,
+    "value": 78.1
    },
    "why": {
     "turnaround": [
@@ -6292,7 +7602,7 @@
     ],
     "momentum": [
      "nur 2% unter ATH",
-     "relative Staerke +27% vs. Index",
+     "relative Staerke +25% vs. Index",
      "ueber 50- und 200-Tage-Linie"
     ],
     "value": [
@@ -6303,35 +7613,45 @@
    }
   },
   "DHL.DE": {
-   "name": "DEUTSCHE POST AG              N",
+   "name": "DEUTSCHE POST AG",
    "index": "DAX",
+   "sector": "Industrials",
    "metrics": {
-    "last": 55.42,
+    "last": 55.4,
     "dd_ath": -4.2,
     "days_since_ath": 21,
     "range_pos": 88.9,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 4.67,
-    "sma200_slope": 4.04,
+    "sma50_slope": 4.37,
+    "sma200_slope": 4.0,
     "higher_low": true,
-    "rsi14": 48.5,
-    "rsi_min60": 40.9,
+    "rsi14": 47.9,
+    "rsi_min60": 40.0,
     "perf": {
-     "m1": -1.4,
-     "m3": 15.7,
-     "m6": 16.4,
-     "m12": 38.3
+     "m1": -2.9,
+     "m3": 10.2,
+     "m6": 15.7,
+     "m12": 42.5
     },
-    "rs6": 13.6,
-    "vol_ratio": 0.9
+    "rs6": 11.9,
+    "vol_ratio": 0.89
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": null,
+    "last_firm": null,
+    "last_date": null
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 52.0,
-    "momentum": 77.7,
-    "value": 67.5
+    "momentum": 76.3,
+    "value": 69.1
    },
    "why": {
     "turnaround": [
@@ -6341,7 +7661,6 @@
     ],
     "momentum": [
      "nur 4% unter ATH",
-     "relative Staerke +14% vs. Index",
      "ueber 50- und 200-Tage-Linie",
      "200-Tage-Linie steigt"
     ],
@@ -6353,35 +7672,45 @@
    }
   },
   "DTE.DE": {
-   "name": "DEUTSCHE TELEKOM AG           N",
+   "name": "DEUTSCHE TELEKOM AG",
    "index": "DAX",
+   "sector": "Communication Services",
    "metrics": {
-    "last": 28.95,
-    "dd_ath": -14.2,
+    "last": 28.9,
+    "dd_ath": -14.3,
     "days_since_ath": 535,
-    "range_pos": 55.6,
+    "range_pos": 55.1,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": -0.95,
-    "sma200_slope": -0.15,
+    "sma50_slope": -0.81,
+    "sma200_slope": -0.02,
     "higher_low": true,
-    "rsi14": 59.9,
+    "rsi14": 58.4,
     "rsi_min60": 21.4,
     "perf": {
-     "m1": 6.9,
-     "m3": -0.6,
-     "m6": -7.7,
-     "m12": -4.4
+     "m1": 6.1,
+     "m3": -1.9,
+     "m6": -8.8,
+     "m12": -5.6
     },
-    "rs6": -10.5,
-    "vol_ratio": 0.78
+    "rs6": -12.5,
+    "vol_ratio": 0.81
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": null,
+    "last_firm": null,
+    "last_date": null
+   },
+   "revision_note": null,
    "scores": {
-    "turnaround": 55.0,
-    "momentum": 31.7,
-    "value": 59.0
+    "turnaround": 55.5,
+    "momentum": 31.6,
+    "value": 59.3
    },
    "why": {
     "turnaround": [
@@ -6399,76 +7728,94 @@
    }
   },
   "EOAN.DE": {
-   "name": "E.ON SE                       N",
+   "name": "E.ON SE",
    "index": "DAX",
+   "sector": "Utilities",
    "metrics": {
-    "last": 17.36,
-    "dd_ath": -11.9,
+    "last": 17.31,
+    "dd_ath": -12.2,
     "days_since_ath": 156,
-    "range_pos": 56.8,
+    "range_pos": 55.8,
     "above_sma50": false,
     "above_sma200": false,
-    "sma50_slope": 0.97,
-    "sma200_slope": 1.7,
+    "sma50_slope": 0.95,
+    "sma200_slope": 1.71,
     "higher_low": false,
-    "rsi14": 31.0,
-    "rsi_min60": 29.2,
+    "rsi14": 30.9,
+    "rsi_min60": 29.8,
     "perf": {
-     "m1": -9.8,
-     "m3": -6.2,
-     "m6": -3.8,
-     "m12": 14.0
+     "m1": -10.0,
+     "m3": -5.6,
+     "m6": -4.3,
+     "m12": 13.1
     },
-    "rs6": -6.6,
-    "vol_ratio": 0.92
+    "rs6": -8.1,
+    "vol_ratio": 0.94
    },
    "flags": [
     "fallender Umsatz bei hoher Verschuldung"
    ],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": null,
+    "last_firm": null,
+    "last_date": null
+   },
+   "revision_note": null,
    "scores": {
-    "turnaround": 10.4,
-    "momentum": 19.1,
-    "value": 30.6
+    "turnaround": 11.1,
+    "momentum": 19.3,
+    "value": 23.5
    },
    "why": {
     "turnaround": [],
     "momentum": [],
-    "value": [
-     "PEG 0.96"
-    ]
+    "value": []
    }
   },
   "FRE.DE": {
-   "name": "Fresenius SE & Co. KGaA       N",
+   "name": "Fresenius SE & Co. KGaA",
    "index": "DAX",
+   "sector": "Healthcare",
    "metrics": {
-    "last": 46.42,
-    "dd_ath": -30.1,
+    "last": 46.26,
+    "dd_ath": -30.3,
     "days_since_ath": 3349,
-    "range_pos": 71.9,
+    "range_pos": 70.9,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 8.38,
-    "sma200_slope": -0.3,
+    "sma50_slope": 8.32,
+    "sma200_slope": -0.26,
     "higher_low": true,
-    "rsi14": 63.8,
+    "rsi14": 62.2,
     "rsi_min60": 29.2,
     "perf": {
-     "m1": 7.9,
-     "m3": 19.5,
-     "m6": -7.9,
-     "m12": 2.3
+     "m1": 10.9,
+     "m3": 18.4,
+     "m6": -8.8,
+     "m12": 2.0
     },
-    "rs6": -10.8,
-    "vol_ratio": 1.09
+    "rs6": -12.5,
+    "vol_ratio": 1.08
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": null,
+    "last_firm": null,
+    "last_date": null
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 90.5,
-    "momentum": 29.4,
-    "value": 75.9
+    "momentum": 28.8,
+    "value": 63.2
    },
    "why": {
     "turnaround": [
@@ -6483,7 +7830,6 @@
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "PEG 0.91",
      "positiver Free Cashflow"
     ]
    }
@@ -6491,33 +7837,43 @@
   "HNR1.DE": {
    "name": "HANNOVER RUECK SE NA O.N.",
    "index": "DAX",
+   "sector": "Financial Services",
    "metrics": {
-    "last": 250.0,
-    "dd_ath": -7.6,
+    "last": 249.0,
+    "dd_ath": -8.0,
     "days_since_ath": 440,
-    "range_pos": 64.4,
+    "range_pos": 62.0,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 2.81,
-    "sma200_slope": 0.28,
+    "sma50_slope": 2.75,
+    "sma200_slope": 0.27,
     "higher_low": true,
-    "rsi14": 48.9,
+    "rsi14": 47.7,
     "rsi_min60": 27.9,
     "perf": {
-     "m1": -1.4,
-     "m3": 2.6,
-     "m6": 7.1,
-     "m12": 3.8
+     "m1": -2.4,
+     "m3": 0.6,
+     "m6": 5.6,
+     "m12": 4.0
     },
-    "rs6": 4.3,
-    "vol_ratio": 0.93
+    "rs6": 1.8,
+    "vol_ratio": 0.94
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": null,
+    "last_firm": null,
+    "last_date": null
+   },
+   "revision_note": null,
    "scores": {
-    "turnaround": 62.9,
-    "momentum": 49.7,
-    "value": 68.1
+    "turnaround": 63.6,
+    "momentum": 46.6,
+    "value": 69.3
    },
    "why": {
     "turnaround": [
@@ -6537,35 +7893,45 @@
    }
   },
   "HEI.DE": {
-   "name": "Heidelberg Materials AG       I",
+   "name": "Heidelberg Materials AG",
    "index": "DAX",
+   "sector": "Basic Materials",
    "metrics": {
-    "last": 158.8,
-    "dd_ath": -32.2,
+    "last": 158.4,
+    "dd_ath": -32.4,
     "days_since_ath": 205,
-    "range_pos": 4.2,
+    "range_pos": 3.7,
     "above_sma50": false,
     "above_sma200": false,
-    "sma50_slope": -3.42,
-    "sma200_slope": -1.43,
+    "sma50_slope": -3.46,
+    "sma200_slope": -1.56,
     "higher_low": false,
-    "rsi14": 38.5,
-    "rsi_min60": 30.3,
+    "rsi14": 37.8,
+    "rsi_min60": 30.1,
     "perf": {
-     "m1": -6.6,
-     "m3": -7.9,
-     "m6": -20.6,
-     "m12": -21.9
+     "m1": -7.4,
+     "m3": -12.5,
+     "m6": -21.5,
+     "m12": -19.7
     },
-    "rs6": -23.4,
-    "vol_ratio": 0.85
+    "rs6": -25.2,
+    "vol_ratio": 0.77
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": null,
+    "last_firm": null,
+    "last_date": null
+   },
+   "revision_note": null,
    "scores": {
-    "turnaround": 29.0,
+    "turnaround": 28.6,
     "momentum": 0.0,
-    "value": 65.0
+    "value": 58.5
    },
    "why": {
     "turnaround": [
@@ -6579,8 +7945,9 @@
    }
   },
   "HEN3.DE": {
-   "name": "Henkel AG & Co. KGaA          I",
+   "name": "Henkel AG & Co. KGaA",
    "index": "DAX",
+   "sector": "Consumer Defensive",
    "metrics": {
     "last": 75.28,
     "dd_ath": -27.0,
@@ -6588,26 +7955,35 @@
     "range_pos": 69.7,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 5.99,
-    "sma200_slope": 1.15,
+    "sma50_slope": 5.74,
+    "sma200_slope": 1.16,
     "higher_low": true,
-    "rsi14": 47.7,
-    "rsi_min60": 45.4,
+    "rsi14": 47.5,
+    "rsi_min60": 45.2,
     "perf": {
-     "m1": 1.0,
-     "m3": 14.9,
-     "m6": -6.4,
-     "m12": 7.1
+     "m1": 0.5,
+     "m3": 13.0,
+     "m6": -5.9,
+     "m12": 6.0
     },
-    "rs6": -9.2,
-    "vol_ratio": 0.96
+    "rs6": -9.6,
+    "vol_ratio": 1.0
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": null,
+    "last_firm": null,
+    "last_date": null
+   },
+   "revision_note": null,
    "scores": {
-    "turnaround": 74.8,
-    "momentum": 27.8,
-    "value": 59.1
+    "turnaround": 75.8,
+    "momentum": 29.0,
+    "value": 60.5
    },
    "why": {
     "turnaround": [
@@ -6626,127 +8002,155 @@
    }
   },
   "IFX.DE": {
-   "name": "INFINEON TECHNOLOGIES AG      N",
+   "name": "INFINEON TECHNOLOGIES AG",
    "index": "DAX",
+   "sector": "Technology",
    "metrics": {
-    "last": 55.11,
-    "dd_ath": -37.4,
+    "last": 54.93,
+    "dd_ath": -37.6,
     "days_since_ath": 79,
-    "range_pos": 42.3,
+    "range_pos": 41.9,
     "above_sma50": false,
     "above_sma200": true,
-    "sma50_slope": -7.3,
-    "sma200_slope": 5.73,
+    "sma50_slope": -6.85,
+    "sma200_slope": 5.75,
     "higher_low": true,
-    "rsi14": 33.7,
-    "rsi_min60": 28.7,
+    "rsi14": 33.5,
+    "rsi_min60": 29.0,
     "perf": {
-     "m1": -13.9,
-     "m3": -19.0,
-     "m6": 20.5,
-     "m12": 50.1
+     "m1": -13.7,
+     "m3": -19.1,
+     "m6": 24.2,
+     "m12": 51.0
     },
-    "rs6": 17.7,
-    "vol_ratio": 0.94
+    "rs6": 20.4,
+    "vol_ratio": 0.95
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": null,
+    "last_firm": null,
+    "last_date": null
+   },
+   "revision_note": null,
    "scores": {
-    "turnaround": 52.7,
-    "momentum": 38.1,
-    "value": 80.5
+    "turnaround": 52.9,
+    "momentum": 40.6,
+    "value": 67.5
    },
    "why": {
     "turnaround": [
-     "-37% unter ATH",
+     "-38% unter ATH",
      "hoeheres Tief"
     ],
     "momentum": [
-     "relative Staerke +18% vs. Index",
+     "relative Staerke +20% vs. Index",
      "200-Tage-Linie steigt"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "PEG 0.55",
      "positiver Free Cashflow",
      "Umsatzwachstum 13%"
     ]
    }
   },
   "MBG.DE": {
-   "name": "Mercedes-Benz Group AG        N",
+   "name": "Mercedes-Benz Group AG",
    "index": "DAX",
+   "sector": "Consumer Cyclical",
    "metrics": {
-    "last": 44.99,
-    "dd_ath": -26.4,
+    "last": 44.76,
+    "dd_ath": -26.8,
     "days_since_ath": 864,
-    "range_pos": 13.0,
+    "range_pos": 11.4,
     "above_sma50": false,
     "above_sma200": false,
-    "sma50_slope": -3.49,
-    "sma200_slope": -0.83,
+    "sma50_slope": -3.6,
+    "sma200_slope": -0.82,
     "higher_low": true,
-    "rsi14": 41.8,
+    "rsi14": 40.6,
     "rsi_min60": 29.1,
     "perf": {
-     "m1": -0.3,
-     "m3": -9.6,
-     "m6": -18.9,
-     "m12": -11.1
+     "m1": -1.6,
+     "m3": -10.5,
+     "m6": -18.6,
+     "m12": -9.3
     },
-    "rs6": -21.8,
-    "vol_ratio": 0.98
+    "rs6": -22.3,
+    "vol_ratio": 1.03
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": null,
+    "last_firm": null,
+    "last_date": null
+   },
+   "revision_note": null,
    "scores": {
-    "turnaround": 60.0,
-    "momentum": 2.3,
-    "value": 47.9
+    "turnaround": 61.1,
+    "momentum": 3.7,
+    "value": 32.9
    },
    "why": {
     "turnaround": [
-     "-26% unter ATH",
+     "-27% unter ATH",
      "hoeheres Tief",
      "RSI erholt sich aus dem ueberverkauften Bereich"
     ],
     "momentum": [],
     "value": [
-     "erwartetes KGV unter aktuellem",
-     "PEG 0.59"
+     "erwartetes KGV unter aktuellem"
     ]
    }
   },
   "MRK.DE": {
-   "name": "MERCK KGAA                    I",
+   "name": "MERCK KGAA",
    "index": "DAX",
+   "sector": "Healthcare",
    "metrics": {
-    "last": 136.6,
-    "dd_ath": -35.7,
+    "last": 136.4,
+    "dd_ath": -35.8,
     "days_since_ath": 1696,
-    "range_pos": 76.7,
+    "range_pos": 76.2,
     "above_sma50": false,
     "above_sma200": true,
-    "sma50_slope": 3.71,
-    "sma200_slope": 2.29,
+    "sma50_slope": 4.1,
+    "sma200_slope": 2.27,
     "higher_low": true,
-    "rsi14": 40.5,
-    "rsi_min60": 39.4,
+    "rsi14": 40.1,
+    "rsi_min60": 39.5,
     "perf": {
-     "m1": 1.2,
-     "m3": 8.1,
-     "m6": 8.4,
+     "m1": 0.1,
+     "m3": 11.1,
+     "m6": 9.6,
      "m12": 25.6
     },
-    "rs6": 5.6,
-    "vol_ratio": 1.09
+    "rs6": 5.8,
+    "vol_ratio": 1.05
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": null,
+    "last_firm": null,
+    "last_date": null
+   },
+   "revision_note": null,
    "scores": {
-    "turnaround": 64.7,
-    "momentum": 33.6,
-    "value": 61.1
+    "turnaround": 63.5,
+    "momentum": 32.4,
+    "value": 62.8
    },
    "why": {
     "turnaround": [
@@ -6762,35 +8166,45 @@
    }
   },
   "MTX.DE": {
-   "name": "MTU Aero Engines AG           N",
+   "name": "MTU Aero Engines AG",
    "index": "DAX",
+   "sector": "Industrials",
    "metrics": {
-    "last": 363.6,
-    "dd_ath": -8.5,
+    "last": 363.0,
+    "dd_ath": -8.7,
     "days_since_ath": 181,
-    "range_pos": 72.8,
+    "range_pos": 72.3,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 8.46,
-    "sma200_slope": -0.39,
+    "sma50_slope": 8.52,
+    "sma200_slope": -0.27,
     "higher_low": true,
-    "rsi14": 49.6,
+    "rsi14": 48.6,
     "rsi_min60": 41.8,
     "perf": {
-     "m1": 8.8,
-     "m3": 26.6,
-     "m6": -8.0,
-     "m12": -4.8
+     "m1": 6.5,
+     "m3": 15.6,
+     "m6": -8.7,
+     "m12": -3.6
     },
-    "rs6": -10.9,
-    "vol_ratio": 1.08
+    "rs6": -12.4,
+    "vol_ratio": 1.11
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": null,
+    "last_firm": null,
+    "last_date": null
+   },
+   "revision_note": null,
    "scores": {
-    "turnaround": 57.0,
-    "momentum": 47.3,
-    "value": 84.0
+    "turnaround": 57.9,
+    "momentum": 47.8,
+    "value": 79.2
    },
    "why": {
     "turnaround": [
@@ -6799,7 +8213,7 @@
      "50-Tage-Linie dreht nach oben"
     ],
     "momentum": [
-     "nur 8% unter ATH",
+     "nur 9% unter ATH",
      "ueber 50- und 200-Tage-Linie"
     ],
     "value": [
@@ -6810,35 +8224,45 @@
    }
   },
   "MUV2.DE": {
-   "name": "MUENCHENER RUECKVERS.-GES. AG N",
+   "name": "MUENCHENER RUECKVERS.-GES. AG",
    "index": "DAX",
+   "sector": "Financial Services",
    "metrics": {
-    "last": 510.6,
-    "dd_ath": -12.0,
+    "last": 510.0,
+    "dd_ath": -12.1,
     "days_since_ath": 378,
-    "range_pos": 66.5,
+    "range_pos": 65.9,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 4.53,
-    "sma200_slope": -0.27,
+    "sma50_slope": 4.49,
+    "sma200_slope": -0.28,
     "higher_low": true,
-    "rsi14": 49.1,
+    "rsi14": 48.9,
     "rsi_min60": 25.9,
     "perf": {
-     "m1": -1.2,
-     "m3": 7.7,
-     "m6": 0.6,
-     "m12": -3.8
+     "m1": -1.1,
+     "m3": 5.0,
+     "m6": -0.4,
+     "m12": -4.1
     },
-    "rs6": -2.2,
-    "vol_ratio": 0.97
+    "rs6": -4.1,
+    "vol_ratio": 0.99
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": null,
+    "last_firm": null,
+    "last_date": null
+   },
+   "revision_note": null,
    "scores": {
-    "turnaround": 63.9,
-    "momentum": 40.6,
-    "value": 58.1
+    "turnaround": 64.5,
+    "momentum": 39.3,
+    "value": 60.0
    },
    "why": {
     "turnaround": [
@@ -6856,79 +8280,97 @@
    }
   },
   "PAH3.DE": {
-   "name": "Porsche Automobil Holding SE  I",
+   "name": "Porsche Automobil Holding SE",
    "index": "DAX",
+   "sector": "Consumer Cyclical",
    "metrics": {
-    "last": 27.82,
+    "last": 27.77,
     "dd_ath": -64.2,
     "days_since_ath": 1900,
-    "range_pos": 7.2,
+    "range_pos": 6.7,
     "above_sma50": false,
     "above_sma200": false,
-    "sma50_slope": -2.65,
+    "sma50_slope": -2.36,
     "sma200_slope": -1.32,
     "higher_low": true,
-    "rsi14": 46.2,
+    "rsi14": 45.5,
     "rsi_min60": 26.0,
     "perf": {
-     "m1": 1.5,
-     "m3": -7.9,
-     "m6": -19.1,
-     "m12": -21.1
+     "m1": -0.1,
+     "m3": -9.7,
+     "m6": -20.5,
+     "m12": -21.7
     },
-    "rs6": -21.9,
-    "vol_ratio": 1.17
+    "rs6": -24.2,
+    "vol_ratio": 1.07
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": null,
+    "last_firm": null,
+    "last_date": null
+   },
+   "revision_note": null,
    "scores": {
-    "turnaround": 56.3,
-    "momentum": 7.7,
-    "value": 50.0
+    "turnaround": 53.6,
+    "momentum": 4.9,
+    "value": 35.0
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
-     "RSI erholt sich aus dem ueberverkauften Bereich",
-     "Anstiege auf hoeherem Volumen"
+     "RSI erholt sich aus dem ueberverkauften Bereich"
     ],
     "momentum": [],
     "value": [
-     "erwartetes KGV unter aktuellem",
-     "PEG 0.05"
+     "erwartetes KGV unter aktuellem"
     ]
    }
   },
   "P911.DE": {
-   "name": "Dr. Ing. h.c. F. Porsche AG   I",
+   "name": "Dr. Ing. h.c. F. Porsche AG",
    "index": "DAX",
+   "sector": "Consumer Cyclical",
    "metrics": {
-    "last": 45.04,
+    "last": 44.96,
     "dd_ath": -58.1,
     "days_since_ath": 1186,
-    "range_pos": 72.1,
+    "range_pos": 71.5,
     "above_sma50": false,
     "above_sma200": true,
-    "sma50_slope": -1.19,
-    "sma200_slope": 0.36,
+    "sma50_slope": -1.52,
+    "sma200_slope": 0.24,
     "higher_low": true,
-    "rsi14": 53.6,
+    "rsi14": 53.5,
     "rsi_min60": 33.4,
     "perf": {
-     "m1": 0.4,
-     "m3": 1.5,
-     "m6": 8.9,
-     "m12": -2.7
+     "m1": -2.6,
+     "m3": -1.0,
+     "m6": 8.5,
+     "m12": -1.3
     },
-    "rs6": 6.1,
-    "vol_ratio": 0.83
+    "rs6": 4.8,
+    "vol_ratio": 0.81
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": null,
+    "last_firm": null,
+    "last_date": null
+   },
+   "revision_note": null,
    "scores": {
-    "turnaround": 56.9,
-    "momentum": 22.2,
-    "value": 60.5
+    "turnaround": 57.0,
+    "momentum": 20.6,
+    "value": 50.1
    },
    "why": {
     "turnaround": [
@@ -6939,14 +8381,14 @@
     "momentum": [],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "PEG 0.52",
      "positiver Free Cashflow"
     ]
    }
   },
   "QIA.DE": {
-   "name": "Qiagen N.V.                   A",
+   "name": "Qiagen N.V.",
    "index": "DAX",
+   "sector": "Healthcare",
    "metrics": {
     "last": 38.08,
     "dd_ath": -22.6,
@@ -6954,26 +8396,35 @@
     "range_pos": 56.6,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 8.14,
-    "sma200_slope": -0.99,
+    "sma50_slope": 7.69,
+    "sma200_slope": -0.97,
     "higher_low": true,
     "rsi14": 61.8,
     "rsi_min60": 49.1,
     "perf": {
-     "m1": 6.5,
-     "m3": 27.9,
-     "m6": -7.4,
-     "m12": -8.3
+     "m1": 7.4,
+     "m3": 25.8,
+     "m6": -6.1,
+     "m12": -9.0
     },
-    "rs6": -10.2,
-    "vol_ratio": 1.3
+    "rs6": -9.8,
+    "vol_ratio": 1.21
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": "main",
+    "last_firm": "Citigroup",
+    "last_date": "2026-08-10"
+   },
+   "revision_note": null,
    "scores": {
-    "turnaround": 79.3,
-    "momentum": 32.6,
-    "value": 75.2
+    "turnaround": 77.0,
+    "momentum": 31.5,
+    "value": 64.4
    },
    "why": {
     "turnaround": [
@@ -6987,43 +8438,52 @@
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "PEG 1.08",
      "positiver Free Cashflow"
     ]
    }
   },
   "RHM.DE": {
-   "name": "RHEINMETALL AG                I",
+   "name": "RHEINMETALL AG",
    "index": "DAX",
+   "sector": "Industrials",
    "metrics": {
-    "last": 1161.4,
-    "dd_ath": -41.0,
+    "last": 1164.4,
+    "dd_ath": -40.9,
     "days_since_ath": 325,
-    "range_pos": 21.0,
+    "range_pos": 21.3,
     "above_sma50": true,
     "above_sma200": false,
-    "sma50_slope": -2.4,
-    "sma200_slope": -4.34,
+    "sma50_slope": -2.28,
+    "sma200_slope": -4.42,
     "higher_low": true,
-    "rsi14": 54.8,
+    "rsi14": 55.0,
     "rsi_min60": 24.0,
     "perf": {
-     "m1": 17.3,
-     "m3": -4.0,
-     "m6": -30.8,
-     "m12": -25.2
+     "m1": 18.3,
+     "m3": -5.6,
+     "m6": -27.0,
+     "m12": -28.6
     },
-    "rs6": -33.6,
-    "vol_ratio": 0.98
+    "rs6": -30.7,
+    "vol_ratio": 1.0
    },
    "flags": [
     "200-Tage-Linie faellt steil"
    ],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": null,
+    "last_firm": null,
+    "last_date": null
+   },
+   "revision_note": null,
    "scores": {
-    "turnaround": 82.0,
-    "momentum": 2.3,
-    "value": 82.4
+    "turnaround": 82.5,
+    "momentum": 2.9,
+    "value": 71.5
    },
    "why": {
     "turnaround": [
@@ -7035,42 +8495,51 @@
     "momentum": [],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "PEG 0.60",
      "positiver Free Cashflow",
      "Umsatzwachstum 69%"
     ]
    }
   },
   "RWE.DE": {
-   "name": "RWE AG                        I",
+   "name": "RWE AG",
    "index": "DAX",
+   "sector": "Utilities",
    "metrics": {
-    "last": 57.48,
-    "dd_ath": -5.4,
+    "last": 57.44,
+    "dd_ath": -5.5,
     "days_since_ath": 112,
-    "range_pos": 88.0,
+    "range_pos": 87.9,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 0.93,
-    "sma200_slope": 3.42,
+    "sma50_slope": 0.86,
+    "sma200_slope": 3.46,
     "higher_low": true,
-    "rsi14": 51.1,
+    "rsi14": 51.0,
     "rsi_min60": 37.4,
     "perf": {
-     "m1": -0.9,
-     "m3": 1.7,
-     "m6": 11.1,
-     "m12": 66.2
+     "m1": 2.6,
+     "m3": 1.4,
+     "m6": 13.3,
+     "m12": 66.5
     },
-    "rs6": 8.3,
+    "rs6": 9.6,
     "vol_ratio": 1.42
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": null,
+    "last_firm": null,
+    "last_date": null
+   },
+   "revision_note": null,
    "scores": {
-    "turnaround": 56.8,
-    "momentum": 80.3,
-    "value": 30.6
+    "turnaround": 56.6,
+    "momentum": 81.3,
+    "value": 37.4
    },
    "why": {
     "turnaround": [
@@ -7079,7 +8548,7 @@
      "Anstiege auf hoeherem Volumen"
     ],
     "momentum": [
-     "nur 5% unter ATH",
+     "nur 6% unter ATH",
      "ueber 50- und 200-Tage-Linie",
      "200-Tage-Linie steigt"
     ],
@@ -7087,35 +8556,45 @@
    }
   },
   "SAP.DE": {
-   "name": "SAP SE                        I",
+   "name": "SAP SE",
    "index": "DAX",
+   "sector": "Technology",
    "metrics": {
-    "last": 183.12,
+    "last": 183.1,
     "dd_ath": -33.0,
     "days_since_ath": 553,
     "range_pos": 50.0,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 3.4,
-    "sma200_slope": -3.66,
+    "sma50_slope": 3.57,
+    "sma200_slope": -3.67,
     "higher_low": false,
-    "rsi14": 72.4,
-    "rsi_min60": 34.2,
+    "rsi14": 72.2,
+    "rsi_min60": 34.6,
     "perf": {
-     "m1": 32.4,
-     "m3": 21.4,
-     "m6": 7.4,
-     "m12": -21.4
+     "m1": 32.8,
+     "m3": 19.3,
+     "m6": 9.8,
+     "m12": -21.3
     },
-    "rs6": 4.6,
-    "vol_ratio": 0.99
+    "rs6": 6.0,
+    "vol_ratio": 1.02
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": null,
+    "last_firm": null,
+    "last_date": null
+   },
+   "revision_note": null,
    "scores": {
-    "turnaround": 60.8,
-    "momentum": 30.6,
-    "value": 77.2
+    "turnaround": 61.6,
+    "momentum": 32.6,
+    "value": 75.1
    },
    "why": {
     "turnaround": [
@@ -7134,39 +8613,49 @@
    }
   },
   "SRT3.DE": {
-   "name": "SARTORIUS AG                  V",
+   "name": "SARTORIUS AG",
    "index": "DAX",
+   "sector": "Healthcare",
    "metrics": {
-    "last": 248.0,
-    "dd_ath": -58.5,
+    "last": 247.7,
+    "dd_ath": -58.6,
     "days_since_ath": 1724,
-    "range_pos": 78.6,
+    "range_pos": 78.3,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": -0.47,
-    "sma200_slope": 0.11,
+    "sma50_slope": -0.26,
+    "sma200_slope": 0.14,
     "higher_low": true,
-    "rsi14": 62.6,
+    "rsi14": 62.3,
     "rsi_min60": 35.0,
     "perf": {
-     "m1": 4.5,
-     "m3": 5.4,
-     "m6": 6.8,
-     "m12": 26.3
+     "m1": 1.8,
+     "m3": 8.6,
+     "m6": 10.2,
+     "m12": 27.9
     },
-    "rs6": 4.0,
-    "vol_ratio": 1.0
+    "rs6": 6.5,
+    "vol_ratio": 1.01
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": null,
+    "last_firm": null,
+    "last_date": null
+   },
+   "revision_note": null,
    "scores": {
-    "turnaround": 66.5,
-    "momentum": 36.8,
-    "value": 61.9
+    "turnaround": 67.1,
+    "momentum": 39.2,
+    "value": 48.1
    },
    "why": {
     "turnaround": [
-     "-58% unter ATH",
+     "-59% unter ATH",
      "hoeheres Tief",
      "ueber 50-Tage-Linie"
     ],
@@ -7175,41 +8664,50 @@
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "PEG 0.94",
      "positiver Free Cashflow"
     ]
    }
   },
   "SIE.DE": {
-   "name": "SIEMENS AG                    N",
+   "name": "SIEMENS AG",
    "index": "DAX",
+   "sector": "Industrials",
    "metrics": {
-    "last": 276.15,
-    "dd_ath": -3.9,
+    "last": 274.9,
+    "dd_ath": -4.4,
     "days_since_ath": 16,
-    "range_pos": 86.5,
+    "range_pos": 85.0,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 1.35,
-    "sma200_slope": 1.63,
+    "sma50_slope": 1.34,
+    "sma200_slope": 1.64,
     "higher_low": true,
-    "rsi14": 48.9,
+    "rsi14": 47.5,
     "rsi_min60": 43.7,
     "perf": {
-     "m1": 4.1,
-     "m3": 4.6,
-     "m6": 12.8,
-     "m12": 18.4
+     "m1": 3.9,
+     "m3": 4.1,
+     "m6": 16.6,
+     "m12": 20.2
     },
-    "rs6": 10.0,
-    "vol_ratio": 0.95
+    "rs6": 12.9,
+    "vol_ratio": 1.02
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": null,
+    "last_firm": null,
+    "last_date": null
+   },
+   "revision_note": null,
    "scores": {
-    "turnaround": 49.1,
-    "momentum": 69.8,
-    "value": 59.3
+    "turnaround": 50.9,
+    "momentum": 73.2,
+    "value": 63.6
    },
    "why": {
     "turnaround": [
@@ -7227,35 +8725,45 @@
    }
   },
   "ENR.DE": {
-   "name": "Siemens Energy AG             N",
+   "name": "Siemens Energy AG",
    "index": "DAX",
+   "sector": "Industrials",
    "metrics": {
-    "last": 153.46,
+    "last": 153.54,
     "dd_ath": -18.2,
     "days_since_ath": 118,
-    "range_pos": 67.0,
+    "range_pos": 67.1,
     "above_sma50": false,
     "above_sma200": true,
-    "sma50_slope": -3.82,
-    "sma200_slope": 3.38,
+    "sma50_slope": -4.07,
+    "sma200_slope": 3.37,
     "higher_low": false,
     "rsi14": 48.3,
     "rsi_min60": 25.9,
     "perf": {
-     "m1": 0.5,
-     "m3": -11.6,
-     "m6": -7.5,
-     "m12": 63.1
+     "m1": 4.0,
+     "m3": -11.9,
+     "m6": -4.3,
+     "m12": 59.3
     },
-    "rs6": -10.3,
-    "vol_ratio": 0.82
+    "rs6": -8.0,
+    "vol_ratio": 0.83
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": null,
+    "last_firm": null,
+    "last_date": null
+   },
+   "revision_note": null,
    "scores": {
     "turnaround": 22.3,
     "momentum": 26.2,
-    "value": 88.2
+    "value": 75.8
    },
    "why": {
     "turnaround": [
@@ -7266,42 +8774,51 @@
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "PEG 0.60",
      "positiver Free Cashflow",
      "Umsatzwachstum 18%"
     ]
    }
   },
   "SHL.DE": {
-   "name": "Siemens Healthineers AG       N",
+   "name": "Siemens Healthineers AG",
    "index": "DAX",
+   "sector": "Healthcare",
    "metrics": {
-    "last": 39.94,
-    "dd_ath": -34.8,
+    "last": 39.87,
+    "dd_ath": -34.9,
     "days_since_ath": 1715,
-    "range_pos": 43.7,
+    "range_pos": 43.2,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 4.21,
-    "sma200_slope": -2.31,
+    "sma50_slope": 4.28,
+    "sma200_slope": -2.28,
     "higher_low": true,
-    "rsi14": 69.0,
+    "rsi14": 68.8,
     "rsi_min60": 37.3,
     "perf": {
-     "m1": 13.0,
-     "m3": 15.7,
-     "m6": -3.8,
-     "m12": -14.2
+     "m1": 13.5,
+     "m3": 16.5,
+     "m6": -2.4,
+     "m12": -13.6
     },
-    "rs6": -6.6,
+    "rs6": -6.1,
     "vol_ratio": 0.98
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": null,
+    "last_firm": null,
+    "last_date": null
+   },
+   "revision_note": null,
    "scores": {
-    "turnaround": 82.1,
+    "turnaround": 82.2,
     "momentum": 22.3,
-    "value": 64.3
+    "value": 59.3
    },
    "why": {
     "turnaround": [
@@ -7320,35 +8837,45 @@
    }
   },
   "SY1.DE": {
-   "name": "Symrise AG                    I",
+   "name": "Symrise AG",
    "index": "DAX",
+   "sector": "Basic Materials",
    "metrics": {
-    "last": 88.46,
-    "dd_ath": -28.6,
+    "last": 88.36,
+    "dd_ath": -28.7,
     "days_since_ath": 1732,
-    "range_pos": 86.8,
+    "range_pos": 86.4,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 5.72,
-    "sma200_slope": 1.75,
+    "sma50_slope": 5.91,
+    "sma200_slope": 1.74,
     "higher_low": true,
-    "rsi14": 49.0,
-    "rsi_min60": 40.1,
+    "rsi14": 48.8,
+    "rsi_min60": 40.4,
     "perf": {
-     "m1": -0.2,
-     "m3": 14.0,
-     "m6": 21.4,
-     "m12": 8.8
+     "m1": -0.3,
+     "m3": 16.7,
+     "m6": 20.3,
+     "m12": 11.3
     },
-    "rs6": 18.6,
+    "rs6": 16.6,
     "vol_ratio": 1.05
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": null,
+    "last_firm": null,
+    "last_date": null
+   },
+   "revision_note": null,
    "scores": {
-    "turnaround": 78.4,
-    "momentum": 57.3,
-    "value": 47.1
+    "turnaround": 78.6,
+    "momentum": 55.4,
+    "value": 51.8
    },
    "why": {
     "turnaround": [
@@ -7358,7 +8885,7 @@
      "50-Tage-Linie dreht nach oben"
     ],
     "momentum": [
-     "relative Staerke +19% vs. Index",
+     "relative Staerke +17% vs. Index",
      "ueber 50- und 200-Tage-Linie"
     ],
     "value": [
@@ -7368,35 +8895,45 @@
    }
   },
   "VOW3.DE": {
-   "name": "VOLKSWAGEN AG                 V",
+   "name": "VOLKSWAGEN AG",
    "index": "DAX",
+   "sector": "Consumer Cyclical",
    "metrics": {
-    "last": 74.92,
-    "dd_ath": -49.7,
+    "last": 74.64,
+    "dd_ath": -49.8,
     "days_since_ath": 1962,
-    "range_pos": 15.6,
+    "range_pos": 14.7,
     "above_sma50": false,
     "above_sma200": false,
-    "sma50_slope": -4.73,
-    "sma200_slope": -1.25,
+    "sma50_slope": -4.58,
+    "sma200_slope": -1.21,
     "higher_low": true,
-    "rsi14": 51.6,
+    "rsi14": 50.4,
     "rsi_min60": 23.6,
     "perf": {
-     "m1": 3.3,
-     "m3": -9.8,
-     "m6": -23.2,
-     "m12": -20.8
+     "m1": 2.3,
+     "m3": -12.4,
+     "m6": -22.3,
+     "m12": -21.2
     },
     "rs6": -26.0,
-    "vol_ratio": 0.83
+    "vol_ratio": 0.89
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": null,
+    "last_firm": null,
+    "last_date": null
+   },
+   "revision_note": null,
    "scores": {
-    "turnaround": 65.0,
+    "turnaround": 64.8,
     "momentum": 0.0,
-    "value": 61.7
+    "value": 46.7
    },
    "why": {
     "turnaround": [
@@ -7407,43 +8944,52 @@
     "momentum": [],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "PEG 0.68",
      "positiver Free Cashflow"
     ]
    }
   },
   "VNA.DE": {
-   "name": "Vonovia SE                    N",
+   "name": "Vonovia SE",
    "index": "DAX",
+   "sector": "Real Estate",
    "metrics": {
-    "last": 20.12,
-    "dd_ath": -47.0,
+    "last": 20.05,
+    "dd_ath": -47.2,
     "days_since_ath": 2178,
-    "range_pos": 5.7,
+    "range_pos": 4.7,
     "above_sma50": false,
     "above_sma200": false,
-    "sma50_slope": 0.03,
-    "sma200_slope": -2.13,
+    "sma50_slope": -0.09,
+    "sma200_slope": -2.14,
     "higher_low": true,
-    "rsi14": 39.2,
+    "rsi14": 38.1,
     "rsi_min60": 32.9,
     "perf": {
-     "m1": -3.5,
-     "m3": -4.4,
-     "m6": -20.8,
-     "m12": -23.7
+     "m1": -4.9,
+     "m3": -5.2,
+     "m6": -22.6,
+     "m12": -24.5
     },
-    "rs6": -23.6,
-    "vol_ratio": 0.91
+    "rs6": -26.3,
+    "vol_ratio": 0.9
    },
    "flags": [
     "200-Tage-Linie faellt steil"
    ],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": null,
+    "last_firm": null,
+    "last_date": null
+   },
+   "revision_note": null,
    "scores": {
-    "turnaround": 52.5,
-    "momentum": 0.3,
-    "value": 43.9
+    "turnaround": 51.1,
+    "momentum": 0.0,
+    "value": 50.2
    },
    "why": {
     "turnaround": [
@@ -7457,35 +9003,45 @@
    }
   },
   "ZAL.DE": {
-   "name": "Zalando SE                    I",
+   "name": "Zalando SE",
    "index": "DAX",
+   "sector": "Consumer Cyclical",
    "metrics": {
-    "last": 22.39,
+    "last": 22.4,
     "dd_ath": -78.6,
     "days_since_ath": 1870,
-    "range_pos": 29.6,
+    "range_pos": 29.7,
     "above_sma50": false,
     "above_sma200": false,
-    "sma50_slope": 6.41,
-    "sma200_slope": -0.25,
+    "sma50_slope": 5.04,
+    "sma200_slope": -0.22,
     "higher_low": true,
-    "rsi14": 30.1,
-    "rsi_min60": 30.1,
+    "rsi14": 30.8,
+    "rsi_min60": 30.8,
     "perf": {
-     "m1": -21.0,
-     "m3": 8.4,
-     "m6": 5.8,
-     "m12": -7.5
+     "m1": -20.6,
+     "m3": 3.1,
+     "m6": 8.3,
+     "m12": -8.0
     },
-    "rs6": 3.0,
-    "vol_ratio": 0.8
+    "rs6": 4.5,
+    "vol_ratio": 0.75
    },
    "flags": [],
    "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": null,
+    "last_firm": null,
+    "last_date": null
+   },
+   "revision_note": null,
    "scores": {
-    "turnaround": 35.0,
-    "momentum": 6.7,
-    "value": 77.1
+    "turnaround": 35.4,
+    "momentum": 7.9,
+    "value": 63.5
    },
    "why": {
     "turnaround": [
@@ -7495,11 +9051,15 @@
     "momentum": [],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "PEG 0.46",
      "positiver Free Cashflow",
      "Umsatzwachstum 21%"
     ]
    }
   }
- }
+ },
+ "missing": [
+  "1COV.DE",
+  "ANSS",
+  "EA"
+ ]
 }

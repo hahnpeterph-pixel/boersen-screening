@@ -1,0 +1,1301 @@
+{
+ "updated": "2026-08-20T08:49:17.564192+00:00",
+ "data": {
+  "1COV.DE": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": null,
+   "last_firm": null,
+   "last_date": null
+  },
+  "AAPL": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 2,
+   "net_30d": -2,
+   "last_action": "down",
+   "last_firm": "Jefferies",
+   "last_date": "2026-08-10"
+  },
+  "ABNB": {
+   "upgrades_30d": 1,
+   "downgrades_30d": 0,
+   "net_30d": 1,
+   "last_action": "main",
+   "last_firm": "BMO Capital",
+   "last_date": "2026-08-10"
+  },
+  "ADBE": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 1,
+   "net_30d": -1,
+   "last_action": "main",
+   "last_firm": "B of A Securities",
+   "last_date": "2026-08-19"
+  },
+  "ADI": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "reit",
+   "last_firm": "Cantor Fitzgerald",
+   "last_date": "2026-08-17"
+  },
+  "ADP": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "reit",
+   "last_firm": "Cantor Fitzgerald",
+   "last_date": "2026-08-05"
+  },
+  "ADS.DE": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": null,
+   "last_firm": null,
+   "last_date": null
+  },
+  "ADSK": {
+   "upgrades_30d": 2,
+   "downgrades_30d": 0,
+   "net_30d": 2,
+   "last_action": "init",
+   "last_firm": "Goldman Sachs",
+   "last_date": "2026-08-11"
+  },
+  "AEP": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "Truist Securities",
+   "last_date": "2026-08-17"
+  },
+  "AIR.DE": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": null,
+   "last_firm": null,
+   "last_date": null
+  },
+  "ALV.DE": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": null,
+   "last_firm": null,
+   "last_date": null
+  },
+  "AMAT": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "UBS",
+   "last_date": "2026-08-14"
+  },
+  "AMD": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "Argus Research",
+   "last_date": "2026-08-06"
+  },
+  "AMGN": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "Argus Research",
+   "last_date": "2026-08-19"
+  },
+  "AMZN": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "UBS",
+   "last_date": "2026-07-31"
+  },
+  "ANSS": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": null,
+   "last_firm": null,
+   "last_date": null
+  },
+  "APP": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 3,
+   "net_30d": -3,
+   "last_action": "main",
+   "last_firm": "Wells Fargo",
+   "last_date": "2026-08-19"
+  },
+  "ARM": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "Rosenblatt",
+   "last_date": "2026-07-31"
+  },
+  "ASML": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": null,
+   "last_firm": null,
+   "last_date": null
+  },
+  "AVGO": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": null,
+   "last_firm": null,
+   "last_date": null
+  },
+  "AXON": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "UBS",
+   "last_date": "2026-08-06"
+  },
+  "AXP": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "Piper Sandler",
+   "last_date": "2026-08-12"
+  },
+  "AZN": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": null,
+   "last_firm": null,
+   "last_date": null
+  },
+  "BA": {
+   "upgrades_30d": 2,
+   "downgrades_30d": 0,
+   "net_30d": 2,
+   "last_action": "up",
+   "last_firm": "Argus Research",
+   "last_date": "2026-08-11"
+  },
+  "BAS.DE": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": null,
+   "last_firm": null,
+   "last_date": null
+  },
+  "BAYN.DE": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": null,
+   "last_firm": null,
+   "last_date": null
+  },
+  "BEI.DE": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": null,
+   "last_firm": null,
+   "last_date": null
+  },
+  "BIIB": {
+   "upgrades_30d": 1,
+   "downgrades_30d": 0,
+   "net_30d": 1,
+   "last_action": "up",
+   "last_firm": "Wolfe Research",
+   "last_date": "2026-08-13"
+  },
+  "BKNG": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "Argus Research",
+   "last_date": "2026-08-10"
+  },
+  "BKR": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "UBS",
+   "last_date": "2026-07-28"
+  },
+  "BMW.DE": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": null,
+   "last_firm": null,
+   "last_date": null
+  },
+  "BNR.DE": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": null,
+   "last_firm": null,
+   "last_date": null
+  },
+  "CAT": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": null,
+   "last_firm": null,
+   "last_date": null
+  },
+  "CBK.DE": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": null,
+   "last_firm": null,
+   "last_date": null
+  },
+  "CCEP": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 1,
+   "net_30d": -1,
+   "last_action": "down",
+   "last_firm": "UBS",
+   "last_date": "2026-08-13"
+  },
+  "CDNS": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "B of A Securities",
+   "last_date": "2026-07-28"
+  },
+  "CDW": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "Morgan Stanley",
+   "last_date": "2026-08-06"
+  },
+  "CEG": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "Argus Research",
+   "last_date": "2026-08-11"
+  },
+  "CHTR": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "JP Morgan",
+   "last_date": "2026-07-29"
+  },
+  "CMCSA": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "Wells Fargo",
+   "last_date": "2026-07-24"
+  },
+  "CON.DE": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": null,
+   "last_firm": null,
+   "last_date": null
+  },
+  "COST": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": null,
+   "last_firm": null,
+   "last_date": null
+  },
+  "CPRT": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "Barclays",
+   "last_date": "2026-07-22"
+  },
+  "CRM": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 1,
+   "net_30d": -1,
+   "last_action": "main",
+   "last_firm": "Citigroup",
+   "last_date": "2026-08-18"
+  },
+  "CRWD": {
+   "upgrades_30d": 1,
+   "downgrades_30d": 0,
+   "net_30d": 1,
+   "last_action": "main",
+   "last_firm": "Mizuho",
+   "last_date": "2026-08-19"
+  },
+  "CSCO": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 1,
+   "net_30d": -1,
+   "last_action": "down",
+   "last_firm": "HSBC",
+   "last_date": "2026-08-14"
+  },
+  "CSGP": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 3,
+   "net_30d": -3,
+   "last_action": "down",
+   "last_firm": "Citigroup",
+   "last_date": "2026-07-29"
+  },
+  "CSX": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "Citigroup",
+   "last_date": "2026-07-24"
+  },
+  "CTAS": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": null,
+   "last_firm": null,
+   "last_date": null
+  },
+  "CTSH": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "Citigroup",
+   "last_date": "2026-07-30"
+  },
+  "CVX": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "Morgan Stanley",
+   "last_date": "2026-08-19"
+  },
+  "DASH": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "Roth Capital",
+   "last_date": "2026-08-10"
+  },
+  "DB1.DE": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": null,
+   "last_firm": null,
+   "last_date": null
+  },
+  "DBK.DE": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": null,
+   "last_firm": null,
+   "last_date": null
+  },
+  "DDOG": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 1,
+   "net_30d": -1,
+   "last_action": "main",
+   "last_firm": "Scotiabank",
+   "last_date": "2026-08-08"
+  },
+  "DHL.DE": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": null,
+   "last_firm": null,
+   "last_date": null
+  },
+  "DIS": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "Wells Fargo",
+   "last_date": "2026-08-06"
+  },
+  "DTE.DE": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": null,
+   "last_firm": null,
+   "last_date": null
+  },
+  "DTG.DE": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": null,
+   "last_firm": null,
+   "last_date": null
+  },
+  "DXCM": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "Argus Research",
+   "last_date": "2026-08-04"
+  },
+  "EA": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": null,
+   "last_firm": null,
+   "last_date": null
+  },
+  "ENR.DE": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": null,
+   "last_firm": null,
+   "last_date": null
+  },
+  "EOAN.DE": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": null,
+   "last_firm": null,
+   "last_date": null
+  },
+  "EXC": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "Truist Securities",
+   "last_date": "2026-08-13"
+  },
+  "FANG": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": null,
+   "last_firm": null,
+   "last_date": null
+  },
+  "FAST": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": null,
+   "last_firm": null,
+   "last_date": null
+  },
+  "FRE.DE": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": null,
+   "last_firm": null,
+   "last_date": null
+  },
+  "FTNT": {
+   "upgrades_30d": 1,
+   "downgrades_30d": 0,
+   "net_30d": 1,
+   "last_action": "main",
+   "last_firm": "Susquehanna",
+   "last_date": "2026-07-31"
+  },
+  "GEHC": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "reit",
+   "last_firm": "BTIG",
+   "last_date": "2026-08-19"
+  },
+  "GFS": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "TD Cowen",
+   "last_date": "2026-08-06"
+  },
+  "GILD": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 1,
+   "net_30d": -1,
+   "last_action": "main",
+   "last_firm": "RBC Capital",
+   "last_date": "2026-08-05"
+  },
+  "GOOGL": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "UBS",
+   "last_date": "2026-07-23"
+  },
+  "GS": {
+   "upgrades_30d": 1,
+   "downgrades_30d": 0,
+   "net_30d": 1,
+   "last_action": "main",
+   "last_firm": "UBS",
+   "last_date": "2026-08-03"
+  },
+  "HD": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "Mizuho",
+   "last_date": "2026-08-19"
+  },
+  "HEI.DE": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": null,
+   "last_firm": null,
+   "last_date": null
+  },
+  "HEN3.DE": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": null,
+   "last_firm": null,
+   "last_date": null
+  },
+  "HNR1.DE": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": null,
+   "last_firm": null,
+   "last_date": null
+  },
+  "HON": {
+   "upgrades_30d": 1,
+   "downgrades_30d": 0,
+   "net_30d": 1,
+   "last_action": "main",
+   "last_firm": "RBC Capital",
+   "last_date": "2026-08-18"
+  },
+  "IBM": {
+   "upgrades_30d": 1,
+   "downgrades_30d": 0,
+   "net_30d": 1,
+   "last_action": "main",
+   "last_firm": "Citigroup",
+   "last_date": "2026-07-24"
+  },
+  "IDXX": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "Barclays",
+   "last_date": "2026-08-11"
+  },
+  "IFX.DE": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": null,
+   "last_firm": null,
+   "last_date": null
+  },
+  "INTC": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "B of A Securities",
+   "last_date": "2026-08-12"
+  },
+  "INTU": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 3,
+   "net_30d": -3,
+   "last_action": "main",
+   "last_firm": "Deutsche Bank",
+   "last_date": "2026-08-19"
+  },
+  "ISRG": {
+   "upgrades_30d": 1,
+   "downgrades_30d": 1,
+   "net_30d": 0,
+   "last_action": "up",
+   "last_firm": "Oppenheimer",
+   "last_date": "2026-08-12"
+  },
+  "JNJ": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "Guggenheim",
+   "last_date": "2026-08-06"
+  },
+  "JPM": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "Wells Fargo",
+   "last_date": "2026-08-14"
+  },
+  "KDP": {
+   "upgrades_30d": 1,
+   "downgrades_30d": 0,
+   "net_30d": 1,
+   "last_action": "up",
+   "last_firm": "HSBC",
+   "last_date": "2026-08-13"
+  },
+  "KHC": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "Barclays",
+   "last_date": "2026-08-07"
+  },
+  "KLAC": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "Stifel",
+   "last_date": "2026-07-29"
+  },
+  "KO": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "Argus Research",
+   "last_date": "2026-07-30"
+  },
+  "LIN": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "BMO Capital",
+   "last_date": "2026-08-10"
+  },
+  "LRCX": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "Morgan Stanley",
+   "last_date": "2026-07-30"
+  },
+  "LULU": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "JP Morgan",
+   "last_date": "2026-08-04"
+  },
+  "MAR": {
+   "upgrades_30d": 1,
+   "downgrades_30d": 0,
+   "net_30d": 1,
+   "last_action": "init",
+   "last_firm": "CICC",
+   "last_date": "2026-08-12"
+  },
+  "MBG.DE": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": null,
+   "last_firm": null,
+   "last_date": null
+  },
+  "MCD": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "Guggenheim",
+   "last_date": "2026-08-06"
+  },
+  "MCHP": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "reit",
+   "last_firm": "Cantor Fitzgerald",
+   "last_date": "2026-08-17"
+  },
+  "MDLZ": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "Barclays",
+   "last_date": "2026-07-30"
+  },
+  "MELI": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "JP Morgan",
+   "last_date": "2026-08-11"
+  },
+  "META": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": null,
+   "last_firm": null,
+   "last_date": null
+  },
+  "MMM": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "Mizuho",
+   "last_date": "2026-07-23"
+  },
+  "MNST": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "UBS",
+   "last_date": "2026-08-07"
+  },
+  "MRK": {
+   "upgrades_30d": 1,
+   "downgrades_30d": 0,
+   "net_30d": 1,
+   "last_action": "up",
+   "last_firm": "Daiwa Capital",
+   "last_date": "2026-08-12"
+  },
+  "MRK.DE": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": null,
+   "last_firm": null,
+   "last_date": null
+  },
+  "MRVL": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "TD Cowen",
+   "last_date": "2026-08-18"
+  },
+  "MSFT": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "Wells Fargo",
+   "last_date": "2026-08-12"
+  },
+  "MSTR": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "B. Riley Securities",
+   "last_date": "2026-08-03"
+  },
+  "MTX.DE": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": null,
+   "last_firm": null,
+   "last_date": null
+  },
+  "MU": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "Citigroup",
+   "last_date": "2026-08-07"
+  },
+  "MUV2.DE": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": null,
+   "last_firm": null,
+   "last_date": null
+  },
+  "NFLX": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "Baird",
+   "last_date": "2026-07-22"
+  },
+  "NKE": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 1,
+   "net_30d": -1,
+   "last_action": "down",
+   "last_firm": "JP Morgan",
+   "last_date": "2026-08-04"
+  },
+  "NVDA": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "reit",
+   "last_firm": "Wells Fargo",
+   "last_date": "2026-08-11"
+  },
+  "NXPI": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 1,
+   "net_30d": -1,
+   "last_action": "reit",
+   "last_firm": "Cantor Fitzgerald",
+   "last_date": "2026-08-17"
+  },
+  "ODFL": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "UBS",
+   "last_date": "2026-07-30"
+  },
+  "ON": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "reit",
+   "last_firm": "Cantor Fitzgerald",
+   "last_date": "2026-08-17"
+  },
+  "ORLY": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "Citigroup",
+   "last_date": "2026-08-03"
+  },
+  "P911.DE": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": null,
+   "last_firm": null,
+   "last_date": null
+  },
+  "PAH3.DE": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": null,
+   "last_firm": null,
+   "last_date": null
+  },
+  "PANW": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "Mizuho",
+   "last_date": "2026-08-19"
+  },
+  "PAYX": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "Jefferies",
+   "last_date": "2026-08-13"
+  },
+  "PCAR": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "Evercore ISI Group",
+   "last_date": "2026-08-11"
+  },
+  "PDD": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": null,
+   "last_firm": null,
+   "last_date": null
+  },
+  "PEP": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "Barclays",
+   "last_date": "2026-07-21"
+  },
+  "PG": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 2,
+   "net_30d": -2,
+   "last_action": "down",
+   "last_firm": "Argus Research",
+   "last_date": "2026-08-07"
+  },
+  "PLTR": {
+   "upgrades_30d": 1,
+   "downgrades_30d": 0,
+   "net_30d": 1,
+   "last_action": "main",
+   "last_firm": "UBS",
+   "last_date": "2026-08-04"
+  },
+  "PYPL": {
+   "upgrades_30d": 1,
+   "downgrades_30d": 0,
+   "net_30d": 1,
+   "last_action": "main",
+   "last_firm": "Truist Securities",
+   "last_date": "2026-08-19"
+  },
+  "QCOM": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "Benchmark",
+   "last_date": "2026-07-30"
+  },
+  "QIA.DE": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "Citigroup",
+   "last_date": "2026-08-10"
+  },
+  "REGN": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "Leerink Partners",
+   "last_date": "2026-08-17"
+  },
+  "RHM.DE": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": null,
+   "last_firm": null,
+   "last_date": null
+  },
+  "ROP": {
+   "upgrades_30d": 1,
+   "downgrades_30d": 0,
+   "net_30d": 1,
+   "last_action": "reit",
+   "last_firm": "RBC Capital",
+   "last_date": "2026-08-18"
+  },
+  "ROST": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "Evercore ISI Group",
+   "last_date": "2026-08-17"
+  },
+  "RWE.DE": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": null,
+   "last_firm": null,
+   "last_date": null
+  },
+  "SAP.DE": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": null,
+   "last_firm": null,
+   "last_date": null
+  },
+  "SBUX": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "reit",
+   "last_firm": "BTIG",
+   "last_date": "2026-07-31"
+  },
+  "SHL.DE": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": null,
+   "last_firm": null,
+   "last_date": null
+  },
+  "SHW": {
+   "upgrades_30d": 1,
+   "downgrades_30d": 0,
+   "net_30d": 1,
+   "last_action": "init",
+   "last_firm": "Guggenheim",
+   "last_date": "2026-08-03"
+  },
+  "SIE.DE": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": null,
+   "last_firm": null,
+   "last_date": null
+  },
+  "SNPS": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "Morgan Stanley",
+   "last_date": "2026-08-19"
+  },
+  "SRT3.DE": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": null,
+   "last_firm": null,
+   "last_date": null
+  },
+  "SY1.DE": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": null,
+   "last_firm": null,
+   "last_date": null
+  },
+  "TEAM": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "Citigroup",
+   "last_date": "2026-08-10"
+  },
+  "TMUS": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 1,
+   "net_30d": -1,
+   "last_action": "down",
+   "last_firm": "Wolfe Research",
+   "last_date": "2026-08-14"
+  },
+  "TRV": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 1,
+   "net_30d": -1,
+   "last_action": "main",
+   "last_firm": "Mizuho",
+   "last_date": "2026-07-24"
+  },
+  "TSLA": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "reit",
+   "last_firm": "GLJ Research",
+   "last_date": "2026-08-18"
+  },
+  "TTD": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 8,
+   "net_30d": -8,
+   "last_action": "down",
+   "last_firm": "DA Davidson",
+   "last_date": "2026-08-10"
+  },
+  "TTWO": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "Roth Capital",
+   "last_date": "2026-08-10"
+  },
+  "TXN": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "reit",
+   "last_firm": "Cantor Fitzgerald",
+   "last_date": "2026-08-17"
+  },
+  "UNH": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "JP Morgan",
+   "last_date": "2026-07-21"
+  },
+  "V": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "Truist Securities",
+   "last_date": "2026-08-05"
+  },
+  "VNA.DE": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": null,
+   "last_firm": null,
+   "last_date": null
+  },
+  "VOW3.DE": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": null,
+   "last_firm": null,
+   "last_date": null
+  },
+  "VRSK": {
+   "upgrades_30d": 1,
+   "downgrades_30d": 0,
+   "net_30d": 1,
+   "last_action": "main",
+   "last_firm": "UBS",
+   "last_date": "2026-07-30"
+  },
+  "VRTX": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "Truist Securities",
+   "last_date": "2026-08-05"
+  },
+  "VZ": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "TD Cowen",
+   "last_date": "2026-07-27"
+  },
+  "WBD": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 1,
+   "net_30d": -1,
+   "last_action": "down",
+   "last_firm": "Seaport Global",
+   "last_date": "2026-07-27"
+  },
+  "WDAY": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 2,
+   "net_30d": -2,
+   "last_action": "main",
+   "last_firm": "B of A Securities",
+   "last_date": "2026-08-19"
+  },
+  "WMT": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 1,
+   "net_30d": -1,
+   "last_action": "main",
+   "last_firm": "DA Davidson",
+   "last_date": "2026-08-17"
+  },
+  "XEL": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "Truist Securities",
+   "last_date": "2026-08-13"
+  },
+  "ZAL.DE": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": null,
+   "last_firm": null,
+   "last_date": null
+  },
+  "ZS": {
+   "upgrades_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": "main",
+   "last_firm": "Mizuho",
+   "last_date": "2026-08-19"
+  }
+ }
+}

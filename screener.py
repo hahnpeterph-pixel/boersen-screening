@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 """
 Boersen-Screening: NASDAQ-100, Dow Jones 30, DAX 40.
-Version 4 (2026-08-20): Analysten-Einstufungen jetzt als eigene, eindeutige
-Liste je Wert (Datum, Bank, konkrete Einstufung z.B. "Hold -> Buy") statt nur
-als Kurzhinweis in der Tabelle. Neue Spalte "Kauf-/Verkaufsdruck (5 Tage)"
-aus Handelsvolumen - bewusst KEIN Short/Long-Wert, echte Leerverkaufsdaten
-haben ~2 Wochen Meldeverzug und keine 7-Tage-Aufloesung (siehe Notiz im Code).
-Baut auf Version 3 auf (taegliche Top-10-Tabelle mit Rang-Historie).
+Version 5 (2026-08-20): Turnaround- und Momentum-Score beruecksichtigen jetzt
+den 5-Tage-Kauf-/Verkaufsdruck als echten Scoring-Faktor (15 Punkte), nicht
+mehr nur als Info-Spalte. Ziel: Werte, bei denen die Wende/Staerke gerade
+JETZT durch aktuelles Handelsvolumen bestaetigt wird, ranken vorne - Werte
+mit gutem Long-Setup, aber aktuellem Verkaufsdruck, fallen zurueck (mit
+Hinweis in der Begruendung). Value-Score unveraendert (dort geht es um
+Bewertung/Analysten, nicht um Kurs-Timing). Baut auf Version 4 auf.
 
 Erzeugt drei getrennte Ranglisten (Turnaround, Momentum, Value/Qualitaet),
 vergleicht sie mit dem Vortag und schreibt einen Report, der NUR
@@ -436,13 +437,14 @@ def compute_metrics(df: pd.DataFrame, bench: pd.Series | None) -> dict | None:
 # ---------------------------------------------------------------------------
 
 def score_turnaround(m: dict) -> tuple[float, list[str]]:
-    """Gefallen, aber Boden erkennbar."""
+    """Gefallen, aber Boden erkennbar UND die Wende passiert erkennbar JETZT
+    (nicht nur "war mal ueberverkauft"). Gewichte summieren sich zu 100."""
     pts, why = 0.0, []
 
     # Drawdown-Zone: interessant zwischen 25 und 60 Prozent, optimal 35-50
-    p = 25 * plateau(-m["dd_ath"], 15, 30, 55, 75)
+    p = 20 * plateau(-m["dd_ath"], 15, 30, 55, 75)
     pts += p
-    if p > 15:
+    if p > 12:
         why.append(f"{m['dd_ath']:.0f}% unter ATH")
 
     if m["higher_low"]:
@@ -450,7 +452,7 @@ def score_turnaround(m: dict) -> tuple[float, list[str]]:
         why.append("hoeheres Tief")
 
     if m["above_sma50"]:
-        pts += 15
+        pts += 10
         why.append("ueber 50-Tage-Linie")
 
     p = 10 * ramp(m["sma50_slope"], -1, 3)
@@ -466,46 +468,67 @@ def score_turnaround(m: dict) -> tuple[float, list[str]]:
         pts += 7 * plateau(m["rsi14"], 30, 45, 65, 80)
 
     if m["vol_ratio"] is not None:
-        p = 10 * ramp(m["vol_ratio"], 0.9, 1.3)
+        p = 5 * ramp(m["vol_ratio"], 0.9, 1.3)
         pts += p
-        if p > 6:
-            why.append("Anstiege auf hoeherem Volumen")
 
     pts += 5 * plateau(m["range_pos"], 5, 15, 55, 75)
-    return round(pts, 1), why
+
+    # NEU: Bestaetigt der Handel der letzten 5 Tage die Wende JETZT, oder
+    # wird trotz guter Vorgeschichte gerade verkauft? Unbekannt (None)
+    # bekommt neutralen Halbwert statt Abzug.
+    vp = m.get("vol_pressure_5d")
+    p = 15 * (ramp(vp, 0.8, 1.3) if vp is not None else 0.5)
+    pts += p
+    if vp is not None and p > 10:
+        why.append("Kaufdruck der letzten 5 Tage bestaetigt die Wende")
+    elif vp is not None and p < 5:
+        why.append("aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt")
+
+    return round(min(pts, 100.0), 1), why
 
 
 def score_momentum(m: dict) -> tuple[float, list[str]]:
-    """Staerke, nahe am Hoch."""
+    """Staerke, nahe am Hoch UND der Ausbruch wird gerade JETZT bestaetigt.
+    Gewichte summieren sich zu 100."""
     pts, why = 0.0, []
 
-    p = 25 * ramp(m["dd_ath"], -25, -2)
+    p = 20 * ramp(m["dd_ath"], -25, -2)
     pts += p
-    if p > 15:
+    if p > 12:
         why.append(f"nur {abs(m['dd_ath']):.0f}% unter ATH")
 
     if m["rs6"] is not None:
-        p = 25 * ramp(m["rs6"], -5, 25)
+        p = 20 * ramp(m["rs6"], -5, 25)
         pts += p
-        if p > 15:
+        if p > 12:
             why.append(f"relative Staerke +{m['rs6']:.0f}% vs. Index")
 
     if m["above_sma50"] and m["above_sma200"]:
-        pts += 20
+        pts += 15
         why.append("ueber 50- und 200-Tage-Linie")
     elif m["above_sma200"]:
-        pts += 8
+        pts += 6
 
     p = 10 * ramp(m["sma200_slope"], 0, 4)
     pts += p
     if p > 6:
         why.append("200-Tage-Linie steigt")
 
-    pts += 10 * ramp(m["range_pos"], 60, 90)
+    pts += 15 * ramp(m["range_pos"], 60, 90)
 
     if m["vol_ratio"] is not None:
-        pts += 10 * ramp(m["vol_ratio"], 0.9, 1.25)
-    return round(pts, 1), why
+        pts += 5 * ramp(m["vol_ratio"], 0.9, 1.25)
+
+    # NEU: bestaetigt der Handel der letzten 5 Tage die Staerke JETZT?
+    vp = m.get("vol_pressure_5d")
+    p = 15 * (ramp(vp, 0.8, 1.3) if vp is not None else 0.5)
+    pts += p
+    if vp is not None and p > 10:
+        why.append("Kaufdruck der letzten 5 Tage bestaetigt die Staerke")
+    elif vp is not None and p < 5:
+        why.append("aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch")
+
+    return round(min(pts, 100.0), 1), why
 
 
 # Gewichte fuer score_value - summieren sich zu genau 100, damit der Score

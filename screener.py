@@ -1,13 +1,12 @@
 #!/usr/bin/env python3
 """
 Boersen-Screening: NASDAQ-100, Dow Jones 30, DAX 40.
-Version 5 (2026-08-20): Turnaround- und Momentum-Score beruecksichtigen jetzt
-den 5-Tage-Kauf-/Verkaufsdruck als echten Scoring-Faktor (15 Punkte), nicht
-mehr nur als Info-Spalte. Ziel: Werte, bei denen die Wende/Staerke gerade
-JETZT durch aktuelles Handelsvolumen bestaetigt wird, ranken vorne - Werte
-mit gutem Long-Setup, aber aktuellem Verkaufsdruck, fallen zurueck (mit
-Hinweis in der Begruendung). Value-Score unveraendert (dort geht es um
-Bewertung/Analysten, nicht um Kurs-Timing). Baut auf Version 4 auf.
+Version 7 (2026-08-20): Top-10-Tabelle zeigt jetzt jeden Einzelscore als
+eigene Spalte (Punkte/Maximum + zugrundeliegender Wert), z.B. "18/20 (-31%)".
+Die bisherige "Score"-Spalte heisst jetzt "Gesamt" und ist rechnerisch exakt
+die Summe aller Einzelscores der Zeile - Ranking erfolgt weiterhin danach.
+Kurzbegruendung entfaellt (durch die Einzelscores ueberfluessig geworden).
+Baut auf Version 6 auf (Cache-Versionierung).
 
 Erzeugt drei getrennte Ranglisten (Turnaround, Momentum, Value/Qualitaet),
 vergleicht sie mit dem Vortag und schreibt einen Report, der NUR
@@ -59,6 +58,12 @@ RANK_JUMP = 5         # ab wie vielen Plaetzen eine Bewegung gemeldet wird
 HISTORY_PERIOD = "10y"  # Basis fuer das Allzeithoch
 FUND_MAX_AGE_DAYS = 7    # langsame Fundamentaldaten (KGV, Marge, Schulden) hoechstens so alt
 ANALYST_MAX_AGE_DAYS = 1  # Ratingaenderungen taeglich frisch - das ist das kurzfristige Signal
+# Bei jeder Erweiterung der gespeicherten Felder hier hochzaehlen. Ein Cache
+# mit abweichender Version wird ignoriert (sofort neu geholt), egal wie
+# frisch er nach dem Alter waere - sonst benutzt ein neuer Programmlauf
+# unbemerkt einen Cache mit alter, unvollstaendiger Datenstruktur.
+FUND_CACHE_VERSION = 2
+ANALYST_CACHE_VERSION = 2
 REVISION_WINDOW_DAYS = 30  # Fenster fuer "kurzfristige" Analysten-Ratingaenderungen
 EARNINGS_WARN_DAYS = 5  # Warnung vor Quartalszahlen
 
@@ -223,9 +228,12 @@ def get_fundamentals(tickers: list[str]) -> dict:
         except Exception:  # noqa: BLE001
             pass
 
-    if age_days < FUND_MAX_AGE_DAYS and cache.get("data"):
+    if (age_days < FUND_MAX_AGE_DAYS and cache.get("data")
+            and cache.get("version") == FUND_CACHE_VERSION):
         print(f"Fundamentaldaten aus Cache ({age_days:.1f} Tage alt).")
         return cache["data"]
+    if cache.get("data") and cache.get("version") != FUND_CACHE_VERSION:
+        print("Cache-Format veraltet (neue Version) - hole Fundamentaldaten neu.")
 
     print("Aktualisiere Fundamentaldaten (dauert einige Minuten) ...")
     import yfinance as yf
@@ -255,7 +263,7 @@ def get_fundamentals(tickers: list[str]) -> dict:
 
     STATE_DIR.mkdir(parents=True, exist_ok=True)
     FUND_FILE.write_text(json.dumps(
-        {"updated": datetime.now(timezone.utc).isoformat(), "data": data},
+        {"updated": datetime.now(timezone.utc).isoformat(), "version": FUND_CACHE_VERSION, "data": data},
         indent=1), encoding="utf-8")
     return data
 
@@ -285,9 +293,12 @@ def get_analyst_data(tickers: list[str]) -> dict:
         except Exception:  # noqa: BLE001
             pass
 
-    if age_days < ANALYST_MAX_AGE_DAYS and cache.get("data"):
+    if (age_days < ANALYST_MAX_AGE_DAYS and cache.get("data")
+            and cache.get("version") == ANALYST_CACHE_VERSION):
         print(f"Analysten-Ratings aus Cache ({age_days * 24:.1f} Std. alt).")
         return cache["data"]
+    if cache.get("data") and cache.get("version") != ANALYST_CACHE_VERSION:
+        print("Cache-Format veraltet (neue Version) - hole Analysten-Ratings neu.")
 
     print("Aktualisiere Analysten-Ratingaenderungen ...")
     import yfinance as yf
@@ -339,7 +350,7 @@ def get_analyst_data(tickers: list[str]) -> dict:
 
     STATE_DIR.mkdir(parents=True, exist_ok=True)
     ANALYST_FILE.write_text(json.dumps(
-        {"updated": datetime.now(timezone.utc).isoformat(), "data": data},
+        {"updated": datetime.now(timezone.utc).isoformat(), "version": ANALYST_CACHE_VERSION, "data": data},
         indent=1), encoding="utf-8")
     return data
 
@@ -436,99 +447,126 @@ def compute_metrics(df: pd.DataFrame, bench: pd.Series | None) -> dict | None:
 # Scores
 # ---------------------------------------------------------------------------
 
-def score_turnaround(m: dict) -> tuple[float, list[str]]:
+def score_turnaround(m: dict) -> tuple[float, list[str], list[dict]]:
     """Gefallen, aber Boden erkennbar UND die Wende passiert erkennbar JETZT
-    (nicht nur "war mal ueberverkauft"). Gewichte summieren sich zu 100."""
-    pts, why = 0.0, []
+    (nicht nur "war mal ueberverkauft"). Gewichte summieren sich zu 100.
+    Gibt (Gesamt-Score, Kurzbegruendungen, Einzelscore-Aufschluesselung) zurueck."""
+    why = []
+    b: list[dict] = []
 
     # Drawdown-Zone: interessant zwischen 25 und 60 Prozent, optimal 35-50
     p = 20 * plateau(-m["dd_ath"], 15, 30, 55, 75)
-    pts += p
+    b.append({"label": "Abstand ATH", "points": round(p, 1), "max": 20, "detail": f"{m['dd_ath']:.0f}%"})
     if p > 12:
         why.append(f"{m['dd_ath']:.0f}% unter ATH")
 
+    p = 20.0 if m["higher_low"] else 0.0
+    b.append({"label": "Hoeheres Tief", "points": p, "max": 20, "detail": "ja" if m["higher_low"] else "nein"})
     if m["higher_low"]:
-        pts += 20
         why.append("hoeheres Tief")
 
+    p = 10.0 if m["above_sma50"] else 0.0
+    b.append({"label": "Ueber 50T-Linie", "points": p, "max": 10, "detail": "ja" if m["above_sma50"] else "nein"})
     if m["above_sma50"]:
-        pts += 10
         why.append("ueber 50-Tage-Linie")
 
     p = 10 * ramp(m["sma50_slope"], -1, 3)
-    pts += p
+    b.append({"label": "50T dreht", "points": round(p, 1), "max": 10, "detail": f"{m['sma50_slope']:+.1f}%"})
     if p > 6:
         why.append("50-Tage-Linie dreht nach oben")
 
     # RSI aus der Ueberverkauftheit heraus
     if m["rsi_min60"] < 35 and 40 <= m["rsi14"] <= 70:
-        pts += 15
+        p = 15.0
+        detail = f"RSI {m['rsi14']:.0f}, erholt"
         why.append("RSI erholt sich aus dem ueberverkauften Bereich")
     else:
-        pts += 7 * plateau(m["rsi14"], 30, 45, 65, 80)
+        p = 7 * plateau(m["rsi14"], 30, 45, 65, 80)
+        detail = f"RSI {m['rsi14']:.0f}"
+    b.append({"label": "RSI-Erholung", "points": round(p, 1), "max": 15, "detail": detail})
 
     if m["vol_ratio"] is not None:
         p = 5 * ramp(m["vol_ratio"], 0.9, 1.3)
-        pts += p
+        detail = f"{m['vol_ratio']:.2f}"
+    else:
+        p, detail = 0.0, "k.A."
+    b.append({"label": "Volumen 60T", "points": round(p, 1), "max": 5, "detail": detail})
 
-    pts += 5 * plateau(m["range_pos"], 5, 15, 55, 75)
+    p = 5 * plateau(m["range_pos"], 5, 15, 55, 75)
+    b.append({"label": "Range-Pos", "points": round(p, 1), "max": 5, "detail": f"{m['range_pos']:.0f}%"})
 
     # NEU: Bestaetigt der Handel der letzten 5 Tage die Wende JETZT, oder
     # wird trotz guter Vorgeschichte gerade verkauft? Unbekannt (None)
     # bekommt neutralen Halbwert statt Abzug.
     vp = m.get("vol_pressure_5d")
     p = 15 * (ramp(vp, 0.8, 1.3) if vp is not None else 0.5)
-    pts += p
+    b.append({"label": "Kauf/Verkauf 5T", "points": round(p, 1), "max": 15,
+              "detail": f"{vp:.2f}x" if vp is not None else "k.A."})
     if vp is not None and p > 10:
         why.append("Kaufdruck der letzten 5 Tage bestaetigt die Wende")
     elif vp is not None and p < 5:
         why.append("aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt")
 
-    return round(min(pts, 100.0), 1), why
+    total = round(min(sum(x["points"] for x in b), 100.0), 1)
+    return total, why, b
 
 
-def score_momentum(m: dict) -> tuple[float, list[str]]:
+def score_momentum(m: dict) -> tuple[float, list[str], list[dict]]:
     """Staerke, nahe am Hoch UND der Ausbruch wird gerade JETZT bestaetigt.
     Gewichte summieren sich zu 100."""
-    pts, why = 0.0, []
+    why = []
+    b: list[dict] = []
 
     p = 20 * ramp(m["dd_ath"], -25, -2)
-    pts += p
+    b.append({"label": "Naehe ATH", "points": round(p, 1), "max": 20, "detail": f"{m['dd_ath']:.0f}%"})
     if p > 12:
         why.append(f"nur {abs(m['dd_ath']):.0f}% unter ATH")
 
     if m["rs6"] is not None:
         p = 20 * ramp(m["rs6"], -5, 25)
-        pts += p
+        detail = f"{m['rs6']:+.0f}%"
         if p > 12:
             why.append(f"relative Staerke +{m['rs6']:.0f}% vs. Index")
+    else:
+        p, detail = 0.0, "k.A."
+    b.append({"label": "Rel. Staerke 6M", "points": round(p, 1), "max": 20, "detail": detail})
 
     if m["above_sma50"] and m["above_sma200"]:
-        pts += 15
+        p, detail = 15.0, "beide"
         why.append("ueber 50- und 200-Tage-Linie")
     elif m["above_sma200"]:
-        pts += 6
+        p, detail = 6.0, "nur 200T"
+    else:
+        p, detail = 0.0, "keine"
+    b.append({"label": "Ueber 50T+200T", "points": p, "max": 15, "detail": detail})
 
     p = 10 * ramp(m["sma200_slope"], 0, 4)
-    pts += p
+    b.append({"label": "200T steigt", "points": round(p, 1), "max": 10, "detail": f"{m['sma200_slope']:+.1f}%"})
     if p > 6:
         why.append("200-Tage-Linie steigt")
 
-    pts += 15 * ramp(m["range_pos"], 60, 90)
+    p = 15 * ramp(m["range_pos"], 60, 90)
+    b.append({"label": "Range-Pos", "points": round(p, 1), "max": 15, "detail": f"{m['range_pos']:.0f}%"})
 
     if m["vol_ratio"] is not None:
-        pts += 5 * ramp(m["vol_ratio"], 0.9, 1.25)
+        p = 5 * ramp(m["vol_ratio"], 0.9, 1.25)
+        detail = f"{m['vol_ratio']:.2f}"
+    else:
+        p, detail = 0.0, "k.A."
+    b.append({"label": "Volumen 60T", "points": round(p, 1), "max": 5, "detail": detail})
 
     # NEU: bestaetigt der Handel der letzten 5 Tage die Staerke JETZT?
     vp = m.get("vol_pressure_5d")
     p = 15 * (ramp(vp, 0.8, 1.3) if vp is not None else 0.5)
-    pts += p
+    b.append({"label": "Kauf/Verkauf 5T", "points": round(p, 1), "max": 15,
+              "detail": f"{vp:.2f}x" if vp is not None else "k.A."})
     if vp is not None and p > 10:
         why.append("Kaufdruck der letzten 5 Tage bestaetigt die Staerke")
     elif vp is not None and p < 5:
         why.append("aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch")
 
-    return round(min(pts, 100.0), 1), why
+    total = round(min(sum(x["points"] for x in b), 100.0), 1)
+    return total, why, b
 
 
 # Gewichte fuer score_value - summieren sich zu genau 100, damit der Score
@@ -547,13 +585,24 @@ W_REVISIONS = 10    # Analysten-Ratingaenderungen, letzte 30 Tage
 W_UPSIDE = 5        # Abstand zum mittleren Analysten-Kursziel
 
 
-def score_value(m: dict, f: dict, a: dict) -> tuple[float, list[str]]:
+def score_value(m: dict, f: dict, a: dict) -> tuple[float, list[str], list[dict]]:
     """Bewertung und Qualitaet, 0-100. Grobe Vorsortierung - Fundamentaldaten
     sind lueckenhaft, siehe SETUP.md Teil D."""
-    if not f:
-        return 0.0, ["keine Fundamentaldaten"]
+    why: list[str] = []
+    b: list[dict] = []
 
-    pts, why = 0.0, []
+    def add(label: str, points: float, max_: float, detail: str) -> None:
+        b.append({"label": label, "points": round(points, 1), "max": max_, "detail": detail})
+
+    if not f:
+        for label, max_ in (("KGV verbessert", W_PE_IMPROVE), ("KGV Niveau", W_PE_LEVEL),
+                            ("Free Cashflow", W_FCF), ("Marge", W_MARGIN),
+                            ("Umsatzwachstum", W_GROWTH), ("Eigenkapitalrendite", W_ROE),
+                            ("Verschuldung", W_DEBT), ("Ueber 200T-Linie", W_STRUCTURE),
+                            ("Analysten-Revisionen", W_REVISIONS), ("Kursziel-Abstand", W_UPSIDE)):
+            add(label, 0.0, max_, "k.A.")
+        return 0.0, ["keine Fundamentaldaten"], b
+
     tpe = safe(f, "trailingPE")
     fpe = safe(f, "forwardPE")
     margin = safe(f, "profitMargins")
@@ -564,36 +613,55 @@ def score_value(m: dict, f: dict, a: dict) -> tuple[float, list[str]]:
     target = safe(f, "targetMeanPrice")
 
     if fpe and tpe and 0 < fpe < tpe:
-        pts += W_PE_IMPROVE
+        add("KGV verbessert", W_PE_IMPROVE, W_PE_IMPROVE, f"{fpe:.1f} < {tpe:.1f}")
         why.append("erwartetes KGV unter aktuellem")
+    else:
+        add("KGV verbessert", 0.0, W_PE_IMPROVE, "nein" if fpe or tpe else "k.A.")
+
     if fpe and fpe > 0:
-        pts += W_PE_LEVEL * ramp(fpe, 30, 10)
+        p = W_PE_LEVEL * ramp(fpe, 30, 10)
+        add("KGV Niveau", p, W_PE_LEVEL, f"{fpe:.1f}")
+    else:
+        add("KGV Niveau", 0.0, W_PE_LEVEL, "k.A.")
 
     if fcf and fcf > 0:
-        pts += W_FCF
+        add("Free Cashflow", W_FCF, W_FCF, "positiv")
         why.append("positiver Free Cashflow")
+    else:
+        add("Free Cashflow", 0.0, W_FCF, "negativ/k.A.")
 
     if margin and margin > 0:
-        pts += W_MARGIN * ramp(margin, 0, 0.20)
+        p = W_MARGIN * ramp(margin, 0, 0.20)
+        add("Marge", p, W_MARGIN, f"{margin * 100:.1f}%")
+    else:
+        add("Marge", 0.0, W_MARGIN, "k.A.")
 
     if rev_growth and rev_growth > 0:
         p = W_GROWTH * ramp(rev_growth, 0, 0.15)
-        pts += p
+        add("Umsatzwachstum", p, W_GROWTH, f"{rev_growth * 100:.0f}%")
         if p > W_GROWTH * 0.6:
             why.append(f"Umsatzwachstum {rev_growth * 100:.0f}%")
+    else:
+        add("Umsatzwachstum", 0.0, W_GROWTH, "k.A.")
 
     if roe and roe > 0:
-        pts += W_ROE * ramp(roe, 0.05, 0.25)
+        p = W_ROE * ramp(roe, 0.05, 0.25)
+        add("Eigenkapitalrendite", p, W_ROE, f"{roe * 100:.1f}%")
+    else:
+        add("Eigenkapitalrendite", 0.0, W_ROE, "k.A.")
 
     if d2e is not None:
-        pts += W_DEBT * ramp(d2e, 200, 40)
+        p = W_DEBT * ramp(d2e, 200, 40)
+        add("Verschuldung", p, W_DEBT, f"{d2e:.0f}")
+    else:
+        add("Verschuldung", 0.0, W_DEBT, "k.A.")
 
-    if m["above_sma200"]:
-        pts += W_STRUCTURE
+    add("Ueber 200T-Linie", W_STRUCTURE if m["above_sma200"] else 0.0, W_STRUCTURE,
+        "ja" if m["above_sma200"] else "nein")
 
     net_rev = safe(a, "net_30d", 0)
     p = W_REVISIONS * ramp(net_rev, -2, 2)
-    pts += p
+    add("Analysten-Revisionen", p, W_REVISIONS, f"{net_rev:+d}" if net_rev else "0")
     if net_rev and net_rev != 0:
         richtung = "hochgestuft" if net_rev > 0 else "herabgestuft"
         why.append(f"Analysten zuletzt netto {abs(net_rev)}x {richtung} (30 Tage)")
@@ -601,11 +669,14 @@ def score_value(m: dict, f: dict, a: dict) -> tuple[float, list[str]]:
     if target and target > 0 and m["last"] > 0:
         upside = (target / m["last"] - 1) * 100
         p = W_UPSIDE * ramp(upside, 0, 20)
-        pts += p
+        add("Kursziel-Abstand", p, W_UPSIDE, f"{upside:.0f}%")
         if upside > 8:
             why.append(f"{upside:.0f}% Abstand zum mittleren Kursziel")
+    else:
+        add("Kursziel-Abstand", 0.0, W_UPSIDE, "k.A.")
 
-    return round(min(pts, 100.0), 1), why
+    total = round(min(sum(x["points"] for x in b), 100.0), 1)
+    return total, why, b
 
 
 def format_revision(a: dict) -> str | None:
@@ -671,9 +742,9 @@ def build_state(prices, fundamentals, analyst, members, benchmarks) -> dict:
         f = fundamentals.get(t, {}) or {}
         a = analyst.get(t, {}) or {}
         flags = exclusions(m, f)
-        s_turn, w_turn = score_turnaround(m)
-        s_mom, w_mom = score_momentum(m)
-        s_val, w_val = score_value(m, f, a)
+        s_turn, w_turn, bd_turn = score_turnaround(m)
+        s_mom, w_mom, bd_mom = score_momentum(m)
+        s_val, w_val, bd_val = score_value(m, f, a)
         rows[t] = {
             "name": clean_name(safe(f, "shortName"), t),
             "index": "/".join(idxs),
@@ -685,6 +756,7 @@ def build_state(prices, fundamentals, analyst, members, benchmarks) -> dict:
             "revision_note": format_revision(a),
             "scores": {"turnaround": s_turn, "momentum": s_mom, "value": s_val},
             "why": {"turnaround": w_turn, "momentum": w_mom, "value": w_val},
+            "breakdown": {"turnaround": bd_turn, "momentum": bd_mom, "value": bd_val},
         }
 
     ranks = {}
@@ -838,29 +910,36 @@ def build_rank_lookup(history: list[dict], today_date: str):
 
 def build_top10_tables(today: dict, get_rank) -> str:
     L = ["## 📊 Aktuelle Top 10", "",
-         "_Score = Kennzahlen-Uebereinstimmung (0-100), keine statistische "
-         "Erfolgsprognose. Rang-Spalten: letzter Handelstag / vor rund einer Woche, "
-         "\"neu\" = damals nicht in den Top 40 dieser Liste. Kauf-/Verkaufsdruck = "
-         "Volumen an Anstiegs- vs. Ruecksetzertagen der letzten 5 Handelstage, "
-         "KEIN Short/Long-Wert (echte Leerverkaufsdaten haben ~2 Wochen Verzug)._", ""]
+         "_Jede Spalte vor \"Gesamt\" ist ein Einzelscore dieser Kategorie: "
+         "erzielte Punkte von den maximal moeglichen, dahinter in Klammern der "
+         "zugrundeliegende Wert. Gesamt = Summe aller Einzelscores dieser Zeile, "
+         "0-100 - Ranking erfolgt danach. Kein statistisch ermitteltes "
+         "Erfolgsmass, siehe Hinweis am Berichtsende. Rang-Spalten: letzter "
+         "Handelstag / vor rund einer Woche, \"neu\" = damals nicht in den Top 40 "
+         "dieser Liste._", ""]
     for name in LISTS:
+        sample = today["rows"][today["ranks_full"][name][0]]["breakdown"][name] if today["ranks_full"][name] else []
+        labels = [x["label"] for x in sample]
+
         L.append(f"### {LIST_TITLES[name]}")
         L.append("")
-        L.append("| Rang | Ticker | Name | Index | Score | Einordnung | Rang gestern | "
-                 "Rang Vorwoche | Kauf-/Verkaufsdruck (5T) | Kurzbegruendung |")
-        L.append("|---|---|---|---|---|---|---|---|---|---|")
+        header = ["Rang", "Ticker", "Name", "Index"] + labels + \
+                 ["**Gesamt**", "Einordnung", "Rang gestern", "Rang Vorwoche"]
+        L.append("| " + " | ".join(header) + " |")
+        L.append("|" + "---|" * len(header))
+
         for i, t in enumerate(today["ranks_full"][name][:10], 1):
             row = today["rows"][t]
             score = row["scores"][name]
-            why = row["why"][name][0] if row["why"][name] else "-"
+            bd = row["breakdown"][name]
             ry = get_rank(name, t, "yesterday")
             rw = get_rank(name, t, "lastweek")
             ry_s = str(ry) if ry else "neu"
             rw_s = str(rw) if rw else "neu"
-            vp = row["metrics"].get("vol_pressure_5d")
-            vp_s = f"{vp:.2f} ({pressure_label(vp)})" if vp is not None else "unbekannt"
-            L.append(f"| {i} | {t} | {row['name']} | {row['index']} | {score:.0f} | "
-                     f"{score_label(score)} | {ry_s} | {rw_s} | {vp_s} | {why} |")
+            factor_cells = [f"{x['points']:.0f}/{x['max']:.0f} ({x['detail']})" for x in bd]
+            cells = [str(i), t, row["name"], row["index"]] + factor_cells + \
+                    [f"**{score:.0f}**", score_label(score), ry_s, rw_s]
+            L.append("| " + " | ".join(cells) + " |")
         L.append("")
     return "\n".join(L)
 

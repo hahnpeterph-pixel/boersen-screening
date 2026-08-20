@@ -5,35 +5,35 @@
    "BEI.DE",
    "HNR1.DE",
    "MELI",
-   "AXP",
-   "BAYN.DE",
-   "ADBE",
-   "KHC",
-   "ZS",
    "ROP",
-   "HEN3.DE",
+   "BAYN.DE",
+   "AXP",
+   "KHC",
    "AXON",
+   "DASH",
+   "HEN3.DE",
+   "CRM",
    "PYPL",
    "DTG.DE",
-   "CSX",
-   "DASH"
+   "ADSK",
+   "CSX"
   ],
   "momentum": [
    "ABNB",
+   "MRVL",
    "TEAM",
    "MRK",
    "DB1.DE",
    "ALV.DE",
-   "MRVL",
+   "MU",
    "FANG",
+   "CSX",
    "DXCM",
    "KO",
-   "MU",
-   "CSX",
+   "BAYN.DE",
    "AXON",
-   "DTG.DE",
    "PYPL",
-   "BAYN.DE"
+   "DTG.DE"
   ],
   "value": [
    "MU",
@@ -49,174 +49,53 @@
    "DXCM",
    "ODFL",
    "GOOGL",
-   "ALV.DE",
-   "ROST"
+   "ROST",
+   "ALV.DE"
   ]
  },
  "changes": {
   "turnaround": {
    "entries": [
     {
-     "ticker": "AXP",
-     "rank": 4
+     "ticker": "CRM",
+     "rank": 11
     },
     {
-     "ticker": "ADBE",
-     "rank": 6
-    },
-    {
-     "ticker": "ZS",
-     "rank": 8
-    },
-    {
-     "ticker": "ROP",
-     "rank": 9
-    },
-    {
-     "ticker": "PYPL",
-     "rank": 12
-    },
-    {
-     "ticker": "DTG.DE",
-     "rank": 13
-    },
-    {
-     "ticker": "CSX",
+     "ticker": "ADSK",
      "rank": 14
     }
    ],
    "exits": [
     {
-     "ticker": "WDAY",
-     "old_rank": 3
-    },
-    {
-     "ticker": "CRM",
-     "old_rank": 5
-    },
-    {
-     "ticker": "CTSH",
+     "ticker": "ADBE",
      "old_rank": 6
     },
     {
-     "ticker": "DXCM",
+     "ticker": "ZS",
      "old_rank": 8
-    },
-    {
-     "ticker": "MRK.DE",
-     "old_rank": 9
-    },
-    {
-     "ticker": "BNR.DE",
-     "old_rank": 12
-    },
-    {
-     "ticker": "SY1.DE",
-     "old_rank": 14
     }
    ],
    "moves": [
     {
-     "ticker": "HNR1.DE",
-     "rank": 2,
-     "delta": 11
+     "ticker": "ROP",
+     "rank": 4,
+     "delta": 5
     },
     {
-     "ticker": "MELI",
-     "rank": 3,
-     "delta": 7
-    },
-    {
-     "ticker": "HEN3.DE",
-     "rank": 10,
-     "delta": -6
+     "ticker": "DASH",
+     "rank": 9,
+     "delta": 6
     }
    ]
   },
   "momentum": {
-   "entries": [
-    {
-     "ticker": "TEAM",
-     "rank": 2
-    },
-    {
-     "ticker": "MRVL",
-     "rank": 6
-    },
-    {
-     "ticker": "DXCM",
-     "rank": 8
-    },
-    {
-     "ticker": "MU",
-     "rank": 10
-    },
-    {
-     "ticker": "AXON",
-     "rank": 12
-    },
-    {
-     "ticker": "DTG.DE",
-     "rank": 13
-    },
-    {
-     "ticker": "PYPL",
-     "rank": 14
-    },
-    {
-     "ticker": "BAYN.DE",
-     "rank": 15
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "JNJ",
-     "old_rank": 6
-    },
-    {
-     "ticker": "CVX",
-     "old_rank": 8
-    },
-    {
-     "ticker": "VRTX",
-     "old_rank": 10
-    },
-    {
-     "ticker": "PANW",
-     "old_rank": 11
-    },
-    {
-     "ticker": "DHL.DE",
-     "old_rank": 12
-    },
-    {
-     "ticker": "CRWD",
-     "old_rank": 13
-    },
-    {
-     "ticker": "FTNT",
-     "old_rank": 14
-    },
-    {
-     "ticker": "FAST",
-     "old_rank": 15
-    }
-   ],
+   "entries": [],
+   "exits": [],
    "moves": []
   },
   "value": {
-   "entries": [
-    {
-     "ticker": "ROST",
-     "rank": 15
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "CVX",
-     "old_rank": 15
-    }
-   ],
+   "entries": [],
+   "exits": [],
    "moves": []
   },
   "analyst_flips": []

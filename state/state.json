@@ -1,40 +1,40 @@
 {
  "date": "2026-08-20",
- "generated": "2026-08-20T12:01:28+00:00",
+ "generated": "2026-08-20T12:18:49+00:00",
  "ranks": {
   "turnaround": [
    "ROP",
    "WDAY",
-   "FRE.DE",
-   "BAYN.DE",
    "BEI.DE",
+   "BAYN.DE",
    "CRM",
+   "SHL.DE",
    "DXCM",
+   "VOW3.DE",
    "AXON",
-   "MELI",
-   "SY1.DE",
    "BNR.DE",
    "KHC",
    "HEN3.DE",
    "P911.DE",
-   "DASH"
+   "DASH",
+   "HNR1.DE"
   ],
   "momentum": [
-   "ALV.DE",
    "MRK",
-   "PANW",
    "DB1.DE",
    "ABNB",
-   "CRWD",
-   "RWE.DE",
-   "FTNT",
-   "DHL.DE",
-   "CBK.DE",
-   "AMZN",
    "JNJ",
    "KO",
+   "CSX",
+   "FANG",
    "AMGN",
-   "CSX"
+   "ALV.DE",
+   "PANW",
+   "DTG.DE",
+   "CVX",
+   "CRWD",
+   "FAST",
+   "MRVL"
   ],
   "value": [
    "MU",
@@ -58,86 +58,86 @@
   "turnaround": [
    "ROP",
    "WDAY",
-   "FRE.DE",
-   "BAYN.DE",
    "BEI.DE",
+   "BAYN.DE",
    "CRM",
+   "SHL.DE",
    "DXCM",
+   "VOW3.DE",
    "AXON",
-   "MELI",
-   "SY1.DE",
    "BNR.DE",
    "KHC",
    "HEN3.DE",
    "P911.DE",
    "DASH",
-   "SHW",
-   "TRV",
-   "CMCSA",
-   "MUV2.DE",
    "HNR1.DE",
-   "BA",
-   "MMM",
-   "RWE.DE",
-   "DIS",
+   "CMCSA",
+   "PYPL",
+   "SY1.DE",
    "DTE.DE",
-   "BKR",
+   "CSX",
+   "FAST",
+   "BAS.DE",
+   "DB1.DE",
    "FANG",
+   "DIS",
+   "BKR",
    "CVX",
+   "RWE.DE",
    "EXC",
    "AEP",
-   "CDW",
    "ADSK",
-   "BIIB",
-   "SHL.DE",
-   "ZS",
-   "CTSH",
-   "QIA.DE",
    "ADBE",
+   "ZS",
+   "BIIB",
+   "CTSH",
+   "CDW",
    "MRVL",
-   "IDXX"
+   "FRE.DE",
+   "MSFT",
+   "REGN"
   ],
   "momentum": [
-   "ALV.DE",
    "MRK",
-   "PANW",
    "DB1.DE",
    "ABNB",
-   "CRWD",
-   "RWE.DE",
-   "FTNT",
-   "DHL.DE",
-   "CBK.DE",
-   "AMZN",
    "JNJ",
    "KO",
-   "AMGN",
    "CSX",
-   "SIE.DE",
    "FANG",
+   "AMGN",
+   "ALV.DE",
+   "PANW",
+   "DTG.DE",
    "CVX",
+   "CRWD",
+   "FAST",
+   "MRVL",
+   "CBK.DE",
    "BKNG",
-   "BKR",
-   "SY1.DE",
+   "RWE.DE",
    "CCEP",
-   "SHW",
+   "BKR",
    "BAS.DE",
+   "AMZN",
+   "BNR.DE",
    "MDLZ",
-   "TTWO",
    "WBD",
+   "SY1.DE",
+   "GOOGL",
    "AEP",
    "DTE.DE",
    "EXC",
-   "TRV",
-   "DBK.DE",
-   "JPM",
-   "MMM",
-   "V",
    "VRTX",
-   "MRVL",
-   "SBUX",
-   "AIR.DE",
-   "DTG.DE"
+   "DHL.DE",
+   "TEAM",
+   "AAPL",
+   "FTNT",
+   "JPM",
+   "DBK.DE",
+   "ADP",
+   "V",
+   "TRV"
   ],
   "value": [
    "MU",
@@ -221,8 +221,8 @@
    },
    "revision_note": "Analysten ↓2 in 30T (Jefferies, 2026-08-10)",
    "scores": {
-    "turnaround": 59.3,
-    "momentum": 61.1,
+    "turnaround": 67.8,
+    "momentum": 67.6,
     "value": 72.6
    },
    "why": {
@@ -230,11 +230,13 @@
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
      "50-Tage-Linie dreht nach oben",
-     "RSI erholt sich aus dem ueberverkauften Bereich"
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
     "momentum": [
      "nur 7% unter ATH",
-     "ueber 50- und 200-Tage-Linie"
+     "ueber 50- und 200-Tage-Linie",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -282,8 +284,8 @@
    },
    "revision_note": "Analysten ↑1 in 30T (BMO Capital, 2026-08-10)",
    "scores": {
-    "turnaround": 58.5,
-    "momentum": 84.6,
+    "turnaround": 63.5,
+    "momentum": 87.2,
     "value": 82.5
    },
    "why": {
@@ -291,12 +293,13 @@
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
      "50-Tage-Linie dreht nach oben",
-     "Anstiege auf hoeherem Volumen"
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
     "momentum": [
      "relative Staerke +32% vs. Index",
      "ueber 50- und 200-Tage-Linie",
-     "200-Tage-Linie steigt"
+     "200-Tage-Linie steigt",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -344,8 +347,8 @@
    },
    "revision_note": "Analysten ↓1 in 30T (B of A Securities, 2026-08-19)",
    "scores": {
-    "turnaround": 78.2,
-    "momentum": 20.0,
+    "turnaround": 84.6,
+    "momentum": 30.0,
     "value": 83.9
    },
    "why": {
@@ -353,10 +356,12 @@
      "-60% unter ATH",
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
-     "RSI erholt sich aus dem ueberverkauften Bereich"
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
     "momentum": [
-     "ueber 50- und 200-Tage-Linie"
+     "ueber 50- und 200-Tage-Linie",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -404,17 +409,19 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 40.4,
-    "momentum": 31.8,
+    "turnaround": 39.2,
+    "momentum": 28.3,
     "value": 75.7
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
-     "RSI erholt sich aus dem ueberverkauften Bereich"
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
     "momentum": [
-     "200-Tage-Linie steigt"
+     "200-Tage-Linie steigt",
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -434,18 +441,18 @@
     "range_pos": 79.3,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 8.67,
-    "sma200_slope": -0.5,
+    "sma50_slope": 8.33,
+    "sma200_slope": -0.38,
     "higher_low": true,
-    "rsi14": 63.0,
+    "rsi14": 63.3,
     "rsi_min60": 42.5,
     "perf": {
-     "m1": 8.6,
-     "m3": 30.2,
-     "m6": 32.8,
-     "m12": -5.6
+     "m1": 12.6,
+     "m3": 26.7,
+     "m6": 29.7,
+     "m12": -5.9
     },
-    "rs6": 14.6,
+    "rs6": 11.5,
     "vol_pressure_5d": 2.03,
     "vol_ratio": 1.08
    },
@@ -461,19 +468,20 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 56.5,
-    "momentum": 61.6,
+    "turnaround": 64.2,
+    "momentum": 64.2,
     "value": 73.2
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
-     "50-Tage-Linie dreht nach oben"
+     "50-Tage-Linie dreht nach oben",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
     "momentum": [
-     "relative Staerke +15% vs. Index",
-     "ueber 50- und 200-Tage-Linie"
+     "ueber 50- und 200-Tage-Linie",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -492,20 +500,20 @@
     "range_pos": 45.7,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 0.01,
-    "sma200_slope": -2.78,
+    "sma50_slope": 0.62,
+    "sma200_slope": -2.67,
     "higher_low": true,
-    "rsi14": 60.5,
+    "rsi14": 60.6,
     "rsi_min60": 26.0,
     "perf": {
-     "m1": 15.8,
-     "m3": 7.5,
-     "m6": 12.4,
-     "m12": -12.4
+     "m1": 19.0,
+     "m3": 2.9,
+     "m6": 9.4,
+     "m12": -13.2
     },
-    "rs6": -5.7,
+    "rs6": -8.8,
     "vol_pressure_5d": 1.86,
-    "vol_ratio": 1.12
+    "vol_ratio": 1.09
    },
    "flags": [],
    "earnings_in": 7,
@@ -519,8 +527,8 @@
    },
    "revision_note": "Analysten ↑2 in 30T (Goldman Sachs, 2026-08-11)",
    "scores": {
-    "turnaround": 82.4,
-    "momentum": 26.3,
+    "turnaround": 86.9,
+    "momentum": 32.7,
     "value": 88.1
    },
    "why": {
@@ -528,10 +536,12 @@
      "-27% unter ATH",
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
-     "RSI erholt sich aus dem ueberverkauften Bereich"
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
     "momentum": [
-     "ueber 50- und 200-Tage-Linie"
+     "ueber 50- und 200-Tage-Linie",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -552,20 +562,20 @@
     "range_pos": 66.9,
     "above_sma50": false,
     "above_sma200": true,
-    "sma50_slope": -0.08,
-    "sma200_slope": 1.12,
+    "sma50_slope": -0.03,
+    "sma200_slope": 1.08,
     "higher_low": false,
-    "rsi14": 44.5,
-    "rsi_min60": 32.0,
+    "rsi14": 44.4,
+    "rsi_min60": 31.4,
     "perf": {
-     "m1": -2.9,
-     "m3": -0.4,
-     "m6": -1.6,
-     "m12": 16.2
+     "m1": -2.5,
+     "m3": -1.3,
+     "m6": 0.7,
+     "m12": 17.6
     },
-    "rs6": -19.8,
+    "rs6": -17.5,
     "vol_pressure_5d": 1.34,
-    "vol_ratio": 0.98
+    "vol_ratio": 0.95
    },
    "flags": [],
    "earnings_in": null,
@@ -579,16 +589,18 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 21.3,
-    "momentum": 33.5,
+    "turnaround": 35.1,
+    "momentum": 42.4,
     "value": 44.7
    },
    "why": {
     "turnaround": [
-     "RSI erholt sich aus dem ueberverkauften Bereich"
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
     "momentum": [
-     "nur 8% unter ATH"
+     "nur 8% unter ATH",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
     ],
     "value": [
      "erwartetes KGV unter aktuellem"
@@ -633,8 +645,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 75.5,
-    "momentum": 37.9,
+    "turnaround": 69.6,
+    "momentum": 31.3,
     "value": 81.5
    },
    "why": {
@@ -642,11 +654,13 @@
      "-31% unter ATH",
      "hoeheres Tief",
      "50-Tage-Linie dreht nach oben",
-     "RSI erholt sich aus dem ueberverkauften Bereich"
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
     "momentum": [
      "relative Staerke +16% vs. Index",
-     "200-Tage-Linie steigt"
+     "200-Tage-Linie steigt",
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -693,17 +707,19 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 39.9,
-    "momentum": 53.5,
+    "turnaround": 38.2,
+    "momentum": 47.5,
     "value": 70.4
    },
    "why": {
     "turnaround": [
-     "hoeheres Tief"
+     "hoeheres Tief",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
     "momentum": [
      "relative Staerke +115% vs. Index",
-     "200-Tage-Linie steigt"
+     "200-Tage-Linie steigt",
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -723,20 +739,20 @@
     "range_pos": 100.0,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 7.79,
-    "sma200_slope": 3.35,
+    "sma50_slope": 7.68,
+    "sma200_slope": 3.36,
     "higher_low": true,
-    "rsi14": 79.6,
+    "rsi14": 79.8,
     "rsi_min60": 42.1,
     "perf": {
-     "m1": 21.5,
-     "m3": 36.4,
-     "m6": 19.4,
-     "m12": 53.7
+     "m1": 20.8,
+     "m3": 33.7,
+     "m6": 17.4,
+     "m12": 55.7
     },
-    "rs6": 1.2,
+    "rs6": -0.8,
     "vol_pressure_5d": 5.3,
-    "vol_ratio": 1.0
+    "vol_ratio": 1.02
    },
    "flags": [],
    "earnings_in": null,
@@ -750,20 +766,22 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 47.7,
-    "momentum": 71.4,
+    "turnaround": 56.6,
+    "momentum": 77.9,
     "value": 70.4
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
-     "50-Tage-Linie dreht nach oben"
+     "50-Tage-Linie dreht nach oben",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
     "momentum": [
      "nur 0% unter ATH",
      "ueber 50- und 200-Tage-Linie",
-     "200-Tage-Linie steigt"
+     "200-Tage-Linie steigt",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -810,19 +828,20 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 40.9,
-    "momentum": 74.3,
+    "turnaround": 30.9,
+    "momentum": 60.6,
     "value": 70.6
    },
    "why": {
     "turnaround": [
      "ueber 50-Tage-Linie",
      "RSI erholt sich aus dem ueberverkauften Bereich",
-     "Anstiege auf hoeherem Volumen"
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
     "momentum": [
      "nur 6% unter ATH",
-     "ueber 50- und 200-Tage-Linie"
+     "ueber 50- und 200-Tage-Linie",
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
     ],
     "value": [
      "positiver Free Cashflow",
@@ -870,15 +889,18 @@
    },
    "revision_note": "Analysten ↓3 in 30T (Wells Fargo, 2026-08-19)",
    "scores": {
-    "turnaround": 22.0,
-    "momentum": 0.0,
+    "turnaround": 32.6,
+    "momentum": 15.0,
     "value": 73.2
    },
    "why": {
     "turnaround": [
-     "-58% unter ATH"
+     "-58% unter ATH",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
-    "momentum": [],
+    "momentum": [
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
+    ],
     "value": [
      "erwartetes KGV unter aktuellem",
      "positiver Free Cashflow",
@@ -925,8 +947,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 74.5,
-    "momentum": 53.0,
+    "turnaround": 64.8,
+    "momentum": 41.0,
     "value": 74.2
    },
    "why": {
@@ -934,11 +956,12 @@
      "-43% unter ATH",
      "hoeheres Tief",
      "RSI erholt sich aus dem ueberverkauften Bereich",
-     "Anstiege auf hoeherem Volumen"
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
     "momentum": [
      "relative Staerke +78% vs. Index",
-     "200-Tage-Linie steigt"
+     "200-Tage-Linie steigt",
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -985,17 +1008,19 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 37.2,
-    "momentum": 45.5,
+    "turnaround": 37.0,
+    "momentum": 42.8,
     "value": 80.3
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
-     "50-Tage-Linie dreht nach oben"
+     "50-Tage-Linie dreht nach oben",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
     "momentum": [
-     "200-Tage-Linie steigt"
+     "200-Tage-Linie steigt",
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -1042,16 +1067,19 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 44.0,
-    "momentum": 4.4,
+    "turnaround": 40.5,
+    "momentum": 4.1,
     "value": 78.6
    },
    "why": {
     "turnaround": [
      "-25% unter ATH",
-     "hoeheres Tief"
+     "hoeheres Tief",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
-    "momentum": [],
+    "momentum": [
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
+    ],
     "value": [
      "erwartetes KGV unter aktuellem",
      "positiver Free Cashflow",
@@ -1067,21 +1095,21 @@
     "last": 645.72,
     "dd_ath": -25.9,
     "days_since_ath": 377,
-    "range_pos": 67.3,
+    "range_pos": 68.8,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 13.8,
-    "sma200_slope": -2.55,
+    "sma50_slope": 12.54,
+    "sma200_slope": -2.66,
     "higher_low": true,
-    "rsi14": 61.9,
+    "rsi14": 62.5,
     "rsi_min60": 41.8,
     "perf": {
-     "m1": 19.2,
-     "m3": 66.3,
-     "m6": 48.2,
-     "m12": -15.6
+     "m1": 26.3,
+     "m3": 64.6,
+     "m6": 50.1,
+     "m12": -18.4
     },
-    "rs6": 30.0,
+    "rs6": 31.9,
     "vol_pressure_5d": 2.25,
     "vol_ratio": 1.24
    },
@@ -1097,8 +1125,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 80.6,
-    "momentum": 57.1,
+    "turnaround": 82.3,
+    "momentum": 59.3,
     "value": 63.1
    },
    "why": {
@@ -1107,11 +1135,12 @@
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
      "50-Tage-Linie dreht nach oben",
-     "Anstiege auf hoeherem Volumen"
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
     "momentum": [
-     "relative Staerke +30% vs. Index",
-     "ueber 50- und 200-Tage-Linie"
+     "relative Staerke +32% vs. Index",
+     "ueber 50- und 200-Tage-Linie",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -1131,20 +1160,20 @@
     "range_pos": 30.8,
     "above_sma50": false,
     "above_sma200": false,
-    "sma50_slope": -4.61,
+    "sma50_slope": -4.57,
     "sma200_slope": -0.18,
     "higher_low": false,
-    "rsi14": 49.0,
-    "rsi_min60": 31.6,
+    "rsi14": 49.6,
+    "rsi_min60": 30.7,
     "perf": {
      "m1": -2.6,
-     "m3": -10.8,
-     "m6": -18.5,
-     "m12": 6.9
+     "m3": -10.7,
+     "m6": -20.1,
+     "m12": 5.3
     },
-    "rs6": -36.7,
+    "rs6": -38.3,
     "vol_pressure_5d": 1.4,
-    "vol_ratio": 0.82
+    "vol_ratio": 0.83
    },
    "flags": [],
    "earnings_in": null,
@@ -1158,15 +1187,18 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 29.8,
-    "momentum": 4.5,
+    "turnaround": 42.9,
+    "momentum": 18.6,
     "value": 69.6
    },
    "why": {
     "turnaround": [
-     "RSI erholt sich aus dem ueberverkauften Bereich"
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
-    "momentum": [],
+    "momentum": [
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
+    ],
     "value": [
      "erwartetes KGV unter aktuellem",
      "positiver Free Cashflow"
@@ -1184,20 +1216,20 @@
     "range_pos": 100.0,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 2.67,
+    "sma50_slope": 2.61,
     "sma200_slope": 3.23,
     "higher_low": true,
-    "rsi14": 65.1,
+    "rsi14": 65.7,
     "rsi_min60": 42.4,
     "perf": {
-     "m1": 6.1,
-     "m3": 15.8,
-     "m6": 13.3,
-     "m12": 63.9
+     "m1": 9.1,
+     "m3": 16.3,
+     "m6": 14.1,
+     "m12": 63.0
     },
-    "rs6": -4.9,
+    "rs6": -4.1,
     "vol_pressure_5d": 2.08,
-    "vol_ratio": 1.09
+    "vol_ratio": 1.08
    },
    "flags": [],
    "earnings_in": null,
@@ -1211,8 +1243,8 @@
    },
    "revision_note": "Analysten ↑1 in 30T (Wolfe Research, 2026-08-13)",
    "scores": {
-    "turnaround": 80.9,
-    "momentum": 43.6,
+    "turnaround": 82.9,
+    "momentum": 56.2,
     "value": 63.1
    },
    "why": {
@@ -1220,11 +1252,13 @@
      "-47% unter ATH",
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
-     "50-Tage-Linie dreht nach oben"
+     "50-Tage-Linie dreht nach oben",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
     "momentum": [
      "ueber 50- und 200-Tage-Linie",
-     "200-Tage-Linie steigt"
+     "200-Tage-Linie steigt",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -1244,20 +1278,20 @@
     "range_pos": 81.0,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 9.4,
-    "sma200_slope": -0.28,
+    "sma50_slope": 9.42,
+    "sma200_slope": -0.24,
     "higher_low": true,
-    "rsi14": 65.1,
+    "rsi14": 65.2,
     "rsi_min60": 43.6,
     "perf": {
      "m1": 18.7,
-     "m3": 37.7,
-     "m6": 29.2,
-     "m12": -1.5
+     "m3": 38.2,
+     "m6": 25.3,
+     "m12": -2.9
     },
-    "rs6": 11.1,
+    "rs6": 7.1,
     "vol_pressure_5d": 1.33,
-    "vol_ratio": 1.28
+    "vol_ratio": 1.31
    },
    "flags": [],
    "earnings_in": null,
@@ -1271,8 +1305,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 61.5,
-    "momentum": 69.2,
+    "turnaround": 66.9,
+    "momentum": 68.6,
     "value": 59.5
    },
    "why": {
@@ -1280,11 +1314,12 @@
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
      "50-Tage-Linie dreht nach oben",
-     "Anstiege auf hoeherem Volumen"
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
     "momentum": [
      "nur 8% unter ATH",
-     "ueber 50- und 200-Tage-Linie"
+     "ueber 50- und 200-Tage-Linie",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -1330,20 +1365,22 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 52.5,
-    "momentum": 57.1,
+    "turnaround": 58.8,
+    "momentum": 63.1,
     "value": 58.6
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
-     "RSI erholt sich aus dem ueberverkauften Bereich"
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
     "momentum": [
      "nur 7% unter ATH",
      "ueber 50- und 200-Tage-Linie",
-     "200-Tage-Linie steigt"
+     "200-Tage-Linie steigt",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -1389,19 +1426,21 @@
    },
    "revision_note": "Analysten ↓1 in 30T (UBS, 2026-08-13)",
    "scores": {
-    "turnaround": 53.0,
-    "momentum": 56.2,
+    "turnaround": 62.5,
+    "momentum": 64.8,
     "value": 60.3
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
-     "50-Tage-Linie dreht nach oben"
+     "50-Tage-Linie dreht nach oben",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
     "momentum": [
      "nur 4% unter ATH",
-     "ueber 50- und 200-Tage-Linie"
+     "ueber 50- und 200-Tage-Linie",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -1448,16 +1487,19 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 47.4,
-    "momentum": 7.2,
+    "turnaround": 42.6,
+    "momentum": 5.0,
     "value": 74.1
    },
    "why": {
     "turnaround": [
      "-24% unter ATH",
-     "hoeheres Tief"
+     "hoeheres Tief",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
-    "momentum": [],
+    "momentum": [
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
+    ],
     "value": [
      "erwartetes KGV unter aktuellem",
      "positiver Free Cashflow",
@@ -1476,20 +1518,20 @@
     "range_pos": 55.4,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 8.77,
-    "sma200_slope": -1.0,
+    "sma50_slope": 8.04,
+    "sma200_slope": -0.93,
     "higher_low": true,
-    "rsi14": 49.3,
-    "rsi_min60": 35.5,
+    "rsi14": 48.8,
+    "rsi_min60": 41.8,
     "perf": {
-     "m1": 2.1,
-     "m3": 35.1,
-     "m6": 9.4,
-     "m12": -16.5
+     "m1": 5.5,
+     "m3": 32.7,
+     "m6": 10.8,
+     "m12": -14.6
     },
-    "rs6": -8.8,
+    "rs6": -7.3,
     "vol_pressure_5d": 1.01,
-    "vol_ratio": 1.12
+    "vol_ratio": 1.13
    },
    "flags": [],
    "earnings_in": null,
@@ -1503,8 +1545,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 87.4,
-    "momentum": 26.3,
+    "turnaround": 81.1,
+    "momentum": 24.6,
     "value": 66.6
    },
    "why": {
@@ -1564,7 +1606,7 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 80.2,
+    "turnaround": 70.2,
     "momentum": 0.0,
     "value": 53.0
    },
@@ -1573,9 +1615,12 @@
      "-32% unter ATH",
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
-     "RSI erholt sich aus dem ueberverkauften Bereich"
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
-    "momentum": [],
+    "momentum": [
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
+    ],
     "value": [
      "erwartetes KGV unter aktuellem",
      "Umsatzwachstum 23%"
@@ -1624,16 +1669,19 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 41.4,
-    "momentum": 0.6,
+    "turnaround": 51.1,
+    "momentum": 15.3,
     "value": 54.5
    },
    "why": {
     "turnaround": [
      "ueber 50-Tage-Linie",
-     "RSI erholt sich aus dem ueberverkauften Bereich"
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
-    "momentum": [],
+    "momentum": [
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
+    ],
     "value": [
      "erwartetes KGV unter aktuellem",
      "positiver Free Cashflow"
@@ -1678,18 +1726,20 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 66.6,
-    "momentum": 22.9,
+    "turnaround": 70.3,
+    "momentum": 31.4,
     "value": 58.9
    },
    "why": {
     "turnaround": [
      "-46% unter ATH",
      "ueber 50-Tage-Linie",
-     "RSI erholt sich aus dem ueberverkauften Bereich"
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
     "momentum": [
-     "ueber 50- und 200-Tage-Linie"
+     "ueber 50- und 200-Tage-Linie",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -1735,17 +1785,19 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 36.2,
-    "momentum": 35.8,
+    "turnaround": 30.6,
+    "momentum": 27.4,
     "value": 70.2
    },
    "why": {
     "turnaround": [
      "ueber 50-Tage-Linie",
-     "RSI erholt sich aus dem ueberverkauften Bereich"
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
     "momentum": [
-     "ueber 50- und 200-Tage-Linie"
+     "ueber 50- und 200-Tage-Linie",
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -1794,17 +1846,19 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 57.2,
-    "momentum": 10.0,
+    "turnaround": 57.7,
+    "momentum": 20.0,
     "value": 53.3
    },
    "why": {
     "turnaround": [
      "-47% unter ATH",
      "ueber 50-Tage-Linie",
-     "Anstiege auf hoeherem Volumen"
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
-    "momentum": [],
+    "momentum": [
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
+    ],
     "value": [
      "positiver Free Cashflow"
     ]
@@ -1848,21 +1902,23 @@
    },
    "revision_note": "Analysten ↑1 in 30T (Mizuho, 2026-08-19)",
    "scores": {
-    "turnaround": 56.2,
-    "momentum": 83.1,
+    "turnaround": 49.1,
+    "momentum": 71.3,
     "value": 52.5
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
-     "50-Tage-Linie dreht nach oben"
+     "50-Tage-Linie dreht nach oben",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
     "momentum": [
      "nur 11% unter ATH",
      "relative Staerke +76% vs. Index",
      "ueber 50- und 200-Tage-Linie",
-     "200-Tage-Linie steigt"
+     "200-Tage-Linie steigt",
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
     ],
     "value": [
      "positiver Free Cashflow",
@@ -1909,17 +1965,19 @@
    },
    "revision_note": "Analysten ↓1 in 30T (HSBC, 2026-08-14)",
    "scores": {
-    "turnaround": 30.3,
-    "momentum": 60.0,
+    "turnaround": 29.2,
+    "momentum": 51.2,
     "value": 81.4
    },
    "why": {
     "turnaround": [
-     "hoeheres Tief"
+     "hoeheres Tief",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
     "momentum": [
      "relative Staerke +24% vs. Index",
-     "200-Tage-Linie steigt"
+     "200-Tage-Linie steigt",
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -1940,20 +1998,20 @@
     "range_pos": 10.3,
     "above_sma50": true,
     "above_sma200": false,
-    "sma50_slope": -3.55,
-    "sma200_slope": -9.34,
+    "sma50_slope": -3.54,
+    "sma200_slope": -9.17,
     "higher_low": false,
-    "rsi14": 62.2,
+    "rsi14": 62.8,
     "rsi_min60": 26.6,
     "perf": {
-     "m1": 13.3,
-     "m3": 3.2,
-     "m6": -25.0,
+     "m1": 18.4,
+     "m3": -0.2,
+     "m6": -31.1,
      "m12": -61.7
     },
-    "rs6": -43.2,
+    "rs6": -49.3,
     "vol_pressure_5d": 1.61,
-    "vol_ratio": 0.91
+    "vol_ratio": 0.93
    },
    "flags": [
     "200-Tage-Linie faellt steil"
@@ -1969,16 +2027,19 @@
    },
    "revision_note": "Analysten ↓3 in 30T (Citigroup, 2026-07-29)",
    "scores": {
-    "turnaround": 43.9,
-    "momentum": 0.3,
+    "turnaround": 51.8,
+    "momentum": 15.4,
     "value": 56.3
    },
    "why": {
     "turnaround": [
      "ueber 50-Tage-Linie",
-     "RSI erholt sich aus dem ueberverkauften Bereich"
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
-    "momentum": [],
+    "momentum": [
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
+    ],
     "value": [
      "erwartetes KGV unter aktuellem",
      "positiver Free Cashflow",
@@ -2025,20 +2086,22 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 54.0,
-    "momentum": 71.4,
+    "turnaround": 63.0,
+    "momentum": 78.8,
     "value": 72.5
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
-     "50-Tage-Linie dreht nach oben"
+     "50-Tage-Linie dreht nach oben",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
     "momentum": [
      "nur 5% unter ATH",
      "ueber 50- und 200-Tage-Linie",
-     "200-Tage-Linie steigt"
+     "200-Tage-Linie steigt",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -2058,20 +2121,20 @@
     "range_pos": 75.8,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 7.73,
-    "sma200_slope": 0.69,
+    "sma50_slope": 7.48,
+    "sma200_slope": 0.8,
     "higher_low": true,
-    "rsi14": 57.6,
+    "rsi14": 56.9,
     "rsi_min60": 42.5,
     "perf": {
-     "m1": -0.4,
-     "m3": 21.0,
-     "m6": 5.5,
-     "m12": -7.1
+     "m1": 1.6,
+     "m3": 18.2,
+     "m6": 3.9,
+     "m12": -4.3
     },
-    "rs6": -12.6,
+    "rs6": -14.2,
     "vol_pressure_5d": 0.67,
-    "vol_ratio": 1.09
+    "vol_ratio": 1.1
    },
    "flags": [],
    "earnings_in": null,
@@ -2085,19 +2148,21 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 56.8,
-    "momentum": 49.1,
+    "turnaround": 49.5,
+    "momentum": 41.1,
     "value": 72.0
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
-     "50-Tage-Linie dreht nach oben"
+     "50-Tage-Linie dreht nach oben",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
     "momentum": [
      "nur 10% unter ATH",
-     "ueber 50- und 200-Tage-Linie"
+     "ueber 50- und 200-Tage-Linie",
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -2143,8 +2208,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 78.8,
-    "momentum": 0.0,
+    "turnaround": 81.4,
+    "momentum": 12.6,
     "value": 64.6
    },
    "why": {
@@ -2152,9 +2217,12 @@
      "-30% unter ATH",
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
-     "50-Tage-Linie dreht nach oben"
+     "50-Tage-Linie dreht nach oben",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
-    "momentum": [],
+    "momentum": [
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
+    ],
     "value": [
      "erwartetes KGV unter aktuellem",
      "positiver Free Cashflow"
@@ -2172,20 +2240,20 @@
     "range_pos": 54.5,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 10.71,
-    "sma200_slope": -3.3,
+    "sma50_slope": 10.81,
+    "sma200_slope": -3.27,
     "higher_low": true,
-    "rsi14": 67.8,
-    "rsi_min60": 40.9,
+    "rsi14": 67.9,
+    "rsi_min60": 40.0,
     "perf": {
-     "m1": 16.5,
-     "m3": 35.4,
-     "m6": 35.7,
-     "m12": -11.2
+     "m1": 17.1,
+     "m3": 42.4,
+     "m6": 27.0,
+     "m12": -13.1
     },
-    "rs6": 17.5,
+    "rs6": 8.8,
     "vol_pressure_5d": 3.78,
-    "vol_ratio": 1.08
+    "vol_ratio": 1.1
    },
    "flags": [],
    "earnings_in": null,
@@ -2199,19 +2267,20 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 71.5,
-    "momentum": 47.4,
+    "turnaround": 77.2,
+    "momentum": 44.8,
     "value": 65.7
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
-     "50-Tage-Linie dreht nach oben"
+     "50-Tage-Linie dreht nach oben",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
     "momentum": [
-     "relative Staerke +18% vs. Index",
-     "ueber 50- und 200-Tage-Linie"
+     "ueber 50- und 200-Tage-Linie",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -2258,18 +2327,20 @@
    },
    "revision_note": "Analysten ↓1 in 30T (Scotiabank, 2026-08-08)",
    "scores": {
-    "turnaround": 47.7,
-    "momentum": 57.6,
+    "turnaround": 44.4,
+    "momentum": 48.8,
     "value": 59.7
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
-     "50-Tage-Linie dreht nach oben"
+     "50-Tage-Linie dreht nach oben",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
     "momentum": [
      "relative Staerke +74% vs. Index",
-     "200-Tage-Linie steigt"
+     "200-Tage-Linie steigt",
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -2317,8 +2388,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 85.1,
-    "momentum": 54.3,
+    "turnaround": 85.7,
+    "momentum": 62.6,
     "value": 77.9
    },
    "why": {
@@ -2327,10 +2398,11 @@
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
      "50-Tage-Linie dreht nach oben",
-     "Anstiege auf hoeherem Volumen"
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
     "momentum": [
-     "ueber 50- und 200-Tage-Linie"
+     "ueber 50- und 200-Tage-Linie",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -2350,20 +2422,20 @@
     "range_pos": 44.9,
     "above_sma50": false,
     "above_sma200": false,
-    "sma50_slope": 1.18,
-    "sma200_slope": -0.01,
+    "sma50_slope": 1.12,
+    "sma200_slope": -0.03,
     "higher_low": true,
-    "rsi14": 45.0,
-    "rsi_min60": 37.6,
+    "rsi14": 44.8,
+    "rsi_min60": 37.1,
     "perf": {
-     "m1": -1.4,
-     "m3": 4.0,
-     "m6": -4.0,
-     "m12": 4.4
+     "m1": -1.3,
+     "m3": 2.5,
+     "m6": -2.4,
+     "m12": 5.7
     },
-    "rs6": -22.2,
+    "rs6": -20.6,
     "vol_pressure_5d": 0.47,
-    "vol_ratio": 1.04
+    "vol_ratio": 1.06
    },
    "flags": [],
    "earnings_in": null,
@@ -2377,16 +2449,18 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 41.0,
-    "momentum": 21.3,
+    "turnaround": 39.2,
+    "momentum": 16.1,
     "value": 41.7
    },
    "why": {
     "turnaround": [
-     "hoeheres Tief"
+     "hoeheres Tief",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
     "momentum": [
-     "nur 9% unter ATH"
+     "nur 9% unter ATH",
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -2432,20 +2506,22 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 52.3,
-    "momentum": 70.8,
+    "turnaround": 61.1,
+    "momentum": 78.1,
     "value": 73.7
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
-     "RSI erholt sich aus dem ueberverkauften Bereich"
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
     "momentum": [
      "nur 1% unter ATH",
      "ueber 50- und 200-Tage-Linie",
-     "200-Tage-Linie steigt"
+     "200-Tage-Linie steigt",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -2465,18 +2541,18 @@
     "range_pos": 93.2,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 4.88,
-    "sma200_slope": 1.48,
+    "sma50_slope": 4.8,
+    "sma200_slope": 1.55,
     "higher_low": true,
-    "rsi14": 64.7,
+    "rsi14": 65.1,
     "rsi_min60": 41.4,
     "perf": {
-     "m1": 15.6,
-     "m3": 17.6,
-     "m6": 13.8,
-     "m12": 7.5
+     "m1": 14.9,
+     "m3": 18.7,
+     "m6": 13.1,
+     "m12": 7.0
     },
-    "rs6": -4.4,
+    "rs6": -5.1,
     "vol_pressure_5d": 1.51,
     "vol_ratio": 0.98
    },
@@ -2492,19 +2568,21 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 54.0,
-    "momentum": 61.5,
+    "turnaround": 63.0,
+    "momentum": 70.0,
     "value": 77.4
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
-     "50-Tage-Linie dreht nach oben"
+     "50-Tage-Linie dreht nach oben",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
     "momentum": [
      "nur 2% unter ATH",
-     "ueber 50- und 200-Tage-Linie"
+     "ueber 50- und 200-Tage-Linie",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -2551,20 +2629,21 @@
    },
    "revision_note": "Analysten ↑1 in 30T (Susquehanna, 2026-07-31)",
    "scores": {
-    "turnaround": 46.2,
-    "momentum": 78.0,
+    "turnaround": 41.4,
+    "momentum": 66.4,
     "value": 82.5
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
      "50-Tage-Linie dreht nach oben",
-     "Anstiege auf hoeherem Volumen"
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
     "momentum": [
      "nur 9% unter ATH",
      "relative Staerke +71% vs. Index",
-     "200-Tage-Linie steigt"
+     "200-Tage-Linie steigt",
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -2585,20 +2664,20 @@
     "range_pos": 53.1,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 4.33,
-    "sma200_slope": -0.74,
+    "sma50_slope": 4.0,
+    "sma200_slope": -0.83,
     "higher_low": true,
     "rsi14": 66.9,
     "rsi_min60": 38.2,
     "perf": {
-     "m1": 20.3,
-     "m3": 21.2,
-     "m6": -9.9,
-     "m12": 2.2
+     "m1": 18.8,
+     "m3": 21.4,
+     "m6": -8.5,
+     "m12": 1.9
     },
-    "rs6": -28.1,
+    "rs6": -26.7,
     "vol_pressure_5d": 2.2,
-    "vol_ratio": 1.09
+    "vol_ratio": 1.08
    },
    "flags": [],
    "earnings_in": null,
@@ -2612,18 +2691,20 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 69.5,
-    "momentum": 30.6,
+    "turnaround": 75.3,
+    "momentum": 36.7,
     "value": 67.4
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
-     "50-Tage-Linie dreht nach oben"
+     "50-Tage-Linie dreht nach oben",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
     "momentum": [
-     "ueber 50- und 200-Tage-Linie"
+     "ueber 50- und 200-Tage-Linie",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -2669,16 +2750,18 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 33.5,
+    "turnaround": 28.5,
     "momentum": 8.1,
     "value": 57.3
    },
    "why": {
     "turnaround": [
-     "-46% unter ATH"
+     "-46% unter ATH",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
     "momentum": [
-     "200-Tage-Linie steigt"
+     "200-Tage-Linie steigt",
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -2724,8 +2807,8 @@
    },
    "revision_note": "Analysten ↓1 in 30T (RBC Capital, 2026-08-05)",
    "scores": {
-    "turnaround": 43.6,
-    "momentum": 55.2,
+    "turnaround": 45.9,
+    "momentum": 57.3,
     "value": 40.2
    },
    "why": {
@@ -2782,16 +2865,18 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 15.8,
-    "momentum": 31.2,
+    "turnaround": 30.8,
+    "momentum": 43.7,
     "value": 73.4
    },
    "why": {
     "turnaround": [
-     "RSI erholt sich aus dem ueberverkauften Bereich"
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
     "momentum": [
-     "200-Tage-Linie steigt"
+     "200-Tage-Linie steigt",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
     ],
     "value": [
      "positiver Free Cashflow",
@@ -2811,19 +2896,19 @@
     "above_sma50": false,
     "above_sma200": false,
     "sma50_slope": 1.05,
-    "sma200_slope": 1.65,
+    "sma200_slope": 1.64,
     "higher_low": true,
-    "rsi14": 37.6,
+    "rsi14": 37.4,
     "rsi_min60": 34.9,
     "perf": {
-     "m1": -1.7,
-     "m3": -2.4,
-     "m6": -11.7,
-     "m12": 5.5
+     "m1": -3.2,
+     "m3": -2.3,
+     "m6": -11.1,
+     "m12": 5.7
     },
-    "rs6": -29.9,
+    "rs6": -29.3,
     "vol_pressure_5d": 0.27,
-    "vol_ratio": 1.08
+    "vol_ratio": 1.04
    },
    "flags": [],
    "earnings_in": null,
@@ -2837,15 +2922,18 @@
    },
    "revision_note": "Analysten ↑1 in 30T (RBC Capital, 2026-08-18)",
    "scores": {
-    "turnaround": 38.2,
-    "momentum": 21.2,
+    "turnaround": 35.3,
+    "momentum": 15.7,
     "value": 51.6
    },
    "why": {
     "turnaround": [
-     "hoeheres Tief"
+     "hoeheres Tief",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
-    "momentum": [],
+    "momentum": [
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
+    ],
     "value": [
      "positiver Free Cashflow",
      "Analysten zuletzt netto 1x hochgestuft (30 Tage)"
@@ -2863,20 +2951,20 @@
     "range_pos": 14.9,
     "above_sma50": true,
     "above_sma200": false,
-    "sma50_slope": 1.11,
-    "sma200_slope": -1.06,
+    "sma50_slope": 1.18,
+    "sma200_slope": -1.07,
     "higher_low": true,
-    "rsi14": 48.7,
+    "rsi14": 48.8,
     "rsi_min60": 38.8,
     "perf": {
-     "m1": -2.4,
-     "m3": 5.5,
-     "m6": -8.9,
-     "m12": -15.3
+     "m1": 1.8,
+     "m3": 2.9,
+     "m6": -11.5,
+     "m12": -11.9
     },
-    "rs6": -27.1,
+    "rs6": -29.6,
     "vol_pressure_5d": 0.57,
-    "vol_ratio": 1.07
+    "vol_ratio": 1.09
    },
    "flags": [],
    "earnings_in": null,
@@ -2890,17 +2978,20 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 76.0,
-    "momentum": 4.9,
+    "turnaround": 65.4,
+    "momentum": 2.7,
     "value": 68.0
    },
    "why": {
     "turnaround": [
      "-27% unter ATH",
      "hoeheres Tief",
-     "ueber 50-Tage-Linie"
+     "ueber 50-Tage-Linie",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
-    "momentum": [],
+    "momentum": [
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
+    ],
     "value": [
      "erwartetes KGV unter aktuellem",
      "positiver Free Cashflow",
@@ -2946,19 +3037,21 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 67.5,
-    "momentum": 47.0,
+    "turnaround": 60.8,
+    "momentum": 38.0,
     "value": 49.4
    },
    "why": {
     "turnaround": [
      "-34% unter ATH",
      "hoeheres Tief",
-     "RSI erholt sich aus dem ueberverkauften Bereich"
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
     "momentum": [
      "relative Staerke +86% vs. Index",
-     "200-Tage-Linie steigt"
+     "200-Tage-Linie steigt",
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
     ],
     "value": [
      "positiver Free Cashflow",
@@ -3006,8 +3099,8 @@
    },
    "revision_note": "Analysten ↓3 in 30T (Deutsche Bank, 2026-08-19)",
    "scores": {
-    "turnaround": 82.2,
-    "momentum": 2.6,
+    "turnaround": 86.1,
+    "momentum": 16.3,
     "value": 72.5
    },
    "why": {
@@ -3015,9 +3108,12 @@
      "-55% unter ATH",
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
-     "RSI erholt sich aus dem ueberverkauften Bereich"
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
-    "momentum": [],
+    "momentum": [
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
+    ],
     "value": [
      "erwartetes KGV unter aktuellem",
      "positiver Free Cashflow",
@@ -3066,17 +3162,20 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 62.2,
-    "momentum": 2.6,
+    "turnaround": 51.1,
+    "momentum": 1.3,
     "value": 61.2
    },
    "why": {
     "turnaround": [
      "-35% unter ATH",
      "ueber 50-Tage-Linie",
-     "RSI erholt sich aus dem ueberverkauften Bereich"
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
-    "momentum": [],
+    "momentum": [
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
+    ],
     "value": [
      "erwartetes KGV unter aktuellem",
      "positiver Free Cashflow",
@@ -3093,22 +3192,22 @@
     "dd_ath": -13.5,
     "days_since_ath": 1464,
     "range_pos": 68.0,
-    "above_sma50": false,
+    "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 1.6,
-    "sma200_slope": 1.52,
+    "sma50_slope": 1.47,
+    "sma200_slope": 1.49,
     "higher_low": true,
-    "rsi14": 53.1,
-    "rsi_min60": 36.9,
+    "rsi14": 53.2,
+    "rsi_min60": 36.7,
     "perf": {
-     "m1": 2.0,
-     "m3": 6.3,
+     "m1": 2.8,
+     "m3": 8.4,
      "m6": 8.3,
-     "m12": -7.7
+     "m12": -7.3
     },
-    "rs6": -9.8,
+    "rs6": -9.9,
     "vol_pressure_5d": 4.42,
-    "vol_ratio": 1.01
+    "vol_ratio": 1.0
    },
    "flags": [],
    "earnings_in": null,
@@ -3122,16 +3221,21 @@
    },
    "revision_note": "Analysten ↑1 in 30T (HSBC, 2026-08-13)",
    "scores": {
-    "turnaround": 38.0,
-    "momentum": 30.1,
+    "turnaround": 61.2,
+    "momentum": 49.2,
     "value": 71.2
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
-     "50-Tage-Linie dreht nach oben"
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
-    "momentum": [],
+    "momentum": [
+     "ueber 50- und 200-Tage-Linie",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
+    ],
     "value": [
      "erwartetes KGV unter aktuellem",
      "positiver Free Cashflow",
@@ -3178,8 +3282,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 73.5,
-    "momentum": 25.6,
+    "turnaround": 79.4,
+    "momentum": 37.5,
     "value": 43.1
    },
    "why": {
@@ -3187,10 +3291,12 @@
      "-58% unter ATH",
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
-     "50-Tage-Linie dreht nach oben"
+     "50-Tage-Linie dreht nach oben",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
     "momentum": [
-     "ueber 50- und 200-Tage-Linie"
+     "ueber 50- und 200-Tage-Linie",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
     ],
     "value": [
      "positiver Free Cashflow"
@@ -3235,17 +3341,19 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 49.8,
-    "momentum": 29.6,
+    "turnaround": 44.6,
+    "momentum": 25.2,
     "value": 77.3
    },
    "why": {
     "turnaround": [
      "-38% unter ATH",
-     "RSI erholt sich aus dem ueberverkauften Bereich"
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
     "momentum": [
-     "200-Tage-Linie steigt"
+     "200-Tage-Linie steigt",
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -3265,18 +3373,18 @@
     "range_pos": 59.0,
     "above_sma50": false,
     "above_sma200": true,
-    "sma50_slope": -0.99,
-    "sma200_slope": 0.85,
+    "sma50_slope": -1.09,
+    "sma200_slope": 0.93,
     "higher_low": false,
-    "rsi14": 39.7,
-    "rsi_min60": 30.1,
+    "rsi14": 39.9,
+    "rsi_min60": 30.2,
     "perf": {
-     "m1": -6.3,
+     "m1": -4.7,
      "m3": -4.6,
-     "m6": 0.7,
-     "m12": 2.1
+     "m6": -0.2,
+     "m12": 1.9
     },
-    "rs6": -17.5,
+    "rs6": -18.4,
     "vol_pressure_5d": 1.68,
     "vol_ratio": 0.99
    },
@@ -3292,13 +3400,17 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 10.8,
-    "momentum": 26.8,
+    "turnaround": 24.7,
+    "momentum": 35.9,
     "value": 71.9
    },
    "why": {
-    "turnaround": [],
-    "momentum": [],
+    "turnaround": [
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
+    ],
+    "momentum": [
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
+    ],
     "value": [
      "erwartetes KGV unter aktuellem",
      "positiver Free Cashflow",
@@ -3344,18 +3456,20 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 67.8,
-    "momentum": 35.3,
+    "turnaround": 61.3,
+    "momentum": 29.2,
     "value": 81.7
    },
    "why": {
     "turnaround": [
      "-29% unter ATH",
      "hoeheres Tief",
-     "RSI erholt sich aus dem ueberverkauften Bereich"
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
     "momentum": [
-     "200-Tage-Linie steigt"
+     "200-Tage-Linie steigt",
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -3404,7 +3518,7 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 53.9,
+    "turnaround": 48.9,
     "momentum": 0.0,
     "value": 60.2
    },
@@ -3412,9 +3526,12 @@
     "turnaround": [
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
-     "RSI erholt sich aus dem ueberverkauften Bereich"
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
-    "momentum": [],
+    "momentum": [
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
+    ],
     "value": [
      "positiver Free Cashflow"
     ]
@@ -3431,20 +3548,20 @@
     "range_pos": 70.7,
     "above_sma50": false,
     "above_sma200": true,
-    "sma50_slope": -0.65,
+    "sma50_slope": -0.86,
     "sma200_slope": 2.95,
     "higher_low": false,
     "rsi14": 47.9,
-    "rsi_min60": 31.9,
+    "rsi_min60": 32.1,
     "perf": {
-     "m1": -1.9,
-     "m3": 0.4,
-     "m6": 0.4,
-     "m12": 36.9
+     "m1": -2.1,
+     "m3": 0.5,
+     "m6": 1.5,
+     "m12": 36.4
     },
-    "rs6": -17.8,
+    "rs6": -16.7,
     "vol_pressure_5d": 1.59,
-    "vol_ratio": 0.84
+    "vol_ratio": 0.83
    },
    "flags": [],
    "earnings_in": null,
@@ -3458,17 +3575,19 @@
    },
    "revision_note": "Analysten ↑1 in 30T (CICC, 2026-08-12)",
    "scores": {
-    "turnaround": 16.9,
-    "momentum": 34.6,
+    "turnaround": 31.4,
+    "momentum": 46.2,
     "value": 59.9
    },
    "why": {
     "turnaround": [
-     "RSI erholt sich aus dem ueberverkauften Bereich"
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
     "momentum": [
      "nur 11% unter ATH",
-     "200-Tage-Linie steigt"
+     "200-Tage-Linie steigt",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -3516,16 +3635,19 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 38.4,
-    "momentum": 14.9,
+    "turnaround": 34.2,
+    "momentum": 11.9,
     "value": 69.6
    },
    "why": {
     "turnaround": [
      "-25% unter ATH",
-     "RSI erholt sich aus dem ueberverkauften Bereich"
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
-    "momentum": [],
+    "momentum": [
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
+    ],
     "value": [
      "erwartetes KGV unter aktuellem",
      "positiver Free Cashflow",
@@ -3571,18 +3693,20 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 47.9,
-    "momentum": 48.4,
+    "turnaround": 57.4,
+    "momentum": 59.6,
     "value": 60.5
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
-     "ueber 50-Tage-Linie"
+     "ueber 50-Tage-Linie",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
     "momentum": [
      "nur 10% unter ATH",
-     "ueber 50- und 200-Tage-Linie"
+     "ueber 50- und 200-Tage-Linie",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -3601,20 +3725,20 @@
     "range_pos": 37.5,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 4.52,
-    "sma200_slope": -1.64,
+    "sma50_slope": 5.15,
+    "sma200_slope": -1.69,
     "higher_low": true,
-    "rsi14": 57.9,
+    "rsi14": 57.7,
     "rsi_min60": 40.3,
     "perf": {
-     "m1": 2.8,
-     "m3": 18.7,
-     "m6": -4.9,
-     "m12": -18.0
+     "m1": 4.7,
+     "m3": 19.7,
+     "m6": -5.0,
+     "m12": -19.3
     },
-    "rs6": -23.1,
+    "rs6": -23.2,
     "vol_pressure_5d": 0.79,
-    "vol_ratio": 0.96
+    "vol_ratio": 1.0
    },
    "flags": [],
    "earnings_in": null,
@@ -3628,8 +3752,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 78.5,
-    "momentum": 21.7,
+    "turnaround": 69.2,
+    "momentum": 16.4,
     "value": 64.6
    },
    "why": {
@@ -3637,10 +3761,12 @@
      "-27% unter ATH",
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
-     "50-Tage-Linie dreht nach oben"
+     "50-Tage-Linie dreht nach oben",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
     "momentum": [
-     "ueber 50- und 200-Tage-Linie"
+     "ueber 50- und 200-Tage-Linie",
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -3689,15 +3815,18 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 35.9,
-    "momentum": 6.9,
+    "turnaround": 27.9,
+    "momentum": 3.4,
     "value": 81.9
    },
    "why": {
     "turnaround": [
-     "-31% unter ATH"
+     "-31% unter ATH",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
-    "momentum": [],
+    "momentum": [
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
+    ],
     "value": [
      "erwartetes KGV unter aktuellem",
      "positiver Free Cashflow",
@@ -3716,20 +3845,20 @@
     "range_pos": 3.5,
     "above_sma50": false,
     "above_sma200": false,
-    "sma50_slope": -3.89,
-    "sma200_slope": 1.14,
+    "sma50_slope": -4.14,
+    "sma200_slope": 1.15,
     "higher_low": false,
-    "rsi14": 15.3,
-    "rsi_min60": 9.8,
+    "rsi14": 15.5,
+    "rsi_min60": 10.2,
     "perf": {
-     "m1": -51.4,
-     "m3": -45.5,
-     "m6": -41.8,
-     "m12": -26.1
+     "m1": -50.3,
+     "m3": -46.4,
+     "m6": -42.8,
+     "m12": -26.6
     },
-    "rs6": -60.0,
+    "rs6": -61.0,
     "vol_pressure_5d": 4.69,
-    "vol_ratio": 1.04
+    "vol_ratio": 1.05
    },
    "flags": [],
    "earnings_in": null,
@@ -3743,15 +3872,18 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 28.5,
-    "momentum": 6.9,
+    "turnaround": 36.9,
+    "momentum": 20.0,
     "value": 75.0
    },
    "why": {
     "turnaround": [
-     "-52% unter ATH"
+     "-52% unter ATH",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
-    "momentum": [],
+    "momentum": [
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
+    ],
     "value": [
      "erwartetes KGV unter aktuellem",
      "positiver Free Cashflow",
@@ -3797,8 +3929,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 77.2,
-    "momentum": 68.0,
+    "turnaround": 79.4,
+    "momentum": 69.5,
     "value": 75.5
    },
    "why": {
@@ -3807,12 +3939,13 @@
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
      "RSI erholt sich aus dem ueberverkauften Bereich",
-     "Anstiege auf hoeherem Volumen"
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
     "momentum": [
      "relative Staerke +182% vs. Index",
      "ueber 50- und 200-Tage-Linie",
-     "200-Tage-Linie steigt"
+     "200-Tage-Linie steigt",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -3859,8 +3992,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 71.0,
-    "momentum": 57.0,
+    "turnaround": 76.0,
+    "momentum": 59.1,
     "value": 84.7
    },
    "why": {
@@ -3869,11 +4002,12 @@
      "ueber 50-Tage-Linie",
      "50-Tage-Linie dreht nach oben",
      "RSI erholt sich aus dem ueberverkauften Bereich",
-     "Anstiege auf hoeherem Volumen"
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
     "momentum": [
      "nur 10% unter ATH",
-     "ueber 50- und 200-Tage-Linie"
+     "ueber 50- und 200-Tage-Linie",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -3922,17 +4056,20 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 55.0,
-    "momentum": 4.0,
+    "turnaround": 63.2,
+    "momentum": 17.0,
     "value": 31.9
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
-     "RSI erholt sich aus dem ueberverkauften Bereich"
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
-    "momentum": [],
+    "momentum": [
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
+    ],
     "value": []
    }
   },
@@ -3974,18 +4111,20 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 46.2,
-    "momentum": 50.3,
+    "turnaround": 58.6,
+    "momentum": 60.3,
     "value": 90.0
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
-     "50-Tage-Linie dreht nach oben"
+     "50-Tage-Linie dreht nach oben",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
     "momentum": [
      "relative Staerke +105% vs. Index",
-     "200-Tage-Linie steigt"
+     "200-Tage-Linie steigt",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -4034,17 +4173,20 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 62.2,
-    "momentum": 2.6,
+    "turnaround": 66.1,
+    "momentum": 16.3,
     "value": 77.0
    },
    "why": {
     "turnaround": [
      "-40% unter ATH",
      "ueber 50-Tage-Linie",
-     "RSI erholt sich aus dem ueberverkauften Bereich"
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
-    "momentum": [],
+    "momentum": [
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
+    ],
     "value": [
      "erwartetes KGV unter aktuellem",
      "positiver Free Cashflow",
@@ -4090,18 +4232,20 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 43.9,
-    "momentum": 51.3,
+    "turnaround": 38.0,
+    "momentum": 43.5,
     "value": 86.5
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
-     "ueber 50-Tage-Linie"
+     "ueber 50-Tage-Linie",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
     "momentum": [
      "nur 8% unter ATH",
-     "ueber 50- und 200-Tage-Linie"
+     "ueber 50- und 200-Tage-Linie",
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -4148,16 +4292,19 @@
    },
    "revision_note": "Analysten ↓1 in 30T (Cantor Fitzgerald, 2026-08-17)",
    "scores": {
-    "turnaround": 52.4,
+    "turnaround": 47.4,
     "momentum": 2.7,
     "value": 77.9
    },
    "why": {
     "turnaround": [
      "-32% unter ATH",
-     "hoeheres Tief"
+     "hoeheres Tief",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
-    "momentum": [],
+    "momentum": [
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
+    ],
     "value": [
      "erwartetes KGV unter aktuellem",
      "positiver Free Cashflow",
@@ -4177,20 +4324,20 @@
     "range_pos": 64.5,
     "above_sma50": false,
     "above_sma200": true,
-    "sma50_slope": 1.47,
-    "sma200_slope": 4.29,
+    "sma50_slope": 0.04,
+    "sma200_slope": 4.23,
     "higher_low": true,
-    "rsi14": 37.9,
-    "rsi_min60": 37.3,
+    "rsi14": 37.5,
+    "rsi_min60": 36.3,
     "perf": {
-     "m1": -13.5,
-     "m3": 3.3,
-     "m6": 10.8,
-     "m12": 34.5
+     "m1": -12.7,
+     "m3": 0.4,
+     "m6": 6.1,
+     "m12": 37.2
     },
-    "rs6": -7.3,
+    "rs6": -12.1,
     "vol_pressure_5d": 0.63,
-    "vol_ratio": 1.04
+    "vol_ratio": 1.03
    },
    "flags": [],
    "earnings_in": null,
@@ -4204,17 +4351,18 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 40.2,
-    "momentum": 31.7,
+    "turnaround": 33.7,
+    "momentum": 26.6,
     "value": 75.0
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
-     "50-Tage-Linie dreht nach oben"
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
     "momentum": [
-     "200-Tage-Linie steigt"
+     "200-Tage-Linie steigt",
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -4261,17 +4409,19 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 53.7,
+    "turnaround": 48.7,
     "momentum": 10.0,
     "value": 60.9
    },
    "why": {
     "turnaround": [
      "-43% unter ATH",
-     "hoeheres Tief"
+     "hoeheres Tief",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
     "momentum": [
-     "200-Tage-Linie steigt"
+     "200-Tage-Linie steigt",
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -4318,16 +4468,19 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 40.7,
-    "momentum": 11.9,
+    "turnaround": 50.0,
+    "momentum": 24.1,
     "value": 47.7
    },
    "why": {
     "turnaround": [
      "ueber 50-Tage-Linie",
-     "RSI erholt sich aus dem ueberverkauften Bereich"
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
-    "momentum": [],
+    "momentum": [
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
+    ],
     "value": [
      "erwartetes KGV unter aktuellem",
      "positiver Free Cashflow"
@@ -4372,21 +4525,23 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 56.5,
-    "momentum": 85.9,
+    "turnaround": 49.2,
+    "momentum": 74.2,
     "value": 64.0
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
-     "50-Tage-Linie dreht nach oben"
+     "50-Tage-Linie dreht nach oben",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
     "momentum": [
      "nur 9% unter ATH",
      "relative Staerke +118% vs. Index",
      "ueber 50- und 200-Tage-Linie",
-     "200-Tage-Linie steigt"
+     "200-Tage-Linie steigt",
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -4406,20 +4561,20 @@
     "range_pos": 75.9,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 9.85,
-    "sma200_slope": -0.14,
+    "sma50_slope": 9.69,
+    "sma200_slope": -0.11,
     "higher_low": true,
-    "rsi14": 61.6,
+    "rsi14": 61.5,
     "rsi_min60": 46.4,
     "perf": {
-     "m1": 7.4,
+     "m1": 10.6,
      "m3": 31.0,
-     "m6": 34.4,
-     "m12": -7.5
+     "m6": 33.0,
+     "m12": -7.0
     },
-    "rs6": 16.2,
+    "rs6": 14.8,
     "vol_pressure_5d": 1.69,
-    "vol_ratio": 1.1
+    "vol_ratio": 1.09
    },
    "flags": [],
    "earnings_in": null,
@@ -4433,19 +4588,21 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 64.2,
-    "momentum": 54.9,
+    "turnaround": 70.1,
+    "momentum": 58.8,
     "value": 52.7
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
-     "50-Tage-Linie dreht nach oben"
+     "50-Tage-Linie dreht nach oben",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
     "momentum": [
-     "relative Staerke +16% vs. Index",
-     "ueber 50- und 200-Tage-Linie"
+     "relative Staerke +15% vs. Index",
+     "ueber 50- und 200-Tage-Linie",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -4464,20 +4621,20 @@
     "range_pos": 78.0,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 6.84,
+    "sma50_slope": 6.75,
     "sma200_slope": 3.27,
     "higher_low": true,
-    "rsi14": 45.8,
-    "rsi_min60": 36.5,
+    "rsi14": 45.4,
+    "rsi_min60": 38.5,
     "perf": {
-     "m1": 2.8,
-     "m3": 14.4,
-     "m6": 1.3,
-     "m12": 33.0
+     "m1": 1.2,
+     "m3": 16.8,
+     "m6": 2.4,
+     "m12": 32.8
     },
-    "rs6": -16.9,
+    "rs6": -15.8,
     "vol_pressure_5d": 0.49,
-    "vol_ratio": 1.03
+    "vol_ratio": 1.01
    },
    "flags": [],
    "earnings_in": null,
@@ -4491,20 +4648,22 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 55.2,
-    "momentum": 56.9,
+    "turnaround": 48.4,
+    "momentum": 49.0,
     "value": 57.9
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
-     "50-Tage-Linie dreht nach oben"
+     "50-Tage-Linie dreht nach oben",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
     "momentum": [
      "nur 8% unter ATH",
      "ueber 50- und 200-Tage-Linie",
-     "200-Tage-Linie steigt"
+     "200-Tage-Linie steigt",
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -4552,8 +4711,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 79.9,
-    "momentum": 0.6,
+    "turnaround": 84.8,
+    "momentum": 15.3,
     "value": 81.0
    },
    "why": {
@@ -4561,9 +4720,12 @@
      "-56% unter ATH",
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
-     "RSI erholt sich aus dem ueberverkauften Bereich"
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
-    "momentum": [],
+    "momentum": [
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
+    ],
     "value": [
      "erwartetes KGV unter aktuellem",
      "positiver Free Cashflow",
@@ -4609,16 +4771,19 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 41.4,
-    "momentum": 7.1,
+    "turnaround": 50.1,
+    "momentum": 20.6,
     "value": 58.9
    },
    "why": {
     "turnaround": [
      "ueber 50-Tage-Linie",
-     "RSI erholt sich aus dem ueberverkauften Bereich"
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
-    "momentum": [],
+    "momentum": [
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
+    ],
     "value": [
      "erwartetes KGV unter aktuellem",
      "positiver Free Cashflow"
@@ -4663,8 +4828,8 @@
    },
    "revision_note": "Analysten ↑1 in 30T (UBS, 2026-08-04)",
    "scores": {
-    "turnaround": 72.4,
-    "momentum": 56.6,
+    "turnaround": 66.8,
+    "momentum": 47.6,
     "value": 82.5
    },
    "why": {
@@ -4673,10 +4838,11 @@
      "ueber 50-Tage-Linie",
      "50-Tage-Linie dreht nach oben",
      "RSI erholt sich aus dem ueberverkauften Bereich",
-     "Anstiege auf hoeherem Volumen"
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
     "momentum": [
-     "ueber 50- und 200-Tage-Linie"
+     "ueber 50- und 200-Tage-Linie",
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -4724,8 +4890,8 @@
    },
    "revision_note": "Analysten ↑1 in 30T (Truist Securities, 2026-08-19)",
    "scores": {
-    "turnaround": 62.5,
-    "momentum": 55.4,
+    "turnaround": 67.5,
+    "momentum": 55.6,
     "value": 77.0
    },
    "why": {
@@ -4733,11 +4899,12 @@
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
      "50-Tage-Linie dreht nach oben",
-     "Anstiege auf hoeherem Volumen"
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
     "momentum": [
      "relative Staerke +30% vs. Index",
-     "ueber 50- und 200-Tage-Linie"
+     "ueber 50- und 200-Tage-Linie",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -4784,8 +4951,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 65.0,
-    "momentum": 0.8,
+    "turnaround": 68.4,
+    "momentum": 9.1,
     "value": 66.1
    },
    "why": {
@@ -4839,8 +5006,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 72.2,
-    "momentum": 39.9,
+    "turnaround": 75.8,
+    "momentum": 53.0,
     "value": 82.6
    },
    "why": {
@@ -4848,11 +5015,13 @@
      "-29% unter ATH",
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
-     "50-Tage-Linie dreht nach oben"
+     "50-Tage-Linie dreht nach oben",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
     "momentum": [
      "ueber 50- und 200-Tage-Linie",
-     "200-Tage-Linie steigt"
+     "200-Tage-Linie steigt",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -4899,8 +5068,8 @@
    },
    "revision_note": "Analysten ↑1 in 30T (RBC Capital, 2026-08-18)",
    "scores": {
-    "turnaround": 95.0,
-    "momentum": 35.5,
+    "turnaround": 97.5,
+    "momentum": 40.7,
     "value": 65.4
    },
    "why": {
@@ -4909,10 +5078,12 @@
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
      "50-Tage-Linie dreht nach oben",
-     "RSI erholt sich aus dem ueberverkauften Bereich"
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
     "momentum": [
-     "ueber 50- und 200-Tage-Linie"
+     "ueber 50- und 200-Tage-Linie",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
     ],
     "value": [
      "positiver Free Cashflow",
@@ -4958,8 +5129,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 60.0,
-    "momentum": 59.3,
+    "turnaround": 55.0,
+    "momentum": 53.5,
     "value": 74.1
    },
    "why": {
@@ -4967,12 +5138,14 @@
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
      "50-Tage-Linie dreht nach oben",
-     "RSI erholt sich aus dem ueberverkauften Bereich"
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
     "momentum": [
      "nur 8% unter ATH",
      "ueber 50- und 200-Tage-Linie",
-     "200-Tage-Linie steigt"
+     "200-Tage-Linie steigt",
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -5019,8 +5192,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 63.9,
-    "momentum": 65.7,
+    "turnaround": 55.1,
+    "momentum": 57.2,
     "value": 37.6
    },
    "why": {
@@ -5029,12 +5202,13 @@
      "ueber 50-Tage-Linie",
      "50-Tage-Linie dreht nach oben",
      "RSI erholt sich aus dem ueberverkauften Bereich",
-     "Anstiege auf hoeherem Volumen"
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
     "momentum": [
      "nur 6% unter ATH",
      "ueber 50- und 200-Tage-Linie",
-     "200-Tage-Linie steigt"
+     "200-Tage-Linie steigt",
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -5080,16 +5254,19 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 43.5,
+    "turnaround": 38.5,
     "momentum": 0.0,
     "value": 62.8
    },
    "why": {
     "turnaround": [
      "-38% unter ATH",
-     "RSI erholt sich aus dem ueberverkauften Bereich"
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
-    "momentum": [],
+    "momentum": [
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
+    ],
     "value": [
      "erwartetes KGV unter aktuellem",
      "positiver Free Cashflow",
@@ -5135,8 +5312,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 68.4,
-    "momentum": 63.0,
+    "turnaround": 71.7,
+    "momentum": 69.0,
     "value": 47.3
    },
    "why": {
@@ -5145,11 +5322,12 @@
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
      "50-Tage-Linie dreht nach oben",
-     "Anstiege auf hoeherem Volumen"
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
     "momentum": [
      "relative Staerke +90% vs. Index",
-     "ueber 50- und 200-Tage-Linie"
+     "ueber 50- und 200-Tage-Linie",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
     ],
     "value": [
      "positiver Free Cashflow",
@@ -5197,8 +5375,8 @@
    },
    "revision_note": "Analysten ↓1 in 30T (Wolfe Research, 2026-08-14)",
    "scores": {
-    "turnaround": 82.0,
-    "momentum": 2.3,
+    "turnaround": 71.0,
+    "momentum": 1.1,
     "value": 56.3
    },
    "why": {
@@ -5206,9 +5384,12 @@
      "-32% unter ATH",
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
-     "RSI erholt sich aus dem ueberverkauften Bereich"
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
-    "momentum": [],
+    "momentum": [
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
+    ],
     "value": [
      "erwartetes KGV unter aktuellem",
      "positiver Free Cashflow",
@@ -5256,16 +5437,19 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 43.9,
-    "momentum": 2.0,
+    "turnaround": 53.6,
+    "momentum": 16.0,
     "value": 56.8
    },
    "why": {
     "turnaround": [
      "-28% unter ATH",
-     "RSI erholt sich aus dem ueberverkauften Bereich"
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
-    "momentum": [],
+    "momentum": [
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
+    ],
     "value": [
      "erwartetes KGV unter aktuellem",
      "positiver Free Cashflow",
@@ -5314,13 +5498,17 @@
    },
    "revision_note": "Analysten ↓8 in 30T (DA Davidson, 2026-08-10)",
    "scores": {
-    "turnaround": 1.4,
-    "momentum": 0.0,
+    "turnaround": 16.4,
+    "momentum": 15.0,
     "value": 58.2
    },
    "why": {
-    "turnaround": [],
-    "momentum": [],
+    "turnaround": [
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
+    ],
+    "momentum": [
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
+    ],
     "value": [
      "erwartetes KGV unter aktuellem",
      "positiver Free Cashflow",
@@ -5339,20 +5527,20 @@
     "range_pos": 65.2,
     "above_sma50": false,
     "above_sma200": true,
-    "sma50_slope": 2.64,
-    "sma200_slope": -0.64,
+    "sma50_slope": 2.7,
+    "sma200_slope": -0.63,
     "higher_low": true,
     "rsi14": 45.9,
     "rsi_min60": 38.2,
     "perf": {
-     "m1": -0.8,
-     "m3": -2.1,
-     "m6": 22.3,
-     "m12": 2.1
+     "m1": 0.5,
+     "m3": -0.5,
+     "m6": 19.0,
+     "m12": 1.9
     },
-    "rs6": 4.1,
+    "rs6": 0.9,
     "vol_pressure_5d": 0.51,
-    "vol_ratio": 1.08
+    "vol_ratio": 1.16
    },
    "flags": [],
    "earnings_in": null,
@@ -5366,17 +5554,19 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 43.0,
-    "momentum": 39.2,
+    "turnaround": 42.0,
+    "momentum": 29.6,
     "value": 37.9
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
-     "50-Tage-Linie dreht nach oben"
+     "50-Tage-Linie dreht nach oben",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
     "momentum": [
-     "nur 10% unter ATH"
+     "nur 10% unter ATH",
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
     ],
     "value": [
      "positiver Free Cashflow"
@@ -5421,16 +5611,18 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 34.7,
-    "momentum": 32.8,
+    "turnaround": 33.2,
+    "momentum": 28.9,
     "value": 79.8
    },
    "why": {
     "turnaround": [
-     "hoeheres Tief"
+     "hoeheres Tief",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
     "momentum": [
-     "200-Tage-Linie steigt"
+     "200-Tage-Linie steigt",
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -5479,17 +5671,20 @@
    },
    "revision_note": "Analysten ↑1 in 30T (UBS, 2026-07-30)",
    "scores": {
-    "turnaround": 67.0,
-    "momentum": 0.0,
+    "turnaround": 77.0,
+    "momentum": 15.0,
     "value": 51.2
    },
    "why": {
     "turnaround": [
      "-41% unter ATH",
      "hoeheres Tief",
-     "50-Tage-Linie dreht nach oben"
+     "50-Tage-Linie dreht nach oben",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
-    "momentum": [],
+    "momentum": [
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
+    ],
     "value": [
      "erwartetes KGV unter aktuellem",
      "positiver Free Cashflow",
@@ -5508,20 +5703,20 @@
     "range_pos": 100.0,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 5.2,
-    "sma200_slope": 1.86,
+    "sma50_slope": 5.13,
+    "sma200_slope": 1.85,
     "higher_low": true,
-    "rsi14": 71.1,
+    "rsi14": 71.3,
     "rsi_min60": 41.1,
     "perf": {
-     "m1": 14.9,
-     "m3": 26.5,
-     "m6": 15.7,
-     "m12": 40.5
+     "m1": 14.5,
+     "m3": 27.1,
+     "m6": 17.4,
+     "m12": 41.6
     },
-    "rs6": -2.5,
+    "rs6": -0.8,
     "vol_pressure_5d": 2.03,
-    "vol_ratio": 1.16
+    "vol_ratio": 1.2
    },
    "flags": [],
    "earnings_in": null,
@@ -5535,8 +5730,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 55.7,
-    "momentum": 69.2,
+    "turnaround": 62.8,
+    "momentum": 76.7,
     "value": 79.1
    },
    "why": {
@@ -5544,11 +5739,12 @@
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
      "50-Tage-Linie dreht nach oben",
-     "Anstiege auf hoeherem Volumen"
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
     "momentum": [
      "nur 0% unter ATH",
-     "ueber 50- und 200-Tage-Linie"
+     "ueber 50- und 200-Tage-Linie",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -5595,17 +5791,19 @@
    },
    "revision_note": "Analysten ↓1 in 30T (Seaport Global, 2026-07-27)",
    "scores": {
-    "turnaround": 34.9,
-    "momentum": 37.3,
+    "turnaround": 41.8,
+    "momentum": 52.1,
     "value": 29.1
    },
    "why": {
     "turnaround": [
-     "ueber 50-Tage-Linie"
+     "ueber 50-Tage-Linie",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
     "momentum": [
      "ueber 50- und 200-Tage-Linie",
-     "200-Tage-Linie steigt"
+     "200-Tage-Linie steigt",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
     ],
     "value": [
      "positiver Free Cashflow",
@@ -5651,8 +5849,8 @@
    },
    "revision_note": "Analysten ↓2 in 30T (B of A Securities, 2026-08-19)",
    "scores": {
-    "turnaround": 93.8,
-    "momentum": 49.6,
+    "turnaround": 95.2,
+    "momentum": 51.9,
     "value": 66.8
    },
    "why": {
@@ -5661,11 +5859,13 @@
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
      "50-Tage-Linie dreht nach oben",
-     "RSI erholt sich aus dem ueberverkauften Bereich"
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
     "momentum": [
      "relative Staerke +21% vs. Index",
-     "ueber 50- und 200-Tage-Linie"
+     "ueber 50- und 200-Tage-Linie",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -5686,20 +5886,20 @@
     "range_pos": 75.0,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 0.04,
-    "sma200_slope": -0.03,
+    "sma50_slope": 0.08,
+    "sma200_slope": -0.04,
     "higher_low": true,
     "rsi14": 53.6,
     "rsi_min60": 36.0,
     "perf": {
      "m1": 0.9,
-     "m3": 2.4,
-     "m6": -0.2,
-     "m12": 13.8
+     "m3": 0.3,
+     "m6": 1.2,
+     "m12": 13.4
     },
-    "rs6": -18.4,
+    "rs6": -17.0,
     "vol_pressure_5d": 2.54,
-    "vol_ratio": 0.88
+    "vol_ratio": 0.86
    },
    "flags": [
     "fallender Umsatz bei hoher Verschuldung"
@@ -5715,18 +5915,20 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 44.6,
-    "momentum": 47.9,
+    "turnaround": 54.7,
+    "momentum": 55.8,
     "value": 38.0
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
-     "ueber 50-Tage-Linie"
+     "ueber 50-Tage-Linie",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
     "momentum": [
      "nur 4% unter ATH",
-     "ueber 50- und 200-Tage-Linie"
+     "ueber 50- und 200-Tage-Linie",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
     ],
     "value": [
      "erwartetes KGV unter aktuellem"
@@ -5771,8 +5973,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 79.5,
-    "momentum": 20.0,
+    "turnaround": 84.5,
+    "momentum": 30.0,
     "value": 47.6
    },
    "why": {
@@ -5780,10 +5982,12 @@
      "-50% unter ATH",
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
-     "50-Tage-Linie dreht nach oben"
+     "50-Tage-Linie dreht nach oben",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
     "momentum": [
-     "ueber 50- und 200-Tage-Linie"
+     "ueber 50- und 200-Tage-Linie",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
     ],
     "value": [
      "positiver Free Cashflow",
@@ -5802,16 +6006,16 @@
     "range_pos": 54.1,
     "above_sma50": false,
     "above_sma200": true,
-    "sma50_slope": 3.5,
-    "sma200_slope": 0.09,
+    "sma50_slope": 3.51,
+    "sma200_slope": 0.05,
     "higher_low": true,
-    "rsi14": 48.8,
+    "rsi14": 48.7,
     "rsi_min60": 34.7,
     "perf": {
-     "m1": -3.4,
-     "m3": 9.2,
-     "m6": -0.8,
-     "m12": 12.5
+     "m1": -3.1,
+     "m3": 10.2,
+     "m6": -1.3,
+     "m12": 11.9
     },
     "rs6": -8.9,
     "vol_pressure_5d": 0.94,
@@ -5829,18 +6033,20 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 51.0,
-    "momentum": 24.6,
+    "turnaround": 54.7,
+    "momentum": 23.1,
     "value": 59.1
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
      "50-Tage-Linie dreht nach oben",
-     "RSI erholt sich aus dem ueberverkauften Bereich"
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
     "momentum": [
-     "nur 11% unter ATH"
+     "nur 11% unter ATH",
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -5870,7 +6076,7 @@
      "m6": -7.0,
      "m12": -4.4
     },
-    "rs6": -15.1,
+    "rs6": -14.7,
     "vol_pressure_5d": 0.14,
     "vol_ratio": 1.07
    },
@@ -5886,17 +6092,19 @@
    },
    "revision_note": "Analysten ↑2 in 30T (Argus Research, 2026-08-11)",
    "scores": {
-    "turnaround": 58.8,
-    "momentum": 25.9,
+    "turnaround": 46.6,
+    "momentum": 18.5,
     "value": 59.3
    },
    "why": {
     "turnaround": [
      "-48% unter ATH",
-     "ueber 50-Tage-Linie"
+     "ueber 50-Tage-Linie",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
     "momentum": [
-     "ueber 50- und 200-Tage-Linie"
+     "ueber 50- und 200-Tage-Linie",
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -5927,7 +6135,7 @@
      "m6": 8.9,
      "m12": 99.6
     },
-    "rs6": 0.8,
+    "rs6": 1.3,
     "vol_pressure_5d": 0.43,
     "vol_ratio": 0.86
    },
@@ -5943,16 +6151,18 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 41.5,
-    "momentum": 25.5,
+    "turnaround": 38.7,
+    "momentum": 22.8,
     "value": 69.6
    },
    "why": {
     "turnaround": [
-     "hoeheres Tief"
+     "hoeheres Tief",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
     "momentum": [
-     "200-Tage-Linie steigt"
+     "200-Tage-Linie steigt",
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -5983,7 +6193,7 @@
      "m6": 10.3,
      "m12": -14.8
     },
-    "rs6": 2.2,
+    "rs6": 2.7,
     "vol_pressure_5d": 2.04,
     "vol_ratio": 1.0
    },
@@ -5999,8 +6209,8 @@
    },
    "revision_note": "Analysten ↓1 in 30T (Citigroup, 2026-08-18)",
    "scores": {
-    "turnaround": 88.9,
-    "momentum": 28.9,
+    "turnaround": 92.7,
+    "momentum": 36.6,
     "value": 74.2
    },
    "why": {
@@ -6009,10 +6219,12 @@
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
      "50-Tage-Linie dreht nach oben",
-     "RSI erholt sich aus dem ueberverkauften Bereich"
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
     "momentum": [
-     "ueber 50- und 200-Tage-Linie"
+     "ueber 50- und 200-Tage-Linie",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -6044,7 +6256,7 @@
      "m6": 13.9,
      "m12": 39.2
     },
-    "rs6": 5.8,
+    "rs6": 6.3,
     "vol_pressure_5d": null,
     "vol_ratio": 0.84
    },
@@ -6060,8 +6272,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 45.5,
-    "momentum": 70.7,
+    "turnaround": 48.0,
+    "momentum": 71.7,
     "value": 75.8
    },
    "why": {
@@ -6104,7 +6316,7 @@
      "m6": 0.6,
      "m12": -6.9
     },
-    "rs6": -7.5,
+    "rs6": -7.0,
     "vol_pressure_5d": 3.86,
     "vol_ratio": 1.07
    },
@@ -6120,17 +6332,19 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 56.5,
-    "momentum": 24.9,
+    "turnaround": 59.3,
+    "momentum": 32.4,
     "value": 65.5
    },
    "why": {
     "turnaround": [
      "-45% unter ATH",
-     "ueber 50-Tage-Linie"
+     "ueber 50-Tage-Linie",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
     "momentum": [
-     "ueber 50- und 200-Tage-Linie"
+     "ueber 50- und 200-Tage-Linie",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -6160,7 +6374,7 @@
      "m6": 10.5,
      "m12": 42.6
     },
-    "rs6": 2.4,
+    "rs6": 2.8,
     "vol_pressure_5d": 0.46,
     "vol_ratio": 0.93
    },
@@ -6176,17 +6390,19 @@
    },
    "revision_note": "Analysten ↑1 in 30T (UBS, 2026-08-03)",
    "scores": {
-    "turnaround": 35.2,
-    "momentum": 41.2,
+    "turnaround": 34.8,
+    "momentum": 36.7,
     "value": 61.6
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
-     "50-Tage-Linie dreht nach oben"
+     "50-Tage-Linie dreht nach oben",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
     "momentum": [
-     "200-Tage-Linie steigt"
+     "200-Tage-Linie steigt",
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -6206,18 +6422,18 @@
     "range_pos": 41.0,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 4.13,
-    "sma200_slope": -1.06,
+    "sma50_slope": 4.16,
+    "sma200_slope": -1.03,
     "higher_low": true,
-    "rsi14": 52.3,
-    "rsi_min60": 41.6,
+    "rsi14": 52.4,
+    "rsi_min60": 41.3,
     "perf": {
-     "m1": 3.4,
-     "m3": 15.7,
-     "m6": -8.8,
-     "m12": -11.5
+     "m1": 3.8,
+     "m3": 14.7,
+     "m6": -8.9,
+     "m12": -10.4
     },
-    "rs6": -16.9,
+    "rs6": -16.6,
     "vol_pressure_5d": 0.28,
     "vol_ratio": 1.03
    },
@@ -6233,18 +6449,20 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 63.6,
-    "momentum": 32.4,
+    "turnaround": 56.3,
+    "momentum": 23.8,
     "value": 58.3
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
-     "50-Tage-Linie dreht nach oben"
+     "50-Tage-Linie dreht nach oben",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
     "momentum": [
-     "ueber 50- und 200-Tage-Linie"
+     "ueber 50- und 200-Tage-Linie",
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -6274,7 +6492,7 @@
      "m6": -7.7,
      "m12": 1.6
     },
-    "rs6": -15.8,
+    "rs6": -15.4,
     "vol_pressure_5d": 1.27,
     "vol_ratio": 0.87
    },
@@ -6292,16 +6510,19 @@
    },
    "revision_note": "Analysten ↑1 in 30T (Citigroup, 2026-07-24)",
    "scores": {
-    "turnaround": 40.7,
-    "momentum": 0.0,
+    "turnaround": 50.6,
+    "momentum": 14.1,
     "value": 58.0
    },
    "why": {
     "turnaround": [
      "-27% unter ATH",
-     "RSI erholt sich aus dem ueberverkauften Bereich"
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
-    "momentum": [],
+    "momentum": [
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
+    ],
     "value": [
      "erwartetes KGV unter aktuellem",
      "positiver Free Cashflow",
@@ -6331,7 +6552,7 @@
      "m6": 12.8,
      "m12": 59.0
     },
-    "rs6": 4.7,
+    "rs6": 5.2,
     "vol_pressure_5d": 5.19,
     "vol_ratio": 1.0
    },
@@ -6347,20 +6568,22 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 52.8,
-    "momentum": 74.3,
+    "turnaround": 61.6,
+    "momentum": 81.6,
     "value": 74.4
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
-     "50-Tage-Linie dreht nach oben"
+     "50-Tage-Linie dreht nach oben",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
     "momentum": [
      "nur 0% unter ATH",
      "ueber 50- und 200-Tage-Linie",
-     "200-Tage-Linie steigt"
+     "200-Tage-Linie steigt",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -6390,7 +6613,7 @@
      "m6": 16.8,
      "m12": 24.9
     },
-    "rs6": 8.7,
+    "rs6": 9.2,
     "vol_pressure_5d": 0.25,
     "vol_ratio": 0.94
    },
@@ -6406,19 +6629,21 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 53.0,
-    "momentum": 72.1,
+    "turnaround": 47.5,
+    "momentum": 64.6,
     "value": 59.3
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
-     "50-Tage-Linie dreht nach oben"
+     "50-Tage-Linie dreht nach oben",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
     "momentum": [
      "nur 2% unter ATH",
-     "ueber 50- und 200-Tage-Linie"
+     "ueber 50- und 200-Tage-Linie",
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -6448,7 +6673,7 @@
      "m6": 15.2,
      "m12": 34.4
     },
-    "rs6": 7.1,
+    "rs6": 7.5,
     "vol_pressure_5d": 3.97,
     "vol_ratio": 0.97
    },
@@ -6464,20 +6689,22 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 52.0,
-    "momentum": 73.8,
+    "turnaround": 61.1,
+    "momentum": 81.0,
     "value": 69.2
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
-     "50-Tage-Linie dreht nach oben"
+     "50-Tage-Linie dreht nach oben",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
     "momentum": [
      "nur 0% unter ATH",
      "ueber 50- und 200-Tage-Linie",
-     "200-Tage-Linie steigt"
+     "200-Tage-Linie steigt",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -6507,7 +6734,7 @@
      "m6": -17.4,
      "m12": -11.3
     },
-    "rs6": -25.5,
+    "rs6": -25.1,
     "vol_pressure_5d": 1.25,
     "vol_ratio": 1.01
    },
@@ -6523,15 +6750,18 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 28.0,
-    "momentum": 7.9,
+    "turnaround": 38.3,
+    "momentum": 18.9,
     "value": 49.1
    },
    "why": {
     "turnaround": [
-     "RSI erholt sich aus dem ueberverkauften Bereich"
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
-    "momentum": [],
+    "momentum": [
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
+    ],
     "value": [
      "erwartetes KGV unter aktuellem",
      "positiver Free Cashflow"
@@ -6560,7 +6790,7 @@
      "m6": 10.6,
      "m12": 20.4
     },
-    "rs6": 2.5,
+    "rs6": 3.0,
     "vol_pressure_5d": 0.19,
     "vol_ratio": 1.12
    },
@@ -6576,19 +6806,21 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 57.5,
-    "momentum": 71.1,
+    "turnaround": 49.8,
+    "momentum": 62.1,
     "value": 59.2
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
-     "50-Tage-Linie dreht nach oben"
+     "50-Tage-Linie dreht nach oben",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
     "momentum": [
      "nur 2% unter ATH",
-     "ueber 50- und 200-Tage-Linie"
+     "ueber 50- und 200-Tage-Linie",
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -6618,7 +6850,7 @@
      "m6": 26.9,
      "m12": 86.8
     },
-    "rs6": 18.8,
+    "rs6": 19.3,
     "vol_pressure_5d": 5.54,
     "vol_ratio": 0.98
    },
@@ -6634,21 +6866,23 @@
    },
    "revision_note": "Analysten ↑1 in 30T (Daiwa Capital, 2026-08-12)",
    "scores": {
-    "turnaround": 47.0,
-    "momentum": 87.1,
+    "turnaround": 56.0,
+    "momentum": 92.3,
     "value": 57.5
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
-     "50-Tage-Linie dreht nach oben"
+     "50-Tage-Linie dreht nach oben",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
     "momentum": [
      "nur 0% unter ATH",
      "relative Staerke +19% vs. Index",
      "ueber 50- und 200-Tage-Linie",
-     "200-Tage-Linie steigt"
+     "200-Tage-Linie steigt",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -6679,7 +6913,7 @@
      "m6": -36.4,
      "m12": -45.5
     },
-    "rs6": -44.5,
+    "rs6": -44.0,
     "vol_pressure_5d": 1.03,
     "vol_ratio": 1.06
    },
@@ -6697,8 +6931,8 @@
    },
    "revision_note": "Analysten ↓1 in 30T (JP Morgan, 2026-08-04)",
    "scores": {
-    "turnaround": 11.2,
-    "momentum": 4.6,
+    "turnaround": 16.1,
+    "momentum": 9.2,
     "value": 53.3
    },
    "why": {
@@ -6733,7 +6967,7 @@
      "m6": -6.6,
      "m12": -4.6
     },
-    "rs6": -14.7,
+    "rs6": -14.2,
     "vol_pressure_5d": 4.2,
     "vol_ratio": 0.95
    },
@@ -6749,15 +6983,18 @@
    },
    "revision_note": "Analysten ↓2 in 30T (Argus Research, 2026-08-07)",
    "scores": {
-    "turnaround": 39.4,
-    "momentum": 11.5,
+    "turnaround": 53.6,
+    "momentum": 23.8,
     "value": 59.4
    },
    "why": {
     "turnaround": [
-     "hoeheres Tief"
+     "hoeheres Tief",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
-    "momentum": [],
+    "momentum": [
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
+    ],
     "value": [
      "erwartetes KGV unter aktuellem",
      "positiver Free Cashflow",
@@ -6787,7 +7024,7 @@
      "m6": -2.9,
      "m12": -0.8
     },
-    "rs6": -11.0,
+    "rs6": -10.5,
     "vol_pressure_5d": 0.72,
     "vol_ratio": 1.25
    },
@@ -6803,8 +7040,8 @@
    },
    "revision_note": "Analysten ↑1 in 30T (Guggenheim, 2026-08-03)",
    "scores": {
-    "turnaround": 68.8,
-    "momentum": 52.6,
+    "turnaround": 59.4,
+    "momentum": 42.1,
     "value": 62.5
    },
    "why": {
@@ -6813,11 +7050,12 @@
      "ueber 50-Tage-Linie",
      "50-Tage-Linie dreht nach oben",
      "RSI erholt sich aus dem ueberverkauften Bereich",
-     "Anstiege auf hoeherem Volumen"
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
     "momentum": [
      "nur 10% unter ATH",
-     "ueber 50- und 200-Tage-Linie"
+     "ueber 50- und 200-Tage-Linie",
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -6837,18 +7075,18 @@
     "range_pos": 74.8,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 10.14,
-    "sma200_slope": 3.68,
+    "sma50_slope": 10.1,
+    "sma200_slope": 3.69,
     "higher_low": true,
-    "rsi14": 47.3,
+    "rsi14": 46.7,
     "rsi_min60": 33.3,
     "perf": {
-     "m1": -1.7,
-     "m3": 18.9,
-     "m6": 22.0,
-     "m12": 38.6
+     "m1": -2.0,
+     "m3": 19.1,
+     "m6": 22.3,
+     "m12": 38.9
     },
-    "rs6": 13.9,
+    "rs6": 14.7,
     "vol_pressure_5d": 0.57,
     "vol_ratio": 1.19
    },
@@ -6864,8 +7102,8 @@
    },
    "revision_note": "Analysten ↓1 in 30T (Mizuho, 2026-07-24)",
    "scores": {
-    "turnaround": 67.3,
-    "momentum": 75.8,
+    "turnaround": 58.7,
+    "momentum": 63.0,
     "value": 60.3
    },
    "why": {
@@ -6874,13 +7112,14 @@
      "ueber 50-Tage-Linie",
      "50-Tage-Linie dreht nach oben",
      "RSI erholt sich aus dem ueberverkauften Bereich",
-     "Anstiege auf hoeherem Volumen"
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
     "momentum": [
      "nur 9% unter ATH",
-     "relative Staerke +14% vs. Index",
+     "relative Staerke +15% vs. Index",
      "ueber 50- und 200-Tage-Linie",
-     "200-Tage-Linie steigt"
+     "200-Tage-Linie steigt",
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
     ],
     "value": [
      "positiver Free Cashflow",
@@ -6910,7 +7149,7 @@
      "m6": 36.7,
      "m12": 29.3
     },
-    "rs6": 28.6,
+    "rs6": 29.0,
     "vol_pressure_5d": 0.19,
     "vol_ratio": 1.3
    },
@@ -6926,8 +7165,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 66.1,
-    "momentum": 51.6,
+    "turnaround": 56.1,
+    "momentum": 41.8,
     "value": 56.1
    },
    "why": {
@@ -6935,10 +7174,11 @@
      "-35% unter ATH",
      "hoeheres Tief",
      "50-Tage-Linie dreht nach oben",
-     "Anstiege auf hoeherem Volumen"
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
     "momentum": [
-     "relative Staerke +29% vs. Index"
+     "relative Staerke +29% vs. Index",
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -6968,7 +7208,7 @@
      "m6": 14.6,
      "m12": 7.5
     },
-    "rs6": 6.5,
+    "rs6": 6.9,
     "vol_pressure_5d": 0.88,
     "vol_ratio": 1.03
    },
@@ -6984,19 +7224,21 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 55.2,
-    "momentum": 69.8,
+    "turnaround": 51.0,
+    "momentum": 63.7,
     "value": 80.5
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
-     "50-Tage-Linie dreht nach oben"
+     "50-Tage-Linie dreht nach oben",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
     "momentum": [
      "nur 1% unter ATH",
-     "ueber 50- und 200-Tage-Linie"
+     "ueber 50- und 200-Tage-Linie",
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -7027,7 +7269,7 @@
      "m6": 6.0,
      "m12": 18.8
     },
-    "rs6": -2.1,
+    "rs6": -1.6,
     "vol_pressure_5d": 4.5,
     "vol_ratio": 0.82
    },
@@ -7045,19 +7287,21 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 54.2,
-    "momentum": 62.7,
+    "turnaround": 64.2,
+    "momentum": 72.5,
     "value": 57.2
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
-     "RSI erholt sich aus dem ueberverkauften Bereich"
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
     "momentum": [
      "nur 1% unter ATH",
-     "ueber 50- und 200-Tage-Linie"
+     "ueber 50- und 200-Tage-Linie",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -7087,7 +7331,7 @@
      "m6": -9.4,
      "m12": 14.2
     },
-    "rs6": -17.5,
+    "rs6": -17.0,
     "vol_pressure_5d": 0.25,
     "vol_ratio": 0.91
    },
@@ -7103,16 +7347,19 @@
    },
    "revision_note": "Analysten ↓1 in 30T (DA Davidson, 2026-08-17)",
    "scores": {
-    "turnaround": 35.2,
-    "momentum": 13.2,
+    "turnaround": 30.1,
+    "momentum": 10.9,
     "value": 53.8
    },
    "why": {
     "turnaround": [
      "ueber 50-Tage-Linie",
-     "RSI erholt sich aus dem ueberverkauften Bereich"
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
-    "momentum": [],
+    "momentum": [
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
+    ],
     "value": [
      "erwartetes KGV unter aktuellem",
      "positiver Free Cashflow",
@@ -7125,26 +7372,26 @@
    "index": "DAX",
    "sector": "Consumer Cyclical",
    "metrics": {
-    "last": 154.25,
-    "dd_ath": -51.6,
+    "last": 152.7,
+    "dd_ath": -52.1,
     "days_since_ath": 1842,
-    "range_pos": 41.1,
+    "range_pos": 38.6,
     "above_sma50": false,
     "above_sma200": false,
-    "sma50_slope": 1.75,
-    "sma200_slope": -1.21,
+    "sma50_slope": 1.39,
+    "sma200_slope": -1.14,
     "higher_low": true,
-    "rsi14": 35.5,
-    "rsi_min60": 31.9,
+    "rsi14": 34.0,
+    "rsi_min60": 31.7,
     "perf": {
-     "m1": -14.0,
-     "m3": 2.8,
-     "m6": 0.1,
-     "m12": -7.2
+     "m1": -14.9,
+     "m3": -1.2,
+     "m6": 0.2,
+     "m12": -8.6
     },
-    "rs6": -2.8,
-    "vol_pressure_5d": 0.65,
-    "vol_ratio": 0.71
+    "rs6": -2.5,
+    "vol_pressure_5d": 0.64,
+    "vol_ratio": 0.7
    },
    "flags": [],
    "earnings_in": null,
@@ -7158,17 +7405,19 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 59.4,
-    "momentum": 1.8,
+    "turnaround": 52.8,
+    "momentum": 1.7,
     "value": 70.6
    },
    "why": {
     "turnaround": [
      "-52% unter ATH",
      "hoeheres Tief",
-     "50-Tage-Linie dreht nach oben"
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
-    "momentum": [],
+    "momentum": [
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
+    ],
     "value": [
      "erwartetes KGV unter aktuellem",
      "positiver Free Cashflow",
@@ -7181,26 +7430,26 @@
    "index": "DAX",
    "sector": "Industrials",
    "metrics": {
-    "last": 207.2,
-    "dd_ath": -4.2,
+    "last": 206.6,
+    "dd_ath": -4.5,
     "days_since_ath": 219,
-    "range_pos": 84.9,
+    "range_pos": 83.9,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 8.01,
-    "sma200_slope": 0.43,
+    "sma50_slope": 8.08,
+    "sma200_slope": 0.47,
     "higher_low": true,
-    "rsi14": 49.7,
+    "rsi14": 49.0,
     "rsi_min60": 46.0,
     "perf": {
-     "m1": -0.5,
-     "m3": 18.8,
-     "m6": 11.2,
-     "m12": 16.5
+     "m1": 6.2,
+     "m3": 21.8,
+     "m6": 12.5,
+     "m12": 17.5
     },
-    "rs6": 8.4,
+    "rs6": 9.8,
     "vol_pressure_5d": 0.43,
-    "vol_ratio": 0.99
+    "vol_ratio": 1.01
    },
    "flags": [],
    "earnings_in": null,
@@ -7214,19 +7463,21 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 54.2,
-    "momentum": 65.7,
+    "turnaround": 48.4,
+    "momentum": 57.4,
     "value": 62.0
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
-     "50-Tage-Linie dreht nach oben"
+     "50-Tage-Linie dreht nach oben",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
     "momentum": [
      "nur 4% unter ATH",
-     "ueber 50- und 200-Tage-Linie"
+     "ueber 50- und 200-Tage-Linie",
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
     ],
     "value": [
      "positiver Free Cashflow",
@@ -7245,20 +7496,20 @@
     "range_pos": 94.9,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 5.55,
-    "sma200_slope": 2.49,
+    "sma50_slope": 5.49,
+    "sma200_slope": 2.51,
     "higher_low": true,
-    "rsi14": 57.6,
+    "rsi14": 57.4,
     "rsi_min60": 42.7,
     "perf": {
      "m1": 3.3,
-     "m3": 13.2,
-     "m6": 22.7,
-     "m12": 22.1
+     "m3": 13.3,
+     "m6": 22.4,
+     "m12": 21.7
     },
-    "rs6": 19.8,
+    "rs6": 19.7,
     "vol_pressure_5d": 0.74,
-    "vol_ratio": 1.12
+    "vol_ratio": 1.14
    },
    "flags": [],
    "earnings_in": null,
@@ -7272,21 +7523,23 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 57.5,
-    "momentum": 88.2,
+    "turnaround": 50.0,
+    "momentum": 76.2,
     "value": 77.2
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
-     "50-Tage-Linie dreht nach oben"
+     "50-Tage-Linie dreht nach oben",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
     "momentum": [
      "nur 1% unter ATH",
      "relative Staerke +20% vs. Index",
      "ueber 50- und 200-Tage-Linie",
-     "200-Tage-Linie steigt"
+     "200-Tage-Linie steigt",
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -7300,26 +7553,26 @@
    "index": "DAX",
    "sector": "Basic Materials",
    "metrics": {
-    "last": 50.95,
-    "dd_ath": -14.1,
+    "last": 50.82,
+    "dd_ath": -14.3,
     "days_since_ath": 3135,
-    "range_pos": 78.4,
+    "range_pos": 77.5,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": -0.63,
-    "sma200_slope": 1.97,
+    "sma50_slope": -0.39,
+    "sma200_slope": 1.99,
     "higher_low": true,
-    "rsi14": 54.5,
+    "rsi14": 53.6,
     "rsi_min60": 30.2,
     "perf": {
-     "m1": 5.6,
-     "m3": -1.8,
-     "m6": 6.5,
-     "m12": 11.7
+     "m1": 5.3,
+     "m3": -1.6,
+     "m6": 8.8,
+     "m12": 10.1
     },
-    "rs6": 3.6,
-    "vol_pressure_5d": 2.4,
-    "vol_ratio": 0.96
+    "rs6": 6.2,
+    "vol_pressure_5d": 2.37,
+    "vol_ratio": 0.98
    },
    "flags": [],
    "earnings_in": null,
@@ -7333,18 +7586,20 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 52.4,
-    "momentum": 51.8,
+    "turnaround": 62.5,
+    "momentum": 61.6,
     "value": 69.6
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
-     "RSI erholt sich aus dem ueberverkauften Bereich"
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
     "momentum": [
-     "ueber 50- und 200-Tage-Linie"
+     "ueber 50- und 200-Tage-Linie",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -7358,25 +7613,25 @@
    "index": "DAX",
    "sector": "Healthcare",
    "metrics": {
-    "last": 48.47,
-    "dd_ath": -49.1,
+    "last": 48.31,
+    "dd_ath": -49.3,
     "days_since_ath": 3349,
-    "range_pos": 82.1,
+    "range_pos": 81.6,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 10.8,
-    "sma200_slope": 5.49,
+    "sma50_slope": 10.63,
+    "sma200_slope": 5.46,
     "higher_low": true,
-    "rsi14": 53.7,
+    "rsi14": 52.9,
     "rsi_min60": 28.3,
     "perf": {
-     "m1": 3.2,
-     "m3": 26.2,
-     "m6": 11.3,
-     "m12": 72.8
+     "m1": 1.4,
+     "m3": 25.4,
+     "m6": 6.3,
+     "m12": 73.3
     },
-    "rs6": 8.4,
-    "vol_pressure_5d": 2.68,
+    "rs6": 3.6,
+    "vol_pressure_5d": 2.62,
     "vol_ratio": 1.13
    },
    "flags": [],
@@ -7391,8 +7646,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 90.8,
-    "momentum": 55.1,
+    "turnaround": 92.9,
+    "momentum": 59.8,
     "value": 40.5
    },
    "why": {
@@ -7401,11 +7656,13 @@
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
      "50-Tage-Linie dreht nach oben",
-     "RSI erholt sich aus dem ueberverkauften Bereich"
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
     "momentum": [
      "ueber 50- und 200-Tage-Linie",
-     "200-Tage-Linie steigt"
+     "200-Tage-Linie steigt",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
     ],
     "value": [
      "positiver Free Cashflow"
@@ -7417,26 +7674,26 @@
    "index": "DAX",
    "sector": "Consumer Defensive",
    "metrics": {
-    "last": 78.72,
+    "last": 78.86,
     "dd_ath": -45.3,
     "days_since_ath": 832,
-    "range_pos": 27.9,
+    "range_pos": 28.3,
     "above_sma50": true,
     "above_sma200": false,
-    "sma50_slope": 4.83,
-    "sma200_slope": -1.46,
+    "sma50_slope": 4.8,
+    "sma200_slope": -1.47,
     "higher_low": true,
-    "rsi14": 51.5,
+    "rsi14": 51.9,
     "rsi_min60": 32.6,
     "perf": {
-     "m1": 0.3,
-     "m3": 8.6,
-     "m6": -24.9,
-     "m12": -22.5
+     "m1": 0.4,
+     "m3": 8.7,
+     "m6": -25.0,
+     "m12": -22.4
     },
-    "rs6": -27.8,
-    "vol_pressure_5d": 1.42,
-    "vol_ratio": 0.87
+    "rs6": -27.6,
+    "vol_pressure_5d": 1.43,
+    "vol_ratio": 0.89
    },
    "flags": [],
    "earnings_in": null,
@@ -7450,8 +7707,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 90.0,
-    "momentum": 0.0,
+    "turnaround": 95.0,
+    "momentum": 15.0,
     "value": 43.2
    },
    "why": {
@@ -7460,9 +7717,12 @@
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
      "50-Tage-Linie dreht nach oben",
-     "RSI erholt sich aus dem ueberverkauften Bereich"
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
-    "momentum": [],
+    "momentum": [
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
+    ],
     "value": [
      "positiver Free Cashflow"
     ]
@@ -7473,24 +7733,24 @@
    "index": "DAX",
    "sector": "Consumer Cyclical",
    "metrics": {
-    "last": 58.3,
-    "dd_ath": -39.8,
+    "last": 58.24,
+    "dd_ath": -39.9,
     "days_since_ath": 864,
-    "range_pos": 3.9,
+    "range_pos": 3.8,
     "above_sma50": false,
     "above_sma200": false,
-    "sma50_slope": -8.96,
-    "sma200_slope": -2.35,
+    "sma50_slope": -8.74,
+    "sma200_slope": -2.32,
     "higher_low": false,
-    "rsi14": 43.7,
+    "rsi14": 43.5,
     "rsi_min60": 19.3,
     "perf": {
-     "m1": 1.3,
-     "m3": -21.6,
-     "m6": -32.8,
-     "m12": -32.6
+     "m1": 1.2,
+     "m3": -21.8,
+     "m6": -31.6,
+     "m12": -32.2
     },
-    "rs6": -35.7,
+    "rs6": -34.3,
     "vol_pressure_5d": 0.65,
     "vol_ratio": 1.01
    },
@@ -7508,16 +7768,19 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 42.8,
-    "momentum": 3.1,
+    "turnaround": 36.4,
+    "momentum": 1.6,
     "value": 38.3
    },
    "why": {
     "turnaround": [
      "-40% unter ATH",
-     "RSI erholt sich aus dem ueberverkauften Bereich"
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
-    "momentum": [],
+    "momentum": [
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
+    ],
     "value": [
      "positiver Free Cashflow"
     ]
@@ -7528,26 +7791,26 @@
    "index": "DAX",
    "sector": "Basic Materials",
    "metrics": {
-    "last": 59.94,
-    "dd_ath": -22.8,
+    "last": 59.86,
+    "dd_ath": -22.9,
     "days_since_ath": 902,
-    "range_pos": 78.3,
+    "range_pos": 77.9,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 3.07,
-    "sma200_slope": 2.53,
+    "sma50_slope": 3.18,
+    "sma200_slope": 2.57,
     "higher_low": true,
-    "rsi14": 47.3,
+    "rsi14": 46.8,
     "rsi_min60": 32.9,
     "perf": {
-     "m1": 3.1,
-     "m3": 3.5,
-     "m6": 13.1,
-     "m12": 12.0
+     "m1": 3.0,
+     "m3": 4.1,
+     "m6": 14.3,
+     "m12": 13.5
     },
-    "rs6": 10.2,
-    "vol_pressure_5d": 3.97,
-    "vol_ratio": 1.04
+    "rs6": 11.6,
+    "vol_pressure_5d": 3.96,
+    "vol_ratio": 1.03
    },
    "flags": [],
    "earnings_in": null,
@@ -7561,8 +7824,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 76.5,
-    "momentum": 51.5,
+    "turnaround": 82.2,
+    "momentum": 60.1,
     "value": 63.5
    },
    "why": {
@@ -7570,11 +7833,13 @@
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
      "50-Tage-Linie dreht nach oben",
-     "RSI erholt sich aus dem ueberverkauften Bereich"
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
     "momentum": [
      "ueber 50- und 200-Tage-Linie",
-     "200-Tage-Linie steigt"
+     "200-Tage-Linie steigt",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -7588,26 +7853,26 @@
    "index": "DAX",
    "sector": "Financial Services",
    "metrics": {
-    "last": 38.88,
-    "dd_ath": -2.5,
+    "last": 38.83,
+    "dd_ath": -2.6,
     "days_since_ath": 7,
-    "range_pos": 91.2,
+    "range_pos": 90.8,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 2.4,
+    "sma50_slope": 2.33,
     "sma200_slope": 2.57,
     "higher_low": true,
-    "rsi14": 52.5,
-    "rsi_min60": 42.8,
+    "rsi14": 52.3,
+    "rsi_min60": 42.7,
     "perf": {
-     "m1": 3.0,
-     "m3": 8.4,
-     "m6": 17.2,
-     "m12": 8.4
+     "m1": 2.9,
+     "m3": 7.0,
+     "m6": 17.3,
+     "m12": 8.7
     },
-    "rs6": 14.3,
-    "vol_pressure_5d": 0.07,
-    "vol_ratio": 0.87
+    "rs6": 14.6,
+    "vol_pressure_5d": 0.08,
+    "vol_ratio": 0.9
    },
    "flags": [],
    "earnings_in": null,
@@ -7621,21 +7886,23 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 50.5,
-    "momentum": 77.0,
+    "turnaround": 45.3,
+    "momentum": 69.0,
     "value": 52.4
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
-     "50-Tage-Linie dreht nach oben"
+     "50-Tage-Linie dreht nach oben",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
     "momentum": [
-     "nur 2% unter ATH",
-     "relative Staerke +14% vs. Index",
+     "nur 3% unter ATH",
+     "relative Staerke +15% vs. Index",
      "ueber 50- und 200-Tage-Linie",
-     "200-Tage-Linie steigt"
+     "200-Tage-Linie steigt",
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -7648,26 +7915,26 @@
    "index": "DAX",
    "sector": "Consumer Cyclical",
    "metrics": {
-    "last": 68.08,
-    "dd_ath": -43.8,
+    "last": 67.9,
+    "dd_ath": -43.9,
     "days_since_ath": 3145,
-    "range_pos": 67.6,
+    "range_pos": 66.9,
     "above_sma50": false,
     "above_sma200": true,
-    "sma50_slope": 0.36,
-    "sma200_slope": 1.74,
+    "sma50_slope": 0.3,
+    "sma200_slope": 1.78,
     "higher_low": true,
-    "rsi14": 43.0,
-    "rsi_min60": 38.5,
+    "rsi14": 42.3,
+    "rsi_min60": 38.8,
     "perf": {
-     "m1": -4.3,
-     "m3": -0.8,
-     "m6": -3.2,
-     "m12": 24.1
+     "m1": -5.5,
+     "m3": 1.0,
+     "m6": -3.0,
+     "m12": 23.6
     },
-    "rs6": -6.1,
+    "rs6": -5.7,
     "vol_pressure_5d": 0.06,
-    "vol_ratio": 1.01
+    "vol_ratio": 1.02
    },
    "flags": [
     "fallender Umsatz bei hoher Verschuldung"
@@ -7683,16 +7950,19 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 59.1,
-    "momentum": 18.0,
+    "turnaround": 52.5,
+    "momentum": 15.6,
     "value": 37.4
    },
    "why": {
     "turnaround": [
      "-44% unter ATH",
-     "hoeheres Tief"
+     "hoeheres Tief",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
-    "momentum": [],
+    "momentum": [
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
+    ],
     "value": [
      "positiver Free Cashflow"
     ]
@@ -7703,26 +7973,26 @@
    "index": "DAX",
    "sector": "Industrials",
    "metrics": {
-    "last": 45.49,
+    "last": 45.48,
     "dd_ath": -8.3,
     "days_since_ath": 17,
-    "range_pos": 76.1,
+    "range_pos": 76.0,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 5.42,
-    "sma200_slope": 3.47,
+    "sma50_slope": 5.37,
+    "sma200_slope": 3.48,
     "higher_low": true,
     "rsi14": 50.0,
     "rsi_min60": 44.7,
     "perf": {
      "m1": 5.2,
-     "m3": 14.5,
-     "m6": 12.3,
-     "m12": 14.5
+     "m3": 13.3,
+     "m6": 13.1,
+     "m12": 15.7
     },
-    "rs6": 9.5,
-    "vol_pressure_5d": 2.26,
-    "vol_ratio": 0.95
+    "rs6": 10.4,
+    "vol_pressure_5d": 2.27,
+    "vol_ratio": 0.94
    },
    "flags": [],
    "earnings_in": null,
@@ -7736,20 +8006,22 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 53.2,
-    "momentum": 65.7,
+    "turnaround": 62.5,
+    "momentum": 72.1,
     "value": 57.7
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
-     "50-Tage-Linie dreht nach oben"
+     "50-Tage-Linie dreht nach oben",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
     "momentum": [
      "nur 8% unter ATH",
      "ueber 50- und 200-Tage-Linie",
-     "200-Tage-Linie steigt"
+     "200-Tage-Linie steigt",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -7762,26 +8034,26 @@
    "index": "DAX",
    "sector": "Financial Services",
    "metrics": {
-    "last": 32.47,
-    "dd_ath": -2.8,
+    "last": 32.35,
+    "dd_ath": -3.1,
     "days_since_ath": 6,
-    "range_pos": 90.3,
+    "range_pos": 89.0,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 7.09,
-    "sma200_slope": 1.23,
+    "sma50_slope": 7.0,
+    "sma200_slope": 1.21,
     "higher_low": true,
-    "rsi14": 54.2,
-    "rsi_min60": 45.9,
+    "rsi14": 52.7,
+    "rsi_min60": 45.8,
     "perf": {
-     "m1": 4.5,
-     "m3": 19.9,
-     "m6": 8.5,
-     "m12": 6.7
+     "m1": 4.1,
+     "m3": 19.0,
+     "m6": 10.2,
+     "m12": 7.2
     },
-    "rs6": 5.7,
+    "rs6": 7.6,
     "vol_pressure_5d": 0.29,
-    "vol_ratio": 1.19
+    "vol_ratio": 1.22
    },
    "flags": [],
    "earnings_in": null,
@@ -7795,8 +8067,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 59.2,
-    "momentum": 74.4,
+    "turnaround": 51.0,
+    "momentum": 64.5,
     "value": 50.6
    },
    "why": {
@@ -7804,11 +8076,12 @@
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
      "50-Tage-Linie dreht nach oben",
-     "Anstiege auf hoeherem Volumen"
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
     "momentum": [
      "nur 3% unter ATH",
-     "ueber 50- und 200-Tage-Linie"
+     "ueber 50- und 200-Tage-Linie",
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
     ],
     "value": [
      "erwartetes KGV unter aktuellem"
@@ -7820,25 +8093,25 @@
    "index": "DAX",
    "sector": "Financial Services",
    "metrics": {
-    "last": 278.0,
-    "dd_ath": -2.1,
+    "last": 278.4,
+    "dd_ath": -1.9,
     "days_since_ath": 472,
-    "range_pos": 98.5,
+    "range_pos": 99.0,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 3.33,
-    "sma200_slope": 2.14,
+    "sma50_slope": 3.29,
+    "sma200_slope": 2.11,
     "higher_low": true,
-    "rsi14": 66.3,
+    "rsi14": 66.9,
     "rsi_min60": 35.9,
     "perf": {
-     "m1": 9.5,
-     "m3": 8.4,
-     "m6": 28.6,
-     "m12": 9.5
+     "m1": 10.3,
+     "m3": 8.7,
+     "m6": 30.9,
+     "m12": 9.0
     },
-    "rs6": 25.7,
-    "vol_pressure_5d": 4.75,
+    "rs6": 28.2,
+    "vol_pressure_5d": 4.76,
     "vol_ratio": 0.92
    },
    "flags": [],
@@ -7853,20 +8126,22 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 51.9,
-    "momentum": 85.8,
+    "turnaround": 61.4,
+    "momentum": 90.6,
     "value": 78.1
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
-     "50-Tage-Linie dreht nach oben"
+     "50-Tage-Linie dreht nach oben",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
     "momentum": [
      "nur 2% unter ATH",
-     "relative Staerke +26% vs. Index",
-     "ueber 50- und 200-Tage-Linie"
+     "relative Staerke +28% vs. Index",
+     "ueber 50- und 200-Tage-Linie",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -7880,26 +8155,26 @@
    "index": "DAX",
    "sector": "Industrials",
    "metrics": {
-    "last": 55.46,
-    "dd_ath": -4.1,
+    "last": 55.3,
+    "dd_ath": -4.4,
     "days_since_ath": 21,
-    "range_pos": 89.1,
+    "range_pos": 88.4,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 4.37,
+    "sma50_slope": 4.45,
     "sma200_slope": 4.0,
     "higher_low": true,
-    "rsi14": 48.4,
-    "rsi_min60": 40.0,
+    "rsi14": 47.5,
+    "rsi_min60": 40.9,
     "perf": {
-     "m1": -2.8,
-     "m3": 10.3,
-     "m6": 15.8,
-     "m12": 42.6
+     "m1": -3.2,
+     "m3": 10.9,
+     "m6": 15.5,
+     "m12": 39.3
     },
     "rs6": 12.9,
-    "vol_pressure_5d": 0.88,
-    "vol_ratio": 0.89
+    "vol_pressure_5d": 0.77,
+    "vol_ratio": 0.94
    },
    "flags": [],
    "earnings_in": null,
@@ -7913,20 +8188,22 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 52.0,
-    "momentum": 77.3,
+    "turnaround": 47.5,
+    "momentum": 69.6,
     "value": 69.1
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
-     "50-Tage-Linie dreht nach oben"
+     "50-Tage-Linie dreht nach oben",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
     "momentum": [
      "nur 4% unter ATH",
      "ueber 50- und 200-Tage-Linie",
-     "200-Tage-Linie steigt"
+     "200-Tage-Linie steigt",
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -7946,20 +8223,20 @@
     "range_pos": 55.4,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": -0.81,
-    "sma200_slope": -0.11,
+    "sma50_slope": -0.86,
+    "sma200_slope": -0.08,
     "higher_low": true,
     "rsi14": 58.9,
     "rsi_min60": 21.4,
     "perf": {
      "m1": 8.4,
-     "m3": -0.7,
-     "m6": -7.7,
-     "m12": -4.4
+     "m3": -1.3,
+     "m6": -8.5,
+     "m12": -5.3
     },
-    "rs6": -10.6,
-    "vol_pressure_5d": 3.6,
-    "vol_ratio": 0.81
+    "rs6": -11.1,
+    "vol_pressure_5d": 3.58,
+    "vol_ratio": 0.82
    },
    "flags": [],
    "earnings_in": null,
@@ -7973,18 +8250,20 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 55.4,
-    "momentum": 31.7,
+    "turnaround": 65.2,
+    "momentum": 39.4,
     "value": 59.3
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
-     "RSI erholt sich aus dem ueberverkauften Bereich"
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
     "momentum": [
-     "ueber 50- und 200-Tage-Linie"
+     "ueber 50- und 200-Tage-Linie",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -7997,26 +8276,26 @@
    "index": "DAX",
    "sector": "Utilities",
    "metrics": {
-    "last": 17.34,
-    "dd_ath": -12.0,
+    "last": 17.31,
+    "dd_ath": -12.2,
     "days_since_ath": 156,
-    "range_pos": 56.4,
+    "range_pos": 55.8,
     "above_sma50": false,
     "above_sma200": false,
-    "sma50_slope": 0.72,
-    "sma200_slope": 1.64,
+    "sma50_slope": 0.8,
+    "sma200_slope": 1.63,
     "higher_low": false,
-    "rsi14": 31.2,
-    "rsi_min60": 29.8,
+    "rsi14": 30.4,
+    "rsi_min60": 29.2,
     "perf": {
-     "m1": -10.0,
-     "m3": -6.3,
-     "m6": -3.9,
-     "m12": 13.8
+     "m1": -10.2,
+     "m3": -5.4,
+     "m6": -4.1,
+     "m12": 14.2
     },
-    "rs6": -6.7,
+    "rs6": -6.8,
     "vol_pressure_5d": 0.18,
-    "vol_ratio": 0.93
+    "vol_ratio": 0.91
    },
    "flags": [
     "fallender Umsatz bei hoher Verschuldung"
@@ -8032,13 +8311,17 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 10.3,
-    "momentum": 19.1,
+    "turnaround": 9.6,
+    "momentum": 15.3,
     "value": 23.5
    },
    "why": {
-    "turnaround": [],
-    "momentum": [],
+    "turnaround": [
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
+    ],
+    "momentum": [
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
+    ],
     "value": []
    }
   },
@@ -8050,21 +8333,21 @@
     "last": 46.28,
     "dd_ath": -30.3,
     "days_since_ath": 3349,
-    "range_pos": 70.9,
+    "range_pos": 71.0,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 8.58,
-    "sma200_slope": -0.31,
+    "sma50_slope": 8.48,
+    "sma200_slope": -0.3,
     "higher_low": true,
-    "rsi14": 61.4,
+    "rsi14": 62.1,
     "rsi_min60": 29.2,
     "perf": {
-     "m1": 6.2,
-     "m3": 20.4,
-     "m6": -8.6,
-     "m12": -0.0
+     "m1": 5.2,
+     "m3": 22.7,
+     "m6": -8.7,
+     "m12": 0.9
     },
-    "rs6": -11.5,
+    "rs6": -11.3,
     "vol_pressure_5d": 0.27,
     "vol_ratio": 1.12
    },
@@ -8080,8 +8363,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 91.5,
-    "momentum": 29.9,
+    "turnaround": 78.8,
+    "momentum": 23.6,
     "value": 63.2
    },
    "why": {
@@ -8090,10 +8373,12 @@
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
      "50-Tage-Linie dreht nach oben",
-     "RSI erholt sich aus dem ueberverkauften Bereich"
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
     "momentum": [
-     "ueber 50- und 200-Tage-Linie"
+     "ueber 50- und 200-Tage-Linie",
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -8112,131 +8397,19 @@
     "range_pos": 62.0,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 2.9,
-    "sma200_slope": 0.34,
+    "sma50_slope": 2.85,
+    "sma200_slope": 0.3,
     "higher_low": true,
-    "rsi14": 47.2,
+    "rsi14": 47.3,
     "rsi_min60": 27.9,
     "perf": {
-     "m1": 0.3,
-     "m3": 2.0,
-     "m6": 4.1,
-     "m12": 2.2
+     "m1": 0.8,
+     "m3": 3.1,
+     "m6": 5.0,
+     "m12": 2.7
     },
-    "rs6": 1.2,
-    "vol_pressure_5d": 2.59,
-    "vol_ratio": 0.94
-   },
-   "flags": [],
-   "earnings_in": null,
-   "analyst": {
-    "upgrades_30d": 0,
-    "downgrades_30d": 0,
-    "net_30d": 0,
-    "last_action": null,
-    "last_firm": null,
-    "last_date": null
-   },
-   "revision_note": null,
-   "scores": {
-    "turnaround": 64.0,
-    "momentum": 46.3,
-    "value": 69.3
-   },
-   "why": {
-    "turnaround": [
-     "hoeheres Tief",
-     "ueber 50-Tage-Linie",
-     "50-Tage-Linie dreht nach oben",
-     "RSI erholt sich aus dem ueberverkauften Bereich"
-    ],
-    "momentum": [
-     "nur 8% unter ATH",
-     "ueber 50- und 200-Tage-Linie"
-    ],
-    "value": [
-     "erwartetes KGV unter aktuellem",
-     "positiver Free Cashflow"
-    ]
-   }
-  },
-  "HEI.DE": {
-   "name": "Heidelberg Materials AG",
-   "index": "DAX",
-   "sector": "Basic Materials",
-   "metrics": {
-    "last": 157.85,
-    "dd_ath": -32.6,
-    "days_since_ath": 205,
-    "range_pos": 3.0,
-    "above_sma50": false,
-    "above_sma200": false,
-    "sma50_slope": -3.58,
-    "sma200_slope": -1.46,
-    "higher_low": false,
-    "rsi14": 36.4,
-    "rsi_min60": 30.5,
-    "perf": {
-     "m1": -7.6,
-     "m3": -8.4,
-     "m6": -21.1,
-     "m12": -22.4
-    },
-    "rs6": -24.0,
-    "vol_pressure_5d": 0.73,
-    "vol_ratio": 0.86
-   },
-   "flags": [],
-   "earnings_in": null,
-   "analyst": {
-    "upgrades_30d": 0,
-    "downgrades_30d": 0,
-    "net_30d": 0,
-    "last_action": null,
-    "last_firm": null,
-    "last_date": null
-   },
-   "revision_note": null,
-   "scores": {
-    "turnaround": 28.0,
-    "momentum": 0.0,
-    "value": 58.5
-   },
-   "why": {
-    "turnaround": [
-     "-33% unter ATH"
-    ],
-    "momentum": [],
-    "value": [
-     "erwartetes KGV unter aktuellem",
-     "positiver Free Cashflow"
-    ]
-   }
-  },
-  "HEN3.DE": {
-   "name": "Henkel AG & Co. KGaA",
-   "index": "DAX",
-   "sector": "Consumer Defensive",
-   "metrics": {
-    "last": 75.54,
-    "dd_ath": -26.8,
-    "days_since_ath": 3349,
-    "range_pos": 71.0,
-    "above_sma50": true,
-    "above_sma200": true,
-    "sma50_slope": 6.01,
-    "sma200_slope": 1.15,
-    "higher_low": true,
-    "rsi14": 49.1,
-    "rsi_min60": 45.6,
-    "perf": {
-     "m1": 1.0,
-     "m3": 15.3,
-     "m6": -6.0,
-     "m12": 7.5
-    },
-    "rs6": -8.9,
-    "vol_pressure_5d": 1.3,
+    "rs6": 2.4,
+    "vol_pressure_5d": 2.58,
     "vol_ratio": 0.93
    },
    "flags": [],
@@ -8251,19 +8424,22 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 73.4,
-    "momentum": 27.4,
-    "value": 60.5
+    "turnaround": 73.2,
+    "momentum": 51.9,
+    "value": 69.3
    },
    "why": {
     "turnaround": [
-     "-27% unter ATH",
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
-     "50-Tage-Linie dreht nach oben"
+     "50-Tage-Linie dreht nach oben",
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
     "momentum": [
-     "ueber 50- und 200-Tage-Linie"
+     "nur 8% unter ATH",
+     "ueber 50- und 200-Tage-Linie",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -8271,30 +8447,86 @@
     ]
    }
   },
-  "IFX.DE": {
-   "name": "INFINEON TECHNOLOGIES AG",
+  "HEI.DE": {
+   "name": "Heidelberg Materials AG",
    "index": "DAX",
-   "sector": "Technology",
+   "sector": "Basic Materials",
    "metrics": {
-    "last": 54.89,
-    "dd_ath": -37.6,
-    "days_since_ath": 79,
-    "range_pos": 41.9,
+    "last": 157.5,
+    "dd_ath": -32.8,
+    "days_since_ath": 205,
+    "range_pos": 2.5,
     "above_sma50": false,
-    "above_sma200": true,
-    "sma50_slope": -7.69,
-    "sma200_slope": 5.57,
-    "higher_low": true,
-    "rsi14": 33.4,
-    "rsi_min60": 29.0,
+    "above_sma200": false,
+    "sma50_slope": -3.5,
+    "sma200_slope": -1.5,
+    "higher_low": false,
+    "rsi14": 35.8,
+    "rsi_min60": 30.3,
     "perf": {
-     "m1": -18.7,
-     "m3": -19.3,
-     "m6": 20.0,
-     "m12": 49.5
+     "m1": -7.8,
+     "m3": -9.8,
+     "m6": -21.8,
+     "m12": -21.2
     },
-    "rs6": 17.1,
-    "vol_pressure_5d": 0.2,
+    "rs6": -24.5,
+    "vol_pressure_5d": 0.54,
+    "vol_ratio": 0.9
+   },
+   "flags": [],
+   "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": null,
+    "last_firm": null,
+    "last_date": null
+   },
+   "revision_note": null,
+   "scores": {
+    "turnaround": 22.7,
+    "momentum": 0.0,
+    "value": 58.5
+   },
+   "why": {
+    "turnaround": [
+     "-33% unter ATH",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
+    ],
+    "momentum": [
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "HEN3.DE": {
+   "name": "Henkel AG & Co. KGaA",
+   "index": "DAX",
+   "sector": "Consumer Defensive",
+   "metrics": {
+    "last": 75.68,
+    "dd_ath": -26.6,
+    "days_since_ath": 3349,
+    "range_pos": 71.7,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 5.85,
+    "sma200_slope": 1.15,
+    "higher_low": true,
+    "rsi14": 49.7,
+    "rsi_min60": 45.4,
+    "perf": {
+     "m1": 1.2,
+     "m3": 14.7,
+     "m6": -4.8,
+     "m12": 6.0
+    },
+    "rs6": -7.5,
+    "vol_pressure_5d": 1.3,
     "vol_ratio": 0.95
    },
    "flags": [],
@@ -8309,51 +8541,53 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 52.8,
-    "momentum": 37.8,
-    "value": 67.5
+    "turnaround": 78.9,
+    "momentum": 39.4,
+    "value": 60.5
    },
    "why": {
     "turnaround": [
-     "-38% unter ATH",
-     "hoeheres Tief"
+     "-27% unter ATH",
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
     "momentum": [
-     "relative Staerke +17% vs. Index",
-     "200-Tage-Linie steigt"
+     "ueber 50- und 200-Tage-Linie",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
-     "positiver Free Cashflow",
-     "Umsatzwachstum 13%"
+     "positiver Free Cashflow"
     ]
    }
   },
-  "MBG.DE": {
-   "name": "Mercedes-Benz Group AG",
+  "IFX.DE": {
+   "name": "INFINEON TECHNOLOGIES AG",
    "index": "DAX",
-   "sector": "Consumer Cyclical",
+   "sector": "Technology",
    "metrics": {
-    "last": 44.83,
-    "dd_ath": -26.6,
-    "days_since_ath": 864,
-    "range_pos": 11.9,
+    "last": 54.59,
+    "dd_ath": -38.0,
+    "days_since_ath": 79,
+    "range_pos": 41.3,
     "above_sma50": false,
-    "above_sma200": false,
-    "sma50_slope": -3.49,
-    "sma200_slope": -0.83,
+    "above_sma200": true,
+    "sma50_slope": -7.98,
+    "sma200_slope": 5.55,
     "higher_low": true,
-    "rsi14": 40.9,
-    "rsi_min60": 29.1,
+    "rsi14": 33.0,
+    "rsi_min60": 28.7,
     "perf": {
-     "m1": -0.2,
-     "m3": -9.9,
-     "m6": -19.2,
-     "m12": -11.4
+     "m1": -19.2,
+     "m3": -25.6,
+     "m6": 20.0,
+     "m12": 51.1
     },
-    "rs6": -22.1,
-    "vol_pressure_5d": 0.29,
-    "vol_ratio": 0.98
+    "rs6": 17.4,
+    "vol_pressure_5d": 0.2,
+    "vol_ratio": 0.94
    },
    "flags": [],
    "earnings_in": null,
@@ -8367,17 +8601,80 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 59.8,
-    "momentum": 2.3,
+    "turnaround": 46.9,
+    "momentum": 31.5,
+    "value": 67.5
+   },
+   "why": {
+    "turnaround": [
+     "-38% unter ATH",
+     "hoeheres Tief",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
+    ],
+    "momentum": [
+     "relative Staerke +17% vs. Index",
+     "200-Tage-Linie steigt",
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow",
+     "Umsatzwachstum 13%"
+    ]
+   }
+  },
+  "MBG.DE": {
+   "name": "Mercedes-Benz Group AG",
+   "index": "DAX",
+   "sector": "Consumer Cyclical",
+   "metrics": {
+    "last": 44.75,
+    "dd_ath": -26.8,
+    "days_since_ath": 864,
+    "range_pos": 11.3,
+    "above_sma50": false,
+    "above_sma200": false,
+    "sma50_slope": -3.34,
+    "sma200_slope": -0.83,
+    "higher_low": true,
+    "rsi14": 40.3,
+    "rsi_min60": 29.1,
+    "perf": {
+     "m1": -0.3,
+     "m3": -10.7,
+     "m6": -18.5,
+     "m12": -11.4
+    },
+    "rs6": -21.1,
+    "vol_pressure_5d": 0.29,
+    "vol_ratio": 1.01
+   },
+   "flags": [],
+   "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": null,
+    "last_firm": null,
+    "last_date": null
+   },
+   "revision_note": null,
+   "scores": {
+    "turnaround": 55.3,
+    "momentum": 1.6,
     "value": 32.9
    },
    "why": {
     "turnaround": [
      "-27% unter ATH",
      "hoeheres Tief",
-     "RSI erholt sich aus dem ueberverkauften Bereich"
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
-    "momentum": [],
+    "momentum": [
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
+    ],
     "value": [
      "erwartetes KGV unter aktuellem"
     ]
@@ -8388,25 +8685,25 @@
    "index": "DAX",
    "sector": "Healthcare",
    "metrics": {
-    "last": 135.85,
-    "dd_ath": -36.0,
+    "last": 136.25,
+    "dd_ath": -35.9,
     "days_since_ath": 1696,
-    "range_pos": 75.1,
+    "range_pos": 75.9,
     "above_sma50": false,
     "above_sma200": true,
-    "sma50_slope": 3.72,
-    "sma200_slope": 2.29,
+    "sma50_slope": 3.49,
+    "sma200_slope": 2.32,
     "higher_low": true,
-    "rsi14": 40.2,
-    "rsi_min60": 39.5,
+    "rsi14": 40.9,
+    "rsi_min60": 39.4,
     "perf": {
-     "m1": 1.2,
-     "m3": 7.5,
-     "m6": 7.8,
-     "m12": 24.9
+     "m1": 1.5,
+     "m3": 5.9,
+     "m6": 8.7,
+     "m12": 24.5
     },
-    "rs6": 4.9,
-    "vol_pressure_5d": 1.75,
+    "rs6": 6.0,
+    "vol_pressure_5d": 1.66,
     "vol_ratio": 1.06
    },
    "flags": [],
@@ -8421,17 +8718,20 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 63.8,
-    "momentum": 31.6,
+    "turnaround": 72.1,
+    "momentum": 44.4,
     "value": 62.8
    },
    "why": {
     "turnaround": [
      "-36% unter ATH",
      "hoeheres Tief",
-     "50-Tage-Linie dreht nach oben"
+     "50-Tage-Linie dreht nach oben",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
-    "momentum": [],
+    "momentum": [
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
+    ],
     "value": [
      "erwartetes KGV unter aktuellem",
      "positiver Free Cashflow"
@@ -8449,20 +8749,20 @@
     "range_pos": 73.8,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 8.53,
-    "sma200_slope": -0.27,
+    "sma50_slope": 8.52,
+    "sma200_slope": -0.33,
     "higher_low": true,
-    "rsi14": 50.2,
+    "rsi14": 50.5,
     "rsi_min60": 41.8,
     "perf": {
-     "m1": 7.0,
-     "m3": 16.2,
-     "m6": -8.2,
-     "m12": -3.1
+     "m1": 8.6,
+     "m3": 23.3,
+     "m6": -7.4,
+     "m12": -2.8
     },
-    "rs6": -11.1,
+    "rs6": -10.1,
     "vol_pressure_5d": 0.34,
-    "vol_ratio": 1.11
+    "vol_ratio": 1.09
    },
    "flags": [],
    "earnings_in": null,
@@ -8476,19 +8776,21 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 57.5,
-    "momentum": 48.9,
+    "turnaround": 49.7,
+    "momentum": 39.2,
     "value": 79.2
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
-     "50-Tage-Linie dreht nach oben"
+     "50-Tage-Linie dreht nach oben",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
     "momentum": [
      "nur 8% unter ATH",
-     "ueber 50- und 200-Tage-Linie"
+     "ueber 50- und 200-Tage-Linie",
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -8508,20 +8810,20 @@
     "range_pos": 65.7,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 4.66,
-    "sma200_slope": -0.2,
+    "sma50_slope": 4.58,
+    "sma200_slope": -0.25,
     "higher_low": true,
-    "rsi14": 47.8,
+    "rsi14": 48.2,
     "rsi_min60": 25.9,
     "perf": {
-     "m1": 1.2,
-     "m3": 7.6,
-     "m6": -1.4,
-     "m12": -4.6
+     "m1": 1.5,
+     "m3": 8.7,
+     "m6": -0.3,
+     "m12": -5.2
     },
-    "rs6": -4.3,
-    "vol_pressure_5d": 0.83,
-    "vol_ratio": 1.0
+    "rs6": -3.0,
+    "vol_pressure_5d": 0.82,
+    "vol_ratio": 0.98
    },
    "flags": [],
    "earnings_in": null,
@@ -8535,8 +8837,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 64.8,
-    "momentum": 39.4,
+    "turnaround": 58.9,
+    "momentum": 32.1,
     "value": 60.0
    },
    "why": {
@@ -8544,10 +8846,12 @@
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
      "50-Tage-Linie dreht nach oben",
-     "RSI erholt sich aus dem ueberverkauften Bereich"
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
     "momentum": [
-     "ueber 50- und 200-Tage-Linie"
+     "ueber 50- und 200-Tage-Linie",
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
     ],
     "value": [
      "positiver Free Cashflow"
@@ -8559,26 +8863,26 @@
    "index": "DAX",
    "sector": "Consumer Cyclical",
    "metrics": {
-    "last": 27.87,
-    "dd_ath": -64.1,
+    "last": 27.82,
+    "dd_ath": -64.2,
     "days_since_ath": 1900,
-    "range_pos": 7.6,
+    "range_pos": 7.2,
     "above_sma50": false,
     "above_sma200": false,
-    "sma50_slope": -2.66,
+    "sma50_slope": -2.56,
     "sma200_slope": -1.33,
     "higher_low": true,
-    "rsi14": 46.8,
+    "rsi14": 46.3,
     "rsi_min60": 26.0,
     "perf": {
-     "m1": 1.7,
-     "m3": -7.7,
-     "m6": -18.9,
-     "m12": -20.9
+     "m1": 1.5,
+     "m3": -9.2,
+     "m6": -18.5,
+     "m12": -21.4
     },
-    "rs6": -21.8,
+    "rs6": -21.2,
     "vol_pressure_5d": 0.76,
-    "vol_ratio": 1.13
+    "vol_ratio": 1.15
    },
    "flags": [],
    "earnings_in": null,
@@ -8592,16 +8896,19 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 55.7,
-    "momentum": 6.6,
+    "turnaround": 50.0,
+    "momentum": 3.6,
     "value": 35.0
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
-     "RSI erholt sich aus dem ueberverkauften Bereich"
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
-    "momentum": [],
+    "momentum": [
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
+    ],
     "value": [
      "erwartetes KGV unter aktuellem"
     ]
@@ -8612,26 +8919,26 @@
    "index": "DAX",
    "sector": "Consumer Cyclical",
    "metrics": {
-    "last": 45.2,
+    "last": 45.19,
     "dd_ath": -57.9,
     "days_since_ath": 1186,
-    "range_pos": 73.3,
+    "range_pos": 73.2,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": -1.25,
-    "sma200_slope": 0.34,
+    "sma50_slope": -1.32,
+    "sma200_slope": 0.31,
     "higher_low": true,
-    "rsi14": 54.6,
+    "rsi14": 54.7,
     "rsi_min60": 33.4,
     "perf": {
      "m1": 1.1,
-     "m3": 1.9,
-     "m6": 9.3,
-     "m12": -2.3
+     "m3": -0.1,
+     "m6": 10.8,
+     "m12": -0.8
     },
-    "rs6": 6.4,
-    "vol_pressure_5d": 3.33,
-    "vol_ratio": 0.81
+    "rs6": 8.1,
+    "vol_pressure_5d": 3.34,
+    "vol_ratio": 0.83
    },
    "flags": [],
    "earnings_in": null,
@@ -8645,8 +8952,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 71.8,
-    "momentum": 34.8,
+    "turnaround": 77.5,
+    "momentum": 46.1,
     "value": 50.1
    },
    "why": {
@@ -8654,10 +8961,12 @@
      "-58% unter ATH",
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
-     "RSI erholt sich aus dem ueberverkauften Bereich"
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
     "momentum": [
-     "ueber 50- und 200-Tage-Linie"
+     "ueber 50- und 200-Tage-Linie",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -8670,26 +8979,26 @@
    "index": "DAX",
    "sector": "Healthcare",
    "metrics": {
-    "last": 37.99,
-    "dd_ath": -22.7,
+    "last": 37.98,
+    "dd_ath": -22.8,
     "days_since_ath": 1728,
-    "range_pos": 56.1,
+    "range_pos": 56.0,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 8.27,
-    "sma200_slope": -0.96,
+    "sma50_slope": 7.99,
+    "sma200_slope": -0.97,
     "higher_low": true,
     "rsi14": 61.4,
     "rsi_min60": 49.1,
     "perf": {
      "m1": 7.4,
-     "m3": 27.5,
-     "m6": -7.6,
-     "m12": -8.5
+     "m3": 26.7,
+     "m6": -7.1,
+     "m12": -8.4
     },
-    "rs6": -10.5,
+    "rs6": -9.8,
     "vol_pressure_5d": 0.52,
-    "vol_ratio": 1.27
+    "vol_ratio": 1.26
    },
    "flags": [],
    "earnings_in": null,
@@ -8703,8 +9012,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 78.8,
-    "momentum": 32.5,
+    "turnaround": 66.7,
+    "momentum": 21.9,
     "value": 64.4
    },
    "why": {
@@ -8712,10 +9021,11 @@
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
      "50-Tage-Linie dreht nach oben",
-     "Anstiege auf hoeherem Volumen"
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
     "momentum": [
-     "ueber 50- und 200-Tage-Linie"
+     "ueber 50- und 200-Tage-Linie",
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -8728,26 +9038,26 @@
    "index": "DAX",
    "sector": "Industrials",
    "metrics": {
-    "last": 1167.8,
-    "dd_ath": -40.7,
+    "last": 1170.4,
+    "dd_ath": -40.6,
     "days_since_ath": 325,
-    "range_pos": 21.6,
+    "range_pos": 21.9,
     "above_sma50": true,
     "above_sma200": false,
-    "sma50_slope": -2.08,
-    "sma200_slope": -4.28,
+    "sma50_slope": -2.21,
+    "sma200_slope": -4.21,
     "higher_low": true,
-    "rsi14": 55.5,
+    "rsi14": 56.4,
     "rsi_min60": 24.0,
     "perf": {
-     "m1": 17.3,
-     "m3": -3.4,
-     "m6": -30.4,
-     "m12": -24.8
+     "m1": 17.6,
+     "m3": -4.6,
+     "m6": -32.2,
+     "m12": -24.1
     },
-    "rs6": -33.2,
+    "rs6": -34.9,
     "vol_pressure_5d": 1.26,
-    "vol_ratio": 1.0
+    "vol_ratio": 0.97
    },
    "flags": [
     "200-Tage-Linie faellt steil"
@@ -8763,8 +9073,8 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 82.5,
-    "momentum": 2.9,
+    "turnaround": 84.7,
+    "momentum": 14.8,
     "value": 71.5
    },
    "why": {
@@ -8772,9 +9082,12 @@
      "-41% unter ATH",
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
-     "RSI erholt sich aus dem ueberverkauften Bereich"
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
-    "momentum": [],
+    "momentum": [
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
+    ],
     "value": [
      "erwartetes KGV unter aktuellem",
      "positiver Free Cashflow",
@@ -8787,26 +9100,26 @@
    "index": "DAX",
    "sector": "Utilities",
    "metrics": {
-    "last": 57.06,
-    "dd_ath": -6.1,
+    "last": 56.78,
+    "dd_ath": -6.6,
     "days_since_ath": 112,
-    "range_pos": 86.5,
+    "range_pos": 85.5,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 0.85,
-    "sma200_slope": 3.39,
+    "sma50_slope": 0.89,
+    "sma200_slope": 3.35,
     "higher_low": true,
-    "rsi14": 49.1,
+    "rsi14": 47.5,
     "rsi_min60": 37.4,
     "perf": {
-     "m1": -2.0,
-     "m3": 1.0,
-     "m6": 10.3,
-     "m12": 65.0
+     "m1": -2.4,
+     "m3": 0.2,
+     "m6": 12.5,
+     "m12": 63.7
     },
-    "rs6": 7.5,
+    "rs6": 9.8,
     "vol_pressure_5d": 0.22,
-    "vol_ratio": 1.42
+    "vol_ratio": 1.45
    },
    "flags": [],
    "earnings_in": null,
@@ -8820,20 +9133,21 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 56.6,
-    "momentum": 78.3,
+    "turnaround": 46.7,
+    "momentum": 67.0,
     "value": 37.4
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
-     "Anstiege auf hoeherem Volumen"
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
     "momentum": [
-     "nur 6% unter ATH",
+     "nur 7% unter ATH",
      "ueber 50- und 200-Tage-Linie",
-     "200-Tage-Linie steigt"
+     "200-Tage-Linie steigt",
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
     ],
     "value": []
    }
@@ -8843,26 +9157,26 @@
    "index": "DAX",
    "sector": "Technology",
    "metrics": {
-    "last": 185.22,
-    "dd_ath": -32.2,
+    "last": 185.62,
+    "dd_ath": -32.0,
     "days_since_ath": 553,
-    "range_pos": 51.9,
+    "range_pos": 52.3,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 4.18,
-    "sma200_slope": -3.51,
+    "sma50_slope": 4.0,
+    "sma200_slope": -3.5,
     "higher_low": false,
-    "rsi14": 72.7,
-    "rsi_min60": 34.6,
+    "rsi14": 73.5,
+    "rsi_min60": 34.2,
     "perf": {
-     "m1": 35.8,
-     "m3": 22.7,
-     "m6": 8.6,
-     "m12": -20.5
+     "m1": 36.1,
+     "m3": 22.3,
+     "m6": 10.6,
+     "m12": -19.2
     },
-    "rs6": 5.8,
-    "vol_pressure_5d": 3.87,
-    "vol_ratio": 1.05
+    "rs6": 7.9,
+    "vol_pressure_5d": 3.81,
+    "vol_ratio": 1.04
    },
    "flags": [],
    "earnings_in": null,
@@ -8876,18 +9190,20 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 62.2,
-    "momentum": 33.3,
+    "turnaround": 64.8,
+    "momentum": 40.6,
     "value": 75.1
    },
    "why": {
     "turnaround": [
      "-32% unter ATH",
      "ueber 50-Tage-Linie",
-     "50-Tage-Linie dreht nach oben"
+     "50-Tage-Linie dreht nach oben",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
     "momentum": [
-     "ueber 50- und 200-Tage-Linie"
+     "ueber 50- und 200-Tage-Linie",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -8901,25 +9217,84 @@
    "index": "DAX",
    "sector": "Healthcare",
    "metrics": {
-    "last": 245.9,
-    "dd_ath": -58.9,
+    "last": 245.2,
+    "dd_ath": -59.0,
     "days_since_ath": 1724,
-    "range_pos": 75.9,
+    "range_pos": 75.0,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": -0.37,
-    "sma200_slope": 0.13,
+    "sma50_slope": -0.59,
+    "sma200_slope": 0.11,
     "higher_low": true,
-    "rsi14": 61.8,
+    "rsi14": 61.5,
     "rsi_min60": 35.0,
     "perf": {
-     "m1": 13.2,
-     "m3": 4.5,
-     "m6": 5.9,
-     "m12": 25.3
+     "m1": 12.9,
+     "m3": 5.5,
+     "m6": 6.3,
+     "m12": 24.3
     },
-    "rs6": 3.0,
+    "rs6": 3.6,
     "vol_pressure_5d": 1.3,
+    "vol_ratio": 1.0
+   },
+   "flags": [],
+   "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": null,
+    "last_firm": null,
+    "last_date": null
+   },
+   "revision_note": null,
+   "scores": {
+    "turnaround": 70.3,
+    "momentum": 44.9,
+    "value": 48.1
+   },
+   "why": {
+    "turnaround": [
+     "-59% unter ATH",
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
+    ],
+    "momentum": [
+     "ueber 50- und 200-Tage-Linie",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "SIE.DE": {
+   "name": "SIEMENS AG",
+   "index": "DAX",
+   "sector": "Industrials",
+   "metrics": {
+    "last": 274.5,
+    "dd_ath": -4.5,
+    "days_since_ath": 16,
+    "range_pos": 84.5,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 1.44,
+    "sma200_slope": 1.63,
+    "higher_low": true,
+    "rsi14": 47.1,
+    "rsi_min60": 43.7,
+    "perf": {
+     "m1": 1.5,
+     "m3": 2.2,
+     "m6": 14.1,
+     "m12": 20.1
+    },
+    "rs6": 11.4,
+    "vol_pressure_5d": 0.35,
     "vol_ratio": 0.99
    },
    "flags": [],
@@ -8934,75 +9309,21 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 66.0,
-    "momentum": 34.9,
-    "value": 48.1
-   },
-   "why": {
-    "turnaround": [
-     "-59% unter ATH",
-     "hoeheres Tief",
-     "ueber 50-Tage-Linie"
-    ],
-    "momentum": [
-     "ueber 50- und 200-Tage-Linie"
-    ],
-    "value": [
-     "erwartetes KGV unter aktuellem",
-     "positiver Free Cashflow"
-    ]
-   }
-  },
-  "SIE.DE": {
-   "name": "SIEMENS AG",
-   "index": "DAX",
-   "sector": "Industrials",
-   "metrics": {
-    "last": 276.15,
-    "dd_ath": -3.9,
-    "days_since_ath": 16,
-    "range_pos": 86.5,
-    "above_sma50": true,
-    "above_sma200": true,
-    "sma50_slope": 1.39,
-    "sma200_slope": 1.64,
-    "higher_low": true,
-    "rsi14": 48.8,
-    "rsi_min60": 43.7,
-    "perf": {
-     "m1": 2.1,
-     "m3": 4.6,
-     "m6": 12.8,
-     "m12": 18.4
-    },
-    "rs6": 9.9,
-    "vol_pressure_5d": 0.35,
-    "vol_ratio": 1.01
-   },
-   "flags": [],
-   "earnings_in": null,
-   "analyst": {
-    "upgrades_30d": 0,
-    "downgrades_30d": 0,
-    "net_30d": 0,
-    "last_action": null,
-    "last_firm": null,
-    "last_date": null
-   },
-   "revision_note": null,
-   "scores": {
-    "turnaround": 50.7,
-    "momentum": 71.4,
+    "turnaround": 44.2,
+    "momentum": 61.4,
     "value": 63.6
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
-     "ueber 50-Tage-Linie"
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
     "momentum": [
      "nur 4% unter ATH",
-     "ueber 50- und 200-Tage-Linie"
+     "ueber 50- und 200-Tage-Linie",
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -9015,26 +9336,26 @@
    "index": "DAX",
    "sector": "Industrials",
    "metrics": {
-    "last": 153.22,
-    "dd_ath": -18.3,
+    "last": 152.12,
+    "dd_ath": -18.9,
     "days_since_ath": 118,
-    "range_pos": 66.8,
+    "range_pos": 65.7,
     "above_sma50": false,
     "above_sma200": true,
-    "sma50_slope": -3.01,
-    "sma200_slope": 3.35,
+    "sma50_slope": -3.34,
+    "sma200_slope": 3.37,
     "higher_low": false,
-    "rsi14": 48.0,
+    "rsi14": 46.7,
     "rsi_min60": 25.9,
     "perf": {
-     "m1": 0.6,
-     "m3": -15.5,
-     "m6": -6.9,
-     "m12": 65.5
+     "m1": -3.8,
+     "m3": -13.3,
+     "m6": -7.0,
+     "m12": 66.5
     },
-    "rs6": -9.8,
-    "vol_pressure_5d": 0.76,
-    "vol_ratio": 0.83
+    "rs6": -9.6,
+    "vol_pressure_5d": 0.75,
+    "vol_ratio": 0.82
    },
    "flags": [],
    "earnings_in": null,
@@ -9048,16 +9369,18 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 22.6,
-    "momentum": 25.9,
+    "turnaround": 22.5,
+    "momentum": 22.6,
     "value": 75.8
    },
    "why": {
     "turnaround": [
-     "RSI erholt sich aus dem ueberverkauften Bereich"
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
     "momentum": [
-     "200-Tage-Linie steigt"
+     "200-Tage-Linie steigt",
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -9071,83 +9394,25 @@
    "index": "DAX",
    "sector": "Healthcare",
    "metrics": {
-    "last": 39.99,
+    "last": 39.96,
     "dd_ath": -34.7,
     "days_since_ath": 1715,
-    "range_pos": 44.0,
+    "range_pos": 43.8,
     "above_sma50": true,
     "above_sma200": true,
-    "sma50_slope": 4.61,
-    "sma200_slope": -2.23,
+    "sma50_slope": 4.46,
+    "sma200_slope": -2.25,
     "higher_low": true,
-    "rsi14": 68.6,
+    "rsi14": 68.9,
     "rsi_min60": 37.3,
     "perf": {
-     "m1": 15.7,
-     "m3": 13.9,
-     "m6": -5.6,
-     "m12": -14.3
+     "m1": 15.8,
+     "m3": 15.8,
+     "m6": -3.6,
+     "m12": -15.0
     },
-    "rs6": -8.4,
-    "vol_pressure_5d": 3.38,
-    "vol_ratio": 0.86
-   },
-   "flags": [],
-   "earnings_in": null,
-   "analyst": {
-    "upgrades_30d": 0,
-    "downgrades_30d": 0,
-    "net_30d": 0,
-    "last_action": null,
-    "last_firm": null,
-    "last_date": null
-   },
-   "revision_note": null,
-   "scores": {
-    "turnaround": 80.3,
-    "momentum": 20.0,
-    "value": 59.3
-   },
-   "why": {
-    "turnaround": [
-     "-35% unter ATH",
-     "hoeheres Tief",
-     "ueber 50-Tage-Linie",
-     "50-Tage-Linie dreht nach oben"
-    ],
-    "momentum": [
-     "ueber 50- und 200-Tage-Linie"
-    ],
-    "value": [
-     "erwartetes KGV unter aktuellem",
-     "positiver Free Cashflow"
-    ]
-   }
-  },
-  "SY1.DE": {
-   "name": "Symrise AG",
-   "index": "DAX",
-   "sector": "Basic Materials",
-   "metrics": {
-    "last": 88.4,
-    "dd_ath": -28.7,
-    "days_since_ath": 1732,
-    "range_pos": 86.6,
-    "above_sma50": true,
-    "above_sma200": true,
-    "sma50_slope": 5.71,
-    "sma200_slope": 1.74,
-    "higher_low": true,
-    "rsi14": 49.1,
-    "rsi_min60": 40.4,
-    "perf": {
-     "m1": 0.9,
-     "m3": 13.9,
-     "m6": 21.3,
-     "m12": 8.7
-    },
-    "rs6": 18.4,
-    "vol_pressure_5d": 0.45,
+    "rs6": -6.3,
+    "vol_pressure_5d": 2.87,
     "vol_ratio": 1.03
    },
    "flags": [],
@@ -9162,8 +9427,68 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 78.1,
-    "momentum": 56.4,
+    "turnaround": 86.8,
+    "momentum": 31.9,
+    "value": 59.3
+   },
+   "why": {
+    "turnaround": [
+     "-35% unter ATH",
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
+    ],
+    "momentum": [
+     "ueber 50- und 200-Tage-Linie",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
+    ],
+    "value": [
+     "erwartetes KGV unter aktuellem",
+     "positiver Free Cashflow"
+    ]
+   }
+  },
+  "SY1.DE": {
+   "name": "Symrise AG",
+   "index": "DAX",
+   "sector": "Basic Materials",
+   "metrics": {
+    "last": 88.42,
+    "dd_ath": -28.6,
+    "days_since_ath": 1732,
+    "range_pos": 86.6,
+    "above_sma50": true,
+    "above_sma200": true,
+    "sma50_slope": 5.48,
+    "sma200_slope": 1.77,
+    "higher_low": true,
+    "rsi14": 49.1,
+    "rsi_min60": 40.1,
+    "perf": {
+     "m1": 0.9,
+     "m3": 10.5,
+     "m6": 20.0,
+     "m12": 6.8
+    },
+    "rs6": 17.3,
+    "vol_pressure_5d": 0.45,
+    "vol_ratio": 1.05
+   },
+   "flags": [],
+   "earnings_in": null,
+   "analyst": {
+    "upgrades_30d": 0,
+    "downgrades_30d": 0,
+    "net_30d": 0,
+    "last_action": null,
+    "last_firm": null,
+    "last_date": null
+   },
+   "revision_note": null,
+   "scores": {
+    "turnaround": 67.0,
+    "momentum": 49.7,
     "value": 51.8
    },
    "why": {
@@ -9171,11 +9496,13 @@
      "-29% unter ATH",
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
-     "50-Tage-Linie dreht nach oben"
+     "50-Tage-Linie dreht nach oben",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
     "momentum": [
-     "relative Staerke +18% vs. Index",
-     "ueber 50- und 200-Tage-Linie"
+     "relative Staerke +17% vs. Index",
+     "ueber 50- und 200-Tage-Linie",
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
     ],
     "value": [
      "erwartetes KGV unter aktuellem",
@@ -9192,22 +9519,22 @@
     "dd_ath": -49.5,
     "days_since_ath": 1962,
     "range_pos": 16.1,
-    "above_sma50": false,
+    "above_sma50": true,
     "above_sma200": false,
     "sma50_slope": -4.68,
-    "sma200_slope": -1.24,
+    "sma200_slope": -1.22,
     "higher_low": true,
-    "rsi14": 52.0,
+    "rsi14": 52.2,
     "rsi_min60": 23.6,
     "perf": {
      "m1": 3.5,
-     "m3": -9.6,
-     "m6": -23.1,
-     "m12": -20.6
+     "m3": -10.7,
+     "m6": -21.9,
+     "m12": -20.9
     },
-    "rs6": -25.9,
+    "rs6": -24.6,
     "vol_pressure_5d": 1.35,
-    "vol_ratio": 0.84
+    "vol_ratio": 0.85
    },
    "flags": [],
    "earnings_in": null,
@@ -9221,17 +9548,21 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 65.0,
-    "momentum": 0.0,
+    "turnaround": 85.0,
+    "momentum": 15.0,
     "value": 46.7
    },
    "why": {
     "turnaround": [
      "-50% unter ATH",
      "hoeheres Tief",
-     "RSI erholt sich aus dem ueberverkauften Bereich"
+     "ueber 50-Tage-Linie",
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
-    "momentum": [],
+    "momentum": [
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
+    ],
     "value": [
      "erwartetes KGV unter aktuellem",
      "positiver Free Cashflow"
@@ -9243,26 +9574,26 @@
    "index": "DAX",
    "sector": "Real Estate",
    "metrics": {
-    "last": 20.06,
-    "dd_ath": -47.2,
+    "last": 20.03,
+    "dd_ath": -47.3,
     "days_since_ath": 2178,
-    "range_pos": 4.9,
+    "range_pos": 4.5,
     "above_sma50": false,
     "above_sma200": false,
-    "sma50_slope": 0.21,
-    "sma200_slope": -2.1,
+    "sma50_slope": 0.03,
+    "sma200_slope": -2.14,
     "higher_low": true,
-    "rsi14": 38.1,
+    "rsi14": 37.9,
     "rsi_min60": 32.9,
     "perf": {
-     "m1": -3.7,
-     "m3": -7.0,
-     "m6": -22.6,
+     "m1": -3.6,
+     "m3": -5.2,
+     "m6": -22.4,
      "m12": -24.2
     },
-    "rs6": -25.5,
+    "rs6": -25.1,
     "vol_pressure_5d": 0.23,
-    "vol_ratio": 0.96
+    "vol_ratio": 0.95
    },
    "flags": [
     "200-Tage-Linie faellt steil"
@@ -9278,16 +9609,19 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 53.3,
-    "momentum": 1.7,
+    "turnaround": 46.9,
+    "momentum": 0.7,
     "value": 50.2
    },
    "why": {
     "turnaround": [
      "-47% unter ATH",
-     "hoeheres Tief"
+     "hoeheres Tief",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
-    "momentum": [],
+    "momentum": [
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
+    ],
     "value": [
      "positiver Free Cashflow"
     ]
@@ -9298,26 +9632,26 @@
    "index": "DAX",
    "sector": "Consumer Cyclical",
    "metrics": {
-    "last": 22.57,
-    "dd_ath": -78.4,
+    "last": 22.51,
+    "dd_ath": -78.5,
     "days_since_ath": 1870,
-    "range_pos": 31.2,
+    "range_pos": 30.7,
     "above_sma50": false,
     "above_sma200": false,
-    "sma50_slope": 5.97,
-    "sma200_slope": -0.36,
+    "sma50_slope": 5.45,
+    "sma200_slope": -0.31,
     "higher_low": true,
-    "rsi14": 31.2,
-    "rsi_min60": 31.1,
+    "rsi14": 30.6,
+    "rsi_min60": 30.6,
     "perf": {
-     "m1": -20.0,
-     "m3": 9.3,
-     "m6": 6.7,
-     "m12": -6.7
+     "m1": -20.3,
+     "m3": 8.0,
+     "m6": 7.0,
+     "m12": -7.4
     },
-    "rs6": 3.8,
-    "vol_pressure_5d": 0.04,
-    "vol_ratio": 0.74
+    "rs6": 4.4,
+    "vol_pressure_5d": 0.0,
+    "vol_ratio": 0.81
    },
    "flags": [],
    "earnings_in": null,
@@ -9331,16 +9665,19 @@
    },
    "revision_note": null,
    "scores": {
-    "turnaround": 35.6,
-    "momentum": 7.3,
+    "turnaround": 35.3,
+    "momentum": 6.3,
     "value": 63.5
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
-     "50-Tage-Linie dreht nach oben"
+     "50-Tage-Linie dreht nach oben",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
-    "momentum": [],
+    "momentum": [
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
+    ],
     "value": [
      "erwartetes KGV unter aktuellem",
      "positiver Free Cashflow",

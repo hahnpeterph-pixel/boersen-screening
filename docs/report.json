@@ -4,36 +4,36 @@
   "turnaround": [
    "ROP",
    "WDAY",
-   "FRE.DE",
-   "BAYN.DE",
    "BEI.DE",
+   "BAYN.DE",
    "CRM",
+   "SHL.DE",
    "DXCM",
+   "VOW3.DE",
    "AXON",
-   "MELI",
-   "SY1.DE",
    "BNR.DE",
    "KHC",
    "HEN3.DE",
    "P911.DE",
-   "DASH"
+   "DASH",
+   "HNR1.DE"
   ],
   "momentum": [
-   "ALV.DE",
    "MRK",
-   "PANW",
    "DB1.DE",
    "ABNB",
-   "CRWD",
-   "RWE.DE",
-   "FTNT",
-   "DHL.DE",
-   "CBK.DE",
-   "AMZN",
    "JNJ",
    "KO",
+   "CSX",
+   "FANG",
    "AMGN",
-   "CSX"
+   "ALV.DE",
+   "PANW",
+   "DTG.DE",
+   "CVX",
+   "CRWD",
+   "FAST",
+   "MRVL"
   ],
   "value": [
    "MU",
@@ -57,14 +57,30 @@
   "turnaround": {
    "entries": [
     {
-     "ticker": "DASH",
+     "ticker": "SHL.DE",
+     "rank": 6
+    },
+    {
+     "ticker": "VOW3.DE",
+     "rank": 8
+    },
+    {
+     "ticker": "HNR1.DE",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "VOW3.DE",
+     "ticker": "FRE.DE",
+     "old_rank": 3
+    },
+    {
+     "ticker": "MELI",
      "old_rank": 9
+    },
+    {
+     "ticker": "SY1.DE",
+     "old_rank": 10
     }
    ],
    "moves": []
@@ -72,33 +88,85 @@
   "momentum": {
    "entries": [
     {
-     "ticker": "CBK.DE",
-     "rank": 10
+     "ticker": "FANG",
+     "rank": 7
     },
     {
-     "ticker": "AMGN",
+     "ticker": "DTG.DE",
+     "rank": 11
+    },
+    {
+     "ticker": "CVX",
+     "rank": 12
+    },
+    {
+     "ticker": "FAST",
      "rank": 14
     },
     {
-     "ticker": "CSX",
+     "ticker": "MRVL",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "TRV",
+     "ticker": "RWE.DE",
+     "old_rank": 7
+    },
+    {
+     "ticker": "FTNT",
+     "old_rank": 8
+    },
+    {
+     "ticker": "DHL.DE",
+     "old_rank": 9
+    },
+    {
+     "ticker": "CBK.DE",
      "old_rank": 10
     },
     {
-     "ticker": "MMM",
-     "old_rank": 14
-    },
-    {
-     "ticker": "CVX",
-     "old_rank": 15
+     "ticker": "AMZN",
+     "old_rank": 11
     }
    ],
-   "moves": []
+   "moves": [
+    {
+     "ticker": "JNJ",
+     "rank": 4,
+     "delta": 8
+    },
+    {
+     "ticker": "KO",
+     "rank": 5,
+     "delta": 8
+    },
+    {
+     "ticker": "CSX",
+     "rank": 6,
+     "delta": 9
+    },
+    {
+     "ticker": "AMGN",
+     "rank": 8,
+     "delta": 6
+    },
+    {
+     "ticker": "ALV.DE",
+     "rank": 9,
+     "delta": -8
+    },
+    {
+     "ticker": "PANW",
+     "rank": 10,
+     "delta": -7
+    },
+    {
+     "ticker": "CRWD",
+     "rank": 13,
+     "delta": -7
+    }
+   ]
   },
   "value": {
    "entries": [],

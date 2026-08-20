@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 """
 Boersen-Screening: NASDAQ-100, Dow Jones 30, DAX 40.
+Version 2 (2026-08-20): Value-Score auf 0-100 normiert, PEG entfernt
+(Datenqualitaet bei Yahoo unzureichend), Sektor-Deckel gegen Klumpenbildung,
+Analysten-Ratingaenderungen (30 Tage) als eigenes taeglich aktuelles Signal,
+Namensbereinigung fuer DAX-Werte, fehlende Ticker werden im Report gemeldet.
 
 Erzeugt drei getrennte Ranglisten (Turnaround, Momentum, Value/Qualitaet),
 vergleicht sie mit dem Vortag und schreibt einen Report, der NUR
@@ -10,7 +14,8 @@ Ausgabe:
   docs/report.md      -> der Morgen-Report (wird vom Claude-Task gelesen)
   docs/report.json    -> gleiche Inhalte maschinenlesbar
   state/state.json    -> Zustand von heute (Basis fuer den Vergleich morgen)
-  state/fundamentals.json -> Cache der Fundamentaldaten (max. 7 Tage alt)
+  state/fundamentals.json -> Cache langsamer Fundamentaldaten (max. 7 Tage alt)
+  state/analyst.json      -> Cache der Analysten-Ratingaenderungen (max. 1 Tag alt)
 
 KEINE Anlageberatung. Das Skript sortiert Kennzahlen, mehr nicht.
 """
@@ -20,6 +25,7 @@ from __future__ import annotations
 import json
 import math
 import os
+import re
 import sys
 import time
 from datetime import datetime, timezone
@@ -38,11 +44,15 @@ DOCS_DIR = BASE / "docs"
 STATE_DIR = BASE / "state"
 STATE_FILE = STATE_DIR / "state.json"
 FUND_FILE = STATE_DIR / "fundamentals.json"
+ANALYST_FILE = STATE_DIR / "analyst.json"
 
 TOP_N = 15            # Groesse jeder Rangliste
+SECTOR_CAP = 3         # maximal so viele Werte je Sektor pro Rangliste
 RANK_JUMP = 5         # ab wie vielen Plaetzen eine Bewegung gemeldet wird
 HISTORY_PERIOD = "10y"  # Basis fuer das Allzeithoch
-FUND_MAX_AGE_DAYS = 7   # Fundamentaldaten hoechstens so alt
+FUND_MAX_AGE_DAYS = 7    # langsame Fundamentaldaten (KGV, Marge, Schulden) hoechstens so alt
+ANALYST_MAX_AGE_DAYS = 1  # Ratingaenderungen taeglich frisch - das ist das kurzfristige Signal
+REVISION_WINDOW_DAYS = 30  # Fenster fuer "kurzfristige" Analysten-Ratingaenderungen
 EARNINGS_WARN_DAYS = 5  # Warnung vor Quartalszahlen
 
 LISTS = ("turnaround", "momentum", "value")
@@ -84,6 +94,18 @@ def rsi(series: pd.Series, period: int = 14) -> pd.Series:
     loss = (-delta.clip(upper=0)).ewm(alpha=1 / period, adjust=False).mean()
     rs = gain / loss.replace(0, np.nan)
     return 100 - 100 / (1 + rs)
+
+
+def clean_name(name: str | None, ticker: str) -> str:
+    """Yahoo liefert deutsche Namen fest breitenformatiert mit angehaengtem
+    Aktiengattungs-Kuerzel (z.B. 'Bayer AG                      N').
+    Mehrfache Leerzeichen zusammenziehen und das einzelne Buchstabenkuerzel
+    am Ende entfernen."""
+    if not name:
+        return ticker
+    n = " ".join(name.split())
+    n = re.sub(r"\s[A-Z]$", "", n)
+    return n or ticker
 
 
 def safe(d: dict, key: str, default=None):
@@ -201,11 +223,17 @@ def get_fundamentals(tickers: list[str]) -> dict:
     print("Aktualisiere Fundamentaldaten (dauert einige Minuten) ...")
     import yfinance as yf
 
+    # PEG-Ratio bewusst nicht mehr genutzt: bei Yahoo haeufig aus nicht
+    # zusammenpassenden Zeitraeumen berechnet und dadurch irrefuehrend
+    # (z.B. PEG 0.14 bei Werten mit moderatem Wachstum). Zielpreis und
+    # Analystenmeinung liefert die separate, taeglich aktualisierte
+    # get_analyst_data(), damit sie nicht eine Woche alt werden.
     keys = (
-        "trailingPE", "forwardPE", "pegRatio", "priceToBook", "profitMargins",
+        "trailingPE", "forwardPE", "priceToBook", "profitMargins",
         "operatingMargins", "revenueGrowth", "earningsGrowth", "debtToEquity",
         "freeCashflow", "returnOnEquity", "dividendYield", "earningsTimestamp",
         "shortName", "sector",
+        "targetMeanPrice", "numberOfAnalystOpinions", "recommendationKey",
     )
     data: dict[str, dict] = {}
     for n, t in enumerate(tickers, 1):
@@ -220,6 +248,79 @@ def get_fundamentals(tickers: list[str]) -> dict:
 
     STATE_DIR.mkdir(parents=True, exist_ok=True)
     FUND_FILE.write_text(json.dumps(
+        {"updated": datetime.now(timezone.utc).isoformat(), "data": data},
+        indent=1), encoding="utf-8")
+    return data
+
+
+def get_analyst_data(tickers: list[str]) -> dict:
+    """Analysten-Ratingaenderungen der letzten REVISION_WINDOW_DAYS Tage.
+
+    Bewusst taeglich frisch (1-Tage-Cache), waehrend die traegen
+    Fundamentaldaten wochenweise gecacht werden: eine Herauf- oder
+    Herabstufung von gestern ist genau das kurzfristige Signal, das
+    eine Woche alter Cache verschlucken wuerde. Der Abruf ist dafuer
+    bewusst schlank (nur die Ratingtabelle, nicht der komplette
+    Kennzahlensatz), um den taeglichen Lauf nicht unnoetig zu verlangsamen.
+    """
+    cache = {"updated": None, "data": {}}
+    if ANALYST_FILE.exists():
+        try:
+            cache = json.loads(ANALYST_FILE.read_text(encoding="utf-8"))
+        except Exception:  # noqa: BLE001
+            pass
+
+    age_days = 999.0
+    if cache.get("updated"):
+        try:
+            upd = datetime.fromisoformat(cache["updated"])
+            age_days = (datetime.now(timezone.utc) - upd).total_seconds() / 86400
+        except Exception:  # noqa: BLE001
+            pass
+
+    if age_days < ANALYST_MAX_AGE_DAYS and cache.get("data"):
+        print(f"Analysten-Ratings aus Cache ({age_days * 24:.1f} Std. alt).")
+        return cache["data"]
+
+    print("Aktualisiere Analysten-Ratingaenderungen ...")
+    import yfinance as yf
+
+    # Bewusst NUR die Ratingtabelle (leichter Abruf) - Zielpreis, Analystenzahl
+    # und Empfehlung kommen aus derselben .info-Abfrage wie die uebrigen
+    # Fundamentaldaten (siehe get_fundamentals), um den teuren vollen
+    # Datenabruf nicht zusaetzlich taeglich zu wiederholen.
+    cutoff = datetime.now(timezone.utc) - pd.Timedelta(days=REVISION_WINDOW_DAYS)
+    data: dict[str, dict] = {}
+    for n, t in enumerate(tickers, 1):
+        entry = {
+            "upgrades_30d": 0, "downgrades_30d": 0, "net_30d": 0,
+            "last_action": None, "last_firm": None, "last_date": None,
+        }
+        try:
+            ud = yf.Ticker(t).upgrades_downgrades
+            if ud is not None and not ud.empty:
+                ud = ud.reset_index()
+                date_col = "GradeDate" if "GradeDate" in ud.columns else ud.columns[0]
+                ud[date_col] = pd.to_datetime(ud[date_col], utc=True, errors="coerce")
+                recent = ud[ud[date_col] >= cutoff].sort_values(date_col)
+                if not recent.empty:
+                    actions = recent["Action"].astype(str).str.lower()
+                    entry["upgrades_30d"] = int(actions.isin(["up", "init"]).sum())
+                    entry["downgrades_30d"] = int((actions == "down").sum())
+                    entry["net_30d"] = entry["upgrades_30d"] - entry["downgrades_30d"]
+                    last = recent.iloc[-1]
+                    entry["last_action"] = str(last.get("Action"))
+                    entry["last_firm"] = str(last.get("Firm"))
+                    entry["last_date"] = str(last[date_col].date())
+        except Exception:  # noqa: BLE001
+            pass
+        data[t] = entry
+        if n % 25 == 0:
+            print(f"  {n}/{len(tickers)}")
+        time.sleep(0.2)
+
+    STATE_DIR.mkdir(parents=True, exist_ok=True)
+    ANALYST_FILE.write_text(json.dumps(
         {"updated": datetime.now(timezone.utc).isoformat(), "data": data},
         indent=1), encoding="utf-8")
     return data
@@ -374,50 +475,93 @@ def score_momentum(m: dict) -> tuple[float, list[str]]:
     return round(pts, 1), why
 
 
-def score_value(m: dict, f: dict) -> tuple[float, list[str]]:
-    """Bewertung und Qualitaet. Grobe Vorsortierung - Fundamentaldaten sind lueckenhaft."""
-    pts, why = 0.0, []
+# Gewichte fuer score_value - summieren sich zu genau 100, damit der Score
+# nie ueber 100 hinauslaufen kann. PEG bewusst nicht enthalten: bei Yahoo
+# haeufig aus nicht zusammenpassenden Zeitraeumen berechnet (siehe Notiz
+# in get_fundamentals) und damit irrefuehrend statt hilfreich.
+W_PE_IMPROVE = 10   # erwartetes KGV liegt unter dem aktuellen
+W_PE_LEVEL = 10     # absolutes Niveau des erwarteten KGV
+W_FCF = 15          # positiver Free Cashflow
+W_MARGIN = 10       # Nettomarge
+W_GROWTH = 15       # Umsatzwachstum
+W_ROE = 10          # Eigenkapitalrendite
+W_DEBT = 10         # Verschuldungsgrad (niedrig ist besser)
+W_STRUCTURE = 5     # Kurs ueber 200-Tage-Linie
+W_REVISIONS = 10    # Analysten-Ratingaenderungen, letzte 30 Tage
+W_UPSIDE = 5        # Abstand zum mittleren Analysten-Kursziel
+
+
+def score_value(m: dict, f: dict, a: dict) -> tuple[float, list[str]]:
+    """Bewertung und Qualitaet, 0-100. Grobe Vorsortierung - Fundamentaldaten
+    sind lueckenhaft, siehe SETUP.md Teil D."""
     if not f:
         return 0.0, ["keine Fundamentaldaten"]
 
+    pts, why = 0.0, []
     tpe = safe(f, "trailingPE")
     fpe = safe(f, "forwardPE")
-    peg = safe(f, "pegRatio")
     margin = safe(f, "profitMargins")
     rev_growth = safe(f, "revenueGrowth")
     d2e = safe(f, "debtToEquity")
     fcf = safe(f, "freeCashflow")
     roe = safe(f, "returnOnEquity")
+    target = safe(f, "targetMeanPrice")
 
     if fpe and tpe and 0 < fpe < tpe:
-        pts += 15
+        pts += W_PE_IMPROVE
         why.append("erwartetes KGV unter aktuellem")
-    if fpe and 0 < fpe < 20:
-        pts += 10 * ramp(fpe, 25, 8)
-    if peg and 0 < peg < 2.5:
-        p = 15 * ramp(peg, 2.5, 0.8)
-        pts += p
-        if p > 9:
-            why.append(f"PEG {peg:.2f}")
-    if fcf and fcf > 0:
-        pts += 15
-        why.append("positiver Free Cashflow")
-    if margin and margin > 0:
-        pts += 10 * ramp(margin, 0, 0.20)
-    if rev_growth and rev_growth > 0:
-        p = 15 * ramp(rev_growth, 0, 0.15)
-        pts += p
-        if p > 9:
-            why.append(f"Umsatzwachstum {rev_growth * 100:.0f}%")
-    if roe and roe > 0:
-        pts += 10 * ramp(roe, 0.05, 0.25)
-    if d2e is not None:
-        pts += 10 * ramp(d2e, 200, 40)
+    if fpe and fpe > 0:
+        pts += W_PE_LEVEL * ramp(fpe, 30, 10)
 
-    # Bewertung nuetzt nichts ohne Bodenbildung: leichter Zuschlag fuer Struktur
+    if fcf and fcf > 0:
+        pts += W_FCF
+        why.append("positiver Free Cashflow")
+
+    if margin and margin > 0:
+        pts += W_MARGIN * ramp(margin, 0, 0.20)
+
+    if rev_growth and rev_growth > 0:
+        p = W_GROWTH * ramp(rev_growth, 0, 0.15)
+        pts += p
+        if p > W_GROWTH * 0.6:
+            why.append(f"Umsatzwachstum {rev_growth * 100:.0f}%")
+
+    if roe and roe > 0:
+        pts += W_ROE * ramp(roe, 0.05, 0.25)
+
+    if d2e is not None:
+        pts += W_DEBT * ramp(d2e, 200, 40)
+
     if m["above_sma200"]:
-        pts += 5
-    return round(pts, 1), why
+        pts += W_STRUCTURE
+
+    net_rev = safe(a, "net_30d", 0)
+    p = W_REVISIONS * ramp(net_rev, -2, 2)
+    pts += p
+    if net_rev and net_rev != 0:
+        richtung = "hochgestuft" if net_rev > 0 else "herabgestuft"
+        why.append(f"Analysten zuletzt netto {abs(net_rev)}x {richtung} (30 Tage)")
+
+    if target and target > 0 and m["last"] > 0:
+        upside = (target / m["last"] - 1) * 100
+        p = W_UPSIDE * ramp(upside, 0, 20)
+        pts += p
+        if upside > 8:
+            why.append(f"{upside:.0f}% Abstand zum mittleren Kursziel")
+
+    return round(min(pts, 100.0), 1), why
+
+
+def format_revision(a: dict) -> str | None:
+    """Kurzform der letzten Ratingaenderung, fuer die Anzeige bei jedem Wert."""
+    net = safe(a, "net_30d", 0)
+    if not net:
+        return None
+    firm = safe(a, "last_firm")
+    date = safe(a, "last_date")
+    richtung = "↑" if net > 0 else "↓"
+    tail = f" ({firm}, {date})" if firm and date else ""
+    return f"Analysten {richtung}{abs(net)} in 30T{tail}"
 
 
 def exclusions(m: dict, f: dict) -> list[str]:
@@ -453,7 +597,7 @@ def earnings_in_days(f: dict) -> int | None:
 # Auswertung und Report
 # ---------------------------------------------------------------------------
 
-def build_state(prices, fundamentals, members, benchmarks) -> dict:
+def build_state(prices, fundamentals, analyst, members, benchmarks) -> dict:
     bench_series = {}
     for idx, sym in benchmarks.items():
         if sym in prices:
@@ -469,16 +613,20 @@ def build_state(prices, fundamentals, members, benchmarks) -> dict:
         if m is None:
             continue
         f = fundamentals.get(t, {}) or {}
+        a = analyst.get(t, {}) or {}
         flags = exclusions(m, f)
         s_turn, w_turn = score_turnaround(m)
         s_mom, w_mom = score_momentum(m)
-        s_val, w_val = score_value(m, f)
+        s_val, w_val = score_value(m, f, a)
         rows[t] = {
-            "name": safe(f, "shortName", t),
+            "name": clean_name(safe(f, "shortName"), t),
             "index": "/".join(idxs),
+            "sector": safe(f, "sector", "unbekannt"),
             "metrics": m,
             "flags": flags,
             "earnings_in": earnings_in_days(f),
+            "analyst": a,
+            "revision_note": format_revision(a),
             "scores": {"turnaround": s_turn, "momentum": s_mom, "value": s_val},
             "why": {"turnaround": w_turn, "momentum": w_mom, "value": w_val},
         }
@@ -487,13 +635,34 @@ def build_state(prices, fundamentals, members, benchmarks) -> dict:
     for name in LISTS:
         eligible = [(t, r["scores"][name]) for t, r in rows.items() if not r["flags"]]
         eligible.sort(key=lambda x: x[1], reverse=True)
-        ranks[name] = [t for t, _ in eligible[:TOP_N]]
+        picked: list[str] = []
+        sector_count: dict[str, int] = {}
+        for t, _ in eligible:
+            if len(picked) >= TOP_N:
+                break
+            sector = rows[t]["sector"]
+            if sector_count.get(sector, 0) >= SECTOR_CAP:
+                continue
+            picked.append(t)
+            sector_count[sector] = sector_count.get(sector, 0) + 1
+        # Falls der Sektor-Deckel die Liste kuerzer laesst als TOP_N erlaubt,
+        # mit den naechstbesten (auch ueber dem Deckel) auffuellen.
+        if len(picked) < TOP_N:
+            for t, _ in eligible:
+                if len(picked) >= TOP_N:
+                    break
+                if t not in picked:
+                    picked.append(t)
+        ranks[name] = picked
+
+    missing = sorted(set(members.keys()) - set(rows.keys()))
 
     return {
         "date": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
         "generated": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "ranks": ranks,
         "rows": rows,
+        "missing": missing,
     }
 
 
@@ -515,14 +684,34 @@ def diff_lists(today: dict, prev: dict) -> dict:
             if t not in cur:
                 exits.append({"ticker": t, "old_rank": old_pos[t] + 1})
         changes[name] = {"entries": entries, "exits": exits, "moves": moves}
+
+    # Analysten-Sentiment: fuer alle heute gelisteten Werte pruefen, ob sich
+    # das Vorzeichen der Netto-Ratingaenderungen gegenueber gestern gedreht hat.
+    # Das ist unabhaengig von der Rangliste selbst das eigentliche
+    # "kurzfristige" Signal aus den Analystendaten.
+    flips = []
+    if prev:
+        listed_today = sorted({t for n in LISTS for t in today["ranks"][n]})
+        for t in listed_today:
+            now_net = safe(today["rows"][t]["analyst"], "net_30d", 0)
+            prev_row = prev.get("rows", {}).get(t)
+            if prev_row is None:
+                continue
+            old_net = safe(prev_row.get("analyst", {}), "net_30d", 0)
+            if now_net != 0 and (old_net == 0 or (old_net > 0) != (now_net > 0)):
+                flips.append({"ticker": t, "now": now_net, "old": old_net})
+    changes["analyst_flips"] = flips
     return changes
 
 
 def fmt_row(t: str, row: dict, list_name: str) -> str:
     m = row["metrics"]
     why = ", ".join(row["why"][list_name][:3]) or "-"
-    return (f"**{t}** ({row['name']}, {row['index']}) - Score {row['scores'][list_name]:.0f} | "
+    line = (f"**{t}** ({row['name']}, {row['index']}) - Score {row['scores'][list_name]:.0f} | "
             f"{m['dd_ath']:.0f}% unter ATH, RSI {m['rsi14']:.0f} | {why}")
+    if row.get("revision_note"):
+        line += f" | {row['revision_note']}"
+    return line
 
 
 def build_report(today: dict, prev: dict, changes: dict) -> str:
@@ -545,11 +734,15 @@ def build_report(today: dict, prev: dict, changes: dict) -> str:
             for i, t in enumerate(today["ranks"][name], 1):
                 L.append(f"{i}. {fmt_row(t, today['rows'][t], name)}")
             L.append("")
+        if today.get("missing"):
+            L.append(f"_Nicht auswertbar heute ({len(today['missing'])}): "
+                     f"{', '.join(today['missing'])}_")
+            L.append("")
         return "\n".join(L)
 
     any_change = any(
         changes[n]["entries"] or changes[n]["exits"] or changes[n]["moves"] for n in LISTS
-    )
+    ) or changes.get("analyst_flips")
 
     if not any_change:
         L.append("## Keine Veraenderungen")
@@ -580,6 +773,17 @@ def build_report(today: dict, prev: dict, changes: dict) -> str:
                          f"{'hoch' if e['delta'] > 0 else 'runter'}, jetzt Platz {e['rank']}")
             L.append("")
 
+        flips = changes.get("analyst_flips") or []
+        if flips:
+            L.append("## 🔄 Analysten-Sentiment gedreht (letzte 30 Tage)")
+            L.append("")
+            for e in flips:
+                row = today["rows"][e["ticker"]]
+                richtung = "positiv" if e["now"] > 0 else "negativ"
+                L.append(f"- {e['ticker']} ({row['name']}): jetzt netto {richtung} "
+                         f"({e['now']:+d}, gestern {e['old']:+d})")
+            L.append("")
+
     # Termin- und Risikohinweise fuer alle aktuell gelisteten Werte
     watch = sorted({t for n in LISTS for t in today["ranks"][n]})
     earnings = [(t, today["rows"][t]["earnings_in"]) for t in watch
@@ -597,6 +801,10 @@ def build_report(today: dict, prev: dict, changes: dict) -> str:
     L.append(f"_Aktuelle Listen: Turnaround {', '.join(today['ranks']['turnaround'][:5])} ... | "
              f"Momentum {', '.join(today['ranks']['momentum'][:5])} ... | "
              f"Value {', '.join(today['ranks']['value'][:5])} ..._")
+    if today.get("missing"):
+        L.append("")
+        L.append(f"_Nicht auswertbar heute ({len(today['missing'])}): "
+                 f"{', '.join(today['missing'])}_")
     L.append("")
     L.append("_Automatisch erzeugte Kennzahlensortierung, keine Anlageberatung._")
     return "\n".join(L)
@@ -615,8 +823,9 @@ def main() -> int:
         return 1
 
     fundamentals = get_fundamentals(tickers)
+    analyst = get_analyst_data(tickers)
 
-    today = build_state(prices, fundamentals, members, benchmarks)
+    today = build_state(prices, fundamentals, analyst, members, benchmarks)
 
     prev = None
     if STATE_FILE.exists():

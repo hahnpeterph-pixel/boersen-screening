@@ -6,31 +6,31 @@
    "HNR1.DE",
    "MELI",
    "ROP",
-   "BAYN.DE",
    "AXP",
+   "BAYN.DE",
    "KHC",
    "AXON",
-   "DASH",
    "HEN3.DE",
    "CRM",
-   "PYPL",
-   "DTG.DE",
    "ADSK",
+   "PYPL",
+   "DASH",
+   "DTG.DE",
    "CSX"
   ],
   "momentum": [
    "ABNB",
-   "MRVL",
    "TEAM",
+   "MRVL",
    "MRK",
    "DB1.DE",
    "ALV.DE",
-   "MU",
    "FANG",
-   "CSX",
-   "DXCM",
-   "KO",
+   "MU",
    "BAYN.DE",
+   "DXCM",
+   "CSX",
+   "KO",
    "AXON",
    "PYPL",
    "DTG.DE"
@@ -55,38 +55,9 @@
  },
  "changes": {
   "turnaround": {
-   "entries": [
-    {
-     "ticker": "CRM",
-     "rank": 11
-    },
-    {
-     "ticker": "ADSK",
-     "rank": 14
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "ADBE",
-     "old_rank": 6
-    },
-    {
-     "ticker": "ZS",
-     "old_rank": 8
-    }
-   ],
-   "moves": [
-    {
-     "ticker": "ROP",
-     "rank": 4,
-     "delta": 5
-    },
-    {
-     "ticker": "DASH",
-     "rank": 9,
-     "delta": 6
-    }
-   ]
+   "entries": [],
+   "exits": [],
+   "moves": []
   },
   "momentum": {
    "entries": [],

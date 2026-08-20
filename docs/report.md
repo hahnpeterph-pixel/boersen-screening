@@ -1,6 +1,6 @@
 # Boersen-Screening - 2026-08-20
 
-_Stand: Schlusskurse vom Vortag. Erstellt 2026-08-20T14:12:05+00:00 UTC. 159 Werte ausgewertet._
+_Stand: Schlusskurse vom Vortag. Erstellt 2026-08-20T14:17:55+00:00 UTC. 159 Werte ausgewertet._
 
 ## 📖 Glossar (was die Spalten bedeuten)
 
@@ -14,52 +14,79 @@ _Stand: Schlusskurse vom Vortag. Erstellt 2026-08-20T14:12:05+00:00 UTC. 159 Wer
 - **Rang gestern / Rang Vorwoche**: Platzierung am letzten Handelstag bzw. vor rund einer Woche in derselben Liste. "neu" = damals nicht in den Top 40.
 - **Warum (Kurzfassung)**: die staerksten Gruende fuer den Score dieser Zeile, in Worten. Fliesst in den Score ein: je nach Liste u.a. hoeheres Tief (Bodenbildung), Abstand zur 50-/100-/200-Tage-Linie, RSI-Erholung (Optimum bei RSI 40-50, nicht 30 - Quelle: Constance Brown), Volumen-Ausbruch (heutiges Volumen vs. 20-Tage-Schnitt), Kauf-/Verkaufsdruck der letzten 5 Tage (Volumen an Anstiegs- vs. Ruecksetzertagen, KEIN Leerverkaufs-/Shortdaten-Wert), relative Staerke vs. Index, sowie bei Value KGV/Marge/Wachstum/Verschuldung.
 
+## 🎯 Analysten-Filter (Kursziel ≥15%, Kaufen-Anteil ≥75%)
+
+_Ueber alle 159 ausgewerteten Werte, nicht nur die Top-10-Listen. Sortiert nach Kurspotenzial absteigend, maximal 20 Treffer. Value-Trap-Ausschluesse gelten auch hier. Reine Analysten-Kennzahlen, keine technische Bestaetigung enthalten - siehe Glossar und Hinweis am Ende._
+
+| Rang | Ticker | ISIN | Name | Index | Kurs | Abstand ATH (Info) | Kaufen-Anteil Analysten | Kursziel | Letztes Rating |
+|---|---|---|---|---|---|---|---|---|---|
+| 1 | MU | US5951121038 | Micron Technology, Inc. | NASDAQ | 945.04 | -22% | 89% (46 Analysten) | 1501.98 (59% ueber Kurs) | 2026-08-07 Citigroup: Rating bestaetigt: Buy |
+| 2 | ZAL.DE | - | Zalando SE | DAX | 22.46 | -78% | 75% (24 Analysten) | 35.07 (56% ueber Kurs) | keine in 30T |
+| 3 | IFX.DE | - | INFINEON TECHNOLOGIES AG | DAX | 55.00 | -38% | 79% (24 Analysten) | 85.79 (56% ueber Kurs) | keine in 30T |
+| 4 | AVGO | CA11134P1009 | Broadcom Inc. | NASDAQ | 363.27 | -24% | 92% (48 Analysten) | 527.88 (45% ueber Kurs) | keine in 30T |
+| 5 | MCHP | - | Microchip Technology Incorporat | NASDAQ | 76.36 | -26% | 76% (25 Analysten) | 109.21 (43% ueber Kurs) | 2026-08-17 Cantor Fitzgerald: Rating bestaetigt: Overweight |
+| 6 | SNPS | US8716071076 | Synopsys, Inc. | NASDAQ | 396.88 | -38% | 75% (24 Analysten) | 560.17 (41% ueber Kurs) | 2026-08-19 Morgan Stanley: Rating bestaetigt: Equal-Weight |
+| 7 | NVDA | - | NVIDIA Corporation | NASDAQ/DOW | 217.28 | -8% | 95% (61 Analysten) | 302.83 (39% ueber Kurs) | 2026-08-11 Wells Fargo: Rating bestaetigt: Overweight |
+| 8 | HEI.DE | - | Heidelberg Materials AG | DAX | 158.60 | -32% | 75% (20 Analysten) | 214.70 (35% ueber Kurs) | keine in 30T |
+| 9 | WMT | CA93267J1012 | Walmart Inc. | DOW | 104.29 | -22% | 83% (41 Analysten) | 137.95 (32% ueber Kurs) | 2026-08-17 DA Davidson: Rating bestaetigt: Buy |
+| 10 | AMD | US0079031078 | Advanced Micro Devices, Inc. | NASDAQ | 466.83 | -20% | 81% (52 Analysten) | 612.84 (31% ueber Kurs) | 2026-08-06 Argus Research: Rating bestaetigt: Buy |
+| 11 | AZN | GB0009895292 | AstraZeneca PLC | NASDAQ | 162.92 | -22% | 90% (10 Analysten) | 213.69 (31% ueber Kurs) | keine in 30T |
+| 12 | ENR.DE | - | Siemens Energy AG | DAX | 151.74 | -19% | 76% (25 Analysten) | 196.92 (30% ueber Kurs) | keine in 30T |
+| 13 | AMAT | US0382221051 | Applied Materials, Inc. | NASDAQ | 495.93 | -31% | 82% (39 Analysten) | 641.03 (29% ueber Kurs) | 2026-08-14 UBS: Rating bestaetigt: Buy |
+| 14 | CDNS | US1273871087 | Cadence Design Systems, Inc. | NASDAQ | 314.74 | -24% | 88% (25 Analysten) | 403.94 (28% ueber Kurs) | 2026-07-28 B of A Securities: Rating bestaetigt: Buy |
+| 15 | DTE.DE | - | DEUTSCHE TELEKOM AG | DAX | 28.96 | -14% | 100% (18 Analysten) | 37.10 (28% ueber Kurs) | keine in 30T |
+| 16 | GOOGL | CA02080M1005 | Alphabet Inc. | NASDAQ | 341.12 | -15% | 92% (64 Analysten) | 428.07 (26% ueber Kurs) | 2026-07-23 UBS: Rating bestaetigt: Neutral |
+| 17 | BA | - | Boeing Company (The) | DOW | 219.09 | -49% | 82% (28 Analysten) | 274.85 (25% ueber Kurs) | 2026-08-11 Argus Research: hochgestuft auf Buy |
+| 18 | AMZN | - | Amazon.com, Inc. | NASDAQ/DOW | 261.00 | -8% | 97% (60 Analysten) | 326.84 (25% ueber Kurs) | 2026-07-31 UBS: Rating bestaetigt: Buy |
+| 19 | ADSK | US0527691069 | Autodesk, Inc. | NASDAQ | 251.51 | -26% | 83% (36 Analysten) | 314.19 (25% ueber Kurs) | 2026-08-11 Goldman Sachs: neu bewertet mit Neutral |
+| 20 | ASML | USN070592100 | ASML Holding N.V. - New York Re | NASDAQ | 1758.53 | -12% | 89% (44 Analysten) | 2196.43 (25% ueber Kurs) | keine in 30T |
+
 ## 📊 Aktuelle Top 10
 
 ### Turnaround (Bodenbildung nach Absturz)
 
 | Rang | Ticker | ISIN | Name | Index | Kurs | Abstand ATH (Info) | Kaufen-Anteil Analysten | Kursziel | Letztes Rating | **Gesamt** | Einordnung | Rang gestern | Rang Vorwoche | Warum (Kurzfassung) |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | BEI.DE | - | BEIERSDORF AG | DAX | 78.36 | -46% | 35% (20 Analysten) | 82.37 (5% ueber Kurs) | keine in 30T | **93** | sehr hoch | 1 | neu | hoeheres Tief; ueber 50-Tage-Linie; 50-Tage-Linie dreht nach oben |
-| 2 | HNR1.DE | - | HANNOVER RUECK SE NA O.N. | DAX | 249.40 | -8% | 43% (14 Analysten) | 285.29 (14% ueber Kurs) | keine in 30T | **86** | sehr hoch | 2 | neu | hoeheres Tief; ueber 50-Tage-Linie; 50-Tage-Linie dreht nach oben |
-| 3 | MELI | US58733R1023 | MercadoLibre, Inc. | NASDAQ | 1898.98 | -27% | 79% (24 Analysten) | 2256.54 (19% ueber Kurs) | 2026-08-11 JP Morgan: Rating bestaetigt: Neutral | **84** | sehr hoch | 3 | neu | hoeheres Tief; ueber 50-Tage-Linie; 50-Tage-Linie dreht nach oben |
-| 4 | ROP | US7766961061 | Roper Technologies, Inc. | NASDAQ | 406.30 | -31% | 40% (20 Analysten) | 445.20 (10% ueber Kurs) | 2026-08-18 RBC Capital: Rating bestaetigt: Sector Perform | **83** | sehr hoch | 9 | neu | hoeheres Tief; ueber 50-Tage-Linie; 50-Tage-Linie dreht nach oben |
-| 5 | BAYN.DE | - | Bayer AG | DAX | 48.34 | -49% | 72% (18 Analysten) | 56.92 (18% ueber Kurs) | keine in 30T | **83** | sehr hoch | 5 | neu | hoeheres Tief; ueber 50-Tage-Linie; 50-Tage-Linie dreht nach oben |
-| 6 | AXP | - | American Express Company | DOW | 331.90 | -13% | 50% (30 Analysten) | 375.86 (13% ueber Kurs) | 2026-08-12 Piper Sandler: Rating bestaetigt: Overweight | **83** | sehr hoch | 4 | neu | hoeheres Tief; 50-Tage-Linie dreht nach oben; RSI erholt sich aus dem ueberverkauften Bereich |
-| 7 | KHC | - | The Kraft Heinz Company | NASDAQ | 25.48 | -59% | 5% (19 Analysten) | 25.03 (2% unter Kurs) | 2026-08-07 Barclays: Rating bestaetigt: Equal-Weight | **83** | sehr hoch | 7 | neu | hoeheres Tief; ueber 50-Tage-Linie; 50-Tage-Linie dreht nach oben |
-| 8 | AXON | US05464C1018 | Axon Enterprise, Inc. | NASDAQ | 632.93 | -27% | 86% (21 Analysten) | 693.40 (10% ueber Kurs) | 2026-08-06 UBS: Rating bestaetigt: Neutral | **82** | sehr hoch | 11 | neu | hoeheres Tief; ueber 50-Tage-Linie; 50-Tage-Linie dreht nach oben |
-| 9 | DASH | - | DoorDash, Inc. | NASDAQ | 219.85 | -22% | 77% (44 Analysten) | 251.94 (15% ueber Kurs) | 2026-08-10 Roth Capital: Rating bestaetigt: Neutral | **81** | sehr hoch | 15 | neu | hoeheres Tief; ueber 50-Tage-Linie; 50-Tage-Linie dreht nach oben |
-| 10 | HEN3.DE | - | Henkel AG & Co. KGaA | DAX | 75.36 | -27% | 37% (19 Analysten) | 78.97 (5% ueber Kurs) | keine in 30T | **81** | sehr hoch | 10 | neu | hoeheres Tief; ueber 50-Tage-Linie; 50-Tage-Linie dreht nach oben |
+| 1 | BEI.DE | - | BEIERSDORF AG | DAX | 78.38 | -46% | 35% (20 Analysten) | 82.37 (5% ueber Kurs) | keine in 30T | **93** | sehr hoch | 1 | neu | hoeheres Tief; ueber 50-Tage-Linie; 50-Tage-Linie dreht nach oben |
+| 2 | HNR1.DE | - | HANNOVER RUECK SE NA O.N. | DAX | 249.60 | -8% | 43% (14 Analysten) | 285.29 (14% ueber Kurs) | keine in 30T | **86** | sehr hoch | 2 | neu | hoeheres Tief; ueber 50-Tage-Linie; 50-Tage-Linie dreht nach oben |
+| 3 | MELI | US58733R1023 | MercadoLibre, Inc. | NASDAQ | 1894.57 | -28% | 79% (24 Analysten) | 2256.54 (19% ueber Kurs) | 2026-08-11 JP Morgan: Rating bestaetigt: Neutral | **84** | sehr hoch | 3 | neu | hoeheres Tief; ueber 50-Tage-Linie; 50-Tage-Linie dreht nach oben |
+| 4 | ROP | US7766961061 | Roper Technologies, Inc. | NASDAQ | 407.00 | -31% | 40% (20 Analysten) | 445.20 (9% ueber Kurs) | 2026-08-18 RBC Capital: Rating bestaetigt: Sector Perform | **84** | sehr hoch | 4 | neu | hoeheres Tief; ueber 50-Tage-Linie; 50-Tage-Linie dreht nach oben |
+| 5 | AXP | - | American Express Company | DOW | 332.38 | -13% | 50% (30 Analysten) | 375.86 (13% ueber Kurs) | 2026-08-12 Piper Sandler: Rating bestaetigt: Overweight | **83** | sehr hoch | 6 | neu | hoeheres Tief; 50-Tage-Linie dreht nach oben; RSI erholt sich aus dem ueberverkauften Bereich |
+| 6 | BAYN.DE | - | Bayer AG | DAX | 48.40 | -49% | 72% (18 Analysten) | 56.92 (18% ueber Kurs) | keine in 30T | **83** | sehr hoch | 5 | neu | hoeheres Tief; ueber 50-Tage-Linie; 50-Tage-Linie dreht nach oben |
+| 7 | KHC | - | The Kraft Heinz Company | NASDAQ | 25.41 | -59% | 5% (19 Analysten) | 25.03 (2% unter Kurs) | 2026-08-07 Barclays: Rating bestaetigt: Equal-Weight | **83** | sehr hoch | 7 | neu | hoeheres Tief; ueber 50-Tage-Linie; 50-Tage-Linie dreht nach oben |
+| 8 | AXON | US05464C1018 | Axon Enterprise, Inc. | NASDAQ | 630.07 | -28% | 86% (21 Analysten) | 693.40 (10% ueber Kurs) | 2026-08-06 UBS: Rating bestaetigt: Neutral | **81** | sehr hoch | 8 | neu | hoeheres Tief; ueber 50-Tage-Linie; 50-Tage-Linie dreht nach oben |
+| 9 | HEN3.DE | - | Henkel AG & Co. KGaA | DAX | 75.28 | -27% | 37% (19 Analysten) | 78.97 (5% ueber Kurs) | keine in 30T | **81** | sehr hoch | 10 | neu | hoeheres Tief; ueber 50-Tage-Linie; 50-Tage-Linie dreht nach oben |
+| 10 | CRM | - | Salesforce, Inc. | DOW | 205.42 | -43% | 73% (51 Analysten) | 243.08 (18% ueber Kurs) | 2026-08-20 Cantor Fitzgerald: Rating bestaetigt: Overweight | **80** | sehr hoch | 11 | neu | hoeheres Tief; ueber 50-Tage-Linie; 50-Tage-Linie dreht nach oben |
 
 ### Momentum (Staerke nahe Allzeithoch)
 
 | Rang | Ticker | ISIN | Name | Index | Kurs | Abstand ATH (Info) | Kaufen-Anteil Analysten | Kursziel | Letztes Rating | **Gesamt** | Einordnung | Rang gestern | Rang Vorwoche | Warum (Kurzfassung) |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | ABNB | - | Airbnb, Inc. | NASDAQ | 185.24 | -15% | 53% (45 Analysten) | 175.24 (5% unter Kurs) | 2026-08-10 BMO Capital: Rating bestaetigt: Market Perform | **90** | sehr hoch | 1 | neu | relative Staerke +29% vs. Index; ueber 50- und 200-Tage-Linie; 200-Tage-Linie steigt |
-| 2 | MRVL | - | Marvell Technology, Inc. | NASDAQ | 241.25 | -24% | 86% (43 Analysten) | 259.91 (8% ueber Kurs) | 2026-08-18 TD Cowen: Rating bestaetigt: Hold | **86** | sehr hoch | 6 | neu | relative Staerke +185% vs. Index; ueber 50- und 200-Tage-Linie; 200-Tage-Linie steigt |
-| 3 | TEAM | - | Atlassian Corporation | NASDAQ | 172.62 | -62% | 84% (32 Analysten) | 187.93 (9% ueber Kurs) | 2026-08-10 Citigroup: Rating bestaetigt: Buy | **86** | sehr hoch | 2 | neu | relative Staerke +97% vs. Index; ueber 50- und 200-Tage-Linie; Kaufdruck der letzten 5 Tage bestaetigt die Staerke |
-| 4 | MRK | - | Merck & Company, Inc. | DOW | 149.46 | -2% | 71% (28 Analysten) | 146.54 (2% unter Kurs) | 2026-08-20 Morgan Stanley: hochgestuft auf Overweight | **85** | sehr hoch | 3 | neu | relative Staerke +17% vs. Index; ueber 50- und 200-Tage-Linie; 200-Tage-Linie steigt |
-| 5 | DB1.DE | - | DEUTSCHE BOERSE AG | DAX | 279.30 | -2% | 67% (12 Analysten) | 290.25 (4% ueber Kurs) | keine in 30T | **85** | sehr hoch | 4 | neu | relative Staerke +25% vs. Index; ueber 50- und 200-Tage-Linie; Kaufdruck der letzten 5 Tage bestaetigt die Staerke |
-| 6 | ALV.DE | - | Allianz SE v | DAX | 438.80 | -1% | 47% (17 Analysten) | 429.65 (2% unter Kurs) | keine in 30T | **82** | sehr hoch | 5 | neu | relative Staerke +17% vs. Index; ueber 50- und 200-Tage-Linie; 200-Tage-Linie steigt |
-| 7 | MU | US5951121038 | Micron Technology, Inc. | NASDAQ | 951.00 | -22% | 89% (46 Analysten) | 1501.98 (58% ueber Kurs) | 2026-08-07 Citigroup: Rating bestaetigt: Buy | **79** | hoch | 10 | neu | relative Staerke +110% vs. Index; 200-Tage-Linie steigt; Kaufdruck der letzten 5 Tage bestaetigt die Staerke |
-| 8 | FANG | US25278X1090 | Diamondback Energy, Inc. | NASDAQ | 215.29 | 0% | 90% (29 Analysten) | 232.04 (8% ueber Kurs) | keine in 30T | **78** | hoch | 7 | neu | ueber 50- und 200-Tage-Linie; 200-Tage-Linie steigt; Kaufdruck der letzten 5 Tage bestaetigt die Staerke |
-| 9 | CSX | US1264081035 | CSX Corporation | NASDAQ | 50.98 | -4% | 68% (25 Analysten) | 53.14 (4% ueber Kurs) | 2026-07-24 Citigroup: Rating bestaetigt: Neutral | **76** | hoch | 11 | neu | ueber 50- und 200-Tage-Linie; 200-Tage-Linie steigt; Kaufdruck der letzten 5 Tage bestaetigt die Staerke |
-| 10 | DXCM | US2521311074 | DexCom, Inc. | NASDAQ | 90.90 | -44% | 89% (28 Analysten) | 94.12 (4% ueber Kurs) | 2026-08-04 Argus Research: Rating bestaetigt: Buy | **76** | hoch | 8 | neu | ueber 50- und 200-Tage-Linie; 200-Tage-Linie steigt; Kaufdruck der letzten 5 Tage bestaetigt die Staerke |
+| 1 | ABNB | - | Airbnb, Inc. | NASDAQ | 185.81 | -14% | 53% (45 Analysten) | 175.24 (6% unter Kurs) | 2026-08-10 BMO Capital: Rating bestaetigt: Market Perform | **90** | sehr hoch | 1 | neu | relative Staerke +30% vs. Index; ueber 50- und 200-Tage-Linie; 200-Tage-Linie steigt |
+| 2 | TEAM | - | Atlassian Corporation | NASDAQ | 173.26 | -62% | 84% (32 Analysten) | 187.93 (8% ueber Kurs) | 2026-08-10 Citigroup: Rating bestaetigt: Buy | **86** | sehr hoch | 3 | neu | relative Staerke +98% vs. Index; ueber 50- und 200-Tage-Linie; Kaufdruck der letzten 5 Tage bestaetigt die Staerke |
+| 3 | MRVL | - | Marvell Technology, Inc. | NASDAQ | 240.69 | -24% | 86% (43 Analysten) | 259.91 (8% ueber Kurs) | 2026-08-18 TD Cowen: Rating bestaetigt: Hold | **86** | sehr hoch | 2 | neu | relative Staerke +184% vs. Index; ueber 50- und 200-Tage-Linie; 200-Tage-Linie steigt |
+| 4 | MRK | - | Merck & Company, Inc. | DOW | 149.60 | -2% | 71% (28 Analysten) | 146.54 (2% unter Kurs) | 2026-08-20 Morgan Stanley: hochgestuft auf Overweight | **86** | sehr hoch | 4 | neu | relative Staerke +17% vs. Index; ueber 50- und 200-Tage-Linie; 200-Tage-Linie steigt |
+| 5 | DB1.DE | - | DEUTSCHE BOERSE AG | DAX | 279.40 | -2% | 67% (12 Analysten) | 290.25 (4% ueber Kurs) | keine in 30T | **85** | sehr hoch | 5 | neu | relative Staerke +28% vs. Index; ueber 50- und 200-Tage-Linie; Kaufdruck der letzten 5 Tage bestaetigt die Staerke |
+| 6 | ALV.DE | - | Allianz SE v | DAX | 438.80 | -1% | 47% (17 Analysten) | 429.65 (2% unter Kurs) | keine in 30T | **82** | sehr hoch | 6 | neu | relative Staerke +18% vs. Index; ueber 50- und 200-Tage-Linie; 200-Tage-Linie steigt |
+| 7 | FANG | US25278X1090 | Diamondback Energy, Inc. | NASDAQ | 215.03 | 0% | 90% (29 Analysten) | 232.04 (8% ueber Kurs) | keine in 30T | **78** | hoch | 8 | neu | ueber 50- und 200-Tage-Linie; 200-Tage-Linie steigt; Kaufdruck der letzten 5 Tage bestaetigt die Staerke |
+| 8 | MU | US5951121038 | Micron Technology, Inc. | NASDAQ | 945.04 | -22% | 89% (46 Analysten) | 1501.98 (59% ueber Kurs) | 2026-08-07 Citigroup: Rating bestaetigt: Buy | **78** | hoch | 7 | neu | relative Staerke +108% vs. Index; 200-Tage-Linie steigt; Kaufdruck der letzten 5 Tage bestaetigt die Staerke |
+| 9 | BAYN.DE | - | Bayer AG | DAX | 48.40 | -49% | 72% (18 Analysten) | 56.92 (18% ueber Kurs) | keine in 30T | **76** | hoch | 12 | neu | ueber 50- und 200-Tage-Linie; 200-Tage-Linie steigt; Kaufdruck der letzten 5 Tage bestaetigt die Staerke |
+| 10 | DXCM | US2521311074 | DexCom, Inc. | NASDAQ | 91.07 | -44% | 89% (28 Analysten) | 94.12 (3% ueber Kurs) | 2026-08-04 Argus Research: Rating bestaetigt: Buy | **76** | hoch | 10 | neu | ueber 50- und 200-Tage-Linie; 200-Tage-Linie steigt; Kaufdruck der letzten 5 Tage bestaetigt die Staerke |
 
 ### Value / Qualitaet
 
 | Rang | Ticker | ISIN | Name | Index | Kurs | Abstand ATH (Info) | Kaufen-Anteil Analysten | Kursziel | Letztes Rating | **Gesamt** | Einordnung | Rang gestern | Rang Vorwoche | Warum (Kurzfassung) |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | MU | US5951121038 | Micron Technology, Inc. | NASDAQ | 951.00 | -22% | 89% (46 Analysten) | 1501.98 (58% ueber Kurs) | 2026-08-07 Citigroup: Rating bestaetigt: Buy | **95** | sehr hoch | 1 | neu | erwartetes KGV unter aktuellem; positiver Free Cashflow; Umsatzwachstum 346% |
-| 2 | ADSK | US0527691069 | Autodesk, Inc. | NASDAQ | 251.18 | -27% | 83% (36 Analysten) | 314.19 (25% ueber Kurs) | 2026-08-11 Goldman Sachs: neu bewertet mit Neutral | **93** | sehr hoch | 2 | neu | erwartetes KGV unter aktuellem; positiver Free Cashflow; Umsatzwachstum 18% |
-| 3 | NVDA | - | NVIDIA Corporation | NASDAQ/DOW | 217.73 | -8% | 95% (61 Analysten) | 302.83 (39% ueber Kurs) | 2026-08-11 Wells Fargo: Rating bestaetigt: Overweight | **92** | sehr hoch | 3 | neu | erwartetes KGV unter aktuellem; positiver Free Cashflow; Umsatzwachstum 85% |
-| 4 | V | US92826C8394 | Visa Inc. | DOW | 366.17 | -1% | 92% (40 Analysten) | 416.20 (14% ueber Kurs) | 2026-08-05 Truist Securities: Rating bestaetigt: Buy | **84** | sehr hoch | 4 | neu | erwartetes KGV unter aktuellem; positiver Free Cashflow; Umsatzwachstum 14% |
-| 5 | REGN | US75886F1075 | Regeneron Pharmaceuticals, Inc. | NASDAQ | 834.63 | -30% | 64% (28 Analysten) | 840.43 (1% ueber Kurs) | 2026-08-17 Leerink Partners: Rating bestaetigt: Market Perform | **83** | sehr hoch | 5 | neu | erwartetes KGV unter aktuellem; positiver Free Cashflow; Umsatzwachstum 17% |
-| 6 | ABNB | - | Airbnb, Inc. | NASDAQ | 185.24 | -15% | 53% (45 Analysten) | 175.24 (5% unter Kurs) | 2026-08-10 BMO Capital: Rating bestaetigt: Market Perform | **82** | sehr hoch | 6 | neu | erwartetes KGV unter aktuellem; positiver Free Cashflow; Umsatzwachstum 16% |
-| 7 | MTX.DE | - | MTU Aero Engines AG | DAX | 361.00 | -9% | 50% (20 Analysten) | 402.50 (12% ueber Kurs) | keine in 30T | **82** | sehr hoch | 7 | neu | erwartetes KGV unter aktuellem; positiver Free Cashflow; Umsatzwachstum 17% |
-| 8 | ENR.DE | - | Siemens Energy AG | DAX | 152.26 | -19% | 76% (25 Analysten) | 196.92 (29% ueber Kurs) | keine in 30T | **81** | sehr hoch | 8 | neu | erwartetes KGV unter aktuellem; positiver Free Cashflow; Umsatzwachstum 18% |
-| 9 | VRTX | - | Vertex Pharmaceuticals Incorpor | NASDAQ | 544.82 | -1% | 79% (29 Analysten) | 563.12 (3% ueber Kurs) | 2026-08-05 Truist Securities: Rating bestaetigt: Buy | **80** | sehr hoch | 9 | neu | erwartetes KGV unter aktuellem; positiver Free Cashflow; Umsatzwachstum 12% |
-| 10 | DB1.DE | - | DEUTSCHE BOERSE AG | DAX | 279.30 | -2% | 67% (12 Analysten) | 290.25 (4% ueber Kurs) | keine in 30T | **79** | hoch | 10 | neu | erwartetes KGV unter aktuellem; positiver Free Cashflow; Umsatzwachstum 12% |
+| 1 | MU | US5951121038 | Micron Technology, Inc. | NASDAQ | 945.04 | -22% | 89% (46 Analysten) | 1501.98 (59% ueber Kurs) | 2026-08-07 Citigroup: Rating bestaetigt: Buy | **95** | sehr hoch | 1 | neu | erwartetes KGV unter aktuellem; positiver Free Cashflow; Umsatzwachstum 346% |
+| 2 | ADSK | US0527691069 | Autodesk, Inc. | NASDAQ | 251.51 | -26% | 83% (36 Analysten) | 314.19 (25% ueber Kurs) | 2026-08-11 Goldman Sachs: neu bewertet mit Neutral | **93** | sehr hoch | 2 | neu | erwartetes KGV unter aktuellem; positiver Free Cashflow; Umsatzwachstum 18% |
+| 3 | NVDA | - | NVIDIA Corporation | NASDAQ/DOW | 217.28 | -8% | 95% (61 Analysten) | 302.83 (39% ueber Kurs) | 2026-08-11 Wells Fargo: Rating bestaetigt: Overweight | **92** | sehr hoch | 3 | neu | erwartetes KGV unter aktuellem; positiver Free Cashflow; Umsatzwachstum 85% |
+| 4 | V | US92826C8394 | Visa Inc. | DOW | 366.61 | -1% | 92% (40 Analysten) | 416.20 (14% ueber Kurs) | 2026-08-05 Truist Securities: Rating bestaetigt: Buy | **84** | sehr hoch | 4 | neu | erwartetes KGV unter aktuellem; positiver Free Cashflow; Umsatzwachstum 14% |
+| 5 | REGN | US75886F1075 | Regeneron Pharmaceuticals, Inc. | NASDAQ | 835.36 | -30% | 64% (28 Analysten) | 840.43 (1% ueber Kurs) | 2026-08-17 Leerink Partners: Rating bestaetigt: Market Perform | **83** | sehr hoch | 5 | neu | erwartetes KGV unter aktuellem; positiver Free Cashflow; Umsatzwachstum 17% |
+| 6 | ABNB | - | Airbnb, Inc. | NASDAQ | 185.81 | -14% | 53% (45 Analysten) | 175.24 (6% unter Kurs) | 2026-08-10 BMO Capital: Rating bestaetigt: Market Perform | **82** | sehr hoch | 6 | neu | erwartetes KGV unter aktuellem; positiver Free Cashflow; Umsatzwachstum 16% |
+| 7 | MTX.DE | - | MTU Aero Engines AG | DAX | 360.90 | -9% | 50% (20 Analysten) | 402.50 (12% ueber Kurs) | keine in 30T | **82** | sehr hoch | 7 | neu | erwartetes KGV unter aktuellem; positiver Free Cashflow; Umsatzwachstum 17% |
+| 8 | ENR.DE | - | Siemens Energy AG | DAX | 151.74 | -19% | 76% (25 Analysten) | 196.92 (30% ueber Kurs) | keine in 30T | **81** | sehr hoch | 8 | neu | erwartetes KGV unter aktuellem; positiver Free Cashflow; Umsatzwachstum 18% |
+| 9 | VRTX | - | Vertex Pharmaceuticals Incorpor | NASDAQ | 546.55 | -1% | 79% (29 Analysten) | 563.12 (3% ueber Kurs) | 2026-08-05 Truist Securities: Rating bestaetigt: Buy | **80** | sehr hoch | 9 | neu | erwartetes KGV unter aktuellem; positiver Free Cashflow; Umsatzwachstum 12% |
+| 10 | DB1.DE | - | DEUTSCHE BOERSE AG | DAX | 279.40 | -2% | 67% (12 Analysten) | 290.25 (4% ueber Kurs) | keine in 30T | **79** | hoch | 10 | neu | erwartetes KGV unter aktuellem; positiver Free Cashflow; Umsatzwachstum 12% |
 
 
 ## 🧭 Analysten-Einstufungen (Top 10, letzte 30 Tage)
@@ -97,19 +124,11 @@ _Stand: Schlusskurse vom Vortag. Erstellt 2026-08-20T14:12:05+00:00 UTC. 159 Wer
 **BEI.DE** (BEIERSDORF AG, DAX)
 - keine Ratingaenderung in den letzten 30 Tagen
 
-**CSX** (CSX Corporation, NASDAQ)
-- 2026-07-24: Citigroup – Bestaetigung (Neutral → Neutral)
-- 2026-07-23: JP Morgan – Bestaetigung (Overweight → Overweight)
-- 2026-07-23: B of A Securities – Bestaetigung (Buy → Buy)
-- 2026-07-23: TD Cowen – Bestaetigung (Buy → Buy)
-- 2026-07-23: BMO Capital – Bestaetigung (Market Perform → Market Perform)
-
-**DASH** (DoorDash, Inc., NASDAQ)
-- 2026-08-10: Roth Capital – Bestaetigung (Neutral → Neutral)
-- 2026-08-07: Wells Fargo – Bestaetigung (Equal-Weight → Equal-Weight)
-- 2026-08-07: Susquehanna – Bestaetigung (Positive → Positive)
-- 2026-08-06: Citigroup – Bestaetigung (Buy → Buy)
-- 2026-08-06: TD Cowen – Bestaetigung (Buy → Buy)
+**CRM** (Salesforce, Inc., DOW)
+- 2026-08-20: Cantor Fitzgerald – Bestaetigung (Overweight → Overweight)
+- 2026-08-18: Citigroup – Bestaetigung (Neutral → Neutral)
+- 2026-08-12: UBS – Bestaetigung (Neutral → Neutral)
+- 2026-08-12: Wells Fargo – Bestaetigung (Equal-Weight → Equal-Weight)
 
 **DB1.DE** (DEUTSCHE BOERSE AG, DAX)
 - keine Ratingaenderung in den letzten 30 Tagen
@@ -207,21 +226,16 @@ _Rein technisch ausgewertet (Turnaround-/Momentum-Kriterien wie bei den Aktien) 
 
 | Name | Kurs | Abstand ATH | RSI | Turnaround-Score | Momentum-Score |
 |---|---|---|---|---|---|
-| Gold (GC=F) | 4544.40 | -15% | 70 | 39/100 (niedrig) | 36/100 (niedrig) |
-| Silber (SI=F) | 67.42 | -41% | 64 | 41/100 (niedrig) | 27/100 (niedrig) |
+| Gold (GC=F) | 4539.30 | -15% | 70 | 39/100 (niedrig) | 35/100 (niedrig) |
+| Silber (SI=F) | 67.33 | -42% | 64 | 41/100 (niedrig) | 27/100 (niedrig) |
 | Erdgas (NG=F) | 2.76 | -72% | 46 | 56/100 (mittel) | 18/100 (niedrig) |
-| Rohoel (WTI) (CL=F) | 86.48 | -30% | 59 | 60/100 (mittel) | 36/100 (niedrig) |
-| Bitcoin (BTC-USD) | 71872.57 | -42% | 79 | 72/100 (hoch) | 39/100 (niedrig) |
+| Rohoel (WTI) (CL=F) | 86.73 | -30% | 59 | 60/100 (mittel) | 36/100 (niedrig) |
+| Bitcoin (BTC-USD) | 71564.98 | -43% | 78 | 72/100 (hoch) | 39/100 (niedrig) |
 
 
-## Turnaround (Bodenbildung nach Absturz)
+## Keine Veraenderungen
 
-- ⬆️ **NEU auf Platz 11**: **CRM** (Salesforce, Inc., DOW) - Score 80 | -44% unter ATH, RSI 64 | hoeheres Tief, ueber 50-Tage-Linie, 50-Tage-Linie dreht nach oben
-- ⬆️ **NEU auf Platz 14**: **ADSK** (Autodesk, Inc., NASDAQ) - Score 77 | -27% unter ATH, RSI 60 | hoeheres Tief, ueber 50-Tage-Linie, Kaufdruck der letzten 5 Tage bestaetigt die Wende | Analysten ↑2 in 30T (Goldman Sachs, 2026-08-11)
-- ⬇️ **RAUS** (war Platz 6): ADBE - jetzt Score 83, Ausschluss: 200-Tage-Linie faellt steil
-- ⬇️ **RAUS** (war Platz 8): ZS - jetzt Score 83, Ausschluss: 200-Tage-Linie faellt steil
-- ↗️ ROP: 5 Plaetze hoch, jetzt Platz 4
-- ↗️ DASH: 6 Plaetze hoch, jetzt Platz 9
+Alle drei Top-15-Listen unveraendert gegenueber 2026-08-20. Kein Handlungsbedarf.
 
 ## ⚠️ Quartalszahlen in Kuerze
 
@@ -229,6 +243,6 @@ _Rein technisch ausgewertet (Turnaround-/Momentum-Kriterien wie bei den Aktien) 
 
 ---
 
-_Aktuelle Listen: Turnaround BEI.DE, HNR1.DE, MELI, ROP, BAYN.DE ... | Momentum ABNB, MRVL, TEAM, MRK, DB1.DE ... | Value MU, ADSK, NVDA, V, REGN ..._
+_Aktuelle Listen: Turnaround BEI.DE, HNR1.DE, MELI, ROP, AXP ... | Momentum ABNB, TEAM, MRVL, MRK, DB1.DE ... | Value MU, ADSK, NVDA, V, REGN ..._
 
 _Automatisch erzeugte Kennzahlensortierung, keine Anlageberatung._

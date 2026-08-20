@@ -1,5 +1,14 @@
 {
   "_hinweis": "Indexzusammensetzungen aendern sich. Bitte quartalsweise pruefen (DAX: Maerz/Juni/Sep/Dez, NASDAQ-100: Dezember, Dow: unregelmaessig). EA, ANSS, 1COV.DE am 20.08.2026 entfernt: alle drei von der Boerse genommen (Uebernahmen). DAX-Nachfolger fuer Covestro noch nicht geprueft.",
+  "COMMODITIES": {
+    "GC=F": "Gold",
+    "SI=F": "Silber",
+    "NG=F": "Erdgas",
+    "CL=F": "Rohoel (WTI)"
+  },
+  "CRYPTO": {
+    "BTC-USD": "Bitcoin"
+  },
   "benchmarks": {
     "NASDAQ": "^NDX",
     "DOW": "^DJI",

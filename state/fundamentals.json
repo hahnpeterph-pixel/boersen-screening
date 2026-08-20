@@ -1,11 +1,11 @@
 {
- "updated": "2026-08-20T13:32:27.689437+00:00",
- "version": 3,
+ "updated": "2026-08-20T14:01:28.680413+00:00",
+ "version": 4,
  "data": {
   "AAPL": {
-   "trailingPE": 36.375427,
-   "forwardPE": 33.213127,
-   "priceToBook": 43.04755,
+   "trailingPE": 36.502296,
+   "forwardPE": 33.328964,
+   "priceToBook": 43.19769,
    "profitMargins": 0.27618998,
    "operatingMargins": 0.32623002,
    "revenueGrowth": 0.164,
@@ -20,12 +20,18 @@
    "targetMeanPrice": 326.3415,
    "numberOfAnalystOpinions": 40,
    "recommendationKey": "buy",
-   "isin": "US0378331005"
+   "isin": "US0378331005",
+   "rec_breakdown": {
+    "kaufen_pct": 60,
+    "halten_pct": 29,
+    "verkaufen_pct": 11,
+    "total": 45
+   }
   },
   "ABNB": {
-   "trailingPE": 42.554794,
-   "forwardPE": 30.364143,
-   "priceToBook": 14.100159,
+   "trailingPE": 42.550224,
+   "forwardPE": 30.360886,
+   "priceToBook": 14.098645,
    "profitMargins": 0.2045,
    "operatingMargins": 0.21009001,
    "revenueGrowth": 0.165,
@@ -40,12 +46,18 @@
    "targetMeanPrice": 175.24359,
    "numberOfAnalystOpinions": 39,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 53,
+    "halten_pct": 40,
+    "verkaufen_pct": 7,
+    "total": 45
+   }
   },
   "ADBE": {
-   "trailingPE": 15.578617,
-   "forwardPE": 9.910231,
-   "priceToBook": 9.438806,
+   "trailingPE": 15.564609,
+   "forwardPE": 9.9013195,
+   "priceToBook": 9.430319,
    "profitMargins": 0.28689,
    "operatingMargins": 0.35327998,
    "revenueGrowth": 0.127,
@@ -60,12 +72,18 @@
    "targetMeanPrice": 270.60587,
    "numberOfAnalystOpinions": 34,
    "recommendationKey": "hold",
-   "isin": "US00724F1012"
+   "isin": "US00724F1012",
+   "rec_breakdown": {
+    "kaufen_pct": 30,
+    "halten_pct": 57,
+    "verkaufen_pct": 12,
+    "total": 40
+   }
   },
   "ADI": {
-   "trailingPE": 44.22512,
-   "forwardPE": 23.086473,
-   "priceToBook": 5.4048657,
+   "trailingPE": 44.219196,
+   "forwardPE": 22.942131,
+   "priceToBook": 5.4041414,
    "profitMargins": 0.29787,
    "operatingMargins": 0.39503,
    "revenueGrowth": 0.396,
@@ -80,12 +98,18 @@
    "targetMeanPrice": 466.0,
    "numberOfAnalystOpinions": 30,
    "recommendationKey": "strong_buy",
-   "isin": "US0326541051"
+   "isin": "US0326541051",
+   "rec_breakdown": {
+    "kaufen_pct": 88,
+    "halten_pct": 12,
+    "verkaufen_pct": 0,
+    "total": 33
+   }
   },
   "ADP": {
-   "trailingPE": 25.316896,
-   "forwardPE": 20.690468,
-   "priceToBook": 18.285074,
+   "trailingPE": 25.450686,
+   "forwardPE": 20.799809,
+   "priceToBook": 18.381702,
    "profitMargins": 0.20109,
    "operatingMargins": 0.23459,
    "revenueGrowth": 0.068,
@@ -100,12 +124,18 @@
    "targetMeanPrice": 286.93332,
    "numberOfAnalystOpinions": 15,
    "recommendationKey": "hold",
-   "isin": "US0530151036"
+   "isin": "US0530151036",
+   "rec_breakdown": {
+    "kaufen_pct": 22,
+    "halten_pct": 67,
+    "verkaufen_pct": 11,
+    "total": 18
+   }
   },
   "ADS.DE": {
-   "trailingPE": 19.474358,
-   "forwardPE": 13.022228,
-   "priceToBook": 4.464758,
+   "trailingPE": 19.352564,
+   "forwardPE": 12.940786,
+   "priceToBook": 4.436835,
    "profitMargins": 0.052950002,
    "operatingMargins": 0.08513,
    "revenueGrowth": 0.133,
@@ -120,12 +150,18 @@
    "targetMeanPrice": 202.72069,
    "numberOfAnalystOpinions": 29,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 73,
+    "halten_pct": 27,
+    "verkaufen_pct": 0,
+    "total": 30
+   }
   },
   "ADSK": {
-   "trailingPE": 36.631195,
-   "forwardPE": 17.672037,
-   "priceToBook": 16.626307,
+   "trailingPE": 36.927113,
+   "forwardPE": 17.814798,
+   "priceToBook": 16.76062,
    "profitMargins": 0.19488001,
    "operatingMargins": 0.29524,
    "revenueGrowth": 0.184,
@@ -140,12 +176,18 @@
    "targetMeanPrice": 314.1912,
    "numberOfAnalystOpinions": 34,
    "recommendationKey": "strong_buy",
-   "isin": "US0527691069"
+   "isin": "US0527691069",
+   "rec_breakdown": {
+    "kaufen_pct": 83,
+    "halten_pct": 17,
+    "verkaufen_pct": 0,
+    "total": 36
+   }
   },
   "AEP": {
-   "trailingPE": 21.883883,
-   "forwardPE": 18.425077,
-   "priceToBook": 2.1427479,
+   "trailingPE": 22.048527,
+   "forwardPE": 18.5637,
+   "priceToBook": 2.158869,
    "profitMargins": 0.13781999,
    "operatingMargins": 0.23251,
    "revenueGrowth": 0.07,
@@ -160,12 +202,18 @@
    "targetMeanPrice": 144.2,
    "numberOfAnalystOpinions": 20,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 57,
+    "halten_pct": 43,
+    "verkaufen_pct": 0,
+    "total": 23
+   }
   },
   "AIR.DE": {
-   "trailingPE": 27.46338,
-   "forwardPE": 43.058456,
-   "priceToBook": 6.3090754,
+   "trailingPE": 27.43675,
+   "forwardPE": 43.0167,
+   "priceToBook": 6.3029575,
    "profitMargins": 0.07714,
    "operatingMargins": 0.113570005,
    "revenueGrowth": 0.277,
@@ -183,9 +231,9 @@
    "isin": null
   },
   "ALV.DE": {
-   "trailingPE": 14.490404,
-   "forwardPE": 13.066727,
-   "priceToBook": 2.632718,
+   "trailingPE": 14.513568,
+   "forwardPE": 13.087615,
+   "priceToBook": 2.6369267,
    "profitMargins": 0.098780006,
    "operatingMargins": 0.13683,
    "revenueGrowth": 0.121,
@@ -200,12 +248,18 @@
    "targetMeanPrice": 429.6533,
    "numberOfAnalystOpinions": 16,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 47,
+    "halten_pct": 41,
+    "verkaufen_pct": 12,
+    "total": 17
+   }
   },
   "AMAT": {
-   "trailingPE": 42.736435,
-   "forwardPE": 27.052166,
-   "priceToBook": 15.3731985,
+   "trailingPE": 42.386307,
+   "forwardPE": 26.830534,
+   "priceToBook": 15.24725,
    "profitMargins": 0.30052,
    "operatingMargins": 0.33736,
    "revenueGrowth": 0.248,
@@ -220,12 +274,18 @@
    "targetMeanPrice": 641.02856,
    "numberOfAnalystOpinions": 35,
    "recommendationKey": "strong_buy",
-   "isin": "US0382221051"
+   "isin": "US0382221051",
+   "rec_breakdown": {
+    "kaufen_pct": 82,
+    "halten_pct": 18,
+    "verkaufen_pct": 0,
+    "total": 39
+   }
   },
   "AMD": {
-   "trailingPE": 123.39154,
-   "forwardPE": 30.154978,
-   "priceToBook": 11.323347,
+   "trailingPE": 123.30556,
+   "forwardPE": 30.133965,
+   "priceToBook": 11.315456,
    "profitMargins": 0.15577,
    "operatingMargins": 0.1725,
    "revenueGrowth": 0.501,
@@ -240,12 +300,18 @@
    "targetMeanPrice": 612.8383,
    "numberOfAnalystOpinions": 47,
    "recommendationKey": "strong_buy",
-   "isin": "US0079031078"
+   "isin": "US0079031078",
+   "rec_breakdown": {
+    "kaufen_pct": 81,
+    "halten_pct": 19,
+    "verkaufen_pct": 0,
+    "total": 52
+   }
   },
   "AMGN": {
-   "trailingPE": 27.475775,
-   "forwardPE": 18.131298,
-   "priceToBook": 20.460684,
+   "trailingPE": 27.147825,
+   "forwardPE": 17.914883,
+   "priceToBook": 20.216465,
    "profitMargins": 0.22951001,
    "operatingMargins": 0.35548002,
    "revenueGrowth": 0.095,
@@ -260,12 +326,18 @@
    "targetMeanPrice": 388.48276,
    "numberOfAnalystOpinions": 29,
    "recommendationKey": "buy",
-   "isin": "US0311621009"
+   "isin": "US0311621009",
+   "rec_breakdown": {
+    "kaufen_pct": 41,
+    "halten_pct": 47,
+    "verkaufen_pct": 12,
+    "total": 34
+   }
   },
   "AMZN": {
-   "trailingPE": 21.369776,
-   "forwardPE": 25.553528,
-   "priceToBook": 5.1966534,
+   "trailingPE": 21.10852,
+   "forwardPE": 25.241125,
+   "priceToBook": 5.1331224,
    "profitMargins": 0.1744,
    "operatingMargins": 0.13689,
    "revenueGrowth": 0.196,
@@ -280,12 +352,18 @@
    "targetMeanPrice": 326.83734,
    "numberOfAnalystOpinions": 60,
    "recommendationKey": "strong_buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 97,
+    "halten_pct": 3,
+    "verkaufen_pct": 0,
+    "total": 60
+   }
   },
   "APP": {
-   "trailingPE": 23.8702,
-   "forwardPE": 14.801786,
-   "priceToBook": 32.943607,
+   "trailingPE": 24.247313,
+   "forwardPE": 15.035632,
+   "priceToBook": 33.464066,
    "profitMargins": 0.64575994,
    "operatingMargins": 0.77678,
    "revenueGrowth": 0.528,
@@ -300,12 +378,18 @@
    "targetMeanPrice": 528.3226,
    "numberOfAnalystOpinions": 31,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 79,
+    "halten_pct": 21,
+    "verkaufen_pct": 0,
+    "total": 33
+   }
   },
   "ARM": {
-   "trailingPE": 257.05154,
-   "forwardPE": 81.47488,
-   "priceToBook": 30.855091,
+   "trailingPE": 252.43298,
+   "forwardPE": 80.01098,
+   "priceToBook": 30.300705,
    "profitMargins": 0.20247999,
    "operatingMargins": 0.07603,
    "revenueGrowth": 0.224,
@@ -320,12 +404,18 @@
    "targetMeanPrice": 286.0842,
    "numberOfAnalystOpinions": 38,
    "recommendationKey": "buy",
-   "isin": "US0420682058"
+   "isin": "US0420682058",
+   "rec_breakdown": {
+    "kaufen_pct": 66,
+    "halten_pct": 29,
+    "verkaufen_pct": 5,
+    "total": 41
+   }
   },
   "ASML": {
-   "trailingPE": 59.521915,
-   "forwardPE": 29.426683,
-   "priceToBook": 1478.711,
+   "trailingPE": 59.46755,
+   "forwardPE": 29.399805,
+   "priceToBook": 1477.3605,
    "profitMargins": 0.30114,
    "operatingMargins": 0.37057,
    "revenueGrowth": 0.213,
@@ -337,15 +427,21 @@
    "earningsTimestamp": 1791981000,
    "shortName": "ASML Holding N.V. - New York Re",
    "sector": "Technology",
-   "targetMeanPrice": 2197.966,
+   "targetMeanPrice": 2196.4258,
    "numberOfAnalystOpinions": 15,
    "recommendationKey": "strong_buy",
-   "isin": "USN070592100"
+   "isin": "USN070592100",
+   "rec_breakdown": {
+    "kaufen_pct": 89,
+    "halten_pct": 9,
+    "verkaufen_pct": 2,
+    "total": 44
+   }
   },
   "AVGO": {
-   "trailingPE": 60.212627,
-   "forwardPE": 18.558016,
-   "priceToBook": 19.667933,
+   "trailingPE": 60.34447,
+   "forwardPE": 18.598652,
+   "priceToBook": 19.710999,
    "profitMargins": 0.38848,
    "operatingMargins": 0.48988,
    "revenueGrowth": 0.479,
@@ -360,12 +456,18 @@
    "targetMeanPrice": 527.88446,
    "numberOfAnalystOpinions": 45,
    "recommendationKey": "strong_buy",
-   "isin": "CA11134P1009"
+   "isin": "CA11134P1009",
+   "rec_breakdown": {
+    "kaufen_pct": 92,
+    "halten_pct": 8,
+    "verkaufen_pct": 0,
+    "total": 48
+   }
   },
   "AXON": {
-   "trailingPE": 270.17572,
-   "forwardPE": 61.15137,
-   "priceToBook": 14.275417,
+   "trailingPE": 266.17572,
+   "forwardPE": 60.246017,
+   "priceToBook": 14.064067,
    "profitMargins": 0.06191,
    "operatingMargins": 0.0517,
    "revenueGrowth": 0.353,
@@ -380,12 +482,18 @@
    "targetMeanPrice": 693.40424,
    "numberOfAnalystOpinions": 19,
    "recommendationKey": "buy",
-   "isin": "US05464C1018"
+   "isin": "US05464C1018",
+   "rec_breakdown": {
+    "kaufen_pct": 86,
+    "halten_pct": 10,
+    "verkaufen_pct": 5,
+    "total": 21
+   }
   },
   "AXP": {
-   "trailingPE": 20.612492,
-   "forwardPE": 16.898937,
-   "priceToBook": 6.692921,
+   "trailingPE": 20.249243,
+   "forwardPE": 16.601131,
+   "priceToBook": 6.574973,
    "profitMargins": 0.16141,
    "operatingMargins": 0.2032,
    "revenueGrowth": 0.128,
@@ -400,12 +508,18 @@
    "targetMeanPrice": 375.8628,
    "numberOfAnalystOpinions": 25,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 50,
+    "halten_pct": 47,
+    "verkaufen_pct": 3,
+    "total": 30
+   }
   },
   "AZN": {
-   "trailingPE": 24.693113,
-   "forwardPE": 14.5202465,
-   "priceToBook": 5.0868106,
+   "trailingPE": 24.44536,
+   "forwardPE": 14.37456,
+   "priceToBook": 5.035773,
    "profitMargins": 0.17021999,
    "operatingMargins": 0.23459,
    "revenueGrowth": 0.064,
@@ -420,12 +534,18 @@
    "targetMeanPrice": 213.69,
    "numberOfAnalystOpinions": 10,
    "recommendationKey": "strong_buy",
-   "isin": "GB0009895292"
+   "isin": "GB0009895292",
+   "rec_breakdown": {
+    "kaufen_pct": 90,
+    "halten_pct": 10,
+    "verkaufen_pct": 0,
+    "total": 10
+   }
   },
   "BA": {
-   "trailingPE": 79.928055,
-   "forwardPE": 53.921043,
-   "priceToBook": 28.797304,
+   "trailingPE": 78.87975,
+   "forwardPE": 53.213837,
+   "priceToBook": 28.41961,
    "profitMargins": 0.025910001,
    "operatingMargins": 4.0000003e-05,
    "revenueGrowth": 0.08,
@@ -440,12 +560,18 @@
    "targetMeanPrice": 274.84616,
    "numberOfAnalystOpinions": 26,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 82,
+    "halten_pct": 18,
+    "verkaufen_pct": 0,
+    "total": 28
+   }
   },
   "BAS.DE": {
-   "trailingPE": 21.32773,
-   "forwardPE": 17.261078,
-   "priceToBook": 1.2119764,
+   "trailingPE": 21.47899,
+   "forwardPE": 17.383497,
+   "priceToBook": 1.2205721,
    "profitMargins": 0.094239995,
    "operatingMargins": 0.05184,
    "revenueGrowth": 0.164,
@@ -460,12 +586,18 @@
    "targetMeanPrice": 52.59524,
    "numberOfAnalystOpinions": 21,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 57,
+    "halten_pct": 19,
+    "verkaufen_pct": 24,
+    "total": 21
+   }
   },
   "BAYN.DE": {
    "trailingPE": null,
-   "forwardPE": 10.111828,
-   "priceToBook": 1.602298,
+   "forwardPE": 10.145359,
+   "priceToBook": 1.6076113,
    "profitMargins": -0.0383,
    "operatingMargins": 0.09189,
    "revenueGrowth": 0.012,
@@ -480,12 +612,18 @@
    "targetMeanPrice": 56.91667,
    "numberOfAnalystOpinions": 18,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 72,
+    "halten_pct": 22,
+    "verkaufen_pct": 6,
+    "total": 18
+   }
   },
   "BEI.DE": {
-   "trailingPE": 18.255814,
-   "forwardPE": 19.292873,
-   "priceToBook": 1.9020619,
+   "trailingPE": 18.24186,
+   "forwardPE": 19.278128,
+   "priceToBook": 1.9006082,
    "profitMargins": 0.097550005,
    "operatingMargins": 0.15468,
    "revenueGrowth": -0.045,
@@ -500,12 +638,18 @@
    "targetMeanPrice": 82.36842,
    "numberOfAnalystOpinions": 19,
    "recommendationKey": "hold",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 35,
+    "halten_pct": 50,
+    "verkaufen_pct": 15,
+    "total": 20
+   }
   },
   "BIIB": {
-   "trailingPE": 39.353462,
-   "forwardPE": 13.3980465,
-   "priceToBook": 1.7362275,
+   "trailingPE": 39.170513,
+   "forwardPE": 13.335761,
+   "priceToBook": 1.7281561,
    "profitMargins": 0.083229996,
    "operatingMargins": 0.25058,
    "revenueGrowth": 0.034,
@@ -520,12 +664,18 @@
    "targetMeanPrice": 235.57484,
    "numberOfAnalystOpinions": 31,
    "recommendationKey": "buy",
-   "isin": "US09062X1037"
+   "isin": "US09062X1037",
+   "rec_breakdown": {
+    "kaufen_pct": 66,
+    "halten_pct": 31,
+    "verkaufen_pct": 3,
+    "total": 35
+   }
   },
   "BKNG": {
-   "trailingPE": 23.640398,
-   "forwardPE": 17.210188,
-   "priceToBook": -14.972586,
+   "trailingPE": 23.590454,
+   "forwardPE": 17.173828,
+   "priceToBook": -14.940953,
    "profitMargins": 0.25527,
    "operatingMargins": 0.34412,
    "revenueGrowth": 0.081,
@@ -540,12 +690,18 @@
    "targetMeanPrice": 237.80556,
    "numberOfAnalystOpinions": 36,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 79,
+    "halten_pct": 21,
+    "verkaufen_pct": 0,
+    "total": 38
+   }
   },
   "BKR": {
-   "trailingPE": 20.73312,
-   "forwardPE": 20.399965,
-   "priceToBook": 3.2140367,
+   "trailingPE": 20.655949,
+   "forwardPE": 20.324032,
+   "priceToBook": 3.2020733,
    "profitMargins": 0.111669995,
    "operatingMargins": 0.1283,
    "revenueGrowth": -0.024,
@@ -560,12 +716,18 @@
    "targetMeanPrice": 71.91304,
    "numberOfAnalystOpinions": 23,
    "recommendationKey": "buy",
-   "isin": "AR0302010498"
+   "isin": "AR0302010498",
+   "rec_breakdown": {
+    "kaufen_pct": 79,
+    "halten_pct": 17,
+    "verkaufen_pct": 4,
+    "total": 24
+   }
   },
   "BMW.DE": {
-   "trailingPE": 5.599615,
-   "forwardPE": 6.336241,
-   "priceToBook": 0.36541784,
+   "trailingPE": 5.6015396,
+   "forwardPE": 6.338419,
+   "priceToBook": 0.36554345,
    "profitMargins": 0.04923,
    "operatingMargins": 0.05154,
    "revenueGrowth": -0.079,
@@ -580,12 +742,18 @@
    "targetMeanPrice": 72.62,
    "numberOfAnalystOpinions": 20,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 45,
+    "halten_pct": 41,
+    "verkaufen_pct": 14,
+    "total": 22
+   }
   },
   "BNR.DE": {
-   "trailingPE": 23.722221,
-   "forwardPE": 14.294732,
-   "priceToBook": 1.9466605,
+   "trailingPE": 23.777777,
+   "forwardPE": 14.328209,
+   "priceToBook": 1.9512194,
    "profitMargins": 0.02406,
    "operatingMargins": 0.071550004,
    "revenueGrowth": 0.102,
@@ -600,12 +768,18 @@
    "targetMeanPrice": 57.42857,
    "numberOfAnalystOpinions": 14,
    "recommendationKey": "hold",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 14,
+    "halten_pct": 71,
+    "verkaufen_pct": 14,
+    "total": 14
+   }
   },
   "CAT": {
-   "trailingPE": 35.088135,
-   "forwardPE": 25.282534,
-   "priceToBook": 19.343256,
+   "trailingPE": 34.754513,
+   "forwardPE": 25.042145,
+   "priceToBook": 19.15934,
    "profitMargins": 0.14511,
    "operatingMargins": 0.22183001,
    "revenueGrowth": 0.24,
@@ -620,12 +794,18 @@
    "targetMeanPrice": 979.2196,
    "numberOfAnalystOpinions": 26,
    "recommendationKey": "buy",
-   "isin": "US1491231015"
+   "isin": "US1491231015",
+   "rec_breakdown": {
+    "kaufen_pct": 50,
+    "halten_pct": 43,
+    "verkaufen_pct": 7,
+    "total": 28
+   }
   },
   "CBK.DE": {
-   "trailingPE": 14.911878,
-   "forwardPE": 10.180832,
-   "priceToBook": 1.2457987,
+   "trailingPE": 14.89272,
+   "forwardPE": 10.167753,
+   "priceToBook": 1.2441983,
    "profitMargins": 0.26416,
    "operatingMargins": 0.4366,
    "revenueGrowth": 0.101,
@@ -640,12 +820,18 @@
    "targetMeanPrice": 40.83846,
    "numberOfAnalystOpinions": 13,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 54,
+    "halten_pct": 38,
+    "verkaufen_pct": 8,
+    "total": 13
+   }
   },
   "CCEP": {
-   "trailingPE": 20.754864,
-   "forwardPE": 18.75301,
-   "priceToBook": 4.9337215,
+   "trailingPE": 20.88035,
+   "forwardPE": 18.866392,
+   "priceToBook": 4.963551,
    "profitMargins": 0.09349,
    "operatingMargins": 0.134,
    "revenueGrowth": 0.044,
@@ -657,15 +843,21 @@
    "earningsTimestamp": 1785846600,
    "shortName": "Coca-Cola Europacific Partners ",
    "sector": "Consumer Defensive",
-   "targetMeanPrice": 113.74434,
+   "targetMeanPrice": 113.651344,
    "numberOfAnalystOpinions": 11,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 67,
+    "halten_pct": 33,
+    "verkaufen_pct": 0,
+    "total": 12
+   }
   },
   "CDNS": {
-   "trailingPE": 62.496033,
-   "forwardPE": 33.031902,
-   "priceToBook": 12.648784,
+   "trailingPE": 62.309525,
+   "forwardPE": 32.933327,
+   "priceToBook": 12.611035,
    "profitMargins": 0.23605,
    "operatingMargins": 0.28575,
    "revenueGrowth": 0.242,
@@ -680,12 +872,18 @@
    "targetMeanPrice": 403.93927,
    "numberOfAnalystOpinions": 27,
    "recommendationKey": "strong_buy",
-   "isin": "US1273871087"
+   "isin": "US1273871087",
+   "rec_breakdown": {
+    "kaufen_pct": 88,
+    "halten_pct": 12,
+    "verkaufen_pct": 0,
+    "total": 25
+   }
   },
   "CDW": {
-   "trailingPE": 16.510227,
-   "forwardPE": 11.49326,
-   "priceToBook": 7.0395074,
+   "trailingPE": 16.77918,
+   "forwardPE": 11.680487,
+   "priceToBook": 7.1541815,
    "profitMargins": 0.04597,
    "operatingMargins": 0.07345,
    "revenueGrowth": 0.1,
@@ -700,12 +898,18 @@
    "targetMeanPrice": 155.88889,
    "numberOfAnalystOpinions": 9,
    "recommendationKey": "buy",
-   "isin": "US12514G1085"
+   "isin": "US12514G1085",
+   "rec_breakdown": {
+    "kaufen_pct": 70,
+    "halten_pct": 30,
+    "verkaufen_pct": 0,
+    "total": 10
+   }
   },
   "CEG": {
-   "trailingPE": 26.730207,
-   "forwardPE": 20.603125,
-   "priceToBook": 3.0383673,
+   "trailingPE": 26.848486,
+   "forwardPE": 20.69429,
+   "priceToBook": 3.0518117,
    "profitMargins": 0.110810004,
    "operatingMargins": 0.086619996,
    "revenueGrowth": 0.23,
@@ -720,12 +924,18 @@
    "targetMeanPrice": 347.504,
    "numberOfAnalystOpinions": 20,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 86,
+    "halten_pct": 14,
+    "verkaufen_pct": 0,
+    "total": 22
+   }
   },
   "CHTR": {
-   "trailingPE": 3.968506,
-   "forwardPE": 3.4571571,
-   "priceToBook": 1.0728108,
+   "trailingPE": 3.9122853,
+   "forwardPE": 3.4081805,
+   "priceToBook": 1.0576125,
    "profitMargins": 0.09052,
    "operatingMargins": 0.23503,
    "revenueGrowth": -0.017,
@@ -740,12 +950,18 @@
    "targetMeanPrice": 184.41176,
    "numberOfAnalystOpinions": 17,
    "recommendationKey": "none",
-   "isin": "US16119P1084"
+   "isin": "US16119P1084",
+   "rec_breakdown": {
+    "kaufen_pct": 24,
+    "halten_pct": 52,
+    "verkaufen_pct": 24,
+    "total": 21
+   }
   },
   "CMCSA": {
-   "trailingPE": 8.522436,
-   "forwardPE": 7.3407817,
-   "priceToBook": 1.0505314,
+   "trailingPE": 8.532052,
+   "forwardPE": 7.349064,
+   "priceToBook": 1.0517167,
    "profitMargins": 0.08966,
    "operatingMargins": 0.17233999,
    "revenueGrowth": -0.012,
@@ -760,12 +976,18 @@
    "targetMeanPrice": 30.08136,
    "numberOfAnalystOpinions": 22,
    "recommendationKey": "hold",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 32,
+    "halten_pct": 57,
+    "verkaufen_pct": 11,
+    "total": 28
+   }
   },
   "CON.DE": {
    "trailingPE": null,
-   "forwardPE": 10.532157,
-   "priceToBook": 3.225131,
+   "forwardPE": 10.509368,
+   "priceToBook": 3.2184675,
    "profitMargins": -0.01408,
    "operatingMargins": 0.14337,
    "revenueGrowth": -0.113,
@@ -780,12 +1002,18 @@
    "targetMeanPrice": 77.625,
    "numberOfAnalystOpinions": 12,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 54,
+    "halten_pct": 46,
+    "verkaufen_pct": 0,
+    "total": 13
+   }
   },
   "COST": {
-   "trailingPE": 46.847816,
-   "forwardPE": 41.165417,
-   "priceToBook": 25.021193,
+   "trailingPE": 47.199146,
+   "forwardPE": 41.474133,
+   "priceToBook": 25.208836,
    "profitMargins": 0.0301,
    "operatingMargins": 0.036730003,
    "revenueGrowth": 0.215,
@@ -800,12 +1028,18 @@
    "targetMeanPrice": 1077.3143,
    "numberOfAnalystOpinions": 35,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 59,
+    "halten_pct": 36,
+    "verkaufen_pct": 5,
+    "total": 39
+   }
   },
   "CPRT": {
-   "trailingPE": 20.850931,
-   "forwardPE": 19.947353,
-   "priceToBook": 3.5422602,
+   "trailingPE": 21.155281,
+   "forwardPE": 20.238514,
+   "priceToBook": 3.5939643,
    "profitMargins": 0.33481997,
    "operatingMargins": 0.37530997,
    "revenueGrowth": 0.021,
@@ -820,12 +1054,18 @@
    "targetMeanPrice": 40.3,
    "numberOfAnalystOpinions": 10,
    "recommendationKey": "buy",
-   "isin": "US2172041061"
+   "isin": "US2172041061",
+   "rec_breakdown": {
+    "kaufen_pct": 54,
+    "halten_pct": 38,
+    "verkaufen_pct": 8,
+    "total": 13
+   }
   },
   "CRM": {
-   "trailingPE": 22.722162,
-   "forwardPE": 13.280526,
-   "priceToBook": 4.930265,
+   "trailingPE": 22.70783,
+   "forwardPE": 13.272149,
+   "priceToBook": 4.927155,
    "profitMargins": 0.18733,
    "operatingMargins": 0.218,
    "revenueGrowth": 0.133,
@@ -840,12 +1080,18 @@
    "targetMeanPrice": 243.0798,
    "numberOfAnalystOpinions": 52,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 73,
+    "halten_pct": 24,
+    "verkaufen_pct": 4,
+    "total": 51
+   }
   },
   "CRWD": {
    "trailingPE": null,
-   "forwardPE": 126.110085,
-   "priceToBook": 43.43441,
+   "forwardPE": 126.44822,
+   "priceToBook": 43.550865,
    "profitMargins": -0.00598,
    "operatingMargins": -0.022079999,
    "revenueGrowth": 0.256,
@@ -860,12 +1106,18 @@
    "targetMeanPrice": 207.7,
    "numberOfAnalystOpinions": 50,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 75,
+    "halten_pct": 23,
+    "verkaufen_pct": 2,
+    "total": 53
+   }
   },
   "CSCO": {
-   "trailingPE": 33.367783,
-   "forwardPE": 19.809555,
-   "priceToBook": 8.621015,
+   "trailingPE": 33.474163,
+   "forwardPE": 19.872711,
+   "priceToBook": 8.6484995,
    "profitMargins": 0.20951,
    "operatingMargins": 0.27701,
    "revenueGrowth": 0.176,
@@ -880,12 +1132,18 @@
    "targetMeanPrice": 136.04546,
    "numberOfAnalystOpinions": 22,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 62,
+    "halten_pct": 38,
+    "verkaufen_pct": 0,
+    "total": 26
+   }
   },
   "CSGP": {
-   "trailingPE": 176.57895,
-   "forwardPE": 19.446007,
-   "priceToBook": 1.7121714,
+   "trailingPE": 182.99998,
+   "forwardPE": 19.092442,
+   "priceToBook": 1.6810411,
    "profitMargins": 0.02081,
    "operatingMargins": 0.082159996,
    "revenueGrowth": 0.184,
@@ -900,12 +1158,18 @@
    "targetMeanPrice": 37.1,
    "numberOfAnalystOpinions": 20,
    "recommendationKey": "buy",
-   "isin": "US22160N1090"
+   "isin": "US22160N1090",
+   "rec_breakdown": {
+    "kaufen_pct": 57,
+    "halten_pct": 38,
+    "verkaufen_pct": 5,
+    "total": 21
+   }
   },
   "CSX": {
-   "trailingPE": 29.328487,
-   "forwardPE": 22.207695,
-   "priceToBook": 6.6357536,
+   "trailingPE": 29.51744,
+   "forwardPE": 22.350773,
+   "priceToBook": 6.6785054,
    "profitMargins": 0.22208999,
    "operatingMargins": 0.38424,
    "revenueGrowth": 0.101,
@@ -920,12 +1184,18 @@
    "targetMeanPrice": 53.14088,
    "numberOfAnalystOpinions": 23,
    "recommendationKey": "buy",
-   "isin": "US1264081035"
+   "isin": "US1264081035",
+   "rec_breakdown": {
+    "kaufen_pct": 68,
+    "halten_pct": 24,
+    "verkaufen_pct": 8,
+    "total": 25
+   }
   },
   "CTAS": {
-   "trailingPE": 41.19145,
-   "forwardPE": 33.089504,
-   "priceToBook": 15.745426,
+   "trailingPE": 41.270878,
+   "forwardPE": 33.153313,
+   "priceToBook": 15.775788,
    "profitMargins": 0.17754,
    "operatingMargins": 0.23688,
    "revenueGrowth": 0.089,
@@ -940,12 +1210,18 @@
    "targetMeanPrice": 216.3125,
    "numberOfAnalystOpinions": 16,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 50,
+    "halten_pct": 45,
+    "verkaufen_pct": 5,
+    "total": 20
+   }
   },
   "CTSH": {
-   "trailingPE": 12.980687,
-   "forwardPE": 9.580162,
-   "priceToBook": 1.8905488,
+   "trailingPE": 13.096567,
+   "forwardPE": 9.665685,
+   "priceToBook": 1.9074259,
    "profitMargins": 0.10258,
    "operatingMargins": 0.17479,
    "revenueGrowth": 0.045,
@@ -960,12 +1236,18 @@
    "targetMeanPrice": 63.942,
    "numberOfAnalystOpinions": 25,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 45,
+    "halten_pct": 55,
+    "verkaufen_pct": 0,
+    "total": 29
+   }
   },
   "CVX": {
-   "trailingPE": 20.038498,
-   "forwardPE": 15.74122,
-   "priceToBook": 2.1508265,
+   "trailingPE": 19.955072,
+   "forwardPE": 15.675686,
+   "priceToBook": 2.141872,
    "profitMargins": 0.09834,
    "operatingMargins": 0.21866,
    "revenueGrowth": 0.535,
@@ -980,12 +1262,18 @@
    "targetMeanPrice": 216.83333,
    "numberOfAnalystOpinions": 24,
    "recommendationKey": "buy",
-   "isin": "ARDEUT110087"
+   "isin": "ARDEUT110087",
+   "rec_breakdown": {
+    "kaufen_pct": 80,
+    "halten_pct": 16,
+    "verkaufen_pct": 4,
+    "total": 25
+   }
   },
   "DASH": {
-   "trailingPE": 113.802086,
-   "forwardPE": 27.52964,
-   "priceToBook": 9.541902,
+   "trailingPE": 115.39063,
+   "forwardPE": 27.913921,
+   "priceToBook": 9.675095,
    "profitMargins": 0.05292,
    "operatingMargins": 0.03862,
    "revenueGrowth": 0.356,
@@ -1000,12 +1288,18 @@
    "targetMeanPrice": 251.94048,
    "numberOfAnalystOpinions": 42,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 77,
+    "halten_pct": 23,
+    "verkaufen_pct": 0,
+    "total": 44
+   }
   },
   "DB1.DE": {
-   "trailingPE": 24.089733,
-   "forwardPE": 20.527887,
-   "priceToBook": 4.860555,
+   "trailingPE": 24.132874,
+   "forwardPE": 20.56465,
+   "priceToBook": 4.8692594,
    "profitMargins": 0.27294,
    "operatingMargins": 0.41948003,
    "revenueGrowth": 0.117,
@@ -1020,12 +1314,18 @@
    "targetMeanPrice": 290.25,
    "numberOfAnalystOpinions": 12,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 67,
+    "halten_pct": 33,
+    "verkaufen_pct": 0,
+    "total": 12
+   }
   },
   "DBK.DE": {
-   "trailingPE": 9.8753805,
-   "forwardPE": 8.488371,
-   "priceToBook": 0.77449346,
+   "trailingPE": 9.889058,
+   "forwardPE": 8.500127,
+   "priceToBook": 0.77556616,
    "profitMargins": 0.22715001,
    "operatingMargins": 0.33400002,
    "revenueGrowth": 0.087,
@@ -1040,12 +1340,18 @@
    "targetMeanPrice": 33.43139,
    "numberOfAnalystOpinions": 18,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 44,
+    "halten_pct": 56,
+    "verkaufen_pct": 0,
+    "total": 18
+   }
   },
   "DDOG": {
-   "trailingPE": 476.89795,
-   "forwardPE": 78.72068,
-   "priceToBook": 20.849392,
+   "trailingPE": 477.40814,
+   "forwardPE": 78.8049,
+   "priceToBook": 20.871698,
    "profitMargins": 0.044770002,
    "operatingMargins": 0.00666,
    "revenueGrowth": 0.356,
@@ -1060,12 +1366,18 @@
    "targetMeanPrice": 285.1802,
    "numberOfAnalystOpinions": 46,
    "recommendationKey": "strong_buy",
-   "isin": "US23804L1035"
+   "isin": "US23804L1035",
+   "rec_breakdown": {
+    "kaufen_pct": 89,
+    "halten_pct": 7,
+    "verkaufen_pct": 4,
+    "total": 46
+   }
   },
   "DHL.DE": {
-   "trailingPE": 16.859756,
-   "forwardPE": 14.555772,
-   "priceToBook": 2.754121,
+   "trailingPE": 16.817074,
+   "forwardPE": 14.518923,
+   "priceToBook": 2.7471488,
    "profitMargins": 0.04344,
    "operatingMargins": 0.08329,
    "revenueGrowth": 0.128,
@@ -1080,12 +1392,18 @@
    "targetMeanPrice": 54.55556,
    "numberOfAnalystOpinions": 18,
    "recommendationKey": "hold",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 20,
+    "halten_pct": 65,
+    "verkaufen_pct": 15,
+    "total": 20
+   }
   },
   "DIS": {
-   "trailingPE": 22.027836,
-   "forwardPE": 14.379412,
-   "priceToBook": 1.6797427,
+   "trailingPE": 22.214434,
+   "forwardPE": 14.50122,
+   "priceToBook": 1.6939719,
    "profitMargins": 0.086990006,
    "operatingMargins": 0.19301,
    "revenueGrowth": 0.068,
@@ -1100,12 +1418,18 @@
    "targetMeanPrice": 127.71935,
    "numberOfAnalystOpinions": 31,
    "recommendationKey": "strong_buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 91,
+    "halten_pct": 6,
+    "verkaufen_pct": 3,
+    "total": 32
+   }
   },
   "DTE.DE": {
-   "trailingPE": 16.2191,
-   "forwardPE": 11.3546095,
-   "priceToBook": 2.3070161,
+   "trailingPE": 16.25281,
+   "forwardPE": 11.378207,
+   "priceToBook": 2.3118107,
    "profitMargins": 0.07013,
    "operatingMargins": 0.23536,
    "revenueGrowth": 0.043,
@@ -1120,12 +1444,18 @@
    "targetMeanPrice": 37.1,
    "numberOfAnalystOpinions": 18,
    "recommendationKey": "strong_buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 100,
+    "halten_pct": 0,
+    "verkaufen_pct": 0,
+    "total": 18
+   }
   },
   "DTG.DE": {
-   "trailingPE": 31.289654,
-   "forwardPE": 9.55351,
-   "priceToBook": 1.5281239,
+   "trailingPE": 31.282759,
+   "forwardPE": 9.551404,
+   "priceToBook": 1.5277871,
    "profitMargins": 0.057239998,
    "operatingMargins": 0.07062,
    "revenueGrowth": 0.053,
@@ -1140,12 +1470,18 @@
    "targetMeanPrice": 50.58889,
    "numberOfAnalystOpinions": 18,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 67,
+    "halten_pct": 22,
+    "verkaufen_pct": 11,
+    "total": 18
+   }
   },
   "DXCM": {
-   "trailingPE": 35.39526,
-   "forwardPE": 28.660954,
-   "priceToBook": 12.892312,
+   "trailingPE": 35.8498,
+   "forwardPE": 29.029015,
+   "priceToBook": 13.057875,
    "profitMargins": 0.20118,
    "operatingMargins": 0.24327,
    "revenueGrowth": 0.131,
@@ -1160,12 +1496,18 @@
    "targetMeanPrice": 94.12,
    "numberOfAnalystOpinions": 25,
    "recommendationKey": "strong_buy",
-   "isin": "US2521311074"
+   "isin": "US2521311074",
+   "rec_breakdown": {
+    "kaufen_pct": 89,
+    "halten_pct": 11,
+    "verkaufen_pct": 0,
+    "total": 28
+   }
   },
   "ENR.DE": {
-   "trailingPE": 49.326862,
-   "forwardPE": 24.634054,
-   "priceToBook": 12.090108,
+   "trailingPE": 49.54693,
+   "forwardPE": 24.743956,
+   "priceToBook": 12.144047,
    "profitMargins": 0.064330004,
    "operatingMargins": 0.13017,
    "revenueGrowth": 0.175,
@@ -1180,12 +1522,18 @@
    "targetMeanPrice": 196.9164,
    "numberOfAnalystOpinions": 25,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 76,
+    "halten_pct": 16,
+    "verkaufen_pct": 8,
+    "total": 25
+   }
   },
   "EOAN.DE": {
-   "trailingPE": 13.461241,
-   "forwardPE": 13.927431,
-   "priceToBook": 2.1390736,
+   "trailingPE": 13.643412,
+   "forwardPE": 14.1159115,
+   "priceToBook": 2.1680217,
    "profitMargins": 0.044889998,
    "operatingMargins": 0.050329998,
    "revenueGrowth": -0.005,
@@ -1200,12 +1548,18 @@
    "targetMeanPrice": 20.63035,
    "numberOfAnalystOpinions": 17,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 59,
+    "halten_pct": 41,
+    "verkaufen_pct": 0,
+    "total": 17
+   }
   },
   "EXC": {
-   "trailingPE": 16.621323,
-   "forwardPE": 14.903281,
-   "priceToBook": 1.5714285,
+   "trailingPE": 16.770222,
+   "forwardPE": 15.036789,
+   "priceToBook": 1.5855057,
    "profitMargins": 0.10989001,
    "operatingMargins": 0.16590999,
    "revenueGrowth": 0.099,
@@ -1220,12 +1574,18 @@
    "targetMeanPrice": 49.0,
    "numberOfAnalystOpinions": 17,
    "recommendationKey": "hold",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 19,
+    "halten_pct": 71,
+    "verkaufen_pct": 10,
+    "total": 21
+   }
   },
   "FANG": {
-   "trailingPE": 41.074856,
-   "forwardPE": 11.832729,
-   "priceToBook": 1.5842112,
+   "trailingPE": 41.330135,
+   "forwardPE": 11.906269,
+   "priceToBook": 1.5940571,
    "profitMargins": 0.09029,
    "operatingMargins": 0.48466998,
    "revenueGrowth": 0.525,
@@ -1240,12 +1600,18 @@
    "targetMeanPrice": 232.0357,
    "numberOfAnalystOpinions": 28,
    "recommendationKey": "strong_buy",
-   "isin": "US25278X1090"
+   "isin": "US25278X1090",
+   "rec_breakdown": {
+    "kaufen_pct": 90,
+    "halten_pct": 10,
+    "verkaufen_pct": 0,
+    "total": 29
+   }
   },
   "FAST": {
-   "trailingPE": 43.735043,
-   "forwardPE": 36.556267,
-   "priceToBook": 14.430344,
+   "trailingPE": 43.649574,
+   "forwardPE": 36.484825,
+   "priceToBook": 14.4021435,
    "profitMargins": 0.15454,
    "operatingMargins": 0.21023001,
    "revenueGrowth": 0.147,
@@ -1260,12 +1626,18 @@
    "targetMeanPrice": 48.53077,
    "numberOfAnalystOpinions": 13,
    "recommendationKey": "hold",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 33,
+    "halten_pct": 39,
+    "verkaufen_pct": 28,
+    "total": 18
+   }
   },
   "FRE.DE": {
-   "trailingPE": 16.67148,
-   "forwardPE": 11.677954,
-   "priceToBook": 1.3203717,
+   "trailingPE": 16.66065,
+   "forwardPE": 11.670368,
+   "priceToBook": 1.319514,
    "profitMargins": 0.06538,
    "operatingMargins": 0.106309995,
    "revenueGrowth": 0.052,
@@ -1280,12 +1652,18 @@
    "targetMeanPrice": 55.86154,
    "numberOfAnalystOpinions": 13,
    "recommendationKey": "strong_buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 93,
+    "halten_pct": 7,
+    "verkaufen_pct": 0,
+    "total": 14
+   }
   },
   "FTNT": {
-   "trailingPE": 53.899296,
-   "forwardPE": 40.572567,
-   "priceToBook": 72.15468,
+   "trailingPE": 53.950527,
+   "forwardPE": 40.611134,
+   "priceToBook": 72.22327,
    "profitMargins": 0.28173,
    "operatingMargins": 0.33595002,
    "revenueGrowth": 0.256,
@@ -1300,12 +1678,18 @@
    "targetMeanPrice": 160.86485,
    "numberOfAnalystOpinions": 37,
    "recommendationKey": "none",
-   "isin": "US34959E1091"
+   "isin": "US34959E1091",
+   "rec_breakdown": {
+    "kaufen_pct": 25,
+    "halten_pct": 66,
+    "verkaufen_pct": 9,
+    "total": 44
+   }
   },
   "GEHC": {
-   "trailingPE": 17.122118,
-   "forwardPE": 13.735115,
-   "priceToBook": 3.0582762,
+   "trailingPE": 17.223501,
+   "forwardPE": 13.816443,
+   "priceToBook": 3.0763848,
    "profitMargins": 0.093339995,
    "operatingMargins": 0.14976,
    "revenueGrowth": 0.058,
@@ -1320,12 +1704,18 @@
    "targetMeanPrice": 82.5,
    "numberOfAnalystOpinions": 18,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 74,
+    "halten_pct": 26,
+    "verkaufen_pct": 0,
+    "total": 19
+   }
   },
   "GFS": {
-   "trailingPE": 38.746,
-   "forwardPE": 18.437693,
-   "priceToBook": 2.2489088,
+   "trailingPE": 37.541252,
+   "forwardPE": 18.293144,
+   "priceToBook": 2.231278,
    "profitMargins": 0.103199996,
    "operatingMargins": 0.09742,
    "revenueGrowth": 0.058,
@@ -1340,12 +1730,18 @@
    "targetMeanPrice": 76.7619,
    "numberOfAnalystOpinions": 21,
    "recommendationKey": "buy",
-   "isin": "KYG393871085"
+   "isin": "KYG393871085",
+   "rec_breakdown": {
+    "kaufen_pct": 62,
+    "halten_pct": 33,
+    "verkaufen_pct": 5,
+    "total": 21
+   }
   },
   "GILD": {
    "trailingPE": null,
-   "forwardPE": 14.781208,
-   "priceToBook": 15.339909,
+   "forwardPE": 14.703369,
+   "priceToBook": 15.259128,
    "profitMargins": -0.10637999,
    "operatingMargins": 0.33679,
    "revenueGrowth": 0.102,
@@ -1360,12 +1756,18 @@
    "targetMeanPrice": 157.40741,
    "numberOfAnalystOpinions": 27,
    "recommendationKey": "buy",
-   "isin": "US3755581036"
+   "isin": "US3755581036",
+   "rec_breakdown": {
+    "kaufen_pct": 76,
+    "halten_pct": 24,
+    "verkaufen_pct": 0,
+    "total": 29
+   }
   },
   "GOOGL": {
-   "trailingPE": 17.182365,
-   "forwardPE": 23.156982,
-   "priceToBook": 6.7384467,
+   "trailingPE": 17.18988,
+   "forwardPE": 23.16711,
+   "priceToBook": 6.741394,
    "profitMargins": 0.54771,
    "operatingMargins": 0.34033,
    "revenueGrowth": 0.242,
@@ -1380,12 +1782,18 @@
    "targetMeanPrice": 428.06668,
    "numberOfAnalystOpinions": 54,
    "recommendationKey": "strong_buy",
-   "isin": "CA02080M1005"
+   "isin": "CA02080M1005",
+   "rec_breakdown": {
+    "kaufen_pct": 92,
+    "halten_pct": 8,
+    "verkaufen_pct": 0,
+    "total": 64
+   }
   },
   "GS": {
-   "trailingPE": 15.707427,
-   "forwardPE": 13.742219,
-   "priceToBook": 2.7762785,
+   "trailingPE": 15.704108,
+   "forwardPE": 13.739315,
+   "priceToBook": 2.775692,
    "profitMargins": 0.31039,
    "operatingMargins": 0.42176998,
    "revenueGrowth": 0.425,
@@ -1400,12 +1808,18 @@
    "targetMeanPrice": 1141.65,
    "numberOfAnalystOpinions": 20,
    "recommendationKey": "hold",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 28,
+    "halten_pct": 64,
+    "verkaufen_pct": 8,
+    "total": 25
+   }
   },
   "HD": {
-   "trailingPE": 23.391184,
-   "forwardPE": 20.826052,
-   "priceToBook": 25.984142,
+   "trailingPE": 23.617214,
+   "forwardPE": 21.027294,
+   "priceToBook": 26.23523,
    "profitMargins": 0.0841,
    "operatingMargins": 0.14288999,
    "revenueGrowth": 0.057,
@@ -1420,12 +1834,18 @@
    "targetMeanPrice": 377.1875,
    "numberOfAnalystOpinions": 32,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 58,
+    "halten_pct": 42,
+    "verkaufen_pct": 0,
+    "total": 36
+   }
   },
   "HEI.DE": {
-   "trailingPE": 13.8033085,
-   "forwardPE": 10.884096,
-   "priceToBook": 1.4963111,
+   "trailingPE": 13.833769,
+   "forwardPE": 10.908114,
+   "priceToBook": 1.4996132,
    "profitMargins": 0.091680005,
    "operatingMargins": 0.11246,
    "revenueGrowth": 0.017,
@@ -1440,12 +1860,18 @@
    "targetMeanPrice": 214.7,
    "numberOfAnalystOpinions": 20,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 75,
+    "halten_pct": 10,
+    "verkaufen_pct": 15,
+    "total": 20
+   }
   },
   "HEN3.DE": {
-   "trailingPE": 16.063831,
-   "forwardPE": 12.699085,
-   "priceToBook": 1.4592475,
+   "trailingPE": 16.029787,
+   "forwardPE": 12.672173,
+   "priceToBook": 1.456155,
    "profitMargins": 0.09359,
    "operatingMargins": 0.14987999,
    "revenueGrowth": -0.005,
@@ -1460,12 +1886,18 @@
    "targetMeanPrice": 78.97,
    "numberOfAnalystOpinions": 18,
    "recommendationKey": "hold",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 37,
+    "halten_pct": 42,
+    "verkaufen_pct": 21,
+    "total": 19
+   }
   },
   "HNR1.DE": {
-   "trailingPE": 11.241535,
-   "forwardPE": 10.546633,
-   "priceToBook": 2.2635746,
+   "trailingPE": 11.250565,
+   "forwardPE": 10.555104,
+   "priceToBook": 2.2653928,
    "profitMargins": 0.12060001,
    "operatingMargins": 0.14152999,
    "revenueGrowth": -0.233,
@@ -1480,12 +1912,18 @@
    "targetMeanPrice": 285.2857,
    "numberOfAnalystOpinions": 14,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 43,
+    "halten_pct": 50,
+    "verkaufen_pct": 7,
+    "total": 14
+   }
   },
   "HON": {
-   "trailingPE": 8.495963,
-   "forwardPE": 22.11266,
-   "priceToBook": 3.7782755,
+   "trailingPE": 8.513841,
+   "forwardPE": 22.159193,
+   "priceToBook": 3.7862263,
    "profitMargins": 0.21581,
    "operatingMargins": 0.20249,
    "revenueGrowth": 0.043,
@@ -1500,12 +1938,18 @@
    "targetMeanPrice": 262.9524,
    "numberOfAnalystOpinions": 21,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 62,
+    "halten_pct": 33,
+    "verkaufen_pct": 4,
+    "total": 24
+   }
   },
   "IBM": {
-   "trailingPE": 20.929901,
-   "forwardPE": 17.92073,
-   "priceToBook": 6.4504485,
+   "trailingPE": 20.922804,
+   "forwardPE": 17.914654,
+   "priceToBook": 6.448261,
    "profitMargins": 0.15522,
    "operatingMargins": 0.16548,
    "revenueGrowth": 0.011,
@@ -1520,12 +1964,18 @@
    "targetMeanPrice": 244.91217,
    "numberOfAnalystOpinions": 23,
    "recommendationKey": "buy",
-   "isin": "US4592001014"
+   "isin": "US4592001014",
+   "rec_breakdown": {
+    "kaufen_pct": 52,
+    "halten_pct": 40,
+    "verkaufen_pct": 8,
+    "total": 25
+   }
   },
   "IDXX": {
-   "trailingPE": 38.896194,
-   "forwardPE": 33.57587,
-   "priceToBook": 27.49083,
+   "trailingPE": 38.787544,
+   "forwardPE": 33.48208,
+   "priceToBook": 27.414038,
    "profitMargins": 0.25030002,
    "operatingMargins": 0.3498,
    "revenueGrowth": 0.097,
@@ -1540,12 +1990,18 @@
    "targetMeanPrice": 698.9231,
    "numberOfAnalystOpinions": 13,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 57,
+    "halten_pct": 36,
+    "verkaufen_pct": 7,
+    "total": 14
+   }
   },
   "IFX.DE": {
-   "trailingPE": 67.06098,
-   "forwardPE": 19.76252,
-   "priceToBook": 4.1154017,
+   "trailingPE": 67.54878,
+   "forwardPE": 19.906271,
+   "priceToBook": 4.145337,
    "profitMargins": 0.07774,
    "operatingMargins": 0.14238,
    "revenueGrowth": 0.126,
@@ -1560,12 +2016,18 @@
    "targetMeanPrice": 85.79167,
    "numberOfAnalystOpinions": 24,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 79,
+    "halten_pct": 21,
+    "verkaufen_pct": 0,
+    "total": 24
+   }
   },
   "INTC": {
    "trailingPE": null,
-   "forwardPE": 44.47756,
-   "priceToBook": 5.2272596,
+   "forwardPE": 44.256985,
+   "priceToBook": 5.201337,
    "profitMargins": -0.19794,
    "operatingMargins": 0.12189999,
    "revenueGrowth": 0.254,
@@ -1580,12 +2042,18 @@
    "targetMeanPrice": 114.87805,
    "numberOfAnalystOpinions": 41,
    "recommendationKey": "hold",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 29,
+    "halten_pct": 67,
+    "verkaufen_pct": 4,
+    "total": 48
+   }
   },
   "INTU": {
-   "trailingPE": 22.274422,
-   "forwardPE": 13.374078,
-   "priceToBook": 4.850828,
+   "trailingPE": 22.112944,
+   "forwardPE": 13.2771225,
+   "priceToBook": 4.815662,
    "profitMargins": 0.21907,
    "operatingMargins": 0.46974,
    "revenueGrowth": 0.104,
@@ -1600,12 +2068,18 @@
    "targetMeanPrice": 446.0182,
    "numberOfAnalystOpinions": 33,
    "recommendationKey": "buy",
-   "isin": "US4612021034"
+   "isin": "US4612021034",
+   "rec_breakdown": {
+    "kaufen_pct": 69,
+    "halten_pct": 26,
+    "verkaufen_pct": 6,
+    "total": 35
+   }
   },
   "ISRG": {
-   "trailingPE": 44.773396,
-   "forwardPE": 32.900803,
-   "priceToBook": 7.7357903,
+   "trailingPE": 44.379932,
+   "forwardPE": 32.611675,
+   "priceToBook": 7.667809,
    "profitMargins": 0.28445998,
    "operatingMargins": 0.33603,
    "revenueGrowth": 0.185,
@@ -1620,12 +2094,18 @@
    "targetMeanPrice": 478.00934,
    "numberOfAnalystOpinions": 30,
    "recommendationKey": "buy",
-   "isin": "US46120E6023"
+   "isin": "US46120E6023",
+   "rec_breakdown": {
+    "kaufen_pct": 73,
+    "halten_pct": 24,
+    "verkaufen_pct": 3,
+    "total": 33
+   }
   },
   "JNJ": {
-   "trailingPE": 31.696285,
-   "forwardPE": 22.173878,
-   "priceToBook": 7.7345257,
+   "trailingPE": 31.533102,
+   "forwardPE": 22.05972,
+   "priceToBook": 7.694706,
    "profitMargins": 0.21482,
    "operatingMargins": 0.2919,
    "revenueGrowth": 0.066,
@@ -1640,12 +2120,18 @@
    "targetMeanPrice": 272.5,
    "numberOfAnalystOpinions": 22,
    "recommendationKey": "buy",
-   "isin": "US4781601046"
+   "isin": "US4781601046",
+   "rec_breakdown": {
+    "kaufen_pct": 70,
+    "halten_pct": 26,
+    "verkaufen_pct": 4,
+    "total": 23
+   }
   },
   "JPM": {
-   "trailingPE": 15.246465,
-   "forwardPE": 14.224023,
-   "priceToBook": 2.6742954,
+   "trailingPE": 15.220102,
+   "forwardPE": 14.1994295,
+   "priceToBook": 2.6696713,
    "profitMargins": 0.34921002,
    "operatingMargins": 0.50394,
    "revenueGrowth": 0.304,
@@ -1660,12 +2146,18 @@
    "targetMeanPrice": 374.57144,
    "numberOfAnalystOpinions": 21,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 54,
+    "halten_pct": 42,
+    "verkaufen_pct": 4,
+    "total": 24
+   }
   },
   "KDP": {
-   "trailingPE": 31.515152,
-   "forwardPE": 12.312355,
-   "priceToBook": 1.6961131,
+   "trailingPE": 31.757576,
+   "forwardPE": 12.407065,
+   "priceToBook": 1.7091601,
    "profitMargins": 0.07103,
    "operatingMargins": 0.12888,
    "revenueGrowth": 0.756,
@@ -1680,12 +2172,18 @@
    "targetMeanPrice": 35.88235,
    "numberOfAnalystOpinions": 17,
    "recommendationKey": "buy",
-   "isin": "US49271V1008"
+   "isin": "US49271V1008",
+   "rec_breakdown": {
+    "kaufen_pct": 67,
+    "halten_pct": 33,
+    "verkaufen_pct": 0,
+    "total": 18
+   }
   },
   "KHC": {
    "trailingPE": null,
-   "forwardPE": 12.202583,
-   "priceToBook": 0.84093684,
+   "forwardPE": 12.226434,
+   "priceToBook": 0.8425805,
    "profitMargins": -0.13639,
    "operatingMargins": 0.1549,
    "revenueGrowth": -0.014,
@@ -1700,12 +2198,18 @@
    "targetMeanPrice": 25.02941,
    "numberOfAnalystOpinions": 17,
    "recommendationKey": "hold",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 5,
+    "halten_pct": 74,
+    "verkaufen_pct": 21,
+    "total": 19
+   }
   },
   "KLAC": {
-   "trailingPE": 51.569862,
-   "forwardPE": 28.503113,
-   "priceToBook": 42.194576,
+   "trailingPE": 51.230137,
+   "forwardPE": 28.315346,
+   "priceToBook": 38.475307,
    "profitMargins": 0.35574,
    "operatingMargins": 0.42486,
    "revenueGrowth": 0.152,
@@ -1720,12 +2224,18 @@
    "targetMeanPrice": 231.77779,
    "numberOfAnalystOpinions": 27,
    "recommendationKey": "buy",
-   "isin": "US4824801009"
+   "isin": "US4824801009",
+   "rec_breakdown": {
+    "kaufen_pct": 66,
+    "halten_pct": 34,
+    "verkaufen_pct": 0,
+    "total": 29
+   }
   },
   "KO": {
-   "trailingPE": 27.052553,
-   "forwardPE": 25.546026,
-   "priceToBook": 10.723128,
+   "trailingPE": 27.348349,
+   "forwardPE": 25.82535,
+   "priceToBook": 10.840376,
    "profitMargins": 0.28558,
    "operatingMargins": 0.34873,
    "revenueGrowth": 0.067,
@@ -1740,12 +2250,18 @@
    "targetMeanPrice": 94.69565,
    "numberOfAnalystOpinions": 23,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 79,
+    "halten_pct": 17,
+    "verkaufen_pct": 4,
+    "total": 24
+   }
   },
   "LIN": {
-   "trailingPE": 31.191738,
-   "forwardPE": 24.68408,
-   "priceToBook": 5.69912,
+   "trailingPE": 31.433828,
+   "forwardPE": 24.875664,
+   "priceToBook": 5.7433534,
    "profitMargins": 0.20435,
    "operatingMargins": 0.28119,
    "revenueGrowth": 0.093,
@@ -1760,12 +2276,18 @@
    "targetMeanPrice": 547.24,
    "numberOfAnalystOpinions": 25,
    "recommendationKey": "buy",
-   "isin": "IE000S9YS762"
+   "isin": "IE000S9YS762",
+   "rec_breakdown": {
+    "kaufen_pct": 78,
+    "halten_pct": 19,
+    "verkaufen_pct": 4,
+    "total": 27
+   }
   },
   "LRCX": {
-   "trailingPE": 56.630314,
-   "forwardPE": 26.509153,
-   "priceToBook": 30.738436,
+   "trailingPE": 57.133087,
+   "forwardPE": 26.744505,
+   "priceToBook": 31.011337,
    "profitMargins": 0.31272,
    "operatingMargins": 0.37390998,
    "revenueGrowth": 0.3,
@@ -1780,12 +2302,18 @@
    "targetMeanPrice": 371.35483,
    "numberOfAnalystOpinions": 31,
    "recommendationKey": "strong_buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 83,
+    "halten_pct": 17,
+    "verkaufen_pct": 0,
+    "total": 35
+   }
   },
   "LULU": {
-   "trailingPE": 9.474494,
-   "forwardPE": 10.397432,
-   "priceToBook": 2.774524,
+   "trailingPE": 9.444129,
+   "forwardPE": 10.36411,
+   "priceToBook": 2.7656322,
    "profitMargins": 0.13029,
    "operatingMargins": 0.11205,
    "revenueGrowth": 0.043,
@@ -1800,12 +2328,18 @@
    "targetMeanPrice": 127.92308,
    "numberOfAnalystOpinions": 26,
    "recommendationKey": "hold",
-   "isin": "US5500211090"
+   "isin": "US5500211090",
+   "rec_breakdown": {
+    "kaufen_pct": 3,
+    "halten_pct": 85,
+    "verkaufen_pct": 12,
+    "total": 34
+   }
   },
   "MAR": {
-   "trailingPE": 36.921246,
-   "forwardPE": 27.080767,
-   "priceToBook": -20.613863,
+   "trailingPE": 36.99793,
+   "forwardPE": 27.13701,
+   "priceToBook": -20.656675,
    "profitMargins": 0.35029998,
    "operatingMargins": 0.65276,
    "revenueGrowth": 0.111,
@@ -1820,12 +2354,18 @@
    "targetMeanPrice": 380.64,
    "numberOfAnalystOpinions": 25,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 48,
+    "halten_pct": 44,
+    "verkaufen_pct": 7,
+    "total": 27
+   }
   },
   "MBG.DE": {
-   "trailingPE": 8.475378,
-   "forwardPE": 6.502007,
-   "priceToBook": 0.45098615,
+   "trailingPE": 8.46875,
+   "forwardPE": 6.4969215,
+   "priceToBook": 0.4506334,
    "profitMargins": 0.03885,
    "operatingMargins": 0.06163,
    "revenueGrowth": -0.033,
@@ -1840,12 +2380,18 @@
    "targetMeanPrice": 57.15455,
    "numberOfAnalystOpinions": 22,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 52,
+    "halten_pct": 39,
+    "verkaufen_pct": 9,
+    "total": 23
+   }
   },
   "MCD": {
-   "trailingPE": 21.737804,
-   "forwardPE": 19.100452,
-   "priceToBook": -184.90665,
+   "trailingPE": 21.997969,
+   "forwardPE": 19.329052,
+   "priceToBook": -187.11964,
    "profitMargins": 0.3172,
    "operatingMargins": 0.46485,
    "revenueGrowth": 0.037,
@@ -1860,12 +2406,18 @@
    "targetMeanPrice": 316.0645,
    "numberOfAnalystOpinions": 31,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 56,
+    "halten_pct": 41,
+    "verkaufen_pct": 3,
+    "total": 34
+   }
   },
   "MCHP": {
-   "trailingPE": 115.24626,
-   "forwardPE": 16.893177,
-   "priceToBook": 6.499579,
+   "trailingPE": 113.62686,
+   "forwardPE": 16.6558,
+   "priceToBook": 6.408249,
    "profitMargins": 0.0934,
    "operatingMargins": 0.23958,
    "revenueGrowth": 0.38,
@@ -1880,12 +2432,18 @@
    "targetMeanPrice": 109.20833,
    "numberOfAnalystOpinions": 24,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 76,
+    "halten_pct": 24,
+    "verkaufen_pct": 0,
+    "total": 25
+   }
   },
   "MDLZ": {
-   "trailingPE": 38.90854,
-   "forwardPE": 18.987965,
-   "priceToBook": 3.067346,
+   "trailingPE": 39.30488,
+   "forwardPE": 19.181385,
+   "priceToBook": 3.0985916,
    "profitMargins": 0.08862001,
    "operatingMargins": 0.21978001,
    "revenueGrowth": 0.041,
@@ -1900,12 +2458,18 @@
    "targetMeanPrice": 69.13043,
    "numberOfAnalystOpinions": 23,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 62,
+    "halten_pct": 38,
+    "verkaufen_pct": 0,
+    "total": 24
+   }
   },
   "MELI": {
-   "trailingPE": 48.215645,
-   "forwardPE": 33.58462,
-   "priceToBook": 12.327943,
+   "trailingPE": 48.138195,
+   "forwardPE": 33.530674,
+   "priceToBook": 12.308141,
    "profitMargins": 0.052950002,
    "operatingMargins": 0.06716,
    "revenueGrowth": 0.498,
@@ -1920,12 +2484,18 @@
    "targetMeanPrice": 2256.5417,
    "numberOfAnalystOpinions": 24,
    "recommendationKey": "buy",
-   "isin": "US58733R1023"
+   "isin": "US58733R1023",
+   "rec_breakdown": {
+    "kaufen_pct": 79,
+    "halten_pct": 21,
+    "verkaufen_pct": 0,
+    "total": 24
+   }
   },
   "META": {
-   "trailingPE": 20.564995,
-   "forwardPE": 15.72684,
-   "priceToBook": 5.3237906,
+   "trailingPE": 20.625847,
+   "forwardPE": 15.7733755,
+   "priceToBook": 5.3395433,
    "profitMargins": 0.29834998,
    "operatingMargins": 0.34827,
    "revenueGrowth": 0.28,
@@ -1940,12 +2510,18 @@
    "targetMeanPrice": 754.14246,
    "numberOfAnalystOpinions": 57,
    "recommendationKey": "strong_buy",
-   "isin": "US30303M1027"
+   "isin": "US30303M1027",
+   "rec_breakdown": {
+    "kaufen_pct": 89,
+    "halten_pct": 11,
+    "verkaufen_pct": 0,
+    "total": 62
+   }
   },
   "MMM": {
-   "trailingPE": 31.742884,
-   "forwardPE": 18.244379,
-   "priceToBook": 31.166143,
+   "trailingPE": 31.980495,
+   "forwardPE": 18.446362,
+   "priceToBook": 31.51118,
    "profitMargins": 0.11902001,
    "operatingMargins": 0.20354,
    "revenueGrowth": 0.025,
@@ -1960,12 +2536,18 @@
    "targetMeanPrice": 185.57059,
    "numberOfAnalystOpinions": 17,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 50,
+    "halten_pct": 33,
+    "verkaufen_pct": 17,
+    "total": 18
+   }
   },
   "MNST": {
-   "trailingPE": 43.625,
-   "forwardPE": 36.0256,
-   "priceToBook": 9.856694,
+   "trailingPE": 44.129627,
+   "forwardPE": 36.442326,
+   "priceToBook": 9.970711,
    "profitMargins": 0.23079,
    "operatingMargins": 0.2918,
    "revenueGrowth": 0.202,
@@ -1980,12 +2562,18 @@
    "targetMeanPrice": 50.13043,
    "numberOfAnalystOpinions": 23,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 54,
+    "halten_pct": 42,
+    "verkaufen_pct": 4,
+    "total": 26
+   }
   },
   "MRK": {
-   "trailingPE": 120.264,
-   "forwardPE": 15.715296,
-   "priceToBook": 8.850229,
+   "trailingPE": 120.164,
+   "forwardPE": 15.702229,
+   "priceToBook": 8.842871,
    "profitMargins": 0.047659997,
    "operatingMargins": -0.00241,
    "revenueGrowth": 0.051,
@@ -2000,12 +2588,18 @@
    "targetMeanPrice": 146.53847,
    "numberOfAnalystOpinions": 26,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 71,
+    "halten_pct": 29,
+    "verkaufen_pct": 0,
+    "total": 28
+   }
   },
   "MRK.DE": {
-   "trailingPE": 23.242785,
-   "forwardPE": 15.529323,
-   "priceToBook": 1.9675193,
+   "trailingPE": 23.234297,
+   "forwardPE": 15.473331,
+   "priceToBook": 1.9668008,
    "profitMargins": 0.11214,
    "operatingMargins": 0.13857001,
    "revenueGrowth": 0.034,
@@ -2020,12 +2614,18 @@
    "targetMeanPrice": 151.14285,
    "numberOfAnalystOpinions": 14,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 43,
+    "halten_pct": 57,
+    "verkaufen_pct": 0,
+    "total": 14
+   }
   },
   "MRVL": {
-   "trailingPE": 83.30137,
-   "forwardPE": 38.919212,
-   "priceToBook": 11.691982,
+   "trailingPE": 80.811646,
+   "forwardPE": 37.755985,
+   "priceToBook": 11.34253,
    "profitMargins": 0.28986,
    "operatingMargins": 0.14479999,
    "revenueGrowth": 0.276,
@@ -2040,12 +2640,18 @@
    "targetMeanPrice": 259.9142,
    "numberOfAnalystOpinions": 40,
    "recommendationKey": "strong_buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 86,
+    "halten_pct": 14,
+    "verkaufen_pct": 0,
+    "total": 43
+   }
   },
   "MSFT": {
-   "trailingPE": 26.892044,
-   "forwardPE": 20.499905,
-   "priceToBook": 8.112986,
+   "trailingPE": 26.816917,
+   "forwardPE": 20.442636,
+   "priceToBook": 8.090322,
    "profitMargins": 0.40305,
    "operatingMargins": 0.45111,
    "revenueGrowth": 0.177,
@@ -2060,12 +2666,18 @@
    "targetMeanPrice": 569.5583,
    "numberOfAnalystOpinions": 53,
    "recommendationKey": "strong_buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 95,
+    "halten_pct": 5,
+    "verkaufen_pct": 0,
+    "total": 56
+   }
   },
   "MSTR": {
    "trailingPE": null,
-   "forwardPE": 2.2176197,
-   "priceToBook": 1.3204437,
+   "forwardPE": 2.2610629,
+   "priceToBook": 1.3463112,
    "profitMargins": 0.0,
    "operatingMargins": -68.081116,
    "revenueGrowth": 0.069,
@@ -2080,12 +2692,18 @@
    "targetMeanPrice": 229.07143,
    "numberOfAnalystOpinions": 14,
    "recommendationKey": "strong_buy",
-   "isin": "US66538H1041"
+   "isin": "US66538H1041",
+   "rec_breakdown": {
+    "kaufen_pct": 93,
+    "halten_pct": 7,
+    "verkaufen_pct": 0,
+    "total": 15
+   }
   },
   "MTX.DE": {
-   "trailingPE": 21.067905,
-   "forwardPE": 17.531412,
-   "priceToBook": 4.3044157,
+   "trailingPE": 20.963438,
+   "forwardPE": 17.44448,
+   "priceToBook": 4.283072,
    "profitMargins": 0.10204001,
    "operatingMargins": 0.11991999,
    "revenueGrowth": 0.167,
@@ -2100,12 +2718,18 @@
    "targetMeanPrice": 402.5,
    "numberOfAnalystOpinions": 20,
    "recommendationKey": "hold",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 50,
+    "halten_pct": 30,
+    "verkaufen_pct": 20,
+    "total": 20
+   }
   },
   "MU": {
-   "trailingPE": 21.410128,
-   "forwardPE": 6.1169677,
-   "priceToBook": 10.6144705,
+   "trailingPE": 21.426607,
+   "forwardPE": 6.1216755,
+   "priceToBook": 10.62264,
    "profitMargins": 0.55906,
    "operatingMargins": 0.80370003,
    "revenueGrowth": 3.457,
@@ -2114,18 +2738,24 @@
    "freeCashflow": 7639499776,
    "returnOnEquity": 0.66638,
    "dividendYield": 0.06,
-   "earningsTimestamp": null,
+   "earningsTimestamp": 1782331200,
    "shortName": "Micron Technology, Inc.",
    "sector": "Technology",
    "targetMeanPrice": 1501.9767,
    "numberOfAnalystOpinions": 43,
    "recommendationKey": "strong_buy",
-   "isin": "US5951121038"
+   "isin": "US5951121038",
+   "rec_breakdown": {
+    "kaufen_pct": 89,
+    "halten_pct": 11,
+    "verkaufen_pct": 0,
+    "total": 46
+   }
   },
   "MUV2.DE": {
-   "trailingPE": 9.486798,
-   "forwardPE": 9.863129,
-   "priceToBook": 1.9126524,
+   "trailingPE": 9.505393,
+   "forwardPE": 9.882461,
+   "priceToBook": 1.8905956,
    "profitMargins": 0.11163,
    "operatingMargins": 0.17333001,
    "revenueGrowth": 0.013,
@@ -2140,12 +2770,18 @@
    "targetMeanPrice": 550.71765,
    "numberOfAnalystOpinions": 17,
    "recommendationKey": "hold",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 29,
+    "halten_pct": 53,
+    "verkaufen_pct": 18,
+    "total": 17
+   }
   },
   "NFLX": {
-   "trailingPE": 25.26887,
-   "forwardPE": 21.01779,
-   "priceToBook": 11.097224,
+   "trailingPE": 25.292421,
+   "forwardPE": 21.03738,
+   "priceToBook": 11.107568,
    "profitMargins": 0.28219,
    "operatingMargins": 0.33381,
    "revenueGrowth": 0.134,
@@ -2160,12 +2796,18 @@
    "targetMeanPrice": 93.41556,
    "numberOfAnalystOpinions": 45,
    "recommendationKey": "buy",
-   "isin": "US64110L1061"
+   "isin": "US64110L1061",
+   "rec_breakdown": {
+    "kaufen_pct": 69,
+    "halten_pct": 31,
+    "verkaufen_pct": 0,
+    "total": 51
+   }
   },
   "NKE": {
-   "trailingPE": 18.732557,
-   "forwardPE": 17.536108,
-   "priceToBook": 4.017857,
+   "trailingPE": 18.751348,
+   "forwardPE": 17.553696,
+   "priceToBook": 4.0218873,
    "profitMargins": 0.066989996,
    "operatingMargins": 0.12687,
    "revenueGrowth": -0.011,
@@ -2180,12 +2822,18 @@
    "targetMeanPrice": 50.66471,
    "numberOfAnalystOpinions": 34,
    "recommendationKey": "hold",
-   "isin": "US6541061031"
+   "isin": "US6541061031",
+   "rec_breakdown": {
+    "kaufen_pct": 31,
+    "halten_pct": 62,
+    "verkaufen_pct": 8,
+    "total": 39
+   }
   },
   "NVDA": {
-   "trailingPE": 33.46554,
-   "forwardPE": 16.90175,
-   "priceToBook": 27.079308,
+   "trailingPE": 33.366768,
+   "forwardPE": 16.96283,
+   "priceToBook": 26.99938,
    "profitMargins": 0.62966,
    "operatingMargins": 0.65596,
    "revenueGrowth": 0.852,
@@ -2200,12 +2848,18 @@
    "targetMeanPrice": 302.82758,
    "numberOfAnalystOpinions": 58,
    "recommendationKey": "strong_buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 95,
+    "halten_pct": 3,
+    "verkaufen_pct": 2,
+    "total": 61
+   }
   },
   "NXPI": {
-   "trailingPE": 45.771633,
-   "forwardPE": 12.571629,
-   "priceToBook": 5.0343018,
+   "trailingPE": 45.118713,
+   "forwardPE": 12.392299,
+   "priceToBook": 4.962489,
    "profitMargins": 0.22564,
    "operatingMargins": 0.30406,
    "revenueGrowth": 0.195,
@@ -2220,12 +2874,18 @@
    "targetMeanPrice": 311.10345,
    "numberOfAnalystOpinions": 29,
    "recommendationKey": "none",
-   "isin": "NL0009538784"
+   "isin": "NL0009538784",
+   "rec_breakdown": {
+    "kaufen_pct": 73,
+    "halten_pct": 23,
+    "verkaufen_pct": 3,
+    "total": 30
+   }
   },
   "ODFL": {
-   "trailingPE": 38.826298,
-   "forwardPE": 30.462132,
-   "priceToBook": 9.229173,
+   "trailingPE": 38.90211,
+   "forwardPE": 30.521612,
+   "priceToBook": 9.247194,
    "profitMargins": 0.19443001,
    "operatingMargins": 0.28835,
    "revenueGrowth": 0.104,
@@ -2240,12 +2900,18 @@
    "targetMeanPrice": 231.68182,
    "numberOfAnalystOpinions": 22,
    "recommendationKey": "hold",
-   "isin": "US6795801009"
+   "isin": "US6795801009",
+   "rec_breakdown": {
+    "kaufen_pct": 35,
+    "halten_pct": 52,
+    "verkaufen_pct": 13,
+    "total": 23
+   }
   },
   "ON": {
-   "trailingPE": 49.929413,
-   "forwardPE": 16.869423,
-   "priceToBook": 4.119722,
+   "trailingPE": 49.019608,
+   "forwardPE": 16.56203,
+   "priceToBook": 4.044653,
    "profitMargins": 0.10168,
    "operatingMargins": 0.19532,
    "revenueGrowth": 0.092,
@@ -2260,12 +2926,18 @@
    "targetMeanPrice": 107.68,
    "numberOfAnalystOpinions": 25,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 45,
+    "halten_pct": 55,
+    "verkaufen_pct": 0,
+    "total": 29
+   }
   },
   "ORLY": {
-   "trailingPE": 28.031746,
-   "forwardPE": 24.178534,
-   "priceToBook": -39.261894,
+   "trailingPE": 28.414284,
+   "forwardPE": 24.508488,
+   "priceToBook": -39.797684,
    "profitMargins": 0.1427,
    "operatingMargins": 0.2015,
    "revenueGrowth": 0.081,
@@ -2280,12 +2952,18 @@
    "targetMeanPrice": 107.8,
    "numberOfAnalystOpinions": 25,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 82,
+    "halten_pct": 18,
+    "verkaufen_pct": 0,
+    "total": 28
+   }
   },
   "P911.DE": {
-   "trailingPE": 48.793476,
-   "forwardPE": 20.766064,
-   "priceToBook": 1.7893729,
+   "trailingPE": 47.924732,
+   "forwardPE": 20.618032,
+   "priceToBook": 1.7766174,
    "profitMargins": 0.02385,
    "operatingMargins": 0.08597,
    "revenueGrowth": -0.051,
@@ -2300,12 +2978,18 @@
    "targetMeanPrice": 45.7,
    "numberOfAnalystOpinions": 21,
    "recommendationKey": "hold",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 29,
+    "halten_pct": 52,
+    "verkaufen_pct": 19,
+    "total": 21
+   }
   },
   "PAH3.DE": {
-   "trailingPE": 87.0,
-   "forwardPE": 1.8862236,
-   "priceToBook": 0.22545432,
+   "trailingPE": 86.71875,
+   "forwardPE": 1.8801259,
+   "priceToBook": 0.23787889,
    "profitMargins": 0.0,
    "operatingMargins": 0.0,
    "revenueGrowth": null,
@@ -2320,12 +3004,18 @@
    "targetMeanPrice": 35.625,
    "numberOfAnalystOpinions": 10,
    "recommendationKey": "hold",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 20,
+    "halten_pct": 60,
+    "verkaufen_pct": 20,
+    "total": 10
+   }
   },
   "PANW": {
-   "trailingPE": 311.6696,
-   "forwardPE": 87.061714,
-   "priceToBook": 10.531853,
+   "trailingPE": 311.95654,
+   "forwardPE": 87.14187,
+   "priceToBook": 10.541549,
    "profitMargins": 0.07947,
    "operatingMargins": -0.02465,
    "revenueGrowth": 0.311,
@@ -2340,12 +3030,18 @@
    "targetMeanPrice": 357.554,
    "numberOfAnalystOpinions": 50,
    "recommendationKey": "buy",
-   "isin": "US6974351057"
+   "isin": "US6974351057",
+   "rec_breakdown": {
+    "kaufen_pct": 80,
+    "halten_pct": 18,
+    "verkaufen_pct": 2,
+    "total": 55
+   }
   },
   "PAYX": {
-   "trailingPE": 25.154396,
-   "forwardPE": 19.2661,
-   "priceToBook": 11.7103,
+   "trailingPE": 25.174849,
+   "forwardPE": 19.281765,
+   "priceToBook": 11.719822,
    "profitMargins": 0.26633,
    "operatingMargins": 0.38325,
    "revenueGrowth": 0.125,
@@ -2360,12 +3056,18 @@
    "targetMeanPrice": 111.0,
    "numberOfAnalystOpinions": 14,
    "recommendationKey": "hold",
-   "isin": "US7043261079"
+   "isin": "US7043261079",
+   "rec_breakdown": {
+    "kaufen_pct": 11,
+    "halten_pct": 61,
+    "verkaufen_pct": 28,
+    "total": 18
+   }
   },
   "PCAR": {
-   "trailingPE": 26.578947,
-   "forwardPE": 17.690844,
-   "priceToBook": 3.2701325,
+   "trailingPE": 26.869473,
+   "forwardPE": 17.884216,
+   "priceToBook": 3.3058772,
    "profitMargins": 0.09003,
    "operatingMargins": 0.12024,
    "revenueGrowth": 0.005,
@@ -2380,12 +3082,18 @@
    "targetMeanPrice": 141.02937,
    "numberOfAnalystOpinions": 16,
    "recommendationKey": "buy",
-   "isin": "US6937181088"
+   "isin": "US6937181088",
+   "rec_breakdown": {
+    "kaufen_pct": 32,
+    "halten_pct": 68,
+    "verkaufen_pct": 0,
+    "total": 19
+   }
   },
   "PDD": {
-   "trailingPE": 8.968655,
-   "forwardPE": 7.2427034,
-   "priceToBook": 1.9833689,
+   "trailingPE": 9.234065,
+   "forwardPE": 7.215758,
+   "priceToBook": 1.97599,
    "profitMargins": 0.21620001,
    "operatingMargins": 0.18419,
    "revenueGrowth": 0.11,
@@ -2397,15 +3105,21 @@
    "earningsTimestamp": 1787574600,
    "shortName": "PDD Holdings Inc.",
    "sector": "Consumer Cyclical",
-   "targetMeanPrice": 116.83995,
+   "targetMeanPrice": 117.01402,
    "numberOfAnalystOpinions": 34,
    "recommendationKey": "buy",
-   "isin": "US7223041028"
+   "isin": "US7223041028",
+   "rec_breakdown": {
+    "kaufen_pct": 59,
+    "halten_pct": 38,
+    "verkaufen_pct": 3,
+    "total": 37
+   }
   },
   "PEP": {
-   "trailingPE": 18.52097,
-   "forwardPE": 15.739371,
-   "priceToBook": 8.735551,
+   "trailingPE": 18.59502,
+   "forwardPE": 15.8022995,
+   "priceToBook": 8.770477,
    "profitMargins": 0.10785,
    "operatingMargins": 0.16836001,
    "revenueGrowth": 0.064,
@@ -2420,12 +3134,18 @@
    "targetMeanPrice": 155.0,
    "numberOfAnalystOpinions": 22,
    "recommendationKey": "none",
-   "isin": "US7134481081"
+   "isin": "US7134481081",
+   "rec_breakdown": {
+    "kaufen_pct": 29,
+    "halten_pct": 67,
+    "verkaufen_pct": 4,
+    "total": 24
+   }
   },
   "PG": {
-   "trailingPE": 21.644796,
-   "forwardPE": 19.399935,
-   "priceToBook": 6.253759,
+   "trailingPE": 21.723982,
+   "forwardPE": 19.470907,
+   "priceToBook": 6.276637,
    "profitMargins": 0.18437,
    "operatingMargins": 0.22084999,
    "revenueGrowth": 0.015,
@@ -2440,12 +3160,18 @@
    "targetMeanPrice": 160.56522,
    "numberOfAnalystOpinions": 23,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 52,
+    "halten_pct": 48,
+    "verkaufen_pct": 0,
+    "total": 25
+   }
   },
   "PLTR": {
-   "trailingPE": 146.41176,
-   "forwardPE": 75.28606,
-   "priceToBook": 42.8294,
+   "trailingPE": 147.39075,
+   "forwardPE": 75.78946,
+   "priceToBook": 43.115784,
    "profitMargins": 0.49005002,
    "operatingMargins": 0.47120997,
    "revenueGrowth": 0.928,
@@ -2460,12 +3186,18 @@
    "targetMeanPrice": 191.68,
    "numberOfAnalystOpinions": 27,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 66,
+    "halten_pct": 28,
+    "verkaufen_pct": 6,
+    "total": 32
+   }
   },
   "PYPL": {
-   "trailingPE": 11.399253,
-   "forwardPE": 10.546356,
-   "priceToBook": 2.6573305,
+   "trailingPE": 11.532649,
+   "forwardPE": 10.669771,
+   "priceToBook": 2.6884267,
    "profitMargins": 0.14364,
    "operatingMargins": 0.16966,
    "revenueGrowth": 0.048,
@@ -2480,12 +3212,18 @@
    "targetMeanPrice": 59.76939,
    "numberOfAnalystOpinions": 33,
    "recommendationKey": "hold",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 19,
+    "halten_pct": 74,
+    "verkaufen_pct": 7,
+    "total": 43
+   }
   },
   "QCOM": {
-   "trailingPE": 18.742563,
-   "forwardPE": 16.056734,
-   "priceToBook": 6.2601748,
+   "trailingPE": 18.552631,
+   "forwardPE": 15.894019,
+   "priceToBook": 6.1967363,
    "profitMargins": 0.21013,
    "operatingMargins": 0.18528,
    "revenueGrowth": -0.04,
@@ -2500,12 +3238,18 @@
    "targetMeanPrice": 193.1,
    "numberOfAnalystOpinions": 30,
    "recommendationKey": "hold",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 30,
+    "halten_pct": 62,
+    "verkaufen_pct": 8,
+    "total": 37
+   }
   },
   "QIA.DE": {
-   "trailingPE": 22.30294,
-   "forwardPE": 16.934656,
-   "priceToBook": 2.6990976,
+   "trailingPE": 22.464705,
+   "forwardPE": 17.057484,
+   "priceToBook": 2.7186742,
    "profitMargins": 0.19488001,
    "operatingMargins": 0.26325,
    "revenueGrowth": 0.003,
@@ -2520,12 +3264,18 @@
    "targetMeanPrice": 38.87286,
    "numberOfAnalystOpinions": 7,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 50,
+    "halten_pct": 50,
+    "verkaufen_pct": 0,
+    "total": 8
+   }
   },
   "REGN": {
-   "trailingPE": 19.79409,
-   "forwardPE": 13.702861,
-   "priceToBook": 2.6274316,
+   "trailingPE": 19.914919,
+   "forwardPE": 13.786508,
+   "priceToBook": 2.6434703,
    "profitMargins": 0.27865,
    "operatingMargins": 0.33106,
    "revenueGrowth": 0.167,
@@ -2540,12 +3290,18 @@
    "targetMeanPrice": 840.4285,
    "numberOfAnalystOpinions": 27,
    "recommendationKey": "buy",
-   "isin": "US75886F1075"
+   "isin": "US75886F1075",
+   "rec_breakdown": {
+    "kaufen_pct": 64,
+    "halten_pct": 32,
+    "verkaufen_pct": 4,
+    "total": 28
+   }
   },
   "RHM.DE": {
-   "trailingPE": 44.867565,
-   "forwardPE": 21.843044,
-   "priceToBook": 10.969911,
+   "trailingPE": 44.898273,
+   "forwardPE": 21.857992,
+   "priceToBook": 10.977418,
    "profitMargins": 0.062649995,
    "operatingMargins": 0.14442,
    "revenueGrowth": 0.688,
@@ -2560,12 +3316,18 @@
    "targetMeanPrice": 1679.381,
    "numberOfAnalystOpinions": 21,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 86,
+    "halten_pct": 10,
+    "verkaufen_pct": 5,
+    "total": 21
+   }
   },
   "ROP": {
-   "trailingPE": 16.45909,
-   "forwardPE": 16.809778,
-   "priceToBook": 2.1596336,
+   "trailingPE": 16.484484,
+   "forwardPE": 16.835712,
+   "priceToBook": 2.1629655,
    "profitMargins": 0.30244,
    "operatingMargins": 0.27725,
    "revenueGrowth": 0.085,
@@ -2580,12 +3342,18 @@
    "targetMeanPrice": 445.2,
    "numberOfAnalystOpinions": 15,
    "recommendationKey": "buy",
-   "isin": "US7766961061"
+   "isin": "US7766961061",
+   "rec_breakdown": {
+    "kaufen_pct": 40,
+    "halten_pct": 50,
+    "verkaufen_pct": 10,
+    "total": 20
+   }
   },
   "ROST": {
-   "trailingPE": 32.275837,
-   "forwardPE": 26.819216,
-   "priceToBook": 11.766548,
+   "trailingPE": 32.331703,
+   "forwardPE": 26.865635,
+   "priceToBook": 11.786915,
    "profitMargins": 0.097399995,
    "operatingMargins": 0.13377,
    "revenueGrowth": 0.206,
@@ -2600,12 +3368,18 @@
    "targetMeanPrice": 257.5,
    "numberOfAnalystOpinions": 18,
    "recommendationKey": "buy",
-   "isin": "US7782961038"
+   "isin": "US7782961038",
+   "rec_breakdown": {
+    "kaufen_pct": 70,
+    "halten_pct": 25,
+    "verkaufen_pct": 5,
+    "total": 20
+   }
   },
   "RWE.DE": {
-   "trailingPE": 12.629711,
-   "forwardPE": 17.256527,
-   "priceToBook": 1.1479242,
+   "trailingPE": 12.709534,
+   "forwardPE": 17.365591,
+   "priceToBook": 1.1551794,
    "profitMargins": 0.20254,
    "operatingMargins": 0.04645,
    "revenueGrowth": -0.091,
@@ -2620,12 +3394,18 @@
    "targetMeanPrice": 66.86111,
    "numberOfAnalystOpinions": 18,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 83,
+    "halten_pct": 17,
+    "verkaufen_pct": 0,
+    "total": 18
+   }
   },
   "SAP.DE": {
-   "trailingPE": 27.799099,
-   "forwardPE": 22.156103,
-   "priceToBook": 4.7831807,
+   "trailingPE": 27.868067,
+   "forwardPE": 22.21107,
+   "priceToBook": 4.7950473,
    "profitMargins": 0.20413,
    "operatingMargins": 0.2762,
    "revenueGrowth": 0.094,
@@ -2640,12 +3420,18 @@
    "targetMeanPrice": 203.21846,
    "numberOfAnalystOpinions": 26,
    "recommendationKey": "strong_buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 86,
+    "halten_pct": 14,
+    "verkaufen_pct": 0,
+    "total": 28
+   }
   },
   "SBUX": {
-   "trailingPE": 60.473988,
-   "forwardPE": 33.579838,
-   "priceToBook": -15.538394,
+   "trailingPE": 61.0,
+   "forwardPE": 33.871918,
+   "priceToBook": -15.673549,
    "profitMargins": 0.05172,
    "operatingMargins": 0.12919,
    "revenueGrowth": -0.014,
@@ -2660,12 +3446,18 @@
    "targetMeanPrice": 112.22581,
    "numberOfAnalystOpinions": 31,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 44,
+    "halten_pct": 47,
+    "verkaufen_pct": 8,
+    "total": 36
+   }
   },
   "SHL.DE": {
-   "trailingPE": 19.955,
-   "forwardPE": 16.879547,
-   "priceToBook": 2.3295586,
+   "trailingPE": 20.005,
+   "forwardPE": 16.92184,
+   "priceToBook": 2.3353956,
    "profitMargins": 0.09552,
    "operatingMargins": 0.16412,
    "revenueGrowth": 0.018,
@@ -2680,12 +3472,18 @@
    "targetMeanPrice": 45.045,
    "numberOfAnalystOpinions": 20,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 65,
+    "halten_pct": 35,
+    "verkaufen_pct": 0,
+    "total": 20
+   }
   },
   "SHW": {
-   "trailingPE": 31.507826,
-   "forwardPE": 25.135586,
-   "priceToBook": 21.422087,
+   "trailingPE": 31.686003,
+   "forwardPE": 25.277727,
+   "priceToBook": 21.543228,
    "profitMargins": 0.11013,
    "operatingMargins": 0.18124,
    "revenueGrowth": 0.075,
@@ -2700,12 +3498,18 @@
    "targetMeanPrice": 390.57144,
    "numberOfAnalystOpinions": 21,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 56,
+    "halten_pct": 44,
+    "verkaufen_pct": 0,
+    "total": 25
+   }
   },
   "SIE.DE": {
-   "trailingPE": 27.532467,
-   "forwardPE": 21.205284,
-   "priceToBook": 3.125213,
+   "trailingPE": 27.482517,
+   "forwardPE": 21.166813,
+   "priceToBook": 3.119543,
    "profitMargins": 0.097959995,
    "operatingMargins": 0.14903,
    "revenueGrowth": 0.073,
@@ -2720,12 +3524,18 @@
    "targetMeanPrice": 299.14825,
    "numberOfAnalystOpinions": 23,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 71,
+    "halten_pct": 21,
+    "verkaufen_pct": 8,
+    "total": 24
+   }
   },
   "SNPS": {
-   "trailingPE": 91.91686,
-   "forwardPE": 23.053099,
-   "priceToBook": 2.4999843,
+   "trailingPE": 91.33949,
+   "forwardPE": 22.908293,
+   "priceToBook": 2.4842808,
    "profitMargins": 0.089090005,
    "operatingMargins": 0.10383,
    "revenueGrowth": 0.419,
@@ -2740,12 +3550,18 @@
    "targetMeanPrice": 560.1738,
    "numberOfAnalystOpinions": 26,
    "recommendationKey": "buy",
-   "isin": "US8716071076"
+   "isin": "US8716071076",
+   "rec_breakdown": {
+    "kaufen_pct": 75,
+    "halten_pct": 21,
+    "verkaufen_pct": 4,
+    "total": 24
+   }
   },
   "SRT3.DE": {
-   "trailingPE": 85.95071,
-   "forwardPE": 38.640232,
-   "priceToBook": 6.2271996,
+   "trailingPE": 86.02113,
+   "forwardPE": 38.671894,
+   "priceToBook": 6.2323017,
    "profitMargins": 0.05475,
    "operatingMargins": 0.17997,
    "revenueGrowth": 0.031,
@@ -2760,12 +3576,18 @@
    "targetMeanPrice": 265.94736,
    "numberOfAnalystOpinions": 19,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 65,
+    "halten_pct": 30,
+    "verkaufen_pct": 5,
+    "total": 20
+   }
   },
   "SY1.DE": {
-   "trailingPE": 49.875706,
-   "forwardPE": 20.440863,
-   "priceToBook": 3.3173006,
+   "trailingPE": 50.0226,
+   "forwardPE": 20.501066,
+   "priceToBook": 3.3270705,
    "profitMargins": 0.05007,
    "operatingMargins": 0.15764,
    "revenueGrowth": -0.006,
@@ -2780,12 +3602,18 @@
    "targetMeanPrice": 95.47647,
    "numberOfAnalystOpinions": 17,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 56,
+    "halten_pct": 44,
+    "verkaufen_pct": 0,
+    "total": 18
+   }
   },
   "TEAM": {
    "trailingPE": null,
-   "forwardPE": 26.234032,
-   "priceToBook": 42.29043,
+   "forwardPE": 25.608812,
+   "priceToBook": 41.282543,
    "profitMargins": -0.00819,
    "operatingMargins": 0.122609995,
    "revenueGrowth": 0.276,
@@ -2800,12 +3628,18 @@
    "targetMeanPrice": 187.93266,
    "numberOfAnalystOpinions": 30,
    "recommendationKey": "strong_buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 84,
+    "halten_pct": 16,
+    "verkaufen_pct": 0,
+    "total": 32
+   }
   },
   "TMUS": {
-   "trailingPE": 19.055962,
-   "forwardPE": 12.617272,
-   "priceToBook": 3.4800758,
+   "trailingPE": 19.024057,
+   "forwardPE": 12.5961485,
+   "priceToBook": 3.4742491,
    "profitMargins": 0.11455,
    "operatingMargins": 0.2522,
    "revenueGrowth": 0.079,
@@ -2820,12 +3654,18 @@
    "targetMeanPrice": 243.375,
    "numberOfAnalystOpinions": 24,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 81,
+    "halten_pct": 19,
+    "verkaufen_pct": 0,
+    "total": 27
+   }
   },
   "TRV": {
-   "trailingPE": 9.691263,
-   "forwardPE": 11.93417,
-   "priceToBook": 2.2705603,
+   "trailingPE": 9.780914,
+   "forwardPE": 12.044568,
+   "priceToBook": 2.2915645,
    "profitMargins": 0.16951999,
    "operatingMargins": 0.23698,
    "revenueGrowth": 0.003,
@@ -2834,18 +3674,24 @@
    "freeCashflow": 14775124992,
    "returnOnEquity": 0.26511,
    "dividendYield": 1.38,
-   "earningsTimestamp": null,
+   "earningsTimestamp": 1784291400,
    "shortName": "The Travelers Companies, Inc.",
    "sector": "Financial Services",
    "targetMeanPrice": 360.33334,
    "numberOfAnalystOpinions": 24,
    "recommendationKey": "hold",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 21,
+    "halten_pct": 59,
+    "verkaufen_pct": 21,
+    "total": 29
+   }
   },
   "TSLA": {
-   "trailingPE": 317.89908,
-   "forwardPE": 159.31642,
-   "priceToBook": 15.754035,
+   "trailingPE": 316.05045,
+   "forwardPE": 158.38997,
+   "priceToBook": 15.662422,
    "profitMargins": 0.03671,
    "operatingMargins": 0.014099999,
    "revenueGrowth": 0.255,
@@ -2860,12 +3706,18 @@
    "targetMeanPrice": 395.3405,
    "numberOfAnalystOpinions": 40,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 49,
+    "halten_pct": 40,
+    "verkaufen_pct": 11,
+    "total": 47
+   }
   },
   "TTD": {
-   "trailingPE": 15.994049,
-   "forwardPE": 13.498036,
-   "priceToBook": 2.5791898,
+   "trailingPE": 16.035715,
+   "forwardPE": 13.5332,
+   "priceToBook": 2.585909,
    "profitMargins": 0.13608,
    "operatingMargins": 0.14205,
    "revenueGrowth": 0.03,
@@ -2880,12 +3732,18 @@
    "targetMeanPrice": 13.38667,
    "numberOfAnalystOpinions": 30,
    "recommendationKey": "hold",
-   "isin": "US88339J1051"
+   "isin": "US88339J1051",
+   "rec_breakdown": {
+    "kaufen_pct": 14,
+    "halten_pct": 64,
+    "verkaufen_pct": 22,
+    "total": 36
+   }
   },
   "TTWO": {
    "trailingPE": null,
-   "forwardPE": 23.034037,
-   "priceToBook": 12.529703,
+   "forwardPE": 22.852016,
+   "priceToBook": 12.430691,
    "profitMargins": -0.04792,
    "operatingMargins": 0.0051499996,
    "revenueGrowth": 0.02,
@@ -2900,12 +3758,18 @@
    "targetMeanPrice": 286.89,
    "numberOfAnalystOpinions": 29,
    "recommendationKey": "strong_buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 96,
+    "halten_pct": 0,
+    "verkaufen_pct": 4,
+    "total": 28
+   }
   },
   "TXN": {
-   "trailingPE": 40.781155,
-   "forwardPE": 25.789896,
-   "priceToBook": 13.605435,
+   "trailingPE": 40.487843,
+   "forwardPE": 25.604406,
+   "priceToBook": 13.507581,
    "profitMargins": 0.31111,
    "operatingMargins": 0.42576998,
    "revenueGrowth": 0.228,
@@ -2920,12 +3784,18 @@
    "targetMeanPrice": 324.4516,
    "numberOfAnalystOpinions": 31,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 50,
+    "halten_pct": 44,
+    "verkaufen_pct": 6,
+    "total": 36
+   }
   },
   "UNH": {
-   "trailingPE": 24.937973,
-   "forwardPE": 17.273443,
-   "priceToBook": 3.5625348,
+   "trailingPE": 25.073185,
+   "forwardPE": 17.3671,
+   "priceToBook": 3.5818508,
    "profitMargins": 0.03135,
    "operatingMargins": 0.071329996,
    "revenueGrowth": 0.004,
@@ -2940,12 +3810,18 @@
    "targetMeanPrice": 475.23077,
    "numberOfAnalystOpinions": 26,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 85,
+    "halten_pct": 15,
+    "verkaufen_pct": 0,
+    "total": 27
+   }
   },
   "V": {
-   "trailingPE": 31.068201,
-   "forwardPE": 24.323225,
-   "priceToBook": 19.312664,
+   "trailingPE": 31.24723,
+   "forwardPE": 24.463385,
+   "priceToBook": 19.423952,
    "profitMargins": 0.50782,
    "operatingMargins": 0.66130996,
    "revenueGrowth": 0.144,
@@ -2960,12 +3836,18 @@
    "targetMeanPrice": 416.20026,
    "numberOfAnalystOpinions": 37,
    "recommendationKey": "strong_buy",
-   "isin": "US92826C8394"
+   "isin": "US92826C8394",
+   "rec_breakdown": {
+    "kaufen_pct": 92,
+    "halten_pct": 8,
+    "verkaufen_pct": 0,
+    "total": 40
+   }
   },
   "VNA.DE": {
-   "trailingPE": 4.518141,
-   "forwardPE": 10.450212,
-   "priceToBook": 0.6114777,
+   "trailingPE": 4.53288,
+   "forwardPE": 10.4843025,
+   "priceToBook": 0.61347246,
    "profitMargins": 0.64839,
    "operatingMargins": 0.39645,
    "revenueGrowth": 0.016,
@@ -2980,12 +3862,18 @@
    "targetMeanPrice": 28.85,
    "numberOfAnalystOpinions": 16,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 59,
+    "halten_pct": 29,
+    "verkaufen_pct": 12,
+    "total": 17
+   }
   },
   "VOW3.DE": {
-   "trailingPE": 7.1946306,
-   "forwardPE": 3.1871967,
-   "priceToBook": 0.21353488,
+   "trailingPE": 7.1850433,
+   "forwardPE": 3.1829495,
+   "priceToBook": 0.21325032,
    "profitMargins": 0.018,
    "operatingMargins": 0.04208,
    "revenueGrowth": 0.02,
@@ -3000,12 +3888,18 @@
    "targetMeanPrice": 105.30952,
    "numberOfAnalystOpinions": 21,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 62,
+    "halten_pct": 33,
+    "verkaufen_pct": 5,
+    "total": 21
+   }
   },
   "VRSK": {
-   "trailingPE": 28.64055,
-   "forwardPE": 21.440275,
-   "priceToBook": -20.918882,
+   "trailingPE": 27.627394,
+   "forwardPE": 21.571367,
+   "priceToBook": -21.046785,
    "profitMargins": 0.28237,
    "operatingMargins": 0.45106998,
    "revenueGrowth": 0.044,
@@ -3020,12 +3914,18 @@
    "targetMeanPrice": 237.70589,
    "numberOfAnalystOpinions": 17,
    "recommendationKey": "buy",
-   "isin": "US92345Y1064"
+   "isin": "US92345Y1064",
+   "rec_breakdown": {
+    "kaufen_pct": 58,
+    "halten_pct": 42,
+    "verkaufen_pct": 0,
+    "total": 19
+   }
   },
   "VRTX": {
-   "trailingPE": 31.85498,
-   "forwardPE": 25.038122,
-   "priceToBook": 6.8436337,
+   "trailingPE": 31.866047,
+   "forwardPE": 25.04682,
+   "priceToBook": 6.8460107,
    "profitMargins": 0.34997,
    "operatingMargins": 0.38055,
    "revenueGrowth": 0.125,
@@ -3040,12 +3940,18 @@
    "targetMeanPrice": 563.12,
    "numberOfAnalystOpinions": 25,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 79,
+    "halten_pct": 14,
+    "verkaufen_pct": 7,
+    "total": 29
+   }
   },
   "VZ": {
-   "trailingPE": 12.812501,
-   "forwardPE": 9.317317,
-   "priceToBook": 1.9670559,
+   "trailingPE": 12.854167,
+   "forwardPE": 9.347617,
+   "priceToBook": 1.9734528,
    "profitMargins": 0.11643,
    "operatingMargins": 0.22999,
    "revenueGrowth": -0.007,
@@ -3060,12 +3966,18 @@
    "targetMeanPrice": 51.55652,
    "numberOfAnalystOpinions": 23,
    "recommendationKey": "none",
-   "isin": "ARDEUT112927"
+   "isin": "ARDEUT112927",
+   "rec_breakdown": {
+    "kaufen_pct": 42,
+    "halten_pct": 58,
+    "verkaufen_pct": 0,
+    "total": 26
+   }
   },
   "WBD": {
    "trailingPE": null,
-   "forwardPE": 583.159,
-   "priceToBook": 2.1713128,
+   "forwardPE": 583.52203,
+   "priceToBook": 2.1726646,
    "profitMargins": -0.08769,
    "operatingMargins": 0.05105,
    "revenueGrowth": -0.112,
@@ -3080,12 +3992,18 @@
    "targetMeanPrice": 29.7,
    "numberOfAnalystOpinions": 10,
    "recommendationKey": "hold",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 17,
+    "halten_pct": 78,
+    "verkaufen_pct": 6,
+    "total": 18
+   }
   },
   "WDAY": {
-   "trailingPE": 61.7991,
-   "forwardPE": 15.694717,
-   "priceToBook": 7.3913,
+   "trailingPE": 61.51402,
+   "forwardPE": 15.622317,
+   "priceToBook": 7.357204,
    "profitMargins": 0.08595,
    "operatingMargins": 0.13297,
    "revenueGrowth": 0.135,
@@ -3100,12 +4018,18 @@
    "targetMeanPrice": 182.28606,
    "numberOfAnalystOpinions": 38,
    "recommendationKey": "buy",
-   "isin": "US98138H1014"
+   "isin": "US98138H1014",
+   "rec_breakdown": {
+    "kaufen_pct": 52,
+    "halten_pct": 40,
+    "verkaufen_pct": 7,
+    "total": 42
+   }
   },
   "WMT": {
-   "trailingPE": 36.911663,
-   "forwardPE": 31.846783,
-   "priceToBook": 8.816678,
+   "trailingPE": 36.660778,
+   "forwardPE": 31.630325,
+   "priceToBook": 8.756753,
    "profitMargins": 0.03135,
    "operatingMargins": 0.042150002,
    "revenueGrowth": 0.073,
@@ -3120,12 +4044,18 @@
    "targetMeanPrice": 137.94737,
    "numberOfAnalystOpinions": 38,
    "recommendationKey": "buy",
-   "isin": "CA93267J1012"
+   "isin": "CA93267J1012",
+   "rec_breakdown": {
+    "kaufen_pct": 83,
+    "halten_pct": 15,
+    "verkaufen_pct": 2,
+    "total": 41
+   }
   },
   "XEL": {
-   "trailingPE": 21.557377,
-   "forwardPE": 17.375525,
-   "priceToBook": 2.0686402,
+   "trailingPE": 21.715847,
+   "forwardPE": 17.503254,
+   "priceToBook": 2.083847,
    "profitMargins": 0.15278,
    "operatingMargins": 0.22700001,
    "revenueGrowth": -0.051,
@@ -3140,12 +4070,18 @@
    "targetMeanPrice": 91.94118,
    "numberOfAnalystOpinions": 17,
    "recommendationKey": "strong_buy",
-   "isin": "US98389B1008"
+   "isin": "US98389B1008",
+   "rec_breakdown": {
+    "kaufen_pct": 89,
+    "halten_pct": 6,
+    "verkaufen_pct": 6,
+    "total": 18
+   }
   },
   "ZAL.DE": {
-   "trailingPE": 62.416664,
-   "forwardPE": 12.150149,
-   "priceToBook": 2.145927,
+   "trailingPE": 62.555553,
+   "forwardPE": 12.177186,
+   "priceToBook": 2.185559,
    "profitMargins": 0.0070200004,
    "operatingMargins": 0.044710003,
    "revenueGrowth": 0.208,
@@ -3160,12 +4096,18 @@
    "targetMeanPrice": 35.07391,
    "numberOfAnalystOpinions": 23,
    "recommendationKey": "buy",
-   "isin": null
+   "isin": null,
+   "rec_breakdown": {
+    "kaufen_pct": 75,
+    "halten_pct": 25,
+    "verkaufen_pct": 0,
+    "total": 24
+   }
   },
   "ZS": {
    "trailingPE": null,
-   "forwardPE": 40.104305,
-   "priceToBook": 12.599931,
+   "forwardPE": 39.547543,
+   "priceToBook": 12.425008,
    "profitMargins": -0.024389999,
    "operatingMargins": -0.03276,
    "revenueGrowth": 0.254,
@@ -3180,7 +4122,13 @@
    "targetMeanPrice": 196.94885,
    "numberOfAnalystOpinions": 44,
    "recommendationKey": "buy",
-   "isin": "US98980G1022"
+   "isin": "US98980G1022",
+   "rec_breakdown": {
+    "kaufen_pct": 80,
+    "halten_pct": 20,
+    "verkaufen_pct": 0,
+    "total": 44
+   }
   }
  }
 }

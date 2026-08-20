@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
 Boersen-Screening: NASDAQ-100, Dow Jones 30, DAX 40.
-Version 2 (2026-08-20): Value-Score auf 0-100 normiert, PEG entfernt
-(Datenqualitaet bei Yahoo unzureichend), Sektor-Deckel gegen Klumpenbildung,
-Analysten-Ratingaenderungen (30 Tage) als eigenes taeglich aktuelles Signal,
-Namensbereinigung fuer DAX-Werte, fehlende Ticker werden im Report gemeldet.
+Version 3 (2026-08-20): Taegliche Top-10-Tabelle je Kategorie mit Index,
+Score, Einordnung sowie Rang gestern/Rang vor einer Woche (Rang-Historie,
+rollierendes 12-Tage-Fenster). Baut auf Version 2 auf (normierter Value-
+Score, Sektor-Deckel, Analysten-Ratingaenderungen).
 
 Erzeugt drei getrennte Ranglisten (Turnaround, Momentum, Value/Qualitaet),
 vergleicht sie mit dem Vortag und schreibt einen Report, der NUR
@@ -16,6 +16,7 @@ Ausgabe:
   state/state.json    -> Zustand von heute (Basis fuer den Vergleich morgen)
   state/fundamentals.json -> Cache langsamer Fundamentaldaten (max. 7 Tage alt)
   state/analyst.json      -> Cache der Analysten-Ratingaenderungen (max. 1 Tag alt)
+  state/rank_history.json -> rollierende Rang-Historie (12 Tage, Tiefe 40 je Liste)
 
 KEINE Anlageberatung. Das Skript sortiert Kennzahlen, mehr nicht.
 """
@@ -45,8 +46,11 @@ STATE_DIR = BASE / "state"
 STATE_FILE = STATE_DIR / "state.json"
 FUND_FILE = STATE_DIR / "fundamentals.json"
 ANALYST_FILE = STATE_DIR / "analyst.json"
+HISTORY_FILE = STATE_DIR / "rank_history.json"
 
-TOP_N = 15            # Groesse jeder Rangliste
+TOP_N = 15             # Groesse jeder angezeigten Rangliste
+TRACK_N = 40            # Tiefe der intern gefuehrten Liste (fuer Rang-Historie)
+HISTORY_KEEP_DAYS = 12  # Rollierendes Fenster - deckt auch Feiertage/Brueckentage ab
 SECTOR_CAP = 3         # maximal so viele Werte je Sektor pro Rangliste
 RANK_JUMP = 5         # ab wie vielen Plaetzen eine Bewegung gemeldet wird
 HISTORY_PERIOD = "10y"  # Basis fuer das Allzeithoch
@@ -632,28 +636,30 @@ def build_state(prices, fundamentals, analyst, members, benchmarks) -> dict:
         }
 
     ranks = {}
+    ranks_full = {}
     for name in LISTS:
         eligible = [(t, r["scores"][name]) for t, r in rows.items() if not r["flags"]]
         eligible.sort(key=lambda x: x[1], reverse=True)
         picked: list[str] = []
         sector_count: dict[str, int] = {}
         for t, _ in eligible:
-            if len(picked) >= TOP_N:
+            if len(picked) >= TRACK_N:
                 break
             sector = rows[t]["sector"]
             if sector_count.get(sector, 0) >= SECTOR_CAP:
                 continue
             picked.append(t)
             sector_count[sector] = sector_count.get(sector, 0) + 1
-        # Falls der Sektor-Deckel die Liste kuerzer laesst als TOP_N erlaubt,
+        # Falls der Sektor-Deckel die Liste kuerzer laesst als TRACK_N erlaubt,
         # mit den naechstbesten (auch ueber dem Deckel) auffuellen.
-        if len(picked) < TOP_N:
+        if len(picked) < TRACK_N:
             for t, _ in eligible:
-                if len(picked) >= TOP_N:
+                if len(picked) >= TRACK_N:
                     break
                 if t not in picked:
                     picked.append(t)
-        ranks[name] = picked
+        ranks_full[name] = picked      # Tiefe TRACK_N, nur fuer die Rang-Historie
+        ranks[name] = picked[:TOP_N]   # angezeigte Rangliste (Top 15)
 
     missing = sorted(set(members.keys()) - set(rows.keys()))
 
@@ -661,6 +667,7 @@ def build_state(prices, fundamentals, analyst, members, benchmarks) -> dict:
         "date": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
         "generated": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "ranks": ranks,
+        "ranks_full": ranks_full,
         "rows": rows,
         "missing": missing,
     }
@@ -704,6 +711,87 @@ def diff_lists(today: dict, prev: dict) -> dict:
     return changes
 
 
+def score_label(score: float) -> str:
+    """Grobe Einordnung des Scores in Textform. Ausdruecklich eine Beschreibung,
+    wie gut die hinterlegten Kriterien erfuellt sind - keine statistisch
+    ermittelte Erfolgswahrscheinlichkeit (dafuer fehlt ein Backtest)."""
+    if score >= 80:
+        return "sehr hoch"
+    if score >= 65:
+        return "hoch"
+    if score >= 50:
+        return "mittel"
+    return "niedrig"
+
+
+def load_rank_history() -> list[dict]:
+    if not HISTORY_FILE.exists():
+        return []
+    try:
+        data = json.loads(HISTORY_FILE.read_text(encoding="utf-8"))
+        return sorted(data, key=lambda e: e["date"])
+    except Exception:  # noqa: BLE001
+        return []
+
+
+def save_rank_history(history: list[dict], today_entry: dict) -> None:
+    history = [e for e in history if e["date"] != today_entry["date"]]
+    history.append(today_entry)
+    cutoff = (datetime.now(timezone.utc) - pd.Timedelta(days=HISTORY_KEEP_DAYS)).strftime("%Y-%m-%d")
+    history = [e for e in history if e["date"] >= cutoff]
+    history.sort(key=lambda e: e["date"])
+    STATE_DIR.mkdir(parents=True, exist_ok=True)
+    HISTORY_FILE.write_text(json.dumps(history, indent=1, ensure_ascii=False), encoding="utf-8")
+
+
+def nearest_entry_at_or_before(history: list[dict], target_date: str) -> dict | None:
+    """History ist aufsteigend nach Datum sortiert - das letzte Element mit
+    Datum <= target_date ist der naechste verfuegbare Handelstag davor."""
+    candidates = [e for e in history if e["date"] <= target_date]
+    return candidates[-1] if candidates else None
+
+
+def build_rank_lookup(history: list[dict], today_date: str):
+    """Liefert eine Funktion get_rank(kategorie, ticker, 'yesterday'|'lastweek'),
+    die den Rang aus der gespeicherten Historie (Tiefe TRACK_N) nachschlaegt."""
+    yesterday_entry = history[-1] if history else None
+    lastweek_target = (datetime.strptime(today_date, "%Y-%m-%d") - pd.Timedelta(days=7)).strftime("%Y-%m-%d")
+    lastweek_entry = nearest_entry_at_or_before(history, lastweek_target)
+
+    def get_rank(name: str, ticker: str, when: str) -> int | None:
+        entry = yesterday_entry if when == "yesterday" else lastweek_entry
+        if not entry:
+            return None
+        lst = entry.get("ranks_full", {}).get(name, [])
+        return lst.index(ticker) + 1 if ticker in lst else None
+
+    return get_rank
+
+
+def build_top10_tables(today: dict, get_rank) -> str:
+    L = ["## 📊 Aktuelle Top 10", "",
+         "_Score = Kennzahlen-Uebereinstimmung (0-100), keine statistische "
+         "Erfolgsprognose. Rang-Spalten: letzter Handelstag / vor rund einer Woche, "
+         "\"neu\" = damals nicht in den Top 40 dieser Liste._", ""]
+    for name in LISTS:
+        L.append(f"### {LIST_TITLES[name]}")
+        L.append("")
+        L.append("| Rang | Ticker | Name | Index | Score | Einordnung | Rang gestern | Rang Vorwoche | Kurzbegruendung |")
+        L.append("|---|---|---|---|---|---|---|---|---|")
+        for i, t in enumerate(today["ranks_full"][name][:10], 1):
+            row = today["rows"][t]
+            score = row["scores"][name]
+            why = row["why"][name][0] if row["why"][name] else "-"
+            ry = get_rank(name, t, "yesterday")
+            rw = get_rank(name, t, "lastweek")
+            ry_s = str(ry) if ry else "neu"
+            rw_s = str(rw) if rw else "neu"
+            L.append(f"| {i} | {t} | {row['name']} | {row['index']} | {score:.0f} | "
+                     f"{score_label(score)} | {ry_s} | {rw_s} | {why} |")
+        L.append("")
+    return "\n".join(L)
+
+
 def fmt_row(t: str, row: dict, list_name: str) -> str:
     m = row["metrics"]
     why = ", ".join(row["why"][list_name][:3]) or "-"
@@ -714,19 +802,21 @@ def fmt_row(t: str, row: dict, list_name: str) -> str:
     return line
 
 
-def build_report(today: dict, prev: dict, changes: dict) -> str:
+def build_report(today: dict, prev: dict, changes: dict, get_rank) -> str:
     L = []
     L.append(f"# Boersen-Screening - {today['date']}")
     L.append("")
     L.append(f"_Stand: Schlusskurse vom Vortag. Erstellt {today['generated']} UTC. "
              f"{len(today['rows'])} Werte ausgewertet._")
     L.append("")
+    L.append(build_top10_tables(today, get_rank))
+    L.append("")
 
     if prev is None:
         L.append("## Erstlauf - Baseline angelegt")
         L.append("")
-        L.append("Ab morgen werden nur noch Veraenderungen gemeldet. "
-                 "Heute einmalig die kompletten Ranglisten:")
+        L.append("Ab morgen werden hier zusaetzlich Veraenderungen gemeldet. "
+                 "Vollstaendige Top-15-Listen mit Begruendung:")
         L.append("")
         for name in LISTS:
             L.append(f"### {LIST_TITLES[name]}")
@@ -837,7 +927,10 @@ def main() -> int:
         print("Hinweis: heutiger Lauf existiert bereits, vergleiche trotzdem.")
 
     changes = diff_lists(today, prev) if prev else {}
-    report = build_report(today, prev, changes)
+
+    rank_history = load_rank_history()
+    get_rank = build_rank_lookup(rank_history, today["date"])
+    report = build_report(today, prev, changes, get_rank)
 
     DOCS_DIR.mkdir(parents=True, exist_ok=True)
     STATE_DIR.mkdir(parents=True, exist_ok=True)
@@ -846,6 +939,7 @@ def main() -> int:
         {"date": today["date"], "ranks": today["ranks"], "changes": changes},
         indent=1, ensure_ascii=False), encoding="utf-8")
     STATE_FILE.write_text(json.dumps(today, indent=1, ensure_ascii=False), encoding="utf-8")
+    save_rank_history(rank_history, {"date": today["date"], "ranks_full": today["ranks_full"]})
 
     print("\n" + report[:1500])
     return 0

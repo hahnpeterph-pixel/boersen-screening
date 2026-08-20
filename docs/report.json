@@ -2,38 +2,38 @@
  "date": "2026-08-20",
  "ranks": {
   "turnaround": [
-   "BAYN.DE",
    "BEI.DE",
-   "ROP",
-   "CDW",
-   "KHC",
-   "CRM",
-   "SHL.DE",
-   "BNR.DE",
-   "DXCM",
-   "AXON",
-   "VOW3.DE",
+   "BAYN.DE",
+   "WDAY",
    "HEN3.DE",
+   "CRM",
+   "CTSH",
+   "KHC",
+   "DXCM",
+   "MRK.DE",
+   "MELI",
+   "AXON",
+   "BNR.DE",
    "HNR1.DE",
-   "DASH",
-   "SY1.DE"
+   "SY1.DE",
+   "DASH"
   ],
   "momentum": [
    "MRK",
-   "DB1.DE",
    "ABNB",
-   "JNJ",
-   "KO",
-   "AMGN",
-   "CSX",
-   "PANW",
-   "ALV.DE",
-   "DTG.DE",
-   "CVX",
-   "CRWD",
+   "DB1.DE",
    "FANG",
+   "KO",
+   "JNJ",
+   "ALV.DE",
+   "CVX",
+   "CSX",
+   "VRTX",
+   "PANW",
    "DHL.DE",
-   "TEAM"
+   "CRWD",
+   "FTNT",
+   "FAST"
   ],
   "value": [
    "MU",
@@ -57,58 +57,82 @@
   "turnaround": {
    "entries": [
     {
-     "ticker": "CDW",
-     "rank": 4
+     "ticker": "WDAY",
+     "rank": 3
     },
     {
-     "ticker": "SY1.DE",
-     "rank": 15
+     "ticker": "CTSH",
+     "rank": 6
+    },
+    {
+     "ticker": "MRK.DE",
+     "rank": 9
+    },
+    {
+     "ticker": "MELI",
+     "rank": 10
     }
    ],
    "exits": [
     {
-     "ticker": "WDAY",
-     "old_rank": 2
+     "ticker": "ROP",
+     "old_rank": 3
     },
     {
-     "ticker": "CMCSA",
-     "old_rank": 15
+     "ticker": "CDW",
+     "old_rank": 4
+    },
+    {
+     "ticker": "SHL.DE",
+     "old_rank": 7
+    },
+    {
+     "ticker": "VOW3.DE",
+     "old_rank": 11
     }
    ],
    "moves": [
     {
-     "ticker": "KHC",
-     "rank": 5,
-     "delta": 5
+     "ticker": "HEN3.DE",
+     "rank": 4,
+     "delta": 8
     }
    ]
   },
   "momentum": {
    "entries": [
     {
-     "ticker": "DHL.DE",
+     "ticker": "VRTX",
+     "rank": 10
+    },
+    {
+     "ticker": "FTNT",
      "rank": 14
     },
     {
-     "ticker": "TEAM",
+     "ticker": "FAST",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "FAST",
-     "old_rank": 14
+     "ticker": "AMGN",
+     "old_rank": 6
     },
     {
-     "ticker": "MRVL",
+     "ticker": "DTG.DE",
+     "old_rank": 10
+    },
+    {
+     "ticker": "TEAM",
      "old_rank": 15
     }
    ],
    "moves": [
     {
      "ticker": "FANG",
-     "rank": 13,
-     "delta": -6
+     "rank": 4,
+     "delta": 9
     }
    ]
   },

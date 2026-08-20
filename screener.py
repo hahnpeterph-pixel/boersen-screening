@@ -1,14 +1,28 @@
 #!/usr/bin/env python3
 """
 Boersen-Screening: NASDAQ-100, Dow Jones 30, DAX 40.
-Version 17 (2026-08-20): Neuer Abschnitt "Analysten-Filter" - eigenstaendige
-Liste ueber ALLE ausgewerteten Werte (nicht nur die Top-10-Listen je
-Kategorie): Kursziel mindestens 15% ueber dem aktuellen Kurs UND mindestens
-75% der Analysten auf Kaufen, sortiert nach Kurspotenzial absteigend, max.
-20 Treffer. Value-Trap-Ausschluesse gelten auch hier. Schwellen als
-Konstanten (ANALYST_FILTER_MIN_UPSIDE, ANALYST_FILTER_MIN_KAUFEN_PCT,
-ANALYST_FILTER_TOP_N) leicht anpassbar.
-Baut auf Version 16 auf.
+Version 19 (2026-08-20): RSI auf drei Zeitebenen (Tag/Woche/Stunde) in der
+Analysten-Filter-Tabelle - jede Ebene ECHT neu berechnet auf echten Kerzen
+dieser Zeitebene, nicht rechnerisch aus dem Tages-RSI umgerechnet:
+- RSI Tag: wie bisher, Standard-14-Tage-RSI auf Tagesschlusskursen.
+- RSI Woche: Tagesdaten (haben wir schon) zu echten Wochenschlusskursen
+  resampled, RSI(14) darauf neu berechnet. Kein zusaetzlicher Datenabruf.
+- RSI Stunde: echte 60-Minuten-Kerzen via neuer Funktion get_hourly_rsi().
+  Laut Recherche liefert Yahoo Stundendaten bis zu ca. 730 Tage zurueck -
+  fuer RSI(14) reicht das locker. Bewusst NUR fuer die Analysten-Filter-
+  Treffer geladen (max. 20 Werte), nicht fuer das ganze Universum, um den
+  taeglichen Lauf nicht unnoetig zu verlangsamen.
+Baut auf Version 18 auf.
+jetzt NUR NOCH den Analysten-Filter (Kursziel >=15%, Kaufen-Anteil >=75%)
+plus die zugehoerige Einzelaufstellung der Ratingaenderungen darunter.
+Entfernt: die drei Turnaround-/Momentum-Value-Top-10-Tabellen, die
+Rohstoffe/Krypto-Uebersicht, die taeglichen Veraenderungsmeldungen. Die
+Filtertabelle ist jetzt nach Kaufen-Anteil sortiert (vorher: Kurspotenzial),
+bei Gleichstand nach Kurspotenzial. Die Einzelaufstellung bezieht sich jetzt
+auf die Filtertreffer (vorher: alte Top-10-Listen). Score-Berechnung laeuft
+intern unveraendert weiter (u.a. fuer den Value-Trap-Ausschluss im Filter),
+wird aber nicht mehr angezeigt.
+Baut auf Version 17 auf.
 
 Erzeugt drei getrennte Ranglisten (Turnaround, Momentum, Value/Qualitaet),
 vergleicht sie mit dem Vortag und schreibt einen Report, der NUR
@@ -224,6 +238,44 @@ def get_prices(tickers: list[str]) -> dict[str, pd.DataFrame]:
     return prices
 
 
+def get_hourly_rsi(tickers: list[str]) -> dict[str, float | None]:
+    """Echter Stunden-RSI, NEU berechnet auf echten Stundenkerzen - kein
+    Umrechnen des Tages-RSI. Bewusst nur fuer eine kleine, bereits gefilterte
+    Tickerliste (nicht das ganze Universum), da Yahoo dafuer einen eigenen,
+    zusaetzlichen Datenabruf je Ticker braucht (Intraday-Daten sind separat
+    von den Tagesdaten). Laut Datenlage geht das bei Yahoo bis zu ca. 730
+    Tage zurueck fuer 60-Minuten-Kerzen - fuer einen 14-Perioden-RSI reicht
+    ein deutlich kuerzeres Fenster locker aus."""
+    if not tickers:
+        return {}
+    print(f"Lade Stundendaten fuer {len(tickers)} Filtertreffer ...")
+    import yfinance as yf
+
+    out: dict[str, float | None] = {}
+    for t in tickers:
+        try:
+            df = yf.download(t, period="60d", interval="60m",
+                              auto_adjust=True, progress=False, threads=False)
+            if df is None or df.empty:
+                out[t] = None
+                continue
+            close = df["Close"]
+            if isinstance(close, pd.DataFrame):  # bei manchen yfinance-Versionen MultiIndex
+                close = close.iloc[:, 0]
+            close = close.dropna()
+            if len(close) < 20:
+                out[t] = None
+                continue
+            rsi_h = rsi(close)
+            out[t] = round(float(rsi_h.iloc[-1]), 1)
+        except Exception:  # noqa: BLE001
+            out[t] = None
+        time.sleep(0.3)
+    ok = sum(1 for v in out.values() if v is not None)
+    print(f"  Stunden-RSI fuer {ok}/{len(tickers)} Werte erhalten.")
+    return out
+
+
 def get_fundamentals(tickers: list[str]) -> dict:
     """Fundamentaldaten, hoechstens FUND_MAX_AGE_DAYS alt (Cache)."""
     cache = {"updated": None, "data": {}}
@@ -431,6 +483,16 @@ def compute_metrics(df: pd.DataFrame, bench: pd.Series | None) -> dict | None:
     rsi14 = float(rsi_s.iloc[-1])
     rsi_min60 = float(rsi_s.iloc[-60:].min())
 
+    # Wochen-RSI: ECHTE Neuberechnung auf echten Wochenschlusskursen (letzter
+    # Handelstag jeder Woche), kein Umrechnen des Tages-RSI. Nutzt dieselben
+    # Tagesdaten, die wir ohnehin schon geladen haben - keine zusaetzliche
+    # Datenquelle noetig.
+    rsi_week = None
+    weekly_close = close.resample("W").last().dropna()
+    if len(weekly_close) >= 20:
+        rsi_week_s = rsi(weekly_close)
+        rsi_week = float(rsi_week_s.iloc[-1])
+
     perf = {}
     for label, n in (("m1", 21), ("m3", 63), ("m6", 126), ("m12", 252)):
         if len(close) > n:
@@ -486,6 +548,7 @@ def compute_metrics(df: pd.DataFrame, bench: pd.Series | None) -> dict | None:
         "higher_low_pct": round(higher_low_pct, 1) if higher_low_pct is not None else None,
         "rsi14": round(rsi14, 1),
         "rsi_min60": round(rsi_min60, 1),
+        "rsi_week": round(rsi_week, 1) if rsi_week is not None else None,
         "perf": {k: round(v, 1) for k, v in perf.items()},
         "rs6": round(rs6, 1) if rs6 is not None else None,
         "vol_pressure_5d": round(vol_pressure_5d, 2) if vol_pressure_5d is not None else None,
@@ -1199,8 +1262,7 @@ def build_glossary() -> str:
         "## \U0001F4D6 Glossar (was die Spalten bedeuten)", "",
         "- **Kurs**: letzter Schlusskurs.",
         "- **Abstand ATH**: wie weit der Kurs unter dem Allzeithoch liegt. "
-        "Rein informativ, fliesst NICHT in den Score ein - es gibt keine belegte "
-        "\"gesunde\" Schwelle dafuer (siehe Hinweis am Ende).",
+        "Rein informativ, dient nur der Einordnung.",
         "- **Kaufen-Anteil Analysten**: Anteil der Analysten mit einer "
         "Kaufen-Einstufung, z.B. \"89% (46 Analysten)\" heisst: 89% von 46 "
         "erfassten Analysten empfehlen den Kauf.",
@@ -1208,6 +1270,15 @@ def build_glossary() -> str:
         "Einzelmeinung) und Abstand zum aktuellen Kurs, z.B. \"67% unter "
         "aktuellem Kurs\" heisst: das Kursziel liegt 67% UNTER dem, was die "
         "Aktie gerade kostet.",
+        "- **RSI Tag / Woche / Stunde**: Momentum-Indikator (0-100) auf drei "
+        "Zeitebenen, jeweils ECHT neu berechnet auf echten Kerzen dieser "
+        "Zeitebene - nicht rechnerisch aus dem Tages-RSI umgerechnet (das "
+        "waere mathematisch nicht zulaessig). RSI Woche nutzt Wochen-"
+        "Schlusskurse, RSI Stunde echte Stundenkerzen (nur fuer die "
+        "Filtertreffer geladen, um Datenabrufe zu sparen - \"k.A.\" heisst: "
+        "keine verwertbaren Stundenkerzen vorhanden). Optimum tendenziell bei "
+        "40-50, nicht bei 30 wie oft angenommen (Quelle: Constance Brown, "
+        "\"RSI Range Shift\").",
         "- **Letztes Rating**: die juengste namentliche Ratingaenderung mit "
         "Bank und Datum. WICHTIG: welcher Analyst welchen genauen Kurszielwert "
         "genannt hat, liefert die kostenlose Datenquelle nicht (nur den "
@@ -1216,33 +1287,19 @@ def build_glossary() -> str:
         "aus manchen Broker-Apps (z.B. Trade Republic) ist NICHT enthalten - "
         "das ist brokerinterne Handelsaktivitaet bei Derivaten, nirgendwo "
         "oeffentlich verfuegbar.",
-        "- **Gesamt**: Kennzahlen-Score 0-100 (Zusammensetzung siehe unten). "
-        "**Kein statistisch ermitteltes Erfolgsmass** - keine Prognose, kein "
-        "Backtest dahinter.",
-        "- **Einordnung**: Textform des Scores (\u226580 sehr hoch, \u226565 hoch, \u226550 mittel, darunter niedrig).",
-        "- **Rang gestern / Rang Vorwoche**: Platzierung am letzten Handelstag "
-        "bzw. vor rund einer Woche in derselben Liste. \"neu\" = damals nicht "
-        "in den Top 40.",
-        "- **Warum (Kurzfassung)**: die staerksten Gruende fuer den Score dieser "
-        "Zeile, in Worten. Fliesst in den Score ein: je nach Liste u.a. "
-        "hoeheres Tief (Bodenbildung), Abstand zur 50-/100-/200-Tage-Linie, "
-        "RSI-Erholung (Optimum bei RSI 40-50, nicht 30 - Quelle: Constance "
-        "Brown), Volumen-Ausbruch (heutiges Volumen vs. 20-Tage-Schnitt), "
-        "Kauf-/Verkaufsdruck der letzten 5 Tage (Volumen an Anstiegs- vs. "
-        "Ruecksetzertagen, KEIN Leerverkaufs-/Shortdaten-Wert), relative "
-        "Staerke vs. Index, sowie bei Value KGV/Marge/Wachstum/Verschuldung.",
         "",
     ])
 
 
-def build_analyst_filter_section(today: dict) -> str:
-    """Eigenstaendiger Filter ueber ALLE ausgewerteten Werte (nicht nur die
-    Top 10 je Kategorie): Kursziel mindestens ANALYST_FILTER_MIN_UPSIDE% ueber
-    dem aktuellen Kurs UND mindestens ANALYST_FILTER_MIN_KAUFEN_PCT% der
-    Analysten auf Kaufen. Value-Trap-Ausschluesse gelten auch hier - ein
-    hohes Kurspotenzial bei einer Aktie mit z.B. einbrechendem Umsatz und
-    hoher Verschuldung waere kein verlaesslicher Treffer. Sortiert nach
-    Kurspotenzial absteigend, oben gedeckelt bei ANALYST_FILTER_TOP_N."""
+
+def analyst_filter_hits(today: dict) -> list:
+    """Ermittelt die Treffer fuer den Analysten-Filter: Kursziel mindestens
+    ANALYST_FILTER_MIN_UPSIDE% ueber dem aktuellen Kurs UND mindestens
+    ANALYST_FILTER_MIN_KAUFEN_PCT% der Analysten auf Kaufen, ueber ALLE
+    ausgewerteten Werte (nicht nur alte Top-10-Listen). Value-Trap-
+    Ausschluesse gelten auch hier. Sortiert nach Kaufen-Anteil absteigend,
+    bei Gleichstand nach Kurspotenzial absteigend, gedeckelt bei
+    ANALYST_FILTER_TOP_N. Gibt Liste von (Ticker, Zeile, Kaufen-Anteil) zurueck."""
     hits = []
     for t, row in today["rows"].items():
         if row["flags"]:
@@ -1253,17 +1310,26 @@ def build_analyst_filter_section(today: dict) -> str:
         if upside is None or rb is None:
             continue
         if upside >= ANALYST_FILTER_MIN_UPSIDE and rb["kaufen_pct"] >= ANALYST_FILTER_MIN_KAUFEN_PCT:
-            hits.append((t, row, upside))
-    hits.sort(key=lambda x: x[2], reverse=True)
-    hits = hits[:ANALYST_FILTER_TOP_N]
+            hits.append((t, row, rb["kaufen_pct"], upside))
+    hits.sort(key=lambda x: (x[2], x[3]), reverse=True)
+    return [(t, row, kp) for t, row, kp, _ in hits[:ANALYST_FILTER_TOP_N]]
 
-    L = [f"## 🎯 Analysten-Filter (Kursziel \u2265{ANALYST_FILTER_MIN_UPSIDE}%, "
+
+def build_analyst_filter_section(today: dict, hits: list, hourly_rsi: dict | None = None) -> str:
+    """Darstellung der Analysten-Filter-Treffer (siehe analyst_filter_hits)
+    als Tabelle, sortiert nach Kaufen-Anteil absteigend. RSI auf drei
+    Zeitebenen: Tag (Standard-14-Tage-RSI), Woche (echte Neuberechnung auf
+    Wochenschlusskursen), Stunde (echte Neuberechnung auf Stundenkerzen,
+    nur fuer diese Treffer geladen - siehe get_hourly_rsi)."""
+    hourly_rsi = hourly_rsi or {}
+    L = [f"## \U0001F3AF Analysten-Filter (Kursziel \u2265{ANALYST_FILTER_MIN_UPSIDE}%, "
          f"Kaufen-Anteil \u2265{ANALYST_FILTER_MIN_KAUFEN_PCT}%)", "",
-         f"_Ueber alle {len(today['rows'])} ausgewerteten Werte, nicht nur die Top-10-Listen. "
-         "Sortiert nach Kurspotenzial absteigend, maximal "
-         f"{ANALYST_FILTER_TOP_N} Treffer. Value-Trap-Ausschluesse gelten auch hier. "
-         "Reine Analysten-Kennzahlen, keine technische Bestaetigung enthalten - "
-         "siehe Glossar und Hinweis am Ende._", ""]
+         f"_Ueber alle {len(today['rows'])} ausgewerteten Werte. Sortiert nach "
+         "Kaufen-Anteil absteigend, bei Gleichstand nach Kurspotenzial. Maximal "
+         f"{ANALYST_FILTER_TOP_N} Treffer. Value-Trap-Ausschluesse gelten auch "
+         "hier. RSI auf drei Zeitebenen, jeweils echt neu berechnet (nicht "
+         "umgerechnet): Tag, Woche, Stunde. \"k.A.\" bei Stunde heisst: fuer "
+         "diesen Wert lagen keine verwertbaren Stundenkerzen vor._", ""]
 
     if not hits:
         L.append("Heute kein Treffer.")
@@ -1271,14 +1337,19 @@ def build_analyst_filter_section(today: dict) -> str:
         return "\n".join(L)
 
     L.append("| Rang | Ticker | ISIN | Name | Index | Kurs | Abstand ATH (Info) | "
-             "Kaufen-Anteil Analysten | Kursziel | Letztes Rating |")
-    L.append("|---|---|---|---|---|---|---|---|---|---|")
-    for i, (t, row, upside) in enumerate(hits, 1):
+             "Kaufen-Anteil Analysten | Kursziel | RSI Tag | RSI Woche | RSI Stunde | Letztes Rating |")
+    L.append("|---|---|---|---|---|---|---|---|---|---|---|---|---|")
+    for i, (t, row, _) in enumerate(hits, 1):
         m = row["metrics"]
         target = row.get("target", {})
+        rsi_d = f"{m['rsi14']:.0f}" if m.get("rsi14") is not None else "k.A."
+        rsi_w = f"{m['rsi_week']:.0f}" if m.get("rsi_week") is not None else "k.A."
+        rh = hourly_rsi.get(t)
+        rsi_h = f"{rh:.0f}" if rh is not None else "k.A."
         L.append(f"| {i} | {t} | {row.get('isin') or '-'} | {row['name']} | {row['index']} | "
                  f"{m['last']:.2f} | {m['dd_ath']:.0f}% | {kaufen_pct_cell(target)} | "
-                 f"{kursziel_cell(target)} | {letztes_rating_cell(row.get('analyst', {}).get('actions'))} |")
+                 f"{kursziel_cell(target)} | {rsi_d} | {rsi_w} | {rsi_h} | "
+                 f"{letztes_rating_cell(row.get('analyst', {}).get('actions'))} |")
     L.append("")
     return "\n".join(L)
 
@@ -1334,16 +1405,20 @@ def build_extras_section(extras_rows: dict) -> str:
     return "\n".join(L)
 
 
-def build_analyst_section(today: dict) -> str:
+def build_analyst_section(today: dict, tickers: list) -> str:
     """Klare, eindeutige Liste je Wert: Datum, Bank, konkrete Einstufung.
-    Nur fuer Werte, die aktuell in einer Top-10-Liste stehen (dedupliziert,
-    ein Wert kann in mehreren Kategorien auftauchen)."""
-    tickers = sorted({t for name in LISTS for t in today["ranks_full"][name][:10]})
+    Fuer die uebergebenen Ticker (typischerweise die Treffer des
+    Analysten-Filters)."""
+    tickers = sorted(tickers)
     richtung_text = {
         "up": "Hochstufung", "down": "Herabstufung",
         "init": "Erstbewertung", "reit": "Bestaetigung", "main": "Bestaetigung",
     }
-    L = ["## 🧭 Analysten-Einstufungen (Top 10, letzte 30 Tage)", ""]
+    L = ["## \U0001F9ED Analysten-Einstufungen (Filtertreffer, letzte 30 Tage)", ""]
+    if not tickers:
+        L.append("Keine Treffer heute, daher keine Einzelaufstellung.")
+        L.append("")
+        return "\n".join(L)
     for t in tickers:
         row = today["rows"][t]
         L.append(f"**{t}** ({row['name']}, {row['index']})")
@@ -1378,7 +1453,16 @@ def fmt_row(t: str, row: dict, list_name: str) -> str:
     return line
 
 
-def build_report(today: dict, prev: dict, changes: dict, get_rank, extras_rows: dict) -> str:
+def build_report(today: dict, prev: dict, changes: dict, get_rank, extras_rows: dict,
+                  hourly_rsi: dict | None = None) -> str:
+    """Stark vereinfacht auf Wunsch: nur noch der Analysten-Filter (Kursziel
+    >=X%, Kaufen-Anteil >=Y%) plus die zugehoerige Einzelaufstellung der
+    Ratingaenderungen. Die frueheren Turnaround-/Momentum-/Value-Top-10-
+    Tabellen, die Rohstoffe/Krypto-Uebersicht und die taeglichen
+    Veraenderungsmeldungen sind bewusst entfernt - das hier ist jetzt das
+    Hauptaugenmerk. Die Score-Berechnung selbst laeuft im Hintergrund
+    unveraendert weiter (u.a. fuer den Value-Trap-Ausschluss), wird aber
+    nicht mehr angezeigt."""
     L = []
     L.append(f"# Boersen-Screening - {today['date']}")
     L.append("")
@@ -1386,105 +1470,22 @@ def build_report(today: dict, prev: dict, changes: dict, get_rank, extras_rows: 
              f"{len(today['rows'])} Werte ausgewertet._")
     L.append("")
     L.append(build_glossary())
-    L.append(build_analyst_filter_section(today))
-    L.append(build_top10_tables(today, get_rank))
+
+    filter_hits = analyst_filter_hits(today)
+    L.append(build_analyst_filter_section(today, filter_hits, hourly_rsi))
     L.append("")
-    L.append(build_analyst_section(today))
+    hit_tickers = [t for t, _, _ in filter_hits]
+    L.append(build_analyst_section(today, hit_tickers))
     L.append("")
-    extras_section = build_extras_section(extras_rows)
-    if extras_section:
-        L.append(extras_section)
-        L.append("")
-
-    if prev is None:
-        L.append("## Erstlauf - Baseline angelegt")
-        L.append("")
-        L.append("Ab morgen werden hier zusaetzlich Veraenderungen gemeldet. "
-                 "Vollstaendige Top-15-Listen mit Begruendung:")
-        L.append("")
-        for name in LISTS:
-            L.append(f"### {LIST_TITLES[name]}")
-            L.append("")
-            for i, t in enumerate(today["ranks"][name], 1):
-                L.append(f"{i}. {fmt_row(t, today['rows'][t], name)}")
-            L.append("")
-        if today.get("missing"):
-            L.append(f"_Nicht auswertbar heute ({len(today['missing'])}): "
-                     f"{', '.join(today['missing'])}_")
-            L.append("")
-        return "\n".join(L)
-
-    any_change = any(
-        changes[n]["entries"] or changes[n]["exits"] or changes[n]["moves"] for n in LISTS
-    ) or changes.get("analyst_flips")
-
-    if not any_change:
-        L.append("## Keine Veraenderungen")
-        L.append("")
-        L.append(f"Alle drei Top-{TOP_N}-Listen unveraendert gegenueber {prev['date']}. "
-                 "Kein Handlungsbedarf.")
-        L.append("")
-    else:
-        for name in LISTS:
-            c = changes[name]
-            if not (c["entries"] or c["exits"] or c["moves"]):
-                continue
-            L.append(f"## {LIST_TITLES[name]}")
-            L.append("")
-            for e in c["entries"]:
-                row = today["rows"][e["ticker"]]
-                L.append(f"- ⬆️ **NEU auf Platz {e['rank']}**: {fmt_row(e['ticker'], row, name)}")
-            for e in c["exits"]:
-                row = today["rows"].get(e["ticker"])
-                extra = ""
-                if row:
-                    extra = (f" - jetzt Score {row['scores'][name]:.0f}"
-                             + (f", Ausschluss: {', '.join(row['flags'])}" if row["flags"] else ""))
-                L.append(f"- ⬇️ **RAUS** (war Platz {e['old_rank']}): {e['ticker']}{extra}")
-            for e in c["moves"]:
-                arrow = "↗️" if e["delta"] > 0 else "↘️"
-                L.append(f"- {arrow} {e['ticker']}: {abs(e['delta'])} Plaetze "
-                         f"{'hoch' if e['delta'] > 0 else 'runter'}, jetzt Platz {e['rank']}")
-            L.append("")
-
-        flips = changes.get("analyst_flips") or []
-        if flips:
-            L.append("## 🔄 Analysten-Sentiment gedreht (letzte 30 Tage)")
-            L.append("")
-            for e in flips:
-                row = today["rows"][e["ticker"]]
-                richtung = "positiv" if e["now"] > 0 else "negativ"
-                L.append(f"- {e['ticker']} ({row['name']}): jetzt netto {richtung} "
-                         f"({e['now']:+d}, gestern {e['old']:+d})")
-            L.append("")
-
-    # Termin- und Risikohinweise fuer alle aktuell gelisteten Werte
-    watch = sorted({t for n in LISTS for t in today["ranks"][n]})
-    earnings = [(t, today["rows"][t]["earnings_in"]) for t in watch
-                if today["rows"][t]["earnings_in"] is not None
-                and today["rows"][t]["earnings_in"] <= EARNINGS_WARN_DAYS]
-    if earnings:
-        L.append("## ⚠️ Quartalszahlen in Kuerze")
-        L.append("")
-        for t, d in sorted(earnings, key=lambda x: x[1]):
-            L.append(f"- {t}: in {d} Tag(en)")
-        L.append("")
 
     L.append("---")
     L.append("")
-    L.append(f"_Aktuelle Listen: Turnaround {', '.join(today['ranks']['turnaround'][:5])} ... | "
-             f"Momentum {', '.join(today['ranks']['momentum'][:5])} ... | "
-             f"Value {', '.join(today['ranks']['value'][:5])} ..._")
     if today.get("missing"):
-        L.append("")
         L.append(f"_Nicht auswertbar heute ({len(today['missing'])}): "
                  f"{', '.join(today['missing'])}_")
-    L.append("")
+        L.append("")
     L.append("_Automatisch erzeugte Kennzahlensortierung, keine Anlageberatung._")
     return "\n".join(L)
-
-
-# ---------------------------------------------------------------------------
 
 def main() -> int:
     members, benchmarks, extras = load_universe()
@@ -1516,7 +1517,14 @@ def main() -> int:
 
     rank_history = load_rank_history()
     get_rank = build_rank_lookup(rank_history, today["date"])
-    report = build_report(today, prev, changes, get_rank, extras_rows)
+
+    # Stunden-RSI nur fuer die Analysten-Filter-Treffer holen (kleine Liste,
+    # spart einen zusaetzlichen Datenabruf je Wert fuer das ganze Universum).
+    filter_hits = analyst_filter_hits(today)
+    hit_tickers = [t for t, _, _ in filter_hits]
+    hourly_rsi = get_hourly_rsi(hit_tickers)
+
+    report = build_report(today, prev, changes, get_rank, extras_rows, hourly_rsi)
 
     DOCS_DIR.mkdir(parents=True, exist_ok=True)
     STATE_DIR.mkdir(parents=True, exist_ok=True)

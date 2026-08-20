@@ -1,16 +1,24 @@
 #!/usr/bin/env python3
 """
 Boersen-Screening: NASDAQ-100, Dow Jones 30, DAX 40.
-Version 15 (2026-08-20): Zwei Nachbesserungen aus konkretem Nutzer-Feedback
-(Vergleich mit einer Broker-App):
-1) "% zum Kurs" war mehrdeutig - jetzt eindeutig "X% unter/ueber aktuellem
-   Kurs".
-2) Neue Kaufen/Halten/Verkaufen-Prozentaufteilung der Analysten (wie in
-   vielen Broker-Apps ueblich), aus yfinance's Recommendations-Endpoint.
-   Das browserinterne "Long/Short"-Verhaeltnis mancher Apps (z.B. Trade
-   Republic, Handelsaktivitaet bei Derivaten) ist NICHT nachbaubar - das ist
-   proprietaere, nicht oeffentlich zugaengliche Handelsdaten des Brokers.
-Baut auf Version 14 auf.
+Version 16 (2026-08-20): Grundlegende Vereinfachung nach konkretem, deutlichem
+Feedback ("passt nicht zusammen", 20 Spalten nicht mehr lesbar):
+1) BUGFIX: Yahoo-Aktionstyp "main" (Rating unveraendert bestaetigt) wurde
+   nicht uebersetzt und mit "gestuft" zusammengeklebt -> kaputte Woerter wie
+   "maingestuft auf X", "Startgestuft", "bestaetigtgestuft". Jetzt sauber
+   ueber vollstaendige Phrasen (action_phrase()), keine Konkatenation mehr.
+2) Tabelle radikal verschlankt: von 20 auf 15 Spalten. Alle Einzelscore-
+   Spalten (Hoeheres Tief, Abstand 50T/100T/200T-Linie, RSI-Erholung,
+   Volumen-Ausbruch, Position 52W-Spanne, Kauf-/Verkaufsdruck, KGV/Marge/etc.)
+   sind aus der Tabelle raus - der Score wird weiterhin genauso berechnet,
+   aber nicht mehr als 10+ Einzelspalten gezeigt (das hat mehr verwirrt als
+   erklaert). Stattdessen: eine Spalte "Warum (Kurzfassung)" mit den 2-3
+   staerksten Gruenden in Klartext.
+3) Analysten-Ziel-Spalte in drei einfache Spalten aufgeteilt: "Kaufen-Anteil
+   Analysten" (NUR der Kaufen-Prozentsatz, Halten/Verkaufen raus wie
+   gewuenscht), "Kursziel" (Wert + Abstand), "Letztes Rating" (EINE
+   Ratingaenderung, nicht mehr zwei).
+Baut auf Version 15 auf.
 
 Erzeugt drei getrennte Ranglisten (Turnaround, Momentum, Value/Qualitaet),
 vergleicht sie mit dem Vortag und schreibt einen Report, der NUR
@@ -905,42 +913,49 @@ def target_price_info(f: dict, a: dict, last: float) -> dict:
             "n_analysts": n_analysts, "empfehlung": empfehlung, "rec_breakdown": rec_breakdown}
 
 
-def format_target(info: dict, actions: list | None = None) -> str:
-    """Kursziel-Zelle: absoluter Wert + Abstand, PLUS Kaufen/Halten/Verkaufen-
-    Aufteilung in Prozent (wie bei den meisten Broker-Apps ueblich), PLUS die
-    konkrete(n) juengste(n) Ratingaenderung(en) mit Bank und Datum - "12
-    Analysten" allein ist zu vage, aber welche einzelne Bank welchen genauen
-    Kurszielwert genannt hat, liefert Yahoo kostenlos nicht (nur den
-    Durchschnitt aller Analysten). Was es kostenlos gibt: die Aufteilung
-    in Kaufen/Halten/Verkaufen UND wer wann seine EINSTUFUNG geaendert hat."""
-    if info.get("target_abs") is None:
-        emp = info.get("empfehlung")
-        base = "kein Kursziel verfuegbar" + (f" (Empfehlung: {emp})" if emp else "")
-    else:
-        rb = info.get("rec_breakdown")
-        if rb:
-            n_txt = f" ({rb['total']} Analysten)"
-            rec_txt = f", {rb['kaufen_pct']}% Kaufen / {rb['halten_pct']}% Halten / {rb['verkaufen_pct']}% Verkaufen{n_txt}"
-        else:
-            n = info.get("n_analysts")
-            emp = info.get("empfehlung")
-            rec_txt = (f", Schnitt aus {n} Analysten" if n else "") + (f", Empfehlung: {emp}" if emp else "")
-        richtung = "unter" if info["upside_pct"] < 0 else "ueber"
-        base = f"{info['target_abs']:.2f} ({abs(info['upside_pct']):.0f}% {richtung} aktuellem Kurs{rec_txt})"
+def action_phrase(action: str | None, to_grade: str | None) -> str:
+    """Vollstaendige, grammatisch korrekte Phrase fuer eine Analysten-Aktion.
+    Frueher wurde ein Richtungswort + 'gestuft' zusammengeklebt - das ergab
+    bei allem ausser hoch/runter kaputte Woerter (z.B. 'maingestuft' fuer den
+    Yahoo-Aktionstyp 'main' = Rating unveraendert bestaetigt)."""
+    templates = {
+        "up": "hochgestuft" + (f" auf {to_grade}" if to_grade else ""),
+        "down": "abgestuft" + (f" auf {to_grade}" if to_grade else ""),
+        "init": "neu bewertet" + (f" mit {to_grade}" if to_grade else ""),
+        "reit": "Rating bestaetigt" + (f": {to_grade}" if to_grade else ""),
+        "main": "Rating bestaetigt" + (f": {to_grade}" if to_grade else ""),
+    }
+    return templates.get(action, (action or "Aenderung") + (f" ({to_grade})" if to_grade else ""))
 
-    if actions:
-        richtung_kurz = {"up": "hoch", "down": "runter", "init": "Start", "reit": "bestaetigt"}
-        named = []
-        for act in actions[:2]:
-            firm = act.get("firm") or "unbekannte Bank"
-            date = act.get("date") or "?"
-            rk = richtung_kurz.get(act.get("action"), act.get("action") or "-")
-            grade = f" auf {act['to_grade']}" if act.get("to_grade") else ""
-            named.append(f"{date} {firm} ({rk}gestuft{grade})")
-        base += " | zuletzt: " + "; ".join(named)
-    else:
-        base += " | keine Ratingaenderung in den letzten 30 Tagen bekannt"
-    return base
+
+def kaufen_pct_cell(info: dict) -> str:
+    """NUR der Kaufen-Anteil der Analysten, als eigene, kompakte Spalte -
+    Halten/Verkaufen interessieren hier nicht extra, die stecken implizit
+    im Rest."""
+    rb = info.get("rec_breakdown")
+    if rb:
+        return f"{rb['kaufen_pct']}% ({rb['total']} Analysten)"
+    emp = info.get("empfehlung")
+    return emp if emp else "keine Daten"
+
+
+def kursziel_cell(info: dict) -> str:
+    """Nur der Kurszielwert + Abstand - kompakt, ohne Kaufen/Halten/Verkaufen
+    (das steht jetzt in einer eigenen Spalte)."""
+    if info.get("target_abs") is None:
+        return "kein Kursziel verfuegbar"
+    richtung = "unter" if info["upside_pct"] < 0 else "ueber"
+    return f"{info['target_abs']:.2f} ({abs(info['upside_pct']):.0f}% {richtung} Kurs)"
+
+
+def letztes_rating_cell(actions: list | None) -> str:
+    """Nur die EINE juengste Ratingaenderung, kompakt: Datum, Bank, Aktion."""
+    if not actions:
+        return "keine in 30T"
+    act = actions[0]
+    firm = act.get("firm") or "unbekannte Bank"
+    date = act.get("date") or "?"
+    return f"{date} {firm}: {action_phrase(act.get('action'), act.get('to_grade'))}"
 
 
 def exclusions(m: dict, f: dict) -> list[str]:
@@ -1188,57 +1203,41 @@ def build_rank_lookup(history: list[dict], today_date: str):
 
 def build_glossary() -> str:
     return "\n".join([
-        "## 📖 Glossar (was die Spalten bedeuten)", "",
-        "**Kopfdaten (immer zuerst):**",
+        "## \U0001F4D6 Glossar (was die Spalten bedeuten)", "",
         "- **Kurs**: letzter Schlusskurs.",
         "- **Abstand ATH**: wie weit der Kurs unter dem Allzeithoch liegt. "
         "Rein informativ, fliesst NICHT in den Score ein - es gibt keine belegte "
         "\"gesunde\" Schwelle dafuer (siehe Hinweis am Ende).",
-        "- **Analysten-Ziel**: mittleres Kursziel der Analysten (absoluter Wert, "
-        "Durchschnitt aller erfassten Analysten), z.B. \"67% unter aktuellem Kurs\" "
-        "heisst: das Kursziel liegt 67% UNTER dem, was die Aktie gerade kostet. "
-        "Kaufen/Halten/Verkaufen-Prozente: Anteil der Analysten je Einstufung, "
-        "wie in vielen Broker-Apps ueblich. WICHTIG: das Kursziel ist ein "
-        "Durchschnitt, keine Einzelmeinung - welcher konkrete Analyst welchen "
-        "genauen Kurszielwert genannt hat, liefert die kostenlose Datenquelle "
-        "nicht (dafuer braeuchte es einen kostenpflichtigen Dienst wie "
-        "TipRanks). Was es kostenlos gibt und mit ausgewiesen wird: die "
-        "juengste(n) namentliche(n) Rating-AENDERUNG(EN) mit Bank und Datum "
-        "(z.B. \"15.08. Morgan Stanley (hochgestuft auf Buy)\") - eine "
-        "Ratingaenderung ist nicht dasselbe wie ein neuer Kurszielwert, geht "
-        "aber in der Praxis meist damit einher. Das \"Long/Short\"-Verhaeltnis "
+        "- **Kaufen-Anteil Analysten**: Anteil der Analysten mit einer "
+        "Kaufen-Einstufung, z.B. \"89% (46 Analysten)\" heisst: 89% von 46 "
+        "erfassten Analysten empfehlen den Kauf.",
+        "- **Kursziel**: mittleres Kursziel aller Analysten (Durchschnitt, keine "
+        "Einzelmeinung) und Abstand zum aktuellen Kurs, z.B. \"67% unter "
+        "aktuellem Kurs\" heisst: das Kursziel liegt 67% UNTER dem, was die "
+        "Aktie gerade kostet.",
+        "- **Letztes Rating**: die juengste namentliche Ratingaenderung mit "
+        "Bank und Datum. WICHTIG: welcher Analyst welchen genauen Kurszielwert "
+        "genannt hat, liefert die kostenlose Datenquelle nicht (nur den "
+        "Durchschnitt aller Analysten) - dafuer braeuchte es einen "
+        "kostenpflichtigen Dienst wie TipRanks. Das \"Long/Short\"-Verhaeltnis "
         "aus manchen Broker-Apps (z.B. Trade Republic) ist NICHT enthalten - "
         "das ist brokerinterne Handelsaktivitaet bei Derivaten, nirgendwo "
-        "oeffentlich als Datenquelle verfuegbar.",
-        "",
-        "**Technische Bestaetigung (Score-Spalten):** je Spalte \"erzielte Punkte / "
-        "Maximum (zugrundeliegender Wert im Klartext)\".",
-        "- **Hoeheres Tief**: Tiefpunkt der letzten 30 Handelstage vs. Tiefpunkt der "
-        "90 Tage davor - ein hoeheres Tief spricht fuer eine beginnende Bodenbildung.",
-        "- **Abstand 50T-/100T-/200T-Linie**: wie weit der Kurs prozentual ueber "
-        "oder unter der jeweiligen gleitenden Durchschnittslinie liegt (0% = Kurs "
-        "genau auf der Linie).",
-        "- **50T-/200T-Linie im Aufwaertstrend**: steigt die Linie SELBST gerade "
-        "(nicht der Kurs) - ein traeger Fruehindikator fuer eine Trendwende.",
-        "- **RSI-Erholung**: Momentum-Indikator (0-100). Optimum bei 40-50 (siehe "
-        "Notiz am Ende, Quelle: Constance Brown), nicht bei 30 wie oft angenommen.",
-        "- **Volumen-Ausbruch**: heutiges Handelsvolumen im Vergleich zum "
-        "20-Tage-Durchschnitt davor. \"unterdurchschnittlich\" (unter 1x) bekommt "
-        "bewusst 0 Punkte - kein Ausbruch, egal wie nah an 1x.",
-        "- **Kauf-/Verkaufsdruck 5T**: Verhaeltnis von Handelsvolumen an "
-        "Anstiegs- zu Ruecksetzertagen der letzten 5 Tage. Ueber 1x = mehr Kaeufer "
-        "als Verkaeufer, unter 1x = mehr Verkaeufer als Kaeufer. Kein "
-        "Leerverkaufs-/Shortdaten-Wert (siehe Hinweis am Ende).",
-        "- **Rel. Staerke 6M**: Wertentwicklung der letzten 6 Monate im Vergleich "
-        "zum eigenen Index (NASDAQ/Dow/DAX).",
-        "- **Position 52W-Spanne**: wo der Kurs innerhalb der 52-Wochen-Spanne "
-        "steht (0% = Jahrestief, 100% = Jahreshoch).",
-        "- **Gesamt**: Summe aller Punkte-Spalten dieser Zeile, 0-100. **Kein "
-        "statistisch ermitteltes Erfolgsmass** - ein Kennzahlen-Score, keine "
-        "Prognose (kein Backtest dahinter).",
+        "oeffentlich verfuegbar.",
+        "- **Gesamt**: Kennzahlen-Score 0-100 (Zusammensetzung siehe unten). "
+        "**Kein statistisch ermitteltes Erfolgsmass** - keine Prognose, kein "
+        "Backtest dahinter.",
+        "- **Einordnung**: Textform des Scores (\u226580 sehr hoch, \u226565 hoch, \u226550 mittel, darunter niedrig).",
         "- **Rang gestern / Rang Vorwoche**: Platzierung am letzten Handelstag "
-        "bzw. vor rund einer Woche in derselben Liste. \"neu\" = damals nicht in "
-        "den Top 40.",
+        "bzw. vor rund einer Woche in derselben Liste. \"neu\" = damals nicht "
+        "in den Top 40.",
+        "- **Warum (Kurzfassung)**: die staerksten Gruende fuer den Score dieser "
+        "Zeile, in Worten. Fliesst in den Score ein: je nach Liste u.a. "
+        "hoeheres Tief (Bodenbildung), Abstand zur 50-/100-/200-Tage-Linie, "
+        "RSI-Erholung (Optimum bei RSI 40-50, nicht 30 - Quelle: Constance "
+        "Brown), Volumen-Ausbruch (heutiges Volumen vs. 20-Tage-Schnitt), "
+        "Kauf-/Verkaufsdruck der letzten 5 Tage (Volumen an Anstiegs- vs. "
+        "Ruecksetzertagen, KEIN Leerverkaufs-/Shortdaten-Wert), relative "
+        "Staerke vs. Index, sowie bei Value KGV/Marge/Wachstum/Verschuldung.",
         "",
     ])
 
@@ -1246,13 +1245,11 @@ def build_glossary() -> str:
 def build_top10_tables(today: dict, get_rank) -> str:
     L = ["## 📊 Aktuelle Top 10", ""]
     for name in LISTS:
-        sample = today["rows"][today["ranks_full"][name][0]]["breakdown"][name] if today["ranks_full"][name] else []
-        labels = [x["label"] for x in sample]
-
         L.append(f"### {LIST_TITLES[name]}")
         L.append("")
         header = ["Rang", "Ticker", "ISIN", "Name", "Index", "Kurs", "Abstand ATH (Info)",
-                   "Analysten-Ziel"] + labels + ["**Gesamt**", "Einordnung", "Rang gestern", "Rang Vorwoche"]
+                   "Kaufen-Anteil Analysten", "Kursziel", "Letztes Rating",
+                   "**Gesamt**", "Einordnung", "Rang gestern", "Rang Vorwoche", "Warum (Kurzfassung)"]
         L.append("| " + " | ".join(header) + " |")
         L.append("|" + "---|" * len(header))
 
@@ -1260,16 +1257,17 @@ def build_top10_tables(today: dict, get_rank) -> str:
             row = today["rows"][t]
             m = row["metrics"]
             score = row["scores"][name]
-            bd = row["breakdown"][name]
             ry = get_rank(name, t, "yesterday")
             rw = get_rank(name, t, "lastweek")
             ry_s = str(ry) if ry else "neu"
             rw_s = str(rw) if rw else "neu"
-            factor_cells = [f"{x['points']:.0f}/{x['max']:.0f} ({x['detail']})" for x in bd]
+            target = row.get("target", {})
+            why = "; ".join(row["why"][name][:3]) or "-"
             cells = [str(i), t, row.get("isin") or "-", row["name"], row["index"],
                      f"{m['last']:.2f}", f"{m['dd_ath']:.0f}%",
-                     format_target(row.get("target", {}), row.get("analyst", {}).get("actions"))] + factor_cells + \
-                    [f"**{score:.0f}**", score_label(score), ry_s, rw_s]
+                     kaufen_pct_cell(target), kursziel_cell(target),
+                     letztes_rating_cell(row.get("analyst", {}).get("actions")),
+                     f"**{score:.0f}**", score_label(score), ry_s, rw_s, why]
             L.append("| " + " | ".join(cells) + " |")
         L.append("")
     return "\n".join(L)
@@ -1302,7 +1300,7 @@ def build_analyst_section(today: dict) -> str:
     tickers = sorted({t for name in LISTS for t in today["ranks_full"][name][:10]})
     richtung_text = {
         "up": "Hochstufung", "down": "Herabstufung",
-        "init": "Erstbewertung", "reit": "Bestaetigung",
+        "init": "Erstbewertung", "reit": "Bestaetigung", "main": "Bestaetigung",
     }
     L = ["## 🧭 Analysten-Einstufungen (Top 10, letzte 30 Tage)", ""]
     for t in tickers:

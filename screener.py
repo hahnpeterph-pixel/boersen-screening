@@ -1,15 +1,12 @@
 #!/usr/bin/env python3
 """
 Boersen-Screening: NASDAQ-100, Dow Jones 30, DAX 40.
-Version 9 (2026-08-20): RSI-Erholung inhaltlich neu kalibriert nach
-Constance Browns "RSI Range Shift"-Konzept (Technical Analysis for the
-Trading Professional): starke Aktien in einem echten Aufwaertstrend
-erreichen den klassischen RSI-30-Wert oft gar nicht, die Spanne verschiebt
-sich stattdessen auf ca. 40-90, wobei 40-50 als Unterstuetzung/verlaesslicher
-Einstieg gilt statt des klassischen 30er-Bounce (der eher in noch nicht
-trendbestaetigten Werten funktioniert). Optimum daher jetzt bei RSI 40-50
-statt vorher 42-58, mit deutlich staerkerem Abfall Richtung RSI 70+.
-Baut auf Version 8 auf (Log-Skala Kauf/Verkaufsdruck, stufenlose RSI-Kurve).
+Version 12 (2026-08-20): Neue Spalte "Kursziel-Abstand" in allen drei Top-10-
+Tabellen (nicht nur bei Value): Abstand des Kurses zum mittleren Analysten-
+Kursziel, gekennzeichnet als "frisch" (Ratingaenderung innerhalb der letzten
+14 Tage, Kursziel damit vermutlich aktuell bestaetigt) oder "evtl. aelter"
+(kein Datum-Beleg fuer Aktualitaet, aber trotzdem angezeigt statt weggelassen).
+Baut auf Version 11 auf (Plateau-Kurven, 100T-Linie, Rohstoffe/Krypto).
 
 Erzeugt drei getrennte Ranglisten (Turnaround, Momentum, Value/Qualitaet),
 vergleicht sie mit dem Vortag und schreibt einen Report, der NUR
@@ -65,9 +62,10 @@ ANALYST_MAX_AGE_DAYS = 1  # Ratingaenderungen taeglich frisch - das ist das kurz
 # mit abweichender Version wird ignoriert (sofort neu geholt), egal wie
 # frisch er nach dem Alter waere - sonst benutzt ein neuer Programmlauf
 # unbemerkt einen Cache mit alter, unvollstaendiger Datenstruktur.
-FUND_CACHE_VERSION = 2
+FUND_CACHE_VERSION = 3
 ANALYST_CACHE_VERSION = 2
 REVISION_WINDOW_DAYS = 30  # Fenster fuer "kurzfristige" Analysten-Ratingaenderungen
+TARGET_FRESH_DAYS = 14     # Kursziel gilt als "frisch", wenn eine Ratingaenderung diese Zeit nicht ueberschreitet
 EARNINGS_WARN_DAYS = 5  # Warnung vor Quartalszahlen
 
 LISTS = ("turnaround", "momentum", "value")
@@ -136,14 +134,21 @@ def safe(d: dict, key: str, default=None):
 # Datenbeschaffung
 # ---------------------------------------------------------------------------
 
-def load_universe() -> tuple[dict, dict]:
+def load_universe() -> tuple[dict, dict, dict]:
     raw = json.loads(UNIVERSE_FILE.read_text(encoding="utf-8"))
     benchmarks = raw["benchmarks"]
     members: dict[str, list[str]] = {}
     for idx in benchmarks:
         for t in raw.get(idx, []):
             members.setdefault(t, []).append(idx)
-    return members, benchmarks
+    # Rohstoffe/Krypto: bewusst getrennt von den Aktien-Ranglisten. Sie haben
+    # keine Fundamentaldaten, keinen Sektor und keinen Index - der Value-Score
+    # und der Sektor-Deckel ergeben fuer sie keinen Sinn. Sie laufen technisch
+    # (Turnaround-/Momentum-Kriterien) mit, werden aber nur informativ gezeigt.
+    extras: dict[str, str] = {}
+    extras.update(raw.get("COMMODITIES", {}))
+    extras.update(raw.get("CRYPTO", {}))
+    return members, benchmarks, extras
 
 
 def fetch_yahoo(tickers: list[str]) -> dict[str, pd.DataFrame]:
@@ -256,8 +261,14 @@ def get_fundamentals(tickers: list[str]) -> dict:
     data: dict[str, dict] = {}
     for n, t in enumerate(tickers, 1):
         try:
-            info = yf.Ticker(t).info or {}
+            tk = yf.Ticker(t)
+            info = tk.info or {}
             data[t] = {k: info.get(k) for k in keys}
+            try:
+                isin = tk.isin
+                data[t]["isin"] = isin if isin and isin != "-" else None
+            except Exception:  # noqa: BLE001
+                data[t]["isin"] = None
         except Exception:  # noqa: BLE001
             data[t] = {}
         if n % 25 == 0:
@@ -379,8 +390,10 @@ def compute_metrics(df: pd.DataFrame, bench: pd.Series | None) -> dict | None:
     range_pos = (last - lo52) / (hi52 - lo52) * 100 if hi52 > lo52 else 50.0
 
     sma50_s = close.rolling(50).mean()
+    sma100_s = close.rolling(100).mean()
     sma200_s = close.rolling(200).mean()
     sma50 = float(sma50_s.iloc[-1])
+    sma100 = float(sma100_s.iloc[-1]) if len(close) >= 100 else None
     sma200 = float(sma200_s.iloc[-1])
     sma50_slope = (sma50_s.iloc[-1] / sma50_s.iloc[-21] - 1) * 100
     sma200_slope = (sma200_s.iloc[-1] / sma200_s.iloc[-21] - 1) * 100
@@ -388,6 +401,7 @@ def compute_metrics(df: pd.DataFrame, bench: pd.Series | None) -> dict | None:
     low_recent = float(close.iloc[-30:].min())
     low_prev = float(close.iloc[-90:-30].min())
     higher_low = low_recent > low_prev
+    higher_low_pct = (low_recent / low_prev - 1) * 100 if low_prev > 0 else None
 
     rsi_s = rsi(close)
     rsi14 = float(rsi_s.iloc[-1])
@@ -404,13 +418,17 @@ def compute_metrics(df: pd.DataFrame, bench: pd.Series | None) -> dict | None:
         bench_perf = (float(b.iloc[-1]) / float(b.iloc[-127]) - 1) * 100
         rs6 = perf["m6"] - bench_perf
 
-    vol_ratio = None
-    if vol.notna().sum() > 60:
-        tail_c, tail_v = close.tail(60), vol.tail(60)
-        up = tail_c.diff() > 0
-        v_up, v_dn = tail_v[up].mean(), tail_v[~up].mean()
-        if v_dn and v_dn > 0:
-            vol_ratio = float(v_up / v_dn)
+    # Volumen-Ausbruch: heutiges Volumen vs. Durchschnitt der 20 Handelstage
+    # DAVOR (heute bewusst ausgeschlossen, sonst verzerrt ein Ausbruchstag
+    # seinen eigenen Referenzwert). Beantwortet "gibt es gerade einen
+    # Ausbruch", nicht "hat die Aktie generell hohes Volumen" - letzteres war
+    # die alte, zu lange (60 Tage) und falsch beantwortete Frage.
+    vol_breakout = None
+    if vol.notna().sum() > 21:
+        vol_today = float(vol.iloc[-1])
+        vol_avg20 = float(vol.iloc[-21:-1].mean())
+        if vol_avg20 > 0:
+            vol_breakout = vol_today / vol_avg20
 
     # Kauf-/Verkaufsdruck der letzten 5 Handelstage: Verhaeltnis des Volumens
     # an Anstiegstagen zu Ruecksetzertagen. Kein Short/Long-Wert (echte
@@ -433,16 +451,18 @@ def compute_metrics(df: pd.DataFrame, bench: pd.Series | None) -> dict | None:
         "days_since_ath": days_since_ath,
         "range_pos": round(range_pos, 1),
         "above_sma50": last > sma50,
+        "above_sma100": (last > sma100) if sma100 is not None else None,
         "above_sma200": last > sma200,
         "sma50_slope": round(float(sma50_slope), 2),
         "sma200_slope": round(float(sma200_slope), 2),
         "higher_low": bool(higher_low),
+        "higher_low_pct": round(higher_low_pct, 1) if higher_low_pct is not None else None,
         "rsi14": round(rsi14, 1),
         "rsi_min60": round(rsi_min60, 1),
         "perf": {k: round(v, 1) for k, v in perf.items()},
         "rs6": round(rs6, 1) if rs6 is not None else None,
         "vol_pressure_5d": round(vol_pressure_5d, 2) if vol_pressure_5d is not None else None,
-        "vol_ratio": round(vol_ratio, 2) if vol_ratio is not None else None,
+        "vol_breakout": round(vol_breakout, 2) if vol_breakout is not None else None,
     }
 
 
@@ -451,17 +471,40 @@ def compute_metrics(df: pd.DataFrame, bench: pd.Series | None) -> dict | None:
 # ---------------------------------------------------------------------------
 
 def pressure_score(vp: float | None, weight: float) -> tuple[float, str]:
-    """Punkte-Beitrag des 5-Tage-Kauf-/Verkaufsdrucks auf LOG-Skala statt
-    linear: linear deckelte z.B. 1.3x und 3.9x auf denselben Maximalwert
-    (nicht plausibel, da 3.9x ein deutlich staerkeres Signal ist als 1.3x).
-    Auf der Log-Skala braucht es einen Sprung von 0.8x auf 2.2x fuer die
-    volle Punktzahl - jeder Wert dazwischen wird sichtbar unterschieden."""
+    """Punkte-Beitrag von Kauf-/Verkaufsdruck-Kennzahlen (Verhaeltnis
+    Anstiegs- zu Ruecksetzervolumen) als PLATEAU auf Log-Skala:
+
+    - unter 0.6x: klar mehr Verkaufs- als Kaufvolumen -> 0 Punkte
+      (kein gutes Zeichen, verdient auch keine Punkte)
+    - 0.6x bis 1.2x: Uebergangszone, steigt linear von 0 auf voll
+    - 1.2x bis 2.5x: die eigentliche "gute" Zone -> volle Punktzahl
+    - ueber 2.5x: faellt wieder leicht ab, bis auf einen Sockel von 55%
+      der Punktzahl. Grund: ein Vielfaches wie 4x oder 6x an nur 5 Tagen
+      ist bei Einzelwerten oft ein einzelner Ausreissertag (duenn gehandelte
+      Aktie, ein Grossauftrag) statt breiter Kaufbereitschaft - bleibt aber
+      klar im positiven Bereich, wird nur nicht weiter blind belohnt.
+    """
     if vp is None:
         return weight * 0.5, "k.A."
     if vp <= 0:
         return 0.0, f"{vp:.2f}x"
-    v = ramp(math.log(vp), math.log(0.8), math.log(2.2))
-    return weight * v, f"{vp:.2f}x"
+
+    lv = math.log(vp)
+    lo, opt_lo, opt_hi, hi = math.log(0.6), math.log(1.2), math.log(2.5), math.log(6.0)
+    floor = 0.55
+
+    if lv <= lo:
+        frac = 0.0
+    elif lv < opt_lo:
+        frac = (lv - lo) / (opt_lo - lo)
+    elif lv <= opt_hi:
+        frac = 1.0
+    elif lv < hi:
+        frac = 1.0 - (1.0 - floor) * (lv - opt_hi) / (hi - opt_hi)
+    else:
+        frac = floor
+
+    return weight * frac, f"{vp:.2f}x"
 
 
 def rsi_recovery_score(rsi14: float, rsi_min60: float, weight_base: float,
@@ -502,15 +545,31 @@ def score_turnaround(m: dict) -> tuple[float, list[str], list[dict]]:
     if p > 12:
         why.append(f"{m['dd_ath']:.0f}% unter ATH")
 
-    p = 20.0 if m["higher_low"] else 0.0
-    b.append({"label": "Hoeheres Tief", "points": p, "max": 20, "detail": "ja" if m["higher_low"] else "nein"})
+    # Basis (15) fuer "ueberhaupt ein hoeheres Tief", plus Bonus (bis 5) je
+    # nachdem WIE VIEL hoeher - vorher reines Ja/Nein, das einen Hauch
+    # ueber dem vorherigen Tief genauso behandelte wie deutlich darueber.
+    hl_pct = m.get("higher_low_pct")
+    if m["higher_low"]:
+        bonus = 5 * ramp(hl_pct, 0, 15) if hl_pct is not None else 0.0
+        p = 15.0 + bonus
+        detail = f"ja, +{hl_pct:.1f}%" if hl_pct is not None else "ja"
+    else:
+        p, detail = 0.0, (f"nein, {hl_pct:.1f}%" if hl_pct is not None else "nein")
+    b.append({"label": "Hoeheres Tief", "points": round(p, 1), "max": 20, "detail": detail})
     if m["higher_low"]:
         why.append("hoeheres Tief")
 
-    p = 10.0 if m["above_sma50"] else 0.0
-    b.append({"label": "Ueber 50T-Linie", "points": p, "max": 10, "detail": "ja" if m["above_sma50"] else "nein"})
+    p = 7.0 if m["above_sma50"] else 0.0
+    b.append({"label": "Ueber 50T-Linie", "points": p, "max": 7, "detail": "ja" if m["above_sma50"] else "nein"})
     if m["above_sma50"]:
         why.append("ueber 50-Tage-Linie")
+
+    # NEU: 100-Tage-Linie als Zwischenschritt zwischen dem kurzfristigen
+    # 50T- und dem langfristigen 200T-Trend.
+    a100 = m.get("above_sma100")
+    p = 5.0 if a100 else 0.0
+    b.append({"label": "Ueber 100T-Linie", "points": p, "max": 5,
+              "detail": "ja" if a100 else ("nein" if a100 is False else "k.A.")})
 
     p = 10 * ramp(m["sma50_slope"], -1, 3)
     b.append({"label": "50T dreht", "points": round(p, 1), "max": 10, "detail": f"{m['sma50_slope']:+.1f}%"})
@@ -523,12 +582,11 @@ def score_turnaround(m: dict) -> tuple[float, list[str], list[dict]]:
     if p > 10:
         why.append("RSI erholt sich aus dem ueberverkauften Bereich")
 
-    if m["vol_ratio"] is not None:
-        p = 5 * ramp(m["vol_ratio"], 0.9, 1.3)
-        detail = f"{m['vol_ratio']:.2f}"
-    else:
-        p, detail = 0.0, "k.A."
-    b.append({"label": "Volumen 60T", "points": round(p, 1), "max": 5, "detail": detail})
+    # Volumen-Ausbruch: heutiges Volumen vs. 20-Tage-Durchschnitt. Nutzt
+    # dieselbe Plateau-Funktion wie pressure_score.
+    vb = m.get("vol_breakout")
+    p, detail = pressure_score(vb, 3)
+    b.append({"label": "Volumen-Ausbruch", "points": round(p, 1), "max": 3, "detail": detail})
 
     p = 5 * plateau(m["range_pos"], 5, 15, 55, 75)
     b.append({"label": "Range-Pos", "points": round(p, 1), "max": 5, "detail": f"{m['range_pos']:.0f}%"})
@@ -569,13 +627,19 @@ def score_momentum(m: dict) -> tuple[float, list[str], list[dict]]:
     b.append({"label": "Rel. Staerke 6M", "points": round(p, 1), "max": 20, "detail": detail})
 
     if m["above_sma50"] and m["above_sma200"]:
-        p, detail = 15.0, "beide"
+        p, detail = 10.0, "beide"
         why.append("ueber 50- und 200-Tage-Linie")
     elif m["above_sma200"]:
-        p, detail = 6.0, "nur 200T"
+        p, detail = 4.0, "nur 200T"
     else:
         p, detail = 0.0, "keine"
-    b.append({"label": "Ueber 50T+200T", "points": p, "max": 15, "detail": detail})
+    b.append({"label": "Ueber 50T+200T", "points": p, "max": 10, "detail": detail})
+
+    # NEU: 100-Tage-Linie als Zwischenschritt.
+    a100 = m.get("above_sma100")
+    p = 5.0 if a100 else 0.0
+    b.append({"label": "Ueber 100T-Linie", "points": p, "max": 5,
+              "detail": "ja" if a100 else ("nein" if a100 is False else "k.A.")})
 
     p = 10 * ramp(m["sma200_slope"], 0, 4)
     b.append({"label": "200T steigt", "points": round(p, 1), "max": 10, "detail": f"{m['sma200_slope']:+.1f}%"})
@@ -585,12 +649,9 @@ def score_momentum(m: dict) -> tuple[float, list[str], list[dict]]:
     p = 15 * ramp(m["range_pos"], 60, 90)
     b.append({"label": "Range-Pos", "points": round(p, 1), "max": 15, "detail": f"{m['range_pos']:.0f}%"})
 
-    if m["vol_ratio"] is not None:
-        p = 5 * ramp(m["vol_ratio"], 0.9, 1.25)
-        detail = f"{m['vol_ratio']:.2f}"
-    else:
-        p, detail = 0.0, "k.A."
-    b.append({"label": "Volumen 60T", "points": round(p, 1), "max": 5, "detail": detail})
+    vb = m.get("vol_breakout")
+    p, detail = pressure_score(vb, 5)
+    b.append({"label": "Volumen-Ausbruch", "points": round(p, 1), "max": 5, "detail": detail})
 
     # NEU: bestaetigt der Handel der letzten 5 Tage die Staerke JETZT?
     # Log-Skala siehe pressure_score.
@@ -728,6 +789,40 @@ def format_revision(a: dict) -> str | None:
     return f"Analysten {richtung}{abs(net)} in 30T{tail}"
 
 
+def target_price_info(f: dict, a: dict, last: float) -> dict:
+    """Abstand des aktuellen Kurses zum mittleren Analysten-Kursziel.
+
+    Yahoo liefert keinen Zeitstempel dafuer, wann das Kursziel zuletzt gesetzt
+    wurde. Als Naeherung: gab es innerhalb der letzten TARGET_FRESH_DAYS Tage
+    eine Analysten-Ratingaenderung (die typischerweise mit einer Kurszielbe-
+    staetigung/-anpassung einhergeht), gilt das Kursziel als "frisch". Sonst
+    wird trotzdem das vorhandene Kursziel gezeigt (besser als nichts), aber
+    klar als moeglicherweise aelter gekennzeichnet - lieber ehrlich unsicher
+    als falsch sicher.
+    """
+    target = safe(f, "targetMeanPrice")
+    if not target or target <= 0 or not last or last <= 0:
+        return {"upside_pct": None, "fresh": None}
+    upside = (target / last - 1) * 100
+    fresh = None
+    last_action_date = safe(a, "last_date")
+    if last_action_date:
+        try:
+            d = datetime.strptime(last_action_date, "%Y-%m-%d").replace(tzinfo=timezone.utc)
+            age_days = (datetime.now(timezone.utc) - d).total_seconds() / 86400
+            fresh = age_days <= TARGET_FRESH_DAYS
+        except Exception:  # noqa: BLE001
+            fresh = None
+    return {"upside_pct": round(upside, 1), "fresh": fresh}
+
+
+def format_target(info: dict) -> str:
+    if info.get("upside_pct") is None:
+        return "k.A."
+    tag = "frisch" if info.get("fresh") else ("evtl. aelter" if info.get("fresh") is False else "Datum unbekannt")
+    return f"{info['upside_pct']:+.0f}% ({tag})"
+
+
 def exclusions(m: dict, f: dict) -> list[str]:
     """Value-Trap-Filter. Wer hier auffaellt, fliegt aus allen Listen."""
     flags = []
@@ -761,6 +856,30 @@ def earnings_in_days(f: dict) -> int | None:
 # Auswertung und Report
 # ---------------------------------------------------------------------------
 
+def build_extras(prices: dict, extras: dict) -> dict:
+    """Rohstoffe/Krypto: rein technische Auswertung (Turnaround-/Momentum-
+    Score), keine Fundamentaldaten noetig - beide Score-Funktionen brauchen
+    nur die Kursmetriken. Kein Sektor-Deckel, keine Ausschlusskriterien, kein
+    Value-Score (dafuer fehlen KGV, Marge etc. bei Rohstoffen komplett)."""
+    rows = {}
+    for t, name in extras.items():
+        df = prices.get(t)
+        if df is None:
+            continue
+        m = compute_metrics(df, None)  # kein Index-Benchmark fuer rel. Staerke
+        if m is None:
+            continue
+        s_turn, w_turn, bd_turn = score_turnaround(m)
+        s_mom, w_mom, bd_mom = score_momentum(m)
+        rows[t] = {
+            "name": name,
+            "metrics": m,
+            "scores": {"turnaround": s_turn, "momentum": s_mom},
+            "why": {"turnaround": w_turn, "momentum": w_mom},
+        }
+    return rows
+
+
 def build_state(prices, fundamentals, analyst, members, benchmarks) -> dict:
     bench_series = {}
     for idx, sym in benchmarks.items():
@@ -784,6 +903,7 @@ def build_state(prices, fundamentals, analyst, members, benchmarks) -> dict:
         s_val, w_val, bd_val = score_value(m, f, a)
         rows[t] = {
             "name": clean_name(safe(f, "shortName"), t),
+            "isin": safe(f, "isin"),
             "index": "/".join(idxs),
             "sector": safe(f, "sector", "unbekannt"),
             "metrics": m,
@@ -791,6 +911,7 @@ def build_state(prices, fundamentals, analyst, members, benchmarks) -> dict:
             "earnings_in": earnings_in_days(f),
             "analyst": a,
             "revision_note": format_revision(a),
+            "target": target_price_info(f, a, m["last"]),
             "scores": {"turnaround": s_turn, "momentum": s_mom, "value": s_val},
             "why": {"turnaround": w_turn, "momentum": w_mom, "value": w_val},
             "breakdown": {"turnaround": bd_turn, "momentum": bd_mom, "value": bd_val},
@@ -953,15 +1074,19 @@ def build_top10_tables(today: dict, get_rank) -> str:
          "0-100 - Ranking erfolgt danach. Kein statistisch ermitteltes "
          "Erfolgsmass, siehe Hinweis am Berichtsende. Rang-Spalten: letzter "
          "Handelstag / vor rund einer Woche, \"neu\" = damals nicht in den Top 40 "
-         "dieser Liste._", ""]
+         "dieser Liste. Kursziel-Abstand: Abstand des Kurses zum mittleren "
+         f"Analysten-Kursziel - \"frisch\" heisst, es gab in den letzten "
+         f"{TARGET_FRESH_DAYS} Tagen eine Ratingaenderung (Kursziel damit "
+         "vermutlich aktuell bestaetigt), \"evtl. aelter\" heisst nicht "
+         "unbedingt veraltet, nur nicht kuerzlich bestaetigt._", ""]
     for name in LISTS:
         sample = today["rows"][today["ranks_full"][name][0]]["breakdown"][name] if today["ranks_full"][name] else []
         labels = [x["label"] for x in sample]
 
         L.append(f"### {LIST_TITLES[name]}")
         L.append("")
-        header = ["Rang", "Ticker", "Name", "Index"] + labels + \
-                 ["**Gesamt**", "Einordnung", "Rang gestern", "Rang Vorwoche"]
+        header = ["Rang", "Ticker", "ISIN", "Name", "Index"] + labels + \
+                 ["**Gesamt**", "Einordnung", "Rang gestern", "Rang Vorwoche", "Kursziel-Abstand"]
         L.append("| " + " | ".join(header) + " |")
         L.append("|" + "---|" * len(header))
 
@@ -974,10 +1099,30 @@ def build_top10_tables(today: dict, get_rank) -> str:
             ry_s = str(ry) if ry else "neu"
             rw_s = str(rw) if rw else "neu"
             factor_cells = [f"{x['points']:.0f}/{x['max']:.0f} ({x['detail']})" for x in bd]
-            cells = [str(i), t, row["name"], row["index"]] + factor_cells + \
-                    [f"**{score:.0f}**", score_label(score), ry_s, rw_s]
+            cells = [str(i), t, row.get("isin") or "-", row["name"], row["index"]] + factor_cells + \
+                    [f"**{score:.0f}**", score_label(score), ry_s, rw_s, format_target(row.get("target", {}))]
             L.append("| " + " | ".join(cells) + " |")
         L.append("")
+    return "\n".join(L)
+
+
+def build_extras_section(extras_rows: dict) -> str:
+    if not extras_rows:
+        return ""
+    L = ["## 🪙 Rohstoffe & Krypto (informativ, nicht Teil des Rankings)", "",
+         "_Rein technisch ausgewertet (Turnaround-/Momentum-Kriterien wie bei "
+         "den Aktien) - kein Value-Score moeglich, da Fundamentaldaten wie "
+         "KGV oder Umsatzwachstum bei Rohstoffen und Krypto nicht existieren. "
+         "Keine Sektor-Regeln, kein Ranking gegen die Aktienlisten._", ""]
+    L.append("| Name | Kurs | Abstand ATH | RSI | Turnaround-Score | Momentum-Score |")
+    L.append("|---|---|---|---|---|---|")
+    for t, row in extras_rows.items():
+        m = row["metrics"]
+        L.append(f"| {row['name']} ({t}) | {m['last']:.2f} | {m['dd_ath']:.0f}% | "
+                 f"{m['rsi14']:.0f} | {row['scores']['turnaround']:.0f}/100 "
+                 f"({score_label(row['scores']['turnaround'])}) | "
+                 f"{row['scores']['momentum']:.0f}/100 ({score_label(row['scores']['momentum'])}) |")
+    L.append("")
     return "\n".join(L)
 
 
@@ -1025,7 +1170,7 @@ def fmt_row(t: str, row: dict, list_name: str) -> str:
     return line
 
 
-def build_report(today: dict, prev: dict, changes: dict, get_rank) -> str:
+def build_report(today: dict, prev: dict, changes: dict, get_rank, extras_rows: dict) -> str:
     L = []
     L.append(f"# Boersen-Screening - {today['date']}")
     L.append("")
@@ -1036,6 +1181,10 @@ def build_report(today: dict, prev: dict, changes: dict, get_rank) -> str:
     L.append("")
     L.append(build_analyst_section(today))
     L.append("")
+    extras_section = build_extras_section(extras_rows)
+    if extras_section:
+        L.append(extras_section)
+        L.append("")
 
     if prev is None:
         L.append("## Erstlauf - Baseline angelegt")
@@ -1128,9 +1277,10 @@ def build_report(today: dict, prev: dict, changes: dict, get_rank) -> str:
 # ---------------------------------------------------------------------------
 
 def main() -> int:
-    members, benchmarks = load_universe()
+    members, benchmarks, extras = load_universe()
     tickers = sorted(members.keys())
-    all_symbols = tickers + list(benchmarks.values())
+    extra_tickers = sorted(extras.keys())
+    all_symbols = tickers + list(benchmarks.values()) + extra_tickers
 
     prices = get_prices(all_symbols)
     if len(prices) < 20:
@@ -1141,6 +1291,7 @@ def main() -> int:
     analyst = get_analyst_data(tickers)
 
     today = build_state(prices, fundamentals, analyst, members, benchmarks)
+    extras_rows = build_extras(prices, extras)
 
     prev = None
     if STATE_FILE.exists():
@@ -1155,7 +1306,7 @@ def main() -> int:
 
     rank_history = load_rank_history()
     get_rank = build_rank_lookup(rank_history, today["date"])
-    report = build_report(today, prev, changes, get_rank)
+    report = build_report(today, prev, changes, get_rank, extras_rows)
 
     DOCS_DIR.mkdir(parents=True, exist_ok=True)
     STATE_DIR.mkdir(parents=True, exist_ok=True)

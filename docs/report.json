@@ -5,40 +5,40 @@
    "BEI.DE",
    "HNR1.DE",
    "MELI",
-   "ROP",
+   "KHC",
    "AXP",
    "BAYN.DE",
-   "KHC",
+   "ROP",
    "AXON",
+   "DASH",
    "HEN3.DE",
    "CRM",
-   "ADSK",
    "PYPL",
-   "DASH",
    "DTG.DE",
-   "CSX"
+   "BNR.DE",
+   "GEHC"
   ],
   "momentum": [
    "ABNB",
-   "TEAM",
    "MRVL",
    "MRK",
+   "TEAM",
    "DB1.DE",
    "ALV.DE",
-   "FANG",
    "MU",
-   "BAYN.DE",
-   "DXCM",
+   "FANG",
    "CSX",
    "KO",
+   "DXCM",
    "AXON",
    "PYPL",
+   "JNJ",
    "DTG.DE"
   ],
   "value": [
    "MU",
-   "ADSK",
    "NVDA",
+   "MSFT",
    "V",
    "REGN",
    "ABNB",
@@ -47,26 +47,64 @@
    "VRTX",
    "DB1.DE",
    "DXCM",
-   "ODFL",
    "GOOGL",
+   "ODFL",
    "ROST",
    "ALV.DE"
   ]
  },
  "changes": {
   "turnaround": {
-   "entries": [],
-   "exits": [],
+   "entries": [
+    {
+     "ticker": "BNR.DE",
+     "rank": 14
+    },
+    {
+     "ticker": "GEHC",
+     "rank": 15
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "ADSK",
+     "old_rank": 11
+    },
+    {
+     "ticker": "CSX",
+     "old_rank": 15
+    }
+   ],
    "moves": []
   },
   "momentum": {
-   "entries": [],
-   "exits": [],
+   "entries": [
+    {
+     "ticker": "JNJ",
+     "rank": 14
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "BAYN.DE",
+     "old_rank": 9
+    }
+   ],
    "moves": []
   },
   "value": {
-   "entries": [],
-   "exits": [],
+   "entries": [
+    {
+     "ticker": "MSFT",
+     "rank": 3
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "ADSK",
+     "old_rank": 2
+    }
+   ],
    "moves": []
   },
   "analyst_flips": []

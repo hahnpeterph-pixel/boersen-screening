@@ -2,21 +2,21 @@
  "date": "2026-08-20",
  "ranks": {
   "turnaround": [
-   "ROP",
-   "WDAY",
-   "BEI.DE",
    "BAYN.DE",
-   "CRM",
-   "DXCM",
-   "SHL.DE",
-   "AXON",
-   "BNR.DE",
+   "BEI.DE",
+   "ROP",
+   "CDW",
    "KHC",
-   "HEN3.DE",
-   "DASH",
+   "CRM",
+   "SHL.DE",
+   "BNR.DE",
+   "DXCM",
+   "AXON",
    "VOW3.DE",
+   "HEN3.DE",
    "HNR1.DE",
-   "CMCSA"
+   "DASH",
+   "SY1.DE"
   ],
   "momentum": [
    "MRK",
@@ -24,16 +24,16 @@
    "ABNB",
    "JNJ",
    "KO",
-   "CSX",
-   "FANG",
    "AMGN",
-   "ALV.DE",
+   "CSX",
    "PANW",
+   "ALV.DE",
+   "DTG.DE",
    "CVX",
    "CRWD",
-   "DTG.DE",
-   "FAST",
-   "MRVL"
+   "FANG",
+   "DHL.DE",
+   "TEAM"
   ],
   "value": [
    "MU",
@@ -45,8 +45,8 @@
    "MTX.DE",
    "ENR.DE",
    "VRTX",
-   "DB1.DE",
    "DXCM",
+   "DB1.DE",
    "GOOGL",
    "ODFL",
    "ALV.DE",
@@ -57,57 +57,65 @@
   "turnaround": {
    "entries": [
     {
-     "ticker": "CMCSA",
+     "ticker": "CDW",
+     "rank": 4
+    },
+    {
+     "ticker": "SY1.DE",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "P911.DE",
-     "old_rank": 13
-    }
-   ],
-   "moves": [
-    {
-     "ticker": "VOW3.DE",
-     "rank": 13,
-     "delta": -5
-    }
-   ]
-  },
-  "momentum": {
-   "entries": [],
-   "exits": [],
-   "moves": []
-  },
-  "value": {
-   "entries": [
-    {
-     "ticker": "GOOGL",
-     "rank": 12
+     "ticker": "WDAY",
+     "old_rank": 2
     },
     {
-     "ticker": "ODFL",
-     "rank": 13
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "FAST",
-     "old_rank": 11
-    },
-    {
-     "ticker": "MNST",
+     "ticker": "CMCSA",
      "old_rank": 15
     }
    ],
    "moves": [
     {
-     "ticker": "ENR.DE",
-     "rank": 8,
-     "delta": 6
+     "ticker": "KHC",
+     "rank": 5,
+     "delta": 5
     }
    ]
+  },
+  "momentum": {
+   "entries": [
+    {
+     "ticker": "DHL.DE",
+     "rank": 14
+    },
+    {
+     "ticker": "TEAM",
+     "rank": 15
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "FAST",
+     "old_rank": 14
+    },
+    {
+     "ticker": "MRVL",
+     "old_rank": 15
+    }
+   ],
+   "moves": [
+    {
+     "ticker": "FANG",
+     "rank": 13,
+     "delta": -6
+    }
+   ]
+  },
+  "value": {
+   "entries": [],
+   "exits": [],
+   "moves": []
   },
   "analyst_flips": []
  }

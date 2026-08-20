@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 """
 Boersen-Screening: NASDAQ-100, Dow Jones 30, DAX 40.
-Version 3 (2026-08-20): Taegliche Top-10-Tabelle je Kategorie mit Index,
-Score, Einordnung sowie Rang gestern/Rang vor einer Woche (Rang-Historie,
-rollierendes 12-Tage-Fenster). Baut auf Version 2 auf (normierter Value-
-Score, Sektor-Deckel, Analysten-Ratingaenderungen).
+Version 4 (2026-08-20): Analysten-Einstufungen jetzt als eigene, eindeutige
+Liste je Wert (Datum, Bank, konkrete Einstufung z.B. "Hold -> Buy") statt nur
+als Kurzhinweis in der Tabelle. Neue Spalte "Kauf-/Verkaufsdruck (5 Tage)"
+aus Handelsvolumen - bewusst KEIN Short/Long-Wert, echte Leerverkaufsdaten
+haben ~2 Wochen Meldeverzug und keine 7-Tage-Aufloesung (siehe Notiz im Code).
+Baut auf Version 3 auf (taegliche Top-10-Tabelle mit Rang-Historie).
 
 Erzeugt drei getrennte Ranglisten (Turnaround, Momentum, Value/Qualitaet),
 vergleicht sie mit dem Vortag und schreibt einen Report, der NUR
@@ -299,6 +301,7 @@ def get_analyst_data(tickers: list[str]) -> dict:
         entry = {
             "upgrades_30d": 0, "downgrades_30d": 0, "net_30d": 0,
             "last_action": None, "last_firm": None, "last_date": None,
+            "actions": [],  # bis zu 5 juengste Einzelaktionen, neueste zuerst
         }
         try:
             ud = yf.Ticker(t).upgrades_downgrades
@@ -316,6 +319,16 @@ def get_analyst_data(tickers: list[str]) -> dict:
                     entry["last_action"] = str(last.get("Action"))
                     entry["last_firm"] = str(last.get("Firm"))
                     entry["last_date"] = str(last[date_col].date())
+
+                    newest_first = recent.sort_values(date_col, ascending=False).head(5)
+                    for _, r in newest_first.iterrows():
+                        entry["actions"].append({
+                            "date": str(r[date_col].date()),
+                            "firm": (str(r.get("Firm")) or None) if pd.notna(r.get("Firm")) else None,
+                            "action": (str(r.get("Action")).lower() or None) if pd.notna(r.get("Action")) else None,
+                            "to_grade": (str(r.get("ToGrade")) or None) if pd.notna(r.get("ToGrade")) else None,
+                            "from_grade": (str(r.get("FromGrade")) or None) if pd.notna(r.get("FromGrade")) else None,
+                        })
         except Exception:  # noqa: BLE001
             pass
         data[t] = entry
@@ -384,6 +397,21 @@ def compute_metrics(df: pd.DataFrame, bench: pd.Series | None) -> dict | None:
         if v_dn and v_dn > 0:
             vol_ratio = float(v_up / v_dn)
 
+    # Kauf-/Verkaufsdruck der letzten 5 Handelstage: Verhaeltnis des Volumens
+    # an Anstiegstagen zu Ruecksetzertagen. Kein Short/Long-Wert (echte
+    # Leerverkaufsdaten haben ca. 2 Wochen Meldeverzug und keine 7-Tage-
+    # Aufloesung) - stattdessen ein taeglich verfuegbarer Ersatz aus den
+    # Kursdaten, die ohnehin schon geladen sind.
+    vol_pressure_5d = None
+    if vol.notna().sum() > 6:
+        diff_all = close.diff()
+        up5 = (diff_all > 0).tail(5)
+        vol5 = vol.tail(5)
+        v_up5 = float(vol5[up5].sum())
+        v_dn5 = float(vol5[~up5].sum())
+        if v_dn5 > 0:
+            vol_pressure_5d = v_up5 / v_dn5
+
     return {
         "last": round(last, 2),
         "dd_ath": round(dd_ath, 1),
@@ -398,6 +426,7 @@ def compute_metrics(df: pd.DataFrame, bench: pd.Series | None) -> dict | None:
         "rsi_min60": round(rsi_min60, 1),
         "perf": {k: round(v, 1) for k, v in perf.items()},
         "rs6": round(rs6, 1) if rs6 is not None else None,
+        "vol_pressure_5d": round(vol_pressure_5d, 2) if vol_pressure_5d is not None else None,
         "vol_ratio": round(vol_ratio, 2) if vol_ratio is not None else None,
     }
 
@@ -724,6 +753,22 @@ def score_label(score: float) -> str:
     return "niedrig"
 
 
+def pressure_label(x: float | None) -> str:
+    """Textform des 5-Tage-Kauf-/Verkaufsdrucks (Volumen an Anstiegs- vs.
+    Ruecksetzertagen). Kein Short/Long-Indikator, siehe Notiz in compute_metrics."""
+    if x is None:
+        return "unbekannt"
+    if x >= 1.3:
+        return "klarer Kaufdruck"
+    if x >= 1.1:
+        return "leichter Kaufdruck"
+    if x <= 1 / 1.3:
+        return "klarer Verkaufsdruck"
+    if x <= 1 / 1.1:
+        return "leichter Verkaufsdruck"
+    return "ausgeglichen"
+
+
 def load_rank_history() -> list[dict]:
     if not HISTORY_FILE.exists():
         return []
@@ -772,12 +817,15 @@ def build_top10_tables(today: dict, get_rank) -> str:
     L = ["## 📊 Aktuelle Top 10", "",
          "_Score = Kennzahlen-Uebereinstimmung (0-100), keine statistische "
          "Erfolgsprognose. Rang-Spalten: letzter Handelstag / vor rund einer Woche, "
-         "\"neu\" = damals nicht in den Top 40 dieser Liste._", ""]
+         "\"neu\" = damals nicht in den Top 40 dieser Liste. Kauf-/Verkaufsdruck = "
+         "Volumen an Anstiegs- vs. Ruecksetzertagen der letzten 5 Handelstage, "
+         "KEIN Short/Long-Wert (echte Leerverkaufsdaten haben ~2 Wochen Verzug)._", ""]
     for name in LISTS:
         L.append(f"### {LIST_TITLES[name]}")
         L.append("")
-        L.append("| Rang | Ticker | Name | Index | Score | Einordnung | Rang gestern | Rang Vorwoche | Kurzbegruendung |")
-        L.append("|---|---|---|---|---|---|---|---|---|")
+        L.append("| Rang | Ticker | Name | Index | Score | Einordnung | Rang gestern | "
+                 "Rang Vorwoche | Kauf-/Verkaufsdruck (5T) | Kurzbegruendung |")
+        L.append("|---|---|---|---|---|---|---|---|---|---|")
         for i, t in enumerate(today["ranks_full"][name][:10], 1):
             row = today["rows"][t]
             score = row["scores"][name]
@@ -786,8 +834,44 @@ def build_top10_tables(today: dict, get_rank) -> str:
             rw = get_rank(name, t, "lastweek")
             ry_s = str(ry) if ry else "neu"
             rw_s = str(rw) if rw else "neu"
+            vp = row["metrics"].get("vol_pressure_5d")
+            vp_s = f"{vp:.2f} ({pressure_label(vp)})" if vp is not None else "unbekannt"
             L.append(f"| {i} | {t} | {row['name']} | {row['index']} | {score:.0f} | "
-                     f"{score_label(score)} | {ry_s} | {rw_s} | {why} |")
+                     f"{score_label(score)} | {ry_s} | {rw_s} | {vp_s} | {why} |")
+        L.append("")
+    return "\n".join(L)
+
+
+def build_analyst_section(today: dict) -> str:
+    """Klare, eindeutige Liste je Wert: Datum, Bank, konkrete Einstufung.
+    Nur fuer Werte, die aktuell in einer Top-10-Liste stehen (dedupliziert,
+    ein Wert kann in mehreren Kategorien auftauchen)."""
+    tickers = sorted({t for name in LISTS for t in today["ranks_full"][name][:10]})
+    richtung_text = {
+        "up": "Hochstufung", "down": "Herabstufung",
+        "init": "Erstbewertung", "reit": "Bestaetigung",
+    }
+    L = ["## 🧭 Analysten-Einstufungen (Top 10, letzte 30 Tage)", ""]
+    for t in tickers:
+        row = today["rows"][t]
+        L.append(f"**{t}** ({row['name']}, {row['index']})")
+        actions = row["analyst"].get("actions") or []
+        if not actions:
+            L.append("- keine Ratingaenderung in den letzten 30 Tagen")
+        else:
+            for act in actions:
+                grade = None
+                if act.get("from_grade") and act.get("to_grade"):
+                    grade = f"{act['from_grade']} \u2192 {act['to_grade']}"
+                elif act.get("to_grade"):
+                    grade = act["to_grade"]
+                richtung = richtung_text.get(act.get("action"), act.get("action") or "-")
+                firm = act.get("firm") or "unbekannte Bank"
+                date = act.get("date") or "-"
+                line = f"- {date}: {firm} \u2013 {richtung}"
+                if grade:
+                    line += f" ({grade})"
+                L.append(line)
         L.append("")
     return "\n".join(L)
 
@@ -810,6 +894,8 @@ def build_report(today: dict, prev: dict, changes: dict, get_rank) -> str:
              f"{len(today['rows'])} Werte ausgewertet._")
     L.append("")
     L.append(build_top10_tables(today, get_rank))
+    L.append("")
+    L.append(build_analyst_section(today))
     L.append("")
 
     if prev is None:

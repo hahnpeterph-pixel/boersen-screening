@@ -1,24 +1,14 @@
 #!/usr/bin/env python3
 """
 Boersen-Screening: NASDAQ-100, Dow Jones 30, DAX 40.
-Version 16 (2026-08-20): Grundlegende Vereinfachung nach konkretem, deutlichem
-Feedback ("passt nicht zusammen", 20 Spalten nicht mehr lesbar):
-1) BUGFIX: Yahoo-Aktionstyp "main" (Rating unveraendert bestaetigt) wurde
-   nicht uebersetzt und mit "gestuft" zusammengeklebt -> kaputte Woerter wie
-   "maingestuft auf X", "Startgestuft", "bestaetigtgestuft". Jetzt sauber
-   ueber vollstaendige Phrasen (action_phrase()), keine Konkatenation mehr.
-2) Tabelle radikal verschlankt: von 20 auf 15 Spalten. Alle Einzelscore-
-   Spalten (Hoeheres Tief, Abstand 50T/100T/200T-Linie, RSI-Erholung,
-   Volumen-Ausbruch, Position 52W-Spanne, Kauf-/Verkaufsdruck, KGV/Marge/etc.)
-   sind aus der Tabelle raus - der Score wird weiterhin genauso berechnet,
-   aber nicht mehr als 10+ Einzelspalten gezeigt (das hat mehr verwirrt als
-   erklaert). Stattdessen: eine Spalte "Warum (Kurzfassung)" mit den 2-3
-   staerksten Gruenden in Klartext.
-3) Analysten-Ziel-Spalte in drei einfache Spalten aufgeteilt: "Kaufen-Anteil
-   Analysten" (NUR der Kaufen-Prozentsatz, Halten/Verkaufen raus wie
-   gewuenscht), "Kursziel" (Wert + Abstand), "Letztes Rating" (EINE
-   Ratingaenderung, nicht mehr zwei).
-Baut auf Version 15 auf.
+Version 17 (2026-08-20): Neuer Abschnitt "Analysten-Filter" - eigenstaendige
+Liste ueber ALLE ausgewerteten Werte (nicht nur die Top-10-Listen je
+Kategorie): Kursziel mindestens 15% ueber dem aktuellen Kurs UND mindestens
+75% der Analysten auf Kaufen, sortiert nach Kurspotenzial absteigend, max.
+20 Treffer. Value-Trap-Ausschluesse gelten auch hier. Schwellen als
+Konstanten (ANALYST_FILTER_MIN_UPSIDE, ANALYST_FILTER_MIN_KAUFEN_PCT,
+ANALYST_FILTER_TOP_N) leicht anpassbar.
+Baut auf Version 16 auf.
 
 Erzeugt drei getrennte Ranglisten (Turnaround, Momentum, Value/Qualitaet),
 vergleicht sie mit dem Vortag und schreibt einen Report, der NUR
@@ -78,6 +68,9 @@ FUND_CACHE_VERSION = 4
 ANALYST_CACHE_VERSION = 2
 REVISION_WINDOW_DAYS = 30  # Fenster fuer "kurzfristige" Analysten-Ratingaenderungen
 TARGET_FRESH_DAYS = 14     # Kursziel gilt als "frisch", wenn eine Ratingaenderung diese Zeit nicht ueberschreitet
+ANALYST_FILTER_MIN_UPSIDE = 15    # Mindest-Kurspotenzial zum Analysten-Kursziel, in Prozent
+ANALYST_FILTER_MIN_KAUFEN_PCT = 75  # Mindestanteil "Kaufen"-Einstufungen, in Prozent
+ANALYST_FILTER_TOP_N = 20
 EARNINGS_WARN_DAYS = 5  # Warnung vor Quartalszahlen
 
 LISTS = ("turnaround", "momentum", "value")
@@ -1242,6 +1235,54 @@ def build_glossary() -> str:
     ])
 
 
+def build_analyst_filter_section(today: dict) -> str:
+    """Eigenstaendiger Filter ueber ALLE ausgewerteten Werte (nicht nur die
+    Top 10 je Kategorie): Kursziel mindestens ANALYST_FILTER_MIN_UPSIDE% ueber
+    dem aktuellen Kurs UND mindestens ANALYST_FILTER_MIN_KAUFEN_PCT% der
+    Analysten auf Kaufen. Value-Trap-Ausschluesse gelten auch hier - ein
+    hohes Kurspotenzial bei einer Aktie mit z.B. einbrechendem Umsatz und
+    hoher Verschuldung waere kein verlaesslicher Treffer. Sortiert nach
+    Kurspotenzial absteigend, oben gedeckelt bei ANALYST_FILTER_TOP_N."""
+    hits = []
+    for t, row in today["rows"].items():
+        if row["flags"]:
+            continue
+        target = row.get("target", {})
+        upside = target.get("upside_pct")
+        rb = target.get("rec_breakdown")
+        if upside is None or rb is None:
+            continue
+        if upside >= ANALYST_FILTER_MIN_UPSIDE and rb["kaufen_pct"] >= ANALYST_FILTER_MIN_KAUFEN_PCT:
+            hits.append((t, row, upside))
+    hits.sort(key=lambda x: x[2], reverse=True)
+    hits = hits[:ANALYST_FILTER_TOP_N]
+
+    L = [f"## 🎯 Analysten-Filter (Kursziel \u2265{ANALYST_FILTER_MIN_UPSIDE}%, "
+         f"Kaufen-Anteil \u2265{ANALYST_FILTER_MIN_KAUFEN_PCT}%)", "",
+         f"_Ueber alle {len(today['rows'])} ausgewerteten Werte, nicht nur die Top-10-Listen. "
+         "Sortiert nach Kurspotenzial absteigend, maximal "
+         f"{ANALYST_FILTER_TOP_N} Treffer. Value-Trap-Ausschluesse gelten auch hier. "
+         "Reine Analysten-Kennzahlen, keine technische Bestaetigung enthalten - "
+         "siehe Glossar und Hinweis am Ende._", ""]
+
+    if not hits:
+        L.append("Heute kein Treffer.")
+        L.append("")
+        return "\n".join(L)
+
+    L.append("| Rang | Ticker | ISIN | Name | Index | Kurs | Abstand ATH (Info) | "
+             "Kaufen-Anteil Analysten | Kursziel | Letztes Rating |")
+    L.append("|---|---|---|---|---|---|---|---|---|---|")
+    for i, (t, row, upside) in enumerate(hits, 1):
+        m = row["metrics"]
+        target = row.get("target", {})
+        L.append(f"| {i} | {t} | {row.get('isin') or '-'} | {row['name']} | {row['index']} | "
+                 f"{m['last']:.2f} | {m['dd_ath']:.0f}% | {kaufen_pct_cell(target)} | "
+                 f"{kursziel_cell(target)} | {letztes_rating_cell(row.get('analyst', {}).get('actions'))} |")
+    L.append("")
+    return "\n".join(L)
+
+
 def build_top10_tables(today: dict, get_rank) -> str:
     L = ["## 📊 Aktuelle Top 10", ""]
     for name in LISTS:
@@ -1345,6 +1386,7 @@ def build_report(today: dict, prev: dict, changes: dict, get_rank, extras_rows: 
              f"{len(today['rows'])} Werte ausgewertet._")
     L.append("")
     L.append(build_glossary())
+    L.append(build_analyst_filter_section(today))
     L.append(build_top10_tables(today, get_rank))
     L.append("")
     L.append(build_analyst_section(today))

@@ -1,6 +1,6 @@
-# Boersen-Screening - 2026-08-20
+# Boersen-Screening - 2026-08-21
 
-_Stand: Schlusskurse vom Vortag. Erstellt 2026-08-20T20:07:23+00:00 UTC. 159 Werte ausgewertet._
+_Stand: Schlusskurse vom Vortag. Erstellt 2026-08-21T04:39:27+00:00 UTC. 159 Werte ausgewertet._
 
 ## 📖 Glossar (was die Spalten bedeuten)
 
@@ -21,10 +21,10 @@ _Ueber alle 159 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 | 2 | ASML | USN070592100 | ASML Holding N.V. - New York Re | NASDAQ | 1750.31 | -12% | 100% (5 Banken, ≤120T) | 2196.43 (26% ueber Kurs) | 49 | 58 | 36 | keine in 30T |
 | 3 | ORLY | - | O'Reilly Automotive, Inc. | NASDAQ | 89.08 | -17% | 100% (8 Banken, ≤120T) | 107.80 (21% ueber Kurs) | 46 | 47 | 39 | 2026-08-03 Citigroup: Rating bestaetigt: Buy |
 | 4 | TTWO | - | Take-Two Interactive Software, | NASDAQ | 240.15 | -8% | 100% (10 Banken, ≤120T) | 286.89 (20% ueber Kurs) | 49 | 54 | 47 | 2026-08-10 Roth Capital: Rating bestaetigt: Buy |
-| 5 | DIS | - | Walt Disney Company (The) | DOW | 107.38 | -45% | 100% (11 Banken, ≤120T) | 127.72 (19% ueber Kurs) | 65 | 57 | 62 | 2026-08-06 Wells Fargo: Rating bestaetigt: Overweight |
+| 5 | DIS | - | Walt Disney Company (The) | DOW | 107.32 | -45% | 100% (11 Banken, ≤120T) | 127.72 (19% ueber Kurs) | 64 | 57 | 61 | 2026-08-06 Wells Fargo: Rating bestaetigt: Overweight |
 | 6 | AMAT | US0382221051 | Applied Materials, Inc. | NASDAQ | 496.21 | -31% | 96% (26 Banken, ≤120T) | 641.03 (29% ueber Kurs) | 44 | 55 | 42 | 2026-08-14 UBS: Rating bestaetigt: Buy |
 | 7 | AMZN | - | Amazon.com, Inc. | NASDAQ/DOW | 260.11 | -8% | 96% (28 Banken, ≤120T) | 326.84 (26% ueber Kurs) | 51 | 55 | 41 | 2026-07-31 UBS: Rating bestaetigt: Buy |
-| 8 | MSFT | - | Microsoft Corporation | NASDAQ/DOW | 481.15 | -11% | 96% (24 Banken, ≤120T) | 569.56 (18% ueber Kurs) | 62 | 61 | 42 | 2026-08-12 Wells Fargo: Rating bestaetigt: Overweight |
+| 8 | MSFT | - | Microsoft Corporation | NASDAQ/DOW | 481.15 | -10% | 96% (24 Banken, ≤120T) | 569.56 (18% ueber Kurs) | 62 | 61 | 42 | 2026-08-12 Wells Fargo: Rating bestaetigt: Overweight |
 | 9 | MU | US5951121038 | Micron Technology, Inc. | NASDAQ | 974.33 | -20% | 95% (22 Banken, ≤120T) | 1501.98 (54% ueber Kurs) | 55 | 63 | 60 | 2026-08-07 Citigroup: Rating bestaetigt: Buy |
 | 10 | LRCX | - | Lam Research Corporation | NASDAQ | 310.53 | -28% | 95% (19 Banken, ≤120T) | 371.35 (20% ueber Kurs) | 47 | 54 | 42 | 2026-07-30 Morgan Stanley: Rating bestaetigt: Overweight |
 | 11 | ADI | US0326541051 | Analog Devices, Inc. | NASDAQ | 370.24 | -17% | 94% (16 Banken, ≤120T) | 466.00 (26% ueber Kurs) | 43 | 51 | 36 | 2026-08-20 Wells Fargo: Rating bestaetigt: Overweight |
@@ -32,10 +32,10 @@ _Ueber alle 159 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 | 13 | DDOG | US23804L1035 | Datadog, Inc. | NASDAQ | 232.55 | -19% | 90% (29 Banken, ≤120T) | 285.18 (23% ueber Kurs) | 42 | 56 | 34 | 2026-08-08 Scotiabank: Rating bestaetigt: Sector Outperform |
 | 14 | WMT | CA93267J1012 | Walmart Inc. | DOW | 103.84 | -23% | 86% (14 Banken, ≤120T) | 137.95 (33% ueber Kurs) | 30 | 37 | 21 | 2026-08-17 DA Davidson: Rating bestaetigt: Buy |
 | 15 | BA | - | Boeing Company (The) | DOW | 215.10 | -50% | 86% (7 Banken, ≤120T) | 274.85 (28% ueber Kurs) | 41 | 48 | 18 | 2026-08-11 Argus Research: hochgestuft auf Buy |
-| 16 | AMD | US0079031078 | Advanced Micro Devices, Inc. | NASDAQ | 469.45 | -19% | 82% (33 Banken, ≤120T) | 612.84 (30% ueber Kurs) | 45 | 57 | 42 | 2026-08-06 Argus Research: Rating bestaetigt: Buy |
+| 16 | AMD | US0079031078 | Advanced Micro Devices, Inc. | NASDAQ | 469.46 | -19% | 82% (33 Banken, ≤120T) | 612.84 (30% ueber Kurs) | 45 | 57 | 42 | 2026-08-06 Argus Research: Rating bestaetigt: Buy |
 | 17 | AVGO | CA11134P1009 | Broadcom Inc. | NASDAQ | 364.03 | -24% | 81% (21 Banken, ≤120T) | 527.88 (45% ueber Kurs) | 36 | 48 | 32 | keine in 30T |
 | 18 | GOOGL | CA02080M1005 | Alphabet Inc. | NASDAQ | 340.67 | -15% | 81% (26 Banken, ≤120T) | 428.07 (26% ueber Kurs) | 44 | 50 | 40 | 2026-07-23 UBS: Rating bestaetigt: Neutral |
-| 19 | UNH | - | UnitedHealth Group Incorporated | DOW | 384.86 | -36% | 81% (16 Banken, ≤120T) | 475.23 (24% ueber Kurs) | 33 | 52 | 32 | 2026-07-21 JP Morgan: Rating bestaetigt: Overweight |
+| 19 | UNH | - | UnitedHealth Group Incorporated | DOW | 384.85 | -36% | 81% (16 Banken, ≤120T) | 475.23 (24% ueber Kurs) | 33 | 52 | 33 | 2026-07-21 JP Morgan: Rating bestaetigt: Overweight |
 | 20 | ADSK | US0527691069 | Autodesk, Inc. | NASDAQ | 251.02 | -27% | 79% (14 Banken, ≤120T) | 314.19 (25% ueber Kurs) | 60 | 56 | 50 | 2026-08-20 Guggenheim: Rating bestaetigt: Buy |
 
 

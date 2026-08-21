@@ -33,46 +33,57 @@ FENSTER_TAGE = 90
 LINKS = RECHTS = 3
 ATR_TAGE = RSI_TAGE = 14
 
-# ── Rohstoffe: Spot wo moeglich, sonst Future ──────────────────────
+# ── Rohstoffe ──────────────────────────────────────────────────────
+# Erster Eintrag wird versucht, bei Fehlschlag der zweite (Rueckfallkette).
+# Lauf vom 21.08.2026: die vier Edelmetall-Spot-Ticker lieferten bei Yahoo
+# KEINE Daten. Deshalb Future als Rueckfall.
+#
+# WICHTIG fuer die KO-Pruefung: Zertifikate auf Edelmetalle referenzieren
+# in der Regel SPOT, nicht den Future. Der Future notiert hoeher (Contango).
+# Gemessene Basis am 21.08.2026: GC=F 4.639,20 gegen Spot 4.603,11,
+# also +36,09 Punkte. Wird der Future genutzt, muss die Basis fuer die
+# KO-Rechnung abgezogen werden - das passiert ausserhalb dieses Skripts.
 ROHSTOFFE = [
-    ("XAUUSD=X", "Gold", "Spot"),
-    ("XAGUSD=X", "Silber", "Spot"),
-    ("XPTUSD=X", "Platin", "Spot"),
-    ("XPDUSD=X", "Palladium", "Spot"),
-    ("BZ=F", "Brent Oel", "Future"),
-    ("CL=F", "WTI Oel", "Future"),
-    ("NG=F", "Erdgas", "Future"),
-    ("HG=F", "Kupfer", "Future"),
-    ("ZW=F", "Weizen", "Future"),
-    ("ZC=F", "Mais", "Future"),
-    ("KC=F", "Kaffee", "Future"),
-    ("CC=F", "Kakao", "Future"),
-    ("SB=F", "Zucker", "Future"),
+    (["XAUUSD=X", "GC=F"], "Gold", "Spot/Future"),
+    (["XAGUSD=X", "SI=F"], "Silber", "Spot/Future"),
+    (["XPTUSD=X", "PL=F"], "Platin", "Spot/Future"),
+    (["XPDUSD=X", "PA=F"], "Palladium", "Spot/Future"),
+    (["BZ=F"], "Brent Oel", "Future"),
+    (["CL=F"], "WTI Oel", "Future"),
+    (["NG=F"], "Erdgas", "Future"),
+    (["HG=F"], "Kupfer", "Future"),
+    (["ZW=F"], "Weizen", "Future"),
+    (["ZC=F"], "Mais", "Future"),
+    (["KC=F"], "Kaffee", "Future"),
+    (["CC=F"], "Kakao", "Future"),
+    (["SB=F"], "Zucker", "Future"),
 ]
 
-WAEHRUNG = [("EURUSD=X", "EUR/USD", "Spot")]
+WAEHRUNG = [(["EURUSD=X"], "EUR/USD", "Spot")]
 
 # ── Aktien: NASDAQ-100, Dow 30, DAX 40. Statisch, aendert sich selten.
-US = """AAPL ABNB ADBE ADI ADP ADSK AEP AMAT AMD AMGN AMZN ANSS ARM ASML AVGO
+# Am 21.08.2026 entfernt, weil bei Yahoo keine Daten mehr (uebernommen
+# oder delistet): ANSS, EA, WBA, 1COV.DE.
+US = """AAPL ABNB ADBE ADI ADP ADSK AEP AMAT AMD AMGN AMZN ARM ASML AVGO
 AXP AZN BA BIIB BKNG BKR CAT CDNS CDW CEG CHTR CMCSA COST CPRT CRM CRWD CSCO
-CSGP CSX CTAS CTSH DASH DDOG DIS DXCM EA EXC FANG FAST FTNT GEHC GILD GOOG
+CSGP CSX CTAS CTSH DASH DDOG DIS DXCM EXC FANG FAST FTNT GEHC GILD GOOG
 GOOGL GS HD HON IBM IDXX ILMN INTC INTU ISRG JNJ JPM KDP KHC KLAC KO LIN LRCX
 LULU MAR MCD MCHP MDB MDLZ MELI META MMM MNST MRK MRNA MRVL MSFT MU NFLX NKE
 NVDA NXPI ODFL ON ORCL ORLY PANW PAYX PCAR PDD PEP PG PLTR PYPL QCOM REGN ROP
-ROST SBUX SHW SNPS SPGI TEAM TMUS TRV TSLA TTD TTWO TXN UNH V VRSK VRTX VZ WBA
+ROST SBUX SHW SNPS SPGI TEAM TMUS TRV TSLA TTD TTWO TXN UNH V VRSK VRTX VZ
 WBD WDAY WMT XEL ZS""".split()
 
 DAX = """ADS.DE AIR.DE ALV.DE BAS.DE BAYN.DE BEI.DE BMW.DE BNR.DE CBK.DE CON.DE
-1COV.DE DTG.DE DBK.DE DB1.DE DHL.DE DTE.DE EOAN.DE FRE.DE HNR1.DE HEI.DE HEN3.DE
+DTG.DE DBK.DE DB1.DE DHL.DE DTE.DE EOAN.DE FRE.DE HNR1.DE HEI.DE HEN3.DE
 IFX.DE MBG.DE MRK.DE MTX.DE MUV2.DE P911.DE PAH3.DE QIA.DE RHM.DE RWE.DE SAP.DE
 SRT3.DE SIE.DE ENR.DE SHL.DE SY1.DE VOW3.DE VNA.DE ZAL.DE""".split()
 
-UNIVERSUM = ([(t, t, "Aktie") for t in dict.fromkeys(US)]
-             + [(t, t, "Aktie") for t in dict.fromkeys(DAX)]
+UNIVERSUM = ([([t], t, "Aktie") for t in dict.fromkeys(US)]
+             + [([t], t, "Aktie") for t in dict.fromkeys(DAX)]
              + ROHSTOFFE + WAEHRUNG)
 
-OHNE_VOLUMEN = {t for t, _, art in ROHSTOFFE + WAEHRUNG if art in ("Spot",)}
-OHNE_VOLUMEN |= {"EURUSD=X"}
+# Ticker ohne brauchbares Volumen bei Yahoo
+OHNE_VOLUMEN = {"XAUUSD=X", "XAGUSD=X", "XPTUSD=X", "XPDUSD=X", "EURUSD=X"}
 
 
 # ── Berechnungen ───────────────────────────────────────────────────
@@ -194,12 +205,19 @@ def main():
     jetzt = datetime.now(timezone.utc)
     zeilen, fehler = [], []
 
-    for ticker, name, art in UNIVERSUM:
-        df = kerzen(ticker)
+    for kette, name, art in UNIVERSUM:
+        df, ticker = None, kette[0]
+        for kandidat in kette:
+            df = kerzen(kandidat)
+            if df is not None:
+                ticker = kandidat
+                break
         if df is None:
-            fehler.append(ticker)
-            print(f"  {ticker}: keine Daten")
+            fehler.append(" oder ".join(kette))
+            print(f"  {'/'.join(kette)}: keine Daten")
             continue
+        if ticker != kette[0]:
+            print(f"  {kette[0]} leer -> Rueckfall auf {ticker}")
 
         a = atr(df)
         tr = swing_tiefs(df)
@@ -209,6 +227,8 @@ def main():
 
         r = {
             "ticker": ticker, "name": name, "art": art,
+            "wunschticker": kette[0],
+            "rueckfall": int(ticker != kette[0]),
             "datum": f"{df.index[-1]:%Y-%m-%d}",
             "kurs": z(kurs), "open": z(letzte["Open"]),
             "high": z(letzte["High"]), "low": z(letzte["Low"]),

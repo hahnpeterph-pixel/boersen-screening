@@ -1,6 +1,6 @@
 # Tiefs, Volumen und Kaufregel-Check
 
-_Erstellt 2026-08-21 13:04 UTC. Fenster: letzte 50 Kalendertage. Ein Swing-Tief ist ein Tag, dessen Tagestief unter dem der 3 Tage davor und der 3 Tage danach liegt. Der laufende Tag zaehlt nie mit._
+_Erstellt 2026-08-21 13:12 UTC. Fenster: letzte 50 Kalendertage. Ein Swing-Tief ist ein Tag, dessen Tagestief unter dem der 3 Tage davor und der 3 Tage danach liegt. Der laufende Tag zaehlt nie mit._
 
 ## Kaufregel
 
@@ -30,12 +30,34 @@ _Als juengstes Tief zaehlt auch das Tief des zuletzt abgeschlossenen Tages, sofe
 
 _Legende: `+` erfuellt (ab 2,0 x ATR), `!` knapp, `!!` zu knapp (unter 1,0 x ATR), `X` Regelbruch._
 
+### Ueberhitzung — Verkaufssignal bestehender Positionen
+
+Nur fuer Positionen mit `typ: Bestand`. RSI(14) nach Wilder-Glaettung; ab 70 gilt der Basiswert als ueberkauft. Die Umkehrkerze (Schlusskurs unter Eroeffnung UND unter Vortageshoch UND unter Vortagestief) ist ein eigenstaendiges Warnsignal, unabhaengig vom RSI-Stand.
+
+| Wert | RSI | Umkehrkerze | Urteil | |
+|---|---|---|---|---|
+| NVIDIA (NVDA) | 53,4 | nein | unauffaellig | + |
+| Applied Materials (AMAT) | 43,8 | nein | unauffaellig | + |
+| ASML (Amsterdam) (ASML.AS) | 48,6 | nein | unauffaellig | + |
+| Take-Two (TTWO) | 48,7 | nein | unauffaellig | + |
+| Meta Platforms (META) | 37,0 | nein | unauffaellig | + |
+| Micron (MU) | 55,2 | nein | unauffaellig | + |
+| Microsoft (MSFT) | 61,6 | nein | beobachten | ! |
+| Oracle (ORCL) | 48,8 | nein | unauffaellig | + |
+| Gold (GC=F) | 74,3 | nein | ueberhitzt (RSI) | !! |
+
+_Legende: `+` unauffaellig, `!` beobachten (ab 60 RSI), `!!` ueberkauft (ab 70 RSI), `X` Umkehrkerze — reines Warnsignal, kein automatischer Verkauf._
+
+## Verkaufssignal — bitte pruefen
+
+- **Gold**: RSI 74,3 — ueberhitzt (RSI).
+
 ## Achtung
 
-- **ASML (Amsterdam)**: Die KO-Schwelle 1.450,24 liegt nur -2,22 x ATR unter dem Tief 1.333,80 vom 29.07.2026. Nach Regel 2 bedeutet das reduzierten Einsatz, kein Ausschluss.
+- **ASML (Amsterdam)**: Die KO-Schwelle 1.450,24 liegt nur -2,22 x ATR unter dem Tief 1.333,80 vom 29.07.2026. Regel 1 ist verletzt - der KO liegt nicht mindestens 1,00 unter dem Bezugstief. Kein Nachkauf.
 - **Take-Two**: Die KO-Schwelle 228,77 liegt nur 0,31 x ATR unter dem Tief 231,58 vom 20.08.2026. Nach Regel 2 bedeutet das reduzierten Einsatz, kein Ausschluss.
 - **Meta Platforms**: Die KO-Schwelle 520,39 liegt nur 0,21 x ATR unter dem Tief 524,49 vom 30.07.2026. Nach Regel 2 bedeutet das reduzierten Einsatz, kein Ausschluss.
-- **Micron**: Die KO-Schwelle 861,26 liegt nur -2,10 x ATR unter dem Tief 737,88 vom 29.07.2026. Nach Regel 2 bedeutet das reduzierten Einsatz, kein Ausschluss.
+- **Micron**: Die KO-Schwelle 861,26 liegt nur -2,10 x ATR unter dem Tief 737,88 vom 29.07.2026. Regel 1 ist verletzt - der KO liegt nicht mindestens 1,00 unter dem Bezugstief. Kein Nachkauf.
 - **Oracle**: Die KO-Schwelle 112,69 liegt nur 0,26 x ATR unter dem Tief 114,50 vom 28.07.2026. Nach Regel 2 bedeutet das reduzierten Einsatz, kein Ausschluss.
 
 ### Positionsgroesse nach Regel 2
@@ -62,13 +84,13 @@ Tief minus 2,0 x ATR. Die Hebelangabe ist das, was sich bei diesem KO rechnerisc
 |---|---|---|---|---|---|---|
 | NVIDIA (NVDA) | 216,85 | 6,30 | 203,07 | 15,7x | 177,42 | 5,5x |
 | Applied Materials (AMAT) | 496,21 | 27,66 | 432,14 | 7,7x | 381,00 | 4,3x |
-| ASML (Amsterdam) (ASML.AS) | 1.514,00 | 52,53 | 1.228,74 | 5,3x | 1.228,74 | 5,3x |
+| ASML (Amsterdam) (ASML.AS) | 1.514,40 | 52,53 | 1.228,74 | 5,3x | 1.228,74 | 5,3x |
 | Take-Two (TTWO) | 240,15 | 9,03 | 213,51 | 9,0x | 210,13 | 8,0x |
 | Meta Platforms (META) | 545,83 | 19,18 | 486,14 | 9,1x | 486,14 | 9,1x |
 | Micron (MU) | 974,33 | 58,70 | 620,47 | 2,8x | 620,47 | 2,8x |
 | Microsoft (MSFT) | 481,15 | 11,91 | 353,57 | 3,8x | 349,53 | 3,7x |
 | Oracle (ORCL) | 142,07 | 6,99 | 100,53 | 3,4x | 100,53 | 3,4x |
-| Gold (GC=F) | 4.637,40 | 92,38 | 4.130,24 | 9,1x | 3.779,44 | 5,4x |
+| Gold (GC=F) | 4.639,20 | 92,38 | 4.130,24 | 9,1x | 3.779,44 | 5,4x |
 
 _'nach Trendtief' orientiert sich am juengsten Tief und laesst mehr Hebel zu. 'konservativ' orientiert sich am tiefsten Tief des Fensters und ueberlebt auch einen Rueckfall dorthin._
 

@@ -1,0 +1,45 @@
+name: Puffer-Analyse
+
+# Einmalige Auswertung, NICHT im Tageslauf: ein Batch-Abruf ueber das ganze
+# Universum plus mehrere Jahre Historie. Die Rechnung selbst dauert unter einer
+# Sekunde, der Datenabruf ein bis zwei Minuten.
+#
+# Starten: Actions -> Puffer-Analyse -> "Run workflow".
+# Ergebnis landet in docs/puffer.md.
+
+on:
+  workflow_dispatch:
+    inputs:
+      jahre:
+        description: "Jahre Kurshistorie (Standard 3)"
+        required: false
+        default: "3"
+
+permissions:
+  contents: write
+
+jobs:
+  puffer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Abhaengigkeiten installieren
+        run: pip install -r requirements.txt
+
+      - name: Puffer-Analyse ausfuehren
+        run: python puffer.py --jahre "${{ github.event.inputs.jahre || '3' }}"
+
+      - name: Ergebnis speichern
+        run: |
+          git config user.name "screening-bot"
+          git config user.email "actions@github.com"
+          git add docs
+          git diff --staged --quiet || git commit -m "Puffer-Analyse $(date -u +%Y-%m-%d\ %H:%M)"
+          git push

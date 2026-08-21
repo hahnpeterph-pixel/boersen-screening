@@ -1572,6 +1572,69 @@ def build_report(today: dict, prev: dict, changes: dict, get_rank, extras_rows: 
     L.append("_Automatisch erzeugte Kennzahlensortierung, keine Anlageberatung._")
     return "\n".join(L)
 
+def csv_feld(v) -> str:
+    """Ein einzelnes CSV-Feld sauber maskieren."""
+    if v is None:
+        return ""
+    if isinstance(v, bool):
+        return "ja" if v else "nein"
+    s = str(v)
+    if any(c in s for c in (",", '"', "\n", "\r", ";")):
+        return '"' + s.replace('"', '""') + '"'
+    return s
+
+
+def build_analysten_csv(today: dict) -> str:
+    """docs/analysten.csv - Analystendaten fuer ALLE ausgewerteten Werte.
+
+    report.md zeigt nur die maximal 20 Filtertreffer. Berechnet werden
+    Kaufen-Anteil und Kursziel aber ohnehin fuer jeden Wert im Universum -
+    diese Funktion schreibt sie vollstaendig heraus, damit das Orderbuch
+    sie fuer alle Werte hat und nicht nur fuer die Treffer.
+    """
+    kopf = [
+        "ticker", "name", "isin", "index", "kurs",
+        "kaufen_pct", "halten_pct", "verkaufen_pct", "banken", "nicht_zuordenbar",
+        "kursziel", "potenzial_pct", "kursziel_frisch", "empfehlung",
+        "hochstufungen_30t", "abstufungen_30t", "netto_30t",
+        "letzte_aktion", "letzte_bank", "letztes_datum",
+    ]
+    zeilen = [",".join(kopf)]
+
+    for t in sorted(today.get("rows", {})):
+        r = today["rows"][t]
+        m = r.get("metrics", {}) or {}
+        tg = r.get("target", {}) or {}
+        rb = tg.get("rec_breakdown") or {}
+        a = r.get("analyst", {}) or {}
+
+        werte = [
+            t,
+            r.get("name"),
+            r.get("isin"),
+            r.get("index"),
+            m.get("last"),
+            rb.get("kaufen_pct"),
+            rb.get("halten_pct"),
+            rb.get("verkaufen_pct"),
+            rb.get("total"),
+            rb.get("unclassified"),
+            tg.get("target_abs"),
+            tg.get("upside_pct"),
+            tg.get("fresh"),
+            tg.get("empfehlung"),
+            safe(a, "upgrades_30d", 0),
+            safe(a, "downgrades_30d", 0),
+            safe(a, "net_30d", 0),
+            safe(a, "last_action"),
+            safe(a, "last_firm"),
+            safe(a, "last_date"),
+        ]
+        zeilen.append(",".join(csv_feld(v) for v in werte))
+
+    return "\n".join(zeilen) + "\n"
+
+
 def main() -> int:
     members, benchmarks, extras = load_universe()
     tickers = sorted(members.keys())
@@ -1614,6 +1677,7 @@ def main() -> int:
     DOCS_DIR.mkdir(parents=True, exist_ok=True)
     STATE_DIR.mkdir(parents=True, exist_ok=True)
     (DOCS_DIR / "report.md").write_text(report, encoding="utf-8")
+    (DOCS_DIR / "analysten.csv").write_text(build_analysten_csv(today), encoding="utf-8")
     (DOCS_DIR / "report.json").write_text(json.dumps(
         {"date": today["date"], "ranks": today["ranks"], "changes": changes},
         indent=1, ensure_ascii=False), encoding="utf-8")

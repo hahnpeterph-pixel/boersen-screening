@@ -27,6 +27,9 @@ jobs:
 
       - name: Screening ausfuehren
         run: python screener.py
+        
+      - name: Tiefs mit Volumen ausfuehren
+        run: python tiefs.py
 
       - name: Ergebnis speichern
         run: |

@@ -190,6 +190,75 @@ def teil_b(daten: dict) -> dict:
     return {"faelle": faelle}
 
 
+
+# ── Teil C: welches Bezugstief? ───────────────────────────────────────
+# Zwei Vorgehensweisen stehen im Depot nebeneinander: die KO-Schwelle unter
+# das JUENGSTE Tief des laufenden Abwaertstrends legen (wenig Abstand, viel
+# Hebel), oder unter ein aelteres, deutlich tieferes Tief (viel Abstand,
+# wenig Hebel). Hier wird beides an denselben historischen Faellen
+# gegeneinander gerechnet - Ausfallquote UND Hebelkosten, denn ohne die
+# zweite Zahl gewinnt der grosse Abstand immer.
+BEZUEGE = (("juengstes Tief", 0), ("tiefstes 60 Tage", 60), ("tiefstes 90 Tage", 90))
+PUFFER_VARIANTEN = (1.0, 2.0, 3.0)
+AUSSTIEG_TAGE = 5      # realistische Haltedauer, nicht der Zielhorizont
+PRUEF_TAGE = 10        # Fenster, in dem ein Knock-out zaehlt
+
+
+def teil_c(daten: dict) -> list[dict]:
+    """Fuer jedes bestaetigte Swing-Tief einen fiktiven Trade rechnen:
+    Einstieg am Bestaetigungstag, KO je nach Bezug und Puffer, Ausstieg
+    nach AUSSTIEG_TAGE Handelstagen. Ein Knock-out zaehlt als -100%."""
+    treffer = {(b, p): {"ko": 0, "n": 0, "abstand": [], "rendite": []}
+               for b, _ in BEZUEGE for p in PUFFER_VARIANTEN}
+
+    for _, df in daten.items():
+        a = atr(df).values
+        tief = df["Low"].values
+        schluss = df["Close"].values
+        n = len(df)
+        for i in swing_tiefs(df):
+            e = i + RECHTS                      # Bestaetigungstag = Einstieg
+            if e + PRUEF_TAGE >= n or not np.isfinite(a[e]) or a[e] <= 0:
+                continue
+            einstieg = schluss[e]
+            tiefstes_danach = tief[e + 1:e + 1 + PRUEF_TAGE].min()
+            ausstieg = schluss[min(e + AUSSTIEG_TAGE, n - 1)]
+
+            for name, fenster in BEZUEGE:
+                if fenster == 0:
+                    bezug = tief[i]
+                else:
+                    start = max(0, i - fenster + 1)
+                    bezug = tief[start:i + 1].min()
+                for p in PUFFER_VARIANTEN:
+                    ko = bezug - p * a[e]
+                    if einstieg <= ko:          # kann nicht gekauft werden
+                        continue
+                    s = treffer[(name, p)]
+                    s["n"] += 1
+                    s["abstand"].append((einstieg - ko) / a[e])
+                    if tiefstes_danach <= ko:
+                        s["ko"] += 1
+                        s["rendite"].append(-1.0)
+                    else:
+                        # Hebelwirkung: der Schein bildet den Abstand zum KO ab
+                        s["rendite"].append((ausstieg - einstieg) / (einstieg - ko))
+
+    zeilen = []
+    for (name, p), s in treffer.items():
+        if s["n"] == 0:
+            continue
+        r = np.array(s["rendite"])
+        zeilen.append({
+            "bezug": name, "puffer": p, "n": s["n"],
+            "ausfall": s["ko"] / s["n"] * 100,
+            "abstand": float(np.mean(s["abstand"])),
+            "rendite_ueberlebt": float(r[r > -1].mean() * 100) if (r > -1).any() else 0.0,
+            "erwartung": float(r.mean() * 100),
+        })
+    return zeilen
+
+
 def verteilung(werte: list[float]) -> dict:
     if not werte:
         return {}
@@ -207,7 +276,7 @@ def verteilung(werte: list[float]) -> dict:
     }
 
 
-def bericht(a_zeilen: list, b: dict, jahre: int) -> str:
+def bericht(a_zeilen: list, b: dict, c_zeilen: list, jahre: int) -> str:
     jetzt = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M")
     L = ["# Puffer-Analyse - wie viel ATR braucht die KO-Schwelle?", "",
          f"_Erstellt {jetzt} UTC. Swing-Tief = tiefer als die {LINKS} Tage davor "
@@ -274,6 +343,26 @@ def bericht(a_zeilen: list, b: dict, jahre: int) -> str:
     L.append("")
     L.append("_Ein Knock-out ist ein Totalverlust, kein Teilverlust. Ein Puffer, der "
              "80% der Faelle abdeckt, heisst: jeder fuenfte Trade endet bei null._")
+    L.append("")
+
+    # Teil C
+    L += ["## Teil C - welches Bezugstief lohnt sich?", "",
+          f"_Fiktiver Trade je Swing-Tief: Einstieg am Bestaetigungstag, Ausstieg nach "
+          f"{AUSSTIEG_TAGE} Handelstagen, Knock-out zaehlt als -100%. Die Rendite ist "
+          "die des Scheins, nicht des Basiswerts - sie ergibt sich aus dem Abstand "
+          "zum KO. 'Abstand' ist der Weg vom Einstieg bis zur Schwelle in ATR und "
+          "misst den Hebelverlust: je groesser, desto traeger der Schein._", "",
+          "| Bezugstief | Puffer | Faelle | Ausfallquote | Abstand Einstieg-KO | Rendite der Ueberlebenden | Erwartungswert |",
+          "|---|---|---|---|---|---|---|"]
+    for z in sorted(c_zeilen, key=lambda x: -x["erwartung"]):
+        L.append(f"| {z['bezug']} | {z['puffer']:.0f} ATR | {z['n']} | "
+                 f"{z['ausfall']:.1f}% | {z['abstand']:.2f} ATR | "
+                 f"{z['rendite_ueberlebt']:+.1f}% | **{z['erwartung']:+.1f}%** |")
+    L.append("")
+    L.append("_Der Erwartungswert ist eine Rechengroesse, keine Prognose: er unterstellt "
+             f"festen Ausstieg nach {AUSSTIEG_TAGE} Tagen ohne Verkaufssignal, ohne "
+             "Gebuehren und ohne Auswahl nach RSI oder Analysten. Er taugt zum Vergleich "
+             "der Varianten untereinander, nicht als erwartete Depotrendite._")
     return "\n".join(L)
 
 
@@ -300,8 +389,10 @@ def main() -> int:
     print("Teil B: alle Swing-Tiefs ...")
     b = teil_b(daten)
     print(f"  {len(b['faelle'])} Swing-Tiefs gefunden.")
+    print("Teil C: Bezugstief-Varianten ...")
+    c_zeilen = teil_c(daten)
 
-    text = bericht(a_zeilen, b, jahre)
+    text = bericht(a_zeilen, b, c_zeilen, jahre)
     DOCS.mkdir(parents=True, exist_ok=True)
     AUSGABE.write_text(text, encoding="utf-8")
     print(f"\nGeschrieben: {AUSGABE}\n")

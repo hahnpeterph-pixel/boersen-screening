@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-20T15:35:33.549363+00:00",
+ "updated": "2026-08-21T16:47:08.902952+00:00",
  "version": 3,
  "data": {
   "AAPL": {
@@ -131,54 +131,54 @@
    }
   },
   "ADI": {
-   "upgrades_30d": 1,
+   "upgrades_30d": 3,
    "downgrades_30d": 0,
-   "net_30d": 1,
-   "last_action": "main",
-   "last_firm": "Wells Fargo",
-   "last_date": "2026-08-20",
+   "net_30d": 3,
+   "last_action": "init",
+   "last_firm": "BMO Capital",
+   "last_date": "2026-08-21",
    "actions": [
+    {
+     "date": "2026-08-21",
+     "firm": "BMO Capital",
+     "action": "init",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    },
+    {
+     "date": "2026-08-20",
+     "firm": "JP Morgan",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-08-20",
+     "firm": "Morgan Stanley",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-08-20",
+     "firm": "Bernstein",
+     "action": "up",
+     "to_grade": "Outperform",
+     "from_grade": "Market Perform"
+    },
     {
      "date": "2026-08-20",
      "firm": "Wells Fargo",
      "action": "main",
      "to_grade": "Overweight",
      "from_grade": "Overweight"
-    },
-    {
-     "date": "2026-08-20",
-     "firm": "TD Cowen",
-     "action": "reit",
-     "to_grade": "Buy",
-     "from_grade": "Buy"
-    },
-    {
-     "date": "2026-08-20",
-     "firm": "Seaport Global",
-     "action": "up",
-     "to_grade": "Buy",
-     "from_grade": "Neutral"
-    },
-    {
-     "date": "2026-08-20",
-     "firm": "Needham",
-     "action": "main",
-     "to_grade": "Buy",
-     "from_grade": "Buy"
-    },
-    {
-     "date": "2026-08-17",
-     "firm": "Cantor Fitzgerald",
-     "action": "reit",
-     "to_grade": "Overweight",
-     "from_grade": "Overweight"
     }
    ],
    "consensus": {
-    "kaufen_pct": 94,
-    "halten_pct": 6,
+    "kaufen_pct": 95,
+    "halten_pct": 5,
     "verkaufen_pct": 0,
-    "total": 16,
+    "total": 19,
     "unclassified": 0
    }
   },
@@ -255,9 +255,23 @@
    "downgrades_30d": 0,
    "net_30d": 2,
    "last_action": "main",
-   "last_firm": "Guggenheim",
-   "last_date": "2026-08-20",
+   "last_firm": "Baird",
+   "last_date": "2026-08-21",
    "actions": [
+    {
+     "date": "2026-08-21",
+     "firm": "Baird",
+     "action": "main",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    },
+    {
+     "date": "2026-08-20",
+     "firm": "Citigroup",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
     {
      "date": "2026-08-20",
      "firm": "Guggenheim",
@@ -281,10 +295,10 @@
     }
    ],
    "consensus": {
-    "kaufen_pct": 79,
-    "halten_pct": 21,
+    "kaufen_pct": 80,
+    "halten_pct": 20,
     "verkaufen_pct": 0,
-    "total": 14,
+    "total": 15,
     "unclassified": 0
    }
   },
@@ -293,9 +307,16 @@
    "downgrades_30d": 0,
    "net_30d": 0,
    "last_action": "main",
-   "last_firm": "Truist Securities",
-   "last_date": "2026-08-17",
+   "last_firm": "Morgan Stanley",
+   "last_date": "2026-08-21",
    "actions": [
+    {
+     "date": "2026-08-21",
+     "firm": "Morgan Stanley",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
     {
      "date": "2026-08-17",
      "firm": "Truist Securities",
@@ -323,13 +344,6 @@
      "action": "main",
      "to_grade": "Neutral",
      "from_grade": "Neutral"
-    },
-    {
-     "date": "2026-07-22",
-     "firm": "Morgan Stanley",
-     "action": "main",
-     "to_grade": "Overweight",
-     "from_grade": "Overweight"
     }
    ],
    "consensus": {
@@ -425,13 +439,20 @@
    }
   },
   "AMD": {
-   "upgrades_30d": 0,
+   "upgrades_30d": 1,
    "downgrades_30d": 0,
-   "net_30d": 0,
-   "last_action": "main",
-   "last_firm": "Argus Research",
-   "last_date": "2026-08-06",
+   "net_30d": 1,
+   "last_action": "init",
+   "last_firm": "BMO Capital",
+   "last_date": "2026-08-21",
    "actions": [
+    {
+     "date": "2026-08-21",
+     "firm": "BMO Capital",
+     "action": "init",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    },
     {
      "date": "2026-08-06",
      "firm": "Argus Research",
@@ -459,20 +480,13 @@
      "action": "main",
      "to_grade": "Equal-Weight",
      "from_grade": "Equal-Weight"
-    },
-    {
-     "date": "2026-08-05",
-     "firm": "JP Morgan",
-     "action": "main",
-     "to_grade": "Neutral",
-     "from_grade": "Neutral"
     }
    ],
    "consensus": {
     "kaufen_pct": 82,
     "halten_pct": 18,
     "verkaufen_pct": 0,
-    "total": 33,
+    "total": 34,
     "unclassified": 0
    }
   },
@@ -481,9 +495,16 @@
    "downgrades_30d": 0,
    "net_30d": 0,
    "last_action": "main",
-   "last_firm": "Argus Research",
-   "last_date": "2026-08-19",
+   "last_firm": "Piper Sandler",
+   "last_date": "2026-08-20",
    "actions": [
+    {
+     "date": "2026-08-20",
+     "firm": "Piper Sandler",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
     {
      "date": "2026-08-19",
      "firm": "Argus Research",
@@ -511,13 +532,6 @@
      "action": "main",
      "to_grade": "Equal-Weight",
      "from_grade": "Equal-Weight"
-    },
-    {
-     "date": "2026-08-10",
-     "firm": "Guggenheim",
-     "action": "main",
-     "to_grade": "Neutral",
-     "from_grade": "Neutral"
     }
    ],
    "consensus": {
@@ -701,18 +715,26 @@
    }
   },
   "AVGO": {
-   "upgrades_30d": 0,
+   "upgrades_30d": 1,
    "downgrades_30d": 0,
-   "net_30d": 0,
-   "last_action": null,
-   "last_firm": null,
-   "last_date": null,
-   "actions": [],
+   "net_30d": 1,
+   "last_action": "init",
+   "last_firm": "BMO Capital",
+   "last_date": "2026-08-21",
+   "actions": [
+    {
+     "date": "2026-08-21",
+     "firm": "BMO Capital",
+     "action": "init",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    }
+   ],
    "consensus": {
-    "kaufen_pct": 81,
-    "halten_pct": 19,
+    "kaufen_pct": 82,
+    "halten_pct": 18,
     "verkaufen_pct": 0,
-    "total": 21,
+    "total": 22,
     "unclassified": 0
    }
   },
@@ -874,10 +896,10 @@
     }
    ],
    "consensus": {
-    "kaufen_pct": 86,
-    "halten_pct": 14,
+    "kaufen_pct": 100,
+    "halten_pct": 0,
     "verkaufen_pct": 0,
-    "total": 7,
+    "total": 6,
     "unclassified": 0
    }
   },
@@ -1275,9 +1297,16 @@
    "downgrades_30d": 0,
    "net_30d": 0,
    "last_action": "main",
-   "last_firm": "Argus Research",
-   "last_date": "2026-08-11",
+   "last_firm": "Morgan Stanley",
+   "last_date": "2026-08-21",
    "actions": [
+    {
+     "date": "2026-08-21",
+     "firm": "Morgan Stanley",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
     {
      "date": "2026-08-11",
      "firm": "Argus Research",
@@ -1305,20 +1334,13 @@
      "action": "main",
      "to_grade": "Buy",
      "from_grade": "Buy"
-    },
-    {
-     "date": "2026-07-27",
-     "firm": "Wells Fargo",
-     "action": "main",
-     "to_grade": "Overweight",
-     "from_grade": "Overweight"
     }
    ],
    "consensus": {
-    "kaufen_pct": 70,
-    "halten_pct": 30,
+    "kaufen_pct": 73,
+    "halten_pct": 27,
     "verkaufen_pct": 0,
-    "total": 10,
+    "total": 11,
     "unclassified": 0
    }
   },
@@ -1367,10 +1389,10 @@
     }
    ],
    "consensus": {
-    "kaufen_pct": 33,
-    "halten_pct": 33,
-    "verkaufen_pct": 33,
-    "total": 12,
+    "kaufen_pct": 27,
+    "halten_pct": 36,
+    "verkaufen_pct": 36,
+    "total": 11,
     "unclassified": 0
    }
   },
@@ -1465,13 +1487,6 @@
      "action": "reit",
      "to_grade": "Equal-Weight",
      "from_grade": "Equal-Weight"
-    },
-    {
-     "date": "2026-07-22",
-     "firm": "Barclays",
-     "action": "main",
-     "to_grade": "Underweight",
-     "from_grade": "Underweight"
     }
    ],
    "consensus": {
@@ -1486,10 +1501,17 @@
    "upgrades_30d": 0,
    "downgrades_30d": 0,
    "net_30d": 0,
-   "last_action": "reit",
-   "last_firm": "Guggenheim",
+   "last_action": "main",
+   "last_firm": "BMO Capital",
    "last_date": "2026-08-20",
    "actions": [
+    {
+     "date": "2026-08-20",
+     "firm": "BMO Capital",
+     "action": "main",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    },
     {
      "date": "2026-08-20",
      "firm": "Guggenheim",
@@ -1517,13 +1539,6 @@
      "action": "main",
      "to_grade": "Neutral",
      "from_grade": "Neutral"
-    },
-    {
-     "date": "2026-08-12",
-     "firm": "Wells Fargo",
-     "action": "main",
-     "to_grade": "Equal-Weight",
-     "from_grade": "Equal-Weight"
     }
    ],
    "consensus": {
@@ -1539,9 +1554,30 @@
    "downgrades_30d": 0,
    "net_30d": 1,
    "last_action": "main",
-   "last_firm": "Evercore ISI Group",
-   "last_date": "2026-08-20",
+   "last_firm": "Scotiabank",
+   "last_date": "2026-08-21",
    "actions": [
+    {
+     "date": "2026-08-21",
+     "firm": "Scotiabank",
+     "action": "main",
+     "to_grade": "Sector Outperform",
+     "from_grade": "Sector Outperform"
+    },
+    {
+     "date": "2026-08-21",
+     "firm": "Keybanc",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-08-20",
+     "firm": "JP Morgan",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
     {
      "date": "2026-08-20",
      "firm": "Evercore ISI Group",
@@ -1555,27 +1591,6 @@
      "action": "main",
      "to_grade": "Outperform",
      "from_grade": "Outperform"
-    },
-    {
-     "date": "2026-08-19",
-     "firm": "Truist Securities",
-     "action": "main",
-     "to_grade": "Buy",
-     "from_grade": "Buy"
-    },
-    {
-     "date": "2026-08-19",
-     "firm": "Cantor Fitzgerald",
-     "action": "main",
-     "to_grade": "Overweight",
-     "from_grade": "Overweight"
-    },
-    {
-     "date": "2026-08-18",
-     "firm": "Barclays",
-     "action": "main",
-     "to_grade": "Overweight",
-     "from_grade": "Overweight"
     }
    ],
    "consensus": {
@@ -1635,7 +1650,7 @@
     "halten_pct": 25,
     "verkaufen_pct": 0,
     "total": 12,
-    "unclassified": 1
+    "unclassified": 0
    }
   },
   "CSGP": {
@@ -1735,10 +1750,10 @@
     }
    ],
    "consensus": {
-    "kaufen_pct": 60,
-    "halten_pct": 33,
+    "kaufen_pct": 64,
+    "halten_pct": 29,
     "verkaufen_pct": 7,
-    "total": 15,
+    "total": 14,
     "unclassified": 0
    }
   },
@@ -1855,10 +1870,10 @@
     }
    ],
    "consensus": {
-    "kaufen_pct": 60,
-    "halten_pct": 40,
+    "kaufen_pct": 67,
+    "halten_pct": 33,
     "verkaufen_pct": 0,
-    "total": 10,
+    "total": 9,
     "unclassified": 0
    }
   },
@@ -1867,9 +1882,16 @@
    "downgrades_30d": 0,
    "net_30d": 0,
    "last_action": "main",
-   "last_firm": "Roth Capital",
-   "last_date": "2026-08-10",
+   "last_firm": "Wedbush",
+   "last_date": "2026-08-20",
    "actions": [
+    {
+     "date": "2026-08-20",
+     "firm": "Wedbush",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
     {
      "date": "2026-08-10",
      "firm": "Roth Capital",
@@ -1897,20 +1919,13 @@
      "action": "main",
      "to_grade": "Buy",
      "from_grade": "Buy"
-    },
-    {
-     "date": "2026-08-06",
-     "firm": "TD Cowen",
-     "action": "main",
-     "to_grade": "Buy",
-     "from_grade": "Buy"
     }
    ],
    "consensus": {
-    "kaufen_pct": 65,
-    "halten_pct": 35,
+    "kaufen_pct": 61,
+    "halten_pct": 39,
     "verkaufen_pct": 0,
-    "total": 17,
+    "total": 18,
     "unclassified": 0
    }
   },
@@ -2187,9 +2202,16 @@
    "downgrades_30d": 0,
    "net_30d": 0,
    "last_action": "main",
-   "last_firm": "Truist Securities",
-   "last_date": "2026-08-13",
+   "last_firm": "Morgan Stanley",
+   "last_date": "2026-08-21",
    "actions": [
+    {
+     "date": "2026-08-21",
+     "firm": "Morgan Stanley",
+     "action": "main",
+     "to_grade": "Equal-Weight",
+     "from_grade": "Equal-Weight"
+    },
     {
      "date": "2026-08-13",
      "firm": "Truist Securities",
@@ -2200,9 +2222,9 @@
    ],
    "consensus": {
     "kaufen_pct": 0,
-    "halten_pct": 67,
-    "verkaufen_pct": 33,
-    "total": 3,
+    "halten_pct": 75,
+    "verkaufen_pct": 25,
+    "total": 4,
     "unclassified": 0
    }
   },
@@ -2391,8 +2413,8 @@
   },
   "GILD": {
    "upgrades_30d": 0,
-   "downgrades_30d": 1,
-   "net_30d": -1,
+   "downgrades_30d": 0,
+   "net_30d": 0,
    "last_action": "main",
    "last_firm": "RBC Capital",
    "last_date": "2026-08-05",
@@ -2670,9 +2692,9 @@
    }
   },
   "IBM": {
-   "upgrades_30d": 1,
+   "upgrades_30d": 0,
    "downgrades_30d": 0,
-   "net_30d": 1,
+   "net_30d": 0,
    "last_action": "main",
    "last_firm": "Citigroup",
    "last_date": "2026-07-24",
@@ -2910,10 +2932,10 @@
     }
    ],
    "consensus": {
-    "kaufen_pct": 85,
-    "halten_pct": 15,
+    "kaufen_pct": 84,
+    "halten_pct": 16,
     "verkaufen_pct": 0,
-    "total": 20,
+    "total": 19,
     "unclassified": 0
    }
   },
@@ -3024,10 +3046,10 @@
     }
    ],
    "consensus": {
-    "kaufen_pct": 75,
-    "halten_pct": 25,
+    "kaufen_pct": 86,
+    "halten_pct": 14,
     "verkaufen_pct": 0,
-    "total": 8,
+    "total": 7,
     "unclassified": 0
    }
   },
@@ -3298,13 +3320,6 @@
      "action": "main",
      "to_grade": "Neutral",
      "from_grade": "Neutral"
-    },
-    {
-     "date": "2026-07-21",
-     "firm": "Wells Fargo",
-     "action": "main",
-     "to_grade": "Equal-Weight",
-     "from_grade": "Equal-Weight"
     }
    ],
    "consensus": {
@@ -3319,10 +3334,17 @@
    "upgrades_30d": 1,
    "downgrades_30d": 0,
    "net_30d": 1,
-   "last_action": "init",
-   "last_firm": "CICC",
-   "last_date": "2026-08-12",
+   "last_action": "main",
+   "last_firm": "UBS",
+   "last_date": "2026-08-20",
    "actions": [
+    {
+     "date": "2026-08-20",
+     "firm": "UBS",
+     "action": "main",
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
     {
      "date": "2026-08-12",
      "firm": "CICC",
@@ -3350,20 +3372,13 @@
      "action": "main",
      "to_grade": "Overweight",
      "from_grade": "Overweight"
-    },
-    {
-     "date": "2026-08-04",
-     "firm": "BMO Capital",
-     "action": "main",
-     "to_grade": "Outperform",
-     "from_grade": "Outperform"
     }
    ],
    "consensus": {
-    "kaufen_pct": 44,
-    "halten_pct": 56,
+    "kaufen_pct": 47,
+    "halten_pct": 53,
     "verkaufen_pct": 0,
-    "total": 16,
+    "total": 15,
     "unclassified": 0
    }
   },
@@ -3436,13 +3451,20 @@
    }
   },
   "MCHP": {
-   "upgrades_30d": 0,
+   "upgrades_30d": 1,
    "downgrades_30d": 0,
-   "net_30d": 0,
-   "last_action": "reit",
-   "last_firm": "Cantor Fitzgerald",
-   "last_date": "2026-08-17",
+   "net_30d": 1,
+   "last_action": "init",
+   "last_firm": "BMO Capital",
+   "last_date": "2026-08-21",
    "actions": [
+    {
+     "date": "2026-08-21",
+     "firm": "BMO Capital",
+     "action": "init",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    },
     {
      "date": "2026-08-17",
      "firm": "Cantor Fitzgerald",
@@ -3470,20 +3492,13 @@
      "action": "main",
      "to_grade": "Hold",
      "from_grade": "Hold"
-    },
-    {
-     "date": "2026-08-07",
-     "firm": "Rosenblatt",
-     "action": "main",
-     "to_grade": "Buy",
-     "from_grade": "Buy"
     }
    ],
    "consensus": {
-    "kaufen_pct": 67,
-    "halten_pct": 33,
+    "kaufen_pct": 69,
+    "halten_pct": 31,
     "verkaufen_pct": 0,
-    "total": 12,
+    "total": 13,
     "unclassified": 0
    }
   },
@@ -3614,20 +3629,6 @@
      "action": "main",
      "to_grade": "Underperform",
      "from_grade": "Underperform"
-    },
-    {
-     "date": "2026-07-22",
-     "firm": "Citigroup",
-     "action": "main",
-     "to_grade": "Neutral",
-     "from_grade": "Neutral"
-    },
-    {
-     "date": "2026-07-22",
-     "firm": "RBC Capital",
-     "action": "main",
-     "to_grade": "Underperform",
-     "from_grade": "Underperform"
     }
    ],
    "consensus": {
@@ -3687,10 +3688,24 @@
    "upgrades_30d": 2,
    "downgrades_30d": 1,
    "net_30d": 1,
-   "last_action": "down",
-   "last_firm": "RBC Capital",
+   "last_action": "main",
+   "last_firm": "BMO Capital",
    "last_date": "2026-08-20",
    "actions": [
+    {
+     "date": "2026-08-20",
+     "firm": "BMO Capital",
+     "action": "main",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    },
+    {
+     "date": "2026-08-20",
+     "firm": "UBS",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
     {
      "date": "2026-08-20",
      "firm": "RBC Capital",
@@ -3711,27 +3726,13 @@
      "action": "up",
      "to_grade": "Outperform",
      "from_grade": "Neutral"
-    },
-    {
-     "date": "2026-08-11",
-     "firm": "Argus Research",
-     "action": "main",
-     "to_grade": "Buy",
-     "from_grade": "Buy"
-    },
-    {
-     "date": "2026-08-05",
-     "firm": "Guggenheim",
-     "action": "main",
-     "to_grade": "Buy",
-     "from_grade": "Buy"
     }
    ],
    "consensus": {
-    "kaufen_pct": 85,
-    "halten_pct": 15,
+    "kaufen_pct": 86,
+    "halten_pct": 14,
     "verkaufen_pct": 0,
-    "total": 13,
+    "total": 14,
     "unclassified": 0
    }
   },
@@ -3752,13 +3753,34 @@
    }
   },
   "MRVL": {
-   "upgrades_30d": 0,
+   "upgrades_30d": 1,
    "downgrades_30d": 0,
-   "net_30d": 0,
-   "last_action": "reit",
-   "last_firm": "RBC Capital",
-   "last_date": "2026-08-20",
+   "net_30d": 1,
+   "last_action": "main",
+   "last_firm": "Oppenheimer",
+   "last_date": "2026-08-21",
    "actions": [
+    {
+     "date": "2026-08-21",
+     "firm": "Oppenheimer",
+     "action": "main",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    },
+    {
+     "date": "2026-08-21",
+     "firm": "BMO Capital",
+     "action": "init",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    },
+    {
+     "date": "2026-08-20",
+     "firm": "UBS",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
     {
      "date": "2026-08-20",
      "firm": "RBC Capital",
@@ -3772,20 +3794,13 @@
      "action": "main",
      "to_grade": "Hold",
      "from_grade": "Hold"
-    },
-    {
-     "date": "2026-08-17",
-     "firm": "UBS",
-     "action": "main",
-     "to_grade": "Buy",
-     "from_grade": "Buy"
     }
    ],
    "consensus": {
-    "kaufen_pct": 86,
-    "halten_pct": 14,
+    "kaufen_pct": 87,
+    "halten_pct": 13,
     "verkaufen_pct": 0,
-    "total": 22,
+    "total": 23,
     "unclassified": 0
    }
   },
@@ -3845,10 +3860,17 @@
    "upgrades_30d": 0,
    "downgrades_30d": 0,
    "net_30d": 0,
-   "last_action": "main",
-   "last_firm": "B. Riley Securities",
-   "last_date": "2026-08-03",
+   "last_action": "reit",
+   "last_firm": "Cantor Fitzgerald",
+   "last_date": "2026-08-10",
    "actions": [
+    {
+     "date": "2026-08-10",
+     "firm": "Cantor Fitzgerald",
+     "action": "reit",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
     {
      "date": "2026-08-03",
      "firm": "B. Riley Securities",
@@ -3874,13 +3896,6 @@
      "date": "2026-07-31",
      "firm": "Benchmark",
      "action": "main",
-     "to_grade": "Buy",
-     "from_grade": "Buy"
-    },
-    {
-     "date": "2026-07-31",
-     "firm": "BTIG",
-     "action": "reit",
      "to_grade": "Buy",
      "from_grade": "Buy"
     }
@@ -3910,13 +3925,20 @@
    }
   },
   "MU": {
-   "upgrades_30d": 0,
+   "upgrades_30d": 1,
    "downgrades_30d": 0,
-   "net_30d": 0,
-   "last_action": "main",
-   "last_firm": "Citigroup",
-   "last_date": "2026-08-07",
+   "net_30d": 1,
+   "last_action": "up",
+   "last_firm": "New Street Research",
+   "last_date": "2026-08-14",
    "actions": [
+    {
+     "date": "2026-08-14",
+     "firm": "New Street Research",
+     "action": "up",
+     "to_grade": "Buy",
+     "from_grade": "Neutral"
+    },
     {
      "date": "2026-08-07",
      "firm": "Citigroup",
@@ -3926,10 +3948,10 @@
     }
    ],
    "consensus": {
-    "kaufen_pct": 95,
-    "halten_pct": 5,
+    "kaufen_pct": 96,
+    "halten_pct": 4,
     "verkaufen_pct": 0,
-    "total": 22,
+    "total": 23,
     "unclassified": 0
    }
   },
@@ -3998,13 +4020,20 @@
    }
   },
   "NVDA": {
-   "upgrades_30d": 0,
+   "upgrades_30d": 1,
    "downgrades_30d": 0,
-   "net_30d": 0,
-   "last_action": "reit",
-   "last_firm": "RBC Capital",
-   "last_date": "2026-08-20",
+   "net_30d": 1,
+   "last_action": "init",
+   "last_firm": "BMO Capital",
+   "last_date": "2026-08-21",
    "actions": [
+    {
+     "date": "2026-08-21",
+     "firm": "BMO Capital",
+     "action": "init",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    },
     {
      "date": "2026-08-20",
      "firm": "RBC Capital",
@@ -4024,7 +4053,7 @@
     "kaufen_pct": 100,
     "halten_pct": 0,
     "verkaufen_pct": 0,
-    "total": 22,
+    "total": 23,
     "unclassified": 0
    }
   },
@@ -4115,13 +4144,6 @@
      "action": "main",
      "to_grade": "Outperform",
      "from_grade": "Outperform"
-    },
-    {
-     "date": "2026-07-21",
-     "firm": "Stifel",
-     "action": "main",
-     "to_grade": "Buy",
-     "from_grade": "Buy"
     }
    ],
    "consensus": {
@@ -4212,13 +4234,6 @@
      "action": "main",
      "to_grade": "Overweight",
      "from_grade": "Overweight"
-    },
-    {
-     "date": "2026-07-22",
-     "firm": "DA Davidson",
-     "action": "main",
-     "to_grade": "Buy",
-     "from_grade": "Buy"
     }
    ],
    "consensus": {
@@ -4266,9 +4281,16 @@
    "downgrades_30d": 0,
    "net_30d": 0,
    "last_action": "main",
-   "last_firm": "Mizuho",
-   "last_date": "2026-08-19",
+   "last_firm": "BMO Capital",
+   "last_date": "2026-08-20",
    "actions": [
+    {
+     "date": "2026-08-20",
+     "firm": "BMO Capital",
+     "action": "main",
+     "to_grade": "Outperform",
+     "from_grade": "Outperform"
+    },
     {
      "date": "2026-08-19",
      "firm": "Mizuho",
@@ -4296,13 +4318,6 @@
      "action": "main",
      "to_grade": "Buy",
      "from_grade": "Buy"
-    },
-    {
-     "date": "2026-08-19",
-     "firm": "Cantor Fitzgerald",
-     "action": "main",
-     "to_grade": "Overweight",
-     "from_grade": "Overweight"
     }
    ],
    "consensus": {
@@ -4785,29 +4800,50 @@
    "downgrades_30d": 0,
    "net_30d": 0,
    "last_action": "main",
-   "last_firm": "Evercore ISI Group",
-   "last_date": "2026-08-17",
+   "last_firm": "JP Morgan",
+   "last_date": "2026-08-21",
    "actions": [
     {
-     "date": "2026-08-17",
-     "firm": "Evercore ISI Group",
+     "date": "2026-08-21",
+     "firm": "JP Morgan",
      "action": "main",
-     "to_grade": "Outperform",
-     "from_grade": "Outperform"
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
     },
     {
-     "date": "2026-08-14",
-     "firm": "Telsey Advisory Group",
+     "date": "2026-08-21",
+     "firm": "UBS",
      "action": "main",
-     "to_grade": "Outperform",
-     "from_grade": "Outperform"
+     "to_grade": "Neutral",
+     "from_grade": "Neutral"
+    },
+    {
+     "date": "2026-08-21",
+     "firm": "Barclays",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-08-21",
+     "firm": "Wells Fargo",
+     "action": "main",
+     "to_grade": "Equal-Weight",
+     "from_grade": "Equal-Weight"
+    },
+    {
+     "date": "2026-08-21",
+     "firm": "Bernstein",
+     "action": "main",
+     "to_grade": "Market Perform",
+     "from_grade": "Market Perform"
     }
    ],
    "consensus": {
-    "kaufen_pct": 75,
-    "halten_pct": 25,
+    "kaufen_pct": 70,
+    "halten_pct": 30,
     "verkaufen_pct": 0,
-    "total": 8,
+    "total": 10,
     "unclassified": 0
    }
   },
@@ -5047,9 +5083,16 @@
    "downgrades_30d": 0,
    "net_30d": 0,
    "last_action": "main",
-   "last_firm": "Citigroup",
-   "last_date": "2026-08-10",
+   "last_firm": "Truist Securities",
+   "last_date": "2026-08-20",
    "actions": [
+    {
+     "date": "2026-08-20",
+     "firm": "Truist Securities",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
     {
      "date": "2026-08-10",
      "firm": "Citigroup",
@@ -5077,13 +5120,6 @@
      "action": "main",
      "to_grade": "Hold",
      "from_grade": "Hold"
-    },
-    {
-     "date": "2026-08-07",
-     "firm": "Morgan Stanley",
-     "action": "main",
-     "to_grade": "Overweight",
-     "from_grade": "Overweight"
     }
    ],
    "consensus": {
@@ -5160,13 +5196,6 @@
      "action": "main",
      "to_grade": "Neutral",
      "from_grade": "Neutral"
-    },
-    {
-     "date": "2026-07-21",
-     "firm": "Roth Capital",
-     "action": "main",
-     "to_grade": "Buy",
-     "from_grade": "Buy"
     }
    ],
    "consensus": {
@@ -5222,10 +5251,10 @@
     }
    ],
    "consensus": {
-    "kaufen_pct": 45,
-    "halten_pct": 45,
-    "verkaufen_pct": 10,
-    "total": 20,
+    "kaufen_pct": 42,
+    "halten_pct": 47,
+    "verkaufen_pct": 11,
+    "total": 19,
     "unclassified": 0
    }
   },
@@ -5378,10 +5407,10 @@
     }
    ],
    "consensus": {
-    "kaufen_pct": 59,
-    "halten_pct": 32,
-    "verkaufen_pct": 9,
-    "total": 22,
+    "kaufen_pct": 62,
+    "halten_pct": 29,
+    "verkaufen_pct": 10,
+    "total": 21,
     "unclassified": 0
    }
   },
@@ -5389,18 +5418,10 @@
    "upgrades_30d": 0,
    "downgrades_30d": 0,
    "net_30d": 0,
-   "last_action": "main",
-   "last_firm": "JP Morgan",
-   "last_date": "2026-07-21",
-   "actions": [
-    {
-     "date": "2026-07-21",
-     "firm": "JP Morgan",
-     "action": "main",
-     "to_grade": "Overweight",
-     "from_grade": "Overweight"
-    }
-   ],
+   "last_action": null,
+   "last_firm": null,
+   "last_date": null,
+   "actions": [],
    "consensus": {
     "kaufen_pct": 81,
     "halten_pct": 19,
@@ -5723,50 +5744,50 @@
    "downgrades_30d": 1,
    "net_30d": -1,
    "last_action": "main",
-   "last_firm": "DA Davidson",
-   "last_date": "2026-08-17",
+   "last_firm": "JP Morgan",
+   "last_date": "2026-08-21",
    "actions": [
     {
-     "date": "2026-08-17",
-     "firm": "DA Davidson",
+     "date": "2026-08-21",
+     "firm": "JP Morgan",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-08-21",
+     "firm": "UBS",
      "action": "main",
      "to_grade": "Buy",
      "from_grade": "Buy"
     },
     {
-     "date": "2026-08-17",
+     "date": "2026-08-21",
+     "firm": "Wells Fargo",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-08-21",
+     "firm": "Morgan Stanley",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
+    {
+     "date": "2026-08-21",
      "firm": "Guggenheim",
      "action": "main",
      "to_grade": "Buy",
      "from_grade": "Buy"
-    },
-    {
-     "date": "2026-08-12",
-     "firm": "RBC Capital",
-     "action": "reit",
-     "to_grade": "Outperform",
-     "from_grade": "Outperform"
-    },
-    {
-     "date": "2026-08-04",
-     "firm": "Oppenheimer",
-     "action": "down",
-     "to_grade": "Perform",
-     "from_grade": "Outperform"
-    },
-    {
-     "date": "2026-07-31",
-     "firm": "Bernstein",
-     "action": "main",
-     "to_grade": "Outperform",
-     "from_grade": "Outperform"
     }
    ],
    "consensus": {
-    "kaufen_pct": 86,
-    "halten_pct": 14,
+    "kaufen_pct": 88,
+    "halten_pct": 12,
     "verkaufen_pct": 0,
-    "total": 14,
+    "total": 17,
     "unclassified": 0
    }
   },
@@ -5822,9 +5843,16 @@
    "downgrades_30d": 0,
    "net_30d": 0,
    "last_action": "main",
-   "last_firm": "Mizuho",
-   "last_date": "2026-08-19",
+   "last_firm": "Keybanc",
+   "last_date": "2026-08-21",
    "actions": [
+    {
+     "date": "2026-08-21",
+     "firm": "Keybanc",
+     "action": "main",
+     "to_grade": "Overweight",
+     "from_grade": "Overweight"
+    },
     {
      "date": "2026-08-19",
      "firm": "Mizuho",
@@ -5852,13 +5880,6 @@
      "action": "main",
      "to_grade": "Buy",
      "from_grade": "Buy"
-    },
-    {
-     "date": "2026-08-17",
-     "firm": "Wells Fargo",
-     "action": "main",
-     "to_grade": "Overweight",
-     "from_grade": "Overweight"
     }
    ],
    "consensus": {

@@ -3,72 +3,196 @@
  "ranks": {
   "turnaround": [
    "BEI.DE",
-   "MELI",
-   "TRV",
    "QIA.DE",
    "HNR1.DE",
+   "MELI",
    "BAYN.DE",
-   "BNR.DE",
-   "KHC",
-   "HEN3.DE",
    "ADBE",
-   "PCAR",
-   "TTWO",
+   "ADSK",
+   "CTSH",
+   "AXON",
+   "TRV",
+   "HEN3.DE",
+   "AXP",
+   "SY1.DE",
    "DTE.DE",
-   "ROP",
-   "DTG.DE"
+   "GEHC"
   ],
   "momentum": [
-   "MRK",
-   "MRVL",
-   "MU",
-   "TEAM",
-   "DB1.DE",
-   "ALV.DE",
-   "DHL.DE",
    "ABNB",
-   "TRV",
-   "BNR.DE",
+   "MRK",
+   "ALV.DE",
+   "DB1.DE",
+   "TEAM",
    "SY1.DE",
-   "DXCM",
+   "MRVL",
+   "DHL.DE",
+   "PAYX",
    "FANG",
+   "BAYN.DE",
+   "TRV",
+   "AXON",
    "CSX",
    "JNJ"
   ],
   "value": [
    "MU",
-   "ADSK",
    "NVDA",
+   "ADSK",
    "V",
+   "MTX.DE",
    "REGN",
    "ABNB",
-   "MTX.DE",
    "ENR.DE",
    "VRTX",
-   "DXCM",
    "DB1.DE",
+   "DXCM",
    "GOOGL",
    "ODFL",
-   "ROST",
-   "ALV.DE"
+   "ALV.DE",
+   "CVX"
   ]
  },
  "changes": {
   "turnaround": {
-   "entries": [],
-   "exits": [],
-   "moves": []
+   "entries": [
+    {
+     "ticker": "ADSK",
+     "rank": 7
+    },
+    {
+     "ticker": "CTSH",
+     "rank": 8
+    },
+    {
+     "ticker": "AXON",
+     "rank": 9
+    },
+    {
+     "ticker": "AXP",
+     "rank": 12
+    },
+    {
+     "ticker": "SY1.DE",
+     "rank": 13
+    },
+    {
+     "ticker": "GEHC",
+     "rank": 15
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "BNR.DE",
+     "old_rank": 7
+    },
+    {
+     "ticker": "KHC",
+     "old_rank": 8
+    },
+    {
+     "ticker": "PCAR",
+     "old_rank": 11
+    },
+    {
+     "ticker": "TTWO",
+     "old_rank": 12
+    },
+    {
+     "ticker": "ROP",
+     "old_rank": 14
+    },
+    {
+     "ticker": "DTG.DE",
+     "old_rank": 15
+    }
+   ],
+   "moves": [
+    {
+     "ticker": "TRV",
+     "rank": 10,
+     "delta": -7
+    }
+   ]
   },
   "momentum": {
-   "entries": [],
-   "exits": [],
-   "moves": []
+   "entries": [
+    {
+     "ticker": "PAYX",
+     "rank": 9
+    },
+    {
+     "ticker": "BAYN.DE",
+     "rank": 11
+    },
+    {
+     "ticker": "AXON",
+     "rank": 13
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "MU",
+     "old_rank": 3
+    },
+    {
+     "ticker": "BNR.DE",
+     "old_rank": 10
+    },
+    {
+     "ticker": "DXCM",
+     "old_rank": 12
+    }
+   ],
+   "moves": [
+    {
+     "ticker": "ABNB",
+     "rank": 1,
+     "delta": 7
+    },
+    {
+     "ticker": "SY1.DE",
+     "rank": 6,
+     "delta": 5
+    },
+    {
+     "ticker": "MRVL",
+     "rank": 7,
+     "delta": -5
+    }
+   ]
   },
   "value": {
-   "entries": [],
-   "exits": [],
+   "entries": [
+    {
+     "ticker": "CVX",
+     "rank": 15
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "ROST",
+     "old_rank": 14
+    }
+   ],
    "moves": []
   },
-  "analyst_flips": []
+  "analyst_flips": [
+   {
+    "ticker": "MRVL",
+    "now": 1,
+    "old": 0
+   },
+   {
+    "ticker": "MU",
+    "now": 1,
+    "old": 0
+   },
+   {
+    "ticker": "NVDA",
+    "now": 1,
+    "old": 0
+   }
+  ]
  }
 }

@@ -2,27 +2,23 @@ name: Boersen-Screening
 
 on:
   schedule:
-    # 04:00 UTC an Werktagen = 06:00 MESZ / 05:00 MEZ
-    # Basis sind damit die Schlusskurse des Vortags (US-Schluss 22:00 MESZ).
-    - cron: "0 4 * * 1-5"
-  workflow_dispatch:        # erlaubt manuelles Starten per Knopfdruck
-
-permissions:
-  contents: write
+    - cron: '30 6 * * 0-4'
+  workflow_dispatch:
 
 jobs:
   screening:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
     steps:
-      - uses: actions/checkout@v4
+      - name: Repository auschecken
+        uses: actions/checkout@v4
 
-      - uses: actions/setup-python@v5
+      - name: Python 3.11 einrichten
+        uses: actions/setup-python@v4
         with:
-          python-version: "3.12"
-          cache: pip
+          python-version: '3.11'
+          cache: 'pip'
 
-      - name: Abhaengigkeiten installieren
+      - name: Requirements installieren
         run: pip install -r requirements.txt
 
       - name: Screening ausfuehren
@@ -34,7 +30,7 @@ jobs:
       - name: Ergebnis speichern
         run: |
           git config user.name "screening-bot"
-          git config user.email "actions@github.com"
-          git add docs state
-          git diff --staged --quiet || git commit -m "Screening $(date -u +%Y-%m-%d)"
+          git config user.email "screening@example.com"
+          git add -A
+          git commit -m "[auto] Screening $(date -u +'%Y-%m-%d %H:%M')"
           git push

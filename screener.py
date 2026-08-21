@@ -63,6 +63,7 @@ import pandas as pd
 BASE = Path(__file__).resolve().parent
 UNIVERSE_FILE = BASE / "universe.json"
 DOCS_DIR = BASE / "docs"
+EXTERN_RATINGS_FILE = DOCS_DIR / "analysten_extern.csv"
 STATE_DIR = BASE / "state"
 STATE_FILE = STATE_DIR / "state.json"
 FUND_FILE = STATE_DIR / "fundamentals.json"
@@ -169,7 +170,7 @@ def compute_consensus_from_actions(ud: pd.DataFrame, date_col: str, cutoff) -> d
     recent = ud[ud[date_col] >= cutoff]
     if recent.empty or "Firm" not in recent.columns:
         return {"kaufen_pct": None, "halten_pct": None, "verkaufen_pct": None,
-                "total": 0, "unclassified": 0}
+                "total": 0, "unclassified": 0, "firmen": []}
 
     # Pro Bank die zeitlich juengste Zeile behalten
     latest_per_firm = recent.sort_values(date_col).groupby("Firm", as_index=False).last()
@@ -186,6 +187,13 @@ def compute_consensus_from_actions(ud: pd.DataFrame, date_col: str, cutoff) -> d
             sell += 1
         else:
             unclassified += 1
+
+    firmen = []
+    for _, r in latest_per_firm.iterrows():
+        firmen.append({"firm": str(r.get("Firm")),
+                       "date": str(r[date_col].date()),
+                       "grade": (str(r.get("ToGrade")) if pd.notna(r.get("ToGrade")) else None),
+                       "target": None, "quelle": "Yahoo"})
 
     total = buy + hold + sell
     if total == 0:
@@ -467,10 +475,16 @@ def get_analyst_data(tickers: list[str]) -> dict:
             "last_action": None, "last_firm": None, "last_date": None,
             "actions": [],  # bis zu 5 juengste Einzelaktionen, neueste zuerst
             "consensus": {"kaufen_pct": None, "halten_pct": None, "verkaufen_pct": None,
-                          "total": 0, "unclassified": 0},
+                          "total": 0, "unclassified": 0, "firmen": []},
+            "quelle": "keine",
+            "price_targets": {},
+            "konsens_firmen": [],
+            "merged_firmen": [],
+            "merged_ziele": {},
         }
         try:
-            ud = yf.Ticker(t).upgrades_downgrades
+            tk = yf.Ticker(t)
+            ud = tk.upgrades_downgrades
             if ud is not None and not ud.empty:
                 ud = ud.reset_index()
                 date_col = "GradeDate" if "GradeDate" in ud.columns else ud.columns[0]
@@ -481,6 +495,9 @@ def get_analyst_data(tickers: list[str]) -> dict:
                 # nicht mehr mit. Nutzt dieselbe schon geladene Tabelle wie
                 # unten - kein zusaetzlicher Datenabruf.
                 entry["consensus"] = compute_consensus_from_actions(ud, date_col, cutoff_consensus)
+                if entry["consensus"]["total"] > 0:
+                    entry["quelle"] = "Einzelratings"
+                entry["konsens_firmen"] = entry["consensus"].pop("firmen", [])
 
                 recent = ud[ud[date_col] >= cutoff].sort_values(date_col)
                 if not recent.empty:
@@ -504,6 +521,25 @@ def get_analyst_data(tickers: list[str]) -> dict:
                         })
         except Exception:  # noqa: BLE001
             pass
+
+        # Kaskade: Die Eigenberechnung aus den Einzelratings ist erste Wahl.
+        # Findet sie nichts (Ratingtabelle leer oder alles aelter als
+        # CONSENSUS_MAX_AGE_DAYS - z.B. META, RHM.DE), greift Yahoos
+        # aggregierte Zaehlung. Die Herkunft steht in entry['quelle'],
+        # damit beides nie verwechselt wird.
+        if entry['consensus']['total'] == 0:
+            try:
+                agg = consensus_from_recommendations(yf.Ticker(t))
+                if agg['total'] > 0:
+                    entry['consensus'] = agg
+                    entry['quelle'] = 'Aggregat'
+            except Exception:  # noqa: BLE001
+                pass
+        try:
+            entry['price_targets'] = yf.Ticker(t).analyst_price_targets or {}
+        except Exception:  # noqa: BLE001
+            entry['price_targets'] = {}
+
         data[t] = entry
         if n % 25 == 0:
             print(f"  {n}/{len(tickers)}")
@@ -1572,6 +1608,393 @@ def build_report(today: dict, prev: dict, changes: dict, get_rank, extras_rows: 
     L.append("_Automatisch erzeugte Kennzahlensortierung, keine Anlageberatung._")
     return "\n".join(L)
 
+GRADE_BUY_TERMS_DE = {"kaufen", "klar kaufen", "aufstocken", "uebergewichten", "übergewichten"}
+GRADE_HOLD_TERMS_DE = {"halten", "neutral bewerten", "marktgewichten"}
+GRADE_SELL_TERMS_DE = {"verkaufen", "klar verkaufen", "reduzieren", "untergewichten"}
+
+# Schreibweisen desselben Hauses zusammenfuehren. Ohne diese Tabelle waeren
+# "Jefferies & Company Inc." und "Jefferies" zwei verschiedene Banken - und
+# dieselbe Analyse wuerde doppelt in den Konsens einfliessen.
+FIRMEN_ALIAS = {
+    "jefferies company inc": "Jefferies",
+    "jefferies co": "Jefferies",
+    "jefferies": "Jefferies",
+    "jp morgan chase co": "JP Morgan",
+    "jpmorgan chase co": "JP Morgan",
+    "jpmorgan": "JP Morgan",
+    "jp morgan": "JP Morgan",
+    "ubs ag": "UBS",
+    "ubs group": "UBS",
+    "ubs": "UBS",
+    "rbc capital markets": "RBC Capital",
+    "rbc capital": "RBC Capital",
+    "barclays capital": "Barclays",
+    "barclays": "Barclays",
+    "goldman sachs group inc": "Goldman Sachs",
+    "goldman sachs": "Goldman Sachs",
+    "bernstein research": "Bernstein",
+    "bernstein": "Bernstein",
+    "sanford c bernstein": "Bernstein",
+    "dz bank": "DZ Bank",
+    "deutsche bank ag": "Deutsche Bank",
+    "deutsche bank": "Deutsche Bank",
+    "morgan stanley": "Morgan Stanley",
+    "b of a securities": "B of A Securities",
+    "bofa securities": "B of A Securities",
+    "bank of america": "B of A Securities",
+    "merrill lynch": "B of A Securities",
+    "wells fargo": "Wells Fargo",
+    "wells fargo securities": "Wells Fargo",
+    "citigroup": "Citigroup",
+    "citi": "Citigroup",
+    "bmo capital": "BMO Capital",
+    "bmo capital markets": "BMO Capital",
+    "td cowen": "TD Cowen",
+    "cowen co": "TD Cowen",
+    "baird": "Baird",
+    "robert w baird": "Baird",
+    "needham": "Needham",
+    "needham company": "Needham",
+    "argus research": "Argus Research",
+    "raymond james": "Raymond James",
+    "stifel": "Stifel",
+    "stifel nicolaus": "Stifel",
+    "oppenheimer": "Oppenheimer",
+    "wedbush": "Wedbush",
+    "piper sandler": "Piper Sandler",
+    "guggenheim": "Guggenheim",
+    "scotiabank": "Scotiabank",
+    "macquarie": "Macquarie",
+    "truist securities": "Truist Securities",
+    "truist": "Truist Securities",
+    "da davidson": "DA Davidson",
+    "rosenblatt": "Rosenblatt",
+    "bnp paribas": "BNP Paribas",
+    "new street research": "New Street Research",
+    "craig hallum": "Craig-Hallum",
+    "craighallum": "Craig-Hallum",
+    "tigress financial": "Tigress Financial",
+    "benchmark": "Benchmark",
+    "telsey advisory group": "Telsey Advisory Group",
+    "b riley securities": "B. Riley Securities",
+    "briley securities": "B. Riley Securities",
+    "warburg research": "Warburg Research",
+    "berenberg": "Berenberg",
+    "baader bank": "Baader Bank",
+    "hauck aufhaeuser": "Hauck Aufhaeuser",
+    "kepler cheuvreux": "Kepler Cheuvreux",
+    "jp morgan cazenove": "JP Morgan",
+}
+
+
+def normalize_firm(name: str | None) -> str | None:
+    """Bankname auf eine einheitliche Schreibweise bringen."""
+    if not name:
+        return None
+    s = str(name).strip()
+    if not s or s.lower() in ("nan", "none"):
+        return None
+    schluessel = s.lower()
+    for zeichen in (".", ",", "&", "'", "-", "/", "(", ")"):
+        schluessel = schluessel.replace(zeichen, " ")
+    schluessel = " ".join(schluessel.split())
+    # Erst mit vollem Schluessel nachsehen, dann schrittweise Rechtsformen
+    # abschneiden und erneut pruefen. Andersherum verfehlt man Eintraege wie
+    # "jp morgan chase co", die genau so in der Tabelle stehen.
+    if schluessel in FIRMEN_ALIAS:
+        return FIRMEN_ALIAS[schluessel]
+    endungen = (" inc", " llc", " ltd", " gmbh", " ag", " plc", " sa", " co",
+                " group", " markets", " securities", " research", " capital markets")
+    geaendert = True
+    while geaendert:
+        geaendert = False
+        for endung in endungen:
+            if schluessel.endswith(endung):
+                kandidat = schluessel[: -len(endung)].strip()
+                if not kandidat:
+                    continue
+                schluessel = kandidat
+                geaendert = True
+                if schluessel in FIRMEN_ALIAS:
+                    return FIRMEN_ALIAS[schluessel]
+    return FIRMEN_ALIAS.get(schluessel, s)
+
+
+def classify_grade_any(grade: str | None) -> str | None:
+    """Wie classify_grade, zusaetzlich mit deutschsprachigen Einstufungen."""
+    cls = classify_grade(grade)
+    if cls:
+        return cls
+    if not grade:
+        return None
+    g = str(grade).strip().lower()
+    if g in GRADE_BUY_TERMS_DE:
+        return "buy"
+    if g in GRADE_HOLD_TERMS_DE:
+        return "hold"
+    if g in GRADE_SELL_TERMS_DE:
+        return "sell"
+    return None
+
+
+def load_extern_ratings(pfad) -> dict:
+    """docs/analysten_extern.csv einlesen - von Hand gepflegte Einzelratings.
+
+    Bewusst KEIN automatischer Abruf eines zweiten Portals: das waere
+    rechtlich heikel und technisch fragil. Stattdessen eine nachvollziehbare
+    Datei, in der jede Zeile Quelle und Datum mitbringt.
+
+    Spalten: ticker,bank,datum,einstufung,kursziel,quelle
+    """
+    daten: dict[str, list] = {}
+    if not pfad.exists():
+        return daten
+    import csv as _csv
+    with pfad.open(encoding="utf-8") as f:
+        for zeile in _csv.DictReader(f):
+            t = (zeile.get("ticker") or "").strip().upper()
+            bank = normalize_firm(zeile.get("bank"))
+            datum = (zeile.get("datum") or "").strip()
+            if not t or not bank or not datum:
+                continue
+            ziel = None
+            roh = (zeile.get("kursziel") or "").strip().replace(",", ".")
+            if roh:
+                try:
+                    ziel = float(roh)
+                except ValueError:
+                    ziel = None
+            daten.setdefault(t, []).append({
+                "firm": bank,
+                "date": datum,
+                "grade": (zeile.get("einstufung") or "").strip(),
+                "target": ziel,
+                "quelle": (zeile.get("quelle") or "extern").strip(),
+            })
+    return daten
+
+
+def merge_firm_ratings(yahoo_firmen: list, extern_firmen: list, cutoff_datum: str) -> list:
+    """Beide Listen vereinigen, Doppelte entfernen, Altes ausfiltern.
+
+    Doppelt heisst: gleiche Bank UND Datum hoechstens 3 Tage auseinander -
+    dann ist es dieselbe Analyse, nur unterschiedlich erfasst. Behalten wird
+    der reichere Eintrag: einer MIT Kursziel schlaegt einen ohne.
+
+    Danach gilt wie gehabt: pro Bank nur die juengste Einstufung, und nur
+    wenn sie nicht aelter als das Stichdatum ist.
+    """
+    from datetime import datetime as _dt
+
+    def als_datum(s):
+        try:
+            return _dt.strptime(str(s)[:10], "%Y-%m-%d")
+        except Exception:  # noqa: BLE001
+            return None
+
+    grenze = als_datum(cutoff_datum)
+    alle = []
+    for eintrag in list(yahoo_firmen or []) + list(extern_firmen or []):
+        d = als_datum(eintrag.get("date"))
+        if d is None or (grenze and d < grenze):
+            continue
+        firm = normalize_firm(eintrag.get("firm"))
+        if not firm:
+            continue
+        alle.append({**eintrag, "firm": firm, "_d": d})
+
+    # Doppelte je Bank zusammenfuehren
+    je_bank: dict[str, list] = {}
+    for e in alle:
+        je_bank.setdefault(e["firm"], []).append(e)
+
+    ergebnis = []
+    for firm, eintraege in je_bank.items():
+        eintraege.sort(key=lambda x: x["_d"], reverse=True)
+        behalten: list = []
+        for e in eintraege:
+            treffer = None
+            for b in behalten:
+                if abs((b["_d"] - e["_d"]).days) <= 3:
+                    treffer = b
+                    break
+            if treffer is None:
+                behalten.append(e)
+            else:
+                # gleiche Analyse: fehlende Felder auffuellen
+                if treffer.get("target") is None and e.get("target") is not None:
+                    treffer["target"] = e["target"]
+                if not treffer.get("grade") and e.get("grade"):
+                    treffer["grade"] = e["grade"]
+                if not treffer.get("quelle") and e.get("quelle"):
+                    treffer["quelle"] = e["quelle"]
+                treffer["doppelt"] = True
+        # pro Bank zaehlt nur die juengste
+        ergebnis.append(behalten[0])
+
+    ergebnis.sort(key=lambda x: x["_d"], reverse=True)
+    for e in ergebnis:
+        e.pop("_d", None)
+    return ergebnis
+
+
+def consensus_from_firmen(firmen: list) -> dict:
+    """Kaufen/Halten/Verkaufen und Kursziel aus der vereinigten Liste."""
+    leer = {"kaufen_pct": None, "halten_pct": None, "verkaufen_pct": None,
+            "total": 0, "unclassified": 0, "ziel_mittel": None,
+            "ziel_hoch": None, "ziel_tief": None, "anzahl_ziele": 0}
+    if not firmen:
+        return leer
+    buy = hold = sell = unclassified = 0
+    ziele = []
+    for e in firmen:
+        cls = classify_grade_any(e.get("grade"))
+        if cls == "buy":
+            buy += 1
+        elif cls == "hold":
+            hold += 1
+        elif cls == "sell":
+            sell += 1
+        else:
+            unclassified += 1
+        if e.get("target"):
+            ziele.append(float(e["target"]))
+    total = buy + hold + sell
+    if total == 0:
+        return leer
+    return {
+        "kaufen_pct": round(buy / total * 100),
+        "halten_pct": round(hold / total * 100),
+        "verkaufen_pct": round(sell / total * 100),
+        "total": total,
+        "unclassified": unclassified,
+        "ziel_mittel": round(sum(ziele) / len(ziele), 2) if ziele else None,
+        "ziel_hoch": max(ziele) if ziele else None,
+        "ziel_tief": min(ziele) if ziele else None,
+        "anzahl_ziele": len(ziele),
+    }
+
+
+def apply_extern_ratings(today: dict, extern: dict, cutoff_datum: str) -> int:
+    """Externe Ratings in den heutigen Stand einmischen.
+
+    Wirkt auf alle nachgelagerten Auswertungen - auch auf report.md und den
+    Analysten-Filter, weil das VOR dem Report-Aufbau passiert.
+    Beruehrt wird ein Wert nur, wenn die Zusammenfuehrung tatsaechlich mehr
+    Banken ergibt als die reine Yahoo-Berechnung.
+    """
+    geaendert = 0
+    for t, row in (today.get("rows") or {}).items():
+        a = row.get("analyst") or {}
+        yahoo_firmen = a.get("konsens_firmen") or []
+        extern_firmen = extern.get(t, [])
+        if not extern_firmen and not yahoo_firmen:
+            continue
+        merged = merge_firm_ratings(yahoo_firmen, extern_firmen, cutoff_datum)
+        kons = consensus_from_firmen(merged)
+        if kons["total"] == 0:
+            continue
+        alt_total = (a.get("consensus") or {}).get("total", 0) or 0
+        if extern_firmen and kons["total"] >= alt_total:
+            a["consensus"] = {k: kons[k] for k in
+                              ("kaufen_pct", "halten_pct", "verkaufen_pct", "total", "unclassified")}
+            a["quelle"] = "Zusammengefuehrt" if yahoo_firmen else "extern"
+            geaendert += 1
+        a["merged_firmen"] = merged
+        a["merged_ziele"] = {k: kons[k] for k in
+                             ("ziel_mittel", "ziel_hoch", "ziel_tief", "anzahl_ziele")}
+        tg = row.get("target") or {}
+        tg["rec_breakdown"] = a["consensus"]
+        row["target"] = tg
+        row["analyst"] = a
+    return geaendert
+
+
+def consensus_from_recommendations(tk) -> dict:
+    """Zweite Quelle: Yahoos aggregierte Empfehlungszaehlung.
+
+    Wird NUR benutzt, wenn compute_consensus_from_actions nichts findet -
+    also wenn die Ratingtabelle leer ist oder jede Bank laenger als
+    CONSENSUS_MAX_AGE_DAYS geschwiegen hat (z.B. META, RHM.DE).
+
+    Yahoo liefert hier eine reine Zaehlung je Monatsfenster ('0m' = laufender
+    Monat) ohne Bankennamen und ohne Datum. Weniger sauber als die
+    Eigenberechnung, aber deutlich besser als gar nichts. Deshalb steht die
+    Herkunft immer in der Spalte 'quelle'.
+    """
+    leer = {"kaufen_pct": None, "halten_pct": None, "verkaufen_pct": None,
+            "total": 0, "unclassified": 0}
+    rec = tk.recommendations
+    if rec is None or getattr(rec, "empty", True):
+        return leer
+
+    rec = rec.reset_index()
+    zeile = None
+    if "period" in rec.columns:
+        treffer = rec[rec["period"].astype(str) == "0m"]
+        zeile = treffer.iloc[0] if not treffer.empty else rec.iloc[0]
+    else:
+        zeile = rec.iloc[0]
+
+    def z(spalte: str) -> int:
+        try:
+            wert = zeile.get(spalte)
+            return int(wert) if wert is not None and not pd.isna(wert) else 0
+        except Exception:  # noqa: BLE001
+            return 0
+
+    buy = z("strongBuy") + z("buy")
+    hold = z("hold")
+    sell = z("sell") + z("strongSell")
+    total = buy + hold + sell
+    if total == 0:
+        return leer
+    return {"kaufen_pct": round(buy / total * 100),
+            "halten_pct": round(hold / total * 100),
+            "verkaufen_pct": round(sell / total * 100),
+            "total": total, "unclassified": 0}
+
+
+AKTION_KLARTEXT = {
+    "up": "hochgestuft", "down": "abgestuft", "main": "bestaetigt",
+    "init": "neu aufgenommen", "reit": "bestaetigt",
+}
+
+
+def rating_klartext(akt: dict) -> str:
+    """Aus einer Einzelaktion einen lesbaren Satz bauen.
+
+    'bestaetigt' allein sagt nichts - es muss dabeistehen, WAS bestaetigt
+    wurde und wovon aus geaendert wurde.
+    """
+    if not akt:
+        return ""
+    aktion = AKTION_KLARTEXT.get((akt.get("action") or "").lower(), akt.get("action") or "")
+    von = akt.get("from_grade") or ""
+    nach = akt.get("to_grade") or ""
+    if von and nach and von != nach:
+        return f"{aktion} von {von} auf {nach}"
+    if nach:
+        return f"{aktion} auf {nach}"
+    return aktion
+
+
+def richtung(neu, alt, schwelle: float = 0.005) -> str:
+    """Vergleich gegen den Stand des Vortags aus der State-Datei."""
+    if neu is None:
+        return ""
+    if alt is None:
+        return "neu"
+    try:
+        if neu > alt * (1 + schwelle):
+            return "angehoben"
+        if neu < alt * (1 - schwelle):
+            return "gesenkt"
+    except Exception:  # noqa: BLE001
+        return ""
+    return "bestaetigt"
+
+
 def csv_feld(v) -> str:
     """Ein einzelnes CSV-Feld sauber maskieren."""
     if v is None:
@@ -1584,22 +2007,33 @@ def csv_feld(v) -> str:
     return s
 
 
-def build_analysten_csv(today: dict) -> str:
+def build_analysten_csv(today: dict, prev: dict | None = None) -> str:
     """docs/analysten.csv - Analystendaten fuer ALLE ausgewerteten Werte.
 
     report.md zeigt nur die maximal 20 Filtertreffer. Berechnet werden
-    Kaufen-Anteil und Kursziel aber ohnehin fuer jeden Wert im Universum -
-    diese Funktion schreibt sie vollstaendig heraus, damit das Orderbuch
-    sie fuer alle Werte hat und nicht nur fuer die Treffer.
+    Kaufen-Anteil und Kursziel aber ohnehin fuer jeden Wert im Universum.
+
+    Zusaetzlich zum Stand von heute steht hier die RICHTUNG: wurde das
+    Kursziel gegenueber gestern angehoben, gesenkt oder bestaetigt, und
+    ebenso der Kaufen-Anteil. Dafuer wird der Vortagesstand aus der
+    State-Datei herangezogen. Bei Ratingaenderungen steht Von->Nach dabei -
+    ein blosses 'bestaetigt' ohne Angabe der Einstufung ist wertlos.
     """
     kopf = [
         "ticker", "name", "isin", "index", "kurs",
-        "kaufen_pct", "halten_pct", "verkaufen_pct", "banken", "nicht_zuordenbar",
-        "kursziel", "potenzial_pct", "kursziel_frisch", "empfehlung",
+        "quelle", "kaufen_pct", "kaufen_pct_vortag", "kaufen_richtung",
+        "halten_pct", "verkaufen_pct", "banken", "nicht_zuordenbar",
+        "empfehlung_yahoo", "analysten_yahoo",
+        "kursziel", "kursziel_vortag", "kursziel_richtung", "potenzial_pct",
+        "kursziel_hoch", "kursziel_tief", "kursziel_frisch",
+        "ziel_eigen", "ziel_eigen_hoch", "ziel_eigen_tief", "anzahl_einzelziele",
         "hochstufungen_30t", "abstufungen_30t", "netto_30t",
-        "letzte_aktion", "letzte_bank", "letztes_datum",
+        "letztes_datum", "letzte_bank", "letzte_aktion",
+        "letzte_von", "letzte_nach", "letzte_klartext", "aenderungen_30t",
+        "einzelratings",
     ]
     zeilen = [",".join(kopf)]
+    vorrows = (prev or {}).get("rows", {}) or {}
 
     for t in sorted(today.get("rows", {})):
         r = today["rows"][t]
@@ -1607,28 +2041,44 @@ def build_analysten_csv(today: dict) -> str:
         tg = r.get("target", {}) or {}
         rb = tg.get("rec_breakdown") or {}
         a = r.get("analyst", {}) or {}
+        pt = a.get("price_targets") or {}
+        akts = a.get("actions") or []
+        mz = a.get("merged_ziele") or {}
+        merged = a.get("merged_firmen") or []
+        letzte = akts[0] if akts else {}
+
+        vr = vorrows.get(t, {}) or {}
+        v_tg = vr.get("target", {}) or {}
+        v_rb = (v_tg.get("rec_breakdown") or {})
+        kz_alt = v_tg.get("target_abs")
+        kp_alt = v_rb.get("kaufen_pct")
+
+        liste = "; ".join(
+            f"{k.get('date', '')} {k.get('firm', '')}: {rating_klartext(k)}".strip()
+            for k in akts
+        )
 
         werte = [
-            t,
-            r.get("name"),
-            r.get("isin"),
-            r.get("index"),
-            m.get("last"),
-            rb.get("kaufen_pct"),
-            rb.get("halten_pct"),
-            rb.get("verkaufen_pct"),
-            rb.get("total"),
-            rb.get("unclassified"),
-            tg.get("target_abs"),
-            tg.get("upside_pct"),
-            tg.get("fresh"),
-            tg.get("empfehlung"),
-            safe(a, "upgrades_30d", 0),
-            safe(a, "downgrades_30d", 0),
-            safe(a, "net_30d", 0),
-            safe(a, "last_action"),
-            safe(a, "last_firm"),
-            safe(a, "last_date"),
+            t, r.get("name"), r.get("isin"), r.get("index"), m.get("last"),
+            a.get("quelle", "keine"),
+            rb.get("kaufen_pct"), kp_alt, richtung(rb.get("kaufen_pct"), kp_alt),
+            rb.get("halten_pct"), rb.get("verkaufen_pct"),
+            rb.get("total"), rb.get("unclassified"),
+            tg.get("empfehlung"), tg.get("n_analysts"),
+            tg.get("target_abs"), kz_alt, richtung(tg.get("target_abs"), kz_alt),
+            tg.get("upside_pct"), pt.get("high"), pt.get("low"), tg.get("fresh"),
+            mz.get("ziel_mittel"), mz.get("ziel_hoch"), mz.get("ziel_tief"),
+            mz.get("anzahl_ziele", 0),
+            safe(a, "upgrades_30d", 0), safe(a, "downgrades_30d", 0), safe(a, "net_30d", 0),
+            safe(a, "last_date"), safe(a, "last_firm"), safe(a, "last_action"),
+            letzte.get("from_grade"), letzte.get("to_grade"),
+            rating_klartext(letzte), liste,
+            "; ".join(
+                f"{e.get('date','')} {e.get('firm','')}: {e.get('grade','') or '-'}"
+                + (f" Ziel {e['target']}" if e.get("target") else "")
+                + f" [{e.get('quelle','')}]"
+                for e in merged
+            ),
         ]
         zeilen.append(",".join(csv_feld(v) for v in werte))
 
@@ -1650,6 +2100,15 @@ def main() -> int:
     analyst = get_analyst_data(tickers)
 
     today = build_state(prices, fundamentals, analyst, members, benchmarks)
+
+    # Externe Einzelratings (von Hand gepflegt) einmischen. Passiert VOR dem
+    # Report-Aufbau, damit auch der Analysten-Filter davon profitiert.
+    extern = load_extern_ratings(EXTERN_RATINGS_FILE)
+    if extern:
+        cutoff_txt = (datetime.now(timezone.utc)
+                      - pd.Timedelta(days=CONSENSUS_MAX_AGE_DAYS)).strftime("%Y-%m-%d")
+        n_ext = apply_extern_ratings(today, extern, cutoff_txt)
+        print(f"Externe Ratings eingemischt: {n_ext} Werte aus {EXTERN_RATINGS_FILE.name}")
     extras_rows = build_extras(prices, extras)
 
     prev = None
@@ -1677,7 +2136,7 @@ def main() -> int:
     DOCS_DIR.mkdir(parents=True, exist_ok=True)
     STATE_DIR.mkdir(parents=True, exist_ok=True)
     (DOCS_DIR / "report.md").write_text(report, encoding="utf-8")
-    (DOCS_DIR / "analysten.csv").write_text(build_analysten_csv(today), encoding="utf-8")
+    (DOCS_DIR / "analysten.csv").write_text(build_analysten_csv(today, prev), encoding="utf-8")
     (DOCS_DIR / "report.json").write_text(json.dumps(
         {"date": today["date"], "ranks": today["ranks"], "changes": changes},
         indent=1, ensure_ascii=False), encoding="utf-8")

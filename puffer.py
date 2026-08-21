@@ -259,6 +259,137 @@ def teil_c(daten: dict) -> list[dict]:
     return zeilen
 
 
+
+# ── Teil D: woran erkennt man ein Tief, das haelt? ────────────────────
+# Die eigentliche Frage der Strategie. Nicht "wie viel Puffer brauche ich",
+# sondern "welche Tiefs werden nur minimal unterschritten". Fuer jedes
+# bestaetigte Swing-Tief werden Merkmale gemessen, die am Einstiegstag
+# BEKANNT sind - kein Blick in die Zukunft - und dagegen gehalten, ob das
+# Tief anschliessend gehalten hat.
+HAELT_GRENZE = 1.0     # Unterschreitung bis 1 ATR gilt als "haelt"
+D_FENSTER = 10         # Handelstage nach der Bestaetigung
+
+
+def rsi(werte: pd.Series, tage: int = 14) -> pd.Series:
+    """RSI nach Wilder."""
+    diff = werte.diff()
+    auf = diff.clip(lower=0).ewm(alpha=1 / tage, adjust=False).mean()
+    ab = (-diff.clip(upper=0)).ewm(alpha=1 / tage, adjust=False).mean()
+    return 100 - 100 / (1 + auf / ab.replace(0, np.nan))
+
+
+def teil_d(daten: dict) -> list[dict]:
+    faelle = []
+    for _, df in daten.items():
+        if len(df) < 260:
+            continue
+        a = atr(df).values
+        tief = df["Low"].values
+        hoch = df["High"].values
+        schluss = df["Close"].values
+        offen = df["Open"].values if "Open" in df else schluss
+        vol = df["Volume"].values if "Volume" in df else np.full(len(df), np.nan)
+        r = rsi(df["Close"]).values
+        ema200 = df["Close"].ewm(span=200, adjust=False).mean().values
+        n = len(df)
+
+        stellen = swing_tiefs(df)
+        for k, i in enumerate(stellen):
+            e = i + RECHTS
+            if e + D_FENSTER >= n or i < 200 or not np.isfinite(a[i]) or a[i] <= 0:
+                continue
+
+            # Das wievielte Tief einer absteigenden Folge ist es?
+            nr = 1
+            j = k
+            while j > 0 and tief[stellen[j]] < tief[stellen[j - 1]]:
+                nr += 1
+                j -= 1
+
+            # RSI-Divergenz: tieferes Tief im Kurs, hoeheres im RSI
+            divergenz = False
+            if k > 0:
+                v = stellen[k - 1]
+                divergenz = bool(tief[i] < tief[v] and np.isfinite(r[i])
+                                 and np.isfinite(r[v]) and r[i] > r[v])
+
+            fenster = slice(max(0, i - 59), i + 1)
+            falltiefe = (hoch[fenster].max() - tief[i]) / a[i]
+
+            vrel = np.nan
+            if np.isfinite(vol[i]) and i >= 21:
+                schnitt = np.nanmean(vol[i - 20:i])
+                if schnitt and schnitt > 0:
+                    vrel = vol[i] / schnitt
+
+            koerper = abs(schluss[i] - offen[i])
+            lunte = min(schluss[i], offen[i]) - tief[i]
+            hammer = bool(koerper > 0 and lunte >= 2 * koerper)
+
+            unterschritten = max(0.0, (tief[i] - tief[e + 1:e + 1 + D_FENSTER].min()) / a[i])
+            faelle.append({
+                "haelt": unterschritten <= HAELT_GRENZE,
+                "nr": nr,
+                "rsi": r[i] if np.isfinite(r[i]) else None,
+                "divergenz": divergenz,
+                "falltiefe": falltiefe,
+                "vrel": vrel if np.isfinite(vrel) else None,
+                "ema200": (tief[i] - ema200[i]) / a[i] if np.isfinite(ema200[i]) else None,
+                "hammer": hammer,
+                "anstieg": (schluss[e] - tief[i]) / a[i],
+            })
+    return faelle
+
+
+def d_gruppen(faelle: list[dict]) -> list[tuple]:
+    """Merkmal in Klassen schneiden und je Klasse die Haltequote ausweisen."""
+    def quote(teil):
+        return (len(teil), sum(1 for x in teil if x["haelt"]) / len(teil) * 100) if teil else (0, 0)
+
+    zeilen = []
+    def add(merkmal, klasse, teil):
+        n, q = quote(teil)
+        if n >= 50:
+            zeilen.append((merkmal, klasse, n, q))
+
+    add("Alle Faelle", "Grundquote", faelle)
+
+    for lo, hi, name in ((1, 1, "1. Tief der Folge"), (2, 2, "2. Tief"),
+                         (3, 3, "3. Tief"), (4, 99, "4. Tief oder spaeter")):
+        add("Stellung in der Tiefpunktfolge", name,
+            [x for x in faelle if lo <= x["nr"] <= hi])
+
+    for lo, hi, name in ((0, 30, "unter 30"), (30, 40, "30 bis 40"),
+                         (40, 50, "40 bis 50"), (50, 101, "ueber 50")):
+        add("RSI am Tief", name,
+            [x for x in faelle if x["rsi"] is not None and lo <= x["rsi"] < hi])
+
+    for wert, name in ((True, "ja"), (False, "nein")):
+        add("RSI-Divergenz", name, [x for x in faelle if x["divergenz"] is wert])
+        add("Hammer-Kerze", name, [x for x in faelle if x["hammer"] is wert])
+
+    for lo, hi, name in ((0, 3, "unter 3 ATR"), (3, 6, "3 bis 6 ATR"),
+                         (6, 10, "6 bis 10 ATR"), (10, 999, "ueber 10 ATR")):
+        add("Falltiefe vom 60-Tage-Hoch", name,
+            [x for x in faelle if lo <= x["falltiefe"] < hi])
+
+    for lo, hi, name in ((0, 1.0, "unter Schnitt"), (1.0, 1.5, "1,0 bis 1,5x"),
+                         (1.5, 2.5, "1,5 bis 2,5x"), (2.5, 999, "ueber 2,5x")):
+        add("Volumen am Tief", name,
+            [x for x in faelle if x["vrel"] is not None and lo <= x["vrel"] < hi])
+
+    for lo, hi, name in ((-999, -2, "mehr als 2 ATR darunter"), (-2, 0, "bis 2 ATR darunter"),
+                         (0, 999, "ueber der EMA(200)")):
+        add("Lage zur EMA(200)", name,
+            [x for x in faelle if x["ema200"] is not None and lo <= x["ema200"] < hi])
+
+    for lo, hi, name in ((0, 0.5, "unter 0,5 ATR"), (0.5, 1.0, "0,5 bis 1 ATR"),
+                         (1.0, 2.0, "1 bis 2 ATR"), (2.0, 999, "ueber 2 ATR")):
+        add("Anstieg bis zur Bestaetigung", name,
+            [x for x in faelle if lo <= x["anstieg"] < hi])
+    return zeilen
+
+
 def verteilung(werte: list[float]) -> dict:
     if not werte:
         return {}
@@ -276,7 +407,7 @@ def verteilung(werte: list[float]) -> dict:
     }
 
 
-def bericht(a_zeilen: list, b: dict, c_zeilen: list, jahre: int) -> str:
+def bericht(a_zeilen: list, b: dict, c_zeilen: list, d_zeilen: list, jahre: int) -> str:
     jetzt = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M")
     L = ["# Puffer-Analyse - wie viel ATR braucht die KO-Schwelle?", "",
          f"_Erstellt {jetzt} UTC. Swing-Tief = tiefer als die {LINKS} Tage davor "
@@ -359,6 +490,33 @@ def bericht(a_zeilen: list, b: dict, c_zeilen: list, jahre: int) -> str:
                  f"{z['ausfall']:.1f}% | {z['abstand']:.2f} ATR | "
                  f"{z['rendite_ueberlebt']:+.1f}% | **{z['erwartung']:+.1f}%** |")
     L.append("")
+
+    # Teil D
+    grund = next((q for m, k, n, q in d_zeilen if m == "Alle Faelle"), 0.0)
+    L += ["## Teil D - woran erkennt man ein Tief, das haelt?", "",
+          f"_Ein Tief 'haelt', wenn es in den {D_FENSTER} Handelstagen nach der "
+          f"Bestaetigung um hoechstens {HAELT_GRENZE:.1f} ATR unterschritten wird. "
+          "Alle Merkmale sind am Einstiegstag bekannt - kein Blick in die Zukunft. "
+          "'Unterschied' zeigt die Abweichung von der Grundquote: nur wo er deutlich "
+          "positiv ist, hilft das Merkmal bei der Auswahl._", "",
+          "| Merkmal | Auspraegung | Faelle | Haltequote | Unterschied |",
+          "|---|---|---|---|---|"]
+    for m, k, n, q in d_zeilen:
+        d = q - grund
+        kennz = "**" if abs(d) >= 3 and m != "Alle Faelle" else ""
+        L.append(f"| {m} | {k} | {n} | {kennz}{q:.1f}%{kennz} | "
+                 f"{'' if m == 'Alle Faelle' else f'{d:+.1f} Punkte'} |")
+    L.append("")
+    L.append("_Ein Merkmal mit wenigen Punkten Unterschied ist bei mehreren tausend "
+             "Faellen noch kein Vorteil, sondern Rauschen. Erst zweistellige "
+             "Unterschiede taugen als Auswahlkriterium._")
+    L.append("")
+    L.append("_Vorsicht bei 'Anstieg bis zur Bestaetigung': ein Teil des Effekts ist "
+             "reine Geometrie. Wer weiter oben einsteigt, hat mehr Abstand nach unten "
+             "und unterschreitet das Tief seltener - dafuer sitzt der KO weiter weg "
+             "und der Hebel ist kleiner. Der Vorteil ist also nicht geschenkt, "
+             "sondern bezahlt._")
+    L.append("")
     L.append("_Der Erwartungswert ist eine Rechengroesse, keine Prognose: er unterstellt "
              f"festen Ausstieg nach {AUSSTIEG_TAGE} Tagen ohne Verkaufssignal, ohne "
              "Gebuehren und ohne Auswahl nach RSI oder Analysten. Er taugt zum Vergleich "
@@ -391,8 +549,12 @@ def main() -> int:
     print(f"  {len(b['faelle'])} Swing-Tiefs gefunden.")
     print("Teil C: Bezugstief-Varianten ...")
     c_zeilen = teil_c(daten)
+    print("Teil D: Merkmale haltender Tiefs ...")
+    d_faelle = teil_d(daten)
+    print(f"  {len(d_faelle)} auswertbare Tiefs.")
+    d_zeilen = d_gruppen(d_faelle)
 
-    text = bericht(a_zeilen, b, c_zeilen, jahre)
+    text = bericht(a_zeilen, b, c_zeilen, d_zeilen, jahre)
     DOCS.mkdir(parents=True, exist_ok=True)
     AUSGABE.write_text(text, encoding="utf-8")
     print(f"\nGeschrieben: {AUSGABE}\n")

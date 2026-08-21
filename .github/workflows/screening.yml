@@ -1,9 +1,12 @@
 name: Boersen-Screening
 
 on:
-   schedule:
+  schedule:
     # 02:17 UTC an Werktagen = 04:17 MESZ / 03:17 MEZ
-    # Basis sind die Schlusskurse des Vortags (US-Schluss 22:00 MESZ).
+    # Basis sind die Schlusskurse des Vortags (US-Schluss 22:00 MESZ,
+    # Yahoo liefert sie rund eine Stunde spaeter).
+    # Krumme Minute, weil GitHub Actions zur vollen Stunde ueberlastet
+    # ist und geplante Laeufe dann 5-15 Minuten spaeter startet.
     - cron: "17 2 * * 1-5"
   workflow_dispatch:        # erlaubt manuelles Starten per Knopfdruck
 
@@ -27,11 +30,11 @@ jobs:
 
       - name: Screening ausfuehren
         run: python screener.py
-        
+
       - name: Tiefs mit Volumen ausfuehren
         run: python tiefs.py
 
-      - name: Marktdaten
+      - name: Marktdaten ausfuehren
         run: python marktdaten.py
 
       - name: Ergebnis speichern

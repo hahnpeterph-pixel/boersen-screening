@@ -8,11 +8,11 @@
    "BEI.DE",
    "KHC",
    "HEN3.DE",
-   "ADBE",
    "PCAR",
+   "ADBE",
    "TTWO",
-   "BNR.DE",
    "ROP",
+   "BNR.DE",
    "PYPL",
    "DHL.DE",
    "QIA.DE",
@@ -24,14 +24,14 @@
    "MRVL",
    "MU",
    "TEAM",
-   "BNR.DE",
+   "TRV",
    "DHL.DE",
    "ABNB",
-   "TRV",
+   "BNR.DE",
    "DXCM",
    "FANG",
-   "CSX",
    "JNJ",
+   "CSX",
    "PYPL",
    "KO"
   ],
@@ -44,63 +44,39 @@
    "ABNB",
    "MTX.DE",
    "ENR.DE",
+   "ADS.DE",
    "VRTX",
    "DB1.DE",
    "DXCM",
    "GOOGL",
    "ODFL",
-   "ROST",
-   "ALV.DE"
+   "ROST"
   ]
  },
  "changes": {
   "turnaround": {
-   "entries": [
-    {
-     "ticker": "HEN3.DE",
-     "rank": 6
-    },
-    {
-     "ticker": "AAPL",
-     "rank": 15
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "BAYN.DE",
-     "old_rank": 5
-    },
-    {
-     "ticker": "CCEP",
-     "old_rank": 10
-    }
-   ],
-   "moves": [
-    {
-     "ticker": "QIA.DE",
-     "rank": 14,
-     "delta": -7
-    }
-   ]
+   "entries": [],
+   "exits": [],
+   "moves": []
   },
   "momentum": {
+   "entries": [],
+   "exits": [],
+   "moves": []
+  },
+  "value": {
    "entries": [
     {
-     "ticker": "PYPL",
-     "rank": 14
+     "ticker": "ADS.DE",
+     "rank": 9
     }
    ],
    "exits": [
     {
      "ticker": "ALV.DE",
-     "old_rank": 4
+     "old_rank": 15
     }
    ],
-   "moves": []
-  },
-  "value": {
-   "entries": [],
-   "exits": [],
    "moves": []
   },
   "analyst_flips": []

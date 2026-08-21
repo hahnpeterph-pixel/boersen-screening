@@ -1,6 +1,6 @@
 # Boersen-Screening - 2026-08-21
 
-_Stand: Schlusskurse vom Vortag. Erstellt 2026-08-21T04:39:27+00:00 UTC. 159 Werte ausgewertet._
+_Stand: Schlusskurse vom Vortag. Erstellt 2026-08-21T05:51:46+00:00 UTC. 159 Werte ausgewertet._
 
 ## 📖 Glossar (was die Spalten bedeuten)
 
@@ -18,7 +18,7 @@ _Ueber alle 159 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 | Rang | Ticker | ISIN | Name | Index | Kurs | Abstand ATH (Info) | Kaufen-Anteil Analysten | Kursziel | RSI Tag | RSI Woche | RSI Stunde | Letztes Rating |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 1 | NVDA | - | NVIDIA Corporation | NASDAQ/DOW | 216.85 | -8% | 100% (22 Banken, ≤120T) | 302.83 (40% ueber Kurs) | 53 | 57 | 36 | 2026-08-20 RBC Capital: Rating bestaetigt: Outperform |
-| 2 | ASML | USN070592100 | ASML Holding N.V. - New York Re | NASDAQ | 1750.31 | -12% | 100% (5 Banken, ≤120T) | 2196.43 (26% ueber Kurs) | 49 | 58 | 36 | keine in 30T |
+| 2 | ASML | USN070592100 | ASML Holding N.V. - New York Re | NASDAQ | 1751.73 | -12% | 100% (5 Banken, ≤120T) | 2196.43 (25% ueber Kurs) | 49 | 58 | 36 | keine in 30T |
 | 3 | ORLY | - | O'Reilly Automotive, Inc. | NASDAQ | 89.08 | -17% | 100% (8 Banken, ≤120T) | 107.80 (21% ueber Kurs) | 46 | 47 | 39 | 2026-08-03 Citigroup: Rating bestaetigt: Buy |
 | 4 | TTWO | - | Take-Two Interactive Software, | NASDAQ | 240.15 | -8% | 100% (10 Banken, ≤120T) | 286.89 (20% ueber Kurs) | 49 | 54 | 47 | 2026-08-10 Roth Capital: Rating bestaetigt: Buy |
 | 5 | DIS | - | Walt Disney Company (The) | DOW | 107.32 | -45% | 100% (11 Banken, ≤120T) | 127.72 (19% ueber Kurs) | 64 | 57 | 61 | 2026-08-06 Wells Fargo: Rating bestaetigt: Overweight |

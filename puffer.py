@@ -268,6 +268,8 @@ def teil_c(daten: dict) -> list[dict]:
 # Tief anschliessend gehalten hat.
 HAELT_GRENZE = 1.0     # Unterschreitung bis 1 ATR gilt als "haelt"
 D_FENSTER = 10         # Handelstage nach der Bestaetigung
+PHASE_MAX = 60         # laengste betrachtete Aufwaertsphase
+RUECKFALL_ATR = 1.5    # so viel Rueckfall vom Hoch beendet die Phase
 
 
 def rsi(werte: pd.Series, tage: int = 14) -> pd.Series:
@@ -278,9 +280,16 @@ def rsi(werte: pd.Series, tage: int = 14) -> pd.Series:
     return 100 - 100 / (1 + auf / ab.replace(0, np.nan))
 
 
-def teil_d(daten: dict) -> list[dict]:
+def teil_d(daten: dict, maerkte: dict | None = None) -> list[dict]:
+    maerkte = maerkte or {}
     faelle = []
-    for _, df in daten.items():
+    for ticker, df in daten.items():
+        # Marktlage: DAX-Werte gegen den DAX, alles andere gegen den NASDAQ-100.
+        index = maerkte.get("^GDAXI" if ticker.endswith(".DE") else "^NDX")
+        markt_ok = None
+        if index is not None:
+            ema = index.ewm(span=50, adjust=False).mean()
+            markt_ok = (index > ema).reindex(df.index).ffill()
         if len(df) < 260:
             continue
         a = atr(df).values
@@ -327,7 +336,43 @@ def teil_d(daten: dict) -> list[dict]:
             hammer = bool(koerper > 0 and lunte >= 2 * koerper)
 
             unterschritten = max(0.0, (tief[i] - tief[e + 1:e + 1 + D_FENSTER].min()) / a[i])
+
+            # Aufwaertsphase NACH dem Einstieg: wie weit und wie lange steigt
+            # der Kurs, bevor er nennenswert zurueckfaellt. Die Phase endet,
+            # sobald der Kurs RUECKFALL_ATR unter sein bisheriges Hoch faellt.
+            einstieg = schluss[e]
+            hoechster = einstieg
+            dauer = 0
+            for t in range(e + 1, min(e + PHASE_MAX, n)):
+                if schluss[t] > hoechster:
+                    hoechster = schluss[t]
+                    dauer = t - e
+                elif hoechster - schluss[t] >= RUECKFALL_ATR * a[i]:
+                    break
+            # Geld statt Trefferquote: KO zwei ATR unter dem Bezugstief,
+            # Knock-out zaehlt -100%, sonst Ausstieg nach AUSSTIEG_TAGE.
+            ko = tief[i] - 2.0 * a[i]
+            rendite = None
+            if einstieg > ko:
+                if tief[e + 1:e + 1 + D_FENSTER].min() <= ko:
+                    rendite = -1.0
+                else:
+                    aus = schluss[min(e + AUSSTIEG_TAGE, n - 1)]
+                    rendite = (aus - einstieg) / (einstieg - ko)
+
+            m_ok = None
+            if markt_ok is not None:
+                try:
+                    m_ok = bool(markt_ok.iloc[e])
+                except Exception:  # noqa: BLE001
+                    m_ok = None
+
             faelle.append({
+                "anstieg_danach": (hoechster - einstieg) / a[i],
+                "dauer": dauer,
+                "rendite": rendite,
+                "markt_ok": m_ok,
+                "hoeheres_tief": bool(k > 0 and tief[i] > tief[stellen[k - 1]]),
                 "haelt": unterschritten <= HAELT_GRENZE,
                 "nr": nr,
                 "rsi": r[i] if np.isfinite(r[i]) else None,
@@ -367,6 +412,15 @@ def d_gruppen(faelle: list[dict]) -> list[tuple]:
     for wert, name in ((True, "ja"), (False, "nein")):
         add("RSI-Divergenz", name, [x for x in faelle if x["divergenz"] is wert])
         add("Hammer-Kerze", name, [x for x in faelle if x["hammer"] is wert])
+        add("Hoeheres Tief als das vorherige", name,
+            [x for x in faelle if x["hoeheres_tief"] is wert])
+        add("Index ueber seiner EMA(50)", name,
+            [x for x in faelle if x["markt_ok"] is wert])
+
+    add("Hoeheres Tief MIT RSI-Divergenz", "beides",
+        [x for x in faelle if x["hoeheres_tief"] and x["divergenz"]])
+    add("Tieferes Tief MIT RSI-Divergenz", "beides",
+        [x for x in faelle if not x["hoeheres_tief"] and x["divergenz"]])
 
     for lo, hi, name in ((0, 3, "unter 3 ATR"), (3, 6, "3 bis 6 ATR"),
                          (6, 10, "6 bis 10 ATR"), (10, 999, "ueber 10 ATR")):
@@ -390,6 +444,77 @@ def d_gruppen(faelle: list[dict]) -> list[tuple]:
     return zeilen
 
 
+
+def d_kombis(faelle: list[dict]) -> list[dict]:
+    """Teil E - Filter einzeln und kombiniert. Neben der Haltequote steht
+    hier bewusst das Restpotenzial: wer spaeter einsteigt, sieht das Tief
+    zwar haeufiger halten, hat aber weniger Strecke vor sich. Ohne diese
+    zweite Spalte gewinnt der spaete Einstieg immer."""
+    def rsi_tief(x):     return x["rsi"] is not None and x["rsi"] < 30
+    def viel_volumen(x): return x["vrel"] is not None and x["vrel"] >= 2.5
+    def bestaetigt(x):   return x["anstieg"] >= 1.0
+
+    kombis = [
+        ("ohne Filter", []),
+        ("RSI unter 30", [rsi_tief]),
+        ("Volumen ab 2,5x", [viel_volumen]),
+        ("Anstieg ab 1 ATR", [bestaetigt]),
+        ("RSI + Volumen", [rsi_tief, viel_volumen]),
+        ("RSI + Anstieg", [rsi_tief, bestaetigt]),
+        ("Volumen + Anstieg", [viel_volumen, bestaetigt]),
+        ("alle drei", [rsi_tief, viel_volumen, bestaetigt]),
+        ("hoeheres Tief", [lambda x: x["hoeheres_tief"]]),
+        ("hoeheres Tief + RSI unter 30", [lambda x: x["hoeheres_tief"], rsi_tief]),
+        ("Markt ueber EMA(50)", [lambda x: x["markt_ok"] is True]),
+        ("Markt + RSI unter 30", [lambda x: x["markt_ok"] is True, rsi_tief]),
+    ]
+    zeilen = []
+    for name, pruefungen in kombis:
+        teil = [x for x in faelle if all(p(x) for p in pruefungen)]
+        if len(teil) < 30:
+            zeilen.append({"name": name, "n": len(teil), "zu_duenn": True})
+            continue
+        haelt = [x for x in teil if x["haelt"]]
+        anstiege = np.array([x["anstieg_danach"] for x in teil])
+        renditen = np.array([x["rendite"] for x in teil if x["rendite"] is not None])
+        zeilen.append({
+            "name": name, "n": len(teil), "zu_duenn": False,
+            "quote": len(haelt) / len(teil) * 100,
+            "rest": float(np.median(anstiege)),
+            "rest_haelt": float(np.median([x["anstieg_danach"] for x in haelt])) if haelt else 0.0,
+            "eintritt": float(np.median([x["anstieg"] for x in teil])),
+            "dauer": float(np.median([x["dauer"] for x in teil])),
+            "erwartung": float(renditen.mean() * 100) if renditen.size else 0.0,
+            "ausfall": float((renditen <= -0.999).mean() * 100) if renditen.size else 0.0,
+        })
+    return zeilen
+
+
+def d_phase(faelle: list[dict]) -> list[dict]:
+    """Teil F - wie lange steigt es, wenn das Tief haelt? Aufgeteilt danach,
+    wie weit ueber dem Tief eingestiegen wurde."""
+    haelt = [x for x in faelle if x["haelt"]]
+    gruppen = [("alle haltenden Tiefs", lambda x: True),
+               ("Einstieg unter 1 ATR ueber dem Tief", lambda x: x["anstieg"] < 1.0),
+               ("Einstieg 1 bis 2 ATR", lambda x: 1.0 <= x["anstieg"] < 2.0),
+               ("Einstieg ueber 2 ATR", lambda x: x["anstieg"] >= 2.0),
+               ("zusaetzlich RSI unter 30", lambda x: x["rsi"] is not None and x["rsi"] < 30)]
+    zeilen = []
+    for name, p in gruppen:
+        teil = [x for x in haelt if p(x)]
+        if len(teil) < 30:
+            continue
+        d = np.array([x["dauer"] for x in teil], dtype=float)
+        an = np.array([x["anstieg_danach"] for x in teil])
+        zeilen.append({
+            "name": name, "n": len(teil),
+            "dauer_median": float(np.median(d)), "dauer_p75": float(np.percentile(d, 75)),
+            "anstieg_median": float(np.median(an)), "anstieg_p75": float(np.percentile(an, 75)),
+            "ueber_2atr": float((an >= 2).mean() * 100),
+        })
+    return zeilen
+
+
 def verteilung(werte: list[float]) -> dict:
     if not werte:
         return {}
@@ -407,7 +532,8 @@ def verteilung(werte: list[float]) -> dict:
     }
 
 
-def bericht(a_zeilen: list, b: dict, c_zeilen: list, d_zeilen: list, jahre: int) -> str:
+def bericht(a_zeilen: list, b: dict, c_zeilen: list, d_zeilen: list,
+            e_zeilen: list, f_zeilen: list, jahre: int) -> str:
     jetzt = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M")
     L = ["# Puffer-Analyse - wie viel ATR braucht die KO-Schwelle?", "",
          f"_Erstellt {jetzt} UTC. Swing-Tief = tiefer als die {LINKS} Tage davor "
@@ -517,6 +643,45 @@ def bericht(a_zeilen: list, b: dict, c_zeilen: list, d_zeilen: list, jahre: int)
              "und der Hebel ist kleiner. Der Vorteil ist also nicht geschenkt, "
              "sondern bezahlt._")
     L.append("")
+
+    # Teil E
+    L += ["## Teil E - Filter kombiniert, mit Gegenrechnung", "",
+          "_'Haltequote' wie in Teil D. 'Einstieg' ist der Abstand des Kaufs zum "
+          "Tief in ATR, 'Restpotenzial' der weitere Anstieg bis zum Hoch der "
+          "Aufwaertsphase. Beide gehoeren zusammen gelesen: ein spaeter Einstieg "
+          "hebt die Haltequote und senkt gleichzeitig, was noch zu holen ist._", "",
+          "| Filter | Faelle | Haltequote | Ausfall | Einstieg | Restpotenzial | Dauer | **Erwartungswert** |",
+          "|---|---|---|---|---|---|---|---|"]
+    for z in e_zeilen:
+        if z.get("zu_duenn"):
+            L.append(f"| {z['name']} | {z['n']} | zu wenige Faelle | | | | | |")
+            continue
+        L.append(f"| {z['name']} | {z['n']} | {z['quote']:.1f}% | "
+                 f"{z['ausfall']:.1f}% | {z['eintritt']:.2f} ATR | "
+                 f"{z['rest']:.2f} ATR | {z['dauer']:.0f} Tage | "
+                 f"**{z['erwartung']:+.2f}%** |")
+    L.append("")
+    L.append("_Alle Werte sind Mediane. Restpotenzial in ATR laesst sich direkt gegen "
+             "den KO-Abstand halten: liegt der KO 2 ATR unter dem Einstieg und das "
+             "Restpotenzial bei 2 ATR, ist das Chance-Risiko-Verhaeltnis 1:1._")
+    L.append("")
+
+    # Teil F
+    L += ["## Teil F - wie lange steigt es, wenn das Tief haelt?", "",
+          f"_Die Aufwaertsphase endet, sobald der Kurs {RUECKFALL_ATR:.1f} ATR unter "
+          f"sein bisheriges Hoch faellt. Laengstens {PHASE_MAX} Handelstage. "
+          "Nur Faelle, in denen das Tief gehalten hat._", "",
+          "| Gruppe | Faelle | Dauer Median | Dauer 75% | Anstieg Median | Anstieg 75% | ueber 2 ATR |",
+          "|---|---|---|---|---|---|---|"]
+    for z in f_zeilen:
+        L.append(f"| {z['name']} | {z['n']} | **{z['dauer_median']:.0f} Tage** | "
+                 f"{z['dauer_p75']:.0f} Tage | {z['anstieg_median']:.2f} ATR | "
+                 f"{z['anstieg_p75']:.2f} ATR | {z['ueber_2atr']:.0f}% |")
+    L.append("")
+    L.append("_Die Dauer misst, wie lange der Kurs bis zu seinem Hoch brauchte - "
+             "nicht, wie lange man haette halten sollen. Wer bis zum Hoch bleibt, "
+             "erwischt es nur im Rueckblick._")
+    L.append("")
     L.append("_Der Erwartungswert ist eine Rechengroesse, keine Prognose: er unterstellt "
              f"festen Ausstieg nach {AUSSTIEG_TAGE} Tagen ohne Verkaufssignal, ohne "
              "Gebuehren und ohne Auswahl nach RSI oder Analysten. Er taugt zum Vergleich "
@@ -535,7 +700,8 @@ def main() -> int:
         roh = json.loads(datei.read_text(encoding="utf-8"))
         for gruppe in roh.get("benchmarks", {}):
             universum += roh.get(gruppe, [])
-    tickers = sorted(set(universum) | {t for _, t, _, _ in TRADES})
+    tickers = sorted(set(universum) | {t for _, t, _, _ in TRADES}
+                     | {"^NDX", "^GDAXI"})   # Indizes fuer die Marktlage
 
     daten = lade(tickers, jahre)
     if len(daten) < 10:
@@ -550,11 +716,16 @@ def main() -> int:
     print("Teil C: Bezugstief-Varianten ...")
     c_zeilen = teil_c(daten)
     print("Teil D: Merkmale haltender Tiefs ...")
-    d_faelle = teil_d(daten)
+    maerkte = {sym: daten[sym]["Close"] for sym in ("^NDX", "^GDAXI") if sym in daten}
+    d_faelle = teil_d(daten, maerkte)
     print(f"  {len(d_faelle)} auswertbare Tiefs.")
     d_zeilen = d_gruppen(d_faelle)
+    print("Teil E: Filter kombiniert ...")
+    e_zeilen = d_kombis(d_faelle)
+    print("Teil F: Dauer der Aufwaertsphase ...")
+    f_zeilen = d_phase(d_faelle)
 
-    text = bericht(a_zeilen, b, c_zeilen, d_zeilen, jahre)
+    text = bericht(a_zeilen, b, c_zeilen, d_zeilen, e_zeilen, f_zeilen, jahre)
     DOCS.mkdir(parents=True, exist_ok=True)
     AUSGABE.write_text(text, encoding="utf-8")
     print(f"\nGeschrieben: {AUSGABE}\n")

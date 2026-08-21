@@ -1,0 +1,66 @@
+{
+  "_hinweis": "Nach jedem Kauf und Verkauf pflegen. 'ko' = Knock-out-Schwelle des Scheins in der Waehrung des Basiswerts. 'typ' ist optional: 'Bestand' (Standard) oder 'Kandidat', um einen Schein VOR dem Kauf gegen die Regel zu pruefen.",
+  "fenster_tage": 50,
+  "links": 3,
+  "rechts": 3,
+  "_regel": "Die KO-Schwelle soll unter einem markanten Tief liegen - gemessen in ATR (mittlere Tagesschwankung), nicht in Prozent. 2.0 heisst: zwei Tagesschwankungen Abstand.",
+  "atr_tage": 14,
+  "puffer_atr": 2.0,
+  "knapp_ab_atr": 1.0,
+  "_regel1": "Regel 1 (harte Sperre): Der KO muss mindestens diesen absoluten Betrag unter dem Bezugstief liegen, in der Waehrung des Basiswerts. Verletzt = kein Kauf.",
+  "mindestabstand_absolut": 1.0,
+  "einheit_euro": 150.0,
+  "min_einsatz_euro": 50.0,
+  "_bezug": "Welches Tief massgeblich ist: 'juengstes' (Trendstruktur) oder 'tiefstes' (strenger Massstab des Fensters).",
+  "bezug": "juengstes",
+  "_regel23": "Regel 2+3 (Positionsgroesse): min_einsatz_euro bei gerade noch erfuelltem Puffer, einheit_euro ab puffer_atr, dazwischen linear.",
+  "_unbestaetigt": "true = das Tief des zuletzt abgeschlossenen Tages zaehlt bereits als juengstes Tief, auch ohne Bestaetigung durch Folgetage. Im Report mit 'unbest.' markiert.",
+  "unbestaetigtes_tief_zulassen": true,
+  "werte": [
+    {
+      "ticker": "NVDA",
+      "name": "NVIDIA",
+      "ko": 180.58
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "ko": 434.1808
+    },
+    {
+      "ticker": "ASML.AS",
+      "name": "ASML (Amsterdam)",
+      "ko": 1450.2354
+    },
+    {
+      "ticker": "TTWO",
+      "name": "Take-Two",
+      "ko": 228.7709
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms",
+      "ko": 520.388
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron",
+      "ko": 861.259
+    },
+    {
+      "ticker": "MSFT",
+      "name": "Microsoft",
+      "ko": 348.28
+    },
+    {
+      "ticker": "ORCL",
+      "name": "Oracle",
+      "ko": 112.6948
+    },
+    {
+      "ticker": "GC=F",
+      "name": "Gold",
+      "ko": 4171.7118
+    }
+  ]
+}

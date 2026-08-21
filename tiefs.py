@@ -45,6 +45,8 @@ STANDARD = {
     "unbestaetigtes_tief_zulassen": True,
     "einheit_euro": 150.0,
     "min_einsatz_euro": 50.0,
+    "rsi_tage": 14,
+    "rsi_schwelle": 70.0,
     "werte": [],
 }
 
@@ -140,6 +142,59 @@ def atr(df, tage=14):
     return None if pd.isna(wert) else float(wert)
 
 
+def rsi(df, tage=14):
+    """RSI nach Wilder-Glaettung (Standardmethode, z.B. stock3, TradingView)."""
+    if df is None or len(df) < tage + 1:
+        return None
+    delta = df["Close"].diff()
+    gewinn = delta.clip(lower=0)
+    verlust = -delta.clip(upper=0)
+    avg_gewinn = gewinn.ewm(alpha=1 / tage, adjust=False).mean()
+    avg_verlust = verlust.ewm(alpha=1 / tage, adjust=False).mean()
+    letzter_verlust = avg_verlust.iloc[-1]
+    if letzter_verlust == 0:
+        return 100.0
+    rs = avg_gewinn.iloc[-1] / letzter_verlust
+    wert = 100 - (100 / (1 + rs))
+    return None if pd.isna(wert) else float(wert)
+
+
+def umkehrkerze(df):
+    """Starke bearishe Umkehrkerze: Schlusskurs unter Eroeffnung UND unter
+    Vortageshoch UND unter Vortagestief. Unabhaengig vom RSI, weil sie auch
+    ohne ueberkauften RSI ein Warnsignal ist (z.B. Gap-down nach Meldung)."""
+    if df is None or len(df) < 2:
+        return None
+    heute, vortag = df.iloc[-1], df.iloc[-2]
+    return bool(heute["Close"] < heute["Open"] and
+                heute["Close"] < vortag["High"] and
+                heute["Close"] < vortag["Low"])
+
+
+def urteil_ueberhitzt(rsi_wert, schwelle, kerze):
+    if kerze:
+        return "VERKAUFSSIGNAL (Umkehrkerze)"
+    if rsi_wert is None:
+        return "k.A."
+    if rsi_wert >= schwelle:
+        return "ueberhitzt (RSI)"
+    if rsi_wert >= schwelle - 10:
+        return "beobachten"
+    return "unauffaellig"
+
+
+def ampel_ueberhitzt(rsi_wert, schwelle, kerze):
+    if kerze:
+        return "X"
+    if rsi_wert is None:
+        return "-"
+    if rsi_wert >= schwelle:
+        return "!!"
+    if rsi_wert >= schwelle - 10:
+        return "!"
+    return "+"
+
+
 def durchschnittsvolumen(df, bis_index, tage=20):
     if "Volume" not in df.columns:
         return None
@@ -215,6 +270,8 @@ def main():
     soll = float(k["puffer_atr"])
     knapp = float(k["knapp_ab_atr"])
     atr_tage = int(k["atr_tage"])
+    rsi_tage = int(k.get("rsi_tage", 14))
+    rsi_schwelle = float(k.get("rsi_schwelle", 70.0))
     jetzt = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
     kopf = [
@@ -275,10 +332,23 @@ def main():
         "|---|---|---|---|---|---|",
     ]
 
+    ueberhitzung = [
+        "", "### Ueberhitzung — Verkaufssignal bestehender Positionen", "",
+        f"Nur fuer Positionen mit `typ: Bestand`. RSI({rsi_tage}) nach "
+        f"Wilder-Glaettung; ab {de(rsi_schwelle, 0)} gilt der Basiswert als "
+        f"ueberkauft. Die Umkehrkerze (Schlusskurs unter Eroeffnung UND unter "
+        f"Vortageshoch UND unter Vortagestief) ist ein eigenstaendiges "
+        f"Warnsignal, unabhaengig vom RSI-Stand.",
+        "",
+        "| Wert | RSI | Umkehrkerze | Urteil | |",
+        "|---|---|---|---|---|",
+    ]
+
     detail = ["", "## Tiefs im Detail mit Volumen", "",
               "| Wert | Datum | Tief | Volumen | rel. zu \u00d8 20 T | Tief -> KO |",
               "|---|---|---|---|---|---|"]
     warnungen = []
+    ueberhitzt_warnungen = []
     fehlend = []
 
     for eintrag in werte:
@@ -294,6 +364,18 @@ def main():
                               bool(k.get("unbestaetigtes_tief_zulassen", True)))
         a = atr(df, atr_tage)
         kurs = float(df["Close"].iloc[-1]) if df is not None and len(df) else None
+
+        if art == "Bestand":
+            r = rsi(df, rsi_tage)
+            kerze = umkehrkerze(df)
+            u_urteil = urteil_ueberhitzt(r, rsi_schwelle, kerze)
+            ueberhitzung.append(
+                f"| {etikett} | {de(r, 1) if r is not None else 'k.A.'} | "
+                f"{'ja' if kerze else ('nein' if kerze is not None else 'k.A.')} | "
+                f"{u_urteil} | {ampel_ueberhitzt(r, rsi_schwelle, kerze)} |")
+            if kerze or (r is not None and r >= rsi_schwelle):
+                grund = "Umkehrkerze" if kerze else f"RSI {de(r, 1)}"
+                ueberhitzt_warnungen.append(f"- **{name}**: {grund} — {u_urteil}.")
 
         if not treffer:
             kopf.append(f"| {etikett} | {de(ko)} | kein Swing-Tief im Fenster "
@@ -343,11 +425,17 @@ def main():
             f"{hinweis if hinweis else 'kaufbar'} |")
 
         if massgeblich is not None and massgeblich < knapp:
+            if regel1 is False:
+                folge = ("Regel 1 ist verletzt - der KO liegt nicht "
+                         "mindestens {} unter dem Bezugstief. Kein "
+                         "Nachkauf.".format(de(mind_abs)))
+            else:
+                folge = ("Nach Regel 2 bedeutet das reduzierten Einsatz, "
+                         "kein Ausschluss.")
             warnungen.append(
                 f"- **{name}**: Die KO-Schwelle {de(ko)} liegt nur "
                 f"{de(massgeblich, 2)} x ATR unter dem Tief {de(bezug['tief'])} "
-                f"vom {bezug['datum']:%d.%m.%Y}. Nach Regel 2 bedeutet das "
-                f"reduzierten Einsatz, kein Ausschluss.")
+                f"vom {bezug['datum']:%d.%m.%Y}. {folge}")
 
         if a and kurs:
             def vorschlag(tief):
@@ -384,6 +472,13 @@ def main():
     zeilen = kopf
     zeilen += ["", f"_Legende: `+` erfuellt (ab {de(soll,1)} x ATR), `!` knapp, "
                    f"`!!` zu knapp (unter {de(knapp,1)} x ATR), `X` Regelbruch._"]
+    zeilen += ueberhitzung
+    zeilen += ["", f"_Legende: `+` unauffaellig, `!` beobachten (ab "
+                   f"{de(rsi_schwelle - 10, 0)} RSI), `!!` ueberkauft (ab "
+                   f"{de(rsi_schwelle, 0)} RSI), `X` Umkehrkerze — reines "
+                   f"Warnsignal, kein automatischer Verkauf._"]
+    if ueberhitzt_warnungen:
+        zeilen += ["", "## Verkaufssignal — bitte pruefen", ""] + ueberhitzt_warnungen
     if warnungen:
         zeilen += ["", "## Achtung", ""] + warnungen
     if fehlend:

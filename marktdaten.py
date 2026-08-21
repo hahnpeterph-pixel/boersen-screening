@@ -43,6 +43,9 @@ ATR_TAGE = RSI_TAGE = 14
 # Gemessene Basis am 21.08.2026: GC=F 4.639,20 gegen Spot 4.603,11,
 # also +36,09 Punkte. Wird der Future genutzt, muss die Basis fuer die
 # KO-Rechnung abgezogen werden - das passiert ausserhalb dieses Skripts.
+# Kaffee (KC=F) am 21.08.2026 entfernt: bei Trade Republic nicht handelbar.
+# Ob es auf Weizen, Mais, Kakao und Zucker dort Knock-outs gibt, ist NICHT
+# geprueft - notfalls in der App am Basiswert nachsehen und hier streichen.
 ROHSTOFFE = [
     (["XAUUSD=X", "GC=F"], "Gold", "Spot/Future"),
     (["XAGUSD=X", "SI=F"], "Silber", "Spot/Future"),
@@ -54,7 +57,6 @@ ROHSTOFFE = [
     (["HG=F"], "Kupfer", "Future"),
     (["ZW=F"], "Weizen", "Future"),
     (["ZC=F"], "Mais", "Future"),
-    (["KC=F"], "Kaffee", "Future"),
     (["CC=F"], "Kakao", "Future"),
     (["SB=F"], "Zucker", "Future"),
 ]

@@ -1,6 +1,6 @@
 {
   "_hinweis": "Nach jedem Kauf und Verkauf pflegen. 'ko' = Knock-out-Schwelle des Scheins in der Waehrung des Basiswerts. 'typ': 'Bestand' (Standard) oder 'Kandidat' (geplanter Kauf, noch kein Schein gewaehlt).",
-  "_stand": "2026-08-21, nach dem Chart-Durchgang",
+  "_stand": "2026-08-21 abends, KO-Schwellen mit der Trade-Republic-App abgeglichen, Bezugstief Micron auf 915.18 korrigiert",
 
   "fenster_tage": 90,
   "links": 3,
@@ -43,14 +43,14 @@
   "ohne_volumen": ["XAUUSD=X", "GC=F", "SI=F", "CL=F", "EURUSD=X"],
 
   "werte": [
-    { "ticker": "TTWO",     "name": "Take-Two",     "ko": 228.7709,
+    { "ticker": "TTWO",     "name": "Take-Two",     "ko": 228.82,
       "chart_tief": 231.58,  "chart_tief_datum": "2026-08-20" },
 
-    { "ticker": "META",     "name": "Meta Platforms", "ko": 520.388,
+    { "ticker": "META",     "name": "Meta Platforms", "ko": 518.85,
       "chart_tief": 524.52,  "chart_tief_datum": "2026-07-30" },
 
-    { "ticker": "MU",       "name": "Micron",       "ko": 861.259,
-      "chart_tief": 737.88,  "chart_tief_datum": "2026-07-29" },
+    { "ticker": "MU",       "name": "Micron",       "ko": 859.80,
+      "chart_tief": 915.18,  "chart_tief_datum": "2026-08-19" },
 
     { "ticker": "MSFT",     "name": "Microsoft",    "ko": 348.28,
       "chart_tief": 477.15,  "chart_tief_datum": "2026-08-18" },
@@ -58,7 +58,7 @@
     { "ticker": "MSFT",     "name": "Microsoft II", "ko": 474.89,
       "chart_tief": 477.15,  "chart_tief_datum": "2026-08-18" },
 
-    { "ticker": "ORCL",     "name": "Oracle",       "ko": 112.6948,
+    { "ticker": "ORCL",     "name": "Oracle",       "ko": 112.72,
       "chart_tief": 137.44,  "chart_tief_datum": "2026-08-19" },
 
     { "ticker": "XAUUSD=X", "name": "Gold (Spot)",  "ko": 4171.7118,

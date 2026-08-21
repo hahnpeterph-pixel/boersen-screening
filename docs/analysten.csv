@@ -1,0 +1,160 @@
+ticker,name,isin,index,kurs,kaufen_pct,halten_pct,verkaufen_pct,banken,nicht_zuordenbar,kursziel,potenzial_pct,kursziel_frisch,empfehlung,hochstufungen_30t,abstufungen_30t,netto_30t,letzte_aktion,letzte_bank,letztes_datum
+AAPL,Apple Inc.,US0378331005,NASDAQ/DOW,309.35,57,29,14,21,0,326.34,5.5,ja,kaufen,0,2,-2,down,Jefferies,2026-08-10
+ABNB,"Airbnb, Inc.",,NASDAQ,187.3,60,35,5,20,1,175.24,-6.4,ja,kaufen,1,0,1,main,BMO Capital,2026-08-10
+ADBE,Adobe Inc.,US00724F1012,NASDAQ,275.3,29,54,17,24,0,270.61,-1.7,ja,halten,0,0,0,main,B of A Securities,2026-08-19
+ADI,"Analog Devices, Inc.",US0326541051,NASDAQ,373.09,95,5,0,19,0,466.0,24.9,ja,klar kaufen,3,0,3,init,BMO Capital,2026-08-21
+ADP,"Automatic Data Processing, Inc.",US0530151036,NASDAQ,280.81,33,67,0,9,0,286.93,2.2,nein,halten,0,0,0,reit,Cantor Fitzgerald,2026-08-05
+ADS.DE,adidas AG,,DAX,154.45,,,,0,0,202.72,31.3,,kaufen,0,0,0,,,
+ADSK,"Autodesk, Inc.",US0527691069,NASDAQ,253.82,80,20,0,15,0,314.19,23.8,ja,klar kaufen,2,0,2,main,Baird,2026-08-21
+AEP,American Electric Power Company,,NASDAQ,120.94,45,55,0,11,0,144.2,19.2,ja,kaufen,0,0,0,main,Morgan Stanley,2026-08-21
+AIR.DE,Airbus SE,,DAX,203.65,,,,0,0,,,,keine Angabe,0,0,0,,,
+ALV.DE,Allianz SE v,,DAX,440.8,,,,0,0,429.65,-2.5,,kaufen,0,0,0,,,
+AMAT,"Applied Materials, Inc.",US0382221051,NASDAQ,492.32,96,4,0,26,0,641.03,30.2,ja,klar kaufen,0,0,0,main,UBS,2026-08-14
+AMD,"Advanced Micro Devices, Inc.",US0079031078,NASDAQ,473.25,82,18,0,34,0,612.84,29.5,ja,klar kaufen,1,0,1,init,BMO Capital,2026-08-21
+AMGN,Amgen Inc.,US0311621009,NASDAQ/DOW,439.33,47,53,0,17,0,388.48,-11.6,ja,kaufen,0,0,0,main,Piper Sandler,2026-08-20
+AMZN,"Amazon.com, Inc.",,NASDAQ/DOW,258.63,96,4,0,28,1,326.84,26.4,nein,klar kaufen,0,0,0,main,UBS,2026-07-31
+APP,Applovin Corporation,,NASDAQ,305.77,67,33,0,15,0,528.32,72.8,ja,kaufen,0,3,-3,main,Wells Fargo,2026-08-19
+ARM,Arm Holdings plc,US0420682058,NASDAQ,243.32,72,22,6,18,0,286.08,17.6,nein,kaufen,0,0,0,main,Rosenblatt,2026-07-31
+ASML,ASML Holding N.V. - New York Re,USN070592100,NASDAQ,1763.76,100,0,0,5,0,2196.43,24.5,,klar kaufen,0,0,0,,,
+AVGO,Broadcom Inc.,CA11134P1009,NASDAQ,368.45,82,18,0,22,0,527.88,43.3,ja,klar kaufen,1,0,1,init,BMO Capital,2026-08-21
+AXON,"Axon Enterprise, Inc.",US05464C1018,NASDAQ,627.75,83,17,0,6,1,693.4,10.5,nein,kaufen,0,0,0,main,UBS,2026-08-06
+AXP,American Express Company,,DOW,335.95,46,46,8,13,0,375.86,11.9,ja,kaufen,0,0,0,main,Piper Sandler,2026-08-12
+AZN,AstraZeneca PLC,GB0009895292,NASDAQ,165.97,,,,0,0,213.69,28.8,,klar kaufen,0,0,0,,,
+BA,Boeing Company (The),,DOW,214.2,100,0,0,6,0,274.85,28.3,ja,kaufen,2,0,2,up,Argus Research,2026-08-11
+BAS.DE,BASF SE,,DAX,51.67,,,,0,0,52.6,1.8,,kaufen,0,0,0,,,
+BAYN.DE,Bayer AG,,DAX,48.04,,,,0,0,56.92,18.5,,kaufen,0,0,0,,,
+BEI.DE,BEIERSDORF AG,,DAX,79.6,,,,0,0,82.37,3.5,,halten,0,0,0,,,
+BIIB,Biogen Inc.,US09062X1037,NASDAQ,216.78,69,31,0,16,0,235.57,8.7,ja,kaufen,1,0,1,up,Wolfe Research,2026-08-13
+BKNG,Booking Holdings Inc. Common St,,NASDAQ,209.62,80,20,0,20,0,237.81,13.4,ja,kaufen,0,0,0,main,Argus Research,2026-08-10
+BKR,Baker Hughes Company,AR0302010498,NASDAQ,62.34,82,18,0,11,0,71.91,15.4,nein,kaufen,0,0,0,main,UBS,2026-07-28
+BMW.DE,BAYERISCHE MOTOREN WERKE AG,,DAX,58.88,,,,0,0,72.62,23.3,,kaufen,0,0,0,,,
+BNR.DE,Brenntag SE,,DAX,60.48,,,,0,0,57.43,-5.0,,halten,0,0,0,,,
+CAT,"Caterpillar, Inc.",US1491231015,DOW,827.91,,,,0,0,979.22,18.3,,kaufen,0,0,0,,,
+CBK.DE,Commerzbank AG,,DAX,39.01,,,,0,0,40.84,4.7,,kaufen,0,0,0,,,
+CCEP,Coca-Cola Europacific Partners,,NASDAQ,108.0,75,25,0,4,0,113.65,5.2,ja,kaufen,0,1,-1,down,UBS,2026-08-13
+CDNS,"Cadence Design Systems, Inc.",US1273871087,NASDAQ,319.02,90,10,0,10,0,403.94,26.6,nein,klar kaufen,0,0,0,main,B of A Securities,2026-07-28
+CDW,CDW Corporation,US12514G1085,NASDAQ,137.25,67,33,0,6,0,155.89,13.6,nein,kaufen,0,0,0,main,Morgan Stanley,2026-08-06
+CEG,Constellation Energy Corporatio,,NASDAQ,272.88,73,27,0,11,0,347.5,27.3,ja,kaufen,0,0,0,main,Morgan Stanley,2026-08-21
+CHTR,"Charter Communications, Inc.",US16119P1084,NASDAQ,150.17,27,36,36,11,0,184.41,22.8,nein,keine Angabe,0,0,0,main,JP Morgan,2026-07-29
+CMCSA,Comcast Corporation,,NASDAQ,26.85,33,50,17,12,0,30.08,12.0,nein,halten,0,0,0,main,Wells Fargo,2026-07-24
+CON.DE,CONTINENTAL AG,,DAX,68.78,,,,0,0,77.62,12.9,,kaufen,0,0,0,,,
+COST,Costco Wholesale Corporation,,NASDAQ,947.74,75,25,0,8,0,1077.31,13.7,,kaufen,0,0,0,,,
+CPRT,"Copart, Inc.",US2172041061,NASDAQ,33.8,33,33,33,3,0,40.3,19.2,ja,kaufen,0,0,0,reit,Stephens & Co.,2026-08-20
+CRM,"Salesforce, Inc.",,DOW,209.16,60,35,5,20,2,243.08,16.2,ja,kaufen,0,0,0,main,BMO Capital,2026-08-20
+CRWD,"CrowdStrike Holdings, Inc.",,NASDAQ,191.95,79,21,0,33,1,207.7,8.2,ja,kaufen,1,0,1,main,Scotiabank,2026-08-21
+CSCO,"Cisco Systems, Inc.",,NASDAQ/DOW,111.04,75,25,0,12,0,136.05,22.5,ja,kaufen,0,1,-1,down,HSBC,2026-08-14
+CSGP,"CoStar Group, Inc.",US22160N1090,NASDAQ,32.26,50,43,7,14,1,37.1,15.0,nein,kaufen,0,3,-3,down,Citigroup,2026-07-29
+CSX,CSX Corporation,US1264081035,NASDAQ,51.59,64,29,7,14,0,53.14,3.0,nein,kaufen,0,0,0,main,Citigroup,2026-07-24
+CTAS,Cintas Corporation,,NASDAQ,203.79,83,17,0,6,0,216.31,6.1,,kaufen,0,0,0,,,
+CTSH,Cognizant Technology Solutions,,NASDAQ,61.87,42,58,0,12,0,63.94,3.3,nein,kaufen,0,0,0,main,Citigroup,2026-07-30
+CVX,Chevron Corporation,ARDEUT110087,DOW,205.26,67,33,0,9,0,216.83,5.6,ja,kaufen,0,0,0,main,Morgan Stanley,2026-08-19
+DASH,"DoorDash, Inc.",,NASDAQ,223.49,61,39,0,18,0,251.94,12.7,ja,kaufen,0,0,0,main,Wedbush,2026-08-20
+DB1.DE,DEUTSCHE BOERSE AG,,DAX,282.9,,,,0,0,290.25,2.6,,kaufen,0,0,0,,,
+DBK.DE,DEUTSCHE BANK AG,,DAX,32.38,,,,0,0,33.43,3.2,,kaufen,0,0,0,,,
+DDOG,"Datadog, Inc.",US23804L1035,NASDAQ,235.62,90,7,3,29,2,285.18,21.0,ja,klar kaufen,0,0,0,main,Scotiabank,2026-08-08
+DHL.DE,DEUTSCHE POST AG,,DAX,55.98,,,,0,0,54.56,-2.5,,halten,0,0,0,,,
+DIS,Walt Disney Company (The),,DOW,107.78,100,0,0,11,0,127.72,18.5,nein,klar kaufen,0,0,0,main,Wells Fargo,2026-08-06
+DTE.DE,DEUTSCHE TELEKOM AG,,DAX,28.94,,,,0,0,37.1,28.2,,klar kaufen,0,0,0,,,
+DTG.DE,Daimler Truck Holding AG,,DAX,45.43,,,,0,0,50.59,11.4,,kaufen,0,0,0,,,
+DXCM,"DexCom, Inc.",US2521311074,NASDAQ,92.34,88,6,6,16,0,94.12,1.9,nein,klar kaufen,0,0,0,main,Argus Research,2026-08-04
+ENR.DE,Siemens Energy AG,,DAX,153.36,,,,0,0,196.92,28.4,,kaufen,0,0,0,,,
+EOAN.DE,E.ON SE,,DAX,17.41,,,,0,0,20.63,18.5,,kaufen,0,0,0,,,
+EXC,Exelon Corporation,,NASDAQ,43.78,0,75,25,4,0,49.0,11.9,ja,halten,0,0,0,main,Morgan Stanley,2026-08-21
+FANG,"Diamondback Energy, Inc.",US25278X1090,NASDAQ,210.72,,,,0,0,232.04,10.1,,klar kaufen,0,0,0,,,
+FAST,Fastenal Company,,NASDAQ,51.26,25,75,0,4,0,48.53,-5.3,,halten,0,0,0,,,
+FRE.DE,Fresenius SE & Co. KGaA,,DAX,46.6,,,,0,0,55.86,19.9,,klar kaufen,0,0,0,,,
+FTNT,"Fortinet, Inc.",US34959E1091,NASDAQ,153.51,23,59,18,22,0,160.86,4.8,nein,keine Angabe,0,0,0,main,Susquehanna,2026-07-31
+GEHC,GE HealthCare Technologies Inc.,,NASDAQ,74.82,36,64,0,11,0,82.5,10.3,ja,kaufen,0,0,0,reit,BTIG,2026-08-19
+GFS,GlobalFoundries Inc.,KYG393871085,NASDAQ,48.05,50,50,0,10,0,76.76,59.8,nein,kaufen,0,0,0,main,TD Cowen,2026-08-06
+GILD,"Gilead Sciences, Inc.",US3755581036,NASDAQ,146.12,67,33,0,9,0,157.41,7.7,nein,kaufen,0,0,0,main,RBC Capital,2026-08-05
+GOOGL,Alphabet Inc.,CA02080M1005,NASDAQ,344.82,81,19,0,26,1,428.07,24.1,nein,klar kaufen,0,0,0,main,UBS,2026-07-23
+GS,"Goldman Sachs Group, Inc. (The)",,DOW,1039.41,33,58,8,12,0,1141.65,9.8,nein,halten,0,0,0,main,UBS,2026-08-03
+HD,"Home Depot, Inc. (The)",,DOW,335.7,68,32,0,19,1,377.19,12.4,ja,kaufen,0,0,0,main,Mizuho,2026-08-19
+HEI.DE,Heidelberg Materials AG,,DAX,159.6,,,,0,0,214.7,34.5,,kaufen,0,0,0,,,
+HEN3.DE,Henkel AG & Co. KGaA,,DAX,75.84,,,,0,0,78.97,4.1,,halten,0,0,0,,,
+HNR1.DE,HANNOVER RUECK SE NA O.N.,,DAX,250.8,,,,0,0,285.29,13.8,,kaufen,0,0,0,,,
+HON,Honeywell International Inc.,,NASDAQ/DOW,215.9,79,21,0,14,0,262.95,21.8,ja,kaufen,1,0,1,main,RBC Capital,2026-08-18
+IBM,International Business Machines,US4592001014,DOW,235.62,69,25,6,16,0,244.91,3.9,nein,kaufen,0,0,0,main,Citigroup,2026-07-24
+IDXX,"IDEXX Laboratories, Inc.",,NASDAQ,556.93,33,67,0,3,0,698.92,25.5,ja,kaufen,0,0,0,main,Barclays,2026-08-11
+IFX.DE,INFINEON TECHNOLOGIES AG,,DAX,55.97,,,,0,0,85.79,53.3,,kaufen,0,0,0,,,
+INTC,Intel Corporation,,NASDAQ,90.07,28,64,8,25,0,114.88,27.5,ja,halten,0,0,0,main,B of A Securities,2026-08-12
+INTU,Intuit Inc.,US4612021034,NASDAQ,367.0,55,35,10,20,0,446.02,21.5,ja,kaufen,0,2,-2,main,Deutsche Bank,2026-08-19
+ISRG,"Intuitive Surgical, Inc.",US46120E6023,NASDAQ,378.81,84,16,0,19,0,478.01,26.2,ja,kaufen,1,1,0,up,Oppenheimer,2026-08-12
+JNJ,Johnson & Johnson,US4781601046,DOW,270.3,89,11,0,9,0,272.5,0.8,nein,kaufen,0,0,0,main,Guggenheim,2026-08-06
+JPM,JP Morgan Chase & Co.,,DOW,351.57,64,36,0,11,0,374.57,6.5,ja,kaufen,0,0,0,main,Wells Fargo,2026-08-14
+KDP,Keurig Dr Pepper Inc.,US49271V1008,NASDAQ,32.04,86,14,0,7,0,35.88,12.0,ja,kaufen,1,0,1,up,HSBC,2026-08-13
+KHC,The Kraft Heinz Company,,NASDAQ,25.58,0,75,25,8,0,25.03,-2.2,nein,halten,0,0,0,main,Barclays,2026-08-07
+KLAC,KLA Corporation,US4824801009,NASDAQ,183.99,76,24,0,17,0,231.78,26.0,nein,kaufen,0,0,0,main,Stifel,2026-07-29
+KO,Coca-Cola Company (The),,DOW,91.1,92,8,0,13,0,94.7,3.9,nein,kaufen,0,0,0,main,Argus Research,2026-07-30
+LIN,Linde plc,IE000S9YS762,NASDAQ,487.57,100,0,0,6,0,547.24,12.2,ja,kaufen,0,0,0,main,BMO Capital,2026-08-10
+LRCX,Lam Research Corporation,,NASDAQ,314.0,95,5,0,19,0,371.35,18.3,nein,klar kaufen,0,0,0,main,Morgan Stanley,2026-07-30
+LULU,lululemon athletica inc.,US5500211090,NASDAQ,121.07,0,94,6,17,0,127.92,5.7,nein,halten,0,0,0,main,JP Morgan,2026-08-04
+MAR,Marriott International,,NASDAQ,356.39,47,53,0,15,0,380.64,6.8,ja,kaufen,1,0,1,main,UBS,2026-08-20
+MBG.DE,Mercedes-Benz Group AG,,DAX,45.22,,,,0,0,57.15,26.4,,kaufen,0,0,0,,,
+MCD,McDonald's Corporation,,DOW,270.94,60,40,0,15,0,316.06,16.7,nein,kaufen,0,0,0,main,Guggenheim,2026-08-06
+MCHP,Microchip Technology Incorporat,,NASDAQ,76.08,69,31,0,13,0,109.21,43.5,ja,kaufen,1,0,1,init,BMO Capital,2026-08-21
+MDLZ,"Mondelez International, Inc.",,NASDAQ,64.45,83,17,0,6,0,69.13,7.3,nein,kaufen,0,0,0,main,Barclays,2026-07-30
+MELI,"MercadoLibre, Inc.",US58733R1023,NASDAQ,1922.73,67,33,0,9,0,2256.54,17.4,ja,kaufen,0,0,0,main,JP Morgan,2026-08-11
+META,"Meta Platforms, Inc.",US30303M1027,NASDAQ,549.9,,,,0,0,754.14,37.1,,klar kaufen,0,0,0,,,
+MMM,3M Company,,DOW,178.95,33,33,33,6,0,185.57,3.7,nein,kaufen,0,0,0,main,Mizuho,2026-07-23
+MNST,Monster Beverage Corporation,,NASDAQ,47.79,62,38,0,13,0,50.13,4.9,nein,kaufen,0,0,0,main,UBS,2026-08-07
+MRK,"Merck & Company, Inc.",,DOW,152.52,86,14,0,14,0,146.54,-3.9,ja,kaufen,2,1,1,main,BMO Capital,2026-08-20
+MRK.DE,MERCK KGAA,,DAX,137.95,,,,0,0,151.14,9.6,,kaufen,0,0,0,,,
+MRVL,"Marvell Technology, Inc.",,NASDAQ,237.04,87,13,0,23,0,259.91,9.6,ja,klar kaufen,1,0,1,main,Oppenheimer,2026-08-21
+MSFT,Microsoft Corporation,,NASDAQ/DOW,483.24,96,4,0,24,1,569.56,17.9,ja,klar kaufen,0,0,0,main,Wells Fargo,2026-08-12
+MSTR,Strategy Inc,US66538H1041,NASDAQ,119.25,100,0,0,9,0,229.07,92.1,ja,klar kaufen,0,0,0,reit,Cantor Fitzgerald,2026-08-10
+MTX.DE,MTU Aero Engines AG,,DAX,352.4,,,,0,0,402.5,14.2,,halten,0,0,0,,,
+MU,"Micron Technology, Inc.",US5951121038,NASDAQ,966.78,96,4,0,23,0,1501.98,55.4,ja,klar kaufen,1,0,1,up,New Street Research,2026-08-14
+MUV2.DE,MUENCHENER RUECKVERS.-GES. AG,,DAX,516.4,,,,0,0,550.72,6.6,,halten,0,0,0,,,
+NFLX,"Netflix, Inc.",US64110L1061,NASDAQ,79.59,75,25,0,20,0,93.42,17.4,nein,kaufen,0,0,0,main,Baird,2026-07-22
+NKE,"Nike, Inc.",US6541061031,DOW,40.76,35,55,10,20,1,50.66,24.3,nein,halten,0,1,-1,down,JP Morgan,2026-08-04
+NVDA,NVIDIA Corporation,,NASDAQ/DOW,214.72,100,0,0,23,0,302.83,41.0,ja,klar kaufen,1,0,1,init,BMO Capital,2026-08-21
+NXPI,NXP Semiconductors N.V.,NL0009538784,NASDAQ,225.56,58,37,5,19,0,311.1,37.9,ja,keine Angabe,0,1,-1,reit,Cantor Fitzgerald,2026-08-17
+ODFL,"Old Dominion Freight Line, Inc.",US6795801009,NASDAQ,206.47,44,56,0,16,0,231.68,12.2,nein,halten,0,0,0,main,UBS,2026-07-30
+ON,ON Semiconductor Corporation,,NASDAQ,74.21,47,53,0,19,0,107.68,45.1,ja,kaufen,0,0,0,reit,Cantor Fitzgerald,2026-08-17
+ORLY,"O'Reilly Automotive, Inc.",,NASDAQ,89.11,100,0,0,8,0,107.8,21.0,nein,kaufen,0,0,0,main,Citigroup,2026-08-03
+P911.DE,Dr. Ing. h.c. F. Porsche AG,,DAX,45.01,,,,0,0,45.7,1.5,,halten,0,0,0,,,
+PAH3.DE,Porsche Automobil Holding SE,,DAX,27.96,,,,0,0,35.62,27.4,,halten,0,0,0,,,
+PANW,"Palo Alto Networks, Inc.",US6974351057,NASDAQ,357.87,90,10,0,30,1,357.55,-0.1,ja,kaufen,0,0,0,main,BMO Capital,2026-08-20
+PAYX,"Paychex, Inc.",US7043261079,NASDAQ,124.47,14,71,14,7,0,111.0,-10.8,ja,halten,0,0,0,main,Jefferies,2026-08-13
+PCAR,PACCAR Inc.,US6937181088,NASDAQ,131.03,33,67,0,6,0,141.03,7.6,ja,kaufen,0,0,0,main,Evercore ISI Group,2026-08-11
+PDD,PDD Holdings Inc.,US7223041028,NASDAQ,88.38,29,57,14,7,0,117.01,32.4,,kaufen,0,0,0,,,
+PEP,"Pepsico, Inc.",US7134481081,NASDAQ,143.48,36,64,0,14,0,155.0,8.0,,keine Angabe,0,0,0,,,
+PG,Procter & Gamble Company (The),,DOW,144.69,45,55,0,11,0,160.57,11.0,nein,kaufen,0,2,-2,down,Argus Research,2026-08-07
+PLTR,Palantir Technologies Inc.,,NASDAQ,179.94,71,21,7,14,0,191.68,6.5,nein,kaufen,1,0,1,main,UBS,2026-08-04
+PYPL,"PayPal Holdings, Inc.",,NASDAQ,61.55,16,79,5,19,0,59.77,-2.9,ja,halten,1,0,1,main,Truist Securities,2026-08-19
+QCOM,QUALCOMM Incorporated,,NASDAQ,160.75,28,61,11,18,0,193.1,20.1,nein,halten,0,0,0,main,Benchmark,2026-07-30
+QIA.DE,Qiagen N.V.,,DAX,37.56,43,57,0,7,0,38.87,3.5,ja,kaufen,0,0,0,main,Citigroup,2026-08-10
+REGN,"Regeneron Pharmaceuticals, Inc.",US75886F1075,NASDAQ,834.04,69,31,0,16,0,840.43,0.8,ja,kaufen,0,0,0,main,Leerink Partners,2026-08-17
+RHM.DE,RHEINMETALL AG,,DAX,1155.4,,,,0,0,1679.38,45.4,,kaufen,0,0,0,,,
+ROP,"Roper Technologies, Inc.",US7766961061,NASDAQ,411.79,43,29,29,7,0,445.2,8.1,ja,kaufen,1,0,1,reit,RBC Capital,2026-08-18
+ROST,"Ross Stores, Inc.",US7782961038,NASDAQ,239.04,70,30,0,10,0,257.5,7.7,ja,kaufen,0,0,0,main,JP Morgan,2026-08-21
+RWE.DE,RWE AG,,DAX,57.32,,,,0,0,66.86,16.6,,kaufen,0,0,0,,,
+SAP.DE,SAP SE,,DAX,188.12,,,,0,0,203.22,8.0,,klar kaufen,0,0,0,,,
+SBUX,Starbucks Corporation,,NASDAQ,107.08,57,36,7,14,0,112.23,4.8,nein,kaufen,0,0,0,reit,BTIG,2026-07-31
+SHL.DE,Siemens Healthineers AG,,DAX,40.2,,,,0,0,45.05,12.1,,kaufen,0,0,0,,,
+SHW,Sherwin-Williams Company (The),,DOW,346.62,78,22,0,9,0,390.57,12.7,nein,kaufen,1,0,1,init,Guggenheim,2026-08-03
+SIE.DE,SIEMENS AG,,DAX,280.35,,,,0,0,299.15,6.7,,kaufen,0,0,0,,,
+SNPS,"Synopsys, Inc.",US8716071076,NASDAQ,397.87,70,20,10,10,0,560.17,40.8,ja,kaufen,0,0,0,main,Morgan Stanley,2026-08-19
+SRT3.DE,SARTORIUS AG,,DAX,246.8,,,,0,0,265.95,7.8,,kaufen,0,0,0,,,
+SY1.DE,Symrise AG,,DAX,90.0,,,,0,0,95.48,6.1,,kaufen,0,0,0,,,
+TEAM,Atlassian Corporation,,NASDAQ,171.81,76,24,0,17,0,187.93,9.4,ja,klar kaufen,0,0,0,main,Truist Securities,2026-08-20
+TMUS,"T-Mobile US, Inc.",,NASDAQ,183.04,85,15,0,13,0,243.38,33.0,ja,kaufen,0,1,-1,down,Wolfe Research,2026-08-14
+TRV,"The Travelers Companies, Inc.",,DOW,363.58,28,50,22,18,0,360.33,-0.9,nein,halten,0,0,0,main,Mizuho,2026-07-24
+TSLA,"Tesla, Inc.",,NASDAQ,362.86,42,47,11,19,0,395.34,9.0,ja,kaufen,0,0,0,reit,GLJ Research,2026-08-18
+TTD,"The Trade Desk, Inc.",US88339J1051,NASDAQ,13.18,20,60,20,20,1,13.39,1.6,ja,halten,0,8,-8,down,DA Davidson,2026-08-10
+TTWO,"Take-Two Interactive Software,",,NASDAQ,239.62,100,0,0,10,0,286.89,19.7,ja,klar kaufen,0,0,0,main,Roth Capital,2026-08-10
+TXN,Texas Instruments Incorporated,,NASDAQ,264.36,62,29,10,21,0,324.45,22.7,ja,kaufen,0,0,0,reit,Cantor Fitzgerald,2026-08-17
+UNH,UnitedHealth Group Incorporated,,DOW,390.05,81,19,0,16,0,475.23,21.8,,kaufen,0,0,0,,,
+V,Visa Inc.,US92826C8394,DOW,371.13,94,6,0,16,0,416.2,12.1,nein,klar kaufen,0,0,0,main,Truist Securities,2026-08-05
+VNA.DE,Vonovia SE,,DAX,20.06,,,,0,0,28.85,43.8,,kaufen,0,0,0,,,
+VOW3.DE,VOLKSWAGEN AG,,DAX,75.02,,,,0,0,105.31,40.4,,kaufen,0,0,0,,,
+VRSK,"Verisk Analytics, Inc.",US92345Y1064,NASDAQ,187.5,50,50,0,6,0,237.71,26.8,nein,kaufen,1,0,1,main,UBS,2026-07-30
+VRTX,Vertex Pharmaceuticals Incorpor,,NASDAQ,548.05,80,10,10,10,0,563.12,2.7,nein,kaufen,0,0,0,main,Truist Securities,2026-08-05
+VZ,Verizon Communications Inc.,ARDEUT112927,DOW,49.45,22,78,0,9,0,51.56,4.3,nein,keine Angabe,0,0,0,main,TD Cowen,2026-07-27
+WBD,"Warner Bros. Discovery, Inc. -",,NASDAQ,28.55,0,100,0,3,0,29.7,4.0,nein,halten,0,1,-1,down,Seaport Global,2026-07-27
+WDAY,"Workday, Inc.",US98138H1014,NASDAQ,200.01,33,47,20,15,0,182.29,-8.9,ja,kaufen,0,1,-1,main,B of A Securities,2026-08-19
+WMT,Walmart Inc.,CA93267J1012,DOW,103.7,88,12,0,17,0,137.95,33.0,ja,kaufen,0,1,-1,main,JP Morgan,2026-08-21
+XEL,Xcel Energy Inc.,US98389B1008,NASDAQ,76.3,100,0,0,6,0,91.94,20.5,ja,klar kaufen,0,0,0,main,Truist Securities,2026-08-13
+ZAL.DE,Zalando SE,,DAX,22.78,,,,0,0,35.07,54.0,,kaufen,0,0,0,,,
+ZS,"Zscaler, Inc.",US98980G1022,NASDAQ,181.74,89,11,0,27,1,196.95,8.4,ja,kaufen,0,0,0,main,Keybanc,2026-08-21

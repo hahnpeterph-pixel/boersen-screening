@@ -7,32 +7,32 @@
    "QIA.DE",
    "HNR1.DE",
    "BAYN.DE",
+   "AXP",
    "ZS",
    "ADBE",
-   "TRV",
-   "ADSK",
-   "AXP",
    "AXON",
+   "ADSK",
+   "KHC",
    "HEN3.DE",
    "SY1.DE",
-   "DTE.DE",
-   "GEHC"
+   "PCAR",
+   "DTE.DE"
   ],
   "momentum": [
    "ABNB",
    "MRK",
-   "ALV.DE",
    "TEAM",
+   "ALV.DE",
    "DB1.DE",
    "MRVL",
    "SY1.DE",
    "DHL.DE",
    "FANG",
-   "PANW",
+   "PAYX",
    "BAYN.DE",
-   "TRV",
    "AXON",
    "CSX",
+   "V",
    "JNJ"
   ],
   "value": [
@@ -40,14 +40,14 @@
    "NVDA",
    "ADSK",
    "V",
-   "MTX.DE",
    "REGN",
+   "MTX.DE",
    "ABNB",
    "ENR.DE",
    "VRTX",
    "DB1.DE",
-   "DXCM",
    "GOOGL",
+   "DXCM",
    "ODFL",
    "CVX",
    "ALV.DE"
@@ -57,14 +57,22 @@
   "turnaround": {
    "entries": [
     {
-     "ticker": "ZS",
-     "rank": 6
+     "ticker": "KHC",
+     "rank": 11
+    },
+    {
+     "ticker": "PCAR",
+     "rank": 14
     }
    ],
    "exits": [
     {
-     "ticker": "CTSH",
+     "ticker": "TRV",
      "old_rank": 8
+    },
+    {
+     "ticker": "GEHC",
+     "old_rank": 15
     }
    ],
    "moves": []
@@ -72,14 +80,22 @@
   "momentum": {
    "entries": [
     {
-     "ticker": "PANW",
+     "ticker": "PAYX",
      "rank": 10
+    },
+    {
+     "ticker": "V",
+     "rank": 14
     }
    ],
    "exits": [
     {
-     "ticker": "PAYX",
-     "old_rank": 9
+     "ticker": "PANW",
+     "old_rank": 10
+    },
+    {
+     "ticker": "TRV",
+     "old_rank": 12
     }
    ],
    "moves": []

@@ -2,38 +2,38 @@
  "date": "2026-08-21",
  "ranks": {
   "turnaround": [
-   "MELI",
-   "HNR1.DE",
-   "TRV",
    "BEI.DE",
-   "KHC",
-   "HEN3.DE",
-   "PCAR",
-   "ADBE",
-   "TTWO",
-   "ROP",
-   "BNR.DE",
-   "PYPL",
-   "DHL.DE",
+   "MELI",
+   "TRV",
    "QIA.DE",
-   "AAPL"
+   "HNR1.DE",
+   "BAYN.DE",
+   "KHC",
+   "BNR.DE",
+   "HEN3.DE",
+   "ADBE",
+   "PCAR",
+   "TTWO",
+   "DTE.DE",
+   "ROP",
+   "DTG.DE"
   ],
   "momentum": [
    "MRK",
-   "DB1.DE",
    "MRVL",
    "MU",
    "TEAM",
-   "TRV",
+   "DB1.DE",
+   "ALV.DE",
    "DHL.DE",
    "ABNB",
+   "TRV",
    "BNR.DE",
    "DXCM",
    "FANG",
-   "JNJ",
+   "SY1.DE",
    "CSX",
-   "PYPL",
-   "KO"
+   "JNJ"
   ],
   "value": [
    "MU",
@@ -44,37 +44,87 @@
    "ABNB",
    "MTX.DE",
    "ENR.DE",
-   "ADS.DE",
    "VRTX",
-   "DB1.DE",
    "DXCM",
+   "DB1.DE",
    "GOOGL",
    "ODFL",
-   "ROST"
+   "ROST",
+   "ALV.DE"
   ]
  },
  "changes": {
   "turnaround": {
-   "entries": [],
-   "exits": [],
-   "moves": []
+   "entries": [
+    {
+     "ticker": "BAYN.DE",
+     "rank": 6
+    },
+    {
+     "ticker": "DTE.DE",
+     "rank": 13
+    },
+    {
+     "ticker": "DTG.DE",
+     "rank": 15
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "PYPL",
+     "old_rank": 12
+    },
+    {
+     "ticker": "DHL.DE",
+     "old_rank": 13
+    },
+    {
+     "ticker": "AAPL",
+     "old_rank": 15
+    }
+   ],
+   "moves": [
+    {
+     "ticker": "QIA.DE",
+     "rank": 4,
+     "delta": 10
+    }
+   ]
   },
   "momentum": {
-   "entries": [],
-   "exits": [],
+   "entries": [
+    {
+     "ticker": "ALV.DE",
+     "rank": 6
+    },
+    {
+     "ticker": "SY1.DE",
+     "rank": 13
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "PYPL",
+     "old_rank": 14
+    },
+    {
+     "ticker": "KO",
+     "old_rank": 15
+    }
+   ],
    "moves": []
   },
   "value": {
    "entries": [
     {
-     "ticker": "ADS.DE",
-     "rank": 9
+     "ticker": "ALV.DE",
+     "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "ALV.DE",
-     "old_rank": 15
+     "ticker": "ADS.DE",
+     "old_rank": 9
     }
    ],
    "moves": []

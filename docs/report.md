@@ -1,6 +1,6 @@
 # Boersen-Screening - 2026-08-21
 
-_Stand: Schlusskurse vom Vortag. Erstellt 2026-08-21T16:52:34+00:00 UTC. 159 Werte ausgewertet._
+_Stand: Schlusskurse vom Vortag. Erstellt 2026-08-21T19:11:19+00:00 UTC. 159 Werte ausgewertet._
 
 ## 📖 Glossar (was die Spalten bedeuten)
 
@@ -17,26 +17,26 @@ _Ueber alle 159 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 
 | Rang | Ticker | ISIN | Name | Index | Kurs | Abstand ATH (Info) | Kaufen-Anteil Analysten | Kursziel | RSI Tag | RSI Woche | RSI Stunde | Letztes Rating |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | NVDA | - | NVIDIA Corporation | NASDAQ/DOW | 215.35 | -8% | 100% (23 Banken, ≤120T) | 302.83 (41% ueber Kurs) | 52 | 56 | 34 | 2026-08-21 BMO Capital: neu bewertet mit Outperform |
-| 2 | BA | - | Boeing Company (The) | DOW | 213.04 | -50% | 100% (6 Banken, ≤120T) | 274.85 (29% ueber Kurs) | 39 | 47 | 15 | 2026-08-11 Argus Research: hochgestuft auf Buy |
-| 3 | ASML | USN070592100 | ASML Holding N.V. - New York Re | NASDAQ | 1753.88 | -12% | 100% (5 Banken, ≤120T) | 2196.43 (25% ueber Kurs) | 50 | 58 | 39 | keine in 30T |
-| 4 | ORLY | - | O'Reilly Automotive, Inc. | NASDAQ | 89.25 | -17% | 100% (8 Banken, ≤120T) | 107.80 (21% ueber Kurs) | 47 | 47 | 41 | 2026-08-03 Citigroup: Rating bestaetigt: Buy |
-| 5 | DIS | - | Walt Disney Company (The) | DOW | 107.22 | -45% | 100% (11 Banken, ≤120T) | 127.72 (19% ueber Kurs) | 64 | 57 | 58 | 2026-08-06 Wells Fargo: Rating bestaetigt: Overweight |
-| 6 | TTWO | - | Take-Two Interactive Software, | NASDAQ | 245.50 | -6% | 100% (10 Banken, ≤120T) | 286.89 (17% ueber Kurs) | 53 | 57 | 59 | 2026-08-10 Roth Capital: Rating bestaetigt: Buy |
-| 7 | MU | US5951121038 | Micron Technology, Inc. | NASDAQ | 967.45 | -20% | 96% (23 Banken, ≤120T) | 1501.98 (55% ueber Kurs) | 54 | 62 | 56 | 2026-08-14 New Street Research: hochgestuft auf Buy |
-| 8 | AMAT | US0382221051 | Applied Materials, Inc. | NASDAQ | 487.81 | -32% | 96% (26 Banken, ≤120T) | 641.03 (31% ueber Kurs) | 42 | 54 | 36 | 2026-08-14 UBS: Rating bestaetigt: Buy |
-| 9 | AMZN | - | Amazon.com, Inc. | NASDAQ/DOW | 258.66 | -9% | 96% (28 Banken, ≤120T) | 326.84 (26% ueber Kurs) | 50 | 55 | 36 | 2026-07-31 UBS: Rating bestaetigt: Buy |
-| 10 | MSFT | - | Microsoft Corporation | NASDAQ/DOW | 483.17 | -10% | 96% (24 Banken, ≤120T) | 569.56 (18% ueber Kurs) | 63 | 62 | 47 | 2026-08-12 Wells Fargo: Rating bestaetigt: Overweight |
-| 11 | ADI | US0326541051 | Analog Devices, Inc. | NASDAQ | 372.57 | -16% | 95% (19 Banken, ≤120T) | 466.00 (25% ueber Kurs) | 45 | 52 | 42 | 2026-08-21 BMO Capital: neu bewertet mit Outperform |
-| 12 | LRCX | - | Lam Research Corporation | NASDAQ | 312.10 | -28% | 95% (19 Banken, ≤120T) | 371.35 (19% ueber Kurs) | 48 | 55 | 46 | 2026-07-30 Morgan Stanley: Rating bestaetigt: Overweight |
-| 13 | CDNS | US1273871087 | Cadence Design Systems, Inc. | NASDAQ | 316.14 | -24% | 90% (10 Banken, ≤120T) | 403.94 (28% ueber Kurs) | 34 | 43 | 45 | 2026-07-28 B of A Securities: Rating bestaetigt: Buy |
-| 14 | DDOG | US23804L1035 | Datadog, Inc. | NASDAQ | 232.33 | -19% | 90% (29 Banken, ≤120T) | 285.18 (23% ueber Kurs) | 42 | 56 | 36 | 2026-08-08 Scotiabank: Rating bestaetigt: Sector Outperform |
-| 15 | WMT | CA93267J1012 | Walmart Inc. | DOW | 102.75 | -23% | 88% (17 Banken, ≤120T) | 137.95 (34% ueber Kurs) | 28 | 36 | 22 | 2026-08-21 JP Morgan: Rating bestaetigt: Overweight |
-| 16 | AVGO | CA11134P1009 | Broadcom Inc. | NASDAQ | 366.05 | -24% | 82% (22 Banken, ≤120T) | 527.88 (44% ueber Kurs) | 37 | 48 | 38 | 2026-08-21 BMO Capital: neu bewertet mit Outperform |
-| 17 | AMD | US0079031078 | Advanced Micro Devices, Inc. | NASDAQ | 470.05 | -19% | 82% (34 Banken, ≤120T) | 612.84 (30% ueber Kurs) | 45 | 57 | 45 | 2026-08-21 BMO Capital: neu bewertet mit Outperform |
-| 18 | GOOGL | CA02080M1005 | Alphabet Inc. | NASDAQ | 345.08 | -14% | 81% (26 Banken, ≤120T) | 428.07 (24% ueber Kurs) | 47 | 51 | 57 | 2026-07-23 UBS: Rating bestaetigt: Neutral |
-| 19 | UNH | - | UnitedHealth Group Incorporated | DOW | 389.55 | -35% | 81% (16 Banken, ≤120T) | 475.23 (22% ueber Kurs) | 38 | 54 | 46 | keine in 30T |
-| 20 | ADSK | US0527691069 | Autodesk, Inc. | NASDAQ | 253.93 | -26% | 80% (15 Banken, ≤120T) | 314.19 (24% ueber Kurs) | 62 | 57 | 56 | 2026-08-21 Baird: Rating bestaetigt: Outperform |
+| 1 | NVDA | - | NVIDIA Corporation | NASDAQ/DOW | 215.04 | -9% | 100% (23 Banken, ≤120T) | 302.83 (41% ueber Kurs) | 51 | 56 | 34 | 2026-08-21 BMO Capital: neu bewertet mit Outperform |
+| 2 | BA | - | Boeing Company (The) | DOW | 214.22 | -50% | 100% (6 Banken, ≤120T) | 274.85 (28% ueber Kurs) | 40 | 47 | 23 | 2026-08-11 Argus Research: hochgestuft auf Buy |
+| 3 | ASML | USN070592100 | ASML Holding N.V. - New York Re | NASDAQ | 1767.40 | -11% | 100% (5 Banken, ≤120T) | 2196.43 (24% ueber Kurs) | 51 | 59 | 47 | keine in 30T |
+| 4 | ORLY | - | O'Reilly Automotive, Inc. | NASDAQ | 89.38 | -17% | 100% (8 Banken, ≤120T) | 107.80 (21% ueber Kurs) | 47 | 48 | 43 | 2026-08-03 Citigroup: Rating bestaetigt: Buy |
+| 5 | DIS | - | Walt Disney Company (The) | DOW | 107.54 | -45% | 100% (11 Banken, ≤120T) | 127.72 (19% ueber Kurs) | 65 | 57 | 61 | 2026-08-06 Wells Fargo: Rating bestaetigt: Overweight |
+| 6 | TTWO | - | Take-Two Interactive Software, | NASDAQ | 241.91 | -8% | 100% (10 Banken, ≤120T) | 286.89 (19% ueber Kurs) | 50 | 55 | 50 | 2026-08-10 Roth Capital: Rating bestaetigt: Buy |
+| 7 | MU | US5951121038 | Micron Technology, Inc. | NASDAQ | 968.42 | -20% | 96% (23 Banken, ≤120T) | 1501.98 (55% ueber Kurs) | 54 | 62 | 57 | 2026-08-14 New Street Research: hochgestuft auf Buy |
+| 8 | AMAT | US0382221051 | Applied Materials, Inc. | NASDAQ | 491.90 | -32% | 96% (26 Banken, ≤120T) | 641.03 (30% ueber Kurs) | 43 | 54 | 42 | 2026-08-14 UBS: Rating bestaetigt: Buy |
+| 9 | AMZN | - | Amazon.com, Inc. | NASDAQ/DOW | 259.28 | -9% | 96% (28 Banken, ≤120T) | 326.84 (26% ueber Kurs) | 50 | 55 | 41 | 2026-07-31 UBS: Rating bestaetigt: Buy |
+| 10 | MSFT | - | Microsoft Corporation | NASDAQ/DOW | 483.02 | -10% | 96% (24 Banken, ≤120T) | 569.56 (18% ueber Kurs) | 63 | 62 | 48 | 2026-08-12 Wells Fargo: Rating bestaetigt: Overweight |
+| 11 | ADI | US0326541051 | Analog Devices, Inc. | NASDAQ | 376.68 | -15% | 95% (19 Banken, ≤120T) | 466.00 (24% ueber Kurs) | 48 | 53 | 50 | 2026-08-21 BMO Capital: neu bewertet mit Outperform |
+| 12 | LRCX | - | Lam Research Corporation | NASDAQ | 313.74 | -28% | 95% (19 Banken, ≤120T) | 371.35 (18% ueber Kurs) | 48 | 55 | 49 | 2026-07-30 Morgan Stanley: Rating bestaetigt: Overweight |
+| 13 | CDNS | US1273871087 | Cadence Design Systems, Inc. | NASDAQ | 318.64 | -24% | 90% (10 Banken, ≤120T) | 403.94 (27% ueber Kurs) | 37 | 44 | 56 | 2026-07-28 B of A Securities: Rating bestaetigt: Buy |
+| 14 | DDOG | US23804L1035 | Datadog, Inc. | NASDAQ | 233.15 | -19% | 90% (29 Banken, ≤120T) | 285.18 (22% ueber Kurs) | 43 | 57 | 39 | 2026-08-08 Scotiabank: Rating bestaetigt: Sector Outperform |
+| 15 | WMT | CA93267J1012 | Walmart Inc. | DOW | 102.76 | -23% | 88% (17 Banken, ≤120T) | 137.95 (34% ueber Kurs) | 28 | 36 | 24 | 2026-08-21 JP Morgan: Rating bestaetigt: Overweight |
+| 16 | AVGO | CA11134P1009 | Broadcom Inc. | NASDAQ | 367.02 | -24% | 82% (22 Banken, ≤120T) | 527.88 (44% ueber Kurs) | 38 | 48 | 41 | 2026-08-21 BMO Capital: neu bewertet mit Outperform |
+| 17 | AMD | US0079031078 | Advanced Micro Devices, Inc. | NASDAQ | 472.56 | -19% | 82% (34 Banken, ≤120T) | 612.84 (30% ueber Kurs) | 46 | 57 | 49 | 2026-08-21 BMO Capital: neu bewertet mit Outperform |
+| 18 | BKR | AR0302010498 | Baker Hughes Company | NASDAQ | 62.50 | -10% | 82% (11 Banken, ≤120T) | 71.91 (15% ueber Kurs) | 54 | 55 | 32 | 2026-07-28 UBS: Rating bestaetigt: Neutral |
+| 19 | GOOGL | CA02080M1005 | Alphabet Inc. | NASDAQ | 345.25 | -14% | 81% (26 Banken, ≤120T) | 428.07 (24% ueber Kurs) | 48 | 52 | 57 | 2026-07-23 UBS: Rating bestaetigt: Neutral |
+| 20 | UNH | - | UnitedHealth Group Incorporated | DOW | 390.89 | -35% | 81% (16 Banken, ≤120T) | 475.23 (22% ueber Kurs) | 39 | 55 | 50 | keine in 30T |
 
 
 ## 🧭 Analysten-Einstufungen (Filtertreffer, letzte 30 Tage)
@@ -47,13 +47,6 @@ _Ueber alle 159 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 - 2026-08-20: Morgan Stanley – Bestaetigung (Overweight → Overweight)
 - 2026-08-20: Bernstein – Hochstufung (Market Perform → Outperform)
 - 2026-08-20: Wells Fargo – Bestaetigung (Overweight → Overweight)
-
-**ADSK** (Autodesk, Inc., NASDAQ)
-- 2026-08-21: Baird – Bestaetigung (Outperform → Outperform)
-- 2026-08-20: Citigroup – Bestaetigung (Neutral → Neutral)
-- 2026-08-20: Guggenheim – Bestaetigung (Buy → Buy)
-- 2026-08-11: Goldman Sachs – Erstbewertung (Sell → Neutral)
-- 2026-07-23: Guggenheim – Erstbewertung (Buy)
 
 **AMAT** (Applied Materials, Inc., NASDAQ)
 - 2026-08-14: UBS – Bestaetigung (Buy → Buy)
@@ -88,6 +81,13 @@ _Ueber alle 159 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 - 2026-08-03: BNP Paribas – Hochstufung (Underperform → Outperform)
 - 2026-07-29: JP Morgan – Bestaetigung (Overweight → Overweight)
 - 2026-07-29: RBC Capital – Bestaetigung (Outperform → Outperform)
+
+**BKR** (Baker Hughes Company, NASDAQ)
+- 2026-07-28: UBS – Bestaetigung (Neutral → Neutral)
+- 2026-07-28: TD Cowen – Bestaetigung (Buy → Buy)
+- 2026-07-28: Piper Sandler – Bestaetigung (Overweight → Overweight)
+- 2026-07-28: Stifel – Bestaetigung (Buy → Buy)
+- 2026-07-28: Susquehanna – Bestaetigung (Positive → Positive)
 
 **CDNS** (Cadence Design Systems, Inc., NASDAQ)
 - 2026-07-28: B of A Securities – Bestaetigung (Buy → Buy)

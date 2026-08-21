@@ -3,17 +3,17 @@
  "ranks": {
   "turnaround": [
    "BEI.DE",
+   "MELI",
    "QIA.DE",
    "HNR1.DE",
-   "MELI",
    "BAYN.DE",
+   "ZS",
    "ADBE",
-   "ADSK",
-   "CTSH",
-   "AXON",
    "TRV",
-   "HEN3.DE",
+   "ADSK",
    "AXP",
+   "AXON",
+   "HEN3.DE",
    "SY1.DE",
    "DTE.DE",
    "GEHC"
@@ -22,17 +22,17 @@
    "ABNB",
    "MRK",
    "ALV.DE",
-   "DB1.DE",
    "TEAM",
-   "SY1.DE",
+   "DB1.DE",
    "MRVL",
+   "SY1.DE",
    "DHL.DE",
-   "PAYX",
-   "BAYN.DE",
    "FANG",
+   "PANW",
+   "BAYN.DE",
    "TRV",
-   "CSX",
    "AXON",
+   "CSX",
    "JNJ"
   ],
   "value": [
@@ -49,19 +49,39 @@
    "DXCM",
    "GOOGL",
    "ODFL",
-   "ALV.DE",
-   "CVX"
+   "CVX",
+   "ALV.DE"
   ]
  },
  "changes": {
   "turnaround": {
-   "entries": [],
-   "exits": [],
+   "entries": [
+    {
+     "ticker": "ZS",
+     "rank": 6
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "CTSH",
+     "old_rank": 8
+    }
+   ],
    "moves": []
   },
   "momentum": {
-   "entries": [],
-   "exits": [],
+   "entries": [
+    {
+     "ticker": "PANW",
+     "rank": 10
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "PAYX",
+     "old_rank": 9
+    }
+   ],
    "moves": []
   },
   "value": {

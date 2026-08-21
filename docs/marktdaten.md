@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-08-21 16:52 UTC. 173 Werte, Fenster 90 Kalendertage. EUR/USD 1.1685._
+_Erstellt 2026-08-21 19:11 UTC. 173 Werte, Fenster 90 Kalendertage. EUR/USD 1.1684._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -10,25 +10,23 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 
 | Wert | Kurs | Hammer | hoeheres Hoch | Umkehrkerze | RSI |
 |---|---|---|---|---|---|
-| AEP (AEP) | 122.045 | - | - | ja | 31.89 |
-| AMZN (AMZN) | 258.63 | - | - | ja | 49.74 |
-| BA (BA) | 212.98 | - | - | ja | 39.11 |
-| BKR (BKR) | 62.64 | - | - | ja | 54.03 |
-| EXC (EXC) | 44.19 | - | - | ja | 36.38 |
-| KLAC (KLAC) | 183.22 | - | ja | ja | 39.47 |
-| MCHP (MCHP) | 75.11 | - | - | ja | 42.18 |
-| NVDA (NVDA) | 215.36 | - | - | ja | 51.71 |
-| ON (ON) | 73.69 | - | - | ja | 34.96 |
-| PANW (PANW) | 356.23 | ja | - | - | 50.9 |
-| ROST (ROST) | 240.83 | ja | ja | - | 50.27 |
-| TXN (TXN) | 262.48 | - | - | ja | 38.07 |
-| WMT (WMT) | 102.785 | - | - | ja | 28.45 |
-| XEL (XEL) | 77.02 | - | - | ja | 39.79 |
+| AAPL (AAPL) | 308.52 | - | - | ja | 46.62 |
+| AEP (AEP) | 121.11 | - | - | ja | 30.2 |
+| AMZN (AMZN) | 259.28 | - | - | ja | 50.25 |
+| BKR (BKR) | 62.515 | - | - | ja | 53.47 |
+| EXC (EXC) | 43.93 | - | - | ja | 34.84 |
+| FTNT (FTNT) | 152.465 | ja | - | - | 44.48 |
+| HON (HON) | 216.64 | - | - | ja | 33.38 |
+| KLAC (KLAC) | 184.2098 | - | ja | ja | 39.91 |
+| NVDA (NVDA) | 215.045 | - | - | ja | 51.36 |
+| ON (ON) | 74.25 | - | - | ja | 35.53 |
+| WMT (WMT) | 102.74 | - | - | ja | 28.39 |
+| XEL (XEL) | 76.6128 | - | - | ja | 38.09 |
 | AIR.DE (AIR.DE) | 203.65 | - | - | ja | 44.94 |
 | BAYN.DE (BAYN.DE) | 48.04 | - | - | ja | 50.86 |
 | MTX.DE (MTX.DE) | 352.4 | - | - | ja | 41.01 |
 | QIA.DE (QIA.DE) | 37.565 | - | - | ja | 55.89 |
-| Kaffee (KC=F) | 324.05 | - | - | ja | 46.45 |
+| Kaffee (KC=F) | 324.9 | - | - | ja | 46.73 |
 
 ---
 

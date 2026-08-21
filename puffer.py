@@ -349,16 +349,58 @@ def teil_d(daten: dict, maerkte: dict | None = None) -> list[dict]:
                     dauer = t - e
                 elif hoechster - schluss[t] >= RUECKFALL_ATR * a[i]:
                     break
-            # Geld statt Trefferquote: KO zwei ATR unter dem Bezugstief,
-            # Knock-out zaehlt -100%, sonst Ausstieg nach AUSSTIEG_TAGE.
+            # Bodenbildung, rein aus Zahlen: ein echter Abwaertstrend davor,
+            # danach KEIN freier Fall mehr (das neue Tief liegt dicht am
+            # vorherigen statt weit darunter), und die Kaeufer sind zurueck
+            # (Volumen an Anstiegstagen ueberwiegt). Erst dieses Dreiklang
+            # unterscheidet einen Boden von einem Zwischenhalt im Absturz.
+            gefallen = falltiefe >= 4.0
+            dicht = False
+            if k > 0:
+                dicht = abs(tief[i] - tief[stellen[k - 1]]) <= 1.0 * a[i]
+            druck = None
+            if i >= 6 and np.isfinite(vol[i]):
+                d5 = np.diff(schluss[i - 5:i + 1])
+                v5 = vol[i - 4:i + 1]
+                auf = float(np.nansum(v5[d5 > 0])) if len(v5) == len(d5) else 0.0
+                ab = float(np.nansum(v5[d5 <= 0])) if len(v5) == len(d5) else 0.0
+                druck = (auf > ab) if ab > 0 else None
+            boden = bool(gefallen and dicht and druck is True)
+
+            # Geld statt Trefferquote. Drei Ausstiegsregeln an denselben
+            # Faellen: fest nach AUSSTIEG_TAGE, Momentum (Rueckfall vom Hoch)
+            # und RSI-Schwelle. Der KO wirkt in allen dreien durchgehend.
             ko = tief[i] - 2.0 * a[i]
             rendite = None
+            ausstiege: dict[str, tuple] = {}
             if einstieg > ko:
                 if tief[e + 1:e + 1 + D_FENSTER].min() <= ko:
                     rendite = -1.0
                 else:
                     aus = schluss[min(e + AUSSTIEG_TAGE, n - 1)]
                     rendite = (aus - einstieg) / (einstieg - ko)
+
+                for regel in ("fest", "momentum", "rsi70"):
+                    hoch_lauf = einstieg
+                    erg, tage = None, 0
+                    for t in range(e + 1, min(e + PHASE_MAX, n)):
+                        tage = t - e
+                        if tief[t] <= ko:
+                            erg = -1.0
+                            break
+                        hoch_lauf = max(hoch_lauf, schluss[t])
+                        if regel == "fest" and tage >= AUSSTIEG_TAGE:
+                            erg = (schluss[t] - einstieg) / (einstieg - ko)
+                            break
+                        if regel == "momentum" and hoch_lauf - schluss[t] >= RUECKFALL_ATR * a[i]:
+                            erg = (schluss[t] - einstieg) / (einstieg - ko)
+                            break
+                        if regel == "rsi70" and np.isfinite(r[t]) and r[t] >= 70:
+                            erg = (schluss[t] - einstieg) / (einstieg - ko)
+                            break
+                    if erg is None:
+                        erg = (schluss[min(e + PHASE_MAX - 1, n - 1)] - einstieg) / (einstieg - ko)
+                    ausstiege[regel] = (erg, tage)
 
             m_ok = None
             if markt_ok is not None:
@@ -371,6 +413,8 @@ def teil_d(daten: dict, maerkte: dict | None = None) -> list[dict]:
                 "anstieg_danach": (hoechster - einstieg) / a[i],
                 "dauer": dauer,
                 "rendite": rendite,
+                "ausstiege": ausstiege,
+                "boden": boden,
                 "markt_ok": m_ok,
                 "hoeheres_tief": bool(k > 0 and tief[i] > tief[stellen[k - 1]]),
                 "haelt": unterschritten <= HAELT_GRENZE,
@@ -515,6 +559,51 @@ def d_phase(faelle: list[dict]) -> list[dict]:
     return zeilen
 
 
+
+def d_ausstiege(faelle: list[dict]) -> list[dict]:
+    """Teil G - dieselben Faelle, drei Ausstiegsregeln, und die Verteilung
+    statt nur des Mittelwerts. Wenn wenige grosse Gewinner alles tragen
+    sollen, ist der Durchschnitt die falsche Kennzahl: entscheidend ist,
+    wie viel vom Gesamtergebnis aus dem besten Zehntel stammt und ob der
+    Rest das ueberlebt."""
+    def rsi_tief(x):   return x["rsi"] is not None and x["rsi"] < 30
+    def boden(x):      return x["boden"]
+
+    mengen = [("alle Tiefs", lambda x: True),
+              ("RSI unter 30", rsi_tief),
+              ("Bodenbildung", boden),
+              ("Bodenbildung + RSI unter 30", lambda x: boden(x) and rsi_tief(x))]
+    regeln = [("fest nach 5 Tagen", "fest"),
+              ("Momentum (Rueckfall 1,5 ATR)", "momentum"),
+              ("RSI ab 70", "rsi70")]
+
+    zeilen = []
+    for m_name, p in mengen:
+        teil = [x for x in faelle if p(x) and x["ausstiege"]]
+        if len(teil) < 30:
+            zeilen.append({"menge": m_name, "regel": "-", "n": len(teil), "zu_duenn": True})
+            continue
+        for r_name, key in regeln:
+            werte = np.array([x["ausstiege"][key][0] for x in teil])
+            tage = np.array([x["ausstiege"][key][1] for x in teil], dtype=float)
+            sortiert = np.sort(werte)[::-1]
+            top = sortiert[:max(1, len(sortiert) // 10)]
+            # Anteil am BRUTTOGEWINN, nicht am Saldo: sonst kommen durch die
+            # Verluste im Nenner Werte ueber 100% heraus, die nichts aussagen.
+            brutto = werte[werte > 0].sum()
+            zeilen.append({
+                "menge": m_name, "regel": r_name, "n": len(teil), "zu_duenn": False,
+                "mittel": float(werte.mean() * 100),
+                "median": float(np.median(werte) * 100),
+                "gewinner": float((werte > 0).mean() * 100),
+                "ausfall": float((werte <= -0.999).mean() * 100),
+                "top10": float(top.mean() * 100),
+                "anteil_top10": float(top[top > 0].sum() / brutto * 100) if brutto > 0 else float("nan"),
+                "dauer": float(np.median(tage)),
+            })
+    return zeilen
+
+
 def verteilung(werte: list[float]) -> dict:
     if not werte:
         return {}
@@ -533,7 +622,7 @@ def verteilung(werte: list[float]) -> dict:
 
 
 def bericht(a_zeilen: list, b: dict, c_zeilen: list, d_zeilen: list,
-            e_zeilen: list, f_zeilen: list, jahre: int) -> str:
+            e_zeilen: list, f_zeilen: list, g_zeilen: list, jahre: int) -> str:
     jetzt = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M")
     L = ["# Puffer-Analyse - wie viel ATR braucht die KO-Schwelle?", "",
          f"_Erstellt {jetzt} UTC. Swing-Tief = tiefer als die {LINKS} Tage davor "
@@ -682,6 +771,31 @@ def bericht(a_zeilen: list, b: dict, c_zeilen: list, d_zeilen: list,
              "nicht, wie lange man haette halten sollen. Wer bis zum Hoch bleibt, "
              "erwischt es nur im Rueckblick._")
     L.append("")
+
+    # Teil G
+    L += ["## Teil G - Ausstiegsregel und Verteilung der Ergebnisse", "",
+          "_Dieselben Faelle, drei Ausstiegsregeln. Der KO wirkt durchgehend. "
+          "'Gewinner' ist der Anteil positiver Trades, 'bestes Zehntel' deren "
+          "mittlere Rendite, 'Anteil am Gewinn' wie viel des gesamten Bruttogewinns "
+          "aus diesem Zehntel stammt. Steht dort ein Wert nahe 100%, traegt eine "
+          "kleine Minderheit alles - dann ist die Trefferquote nebensaechlich und "
+          "es kommt allein darauf an, die Gewinner laufen zu lassen._", "",
+          "| Menge | Ausstieg | Faelle | Gewinner | Ausfall | Median | Mittel | bestes Zehntel | Anteil am Gewinn | Dauer |",
+          "|---|---|---|---|---|---|---|---|---|---|"]
+    for z in g_zeilen:
+        if z.get("zu_duenn"):
+            L.append(f"| {z['menge']} | - | {z['n']} | zu wenige Faelle | | | | | | |")
+            continue
+        anteil = "-" if z["anteil_top10"] != z["anteil_top10"] else f"{z['anteil_top10']:.0f}%"
+        L.append(f"| {z['menge']} | {z['regel']} | {z['n']} | {z['gewinner']:.0f}% | "
+                 f"{z['ausfall']:.1f}% | {z['median']:+.1f}% | **{z['mittel']:+.1f}%** | "
+                 f"{z['top10']:+.0f}% | {anteil} | {z['dauer']:.0f} Tage |")
+    L.append("")
+    L.append("_Bodenbildung heisst hier: mindestens 4 ATR vom 60-Tage-Hoch gefallen, "
+             "das neue Tief liegt hoechstens 1 ATR vom vorherigen entfernt (kein freier "
+             "Fall mehr), und das Volumen der letzten fuenf Tage lag an Anstiegstagen "
+             "hoeher als an Ruecksetzertagen._")
+    L.append("")
     L.append("_Der Erwartungswert ist eine Rechengroesse, keine Prognose: er unterstellt "
              f"festen Ausstieg nach {AUSSTIEG_TAGE} Tagen ohne Verkaufssignal, ohne "
              "Gebuehren und ohne Auswahl nach RSI oder Analysten. Er taugt zum Vergleich "
@@ -724,8 +838,10 @@ def main() -> int:
     e_zeilen = d_kombis(d_faelle)
     print("Teil F: Dauer der Aufwaertsphase ...")
     f_zeilen = d_phase(d_faelle)
+    print("Teil G: Ausstiegsregeln und Verteilung ...")
+    g_zeilen = d_ausstiege(d_faelle)
 
-    text = bericht(a_zeilen, b, c_zeilen, d_zeilen, e_zeilen, f_zeilen, jahre)
+    text = bericht(a_zeilen, b, c_zeilen, d_zeilen, e_zeilen, f_zeilen, g_zeilen, jahre)
     DOCS.mkdir(parents=True, exist_ok=True)
     AUSGABE.write_text(text, encoding="utf-8")
     print(f"\nGeschrieben: {AUSGABE}\n")

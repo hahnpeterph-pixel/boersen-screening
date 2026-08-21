@@ -83,7 +83,7 @@ ANALYST_MAX_AGE_DAYS = 1  # Ratingaenderungen taeglich frisch - das ist das kurz
 # frisch er nach dem Alter waere - sonst benutzt ein neuer Programmlauf
 # unbemerkt einen Cache mit alter, unvollstaendiger Datenstruktur.
 FUND_CACHE_VERSION = 4
-ANALYST_CACHE_VERSION = 3
+ANALYST_CACHE_VERSION = 4
 REVISION_WINDOW_DAYS = 30  # Fenster fuer "kurzfristige" Analysten-Ratingaenderungen
 TARGET_FRESH_DAYS = 14     # Kursziel gilt als "frisch", wenn eine Ratingaenderung diese Zeit nicht ueberschreitet
 CONSENSUS_MAX_AGE_DAYS = 120  # ~4 Monate: aeltere Einzelwertungen zaehlen nicht mehr mit

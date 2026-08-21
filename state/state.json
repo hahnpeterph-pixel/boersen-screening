@@ -1,6 +1,6 @@
 {
  "date": "2026-08-21",
- "generated": "2026-08-21T12:48:37+00:00",
+ "generated": "2026-08-21T12:51:20+00:00",
  "ranks": {
   "turnaround": [
    "BEI.DE",
@@ -9,8 +9,8 @@
    "QIA.DE",
    "HNR1.DE",
    "BAYN.DE",
-   "BNR.DE",
    "KHC",
+   "BNR.DE",
    "HEN3.DE",
    "ADBE",
    "PCAR",
@@ -62,8 +62,8 @@
    "QIA.DE",
    "HNR1.DE",
    "BAYN.DE",
-   "BNR.DE",
    "KHC",
+   "BNR.DE",
    "HEN3.DE",
    "ADBE",
    "PCAR",
@@ -89,8 +89,8 @@
    "CCEP",
    "PAYX",
    "CSX",
-   "DHL.DE",
    "MRK.DE",
+   "DHL.DE",
    "ADP",
    "AXON",
    "CRM",
@@ -197,8 +197,8 @@
     "above_sma100": true,
     "above_sma200": true,
     "pct_above_sma50": 0.5382634315041379,
-    "pct_above_sma100": 5.117075047904396,
-    "pct_above_sma200": 10.85309802286696,
+    "pct_above_sma100": 5.117074181326742,
+    "pct_above_sma200": 10.853097420533997,
     "sma50_slope": 1.45,
     "sma200_slope": 2.1,
     "higher_low": true,
@@ -1042,7 +1042,7 @@
     "above_sma200": true,
     "pct_above_sma50": -4.82277171403328,
     "pct_above_sma100": -4.553390680157876,
-    "pct_above_sma200": 8.906281506713377,
+    "pct_above_sma200": 8.9062814089508,
     "sma50_slope": -3.69,
     "sma200_slope": 4.29,
     "higher_low": true,
@@ -1332,7 +1332,7 @@
     "above_sma200": true,
     "pct_above_sma50": 12.394058531986918,
     "pct_above_sma100": 21.96076927586301,
-    "pct_above_sma200": 19.79815358229027,
+    "pct_above_sma200": 19.798153699937227,
     "sma50_slope": 8.45,
     "sma200_slope": -0.24,
     "higher_low": true,
@@ -2181,8 +2181,8 @@
     "above_sma100": true,
     "above_sma200": true,
     "pct_above_sma50": -11.425263136517739,
-    "pct_above_sma100": 1.8225446381283206,
-    "pct_above_sma200": 26.1379529753452,
+    "pct_above_sma100": 1.8225447018918706,
+    "pct_above_sma200": 26.137953122125367,
     "sma50_slope": 4.76,
     "sma200_slope": 8.02,
     "higher_low": true,
@@ -2763,7 +2763,7 @@
     "above_sma200": true,
     "pct_above_sma50": 15.070273793697964,
     "pct_above_sma100": 21.206895279697413,
-    "pct_above_sma200": 24.122737250737238,
+    "pct_above_sma200": 24.12273697973475,
     "sma50_slope": 7.92,
     "sma200_slope": 3.44,
     "higher_low": true,
@@ -4174,7 +4174,7 @@
     "above_sma200": false,
     "pct_above_sma50": -6.29617458768541,
     "pct_above_sma100": -7.821348354975067,
-    "pct_above_sma200": -1.147869420284564,
+    "pct_above_sma200": -1.1478695431631603,
     "sma50_slope": -2.81,
     "sma200_slope": 1.28,
     "higher_low": true,
@@ -5246,7 +5246,7 @@
     "above_sma200": true,
     "pct_above_sma50": 12.184110316884066,
     "pct_above_sma100": 17.750334638474797,
-    "pct_above_sma200": 13.406801058804518,
+    "pct_above_sma200": 13.406801012050584,
     "sma50_slope": 9.76,
     "sma200_slope": -0.1,
     "higher_low": true,
@@ -5536,7 +5536,7 @@
     "above_sma200": true,
     "pct_above_sma50": 6.008630007112226,
     "pct_above_sma100": 2.01533819150177,
-    "pct_above_sma200": 9.58599586832416,
+    "pct_above_sma200": 9.585996050751078,
     "sma50_slope": -1.75,
     "sma200_slope": 2.83,
     "higher_low": true,
@@ -6396,7 +6396,7 @@
     "above_sma200": true,
     "pct_above_sma50": -1.950999415718646,
     "pct_above_sma100": 2.919663672562156,
-    "pct_above_sma200": 2.055803487910479,
+    "pct_above_sma200": 2.0558035474155467,
     "sma50_slope": 7.13,
     "sma200_slope": -0.89,
     "higher_low": true,
@@ -7238,8 +7238,8 @@
     "above_sma100": true,
     "above_sma200": true,
     "pct_above_sma50": 10.181884737879754,
-    "pct_above_sma100": 5.2386572120166175,
-    "pct_above_sma200": 0.38582595263259023,
+    "pct_above_sma100": 5.23865713206122,
+    "pct_above_sma200": 0.3858256252507575,
     "sma50_slope": 1.11,
     "sma200_slope": -0.62,
     "higher_low": false,
@@ -7516,8 +7516,8 @@
     "above_sma100": false,
     "above_sma200": false,
     "pct_above_sma50": -1.5319320635157507,
-    "pct_above_sma100": -4.338436539555579,
-    "pct_above_sma200": -2.4137058815483114,
+    "pct_above_sma100": -4.338436778884958,
+    "pct_above_sma200": -2.4137061306052976,
     "sma50_slope": -2.26,
     "sma200_slope": 0.29,
     "higher_low": true,
@@ -8327,7 +8327,7 @@
     "above_sma200": true,
     "pct_above_sma50": -5.728789044148741,
     "pct_above_sma100": 1.824804015635828,
-    "pct_above_sma200": 18.896432439877508,
+    "pct_above_sma200": 18.896432931947448,
     "sma50_slope": -0.65,
     "sma200_slope": 5.37,
     "higher_low": true,
@@ -8909,7 +8909,7 @@
     "above_sma200": true,
     "pct_above_sma50": 3.4159549632660102,
     "pct_above_sma100": 8.839401984674211,
-    "pct_above_sma200": 20.8646070180607,
+    "pct_above_sma200": 20.86460685406406,
     "sma50_slope": 3.95,
     "sma200_slope": 3.71,
     "higher_low": true,
@@ -9198,8 +9198,8 @@
     "above_sma100": true,
     "above_sma200": true,
     "pct_above_sma50": 6.908270589744725,
-    "pct_above_sma100": 12.327612940404919,
-    "pct_above_sma200": 10.07408759004167,
+    "pct_above_sma100": 12.327612751207152,
+    "pct_above_sma200": 10.074087181255997,
     "sma50_slope": 7.28,
     "sma200_slope": 0.85,
     "higher_low": true,
@@ -9451,7 +9451,7 @@
     "above_sma200": false,
     "pct_above_sma50": 25.490725590290797,
     "pct_above_sma100": 18.18139528832685,
-    "pct_above_sma200": -2.4813391731577816,
+    "pct_above_sma200": -2.481338875411976,
     "sma50_slope": 3.52,
     "sma200_slope": -1.72,
     "higher_low": true,
@@ -10868,7 +10868,7 @@
     "above_sma200": true,
     "pct_above_sma50": 10.39323041153326,
     "pct_above_sma100": 9.398947854842366,
-    "pct_above_sma200": 20.10701533644759,
+    "pct_above_sma200": 20.107015023512375,
     "sma50_slope": -0.01,
     "sma200_slope": 3.45,
     "higher_low": true,
@@ -11121,8 +11121,8 @@
     "above_sma100": true,
     "above_sma200": true,
     "pct_above_sma50": 6.2956433546912605,
-    "pct_above_sma100": 9.606055966686245,
-    "pct_above_sma200": 13.989474123147838,
+    "pct_above_sma100": 9.60605632853242,
+    "pct_above_sma200": 13.989474172068729,
     "sma50_slope": 4.86,
     "sma200_slope": 1.68,
     "higher_low": true,
@@ -11665,7 +11665,7 @@
     "above_sma200": true,
     "pct_above_sma50": 11.514175512580271,
     "pct_above_sma100": 11.526477716750527,
-    "pct_above_sma200": 1.7690679472854631,
+    "pct_above_sma200": 1.769067733898444,
     "sma50_slope": 4.57,
     "sma200_slope": -0.65,
     "higher_low": true,
@@ -12220,7 +12220,7 @@
     "above_sma200": true,
     "pct_above_sma50": 9.195688258527923,
     "pct_above_sma100": 8.536059922361328,
-    "pct_above_sma200": 8.807954809461393,
+    "pct_above_sma200": 8.807954526091555,
     "sma50_slope": 1.54,
     "sma200_slope": 1.41,
     "higher_low": true,
@@ -12510,7 +12510,7 @@
     "above_sma200": true,
     "pct_above_sma50": -3.2188559356485125,
     "pct_above_sma100": -4.0019770145315885,
-    "pct_above_sma200": 2.4697162555146424,
+    "pct_above_sma200": 2.4697165376960983,
     "sma50_slope": -3.82,
     "sma200_slope": 2.85,
     "higher_low": false,
@@ -12796,8 +12796,8 @@
     "above_sma100": false,
     "above_sma200": false,
     "pct_above_sma50": -6.31420218777582,
-    "pct_above_sma100": -6.0870005114423975,
-    "pct_above_sma200": -3.9991100924928635,
+    "pct_above_sma100": -6.0870008196532766,
+    "pct_above_sma200": -3.999110060286104,
     "sma50_slope": 0.83,
     "sma200_slope": 1.57,
     "higher_low": true,
@@ -13654,7 +13654,7 @@
     "above_sma200": false,
     "pct_above_sma50": 21.752352051412196,
     "pct_above_sma100": 8.141602460984698,
-    "pct_above_sma200": -17.96202062877027,
+    "pct_above_sma200": -17.962020259842994,
     "sma50_slope": -0.94,
     "sma200_slope": -6.88,
     "higher_low": true,
@@ -14210,7 +14210,7 @@
     "above_sma200": true,
     "pct_above_sma50": 1.9104256921790297,
     "pct_above_sma100": 7.0763660789323835,
-    "pct_above_sma200": 11.089368612539419,
+    "pct_above_sma200": 11.089368538192312,
     "sma50_slope": 1.42,
     "sma200_slope": 1.5,
     "higher_low": true,
@@ -14788,8 +14788,8 @@
     "above_sma100": false,
     "above_sma200": true,
     "pct_above_sma50": -15.683253920116236,
-    "pct_above_sma100": -7.320618186397054,
-    "pct_above_sma200": 10.74349822547045,
+    "pct_above_sma100": -7.320617833806731,
+    "pct_above_sma200": 10.74349847718632,
     "sma50_slope": 0.23,
     "sma200_slope": 5.16,
     "higher_low": false,
@@ -15077,7 +15077,7 @@
     "above_sma200": true,
     "pct_above_sma50": -5.2761083744688575,
     "pct_above_sma100": -4.689426577291189,
-    "pct_above_sma200": 1.3265514590510286,
+    "pct_above_sma200": 1.3265514916016796,
     "sma50_slope": -1.23,
     "sma200_slope": 0.95,
     "higher_low": false,
@@ -15357,7 +15357,7 @@
     "above_sma200": true,
     "pct_above_sma50": -7.966603353425916,
     "pct_above_sma100": 1.0128117135803194,
-    "pct_above_sma200": 22.94103458591623,
+    "pct_above_sma200": 22.9410344002426,
     "sma50_slope": -0.18,
     "sma200_slope": 6.83,
     "higher_low": true,
@@ -16488,8 +16488,8 @@
     "above_sma100": true,
     "above_sma200": true,
     "pct_above_sma50": 4.8212801772568925,
-    "pct_above_sma100": 6.402563561531682,
-    "pct_above_sma200": 10.532403312437722,
+    "pct_above_sma100": 6.402563494197544,
+    "pct_above_sma200": 10.532403421431491,
     "sma50_slope": 1.03,
     "sma200_slope": 0.54,
     "higher_low": true,
@@ -17045,7 +17045,7 @@
     "above_sma200": false,
     "pct_above_sma50": -8.013596488239717,
     "pct_above_sma100": -10.096722437424443,
-    "pct_above_sma200": -12.498526254613996,
+    "pct_above_sma200": -12.498526340229688,
     "sma50_slope": -2.08,
     "sma200_slope": -2.18,
     "higher_low": false,
@@ -17576,8 +17576,8 @@
     "above_sma100": true,
     "above_sma200": true,
     "pct_above_sma50": 7.2082636656070065,
-    "pct_above_sma100": 23.44016691095918,
-    "pct_above_sma200": 73.98432320242105,
+    "pct_above_sma100": 23.440166772017236,
+    "pct_above_sma200": 73.9843230184077,
     "sma50_slope": -1.83,
     "sma200_slope": 9.14,
     "higher_low": true,
@@ -17852,8 +17852,8 @@
     "above_sma100": true,
     "above_sma200": true,
     "pct_above_sma50": 15.284323655083343,
-    "pct_above_sma100": 16.48136612670681,
-    "pct_above_sma200": 12.004612534783243,
+    "pct_above_sma100": 16.48136629881933,
+    "pct_above_sma200": 12.004612335861896,
     "sma50_slope": 4.65,
     "sma200_slope": -1.16,
     "higher_low": true,
@@ -18430,7 +18430,7 @@
     "above_sma200": true,
     "pct_above_sma50": 1.1722734848978345,
     "pct_above_sma100": 21.506364569811744,
-    "pct_above_sma200": 71.75282102181868,
+    "pct_above_sma200": 71.75282111421436,
     "sma50_slope": 1.14,
     "sma200_slope": 13.86,
     "higher_low": true,
@@ -18951,7 +18951,7 @@
     "above_sma200": true,
     "pct_above_sma50": 4.611395090675341,
     "pct_above_sma100": 5.246476826309787,
-    "pct_above_sma200": 11.159114212926035,
+    "pct_above_sma200": 11.159114169452899,
     "sma50_slope": -1.0,
     "sma200_slope": 1.28,
     "higher_low": false,
@@ -19506,7 +19506,7 @@
     "above_sma200": true,
     "pct_above_sma50": -7.829198132756465,
     "pct_above_sma100": -5.689310945999071,
-    "pct_above_sma200": 5.93418242548045,
+    "pct_above_sma200": 5.934182383617825,
     "sma50_slope": -0.68,
     "sma200_slope": 4.15,
     "higher_low": true,
@@ -20654,8 +20654,8 @@
     "above_sma100": true,
     "above_sma200": true,
     "pct_above_sma50": 11.913064221470782,
-    "pct_above_sma100": 21.973710264482428,
-    "pct_above_sma200": 21.44916525915481,
+    "pct_above_sma100": 21.97371054153141,
+    "pct_above_sma200": 21.449165625383102,
     "sma50_slope": 9.78,
     "sma200_slope": -0.01,
     "higher_low": true,
@@ -21469,7 +21469,7 @@
     "above_sma200": false,
     "pct_above_sma50": 1.435432803914738,
     "pct_above_sma100": -2.1707166731256278,
-    "pct_above_sma200": -3.3912518584711893,
+    "pct_above_sma200": -3.3912516580009044,
     "sma50_slope": -1.43,
     "sma200_slope": -0.32,
     "higher_low": false,
@@ -22011,7 +22011,7 @@
     "above_sma200": true,
     "pct_above_sma50": 20.721459083025493,
     "pct_above_sma100": 27.449464023623516,
-    "pct_above_sma200": 21.494442907657007,
+    "pct_above_sma200": 21.49444286246571,
     "sma50_slope": 13.44,
     "sma200_slope": -2.02,
     "higher_low": true,
@@ -22301,7 +22301,7 @@
     "above_sma200": false,
     "pct_above_sma50": -10.269890630080914,
     "pct_above_sma100": -10.230371513400494,
-    "pct_above_sma200": -3.95354998457349,
+    "pct_above_sma200": -3.953550028358843,
     "sma50_slope": -12.03,
     "sma200_slope": -0.34,
     "higher_low": true,
@@ -22587,8 +22587,8 @@
     "above_sma100": true,
     "above_sma200": true,
     "pct_above_sma50": 19.651354314943937,
-    "pct_above_sma100": 18.851439858849627,
-    "pct_above_sma200": 14.568972985571627,
+    "pct_above_sma100": 18.851439650255287,
+    "pct_above_sma200": 14.568973034029886,
     "sma50_slope": 7.81,
     "sma200_slope": 2.55,
     "higher_low": true,
@@ -22878,7 +22878,7 @@
     "above_sma200": true,
     "pct_above_sma50": 12.466799734617794,
     "pct_above_sma100": 15.98250577475493,
-    "pct_above_sma200": 9.085020046631032,
+    "pct_above_sma200": 9.085020312055692,
     "sma50_slope": 8.15,
     "sma200_slope": -2.43,
     "higher_low": true,
@@ -23436,7 +23436,7 @@
     "above_sma200": true,
     "pct_above_sma50": 0.2280870443351013,
     "pct_above_sma100": 2.617883273434174,
-    "pct_above_sma200": 9.139268390843824,
+    "pct_above_sma200": 9.13926860931824,
     "sma50_slope": 1.73,
     "sma200_slope": 2.57,
     "higher_low": true,
@@ -25437,7 +25437,7 @@
     "above_sma200": true,
     "pct_above_sma50": -8.240509445687671,
     "pct_above_sma100": -4.1563572057416565,
-    "pct_above_sma200": 14.530533178156002,
+    "pct_above_sma200": 14.530533065117645,
     "sma50_slope": -3.41,
     "sma200_slope": 4.88,
     "higher_low": true,
@@ -25726,7 +25726,7 @@
     "above_sma200": false,
     "pct_above_sma50": -0.13905469441075624,
     "pct_above_sma100": 3.292744467631148,
-    "pct_above_sma200": -3.8850349554416685,
+    "pct_above_sma200": -3.8850349929954953,
     "sma50_slope": 4.15,
     "sma200_slope": -2.11,
     "higher_low": true,
@@ -26849,7 +26849,7 @@
     "above_sma200": true,
     "pct_above_sma50": -0.7601924531836057,
     "pct_above_sma100": -0.7144052686410496,
-    "pct_above_sma200": 0.8377925128915331,
+    "pct_above_sma200": 0.8377920200845601,
     "sma50_slope": 0.1,
     "sma200_slope": -0.06,
     "higher_low": true,
@@ -27403,7 +27403,7 @@
     "above_sma200": false,
     "pct_above_sma50": -3.0477285038084,
     "pct_above_sma100": 0.989218715737894,
-    "pct_above_sma200": -1.8345247103680795,
+    "pct_above_sma200": -1.8345248879803044,
     "sma50_slope": 3.41,
     "sma200_slope": -0.01,
     "higher_low": true,
@@ -27978,7 +27978,7 @@
     "above_sma200": true,
     "pct_above_sma50": -9.920769196250323,
     "pct_above_sma100": -6.667239331068009,
-    "pct_above_sma200": 7.638135080622788,
+    "pct_above_sma200": 7.638135427524939,
     "sma50_slope": -2.17,
     "sma200_slope": 4.44,
     "higher_low": true,
@@ -28231,7 +28231,7 @@
     "above_sma200": true,
     "pct_above_sma50": 18.184659140247916,
     "pct_above_sma100": 15.9130112259964,
-    "pct_above_sma200": 2.5530040674067056,
+    "pct_above_sma200": 2.5530039111700153,
     "sma50_slope": 2.17,
     "sma200_slope": -2.79,
     "higher_low": true,
@@ -28519,8 +28519,8 @@
     "above_sma100": true,
     "above_sma200": true,
     "pct_above_sma50": 11.936805492017722,
-    "pct_above_sma100": 11.0340034266865,
-    "pct_above_sma200": 17.505306727299285,
+    "pct_above_sma100": 11.034003152420935,
+    "pct_above_sma200": 17.50530647132702,
     "sma50_slope": 1.68,
     "sma200_slope": 2.68,
     "higher_low": true,
@@ -28808,7 +28808,7 @@
     "above_sma200": true,
     "pct_above_sma50": 7.88132729815918,
     "pct_above_sma100": 6.881062983197661,
-    "pct_above_sma200": 3.831372904342234,
+    "pct_above_sma200": 3.831372942663225,
     "sma50_slope": -0.04,
     "sma200_slope": -0.81,
     "higher_low": false,
@@ -29095,7 +29095,7 @@
     "above_sma200": true,
     "pct_above_sma50": -4.813738107938226,
     "pct_above_sma100": 0.4965250840151869,
-    "pct_above_sma200": 7.727694922462525,
+    "pct_above_sma200": 7.727694710377486,
     "sma50_slope": 1.33,
     "sma200_slope": 3.0,
     "higher_low": true,
@@ -29642,8 +29642,8 @@
     "above_sma100": false,
     "above_sma200": false,
     "pct_above_sma50": -5.245265255610432,
-    "pct_above_sma100": -4.8323098028774325,
-    "pct_above_sma200": -11.023529368048269,
+    "pct_above_sma100": -4.8323097437404705,
+    "pct_above_sma200": -11.023529626512406,
     "sma50_slope": -4.53,
     "sma200_slope": -2.02,
     "higher_low": false,
@@ -30199,7 +30199,7 @@
     "above_sma200": true,
     "pct_above_sma50": 2.605632374677125,
     "pct_above_sma100": 8.784575212461876,
-    "pct_above_sma200": 12.101237552036137,
+    "pct_above_sma200": 12.101237224767015,
     "sma50_slope": 6.94,
     "sma200_slope": 1.89,
     "higher_low": true,
@@ -30467,7 +30467,7 @@
     "above_sma200": true,
     "pct_above_sma50": 7.572015907831986,
     "pct_above_sma100": 11.816497576853436,
-    "pct_above_sma200": 17.932214397432354,
+    "pct_above_sma200": 17.932214338808205,
     "sma50_slope": 3.77,
     "sma200_slope": 2.72,
     "higher_low": true,
@@ -31042,7 +31042,7 @@
     "above_sma200": true,
     "pct_above_sma50": 5.578984129963405,
     "pct_above_sma100": 12.498148458282209,
-    "pct_above_sma200": 11.601326413588664,
+    "pct_above_sma200": 11.601326466945405,
     "sma50_slope": 7.43,
     "sma200_slope": 1.45,
     "higher_low": true,
@@ -31330,7 +31330,7 @@
     "above_sma200": true,
     "pct_above_sma50": 17.0615313935091,
     "pct_above_sma100": 22.8107042486948,
-    "pct_above_sma200": 30.840870250686937,
+    "pct_above_sma200": 30.840870206855108,
     "sma50_slope": 5.76,
     "sma200_slope": 4.46,
     "higher_low": true,
@@ -31621,7 +31621,7 @@
     "above_sma200": false,
     "pct_above_sma50": -5.516290372437693,
     "pct_above_sma100": -7.267245996449601,
-    "pct_above_sma200": -22.904727826474268,
+    "pct_above_sma200": -22.904727911055268,
     "sma50_slope": -2.0,
     "sma200_slope": -4.53,
     "higher_low": false,
@@ -32716,7 +32716,7 @@
     "above_sma200": true,
     "pct_above_sma50": -7.041208653400366,
     "pct_above_sma100": 0.29859258934648025,
-    "pct_above_sma200": 11.551951805148807,
+    "pct_above_sma200": 11.55195190382512,
     "sma50_slope": 1.95,
     "sma200_slope": 1.62,
     "higher_low": true,
@@ -32976,7 +32976,7 @@
     "above_sma200": true,
     "pct_above_sma50": 4.124243233372238,
     "pct_above_sma100": 9.493048344934984,
-    "pct_above_sma200": 10.683030502237955,
+    "pct_above_sma200": 10.683030348902411,
     "sma50_slope": 4.77,
     "sma200_slope": 0.65,
     "higher_low": true,
@@ -33263,8 +33263,8 @@
     "above_sma100": true,
     "above_sma200": true,
     "pct_above_sma50": 8.560217210836285,
-    "pct_above_sma100": 7.274924150685735,
-    "pct_above_sma200": 11.718773984906171,
+    "pct_above_sma100": 7.274924239929859,
+    "pct_above_sma200": 11.718774081697326,
     "sma50_slope": 0.98,
     "sma200_slope": 2.19,
     "higher_low": true,
@@ -33553,7 +33553,7 @@
     "above_sma200": false,
     "pct_above_sma50": -8.86015792011321,
     "pct_above_sma100": -13.324668756780767,
-    "pct_above_sma200": -12.167459393590608,
+    "pct_above_sma200": -12.167459478611875,
     "sma50_slope": -3.51,
     "sma200_slope": 0.73,
     "higher_low": false,
@@ -33830,30 +33830,30 @@
    "index": "DAX",
    "sector": "Consumer Cyclical",
    "metrics": {
-    "last": 153.45,
+    "last": 153.35,
     "dd_ath": -51.9,
     "days_since_ath": 1843,
-    "range_pos": 39.8,
+    "range_pos": 39.6,
     "above_sma50": false,
     "above_sma100": false,
     "above_sma200": false,
-    "pct_above_sma50": -11.184554809465508,
-    "pct_above_sma100": -4.411571108549673,
-    "pct_above_sma200": -1.570180068762761,
+    "pct_above_sma50": -11.241401230501769,
+    "pct_above_sma100": -4.473263280542616,
+    "pct_above_sma200": -1.6340032993355957,
     "sma50_slope": 0.27,
     "sma200_slope": -1.09,
     "higher_low": true,
     "higher_low_pct": 12.9,
-    "rsi14": 37.0,
+    "rsi14": 36.9,
     "rsi_min60": 31.6,
-    "rsi_week": 44.6,
+    "rsi_week": 44.5,
     "perf": {
      "m1": -13.1,
      "m3": -2.4,
-     "m6": -1.4,
-     "m12": -8.8
+     "m6": -1.5,
+     "m12": -8.9
     },
-    "rs6": -5.7,
+    "rs6": -5.8,
     "vol_pressure_5d": 0.73,
     "vol_breakout": 0.17
    },
@@ -33878,7 +33878,7 @@
    "revision_note": null,
    "target": {
     "target_abs": 202.72,
-    "upside_pct": 32.1,
+    "upside_pct": 32.2,
     "fresh": null,
     "n_analysts": 29,
     "empfehlung": "kaufen",
@@ -33891,8 +33891,8 @@
     }
    },
    "scores": {
-    "turnaround": 55.6,
-    "momentum": 7.5,
+    "turnaround": 55.5,
+    "momentum": 7.4,
     "value": 75.7
    },
    "why": {
@@ -33937,7 +33937,7 @@
      },
      {
       "label": "RSI-Erholung",
-      "points": 12.6,
+      "points": 12.5,
       "max": 15,
       "detail": "RSI 37, aus Ueberverkauft"
      },
@@ -33975,7 +33975,7 @@
      },
      {
       "label": "Abstand 200T-Linie",
-      "points": 2.4,
+      "points": 2.3,
       "max": 10,
       "detail": "-1.6% darunter 200T-Linie"
      },
@@ -34080,27 +34080,27 @@
    "index": "DAX",
    "sector": "Industrials",
    "metrics": {
-    "last": 204.0,
-    "dd_ath": -5.7,
+    "last": 204.1,
+    "dd_ath": -5.6,
     "days_since_ath": 220,
-    "range_pos": 79.6,
+    "range_pos": 79.7,
     "above_sma50": true,
     "above_sma100": true,
     "above_sma200": true,
-    "pct_above_sma50": 1.0654482503329898,
-    "pct_above_sma100": 9.049616239975645,
-    "pct_above_sma200": 8.263583020824527,
+    "pct_above_sma50": 1.1139912238040672,
+    "pct_above_sma100": 9.102491946345982,
+    "pct_above_sma200": 8.316369206710261,
     "sma50_slope": 7.81,
     "sma200_slope": 0.4,
     "higher_low": true,
     "higher_low_pct": 15.8,
-    "rsi14": 45.4,
-    "rsi_min60": 45.4,
-    "rsi_week": 57.3,
+    "rsi14": 45.5,
+    "rsi_min60": 45.5,
+    "rsi_week": 57.4,
     "perf": {
      "m1": -0.1,
      "m3": 18.4,
-     "m6": 13.4,
+     "m6": 13.5,
      "m12": 15.0
     },
     "rs6": 9.1,
@@ -34141,8 +34141,8 @@
     }
    },
    "scores": {
-    "turnaround": 58.8,
-    "momentum": 45.8,
+    "turnaround": 58.9,
+    "momentum": 46.0,
     "value": 62.1
    },
    "why": {
@@ -34172,7 +34172,7 @@
      },
      {
       "label": "Abstand 50T-Linie",
-      "points": 6.8,
+      "points": 6.9,
       "max": 10,
       "detail": "+1.1% darueber 50T-Linie"
      },
@@ -34192,7 +34192,7 @@
       "label": "RSI-Erholung",
       "points": 12.0,
       "max": 15,
-      "detail": "RSI 45"
+      "detail": "RSI 46"
      },
      {
       "label": "Volumen-Ausbruch",
@@ -34222,7 +34222,7 @@
      },
      {
       "label": "Abstand 50T-Linie",
-      "points": 6.8,
+      "points": 6.9,
       "max": 10,
       "detail": "+1.1% darueber 50T-Linie"
      },
@@ -34246,7 +34246,7 @@
      },
      {
       "label": "Position 52W-Spanne",
-      "points": 9.8,
+      "points": 9.9,
       "max": 15,
       "detail": "80% der Jahres-Spanne (0%=Jahrestief, 100%=Jahreshoch)"
      },
@@ -34840,16 +34840,16 @@
    "index": "DAX",
    "sector": "Healthcare",
    "metrics": {
-    "last": 47.61,
+    "last": 47.6,
     "dd_ath": -50.0,
     "days_since_ath": 3350,
     "range_pos": 79.0,
     "above_sma50": true,
     "above_sma100": true,
     "above_sma200": true,
-    "pct_above_sma50": 1.675587444999005,
-    "pct_above_sma100": 12.113102425405774,
-    "pct_above_sma200": 18.365747301276137,
+    "pct_above_sma50": 1.6546612308960373,
+    "pct_above_sma100": 12.089813177596188,
+    "pct_above_sma200": 18.341027598352543,
     "sma50_slope": 10.91,
     "sma200_slope": 5.52,
     "higher_low": true,
@@ -34858,14 +34858,14 @@
     "rsi_min60": 28.3,
     "rsi_week": 59.4,
     "perf": {
-     "m1": 3.1,
+     "m1": 3.0,
      "m3": 25.9,
-     "m6": 11.6,
+     "m6": 11.5,
      "m12": 67.2
     },
     "rs6": 7.2,
     "vol_pressure_5d": 2.33,
-    "vol_breakout": 0.38
+    "vol_breakout": 0.39
    },
    "flags": [],
    "earnings_in": null,
@@ -34888,7 +34888,7 @@
    "revision_note": null,
    "target": {
     "target_abs": 56.92,
-    "upside_pct": 19.5,
+    "upside_pct": 19.6,
     "fresh": null,
     "n_analysts": 18,
     "empfehlung": "kaufen",
@@ -34959,7 +34959,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.38x Ø20T)"
+      "detail": "unterdurchschnittlich (0.39x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -34991,7 +34991,7 @@
       "label": "Abstand 200T-Linie",
       "points": 10.0,
       "max": 10,
-      "detail": "+18.4% darueber 200T-Linie"
+      "detail": "+18.3% darueber 200T-Linie"
      },
      {
       "label": "Ueber 100T-Linie",
@@ -35015,7 +35015,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.38x Ø20T)"
+      "detail": "unterdurchschnittlich (0.39x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
@@ -35596,27 +35596,27 @@
    "index": "DAX",
    "sector": "Basic Materials",
    "metrics": {
-    "last": 60.82,
-    "dd_ath": -21.7,
+    "last": 60.84,
+    "dd_ath": -21.6,
     "days_since_ath": 903,
-    "range_pos": 82.4,
+    "range_pos": 82.5,
     "above_sma50": true,
     "above_sma100": true,
     "above_sma200": true,
-    "pct_above_sma50": 4.088225994690342,
-    "pct_above_sma100": 4.929234983475572,
-    "pct_above_sma200": 13.713502171739457,
+    "pct_above_sma50": 4.121742268875406,
+    "pct_above_sma100": 4.963378436035781,
+    "pct_above_sma200": 13.750683803176521,
     "sma50_slope": 3.59,
     "sma200_slope": 2.7,
     "higher_low": true,
     "higher_low_pct": 9.3,
-    "rsi14": 50.9,
+    "rsi14": 51.0,
     "rsi_min60": 32.9,
-    "rsi_week": 59.3,
+    "rsi_week": 59.4,
     "perf": {
      "m1": 2.3,
-     "m3": 6.6,
-     "m6": 17.9,
+     "m3": 6.7,
+     "m6": 18.0,
      "m12": 14.0
     },
     "rs6": 13.6,
@@ -35657,7 +35657,7 @@
     }
    },
    "scores": {
-    "turnaround": 82.1,
+    "turnaround": 82.0,
     "momentum": 78.4,
     "value": 63.5
    },
@@ -35709,7 +35709,7 @@
      },
      {
       "label": "RSI-Erholung",
-      "points": 14.5,
+      "points": 14.4,
       "max": 15,
       "detail": "RSI 51, aus Ueberverkauft"
      },
@@ -35749,7 +35749,7 @@
       "label": "Abstand 200T-Linie",
       "points": 10.0,
       "max": 10,
-      "detail": "+13.7% darueber 200T-Linie"
+      "detail": "+13.8% darueber 200T-Linie"
      },
      {
       "label": "Ueber 100T-Linie",
@@ -36358,27 +36358,27 @@
    "index": "DAX",
    "sector": "Industrials",
    "metrics": {
-    "last": 45.56,
+    "last": 45.57,
     "dd_ath": -8.1,
     "days_since_ath": 18,
-    "range_pos": 76.5,
+    "range_pos": 76.6,
     "above_sma50": true,
     "above_sma100": true,
     "above_sma200": true,
-    "pct_above_sma50": 2.817788506916985,
-    "pct_above_sma100": 6.599574510530526,
-    "pct_above_sma200": 12.945511287535826,
+    "pct_above_sma50": 2.8398881840081547,
+    "pct_above_sma100": 6.622718776569947,
+    "pct_above_sma200": 12.970157618493872,
     "sma50_slope": 5.37,
     "sma200_slope": 3.53,
     "higher_low": true,
     "higher_low_pct": 7.8,
-    "rsi14": 49.7,
+    "rsi14": 49.8,
     "rsi_min60": 44.7,
     "rsi_week": 58.7,
     "perf": {
-     "m1": -0.5,
+     "m1": -0.4,
      "m3": 9.3,
-     "m6": 13.2,
+     "m6": 13.3,
      "m12": 14.4
     },
     "rs6": 8.9,
@@ -36420,7 +36420,7 @@
    },
    "scores": {
     "turnaround": 78.7,
-    "momentum": 72.7,
+    "momentum": 72.8,
     "value": 60.6
    },
    "why": {
@@ -36484,7 +36484,7 @@
       "label": "Position 52W-Spanne",
       "points": 0.0,
       "max": 10,
-      "detail": "76% der Jahres-Spanne (0%=Jahrestief, 100%=Jahreshoch)"
+      "detail": "77% der Jahres-Spanne (0%=Jahrestief, 100%=Jahreshoch)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
@@ -36510,7 +36510,7 @@
       "label": "Abstand 200T-Linie",
       "points": 10.0,
       "max": 10,
-      "detail": "+12.9% darueber 200T-Linie"
+      "detail": "+13.0% darueber 200T-Linie"
      },
      {
       "label": "Ueber 100T-Linie",
@@ -36526,9 +36526,9 @@
      },
      {
       "label": "Position 52W-Spanne",
-      "points": 8.2,
+      "points": 8.3,
       "max": 15,
-      "detail": "76% der Jahres-Spanne (0%=Jahrestief, 100%=Jahreshoch)"
+      "detail": "77% der Jahres-Spanne (0%=Jahrestief, 100%=Jahreshoch)"
      },
      {
       "label": "Volumen-Ausbruch",
@@ -36613,28 +36613,28 @@
    "index": "DAX",
    "sector": "Financial Services",
    "metrics": {
-    "last": 32.05,
-    "dd_ath": -4.0,
+    "last": 32.07,
+    "dd_ath": -3.9,
     "days_since_ath": 7,
-    "range_pos": 85.9,
+    "range_pos": 86.2,
     "above_sma50": true,
     "above_sma100": true,
     "above_sma200": true,
-    "pct_above_sma50": 1.7363409125429996,
-    "pct_above_sma100": 10.126847604953927,
-    "pct_above_sma200": 9.327950862781599,
+    "pct_above_sma50": 1.7985357969909632,
+    "pct_above_sma100": 10.194813784223179,
+    "pct_above_sma200": 9.395802620120431,
     "sma50_slope": 6.95,
     "sma200_slope": 1.22,
     "higher_low": true,
     "higher_low_pct": 19.7,
-    "rsi14": 48.9,
+    "rsi14": 49.1,
     "rsi_min60": 45.8,
-    "rsi_week": 58.8,
+    "rsi_week": 58.9,
     "perf": {
-     "m1": 6.9,
-     "m3": 16.0,
-     "m6": 8.3,
-     "m12": 4.8
+     "m1": 7.0,
+     "m3": 16.1,
+     "m6": 8.4,
+     "m12": 4.9
     },
     "rs6": 4.0,
     "vol_pressure_5d": 0.0,
@@ -36661,7 +36661,7 @@
    "revision_note": null,
    "target": {
     "target_abs": 33.43,
-    "upside_pct": 4.3,
+    "upside_pct": 4.2,
     "fresh": null,
     "n_analysts": 18,
     "empfehlung": "kaufen",
@@ -36674,8 +36674,8 @@
     }
    },
    "scores": {
-    "turnaround": 59.9,
-    "momentum": 47.3,
+    "turnaround": 60.0,
+    "momentum": 47.5,
     "value": 51.7
    },
    "why": {
@@ -36704,9 +36704,9 @@
      },
      {
       "label": "Abstand 50T-Linie",
-      "points": 7.9,
+      "points": 8.0,
       "max": 10,
-      "detail": "+1.7% darueber 50T-Linie"
+      "detail": "+1.8% darueber 50T-Linie"
      },
      {
       "label": "Ueber 100T-Linie",
@@ -36754,15 +36754,15 @@
      },
      {
       "label": "Abstand 50T-Linie",
-      "points": 7.9,
+      "points": 8.0,
       "max": 10,
-      "detail": "+1.7% darueber 50T-Linie"
+      "detail": "+1.8% darueber 50T-Linie"
      },
      {
       "label": "Abstand 200T-Linie",
       "points": 10.0,
       "max": 10,
-      "detail": "+9.3% darueber 200T-Linie"
+      "detail": "+9.4% darueber 200T-Linie"
      },
      {
       "label": "Ueber 100T-Linie",
@@ -36778,7 +36778,7 @@
      },
      {
       "label": "Position 52W-Spanne",
-      "points": 13.0,
+      "points": 13.1,
       "max": 15,
       "detail": "86% der Jahres-Spanne (0%=Jahrestief, 100%=Jahreshoch)"
      },
@@ -37118,30 +37118,30 @@
    "index": "DAX",
    "sector": "Industrials",
    "metrics": {
-    "last": 56.18,
+    "last": 56.2,
     "dd_ath": -2.8,
     "days_since_ath": 22,
-    "range_pos": 92.4,
+    "range_pos": 92.5,
     "above_sma50": true,
     "above_sma100": true,
     "above_sma200": true,
-    "pct_above_sma50": 1.6626497428410048,
-    "pct_above_sma100": 8.72214584818607,
-    "pct_above_sma200": 16.750211439193198,
+    "pct_above_sma50": 1.6981061860441793,
+    "pct_above_sma100": 8.760430696855014,
+    "pct_above_sma200": 16.791532583941617,
     "sma50_slope": 4.14,
     "sma200_slope": 3.98,
     "higher_low": true,
     "higher_low_pct": 23.0,
-    "rsi14": 54.7,
+    "rsi14": 54.9,
     "rsi_min60": 40.0,
     "rsi_week": 66.7,
     "perf": {
-     "m1": -0.3,
+     "m1": -0.2,
      "m3": 12.7,
      "m6": 18.4,
-     "m12": 45.8
+     "m12": 45.9
     },
-    "rs6": 14.0,
+    "rs6": 14.1,
     "vol_pressure_5d": 3.43,
     "vol_breakout": 0.31
    },
@@ -37179,8 +37179,8 @@
     }
    },
    "scores": {
-    "turnaround": 73.7,
-    "momentum": 80.5,
+    "turnaround": 73.6,
+    "momentum": 80.6,
     "value": 69.0
    },
    "why": {
@@ -37230,7 +37230,7 @@
      },
      {
       "label": "RSI-Erholung",
-      "points": 9.2,
+      "points": 9.1,
       "max": 15,
       "detail": "RSI 55"
      },
@@ -37256,7 +37256,7 @@
     "momentum": [
      {
       "label": "Rel. Staerke 6M",
-      "points": 17.7,
+      "points": 17.8,
       "max": 28,
       "detail": "+14% staerker/schwaecher als der Index"
      },
@@ -37373,26 +37373,26 @@
    "index": "DAX",
    "sector": "Communication Services",
    "metrics": {
-    "last": 28.87,
-    "dd_ath": -14.4,
+    "last": 28.86,
+    "dd_ath": -14.5,
     "days_since_ath": 536,
-    "range_pos": 54.7,
+    "range_pos": 54.6,
     "above_sma50": true,
     "above_sma100": true,
     "above_sma200": true,
-    "pct_above_sma50": 6.958412234697575,
-    "pct_above_sma100": 3.884423698391992,
-    "pct_above_sma200": 2.69984368791214,
+    "pct_above_sma50": 6.922155372858119,
+    "pct_above_sma100": 3.848813048466937,
+    "pct_above_sma200": 2.664452278800833,
     "sma50_slope": -0.69,
     "sma200_slope": 0.06,
     "higher_low": true,
     "higher_low_pct": 9.6,
-    "rsi14": 57.9,
+    "rsi14": 57.8,
     "rsi_min60": 21.4,
     "rsi_week": 53.7,
     "perf": {
-     "m1": 10.5,
-     "m3": -0.6,
+     "m1": 10.4,
+     "m3": -0.7,
      "m6": -10.4,
      "m12": -5.2
     },
@@ -37421,7 +37421,7 @@
    "revision_note": null,
    "target": {
     "target_abs": 37.1,
-    "upside_pct": 28.5,
+    "upside_pct": 28.6,
     "fresh": null,
     "n_analysts": 18,
     "empfehlung": "klar kaufen",
@@ -37435,7 +37435,7 @@
    },
    "scores": {
     "turnaround": 78.9,
-    "momentum": 42.6,
+    "momentum": 42.5,
     "value": 64.3
    },
    "why": {
@@ -37467,7 +37467,7 @@
       "label": "Abstand 50T-Linie",
       "points": 10.0,
       "max": 10,
-      "detail": "+7.0% darueber 50T-Linie"
+      "detail": "+6.9% darueber 50T-Linie"
      },
      {
       "label": "Ueber 100T-Linie",
@@ -37517,11 +37517,11 @@
       "label": "Abstand 50T-Linie",
       "points": 10.0,
       "max": 10,
-      "detail": "+7.0% darueber 50T-Linie"
+      "detail": "+6.9% darueber 50T-Linie"
      },
      {
       "label": "Abstand 200T-Linie",
-      "points": 9.5,
+      "points": 9.4,
       "max": 10,
       "detail": "+2.7% darueber 200T-Linie"
      },
@@ -37626,23 +37626,23 @@
    "index": "DAX",
    "sector": "Utilities",
    "metrics": {
-    "last": 17.63,
+    "last": 17.62,
     "dd_ath": -10.5,
     "days_since_ath": 157,
-    "range_pos": 61.8,
+    "range_pos": 61.7,
     "above_sma50": false,
     "above_sma100": false,
     "above_sma200": true,
-    "pct_above_sma50": -5.104857472556212,
-    "pct_above_sma100": -4.754319637529969,
-    "pct_above_sma200": 0.0645884315101819,
+    "pct_above_sma50": -5.131255375201094,
+    "pct_above_sma100": -4.781070327045189,
+    "pct_above_sma200": 0.03635605010645637,
     "sma50_slope": 0.46,
     "sma200_slope": 1.57,
     "higher_low": false,
     "higher_low_pct": -1.4,
-    "rsi14": 36.9,
+    "rsi14": 36.8,
     "rsi_min60": 29.4,
-    "rsi_week": 46.2,
+    "rsi_week": 46.1,
     "perf": {
      "m1": -10.0,
      "m3": -5.1,
@@ -37676,7 +37676,7 @@
    "revision_note": null,
    "target": {
     "target_abs": 20.63,
-    "upside_pct": 17.0,
+    "upside_pct": 17.1,
     "fresh": null,
     "n_analysts": 17,
     "empfehlung": "kaufen",
@@ -37689,7 +37689,7 @@
     }
    },
    "scores": {
-    "turnaround": 39.7,
+    "turnaround": 39.6,
     "momentum": 25.2,
     "value": 32.6
    },
@@ -37733,7 +37733,7 @@
      },
      {
       "label": "RSI-Erholung",
-      "points": 12.5,
+      "points": 12.4,
       "max": 15,
       "detail": "RSI 37, aus Ueberverkauft"
      },
@@ -37773,7 +37773,7 @@
       "label": "Abstand 200T-Linie",
       "points": 5.1,
       "max": 10,
-      "detail": "+0.1% darueber 200T-Linie"
+      "detail": "+0.0% darueber 200T-Linie"
      },
      {
       "label": "Ueber 100T-Linie",
@@ -38631,28 +38631,28 @@
    "index": "DAX",
    "sector": "Consumer Defensive",
    "metrics": {
-    "last": 75.28,
+    "last": 75.3,
     "dd_ath": -27.0,
     "days_since_ath": 3350,
-    "range_pos": 69.7,
+    "range_pos": 69.8,
     "above_sma50": true,
     "above_sma100": true,
     "above_sma200": true,
-    "pct_above_sma50": 0.7748184429877458,
-    "pct_above_sma100": 7.999940938301919,
-    "pct_above_sma200": 7.478210729203694,
+    "pct_above_sma50": 0.8010576226388011,
+    "pct_above_sma100": 8.02832990200737,
+    "pct_above_sma200": 7.50661756180846,
     "sma50_slope": 5.59,
     "sma200_slope": 1.15,
     "higher_low": true,
     "higher_low_pct": 18.9,
-    "rsi14": 47.6,
+    "rsi14": 47.7,
     "rsi_min60": 45.2,
-    "rsi_week": 58.1,
+    "rsi_week": 58.2,
     "perf": {
-     "m1": 2.1,
+     "m1": 2.2,
      "m3": 14.2,
      "m6": -6.9,
-     "m12": 5.2
+     "m12": 5.3
     },
     "rs6": -11.2,
     "vol_pressure_5d": 1.81,
@@ -38884,28 +38884,28 @@
    "index": "DAX",
    "sector": "Technology",
    "metrics": {
-    "last": 55.84,
+    "last": 55.87,
     "dd_ath": -36.5,
     "days_since_ath": 80,
-    "range_pos": 43.5,
+    "range_pos": 43.6,
     "above_sma50": false,
     "above_sma100": false,
     "above_sma200": true,
-    "pct_above_sma50": -18.67053124276553,
-    "pct_above_sma100": -14.484560633436494,
-    "pct_above_sma200": 6.969733790824861,
+    "pct_above_sma50": -18.627549893841678,
+    "pct_above_sma100": -14.439012472227297,
+    "pct_above_sma200": 7.0268933389632915,
     "sma50_slope": -8.93,
     "sma200_slope": 5.39,
     "higher_low": true,
     "higher_low_pct": 14.1,
-    "rsi14": 35.6,
+    "rsi14": 35.7,
     "rsi_min60": 28.7,
     "rsi_week": 44.8,
     "perf": {
      "m1": -14.7,
      "m3": -28.0,
      "m6": 21.7,
-     "m12": 52.7
+     "m12": 52.8
     },
     "rs6": 17.4,
     "vol_pressure_5d": 0.84,
@@ -38945,7 +38945,7 @@
     }
    },
    "scores": {
-    "turnaround": 55.8,
+    "turnaround": 55.9,
     "momentum": 49.6,
     "value": 72.5
    },
@@ -38977,7 +38977,7 @@
       "label": "Abstand 50T-Linie",
       "points": 0.0,
       "max": 10,
-      "detail": "-18.7% darunter 50T-Linie"
+      "detail": "-18.6% darunter 50T-Linie"
      },
      {
       "label": "Ueber 100T-Linie",
@@ -38993,7 +38993,7 @@
      },
      {
       "label": "RSI-Erholung",
-      "points": 11.5,
+      "points": 11.6,
       "max": 15,
       "detail": "RSI 36, aus Ueberverkauft"
      },
@@ -39027,7 +39027,7 @@
       "label": "Abstand 50T-Linie",
       "points": 0.0,
       "max": 10,
-      "detail": "-18.7% darunter 50T-Linie"
+      "detail": "-18.6% darunter 50T-Linie"
      },
      {
       "label": "Abstand 200T-Linie",
@@ -41174,30 +41174,30 @@
    "index": "DAX",
    "sector": "Utilities",
    "metrics": {
-    "last": 57.92,
+    "last": 57.9,
     "dd_ath": -4.7,
     "days_since_ath": 113,
-    "range_pos": 89.6,
+    "range_pos": 89.5,
     "above_sma50": true,
     "above_sma100": true,
     "above_sma200": true,
-    "pct_above_sma50": 2.154555264753344,
-    "pct_above_sma100": 1.5647252054956873,
-    "pct_above_sma200": 9.618388081492624,
+    "pct_above_sma50": 2.120007144056424,
+    "pct_above_sma100": 1.530016411524393,
+    "pct_above_sma200": 9.580750136052574,
     "sma50_slope": 0.7,
     "sma200_slope": 3.26,
     "higher_low": true,
     "higher_low_pct": 2.3,
-    "rsi14": 53.4,
+    "rsi14": 53.3,
     "rsi_min60": 41.0,
     "rsi_week": 56.3,
     "perf": {
      "m1": -1.7,
-     "m3": 1.6,
-     "m6": 14.3,
-     "m12": 65.4
+     "m3": 1.5,
+     "m6": 14.2,
+     "m12": 65.3
     },
-    "rs6": 10.0,
+    "rs6": 9.9,
     "vol_pressure_5d": 0.9,
     "vol_breakout": 0.22
    },
@@ -41222,7 +41222,7 @@
    "revision_note": null,
    "target": {
     "target_abs": 66.86,
-    "upside_pct": 15.4,
+    "upside_pct": 15.5,
     "fresh": null,
     "n_analysts": 18,
     "empfehlung": "kaufen",
@@ -41235,14 +41235,15 @@
     }
    },
    "scores": {
-    "turnaround": 59.2,
-    "momentum": 71.0,
+    "turnaround": 59.1,
+    "momentum": 70.8,
     "value": 41.4
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
-     "ueber 50-Tage-Linie"
+     "ueber 50-Tage-Linie",
+     "RSI erholt sich aus dem ueberverkauften Bereich"
     ],
     "momentum": [
      "ueber 50- und 200-Tage-Linie",
@@ -41263,9 +41264,9 @@
      },
      {
       "label": "Abstand 50T-Linie",
-      "points": 8.6,
+      "points": 8.5,
       "max": 10,
-      "detail": "+2.2% darueber 50T-Linie"
+      "detail": "+2.1% darueber 50T-Linie"
      },
      {
       "label": "Ueber 100T-Linie",
@@ -41307,15 +41308,15 @@
     "momentum": [
      {
       "label": "Rel. Staerke 6M",
-      "points": 14.0,
+      "points": 13.9,
       "max": 28,
       "detail": "+10% staerker/schwaecher als der Index"
      },
      {
       "label": "Abstand 50T-Linie",
-      "points": 8.6,
+      "points": 8.5,
       "max": 10,
-      "detail": "+2.2% darueber 50T-Linie"
+      "detail": "+2.1% darueber 50T-Linie"
      },
      {
       "label": "Abstand 200T-Linie",
@@ -41424,27 +41425,27 @@
    "index": "DAX",
    "sector": "Technology",
    "metrics": {
-    "last": 184.56,
+    "last": 184.63,
     "dd_ath": -32.4,
     "days_since_ath": 554,
-    "range_pos": 51.3,
+    "range_pos": 51.4,
     "above_sma50": true,
     "above_sma100": true,
     "above_sma200": true,
-    "pct_above_sma50": 21.956053406411247,
-    "pct_above_sma100": 23.163672595900998,
-    "pct_above_sma200": 10.003652741924206,
+    "pct_above_sma50": 22.001185029318894,
+    "pct_above_sma100": 23.20981544020082,
+    "pct_above_sma200": 10.045149752443304,
     "sma50_slope": 5.1,
     "sma200_slope": -3.27,
     "higher_low": false,
     "higher_low_pct": -2.9,
-    "rsi14": 72.0,
+    "rsi14": 72.1,
     "rsi_min60": 34.2,
     "rsi_week": 63.1,
     "perf": {
-     "m1": 43.8,
+     "m1": 43.9,
      "m3": 21.9,
-     "m6": 11.8,
+     "m6": 11.9,
      "m12": -19.3
     },
     "rs6": 7.5,
@@ -41929,30 +41930,30 @@
    "index": "DAX",
    "sector": "Industrials",
    "metrics": {
-    "last": 279.3,
+    "last": 279.35,
     "dd_ath": -2.8,
     "days_since_ath": 17,
     "range_pos": 90.3,
     "above_sma50": true,
     "above_sma100": true,
     "above_sma200": true,
-    "pct_above_sma50": 1.4559041559948138,
-    "pct_above_sma100": 5.400994914531787,
-    "pct_above_sma200": 11.997216219799789,
+    "pct_above_sma50": 1.4737046012933686,
+    "pct_above_sma100": 5.419671616596777,
+    "pct_above_sma200": 12.017160853789854,
     "sma50_slope": 1.69,
     "sma200_slope": 1.66,
     "higher_low": true,
     "higher_low_pct": 9.5,
-    "rsi14": 52.2,
+    "rsi14": 52.3,
     "rsi_min60": 43.7,
-    "rsi_week": 59.2,
+    "rsi_week": 59.3,
     "perf": {
-     "m1": 4.1,
+     "m1": 4.2,
      "m3": 2.5,
      "m6": 16.1,
      "m12": 20.4
     },
-    "rs6": 11.7,
+    "rs6": 11.8,
     "vol_pressure_5d": 0.53,
     "vol_breakout": 0.34
    },
@@ -41991,7 +41992,7 @@
    },
    "scores": {
     "turnaround": 52.5,
-    "momentum": 57.1,
+    "momentum": 57.3,
     "value": 65.4
    },
    "why": {
@@ -42021,7 +42022,7 @@
      },
      {
       "label": "Abstand 50T-Linie",
-      "points": 7.4,
+      "points": 7.5,
       "max": 10,
       "detail": "+1.5% darueber 50T-Linie"
      },
@@ -42039,7 +42040,7 @@
      },
      {
       "label": "RSI-Erholung",
-      "points": 10.7,
+      "points": 10.6,
       "max": 15,
       "detail": "RSI 52"
      },
@@ -42065,13 +42066,13 @@
     "momentum": [
      {
       "label": "Rel. Staerke 6M",
-      "points": 15.6,
+      "points": 15.7,
       "max": 28,
       "detail": "+12% staerker/schwaecher als der Index"
      },
      {
       "label": "Abstand 50T-Linie",
-      "points": 7.4,
+      "points": 7.5,
       "max": 10,
       "detail": "+1.5% darueber 50T-Linie"
      },
@@ -42182,30 +42183,30 @@
    "index": "DAX",
    "sector": "Industrials",
    "metrics": {
-    "last": 154.76,
-    "dd_ath": -17.5,
+    "last": 154.6,
+    "dd_ath": -17.6,
     "days_since_ath": 119,
-    "range_pos": 68.3,
+    "range_pos": 68.1,
     "above_sma50": false,
     "above_sma100": false,
     "above_sma200": true,
-    "pct_above_sma50": -0.6958253946267368,
-    "pct_above_sma100": -4.587638691830199,
-    "pct_above_sma200": 4.273089633661176,
+    "pct_above_sma50": -0.7964476308575108,
+    "pct_above_sma100": -4.685334319049783,
+    "pct_above_sma200": 4.1658552162255225,
     "sma50_slope": -2.78,
     "sma200_slope": 3.33,
     "higher_low": false,
     "higher_low_pct": -2.5,
-    "rsi14": 50.1,
+    "rsi14": 49.9,
     "rsi_min60": 25.9,
-    "rsi_week": 50.8,
+    "rsi_week": 50.7,
     "perf": {
-     "m1": 2.9,
-     "m3": -14.6,
-     "m6": -6.2,
-     "m12": 67.3
+     "m1": 2.8,
+     "m3": -14.7,
+     "m6": -6.3,
+     "m12": 67.1
     },
-    "rs6": -10.5,
+    "rs6": -10.6,
     "vol_pressure_5d": 1.11,
     "vol_breakout": 0.25
    },
@@ -42230,7 +42231,7 @@
    "revision_note": null,
    "target": {
     "target_abs": 196.92,
-    "upside_pct": 27.2,
+    "upside_pct": 27.4,
     "fresh": null,
     "n_analysts": 25,
     "empfehlung": "kaufen",
@@ -42243,8 +42244,8 @@
     }
    },
    "scores": {
-    "turnaround": 39.9,
-    "momentum": 42.2,
+    "turnaround": 40.0,
+    "momentum": 42.0,
     "value": 80.8
    },
    "why": {
@@ -42273,9 +42274,9 @@
      },
      {
       "label": "Abstand 50T-Linie",
-      "points": 3.8,
+      "points": 3.7,
       "max": 10,
-      "detail": "-0.7% darunter 50T-Linie"
+      "detail": "-0.8% darunter 50T-Linie"
      },
      {
       "label": "Ueber 100T-Linie",
@@ -42291,7 +42292,7 @@
      },
      {
       "label": "RSI-Erholung",
-      "points": 14.9,
+      "points": 15.0,
       "max": 15,
       "detail": "RSI 50, aus Ueberverkauft"
      },
@@ -42303,7 +42304,7 @@
      },
      {
       "label": "Position 52W-Spanne",
-      "points": 3.4,
+      "points": 3.5,
       "max": 10,
       "detail": "68% der Jahres-Spanne (0%=Jahrestief, 100%=Jahreshoch)"
      },
@@ -42319,19 +42320,19 @@
       "label": "Rel. Staerke 6M",
       "points": 0.0,
       "max": 28,
-      "detail": "-10% staerker/schwaecher als der Index"
+      "detail": "-11% staerker/schwaecher als der Index"
      },
      {
       "label": "Abstand 50T-Linie",
-      "points": 3.8,
+      "points": 3.7,
       "max": 10,
-      "detail": "-0.7% darunter 50T-Linie"
+      "detail": "-0.8% darunter 50T-Linie"
      },
      {
       "label": "Abstand 200T-Linie",
       "points": 10.0,
       "max": 10,
-      "detail": "+4.3% darueber 200T-Linie"
+      "detail": "+4.2% darueber 200T-Linie"
      },
      {
       "label": "Ueber 100T-Linie",
@@ -42347,7 +42348,7 @@
      },
      {
       "label": "Position 52W-Spanne",
-      "points": 4.1,
+      "points": 4.0,
       "max": 15,
       "detail": "68% der Jahres-Spanne (0%=Jahrestief, 100%=Jahreshoch)"
      },
@@ -42434,21 +42435,21 @@
    "index": "DAX",
    "sector": "Healthcare",
    "metrics": {
-    "last": 39.63,
-    "dd_ath": -35.3,
+    "last": 39.64,
+    "dd_ath": -35.2,
     "days_since_ath": 1716,
-    "range_pos": 41.6,
+    "range_pos": 41.7,
     "above_sma50": true,
     "above_sma100": true,
     "above_sma200": true,
-    "pct_above_sma50": 9.30906353528902,
-    "pct_above_sma100": 10.622930060821933,
-    "pct_above_sma200": 2.3960121507475174,
+    "pct_above_sma50": 9.336038259160183,
+    "pct_above_sma100": 10.650530493898923,
+    "pct_above_sma200": 2.421713521385671,
     "sma50_slope": 4.79,
     "sma200_slope": -2.19,
     "higher_low": true,
     "higher_low_pct": 1.9,
-    "rsi14": 64.6,
+    "rsi14": 64.7,
     "rsi_min60": 37.3,
     "rsi_week": 59.5,
     "perf": {
@@ -42482,7 +42483,7 @@
    "revision_note": null,
    "target": {
     "target_abs": 45.05,
-    "upside_pct": 13.7,
+    "upside_pct": 13.6,
     "fresh": null,
     "n_analysts": 20,
     "empfehlung": "kaufen",
@@ -43193,26 +43194,26 @@
    "index": "DAX",
    "sector": "Real Estate",
    "metrics": {
-    "last": 19.99,
+    "last": 20.0,
     "dd_ath": -47.4,
     "days_since_ath": 2179,
-    "range_pos": 3.9,
+    "range_pos": 4.0,
     "above_sma50": false,
     "above_sma100": false,
     "above_sma200": false,
-    "pct_above_sma50": -4.901453611748375,
-    "pct_above_sma100": -5.3827852450284315,
-    "pct_above_sma200": -10.571106395961626,
+    "pct_above_sma50": -4.878114620851126,
+    "pct_above_sma100": -5.359338078102227,
+    "pct_above_sma200": -10.54883327507402,
     "sma50_slope": 0.14,
     "sma200_slope": -2.09,
     "higher_low": true,
     "higher_low_pct": 1.3,
-    "rsi14": 37.3,
+    "rsi14": 37.4,
     "rsi_min60": 32.9,
     "rsi_week": 40.0,
     "perf": {
      "m1": -1.7,
-     "m3": -7.2,
+     "m3": -7.1,
      "m6": -23.1,
      "m12": -26.0
     },
@@ -43256,7 +43257,7 @@
     }
    },
    "scores": {
-    "turnaround": 35.0,
+    "turnaround": 35.1,
     "momentum": 0.0,
     "value": 55.3
    },
@@ -43302,7 +43303,7 @@
      },
      {
       "label": "RSI-Erholung",
-      "points": 12.8,
+      "points": 12.9,
       "max": 15,
       "detail": "RSI 37, aus Ueberverkauft"
      },
@@ -43342,7 +43343,7 @@
       "label": "Abstand 200T-Linie",
       "points": 0.0,
       "max": 10,
-      "detail": "-10.6% darunter 200T-Linie"
+      "detail": "-10.5% darunter 200T-Linie"
      },
      {
       "label": "Ueber 100T-Linie",
@@ -43445,32 +43446,32 @@
    "index": "DAX",
    "sector": "Consumer Cyclical",
    "metrics": {
-    "last": 22.64,
+    "last": 22.65,
     "dd_ath": -78.4,
     "days_since_ath": 1871,
-    "range_pos": 31.9,
+    "range_pos": 32.0,
     "above_sma50": false,
     "above_sma100": false,
     "above_sma200": false,
-    "pct_above_sma50": -12.92374910322842,
-    "pct_above_sma100": -5.511353584360146,
-    "pct_above_sma200": -3.2040179679525327,
+    "pct_above_sma50": -12.88595709852639,
+    "pct_above_sma100": -5.470011892616999,
+    "pct_above_sma200": -3.161469597655031,
     "sma50_slope": 4.21,
     "sma200_slope": -0.24,
     "higher_low": true,
     "higher_low_pct": 17.7,
-    "rsi14": 32.7,
+    "rsi14": 32.8,
     "rsi_min60": 31.0,
     "rsi_week": 44.7,
     "perf": {
-     "m1": -16.4,
+     "m1": -16.3,
      "m3": 1.3,
-     "m6": 12.2,
+     "m6": 12.3,
      "m12": -9.5
     },
-    "rs6": 7.9,
+    "rs6": 8.0,
     "vol_pressure_5d": 0.06,
-    "vol_breakout": 0.15
+    "vol_breakout": 0.16
    },
    "flags": [],
    "earnings_in": null,
@@ -43507,7 +43508,7 @@
    },
    "scores": {
     "turnaround": 54.2,
-    "momentum": 12.0,
+    "momentum": 12.1,
     "value": 68.5
    },
    "why": {
@@ -43562,7 +43563,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.15x Ø20T)"
+      "detail": "unterdurchschnittlich (0.16x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -43580,7 +43581,7 @@
     "momentum": [
      {
       "label": "Rel. Staerke 6M",
-      "points": 12.0,
+      "points": 12.1,
       "max": 28,
       "detail": "+8% staerker/schwaecher als der Index"
      },
@@ -43618,7 +43619,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.15x Ø20T)"
+      "detail": "unterdurchschnittlich (0.16x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",

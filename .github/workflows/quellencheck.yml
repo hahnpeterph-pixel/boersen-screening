@@ -1,0 +1,53 @@
+name: Quellencheck
+
+# Einmalige Diagnose, ausdruecklich NICHT im Tageslauf: der Check macht rund
+# 80 zusaetzliche Abrufe und wuerde den Morgenlauf jeden Werktag verlaengern,
+# obwohl das Ergebnis sich kaum aendert. Deshalb nur auf Knopfdruck.
+#
+# Starten: Actions -> Quellencheck -> "Run workflow".
+# Im Feld "nur" koennen einzelne Ticker mit Komma getrennt angegeben werden,
+# z.B. SIE.DE,SAP.DE,DBK.DE - dann laeuft der Check nur fuer diese und ist
+# in Sekunden durch. Leer lassen heisst: alle Werte ohne benannte
+# Einzelratings, aktuell 42 Stueck.
+
+on:
+  workflow_dispatch:
+    inputs:
+      nur:
+        description: "Nur diese Ticker pruefen (Komma getrennt, leer = alle)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+jobs:
+  quellencheck:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Abhaengigkeiten installieren
+        run: pip install -r requirements.txt
+
+      - name: Quellencheck ausfuehren
+        run: |
+          if [ -n "${{ github.event.inputs.nur }}" ]; then
+            python quellencheck.py --nur "${{ github.event.inputs.nur }}"
+          else
+            python quellencheck.py
+          fi
+
+      - name: Ergebnis speichern
+        run: |
+          git config user.name "screening-bot"
+          git config user.email "actions@github.com"
+          git add docs
+          git diff --staged --quiet || git commit -m "Quellencheck $(date -u +%Y-%m-%d\ %H:%M)"
+          git push

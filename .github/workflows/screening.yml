@@ -31,6 +31,9 @@ jobs:
       - name: Tiefs mit Volumen ausfuehren
         run: python tiefs.py
 
+      - name: Marktdaten
+        run: python marktdaten.py
+
       - name: Ergebnis speichern
         run: |
           git config user.name "screening-bot"

@@ -55,78 +55,18 @@
  },
  "changes": {
   "turnaround": {
-   "entries": [
-    {
-     "ticker": "BAYN.DE",
-     "rank": 6
-    },
-    {
-     "ticker": "DTE.DE",
-     "rank": 13
-    },
-    {
-     "ticker": "DTG.DE",
-     "rank": 15
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "PYPL",
-     "old_rank": 12
-    },
-    {
-     "ticker": "DHL.DE",
-     "old_rank": 13
-    },
-    {
-     "ticker": "AAPL",
-     "old_rank": 15
-    }
-   ],
-   "moves": [
-    {
-     "ticker": "QIA.DE",
-     "rank": 4,
-     "delta": 10
-    }
-   ]
+   "entries": [],
+   "exits": [],
+   "moves": []
   },
   "momentum": {
-   "entries": [
-    {
-     "ticker": "ALV.DE",
-     "rank": 6
-    },
-    {
-     "ticker": "SY1.DE",
-     "rank": 13
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "PYPL",
-     "old_rank": 14
-    },
-    {
-     "ticker": "KO",
-     "old_rank": 15
-    }
-   ],
+   "entries": [],
+   "exits": [],
    "moves": []
   },
   "value": {
-   "entries": [
-    {
-     "ticker": "ALV.DE",
-     "rank": 15
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "ADS.DE",
-     "old_rank": 9
-    }
-   ],
+   "entries": [],
+   "exits": [],
    "moves": []
   },
   "analyst_flips": []

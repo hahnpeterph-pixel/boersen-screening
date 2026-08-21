@@ -10,17 +10,19 @@
    "AXP",
    "ZS",
    "ADBE",
+   "SPGI",
    "AXON",
    "ADSK",
    "KHC",
    "HEN3.DE",
    "SY1.DE",
-   "PCAR",
-   "DTE.DE"
+   "PCAR"
   ],
   "momentum": [
    "ABNB",
+   "MRNA",
    "MRK",
+   "ILMN",
    "TEAM",
    "ALV.DE",
    "DB1.DE",
@@ -31,9 +33,7 @@
    "PAYX",
    "BAYN.DE",
    "AXON",
-   "CSX",
-   "V",
-   "JNJ"
+   "CSX"
   ],
   "value": [
    "MU",
@@ -55,13 +55,41 @@
  },
  "changes": {
   "turnaround": {
-   "entries": [],
-   "exits": [],
+   "entries": [
+    {
+     "ticker": "SPGI",
+     "rank": 9
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "DTE.DE",
+     "old_rank": 15
+    }
+   ],
    "moves": []
   },
   "momentum": {
-   "entries": [],
-   "exits": [],
+   "entries": [
+    {
+     "ticker": "MRNA",
+     "rank": 2
+    },
+    {
+     "ticker": "ILMN",
+     "rank": 4
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "V",
+     "old_rank": 14
+    },
+    {
+     "ticker": "JNJ",
+     "old_rank": 15
+    }
+   ],
    "moves": []
   },
   "value": {

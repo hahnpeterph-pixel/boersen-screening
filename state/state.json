@@ -1,6 +1,6 @@
 {
  "date": "2026-08-21",
- "generated": "2026-08-21T20:46:52+00:00",
+ "generated": "2026-08-21T21:05:00+00:00",
  "ranks": {
   "turnaround": [
    "BEI.DE",
@@ -11,17 +11,19 @@
    "AXP",
    "ZS",
    "ADBE",
+   "SPGI",
    "AXON",
    "ADSK",
    "KHC",
    "HEN3.DE",
    "SY1.DE",
-   "PCAR",
-   "DTE.DE"
+   "PCAR"
   ],
   "momentum": [
    "ABNB",
+   "MRNA",
    "MRK",
+   "ILMN",
    "TEAM",
    "ALV.DE",
    "DB1.DE",
@@ -32,9 +34,7 @@
    "PAYX",
    "BAYN.DE",
    "AXON",
-   "CSX",
-   "V",
-   "JNJ"
+   "CSX"
   ],
   "value": [
    "MU",
@@ -64,6 +64,7 @@
    "AXP",
    "ZS",
    "ADBE",
+   "SPGI",
    "AXON",
    "ADSK",
    "KHC",
@@ -75,11 +76,13 @@
    "BNR.DE",
    "DTG.DE",
    "ALV.DE",
+   "MRNA",
    "ROST",
    "DASH",
    "BAS.DE",
    "FANG",
    "TTWO",
+   "ILMN",
    "CVX",
    "CMCSA",
    "BKR",
@@ -92,14 +95,13 @@
    "ROP",
    "MSFT",
    "CCEP",
-   "SHL.DE",
-   "V",
-   "MRK.DE",
-   "BIIB"
+   "SHL.DE"
   ],
   "momentum": [
    "ABNB",
+   "MRNA",
    "MRK",
+   "ILMN",
    "TEAM",
    "ALV.DE",
    "DB1.DE",
@@ -112,7 +114,7 @@
    "AXON",
    "CSX",
    "V",
-   "JNJ",
+   "DXCM",
    "KO",
    "BNR.DE",
    "BAS.DE",
@@ -123,21 +125,19 @@
    "CCEP",
    "P911.DE",
    "RWE.DE",
+   "MDB",
    "DTE.DE",
    "GOOGL",
    "BKR",
    "AEP",
    "EXC",
    "PANW",
-   "DXCM",
+   "JNJ",
    "MU",
    "AMGN",
    "ADP",
    "DTG.DE",
-   "FTNT",
-   "BIIB",
-   "CRWD",
-   "CSCO"
+   "FTNT"
   ],
   "value": [
    "MU",
@@ -170,16 +170,16 @@
    "EXC",
    "AEP",
    "RWE.DE",
+   "GOOG",
+   "ILMN",
+   "MDB",
    "AVGO",
    "MSFT",
    "ADI",
    "AMAT",
    "ADBE",
    "CSCO",
-   "LRCX",
-   "ASML",
-   "TXN",
-   "PLTR"
+   "LRCX"
   ]
  },
  "rows": {
@@ -197,8 +197,8 @@
     "above_sma100": true,
     "above_sma200": true,
     "pct_above_sma50": -0.2076699921394698,
-    "pct_above_sma100": 4.236315485515574,
-    "pct_above_sma200": 10.077788700486057,
+    "pct_above_sma100": 4.236316343003521,
+    "pct_above_sma200": 10.077789118862635,
     "sma50_slope": 1.32,
     "sma200_slope": 2.03,
     "higher_low": true,
@@ -812,8 +812,8 @@
      "m12": -22.1
     },
     "rs6": -10.7,
-    "vol_pressure_5d": 2.24,
-    "vol_breakout": 0.84
+    "vol_pressure_5d": 2.25,
+    "vol_breakout": 0.86
    },
    "flags": [],
    "earnings_in": 19,
@@ -925,7 +925,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.84x Ø20T)"
+      "detail": "unterdurchschnittlich (0.86x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -937,7 +937,7 @@
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 20.0,
       "max": 20,
-      "detail": "mehr Kaeufer als Verkaeufer (2.24x)"
+      "detail": "mehr Kaeufer als Verkaeufer (2.25x)"
      }
     ],
     "momentum": [
@@ -981,13 +981,13 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.84x Ø20T)"
+      "detail": "unterdurchschnittlich (0.86x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 18.0,
       "max": 18,
-      "detail": "mehr Kaeufer als Verkaeufer (2.24x)"
+      "detail": "mehr Kaeufer als Verkaeufer (2.25x)"
      }
     ],
     "value": [
@@ -1069,7 +1069,7 @@
     "above_sma200": true,
     "pct_above_sma50": -3.993475313870143,
     "pct_above_sma100": -3.993943434198488,
-    "pct_above_sma200": 9.516433904613631,
+    "pct_above_sma200": 9.51643395366657,
     "sma50_slope": -3.57,
     "sma200_slope": 4.29,
     "higher_low": true,
@@ -1084,8 +1084,8 @@
      "m12": 54.4
     },
     "rs6": -11.5,
-    "vol_pressure_5d": 0.47,
-    "vol_breakout": 1.06
+    "vol_pressure_5d": 0.52,
+    "vol_breakout": 1.25
    },
    "flags": [],
    "earnings_in": null,
@@ -1168,8 +1168,8 @@
     }
    },
    "scores": {
-    "turnaround": 38.7,
-    "momentum": 24.0,
+    "turnaround": 39.9,
+    "momentum": 25.0,
     "value": 87.1
    },
    "why": {
@@ -1224,9 +1224,9 @@
      },
      {
       "label": "Volumen-Ausbruch",
-      "points": 0.4,
+      "points": 1.6,
       "max": 5,
-      "detail": "leicht erhoeht (1.06x Ø20T)"
+      "detail": "leicht erhoeht (1.25x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -1238,7 +1238,7 @@
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 0.0,
       "max": 20,
-      "detail": "mehr Verkaeufer als Kaeufer (0.47x)"
+      "detail": "mehr Verkaeufer als Kaeufer (0.52x)"
      }
     ],
     "momentum": [
@@ -1280,15 +1280,15 @@
      },
      {
       "label": "Volumen-Ausbruch",
-      "points": 0.3,
+      "points": 1.3,
       "max": 4,
-      "detail": "leicht erhoeht (1.06x Ø20T)"
+      "detail": "leicht erhoeht (1.25x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 0.0,
       "max": 18,
-      "detail": "mehr Verkaeufer als Kaeufer (0.47x)"
+      "detail": "mehr Verkaeufer als Kaeufer (0.52x)"
      }
     ],
     "value": [
@@ -1370,7 +1370,7 @@
     "above_sma200": true,
     "pct_above_sma50": 12.57183721873496,
     "pct_above_sma100": 22.24909122248393,
-    "pct_above_sma200": 20.408983700232675,
+    "pct_above_sma200": 20.408983975968596,
     "sma50_slope": 8.54,
     "sma200_slope": -0.1,
     "higher_low": true,
@@ -1685,8 +1685,8 @@
      "m12": -12.1
     },
     "rs6": -5.3,
-    "vol_pressure_5d": 1.57,
-    "vol_breakout": 0.78
+    "vol_pressure_5d": 1.65,
+    "vol_breakout": 0.89
    },
    "flags": [],
    "earnings_in": 5,
@@ -1828,7 +1828,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.78x Ø20T)"
+      "detail": "unterdurchschnittlich (0.89x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -1840,7 +1840,7 @@
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 20.0,
       "max": 20,
-      "detail": "mehr Kaeufer als Verkaeufer (1.57x)"
+      "detail": "mehr Kaeufer als Verkaeufer (1.65x)"
      }
     ],
     "momentum": [
@@ -1884,13 +1884,13 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.78x Ø20T)"
+      "detail": "unterdurchschnittlich (0.89x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 18.0,
       "max": 18,
-      "detail": "mehr Kaeufer als Verkaeufer (1.57x)"
+      "detail": "mehr Kaeufer als Verkaeufer (1.65x)"
      }
     ],
     "value": [
@@ -1972,7 +1972,7 @@
     "above_sma200": false,
     "pct_above_sma50": -6.990147832832594,
     "pct_above_sma100": -6.985366226217538,
-    "pct_above_sma200": -3.257718597231918,
+    "pct_above_sma200": -3.2577185677114984,
     "sma50_slope": -0.26,
     "sma200_slope": 0.95,
     "higher_low": false,
@@ -1988,7 +1988,7 @@
     },
     "rs6": -22.3,
     "vol_pressure_5d": 0.21,
-    "vol_breakout": 1.37
+    "vol_breakout": 1.4
    },
    "flags": [],
    "earnings_in": null,
@@ -2071,8 +2071,8 @@
     }
    },
    "scores": {
-    "turnaround": 21.8,
-    "momentum": 4.2,
+    "turnaround": 21.9,
+    "momentum": 4.3,
     "value": 44.5
    },
    "why": {
@@ -2121,9 +2121,9 @@
      },
      {
       "label": "Volumen-Ausbruch",
-      "points": 2.3,
+      "points": 2.4,
       "max": 5,
-      "detail": "leicht erhoeht (1.37x Ø20T)"
+      "detail": "leicht erhoeht (1.40x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -2177,9 +2177,9 @@
      },
      {
       "label": "Volumen-Ausbruch",
-      "points": 1.8,
+      "points": 1.9,
       "max": 4,
-      "detail": "leicht erhoeht (1.37x Ø20T)"
+      "detail": "leicht erhoeht (1.40x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
@@ -2266,8 +2266,8 @@
     "above_sma100": true,
     "above_sma200": true,
     "pct_above_sma50": -12.106584483568717,
-    "pct_above_sma100": 0.6732402053213793,
-    "pct_above_sma200": 24.743349763712843,
+    "pct_above_sma100": 0.6732402681461025,
+    "pct_above_sma200": 24.743349546682758,
     "sma50_slope": 4.34,
     "sma200_slope": 7.91,
     "higher_low": true,
@@ -2869,7 +2869,7 @@
     "above_sma200": true,
     "pct_above_sma50": 15.930988295636617,
     "pct_above_sma100": 22.453761730779508,
-    "pct_above_sma200": 25.45722011793594,
+    "pct_above_sma200": 25.457220227268774,
     "sma50_slope": 8.24,
     "sma200_slope": 3.53,
     "higher_low": true,
@@ -2884,7 +2884,7 @@
      "m12": 52.7
     },
     "rs6": 0.9,
-    "vol_pressure_5d": 3.39,
+    "vol_pressure_5d": 3.4,
     "vol_breakout": 0.67
    },
    "flags": [],
@@ -2968,7 +2968,7 @@
     }
    },
    "scores": {
-    "turnaround": 65.0,
+    "turnaround": 64.9,
     "momentum": 69.5,
     "value": 70.5
    },
@@ -3036,9 +3036,9 @@
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
-      "points": 16.9,
+      "points": 16.8,
       "max": 20,
-      "detail": "mehr Kaeufer als Verkaeufer (3.39x)"
+      "detail": "mehr Kaeufer als Verkaeufer (3.40x)"
      }
     ],
     "momentum": [
@@ -3088,7 +3088,7 @@
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 15.2,
       "max": 18,
-      "detail": "mehr Kaeufer als Verkaeufer (3.39x)"
+      "detail": "mehr Kaeufer als Verkaeufer (3.40x)"
      }
     ],
     "value": [
@@ -3485,7 +3485,7 @@
     },
     "rs6": -44.1,
     "vol_pressure_5d": 0.21,
-    "vol_breakout": 0.73
+    "vol_breakout": 0.74
    },
    "flags": [
     "200-Tage-Linie faellt steil"
@@ -3625,7 +3625,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.73x Ø20T)"
+      "detail": "unterdurchschnittlich (0.74x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -3681,7 +3681,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.73x Ø20T)"
+      "detail": "unterdurchschnittlich (0.74x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
@@ -4335,7 +4335,7 @@
     "above_sma200": true,
     "pct_above_sma50": -5.1434798744320664,
     "pct_above_sma100": -6.880159188105517,
-    "pct_above_sma200": 0.041623887108266366,
+    "pct_above_sma200": 0.041624260139738745,
     "sma50_slope": -2.65,
     "sma200_slope": 1.23,
     "higher_low": true,
@@ -4350,8 +4350,8 @@
      "m12": 27.5
     },
     "rs6": -6.0,
-    "vol_pressure_5d": 0.48,
-    "vol_breakout": 0.88
+    "vol_pressure_5d": 0.5,
+    "vol_breakout": 0.96
    },
    "flags": [],
    "earnings_in": 11,
@@ -4463,7 +4463,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.88x Ø20T)"
+      "detail": "unterdurchschnittlich (0.96x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -4475,7 +4475,7 @@
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 0.0,
       "max": 20,
-      "detail": "mehr Verkaeufer als Kaeufer (0.48x)"
+      "detail": "mehr Verkaeufer als Kaeufer (0.50x)"
      }
     ],
     "momentum": [
@@ -4519,13 +4519,13 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.88x Ø20T)"
+      "detail": "unterdurchschnittlich (0.96x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 0.0,
       "max": 18,
-      "detail": "mehr Verkaeufer als Kaeufer (0.48x)"
+      "detail": "mehr Verkaeufer als Kaeufer (0.50x)"
      }
     ],
     "value": [
@@ -5465,7 +5465,7 @@
     "above_sma200": true,
     "pct_above_sma50": 11.466794491616096,
     "pct_above_sma100": 17.311692870987528,
-    "pct_above_sma200": 13.241902794709514,
+    "pct_above_sma200": 13.241903074751349,
     "sma50_slope": 10.11,
     "sma200_slope": 0.03,
     "higher_low": true,
@@ -5765,7 +5765,7 @@
     "above_sma200": true,
     "pct_above_sma50": 5.281624787055428,
     "pct_above_sma100": 1.2660640464140727,
-    "pct_above_sma200": 8.68090036451683,
+    "pct_above_sma200": 8.680899930855235,
     "sma50_slope": -1.5,
     "sma200_slope": 2.87,
     "higher_low": true,
@@ -5781,7 +5781,7 @@
     },
     "rs6": -16.3,
     "vol_pressure_5d": 0.61,
-    "vol_breakout": 0.59
+    "vol_breakout": 0.6
    },
    "flags": [],
    "earnings_in": null,
@@ -5922,7 +5922,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.59x Ø20T)"
+      "detail": "unterdurchschnittlich (0.60x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -5978,7 +5978,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.59x Ø20T)"
+      "detail": "unterdurchschnittlich (0.60x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
@@ -6374,8 +6374,8 @@
      "m12": -7.7
     },
     "rs6": -9.5,
-    "vol_pressure_5d": 0.27,
-    "vol_breakout": 0.85
+    "vol_pressure_5d": 0.28,
+    "vol_breakout": 0.9
    },
    "flags": [],
    "earnings_in": null,
@@ -6514,7 +6514,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.85x Ø20T)"
+      "detail": "unterdurchschnittlich (0.90x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -6526,7 +6526,7 @@
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 0.0,
       "max": 20,
-      "detail": "mehr Verkaeufer als Kaeufer (0.27x)"
+      "detail": "mehr Verkaeufer als Kaeufer (0.28x)"
      }
     ],
     "momentum": [
@@ -6570,13 +6570,13 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.85x Ø20T)"
+      "detail": "unterdurchschnittlich (0.90x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 0.0,
       "max": 18,
-      "detail": "mehr Verkaeufer als Kaeufer (0.27x)"
+      "detail": "mehr Verkaeufer als Kaeufer (0.28x)"
      }
     ],
     "value": [
@@ -6658,7 +6658,7 @@
     "above_sma200": true,
     "pct_above_sma50": 0.6554892280191682,
     "pct_above_sma100": 5.620742578703197,
-    "pct_above_sma200": 4.95213501048597,
+    "pct_above_sma200": 4.952135286018411,
     "sma50_slope": 6.67,
     "sma200_slope": -0.87,
     "higher_low": true,
@@ -6930,7 +6930,7 @@
     "above_sma200": false,
     "pct_above_sma50": 3.8572696035124476,
     "pct_above_sma100": -0.4609496916370803,
-    "pct_above_sma200": -8.693199789000127,
+    "pct_above_sma200": -8.693199812309171,
     "sma50_slope": -0.21,
     "sma200_slope": -3.47,
     "higher_low": true,
@@ -6946,7 +6946,7 @@
     },
     "rs6": -24.2,
     "vol_pressure_5d": 0.24,
-    "vol_breakout": 0.7
+    "vol_breakout": 0.72
    },
    "flags": [
     "200-Tage-Linie faellt steil"
@@ -7087,7 +7087,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.70x Ø20T)"
+      "detail": "unterdurchschnittlich (0.72x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -7143,7 +7143,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.70x Ø20T)"
+      "detail": "unterdurchschnittlich (0.72x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
@@ -7534,7 +7534,7 @@
     "above_sma200": true,
     "pct_above_sma50": 11.676879579610212,
     "pct_above_sma100": 7.008328282887466,
-    "pct_above_sma200": 1.9716850326829682,
+    "pct_above_sma200": 1.9716847372187152,
     "sma50_slope": 1.57,
     "sma200_slope": -0.47,
     "higher_low": false,
@@ -7549,8 +7549,8 @@
      "m12": -9.8
     },
     "rs6": -29.3,
-    "vol_pressure_5d": 1.64,
-    "vol_breakout": 0.59
+    "vol_pressure_5d": 1.73,
+    "vol_breakout": 0.73
    },
    "flags": [],
    "earnings_in": null,
@@ -7682,7 +7682,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.59x Ø20T)"
+      "detail": "unterdurchschnittlich (0.73x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -7694,7 +7694,7 @@
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 20.0,
       "max": 20,
-      "detail": "mehr Kaeufer als Verkaeufer (1.64x)"
+      "detail": "mehr Kaeufer als Verkaeufer (1.73x)"
      }
     ],
     "momentum": [
@@ -7738,13 +7738,13 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.59x Ø20T)"
+      "detail": "unterdurchschnittlich (0.73x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 18.0,
       "max": 18,
-      "detail": "mehr Kaeufer als Verkaeufer (1.64x)"
+      "detail": "mehr Kaeufer als Verkaeufer (1.73x)"
      }
     ],
     "value": [
@@ -7826,7 +7826,7 @@
     "above_sma200": false,
     "pct_above_sma50": 0.04097062612880009,
     "pct_above_sma100": -2.834598118319187,
-    "pct_above_sma200": -0.9384587578920578,
+    "pct_above_sma200": -0.9384589790838782,
     "sma50_slope": -2.16,
     "sma200_slope": 0.29,
     "higher_low": true,
@@ -7842,7 +7842,7 @@
     },
     "rs6": -20.7,
     "vol_pressure_5d": 0.75,
-    "vol_breakout": 1.19
+    "vol_breakout": 1.2
    },
    "flags": [],
    "earnings_in": null,
@@ -7890,7 +7890,7 @@
    },
    "scores": {
     "turnaround": 56.7,
-    "momentum": 16.0,
+    "momentum": 16.1,
     "value": 68.6
    },
    "why": {
@@ -7944,7 +7944,7 @@
       "label": "Volumen-Ausbruch",
       "points": 1.3,
       "max": 5,
-      "detail": "leicht erhoeht (1.19x Ø20T)"
+      "detail": "leicht erhoeht (1.20x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -7998,9 +7998,9 @@
      },
      {
       "label": "Volumen-Ausbruch",
-      "points": 1.0,
+      "points": 1.1,
       "max": 4,
-      "detail": "leicht erhoeht (1.19x Ø20T)"
+      "detail": "leicht erhoeht (1.20x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
@@ -8661,7 +8661,7 @@
     "above_sma200": true,
     "pct_above_sma50": -4.361071931186822,
     "pct_above_sma100": 2.840487614573628,
-    "pct_above_sma200": 20.223966661654202,
+    "pct_above_sma200": 20.22396681061913,
     "sma50_slope": -1.03,
     "sma200_slope": 5.31,
     "higher_low": true,
@@ -8676,8 +8676,8 @@
      "m12": 68.9
     },
     "rs6": 24.3,
-    "vol_pressure_5d": 0.79,
-    "vol_breakout": 0.75
+    "vol_pressure_5d": 0.81,
+    "vol_breakout": 0.8
    },
    "flags": [],
    "earnings_in": null,
@@ -8760,8 +8760,8 @@
     }
    },
    "scores": {
-    "turnaround": 51.8,
-    "momentum": 65.0,
+    "turnaround": 52.6,
+    "momentum": 65.7,
     "value": 86.4
    },
    "why": {
@@ -8817,7 +8817,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.75x Ø20T)"
+      "detail": "unterdurchschnittlich (0.80x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -8827,9 +8827,9 @@
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
-      "points": 7.9,
+      "points": 8.7,
       "max": 20,
-      "detail": "mehr Verkaeufer als Kaeufer (0.79x)"
+      "detail": "mehr Verkaeufer als Kaeufer (0.81x)"
      }
     ],
     "momentum": [
@@ -8873,13 +8873,13 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.75x Ø20T)"
+      "detail": "unterdurchschnittlich (0.80x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
-      "points": 7.1,
+      "points": 7.8,
       "max": 18,
-      "detail": "mehr Verkaeufer als Kaeufer (0.79x)"
+      "detail": "mehr Verkaeufer als Kaeufer (0.81x)"
      }
     ],
     "value": [
@@ -8976,8 +8976,8 @@
      "m12": -63.4
     },
     "rs6": -52.5,
-    "vol_pressure_5d": 0.6,
-    "vol_breakout": 0.63
+    "vol_pressure_5d": 0.59,
+    "vol_breakout": 0.65
    },
    "flags": [
     "200-Tage-Linie faellt steil"
@@ -9119,7 +9119,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.63x Ø20T)"
+      "detail": "unterdurchschnittlich (0.65x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -9131,7 +9131,7 @@
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 0.0,
       "max": 20,
-      "detail": "mehr Verkaeufer als Kaeufer (0.60x)"
+      "detail": "mehr Verkaeufer als Kaeufer (0.59x)"
      }
     ],
     "momentum": [
@@ -9175,13 +9175,13 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.63x Ø20T)"
+      "detail": "unterdurchschnittlich (0.65x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 0.0,
       "max": 18,
-      "detail": "mehr Verkaeufer als Kaeufer (0.60x)"
+      "detail": "mehr Verkaeufer als Kaeufer (0.59x)"
      }
     ],
     "value": [
@@ -9263,7 +9263,7 @@
     "above_sma200": true,
     "pct_above_sma50": 4.454343293354701,
     "pct_above_sma100": 9.883127533452264,
-    "pct_above_sma200": 22.10146690513717,
+    "pct_above_sma200": 22.101466850017548,
     "sma50_slope": 3.79,
     "sma200_slope": 3.68,
     "higher_low": true,
@@ -9564,7 +9564,7 @@
     "above_sma200": true,
     "pct_above_sma50": 6.782450895669578,
     "pct_above_sma100": 12.253443589363311,
-    "pct_above_sma200": 10.149925221578183,
+    "pct_above_sma200": 10.149926039191847,
     "sma50_slope": 7.05,
     "sma200_slope": 0.89,
     "higher_low": true,
@@ -9826,7 +9826,7 @@
     "above_sma100": true,
     "above_sma200": false,
     "pct_above_sma50": 26.905896427561782,
-    "pct_above_sma100": 19.987310685555947,
+    "pct_above_sma100": 19.987310596789133,
     "pct_above_sma200": -0.8871907925639522,
     "sma50_slope": 4.05,
     "sma200_slope": -1.63,
@@ -9842,7 +9842,7 @@
      "m12": -10.2
     },
     "rs6": -20.8,
-    "vol_pressure_5d": 1.85,
+    "vol_pressure_5d": 1.86,
     "vol_breakout": 0.68
    },
    "flags": [],
@@ -9993,7 +9993,7 @@
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 20.0,
       "max": 20,
-      "detail": "mehr Kaeufer als Verkaeufer (1.85x)"
+      "detail": "mehr Kaeufer als Verkaeufer (1.86x)"
      }
     ],
     "momentum": [
@@ -10043,7 +10043,7 @@
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 18.0,
       "max": 18,
-      "detail": "mehr Kaeufer als Verkaeufer (1.85x)"
+      "detail": "mehr Kaeufer als Verkaeufer (1.86x)"
      }
     ],
     "value": [
@@ -10743,8 +10743,8 @@
      "m12": 13.1
     },
     "rs6": 9.2,
-    "vol_pressure_5d": 4.93,
-    "vol_breakout": 0.48
+    "vol_pressure_5d": 5.11,
+    "vol_breakout": 0.61
    },
    "flags": [],
    "earnings_in": null,
@@ -10827,16 +10827,15 @@
     }
    },
    "scores": {
-    "turnaround": 63.0,
-    "momentum": 71.8,
+    "turnaround": 62.7,
+    "momentum": 71.5,
     "value": 78.3
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
-     "50-Tage-Linie dreht nach oben",
-     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
+     "50-Tage-Linie dreht nach oben"
     ],
     "momentum": [
      "ueber 50- und 200-Tage-Linie",
@@ -10885,7 +10884,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.48x Ø20T)"
+      "detail": "unterdurchschnittlich (0.61x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -10895,9 +10894,9 @@
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
-      "points": 13.0,
+      "points": 12.7,
       "max": 20,
-      "detail": "mehr Kaeufer als Verkaeufer (4.93x)"
+      "detail": "mehr Kaeufer als Verkaeufer (5.11x)"
      }
     ],
     "momentum": [
@@ -10941,13 +10940,13 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.48x Ø20T)"
+      "detail": "unterdurchschnittlich (0.61x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
-      "points": 11.7,
+      "points": 11.4,
       "max": 18,
-      "detail": "mehr Kaeufer als Verkaeufer (4.93x)"
+      "detail": "mehr Kaeufer als Verkaeufer (5.11x)"
      }
     ],
     "value": [
@@ -11029,7 +11028,7 @@
     "above_sma200": false,
     "pct_above_sma50": -5.268444697866126,
     "pct_above_sma100": -4.930868457521953,
-    "pct_above_sma200": -3.9117085359088755,
+    "pct_above_sma200": -3.9117086163587333,
     "sma50_slope": 0.74,
     "sma200_slope": -0.11,
     "higher_low": true,
@@ -11045,7 +11044,7 @@
     },
     "rs6": -23.9,
     "vol_pressure_5d": 0.0,
-    "vol_breakout": 0.68
+    "vol_breakout": 0.74
    },
    "flags": [],
    "earnings_in": null,
@@ -11162,7 +11161,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.68x Ø20T)"
+      "detail": "unterdurchschnittlich (0.74x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -11218,7 +11217,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.68x Ø20T)"
+      "detail": "unterdurchschnittlich (0.74x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
@@ -11306,7 +11305,7 @@
     "above_sma200": true,
     "pct_above_sma50": 10.060716027032758,
     "pct_above_sma100": 9.16283572304808,
-    "pct_above_sma200": 19.688384597310392,
+    "pct_above_sma200": 19.688384545443725,
     "sma50_slope": 0.07,
     "sma200_slope": 3.48,
     "higher_low": true,
@@ -11571,7 +11570,7 @@
     "above_sma200": true,
     "pct_above_sma50": 7.307745656415565,
     "pct_above_sma100": 10.745473562304353,
-    "pct_above_sma200": 15.198467205101341,
+    "pct_above_sma200": 15.198467155722039,
     "sma50_slope": 4.93,
     "sma200_slope": 1.8,
     "higher_low": true,
@@ -12728,8 +12727,8 @@
      "m12": 26.3
     },
     "rs6": -19.5,
-    "vol_pressure_5d": 2.94,
-    "vol_breakout": 0.69
+    "vol_pressure_5d": 3.04,
+    "vol_breakout": 0.8
    },
    "flags": [],
    "earnings_in": null,
@@ -12812,8 +12811,8 @@
     }
    },
    "scores": {
-    "turnaround": 67.3,
-    "momentum": 56.5,
+    "turnaround": 67.0,
+    "momentum": 56.2,
     "value": 44.7
    },
    "why": {
@@ -12868,7 +12867,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.69x Ø20T)"
+      "detail": "unterdurchschnittlich (0.80x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -12878,9 +12877,9 @@
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
-      "points": 18.3,
+      "points": 18.0,
       "max": 20,
-      "detail": "mehr Kaeufer als Verkaeufer (2.94x)"
+      "detail": "mehr Kaeufer als Verkaeufer (3.04x)"
      }
     ],
     "momentum": [
@@ -12924,13 +12923,13 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.69x Ø20T)"
+      "detail": "unterdurchschnittlich (0.80x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
-      "points": 16.5,
+      "points": 16.2,
       "max": 18,
-      "detail": "mehr Kaeufer als Verkaeufer (2.94x)"
+      "detail": "mehr Kaeufer als Verkaeufer (3.04x)"
      }
     ],
     "value": [
@@ -12997,6 +12996,234 @@
     ]
    }
   },
+  "GOOG": {
+   "name": "GOOG",
+   "isin": null,
+   "index": "NASDAQ",
+   "sector": "unbekannt",
+   "metrics": {
+    "last": 341.75,
+    "dd_ath": -14.3,
+    "days_since_ath": 100,
+    "range_pos": 71.3,
+    "above_sma50": false,
+    "above_sma100": false,
+    "above_sma200": true,
+    "pct_above_sma50": -2.4009786787378196,
+    "pct_above_sma100": -3.2937197568724597,
+    "pct_above_sma200": 2.9971144219657075,
+    "sma50_slope": -3.34,
+    "sma200_slope": 2.77,
+    "higher_low": false,
+    "higher_low_pct": -3.6,
+    "rsi14": 46.0,
+    "rsi_min60": 32.3,
+    "rsi_week": 50.9,
+    "perf": {
+     "m1": 7.4,
+     "m3": -10.8,
+     "m6": 8.7,
+     "m12": 71.2
+    },
+    "rs6": -8.5,
+    "vol_pressure_5d": 0.69,
+    "vol_breakout": 0.83
+   },
+   "flags": [],
+   "earnings_in": null,
+   "analyst": {},
+   "revision_note": null,
+   "target": {
+    "target_abs": null,
+    "upside_pct": null,
+    "fresh": null,
+    "n_analysts": null,
+    "empfehlung": null,
+    "rec_breakdown": null
+   },
+   "scores": {
+    "turnaround": 21.9,
+    "momentum": 27.1,
+    "value": 0.0
+   },
+   "why": {
+    "turnaround": [
+     "RSI erholt sich aus dem ueberverkauften Bereich",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
+    ],
+    "momentum": [
+     "200-Tage-Linie steigt",
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
+    ],
+    "value": [
+     "keine Fundamentaldaten"
+    ]
+   },
+   "breakdown": {
+    "turnaround": [
+     {
+      "label": "Hoeheres Tief",
+      "points": 0.0,
+      "max": 25,
+      "detail": "nein, 30T-Tief liegt -3.6% unter dem 90T-Tief davor"
+     },
+     {
+      "label": "Abstand 50T-Linie",
+      "points": 1.0,
+      "max": 10,
+      "detail": "-2.4% darunter 50T-Linie"
+     },
+     {
+      "label": "Ueber 100T-Linie",
+      "points": 0.0,
+      "max": 5,
+      "detail": "nein"
+     },
+     {
+      "label": "50T-Linie im Aufwaertstrend",
+      "points": 0.0,
+      "max": 10,
+      "detail": "-3.3% Veraenderung der Linie in 21 Tagen"
+     },
+     {
+      "label": "RSI-Erholung",
+      "points": 15.0,
+      "max": 15,
+      "detail": "RSI 46, aus Ueberverkauft"
+     },
+     {
+      "label": "Volumen-Ausbruch",
+      "points": 0.0,
+      "max": 5,
+      "detail": "unterdurchschnittlich (0.83x Ø20T)"
+     },
+     {
+      "label": "Position 52W-Spanne",
+      "points": 1.9,
+      "max": 10,
+      "detail": "71% der Jahres-Spanne (0%=Jahrestief, 100%=Jahreshoch)"
+     },
+     {
+      "label": "Kauf-/Verkaufsdruck 5T",
+      "points": 4.0,
+      "max": 20,
+      "detail": "mehr Verkaeufer als Kaeufer (0.69x)"
+     }
+    ],
+    "momentum": [
+     {
+      "label": "Rel. Staerke 6M",
+      "points": 0.0,
+      "max": 28,
+      "detail": "-8% staerker/schwaecher als der Index"
+     },
+     {
+      "label": "Abstand 50T-Linie",
+      "points": 1.0,
+      "max": 10,
+      "detail": "-2.4% darunter 50T-Linie"
+     },
+     {
+      "label": "Abstand 200T-Linie",
+      "points": 10.0,
+      "max": 10,
+      "detail": "+3.0% darueber 200T-Linie"
+     },
+     {
+      "label": "Ueber 100T-Linie",
+      "points": 0.0,
+      "max": 5,
+      "detail": "nein"
+     },
+     {
+      "label": "200T-Linie im Aufwaertstrend",
+      "points": 6.9,
+      "max": 10,
+      "detail": "+2.8% Veraenderung der Linie in 21 Tagen"
+     },
+     {
+      "label": "Position 52W-Spanne",
+      "points": 5.6,
+      "max": 15,
+      "detail": "71% der Jahres-Spanne (0%=Jahrestief, 100%=Jahreshoch)"
+     },
+     {
+      "label": "Volumen-Ausbruch",
+      "points": 0.0,
+      "max": 4,
+      "detail": "unterdurchschnittlich (0.83x Ø20T)"
+     },
+     {
+      "label": "Kauf-/Verkaufsdruck 5T",
+      "points": 3.6,
+      "max": 18,
+      "detail": "mehr Verkaeufer als Kaeufer (0.69x)"
+     }
+    ],
+    "value": [
+     {
+      "label": "KGV verbessert",
+      "points": 0.0,
+      "max": 10,
+      "detail": "k.A."
+     },
+     {
+      "label": "KGV Niveau",
+      "points": 0.0,
+      "max": 10,
+      "detail": "k.A."
+     },
+     {
+      "label": "Free Cashflow",
+      "points": 0.0,
+      "max": 15,
+      "detail": "k.A."
+     },
+     {
+      "label": "Marge",
+      "points": 0.0,
+      "max": 10,
+      "detail": "k.A."
+     },
+     {
+      "label": "Umsatzwachstum",
+      "points": 0.0,
+      "max": 15,
+      "detail": "k.A."
+     },
+     {
+      "label": "Eigenkapitalrendite",
+      "points": 0.0,
+      "max": 10,
+      "detail": "k.A."
+     },
+     {
+      "label": "Verschuldung",
+      "points": 0.0,
+      "max": 10,
+      "detail": "k.A."
+     },
+     {
+      "label": "Ueber 200T-Linie",
+      "points": 0.0,
+      "max": 5,
+      "detail": "k.A."
+     },
+     {
+      "label": "Analysten-Revisionen",
+      "points": 0.0,
+      "max": 10,
+      "detail": "k.A."
+     },
+     {
+      "label": "Kursziel-Abstand",
+      "points": 0.0,
+      "max": 5,
+      "detail": "k.A."
+     }
+    ]
+   }
+  },
   "GOOGL": {
    "name": "Alphabet Inc.",
    "isin": "CA02080M1005",
@@ -13012,7 +13239,7 @@
     "above_sma200": true,
     "pct_above_sma50": -1.9754975449711942,
     "pct_above_sma100": -3.0278775325179197,
-    "pct_above_sma200": 3.621905172164097,
+    "pct_above_sma200": 3.6219052196791113,
     "sma50_slope": -3.53,
     "sma200_slope": 2.83,
     "higher_low": false,
@@ -13027,8 +13254,8 @@
      "m12": 73.5
     },
     "rs6": -7.6,
-    "vol_pressure_5d": 1.56,
-    "vol_breakout": 0.68
+    "vol_pressure_5d": 1.62,
+    "vol_breakout": 0.76
    },
    "flags": [],
    "earnings_in": null,
@@ -13166,7 +13393,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.68x Ø20T)"
+      "detail": "unterdurchschnittlich (0.76x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -13178,7 +13405,7 @@
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 20.0,
       "max": 20,
-      "detail": "mehr Kaeufer als Verkaeufer (1.56x)"
+      "detail": "mehr Kaeufer als Verkaeufer (1.62x)"
      }
     ],
     "momentum": [
@@ -13222,13 +13449,13 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.68x Ø20T)"
+      "detail": "unterdurchschnittlich (0.76x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 18.0,
       "max": 18,
-      "detail": "mehr Kaeufer als Verkaeufer (1.56x)"
+      "detail": "mehr Kaeufer als Verkaeufer (1.62x)"
      }
     ],
     "value": [
@@ -13309,8 +13536,8 @@
     "above_sma100": false,
     "above_sma200": false,
     "pct_above_sma50": -7.35765630325611,
-    "pct_above_sma100": -7.062033378749,
-    "pct_above_sma200": -5.089274628351403,
+    "pct_above_sma100": -7.062033683976587,
+    "pct_above_sma200": -5.089274819345202,
     "sma50_slope": 0.71,
     "sma200_slope": 1.51,
     "higher_low": true,
@@ -13326,7 +13553,7 @@
     },
     "rs6": -31.7,
     "vol_pressure_5d": 0.0,
-    "vol_breakout": 1.08
+    "vol_breakout": 1.1
    },
    "flags": [],
    "earnings_in": null,
@@ -13409,8 +13636,8 @@
     }
    },
    "scores": {
-    "turnaround": 43.6,
-    "momentum": 4.2,
+    "turnaround": 43.7,
+    "momentum": 4.4,
     "value": 56.6
    },
    "why": {
@@ -13461,9 +13688,9 @@
      },
      {
       "label": "Volumen-Ausbruch",
-      "points": 0.6,
+      "points": 0.7,
       "max": 5,
-      "detail": "leicht erhoeht (1.08x Ø20T)"
+      "detail": "leicht erhoeht (1.10x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -13517,9 +13744,9 @@
      },
      {
       "label": "Volumen-Ausbruch",
-      "points": 0.4,
+      "points": 0.6,
       "max": 4,
-      "detail": "leicht erhoeht (1.08x Ø20T)"
+      "detail": "leicht erhoeht (1.10x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
@@ -14199,7 +14426,7 @@
     "above_sma200": false,
     "pct_above_sma50": 22.784056262423324,
     "pct_above_sma100": 9.86778867171505,
-    "pct_above_sma200": -16.512367641809423,
+    "pct_above_sma200": -16.512367757729407,
     "sma50_slope": 0.21,
     "sma200_slope": -6.84,
     "higher_low": true,
@@ -14214,8 +14441,8 @@
      "m12": -46.9
     },
     "rs6": -20.0,
-    "vol_pressure_5d": 1.61,
-    "vol_breakout": 0.82
+    "vol_pressure_5d": 1.67,
+    "vol_breakout": 0.92
    },
    "flags": [
     "200-Tage-Linie faellt steil"
@@ -14357,7 +14584,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.82x Ø20T)"
+      "detail": "unterdurchschnittlich (0.92x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -14369,7 +14596,7 @@
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 20.0,
       "max": 20,
-      "detail": "mehr Kaeufer als Verkaeufer (1.61x)"
+      "detail": "mehr Kaeufer als Verkaeufer (1.67x)"
      }
     ],
     "momentum": [
@@ -14413,13 +14640,13 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.82x Ø20T)"
+      "detail": "unterdurchschnittlich (0.92x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 18.0,
       "max": 18,
-      "detail": "mehr Kaeufer als Verkaeufer (1.61x)"
+      "detail": "mehr Kaeufer als Verkaeufer (1.67x)"
      }
     ],
     "value": [
@@ -14516,8 +14743,8 @@
      "m12": -21.2
     },
     "rs6": -42.0,
-    "vol_pressure_5d": 1.05,
-    "vol_breakout": 0.62
+    "vol_pressure_5d": 1.06,
+    "vol_breakout": 0.65
    },
    "flags": [
     "200-Tage-Linie faellt steil"
@@ -14581,8 +14808,8 @@
     }
    },
    "scores": {
-    "turnaround": 42.0,
-    "momentum": 15.4,
+    "turnaround": 42.3,
+    "momentum": 15.7,
     "value": 66.2
    },
    "why": {
@@ -14636,7 +14863,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.62x Ø20T)"
+      "detail": "unterdurchschnittlich (0.65x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -14646,9 +14873,9 @@
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
-      "points": 16.1,
+      "points": 16.4,
       "max": 20,
-      "detail": "ausgeglichen (1.05x)"
+      "detail": "ausgeglichen (1.06x)"
      }
     ],
     "momentum": [
@@ -14692,13 +14919,13 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.62x Ø20T)"
+      "detail": "unterdurchschnittlich (0.65x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
-      "points": 14.5,
+      "points": 14.8,
       "max": 18,
-      "detail": "ausgeglichen (1.05x)"
+      "detail": "ausgeglichen (1.06x)"
      }
     ],
     "value": [
@@ -14780,7 +15007,7 @@
     "above_sma200": true,
     "pct_above_sma50": 3.0961649888222587,
     "pct_above_sma100": 8.150247753072248,
-    "pct_above_sma200": 12.303813632437578,
+    "pct_above_sma200": 12.303813519816975,
     "sma50_slope": 1.41,
     "sma200_slope": 1.52,
     "higher_low": true,
@@ -15082,7 +15309,7 @@
     "above_sma200": true,
     "pct_above_sma50": 2.3085413442594405,
     "pct_above_sma100": 7.480978003075256,
-    "pct_above_sma200": 8.96081128811832,
+    "pct_above_sma200": 8.960811775010601,
     "sma50_slope": 4.28,
     "sma200_slope": 0.75,
     "higher_low": true,
@@ -15097,8 +15324,8 @@
      "m12": -0.5
     },
     "rs6": -8.6,
-    "vol_pressure_5d": 1.26,
-    "vol_breakout": 0.54
+    "vol_pressure_5d": 1.27,
+    "vol_breakout": 0.56
    },
    "flags": [],
    "earnings_in": null,
@@ -15237,7 +15464,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.54x Ø20T)"
+      "detail": "unterdurchschnittlich (0.56x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -15249,7 +15476,7 @@
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 20.0,
       "max": 20,
-      "detail": "mehr Kaeufer als Verkaeufer (1.26x)"
+      "detail": "mehr Kaeufer als Verkaeufer (1.27x)"
      }
     ],
     "momentum": [
@@ -15293,13 +15520,13 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.54x Ø20T)"
+      "detail": "unterdurchschnittlich (0.56x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 18.0,
       "max": 18,
-      "detail": "mehr Kaeufer als Verkaeufer (1.26x)"
+      "detail": "mehr Kaeufer als Verkaeufer (1.27x)"
      }
     ],
     "value": [
@@ -15380,8 +15607,8 @@
     "above_sma100": false,
     "above_sma200": true,
     "pct_above_sma50": -16.308853938703336,
-    "pct_above_sma100": -8.463353087351344,
-    "pct_above_sma200": 9.424773407186526,
+    "pct_above_sma100": -8.46335343479615,
+    "pct_above_sma200": 9.424772861026586,
     "sma50_slope": -0.31,
     "sma200_slope": 5.04,
     "higher_low": false,
@@ -15680,7 +15907,7 @@
     "above_sma200": true,
     "pct_above_sma50": -3.9585065486194115,
     "pct_above_sma100": -3.4264422616797185,
-    "pct_above_sma200": 2.562783466976959,
+    "pct_above_sma200": 2.562783368216315,
     "sma50_slope": -1.36,
     "sma200_slope": 0.99,
     "higher_low": false,
@@ -15695,8 +15922,8 @@
      "m12": 2.4
     },
     "rs6": -18.3,
-    "vol_pressure_5d": 5.15,
-    "vol_breakout": 0.86
+    "vol_pressure_5d": 5.22,
+    "vol_breakout": 0.92
    },
    "flags": [],
    "earnings_in": null,
@@ -15772,8 +15999,8 @@
     }
    },
    "scores": {
-    "turnaround": 33.6,
-    "momentum": 24.6,
+    "turnaround": 33.4,
+    "momentum": 24.5,
     "value": 74.9
    },
    "why": {
@@ -15826,7 +16053,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.86x Ø20T)"
+      "detail": "unterdurchschnittlich (0.92x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -15836,9 +16063,9 @@
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
-      "points": 12.6,
+      "points": 12.4,
       "max": 20,
-      "detail": "mehr Kaeufer als Verkaeufer (5.15x)"
+      "detail": "mehr Kaeufer als Verkaeufer (5.22x)"
      }
     ],
     "momentum": [
@@ -15882,13 +16109,13 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.86x Ø20T)"
+      "detail": "unterdurchschnittlich (0.92x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
-      "points": 11.3,
+      "points": 11.2,
       "max": 18,
-      "detail": "mehr Kaeufer als Verkaeufer (5.15x)"
+      "detail": "mehr Kaeufer als Verkaeufer (5.22x)"
      }
     ],
     "value": [
@@ -16285,8 +16512,8 @@
      "m12": -38.9
     },
     "rs6": -52.5,
-    "vol_pressure_5d": 1.32,
-    "vol_breakout": 1.2
+    "vol_pressure_5d": 1.34,
+    "vol_breakout": 1.25
    },
    "flags": [
     "200-Tage-Linie faellt steil"
@@ -16343,8 +16570,8 @@
     }
    },
    "scores": {
-    "turnaround": 75.1,
-    "momentum": 29.0,
+    "turnaround": 75.4,
+    "momentum": 29.2,
     "value": 61.7
    },
    "why": {
@@ -16395,9 +16622,9 @@
      },
      {
       "label": "Volumen-Ausbruch",
-      "points": 1.3,
+      "points": 1.6,
       "max": 5,
-      "detail": "leicht erhoeht (1.20x Ø20T)"
+      "detail": "leicht erhoeht (1.25x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -16409,7 +16636,7 @@
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 20.0,
       "max": 20,
-      "detail": "mehr Kaeufer als Verkaeufer (1.32x)"
+      "detail": "mehr Kaeufer als Verkaeufer (1.34x)"
      }
     ],
     "momentum": [
@@ -16451,15 +16678,15 @@
      },
      {
       "label": "Volumen-Ausbruch",
-      "points": 1.1,
+      "points": 1.3,
       "max": 4,
-      "detail": "leicht erhoeht (1.20x Ø20T)"
+      "detail": "leicht erhoeht (1.25x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 18.0,
       "max": 18,
-      "detail": "mehr Kaeufer als Verkaeufer (1.32x)"
+      "detail": "mehr Kaeufer als Verkaeufer (1.34x)"
      }
     ],
     "value": [
@@ -16540,8 +16767,8 @@
     "above_sma100": false,
     "above_sma200": true,
     "pct_above_sma50": -3.7773281789923896,
-    "pct_above_sma100": -2.629131951376684,
-    "pct_above_sma200": 4.719703795213359,
+    "pct_above_sma100": -2.629131383072758,
+    "pct_above_sma200": 4.719703842165068,
     "sma50_slope": -1.4,
     "sma200_slope": 2.93,
     "higher_low": false,
@@ -16840,7 +17067,7 @@
     "above_sma200": false,
     "pct_above_sma50": -9.829612950067279,
     "pct_above_sma100": -11.202634087180762,
-    "pct_above_sma200": -0.009870131263112203,
+    "pct_above_sma200": -0.009870231524522488,
     "sma50_slope": -7.06,
     "sma200_slope": 1.95,
     "higher_low": false,
@@ -16856,7 +17083,7 @@
     },
     "rs6": -18.2,
     "vol_pressure_5d": 0.46,
-    "vol_breakout": 0.4
+    "vol_breakout": 0.42
    },
    "flags": [],
    "earnings_in": null,
@@ -16995,7 +17222,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.40x Ø20T)"
+      "detail": "unterdurchschnittlich (0.42x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -17051,7 +17278,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.40x Ø20T)"
+      "detail": "unterdurchschnittlich (0.42x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
@@ -17139,7 +17366,7 @@
     "above_sma200": true,
     "pct_above_sma50": 5.300241764535563,
     "pct_above_sma100": 6.789624234203284,
-    "pct_above_sma200": 10.978062199430916,
+    "pct_above_sma200": 10.97806230877687,
     "sma50_slope": 1.08,
     "sma200_slope": 0.62,
     "higher_low": true,
@@ -17154,8 +17381,8 @@
      "m12": 5.6
     },
     "rs6": -5.7,
-    "vol_pressure_5d": 1.47,
-    "vol_breakout": 0.56
+    "vol_pressure_5d": 1.54,
+    "vol_breakout": 0.67
    },
    "flags": [],
    "earnings_in": null,
@@ -17286,7 +17513,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.56x Ø20T)"
+      "detail": "unterdurchschnittlich (0.67x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -17298,7 +17525,7 @@
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 20.0,
       "max": 20,
-      "detail": "mehr Kaeufer als Verkaeufer (1.47x)"
+      "detail": "mehr Kaeufer als Verkaeufer (1.54x)"
      }
     ],
     "momentum": [
@@ -17342,13 +17569,13 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.56x Ø20T)"
+      "detail": "unterdurchschnittlich (0.67x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 18.0,
       "max": 18,
-      "detail": "mehr Kaeufer als Verkaeufer (1.47x)"
+      "detail": "mehr Kaeufer als Verkaeufer (1.54x)"
      }
     ],
     "value": [
@@ -17717,7 +17944,7 @@
     "above_sma200": false,
     "pct_above_sma50": -7.2634584452984985,
     "pct_above_sma100": -9.447260079739351,
-    "pct_above_sma200": -11.785148293733606,
+    "pct_above_sma200": -11.785148336920281,
     "sma50_slope": -2.12,
     "sma200_slope": -2.16,
     "higher_low": false,
@@ -17732,8 +17959,8 @@
      "m12": -26.2
     },
     "rs6": -33.2,
-    "vol_pressure_5d": 0.51,
-    "vol_breakout": 0.74
+    "vol_pressure_5d": 0.52,
+    "vol_breakout": 0.76
    },
    "flags": [
     "200-Tage-Linie faellt steil"
@@ -17892,7 +18119,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.74x Ø20T)"
+      "detail": "unterdurchschnittlich (0.76x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -17904,7 +18131,7 @@
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 0.0,
       "max": 20,
-      "detail": "mehr Verkaeufer als Kaeufer (0.51x)"
+      "detail": "mehr Verkaeufer als Kaeufer (0.52x)"
      }
     ],
     "momentum": [
@@ -17948,13 +18175,13 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.74x Ø20T)"
+      "detail": "unterdurchschnittlich (0.76x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 0.0,
       "max": 18,
-      "detail": "mehr Verkaeufer als Kaeufer (0.51x)"
+      "detail": "mehr Verkaeufer als Kaeufer (0.52x)"
      }
     ],
     "value": [
@@ -18325,8 +18552,8 @@
     "above_sma100": true,
     "above_sma200": true,
     "pct_above_sma50": 1.3756889739685585,
-    "pct_above_sma100": 15.720468807312749,
-    "pct_above_sma200": 63.469512637537484,
+    "pct_above_sma100": 15.720468893515038,
+    "pct_above_sma200": 63.46951233650731,
     "sma50_slope": -2.21,
     "sma200_slope": 9.25,
     "higher_low": true,
@@ -18629,8 +18856,8 @@
     "above_sma100": true,
     "above_sma200": true,
     "pct_above_sma50": 15.306432748703225,
-    "pct_above_sma100": 16.63233141550333,
-    "pct_above_sma200": 12.529863600902047,
+    "pct_above_sma100": 16.632331157784375,
+    "pct_above_sma200": 12.529863800825058,
     "sma50_slope": 5.21,
     "sma200_slope": -1.03,
     "higher_low": true,
@@ -18645,8 +18872,8 @@
      "m12": -3.5
     },
     "rs6": 5.0,
-    "vol_pressure_5d": 1.29,
-    "vol_breakout": 0.54
+    "vol_pressure_5d": 1.33,
+    "vol_breakout": 0.59
    },
    "flags": [],
    "earnings_in": null,
@@ -18787,7 +19014,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.54x Ø20T)"
+      "detail": "unterdurchschnittlich (0.59x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -18799,7 +19026,7 @@
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 20.0,
       "max": 20,
-      "detail": "mehr Kaeufer als Verkaeufer (1.29x)"
+      "detail": "mehr Kaeufer als Verkaeufer (1.33x)"
      }
     ],
     "momentum": [
@@ -18843,13 +19070,13 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.54x Ø20T)"
+      "detail": "unterdurchschnittlich (0.59x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 18.0,
       "max": 18,
-      "detail": "mehr Kaeufer als Verkaeufer (1.29x)"
+      "detail": "mehr Kaeufer als Verkaeufer (1.33x)"
      }
     ],
     "value": [
@@ -19226,7 +19453,7 @@
     "above_sma200": true,
     "pct_above_sma50": 0.23210388323324782,
     "pct_above_sma100": 19.602738155629694,
-    "pct_above_sma200": 69.32899198499283,
+    "pct_above_sma200": 69.3289918718583,
     "sma50_slope": 0.97,
     "sma200_slope": 13.76,
     "higher_low": true,
@@ -19769,7 +19996,7 @@
     "above_sma200": true,
     "pct_above_sma50": 3.4411336715840735,
     "pct_above_sma100": 3.9617107090256454,
-    "pct_above_sma200": 10.044400056255709,
+    "pct_above_sma200": 10.044399927171032,
     "sma50_slope": -0.73,
     "sma200_slope": 1.25,
     "higher_low": false,
@@ -20056,7 +20283,7 @@
     "above_sma200": false,
     "pct_above_sma50": -15.271369525777057,
     "pct_above_sma100": -15.38979550255669,
-    "pct_above_sma200": -6.5234914529128325,
+    "pct_above_sma200": -6.523491423357708,
     "sma50_slope": -9.74,
     "sma200_slope": 0.94,
     "higher_low": true,
@@ -20071,8 +20298,8 @@
      "m12": 0.3
     },
     "rs6": -19.2,
-    "vol_pressure_5d": 0.13,
-    "vol_breakout": 0.41
+    "vol_pressure_5d": 0.16,
+    "vol_breakout": 0.48
    },
    "flags": [],
    "earnings_in": null,
@@ -20212,7 +20439,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.41x Ø20T)"
+      "detail": "unterdurchschnittlich (0.48x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -20224,7 +20451,7 @@
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 0.0,
       "max": 20,
-      "detail": "mehr Verkaeufer als Kaeufer (0.13x)"
+      "detail": "mehr Verkaeufer als Kaeufer (0.16x)"
      }
     ],
     "momentum": [
@@ -20268,13 +20495,13 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.41x Ø20T)"
+      "detail": "unterdurchschnittlich (0.48x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 0.0,
       "max": 18,
-      "detail": "mehr Verkaeufer als Kaeufer (0.13x)"
+      "detail": "mehr Verkaeufer als Kaeufer (0.16x)"
      }
     ],
     "value": [
@@ -20356,7 +20583,7 @@
     "above_sma200": true,
     "pct_above_sma50": -6.702490329046007,
     "pct_above_sma100": -4.864509730419087,
-    "pct_above_sma200": 6.75179849346772,
+    "pct_above_sma200": 6.751798472412807,
     "sma50_slope": -1.32,
     "sma200_slope": 4.08,
     "higher_low": true,
@@ -20964,8 +21191,8 @@
      "m12": -14.3
     },
     "rs6": -21.9,
-    "vol_pressure_5d": 1.21,
-    "vol_breakout": 0.78
+    "vol_pressure_5d": 1.29,
+    "vol_breakout": 0.92
    },
    "flags": [],
    "earnings_in": null,
@@ -21089,7 +21316,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.78x Ø20T)"
+      "detail": "unterdurchschnittlich (0.92x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -21101,7 +21328,7 @@
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 20.0,
       "max": 20,
-      "detail": "mehr Kaeufer als Verkaeufer (1.21x)"
+      "detail": "mehr Kaeufer als Verkaeufer (1.29x)"
      }
     ],
     "momentum": [
@@ -21145,13 +21372,13 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.78x Ø20T)"
+      "detail": "unterdurchschnittlich (0.92x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 18.0,
       "max": 18,
-      "detail": "mehr Kaeufer als Verkaeufer (1.21x)"
+      "detail": "mehr Kaeufer als Verkaeufer (1.29x)"
      }
     ],
     "value": [
@@ -21249,7 +21476,7 @@
     },
     "rs6": 123.5,
     "vol_pressure_5d": 0.25,
-    "vol_breakout": 0.88
+    "vol_breakout": 0.9
    },
    "flags": [],
    "earnings_in": 10,
@@ -21392,7 +21619,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.88x Ø20T)"
+      "detail": "unterdurchschnittlich (0.90x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -21448,7 +21675,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.88x Ø20T)"
+      "detail": "unterdurchschnittlich (0.90x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
@@ -21536,7 +21763,7 @@
     "above_sma200": true,
     "pct_above_sma50": 12.836316544036542,
     "pct_above_sma100": 23.117665568453827,
-    "pct_above_sma200": 22.90920309901603,
+    "pct_above_sma200": 22.909203237905086,
     "sma50_slope": 9.81,
     "sma200_slope": 0.1,
     "higher_low": true,
@@ -21551,8 +21778,8 @@
      "m12": -6.4
     },
     "rs6": 22.4,
-    "vol_pressure_5d": 3.49,
-    "vol_breakout": 0.7
+    "vol_pressure_5d": 3.51,
+    "vol_breakout": 0.72
    },
    "flags": [],
    "earnings_in": null,
@@ -21614,7 +21841,7 @@
     }
    },
    "scores": {
-    "turnaround": 70.0,
+    "turnaround": 69.9,
     "momentum": 75.6,
     "value": 52.7
    },
@@ -21671,7 +21898,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.70x Ø20T)"
+      "detail": "unterdurchschnittlich (0.72x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -21681,9 +21908,9 @@
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
-      "points": 16.6,
+      "points": 16.5,
       "max": 20,
-      "detail": "mehr Kaeufer als Verkaeufer (3.49x)"
+      "detail": "mehr Kaeufer als Verkaeufer (3.51x)"
      }
     ],
     "momentum": [
@@ -21727,13 +21954,13 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.70x Ø20T)"
+      "detail": "unterdurchschnittlich (0.72x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 14.9,
       "max": 18,
-      "detail": "mehr Kaeufer als Verkaeufer (3.49x)"
+      "detail": "mehr Kaeufer als Verkaeufer (3.51x)"
      }
     ],
     "value": [
@@ -21814,8 +22041,8 @@
     "above_sma100": true,
     "above_sma200": true,
     "pct_above_sma50": 3.8656302697090306,
-    "pct_above_sma100": 7.728020389131229,
-    "pct_above_sma200": 11.442135783327823,
+    "pct_above_sma100": 7.728020253984136,
+    "pct_above_sma200": 11.442135457917967,
     "sma50_slope": 6.52,
     "sma200_slope": 3.25,
     "higher_low": true,
@@ -21830,8 +22057,8 @@
      "m12": 36.7
     },
     "rs6": -14.6,
-    "vol_pressure_5d": 1.35,
-    "vol_breakout": 0.8
+    "vol_pressure_5d": 1.37,
+    "vol_breakout": 0.84
    },
    "flags": [],
    "earnings_in": null,
@@ -21964,7 +22191,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.80x Ø20T)"
+      "detail": "unterdurchschnittlich (0.84x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -21976,7 +22203,7 @@
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 20.0,
       "max": 20,
-      "detail": "mehr Kaeufer als Verkaeufer (1.35x)"
+      "detail": "mehr Kaeufer als Verkaeufer (1.37x)"
      }
     ],
     "momentum": [
@@ -22020,13 +22247,13 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.80x Ø20T)"
+      "detail": "unterdurchschnittlich (0.84x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 18.0,
       "max": 18,
-      "detail": "mehr Kaeufer als Verkaeufer (1.35x)"
+      "detail": "mehr Kaeufer als Verkaeufer (1.37x)"
      }
     ],
     "value": [
@@ -22124,7 +22351,7 @@
     },
     "rs6": -33.0,
     "vol_pressure_5d": 1.5,
-    "vol_breakout": 1.17
+    "vol_breakout": 1.18
    },
    "flags": [
     "200-Tage-Linie faellt steil"
@@ -22173,8 +22400,8 @@
     }
    },
    "scores": {
-    "turnaround": 79.7,
-    "momentum": 28.9,
+    "turnaround": 79.8,
+    "momentum": 29.0,
     "value": 86.0
    },
    "why": {
@@ -22228,9 +22455,9 @@
      },
      {
       "label": "Volumen-Ausbruch",
-      "points": 1.1,
+      "points": 1.2,
       "max": 5,
-      "detail": "leicht erhoeht (1.17x Ø20T)"
+      "detail": "leicht erhoeht (1.18x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -22284,9 +22511,9 @@
      },
      {
       "label": "Volumen-Ausbruch",
-      "points": 0.9,
+      "points": 1.0,
       "max": 4,
-      "detail": "leicht erhoeht (1.17x Ø20T)"
+      "detail": "leicht erhoeht (1.18x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
@@ -22374,7 +22601,7 @@
     "above_sma200": false,
     "pct_above_sma50": 2.4472207247713706,
     "pct_above_sma100": -1.1270479031306624,
-    "pct_above_sma200": -2.452569492055512,
+    "pct_above_sma200": -2.4525695426531713,
     "sma50_slope": -1.25,
     "sma200_slope": -0.31,
     "higher_low": false,
@@ -22389,8 +22616,8 @@
      "m12": -1.0
     },
     "rs6": -28.5,
-    "vol_pressure_5d": 1.57,
-    "vol_breakout": 0.85
+    "vol_pressure_5d": 1.62,
+    "vol_breakout": 0.95
    },
    "flags": [],
    "earnings_in": null,
@@ -22491,7 +22718,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.85x Ø20T)"
+      "detail": "unterdurchschnittlich (0.95x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -22503,7 +22730,7 @@
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 20.0,
       "max": 20,
-      "detail": "mehr Kaeufer als Verkaeufer (1.57x)"
+      "detail": "mehr Kaeufer als Verkaeufer (1.62x)"
      }
     ],
     "momentum": [
@@ -22547,13 +22774,13 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.85x Ø20T)"
+      "detail": "unterdurchschnittlich (0.95x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 18.0,
       "max": 18,
-      "detail": "mehr Kaeufer als Verkaeufer (1.57x)"
+      "detail": "mehr Kaeufer als Verkaeufer (1.62x)"
      }
     ],
     "value": [
@@ -22650,8 +22877,8 @@
      "m12": 15.3
     },
     "rs6": 15.9,
-    "vol_pressure_5d": 0.93,
-    "vol_breakout": 0.82
+    "vol_pressure_5d": 0.97,
+    "vol_breakout": 0.88
    },
    "flags": [],
    "earnings_in": null,
@@ -22734,15 +22961,16 @@
     }
    },
    "scores": {
-    "turnaround": 66.7,
-    "momentum": 62.3,
+    "turnaround": 68.0,
+    "momentum": 63.4,
     "value": 84.1
    },
    "why": {
     "turnaround": [
      "hoeheres Tief",
      "ueber 50-Tage-Linie",
-     "50-Tage-Linie dreht nach oben"
+     "50-Tage-Linie dreht nach oben",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
     ],
     "momentum": [
      "relative Staerke +16% vs. Index",
@@ -22792,7 +23020,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.82x Ø20T)"
+      "detail": "unterdurchschnittlich (0.88x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -22802,9 +23030,9 @@
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
-      "points": 12.6,
+      "points": 13.9,
       "max": 20,
-      "detail": "ausgeglichen (0.93x)"
+      "detail": "ausgeglichen (0.97x)"
      }
     ],
     "momentum": [
@@ -22848,13 +23076,13 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.82x Ø20T)"
+      "detail": "unterdurchschnittlich (0.88x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
-      "points": 11.4,
+      "points": 12.5,
       "max": 18,
-      "detail": "ausgeglichen (0.93x)"
+      "detail": "ausgeglichen (0.97x)"
      }
     ],
     "value": [
@@ -22936,7 +23164,7 @@
     "above_sma200": true,
     "pct_above_sma50": 18.31214242025272,
     "pct_above_sma100": 25.47809158112344,
-    "pct_above_sma200": 20.10447572495211,
+    "pct_above_sma200": 20.10447568025078,
     "sma50_slope": 13.82,
     "sma200_slope": -1.94,
     "higher_low": true,
@@ -23237,7 +23465,7 @@
     "above_sma200": false,
     "pct_above_sma50": -9.958202718645326,
     "pct_above_sma100": -10.395671134570028,
-    "pct_above_sma200": -3.898059449711644,
+    "pct_above_sma200": -3.898059362045192,
     "sma50_slope": -11.96,
     "sma200_slope": -0.4,
     "higher_low": true,
@@ -23252,8 +23480,8 @@
      "m12": 5.6
     },
     "rs6": -3.5,
-    "vol_pressure_5d": 0.56,
-    "vol_breakout": 0.69
+    "vol_pressure_5d": 0.58,
+    "vol_breakout": 0.75
    },
    "flags": [],
    "earnings_in": null,
@@ -23391,7 +23619,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.69x Ø20T)"
+      "detail": "unterdurchschnittlich (0.75x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -23403,7 +23631,7 @@
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 0.0,
       "max": 20,
-      "detail": "mehr Verkaeufer als Kaeufer (0.56x)"
+      "detail": "mehr Verkaeufer als Kaeufer (0.58x)"
      }
     ],
     "momentum": [
@@ -23447,13 +23675,13 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.69x Ø20T)"
+      "detail": "unterdurchschnittlich (0.75x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 0.0,
       "max": 18,
-      "detail": "mehr Verkaeufer als Kaeufer (0.56x)"
+      "detail": "mehr Verkaeufer als Kaeufer (0.58x)"
      }
     ],
     "value": [
@@ -23535,7 +23763,7 @@
     "above_sma200": true,
     "pct_above_sma50": 19.91331301768906,
     "pct_above_sma100": 19.766018254041164,
-    "pct_above_sma200": 15.438531579908933,
+    "pct_above_sma200": 15.438531433628565,
     "sma50_slope": 8.77,
     "sma200_slope": 2.63,
     "higher_low": true,
@@ -24136,7 +24364,7 @@
     "above_sma200": true,
     "pct_above_sma50": 1.9486384155900316,
     "pct_above_sma100": 4.346794005205434,
-    "pct_above_sma200": 14.62413874034385,
+    "pct_above_sma200": 14.624138320998647,
     "sma50_slope": 4.02,
     "sma200_slope": 4.61,
     "higher_low": true,
@@ -24436,7 +24664,7 @@
     "above_sma200": true,
     "pct_above_sma50": 3.029865223535766,
     "pct_above_sma100": 5.444880620389525,
-    "pct_above_sma200": 12.216605028096627,
+    "pct_above_sma200": 12.216605117818013,
     "sma50_slope": 1.96,
     "sma200_slope": 2.6,
     "higher_low": true,
@@ -24451,8 +24679,8 @@
      "m12": 22.7
     },
     "rs6": -6.1,
-    "vol_pressure_5d": 0.57,
-    "vol_breakout": 0.69
+    "vol_pressure_5d": 0.58,
+    "vol_breakout": 0.72
    },
    "flags": [],
    "earnings_in": null,
@@ -24593,7 +24821,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.69x Ø20T)"
+      "detail": "unterdurchschnittlich (0.72x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -24605,7 +24833,7 @@
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 0.0,
       "max": 20,
-      "detail": "mehr Verkaeufer als Kaeufer (0.57x)"
+      "detail": "mehr Verkaeufer als Kaeufer (0.58x)"
      }
     ],
     "momentum": [
@@ -24649,13 +24877,13 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.69x Ø20T)"
+      "detail": "unterdurchschnittlich (0.72x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 0.0,
       "max": 18,
-      "detail": "mehr Verkaeufer als Kaeufer (0.57x)"
+      "detail": "mehr Verkaeufer als Kaeufer (0.58x)"
      }
     ],
     "value": [
@@ -24753,7 +24981,7 @@
     },
     "rs6": -26.7,
     "vol_pressure_5d": 0.0,
-    "vol_breakout": 0.63
+    "vol_breakout": 0.79
    },
    "flags": [],
    "earnings_in": 4,
@@ -24870,7 +25098,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.63x Ø20T)"
+      "detail": "unterdurchschnittlich (0.79x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -24926,7 +25154,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.63x Ø20T)"
+      "detail": "unterdurchschnittlich (0.79x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
@@ -25315,7 +25543,7 @@
     "above_sma200": false,
     "pct_above_sma50": 0.7197372261416035,
     "pct_above_sma100": -1.7540361933708337,
-    "pct_above_sma200": -6.00479335623757,
+    "pct_above_sma200": -6.00479354036797,
     "sma50_slope": -1.53,
     "sma200_slope": -2.02,
     "higher_low": true,
@@ -26511,8 +26739,8 @@
     "above_sma100": false,
     "above_sma200": true,
     "pct_above_sma50": -8.566480128542619,
-    "pct_above_sma100": -4.877838667232903,
-    "pct_above_sma200": 13.736931450755407,
+    "pct_above_sma100": -4.8778385105545325,
+    "pct_above_sma200": 13.736931973422806,
     "sma50_slope": -3.42,
     "sma200_slope": 4.88,
     "higher_low": true,
@@ -26528,7 +26756,7 @@
     },
     "rs6": 4.4,
     "vol_pressure_5d": 0.24,
-    "vol_breakout": 0.72
+    "vol_breakout": 0.77
    },
    "flags": [],
    "earnings_in": null,
@@ -26668,7 +26896,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.72x Ø20T)"
+      "detail": "unterdurchschnittlich (0.77x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -26724,7 +26952,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.72x Ø20T)"
+      "detail": "unterdurchschnittlich (0.77x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
@@ -26827,7 +27055,7 @@
      "m12": -30.1
     },
     "rs6": -13.9,
-    "vol_pressure_5d": 1.98,
+    "vol_pressure_5d": 1.97,
     "vol_breakout": 0.49
    },
    "flags": [
@@ -26975,7 +27203,7 @@
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 20.0,
       "max": 20,
-      "detail": "mehr Kaeufer als Verkaeufer (1.98x)"
+      "detail": "mehr Kaeufer als Verkaeufer (1.97x)"
      }
     ],
     "momentum": [
@@ -27025,7 +27253,7 @@
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 18.0,
       "max": 18,
-      "detail": "mehr Kaeufer als Verkaeufer (1.98x)"
+      "detail": "mehr Kaeufer als Verkaeufer (1.97x)"
      }
     ],
     "value": [
@@ -27422,8 +27650,8 @@
      "m12": 147.4
     },
     "rs6": -17.9,
-    "vol_pressure_5d": 1.99,
-    "vol_breakout": 0.65
+    "vol_pressure_5d": 2.0,
+    "vol_breakout": 0.67
    },
    "flags": [],
    "earnings_in": null,
@@ -27533,7 +27761,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.65x Ø20T)"
+      "detail": "unterdurchschnittlich (0.67x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -27545,7 +27773,7 @@
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 20.0,
       "max": 20,
-      "detail": "mehr Kaeufer als Verkaeufer (1.99x)"
+      "detail": "mehr Kaeufer als Verkaeufer (2.00x)"
      }
     ],
     "momentum": [
@@ -27589,13 +27817,13 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.65x Ø20T)"
+      "detail": "unterdurchschnittlich (0.67x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 18.0,
       "max": 18,
-      "detail": "mehr Kaeufer als Verkaeufer (1.99x)"
+      "detail": "mehr Kaeufer als Verkaeufer (2.00x)"
      }
     ],
     "value": [
@@ -27692,8 +27920,8 @@
      "m12": -12.1
     },
     "rs6": 28.0,
-    "vol_pressure_5d": 0.71,
-    "vol_breakout": 0.62
+    "vol_pressure_5d": 0.72,
+    "vol_breakout": 0.65
    },
    "flags": [],
    "earnings_in": 5,
@@ -27776,8 +28004,8 @@
     }
    },
    "scores": {
-    "turnaround": 64.1,
-    "momentum": 59.8,
+    "turnaround": 64.5,
+    "momentum": 60.1,
     "value": 69.3
    },
    "why": {
@@ -27835,7 +28063,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.62x Ø20T)"
+      "detail": "unterdurchschnittlich (0.65x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -27845,9 +28073,9 @@
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
-      "points": 4.9,
+      "points": 5.3,
       "max": 20,
-      "detail": "mehr Verkaeufer als Kaeufer (0.71x)"
+      "detail": "mehr Verkaeufer als Kaeufer (0.72x)"
      }
     ],
     "momentum": [
@@ -27891,13 +28119,13 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.62x Ø20T)"
+      "detail": "unterdurchschnittlich (0.65x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
-      "points": 4.4,
+      "points": 4.7,
       "max": 18,
-      "detail": "mehr Verkaeufer als Kaeufer (0.71x)"
+      "detail": "mehr Verkaeufer als Kaeufer (0.72x)"
      }
     ],
     "value": [
@@ -27979,7 +28207,7 @@
     "above_sma200": false,
     "pct_above_sma50": -3.769291599382052,
     "pct_above_sma100": -3.726742461089849,
-    "pct_above_sma200": -2.2300199756806305,
+    "pct_above_sma200": -2.230019688934315,
     "sma50_slope": 0.01,
     "sma200_slope": -0.09,
     "higher_low": true,
@@ -28271,7 +28499,7 @@
      "m12": -33.6
     },
     "rs6": -3.4,
-    "vol_pressure_5d": 1.79,
+    "vol_pressure_5d": 1.8,
     "vol_breakout": 0.73
    },
    "flags": [],
@@ -28424,7 +28652,7 @@
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 20.0,
       "max": 20,
-      "detail": "mehr Kaeufer als Verkaeufer (1.79x)"
+      "detail": "mehr Kaeufer als Verkaeufer (1.80x)"
      }
     ],
     "momentum": [
@@ -28474,7 +28702,7 @@
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 18.0,
       "max": 18,
-      "detail": "mehr Kaeufer als Verkaeufer (1.79x)"
+      "detail": "mehr Kaeufer als Verkaeufer (1.80x)"
      }
     ],
     "value": [
@@ -28556,7 +28784,7 @@
     "above_sma200": false,
     "pct_above_sma50": -1.7630369036169768,
     "pct_above_sma100": 2.342655559698148,
-    "pct_above_sma200": -0.36327527204528254,
+    "pct_above_sma200": -0.3632755425475698,
     "sma50_slope": 3.47,
     "sma200_slope": -0.04,
     "higher_low": true,
@@ -28571,8 +28799,8 @@
      "m12": 10.1
     },
     "rs6": -9.7,
-    "vol_pressure_5d": 1.18,
-    "vol_breakout": 0.76
+    "vol_pressure_5d": 1.25,
+    "vol_breakout": 0.93
    },
    "flags": [],
    "earnings_in": null,
@@ -28655,8 +28883,8 @@
     }
    },
    "scores": {
-    "turnaround": 84.0,
-    "momentum": 29.1,
+    "turnaround": 84.5,
+    "momentum": 29.5,
     "value": 57.3
    },
    "why": {
@@ -28711,7 +28939,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.76x Ø20T)"
+      "detail": "unterdurchschnittlich (0.93x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -28721,9 +28949,9 @@
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
-      "points": 19.5,
+      "points": 20.0,
       "max": 20,
-      "detail": "mehr Kaeufer als Verkaeufer (1.18x)"
+      "detail": "mehr Kaeufer als Verkaeufer (1.25x)"
      }
     ],
     "momentum": [
@@ -28767,13 +28995,13 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.76x Ø20T)"
+      "detail": "unterdurchschnittlich (0.93x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
-      "points": 17.6,
+      "points": 18.0,
       "max": 18,
-      "detail": "mehr Kaeufer als Verkaeufer (1.18x)"
+      "detail": "mehr Kaeufer als Verkaeufer (1.25x)"
      }
     ],
     "value": [
@@ -28871,7 +29099,7 @@
     },
     "rs6": -15.0,
     "vol_pressure_5d": 0.0,
-    "vol_breakout": 0.96
+    "vol_breakout": 1.05
    },
    "flags": [],
    "earnings_in": null,
@@ -28954,8 +29182,8 @@
     }
    },
    "scores": {
-    "turnaround": 26.9,
-    "momentum": 2.3,
+    "turnaround": 27.3,
+    "momentum": 2.6,
     "value": 59.3
    },
    "why": {
@@ -29007,9 +29235,9 @@
      },
      {
       "label": "Volumen-Ausbruch",
-      "points": 0.0,
+      "points": 0.4,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.96x Ø20T)"
+      "detail": "leicht erhoeht (1.05x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -29063,9 +29291,9 @@
      },
      {
       "label": "Volumen-Ausbruch",
-      "points": 0.0,
+      "points": 0.3,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.96x Ø20T)"
+      "detail": "leicht erhoeht (1.05x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
@@ -29152,8 +29380,8 @@
     "above_sma100": false,
     "above_sma200": true,
     "pct_above_sma50": -8.484804668515189,
-    "pct_above_sma100": -5.411742896957483,
-    "pct_above_sma200": 9.101769775741818,
+    "pct_above_sma100": -5.411742830998101,
+    "pct_above_sma200": 9.101769424726736,
     "sma50_slope": -2.18,
     "sma200_slope": 4.34,
     "higher_low": true,
@@ -29417,7 +29645,7 @@
     "above_sma200": true,
     "pct_above_sma50": 19.802971544972834,
     "pct_above_sma100": 17.856533196182124,
-    "pct_above_sma200": 4.5516574498768,
+    "pct_above_sma200": 4.551657529617947,
     "sma50_slope": 2.71,
     "sma200_slope": -2.72,
     "higher_low": true,
@@ -29717,8 +29945,8 @@
     "above_sma100": true,
     "above_sma200": true,
     "pct_above_sma50": 11.457303681202324,
-    "pct_above_sma100": 10.774489833123791,
-    "pct_above_sma200": 17.029083157016633,
+    "pct_above_sma100": 10.77449019799035,
+    "pct_above_sma200": 17.02908290249645,
     "sma50_slope": 1.75,
     "sma200_slope": 2.72,
     "higher_low": true,
@@ -30315,7 +30543,7 @@
     "above_sma200": true,
     "pct_above_sma50": -1.3385644902523808,
     "pct_above_sma100": 3.9954027920143353,
-    "pct_above_sma200": 11.58229980893739,
+    "pct_above_sma200": 11.58229973581706,
     "sma50_slope": 1.17,
     "sma200_slope": 2.99,
     "higher_low": true,
@@ -30330,8 +30558,8 @@
      "m12": 47.1
     },
     "rs6": 6.4,
-    "vol_pressure_5d": 0.52,
-    "vol_breakout": 0.97
+    "vol_pressure_5d": 0.62,
+    "vol_breakout": 1.31
    },
    "flags": [],
    "earnings_in": null,
@@ -30386,8 +30614,8 @@
     }
    },
    "scores": {
-    "turnaround": 47.9,
-    "momentum": 43.4,
+    "turnaround": 50.7,
+    "momentum": 45.9,
     "value": 61.6
    },
    "why": {
@@ -30440,9 +30668,9 @@
      },
      {
       "label": "Volumen-Ausbruch",
-      "points": 0.0,
+      "points": 1.9,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.97x Ø20T)"
+      "detail": "leicht erhoeht (1.31x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -30452,9 +30680,9 @@
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
-      "points": 0.0,
+      "points": 0.9,
       "max": 20,
-      "detail": "mehr Verkaeufer als Kaeufer (0.52x)"
+      "detail": "mehr Verkaeufer als Kaeufer (0.62x)"
      }
     ],
     "momentum": [
@@ -30496,15 +30724,15 @@
      },
      {
       "label": "Volumen-Ausbruch",
-      "points": 0.0,
+      "points": 1.6,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.97x Ø20T)"
+      "detail": "leicht erhoeht (1.31x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
-      "points": 0.0,
+      "points": 0.9,
       "max": 18,
-      "detail": "mehr Verkaeufer als Kaeufer (0.52x)"
+      "detail": "mehr Verkaeufer als Kaeufer (0.62x)"
      }
     ],
     "value": [
@@ -30586,7 +30814,7 @@
     "above_sma200": false,
     "pct_above_sma50": -1.3135296887371806,
     "pct_above_sma100": 1.637603063986015,
-    "pct_above_sma200": -2.1175176534703244,
+    "pct_above_sma200": -2.117517566348859,
     "sma50_slope": 4.09,
     "sma200_slope": -0.98,
     "higher_low": true,
@@ -30885,7 +31113,7 @@
     "above_sma200": false,
     "pct_above_sma50": -4.1684003821444655,
     "pct_above_sma100": -4.029102662916384,
-    "pct_above_sma200": -10.160959116724932,
+    "pct_above_sma200": -10.16095901221501,
     "sma50_slope": -4.76,
     "sma200_slope": -2.01,
     "higher_low": false,
@@ -31183,7 +31411,7 @@
     "above_sma200": true,
     "pct_above_sma50": 6.047997604159083,
     "pct_above_sma100": 11.443090624411202,
-    "pct_above_sma200": 17.282680720657908,
+    "pct_above_sma200": 17.28268087599252,
     "sma50_slope": 5.42,
     "sma200_slope": 3.37,
     "higher_low": true,
@@ -31198,8 +31426,8 @@
      "m12": 54.9
     },
     "rs6": 5.3,
-    "vol_pressure_5d": 3.87,
-    "vol_breakout": 0.57
+    "vol_pressure_5d": 4.21,
+    "vol_breakout": 0.88
    },
    "flags": [],
    "earnings_in": null,
@@ -31261,8 +31489,8 @@
     }
    },
    "scores": {
-    "turnaround": 69.3,
-    "momentum": 72.0,
+    "turnaround": 68.4,
+    "momentum": 71.2,
     "value": 74.7
    },
    "why": {
@@ -31318,7 +31546,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.57x Ø20T)"
+      "detail": "unterdurchschnittlich (0.88x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -31328,9 +31556,9 @@
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
-      "points": 15.5,
+      "points": 14.6,
       "max": 20,
-      "detail": "mehr Kaeufer als Verkaeufer (3.87x)"
+      "detail": "mehr Kaeufer als Verkaeufer (4.21x)"
      }
     ],
     "momentum": [
@@ -31374,13 +31602,13 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.57x Ø20T)"
+      "detail": "unterdurchschnittlich (0.88x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
-      "points": 14.0,
+      "points": 13.2,
       "max": 18,
-      "detail": "mehr Kaeufer als Verkaeufer (3.87x)"
+      "detail": "mehr Kaeufer als Verkaeufer (4.21x)"
      }
     ],
     "value": [
@@ -31462,7 +31690,7 @@
     "above_sma200": true,
     "pct_above_sma50": 2.3525405351206174,
     "pct_above_sma100": 8.556962864071927,
-    "pct_above_sma200": 12.027637936317959,
+    "pct_above_sma200": 12.027638208661017,
     "sma50_slope": 6.89,
     "sma200_slope": 1.89,
     "higher_low": true,
@@ -31756,8 +31984,8 @@
      "m12": 32.5
     },
     "rs6": 8.3,
-    "vol_pressure_5d": 4.55,
-    "vol_breakout": 0.72
+    "vol_pressure_5d": 4.89,
+    "vol_breakout": 0.97
    },
    "flags": [],
    "earnings_in": null,
@@ -31840,8 +32068,8 @@
     }
    },
    "scores": {
-    "turnaround": 61.5,
-    "momentum": 71.8,
+    "turnaround": 60.8,
+    "momentum": 71.1,
     "value": 70.1
    },
    "why": {
@@ -31897,7 +32125,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.72x Ø20T)"
+      "detail": "unterdurchschnittlich (0.97x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -31907,9 +32135,9 @@
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
-      "points": 13.8,
+      "points": 13.1,
       "max": 20,
-      "detail": "mehr Kaeufer als Verkaeufer (4.55x)"
+      "detail": "mehr Kaeufer als Verkaeufer (4.89x)"
      }
     ],
     "momentum": [
@@ -31953,13 +32181,13 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.72x Ø20T)"
+      "detail": "unterdurchschnittlich (0.97x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
-      "points": 12.5,
+      "points": 11.8,
       "max": 18,
-      "detail": "mehr Kaeufer als Verkaeufer (4.55x)"
+      "detail": "mehr Kaeufer als Verkaeufer (4.89x)"
      }
     ],
     "value": [
@@ -32056,8 +32284,8 @@
      "m12": -11.4
     },
     "rs6": -24.0,
-    "vol_pressure_5d": 2.98,
-    "vol_breakout": 0.58
+    "vol_pressure_5d": 3.2,
+    "vol_breakout": 0.83
    },
    "flags": [],
    "earnings_in": null,
@@ -32140,8 +32368,8 @@
     }
    },
    "scores": {
-    "turnaround": 43.4,
-    "momentum": 20.4,
+    "turnaround": 42.7,
+    "momentum": 19.7,
     "value": 53.2
    },
    "why": {
@@ -32194,7 +32422,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.58x Ø20T)"
+      "detail": "unterdurchschnittlich (0.83x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -32204,9 +32432,9 @@
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
-      "points": 18.2,
+      "points": 17.5,
       "max": 20,
-      "detail": "mehr Kaeufer als Verkaeufer (2.98x)"
+      "detail": "mehr Kaeufer als Verkaeufer (3.20x)"
      }
     ],
     "momentum": [
@@ -32250,13 +32478,13 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.58x Ø20T)"
+      "detail": "unterdurchschnittlich (0.83x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
-      "points": 16.4,
+      "points": 15.7,
       "max": 18,
-      "detail": "mehr Kaeufer als Verkaeufer (2.98x)"
+      "detail": "mehr Kaeufer als Verkaeufer (3.20x)"
      }
     ],
     "value": [
@@ -32338,7 +32566,7 @@
     "above_sma200": true,
     "pct_above_sma50": 5.8173570501778515,
     "pct_above_sma100": 12.782889763590832,
-    "pct_above_sma200": 12.079756495163153,
+    "pct_above_sma200": 12.079756548716736,
     "sma50_slope": 7.3,
     "sma200_slope": 1.44,
     "higher_low": true,
@@ -32609,7 +32837,7 @@
     "above_sma200": true,
     "pct_above_sma50": 19.215868311381534,
     "pct_above_sma100": 25.380414236958625,
-    "pct_above_sma200": 33.54536048267314,
+    "pct_above_sma200": 33.54536039347917,
     "sma50_slope": 5.99,
     "sma200_slope": 4.58,
     "higher_low": true,
@@ -32911,7 +33139,7 @@
     "above_sma200": false,
     "pct_above_sma50": -4.079676793584241,
     "pct_above_sma100": -5.7809869865773305,
-    "pct_above_sma200": -21.696066987079334,
+    "pct_above_sma200": -21.696066901002897,
     "sma50_slope": -2.14,
     "sma200_slope": -4.47,
     "higher_low": false,
@@ -33468,7 +33696,7 @@
     "above_sma200": true,
     "pct_above_sma50": 2.1067100319635657,
     "pct_above_sma100": 5.631564200403449,
-    "pct_above_sma200": 4.0368033312894624,
+    "pct_above_sma200": 4.036803474244444,
     "sma50_slope": 6.31,
     "sma200_slope": 0.58,
     "higher_low": true,
@@ -33785,8 +34013,8 @@
      "m12": 34.6
     },
     "rs6": 12.8,
-    "vol_pressure_5d": 0.71,
-    "vol_breakout": 0.53
+    "vol_pressure_5d": 0.63,
+    "vol_breakout": 0.85
    },
    "flags": [],
    "earnings_in": null,
@@ -33841,8 +34069,8 @@
     }
    },
    "scores": {
-    "turnaround": 69.7,
-    "momentum": 63.1,
+    "turnaround": 66.2,
+    "momentum": 60.0,
     "value": 62.8
    },
    "why": {
@@ -33898,7 +34126,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.53x Ø20T)"
+      "detail": "unterdurchschnittlich (0.85x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -33908,9 +34136,9 @@
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
-      "points": 4.9,
+      "points": 1.4,
       "max": 20,
-      "detail": "mehr Verkaeufer als Kaeufer (0.71x)"
+      "detail": "mehr Verkaeufer als Kaeufer (0.63x)"
      }
     ],
     "momentum": [
@@ -33954,13 +34182,13 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.53x Ø20T)"
+      "detail": "unterdurchschnittlich (0.85x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
-      "points": 4.4,
+      "points": 1.3,
       "max": 18,
-      "detail": "mehr Verkaeufer als Kaeufer (0.71x)"
+      "detail": "mehr Verkaeufer als Kaeufer (0.63x)"
      }
     ],
     "value": [
@@ -34042,7 +34270,7 @@
     "above_sma200": true,
     "pct_above_sma50": -5.702188455482693,
     "pct_above_sma100": 1.326647742893261,
-    "pct_above_sma200": 12.97348965176961,
+    "pct_above_sma200": 12.97349000121888,
     "sma50_slope": 1.74,
     "sma200_slope": 1.6,
     "higher_low": true,
@@ -34057,8 +34285,8 @@
      "m12": 33.6
     },
     "rs6": 29.0,
-    "vol_pressure_5d": 0.18,
-    "vol_breakout": 0.8
+    "vol_pressure_5d": 0.26,
+    "vol_breakout": 1.13
    },
    "flags": [],
    "earnings_in": null,
@@ -34105,8 +34333,8 @@
     }
    },
    "scores": {
-    "turnaround": 51.0,
-    "momentum": 54.0,
+    "turnaround": 51.9,
+    "momentum": 54.7,
     "value": 61.1
    },
    "why": {
@@ -34160,9 +34388,9 @@
      },
      {
       "label": "Volumen-Ausbruch",
-      "points": 0.0,
+      "points": 0.9,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.80x Ø20T)"
+      "detail": "leicht erhoeht (1.13x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -34174,7 +34402,7 @@
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 0.0,
       "max": 20,
-      "detail": "mehr Verkaeufer als Kaeufer (0.18x)"
+      "detail": "mehr Verkaeufer als Kaeufer (0.26x)"
      }
     ],
     "momentum": [
@@ -34216,15 +34444,15 @@
      },
      {
       "label": "Volumen-Ausbruch",
-      "points": 0.0,
+      "points": 0.7,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.80x Ø20T)"
+      "detail": "leicht erhoeht (1.13x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 0.0,
       "max": 18,
-      "detail": "mehr Verkaeufer als Kaeufer (0.18x)"
+      "detail": "mehr Verkaeufer als Kaeufer (0.26x)"
      }
     ],
     "value": [
@@ -34305,8 +34533,8 @@
     "above_sma100": true,
     "above_sma200": true,
     "pct_above_sma50": 5.344020137485184,
-    "pct_above_sma100": 10.841605645572194,
-    "pct_above_sma200": 12.22751017379311,
+    "pct_above_sma100": 10.841605241373497,
+    "pct_above_sma200": 12.227509966608263,
     "sma50_slope": 4.88,
     "sma200_slope": 0.69,
     "higher_low": true,
@@ -34907,7 +35135,7 @@
     "above_sma200": false,
     "pct_above_sma50": -8.712380261818076,
     "pct_above_sma100": -13.299938921407684,
-    "pct_above_sma200": -12.295955171438012,
+    "pct_above_sma200": -12.2959551431423,
     "sma50_slope": -3.46,
     "sma200_slope": 0.71,
     "higher_low": false,
@@ -42313,7 +42541,7 @@
     "above_sma200": true,
     "pct_above_sma50": 6.199139315647195,
     "pct_above_sma100": 12.65739138746589,
-    "pct_above_sma200": 3.2844734176973756,
+    "pct_above_sma200": 3.284473363532614,
     "sma50_slope": 7.56,
     "sma200_slope": -0.94,
     "higher_low": true,
@@ -45478,6 +45706,1155 @@
       "points": 5.0,
       "max": 5,
       "detail": "54%"
+     }
+    ]
+   }
+  },
+  "ILMN": {
+   "name": "ILMN",
+   "isin": null,
+   "index": "Watchlist",
+   "sector": "unbekannt",
+   "metrics": {
+    "last": 219.4,
+    "dd_ath": -57.0,
+    "days_since_ath": 1831,
+    "range_pos": 100.0,
+    "above_sma50": true,
+    "above_sma100": true,
+    "above_sma200": true,
+    "pct_above_sma50": 16.988622895929172,
+    "pct_above_sma100": 33.89813553813883,
+    "pct_above_sma200": 49.28409248779988,
+    "sma50_slope": 10.35,
+    "sma200_slope": 7.16,
+    "higher_low": true,
+    "higher_low_pct": 53.4,
+    "rsi14": 69.6,
+    "rsi_min60": 47.2,
+    "rsi_week": 74.0,
+    "perf": {
+     "m1": 11.4,
+     "m3": 51.5,
+     "m6": 86.5,
+     "m12": 117.7
+    },
+    "rs6": 69.3,
+    "vol_pressure_5d": 6.95,
+    "vol_breakout": 0.93
+   },
+   "flags": [],
+   "earnings_in": null,
+   "analyst": {},
+   "revision_note": null,
+   "target": {
+    "target_abs": null,
+    "upside_pct": null,
+    "fresh": null,
+    "n_analysts": null,
+    "empfehlung": null,
+    "rec_breakdown": null
+   },
+   "scores": {
+    "turnaround": 61.2,
+    "momentum": 87.9,
+    "value": 0.0
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben"
+    ],
+    "momentum": [
+     "relative Staerke +69% vs. Index",
+     "ueber 50- und 200-Tage-Linie",
+     "200-Tage-Linie steigt"
+    ],
+    "value": [
+     "keine Fundamentaldaten"
+    ]
+   },
+   "breakdown": {
+    "turnaround": [
+     {
+      "label": "Hoeheres Tief",
+      "points": 25.0,
+      "max": 25,
+      "detail": "ja, 30T-Tief liegt 53.4% ueber dem 90T-Tief davor"
+     },
+     {
+      "label": "Abstand 50T-Linie",
+      "points": 10.0,
+      "max": 10,
+      "detail": "+17.0% darueber 50T-Linie"
+     },
+     {
+      "label": "Ueber 100T-Linie",
+      "points": 5.0,
+      "max": 5,
+      "detail": "ja"
+     },
+     {
+      "label": "50T-Linie im Aufwaertstrend",
+      "points": 10.0,
+      "max": 10,
+      "detail": "+10.3% Veraenderung der Linie in 21 Tagen"
+     },
+     {
+      "label": "RSI-Erholung",
+      "points": 0.2,
+      "max": 15,
+      "detail": "RSI 70"
+     },
+     {
+      "label": "Volumen-Ausbruch",
+      "points": 0.0,
+      "max": 5,
+      "detail": "unterdurchschnittlich (0.93x Ø20T)"
+     },
+     {
+      "label": "Position 52W-Spanne",
+      "points": 0.0,
+      "max": 10,
+      "detail": "100% der Jahres-Spanne (0%=Jahrestief, 100%=Jahreshoch)"
+     },
+     {
+      "label": "Kauf-/Verkaufsdruck 5T",
+      "points": 11.0,
+      "max": 20,
+      "detail": "mehr Kaeufer als Verkaeufer (6.95x)"
+     }
+    ],
+    "momentum": [
+     {
+      "label": "Rel. Staerke 6M",
+      "points": 28.0,
+      "max": 28,
+      "detail": "+69% staerker/schwaecher als der Index"
+     },
+     {
+      "label": "Abstand 50T-Linie",
+      "points": 10.0,
+      "max": 10,
+      "detail": "+17.0% darueber 50T-Linie"
+     },
+     {
+      "label": "Abstand 200T-Linie",
+      "points": 10.0,
+      "max": 10,
+      "detail": "+49.3% darueber 200T-Linie"
+     },
+     {
+      "label": "Ueber 100T-Linie",
+      "points": 5.0,
+      "max": 5,
+      "detail": "ja"
+     },
+     {
+      "label": "200T-Linie im Aufwaertstrend",
+      "points": 10.0,
+      "max": 10,
+      "detail": "+7.2% Veraenderung der Linie in 21 Tagen"
+     },
+     {
+      "label": "Position 52W-Spanne",
+      "points": 15.0,
+      "max": 15,
+      "detail": "100% der Jahres-Spanne (0%=Jahrestief, 100%=Jahreshoch)"
+     },
+     {
+      "label": "Volumen-Ausbruch",
+      "points": 0.0,
+      "max": 4,
+      "detail": "unterdurchschnittlich (0.93x Ø20T)"
+     },
+     {
+      "label": "Kauf-/Verkaufsdruck 5T",
+      "points": 9.9,
+      "max": 18,
+      "detail": "mehr Kaeufer als Verkaeufer (6.95x)"
+     }
+    ],
+    "value": [
+     {
+      "label": "KGV verbessert",
+      "points": 0.0,
+      "max": 10,
+      "detail": "k.A."
+     },
+     {
+      "label": "KGV Niveau",
+      "points": 0.0,
+      "max": 10,
+      "detail": "k.A."
+     },
+     {
+      "label": "Free Cashflow",
+      "points": 0.0,
+      "max": 15,
+      "detail": "k.A."
+     },
+     {
+      "label": "Marge",
+      "points": 0.0,
+      "max": 10,
+      "detail": "k.A."
+     },
+     {
+      "label": "Umsatzwachstum",
+      "points": 0.0,
+      "max": 15,
+      "detail": "k.A."
+     },
+     {
+      "label": "Eigenkapitalrendite",
+      "points": 0.0,
+      "max": 10,
+      "detail": "k.A."
+     },
+     {
+      "label": "Verschuldung",
+      "points": 0.0,
+      "max": 10,
+      "detail": "k.A."
+     },
+     {
+      "label": "Ueber 200T-Linie",
+      "points": 0.0,
+      "max": 5,
+      "detail": "k.A."
+     },
+     {
+      "label": "Analysten-Revisionen",
+      "points": 0.0,
+      "max": 10,
+      "detail": "k.A."
+     },
+     {
+      "label": "Kursziel-Abstand",
+      "points": 0.0,
+      "max": 5,
+      "detail": "k.A."
+     }
+    ]
+   }
+  },
+  "MDB": {
+   "name": "MDB",
+   "isin": null,
+   "index": "Watchlist",
+   "sector": "unbekannt",
+   "metrics": {
+    "last": 430.83,
+    "dd_ath": -26.4,
+    "days_since_ath": 1739,
+    "range_pos": 84.1,
+    "above_sma50": true,
+    "above_sma100": true,
+    "above_sma200": true,
+    "pct_above_sma50": 20.616610070232788,
+    "pct_above_sma100": 32.946900853242035,
+    "pct_above_sma200": 26.80876417477842,
+    "sma50_slope": 6.68,
+    "sma200_slope": 1.9,
+    "higher_low": true,
+    "higher_low_pct": 22.2,
+    "rsi14": 61.5,
+    "rsi_min60": 37.9,
+    "rsi_week": 63.2,
+    "perf": {
+     "m1": 44.0,
+     "m3": 35.7,
+     "m6": 25.0,
+     "m12": 102.6
+    },
+    "rs6": 7.9,
+    "vol_pressure_5d": 0.52,
+    "vol_breakout": 0.62
+   },
+   "flags": [],
+   "earnings_in": null,
+   "analyst": {},
+   "revision_note": null,
+   "target": {
+    "target_abs": null,
+    "upside_pct": null,
+    "fresh": null,
+    "n_analysts": null,
+    "empfehlung": null,
+    "rec_breakdown": null
+   },
+   "scores": {
+    "turnaround": 55.1,
+    "momentum": 53.8,
+    "value": 0.0
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben",
+     "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
+    ],
+    "momentum": [
+     "ueber 50- und 200-Tage-Linie",
+     "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
+    ],
+    "value": [
+     "keine Fundamentaldaten"
+    ]
+   },
+   "breakdown": {
+    "turnaround": [
+     {
+      "label": "Hoeheres Tief",
+      "points": 25.0,
+      "max": 25,
+      "detail": "ja, 30T-Tief liegt 22.2% ueber dem 90T-Tief davor"
+     },
+     {
+      "label": "Abstand 50T-Linie",
+      "points": 10.0,
+      "max": 10,
+      "detail": "+20.6% darueber 50T-Linie"
+     },
+     {
+      "label": "Ueber 100T-Linie",
+      "points": 5.0,
+      "max": 5,
+      "detail": "ja"
+     },
+     {
+      "label": "50T-Linie im Aufwaertstrend",
+      "points": 10.0,
+      "max": 10,
+      "detail": "+6.7% Veraenderung der Linie in 21 Tagen"
+     },
+     {
+      "label": "RSI-Erholung",
+      "points": 5.1,
+      "max": 15,
+      "detail": "RSI 62"
+     },
+     {
+      "label": "Volumen-Ausbruch",
+      "points": 0.0,
+      "max": 5,
+      "detail": "unterdurchschnittlich (0.62x Ø20T)"
+     },
+     {
+      "label": "Position 52W-Spanne",
+      "points": 0.0,
+      "max": 10,
+      "detail": "84% der Jahres-Spanne (0%=Jahrestief, 100%=Jahreshoch)"
+     },
+     {
+      "label": "Kauf-/Verkaufsdruck 5T",
+      "points": 0.0,
+      "max": 20,
+      "detail": "mehr Verkaeufer als Kaeufer (0.52x)"
+     }
+    ],
+    "momentum": [
+     {
+      "label": "Rel. Staerke 6M",
+      "points": 12.0,
+      "max": 28,
+      "detail": "+8% staerker/schwaecher als der Index"
+     },
+     {
+      "label": "Abstand 50T-Linie",
+      "points": 10.0,
+      "max": 10,
+      "detail": "+20.6% darueber 50T-Linie"
+     },
+     {
+      "label": "Abstand 200T-Linie",
+      "points": 10.0,
+      "max": 10,
+      "detail": "+26.8% darueber 200T-Linie"
+     },
+     {
+      "label": "Ueber 100T-Linie",
+      "points": 5.0,
+      "max": 5,
+      "detail": "ja"
+     },
+     {
+      "label": "200T-Linie im Aufwaertstrend",
+      "points": 4.8,
+      "max": 10,
+      "detail": "+1.9% Veraenderung der Linie in 21 Tagen"
+     },
+     {
+      "label": "Position 52W-Spanne",
+      "points": 12.0,
+      "max": 15,
+      "detail": "84% der Jahres-Spanne (0%=Jahrestief, 100%=Jahreshoch)"
+     },
+     {
+      "label": "Volumen-Ausbruch",
+      "points": 0.0,
+      "max": 4,
+      "detail": "unterdurchschnittlich (0.62x Ø20T)"
+     },
+     {
+      "label": "Kauf-/Verkaufsdruck 5T",
+      "points": 0.0,
+      "max": 18,
+      "detail": "mehr Verkaeufer als Kaeufer (0.52x)"
+     }
+    ],
+    "value": [
+     {
+      "label": "KGV verbessert",
+      "points": 0.0,
+      "max": 10,
+      "detail": "k.A."
+     },
+     {
+      "label": "KGV Niveau",
+      "points": 0.0,
+      "max": 10,
+      "detail": "k.A."
+     },
+     {
+      "label": "Free Cashflow",
+      "points": 0.0,
+      "max": 15,
+      "detail": "k.A."
+     },
+     {
+      "label": "Marge",
+      "points": 0.0,
+      "max": 10,
+      "detail": "k.A."
+     },
+     {
+      "label": "Umsatzwachstum",
+      "points": 0.0,
+      "max": 15,
+      "detail": "k.A."
+     },
+     {
+      "label": "Eigenkapitalrendite",
+      "points": 0.0,
+      "max": 10,
+      "detail": "k.A."
+     },
+     {
+      "label": "Verschuldung",
+      "points": 0.0,
+      "max": 10,
+      "detail": "k.A."
+     },
+     {
+      "label": "Ueber 200T-Linie",
+      "points": 0.0,
+      "max": 5,
+      "detail": "k.A."
+     },
+     {
+      "label": "Analysten-Revisionen",
+      "points": 0.0,
+      "max": 10,
+      "detail": "k.A."
+     },
+     {
+      "label": "Kursziel-Abstand",
+      "points": 0.0,
+      "max": 5,
+      "detail": "k.A."
+     }
+    ]
+   }
+  },
+  "MRNA": {
+   "name": "MRNA",
+   "isin": null,
+   "index": "Watchlist",
+   "sector": "unbekannt",
+   "metrics": {
+    "last": 145.13,
+    "dd_ath": -70.0,
+    "days_since_ath": 1838,
+    "range_pos": 80.8,
+    "above_sma50": true,
+    "above_sma100": true,
+    "above_sma200": true,
+    "pct_above_sma50": 114.67824041717338,
+    "pct_above_sma100": 147.72955235862253,
+    "pct_above_sma200": 197.8447756359877,
+    "sma50_slope": 17.17,
+    "sma200_slope": 10.38,
+    "higher_low": true,
+    "higher_low_pct": 18.7,
+    "rsi14": 71.6,
+    "rsi_min60": 36.7,
+    "rsi_week": 82.0,
+    "perf": {
+     "m1": 154.5,
+     "m3": 207.1,
+     "m6": 191.0,
+     "m12": 439.7
+    },
+    "rs6": 173.8,
+    "vol_pressure_5d": 2.79,
+    "vol_breakout": 4.36
+   },
+   "flags": [],
+   "earnings_in": null,
+   "analyst": {},
+   "revision_note": null,
+   "target": {
+    "target_abs": null,
+    "upside_pct": null,
+    "fresh": null,
+    "n_analysts": null,
+    "empfehlung": null,
+    "rec_breakdown": null
+   },
+   "scores": {
+    "turnaround": 73.7,
+    "momentum": 94.2,
+    "value": 0.0
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
+    ],
+    "momentum": [
+     "relative Staerke +174% vs. Index",
+     "ueber 50- und 200-Tage-Linie",
+     "200-Tage-Linie steigt",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
+    ],
+    "value": [
+     "keine Fundamentaldaten"
+    ]
+   },
+   "breakdown": {
+    "turnaround": [
+     {
+      "label": "Hoeheres Tief",
+      "points": 25.0,
+      "max": 25,
+      "detail": "ja, 30T-Tief liegt 18.7% ueber dem 90T-Tief davor"
+     },
+     {
+      "label": "Abstand 50T-Linie",
+      "points": 10.0,
+      "max": 10,
+      "detail": "+114.7% darueber 50T-Linie"
+     },
+     {
+      "label": "Ueber 100T-Linie",
+      "points": 5.0,
+      "max": 5,
+      "detail": "ja"
+     },
+     {
+      "label": "50T-Linie im Aufwaertstrend",
+      "points": 10.0,
+      "max": 10,
+      "detail": "+17.2% Veraenderung der Linie in 21 Tagen"
+     },
+     {
+      "label": "RSI-Erholung",
+      "points": 0.0,
+      "max": 15,
+      "detail": "RSI 72"
+     },
+     {
+      "label": "Volumen-Ausbruch",
+      "points": 4.8,
+      "max": 5,
+      "detail": "Ausbruch (4.36x Ø20T)"
+     },
+     {
+      "label": "Position 52W-Spanne",
+      "points": 0.0,
+      "max": 10,
+      "detail": "81% der Jahres-Spanne (0%=Jahrestief, 100%=Jahreshoch)"
+     },
+     {
+      "label": "Kauf-/Verkaufsdruck 5T",
+      "points": 18.9,
+      "max": 20,
+      "detail": "mehr Kaeufer als Verkaeufer (2.79x)"
+     }
+    ],
+    "momentum": [
+     {
+      "label": "Rel. Staerke 6M",
+      "points": 28.0,
+      "max": 28,
+      "detail": "+174% staerker/schwaecher als der Index"
+     },
+     {
+      "label": "Abstand 50T-Linie",
+      "points": 10.0,
+      "max": 10,
+      "detail": "+114.7% darueber 50T-Linie"
+     },
+     {
+      "label": "Abstand 200T-Linie",
+      "points": 10.0,
+      "max": 10,
+      "detail": "+197.8% darueber 200T-Linie"
+     },
+     {
+      "label": "Ueber 100T-Linie",
+      "points": 5.0,
+      "max": 5,
+      "detail": "ja"
+     },
+     {
+      "label": "200T-Linie im Aufwaertstrend",
+      "points": 10.0,
+      "max": 10,
+      "detail": "+10.4% Veraenderung der Linie in 21 Tagen"
+     },
+     {
+      "label": "Position 52W-Spanne",
+      "points": 10.4,
+      "max": 15,
+      "detail": "81% der Jahres-Spanne (0%=Jahrestief, 100%=Jahreshoch)"
+     },
+     {
+      "label": "Volumen-Ausbruch",
+      "points": 3.8,
+      "max": 4,
+      "detail": "Ausbruch (4.36x Ø20T)"
+     },
+     {
+      "label": "Kauf-/Verkaufsdruck 5T",
+      "points": 17.0,
+      "max": 18,
+      "detail": "mehr Kaeufer als Verkaeufer (2.79x)"
+     }
+    ],
+    "value": [
+     {
+      "label": "KGV verbessert",
+      "points": 0.0,
+      "max": 10,
+      "detail": "k.A."
+     },
+     {
+      "label": "KGV Niveau",
+      "points": 0.0,
+      "max": 10,
+      "detail": "k.A."
+     },
+     {
+      "label": "Free Cashflow",
+      "points": 0.0,
+      "max": 15,
+      "detail": "k.A."
+     },
+     {
+      "label": "Marge",
+      "points": 0.0,
+      "max": 10,
+      "detail": "k.A."
+     },
+     {
+      "label": "Umsatzwachstum",
+      "points": 0.0,
+      "max": 15,
+      "detail": "k.A."
+     },
+     {
+      "label": "Eigenkapitalrendite",
+      "points": 0.0,
+      "max": 10,
+      "detail": "k.A."
+     },
+     {
+      "label": "Verschuldung",
+      "points": 0.0,
+      "max": 10,
+      "detail": "k.A."
+     },
+     {
+      "label": "Ueber 200T-Linie",
+      "points": 0.0,
+      "max": 5,
+      "detail": "k.A."
+     },
+     {
+      "label": "Analysten-Revisionen",
+      "points": 0.0,
+      "max": 10,
+      "detail": "k.A."
+     },
+     {
+      "label": "Kursziel-Abstand",
+      "points": 0.0,
+      "max": 5,
+      "detail": "k.A."
+     }
+    ]
+   }
+  },
+  "ORCL": {
+   "name": "ORCL",
+   "isin": null,
+   "index": "Watchlist",
+   "sector": "unbekannt",
+   "metrics": {
+    "last": 146.47,
+    "dd_ath": -54.9,
+    "days_since_ath": 345,
+    "range_pos": 15.0,
+    "above_sma50": true,
+    "above_sma100": false,
+    "above_sma200": false,
+    "pct_above_sma50": 0.8653315753624824,
+    "pct_above_sma100": -10.684920708198165,
+    "pct_above_sma200": -14.889854470517038,
+    "sma50_slope": -15.1,
+    "sma200_slope": -7.55,
+    "higher_low": false,
+    "higher_low_pct": -17.7,
+    "rsi14": 52.8,
+    "rsi_min60": 25.7,
+    "rsi_week": 44.8,
+    "perf": {
+     "m1": 22.0,
+     "m3": -22.5,
+     "m6": -0.4,
+     "m12": -37.0
+    },
+    "rs6": -17.6,
+    "vol_pressure_5d": 0.79,
+    "vol_breakout": 0.55
+   },
+   "flags": [
+    "200-Tage-Linie faellt steil"
+   ],
+   "earnings_in": null,
+   "analyst": {},
+   "revision_note": null,
+   "target": {
+    "target_abs": null,
+    "upside_pct": null,
+    "fresh": null,
+    "n_analysts": null,
+    "empfehlung": null,
+    "rec_breakdown": null
+   },
+   "scores": {
+    "turnaround": 37.6,
+    "momentum": 13.5,
+    "value": 0.0
+   },
+   "why": {
+    "turnaround": [
+     "ueber 50-Tage-Linie",
+     "RSI erholt sich aus dem ueberverkauften Bereich"
+    ],
+    "momentum": [],
+    "value": [
+     "keine Fundamentaldaten"
+    ]
+   },
+   "breakdown": {
+    "turnaround": [
+     {
+      "label": "Hoeheres Tief",
+      "points": 0.0,
+      "max": 25,
+      "detail": "nein, 30T-Tief liegt -17.7% unter dem 90T-Tief davor"
+     },
+     {
+      "label": "Abstand 50T-Linie",
+      "points": 6.4,
+      "max": 10,
+      "detail": "+0.9% darueber 50T-Linie"
+     },
+     {
+      "label": "Ueber 100T-Linie",
+      "points": 0.0,
+      "max": 5,
+      "detail": "nein"
+     },
+     {
+      "label": "50T-Linie im Aufwaertstrend",
+      "points": 0.0,
+      "max": 10,
+      "detail": "-15.1% Veraenderung der Linie in 21 Tagen"
+     },
+     {
+      "label": "RSI-Erholung",
+      "points": 13.3,
+      "max": 15,
+      "detail": "RSI 53, aus Ueberverkauft"
+     },
+     {
+      "label": "Volumen-Ausbruch",
+      "points": 0.0,
+      "max": 5,
+      "detail": "unterdurchschnittlich (0.55x Ø20T)"
+     },
+     {
+      "label": "Position 52W-Spanne",
+      "points": 10.0,
+      "max": 10,
+      "detail": "15% der Jahres-Spanne (0%=Jahrestief, 100%=Jahreshoch)"
+     },
+     {
+      "label": "Kauf-/Verkaufsdruck 5T",
+      "points": 7.9,
+      "max": 20,
+      "detail": "mehr Verkaeufer als Kaeufer (0.79x)"
+     }
+    ],
+    "momentum": [
+     {
+      "label": "Rel. Staerke 6M",
+      "points": 0.0,
+      "max": 28,
+      "detail": "-18% staerker/schwaecher als der Index"
+     },
+     {
+      "label": "Abstand 50T-Linie",
+      "points": 6.4,
+      "max": 10,
+      "detail": "+0.9% darueber 50T-Linie"
+     },
+     {
+      "label": "Abstand 200T-Linie",
+      "points": 0.0,
+      "max": 10,
+      "detail": "-14.9% darunter 200T-Linie"
+     },
+     {
+      "label": "Ueber 100T-Linie",
+      "points": 0.0,
+      "max": 5,
+      "detail": "nein"
+     },
+     {
+      "label": "200T-Linie im Aufwaertstrend",
+      "points": 0.0,
+      "max": 10,
+      "detail": "-7.5% Veraenderung der Linie in 21 Tagen"
+     },
+     {
+      "label": "Position 52W-Spanne",
+      "points": 0.0,
+      "max": 15,
+      "detail": "15% der Jahres-Spanne (0%=Jahrestief, 100%=Jahreshoch)"
+     },
+     {
+      "label": "Volumen-Ausbruch",
+      "points": 0.0,
+      "max": 4,
+      "detail": "unterdurchschnittlich (0.55x Ø20T)"
+     },
+     {
+      "label": "Kauf-/Verkaufsdruck 5T",
+      "points": 7.1,
+      "max": 18,
+      "detail": "mehr Verkaeufer als Kaeufer (0.79x)"
+     }
+    ],
+    "value": [
+     {
+      "label": "KGV verbessert",
+      "points": 0.0,
+      "max": 10,
+      "detail": "k.A."
+     },
+     {
+      "label": "KGV Niveau",
+      "points": 0.0,
+      "max": 10,
+      "detail": "k.A."
+     },
+     {
+      "label": "Free Cashflow",
+      "points": 0.0,
+      "max": 15,
+      "detail": "k.A."
+     },
+     {
+      "label": "Marge",
+      "points": 0.0,
+      "max": 10,
+      "detail": "k.A."
+     },
+     {
+      "label": "Umsatzwachstum",
+      "points": 0.0,
+      "max": 15,
+      "detail": "k.A."
+     },
+     {
+      "label": "Eigenkapitalrendite",
+      "points": 0.0,
+      "max": 10,
+      "detail": "k.A."
+     },
+     {
+      "label": "Verschuldung",
+      "points": 0.0,
+      "max": 10,
+      "detail": "k.A."
+     },
+     {
+      "label": "Ueber 200T-Linie",
+      "points": 0.0,
+      "max": 5,
+      "detail": "k.A."
+     },
+     {
+      "label": "Analysten-Revisionen",
+      "points": 0.0,
+      "max": 10,
+      "detail": "k.A."
+     },
+     {
+      "label": "Kursziel-Abstand",
+      "points": 0.0,
+      "max": 5,
+      "detail": "k.A."
+     }
+    ]
+   }
+  },
+  "SPGI": {
+   "name": "SPGI",
+   "isin": null,
+   "index": "Watchlist",
+   "sector": "unbekannt",
+   "metrics": {
+    "last": 431.29,
+    "dd_ath": -18.5,
+    "days_since_ath": 372,
+    "range_pos": 41.0,
+    "above_sma50": true,
+    "above_sma100": true,
+    "above_sma200": true,
+    "pct_above_sma50": 3.4948245766175834,
+    "pct_above_sma100": 5.41957688094572,
+    "pct_above_sma200": 0.20179267571316384,
+    "sma50_slope": 2.35,
+    "sma200_slope": -0.86,
+    "higher_low": true,
+    "higher_low_pct": 8.4,
+    "rsi14": 57.6,
+    "rsi_min60": 37.7,
+    "rsi_week": 52.9,
+    "perf": {
+     "m1": 2.7,
+     "m3": 9.9,
+     "m6": 9.7,
+     "m12": -17.5
+    },
+    "rs6": -7.5,
+    "vol_pressure_5d": 1.72,
+    "vol_breakout": 0.85
+   },
+   "flags": [],
+   "earnings_in": null,
+   "analyst": {},
+   "revision_note": null,
+   "target": {
+    "target_abs": null,
+    "upside_pct": null,
+    "fresh": null,
+    "n_analysts": null,
+    "empfehlung": null,
+    "rec_breakdown": null
+   },
+   "scores": {
+    "turnaround": 83.0,
+    "momentum": 38.3,
+    "value": 0.0
+   },
+   "why": {
+    "turnaround": [
+     "hoeheres Tief",
+     "ueber 50-Tage-Linie",
+     "50-Tage-Linie dreht nach oben",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Wende"
+    ],
+    "momentum": [
+     "ueber 50- und 200-Tage-Linie",
+     "Kaufdruck der letzten 5 Tage bestaetigt die Staerke"
+    ],
+    "value": [
+     "keine Fundamentaldaten"
+    ]
+   },
+   "breakdown": {
+    "turnaround": [
+     {
+      "label": "Hoeheres Tief",
+      "points": 22.2,
+      "max": 25,
+      "detail": "ja, 30T-Tief liegt 8.4% ueber dem 90T-Tief davor"
+     },
+     {
+      "label": "Abstand 50T-Linie",
+      "points": 10.0,
+      "max": 10,
+      "detail": "+3.5% darueber 50T-Linie"
+     },
+     {
+      "label": "Ueber 100T-Linie",
+      "points": 5.0,
+      "max": 5,
+      "detail": "ja"
+     },
+     {
+      "label": "50T-Linie im Aufwaertstrend",
+      "points": 8.4,
+      "max": 10,
+      "detail": "+2.4% Veraenderung der Linie in 21 Tagen"
+     },
+     {
+      "label": "RSI-Erholung",
+      "points": 7.4,
+      "max": 15,
+      "detail": "RSI 58"
+     },
+     {
+      "label": "Volumen-Ausbruch",
+      "points": 0.0,
+      "max": 5,
+      "detail": "unterdurchschnittlich (0.85x Ø20T)"
+     },
+     {
+      "label": "Position 52W-Spanne",
+      "points": 10.0,
+      "max": 10,
+      "detail": "41% der Jahres-Spanne (0%=Jahrestief, 100%=Jahreshoch)"
+     },
+     {
+      "label": "Kauf-/Verkaufsdruck 5T",
+      "points": 20.0,
+      "max": 20,
+      "detail": "mehr Kaeufer als Verkaeufer (1.72x)"
+     }
+    ],
+    "momentum": [
+     {
+      "label": "Rel. Staerke 6M",
+      "points": 0.0,
+      "max": 28,
+      "detail": "-8% staerker/schwaecher als der Index"
+     },
+     {
+      "label": "Abstand 50T-Linie",
+      "points": 10.0,
+      "max": 10,
+      "detail": "+3.5% darueber 50T-Linie"
+     },
+     {
+      "label": "Abstand 200T-Linie",
+      "points": 5.3,
+      "max": 10,
+      "detail": "+0.2% darueber 200T-Linie"
+     },
+     {
+      "label": "Ueber 100T-Linie",
+      "points": 5.0,
+      "max": 5,
+      "detail": "ja"
+     },
+     {
+      "label": "200T-Linie im Aufwaertstrend",
+      "points": 0.0,
+      "max": 10,
+      "detail": "-0.9% Veraenderung der Linie in 21 Tagen"
+     },
+     {
+      "label": "Position 52W-Spanne",
+      "points": 0.0,
+      "max": 15,
+      "detail": "41% der Jahres-Spanne (0%=Jahrestief, 100%=Jahreshoch)"
+     },
+     {
+      "label": "Volumen-Ausbruch",
+      "points": 0.0,
+      "max": 4,
+      "detail": "unterdurchschnittlich (0.85x Ø20T)"
+     },
+     {
+      "label": "Kauf-/Verkaufsdruck 5T",
+      "points": 18.0,
+      "max": 18,
+      "detail": "mehr Kaeufer als Verkaeufer (1.72x)"
+     }
+    ],
+    "value": [
+     {
+      "label": "KGV verbessert",
+      "points": 0.0,
+      "max": 10,
+      "detail": "k.A."
+     },
+     {
+      "label": "KGV Niveau",
+      "points": 0.0,
+      "max": 10,
+      "detail": "k.A."
+     },
+     {
+      "label": "Free Cashflow",
+      "points": 0.0,
+      "max": 15,
+      "detail": "k.A."
+     },
+     {
+      "label": "Marge",
+      "points": 0.0,
+      "max": 10,
+      "detail": "k.A."
+     },
+     {
+      "label": "Umsatzwachstum",
+      "points": 0.0,
+      "max": 15,
+      "detail": "k.A."
+     },
+     {
+      "label": "Eigenkapitalrendite",
+      "points": 0.0,
+      "max": 10,
+      "detail": "k.A."
+     },
+     {
+      "label": "Verschuldung",
+      "points": 0.0,
+      "max": 10,
+      "detail": "k.A."
+     },
+     {
+      "label": "Ueber 200T-Linie",
+      "points": 0.0,
+      "max": 5,
+      "detail": "k.A."
+     },
+     {
+      "label": "Analysten-Revisionen",
+      "points": 0.0,
+      "max": 10,
+      "detail": "k.A."
+     },
+     {
+      "label": "Kursziel-Abstand",
+      "points": 0.0,
+      "max": 5,
+      "detail": "k.A."
      }
     ]
    }

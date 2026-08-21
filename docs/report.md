@@ -1,6 +1,6 @@
 # Boersen-Screening - 2026-08-21
 
-_Stand: Schlusskurse vom Vortag. Erstellt 2026-08-21T20:01:46+00:00 UTC. 159 Werte ausgewertet._
+_Stand: Schlusskurse vom Vortag. Erstellt 2026-08-21T20:28:45+00:00 UTC. 159 Werte ausgewertet._
 
 ## 📖 Glossar (was die Spalten bedeuten)
 
@@ -36,7 +36,7 @@ _Ueber alle 159 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 | 17 | AMD | US0079031078 | Advanced Micro Devices, Inc. | NASDAQ | 473.25 | -18% | 82% (34 Banken, ≤120T) | 612.84 (30% ueber Kurs) | 46 | 57 | 49 | 2026-08-21 BMO Capital: neu bewertet mit Outperform |
 | 18 | BKR | AR0302010498 | Baker Hughes Company | NASDAQ | 62.34 | -10% | 82% (11 Banken, ≤120T) | 71.91 (15% ueber Kurs) | 53 | 55 | 30 | 2026-07-28 UBS: Rating bestaetigt: Neutral |
 | 19 | GOOGL | CA02080M1005 | Alphabet Inc. | NASDAQ | 344.82 | -14% | 81% (26 Banken, ≤120T) | 428.07 (24% ueber Kurs) | 47 | 51 | 55 | 2026-07-23 UBS: Rating bestaetigt: Neutral |
-| 20 | UNH | - | UnitedHealth Group Incorporated | DOW | 390.05 | -35% | 81% (16 Banken, ≤120T) | 475.23 (22% ueber Kurs) | 38 | 54 | 48 | keine in 30T |
+| 20 | UNH | - | UnitedHealth Group Incorporated | DOW | 390.11 | -35% | 81% (16 Banken, ≤120T) | 475.23 (22% ueber Kurs) | 38 | 54 | 47 | keine in 30T |
 
 
 ## 🧭 Analysten-Einstufungen (Filtertreffer, letzte 30 Tage)

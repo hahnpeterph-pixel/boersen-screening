@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-08-21 20:01 UTC. 173 Werte, Fenster 90 Kalendertage. EUR/USD 1.1682._
+_Erstellt 2026-08-21 20:28 UTC. 173 Werte, Fenster 90 Kalendertage. EUR/USD 1.1681._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -18,6 +18,7 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | FTNT (FTNT) | 153.51 | ja | - | - | 45.76 |
 | HON (HON) | 215.9 | - | - | ja | 32.91 |
 | KLAC (KLAC) | 183.99 | - | ja | ja | 39.81 |
+| LRCX (LRCX) | 314.0 | ja | ja | - | 48.42 |
 | NVDA (NVDA) | 214.72 | - | - | ja | 51.01 |
 | ON (ON) | 74.21 | - | - | ja | 35.49 |
 | TXN (TXN) | 264.36 | - | - | ja | 39.04 |

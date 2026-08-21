@@ -1,6 +1,6 @@
 # Tiefs, Volumen und Kaufregel-Check
 
-_Erstellt 2026-08-21 20:01 UTC. Fenster: letzte 90 Kalendertage. Ein Swing-Tief ist ein Tag, dessen Tagestief unter dem der 3 Tage davor und der 3 Tage danach liegt. Der laufende Tag zaehlt nie mit._
+_Erstellt 2026-08-21 20:28 UTC. Fenster: letzte 90 Kalendertage. Ein Swing-Tief ist ein Tag, dessen Tagestief unter dem der 3 Tage davor und der 3 Tage danach liegt. Der laufende Tag zaehlt nie mit._
 
 ## Kaufregel
 
@@ -97,7 +97,7 @@ Tief minus 2,0 x ATR. Die Hebelangabe ist das, was sich bei diesem KO rechnerisc
 | Micron (MU) | 966,78 | 56,22 | 625,44 | 2,8x | 625,44 | 2,8x |
 | Microsoft (MSFT) | 483,24 | 10,54 | 456,06 | 17,8x | 328,11 | 3,1x |
 | Microsoft II (MSFT) | 483,24 | 10,54 | 456,06 | 17,8x | 328,11 | 3,1x |
-| Oracle (ORCL) | 146,49 | 6,49 | 101,52 | 3,3x | 101,52 | 3,3x |
+| Oracle (ORCL) | 146,47 | 6,49 | 101,52 | 3,3x | 101,52 | 3,3x |
 
 _'nach Trendtief' orientiert sich am juengsten Tief und laesst mehr Hebel zu. 'konservativ' orientiert sich am tiefsten Tief des Fensters und ueberlebt auch einen Rueckfall dorthin._
 
@@ -133,7 +133,7 @@ _Diese Zeilen in die gelben Spalten uebertragen. Reihenfolge wie dort._
 | META | 549,90 | 17,02 | 38,7 | 524,52 | 2026-07-30 | 2,22 |
 | MU | 966,78 | 56,22 | 54,3 | 915,18 | 2026-08-19 | 1,55 |
 | MSFT | 483,24 | 10,54 | 62,4 | 477,15 | 2026-08-18 | 0,64 |
-| ORCL | 146,49 | 6,49 | 52,7 | 137,44 | 2026-08-19 | 0,82 |
+| ORCL | 146,47 | 6,49 | 52,7 | 137,44 | 2026-08-19 | 0,82 |
 | NVDA | 214,72 | 5,75 | 51,0 | 214,50 | 2026-08-21 | - |
 | AMAT | 492,32 | 27,13 | 43,1 | 483,13 | 2026-08-21 | - |
 

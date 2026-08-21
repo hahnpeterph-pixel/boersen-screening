@@ -55,49 +55,13 @@
  },
  "changes": {
   "turnaround": {
-   "entries": [
-    {
-     "ticker": "KHC",
-     "rank": 11
-    },
-    {
-     "ticker": "PCAR",
-     "rank": 14
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "TRV",
-     "old_rank": 8
-    },
-    {
-     "ticker": "GEHC",
-     "old_rank": 15
-    }
-   ],
+   "entries": [],
+   "exits": [],
    "moves": []
   },
   "momentum": {
-   "entries": [
-    {
-     "ticker": "PAYX",
-     "rank": 10
-    },
-    {
-     "ticker": "V",
-     "rank": 14
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "PANW",
-     "old_rank": 10
-    },
-    {
-     "ticker": "TRV",
-     "old_rank": 12
-    }
-   ],
+   "entries": [],
+   "exits": [],
    "moves": []
   },
   "value": {

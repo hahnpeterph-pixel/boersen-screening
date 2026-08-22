@@ -315,6 +315,10 @@ def main() -> int:
             "sequenzen": len(ph),
             "tiefs_median": median([p["tiefs"] for p in ph]),
             "tiefs_max": max(p["tiefs"] for p in ph),
+            # Die letzten fuenf Sequenzen im Klartext - beantwortet die Frage
+            # "wie viele Tiefs hatte die VORIGE Abwaertsstrecke", die ein
+            # Median nicht beantworten kann.
+            "tiefs_letzte": " ".join(str(p["tiefs"]) for p in ph[-5:]),
             "korrektur_tage": median([p["dauer_ab"] for p in ph]),
             "korrektur_atr": median([p["tiefe_ab"] for p in ph]),
             "anstieg_tage": median([p["dauer_auf"] for p in ph]),
@@ -332,6 +336,7 @@ def main() -> int:
     SPALTEN = ["ticker", "sequenzen", "tiefs_median", "tiefs_max",
                "korrektur_tage", "korrektur_atr", "anstieg_tage", "anstieg_atr",
                "weit_tage", "weit_atr",
+               "tiefs_letzte",
                "vk_rsi_median", "vk_rsi_p75", "vk_rsi_faelle",
                "kauf_rsi_median", "kauf_rsi_p25", "kauf_rsi_faelle",
                "puffer_haelt_pct", "puffer_p75", "puffer_p90", "puffer_p95"]
@@ -383,11 +388,11 @@ def main() -> int:
          "Tief kommt - diese Zahl faellt in einem Aufwaertsmarkt zwangslaeufig gross aus "
          "und taugt nur zur Einordnung, nicht zum Vergleich._", "",
          "## Je Wert", "",
-         "| Ticker | Sequenzen | Tiefs Median | Tiefs max | Korrektur Tage | Korrektur ATR | "
+         "| Ticker | Sequenzen | Tiefs Median | Tiefs max | letzte fuenf | Korrektur Tage | Korrektur ATR | "
          "Anstieg Tage | Anstieg ATR | Anstieg/Korrektur | weit Tage | weit ATR | "
          "Kauf-RSI Median | Kauf-RSI 25% | Verkaufs-RSI Median | Verkaufs-RSI 75% | "
          "Tief haelt | Puffer 90% |",
-         "|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|"]
+         "|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|"]
 
     def z(v, nk=1, einheit=""):
         """Zahl als Text, mit Strich fuer fehlende Werte. Die Einheit steht
@@ -399,6 +404,7 @@ def main() -> int:
         v = (e["anstieg_atr"] / e["korrektur_atr"]
              if e["anstieg_atr"] and e["korrektur_atr"] else None)
         L.append(f"| {e['ticker']} | {e['sequenzen']} | {z(e['tiefs_median'])} | {e['tiefs_max']} | "
+                 f"{e.get('tiefs_letzte','-')} | "
                  f"{z(e['korrektur_tage'])} | {z(e['korrektur_atr'], 2)} | "
                  f"{z(e['anstieg_tage'])} | {z(e['anstieg_atr'], 2)} | "
                  f"**{z(v, 2)}** | {z(e['weit_tage'])} | {z(e['weit_atr'], 2)} | "

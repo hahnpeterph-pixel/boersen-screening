@@ -1,0 +1,263 @@
+#!/usr/bin/env python3
+"""
+Phasen — wie laeuft eine Korrektur bei DIESEM Wert typischerweise ab?
+
+Beantwortet drei Fragen je Basiswert, historisch gemessen:
+
+  1. Wie viele Tiefs entstehen ueblicherweise, bis der naechste Anstieg
+     startet? Also: wie oft laeuft die Treppe nach unten weiter, statt
+     dass es dreht.
+  2. Wie lange dauert die Korrektur, vom ersten bis zum letzten Tief?
+  3. Wie lange dauert der Anstieg danach, und wie weit traegt er?
+
+Grundlage sind die Tiefs nach der Umkehr-Regel, identisch zu
+marktdaten.py: eine Abwaertsstrecke endet, sobald der Kurs das HOCH der
+Tiefkerze ueberschreitet. Eine Aufwaertsstrecke endet, sobald der Kurs das
+TIEF der Hoechstkerze unterschreitet.
+
+Eine ABWAERTSSEQUENZ ist eine Folge von Tiefs, bei der jedes tiefer liegt
+als das vorherige. Sie endet, sobald ein Tief hoeher liegt als sein
+Vorgaenger - das ist der Beginn des Anstiegs. Der ANSTIEG laeuft von dort
+bis zum letzten Hoch, bevor wieder ein tieferes Tief entsteht.
+
+Alle Laengen in Handelstagen, alle Kursbewegungen in ATR(14) zum Zeitpunkt
+des jeweiligen Tiefs - so sind Werte unterschiedlicher Groesse vergleichbar.
+
+Ausgabe:
+  docs/phasen.csv  -> eine Zeile je Wert, zum Einlesen ins Orderbuch
+  docs/phasen.md   -> lesbare Uebersicht mit Gesamtverteilung
+
+Aufruf:  python3 phasen.py
+         python3 phasen.py --jahre 5
+
+KEINE Anlageberatung. Das Skript misst historische Kursverlaeufe.
+"""
+
+from __future__ import annotations
+
+import csv
+import json
+import sys
+from datetime import datetime, timezone
+from pathlib import Path
+
+import numpy as np
+import pandas as pd
+
+BASE = Path(__file__).resolve().parent
+DOCS = BASE / "docs"
+CSV_AUS = DOCS / "phasen.csv"
+MD_AUS = DOCS / "phasen.md"
+
+JAHRE = 3
+ATR_TAGE = 14
+
+
+def atr(df: pd.DataFrame, tage: int = ATR_TAGE) -> pd.Series:
+    hoch, tief, schluss = df["High"], df["Low"], df["Close"]
+    vor = schluss.shift(1)
+    spanne = pd.concat([hoch - tief, (hoch - vor).abs(), (tief - vor).abs()], axis=1).max(axis=1)
+    return spanne.ewm(alpha=1 / tage, adjust=False).mean()
+
+
+def pivots(df: pd.DataFrame) -> list[tuple[str, int]]:
+    """Abwechselnde Tiefs und Hochs nach der Umkehr-Regel.
+
+    Identisch zur Logik in marktdaten.py, hier zusaetzlich mit den Hochs,
+    weil erst sie den Anstieg begrenzen. Gibt [("tief", i), ("hoch", j), ...]
+    in zeitlicher Reihenfolge zurueck.
+    """
+    hoch, tief = df["High"].values, df["Low"].values
+    punkte: list[tuple[str, int]] = []
+    richtung = "ab"
+    kandidat = gipfel = 0
+
+    for i in range(1, len(df)):
+        if richtung == "ab":
+            if tief[i] < tief[kandidat]:
+                kandidat = i
+            elif hoch[i] > hoch[kandidat]:
+                punkte.append(("tief", kandidat))
+                richtung, gipfel = "auf", i
+        else:
+            if hoch[i] > hoch[gipfel]:
+                gipfel = i
+            elif tief[i] < tief[gipfel]:
+                punkte.append(("hoch", gipfel))
+                richtung, kandidat = "ab", i
+    return punkte
+
+
+def phasen(df: pd.DataFrame) -> list[dict]:
+    """Abwaertssequenzen und die jeweils folgenden Anstiege."""
+    p = pivots(df)
+    tiefe = [(i, float(df["Low"].values[i])) for art, i in p if art == "tief"]
+    hochs = [(i, float(df["High"].values[i])) for art, i in p if art == "hoch"]
+    if len(tiefe) < 3:
+        return []
+
+    a = atr(df).values
+    ergebnis = []
+    k = 0
+    while k < len(tiefe) - 1:
+        # Abwaertssequenz: solange jedes Tief tiefer liegt als das vorherige
+        start = k
+        while k < len(tiefe) - 1 and tiefe[k + 1][1] < tiefe[k][1]:
+            k += 1
+        letztes_i, letztes_kurs = tiefe[k]
+        anzahl = k - start + 1
+
+        atr_hier = a[letztes_i]
+        if not np.isfinite(atr_hier) or atr_hier <= 0:
+            k += 1
+            continue
+
+        # Die Korrektur beginnt beim letzten Hoch VOR dem ersten Tief der
+        # Sequenz, nicht beim ersten Tief selbst - sonst waere die Dauer
+        # null, sobald eine Sequenz nur aus einem Tief besteht.
+        vorhoch = [(i, h) for i, h in hochs if i < tiefe[start][0]]
+        if vorhoch:
+            start_i, start_kurs = vorhoch[-1]
+        else:
+            start_i, start_kurs = tiefe[start][0], tiefe[start][1]
+        dauer_ab = letztes_i - start_i
+        tiefe_ab = (start_kurs - letztes_kurs) / atr_hier
+
+        # Anstieg: hoechstes Hoch, bevor wieder ein tieferes Tief kommt
+        naechstes_tieferes = next((i for i, kurs in tiefe[k + 1:] if kurs < letztes_kurs), None)
+        grenze = naechstes_tieferes if naechstes_tieferes is not None else len(df) - 1
+        kandidaten = [(i, h) for i, h in hochs if letztes_i < i <= grenze]
+        if kandidaten:
+            gipfel_i, gipfel_kurs = max(kandidaten, key=lambda x: x[1])
+            dauer_auf = gipfel_i - letztes_i
+            hoehe_auf = (gipfel_kurs - letztes_kurs) / atr_hier
+        else:
+            dauer_auf = hoehe_auf = None
+
+        ergebnis.append({
+            "tiefs": anzahl,
+            "dauer_ab": dauer_ab,
+            "tiefe_ab": tiefe_ab,
+            "dauer_auf": dauer_auf,
+            "hoehe_auf": hoehe_auf,
+        })
+        k += 1
+    return ergebnis
+
+
+def median(werte) -> float | None:
+    sauber = [w for w in werte if w is not None and np.isfinite(w)]
+    return float(np.median(sauber)) if sauber else None
+
+
+def lade(tickers: list[str], jahre: int) -> dict[str, pd.DataFrame]:
+    import yfinance as yf
+    print(f"Lade {len(tickers)} Werte, {jahre} Jahre ...")
+    daten: dict[str, pd.DataFrame] = {}
+    for i in range(0, len(tickers), 40):
+        teil = tickers[i:i + 40]
+        try:
+            roh = yf.download(teil, period=f"{jahre}y", interval="1d", auto_adjust=True,
+                              group_by="ticker", threads=True, progress=False)
+        except Exception as exc:  # noqa: BLE001
+            print(f"  ! Abruf fehlgeschlagen ({teil[0]} ...): {exc}")
+            continue
+        for t in teil:
+            try:
+                d = roh[t] if isinstance(roh.columns, pd.MultiIndex) else roh
+                d = d.dropna(subset=["High", "Low", "Close"])
+                if len(d) > 120:
+                    daten[t] = d
+            except Exception:  # noqa: BLE001
+                continue
+    print(f"  {len(daten)} Werte geladen.")
+    return daten
+
+
+def main() -> int:
+    jahre = JAHRE
+    if "--jahre" in sys.argv:
+        jahre = int(sys.argv[sys.argv.index("--jahre") + 1])
+
+    universum: list[str] = []
+    datei = BASE / "universe.json"
+    if datei.exists():
+        roh = json.loads(datei.read_text(encoding="utf-8"))
+        for gruppe in roh.get("benchmarks", {}):
+            universum += roh.get(gruppe, [])
+        for gruppe in ("COMMODITIES", "CRYPTO"):
+            universum += list(roh.get(gruppe, {}).keys())
+    tickers = sorted(set(universum))
+    if not tickers:
+        print("universe.json nicht gefunden oder leer.")
+        return 1
+
+    daten = lade(tickers, jahre)
+    if len(daten) < 10:
+        print("Zu wenige Kursdaten - Abbruch.")
+        return 1
+
+    zeilen = []
+    for t, df in sorted(daten.items()):
+        ph = phasen(df)
+        if len(ph) < 3:
+            continue
+        zeilen.append({
+            "ticker": t,
+            "sequenzen": len(ph),
+            "tiefs_median": median([p["tiefs"] for p in ph]),
+            "tiefs_max": max(p["tiefs"] for p in ph),
+            "korrektur_tage": median([p["dauer_ab"] for p in ph]),
+            "korrektur_atr": median([p["tiefe_ab"] for p in ph]),
+            "anstieg_tage": median([p["dauer_auf"] for p in ph]),
+            "anstieg_atr": median([p["hoehe_auf"] for p in ph]),
+        })
+
+    DOCS.mkdir(parents=True, exist_ok=True)
+    with CSV_AUS.open("w", encoding="utf-8", newline="") as f:
+        s = csv.DictWriter(f, fieldnames=list(zeilen[0].keys()))
+        s.writeheader()
+        for z in zeilen:
+            s.writerow({k: (round(v, 2) if isinstance(v, float) else v) for k, v in z.items()})
+
+    def spalte(name):
+        return [z[name] for z in zeilen if z[name] is not None]
+
+    L = ["# Phasen - Korrektur und Anstieg je Wert", "",
+         f"_Erstellt {datetime.now(timezone.utc):%Y-%m-%d %H:%M} UTC, {jahre} Jahre Historie, "
+         f"{len(zeilen)} Werte. Tiefs nach der Umkehr-Regel. Eine Abwaertssequenz ist eine Folge "
+         "von Tiefs, bei der jedes tiefer liegt als das vorherige; sie endet mit dem ersten "
+         "hoeheren Tief. Alle Werte sind Mediane, Laengen in Handelstagen, Bewegungen in ATR(14)._", "",
+         "## Gesamtbild", "",
+         "| Kennzahl | Median ueber alle Werte |", "|---|---|",
+         f"| Tiefs je Abwaertssequenz | {median(spalte('tiefs_median')):.1f} |",
+         f"| Dauer der Korrektur | {median(spalte('korrektur_tage')):.1f} Handelstage |",
+         f"| Tiefe der Korrektur | {median(spalte('korrektur_atr')):.2f} ATR |",
+         f"| Dauer des Anstiegs | {median(spalte('anstieg_tage')):.1f} Handelstage |",
+         f"| Hoehe des Anstiegs | {median(spalte('anstieg_atr')):.2f} ATR |", "",
+         "_Traegt der Anstieg im Median weiter als die Korrektur tief war, lohnt das Warten "
+         "auf das Ende der Treppe. Ist es umgekehrt, ist der Einstieg in eine laufende "
+         "Abwaertssequenz systematisch teuer._", "",
+         "## Je Wert", "",
+         "| Ticker | Sequenzen | Tiefs Median | Tiefs max | Korrektur Tage | Korrektur ATR | "
+         "Anstieg Tage | Anstieg ATR |", "|---|---|---|---|---|---|---|---|"]
+
+    def z(v, nk=1):
+        return "-" if v is None else f"{v:.{nk}f}"
+
+    for e in sorted(zeilen, key=lambda x: -(x["anstieg_atr"] or 0)):
+        L.append(f"| {e['ticker']} | {e['sequenzen']} | {z(e['tiefs_median'])} | {e['tiefs_max']} | "
+                 f"{z(e['korrektur_tage'])} | {z(e['korrektur_atr'], 2)} | "
+                 f"{z(e['anstieg_tage'])} | {z(e['anstieg_atr'], 2)} |")
+    L += ["", "_Sortiert nach Hoehe des Anstiegs. Ein Wert mit vielen Tiefs je Sequenz braucht "
+          "Geduld: dort folgen auf ein frisches Tief typischerweise noch weitere, bevor der "
+          "Anstieg beginnt._"]
+
+    MD_AUS.write_text("\n".join(L), encoding="utf-8")
+    print(f"\nGeschrieben: {CSV_AUS} und {MD_AUS}")
+    print("\n".join(L[:22]))
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

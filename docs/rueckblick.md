@@ -1,6 +1,6 @@
 # Rueckblick - was hat die erfolgreichen Trades getragen?
 
-_Erstellt 2026-08-22 09:47 UTC. Eine Zeile je abgeschlossener Tranche. Der Stand am Kauftag ist ausschliesslich aus damals vorliegenden Daten rekonstruiert._
+_Erstellt 2026-08-22 16:58 UTC. Eine Zeile je abgeschlossener Tranche. Der Stand am Kauftag ist ausschliesslich aus damals vorliegenden Daten rekonstruiert._
 
 ## Teil 1 - Zerlegung des Gewinns
 

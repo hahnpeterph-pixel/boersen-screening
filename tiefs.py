@@ -10,9 +10,16 @@ Basiswerts liegen - mit etwas Abstand, damit ein erneuter Test dieses
 Tiefs den Schein nicht sofort ausknockt.
 
 Definition markantes Tief (Swing-Tief):
-Ein Handelstag, dessen Tagestief niedriger ist als das Tagestief der
-LINKS Tage davor UND der RECHTS Tage danach. Der laufende Tag zaehlt nie
-mit, weil noch offen ist, ob ein Tief haelt.
+Seit 22.08.2026 die Umkehr-Regel aus tiefs_regel.py - dieselbe, mit der
+marktdaten.py und phasen.py rechnen. Ein Tief zaehlt, sobald eine spaetere
+Kerze das HOCH der Tiefkerze ueberschreitet. Solange es abwaerts geht,
+gilt immer das TIEFSTE Tief der Strecke.
+
+Die alte Regel (LINKS Tage davor, RECHTS Tage danach) machte ein Tief erst
+nach drei ueberstandenen Handelstagen sichtbar - genau in den Tagen, in
+denen gekauft wird. Die Parameter links/rechts in watchlist.json werden
+nicht mehr ausgewertet und bleiben nur stehen, damit vorhandene
+Konfigurationen ohne Aenderung weiterlaufen.
 
 Massgeblich ist das JUENGSTE Tief (aktuelle Trendstruktur). Das tiefste
 Tief des Fensters wird nur zur Einordnung mit ausgegeben und geht nicht
@@ -30,7 +37,9 @@ import os
 from datetime import datetime, timezone
 
 import pandas as pd
-import yfinance as yf
+
+import kurse
+import tiefs_regel as regel
 
 HIER = os.path.dirname(os.path.abspath(__file__))
 WATCHLIST = os.path.join(HIER, "watchlist.json")
@@ -76,78 +85,37 @@ def konfig_laden():
 
 
 def kerzen_laden(ticker, tage):
-    if ticker in _KERZEN_CACHE:
-        return _KERZEN_CACHE[ticker]
-    df = _kerzen_holen(ticker, tage)
-    _KERZEN_CACHE[ticker] = df
-    return df
+    """Durchreiche auf kurse.py. Seit 22.08.2026 holen screener.py,
+    marktdaten.py und dieses Skript dieselben Kerzen aus einem Cache,
+    statt sie dreimal von Yahoo zu ziehen.
 
-
-def _kerzen_holen(ticker, tage):
-    zeitraum = f"{max(int(tage * 2.0), 120)}d"
-    try:
-        df = yf.Ticker(ticker).history(period=zeitraum, interval="1d",
-                                       auto_adjust=False)
-    except Exception as e:
-        print(f"  {ticker}: Abruf fehlgeschlagen ({e})")
-        return None
-    if df is None or df.empty or "Low" not in df.columns:
-        print(f"  {ticker}: keine Daten")
-        return None
-    df = df.dropna(subset=["Low"])
-    if df.empty:
-        return None
-    df.index = pd.to_datetime(df.index).tz_localize(None)
-    return df
+    Die Periode ist bewusst fest auf 400d gesetzt statt aus "tage"
+    abgeleitet - nur so treffen alle drei Skripte denselben Cache-
+    Eintrag. 400 Tage decken das 50-Tage-Fenster hier mit Abstand ab.
+    """
+    return kurse.kerzen(ticker, period="400d")
 
 
 def swing_tiefs(df, links, rechts, fenster_tage, unbestaetigt=False):
-    """Alle Swing-Tiefs im Fenster, juengstes zuerst.
+    """Swing-Tiefs nach der gemeinsamen Regel aus tiefs_regel.py.
 
-    unbestaetigt=True nimmt zusaetzlich das Tief des zuletzt abgeschlossenen
-    Tages auf, wenn es unter den LINKS Tagen davor liegt - auch ohne die
-    sonst noetigen RECHTS Bestaetigungstage. Solche Eintraege sind mit
-    "bestaetigt": False markiert.
+    Bis 22.08.2026 rechnete dieses Skript als einziges noch mit der alten
+    3-links-3-rechts-Regel: ein Tief wurde erst nach drei ueberstandenen
+    Handelstagen sichtbar - genau in den Tagen, in denen gekauft wird.
+    Dadurch meldete docs/tiefs.md andere Tiefs als docs/marktdaten.csv.
+
+    links und rechts werden nicht mehr ausgewertet. Sie bleiben in der
+    Signatur und in watchlist.json stehen, damit vorhandene Konfigurationen
+    ohne Aenderung weiterlaufen.
     """
-    if df is None or len(df) < links + rechts + 2:
-        return []
-    lows = df["Low"].values
-    daten = df.index
-    vols = df["Volume"].values if "Volume" in df.columns else [None] * len(df)
-    grenze = daten[-1] - pd.Timedelta(days=fenster_tage)
-
-    treffer = []
-    for i in range(links, len(df) - rechts):
-        if daten[i] < grenze:
-            continue
-        wert = lows[i]
-        if all(lows[i - j] > wert for j in range(1, links + 1)) and \
-           all(lows[i + j] > wert for j in range(1, rechts + 1)):
-            v = vols[i]
-            treffer.append({
-                "datum": daten[i],
-                "tief": float(wert),
-                "volumen": None if v is None or pd.isna(v) else int(v),
-                "index": i,
-                "bestaetigt": True,
-            })
-
-    if unbestaetigt:
-        i = len(df) - 1
-        wert = lows[i]
-        schon_da = any(t["index"] == i for t in treffer)
-        if not schon_da and i >= links and daten[i] >= grenze and \
-           all(lows[i - j] > wert for j in range(1, links + 1)):
-            v = vols[i]
-            treffer.append({
-                "datum": daten[i],
-                "tief": float(wert),
-                "volumen": None if v is None or pd.isna(v) else int(v),
-                "index": i,
-                "bestaetigt": False,
-            })
-
-    treffer.sort(key=lambda t: t["datum"], reverse=True)
+    treffer = regel.swing_tiefs(df, fenster_tage=fenster_tage,
+                                unbestaetigt=unbestaetigt)
+    # Feldnamen angleichen: das Regelmodul liefert i/vol/best, dieses Skript
+    # arbeitet historisch mit index/volumen/bestaetigt.
+    for t in treffer:
+        t["index"] = t["i"]
+        t["volumen"] = t.get("vol")
+        t["bestaetigt"] = bool(t.get("best"))
     return treffer
 
 
@@ -353,9 +321,10 @@ def main():
         "# Tiefs, Volumen und Kaufregel-Check",
         "",
         f"_Erstellt {jetzt}. Fenster: letzte {k['fenster_tage']} Kalendertage. "
-        f"Ein Swing-Tief ist ein Tag, dessen Tagestief unter dem der "
-        f"{k['links']} Tage davor und der {k['rechts']} Tage danach liegt. "
-        f"Der laufende Tag zaehlt nie mit._",
+        f"Tiefs nach der Umkehr-Regel (tiefs_regel.py): ein Tief zaehlt, "
+        f"sobald eine spaetere Kerze das Hoch der Tiefkerze ueberschreitet. "
+        f"Solange es abwaerts geht, gilt das tiefste Tief der Strecke. "
+        f"Gerechnet wird auf abgeschlossenen Tageskerzen._",
         "",
         "## Kaufregel",
         "",

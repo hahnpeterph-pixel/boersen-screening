@@ -406,6 +406,23 @@ def wettlauf(faelle: list[dict], puffer: float, ziel_anteil: float = ZIEL_ANTEIL
             "tage_ko": float(np.median(tage_ko)) if tage_ko else None}
 
 
+def anstieg_verteilung(faelle: list[dict]) -> dict:
+    """Verteilung des Anstiegs bis zum naechsten Hoch - die Ertragsseite.
+
+    Derselbe Aufbau wie puffer_verteilung, damit Risiko und Ertrag im selben
+    Raster nebeneinanderstehen. Der Median allein verdeckt, dass bei fruehen
+    Tiefs ein Viertel der Faelle im Minus endet.
+    """
+    x = np.array([f["anstieg_pivot_atr"] for f in faelle
+                  if np.isfinite(f["anstieg_pivot_atr"])])
+    if not len(x):
+        return {}
+    aus = {"anstieg_negativ_pct": float((x < 0).mean() * 100)}
+    for q in (10, 25, 50, 75, 90, 95):
+        aus[f"anstieg_p{q}"] = float(np.percentile(x, q))
+    return aus
+
+
 def puffer_verteilung(faelle: list[dict]) -> dict:
     """Welchen Puffer haetten diese Tiefs tatsaechlich gebraucht?
 
@@ -641,7 +658,13 @@ def bericht(alle: list[dict], daten: dict, jahre: int) -> str:
           "gezaehlt, ohne die Gelegenheit gehabt zu haben. Alle folgenden "
           "Tabellen nennen den Anteil, der drei Monate haelt._", ""]
 
-    L += ["## Nach Position in der Serie", "",
+    L += ["## Gepoolt ueber alle Werte", "",
+          "_ACHTUNG: die folgenden Tabellen mischen alle 170 Werte. Sie "
+          "zeigen das Muster, nicht die Eigenschaft eines einzelnen Papiers - "
+          "ein ruhiger Titel und ein zerrissener stehen darin in derselben "
+          "Zeile. Fuer Entscheidungen zaehlt der Abschnitt 'Je Wert' und "
+          "`halteraten_werte.csv`._", "",
+          "## Nach Position in der Serie", "",
           "_Die Leitfrage: haelt das erste Tief seltener als ein spaeteres? "
           "y ist die werttypische Anzahl Tiefs je Sequenz dieses Wertes._", ""]
     max_pos = max(f["position"] for f in fest)
@@ -800,13 +823,16 @@ def bericht(alle: list[dict], daten: dict, jahre: int) -> str:
         nach_wert.setdefault(f["ticker"], []).append(f)
     spalten = list(range(1, max_pos + 1))
 
-    L += ["## Je Wert", "",
-          "_Halterate bei 2 ATR Puffer, je Tiefsposition. Keine "
-          "Sammelklassen: waren es zehn Tiefs, steht Tief 10 da. Ein Strich "
-          "heisst, dass diese Position bei diesem Wert nicht vorkam. In "
-          "Klammern die Fallzahl - eine Quote aus zwei Faellen ist keine "
-          "Eigenschaft des Papiers, sondern Zufall. Alle Puffer stehen in "
-          "`halteraten_werte.csv`._", "",
+    L += ["## Je Wert - die eigentliche Auswertung", "",
+          "_Uebersicht: Anteil, der bei 2 ATR Puffer drei Monate haelt, je "
+          "Tiefsposition. In Klammern die Fallzahl - eine Quote aus zwei "
+          "Faellen ist keine Eigenschaft des Papiers, sondern Zufall._", "",
+          "_Die vollstaendige Auswertung steht in `halteraten_werte.csv`: je "
+          "Aktie und je Tiefsposition die gesamte Perzentilreihe (p5 bis p99, "
+          "Minimum, Maximum) fuer benoetigten Puffer, Anstieg, "
+          "Einstiegsabstand und RSI, dazu Ziel- und KO-Quote fuer alle "
+          "sechzehn Pufferstufen. Keine Sammelklassen, nichts unterdrueckt._",
+          "",
           "| Wert | Tiefs | alle | " +
           " | ".join(f"Tief {i}" for i in spalten) + " | Anstieg |",
           "|---" * (len(spalten) + 4) + "|"]
@@ -827,6 +853,41 @@ def bericht(alle: list[dict], daten: dict, jahre: int) -> str:
           "_Keine Anlageberatung. Historische Kursverlaeufe, gemessen mit "
           "der Regel aus `tiefs_regel.py`._"]
     return "\n".join(L)
+
+
+def _reihe(g: list[dict], feld: str, praefix: str) -> dict:
+    """Volle Perzentilreihe einer Groesse - nicht nur der Median."""
+    x = np.array([f[feld] for f in g
+                  if f.get(feld) is not None and np.isfinite(f[feld])])
+    if not len(x):
+        return {}
+    aus = {f"{praefix}_n": int(len(x))}
+    for q in (5, 10, 25, 50, 75, 80, 85, 90, 95, 99):
+        aus[f"{praefix}_p{q}"] = round(float(np.percentile(x, q)), 3)
+    aus[f"{praefix}_min"] = round(float(x.min()), 3)
+    aus[f"{praefix}_max"] = round(float(x.max()), 3)
+    return aus
+
+
+def zeile_je_gruppe(ticker: str, position, g: list[dict]) -> dict:
+    """Eine vollstaendige Zeile: Puffer, Anstieg, Wettlauf, Einstieg, RSI."""
+    z0 = {"ticker": ticker, "position": position, "faelle": len(g)}
+    z0.update({f"puffer_{k}": v for k, v in
+               _reihe(g, "benoetigt_atr", "x").items()})
+    z0.update({f"anstieg_{k}": v for k, v in
+               _reihe(g, "anstieg_pivot_atr", "x").items()})
+    z0.update({f"abstand_{k}": v for k, v in
+               _reihe(g, "abstand_atr", "x").items()})
+    z0.update({f"rsi_{k}": v for k, v in _reihe(g, "rsi", "x").items()})
+    x = np.array([f["benoetigt_atr"] for f in g])
+    z0["ohne_puffer_pct"] = round(float((x <= 0.001).mean() * 100), 1)
+    zz = [f["ziel_atr"] for f in g if f.get("ziel_atr")]
+    z0["ziel_atr"] = round(float(np.median(zz)), 3) if zz else ""
+    for pf in PUFFER:
+        w = wettlauf(g, pf)
+        z0[f"ziel_zuerst_{pf}_pct"] = round(w["ziel_pct"], 1) if w else ""
+        z0[f"ko_zuerst_{pf}_pct"] = round(w["ko_pct"], 1) if w else ""
+    return z0
 
 
 def csv_roh(fest: list[dict]) -> None:
@@ -871,7 +932,14 @@ def csv_roh(fest: list[dict]) -> None:
 
 
 def csv_je_wert(fest: list[dict]) -> None:
-    """Halteraten je Wert und Tiefsposition - die Datei fuer die Excel."""
+    """Halteraten je Wert und Tiefsposition - die Hauptdatei.
+
+    Keine Pools: jede Aktie einzeln, jede Tiefsposition einzeln, keine
+    Sammelklassen. Fuer jede Groesse die volle Perzentilreihe statt nur des
+    Medians - eine Mitte allein sagt nichts ueber die Streuung, und genau
+    die entscheidet ueber die Pufferwahl. Die Fallzahl steht in jeder Zeile,
+    damit sichtbar bleibt, worauf eine Zahl beruht.
+    """
     nach_wert: dict = {}
     for f in fest:
         nach_wert.setdefault(f["ticker"], []).append(f)
@@ -879,44 +947,23 @@ def csv_je_wert(fest: list[dict]) -> None:
     zeilen = []
     for ticker in sorted(nach_wert):
         g_alle = nach_wert[ticker]
-        # Grundwert des Papiers, ueber alle Positionen
-        z0 = {"ticker": ticker, "position": "alle", "faelle": len(g_alle),
-              "anstieg_median_atr": round(float(np.median(
-                  [x["anstieg_atr"] for x in g_alle])), 2)}
-        for p in PUFFER:
-            z0[f"haelt_{p}_atr_pct"] = round(quote(g_alle, p), 1)
-        z0.update({k: round(v, 2) for k, v in puffer_verteilung(g_alle).items()})
-        av = [x["anstieg_pivot_atr"] for x in g_alle
-              if np.isfinite(x["anstieg_pivot_atr"])]
-        z0["anstieg_pivot_median_atr"] = round(float(np.median(av)), 3) if av else ""
-        w = wettlauf(g_alle, 2.0)
-        z0["ziel_zuerst_2atr_pct"] = round(w["ziel_pct"], 1) if w else ""
-        zeilen.append(z0)
-
+        zeilen.append(zeile_je_gruppe(ticker, "alle", g_alle))
         gruppen: dict = {}
         for f in g_alle:
-            gruppen.setdefault(position_wert(f), []).append(f)
+            gruppen.setdefault(f["position"], []).append(f)
         for k in sorted(gruppen):
-            g = gruppen[k]
-            z1 = {"ticker": ticker, "position": f"Tief {k}", "faelle": len(g),
-                  "anstieg_median_atr": round(float(np.median(
-                      [x["anstieg_atr"] for x in g])), 2)}
-            for p in PUFFER:
-                z1[f"haelt_{p}_atr_pct"] = round(quote(g, p), 1)
-            z1.update({k: round(v, 2) for k, v in puffer_verteilung(g).items()})
-            av = [x["anstieg_pivot_atr"] for x in g
-                  if np.isfinite(x["anstieg_pivot_atr"])]
-            z1["anstieg_pivot_median_atr"] = (round(float(np.median(av)), 3)
-                                              if av else "")
-            w = wettlauf(g, 2.0)
-            z1["ziel_zuerst_2atr_pct"] = round(w["ziel_pct"], 1) if w else ""
-            zeilen.append(z1)
+            zeilen.append(zeile_je_gruppe(ticker, f"Tief {k}", gruppen[k]))
 
     if not zeilen:
         return
     DOCS.mkdir(exist_ok=True)
+    felder: list[str] = []
+    for z0 in zeilen:
+        for k in z0:
+            if k not in felder:
+                felder.append(k)
     with open(CSV_WERT, "w", encoding="utf-8", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=list(zeilen[0].keys()))
+        w = csv.DictWriter(f, fieldnames=felder, restval="")
         w.writeheader()
         w.writerows(zeilen)
     print(f"Geschrieben: {CSV_WERT} ({len(zeilen)} Zeilen)")

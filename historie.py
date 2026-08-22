@@ -270,30 +270,59 @@ def pivots_zeigen(ticker: str, df: pd.DataFrame, tage: int = 120) -> None:
     Tag, an dem eine Kerze das HOCH der Tiefkerze ueberschritten hat. Fehlt
     er, war das Tief nie bestaetigt und zaehlt nicht.
 
-    ZAEHLT sagt, ob das Tief in die laufende Serie eingeht: nur neue
-    Tiefststaende zaehlen, ein hoeheres Zwischentief nicht.
+    ZAEHLT sagt, ob das Tief in seine Sequenz eingeht: nur neue
+    Tiefststaende zaehlen, ein hoeheres Zwischentief nicht. SEQUENZ nennt
+    die laufende Nummer der Abwaertsstrecke - daran ist ablesbar, wo eine
+    Strecke endet und die naechste beginnt.
+
+    Geschrieben wird nach docs/pivots_<TICKER>.md. Die erste Fassung gab nur
+    ins Log aus - eine Pruefausgabe, deren Ergebnis man abtippen muss, ist
+    keine.
     """
     grenze = df.index[-1] - pd.Timedelta(days=tage)
     hoch_w, tief_w = df["High"].values, df["Low"].values
-    seq_tiefs = {i for s in regel.sequenzen(df) for i in s["tiefs"]}
-    punkte = regel.pivots(df)
-    print(f"\n{ticker}: Wendepunkte der letzten {tage} Kalendertage")
-    print(f"{'Datum':12} {'Art':6} {'Wert':>10} {'Hoch d. Kerze':>14} "
-          f"{'bestaetigt am':>14} {'zaehlt':>7}")
-    for art, i in punkte:
+    seqs = regel.sequenzen(df)
+    nummer = {}
+    for n, s in enumerate(seqs, start=1):
+        for pos, i in enumerate(s["tiefs"], start=1):
+            nummer[i] = (n, pos, s["anzahl"])
+
+    L = [f"# Wendepunkte {ticker}", "",
+         f"_Letzte {tage} Kalendertage bis {df.index[-1]:%Y-%m-%d}. "
+         f"Regel aus `tiefs_regel.py`. BESTAETIGT AM ist der Tag, an dem eine "
+         f"Kerze das Hoch der Tiefkerze ueberschritten hat - erst dann ist "
+         f"das Tief handelbar. ZAEHLT sagt, ob es in seine Sequenz eingeht._",
+         "",
+         "| Datum | Art | Wert | Hoch der Kerze | bestaetigt am | zaehlt | Sequenz |",
+         "|---|---|---|---|---|---|---|"]
+    for art, i in regel.pivots(df):
         if df.index[i] < grenze:
             continue
         if art == "tief":
             b = bestaetigungstag(df, i)
-            print(f"{df.index[i]:%Y-%m-%d} {'Tief':6} {tief_w[i]:10.2f} "
-                  f"{hoch_w[i]:14.2f} "
-                  f"{(f'{df.index[b]:%Y-%m-%d}' if b else 'NIE'):>14} "
-                  f"{('ja' if i in seq_tiefs else 'nein'):>7}")
+            n = nummer.get(i)
+            lage = f"Nr. {n[0]}, Tief {n[1]} von {n[2]}" if n else "-"
+            L.append(f"| {df.index[i]:%Y-%m-%d} | Tief | {tief_w[i]:.2f} | "
+                     f"{hoch_w[i]:.2f} | "
+                     f"{f'{df.index[b]:%Y-%m-%d}' if b else '**NIE**'} | "
+                     f"{'ja' if i in nummer else 'nein'} | {lage} |")
         else:
-            print(f"{df.index[i]:%Y-%m-%d} {'Hoch':6} {hoch_w[i]:10.2f} "
-                  f"{'':14} {'':14} {'':>7}")
+            L.append(f"| {df.index[i]:%Y-%m-%d} | Hoch | {hoch_w[i]:.2f} | "
+                     f"| | | |")
+    L += ["", "## Laufende Serie je Variante", "",
+          "| Variante | Tiefs | seit | Tiefstand |", "|---|---|---|---|"]
     for v in regel.VARIANTEN:
-        print(f"  Serie [{v}]: {regel.tiefserie(df, v)}")
+        a, d, t = regel.tiefserie(df, v)
+        L.append(f"| {v} | {a or '-'} | {d or '-'} | {t or '-'} |")
+    L += ["", f"_{len(seqs)} Sequenzen in der geladenen Historie "
+              f"({df.index[0]:%Y-%m-%d} bis {df.index[-1]:%Y-%m-%d})._"]
+
+    text = "\n".join(L)
+    print(text)
+    DOCS.mkdir(exist_ok=True)
+    ziel = DOCS / f"pivots_{ticker.replace('=', '_').replace('.', '_')}.md"
+    ziel.write_text(text, encoding="utf-8")
+    print(f"\nGeschrieben: {ziel}")
 
 
 # ── Auswertungen ───────────────────────────────────────────────────
@@ -797,7 +826,10 @@ def main() -> int:
         if t not in d:
             print(f"{t}: keine Kursdaten.")
             return 1
-        pivots_zeigen(t, d[t])
+        tage = 120
+        if "--tage" in sys.argv:
+            tage = int(sys.argv[sys.argv.index("--tage") + 1])
+        pivots_zeigen(t, d[t], tage)
         return 0
 
     tickers = universum()

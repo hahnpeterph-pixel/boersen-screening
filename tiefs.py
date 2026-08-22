@@ -494,12 +494,30 @@ def main():
                 ueberhitzt_warnungen.append(f"- **{name}**: {grund} — {u_urteil}.")
 
         if not treffer:
-            kopf.append(f"| {etikett} | {de(ko)} | kein Swing-Tief im Fenster "
-                        f"| | | - | k.A. | - |")
-            fehlend.append(
-                f"- **{name}**: kein bestaetigtes Swing-Tief im Fenster. Entweder "
-                f"laeuft der Wert seit Wochen aufwaerts, oder `links`/`rechts` "
-                f"sind zu gross eingestellt.")
+            # Zwei sehr verschiedene Faelle sauber trennen: gar keine
+            # Kursdaten (Yahoo liefert fuer XAUUSD=X seit Monaten nichts,
+            # delistete Werte fallen ueber Nacht aus) oder Daten vorhanden,
+            # aber kein Tief im Fenster. Frueher stand in beiden Faellen
+            # derselbe Text - und der verwies auf links/rechts, die seit
+            # der Umstellung auf die Umkehr-Regel gar nicht mehr gelten.
+            if df is None or len(df) < 2:
+                kopf.append(f"| {etikett} | {de(ko)} | KEINE KURSDATEN "
+                            f"| | | - | k.A. | - |")
+                fehlend.append(
+                    f"- **{name}** ({ticker}): keine Kursdaten von Yahoo. "
+                    f"Der Wert wird uebersprungen, alle Angaben fehlen. "
+                    f"Bei Edelmetallen liegt es am Spot-Ticker - der Future "
+                    f"waere ein Ersatz, notiert aber hoeher (Contango), "
+                    f"deshalb wird hier NICHT automatisch umgeschaltet: "
+                    f"die KO-Pruefung wuerde sonst falsch rechnen.")
+            else:
+                kopf.append(f"| {etikett} | {de(ko)} | kein Swing-Tief im Fenster "
+                            f"| | | - | k.A. | - |")
+                fehlend.append(
+                    f"- **{name}**: kein Swing-Tief in den letzten "
+                    f"{k['fenster_tage']} Kalendertagen. Der Wert laeuft seit "
+                    f"Wochen aufwaerts, ohne dass eine Abwaertsstrecke "
+                    f"begonnen haette.")
             continue
 
         juengstes = treffer[0]

@@ -48,19 +48,25 @@ AUSGABE = DOCS / "rueckblick.md"
 ATR_TAGE = 14
 FENSTER_TAGE = 90
 
-# name, ticker, kaufdatum, verkaufsdatum, ergebnis in Prozent (aus dem Orderbuch)
-TRADES = [
-    ("Microsoft",         "MSFT",     "2026-07-22", "2026-08-10", 160.8),
-    ("Oracle",            "ORCL",     "2026-07-21", "2026-08-10",  30.0),
-    ("NVIDIA",            "NVDA",     "2026-08-03", "2026-08-21",   None),
-    ("Rheinmetall",       "RHM.DE",   "2026-08-11", "2026-08-17",   None),
-    ("Gold",              "GC=F",     "2026-08-14", "2026-08-20",  75.7),
-    ("ASML",              "ASML",     "2026-08-20", "2026-08-21", -17.6),
-    ("Applied Materials", "AMAT",     "2026-08-20", "2026-08-21", -12.2),
-    ("Take-Two",          "TTWO",     "2026-08-20", "2026-08-21",  55.9),
-    ("Micron",            "MU",       "2026-08-20", "2026-08-21",   4.6),
-    ("Gold II",           "GC=F",     "2026-08-21", "2026-08-21",  12.0),
+# Jede abgeschlossene Tranche aus dem Blatt Transaktionen:
+# name, ticker, kaufdatum, verkaufsdatum, Scheinkurs Kauf, Scheinkurs Verkauf,
+# Rendite des Scheins in Prozent
+TRANCHEN = [
+    ("Microsoft",         "MSFT",   "2026-07-22", "2026-08-03",  4.85, 11.82, 139.2),
+    ("Microsoft",         "MSFT",   "2026-07-22", "2026-08-10",  4.85, 14.85, 199.0),
+    ("NVIDIA",            "NVDA",   "2026-08-03", "2026-08-10",  2.37,  3.95,  63.5),
+    ("Oracle",            "ORCL",   "2026-07-21", "2026-08-10",  1.03,  3.44, 217.0),
+    ("Rheinmetall",       "RHM.DE", "2026-08-11", "2026-08-17",  1.02,  1.64,  44.8),
+    ("Gold",              "GC=F",   "2026-08-14", "2026-08-20", 14.33, 25.97,  79.9),
+    ("Gold",              "GC=F",   "2026-08-14", "2026-08-20", 14.33, 24.75,  71.4),
+    ("ASML",              "ASML",   "2026-08-20", "2026-08-21",  6.33,  5.81,  -9.7),
+    ("NVIDIA",            "NVDA",   "2026-08-03", "2026-08-21",  2.37,  3.63,  25.5),
+    ("Applied Materials", "AMAT",   "2026-08-20", "2026-08-21",  5.32,  4.74, -12.3),
+    ("Take-Two",          "TTWO",   "2026-08-20", "2026-08-21",  0.92,  1.45,  53.2),
+    ("Micron",            "MU",     "2026-08-20", "2026-08-21",  8.92,  9.32,   2.8),
+    ("Gold II",           "GC=F",   "2026-08-21", "2026-08-21",  3.35,  3.80,  12.0),
 ]
+
 
 
 def atr_reihe(df: pd.DataFrame, tage: int = ATR_TAGE) -> pd.Series:
@@ -185,9 +191,49 @@ def stand_am_kauftag(df: pd.DataFrame) -> dict:
             "boden": boden, "score": punkte}
 
 
+def zerlege(df, kauf, verkauf, rendite_schein):
+    """Zerlegt eine Tranche in ihre zwei Bestandteile.
+
+    Der Gewinn eines Knock-out-Scheins entsteht aus zwei Dingen: wie weit
+    sich der Basiswert bewegt hat, und wie stark der Hebel diese Bewegung
+    vervielfacht. Ohne diese Trennung sieht ein Trade gut aus, bei dem sich
+    der Basiswert kaum bewegte und nur der Hebel extrem war - und genau der
+    ist der riskanteste.
+
+    Aus dem Verhaeltnis der beiden Renditen laesst sich der effektive Hebel
+    berechnen und daraus rueckwaerts, wo die KO-Schwelle ungefaehr lag:
+    Hebel = Kurs / (Kurs - KO), also KO = Kurs x (1 - 1/Hebel). Das ist eine
+    Naeherung - Spread, Finanzierungskosten und das Nachziehen der Schwelle
+    sind darin nicht enthalten.
+
+    Zusaetzlich: der tiefste Basiskurs waehrend der Haltedauer. Er zeigt,
+    wie nah es an der geschaetzten Schwelle war.
+    """
+    d1, d2 = pd.Timestamp(kauf), pd.Timestamp(verkauf)
+    bis_kauf = df[df.index <= d1]
+    bis_verk = df[df.index <= d2]
+    if bis_kauf.empty or bis_verk.empty:
+        return {}
+    k = float(bis_kauf["Close"].iloc[-1])
+    v = float(bis_verk["Close"].iloc[-1])
+    a = float(atr_reihe(bis_kauf).iloc[-1])
+    bewegung = (v / k - 1) * 100
+    hebel = (rendite_schein / bewegung) if abs(bewegung) > 0.01 else None
+    ko = k * (1 - 1 / hebel) if hebel and hebel > 1 else None
+
+    halte = df[(df.index >= d1) & (df.index <= d2)]
+    tiefster = float(halte["Low"].min()) if not halte.empty else None
+    abstand_ko = ((tiefster - ko) / a) if (ko and tiefster and a > 0) else None
+
+    return {"basis_kauf": k, "basis_verkauf": v, "bewegung": bewegung,
+            "hebel": hebel, "ko_geschaetzt": ko, "tiefster": tiefster,
+            "puffer_rest": abstand_ko, "atr": a,
+            "bewegung_atr": (v - k) / a if a > 0 else None}
+
+
 def main() -> int:
     import yfinance as yf
-    tickers = sorted({t for _, t, _, _, _ in TRADES})
+    tickers = sorted({t for _, t, _, _, _, _, _ in TRANCHEN})
     print(f"Lade {len(tickers)} Basiswerte ...")
     roh = yf.download(tickers, period="3y", interval="1d", auto_adjust=True,
                       group_by="ticker", threads=True, progress=False)
@@ -203,63 +249,85 @@ def main() -> int:
     print(f"  {len(daten)} geladen.")
 
     zeilen = []
-    for name, ticker, kauf, verkauf, erg in TRADES:
+    for name, ticker, kauf, verkauf, sk, sv, rend in TRANCHEN:
         df = daten.get(ticker)
         if df is None:
             zeilen.append({"name": name, "hinweis": "keine Kursdaten"})
             continue
         bis = df[df.index <= pd.Timestamp(kauf)]
-        if len(bis) < 260:
-            zeilen.append({"name": name, "hinweis": "zu wenig Vorlauf"})
-            continue
-        stand = stand_am_kauftag(bis)
-        soll = soll_werte(bis.iloc[:-1])
-        if not stand:
-            zeilen.append({"name": name, "hinweis": "kein Tief im Fenster"})
-            continue
-        zeilen.append({"name": name, "ticker": ticker, "kauf": kauf,
-                       "ergebnis": erg, **stand, **soll})
+        stand = stand_am_kauftag(bis) if len(bis) >= 260 else {}
+        soll = soll_werte(bis.iloc[:-1]) if len(bis) >= 260 else {}
+        zerl = zerlege(df, kauf, verkauf, rend)
+        zeilen.append({"name": name, "ticker": ticker, "kauf": kauf, "verkauf": verkauf,
+                       "schein_kauf": sk, "schein_verkauf": sv, "rendite": rend,
+                       **stand, **soll, **zerl})
 
     jetzt = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M")
-    L = ["# Rueckblick - haetten die Trades nach heutigen Regeln gekauft werden duerfen?", "",
-         f"_Erstellt {jetzt} UTC. Rekonstruiert den Stand am Kauftag, ausschliesslich mit "
-         "Daten, die damals vorlagen. Analystenurteil und Kursziel sind historisch nicht "
-         "verfuegbar, der Score ist deshalb TECHNISCH und geht nur bis 70 Punkte: "
-         "Bodenbildung 30, RSI unter 30 zwanzig bzw. unter 40 zehn, Einstieg hoechstens "
-         "1,5 ATR ueber dem Bezugstief 15, Tief bestaetigt 5._", "",
-         "| Position | Kauf | RSI | Bezugstief | Einstieg | Tiefs jetzt (üblich) | "
-         "Korrektur jetzt (üblich) | Boden | Score | Ergebnis |",
-         "|---|---|---|---|---|---|---|---|---|---|"]
 
-    def z(v, nk=2, einheit=""):
-        return "-" if v is None else f"{v:.{nk}f}{einheit}"
+    def z(v, nk=2, e=""):
+        return "-" if v is None else f"{v:.{nk}f}{e}"
 
+    L = ["# Rueckblick - was hat die erfolgreichen Trades getragen?", "",
+         f"_Erstellt {jetzt} UTC. Eine Zeile je abgeschlossener Tranche. Der Stand am Kauftag "
+         "ist ausschliesslich aus damals vorliegenden Daten rekonstruiert._", "",
+         "## Teil 1 - Zerlegung des Gewinns", "",
+         "_Der Gewinn eines Knock-out-Scheins hat zwei Quellen: die Bewegung des Basiswerts "
+         "und den Hebel. 'Hebel' ist hier RUECKGERECHNET aus den beiden Renditen, nicht aus "
+         "den Papierdaten. 'KO geschaetzt' folgt daraus und ist eine Naeherung ohne Spread "
+         "und Finanzierungskosten. 'Rest zum KO' ist der Abstand des tiefsten Kurses waehrend "
+         "der Haltedauer zu dieser geschaetzten Schwelle, in ATR - je kleiner, desto knapper "
+         "war es._", "",
+         "| Position | Kauf | Verkauf | Basis Kauf | Basis Verkauf | Bewegung | in ATR | "
+         "Rendite Schein | Hebel | KO geschaetzt | tiefster Kurs | Rest zum KO |",
+         "|---|---|---|---|---|---|---|---|---|---|---|---|"]
     for e in zeilen:
         if e.get("hinweis"):
-            L.append(f"| {e['name']} | - | - | - | - | - | - | - | - | {e['hinweis']} |")
+            L.append(f"| {e['name']} | " + " | ".join(["-"] * 11) + " |")
+            continue
+        L.append(f"| {e['name']} | {e['kauf'][5:]} | {e['verkauf'][5:]} | "
+                 f"{z(e.get('basis_kauf'))} | {z(e.get('basis_verkauf'))} | "
+                 f"{z(e.get('bewegung'), 1, '%')} | {z(e.get('bewegung_atr'))} | "
+                 f"**{z(e.get('rendite'), 1, '%')}** | {z(e.get('hebel'), 1, 'x')} | "
+                 f"{z(e.get('ko_geschaetzt'))} | {z(e.get('tiefster'))} | "
+                 f"{z(e.get('puffer_rest'))} ATR |")
+
+    L += ["", "## Teil 2 - Lage am Kauftag", "",
+          "_Technischer Score bis 70 Punkte: Bodenbildung 30, RSI unter 30 zwanzig bzw. unter "
+          "40 zehn, Einstieg hoechstens 1,5 ATR ueber dem Bezugstief 15, Tief bestaetigt 5. "
+          "Analystenurteil und Kursziel liegen historisch nicht vor._", "",
+          "| Position | Kauf | RSI | Bezugstief | Einstieg | Tiefs jetzt (üblich) | "
+          "Korrektur jetzt (üblich) | Boden | Score | Rendite |",
+          "|---|---|---|---|---|---|---|---|---|---|"]
+    for e in zeilen:
+        if e.get("score") is None:
             continue
         tiefs = f"{e['tiefs_lauf']} ({z(e.get('tiefs_soll'), 0)})"
         korr = f"{z(e.get('korr_atr'))} ({z(e.get('korr_soll'))})"
-        L.append(f"| {e['name']} | {e['kauf']} | {e['rsi']:.0f} | "
-                 f"{e['tief1']:.2f} vom {e['tief1_datum']:%d.%m.} | "
-                 f"{z(e['einstieg'])} ATR | {tiefs} | {korr} | "
-                 f"{'ja' if e['boden'] else 'nein'} | **{e['score']}** | "
-                 f"{z(e.get('ergebnis'), 1, '%')} |")
+        L.append(f"| {e['name']} | {e['kauf'][5:]} | {e['rsi']:.0f} | "
+                 f"{e['tief1']:.2f} vom {e['tief1_datum']:%d.%m.} | {z(e['einstieg'])} ATR | "
+                 f"{tiefs} | {korr} | {'ja' if e['boden'] else 'nein'} | "
+                 f"**{e['score']}** | {z(e.get('rendite'), 1, '%')} |")
 
-    gute = [e for e in zeilen if e.get("score") is not None and e["score"] >= 35]
-    schwache = [e for e in zeilen if e.get("score") is not None and e["score"] < 35]
-    L += ["", "## Auswertung", "",
-          f"- Trades mit technischem Score ab 35: {len(gute)}",
-          f"- Trades unter 35: {len(schwache)}", ""]
-    for gruppe, titel in ((gute, "Ab 35 Punkten"), (schwache, "Unter 35 Punkten")):
-        werte = [e["ergebnis"] for e in gruppe if e.get("ergebnis") is not None]
-        if werte:
-            L.append(f"- {titel}: {len(werte)} mit bekanntem Ergebnis, "
-                     f"Median {np.median(werte):+.1f}%, Spanne {min(werte):+.1f}% bis {max(werte):+.1f}%")
-    L += ["", "_Zehn Trades sind eine sehr kleine Stichprobe, und die Ergebnisse haengen "
-          "zusaetzlich am Verkaufszeitpunkt, der hier gar nicht geprueft wird. Die Tabelle "
-          "zeigt, welche Kaeufe die heutigen Kriterien erfuellt haetten - sie beweist nicht, "
-          "dass die Kriterien funktionieren._"]
+    gute = [e for e in zeilen if e.get("rendite") is not None and e["rendite"] > 0]
+    schlecht = [e for e in zeilen if e.get("rendite") is not None and e["rendite"] <= 0]
+    L += ["", "## Teil 3 - was trennt Gewinner von Verlierern?", "",
+          "| Kennzahl | Gewinner | Verlierer |", "|---|---|---|"]
+    for feld, titel, nk in (("bewegung", "Bewegung Basiswert in %", 2),
+                            ("bewegung_atr", "Bewegung in ATR", 2),
+                            ("hebel", "Hebel", 1),
+                            ("puffer_rest", "Rest zum KO in ATR", 2),
+                            ("einstieg", "Einstieg ueber Tief in ATR", 2),
+                            ("rsi", "RSI am Kauftag", 0),
+                            ("korr_atr", "laufende Korrektur in ATR", 2),
+                            ("score", "technischer Score", 0)):
+        def m(gruppe):
+            w = [e[feld] for e in gruppe if e.get(feld) is not None]
+            return f"{np.median(w):.{nk}f}" if w else "-"
+        L.append(f"| {titel} | {m(gute)} | {m(schlecht)} |")
+    L += ["", f"_{len(gute)} Gewinner, {len(schlecht)} Verlierer. Bei dieser Groesse sind "
+          "Mediane Anhaltspunkte, keine Belege. Der Verkaufszeitpunkt wird nicht geprueft - "
+          "ein Trade kann die Kaufkriterien erfuellt haben und trotzdem schlecht ausgegangen "
+          "sein, weil zu frueh oder zu spaet verkauft wurde._"]
 
     DOCS.mkdir(parents=True, exist_ok=True)
     AUSGABE.write_text("\n".join(L), encoding="utf-8")

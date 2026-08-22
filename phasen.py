@@ -123,16 +123,32 @@ def phasen(df: pd.DataFrame) -> list[dict]:
         dauer_ab = letztes_i - start_i
         tiefe_ab = (start_kurs - letztes_kurs) / atr_hier
 
-        # Anstieg: hoechstes Hoch, bevor wieder ein tieferes Tief kommt
-        naechstes_tieferes = next((i for i, kurs in tiefe[k + 1:] if kurs < letztes_kurs), None)
-        grenze = naechstes_tieferes if naechstes_tieferes is not None else len(df) - 1
-        kandidaten = [(i, h) for i, h in hochs if letztes_i < i <= grenze]
-        if kandidaten:
-            gipfel_i, gipfel_kurs = max(kandidaten, key=lambda x: x[1])
+        # Anstieg, symmetrisch gemessen: bis zum NAECHSTEN bestaetigten Hoch.
+        # Beide Strecken laufen damit von Pivot zu Pivot und sind direkt
+        # vergleichbar. Die frueher benutzte Variante (hoechstes Hoch, bevor
+        # ein tieferes Tief kommt) war unsymmetrisch: die Korrektur endete am
+        # Tief, der Anstieg lief in einem Aufwaertsmarkt monatelang weiter.
+        # Deshalb kam dort ein Verhaeltnis von 2,5 zu 1 heraus, das kein
+        # Vorteil war, sondern ein Messfehler.
+        naechstes_hoch = next(((i, h) for i, h in hochs if i > letztes_i), None)
+        if naechstes_hoch:
+            gipfel_i, gipfel_kurs = naechstes_hoch
             dauer_auf = gipfel_i - letztes_i
             hoehe_auf = (gipfel_kurs - letztes_kurs) / atr_hier
         else:
             dauer_auf = hoehe_auf = None
+
+        # Zusaetzlich die weite Fassung: wie weit traegt es maximal, bevor
+        # ein tieferes Tief kommt. Nur zur Einordnung, nicht fuer Vergleiche.
+        naechstes_tieferes = next((i for i, kurs in tiefe[k + 1:] if kurs < letztes_kurs), None)
+        grenze = naechstes_tieferes if naechstes_tieferes is not None else len(df) - 1
+        weit = [(i, h) for i, h in hochs if letztes_i < i <= grenze]
+        if weit:
+            w_i, w_kurs = max(weit, key=lambda x: x[1])
+            dauer_weit = w_i - letztes_i
+            hoehe_weit = (w_kurs - letztes_kurs) / atr_hier
+        else:
+            dauer_weit = hoehe_weit = None
 
         ergebnis.append({
             "tiefs": anzahl,
@@ -140,6 +156,8 @@ def phasen(df: pd.DataFrame) -> list[dict]:
             "tiefe_ab": tiefe_ab,
             "dauer_auf": dauer_auf,
             "hoehe_auf": hoehe_auf,
+            "dauer_weit": dauer_weit,
+            "hoehe_weit": hoehe_weit,
         })
         k += 1
     return ergebnis
@@ -211,6 +229,8 @@ def main() -> int:
             "korrektur_atr": median([p["tiefe_ab"] for p in ph]),
             "anstieg_tage": median([p["dauer_auf"] for p in ph]),
             "anstieg_atr": median([p["hoehe_auf"] for p in ph]),
+            "weit_tage": median([p["dauer_weit"] for p in ph]),
+            "weit_atr": median([p["hoehe_weit"] for p in ph]),
         })
 
     DOCS.mkdir(parents=True, exist_ok=True)
@@ -233,23 +253,30 @@ def main() -> int:
          f"| Tiefs je Abwaertssequenz | {median(spalte('tiefs_median')):.1f} |",
          f"| Dauer der Korrektur | {median(spalte('korrektur_tage')):.1f} Handelstage |",
          f"| Tiefe der Korrektur | {median(spalte('korrektur_atr')):.2f} ATR |",
-         f"| Dauer des Anstiegs | {median(spalte('anstieg_tage')):.1f} Handelstage |",
-         f"| Hoehe des Anstiegs | {median(spalte('anstieg_atr')):.2f} ATR |", "",
-         "_Traegt der Anstieg im Median weiter als die Korrektur tief war, lohnt das Warten "
-         "auf das Ende der Treppe. Ist es umgekehrt, ist der Einstieg in eine laufende "
-         "Abwaertssequenz systematisch teuer._", "",
+         f"| Dauer des Anstiegs (bis zum naechsten Hoch) | {median(spalte('anstieg_tage')):.1f} Handelstage |",
+         f"| Hoehe des Anstiegs (bis zum naechsten Hoch) | {median(spalte('anstieg_atr')):.2f} ATR |",
+         f"| Dauer der weiten Fassung | {median(spalte('weit_tage')):.1f} Handelstage |",
+         f"| Hoehe der weiten Fassung | {median(spalte('weit_atr')):.2f} ATR |", "",
+         "_'Anstieg' ist von Pivot zu Pivot gemessen und damit direkt mit der Korrektur "
+         "vergleichbar. 'weit' misst dagegen bis zum hoechsten Punkt, bevor ein tieferes "
+         "Tief kommt - diese Zahl faellt in einem Aufwaertsmarkt zwangslaeufig gross aus "
+         "und taugt nur zur Einordnung, nicht zum Vergleich._", "",
          "## Je Wert", "",
          "| Ticker | Sequenzen | Tiefs Median | Tiefs max | Korrektur Tage | Korrektur ATR | "
-         "Anstieg Tage | Anstieg ATR |", "|---|---|---|---|---|---|---|---|"]
+         "Anstieg Tage | Anstieg ATR | Anstieg/Korrektur | weit Tage | weit ATR |",
+         "|---|---|---|---|---|---|---|---|---|---|---|"]
 
     def z(v, nk=1):
         return "-" if v is None else f"{v:.{nk}f}"
 
-    for e in sorted(zeilen, key=lambda x: -(x["anstieg_atr"] or 0)):
+    for e in sorted(zeilen, key=lambda x: -((x["anstieg_atr"] or 0) / (x["korrektur_atr"] or 1))):
+        v = (e["anstieg_atr"] / e["korrektur_atr"]
+             if e["anstieg_atr"] and e["korrektur_atr"] else None)
         L.append(f"| {e['ticker']} | {e['sequenzen']} | {z(e['tiefs_median'])} | {e['tiefs_max']} | "
                  f"{z(e['korrektur_tage'])} | {z(e['korrektur_atr'], 2)} | "
-                 f"{z(e['anstieg_tage'])} | {z(e['anstieg_atr'], 2)} |")
-    L += ["", "_Sortiert nach Hoehe des Anstiegs. Ein Wert mit vielen Tiefs je Sequenz braucht "
+                 f"{z(e['anstieg_tage'])} | {z(e['anstieg_atr'], 2)} | "
+                 f"**{z(v, 2)}** | {z(e['weit_tage'])} | {z(e['weit_atr'], 2)} |")
+    L += ["", "_Sortiert nach dem Verhaeltnis Anstieg zu Korrektur. Ein Wert mit vielen Tiefs je Sequenz braucht "
           "Geduld: dort folgen auf ein frisches Tief typischerweise noch weitere, bevor der "
           "Anstieg beginnt._"]
 

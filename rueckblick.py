@@ -191,23 +191,17 @@ def stand_am_kauftag(df: pd.DataFrame) -> dict:
             "boden": boden, "score": punkte}
 
 
-def zerlege(df, kauf, verkauf, rendite_schein):
-    """Zerlegt eine Tranche in ihre zwei Bestandteile.
+def zerlege(df, kauf, verkauf, rendite_schein, bezugstief=None):
+    """Was hat den Trade getragen: die Bewegung des Basiswerts.
 
-    Der Gewinn eines Knock-out-Scheins entsteht aus zwei Dingen: wie weit
-    sich der Basiswert bewegt hat, und wie stark der Hebel diese Bewegung
-    vervielfacht. Ohne diese Trennung sieht ein Trade gut aus, bei dem sich
-    der Basiswert kaum bewegte und nur der Hebel extrem war - und genau der
-    ist der riskanteste.
+    Ein Hebel wird bewusst nicht gerechnet. Er waere Kurs geteilt durch
+    Abstand zur KO-Schwelle und damit nur eine andere Schreibweise des
+    Puffers, den das Orderbuch ohnehin in ATR fuehrt - in einer Einheit,
+    die zwischen verschiedenen Werten nicht vergleichbar ist.
 
-    Aus dem Verhaeltnis der beiden Renditen laesst sich der effektive Hebel
-    berechnen und daraus rueckwaerts, wo die KO-Schwelle ungefaehr lag:
-    Hebel = Kurs / (Kurs - KO), also KO = Kurs x (1 - 1/Hebel). Das ist eine
-    Naeherung - Spread, Finanzierungskosten und das Nachziehen der Schwelle
-    sind darin nicht enthalten.
-
-    Zusaetzlich: der tiefste Basiskurs waehrend der Haltedauer. Er zeigt,
-    wie nah es an der geschaetzten Schwelle war.
+    Gemessen wird stattdessen in ATR: wie weit ist der Basiswert gelaufen,
+    und wie tief ist er zwischendurch unter das Bezugstief gerutscht. Beides
+    ist ueber alle Werte vergleichbar und braucht keine Angaben zum Papier.
     """
     d1, d2 = pd.Timestamp(kauf), pd.Timestamp(verkauf)
     bis_kauf = df[df.index <= d1]
@@ -217,18 +211,20 @@ def zerlege(df, kauf, verkauf, rendite_schein):
     k = float(bis_kauf["Close"].iloc[-1])
     v = float(bis_verk["Close"].iloc[-1])
     a = float(atr_reihe(bis_kauf).iloc[-1])
-    bewegung = (v / k - 1) * 100
-    hebel = (rendite_schein / bewegung) if abs(bewegung) > 0.01 else None
-    ko = k * (1 - 1 / hebel) if hebel and hebel > 1 else None
+    if a <= 0:
+        return {}
 
     halte = df[(df.index >= d1) & (df.index <= d2)]
     tiefster = float(halte["Low"].min()) if not halte.empty else None
-    abstand_ko = ((tiefster - ko) / a) if (ko and tiefster and a > 0) else None
+    unter_tief = ((bezugstief - tiefster) / a
+                  if (bezugstief and tiefster and tiefster < bezugstief) else 0.0)
 
-    return {"basis_kauf": k, "basis_verkauf": v, "bewegung": bewegung,
-            "hebel": hebel, "ko_geschaetzt": ko, "tiefster": tiefster,
-            "puffer_rest": abstand_ko, "atr": a,
-            "bewegung_atr": (v - k) / a if a > 0 else None}
+    return {"basis_kauf": k, "basis_verkauf": v,
+            "bewegung": (v / k - 1) * 100,
+            "bewegung_atr": (v - k) / a,
+            "tiefster": tiefster,
+            "unter_tief": unter_tief,
+            "atr": a}
 
 
 def main() -> int:
@@ -257,7 +253,7 @@ def main() -> int:
         bis = df[df.index <= pd.Timestamp(kauf)]
         stand = stand_am_kauftag(bis) if len(bis) >= 260 else {}
         soll = soll_werte(bis.iloc[:-1]) if len(bis) >= 260 else {}
-        zerl = zerlege(df, kauf, verkauf, rend)
+        zerl = zerlege(df, kauf, verkauf, rend, stand.get('tief1'))
         zeilen.append({"name": name, "ticker": ticker, "kauf": kauf, "verkauf": verkauf,
                        "schein_kauf": sk, "schein_verkauf": sv, "rendite": rend,
                        **stand, **soll, **zerl})
@@ -271,25 +267,24 @@ def main() -> int:
          f"_Erstellt {jetzt} UTC. Eine Zeile je abgeschlossener Tranche. Der Stand am Kauftag "
          "ist ausschliesslich aus damals vorliegenden Daten rekonstruiert._", "",
          "## Teil 1 - Zerlegung des Gewinns", "",
-         "_Der Gewinn eines Knock-out-Scheins hat zwei Quellen: die Bewegung des Basiswerts "
-         "und den Hebel. 'Hebel' ist hier RUECKGERECHNET aus den beiden Renditen, nicht aus "
-         "den Papierdaten. 'KO geschaetzt' folgt daraus und ist eine Naeherung ohne Spread "
-         "und Finanzierungskosten. 'Rest zum KO' ist der Abstand des tiefsten Kurses waehrend "
-         "der Haltedauer zu dieser geschaetzten Schwelle, in ATR - je kleiner, desto knapper "
-         "war es._", "",
+         "_Gemessen wird nur die Bewegung des Basiswerts, in Prozent und in ATR. Ein Hebel "
+         "wird bewusst nicht gerechnet: er waere Kurs geteilt durch KO-Abstand und damit nur "
+         "eine andere Schreibweise des Puffers, den das Orderbuch in ATR fuehrt. "
+         "'unter dem Bezugstief' zeigt, wie weit der Kurs waehrend der Haltedauer unter das "
+         "Tief gerutscht ist, auf das der Trade gesetzt war - 0,00 heisst: das Tief hat "
+         "gehalten._", "",
          "| Position | Kauf | Verkauf | Basis Kauf | Basis Verkauf | Bewegung | in ATR | "
-         "Rendite Schein | Hebel | KO geschaetzt | tiefster Kurs | Rest zum KO |",
-         "|---|---|---|---|---|---|---|---|---|---|---|---|"]
+         "Rendite Schein | tiefster Kurs | unter dem Bezugstief |",
+         "|---|---|---|---|---|---|---|---|---|---|"]
     for e in zeilen:
         if e.get("hinweis"):
-            L.append(f"| {e['name']} | " + " | ".join(["-"] * 11) + " |")
+            L.append(f"| {e['name']} | " + " | ".join(["-"] * 9) + " |")
             continue
         L.append(f"| {e['name']} | {e['kauf'][5:]} | {e['verkauf'][5:]} | "
                  f"{z(e.get('basis_kauf'))} | {z(e.get('basis_verkauf'))} | "
                  f"{z(e.get('bewegung'), 1, '%')} | {z(e.get('bewegung_atr'))} | "
-                 f"**{z(e.get('rendite'), 1, '%')}** | {z(e.get('hebel'), 1, 'x')} | "
-                 f"{z(e.get('ko_geschaetzt'))} | {z(e.get('tiefster'))} | "
-                 f"{z(e.get('puffer_rest'))} ATR |")
+                 f"**{z(e.get('rendite'), 1, '%')}** | {z(e.get('tiefster'))} | "
+                 f"{z(e.get('unter_tief'))} ATR |")
 
     L += ["", "## Teil 2 - Lage am Kauftag", "",
           "_Technischer Score bis 70 Punkte: Bodenbildung 30, RSI unter 30 zwanzig bzw. unter "
@@ -314,8 +309,7 @@ def main() -> int:
           "| Kennzahl | Gewinner | Verlierer |", "|---|---|---|"]
     for feld, titel, nk in (("bewegung", "Bewegung Basiswert in %", 2),
                             ("bewegung_atr", "Bewegung in ATR", 2),
-                            ("hebel", "Hebel", 1),
-                            ("puffer_rest", "Rest zum KO in ATR", 2),
+                            ("unter_tief", "unter dem Bezugstief in ATR", 2),
                             ("einstieg", "Einstieg ueber Tief in ATR", 2),
                             ("rsi", "RSI am Kauftag", 0),
                             ("korr_atr", "laufende Korrektur in ATR", 2),

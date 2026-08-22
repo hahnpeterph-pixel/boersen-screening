@@ -304,6 +304,17 @@ def tabelle(faelle: list[dict], schluessel, ordnung=None) -> list[dict]:
     return zeilen
 
 
+def position_absolut(f: dict) -> str:
+    """Die schlichte Frage: das wievielte Tief der Serie ist es?
+
+    Die relative Fassung (position_klasse) misst gegen die werttypische
+    Anzahl und verwischt dabei genau das, worum es geht - ob das dritte Tief
+    besser haelt als das erste.
+    """
+    x = f["position"]
+    return f"Tief {x}" if x <= 5 else "Tief 6+"
+
+
 def position_klasse(f: dict) -> str | None:
     """Tief x von y - y ist die werttypische Anzahl, x kann darueber liegen."""
     if f["typisch"] is None:
@@ -483,8 +494,15 @@ def bericht(alle: list[dict], daten: dict, jahre: int) -> str:
     L += ["## Nach Position in der Serie", "",
           "_Die Leitfrage: haelt das erste Tief seltener als ein spaeteres? "
           "y ist die werttypische Anzahl Tiefs je Sequenz dieses Wertes._", ""]
-    L += block("Alle Werte", tabelle(fest, position_klasse,
-                                     ["1 (erstes)", "2 bis y", "y+1", "ueber y+1"]),
+    L += block("Absolut - das wievielte Tief der Serie",
+               tabelle(fest, position_absolut,
+                       [f"Tief {i}" for i in range(1, 6)] + ["Tief 6+"]),
+               "Position")
+    L += ["_Darunter dieselbe Frage relativ zur werttypischen Anzahl y "
+          "dieses Wertes._", ""]
+    L += block("Relativ zur werttypischen Anzahl",
+               tabelle(fest, position_klasse,
+                       ["1 (erstes)", "2 bis y", "y+1", "ueber y+1"]),
                "Position")
 
     L += ["_Nicht ausgewertet wird, ob es das LETZTE Tief der Serie war: "
@@ -538,7 +556,10 @@ def bericht(alle: list[dict], daten: dict, jahre: int) -> str:
 def csv_schreiben(fest: list[dict]) -> None:
     zeilen = []
     for name, schluessel, ordnung in (
-        ("position", position_klasse, ["1 (erstes)", "2 bis y", "y+1", "ueber y+1"]),
+        ("position_absolut", position_absolut,
+         [f"Tief {i}" for i in range(1, 6)] + ["Tief 6+"]),
+        ("position_relativ", position_klasse,
+         ["1 (erstes)", "2 bis y", "y+1", "ueber y+1"]),
         ("abstand", lambda f: klasse(f["abstand_atr"], ABSTAND_KLASSEN),
          [k[2] for k in ABSTAND_KLASSEN]),
         ("rsi_rel", lambda f: klasse(f["rsi_rel"], RSI_KLASSEN),

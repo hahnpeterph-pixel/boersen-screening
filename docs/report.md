@@ -1,6 +1,6 @@
-# Boersen-Screening - 2026-08-21
+# Boersen-Screening - 2026-08-22
 
-_Stand: Schlusskurse vom Vortag. Erstellt 2026-08-21T21:05:00+00:00 UTC. 165 Werte ausgewertet._
+_Stand: Schlusskurse vom Vortag. Erstellt 2026-08-22T06:39:04+00:00 UTC. 165 Werte ausgewertet._
 
 ## 📖 Glossar (was die Spalten bedeuten)
 
@@ -18,8 +18,8 @@ _Ueber alle 165 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 | Rang | Ticker | ISIN | Name | Index | Kurs | Abstand ATH (Info) | Kaufen-Anteil Analysten | Kursziel | RSI Tag | RSI Woche | RSI Stunde | Letztes Rating |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 1 | NVDA | - | NVIDIA Corporation | NASDAQ/DOW | 214.72 | -9% | 100% (23 Banken, ≤120T) | 302.83 (41% ueber Kurs) | 51 | 56 | 33 | 2026-08-21 BMO Capital: neu bewertet mit Outperform |
-| 2 | BA | - | Boeing Company (The) | DOW | 214.20 | -50% | 100% (6 Banken, ≤120T) | 274.85 (28% ueber Kurs) | 40 | 47 | 23 | 2026-08-11 Argus Research: hochgestuft auf Buy |
-| 3 | DTE.DE | - | DEUTSCHE TELEKOM AG | DAX | 28.94 | -14% | 100% (18 Banken, ≤120T) | 37.10 (28% ueber Kurs) | 58 | 54 | 55 | keine in 30T |
+| 2 | DTE.DE | - | DEUTSCHE TELEKOM AG | DAX | 28.72 | -15% | 100% (18 Banken, ≤120T) | 37.10 (29% ueber Kurs) | 57 | 53 | 55 | keine in 30T |
+| 3 | BA | - | Boeing Company (The) | DOW | 214.20 | -50% | 100% (6 Banken, ≤120T) | 274.85 (28% ueber Kurs) | 40 | 47 | 23 | 2026-08-11 Argus Research: hochgestuft auf Buy |
 | 4 | ASML | USN070592100 | ASML Holding N.V. - New York Re | NASDAQ | 1763.76 | -11% | 100% (5 Banken, ≤120T) | 2196.43 (24% ueber Kurs) | 50 | 59 | 45 | keine in 30T |
 | 5 | ORLY | - | O'Reilly Automotive, Inc. | NASDAQ | 89.11 | -17% | 100% (8 Banken, ≤120T) | 107.80 (21% ueber Kurs) | 46 | 47 | 40 | 2026-08-03 Citigroup: Rating bestaetigt: Buy |
 | 6 | TTWO | - | Take-Two Interactive Software, | NASDAQ | 239.62 | -9% | 100% (10 Banken, ≤120T) | 286.89 (20% ueber Kurs) | 48 | 54 | 45 | 2026-08-10 Roth Capital: Rating bestaetigt: Buy |
@@ -30,12 +30,12 @@ _Ueber alle 165 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 | 11 | MSFT | - | Microsoft Corporation | NASDAQ/DOW | 483.24 | -10% | 96% (24 Banken, ≤120T) | 569.56 (18% ueber Kurs) | 63 | 62 | 49 | 2026-08-12 Wells Fargo: Rating bestaetigt: Overweight |
 | 12 | ADI | US0326541051 | Analog Devices, Inc. | NASDAQ | 373.09 | -16% | 95% (19 Banken, ≤120T) | 466.00 (25% ueber Kurs) | 45 | 52 | 44 | 2026-08-21 BMO Capital: neu bewertet mit Outperform |
 | 13 | LRCX | - | Lam Research Corporation | NASDAQ | 314.00 | -28% | 94% (17 Banken, ≤120T) | 371.35 (18% ueber Kurs) | 48 | 55 | 50 | 2026-07-30 Morgan Stanley: Rating bestaetigt: Overweight |
-| 14 | FRE.DE | - | Fresenius SE & Co. KGaA | DAX | 46.60 | -30% | 93% (14 Banken, ≤120T) | 55.86 (20% ueber Kurs) | 64 | 62 | 56 | keine in 30T |
-| 15 | WMT | CA93267J1012 | Walmart Inc. | DOW | 103.70 | -23% | 90% (20 Banken, ≤120T) | 137.95 (33% ueber Kurs) | 30 | 37 | 29 | 2026-08-21 Telsey Advisory Group: Rating bestaetigt: Outperform |
+| 14 | FRE.DE | - | Fresenius SE & Co. KGaA | DAX | 46.22 | -30% | 93% (14 Banken, ≤120T) | 55.86 (21% ueber Kurs) | 61 | 60 | 56 | keine in 30T |
+| 15 | WMT | CA93267J1012 | Walmart Inc. | DOW | 103.70 | -22% | 90% (20 Banken, ≤120T) | 137.95 (33% ueber Kurs) | 30 | 37 | 29 | 2026-08-21 Telsey Advisory Group: Rating bestaetigt: Outperform |
 | 16 | AZN | GB0009895292 | AstraZeneca PLC | NASDAQ | 165.98 | -20% | 90% (10 Banken, ≤120T) | 213.69 (29% ueber Kurs) | 51 | 43 | 63 | keine in 30T |
 | 17 | CDNS | US1273871087 | Cadence Design Systems, Inc. | NASDAQ | 319.02 | -23% | 90% (10 Banken, ≤120T) | 403.94 (27% ueber Kurs) | 37 | 44 | 56 | 2026-07-28 B of A Securities: Rating bestaetigt: Buy |
 | 18 | DDOG | US23804L1035 | Datadog, Inc. | NASDAQ | 235.62 | -18% | 89% (28 Banken, ≤120T) | 285.18 (21% ueber Kurs) | 44 | 57 | 47 | 2026-08-08 Scotiabank: Rating bestaetigt: Sector Outperform |
-| 19 | RWE.DE | - | RWE AG | DAX | 57.32 | -6% | 83% (18 Banken, ≤120T) | 66.86 (17% ueber Kurs) | 50 | 55 | 42 | keine in 30T |
+| 19 | RWE.DE | - | RWE AG | DAX | 57.34 | -6% | 83% (18 Banken, ≤120T) | 66.86 (17% ueber Kurs) | 50 | 55 | 42 | keine in 30T |
 | 20 | AVGO | CA11134P1009 | Broadcom Inc. | NASDAQ | 368.45 | -23% | 82% (22 Banken, ≤120T) | 527.88 (43% ueber Kurs) | 39 | 48 | 44 | 2026-08-21 BMO Capital: neu bewertet mit Outperform |
 
 

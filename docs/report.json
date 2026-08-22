@@ -1,21 +1,21 @@
 {
- "date": "2026-08-21",
+ "date": "2026-08-22",
  "ranks": {
   "turnaround": [
    "BEI.DE",
    "MELI",
-   "QIA.DE",
    "HNR1.DE",
-   "BAYN.DE",
    "AXP",
    "ZS",
    "ADBE",
    "SPGI",
    "AXON",
+   "BAYN.DE",
    "ADSK",
    "KHC",
-   "HEN3.DE",
-   "SY1.DE",
+   "QIA.DE",
+   "BNR.DE",
+   "DTE.DE",
    "PCAR"
   ],
   "momentum": [
@@ -27,8 +27,8 @@
    "ALV.DE",
    "DB1.DE",
    "MRVL",
-   "SY1.DE",
    "DHL.DE",
+   "BNR.DE",
    "FANG",
    "PAYX",
    "BAYN.DE",
@@ -41,8 +41,8 @@
    "ADSK",
    "V",
    "REGN",
-   "MTX.DE",
    "ABNB",
+   "MTX.DE",
    "ENR.DE",
    "VRTX",
    "DB1.DE",
@@ -57,37 +57,43 @@
   "turnaround": {
    "entries": [
     {
-     "ticker": "SPGI",
-     "rank": 9
+     "ticker": "BNR.DE",
+     "rank": 13
+    },
+    {
+     "ticker": "DTE.DE",
+     "rank": 14
     }
    ],
    "exits": [
     {
-     "ticker": "DTE.DE",
-     "old_rank": 15
+     "ticker": "HEN3.DE",
+     "old_rank": 13
+    },
+    {
+     "ticker": "SY1.DE",
+     "old_rank": 14
     }
    ],
-   "moves": []
+   "moves": [
+    {
+     "ticker": "QIA.DE",
+     "rank": 12,
+     "delta": -9
+    }
+   ]
   },
   "momentum": {
    "entries": [
     {
-     "ticker": "MRNA",
-     "rank": 2
-    },
-    {
-     "ticker": "ILMN",
-     "rank": 4
+     "ticker": "BNR.DE",
+     "rank": 10
     }
    ],
    "exits": [
     {
-     "ticker": "V",
-     "old_rank": 14
-    },
-    {
-     "ticker": "JNJ",
-     "old_rank": 15
+     "ticker": "SY1.DE",
+     "old_rank": 9
     }
    ],
    "moves": []

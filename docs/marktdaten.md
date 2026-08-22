@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-08-21 21:05 UTC. 173 Werte, Fenster 90 Kalendertage. EUR/USD 1.1678._
+_Erstellt 2026-08-22 06:39 UTC. 173 Werte, Fenster 90 Kalendertage. EUR/USD 1.1678._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -23,11 +23,16 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | ON (ON) | 74.21 | - | - | ja | 35.49 |
 | TXN (TXN) | 264.36 | - | - | ja | 39.04 |
 | XEL (XEL) | 76.3 | - | - | ja | 36.88 |
-| AIR.DE (AIR.DE) | 203.65 | - | - | ja | 44.94 |
-| BAYN.DE (BAYN.DE) | 48.04 | - | - | ja | 50.86 |
-| MTX.DE (MTX.DE) | 352.4 | - | - | ja | 41.01 |
-| QIA.DE (QIA.DE) | 37.565 | - | - | ja | 55.89 |
-| Kaffee (KC=F) | 324.9 | - | - | ja | 46.73 |
+| ADS.DE (ADS.DE) | 151.0 | - | - | ja | 33.26 |
+| AIR.DE (AIR.DE) | 204.9 | - | - | ja | 46.59 |
+| DBK.DE (DBK.DE) | 32.29 | - | - | ja | 51.63 |
+| DTE.DE (DTE.DE) | 28.72 | - | - | ja | 56.81 |
+| FRE.DE (FRE.DE) | 46.215 | - | - | ja | 60.62 |
+| HNR1.DE (HNR1.DE) | 249.4 | - | - | ja | 47.72 |
+| MBG.DE (MBG.DE) | 44.795 | - | ja | ja | 40.42 |
+| MRK.DE (MRK.DE) | 138.05 | ja | - | - | 44.57 |
+| MTX.DE (MTX.DE) | 359.3 | - | - | ja | 45.79 |
+| RHM.DE (RHM.DE) | 1162.2 | - | - | ja | 54.47 |
 
 ---
 

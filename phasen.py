@@ -88,6 +88,36 @@ def pivots(df: pd.DataFrame) -> list[tuple[str, int]]:
     return punkte
 
 
+def rsi_reihe(df: pd.DataFrame, tage: int = 14) -> pd.Series:
+    d = df["Close"].diff()
+    g = d.clip(lower=0).ewm(alpha=1 / tage, adjust=False).mean()
+    v = (-d.clip(upper=0)).ewm(alpha=1 / tage, adjust=False).mean()
+    return 100 - 100 / (1 + g / v.replace(0, np.nan))
+
+
+def verkaufs_rsi(df: pd.DataFrame) -> dict:
+    """Bei welchem RSI dreht DIESER Wert historisch nach unten?
+
+    Die Verkaufsregel 'RSI ab 70' ist eine Zahl fuer alle Werte. Tatsaechlich
+    dreht ein ruhiger Titel schon bei 62, ein Momentumwert erst bei 78. Wer
+    ueberall 70 nimmt, verkauft die einen zu spaet und die anderen zu frueh.
+
+    Gemessen wird der RSI an den bestaetigten HOCHS nach der Umkehr-Regel -
+    also genau an den Punkten, an denen die Aufwaertsstrecke endete. Der
+    Median ist der werttypische Verkaufsbereich, das 75-Prozent-Quantil die
+    Zone, in der es meistens vorbei ist.
+    """
+    p = pivots(df)
+    r = rsi_reihe(df).values
+    werte = [r[i] for art, i in p if art == "hoch" and np.isfinite(r[i])]
+    if len(werte) < 5:
+        return {}
+    a = np.array(werte)
+    return {"vk_rsi_median": float(np.median(a)),
+            "vk_rsi_p75": float(np.percentile(a, 75)),
+            "vk_rsi_faelle": int(a.size)}
+
+
 def phasen(df: pd.DataFrame) -> list[dict]:
     """Abwaertssequenzen und die jeweils folgenden Anstiege."""
     p = pivots(df)
@@ -220,6 +250,7 @@ def main() -> int:
         ph = phasen(df)
         if len(ph) < 3:
             continue
+        vk = verkaufs_rsi(df)
         zeilen.append({
             "ticker": t,
             "sequenzen": len(ph),
@@ -231,6 +262,7 @@ def main() -> int:
             "anstieg_atr": median([p["hoehe_auf"] for p in ph]),
             "weit_tage": median([p["dauer_weit"] for p in ph]),
             "weit_atr": median([p["hoehe_weit"] for p in ph]),
+            **vk,
         })
 
     DOCS.mkdir(parents=True, exist_ok=True)
@@ -256,15 +288,21 @@ def main() -> int:
          f"| Dauer des Anstiegs (bis zum naechsten Hoch) | {median(spalte('anstieg_tage')):.1f} Handelstage |",
          f"| Hoehe des Anstiegs (bis zum naechsten Hoch) | {median(spalte('anstieg_atr')):.2f} ATR |",
          f"| Dauer der weiten Fassung | {median(spalte('weit_tage')):.1f} Handelstage |",
-         f"| Hoehe der weiten Fassung | {median(spalte('weit_atr')):.2f} ATR |", "",
+         f"| Hoehe der weiten Fassung | {median(spalte('weit_atr')):.2f} ATR |",
+         f"| Verkaufs-RSI, Median ueber alle Werte | {median(spalte('vk_rsi_median')):.0f} |",
+         f"| Verkaufs-RSI, 75-Prozent-Wert | {median(spalte('vk_rsi_p75')):.0f} |", "",
+         "_VERKAUFS-RSI ist der RSI an den bestaetigten Hochs dieses Wertes - dort, wo die "
+         "Aufwaertsstrecke endete. Die pauschale Regel 'RSI ab 70' passt nur fuer Werte, deren "
+         "Median dort liegt; bei den anderen verkauft sie zu frueh oder zu spaet._", "",
          "_'Anstieg' ist von Pivot zu Pivot gemessen und damit direkt mit der Korrektur "
          "vergleichbar. 'weit' misst dagegen bis zum hoechsten Punkt, bevor ein tieferes "
          "Tief kommt - diese Zahl faellt in einem Aufwaertsmarkt zwangslaeufig gross aus "
          "und taugt nur zur Einordnung, nicht zum Vergleich._", "",
          "## Je Wert", "",
          "| Ticker | Sequenzen | Tiefs Median | Tiefs max | Korrektur Tage | Korrektur ATR | "
-         "Anstieg Tage | Anstieg ATR | Anstieg/Korrektur | weit Tage | weit ATR |",
-         "|---|---|---|---|---|---|---|---|---|---|---|"]
+         "Anstieg Tage | Anstieg ATR | Anstieg/Korrektur | weit Tage | weit ATR | "
+         "Verkaufs-RSI Median | Verkaufs-RSI 75% |",
+         "|---|---|---|---|---|---|---|---|---|---|---|---|---|"]
 
     def z(v, nk=1):
         return "-" if v is None else f"{v:.{nk}f}"
@@ -275,7 +313,8 @@ def main() -> int:
         L.append(f"| {e['ticker']} | {e['sequenzen']} | {z(e['tiefs_median'])} | {e['tiefs_max']} | "
                  f"{z(e['korrektur_tage'])} | {z(e['korrektur_atr'], 2)} | "
                  f"{z(e['anstieg_tage'])} | {z(e['anstieg_atr'], 2)} | "
-                 f"**{z(v, 2)}** | {z(e['weit_tage'])} | {z(e['weit_atr'], 2)} |")
+                 f"**{z(v, 2)}** | {z(e['weit_tage'])} | {z(e['weit_atr'], 2)} | "
+                 f"**{z(e.get('vk_rsi_median'), 0)}** | {z(e.get('vk_rsi_p75'), 0)} |")
     L += ["", "_Sortiert nach dem Verhaeltnis Anstieg zu Korrektur. Ein Wert mit vielen Tiefs je Sequenz braucht "
           "Geduld: dort folgen auf ein frisches Tief typischerweise noch weitere, bevor der "
           "Anstieg beginnt._"]

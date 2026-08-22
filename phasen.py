@@ -118,6 +118,63 @@ def verkaufs_rsi(df: pd.DataFrame) -> dict:
             "vk_rsi_faelle": int(a.size)}
 
 
+def kauf_rsi(df: pd.DataFrame) -> dict:
+    """Bei welchem RSI dreht DIESER Wert historisch nach oben?
+
+    Das Gegenstueck zu verkaufs_rsi. Die Kaufregel 'RSI unter 50' und die
+    Punktschwelle 'unter 30' sind Zahlen fuer alle Werte - genauso falsch
+    wie die 70 auf der Verkaufsseite. Gemessen wird der RSI an den
+    bestaetigten TIEFS nach der Umkehr-Regel, also dort, wo die
+    Abwaertsstrecke endete.
+
+    Der Median ist der werttypische Kaufbereich, das 25-Prozent-Quantil die
+    Zone, in der es bei diesem Papier wirklich ausverkauft war.
+    """
+    p = pivots(df)
+    r = rsi_reihe(df).values
+    werte = [r[i] for art, i in p if art == "tief" and np.isfinite(r[i])]
+    if len(werte) < 5:
+        return {}
+    a = np.array(werte)
+    return {"kauf_rsi_median": float(np.median(a)),
+            "kauf_rsi_p25": float(np.percentile(a, 25)),
+            "kauf_rsi_faelle": int(a.size)}
+
+
+def puffer_bedarf(df: pd.DataFrame, fenster: int = 10) -> dict:
+    """Wie tief unterschreitet DIESER Wert seine Tiefs?
+
+    Die Regel '2 ATR Puffer' stammt aus dem Durchschnitt ueber alle Werte.
+    Tatsaechlich haelt ein ruhiges Papier seine Tiefs enger als ein
+    zerrissenes. Gemessen wird je bestaetigtem Tief, wie weit der Kurs in
+    den naechsten Handelstagen darunter rutschte, in ATR zum Zeitpunkt des
+    Tiefs.
+
+    Ausgewiesen werden der Anteil der Tiefs, die vollstaendig hielten, und
+    die Quantile - p90 heisst: dieser Puffer haette 90 Prozent der Faelle
+    ueberstanden.
+    """
+    p = pivots(df)
+    a = atr(df).values
+    tief = df["Low"].values
+    n = len(df)
+    werte = []
+    for art, i in p:
+        if art != "tief" or i + fenster >= n:
+            continue
+        if not np.isfinite(a[i]) or a[i] <= 0:
+            continue
+        danach = tief[i + 1:i + 1 + fenster].min()
+        werte.append(max(0.0, (tief[i] - danach) / a[i]))
+    if len(werte) < 5:
+        return {}
+    x = np.array(werte)
+    return {"puffer_haelt_pct": float((x <= 0.001).mean() * 100),
+            "puffer_p75": float(np.percentile(x, 75)),
+            "puffer_p90": float(np.percentile(x, 90)),
+            "puffer_p95": float(np.percentile(x, 95))}
+
+
 def phasen(df: pd.DataFrame) -> list[dict]:
     """Abwaertssequenzen und die jeweils folgenden Anstiege."""
     p = pivots(df)
@@ -251,6 +308,8 @@ def main() -> int:
         if len(ph) < 3:
             continue
         vk = verkaufs_rsi(df)
+        ka = kauf_rsi(df)
+        pb = puffer_bedarf(df)
         zeilen.append({
             "ticker": t,
             "sequenzen": len(ph),
@@ -262,7 +321,7 @@ def main() -> int:
             "anstieg_atr": median([p["hoehe_auf"] for p in ph]),
             "weit_tage": median([p["dauer_weit"] for p in ph]),
             "weit_atr": median([p["hoehe_weit"] for p in ph]),
-            **vk,
+            **vk, **ka, **pb,
         })
 
     DOCS.mkdir(parents=True, exist_ok=True)
@@ -290,7 +349,16 @@ def main() -> int:
          f"| Dauer der weiten Fassung | {median(spalte('weit_tage')):.1f} Handelstage |",
          f"| Hoehe der weiten Fassung | {median(spalte('weit_atr')):.2f} ATR |",
          f"| Verkaufs-RSI, Median ueber alle Werte | {median(spalte('vk_rsi_median')):.0f} |",
-         f"| Verkaufs-RSI, 75-Prozent-Wert | {median(spalte('vk_rsi_p75')):.0f} |", "",
+         f"| Verkaufs-RSI, 75-Prozent-Wert | {median(spalte('vk_rsi_p75')):.0f} |",
+         f"| Kauf-RSI, Median ueber alle Werte | {median(spalte('kauf_rsi_median')):.0f} |",
+         f"| Kauf-RSI, 25-Prozent-Wert | {median(spalte('kauf_rsi_p25')):.0f} |",
+         f"| Anteil Tiefs, die vollstaendig halten | {median(spalte('puffer_haelt_pct')):.0f}% |",
+         f"| Puffer fuer 90 Prozent der Faelle | {median(spalte('puffer_p90')):.2f} ATR |", "",
+         "_KAUF-RSI ist der RSI an den bestaetigten Tiefs dieses Wertes, VERKAUFS-RSI der an den "
+         "Hochs. Beide ersetzen die pauschalen Schwellen 50 bzw. 70 durch das, was dieses Papier "
+         "tatsaechlich tut. PUFFER 90% ist der Abstand, den die KO-Schwelle bei diesem Wert "
+         "braucht, um neun von zehn Tiefunterschreitungen zu ueberstehen - der Ersatz fuer die "
+         "pauschalen 2 ATR._", "",
          "_VERKAUFS-RSI ist der RSI an den bestaetigten Hochs dieses Wertes - dort, wo die "
          "Aufwaertsstrecke endete. Die pauschale Regel 'RSI ab 70' passt nur fuer Werte, deren "
          "Median dort liegt; bei den anderen verkauft sie zu frueh oder zu spaet._", "",
@@ -301,8 +369,9 @@ def main() -> int:
          "## Je Wert", "",
          "| Ticker | Sequenzen | Tiefs Median | Tiefs max | Korrektur Tage | Korrektur ATR | "
          "Anstieg Tage | Anstieg ATR | Anstieg/Korrektur | weit Tage | weit ATR | "
-         "Verkaufs-RSI Median | Verkaufs-RSI 75% |",
-         "|---|---|---|---|---|---|---|---|---|---|---|---|---|"]
+         "Kauf-RSI Median | Kauf-RSI 25% | Verkaufs-RSI Median | Verkaufs-RSI 75% | "
+         "Tief haelt | Puffer 90% |",
+         "|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|"]
 
     def z(v, nk=1):
         return "-" if v is None else f"{v:.{nk}f}"
@@ -314,7 +383,9 @@ def main() -> int:
                  f"{z(e['korrektur_tage'])} | {z(e['korrektur_atr'], 2)} | "
                  f"{z(e['anstieg_tage'])} | {z(e['anstieg_atr'], 2)} | "
                  f"**{z(v, 2)}** | {z(e['weit_tage'])} | {z(e['weit_atr'], 2)} | "
-                 f"**{z(e.get('vk_rsi_median'), 0)}** | {z(e.get('vk_rsi_p75'), 0)} |")
+                 f"**{z(e.get('kauf_rsi_median'), 0)}** | {z(e.get('kauf_rsi_p25'), 0)} | "
+                 f"**{z(e.get('vk_rsi_median'), 0)}** | {z(e.get('vk_rsi_p75'), 0)} | "
+                 f"{z(e.get('puffer_haelt_pct'), 0, '%')} | {z(e.get('puffer_p90'), 2)} ATR |")
     L += ["", "_Sortiert nach dem Verhaeltnis Anstieg zu Korrektur. Ein Wert mit vielen Tiefs je Sequenz braucht "
           "Geduld: dort folgen auf ein frisches Tief typischerweise noch weitere, bevor der "
           "Anstieg beginnt._"]

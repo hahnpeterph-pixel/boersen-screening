@@ -1,0 +1,553 @@
+"""
+historie.py - Auswertungen ueber die Kurshistorie. Ersetzt puffer.py und
+rueckblick.py.
+
+Laeuft auf Knopfdruck, nicht nachts. Schreibt:
+  docs/historie.md      Bericht zum Lesen
+  docs/halteraten.csv   maschinenlesbar, geht in die Excel
+
+Das Repository ist oeffentlich. Dieses Skript rechnet deshalb ausschliesslich
+mit oeffentlichen Kursdaten und kennt weder Positionen noch Trades noch den
+Depotstand. Die Trade-Nachbetrachtung aus rueckblick.py ist NICHT uebernommen
+worden - sie gehoert in das Orderbuch.
+
+Die Leitfrage: WIE OFT HAELT EIN TIEF - und haengt das davon ab, an welcher
+Stelle der Abwaertsserie es steht, wie weit der Kurs schon darueber notiert
+und wo der RSI steht?
+
+Bis 22.08.2026 lag das in zwei Dateien mit zwei eigenen Tiefsdefinitionen:
+puffer.py rechnete 3-links-3-rechts, rueckblick.py trug eine Kopie der
+Umkehr-Regel, deren Kommentar auf marktdaten.py verwies - und veraltete
+lautlos, als sich marktdaten.py aenderte. Beide sind hier aufgegangen, die
+Regel kommt aus tiefs_regel.py.
+
+WAS BEWUSST ENTFALLEN IST
+
+  puffer.py Teil A  rechnete Trades - gehoert nicht in ein oeffentliches
+                    Repository und ausserdem ins Orderbuch.
+  puffer.py Teil C  verglich drei Bezugsvarianten und stieg fest nach fuenf
+                    Handelstagen aus. Beides ist entschieden: gehandelt wird
+                    das juengste bestaetigte Tief, und "haelt" heisst bis zum
+                    Ende der Aufwaertsstrecke.
+  puffer.py Teil D  untersuchte Signalgruppen und Kombinationen. Daraus kam
+                    die Erkenntnis, dass der alte Score nichts getrennt hat.
+                    Der Score ist neu gefasst, die Frage beantwortet.
+
+DEFINITION "HAELT"
+
+Gemessen wird ab dem BESTAETIGUNGSTAG - dem Tag, an dem eine Kerze das Hoch
+der Tiefkerze ueberschreitet. Vorher kann nicht gekauft werden, vorher darf
+also auch nicht gemessen werden. Bis zum naechsten bestaetigten Swing-Hoch
+wird geprueft, wie weit der Kurs unter das Tief gerutscht ist, gemessen in
+ATR(14) zum Zeitpunkt des Tiefs.
+
+Das naechste Swing-Hoch ist das Ende der Aufwaertsstrecke und damit der
+Punkt, an dem nach der Strategie ohnehin verkauft wird ("Umkehr am
+Widerstand"). Es passt zur beobachteten Haltedauer von im Mittel elf Tagen.
+
+Die Basispreisdrift bleibt aussen vor: ueber elf Handelstage sind das rund
+0,11 ATR. Fuer die Haltequote ist das Rauschen, fuer den Ertrag bei langer
+Haltedauer nicht - dort wird sie beruecksichtigt.
+
+Laufende Sequenzen zaehlen nicht mit: ohne Ende ist nicht entscheidbar, ob
+das Tief gehalten hat. Die Quote wird zusaetzlich MIT ihnen ausgewiesen,
+damit der Unterschied sichtbar bleibt.
+
+Aufruf:  python3 historie.py
+         python3 historie.py --jahre 5
+         python3 historie.py --teil halterate
+
+KEINE Anlageberatung. Das Skript misst historische Kursverlaeufe.
+"""
+
+from __future__ import annotations
+
+import csv
+import json
+import sys
+from datetime import datetime, timezone
+from pathlib import Path
+
+import numpy as np
+import pandas as pd
+
+import tiefs_regel as regel
+
+BASE = Path(__file__).resolve().parent
+DOCS = BASE / "docs"
+MD_AUS = DOCS / "historie.md"
+CSV_AUS = DOCS / "halteraten.csv"
+
+JAHRE = 3
+ATR_TAGE = 14
+RSI_TAGE = 14
+
+# Puffervarianten. 0,5 bis 3,0 deckt den Bereich ab, in dem tatsaechlich
+# entschieden wird - darueber steigt die Quote kaum noch, das Kapital aber
+# weiter.
+PUFFER = (0.5, 1.0, 1.5, 2.0, 2.5, 3.0)
+
+# Abstandsklassen fuer den Einstieg ueber dem Tief, in ATR. Die Frage
+# dahinter: ist ein Tief, von dem sich der Kurs schon geloest hat,
+# verlaesslicher als ein frisches? Kipppunkt liegt rechnerisch bei 45 %.
+ABSTAND_KLASSEN = ((0.0, 0.4, "bis 0,4"), (0.4, 0.8, "0,4 bis 0,8"),
+                   (0.8, 1.2, "0,8 bis 1,2"), (1.2, 99.0, "ueber 1,2"))
+
+# RSI relativ zum eigenen Kauf-Median des Wertes. Absolute Schwellen sind
+# ueber Werte hinweg nicht vergleichbar - Nike dreht bei 50, Gold bei 63.
+RSI_KLASSEN = ((-99.0, -8.0, "8+ unter Median"), (-8.0, -3.0, "3 bis 8 unter"),
+               (-3.0, 3.0, "um den Median"), (3.0, 99.0, "ueber Median"))
+
+KETTE_TAGE = 20      # Fenster fuer ein neues bestaetigtes Tief nach einem KO
+MIN_FAELLE = 8       # darunter wird eine Zelle nicht ausgewiesen
+
+
+# ── Kennzahlen ─────────────────────────────────────────────────────
+
+def atr(df: pd.DataFrame, tage: int = ATR_TAGE) -> np.ndarray:
+    h, t, c = df["High"], df["Low"], df["Close"]
+    vor = c.shift(1)
+    tr = pd.concat([h - t, (h - vor).abs(), (t - vor).abs()], axis=1).max(axis=1)
+    return tr.rolling(tage).mean().values
+
+
+def rsi(df: pd.DataFrame, tage: int = RSI_TAGE) -> np.ndarray:
+    d = df["Close"].diff()
+    auf = d.clip(lower=0).ewm(alpha=1 / tage, adjust=False).mean()
+    ab = (-d.clip(upper=0)).ewm(alpha=1 / tage, adjust=False).mean()
+    return (100 - 100 / (1 + auf / ab.replace(0, np.nan))).values
+
+
+def bestaetigungstag(df: pd.DataFrame, i: int) -> int | None:
+    """Erster Tag nach dem Tief, dessen Hoch ueber dem Hoch der Tiefkerze
+    liegt. Vorher ist das Tief nicht handelbar."""
+    hoch = df["High"].values
+    for j in range(i + 1, len(df)):
+        if hoch[j] > hoch[i]:
+            return j
+    return None
+
+
+# ── Faelle bauen ───────────────────────────────────────────────────
+
+def faelle_je_wert(ticker: str, df: pd.DataFrame) -> list[dict]:
+    """Ein Eintrag je zaehlendem Tief einer abgeschlossenen Sequenz."""
+    seqs = regel.sequenzen(df)
+    if not seqs:
+        return []
+    hochs = regel.swing_hochs(df)
+    a, r = atr(df), rsi(df)
+    tief_w, hoch_w = df["Low"].values, df["High"].values
+    daten = df.index
+
+    # Werttypische Anzahl Tiefs je Sequenz - das "y" in "Tief x von y".
+    abgeschlossen = [s for s in seqs if not s["laufend"]]
+    typisch = (float(np.median([s["anzahl"] for s in abgeschlossen]))
+               if abgeschlossen else None)
+    # Eigener Kauf-RSI-Median, Bezugspunkt fuer die relative RSI-Klasse.
+    rsi_an_tiefs = [r[i] for s in seqs for i in s["tiefs"] if np.isfinite(r[i])]
+    rsi_median = float(np.median(rsi_an_tiefs)) if rsi_an_tiefs else None
+
+    ergebnis = []
+    for s in seqs:
+        for pos, i in enumerate(s["tiefs"], start=1):
+            atr_i = a[i]
+            if not np.isfinite(atr_i) or atr_i <= 0:
+                continue
+            b = bestaetigungstag(df, i)
+            if b is None:
+                continue
+            ende = next((h["i"] for h in hochs if h["i"] > b), None)
+            if ende is None:
+                continue      # Aufwaertsstrecke laeuft noch, kein Urteil
+
+            fenster = tief_w[b:ende + 1]
+            tiefster = float(fenster.min()) if len(fenster) else float(tief_w[b])
+            unterschritten = (float(tief_w[i]) - tiefster) / atr_i
+            anstieg = (float(hoch_w[ende]) - float(df["Close"].values[b])) / atr_i
+
+            ergebnis.append({
+                "ticker": ticker,
+                "datum": f"{daten[i]:%Y-%m-%d}",
+                "position": pos,
+                "letztes_der_serie": pos == s["anzahl"],
+                "serie_laenge": s["anzahl"],
+                "typisch": typisch,
+                "laufend": s["laufend"],
+                # Abstand, den der Kurs am Bestaetigungstag schon ueber dem
+                # Tief hat - der Einstiegspunkt eines echten Trades.
+                "abstand_atr": (float(df["Close"].values[b]) - float(tief_w[i])) / atr_i,
+                "rsi": float(r[i]) if np.isfinite(r[i]) else None,
+                "rsi_rel": (float(r[i]) - rsi_median
+                            if (rsi_median is not None and np.isfinite(r[i]))
+                            else None),
+                "unterschritten_atr": unterschritten,
+                "anstieg_atr": anstieg,
+                "i": i, "b": b, "ende": ende,
+            })
+    return ergebnis
+
+
+def pivots_zeigen(ticker: str, df: pd.DataFrame, tage: int = 120) -> None:
+    """Alle erkannten Tiefs und Hochs eines Wertes ausgeben, zum Abgleich
+    mit dem Chart.
+
+    Gedacht fuer genau den Fall, dass Chartablesung und Skript
+    auseinanderlaufen und nicht klar ist, wer recht hat. Ausgegeben wird je
+    Wendepunkt das Datum, der Wert, und bei Tiefs der Bestaetigungstag - der
+    Tag, an dem eine Kerze das HOCH der Tiefkerze ueberschritten hat. Fehlt
+    er, war das Tief nie bestaetigt und zaehlt nicht.
+
+    ZAEHLT sagt, ob das Tief in die laufende Serie eingeht: nur neue
+    Tiefststaende zaehlen, ein hoeheres Zwischentief nicht.
+    """
+    grenze = df.index[-1] - pd.Timedelta(days=tage)
+    hoch_w, tief_w = df["High"].values, df["Low"].values
+    seq_tiefs = {i for s in regel.sequenzen(df) for i in s["tiefs"]}
+    punkte = regel.pivots(df)
+    print(f"\n{ticker}: Wendepunkte der letzten {tage} Kalendertage")
+    print(f"{'Datum':12} {'Art':6} {'Wert':>10} {'Hoch d. Kerze':>14} "
+          f"{'bestaetigt am':>14} {'zaehlt':>7}")
+    for art, i in punkte:
+        if df.index[i] < grenze:
+            continue
+        if art == "tief":
+            b = bestaetigungstag(df, i)
+            print(f"{df.index[i]:%Y-%m-%d} {'Tief':6} {tief_w[i]:10.2f} "
+                  f"{hoch_w[i]:14.2f} "
+                  f"{(f'{df.index[b]:%Y-%m-%d}' if b else 'NIE'):>14} "
+                  f"{('ja' if i in seq_tiefs else 'nein'):>7}")
+        else:
+            print(f"{df.index[i]:%Y-%m-%d} {'Hoch':6} {hoch_w[i]:10.2f} "
+                  f"{'':14} {'':14} {'':>7}")
+    for v in regel.VARIANTEN:
+        print(f"  Serie [{v}]: {regel.tiefserie(df, v)}")
+
+
+# ── Auswertungen ───────────────────────────────────────────────────
+
+def quote(faelle: list[dict], p: float) -> float | None:
+    if not faelle:
+        return None
+    return 100.0 * sum(1 for f in faelle if f["unterschritten_atr"] <= p) / len(faelle)
+
+
+def tabelle(faelle: list[dict], schluessel, ordnung=None) -> list[dict]:
+    """Halterate je Gruppe und Puffer."""
+    gruppen: dict = {}
+    for f in faelle:
+        k = schluessel(f)
+        if k is not None:
+            gruppen.setdefault(k, []).append(f)
+    keys = ordnung or sorted(gruppen)
+    zeilen = []
+    for k in keys:
+        g = gruppen.get(k, [])
+        if len(g) < MIN_FAELLE:
+            continue
+        z = {"gruppe": k, "faelle": len(g),
+             "anstieg_median": float(np.median([x["anstieg_atr"] for x in g]))}
+        for p in PUFFER:
+            z[f"p{p}"] = quote(g, p)
+        zeilen.append(z)
+    return zeilen
+
+
+def position_klasse(f: dict) -> str | None:
+    """Tief x von y - y ist die werttypische Anzahl, x kann darueber liegen."""
+    if f["typisch"] is None:
+        return None
+    x, y = f["position"], f["typisch"]
+    if x == 1:
+        return "1 (erstes)"
+    if x <= y:
+        return "2 bis y"
+    if x <= y + 1:
+        return "y+1"
+    return "ueber y+1"
+
+
+def klasse(wert, klassen):
+    if wert is None:
+        return None
+    for u, o, name in klassen:
+        if u <= wert < o:
+            return name
+    return None
+
+
+def korrelation(faelle: list[dict]) -> float | None:
+    paare = [(f["position"], f["rsi_rel"]) for f in faelle if f["rsi_rel"] is not None]
+    if len(paare) < 30:
+        return None
+    x, y = zip(*paare)
+    return float(np.corrcoef(x, y)[0, 1])
+
+
+def kette(faelle: list[dict], p: float = 1.0) -> dict:
+    """Was taugt der Einstieg NACH einem Knock-out?
+
+    Erste Fassung fragte, ob binnen KETTE_TAGE ueberhaupt ein neues Tief
+    entsteht. Die Antwort war 100 Prozent - trivial, denn ein Kurs, der ein
+    Tief um mehr als den Puffer unterschritten hat, bildet dabei zwangslaeufig
+    ein neues. Die Zahl mass nichts.
+
+    Gemessen wird deshalb die Anschlussfrage: haelt das naechste Tief
+    desselben Wertes besser als der Durchschnitt? Nur das entscheidet, ob ein
+    KO eine Gelegenheit eroeffnet oder blosser Verlust ist. Der Verlust aus
+    Trade 1 zaehlt in beiden Faellen voll.
+    """
+    nach_ticker: dict = {}
+    for f in faelle:
+        nach_ticker.setdefault(f["ticker"], []).append(f)
+    for v in nach_ticker.values():
+        v.sort(key=lambda x: x["i"])
+
+    folge = []
+    ko = 0
+    for v in nach_ticker.values():
+        for k in range(len(v) - 1):
+            if v[k]["unterschritten_atr"] > p:
+                ko += 1
+                naechstes = v[k + 1]
+                if naechstes["i"] - v[k]["i"] <= KETTE_TAGE:
+                    folge.append(naechstes)
+    return {"ko": ko, "folge": len(folge),
+            "quote": quote(folge, p),
+            "anstieg": (float(np.median([x["anstieg_atr"] for x in folge]))
+                        if folge else None)}
+
+
+# ── Keine Positionsdaten ───────────────────────────────────────────
+#
+# Bewusst NICHT enthalten: die eigene Trade-Historie. Das Repository ist
+# oeffentlich, und Kaufdaten, Stueckzahlen und Ergebnisse gehen niemanden
+# etwas an. Die Trade-Nachbetrachtung, die frueher in rueckblick.py stand,
+# gehoert in das Orderbuch - dort liegen die Daten ohnehin, vollstaendiger
+# und ohne Umweg.
+#
+# Dieses Skript rechnet ausschliesslich mit oeffentlichen Kursdaten. Es
+# kennt keine Position, keinen Schein und keinen Depotstand.
+
+# ── Laden ──────────────────────────────────────────────────────────
+
+def universum() -> list[str]:
+    datei = BASE / "universe.json"
+    if not datei.exists():
+        return []
+    roh = json.loads(datei.read_text(encoding="utf-8"))
+    werte: list[str] = []
+    for gruppe in roh.get("benchmarks", {}):
+        werte += roh.get(gruppe, [])
+    for gruppe in ("COMMODITIES", "CRYPTO"):
+        werte += list(roh.get(gruppe, {}).keys())
+    return sorted(set(werte))
+
+
+def lade(tickers: list[str], jahre: int) -> dict[str, pd.DataFrame]:
+    import yfinance as yf
+    print(f"Lade {len(tickers)} Werte, {jahre} Jahre ...")
+    daten: dict[str, pd.DataFrame] = {}
+    for i in range(0, len(tickers), 40):
+        teil = tickers[i:i + 40]
+        try:
+            roh = yf.download(teil, period=f"{jahre}y", interval="1d",
+                              auto_adjust=True, group_by="ticker",
+                              threads=True, progress=False)
+        except Exception as exc:  # noqa: BLE001
+            print(f"  ! Abruf fehlgeschlagen ({teil[0]} ...): {exc}")
+            continue
+        for t in teil:
+            try:
+                d = roh[t] if isinstance(roh.columns, pd.MultiIndex) else roh
+                d = d.dropna(subset=["High", "Low", "Close"])
+                if len(d) > 120:
+                    daten[t] = d
+            except Exception:  # noqa: BLE001
+                continue
+    print(f"  {len(daten)} Werte geladen.")
+    return daten
+
+
+# ── Bericht ────────────────────────────────────────────────────────
+
+def z(x, nk=0, einheit=""):
+    if x is None or (isinstance(x, float) and not np.isfinite(x)):
+        return "-"
+    return f"{x:.{nk}f}{einheit}"
+
+
+def block(titel: str, zeilen: list[dict], spalte: str = "Gruppe") -> list[str]:
+    if not zeilen:
+        return [f"### {titel}", "", "_Zu wenige Faelle._", ""]
+    kopf = f"| {spalte} | Faelle | " + " | ".join(f"{p} ATR" for p in PUFFER) + " | Anstieg |"
+    trenn = "|---" * (len(PUFFER) + 3) + "|"
+    aus = [f"### {titel}", "", kopf, trenn]
+    for r in zeilen:
+        werte = " | ".join(z(r.get(f"p{p}"), 0, "%") for p in PUFFER)
+        aus.append(f"| {r['gruppe']} | {r['faelle']} | {werte} | "
+                   f"{z(r['anstieg_median'], 2)} ATR |")
+    aus.append("")
+    return aus
+
+
+def bericht(alle: list[dict], daten: dict, jahre: int) -> str:
+    jetzt = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    fest = [f for f in alle if not f["laufend"]]
+    L = [
+        "# Historie - Halteraten und Einstieg",
+        "",
+        f"_Erstellt {jetzt}. {jahre} Jahre, {len(daten)} Werte, "
+        f"{len(fest)} auswertbare Tiefs aus abgeschlossenen Sequenzen "
+        f"({len(alle) - len(fest)} aus laufenden ausgeschlossen)._",
+        "",
+        "_Tiefs nach der Umkehr-Regel aus `tiefs_regel.py`. Eine Abwaertsserie "
+        "zaehlt nur neue Tiefststaende; sie endet erst, wenn ein hoeheres Tief "
+        "kommt UND danach ein hoeheres Hoch ueber dem Hoch vor dem tiefsten "
+        "Tief. HAELT heisst: ab dem Bestaetigungstag bis zum naechsten "
+        "bestaetigten Swing-Hoch nicht mehr als der genannte Puffer unter das "
+        "Tief gerutscht. Prozentzahlen sind Anteile der Faelle, in denen das "
+        "Tief hielt. ANSTIEG ist der Median der erreichten Bewegung bis zum "
+        "naechsten Hoch, in ATR - die Ertragsseite._",
+        "",
+        "## Grundrate ueber alles",
+        "",
+        "| Puffer | haelt |",
+        "|---|---|",
+    ]
+    for p in PUFFER:
+        L.append(f"| {p} ATR | {z(quote(fest, p), 0, '%')} |")
+    L += ["",
+          f"_Mit den laufenden Sequenzen waeren es bei 1,0 ATR "
+          f"{z(quote(alle, 1.0), 0, '%')} statt {z(quote(fest, 1.0), 0, '%')} - "
+          f"laufende Sequenzen hatten noch keine Gelegenheit zu brechen und "
+          f"schoenen die Quote._", ""]
+
+    L += ["## Nach Position in der Serie", "",
+          "_Die Leitfrage: haelt das erste Tief seltener als ein spaeteres? "
+          "y ist die werttypische Anzahl Tiefs je Sequenz dieses Wertes._", ""]
+    L += block("Alle Werte", tabelle(fest, position_klasse,
+                                     ["1 (erstes)", "2 bis y", "y+1", "ueber y+1"]),
+               "Position")
+
+    L += ["_Nicht ausgewertet wird, ob es das LETZTE Tief der Serie war: "
+          "eine Serie endet per Definition mit ihrem letzten Tief, also "
+          "haelt dieses immer. Die Zahl waere 100 Prozent und sagte "
+          "nichts - im Moment der Kaufentscheidung ist ohnehin nicht "
+          "erkennbar, ob ein Tief das letzte sein wird._", ""]
+
+    L += ["## Nach Abstand beim Einstieg", "",
+          "_Wie weit hatte sich der Kurs am Bestaetigungstag schon vom Tief "
+          "geloest? Die These: ein Tief, von dem der Kurs sich geloest hat, "
+          "ist bestaetigt - ein frisches ist ein Kandidat._", ""]
+    L += block("Abstand in ATR",
+               tabelle(fest, lambda f: klasse(f["abstand_atr"], ABSTAND_KLASSEN),
+                       [k[2] for k in ABSTAND_KLASSEN]), "Abstand")
+
+    k = korrelation(fest)
+    L += ["## Nach RSI, relativ zum eigenen Median", "",
+          f"_Korrelation zwischen Position in der Serie und relativem RSI: "
+          f"{z(k, 2)}. Ist sie hoch, sagt der RSI nichts, was die Position "
+          f"nicht schon sagt._", ""]
+    L += block("RSI-Abstand zum eigenen Kauf-Median",
+               tabelle(fest, lambda f: klasse(f["rsi_rel"], RSI_KLASSEN),
+                       [k[2] for k in RSI_KLASSEN]), "RSI-Lage")
+
+    L += ["## Nach einem Knock-out", "",
+          "_Haelt das naechste Tief desselben Wertes besser als der "
+          "Durchschnitt? Nur das entscheidet, ob ein KO eine Gelegenheit "
+          "eroeffnet._", ""]
+    for p in (1.0, 2.0):
+        kt = kette(fest, p)
+        if kt.get("ko"):
+            grund = quote(fest, p)
+            L.append(f"- Puffer {p} ATR: {kt['ko']} ausgeknockte Faelle, "
+                     f"{kt['folge']} mit einem Folgetief binnen {KETTE_TAGE} "
+                     f"Handelstagen. Davon hielten {z(kt['quote'], 0, '%')} "
+                     f"gegen {z(grund, 0, '%')} im Durchschnitt, "
+                     f"Anstieg {z(kt['anstieg'], 2)} ATR.")
+    L += ["",
+          "_Der Verlust aus dem ersten Trade zaehlt voll, unabhaengig davon, "
+          "ob ein zweiter folgt. Liegt die Folgequote nicht deutlich ueber der "
+          "Grundrate, rechtfertigt ein moeglicher Wiedereinstieg keinen "
+          "engeren Puffer._", ""]
+
+    L += ["---", "",
+          "_Keine Anlageberatung. Historische Kursverlaeufe, gemessen mit "
+          "der Regel aus `tiefs_regel.py`._"]
+    return "\n".join(L)
+
+
+def csv_schreiben(fest: list[dict]) -> None:
+    zeilen = []
+    for name, schluessel, ordnung in (
+        ("position", position_klasse, ["1 (erstes)", "2 bis y", "y+1", "ueber y+1"]),
+        ("abstand", lambda f: klasse(f["abstand_atr"], ABSTAND_KLASSEN),
+         [k[2] for k in ABSTAND_KLASSEN]),
+        ("rsi_rel", lambda f: klasse(f["rsi_rel"], RSI_KLASSEN),
+         [k[2] for k in RSI_KLASSEN]),
+    ):
+        for r in tabelle(fest, schluessel, ordnung):
+            z0 = {"dimension": name, "gruppe": r["gruppe"], "faelle": r["faelle"],
+                  "anstieg_median_atr": round(r["anstieg_median"], 3)}
+            for p in PUFFER:
+                z0[f"haelt_{p}_atr_pct"] = (round(r[f"p{p}"], 1)
+                                            if r[f"p{p}"] is not None else "")
+            zeilen.append(z0)
+    if not zeilen:
+        return
+    DOCS.mkdir(exist_ok=True)
+    with open(CSV_AUS, "w", encoding="utf-8", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=list(zeilen[0].keys()))
+        w.writeheader()
+        w.writerows(zeilen)
+    print(f"Geschrieben: {CSV_AUS} ({len(zeilen)} Zeilen)")
+
+
+def main() -> int:
+    jahre = JAHRE
+    if "--jahre" in sys.argv:
+        jahre = int(sys.argv[sys.argv.index("--jahre") + 1])
+
+    # Diagnose: Wendepunkte eines Wertes zum Chartabgleich ausgeben und
+    # sonst nichts tun. "python3 historie.py --pivots CDNS"
+    if "--pivots" in sys.argv:
+        t = sys.argv[sys.argv.index("--pivots") + 1]
+        d = lade([t, "^NDX"], jahre)
+        if t not in d:
+            print(f"{t}: keine Kursdaten.")
+            return 1
+        pivots_zeigen(t, d[t])
+        return 0
+
+    tickers = universum()
+    if not tickers:
+        print("universe.json nicht gefunden oder leer.")
+        return 1
+
+    daten = lade(tickers, jahre)
+    if len(daten) < 10:
+        print("Zu wenige Kursdaten - Abbruch.")
+        return 1
+
+    alle: list[dict] = []
+    for ticker, df in daten.items():
+        try:
+            alle += faelle_je_wert(ticker, df)
+        except Exception as exc:  # noqa: BLE001
+            print(f"  ! {ticker}: {exc}")
+    print(f"  {len(alle)} Tiefs ausgewertet.")
+    if not alle:
+        print("Keine auswertbaren Tiefs - Abbruch.")
+        return 1
+
+    fest = [f for f in alle if not f["laufend"]]
+    DOCS.mkdir(exist_ok=True)
+    MD_AUS.write_text(bericht(alle, daten, jahre), encoding="utf-8")
+    print(f"Geschrieben: {MD_AUS}")
+    csv_schreiben(fest)
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

@@ -1,26 +1,26 @@
 # Rueckblick - was hat die erfolgreichen Trades getragen?
 
-_Erstellt 2026-08-22 09:37 UTC. Eine Zeile je abgeschlossener Tranche. Der Stand am Kauftag ist ausschliesslich aus damals vorliegenden Daten rekonstruiert._
+_Erstellt 2026-08-22 09:47 UTC. Eine Zeile je abgeschlossener Tranche. Der Stand am Kauftag ist ausschliesslich aus damals vorliegenden Daten rekonstruiert._
 
 ## Teil 1 - Zerlegung des Gewinns
 
-_Der Gewinn eines Knock-out-Scheins hat zwei Quellen: die Bewegung des Basiswerts und den Hebel. 'Hebel' ist hier RUECKGERECHNET aus den beiden Renditen, nicht aus den Papierdaten. 'KO geschaetzt' folgt daraus und ist eine Naeherung ohne Spread und Finanzierungskosten. 'Rest zum KO' ist der Abstand des tiefsten Kurses waehrend der Haltedauer zu dieser geschaetzten Schwelle, in ATR - je kleiner, desto knapper war es._
+_Gemessen wird nur die Bewegung des Basiswerts, in Prozent und in ATR. Ein Hebel wird bewusst nicht gerechnet: er waere Kurs geteilt durch KO-Abstand und damit nur eine andere Schreibweise des Puffers, den das Orderbuch in ATR fuehrt. 'unter dem Bezugstief' zeigt, wie weit der Kurs waehrend der Haltedauer unter das Tief gerutscht ist, auf das der Trade gesetzt war - 0,00 heisst: das Tief hat gehalten._
 
-| Position | Kauf | Verkauf | Basis Kauf | Basis Verkauf | Bewegung | in ATR | Rendite Schein | Hebel | KO geschaetzt | tiefster Kurs | Rest zum KO |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| Microsoft | 07-22 | 08-03 | 389.61 | 486.73 | 24.9% | 8.16 | **139.2%** | 5.6x | 319.83 | 376.68 | 4.78 ATR |
-| Microsoft | 07-22 | 08-10 | 389.61 | 505.11 | 29.6% | 9.71 | **199.0%** | 6.7x | 331.57 | 376.68 | 3.79 ATR |
-| NVIDIA | 08-03 | 08-10 | 206.64 | 217.55 | 5.3% | 1.40 | **63.5%** | 12.0x | 189.46 | 196.85 | 0.95 ATR |
-| Oracle | 07-21 | 08-10 | 127.05 | 151.05 | 18.9% | 2.95 | **217.0%** | 11.5x | 115.99 | 114.50 | -0.18 ATR |
-| Rheinmetall | 08-11 | 08-17 | 1142.20 | 1214.00 | 6.3% | 1.35 | **44.8%** | 7.1x | 981.93 | 1128.00 | 2.75 ATR |
-| Gold | 08-14 | 08-20 | 4380.40 | 4516.30 | 3.1% | 1.81 | **79.9%** | 25.8x | 4210.31 | 4315.00 | 1.39 ATR |
-| Gold | 08-14 | 08-20 | 4380.40 | 4516.30 | 3.1% | 1.81 | **71.4%** | 23.0x | 4190.06 | 4315.00 | 1.66 ATR |
-| ASML | 08-20 | 08-21 | 1750.31 | 1763.76 | 0.8% | 0.19 | **-9.7%** | -12.6x | - | 1741.00 | - ATR |
-| NVIDIA | 08-03 | 08-21 | 206.64 | 214.72 | 3.9% | 1.04 | **25.5%** | 6.5x | 174.95 | 196.85 | 2.81 ATR |
-| Applied Materials | 08-20 | 08-21 | 496.21 | 492.32 | -0.8% | -0.12 | **-12.3%** | 15.7x | 464.58 | 483.13 | 0.56 ATR |
-| Take-Two | 08-20 | 08-21 | 240.15 | 239.62 | -0.2% | -0.06 | **53.2%** | -241.1x | - | 231.58 | - ATR |
-| Micron | 08-20 | 08-21 | 974.33 | 966.78 | -0.8% | -0.11 | **2.8%** | -3.6x | - | 929.07 | - ATR |
-| Gold II | 08-21 | 08-21 | 4624.10 | 4624.10 | 0.0% | 0.00 | **12.0%** | - | - | 4560.00 | - ATR |
+| Position | Kauf | Verkauf | Basis Kauf | Basis Verkauf | Bewegung | in ATR | Rendite Schein | tiefster Kurs | unter dem Bezugstief |
+|---|---|---|---|---|---|---|---|---|---|
+| Microsoft | 07-22 | 08-03 | 389.61 | 486.73 | 24.9% | 8.16 | **139.2%** | 376.68 | 0.80 ATR |
+| Microsoft | 07-22 | 08-10 | 389.61 | 505.11 | 29.6% | 9.71 | **199.0%** | 376.68 | 0.80 ATR |
+| NVIDIA | 08-03 | 08-10 | 206.64 | 217.55 | 5.3% | 1.40 | **63.5%** | 196.85 | 0.00 ATR |
+| Oracle | 07-21 | 08-10 | 127.05 | 151.05 | 18.9% | 2.95 | **217.0%** | 114.50 | 0.68 ATR |
+| Rheinmetall | 08-11 | 08-17 | 1142.20 | 1214.00 | 6.3% | 1.35 | **44.8%** | 1128.00 | 0.00 ATR |
+| Gold | 08-14 | 08-20 | 4380.40 | 4516.30 | 3.1% | 1.81 | **79.9%** | 4315.00 | 0.00 ATR |
+| Gold | 08-14 | 08-20 | 4380.40 | 4516.30 | 3.1% | 1.81 | **71.4%** | 4315.00 | 0.00 ATR |
+| ASML | 08-20 | 08-21 | 1750.31 | 1763.76 | 0.8% | 0.19 | **-9.7%** | 1741.00 | 0.00 ATR |
+| NVIDIA | 08-03 | 08-21 | 206.64 | 214.72 | 3.9% | 1.04 | **25.5%** | 196.85 | 0.00 ATR |
+| Applied Materials | 08-20 | 08-21 | 496.21 | 492.32 | -0.8% | -0.12 | **-12.3%** | 483.13 | 0.13 ATR |
+| Take-Two | 08-20 | 08-21 | 240.15 | 239.62 | -0.2% | -0.06 | **53.2%** | 231.58 | 0.00 ATR |
+| Micron | 08-20 | 08-21 | 974.33 | 966.78 | -0.8% | -0.11 | **2.8%** | 929.07 | 0.00 ATR |
+| Gold II | 08-21 | 08-21 | 4624.10 | 4624.10 | 0.0% | 0.00 | **12.0%** | 4560.00 | 0.00 ATR |
 
 ## Teil 2 - Lage am Kauftag
 
@@ -48,8 +48,7 @@ _Technischer Score bis 70 Punkte: Bodenbildung 30, RSI unter 30 zwanzig bzw. unt
 |---|---|---|
 | Bewegung Basiswert in % | 3.91 | -0.01 |
 | Bewegung in ATR | 1.40 | 0.04 |
-| Hebel | 6.9 | 1.5 |
-| Rest zum KO in ATR | 2.20 | 0.56 |
+| unter dem Bezugstief in ATR | 0.00 | 0.07 |
 | Einstieg ueber Tief in ATR | 0.87 | 0.20 |
 | RSI am Kauftag | 53 | 47 |
 | laufende Korrektur in ATR | 1.74 | 2.10 |

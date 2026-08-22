@@ -389,8 +389,11 @@ def main() -> int:
          "Tief haelt | Puffer 90% |",
          "|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|"]
 
-    def z(v, nk=1):
-        return "-" if v is None else f"{v:.{nk}f}"
+    def z(v, nk=1, einheit=""):
+        """Zahl als Text, mit Strich fuer fehlende Werte. Die Einheit steht
+        direkt dahinter - ohne sie brach der Bericht ab, sobald eine Zeile
+        einen Prozentwert ausweisen sollte."""
+        return "-" if v is None else f"{v:.{nk}f}{einheit}"
 
     for e in sorted(zeilen, key=lambda x: -((x["anstieg_atr"] or 0) / (x["korrektur_atr"] or 1))):
         v = (e["anstieg_atr"] / e["korrektur_atr"]

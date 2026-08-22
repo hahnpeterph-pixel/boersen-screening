@@ -191,6 +191,26 @@ def swing_tiefs(df):
     return treffer
 
 
+def tief_takt(treffer, df):
+    """Wie oft dreht dieser Wert im Fenster - und wie eng liegen die Tiefs?
+
+    Die Umkehr-Regel kennt keine Mindestbewegung, jede Drehung zaehlt. Wie
+    viele Tiefs dabei herauskommen, sagt also etwas ueber den Wert selbst:
+    ein ruhiger Titel dreht selten, ein nervoeser alle paar Tage. Ohne diese
+    Zahl laesst sich nicht beurteilen, ob drei Tiefs in zwei Wochen bei
+    diesem Papier normal sind oder auffaellig.
+
+    Gibt (Anzahl bestaetigter Tiefs, mittlerer Abstand in Handelstagen)
+    zurueck. Der Abstand wird ueber die Zeilenabstaende im Kursdatensatz
+    gemessen, zaehlt also nur Handelstage, keine Wochenenden.
+    """
+    best = sorted((t["i"] for t in treffer if t.get("best")), reverse=True)
+    if len(best) < 2:
+        return len(best), None
+    abstaende = [best[k] - best[k + 1] for k in range(len(best) - 1)]
+    return len(best), round(sum(abstaende) / len(abstaende), 1)
+
+
 def vol_rel(df, bis, tage=20):
     if "Volume" not in df.columns:
         return None
@@ -301,6 +321,9 @@ def main():
             "hoch60": z(hoch60(df)),
             "vol_druck5": (z(vol_druck5(df), 2) if mitvol else ""),
         }
+        anzahl, takt = tief_takt(tr, df)
+        r["tiefs_anzahl"] = anzahl
+        r["tiefs_abstand"] = z(takt, 1) if takt is not None else ""
         for n in (1, 2, 3):
             t = tr[n - 1] if len(tr) >= n else None
             r[f"tief{n}"] = z(t["tief"]) if t else ""

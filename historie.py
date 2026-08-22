@@ -5,6 +5,7 @@ rueckblick.py.
 Laeuft auf Knopfdruck, nicht nachts. Schreibt:
   docs/historie.md      Bericht zum Lesen
   docs/halteraten.csv        gepoolt ueber alle Werte
+  docs/puffer_je_tief.csv    eine Zeile JE TIEF - die Rohdaten
   docs/halteraten_werte.csv  je Wert und Tiefsposition, geht in die Excel
 
 Das Repository ist oeffentlich. Dieses Skript rechnet deshalb ausschliesslich
@@ -82,26 +83,31 @@ DOCS = BASE / "docs"
 MD_AUS = DOCS / "historie.md"
 CSV_AUS = DOCS / "halteraten.csv"
 CSV_WERT = DOCS / "halteraten_werte.csv"
+CSV_ROH = DOCS / "puffer_je_tief.csv"
 
-JAHRE = 3
+JAHRE = 10   # so weit Yahoo liefert; Corona und die Zinswende sind drin
 ATR_TAGE = 14
 RSI_TAGE = 14
 
-# Puffervarianten. 0,5 bis 3,0 deckt den Bereich ab, in dem tatsaechlich
-# entschieden wird - darueber steigt die Quote kaum noch, das Kapital aber
-# weiter.
-PUFFER = (0.5, 1.0, 1.5, 2.0, 2.5, 3.0)
+# Puffervarianten in Viertelschritten bis 4 ATR. Ein grobes Raster verwischt
+# genau die Stelle, an der entschieden wird - zwischen 0,75 und 1,25 liegen
+# bei manchen Werten mehrere Prozentpunkte.
+PUFFER = tuple(round(0.25 * k, 2) for k in range(1, 17))
 
-# Abstandsklassen fuer den Einstieg ueber dem Tief, in ATR. Die Frage
-# dahinter: ist ein Tief, von dem sich der Kurs schon geloest hat,
-# verlaesslicher als ein frisches? Kipppunkt liegt rechnerisch bei 45 %.
-ABSTAND_KLASSEN = ((0.0, 0.4, "bis 0,4"), (0.4, 0.8, "0,4 bis 0,8"),
-                   (0.8, 1.2, "0,8 bis 1,2"), (1.2, 99.0, "ueber 1,2"))
+# Abstand des Einstiegs ueber dem Tief, in Schritten von 0,2 ATR bis 3,0.
+# Vier grobe Toepfe wie frueher verstecken, wo genau der Effekt kippt.
+ABSTAND_KLASSEN = tuple(
+    (round(0.2 * k, 1), round(0.2 * (k + 1), 1),
+     f"{0.2 * k:.1f} bis {0.2 * (k + 1):.1f}") for k in range(15)
+) + ((3.0, 99.0, "ueber 3,0"),)
 
-# RSI relativ zum eigenen Kauf-Median des Wertes. Absolute Schwellen sind
-# ueber Werte hinweg nicht vergleichbar - Nike dreht bei 50, Gold bei 63.
-RSI_KLASSEN = ((-99.0, -8.0, "8+ unter Median"), (-8.0, -3.0, "3 bis 8 unter"),
-               (-3.0, 3.0, "um den Median"), (3.0, 99.0, "ueber Median"))
+# RSI relativ zum eigenen Kauf-Median des Wertes, in Zweierschritten.
+# Absolute Schwellen sind ueber Werte hinweg nicht vergleichbar - Nike dreht
+# bei 50, Gold bei 63.
+RSI_KLASSEN = ((-99.0, -20.0, "20+ unter"),) + tuple(
+    (float(u), float(u + 2), f"{u:+d} bis {u + 2:+d}")
+    for u in range(-20, 20, 2)
+) + ((20.0, 99.0, "20+ ueber"),)
 
 KETTE_TAGE = 20      # Fenster fuer ein neues bestaetigtes Tief nach einem KO
 # Statt eines Fensters: wie lange haelt das Tief ueberhaupt?
@@ -124,7 +130,11 @@ MINDESTLAUF = 63     # Tiefs ohne so viel Resthistorie zaehlen nicht mit
 # ist FEST: zehn Handelstage entsprechen der beobachteten mittleren
 # Haltedauer von elf Tagen, und dasselbe Fenster benutzt puffer_bedarf in
 # phasen.py - dadurch sind beide Ausgaben zum ersten Mal vergleichbar.
-MIN_FAELLE = 8       # gepoolt: darunter wird eine Zelle nicht ausgewiesen
+# Nichts wird unterdrueckt. Frueher fielen Zellen unter acht Faellen still
+# heraus - das versteckt genau die Raender, an denen es interessant wird.
+# Stattdessen steht die Fallzahl in jeder Zeile und die Beurteilung bleibt
+# beim Leser.
+MIN_FAELLE = 1
 
 # Je Wert wird NICHT zusammengefasst: waren es zehn Tiefs, steht Tief 10 als
 # eigene Zeile. Sammelklassen wie "4+" verstecken genau das, worum es geht -
@@ -198,7 +208,15 @@ def faelle_je_wert(ticker: str, df: pd.DataFrame) -> list[dict]:
             if len(df) - b < MINDESTLAUF:
                 continue
 
+            # Statt sechs feste Schwellen abzuprüfen: den tatsaechlich
+            # noetigen Puffer festhalten. Aus der Verteilung laesst sich
+            # danach jede Frage beantworten - Median, p75, p90 - statt nur
+            # die nach sechs Rasterpunkten.
             nach = tief_w[b:]
+            fenster = nach[:QUARTAL + 1]
+            benoetigt = max(0.0, (float(tief_w[i]) - float(fenster.min())) / atr_i)
+            benoetigt_ganz = max(0.0, (float(tief_w[i]) - float(nach.min())) / atr_i)
+
             tage = {}
             for pp in PUFFER:
                 schwelle = float(tief_w[i]) - pp * atr_i
@@ -224,6 +242,8 @@ def faelle_je_wert(ticker: str, df: pd.DataFrame) -> list[dict]:
                             if (rsi_median is not None and np.isfinite(r[i]))
                             else None),
                 "tage_bis_bruch": tage,
+                "benoetigt_atr": benoetigt,
+                "benoetigt_ganz_atr": benoetigt_ganz,
                 "resthistorie": len(df) - b,
                 "anstieg_atr": anstieg,
                 "i": i, "b": b, "ende": ende,
@@ -283,6 +303,22 @@ def quote(faelle: list[dict], p: float, tage: int | None = QUARTAL) -> float | N
         if t is None or (tage is not None and t > tage):
             treffer += 1
     return 100.0 * treffer / len(faelle)
+
+
+def puffer_verteilung(faelle: list[dict]) -> dict:
+    """Welchen Puffer haetten diese Tiefs tatsaechlich gebraucht?
+
+    benoetigt_atr = wie weit der Kurs in drei Monaten unter das Tief
+    gerutscht ist, in ATR. Null heisst: hat ohne jeden Puffer gehalten.
+    """
+    x = np.array([f["benoetigt_atr"] for f in faelle])
+    if not len(x):
+        return {}
+    aus = {"ohne_puffer_pct": float((x <= 0.001).mean() * 100)}
+    for q in (10, 25, 50, 75, 80, 85, 90, 95, 99):
+        aus[f"p{q}"] = float(np.percentile(x, q))
+    aus["max"] = float(x.max())
+    return aus
 
 
 def bruchtage(faelle: list[dict], p: float) -> float | None:
@@ -508,7 +544,28 @@ def bericht(alle: list[dict], daten: dict, jahre: int) -> str:
           "_Die Leitfrage: haelt das erste Tief seltener als ein spaeteres? "
           "y ist die werttypische Anzahl Tiefs je Sequenz dieses Wertes._", ""]
     max_pos = max(f["position"] for f in fest)
-    L += block("Absolut - das wievielte Tief der Serie",
+
+    L += ["### Welchen Puffer haetten sie gebraucht?", "",
+          "_Nicht die Frage 'hat es 1 ATR gehalten', sondern 'wie viel haette "
+          "es gebraucht'. Null heisst: hielt ohne jeden Puffer. p90 heisst: "
+          "dieser Puffer haette neun von zehn Tiefs dieser Position "
+          "ueberstanden. Gemessen ueber drei Monate ab dem Bestaetigungstag._",
+          "", "| Position | Faelle | ohne Puffer | p25 | Median | p75 | p80 | "
+          "p85 | p90 | p95 | p99 | max |",
+          "|---|---|---|---|---|---|---|---|---|---|---|---|"]
+    gruppen: dict = {}
+    for f in fest:
+        gruppen.setdefault(f["position"], []).append(f)
+    for k in sorted(gruppen):
+        g = gruppen[k]
+        v = puffer_verteilung(g)
+        L.append(f"| Tief {k} | {len(g)} | {z(v['ohne_puffer_pct'], 1, '%')} | "
+                 + " | ".join(z(v[f"p{q}"], 2)
+                              for q in (25, 50, 75, 80, 85, 90, 95, 99))
+                 + f" | {z(v['max'], 2)} |")
+    L += ["", "_Alle Angaben in ATR zum Zeitpunkt des Tiefs._", ""]
+
+    L += block("Dasselbe als Quote je Schwelle",
                tabelle(fest, position_absolut,
                        [f"Tief {i:02d}" for i in range(1, max_pos + 1)]),
                "Position")
@@ -595,6 +652,39 @@ def bericht(alle: list[dict], daten: dict, jahre: int) -> str:
     return "\n".join(L)
 
 
+def csv_roh(fest: list[dict]) -> None:
+    """Eine Zeile JE TIEF. Die Datei, aus der sich jede Frage neu
+    beantworten laesst, ohne das Skript zu aendern.
+
+    Aggregate sind immer eine Entscheidung darueber, was interessant ist -
+    und die faellt hier nicht das Skript. Wer wissen will, wie sich Tief 7
+    bei RSI-Abstand -13 und Einstieg 1,4 ATR verhalten hat, filtert das
+    selbst heraus.
+    """
+    if not fest:
+        return
+    felder = ["ticker", "datum", "position", "serie_laenge", "typisch",
+              "abstand_atr", "rsi", "rsi_rel", "benoetigt_atr",
+              "benoetigt_ganz_atr", "anstieg_atr", "resthistorie"]
+    DOCS.mkdir(exist_ok=True)
+    with open(CSV_ROH, "w", encoding="utf-8", newline="") as f:
+        w = csv.writer(f)
+        w.writerow(felder)
+        for x in sorted(fest, key=lambda y: (y["ticker"], y["datum"])):
+            w.writerow([
+                x["ticker"], x["datum"], x["position"], x["serie_laenge"],
+                x["typisch"],
+                round(x["abstand_atr"], 3),
+                round(x["rsi"], 2) if x["rsi"] is not None else "",
+                round(x["rsi_rel"], 2) if x["rsi_rel"] is not None else "",
+                round(x["benoetigt_atr"], 3),
+                round(x["benoetigt_ganz_atr"], 3),
+                round(x["anstieg_atr"], 3),
+                x["resthistorie"],
+            ])
+    print(f"Geschrieben: {CSV_ROH} ({len(fest)} Zeilen)")
+
+
 def csv_je_wert(fest: list[dict]) -> None:
     """Halteraten je Wert und Tiefsposition - die Datei fuer die Excel."""
     nach_wert: dict = {}
@@ -610,6 +700,7 @@ def csv_je_wert(fest: list[dict]) -> None:
                   [x["anstieg_atr"] for x in g_alle])), 2)}
         for p in PUFFER:
             z0[f"haelt_{p}_atr_pct"] = round(quote(g_alle, p), 1)
+        z0.update({k: round(v, 2) for k, v in puffer_verteilung(g_alle).items()})
         zeilen.append(z0)
 
         gruppen: dict = {}
@@ -622,6 +713,7 @@ def csv_je_wert(fest: list[dict]) -> None:
                       [x["anstieg_atr"] for x in g])), 2)}
             for p in PUFFER:
                 z1[f"haelt_{p}_atr_pct"] = round(quote(g, p), 1)
+            z1.update({k: round(v, 2) for k, v in puffer_verteilung(g).items()})
             zeilen.append(z1)
 
     if not zeilen:
@@ -706,6 +798,7 @@ def main() -> int:
     print(f"Geschrieben: {MD_AUS}")
     csv_schreiben(fest)
     csv_je_wert(fest)
+    csv_roh(fest)
     return 0
 
 

@@ -37,13 +37,16 @@ DEFINITION "HAELT"
 
 Gemessen wird ab dem BESTAETIGUNGSTAG - dem Tag, an dem eine Kerze das Hoch
 der Tiefkerze ueberschreitet. Vorher kann nicht gekauft werden, vorher darf
-also auch nicht gemessen werden. Bis zum naechsten bestaetigten Swing-Hoch
-wird geprueft, wie weit der Kurs unter das Tief gerutscht ist, gemessen in
-ATR(14) zum Zeitpunkt des Tiefs.
+also auch nicht gemessen werden.
 
-Das naechste Swing-Hoch ist das Ende der Aufwaertsstrecke und damit der
-Punkt, an dem nach der Strategie ohnehin verkauft wird ("Umkehr am
-Widerstand"). Es passt zur beobachteten Haltedauer von im Mittel elf Tagen.
+Gemessen wird OHNE festes Fenster: fuer jeden Puffer die Zeit bis zur ersten
+Unterschreitung, bis zum Ende der Historie. Ein festes Fenster beantwortet
+die falsche Frage - der KO kann schlagen, solange die Position offen ist, und
+verkauft wird an der Umkehr oder am Ziel, nicht nach zehn Tagen.
+
+Ausgewiesen werden drei Zahlen je Puffer: der Anteil, der drei Monate haelt,
+der Anteil, der NIE wieder durchbrochen wurde, und der Median der Tage bis
+zum Bruch.
 
 Die Basispreisdrift bleibt aussen vor: ueber elf Handelstage sind das rund
 0,11 ATR. Fuer die Haltequote ist das Rauschen, fuer den Ertrag bei langer
@@ -99,6 +102,26 @@ RSI_KLASSEN = ((-99.0, -8.0, "8+ unter Median"), (-8.0, -3.0, "3 bis 8 unter"),
                (-3.0, 3.0, "um den Median"), (3.0, 99.0, "ueber Median"))
 
 KETTE_TAGE = 20      # Fenster fuer ein neues bestaetigtes Tief nach einem KO
+# Statt eines Fensters: wie lange haelt das Tief ueberhaupt?
+QUARTAL = 63         # Handelstage = rund drei Monate
+MINDESTLAUF = 63     # Tiefs ohne so viel Resthistorie zaehlen nicht mit
+
+# Drei Messfenster, weil die Antwort davon abhaengt und ein einzelnes den
+# Blick verstellt:
+#
+#   kurz  bis zum naechsten bestaetigten Swing-Hoch. Median 4 Handelstage.
+#         Zu kurz fuer die Praxis - ein Zwischenhuepfer, nicht das Ende der
+#         Strecke. Liefert systematisch zu gute Quoten.
+#   fest  10 Handelstage ab dem Tief. Dasselbe Fenster wie puffer_bedarf in
+#         phasen.py, nur damit sich beide Zahlen abgleichen lassen.
+#   weit  bis zum naechsten TIEFEREN Tief - also nie verkaufen und jeden
+#         Rueckschlag aussitzen. Zu spaet und teilweise zirkulaer: gibt es
+#         ein tieferes Tief, wurde das aktuelle per Definition unterschritten.
+#
+# KURZ und WEIT sind Ober- und Untergrenze, nicht Kandidaten. Massgeblich
+# ist FEST: zehn Handelstage entsprechen der beobachteten mittleren
+# Haltedauer von elf Tagen, und dasselbe Fenster benutzt puffer_bedarf in
+# phasen.py - dadurch sind beide Ausgaben zum ersten Mal vergleichbar.
 MIN_FAELLE = 8       # darunter wird eine Zelle nicht ausgewiesen
 
 
@@ -161,10 +184,21 @@ def faelle_je_wert(ticker: str, df: pd.DataFrame) -> list[dict]:
             if ende is None:
                 continue      # Aufwaertsstrecke laeuft noch, kein Urteil
 
-            fenster = tief_w[b:ende + 1]
-            tiefster = float(fenster.min()) if len(fenster) else float(tief_w[b])
-            unterschritten = (float(tief_w[i]) - tiefster) / atr_i
-            anstieg = (float(hoch_w[ende]) - float(df["Close"].values[b])) / atr_i
+            # Resthistorie: ohne genug Zeit danach ist nicht entscheidbar,
+            # ob das Tief gehalten hat. Solche Faelle fliegen raus, statt als
+            # "haelt" gezaehlt zu werden - das waere die Quote geschoent.
+            if len(df) - b < MINDESTLAUF:
+                continue
+
+            nach = tief_w[b:]
+            tage = {}
+            for pp in PUFFER:
+                schwelle = float(tief_w[i]) - pp * atr_i
+                treffer = np.flatnonzero(nach < schwelle)
+                tage[pp] = int(treffer[0]) if len(treffer) else None
+
+            gipfel = float(hoch_w[b:].max())
+            anstieg = (gipfel - float(df["Close"].values[b])) / atr_i
 
             ergebnis.append({
                 "ticker": ticker,
@@ -181,7 +215,8 @@ def faelle_je_wert(ticker: str, df: pd.DataFrame) -> list[dict]:
                 "rsi_rel": (float(r[i]) - rsi_median
                             if (rsi_median is not None and np.isfinite(r[i]))
                             else None),
-                "unterschritten_atr": unterschritten,
+                "tage_bis_bruch": tage,
+                "resthistorie": len(df) - b,
                 "anstieg_atr": anstieg,
                 "i": i, "b": b, "ende": ende,
             })
@@ -226,10 +261,26 @@ def pivots_zeigen(ticker: str, df: pd.DataFrame, tage: int = 120) -> None:
 
 # ── Auswertungen ───────────────────────────────────────────────────
 
-def quote(faelle: list[dict], p: float) -> float | None:
+def quote(faelle: list[dict], p: float, tage: int | None = QUARTAL) -> float | None:
+    """Anteil der Tiefs, die den Puffer p ueberstanden haben.
+
+    tage=QUARTAL  haelt mindestens drei Monate
+    tage=None     nie wieder durchbrochen, bis zum Ende der Historie
+    """
     if not faelle:
         return None
-    return 100.0 * sum(1 for f in faelle if f["unterschritten_atr"] <= p) / len(faelle)
+    treffer = 0
+    for f in faelle:
+        t = f["tage_bis_bruch"].get(p)
+        if t is None or (tage is not None and t > tage):
+            treffer += 1
+    return 100.0 * treffer / len(faelle)
+
+
+def bruchtage(faelle: list[dict], p: float) -> float | None:
+    """Median der Tage bis zum Bruch - nur ueber die gebrochenen Faelle."""
+    t = [f["tage_bis_bruch"][p] for f in faelle if f["tage_bis_bruch"].get(p) is not None]
+    return float(np.median(t)) if t else None
 
 
 def tabelle(faelle: list[dict], schluessel, ordnung=None) -> list[dict]:
@@ -307,7 +358,8 @@ def kette(faelle: list[dict], p: float = 1.0) -> dict:
     ko = 0
     for v in nach_ticker.values():
         for k in range(len(v) - 1):
-            if v[k]["unterschritten_atr"] > p:
+            t = v[k]["tage_bis_bruch"].get(p)
+            if t is not None and t <= QUARTAL:
                 ko += 1
                 naechstes = v[k + 1]
                 if naechstes["i"] - v[k]["i"] <= KETTE_TAGE:
@@ -404,24 +456,29 @@ def bericht(alle: list[dict], daten: dict, jahre: int) -> str:
         "_Tiefs nach der Umkehr-Regel aus `tiefs_regel.py`. Eine Abwaertsserie "
         "zaehlt nur neue Tiefststaende; sie endet erst, wenn ein hoeheres Tief "
         "kommt UND danach ein hoeheres Hoch ueber dem Hoch vor dem tiefsten "
-        "Tief. HAELT heisst: ab dem Bestaetigungstag bis zum naechsten "
-        "bestaetigten Swing-Hoch nicht mehr als der genannte Puffer unter das "
-        "Tief gerutscht. Prozentzahlen sind Anteile der Faelle, in denen das "
-        "Tief hielt. ANSTIEG ist der Median der erreichten Bewegung bis zum "
-        "naechsten Hoch, in ATR - die Ertragsseite._",
+        "Tief. HAELT heisst: der Puffer wurde ab dem Bestaetigungstag drei "
+        "Monate lang nicht unterschritten. ANSTIEG ist der Median des "
+        "hoechsten Punktes nach dem Einstieg, in ATR - die Ertragsseite._",
         "",
         "## Grundrate ueber alles",
         "",
-        "| Puffer | haelt |",
-        "|---|---|",
     ]
-    for p in PUFFER:
-        L.append(f"| {p} ATR | {z(quote(fest, p), 0, '%')} |")
+    L += ["| Puffer | haelt 3 Monate | nie wieder durchbrochen | "
+          "Median Tage bis Bruch |", "|---|---|---|---|"]
+    for p_ in PUFFER:
+        L.append(f"| {p_} ATR | {z(quote(fest, p_), 0, '%')} | "
+                 f"{z(quote(fest, p_, None), 0, '%')} | "
+                 f"{z(bruchtage(fest, p_), 0)} |")
     L += ["",
-          f"_Mit den laufenden Sequenzen waeren es bei 1,0 ATR "
-          f"{z(quote(alle, 1.0), 0, '%')} statt {z(quote(fest, 1.0), 0, '%')} - "
-          f"laufende Sequenzen hatten noch keine Gelegenheit zu brechen und "
-          f"schoenen die Quote._", ""]
+          "_Gemessen ab dem Bestaetigungstag bis zum Ende der Historie, ohne "
+          "festes Fenster - der KO kann schlagen, solange die Position offen "
+          "ist. HAELT 3 MONATE heisst: der Puffer wurde in den ersten 63 "
+          "Handelstagen nie unterschritten. NIE WIEDER DURCHBROCHEN heisst: "
+          "auch danach nicht. MEDIAN TAGE BIS BRUCH zaehlt nur die Faelle, "
+          "die gebrochen wurden. Tiefs mit weniger als 63 Handelstagen "
+          "Resthistorie sind ausgeschlossen, sonst wuerden sie als 'haelt' "
+          "gezaehlt, ohne die Gelegenheit gehabt zu haben. Alle folgenden "
+          "Tabellen nennen den Anteil, der drei Monate haelt._", ""]
 
     L += ["## Nach Position in der Serie", "",
           "_Die Leitfrage: haelt das erste Tief seltener als ein spaeteres? "

@@ -6,7 +6,11 @@ on:
       jahre:
         description: "Jahre Historie"
         required: false
-        default: "3"
+        default: "7"
+      pivots:
+        description: "Ticker fuer die Wendepunkt-Ausgabe (z.B. CDNS). Leer lassen fuer den normalen Lauf."
+        required: false
+        default: ""
 
 # Gemeinsame Gruppe mit allen anderen Workflows: zwei Laeufe, die
 # gleichzeitig nach docs/ schreiben, kollidieren beim Push.
@@ -20,7 +24,7 @@ permissions:
 jobs:
   historie:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
 
@@ -32,10 +36,21 @@ jobs:
       - name: Abhaengigkeiten installieren
         run: pip install -r requirements.txt
 
+      # Diagnose: gibt alle erkannten Wendepunkte eines Wertes im Log aus -
+      # Datum, Kurs, Hoch der Tiefkerze, Bestaetigungstag und ob das Tief in
+      # die Serie zaehlt. Schreibt nichts und laeuft nur, wenn ein Ticker
+      # eingegeben wurde. Fuer den Abgleich mit dem Chart, wenn Ablesung und
+      # Skript auseinanderlaufen.
+      - name: Wendepunkte pruefen
+        if: github.event.inputs.pivots != ''
+        run: python historie.py --jahre ${{ github.event.inputs.jahre || '7' }} --pivots ${{ github.event.inputs.pivots }}
+
       - name: Historie ausfuehren
-        run: python historie.py --jahre ${{ github.event.inputs.jahre || '3' }}
+        if: github.event.inputs.pivots == ''
+        run: python historie.py --jahre ${{ github.event.inputs.jahre || '7' }}
 
       - name: Ergebnis speichern
+        if: github.event.inputs.pivots == ''
         run: |
           git config user.name "screening-bot"
           git config user.email "actions@github.com"
@@ -45,6 +60,9 @@ jobs:
             exit 0
           fi
           git commit -m "Historie $(date -u +%Y-%m-%d)"
+          # Der Push scheitert, sobald main sich seit dem Checkout bewegt hat.
+          # Deshalb vor jedem Versuch neu aufsetzen und bis zu drei Anlaeufe
+          # nehmen, statt den ganzen Lauf zu verwerfen.
           for versuch in 1 2 3; do
             if git pull --rebase --autostash origin main && git push origin main; then
               echo "Gespeichert im Versuch $versuch."

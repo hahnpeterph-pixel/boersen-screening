@@ -266,6 +266,30 @@ def korrektur_ist(df, tiefe_liste, a):
     return float(hoch[h_i]), round(tiefe_atr, 2), int(dauer)
 
 
+def tiefserie(tiefe_liste):
+    """Wie viele Tiefs hat die LAUFENDE absteigende Serie?
+
+    Die Excel leitet das bisher aus tief1 bis tief3 ab und ist damit bei
+    drei gedeckelt - eine laengere Treppe sieht sie nicht. Hier wird
+    direkt gezaehlt, ueber alle Tiefs im Fenster.
+
+    Gezaehlt wird vom juengsten Tief rueckwaerts, solange jedes aeltere
+    Tief HOEHER liegt als das juengere. Das erste hoehere beendet die
+    Serie - ab dort begann die Abwaertsstrecke.
+    """
+    if not tiefe_liste:
+        return "", ""
+    serie = 1
+    for k in range(1, len(tiefe_liste)):
+        if tiefe_liste[k]["tief"] > tiefe_liste[k - 1]["tief"]:
+            serie += 1
+        else:
+            break
+    # Das oberste Tief der Serie mitgeben - dort begann die Treppe
+    start = tiefe_liste[serie - 1]
+    return serie, f"{start['datum']:%Y-%m-%d}"
+
+
 def vol_rel(df, bis, tage=20):
     if "Volume" not in df.columns:
         return None
@@ -379,6 +403,9 @@ def main():
         anzahl, takt = tief_takt(tr, df)
         r["tiefs_anzahl"] = anzahl
         r["tiefs_abstand"] = z(takt, 1) if takt is not None else ""
+        serie, serie_start = tiefserie(tr)
+        r["tiefs_serie"] = serie
+        r["tiefs_serie_start"] = serie_start
         k_hoch, k_atr, k_tage = korrektur_ist(df, tr, a)
         r["korr_hoch"] = z(k_hoch)
         r["korr_ist_atr"] = z(k_atr, 2) if k_atr is not None else ""

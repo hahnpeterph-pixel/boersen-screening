@@ -211,6 +211,61 @@ def tief_takt(treffer, df):
     return len(best), round(sum(abstaende) / len(abstaende), 1)
 
 
+def korrektur_ist(df, tiefe_liste, a):
+    """Die LAUFENDE Korrektur, mit demselben Anker wie phasen.py.
+
+    Das Soll aus der Phasen-Analyse misst vom letzten bestaetigten Hoch bis
+    zum letzten Tief der Abwaertsserie. Ohne dasselbe Hoch als Anker ist
+    ein Soll/Ist-Vergleich wertlos - die Falltiefe vom 60-Tage-Hoch misst
+    etwas anderes.
+
+    Ermittelt wird deshalb: das bestaetigte Hoch, das der laufenden Serie
+    absteigender Tiefs vorausging, und daraus Tiefe (in ATR) und Dauer
+    (in Handelstagen) bis zum juengsten Tief.
+
+    Die Hochs entstehen nach derselben Umkehr-Regel wie die Tiefs, nur
+    gespiegelt: ein Hoch gilt, sobald der Kurs das TIEF der Hoechstkerze
+    unterschreitet.
+    """
+    if not tiefe_liste or a in (None, 0):
+        return None, None, None
+
+    hoch, tief = df["High"].values, df["Low"].values
+    hochs = []
+    richtung, kandidat, gipfel = "ab", 0, 0
+    for i in range(1, len(df)):
+        if richtung == "ab":
+            if tief[i] < tief[kandidat]:
+                kandidat = i
+            elif hoch[i] > hoch[kandidat]:
+                richtung, gipfel = "auf", i
+        else:
+            if hoch[i] > hoch[gipfel]:
+                gipfel = i
+            elif tief[i] < tief[gipfel]:
+                hochs.append(gipfel)
+                richtung, kandidat = "ab", i
+
+    # Serie absteigender Tiefs, vom juengsten rueckwaerts. tiefe_liste ist
+    # nach Datum absteigend sortiert, das juengste steht vorn.
+    serie = [tiefe_liste[0]]
+    for k in range(1, len(tiefe_liste)):
+        if tiefe_liste[k]["tief"] > serie[-1]["tief"]:
+            serie.append(tiefe_liste[k])
+        else:
+            break
+    beginn = serie[-1]["i"]
+
+    davor = [i for i in hochs if i < beginn]
+    if not davor:
+        return None, None, None
+    h_i = davor[-1]
+    juengstes = tiefe_liste[0]
+    tiefe_atr = (float(hoch[h_i]) - juengstes["tief"]) / a
+    dauer = juengstes["i"] - h_i
+    return float(hoch[h_i]), round(tiefe_atr, 2), int(dauer)
+
+
 def vol_rel(df, bis, tage=20):
     if "Volume" not in df.columns:
         return None
@@ -324,6 +379,10 @@ def main():
         anzahl, takt = tief_takt(tr, df)
         r["tiefs_anzahl"] = anzahl
         r["tiefs_abstand"] = z(takt, 1) if takt is not None else ""
+        k_hoch, k_atr, k_tage = korrektur_ist(df, tr, a)
+        r["korr_hoch"] = z(k_hoch)
+        r["korr_ist_atr"] = z(k_atr, 2) if k_atr is not None else ""
+        r["korr_ist_tage"] = k_tage if k_tage is not None else ""
         for n in (1, 2, 3):
             t = tr[n - 1] if len(tr) >= n else None
             r[f"tief{n}"] = z(t["tief"]) if t else ""

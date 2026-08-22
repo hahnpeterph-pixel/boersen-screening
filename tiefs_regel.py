@@ -51,6 +51,18 @@ VARIANTEN = ("dow", "starthoch", "vorheriges_hoch")
 STANDARD = "dow"
 
 
+def _leer(df) -> bool:
+    """True, wenn mit diesem DataFrame nicht gerechnet werden kann.
+
+    Ein Ticker ohne Daten ist der Normalfall, kein Sonderfall: XAUUSD=X
+    liefert bei Yahoo seit Monaten nichts, delistete Werte hoeren von einem
+    Tag auf den anderen auf. Alle Funktionen hier geben dann leer zurueck,
+    statt den ganzen Lauf abzubrechen - das Aufrufskript entscheidet, ob es
+    den Wert ueberspringt oder auf einen Ersatzticker ausweicht.
+    """
+    return df is None or len(df) < 2 or "Low" not in df.columns
+
+
 def pivots(df: pd.DataFrame) -> list[tuple[str, int]]:
     """Abwechselnde Tiefs und Hochs nach der Umkehr-Regel, chronologisch.
 
@@ -58,6 +70,8 @@ def pivots(df: pd.DataFrame) -> list[tuple[str, int]]:
     Das laufende, noch unbestaetigte Extrem ist NICHT enthalten - dafuer
     swing_tiefs(unbestaetigt=True).
     """
+    if _leer(df):
+        return []
     hoch, tief = df["High"].values, df["Low"].values
     punkte: list[tuple[str, int]] = []
     richtung = "ab"
@@ -86,6 +100,8 @@ def _laufendes_tief(df: pd.DataFrame) -> int | None:
     ueberschritten. Genau in diesen Tagen will man kaufen, deshalb wird es
     mitgegeben und mit best=0 markiert.
     """
+    if _leer(df):
+        return None
     hoch, tief = df["High"].values, df["Low"].values
     richtung = "ab"
     kandidat = gipfel = 0
@@ -112,6 +128,8 @@ def swing_tiefs(df: pd.DataFrame, fenster_tage: int | None = None,
     Cadence reichte sie 78 Tage zurueck, bei einem traegen Wert faellt der
     Anfang sonst still heraus und die Serie wird zu kurz gezaehlt.
     """
+    if _leer(df):
+        return []
     tief = df["Low"].values
     daten = df.index
     vols = df["Volume"].values if "Volume" in df.columns else [None] * len(df)
@@ -135,6 +153,8 @@ def swing_tiefs(df: pd.DataFrame, fenster_tage: int | None = None,
 
 def swing_hochs(df: pd.DataFrame) -> list[dict]:
     """Bestaetigte Swing-Hochs, chronologisch."""
+    if _leer(df):
+        return []
     hoch = df["High"].values
     daten = df.index
     return [{"i": i, "datum": daten[i], "hoch": float(hoch[i])}
@@ -157,6 +177,8 @@ def sequenzen(df: pd.DataFrame, variante: str = STANDARD) -> list[dict]:
     if variante not in VARIANTEN:
         raise ValueError(f"Unbekannte Variante: {variante}")
 
+    if _leer(df):
+        return []
     hoch, tief = df["High"].values, df["Low"].values
     ergebnis: list[dict] = []
 

@@ -184,7 +184,7 @@ def sequenzen(df: pd.DataFrame, variante: str = STANDARD) -> list[dict]:
 
     def leer() -> dict:
         return {"tiefs": [], "start_hoch_i": None, "start_hoch": None,
-                "tiefstand": None, "ref_hoch": None, "hoeheres_tief": False}
+                "tiefstand": None, "ref_hoch": None}
 
     seq = leer()
     letztes_hoch = None
@@ -219,11 +219,26 @@ def sequenzen(df: pd.DataFrame, variante: str = STANDARD) -> list[dict]:
                 # Test lieferte ein Aufwaertstrend mit zehn Ruecksetzern eine
                 # einzige Sequenz statt zehn, und Cadence kam auf 17 Tiefs in
                 # drei Jahren statt der erwarteten 50 bis 60.
+                # Ein Hoch ueber der Referenz beendet die Strecke sofort.
+                #
+                # Bis 22.08.2026 stand hier zusaetzlich die Bedingung, dass
+                # VORHER ein hoeheres Tief gekommen sein muss. Diese
+                # Reihenfolge war erfunden - Dow verlangt hoeheres Hoch UND
+                # hoeheres Tief, aber nicht in dieser Folge. Die Wirkung war
+                # gravierend: bei CDNS brach die Serie am 25.03.2025 nicht
+                # (269,71 gegen Referenz 246,79), sondern erst am 02.04. am
+                # kleineren Hoch 265,73 - und das Tief vom 31.03. bei 248,52
+                # ging dabei zwischen zwei Sequenzen verloren. Es zaehlte
+                # weder zur alten noch zur neuen Strecke.
                 if seq["ref_hoch"] is None:
+                    # Kein Hoch vor dem tiefsten Tief - das ist am Anfang
+                    # jeder Historie so. Dann dient das erste Hoch DANACH als
+                    # Referenz, sonst bleibt grenze dauerhaft None und die
+                    # Serie endet nie.
                     seq["ref_hoch"] = h
                     grenze = None
                 else:
-                    grenze = seq["ref_hoch"] if seq["hoeheres_tief"] else None
+                    grenze = seq["ref_hoch"]
             elif variante == "starthoch":
                 grenze = seq["start_hoch"]
             else:
@@ -241,9 +256,6 @@ def sequenzen(df: pd.DataFrame, variante: str = STANDARD) -> list[dict]:
                 seq["tiefs"].append(i)
                 seq["tiefstand"] = t
                 seq["ref_hoch"] = letztes_hoch
-                seq["hoeheres_tief"] = False
-            else:
-                seq["hoeheres_tief"] = True
 
     schliessen(True)
     return ergebnis

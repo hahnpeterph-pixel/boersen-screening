@@ -4,7 +4,8 @@ rueckblick.py.
 
 Laeuft auf Knopfdruck, nicht nachts. Schreibt:
   docs/historie.md      Bericht zum Lesen
-  docs/halteraten.csv   maschinenlesbar, geht in die Excel
+  docs/halteraten.csv        gepoolt ueber alle Werte
+  docs/halteraten_werte.csv  je Wert und Tiefsposition, geht in die Excel
 
 Das Repository ist oeffentlich. Dieses Skript rechnet deshalb ausschliesslich
 mit oeffentlichen Kursdaten und kennt weder Positionen noch Trades noch den
@@ -80,6 +81,7 @@ BASE = Path(__file__).resolve().parent
 DOCS = BASE / "docs"
 MD_AUS = DOCS / "historie.md"
 CSV_AUS = DOCS / "halteraten.csv"
+CSV_WERT = DOCS / "halteraten_werte.csv"
 
 JAHRE = 3
 ATR_TAGE = 14
@@ -122,7 +124,15 @@ MINDESTLAUF = 63     # Tiefs ohne so viel Resthistorie zaehlen nicht mit
 # ist FEST: zehn Handelstage entsprechen der beobachteten mittleren
 # Haltedauer von elf Tagen, und dasselbe Fenster benutzt puffer_bedarf in
 # phasen.py - dadurch sind beide Ausgaben zum ersten Mal vergleichbar.
-MIN_FAELLE = 8       # darunter wird eine Zelle nicht ausgewiesen
+MIN_FAELLE = 8       # gepoolt: darunter wird eine Zelle nicht ausgewiesen
+MIN_FAELLE_WERT = 5  # je Wert: niedriger, sonst bleibt fast alles leer
+
+# Je Wert wird groeber geschnitten als gepoolt. Bei rund 50 Tiefs in drei
+# Jahren waeren sechs Positionsklassen mal sechs Puffer ein bis zwei Faelle
+# je Zelle - Rauschen, das wie Erkenntnis aussieht. Vier Klassen lassen
+# etwa zehn Faelle je Zelle uebrig: duenn, aber lesbar. Die Fallzahl steht
+# in jeder Zeile, damit sichtbar bleibt, worauf eine Zahl beruht.
+POS_WERT = ("Tief 1", "Tief 2", "Tief 3", "Tief 4+")
 
 
 # ── Kennzahlen ─────────────────────────────────────────────────────
@@ -302,6 +312,12 @@ def tabelle(faelle: list[dict], schluessel, ordnung=None) -> list[dict]:
             z[f"p{p}"] = quote(g, p)
         zeilen.append(z)
     return zeilen
+
+
+def position_wert(f: dict) -> str:
+    """Groebere Positionsklassen fuer die Auswertung je Wert."""
+    x = f["position"]
+    return f"Tief {x}" if x <= 3 else "Tief 4+"
 
 
 def position_absolut(f: dict) -> str:
@@ -547,10 +563,75 @@ def bericht(alle: list[dict], daten: dict, jahre: int) -> str:
           "Grundrate, rechtfertigt ein moeglicher Wiedereinstieg keinen "
           "engeren Puffer._", ""]
 
-    L += ["---", "",
+    L += ["## Je Wert", "",
+          "_Der eigene Grundwert des Papiers und der Unterschied zwischen "
+          "erstem und spaeterem Tief, jeweils bei 2 ATR Puffer. Die "
+          "vollstaendige Aufschluesselung nach Position und Puffer steht in "
+          "`halteraten_werte.csv`. Fallzahlen unter "
+          f"{MIN_FAELLE_WERT} werden nicht ausgewiesen._", "",
+          "| Wert | Tiefs | alle | Tief 1 | Tief 2 | Tief 3 | Tief 4+ | "
+          "Anstieg |", "|---|---|---|---|---|---|---|---|"]
+    nach_wert: dict = {}
+    for f in fest:
+        nach_wert.setdefault(f["ticker"], []).append(f)
+    for ticker in sorted(nach_wert):
+        g_alle = nach_wert[ticker]
+        gruppen: dict = {}
+        for f in g_alle:
+            gruppen.setdefault(position_wert(f), []).append(f)
+        felder = []
+        for k in POS_WERT:
+            g = gruppen.get(k, [])
+            felder.append(z(quote(g, 2.0), 0, "%") if len(g) >= MIN_FAELLE_WERT
+                          else "-")
+        L.append(f"| {ticker} | {len(g_alle)} | "
+                 f"{z(quote(g_alle, 2.0), 0, '%')} | " + " | ".join(felder) +
+                 f" | {z(float(np.median([x['anstieg_atr'] for x in g_alle])), 1)} ATR |")
+    L += ["", "---", "",
           "_Keine Anlageberatung. Historische Kursverlaeufe, gemessen mit "
           "der Regel aus `tiefs_regel.py`._"]
     return "\n".join(L)
+
+
+def csv_je_wert(fest: list[dict]) -> None:
+    """Halteraten je Wert und Tiefsposition - die Datei fuer die Excel."""
+    nach_wert: dict = {}
+    for f in fest:
+        nach_wert.setdefault(f["ticker"], []).append(f)
+
+    zeilen = []
+    for ticker in sorted(nach_wert):
+        g_alle = nach_wert[ticker]
+        # Grundwert des Papiers, ueber alle Positionen
+        z0 = {"ticker": ticker, "position": "alle", "faelle": len(g_alle),
+              "anstieg_median_atr": round(float(np.median(
+                  [x["anstieg_atr"] for x in g_alle])), 2)}
+        for p in PUFFER:
+            z0[f"haelt_{p}_atr_pct"] = round(quote(g_alle, p), 1)
+        zeilen.append(z0)
+
+        gruppen: dict = {}
+        for f in g_alle:
+            gruppen.setdefault(position_wert(f), []).append(f)
+        for k in POS_WERT:
+            g = gruppen.get(k, [])
+            if len(g) < MIN_FAELLE_WERT:
+                continue
+            z1 = {"ticker": ticker, "position": k, "faelle": len(g),
+                  "anstieg_median_atr": round(float(np.median(
+                      [x["anstieg_atr"] for x in g])), 2)}
+            for p in PUFFER:
+                z1[f"haelt_{p}_atr_pct"] = round(quote(g, p), 1)
+            zeilen.append(z1)
+
+    if not zeilen:
+        return
+    DOCS.mkdir(exist_ok=True)
+    with open(CSV_WERT, "w", encoding="utf-8", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=list(zeilen[0].keys()))
+        w.writeheader()
+        w.writerows(zeilen)
+    print(f"Geschrieben: {CSV_WERT} ({len(zeilen)} Zeilen)")
 
 
 def csv_schreiben(fest: list[dict]) -> None:
@@ -624,6 +705,7 @@ def main() -> int:
     MD_AUS.write_text(bericht(alle, daten, jahre), encoding="utf-8")
     print(f"Geschrieben: {MD_AUS}")
     csv_schreiben(fest)
+    csv_je_wert(fest)
     return 0
 
 

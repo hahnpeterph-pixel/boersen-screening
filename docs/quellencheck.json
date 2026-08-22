@@ -1,5 +1,5 @@
 {
- "erstellt": "2026-08-21T20:53:48.160394+00:00",
+ "erstellt": "2026-08-22T06:40:48.153918+00:00",
  "test_a": [
   {
    "ticker": "ADS.DE",
@@ -418,6 +418,15 @@
    ]
   },
   {
+   "ticker": "GOOG",
+   "name": "GOOG",
+   "quelle": "keine",
+   "kandidaten": [],
+   "treffer": null,
+   "versuche": [],
+   "hinweis": "bereits US-notiert"
+  },
+  {
    "ticker": "HEI.DE",
    "name": "Heidelberg Materials AG",
    "quelle": "Aggregat",
@@ -502,6 +511,15 @@
    ]
   },
   {
+   "ticker": "ILMN",
+   "name": "ILMN",
+   "quelle": "keine",
+   "kandidaten": [],
+   "treffer": null,
+   "versuche": [],
+   "hinweis": "bereits US-notiert"
+  },
+  {
    "ticker": "MBG.DE",
    "name": "Mercedes-Benz Group AG",
    "quelle": "Aggregat",
@@ -521,6 +539,15 @@
      "fehler": null
     }
    ]
+  },
+  {
+   "ticker": "MDB",
+   "name": "MDB",
+   "quelle": "keine",
+   "kandidaten": [],
+   "treffer": null,
+   "versuche": [],
+   "hinweis": "bereits US-notiert"
   },
   {
    "ticker": "META",
@@ -551,6 +578,15 @@
      "fehler": null
     }
    ]
+  },
+  {
+   "ticker": "MRNA",
+   "name": "MRNA",
+   "quelle": "keine",
+   "kandidaten": [],
+   "treffer": null,
+   "versuche": [],
+   "hinweis": "bereits US-notiert"
   },
   {
    "ticker": "MTX.DE",
@@ -593,6 +629,15 @@
      "fehler": null
     }
    ]
+  },
+  {
+   "ticker": "ORCL",
+   "name": "ORCL",
+   "quelle": "keine",
+   "kandidaten": [],
+   "treffer": null,
+   "versuche": [],
+   "hinweis": "bereits US-notiert"
   },
   {
    "ticker": "P911.DE",
@@ -759,6 +804,15 @@
    ]
   },
   {
+   "ticker": "SPGI",
+   "name": "SPGI",
+   "quelle": "keine",
+   "kandidaten": [],
+   "treffer": null,
+   "versuche": [],
+   "hinweis": "bereits US-notiert"
+  },
+  {
    "ticker": "SRT3.DE",
    "name": "SARTORIUS AG",
    "quelle": "Aggregat",
@@ -780,7 +834,7 @@
     },
     {
      "kandidat": "SARTF",
-     "name": "Sartorius AG",
+     "name": "SARTORIUS AG",
      "gefunden": true,
      "zeilen_gesamt": 1,
      "banken_frisch": 0,
@@ -1434,6 +1488,33 @@
    "urteil": "EINGEFROREN (alle Fenster gleich)"
   },
   {
+   "ticker": "GOOG",
+   "name": "GOOG",
+   "fenster": {
+    "0m": [
+     58,
+     5,
+     0
+    ],
+    "-1m": [
+     57,
+     6,
+     0
+    ],
+    "-2m": [
+     58,
+     7,
+     0
+    ],
+    "-3m": [
+     58,
+     7,
+     0
+    ]
+   },
+   "urteil": "bewegt sich"
+  },
+  {
    "ticker": "HEI.DE",
    "name": "Heidelberg Materials AG",
    "fenster": {
@@ -1542,6 +1623,33 @@
    "urteil": "bewegt sich"
   },
   {
+   "ticker": "ILMN",
+   "name": "ILMN",
+   "fenster": {
+    "0m": [
+     10,
+     6,
+     4
+    ],
+    "-1m": [
+     10,
+     5,
+     4
+    ],
+    "-2m": [
+     11,
+     5,
+     4
+    ],
+    "-3m": [
+     11,
+     5,
+     4
+    ]
+   },
+   "urteil": "bewegt sich"
+  },
+  {
    "ticker": "MBG.DE",
    "name": "Mercedes-Benz Group AG",
    "fenster": {
@@ -1564,6 +1672,33 @@
      10,
      12,
      2
+    ]
+   },
+   "urteil": "bewegt sich"
+  },
+  {
+   "ticker": "MDB",
+   "name": "MDB",
+   "fenster": {
+    "0m": [
+     31,
+     8,
+     1
+    ],
+    "-1m": [
+     31,
+     9,
+     0
+    ],
+    "-2m": [
+     31,
+     9,
+     0
+    ],
+    "-3m": [
+     31,
+     9,
+     0
     ]
    },
    "urteil": "bewegt sich"
@@ -1623,6 +1758,33 @@
    "urteil": "bewegt sich"
   },
   {
+   "ticker": "MRNA",
+   "name": "MRNA",
+   "fenster": {
+    "0m": [
+     4,
+     17,
+     2
+    ],
+    "-1m": [
+     4,
+     16,
+     3
+    ],
+    "-2m": [
+     3,
+     17,
+     4
+    ],
+    "-3m": [
+     4,
+     16,
+     4
+    ]
+   },
+   "urteil": "bewegt sich"
+  },
+  {
    "ticker": "MTX.DE",
    "name": "MTU Aero Engines AG",
    "fenster": {
@@ -1675,6 +1837,33 @@
     ]
    },
    "urteil": "EINGEFROREN (alle Fenster gleich)"
+  },
+  {
+   "ticker": "ORCL",
+   "name": "ORCL",
+   "fenster": {
+    "0m": [
+     36,
+     7,
+     1
+    ],
+    "-1m": [
+     37,
+     6,
+     1
+    ],
+    "-2m": [
+     37,
+     5,
+     1
+    ],
+    "-3m": [
+     36,
+     6,
+     1
+    ]
+   },
+   "urteil": "bewegt sich"
   },
   {
    "ticker": "P911.DE",
@@ -1864,6 +2053,33 @@
     ]
    },
    "urteil": "bewegt sich"
+  },
+  {
+   "ticker": "SPGI",
+   "name": "SPGI",
+   "fenster": {
+    "0m": [
+     23,
+     1,
+     0
+    ],
+    "-1m": [
+     23,
+     1,
+     0
+    ],
+    "-2m": [
+     23,
+     1,
+     0
+    ],
+    "-3m": [
+     23,
+     1,
+     0
+    ]
+   },
+   "urteil": "EINGEFROREN (alle Fenster gleich)"
   },
   {
    "ticker": "SRT3.DE",

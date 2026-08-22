@@ -1,11 +1,11 @@
 # Quellencheck - Ersatz fuer die Aggregat-Werte
 
-_Erstellt 2026-08-21 20:53 UTC. Einmalige Diagnose, kein Teil des taeglichen Laufs._
+_Erstellt 2026-08-22 06:40 UTC. Einmalige Diagnose, kein Teil des taeglichen Laufs._
 
 ## Kurzfassung
 
-- **Test A:** 1 von 42 Werten liefern ueber die US-Notierung ueberhaupt benannte Ratings juenger als 120 Tage. Davon **1 mit mindestens 3 Banken** - nur die sind ein brauchbarer Ersatz.
-- **Test B:** 5 Werte haben ueber alle vier Monatsfenster identische Zahlen (Aggregat eingefroren), 36 bewegen sich.
+- **Test A:** 1 von 48 Werten liefern ueber die US-Notierung ueberhaupt benannte Ratings juenger als 120 Tage. Davon **1 mit mindestens 3 Banken** - nur die sind ein brauchbarer Ersatz.
+- **Test B:** 6 Werte haben ueber alle vier Monatsfenster identische Zahlen (Aggregat eingefroren), 41 bewegen sich.
 
 Lesehilfe: Ein Wert taugt als Ersatz, wenn Test A genug Banken liefert UND der Firmenname der US-Notierung tatsaechlich zur deutschen Aktie passt. Der Name kommt ungeprueft von Yahoo - bitte durchsehen, bevor etwas davon in den Screener wandert.
 
@@ -35,21 +35,27 @@ Lesehilfe: Ein Wert taugt als Ersatz, wenn Test A genug Banken liefert UND der F
 | EOAN.DE | E.ON SE | Aggregat | EONGY | E.ON SE | **0** | 1 | 2021-07-15 | - |
 | FANG | Diamondback Energy, Inc. | Aggregat | - | - | - | - | - | bereits US-notiert |
 | FRE.DE | Fresenius SE & Co. KGaA | Aggregat | FSNUY | Fresenius SE & Co. KGaA | **0** | 1 | 2023-01-03 | - |
+| GOOG | GOOG | keine | - | - | - | - | - | bereits US-notiert |
 | HEI.DE | Heidelberg Materials AG | Aggregat | HDELY | ? | **0** | 0 | - | - |
 | HEN3.DE | Henkel AG & Co. KGaA | Aggregat | HENKY | Henkel AG & Co. KGAA | **0** | 3 | 2021-09-09 | - |
 | HNR1.DE | HANNOVER RUECK SE NA O.N. | Aggregat | HVRRY | Hannover Re | **0** | 0 | - | - |
 | IFX.DE | INFINEON TECHNOLOGIES AG | Aggregat | IFNNY | Infineon Technologies AG | **0** | 6 | 2021-08-04 | - |
+| ILMN | ILMN | keine | - | - | - | - | - | bereits US-notiert |
 | MBG.DE | Mercedes-Benz Group AG | Aggregat | MBGYY | Mercedes Benz Group AG | **0** | 0 | - | - |
+| MDB | MDB | keine | - | - | - | - | - | bereits US-notiert |
 | META | Meta Platforms, Inc. | Aggregat | - | - | - | - | - | bereits US-notiert |
 | MRK.DE | MERCK KGAA | Aggregat | MKKGY | Merck KGaA | **0** | 0 | - | - |
+| MRNA | MRNA | keine | - | - | - | - | - | bereits US-notiert |
 | MTX.DE | MTU Aero Engines AG | Aggregat | MTUAY | MTU Aero Engines AG | **0** | 3 | 2021-10-06 | - |
 | MUV2.DE | MUENCHENER RUECKVERS.-GES. AG | Aggregat | MURGY | Muenchener Rueckver Ges | **0** | 1 | 2021-07-19 | - |
+| ORCL | ORCL | keine | - | - | - | - | - | bereits US-notiert |
 | P911.DE | Dr. Ing. h.c. F. Porsche AG | Aggregat | DRPRY | DR ING H C F PORSCHE AG | **0** | 0 | - | - |
 | PAH3.DE | Porsche Automobil Holding SE | Aggregat | POAHY | Porsche Automobile Holding SE | **0** | 0 | - | - |
 | RHM.DE | RHEINMETALL AG | Aggregat | RNMBY | Rheinmetall AG | **0** | 0 | - | - |
 | RWE.DE | RWE AG | Aggregat | RWEOY | RWE AG | **0** | 1 | 2023-05-12 | - |
 | SHL.DE | Siemens Healthineers AG | Aggregat | SMMNY | Siemens Healthineers AG | **0** | 1 | 2021-09-08 | - |
 | SIE.DE | SIEMENS AG | Aggregat | SIEGY | Siemens AG | **0** | 5 | 2021-10-15 | - |
+| SPGI | SPGI | keine | - | - | - | - | - | bereits US-notiert |
 | SRT3.DE | SARTORIUS AG | Aggregat | SUVPF | Sartorius AG | **0** | 0 | - | - |
 | SY1.DE | Symrise AG | Aggregat | SYIEY | Symrise Ag | **0** | 0 | - | - |
 | VNA.DE | Vonovia SE | Aggregat | VONOY | VONOVIA SE | **0** | 0 | - | - |
@@ -83,15 +89,20 @@ _Kaufen/Halten/Verkaufen je Monatsfenster. `0m` ist der laufende Monat. Identisc
 | EOAN.DE | E.ON SE | 10/7/0 | 9/8/0 | 9/8/0 | 9/9/0 | bewegt sich |
 | FANG | Diamondback Energy, Inc. | 24/5/0 | 25/4/0 | 25/4/0 | 25/5/0 | bewegt sich |
 | FRE.DE | Fresenius SE & Co. KGaA | 13/1/0 | 13/1/0 | 13/1/0 | 13/1/0 | EINGEFROREN (alle Fenster gleich) |
+| GOOG | GOOG | 58/5/0 | 57/6/0 | 58/7/0 | 58/7/0 | bewegt sich |
 | HEI.DE | Heidelberg Materials AG | 15/2/3 | 15/2/3 | 15/2/2 | 15/2/2 | bewegt sich |
 | HEN3.DE | Henkel AG & Co. KGaA | 7/8/4 | 7/8/4 | 6/9/4 | 6/9/4 | bewegt sich |
 | HNR1.DE | HANNOVER RUECK SE NA O.N. | 6/7/1 | 6/7/1 | 6/8/1 | 6/8/1 | bewegt sich |
 | IFX.DE | INFINEON TECHNOLOGIES AG | 19/5/0 | 19/4/1 | 19/4/1 | 20/3/1 | bewegt sich |
+| ILMN | ILMN | 10/6/4 | 10/5/4 | 11/5/4 | 11/5/4 | bewegt sich |
 | MBG.DE | Mercedes-Benz Group AG | 12/9/2 | 12/9/2 | 11/11/2 | 10/12/2 | bewegt sich |
+| MDB | MDB | 31/8/1 | 31/9/0 | 31/9/0 | 31/9/0 | bewegt sich |
 | META | Meta Platforms, Inc. | 55/7/0 | 55/7/0 | 57/6/0 | 57/7/0 | bewegt sich |
 | MRK.DE | MERCK KGAA | 5/9/0 | 6/8/0 | 7/7/0 | 10/6/0 | bewegt sich |
+| MRNA | MRNA | 4/17/2 | 4/16/3 | 3/17/4 | 4/16/4 | bewegt sich |
 | MTX.DE | MTU Aero Engines AG | 10/6/4 | 10/7/3 | 10/7/3 | 10/7/3 | bewegt sich |
 | MUV2.DE | MUENCHENER RUECKVERS.-GES. AG | 5/9/3 | 5/9/3 | 5/9/3 | 5/9/3 | EINGEFROREN (alle Fenster gleich) |
+| ORCL | ORCL | 36/7/1 | 37/6/1 | 37/5/1 | 36/6/1 | bewegt sich |
 | P911.DE | Dr. Ing. h.c. F. Porsche AG | 6/11/4 | 6/11/4 | 6/11/4 | 4/12/5 | bewegt sich |
 | PAH3.DE | Porsche Automobil Holding SE | 2/6/2 | 2/6/2 | 2/6/2 | 2/6/2 | EINGEFROREN (alle Fenster gleich) |
 | RHM.DE | RHEINMETALL AG | 18/2/1 | 17/3/0 | 18/2/0 | 18/3/0 | bewegt sich |
@@ -99,6 +110,7 @@ _Kaufen/Halten/Verkaufen je Monatsfenster. `0m` ist der laufende Monat. Identisc
 | SAP.DE | SAP SE | 25/3/0 | 23/4/0 | 23/4/0 | 23/4/0 | bewegt sich |
 | SHL.DE | Siemens Healthineers AG | 13/7/0 | 14/6/0 | 15/5/0 | 15/5/0 | bewegt sich |
 | SIE.DE | SIEMENS AG | 17/5/2 | 17/5/2 | 17/4/3 | 17/4/3 | bewegt sich |
+| SPGI | SPGI | 23/1/0 | 23/1/0 | 23/1/0 | 23/1/0 | EINGEFROREN (alle Fenster gleich) |
 | SRT3.DE | SARTORIUS AG | 14/5/1 | 13/6/1 | 14/5/1 | 13/6/1 | bewegt sich |
 | SY1.DE | Symrise AG | 10/8/0 | 10/8/0 | 12/6/0 | 13/5/0 | bewegt sich |
 | VNA.DE | Vonovia SE | 10/5/2 | 11/4/1 | 11/3/1 | 10/4/1 | bewegt sich |

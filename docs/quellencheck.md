@@ -1,6 +1,6 @@
 # Quellencheck - Ersatz fuer die Aggregat-Werte
 
-_Erstellt 2026-08-22 06:40 UTC. Einmalige Diagnose, kein Teil des taeglichen Laufs._
+_Erstellt 2026-08-22 18:33 UTC. Einmalige Diagnose, kein Teil des taeglichen Laufs._
 
 ## Kurzfassung
 
@@ -72,7 +72,7 @@ _Kaufen/Halten/Verkaufen je Monatsfenster. `0m` ist der laufende Monat. Identisc
 | AIR.DE | Airbus SE | - | - | - | - | keine Daten |
 | ALV.DE | Allianz SE v | 8/7/2 | 8/7/2 | 9/7/2 | 9/7/2 | bewegt sich |
 | AZN | AstraZeneca PLC | 9/1/0 | 8/2/0 | 9/1/0 | 9/1/0 | bewegt sich |
-| BAS.DE | BASF SE | 12/4/5 | 12/4/5 | 11/5/5 | 10/6/5 | bewegt sich |
+| BAS.DE | BASF SE | 11/4/5 | 12/4/5 | 11/5/5 | 10/6/5 | bewegt sich |
 | BAYN.DE | Bayer AG | 13/4/1 | 14/3/1 | 14/4/0 | 14/5/0 | bewegt sich |
 | BEI.DE | BEIERSDORF AG | 7/10/3 | 7/11/2 | 7/11/2 | 8/10/2 | bewegt sich |
 | BMW.DE | BAYERISCHE MOTOREN WERKE AG | 10/9/3 | 10/9/3 | 9/11/3 | 10/9/4 | bewegt sich |
@@ -86,7 +86,7 @@ _Kaufen/Halten/Verkaufen je Monatsfenster. `0m` ist der laufende Monat. Identisc
 | DTE.DE | DEUTSCHE TELEKOM AG | 18/0/0 | 18/0/0 | 17/0/0 | 17/0/0 | bewegt sich |
 | DTG.DE | Daimler Truck Holding AG | 12/4/2 | 12/4/2 | 11/3/3 | 10/4/3 | bewegt sich |
 | ENR.DE | Siemens Energy AG | 19/4/2 | 19/3/3 | 19/4/2 | 19/4/2 | bewegt sich |
-| EOAN.DE | E.ON SE | 10/7/0 | 9/8/0 | 9/8/0 | 9/9/0 | bewegt sich |
+| EOAN.DE | E.ON SE | 9/7/0 | 9/8/0 | 9/8/0 | 9/9/0 | bewegt sich |
 | FANG | Diamondback Energy, Inc. | 24/5/0 | 25/4/0 | 25/4/0 | 25/5/0 | bewegt sich |
 | FRE.DE | Fresenius SE & Co. KGaA | 13/1/0 | 13/1/0 | 13/1/0 | 13/1/0 | EINGEFROREN (alle Fenster gleich) |
 | GOOG | GOOG | 58/5/0 | 57/6/0 | 58/7/0 | 58/7/0 | bewegt sich |
@@ -112,7 +112,7 @@ _Kaufen/Halten/Verkaufen je Monatsfenster. `0m` ist der laufende Monat. Identisc
 | SIE.DE | SIEMENS AG | 17/5/2 | 17/5/2 | 17/4/3 | 17/4/3 | bewegt sich |
 | SPGI | SPGI | 23/1/0 | 23/1/0 | 23/1/0 | 23/1/0 | EINGEFROREN (alle Fenster gleich) |
 | SRT3.DE | SARTORIUS AG | 14/5/1 | 13/6/1 | 14/5/1 | 13/6/1 | bewegt sich |
-| SY1.DE | Symrise AG | 10/8/0 | 10/8/0 | 12/6/0 | 13/5/0 | bewegt sich |
+| SY1.DE | Symrise AG | 10/7/0 | 10/8/0 | 12/6/0 | 13/5/0 | bewegt sich |
 | VNA.DE | Vonovia SE | 10/5/2 | 11/4/1 | 11/3/1 | 10/4/1 | bewegt sich |
 | VOW3.DE | VOLKSWAGEN AG | 13/7/1 | 13/7/1 | 13/8/1 | 12/8/1 | bewegt sich |
 | ZAL.DE | Zalando SE | 18/6/0 | 18/5/0 | 18/5/0 | 19/5/0 | bewegt sich |

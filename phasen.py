@@ -325,14 +325,30 @@ def main() -> int:
         })
 
     DOCS.mkdir(parents=True, exist_ok=True)
+    # Feste Spaltenfolge statt der Schluessel der ERSTEN Zeile: Werte mit zu
+    # kurzer Historie liefern die Zusatzkennzahlen nicht, und stand so ein
+    # Wert an erster Stelle, fehlten die Spalten im Kopf - der Schreibvorgang
+    # brach dann bei der ersten vollstaendigen Zeile ab.
+    SPALTEN = ["ticker", "sequenzen", "tiefs_median", "tiefs_max",
+               "korrektur_tage", "korrektur_atr", "anstieg_tage", "anstieg_atr",
+               "weit_tage", "weit_atr",
+               "vk_rsi_median", "vk_rsi_p75", "vk_rsi_faelle",
+               "kauf_rsi_median", "kauf_rsi_p25", "kauf_rsi_faelle",
+               "puffer_haelt_pct", "puffer_p75", "puffer_p90", "puffer_p95"]
     with CSV_AUS.open("w", encoding="utf-8", newline="") as f:
-        s = csv.DictWriter(f, fieldnames=list(zeilen[0].keys()))
+        s = csv.DictWriter(f, fieldnames=SPALTEN, extrasaction="ignore")
         s.writeheader()
         for z in zeilen:
             s.writerow({k: (round(v, 2) if isinstance(v, float) else v) for k, v in z.items()})
 
     def spalte(name):
-        return [z[name] for z in zeilen if z[name] is not None]
+        return [z[name] for z in zeilen if z.get(name) is not None]
+
+    def m0(name, nk=0, einheit=""):
+        """Median einer Spalte als Text. Fehlt die Kennzahl bei allen Werten,
+        steht ein Strich statt eines Formatierungsfehlers."""
+        w = spalte(name)
+        return f"{median(w):.{nk}f}{einheit}" if w else "-"
 
     L = ["# Phasen - Korrektur und Anstieg je Wert", "",
          f"_Erstellt {datetime.now(timezone.utc):%Y-%m-%d %H:%M} UTC, {jahre} Jahre Historie, "
@@ -348,12 +364,12 @@ def main() -> int:
          f"| Hoehe des Anstiegs (bis zum naechsten Hoch) | {median(spalte('anstieg_atr')):.2f} ATR |",
          f"| Dauer der weiten Fassung | {median(spalte('weit_tage')):.1f} Handelstage |",
          f"| Hoehe der weiten Fassung | {median(spalte('weit_atr')):.2f} ATR |",
-         f"| Verkaufs-RSI, Median ueber alle Werte | {median(spalte('vk_rsi_median')):.0f} |",
-         f"| Verkaufs-RSI, 75-Prozent-Wert | {median(spalte('vk_rsi_p75')):.0f} |",
-         f"| Kauf-RSI, Median ueber alle Werte | {median(spalte('kauf_rsi_median')):.0f} |",
-         f"| Kauf-RSI, 25-Prozent-Wert | {median(spalte('kauf_rsi_p25')):.0f} |",
-         f"| Anteil Tiefs, die vollstaendig halten | {median(spalte('puffer_haelt_pct')):.0f}% |",
-         f"| Puffer fuer 90 Prozent der Faelle | {median(spalte('puffer_p90')):.2f} ATR |", "",
+         f"| Verkaufs-RSI, Median ueber alle Werte | {m0('vk_rsi_median', 0, '')} |",
+         f"| Verkaufs-RSI, 75-Prozent-Wert | {m0('vk_rsi_p75', 0, '')} |",
+         f"| Kauf-RSI, Median ueber alle Werte | {m0('kauf_rsi_median', 0, '')} |",
+         f"| Kauf-RSI, 25-Prozent-Wert | {m0('kauf_rsi_p25', 0, '')} |",
+         f"| Anteil Tiefs, die vollstaendig halten | {m0('puffer_haelt_pct', 0, '%')} |",
+         f"| Puffer fuer 90 Prozent der Faelle | {m0('puffer_p90', 2, ' ATR')} |", "",
          "_KAUF-RSI ist der RSI an den bestaetigten Tiefs dieses Wertes, VERKAUFS-RSI der an den "
          "Hochs. Beide ersetzen die pauschalen Schwellen 50 bzw. 70 durch das, was dieses Papier "
          "tatsaechlich tut. PUFFER 90% ist der Abstand, den die KO-Schwelle bei diesem Wert "

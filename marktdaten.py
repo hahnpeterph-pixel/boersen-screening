@@ -30,6 +30,9 @@ CSV_AUS = os.path.join(DOCS, "marktdaten.csv")
 MD_AUS = os.path.join(DOCS, "marktdaten.md")
 
 FENSTER_TAGE = 90
+# LINKS/RECHTS gehoerten zur alten 3-links-3-rechts-Tiefsuche und werden
+# von der Umkehr-Regel nicht mehr gebraucht. Bleiben stehen, weil tiefs.py
+# und watchlist.json sie weiterhin fuehren.
 LINKS = RECHTS = 3
 ATR_TAGE = RSI_TAGE = 14
 
@@ -127,28 +130,65 @@ def ema(df, tage):
 
 
 def swing_tiefs(df):
-    """Alle Swing-Tiefs im Fenster, juengstes zuerst. Der laufende Tag
-    zaehlt nie mit. Das Tief des zuletzt abgeschlossenen Tages wird als
-    unbestaetigt mitgenommen, wenn es unter den Vortagen liegt."""
-    lows, daten = df["Low"].values, df.index
+    """Tiefs nach der Umkehr-Regel (ab 22.08.2026, ersetzt die alte 3-links-
+    3-rechts-Regel).
+
+    Ein Tief ist das Ende einer Abwaertsstrecke. Es zaehlt in dem Moment, in
+    dem der Kurs das HOCH der Tiefkerze ueberschreitet - dann ist die Umkehr
+    belegt. Danach laeuft eine Aufwaertsstrecke, bis der Kurs das TIEF der
+    Hoechstkerze unterschreitet; ab dort wird das naechste Tief gesucht.
+
+    Der Unterschied zur alten Regel ist praktisch: dort musste ein Tief drei
+    Handelstage ueberstehen, bevor es sichtbar wurde. Genau in diesen drei
+    Tagen will man aber kaufen - nah am frischen Tief. Hier reicht ein
+    einziger Tag mit einem Hoch ueber dem Hoch der Tiefkerze.
+
+    Solange es abwaerts geht, gilt immer das TIEFSTE Tief der Strecke. Ein
+    hoeheres Zwischentief faellt damit heraus, sobald ein tieferes folgt,
+    bevor die Umkehr belegt ist.
+
+    Gerechnet wird auf abgeschlossenen Tageskerzen - beim Morgenlauf um
+    04:17 MESZ ist die letzte Zeile die abgeschlossene US-Sitzung des
+    Vortags. Laeuft das Skript waehrend der US-Sitzung, ist die letzte
+    Kerze noch offen und das Ergebnis vorlaeufig.
+
+    Das juengste Tief, dessen Kerzenhoch noch nicht ueberschritten wurde,
+    wird als unbestaetigt mitgegeben (best=0).
+    """
+    hoch, tief = df["High"].values, df["Low"].values
+    daten = df.index
     vols = df["Volume"].values if "Volume" in df.columns else [None] * len(df)
     grenze = daten[-1] - pd.Timedelta(days=FENSTER_TAGE)
-    tr = []
-    for i in range(LINKS, len(df) - RECHTS):
-        if daten[i] < grenze:
-            continue
-        w = lows[i]
-        if all(lows[i - j] > w for j in range(1, LINKS + 1)) and \
-           all(lows[i + j] > w for j in range(1, RECHTS + 1)):
-            tr.append({"i": i, "datum": daten[i], "tief": float(w),
-                       "vol": vols[i], "best": True})
-    i = len(df) - 1
-    if i >= LINKS and daten[i] >= grenze and not any(t["i"] == i for t in tr) \
-       and all(lows[i - j] > lows[i] for j in range(1, LINKS + 1)):
-        tr.append({"i": i, "datum": daten[i], "tief": float(lows[i]),
-                   "vol": vols[i], "best": False})
-    tr.sort(key=lambda t: t["datum"], reverse=True)
-    return tr
+
+    treffer = []
+    richtung = "ab"      # wir starten in einer Abwaertsstrecke
+    kandidat = 0         # tiefstes Tief der laufenden Abwaertsstrecke
+    gipfel = 0           # hoechstes Hoch der laufenden Aufwaertsstrecke
+
+    for i in range(1, len(df)):
+        if richtung == "ab":
+            if tief[i] < tief[kandidat]:
+                kandidat = i          # neues, tieferes Tief - das alte faellt raus
+            elif hoch[i] > hoch[kandidat]:
+                treffer.append({"i": kandidat, "datum": daten[kandidat],
+                                "tief": float(tief[kandidat]), "vol": vols[kandidat],
+                                "best": True})
+                richtung, gipfel = "auf", i
+        else:
+            if hoch[i] > hoch[gipfel]:
+                gipfel = i            # Aufwaertsstrecke laeuft weiter
+            elif tief[i] < tief[gipfel]:
+                richtung, kandidat = "ab", i
+
+    # Das laufende, noch nicht belegte Tief mitgeben - unbestaetigt.
+    if richtung == "ab" and not any(t["i"] == kandidat for t in treffer):
+        treffer.append({"i": kandidat, "datum": daten[kandidat],
+                        "tief": float(tief[kandidat]), "vol": vols[kandidat],
+                        "best": False})
+
+    treffer = [t for t in treffer if t["datum"] >= grenze]
+    treffer.sort(key=lambda t: t["datum"], reverse=True)
+    return treffer
 
 
 def vol_rel(df, bis, tage=20):

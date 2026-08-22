@@ -1,0 +1,62 @@
+name: Phasen-Analyse
+
+# Wie laeuft eine Korrektur bei diesem Wert typischerweise ab: wie viele
+# Tiefs bis zum Anstieg, wie lang die Korrektur, wie lang und weit der
+# Anstieg. Braucht mehrere Jahre Historie fuer jeden Wert und gehoert
+# deshalb NICHT in den taeglichen Lauf.
+#
+# Starten: Actions -> Phasen-Analyse -> "Run workflow".
+# Ergebnis: docs/phasen.csv (zum Einlesen ins Orderbuch) und docs/phasen.md.
+
+on:
+  workflow_dispatch:
+    inputs:
+      jahre:
+        description: "Jahre Kurshistorie (Standard 3)"
+        required: false
+        default: "3"
+
+concurrency:
+  group: repo-schreiben
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  phasen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Abhaengigkeiten installieren
+        run: pip install -r requirements.txt
+
+      - name: Phasen-Analyse ausfuehren
+        run: python phasen.py --jahre "${{ github.event.inputs.jahre || '3' }}"
+
+      - name: Ergebnis speichern
+        run: |
+          git config user.name "screening-bot"
+          git config user.email "actions@github.com"
+          git add docs
+          if git diff --staged --quiet; then
+            echo "Nichts geaendert."
+            exit 0
+          fi
+          git commit -m "Phasen-Analyse $(date -u +%Y-%m-%d\ %H:%M)"
+          for versuch in 1 2 3; do
+            if git pull --rebase --autostash origin main && git push origin main; then
+              echo "Gespeichert im Versuch $versuch."
+              exit 0
+            fi
+            echo "Versuch $versuch fehlgeschlagen, neuer Anlauf in 10 Sekunden ..."
+            sleep 10
+          done
+          exit 1

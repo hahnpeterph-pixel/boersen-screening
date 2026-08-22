@@ -85,7 +85,16 @@ CSV_AUS = DOCS / "halteraten.csv"
 CSV_WERT = DOCS / "halteraten_werte.csv"
 CSV_ROH = DOCS / "puffer_je_tief.csv"
 
-JAHRE = 10   # so weit Yahoo liefert; Corona und die Zinswende sind drin
+# Sieben Jahre: zurueck bis August 2019. Damit sind der Corona-Absturz
+# (Februar/Maerz 2020) mit Vorlauf, die Erholung und die Zinswende 2022
+# enthalten. Fuenf Jahre wuerden Corona knapp verfehlen - der Absturz liegt
+# sechseinhalb Jahre zurueck.
+#
+# Weil sich der Markt seither veraendert hat, wird der Zeitraum zusaetzlich
+# je Kalenderjahr aufgeschluesselt. So bleibt sichtbar, ob eine Kennzahl
+# stabil ist oder von einer einzelnen Phase getragen wird, statt beides
+# stillschweigend zu vermischen.
+JAHRE = 7
 ATR_TAGE = 14
 RSI_TAGE = 14
 
@@ -589,6 +598,26 @@ def bericht(alle: list[dict], daten: dict, jahre: int) -> str:
     L += block("Abstand in ATR",
                tabelle(fest, lambda f: klasse(f["abstand_atr"], ABSTAND_KLASSEN),
                        [k[2] for k in ABSTAND_KLASSEN]), "Abstand")
+
+    L += ["## Nach Kalenderjahr", "",
+          "_Der Markt hat sich veraendert. Diese Tabelle zeigt, ob eine "
+          "Kennzahl stabil ist oder von einer einzelnen Phase getragen wird. "
+          "2020 enthaelt den Corona-Absturz, 2022 die Zinswende._", ""]
+    jahre_gr: dict = {}
+    for f in fest:
+        jahre_gr.setdefault(f["datum"][:4], []).append(f)
+    L += ["| Jahr | Faelle | ohne Puffer | Median | p75 | p90 | p95 | "
+          "Anstieg |", "|---|---|---|---|---|---|---|---|"]
+    for j in sorted(jahre_gr):
+        g = jahre_gr[j]
+        v = puffer_verteilung(g)
+        L.append(f"| {j} | {len(g)} | {z(v['ohne_puffer_pct'], 1, '%')} | "
+                 f"{z(v['p50'], 2)} | {z(v['p75'], 2)} | {z(v['p90'], 2)} | "
+                 f"{z(v['p95'], 2)} | "
+                 f"{z(float(np.median([x['anstieg_atr'] for x in g])), 2)} ATR |")
+    L += ["", "_Alle Angaben in ATR. Das laufende Jahr ist unvollstaendig: "
+              "Tiefs der letzten drei Monate fehlen, weil ihnen die "
+              "Resthistorie zum Urteil fehlt._", ""]
 
     k = korrelation(fest)
     L += ["## Nach RSI, relativ zum eigenen Median", "",

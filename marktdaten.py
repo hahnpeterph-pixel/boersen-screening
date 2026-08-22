@@ -129,7 +129,7 @@ def ema(df, tage):
     return None if pd.isna(w) else float(w)
 
 
-def swing_tiefs(df):
+def swing_tiefs(df, fenster=True):
     """Tiefs nach der Umkehr-Regel (ab 22.08.2026, ersetzt die alte 3-links-
     3-rechts-Regel).
 
@@ -186,9 +186,22 @@ def swing_tiefs(df):
                         "tief": float(tief[kandidat]), "vol": vols[kandidat],
                         "best": False})
 
+    if not fenster:
+        return sorted(treffer, key=lambda t: t["datum"])
     treffer = [t for t in treffer if t["datum"] >= grenze]
     treffer.sort(key=lambda t: t["datum"], reverse=True)
     return treffer
+
+
+def swing_tiefs_alle(df):
+    """Alle Swing-Tiefs der Historie, chronologisch - ohne 90-Tage-Fenster.
+
+    Die Tiefserie kann laenger zurueckreichen als das Fenster: bei Cadence
+    begann sie am 05.06.2026, also 78 Tage vor dem Lauf. Wird hier auf 90
+    Tage gekuerzt, faellt der Anfang irgendwann still weg und die Serie
+    wird zu kurz gezaehlt.
+    """
+    return swing_tiefs(df, fenster=False)
 
 
 def tief_takt(treffer, df):
@@ -264,6 +277,86 @@ def korrektur_ist(df, tiefe_liste, a):
     tiefe_atr = (float(hoch[h_i]) - juengstes["tief"]) / a
     dauer = juengstes["i"] - h_i
     return float(hoch[h_i]), round(tiefe_atr, 2), int(dauer)
+
+
+def swing_hochs(df):
+    """Bestaetigte Swing-Hochs, chronologisch.
+
+    Spiegelbild zu swing_tiefs und dieselbe Zustandsmaschine: ein Hoch gilt,
+    sobald der Kurs das TIEF der Hoechstkerze unterschreitet. Gebraucht wird
+    das fuer den Abbruch der Tiefserie - die Abwaertsstrecke endet erst,
+    wenn eine Erholung ein vorangegangenes Hoch ueberschreitet.
+    """
+    hoch, tief = df["High"].values, df["Low"].values
+    daten = df.index
+    treffer = []
+    richtung, kandidat, gipfel = "ab", 0, 0
+    for i in range(1, len(df)):
+        if richtung == "ab":
+            if tief[i] < tief[kandidat]:
+                kandidat = i
+            elif hoch[i] > hoch[kandidat]:
+                richtung, gipfel = "auf", i
+        else:
+            if hoch[i] > hoch[gipfel]:
+                gipfel = i
+            elif tief[i] < tief[gipfel]:
+                treffer.append({"i": gipfel, "datum": daten[gipfel],
+                                "hoch": float(hoch[gipfel])})
+                richtung, kandidat = "ab", i
+    return treffer
+
+
+def tiefserie_neu(df, variante="vorheriges_hoch"):
+    """Laufende Abwaertsserie nach der Regel vom 22.08.2026.
+
+    Gezaehlt werden NUR neue Tiefststaende seit dem letzten Hoch. Ein Tief,
+    das ueber dem laufenden Tiefstand liegt, zaehlt nicht mit - die Serie
+    laeuft weiter. Beendet ist die Strecke erst, wenn eine Erholung ein
+    vorangegangenes Hoch ueberschreitet.
+
+    Die alte Zaehlung (tiefserie) brach ab, sobald ein Tief hoeher lag als
+    das juengere, und kam bei Cadence am 22.08.2026 auf 3 statt 5.
+
+    variante:
+      "vorheriges_hoch"  Serie endet, wenn ein Hoch das unmittelbar
+                         vorangegangene Hoch ueberschreitet (Dow, Standard).
+      "starthoch"        Serie endet erst ueber dem Hoch, an dem die
+                         Strecke begonnen hat - traeger.
+
+    Beide laufen parallel mit, bis sich an echten Trades zeigt, welche
+    Variante traegt. Rueckgabe: (anzahl, startdatum, tiefstwert).
+    """
+    tiefs = sorted(swing_tiefs_alle(df), key=lambda t: t["datum"])
+    hochs = swing_hochs(df)
+    if not tiefs:
+        return "", "", ""
+
+    punkte = ([{"art": "T", **t} for t in tiefs] +
+              [{"art": "H", **h} for h in hochs])
+    punkte.sort(key=lambda p: (p["datum"], 0 if p["art"] == "T" else 1))
+
+    anzahl, start, lauf_min = 0, None, None
+    letztes_hoch, starthoch = None, None
+
+    for p in punkte:
+        if p["art"] == "H":
+            grenze = starthoch if variante == "starthoch" else letztes_hoch
+            if grenze is not None and p["hoch"] > grenze:
+                anzahl, start, lauf_min = 0, None, None
+                starthoch = None
+            letztes_hoch = p["hoch"]
+            if starthoch is None:
+                starthoch = p["hoch"]
+        else:
+            if lauf_min is None or p["tief"] < lauf_min:
+                anzahl += 1
+                lauf_min = p["tief"]
+                if start is None:
+                    start = p["datum"]
+    if not anzahl:
+        return "", "", ""
+    return anzahl, f"{start:%Y-%m-%d}", round(lauf_min, 4)
 
 
 def tiefserie(tiefe_liste):
@@ -403,9 +496,16 @@ def main():
         anzahl, takt = tief_takt(tr, df)
         r["tiefs_anzahl"] = anzahl
         r["tiefs_abstand"] = z(takt, 1) if takt is not None else ""
-        serie, serie_start = tiefserie(tr)
+        serie, serie_start, serie_tief = tiefserie_neu(df)
         r["tiefs_serie"] = serie
         r["tiefs_serie_start"] = serie_start
+        r["tiefs_serie_tief"] = serie_tief
+        s2, s2_start, _ = tiefserie_neu(df, "starthoch")
+        r["tiefs_serie_starthoch"] = s2
+        r["tiefs_serie_starthoch_start"] = s2_start
+        alt, alt_start = tiefserie(tr)
+        r["tiefs_serie_alt"] = alt
+        r["tiefs_serie_alt_start"] = alt_start
         k_hoch, k_atr, k_tage = korrektur_ist(df, tr, a)
         r["korr_hoch"] = z(k_hoch)
         r["korr_ist_atr"] = z(k_atr, 2) if k_atr is not None else ""

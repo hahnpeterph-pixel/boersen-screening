@@ -125,14 +125,12 @@ MINDESTLAUF = 63     # Tiefs ohne so viel Resthistorie zaehlen nicht mit
 # Haltedauer von elf Tagen, und dasselbe Fenster benutzt puffer_bedarf in
 # phasen.py - dadurch sind beide Ausgaben zum ersten Mal vergleichbar.
 MIN_FAELLE = 8       # gepoolt: darunter wird eine Zelle nicht ausgewiesen
-MIN_FAELLE_WERT = 5  # je Wert: niedriger, sonst bleibt fast alles leer
 
-# Je Wert wird groeber geschnitten als gepoolt. Bei rund 50 Tiefs in drei
-# Jahren waeren sechs Positionsklassen mal sechs Puffer ein bis zwei Faelle
-# je Zelle - Rauschen, das wie Erkenntnis aussieht. Vier Klassen lassen
-# etwa zehn Faelle je Zelle uebrig: duenn, aber lesbar. Die Fallzahl steht
-# in jeder Zeile, damit sichtbar bleibt, worauf eine Zahl beruht.
-POS_WERT = ("Tief 1", "Tief 2", "Tief 3", "Tief 4+")
+# Je Wert wird NICHT zusammengefasst: waren es zehn Tiefs, steht Tief 10 als
+# eigene Zeile. Sammelklassen wie "4+" verstecken genau das, worum es geht -
+# ob ein Tief tief in einer langen Serie anders haelt als das vierte. Die
+# Fallzahl steht in jeder Zeile, damit sichtbar bleibt, worauf eine Zahl
+# beruht. Es wird nichts unterdrueckt und nichts gerundet weggelassen.
 
 
 # ── Kennzahlen ─────────────────────────────────────────────────────
@@ -314,10 +312,9 @@ def tabelle(faelle: list[dict], schluessel, ordnung=None) -> list[dict]:
     return zeilen
 
 
-def position_wert(f: dict) -> str:
-    """Groebere Positionsklassen fuer die Auswertung je Wert."""
-    x = f["position"]
-    return f"Tief {x}" if x <= 3 else "Tief 4+"
+def position_wert(f: dict) -> int:
+    """Das wievielte Tief der Serie - ohne Sammelklasse."""
+    return f["position"]
 
 
 def position_absolut(f: dict) -> str:
@@ -325,10 +322,10 @@ def position_absolut(f: dict) -> str:
 
     Die relative Fassung (position_klasse) misst gegen die werttypische
     Anzahl und verwischt dabei genau das, worum es geht - ob das dritte Tief
-    besser haelt als das erste.
+    besser haelt als das erste. Keine Sammelklasse: waren es zehn, steht
+    Tief 10 da.
     """
-    x = f["position"]
-    return f"Tief {x}" if x <= 5 else "Tief 6+"
+    return f"Tief {f['position']:02d}"
 
 
 def position_klasse(f: dict) -> str | None:
@@ -510,9 +507,10 @@ def bericht(alle: list[dict], daten: dict, jahre: int) -> str:
     L += ["## Nach Position in der Serie", "",
           "_Die Leitfrage: haelt das erste Tief seltener als ein spaeteres? "
           "y ist die werttypische Anzahl Tiefs je Sequenz dieses Wertes._", ""]
+    max_pos = max(f["position"] for f in fest)
     L += block("Absolut - das wievielte Tief der Serie",
                tabelle(fest, position_absolut,
-                       [f"Tief {i}" for i in range(1, 6)] + ["Tief 6+"]),
+                       [f"Tief {i:02d}" for i in range(1, max_pos + 1)]),
                "Position")
     L += ["_Darunter dieselbe Frage relativ zur werttypischen Anzahl y "
           "dieses Wertes._", ""]
@@ -563,30 +561,34 @@ def bericht(alle: list[dict], daten: dict, jahre: int) -> str:
           "Grundrate, rechtfertigt ein moeglicher Wiedereinstieg keinen "
           "engeren Puffer._", ""]
 
-    L += ["## Je Wert", "",
-          "_Der eigene Grundwert des Papiers und der Unterschied zwischen "
-          "erstem und spaeterem Tief, jeweils bei 2 ATR Puffer. Die "
-          "vollstaendige Aufschluesselung nach Position und Puffer steht in "
-          "`halteraten_werte.csv`. Fallzahlen unter "
-          f"{MIN_FAELLE_WERT} werden nicht ausgewiesen._", "",
-          "| Wert | Tiefs | alle | Tief 1 | Tief 2 | Tief 3 | Tief 4+ | "
-          "Anstieg |", "|---|---|---|---|---|---|---|---|"]
     nach_wert: dict = {}
     for f in fest:
         nach_wert.setdefault(f["ticker"], []).append(f)
+    spalten = list(range(1, max_pos + 1))
+
+    L += ["## Je Wert", "",
+          "_Halterate bei 2 ATR Puffer, je Tiefsposition. Keine "
+          "Sammelklassen: waren es zehn Tiefs, steht Tief 10 da. Ein Strich "
+          "heisst, dass diese Position bei diesem Wert nicht vorkam. In "
+          "Klammern die Fallzahl - eine Quote aus zwei Faellen ist keine "
+          "Eigenschaft des Papiers, sondern Zufall. Alle Puffer stehen in "
+          "`halteraten_werte.csv`._", "",
+          "| Wert | Tiefs | alle | " +
+          " | ".join(f"Tief {i}" for i in spalten) + " | Anstieg |",
+          "|---" * (len(spalten) + 4) + "|"]
     for ticker in sorted(nach_wert):
         g_alle = nach_wert[ticker]
         gruppen: dict = {}
         for f in g_alle:
             gruppen.setdefault(position_wert(f), []).append(f)
         felder = []
-        for k in POS_WERT:
+        for k in spalten:
             g = gruppen.get(k, [])
-            felder.append(z(quote(g, 2.0), 0, "%") if len(g) >= MIN_FAELLE_WERT
-                          else "-")
+            felder.append(f"{z(quote(g, 2.0), 0, '%')} ({len(g)})" if g else "-")
         L.append(f"| {ticker} | {len(g_alle)} | "
                  f"{z(quote(g_alle, 2.0), 0, '%')} | " + " | ".join(felder) +
                  f" | {z(float(np.median([x['anstieg_atr'] for x in g_alle])), 1)} ATR |")
+
     L += ["", "---", "",
           "_Keine Anlageberatung. Historische Kursverlaeufe, gemessen mit "
           "der Regel aus `tiefs_regel.py`._"]
@@ -613,11 +615,9 @@ def csv_je_wert(fest: list[dict]) -> None:
         gruppen: dict = {}
         for f in g_alle:
             gruppen.setdefault(position_wert(f), []).append(f)
-        for k in POS_WERT:
-            g = gruppen.get(k, [])
-            if len(g) < MIN_FAELLE_WERT:
-                continue
-            z1 = {"ticker": ticker, "position": k, "faelle": len(g),
+        for k in sorted(gruppen):
+            g = gruppen[k]
+            z1 = {"ticker": ticker, "position": f"Tief {k}", "faelle": len(g),
                   "anstieg_median_atr": round(float(np.median(
                       [x["anstieg_atr"] for x in g])), 2)}
             for p in PUFFER:
@@ -638,7 +638,7 @@ def csv_schreiben(fest: list[dict]) -> None:
     zeilen = []
     for name, schluessel, ordnung in (
         ("position_absolut", position_absolut,
-         [f"Tief {i}" for i in range(1, 6)] + ["Tief 6+"]),
+         [f"Tief {i:02d}" for i in range(1, max(f["position"] for f in fest) + 1)]),
         ("position_relativ", position_klasse,
          ["1 (erstes)", "2 bis y", "y+1", "ueber y+1"]),
         ("abstand", lambda f: klasse(f["abstand_atr"], ABSTAND_KLASSEN),

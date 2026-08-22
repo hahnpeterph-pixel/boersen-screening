@@ -887,7 +887,74 @@ def zeile_je_gruppe(ticker: str, position, g: list[dict]) -> dict:
         w = wettlauf(g, pf)
         z0[f"ziel_zuerst_{pf}_pct"] = round(w["ziel_pct"], 1) if w else ""
         z0[f"ko_zuerst_{pf}_pct"] = round(w["ko_pct"], 1) if w else ""
+        # Voraussichtliche Dauer bis zum Ziel - die Zahl, die im Orderbuch
+        # als Haltedauer erscheint und ueber die Finanzierungskosten
+        # entscheidet.
+        z0[f"tage_ziel_{pf}"] = (round(w["tage_ziel"], 1)
+                                 if w and w.get("tage_ziel") is not None else "")
+        z0[f"tage_ko_{pf}"] = (round(w["tage_ko"], 1)
+                               if w and w.get("tage_ko") is not None else "")
     return z0
+
+
+def wert_zeigen(ticker: str, fest: list[dict], df: pd.DataFrame) -> None:
+    """Konkrete Kursmarken fuer einen Wert - was bedeuten die Prozente?
+
+    Die Auswertung rechnet in ATR, weil sich nur so 170 Werte
+    nebeneinanderlegen lassen. Vor einer Kaufentscheidung braucht es aber
+    Kurse: wo genau liegt der KO bei 1 ATR, wo das Ziel, und wie stehen die
+    Chancen an genau dieser Stelle.
+    """
+    g = [f for f in fest if f["ticker"] == ticker]
+    if not g:
+        print(f"{ticker}: keine auswertbaren Tiefs.")
+        return
+    a = atr(df)
+    kurs = float(df["Close"].values[-1])
+    atr_j = float(a[-1])
+    n, seit, tiefstand = regel.tiefserie(df)
+    if not n:
+        print(f"{ticker}: keine laufende Abwaertsserie - kein Kaufkandidat.")
+        return
+    tiefstand = float(tiefstand)
+    zz = [f["ziel_atr"] for f in g if f.get("ziel_atr")]
+    ziel_atr = float(np.median(zz)) if zz else None
+
+    passend = [f for f in g if f["position"] == n]
+
+    print(f"\n{ticker} - Stand {df.index[-1]:%Y-%m-%d}")
+    print(f"  Kurs {kurs:.2f} | ATR(14) {atr_j:.4f} | "
+          f"Bezugstief {tiefstand:.2f} seit {seit} | Tief {n} der Serie")
+    print(f"  Abstand zum Tief: {(kurs - tiefstand) / atr_j:.2f} ATR")
+    if ziel_atr:
+        zk = kurs + ziel_atr * atr_j
+        print(f"  Ziel: {ziel_atr:.3f} ATR = {zk:.2f} "
+              f"({(zk / kurs - 1) * 100:+.1f} %)")
+    # Beide Datenbasen zeigen, ohne stillen Rueckfall: die genaue
+    # Tiefsposition auch dann, wenn es dort null Faelle gibt, und daneben
+    # den Wert ueber alle Positionen. Welche Zahl traegt, entscheidet der
+    # Chart-Check - nicht das Skript durch eine Mindestfallzahl.
+    for basis, quelle in ((passend, f"Tief {n} der Serie"),
+                          (g, "alle Positionen")):
+        print()
+        print(f"  Datenbasis: {len(basis)} Faelle - {quelle}")
+        if not basis:
+            print("  keine historischen Faelle an dieser Position")
+            continue
+        print(f"  {'Puffer':>7}{'KO-Kurs':>10}{'Abstand':>9}{'Hebel':>7}"
+              f"{'Ziel zuerst':>13}{'KO zuerst':>11}{'Tage':>7}")
+        for pf in PUFFER:
+            ko = tiefstand - pf * atr_j
+            ab = kurs - ko
+            if ab <= 0:
+                continue
+            w = wettlauf(basis, pf)
+            if not w:
+                continue
+            tz = w.get("tage_ziel")
+            print(f"  {pf:6.2f}A{ko:10.2f}{ab:9.2f}{kurs / ab:7.1f}"
+                  f"{w['ziel_pct']:12.1f}%{w['ko_pct']:10.1f}%"
+                  f"{(f'{tz:.0f}' if tz is not None else '-'):>7}")
 
 
 def csv_roh(fest: list[dict]) -> None:
@@ -1015,6 +1082,31 @@ def main() -> int:
         if "--tage" in sys.argv:
             tage = int(sys.argv[sys.argv.index("--tage") + 1])
         pivots_zeigen(t, d[t], tage)
+        return 0
+
+    # Konkrete Kursmarken fuer einen Wert: "python3 historie.py --wert CDNS"
+    if "--wert" in sys.argv:
+        t = sys.argv[sys.argv.index("--wert") + 1]
+        d = lade(sorted(set(universum() + [t])), jahre)
+        if t not in d:
+            print(f"{t}: keine Kursdaten.")
+            return 1
+        alle2: list[dict] = []
+        for tk, dfx in d.items():
+            try:
+                alle2 += faelle_je_wert(tk, dfx)
+            except Exception:  # noqa: BLE001
+                pass
+        nw: dict = {}
+        for f in alle2:
+            nw.setdefault(f["ticker"], []).append(f)
+        for gg in nw.values():
+            wv = [x["anstieg_pivot_atr"] for x in gg
+                  if np.isfinite(x["anstieg_pivot_atr"])]
+            typ = float(np.median(wv)) if wv else None
+            for x in gg:
+                x["ziel_atr"] = typ * ZIEL_ANTEIL if typ else None
+        wert_zeigen(t, [f for f in alle2 if not f["laufend"]], d[t])
         return 0
 
     tickers = universum()

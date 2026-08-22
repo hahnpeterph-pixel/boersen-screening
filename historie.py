@@ -121,6 +121,12 @@ RSI_KLASSEN = ((-99.0, -20.0, "20+ unter"),) + tuple(
 KETTE_TAGE = 20      # Fenster fuer ein neues bestaetigtes Tief nach einem KO
 # Statt eines Fensters: wie lange haelt das Tief ueberhaupt?
 QUARTAL = 63         # Handelstage = rund drei Monate
+
+# Zielabschlag fuer den Wettlauf Ziel gegen KO: verkauft wird beim
+# werttypischen Anstieg minus 10 Prozent. Wer auf den vollen typischen
+# Anstieg wartet, verpasst genau die Haelfte der Faelle - der Median ist
+# per Definition die Mitte.
+ZIEL_ANTEIL = 0.9
 MINDESTLAUF = 63     # Tiefs ohne so viel Resthistorie zaehlen nicht mit
 
 # Drei Messfenster, weil die Antwort davon abhaengt und ein einzelnes den
@@ -234,6 +240,10 @@ def faelle_je_wert(ticker: str, df: pd.DataFrame) -> list[dict]:
 
             gipfel = float(hoch_w[b:].max())
             anstieg = (gipfel - float(df["Close"].values[b])) / atr_i
+            # Anstieg von Pivot zu Pivot: bis zum naechsten bestaetigten
+            # Hoch. Der Median dieser Groesse je Wert ist der werttypische
+            # Anstieg und damit die Zielbasis.
+            anstieg_pivot = (float(hoch_w[ende]) - float(df["Close"].values[b])) / atr_i
 
             ergebnis.append({
                 "ticker": ticker,
@@ -255,6 +265,12 @@ def faelle_je_wert(ticker: str, df: pd.DataFrame) -> list[dict]:
                 "benoetigt_ganz_atr": benoetigt_ganz,
                 "resthistorie": len(df) - b,
                 "anstieg_atr": anstieg,
+                "anstieg_pivot_atr": anstieg_pivot,
+                "einstieg": float(df["Close"].values[b]),
+                "tief": float(tief_w[i]),
+                "atr": atr_i,
+                "hoch_reihe": hoch_w[b:],
+                "tief_reihe": tief_w[b:],
                 "i": i, "b": b, "ende": ende,
             })
     return ergebnis
@@ -341,6 +357,53 @@ def quote(faelle: list[dict], p: float, tage: int | None = QUARTAL) -> float | N
         if t is None or (tage is not None and t > tage):
             treffer += 1
     return 100.0 * treffer / len(faelle)
+
+
+def wettlauf(faelle: list[dict], puffer: float, ziel_anteil: float = ZIEL_ANTEIL) -> dict:
+    """Was kommt zuerst - das Ziel oder die KO-Schwelle?
+
+    Ab dem Bestaetigungstag wird Tag fuer Tag geprueft. Das Ziel ist der
+    werttypische Anstieg dieses Wertes mal ziel_anteil, gemessen vom
+    Einstiegskurs. Die KO-Schwelle liegt puffer ATR unter dem Tief.
+
+    Anders als die reine Halterate beantwortet das die Frage, auf die es
+    ankommt: nicht "haelt das Tief", sondern "verdiene ich, bevor es
+    schiefgeht". Ein Tief, das nach acht Wochen bricht, ist belanglos, wenn
+    das Ziel nach zwei Wochen erreicht war.
+
+    Innerhalb eines Tages ist die Reihenfolge unbekannt. Werden Ziel und KO
+    am selben Tag beruehrt, zaehlt der KO - die vorsichtige Annahme.
+    """
+    ziel_treffer = ko = offen = 0
+    tage_ziel, tage_ko = [], []
+    for f in faelle:
+        z = f.get("ziel_atr")
+        if z is None or not np.isfinite(z) or z <= 0:
+            continue
+        zielkurs = f["einstieg"] + z * f["atr"]
+        koschwelle = f["tief"] - puffer * f["atr"]
+        h, t = f["hoch_reihe"], f["tief_reihe"]
+        t_z = np.flatnonzero(h >= zielkurs)
+        t_k = np.flatnonzero(t <= koschwelle)
+        iz = int(t_z[0]) if len(t_z) else None
+        ik = int(t_k[0]) if len(t_k) else None
+        if ik is not None and (iz is None or ik <= iz):
+            ko += 1
+            tage_ko.append(ik)
+        elif iz is not None:
+            ziel_treffer += 1
+            tage_ziel.append(iz)
+        else:
+            offen += 1
+    n = ziel_treffer + ko + offen
+    if not n:
+        return {}
+    return {"n": n,
+            "ziel_pct": 100.0 * ziel_treffer / n,
+            "ko_pct": 100.0 * ko / n,
+            "offen_pct": 100.0 * offen / n,
+            "tage_ziel": float(np.median(tage_ziel)) if tage_ziel else None,
+            "tage_ko": float(np.median(tage_ko)) if tage_ko else None}
 
 
 def puffer_verteilung(faelle: list[dict]) -> dict:
@@ -628,7 +691,35 @@ def bericht(alle: list[dict], daten: dict, jahre: int) -> str:
                tabelle(fest, lambda f: klasse(f["abstand_atr"], ABSTAND_KLASSEN),
                        [k[2] for k in ABSTAND_KLASSEN]), "Abstand")
 
-    L += ["## Nach Kalenderjahr", "",
+    L += ["## Ziel gegen KO", "",
+          f"_Ab dem Bestaetigungstag: was kommt zuerst? Ziel ist der "
+          f"werttypische Anstieg mal {ZIEL_ANTEIL:.0%}, gemessen vom "
+          f"Einstiegskurs. Werden Ziel und KO am selben Tag beruehrt, zaehlt "
+          f"der KO - die vorsichtige Annahme. OFFEN heisst: bis zum Ende der "
+          f"Historie weder noch._", "",
+          "| Puffer | Faelle | Ziel zuerst | KO zuerst | offen | "
+          "Tage bis Ziel | Tage bis KO |", "|---|---|---|---|---|---|---|"]
+    for p_ in PUFFER:
+        w = wettlauf(fest, p_)
+        if not w:
+            continue
+        L.append(f"| {p_} ATR | {w['n']} | {z(w['ziel_pct'], 1, '%')} | "
+                 f"{z(w['ko_pct'], 1, '%')} | {z(w['offen_pct'], 1, '%')} | "
+                 f"{z(w['tage_ziel'], 0)} | {z(w['tage_ko'], 0)} |")
+    L += ["", "### Ziel gegen KO, je Tiefsposition (Puffer 2 ATR)", "",
+          "| Position | Faelle | Ziel zuerst | KO zuerst | offen | "
+          "Tage bis Ziel |", "|---|---|---|---|---|---|"]
+    gr: dict = {}
+    for f in fest:
+        gr.setdefault(f["position"], []).append(f)
+    for k in sorted(gr):
+        w = wettlauf(gr[k], 2.0)
+        if not w:
+            continue
+        L.append(f"| Tief {k} | {w['n']} | {z(w['ziel_pct'], 1, '%')} | "
+                 f"{z(w['ko_pct'], 1, '%')} | {z(w['offen_pct'], 1, '%')} | "
+                 f"{z(w['tage_ziel'], 0)} |")
+    L += ["", "## Nach Kalenderjahr", "",
           "_Der Markt hat sich veraendert. Diese Tabelle zeigt, ob eine "
           "Kennzahl stabil ist oder von einer einzelnen Phase getragen wird. "
           "2020 enthaelt den Corona-Absturz, 2022 die Zinswende._", ""]
@@ -722,8 +813,10 @@ def csv_roh(fest: list[dict]) -> None:
     if not fest:
         return
     felder = ["ticker", "datum", "position", "serie_laenge", "typisch",
-              "abstand_atr", "rsi", "rsi_rel", "benoetigt_atr",
-              "benoetigt_ganz_atr", "anstieg_atr", "resthistorie"]
+              "tief", "einstieg", "atr", "abstand_atr", "rsi", "rsi_rel",
+              "benoetigt_atr", "benoetigt_ganz_atr", "anstieg_atr",
+              "anstieg_pivot_atr", "typischer_anstieg_atr", "ziel_atr",
+              "resthistorie"]
     DOCS.mkdir(exist_ok=True)
     with open(CSV_ROH, "w", encoding="utf-8", newline="") as f:
         w = csv.writer(f)
@@ -732,12 +825,18 @@ def csv_roh(fest: list[dict]) -> None:
             w.writerow([
                 x["ticker"], x["datum"], x["position"], x["serie_laenge"],
                 x["typisch"],
+                round(x["tief"], 4), round(x["einstieg"], 4),
+                round(x["atr"], 4),
                 round(x["abstand_atr"], 3),
                 round(x["rsi"], 2) if x["rsi"] is not None else "",
                 round(x["rsi_rel"], 2) if x["rsi_rel"] is not None else "",
                 round(x["benoetigt_atr"], 3),
                 round(x["benoetigt_ganz_atr"], 3),
                 round(x["anstieg_atr"], 3),
+                round(x["anstieg_pivot_atr"], 3),
+                (round(x["typischer_anstieg_atr"], 3)
+                 if x.get("typischer_anstieg_atr") else ""),
+                round(x["ziel_atr"], 3) if x.get("ziel_atr") else "",
                 x["resthistorie"],
             ])
     print(f"Geschrieben: {CSV_ROH} ({len(fest)} Zeilen)")
@@ -852,6 +951,19 @@ def main() -> int:
     if not alle:
         print("Keine auswertbaren Tiefs - Abbruch.")
         return 1
+
+    # Werttypischer Anstieg je Wert = Median des Anstiegs bis zum naechsten
+    # Hoch. Daraus das Ziel fuer den Wettlauf.
+    nach_wert: dict = {}
+    for f in alle:
+        nach_wert.setdefault(f["ticker"], []).append(f)
+    for g in nach_wert.values():
+        werte = [x["anstieg_pivot_atr"] for x in g
+                 if np.isfinite(x["anstieg_pivot_atr"])]
+        typ = float(np.median(werte)) if werte else None
+        for x in g:
+            x["typischer_anstieg_atr"] = typ
+            x["ziel_atr"] = typ * ZIEL_ANTEIL if typ else None
 
     fest = [f for f in alle if not f["laufend"]]
     DOCS.mkdir(exist_ok=True)

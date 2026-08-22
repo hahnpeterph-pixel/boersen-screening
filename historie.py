@@ -103,13 +103,14 @@ RSI_TAGE = 14
 # bei manchen Werten mehrere Prozentpunkte.
 PUFFER = tuple(round(0.25 * k, 2) for k in range(1, 17))
 
-# Zielhoehen in ATR ueber dem Einstieg. Bis 4 ATR im selben Viertelraster
-# wie die Puffer, darueber groebere Schritte bis 20 - dort liegen die
-# Analystenziele. UNH stand am 22.08.2026 bei 8,9 ATR Abstand zum
-# Analystenziel; mit einem Raster, das bei 4 endet, waere das nicht
-# messbar gewesen.
-ZIELE = tuple(round(0.25 * k, 2) for k in range(1, 17)) + \
-    (5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 12.0, 15.0, 20.0)
+# Zielhoehen in ATR ueber dem Einstieg, durchgehend in Viertelschritten
+# bis 30 ATR. Ein groeberes Raster oberhalb von 4 ATR reichte nicht: die
+# Analystenziele lagen am 22.08.2026 zwischen 0,12 und 20,72 ATR ueber dem
+# Kurs, und bei 28 Prozent der Werte haette die naechste Rasterstufe mehr
+# als 0,25 ATR danebengelegen. Gefragt wird auch nach Anteilen des
+# Analystenziels (100, 90, 80, 70, 60 Prozent) - die liegen zwangslaeufig
+# zwischen den groben Stufen.
+ZIELE = tuple(round(0.25 * k, 2) for k in range(1, 121))
 
 # Abstand des Einstiegs ueber dem Tief, in Schritten von 0,2 ATR bis 3,0.
 # Vier grobe Toepfe wie frueher verstecken, wo genau der Effekt kippt.

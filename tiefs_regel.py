@@ -211,7 +211,19 @@ def sequenzen(df: pd.DataFrame, variante: str = STANDARD) -> list[dict]:
                 # Hoch VOR dem tiefsten Tief, nicht gegen ein beliebiges
                 # Zwischenhoch. Diese Referenz wandert mit jedem neuen Tief
                 # nach unten, der Trend zieht sich also selbst enger.
-                grenze = seq["ref_hoch"] if seq["hoeheres_tief"] else None
+                #
+                # Fehlt das Hoch davor - das ist am Anfang jeder Historie so,
+                # weil das erste Tief vor dem ersten Hoch liegt -, dann dient
+                # das erste Hoch DANACH als Referenz. Ohne diesen Rueckfall
+                # bleibt grenze dauerhaft None und die Serie endet nie: im
+                # Test lieferte ein Aufwaertstrend mit zehn Ruecksetzern eine
+                # einzige Sequenz statt zehn, und Cadence kam auf 17 Tiefs in
+                # drei Jahren statt der erwarteten 50 bis 60.
+                if seq["ref_hoch"] is None:
+                    seq["ref_hoch"] = h
+                    grenze = None
+                else:
+                    grenze = seq["ref_hoch"] if seq["hoeheres_tief"] else None
             elif variante == "starthoch":
                 grenze = seq["start_hoch"]
             else:

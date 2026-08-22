@@ -44,6 +44,9 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
+import kurse
+import tiefs_regel as regel
+
 BASE = Path(__file__).resolve().parent
 DOCS = BASE / "docs"
 CSV_AUS = DOCS / "phasen.csv"
@@ -61,31 +64,8 @@ def atr(df: pd.DataFrame, tage: int = ATR_TAGE) -> pd.Series:
 
 
 def pivots(df: pd.DataFrame) -> list[tuple[str, int]]:
-    """Abwechselnde Tiefs und Hochs nach der Umkehr-Regel.
-
-    Identisch zur Logik in marktdaten.py, hier zusaetzlich mit den Hochs,
-    weil erst sie den Anstieg begrenzen. Gibt [("tief", i), ("hoch", j), ...]
-    in zeitlicher Reihenfolge zurueck.
-    """
-    hoch, tief = df["High"].values, df["Low"].values
-    punkte: list[tuple[str, int]] = []
-    richtung = "ab"
-    kandidat = gipfel = 0
-
-    for i in range(1, len(df)):
-        if richtung == "ab":
-            if tief[i] < tief[kandidat]:
-                kandidat = i
-            elif hoch[i] > hoch[kandidat]:
-                punkte.append(("tief", kandidat))
-                richtung, gipfel = "auf", i
-        else:
-            if hoch[i] > hoch[gipfel]:
-                gipfel = i
-            elif tief[i] < tief[gipfel]:
-                punkte.append(("hoch", gipfel))
-                richtung, kandidat = "ab", i
-    return punkte
+    """Durchreiche auf tiefs_regel.pivots - eine Definition fuer alles."""
+    return regel.pivots(df)
 
 
 def rsi_reihe(df: pd.DataFrame, tage: int = 14) -> pd.Series:
@@ -185,28 +165,30 @@ def phasen(df: pd.DataFrame) -> list[dict]:
 
     a = atr(df).values
     ergebnis = []
-    k = 0
-    while k < len(tiefe) - 1:
-        # Abwaertssequenz: solange jedes Tief tiefer liegt als das vorherige
-        start = k
-        while k < len(tiefe) - 1 and tiefe[k + 1][1] < tiefe[k][1]:
-            k += 1
-        letztes_i, letztes_kurs = tiefe[k]
-        anzahl = k - start + 1
+    # Sequenzabgrenzung seit 22.08.2026 aus tiefs_regel: gezaehlt werden nur
+    # neue Tiefststaende, ein hoeheres Zwischentief beendet die Strecke
+    # nicht mehr. Die alte Schleife hier brach beim ersten hoeheren Tief ab
+    # und lieferte deshalb kuerzere Sequenzen als die Chartablesung.
+    for seq in regel.sequenzen(df):
+        if seq["laufend"]:
+            continue          # ohne Ende kein Anstieg zu messen
+        letztes_i = seq["ende_i"]
+        letztes_kurs = float(df["Low"].values[letztes_i])
+        anzahl = seq["anzahl"]
+        start_pos = seq["start_i"]
 
         atr_hier = a[letztes_i]
         if not np.isfinite(atr_hier) or atr_hier <= 0:
-            k += 1
             continue
 
         # Die Korrektur beginnt beim letzten Hoch VOR dem ersten Tief der
         # Sequenz, nicht beim ersten Tief selbst - sonst waere die Dauer
         # null, sobald eine Sequenz nur aus einem Tief besteht.
-        vorhoch = [(i, h) for i, h in hochs if i < tiefe[start][0]]
+        vorhoch = [(i, h) for i, h in hochs if i < start_pos]
         if vorhoch:
             start_i, start_kurs = vorhoch[-1]
         else:
-            start_i, start_kurs = tiefe[start][0], tiefe[start][1]
+            start_i, start_kurs = start_pos, float(df["Low"].values[start_pos])
         dauer_ab = letztes_i - start_i
         tiefe_ab = (start_kurs - letztes_kurs) / atr_hier
 
@@ -227,7 +209,8 @@ def phasen(df: pd.DataFrame) -> list[dict]:
 
         # Zusaetzlich die weite Fassung: wie weit traegt es maximal, bevor
         # ein tieferes Tief kommt. Nur zur Einordnung, nicht fuer Vergleiche.
-        naechstes_tieferes = next((i for i, kurs in tiefe[k + 1:] if kurs < letztes_kurs), None)
+        naechstes_tieferes = next((i for i, kurs in tiefe
+                                   if i > letztes_i and kurs < letztes_kurs), None)
         grenze = naechstes_tieferes if naechstes_tieferes is not None else len(df) - 1
         weit = [(i, h) for i, h in hochs if letztes_i < i <= grenze]
         if weit:
@@ -246,7 +229,6 @@ def phasen(df: pd.DataFrame) -> list[dict]:
             "dauer_weit": dauer_weit,
             "hoehe_weit": hoehe_weit,
         })
-        k += 1
     return ergebnis
 
 

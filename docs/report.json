@@ -55,47 +55,13 @@
  },
  "changes": {
   "turnaround": {
-   "entries": [
-    {
-     "ticker": "BNR.DE",
-     "rank": 13
-    },
-    {
-     "ticker": "DTE.DE",
-     "rank": 14
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "HEN3.DE",
-     "old_rank": 13
-    },
-    {
-     "ticker": "SY1.DE",
-     "old_rank": 14
-    }
-   ],
-   "moves": [
-    {
-     "ticker": "QIA.DE",
-     "rank": 12,
-     "delta": -9
-    }
-   ]
+   "entries": [],
+   "exits": [],
+   "moves": []
   },
   "momentum": {
-   "entries": [
-    {
-     "ticker": "BNR.DE",
-     "rank": 10
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "SY1.DE",
-     "old_rank": 9
-    }
-   ],
+   "entries": [],
+   "exits": [],
    "moves": []
   },
   "value": {

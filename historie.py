@@ -666,6 +666,34 @@ def bericht(alle: list[dict], daten: dict, jahre: int) -> str:
                  + f" | {z(v['max'], 2)} |")
     L += ["", "_Alle Angaben in ATR zum Zeitpunkt des Tiefs._", ""]
 
+    L += ["### Wie weit traegt der Anstieg danach?", "",
+          "_ANSTIEG ist die Bewegung vom Einstieg bis zum naechsten "
+          "bestaetigten Hoch - die realistische Ertragsseite, weil dort nach "
+          "der Strategie verkauft wird. MAXIMUM ist der hoechste Punkt bis "
+          "zum Ende der Historie; die Zahl faellt in einem Aufwaertsmarkt "
+          "zwangslaeufig gross aus und taugt nur zur Einordnung. ZIEL ist "
+          "der werttypische Anstieg des Wertes mal "
+          f"{ZIEL_ANTEIL:.0%}._", "",
+          "| Position | Faelle | Anstieg p25 | Median | p75 | p90 | "
+          "Maximum Median | Ziel Median |", "|---|---|---|---|---|---|---|---|"]
+    for k in sorted(gruppen):
+        g = gruppen[k]
+        a = np.array([x["anstieg_pivot_atr"] for x in g
+                      if np.isfinite(x["anstieg_pivot_atr"])])
+        m = np.array([x["anstieg_atr"] for x in g
+                      if np.isfinite(x["anstieg_atr"])])
+        zz = [x["ziel_atr"] for x in g if x.get("ziel_atr")]
+        if not len(a):
+            continue
+        L.append(f"| Tief {k} | {len(g)} | "
+                 f"{z(float(np.percentile(a, 25)), 2)} | "
+                 f"{z(float(np.median(a)), 2)} | "
+                 f"{z(float(np.percentile(a, 75)), 2)} | "
+                 f"{z(float(np.percentile(a, 90)), 2)} | "
+                 f"{z(float(np.median(m)), 2) if len(m) else '-'} | "
+                 f"{z(float(np.median(zz)), 2) if zz else '-'} |")
+    L += ["", "_Alle Angaben in ATR zum Zeitpunkt des Tiefs._", ""]
+
     L += block("Dasselbe als Quote je Schwelle",
                tabelle(fest, position_absolut,
                        [f"Tief {i:02d}" for i in range(1, max_pos + 1)]),
@@ -858,6 +886,11 @@ def csv_je_wert(fest: list[dict]) -> None:
         for p in PUFFER:
             z0[f"haelt_{p}_atr_pct"] = round(quote(g_alle, p), 1)
         z0.update({k: round(v, 2) for k, v in puffer_verteilung(g_alle).items()})
+        av = [x["anstieg_pivot_atr"] for x in g_alle
+              if np.isfinite(x["anstieg_pivot_atr"])]
+        z0["anstieg_pivot_median_atr"] = round(float(np.median(av)), 3) if av else ""
+        w = wettlauf(g_alle, 2.0)
+        z0["ziel_zuerst_2atr_pct"] = round(w["ziel_pct"], 1) if w else ""
         zeilen.append(z0)
 
         gruppen: dict = {}
@@ -871,6 +904,12 @@ def csv_je_wert(fest: list[dict]) -> None:
             for p in PUFFER:
                 z1[f"haelt_{p}_atr_pct"] = round(quote(g, p), 1)
             z1.update({k: round(v, 2) for k, v in puffer_verteilung(g).items()})
+            av = [x["anstieg_pivot_atr"] for x in g
+                  if np.isfinite(x["anstieg_pivot_atr"])]
+            z1["anstieg_pivot_median_atr"] = (round(float(np.median(av)), 3)
+                                              if av else "")
+            w = wettlauf(g, 2.0)
+            z1["ziel_zuerst_2atr_pct"] = round(w["ziel_pct"], 1) if w else ""
             zeilen.append(z1)
 
     if not zeilen:

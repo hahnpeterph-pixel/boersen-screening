@@ -103,6 +103,14 @@ RSI_TAGE = 14
 # bei manchen Werten mehrere Prozentpunkte.
 PUFFER = tuple(round(0.25 * k, 2) for k in range(1, 17))
 
+# Zielhoehen in ATR ueber dem Einstieg. Bis 4 ATR im selben Viertelraster
+# wie die Puffer, darueber groebere Schritte bis 20 - dort liegen die
+# Analystenziele. UNH stand am 22.08.2026 bei 8,9 ATR Abstand zum
+# Analystenziel; mit einem Raster, das bei 4 endet, waere das nicht
+# messbar gewesen.
+ZIELE = tuple(round(0.25 * k, 2) for k in range(1, 17)) + \
+    (5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 12.0, 15.0, 20.0)
+
 # Abstand des Einstiegs ueber dem Tief, in Schritten von 0,2 ATR bis 3,0.
 # Vier grobe Toepfe wie frueher verstecken, wo genau der Effekt kippt.
 ABSTAND_KLASSEN = tuple(
@@ -238,6 +246,20 @@ def faelle_je_wert(ticker: str, df: pd.DataFrame) -> list[dict]:
                 treffer = np.flatnonzero(nach < schwelle)
                 tage[pp] = int(treffer[0]) if len(treffer) else None
 
+            # Tage bis zu jeder Zielhoehe. Ohne Fenster: gemessen wird
+            # ueber die gesamte Resthistorie, None heisst nie erreicht.
+            # Die Haltedauer ist bewusst kein Kriterium - ein Schein, der
+            # nach 200 Tagen das Fuenffache bringt, zaehlt wie einer nach
+            # zehn. Deshalb wird nicht abgeschnitten, sondern die Zeit
+            # festgehalten und die Beurteilung dem Leser ueberlassen.
+            hoch_nach = hoch_w[b:]
+            einstieg_kurs = float(df["Close"].values[b])
+            tage_ziel = {}
+            for zz in ZIELE:
+                marke = einstieg_kurs + zz * atr_i
+                tr = np.flatnonzero(hoch_nach >= marke)
+                tage_ziel[zz] = int(tr[0]) if len(tr) else None
+
             gipfel = float(hoch_w[b:].max())
             anstieg = (gipfel - float(df["Close"].values[b])) / atr_i
             # Anstieg von Pivot zu Pivot: bis zum naechsten bestaetigten
@@ -261,6 +283,8 @@ def faelle_je_wert(ticker: str, df: pd.DataFrame) -> list[dict]:
                             if (rsi_median is not None and np.isfinite(r[i]))
                             else None),
                 "tage_bis_bruch": tage,
+                "tage_bis_ziel": tage_ziel,
+                "beobachtet": len(nach) - 1,
                 "benoetigt_atr": benoetigt,
                 "benoetigt_ganz_atr": benoetigt_ganz,
                 "resthistorie": len(df) - b,
@@ -972,7 +996,11 @@ def csv_roh(fest: list[dict]) -> None:
               "tief", "einstieg", "atr", "abstand_atr", "rsi", "rsi_rel",
               "benoetigt_atr", "benoetigt_ganz_atr", "anstieg_atr",
               "anstieg_pivot_atr", "typischer_anstieg_atr", "ziel_atr",
-              "resthistorie"]
+              "resthistorie", "beobachtet"]
+    # Tage bis KO je Pufferstufe und Tage bis Ziel je Zielhoehe. Leer
+    # heisst: in der gesamten beobachteten Zeit nicht eingetreten.
+    felder += [f"tage_ko_{p:g}" for p in PUFFER]
+    felder += [f"tage_ziel_{z:g}" for z in ZIELE]
     DOCS.mkdir(exist_ok=True)
     with open(CSV_ROH, "w", encoding="utf-8", newline="") as f:
         w = csv.writer(f)
@@ -994,6 +1022,13 @@ def csv_roh(fest: list[dict]) -> None:
                  if x.get("typischer_anstieg_atr") else ""),
                 round(x["ziel_atr"], 3) if x.get("ziel_atr") else "",
                 x["resthistorie"],
+                x.get("beobachtet", ""),
+            ] + [
+                ("" if x["tage_bis_bruch"].get(p) is None
+                 else x["tage_bis_bruch"][p]) for p in PUFFER
+            ] + [
+                ("" if x.get("tage_bis_ziel", {}).get(z) is None
+                 else x["tage_bis_ziel"][z]) for z in ZIELE
             ])
     print(f"Geschrieben: {CSV_ROH} ({len(fest)} Zeilen)")
 

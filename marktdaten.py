@@ -43,9 +43,6 @@ ATR_TAGE = RSI_TAGE = 14
 # Gemessene Basis am 21.08.2026: GC=F 4.639,20 gegen Spot 4.603,11,
 # also +36,09 Punkte. Wird der Future genutzt, muss die Basis fuer die
 # KO-Rechnung abgezogen werden - das passiert ausserhalb dieses Skripts.
-# Kaffee (KC=F) am 21.08.2026 entfernt: bei Trade Republic nicht handelbar.
-# Ob es auf Weizen, Mais, Kakao und Zucker dort Knock-outs gibt, ist NICHT
-# geprueft - notfalls in der App am Basiswert nachsehen und hier streichen.
 ROHSTOFFE = [
     (["XAUUSD=X", "GC=F"], "Gold", "Spot/Future"),
     (["XAGUSD=X", "SI=F"], "Silber", "Spot/Future"),
@@ -57,6 +54,7 @@ ROHSTOFFE = [
     (["HG=F"], "Kupfer", "Future"),
     (["ZW=F"], "Weizen", "Future"),
     (["ZC=F"], "Mais", "Future"),
+    (["KC=F"], "Kaffee", "Future"),
     (["CC=F"], "Kakao", "Future"),
     (["SB=F"], "Zucker", "Future"),
 ]
@@ -163,6 +161,27 @@ def vol_rel(df, bis, tage=20):
     return None if pd.isna(v) else float(v) / float(teil.mean())
 
 
+def hoch60(df, tage=60):
+    """Hoechstes Hoch der letzten Handelstage. Basis fuer die Falltiefe -
+    ohne sie laesst sich ein Boden nicht von einer Konsolidierung nahe am
+    Hoch unterscheiden."""
+    teil = df["High"].tail(tage).dropna()
+    return None if teil.empty else float(teil.max())
+
+
+def vol_druck5(df, tage=5):
+    """Verhaeltnis des Volumens an Anstiegs- zu Ruecksetzertagen der letzten
+    Tage. Ueber 1 heisst: an den gruenen Tagen wurde mehr gehandelt - die
+    Kaeufer sind zurueck. Dritter Baustein der Bodenbildung."""
+    if "Volume" not in df.columns or len(df) < tage + 2:
+        return None
+    d = df["Close"].diff().tail(tage)
+    v = df["Volume"].tail(tage)
+    auf = float(v[d > 0].sum())
+    ab = float(v[d <= 0].sum())
+    return None if ab <= 0 else auf / ab
+
+
 def hammer(df, a):
     """Lange untere Lunte, kleiner Koerper oben, kaum obere Lunte,
     relevante Groesse, vorher abwaerts."""
@@ -239,6 +258,8 @@ def main():
             "hammer": int(hammer(df, a)),
             "hoeheres_hoch": int(hoeheres_hoch(df)),
             "umkehrkerze": int(umkehrkerze(df)),
+            "hoch60": z(hoch60(df)),
+            "vol_druck5": (z(vol_druck5(df), 2) if mitvol else ""),
         }
         for n in (1, 2, 3):
             t = tr[n - 1] if len(tr) >= n else None

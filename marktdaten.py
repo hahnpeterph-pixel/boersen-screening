@@ -151,51 +151,38 @@ def korrektur_ist(df, tiefe_liste, a):
     """Die LAUFENDE Korrektur, mit demselben Anker wie phasen.py.
 
     Das Soll aus der Phasen-Analyse misst vom letzten bestaetigten Hoch bis
-    zum letzten Tief der Abwaertsserie. Ohne dasselbe Hoch als Anker ist
-    ein Soll/Ist-Vergleich wertlos - die Falltiefe vom 60-Tage-Hoch misst
-    etwas anderes.
+    zum letzten Tief der Abwaertsserie. Ohne dasselbe Hoch als Anker ist ein
+    Soll/Ist-Vergleich wertlos - die Falltiefe vom 60-Tage-Hoch misst etwas
+    anderes.
 
-    Ermittelt wird deshalb: das bestaetigte Hoch, das der laufenden Serie
-    absteigender Tiefs vorausging, und daraus Tiefe (in ATR) und Dauer
-    (in Handelstagen) bis zum juengsten Tief.
+    Bis 22.08.2026 trug diese Funktion eine eigene Kopie der Pivot-Suche UND
+    der alten Serienabgrenzung, die beim ersten nicht-tieferen Tief abbrach.
+    Bei Cadence ankerte sie dadurch auf dem 06.08. statt auf dem 03.06. und
+    meldete 4,03 ATR statt 11,27 - also ziemlich genau ein Drittel. Genau der
+    Fehler, vor dem der eigene Kommentar warnte.
 
-    Die Hochs entstehen nach derselben Umkehr-Regel wie die Tiefs, nur
-    gespiegelt: ein Hoch gilt, sobald der Kurs das TIEF der Hoechstkerze
-    unterschreitet.
+    Serie und Hochs kommen jetzt aus tiefs_regel, damit Ist und Soll
+    dieselbe Definition benutzen.
     """
     if not tiefe_liste or a in (None, 0):
         return None, None, None
 
-    hoch, tief = df["High"].values, df["Low"].values
-    hochs = []
-    richtung, kandidat, gipfel = "ab", 0, 0
-    for i in range(1, len(df)):
-        if richtung == "ab":
-            if tief[i] < tief[kandidat]:
-                kandidat = i
-            elif hoch[i] > hoch[kandidat]:
-                richtung, gipfel = "auf", i
-        else:
-            if hoch[i] > hoch[gipfel]:
-                gipfel = i
-            elif tief[i] < tief[gipfel]:
-                hochs.append(gipfel)
-                richtung, kandidat = "ab", i
+    seqs = regel.sequenzen(df)
+    if not seqs or not seqs[-1]["laufend"]:
+        return None, None, None
+    lauf = seqs[-1]
+    beginn = lauf["start_i"]
 
-    # Serie absteigender Tiefs, vom juengsten rueckwaerts. tiefe_liste ist
-    # nach Datum absteigend sortiert, das juengste steht vorn.
-    serie = [tiefe_liste[0]]
-    for k in range(1, len(tiefe_liste)):
-        if tiefe_liste[k]["tief"] > serie[-1]["tief"]:
-            serie.append(tiefe_liste[k])
-        else:
-            break
-    beginn = serie[-1]["i"]
-
-    davor = [i for i in hochs if i < beginn]
+    davor = [h["i"] for h in regel.swing_hochs(df) if h["i"] < beginn]
     if not davor:
+        # Die Serie beginnt vor dem ersten erkannten Hoch der geladenen
+        # Historie - dann gibt es keinen Anker. Seit die Serien laenger
+        # werden duerfen, ist das kein rein theoretischer Fall mehr: bei
+        # 400 Tagen Historie und einer Serie ueber mehrere Monate kann der
+        # Anfang aus dem Fenster fallen. Lieber leer als falsch verankert.
         return None, None, None
     h_i = davor[-1]
+    hoch = df["High"].values
     juengstes = tiefe_liste[0]
     tiefe_atr = (float(hoch[h_i]) - juengstes["tief"]) / a
     dauer = juengstes["i"] - h_i

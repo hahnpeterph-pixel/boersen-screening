@@ -1,0 +1,69 @@
+name: Tagesreaktion
+
+# Drei Fragen, die sich nur an Tageskerzen beantworten lassen und deshalb
+# NICHT in den taeglichen Lauf gehoeren:
+#
+#   1. Was folgt auf einen harten Verlusttag? Wie oft lag der Schluss nach
+#      5, 10, 20 und 60 Handelstagen hoeher - und wie tief ging es vorher
+#      noch. Die zweite Zahl entscheidet, ob ein Knock-out ueberlebt haette.
+#   2. Haelt der Wochentag, was ihm nachgesagt wird?
+#   3. Wie weit werden grosse Laeufe korrigiert? Gruppiert nach Laufhoehe
+#      in ATR - ein Lauf von 20 ATR wird anders zurueckgegeben als einer
+#      von 3 ATR.
+#
+# Starten: Actions -> Tagesreaktion -> "Run workflow".
+# Ergebnis: docs/tagesreaktion.md, docs/tagesreaktion.csv,
+#           docs/laeufe.csv, docs/laeufe_roh.csv, docs/wochentage.csv
+
+on:
+  workflow_dispatch:
+    inputs:
+      jahre:
+        description: "Jahre Kurshistorie (Standard 7)"
+        required: false
+        default: "7"
+
+concurrency:
+  group: repo-schreiben
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  tagesreaktion:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Abhaengigkeiten installieren
+        run: pip install -r requirements.txt
+
+      - name: Tagesreaktion ausfuehren
+        run: python tagesreaktion.py --jahre "${{ github.event.inputs.jahre || '7' }}"
+
+      - name: Ergebnis speichern
+        run: |
+          git config user.name "screening-bot"
+          git config user.email "actions@github.com"
+          git add docs
+          if git diff --staged --quiet; then
+            echo "Nichts geaendert."
+            exit 0
+          fi
+          git commit -m "Tagesreaktion $(date -u +%Y-%m-%d\ %H:%M)"
+          for versuch in 1 2 3; do
+            if git pull --rebase --autostash origin main && git push origin main; then
+              echo "Gespeichert im Versuch $versuch."
+              exit 0
+            fi
+            echo "Versuch $versuch fehlgeschlagen, neuer Anlauf in 10 Sekunden ..."
+            sleep 10
+          done
+          exit 1

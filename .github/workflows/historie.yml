@@ -1,0 +1,80 @@
+name: Historie
+
+on:
+  workflow_dispatch:
+    inputs:
+      jahre:
+        description: "Jahre Historie"
+        required: false
+        default: "7"
+      pivots:
+        description: "Ticker fuer die Wendepunkt-Ausgabe (z.B. CDNS). Leer lassen fuer den normalen Lauf."
+        required: false
+        default: ""
+      pivot_tage:
+        description: "Wie viele Kalendertage zurueck die Wendepunkt-Ausgabe reicht"
+        required: false
+        default: "120"
+
+# Gemeinsame Gruppe mit allen anderen Workflows: zwei Laeufe, die
+# gleichzeitig nach docs/ schreiben, kollidieren beim Push. Der Name muss
+# mit screening.yml und phasen.yml uebereinstimmen, sonst greift die Sperre
+# nicht - bis 24.08.2026 stand hier boersen-screening-push.
+concurrency:
+  group: repo-schreiben
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  historie:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Abhaengigkeiten installieren
+        run: pip install -r requirements.txt
+
+      # Diagnose: gibt alle erkannten Wendepunkte eines Wertes im Log aus -
+      # Datum, Kurs, Hoch der Tiefkerze, Bestaetigungstag und ob das Tief in
+      # die Serie zaehlt. Schreibt nichts und laeuft nur, wenn ein Ticker
+      # eingegeben wurde. Fuer den Abgleich mit dem Chart, wenn Ablesung und
+      # Skript auseinanderlaufen.
+      - name: Wendepunkte pruefen
+        if: github.event.inputs.pivots != ''
+        run: python historie.py --jahre ${{ github.event.inputs.jahre || '7' }} --pivots ${{ github.event.inputs.pivots }} --tage ${{ github.event.inputs.pivot_tage || '120' }}
+
+      - name: Historie ausfuehren
+        if: github.event.inputs.pivots == ''
+        run: python historie.py --jahre ${{ github.event.inputs.jahre || '7' }}
+
+      - name: Ergebnis speichern
+        run: |
+          git config user.name "screening-bot"
+          git config user.email "actions@github.com"
+          git add docs state
+          if git diff --staged --quiet; then
+            echo "Nichts geaendert."
+            exit 0
+          fi
+          git commit -m "Historie $(date -u +%Y-%m-%d)"
+          # Der Push scheitert, sobald main sich seit dem Checkout bewegt hat.
+          # Deshalb vor jedem Versuch neu aufsetzen und bis zu drei Anlaeufe
+          # nehmen, statt den ganzen Lauf zu verwerfen.
+          for versuch in 1 2 3; do
+            if git pull --rebase --autostash origin main && git push origin main; then
+              echo "Gespeichert im Versuch $versuch."
+              exit 0
+            fi
+            echo "Versuch $versuch fehlgeschlagen, neuer Anlauf in 10 Sekunden ..."
+            sleep 10
+          done
+          echo "Push nach drei Versuchen fehlgeschlagen."
+          exit 1

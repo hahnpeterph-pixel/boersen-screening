@@ -296,6 +296,13 @@ def main():
             "ticker": ticker, "name": name, "art": art,
             "wunschticker": kette[0],
             "rueckfall": int(ticker != kette[0]),
+            # Woher die Kerzen tatsaechlich kommen. Weicht das vom Ticker
+            # ab, steht dahinter eine Ausnahme in kurse.KURSQUELLE - und
+            # die Waehrung dieser Zeile ist dann eine andere als die des
+            # Kursziels in analysten.csv. Ohne diese Spalte waere der
+            # Unterschied in der Datei nicht zu sehen.
+            "kursquelle": kurse.quelle(ticker),
+            "kurswaehrung": kurse.waehrung(ticker),
             "datum": f"{df.index[-1]:%Y-%m-%d}",
             "kurs": z(kurs), "open": z(letzte["Open"]),
             "high": z(letzte["High"]), "low": z(letzte["Low"]),

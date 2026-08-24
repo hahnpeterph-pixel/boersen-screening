@@ -4,28 +4,28 @@
   "turnaround": [
    "AXON",
    "AXP",
-   "ADSK",
+   "SHW",
    "BAYN.DE",
    "HNR1.DE",
-   "CTSH",
+   "TRV",
+   "CRM",
+   "HD",
+   "ROST",
    "BNR.DE",
-   "MUV2.DE",
-   "KHC",
    "BEI.DE",
    "GEHC",
-   "CDW",
-   "MELI",
-   "CCEP",
-   "QIA.DE"
+   "KHC",
+   "ADSK",
+   "MELI"
   ],
   "momentum": [
    "ABNB",
    "MRNA",
    "ILMN",
    "MRK",
+   "TEAM",
    "ALV.DE",
    "DB1.DE",
-   "TEAM",
    "BNR.DE",
    "CBK.DE",
    "SY1.DE",
@@ -33,7 +33,7 @@
    "CSX",
    "SIE.DE",
    "DHL.DE",
-   "MRVL"
+   "PANW"
   ],
   "value": [
    "MU",
@@ -57,21 +57,69 @@
   "turnaround": {
    "entries": [
     {
-     "ticker": "CTSH",
+     "ticker": "SHW",
+     "rank": 3
+    },
+    {
+     "ticker": "TRV",
      "rank": 6
+    },
+    {
+     "ticker": "CRM",
+     "rank": 7
+    },
+    {
+     "ticker": "HD",
+     "rank": 8
+    },
+    {
+     "ticker": "ROST",
+     "rank": 9
     }
    ],
    "exits": [
     {
-     "ticker": "WDAY",
-     "old_rank": 9
+     "ticker": "CTSH",
+     "old_rank": 6
+    },
+    {
+     "ticker": "MUV2.DE",
+     "old_rank": 8
+    },
+    {
+     "ticker": "CDW",
+     "old_rank": 12
+    },
+    {
+     "ticker": "CCEP",
+     "old_rank": 14
+    },
+    {
+     "ticker": "QIA.DE",
+     "old_rank": 15
     }
    ],
-   "moves": []
+   "moves": [
+    {
+     "ticker": "ADSK",
+     "rank": 14,
+     "delta": -11
+    }
+   ]
   },
   "momentum": {
-   "entries": [],
-   "exits": [],
+   "entries": [
+    {
+     "ticker": "PANW",
+     "rank": 15
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "MRVL",
+     "old_rank": 15
+    }
+   ],
    "moves": []
   },
   "value": {

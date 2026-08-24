@@ -1,0 +1,43 @@
+{
+ "erstellt": "2026-08-24T17:12:50.750702+00:00",
+ "test_a": [
+  {
+   "ticker": "AZN",
+   "name": "AstraZeneca PLC",
+   "quelle": "Aggregat",
+   "kandidaten": [],
+   "treffer": null,
+   "versuche": [],
+   "hinweis": "bereits US-notiert"
+  }
+ ],
+ "test_b": [
+  {
+   "ticker": "AZN",
+   "name": "AstraZeneca PLC",
+   "fenster": {
+    "0m": [
+     9,
+     1,
+     0
+    ],
+    "-1m": [
+     8,
+     2,
+     0
+    ],
+    "-2m": [
+     9,
+     1,
+     0
+    ],
+    "-3m": [
+     9,
+     1,
+     0
+    ]
+   },
+   "urteil": "bewegt sich"
+  }
+ ]
+}

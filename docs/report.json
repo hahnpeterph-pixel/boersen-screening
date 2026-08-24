@@ -1,0 +1,196 @@
+{
+ "date": "2026-08-24",
+ "ranks": {
+  "turnaround": [
+   "AXON",
+   "AXP",
+   "ADSK",
+   "BAYN.DE",
+   "HNR1.DE",
+   "CDW",
+   "BNR.DE",
+   "MUV2.DE",
+   "KHC",
+   "WDAY",
+   "BEI.DE",
+   "GEHC",
+   "TTWO",
+   "CCEP",
+   "MELI"
+  ],
+  "momentum": [
+   "ABNB",
+   "ILMN",
+   "MRNA",
+   "MRK",
+   "ALV.DE",
+   "DB1.DE",
+   "TEAM",
+   "BNR.DE",
+   "CBK.DE",
+   "SY1.DE",
+   "BKNG",
+   "CSX",
+   "SIE.DE",
+   "DHL.DE",
+   "MRVL"
+  ],
+  "value": [
+   "MU",
+   "NVDA",
+   "ADSK",
+   "REGN",
+   "MTX.DE",
+   "ABNB",
+   "V",
+   "ENR.DE",
+   "VRTX",
+   "SPGI",
+   "ODFL",
+   "GOOG",
+   "DXCM",
+   "DB1.DE",
+   "GOOGL"
+  ]
+ },
+ "changes": {
+  "turnaround": {
+   "entries": [
+    {
+     "ticker": "BAYN.DE",
+     "rank": 4
+    },
+    {
+     "ticker": "CDW",
+     "rank": 6
+    },
+    {
+     "ticker": "MUV2.DE",
+     "rank": 8
+    },
+    {
+     "ticker": "WDAY",
+     "rank": 10
+    },
+    {
+     "ticker": "TTWO",
+     "rank": 13
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "QIA.DE",
+     "old_rank": 1
+    },
+    {
+     "ticker": "ZS",
+     "old_rank": 5
+    },
+    {
+     "ticker": "ADBE",
+     "old_rank": 6
+    },
+    {
+     "ticker": "SPGI",
+     "old_rank": 7
+    },
+    {
+     "ticker": "PCAR",
+     "old_rank": 13
+    }
+   ],
+   "moves": [
+    {
+     "ticker": "AXON",
+     "rank": 1,
+     "delta": 7
+    },
+    {
+     "ticker": "ADSK",
+     "rank": 3,
+     "delta": 6
+    },
+    {
+     "ticker": "MELI",
+     "rank": 15,
+     "delta": -13
+    }
+   ]
+  },
+  "momentum": {
+   "entries": [
+    {
+     "ticker": "CBK.DE",
+     "rank": 9
+    },
+    {
+     "ticker": "BKNG",
+     "rank": 11
+    },
+    {
+     "ticker": "CSX",
+     "rank": 12
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "FANG",
+     "old_rank": 13
+    },
+    {
+     "ticker": "PAYX",
+     "old_rank": 14
+    },
+    {
+     "ticker": "AXON",
+     "old_rank": 15
+    }
+   ],
+   "moves": [
+    {
+     "ticker": "MRVL",
+     "rank": 15,
+     "delta": -7
+    }
+   ]
+  },
+  "value": {
+   "entries": [
+    {
+     "ticker": "ADSK",
+     "rank": 3
+    },
+    {
+     "ticker": "SPGI",
+     "rank": 10
+    },
+    {
+     "ticker": "GOOG",
+     "rank": 12
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "AVGO",
+     "old_rank": 3
+    },
+    {
+     "ticker": "CVX",
+     "old_rank": 14
+    },
+    {
+     "ticker": "ALV.DE",
+     "old_rank": 15
+    }
+   ],
+   "moves": [
+    {
+     "ticker": "GOOGL",
+     "rank": 15,
+     "delta": -5
+    }
+   ]
+  },
+  "analyst_flips": []
+ }
+}

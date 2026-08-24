@@ -1,6 +1,6 @@
 # Boersen-Screening - 2026-08-24
 
-_Stand: Schlusskurse vom Vortag. Erstellt 2026-08-24T17:42:45+00:00 UTC. 165 Werte ausgewertet._
+_Stand: Schlusskurse vom Vortag. Erstellt 2026-08-24T18:20:42+00:00 UTC. 165 Werte ausgewertet._
 
 ## 📖 Glossar (was die Spalten bedeuten)
 
@@ -17,26 +17,26 @@ _Ueber alle 165 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 
 | Rang | Ticker | ISIN | Name | Index | Kurs | Abstand ATH (Info) | Kaufen-Anteil Analysten | Kursziel | RSI Tag | RSI Woche | RSI Stunde | Letztes Rating |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | NVDA | - | NVIDIA Corporation | NASDAQ/DOW | 209.68 | -11% | 100% (23 Banken, ≤120T) | 304.73 (45% ueber Kurs) | 46 | 53 | 27 | 2026-08-21 BMO Capital: neu bewertet mit Outperform |
-| 2 | BA | - | Boeing Company (The) | DOW | 209.83 | -51% | 100% (6 Banken, ≤120T) | 274.85 (31% ueber Kurs) | 37 | 45 | 21 | 2026-08-11 Argus Research: hochgestuft auf Buy |
+| 1 | NVDA | - | NVIDIA Corporation | NASDAQ/DOW | 209.90 | -11% | 100% (23 Banken, ≤120T) | 304.73 (45% ueber Kurs) | 46 | 54 | 28 | 2026-08-21 BMO Capital: neu bewertet mit Outperform |
+| 2 | BA | - | Boeing Company (The) | DOW | 209.82 | -51% | 100% (6 Banken, ≤120T) | 274.85 (31% ueber Kurs) | 37 | 45 | 21 | 2026-08-11 Argus Research: hochgestuft auf Buy |
 | 3 | DTE.DE | - | DEUTSCHE TELEKOM AG | DAX | 29.07 | -14% | 100% (18 Banken, ≤120T) | 37.10 (28% ueber Kurs) | 59 | 55 | 54 | keine in 30T |
-| 4 | ASML | USN070592100 | ASML Holding N.V. - New York Re | NASDAQ | 1745.51 | -12% | 100% (5 Banken, ≤120T) | 2194.12 (26% ueber Kurs) | 49 | 58 | 40 | keine in 30T |
-| 5 | GOOG | CA02080M1005 | Alphabet Inc. | NASDAQ | 345.70 | -13% | 100% (4 Banken, ≤120T) | 422.34 (22% ueber Kurs) | 49 | 52 | 61 | keine in 30T |
-| 6 | TTWO | - | Take-Two Interactive Software, | NASDAQ | 237.00 | -10% | 100% (10 Banken, ≤120T) | 286.89 (21% ueber Kurs) | 46 | 53 | 40 | 2026-08-10 Roth Capital: Rating bestaetigt: Buy |
-| 7 | ORLY | - | O'Reilly Automotive, Inc. | NASDAQ | 89.69 | -17% | 100% (8 Banken, ≤120T) | 107.80 (20% ueber Kurs) | 48 | 48 | 47 | 2026-08-03 Citigroup: Rating bestaetigt: Buy |
-| 8 | SPGI | US78409V1044 | S&P Global Inc. | Watchlist | 433.63 | -18% | 100% (11 Banken, ≤120T) | 516.95 (19% ueber Kurs) | 59 | 54 | 59 | 2026-07-29 JP Morgan: Rating bestaetigt: Overweight |
-| 9 | DIS | - | Walt Disney Company (The) | DOW | 110.24 | -44% | 100% (11 Banken, ≤120T) | 127.72 (16% ueber Kurs) | 70 | 60 | 70 | 2026-08-06 Wells Fargo: Rating bestaetigt: Overweight |
-| 10 | MU | US5951121038 | Micron Technology, Inc. | NASDAQ | 908.84 | -25% | 96% (23 Banken, ≤120T) | 1515.11 (67% ueber Kurs) | 48 | 58 | 37 | 2026-08-14 New Street Research: hochgestuft auf Buy |
-| 11 | AMAT | US0382221051 | Applied Materials, Inc. | NASDAQ | 483.71 | -33% | 96% (26 Banken, ≤120T) | 641.03 (32% ueber Kurs) | 42 | 53 | 39 | 2026-08-14 UBS: Rating bestaetigt: Buy |
-| 12 | AMZN | - | Amazon.com, Inc. | NASDAQ/DOW | 261.94 | -8% | 96% (27 Banken, ≤120T) | 327.00 (25% ueber Kurs) | 52 | 56 | 52 | 2026-07-31 UBS: Rating bestaetigt: Buy |
-| 13 | MSFT | - | Microsoft Corporation | NASDAQ/DOW | 488.43 | -9% | 96% (24 Banken, ≤120T) | 569.45 (17% ueber Kurs) | 65 | 62 | 60 | 2026-08-12 Wells Fargo: Rating bestaetigt: Overweight |
-| 14 | ADI | US0326541051 | Analog Devices, Inc. | NASDAQ | 368.20 | -17% | 95% (19 Banken, ≤120T) | 463.22 (26% ueber Kurs) | 43 | 50 | 41 | 2026-08-21 BMO Capital: neu bewertet mit Outperform |
-| 15 | LRCX | - | Lam Research Corporation | NASDAQ | 306.16 | -29% | 94% (17 Banken, ≤120T) | 371.35 (21% ueber Kurs) | 46 | 54 | 42 | 2026-07-30 Morgan Stanley: Rating bestaetigt: Overweight |
+| 4 | ASML | USN070592100 | ASML Holding N.V. - New York Re | NASDAQ | 1752.57 | -12% | 100% (5 Banken, ≤120T) | 2194.12 (25% ueber Kurs) | 49 | 58 | 45 | keine in 30T |
+| 5 | GOOG | CA02080M1005 | Alphabet Inc. | NASDAQ | 345.37 | -13% | 100% (4 Banken, ≤120T) | 422.34 (22% ueber Kurs) | 49 | 52 | 60 | keine in 30T |
+| 6 | TTWO | - | Take-Two Interactive Software, | NASDAQ | 234.60 | -11% | 100% (10 Banken, ≤120T) | 286.89 (22% ueber Kurs) | 44 | 51 | 36 | 2026-08-10 Roth Capital: Rating bestaetigt: Buy |
+| 7 | ORLY | - | O'Reilly Automotive, Inc. | NASDAQ | 89.93 | -17% | 100% (8 Banken, ≤120T) | 107.80 (20% ueber Kurs) | 49 | 48 | 49 | 2026-08-03 Citigroup: Rating bestaetigt: Buy |
+| 8 | SPGI | US78409V1044 | S&P Global Inc. | Watchlist | 433.52 | -18% | 100% (11 Banken, ≤120T) | 516.95 (19% ueber Kurs) | 59 | 54 | 59 | 2026-07-29 JP Morgan: Rating bestaetigt: Overweight |
+| 9 | DIS | - | Walt Disney Company (The) | DOW | 110.42 | -44% | 100% (11 Banken, ≤120T) | 127.72 (16% ueber Kurs) | 70 | 60 | 70 | 2026-08-06 Wells Fargo: Rating bestaetigt: Overweight |
+| 10 | MU | US5951121038 | Micron Technology, Inc. | NASDAQ | 916.92 | -24% | 96% (23 Banken, ≤120T) | 1515.11 (65% ueber Kurs) | 49 | 59 | 40 | 2026-08-14 New Street Research: hochgestuft auf Buy |
+| 11 | AMAT | US0382221051 | Applied Materials, Inc. | NASDAQ | 488.01 | -32% | 96% (26 Banken, ≤120T) | 641.03 (31% ueber Kurs) | 42 | 54 | 44 | 2026-08-14 UBS: Rating bestaetigt: Buy |
+| 12 | AMZN | - | Amazon.com, Inc. | NASDAQ/DOW | 262.89 | -7% | 96% (27 Banken, ≤120T) | 327.00 (24% ueber Kurs) | 53 | 56 | 56 | 2026-07-31 UBS: Rating bestaetigt: Buy |
+| 13 | MSFT | - | Microsoft Corporation | NASDAQ/DOW | 488.18 | -9% | 96% (24 Banken, ≤120T) | 569.45 (17% ueber Kurs) | 65 | 62 | 60 | 2026-08-12 Wells Fargo: Rating bestaetigt: Overweight |
+| 14 | ADI | US0326541051 | Analog Devices, Inc. | NASDAQ | 370.19 | -17% | 95% (19 Banken, ≤120T) | 463.22 (25% ueber Kurs) | 44 | 51 | 44 | 2026-08-21 BMO Capital: neu bewertet mit Outperform |
+| 15 | LRCX | - | Lam Research Corporation | NASDAQ | 310.47 | -28% | 94% (17 Banken, ≤120T) | 371.35 (20% ueber Kurs) | 47 | 54 | 48 | 2026-07-30 Morgan Stanley: Rating bestaetigt: Overweight |
 | 16 | FRE.DE | - | Fresenius SE & Co. KGaA | DAX | 46.04 | -31% | 93% (14 Banken, ≤120T) | 55.59 (21% ueber Kurs) | 57 | 60 | 41 | keine in 30T |
-| 17 | CDNS | US1273871087 | Cadence Design Systems, Inc. | NASDAQ | 312.56 | -25% | 90% (10 Banken, ≤120T) | 403.94 (29% ueber Kurs) | 34 | 42 | 38 | 2026-07-28 B of A Securities: Rating bestaetigt: Buy |
-| 18 | AZN | GB0009895292 | AstraZeneca PLC | NASDAQ | 166.32 | -20% | 90% (10 Banken, ≤120T) | 213.99 (29% ueber Kurs) | 52 | 43 | 62 | keine in 30T |
-| 19 | WMT | CA93267J1012 | Walmart Inc. | DOW | 105.43 | -21% | 90% (20 Banken, ≤120T) | 128.43 (22% ueber Kurs) | 36 | 39 | 42 | 2026-08-21 Telsey Advisory Group: Rating bestaetigt: Outperform |
-| 20 | DDOG | US23804L1035 | Datadog, Inc. | NASDAQ | 228.09 | -21% | 89% (28 Banken, ≤120T) | 285.18 (25% ueber Kurs) | 41 | 55 | 36 | 2026-08-08 Scotiabank: Rating bestaetigt: Sector Outperform |
+| 17 | CDNS | US1273871087 | Cadence Design Systems, Inc. | NASDAQ | 313.15 | -25% | 90% (10 Banken, ≤120T) | 403.94 (29% ueber Kurs) | 34 | 42 | 40 | 2026-07-28 B of A Securities: Rating bestaetigt: Buy |
+| 18 | AZN | GB0009895292 | AstraZeneca PLC | NASDAQ | 166.29 | -20% | 90% (10 Banken, ≤120T) | 213.99 (29% ueber Kurs) | 52 | 43 | 62 | keine in 30T |
+| 19 | WMT | CA93267J1012 | Walmart Inc. | DOW | 105.72 | -21% | 90% (20 Banken, ≤120T) | 128.43 (22% ueber Kurs) | 36 | 40 | 43 | 2026-08-21 Telsey Advisory Group: Rating bestaetigt: Outperform |
+| 20 | DDOG | US23804L1035 | Datadog, Inc. | NASDAQ | 228.81 | -21% | 89% (28 Banken, ≤120T) | 285.18 (25% ueber Kurs) | 41 | 55 | 38 | 2026-08-08 Scotiabank: Rating bestaetigt: Sector Outperform |
 
 
 ## 🧭 Analysten-Einstufungen (Filtertreffer, letzte 30 Tage)

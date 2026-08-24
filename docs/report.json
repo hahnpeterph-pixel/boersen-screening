@@ -7,21 +7,21 @@
    "ADSK",
    "BAYN.DE",
    "HNR1.DE",
+   "CTSH",
    "BNR.DE",
    "MUV2.DE",
    "KHC",
-   "WDAY",
-   "GEHC",
    "BEI.DE",
+   "GEHC",
    "CDW",
-   "CCEP",
    "MELI",
+   "CCEP",
    "QIA.DE"
   ],
   "momentum": [
    "ABNB",
-   "ILMN",
    "MRNA",
+   "ILMN",
    "MRK",
    "ALV.DE",
    "DB1.DE",
@@ -57,23 +57,17 @@
   "turnaround": {
    "entries": [
     {
-     "ticker": "QIA.DE",
-     "rank": 15
+     "ticker": "CTSH",
+     "rank": 6
     }
    ],
    "exits": [
     {
-     "ticker": "TTWO",
-     "old_rank": 13
+     "ticker": "WDAY",
+     "old_rank": 9
     }
    ],
-   "moves": [
-    {
-     "ticker": "CDW",
-     "rank": 12,
-     "delta": -6
-    }
-   ]
+   "moves": []
   },
   "momentum": {
    "entries": [],

@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-08-24 16:49 UTC. 171 Werte, Fenster 90 Kalendertage. EUR/USD 1.1667._
+_Erstellt 2026-08-24 17:42 UTC. 171 Werte, Fenster 90 Kalendertage. EUR/USD 1.1662._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -10,33 +10,32 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 
 | Wert | Kurs | Hammer | hoeheres Hoch | Umkehrkerze | RSI |
 |---|---|---|---|---|---|
-| ADI (ADI) | 368.47 | - | - | ja | 42.81 |
-| AMD (AMD) | 459.625 | - | - | ja | 43.0 |
-| AVGO (AVGO) | 361.35 | - | - | ja | 36.24 |
-| BA (BA) | 209.39 | - | - | ja | 36.35 |
-| BIIB (BIIB) | 214.64 | - | - | ja | 56.29 |
-| BKR (BKR) | 61.57 | - | - | ja | 49.36 |
-| CAT (CAT) | 809.51 | - | - | ja | 39.52 |
-| CPRT (CPRT) | 33.245 | - | - | ja | 65.64 |
-| DDOG (DDOG) | 228.19 | - | - | ja | 41.07 |
-| FANG (FANG) | 203.815 | - | - | ja | 54.23 |
-| HON (HON) | 214.22 | - | - | ja | 31.82 |
-| IBM (IBM) | 232.719 | - | - | ja | 47.16 |
-| INTC (INTC) | 87.515 | - | - | ja | 37.43 |
-| MCHP (MCHP) | 73.835 | - | - | ja | 40.51 |
-| MDB (MDB) | 403.32 | - | - | ja | 52.81 |
-| MRVL (MRVL) | 228.6228 | - | - | ja | 52.7 |
-| MU (MU) | 915.6848 | - | - | ja | 48.99 |
-| NVDA (NVDA) | 210.165 | - | - | ja | 46.21 |
-| NXPI (NXPI) | 221.245 | - | - | ja | 33.87 |
-| ODFL (ODFL) | 200.96 | - | ja | ja | 35.19 |
-| ON (ON) | 71.68 | - | - | ja | 32.92 |
-| PDD (PDD) | 87.31 | - | ja | ja | 49.37 |
-| QCOM (QCOM) | 158.335 | - | - | ja | 41.35 |
-| REGN (REGN) | 824.735 | - | - | ja | 71.55 |
-| SHW (SHW) | 345.51 | - | ja | ja | 48.45 |
-| SNPS (SNPS) | 391.205 | - | - | ja | 40.04 |
-| TXN (TXN) | 259.26 | - | - | ja | 36.33 |
+| ADI (ADI) | 368.2 | - | - | ja | 42.68 |
+| AMD (AMD) | 457.9 | - | - | ja | 42.67 |
+| AVGO (AVGO) | 361.0 | - | - | ja | 36.12 |
+| BA (BA) | 209.71 | - | - | ja | 36.58 |
+| BKR (BKR) | 61.9 | - | - | ja | 50.74 |
+| CAT (CAT) | 806.72 | - | - | ja | 39.07 |
+| CPRT (CPRT) | 33.335 | - | - | ja | 66.33 |
+| DDOG (DDOG) | 228.085 | - | - | ja | 41.03 |
+| FANG (FANG) | 204.69 | - | - | ja | 55.21 |
+| HON (HON) | 214.795 | - | - | ja | 32.18 |
+| IBM (IBM) | 232.39 | - | - | ja | 46.9 |
+| INTC (INTC) | 87.07 | - | - | ja | 37.08 |
+| MCHP (MCHP) | 73.67 | - | - | ja | 40.3 |
+| MDB (MDB) | 404.14 | - | - | ja | 53.04 |
+| MRVL (MRVL) | 227.915 | - | - | ja | 52.45 |
+| MU (MU) | 908.7999 | - | - | ja | 48.35 |
+| NVDA (NVDA) | 209.68 | - | - | ja | 45.75 |
+| NXPI (NXPI) | 221.1 | - | - | ja | 33.8 |
+| ODFL (ODFL) | 199.3878 | - | ja | ja | 34.08 |
+| ON (ON) | 71.47 | - | - | ja | 32.72 |
+| PDD (PDD) | 87.51 | - | ja | ja | 49.86 |
+| QCOM (QCOM) | 158.2 | - | - | ja | 41.23 |
+| SHW (SHW) | 345.525 | - | ja | ja | 48.46 |
+| SNPS (SNPS) | 391.29 | - | - | ja | 40.08 |
+| TTWO (TTWO) | 237.04 | - | - | ja | 46.0 |
+| TXN (TXN) | 258.81 | - | - | ja | 36.11 |
 | AIR.DE (AIR.DE) | 202.85 | - | ja | ja | 43.87 |
 | HNR1.DE (HNR1.DE) | 252.2 | ja | - | - | 52.63 |
 | IFX.DE (IFX.DE) | 54.16 | - | - | ja | 33.25 |
@@ -45,9 +44,10 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | ENR.DE (ENR.DE) | 148.74 | - | - | ja | 42.85 |
 | VOW3.DE (VOW3.DE) | 73.82 | - | - | ja | 46.46 |
 | VNA.DE (VNA.DE) | 19.83 | - | - | ja | 35.8 |
-| Brent Oel (BZ=F) | 92.61 | - | - | ja | 57.53 |
-| WTI Oel (CL=F) | 85.32 | - | - | ja | 55.19 |
-| EUR/USD (EURUSD=X) | 1.1667 | - | - | ja | 68.46 |
+| Platin (PL=F) | 1885.8 | - | ja | ja | 67.97 |
+| Brent Oel (BZ=F) | 92.24 | - | - | ja | 56.82 |
+| WTI Oel (CL=F) | 85.0 | - | - | ja | 54.53 |
+| EUR/USD (EURUSD=X) | 1.1662 | - | - | ja | 67.46 |
 
 ---
 

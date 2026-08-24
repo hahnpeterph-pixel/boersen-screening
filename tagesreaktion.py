@@ -41,6 +41,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
+import kurse
 import tiefs_regel as regel
 
 BASE = Path(__file__).resolve().parent
@@ -221,16 +222,21 @@ def lade(tickers: list[str], jahre: int) -> dict[str, pd.DataFrame]:
     daten: dict[str, pd.DataFrame] = {}
     for i in range(0, len(tickers), 40):
         teil = tickers[i:i + 40]
+        # Angefragt wird beim Quellticker, abgelegt unter dem Namen -
+        # sonst rechnet dieses Skript fuer ASML auf einer anderen Boerse
+        # als der Tagesbericht.
+        holen = kurse.quellen(teil)
         try:
-            roh = yf.download(teil, period=f"{jahre}y", interval="1d",
-                              auto_adjust=True, group_by="ticker",
-                              threads=True, progress=False)
+            roh = yf.download(list(holen.values()), period=f"{jahre}y",
+                              interval="1d", auto_adjust=True,
+                              group_by="ticker", threads=True, progress=False)
         except Exception as exc:  # noqa: BLE001
             print(f"  ! Abruf fehlgeschlagen ({teil[0]} ...): {exc}")
             continue
         for t in teil:
             try:
-                d = roh[t] if isinstance(roh.columns, pd.MultiIndex) else roh
+                d = (roh[holen[t]] if isinstance(roh.columns, pd.MultiIndex)
+                     else roh)
                 d = d.dropna(subset=["High", "Low", "Close", "Open"])
                 if len(d) > 200:
                     daten[t] = d

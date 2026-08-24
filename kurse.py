@@ -83,6 +83,25 @@ def waehrung(ticker: str) -> str:
     return KURSQUELLE.get(ticker, {}).get("waehrung", "")
 
 
+def quellen(tickers: list[str]) -> dict[str, str]:
+    """Name auf Quellticker fuer einen ganzen Stapel.
+
+    Fuer historie.py, tagesreaktion.py und phasen.py: die drei holen ihre
+    Kerzen aus Zeitgruenden gebuendelt ueber yf.download statt einzeln
+    ueber kerzen(), brauchen aber dieselbe Zuordnung. Ohne sie rechneten
+    die Halteraten und Puffer-Verteilungen fuer ASML weiter auf der
+    Dollar-Reihe, waehrend der Tagesbericht in Euro rechnet - und ein Tief
+    in Dollar ist keines in Euro, wenn der Wechselkurs dazwischenlaeuft.
+
+    Angefragt wird beim Quellticker, abgelegt unter dem Namen.
+    """
+    zuordnung = {t: quelle(t) for t in tickers}
+    for name, q in zuordnung.items():
+        if q != name:
+            print(f"  {name}: Kurse von {q} ({waehrung(name)})")
+    return zuordnung
+
+
 _MEM: dict[tuple, pd.DataFrame] = {}
 
 

@@ -38,6 +38,51 @@ CACHE_VERSION = 1
 
 MINDESTKERZEN = 30
 
+# ── Abweichende Kursquellen ────────────────────────────────────────
+# Einige Werte notieren an mehreren Boersen, und der Report rechnete
+# bisher auf der falschen. ASML steht im Universum als "ASML" und wurde
+# damit von der New Yorker Registry-Notierung in USD geholt - waehrend der
+# Knock-out-Schein auf die Euro-Notierung lautet und der Chart im
+# Orderbuch (Frage 9: Kurs 1508,00, Wochentief 1489,40) ebenfalls in Euro
+# gelesen wurde. Der ausgewiesene Puffer war deshalb frei erfunden; bei
+# ASML war er sechsmal zu gross.
+#
+# Der Ticker als Name bleibt unveraendert, damit alle Verknuepfungen mit
+# analysten.csv und universe.json halten. Getauscht wird nur, WOHER die
+# Kerzen kommen. Betroffen sind Kurs, ATR und Tiefs, also alles, was
+# marktdaten.py und tiefs.py rechnen - screener.py holt seine Kurse
+# getrennt und vergleicht dort Kurs und Kursziel weiter in derselben
+# Waehrung, bleibt also in sich stimmig.
+#
+# BEWUSST OHNE RUECKFALL auf die andere Notierung: ein stiller Wechsel
+# zurueck in eine fremde Waehrung wuerde genau den Fehler wieder
+# einbauen, den diese Liste behebt. Liefert die Quelle nichts, faellt der
+# Wert mit Meldung aus - sichtbar statt falsch.
+#
+# Der Quellencheck vom 24.08.2026 hat geprueft, welche Werte ueberhaupt
+# betroffen sind: NXPI.AS kennt Yahoo nicht, NXP ist also kein
+# Zweitnotierungsfall. AZN und CCEP haben ihre Ratings ohnehin auf der
+# US-Seite. Bleibt ASML.
+KURSQUELLE: dict[str, dict[str, str]] = {
+    "ASML": {
+        "ticker": "ASML.AS",
+        "waehrung": "EUR",
+        "grund": "Schein und Chart laufen auf der Euro-Notierung, "
+                 "nicht auf der New Yorker Registry-Notierung",
+    },
+}
+
+
+def quelle(ticker: str) -> str:
+    """Von welchem Yahoo-Ticker die Kerzen dieses Wertes kommen."""
+    return KURSQUELLE.get(ticker, {}).get("ticker", ticker)
+
+
+def waehrung(ticker: str) -> str:
+    """Waehrung der Kursreihe, leer wenn keine Ausnahme hinterlegt ist."""
+    return KURSQUELLE.get(ticker, {}).get("waehrung", "")
+
+
 _MEM: dict[tuple, pd.DataFrame] = {}
 
 
@@ -89,7 +134,14 @@ def kerzen(ticker: str, period: str = "400d") -> pd.DataFrame | None:
         wert = _MEM[key]
         return None if wert is None else wert.copy()
 
-    pfad = _pfad(ticker, period)
+    # Ab hier zaehlt die Quelle, nicht der Name. Cache und Abruf laufen
+    # unter dem Quellticker, damit zwei Namen auf dieselbe Reihe nicht
+    # zwei Abrufe ausloesen.
+    holen = quelle(ticker)
+    if holen != ticker:
+        print(f"  {ticker}: Kurse von {holen} ({waehrung(ticker)})")
+
+    pfad = _pfad(holen, period)
     if os.path.exists(pfad):
         try:
             if date.fromtimestamp(os.path.getmtime(pfad)) == date.today():
@@ -98,13 +150,13 @@ def kerzen(ticker: str, period: str = "400d") -> pd.DataFrame | None:
                     _MEM[key] = df
                     return df.copy()
         except Exception as e:
-            print(f"  {ticker}: Cache unlesbar ({e}), hole neu")
+            print(f"  {holen}: Cache unlesbar ({e}), hole neu")
 
     try:
-        roh = yf.Ticker(ticker).history(period=period, interval="1d",
-                                        auto_adjust=False)
+        roh = yf.Ticker(holen).history(period=period, interval="1d",
+                                       auto_adjust=False)
     except Exception as e:
-        print(f"  {ticker}: Abruf fehlgeschlagen ({e})")
+        print(f"  {holen}: Abruf fehlgeschlagen ({e})")
         _MEM[key] = None
         return None
 
@@ -115,5 +167,5 @@ def kerzen(ticker: str, period: str = "400d") -> pd.DataFrame | None:
         try:
             df.to_csv(pfad)
         except OSError as e:
-            print(f"  {ticker}: Cache nicht schreibbar ({e})")
+            print(f"  {holen}: Cache nicht schreibbar ({e})")
     return None if df is None else df.copy()

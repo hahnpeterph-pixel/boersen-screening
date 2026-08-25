@@ -56,6 +56,15 @@ jobs:
       - name: Marktdaten ausfuehren
         run: python marktdaten.py
 
+      # Nach marktdaten.py, weil die Stundenwache dieselben Tageskerzen aus
+      # dem Cache mitbenutzt - laeuft sie zuerst, holt sie alles doppelt.
+      # continue-on-error, weil die Stundenreihe bei Yahoo unzuverlaessiger
+      # ist als die Tagesreihe: ein Ausfall hier darf den Screening-Lauf
+      # nicht mitreissen, die Kernberichte stehen zu diesem Zeitpunkt schon.
+      - name: Stundenwache ausfuehren
+        run: python stundenwache.py
+        continue-on-error: true
+
       - name: Ergebnis speichern
         run: |
           git config user.name "screening-bot"

@@ -1207,6 +1207,10 @@ def build_state(prices, fundamentals, analyst, members, benchmarks) -> dict:
         s_val, w_val, bd_val = score_value(m, f, a)
         rows[t] = {
             "name": clean_name(safe(f, "shortName"), t),
+            # Datum der letzten Kerze dieses Wertes. Ohne diese Angabe
+            # laesst sich nicht erkennen, ob ein Wert zurueckhaengt -
+            # siehe die Standwarnung weiter unten.
+            "stand": str(df.index[-1].date()),
             "isin": safe(f, "isin"),
             "index": "/".join(idxs),
             "sector": safe(f, "sector", "unbekannt"),
@@ -1372,6 +1376,67 @@ def build_rank_lookup(history: list[dict], today_date: str):
         return lst.index(ticker) + 1 if ticker in lst else None
 
     return get_rank
+
+
+def stand_je_wert(today: dict) -> dict[str, str]:
+    """Ticker auf Datum der letzten Kerze, leere Angaben uebersprungen."""
+    return {t: r["stand"] for t, r in today["rows"].items() if r.get("stand")}
+
+
+def stand_satz(today: dict) -> str:
+    """Der Kopfsatz sagt, WELCHER Handelstag im Bericht steht.
+
+    Bis 25.08.2026 stand hier fest "Schlusskurse vom Vortag". Das war
+    falsch, sobald der Lauf am Abend des Handelstages selbst laeuft - und
+    es war auch vorher schon falsch fuer die europaeischen Werte, die
+    ueber Nacht ihre Tageskerze verlieren koennen. Jetzt kommt die Angabe
+    aus den Daten.
+    """
+    staende = stand_je_wert(today)
+    if not staende:
+        return "unbekannt."
+    neuester = max(staende.values())
+    zurueck = sum(1 for d in staende.values() if d < neuester)
+    if not zurueck:
+        return f"Schlusskurse vom {neuester}."
+    return (f"Schlusskurse vom {neuester}, "
+            f"aber {zurueck} Werte haengen zurueck - siehe Standwarnung.")
+
+
+def build_standwarnung(today: dict) -> str:
+    """Listet jeden Wert, dessen letzte Kerze aelter ist als die neueste.
+
+    Anlass war der 25.08.2026: alle 39 DAX-Werte und ASML standen im
+    Morgenbericht auf dem Schlusskurs vom Freitag, waehrend die 120
+    US-Werte den Montag trugen. Sichtbar war das nirgends - der Kopf des
+    Berichts behauptete unveraendert "Schlusskurse vom Vortag". Eine
+    Kaufentscheidung haette auf einem drei Tage alten Kurs beruht.
+
+    Die Warnung nennt jeden betroffenen Wert einzeln mit seinem Datum,
+    ohne Sammelklassen. Sie steht ganz oben, weil sie alles darunter
+    entwertet.
+    """
+    staende = stand_je_wert(today)
+    if not staende:
+        return ""
+    neuester = max(staende.values())
+    alt = sorted(((d, t) for t, d in staende.items() if d < neuester))
+    if not alt:
+        return ""
+    L = [f"> **Standwarnung: {len(alt)} von {len(staende)} Werten haengen "
+         f"zurueck.** Neuester Handelstag im Bericht ist {neuester}.",
+         ">",
+         "> Ursache ist in aller Regel Yahoo: die vorlaeufige Tageskerze "
+         "einer Boerse wird ueber Nacht durch die offizielle Abrechnung "
+         "ersetzt, und solange die fehlt, faellt der Tag weg. Betroffen "
+         "sind meist die europaeischen Notierungen. Fuer diese Werte "
+         "gelten Kurs, ATR, RSI und Tiefs unten NICHT fuer den neuesten "
+         "Handelstag.",
+         ">",
+         "> | Wert | letzte Kerze |", "> |---|---|"]
+    for d, t in alt:
+        L.append(f"> | {t} | {d} |")
+    return "\n".join(L)
 
 
 def build_glossary() -> str:
@@ -1591,9 +1656,13 @@ def build_report(today: dict, prev: dict, changes: dict, get_rank, extras_rows: 
     L = []
     L.append(f"# Boersen-Screening - {today['date']}")
     L.append("")
-    L.append(f"_Stand: Schlusskurse vom Vortag. Erstellt {today['generated']} UTC. "
+    L.append(f"_Stand: {stand_satz(today)} Erstellt {today['generated']} UTC. "
              f"{len(today['rows'])} Werte ausgewertet._")
     L.append("")
+    warnung = build_standwarnung(today)
+    if warnung:
+        L.append(warnung)
+        L.append("")
     L.append(build_glossary())
 
     filter_hits = analyst_filter_hits(today)

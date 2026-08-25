@@ -143,6 +143,15 @@ RSI_KLASSEN = ((-99.0, -20.0, "20+ unter"),) + tuple(
 # sich je Wert und je Tiefsposition filtern.
 EMA_LANG = 200       # Bezugslinie fuer den langfristigen Trend
 NEIGUNG_TAGE = 60    # Rueckblick fuer die Neigung der EMA200, rund ein Quartal
+
+EMA_KURZ = 50         # Bezugslinie fuer den kurzfristigen Trend, wie in Report Spalte T
+# Fuer die EMA50 ist ein 60-Tage-Rueckblick laenger als die Linie selbst
+# "erinnert" - die Neigung wuerde dann eher die EMA200-Neigung nachbilden als
+# eine eigene Aussage treffen. 20 Handelstage (rund ein Monat) sind
+# proportional zur EMA50, wie NEIGUNG_TAGE es zur EMA200 ist. Wert nicht
+# geprueft, nur hergeleitet - vor dem ersten Gebrauch an einem Wert
+# gegenpruefen, ob das Fenster taugt.
+NEIGUNG_TAGE_KURZ = 20
 HOCH_FENSTER = 250   # Handelstage = rund ein Jahr, Bezug fuer die Korrekturtiefe
 
 KETTE_TAGE = 20      # Fenster fuer ein neues bestaetigtes Tief nach einem KO
@@ -228,6 +237,9 @@ def faelle_je_wert(ticker: str, df: pd.DataFrame) -> list[dict]:
     # beruht.
     ema_lang = (df["Close"].ewm(span=EMA_LANG, adjust=False,
                                 min_periods=EMA_LANG).mean().values)
+    # EMA50 dieselbe Logik, kurze Linie - Pendant zu Report Spalte T.
+    ema_kurz = (df["Close"].ewm(span=EMA_KURZ, adjust=False,
+                                min_periods=EMA_KURZ).mean().values)
 
     # Werttypische Anzahl Tiefs je Sequenz - das "y" in "Tief x von y".
     abgeschlossen = [s for s in seqs if not s["laufend"]]
@@ -306,6 +318,17 @@ def faelle_je_wert(ticker: str, df: pd.DataFrame) -> list[dict]:
                 None if not (np.isfinite(e_b) and np.isfinite(e_j))
                 else (float(e_b) - float(e_j)) / atr_i)
 
+            # Dasselbe fuer die EMA50 - eigenes Fenster fuer die Neigung
+            # (NEIGUNG_TAGE_KURZ), siehe Begruendung bei der Konstante.
+            ek_b = ema_kurz[b]
+            ema50_atr = (None if not np.isfinite(ek_b)
+                         else (einstieg_kurs - float(ek_b)) / atr_i)
+            jk = b - NEIGUNG_TAGE_KURZ
+            ek_j = ema_kurz[jk] if jk >= 0 else np.nan
+            ema50_neigung_atr = (
+                None if not (np.isfinite(ek_b) and np.isfinite(ek_j))
+                else (float(ek_b) - float(ek_j)) / atr_i)
+
             # Korrekturtiefe: wie weit das Tief unter dem hoechsten Hoch des
             # zurueckliegenden Jahres liegt. Gemessen bis zum Tief selbst,
             # nicht bis zum Bestaetigungstag - gefragt ist die Tiefe der
@@ -332,6 +355,8 @@ def faelle_je_wert(ticker: str, df: pd.DataFrame) -> list[dict]:
                             else None),
                 "ema200_atr": ema200_atr,
                 "ema200_neigung_atr": ema200_neigung_atr,
+                "ema50_atr": ema50_atr,
+                "ema50_neigung_atr": ema50_neigung_atr,
                 "hoch250_atr": hoch250_atr,
                 "tage_bis_bruch": tage,
                 "tage_bis_ziel": tage_ziel,
@@ -1050,7 +1075,8 @@ def csv_roh(fest: list[dict]) -> None:
         return
     felder = ["ticker", "datum", "position", "serie_laenge", "typisch",
               "tief", "einstieg", "atr", "abstand_atr", "rsi", "rsi_rel",
-              "ema200_atr", "ema200_neigung_atr", "hoch250_atr",
+              "ema200_atr", "ema200_neigung_atr", "ema50_atr",
+              "ema50_neigung_atr", "hoch250_atr",
               "benoetigt_atr", "benoetigt_ganz_atr", "anstieg_atr",
               "anstieg_pivot_atr", "typischer_anstieg_atr", "ziel_atr",
               "resthistorie", "beobachtet"]
@@ -1075,6 +1101,10 @@ def csv_roh(fest: list[dict]) -> None:
                  if x.get("ema200_atr") is not None else ""),
                 (round(x["ema200_neigung_atr"], 3)
                  if x.get("ema200_neigung_atr") is not None else ""),
+                (round(x["ema50_atr"], 3)
+                 if x.get("ema50_atr") is not None else ""),
+                (round(x["ema50_neigung_atr"], 3)
+                 if x.get("ema50_neigung_atr") is not None else ""),
                 (round(x["hoch250_atr"], 3)
                  if x.get("hoch250_atr") is not None else ""),
                 round(x["benoetigt_atr"], 3),

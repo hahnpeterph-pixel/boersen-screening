@@ -39,6 +39,7 @@ from datetime import datetime, timezone
 import pandas as pd
 
 import kurse
+import stand
 import tiefs_regel as regel
 
 HIER = os.path.dirname(os.path.abspath(__file__))
@@ -299,6 +300,42 @@ def stk(x):
     if x >= 1_000_000:
         return de(x / 1_000_000, 1) + " Mio."
     return de(x / 1_000, 0) + " Tsd."
+
+
+def stand_hinweis(werte):
+    """Melden, wenn dieses Skript aelter rechnet als marktdaten.csv.
+
+    Vergleicht je Wert das Datum der letzten Kerze, auf der hier gerechnet
+    wurde, mit dem Stand in docs/marktdaten.csv. Weicht etwas ab, steht es
+    oben im Bericht - dann weiss man, dass tiefs.md und marktdaten.csv
+    gerade nicht denselben Tag meinen.
+    """
+    bekannt = stand.vergleichsstaende(os.path.join(HIER, "docs",
+                                                   "marktdaten.csv"))
+    if not bekannt:
+        return []
+    aelter = []
+    for w in werte:
+        t = w.get("ticker")
+        df = kerzen_laden(t, 400)
+        if df is None or df.empty:
+            continue
+        eigen = str(df.index[-1].date())
+        gespeichert = bekannt.get(t, "")
+        if gespeichert and eigen < gespeichert:
+            aelter.append((t, eigen, gespeichert))
+    if not aelter:
+        return []
+    L = ["", f"> **Aelter als marktdaten.csv: {len(aelter)} Werte.** Yahoo "
+         f"lieferte fuer diesen Lauf eine aeltere letzte Kerze als beim "
+         f"Schreiben von marktdaten.csv. Dort bleibt der bessere Stand "
+         f"erhalten, hier nicht - dieses Skript rechnet jedes Mal neu aus "
+         f"den Kerzen. Die Angaben zu diesen Werten sind also aelter als "
+         f"im Report:", ""]
+    for t, eigen, gespeichert in sorted(aelter):
+        L.append(f"> - {t}: hier {eigen}, marktdaten.csv {gespeichert}")
+    L.append("")
+    return L
 
 
 def main():
@@ -636,6 +673,16 @@ def main():
                 f"{de(ab, 1) + ' %' if ab is not None else '-'} |")
 
     zeilen = kopf
+
+    # Konsistenzhinweis gegen marktdaten.csv. Dieses Skript rechnet bei
+    # jedem Lauf komplett aus den Kerzen neu und legt kein Zwischenergebnis
+    # je Wert ab - es kann einen bei Yahoo verlorenen Handelstag also nicht
+    # zurueckholen, so wie marktdaten.py es seit dem 26.08.2026 kann. Was
+    # es kann: merken, dass es aelter rechnet, und das sichtbar machen,
+    # statt still von marktdaten.csv abzuweichen. Genau diese stille
+    # Abweichung gab es schon einmal (siehe swing_tiefs weiter oben).
+    zeilen += stand_hinweis(werte)
+
     zeilen += ["", f"_Legende: `+` erfuellt (ab {de(soll,1)} x ATR), `!` knapp, "
                    f"`!!` zu knapp (unter {de(knapp,1)} x ATR), `X` Regelbruch._"]
     zeilen += ueberhitzung

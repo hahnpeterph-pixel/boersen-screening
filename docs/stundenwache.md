@@ -1,6 +1,6 @@
 # Stundenwache
 
-Stand: 2026-08-25 · 158 Werte mit Stundendaten · erstellt 2026-08-25 20:25 UTC
+Stand: 2026-08-25 · 158 Werte mit Stundendaten · erstellt 2026-08-25 20:31 UTC
 
 Marken sind das juengste Swing-Tief und das juengste Swing-Hoch aus `tiefs_regel.py`, also dieselben wie im Tagesbericht. Geprueft wird nur, was der letzte Handelstag auf Stundenbasis damit gemacht hat.
 
@@ -19,7 +19,7 @@ Keine.
 
 Keine.
 
-## Tief angetestet (10)
+## Tief angetestet (11)
 
 Docht bis unter die Marke, kein Stundenschluss darunter.
 
@@ -28,6 +28,7 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | MDLZ | 62.91 | 62.98 | 0.056 | 0 |
 | ODFL | 197.86 | 198.34 | 0.077 | 0 |
 | CRM | 204.78 | 205.71 | 0.121 | 0 |
+| PG | 144.96 | 145.42 | 0.204 | 0 |
 | CTAS | 203.61 | 204.67 | 0.274 | 0 |
 | LULU | 117.12 | 118.35 | 0.282 | 0 |
 | DTE.DE | 28.9 | 29.11 | 0.342 | 0 |

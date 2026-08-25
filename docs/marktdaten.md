@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-08-25 20:24 UTC. 171 Werte, Fenster 90 Kalendertage. EUR/USD 1.168._
+_Erstellt 2026-08-25 20:31 UTC. 171 Werte, Fenster 90 Kalendertage. EUR/USD 1.1681._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -42,10 +42,10 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | HEN3.DE (HEN3.DE) | 75.74 | - | - | ja | 49.63 |
 | SAP.DE (SAP.DE) | 185.46 | - | - | ja | 70.47 |
 | SHL.DE (SHL.DE) | 39.7 | - | - | ja | 61.89 |
-| Platin (PL=F) | 1873.2 | - | ja | ja | 65.99 |
-| Palladium (PA=F) | 1340.5 | - | ja | ja | 53.2 |
-| Brent Oel (BZ=F) | 85.28 | - | - | ja | 45.44 |
-| WTI Oel (CL=F) | 80.5 | - | - | ja | 46.16 |
+| Platin (PL=F) | 1871.7 | - | ja | ja | 65.75 |
+| Palladium (PA=F) | 1341.5 | - | ja | ja | 53.37 |
+| Brent Oel (BZ=F) | 85.07 | - | - | ja | 45.16 |
+| WTI Oel (CL=F) | 80.32 | - | - | ja | 45.88 |
 
 ---
 

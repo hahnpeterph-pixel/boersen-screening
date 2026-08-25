@@ -55,48 +55,18 @@
  },
  "changes": {
   "turnaround": {
-   "entries": [
-    {
-     "ticker": "ZAL.DE",
-     "rank": 14
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "PCAR",
-     "old_rank": 15
-    }
-   ],
+   "entries": [],
+   "exits": [],
    "moves": []
   },
   "momentum": {
-   "entries": [
-    {
-     "ticker": "JPM",
-     "rank": 10
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "CBK.DE",
-     "old_rank": 10
-    }
-   ],
+   "entries": [],
+   "exits": [],
    "moves": []
   },
   "value": {
-   "entries": [
-    {
-     "ticker": "CVX",
-     "rank": 15
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "DB1.DE",
-     "old_rank": 15
-    }
-   ],
+   "entries": [],
+   "exits": [],
    "moves": []
   },
   "analyst_flips": []

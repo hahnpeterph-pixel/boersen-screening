@@ -1,6 +1,6 @@
 {
  "date": "2026-08-25",
- "generated": "2026-08-25T20:24:07+00:00",
+ "generated": "2026-08-25T20:30:50+00:00",
  "ranks": {
   "turnaround": [
    "QIA.DE",
@@ -200,7 +200,7 @@
     "above_sma200": true,
     "pct_above_sma50": -0.24897141335066264,
     "pct_above_sma100": 4.029995046851975,
-    "pct_above_sma200": 10.112753521106455,
+    "pct_above_sma200": 10.112753371856641,
     "sma50_slope": 1.01,
     "sma200_slope": 1.88,
     "higher_low": true,
@@ -1078,7 +1078,7 @@
     "above_sma200": true,
     "pct_above_sma50": -3.4238694017223237,
     "pct_above_sma100": -4.1133882301458975,
-    "pct_above_sma200": 9.228783558855834,
+    "pct_above_sma200": 9.228783388331752,
     "sma50_slope": -3.42,
     "sma200_slope": 4.3,
     "higher_low": false,
@@ -1380,7 +1380,7 @@
     "above_sma200": true,
     "pct_above_sma50": 12.321347172453457,
     "pct_above_sma100": 22.23202829237394,
-    "pct_above_sma200": 21.102061320218812,
+    "pct_above_sma200": 21.102061478490942,
     "sma50_slope": 8.55,
     "sma200_slope": 0.13,
     "higher_low": true,
@@ -1978,8 +1978,8 @@
     "above_sma100": false,
     "above_sma200": false,
     "pct_above_sma50": -5.422572833173877,
-    "pct_above_sma100": -5.475166176540991,
-    "pct_above_sma200": -1.8406408574454858,
+    "pct_above_sma100": -5.47516684284266,
+    "pct_above_sma200": -1.8406410370769954,
     "sma50_slope": -0.59,
     "sma200_slope": 0.85,
     "higher_low": false,
@@ -2276,8 +2276,8 @@
     "above_sma100": false,
     "above_sma200": true,
     "pct_above_sma50": -13.823636295474007,
-    "pct_above_sma100": -2.3773456865238685,
-    "pct_above_sma200": 20.872718530800547,
+    "pct_above_sma100": -2.3773457471100934,
+    "pct_above_sma200": 20.872718507580167,
     "sma50_slope": 3.31,
     "sma200_slope": 7.75,
     "higher_low": true,
@@ -2884,7 +2884,7 @@
     "above_sma200": true,
     "pct_above_sma50": 16.248536015545767,
     "pct_above_sma100": 23.31847030953962,
-    "pct_above_sma200": 26.501718179436406,
+    "pct_above_sma200": 26.50171823465113,
     "sma50_slope": 8.66,
     "sma200_slope": 3.67,
     "higher_low": true,
@@ -4092,8 +4092,8 @@
     "above_sma100": true,
     "above_sma200": true,
     "pct_above_sma50": -1.715760815215106,
-    "pct_above_sma100": 5.428377382474037,
-    "pct_above_sma200": 20.300340814132767,
+    "pct_above_sma100": 5.42837746026672,
+    "pct_above_sma200": 20.300340991386555,
     "sma50_slope": 1.93,
     "sma200_slope": 5.21,
     "higher_low": true,
@@ -4360,7 +4360,7 @@
     "above_sma200": false,
     "pct_above_sma50": -7.9167340552467325,
     "pct_above_sma100": -10.052196661210267,
-    "pct_above_sma200": -3.149114617583837,
+    "pct_above_sma200": -3.1491149786759154,
     "sma50_slope": -2.46,
     "sma200_slope": 1.12,
     "higher_low": false,
@@ -5505,7 +5505,7 @@
     "above_sma200": true,
     "pct_above_sma50": 12.499091554253571,
     "pct_above_sma100": 19.025725695187678,
-    "pct_above_sma200": 15.384304376635916,
+    "pct_above_sma200": 15.38430409155529,
     "sma50_slope": 10.27,
     "sma200_slope": 0.19,
     "higher_low": true,
@@ -6111,7 +6111,7 @@
     "above_sma200": true,
     "pct_above_sma50": 4.305929807582376,
     "pct_above_sma100": 10.250628863313205,
-    "pct_above_sma200": 14.01372590894676,
+    "pct_above_sma200": 14.013725863805426,
     "sma50_slope": 5.79,
     "sma200_slope": 2.21,
     "higher_low": true,
@@ -6981,7 +6981,7 @@
     "above_sma200": false,
     "pct_above_sma50": 5.546812749083485,
     "pct_above_sma100": 1.5789259315626136,
-    "pct_above_sma200": -6.573484618542347,
+    "pct_above_sma200": -6.573485216499309,
     "sma50_slope": 0.33,
     "sma200_slope": -3.44,
     "higher_low": true,
@@ -7588,7 +7588,7 @@
     "above_sma200": true,
     "pct_above_sma50": 12.12892403981729,
     "pct_above_sma100": 8.07150453708292,
-    "pct_above_sma200": 2.841265642275159,
+    "pct_above_sma200": 2.8412657911514705,
     "sma50_slope": 2.32,
     "sma200_slope": -0.23,
     "higher_low": false,
@@ -7852,7 +7852,7 @@
     "above_sma100": false,
     "above_sma200": true,
     "pct_above_sma50": 1.3865083647283782,
-    "pct_above_sma100": -1.520566877596241,
+    "pct_above_sma100": -1.5205666309608623,
     "pct_above_sma200": 0.31056238005118253,
     "sma50_slope": -1.9,
     "sma200_slope": 0.27,
@@ -8695,7 +8695,7 @@
     "above_sma200": true,
     "pct_above_sma50": -3.9585725546949724,
     "pct_above_sma100": 2.268493741342281,
-    "pct_above_sma200": 19.78749091546281,
+    "pct_above_sma200": 19.78749116178293,
     "sma50_slope": -1.61,
     "sma200_slope": 5.2,
     "higher_low": true,
@@ -9303,7 +9303,7 @@
     "above_sma200": true,
     "pct_above_sma50": 3.9551774895565828,
     "pct_above_sma100": 9.230853630116421,
-    "pct_above_sma200": 21.445033647660573,
+    "pct_above_sma200": 21.445033593047302,
     "sma50_slope": 3.57,
     "sma200_slope": 3.68,
     "higher_low": true,
@@ -9569,8 +9569,8 @@
     "above_sma100": true,
     "above_sma200": true,
     "pct_above_sma50": 6.676656282407123,
-    "pct_above_sma100": 12.337353693722598,
-    "pct_above_sma200": 10.537033455148514,
+    "pct_above_sma100": 12.337353599680267,
+    "pct_above_sma200": 10.537033955935748,
     "sma50_slope": 6.51,
     "sma200_slope": 0.93,
     "higher_low": true,
@@ -9835,7 +9835,7 @@
     "above_sma200": true,
     "pct_above_sma50": 28.16315867812358,
     "pct_above_sma100": 22.194939665605396,
-    "pct_above_sma200": 1.1727487534546999,
+    "pct_above_sma200": 1.1727483819327533,
     "sma50_slope": 4.74,
     "sma200_slope": -1.5,
     "higher_low": true,
@@ -11324,7 +11324,7 @@
     "above_sma200": true,
     "pct_above_sma50": 4.144419031740076,
     "pct_above_sma100": 3.438140796021205,
-    "pct_above_sma200": 13.10241430651553,
+    "pct_above_sma200": 13.102413964740123,
     "sma50_slope": 0.47,
     "sma200_slope": 3.6,
     "higher_low": true,
@@ -11591,8 +11591,8 @@
     "above_sma100": true,
     "above_sma200": true,
     "pct_above_sma50": 4.917645535344772,
-    "pct_above_sma100": 8.469049575890718,
-    "pct_above_sma200": 12.810590465481386,
+    "pct_above_sma100": 8.469049219047541,
+    "pct_above_sma200": 12.810590224243512,
     "sma50_slope": 4.95,
     "sma200_slope": 2.0,
     "higher_low": true,
@@ -12161,7 +12161,7 @@
     "above_sma200": true,
     "pct_above_sma50": 10.305760203677817,
     "pct_above_sma100": 11.11298761609385,
-    "pct_above_sma200": 1.5708773929011377,
+    "pct_above_sma200": 1.570877286407124,
     "sma50_slope": 5.53,
     "sma200_slope": -0.38,
     "higher_low": true,
@@ -12741,7 +12741,7 @@
     "above_sma200": true,
     "pct_above_sma50": 12.03994767808445,
     "pct_above_sma100": 12.32824348174466,
-    "pct_above_sma200": 12.50610520615625,
+    "pct_above_sma200": 12.506105433349246,
     "sma50_slope": 2.69,
     "sma200_slope": 1.52,
     "higher_low": true,
@@ -13042,7 +13042,7 @@
     "above_sma200": true,
     "pct_above_sma50": -1.7966300708641247,
     "pct_above_sma100": -3.1357640357623784,
-    "pct_above_sma200": 3.2798681577239863,
+    "pct_above_sma200": 3.2798686317771386,
     "sma50_slope": -2.76,
     "sma200_slope": 2.7,
     "higher_low": false,
@@ -13569,8 +13569,8 @@
     "above_sma100": false,
     "above_sma200": false,
     "pct_above_sma50": -7.220903266095946,
-    "pct_above_sma100": -6.988933876841075,
-    "pct_above_sma200": -5.239473757661406,
+    "pct_above_sma100": -6.988934121656887,
+    "pct_above_sma200": -5.239473948245388,
     "sma50_slope": 0.13,
     "sma200_slope": 1.37,
     "higher_low": false,
@@ -14458,7 +14458,7 @@
     "above_sma200": false,
     "pct_above_sma50": 18.198923356332152,
     "pct_above_sma100": 7.412007560303913,
-    "pct_above_sma200": -18.14619636455792,
+    "pct_above_sma200": -18.14619673636162,
     "sma50_slope": 2.29,
     "sma200_slope": -6.77,
     "higher_low": true,
@@ -15044,7 +15044,7 @@
     "above_sma200": true,
     "pct_above_sma50": 2.330446259029517,
     "pct_above_sma100": 7.0164614604453,
-    "pct_above_sma200": 11.360038054827903,
+    "pct_above_sma200": 11.360037980540415,
     "sma50_slope": 1.32,
     "sma200_slope": 1.53,
     "higher_low": true,
@@ -15639,8 +15639,8 @@
     "above_sma100": false,
     "above_sma200": true,
     "pct_above_sma50": -15.604615358079975,
-    "pct_above_sma100": -9.087083045087784,
-    "pct_above_sma200": 8.63712564861756,
+    "pct_above_sma100": -9.087082632358513,
+    "pct_above_sma200": 8.63712599240296,
     "sma50_slope": -1.67,
     "sma200_slope": 4.84,
     "higher_low": false,
@@ -15941,7 +15941,7 @@
     "above_sma200": true,
     "pct_above_sma50": -3.797241831140219,
     "pct_above_sma100": -3.4820620967106364,
-    "pct_above_sma200": 2.3240211517915332,
+    "pct_above_sma200": 2.3240213157515788,
     "sma50_slope": -1.58,
     "sma200_slope": 1.05,
     "higher_low": false,
@@ -16807,7 +16807,7 @@
     "above_sma100": false,
     "above_sma200": true,
     "pct_above_sma50": -2.986503197507806,
-    "pct_above_sma100": -2.412285144053672,
+    "pct_above_sma100": -2.4122857939235964,
     "pct_above_sma200": 4.8675146904007205,
     "sma50_slope": -2.16,
     "sma200_slope": 2.82,
@@ -17108,8 +17108,8 @@
     "above_sma100": false,
     "above_sma200": false,
     "pct_above_sma50": -11.533298759743715,
-    "pct_above_sma100": -13.89131453303223,
-    "pct_above_sma200": -3.0149408646442333,
+    "pct_above_sma100": -13.891314379101038,
+    "pct_above_sma200": -3.014941133144733,
     "sma50_slope": -7.13,
     "sma200_slope": 1.99,
     "higher_low": false,
@@ -18601,8 +18601,8 @@
     "above_sma100": true,
     "above_sma200": true,
     "pct_above_sma50": 3.6070351652521815,
-    "pct_above_sma100": 15.857472728552914,
-    "pct_above_sma200": 64.13473961670458,
+    "pct_above_sma100": 15.857472813758843,
+    "pct_above_sma200": 64.1347396594572,
     "sma50_slope": -2.99,
     "sma200_slope": 9.58,
     "higher_low": true,
@@ -18907,8 +18907,8 @@
     "above_sma100": true,
     "above_sma200": true,
     "pct_above_sma50": 16.221485183460118,
-    "pct_above_sma100": 17.986151737426283,
-    "pct_above_sma200": 14.547758642735143,
+    "pct_above_sma100": 17.986151478232614,
+    "pct_above_sma200": 14.547758724170734,
     "sma50_slope": 6.38,
     "sma200_slope": -0.77,
     "higher_low": true,
@@ -19508,7 +19508,7 @@
     "above_sma200": true,
     "pct_above_sma50": -3.00414078782415,
     "pct_above_sma100": 13.817885514985084,
-    "pct_above_sma200": 61.444409378988915,
+    "pct_above_sma200": 61.44440950687395,
     "sma50_slope": 0.39,
     "sma200_slope": 13.63,
     "higher_low": true,
@@ -20057,7 +20057,7 @@
     "above_sma200": true,
     "pct_above_sma50": 2.5233120058892,
     "pct_above_sma100": 2.795847806788032,
-    "pct_above_sma200": 9.10986792290085,
+    "pct_above_sma200": 9.109868050797122,
     "sma50_slope": 0.02,
     "sma200_slope": 1.27,
     "higher_low": false,
@@ -20662,7 +20662,7 @@
     "above_sma200": true,
     "pct_above_sma50": -9.610855268419494,
     "pct_above_sma100": -8.63285506315985,
-    "pct_above_sma200": 2.233845338325624,
+    "pct_above_sma200": 2.233845217713659,
     "sma50_slope": -2.72,
     "sma200_slope": 3.93,
     "higher_low": true,
@@ -21848,7 +21848,7 @@
     "above_sma200": true,
     "pct_above_sma50": 12.221484114509341,
     "pct_above_sma100": 22.750920657811015,
-    "pct_above_sma200": 23.240440059261115,
+    "pct_above_sma200": 23.240439873843364,
     "sma50_slope": 9.64,
     "sma200_slope": 0.29,
     "higher_low": true,
@@ -22128,7 +22128,7 @@
     "above_sma200": true,
     "pct_above_sma50": 2.0477102600343633,
     "pct_above_sma100": 6.001587182057233,
-    "pct_above_sma200": 9.593930732421253,
+    "pct_above_sma200": 9.593930626049918,
     "sma50_slope": 6.08,
     "sma200_slope": 3.16,
     "higher_low": true,
@@ -22693,7 +22693,7 @@
     "above_sma200": false,
     "pct_above_sma50": 1.598644835189611,
     "pct_above_sma100": -1.8270928987038193,
-    "pct_above_sma200": -3.306016190298122,
+    "pct_above_sma200": -3.306016140159118,
     "sma50_slope": -1.1,
     "sma200_slope": -0.32,
     "higher_low": false,
@@ -23261,7 +23261,7 @@
     "above_sma200": true,
     "pct_above_sma50": 17.8307194617052,
     "pct_above_sma100": 26.06222867956336,
-    "pct_above_sma200": 21.616682725332502,
+    "pct_above_sma200": 21.61668236289971,
     "sma50_slope": 14.4,
     "sma200_slope": -1.7,
     "higher_low": true,
@@ -23563,7 +23563,7 @@
     "above_sma200": false,
     "pct_above_sma50": -9.091116282033651,
     "pct_above_sma100": -10.819590046330873,
-    "pct_above_sma200": -3.9307904795605753,
+    "pct_above_sma200": -3.9307903041397307,
     "sma50_slope": -12.22,
     "sma200_slope": -0.5,
     "higher_low": true,
@@ -23863,7 +23863,7 @@
     "above_sma200": true,
     "pct_above_sma50": 18.347410933424623,
     "pct_above_sma100": 19.49755226027039,
-    "pct_above_sma200": 15.056499214846353,
+    "pct_above_sma200": 15.056499020983093,
     "sma50_slope": 10.38,
     "sma200_slope": 2.76,
     "higher_low": true,
@@ -24757,7 +24757,7 @@
     "above_sma200": true,
     "pct_above_sma50": 1.5818530676513731,
     "pct_above_sma100": 3.7842608178121573,
-    "pct_above_sma200": 10.515869732050898,
+    "pct_above_sma200": 10.51586986421369,
     "sma50_slope": 2.22,
     "sma200_slope": 2.63,
     "higher_low": true,
@@ -25642,7 +25642,7 @@
     "above_sma200": false,
     "pct_above_sma50": 0.05057373699846046,
     "pct_above_sma100": -2.2707652315172577,
-    "pct_above_sma200": -6.641758267331133,
+    "pct_above_sma200": -6.641758413789988,
     "sma50_slope": -1.47,
     "sma200_slope": -1.9,
     "higher_low": true,
@@ -26796,7 +26796,7 @@
     "above_sma200": true,
     "pct_above_sma50": -9.58067433135451,
     "pct_above_sma100": -6.8726691157563025,
-    "pct_above_sma200": 11.399977792737893,
+    "pct_above_sma200": 11.399977974780672,
     "sma50_slope": -3.56,
     "sma200_slope": 4.85,
     "higher_low": true,
@@ -28232,7 +28232,7 @@
     "above_sma200": false,
     "pct_above_sma50": -2.6028077147475015,
     "pct_above_sma100": -2.561488692363234,
-    "pct_above_sma200": -1.0602491006027281,
+    "pct_above_sma200": -1.0602495359974484,
     "sma50_slope": -0.09,
     "sma200_slope": -0.13,
     "higher_low": true,
@@ -28816,7 +28816,7 @@
     "above_sma200": false,
     "pct_above_sma50": -1.9559953534643904,
     "pct_above_sma100": 2.100728368724214,
-    "pct_above_sma200": -0.3084139307516165,
+    "pct_above_sma200": -0.3084140210317887,
     "sma50_slope": 3.34,
     "sma200_slope": -0.15,
     "higher_low": true,
@@ -29417,7 +29417,7 @@
     "above_sma200": true,
     "pct_above_sma50": -9.95748648432382,
     "pct_above_sma100": -7.509092294234909,
-    "pct_above_sma200": 6.5531529583724435,
+    "pct_above_sma200": 6.553153257326616,
     "sma50_slope": -2.35,
     "sma200_slope": 4.16,
     "higher_low": false,
@@ -29682,7 +29682,7 @@
     "above_sma200": true,
     "pct_above_sma50": 16.708050214661753,
     "pct_above_sma100": 15.610887514528438,
-    "pct_above_sma200": 3.0413812841135313,
+    "pct_above_sma200": 3.0413813628779707,
     "sma50_slope": 3.4,
     "sma200_slope": -2.65,
     "higher_low": true,
@@ -29984,7 +29984,7 @@
     "above_sma200": true,
     "pct_above_sma50": 8.1465473041892,
     "pct_above_sma100": 7.837370179079817,
-    "pct_above_sma200": 13.610327409261401,
+    "pct_above_sma200": 13.610327261467713,
     "sma50_slope": 2.02,
     "sma200_slope": 2.8,
     "higher_low": true,
@@ -29999,8 +29999,8 @@
      "m12": 31.3
     },
     "rs6": 0.8,
-    "vol_pressure_5d": 0.82,
-    "vol_breakout": 0.91
+    "vol_pressure_5d": 0.81,
+    "vol_breakout": 0.94
    },
    "flags": [],
    "earnings_in": null,
@@ -30083,8 +30083,8 @@
     }
    },
    "scores": {
-    "turnaround": 64.0,
-    "momentum": 59.6,
+    "turnaround": 63.7,
+    "momentum": 59.3,
     "value": 78.0
    },
    "why": {
@@ -30140,7 +30140,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.91x Ø20T)"
+      "detail": "unterdurchschnittlich (0.94x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -30150,9 +30150,9 @@
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
-      "points": 9.0,
+      "points": 8.7,
       "max": 20,
-      "detail": "mehr Verkaeufer als Kaeufer (0.82x)"
+      "detail": "mehr Verkaeufer als Kaeufer (0.81x)"
      }
     ],
     "momentum": [
@@ -30196,13 +30196,13 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.91x Ø20T)"
+      "detail": "unterdurchschnittlich (0.94x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
-      "points": 8.1,
+      "points": 7.8,
       "max": 18,
-      "detail": "mehr Verkaeufer als Kaeufer (0.82x)"
+      "detail": "mehr Verkaeufer als Kaeufer (0.81x)"
      }
     ],
     "value": [
@@ -30302,7 +30302,7 @@
     },
     "rs6": -3.2,
     "vol_pressure_5d": null,
-    "vol_breakout": 0.6
+    "vol_breakout": 0.63
    },
    "flags": [],
    "earnings_in": null,
@@ -30438,7 +30438,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.60x Ø20T)"
+      "detail": "unterdurchschnittlich (0.63x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -30494,7 +30494,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.60x Ø20T)"
+      "detail": "unterdurchschnittlich (0.63x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
@@ -30584,7 +30584,7 @@
     "above_sma200": true,
     "pct_above_sma50": 0.5282748911604518,
     "pct_above_sma100": 5.537998313377868,
-    "pct_above_sma200": 13.361571641940028,
+    "pct_above_sma200": 13.3615716049031,
     "sma50_slope": 0.84,
     "sma200_slope": 2.98,
     "higher_low": true,
@@ -30855,7 +30855,7 @@
     "above_sma200": false,
     "pct_above_sma50": -0.7680555504692155,
     "pct_above_sma100": 2.2576727656329787,
-    "pct_above_sma200": -1.360244314941117,
+    "pct_above_sma200": -1.3602441831206735,
     "sma50_slope": 3.72,
     "sma200_slope": -0.97,
     "higher_low": true,
@@ -31155,8 +31155,8 @@
     "above_sma100": false,
     "above_sma200": false,
     "pct_above_sma50": -4.166648257040128,
-    "pct_above_sma100": -4.584086521636177,
-    "pct_above_sma200": -10.512329585398438,
+    "pct_above_sma100": -4.584086580955105,
+    "pct_above_sma200": -10.51232937669091,
     "sma50_slope": -5.44,
     "sma200_slope": -2.01,
     "higher_low": false,
@@ -31420,7 +31420,7 @@
     "above_sma200": true,
     "pct_above_sma50": 6.625512045669124,
     "pct_above_sma100": 12.359090516783855,
-    "pct_above_sma200": 18.080726427163075,
+    "pct_above_sma200": 18.08072627137909,
     "sma50_slope": 5.33,
     "sma200_slope": 3.4,
     "higher_low": true,
@@ -31701,7 +31701,7 @@
     "above_sma200": true,
     "pct_above_sma50": 3.348469699071144,
     "pct_above_sma100": 9.697256311411785,
-    "pct_above_sma200": 13.473584581187236,
+    "pct_above_sma200": 13.473584415937845,
     "sma50_slope": 6.62,
     "sma200_slope": 1.87,
     "higher_low": true,
@@ -32282,7 +32282,7 @@
     "above_sma200": false,
     "pct_above_sma50": -1.4143220430310355,
     "pct_above_sma100": -4.126683851929258,
-    "pct_above_sma200": -9.225858680000465,
+    "pct_above_sma200": -9.2258586331032,
     "sma50_slope": -1.13,
     "sma200_slope": -0.91,
     "higher_low": false,
@@ -32580,7 +32580,7 @@
     "above_sma200": true,
     "pct_above_sma50": 5.976159945569437,
     "pct_above_sma100": 13.030624271951163,
-    "pct_above_sma200": 12.688794829244209,
+    "pct_above_sma200": 12.688794883257648,
     "sma50_slope": 6.91,
     "sma200_slope": 1.4,
     "higher_low": true,
@@ -32595,8 +32595,8 @@
      "m12": 15.6
     },
     "rs6": -0.2,
-    "vol_pressure_5d": 1.09,
-    "vol_breakout": 0.72
+    "vol_pressure_5d": 1.12,
+    "vol_breakout": 0.79
    },
    "flags": [],
    "earnings_in": null,
@@ -32643,8 +32643,8 @@
     }
    },
    "scores": {
-    "turnaround": 73.3,
-    "momentum": 63.5,
+    "turnaround": 74.1,
+    "momentum": 64.2,
     "value": 60.3
    },
    "why": {
@@ -32699,7 +32699,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.72x Ø20T)"
+      "detail": "unterdurchschnittlich (0.79x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -32709,9 +32709,9 @@
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
-      "points": 17.2,
+      "points": 18.0,
       "max": 20,
-      "detail": "ausgeglichen (1.09x)"
+      "detail": "ausgeglichen (1.12x)"
      }
     ],
     "momentum": [
@@ -32755,13 +32755,13 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.72x Ø20T)"
+      "detail": "unterdurchschnittlich (0.79x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
-      "points": 15.5,
+      "points": 16.2,
       "max": 18,
-      "detail": "ausgeglichen (1.09x)"
+      "detail": "ausgeglichen (1.12x)"
      }
     ],
     "value": [
@@ -32845,7 +32845,7 @@
     "above_sma200": true,
     "pct_above_sma50": 20.958948144696855,
     "pct_above_sma100": 27.874267340507263,
-    "pct_above_sma200": 36.109369495354706,
+    "pct_above_sma200": 36.109369450183614,
     "sma50_slope": 6.47,
     "sma200_slope": 4.79,
     "higher_low": true,
@@ -32860,8 +32860,8 @@
      "m12": 85.1
     },
     "rs6": 19.1,
-    "vol_pressure_5d": 1.97,
-    "vol_breakout": 1.17
+    "vol_pressure_5d": 2.0,
+    "vol_breakout": 1.25
    },
    "flags": [],
    "earnings_in": null,
@@ -32944,8 +32944,8 @@
     }
    },
    "scores": {
-    "turnaround": 70.7,
-    "momentum": 91.4,
+    "turnaround": 71.2,
+    "momentum": 91.8,
     "value": 57.6
    },
    "why": {
@@ -33001,9 +33001,9 @@
      },
      {
       "label": "Volumen-Ausbruch",
-      "points": 1.1,
+      "points": 1.6,
       "max": 5,
-      "detail": "leicht erhoeht (1.17x Ø20T)"
+      "detail": "leicht erhoeht (1.25x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -33015,7 +33015,7 @@
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 20.0,
       "max": 20,
-      "detail": "mehr Kaeufer als Verkaeufer (1.97x)"
+      "detail": "mehr Kaeufer als Verkaeufer (2.00x)"
      }
     ],
     "momentum": [
@@ -33057,15 +33057,15 @@
      },
      {
       "label": "Volumen-Ausbruch",
-      "points": 0.9,
+      "points": 1.3,
       "max": 4,
-      "detail": "leicht erhoeht (1.17x Ø20T)"
+      "detail": "leicht erhoeht (1.25x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 18.0,
       "max": 18,
-      "detail": "mehr Kaeufer als Verkaeufer (1.97x)"
+      "detail": "mehr Kaeufer als Verkaeufer (2.00x)"
      }
     ],
     "value": [
@@ -33422,8 +33422,8 @@
     "above_sma100": true,
     "above_sma200": false,
     "pct_above_sma50": -1.019582025142951,
-    "pct_above_sma100": 0.2188770614229174,
-    "pct_above_sma200": -0.2519541710736095,
+    "pct_above_sma100": 0.2188773776332198,
+    "pct_above_sma200": -0.25195354458132924,
     "sma50_slope": 0.53,
     "sma200_slope": -0.07,
     "higher_low": true,
@@ -33438,8 +33438,8 @@
      "m12": -5.7
     },
     "rs6": -19.7,
-    "vol_pressure_5d": 1.29,
-    "vol_breakout": 0.84
+    "vol_pressure_5d": 1.27,
+    "vol_breakout": 0.87
    },
    "flags": [],
    "earnings_in": null,
@@ -33564,7 +33564,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.84x Ø20T)"
+      "detail": "unterdurchschnittlich (0.87x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -33576,7 +33576,7 @@
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 20.0,
       "max": 20,
-      "detail": "mehr Kaeufer als Verkaeufer (1.29x)"
+      "detail": "mehr Kaeufer als Verkaeufer (1.27x)"
      }
     ],
     "momentum": [
@@ -33620,13 +33620,13 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.84x Ø20T)"
+      "detail": "unterdurchschnittlich (0.87x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 18.0,
       "max": 18,
-      "detail": "mehr Kaeufer als Verkaeufer (1.29x)"
+      "detail": "mehr Kaeufer als Verkaeufer (1.27x)"
      }
     ],
     "value": [
@@ -33709,8 +33709,8 @@
     "above_sma100": true,
     "above_sma200": true,
     "pct_above_sma50": 3.085273734044791,
-    "pct_above_sma100": 6.875672521910259,
-    "pct_above_sma200": 5.3980185505203115,
+    "pct_above_sma100": 6.8756729197807065,
+    "pct_above_sma200": 5.398019082569228,
     "sma50_slope": 6.27,
     "sma200_slope": 0.6,
     "higher_low": true,
@@ -34014,7 +34014,7 @@
     "above_sma200": true,
     "pct_above_sma50": 4.414763221332496,
     "pct_above_sma100": 13.190102399363823,
-    "pct_above_sma200": 20.1912741555617,
+    "pct_above_sma200": 20.191273857412618,
     "sma50_slope": 9.19,
     "sma200_slope": 3.6,
     "higher_low": true,
@@ -34280,7 +34280,7 @@
     "above_sma200": true,
     "pct_above_sma50": -4.070456968125602,
     "pct_above_sma100": 2.3349549838872052,
-    "pct_above_sma200": 14.601300444926292,
+    "pct_above_sma200": 14.601300192271571,
     "sma50_slope": 1.42,
     "sma200_slope": 1.63,
     "higher_low": true,
@@ -34544,7 +34544,7 @@
     "above_sma200": true,
     "pct_above_sma50": 8.286718213123168,
     "pct_above_sma100": 14.181429931723489,
-    "pct_above_sma200": 16.02908597124497,
+    "pct_above_sma200": 16.029086238628267,
     "sma50_slope": 5.09,
     "sma200_slope": 0.79,
     "higher_low": true,
@@ -34846,7 +34846,7 @@
     "above_sma200": true,
     "pct_above_sma50": 10.401080404462949,
     "pct_above_sma100": 9.475439617876269,
-    "pct_above_sma200": 13.648196982325999,
+    "pct_above_sma200": 13.648196688174963,
     "sma50_slope": 1.34,
     "sma200_slope": 2.32,
     "higher_low": true,
@@ -35146,8 +35146,8 @@
     "above_sma100": false,
     "above_sma200": false,
     "pct_above_sma50": -6.535581841624705,
-    "pct_above_sma100": -11.418398385406302,
-    "pct_above_sma200": -10.699883492951823,
+    "pct_above_sma100": -11.418398442215539,
+    "pct_above_sma200": -10.699883637288254,
     "sma50_slope": -3.31,
     "sma200_slope": 0.66,
     "higher_low": false,
@@ -46729,8 +46729,8 @@
      "m12": -38.1
     },
     "rs6": -17.2,
-    "vol_pressure_5d": 2.01,
-    "vol_breakout": 0.45
+    "vol_pressure_5d": 2.02,
+    "vol_breakout": 0.46
    },
    "flags": [
     "200-Tage-Linie faellt steil"
@@ -46842,7 +46842,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.45x Ø20T)"
+      "detail": "unterdurchschnittlich (0.46x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -46854,7 +46854,7 @@
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 20.0,
       "max": 20,
-      "detail": "mehr Kaeufer als Verkaeufer (2.01x)"
+      "detail": "mehr Kaeufer als Verkaeufer (2.02x)"
      }
     ],
     "momentum": [
@@ -46898,13 +46898,13 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.45x Ø20T)"
+      "detail": "unterdurchschnittlich (0.46x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 18.0,
       "max": 18,
-      "detail": "mehr Kaeufer als Verkaeufer (2.01x)"
+      "detail": "mehr Kaeufer als Verkaeufer (2.02x)"
      }
     ],
     "value": [

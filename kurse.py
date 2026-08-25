@@ -188,3 +188,81 @@ def kerzen(ticker: str, period: str = "400d") -> pd.DataFrame | None:
         except OSError as e:
             print(f"  {holen}: Cache nicht schreibbar ({e})")
     return None if df is None else df.copy()
+
+
+# ── Stundenkerzen ──────────────────────────────────────────────────
+# Bewusst eine eigene Funktion statt eines interval-Parameters an
+# kerzen(): die Stundenreihe hat andere Eigenschaften und darf die
+# Tagesreihe nirgends versehentlich ersetzen.
+#
+#   - Yahoo liefert 1h nur rund zwei Jahre zurueck, nicht 400 Tage
+#     plus Reserve wie bei 1d. Fuer Halteraten und Puffer-Verteilungen
+#     taugt sie deshalb NICHT (siehe Gespraech vom 25.08.2026) - sie ist
+#     ausschliesslich fuer den Blick auf den laufenden Tag gedacht.
+#   - MINDESTKERZEN aus der Tageslogik passt nicht: ein einzelner
+#     US-Handelstag hat rund 7 Stundenkerzen. Ein Tag mit Feiertag oder
+#     verkuerztem Handel haette danach "keine Daten".
+#
+# Der Cache laeuft ueber denselben Tagesmechanismus wie die Tagesreihe,
+# mit eigenem Praefix im Dateinamen.
+STUNDEN_MINDESTKERZEN = 3
+
+
+def _aufbereiten_stunden(df: pd.DataFrame) -> pd.DataFrame | None:
+    if df is None or df.empty or "Low" not in df.columns:
+        return None
+    df = df.dropna(subset=["Low", "Close"])
+    if len(df) < STUNDEN_MINDESTKERZEN:
+        return None
+    # Zeitzone behalten waere ehrlicher, macht aber jeden Vergleich mit
+    # der Tagesreihe zum Sonderfall. Stattdessen auf die Boersenzeit des
+    # jeweiligen Wertes normalisiert und dann tz-frei - wie bei kerzen().
+    df.index = pd.to_datetime(df.index)
+    try:
+        df.index = df.index.tz_localize(None)
+    except TypeError:
+        df.index = df.index.tz_convert(None)
+    return df
+
+
+def stundenkerzen(ticker: str, period: str = "5d") -> pd.DataFrame | None:
+    """Stundenkerzen fuer einen Ticker. None, wenn keine brauchbaren Daten.
+
+    Fuenf Handelstage reichen fuer den laufenden Tag samt Vergleich zu
+    den Vortagen und halten die Antwort klein. Wer mehr braucht, gibt
+    period ausdruecklich groesser an - Yahoo deckelt bei rund zwei Jahren.
+    """
+    key = (ticker, period, "1h")
+    if key in _MEM:
+        wert = _MEM[key]
+        return None if wert is None else wert.copy()
+
+    holen = quelle(ticker)
+    pfad = _pfad(f"h_{holen}", period)
+    if os.path.exists(pfad):
+        try:
+            if date.fromtimestamp(os.path.getmtime(pfad)) == date.today():
+                df = pd.read_csv(pfad, index_col=0, parse_dates=True)
+                if len(df) >= STUNDEN_MINDESTKERZEN:
+                    _MEM[key] = df
+                    return df.copy()
+        except Exception as e:
+            print(f"  {holen}: Stunden-Cache unlesbar ({e}), hole neu")
+
+    try:
+        roh = yf.Ticker(holen).history(period=period, interval="1h",
+                                       auto_adjust=False)
+    except Exception as e:
+        print(f"  {holen}: Stundenabruf fehlgeschlagen ({e})")
+        _MEM[key] = None
+        return None
+
+    df = _aufbereiten_stunden(roh)
+    _MEM[key] = df
+    if df is not None:
+        os.makedirs(CACHE, exist_ok=True)
+        try:
+            df.to_csv(pfad)
+        except OSError as e:
+            print(f"  {holen}: Stunden-Cache nicht schreibbar ({e})")
+    return None if df is None else df.copy()

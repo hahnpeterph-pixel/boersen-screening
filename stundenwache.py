@@ -40,6 +40,7 @@ from pathlib import Path
 import pandas as pd
 
 import kurse
+import stand
 import tiefs_regel as regel
 
 BASE = Path(__file__).resolve().parent
@@ -241,11 +242,12 @@ FELDER = ["ticker", "datum", "stunden_erfasst", "reihen_lage",
 
 def csv_schreiben(zeilen: list[dict]) -> None:
     DOCS.mkdir(exist_ok=True)
+    felder = FELDER + ["stand_gehalten"]
     with open(CSV_AUS, "w", newline="", encoding="utf-8") as f:
         s = csv.writer(f)
-        s.writerow(FELDER)
+        s.writerow(felder)
         for z in sorted(zeilen, key=lambda x: x["ticker"]):
-            s.writerow([z.get(k, "") for k in FELDER])
+            s.writerow([z.get(k, "") for k in felder])
     print(f"Geschrieben: {CSV_AUS} ({len(zeilen)} Zeilen)")
 
 
@@ -379,6 +381,11 @@ def main() -> None:
     if not zeilen:
         print("Keine Stundendaten erhalten - nichts geschrieben.")
         return
+
+    # Gleiche Schutzregel wie in marktdaten.py: der Abendlauf darf den
+    # abgeschlossenen europaeischen Handelstag aus dem Nachmittagslauf
+    # nicht mit einem zurueckgefallenen Abruf ueberschreiben.
+    zeilen, _gehalten = stand.zusammenfuehren(zeilen, str(CSV_AUS))
 
     csv_schreiben(zeilen)
     md_schreiben(zeilen)

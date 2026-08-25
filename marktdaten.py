@@ -343,6 +343,32 @@ def main():
         zeilen.append(r)
         print(f"  {ticker}: ok")
 
+    # ── Standpruefung ─────────────────────────────────────────────
+    # Ein Wert kann eine aeltere letzte Kerze haben als die uebrigen.
+    # Am 25.08.2026 traf das alle 39 DAX-Werte und ASML: sie standen auf
+    # dem Schlusskurs vom Freitag, waehrend die 120 US-Werte den Montag
+    # trugen. Yahoo hatte die vorlaeufige Tageskerze der europaeischen
+    # Boersen ueber Nacht durch die offizielle Abrechnung ersetzt, und
+    # die lag noch nicht vor. Der Lauf vom Vorabend hatte den Montag noch.
+    #
+    # Verglichen wird nur unter Aktien. Rohstoffe und Devisen handeln
+    # rund um die Uhr und tragen regelmaessig schon den Folgetag - das
+    # ist kein Rueckstand und darf nicht als einer gemeldet werden.
+    aktien = [r for r in zeilen if r.get("art") == "Aktie" and r.get("datum")]
+    neuester = max((r["datum"] for r in aktien), default="")
+    zurueck = []
+    for r in zeilen:
+        eigen = r.get("datum") or ""
+        alt_ = bool(neuester and r.get("art") == "Aktie" and eigen < neuester)
+        r["stand_zurueck"] = int(alt_)
+        if alt_:
+            zurueck.append(r)
+    if zurueck:
+        print(f"  ! STANDWARNUNG: {len(zurueck)} von {len(aktien)} Aktien "
+              f"haengen zurueck. Neuester Handelstag {neuester}.")
+        for r in sorted(zurueck, key=lambda x: (x["datum"], x["ticker"])):
+            print(f"      {r['ticker']:10s} letzte Kerze {r['datum']}")
+
     os.makedirs(DOCS, exist_ok=True)
     felder = list(zeilen[0].keys()) if zeilen else []
     with open(CSV_AUS, "w", encoding="utf-8", newline="") as f:
@@ -361,6 +387,19 @@ def main():
         "Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern "
         "sich staendig und wuerden diese Datei pflegebeduerftig machen.",
         "", "Vollstaendige Daten: `docs/marktdaten.csv`", "",
+    ]
+    if zurueck:
+        md += [
+            f"> **Standwarnung: {len(zurueck)} von {len(aktien)} Aktien "
+            f"haengen zurueck.** Neuester Handelstag {neuester}. Fuer die "
+            "folgenden Werte gelten Kurs, ATR, RSI und Tiefs NICHT fuer "
+            "diesen Tag. Die Spalte `stand_zurueck` in der CSV markiert "
+            "sie ebenfalls.", ">",
+            "> | Wert | letzte Kerze |", "> |---|---|",
+        ] + [f"> | {r['ticker']} | {r['datum']} |"
+             for r in sorted(zurueck, key=lambda x: (x["datum"], x["ticker"]))]
+        md += [""]
+    md += [
         "## Kerzensignale von gestern", "",
         "| Wert | Kurs | Hammer | hoeheres Hoch | Umkehrkerze | RSI |",
         "|---|---|---|---|---|---|",

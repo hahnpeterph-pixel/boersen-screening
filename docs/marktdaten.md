@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-08-25 04:25 UTC. 171 Werte, Fenster 90 Kalendertage. EUR/USD 1.166._
+_Erstellt 2026-08-25 06:09 UTC. 171 Werte, Fenster 90 Kalendertage. EUR/USD 1.1658._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -40,12 +40,13 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | BAYN.DE (BAYN.DE) | 48.04 | - | - | ja | 50.86 |
 | MTX.DE (MTX.DE) | 352.4 | - | - | ja | 41.01 |
 | QIA.DE (QIA.DE) | 37.565 | - | - | ja | 55.89 |
-| Silber (SI=F) | 67.99 | - | ja | ja | 62.22 |
-| Platin (PL=F) | 1865.6 | - | ja | ja | 64.81 |
-| Palladium (PA=F) | 1349.0 | - | ja | ja | 54.69 |
-| Kupfer (HG=F) | 6.5925 | - | ja | ja | 57.33 |
+| Silber (SI=F) | 68.025 | - | ja | ja | 62.35 |
+| Platin (PL=F) | 1859.4 | - | ja | ja | 63.88 |
+| Palladium (PA=F) | 1344.5 | - | ja | ja | 53.89 |
+| Brent Oel (BZ=F) | 91.51 | - | - | ja | 55.37 |
+| Kupfer (HG=F) | 6.5965 | - | ja | ja | 57.66 |
 | Kakao (CC=F) | 5820.0 | - | - | ja | 54.4 |
-| EUR/USD (EURUSD=X) | 1.166 | - | - | ja | 66.92 |
+| EUR/USD (EURUSD=X) | 1.1658 | - | - | ja | 66.4 |
 
 ---
 

@@ -55,79 +55,13 @@
  },
  "changes": {
   "turnaround": {
-   "entries": [
-    {
-     "ticker": "QIA.DE",
-     "rank": 3
-    },
-    {
-     "ticker": "HEN3.DE",
-     "rank": 12
-    },
-    {
-     "ticker": "SY1.DE",
-     "rank": 13
-    },
-    {
-     "ticker": "DTE.DE",
-     "rank": 15
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "BNR.DE",
-     "old_rank": 10
-    },
-    {
-     "ticker": "KHC",
-     "old_rank": 13
-    },
-    {
-     "ticker": "ADSK",
-     "old_rank": 14
-    },
-    {
-     "ticker": "MELI",
-     "old_rank": 15
-    }
-   ],
-   "moves": [
-    {
-     "ticker": "BEI.DE",
-     "rank": 2,
-     "delta": 9
-    }
-   ]
+   "entries": [],
+   "exits": [],
+   "moves": []
   },
   "momentum": {
-   "entries": [
-    {
-     "ticker": "TRV",
-     "rank": 10
-    },
-    {
-     "ticker": "ROST",
-     "rank": 14
-    },
-    {
-     "ticker": "PAYX",
-     "rank": 15
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "BNR.DE",
-     "old_rank": 8
-    },
-    {
-     "ticker": "CBK.DE",
-     "old_rank": 9
-    },
-    {
-     "ticker": "SIE.DE",
-     "old_rank": 13
-    }
-   ],
+   "entries": [],
+   "exits": [],
    "moves": []
   },
   "value": {

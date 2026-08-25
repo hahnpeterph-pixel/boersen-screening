@@ -2,21 +2,21 @@
  "date": "2026-08-25",
  "ranks": {
   "turnaround": [
-   "QIA.DE",
    "ADBE",
    "ADSK",
    "AXON",
    "CDW",
    "AXP",
-   "BEI.DE",
    "KHC",
+   "BAYN.DE",
    "SPGI",
-   "HD",
-   "HEN3.DE",
    "HNR1.DE",
-   "SHL.DE",
-   "ZAL.DE",
-   "SHW"
+   "BNR.DE",
+   "HD",
+   "BEI.DE",
+   "SHW",
+   "CTAS",
+   "QIA.DE"
   ],
   "momentum": [
    "MRNA",
@@ -24,23 +24,23 @@
    "MRK",
    "ILMN",
    "MRVL",
+   "TEAM",
    "ALV.DE",
    "DB1.DE",
-   "TEAM",
+   "BNR.DE",
    "AMD",
    "JPM",
-   "DHL.DE",
    "SY1.DE",
-   "DTG.DE",
-   "BKNG",
-   "CSX"
+   "SIE.DE",
+   "DHL.DE",
+   "DTG.DE"
   ],
   "value": [
    "MU",
    "NVDA",
    "ADSK",
-   "REGN",
    "MTX.DE",
+   "REGN",
    "ABNB",
    "V",
    "ENR.DE",
@@ -49,24 +49,89 @@
    "DXCM",
    "SPGI",
    "GOOG",
-   "GOOGL",
-   "CVX"
+   "DB1.DE",
+   "GOOGL"
   ]
  },
  "changes": {
   "turnaround": {
-   "entries": [],
-   "exits": [],
-   "moves": []
+   "entries": [
+    {
+     "ticker": "BAYN.DE",
+     "rank": 7
+    },
+    {
+     "ticker": "BNR.DE",
+     "rank": 10
+    },
+    {
+     "ticker": "CTAS",
+     "rank": 14
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "HEN3.DE",
+     "old_rank": 11
+    },
+    {
+     "ticker": "SHL.DE",
+     "old_rank": 13
+    },
+    {
+     "ticker": "ZAL.DE",
+     "old_rank": 14
+    }
+   ],
+   "moves": [
+    {
+     "ticker": "BEI.DE",
+     "rank": 12,
+     "delta": -5
+    },
+    {
+     "ticker": "QIA.DE",
+     "rank": 15,
+     "delta": -14
+    }
+   ]
   },
   "momentum": {
-   "entries": [],
-   "exits": [],
+   "entries": [
+    {
+     "ticker": "BNR.DE",
+     "rank": 9
+    },
+    {
+     "ticker": "SIE.DE",
+     "rank": 13
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "BKNG",
+     "old_rank": 14
+    },
+    {
+     "ticker": "CSX",
+     "old_rank": 15
+    }
+   ],
    "moves": []
   },
   "value": {
-   "entries": [],
-   "exits": [],
+   "entries": [
+    {
+     "ticker": "DB1.DE",
+     "rank": 14
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "CVX",
+     "old_rank": 15
+    }
+   ],
    "moves": []
   },
   "analyst_flips": []

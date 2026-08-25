@@ -2,12 +2,25 @@ name: Boersen-Screening
 
 on:
   schedule:
-    # 02:17 UTC an Werktagen = 04:17 MESZ / 03:17 MEZ
-    # Basis sind die Schlusskurse des Vortags (US-Schluss 22:00 MESZ,
-    # Yahoo liefert sie rund eine Stunde spaeter).
-    # Krumme Minute, weil GitHub Actions zur vollen Stunde ueberlastet
-    # ist und geplante Laeufe dann 5-15 Minuten spaeter startet.
-    - cron: "17 2 * * 1-5"
+    # 22:15 UTC an Werktagen = 00:15 MESZ / 23:15 MEZ. Der Lauf faellt
+    # damit auf den ABEND DES HANDELSTAGES, nicht auf den Morgen danach.
+    #
+    # Bis 25.08.2026 stand hier 02:17 UTC. Das hat sich als falsch
+    # erwiesen: Yahoo ersetzt ueber Nacht die vorlaeufige Tageskerze der
+    # europaeischen Boersen durch die offizielle Abrechnung, und solange
+    # die fehlt, faellt der ganze Tag weg. Am 25.08.2026 standen deshalb
+    # alle 39 DAX-Werte und ASML auf dem Schlusskurs vom Freitag, obwohl
+    # der Lauf vom Vorabend um 21:08 UTC den Montag noch hatte. Ein
+    # spaeterer Morgenlauf hilft nicht - um 06:10 UTC fehlte die Kerze
+    # genauso. Nur der Abend des Handelstages liefert alle Werte.
+    #
+    # 22:15 UTC traegt in beiden Zeitzonen: der US-Schluss liegt bei
+    # 20:00 UTC in der Sommerzeit und 21:00 UTC in der Winterzeit, also
+    # nie spaeter als 21:00 UTC. Damit bleiben mindestens 75 Minuten fuer
+    # Yahoo. Krumme Minute, weil GitHub Actions zur vollen Stunde
+    # ueberlastet ist und geplante Laeufe dann 5-15 Minuten spaeter
+    # startet - am 24.08.2026 waren es sogar zwei Stunden.
+    - cron: "15 22 * * 1-5"
   workflow_dispatch:        # erlaubt manuelles Starten per Knopfdruck
 
 # Alle drei Workflows schreiben ins selbe Repo. Laufen zwei gleichzeitig,

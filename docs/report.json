@@ -7,16 +7,16 @@
    "ADSK",
    "AXP",
    "ADBE",
+   "AXON",
+   "BEI.DE",
+   "SPGI",
    "KHC",
    "HD",
-   "SPGI",
-   "AXON",
-   "BNR.DE",
-   "MUV2.DE",
    "HEN3.DE",
-   "BAYN.DE",
-   "BEI.DE",
-   "SHW"
+   "SHW",
+   "HNR1.DE",
+   "SHL.DE",
+   "PCAR"
   ],
   "momentum": [
    "MRNA",
@@ -27,13 +27,13 @@
    "TEAM",
    "ALV.DE",
    "DB1.DE",
+   "AMD",
    "CBK.DE",
+   "DHL.DE",
+   "CSX",
    "SY1.DE",
    "DTG.DE",
-   "DHL.DE",
-   "BNR.DE",
-   "AMD",
-   "CSX"
+   "BKNG"
   ],
   "value": [
    "MU",
@@ -57,133 +57,60 @@
   "turnaround": {
    "entries": [
     {
-     "ticker": "CDW",
-     "rank": 1
+     "ticker": "HNR1.DE",
+     "rank": 13
     },
     {
-     "ticker": "ADSK",
-     "rank": 3
+     "ticker": "SHL.DE",
+     "rank": 14
     },
     {
-     "ticker": "ADBE",
-     "rank": 5
-    },
-    {
-     "ticker": "KHC",
-     "rank": 6
-    },
-    {
-     "ticker": "SPGI",
-     "rank": 8
-    },
-    {
-     "ticker": "BNR.DE",
-     "rank": 10
-    },
-    {
-     "ticker": "MUV2.DE",
-     "rank": 11
+     "ticker": "PCAR",
+     "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "HNR1.DE",
-     "old_rank": 4
+     "ticker": "BNR.DE",
+     "old_rank": 10
     },
     {
-     "ticker": "TRV",
-     "old_rank": 8
-    },
-    {
-     "ticker": "CRM",
-     "old_rank": 9
-    },
-    {
-     "ticker": "ROST",
+     "ticker": "MUV2.DE",
      "old_rank": 11
     },
     {
-     "ticker": "SY1.DE",
+     "ticker": "BAYN.DE",
      "old_rank": 13
-    },
-    {
-     "ticker": "GEHC",
-     "old_rank": 14
-    },
-    {
-     "ticker": "DTE.DE",
-     "old_rank": 15
     }
    ],
    "moves": [
     {
-     "ticker": "AXON",
-     "rank": 9,
-     "delta": -8
-    },
-    {
-     "ticker": "BAYN.DE",
-     "rank": 13,
-     "delta": -8
-    },
-    {
      "ticker": "BEI.DE",
-     "rank": 14,
-     "delta": -12
-    },
-    {
-     "ticker": "SHW",
-     "rank": 15,
-     "delta": -8
+     "rank": 7,
+     "delta": 7
     }
    ]
   },
   "momentum": {
    "entries": [
     {
-     "ticker": "MRVL",
-     "rank": 5
-    },
-    {
-     "ticker": "CBK.DE",
-     "rank": 9
-    },
-    {
-     "ticker": "DTG.DE",
-     "rank": 11
-    },
-    {
-     "ticker": "BNR.DE",
-     "rank": 13
-    },
-    {
-     "ticker": "AMD",
-     "rank": 14
+     "ticker": "BKNG",
+     "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "BKNG",
-     "old_rank": 9
-    },
-    {
-     "ticker": "TRV",
-     "old_rank": 10
-    },
-    {
-     "ticker": "PANW",
+     "ticker": "BNR.DE",
      "old_rank": 13
-    },
-    {
-     "ticker": "ROST",
-     "old_rank": 14
-    },
-    {
-     "ticker": "PAYX",
-     "old_rank": 15
     }
    ],
-   "moves": []
+   "moves": [
+    {
+     "ticker": "AMD",
+     "rank": 9,
+     "delta": 5
+    }
+   ]
   },
   "value": {
    "entries": [],

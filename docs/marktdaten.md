@@ -1,96 +1,50 @@
 # Marktdaten
 
-_Erstellt 2026-08-25 06:24 UTC. 171 Werte, Fenster 90 Kalendertage. EUR/USD 1.1662._
+_Erstellt 2026-08-25 17:38 UTC. 171 Werte, Fenster 90 Kalendertage. EUR/USD 1.1675._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
 Vollstaendige Daten: `docs/marktdaten.csv`
 
-> **Standwarnung: 40 von 158 Aktien haengen zurueck.** Neuester Handelstag 2026-08-24. Fuer die folgenden Werte gelten Kurs, ATR, RSI und Tiefs NICHT fuer diesen Tag. Die Spalte `stand_zurueck` in der CSV markiert sie ebenfalls.
->
-> | Wert | letzte Kerze |
-> |---|---|
-> | ADS.DE | 2026-08-21 |
-> | AIR.DE | 2026-08-21 |
-> | ALV.DE | 2026-08-21 |
-> | ASML | 2026-08-21 |
-> | BAS.DE | 2026-08-21 |
-> | BAYN.DE | 2026-08-21 |
-> | BEI.DE | 2026-08-21 |
-> | BMW.DE | 2026-08-21 |
-> | BNR.DE | 2026-08-21 |
-> | CBK.DE | 2026-08-21 |
-> | CON.DE | 2026-08-21 |
-> | DB1.DE | 2026-08-21 |
-> | DBK.DE | 2026-08-21 |
-> | DHL.DE | 2026-08-21 |
-> | DTE.DE | 2026-08-21 |
-> | DTG.DE | 2026-08-21 |
-> | ENR.DE | 2026-08-21 |
-> | EOAN.DE | 2026-08-21 |
-> | FRE.DE | 2026-08-21 |
-> | HEI.DE | 2026-08-21 |
-> | HEN3.DE | 2026-08-21 |
-> | HNR1.DE | 2026-08-21 |
-> | IFX.DE | 2026-08-21 |
-> | MBG.DE | 2026-08-21 |
-> | MRK.DE | 2026-08-21 |
-> | MTX.DE | 2026-08-21 |
-> | MUV2.DE | 2026-08-21 |
-> | P911.DE | 2026-08-21 |
-> | PAH3.DE | 2026-08-21 |
-> | QIA.DE | 2026-08-21 |
-> | RHM.DE | 2026-08-21 |
-> | RWE.DE | 2026-08-21 |
-> | SAP.DE | 2026-08-21 |
-> | SHL.DE | 2026-08-21 |
-> | SIE.DE | 2026-08-21 |
-> | SRT3.DE | 2026-08-21 |
-> | SY1.DE | 2026-08-21 |
-> | VNA.DE | 2026-08-21 |
-> | VOW3.DE | 2026-08-21 |
-> | ZAL.DE | 2026-08-21 |
-
 ## Kerzensignale von gestern
 
 | Wert | Kurs | Hammer | hoeheres Hoch | Umkehrkerze | RSI |
 |---|---|---|---|---|---|
-| ADI (ADI) | 371.17 | ja | - | ja | 44.25 |
-| AMD (AMD) | 456.75 | - | - | ja | 42.46 |
-| AVGO (AVGO) | 358.76 | - | - | ja | 35.41 |
-| BA (BA) | 210.46 | - | - | ja | 37.12 |
-| BKR (BKR) | 61.99 | - | - | ja | 51.13 |
-| CAT (CAT) | 811.02 | - | - | ja | 39.78 |
-| CPRT (CPRT) | 33.26 | - | - | ja | 65.76 |
-| DDOG (DDOG) | 225.77 | - | - | ja | 40.23 |
-| FANG (FANG) | 205.6 | - | - | ja | 56.27 |
-| HON (HON) | 214.77 | - | - | ja | 32.17 |
-| IBM (IBM) | 231.04 | - | - | ja | 45.88 |
-| INTC (INTC) | 87.26 | - | - | ja | 37.23 |
-| LRCX (LRCX) | 310.17 | ja | - | - | 47.2 |
-| MCHP (MCHP) | 74.21 | - | - | ja | 40.99 |
-| MDB (MDB) | 402.69 | - | - | ja | 52.64 |
-| MU (MU) | 910.43 | - | - | ja | 48.5 |
-| NVDA (NVDA) | 208.48 | - | - | ja | 44.65 |
-| NXPI (NXPI) | 222.44 | - | - | ja | 34.45 |
-| ODFL (ODFL) | 201.48 | - | ja | ja | 35.58 |
-| ON (ON) | 71.93 | - | - | ja | 33.16 |
-| ORCL (ORCL) | 142.45 | - | - | ja | 49.04 |
-| PDD (PDD) | 87.07 | - | ja | ja | 48.79 |
-| QCOM (QCOM) | 158.53 | - | - | ja | 41.52 |
-| SNPS (SNPS) | 394.51 | - | - | ja | 41.69 |
-| TTWO (TTWO) | 233.5 | - | - | ja | 43.21 |
-| TXN (TXN) | 258.94 | - | - | ja | 36.18 |
-| AIR.DE (AIR.DE) | 203.65 | - | - | ja | 44.94 |
-| BAYN.DE (BAYN.DE) | 48.04 | - | - | ja | 50.86 |
-| MTX.DE (MTX.DE) | 352.4 | - | - | ja | 41.01 |
-| QIA.DE (QIA.DE) | 37.565 | - | - | ja | 55.89 |
-| Silber (SI=F) | 68.29 | - | ja | ja | 63.31 |
-| Platin (PL=F) | 1867.0 | - | ja | ja | 65.02 |
-| Palladium (PA=F) | 1346.0 | - | ja | ja | 54.15 |
-| Brent Oel (BZ=F) | 91.34 | - | - | ja | 55.04 |
-| WTI Oel (CL=F) | 84.3 | - | - | ja | 53.03 |
-| Kakao (CC=F) | 5820.0 | - | - | ja | 54.4 |
+| AAPL (AAPL) | 309.8088 | - | ja | ja | 47.74 |
+| ADI (ADI) | 374.135 | ja | ja | - | 46.39 |
+| ADSK (ADSK) | 251.2 | - | - | ja | 59.17 |
+| AVGO (AVGO) | 357.31 | - | - | ja | 34.93 |
+| CRWD (CRWD) | 183.8092 | - | - | ja | 37.98 |
+| CTAS (CTAS) | 204.13 | - | - | ja | 55.88 |
+| DDOG (DDOG) | 223.65 | - | - | ja | 39.46 |
+| DXCM (DXCM) | 90.43 | - | - | ja | 64.03 |
+| FANG (FANG) | 201.545 | - | - | ja | 51.53 |
+| FAST (FAST) | 50.64 | - | - | ja | 56.04 |
+| IDXX (IDXX) | 553.01 | - | - | ja | 45.96 |
+| INTU (INTU) | 359.19 | - | - | ja | 62.3 |
+| ISRG (ISRG) | 370.24 | - | - | ja | 43.76 |
+| KDP (KDP) | 31.955 | - | - | ja | 57.23 |
+| KHC (KHC) | 25.28 | - | - | ja | 49.11 |
+| LULU (LULU) | 118.416 | - | - | ja | 47.6 |
+| MCD (MCD) | 269.021 | - | - | ja | 47.09 |
+| MDLZ (MDLZ) | 63.435 | - | - | ja | 54.26 |
+| ODFL (ODFL) | 198.19 | - | - | ja | 33.11 |
+| PANW (PANW) | 339.6325 | - | - | ja | 43.94 |
+| PEP (PEP) | 142.6315 | - | - | ja | 55.52 |
+| ROP (ROP) | 411.495 | - | - | ja | 64.04 |
+| TEAM (TEAM) | 167.5 | - | - | ja | 71.93 |
+| WDAY (WDAY) | 194.875 | - | - | ja | 62.52 |
+| ZS (ZS) | 168.67 | - | - | ja | 50.9 |
+| ADS.DE (ADS.DE) | 152.6 | - | - | ja | 37.1 |
+| BAS.DE (BAS.DE) | 51.68 | - | - | ja | 56.97 |
+| FRE.DE (FRE.DE) | 45.845 | - | - | ja | 54.98 |
+| HEN3.DE (HEN3.DE) | 75.74 | - | - | ja | 49.63 |
+| SAP.DE (SAP.DE) | 185.46 | - | - | ja | 70.47 |
+| SHL.DE (SHL.DE) | 39.7 | - | - | ja | 61.89 |
+| Platin (PL=F) | 1860.9 | - | ja | ja | 64.1 |
+| Palladium (PA=F) | 1331.5 | - | ja | ja | 51.7 |
+| Brent Oel (BZ=F) | 87.08 | - | - | ja | 47.92 |
+| WTI Oel (CL=F) | 82.25 | - | - | ja | 49.09 |
 
 ---
 

@@ -1,6 +1,6 @@
-# Boersen-Screening - 2026-08-24
+# Boersen-Screening - 2026-08-25
 
-_Stand: Schlusskurse vom Vortag. Erstellt 2026-08-24T21:08:20+00:00 UTC. 165 Werte ausgewertet._
+_Stand: Schlusskurse vom Vortag. Erstellt 2026-08-25T04:24:54+00:00 UTC. 165 Werte ausgewertet._
 
 ## 📖 Glossar (was die Spalten bedeuten)
 
@@ -19,7 +19,7 @@ _Ueber alle 165 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 1 | NVDA | - | NVIDIA Corporation | NASDAQ/DOW | 208.48 | -12% | 100% (23 Banken, ≤120T) | 304.73 (46% ueber Kurs) | 45 | 53 | 27 | 2026-08-21 BMO Capital: neu bewertet mit Outperform |
 | 2 | BA | - | Boeing Company (The) | DOW | 210.46 | -51% | 100% (6 Banken, ≤120T) | 274.85 (31% ueber Kurs) | 37 | 46 | 25 | 2026-08-11 Argus Research: hochgestuft auf Buy |
-| 3 | DTE.DE | - | DEUTSCHE TELEKOM AG | DAX | 29.07 | -14% | 100% (18 Banken, ≤120T) | 37.10 (28% ueber Kurs) | 59 | 55 | 54 | keine in 30T |
+| 3 | DTE.DE | - | DEUTSCHE TELEKOM AG | DAX | 28.94 | -14% | 100% (18 Banken, ≤120T) | 37.10 (28% ueber Kurs) | 58 | 54 | 54 | keine in 30T |
 | 4 | ASML | USN070592100 | ASML Holding N.V. - New York Re | NASDAQ | 1740.13 | -12% | 100% (5 Banken, ≤120T) | 2194.12 (26% ueber Kurs) | 48 | 58 | 40 | keine in 30T |
 | 5 | TTWO | - | Take-Two Interactive Software, | NASDAQ | 233.50 | -11% | 100% (10 Banken, ≤120T) | 286.89 (23% ueber Kurs) | 43 | 51 | 34 | 2026-08-10 Roth Capital: Rating bestaetigt: Buy |
 | 6 | GOOG | CA02080M1005 | Alphabet Inc. | NASDAQ | 344.59 | -14% | 100% (4 Banken, ≤120T) | 422.34 (23% ueber Kurs) | 48 | 52 | 56 | keine in 30T |
@@ -32,7 +32,7 @@ _Ueber alle 165 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 | 13 | MSFT | - | Microsoft Corporation | NASDAQ/DOW | 487.31 | -9% | 96% (24 Banken, ≤120T) | 569.45 (17% ueber Kurs) | 64 | 62 | 56 | 2026-08-12 Wells Fargo: Rating bestaetigt: Overweight |
 | 14 | ADI | US0326541051 | Analog Devices, Inc. | NASDAQ | 371.17 | -17% | 95% (19 Banken, ≤120T) | 463.22 (25% ueber Kurs) | 44 | 51 | 46 | 2026-08-21 BMO Capital: neu bewertet mit Outperform |
 | 15 | LRCX | - | Lam Research Corporation | NASDAQ | 310.17 | -28% | 94% (17 Banken, ≤120T) | 371.35 (20% ueber Kurs) | 47 | 54 | 48 | 2026-07-30 Morgan Stanley: Rating bestaetigt: Overweight |
-| 16 | FRE.DE | - | Fresenius SE & Co. KGaA | DAX | 46.04 | -31% | 93% (14 Banken, ≤120T) | 55.59 (21% ueber Kurs) | 57 | 60 | 41 | keine in 30T |
+| 16 | FRE.DE | - | Fresenius SE & Co. KGaA | DAX | 46.60 | -30% | 93% (14 Banken, ≤120T) | 55.59 (19% ueber Kurs) | 64 | 62 | 41 | keine in 30T |
 | 17 | AZN | GB0009895292 | AstraZeneca PLC | NASDAQ | 166.71 | -20% | 90% (10 Banken, ≤120T) | 213.99 (28% ueber Kurs) | 52 | 43 | 64 | keine in 30T |
 | 18 | CDNS | US1273871087 | Cadence Design Systems, Inc. | NASDAQ | 315.92 | -24% | 90% (10 Banken, ≤120T) | 403.94 (28% ueber Kurs) | 35 | 43 | 49 | 2026-07-28 B of A Securities: Rating bestaetigt: Buy |
 | 19 | WMT | CA93267J1012 | Walmart Inc. | DOW | 106.49 | -20% | 90% (20 Banken, ≤120T) | 128.43 (21% ueber Kurs) | 38 | 40 | 49 | 2026-08-21 Telsey Advisory Group: Rating bestaetigt: Outperform |

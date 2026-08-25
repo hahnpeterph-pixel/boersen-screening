@@ -1,39 +1,39 @@
 {
- "date": "2026-08-24",
+ "date": "2026-08-25",
  "ranks": {
   "turnaround": [
    "AXON",
+   "BEI.DE",
+   "QIA.DE",
+   "HNR1.DE",
+   "BAYN.DE",
    "AXP",
    "SHW",
-   "BAYN.DE",
-   "HNR1.DE",
    "TRV",
    "CRM",
    "HD",
    "ROST",
-   "BNR.DE",
-   "BEI.DE",
+   "HEN3.DE",
+   "SY1.DE",
    "GEHC",
-   "KHC",
-   "ADSK",
-   "MELI"
+   "DTE.DE"
   ],
   "momentum": [
    "ABNB",
    "MRNA",
    "ILMN",
    "MRK",
-   "TEAM",
    "ALV.DE",
+   "TEAM",
    "DB1.DE",
-   "BNR.DE",
-   "CBK.DE",
    "SY1.DE",
    "BKNG",
-   "CSX",
-   "SIE.DE",
+   "TRV",
    "DHL.DE",
-   "PANW"
+   "CSX",
+   "PANW",
+   "ROST",
+   "PAYX"
   ],
   "value": [
    "MU",
@@ -48,8 +48,8 @@
    "ODFL",
    "SPGI",
    "DXCM",
-   "GOOG",
    "DB1.DE",
+   "GOOG",
    "GOOGL"
   ]
  },
@@ -57,67 +57,75 @@
   "turnaround": {
    "entries": [
     {
-     "ticker": "SHW",
+     "ticker": "QIA.DE",
      "rank": 3
     },
     {
-     "ticker": "TRV",
-     "rank": 6
+     "ticker": "HEN3.DE",
+     "rank": 12
     },
     {
-     "ticker": "CRM",
-     "rank": 7
+     "ticker": "SY1.DE",
+     "rank": 13
     },
     {
-     "ticker": "HD",
-     "rank": 8
-    },
-    {
-     "ticker": "ROST",
-     "rank": 9
+     "ticker": "DTE.DE",
+     "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "CTSH",
-     "old_rank": 6
+     "ticker": "BNR.DE",
+     "old_rank": 10
     },
     {
-     "ticker": "MUV2.DE",
-     "old_rank": 8
+     "ticker": "KHC",
+     "old_rank": 13
     },
     {
-     "ticker": "CDW",
-     "old_rank": 12
-    },
-    {
-     "ticker": "CCEP",
+     "ticker": "ADSK",
      "old_rank": 14
     },
     {
-     "ticker": "QIA.DE",
+     "ticker": "MELI",
      "old_rank": 15
     }
    ],
    "moves": [
     {
-     "ticker": "ADSK",
-     "rank": 14,
-     "delta": -11
+     "ticker": "BEI.DE",
+     "rank": 2,
+     "delta": 9
     }
    ]
   },
   "momentum": {
    "entries": [
     {
-     "ticker": "PANW",
+     "ticker": "TRV",
+     "rank": 10
+    },
+    {
+     "ticker": "ROST",
+     "rank": 14
+    },
+    {
+     "ticker": "PAYX",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "MRVL",
-     "old_rank": 15
+     "ticker": "BNR.DE",
+     "old_rank": 8
+    },
+    {
+     "ticker": "CBK.DE",
+     "old_rank": 9
+    },
+    {
+     "ticker": "SIE.DE",
+     "old_rank": 13
     }
    ],
    "moves": []

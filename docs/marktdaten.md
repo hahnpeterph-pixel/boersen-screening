@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-08-24 21:08 UTC. 171 Werte, Fenster 90 Kalendertage. EUR/USD 1.1665._
+_Erstellt 2026-08-25 04:25 UTC. 171 Werte, Fenster 90 Kalendertage. EUR/USD 1.166._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -11,10 +11,10 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | Wert | Kurs | Hammer | hoeheres Hoch | Umkehrkerze | RSI |
 |---|---|---|---|---|---|
 | ADI (ADI) | 371.17 | ja | - | ja | 44.25 |
-| AMD (AMD) | 456.745 | - | - | ja | 42.46 |
+| AMD (AMD) | 456.75 | - | - | ja | 42.46 |
 | AVGO (AVGO) | 358.76 | - | - | ja | 35.41 |
 | BA (BA) | 210.46 | - | - | ja | 37.12 |
-| BKR (BKR) | 61.985 | - | - | ja | 51.11 |
+| BKR (BKR) | 61.99 | - | - | ja | 51.13 |
 | CAT (CAT) | 811.02 | - | - | ja | 39.78 |
 | CPRT (CPRT) | 33.26 | - | - | ja | 65.76 |
 | DDOG (DDOG) | 225.77 | - | - | ja | 40.23 |
@@ -33,21 +33,19 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | ORCL (ORCL) | 142.45 | - | - | ja | 49.04 |
 | PDD (PDD) | 87.07 | - | ja | ja | 48.79 |
 | QCOM (QCOM) | 158.53 | - | - | ja | 41.52 |
-| SBUX (SBUX) | 107.49 | ja | ja | - | 56.16 |
 | SNPS (SNPS) | 394.51 | - | - | ja | 41.69 |
 | TTWO (TTWO) | 233.5 | - | - | ja | 43.21 |
 | TXN (TXN) | 258.94 | - | - | ja | 36.18 |
-| AIR.DE (AIR.DE) | 202.85 | - | ja | ja | 43.87 |
-| HNR1.DE (HNR1.DE) | 252.2 | ja | - | - | 52.63 |
-| IFX.DE (IFX.DE) | 54.16 | - | - | ja | 33.25 |
-| QIA.DE (QIA.DE) | 36.405 | - | ja | ja | 48.76 |
-| RHM.DE (RHM.DE) | 1125.2 | - | - | ja | 47.14 |
-| ENR.DE (ENR.DE) | 148.74 | - | - | ja | 42.85 |
-| VOW3.DE (VOW3.DE) | 73.82 | - | - | ja | 46.46 |
-| VNA.DE (VNA.DE) | 19.83 | - | - | ja | 35.8 |
-| Brent Oel (BZ=F) | 92.02 | - | - | ja | 56.4 |
-| WTI Oel (CL=F) | 84.99 | - | - | ja | 54.51 |
-| EUR/USD (EURUSD=X) | 1.1665 | - | - | ja | 67.96 |
+| AIR.DE (AIR.DE) | 203.65 | - | - | ja | 44.94 |
+| BAYN.DE (BAYN.DE) | 48.04 | - | - | ja | 50.86 |
+| MTX.DE (MTX.DE) | 352.4 | - | - | ja | 41.01 |
+| QIA.DE (QIA.DE) | 37.565 | - | - | ja | 55.89 |
+| Silber (SI=F) | 67.99 | - | ja | ja | 62.22 |
+| Platin (PL=F) | 1865.6 | - | ja | ja | 64.81 |
+| Palladium (PA=F) | 1349.0 | - | ja | ja | 54.69 |
+| Kupfer (HG=F) | 6.5925 | - | ja | ja | 57.33 |
+| Kakao (CC=F) | 5820.0 | - | - | ja | 54.4 |
+| EUR/USD (EURUSD=X) | 1.166 | - | - | ja | 66.92 |
 
 ---
 

@@ -1,0 +1,119 @@
+"""
+kursverlauf.py - Schlusskurse je Wert und Handelstag, damit sich jeder Kauf
+im Nachhinein messen laesst.
+
+Wozu:
+Das Orderbuch weiss, WARUM und WANN gekauft wurde (Blaetter Entscheidungen
+und Transaktionen), aber nicht, was danach passiert ist. Ohne diese
+Rueckkopplung bleibt jede Begruendung unbelegt - man erfaehrt nie, ob
+"Chartentscheidung" besser traegt als "Bauchgefuehl", oder ob Kaeufe vor
+der eigenen 16:30-Regel schlechter laufen. Genau das soll das Blatt
+Rueckblick beantworten, und dafuer braucht es je Wert den Kurs an Tag 5,
+21 und 63 nach dem Kauf.
+
+Warum die Trades NICHT hier stehen:
+Positionsdaten gehoeren nicht ins oeffentliche Repo (Entscheidung 58, und
+das alte Repo musste am 24.08.2026 genau deswegen neu aufgesetzt werden).
+Dieses Skript schreibt deshalb ausschliesslich oeffentliche Marktdaten:
+Schlusskurse je Wert und Tag, ohne jeden Bezug zu einer Position. Die
+Verknuepfung mit den eigenen Kaeufen passiert erst in der Excel-Mappe.
+
+Format bewusst breit statt lang:
+Eine Zeile je Wert, eine Spalte je Handelstag. Das sind rund 170 Zeilen
+statt 20.000 - handlich zum Einfuegen in die Mappe, und der Nachschlag
+"Kurs N Handelstage nach dem Kauf" wird zu einem simplen Spaltenversatz
+statt zu einer Datumsrechnerei mit Wochenenden und Feiertagen.
+
+Schreibt:
+  docs/kursverlauf.csv
+"""
+
+from __future__ import annotations
+
+import csv
+from datetime import datetime, timezone
+from pathlib import Path
+
+import pandas as pd
+
+import kurse
+
+BASE = Path(__file__).resolve().parent
+DOCS = BASE / "docs"
+CSV_AUS = DOCS / "kursverlauf.csv"
+
+# 130 Handelstage sind rund ein halbes Jahr. Der laengste Rueckblick im
+# Blatt Rueckblick geht ueber 63 Handelstage; damit bleibt Platz fuer
+# Kaeufe, die schon einige Wochen zurueckliegen, ohne die Datei unnoetig
+# aufzublaehen.
+TAGE = 130
+
+US = """AAPL ABNB ADBE ADI ADP ADSK AEP AMAT AMD AMGN AMZN ARM ASML AVGO
+AXP AZN BA BIIB BKNG BKR CAT CDNS CDW CEG CHTR CMCSA COST CPRT CRM CRWD CSCO
+CSGP CSX CTAS CTSH DASH DDOG DIS DXCM EXC FANG FAST FTNT GEHC GILD
+GOOGL GS HD HON IBM IDXX ILMN INTC INTU ISRG JNJ JPM KDP KHC KLAC KO LIN LRCX
+LULU MAR MCD MCHP MDB MDLZ MELI META MMM MNST MRK MRNA MRVL MSFT MU NFLX NKE
+NVDA NXPI ODFL ON ORCL ORLY PANW PAYX PCAR PDD PEP PG PLTR PYPL QCOM REGN ROP
+ROST SBUX SHW SNPS SPGI TEAM TMUS TRV TSLA TTD TTWO TXN UNH V VRSK VRTX VZ
+WBD WDAY WMT XEL ZS""".split()
+
+DAX = """ADS.DE AIR.DE ALV.DE BAS.DE BAYN.DE BEI.DE BMW.DE BNR.DE CBK.DE CON.DE
+DTG.DE DBK.DE DB1.DE DHL.DE DTE.DE EOAN.DE FRE.DE HNR1.DE HEI.DE HEN3.DE
+IFX.DE MBG.DE MRK.DE MTX.DE MUV2.DE P911.DE PAH3.DE QIA.DE RHM.DE RWE.DE SAP.DE
+SRT3.DE SIE.DE ENR.DE SHL.DE SY1.DE VOW3.DE VNA.DE ZAL.DE""".split()
+
+# Rohstoffe und Waehrung bewusst mit drin: Gold wurde gehandelt (zwei
+# Positionen im August 2026), also muss es auch auswertbar sein.
+WEITERE = ["GC=F", "SI=F", "NG=F", "CL=F", "EURUSD=X"]
+
+UNIVERSUM = list(dict.fromkeys(US + DAX + WEITERE))
+
+
+def reihen() -> tuple[list[str], dict[str, dict[str, float]]]:
+    """Schlusskurse je Wert, plus die gemeinsame Liste der Handelstage.
+
+    Die Tage werden ueber ALLE Werte gesammelt, nicht je Wert einzeln:
+    XETRA und NYSE haben verschiedene Feiertage, und eine gemeinsame
+    Spaltenachse ist Voraussetzung dafuer, dass der Spaltenversatz
+    "N Handelstage spaeter" ueberhaupt eine feste Bedeutung hat. Fehlt
+    einem Wert ein Tag, bleibt die Zelle leer statt zu verrutschen.
+    """
+    je_wert: dict[str, dict[str, float]] = {}
+    alle_tage: set[str] = set()
+    for i, t in enumerate(UNIVERSUM, 1):
+        df = kurse.kerzen(t, period="400d")
+        if df is None or df.empty:
+            continue
+        letzte = df.tail(TAGE)
+        werte = {str(d.date()): round(float(c), 4)
+                 for d, c in zip(letzte.index, letzte["Close"])}
+        je_wert[t] = werte
+        alle_tage.update(werte)
+        if i % 25 == 0:
+            print(f"  {i}/{len(UNIVERSUM)} ...")
+    return sorted(alle_tage), je_wert
+
+
+def schreiben(tage: list[str], je_wert: dict[str, dict[str, float]]) -> None:
+    DOCS.mkdir(exist_ok=True)
+    with open(CSV_AUS, "w", newline="", encoding="utf-8") as f:
+        s = csv.writer(f)
+        s.writerow(["ticker"] + tage)
+        for t in sorted(je_wert):
+            s.writerow([t] + [je_wert[t].get(d, "") for d in tage])
+    print(f"Geschrieben: {CSV_AUS} ({len(je_wert)} Werte, {len(tage)} Handelstage)")
+
+
+def main() -> None:
+    kurse.aufraeumen()
+    tage, je_wert = reihen()
+    if not je_wert:
+        print("Keine Kursdaten erhalten - nichts geschrieben.")
+        return
+    schreiben(tage, je_wert)
+    print(f"Zeitraum {tage[0]} bis {tage[-1]}. "
+          f"Erstellt {datetime.now(timezone.utc):%Y-%m-%d %H:%M} UTC.")
+
+
+if __name__ == "__main__":
+    main()

@@ -1,6 +1,6 @@
 # Tagesreaktion - was folgt auf einen harten Verlusttag?
 
-_Erstellt 2026-08-24 18:16 UTC. 7 Jahre, 165 Werte, 88144 Verlusttage._
+_Erstellt 2026-08-25 20:26 UTC. 7 Jahre, 165 Werte, 88206 Verlusttage._
 
 _HOEHER NACH X ist der Anteil der Faelle, in denen der Schluss nach X Handelstagen ueber dem Schluss des Verlusttags lag. TIEFER ist, wie weit der Kurs in dieser Zeit VORHER noch fiel - die Zahl, die entscheidet, ob ein Knock-out ueberlebt haette. Alles in ATR des Verlusttags._
 
@@ -8,14 +8,14 @@ _HOEHER NACH X ist der Anteil der Faelle, in denen der Schluss nach X Handelstag
 
 | Verlust ab | Faelle | hoeher 5T | hoeher 10T | hoeher 20T | hoeher 60T | tiefer 20T Median | tiefer 20T p90 |
 |---|---|---|---|---|---|---|---|
-| 0.25 ATR | 33775 | 54% | 55% | 56% | 59% | 1.82 | 5.21 |
-| 0.5 ATR | 22902 | 55% | 55% | 56% | 60% | 1.82 | 5.13 |
-| 0.75 ATR | 13859 | 54% | 55% | 56% | 59% | 1.89 | 5.39 |
-| 1.0 ATR | 7916 | 54% | 55% | 56% | 59% | 1.92 | 5.58 |
-| 1.25 ATR | 4253 | 54% | 56% | 57% | 62% | 1.88 | 5.83 |
-| 1.5 ATR | 2301 | 51% | 53% | 54% | 60% | 2.09 | 5.98 |
-| 1.75 ATR | 1245 | 52% | 55% | 57% | 64% | 1.89 | 6.14 |
-| 2.0 ATR | 729 | 53% | 55% | 58% | 62% | 1.94 | 6.33 |
+| 0.25 ATR | 33806 | 54% | 55% | 56% | 59% | 1.82 | 5.20 |
+| 0.5 ATR | 22915 | 55% | 55% | 56% | 60% | 1.82 | 5.13 |
+| 0.75 ATR | 13868 | 54% | 55% | 56% | 59% | 1.89 | 5.39 |
+| 1.0 ATR | 7923 | 54% | 55% | 56% | 59% | 1.92 | 5.59 |
+| 1.25 ATR | 4254 | 54% | 56% | 57% | 62% | 1.88 | 5.83 |
+| 1.5 ATR | 2302 | 51% | 53% | 54% | 60% | 2.09 | 5.97 |
+| 1.75 ATR | 1244 | 52% | 55% | 57% | 64% | 1.89 | 6.14 |
+| 2.0 ATR | 730 | 53% | 55% | 58% | 62% | 1.94 | 6.32 |
 | 2.25 ATR | 383 | 52% | 56% | 59% | 61% | 1.91 | 6.17 |
 | 2.5 ATR | 231 | 50% | 49% | 54% | 60% | 1.98 | 5.01 |
 | 2.75 ATR | 150 | 59% | 63% | 60% | 54% | 1.42 | 5.08 |
@@ -41,8 +41,8 @@ _Schluss ueber Eroeffnung je Wochentag, gemittelt ueber alle Werte. ERST RUNTER 
 
 | Wochentag | Faelle | Schluss ueber Eroeffnung | erst runter | mittlere Tagesrendite |
 |---|---|---|---|---|
-| Montag | 54216 | 53.1% | 51.7% | 0.124% |
-| Dienstag | 58663 | 49.3% | 48.7% | -0.035% |
+| Montag | 54216 | 53.2% | 51.7% | 0.124% |
+| Dienstag | 58828 | 49.3% | 48.6% | -0.034% |
 | Mittwoch | 58099 | 49.9% | 49.9% | 0.022% |
 | Donnerstag | 57199 | 50.7% | 50.0% | 0.020% |
 | Freitag | 56732 | 51.1% | 49.9% | 0.028% |
@@ -53,14 +53,14 @@ _Ein Lauf ist die Strecke von einem Tief bis zum naechsten Swing-Hoch, die Korre
 
 | Lauf ab | Faelle | Lauf Median | Anteil p10 | p25 | Median | p75 | p90 | ganz zurueck | Korrektur Tage |
 |---|---|---|---|---|---|---|---|---|---|
-| 1 ATR | 19679 | 1.5 ATR | 61% | 83% | 118% | 181% | 270% | 62% | 2 |
-| 2 ATR | 11649 | 2.4 ATR | 41% | 55% | 79% | 120% | 175% | 34% | 2 |
+| 1 ATR | 19698 | 1.5 ATR | 61% | 83% | 118% | 180% | 270% | 62% | 2 |
+| 2 ATR | 11658 | 2.4 ATR | 41% | 55% | 79% | 120% | 175% | 34% | 2 |
 | 3 ATR | 5381 | 3.4 ATR | 31% | 41% | 59% | 89% | 134% | 20% | 2 |
-| 4 ATR | 2519 | 4.4 ATR | 25% | 34% | 49% | 74% | 105% | 12% | 2 |
-| 5 ATR | 1299 | 5.4 ATR | 21% | 30% | 44% | 61% | 88% | 7% | 2 |
-| 6 ATR | 647 | 6.4 ATR | 19% | 26% | 38% | 59% | 78% | 5% | 2 |
-| 7 ATR | 411 | 7.4 ATR | 18% | 24% | 36% | 52% | 72% | 3% | 2 |
-| 8 ATR | 211 | 8.4 ATR | 17% | 24% | 31% | 47% | 62% | 2% | 2 |
+| 4 ATR | 2523 | 4.4 ATR | 25% | 34% | 49% | 74% | 105% | 12% | 2 |
+| 5 ATR | 1295 | 5.4 ATR | 21% | 30% | 44% | 62% | 89% | 7% | 2 |
+| 6 ATR | 649 | 6.4 ATR | 19% | 26% | 38% | 59% | 80% | 5% | 2 |
+| 7 ATR | 411 | 7.4 ATR | 17% | 24% | 36% | 52% | 72% | 2% | 2 |
+| 8 ATR | 209 | 8.4 ATR | 18% | 24% | 31% | 47% | 62% | 2% | 2 |
 | 9 ATR | 113 | 9.4 ATR | 15% | 20% | 28% | 45% | 59% | 1% | 2 |
 | 10 ATR | 76 | 10.5 ATR | 14% | 17% | 26% | 43% | 72% | 3% | 2 |
 | 11 ATR | 43 | 11.4 ATR | 17% | 22% | 32% | 44% | 69% | 0% | 2 |

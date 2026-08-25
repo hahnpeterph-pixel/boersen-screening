@@ -24,6 +24,7 @@ from datetime import datetime, timezone
 import pandas as pd
 
 import kurse
+import stand
 import tiefs_regel as regel
 
 HIER = os.path.dirname(os.path.abspath(__file__))
@@ -354,6 +355,11 @@ def main():
     # Verglichen wird nur unter Aktien. Rohstoffe und Devisen handeln
     # rund um die Uhr und tragen regelmaessig schon den Folgetag - das
     # ist kein Rueckstand und darf nicht als einer gemeldet werden.
+    # Schutzregel VOR der Standwarnung: erst die bessere Fassung je Wert
+    # bestimmen, dann beurteilen, ob noch etwas zurueckhaengt. Andersherum
+    # wuerde die Warnung Werte melden, die gleich darauf ersetzt werden.
+    zeilen, _gehalten = stand.zusammenfuehren(zeilen, CSV_AUS)
+
     aktien = [r for r in zeilen if r.get("art") == "Aktie" and r.get("datum")]
     neuester = max((r["datum"] for r in aktien), default="")
     zurueck = []

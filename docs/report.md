@@ -1,6 +1,52 @@
 # Boersen-Screening - 2026-08-25
 
-_Stand: Schlusskurse vom Vortag. Erstellt 2026-08-25T06:09:44+00:00 UTC. 165 Werte ausgewertet._
+_Stand: Schlusskurse vom 2026-08-24, aber 39 Werte haengen zurueck - siehe Standwarnung. Erstellt 2026-08-25T06:23:56+00:00 UTC. 165 Werte ausgewertet._
+
+> **Standwarnung: 39 von 165 Werten haengen zurueck.** Neuester Handelstag im Bericht ist 2026-08-24.
+>
+> Ursache ist in aller Regel Yahoo: die vorlaeufige Tageskerze einer Boerse wird ueber Nacht durch die offizielle Abrechnung ersetzt, und solange die fehlt, faellt der Tag weg. Betroffen sind meist die europaeischen Notierungen. Fuer diese Werte gelten Kurs, ATR, RSI und Tiefs unten NICHT fuer den neuesten Handelstag.
+>
+> | Wert | letzte Kerze |
+> |---|---|
+> | ADS.DE | 2026-08-21 |
+> | AIR.DE | 2026-08-21 |
+> | ALV.DE | 2026-08-21 |
+> | BAS.DE | 2026-08-21 |
+> | BAYN.DE | 2026-08-21 |
+> | BEI.DE | 2026-08-21 |
+> | BMW.DE | 2026-08-21 |
+> | BNR.DE | 2026-08-21 |
+> | CBK.DE | 2026-08-21 |
+> | CON.DE | 2026-08-21 |
+> | DB1.DE | 2026-08-21 |
+> | DBK.DE | 2026-08-21 |
+> | DHL.DE | 2026-08-21 |
+> | DTE.DE | 2026-08-21 |
+> | DTG.DE | 2026-08-21 |
+> | ENR.DE | 2026-08-21 |
+> | EOAN.DE | 2026-08-21 |
+> | FRE.DE | 2026-08-21 |
+> | HEI.DE | 2026-08-21 |
+> | HEN3.DE | 2026-08-21 |
+> | HNR1.DE | 2026-08-21 |
+> | IFX.DE | 2026-08-21 |
+> | MBG.DE | 2026-08-21 |
+> | MRK.DE | 2026-08-21 |
+> | MTX.DE | 2026-08-21 |
+> | MUV2.DE | 2026-08-21 |
+> | P911.DE | 2026-08-21 |
+> | PAH3.DE | 2026-08-21 |
+> | QIA.DE | 2026-08-21 |
+> | RHM.DE | 2026-08-21 |
+> | RWE.DE | 2026-08-21 |
+> | SAP.DE | 2026-08-21 |
+> | SHL.DE | 2026-08-21 |
+> | SIE.DE | 2026-08-21 |
+> | SRT3.DE | 2026-08-21 |
+> | SY1.DE | 2026-08-21 |
+> | VNA.DE | 2026-08-21 |
+> | VOW3.DE | 2026-08-21 |
+> | ZAL.DE | 2026-08-21 |
 
 ## 📖 Glossar (was die Spalten bedeuten)
 

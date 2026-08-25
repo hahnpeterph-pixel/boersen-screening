@@ -1,10 +1,55 @@
 # Marktdaten
 
-_Erstellt 2026-08-25 06:09 UTC. 171 Werte, Fenster 90 Kalendertage. EUR/USD 1.1658._
+_Erstellt 2026-08-25 06:24 UTC. 171 Werte, Fenster 90 Kalendertage. EUR/USD 1.1662._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
 Vollstaendige Daten: `docs/marktdaten.csv`
+
+> **Standwarnung: 40 von 158 Aktien haengen zurueck.** Neuester Handelstag 2026-08-24. Fuer die folgenden Werte gelten Kurs, ATR, RSI und Tiefs NICHT fuer diesen Tag. Die Spalte `stand_zurueck` in der CSV markiert sie ebenfalls.
+>
+> | Wert | letzte Kerze |
+> |---|---|
+> | ADS.DE | 2026-08-21 |
+> | AIR.DE | 2026-08-21 |
+> | ALV.DE | 2026-08-21 |
+> | ASML | 2026-08-21 |
+> | BAS.DE | 2026-08-21 |
+> | BAYN.DE | 2026-08-21 |
+> | BEI.DE | 2026-08-21 |
+> | BMW.DE | 2026-08-21 |
+> | BNR.DE | 2026-08-21 |
+> | CBK.DE | 2026-08-21 |
+> | CON.DE | 2026-08-21 |
+> | DB1.DE | 2026-08-21 |
+> | DBK.DE | 2026-08-21 |
+> | DHL.DE | 2026-08-21 |
+> | DTE.DE | 2026-08-21 |
+> | DTG.DE | 2026-08-21 |
+> | ENR.DE | 2026-08-21 |
+> | EOAN.DE | 2026-08-21 |
+> | FRE.DE | 2026-08-21 |
+> | HEI.DE | 2026-08-21 |
+> | HEN3.DE | 2026-08-21 |
+> | HNR1.DE | 2026-08-21 |
+> | IFX.DE | 2026-08-21 |
+> | MBG.DE | 2026-08-21 |
+> | MRK.DE | 2026-08-21 |
+> | MTX.DE | 2026-08-21 |
+> | MUV2.DE | 2026-08-21 |
+> | P911.DE | 2026-08-21 |
+> | PAH3.DE | 2026-08-21 |
+> | QIA.DE | 2026-08-21 |
+> | RHM.DE | 2026-08-21 |
+> | RWE.DE | 2026-08-21 |
+> | SAP.DE | 2026-08-21 |
+> | SHL.DE | 2026-08-21 |
+> | SIE.DE | 2026-08-21 |
+> | SRT3.DE | 2026-08-21 |
+> | SY1.DE | 2026-08-21 |
+> | VNA.DE | 2026-08-21 |
+> | VOW3.DE | 2026-08-21 |
+> | ZAL.DE | 2026-08-21 |
 
 ## Kerzensignale von gestern
 
@@ -40,13 +85,12 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | BAYN.DE (BAYN.DE) | 48.04 | - | - | ja | 50.86 |
 | MTX.DE (MTX.DE) | 352.4 | - | - | ja | 41.01 |
 | QIA.DE (QIA.DE) | 37.565 | - | - | ja | 55.89 |
-| Silber (SI=F) | 68.025 | - | ja | ja | 62.35 |
-| Platin (PL=F) | 1859.4 | - | ja | ja | 63.88 |
-| Palladium (PA=F) | 1344.5 | - | ja | ja | 53.89 |
-| Brent Oel (BZ=F) | 91.51 | - | - | ja | 55.37 |
-| Kupfer (HG=F) | 6.5965 | - | ja | ja | 57.66 |
+| Silber (SI=F) | 68.29 | - | ja | ja | 63.31 |
+| Platin (PL=F) | 1867.0 | - | ja | ja | 65.02 |
+| Palladium (PA=F) | 1346.0 | - | ja | ja | 54.15 |
+| Brent Oel (BZ=F) | 91.34 | - | - | ja | 55.04 |
+| WTI Oel (CL=F) | 84.3 | - | - | ja | 53.03 |
 | Kakao (CC=F) | 5820.0 | - | - | ja | 54.4 |
-| EUR/USD (EURUSD=X) | 1.1658 | - | - | ja | 66.4 |
 
 ---
 

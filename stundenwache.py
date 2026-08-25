@@ -127,6 +127,41 @@ def urteil(tag: pd.DataFrame, marke: float, richtung: str) -> dict:
     return {"art": art, "stunden": stunden, "extrem": extrem}
 
 
+def stimmigkeit(tag: pd.DataFrame, tages: pd.DataFrame,
+                a: float | None) -> tuple[str, float]:
+    """Passen Stundenreihe und Tagesreihe ueberhaupt zusammen?
+
+    Beide Reihen kommen von Yahoo, aber aus verschiedenen Endpunkten. Rund
+    um Splits und andere Kapitalmassnahmen rechnet der eine Endpunkt die
+    Historie schon zurueck und der andere noch nicht - dann stehen die
+    Marken aus der Tagesreihe auf einer anderen Skala als der laufende
+    Kurs aus der Stundenreihe.
+
+    Beobachtet am 25.08.2026 im ersten Lauf: MRNA hatte Tagesmarken bei
+    62-65 und einen Stundenkurs von 159 (Faktor 2,43), MRK Marken bei
+    127-131 gegen 155 (Faktor 1,19). Beides wurde als "Swing-Hoch
+    ueberwunden" mit 5,2 bzw. 5,3 ATR gemeldet - eine Zahl, die wie ein
+    starkes Signal aussieht und in Wahrheit ein Skalenfehler war. Die
+    uebrigen 156 Werte lagen zwischen 0,80 und 1,03.
+
+    Lieber "unklar" ausweisen als eine erfundene Zahl. Geprueft wird gegen
+    den letzten Tagesschluss; ein echter Kurssprung faellt damit auch auf,
+    was in Ordnung ist - dann steht der Wert zur Ansicht statt zum Urteil.
+    """
+    letzter_tagesschluss = float(tages["Close"].iloc[-1])
+    jetzt = float(tag["Close"].iloc[-1])
+    if letzter_tagesschluss <= 0:
+        return "unklar", 0.0
+    abweichung = abs(jetzt - letzter_tagesschluss) / letzter_tagesschluss
+    in_atr = abs(jetzt - letzter_tagesschluss) / a if a else 0.0
+    # Beide Huerden muessen fallen: prozentual gross UND in ATR gross.
+    # Ein volatiler Wert darf sich bewegen, ohne gleich als unstimmig zu
+    # gelten.
+    if abweichung > 0.15 and in_atr > 3.0:
+        return "unstimmig", round(abweichung, 4)
+    return "ok", round(abweichung, 4)
+
+
 def je_wert(ticker: str) -> dict | None:
     tages = kurse.kerzen(ticker, period="400d")
     if tages is None:
@@ -147,11 +182,16 @@ def je_wert(ticker: str) -> dict | None:
 
     t = tiefs[0]
     u_tief = urteil(tag, t["tief"], "unten")
+    lage, abw = stimmigkeit(tag, tages, a)
+    if lage == "unstimmig":
+        u_tief["art"] = "unklar"
 
     zeile = {
         "ticker": ticker,
         "datum": tag.index[-1].date().isoformat(),
         "stunden_erfasst": len(tag),
+        "reihen_lage": lage,
+        "reihen_abweichung": abw,
         "tages_offen": round(float(tag["Open"].iloc[0]), 4),
         "tages_hoch": round(float(tag["High"].max()), 4),
         "tages_tief": round(float(tag["Low"].min()), 4),
@@ -174,6 +214,8 @@ def je_wert(ticker: str) -> dict | None:
     if hochs:
         h = hochs[-1]
         u_hoch = urteil(tag, h["hoch"], "oben")
+        if lage == "unstimmig":
+            u_hoch["art"] = "unklar"
         zeile.update({
             "hoch_marke": round(h["hoch"], 4),
             "hoch_datum": pd.Timestamp(h["datum"]).date().isoformat(),
@@ -188,7 +230,8 @@ def je_wert(ticker: str) -> dict | None:
     return zeile
 
 
-FELDER = ["ticker", "datum", "stunden_erfasst", "tages_offen", "tages_hoch",
+FELDER = ["ticker", "datum", "stunden_erfasst", "reihen_lage",
+          "reihen_abweichung", "tages_offen", "tages_hoch",
           "tages_tief", "tages_schluss", "atr",
           "tief_marke", "tief_datum", "tief_bestaetigt", "tief_urteil",
           "tief_stunden_drunter", "tief_abstand_atr", "tief_tiefster_punkt_atr",
@@ -213,20 +256,40 @@ def md_schreiben(zeilen: list[dict]) -> None:
     erobert = [z for z in zeilen if z["tief_urteil"] == "zurueckerobert"]
     getestet = [z for z in zeilen if z["tief_urteil"] == "angetestet"]
     ueber_hoch = [z for z in zeilen if z.get("hoch_urteil") == "gebrochen"]
+    unstimmig = [z for z in zeilen if z["reihen_lage"] == "unstimmig"]
+
+    # Wie weit ist der Handelstag? Ein voller US-Tag hat 7 Stundenkerzen,
+    # ein DAX-Tag 9. Weniger heisst: der Lauf faellt mitten in die Sitzung,
+    # und "Schluss" ist in Wahrheit der Stand im Moment des Abrufs. Im
+    # ersten Lauf am 25.08.2026 um 17:40 UTC hatten die US-Werte erst 5 von
+    # 7 Kerzen - die Marktdaten waren also noch nicht endgueltig.
+    stunden = sorted({z["stunden_erfasst"] for z in zeilen})
+    voll = max(stunden) if stunden else 0
+    teilweise = [z for z in zeilen if z["stunden_erfasst"] < 7]
 
     L = ["# Stundenwache", "",
          f"Stand: {zeilen[0]['datum'] if zeilen else '-'} · "
          f"{len(zeilen)} Werte mit Stundendaten · "
-         f"erstellt {datetime.now(timezone.utc):%Y-%m-%d %H:%M} UTC", "",
-         "Marken sind das juengste Swing-Tief und das juengste Swing-Hoch aus "
-         "`tiefs_regel.py`, also dieselben wie im Tagesbericht. Geprueft wird "
-         "nur, was der letzte Handelstag auf Stundenbasis damit gemacht hat.",
-         "", "Lesart der Urteile:", "",
-         "- **gebrochen** - eine Stundenkerze hat jenseits der Marke geschlossen",
-         "- **zurueckerobert** - im Tagesverlauf drunter gewesen, am Ende darueber "
-         "geschlossen. Auf der Tageskerze nicht erkennbar.",
-         "- **angetestet** - nur mit dem Docht beruehrt, kein Schluss dahinter",
-         ""]
+         f"erstellt {datetime.now(timezone.utc):%Y-%m-%d %H:%M} UTC", ""]
+
+    if teilweise:
+        L += [f"> **Sitzung noch nicht abgeschlossen.** {len(teilweise)} Werte "
+              f"haben weniger als 7 Stundenkerzen (erfasste Stunden: "
+              f"{', '.join(str(s) for s in stunden)}). Bei diesen ist "
+              f"\"Schluss\" der Stand im Moment des Abrufs, nicht der "
+              f"Tagesschluss - die Urteile koennen sich bis Handelsende noch "
+              f"drehen.", ""]
+
+    L += ["Marken sind das juengste Swing-Tief und das juengste Swing-Hoch aus "
+          "`tiefs_regel.py`, also dieselben wie im Tagesbericht. Geprueft wird "
+          "nur, was der letzte Handelstag auf Stundenbasis damit gemacht hat.",
+          "", "Lesart der Urteile:", "",
+          "- **gebrochen** - eine Stundenkerze hat jenseits der Marke geschlossen",
+          "- **zurueckerobert** - im Tagesverlauf drunter gewesen, am Ende darueber "
+          "geschlossen. Auf der Tageskerze nicht erkennbar.",
+          "- **angetestet** - nur mit dem Docht beruehrt, kein Schluss dahinter",
+          "- **unklar** - Stunden- und Tagesreihe passen nicht zusammen, siehe unten",
+          ""]
 
     def block(titel: str, liste: list[dict], schluessel: str,
               erklaerung: str) -> None:
@@ -264,6 +327,27 @@ def md_schreiben(zeilen: list[dict]) -> None:
             L.append(f"| {z['ticker']} | {z['hoch_marke']} | {z['tages_schluss']} "
                      f"| {z.get('hoch_abstand_atr', '')} "
                      f"| {z.get('hoch_stunden_drueber', '')} |")
+        L.append("")
+    else:
+        L.append("Keine.")
+        L.append("")
+
+    L.append(f"## Reihen unstimmig - kein Urteil ({len(unstimmig)})")
+    L.append("")
+    if unstimmig:
+        L.append("Stundenkurs und Tagesreihe stehen auf verschiedenen Skalen - "
+                 "typisch rund um Splits, wenn die beiden Yahoo-Endpunkte die "
+                 "Historie unterschiedlich zurueckrechnen. Die Marken aus der "
+                 "Tagesreihe sind hier nicht mit dem laufenden Kurs "
+                 "vergleichbar, deshalb steht kein Urteil. Von Hand im Chart "
+                 "nachsehen.")
+        L.append("")
+        L.append("| Wert | Tief-Marke | Hoch-Marke | Stundenkurs | Abweichung |")
+        L.append("|---|---|---|---|---|")
+        for z in sorted(unstimmig, key=lambda x: -x["reihen_abweichung"]):
+            L.append(f"| {z['ticker']} | {z['tief_marke']} | "
+                     f"{z.get('hoch_marke', '')} | {z['tages_schluss']} | "
+                     f"{z['reihen_abweichung']:.0%} |")
         L.append("")
     else:
         L.append("Keine.")

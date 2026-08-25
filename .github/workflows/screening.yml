@@ -71,6 +71,17 @@ jobs:
         run: python stundenwache.py
         continue-on-error: true
 
+      # Schlusskurse je Wert und Handelstag fuer das Blatt Rueckblick.
+      # Laeuft im selben Workflow, damit nichts von Hand gestartet werden
+      # muss - die Kerzen liegen zu diesem Zeitpunkt ohnehin im Cache von
+      # kurse.py, der Abruf kostet also fast nichts extra.
+      # continue-on-error wie bei der Stundenwache: eine Auswertung, die
+      # erst nach Wochen gebraucht wird, darf den Tagesbericht nicht
+      # gefaehrden.
+      - name: Kursverlauf ausfuehren
+        run: python kursverlauf.py
+        continue-on-error: true
+
       - name: Ergebnis speichern
         run: |
           git config user.name "screening-bot"

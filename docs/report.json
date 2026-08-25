@@ -2,21 +2,21 @@
  "date": "2026-08-25",
  "ranks": {
   "turnaround": [
-   "CDW",
    "QIA.DE",
-   "ADSK",
-   "AXP",
    "ADBE",
+   "ADSK",
    "AXON",
+   "CDW",
+   "AXP",
    "BEI.DE",
-   "SPGI",
    "KHC",
+   "SPGI",
    "HD",
    "HEN3.DE",
-   "SHW",
    "HNR1.DE",
    "SHL.DE",
-   "PCAR"
+   "ZAL.DE",
+   "SHW"
   ],
   "momentum": [
    "MRNA",
@@ -24,16 +24,16 @@
    "MRK",
    "ILMN",
    "MRVL",
-   "TEAM",
    "ALV.DE",
    "DB1.DE",
+   "TEAM",
    "AMD",
-   "CBK.DE",
+   "JPM",
    "DHL.DE",
-   "CSX",
    "SY1.DE",
    "DTG.DE",
-   "BKNG"
+   "BKNG",
+   "CSX"
   ],
   "value": [
    "MU",
@@ -46,75 +46,57 @@
    "ENR.DE",
    "VRTX",
    "ODFL",
-   "SPGI",
    "DXCM",
+   "SPGI",
    "GOOG",
    "GOOGL",
-   "DB1.DE"
+   "CVX"
   ]
  },
  "changes": {
   "turnaround": {
    "entries": [
     {
-     "ticker": "HNR1.DE",
-     "rank": 13
-    },
-    {
-     "ticker": "SHL.DE",
+     "ticker": "ZAL.DE",
      "rank": 14
-    },
-    {
-     "ticker": "PCAR",
-     "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "BNR.DE",
-     "old_rank": 10
-    },
-    {
-     "ticker": "MUV2.DE",
-     "old_rank": 11
-    },
-    {
-     "ticker": "BAYN.DE",
-     "old_rank": 13
+     "ticker": "PCAR",
+     "old_rank": 15
     }
    ],
-   "moves": [
-    {
-     "ticker": "BEI.DE",
-     "rank": 7,
-     "delta": 7
-    }
-   ]
+   "moves": []
   },
   "momentum": {
    "entries": [
     {
-     "ticker": "BKNG",
+     "ticker": "JPM",
+     "rank": 10
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "CBK.DE",
+     "old_rank": 10
+    }
+   ],
+   "moves": []
+  },
+  "value": {
+   "entries": [
+    {
+     "ticker": "CVX",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "BNR.DE",
-     "old_rank": 13
+     "ticker": "DB1.DE",
+     "old_rank": 15
     }
    ],
-   "moves": [
-    {
-     "ticker": "AMD",
-     "rank": 9,
-     "delta": 5
-    }
-   ]
-  },
-  "value": {
-   "entries": [],
-   "exits": [],
    "moves": []
   },
   "analyst_flips": []

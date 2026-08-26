@@ -69,6 +69,17 @@ WEITERE = ["GC=F", "SI=F", "NG=F", "CL=F", "EURUSD=X"]
 UNIVERSUM = list(dict.fromkeys(US + DAX + WEITERE))
 
 
+# Ein Tag zaehlt nur als Handelstag, wenn ihn mindestens dieser Anteil
+# der Werte hat. Grund: Rohstoff- und Waehrungsnotierungen laufen fast
+# rund um die Uhr. Beim Lauf am 25.08.2026 um 23:04 UTC - das ist bereits
+# der 26.08. in Mitteleuropa - hatte EUR/USD schon eine Kerze vom naechsten
+# Tag, die 162 von 163 Werten fehlte. Aus so einer Spalte wird im Blatt
+# Rueckblick ein falscher Spaltenversatz: "5 Handelstage spaeter" wuerde
+# einen Tag mitzaehlen, den es fuer diesen Wert nie gab. Betroffen waren
+# drei Spalten, zwei davon am Rand des Zeitfensters.
+MINDESTBESETZUNG = 0.20
+
+
 def reihen() -> tuple[list[str], dict[str, dict[str, float]]]:
     """Schlusskurse je Wert, plus die gemeinsame Liste der Handelstage.
 
@@ -91,7 +102,20 @@ def reihen() -> tuple[list[str], dict[str, dict[str, float]]]:
         alle_tage.update(werte)
         if i % 25 == 0:
             print(f"  {i}/{len(UNIVERSUM)} ...")
-    return sorted(alle_tage), je_wert
+
+    if not je_wert:
+        return [], {}
+
+    # Duenn besetzte Tage aus der Achse werfen, siehe MINDESTBESETZUNG.
+    schwelle = len(je_wert) * MINDESTBESETZUNG
+    gezaehlt = {d: sum(1 for w in je_wert.values() if d in w) for d in alle_tage}
+    behalten = sorted(d for d, n in gezaehlt.items() if n >= schwelle)
+    verworfen = sorted(d for d, n in gezaehlt.items() if n < schwelle)
+    if verworfen:
+        print(f"  {len(verworfen)} Tage verworfen (unter "
+              f"{MINDESTBESETZUNG:.0%} der Werte): "
+              + ", ".join(f"{d} ({gezaehlt[d]})" for d in verworfen))
+    return behalten, je_wert
 
 
 def schreiben(tage: list[str], je_wert: dict[str, dict[str, float]]) -> None:

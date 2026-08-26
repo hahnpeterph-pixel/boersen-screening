@@ -1,55 +1,55 @@
 {
- "date": "2026-08-25",
+ "date": "2026-08-26",
  "ranks": {
   "turnaround": [
-   "ADBE",
    "ADSK",
-   "AXON",
-   "CDW",
-   "AXP",
-   "KHC",
-   "BAYN.DE",
-   "SPGI",
-   "HNR1.DE",
-   "BNR.DE",
-   "HD",
+   "QIA.DE",
    "BEI.DE",
+   "CDW",
+   "HD",
    "SHW",
-   "CTAS",
-   "QIA.DE"
+   "SPGI",
+   "CTSH",
+   "DTE.DE",
+   "PCAR",
+   "AXP",
+   "PYPL",
+   "MTX.DE",
+   "CCEP",
+   "HEN3.DE"
   ],
   "momentum": [
-   "MRNA",
    "ABNB",
-   "MRK",
+   "DB1.DE",
+   "FTNT",
    "ILMN",
    "MRVL",
-   "TEAM",
-   "ALV.DE",
-   "DB1.DE",
-   "BNR.DE",
-   "AMD",
-   "JPM",
-   "SY1.DE",
-   "SIE.DE",
+   "MRNA",
+   "TRV",
    "DHL.DE",
-   "DTG.DE"
+   "MRK",
+   "CSCO",
+   "SY1.DE",
+   "CSX",
+   "ALV.DE",
+   "DTG.DE",
+   "KO"
   ],
   "value": [
    "MU",
    "NVDA",
    "ADSK",
-   "MTX.DE",
+   "META",
    "REGN",
    "ABNB",
    "V",
+   "MTX.DE",
    "ENR.DE",
    "VRTX",
    "ODFL",
    "DXCM",
    "SPGI",
    "GOOG",
-   "DB1.DE",
    "GOOGL"
   ]
  },
@@ -57,79 +57,176 @@
   "turnaround": {
    "entries": [
     {
-     "ticker": "BAYN.DE",
-     "rank": 7
+     "ticker": "CTSH",
+     "rank": 8
     },
     {
-     "ticker": "BNR.DE",
+     "ticker": "DTE.DE",
+     "rank": 9
+    },
+    {
+     "ticker": "PCAR",
      "rank": 10
     },
     {
-     "ticker": "CTAS",
+     "ticker": "PYPL",
+     "rank": 12
+    },
+    {
+     "ticker": "MTX.DE",
+     "rank": 13
+    },
+    {
+     "ticker": "CCEP",
      "rank": 14
+    },
+    {
+     "ticker": "HEN3.DE",
+     "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "HEN3.DE",
-     "old_rank": 11
+     "ticker": "ADBE",
+     "old_rank": 1
     },
     {
-     "ticker": "SHL.DE",
-     "old_rank": 13
+     "ticker": "AXON",
+     "old_rank": 3
     },
     {
-     "ticker": "ZAL.DE",
+     "ticker": "KHC",
+     "old_rank": 6
+    },
+    {
+     "ticker": "BAYN.DE",
+     "old_rank": 7
+    },
+    {
+     "ticker": "HNR1.DE",
+     "old_rank": 9
+    },
+    {
+     "ticker": "BNR.DE",
+     "old_rank": 10
+    },
+    {
+     "ticker": "CTAS",
      "old_rank": 14
     }
    ],
    "moves": [
     {
-     "ticker": "BEI.DE",
-     "rank": 12,
-     "delta": -5
+     "ticker": "QIA.DE",
+     "rank": 2,
+     "delta": 13
     },
     {
-     "ticker": "QIA.DE",
-     "rank": 15,
-     "delta": -14
+     "ticker": "BEI.DE",
+     "rank": 3,
+     "delta": 9
+    },
+    {
+     "ticker": "HD",
+     "rank": 5,
+     "delta": 6
+    },
+    {
+     "ticker": "SHW",
+     "rank": 6,
+     "delta": 7
+    },
+    {
+     "ticker": "AXP",
+     "rank": 11,
+     "delta": -6
     }
    ]
   },
   "momentum": {
    "entries": [
     {
-     "ticker": "BNR.DE",
-     "rank": 9
+     "ticker": "FTNT",
+     "rank": 3
     },
     {
-     "ticker": "SIE.DE",
-     "rank": 13
+     "ticker": "TRV",
+     "rank": 7
+    },
+    {
+     "ticker": "CSCO",
+     "rank": 10
+    },
+    {
+     "ticker": "CSX",
+     "rank": 12
+    },
+    {
+     "ticker": "KO",
+     "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "BKNG",
-     "old_rank": 14
+     "ticker": "TEAM",
+     "old_rank": 6
     },
     {
-     "ticker": "CSX",
-     "old_rank": 15
+     "ticker": "BNR.DE",
+     "old_rank": 9
+    },
+    {
+     "ticker": "AMD",
+     "old_rank": 10
+    },
+    {
+     "ticker": "JPM",
+     "old_rank": 11
+    },
+    {
+     "ticker": "SIE.DE",
+     "old_rank": 13
     }
    ],
-   "moves": []
+   "moves": [
+    {
+     "ticker": "DB1.DE",
+     "rank": 2,
+     "delta": 6
+    },
+    {
+     "ticker": "MRNA",
+     "rank": 6,
+     "delta": -5
+    },
+    {
+     "ticker": "DHL.DE",
+     "rank": 8,
+     "delta": 6
+    },
+    {
+     "ticker": "MRK",
+     "rank": 9,
+     "delta": -6
+    },
+    {
+     "ticker": "ALV.DE",
+     "rank": 13,
+     "delta": -6
+    }
+   ]
   },
   "value": {
    "entries": [
     {
-     "ticker": "DB1.DE",
-     "rank": 14
+     "ticker": "META",
+     "rank": 4
     }
    ],
    "exits": [
     {
-     "ticker": "CVX",
-     "old_rank": 15
+     "ticker": "DB1.DE",
+     "old_rank": 14
     }
    ],
    "moves": []

@@ -6,11 +6,11 @@
    "ADSK",
    "BEI.DE",
    "AXP",
-   "HD",
    "SHW",
    "CTSH",
-   "SPGI",
    "PYPL",
+   "SPGI",
+   "HD",
    "HEN3.DE",
    "PCAR",
    "SHL.DE",
@@ -55,80 +55,14 @@
  },
  "changes": {
   "turnaround": {
-   "entries": [
-    {
-     "ticker": "SHL.DE",
-     "rank": 12
-    },
-    {
-     "ticker": "MELI",
-     "rank": 13
-    },
-    {
-     "ticker": "ROP",
-     "rank": 14
-    },
-    {
-     "ticker": "ZAL.DE",
-     "rank": 15
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "CDW",
-     "old_rank": 4
-    },
-    {
-     "ticker": "DTE.DE",
-     "old_rank": 9
-    },
-    {
-     "ticker": "MTX.DE",
-     "old_rank": 13
-    },
-    {
-     "ticker": "CCEP",
-     "old_rank": 14
-    }
-   ],
-   "moves": [
-    {
-     "ticker": "AXP",
-     "rank": 4,
-     "delta": 7
-    },
-    {
-     "ticker": "HEN3.DE",
-     "rank": 10,
-     "delta": 5
-    }
-   ]
+   "entries": [],
+   "exits": [],
+   "moves": []
   },
   "momentum": {
-   "entries": [
-    {
-     "ticker": "TEAM",
-     "rank": 8
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "CSCO",
-     "old_rank": 10
-    }
-   ],
-   "moves": [
-    {
-     "ticker": "ALV.DE",
-     "rank": 5,
-     "delta": 8
-    },
-    {
-     "ticker": "DB1.DE",
-     "rank": 7,
-     "delta": -5
-    }
-   ]
+   "entries": [],
+   "exits": [],
+   "moves": []
   },
   "value": {
    "entries": [],

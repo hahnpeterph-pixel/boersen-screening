@@ -1,6 +1,6 @@
 # Stundenwache
 
-Stand: 2026-08-26 · 158 Werte mit Stundendaten · erstellt 2026-08-27 03:18 UTC
+Stand: 2026-08-26 · 158 Werte mit Stundendaten · erstellt 2026-08-27 05:59 UTC
 
 > **Sitzung noch nicht abgeschlossen.** 1 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 6, 7, 9). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
 
@@ -35,7 +35,7 @@ Im Tagesverlauf unter der Marke, am Ende darueber. Das ist der Fall, den die Tag
 | VNA.DE | 19.74 | 19.765 | 0.07 | 1 |
 | MBG.DE | 44.615 | 44.73 | 0.156 | 1 |
 
-## Tief angetestet (6)
+## Tief angetestet (8)
 
 Docht bis unter die Marke, kein Stundenschluss darunter.
 
@@ -43,10 +43,12 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 |---|---|---|---|---|
 | ABNB | 187.9 | 188.0 | 0.014 | 0 |
 | LULU | 115.87 | 116.35 | 0.112 | 0 |
+| GS | 1036.78 | 1040.6899 | 0.173 | 0 |
 | ASML | 1481.2 | 1494.2 | 0.263 | 0 |
 | BNR.DE | 60.24 | 60.88 | 0.392 | 0 |
 | FANG | 196.65 | 199.83 | 0.546 | 0 |
 | RHM.DE | 1110.4 | 1143.0 | 0.694 | 0 |
+| ADBE | 265.04 | 273.37 | 0.822 | 0 |
 
 ## Swing-Hoch ueberwunden (30)
 
@@ -57,13 +59,13 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | VZ | 47.45 | 50.19 | 3.542 | 7 |
 | HEI.DE | 161.75 | 172.0 | 3.056 | 9 |
 | V | 365.14 | 383.81 | 2.968 | 7 |
-| ILMN | 203.75 | 224.92 | 2.37 | 7 |
+| ILMN | 203.75 | 224.92 | 2.369 | 7 |
 | DASH | 219.53 | 236.92 | 2.138 | 7 |
 | SY1.DE | 90.1 | 93.2 | 2.011 | 9 |
 | PYPL | 59.44 | 61.82 | 1.705 | 7 |
 | ALV.DE | 443.5 | 452.0 | 1.582 | 9 |
 | CDNS | 319.78 | 334.81 | 1.564 | 7 |
-| CMCSA | 26.49 | 27.21 | 1.236 | 7 |
+| CMCSA | 26.49 | 27.21 | 1.235 | 7 |
 | NFLX | 78.73 | 81.46 | 1.229 | 7 |
 | DIS | 107.11 | 109.64 | 1.159 | 7 |
 | CBK.DE | 40.13 | 40.92 | 1.134 | 9 |

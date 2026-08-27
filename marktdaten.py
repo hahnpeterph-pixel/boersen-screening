@@ -255,6 +255,21 @@ def hoeheres_hoch(df):
     return bool(float(df["High"].iloc[-1]) > float(df["High"].iloc[-2]))
 
 
+def kein_neues_tief(df):
+    """Fruehere, weichere Alternative zu 'Tief bestaetigt' (Y-Spalte/tief1_best).
+
+    'Tief bestaetigt' feuert erst, wenn eine spaetere Kerze das Hoch der
+    Tiefkerze durchbricht - das kann Tage oder Prozente nach dem eigentlichen
+    Wendepunkt liegen (siehe Honeywell, 27.08.2026: guter Verlauf, Einstieg
+    verpasst, weil die Bestaetigung zu spaet kam). Dieses Signal fragt
+    stattdessen nur: ist das heutige Tagestief hoeher als das gestrige?
+    Kein Ausbruch noetig, nur das Ausbleiben eines neuen, tieferen Tiefs.
+
+    Bewusst einen einzigen Tag Rueckblick, kein Schwellenwert ueber mehrere
+    Tage - Peter zieht lieber einmal zu frueh nach als einmal zu spaet."""
+    return bool(float(df["Low"].iloc[-1]) > float(df["Low"].iloc[-2]))
+
+
 def umkehrkerze(df):
     """Bearishes Warnsignal: Schluss unter Eroeffnung UND unter
     Vortageshoch UND unter Vortagestief."""
@@ -311,6 +326,7 @@ def main():
             "ema50": z(ema(df, 50)), "ema200": z(ema(df, 200)),
             "hammer": int(hammer(df, a)),
             "hoeheres_hoch": int(hoeheres_hoch(df)),
+            "kein_neues_tief": int(kein_neues_tief(df)),
             "umkehrkerze": int(umkehrkerze(df)),
             "hoch60": z(hoch60(df)),
             "vol_druck5": (z(vol_druck5(df), 2) if mitvol else ""),

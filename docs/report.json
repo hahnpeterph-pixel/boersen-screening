@@ -2,9 +2,9 @@
  "date": "2026-08-28",
  "ranks": {
   "turnaround": [
+   "WDAY",
    "MELI",
    "ZS",
-   "WDAY",
    "AXON",
    "ADBE",
    "QIA.DE",
@@ -55,25 +55,9 @@
  },
  "changes": {
   "turnaround": {
-   "entries": [
-    {
-     "ticker": "QIA.DE",
-     "rank": 6
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "KHC",
-     "old_rank": 14
-    }
-   ],
-   "moves": [
-    {
-     "ticker": "BEI.DE",
-     "rank": 8,
-     "delta": -5
-    }
-   ]
+   "entries": [],
+   "exits": [],
+   "moves": []
   },
   "momentum": {
    "entries": [],

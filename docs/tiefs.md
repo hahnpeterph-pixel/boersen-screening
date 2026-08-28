@@ -1,6 +1,6 @@
 # Tiefs, Volumen und Kaufregel-Check
 
-_Erstellt 2026-08-28 01:51 UTC. Fenster: letzte 90 Kalendertage. Tiefs nach der Umkehr-Regel (tiefs_regel.py): ein Tief zaehlt, sobald eine spaetere Kerze das Hoch der Tiefkerze ueberschreitet. Solange es abwaerts geht, gilt das tiefste Tief der Strecke. Gerechnet wird auf abgeschlossenen Tageskerzen._
+_Erstellt 2026-08-28 06:06 UTC. Fenster: letzte 90 Kalendertage. Tiefs nach der Umkehr-Regel (tiefs_regel.py): ein Tief zaehlt, sobald eine spaetere Kerze das Hoch der Tiefkerze ueberschreitet. Solange es abwaerts geht, gilt das tiefste Tief der Strecke. Gerechnet wird auf abgeschlossenen Tageskerzen._
 
 ## Kaufregel
 
@@ -81,7 +81,7 @@ _Legende: `+` Signal da, `!` Signal da aber RSI zu hoch, `-` warten._
 
 | Wert | Bezugstief | Puffer | Faktor | Einsatz | Hinweis |
 |---|---|---|---|---|---|
-| Take-Two (TTWO) | 231,58 (20.08., Chart) | 0,34 x ATR | 0,17 | **66,90 EUR** | kaufbar |
+| Take-Two (TTWO) | 231,58 (20.08., Chart) | 0,34 x ATR | 0,17 | **66,85 EUR** | kaufbar |
 | Meta Platforms (META) | 524,52 (30.07., Chart) | 0,31 x ATR | 0,15 | **65,29 EUR** | kaufbar |
 | Micron (MU) | 915,18 (19.08., Chart) | 1,08 x ATR | 0,54 | **103,80 EUR** | kaufbar |
 | Microsoft (MSFT) | 477,15 (18.08., Chart) | 13,11 x ATR | 1,00 | **150,00 EUR** | kaufbar |
@@ -96,7 +96,7 @@ Tief minus 2,0 x ATR. Die Hebelangabe ist das, was sich bei diesem KO rechnerisc
 
 | Wert | Kurs | ATR | nach Trendtief | Hebel | konservativ | Hebel |
 |---|---|---|---|---|---|---|
-| Take-Two (TTWO) | 233,00 | 8,17 | 208,77 | 9,6x | 189,67 | 5,4x |
+| Take-Two (TTWO) | 233,00 | 8,19 | 208,72 | 9,6x | 189,62 | 5,4x |
 | Meta Platforms (META) | 571,10 | 18,54 | 500,19 | 8,1x | 487,41 | 6,8x |
 | Micron (MU) | 935,39 | 51,47 | 784,67 | 6,2x | 634,94 | 3,1x |
 | Microsoft (MSFT) | 505,06 | 9,83 | 458,87 | 10,9x | 329,54 | 2,9x |
@@ -134,7 +134,7 @@ _Diese Zeilen in die gelben Spalten uebertragen. Reihenfolge wie dort._
 
 | Ticker | Kurs | ATR(14) | RSI | Chart-Tief | Datum Tief | Vol. rel. |
 |---|---|---|---|---|---|---|
-| TTWO | 233,00 | 8,17 | 42,9 | 231,58 | 2026-08-20 | 1,84 |
+| TTWO | 233,00 | 8,19 | 42,9 | 231,58 | 2026-08-20 | 1,84 |
 | META | 571,10 | 18,54 | 46,9 | 524,52 | 2026-07-30 | 1,00 |
 | MU | 935,39 | 51,47 | 51,0 | 915,18 | 2026-08-19 | 0,77 |
 | MSFT | 505,06 | 9,83 | 70,5 | 477,15 | 2026-08-18 | 0,61 |

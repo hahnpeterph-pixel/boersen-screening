@@ -1,8 +1,6 @@
 # Stundenwache
 
-Stand: 2026-08-27 · 158 Werte mit Stundendaten · erstellt 2026-08-28 06:07 UTC
-
-> **Sitzung noch nicht abgeschlossen.** 1 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 6, 7, 9). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
+Stand: 2026-08-27 · 158 Werte mit Stundendaten · erstellt 2026-08-28 07:14 UTC
 
 Marken sind das juengste Swing-Tief und das juengste Swing-Hoch aus `tiefs_regel.py`, also dieselben wie im Tagesbericht. Geprueft wird nur, was der letzte Handelstag auf Stundenbasis damit gemacht hat.
 
@@ -51,7 +49,7 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | ADS.DE | 150.7 | 153.15 | 0.578 | 0 |
 | VNA.DE | 19.7 | 19.92 | 0.634 | 0 |
 | BKR | 60.87 | 62.1 | 0.783 | 0 |
-| ADP | 279.31 | 284.445 | 0.862 | 0 |
+| ADP | 279.31 | 284.68 | 0.901 | 0 |
 | PAH3.DE | 27.09 | 27.88 | 1.455 | 0 |
 | P911.DE | 42.93 | 44.9 | 1.937 | 0 |
 | BMW.DE | 57.56 | 59.88 | 2.002 | 0 |

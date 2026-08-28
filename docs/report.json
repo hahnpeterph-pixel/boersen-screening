@@ -7,32 +7,32 @@
    "ZS",
    "AXON",
    "ADBE",
-   "QIA.DE",
    "AXP",
    "BEI.DE",
    "DTE.DE",
+   "FRE.DE",
    "JPM",
-   "SHW",
-   "CTAS",
+   "HEN3.DE",
    "MTX.DE",
-   "SBUX",
-   "HEN3.DE"
+   "SHW",
+   "MUV2.DE",
+   "CTAS"
   ],
   "momentum": [
    "CRWD",
-   "DB1.DE",
    "FTNT",
    "MRNA",
    "ILMN",
    "PANW",
    "ABNB",
+   "DB1.DE",
    "MRK",
    "DHL.DE",
-   "SY1.DE",
-   "ALV.DE",
    "V",
-   "DTG.DE",
+   "ALV.DE",
    "CSX",
+   "DTG.DE",
+   "SY1.DE",
    "BAS.DE"
   ],
   "value": [
@@ -55,14 +55,38 @@
  },
  "changes": {
   "turnaround": {
-   "entries": [],
-   "exits": [],
+   "entries": [
+    {
+     "ticker": "FRE.DE",
+     "rank": 9
+    },
+    {
+     "ticker": "MUV2.DE",
+     "rank": 14
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "QIA.DE",
+     "old_rank": 6
+    },
+    {
+     "ticker": "SBUX",
+     "old_rank": 14
+    }
+   ],
    "moves": []
   },
   "momentum": {
    "entries": [],
    "exits": [],
-   "moves": []
+   "moves": [
+    {
+     "ticker": "DB1.DE",
+     "rank": 7,
+     "delta": -5
+    }
+   ]
   },
   "value": {
    "entries": [],

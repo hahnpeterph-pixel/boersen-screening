@@ -82,6 +82,17 @@ jobs:
         run: python kursverlauf.py
         continue-on-error: true
 
+      # Kursluecken je Wert und ihr Schliessverhalten, fuer die Bewertung
+      # offener Gaps in der Kaufvorlage. Nach kursverlauf.py, weil zu diesem
+      # Zeitpunkt alle Tageskerzen im Cache von kurse.py liegen - der Abruf
+      # kostet dann nichts extra. Aus demselben Grund fragt luecken.py
+      # ausdruecklich 400d ab wie die uebrigen Skripte: ein abweichender
+      # Zeitraum wuerde am Cache vorbeilaufen und alles doppelt holen.
+      # continue-on-error wie bei den anderen Zusatzauswertungen.
+      - name: Luecken ausfuehren
+        run: python luecken.py
+        continue-on-error: true
+
       - name: Ergebnis speichern
         run: |
           git config user.name "screening-bot"

@@ -122,7 +122,12 @@ def main():
             continue
 
         try:
-            df = kurse.kerzen(ticker, period="800d")
+            # 400d wie marktdaten.py und kursverlauf.py - NICHT aendern:
+            # der Cache-Schluessel in kurse.py enthaelt den Zeitraum. Ein
+            # abweichender Wert (etwa 800d) laesst alle Werte ein zweites
+            # Mal bei Yahoo abrufen, statt den vorhandenen Cache zu nutzen.
+            # Rund anderthalb Jahre reichen fuer die Luecken-Statistik.
+            df = kurse.kerzen(ticker, period="400d")
         except Exception as fehler:
             print(f"  {ticker}: Abruf fehlgeschlagen ({fehler})")
             continue

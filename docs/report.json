@@ -1,37 +1,37 @@
 {
- "date": "2026-08-27",
+ "date": "2026-08-28",
  "ranks": {
   "turnaround": [
    "MELI",
    "ZS",
-   "BEI.DE",
-   "AXON",
    "WDAY",
+   "AXON",
    "ADBE",
-   "DTE.DE",
+   "QIA.DE",
    "AXP",
+   "BEI.DE",
+   "DTE.DE",
    "JPM",
    "SHW",
-   "MTX.DE",
    "CTAS",
+   "MTX.DE",
    "SBUX",
-   "KHC",
    "HEN3.DE"
   ],
   "momentum": [
    "CRWD",
+   "DB1.DE",
    "FTNT",
    "MRNA",
-   "DB1.DE",
    "ILMN",
    "PANW",
    "ABNB",
    "MRK",
    "DHL.DE",
-   "ALV.DE",
-   "DTG.DE",
    "SY1.DE",
+   "ALV.DE",
    "V",
+   "DTG.DE",
    "CSX",
    "BAS.DE"
   ],
@@ -41,9 +41,9 @@
    "AVGO",
    "META",
    "REGN",
-   "MTX.DE",
    "ABNB",
    "V",
+   "MTX.DE",
    "ENR.DE",
    "VRTX",
    "DXCM",
@@ -57,169 +57,32 @@
   "turnaround": {
    "entries": [
     {
-     "ticker": "ZS",
-     "rank": 2
-    },
-    {
-     "ticker": "AXON",
-     "rank": 4
-    },
-    {
-     "ticker": "WDAY",
-     "rank": 5
-    },
-    {
-     "ticker": "ADBE",
+     "ticker": "QIA.DE",
      "rank": 6
-    },
-    {
-     "ticker": "DTE.DE",
-     "rank": 7
-    },
-    {
-     "ticker": "JPM",
-     "rank": 9
-    },
-    {
-     "ticker": "MTX.DE",
-     "rank": 11
-    },
-    {
-     "ticker": "CTAS",
-     "rank": 12
-    },
-    {
-     "ticker": "SBUX",
-     "rank": 13
-    },
-    {
-     "ticker": "KHC",
-     "rank": 14
     }
    ],
    "exits": [
     {
-     "ticker": "QIA.DE",
-     "old_rank": 1
-    },
-    {
-     "ticker": "ADSK",
-     "old_rank": 2
-    },
-    {
-     "ticker": "CTSH",
-     "old_rank": 6
-    },
-    {
-     "ticker": "PYPL",
-     "old_rank": 7
-    },
-    {
-     "ticker": "SPGI",
-     "old_rank": 8
-    },
-    {
-     "ticker": "HD",
-     "old_rank": 9
-    },
-    {
-     "ticker": "PCAR",
-     "old_rank": 11
-    },
-    {
-     "ticker": "SHL.DE",
-     "old_rank": 12
-    },
-    {
-     "ticker": "ROP",
+     "ticker": "KHC",
      "old_rank": 14
-    },
-    {
-     "ticker": "ZAL.DE",
-     "old_rank": 15
     }
    ],
    "moves": [
     {
-     "ticker": "MELI",
-     "rank": 1,
-     "delta": 12
-    },
-    {
-     "ticker": "SHW",
-     "rank": 10,
-     "delta": -5
-    },
-    {
-     "ticker": "HEN3.DE",
-     "rank": 15,
+     "ticker": "BEI.DE",
+     "rank": 8,
      "delta": -5
     }
    ]
   },
   "momentum": {
-   "entries": [
-    {
-     "ticker": "CRWD",
-     "rank": 1
-    },
-    {
-     "ticker": "PANW",
-     "rank": 6
-    },
-    {
-     "ticker": "V",
-     "rank": 13
-    },
-    {
-     "ticker": "BAS.DE",
-     "rank": 15
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "MRVL",
-     "old_rank": 4
-    },
-    {
-     "ticker": "TEAM",
-     "old_rank": 8
-    },
-    {
-     "ticker": "TRV",
-     "old_rank": 9
-    },
-    {
-     "ticker": "KO",
-     "old_rank": 15
-    }
-   ],
-   "moves": [
-    {
-     "ticker": "ABNB",
-     "rank": 7,
-     "delta": -6
-    },
-    {
-     "ticker": "ALV.DE",
-     "rank": 10,
-     "delta": -5
-    }
-   ]
+   "entries": [],
+   "exits": [],
+   "moves": []
   },
   "value": {
-   "entries": [
-    {
-     "ticker": "AVGO",
-     "rank": 3
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "ADSK",
-     "old_rank": 3
-    }
-   ],
+   "entries": [],
+   "exits": [],
    "moves": []
   },
   "analyst_flips": []

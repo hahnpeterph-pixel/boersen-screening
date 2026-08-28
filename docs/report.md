@@ -1,6 +1,52 @@
-# Boersen-Screening - 2026-08-27
+# Boersen-Screening - 2026-08-28
 
-_Stand: Schlusskurse vom 2026-08-27. Erstellt 2026-08-27T20:55:21+00:00 UTC. 165 Werte ausgewertet._
+_Stand: Schlusskurse vom 2026-08-27, aber 39 Werte haengen zurueck - siehe Standwarnung. Erstellt 2026-08-28T01:51:02+00:00 UTC. 165 Werte ausgewertet._
+
+> **Standwarnung: 39 von 165 Werten haengen zurueck.** Neuester Handelstag im Bericht ist 2026-08-27.
+>
+> Ursache ist in aller Regel Yahoo: die vorlaeufige Tageskerze einer Boerse wird ueber Nacht durch die offizielle Abrechnung ersetzt, und solange die fehlt, faellt der Tag weg. Betroffen sind meist die europaeischen Notierungen. Fuer diese Werte gelten Kurs, ATR, RSI und Tiefs unten NICHT fuer den neuesten Handelstag.
+>
+> | Wert | letzte Kerze |
+> |---|---|
+> | ADS.DE | 2026-08-26 |
+> | AIR.DE | 2026-08-26 |
+> | ALV.DE | 2026-08-26 |
+> | BAS.DE | 2026-08-26 |
+> | BAYN.DE | 2026-08-26 |
+> | BEI.DE | 2026-08-26 |
+> | BMW.DE | 2026-08-26 |
+> | BNR.DE | 2026-08-26 |
+> | CBK.DE | 2026-08-26 |
+> | CON.DE | 2026-08-26 |
+> | DB1.DE | 2026-08-26 |
+> | DBK.DE | 2026-08-26 |
+> | DHL.DE | 2026-08-26 |
+> | DTE.DE | 2026-08-26 |
+> | DTG.DE | 2026-08-26 |
+> | ENR.DE | 2026-08-26 |
+> | EOAN.DE | 2026-08-26 |
+> | FRE.DE | 2026-08-26 |
+> | HEI.DE | 2026-08-26 |
+> | HEN3.DE | 2026-08-26 |
+> | HNR1.DE | 2026-08-26 |
+> | IFX.DE | 2026-08-26 |
+> | MBG.DE | 2026-08-26 |
+> | MRK.DE | 2026-08-26 |
+> | MTX.DE | 2026-08-26 |
+> | MUV2.DE | 2026-08-26 |
+> | P911.DE | 2026-08-26 |
+> | PAH3.DE | 2026-08-26 |
+> | QIA.DE | 2026-08-26 |
+> | RHM.DE | 2026-08-26 |
+> | RWE.DE | 2026-08-26 |
+> | SAP.DE | 2026-08-26 |
+> | SHL.DE | 2026-08-26 |
+> | SIE.DE | 2026-08-26 |
+> | SRT3.DE | 2026-08-26 |
+> | SY1.DE | 2026-08-26 |
+> | VNA.DE | 2026-08-26 |
+> | VOW3.DE | 2026-08-26 |
+> | ZAL.DE | 2026-08-26 |
 
 ## 📖 Glossar (was die Spalten bedeuten)
 
@@ -18,9 +64,9 @@ _Ueber alle 165 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 | Rang | Ticker | ISIN | Name | Index | Kurs | Abstand ATH (Info) | Kaufen-Anteil Analysten | Kursziel | RSI Tag | RSI Woche | RSI Stunde | Letztes Rating |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 1 | NVDA | - | NVIDIA Corporation | NASDAQ/DOW | 227.98 | -3% | 100% (24 Banken, ≤120T) | 304.73 (34% ueber Kurs) | 61 | 61 | 71 | 2026-08-25 Raymond James: Rating bestaetigt: Strong Buy |
-| 2 | DTE.DE | - | DEUTSCHE TELEKOM AG | DAX | 28.19 | -16% | 100% (18 Banken, ≤120T) | 37.10 (32% ueber Kurs) | 50 | 50 | 37 | keine in 30T |
-| 3 | BA | - | Boeing Company (The) | DOW | 209.89 | -51% | 100% (6 Banken, ≤120T) | 274.85 (31% ueber Kurs) | 37 | 45 | 39 | 2026-08-11 Argus Research: hochgestuft auf Buy |
-| 4 | AZN | GB0009895292 | AstraZeneca PLC | NASDAQ | 164.52 | -21% | 100% (1 Banken, ≤120T) | 213.99 (30% ueber Kurs) | 48 | 42 | 42 | 2026-08-24 CICC: neu bewertet mit Outperform |
+| 2 | BA | - | Boeing Company (The) | DOW | 209.89 | -51% | 100% (6 Banken, ≤120T) | 274.85 (31% ueber Kurs) | 37 | 45 | 39 | 2026-08-11 Argus Research: hochgestuft auf Buy |
+| 3 | AZN | GB0009895292 | AstraZeneca PLC | NASDAQ | 164.52 | -21% | 100% (1 Banken, ≤120T) | 213.99 (30% ueber Kurs) | 48 | 42 | 42 | 2026-08-24 CICC: neu bewertet mit Outperform |
+| 4 | DTE.DE | - | DEUTSCHE TELEKOM AG | DAX | 28.93 | -14% | 100% (18 Banken, ≤120T) | 37.10 (28% ueber Kurs) | 58 | 54 | 37 | keine in 30T |
 | 5 | ASML | USN070592100 | ASML Holding N.V. - New York Re | NASDAQ | 1735.01 | -13% | 100% (5 Banken, ≤120T) | 2194.12 (26% ueber Kurs) | 48 | 57 | 46 | keine in 30T |
 | 6 | GOOG | CA02080M1005 | Alphabet Inc. | NASDAQ | 337.71 | -15% | 100% (4 Banken, ≤120T) | 422.34 (25% ueber Kurs) | 43 | 50 | 39 | keine in 30T |
 | 7 | TTWO | - | Take-Two Interactive Software, | NASDAQ | 233.00 | -11% | 100% (10 Banken, ≤120T) | 286.89 (23% ueber Kurs) | 43 | 51 | 46 | 2026-08-10 Roth Capital: Rating bestaetigt: Buy |
@@ -32,7 +78,7 @@ _Ueber alle 165 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 | 13 | AMZN | - | Amazon.com, Inc. | NASDAQ/DOW | 256.26 | -10% | 96% (27 Banken, ≤120T) | 327.00 (28% ueber Kurs) | 47 | 54 | 39 | 2026-07-31 UBS: Rating bestaetigt: Buy |
 | 14 | ADI | US0326541051 | Analog Devices, Inc. | NASDAQ | 374.52 | -16% | 95% (19 Banken, ≤120T) | 463.22 (24% ueber Kurs) | 47 | 52 | 54 | 2026-08-24 Baird: Rating bestaetigt: Outperform |
 | 15 | LRCX | - | Lam Research Corporation | NASDAQ | 318.58 | -26% | 94% (17 Banken, ≤120T) | 371.35 (17% ueber Kurs) | 50 | 56 | 61 | 2026-08-25 Mizuho: Rating bestaetigt: Outperform |
-| 16 | FRE.DE | - | Fresenius SE & Co. KGaA | DAX | 46.20 | -30% | 93% (14 Banken, ≤120T) | 55.59 (20% ueber Kurs) | 58 | 60 | 47 | keine in 30T |
+| 16 | FRE.DE | - | Fresenius SE & Co. KGaA | DAX | 46.35 | -30% | 93% (14 Banken, ≤120T) | 55.59 (20% ueber Kurs) | 59 | 61 | 47 | keine in 30T |
 | 17 | WMT | CA93267J1012 | Walmart Inc. | DOW | 102.63 | -23% | 90% (20 Banken, ≤120T) | 128.43 (25% ueber Kurs) | 32 | 36 | 32 | 2026-08-21 Telsey Advisory Group: Rating bestaetigt: Outperform |
 | 18 | META | US30303M1027 | Meta Platforms, Inc. | NASDAQ | 571.10 | -28% | 89% (62 Banken, ≤120T) | 754.14 (32% ueber Kurs) | 47 | 46 | 54 | keine in 30T |
 | 19 | DDOG | US23804L1035 | Datadog, Inc. | NASDAQ | 242.93 | -16% | 89% (28 Banken, ≤120T) | 285.18 (17% ueber Kurs) | 50 | 59 | 63 | 2026-08-08 Scotiabank: Rating bestaetigt: Sector Outperform |

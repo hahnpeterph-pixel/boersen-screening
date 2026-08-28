@@ -156,21 +156,60 @@ def main():
         f.write(f"_Mindestgroesse {MIN_ATR} ATR. Als 'reif' gilt eine Luecke ab "
                 f"{REIFEZEIT_TAGE} Handelstagen Alter - nur reife Luecken gehen in "
                 f"die Schliessquote ein._\n\n")
-        f.write("Auswertung je Wert, keine wertuebergreifenden Kennzahlen.\n\n")
-        f.write("| Wert | Luecken | reif | geschlossen | Quote | Median Tage bis Schluss | offen (reif) |\n")
-        f.write("|---|---|---|---|---|---|---|\n")
-        for ticker, teil in d.groupby("ticker"):
+        f.write("Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine "
+                "Aufwaerts-Luecke schliesst sich, wenn der Kurs FAELLT (Risiko fuer "
+                "eine Long-Position), eine Abwaerts-Luecke, wenn er STEIGT (Kursziel "
+                "fuer eine Long-Position). Beides zusammenzuwerfen verwischt genau "
+                "diesen Unterschied.\n\n")
+
+        for richtung, ueberschrift in [("aufwaerts", "Aufwaerts-Luecken (schliessen bei fallendem Kurs)"),
+                                       ("abwaerts", "Abwaerts-Luecken (schliessen bei steigendem Kurs)")]:
+            f.write(f"## {ueberschrift}\n\n")
+            f.write("| Wert | reif | geschlossen | Quote | Median Tage | p75 | p90 | offen |\n")
+            f.write("|---|---|---|---|---|---|---|---|\n")
+            for ticker, teil in d[d["richtung"] == richtung].groupby("ticker"):
+                reif = teil[teil["reif"] == 1]
+                if reif.empty:
+                    continue
+                zu = reif[reif["geschlossen"] == 1]
+                tage = pd.to_numeric(zu["tage_bis_schluss"], errors="coerce")
+                med = f"{tage.median():.0f}" if len(zu) else "-"
+                p75 = f"{tage.quantile(0.75):.0f}" if len(zu) else "-"
+                p90 = f"{tage.quantile(0.90):.0f}" if len(zu) else "-"
+                f.write(f"| {teil['name'].iloc[0]} ({ticker}) | {len(reif)} | {len(zu)} | "
+                        f"{100*len(zu)/len(reif):.0f}% | {med} | {p75} | {p90} | "
+                        f"{len(reif)-len(zu)} |\n")
+            f.write("\n")
+
+        # Kernfrage bei einer konkreten offenen Luecke: sie ist SCHON X Tage offen -
+        # wie viele vergleichbare Luecken wurden danach ueberhaupt noch geschlossen?
+        # Die Gesamtquote taugt dafuer nicht, weil die meisten Luecken am ersten Tag
+        # schliessen und die Quote nach oben ziehen.
+        f.write("## Schliesst eine Luecke noch, die schon laenger offen ist?\n\n")
+        f.write("_Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen "
+                "waren, wurden spaeter noch so viele geschlossen._\n\n")
+        f.write("| Wert | Richtung | noch offen nach 5T | nach 21T | nach 63T |\n")
+        f.write("|---|---|---|---|---|\n")
+        for (ticker, richtung), teil in d.groupby(["ticker", "richtung"]):
             reif = teil[teil["reif"] == 1]
-            if reif.empty:
+            if len(reif) < 5:
                 continue
-            zu = reif[reif["geschlossen"] == 1]
-            tage = pd.to_numeric(zu["tage_bis_schluss"], errors="coerce").median()
-            f.write(f"| {teil['name'].iloc[0]} ({ticker}) | {len(teil)} | {len(reif)} | "
-                    f"{len(zu)} | {100*len(zu)/len(reif):.0f}% | "
-                    f"{tage:.0f} | {len(reif)-len(zu)} |\n")
+            zeile = f"| {teil['name'].iloc[0]} ({ticker}) | {richtung} "
+            for schwelle in (5, 21, 63):
+                # Nur Luecken, die alt genug sind, um die Schwelle beurteilen zu koennen
+                pruefbar = reif[reif["alter_tage"] >= schwelle]
+                tage = pd.to_numeric(pruefbar["tage_bis_schluss"], errors="coerce")
+                noch_offen = pruefbar[tage.isna() | (tage > schwelle)]
+                if len(noch_offen) == 0:
+                    zeile += "| keine Faelle "
+                    continue
+                spaeter_zu = noch_offen[noch_offen["geschlossen"] == 1]
+                zeile += (f"| {len(spaeter_zu)}/{len(noch_offen)} "
+                          f"({100*len(spaeter_zu)/len(noch_offen):.0f}%) ")
+            f.write(zeile + "|\n")
 
         f.write("\n## Offene Luecken je Wert\n\n")
-        offen = d[(d["geschlossen"] == 0)]
+        offen = d[d["geschlossen"] == 0]
         if offen.empty:
             f.write("_Keine offenen Luecken._\n")
         else:

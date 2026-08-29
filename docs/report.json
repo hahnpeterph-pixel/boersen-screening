@@ -1,39 +1,39 @@
 {
- "date": "2026-08-28",
+ "date": "2026-08-29",
  "ranks": {
   "turnaround": [
-   "WDAY",
+   "ADSK",
+   "BEI.DE",
    "MELI",
    "ZS",
-   "AXON",
-   "ADBE",
-   "AXP",
-   "BEI.DE",
    "DTE.DE",
-   "FRE.DE",
-   "JPM",
-   "HEN3.DE",
+   "KHC",
+   "WDAY",
+   "MMM",
+   "TRV",
+   "BKNG",
    "MTX.DE",
-   "SHW",
-   "MUV2.DE",
-   "CTAS"
+   "SPGI",
+   "CTAS",
+   "SBUX",
+   "JPM"
   ],
   "momentum": [
    "CRWD",
    "FTNT",
-   "MRNA",
    "ILMN",
-   "PANW",
    "ABNB",
    "DB1.DE",
-   "MRK",
+   "CRM",
    "DHL.DE",
-   "V",
    "ALV.DE",
-   "CSX",
    "DTG.DE",
+   "TRV",
    "SY1.DE",
-   "BAS.DE"
+   "SIE.DE",
+   "MRNA",
+   "BAS.DE",
+   "JNJ"
   ],
   "value": [
    "MU",
@@ -41,56 +41,156 @@
    "AVGO",
    "META",
    "REGN",
+   "MTX.DE",
    "ABNB",
    "V",
-   "MTX.DE",
    "ENR.DE",
    "VRTX",
-   "DXCM",
    "ODFL",
-   "SPGI",
+   "DXCM",
+   "FANG",
    "GOOG",
-   "GOOGL"
+   "SPGI"
   ]
  },
  "changes": {
   "turnaround": {
    "entries": [
     {
-     "ticker": "FRE.DE",
+     "ticker": "ADSK",
+     "rank": 1
+    },
+    {
+     "ticker": "KHC",
+     "rank": 6
+    },
+    {
+     "ticker": "MMM",
+     "rank": 8
+    },
+    {
+     "ticker": "TRV",
      "rank": 9
     },
     {
-     "ticker": "MUV2.DE",
+     "ticker": "BKNG",
+     "rank": 10
+    },
+    {
+     "ticker": "SPGI",
+     "rank": 12
+    },
+    {
+     "ticker": "SBUX",
      "rank": 14
     }
    ],
    "exits": [
     {
-     "ticker": "QIA.DE",
+     "ticker": "AXON",
+     "old_rank": 4
+    },
+    {
+     "ticker": "ADBE",
+     "old_rank": 5
+    },
+    {
+     "ticker": "AXP",
      "old_rank": 6
     },
     {
-     "ticker": "SBUX",
+     "ticker": "FRE.DE",
+     "old_rank": 9
+    },
+    {
+     "ticker": "HEN3.DE",
+     "old_rank": 11
+    },
+    {
+     "ticker": "SHW",
+     "old_rank": 13
+    },
+    {
+     "ticker": "MUV2.DE",
      "old_rank": 14
     }
    ],
-   "moves": []
-  },
-  "momentum": {
-   "entries": [],
-   "exits": [],
    "moves": [
     {
-     "ticker": "DB1.DE",
+     "ticker": "BEI.DE",
+     "rank": 2,
+     "delta": 5
+    },
+    {
+     "ticker": "WDAY",
      "rank": 7,
+     "delta": -6
+    },
+    {
+     "ticker": "JPM",
+     "rank": 15,
      "delta": -5
     }
    ]
   },
+  "momentum": {
+   "entries": [
+    {
+     "ticker": "CRM",
+     "rank": 6
+    },
+    {
+     "ticker": "TRV",
+     "rank": 10
+    },
+    {
+     "ticker": "SIE.DE",
+     "rank": 12
+    },
+    {
+     "ticker": "JNJ",
+     "rank": 15
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "PANW",
+     "old_rank": 5
+    },
+    {
+     "ticker": "MRK",
+     "old_rank": 8
+    },
+    {
+     "ticker": "V",
+     "old_rank": 10
+    },
+    {
+     "ticker": "CSX",
+     "old_rank": 12
+    }
+   ],
+   "moves": [
+    {
+     "ticker": "MRNA",
+     "rank": 13,
+     "delta": -10
+    }
+   ]
+  },
   "value": {
-   "entries": [],
-   "exits": [],
+   "entries": [
+    {
+     "ticker": "FANG",
+     "rank": 13
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "GOOGL",
+     "old_rank": 15
+    }
+   ],
    "moves": []
   },
   "analyst_flips": []

@@ -1,6 +1,6 @@
 # Stundenwache
 
-Stand: 2026-08-28 · 158 Werte mit Stundendaten · erstellt 2026-08-29 01:16 UTC
+Stand: 2026-08-28 · 158 Werte mit Stundendaten · erstellt 2026-08-29 03:43 UTC
 
 > **Sitzung noch nicht abgeschlossen.** 1 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 6, 7, 9). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
 
@@ -21,7 +21,7 @@ Keine.
 
 Keine.
 
-## Tief angetestet (7)
+## Tief angetestet (8)
 
 Docht bis unter die Marke, kein Stundenschluss darunter.
 
@@ -30,6 +30,7 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | MCHP | 72.91 | 72.94 | 0.011 | 0 |
 | UNH | 392.815 | 392.96 | 0.019 | 0 |
 | ROST | 228.15 | 228.54 | 0.057 | 0 |
+| NVDA | 216.82 | 217.54 | 0.105 | 0 |
 | ILMN | 214.61 | 215.61 | 0.107 | 0 |
 | AIR.DE | 202.35 | 202.8 | 0.127 | 0 |
 | ASML | 1478.2 | 1492.4 | 0.29 | 0 |
@@ -47,7 +48,7 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | HEI.DE | 161.75 | 170.8 | 2.375 | 9 |
 | DB1.DE | 280.7 | 291.25 | 2.178 | 9 |
 | CDNS | 319.78 | 340.42 | 2.091 | 7 |
-| CRWD | 195.4 | 218.43 | 1.95 | 7 |
+| CRWD | 195.4 | 218.4 | 1.948 | 7 |
 | MBG.DE | 45.62 | 47.015 | 1.807 | 9 |
 | WDAY | 185.82 | 204.46 | 1.601 | 7 |
 | TEAM | 177.88 | 190.35 | 1.407 | 7 |

@@ -55,142 +55,18 @@
  },
  "changes": {
   "turnaround": {
-   "entries": [
-    {
-     "ticker": "ADSK",
-     "rank": 1
-    },
-    {
-     "ticker": "KHC",
-     "rank": 6
-    },
-    {
-     "ticker": "MMM",
-     "rank": 8
-    },
-    {
-     "ticker": "TRV",
-     "rank": 9
-    },
-    {
-     "ticker": "BKNG",
-     "rank": 10
-    },
-    {
-     "ticker": "SPGI",
-     "rank": 12
-    },
-    {
-     "ticker": "SBUX",
-     "rank": 14
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "AXON",
-     "old_rank": 4
-    },
-    {
-     "ticker": "ADBE",
-     "old_rank": 5
-    },
-    {
-     "ticker": "AXP",
-     "old_rank": 6
-    },
-    {
-     "ticker": "FRE.DE",
-     "old_rank": 9
-    },
-    {
-     "ticker": "HEN3.DE",
-     "old_rank": 11
-    },
-    {
-     "ticker": "SHW",
-     "old_rank": 13
-    },
-    {
-     "ticker": "MUV2.DE",
-     "old_rank": 14
-    }
-   ],
-   "moves": [
-    {
-     "ticker": "BEI.DE",
-     "rank": 2,
-     "delta": 5
-    },
-    {
-     "ticker": "WDAY",
-     "rank": 7,
-     "delta": -6
-    },
-    {
-     "ticker": "JPM",
-     "rank": 15,
-     "delta": -5
-    }
-   ]
+   "entries": [],
+   "exits": [],
+   "moves": []
   },
   "momentum": {
-   "entries": [
-    {
-     "ticker": "CRM",
-     "rank": 6
-    },
-    {
-     "ticker": "TRV",
-     "rank": 10
-    },
-    {
-     "ticker": "SIE.DE",
-     "rank": 12
-    },
-    {
-     "ticker": "JNJ",
-     "rank": 15
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "PANW",
-     "old_rank": 5
-    },
-    {
-     "ticker": "MRK",
-     "old_rank": 8
-    },
-    {
-     "ticker": "V",
-     "old_rank": 10
-    },
-    {
-     "ticker": "CSX",
-     "old_rank": 12
-    }
-   ],
-   "moves": [
-    {
-     "ticker": "MRNA",
-     "rank": 13,
-     "delta": -10
-    }
-   ]
+   "entries": [],
+   "exits": [],
+   "moves": []
   },
   "value": {
-   "entries": [
-    {
-     "ticker": "FANG",
-     "rank": 13
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "GOOGL",
-     "old_rank": 15
-    }
-   ],
+   "entries": [],
+   "exits": [],
    "moves": []
   },
   "analyst_flips": []

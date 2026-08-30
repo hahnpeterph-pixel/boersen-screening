@@ -105,9 +105,10 @@ def quellen(tickers: list[str]) -> dict[str, str]:
 _MEM: dict[tuple, pd.DataFrame] = {}
 
 
-def _pfad(ticker: str, period: str) -> str:
+def _pfad(ticker: str, period: str, auto_adjust: bool = False) -> str:
     sicher = "".join(c if c.isalnum() or c in "-_" else "_" for c in ticker)
-    return os.path.join(CACHE, f"v{CACHE_VERSION}_{sicher}_{period}.csv")
+    suffix = "_adj" if auto_adjust else ""
+    return os.path.join(CACHE, f"v{CACHE_VERSION}_{sicher}_{period}{suffix}.csv")
 
 
 def aufraeumen() -> None:
@@ -141,14 +142,24 @@ def _aufbereiten(df: pd.DataFrame) -> pd.DataFrame | None:
     return df
 
 
-def kerzen(ticker: str, period: str = "400d") -> pd.DataFrame | None:
+def kerzen(ticker: str, period: str = "400d", auto_adjust: bool = False) -> pd.DataFrame | None:
     """Tageskerzen fuer einen Ticker. None, wenn keine brauchbaren Daten.
 
     Reihenfolge: Arbeitsspeicher, dann Tagescache auf der Platte, dann
     Yahoo. Ein Fehlschlag wird als None gemerkt, damit ein toter Ticker
     nicht bei jedem Aufruf erneut abgefragt wird.
+
+    auto_adjust=False ist die Voreinstellung und bleibt es fuer alle
+    bisherigen Aufrufer (marktdaten.py, tiefs.py, phasen.py, historie.py,
+    hochs.py, ruecksetzer.py) unveraendert. screener.py rechnete bisher
+    mit auto_adjust=True (dividenden-/split-bereinigt) - beim Umzug auf
+    diese Funktion (30.08.2026) bewusst NICHT stillschweigend
+    vereinheitlicht, das waere eine Methodikaenderung, keine reine
+    Code-Zusammenlegung. Beide Varianten leben nebeneinander im Cache
+    (Dateiname mit "_adj"-Endung fuer die angepasste Reihe), sodass sie
+    sich nicht gegenseitig ueberschreiben.
     """
-    key = (ticker, period)
+    key = (ticker, period, auto_adjust)
     if key in _MEM:
         wert = _MEM[key]
         return None if wert is None else wert.copy()
@@ -160,7 +171,7 @@ def kerzen(ticker: str, period: str = "400d") -> pd.DataFrame | None:
     if holen != ticker:
         print(f"  {ticker}: Kurse von {holen} ({waehrung(ticker)})")
 
-    pfad = _pfad(holen, period)
+    pfad = _pfad(holen, period, auto_adjust)
     if os.path.exists(pfad):
         try:
             if date.fromtimestamp(os.path.getmtime(pfad)) == date.today():
@@ -173,7 +184,7 @@ def kerzen(ticker: str, period: str = "400d") -> pd.DataFrame | None:
 
     try:
         roh = yf.Ticker(holen).history(period=period, interval="1d",
-                                       auto_adjust=False)
+                                       auto_adjust=auto_adjust)
     except Exception as e:
         print(f"  {holen}: Abruf fehlgeschlagen ({e})")
         _MEM[key] = None
@@ -188,6 +199,87 @@ def kerzen(ticker: str, period: str = "400d") -> pd.DataFrame | None:
         except OSError as e:
             print(f"  {holen}: Cache nicht schreibbar ({e})")
     return None if df is None else df.copy()
+
+
+def kerzen_batch(tickers: list[str], period: str = "400d",
+                  auto_adjust: bool = False) -> dict[str, pd.DataFrame]:
+    """Tageskerzen fuer VIELE Ticker in einem Rutsch statt einzeln.
+
+    Fuer screener.py entstanden (30.08.2026): das Skript braucht alle
+    ~200 Werte auf einmal fuer die 10-Jahres-Historie zum Allzeithoch. Ein
+    Abruf je Ticker ueber kerzen() waere hier falsch - erst recht ohne
+    Cache-Treffer aus einem anderen Skript, weil kein anderes Skript mit
+    demselben Zeitraum arbeitet. Genau das Problem, das kurse.py
+    eigentlich verhindern soll (Laufzeit im 30-Minuten-Fenster,
+    Rate-Limits bei Yahoo), waere durch einen naiven Umstieg auf
+    kerzen() zurueckgekommen, nur diesmal in screener.py statt verteilt
+    auf drei Skripte.
+
+    Nutzt denselben Cache wie kerzen() - ein spaeterer einzelner
+    kerzen()-Aufruf fuer denselben Ticker, Zeitraum und dieselbe
+    auto_adjust-Einstellung liest den hier gefuellten Cache, und
+    umgekehrt.
+
+    Anders als kerzen() merkt sich das hier NICHT einzeln, welcher Ticker
+    fehlgeschlagen ist - eine Batch-Anfrage soll selten laufen (einmal
+    pro Skriptlauf ueber das ganze Universum), wiederholte Fehlschlaege
+    sind dabei kein Problem.
+    """
+    ergebnis: dict[str, pd.DataFrame] = {}
+    frisch: list[str] = []
+    quelle_von = {t: quelle(t) for t in tickers}
+
+    for t in tickers:
+        key = (t, period, auto_adjust)
+        if key in _MEM:
+            wert = _MEM[key]
+            if wert is not None:
+                ergebnis[t] = wert.copy()
+            continue
+        pfad = _pfad(quelle_von[t], period, auto_adjust)
+        if os.path.exists(pfad):
+            try:
+                if date.fromtimestamp(os.path.getmtime(pfad)) == date.today():
+                    df = pd.read_csv(pfad, index_col=0, parse_dates=True)
+                    if len(df) >= MINDESTKERZEN:
+                        _MEM[key] = df
+                        ergebnis[t] = df.copy()
+                        continue
+            except Exception as e:
+                print(f"  {t}: Cache unlesbar ({e}), hole neu")
+        frisch.append(t)
+
+    quellticker = sorted({quelle_von[t] for t in frisch})
+    roh_je_quelle: dict[str, pd.DataFrame] = {}
+    chunk = 40
+    for i in range(0, len(quellticker), chunk):
+        batch = quellticker[i:i + chunk]
+        try:
+            data = yf.download(batch, period=period, interval="1d",
+                                auto_adjust=auto_adjust, group_by="ticker",
+                                threads=True, progress=False)
+        except Exception as e:
+            print(f"  ! Batch-Download fehlgeschlagen ({batch[0]}...): {e}")
+            continue
+        for q in batch:
+            try:
+                roh_je_quelle[q] = (data[q] if isinstance(data.columns, pd.MultiIndex)
+                                     else data)
+            except Exception:
+                continue
+
+    os.makedirs(CACHE, exist_ok=True)
+    for t in frisch:
+        q = quelle_von[t]
+        df = _aufbereiten(roh_je_quelle.get(q))
+        _MEM[(t, period, auto_adjust)] = df
+        if df is not None:
+            ergebnis[t] = df.copy()
+            try:
+                df.to_csv(_pfad(q, period, auto_adjust))
+            except OSError as e:
+                print(f"  {q}: Cache nicht schreibbar ({e})")
+    return ergebnis
 
 
 # ── Stundenkerzen ──────────────────────────────────────────────────
@@ -225,20 +317,24 @@ def _aufbereiten_stunden(df: pd.DataFrame) -> pd.DataFrame | None:
     return df
 
 
-def stundenkerzen(ticker: str, period: str = "5d") -> pd.DataFrame | None:
+def stundenkerzen(ticker: str, period: str = "5d", auto_adjust: bool = False) -> pd.DataFrame | None:
     """Stundenkerzen fuer einen Ticker. None, wenn keine brauchbaren Daten.
 
     Fuenf Handelstage reichen fuer den laufenden Tag samt Vergleich zu
     den Vortagen und halten die Antwort klein. Wer mehr braucht, gibt
     period ausdruecklich groesser an - Yahoo deckelt bei rund zwei Jahren.
+
+    auto_adjust wie bei kerzen(): Voreinstellung False bleibt fuer
+    bisherige Aufrufer unveraendert, screener.py ruft mit True auf, um
+    sein bisheriges Verhalten zu erhalten (30.08.2026).
     """
-    key = (ticker, period, "1h")
+    key = (ticker, period, "1h", auto_adjust)
     if key in _MEM:
         wert = _MEM[key]
         return None if wert is None else wert.copy()
 
     holen = quelle(ticker)
-    pfad = _pfad(f"h_{holen}", period)
+    pfad = _pfad(f"h_{holen}", period, auto_adjust)
     if os.path.exists(pfad):
         try:
             if date.fromtimestamp(os.path.getmtime(pfad)) == date.today():
@@ -251,7 +347,7 @@ def stundenkerzen(ticker: str, period: str = "5d") -> pd.DataFrame | None:
 
     try:
         roh = yf.Ticker(holen).history(period=period, interval="1h",
-                                       auto_adjust=False)
+                                       auto_adjust=auto_adjust)
     except Exception as e:
         print(f"  {holen}: Stundenabruf fehlgeschlagen ({e})")
         _MEM[key] = None

@@ -56,6 +56,8 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
+import kurse
+
 # ---------------------------------------------------------------------------
 # Konfiguration
 # ---------------------------------------------------------------------------
@@ -259,32 +261,29 @@ def load_universe() -> tuple[dict, dict, dict]:
 
 
 def fetch_yahoo(tickers: list[str]) -> dict[str, pd.DataFrame]:
-    """Kursdaten von Yahoo. Batch-Download, danach je Ticker aufgeteilt."""
-    import yfinance as yf
+    """Kursdaten von Yahoo ueber den gemeinsamen Cache in kurse.py.
 
-    out: dict[str, pd.DataFrame] = {}
-    chunk = 40
-    for i in range(0, len(tickers), chunk):
-        batch = tickers[i:i + chunk]
-        try:
-            data = yf.download(
-                batch, period=HISTORY_PERIOD, interval="1d",
-                auto_adjust=True, group_by="ticker", threads=True,
-                progress=False,
-            )
-        except Exception as exc:  # noqa: BLE001
-            print(f"  ! Batch-Download fehlgeschlagen ({batch[0]}...): {exc}")
-            continue
-        for t in batch:
-            try:
-                df = data[t] if isinstance(data.columns, pd.MultiIndex) else data
-                df = df.dropna(subset=["Close"])
-                if len(df) > 260:
-                    out[t] = df
-            except Exception:  # noqa: BLE001
-                continue
-        time.sleep(1)
-    return out
+    Bis 29.08.2026 rief dieses Skript yf.download() direkt auf - der
+    dritte von sechs getrennten Kursabrufen im Repo (Frage 40, Fragen-
+    Blatt). Umgestellt auf kurse.kerzen_batch() am 30.08.2026: dieselbe
+    Bündelung wie vorher (40er-Chunks, Threads), aber jetzt im selben
+    Plattencache wie marktdaten.py/tiefs.py/phasen.py - ein Wert, der
+    heute schon fuer denselben Zeitraum UND dieselbe auto_adjust-
+    Einstellung geladen wurde, kostet keinen zweiten Abruf.
+
+    auto_adjust=True bewusst erhalten (kurse.py selbst nutzt False) -
+    sonst wuerde die Umstellung nicht nur Code zusammenlegen, sondern
+    still die Kursbasis fuer das Allzeithoch und alle Kennzahlen dieses
+    Skripts aendern.
+
+    kerzen_batch() akzeptiert schon ab 30 Kerzen (kurse.MINDESTKERZEN) -
+    zu wenig fuer ein 10-Jahres-Allzeithoch. Die alte Schwelle von hier
+    (260 Kerzen, gut ein Jahr) bleibt deshalb als eigene Nachpruefung
+    erhalten, sonst wuerden neu gelistete Werte mit duenner Historie
+    durchrutschen, wo sie vorher ausgeschlossen waren.
+    """
+    roh = kurse.kerzen_batch(tickers, period=HISTORY_PERIOD, auto_adjust=True)
+    return {t: df for t, df in roh.items() if len(df) > 260}
 
 
 def stooq_symbol(ticker: str) -> str:
@@ -337,20 +336,21 @@ def get_hourly_rsi(tickers: list[str]) -> dict[str, float | None]:
     if not tickers:
         return {}
     print(f"Lade Stundendaten fuer {len(tickers)} Filtertreffer ...")
-    import yfinance as yf
 
     out: dict[str, float | None] = {}
     for t in tickers:
         try:
-            df = yf.download(t, period="60d", interval="60m",
-                              auto_adjust=True, progress=False, threads=False)
+            # kurse.stundenkerzen() statt eigenem yf.download() (30.08.2026,
+            # Frage 40) - war hier schon vorher ein Aufruf je Ticker ohne
+            # Threads, also keine Batching-Effizienz zu verlieren. Gewinn:
+            # gemeinsamer Cache mit anderen Skripten, KURSQUELLE-Routing
+            # (ASML) automatisch dabei. auto_adjust=True erhaelt das
+            # bisherige Verhalten dieses Skripts.
+            df = kurse.stundenkerzen(t, period="60d", auto_adjust=True)
             if df is None or df.empty:
                 out[t] = None
                 continue
-            close = df["Close"]
-            if isinstance(close, pd.DataFrame):  # bei manchen yfinance-Versionen MultiIndex
-                close = close.iloc[:, 0]
-            close = close.dropna()
+            close = df["Close"].dropna()
             if len(close) < 20:
                 out[t] = None
                 continue

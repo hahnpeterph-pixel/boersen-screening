@@ -1,6 +1,15 @@
 name: Historie
 
 on:
+  schedule:
+    # Woechentlich statt taeglich, aus demselben Grund wie bei hochs.yml:
+    # die Verteilungen stuetzen sich auf sieben Jahre Historie, ein
+    # einzelner neuer Handelstag verschiebt Median oder p75 praktisch nie
+    # sichtbar. Samstag 06:00 UTC, eine Stunde vor hochs.yml (07:00) - beide
+    # teilen sich die Concurrency-Gruppe "repo-schreiben" und wuerden sich
+    # sonst gegenseitig in die Warteschlange schicken, statt sauber
+    # nacheinander zu laufen.
+    - cron: "0 6 * * 6"
   workflow_dispatch:
     inputs:
       jahre:
@@ -44,15 +53,16 @@ jobs:
 
       # Diagnose: gibt alle erkannten Wendepunkte eines Wertes im Log aus -
       # Datum, Kurs, Hoch der Tiefkerze, Bestaetigungstag und ob das Tief in
-      # die Serie zaehlt. Schreibt nichts und laeuft nur, wenn ein Ticker
-      # eingegeben wurde. Fuer den Abgleich mit dem Chart, wenn Ablesung und
-      # Skript auseinanderlaufen.
+      # die Serie zaehlt. Schreibt nichts und laeuft nur bei manuellem Start
+      # mit eingegebenem Ticker - beim woechentlichen Zeitplan gibt es keine
+      # Eingaben, event_name schuetzt davor, dass die leere Eingabe dort
+      # falsch ausgewertet wird.
       - name: Wendepunkte pruefen
-        if: github.event.inputs.pivots != ''
+        if: github.event_name == 'workflow_dispatch' && github.event.inputs.pivots != ''
         run: python historie.py --jahre ${{ github.event.inputs.jahre || '7' }} --pivots ${{ github.event.inputs.pivots }} --tage ${{ github.event.inputs.pivot_tage || '120' }}
 
       - name: Historie ausfuehren
-        if: github.event.inputs.pivots == ''
+        if: github.event_name == 'schedule' || github.event.inputs.pivots == ''
         run: python historie.py --jahre ${{ github.event.inputs.jahre || '7' }}
 
       - name: Ergebnis speichern

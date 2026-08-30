@@ -286,22 +286,15 @@ def fetch_yahoo(tickers: list[str]) -> dict[str, pd.DataFrame]:
     return {t: df for t, df in roh.items() if len(df) > 260}
 
 
-def stooq_symbol(ticker: str) -> str:
-    if ticker.startswith("^"):
-        return {"^NDX": "^ndq", "^DJI": "^dji", "^GDAXI": "^dax"}.get(ticker, ticker.lower())
-    if ticker.endswith(".DE"):
-        return ticker[:-3].replace(".", "-").lower() + ".de"
-    return ticker.replace(".", "-").lower() + ".us"
-
-
 def fetch_stooq(ticker: str) -> pd.DataFrame | None:
-    """Fallback, falls Yahoo einen Wert nicht liefert."""
-    url = f"https://stooq.com/q/d/l/?s={stooq_symbol(ticker)}&i=d"
-    try:
-        df = pd.read_csv(url, parse_dates=["Date"]).set_index("Date")
-    except Exception:  # noqa: BLE001
-        return None
-    if df.empty or "Close" not in df.columns or len(df) < 260:
+    """Fallback, falls Yahoo einen Wert nicht liefert.
+
+    stooq_symbol() und der eigentliche Abruf leben seit 30.08.2026 in
+    kurse.py (Frage 44) - hier nur noch die 260-Tage-Nachpruefung, die
+    dieses Skript schon vorher hatte und kurse.kerzen_stooq() nicht kennt.
+    """
+    df = kurse.kerzen_stooq(ticker)
+    if df is None or "Close" not in df.columns or len(df) < 260:
         return None
     if "Volume" not in df.columns:
         df["Volume"] = np.nan

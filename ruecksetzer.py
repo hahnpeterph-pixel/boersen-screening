@@ -101,10 +101,22 @@ import tiefs_regel as regel
 BASE = Path(__file__).resolve().parent
 DOCS = BASE / "docs"
 CSV_AUS = DOCS / "ruecksetzer_tage.csv.gz"
+CSV_SCHWELLEN = DOCS / "ruecksetzer_schwellen.csv"
 
 GRENZE_TAGE = 63        # wie QUARTAL in hochs.py
 ERHOLT_SCHWELLE = 0.25  # ATR - ab hier gilt der Ruecksetzer als beendet
 MINDESTLAUF = 21        # Hochs ohne so viel Resthistorie zaehlen nicht mit
+
+# Fenster, in dem sich "rote Kerze + hohes Volumen" am 30.08.2026 als
+# tragfaehig erwies (siehe Orderbuch, Blatt Notizen, Eintrag 6): Tag 0-3,
+# oberstes Drittel der wertspezifischen Volumen-Verteilung an diesen
+# fruehen Tagen. FRUEHFENSTER_TAGE und VOL_PERZENTIL duplizieren diesen
+# Befund bewusst als Konstante hier, damit marktdaten.py nicht raten muss,
+# was "hohes Volumen" heisst, sondern denselben Massstab wie die Auswertung
+# selbst benutzt.
+FRUEHFENSTER_TAGE = 3
+VOL_PERZENTIL = 2 / 3
+MINDESTFAELLE_SCHWELLE = 15  # darunter ist eine Schwelle nicht belastbar
 
 
 def vol_rel(volumen: np.ndarray, bis: int, tage: int = 20) -> float | None:
@@ -186,6 +198,37 @@ def csv_schreiben(alle: list[dict]) -> None:
     print(f"Geschrieben: {CSV_AUS} ({len(alle)} Zeilen)")
 
 
+def schwellen_schreiben(alle: list[dict]) -> None:
+    """Je Wert: die Volumen-Schwelle (oberes Drittel), gemessen an den
+    fruehen Tagen (0-3) aller Ruecksetzer dieses Werts. marktdaten.py
+    liest diese Datei taeglich, um "hohes Volumen" nicht raten zu muessen,
+    sondern am selben Massstab zu pruefen, der sich als tragfaehig
+    erwiesen hat (Notiz 6, 30.08.2026)."""
+    nach_wert: dict[str, list[float]] = {}
+    for z in alle:
+        if z["tag"] <= FRUEHFENSTER_TAGE and z["vol_rel"] is not None:
+            nach_wert.setdefault(z["ticker"], []).append(z["vol_rel"])
+
+    zeilen = []
+    for ticker, werte in sorted(nach_wert.items()):
+        if len(werte) < MINDESTFAELLE_SCHWELLE:
+            continue
+        arr = np.array(werte)
+        zeilen.append({
+            "ticker": ticker,
+            "n": len(arr),
+            "vol_rel_schwelle": round(float(np.quantile(arr, VOL_PERZENTIL)), 3),
+        })
+    if not zeilen:
+        return
+    DOCS.mkdir(exist_ok=True)
+    with open(CSV_SCHWELLEN, "w", encoding="utf-8", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=["ticker", "n", "vol_rel_schwelle"])
+        w.writeheader()
+        w.writerows(zeilen)
+    print(f"Geschrieben: {CSV_SCHWELLEN} ({len(zeilen)} Werte)")
+
+
 def main() -> int:
     jahre = hist.JAHRE
     if "--jahre" in sys.argv:
@@ -225,6 +268,7 @@ def main() -> int:
 
     print(f"{len(alle)} Tageszeilen ueber {len(daten)} Werte.")
     csv_schreiben(alle)
+    schwellen_schreiben(alle)
     return 0
 
 

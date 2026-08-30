@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-08-29 03:43 UTC. 171 Werte, Fenster 90 Kalendertage. EUR/USD 1.1587._
+_Erstellt 2026-08-30 10:45 UTC. 218 Werte, Fenster 90 Kalendertage. EUR/USD 1.1587._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -26,7 +26,7 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | ILMN (ILMN) | 215.59 | - | - | ja | 59.73 |
 | KLAC (KLAC) | 175.54 | - | - | ja | 35.86 |
 | LRCX (LRCX) | 301.9 | - | - | ja | 44.42 |
-| MAR (MAR) | 351.08 | - | - | ja | 40.9 |
+| MAR (MAR) | 351.08 | - | ja | ja | 40.9 |
 | MCHP (MCHP) | 72.93 | - | ja | ja | 40.23 |
 | MMM (MMM) | 174.34 | - | - | ja | 43.94 |
 | MRVL (MRVL) | 216.62 | - | - | ja | 47.16 |
@@ -39,12 +39,18 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | TXN (TXN) | 258.64 | - | - | ja | 38.3 |
 | UNH (UNH) | 392.95 | - | - | ja | 42.31 |
 | XEL (XEL) | 76.45 | - | ja | ja | 39.77 |
+| ABBV (ABBV) | 255.48 | - | - | ja | 50.44 |
+| EMR (EMR) | 155.18 | - | - | ja | 50.39 |
+| FDX (FDX) | 330.88 | - | - | ja | 56.2 |
+| GEV (GEV) | 911.93 | - | - | ja | 37.03 |
+| NEE (NEE) | 81.84 | - | - | ja | 26.45 |
+| SO (SO) | 88.25 | - | ja | ja | 29.92 |
+| TMO (TMO) | 622.18 | - | - | ja | 66.17 |
 | AIR.DE (AIR.DE) | 204.5 | - | - | ja | 46.82 |
 | DTE.DE (DTE.DE) | 28.37 | - | - | ja | 51.68 |
 | ENR.DE (ENR.DE) | 150.52 | - | - | ja | 45.66 |
-| Gold (GC=F) | 4504.1001 | - | ja | ja | 59.15 |
-| Silber (SI=F) | 67.09 | - | ja | ja | 56.64 |
-| Platin (PL=F) | 1833.5 | - | ja | ja | 59.45 |
+| Gold (GC=F) | 4529.8999 | - | ja | ja | 61.49 |
+| Silber (SI=F) | 67.786 | - | ja | ja | 58.95 |
 | EUR/USD (EURUSD=X) | 1.1587 | - | - | ja | 52.74 |
 
 ---

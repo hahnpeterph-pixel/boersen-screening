@@ -1,39 +1,39 @@
 {
- "date": "2026-08-29",
+ "date": "2026-08-30",
  "ranks": {
   "turnaround": [
    "ADSK",
    "BEI.DE",
    "MELI",
+   "LMT",
    "ZS",
    "DTE.DE",
    "KHC",
    "WDAY",
+   "RTX",
+   "BAC",
    "MMM",
    "TRV",
    "BKNG",
    "MTX.DE",
-   "SPGI",
-   "CTAS",
-   "SBUX",
-   "JPM"
+   "SPGI"
   ],
   "momentum": [
    "CRWD",
    "FTNT",
    "ILMN",
+   "BNY",
    "ABNB",
-   "DB1.DE",
    "CRM",
+   "DB1.DE",
    "DHL.DE",
    "ALV.DE",
-   "DTG.DE",
    "TRV",
+   "BAC",
+   "DTG.DE",
    "SY1.DE",
    "SIE.DE",
-   "MRNA",
-   "BAS.DE",
-   "JNJ"
+   "MRNA"
   ],
   "value": [
    "MU",
@@ -55,13 +55,57 @@
  },
  "changes": {
   "turnaround": {
-   "entries": [],
-   "exits": [],
+   "entries": [
+    {
+     "ticker": "LMT",
+     "rank": 4
+    },
+    {
+     "ticker": "RTX",
+     "rank": 9
+    },
+    {
+     "ticker": "BAC",
+     "rank": 10
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "CTAS",
+     "old_rank": 13
+    },
+    {
+     "ticker": "SBUX",
+     "old_rank": 14
+    },
+    {
+     "ticker": "JPM",
+     "old_rank": 15
+    }
+   ],
    "moves": []
   },
   "momentum": {
-   "entries": [],
-   "exits": [],
+   "entries": [
+    {
+     "ticker": "BNY",
+     "rank": 4
+    },
+    {
+     "ticker": "BAC",
+     "rank": 11
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "BAS.DE",
+     "old_rank": 14
+    },
+    {
+     "ticker": "JNJ",
+     "old_rank": 15
+    }
+   ],
    "moves": []
   },
   "value": {

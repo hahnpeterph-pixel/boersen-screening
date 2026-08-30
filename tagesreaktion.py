@@ -42,6 +42,7 @@ import numpy as np
 import pandas as pd
 
 import kurse
+import historie
 import tiefs_regel as regel
 
 BASE = Path(__file__).resolve().parent
@@ -205,15 +206,12 @@ def zeile_lauf(g: list[dict]) -> dict:
     return r
 
 
-def universum() -> list[str]:
-    datei = BASE / "universe.json"
-    if not datei.exists():
-        return []
-    roh = json.loads(datei.read_text(encoding="utf-8"))
-    werte: list[str] = []
-    for gruppe in roh.get("benchmarks", {}):
-        werte += roh.get(gruppe, [])
-    return sorted(set(werte))
+# universum() stand hier bis 30.08.2026 als eigene, leicht abweichende
+# Kopie von historie.universum() - ohne COMMODITIES/CRYPTO, wohl ein
+# Versehen beim urspruenglichen Kopieren. Peter wollte Rohstoffe/Krypto
+# ausdruecklich mit drin (30.08.2026) - jetzt schlicht importiert wie bei
+# phasen.py, das behebt beides in einem Schritt.
+universum = historie.universum
 
 
 def lade(tickers: list[str], jahre: int) -> dict[str, pd.DataFrame]:

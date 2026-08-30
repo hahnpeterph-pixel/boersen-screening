@@ -67,11 +67,21 @@ ROHSTOFFE = [
 
 WAEHRUNG = [(["EURUSD=X"], "EUR/USD", "Spot")]
 
-# ── Aktien: NASDAQ-100, Dow 30, DAX 40. Statisch, aendert sich selten.
+# ── Aktien: NASDAQ-100, Dow 30, DAX 40, S&P-100-Ergaenzung. Statisch,
+# aendert sich selten.
 # Am 21.08.2026 entfernt, weil bei Yahoo keine Daten mehr (uebernommen
 # oder delistet): ANSS, EA, WBA, 1COV.DE.
 # Am 24.08.2026 entfernt: GOOG (Alphabet Class C) nach Entscheidung 68 -
 # derselbe Basiswert wie GOOGL, doppelter Einsatz bei gleichem Risiko.
+# Am 30.08.2026 ergaenzt: 47 S&P-100-Mitglieder, die weder im Dow 30 noch
+# im NASDAQ-100 stehen (ueberwiegend NYSE-Finanzwerte, Industrie- und
+# Gesundheitswerte) - Peter wollte den S&P 100 als dritten grossen
+# US-Index mit abgedeckt haben. BRK-B mit Bindestrich, nicht BRKB wie in
+# manchen ETF-Bestandslisten - das ist Yahoos Schreibweise, ohne die
+# schlaegt der Kursabruf fehl. HONA (Honeywell Aerospace) ist der
+# Spin-off vom 29.06.2026 und hat entsprechend kaum Historie vor diesem
+# Datum - Fallzahlen in historie.py/hochs.py werden fuer diesen einen
+# Wert lange duenn bleiben, das ist kein Fehler.
 US = """AAPL ABNB ADBE ADI ADP ADSK AEP AMAT AMD AMGN AMZN ARM ASML AVGO
 AXP AZN BA BIIB BKNG BKR CAT CDNS CDW CEG CHTR CMCSA COST CPRT CRM CRWD CSCO
 CSGP CSX CTAS CTSH DASH DDOG DIS DXCM EXC FANG FAST FTNT GEHC GILD
@@ -79,7 +89,10 @@ GOOGL GS HD HON IBM IDXX ILMN INTC INTU ISRG JNJ JPM KDP KHC KLAC KO LIN LRCX
 LULU MAR MCD MCHP MDB MDLZ MELI META MMM MNST MRK MRNA MRVL MSFT MU NFLX NKE
 NVDA NXPI ODFL ON ORCL ORLY PANW PAYX PCAR PDD PEP PG PLTR PYPL QCOM REGN ROP
 ROST SBUX SHW SNPS SPGI TEAM TMUS TRV TSLA TTD TTWO TXN UNH V VRSK VRTX VZ
-WBD WDAY WMT XEL ZS""".split()
+WBD WDAY WMT XEL ZS
+ABBV ABT ACN AMT BAC BLK BMY BNY BRK-B C CL COF COP CVS DE DHR DUK EMR FDX
+GD GE GEV GM HONA LLY LMT LOW MA MDT MO MS NEE NOW PFE PM RTX SCHW SO SPG T
+TMO UBER UNP UPS USB WFC XOM""".split()
 
 DAX = """ADS.DE AIR.DE ALV.DE BAS.DE BAYN.DE BEI.DE BMW.DE BNR.DE CBK.DE CON.DE
 DTG.DE DBK.DE DB1.DE DHL.DE DTE.DE EOAN.DE FRE.DE HNR1.DE HEI.DE HEN3.DE

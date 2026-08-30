@@ -24,8 +24,10 @@ from __future__ import annotations
 import os
 import shutil
 from datetime import date
+from io import StringIO
 
 import pandas as pd
+import requests
 import yfinance as yf
 
 HIER = os.path.dirname(os.path.abspath(__file__))
@@ -191,9 +193,26 @@ def kerzen_stooq(ticker: str) -> pd.DataFrame | None:
         except Exception as e:
             print(f"  {ticker}: Stooq-Cache unlesbar ({e}), hole neu")
 
+    # HTTP Error 404 beim ersten Praxistest (30.08.2026, Actions-Log,
+    # Screening-Lauf 12:48 UTC) - fuer alle vier Edelmetalle, exakt bei
+    # dieser URL, die in externer Dokumentation (Stand Januar 2026) als
+    # funktionierend beschrieben war. Wahrscheinlichste Erklaerung: pandas
+    # ruft pd.read_csv(url) intern ueber urllib auf, das einen generischen
+    # Python-User-Agent mitschickt ("Python-urllib/3.x") - eine
+    # gaengige, einfache Sperre vieler Seiten gegen genau dieses Muster,
+    # auch ohne robots.txt-Pruefung. Deshalb hier ueber requests mit einem
+    # browserartigen User-Agent statt direkt ueber pandas. Ob das der
+    # tatsaechliche Grund war, zeigt erst der naechste Lauf - von hier aus
+    # nicht testbar, stooq.com steht nicht auf der Netzwerk-Freigabeliste
+    # dieser Umgebung.
     url = f"https://stooq.com/q/d/l/?s={stooq_symbol(ticker)}&i=d"
     try:
-        roh = pd.read_csv(url, parse_dates=["Date"]).set_index("Date")
+        antwort = requests.get(url, timeout=15, headers={
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                          "AppleWebKit/537.36 (KHTML, like Gecko) "
+                          "Chrome/124.0 Safari/537.36"})
+        antwort.raise_for_status()
+        roh = pd.read_csv(StringIO(antwort.text), parse_dates=["Date"]).set_index("Date")
     except Exception as e:
         print(f"  {ticker}: Stooq-Abruf fehlgeschlagen ({e})")
         _MEM[key] = None

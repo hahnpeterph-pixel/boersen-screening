@@ -142,6 +142,74 @@ def _aufbereiten(df: pd.DataFrame) -> pd.DataFrame | None:
     return df
 
 
+def stooq_symbol(ticker: str) -> str:
+    """Yahoo-Ticker auf Stooqs Schreibweise uebersetzt.
+
+    Aus screener.py verschoben (30.08.2026, Fragen 43/44) - dort lief das
+    bereits als Fallback fuer Aktien. Neu dazugekommen: die "=X"-Endung
+    fuer FX- und Edelmetall-Spotpaare (XAUUSD=X -> xauusd). Stooq fuehrt
+    diese Paare ohne Praefix oder Laenderendung.
+    """
+    if ticker.startswith("^"):
+        return {"^NDX": "^ndq", "^DJI": "^dji", "^GDAXI": "^dax"}.get(ticker, ticker.lower())
+    if ticker.endswith("=X"):
+        return ticker[:-2].lower()
+    if ticker.endswith(".DE"):
+        return ticker[:-3].replace(".", "-").lower() + ".de"
+    return ticker.replace(".", "-").lower() + ".us"
+
+
+def kerzen_stooq(ticker: str) -> pd.DataFrame | None:
+    """Fallback ueber Stooq, wenn Yahoo nichts liefert.
+
+    Bisher nur in screener.py als Fallback fuer einzelne Aktien genutzt.
+    Am 30.08.2026 hierher verschoben und fuer Edelmetall-Spotpaare
+    erweitert (Frage 44): Yahoo liefert fuer XAUUSD=X/XAGUSD=X/XPTUSD=X/
+    XPDUSD=X nachweislich keine Daten, marktdaten.py faellt seither direkt
+    auf die Future-Notierung zurueck (Contango, nicht 1:1 mit dem Spot).
+    Ob Stooq hier taugt, zeigt sich am naechsten Lauf von selbst - dieser
+    Fallback greift nur, wenn Yahoo bereits gescheitert ist, kann also
+    nichts verschlechtern.
+
+    Eigener Cache-Praefix ("stooq_"), damit ein Yahoo-Fehlschlag von
+    heute nicht mit einer erfolgreichen Stooq-Reihe von gestern verwechselt
+    wird - beide landen unter unterschiedlichen Dateinamen.
+    """
+    key = (ticker, "stooq")
+    if key in _MEM:
+        wert = _MEM[key]
+        return None if wert is None else wert.copy()
+
+    pfad = _pfad(f"stooq_{ticker}", "voll")
+    if os.path.exists(pfad):
+        try:
+            if date.fromtimestamp(os.path.getmtime(pfad)) == date.today():
+                df = pd.read_csv(pfad, index_col=0, parse_dates=True)
+                if len(df) >= MINDESTKERZEN:
+                    _MEM[key] = df
+                    return df.copy()
+        except Exception as e:
+            print(f"  {ticker}: Stooq-Cache unlesbar ({e}), hole neu")
+
+    url = f"https://stooq.com/q/d/l/?s={stooq_symbol(ticker)}&i=d"
+    try:
+        roh = pd.read_csv(url, parse_dates=["Date"]).set_index("Date")
+    except Exception as e:
+        print(f"  {ticker}: Stooq-Abruf fehlgeschlagen ({e})")
+        _MEM[key] = None
+        return None
+
+    df = _aufbereiten(roh)
+    _MEM[key] = df
+    if df is not None:
+        os.makedirs(CACHE, exist_ok=True)
+        try:
+            df.to_csv(pfad)
+        except OSError as e:
+            print(f"  {ticker}: Stooq-Cache nicht schreibbar ({e})")
+    return None if df is None else df.copy()
+
+
 def kerzen(ticker: str, period: str = "400d", auto_adjust: bool = False) -> pd.DataFrame | None:
     """Tageskerzen fuer einen Ticker. None, wenn keine brauchbaren Daten.
 

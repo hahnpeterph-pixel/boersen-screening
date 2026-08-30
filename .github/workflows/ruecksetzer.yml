@@ -1,0 +1,72 @@
+name: Ruecksetzer
+
+on:
+  workflow_dispatch:
+    inputs:
+      jahre:
+        description: "Jahre Historie"
+        required: false
+        default: "7"
+      wert:
+        description: "Ticker fuer eine einzelne Ausgabe im Log (z.B. CDNS). Leer lassen fuer den normalen Lauf, der schreibt."
+        required: false
+        default: ""
+
+# Bewusst KEIN schedule: Dies ist eine explorative Auswertung fuer eine
+# offene Frage (traegt ein Tages-Check bei RSI/Volumen etwas?), kein
+# etablierter Kennzahlen-Lieferant wie hochs.py oder historie.py. Bis sich
+# zeigt, ob das Muster ueberhaupt haelt, soll das nicht jede Woche
+# automatisch Rechenzeit binden. Zeigt sich ein brauchbares Ergebnis, kann
+# hier jederzeit ein schedule-Block wie in hochs.yml ergaenzt werden.
+
+concurrency:
+  group: repo-schreiben
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  ruecksetzer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Abhaengigkeiten installieren
+        run: pip install -r requirements.txt
+
+      - name: Einzelwert pruefen
+        if: github.event.inputs.wert != ''
+        run: python ruecksetzer.py --jahre ${{ github.event.inputs.jahre || '7' }} --wert ${{ github.event.inputs.wert }}
+
+      - name: Ruecksetzer ausfuehren
+        if: github.event.inputs.wert == ''
+        run: python ruecksetzer.py --jahre ${{ github.event.inputs.jahre || '7' }}
+
+      - name: Ergebnis speichern
+        if: github.event.inputs.wert == ''
+        run: |
+          git config user.name "screening-bot"
+          git config user.email "actions@github.com"
+          git add docs state
+          if git diff --staged --quiet; then
+            echo "Nichts geaendert."
+            exit 0
+          fi
+          git commit -m "Ruecksetzer $(date -u +%Y-%m-%d)"
+          for versuch in 1 2 3; do
+            if git pull --rebase --autostash origin main && git push origin main; then
+              echo "Gespeichert im Versuch $versuch."
+              exit 0
+            fi
+            echo "Versuch $versuch fehlgeschlagen, neuer Anlauf in 10 Sekunden ..."
+            sleep 10
+          done
+          echo "Push nach drei Versuchen fehlgeschlagen."
+          exit 1

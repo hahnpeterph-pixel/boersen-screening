@@ -1,8 +1,8 @@
 # Boersen-Screening - 2026-08-30
 
-_Stand: Schlusskurse vom 2026-08-28, aber 39 Werte haengen zurueck - siehe Standwarnung. Erstellt 2026-08-30T11:19:22+00:00 UTC. 211 Werte ausgewertet._
+_Stand: Schlusskurse vom 2026-08-28, aber 40 Werte haengen zurueck - siehe Standwarnung. Erstellt 2026-08-30T12:03:01+00:00 UTC. 211 Werte ausgewertet._
 
-> **Standwarnung: 39 von 211 Werten haengen zurueck.** Neuester Handelstag im Bericht ist 2026-08-28.
+> **Standwarnung: 40 von 211 Werten haengen zurueck.** Neuester Handelstag im Bericht ist 2026-08-28.
 >
 > Ursache ist in aller Regel Yahoo: die vorlaeufige Tageskerze einer Boerse wird ueber Nacht durch die offizielle Abrechnung ersetzt, und solange die fehlt, faellt der Tag weg. Betroffen sind meist die europaeischen Notierungen. Fuer diese Werte gelten Kurs, ATR, RSI und Tiefs unten NICHT fuer den neuesten Handelstag.
 >
@@ -11,6 +11,7 @@ _Stand: Schlusskurse vom 2026-08-28, aber 39 Werte haengen zurueck - siehe Stand
 > | ADS.DE | 2026-08-27 |
 > | AIR.DE | 2026-08-27 |
 > | ALV.DE | 2026-08-27 |
+> | ASML | 2026-08-27 |
 > | BAS.DE | 2026-08-27 |
 > | BAYN.DE | 2026-08-27 |
 > | BEI.DE | 2026-08-27 |
@@ -63,10 +64,10 @@ _Ueber alle 211 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 
 | Rang | Ticker | ISIN | Name | Index | Kurs | Abstand ATH (Info) | Kaufen-Anteil Analysten | Kursziel | RSI Tag | RSI Woche | RSI Stunde | Letztes Rating |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | NVDA | - | NVIDIA Corporation | NASDAQ/DOW | 217.55 | -8% | 100% (24 Banken, ≤120T) | 304.73 (40% ueber Kurs) | 52 | 57 | 47 | 2026-08-25 Raymond James: Rating bestaetigt: Strong Buy |
-| 2 | AZN | GB0009895292 | AstraZeneca PLC | NASDAQ | 162.70 | -22% | 100% (1 Banken, ≤120T) | 213.99 (32% ueber Kurs) | 45 | 41 | 39 | 2026-08-24 CICC: neu bewertet mit Outperform |
-| 3 | BA | - | Boeing Company (The) | DOW | 209.82 | -51% | 100% (6 Banken, ≤120T) | 274.85 (31% ueber Kurs) | 37 | 45 | 46 | 2026-08-11 Argus Research: hochgestuft auf Buy |
-| 4 | ASML | USN070592100 | ASML Holding N.V. - New York Re | NASDAQ | 1696.16 | -15% | 100% (5 Banken, ≤120T) | 2194.12 (29% ueber Kurs) | 43 | 55 | 32 | keine in 30T |
+| 1 | ASML | USN070592100 | ASML Holding N.V. - New York Re | NASDAQ | 1486.40 | -14% | 100% (5 Banken, ≤120T) | 2194.12 (48% ueber Kurs) | 46 | 56 | 48 | keine in 30T |
+| 2 | NVDA | - | NVIDIA Corporation | NASDAQ/DOW | 217.55 | -8% | 100% (24 Banken, ≤120T) | 304.73 (40% ueber Kurs) | 52 | 57 | 47 | 2026-08-25 Raymond James: Rating bestaetigt: Strong Buy |
+| 3 | AZN | GB0009895292 | AstraZeneca PLC | NASDAQ | 162.70 | -22% | 100% (1 Banken, ≤120T) | 213.99 (32% ueber Kurs) | 45 | 41 | 39 | 2026-08-24 CICC: neu bewertet mit Outperform |
+| 4 | BA | - | Boeing Company (The) | DOW | 209.82 | -51% | 100% (6 Banken, ≤120T) | 274.85 (31% ueber Kurs) | 37 | 45 | 46 | 2026-08-11 Argus Research: hochgestuft auf Buy |
 | 5 | GOOG | CA02080M1005 | Alphabet Inc. | NASDAQ | 342.88 | -14% | 100% (3 Banken, ≤120T) | 422.34 (23% ueber Kurs) | 48 | 51 | 56 | keine in 30T |
 | 6 | TTWO | - | Take-Two Interactive Software, | NASDAQ | 235.39 | -10% | 100% (10 Banken, ≤120T) | 286.89 (22% ueber Kurs) | 46 | 52 | 50 | 2026-08-10 Roth Capital: Rating bestaetigt: Buy |
 | 7 | ORLY | - | O'Reilly Automotive, Inc. | NASDAQ | 88.50 | -18% | 100% (5 Banken, ≤120T) | 107.80 (22% ueber Kurs) | 45 | 46 | 46 | 2026-08-03 Citigroup: Rating bestaetigt: Buy |

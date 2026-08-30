@@ -273,3 +273,112 @@ def tiefserie(df: pd.DataFrame, variante: str = STANDARD) -> tuple:
     s = seqs[-1]
     return (s["anzahl"], f"{df.index[s['start_i']]:%Y-%m-%d}",
             round(s["tiefstand"], 4))
+
+
+def aufwaertssequenzen(df: pd.DataFrame, variante: str = STANDARD) -> list[dict]:
+    """Alle Aufwaertssequenzen der Historie, aelteste zuerst.
+
+    Strenge Spiegelung von sequenzen(): eine Serie zaehlender NEUER
+    Hoechststaende, beendet durch ein Tief, das die Referenz unterschreitet.
+    Fuer die Dow-Variante ist die Referenz das Tief VOR dem hoechsten Hoch
+    der laufenden Strecke - das Gegenstueck zu "Hoch vor dem tiefsten Tief"
+    auf der Abwaertsseite. Diese Referenz wandert mit jedem neuen Hoch nach
+    oben, der Aufwaertstrend zieht sich also selbst enger, genau wie sich
+    der Abwaertstrend in sequenzen() selbst enger zieht.
+
+    Kein neues Hoch gilt nicht als Fortsetzung der Serie (Punkt 6 der
+    Tiefsregel gespiegelt: nur ein neuer HOECHSTSTAND zaehlt). Ein
+    Zwischenhoch, das unter dem bisherigen Streckenhoch bleibt, taucht in
+    keiner Sequenz auf - das Pendeln oder Abflachen einer Bewegung zeigt
+    sich stattdessen in der Ruecksetzertiefe je Hoch (hochs.py), nicht in
+    der Zaehlung selbst.
+
+    Je Sequenz:
+      hochs         Zeilennummern der zaehlenden Hochs (neue Hoechststaende)
+      anzahl        wie viele davon
+      start_i       Zeilennummer des ersten zaehlenden Hochs
+      start_tief_i  Zeilennummer des Tiefs, an dem die Strecke begann
+                    (None bei der ersten Sequenz der Historie)
+      ende_i        Zeilennummer des letzten zaehlenden Hochs
+      hoechststand  hoechster Kurs der Sequenz
+      laufend       True, wenn die Sequenz noch nicht beendet ist
+    """
+    if variante not in VARIANTEN:
+        raise ValueError(f"Unbekannte Variante: {variante}")
+
+    if _leer(df):
+        return []
+    hoch, tief = df["High"].values, df["Low"].values
+    ergebnis: list[dict] = []
+
+    def leer() -> dict:
+        return {"hochs": [], "start_tief_i": None, "start_tief": None,
+                "hoechststand": None, "ref_tief": None}
+
+    seq = leer()
+    letztes_tief = None
+
+    def schliessen(laufend: bool) -> None:
+        if not seq["hochs"]:
+            return
+        ergebnis.append({
+            "hochs": list(seq["hochs"]),
+            "anzahl": len(seq["hochs"]),
+            "start_i": seq["hochs"][0],
+            "start_tief_i": seq["start_tief_i"],
+            "ende_i": seq["hochs"][-1],
+            "hoechststand": seq["hoechststand"],
+            "laufend": laufend,
+        })
+
+    for art, i in pivots(df):
+        if art == "tief":
+            t = float(tief[i])
+            if variante == "dow":
+                # Spiegel von sequenzen(): Referenz ist das TIEF VOR dem
+                # hoechsten Hoch der laufenden Strecke, nicht ein
+                # beliebiges Zwischentief. Fehlt es (Historienanfang),
+                # dient das erste Tief DANACH als Referenz - sonst bleibt
+                # grenze dauerhaft None und die Serie endet nie.
+                if seq["ref_tief"] is None:
+                    seq["ref_tief"] = t
+                    grenze = None
+                else:
+                    grenze = seq["ref_tief"]
+            elif variante == "starthoch":
+                # Name aus VARIANTEN uebernommen (Tiefsseite), bedeutet
+                # hier: Referenz ist das Tief, an dem die Strecke begann.
+                grenze = seq["start_tief"]
+            else:
+                grenze = letztes_tief
+            if grenze is not None and t < grenze:
+                schliessen(False)
+                seq = leer()
+                seq["start_tief_i"], seq["start_tief"] = i, t
+            elif seq["start_tief"] is None:
+                seq["start_tief_i"], seq["start_tief"] = i, t
+            letztes_tief = t
+        else:
+            h = float(hoch[i])
+            if seq["hoechststand"] is None or h > seq["hoechststand"]:
+                seq["hochs"].append(i)
+                seq["hoechststand"] = h
+                seq["ref_tief"] = letztes_tief
+
+    schliessen(True)
+    return ergebnis
+
+
+def hochserie(df: pd.DataFrame, variante: str = STANDARD) -> tuple:
+    """Die LAUFENDE Aufwaertsserie: (anzahl, startdatum, hoechststand).
+
+    Spiegel von tiefserie(). Leere Rueckgabe ("", "", ""), wenn keine
+    laufende Serie erkennbar ist - etwa direkt nach einem Ausbruch nach
+    unten.
+    """
+    seqs = aufwaertssequenzen(df, variante)
+    if not seqs or not seqs[-1]["laufend"]:
+        return "", "", ""
+    s = seqs[-1]
+    return (s["anzahl"], f"{df.index[s['start_i']]:%Y-%m-%d}",
+            round(s["hoechststand"], 4))

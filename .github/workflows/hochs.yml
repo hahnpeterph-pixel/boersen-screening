@@ -1,0 +1,83 @@
+name: Hochs
+
+on:
+  schedule:
+    # Woechentlich statt taeglich: die Verteilungen stuetzen sich auf sieben
+    # Jahre Historie, ein einzelner neuer Handelstag verschiebt Median oder
+    # p75 praktisch nie sichtbar. Samstag 07:00 UTC, eine Stunde NACH
+    # historie.yml (06:00) - beide teilen sich die Concurrency-Gruppe
+    # "repo-schreiben" und laufen so sauber nacheinander statt sich
+    # gegenseitig in die Warteschlange zu schicken. An dem Tag ist kein
+    # Markt offen, die beiden kritischen Screening-Laeufe (18:00 und 22:15
+    # UTC, werktags) sind ohnehin nicht betroffen.
+    - cron: "0 7 * * 6"
+  workflow_dispatch:
+    inputs:
+      jahre:
+        description: "Jahre Historie"
+        required: false
+        default: "7"
+      wert:
+        description: "Ticker fuer eine einzelne Ausgabe im Log (z.B. CDNS). Leer lassen fuer den normalen Lauf, der schreibt."
+        required: false
+        default: ""
+
+# Gemeinsame Gruppe mit allen anderen Workflows: zwei Laeufe, die
+# gleichzeitig nach docs/ schreiben, kollidieren beim Push. Der Name muss
+# mit screening.yml, phasen.yml und historie.yml uebereinstimmen.
+concurrency:
+  group: repo-schreiben
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  hochs:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Abhaengigkeiten installieren
+        run: pip install -r requirements.txt
+
+      # Diagnose: gibt die letzten zaehlenden Hochs eines einzelnen Wertes
+      # im Log aus. Schreibt nichts und laeuft nur bei manuellem Start mit
+      # eingegebenem Ticker - beim woechentlichen Zeitplan gibt es keine
+      # Eingaben, event_name schuetzt davor, dass die leere Eingabe dort
+      # falsch ausgewertet wird.
+      - name: Einzelwert pruefen
+        if: github.event_name == 'workflow_dispatch' && github.event.inputs.wert != ''
+        run: python hochs.py --jahre ${{ github.event.inputs.jahre || '7' }} --wert ${{ github.event.inputs.wert }}
+
+      - name: Hochs ausfuehren
+        if: github.event_name == 'schedule' || github.event.inputs.wert == ''
+        run: python hochs.py --jahre ${{ github.event.inputs.jahre || '7' }}
+
+      - name: Ergebnis speichern
+        if: github.event_name == 'schedule' || github.event.inputs.wert == ''
+        run: |
+          git config user.name "screening-bot"
+          git config user.email "actions@github.com"
+          git add docs state
+          if git diff --staged --quiet; then
+            echo "Nichts geaendert."
+            exit 0
+          fi
+          git commit -m "Hochs $(date -u +%Y-%m-%d)"
+          for versuch in 1 2 3; do
+            if git pull --rebase --autostash origin main && git push origin main; then
+              echo "Gespeichert im Versuch $versuch."
+              exit 0
+            fi
+            echo "Versuch $versuch fehlgeschlagen, neuer Anlauf in 10 Sekunden ..."
+            sleep 10
+          done
+          echo "Push nach drei Versuchen fehlgeschlagen."
+          exit 1

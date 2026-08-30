@@ -675,33 +675,13 @@ def universum() -> list[str]:
 
 
 def lade(tickers: list[str], jahre: int) -> dict[str, pd.DataFrame]:
-    import yfinance as yf
+    """Kursdaten fuer viele Werte auf einmal - ueber kurse.kerzen_batch()
+    statt eigenem yf.download() (30.08.2026, Frage 40). auto_adjust=True
+    und die 120-Tage-Mindestschwelle bleiben erhalten, damit sich am
+    Ergebnis nichts aendert, nur an der Quelle."""
     print(f"Lade {len(tickers)} Werte, {jahre} Jahre ...")
-    daten: dict[str, pd.DataFrame] = {}
-    for i in range(0, len(tickers), 40):
-        teil = tickers[i:i + 40]
-        # Angefragt wird beim Quellticker, abgelegt unter dem Namen -
-        # sonst rechnet dieses Skript fuer ASML auf einer anderen Boerse
-        # als der Tagesbericht.
-        holen = kurse.quellen(teil)
-        try:
-            roh = yf.download(list(holen.values()), period=f"{jahre}y",
-                              interval="1d", auto_adjust=True,
-                              group_by="ticker", threads=True, progress=False)
-        except Exception as exc:  # noqa: BLE001
-            print(f"  ! Abruf fehlgeschlagen ({teil[0]} ...): {exc}")
-            continue
-        for t in teil:
-            try:
-                d = (roh[holen[t]] if isinstance(roh.columns, pd.MultiIndex)
-                     else roh)
-                d = d.dropna(subset=["High", "Low", "Close"])
-                if len(d) > 120:
-                    daten[t] = d
-            except Exception:  # noqa: BLE001
-                continue
-    print(f"  {len(daten)} Werte geladen.")
-    return daten
+    roh = kurse.kerzen_batch(tickers, period=f"{jahre}y", auto_adjust=True)
+    return {t: d for t, d in roh.items() if len(d) > 120}
 
 
 # ── Bericht ────────────────────────────────────────────────────────

@@ -217,31 +217,20 @@ def universum() -> list[str]:
 
 
 def lade(tickers: list[str], jahre: int) -> dict[str, pd.DataFrame]:
-    import yfinance as yf
+    """Kursdaten fuer viele Werte auf einmal - ueber kurse.kerzen_batch()
+    statt eigenem yf.download() (30.08.2026, Frage 40). auto_adjust=True
+    und die 200-Tage-Mindestschwelle bleiben erhalten - diese Schwelle war
+    hier hoeher als bei historie.py/phasen.py (120), deshalb bewusst NICHT
+    vereinheitlicht, nur die Abrufquelle geteilt.
+
+    universum() darunter bleibt eine EIGENE Funktion, keine Kopie von
+    historie.universum() - sie laesst COMMODITIES und CRYPTO bewusst oder
+    versehentlich weg (beim Vergleich am 30.08.2026 aufgefallen, noch
+    nicht geklaert, welches von beidem). Deshalb hier nicht angeglichen -
+    das waere eine Verhaltensaenderung, keine reine Code-Zusammenlegung."""
     print(f"Lade {len(tickers)} Werte, {jahre} Jahre ...")
-    daten: dict[str, pd.DataFrame] = {}
-    for i in range(0, len(tickers), 40):
-        teil = tickers[i:i + 40]
-        # Angefragt wird beim Quellticker, abgelegt unter dem Namen -
-        # sonst rechnet dieses Skript fuer ASML auf einer anderen Boerse
-        # als der Tagesbericht.
-        holen = kurse.quellen(teil)
-        try:
-            roh = yf.download(list(holen.values()), period=f"{jahre}y",
-                              interval="1d", auto_adjust=True,
-                              group_by="ticker", threads=True, progress=False)
-        except Exception as exc:  # noqa: BLE001
-            print(f"  ! Abruf fehlgeschlagen ({teil[0]} ...): {exc}")
-            continue
-        for t in teil:
-            try:
-                d = (roh[holen[t]] if isinstance(roh.columns, pd.MultiIndex)
-                     else roh)
-                d = d.dropna(subset=["High", "Low", "Close", "Open"])
-                if len(d) > 200:
-                    daten[t] = d
-            except Exception:  # noqa: BLE001
-                continue
+    roh = kurse.kerzen_batch(tickers, period=f"{jahre}y", auto_adjust=True)
+    daten = {t: d for t, d in roh.items() if len(d) > 200}
     print(f"  {len(daten)} Werte geladen.")
     return daten
 

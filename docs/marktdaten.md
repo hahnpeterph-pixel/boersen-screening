@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-08-30 12:47 UTC. 218 Werte, Fenster 90 Kalendertage. EUR/USD 1.1587._
+_Erstellt 2026-08-30 12:59 UTC. 218 Werte, Fenster 90 Kalendertage. EUR/USD 1.1587._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -49,9 +49,8 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | AIR.DE (AIR.DE) | 204.5 | - | - | ja | 46.82 |
 | DTE.DE (DTE.DE) | 28.37 | - | - | ja | 51.68 |
 | ENR.DE (ENR.DE) | 150.52 | - | - | ja | 45.66 |
-| Gold (GC=F) | 4478.1001 | - | ja | ja | 56.96 |
-| Silber (SI=F) | 66.995 | - | ja | ja | 56.34 |
-| Kupfer (HG=F) | 6.562 | - | ja | ja | 52.88 |
+| Gold (GC=F) | 4529.8999 | - | ja | ja | 61.49 |
+| Silber (SI=F) | 67.786 | - | ja | ja | 58.95 |
 | EUR/USD (EURUSD=X) | 1.1587 | - | - | ja | 52.74 |
 
 ---

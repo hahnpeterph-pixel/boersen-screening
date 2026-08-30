@@ -371,11 +371,21 @@ def main():
     schwellen = schwellen_laden()
 
     for kette, name, art in UNIVERSUM:
-        df, ticker = None, kette[0]
+        df, ticker, quelle = None, kette[0], ""
         for kandidat in kette:
             df = kerzen(kandidat)
             if df is not None:
                 ticker = kandidat
+                break
+            # Stooq als Zwischenstufe (30.08.2026, Frage 44), BEVOR der
+            # naechste Kandidat der Kette versucht wird - bei Gold/Silber/
+            # Platin/Palladium heisst das: Stooq-Spot vor Yahoo-Future.
+            # Liefert Stooq nichts, faellt die Schleife normal weiter zum
+            # naechsten Kandidaten durch (unveraendertes Verhalten).
+            df = kurse.kerzen_stooq(kandidat)
+            if df is not None:
+                ticker, quelle = kandidat, "Stooq"
+                print(f"  {kandidat}: Kurse von Stooq (Yahoo lieferte nichts)")
                 break
         if df is None:
             fehler.append(" oder ".join(kette))
@@ -394,6 +404,10 @@ def main():
             "ticker": ticker, "name": name, "art": art,
             "wunschticker": kette[0],
             "rueckfall": int(ticker != kette[0]),
+            # Yahoo oder Stooq (30.08.2026, Frage 44) - ohne diese Spalte
+            # waere ein Wechsel der Datenquelle unsichtbar, obwohl er die
+            # Basis fuer ATR/RSI/Tiefserie fuer diesen Tag aendert.
+            "anbieter": quelle or "Yahoo",
             # Woher die Kerzen tatsaechlich kommen. Weicht das vom Ticker
             # ab, steht dahinter eine Ausnahme in kurse.KURSQUELLE - und
             # die Waehrung dieser Zeile ist dann eine andere als die des

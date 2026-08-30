@@ -55,57 +55,13 @@
  },
  "changes": {
   "turnaround": {
-   "entries": [
-    {
-     "ticker": "LMT",
-     "rank": 4
-    },
-    {
-     "ticker": "RTX",
-     "rank": 9
-    },
-    {
-     "ticker": "BAC",
-     "rank": 10
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "CTAS",
-     "old_rank": 13
-    },
-    {
-     "ticker": "SBUX",
-     "old_rank": 14
-    },
-    {
-     "ticker": "JPM",
-     "old_rank": 15
-    }
-   ],
+   "entries": [],
+   "exits": [],
    "moves": []
   },
   "momentum": {
-   "entries": [
-    {
-     "ticker": "BNY",
-     "rank": 4
-    },
-    {
-     "ticker": "BAC",
-     "rank": 11
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "BAS.DE",
-     "old_rank": 14
-    },
-    {
-     "ticker": "JNJ",
-     "old_rank": 15
-    }
-   ],
+   "entries": [],
+   "exits": [],
    "moves": []
   },
   "value": {

@@ -1,6 +1,6 @@
 # Stundenwache
 
-Stand: 2026-08-28 · 158 Werte mit Stundendaten · erstellt 2026-08-30 10:45 UTC
+Stand: 2026-08-28 · 158 Werte mit Stundendaten · erstellt 2026-08-30 11:20 UTC
 
 Marken sind das juengste Swing-Tief und das juengste Swing-Hoch aus `tiefs_regel.py`, also dieselben wie im Tagesbericht. Geprueft wird nur, was der letzte Handelstag auf Stundenbasis damit gemacht hat.
 
@@ -52,7 +52,7 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | HEI.DE | 161.75 | 170.8 | 2.375 | 9 |
 | DB1.DE | 280.7 | 291.25 | 2.178 | 9 |
 | CDNS | 319.78 | 340.42 | 2.091 | 7 |
-| CRWD | 195.4 | 218.43 | 1.948 | 7 |
+| CRWD | 195.4 | 218.4 | 1.945 | 7 |
 | MBG.DE | 45.62 | 47.015 | 1.807 | 9 |
 | WDAY | 185.82 | 204.46 | 1.601 | 7 |
 | TEAM | 177.88 | 190.35 | 1.407 | 7 |

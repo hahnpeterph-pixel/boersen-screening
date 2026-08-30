@@ -210,6 +210,74 @@ def tiefserie(df, variante=regel.STANDARD):
     return regel.tiefserie(df, variante)
 
 
+def ruecksetzer_ist(df, a):
+    """Ist HEUTE ein bestaetigter, noch nicht erholter Ruecksetzer nach
+    einem Hoch aktiv?
+
+    Bewusst NICHT korrektur_ist()/sequenzen() wiederverwendet: ein Tief
+    zaehlt dort erst als Pivot, wenn eine SPAETERE Kerze das Hoch der
+    Tiefkerze durchbricht - das kann laenger dauern als die ersten paar
+    Tage eines Ruecksetzers, um die es hier geht. Der Befund vom
+    30.08.2026 (Notiz 6: "rote Kerze + hohes Volumen" traegt) galt nur fuer
+    Tag 0-3 nach der schnelleren Bestaetigung aus hochs.py/ruecksetzer.py -
+    ein Tief unter dem Tief der Hochkerze reicht, kein Pivot noetig. Mit
+    der langsameren Pivot-Bestaetigung waere Tag 0 hier oft schon Tag 3
+    oder spaeter, und genau das Fenster, in dem das Signal galt, waere
+    verpasst.
+
+    Gibt None zurueck, wenn kein aktiver Ruecksetzer laeuft (gerade erst
+    ein neues Hoch ohne folgendes tieferes Tief, oder der letzte
+    Ruecksetzer ist schon wieder bis auf 0,25 ATR ans alte Hoch
+    herangekommen). Sonst ein Dict mit hoch_datum, tag, rueckstand_atr.
+    """
+    if a in (None, 0):
+        return None
+    seqs = regel.aufwaertssequenzen(df)
+    if not seqs:
+        return None
+    alle_hochs = sorted(i for s in seqs for i in s["hochs"])
+    if not alle_hochs:
+        return None
+    i = alle_hochs[-1]
+    hoch_preis = float(df["High"].values[i])
+    tief, hoch_arr = df["Low"].values, df["High"].values
+    n = len(df)
+    b = None
+    for j in range(i + 1, n):
+        if tief[j] < tief[i]:
+            b = j
+            break
+    if b is None:
+        return None
+    for j in range(b, n):
+        if hoch_arr[j] >= hoch_preis - 0.25 * a:
+            return None
+    rueckstand = max(0.0, (hoch_preis - float(tief[b:].min())) / a)
+    return {"hoch_datum": f"{df.index[i]:%Y-%m-%d}", "tag": (n - 1) - b,
+            "rueckstand_atr": round(rueckstand, 2)}
+
+
+def schwellen_laden():
+    """Wertspezifische Volumen-Schwelle aus dem woechentlichen
+    ruecksetzer.py-Lauf (docs/ruecksetzer_schwellen.csv). Fehlt die Datei
+    oder ein Wert darin (etwa neu aufgenommene Ticker ohne ausreichende
+    Historie), bleibt die Achtung-Pruefung fuer diesen Wert schlicht aus -
+    besser keine Warnung als eine geratene Schwelle."""
+    pfad = os.path.join(DOCS, "ruecksetzer_schwellen.csv")
+    if not os.path.exists(pfad):
+        return {}
+    try:
+        s = pd.read_csv(pfad)
+        return dict(zip(s["ticker"], s["vol_rel_schwelle"]))
+    except Exception:  # noqa: BLE001
+        return {}
+
+
+FRUEHFENSTER_TAGE = 3  # dieselbe Grenze wie in ruecksetzer.py - nur in
+                        # diesem Fenster war "rote Kerze + hohes Volumen"
+                        # tragfaehig (Notiz 6, 30.08.2026)
+
+
 def vol_rel(df, bis, tage=20):
     if "Volume" not in df.columns:
         return None
@@ -300,6 +368,7 @@ def main():
     kurse.aufraeumen()
     jetzt = datetime.now(timezone.utc)
     zeilen, fehler = [], []
+    schwellen = schwellen_laden()
 
     for kette, name, art in UNIVERSUM:
         df, ticker = None, kette[0]
@@ -370,6 +439,29 @@ def main():
             r[f"tief{n}_best"] = (int(t["best"]) if t else "")
             r[f"tief{n}_volrel"] = (z(vol_rel(df, t["i"]), 2)
                                     if (t and mitvol) else "")
+
+        rs = ruecksetzer_ist(df, a)
+        if rs is not None:
+            heute_vol = vol_rel(df, len(df) - 1) if mitvol else None
+            heute_kerze = "rot" if float(letzte["Close"]) < float(letzte["Open"]) else "gruen"
+            schwelle = schwellen.get(ticker)
+            r["ruecksetzer_hoch_datum"] = rs["hoch_datum"]
+            r["ruecksetzer_tag"] = rs["tag"]
+            r["ruecksetzer_atr"] = z(rs["rueckstand_atr"], 2)
+            r["ruecksetzer_vol_rel"] = z(heute_vol, 2) if heute_vol is not None else ""
+            r["ruecksetzer_kerze"] = heute_kerze
+            r["ruecksetzer_achtung"] = int(bool(
+                rs["tag"] <= FRUEHFENSTER_TAGE and heute_kerze == "rot"
+                and schwelle is not None and heute_vol is not None
+                and heute_vol >= schwelle))
+        else:
+            r["ruecksetzer_hoch_datum"] = ""
+            r["ruecksetzer_tag"] = ""
+            r["ruecksetzer_atr"] = ""
+            r["ruecksetzer_vol_rel"] = ""
+            r["ruecksetzer_kerze"] = ""
+            r["ruecksetzer_achtung"] = 0
+
         zeilen.append(r)
         print(f"  {ticker}: ok")
 

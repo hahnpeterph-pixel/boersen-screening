@@ -1,57 +1,114 @@
 # Marktdaten
 
-_Erstellt 2026-08-30 12:59 UTC. 218 Werte, Fenster 90 Kalendertage. EUR/USD 1.1587._
+_Erstellt 2026-08-31 22:12 UTC. 218 Werte, Fenster 90 Kalendertage. EUR/USD 1.1621._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
 Vollstaendige Daten: `docs/marktdaten.csv`
 
+> **Standwarnung: 40 von 205 Aktien haengen zurueck.** Neuester Handelstag 2026-08-31. Fuer die folgenden Werte gelten Kurs, ATR, RSI und Tiefs NICHT fuer diesen Tag. Die Spalte `stand_zurueck` in der CSV markiert sie ebenfalls.
+>
+> | Wert | letzte Kerze |
+> |---|---|
+> | ADS.DE | 2026-08-28 |
+> | AIR.DE | 2026-08-28 |
+> | ALV.DE | 2026-08-28 |
+> | ASML | 2026-08-28 |
+> | BAS.DE | 2026-08-28 |
+> | BAYN.DE | 2026-08-28 |
+> | BEI.DE | 2026-08-28 |
+> | BMW.DE | 2026-08-28 |
+> | BNR.DE | 2026-08-28 |
+> | CBK.DE | 2026-08-28 |
+> | CON.DE | 2026-08-28 |
+> | DB1.DE | 2026-08-28 |
+> | DBK.DE | 2026-08-28 |
+> | DHL.DE | 2026-08-28 |
+> | DTE.DE | 2026-08-28 |
+> | DTG.DE | 2026-08-28 |
+> | ENR.DE | 2026-08-28 |
+> | EOAN.DE | 2026-08-28 |
+> | FRE.DE | 2026-08-28 |
+> | HEI.DE | 2026-08-28 |
+> | HEN3.DE | 2026-08-28 |
+> | HNR1.DE | 2026-08-28 |
+> | IFX.DE | 2026-08-28 |
+> | MBG.DE | 2026-08-28 |
+> | MRK.DE | 2026-08-28 |
+> | MTX.DE | 2026-08-28 |
+> | MUV2.DE | 2026-08-28 |
+> | P911.DE | 2026-08-28 |
+> | PAH3.DE | 2026-08-28 |
+> | QIA.DE | 2026-08-28 |
+> | RHM.DE | 2026-08-28 |
+> | RWE.DE | 2026-08-28 |
+> | SAP.DE | 2026-08-28 |
+> | SHL.DE | 2026-08-28 |
+> | SIE.DE | 2026-08-28 |
+> | SRT3.DE | 2026-08-28 |
+> | SY1.DE | 2026-08-28 |
+> | VNA.DE | 2026-08-28 |
+> | VOW3.DE | 2026-08-28 |
+> | ZAL.DE | 2026-08-28 |
+
 ## Kerzensignale von gestern
 
 | Wert | Kurs | Hammer | hoeheres Hoch | Umkehrkerze | RSI |
 |---|---|---|---|---|---|
-| ADI (ADI) | 361.78 | - | - | ja | 39.38 |
-| AMAT (AMAT) | 461.67 | - | - | ja | 37.63 |
-| AMD (AMD) | 465.58 | - | - | ja | 44.83 |
-| ARM (ARM) | 239.05 | - | - | ja | 39.96 |
-| AZN (AZN) | 162.7 | - | - | ja | 45.43 |
-| CAT (CAT) | 800.25 | - | - | ja | 38.41 |
-| CEG (CEG) | 276.75 | - | ja | ja | 54.35 |
-| CSCO (CSCO) | 109.93 | - | - | ja | 41.39 |
-| FANG (FANG) | 197.67 | - | ja | ja | 47.23 |
-| FAST (FAST) | 49.78 | - | ja | ja | 48.71 |
-| GEHC (GEHC) | 71.725 | - | - | ja | 52.74 |
-| GILD (GILD) | 145.68 | - | ja | ja | 61.23 |
-| GS (GS) | 1033.99 | - | - | ja | 48.31 |
-| ILMN (ILMN) | 215.59 | - | - | ja | 59.73 |
-| KLAC (KLAC) | 175.54 | - | - | ja | 35.86 |
-| LRCX (LRCX) | 301.9 | - | - | ja | 44.42 |
-| MAR (MAR) | 351.08 | - | ja | ja | 40.9 |
-| MCHP (MCHP) | 72.93 | - | ja | ja | 40.23 |
-| MMM (MMM) | 174.34 | - | - | ja | 43.94 |
-| MRVL (MRVL) | 216.62 | - | - | ja | 47.16 |
-| NVDA (NVDA) | 217.55 | - | - | ja | 52.34 |
-| ON (ON) | 72.61 | - | - | ja | 36.34 |
-| PCAR (PCAR) | 125.34 | - | - | ja | 40.09 |
-| PYPL (PYPL) | 53.66 | - | - | ja | 34.99 |
-| REGN (REGN) | 794.19 | - | - | ja | 55.94 |
-| ROST (ROST) | 228.55 | - | - | ja | 38.55 |
-| TXN (TXN) | 258.64 | - | - | ja | 38.3 |
-| UNH (UNH) | 392.95 | - | - | ja | 42.31 |
-| XEL (XEL) | 76.45 | - | ja | ja | 39.77 |
-| ABBV (ABBV) | 255.48 | - | - | ja | 50.44 |
-| EMR (EMR) | 155.18 | - | - | ja | 50.39 |
-| FDX (FDX) | 330.88 | - | - | ja | 56.2 |
-| GEV (GEV) | 911.93 | - | - | ja | 37.03 |
-| NEE (NEE) | 81.84 | - | - | ja | 26.45 |
-| SO (SO) | 88.25 | - | ja | ja | 29.92 |
-| TMO (TMO) | 622.18 | - | - | ja | 66.17 |
-| AIR.DE (AIR.DE) | 204.5 | - | - | ja | 46.82 |
-| DTE.DE (DTE.DE) | 28.37 | - | - | ja | 51.68 |
-| ENR.DE (ENR.DE) | 150.52 | - | - | ja | 45.66 |
-| Gold (GC=F) | 4529.8999 | - | ja | ja | 61.49 |
-| Silber (SI=F) | 67.786 | - | ja | ja | 58.95 |
-| EUR/USD (EURUSD=X) | 1.1587 | - | - | ja | 52.74 |
+| ABNB (ABNB) | 183.22 | - | - | ja | 59.3 |
+| AMAT (AMAT) | 458.39 | - | - | ja | 37.02 |
+| AXP (AXP) | 330.17 | - | - | ja | 40.37 |
+| BKNG (BKNG) | 199.09 | - | - | ja | 46.35 |
+| CAT (CAT) | 797.47 | - | - | ja | 37.87 |
+| CEG (CEG) | 274.77 | - | - | ja | 52.38 |
+| CSX (CSX) | 50.51 | - | - | ja | 48.66 |
+| CTAS (CTAS) | 201.79 | - | - | ja | 50.63 |
+| DASH (DASH) | 231.74 | - | - | ja | 65.96 |
+| EXC (EXC) | 43.72 | ja | - | - | 35.83 |
+| FAST (FAST) | 49.31 | - | - | ja | 45.86 |
+| GOOGL (GOOGL) | 339.35 | - | - | ja | 44.06 |
+| GS (GS) | 1025.9 | - | - | ja | 46.36 |
+| HON (HON) | 213.53 | - | - | ja | 34.23 |
+| ILMN (ILMN) | 213.63 | - | - | ja | 57.85 |
+| KDP (KDP) | 31.86 | - | - | ja | 54.94 |
+| KO (KO) | 88.67 | - | - | ja | 53.35 |
+| MAR (MAR) | 341.76 | - | - | ja | 34.24 |
+| MELI (MELI) | 1936.2 | - | - | ja | 55.98 |
+| MMM (MMM) | 171.83 | - | - | ja | 39.23 |
+| MNST (MNST) | 45.92 | - | - | ja | 41.61 |
+| MRVL (MRVL) | 211.66 | - | - | ja | 45.57 |
+| ORCL (ORCL) | 149.12 | - | - | ja | 54.12 |
+| PCAR (PCAR) | 124.13 | - | - | ja | 37.65 |
+| PDD (PDD) | 84.0 | - | - | ja | 41.96 |
+| SBUX (SBUX) | 106.25 | - | - | ja | 50.49 |
+| SHW (SHW) | 338.81 | - | - | ja | 43.28 |
+| SPGI (SPGI) | 435.84 | - | - | ja | 57.19 |
+| TRV (TRV) | 365.93 | - | - | ja | 48.78 |
+| TTWO (TTWO) | 219.7 | - | - | ja | 33.75 |
+| UNH (UNH) | 389.41 | - | - | ja | 40.06 |
+| WBD (WBD) | 28.53 | - | - | ja | 62.95 |
+| ABT (ABT) | 110.36 | - | - | ja | 52.93 |
+| BNY (BNY) | 161.28 | - | - | ja | 54.35 |
+| C (C) | 131.62 | - | - | ja | 43.63 |
+| CL (CL) | 89.82 | - | - | ja | 43.59 |
+| EMR (EMR) | 152.44 | - | - | ja | 46.04 |
+| FDX (FDX) | 327.4 | - | - | ja | 52.18 |
+| GD (GD) | 371.35 | - | - | ja | 38.42 |
+| GE (GE) | 335.71 | - | - | ja | 38.4 |
+| HONA (HONA) | 158.11 | - | - | ja | 49.96 |
+| LLY (LLY) | 1156.73 | - | - | ja | 42.65 |
+| LOW (LOW) | 204.7 | - | - | ja | 37.85 |
+| MA (MA) | 589.31 | - | - | ja | 62.12 |
+| MS (MS) | 213.32 | - | - | ja | 47.6 |
+| PM (PM) | 187.3 | - | - | ja | 47.04 |
+| RTX (RTX) | 207.73 | - | - | ja | 41.9 |
+| SPG (SPG) | 212.32 | - | - | ja | 33.99 |
+| UBER (UBER) | 75.65 | - | - | ja | 49.9 |
+| UNP (UNP) | 300.67 | - | - | ja | 51.92 |
+| UPS (UPS) | 104.23 | - | - | ja | 45.81 |
+| USB (USB) | 61.58 | - | - | ja | 39.6 |
+| DTE.DE (DTE.DE) | 28.52 | ja | - | - | 52.99 |
+| Brent Oel (BZ=F) | 88.53 | - | - | ja | 49.94 |
 
 ---
 

@@ -22,6 +22,7 @@ import os
 from datetime import datetime, timezone
 
 import pandas as pd
+import numpy as np
 
 import kurse
 import stand
@@ -359,6 +360,56 @@ def umkehrkerze(df):
                 and h["Close"] < v["Low"])
 
 
+def schluss_unter_vortagestief(df):
+    """Peters direkter Wunsch vom 31.08.2026: heutiger Schlusskurs unter
+    dem Tagestief von GESTERN. Keine Verkaufsregel, nur ein Pruefanlass -
+    bewusst schaerfer als kein_neues_tief() (die vergleicht zwei Tagestiefs
+    miteinander, hier geht es um den Schlusskurs gegen das Tagestief davor,
+    ein deutlicherer Bruch)."""
+    return bool(float(df["Close"].iloc[-1]) < float(df["Low"].iloc[-2]))
+
+
+def rueckgang_3tage(df):
+    """Kursveraenderung der letzten 3 Handelstage in Prozent (Schluss
+    gegen Schluss vor 3 Tagen). Immer berechnet, unabhaengig von einer
+    Schwelle - die Einordnung passiert in rueckgang_schwelle()."""
+    close = df["Close"]
+    if len(close) < 4:
+        return None
+    alt, neu = float(close.iloc[-4]), float(close.iloc[-1])
+    if alt == 0:
+        return None
+    return (neu - alt) / alt * 100
+
+
+def rueckgang_schwelle(df, tage=3, perzentil=10):
+    """Wertspezifische Schwelle fuer 'ungewoehnlicher Ruckgang ueber
+    mehrere Tage' (Peter, 31.08.2026: "keine feste Prozentmarke, lieber
+    schauen was es an besseren Marken gibt").
+
+    Eine feste Marke wie 5 Prozent passt nicht auf 218 sehr verschieden
+    schwankende Werte: Ruhige Werte wie Linde oder Xcel Energy haben ihr
+    eigenes 10.-Perzentil bei einem 3-Tage-Rueckgang um -2,6 Prozent,
+    Micron dagegen bei -9,8 Prozent - eine einzige Marke waere fuer die
+    einen zu eng, fuer die anderen zu lasch (mit echten Depotdaten
+    gegengerechnet, 31.08.2026).
+
+    Deshalb hier wertspezifisch aus der bereits geladenen 400-Tage-Reihe
+    berechnet: das perzentil-te Perzentil (10 = das untere Zehntel, ein
+    ungewoehnlich schlechter 3-Tage-Lauf fuer GENAU DIESEN Wert) der
+    rollierenden tage-Tage-Renditen. Kein separates Skript noetig, die
+    Reihe liegt in main() ohnehin schon vor.
+    """
+    close = df["Close"]
+    if len(close) < tage + 30:
+        return None
+    ret = (close / close.shift(tage) - 1) * 100
+    ret = ret.dropna()
+    if len(ret) < 30:
+        return None
+    return float(np.percentile(ret, perzentil))
+
+
 def z(x, nk=4):
     return "" if x is None else f"{round(float(x), nk)}"
 
@@ -475,6 +526,16 @@ def main():
             r["ruecksetzer_vol_rel"] = ""
             r["ruecksetzer_kerze"] = ""
             r["ruecksetzer_achtung"] = 0
+
+        # Peters Zusatzcheck vom 31.08.2026 - unabhaengig von einer
+        # laufenden Ruecksetzer-Episode, gilt fuer jeden Wert einzeln.
+        r["vortagestief_verletzt"] = int(schluss_unter_vortagestief(df))
+        r3 = rueckgang_3tage(df)
+        schwelle3 = rueckgang_schwelle(df)
+        r["rueckgang_3tage_pct"] = z(r3, 2) if r3 is not None else ""
+        r["rueckgang_3tage_schwelle"] = z(schwelle3, 2) if schwelle3 is not None else ""
+        r["rueckgang_3tage_achtung"] = int(bool(
+            r3 is not None and schwelle3 is not None and r3 <= schwelle3))
 
         zeilen.append(r)
         print(f"  {ticker}: ok")

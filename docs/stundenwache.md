@@ -1,8 +1,8 @@
 # Stundenwache
 
-Stand: 2026-08-31 · 158 Werte mit Stundendaten · erstellt 2026-09-01 08:19 UTC
+Stand: 2026-08-31 · 158 Werte mit Stundendaten · erstellt 2026-09-01 09:52 UTC
 
-> **Sitzung noch nicht abgeschlossen.** 40 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 2, 7). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
+> **Sitzung noch nicht abgeschlossen.** 40 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 3, 7). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
 
 Marken sind das juengste Swing-Tief und das juengste Swing-Hoch aus `tiefs_regel.py`, also dieselben wie im Tagesbericht. Geprueft wird nur, was der letzte Handelstag auf Stundenbasis damit gemacht hat.
 
@@ -25,62 +25,55 @@ Im Tagesverlauf unter der Marke, am Ende darueber. Das ist der Fall, den die Tag
 |---|---|---|---|---|
 | MCHP | 72.91 | 73.44 | 0.208 | 1 |
 
-## Tief angetestet (17)
+## Tief angetestet (13)
 
 Docht bis unter die Marke, kein Stundenschluss darunter.
 
 | Wert | Marke | Schluss | Abstand (ATR) | Stunden dahinter |
 |---|---|---|---|---|
-| BKNG | 198.85 | 199.07 | 0.036 | 0 |
-| DASH | 231.215 | 231.74 | 0.071 | 0 |
-| SBUX | 106.01 | 106.24 | 0.093 | 0 |
-| V | 378.8 | 379.49 | 0.116 | 0 |
-| CSX | 50.36 | 50.51 | 0.175 | 0 |
-| ADP | 284.93 | 286.23 | 0.23 | 0 |
-| ARM | 238.095 | 241.92 | 0.258 | 0 |
-| ABNB | 181.84 | 183.24 | 0.268 | 0 |
-| HON | 212.22 | 213.52 | 0.289 | 0 |
+| BKNG | 198.85 | 199.07 | 0.037 | 0 |
+| AIR.DE | 194.24 | 194.52 | 0.076 | 0 |
+| SBUX | 106.01 | 106.24 | 0.09 | 0 |
+| CSX | 50.36 | 50.51 | 0.173 | 0 |
+| MDLZ | 61.83 | 62.06 | 0.204 | 0 |
+| HON | 212.22 | 213.52 | 0.244 | 0 |
+| ARM | 238.095 | 241.92 | 0.254 | 0 |
+| ABNB | 181.84 | 183.24 | 0.263 | 0 |
 | KDP | 31.6 | 31.87 | 0.326 | 0 |
-| TTWO | 216.76 | 219.7 | 0.331 | 0 |
+| TTWO | 216.76 | 219.7 | 0.336 | 0 |
 | GOOGL | 337.16 | 339.28 | 0.344 | 0 |
-| PAYX | 125.56 | 127.34 | 0.589 | 0 |
-| AIR.DE | 194.24 | 197.16 | 0.742 | 0 |
-| ISRG | 366.73 | 376.87 | 0.968 | 0 |
-| VRTX | 532.23 | 545.39 | 0.977 | 0 |
-| PG | 142.71 | 145.15 | 1.175 | 0 |
+| ODFL | 196.41 | 199.95 | 0.64 | 0 |
+| VRTX | 532.23 | 545.39 | 0.969 | 0 |
 
-## Swing-Hoch ueberwunden (28)
+## Swing-Hoch ueberwunden (25)
 
 | Wert | Hoch | Schluss | Abstand (ATR) | Stunden darueber |
 |---|---|---|---|---|
 | CRM | 213.17 | 257.62 | 3.985 | 7 |
 | MRNA | 65.525 | 140.41 | 3.678 | 7 |
 | CRWD | 195.4 | 231.04 | 2.856 | 7 |
-| SNPS | 401.98 | 439.73 | 2.454 | 7 |
-| CDNS | 319.78 | 338.84 | 1.968 | 7 |
-| HNR1.DE | 252.4 | 259.4 | 1.899 | 2 |
+| SNPS | 401.98 | 439.73 | 2.399 | 7 |
+| CDNS | 319.78 | 338.84 | 1.905 | 7 |
 | MSFT | 489.3 | 507.32 | 1.836 | 7 |
 | TEAM | 177.88 | 194.15 | 1.802 | 7 |
-| MBG.DE | 45.62 | 46.8 | 1.368 | 2 |
-| CDW | 142.97 | 151.61 | 1.351 | 7 |
-| ADBE | 279.0 | 292.75 | 1.338 | 7 |
-| BMW.DE | 59.6 | 61.38 | 1.323 | 2 |
-| WDAY | 185.82 | 197.45 | 0.984 | 7 |
-| BNR.DE | 62.12 | 63.32 | 0.842 | 2 |
-| VOW3.DE | 75.96 | 77.28 | 0.762 | 2 |
-| QCOM | 166.95 | 170.48 | 0.727 | 7 |
-| MRK.DE | 140.35 | 141.95 | 0.693 | 2 |
-| BAS.DE | 52.76 | 53.36 | 0.62 | 2 |
-| ROP | 418.75 | 424.67 | 0.588 | 7 |
-| RWE.DE | 58.48 | 59.28 | 0.58 | 2 |
-| FTNT | 167.19 | 170.94 | 0.57 | 7 |
+| HNR1.DE | 252.4 | 258.4 | 1.721 | 3 |
+| CDW | 142.97 | 151.61 | 1.423 | 7 |
+| ADBE | 279.0 | 292.75 | 1.313 | 7 |
+| WDAY | 185.82 | 197.45 | 1.054 | 7 |
+| QCOM | 166.5 | 170.48 | 0.824 | 7 |
+| BNR.DE | 62.12 | 63.12 | 0.754 | 3 |
+| FTNT | 167.19 | 170.94 | 0.614 | 7 |
+| ROP | 418.75 | 424.67 | 0.594 | 7 |
+| CTSH | 63.3 | 64.57 | 0.593 | 7 |
 | TTD | 13.42 | 13.725 | 0.54 | 7 |
-| BKR | 63.02 | 63.56 | 0.36 | 5 |
-| PAH3.DE | 28.2 | 28.4 | 0.36 | 2 |
-| MUV2.DE | 520.4 | 522.4 | 0.28 | 2 |
+| MBG.DE | 45.62 | 46.095 | 0.526 | 3 |
+| RWE.DE | 58.48 | 59.1 | 0.441 | 3 |
+| BKR | 63.02 | 63.56 | 0.358 | 5 |
+| MRK.DE | 140.75 | 141.3 | 0.224 | 3 |
+| ADP | 285.59 | 286.23 | 0.112 | 7 |
 | TSLA | 366.5 | 367.92 | 0.105 | 3 |
-| CON.DE | 71.06 | 71.2 | 0.1 | 2 |
-| SRT3.DE | 252.2 | 252.5 | 0.043 | 2 |
+| PAYX | 127.09 | 127.34 | 0.082 | 2 |
+| BAS.DE | 52.76 | 52.79 | 0.031 | 3 |
 
 ## Reihen unstimmig - kein Urteil (0)
 

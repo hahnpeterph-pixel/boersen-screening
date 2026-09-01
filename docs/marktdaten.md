@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-09-01 08:18 UTC. 218 Werte, Fenster 90 Kalendertage. EUR/USD 1.1606._
+_Erstellt 2026-09-01 09:51 UTC. 218 Werte, Fenster 90 Kalendertage. EUR/USD 1.1606._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -10,10 +10,6 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 >
 > | Wert | letzte Kerze |
 > |---|---|
-> | MRK.DE | 2026-08-28 |
-> | RWE.DE | 2026-08-28 |
-> | SAP.DE | 2026-08-28 |
-> | SY1.DE | 2026-08-28 |
 > | AAPL | 2026-08-31 |
 > | ABBV | 2026-08-31 |
 > | ABNB | 2026-08-31 |
@@ -117,6 +113,7 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 > | MNST | 2026-08-31 |
 > | MO | 2026-08-31 |
 > | MRK | 2026-08-31 |
+> | MRK.DE | 2026-08-31 |
 > | MRNA | 2026-08-31 |
 > | MRVL | 2026-08-31 |
 > | MS | 2026-08-31 |
@@ -147,6 +144,8 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 > | ROP | 2026-08-31 |
 > | ROST | 2026-08-31 |
 > | RTX | 2026-08-31 |
+> | RWE.DE | 2026-08-31 |
+> | SAP.DE | 2026-08-31 |
 > | SBUX | 2026-08-31 |
 > | SCHW | 2026-08-31 |
 > | SHW | 2026-08-31 |
@@ -154,6 +153,7 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 > | SO | 2026-08-31 |
 > | SPG | 2026-08-31 |
 > | SPGI | 2026-08-31 |
+> | SY1.DE | 2026-08-31 |
 > | T | 2026-08-31 |
 > | TEAM | 2026-08-31 |
 > | TMO | 2026-08-31 |
@@ -184,61 +184,61 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 
 | Wert | Kurs | Hammer | hoeheres Hoch | Umkehrkerze | RSI |
 |---|---|---|---|---|---|
-| ABNB (ABNB) | 183.22 | - | - | ja | 59.3 |
-| AMAT (AMAT) | 458.39 | - | - | ja | 37.02 |
-| AXP (AXP) | 330.17 | - | - | ja | 40.37 |
-| BKNG (BKNG) | 199.09 | - | - | ja | 46.35 |
-| CAT (CAT) | 797.47 | - | - | ja | 37.87 |
-| CSX (CSX) | 50.51 | - | - | ja | 48.66 |
-| CTAS (CTAS) | 201.79 | - | - | ja | 50.63 |
-| DASH (DASH) | 231.74 | - | - | ja | 65.96 |
-| EXC (EXC) | 43.72 | ja | - | - | 35.83 |
-| FAST (FAST) | 49.31 | - | - | ja | 45.86 |
-| GEHC (GEHC) | 71.23 | - | - | ja | 50.73 |
+| ABNB (ABNB) | 183.22 | - | ja | ja | 62.14 |
+| AMAT (AMAT) | 458.39 | - | - | ja | 37.06 |
+| AXP (AXP) | 330.17 | - | - | ja | 40.57 |
+| AZN (AZN) | 162.13 | - | - | ja | 44.63 |
+| BA (BA) | 207.78 | - | - | ja | 35.55 |
+| BKNG (BKNG) | 199.09 | - | - | ja | 46.37 |
+| CAT (CAT) | 797.47 | - | - | ja | 37.91 |
+| CSX (CSX) | 50.51 | - | - | ja | 49.16 |
+| CTAS (CTAS) | 201.79 | - | - | ja | 50.94 |
+| EXC (EXC) | 43.72 | ja | - | - | 35.93 |
+| FAST (FAST) | 49.31 | - | - | ja | 46.06 |
+| GEHC (GEHC) | 71.23 | - | - | ja | 50.87 |
 | GOOGL (GOOGL) | 339.35 | - | - | ja | 44.06 |
-| GS (GS) | 1025.9 | - | - | ja | 46.36 |
-| HON (HON) | 213.53 | - | - | ja | 34.23 |
-| ILMN (ILMN) | 213.63 | - | - | ja | 57.85 |
-| KDP (KDP) | 31.86 | - | - | ja | 54.94 |
-| KO (KO) | 88.67 | - | - | ja | 53.35 |
-| MAR (MAR) | 341.76 | - | - | ja | 34.24 |
-| MELI (MELI) | 1936.2 | - | - | ja | 55.98 |
-| MMM (MMM) | 171.83 | - | - | ja | 39.23 |
+| GS (GS) | 1025.9 | - | - | ja | 46.5 |
+| HD (HD) | 327.83 | - | - | ja | 40.2 |
+| HON (HON) | 213.53 | - | - | ja | 34.44 |
+| ILMN (ILMN) | 213.63 | - | - | ja | 57.98 |
+| KO (KO) | 88.67 | - | - | ja | 54.06 |
+| LRCX (LRCX) | 301.49 | - | - | ja | 44.29 |
+| MAR (MAR) | 341.76 | - | - | ja | 34.65 |
+| MDLZ (MDLZ) | 62.07 | - | - | ja | 47.34 |
+| MMM (MMM) | 171.83 | - | - | ja | 39.54 |
 | MNST (MNST) | 45.92 | - | - | ja | 41.61 |
 | MRVL (MRVL) | 211.66 | - | - | ja | 45.57 |
 | ORCL (ORCL) | 149.12 | - | - | ja | 54.12 |
-| PCAR (PCAR) | 124.13 | - | - | ja | 37.65 |
-| PDD (PDD) | 84.0 | - | - | ja | 41.96 |
-| SBUX (SBUX) | 106.25 | - | - | ja | 50.49 |
-| SHW (SHW) | 338.81 | - | - | ja | 43.28 |
-| SPGI (SPGI) | 435.84 | - | - | ja | 57.19 |
-| TRV (TRV) | 365.93 | - | - | ja | 48.78 |
-| TTWO (TTWO) | 219.7 | - | - | ja | 33.75 |
-| UNH (UNH) | 389.41 | - | - | ja | 40.06 |
-| WBD (WBD) | 28.53 | - | - | ja | 62.95 |
-| ABT (ABT) | 110.36 | - | - | ja | 52.93 |
-| BNY (BNY) | 161.28 | - | - | ja | 54.35 |
-| C (C) | 131.62 | - | - | ja | 43.63 |
-| CL (CL) | 89.82 | - | - | ja | 43.59 |
-| EMR (EMR) | 152.44 | - | - | ja | 46.04 |
-| FDX (FDX) | 327.4 | - | - | ja | 52.18 |
-| GD (GD) | 371.35 | - | - | ja | 38.42 |
-| GE (GE) | 335.71 | - | - | ja | 38.4 |
-| HONA (HONA) | 158.11 | - | - | ja | 49.96 |
-| LLY (LLY) | 1156.73 | - | - | ja | 42.65 |
-| LOW (LOW) | 204.7 | - | - | ja | 37.85 |
-| MA (MA) | 589.31 | - | - | ja | 62.12 |
-| MS (MS) | 213.32 | - | - | ja | 47.6 |
-| PM (PM) | 187.3 | - | - | ja | 47.04 |
-| RTX (RTX) | 207.73 | - | - | ja | 41.9 |
-| SPG (SPG) | 212.32 | - | - | ja | 33.99 |
-| UBER (UBER) | 75.65 | - | - | ja | 49.9 |
-| UNP (UNP) | 300.67 | - | - | ja | 51.92 |
-| UPS (UPS) | 104.23 | - | - | ja | 45.81 |
-| USB (USB) | 61.58 | - | - | ja | 39.6 |
+| PCAR (PCAR) | 124.13 | - | - | ja | 37.81 |
+| SBUX (SBUX) | 106.25 | - | - | ja | 50.87 |
+| SHW (SHW) | 338.81 | - | - | ja | 43.57 |
+| TRV (TRV) | 365.93 | - | - | ja | 49.04 |
+| TTWO (TTWO) | 219.7 | - | - | ja | 33.11 |
+| TXN (TXN) | 260.91 | - | - | ja | 39.59 |
+| UNH (UNH) | 389.41 | - | - | ja | 40.21 |
+| WBD (WBD) | 28.53 | - | - | ja | 63.28 |
+| ABT (ABT) | 110.36 | - | - | ja | 53.68 |
+| C (C) | 131.62 | - | - | ja | 43.7 |
+| CL (CL) | 89.82 | - | - | ja | 43.8 |
+| EMR (EMR) | 152.44 | - | - | ja | 46.33 |
+| FDX (FDX) | 327.4 | - | - | ja | 52.45 |
+| GD (GD) | 371.35 | - | - | ja | 38.86 |
+| GE (GE) | 335.71 | - | - | ja | 38.62 |
+| HONA (HONA) | 158.11 | - | - | ja | 50.13 |
+| LLY (LLY) | 1156.73 | - | - | ja | 42.84 |
+| LOW (LOW) | 204.7 | - | - | ja | 37.31 |
+| MS (MS) | 213.32 | - | - | ja | 47.74 |
+| PM (PM) | 187.3 | - | - | ja | 47.26 |
+| RTX (RTX) | 207.73 | - | - | ja | 42.28 |
+| SO (SO) | 88.0 | - | - | ja | 29.19 |
+| SPG (SPG) | 212.32 | - | - | ja | 34.2 |
+| UBER (UBER) | 75.65 | - | ja | ja | 50.5 |
+| UNP (UNP) | 300.67 | - | - | ja | 52.57 |
+| USB (USB) | 61.58 | - | - | ja | 39.77 |
 | AIR.DE (AIR.DE) | 195.22 | - | - | ja | 35.04 |
 | DHL.DE (DHL.DE) | 56.22 | - | - | ja | 52.68 |
 | HEI.DE (HEI.DE) | 163.9 | - | - | ja | 48.9 |
+| MRK.DE (MRK.DE) | 139.0 | - | - | ja | 47.9 |
 | MTX.DE (MTX.DE) | 346.8 | - | - | ja | 39.5 |
 | RHM.DE (RHM.DE) | 1091.0 | - | - | ja | 42.08 |
 | SIE.DE (SIE.DE) | 282.0 | - | - | ja | 51.79 |

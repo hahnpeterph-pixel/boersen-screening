@@ -427,6 +427,23 @@ def main():
             df = kerzen(kandidat)
             if df is not None:
                 ticker = kandidat
+                # Yahoo "erfolgreich" heisst nicht zwangslaeufig aktuell -
+                # am 01.09.2026 blieben alle 39 DAX-Werte plus ASML tagelang
+                # auf dem Freitagsschluss haengen, ohne dass kerzen() je
+                # einen Fehler warf. Der bisherige Stooq-Fallback griff nur
+                # bei einem echten Fehlschlag (None) - eine "erfolgreich,
+                # aber veraltete" Antwort wurde nie gegengeprueft. Deshalb
+                # hier zusaetzlich bei europaeischen Werten (das beobachtete
+                # Muster) Stooq als zweite Meinung einholen und die neuere
+                # der beiden Quellen nehmen.
+                if kandidat.endswith(".DE") or kandidat == "ASML":
+                    df_stooq = kurse.kerzen_stooq(kandidat)
+                    if df_stooq is not None and df_stooq.index[-1] > df.index[-1]:
+                        alt_datum = df.index[-1].date()
+                        df = df_stooq
+                        quelle = "Stooq (aktueller als Yahoo)"
+                        print(f"  {kandidat}: Yahoo veraltet ({alt_datum}), "
+                              f"Stooq aktueller ({df.index[-1].date()}) - Stooq verwendet")
                 break
             # Stooq als Zwischenstufe (30.08.2026, Frage 44), BEVOR der
             # naechste Kandidat der Kette versucht wird - bei Gold/Silber/

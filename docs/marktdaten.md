@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-08-31 22:12 UTC. 218 Werte, Fenster 90 Kalendertage. EUR/USD 1.1621._
+_Erstellt 2026-09-01 01:17 UTC. 218 Werte, Fenster 90 Kalendertage. EUR/USD 1.1618._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -108,7 +108,6 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | UPS (UPS) | 104.23 | - | - | ja | 45.81 |
 | USB (USB) | 61.58 | - | - | ja | 39.6 |
 | DTE.DE (DTE.DE) | 28.52 | ja | - | - | 52.99 |
-| Brent Oel (BZ=F) | 88.53 | - | - | ja | 49.94 |
 
 ---
 

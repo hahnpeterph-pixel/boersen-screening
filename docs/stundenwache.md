@@ -1,6 +1,6 @@
 # Stundenwache
 
-Stand: 2026-08-31 · 158 Werte mit Stundendaten · erstellt 2026-08-31 22:13 UTC
+Stand: 2026-08-31 · 158 Werte mit Stundendaten · erstellt 2026-09-01 01:18 UTC
 
 > **Sitzung noch nicht abgeschlossen.** 1 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 6, 7, 9). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
 

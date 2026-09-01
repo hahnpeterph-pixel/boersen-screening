@@ -234,6 +234,95 @@ def kerzen_stooq(ticker: str) -> pd.DataFrame | None:
     return None if df is None else df.copy()
 
 
+def kerzen_twelvedata(ticker: str, tage: int = 30) -> pd.DataFrame | None:
+    """Fallback ueber Twelve Data (01.09.2026, weiter zu Fragen 43/44) -
+    eine echte REST-API mit API-Key statt einer Webseite, die man mit
+    einem Skript nachahmt. Stooq blockierte Anfragen aus GitHub Actions
+    offenbar pauschal (Cloud-IP-Bereiche werden von vielen Seiten so
+    behandelt, unabhaengig vom User-Agent) - eine echte API mit Key
+    umgeht genau dieses Problem.
+
+    Key kommt AUSSCHLIESSLICH aus der Umgebungsvariable TWELVEDATA_API_KEY
+    (GitHub Secret) - steht nirgends im Quelltext. Fehlt die Variable,
+    liefert diese Funktion sauber None, kein Fehler.
+
+    Nur fuer Tageskerzen gedacht, deshalb bewusst kurzes Standardfenster
+    (30 Tage) - reicht, um "wie aktuell ist die letzte Kerze" zu pruefen
+    und im Bedarfsfall die letzten paar Tage nachzuliefern. Fuer eine
+    vollstaendige 400-Tage-Historie waere das Gratis-Kontingent
+    (800 Anfragen/Tag, 8/Minute) zu knapp bemessen.
+    """
+    key = os.environ.get("TWELVEDATA_API_KEY")
+    if not key:
+        return None
+
+    holen = quelle(ticker)
+    mem_key = (ticker, "twelvedata", tage)
+    if mem_key in _MEM:
+        wert = _MEM[mem_key]
+        return None if wert is None else wert.copy()
+
+    pfad = _pfad(f"twelvedata_{holen}", f"{tage}d")
+    if os.path.exists(pfad):
+        try:
+            if date.fromtimestamp(os.path.getmtime(pfad)) == date.today():
+                df = pd.read_csv(pfad, index_col=0, parse_dates=True)
+                if len(df) >= 5:
+                    _MEM[mem_key] = df
+                    return df.copy()
+        except Exception as e:
+            print(f"  {ticker}: Twelve-Data-Cache unlesbar ({e}), hole neu")
+
+    basis = holen[:-3] if holen.endswith(".DE") else holen
+    params = {"symbol": basis, "interval": "1day", "outputsize": tage,
+              "order": "ASC", "apikey": key}
+    if holen.endswith(".DE"):
+        params["mic_code"] = "XETR"
+    try:
+        antwort = requests.get("https://api.twelvedata.com/time_series",
+                               params=params, timeout=15)
+        antwort.raise_for_status()
+        roh = antwort.json()
+    except Exception as e:
+        print(f"  {ticker}: Twelve-Data-Abruf fehlgeschlagen ({e})")
+        _MEM[mem_key] = None
+        return None
+
+    if roh.get("status") == "error" or "values" not in roh:
+        print(f"  {ticker}: Twelve Data meldet Fehler ({roh.get('message', roh)})")
+        _MEM[mem_key] = None
+        return None
+
+    df = pd.DataFrame(roh["values"])
+    df["datetime"] = pd.to_datetime(df["datetime"])
+    df = df.set_index("datetime").rename(columns={
+        "open": "Open", "high": "High", "low": "Low", "close": "Close",
+        "volume": "Volume"})
+    for c in ("Open", "High", "Low", "Close", "Volume"):
+        if c in df.columns:
+            df[c] = pd.to_numeric(df[c], errors="coerce")
+    # Kein _aufbereiten() hier - das verlangt MINDESTKERZEN (30) Zeilen,
+    # gedacht fuer die lange 400-Tage-Reihe. Dieser Abruf ist bewusst kurz
+    # (Standard 30 Kalendertage, das sind eher 20 Handelstage), soll nur
+    # die letzten paar frischen Tage liefern - eine einfache Pruefung
+    # reicht.
+    if "Low" not in df.columns or "Close" not in df.columns:
+        df = None
+    else:
+        df = df.dropna(subset=["Low", "Close"])
+        if df.empty:
+            df = None
+
+    _MEM[mem_key] = df
+    if df is not None:
+        os.makedirs(CACHE, exist_ok=True)
+        try:
+            df.to_csv(pfad)
+        except OSError as e:
+            print(f"  {holen}: Twelve-Data-Cache nicht schreibbar ({e})")
+    return None if df is None else df.copy()
+
+
 def kerzen(ticker: str, period: str = "400d", auto_adjust: bool = False) -> pd.DataFrame | None:
     """Tageskerzen fuer einen Ticker. None, wenn keine brauchbaren Daten.
 

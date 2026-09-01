@@ -1,8 +1,8 @@
 # Stundenwache
 
-Stand: 2026-08-31 · 158 Werte mit Stundendaten · erstellt 2026-09-01 09:52 UTC
+Stand: 2026-09-01 · 158 Werte mit Stundendaten · erstellt 2026-09-01 21:46 UTC
 
-> **Sitzung noch nicht abgeschlossen.** 40 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 3, 7). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
+> **Sitzung noch nicht abgeschlossen.** 1 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 6, 7, 9). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
 
 Marken sind das juengste Swing-Tief und das juengste Swing-Hoch aus `tiefs_regel.py`, also dieselben wie im Tagesbericht. Geprueft wird nur, was der letzte Handelstag auf Stundenbasis damit gemacht hat.
 
@@ -13,17 +13,17 @@ Lesart der Urteile:
 - **angetestet** - nur mit dem Docht beruehrt, kein Schluss dahinter
 - **unklar** - Stunden- und Tagesreihe passen nicht zusammen, siehe unten
 
-## Tief gebrochen (0)
+## Tief gebrochen (1)
 
-Keine.
-
-## Tief zurueckerobert (1)
-
-Im Tagesverlauf unter der Marke, am Ende darueber. Das ist der Fall, den die Tageskerze verschluckt.
+Schluss unter dem juengsten Swing-Tief. Die Sequenz ist gerissen.
 
 | Wert | Marke | Schluss | Abstand (ATR) | Stunden dahinter |
 |---|---|---|---|---|
-| MCHP | 72.91 | 73.44 | 0.208 | 1 |
+| ODFL | 196.41 | 187.01 | -1.53 | 7 |
+
+## Tief zurueckerobert (0)
+
+Keine.
 
 ## Tief angetestet (13)
 
@@ -31,49 +31,41 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 
 | Wert | Marke | Schluss | Abstand (ATR) | Stunden dahinter |
 |---|---|---|---|---|
-| BKNG | 198.85 | 199.07 | 0.037 | 0 |
-| AIR.DE | 194.24 | 194.52 | 0.076 | 0 |
-| SBUX | 106.01 | 106.24 | 0.09 | 0 |
-| CSX | 50.36 | 50.51 | 0.173 | 0 |
-| MDLZ | 61.83 | 62.06 | 0.204 | 0 |
-| HON | 212.22 | 213.52 | 0.244 | 0 |
-| ARM | 238.095 | 241.92 | 0.254 | 0 |
-| ABNB | 181.84 | 183.24 | 0.263 | 0 |
-| KDP | 31.6 | 31.87 | 0.326 | 0 |
-| TTWO | 216.76 | 219.7 | 0.336 | 0 |
-| GOOGL | 337.16 | 339.28 | 0.344 | 0 |
-| ODFL | 196.41 | 199.95 | 0.64 | 0 |
-| VRTX | 532.23 | 545.39 | 0.969 | 0 |
+| DIS | 106.15 | 106.23 | 0.034 | 0 |
+| BKNG | 195.4 | 195.68 | 0.046 | 0 |
+| DASH | 225.26 | 225.7 | 0.059 | 0 |
+| MCD | 260.75 | 261.24 | 0.096 | 0 |
+| TRV | 363.215 | 363.98 | 0.118 | 0 |
+| CRWD | 212.65 | 215.07 | 0.182 | 0 |
+| MMM | 169.64 | 170.27 | 0.19 | 0 |
+| GS | 997.0 | 1002.49 | 0.227 | 0 |
+| IBM | 229.91 | 231.62 | 0.279 | 0 |
+| AMD | 452.3 | 459.75 | 0.389 | 0 |
+| IFX.DE | 54.53 | 55.52 | 0.456 | 0 |
+| MELI | 1906.0699 | 1963.49 | 0.832 | 0 |
+| VNA.DE | 18.78 | 19.095 | 0.863 | 0 |
 
-## Swing-Hoch ueberwunden (25)
+## Swing-Hoch ueberwunden (17)
 
 | Wert | Hoch | Schluss | Abstand (ATR) | Stunden darueber |
 |---|---|---|---|---|
-| CRM | 213.17 | 257.62 | 3.985 | 7 |
-| MRNA | 65.525 | 140.41 | 3.678 | 7 |
-| CRWD | 195.4 | 231.04 | 2.856 | 7 |
-| SNPS | 401.98 | 439.73 | 2.399 | 7 |
-| CDNS | 319.78 | 338.84 | 1.905 | 7 |
-| MSFT | 489.3 | 507.32 | 1.836 | 7 |
-| TEAM | 177.88 | 194.15 | 1.802 | 7 |
-| HNR1.DE | 252.4 | 258.4 | 1.721 | 3 |
-| CDW | 142.97 | 151.61 | 1.423 | 7 |
-| ADBE | 279.0 | 292.75 | 1.313 | 7 |
-| WDAY | 185.82 | 197.45 | 1.054 | 7 |
-| QCOM | 166.5 | 170.48 | 0.824 | 7 |
-| BNR.DE | 62.12 | 63.12 | 0.754 | 3 |
-| FTNT | 167.19 | 170.94 | 0.614 | 7 |
-| ROP | 418.75 | 424.67 | 0.594 | 7 |
-| CTSH | 63.3 | 64.57 | 0.593 | 7 |
-| TTD | 13.42 | 13.725 | 0.54 | 7 |
-| MBG.DE | 45.62 | 46.095 | 0.526 | 3 |
-| RWE.DE | 58.48 | 59.1 | 0.441 | 3 |
-| BKR | 63.02 | 63.56 | 0.358 | 5 |
-| MRK.DE | 140.75 | 141.3 | 0.224 | 3 |
-| ADP | 285.59 | 286.23 | 0.112 | 7 |
-| TSLA | 366.5 | 367.92 | 0.105 | 3 |
-| PAYX | 127.09 | 127.34 | 0.082 | 2 |
-| BAS.DE | 52.76 | 52.79 | 0.031 | 3 |
+| MRNA | 65.525 | 154.28 | 4.189 | 7 |
+| CRM | 213.17 | 258.18 | 3.974 | 7 |
+| HNR1.DE | 252.4 | 259.2 | 1.951 | 9 |
+| MBG.DE | 45.62 | 46.935 | 1.457 | 9 |
+| CDW | 142.97 | 150.39 | 1.19 | 7 |
+| WDAY | 185.82 | 198.37 | 1.111 | 7 |
+| ADBE | 279.0 | 286.08 | 0.682 | 7 |
+| MUV2.DE | 520.4 | 524.6 | 0.575 | 8 |
+| AAPL | 322.37 | 325.14 | 0.416 | 7 |
+| BKR | 63.02 | 63.64 | 0.404 | 7 |
+| BAS.DE | 52.76 | 53.0 | 0.245 | 7 |
+| VOW3.DE | 75.96 | 76.3 | 0.191 | 6 |
+| BNR.DE | 62.12 | 62.3 | 0.13 | 9 |
+| SPGI | 439.02 | 440.28 | 0.114 | 3 |
+| GILD | 149.62 | 149.9 | 0.076 | 1 |
+| CTSH | 63.3 | 63.38 | 0.037 | 6 |
+| PAH3.DE | 28.2 | 28.21 | 0.017 | 2 |
 
 ## Reihen unstimmig - kein Urteil (0)
 

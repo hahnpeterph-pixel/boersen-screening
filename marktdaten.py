@@ -461,30 +461,43 @@ def main():
                 # Yahoo "erfolgreich" heisst nicht zwangslaeufig aktuell -
                 # am 01.09.2026 blieben alle 39 DAX-Werte plus ASML tagelang
                 # auf dem Freitagsschluss haengen, ohne dass kerzen() je
-                # einen Fehler warf. Der bisherige Stooq-Fallback griff nur
-                # bei einem echten Fehlschlag (None) - eine "erfolgreich,
-                # aber veraltete" Antwort wurde nie gegengeprueft. Deshalb
-                # hier zusaetzlich bei europaeischen Werten (das beobachtete
-                # Muster) Stooq als zweite Meinung einholen und die neuere
-                # der beiden Quellen nehmen.
+                # einen Fehler warf. Deshalb hier bei europaeischen Werten
+                # (das beobachtete Muster) zwei weitere Quellen einholen
+                # und die insgesamt aktuellste nehmen - nicht nur Stooq,
+                # das blockierte GitHub Actions offenbar pauschal (Fragen
+                # 43/44, 01.09.2026), deshalb zusaetzlich Twelve Data.
                 if kandidat.endswith(".DE") or kandidat == "ASML":
+                    kandidaten_quellen = [("Yahoo", df)]
                     df_stooq = kurse.kerzen_stooq(kandidat)
-                    if df_stooq is not None and df_stooq.index[-1] > df.index[-1]:
-                        alt_datum = df.index[-1].date()
-                        df = df_stooq
-                        quelle = "Stooq (aktueller als Yahoo)"
-                        print(f"  {kandidat}: Yahoo veraltet ({alt_datum}), "
-                              f"Stooq aktueller ({df.index[-1].date()}) - Stooq verwendet")
+                    if df_stooq is not None:
+                        kandidaten_quellen.append(("Stooq", df_stooq))
+                    df_td = kurse.kerzen_twelvedata(kandidat)
+                    if df_td is not None:
+                        kandidaten_quellen.append(("Twelve Data", df_td))
+                    bester_name, bestes_df = max(
+                        kandidaten_quellen, key=lambda x: x[1].index[-1])
+                    if bester_name != "Yahoo":
+                        print(f"  {kandidat}: Yahoo veraltet "
+                              f"({df.index[-1].date()}), {bester_name} "
+                              f"aktueller ({bestes_df.index[-1].date()}) "
+                              f"- {bester_name} verwendet")
+                        df, quelle = bestes_df, bester_name
                 break
-            # Stooq als Zwischenstufe (30.08.2026, Frage 44), BEVOR der
-            # naechste Kandidat der Kette versucht wird - bei Gold/Silber/
-            # Platin/Palladium heisst das: Stooq-Spot vor Yahoo-Future.
-            # Liefert Stooq nichts, faellt die Schleife normal weiter zum
-            # naechsten Kandidaten durch (unveraendertes Verhalten).
+            # Stooq/Twelve Data als Zwischenstufe (30.08./01.09.2026,
+            # Fragen 43/44), BEVOR der naechste Kandidat der Kette
+            # versucht wird - bei Gold/Silber/Platin/Palladium heisst das:
+            # Spot vor Yahoo-Future. Liefert keine der beiden etwas,
+            # faellt die Schleife normal weiter zum naechsten Kandidaten
+            # durch (unveraendertes Verhalten).
             df = kurse.kerzen_stooq(kandidat)
             if df is not None:
                 ticker, quelle = kandidat, "Stooq"
                 print(f"  {kandidat}: Kurse von Stooq (Yahoo lieferte nichts)")
+                break
+            df = kurse.kerzen_twelvedata(kandidat)
+            if df is not None:
+                ticker, quelle = kandidat, "Twelve Data"
+                print(f"  {kandidat}: Kurse von Twelve Data (Yahoo/Stooq lieferten nichts)")
                 break
         if df is None:
             fehler.append(" oder ".join(kette))

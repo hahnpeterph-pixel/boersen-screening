@@ -1,6 +1,6 @@
 # Tiefs, Volumen und Kaufregel-Check
 
-_Erstellt 2026-09-01 06:51 UTC. Fenster: letzte 90 Kalendertage. Tiefs nach der Umkehr-Regel (tiefs_regel.py): ein Tief zaehlt, sobald eine spaetere Kerze das Hoch der Tiefkerze ueberschreitet. Solange es abwaerts geht, gilt das tiefste Tief der Strecke. Gerechnet wird auf abgeschlossenen Tageskerzen._
+_Erstellt 2026-09-01 07:16 UTC. Fenster: letzte 90 Kalendertage. Tiefs nach der Umkehr-Regel (tiefs_regel.py): ein Tief zaehlt, sobald eine spaetere Kerze das Hoch der Tiefkerze ueberschreitet. Solange es abwaerts geht, gilt das tiefste Tief der Strecke. Gerechnet wird auf abgeschlossenen Tageskerzen._
 
 ## Kaufregel
 
@@ -73,7 +73,7 @@ Umkehr = Hammer-Kerze ODER hoeheres Hoch als der Vortag. RSI ueber 50 ist eine W
 | Wert | Kurs | Marke | Abstand | Tief | ATR | RSI | KO-Vorschlag | Einsatz | Signal | |
 |---|---|---|---|---|---|---|---|---|---|---|
 | NVIDIA (NVDA) _Kandidat_ | 220,78 | 209,00 | 5,6 % | 216,21 | 6,81 | 54,6 | 202,59 | **150,00 EUR** | warten | - |
-| Applied Materials (AMAT) _Kandidat_ | 458,39 | 465,00 | -1,4 % | 453,91 | 22,68 | 37,0 | 408,55 | **150,00 EUR** | Marke erreicht — CHART PRUEFEN | + |
+| Applied Materials (AMAT) _Kandidat_ | 458,39 | 465,00 | -1,4 % | 453,91 | 23,57 | 37,1 | 406,77 | **150,00 EUR** | Marke erreicht — CHART PRUEFEN | + |
 
 _Legende: `+` Signal da, `!` Signal da aber RSI zu hoch, `-` warten._
 
@@ -140,7 +140,7 @@ _Diese Zeilen in die gelben Spalten uebertragen. Reihenfolge wie dort._
 | MSFT | 507,29 | 9,82 | 68,3 | 477,15 | 2026-08-18 | 0,61 |
 | ORCL | 149,12 | 5,97 | 54,1 | 137,44 | 2026-08-19 | 0,64 |
 | NVDA | 220,78 | 6,81 | 54,6 | 216,21 | 2026-08-31 | - |
-| AMAT | 458,39 | 22,68 | 37,0 | 453,91 | 2026-08-31 | - |
+| AMAT | 458,39 | 23,57 | 37,1 | 453,91 | 2026-08-31 | - |
 
 ---
 

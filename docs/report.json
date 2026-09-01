@@ -3,37 +3,37 @@
  "ranks": {
   "turnaround": [
    "MELI",
+   "ADSK",
+   "LMT",
    "ZS",
+   "QIA.DE",
    "WDAY",
-   "DTE.DE",
+   "SPGI",
+   "BAC",
    "MDT",
    "KHC",
    "JPM",
-   "QIA.DE",
-   "WFC",
-   "ADBE",
-   "DHR",
+   "JNJ",
    "RTX",
    "MMM",
-   "CVX",
-   "VRSK"
+   "AMT"
   ],
   "momentum": [
    "CRWD",
    "FTNT",
    "ILMN",
-   "DB1.DE",
-   "MU",
    "ALV.DE",
-   "MRNA",
-   "DHL.DE",
    "CBK.DE",
    "BAYN.DE",
-   "SY1.DE",
-   "BNR.DE",
-   "SIE.DE",
+   "MU",
+   "DB1.DE",
    "DTG.DE",
-   "BAS.DE"
+   "MRNA",
+   "SIE.DE",
+   "DHL.DE",
+   "SY1.DE",
+   "BAS.DE",
+   "BNR.DE"
   ],
   "value": [
    "MU",
@@ -41,15 +41,15 @@
    "AVGO",
    "META",
    "REGN",
+   "MTX.DE",
    "BLK",
    "ABNB",
    "V",
-   "MTX.DE",
    "COP",
-   "ENR.DE",
    "VRTX",
    "XOM",
    "GE",
+   "ODFL",
    "SPGI"
   ]
  },
@@ -57,87 +57,82 @@
   "turnaround": {
    "entries": [
     {
-     "ticker": "MELI",
-     "rank": 1
+     "ticker": "ADSK",
+     "rank": 2
     },
     {
-     "ticker": "MDT",
-     "rank": 5
+     "ticker": "LMT",
+     "rank": 3
     },
     {
-     "ticker": "KHC",
-     "rank": 6
-    },
-    {
-     "ticker": "JPM",
+     "ticker": "SPGI",
      "rank": 7
     },
     {
-     "ticker": "MMM",
-     "rank": 13
+     "ticker": "BAC",
+     "rank": 8
+    },
+    {
+     "ticker": "JNJ",
+     "rank": 12
+    },
+    {
+     "ticker": "AMT",
+     "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "GM",
-     "old_rank": 8
+     "ticker": "DTE.DE",
+     "old_rank": 4
     },
     {
-     "ticker": "DASH",
+     "ticker": "WFC",
+     "old_rank": 9
+    },
+    {
+     "ticker": "ADBE",
+     "old_rank": 10
+    },
+    {
+     "ticker": "DHR",
      "old_rank": 11
     },
     {
-     "ticker": "BAYN.DE",
-     "old_rank": 12
-    },
-    {
-     "ticker": "HEN3.DE",
+     "ticker": "CVX",
      "old_rank": 14
     },
     {
-     "ticker": "MTX.DE",
-     "old_rank": 15
-    }
-   ],
-   "moves": [
-    {
-     "ticker": "WFC",
-     "rank": 9,
-     "delta": -6
-    },
-    {
      "ticker": "VRSK",
-     "rank": 15,
-     "delta": -6
-    }
-   ]
-  },
-  "momentum": {
-   "entries": [
-    {
-     "ticker": "MU",
-     "rank": 5
-    },
-    {
-     "ticker": "CBK.DE",
-     "rank": 9
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "PANW",
-     "old_rank": 2
-    },
-    {
-     "ticker": "BNY",
-     "old_rank": 9
+     "old_rank": 15
     }
    ],
    "moves": []
   },
-  "value": {
+  "momentum": {
    "entries": [],
    "exits": [],
+   "moves": [
+    {
+     "ticker": "DTG.DE",
+     "rank": 9,
+     "delta": 5
+    }
+   ]
+  },
+  "value": {
+   "entries": [
+    {
+     "ticker": "ODFL",
+     "rank": 14
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "ENR.DE",
+     "old_rank": 11
+    }
+   ],
    "moves": []
   },
   "analyst_flips": []

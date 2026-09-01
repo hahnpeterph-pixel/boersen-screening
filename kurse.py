@@ -173,16 +173,21 @@ def kerzen_stooq(ticker: str) -> pd.DataFrame | None:
     Fallback greift nur, wenn Yahoo bereits gescheitert ist, kann also
     nichts verschlechtern.
 
+    Wie bei kerzen() zaehlt die Quelle, nicht der Name - ASML wird intern
+    ueber ASML.AS abgerufen, nicht ueber das US-Kuerzel, das auf Stooq
+    kein sinnvolles Ergebnis liefern wuerde.
+
     Eigener Cache-Praefix ("stooq_"), damit ein Yahoo-Fehlschlag von
     heute nicht mit einer erfolgreichen Stooq-Reihe von gestern verwechselt
     wird - beide landen unter unterschiedlichen Dateinamen.
     """
+    holen = quelle(ticker)
     key = (ticker, "stooq")
     if key in _MEM:
         wert = _MEM[key]
         return None if wert is None else wert.copy()
 
-    pfad = _pfad(f"stooq_{ticker}", "voll")
+    pfad = _pfad(f"stooq_{holen}", "voll")
     if os.path.exists(pfad):
         try:
             if date.fromtimestamp(os.path.getmtime(pfad)) == date.today():
@@ -205,7 +210,7 @@ def kerzen_stooq(ticker: str) -> pd.DataFrame | None:
     # tatsaechliche Grund war, zeigt erst der naechste Lauf - von hier aus
     # nicht testbar, stooq.com steht nicht auf der Netzwerk-Freigabeliste
     # dieser Umgebung.
-    url = f"https://stooq.com/q/d/l/?s={stooq_symbol(ticker)}&i=d"
+    url = f"https://stooq.com/q/d/l/?s={stooq_symbol(holen)}&i=d"
     try:
         antwort = requests.get(url, timeout=15, headers={
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -225,7 +230,7 @@ def kerzen_stooq(ticker: str) -> pd.DataFrame | None:
         try:
             df.to_csv(pfad)
         except OSError as e:
-            print(f"  {ticker}: Stooq-Cache nicht schreibbar ({e})")
+            print(f"  {holen}: Stooq-Cache nicht schreibbar ({e})")
     return None if df is None else df.copy()
 
 

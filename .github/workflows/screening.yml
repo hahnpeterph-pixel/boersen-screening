@@ -74,6 +74,8 @@ jobs:
         run: python tiefs.py
 
       - name: Marktdaten ausfuehren
+        env:
+          TWELVEDATA_API_KEY: ${{ secrets.TWELVEDATA_API_KEY }}
         run: python marktdaten.py
 
       # Nach marktdaten.py, weil die Stundenwache dieselben Tageskerzen aus

@@ -1,6 +1,6 @@
 # Boersen-Screening - 2026-09-01
 
-_Stand: Schlusskurse vom 2026-08-31, aber 40 Werte haengen zurueck - siehe Standwarnung. Erstellt 2026-09-01T01:17:34+00:00 UTC. 211 Werte ausgewertet._
+_Stand: Schlusskurse vom 2026-08-31, aber 40 Werte haengen zurueck - siehe Standwarnung. Erstellt 2026-09-01T06:51:08+00:00 UTC. 211 Werte ausgewertet._
 
 > **Standwarnung: 40 von 211 Werten haengen zurueck.** Neuester Handelstag im Bericht ist 2026-08-31.
 >
@@ -66,14 +66,14 @@ _Ueber alle 211 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 1 | NVDA | - | NVIDIA Corporation | NASDAQ/DOW | 220.78 | -6% | 100% (24 Banken, ≤120T) | 323.42 (46% ueber Kurs) | 55 | 58 | 54 | 2026-08-25 Raymond James: Rating bestaetigt: Strong Buy |
 | 2 | ASML | USN070592100 | ASML Holding N.V. - New York Re | NASDAQ | 1494.40 | -13% | 100% (5 Banken, ≤120T) | 2149.11 (44% ueber Kurs) | 47 | 57 | 27 | keine in 30T |
-| 3 | BA | - | Boeing Company (The) | DOW | 207.78 | -52% | 100% (6 Banken, ≤120T) | 274.85 (32% ueber Kurs) | 35 | 45 | 43 | 2026-08-11 Argus Research: hochgestuft auf Buy |
-| 4 | AZN | GB0009895292 | AstraZeneca PLC | NASDAQ | 162.13 | -22% | 100% (1 Banken, ≤120T) | 212.54 (31% ueber Kurs) | 45 | 41 | 36 | 2026-08-24 CICC: neu bewertet mit Outperform |
+| 3 | BA | - | Boeing Company (The) | DOW | 207.78 | -52% | 100% (6 Banken, ≤120T) | 274.85 (32% ueber Kurs) | 36 | 45 | 43 | 2026-08-11 Argus Research: hochgestuft auf Buy |
+| 4 | AZN | GB0009895292 | AstraZeneca PLC | NASDAQ | 162.13 | -22% | 100% (1 Banken, ≤120T) | 212.54 (31% ueber Kurs) | 45 | 40 | 36 | 2026-08-24 CICC: neu bewertet mit Outperform |
 | 5 | TTWO | - | Take-Two Interactive Software, | NASDAQ | 219.70 | -16% | 100% (10 Banken, ≤120T) | 286.89 (31% ueber Kurs) | 34 | 45 | 30 | 2026-08-10 Roth Capital: Rating bestaetigt: Buy |
 | 6 | GOOG | CA02080M1005 | Alphabet Inc. | NASDAQ | 335.41 | -16% | 100% (3 Banken, ≤120T) | 422.34 (26% ueber Kurs) | 42 | 49 | 41 | keine in 30T |
 | 7 | CVS | US1266501006 | CVS Health Corporation | SP100 | 93.91 | -15% | 100% (14 Banken, ≤120T) | 116.08 (24% ueber Kurs) | 41 | 52 | 55 | 2026-08-19 Argus Research: Rating bestaetigt: Buy |
 | 8 | ORLY | - | O'Reilly Automotive, Inc. | NASDAQ | 88.80 | -18% | 100% (5 Banken, ≤120T) | 107.80 (21% ueber Kurs) | 46 | 47 | 50 | 2026-08-03 Citigroup: Rating bestaetigt: Buy |
 | 9 | GE | US3696043013 | GE Aerospace | SP100 | 335.71 | -12% | 100% (9 Banken, ≤120T) | 404.90 (21% ueber Kurs) | 38 | 51 | 34 | keine in 30T |
-| 10 | COF | - | Capital One Financial Corporati | SP100 | 214.51 | -16% | 100% (11 Banken, ≤120T) | 258.27 (20% ueber Kurs) | 49 | 56 | 43 | 2026-08-25 Wolfe Research: Rating bestaetigt: Outperform |
+| 10 | COF | - | Capital One Financial Corporati | SP100 | 214.51 | -16% | 100% (11 Banken, ≤120T) | 258.27 (20% ueber Kurs) | 50 | 56 | 43 | 2026-08-25 Wolfe Research: Rating bestaetigt: Outperform |
 | 11 | SPGI | US78409V1044 | S&P Global Inc. | Watchlist | 435.84 | -18% | 100% (11 Banken, ≤120T) | 519.30 (19% ueber Kurs) | 58 | 54 | 46 | keine in 30T |
 | 12 | DIS | - | Walt Disney Company (The) | DOW | 107.55 | -45% | 100% (11 Banken, ≤120T) | 127.84 (19% ueber Kurs) | 58 | 57 | 44 | 2026-08-06 Wells Fargo: Rating bestaetigt: Overweight |
 | 13 | MU | US5951121038 | Micron Technology, Inc. | NASDAQ | 958.73 | -21% | 96% (23 Banken, ≤120T) | 1513.41 (58% ueber Kurs) | 54 | 61 | 63 | 2026-08-25 Mizuho: Rating bestaetigt: Outperform |

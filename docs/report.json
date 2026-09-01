@@ -6,8 +6,8 @@
    "ADSK",
    "LMT",
    "ZS",
-   "QIA.DE",
    "WDAY",
+   "QIA.DE",
    "SPGI",
    "BAC",
    "MDT",
@@ -23,17 +23,17 @@
    "FTNT",
    "ILMN",
    "ALV.DE",
-   "CBK.DE",
-   "BAYN.DE",
    "MU",
+   "SY1.DE",
+   "CBK.DE",
+   "MRNA",
+   "BAYN.DE",
    "DB1.DE",
    "DTG.DE",
-   "MRNA",
    "SIE.DE",
    "DHL.DE",
-   "SY1.DE",
    "BAS.DE",
-   "BNR.DE"
+   "ABNB"
   ],
   "value": [
    "MU",
@@ -55,84 +55,34 @@
  },
  "changes": {
   "turnaround": {
+   "entries": [],
+   "exits": [],
+   "moves": []
+  },
+  "momentum": {
    "entries": [
     {
-     "ticker": "ADSK",
-     "rank": 2
-    },
-    {
-     "ticker": "LMT",
-     "rank": 3
-    },
-    {
-     "ticker": "SPGI",
-     "rank": 7
-    },
-    {
-     "ticker": "BAC",
-     "rank": 8
-    },
-    {
-     "ticker": "JNJ",
-     "rank": 12
-    },
-    {
-     "ticker": "AMT",
+     "ticker": "ABNB",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "DTE.DE",
-     "old_rank": 4
-    },
-    {
-     "ticker": "WFC",
-     "old_rank": 9
-    },
-    {
-     "ticker": "ADBE",
-     "old_rank": 10
-    },
-    {
-     "ticker": "DHR",
-     "old_rank": 11
-    },
-    {
-     "ticker": "CVX",
-     "old_rank": 14
-    },
-    {
-     "ticker": "VRSK",
+     "ticker": "BNR.DE",
      "old_rank": 15
     }
    ],
-   "moves": []
-  },
-  "momentum": {
-   "entries": [],
-   "exits": [],
    "moves": [
     {
-     "ticker": "DTG.DE",
-     "rank": 9,
-     "delta": 5
+     "ticker": "SY1.DE",
+     "rank": 6,
+     "delta": 7
     }
    ]
   },
   "value": {
-   "entries": [
-    {
-     "ticker": "ODFL",
-     "rank": 14
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "ENR.DE",
-     "old_rank": 11
-    }
-   ],
+   "entries": [],
+   "exits": [],
    "moves": []
   },
   "analyst_flips": []

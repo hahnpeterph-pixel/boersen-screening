@@ -1,17 +1,13 @@
 # Boersen-Screening - 2026-09-01
 
-_Stand: Schlusskurse vom 2026-09-01, aber 175 Werte haengen zurueck - siehe Standwarnung. Erstellt 2026-09-01T07:16:38+00:00 UTC. 211 Werte ausgewertet._
+_Stand: Schlusskurse vom 2026-09-01, aber 171 Werte haengen zurueck - siehe Standwarnung. Erstellt 2026-09-01T07:25:35+00:00 UTC. 211 Werte ausgewertet._
 
-> **Standwarnung: 175 von 211 Werten haengen zurueck.** Neuester Handelstag im Bericht ist 2026-09-01.
+> **Standwarnung: 171 von 211 Werten haengen zurueck.** Neuester Handelstag im Bericht ist 2026-09-01.
 >
 > Ursache ist in aller Regel Yahoo: die vorlaeufige Tageskerze einer Boerse wird ueber Nacht durch die offizielle Abrechnung ersetzt, und solange die fehlt, faellt der Tag weg. Betroffen sind meist die europaeischen Notierungen. Fuer diese Werte gelten Kurs, ATR, RSI und Tiefs unten NICHT fuer den neuesten Handelstag.
 >
 > | Wert | letzte Kerze |
 > |---|---|
-> | MRK.DE | 2026-08-28 |
-> | RWE.DE | 2026-08-28 |
-> | SAP.DE | 2026-08-28 |
-> | SY1.DE | 2026-08-28 |
 > | AAPL | 2026-08-31 |
 > | ABBV | 2026-08-31 |
 > | ABNB | 2026-08-31 |
@@ -199,7 +195,7 @@ _Ueber alle 211 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 
 | Rang | Ticker | ISIN | Name | Index | Kurs | Abstand ATH (Info) | Kaufen-Anteil Analysten | Kursziel | RSI Tag | RSI Woche | RSI Stunde | Letztes Rating |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | ASML | USN070592100 | ASML Holding N.V. - New York Re | NASDAQ | 1459.60 | -15% | 100% (5 Banken, ≤120T) | 2149.11 (47% ueber Kurs) | 42 | 54 | 37 | keine in 30T |
+| 1 | ASML | USN070592100 | ASML Holding N.V. - New York Re | NASDAQ | 1466.00 | -15% | 100% (5 Banken, ≤120T) | 2149.11 (47% ueber Kurs) | 43 | 55 | 42 | keine in 30T |
 | 2 | NVDA | - | NVIDIA Corporation | NASDAQ/DOW | 220.78 | -6% | 100% (24 Banken, ≤120T) | 323.42 (46% ueber Kurs) | 55 | 58 | 54 | 2026-08-25 Raymond James: Rating bestaetigt: Strong Buy |
 | 3 | BA | - | Boeing Company (The) | DOW | 207.78 | -52% | 100% (6 Banken, ≤120T) | 274.85 (32% ueber Kurs) | 36 | 45 | 43 | 2026-08-11 Argus Research: hochgestuft auf Buy |
 | 4 | AZN | GB0009895292 | AstraZeneca PLC | NASDAQ | 162.13 | -22% | 100% (1 Banken, ≤120T) | 212.54 (31% ueber Kurs) | 45 | 40 | 36 | 2026-08-24 CICC: neu bewertet mit Outperform |
@@ -215,9 +211,9 @@ _Ueber alle 211 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 | 14 | AMAT | US0382221051 | Applied Materials, Inc. | NASDAQ | 458.39 | -36% | 96% (26 Banken, ≤120T) | 640.31 (40% ueber Kurs) | 37 | 49 | 33 | 2026-08-25 Mizuho: Rating bestaetigt: Outperform |
 | 15 | ADI | US0326541051 | Analog Devices, Inc. | NASDAQ | 362.14 | -19% | 95% (19 Banken, ≤120T) | 470.25 (30% ueber Kurs) | 40 | 49 | 40 | 2026-08-24 Baird: Rating bestaetigt: Outperform |
 | 16 | AMZN | - | Amazon.com, Inc. | NASDAQ/DOW | 259.77 | -8% | 95% (20 Banken, ≤120T) | 327.67 (26% ueber Kurs) | 50 | 54 | 48 | keine in 30T |
-| 17 | DTE.DE | - | DEUTSCHE TELEKOM AG | DAX | 28.45 | -16% | 94% (18 Banken, ≤120T) | 36.93 (30% ueber Kurs) | 52 | 52 | 51 | keine in 30T |
+| 17 | DTE.DE | - | DEUTSCHE TELEKOM AG | DAX | 28.30 | -16% | 94% (18 Banken, ≤120T) | 36.93 (30% ueber Kurs) | 51 | 51 | 43 | keine in 30T |
 | 18 | LRCX | - | Lam Research Corporation | NASDAQ | 301.49 | -30% | 94% (17 Banken, ≤120T) | 371.19 (23% ueber Kurs) | 44 | 52 | 38 | 2026-08-25 Mizuho: Rating bestaetigt: Outperform |
-| 19 | FRE.DE | - | Fresenius SE & Co. KGaA | DAX | 45.28 | -32% | 93% (14 Banken, ≤120T) | 55.59 (23% ueber Kurs) | 48 | 57 | 36 | keine in 30T |
+| 19 | FRE.DE | - | Fresenius SE & Co. KGaA | DAX | 45.17 | -32% | 93% (14 Banken, ≤120T) | 55.59 (23% ueber Kurs) | 47 | 56 | 35 | keine in 30T |
 | 20 | GM | - | General Motors Company | SP100 | 86.32 | -4% | 92% (12 Banken, ≤120T) | 101.19 (17% ueber Kurs) | 53 | 60 | 49 | keine in 30T |
 
 

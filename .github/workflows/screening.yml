@@ -4,11 +4,14 @@ on:
   schedule:
     # ZWEI LAEUFE seit 26.08.2026.
     #
-    # 18:00 UTC = 20:00 MESZ / 19:00 MEZ - fuer die europaeischen Boersen.
-    # XETRA schliesst 15:30 UTC im Sommer und 16:30 UTC im Winter, der Lauf
-    # liegt also in beiden Zeitzonen sicher danach. Zu diesem Zeitpunkt hat
-    # Yahoo die europaeische Tageskerze noch.
-    - cron: "0 18 * * 1-5"
+    # 19:00 UTC = 21:00 MESZ / 20:00 MEZ - fuer die europaeischen Boersen.
+    # Bis 01.09.2026 stand hier 18:00 UTC. Auch der neue Nachlauf am
+    # naechsten Morgen (05:00 UTC) kam fuer XETRA zu spaet - die
+    # eigentliche Bremse ist offenbar nicht der Boersenschluss (15:30/16:30
+    # UTC), sondern wie lange Yahoo braucht, um die Tageskerze zu
+    # verarbeiten. Eine Stunde mehr Vorlauf als Versuch, bevor mehr
+    # Nachlauf-Termine dazukommen.
+    - cron: "0 19 * * 1-5"
     #
     # 22:15 UTC = 00:15 MESZ / 23:15 MEZ - fuer die US-Boersen.
     # Der US-Schluss liegt bei 20:00 UTC im Sommer und 21:00 UTC im Winter,
@@ -20,13 +23,24 @@ on:
     # Warum nicht ein Lauf fuer beides: bis 22:15 UTC kann Yahoo bei den
     # europaeischen Werten schon auf den Vortag zurueckgefallen sein. Am
     # 25.08.2026 standen um 02:17 UTC alle 39 DAX-Werte und ASML auf dem
-    # Freitagsschluss. Der 18:00-Lauf holt sie, solange sie noch da sind.
+    # Freitagsschluss. Der 19:00-Lauf holt sie, solange sie noch da sind.
     #
     # Damit der spaetere Lauf die guten Daten nicht ueberschreibt, greift
     # die Schutzregel in stand.py: ein aelterer Abruf ersetzt keinen
     # juengeren gespeicherten Stand. Bei gleichem Datum gewinnt der frische
     # Abruf, damit die US-Werte um 22:15 ihre vollstaendige Kerze bekommen.
     - cron: "15 22 * * 1-5"
+    #
+    # 05:00 UTC = 07:00 MESZ / 06:00 MEZ, Di-Sa - NACHTRAG fuer den
+    # jeweiligen Vortag (Di holt Mo nach, Mi holt Di nach, usw.). Ergaenzt
+    # am 01.09.2026: am 31.08.2026 hingen alle 40 DAX-Werte plus ASML noch
+    # auf dem Freitagsschluss - Yahoo hatte den Montagsschluss offenbar bei
+    # KEINEM der beiden Laeufe fertig, weder 18:00 (jetzt 19:00) noch 22:15
+    # UTC. Kein Fehler in stand.py, das haelt korrekt zurueck statt
+    # Schlechteres zu speichern - Yahoo hatte die Daten schlicht noch nicht.
+    # Auch dieser Nachlauf reichte am 01.09.2026 nicht - bleibt trotzdem
+    # bestehen, kostet nichts, wenn Yahoo immer noch nicht so weit ist.
+    - cron: "0 5 * * 2-6"
   workflow_dispatch:        # erlaubt manuelles Starten per Knopfdruck
 
 # Alle drei Workflows schreiben ins selbe Repo. Laufen zwei gleichzeitig,

@@ -2,38 +2,38 @@
  "date": "2026-09-01",
  "ranks": {
   "turnaround": [
-   "MELI",
-   "ADSK",
-   "LMT",
    "ZS",
    "WDAY",
    "QIA.DE",
-   "SPGI",
-   "BAC",
-   "MDT",
-   "KHC",
-   "JPM",
-   "JNJ",
+   "WFC",
+   "ADBE",
+   "GM",
+   "DHR",
+   "VRSK",
    "RTX",
-   "MMM",
-   "AMT"
+   "DASH",
+   "MTX.DE",
+   "BIIB",
+   "CVX",
+   "PM",
+   "MELI"
   ],
   "momentum": [
    "CRWD",
+   "PANW",
    "FTNT",
-   "ILMN",
    "ALV.DE",
-   "MU",
-   "SY1.DE",
    "CBK.DE",
+   "SY1.DE",
    "MRNA",
    "BAYN.DE",
    "DB1.DE",
-   "DTG.DE",
    "SIE.DE",
+   "ILMN",
+   "DTG.DE",
    "DHL.DE",
    "BAS.DE",
-   "ABNB"
+   "BNR.DE"
   ],
   "value": [
    "MU",
@@ -55,28 +55,124 @@
  },
  "changes": {
   "turnaround": {
-   "entries": [],
-   "exits": [],
-   "moves": []
-  },
-  "momentum": {
    "entries": [
     {
-     "ticker": "ABNB",
-     "rank": 15
+     "ticker": "WFC",
+     "rank": 4
+    },
+    {
+     "ticker": "ADBE",
+     "rank": 5
+    },
+    {
+     "ticker": "GM",
+     "rank": 6
+    },
+    {
+     "ticker": "DHR",
+     "rank": 7
+    },
+    {
+     "ticker": "VRSK",
+     "rank": 8
+    },
+    {
+     "ticker": "DASH",
+     "rank": 10
+    },
+    {
+     "ticker": "MTX.DE",
+     "rank": 11
+    },
+    {
+     "ticker": "BIIB",
+     "rank": 12
+    },
+    {
+     "ticker": "CVX",
+     "rank": 13
+    },
+    {
+     "ticker": "PM",
+     "rank": 14
     }
    ],
    "exits": [
     {
-     "ticker": "BNR.DE",
+     "ticker": "ADSK",
+     "old_rank": 2
+    },
+    {
+     "ticker": "LMT",
+     "old_rank": 3
+    },
+    {
+     "ticker": "SPGI",
+     "old_rank": 7
+    },
+    {
+     "ticker": "BAC",
+     "old_rank": 8
+    },
+    {
+     "ticker": "MDT",
+     "old_rank": 9
+    },
+    {
+     "ticker": "KHC",
+     "old_rank": 10
+    },
+    {
+     "ticker": "JPM",
+     "old_rank": 11
+    },
+    {
+     "ticker": "JNJ",
+     "old_rank": 12
+    },
+    {
+     "ticker": "MMM",
+     "old_rank": 14
+    },
+    {
+     "ticker": "AMT",
      "old_rank": 15
     }
    ],
    "moves": [
     {
-     "ticker": "SY1.DE",
-     "rank": 6,
-     "delta": 7
+     "ticker": "MELI",
+     "rank": 15,
+     "delta": -14
+    }
+   ]
+  },
+  "momentum": {
+   "entries": [
+    {
+     "ticker": "PANW",
+     "rank": 2
+    },
+    {
+     "ticker": "BNR.DE",
+     "rank": 15
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "MU",
+     "old_rank": 5
+    },
+    {
+     "ticker": "ABNB",
+     "old_rank": 15
+    }
+   ],
+   "moves": [
+    {
+     "ticker": "ILMN",
+     "rank": 11,
+     "delta": -8
     }
    ]
   },

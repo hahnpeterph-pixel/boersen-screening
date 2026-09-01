@@ -337,6 +337,37 @@ def hoeheres_hoch(df):
     return bool(float(df["High"].iloc[-1]) > float(df["High"].iloc[-2]))
 
 
+def unfertige_heutige_kerze_verwerfen(df, ticker, jetzt_utc):
+    """Wirft die letzte Zeile weg, wenn sie auf heute datiert ist, aber der
+    zugehoerige Markt zum Abrufzeitpunkt noch gar nicht sicher geschlossen
+    hatte - sonst landet ein mitten im Handel abgegriffener Kurs als
+    vermeintlicher Tagesschluss in ATR/RSI/Tiefsserie.
+
+    Am 01.09.2026 um 07:16 UTC beobachtet: ein manueller Lauf traf XETRA
+    16 Minuten nach Eroeffnung. Yahoo lieferte anstandslos eine Kerze fuer
+    diesen Tag - mit einer Handelsspanne von nur 16 Minuten, nicht einem
+    ganzen Tag. Betroffen waren alle DAX-Werte, ASML UND alle Rohstoffe
+    samt EUR/USD, weil diese praktisch rund um die Uhr handeln und deshalb
+    JEDER Abrufzeitpunkt schon "Kurse von heute" liefert.
+
+    Schwelle bewusst je Markt getrennt, nicht pauschal "heutige Kerze immer
+    verwerfen" - das wuerde auch den eigentlichen Zweck der 19:00- und
+    22:15-Uhr-Laeufe zunichtemachen, die ja genau den frischen Schluss vom
+    selben Tag einsammeln sollen. Europaeische Werte (XETRA-Schluss
+    15:30/16:30 UTC) gelten ab 17:00 UTC als sicher fertig, alles andere
+    (US-Boersen, Rohstoffe, FX - spaetester Schluss ueblicherweise 21:00
+    UTC) erst ab 21:00 UTC.
+    """
+    letztes_datum = df.index[-1].date()
+    if letztes_datum != jetzt_utc.date():
+        return df
+    europaeisch = ticker.endswith(".DE") or ticker == "ASML"
+    schwelle = 17 if europaeisch else 21
+    if jetzt_utc.hour < schwelle:
+        return df.iloc[:-1]
+    return df
+
+
 def kein_neues_tief(df):
     """Fruehere, weichere Alternative zu 'Tief bestaetigt' (Y-Spalte/tief1_best).
 
@@ -461,6 +492,12 @@ def main():
             continue
         if ticker != kette[0]:
             print(f"  {kette[0]} leer -> Rueckfall auf {ticker}")
+
+        df_vorher = len(df)
+        df = unfertige_heutige_kerze_verwerfen(df, ticker, jetzt)
+        if len(df) < df_vorher:
+            print(f"  {ticker}: heutige Kerze verworfen (Markt zum Abrufzeitpunkt "
+                  f"{jetzt:%H:%M} UTC noch nicht sicher geschlossen)")
 
         a = atr(df)
         tr = swing_tiefs(df)

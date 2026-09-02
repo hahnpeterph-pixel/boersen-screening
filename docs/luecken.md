@@ -1024,7 +1024,7 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | BEI.DE (BEI.DE) | 2025-07-31 | abwaerts | 110.25 | 0.203 | 0.317 | 276 |
 | BEI.DE (BEI.DE) | 2026-02-25 | abwaerts | 108.1 | 1.278 | 2.821 | 132 |
 | BEI.DE (BEI.DE) | 2026-03-03 | abwaerts | 103.55 | 2.292 | 8.45 | 128 |
-| BEI.DE (BEI.DE) | 2026-09-02 | abwaerts | 77.4 | 0.381 | 0.853 | 0 |
+| BEI.DE (BEI.DE) | 2026-09-02 | abwaerts | 77.4 | 0.377 | 0.853 | 0 |
 | BIIB (BIIB) | 2026-04-20 | aufwaerts | 178.41 | 0.203 | 0.633 | 92 |
 | BKNG (BKNG) | 2026-06-24 | aufwaerts | 170.11 | 0.159 | 0.623 | 47 |
 | BKNG (BKNG) | 2026-07-28 | aufwaerts | 187.34 | 0.311 | 1.142 | 24 |
@@ -1042,7 +1042,6 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | BMW.DE (BMW.DE) | 2026-06-16 | abwaerts | 68.34 | 0.175 | 0.498 | 56 |
 | BMW.DE (BMW.DE) | 2026-06-17 | abwaerts | 66.84 | 2.425 | 8.558 | 55 |
 | BMW.DE (BMW.DE) | 2026-07-27 | aufwaerts | 57.12 | 0.798 | 2.031 | 27 |
-| BMW.DE (BMW.DE) | 2026-08-28 | aufwaerts | 60.0 | 0.513 | 1.233 | 3 |
 | BMY (BMY) | 2025-10-30 | aufwaerts | 43.15 | 0.117 | 0.278 | 208 |
 | BMY (BMY) | 2025-11-24 | aufwaerts | 46.99 | 0.948 | 2.554 | 191 |
 | BMY (BMY) | 2025-12-03 | aufwaerts | 49.18 | 0.584 | 1.545 | 185 |
@@ -1105,10 +1104,10 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | CEG (CEG) | 2026-07-09 | aufwaerts | 244.81 | 0.333 | 1.385 | 37 |
 | CEG (CEG) | 2026-07-20 | aufwaerts | 254.29 | 0.123 | 0.444 | 30 |
 | CEG (CEG) | 2026-09-01 | abwaerts | 274.06 | 0.481 | 1.635 | 0 |
-| CHTR (CHTR) | 2025-07-25 | abwaerts | 379.08 | 3.356 | 13.211 | 276 |
-| CHTR (CHTR) | 2026-04-24 | abwaerts | 241.41 | 0.645 | 3.484 | 88 |
-| CHTR (CHTR) | 2026-07-28 | aufwaerts | 132.57 | 0.135 | 0.762 | 24 |
-| CHTR (CHTR) | 2026-09-01 | abwaerts | 149.66 | 0.488 | 2.385 | 0 |
+| CHTR (CHTR) | 2025-07-25 | abwaerts | 379.08 | 3.356 | 13.211 | 277 |
+| CHTR (CHTR) | 2026-04-24 | abwaerts | 241.41 | 0.645 | 3.484 | 89 |
+| CHTR (CHTR) | 2026-07-28 | aufwaerts | 132.57 | 0.135 | 0.762 | 25 |
+| CHTR (CHTR) | 2026-09-01 | abwaerts | 149.66 | 0.5 | 2.385 | 0 |
 | CL (CL) | 2026-01-07 | aufwaerts | 77.31 | 0.474 | 0.75 | 162 |
 | CL (CL) | 2026-03-03 | abwaerts | 96.78 | 0.116 | 0.238 | 125 |
 | CMCSA (CMCSA) | 2025-07-25 | abwaerts | 33.149 | 1.626 | 3.478 | 276 |
@@ -1213,7 +1212,7 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | DBK.DE (DBK.DE) | 2026-06-15 | aufwaerts | 28.74 | 0.989 | 2.992 | 57 |
 | DBK.DE (DBK.DE) | 2026-07-27 | aufwaerts | 30.595 | 0.562 | 1.504 | 27 |
 | DBK.DE (DBK.DE) | 2026-08-26 | aufwaerts | 33.365 | 0.826 | 1.858 | 5 |
-| DBK.DE (DBK.DE) | 2026-09-02 | aufwaerts | 34.745 | 0.345 | 0.734 | 0 |
+| DBK.DE (DBK.DE) | 2026-09-02 | aufwaerts | 34.745 | 0.341 | 0.734 | 0 |
 | DDOG (DDOG) | 2025-04-23 | aufwaerts | 92.11 | 0.648 | 3.398 | 340 |
 | DDOG (DDOG) | 2026-04-15 | aufwaerts | 113.16 | 0.116 | 0.733 | 95 |
 | DDOG (DDOG) | 2026-04-16 | aufwaerts | 121.18 | 1.0 | 5.95 | 94 |
@@ -1230,7 +1229,7 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | DHL.DE (DHL.DE) | 2025-11-06 | aufwaerts | 40.1 | 1.73 | 3.741 | 206 |
 | DHL.DE (DHL.DE) | 2026-03-31 | aufwaerts | 44.71 | 0.276 | 0.671 | 108 |
 | DHL.DE (DHL.DE) | 2026-05-22 | aufwaerts | 48.51 | 0.88 | 2.453 | 73 |
-| DHL.DE (DHL.DE) | 2026-09-02 | abwaerts | 55.3 | 0.323 | 0.506 | 0 |
+| DHL.DE (DHL.DE) | 2026-09-02 | abwaerts | 55.3 | 0.316 | 0.506 | 0 |
 | DHR (DHR) | 2026-01-27 | abwaerts | 235.2 | 0.23 | 0.502 | 149 |
 | DHR (DHR) | 2026-01-28 | abwaerts | 233.0 | 0.705 | 1.717 | 148 |
 | DHR (DHR) | 2026-07-23 | aufwaerts | 180.12 | 0.657 | 2.776 | 27 |

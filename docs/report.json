@@ -9,24 +9,24 @@
    "MDB",
    "CRWD",
    "VRSK",
+   "QIA.DE",
    "BAC",
    "HEN3.DE",
    "KHC",
-   "QIA.DE",
    "WFC",
    "AMT",
    "RTX",
-   "SHL.DE"
+   "JNJ"
   ],
   "momentum": [
    "CRWD",
    "FTNT",
-   "BNR.DE",
    "MDB",
+   "BNR.DE",
    "BAYN.DE",
-   "SY1.DE",
    "ILMN",
    "MRK",
+   "SY1.DE",
    "ALV.DE",
    "BNY",
    "BAC",
@@ -57,128 +57,22 @@
   "turnaround": {
    "entries": [
     {
-     "ticker": "CRWD",
-     "rank": 6
-    },
-    {
-     "ticker": "WFC",
-     "rank": 12
-    },
-    {
-     "ticker": "AMT",
-     "rank": 13
-    },
-    {
-     "ticker": "RTX",
-     "rank": 14
-    },
+     "ticker": "JNJ",
+     "rank": 15
+    }
+   ],
+   "exits": [
     {
      "ticker": "SHL.DE",
-     "rank": 15
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "WDAY",
-     "old_rank": 8
-    },
-    {
-     "ticker": "MUV2.DE",
-     "old_rank": 9
-    },
-    {
-     "ticker": "SY1.DE",
-     "old_rank": 10
-    },
-    {
-     "ticker": "MTX.DE",
-     "old_rank": 13
-    },
-    {
-     "ticker": "DTG.DE",
      "old_rank": 15
     }
    ],
-   "moves": [
-    {
-     "ticker": "QIA.DE",
-     "rank": 11,
-     "delta": -10
-    }
-   ]
+   "moves": []
   },
   "momentum": {
-   "entries": [
-    {
-     "ticker": "BNY",
-     "rank": 10
-    },
-    {
-     "ticker": "BAC",
-     "rank": 11
-    },
-    {
-     "ticker": "ABNB",
-     "rank": 12
-    },
-    {
-     "ticker": "CVX",
-     "rank": 14
-    },
-    {
-     "ticker": "COP",
-     "rank": 15
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "DBK.DE",
-     "old_rank": 5
-    },
-    {
-     "ticker": "DB1.DE",
-     "old_rank": 10
-    },
-    {
-     "ticker": "DTG.DE",
-     "old_rank": 11
-    },
-    {
-     "ticker": "SIE.DE",
-     "old_rank": 13
-    },
-    {
-     "ticker": "RWE.DE",
-     "old_rank": 15
-    }
-   ],
-   "moves": [
-    {
-     "ticker": "MDB",
-     "rank": 4,
-     "delta": 5
-    },
-    {
-     "ticker": "ILMN",
-     "rank": 7,
-     "delta": 5
-    },
-    {
-     "ticker": "MRK",
-     "rank": 8,
-     "delta": 6
-    },
-    {
-     "ticker": "ALV.DE",
-     "rank": 9,
-     "delta": -6
-    },
-    {
-     "ticker": "BAS.DE",
-     "rank": 13,
-     "delta": -5
-    }
-   ]
+   "entries": [],
+   "exits": [],
+   "moves": []
   },
   "value": {
    "entries": [],

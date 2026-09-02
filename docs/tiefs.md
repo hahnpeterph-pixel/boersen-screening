@@ -1,6 +1,6 @@
 # Tiefs, Volumen und Kaufregel-Check
 
-_Erstellt 2026-09-02 09:23 UTC. Fenster: letzte 90 Kalendertage. Tiefs nach der Umkehr-Regel (tiefs_regel.py): ein Tief zaehlt, sobald eine spaetere Kerze das Hoch der Tiefkerze ueberschreitet. Solange es abwaerts geht, gilt das tiefste Tief der Strecke. Gerechnet wird auf abgeschlossenen Tageskerzen._
+_Erstellt 2026-09-02 11:30 UTC. Fenster: letzte 90 Kalendertage. Tiefs nach der Umkehr-Regel (tiefs_regel.py): ein Tief zaehlt, sobald eine spaetere Kerze das Hoch der Tiefkerze ueberschreitet. Solange es abwaerts geht, gilt das tiefste Tief der Strecke. Gerechnet wird auf abgeschlossenen Tageskerzen._
 
 ## Kaufregel
 
@@ -68,12 +68,12 @@ _Legende: `+` unauffaellig, `!` beobachten (ab 60 RSI), `!!` ueberkauft (ab 70 R
 
 ### Kaufkandidaten — Umkehr abwarten
 
-Umkehr = Hammer-Kerze ODER hoeheres Hoch als der Vortag. RSI ueber 50 ist eine Warnung, keine Sperre. Der KO-Vorschlag ist Tief minus 2,0 x ATR - die tatsaechliche Schwelle waehlst du erst nach der Kaufentscheidung in Trade Republic.
+Umkehr = Hammer-Kerze ODER hoeheres Hoch als der Vortag. Die RSI-Schwelle ist wertspezifisch (Entscheidung 79): p75 des RSI an den historischen Tiefs dieses Wertes an der aktuellen Tiefsposition, aus docs/rsi_schwellen.csv. Ist diese Zelle mit weniger als 3 Faellen besetzt, gilt der wertweite Wert ueber alle Tiefspositionen, danach die Pauschale 50. Die Spalte Schwelle nennt die verwendete Stufe. RSI darueber ist eine WARNUNG, keine Sperre - der Wert bleibt Kandidat. Der KO-Vorschlag ist Tief minus 2,0 x ATR - die tatsaechliche Schwelle waehlst du erst nach der Kaufentscheidung in Trade Republic.
 
-| Wert | Kurs | Marke | Abstand | Tief | ATR | RSI | KO-Vorschlag | Einsatz | Signal | |
-|---|---|---|---|---|---|---|---|---|---|---|
-| NVIDIA (NVDA) _Kandidat_ | 217,44 | 209,00 | 4,0 % | 215,10 | 6,67 | 51,9 | 201,75 | **150,00 EUR** | warten | - |
-| Applied Materials (AMAT) _Kandidat_ | 441,85 | 465,00 | -5,0 % | 438,83 | 23,69 | 34,2 | 391,45 | **150,00 EUR** | Marke erreicht — CHART PRUEFEN | + |
+| Wert | Kurs | Marke | Abstand | Tief | ATR | RSI | Schwelle | KO-Vorschlag | Einsatz | Signal | |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| NVIDIA (NVDA) _Kandidat_ | 217,44 | 209,00 | 4,0 % | 215,10 | 6,67 | 51,9 | 50,0 (Pauschale) | 201,75 | **150,00 EUR** | warten | - |
+| Applied Materials (AMAT) _Kandidat_ | 441,85 | 465,00 | -5,0 % | 438,83 | 23,69 | 34,2 | 50,0 (Pauschale) | 391,45 | **150,00 EUR** | Marke erreicht — CHART PRUEFEN | + |
 
 _Legende: `+` Signal da, `!` Signal da aber RSI zu hoch, `-` warten._
 

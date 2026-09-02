@@ -1,6 +1,6 @@
 # Boersen-Screening - 2026-09-02
 
-_Stand: Schlusskurse vom 2026-09-02, aber 171 Werte haengen zurueck - siehe Standwarnung. Erstellt 2026-09-02T09:23:24+00:00 UTC. 211 Werte ausgewertet._
+_Stand: Schlusskurse vom 2026-09-02, aber 171 Werte haengen zurueck - siehe Standwarnung. Erstellt 2026-09-02T11:30:33+00:00 UTC. 211 Werte ausgewertet._
 
 > **Standwarnung: 171 von 211 Werten haengen zurueck.** Neuester Handelstag im Bericht ist 2026-09-02.
 >
@@ -195,7 +195,7 @@ _Ueber alle 211 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 
 | Rang | Ticker | ISIN | Name | Index | Kurs | Abstand ATH (Info) | Kaufen-Anteil Analysten | Kursziel | RSI Tag | RSI Woche | RSI Stunde | Letztes Rating |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | ASML | USN070592100 | ASML Holding N.V. - New York Re | NASDAQ | 1436.60 | -16% | 100% (5 Banken, ≤120T) | 2149.11 (50% ueber Kurs) | 40 | 53 | 34 | keine in 30T |
+| 1 | ASML | USN070592100 | ASML Holding N.V. - New York Re | NASDAQ | 1432.00 | -17% | 100% (5 Banken, ≤120T) | 2149.11 (50% ueber Kurs) | 39 | 52 | 30 | keine in 30T |
 | 2 | NVDA | - | NVIDIA Corporation | NASDAQ/DOW | 217.44 | -8% | 100% (28 Banken, ≤120T) | 323.42 (49% ueber Kurs) | 52 | 57 | 46 | 2026-08-27 Citigroup: Rating bestaetigt: Buy |
 | 3 | BA | - | Boeing Company (The) | DOW | 205.66 | -52% | 100% (6 Banken, ≤120T) | 274.85 (34% ueber Kurs) | 34 | 44 | 33 | 2026-08-11 Argus Research: hochgestuft auf Buy |
 | 4 | TTWO | - | Take-Two Interactive Software, | NASDAQ | 216.68 | -17% | 100% (10 Banken, ≤120T) | 286.89 (32% ueber Kurs) | 31 | 44 | 29 | 2026-08-10 Roth Capital: Rating bestaetigt: Buy |
@@ -213,7 +213,7 @@ _Ueber alle 211 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 | 16 | AMAT | US0382221051 | Applied Materials, Inc. | NASDAQ | 441.85 | -39% | 96% (26 Banken, ≤120T) | 640.31 (45% ueber Kurs) | 34 | 47 | 30 | 2026-08-25 Mizuho: Rating bestaetigt: Outperform |
 | 17 | ADI | US0326541051 | Analog Devices, Inc. | NASDAQ | 354.52 | -20% | 95% (19 Banken, ≤120T) | 470.25 (33% ueber Kurs) | 36 | 47 | 38 | 2026-08-24 Baird: Rating bestaetigt: Outperform |
 | 18 | AMZN | - | Amazon.com, Inc. | NASDAQ/DOW | 254.92 | -10% | 95% (20 Banken, ≤120T) | 327.67 (28% ueber Kurs) | 46 | 53 | 40 | keine in 30T |
-| 19 | DTE.DE | - | DEUTSCHE TELEKOM AG | DAX | 28.40 | -16% | 94% (18 Banken, ≤120T) | 36.93 (30% ueber Kurs) | 52 | 51 | 53 | keine in 30T |
+| 19 | DTE.DE | - | DEUTSCHE TELEKOM AG | DAX | 28.16 | -16% | 94% (18 Banken, ≤120T) | 36.93 (31% ueber Kurs) | 49 | 50 | 45 | keine in 30T |
 | 20 | LRCX | - | Lam Research Corporation | NASDAQ | 290.20 | -33% | 94% (17 Banken, ≤120T) | 371.19 (28% ueber Kurs) | 41 | 50 | 32 | 2026-08-25 Mizuho: Rating bestaetigt: Outperform |
 
 

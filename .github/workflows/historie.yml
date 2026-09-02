@@ -65,6 +65,15 @@ jobs:
         if: github.event_name == 'schedule' || github.event.inputs.pivots == ''
         run: python historie.py --jahre ${{ github.event.inputs.jahre || '7' }}
 
+      # Leitet die wertspezifischen Kauf-RSI-Schwellen aus der eben
+      # geschriebenen docs/puffer_je_tief.csv.gz ab (Entscheidung 79).
+      # Muss nach historie.py laufen, weil es dessen Ausgabe liest. Beim
+      # Wendepunkt-Lauf schreibt historie.py keine Rohdatei, deshalb
+      # dieselbe Bedingung wie beim Schritt darueber.
+      - name: RSI-Schwellen ableiten
+        if: github.event_name == 'schedule' || github.event.inputs.pivots == ''
+        run: python rsi_schwellen.py
+
       - name: Ergebnis speichern
         run: |
           git config user.name "screening-bot"

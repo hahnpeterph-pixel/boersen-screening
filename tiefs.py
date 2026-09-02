@@ -32,6 +32,7 @@ vor jedem Kauf: Report, dann Trade Republic, dann stock3-Chart.
 Konfiguration in watchlist.json.
 """
 
+import csv
 import json
 import os
 from datetime import datetime, timezone
@@ -45,6 +46,12 @@ import tiefs_regel as regel
 HIER = os.path.dirname(os.path.abspath(__file__))
 WATCHLIST = os.path.join(HIER, "watchlist.json")
 AUSGABE = os.path.join(HIER, "docs", "tiefs.md")
+RSI_SCHWELLEN = os.path.join(HIER, "docs", "rsi_schwellen.csv")
+
+# Ab wie vielen Faellen eine wertspezifische Schwelle verwendet wird.
+# Darunter greift die naechste Stufe der Fallback-Kette - siehe
+# rsi_schwelle_kauf().
+MIN_FAELLE_SCHWELLE = 3
 
 STANDARD = {
     "fenster_tage": 50,
@@ -60,6 +67,9 @@ STANDARD = {
     "min_einsatz_euro": 50.0,
     "rsi_tage": 14,
     "rsi_schwelle": 70.0,
+    # Nur noch Rueckfallwert: die Schwelle kommt seit 02.09.2026
+    # wertspezifisch aus docs/rsi_schwellen.csv (Entscheidung 79). Diese
+    # Zahl greift, wenn ein Wert dort noch gar nicht vorkommt.
     "rsi_kauf_max": 50.0,
     "hammer_lunte_faktor": 2.0,
     "hammer_koerper_oben": 0.66,
@@ -83,6 +93,59 @@ def konfig_laden():
     for schluessel, wert in STANDARD.items():
         k.setdefault(schluessel, wert)
     return k
+
+
+def rsi_schwellen_laden():
+    """Wertspezifische Kauf-RSI-Schwellen aus docs/rsi_schwellen.csv
+    (erzeugt von rsi_schwellen.py im woechentlichen historie.py-Lauf).
+
+    Struktur: (ticker, position) -> (p75, faelle). Position 0 ist der
+    wertweite Wert ueber alle Tiefspositionen.
+
+    Fehlt die Datei, bleibt es beim festen Wert aus watchlist.json - eine
+    ehrlich als Pauschale gekennzeichnete Zahl ist besser als eine
+    geratene wertspezifische.
+    """
+    tab = {}
+    if not os.path.exists(RSI_SCHWELLEN):
+        print("WARNUNG: docs/rsi_schwellen.csv fehlt - RSI-Schwelle "
+              "faellt auf den festen Wert aus watchlist.json zurueck.")
+        return tab
+    with open(RSI_SCHWELLEN, encoding="utf-8", newline="") as f:
+        for z in csv.DictReader(f):
+            try:
+                tab[(z["ticker"], int(z["position"]))] = (
+                    float(z["rsi_p75"]), int(z["faelle"]))
+            except (KeyError, TypeError, ValueError):
+                continue
+    return tab
+
+
+def rsi_schwelle_kauf(tab, ticker, position, standard):
+    """Die Schwelle nach Entscheidung 79: p75 des RSI an den historischen
+    Tiefs DIESES Wertes an GENAU DIESER Tiefsposition.
+
+    Der RSI faellt mit jedem weiteren Tief einer Abwaertsserie
+    systematisch - bei Synopsys von 62,4 an Tief 1 auf 37,2 an Tief 4.
+    Eine ueber alle Positionen gepoolte Schwelle waere an Tief 1 zu
+    streng und an Tief 4 zu lasch, eine feste 50 fuer alle Werte beides
+    zugleich.
+
+    Fallback-Kette, die Stufe wird im Urteilstext immer mitgefuehrt:
+      1. Wert + Tiefsposition, ab MIN_FAELLE_SCHWELLE Faellen
+      2. Wert, alle Tiefspositionen gepoolt
+      3. der feste Wert aus watchlist.json
+
+    Rueckgabe: (schwelle, quelle, faelle). faelle ist None auf Stufe 3.
+    """
+    if position:
+        treffer = tab.get((ticker, int(position)))
+        if treffer and treffer[1] >= MIN_FAELLE_SCHWELLE:
+            return treffer[0], f"Tief {int(position)}", treffer[1]
+    treffer = tab.get((ticker, 0))
+    if treffer and treffer[1] >= MIN_FAELLE_SCHWELLE:
+        return treffer[0], "wertweit", treffer[1]
+    return standard, "Pauschale", None
 
 
 def kerzen_laden(ticker, tage):
@@ -196,7 +259,12 @@ def hoeheres_hoch(df):
     return bool(float(df["High"].iloc[-1]) > float(df["High"].iloc[-2]))
 
 
-def urteil_kauf(sig_hammer, sig_hoch, r, rsi_max, kurs, trigger):
+def urteil_kauf(sig_hammer, sig_hoch, r, rsi_max, kurs, trigger,
+                quelle="Pauschale", faelle=None):
+    """Der RSI ueber der Schwelle ist eine WARNUNG, keine Sperre: der Wert
+    bleibt Kandidat und taucht weiter in Block 1 auf. Die Ampel steht auf
+    '!' statt '+', damit der Chart-Blick vor dem Kauf mit dieser Frage im
+    Kopf passiert - nicht, damit der Wert aussortiert wird."""
     teile = []
     if sig_hammer:
         teile.append("Hammer")
@@ -208,8 +276,10 @@ def urteil_kauf(sig_hammer, sig_hoch, r, rsi_max, kurs, trigger):
     if not teile:
         return "warten", "-"
     text = " + ".join(teile)
+    herkunft = quelle + (f", n={faelle}" if faelle else "")
     if r is not None and r > rsi_max:
-        return f"{text} — aber RSI {de(r, 1)} ueber {de(rsi_max, 0)}", "!"
+        return (f"{text} — CHART PRUEFEN, aber RSI {de(r, 1)} ueber "
+                f"{de(rsi_max, 1)} ({herkunft})"), "!"
     return f"{text} — CHART PRUEFEN", "+"
 
 
@@ -351,6 +421,7 @@ def main():
     rsi_tage = int(k.get("rsi_tage", 14))
     rsi_schwelle = float(k.get("rsi_schwelle", 70.0))
     rsi_kauf_max = float(k.get("rsi_kauf_max", 50.0))
+    rsi_tab = rsi_schwellen_laden()
     ohne_vol = set(k.get("ohne_volumen", []))
     jetzt = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
@@ -431,13 +502,20 @@ def main():
     kandidaten = [
         "", "### Kaufkandidaten — Umkehr abwarten", "",
         f"Umkehr = Hammer-Kerze ODER hoeheres Hoch als der Vortag. "
-        f"RSI ueber {de(rsi_kauf_max, 0)} ist eine Warnung, keine Sperre. "
+        f"Die RSI-Schwelle ist wertspezifisch (Entscheidung 79): p75 des "
+        f"RSI an den historischen Tiefs dieses Wertes an der aktuellen "
+        f"Tiefsposition, aus docs/rsi_schwellen.csv. Ist diese Zelle mit "
+        f"weniger als {MIN_FAELLE_SCHWELLE} Faellen besetzt, gilt der "
+        f"wertweite Wert ueber alle Tiefspositionen, danach die Pauschale "
+        f"{de(rsi_kauf_max, 0)}. Die Spalte Schwelle nennt die verwendete "
+        f"Stufe. RSI darueber ist eine WARNUNG, keine Sperre - der Wert "
+        f"bleibt Kandidat. "
         f"Der KO-Vorschlag ist Tief minus {de(soll, 1)} x ATR - die tatsaechliche "
         f"Schwelle waehlst du erst nach der Kaufentscheidung in Trade Republic.",
         "",
-        "| Wert | Kurs | Marke | Abstand | Tief | ATR | RSI | KO-Vorschlag | "
-        "Einsatz | Signal | |",
-        "|---|---|---|---|---|---|---|---|---|---|---|",
+        "| Wert | Kurs | Marke | Abstand | Tief | ATR | RSI | Schwelle | "
+        "KO-Vorschlag | Einsatz | Signal | |",
+        "|---|---|---|---|---|---|---|---|---|---|---|---|",
     ]
 
     excel = [
@@ -473,11 +551,17 @@ def main():
 
         if art != "Bestand":
             r = rsi(df, rsi_tage)
+            # Position des aktuellen Tiefs in der laufenden Abwaertsserie -
+            # dieselbe Zaehlung wie in der Fortsetzungskette. Leer, wenn
+            # keine Serie laeuft; dann greift die wertweite Stufe.
+            pos_akt = regel.tiefserie(df)[0]
+            grenze, quelle, faelle = rsi_schwelle_kauf(
+                rsi_tab, ticker, pos_akt, rsi_kauf_max)
             sig_h = hammer(df, a, k)
             sig_hh = hoeheres_hoch(df)
             trig = eintrag.get("trigger_kurs")
-            sig_text, sig_ampel = urteil_kauf(sig_h, sig_hh, r, rsi_kauf_max,
-                                              kurs, trig)
+            sig_text, sig_ampel = urteil_kauf(sig_h, sig_hh, r, grenze,
+                                              kurs, trig, quelle, faelle)
             ct = eintrag.get("chart_tief")
             basis = ct if ct is not None else (
                 treffer[0]["tief"] if treffer else None)
@@ -495,12 +579,20 @@ def main():
                 f"{de(ab_marke, 1) + ' %' if ab_marke is not None else '-'} | "
                 f"{de(basis) if basis else 'k.A.'} | {de(a)} | "
                 f"{de(r, 1) if r is not None else 'k.A.'} | "
+                f"{de(grenze, 1)} ({quelle}"
+                f"{f', n={faelle}' if faelle else ''}) | "
                 f"{de(ko_vor) if ko_vor else '-'} | "
                 f"**{de(betrag_k, 2) if betrag_k else '-'} EUR** | "
                 f"{sig_text} | {sig_ampel} |")
-            if sig_ampel == "+":
+            # Bis 02.09.2026 stand hier nur "+": ein Wert mit RSI ueber der
+            # Schwelle bekam die Ampel "!" und verschwand damit aus der
+            # Pruefliste - er fiel praktisch aus Block 1, obwohl der RSI
+            # laut Regel nur warnen soll. Beide Ampeln kommen jetzt in die
+            # Liste, die Warnung steht im Text.
+            if sig_ampel in ("+", "!"):
                 kauf_warnungen.append(
-                    f"- **{name}**: {sig_text}. Kurs {de(kurs)}, "
+                    f"- **{name}**{' _(RSI-Warnung)_' if sig_ampel == '!' else ''}"
+                    f": {sig_text}. Kurs {de(kurs)}, "
                     f"Marke {de(trig) if trig else '-'}.")
             if ticker in _excel_doppelt:
                 continue

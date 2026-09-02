@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-09-01 21:45 UTC. 218 Werte, Fenster 90 Kalendertage. EUR/USD 1.1594._
+_Erstellt 2026-09-02 00:13 UTC. 218 Werte, Fenster 90 Kalendertage. EUR/USD 1.1618._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -109,10 +109,9 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | SIE.DE (SIE.DE) | 277.85 | - | - | ja | 46.96 |
 | VOW3.DE (VOW3.DE) | 76.58 | - | ja | ja | 55.65 |
 | VNA.DE (VNA.DE) | 19.095 | - | - | ja | 29.73 |
-| Gold (GC=F) | 4375.7002 | - | ja | ja | 48.97 |
-| Silber (SI=F) | 64.66 | - | ja | ja | 49.1 |
-| Platin (PL=F) | 1748.9 | - | ja | ja | 47.7 |
-| Palladium (PA=F) | 1320.0 | - | - | ja | 48.49 |
+| Gold (GC=F) | 4374.2998 | - | - | ja | 48.87 |
+| Platin (PL=F) | 1744.2 | - | - | ja | 47.17 |
+| Palladium (PA=F) | 1316.0 | - | - | ja | 48.03 |
 | Kakao (CC=F) | 6509.0 | - | ja | ja | 65.44 |
 
 ---

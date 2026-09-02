@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-09-02 00:13 UTC. 218 Werte, Fenster 90 Kalendertage. EUR/USD 1.1618._
+_Erstellt 2026-09-02 09:23 UTC. 218 Werte, Fenster 90 Kalendertage. EUR/USD 1.1618._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -15,23 +15,23 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | ADP (ADP) | 283.49 | - | ja | ja | 64.16 |
 | ADSK (ADSK) | 247.69 | - | - | ja | 51.75 |
 | AMAT (AMAT) | 441.85 | - | - | ja | 34.25 |
+| AMD (AMD) | 459.61 | - | - | ja | 43.6 |
 | ASML (ASML) | 1435.4 | - | - | ja | 39.41 |
 | AXP (AXP) | 324.19 | - | - | ja | 35.68 |
 | BA (BA) | 205.66 | - | - | ja | 33.77 |
 | BKNG (BKNG) | 195.69 | - | - | ja | 43.13 |
 | CAT (CAT) | 779.16 | - | - | ja | 34.66 |
 | CDNS (CDNS) | 313.04 | - | - | ja | 39.59 |
-| CHTR (CHTR) | 146.19 | - | - | ja | 48.4 |
 | CMCSA (CMCSA) | 26.3 | - | - | ja | 56.14 |
 | COST (COST) | 939.96 | - | ja | ja | 46.16 |
-| CPRT (CPRT) | 32.465 | - | - | ja | 57.97 |
+| CPRT (CPRT) | 32.47 | - | - | ja | 58.01 |
 | CRWD (CRWD) | 215.07 | - | - | ja | 54.5 |
 | CSX (CSX) | 48.7 | - | - | ja | 36.73 |
 | CTAS (CTAS) | 200.59 | - | - | ja | 48.86 |
 | DASH (DASH) | 225.66 | - | - | ja | 61.5 |
 | DDOG (DDOG) | 223.84 | - | - | ja | 41.71 |
 | DIS (DIS) | 106.22 | - | ja | ja | 54.51 |
-| FANG (FANG) | 203.16 | ja | - | - | 53.79 |
+| FANG (FANG) | 203.16 | ja | ja | - | 53.79 |
 | FAST (FAST) | 48.75 | - | - | ja | 43.04 |
 | FTNT (FTNT) | 161.85 | - | - | ja | 52.74 |
 | GOOGL (GOOGL) | 335.02 | - | - | ja | 41.25 |
@@ -109,10 +109,11 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | SIE.DE (SIE.DE) | 277.85 | - | - | ja | 46.96 |
 | VOW3.DE (VOW3.DE) | 76.58 | - | ja | ja | 55.65 |
 | VNA.DE (VNA.DE) | 19.095 | - | - | ja | 29.73 |
-| Gold (GC=F) | 4374.2998 | - | - | ja | 48.87 |
-| Platin (PL=F) | 1744.2 | - | - | ja | 47.17 |
-| Palladium (PA=F) | 1316.0 | - | - | ja | 48.03 |
-| Kakao (CC=F) | 6509.0 | - | ja | ja | 65.44 |
+| Gold (GC=F) | 4348.0 | - | - | ja | 47.12 |
+| Silber (SI=F) | 64.618 | - | - | ja | 48.98 |
+| Palladium (PA=F) | 1317.2 | - | - | ja | 48.16 |
+| Kupfer (HG=F) | 6.5065 | - | ja | ja | 48.76 |
+| Kakao (CC=F) | 6552.0 | - | ja | ja | 66.75 |
 
 ---
 

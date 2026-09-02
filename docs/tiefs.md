@@ -1,6 +1,6 @@
 # Tiefs, Volumen und Kaufregel-Check
 
-_Erstellt 2026-09-02 00:13 UTC. Fenster: letzte 90 Kalendertage. Tiefs nach der Umkehr-Regel (tiefs_regel.py): ein Tief zaehlt, sobald eine spaetere Kerze das Hoch der Tiefkerze ueberschreitet. Solange es abwaerts geht, gilt das tiefste Tief der Strecke. Gerechnet wird auf abgeschlossenen Tageskerzen._
+_Erstellt 2026-09-02 09:23 UTC. Fenster: letzte 90 Kalendertage. Tiefs nach der Umkehr-Regel (tiefs_regel.py): ein Tief zaehlt, sobald eine spaetere Kerze das Hoch der Tiefkerze ueberschreitet. Solange es abwaerts geht, gilt das tiefste Tief der Strecke. Gerechnet wird auf abgeschlossenen Tageskerzen._
 
 ## Kaufregel
 
@@ -82,7 +82,7 @@ _Legende: `+` Signal da, `!` Signal da aber RSI zu hoch, `-` warten._
 | Wert | Bezugstief | Puffer | Faktor | Einsatz | Hinweis |
 |---|---|---|---|---|---|
 | Take-Two (TTWO) | 231,58 (20.08., Chart) | 0,32 x ATR | 0,16 | **65,99 EUR** | kaufbar |
-| Meta Platforms (META) | 524,52 (30.07., Chart) | 0,31 x ATR | 0,16 | **65,60 EUR** | kaufbar |
+| Meta Platforms (META) | 524,52 (30.07., Chart) | 0,31 x ATR | 0,16 | **65,59 EUR** | kaufbar |
 | Micron (MU) | 915,18 (19.08., Chart) | 1,12 x ATR | 0,56 | **106,00 EUR** | kaufbar |
 | Microsoft (MSFT) | 477,15 (18.08., Chart) | 13,30 x ATR | 1,00 | **150,00 EUR** | kaufbar |
 | Microsoft II (MSFT) | 477,15 (18.08., Chart) | 0,23 x ATR | 0,12 | **61,66 EUR** | kaufbar |
@@ -97,7 +97,7 @@ Tief minus 2,0 x ATR. Die Hebelangabe ist das, was sich bei diesem KO rechnerisc
 | Wert | Kurs | ATR | nach Trendtief | Hebel | konservativ | Hebel |
 |---|---|---|---|---|---|---|
 | Take-Two (TTWO) | 216,68 | 8,63 | 196,88 | 10,9x | 188,74 | 7,8x |
-| Meta Platforms (META) | 578,54 | 18,17 | 519,95 | 9,9x | 488,15 | 6,4x |
+| Meta Platforms (META) | 578,54 | 18,19 | 519,72 | 9,8x | 488,11 | 6,4x |
 | Micron (MU) | 933,44 | 49,45 | 788,71 | 6,4x | 638,98 | 3,2x |
 | Microsoft (MSFT) | 501,02 | 9,69 | 477,40 | 21,2x | 329,82 | 2,9x |
 | Microsoft II (MSFT) | 501,02 | 9,69 | 477,40 | 21,2x | 329,82 | 2,9x |
@@ -109,22 +109,22 @@ _'nach Trendtief' orientiert sich am juengsten Tief und laesst mehr Hebel zu. 'k
 
 | Wert | Datum | Tief | Volumen | rel. zu Ø 20 T | Tief -> KO |
 |---|---|---|---|---|---|
-| Take-Two (TTWO) | 01.09.2026 | 214,14 | 2,8 Mio. | 1,05x | -6,9 % |
+| Take-Two (TTWO) | 01.09.2026 | 214,14 | 2,8 Mio. | 1,06x | -6,9 % |
 | Take-Two (TTWO) | 25.08.2026 | 232,44 | 1,6 Mio. | 0,69x (duenn) | 1,6 % |
 | Take-Two (TTWO) | 20.08.2026 | 231,58 | 2,4 Mio. | 1,10x | 1,2 % |
-| Meta Platforms (META) | 01.09.2026 | 556,29 | 15,4 Mio. | 1,00x | 6,7 % |
+| Meta Platforms (META) | 01.09.2026 | 556,10 | 15,8 Mio. | 1,02x | 6,7 % |
 | Meta Platforms (META) | 19.08.2026 | 537,27 | 17,0 Mio. | 1,00x | 3,4 % |
 | Meta Platforms (META) | 30.07.2026 | 524,49 | 42,3 Mio. | 2,22x (Kapitulation) | 1,1 % |
 | Micron (MU) | 24.08.2026 | 887,61 | 30,0 Mio. | 0,77x (duenn) | 3,1 % |
 | Micron (MU) | 19.08.2026 | 915,18 | 26,9 Mio. | 0,65x (duenn) | 6,1 % |
 | Micron (MU) | 06.08.2026 | 827,00 | 35,8 Mio. | 0,78x (duenn) | -4,0 % |
-| Microsoft (MSFT) | 01.09.2026 | 496,78 | 19,1 Mio. | 0,72x (duenn) | 29,9 % |
+| Microsoft (MSFT) | 01.09.2026 | 496,78 | 21,0 Mio. | 0,79x (duenn) | 29,9 % |
 | Microsoft (MSFT) | 21.08.2026 | 478,53 | 22,5 Mio. | 0,61x (duenn) | 27,2 % |
 | Microsoft (MSFT) | 18.08.2026 | 477,15 | 24,1 Mio. | 0,64x (duenn) | 27,0 % |
-| Microsoft II (MSFT) | 01.09.2026 | 496,78 | 19,1 Mio. | 0,72x (duenn) | 4,4 % |
+| Microsoft II (MSFT) | 01.09.2026 | 496,78 | 21,0 Mio. | 0,79x (duenn) | 4,4 % |
 | Microsoft II (MSFT) | 21.08.2026 | 478,53 | 22,5 Mio. | 0,61x (duenn) | 0,8 % |
 | Microsoft II (MSFT) | 18.08.2026 | 477,15 | 24,1 Mio. | 0,64x (duenn) | 0,5 % |
-| Oracle (ORCL) | 01.09.2026 | 139,95 | 25,2 Mio. | 1,08x | 19,5 % |
+| Oracle (ORCL) | 01.09.2026 | 139,95 | 25,4 Mio. | 1,08x | 19,5 % |
 | Oracle (ORCL) | 24.08.2026 | 141,25 | 14,2 Mio. | 0,49x (duenn) | 20,2 % |
 | Oracle (ORCL) | 19.08.2026 | 137,43 | 26,6 Mio. | 0,86x | 18,0 % |
 
@@ -134,10 +134,10 @@ _Diese Zeilen in die gelben Spalten uebertragen. Reihenfolge wie dort._
 
 | Ticker | Kurs | ATR(14) | RSI | Chart-Tief | Datum Tief | Vol. rel. |
 |---|---|---|---|---|---|---|
-| TTWO | 216,68 | 8,63 | 31,4 | 231,58 | 2026-08-20 | 1,05 |
-| META | 578,54 | 18,17 | 49,9 | 524,52 | 2026-07-30 | 1,00 |
+| TTWO | 216,68 | 8,63 | 31,4 | 231,58 | 2026-08-20 | 1,06 |
+| META | 578,54 | 18,19 | 49,9 | 524,52 | 2026-07-30 | 1,02 |
 | MU | 933,44 | 49,45 | 50,4 | 915,18 | 2026-08-19 | 0,77 |
-| MSFT | 501,02 | 9,69 | 63,7 | 477,15 | 2026-08-18 | 0,72 |
+| MSFT | 501,02 | 9,69 | 63,7 | 477,15 | 2026-08-18 | 0,79 |
 | ORCL | 141,32 | 5,95 | 46,4 | 137,44 | 2026-08-19 | 1,08 |
 | NVDA | 217,44 | 6,67 | 51,9 | 215,10 | 2026-09-01 | - |
 | AMAT | 441,85 | 23,69 | 34,2 | 438,83 | 2026-09-01 | - |

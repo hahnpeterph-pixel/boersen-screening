@@ -391,6 +391,18 @@ def umkehrkerze(df):
                 and h["Close"] < v["Low"])
 
 
+def rote_kerze(df):
+    """Einfachste Rot-Definition: Schlusskurs unter Eroeffnung, sonst
+    nichts. Peters Wunsch vom 03.09.2026: nur fuer Bestandswerte in der
+    Depot-Tabelle sichtbar machen, ob die letzte Kerze rot war - kein
+    Verkaufssignal, keine Ampel, nur ein Blick vor dem Kaffee am naechsten
+    Morgen. Bewusst schwaecher als umkehrkerze(): die dort verlangten
+    zusaetzlichen Bedingungen (Schluss unter Vortageshoch UND -tief)
+    wuerden hier zu viele einfache rote Tage verschlucken."""
+    h = df.iloc[-1]
+    return bool(h["Close"] < h["Open"])
+
+
 def schluss_unter_vortagestief(df):
     """Peters direkter Wunsch vom 31.08.2026: heutiger Schlusskurs unter
     dem Tagestief von GESTERN. Keine Verkaufsregel, nur ein Pruefanlass -
@@ -542,6 +554,7 @@ def main():
             "hoeheres_hoch": int(hoeheres_hoch(df)),
             "kein_neues_tief": int(kein_neues_tief(df)),
             "umkehrkerze": int(umkehrkerze(df)),
+            "rote_kerze": int(rote_kerze(df)),
             "hoch60": z(hoch60(df)),
             "vol_druck5": (z(vol_druck5(df), 2) if mitvol else ""),
         }

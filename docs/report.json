@@ -2,237 +2,208 @@
  "date": "2026-09-03",
  "ranks": {
   "turnaround": [
-   "QIA.DE",
-   "ZS",
-   "MELI",
-   "MDT",
+   "PLTR",
    "SPGI",
-   "MDB",
-   "CRWD",
+   "MELI",
+   "DTE.DE",
+   "CTSH",
    "VRSK",
-   "SY1.DE",
+   "NOW",
+   "HEN3.DE",
+   "SHL.DE",
    "BAC",
    "KHC",
-   "HEN3.DE",
-   "WFC",
-   "AMT",
-   "RTX"
+   "TMUS",
+   "BIIB",
+   "T",
+   "JNJ"
   ],
   "momentum": [
+   "BAYN.DE",
+   "TEAM",
    "CRWD",
-   "FTNT",
-   "SY1.DE",
    "ALV.DE",
-   "MDB",
-   "BNR.DE",
    "ILMN",
-   "MRK",
-   "MRNA",
+   "BNR.DE",
    "BNY",
-   "BAC",
+   "DBK.DE",
+   "MRNA",
+   "SY1.DE",
+   "CRM",
+   "COP",
    "ABNB",
    "BAS.DE",
-   "CVX",
-   "COP"
+   "CVX"
   ],
   "value": [
    "MU",
    "NVDA",
-   "AVGO",
+   "CSCO",
    "META",
    "ABNB",
    "BLK",
-   "MTX.DE",
    "REGN",
    "V",
    "COP",
    "VRTX",
    "GE",
+   "MTX.DE",
+   "SPGI",
    "XOM",
-   "DXCM",
-   "GOOGL"
+   "DXCM"
   ]
  },
  "changes": {
   "turnaround": {
    "entries": [
     {
-     "ticker": "ZS",
-     "rank": 2
+     "ticker": "PLTR",
+     "rank": 1
     },
     {
-     "ticker": "MDT",
+     "ticker": "DTE.DE",
      "rank": 4
     },
     {
-     "ticker": "MDB",
-     "rank": 6
+     "ticker": "CTSH",
+     "rank": 5
     },
     {
-     "ticker": "CRWD",
+     "ticker": "NOW",
      "rank": 7
     },
     {
-     "ticker": "SY1.DE",
+     "ticker": "SHL.DE",
      "rank": 9
     },
     {
-     "ticker": "BAC",
-     "rank": 10
+     "ticker": "TMUS",
+     "rank": 12
     },
     {
-     "ticker": "WFC",
+     "ticker": "BIIB",
      "rank": 13
     },
     {
-     "ticker": "AMT",
+     "ticker": "T",
      "rank": 14
     },
     {
-     "ticker": "RTX",
+     "ticker": "JNJ",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "PLTR",
+     "ticker": "QIA.DE",
      "old_rank": 1
     },
     {
-     "ticker": "ADBE",
+     "ticker": "ZS",
      "old_rank": 2
     },
     {
-     "ticker": "SHL.DE",
-     "old_rank": 5
+     "ticker": "MDT",
+     "old_rank": 4
     },
     {
-     "ticker": "CTSH",
+     "ticker": "MDB",
      "old_rank": 6
     },
     {
-     "ticker": "TMUS",
+     "ticker": "CRWD",
+     "old_rank": 7
+    },
+    {
+     "ticker": "SY1.DE",
      "old_rank": 9
     },
     {
-     "ticker": "XOM",
-     "old_rank": 10
-    },
-    {
-     "ticker": "DXCM",
-     "old_rank": 11
-    },
-    {
-     "ticker": "MUV2.DE",
+     "ticker": "WFC",
      "old_rank": 13
     },
     {
-     "ticker": "FANG",
+     "ticker": "AMT",
+     "old_rank": 14
+    },
+    {
+     "ticker": "RTX",
      "old_rank": 15
     }
    ],
-   "moves": [
-    {
-     "ticker": "SPGI",
-     "rank": 5,
-     "delta": 9
-    }
-   ]
+   "moves": []
   },
   "momentum": {
    "entries": [
     {
-     "ticker": "FTNT",
+     "ticker": "BAYN.DE",
+     "rank": 1
+    },
+    {
+     "ticker": "TEAM",
      "rank": 2
     },
     {
-     "ticker": "MDB",
-     "rank": 5
-    },
-    {
-     "ticker": "MRK",
+     "ticker": "DBK.DE",
      "rank": 8
     },
     {
-     "ticker": "MRNA",
-     "rank": 9
-    },
-    {
-     "ticker": "BAC",
+     "ticker": "CRM",
      "rank": 11
     }
    ],
    "exits": [
     {
-     "ticker": "BAYN.DE",
-     "old_rank": 1
-    },
-    {
-     "ticker": "TEAM",
+     "ticker": "FTNT",
      "old_rank": 2
     },
     {
-     "ticker": "BIIB",
-     "old_rank": 6
+     "ticker": "MDB",
+     "old_rank": 5
     },
     {
-     "ticker": "CRM",
-     "old_rank": 7
+     "ticker": "MRK",
+     "old_rank": 8
     },
     {
-     "ticker": "CBK.DE",
-     "old_rank": 12
+     "ticker": "BAC",
+     "old_rank": 11
     }
    ],
    "moves": [
     {
      "ticker": "SY1.DE",
-     "rank": 3,
-     "delta": 12
-    },
-    {
-     "ticker": "ALV.DE",
-     "rank": 4,
-     "delta": 7
-    },
-    {
-     "ticker": "BNY",
      "rank": 10,
-     "delta": -5
-    },
-    {
-     "ticker": "COP",
-     "rank": 15,
-     "delta": -6
+     "delta": -7
     }
    ]
   },
   "value": {
    "entries": [
     {
-     "ticker": "AVGO",
+     "ticker": "CSCO",
      "rank": 3
     },
     {
-     "ticker": "GOOGL",
-     "rank": 15
+     "ticker": "SPGI",
+     "rank": 13
     }
    ],
    "exits": [
     {
-     "ticker": "MSFT",
+     "ticker": "AVGO",
      "old_rank": 3
     },
     {
-     "ticker": "SPGI",
-     "old_rank": 12
+     "ticker": "GOOGL",
+     "old_rank": 15
     }
    ],
    "moves": [
     {
      "ticker": "MTX.DE",
-     "rank": 7,
-     "delta": 8
+     "rank": 12,
+     "delta": -5
     }
    ]
   },

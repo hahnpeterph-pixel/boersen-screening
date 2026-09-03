@@ -255,16 +255,15 @@ def hoeheres_hoch(df):
 
 def urteil_kauf(sig_hammer, sig_hoch, r, schwelle, kurs, trigger,
                 faelle=0, anteil=None):
-    """Der RSI ueber der Schwelle ist eine WARNUNG, keine Sperre
-    (Entscheidung 79: harte Sperre ist einzig Regel 1). Der Wert bleibt
-    Kandidat und taucht weiter in der Pruefliste auf; die Ampel steht auf
-    '!' statt '+', damit der Chart-Blick mit dieser Frage im Kopf
-    passiert.
+    """Kein RSI-Urteil mehr (03.09.2026). Der RSI stand vorher als
+    Warnung im Text und setzte die Ampel auf '!'. Das Etikett sagt
+    nichts, was die Spalten RSI und Schwelle nicht schon zeigen: heute,
+    Min, Max, p75 und Fallzahl nebeneinander sind die Einordnung. Ein
+    zusaetzliches "Warnung" suggeriert eine Handlungsaufforderung, die
+    es nicht gibt - der Chart entscheidet.
 
-    Die Fallzahl und der Anteil der Abwaertsserien, die diese Position
-    ueberhaupt erreichten, stehen immer dabei - eine Schwelle aus vier
-    Faellen ist eine andere Aussage als eine aus 128, auch wenn beide
-    dieselbe Zahl ergeben.
+    Die Signatur behaelt schwelle, faelle und anteil, weil die
+    Kandidatentabelle sie weiter ausweist.
     """
     teile = []
     if sig_hammer:
@@ -276,14 +275,7 @@ def urteil_kauf(sig_hammer, sig_hoch, r, schwelle, kurs, trigger,
         teile.append("Marke erreicht")
     if not teile:
         return "warten", "-"
-    text = " + ".join(teile)
-    if schwelle is None:
-        return (f"{text} — CHART PRUEFEN, RSI ohne Schwelle "
-                f"(diese Tiefsposition historisch noch nie erreicht)"), "+"
-    if r is not None and r > schwelle:
-        return (f"{text} — CHART PRUEFEN, aber RSI {de(r, 1)} ueber "
-                f"{de(schwelle, 1)} ({beleg(faelle, anteil)})"), "!"
-    return f"{text} — CHART PRUEFEN", "+"
+    return " + ".join(teile) + " — CHART PRUEFEN", "+"
 
 
 def beleg(faelle, anteil):
@@ -511,14 +503,13 @@ def main():
     kandidaten = [
         "", "### Kaufkandidaten — Umkehr abwarten", "",
         f"Umkehr = Hammer-Kerze ODER hoeheres Hoch als der Vortag. "
-        f"Die RSI-Schwelle ist wertspezifisch (Entscheidung 79): p75 des "
+        f"Die Spalte Schwelle ist wertspezifisch (Entscheidung 79): p75 des "
         f"RSI an den historischen Tiefs dieses Wertes an genau der "
-        f"Tiefsposition, an der er heute steht. Keine Mindestfallzahl und "
-        f"keine Pauschale - die Spalte Schwelle nennt immer, aus wie "
-        f"vielen Faellen sie stammt und wie viele Abwaertsserien dieses "
-        f"Wertes ueberhaupt so weit kamen. Eine Position, die es noch nie "
-        f"gab, bekommt keine Schwelle statt einer geratenen. RSI darueber "
-        f"ist eine WARNUNG, keine Sperre - der Wert bleibt Kandidat. "
+        f"Tiefsposition, an der er heute steht, mit Fallzahl und Anteil der "
+        f"Abwaertsserien, die so weit kamen. Keine Mindestfallzahl, keine "
+        f"Pauschale, kein Pooling ueber Werte. Der RSI loest KEIN Urteil "
+        f"und keine Ampel aus - RSI und Schwelle nebeneinander sind die "
+        f"Einordnung, entschieden wird am Chart. "
         f"Der KO-Vorschlag ist Tief minus {de(soll, 1)} x ATR - die tatsaechliche "
         f"Schwelle waehlst du erst nach der Kaufentscheidung in Trade Republic.",
         "",
@@ -593,15 +584,11 @@ def main():
                 f"{de(ko_vor) if ko_vor else '-'} | "
                 f"**{de(betrag_k, 2) if betrag_k else '-'} EUR** | "
                 f"{sig_text} | {sig_ampel} |")
-            # Bis 02.09.2026 stand hier nur "+": ein Wert mit RSI ueber der
-            # Schwelle bekam die Ampel "!" und verschwand damit aus der
-            # Pruefliste - er fiel praktisch aus Block 1, obwohl der RSI
-            # laut Regel nur warnen soll. Beide Ampeln kommen jetzt in die
-            # Liste, die Warnung steht im Text.
-            if sig_ampel in ("+", "!"):
+            # Der RSI setzt keine Ampel mehr (03.09.2026), deshalb gibt es
+            # hier nur noch "+". Die Einordnung steht in den Spalten.
+            if sig_ampel == "+":
                 kauf_warnungen.append(
-                    f"- **{name}**{' _(RSI-Warnung)_' if sig_ampel == '!' else ''}"
-                    f": {sig_text}. Kurs {de(kurs)}, "
+                    f"- **{name}**: {sig_text}. Kurs {de(kurs)}, "
                     f"Marke {de(trig) if trig else '-'}.")
             if ticker in _excel_doppelt:
                 continue

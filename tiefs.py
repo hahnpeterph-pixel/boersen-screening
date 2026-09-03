@@ -48,11 +48,6 @@ WATCHLIST = os.path.join(HIER, "watchlist.json")
 AUSGABE = os.path.join(HIER, "docs", "tiefs.md")
 RSI_SCHWELLEN = os.path.join(HIER, "docs", "rsi_schwellen.csv")
 
-# Ab wie vielen Faellen eine wertspezifische Schwelle verwendet wird.
-# Darunter greift die naechste Stufe der Fallback-Kette - siehe
-# rsi_schwelle_kauf().
-MIN_FAELLE_SCHWELLE = 3
-
 STANDARD = {
     "fenster_tage": 50,
     "links": 3,
@@ -67,10 +62,6 @@ STANDARD = {
     "min_einsatz_euro": 50.0,
     "rsi_tage": 14,
     "rsi_schwelle": 70.0,
-    # Nur noch Rueckfallwert: die Schwelle kommt seit 02.09.2026
-    # wertspezifisch aus docs/rsi_schwellen.csv (Entscheidung 79). Diese
-    # Zahl greift, wenn ein Wert dort noch gar nicht vorkommt.
-    "rsi_kauf_max": 50.0,
     "hammer_lunte_faktor": 2.0,
     "hammer_koerper_oben": 0.66,
     "hammer_obere_lunte_max": 0.15,
@@ -99,53 +90,56 @@ def rsi_schwellen_laden():
     """Wertspezifische Kauf-RSI-Schwellen aus docs/rsi_schwellen.csv
     (erzeugt von rsi_schwellen.py im woechentlichen historie.py-Lauf).
 
-    Struktur: (ticker, position) -> (p75, faelle). Position 0 ist der
-    wertweite Wert ueber alle Tiefspositionen.
+    Struktur: (ticker, position) -> (p75, faelle, Anteil der Serien, die
+    diese Position ueberhaupt erreicht haben).
 
-    Fehlt die Datei, bleibt es beim festen Wert aus watchlist.json - eine
-    ehrlich als Pauschale gekennzeichnete Zahl ist besser als eine
-    geratene wertspezifische.
+    Fehlt die Datei, gibt es keine Schwelle - dann wird der RSI im Report
+    ohne Bewertung ausgewiesen. Eine Pauschale tritt NICHT an ihre Stelle.
     """
     tab = {}
     if not os.path.exists(RSI_SCHWELLEN):
-        print("WARNUNG: docs/rsi_schwellen.csv fehlt - RSI-Schwelle "
-              "faellt auf den festen Wert aus watchlist.json zurueck.")
+        print("WARNUNG: docs/rsi_schwellen.csv fehlt - der RSI wird ohne "
+              "Schwelle ausgewiesen. Erst historie.py laufen lassen.")
         return tab
     with open(RSI_SCHWELLEN, encoding="utf-8", newline="") as f:
         for z in csv.DictReader(f):
             try:
                 tab[(z["ticker"], int(z["position"]))] = (
-                    float(z["rsi_p75"]), int(z["faelle"]))
+                    float(z["rsi_p75"]), int(z["faelle"]),
+                    float(z["anteil_serien"]) if z.get("anteil_serien") else None)
             except (KeyError, TypeError, ValueError):
                 continue
     return tab
 
 
-def rsi_schwelle_kauf(tab, ticker, position, standard):
+def rsi_schwelle_kauf(tab, ticker, position):
     """Die Schwelle nach Entscheidung 79: p75 des RSI an den historischen
     Tiefs DIESES Wertes an GENAU DIESER Tiefsposition.
 
     Der RSI faellt mit jedem weiteren Tief einer Abwaertsserie
-    systematisch - bei Synopsys von 62,4 an Tief 1 auf 37,2 an Tief 4.
+    systematisch - bei Synopsys von 62,7 an Tief 1 auf 37,2 an Tief 4.
     Eine ueber alle Positionen gepoolte Schwelle waere an Tief 1 zu
     streng und an Tief 4 zu lasch, eine feste 50 fuer alle Werte beides
     zugleich.
 
-    Fallback-Kette, die Stufe wird im Urteilstext immer mitgefuehrt:
-      1. Wert + Tiefsposition, ab MIN_FAELLE_SCHWELLE Faellen
-      2. Wert, alle Tiefspositionen gepoolt
-      3. der feste Wert aus watchlist.json
+    Keine Mindestfallzahl, kein Rueckfall auf einen gepoolten oder
+    pauschalen Wert (02.09.2026). Vier Faelle ergeben eine Schwelle aus
+    vier Faellen. Dass es nur vier sind, ist selbst eine Aussage - der
+    Wert kommt selten so weit - und wird als Anteil der Abwaertsserien
+    mitgefuehrt, statt sie durch eine nie gemessene Zahl zu ersetzen.
 
-    Rueckgabe: (schwelle, quelle, faelle). faelle ist None auf Stufe 3.
+    Gibt es an dieser Position noch gar keinen Fall, gibt es auch keine
+    Schwelle: der RSI wird dann ohne Bewertung ausgewiesen, mit dem
+    Hinweis, dass der Wert hier historisch noch nie stand.
+
+    Rueckgabe: (schwelle, faelle, anteil_serien) oder (None, 0, None).
     """
-    if position:
-        treffer = tab.get((ticker, int(position)))
-        if treffer and treffer[1] >= MIN_FAELLE_SCHWELLE:
-            return treffer[0], f"Tief {int(position)}", treffer[1]
-    treffer = tab.get((ticker, 0))
-    if treffer and treffer[1] >= MIN_FAELLE_SCHWELLE:
-        return treffer[0], "wertweit", treffer[1]
-    return standard, "Pauschale", None
+    if not position:
+        return None, 0, None
+    treffer = tab.get((ticker, int(position)))
+    if not treffer:
+        return None, 0, None
+    return treffer
 
 
 def kerzen_laden(ticker, tage):
@@ -259,12 +253,19 @@ def hoeheres_hoch(df):
     return bool(float(df["High"].iloc[-1]) > float(df["High"].iloc[-2]))
 
 
-def urteil_kauf(sig_hammer, sig_hoch, r, rsi_max, kurs, trigger,
-                quelle="Pauschale", faelle=None):
-    """Der RSI ueber der Schwelle ist eine WARNUNG, keine Sperre: der Wert
-    bleibt Kandidat und taucht weiter in Block 1 auf. Die Ampel steht auf
-    '!' statt '+', damit der Chart-Blick vor dem Kauf mit dieser Frage im
-    Kopf passiert - nicht, damit der Wert aussortiert wird."""
+def urteil_kauf(sig_hammer, sig_hoch, r, schwelle, kurs, trigger,
+                faelle=0, anteil=None):
+    """Der RSI ueber der Schwelle ist eine WARNUNG, keine Sperre
+    (Entscheidung 79: harte Sperre ist einzig Regel 1). Der Wert bleibt
+    Kandidat und taucht weiter in der Pruefliste auf; die Ampel steht auf
+    '!' statt '+', damit der Chart-Blick mit dieser Frage im Kopf
+    passiert.
+
+    Die Fallzahl und der Anteil der Abwaertsserien, die diese Position
+    ueberhaupt erreichten, stehen immer dabei - eine Schwelle aus vier
+    Faellen ist eine andere Aussage als eine aus 128, auch wenn beide
+    dieselbe Zahl ergeben.
+    """
     teile = []
     if sig_hammer:
         teile.append("Hammer")
@@ -276,11 +277,20 @@ def urteil_kauf(sig_hammer, sig_hoch, r, rsi_max, kurs, trigger,
     if not teile:
         return "warten", "-"
     text = " + ".join(teile)
-    herkunft = quelle + (f", n={faelle}" if faelle else "")
-    if r is not None and r > rsi_max:
+    if schwelle is None:
+        return (f"{text} — CHART PRUEFEN, RSI ohne Schwelle "
+                f"(diese Tiefsposition historisch noch nie erreicht)"), "+"
+    if r is not None and r > schwelle:
         return (f"{text} — CHART PRUEFEN, aber RSI {de(r, 1)} ueber "
-                f"{de(rsi_max, 1)} ({herkunft})"), "!"
+                f"{de(schwelle, 1)} ({beleg(faelle, anteil)})"), "!"
     return f"{text} — CHART PRUEFEN", "+"
+
+
+def beleg(faelle, anteil):
+    """Worauf die Schwelle beruht: Faelle und wie oft der Wert ueberhaupt
+    so weit kam. Nie unterdrueckt, auch bei einem einzigen Fall."""
+    n = f"{faelle} Fall" if faelle == 1 else f"{faelle} Faelle"
+    return n + (f", {de(anteil, 1)} % der Serien" if anteil is not None else "")
 
 
 def urteil_ueberhitzt(rsi_wert, schwelle, kerze):
@@ -420,7 +430,6 @@ def main():
     atr_tage = int(k["atr_tage"])
     rsi_tage = int(k.get("rsi_tage", 14))
     rsi_schwelle = float(k.get("rsi_schwelle", 70.0))
-    rsi_kauf_max = float(k.get("rsi_kauf_max", 50.0))
     rsi_tab = rsi_schwellen_laden()
     ohne_vol = set(k.get("ohne_volumen", []))
     jetzt = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
@@ -503,13 +512,13 @@ def main():
         "", "### Kaufkandidaten — Umkehr abwarten", "",
         f"Umkehr = Hammer-Kerze ODER hoeheres Hoch als der Vortag. "
         f"Die RSI-Schwelle ist wertspezifisch (Entscheidung 79): p75 des "
-        f"RSI an den historischen Tiefs dieses Wertes an der aktuellen "
-        f"Tiefsposition, aus docs/rsi_schwellen.csv. Ist diese Zelle mit "
-        f"weniger als {MIN_FAELLE_SCHWELLE} Faellen besetzt, gilt der "
-        f"wertweite Wert ueber alle Tiefspositionen, danach die Pauschale "
-        f"{de(rsi_kauf_max, 0)}. Die Spalte Schwelle nennt die verwendete "
-        f"Stufe. RSI darueber ist eine WARNUNG, keine Sperre - der Wert "
-        f"bleibt Kandidat. "
+        f"RSI an den historischen Tiefs dieses Wertes an genau der "
+        f"Tiefsposition, an der er heute steht. Keine Mindestfallzahl und "
+        f"keine Pauschale - die Spalte Schwelle nennt immer, aus wie "
+        f"vielen Faellen sie stammt und wie viele Abwaertsserien dieses "
+        f"Wertes ueberhaupt so weit kamen. Eine Position, die es noch nie "
+        f"gab, bekommt keine Schwelle statt einer geratenen. RSI darueber "
+        f"ist eine WARNUNG, keine Sperre - der Wert bleibt Kandidat. "
         f"Der KO-Vorschlag ist Tief minus {de(soll, 1)} x ATR - die tatsaechliche "
         f"Schwelle waehlst du erst nach der Kaufentscheidung in Trade Republic.",
         "",
@@ -553,15 +562,15 @@ def main():
             r = rsi(df, rsi_tage)
             # Position des aktuellen Tiefs in der laufenden Abwaertsserie -
             # dieselbe Zaehlung wie in der Fortsetzungskette. Leer, wenn
-            # keine Serie laeuft; dann greift die wertweite Stufe.
+            # keine Serie laeuft - dann gibt es keine Schwelle.
             pos_akt = regel.tiefserie(df)[0]
-            grenze, quelle, faelle = rsi_schwelle_kauf(
-                rsi_tab, ticker, pos_akt, rsi_kauf_max)
+            grenze, faelle, anteil = rsi_schwelle_kauf(
+                rsi_tab, ticker, pos_akt)
             sig_h = hammer(df, a, k)
             sig_hh = hoeheres_hoch(df)
             trig = eintrag.get("trigger_kurs")
             sig_text, sig_ampel = urteil_kauf(sig_h, sig_hh, r, grenze,
-                                              kurs, trig, quelle, faelle)
+                                              kurs, trig, faelle, anteil)
             ct = eintrag.get("chart_tief")
             basis = ct if ct is not None else (
                 treffer[0]["tief"] if treffer else None)
@@ -579,8 +588,8 @@ def main():
                 f"{de(ab_marke, 1) + ' %' if ab_marke is not None else '-'} | "
                 f"{de(basis) if basis else 'k.A.'} | {de(a)} | "
                 f"{de(r, 1) if r is not None else 'k.A.'} | "
-                f"{de(grenze, 1)} ({quelle}"
-                f"{f', n={faelle}' if faelle else ''}) | "
+                f"{(de(grenze, 1) + ' (' + beleg(faelle, anteil) + ')')
+                   if grenze is not None else 'k.A. (noch nie)'} | "
                 f"{de(ko_vor) if ko_vor else '-'} | "
                 f"**{de(betrag_k, 2) if betrag_k else '-'} EUR** | "
                 f"{sig_text} | {sig_ampel} |")

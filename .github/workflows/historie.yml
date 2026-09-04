@@ -70,8 +70,15 @@ jobs:
       # Muss nach historie.py laufen, weil es dessen Ausgabe liest. Beim
       # Wendepunkt-Lauf schreibt historie.py keine Rohdatei, deshalb
       # dieselbe Bedingung wie beim Schritt darueber.
+      # Laeuft immer, unabhaengig vom Wendepunkt-Modus (04.09.2026
+      # korrigiert). Vorher an dieselbe Bedingung wie "Historie ausfuehren"
+      # gekoppelt - wer beim manuellen Start "pivots" ausfuellt, hat das
+      # nicht mehr vor Augen und weiss spaeter nicht, warum die Schwellen
+      # alt geblieben sind. Der Schritt liest nur die vorhandene
+      # docs/puffer_je_tief.csv.gz; lief gerade der Wendepunkt-Modus und
+      # die Datei ist unveraendert, entsteht dieselbe Datei erneut - das
+      # kostet ein paar Sekunden, aber nichts wird falsch oder inkonsistent.
       - name: RSI-Schwellen ableiten
-        if: github.event_name == 'schedule' || github.event.inputs.pivots == ''
         run: python rsi_schwellen.py
 
       - name: Ergebnis speichern

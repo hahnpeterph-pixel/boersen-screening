@@ -6,34 +6,34 @@
    "ADBE",
    "MELI",
    "DHR",
-   "QIA.DE",
-   "SHL.DE",
    "SPGI",
+   "SHL.DE",
    "KHC",
    "NOW",
    "XOM",
+   "DTE.DE",
+   "HEN3.DE",
+   "ABBV",
    "FANG",
    "BAC",
-   "CCEP",
-   "VRSK",
-   "HEN3.DE"
+   "CCEP"
   ],
   "momentum": [
    "MRK",
+   "BAYN.DE",
    "TEAM",
    "BNY",
    "ABNB",
    "MU",
-   "BAYN.DE",
    "CRWD",
+   "ALV.DE",
    "MRNA",
    "BAC",
-   "JPM",
    "BNR.DE",
+   "SY1.DE",
    "KO",
    "BAS.DE",
-   "GM",
-   "SY1.DE"
+   "GM"
   ],
   "value": [
    "MU",
@@ -43,162 +43,76 @@
    "ABNB",
    "COP",
    "BLK",
+   "MTX.DE",
    "REGN",
    "V",
    "VRTX",
    "GE",
    "DXCM",
-   "MTX.DE",
    "GOOG",
-   "DB1.DE"
+   "GOOGL"
   ]
  },
  "changes": {
   "turnaround": {
    "entries": [
     {
-     "ticker": "ZS",
-     "rank": 1
+     "ticker": "DTE.DE",
+     "rank": 10
     },
     {
-     "ticker": "FANG",
-     "rank": 11
-    },
-    {
-     "ticker": "BAC",
+     "ticker": "ABBV",
      "rank": 12
-    },
-    {
-     "ticker": "CCEP",
-     "rank": 13
     }
    ],
    "exits": [
     {
-     "ticker": "PLTR",
-     "old_rank": 1
+     "ticker": "QIA.DE",
+     "old_rank": 5
     },
     {
-     "ticker": "WFC",
-     "old_rank": 8
-    },
-    {
-     "ticker": "TMUS",
-     "old_rank": 9
-    },
-    {
-     "ticker": "MUV2.DE",
-     "old_rank": 13
+     "ticker": "VRSK",
+     "old_rank": 14
     }
    ],
-   "moves": [
-    {
-     "ticker": "SPGI",
-     "rank": 7,
-     "delta": 7
-    },
-    {
-     "ticker": "KHC",
-     "rank": 8,
-     "delta": 7
-    }
-   ]
+   "moves": []
   },
   "momentum": {
    "entries": [
     {
-     "ticker": "MRK",
-     "rank": 1
-    },
-    {
-     "ticker": "MU",
-     "rank": 5
-    },
-    {
-     "ticker": "BAC",
-     "rank": 9
-    },
-    {
-     "ticker": "JPM",
-     "rank": 10
-    },
-    {
-     "ticker": "KO",
-     "rank": 12
-    },
-    {
-     "ticker": "GM",
-     "rank": 14
+     "ticker": "ALV.DE",
+     "rank": 8
     }
    ],
    "exits": [
     {
-     "ticker": "ILMN",
-     "old_rank": 4
-    },
-    {
-     "ticker": "PAYX",
-     "old_rank": 7
-    },
-    {
-     "ticker": "ALV.DE",
-     "old_rank": 9
-    },
-    {
-     "ticker": "CBK.DE",
+     "ticker": "JPM",
      "old_rank": 10
-    },
-    {
-     "ticker": "COP",
-     "old_rank": 11
-    },
-    {
-     "ticker": "CVX",
-     "old_rank": 15
     }
    ],
-   "moves": [
-    {
-     "ticker": "ABNB",
-     "rank": 4,
-     "delta": 8
-    },
-    {
-     "ticker": "BAYN.DE",
-     "rank": 6,
-     "delta": -5
-    }
-   ]
+   "moves": []
   },
   "value": {
    "entries": [
     {
-     "ticker": "GOOG",
-     "rank": 14
-    },
-    {
-     "ticker": "DB1.DE",
+     "ticker": "GOOGL",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "SPGI",
-     "old_rank": 12
-    },
-    {
-     "ticker": "XOM",
-     "old_rank": 13
+     "ticker": "DB1.DE",
+     "old_rank": 15
     }
    ],
-   "moves": []
+   "moves": [
+    {
+     "ticker": "MTX.DE",
+     "rank": 8,
+     "delta": 5
+    }
+   ]
   },
-  "analyst_flips": [
-   {
-    "ticker": "COP",
-    "now": 1,
-    "old": 0
-   }
-  ]
+  "analyst_flips": []
  }
 }

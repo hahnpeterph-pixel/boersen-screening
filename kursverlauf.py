@@ -19,10 +19,17 @@ Schlusskurse je Wert und Tag, ohne jeden Bezug zu einer Position. Die
 Verknuepfung mit den eigenen Kaeufen passiert erst in der Excel-Mappe.
 
 Format bewusst breit statt lang:
-Eine Zeile je Wert, eine Spalte je Handelstag. Das sind rund 170 Zeilen
+Eine Zeile je Wert, eine Spalte je Handelstag. Das sind rund 210 Zeilen
 statt 20.000 - handlich zum Einfuegen in die Mappe, und der Nachschlag
 "Kurs N Handelstage nach dem Kauf" wird zu einem simplen Spaltenversatz
 statt zu einer Datumsrechnerei mit Wochenenden und Feiertagen.
+
+Ticker-Liste eigenstaendig, nicht aus universe.json:
+Historisch gewachsen wie in marktdaten.py, deshalb dasselbe Risiko -
+wird das eine Skript ergaenzt, muss das andere von Hand nachgezogen
+werden. Am 04.09.2026 aufgefallen: die S&P-100-Ergaenzung vom 30.08.2026
+fehlte hier, GE Vernova und 46 weitere Werte waren im Tagesverlust-Block
+unsichtbar. US-Liste jetzt deckungsgleich mit marktdaten.py.
 
 Schreibt:
   docs/kursverlauf.csv
@@ -37,6 +44,35 @@ from pathlib import Path
 import pandas as pd
 
 import kurse
+
+# Ticker mit praktisch durchgehendem Handel (XETRA + der einzige ASML-
+# Sonderfall) gelten erst spaeter am Tag als sicher geschlossen. Uebernommen
+# aus marktdaten.py (unfertige_heutige_kerze_verwerfen), wo dieselbe
+# Schwelle seit dem 01.09.2026 verhindert, dass eine mitten im Handel
+# abgegriffene Kerze als Tagesschluss durchgeht.
+def _europaeisch(ticker: str) -> bool:
+    return ticker.endswith(".DE") or ticker == "ASML"
+
+
+def unfertige_heutige_kerze_verwerfen(df, ticker, jetzt_utc):
+    """Wirft die letzte Zeile weg, wenn sie auf heute datiert ist, der
+    zugehoerige Markt zum Abrufzeitpunkt aber noch nicht sicher
+    geschlossen hatte.
+
+    Bis 03.09.2026 hatte NUR marktdaten.py diesen Schutz. kursverlauf.py
+    rief dieselben Kerzen ab, ohne die letzte Zeile zu pruefen - der
+    05:00-UTC-Lauf traf europaeische Werte mitten im Handel und schrieb
+    einen Bruchteilstag als vermeintlichen Schlusskurs in die Spalte.
+    Peters Frage vom 04.09.2026 ("Was fehlt uns durch Marktdaten?") hat
+    das aufgedeckt.
+    """
+    letztes_datum = df.index[-1].date()
+    if letztes_datum != jetzt_utc.date():
+        return df
+    schwelle = 17 if _europaeisch(ticker) else 21
+    if jetzt_utc.hour < schwelle:
+        return df.iloc[:-1]
+    return df
 
 BASE = Path(__file__).resolve().parent
 DOCS = BASE / "docs"
@@ -55,7 +91,10 @@ GOOGL GS HD HON IBM IDXX ILMN INTC INTU ISRG JNJ JPM KDP KHC KLAC KO LIN LRCX
 LULU MAR MCD MCHP MDB MDLZ MELI META MMM MNST MRK MRNA MRVL MSFT MU NFLX NKE
 NVDA NXPI ODFL ON ORCL ORLY PANW PAYX PCAR PDD PEP PG PLTR PYPL QCOM REGN ROP
 ROST SBUX SHW SNPS SPGI TEAM TMUS TRV TSLA TTD TTWO TXN UNH V VRSK VRTX VZ
-WBD WDAY WMT XEL ZS""".split()
+WBD WDAY WMT XEL ZS
+ABBV ABT ACN AMT BAC BLK BMY BNY BRK-B C CL COF COP CVS DE DHR DUK EMR FDX
+GD GE GEV GM HONA LLY LMT LOW MA MDT MO MS NEE NOW PFE PM RTX SCHW SO SPG T
+TMO UBER UNP UPS USB WFC XOM""".split()
 
 DAX = """ADS.DE AIR.DE ALV.DE BAS.DE BAYN.DE BEI.DE BMW.DE BNR.DE CBK.DE CON.DE
 DTG.DE DBK.DE DB1.DE DHL.DE DTE.DE EOAN.DE FRE.DE HNR1.DE HEI.DE HEN3.DE
@@ -91,9 +130,13 @@ def reihen() -> tuple[list[str], dict[str, dict[str, float]]]:
     """
     je_wert: dict[str, dict[str, float]] = {}
     alle_tage: set[str] = set()
+    jetzt = datetime.now(timezone.utc)
     for i, t in enumerate(UNIVERSUM, 1):
         df = kurse.kerzen(t, period="400d")
         if df is None or df.empty:
+            continue
+        df = unfertige_heutige_kerze_verwerfen(df, t, jetzt)
+        if df.empty:
             continue
         letzte = df.tail(TAGE)
         werte = {str(d.date()): round(float(c), 4)

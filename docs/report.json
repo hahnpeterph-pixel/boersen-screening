@@ -2,38 +2,38 @@
  "date": "2026-09-04",
  "ranks": {
   "turnaround": [
-   "ZS",
-   "ADBE",
-   "MELI",
-   "DHR",
-   "SPGI",
+   "CTSH",
+   "WDAY",
    "SHL.DE",
-   "KHC",
+   "CEG",
+   "EMR",
    "NOW",
-   "XOM",
-   "DTE.DE",
-   "HEN3.DE",
-   "ABBV",
+   "SPGI",
    "FANG",
+   "ABBV",
+   "SHW",
+   "DTG.DE",
+   "VRSK",
    "BAC",
-   "CCEP"
+   "COF",
+   "GM"
   ],
   "momentum": [
    "MRK",
+   "MU",
+   "BNY",
+   "MS",
+   "MRNA",
+   "CRWD",
+   "DBK.DE",
    "BAYN.DE",
    "TEAM",
-   "BNY",
-   "ABNB",
-   "MU",
-   "CRWD",
-   "ALV.DE",
-   "MRNA",
-   "BAC",
-   "BNR.DE",
-   "SY1.DE",
-   "KO",
+   "COP",
    "BAS.DE",
-   "GM"
+   "BNR.DE",
+   "ABNB",
+   "GM",
+   "CVX"
   ],
   "value": [
    "MU",
@@ -43,75 +43,171 @@
    "ABNB",
    "COP",
    "BLK",
+   "MNST",
    "MTX.DE",
    "REGN",
    "V",
    "VRTX",
-   "GE",
    "DXCM",
-   "GOOG",
-   "GOOGL"
+   "GE",
+   "GOOG"
   ]
  },
  "changes": {
   "turnaround": {
    "entries": [
     {
-     "ticker": "DTE.DE",
+     "ticker": "CTSH",
+     "rank": 1
+    },
+    {
+     "ticker": "WDAY",
+     "rank": 2
+    },
+    {
+     "ticker": "CEG",
+     "rank": 4
+    },
+    {
+     "ticker": "EMR",
+     "rank": 5
+    },
+    {
+     "ticker": "SHW",
      "rank": 10
     },
     {
-     "ticker": "ABBV",
-     "rank": 12
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "QIA.DE",
-     "old_rank": 5
+     "ticker": "DTG.DE",
+     "rank": 11
     },
     {
      "ticker": "VRSK",
-     "old_rank": 14
-    }
-   ],
-   "moves": []
-  },
-  "momentum": {
-   "entries": [
+     "rank": 12
+    },
     {
-     "ticker": "ALV.DE",
-     "rank": 8
-    }
-   ],
-   "exits": [
+     "ticker": "COF",
+     "rank": 14
+    },
     {
-     "ticker": "JPM",
-     "old_rank": 10
-    }
-   ],
-   "moves": []
-  },
-  "value": {
-   "entries": [
-    {
-     "ticker": "GOOGL",
+     "ticker": "GM",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "DB1.DE",
+     "ticker": "ZS",
+     "old_rank": 1
+    },
+    {
+     "ticker": "ADBE",
+     "old_rank": 2
+    },
+    {
+     "ticker": "MELI",
+     "old_rank": 3
+    },
+    {
+     "ticker": "DHR",
+     "old_rank": 4
+    },
+    {
+     "ticker": "KHC",
+     "old_rank": 7
+    },
+    {
+     "ticker": "XOM",
+     "old_rank": 9
+    },
+    {
+     "ticker": "DTE.DE",
+     "old_rank": 10
+    },
+    {
+     "ticker": "HEN3.DE",
+     "old_rank": 11
+    },
+    {
+     "ticker": "CCEP",
      "old_rank": 15
     }
    ],
    "moves": [
     {
-     "ticker": "MTX.DE",
+     "ticker": "FANG",
      "rank": 8,
      "delta": 5
     }
    ]
+  },
+  "momentum": {
+   "entries": [
+    {
+     "ticker": "MS",
+     "rank": 4
+    },
+    {
+     "ticker": "DBK.DE",
+     "rank": 7
+    },
+    {
+     "ticker": "COP",
+     "rank": 10
+    },
+    {
+     "ticker": "CVX",
+     "rank": 15
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "ALV.DE",
+     "old_rank": 8
+    },
+    {
+     "ticker": "BAC",
+     "old_rank": 10
+    },
+    {
+     "ticker": "SY1.DE",
+     "old_rank": 12
+    },
+    {
+     "ticker": "KO",
+     "old_rank": 13
+    }
+   ],
+   "moves": [
+    {
+     "ticker": "BAYN.DE",
+     "rank": 8,
+     "delta": -6
+    },
+    {
+     "ticker": "TEAM",
+     "rank": 9,
+     "delta": -6
+    },
+    {
+     "ticker": "ABNB",
+     "rank": 13,
+     "delta": -8
+    }
+   ]
+  },
+  "value": {
+   "entries": [
+    {
+     "ticker": "MNST",
+     "rank": 8
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "GOOGL",
+     "old_rank": 15
+    }
+   ],
+   "moves": []
   },
   "analyst_flips": []
  }

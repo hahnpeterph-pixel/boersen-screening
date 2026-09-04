@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-09-04 00:05 UTC. 218 Werte, Fenster 90 Kalendertage. EUR/USD 1.1585._
+_Erstellt 2026-09-04 04:28 UTC. 218 Werte, Fenster 90 Kalendertage. EUR/USD 1.1585._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -20,6 +20,7 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | MCD (MCD) | 259.63 | - | - | ja | 38.33 |
 | PDD (PDD) | 81.63 | - | - | ja | 36.86 |
 | TTWO (TTWO) | 214.13 | - | - | ja | 30.48 |
+| TXN (TXN) | 253.83 | ja | - | - | 36.84 |
 | ABT (ABT) | 108.79 | - | - | ja | 48.48 |
 | GD (GD) | 365.87 | ja | - | - | 35.47 |
 | LLY (LLY) | 1159.6 | ja | - | - | 43.27 |
@@ -30,8 +31,7 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | MTX.DE (MTX.DE) | 344.5 | ja | - | - | 38.72 |
 | SIE.DE (SIE.DE) | 270.6 | - | - | ja | 40.11 |
 | ZAL.DE (ZAL.DE) | 22.82 | - | - | ja | 38.64 |
-| Kakao (CC=F) | 6140.0 | - | - | ja | 55.12 |
-| Zucker (SB=F) | 17.99 | - | - | ja | 61.92 |
+| Kakao (CC=F) | 6057.0 | - | - | ja | 53.15 |
 
 ---
 

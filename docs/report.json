@@ -2,38 +2,38 @@
  "date": "2026-09-04",
  "ranks": {
   "turnaround": [
-   "PLTR",
+   "ZS",
    "ADBE",
-   "DHR",
    "MELI",
+   "DHR",
    "QIA.DE",
    "SHL.DE",
-   "NOW",
-   "WFC",
-   "TMUS",
-   "XOM",
-   "HEN3.DE",
-   "VRSK",
-   "MUV2.DE",
    "SPGI",
-   "KHC"
+   "KHC",
+   "NOW",
+   "XOM",
+   "FANG",
+   "BAC",
+   "CCEP",
+   "VRSK",
+   "HEN3.DE"
   ],
   "momentum": [
-   "BAYN.DE",
+   "MRK",
    "TEAM",
-   "CRWD",
-   "ILMN",
-   "MRNA",
    "BNY",
-   "PAYX",
-   "BNR.DE",
-   "ALV.DE",
-   "CBK.DE",
-   "COP",
    "ABNB",
+   "MU",
+   "BAYN.DE",
+   "CRWD",
+   "MRNA",
+   "BAC",
+   "JPM",
+   "BNR.DE",
+   "KO",
    "BAS.DE",
-   "SY1.DE",
-   "CVX"
+   "GM",
+   "SY1.DE"
   ],
   "value": [
    "MU",
@@ -41,171 +41,164 @@
    "CSCO",
    "META",
    "ABNB",
+   "COP",
    "BLK",
    "REGN",
    "V",
-   "COP",
    "VRTX",
    "GE",
-   "SPGI",
-   "XOM",
    "DXCM",
-   "MTX.DE"
+   "MTX.DE",
+   "GOOG",
+   "DB1.DE"
   ]
  },
  "changes": {
   "turnaround": {
    "entries": [
     {
-     "ticker": "PLTR",
+     "ticker": "ZS",
      "rank": 1
     },
     {
-     "ticker": "QIA.DE",
-     "rank": 5
+     "ticker": "FANG",
+     "rank": 11
     },
     {
-     "ticker": "WFC",
-     "rank": 8
+     "ticker": "BAC",
+     "rank": 12
     },
     {
-     "ticker": "TMUS",
-     "rank": 9
-    },
-    {
-     "ticker": "MUV2.DE",
+     "ticker": "CCEP",
      "rank": 13
     }
    ],
    "exits": [
     {
-     "ticker": "ZS",
+     "ticker": "PLTR",
      "old_rank": 1
     },
     {
-     "ticker": "DTE.DE",
-     "old_rank": 3
+     "ticker": "WFC",
+     "old_rank": 8
     },
     {
-     "ticker": "ABBV",
-     "old_rank": 12
+     "ticker": "TMUS",
+     "old_rank": 9
     },
     {
-     "ticker": "FANG",
+     "ticker": "MUV2.DE",
      "old_rank": 13
-    },
-    {
-     "ticker": "BAC",
-     "old_rank": 14
     }
    ],
    "moves": [
     {
      "ticker": "SPGI",
-     "rank": 14,
-     "delta": -7
+     "rank": 7,
+     "delta": 7
     },
     {
      "ticker": "KHC",
-     "rank": 15,
-     "delta": -7
+     "rank": 8,
+     "delta": 7
     }
    ]
   },
   "momentum": {
    "entries": [
     {
-     "ticker": "ILMN",
-     "rank": 4
+     "ticker": "MRK",
+     "rank": 1
     },
     {
-     "ticker": "PAYX",
-     "rank": 7
+     "ticker": "MU",
+     "rank": 5
     },
     {
-     "ticker": "CBK.DE",
+     "ticker": "BAC",
+     "rank": 9
+    },
+    {
+     "ticker": "JPM",
      "rank": 10
     },
     {
-     "ticker": "COP",
-     "rank": 11
+     "ticker": "KO",
+     "rank": 12
     },
     {
-     "ticker": "CVX",
-     "rank": 15
+     "ticker": "GM",
+     "rank": 14
     }
    ],
    "exits": [
     {
-     "ticker": "MRK",
-     "old_rank": 1
+     "ticker": "ILMN",
+     "old_rank": 4
     },
     {
-     "ticker": "MU",
+     "ticker": "PAYX",
      "old_rank": 7
     },
     {
-     "ticker": "DBK.DE",
-     "old_rank": 8
+     "ticker": "ALV.DE",
+     "old_rank": 9
     },
     {
-     "ticker": "KO",
-     "old_rank": 13
+     "ticker": "CBK.DE",
+     "old_rank": 10
     },
     {
-     "ticker": "GM",
+     "ticker": "COP",
+     "old_rank": 11
+    },
+    {
+     "ticker": "CVX",
      "old_rank": 15
     }
    ],
    "moves": [
     {
-     "ticker": "BAYN.DE",
-     "rank": 1,
-     "delta": 5
-    },
-    {
-     "ticker": "CRWD",
-     "rank": 3,
-     "delta": 6
-    },
-    {
-     "ticker": "MRNA",
-     "rank": 5,
-     "delta": 5
-    },
-    {
-     "ticker": "ALV.DE",
-     "rank": 9,
-     "delta": -7
-    },
-    {
      "ticker": "ABNB",
-     "rank": 12,
-     "delta": -7
+     "rank": 4,
+     "delta": 8
+    },
+    {
+     "ticker": "BAYN.DE",
+     "rank": 6,
+     "delta": -5
     }
    ]
   },
   "value": {
    "entries": [
     {
-     "ticker": "SPGI",
-     "rank": 12
+     "ticker": "GOOG",
+     "rank": 14
+    },
+    {
+     "ticker": "DB1.DE",
+     "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "GOOG",
-     "old_rank": 15
+     "ticker": "SPGI",
+     "old_rank": 12
+    },
+    {
+     "ticker": "XOM",
+     "old_rank": 13
     }
    ],
-   "moves": [
-    {
-     "ticker": "MTX.DE",
-     "rank": 15,
-     "delta": -8
-    }
-   ]
+   "moves": []
   },
-  "analyst_flips": []
+  "analyst_flips": [
+   {
+    "ticker": "COP",
+    "now": 1,
+    "old": 0
+   }
+  ]
  }
 }

@@ -403,6 +403,22 @@ def rote_kerze(df):
     return bool(h["Close"] < h["Open"])
 
 
+def rote_kerze_vortag(df):
+    """Dieselbe Rot-Definition, aber fuer die Kerze VOR der heutigen.
+
+    Ergaenzt am 05.09.2026 fuer das Rohstoff-Kaufkriterium in heute.py:
+    "gruene Kerze nach roter Kerze" ersetzt dort den Analysten-Kaufanteil,
+    den es fuer Gold oder EUR/USD nicht gibt. Die Vortageskerze wird HIER
+    ausgewertet, weil marktdaten.py die Kursreihe ohnehin schon in der Hand
+    hat - heute.py braucht dadurch gar keinen eigenen Kursabruf mehr und
+    liest nur noch CSV. Ein Abruf weniger heisst auch: eine Ausfallquelle
+    weniger, die Rohstoffe stillschweigend aus Block 1 fallen lassen kann."""
+    if len(df) < 2:
+        return False
+    v = df.iloc[-2]
+    return bool(v["Close"] < v["Open"])
+
+
 def schluss_unter_vortagestief(df):
     """Peters direkter Wunsch vom 31.08.2026: heutiger Schlusskurs unter
     dem Tagestief von GESTERN. Keine Verkaufsregel, nur ein Pruefanlass -
@@ -555,6 +571,7 @@ def main():
             "kein_neues_tief": int(kein_neues_tief(df)),
             "umkehrkerze": int(umkehrkerze(df)),
             "rote_kerze": int(rote_kerze(df)),
+            "rote_kerze_vortag": int(rote_kerze_vortag(df)),
             "hoch60": z(hoch60(df)),
             "vol_druck5": (z(vol_druck5(df), 2) if mitvol else ""),
         }

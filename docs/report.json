@@ -55,41 +55,13 @@
  },
  "changes": {
   "turnaround": {
-   "entries": [
-    {
-     "ticker": "DTG.DE",
-     "rank": 11
-    },
-    {
-     "ticker": "GM",
-     "rank": 15
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "DTE.DE",
-     "old_rank": 3
-    },
-    {
-     "ticker": "HEN3.DE",
-     "old_rank": 6
-    }
-   ],
+   "entries": [],
+   "exits": [],
    "moves": []
   },
   "momentum": {
-   "entries": [
-    {
-     "ticker": "MS",
-     "rank": 4
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "ALV.DE",
-     "old_rank": 1
-    }
-   ],
+   "entries": [],
+   "exits": [],
    "moves": []
   },
   "value": {

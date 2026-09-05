@@ -115,9 +115,25 @@ def main():
 
     for eintrag in UNIVERSUM:
         kandidaten, name, art = eintrag[0], eintrag[1], eintrag[2]
-        if art != "Aktie":
+        # Bis 05.09.2026 stand hier `if art != "Aktie": continue` - dadurch
+        # enthielt docs/luecken.csv NIE einen Rohstoff. Aufgefallen, als
+        # Erdgas und Zucker erstmals als Block-1-Kandidaten auftauchten und
+        # ihre Kaufvorlage bei den Luecken leer blieb. Rohstoffe sind laut
+        # Merkregel 13 vollwertige Kaufkandidaten und brauchen dieselbe
+        # Luecken-Statistik wie Aktien. Waehrungen (art "Spot") bleiben
+        # draussen: EUR/USD ist kein Kaufkandidat.
+        if art not in ("Aktie", "Future", "Spot/Future"):
             continue
-        ticker = kandidaten[0] if isinstance(kandidaten, (list, tuple)) else kandidaten
+        # Bei Rohstoffen mit Spot+Future-Kette (Gold, Silber, Platin,
+        # Palladium) steht der Spot-Ticker vorn, der bei Yahoo unzuverlaessig
+        # ist. marktdaten.csv arbeitet fuer diese Werte mit dem
+        # Future-Ticker - der letzte Eintrag der Kette. Ohne diese Wahl
+        # stuenden in luecken.csv Ticker (XAUUSD=X), die in marktdaten.csv
+        # gar nicht vorkommen, und heute.py faende sie nicht wieder.
+        if isinstance(kandidaten, (list, tuple)):
+            ticker = kandidaten[-1] if art == "Spot/Future" else kandidaten[0]
+        else:
+            ticker = kandidaten
         if nur and ticker not in nur:
             continue
 

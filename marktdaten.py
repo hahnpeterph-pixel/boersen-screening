@@ -61,7 +61,13 @@ ROHSTOFFE = [
     (["HG=F"], "Kupfer", "Future"),
     (["ZW=F"], "Weizen", "Future"),
     (["ZC=F"], "Mais", "Future"),
-    # KC=F (Kaffee) am 24.08.2026 entfernt: ueber Trade Republic nicht handelbar.
+    # KC=F (Kaffee) am 24.08.2026 entfernt mit der Begruendung "ueber Trade
+    # Republic nicht handelbar". Diese Begruendung ist nach Peters
+    # Screenshot vom 05.09.2026 FALSCH: TR fuehrt Kaffee als Basiswert
+    # "Coffee C" - gesucht wurde damals offenbar auf Deutsch, und TR listet
+    # Rohstoffe unter englischen Namen (derselbe Irrtum wie bei Zucker und
+    # Erdgas am 05.09.2026). Wieder aufnehmen, sobald bestaetigt ist, dass
+    # es zu "Coffee C" auch KO-Scheine gibt und nicht nur den Basiswert.
     (["CC=F"], "Kakao", "Future"),
     (["SB=F"], "Zucker", "Future"),
 ]

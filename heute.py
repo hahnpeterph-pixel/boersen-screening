@@ -43,13 +43,6 @@ LUECKEN_PERZENTIL = 90
 # gleich mit dem Rest des Projekts (QUARTAL = 63 Handelstage in historie.py).
 HALTE_FENSTER = 63
 
-# Wie viele rote Kerzen muessen der gruenen vorausgehen, damit ein
-# Rohstoff/FX-Wert als Block-1-Kandidat gilt (Peters Kriterium vom
-# 05.09.2026, ersetzt dort den Analysten-Kaufanteil). 1 = die Kerze direkt
-# davor war rot. Hier zentral, damit ein Wechsel auf 2 oder 3 eine
-# Einzeiler-Aenderung bleibt und nicht im Code gesucht werden muss.
-ROT_DAVOR = 1
-
 
 def de(x, nachkomma=0):
     """Deutsche Zahlschreibweise, ohne pandas/numpy-Typen zu verlieren."""
@@ -72,8 +65,14 @@ def ist_rohstoff_oder_fx(ticker: str) -> bool:
     return ticker.endswith("=F") or ticker.endswith("=X")
 
 
-def gruen_nach_rot(df, rot_davor: int = ROT_DAVOR) -> bool:
+def gruen_nach_rot(z) -> bool:
     """Heutige Kerze gruen, die davor rot (Peters Kriterium vom 05.09.2026).
+
+    Liest nur zwei Spalten aus marktdaten.csv - KEIN eigener Kursabruf.
+    marktdaten.py hat die Kursreihe ohnehin in der Hand und schreibt beide
+    Flags mit; ein zweiter Abruf hier waere nicht nur Doppelarbeit, sondern
+    eine zusaetzliche Ausfallquelle, die Rohstoffe stillschweigend aus
+    Block 1 fallen lassen koennte.
 
     Rot-Definition identisch zu rote_kerze() in marktdaten.py: Schluss unter
     Eroeffnung, sonst nichts. Bewusst KEIN EMA-Filter - Peter hat den
@@ -85,20 +84,12 @@ def gruen_nach_rot(df, rot_davor: int = ROT_DAVOR) -> bool:
     Kaufanteil spielt: eine zweite, vom Ruecksetzer-Setup unabhaengige
     Bestaetigung, dass gerade tatsaechlich gedreht wird.
     """
-    if df is None or len(df) < rot_davor + 1:
-        return False
-    heute = df.iloc[-1]
-    if not (heute["Close"] > heute["Open"]):
-        return False
-    for i in range(2, rot_davor + 2):
-        kerze = df.iloc[-i]
-        if not (kerze["Close"] < kerze["Open"]):
-            return False
-    return True
+    heute_gruen = z.kurs > z.open
+    vortag_rot = pd.notna(z.get("rote_kerze_vortag")) and z.get("rote_kerze_vortag") == 1
+    return bool(heute_gruen and vortag_rot)
 
 
-def block1_treffer(markt: pd.DataFrame, analysten: pd.DataFrame,
-                   kerzen_rohstoffe: dict | None = None) -> list[str]:
+def block1_treffer(markt: pd.DataFrame, analysten: pd.DataFrame) -> list[str]:
     """Dieselbe Bedingung wie in Report-Spalte AJ: AF & AG & AZ & (AH | DG).
 
     AF = Kurs < EMA50, AG = gruene Kerze, AH = Tief1 bestaetigt,
@@ -115,7 +106,6 @@ def block1_treffer(markt: pd.DataFrame, analysten: pd.DataFrame,
     Rohstoffe schwaecher gefiltert als Aktien, nicht anders.
     """
     treffer = []
-    kerzen_rohstoffe = kerzen_rohstoffe or {}
     for ticker in markt.index:
         z = markt.loc[ticker]
         rohstoff = ist_rohstoff_oder_fx(ticker)
@@ -126,7 +116,7 @@ def block1_treffer(markt: pd.DataFrame, analysten: pd.DataFrame,
         ah = z.tief1_best == 1
         dg = z.kein_neues_tief == 1
         if rohstoff:
-            az = gruen_nach_rot(kerzen_rohstoffe.get(ticker))
+            az = gruen_nach_rot(z)
         else:
             a = analysten.loc[ticker]
             az = pd.notna(a.kaufen_pct) and (a.kaufen_pct / 100) >= 0.75
@@ -282,35 +272,17 @@ def main() -> None:
             for r in gruppe.itertuples()
         }
 
-    # Kerzen NUR fuer Rohstoffe/FX - fuer alle anderen Werte kommt das
-    # Kaufsignal aus analysten.csv und braucht keine Kursreihe. kurse.py
-    # nutzt denselben Cache wie marktdaten.py, das zu diesem Zeitpunkt im
-    # Screening-Lauf bereits durch ist: der Abruf kostet praktisch nichts.
-    # Derselbe Zeitraum (400d) wie ueberall sonst, sonst laeuft es am Cache
-    # vorbei - genau der Fehler, den luecken.py schon einmal hatte.
-    rohstoff_ticker = [t for t in markt.index if ist_rohstoff_oder_fx(t)]
-    kerzen_rohstoffe: dict = {}
-    if rohstoff_ticker:
-        try:
-            import kurse
+    # Fehlt die Spalte, laeuft marktdaten.py noch in der alten Fassung -
+    # dann koennen Rohstoffe nicht in Block 1 auftauchen. Das muss laut
+    # werden, nicht stillschweigend passieren: genau solche unsichtbaren
+    # Ausfaelle waren der Grund, warum die Rohstoff-Luecke ueberhaupt
+    # monatelang unbemerkt blieb.
+    if "rote_kerze_vortag" not in markt.columns:
+        print("WARNUNG: Spalte 'rote_kerze_vortag' fehlt in marktdaten.csv - "
+              "marktdaten.py ist nicht auf dem Stand vom 05.09.2026. "
+              "Rohstoffe/FX koennen heute NICHT in Block 1 auftauchen.")
 
-            kerzen_rohstoffe = kurse.kerzen_batch(rohstoff_ticker, period="400d")
-        except Exception as fehler:  # pragma: no cover - Netz/Yahoo-Ausfall
-            print(f"WARNUNG: Kerzen fuer Rohstoffe nicht abrufbar ({fehler}).")
-        # Ohne Kerzen kann gruen_nach_rot() nicht greifen und der Rohstoff
-        # faellt aus Block 1 - das darf NICHT stillschweigend passieren.
-        # Genau solche unsichtbaren Ausfaelle waren der Grund, warum die
-        # Rohstoff-Luecke ueberhaupt erst monatelang unbemerkt blieb.
-        ohne_kerzen = [
-            t for t in rohstoff_ticker
-            if kerzen_rohstoffe.get(t) is None or len(kerzen_rohstoffe.get(t, [])) == 0
-        ]
-        if ohne_kerzen:
-            print(f"WARNUNG: keine Kerzen fuer {len(ohne_kerzen)} von "
-                  f"{len(rohstoff_ticker)} Rohstoff-/FX-Werten - diese koennen "
-                  f"heute NICHT in Block 1 auftauchen: {', '.join(ohne_kerzen)}")
-
-    treffer = block1_treffer(markt, analysten, kerzen_rohstoffe)
+    treffer = block1_treffer(markt, analysten)
     print(f"Block-1-Treffer heute: {len(treffer)}")
 
     zeilen = []

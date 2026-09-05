@@ -65,6 +65,42 @@ def ist_rohstoff_oder_fx(ticker: str) -> bool:
     return ticker.endswith("=F") or ticker.endswith("=X")
 
 
+# Rohstoffe, auf die es bei Trade Republic KO-Zertifikate gibt. Alles
+# andere hat in Block 1 nichts verloren - ein Kaufkandidat, den Peter gar
+# nicht kaufen kann, ist keiner.
+#
+# Stand 05.09.2026, von Peter per Screenshot in der TR-Suche geprueft.
+# WICHTIG fuer kuenftige Pruefungen: TR fuehrt Rohstoffe unter ENGLISCHEN
+# Namen. Unter "Zucker" oder "Erdgas" findet man nichts, unter "Sugar" bzw.
+# "Natural Gas" schon. Suchbegriffe: Sugar, Natural Gas (dort "Henry Hub
+# Natural Gas"), Cocoa, Wheat, Corn, Platinum, Palladium.
+#
+# MAIS bleibt draussen: unter "Corn" erschienen nur Aktien-Derivate
+# (Coinbase, CoreWeave, Core MSCI World), kein Mais-Basiswert.
+# EUR/USD ist nicht geprueft und bleibt vorerst draussen.
+HANDELBARE_ROHSTOFFE = {
+    "GC=F",   # Gold
+    "SI=F",   # Silber
+    "HG=F",   # Kupfer
+    "CL=F",   # WTI Oel
+    "BZ=F",   # Brent Oel
+    "NG=F",   # Erdgas -> TR "Henry Hub Natural Gas", KO-Scheine Vontobel
+    "SB=F",   # Zucker -> TR "Sugar Future" (ICE), KO Vontobel/Soc.Gen.
+    "CC=F",   # Kakao  -> TR "Cocoa" (ICE)
+    "ZW=F",   # Weizen -> TR "Wheat Soft Red Future"
+    "PL=F",   # Platin -> TR "Platin"/"Platinum"
+    "PA=F",   # Palladium -> TR "Palladium"
+}
+
+# ACHTUNG EINHEITEN (Fund 05.09.2026): Bei einigen Rohstoffen notiert
+# Yahoo in einer anderen Einheit als Trade Republic. Zucker steht in
+# marktdaten.csv bei 18,07 (US-Cent je Pfund), die TR-Knock-Outs liegen bei
+# 0,1545-0,1785 US-Dollar - Faktor 100. Fuer die Block-1-Rechnung ist das
+# egal (Puffer in ATR, alles in derselben Einheit), ABER beim Vergleich
+# eines konkreten Scheins gegen unser Bezugstief muss umgerechnet werden.
+# Erdgas und die Metalle stimmen dagegen direkt ueberein.
+
+
 def gruen_nach_rot(z) -> bool:
     """Heutige Kerze gruen, die davor rot (Peters Kriterium vom 05.09.2026).
 
@@ -101,9 +137,15 @@ def block1_treffer(markt: pd.DataFrame, analysten: pd.DataFrame) -> list[str]:
     Eintrag in analysten.csv - es gibt keine Wall-Street-Kaufquote fuer Gold
     oder EUR/USD. Die AZ-Bedingung war fuer sie strukturell nie erfuellbar,
     obwohl Merkregel 13 Rohstoffe ausdruecklich als vollwertige Kauf-
-    kandidaten festlegt. AZ wird deshalb ersetzt durch "gruene Kerze nach
-    roter Kerze" - AZ einfach wegzulassen waere zu locker gewesen und haette
-    Rohstoffe schwaecher gefiltert als Aktien, nicht anders.
+    kandidaten festlegt.
+
+    Fuer Rohstoffe/FX gilt deshalb ab 05.09.2026 (Peters Festlegung):
+    "gruene Kerze nach roter Kerze" PLUS Tiefsbestaetigung (AH | DG).
+    KEIN EMA - weder EMA50 (AF) noch EMA200. Peter ausdruecklich: "Scheiss
+    auf EMA", und auf Nachfrage bestaetigt "der EMA interessiert nicht
+    mehr". Das Setup ist die Umkehr am bestaetigten Tief selbst, nicht die
+    Lage zum gleitenden Durchschnitt. Bei Aktien bleibt AF unveraendert -
+    dort ist nichts geaendert worden.
     """
     treffer = []
     for ticker in markt.index:
@@ -111,15 +153,19 @@ def block1_treffer(markt: pd.DataFrame, analysten: pd.DataFrame) -> list[str]:
         rohstoff = ist_rohstoff_oder_fx(ticker)
         if not rohstoff and ticker not in analysten.index:
             continue
-        af = pd.notna(z.ema50) and z.kurs < z.ema50
-        ag = z.kurs > z.open
+        # Nicht handelbare Rohstoffe/FX gar nicht erst pruefen.
+        if rohstoff and ticker not in HANDELBARE_ROHSTOFFE:
+            continue
         ah = z.tief1_best == 1
         dg = z.kein_neues_tief == 1
         if rohstoff:
-            az = gruen_nach_rot(z)
-        else:
-            a = analysten.loc[ticker]
-            az = pd.notna(a.kaufen_pct) and (a.kaufen_pct / 100) >= 0.75
+            if gruen_nach_rot(z) and (ah or dg):
+                treffer.append(ticker)
+            continue
+        a = analysten.loc[ticker]
+        af = pd.notna(z.ema50) and z.kurs < z.ema50
+        ag = z.kurs > z.open
+        az = pd.notna(a.kaufen_pct) and (a.kaufen_pct / 100) >= 0.75
         if af and ag and az and (ah or dg):
             treffer.append(ticker)
     return treffer

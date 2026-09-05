@@ -103,7 +103,8 @@ SRT3.DE SIE.DE ENR.DE SHL.DE SY1.DE VOW3.DE VNA.DE ZAL.DE""".split()
 
 # Rohstoffe und Waehrung bewusst mit drin: Gold wurde gehandelt (zwei
 # Positionen im August 2026), also muss es auch auswertbar sein.
-WEITERE = ["GC=F", "SI=F", "NG=F", "CL=F", "EURUSD=X"]
+WEITERE = ["GC=F", "SI=F", "PL=F", "PA=F", "HG=F", "CL=F", "BZ=F", "NG=F",
+           "ZW=F", "CC=F", "SB=F", "EURUSD=X"]
 
 UNIVERSUM = list(dict.fromkeys(US + DAX + WEITERE))
 

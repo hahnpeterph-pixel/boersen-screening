@@ -1,53 +1,6 @@
 # Boersen-Screening - 2026-09-05
 
-_Stand: Schlusskurse vom 2026-09-04, aber 40 Werte haengen zurueck - siehe Standwarnung. Erstellt 2026-09-05T08:55:07+00:00 UTC. 211 Werte ausgewertet._
-
-> **Standwarnung: 40 von 211 Werten haengen zurueck.** Neuester Handelstag im Bericht ist 2026-09-04.
->
-> Ursache ist in aller Regel Yahoo: die vorlaeufige Tageskerze einer Boerse wird ueber Nacht durch die offizielle Abrechnung ersetzt, und solange die fehlt, faellt der Tag weg. Betroffen sind meist die europaeischen Notierungen. Fuer diese Werte gelten Kurs, ATR, RSI und Tiefs unten NICHT fuer den neuesten Handelstag.
->
-> | Wert | letzte Kerze |
-> |---|---|
-> | ADS.DE | 2026-09-03 |
-> | AIR.DE | 2026-09-03 |
-> | ALV.DE | 2026-09-03 |
-> | ASML | 2026-09-03 |
-> | BAS.DE | 2026-09-03 |
-> | BAYN.DE | 2026-09-03 |
-> | BEI.DE | 2026-09-03 |
-> | BMW.DE | 2026-09-03 |
-> | BNR.DE | 2026-09-03 |
-> | CBK.DE | 2026-09-03 |
-> | CON.DE | 2026-09-03 |
-> | DB1.DE | 2026-09-03 |
-> | DBK.DE | 2026-09-03 |
-> | DHL.DE | 2026-09-03 |
-> | DTE.DE | 2026-09-03 |
-> | DTG.DE | 2026-09-03 |
-> | ENR.DE | 2026-09-03 |
-> | EOAN.DE | 2026-09-03 |
-> | FRE.DE | 2026-09-03 |
-> | HEI.DE | 2026-09-03 |
-> | HEN3.DE | 2026-09-03 |
-> | HNR1.DE | 2026-09-03 |
-> | IFX.DE | 2026-09-03 |
-> | MBG.DE | 2026-09-03 |
-> | MRK.DE | 2026-09-03 |
-> | MTX.DE | 2026-09-03 |
-> | MUV2.DE | 2026-09-03 |
-> | P911.DE | 2026-09-03 |
-> | PAH3.DE | 2026-09-03 |
-> | QIA.DE | 2026-09-03 |
-> | RHM.DE | 2026-09-03 |
-> | RWE.DE | 2026-09-03 |
-> | SAP.DE | 2026-09-03 |
-> | SHL.DE | 2026-09-03 |
-> | SIE.DE | 2026-09-03 |
-> | SRT3.DE | 2026-09-03 |
-> | SY1.DE | 2026-09-03 |
-> | VNA.DE | 2026-09-03 |
-> | VOW3.DE | 2026-09-03 |
-> | ZAL.DE | 2026-09-03 |
+_Stand: Schlusskurse vom 2026-09-04. Erstellt 2026-09-05T18:01:57+00:00 UTC. 211 Werte ausgewertet._
 
 ## 📖 Glossar (was die Spalten bedeuten)
 
@@ -65,7 +18,7 @@ _Ueber alle 211 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 | Rang | Ticker | ISIN | Name | Index | Kurs | Abstand ATH (Info) | Kaufen-Anteil Analysten | Kursziel | RSI Tag | RSI Woche | RSI Stunde | Letztes Rating |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 1 | MSTR | US66538H1041 | Strategy Inc | NASDAQ | 142.80 | -70% | 100% (11 Banken, ≤120T) | 225.14 (58% ueber Kurs) | 66 | 53 | 65 | 2026-09-03 B. Riley Securities: Rating bestaetigt: Buy |
-| 2 | ASML | USN070592100 | ASML Holding N.V. - New York Re | NASDAQ | 1423.40 | -17% | 100% (5 Banken, ≤120T) | 2149.11 (51% ueber Kurs) | 39 | 52 | 62 | keine in 30T |
+| 2 | ASML | USN070592100 | ASML Holding N.V. - New York Re | NASDAQ | 1467.40 | -15% | 100% (5 Banken, ≤120T) | 2149.11 (46% ueber Kurs) | 46 | 55 | 62 | keine in 30T |
 | 3 | NVDA | - | NVIDIA Corporation | NASDAQ/DOW | 230.36 | -2% | 100% (28 Banken, ≤120T) | 323.42 (40% ueber Kurs) | 60 | 62 | 60 | 2026-09-04 Rosenblatt: Rating bestaetigt: Buy |
 | 4 | TTWO | - | Take-Two Interactive Software, | NASDAQ | 214.69 | -18% | 100% (10 Banken, ≤120T) | 286.89 (34% ueber Kurs) | 31 | 43 | 39 | 2026-08-10 Roth Capital: Rating bestaetigt: Buy |
 | 5 | AZN | GB0009895292 | AstraZeneca PLC | NASDAQ | 162.70 | -22% | 100% (1 Banken, ≤120T) | 212.54 (31% ueber Kurs) | 46 | 41 | 50 | 2026-08-24 CICC: neu bewertet mit Outperform |
@@ -82,7 +35,7 @@ _Ueber alle 211 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 | 16 | MU | US5951121038 | Micron Technology, Inc. | NASDAQ | 1016.59 | -16% | 96% (23 Banken, ≤120T) | 1513.41 (49% ueber Kurs) | 60 | 64 | 72 | 2026-08-25 Mizuho: Rating bestaetigt: Outperform |
 | 17 | AMAT | US0382221051 | Applied Materials, Inc. | NASDAQ | 454.71 | -37% | 96% (25 Banken, ≤120T) | 640.31 (41% ueber Kurs) | 40 | 49 | 58 | 2026-09-01 UBS: Rating bestaetigt: Buy |
 | 18 | AMZN | - | Amazon.com, Inc. | NASDAQ/DOW | 258.51 | -9% | 95% (20 Banken, ≤120T) | 327.67 (27% ueber Kurs) | 50 | 54 | 54 | 2026-09-03 Wells Fargo: Rating bestaetigt: Overweight |
-| 19 | DTE.DE | - | DEUTSCHE TELEKOM AG | DAX | 28.75 | -15% | 94% (18 Banken, ≤120T) | 36.93 (28% ueber Kurs) | 55 | 53 | 45 | keine in 30T |
+| 19 | DTE.DE | - | DEUTSCHE TELEKOM AG | DAX | 28.40 | -16% | 94% (18 Banken, ≤120T) | 36.93 (30% ueber Kurs) | 51 | 51 | 45 | keine in 30T |
 | 20 | LRCX | - | Lam Research Corporation | NASDAQ | 307.65 | -29% | 94% (16 Banken, ≤120T) | 371.19 (21% ueber Kurs) | 49 | 54 | 65 | 2026-09-01 UBS: Rating bestaetigt: Buy |
 
 

@@ -2,35 +2,35 @@
  "date": "2026-09-05",
  "ranks": {
   "turnaround": [
-   "SHL.DE",
    "CTSH",
-   "DTE.DE",
    "WDAY",
+   "SHL.DE",
    "CEG",
-   "HEN3.DE",
    "EMR",
    "SPGI",
    "NOW",
    "FANG",
    "ABBV",
    "SHW",
+   "DTG.DE",
    "VRSK",
    "BAC",
-   "COF"
+   "COF",
+   "GM"
   ],
   "momentum": [
-   "ALV.DE",
    "MRK",
    "MU",
    "BNY",
-   "BAYN.DE",
-   "DBK.DE",
+   "MS",
    "MRNA",
    "CRWD",
+   "DBK.DE",
+   "BAYN.DE",
    "TEAM",
    "COP",
-   "BNR.DE",
    "BAS.DE",
+   "BNR.DE",
    "GM",
    "ABNB",
    "CVX"
@@ -43,8 +43,8 @@
    "ABNB",
    "COP",
    "BLK",
-   "MTX.DE",
    "MNST",
+   "MTX.DE",
    "REGN",
    "V",
    "VRTX",
@@ -57,62 +57,22 @@
   "turnaround": {
    "entries": [
     {
-     "ticker": "CTSH",
-     "rank": 2
+     "ticker": "DTG.DE",
+     "rank": 11
     },
     {
-     "ticker": "WDAY",
-     "rank": 4
-    },
-    {
-     "ticker": "CEG",
-     "rank": 5
-    },
-    {
-     "ticker": "EMR",
-     "rank": 7
-    },
-    {
-     "ticker": "SHW",
-     "rank": 12
-    },
-    {
-     "ticker": "VRSK",
-     "rank": 13
-    },
-    {
-     "ticker": "COF",
+     "ticker": "GM",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "ZS",
-     "old_rank": 1
+     "ticker": "DTE.DE",
+     "old_rank": 3
     },
     {
-     "ticker": "ADBE",
-     "old_rank": 4
-    },
-    {
-     "ticker": "MELI",
-     "old_rank": 5
-    },
-    {
-     "ticker": "DHR",
+     "ticker": "HEN3.DE",
      "old_rank": 6
-    },
-    {
-     "ticker": "KHC",
-     "old_rank": 8
-    },
-    {
-     "ticker": "XOM",
-     "old_rank": 11
-    },
-    {
-     "ticker": "CCEP",
-     "old_rank": 15
     }
    ],
    "moves": []
@@ -120,36 +80,17 @@
   "momentum": {
    "entries": [
     {
-     "ticker": "COP",
-     "rank": 10
-    },
-    {
-     "ticker": "CVX",
-     "rank": 15
+     "ticker": "MS",
+     "rank": 4
     }
    ],
    "exits": [
     {
-     "ticker": "KO",
-     "old_rank": 13
-    },
-    {
-     "ticker": "SY1.DE",
-     "old_rank": 14
+     "ticker": "ALV.DE",
+     "old_rank": 1
     }
    ],
-   "moves": [
-    {
-     "ticker": "TEAM",
-     "rank": 9,
-     "delta": -6
-    },
-    {
-     "ticker": "ABNB",
-     "rank": 14,
-     "delta": -6
-    }
-   ]
+   "moves": []
   },
   "value": {
    "entries": [],

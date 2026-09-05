@@ -1,39 +1,39 @@
 {
- "date": "2026-09-04",
+ "date": "2026-09-05",
  "ranks": {
   "turnaround": [
-   "CTSH",
-   "WDAY",
+   "ZS",
    "SHL.DE",
-   "CEG",
-   "EMR",
-   "NOW",
+   "DTE.DE",
+   "ADBE",
+   "MELI",
+   "DHR",
    "SPGI",
-   "FANG",
+   "KHC",
+   "NOW",
+   "HEN3.DE",
+   "XOM",
    "ABBV",
-   "SHW",
-   "DTG.DE",
-   "VRSK",
+   "FANG",
    "BAC",
-   "COF",
-   "GM"
+   "CCEP"
   ],
   "momentum": [
    "MRK",
-   "MU",
-   "BNY",
-   "MS",
-   "MRNA",
-   "CRWD",
-   "DBK.DE",
-   "BAYN.DE",
+   "ALV.DE",
    "TEAM",
-   "COP",
-   "BAS.DE",
-   "BNR.DE",
+   "BNY",
+   "BAYN.DE",
+   "MU",
+   "DBK.DE",
    "ABNB",
-   "GM",
-   "CVX"
+   "CRWD",
+   "MRNA",
+   "BNR.DE",
+   "BAS.DE",
+   "KO",
+   "SY1.DE",
+   "GM"
   ],
   "value": [
    "MU",
@@ -43,13 +43,13 @@
    "ABNB",
    "COP",
    "BLK",
-   "MNST",
    "MTX.DE",
+   "MNST",
    "REGN",
    "V",
    "VRTX",
-   "DXCM",
    "GE",
+   "DXCM",
    "GOOG"
   ]
  },
@@ -57,156 +57,138 @@
   "turnaround": {
    "entries": [
     {
-     "ticker": "CTSH",
+     "ticker": "ZS",
      "rank": 1
     },
     {
-     "ticker": "WDAY",
-     "rank": 2
+     "ticker": "DTE.DE",
+     "rank": 3
     },
     {
-     "ticker": "CEG",
+     "ticker": "ADBE",
      "rank": 4
     },
     {
-     "ticker": "EMR",
+     "ticker": "MELI",
      "rank": 5
     },
     {
-     "ticker": "SHW",
+     "ticker": "DHR",
+     "rank": 6
+    },
+    {
+     "ticker": "KHC",
+     "rank": 8
+    },
+    {
+     "ticker": "HEN3.DE",
      "rank": 10
     },
     {
-     "ticker": "DTG.DE",
+     "ticker": "XOM",
      "rank": 11
     },
     {
-     "ticker": "VRSK",
-     "rank": 12
-    },
-    {
-     "ticker": "COF",
-     "rank": 14
-    },
-    {
-     "ticker": "GM",
+     "ticker": "CCEP",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "ZS",
+     "ticker": "CTSH",
      "old_rank": 1
     },
     {
-     "ticker": "ADBE",
+     "ticker": "WDAY",
      "old_rank": 2
     },
     {
-     "ticker": "MELI",
-     "old_rank": 3
-    },
-    {
-     "ticker": "DHR",
+     "ticker": "CEG",
      "old_rank": 4
     },
     {
-     "ticker": "KHC",
-     "old_rank": 7
+     "ticker": "EMR",
+     "old_rank": 5
     },
     {
-     "ticker": "XOM",
-     "old_rank": 9
-    },
-    {
-     "ticker": "DTE.DE",
+     "ticker": "SHW",
      "old_rank": 10
     },
     {
-     "ticker": "HEN3.DE",
+     "ticker": "DTG.DE",
      "old_rank": 11
     },
     {
-     "ticker": "CCEP",
+     "ticker": "VRSK",
+     "old_rank": 12
+    },
+    {
+     "ticker": "COF",
+     "old_rank": 14
+    },
+    {
+     "ticker": "GM",
      "old_rank": 15
     }
    ],
    "moves": [
     {
      "ticker": "FANG",
-     "rank": 8,
-     "delta": 5
+     "rank": 13,
+     "delta": -5
     }
    ]
   },
   "momentum": {
    "entries": [
     {
-     "ticker": "MS",
-     "rank": 4
+     "ticker": "ALV.DE",
+     "rank": 2
     },
     {
-     "ticker": "DBK.DE",
-     "rank": 7
+     "ticker": "KO",
+     "rank": 13
     },
     {
-     "ticker": "COP",
-     "rank": 10
-    },
-    {
-     "ticker": "CVX",
-     "rank": 15
+     "ticker": "SY1.DE",
+     "rank": 14
     }
    ],
    "exits": [
     {
-     "ticker": "ALV.DE",
-     "old_rank": 8
+     "ticker": "MS",
+     "old_rank": 4
     },
     {
-     "ticker": "BAC",
+     "ticker": "COP",
      "old_rank": 10
     },
     {
-     "ticker": "SY1.DE",
-     "old_rank": 12
-    },
-    {
-     "ticker": "KO",
-     "old_rank": 13
+     "ticker": "CVX",
+     "old_rank": 15
     }
    ],
    "moves": [
     {
-     "ticker": "BAYN.DE",
-     "rank": 8,
-     "delta": -6
-    },
-    {
      "ticker": "TEAM",
-     "rank": 9,
-     "delta": -6
+     "rank": 3,
+     "delta": 6
     },
     {
      "ticker": "ABNB",
-     "rank": 13,
-     "delta": -8
+     "rank": 8,
+     "delta": 5
+    },
+    {
+     "ticker": "MRNA",
+     "rank": 10,
+     "delta": -5
     }
    ]
   },
   "value": {
-   "entries": [
-    {
-     "ticker": "MNST",
-     "rank": 8
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "GOOGL",
-     "old_rank": 15
-    }
-   ],
+   "entries": [],
+   "exits": [],
    "moves": []
   },
   "analyst_flips": []

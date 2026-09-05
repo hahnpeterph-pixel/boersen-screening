@@ -132,6 +132,31 @@ def main():
             print(f"  {ticker}: Abruf fehlgeschlagen ({fehler})")
             continue
 
+        # Yahoo "erfolgreich" heisst nicht zwangslaeufig aktuell - siehe
+        # marktdaten.py (01.09.2026, DAX+ASML blieben tagelang auf altem
+        # Schluss haengen, ohne dass kerzen() je einen Fehler warf).
+        # luecken.py hatte diese Pruefung bisher NICHT (Fund vom
+        # 05.09.2026, Peters Frage nach der neuen Applied-Materials-
+        # Luecke deckte auf, dass die Datei einen Tag zurueckhing).
+        # Dieselbe Freshness-Pruefung wie in marktdaten.py: fuer DAX-Werte
+        # und ASML zusaetzlich Stooq und Twelve Data einholen und die
+        # insgesamt aktuellste Quelle nehmen.
+        if df is not None and (ticker.endswith(".DE") or ticker == "ASML"):
+            kandidaten_quellen = [("Yahoo", df)]
+            df_stooq = kurse.kerzen_stooq(ticker)
+            if df_stooq is not None:
+                kandidaten_quellen.append(("Stooq", df_stooq))
+            df_td = kurse.kerzen_twelvedata(ticker)
+            if df_td is not None:
+                kandidaten_quellen.append(("Twelve Data", df_td))
+            bester_name, bestes_df = max(
+                kandidaten_quellen, key=lambda x: x[1].index[-1])
+            if bester_name != "Yahoo":
+                print(f"  {ticker}: Yahoo veraltet ({df.index[-1].date()}), "
+                      f"{bester_name} aktueller ({bestes_df.index[-1].date()}) "
+                      f"- {bester_name} verwendet")
+                df = bestes_df
+
         zeilen = luecken_eines_werts(ticker, name, df)
         alle.extend(zeilen)
         reif = [z for z in zeilen if z["reif"]]

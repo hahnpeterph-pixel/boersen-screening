@@ -92,6 +92,25 @@ HANDELBARE_ROHSTOFFE = {
     "PA=F",   # Palladium -> TR "Palladium"
 }
 
+# Handelsplatz je Rohstoff - Peter will bei jedem besprochenen Wert die
+# Boerse genannt haben (Merkregel 9). Vorher stand hier pauschal
+# "Rohstoff/FX", was diese Regel verletzte.
+ROHSTOFF_BOERSE = {
+    "GC=F": "COMEX", "SI=F": "COMEX", "HG=F": "COMEX",
+    "PL=F": "NYMEX", "PA=F": "NYMEX", "NG=F": "NYMEX", "CL=F": "NYMEX",
+    "BZ=F": "ICE", "SB=F": "ICE", "CC=F": "ICE",
+    "ZW=F": "CBOT",
+}
+
+# Branche je Rohstoff, analog zur Sektorspalte bei Aktien.
+ROHSTOFF_BRANCHE = {
+    "GC=F": "Edelmetall", "SI=F": "Edelmetall",
+    "PL=F": "Edelmetall", "PA=F": "Edelmetall",
+    "HG=F": "Industriemetall",
+    "CL=F": "Energie", "BZ=F": "Energie", "NG=F": "Energie",
+    "ZW=F": "Agrar", "CC=F": "Agrar", "SB=F": "Agrar",
+}
+
 # ACHTUNG EINHEITEN (Fund 05.09.2026): Bei einigen Rohstoffen notiert
 # Yahoo in einer anderen Einheit als Trade Republic. Zucker steht in
 # marktdaten.csv bei 18,07 (US-Cent je Pfund), die TR-Knock-Outs liegen bei
@@ -365,8 +384,10 @@ def main() -> None:
         zeile = {
             "ticker": t,
             "name": (a.get("name", t) if a is not None else z.get("name", t)),
-            "boerse": (a.get("index", "") if a is not None else "Rohstoff/FX"),
-            "branche": (a.get("sektor", "") if a is not None else "Rohstoff/FX"),
+            "boerse": (a.get("index", "") if a is not None
+                       else ROHSTOFF_BOERSE.get(t, "Rohstoff/FX")),
+            "branche": (a.get("sektor", "") if a is not None
+                        else ROHSTOFF_BRANCHE.get(t, "Rohstoff/FX")),
             "kurs": kurs,
             "atr14": atr,
             "bezugstief": tief,

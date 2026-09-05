@@ -135,6 +135,30 @@ def reihen() -> tuple[list[str], dict[str, dict[str, float]]]:
         df = kurse.kerzen(t, period="400d")
         if df is None or df.empty:
             continue
+
+        # Yahoo "erfolgreich" heisst nicht zwangslaeufig aktuell (siehe
+        # marktdaten.py, 01.09.2026). kursverlauf.py hatte diese Pruefung
+        # bisher nicht - der Kerzen-Fix vom 04.09.2026 allein loeste das
+        # nicht, weil er nur unfertige HEUTIGE Kerzen abfaengt, nicht
+        # einen Yahoo-Datensatz, der komplett auf dem Vortag haengen
+        # bleibt. Fund vom 05.09.2026: die Datei hing weiterhin einen Tag
+        # zurueck. Dieselbe Freshness-Pruefung wie in marktdaten.py.
+        if t.endswith(".DE") or t == "ASML":
+            kandidaten_quellen = [("Yahoo", df)]
+            df_stooq = kurse.kerzen_stooq(t)
+            if df_stooq is not None:
+                kandidaten_quellen.append(("Stooq", df_stooq))
+            df_td = kurse.kerzen_twelvedata(t)
+            if df_td is not None:
+                kandidaten_quellen.append(("Twelve Data", df_td))
+            bester_name, bestes_df = max(
+                kandidaten_quellen, key=lambda x: x[1].index[-1])
+            if bester_name != "Yahoo":
+                print(f"  {t}: Yahoo veraltet ({df.index[-1].date()}), "
+                      f"{bester_name} aktueller ({bestes_df.index[-1].date()}) "
+                      f"- {bester_name} verwendet")
+                df = bestes_df
+
         df = unfertige_heutige_kerze_verwerfen(df, t, jetzt)
         if df.empty:
             continue

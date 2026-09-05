@@ -109,6 +109,17 @@ jobs:
         run: python luecken.py
         continue-on-error: true
 
+      # Komplette Block-1-Auswertung (Fortsetzungskette, Luecken-Fenster,
+      # RSI-Schwelle, alle 9 Pufferstufen) fertig fuer die Kaufvorlage.
+      # Nach marktdaten.py/rsi_schwellen-Aequivalent, luecken.py und
+      # phasen.csv, weil heute.py alle drei als Rohdaten braucht. Faellt
+      # dieser Schritt aus (z.B. weil eine der Eingabedateien fehlt), darf
+      # das die vorherigen, bereits gesicherten Ergebnisse nicht mitreissen
+      # - deshalb continue-on-error wie bei den anderen Zusatzauswertungen.
+      - name: Heute-Auswertung ausfuehren
+        run: python heute.py
+        continue-on-error: true
+
       - name: Ergebnis speichern
         run: |
           git config user.name "screening-bot"

@@ -52,24 +52,49 @@ def de(x, nachkomma=0):
     return text.replace(",", "\ufffd").replace(".", ",").replace("\ufffd", ".")
 
 
+def ist_rohstoff_oder_fx(ticker: str) -> bool:
+    """Yahoo-Tickerendungen fuer Futures (=F) und Devisenpaare (=X).
+
+    Bewusst am Tickernamen erkannt, nicht ueber eine weitere Ticker-Liste:
+    marktdaten.py, kursverlauf.py und universe.json fuehren bereits DREI
+    verschiedene, nicht deckungsgleiche Rohstoff-/FX-Listen (Fund vom
+    05.09.2026 - universe.json kennt nur 4 von 11 Rohstoff-Tickern aus
+    marktdaten.py). Eine vierte waere genau der Fehler, der diese Woche
+    schon zweimal Bugs verursacht hat (kursverlauf.py, luecken.py).
+    """
+    return ticker.endswith("=F") or ticker.endswith("=X")
+
+
 def block1_treffer(markt: pd.DataFrame, analysten: pd.DataFrame) -> list[str]:
     """Dieselbe Bedingung wie in Report-Spalte AJ: AF & AG & AZ & (AH | DG).
 
     AF = Kurs < EMA50, AG = gruene Kerze, AH = Tief1 bestaetigt,
     DG = kein neues Tief, AZ = Kaufanteil >= 75%. RSI ist seit
     Entscheidung 79/03.09.2026 bewusst KEIN Gate mehr.
+
+    AUSNAHME (Fund 05.09.2026, Peters Frage "was macht uns sicher, dass
+    die Systematik nichts uebersieht"): Rohstoffe und FX-Paare haben nie
+    einen Eintrag in analysten.csv - es gibt keine Wall-Street-Kaufquote
+    fuer Gold oder EUR/USD. Die AZ-Bedingung war fuer sie strukturell nie
+    erfuellbar, obwohl Entscheidung/Merkregel 13 Rohstoffe ausdruecklich
+    als vollwertige Kaufkandidaten festlegt. Für diese Ticker faellt AZ
+    komplett weg, alles andere bleibt gleich streng.
     """
     treffer = []
     for ticker in markt.index:
-        if ticker not in analysten.index:
-            continue
         z = markt.loc[ticker]
-        a = analysten.loc[ticker]
+        rohstoff = ist_rohstoff_oder_fx(ticker)
+        if not rohstoff and ticker not in analysten.index:
+            continue
         af = pd.notna(z.ema50) and z.kurs < z.ema50
         ag = z.kurs > z.open
         ah = z.tief1_best == 1
         dg = z.kein_neues_tief == 1
-        az = pd.notna(a.kaufen_pct) and (a.kaufen_pct / 100) >= 0.75
+        if rohstoff:
+            az = True
+        else:
+            a = analysten.loc[ticker]
+            az = pd.notna(a.kaufen_pct) and (a.kaufen_pct / 100) >= 0.75
         if af and ag and az and (ah or dg):
             treffer.append(ticker)
     return treffer
@@ -228,10 +253,15 @@ def main() -> None:
     zeilen = []
     for t in treffer:
         z = markt.loc[t]
-        a = analysten.loc[t]
+        rohstoff = ist_rohstoff_oder_fx(t)
+        a = analysten.loc[t] if t in analysten.index else None
         kurs, atr, tief = float(z.kurs), float(z.atr14), float(z.tief1)
         position = z.tiefs_serie
-        ziel = float(a.kursziel) if pd.notna(a.kursziel) else None
+        # Kein Analystenziel fuer Rohstoffe/FX moeglich - "Kursziel" und
+        # "Eigenes Ziel" bleiben leer statt einer erfundenen Zahl. Peters
+        # Regel "grobe Naeherungen sind kein akzeptables Ergebnis" gilt
+        # auch hier: lieber leer als falsch.
+        ziel = float(a.kursziel) if a is not None and pd.notna(a.kursziel) else None
         eigen = ziel - 0.10 * kurs if ziel is not None else None
 
         kette_wert = ketten_je_wert.get(t, {})
@@ -253,9 +283,9 @@ def main() -> None:
 
         zeile = {
             "ticker": t,
-            "name": a.get("name", t),
-            "boerse": a.get("index", ""),
-            "branche": a.get("sektor", ""),
+            "name": (a.get("name", t) if a is not None else z.get("name", t)),
+            "boerse": (a.get("index", "") if a is not None else "Rohstoff/FX"),
+            "branche": (a.get("sektor", "") if a is not None else "Rohstoff/FX"),
             "kurs": kurs,
             "atr14": atr,
             "bezugstief": tief,
@@ -269,8 +299,8 @@ def main() -> None:
             "rsi_schwelle": schwelle[1] if schwelle else None,
             "rsi_schwelle_faelle": schwelle[0] if schwelle else None,
             "rsi_schwelle_anteil_serien": schwelle[4] if schwelle else None,
-            "kaufanteil_pct": a.kaufen_pct,
-            "banken": a.banken,
+            "kaufanteil_pct": (a.kaufen_pct if a is not None else None),
+            "banken": (a.banken if a is not None else None),
             "kursziel": ziel,
             "eigenes_ziel": eigen,
             "korrektur_atr": z.korr_ist_atr,

@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-09-05 00:03 UTC. 218 Werte, Fenster 90 Kalendertage. EUR/USD 1.1621._
+_Erstellt 2026-09-05 08:55 UTC. 218 Werte, Fenster 90 Kalendertage. EUR/USD 1.1621._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -73,8 +73,7 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | RHM.DE (RHM.DE) | 1034.0 | - | - | ja | 35.0 |
 | SRT3.DE (SRT3.DE) | 237.2 | - | - | ja | 47.29 |
 | SY1.DE (SY1.DE) | 90.4 | - | - | ja | 49.9 |
-| Platin (PL=F) | 1828.5 | ja | ja | - | 57.28 |
-| Palladium (PA=F) | 1400.0 | - | ja | ja | 56.57 |
+| Weizen (ZW=F) | 716.0 | - | ja | ja | 55.6 |
 
 ---
 

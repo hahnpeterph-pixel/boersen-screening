@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-09-05 20:26 UTC. 218 Werte, Fenster 90 Kalendertage. EUR/USD 1.1621._
+_Erstellt 2026-09-07 07:56 UTC. 218 Werte, Fenster 90 Kalendertage. EUR/USD 1.1628._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -74,6 +74,7 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | SRT3.DE (SRT3.DE) | 237.2 | - | - | ja | 47.29 |
 | SY1.DE (SY1.DE) | 90.4 | - | - | ja | 49.9 |
 | Weizen (ZW=F) | 716.0 | - | ja | ja | 55.6 |
+| EUR/USD (EURUSD=X) | 1.1628 | ja | ja | - | 56.95 |
 
 ---
 

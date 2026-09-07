@@ -1,52 +1,52 @@
 {
- "date": "2026-09-05",
+ "date": "2026-09-07",
  "ranks": {
   "turnaround": [
+   "DTE.DE",
+   "SAP.DE",
    "CTSH",
-   "WDAY",
    "SHL.DE",
+   "WDAY",
+   "QIA.DE",
    "CEG",
    "EMR",
    "SPGI",
-   "NOW",
    "FANG",
    "ABBV",
    "SHW",
-   "DTG.DE",
    "VRSK",
-   "BAC",
-   "COF",
-   "GM"
+   "MTX.DE",
+   "HEN3.DE"
   ],
   "momentum": [
    "MRK",
    "MU",
+   "DBK.DE",
    "BNY",
-   "MS",
+   "CBK.DE",
    "MRNA",
    "CRWD",
-   "DBK.DE",
-   "BAYN.DE",
+   "ILMN",
    "TEAM",
-   "COP",
    "BAS.DE",
-   "BNR.DE",
+   "COP",
    "GM",
    "ABNB",
-   "CVX"
+   "CVX",
+   "BNR.DE"
   ],
   "value": [
    "MU",
    "NVDA",
    "CSCO",
    "META",
-   "ABNB",
    "COP",
    "BLK",
    "MNST",
-   "MTX.DE",
    "REGN",
    "V",
+   "MTX.DE",
+   "ABNB",
    "VRTX",
    "DXCM",
    "GE",
@@ -55,19 +55,85 @@
  },
  "changes": {
   "turnaround": {
-   "entries": [],
-   "exits": [],
+   "entries": [
+    {
+     "ticker": "DTE.DE",
+     "rank": 1
+    },
+    {
+     "ticker": "SAP.DE",
+     "rank": 2
+    },
+    {
+     "ticker": "QIA.DE",
+     "rank": 6
+    },
+    {
+     "ticker": "MTX.DE",
+     "rank": 14
+    },
+    {
+     "ticker": "HEN3.DE",
+     "rank": 15
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "NOW",
+     "old_rank": 7
+    },
+    {
+     "ticker": "DTG.DE",
+     "old_rank": 11
+    },
+    {
+     "ticker": "BAC",
+     "old_rank": 13
+    },
+    {
+     "ticker": "COF",
+     "old_rank": 14
+    },
+    {
+     "ticker": "GM",
+     "old_rank": 15
+    }
+   ],
    "moves": []
   },
   "momentum": {
-   "entries": [],
-   "exits": [],
+   "entries": [
+    {
+     "ticker": "CBK.DE",
+     "rank": 5
+    },
+    {
+     "ticker": "ILMN",
+     "rank": 8
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "MS",
+     "old_rank": 4
+    },
+    {
+     "ticker": "BAYN.DE",
+     "old_rank": 8
+    }
+   ],
    "moves": []
   },
   "value": {
    "entries": [],
    "exits": [],
-   "moves": []
+   "moves": [
+    {
+     "ticker": "ABNB",
+     "rank": 11,
+     "delta": -6
+    }
+   ]
   },
   "analyst_flips": []
  }

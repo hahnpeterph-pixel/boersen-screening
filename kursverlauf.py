@@ -77,6 +77,12 @@ def unfertige_heutige_kerze_verwerfen(df, ticker, jetzt_utc):
 BASE = Path(__file__).resolve().parent
 DOCS = BASE / "docs"
 CSV_AUS = DOCS / "kursverlauf.csv"
+# Getrennte Dateien statt einer breiten OHLC-Datei: so bleibt
+# kursverlauf.csv fuer alle bisherigen Leser unveraendert (gleiche Spalten,
+# gleiche Bedeutung) und nichts bricht. Eine gemeinsame Datei mit einer
+# zusaetzlichen "feld"-Spalte haette jeden Konsumenten angefasst.
+CSV_TIEF = DOCS / "kursverlauf_tief.csv"
+CSV_HOCH = DOCS / "kursverlauf_hoch.csv"
 
 # 130 Handelstage sind rund ein halbes Jahr. Der laengste Rueckblick im
 # Blatt Rueckblick geht ueber 63 Handelstage; damit bleibt Platz fuer
@@ -104,7 +110,7 @@ SRT3.DE SIE.DE ENR.DE SHL.DE SY1.DE VOW3.DE VNA.DE ZAL.DE""".split()
 # Rohstoffe und Waehrung bewusst mit drin: Gold wurde gehandelt (zwei
 # Positionen im August 2026), also muss es auch auswertbar sein.
 WEITERE = ["GC=F", "SI=F", "PL=F", "PA=F", "HG=F", "CL=F", "BZ=F", "NG=F",
-           "ZW=F", "CC=F", "SB=F", "EURUSD=X"]
+           "ZW=F", "CC=F", "SB=F", "KC=F", "EURUSD=X"]
 
 UNIVERSUM = list(dict.fromkeys(US + DAX + WEITERE))
 
@@ -120,7 +126,7 @@ UNIVERSUM = list(dict.fromkeys(US + DAX + WEITERE))
 MINDESTBESETZUNG = 0.20
 
 
-def reihen() -> tuple[list[str], dict[str, dict[str, float]]]:
+def reihen() -> tuple[list[str], dict, dict, dict]:
     """Schlusskurse je Wert, plus die gemeinsame Liste der Handelstage.
 
     Die Tage werden ueber ALLE Werte gesammelt, nicht je Wert einzeln:
@@ -130,6 +136,8 @@ def reihen() -> tuple[list[str], dict[str, dict[str, float]]]:
     einem Wert ein Tag, bleibt die Zelle leer statt zu verrutschen.
     """
     je_wert: dict[str, dict[str, float]] = {}
+    je_tief: dict[str, dict[str, float]] = {}
+    je_hoch: dict[str, dict[str, float]] = {}
     alle_tage: set[str] = set()
     jetzt = datetime.now(timezone.utc)
     for i, t in enumerate(UNIVERSUM, 1):
@@ -164,9 +172,21 @@ def reihen() -> tuple[list[str], dict[str, dict[str, float]]]:
         if df.empty:
             continue
         letzte = df.tail(TAGE)
+        # Ab 05.09.2026 zusaetzlich Tagestief und Tageshoch. Grund: Ein
+        # Turbo knockt INTRADAY aus, nicht zum Schluss. Die Historie in
+        # historie.py rechnet laengst mit High/Low - nur diese Datei kannte
+        # bisher ausschliesslich Schlusskurse. Dadurch war weder erkennbar,
+        # ob ein Bezugstief im Tagesverlauf schon beruehrt wurde (bei
+        # Alphabet A am 04.09.2026 ging es um 0,11 Punkte), noch tauchten
+        # Tage im Tagesverlust-Block auf, die intraday 8 % verloren und bei
+        # -4 % schlossen - also genau die Tage, an denen enge KOs sterben.
         werte = {str(d.date()): round(float(c), 4)
                  for d, c in zip(letzte.index, letzte["Close"])}
         je_wert[t] = werte
+        je_tief[t] = {str(d.date()): round(float(v), 4)
+                      for d, v in zip(letzte.index, letzte["Low"])}
+        je_hoch[t] = {str(d.date()): round(float(v), 4)
+                      for d, v in zip(letzte.index, letzte["High"])}
         alle_tage.update(werte)
         if i % 25 == 0:
             print(f"  {i}/{len(UNIVERSUM)} ...")
@@ -183,26 +203,36 @@ def reihen() -> tuple[list[str], dict[str, dict[str, float]]]:
         print(f"  {len(verworfen)} Tage verworfen (unter "
               f"{MINDESTBESETZUNG:.0%} der Werte): "
               + ", ".join(f"{d} ({gezaehlt[d]})" for d in verworfen))
-    return behalten, je_wert
+    return behalten, je_wert, je_tief, je_hoch
 
 
-def schreiben(tage: list[str], je_wert: dict[str, dict[str, float]]) -> None:
-    DOCS.mkdir(exist_ok=True)
-    with open(CSV_AUS, "w", newline="", encoding="utf-8") as f:
+def _eine_datei(pfad, tage: list[str], je_wert: dict) -> None:
+    with open(pfad, "w", newline="", encoding="utf-8") as f:
         s = csv.writer(f)
         s.writerow(["ticker"] + tage)
         for t in sorted(je_wert):
             s.writerow([t] + [je_wert[t].get(d, "") for d in tage])
-    print(f"Geschrieben: {CSV_AUS} ({len(je_wert)} Werte, {len(tage)} Handelstage)")
+    print(f"Geschrieben: {pfad} ({len(je_wert)} Werte, {len(tage)} Handelstage)")
+
+
+def schreiben(tage: list[str], je_wert: dict, je_tief: dict,
+              je_hoch: dict) -> None:
+    DOCS.mkdir(exist_ok=True)
+    _eine_datei(CSV_AUS, tage, je_wert)
+    # Dieselbe Tagesachse wie die Schlusskursdatei - dadurch sind die drei
+    # Dateien spaltenweise deckungsgleich und lassen sich ohne Abgleich
+    # nebeneinanderlegen.
+    _eine_datei(CSV_TIEF, tage, je_tief)
+    _eine_datei(CSV_HOCH, tage, je_hoch)
 
 
 def main() -> None:
     kurse.aufraeumen()
-    tage, je_wert = reihen()
+    tage, je_wert, je_tief, je_hoch = reihen()
     if not je_wert:
         print("Keine Kursdaten erhalten - nichts geschrieben.")
         return
-    schreiben(tage, je_wert)
+    schreiben(tage, je_wert, je_tief, je_hoch)
     print(f"Zeitraum {tage[0]} bis {tage[-1]}. "
           f"Erstellt {datetime.now(timezone.utc):%Y-%m-%d %H:%M} UTC.")
 

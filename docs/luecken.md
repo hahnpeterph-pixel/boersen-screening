@@ -1416,7 +1416,7 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | Kupfer (HG=F) | 2026-04-10 | aufwaerts | 5.748 | 0.245 | 0.513 | 103 |
 | Kupfer (HG=F) | 2026-07-30 | aufwaerts | 6.2765 | 0.594 | 1.06 | 27 |
 | Kupfer (HG=F) | 2026-09-04 | aufwaerts | 6.58 | 0.168 | 0.236 | 1 |
-| Kupfer (HG=F) | 2026-09-07 | aufwaerts | 6.5985 | 0.762 | 1.068 | 0 |
+| Kupfer (HG=F) | 2026-09-07 | aufwaerts | 6.5985 | 0.749 | 1.068 | 0 |
 | HNR1.DE (HNR1.DE) | 2025-05-08 | abwaerts | 286.2 | 0.777 | 1.747 | 339 |
 | HNR1.DE (HNR1.DE) | 2026-09-07 | abwaerts | 260.4 | 0.33 | 0.461 | 0 |
 | HONA (HONA) | 2026-07-08 | abwaerts | 233.64 | 0.184 | 1.305 | 42 |
@@ -1442,7 +1442,7 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | IFX.DE (IFX.DE) | 2026-04-23 | aufwaerts | 49.555 | 0.761 | 3.158 | 96 |
 | IFX.DE (IFX.DE) | 2026-07-06 | abwaerts | 76.91 | 0.2 | 1.092 | 45 |
 | IFX.DE (IFX.DE) | 2026-08-18 | abwaerts | 61.73 | 0.268 | 1.474 | 14 |
-| IFX.DE (IFX.DE) | 2026-09-07 | aufwaerts | 57.7 | 0.333 | 1.438 | 0 |
+| IFX.DE (IFX.DE) | 2026-09-07 | aufwaerts | 57.7 | 0.332 | 1.438 | 0 |
 | ILMN (ILMN) | 2025-04-22 | aufwaerts | 72.11 | 0.254 | 1.387 | 345 |
 | ILMN (ILMN) | 2025-06-10 | aufwaerts | 85.08 | 0.102 | 0.376 | 311 |
 | ILMN (ILMN) | 2025-10-31 | aufwaerts | 99.39 | 1.437 | 7.566 | 211 |
@@ -1766,7 +1766,7 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | Palladium (PA=F) | 2026-08-19 | aufwaerts | 1291.2 | 1.554 | 3.152 | 13 |
 | Palladium (PA=F) | 2026-09-03 | aufwaerts | 1346.6 | 2.074 | 5.562 | 2 |
 | Palladium (PA=F) | 2026-09-04 | abwaerts | 1421.5 | 0.87 | 2.209 | 1 |
-| Palladium (PA=F) | 2026-09-07 | aufwaerts | 1390.1 | 0.367 | 0.928 | 0 |
+| Palladium (PA=F) | 2026-09-07 | aufwaerts | 1390.1 | 0.366 | 0.928 | 0 |
 | PAH3.DE (PAH3.DE) | 2026-01-06 | abwaerts | 39.38 | 0.174 | 0.305 | 171 |
 | PAH3.DE (PAH3.DE) | 2026-03-02 | abwaerts | 35.92 | 1.558 | 3.174 | 132 |
 | PAH3.DE (PAH3.DE) | 2026-06-01 | abwaerts | 32.55 | 0.275 | 0.584 | 70 |
@@ -1842,7 +1842,7 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | Platin (PL=F) | 2026-08-19 | aufwaerts | 1726.4 | 2.286 | 4.414 | 13 |
 | Platin (PL=F) | 2026-08-31 | abwaerts | 1847.6 | 1.814 | 3.204 | 5 |
 | Platin (PL=F) | 2026-09-03 | aufwaerts | 1759.8 | 2.091 | 3.898 | 2 |
-| Platin (PL=F) | 2026-09-07 | aufwaerts | 1821.0 | 0.126 | 0.214 | 0 |
+| Platin (PL=F) | 2026-09-07 | aufwaerts | 1821.0 | 0.125 | 0.214 | 0 |
 | PLTR (PLTR) | 2025-04-23 | aufwaerts | 96.34 | 0.335 | 2.616 | 344 |
 | PLTR (PLTR) | 2025-11-04 | abwaerts | 201.82 | 1.135 | 4.831 | 209 |
 | PLTR (PLTR) | 2025-12-29 | abwaerts | 188.62 | 0.242 | 0.938 | 172 |
@@ -1909,7 +1909,7 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | SAP.DE (SAP.DE) | 2026-07-28 | aufwaerts | 151.56 | 0.105 | 0.422 | 29 |
 | SAP.DE (SAP.DE) | 2026-08-03 | aufwaerts | 158.26 | 0.267 | 1.099 | 25 |
 | SAP.DE (SAP.DE) | 2026-08-07 | aufwaerts | 173.1 | 0.111 | 0.416 | 21 |
-| SAP.DE (SAP.DE) | 2026-09-07 | abwaerts | 184.96 | 0.248 | 0.757 | 0 |
+| SAP.DE (SAP.DE) | 2026-09-07 | abwaerts | 184.96 | 0.245 | 0.757 | 0 |
 | Zucker (SB=F) | 2026-06-29 | aufwaerts | 14.09 | 0.109 | 0.284 | 48 |
 | SBUX (SBUX) | 2025-03-05 | abwaerts | 112.0 | 0.174 | 0.384 | 378 |
 | SCHW (SCHW) | 2025-04-23 | aufwaerts | 77.06 | 0.394 | 1.583 | 344 |
@@ -1921,7 +1921,7 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | SHL.DE (SHL.DE) | 2026-01-19 | abwaerts | 46.3 | 1.633 | 2.765 | 162 |
 | SHL.DE (SHL.DE) | 2026-03-02 | abwaerts | 42.0 | 1.67 | 3.571 | 132 |
 | SHL.DE (SHL.DE) | 2026-07-27 | aufwaerts | 35.06 | 0.629 | 1.54 | 30 |
-| SHL.DE (SHL.DE) | 2026-09-07 | abwaerts | 38.91 | 0.245 | 0.463 | 0 |
+| SHL.DE (SHL.DE) | 2026-09-07 | abwaerts | 38.91 | 0.243 | 0.463 | 0 |
 | SHW (SHW) | 2026-06-03 | aufwaerts | 295.57 | 0.594 | 1.671 | 65 |
 | SHW (SHW) | 2026-07-27 | aufwaerts | 320.14 | 0.509 | 1.518 | 29 |
 | SHW (SHW) | 2026-08-31 | abwaerts | 343.0 | 0.183 | 0.437 | 4 |
@@ -2043,7 +2043,7 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | VNA.DE (VNA.DE) | 2026-07-08 | abwaerts | 22.37 | 0.617 | 1.654 | 43 |
 | VNA.DE (VNA.DE) | 2026-08-17 | abwaerts | 20.53 | 0.127 | 0.292 | 15 |
 | VNA.DE (VNA.DE) | 2026-08-31 | abwaerts | 19.815 | 0.272 | 0.555 | 5 |
-| VNA.DE (VNA.DE) | 2026-09-07 | abwaerts | 19.1 | 0.68 | 1.466 | 0 |
+| VNA.DE (VNA.DE) | 2026-09-07 | abwaerts | 19.1 | 0.679 | 1.466 | 0 |
 | VOW3.DE (VOW3.DE) | 2026-03-02 | abwaerts | 100.5 | 0.769 | 1.99 | 132 |
 | VOW3.DE (VOW3.DE) | 2026-06-17 | abwaerts | 88.58 | 0.338 | 0.881 | 58 |
 | VOW3.DE (VOW3.DE) | 2026-09-04 | aufwaerts | 76.7 | 2.393 | 7.771 | 1 |

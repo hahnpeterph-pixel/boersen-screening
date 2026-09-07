@@ -55,85 +55,19 @@
  },
  "changes": {
   "turnaround": {
-   "entries": [
-    {
-     "ticker": "DTE.DE",
-     "rank": 1
-    },
-    {
-     "ticker": "SAP.DE",
-     "rank": 2
-    },
-    {
-     "ticker": "QIA.DE",
-     "rank": 6
-    },
-    {
-     "ticker": "MTX.DE",
-     "rank": 14
-    },
-    {
-     "ticker": "HEN3.DE",
-     "rank": 15
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "NOW",
-     "old_rank": 7
-    },
-    {
-     "ticker": "DTG.DE",
-     "old_rank": 11
-    },
-    {
-     "ticker": "BAC",
-     "old_rank": 13
-    },
-    {
-     "ticker": "COF",
-     "old_rank": 14
-    },
-    {
-     "ticker": "GM",
-     "old_rank": 15
-    }
-   ],
+   "entries": [],
+   "exits": [],
    "moves": []
   },
   "momentum": {
-   "entries": [
-    {
-     "ticker": "CBK.DE",
-     "rank": 5
-    },
-    {
-     "ticker": "ILMN",
-     "rank": 8
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "MS",
-     "old_rank": 4
-    },
-    {
-     "ticker": "BAYN.DE",
-     "old_rank": 8
-    }
-   ],
+   "entries": [],
+   "exits": [],
    "moves": []
   },
   "value": {
    "entries": [],
    "exits": [],
-   "moves": [
-    {
-     "ticker": "ABNB",
-     "rank": 11,
-     "delta": -6
-    }
-   ]
+   "moves": []
   },
   "analyst_flips": []
  }

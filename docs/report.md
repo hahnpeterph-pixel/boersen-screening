@@ -1,6 +1,6 @@
 # Boersen-Screening - 2026-09-07
 
-_Stand: Schlusskurse vom 2026-09-07, aber 171 Werte haengen zurueck - siehe Standwarnung. Erstellt 2026-09-07T08:18:08+00:00 UTC. 211 Werte ausgewertet._
+_Stand: Schlusskurse vom 2026-09-07, aber 171 Werte haengen zurueck - siehe Standwarnung. Erstellt 2026-09-07T21:56:55+00:00 UTC. 211 Werte ausgewertet._
 
 > **Standwarnung: 171 von 211 Werten haengen zurueck.** Neuester Handelstag im Bericht ist 2026-09-07.
 >
@@ -196,7 +196,7 @@ _Ueber alle 211 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 | Rang | Ticker | ISIN | Name | Index | Kurs | Abstand ATH (Info) | Kaufen-Anteil Analysten | Kursziel | RSI Tag | RSI Woche | RSI Stunde | Letztes Rating |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 1 | MSTR | US66538H1041 | Strategy Inc | NASDAQ | 142.80 | -70% | 100% (11 Banken, ≤120T) | 225.14 (58% ueber Kurs) | 66 | 53 | 65 | 2026-09-03 B. Riley Securities: Rating bestaetigt: Buy |
-| 2 | ASML | USN070592100 | ASML Holding N.V. - New York Re | NASDAQ | 1491.60 | -13% | 100% (5 Banken, ≤120T) | 2149.11 (44% ueber Kurs) | 50 | 56 | 67 | keine in 30T |
+| 2 | ASML | USN070592100 | ASML Holding N.V. - New York Re | NASDAQ | 1500.40 | -13% | 100% (5 Banken, ≤120T) | 2149.11 (43% ueber Kurs) | 51 | 57 | 67 | keine in 30T |
 | 3 | NVDA | - | NVIDIA Corporation | NASDAQ/DOW | 230.36 | -2% | 100% (28 Banken, ≤120T) | 323.42 (40% ueber Kurs) | 60 | 62 | 60 | 2026-09-04 Rosenblatt: Rating bestaetigt: Buy |
 | 4 | TTWO | - | Take-Two Interactive Software, | NASDAQ | 214.69 | -18% | 100% (10 Banken, ≤120T) | 286.89 (34% ueber Kurs) | 31 | 43 | 39 | 2026-08-10 Roth Capital: Rating bestaetigt: Buy |
 | 5 | AZN | GB0009895292 | AstraZeneca PLC | NASDAQ | 162.70 | -22% | 100% (1 Banken, ≤120T) | 212.54 (31% ueber Kurs) | 46 | 41 | 50 | 2026-08-24 CICC: neu bewertet mit Outperform |
@@ -213,7 +213,7 @@ _Ueber alle 211 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 | 16 | MU | US5951121038 | Micron Technology, Inc. | NASDAQ | 1016.59 | -16% | 96% (23 Banken, ≤120T) | 1513.41 (49% ueber Kurs) | 60 | 64 | 72 | 2026-08-25 Mizuho: Rating bestaetigt: Outperform |
 | 17 | AMAT | US0382221051 | Applied Materials, Inc. | NASDAQ | 454.71 | -37% | 96% (24 Banken, ≤120T) | 640.31 (41% ueber Kurs) | 40 | 49 | 58 | 2026-09-01 UBS: Rating bestaetigt: Buy |
 | 18 | AMZN | - | Amazon.com, Inc. | NASDAQ/DOW | 258.51 | -9% | 95% (20 Banken, ≤120T) | 327.67 (27% ueber Kurs) | 50 | 54 | 54 | 2026-09-03 Wells Fargo: Rating bestaetigt: Overweight |
-| 19 | DTE.DE | - | DEUTSCHE TELEKOM AG | DAX | 28.17 | -16% | 94% (18 Banken, ≤120T) | 36.93 (31% ueber Kurs) | 49 | 50 | 38 | keine in 30T |
+| 19 | DTE.DE | - | DEUTSCHE TELEKOM AG | DAX | 28.24 | -16% | 94% (18 Banken, ≤120T) | 36.93 (31% ueber Kurs) | 49 | 51 | 42 | keine in 30T |
 | 20 | LRCX | - | Lam Research Corporation | NASDAQ | 307.65 | -29% | 94% (16 Banken, ≤120T) | 371.19 (21% ueber Kurs) | 49 | 54 | 65 | 2026-09-01 UBS: Rating bestaetigt: Buy |
 
 

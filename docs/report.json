@@ -2,28 +2,28 @@
  "date": "2026-09-07",
  "ranks": {
   "turnaround": [
-   "DTE.DE",
-   "SAP.DE",
-   "CTSH",
    "SHL.DE",
+   "CTSH",
    "WDAY",
-   "QIA.DE",
+   "DTE.DE",
    "CEG",
    "EMR",
    "SPGI",
+   "NOW",
    "FANG",
+   "MTX.DE",
    "ABBV",
    "SHW",
    "VRSK",
-   "MTX.DE",
-   "HEN3.DE"
+   "BAC",
+   "COF"
   ],
   "momentum": [
    "MRK",
    "MU",
    "DBK.DE",
    "BNY",
-   "CBK.DE",
+   "MS",
    "MRNA",
    "CRWD",
    "ILMN",
@@ -44,29 +44,75 @@
    "BLK",
    "MNST",
    "REGN",
-   "V",
    "MTX.DE",
+   "V",
    "ABNB",
    "VRTX",
    "DXCM",
    "GE",
-   "GOOG"
+   "DB1.DE"
   ]
  },
  "changes": {
   "turnaround": {
-   "entries": [],
-   "exits": [],
+   "entries": [
+    {
+     "ticker": "NOW",
+     "rank": 8
+    },
+    {
+     "ticker": "BAC",
+     "rank": 14
+    },
+    {
+     "ticker": "COF",
+     "rank": 15
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "SAP.DE",
+     "old_rank": 2
+    },
+    {
+     "ticker": "QIA.DE",
+     "old_rank": 6
+    },
+    {
+     "ticker": "HEN3.DE",
+     "old_rank": 15
+    }
+   ],
    "moves": []
   },
   "momentum": {
-   "entries": [],
-   "exits": [],
+   "entries": [
+    {
+     "ticker": "MS",
+     "rank": 5
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "CBK.DE",
+     "old_rank": 5
+    }
+   ],
    "moves": []
   },
   "value": {
-   "entries": [],
-   "exits": [],
+   "entries": [
+    {
+     "ticker": "DB1.DE",
+     "rank": 15
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "GOOG",
+     "old_rank": 15
+    }
+   ],
    "moves": []
   },
   "analyst_flips": []

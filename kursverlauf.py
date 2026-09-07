@@ -83,6 +83,12 @@ CSV_AUS = DOCS / "kursverlauf.csv"
 # zusaetzlichen "feld"-Spalte haette jeden Konsumenten angefasst.
 CSV_TIEF = DOCS / "kursverlauf_tief.csv"
 CSV_HOCH = DOCS / "kursverlauf_hoch.csv"
+# Eroeffnungskurse ab 07.09.2026. Ohne sie laesst sich "rote Kerze" nicht
+# projektueblich bestimmen (Schluss unter EROEFFNUNG, so wie rote_kerze()
+# in marktdaten.py). Der Ersatz ueber den Vortagsschluss lieferte am
+# 07.09.2026 bei Xcel Energy ein falsches Ergebnis: der 31.08. schloss
+# unter dem Vortagsschluss, war als Kerze aber gruen.
+CSV_EROEFF = DOCS / "kursverlauf_eroeffnung.csv"
 
 # 130 Handelstage sind rund ein halbes Jahr. Der laengste Rueckblick im
 # Blatt Rueckblick geht ueber 63 Handelstage; damit bleibt Platz fuer
@@ -138,6 +144,7 @@ def reihen() -> tuple[list[str], dict, dict, dict]:
     je_wert: dict[str, dict[str, float]] = {}
     je_tief: dict[str, dict[str, float]] = {}
     je_hoch: dict[str, dict[str, float]] = {}
+    je_eroeff: dict[str, dict[str, float]] = {}
     alle_tage: set[str] = set()
     jetzt = datetime.now(timezone.utc)
     for i, t in enumerate(UNIVERSUM, 1):
@@ -187,6 +194,8 @@ def reihen() -> tuple[list[str], dict, dict, dict]:
                       for d, v in zip(letzte.index, letzte["Low"])}
         je_hoch[t] = {str(d.date()): round(float(v), 4)
                       for d, v in zip(letzte.index, letzte["High"])}
+        je_eroeff[t] = {str(d.date()): round(float(v), 4)
+                        for d, v in zip(letzte.index, letzte["Open"])}
         alle_tage.update(werte)
         if i % 25 == 0:
             print(f"  {i}/{len(UNIVERSUM)} ...")
@@ -203,7 +212,7 @@ def reihen() -> tuple[list[str], dict, dict, dict]:
         print(f"  {len(verworfen)} Tage verworfen (unter "
               f"{MINDESTBESETZUNG:.0%} der Werte): "
               + ", ".join(f"{d} ({gezaehlt[d]})" for d in verworfen))
-    return behalten, je_wert, je_tief, je_hoch
+    return behalten, je_wert, je_tief, je_hoch, je_eroeff
 
 
 def _eine_datei(pfad, tage: list[str], je_wert: dict) -> None:
@@ -216,7 +225,7 @@ def _eine_datei(pfad, tage: list[str], je_wert: dict) -> None:
 
 
 def schreiben(tage: list[str], je_wert: dict, je_tief: dict,
-              je_hoch: dict) -> None:
+              je_hoch: dict, je_eroeff: dict) -> None:
     DOCS.mkdir(exist_ok=True)
     _eine_datei(CSV_AUS, tage, je_wert)
     # Dieselbe Tagesachse wie die Schlusskursdatei - dadurch sind die drei
@@ -224,15 +233,16 @@ def schreiben(tage: list[str], je_wert: dict, je_tief: dict,
     # nebeneinanderlegen.
     _eine_datei(CSV_TIEF, tage, je_tief)
     _eine_datei(CSV_HOCH, tage, je_hoch)
+    _eine_datei(CSV_EROEFF, tage, je_eroeff)
 
 
 def main() -> None:
     kurse.aufraeumen()
-    tage, je_wert, je_tief, je_hoch = reihen()
+    tage, je_wert, je_tief, je_hoch, je_eroeff = reihen()
     if not je_wert:
         print("Keine Kursdaten erhalten - nichts geschrieben.")
         return
-    schreiben(tage, je_wert, je_tief, je_hoch)
+    schreiben(tage, je_wert, je_tief, je_hoch, je_eroeff)
     print(f"Zeitraum {tage[0]} bis {tage[-1]}. "
           f"Erstellt {datetime.now(timezone.utc):%Y-%m-%d %H:%M} UTC.")
 

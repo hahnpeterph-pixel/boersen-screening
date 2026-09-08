@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-09-08 00:27 UTC. 218 Werte, Fenster 90 Kalendertage. EUR/USD 1.1614._
+_Erstellt 2026-09-08 04:40 UTC. 218 Werte, Fenster 90 Kalendertage. EUR/USD 1.1614._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 

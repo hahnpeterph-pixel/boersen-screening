@@ -91,7 +91,7 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | FDX (FDX) | 33 | 30 | 91% | 1 | 8 | 13 | 3 |
 | FRE.DE (FRE.DE) | 50 | 49 | 98% | 1 | 3 | 21 | 1 |
 | FTNT (FTNT) | 39 | 37 | 95% | 1 | 4 | 15 | 2 |
-| Gold (GC=F) | 59 | 53 | 90% | 1 | 5 | 15 | 6 |
+| Gold (GC=F) | 60 | 54 | 90% | 1 | 5 | 15 | 6 |
 | GD (GD) | 33 | 29 | 88% | 1 | 3 | 6 | 4 |
 | GE (GE) | 42 | 37 | 88% | 1 | 6 | 21 | 5 |
 | GEHC (GEHC) | 29 | 28 | 97% | 1 | 3 | 10 | 1 |
@@ -160,7 +160,7 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | ORCL (ORCL) | 60 | 58 | 97% | 2 | 17 | 113 | 2 |
 | ORLY (ORLY) | 27 | 27 | 100% | 1 | 2 | 8 | 0 |
 | P911.DE (P911.DE) | 32 | 31 | 97% | 1 | 2 | 4 | 1 |
-| Palladium (PA=F) | 140 | 121 | 86% | 3 | 9 | 35 | 19 |
+| Palladium (PA=F) | 139 | 121 | 87% | 3 | 9 | 35 | 18 |
 | PAH3.DE (PAH3.DE) | 42 | 42 | 100% | 2 | 7 | 20 | 0 |
 | PANW (PANW) | 39 | 36 | 92% | 2 | 8 | 20 | 3 |
 | PAYX (PAYX) | 34 | 32 | 94% | 1 | 1 | 3 | 2 |
@@ -169,7 +169,7 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | PEP (PEP) | 31 | 31 | 100% | 1 | 2 | 13 | 0 |
 | PFE (PFE) | 19 | 18 | 95% | 2 | 2 | 4 | 1 |
 | PG (PG) | 33 | 33 | 100% | 1 | 3 | 6 | 0 |
-| Platin (PL=F) | 138 | 116 | 84% | 2 | 6 | 20 | 22 |
+| Platin (PL=F) | 137 | 116 | 85% | 2 | 6 | 20 | 21 |
 | PLTR (PLTR) | 43 | 39 | 91% | 1 | 5 | 16 | 4 |
 | PM (PM) | 35 | 32 | 91% | 1 | 3 | 13 | 3 |
 | PYPL (PYPL) | 39 | 36 | 92% | 1 | 3 | 11 | 3 |
@@ -187,7 +187,7 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | SCHW (SCHW) | 35 | 32 | 91% | 1 | 2 | 6 | 3 |
 | SHL.DE (SHL.DE) | 47 | 46 | 98% | 1 | 8 | 13 | 1 |
 | SHW (SHW) | 39 | 37 | 95% | 2 | 5 | 13 | 2 |
-| Silber (SI=F) | 82 | 65 | 79% | 2 | 4 | 12 | 17 |
+| Silber (SI=F) | 81 | 64 | 79% | 2 | 4 | 12 | 17 |
 | SIE.DE (SIE.DE) | 65 | 62 | 95% | 1 | 4 | 18 | 3 |
 | SNPS (SNPS) | 36 | 36 | 100% | 2 | 22 | 50 | 0 |
 | SO (SO) | 28 | 28 | 100% | 1 | 3 | 6 | 0 |
@@ -313,7 +313,7 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | FDX (FDX) | 35 | 35 | 100% | 1 | 2 | 14 | 0 |
 | FRE.DE (FRE.DE) | 37 | 36 | 97% | 1 | 4 | 10 | 1 |
 | FTNT (FTNT) | 28 | 28 | 100% | 1 | 2 | 3 | 0 |
-| Gold (GC=F) | 44 | 40 | 91% | 1 | 6 | 10 | 4 |
+| Gold (GC=F) | 45 | 41 | 91% | 1 | 6 | 10 | 4 |
 | GD (GD) | 24 | 24 | 100% | 1 | 3 | 7 | 0 |
 | GE (GE) | 27 | 27 | 100% | 1 | 4 | 13 | 0 |
 | GEHC (GEHC) | 34 | 33 | 97% | 2 | 5 | 25 | 1 |
@@ -372,7 +372,7 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | MUV2.DE (MUV2.DE) | 35 | 34 | 97% | 1 | 3 | 11 | 1 |
 | NEE (NEE) | 17 | 16 | 94% | 1 | 2 | 2 | 1 |
 | NFLX (NFLX) | 27 | 25 | 93% | 1 | 2 | 19 | 2 |
-| Erdgas (NG=F) | 13 | 11 | 85% | 2 | 16 | 19 | 2 |
+| Erdgas (NG=F) | 12 | 10 | 83% | 2 | 16 | 22 | 2 |
 | NKE (NKE) | 34 | 29 | 85% | 1 | 4 | 9 | 5 |
 | NOW (NOW) | 41 | 40 | 98% | 1 | 2 | 35 | 1 |
 | NVDA (NVDA) | 41 | 41 | 100% | 1 | 3 | 6 | 0 |
@@ -409,7 +409,7 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | SCHW (SCHW) | 16 | 16 | 100% | 1 | 3 | 10 | 0 |
 | SHL.DE (SHL.DE) | 52 | 48 | 92% | 1 | 2 | 12 | 4 |
 | SHW (SHW) | 41 | 41 | 100% | 1 | 4 | 8 | 0 |
-| Silber (SI=F) | 60 | 56 | 93% | 2 | 6 | 20 | 4 |
+| Silber (SI=F) | 59 | 55 | 93% | 2 | 6 | 20 | 4 |
 | SIE.DE (SIE.DE) | 49 | 49 | 100% | 1 | 4 | 28 | 0 |
 | SNPS (SNPS) | 37 | 35 | 95% | 1 | 5 | 17 | 2 |
 | SO (SO) | 22 | 22 | 100% | 1 | 2 | 31 | 0 |
@@ -758,7 +758,7 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | P911.DE (P911.DE) | abwaerts | 11/13 (85%) | 4/6 (67%) | 1/3 (33%) |
 | P911.DE (P911.DE) | aufwaerts | 2/3 (67%) | 1/2 (50%) | 0/1 (0%) |
 | Palladium (PA=F) | abwaerts | 32/43 (74%) | 13/24 (54%) | 4/15 (27%) |
-| Palladium (PA=F) | aufwaerts | 44/63 (70%) | 20/39 (51%) | 9/20 (45%) |
+| Palladium (PA=F) | aufwaerts | 44/62 (71%) | 20/38 (53%) | 9/19 (47%) |
 | PAH3.DE (PAH3.DE) | abwaerts | 13/17 (76%) | 3/7 (43%) | 0/3 (0%) |
 | PAH3.DE (PAH3.DE) | aufwaerts | 12/12 (100%) | 3/3 (100%) | 1/1 (100%) |
 | PANW (PANW) | abwaerts | 7/7 (100%) | 3/3 (100%) | keine Faelle |
@@ -776,7 +776,7 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | PG (PG) | abwaerts | 6/9 (67%) | 3/6 (50%) | 2/4 (50%) |
 | PG (PG) | aufwaerts | 4/4 (100%) | 3/3 (100%) | keine Faelle |
 | Platin (PL=F) | abwaerts | 27/40 (68%) | 8/21 (38%) | 0/13 (0%) |
-| Platin (PL=F) | aufwaerts | 35/57 (61%) | 11/33 (33%) | 7/27 (26%) |
+| Platin (PL=F) | aufwaerts | 35/56 (62%) | 11/32 (34%) | 7/26 (27%) |
 | PLTR (PLTR) | abwaerts | 4/6 (67%) | 2/4 (50%) | 0/2 (0%) |
 | PLTR (PLTR) | aufwaerts | 9/13 (69%) | 1/5 (20%) | 0/1 (0%) |
 | PM (PM) | abwaerts | 5/6 (83%) | 3/4 (75%) | 1/1 (100%) |
@@ -1126,9 +1126,9 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | CAT (CAT) | 2026-09-03 | aufwaerts | 793.94 | 0.105 | 0.373 | 1 |
 | CBK.DE (CBK.DE) | 2025-07-23 | aufwaerts | 28.96 | 0.283 | 0.829 | 284 |
 | CBK.DE (CBK.DE) | 2026-04-08 | aufwaerts | 32.07 | 1.192 | 5.737 | 106 |
-| Kakao (CC=F) | 2025-06-20 | abwaerts | 9570.0 | 0.112 | 0.679 | 305 |
-| Kakao (CC=F) | 2025-07-01 | abwaerts | 9356.0 | 0.398 | 2.041 | 298 |
-| Kakao (CC=F) | 2025-08-29 | abwaerts | 7738.0 | 0.31 | 1.331 | 255 |
+| Kakao (CC=F) | 2025-06-20 | abwaerts | 9570.0 | 0.118 | 0.679 | 305 |
+| Kakao (CC=F) | 2025-07-01 | abwaerts | 9356.0 | 0.414 | 2.041 | 298 |
+| Kakao (CC=F) | 2025-08-29 | abwaerts | 7738.0 | 0.311 | 1.331 | 255 |
 | Kakao (CC=F) | 2026-03-02 | aufwaerts | 2798.0 | 0.696 | 4.753 | 130 |
 | Kakao (CC=F) | 2026-03-03 | aufwaerts | 2931.0 | 0.194 | 1.194 | 129 |
 | Kakao (CC=F) | 2026-03-06 | aufwaerts | 2963.0 | 1.096 | 5.906 | 126 |
@@ -1146,7 +1146,6 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | Kakao (CC=F) | 2026-08-27 | aufwaerts | 5916.0 | 0.959 | 4.564 | 6 |
 | Kakao (CC=F) | 2026-09-02 | abwaerts | 6603.0 | 0.39 | 1.545 | 2 |
 | Kakao (CC=F) | 2026-09-03 | abwaerts | 6347.0 | 0.727 | 2.852 | 1 |
-| Kakao (CC=F) | 2026-09-04 | abwaerts | 6166.0 | 0.505 | 1.898 | 0 |
 | CDNS (CDNS) | 2025-04-23 | aufwaerts | 260.67 | 0.513 | 2.344 | 344 |
 | CDNS (CDNS) | 2026-07-16 | abwaerts | 369.05 | 0.216 | 0.824 | 36 |
 | CDNS (CDNS) | 2026-07-17 | abwaerts | 358.74 | 1.49 | 6.74 | 35 |
@@ -1344,10 +1343,10 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | FRE.DE (FRE.DE) | 2026-09-04 | abwaerts | 44.225 | 0.132 | 0.271 | 0 |
 | FTNT (FTNT) | 2026-05-01 | aufwaerts | 85.22 | 0.311 | 1.056 | 87 |
 | FTNT (FTNT) | 2026-05-07 | aufwaerts | 90.11 | 3.57 | 16.813 | 83 |
-| Gold (GC=F) | 2025-08-21 | aufwaerts | 3343.5 | 0.164 | 0.176 | 262 |
+| Gold (GC=F) | 2025-08-21 | aufwaerts | 3343.5 | 0.166 | 0.176 | 262 |
 | Gold (GC=F) | 2025-08-28 | aufwaerts | 3404.6001 | 0.133 | 0.129 | 257 |
-| Gold (GC=F) | 2025-09-02 | aufwaerts | 3475.6001 | 0.266 | 0.291 | 255 |
-| Gold (GC=F) | 2025-10-06 | aufwaerts | 3886.8 | 0.909 | 1.145 | 231 |
+| Gold (GC=F) | 2025-09-02 | aufwaerts | 3475.6001 | 0.267 | 0.291 | 255 |
+| Gold (GC=F) | 2025-10-06 | aufwaerts | 3886.8 | 0.91 | 1.145 | 231 |
 | Gold (GC=F) | 2026-03-12 | abwaerts | 5167.3999 | 0.245 | 0.584 | 123 |
 | Gold (GC=F) | 2026-03-13 | abwaerts | 5115.7998 | 0.215 | 0.512 | 122 |
 | Gold (GC=F) | 2026-03-18 | abwaerts | 4994.2002 | 0.386 | 0.893 | 119 |
@@ -1357,7 +1356,7 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | Gold (GC=F) | 2026-08-26 | abwaerts | 4626.2002 | 0.149 | 0.236 | 8 |
 | Gold (GC=F) | 2026-08-28 | abwaerts | 4609.7002 | 0.136 | 0.226 | 6 |
 | Gold (GC=F) | 2026-09-03 | aufwaerts | 4390.2002 | 0.432 | 0.822 | 2 |
-| Gold (GC=F) | 2026-09-07 | aufwaerts | 4429.7998 | 0.458 | 0.828 | 0 |
+| Gold (GC=F) | 2026-09-08 | aufwaerts | 4429.7998 | 0.455 | 0.828 | 0 |
 | GD (GD) | 2025-06-25 | aufwaerts | 281.97 | 0.315 | 0.56 | 301 |
 | GD (GD) | 2025-07-23 | aufwaerts | 298.91 | 2.013 | 3.71 | 282 |
 | GD (GD) | 2026-04-29 | aufwaerts | 314.75 | 2.439 | 7.412 | 89 |
@@ -1415,7 +1414,7 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | Kupfer (HG=F) | 2026-04-10 | aufwaerts | 5.748 | 0.245 | 0.513 | 103 |
 | Kupfer (HG=F) | 2026-07-30 | aufwaerts | 6.2765 | 0.594 | 1.06 | 27 |
 | Kupfer (HG=F) | 2026-09-04 | aufwaerts | 6.58 | 0.168 | 0.236 | 1 |
-| Kupfer (HG=F) | 2026-09-07 | aufwaerts | 6.5985 | 0.733 | 1.068 | 0 |
+| Kupfer (HG=F) | 2026-09-08 | aufwaerts | 6.5985 | 0.7 | 1.068 | 0 |
 | HNR1.DE (HNR1.DE) | 2025-05-08 | abwaerts | 286.2 | 0.777 | 1.747 | 338 |
 | HONA (HONA) | 2026-07-08 | abwaerts | 233.64 | 0.184 | 1.305 | 42 |
 | HONA (HONA) | 2026-08-06 | abwaerts | 203.64 | 3.142 | 23.885 | 21 |
@@ -1731,13 +1730,12 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | P911.DE (P911.DE) | 2025-03-12 | abwaerts | 56.38 | 0.794 | 2.661 | 376 |
 | P911.DE (P911.DE) | 2026-05-06 | aufwaerts | 41.18 | 0.633 | 1.967 | 87 |
 | P911.DE (P911.DE) | 2026-09-04 | aufwaerts | 44.8 | 0.377 | 1.116 | 0 |
-| Palladium (PA=F) | 2025-05-19 | aufwaerts | 956.8 | 14.0 | 2.341 | 327 |
-| Palladium (PA=F) | 2025-06-02 | aufwaerts | 961.3 | 1.289 | 1.633 | 318 |
-| Palladium (PA=F) | 2025-06-03 | aufwaerts | 996.0 | 1.44 | 1.908 | 317 |
-| Palladium (PA=F) | 2025-06-05 | aufwaerts | 1014.0 | 1.624 | 2.416 | 315 |
-| Palladium (PA=F) | 2025-06-16 | aufwaerts | 1039.6 | 0.781 | 1.529 | 308 |
-| Palladium (PA=F) | 2025-06-23 | aufwaerts | 1052.8 | 1.676 | 3.4 | 304 |
-| Palladium (PA=F) | 2025-06-26 | aufwaerts | 1065.4 | 3.037 | 6.749 | 301 |
+| Palladium (PA=F) | 2025-06-02 | aufwaerts | 961.3 | 1.382 | 1.633 | 318 |
+| Palladium (PA=F) | 2025-06-03 | aufwaerts | 996.0 | 1.528 | 1.908 | 317 |
+| Palladium (PA=F) | 2025-06-05 | aufwaerts | 1014.0 | 1.698 | 2.416 | 315 |
+| Palladium (PA=F) | 2025-06-16 | aufwaerts | 1039.6 | 0.796 | 1.529 | 308 |
+| Palladium (PA=F) | 2025-06-23 | aufwaerts | 1052.8 | 1.699 | 3.4 | 304 |
+| Palladium (PA=F) | 2025-06-26 | aufwaerts | 1065.4 | 3.068 | 6.749 | 301 |
 | Palladium (PA=F) | 2025-08-28 | aufwaerts | 1082.0 | 0.524 | 1.017 | 257 |
 | Palladium (PA=F) | 2025-09-02 | aufwaerts | 1105.2 | 1.073 | 2.244 | 255 |
 | Palladium (PA=F) | 2025-09-10 | aufwaerts | 1124.7 | 2.539 | 6.295 | 249 |
@@ -1763,8 +1761,7 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | Palladium (PA=F) | 2026-08-04 | aufwaerts | 1250.9 | 3.05 | 8.346 | 24 |
 | Palladium (PA=F) | 2026-08-19 | aufwaerts | 1291.2 | 1.554 | 3.152 | 13 |
 | Palladium (PA=F) | 2026-09-03 | aufwaerts | 1346.6 | 2.074 | 5.562 | 2 |
-| Palladium (PA=F) | 2026-09-04 | abwaerts | 1421.5 | 0.87 | 2.209 | 1 |
-| Palladium (PA=F) | 2026-09-07 | aufwaerts | 1390.1 | 0.363 | 0.928 | 0 |
+| Palladium (PA=F) | 2026-09-08 | aufwaerts | 1390.1 | 0.359 | 0.928 | 0 |
 | PAH3.DE (PAH3.DE) | 2026-01-06 | abwaerts | 39.38 | 0.174 | 0.305 | 170 |
 | PAH3.DE (PAH3.DE) | 2026-03-02 | abwaerts | 35.92 | 1.558 | 3.174 | 131 |
 | PAH3.DE (PAH3.DE) | 2026-06-01 | abwaerts | 32.55 | 0.275 | 0.584 | 69 |
@@ -1801,17 +1798,16 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | PG (PG) | 2026-03-03 | abwaerts | 163.45 | 0.398 | 0.771 | 129 |
 | PG (PG) | 2026-03-05 | abwaerts | 157.31 | 0.115 | 0.235 | 127 |
 | PG (PG) | 2026-07-29 | abwaerts | 148.52 | 1.97 | 4.807 | 27 |
-| Platin (PL=F) | 2025-05-19 | aufwaerts | 990.2 | 14.0 | 1.444 | 328 |
-| Platin (PL=F) | 2025-05-20 | aufwaerts | 1004.5 | 11.029 | 4.908 | 327 |
-| Platin (PL=F) | 2025-06-04 | aufwaerts | 1071.3 | 0.526 | 0.467 | 317 |
-| Platin (PL=F) | 2025-06-06 | aufwaerts | 1133.7 | 1.527 | 1.879 | 315 |
-| Platin (PL=F) | 2025-06-09 | aufwaerts | 1169.9 | 0.442 | 0.615 | 314 |
-| Platin (PL=F) | 2025-06-16 | aufwaerts | 1231.0 | 0.878 | 1.665 | 309 |
-| Platin (PL=F) | 2025-06-17 | aufwaerts | 1251.5 | 0.386 | 0.687 | 308 |
-| Platin (PL=F) | 2025-06-18 | aufwaerts | 1260.1 | 2.11 | 4.079 | 307 |
+| Platin (PL=F) | 2025-05-20 | aufwaerts | 1004.5 | 14.0 | 4.908 | 327 |
+| Platin (PL=F) | 2025-06-04 | aufwaerts | 1071.3 | 0.553 | 0.467 | 317 |
+| Platin (PL=F) | 2025-06-06 | aufwaerts | 1133.7 | 1.571 | 1.879 | 315 |
+| Platin (PL=F) | 2025-06-09 | aufwaerts | 1169.9 | 0.452 | 0.615 | 314 |
+| Platin (PL=F) | 2025-06-16 | aufwaerts | 1231.0 | 0.888 | 1.665 | 309 |
+| Platin (PL=F) | 2025-06-17 | aufwaerts | 1251.5 | 0.39 | 0.687 | 308 |
+| Platin (PL=F) | 2025-06-18 | aufwaerts | 1260.1 | 2.129 | 4.079 | 307 |
 | Platin (PL=F) | 2025-08-20 | aufwaerts | 1302.3 | 1.221 | 2.434 | 263 |
 | Platin (PL=F) | 2025-08-26 | aufwaerts | 1331.6 | 0.472 | 0.811 | 259 |
-| Platin (PL=F) | 2025-08-28 | aufwaerts | 1341.4 | 0.718 | 1.118 | 257 |
+| Platin (PL=F) | 2025-08-28 | aufwaerts | 1341.4 | 0.719 | 1.118 | 257 |
 | Platin (PL=F) | 2025-08-29 | aufwaerts | 1356.4 | 0.464 | 0.686 | 256 |
 | Platin (PL=F) | 2025-09-02 | aufwaerts | 1365.7 | 1.867 | 2.936 | 255 |
 | Platin (PL=F) | 2025-09-10 | aufwaerts | 1367.3 | 1.095 | 1.872 | 249 |
@@ -1839,7 +1835,7 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | Platin (PL=F) | 2026-08-14 | aufwaerts | 1725.2 | 0.891 | 1.438 | 16 |
 | Platin (PL=F) | 2026-08-19 | aufwaerts | 1726.4 | 2.286 | 4.414 | 13 |
 | Platin (PL=F) | 2026-09-03 | aufwaerts | 1759.8 | 2.091 | 3.898 | 2 |
-| Platin (PL=F) | 2026-09-07 | aufwaerts | 1821.0 | 0.121 | 0.214 | 0 |
+| Platin (PL=F) | 2026-09-08 | aufwaerts | 1821.0 | 0.12 | 0.214 | 0 |
 | PLTR (PLTR) | 2025-04-23 | aufwaerts | 96.34 | 0.335 | 2.616 | 344 |
 | PLTR (PLTR) | 2025-11-04 | abwaerts | 201.82 | 1.135 | 4.831 | 209 |
 | PLTR (PLTR) | 2025-12-29 | abwaerts | 188.62 | 0.242 | 0.938 | 172 |
@@ -1919,8 +1915,8 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | SHW (SHW) | 2026-06-03 | aufwaerts | 295.57 | 0.594 | 1.671 | 65 |
 | SHW (SHW) | 2026-07-27 | aufwaerts | 320.14 | 0.509 | 1.518 | 29 |
 | SHW (SHW) | 2026-08-31 | abwaerts | 343.0 | 0.183 | 0.437 | 4 |
-| Silber (SI=F) | 2025-06-02 | aufwaerts | 32.975 | 0.877 | 1.44 | 319 |
-| Silber (SI=F) | 2025-06-05 | aufwaerts | 34.519 | 1.391 | 2.277 | 316 |
+| Silber (SI=F) | 2025-06-02 | aufwaerts | 32.975 | 0.858 | 1.44 | 319 |
+| Silber (SI=F) | 2025-06-05 | aufwaerts | 34.519 | 1.367 | 2.277 | 316 |
 | Silber (SI=F) | 2025-08-04 | aufwaerts | 36.787 | 0.586 | 0.973 | 275 |
 | Silber (SI=F) | 2025-08-20 | aufwaerts | 37.305 | 0.865 | 1.179 | 263 |
 | Silber (SI=F) | 2025-08-21 | aufwaerts | 37.745 | 0.569 | 0.747 | 262 |
@@ -1941,7 +1937,7 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | Silber (SI=F) | 2026-08-05 | aufwaerts | 60.056 | 1.387 | 3.986 | 23 |
 | Silber (SI=F) | 2026-08-07 | aufwaerts | 61.91 | 0.955 | 2.762 | 21 |
 | Silber (SI=F) | 2026-09-03 | aufwaerts | 65.05 | 0.256 | 0.776 | 2 |
-| Silber (SI=F) | 2026-09-07 | aufwaerts | 66.54 | 0.103 | 0.293 | 0 |
+| Silber (SI=F) | 2026-09-08 | aufwaerts | 66.54 | 0.101 | 0.293 | 0 |
 | SIE.DE (SIE.DE) | 2025-04-23 | aufwaerts | 189.32 | 0.26 | 1.268 | 348 |
 | SIE.DE (SIE.DE) | 2026-04-08 | aufwaerts | 215.55 | 1.585 | 6.704 | 106 |
 | SIE.DE (SIE.DE) | 2026-04-14 | aufwaerts | 229.65 | 0.196 | 0.74 | 102 |
@@ -2079,7 +2075,7 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | XOM (XOM) | 2026-08-31 | aufwaerts | 157.42 | 0.723 | 1.601 | 4 |
 | XOM (XOM) | 2026-09-04 | abwaerts | 162.09 | 0.315 | 0.66 | 0 |
 | ZAL.DE (ZAL.DE) | 2026-08-04 | abwaerts | 28.56 | 1.905 | 8.964 | 23 |
-| Mais (ZC=F) | 2026-09-07 | aufwaerts | 516.0 | 1.909 | 4.506 | 0 |
+| Mais (ZC=F) | 2026-09-08 | aufwaerts | 516.0 | 1.889 | 4.506 | 0 |
 | ZS (ZS) | 2025-11-14 | abwaerts | 307.2 | 0.329 | 1.12 | 201 |
 | ZS (ZS) | 2025-11-26 | abwaerts | 278.07 | 0.612 | 2.87 | 193 |
 | ZS (ZS) | 2025-12-01 | abwaerts | 249.68 | 0.209 | 1.033 | 191 |
@@ -2088,5 +2084,4 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | ZS (ZS) | 2026-08-03 | aufwaerts | 152.505 | 0.161 | 0.81 | 24 |
 | ZS (ZS) | 2026-09-04 | abwaerts | 173.93 | 0.863 | 4.473 | 0 |
 | Weizen (ZW=F) | 2026-07-10 | aufwaerts | 611.5 | 1.213 | 3.025 | 41 |
-| Weizen (ZW=F) | 2026-09-03 | abwaerts | 751.25 | 0.941 | 2.928 | 2 |
-| Weizen (ZW=F) | 2026-09-07 | aufwaerts | 741.25 | 0.216 | 0.708 | 0 |
+| Weizen (ZW=F) | 2026-09-08 | aufwaerts | 741.25 | 0.21 | 0.708 | 0 |

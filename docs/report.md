@@ -1,6 +1,6 @@
 # Boersen-Screening - 2026-09-08
 
-_Stand: Schlusskurse vom 2026-09-04. Erstellt 2026-09-08T00:27:34+00:00 UTC. 211 Werte ausgewertet._
+_Stand: Schlusskurse vom 2026-09-04. Erstellt 2026-09-08T04:40:38+00:00 UTC. 211 Werte ausgewertet._
 
 ## 📖 Glossar (was die Spalten bedeuten)
 

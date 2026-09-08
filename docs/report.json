@@ -25,15 +25,15 @@
    "MS",
    "MRNA",
    "CRWD",
-   "DBK.DE",
    "BAYN.DE",
+   "DBK.DE",
    "TEAM",
-   "COP",
    "BAS.DE",
+   "COP",
+   "DTG.DE",
    "BNR.DE",
    "GM",
-   "ABNB",
-   "CVX"
+   "ABNB"
   ],
   "value": [
    "MU",
@@ -55,56 +55,28 @@
  },
  "changes": {
   "turnaround": {
-   "entries": [
-    {
-     "ticker": "DTG.DE",
-     "rank": 11
-    },
-    {
-     "ticker": "GM",
-     "rank": 15
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "DTE.DE",
-     "old_rank": 4
-    },
-    {
-     "ticker": "MTX.DE",
-     "old_rank": 10
-    }
-   ],
+   "entries": [],
+   "exits": [],
    "moves": []
   },
   "momentum": {
    "entries": [
     {
-     "ticker": "BAYN.DE",
-     "rank": 8
+     "ticker": "DTG.DE",
+     "rank": 12
     }
    ],
    "exits": [
     {
-     "ticker": "ILMN",
-     "old_rank": 8
+     "ticker": "CVX",
+     "old_rank": 15
     }
    ],
    "moves": []
   },
   "value": {
-   "entries": [
-    {
-     "ticker": "AVGO",
-     "rank": 3
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "CSCO",
-     "old_rank": 3
-    }
-   ],
+   "entries": [],
+   "exits": [],
    "moves": []
   },
   "analyst_flips": []

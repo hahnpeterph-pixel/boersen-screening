@@ -1,8 +1,8 @@
 # Stundenwache
 
-Stand: 2026-09-04 · 158 Werte mit Stundendaten · erstellt 2026-09-08 09:31 UTC
+Stand: 2026-09-08 · 158 Werte mit Stundendaten · erstellt 2026-09-08 21:45 UTC
 
-> **Sitzung noch nicht abgeschlossen.** 40 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 3, 7). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
+> **Sitzung noch nicht abgeschlossen.** 1 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 6, 7, 9). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
 
 Marken sind das juengste Swing-Tief und das juengste Swing-Hoch aus `tiefs_regel.py`, also dieselben wie im Tagesbericht. Geprueft wird nur, was der letzte Handelstag auf Stundenbasis damit gemacht hat.
 
@@ -21,51 +21,49 @@ Keine.
 
 Keine.
 
-## Tief angetestet (11)
+## Tief angetestet (13)
 
 Docht bis unter die Marke, kein Stundenschluss darunter.
 
 | Wert | Marke | Schluss | Abstand (ATR) | Stunden dahinter |
 |---|---|---|---|---|
-| SAP.DE | 181.76 | 182.02 | 0.048 | 0 |
-| MCD | 255.49 | 255.7 | 0.049 | 0 |
-| DIS | 105.17 | 105.29 | 0.053 | 0 |
-| ROP | 405.57 | 407.22 | 0.163 | 0 |
-| XEL | 75.45 | 75.73 | 0.207 | 0 |
-| TMUS | 180.65 | 181.53 | 0.215 | 0 |
-| UNH | 395.2 | 397.2 | 0.263 | 0 |
-| CHTR | 149.47 | 151.98 | 0.323 | 0 |
-| CSGP | 30.32 | 30.91 | 0.448 | 0 |
-| CTAS | 198.01 | 200.44 | 0.731 | 0 |
-| SNPS | 380.33 | 393.78 | 0.773 | 0 |
+| JPM | 353.24 | 353.55 | 0.053 | 0 |
+| PYPL | 53.03 | 53.19 | 0.075 | 0 |
+| ILMN | 210.15 | 211.11 | 0.091 | 0 |
+| HNR1.DE | 247.4 | 248.0 | 0.157 | 0 |
+| V | 367.44 | 368.83 | 0.222 | 0 |
+| COST | 906.1 | 910.13 | 0.232 | 0 |
+| MCD | 254.33 | 255.82 | 0.359 | 0 |
+| TRV | 362.57 | 365.7 | 0.5 | 0 |
+| KO | 87.68 | 88.41 | 0.536 | 0 |
+| EXC | 43.5 | 43.955 | 0.56 | 0 |
+| PG | 144.305 | 145.6 | 0.575 | 0 |
+| DDOG | 203.24 | 210.19 | 0.592 | 0 |
+| UNH | 390.555 | 400.87 | 1.261 | 0 |
 
-## Swing-Hoch ueberwunden (23)
+## Swing-Hoch ueberwunden (19)
 
 | Wert | Hoch | Schluss | Abstand (ATR) | Stunden darueber |
 |---|---|---|---|---|
-| MRNA | 65.525 | 145.54 | 3.51 | 7 |
-| CBK.DE | 41.05 | 42.81 | 2.085 | 3 |
-| CDW | 142.97 | 152.42 | 1.431 | 7 |
-| CEG | 285.26 | 298.95 | 1.425 | 7 |
-| META | 593.34 | 616.75 | 1.252 | 7 |
-| WDAY | 185.82 | 195.65 | 1.125 | 7 |
-| MU | 969.44 | 1014.95 | 0.975 | 7 |
-| AMD | 462.21 | 477.45 | 0.825 | 7 |
-| ORCL | 153.99 | 158.765 | 0.768 | 7 |
-| BMW.DE | 62.72 | 63.84 | 0.717 | 3 |
-| INTC | 93.7 | 95.81 | 0.496 | 7 |
-| TTD | 14.17 | 14.44 | 0.472 | 7 |
-| SPGI | 439.02 | 443.465 | 0.374 | 7 |
-| AEP | 123.85 | 124.495 | 0.309 | 7 |
-| BKR | 63.02 | 63.49 | 0.308 | 3 |
-| MBG.DE | 47.75 | 47.995 | 0.252 | 3 |
-| WMT | 106.6 | 107.14 | 0.191 | 7 |
-| IFX.DE | 58.42 | 58.72 | 0.147 | 3 |
-| ADI | 360.77 | 362.33 | 0.142 | 6 |
-| NXPI | 227.24 | 227.85 | 0.109 | 6 |
-| TXN | 258.04 | 258.45 | 0.052 | 5 |
-| JPM | 358.35 | 358.61 | 0.045 | 2 |
-| KDP | 32.55 | 32.58 | 0.044 | 7 |
+| MRNA | 65.525 | 140.34 | 3.227 | 7 |
+| INTC | 93.7 | 104.4401 | 2.443 | 7 |
+| AMD | 462.21 | 505.53 | 2.311 | 7 |
+| CBK.DE | 41.05 | 42.77 | 1.995 | 9 |
+| CEG | 285.26 | 298.96 | 1.488 | 7 |
+| ORCL | 153.99 | 162.52 | 1.262 | 7 |
+| META | 593.34 | 613.31 | 1.114 | 7 |
+| DBK.DE | 35.03 | 35.73 | 0.909 | 8 |
+| AEP | 123.85 | 125.4 | 0.75 | 7 |
+| BMW.DE | 62.72 | 63.9 | 0.739 | 9 |
+| MU | 969.44 | 999.94 | 0.698 | 7 |
+| QCOM | 170.6 | 174.09 | 0.603 | 7 |
+| BKR | 63.02 | 63.91 | 0.572 | 7 |
+| KLAC | 186.78 | 189.04 | 0.321 | 7 |
+| ADI | 360.77 | 363.3 | 0.253 | 7 |
+| MBG.DE | 47.75 | 47.915 | 0.165 | 9 |
+| XEL | 76.63 | 76.831 | 0.15 | 4 |
+| TXN | 258.04 | 258.905 | 0.119 | 3 |
+| WDAY | 185.82 | 186.2 | 0.042 | 4 |
 
 ## Reihen unstimmig - kein Urteil (0)
 

@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-09-07 21:57 UTC. 218 Werte, Fenster 90 Kalendertage. EUR/USD 1.1627._
+_Erstellt 2026-09-08 00:27 UTC. 218 Werte, Fenster 90 Kalendertage. EUR/USD 1.1614._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -246,7 +246,6 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | SRT3.DE (SRT3.DE) | 233.7 | - | - | ja | 44.27 |
 | SHL.DE (SHL.DE) | 38.62 | - | - | ja | 48.88 |
 | VNA.DE (VNA.DE) | 18.73 | - | - | ja | 31.59 |
-| Weizen (ZW=F) | 716.0 | - | ja | ja | 55.6 |
 
 ---
 

@@ -1,51 +1,51 @@
 {
- "date": "2026-09-07",
+ "date": "2026-09-08",
  "ranks": {
   "turnaround": [
-   "SHL.DE",
    "CTSH",
    "WDAY",
-   "DTE.DE",
+   "SHL.DE",
    "CEG",
    "EMR",
    "SPGI",
    "NOW",
    "FANG",
-   "MTX.DE",
    "ABBV",
    "SHW",
+   "DTG.DE",
    "VRSK",
    "BAC",
-   "COF"
+   "COF",
+   "GM"
   ],
   "momentum": [
    "MRK",
    "MU",
-   "DBK.DE",
    "BNY",
    "MS",
    "MRNA",
    "CRWD",
-   "ILMN",
+   "DBK.DE",
+   "BAYN.DE",
    "TEAM",
-   "BAS.DE",
    "COP",
+   "BAS.DE",
+   "BNR.DE",
    "GM",
    "ABNB",
-   "CVX",
-   "BNR.DE"
+   "CVX"
   ],
   "value": [
    "MU",
    "NVDA",
-   "CSCO",
+   "AVGO",
    "META",
-   "COP",
    "BLK",
+   "COP",
    "MNST",
-   "REGN",
    "MTX.DE",
    "V",
+   "REGN",
    "ABNB",
    "VRTX",
    "DXCM",
@@ -57,30 +57,22 @@
   "turnaround": {
    "entries": [
     {
-     "ticker": "NOW",
-     "rank": 8
+     "ticker": "DTG.DE",
+     "rank": 11
     },
     {
-     "ticker": "BAC",
-     "rank": 14
-    },
-    {
-     "ticker": "COF",
+     "ticker": "GM",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "SAP.DE",
-     "old_rank": 2
+     "ticker": "DTE.DE",
+     "old_rank": 4
     },
     {
-     "ticker": "QIA.DE",
-     "old_rank": 6
-    },
-    {
-     "ticker": "HEN3.DE",
-     "old_rank": 15
+     "ticker": "MTX.DE",
+     "old_rank": 10
     }
    ],
    "moves": []
@@ -88,14 +80,14 @@
   "momentum": {
    "entries": [
     {
-     "ticker": "MS",
-     "rank": 5
+     "ticker": "BAYN.DE",
+     "rank": 8
     }
    ],
    "exits": [
     {
-     "ticker": "CBK.DE",
-     "old_rank": 5
+     "ticker": "ILMN",
+     "old_rank": 8
     }
    ],
    "moves": []
@@ -103,14 +95,14 @@
   "value": {
    "entries": [
     {
-     "ticker": "DB1.DE",
-     "rank": 15
+     "ticker": "AVGO",
+     "rank": 3
     }
    ],
    "exits": [
     {
-     "ticker": "GOOG",
-     "old_rank": 15
+     "ticker": "CSCO",
+     "old_rank": 3
     }
    ],
    "moves": []

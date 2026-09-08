@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-07T07:55:53.655719+00:00",
+ "updated": "2026-09-08T09:29:19.792432+00:00",
  "version": 4,
  "data": {
   "AAPL": {
@@ -466,7 +466,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 147.85,
+    "current": 146.2,
     "high": 245.0,
     "low": 170.0,
     "mean": 201.59286,
@@ -599,7 +599,7 @@
    },
    "quelle": "keine",
    "price_targets": {
-    "current": 198.86
+    "current": 196.24
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -622,7 +622,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 447.8,
+    "current": 441.5,
     "high": 684.0,
     "low": 325.0,
     "mean": 439.21683,
@@ -655,6 +655,13 @@
      "from_grade": "Outperform"
     },
     {
+     "date": "2026-08-18",
+     "firm": "Argus Research",
+     "action": "main",
+     "to_grade": "Buy",
+     "from_grade": "Buy"
+    },
+    {
      "date": "2026-08-14",
      "firm": "UBS",
      "action": "main",
@@ -667,13 +674,6 @@
      "action": "main",
      "to_grade": "Buy",
      "from_grade": "Buy"
-    },
-    {
-     "date": "2026-08-14",
-     "firm": "Morgan Stanley",
-     "action": "main",
-     "to_grade": "Equal-Weight",
-     "from_grade": "Equal-Weight"
     }
    ],
    "consensus": {
@@ -985,10 +985,10 @@
    "quelle": "Einzelratings",
    "price_targets": {
     "current": 1714.88,
-    "high": 2866.3098,
-    "low": 899.16315,
-    "mean": 2166.9539,
-    "median": 2235.0068
+    "high": 2864.3125,
+    "low": 898.53656,
+    "mean": 2165.4438,
+    "median": 2233.4495
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -1241,7 +1241,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 52.89,
+    "current": 53.83,
     "high": 62.0,
     "low": 40.0,
     "mean": 52.52632,
@@ -1268,7 +1268,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 48.68,
+    "current": 49.04,
     "high": 65.0,
     "low": 46.0,
     "mean": 57.38889,
@@ -1295,7 +1295,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 75.44,
+    "current": 76.8,
     "high": 95.0,
     "low": 67.0,
     "mean": 82.10526,
@@ -1497,7 +1497,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 62.38,
+    "current": 63.92,
     "high": 90.0,
     "low": 58.0,
     "mean": 72.62,
@@ -1551,7 +1551,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 60.1,
+    "current": 61.84,
     "high": 76.0,
     "low": 47.0,
     "mean": 57.73333,
@@ -1694,7 +1694,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 42.48,
+    "current": 42.76,
     "high": 45.0,
     "low": 31.6,
     "mean": 41.18462,
@@ -1730,10 +1730,10 @@
    "quelle": "Einzelratings",
    "price_targets": {
     "current": 105.76,
-    "high": 121.10181,
-    "low": 92.00022,
-    "mean": 111.32641,
-    "median": 115.55148
+    "high": 121.01742,
+    "low": 91.93611,
+    "mean": 111.24883,
+    "median": 115.47096
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -1968,7 +1968,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 71.58,
+    "current": 71.64,
     "high": 90.0,
     "low": 62.0,
     "mean": 77.625,
@@ -2615,7 +2615,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 279.9,
+    "current": 278.2,
     "high": 312.0,
     "low": 252.0,
     "mean": 290.53845,
@@ -2642,7 +2642,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 35.345,
+    "current": 35.15,
     "high": 43.75,
     "low": 10.9,
     "mean": 33.88972,
@@ -2759,7 +2759,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 54.84,
+    "current": 55.3,
     "high": 65.0,
     "low": 44.0,
     "mean": 54.89938,
@@ -2840,7 +2840,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 28.2,
+    "current": 28.47,
     "high": 43.0,
     "low": 32.0,
     "mean": 36.93333,
@@ -2867,7 +2867,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 45.31,
+    "current": 45.38,
     "high": 58.0,
     "low": 33.0,
     "mean": 50.97778,
@@ -3012,7 +3012,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 148.93,
+    "current": 147.18,
     "high": 260.0,
     "low": 100.0,
     "mean": 196.3164,
@@ -3039,7 +3039,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 17.78,
+    "current": 17.595,
     "high": 24.0,
     "low": 17.0,
     "mean": 20.73106,
@@ -3189,7 +3189,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 42.93,
+    "current": 44.98,
     "high": 63.5,
     "low": 50.0,
     "mean": 55.58571,
@@ -3600,7 +3600,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 164.8,
+    "current": 161.95,
     "high": 286.0,
     "low": 140.0,
     "mean": 214.7,
@@ -3627,7 +3627,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 76.14,
+    "current": 76.56,
     "high": 95.0,
     "low": 65.0,
     "mean": 79.16444,
@@ -3654,7 +3654,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 256.4,
+    "current": 248.6,
     "high": 360.0,
     "low": 246.0,
     "mean": 282.4,
@@ -3842,7 +3842,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 58.38,
+    "current": 58.72,
     "high": 124.0,
     "low": 50.0,
     "mean": 87.31818,
@@ -4608,7 +4608,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 47.425,
+    "current": 48.04,
     "high": 73.8,
     "low": 36.0,
     "mean": 57.15455,
@@ -5086,7 +5086,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 134.45,
+    "current": 135.1,
     "high": 179.0,
     "low": 135.0,
     "mean": 153.5,
@@ -5378,7 +5378,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 354.2,
+    "current": 350.4,
     "high": 530.0,
     "low": 320.0,
     "mean": 404.65,
@@ -5447,7 +5447,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 517.2,
+    "current": 502.6,
     "high": 665.0,
     "low": 480.0,
     "mean": 552.0118,
@@ -5885,7 +5885,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 44.26,
+    "current": 45.22,
     "high": 60.0,
     "low": 38.0,
     "mean": 45.58095,
@@ -5912,7 +5912,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 28.68,
+    "current": 29.27,
     "high": 43.0,
     "low": 26.25,
     "mean": 35.625,
@@ -6088,10 +6088,10 @@
    "quelle": "Einzelratings",
    "price_targets": {
     "current": 82.21,
-    "high": 171.74878,
-    "low": 85.16722,
-    "mean": 116.25765,
-    "median": 114.72525
+    "high": 171.75134,
+    "low": 85.16849,
+    "mean": 116.259384,
+    "median": 114.72696
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -6347,7 +6347,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 36.56,
+    "current": 36.275,
     "high": 42.0,
     "low": 32.0,
     "mean": 38.85714,
@@ -6409,7 +6409,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 1045.6,
+    "current": 1026.6,
     "high": 2380.0,
     "low": 1050.0,
     "mean": 1669.8572,
@@ -6561,7 +6561,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 59.66,
+    "current": 59.34,
     "high": 75.0,
     "low": 55.0,
     "mean": 67.58333,
@@ -6588,7 +6588,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 181.94,
+    "current": 182.28,
     "high": 290.0,
     "low": 160.0,
     "mean": 207.77077,
@@ -6669,7 +6669,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 38.43,
+    "current": 38.59,
     "high": 57.4,
     "low": 36.0,
     "mean": 45.52105,
@@ -6731,7 +6731,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 271.2,
+    "current": 270.0,
     "high": 355.0,
     "low": 235.0,
     "mean": 300.75696,
@@ -6961,7 +6961,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 231.5,
+    "current": 236.2,
     "high": 307.0,
     "low": 190.0,
     "mean": 269.10526,
@@ -6988,7 +6988,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 89.42,
+    "current": 90.92,
     "high": 110.0,
     "low": 75.0,
     "mean": 98.63125,
@@ -7612,7 +7612,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 18.735,
+    "current": 18.615,
     "high": 45.0,
     "low": 19.0,
     "mean": 27.5625,
@@ -7639,7 +7639,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 80.34,
+    "current": 82.56,
     "high": 151.0,
     "low": 77.0,
     "mean": 104.5,
@@ -8018,7 +8018,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 23.38,
+    "current": 23.7,
     "high": 53.0,
     "low": 23.5,
     "mean": 35.07391,

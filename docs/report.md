@@ -1,6 +1,184 @@
 # Boersen-Screening - 2026-09-08
 
-_Stand: Schlusskurse vom 2026-09-04. Erstellt 2026-09-08T04:40:38+00:00 UTC. 211 Werte ausgewertet._
+_Stand: Schlusskurse vom 2026-09-08, aber 171 Werte haengen zurueck - siehe Standwarnung. Erstellt 2026-09-08T09:29:21+00:00 UTC. 211 Werte ausgewertet._
+
+> **Standwarnung: 171 von 211 Werten haengen zurueck.** Neuester Handelstag im Bericht ist 2026-09-08.
+>
+> Ursache ist in aller Regel Yahoo: die vorlaeufige Tageskerze einer Boerse wird ueber Nacht durch die offizielle Abrechnung ersetzt, und solange die fehlt, faellt der Tag weg. Betroffen sind meist die europaeischen Notierungen. Fuer diese Werte gelten Kurs, ATR, RSI und Tiefs unten NICHT fuer den neuesten Handelstag.
+>
+> | Wert | letzte Kerze |
+> |---|---|
+> | AAPL | 2026-09-04 |
+> | ABBV | 2026-09-04 |
+> | ABNB | 2026-09-04 |
+> | ABT | 2026-09-04 |
+> | ACN | 2026-09-04 |
+> | ADBE | 2026-09-04 |
+> | ADI | 2026-09-04 |
+> | ADP | 2026-09-04 |
+> | ADSK | 2026-09-04 |
+> | AEP | 2026-09-04 |
+> | AMAT | 2026-09-04 |
+> | AMD | 2026-09-04 |
+> | AMGN | 2026-09-04 |
+> | AMT | 2026-09-04 |
+> | AMZN | 2026-09-04 |
+> | APP | 2026-09-04 |
+> | ARM | 2026-09-04 |
+> | AVGO | 2026-09-04 |
+> | AXON | 2026-09-04 |
+> | AXP | 2026-09-04 |
+> | AZN | 2026-09-04 |
+> | BA | 2026-09-04 |
+> | BAC | 2026-09-04 |
+> | BIIB | 2026-09-04 |
+> | BKNG | 2026-09-04 |
+> | BKR | 2026-09-04 |
+> | BLK | 2026-09-04 |
+> | BMY | 2026-09-04 |
+> | BNY | 2026-09-04 |
+> | BRK-B | 2026-09-04 |
+> | C | 2026-09-04 |
+> | CAT | 2026-09-04 |
+> | CCEP | 2026-09-04 |
+> | CDNS | 2026-09-04 |
+> | CDW | 2026-09-04 |
+> | CEG | 2026-09-04 |
+> | CHTR | 2026-09-04 |
+> | CL | 2026-09-04 |
+> | CMCSA | 2026-09-04 |
+> | COF | 2026-09-04 |
+> | COP | 2026-09-04 |
+> | COST | 2026-09-04 |
+> | CPRT | 2026-09-04 |
+> | CRM | 2026-09-04 |
+> | CRWD | 2026-09-04 |
+> | CSCO | 2026-09-04 |
+> | CSGP | 2026-09-04 |
+> | CSX | 2026-09-04 |
+> | CTAS | 2026-09-04 |
+> | CTSH | 2026-09-04 |
+> | CVS | 2026-09-04 |
+> | CVX | 2026-09-04 |
+> | DASH | 2026-09-04 |
+> | DDOG | 2026-09-04 |
+> | DE | 2026-09-04 |
+> | DHR | 2026-09-04 |
+> | DIS | 2026-09-04 |
+> | DUK | 2026-09-04 |
+> | DXCM | 2026-09-04 |
+> | EMR | 2026-09-04 |
+> | EXC | 2026-09-04 |
+> | FANG | 2026-09-04 |
+> | FAST | 2026-09-04 |
+> | FDX | 2026-09-04 |
+> | FTNT | 2026-09-04 |
+> | GD | 2026-09-04 |
+> | GE | 2026-09-04 |
+> | GEHC | 2026-09-04 |
+> | GEV | 2026-09-04 |
+> | GFS | 2026-09-04 |
+> | GILD | 2026-09-04 |
+> | GM | 2026-09-04 |
+> | GOOG | 2026-09-04 |
+> | GOOGL | 2026-09-04 |
+> | GS | 2026-09-04 |
+> | HD | 2026-09-04 |
+> | HON | 2026-09-04 |
+> | IBM | 2026-09-04 |
+> | IDXX | 2026-09-04 |
+> | ILMN | 2026-09-04 |
+> | INTC | 2026-09-04 |
+> | INTU | 2026-09-04 |
+> | ISRG | 2026-09-04 |
+> | JNJ | 2026-09-04 |
+> | JPM | 2026-09-04 |
+> | KDP | 2026-09-04 |
+> | KHC | 2026-09-04 |
+> | KLAC | 2026-09-04 |
+> | KO | 2026-09-04 |
+> | LIN | 2026-09-04 |
+> | LLY | 2026-09-04 |
+> | LMT | 2026-09-04 |
+> | LOW | 2026-09-04 |
+> | LRCX | 2026-09-04 |
+> | LULU | 2026-09-04 |
+> | MA | 2026-09-04 |
+> | MAR | 2026-09-04 |
+> | MCD | 2026-09-04 |
+> | MCHP | 2026-09-04 |
+> | MDB | 2026-09-04 |
+> | MDLZ | 2026-09-04 |
+> | MDT | 2026-09-04 |
+> | MELI | 2026-09-04 |
+> | META | 2026-09-04 |
+> | MMM | 2026-09-04 |
+> | MNST | 2026-09-04 |
+> | MO | 2026-09-04 |
+> | MRK | 2026-09-04 |
+> | MRNA | 2026-09-04 |
+> | MRVL | 2026-09-04 |
+> | MS | 2026-09-04 |
+> | MSFT | 2026-09-04 |
+> | MSTR | 2026-09-04 |
+> | MU | 2026-09-04 |
+> | NEE | 2026-09-04 |
+> | NFLX | 2026-09-04 |
+> | NKE | 2026-09-04 |
+> | NOW | 2026-09-04 |
+> | NVDA | 2026-09-04 |
+> | NXPI | 2026-09-04 |
+> | ODFL | 2026-09-04 |
+> | ON | 2026-09-04 |
+> | ORCL | 2026-09-04 |
+> | ORLY | 2026-09-04 |
+> | PANW | 2026-09-04 |
+> | PAYX | 2026-09-04 |
+> | PCAR | 2026-09-04 |
+> | PDD | 2026-09-04 |
+> | PEP | 2026-09-04 |
+> | PFE | 2026-09-04 |
+> | PG | 2026-09-04 |
+> | PLTR | 2026-09-04 |
+> | PM | 2026-09-04 |
+> | PYPL | 2026-09-04 |
+> | QCOM | 2026-09-04 |
+> | REGN | 2026-09-04 |
+> | ROP | 2026-09-04 |
+> | ROST | 2026-09-04 |
+> | RTX | 2026-09-04 |
+> | SBUX | 2026-09-04 |
+> | SCHW | 2026-09-04 |
+> | SHW | 2026-09-04 |
+> | SNPS | 2026-09-04 |
+> | SO | 2026-09-04 |
+> | SPG | 2026-09-04 |
+> | SPGI | 2026-09-04 |
+> | T | 2026-09-04 |
+> | TEAM | 2026-09-04 |
+> | TMO | 2026-09-04 |
+> | TMUS | 2026-09-04 |
+> | TRV | 2026-09-04 |
+> | TSLA | 2026-09-04 |
+> | TTD | 2026-09-04 |
+> | TTWO | 2026-09-04 |
+> | TXN | 2026-09-04 |
+> | UBER | 2026-09-04 |
+> | UNH | 2026-09-04 |
+> | UNP | 2026-09-04 |
+> | UPS | 2026-09-04 |
+> | USB | 2026-09-04 |
+> | V | 2026-09-04 |
+> | VRSK | 2026-09-04 |
+> | VRTX | 2026-09-04 |
+> | VZ | 2026-09-04 |
+> | WBD | 2026-09-04 |
+> | WDAY | 2026-09-04 |
+> | WFC | 2026-09-04 |
+> | WMT | 2026-09-04 |
+> | XEL | 2026-09-04 |
+> | XOM | 2026-09-04 |
+> | ZS | 2026-09-04 |
 
 ## 📖 Glossar (was die Spalten bedeuten)
 
@@ -18,7 +196,7 @@ _Ueber alle 211 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 | Rang | Ticker | ISIN | Name | Index | Kurs | Abstand ATH (Info) | Kaufen-Anteil Analysten | Kursziel | RSI Tag | RSI Woche | RSI Stunde | Letztes Rating |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 1 | MSTR | US66538H1041 | Strategy Inc | NASDAQ | 142.80 | -70% | 100% (11 Banken, ≤120T) | 225.93 (58% ueber Kurs) | 66 | 53 | 65 | 2026-09-03 B. Riley Securities: Rating bestaetigt: Buy |
-| 2 | ASML | USN070592100 | ASML Holding N.V. - New York Re | NASDAQ | 1467.40 | -15% | 100% (5 Banken, ≤120T) | 2167.96 (48% ueber Kurs) | 46 | 55 | 67 | keine in 30T |
+| 2 | ASML | USN070592100 | ASML Holding N.V. - New York Re | NASDAQ | 1511.00 | -12% | 100% (5 Banken, ≤120T) | 2167.96 (44% ueber Kurs) | 52 | 57 | 69 | keine in 30T |
 | 3 | NVDA | - | NVIDIA Corporation | NASDAQ/DOW | 230.36 | -2% | 100% (28 Banken, ≤120T) | 327.13 (42% ueber Kurs) | 60 | 62 | 60 | 2026-09-04 Rosenblatt: Rating bestaetigt: Buy |
 | 4 | TTWO | - | Take-Two Interactive Software, | NASDAQ | 214.69 | -18% | 100% (10 Banken, ≤120T) | 286.89 (34% ueber Kurs) | 31 | 43 | 39 | 2026-08-10 Roth Capital: Rating bestaetigt: Buy |
 | 5 | AZN | GB0009895292 | AstraZeneca PLC | NASDAQ | 162.70 | -22% | 100% (1 Banken, ≤120T) | 212.54 (31% ueber Kurs) | 46 | 41 | 50 | 2026-08-24 CICC: neu bewertet mit Outperform |
@@ -35,7 +213,7 @@ _Ueber alle 211 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 | 16 | MU | US5951121038 | Micron Technology, Inc. | NASDAQ | 1016.59 | -16% | 96% (23 Banken, ≤120T) | 1513.11 (49% ueber Kurs) | 60 | 64 | 72 | 2026-08-25 Mizuho: Rating bestaetigt: Outperform |
 | 17 | AMAT | US0382221051 | Applied Materials, Inc. | NASDAQ | 454.71 | -37% | 96% (24 Banken, ≤120T) | 640.89 (41% ueber Kurs) | 40 | 49 | 58 | 2026-09-01 UBS: Rating bestaetigt: Buy |
 | 18 | AMZN | - | Amazon.com, Inc. | NASDAQ/DOW | 258.51 | -9% | 95% (20 Banken, ≤120T) | 328.17 (27% ueber Kurs) | 50 | 54 | 54 | 2026-09-03 Wells Fargo: Rating bestaetigt: Overweight |
-| 19 | DTE.DE | - | DEUTSCHE TELEKOM AG | DAX | 28.40 | -16% | 94% (18 Banken, ≤120T) | 36.93 (30% ueber Kurs) | 51 | 51 | 42 | keine in 30T |
+| 19 | DTE.DE | - | DEUTSCHE TELEKOM AG | DAX | 28.47 | -16% | 94% (18 Banken, ≤120T) | 36.93 (30% ueber Kurs) | 52 | 52 | 53 | keine in 30T |
 | 20 | LRCX | - | Lam Research Corporation | NASDAQ | 307.65 | -29% | 94% (16 Banken, ≤120T) | 370.87 (20% ueber Kurs) | 49 | 54 | 65 | 2026-09-01 UBS: Rating bestaetigt: Buy |
 
 
@@ -44,9 +222,9 @@ _Ueber alle 211 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 **AMAT** (Applied Materials, Inc., NASDAQ)
 - 2026-09-01: UBS – Bestaetigung (Buy → Buy)
 - 2026-08-25: Mizuho – Bestaetigung (Outperform → Outperform)
+- 2026-08-18: Argus Research – Bestaetigung (Buy → Buy)
 - 2026-08-14: UBS – Bestaetigung (Buy → Buy)
 - 2026-08-14: Craig-Hallum – Bestaetigung (Buy → Buy)
-- 2026-08-14: Morgan Stanley – Bestaetigung (Equal-Weight → Equal-Weight)
 
 **AMZN** (Amazon.com, Inc., NASDAQ/DOW)
 - 2026-09-03: Wells Fargo – Bestaetigung (Overweight → Overweight)

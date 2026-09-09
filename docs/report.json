@@ -3,7 +3,8 @@
  "ranks": {
   "turnaround": [
    "WDAY",
-   "SHL.DE",
+   "DTE.DE",
+   "SAP.DE",
    "SPGI",
    "BMY",
    "FANG",
@@ -11,12 +12,11 @@
    "KO",
    "COF",
    "KHC",
+   "VRTX",
    "EMR",
    "CEG",
-   "DTG.DE",
-   "WFC",
-   "CTSH",
-   "AIR.DE"
+   "HEN3.DE",
+   "WFC"
   ],
   "momentum": [
    "BNY",
@@ -24,16 +24,16 @@
    "AMD",
    "MRK",
    "MS",
-   "BAYN.DE",
-   "DBK.DE",
+   "CBK.DE",
    "MRVL",
    "ILMN",
+   "BAYN.DE",
    "COP",
    "BAS.DE",
    "KO",
    "CVX",
-   "DTG.DE",
-   "BNR.DE"
+   "BNR.DE",
+   "RWE.DE"
   ],
   "value": [
    "MU",
@@ -45,23 +45,75 @@
    "COP",
    "REGN",
    "V",
-   "MTX.DE",
    "ABNB",
+   "MTX.DE",
    "VRTX",
    "DXCM",
-   "GE",
-   "DB1.DE"
+   "DB1.DE",
+   "GE"
   ]
  },
  "changes": {
   "turnaround": {
-   "entries": [],
-   "exits": [],
+   "entries": [
+    {
+     "ticker": "DTE.DE",
+     "rank": 2
+    },
+    {
+     "ticker": "SAP.DE",
+     "rank": 3
+    },
+    {
+     "ticker": "VRTX",
+     "rank": 11
+    },
+    {
+     "ticker": "HEN3.DE",
+     "rank": 14
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "SHL.DE",
+     "old_rank": 2
+    },
+    {
+     "ticker": "DTG.DE",
+     "old_rank": 12
+    },
+    {
+     "ticker": "CTSH",
+     "old_rank": 14
+    },
+    {
+     "ticker": "AIR.DE",
+     "old_rank": 15
+    }
+   ],
    "moves": []
   },
   "momentum": {
-   "entries": [],
-   "exits": [],
+   "entries": [
+    {
+     "ticker": "CBK.DE",
+     "rank": 6
+    },
+    {
+     "ticker": "RWE.DE",
+     "rank": 15
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "DBK.DE",
+     "old_rank": 7
+    },
+    {
+     "ticker": "DTG.DE",
+     "old_rank": 14
+    }
+   ],
    "moves": []
   },
   "value": {

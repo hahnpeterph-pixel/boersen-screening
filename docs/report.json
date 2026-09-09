@@ -2,51 +2,51 @@
  "date": "2026-09-09",
  "ranks": {
   "turnaround": [
-   "WDAY",
-   "DTE.DE",
    "SAP.DE",
-   "SPGI",
-   "BMY",
-   "FANG",
-   "JNJ",
-   "KO",
-   "COF",
-   "KHC",
-   "VRTX",
+   "MDT",
+   "MTX.DE",
+   "TMO",
+   "WDAY",
+   "BNY",
    "EMR",
-   "CEG",
-   "HEN3.DE",
-   "WFC"
+   "COF",
+   "JPM",
+   "FANG",
+   "AIR.DE",
+   "KO",
+   "DTE.DE",
+   "BAS.DE",
+   "BAYN.DE"
   ],
   "momentum": [
    "BNY",
-   "MU",
    "AMD",
-   "MRK",
-   "MS",
    "CBK.DE",
-   "MRVL",
-   "ILMN",
+   "DBK.DE",
+   "MU",
    "BAYN.DE",
    "COP",
    "BAS.DE",
-   "KO",
+   "RWE.DE",
    "CVX",
+   "MRVL",
+   "ILMN",
+   "MRK",
    "BNR.DE",
-   "RWE.DE"
+   "FANG"
   ],
   "value": [
    "MU",
    "NVDA",
-   "AVGO",
    "META",
+   "AVGO",
+   "ABNB",
    "BLK",
    "MNST",
+   "MTX.DE",
    "COP",
    "REGN",
    "V",
-   "ABNB",
-   "MTX.DE",
    "VRTX",
    "DXCM",
    "DB1.DE",
@@ -57,70 +57,136 @@
   "turnaround": {
    "entries": [
     {
-     "ticker": "DTE.DE",
+     "ticker": "MDT",
      "rank": 2
     },
     {
-     "ticker": "SAP.DE",
+     "ticker": "MTX.DE",
      "rank": 3
     },
     {
-     "ticker": "VRTX",
-     "rank": 11
+     "ticker": "TMO",
+     "rank": 4
     },
     {
-     "ticker": "HEN3.DE",
-     "rank": 14
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "SHL.DE",
-     "old_rank": 2
-    },
-    {
-     "ticker": "DTG.DE",
-     "old_rank": 12
-    },
-    {
-     "ticker": "CTSH",
-     "old_rank": 14
-    },
-    {
-     "ticker": "AIR.DE",
-     "old_rank": 15
-    }
-   ],
-   "moves": []
-  },
-  "momentum": {
-   "entries": [
-    {
-     "ticker": "CBK.DE",
+     "ticker": "BNY",
      "rank": 6
     },
     {
-     "ticker": "RWE.DE",
+     "ticker": "JPM",
+     "rank": 9
+    },
+    {
+     "ticker": "AIR.DE",
+     "rank": 11
+    },
+    {
+     "ticker": "BAS.DE",
+     "rank": 14
+    },
+    {
+     "ticker": "BAYN.DE",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "DBK.DE",
+     "ticker": "SPGI",
+     "old_rank": 4
+    },
+    {
+     "ticker": "BMY",
+     "old_rank": 5
+    },
+    {
+     "ticker": "JNJ",
      "old_rank": 7
     },
     {
-     "ticker": "DTG.DE",
+     "ticker": "KHC",
+     "old_rank": 10
+    },
+    {
+     "ticker": "VRTX",
+     "old_rank": 11
+    },
+    {
+     "ticker": "CEG",
+     "old_rank": 13
+    },
+    {
+     "ticker": "HEN3.DE",
      "old_rank": 14
+    },
+    {
+     "ticker": "WFC",
+     "old_rank": 15
     }
    ],
-   "moves": []
+   "moves": [
+    {
+     "ticker": "EMR",
+     "rank": 7,
+     "delta": 5
+    },
+    {
+     "ticker": "DTE.DE",
+     "rank": 13,
+     "delta": -11
+    }
+   ]
+  },
+  "momentum": {
+   "entries": [
+    {
+     "ticker": "DBK.DE",
+     "rank": 4
+    },
+    {
+     "ticker": "FANG",
+     "rank": 15
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "MS",
+     "old_rank": 5
+    },
+    {
+     "ticker": "KO",
+     "old_rank": 12
+    }
+   ],
+   "moves": [
+    {
+     "ticker": "RWE.DE",
+     "rank": 9,
+     "delta": 6
+    },
+    {
+     "ticker": "MRK",
+     "rank": 13,
+     "delta": -9
+    }
+   ]
   },
   "value": {
    "entries": [],
    "exits": [],
-   "moves": []
+   "moves": [
+    {
+     "ticker": "ABNB",
+     "rank": 5,
+     "delta": 5
+    }
+   ]
   },
-  "analyst_flips": []
+  "analyst_flips": [
+   {
+    "ticker": "ILMN",
+    "now": 1,
+    "old": 0
+   }
+  ]
  }
 }

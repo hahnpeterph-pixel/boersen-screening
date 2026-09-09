@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-09-09 00:12 UTC. 218 Werte, Fenster 90 Kalendertage. EUR/USD 1.1628._
+_Erstellt 2026-09-09 04:34 UTC. 218 Werte, Fenster 90 Kalendertage. EUR/USD 1.1628._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -64,6 +64,7 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | TTD (TTD) | 14.02 | - | - | ja | 43.39 |
 | V (V) | 368.64 | - | - | ja | 48.19 |
 | VRSK (VRSK) | 175.49 | - | - | ja | 36.61 |
+| VRTX (VRTX) | 528.9 | - | - | ja | 49.92 |
 | WBD (WBD) | 28.12 | - | - | ja | 54.17 |
 | WDAY (WDAY) | 186.28 | - | - | ja | 49.76 |
 | WMT (WMT) | 106.05 | - | - | ja | 43.2 |
@@ -94,9 +95,8 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | HEI.DE (HEI.DE) | 161.95 | - | - | ja | 46.23 |
 | MUV2.DE (MUV2.DE) | 502.4 | - | - | ja | 38.82 |
 | SAP.DE (SAP.DE) | 181.7 | - | - | ja | 54.72 |
-| Gold (GC=F) | 4395.1001 | - | - | ja | 49.95 |
-| Palladium (PA=F) | 1358.0 | - | - | ja | 51.6 |
-| Kakao (CC=F) | 5927.0 | - | ja | ja | 49.87 |
+| Palladium (PA=F) | 1355.6 | - | ja | ja | 51.34 |
+| Kakao (CC=F) | 5886.0 | - | ja | ja | 48.95 |
 
 ---
 

@@ -116,8 +116,15 @@ SRT3.DE SIE.DE ENR.DE SHL.DE SY1.DE VOW3.DE VNA.DE ZAL.DE""".split()
 
 # Rohstoffe und Waehrung bewusst mit drin: Gold wurde gehandelt (zwei
 # Positionen im August 2026), also muss es auch auswertbar sein.
+# ZC=F (Mais) am 09.09.2026 ergaenzt. Die Vollstaendigkeitspruefung im
+# Workflow meldete "ZC=F: keine Zeile" - der Ticker steht in marktdaten.py,
+# fehlte hier aber. Das ist derselbe Listen-Auseinanderlauf, der schon bei
+# KC=F (Kaffee) aufgefallen ist, nur andersherum: KC=F steht hier und
+# fehlt in marktdaten.py. Beide Listen muessen deckungsgleich sein, sonst
+# schlaegt die Pruefung taeglich fehl, ohne dass ein echter Fehler
+# vorliegt.
 WEITERE = ["GC=F", "SI=F", "PL=F", "PA=F", "HG=F", "CL=F", "BZ=F", "NG=F",
-           "ZW=F", "CC=F", "SB=F", "KC=F", "EURUSD=X"]
+           "ZW=F", "CC=F", "SB=F", "KC=F", "ZC=F", "EURUSD=X"]
 
 UNIVERSUM = list(dict.fromkeys(US + DAX + WEITERE))
 
@@ -251,6 +258,50 @@ def reihen() -> tuple[list[str], dict, dict, dict, dict]:
     # column provided to 'parse_dates': 'Date'", 218 von 218) und wird
     # hier deshalb nicht mehr gefragt. In kurse.py bleibt die Funktion
     # unberuehrt, andere Skripte nutzen sie weiter.
+    # ERSTE Zweitquelle: die letzte Kerze aus marktdaten.csv.
+    #
+    # marktdaten.py loest das Aktualitaetsproblem fuer seine eigene Datei
+    # bereits zuverlaessig und laeuft im selben Workflow vorher - am
+    # 09.09.2026 standen dort alle 218 Werte korrekt auf dem 08.09.,
+    # waehrend Yahoo hier fuer 40 davon noch den 04.09. lieferte. Die
+    # Datei enthaelt je Ticker genau die vier Felder, die diese Spalte
+    # braucht: open, high, low, kurs. Also wird das Ergebnis uebernommen,
+    # statt dieselbe Kerze ueber eine externe API noch einmal zu holen.
+    # Kostet nichts, kein Kontingent, kein Minutenlimit, keine 429er.
+    #
+    # Grenze: marktdaten.csv fuehrt nur EINEN Tag je Ticker. Haengt ein
+    # Wert mehrere Tage zurueck, schliesst das nur die juengste Luecke -
+    # den Rest meldet die Vollstaendigkeitspruefung weiterhin.
+    aus_marktdaten = 0
+    if markt.exists():
+        with open(markt, newline="", encoding="utf-8") as f:
+            zeilen_md = {z["ticker"]: z for z in csv.DictReader(f)}
+        rest = []
+        for t in nachzuegler:
+            z = zeilen_md.get(t)
+            if not z or not z.get("datum"):
+                rest.append(t)
+                continue
+            try:
+                tag = pd.Timestamp(z["datum"])
+                neue = pd.DataFrame(
+                    {"Open": [float(z["open"])], "High": [float(z["high"])],
+                     "Low": [float(z["low"])], "Close": [float(z["kurs"])]},
+                    index=[tag])
+            except (KeyError, TypeError, ValueError):
+                rest.append(t)
+                continue
+            if tag <= roh[t].index[-1]:
+                rest.append(t)
+                continue
+            roh[t] = pd.concat([roh[t], neue])
+            aus_marktdaten += 1
+        if aus_marktdaten:
+            print(f"  {aus_marktdaten} Werte aus marktdaten.csv ergaenzt")
+        nachzuegler = rest
+        if nachzuegler:
+            print(f"  {len(nachzuegler)} weiterhin offen - Twelve Data wird befragt")
+
     offen = []
     for n, t in enumerate(nachzuegler):
         if n and n % 8 == 0:

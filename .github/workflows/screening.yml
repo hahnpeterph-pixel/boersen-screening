@@ -94,9 +94,17 @@ jobs:
       # continue-on-error wie bei der Stundenwache: eine Auswertung, die
       # erst nach Wochen gebraucht wird, darf den Tagesbericht nicht
       # gefaehrden.
+      # env wie bei "Marktdaten ausfuehren": ohne den Schluessel liefert
+      # kurse.kerzen_twelvedata() sauber None, und die Zweitquelle fuer
+      # Nachzuegler laeuft ins Leere. Genau das passierte im Lauf vom
+      # 09.09.2026 - die 40 .DE-Werte blieben trotz Aktualitaetspruefung
+      # auf dem 04.09., weil der Schluessel nur im Marktdaten-Schritt
+      # gesetzt war.
       - name: Kursverlauf ausfuehren
         run: python kursverlauf.py
         continue-on-error: true
+        env:
+          TWELVEDATA_API_KEY: ${{ secrets.TWELVEDATA_API_KEY }}
 
       # Aktualitaetspruefung, neu am 09.09.2026. continue-on-error oben
       # bleibt bewusst stehen - ein Yahoo-Aussetzer soll den Tagesbericht

@@ -1,6 +1,6 @@
 # Boersen-Screening - 2026-09-09
 
-_Stand: Schlusskurse vom 2026-09-08, aber 40 Werte haengen zurueck - siehe Standwarnung. Erstellt 2026-09-09T04:54:50+00:00 UTC. 211 Werte ausgewertet._
+_Stand: Schlusskurse vom 2026-09-08, aber 40 Werte haengen zurueck - siehe Standwarnung. Erstellt 2026-09-09T06:14:54+00:00 UTC. 211 Werte ausgewertet._
 
 > **Standwarnung: 40 von 211 Werten haengen zurueck.** Neuester Handelstag im Bericht ist 2026-09-08.
 >

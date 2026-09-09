@@ -1375,7 +1375,6 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | Gold (GC=F) | 2026-08-06 | aufwaerts | 4262.2002 | 0.465 | 0.816 | 23 |
 | Gold (GC=F) | 2026-08-26 | abwaerts | 4626.2002 | 0.149 | 0.236 | 9 |
 | Gold (GC=F) | 2026-08-28 | abwaerts | 4609.7002 | 0.136 | 0.226 | 7 |
-| Gold (GC=F) | 2026-09-08 | abwaerts | 4429.7998 | 0.477 | 0.856 | 1 |
 | GD (GD) | 2025-06-25 | aufwaerts | 281.97 | 0.315 | 0.56 | 302 |
 | GD (GD) | 2025-07-23 | aufwaerts | 298.91 | 2.013 | 3.71 | 283 |
 | GD (GD) | 2026-04-29 | aufwaerts | 314.75 | 2.439 | 7.412 | 90 |
@@ -1866,7 +1865,7 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | Platin (PL=F) | 2026-08-19 | aufwaerts | 1726.4 | 2.286 | 4.414 | 14 |
 | Platin (PL=F) | 2026-09-03 | aufwaerts | 1759.8 | 2.091 | 3.898 | 3 |
 | Platin (PL=F) | 2026-09-08 | aufwaerts | 1821.0 | 0.886 | 1.494 | 1 |
-| Platin (PL=F) | 2026-09-09 | abwaerts | 1848.2 | 0.756 | 1.244 | 0 |
+| Platin (PL=F) | 2026-09-09 | abwaerts | 1848.2 | 0.742 | 1.244 | 0 |
 | PLTR (PLTR) | 2025-04-23 | aufwaerts | 96.34 | 0.336 | 2.616 | 345 |
 | PLTR (PLTR) | 2025-11-04 | abwaerts | 201.82 | 1.135 | 4.831 | 210 |
 | PLTR (PLTR) | 2025-12-29 | abwaerts | 188.62 | 0.242 | 0.938 | 173 |

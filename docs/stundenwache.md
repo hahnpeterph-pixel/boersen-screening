@@ -1,8 +1,6 @@
 # Stundenwache
 
-Stand: 2026-09-08 · 158 Werte mit Stundendaten · erstellt 2026-09-09 04:56 UTC
-
-> **Sitzung noch nicht abgeschlossen.** 1 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 6, 7, 9). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
+Stand: 2026-09-08 · 158 Werte mit Stundendaten · erstellt 2026-09-09 06:16 UTC
 
 Marken sind das juengste Swing-Tief und das juengste Swing-Hoch aus `tiefs_regel.py`, also dieselben wie im Tagesbericht. Geprueft wird nur, was der letzte Handelstag auf Stundenbasis damit gemacht hat.
 

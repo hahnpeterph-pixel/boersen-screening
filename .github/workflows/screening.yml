@@ -116,29 +116,42 @@ jobs:
       # vergleicht die letzte Spalte von kursverlauf.csv mit dem
       # juengsten Datum in marktdaten.csv und faellt sichtbar aus, wenn
       # die Datei zurueckhaengt.
-      - name: Kursverlauf auf Aktualitaet pruefen
+      # Vollstaendigkeitspruefung, 09.09.2026. Kein Schwellenwert und
+      # keine Quote: JEDER Ticker muss in kursverlauf.csv mindestens so
+      # weit reichen wie sein eigener Stand in marktdaten.csv. Feiertage
+      # loesen sich damit von selbst, weil marktdaten.csv je Ticker den
+      # tatsaechlich letzten Handelstag fuehrt - an einem US-Feiertag
+      # steht dort fuer US-Werte eben der Vortag.
+      #
+      # Vorgeschichte: Eine erste Fassung verglich nur die letzte Spalte
+      # mit dem juengsten Marktdatum und liess durch, dass diese Spalte
+      # nur zu 82 Prozent besetzt war. Eine zweite Fassung verlangte
+      # 90 Prozent - auch das ist zu wenig, wenn Geld im Einsatz ist.
+      - name: Kursverlauf auf Vollstaendigkeit pruefen
         run: |
           python - <<'PY'
           import csv, sys
+          with open("docs/marktdaten.csv", newline="", encoding="utf-8") as f:
+              soll = {z["ticker"]: z["datum"] for z in csv.DictReader(f) if z.get("datum")}
           with open("docs/kursverlauf.csv", newline="", encoding="utf-8") as f:
               zeilen = list(csv.reader(f))
-          kopf, daten = zeilen[0], zeilen[1:]
-          letzte_spalte = kopf[-1]
-          besetzt = sum(1 for z in daten if z[-1] not in ("", None))
-          anteil = besetzt / len(daten) if daten else 0
-          with open("docs/marktdaten.csv", newline="", encoding="utf-8") as f:
-              markt = max(z["datum"] for z in csv.DictReader(f) if z.get("datum"))
-          print(f"kursverlauf.csv bis {letzte_spalte} ({besetzt}/{len(daten)} "
-                f"= {anteil:.0%} besetzt), marktdaten.csv bis {markt}")
-          if letzte_spalte < markt:
-              sys.exit(f"Kursverlauf haengt zurueck: {letzte_spalte} statt {markt}.")
-          # Zweite Bedingung, ergaenzt am 09.09.2026: Der Tag kann da sein
-          # und trotzdem fehlen 40 Werte. Genau so war es an diesem Tag -
-          # die Spalte 2026-09-08 stand, war aber nur zu 82 Prozent besetzt,
-          # und die erste Fassung dieser Pruefung liess das durch.
-          if anteil < 0.90:
-              sys.exit(f"Letzter Tag {letzte_spalte} nur zu {anteil:.0%} besetzt "
-                       f"({besetzt} von {len(daten)}). Erwartet sind mindestens 90 %.")
+          tage = zeilen[0][1:]
+          ist = {}
+          for z in zeilen[1:]:
+              gefuellt = [d for d, w in zip(tage, z[1:]) if w not in ("", None)]
+              ist[z[0]] = gefuellt[-1] if gefuellt else ""
+          fehlend = sorted(
+              (t, soll[t], ist.get(t, "keine Zeile"))
+              for t in soll if ist.get(t, "") < soll[t]
+          )
+          print(f"{len(soll) - len(fehlend)}/{len(soll)} Ticker aktuell")
+          if fehlend:
+              for t, s, i in fehlend[:40]:
+                  print(f"  {t}: marktdaten {s}, kursverlauf {i}")
+              sys.exit(
+                  f"{len(fehlend)} Ticker haengen in kursverlauf.csv zurueck. "
+                  "Depot-Tabelle waere bei Folgekerze und KO intraday unvollstaendig."
+              )
           PY
 
       - name: Luecken ausfuehren

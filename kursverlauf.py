@@ -129,10 +129,17 @@ UNIVERSUM = list(dict.fromkeys(US + DAX + WEITERE))
 # Rueckblick ein falscher Spaltenversatz: "5 Handelstage spaeter" wuerde
 # einen Tag mitzaehlen, den es fuer diesen Wert nie gab. Betroffen waren
 # drei Spalten, zwei davon am Rand des Zeitfensters.
-MINDESTBESETZUNG = 0.20
+# Am 09.09.2026 von 0.20 auf 0.10 gesenkt. Bei 218 Werten lag die alte
+# Schwelle bei 43,6 - an US-Feiertagen handeln aber nur die 41
+# europaeischen Werte (18,8 %). Der Lauf vom 09.09.2026 verwarf deshalb
+# 25.05., 19.06., 03.07. und 07.09.2026 mit jeweils 41 Werten, also
+# vollwertige XETRA-Handelstage. Die Artefakte, gegen die die Schwelle
+# gedacht war, haben ein bis dreizehn Werte (unter 6 %) und fallen auch
+# bei 0.10 zuverlaessig heraus.
+MINDESTBESETZUNG = 0.10
 
 
-def reihen() -> tuple[list[str], dict, dict, dict]:
+def reihen() -> tuple[list[str], dict, dict, dict, dict]:
     """Schlusskurse je Wert, plus die gemeinsame Liste der Handelstage.
 
     Die Tage werden ueber ALLE Werte gesammelt, nicht je Wert einzeln:
@@ -146,35 +153,57 @@ def reihen() -> tuple[list[str], dict, dict, dict]:
     je_hoch: dict[str, dict[str, float]] = {}
     je_eroeff: dict[str, dict[str, float]] = {}
     alle_tage: set[str] = set()
+    roh: dict[str, "pd.DataFrame"] = {}
     jetzt = datetime.now(timezone.utc)
     for i, t in enumerate(UNIVERSUM, 1):
         df = kurse.kerzen(t, period="400d")
         if df is None or df.empty:
             continue
 
-        # Yahoo "erfolgreich" heisst nicht zwangslaeufig aktuell (siehe
-        # marktdaten.py, 01.09.2026). kursverlauf.py hatte diese Pruefung
-        # bisher nicht - der Kerzen-Fix vom 04.09.2026 allein loeste das
-        # nicht, weil er nur unfertige HEUTIGE Kerzen abfaengt, nicht
-        # einen Yahoo-Datensatz, der komplett auf dem Vortag haengen
-        # bleibt. Fund vom 05.09.2026: die Datei hing weiterhin einen Tag
-        # zurueck. Dieselbe Freshness-Pruefung wie in marktdaten.py.
-        if t.endswith(".DE") or t == "ASML":
-            kandidaten_quellen = [("Yahoo", df)]
+        # Yahoo "erfolgreich" heisst nicht zwangslaeufig aktuell. Bis
+        # 08.09.2026 wurde hier nur bei .DE und ASML nachgeprueft - das
+        # beobachtete Muster vom 01.09.2026. Am 09.09.2026 traf es auch
+        # die US-Werte: 205 von 218 hingen auf dem 04.09. Die Pruefung
+        # gilt deshalb jetzt fuer ALLE Ticker.
+        #
+        # Zweistufig, um das Twelve-Data-Kontingent zu schonen (800
+        # Abrufe/Tag, 8/Minute): Erst wird alles aus Yahoo eingesammelt,
+        # danach werden nur die Ticker nachgeholt, deren letzte Kerze
+        # hinter dem Maximum ueber alle Werte zurueckliegt. Im Normalfall
+        # sind das null.
+        roh[t] = df
+        if i % 25 == 0:
+            print(f"  {i}/{len(UNIVERSUM)} ...")
+
+    if not roh:
+        return [], {}, {}, {}, {}
+
+    max_datum = max(d.index[-1].date() for d in roh.values())
+    nachzuegler = [t for t, d in roh.items() if d.index[-1].date() < max_datum]
+    if nachzuegler:
+        print(f"  {len(nachzuegler)} Werte hinter dem Stand {max_datum} - "
+              f"Zweitquellen werden befragt")
+    for t in nachzuegler:
+        kandidaten_quellen = [("Yahoo", roh[t])]
+        # Stooq bei .DE bewusst uebersprungen: scheiterte am 09.09.2026 bei
+        # JEDEM der 40 deutschen Ticker mit "Missing column provided to
+        # 'parse_dates': 'Date'" - 40 sichere Fehlschlaege pro Lauf.
+        if not t.endswith(".DE"):
             df_stooq = kurse.kerzen_stooq(t)
             if df_stooq is not None:
                 kandidaten_quellen.append(("Stooq", df_stooq))
-            df_td = kurse.kerzen_twelvedata(t)
-            if df_td is not None:
-                kandidaten_quellen.append(("Twelve Data", df_td))
-            bester_name, bestes_df = max(
-                kandidaten_quellen, key=lambda x: x[1].index[-1])
-            if bester_name != "Yahoo":
-                print(f"  {t}: Yahoo veraltet ({df.index[-1].date()}), "
-                      f"{bester_name} aktueller ({bestes_df.index[-1].date()}) "
-                      f"- {bester_name} verwendet")
-                df = bestes_df
+        df_td = kurse.kerzen_twelvedata(t)
+        if df_td is not None:
+            kandidaten_quellen.append(("Twelve Data", df_td))
+        bester_name, bestes_df = max(
+            kandidaten_quellen, key=lambda x: x[1].index[-1])
+        if bester_name != "Yahoo":
+            print(f"  {t}: Yahoo veraltet ({roh[t].index[-1].date()}), "
+                  f"{bester_name} aktueller ({bestes_df.index[-1].date()}) "
+                  f"- {bester_name} verwendet")
+            roh[t] = bestes_df
 
+    for t, df in roh.items():
         df = unfertige_heutige_kerze_verwerfen(df, t, jetzt)
         if df.empty:
             continue
@@ -197,11 +226,12 @@ def reihen() -> tuple[list[str], dict, dict, dict]:
         je_eroeff[t] = {str(d.date()): round(float(v), 4)
                         for d, v in zip(letzte.index, letzte["Open"])}
         alle_tage.update(werte)
-        if i % 25 == 0:
-            print(f"  {i}/{len(UNIVERSUM)} ...")
 
     if not je_wert:
-        return [], {}
+        # Fuenf Werte, weil main() fuenf entpackt - die alte Fassung gab
+        # zwei zurueck und haette hier mit ValueError abgebrochen, statt
+        # die vorgesehene Meldung auszugeben (Fund 09.09.2026).
+        return [], {}, {}, {}, {}
 
     # Duenn besetzte Tage aus der Achse werfen, siehe MINDESTBESETZUNG.
     schwelle = len(je_wert) * MINDESTBESETZUNG

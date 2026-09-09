@@ -38,6 +38,7 @@ Schreibt:
 from __future__ import annotations
 
 import csv
+import time
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -160,51 +161,67 @@ def reihen() -> tuple[list[str], dict, dict, dict, dict]:
         if df is None or df.empty:
             continue
 
-        # Yahoo "erfolgreich" heisst nicht zwangslaeufig aktuell. Bis
-        # 08.09.2026 wurde hier nur bei .DE und ASML nachgeprueft - das
-        # beobachtete Muster vom 01.09.2026. Am 09.09.2026 traf es auch
-        # die US-Werte: 205 von 218 hingen auf dem 04.09. Die Pruefung
-        # gilt deshalb jetzt fuer ALLE Ticker.
-        #
-        # Zweistufig, um das Twelve-Data-Kontingent zu schonen (800
-        # Abrufe/Tag, 8/Minute): Erst wird alles aus Yahoo eingesammelt,
-        # danach werden nur die Ticker nachgeholt, deren letzte Kerze
-        # hinter dem Maximum ueber alle Werte zurueckliegt. Im Normalfall
-        # sind das null.
-        roh[t] = df
+        # Rohdaten sammeln. Die Aktualitaetspruefung folgt weiter unten,
+        # erst nachdem die unfertige heutige Kerze entfernt wurde - sonst
+        # verzerren die rund um die Uhr notierten Rohstoffe und EUR/USD
+        # den Vergleichsstand.
+        roh[t] = unfertige_heutige_kerze_verwerfen(df, t, jetzt)
+        if roh[t].empty:
+            del roh[t]
+            continue
         if i % 25 == 0:
             print(f"  {i}/{len(UNIVERSUM)} ...")
 
     if not roh:
         return [], {}, {}, {}, {}
 
-    max_datum = max(d.index[-1].date() for d in roh.values())
-    nachzuegler = [t for t, d in roh.items() if d.index[-1].date() < max_datum]
-    if nachzuegler:
-        print(f"  {len(nachzuegler)} Werte hinter dem Stand {max_datum} - "
-              f"Zweitquellen werden befragt")
-    for t in nachzuegler:
-        kandidaten_quellen = [("Yahoo", roh[t])]
-        # Stooq bei .DE bewusst uebersprungen: scheiterte am 09.09.2026 bei
-        # JEDEM der 40 deutschen Ticker mit "Missing column provided to
-        # 'parse_dates': 'Date'" - 40 sichere Fehlschlaege pro Lauf.
-        if not t.endswith(".DE"):
-            df_stooq = kurse.kerzen_stooq(t)
-            if df_stooq is not None:
-                kandidaten_quellen.append(("Stooq", df_stooq))
+    # Vergleichsstand: der HAEUFIGSTE letzte Kerzentag, nicht der spaeteste.
+    #
+    # Der Lauf vom 09.09.2026 um 04:56 UTC zeigte, warum: Rohstoffe und
+    # EUR/USD hatten zu diesem Zeitpunkt bereits eine Kerze vom 09.09.,
+    # der Rest der Boersen stand korrekt auf dem 08.09. Ueber das Maximum
+    # galten dadurch 208 von 218 Werten als veraltet, obwohl nur 40 es
+    # waren. Twelve Data wurde 208-mal befragt, lief nach acht Abrufen in
+    # sein Minutenlimit und lieferte fuer ALLE einen 429 - auch fuer die
+    # 40, die den Nachschlag wirklich gebraucht haetten. Der haeufigste
+    # Tag ist gegen einzelne Dauerlaeufer unempfindlich.
+    from collections import Counter
+    stand = Counter(d.index[-1].date() for d in roh.values()).most_common(1)[0][0]
+    nachzuegler = [t for t, d in roh.items() if d.index[-1].date() < stand]
+
+    # Harte Obergrenze. Twelve Data erlaubt im Gratistarif 8 Abrufe je
+    # Minute und 800 je Tag. Selbst wenn die Erkennung noch einmal
+    # danebengreift, kann sie das Tageskontingent nicht mehr verbrennen.
+    MAX_NACHSCHLAG = 60
+    if len(nachzuegler) > MAX_NACHSCHLAG:
+        print(f"  {len(nachzuegler)} Werte hinter dem Stand {stand} - das ist "
+              f"mehr als die Obergrenze {MAX_NACHSCHLAG}. Vermutlich ist die "
+              f"Erstquelle grossflaechig ausgefallen; kein Nachschlag, um das "
+              f"Kontingent nicht zu verbrennen.")
+        nachzuegler = []
+    elif nachzuegler:
+        print(f"  {len(nachzuegler)} Werte hinter dem Stand {stand} - "
+              f"Zweitquelle wird befragt")
+
+    # Stooq ist seit dem 09.09.2026 fuer JEDEN Ticker defekt ("Missing
+    # column provided to 'parse_dates': 'Date'", 218 von 218) und wird
+    # hier deshalb gar nicht mehr gefragt. In kurse.py bleibt die
+    # Funktion unberuehrt, andere Skripte nutzen sie weiter.
+    for n, t in enumerate(nachzuegler):
+        # 8 Abrufe je Minute: nach je acht Stueck eine Minute warten.
+        if n and n % 8 == 0:
+            print(f"    Minutenlimit - 60 s Pause ({n}/{len(nachzuegler)})")
+            time.sleep(60)
         df_td = kurse.kerzen_twelvedata(t)
-        if df_td is not None:
-            kandidaten_quellen.append(("Twelve Data", df_td))
-        bester_name, bestes_df = max(
-            kandidaten_quellen, key=lambda x: x[1].index[-1])
-        if bester_name != "Yahoo":
+        if df_td is None:
+            continue
+        df_td = unfertige_heutige_kerze_verwerfen(df_td, t, jetzt)
+        if not df_td.empty and df_td.index[-1] > roh[t].index[-1]:
             print(f"  {t}: Yahoo veraltet ({roh[t].index[-1].date()}), "
-                  f"{bester_name} aktueller ({bestes_df.index[-1].date()}) "
-                  f"- {bester_name} verwendet")
-            roh[t] = bestes_df
+                  f"Twelve Data aktueller ({df_td.index[-1].date()})")
+            roh[t] = df_td
 
     for t, df in roh.items():
-        df = unfertige_heutige_kerze_verwerfen(df, t, jetzt)
         if df.empty:
             continue
         letzte = df.tail(TAGE)

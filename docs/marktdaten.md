@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-09-08 21:43 UTC. 218 Werte, Fenster 90 Kalendertage. EUR/USD 1.1629._
+_Erstellt 2026-09-09 00:12 UTC. 218 Werte, Fenster 90 Kalendertage. EUR/USD 1.1628._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -94,8 +94,8 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | HEI.DE (HEI.DE) | 161.95 | - | - | ja | 46.23 |
 | MUV2.DE (MUV2.DE) | 502.4 | - | - | ja | 38.82 |
 | SAP.DE (SAP.DE) | 181.7 | - | - | ja | 54.72 |
-| Gold (GC=F) | 4400.0 | - | ja | ja | 50.27 |
-| Palladium (PA=F) | 1362.5 | - | ja | ja | 52.1 |
+| Gold (GC=F) | 4395.1001 | - | - | ja | 49.95 |
+| Palladium (PA=F) | 1358.0 | - | - | ja | 51.6 |
 | Kakao (CC=F) | 5927.0 | - | ja | ja | 49.87 |
 
 ---

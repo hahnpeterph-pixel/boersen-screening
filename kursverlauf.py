@@ -175,51 +175,100 @@ def reihen() -> tuple[list[str], dict, dict, dict, dict]:
     if not roh:
         return [], {}, {}, {}, {}
 
-    # Vergleichsstand: der HAEUFIGSTE letzte Kerzentag, nicht der spaeteste.
+    # Vergleichsstand JE MARKTGRUPPE, nicht ueber alle Werte hinweg.
     #
-    # Der Lauf vom 09.09.2026 um 04:56 UTC zeigte, warum: Rohstoffe und
-    # EUR/USD hatten zu diesem Zeitpunkt bereits eine Kerze vom 09.09.,
-    # der Rest der Boersen stand korrekt auf dem 08.09. Ueber das Maximum
-    # galten dadurch 208 von 218 Werten als veraltet, obwohl nur 40 es
-    # waren. Twelve Data wurde 208-mal befragt, lief nach acht Abrufen in
-    # sein Minutenlimit und lieferte fuer ALLE einen 429 - auch fuer die
-    # 40, die den Nachschlag wirklich gebraucht haetten. Der haeufigste
-    # Tag ist gegen einzelne Dauerlaeufer unempfindlich.
-    from collections import Counter
-    stand = Counter(d.index[-1].date() for d in roh.values()).most_common(1)[0][0]
-    nachzuegler = [t for t, d in roh.items() if d.index[-1].date() < stand]
+    # Zwei Fehlversuche fuehrten hierher. Erst war der Maszstab das
+    # Maximum ueber alle Werte: am 09.09.2026 um 04:56 UTC hatten
+    # Rohstoffe und EUR/USD schon eine Kerze vom 09.09., der Rest stand
+    # korrekt auf dem 08.09. - 208 von 218 galten als veraltet, Twelve
+    # Data lief nach acht Abrufen in sein Minutenlimit und lieferte fuer
+    # alle einen 429. Dann der haeufigste Tag ueber alle Werte: besser,
+    # aber bei einem Feiertag in nur EINEM Markt zieht die Mehrheit den
+    # Maszstab und die andere Gruppe gilt faelschlich als veraltet.
+    #
+    # Jede Gruppe hat ihren eigenen Handelskalender, also auch ihren
+    # eigenen Sollstand. Damit ist ein US-Feiertag kein Sonderfall mehr,
+    # sondern ergibt sich von selbst: die US-Gruppe steht dann eben auf
+    # dem Vortag, die europaeische auf heute, und beide sind vollstaendig.
+    def _gruppe(ticker: str) -> str:
+        if ticker.endswith(".DE") or ticker == "ASML":
+            return "Europa"
+        if ticker.endswith("=F") or ticker.endswith("=X"):
+            return "Rohstoffe/Devisen"
+        return "USA"
+
+    from collections import Counter, defaultdict
+
+    # Sollstand vorrangig aus marktdaten.csv, je Ticker.
+    #
+    # Der Gruppen-Sollstand allein reicht nicht: Haengen ALLE Werte einer
+    # Gruppe (genau der Fall vom 08./09.09.2026, als alle 40 deutschen
+    # Aktien auf dem 04.09. standen), ist der haeufigste Tag der Gruppe
+    # eben dieser veraltete Tag - und niemand faellt auf. marktdaten.py
+    # laeuft im selben Workflow vorher und fuehrt je Ticker den
+    # tatsaechlich letzten Handelstag, inklusive Feiertagen. Das ist der
+    # belastbare Maszstab. Fehlt die Datei (Einzellauf, Test), faellt die
+    # Pruefung auf den Gruppenmodus zurueck.
+    soll_je_ticker: dict[str, str] = {}
+    markt = DOCS / "marktdaten.csv"
+    if markt.exists():
+        with open(markt, newline="", encoding="utf-8") as f:
+            for z in csv.DictReader(f):
+                if z.get("ticker") and z.get("datum"):
+                    soll_je_ticker[z["ticker"]] = z["datum"]
+
+    je_gruppe = defaultdict(list)
+    for t in roh:
+        je_gruppe[_gruppe(t)].append(t)
+
+    nachzuegler = []
+    for gruppe, tickers in sorted(je_gruppe.items()):
+        modus = Counter(roh[t].index[-1].date() for t in tickers).most_common(1)[0][0]
+        hinten = []
+        for t in tickers:
+            ist = str(roh[t].index[-1].date())
+            soll = soll_je_ticker.get(t) or str(modus)
+            if ist < soll:
+                hinten.append(t)
+        quelle = "marktdaten.csv" if soll_je_ticker else "Gruppenmodus"
+        print(f"  {gruppe}: Sollstand {modus} ({quelle}), "
+              f"{len(tickers) - len(hinten)}/{len(tickers)} aktuell")
+        nachzuegler += hinten
 
     # Harte Obergrenze. Twelve Data erlaubt im Gratistarif 8 Abrufe je
     # Minute und 800 je Tag. Selbst wenn die Erkennung noch einmal
-    # danebengreift, kann sie das Tageskontingent nicht mehr verbrennen.
+    # danebengreift, kann sie das Tageskontingent nicht verbrennen.
     MAX_NACHSCHLAG = 60
     if len(nachzuegler) > MAX_NACHSCHLAG:
-        print(f"  {len(nachzuegler)} Werte hinter dem Stand {stand} - das ist "
-              f"mehr als die Obergrenze {MAX_NACHSCHLAG}. Vermutlich ist die "
-              f"Erstquelle grossflaechig ausgefallen; kein Nachschlag, um das "
-              f"Kontingent nicht zu verbrennen.")
+        print(f"  {len(nachzuegler)} Nachzuegler - mehr als die Obergrenze "
+              f"{MAX_NACHSCHLAG}. Vermutlich ist die Erstquelle grossflaechig "
+              f"ausgefallen; kein Nachschlag, um das Kontingent zu schonen.")
         nachzuegler = []
     elif nachzuegler:
-        print(f"  {len(nachzuegler)} Werte hinter dem Stand {stand} - "
-              f"Zweitquelle wird befragt")
+        print(f"  {len(nachzuegler)} Nachzuegler - Zweitquelle wird befragt")
 
     # Stooq ist seit dem 09.09.2026 fuer JEDEN Ticker defekt ("Missing
     # column provided to 'parse_dates': 'Date'", 218 von 218) und wird
-    # hier deshalb gar nicht mehr gefragt. In kurse.py bleibt die
-    # Funktion unberuehrt, andere Skripte nutzen sie weiter.
+    # hier deshalb nicht mehr gefragt. In kurse.py bleibt die Funktion
+    # unberuehrt, andere Skripte nutzen sie weiter.
+    offen = []
     for n, t in enumerate(nachzuegler):
-        # 8 Abrufe je Minute: nach je acht Stueck eine Minute warten.
         if n and n % 8 == 0:
             print(f"    Minutenlimit - 60 s Pause ({n}/{len(nachzuegler)})")
             time.sleep(60)
         df_td = kurse.kerzen_twelvedata(t)
-        if df_td is None:
-            continue
-        df_td = unfertige_heutige_kerze_verwerfen(df_td, t, jetzt)
-        if not df_td.empty and df_td.index[-1] > roh[t].index[-1]:
-            print(f"  {t}: Yahoo veraltet ({roh[t].index[-1].date()}), "
-                  f"Twelve Data aktueller ({df_td.index[-1].date()})")
-            roh[t] = df_td
+        if df_td is not None:
+            df_td = unfertige_heutige_kerze_verwerfen(df_td, t, jetzt)
+            if not df_td.empty and df_td.index[-1] > roh[t].index[-1]:
+                print(f"  {t}: Yahoo veraltet ({roh[t].index[-1].date()}), "
+                      f"Twelve Data aktueller ({df_td.index[-1].date()})")
+                roh[t] = df_td
+                continue
+        offen.append(t)
+    if offen:
+        # Sichtbar machen, nicht verschweigen. Der Prueflauf im Workflow
+        # bricht daran ab - hier steht, welche Werte es betrifft.
+        print(f"  NICHT AKTUALISIERT ({len(offen)}): " + ", ".join(sorted(offen)))
 
     for t, df in roh.items():
         if df.empty:

@@ -22,6 +22,7 @@ Cache, der naechste Morgen holt neu.
 from __future__ import annotations
 
 import os
+import time
 import shutil
 from datetime import date
 from io import StringIO
@@ -113,16 +114,35 @@ def _pfad(ticker: str, period: str, auto_adjust: bool = False) -> str:
     return os.path.join(CACHE, f"v{CACHE_VERSION}_{sicher}_{period}{suffix}.csv")
 
 
+# Hoechstalter einer Cache-Datei in Stunden. Loest die frueherere Regel
+# "Kalendertag muss heute sein" ab (Fund vom 09.09.2026).
+#
+# Warum: Der 22:15-UTC-Lauf beginnt vor Mitternacht und endet danach.
+# marktdaten.py fuellte den Cache am 08.09.2026 um 22:1x - kursverlauf.py
+# rief aufraeumen() um 00:14 des Folgetags auf, verglich Kalendertage und
+# loeschte damit den gesamten, wenige Minuten alten Cache. Anschliessend
+# holte es 218 Ticker in 16 Sekunden neu, lief bei Yahoo in die Bremse und
+# schrieb einen Stand vom 04.09. Die Tage 07.09. (1 Wert) und 08.09.
+# (13 Werte) fielen danach unter MINDESTBESETZUNG und flogen aus der
+# Tagesachse - unbemerkt, weil der Schritt continue-on-error hat.
+#
+# Zwoelf Stunden sind kurz genug, damit ein Lauf am naechsten Morgen
+# frische Kerzen holt, und lang genug, dass ein Lauf ueber Mitternacht
+# seinen eigenen Cache behaelt.
+CACHE_MAX_STUNDEN = 12
+
+
 def aufraeumen() -> None:
-    """Cache-Dateien von frueheren Tagen oder Versionen entfernen."""
+    """Cache-Dateien entfernen, die aelter als CACHE_MAX_STUNDEN sind
+    oder aus einer frueheren Cache-Version stammen."""
     if not os.path.isdir(CACHE):
         return
-    heute = date.today().isoformat()
+    grenze = time.time() - CACHE_MAX_STUNDEN * 3600
     for name in os.listdir(CACHE):
         pfad = os.path.join(CACHE, name)
         try:
-            alt = date.fromtimestamp(os.path.getmtime(pfad)).isoformat()
-            if alt != heute or not name.startswith(f"v{CACHE_VERSION}_"):
+            if (os.path.getmtime(pfad) < grenze
+                    or not name.startswith(f"v{CACHE_VERSION}_")):
                 os.remove(pfad)
         except OSError:
             pass

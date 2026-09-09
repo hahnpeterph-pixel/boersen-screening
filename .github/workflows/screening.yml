@@ -121,24 +121,26 @@ jobs:
           python - <<'PY'
           import csv, sys
           with open("docs/kursverlauf.csv", newline="", encoding="utf-8") as f:
-              letzte_spalte = next(csv.reader(f))[-1]
+              zeilen = list(csv.reader(f))
+          kopf, daten = zeilen[0], zeilen[1:]
+          letzte_spalte = kopf[-1]
+          besetzt = sum(1 for z in daten if z[-1] not in ("", None))
+          anteil = besetzt / len(daten) if daten else 0
           with open("docs/marktdaten.csv", newline="", encoding="utf-8") as f:
               markt = max(z["datum"] for z in csv.DictReader(f) if z.get("datum"))
-          print(f"kursverlauf.csv bis {letzte_spalte}, marktdaten.csv bis {markt}")
+          print(f"kursverlauf.csv bis {letzte_spalte} ({besetzt}/{len(daten)} "
+                f"= {anteil:.0%} besetzt), marktdaten.csv bis {markt}")
           if letzte_spalte < markt:
-              sys.exit(
-                  f"Kursverlauf haengt zurueck: {letzte_spalte} statt {markt}. "
-                  "Depot-Tabelle waere bei Folgekerze und KO intraday veraltet."
-              )
+              sys.exit(f"Kursverlauf haengt zurueck: {letzte_spalte} statt {markt}.")
+          # Zweite Bedingung, ergaenzt am 09.09.2026: Der Tag kann da sein
+          # und trotzdem fehlen 40 Werte. Genau so war es an diesem Tag -
+          # die Spalte 2026-09-08 stand, war aber nur zu 82 Prozent besetzt,
+          # und die erste Fassung dieser Pruefung liess das durch.
+          if anteil < 0.90:
+              sys.exit(f"Letzter Tag {letzte_spalte} nur zu {anteil:.0%} besetzt "
+                       f"({besetzt} von {len(daten)}). Erwartet sind mindestens 90 %.")
           PY
 
-      # Kursluecken je Wert und ihr Schliessverhalten, fuer die Bewertung
-      # offener Gaps in der Kaufvorlage. Nach kursverlauf.py, weil zu diesem
-      # Zeitpunkt alle Tageskerzen im Cache von kurse.py liegen - der Abruf
-      # kostet dann nichts extra. Aus demselben Grund fragt luecken.py
-      # ausdruecklich 400d ab wie die uebrigen Skripte: ein abweichender
-      # Zeitraum wuerde am Cache vorbeilaufen und alles doppelt holen.
-      # continue-on-error wie bei den anderen Zusatzauswertungen.
       - name: Luecken ausfuehren
         run: python luecken.py
         continue-on-error: true

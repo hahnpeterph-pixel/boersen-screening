@@ -55,126 +55,13 @@
  },
  "changes": {
   "turnaround": {
-   "entries": [
-    {
-     "ticker": "BMY",
-     "rank": 4
-    },
-    {
-     "ticker": "JNJ",
-     "rank": 6
-    },
-    {
-     "ticker": "KO",
-     "rank": 7
-    },
-    {
-     "ticker": "KHC",
-     "rank": 9
-    },
-    {
-     "ticker": "WFC",
-     "rank": 13
-    },
-    {
-     "ticker": "AIR.DE",
-     "rank": 15
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "NOW",
-     "old_rank": 7
-    },
-    {
-     "ticker": "ABBV",
-     "old_rank": 9
-    },
-    {
-     "ticker": "SHW",
-     "old_rank": 10
-    },
-    {
-     "ticker": "VRSK",
-     "old_rank": 12
-    },
-    {
-     "ticker": "BAC",
-     "old_rank": 13
-    },
-    {
-     "ticker": "GM",
-     "old_rank": 15
-    }
-   ],
-   "moves": [
-    {
-     "ticker": "COF",
-     "rank": 8,
-     "delta": 6
-    },
-    {
-     "ticker": "EMR",
-     "rank": 10,
-     "delta": -5
-    },
-    {
-     "ticker": "CEG",
-     "rank": 11,
-     "delta": -7
-    },
-    {
-     "ticker": "CTSH",
-     "rank": 14,
-     "delta": -13
-    }
-   ]
+   "entries": [],
+   "exits": [],
+   "moves": []
   },
   "momentum": {
-   "entries": [
-    {
-     "ticker": "AMD",
-     "rank": 3
-    },
-    {
-     "ticker": "MRVL",
-     "rank": 8
-    },
-    {
-     "ticker": "ILMN",
-     "rank": 9
-    },
-    {
-     "ticker": "KO",
-     "rank": 12
-    },
-    {
-     "ticker": "BNR.DE",
-     "rank": 15
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "MRNA",
-     "old_rank": 5
-    },
-    {
-     "ticker": "CRWD",
-     "old_rank": 6
-    },
-    {
-     "ticker": "TEAM",
-     "old_rank": 9
-    },
-    {
-     "ticker": "GM",
-     "old_rank": 14
-    },
-    {
-     "ticker": "ABNB",
-     "old_rank": 15
-    }
-   ],
+   "entries": [],
+   "exits": [],
    "moves": []
   },
   "value": {

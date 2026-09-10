@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-09-09 21:35 UTC. 218 Werte, Fenster 90 Kalendertage. EUR/USD 1.1641._
+_Erstellt 2026-09-10 09:28 UTC. 218 Werte, Fenster 90 Kalendertage. EUR/USD 1.1627._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -57,6 +57,7 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | PYPL (PYPL) | 52.17 | - | - | ja | 37.35 |
 | ROP (ROP) | 390.35 | - | - | ja | 42.46 |
 | ROST (ROST) | 225.27 | - | - | ja | 36.0 |
+| SBUX (SBUX) | 100.04 | - | - | ja | 34.37 |
 | SHW (SHW) | 320.64 | - | - | ja | 33.3 |
 | SPGI (SPGI) | 418.36 | - | - | ja | 44.4 |
 | TMUS (TMUS) | 177.34 | - | - | ja | 44.06 |
@@ -108,7 +109,9 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | SY1.DE (SY1.DE) | 88.7 | - | - | ja | 43.06 |
 | VNA.DE (VNA.DE) | 18.505 | - | - | ja | 29.56 |
 | ZAL.DE (ZAL.DE) | 22.94 | - | - | ja | 40.83 |
-| Erdgas (NG=F) | 2.808 | - | - | ja | 46.61 |
+| Erdgas (NG=F) | 2.822 | - | - | ja | 47.5 |
+| Weizen (ZW=F) | 711.25 | - | - | ja | 53.04 |
+| Mais (ZC=F) | 507.75 | - | - | ja | 65.07 |
 
 ---
 

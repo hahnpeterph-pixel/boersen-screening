@@ -494,7 +494,80 @@ def main() -> None:
             "luecken": luecken_zeile(luecken_wert, kurs) if len(luecken_wert) else "keine Daten",
         }
 
-        for puf in [1.00, 1.25, 1.50, 1.75, 2.00, 2.25, 2.50, 2.75, 3.00]:
+        # ANKERZEILE UND PUFFERFENSTER (Entscheidung 149, Fassung vom
+        # 10.09.2026).
+        #
+        # Die Ankerzeile ist die NIEDRIGSTE Pufferzeile zwischen 0,25 und
+        # 4,00 ATR, in der BEIDE 63-Tage-Halteraten mindestens 60 Prozent
+        # erreichen - die fuer diese Tiefsposition und die ueber alle
+        # Tiefen. Die niedrigste wird genommen, weil die Rendite mit
+        # sinkendem Puffer steigt: liegt sie dort schon ueber der Huerde,
+        # gilt das fuer jede tiefere Zeile erst recht.
+        #
+        # Ausgegeben wird ein FENSTER um den Anker: vier Viertelschritte
+        # darunter und vier darueber, gekappt bei 0,25 und 4,00 ATR. Ein
+        # festes Raster wurde am 08.09.2026 erprobt und wieder verworfen,
+        # weil es die Ankerzeile auf den naechsthoeheren Puffer schob und
+        # dadurch Rendite kostete (Applied Materials 180 auf 170 Prozent,
+        # Honeywell 152 auf 145, GE Aerospace 124 auf 115 und damit ganz
+        # raus). Obergrenze 4,00 ATR ist bewusst gesetzt: darueber treibt
+        # der Puffer den KO-Abstand und den Einsatz zu weit, ohne dass die
+        # Rendite mittraegt. Die Datenbasis in puffer_je_tief.csv.gz endet
+        # ohnehin bei tage_ko_4.
+        raster = [round(0.25 * i, 2) for i in range(1, 17)]
+        anker = None
+        for puf in raster:
+            hp, _ = _haelt(teil_position, puf)
+            ha, _ = _haelt(teil_puffer, puf)
+            if hp is not None and ha is not None and hp >= 60 and ha >= 60:
+                anker = puf
+                break
+
+        zeile["anker_atr"] = anker
+        if anker is None:
+            # Kein Puffer bis 4,00 ATR erreicht 60/60 - der Wert faellt
+            # nach Entscheidung 149 aus Block 1.
+            zeile["filter_ergebnis"] = "raus - 60/60 nie erreicht"
+            zeile["filter_variante"] = None
+            zeilen.append(zeile)
+            continue
+
+        ko_anker = tief - anker * atr
+        hoehe_anker = kurs - ko_anker
+        r_eigen = ((eigen - kurs) / hoehe_anker * 100
+                   if eigen is not None and hoehe_anker else None)
+        r_analyst = ((ziel - kurs) / hoehe_anker * 100
+                     if ziel is not None and hoehe_anker else None)
+        zeile["anker_rendite_eigen_pct"] = r_eigen
+        zeile["anker_rendite_analyst_pct"] = r_analyst
+
+        # RENDITEPRUEFUNG in genau dieser Zeile. Hauptregel: mindestens
+        # 150 Prozent auf das eigene Ziel. Zusatzvariante fuer knappe
+        # Faelle: zwischen 120 und unter 150 Prozent bleibt der Wert drin,
+        # wenn das Analystenziel in derselben Zeile mindestens 200 Prozent
+        # bringt. Hintergrund der Zusatzvariante: eigene und
+        # Analystenrendite sind nicht unabhaengig - das eigene Ziel ist
+        # definitionsgemaess das Analystenziel minus 10 Prozent des
+        # Kurses. Die Variante belohnt damit faktisch einen engen KO, also
+        # hohen Hebel. Das ist gewollt, sollte aber bekannt sein.
+        if r_eigen is None:
+            zeile["filter_ergebnis"] = "raus - kein eigenes Ziel"
+            zeile["filter_variante"] = None
+        elif r_eigen >= 150:
+            zeile["filter_ergebnis"] = "drin"
+            zeile["filter_variante"] = "Hauptregel"
+        elif r_eigen >= 120 and r_analyst is not None and r_analyst >= 200:
+            zeile["filter_ergebnis"] = "drin"
+            zeile["filter_variante"] = "Zusatzvariante"
+        else:
+            zeile["filter_ergebnis"] = f"raus - Rendite {r_eigen:.0f} %"
+            zeile["filter_variante"] = None
+
+        untergrenze = max(0.25, round(anker - 1.00, 2))
+        fenster = [round(untergrenze + 0.25 * i, 2) for i in range(9)]
+        fenster = [p for p in fenster if 0.25 <= p <= 4.00]
+
+        for puf in fenster:
             ko = tief - puf * atr
             haelt_position, n_position = _haelt(teil_position, puf)
             haelt_alle, n_alle = _haelt(teil_puffer, puf)
@@ -512,6 +585,7 @@ def main() -> None:
             zeile[f"p{puf:g}_haelt63_alle_pct"] = haelt_alle
             zeile[f"p{puf:g}_haelt63_alle_n"] = n_alle
             zeile[f"p{puf:g}_ko_haelt_pct"] = ko_haelt
+            zeile[f"p{puf:g}_ist_anker"] = 1 if puf == anker else 0
             if eigen is not None and hoehe:
                 zeile[f"p{puf:g}_rendite_eigen_pct"] = (eigen - kurs) / hoehe * 100
             if ziel is not None and hoehe:
@@ -526,9 +600,30 @@ def main() -> None:
         print("Keine Block-1-Treffer, nichts zu schreiben.")
         return
 
+    # Spaltenmenge aus ALLEN Zeilen, nicht nur aus der ersten. Seit das
+    # Pufferfenster um die Ankerzeile wandert (Entscheidung 149), hat jeder
+    # Wert andere p-Spalten: ein Anker bei 2,00 ATR liefert p1 bis p3, einer
+    # bei 3,75 liefert p2.75 bis p4. Die alte Fassung nahm die Spalten der
+    # ersten Zeile und brach mit "dict contains fields not in fieldnames" ab.
+    # Reihenfolge: erst die festen Spalten in der Reihenfolge ihres
+    # Auftretens, dann die Pufferspalten aufsteigend nach Puffer.
+    fest, puffer_spalten = [], set()
+    for z in zeilen:
+        for k in z:
+            if re.match(r"^p\d", str(k)):
+                puffer_spalten.add(k)
+            elif k not in fest:
+                fest.append(k)
+
+    def _sortier(spalte: str):
+        m_ = re.match(r"^p([\d.]+)_(.*)$", spalte)
+        return (float(m_.group(1)), m_.group(2)) if m_ else (99.0, spalte)
+
+    feldnamen = fest + sorted(puffer_spalten, key=_sortier)
+
     os.makedirs(DOCS, exist_ok=True)
     with open(CSV_AUS, "w", encoding="utf-8", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=list(zeilen[0].keys()))
+        w = csv.DictWriter(f, fieldnames=feldnamen)
         w.writeheader()
         w.writerows(zeilen)
     print(f"Geschrieben: {CSV_AUS} ({len(zeilen)} Zeilen)")

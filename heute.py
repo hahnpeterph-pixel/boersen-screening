@@ -24,6 +24,7 @@ from __future__ import annotations
 import csv
 import gzip
 import os
+import re
 
 import numpy as np
 import pandas as pd
@@ -144,50 +145,114 @@ def gruen_nach_rot(z) -> bool:
     return bool(heute_gruen and vortag_rot)
 
 
-def block1_treffer(markt: pd.DataFrame, analysten: pd.DataFrame) -> list[str]:
-    """Dieselbe Bedingung wie in Report-Spalte AJ: AF & AG & AZ & (AH | DG).
+def block1_treffer(markt: pd.DataFrame, analysten: pd.DataFrame,
+                   tiefe: pd.DataFrame | None = None) -> list[str]:
+    """Block-1-Grundbedingungen nach Entscheidung 154 (Stand 10.09.2026).
 
-    AF = Kurs < EMA50, AG = gruene Kerze, AH = Tief1 bestaetigt,
-    DG = kein neues Tief, AZ = Kaufanteil >= 75%. RSI ist seit
-    Entscheidung 79/03.09.2026 bewusst KEIN Gate mehr.
+    Ersetzt die alte Bedingung AF & AG & AZ & (AH | DG) vollstaendig.
 
-    ROHSTOFFE/FX (Fund 05.09.2026 auf Peters Frage "was macht uns sicher,
-    dass die Systematik nichts uebersieht"): Diese Werte haben nie einen
-    Eintrag in analysten.csv - es gibt keine Wall-Street-Kaufquote fuer Gold
-    oder EUR/USD. Die AZ-Bedingung war fuer sie strukturell nie erfuellbar,
-    obwohl Merkregel 13 Rohstoffe ausdruecklich als vollwertige Kauf-
-    kandidaten festlegt.
+    NEU sind drei Dinge:
 
-    Fuer Rohstoffe/FX gilt deshalb ab 05.09.2026 (Peters Festlegung):
-    "gruene Kerze nach roter Kerze" PLUS Tiefsbestaetigung (AH | DG).
-    KEIN EMA - weder EMA50 (AF) noch EMA200. Peter ausdruecklich: "Scheiss
-    auf EMA", und auf Nachfrage bestaetigt "der EMA interessiert nicht
-    mehr". Das Setup ist die Umkehr am bestaetigten Tief selbst, nicht die
-    Lage zum gleitenden Durchschnitt. Bei Aktien bleibt AF unveraendert -
-    dort ist nichts geaendert worden.
+    1. KEIN EMA MEHR. Die Bedingung AF "Kurs unter EMA50" ist mit
+       Entscheidung 149 ersatzlos gestrichen - fuer Aktien wie fuer alles
+       andere. Auswertung ueber 39.040 reife Tiefs: Die Korrelation zwischen
+       RSI-Abstand zur Schwelle und EMA50-Abstand betraegt 0,885, beide
+       sagen in 84,6 Prozent der Faelle dasselbe. Bei bekanntem RSI traegt
+       die EMA-Lage keine eigene Information (Halterate 63 Tage bei 2,00
+       ATR: 51,1 gegen 52,0 Prozent unter bzw. ueber dem EMA50). Zusaetzlich
+       selektiert AF auf die SCHWAECHERE Folgebewegung: Median-Anstieg
+       25,95 ATR unter dem EMA50 gegen 32,23 ATR darueber.
+
+    2. UMKEHR STATT BESTAETIGUNG. Statt "Tief bestaetigt ODER kein neues
+       Tief" (AH | DG) zaehlt jetzt eines von drei Umkehrzeichen:
+         a) frisches Tief UND gruene Kerze,
+         b) hoeheres Hoch als am Vortag UND rote Vortageskerze,
+         c) Hammer.
+       Die alte Bedingung liess 91,6 Prozent aller Tage durch und war damit
+       praktisch kein Filter. Entscheidend ist nicht die Durchlassquote,
+       sondern der Einstiegspunkt: Unter der alten Bedingung stand der Kurs
+       im Median 2,94 ATR ueber dem massgeblichen Tief, unter der neuen
+       0,64 ATR. Da der KO am Tief verankert wird, entscheidet dieser
+       Abstand ueber die gesamte Rendite.
+
+    3. RSI IST WIEDER GATE, aber absolut. RSI unter 50, nicht die
+       wertspezifische Schwelle. Hebt insoweit Entscheidung 79 auf; die
+       wertspezifische Schwelle bleibt als Kontextangabe in der Vorlage.
+
+    AUSDRUECKLICH NICHT VERWENDET: das Flag umkehrkerze. Es ist laut
+    eigener Docstring in marktdaten.py ein BEARISCHES Warnsignal ("Schluss
+    unter Eroeffnung UND unter Vortageshoch UND unter Vortagestief"). Eine
+    erste Fassung dieser Bedingung fuehrte es faelschlich als viertes
+    Umkehrzeichen. Folge am 10.09.2026: 13 Kandidaten, von denen nur zwei
+    eine gruene Kerze hatten - Schlusslagen bei 0, 2, 4, 12, 15, 21, 23 und
+    28 Prozent der Tagesspanne. Peter fiel es bei Capital One auf, dessen
+    Schluss exakt auf dem Tagestief lag.
+
+    FRISCHES TIEF wird aus kursverlauf_tief.csv gerechnet, NICHT aus der
+    Spalte vortagestief_verletzt in marktdaten.csv. Die stand am 09.09.2026
+    bei O Reilly Automotive, Cadence, Marriott und JPMorgan auf 0, obwohl
+    das Tagestief eindeutig unter dem Vortagestief lag (84,845 gegen 85,55 /
+    281,65 gegen 282,68 / 320,91 gegen 328,24 / 348,69 gegen 353,23).
+
+    TIEF 1 wird in auswertung() ausgeschlossen, nicht hier - dort liegt die
+    Tiefsposition ohnehin vor.
+
+    ROHSTOFFE/FX sind seit dem 09.09.2026 komplett aus dem Screening
+    genommen (Peters Festlegung). Die Sonderbehandlung "gruene Kerze nach
+    roter Kerze" entfaellt damit.
     """
     treffer = []
     for ticker in markt.index:
+        if ist_rohstoff_oder_fx(ticker):
+            continue
+        if ticker not in analysten.index:
+            continue
         z = markt.loc[ticker]
-        rohstoff = ist_rohstoff_oder_fx(ticker)
-        if not rohstoff and ticker not in analysten.index:
-            continue
-        # Nicht handelbare Rohstoffe/FX gar nicht erst pruefen.
-        if rohstoff and ticker not in HANDELBARE_ROHSTOFFE:
-            continue
-        ah = z.tief1_best == 1
-        dg = z.kein_neues_tief == 1
-        if rohstoff:
-            if gruen_nach_rot(z) and (ah or dg):
-                treffer.append(ticker)
-            continue
         a = analysten.loc[ticker]
-        af = pd.notna(z.ema50) and z.kurs < z.ema50
-        ag = z.kurs > z.open
-        az = pd.notna(a.kaufen_pct) and (a.kaufen_pct / 100) >= 0.75
-        if af and ag and az and (ah or dg):
-            treffer.append(ticker)
+
+        # Umkehrzeichen, eines von dreien.
+        vortagestief = None
+        if tiefe is not None and ticker in tiefe.index:
+            vortagestief = tiefe.loc[ticker]
+        frisches_tief = (vortagestief is not None and pd.notna(z.low)
+                         and z.low < vortagestief)
+        zweig_a = frisches_tief and z.kurs > z.open
+        zweig_b = z.hoeheres_hoch == 1 and z.rote_kerze_vortag == 1
+        zweig_c = z.hammer == 1
+        if not (zweig_a or zweig_b or zweig_c):
+            continue
+
+        if not (pd.notna(a.kaufen_pct) and (a.kaufen_pct / 100) >= 0.75):
+            continue
+        if pd.isna(z.rsi14) or z.rsi14 >= 50:
+            continue
+        treffer.append(ticker)
     return treffer
+
+
+def vortagestiefs() -> pd.Series:
+    """Tagestief des VORLETZTEN erfassten Handelstages je Ticker.
+
+    Aus kursverlauf_tief.csv, weil die Spalte vortagestief_verletzt in
+    marktdaten.csv nachweislich falsche Werte liefert (siehe
+    block1_treffer). Die letzte Spalte der Datei ist der aktuelle Tag, die
+    vorletzte der Vortag - je Ticker einzeln bestimmt, damit ein Wert mit
+    Datenluecke nicht versehentlich gegen einen zu alten Tag verglichen
+    wird.
+    """
+    pfad = os.path.join(DOCS, "kursverlauf_tief.csv")
+    if not os.path.exists(pfad):
+        print("  kursverlauf_tief.csv fehlt - frisches Tief nicht pruefbar")
+        return pd.Series(dtype=float)
+    df = pd.read_csv(pfad).set_index("ticker")
+    tage = [c for c in df.columns if re.match(r"\d{4}-\d{2}-\d{2}$", c)]
+    werte = {}
+    for ticker, zeile in df[tage].iterrows():
+        gefuellt = zeile.dropna()
+        if len(gefuellt) >= 2:
+            werte[ticker] = float(gefuellt.iloc[-2])
+    return pd.Series(werte, dtype=float)
+
 
 
 def fortsetzungskette(kette: dict[int, tuple], position: float) -> str:
@@ -347,7 +412,7 @@ def main() -> None:
               "marktdaten.py ist nicht auf dem Stand vom 05.09.2026. "
               "Rohstoffe/FX koennen heute NICHT in Block 1 auftauchen.")
 
-    treffer = block1_treffer(markt, analysten)
+    treffer = block1_treffer(markt, analysten, vortagestiefs())
     print(f"Block-1-Treffer heute: {len(treffer)}")
 
     zeilen = []
@@ -355,8 +420,25 @@ def main() -> None:
         z = markt.loc[t]
         rohstoff = ist_rohstoff_oder_fx(t)
         a = analysten.loc[t] if t in analysten.index else None
-        kurs, atr, tief = float(z.kurs), float(z.atr14), float(z.tief1)
+        kurs, atr = float(z.kurs), float(z.atr14)
         position = z.tiefs_serie
+
+        # TIEF 1 AUSGESCHLOSSEN (Entscheidung 154). Begruendung: Bei Tief 1
+        # ist die Wahrscheinlichkeit weiterer Tiefs am hoechsten, und nach
+        # dem Umbau der Umkehrbedingung waeren sonst 19 bis 25 Kandidaten
+        # taeglich zu pruefen - zu viel fuer eine Morgenrunde. Datenlage:
+        # Tief 1 haelt ueber 63 Tage bei 2,00 ATR nur zu 47,7 Prozent,
+        # Tief 2 zu 49,0, Tief 3 zu 51,5, Tief 4 zu 54,8. Bewusst
+        # aufgegeben wird dabei, dass Tief 1 mit 31,8 ATR den hoechsten
+        # Median-Anstieg der ganzen Reihe hat.
+        if position != position or not position or int(position) == 1:
+            continue
+
+        # BEZUGSTIEF ist ab Entscheidung 154 das TAGESTIEF dieses Tages,
+        # nicht mehr das letzte bestaetigte Tief aus tief1. Der KO wird
+        # daran verankert, und genau dieser Abstand entscheidet ueber die
+        # Rendite: Median 0,64 ATR statt 2,94 ATR unter der alten Regel.
+        tief = float(z.low) if pd.notna(z.low) else float(z.tief1)
         # Kein Analystenziel fuer Rohstoffe/FX moeglich - "Kursziel" und
         # "Eigenes Ziel" bleiben leer statt einer erfundenen Zahl. Peters
         # Regel "grobe Naeherungen sind kein akzeptables Ergebnis" gilt
@@ -391,8 +473,8 @@ def main() -> None:
             "kurs": kurs,
             "atr14": atr,
             "bezugstief": tief,
-            "bezugstief_datum": z.tief1_datum,
-            "bezugstief_bestaetigt": int(z.tief1_best) if pd.notna(z.tief1_best) else 0,
+            "bezugstief_datum": z.datum,
+            "bezugstief_bestaetigt": 0,
             "position": position,
             "fortsetzungskette": fortsetzungskette(kette_roh, position),
             "rsi_heute": z.rsi14,

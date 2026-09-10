@@ -350,6 +350,51 @@ def reihen() -> tuple[list[str], dict, dict, dict, dict]:
         # die vorgesehene Meldung auszugeben (Fund 09.09.2026).
         return [], {}, {}, {}, {}
 
+    # Bestand aus der bereits geschriebenen Datei uebernehmen, bevor die
+    # Achse gebildet wird.
+    #
+    # Bis 09.09.2026 baute dieses Skript die Dateien bei JEDEM Lauf
+    # komplett neu aus der Quelle auf. Was die Quelle an diesem Tag nicht
+    # hergab, war damit endgueltig weg - auch wenn es an einem frueheren
+    # Lauf schon einmal sauber erfasst worden war. Genau so ging der
+    # 07.09.2026 verloren: Yahoo hing fuer die 40 europaeischen Werte auf
+    # dem 04.09., marktdaten.csv fuehrt nur EINEN Tag je Ticker und konnte
+    # deshalb nur den 08.09. nachliefern, und der Montag fiel aus der
+    # Achse. Bei drei Laeufen taeglich darf ein einzelner Ausfall keinen
+    # Handelstag kosten.
+    #
+    # Deshalb jetzt additiv: frisch Abgerufenes gewinnt, alles andere
+    # bleibt stehen. Die Datei kann dadurch nur noch vollstaendiger
+    # werden, nie luecken- hafter. Nach einem einmaligen Nachtrag des
+    # 07.09. bleibt dieser dauerhaft erhalten.
+    def _bestand(pfad, neu_daten: dict) -> None:
+        if not pfad.exists():
+            return
+        uebernommen = 0
+        with open(pfad, newline="", encoding="utf-8") as f:
+            zeilen = csv.reader(f)
+            kopf = next(zeilen, None)
+            if not kopf:
+                return
+            alte_tage = kopf[1:]
+            for zeile in zeilen:
+                t = zeile[0]
+                ziel = neu_daten.setdefault(t, {})
+                for tag, wert in zip(alte_tage, zeile[1:]):
+                    if wert not in ("", None) and tag not in ziel:
+                        try:
+                            ziel[tag] = float(wert)
+                        except ValueError:
+                            continue
+                        alle_tage.add(tag)
+                        uebernommen += 1
+        if uebernommen:
+            print(f"  {uebernommen} Altwerte aus {pfad.name} uebernommen")
+
+    for pfad, daten in ((CSV_AUS, je_wert), (CSV_TIEF, je_tief),
+                        (CSV_HOCH, je_hoch), (CSV_EROEFF, je_eroeff)):
+        _bestand(pfad, daten)
+
     # Duenn besetzte Tage aus der Achse werfen, siehe MINDESTBESETZUNG.
     schwelle = len(je_wert) * MINDESTBESETZUNG
     gezaehlt = {d: sum(1 for w in je_wert.values() if d in w) for d in alle_tage}
@@ -359,6 +404,9 @@ def reihen() -> tuple[list[str], dict, dict, dict, dict]:
         print(f"  {len(verworfen)} Tage verworfen (unter "
               f"{MINDESTBESETZUNG:.0%} der Werte): "
               + ", ".join(f"{d} ({gezaehlt[d]})" for d in verworfen))
+    # Fenster erst NACH dem Zusammenfuehren begrenzen: der Bestand kann
+    # weiter zurueckreichen als die frisch abgerufenen TAGE Kerzen.
+    behalten = behalten[-TAGE:]
     return behalten, je_wert, je_tief, je_hoch, je_eroeff
 
 

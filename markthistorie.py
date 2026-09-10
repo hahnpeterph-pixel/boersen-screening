@@ -56,9 +56,24 @@ def universum() -> list[str]:
     pfad = os.path.join(HIER, "universe.json")
     with open(pfad, encoding="utf-8") as f:
         u = json.load(f)
+    # universe.json ist uneinheitlich aufgebaut: DOW, NASDAQ, SP100, DAX und
+    # Watchlist sind LISTEN von Tickern, COMMODITIES, CRYPTO und benchmarks
+    # dagegen Dictionaries mit Ticker als Schluessel. Die erste Fassung rief
+    # blind .keys() auf und brach am 10.09.2026 mit "'list' object has no
+    # attribute 'keys'" ab. Beide Formen werden jetzt akzeptiert; die Gruppen
+    # COMMODITIES, CRYPTO und benchmarks bleiben ohnehin draussen.
     tickers = []
     for gruppe in ("DOW", "NASDAQ", "SP100", "DAX", "Watchlist"):
-        tickers += list(u.get(gruppe, {}).keys())
+        eintrag = u.get(gruppe)
+        if isinstance(eintrag, dict):
+            tickers += list(eintrag.keys())
+        elif isinstance(eintrag, list):
+            tickers += [str(x) for x in eintrag]
+        elif eintrag is not None:
+            print(f"  Gruppe {gruppe}: unerwarteter Typ "
+                  f"{type(eintrag).__name__} - uebersprungen")
+    if not tickers:
+        sys.exit("universe.json lieferte keine Ticker - Abbruch.")
     raus = [t for t in tickers if t.endswith("=F") or t.endswith("=X")]
     if raus:
         print(f"  {len(raus)} Rohstoffe/Devisen ausgeschlossen")

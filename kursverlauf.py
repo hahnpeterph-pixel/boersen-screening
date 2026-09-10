@@ -91,6 +91,24 @@ CSV_HOCH = DOCS / "kursverlauf_hoch.csv"
 # unter dem Vortagsschluss, war als Kerze aber gruen.
 CSV_EROEFF = DOCS / "kursverlauf_eroeffnung.csv"
 
+# Fuenfte Datei, ergaenzt am 10.09.2026: das TAGESVOLUMEN je Wert.
+#
+# Anlass war eine Frage, die sich ohne Volumenhistorie nicht beantworten
+# liess. Am 09.09.2026 fielen 166 von 202 Werten, aber der Median des
+# Volumendrucks lag bei den gefallenen Werten bei 0,55 und bei den
+# gestiegenen bei 1,40 - die Verkaeufe liefen auf duennem Umsatz. Ob das
+# ein Tagesphaenomen war oder seit Tagen anhielt, war nicht feststellbar:
+# marktdaten.csv fuehrt mit vol_druck5 nur den jeweils aktuellen Tag.
+#
+# Die Datei enthaelt Rohvolumina, keine Relativwerte. Der Bezug (Mittel
+# ueber n Tage) laesst sich daraus jederzeit rechnen, umgekehrt nicht.
+CSV_VOLUMEN = DOCS / "kursverlauf_volumen.csv"
+
+# Begleitbericht zur Volumendatei: jede fehlende Zelle mit Begruendung.
+# Wird bei JEDEM Lauf geschrieben, auch wenn er sauber ist - eine leere
+# Datei ist die Aussage "keine Luecke", eine fehlende Datei waere keine.
+CSV_VOL_BERICHT = DOCS / "kursverlauf_volumen_luecken.csv"
+
 # 130 Handelstage sind rund ein halbes Jahr. Der laengste Rueckblick im
 # Blatt Rueckblick geht ueber 63 Handelstage; damit bleibt Platz fuer
 # Kaeufe, die schon einige Wochen zurueckliegen, ohne die Datei unnoetig
@@ -147,7 +165,7 @@ UNIVERSUM = list(dict.fromkeys(US + DAX + WEITERE))
 MINDESTBESETZUNG = 0.10
 
 
-def reihen() -> tuple[list[str], dict, dict, dict, dict]:
+def reihen() -> tuple[list[str], dict, dict, dict, dict, dict]:
     """Schlusskurse je Wert, plus die gemeinsame Liste der Handelstage.
 
     Die Tage werden ueber ALLE Werte gesammelt, nicht je Wert einzeln:
@@ -160,6 +178,7 @@ def reihen() -> tuple[list[str], dict, dict, dict, dict]:
     je_tief: dict[str, dict[str, float]] = {}
     je_hoch: dict[str, dict[str, float]] = {}
     je_eroeff: dict[str, dict[str, float]] = {}
+    je_volumen: dict[str, dict[str, float]] = {}
     alle_tage: set[str] = set()
     roh: dict[str, "pd.DataFrame"] = {}
     jetzt = datetime.now(timezone.utc)
@@ -273,6 +292,7 @@ def reihen() -> tuple[list[str], dict, dict, dict, dict]:
     # Wert mehrere Tage zurueck, schliesst das nur die juengste Luecke -
     # den Rest meldet die Vollstaendigkeitspruefung weiterhin.
     aus_marktdaten = 0
+    ersatzkerzen: dict[str, str] = {}
     if markt.exists():
         with open(markt, newline="", encoding="utf-8") as f:
             zeilen_md = {z["ticker"]: z for z in csv.DictReader(f)}
@@ -286,7 +306,11 @@ def reihen() -> tuple[list[str], dict, dict, dict, dict]:
                 tag = pd.Timestamp(z["datum"])
                 neue = pd.DataFrame(
                     {"Open": [float(z["open"])], "High": [float(z["high"])],
-                     "Low": [float(z["low"])], "Close": [float(z["kurs"])]},
+                     "Low": [float(z["low"])], "Close": [float(z["kurs"])],
+                     # marktdaten.csv fuehrt kein Volumen. Die Ersatzkerze
+                     # traegt deshalb NaN - besser eine ehrliche Luecke als
+                     # eine erfundene Null, die jeden Durchschnitt verzerrt.
+                     "Volume": [float("nan")]},
                     index=[tag])
             except (KeyError, TypeError, ValueError):
                 rest.append(t)
@@ -295,6 +319,7 @@ def reihen() -> tuple[list[str], dict, dict, dict, dict]:
                 rest.append(t)
                 continue
             roh[t] = pd.concat([roh[t], neue])
+            ersatzkerzen[t] = str(tag.date())
             aus_marktdaten += 1
         if aus_marktdaten:
             print(f"  {aus_marktdaten} Werte aus marktdaten.csv ergaenzt")
@@ -342,6 +367,10 @@ def reihen() -> tuple[list[str], dict, dict, dict, dict]:
                       for d, v in zip(letzte.index, letzte["High"])}
         je_eroeff[t] = {str(d.date()): round(float(v), 4)
                         for d, v in zip(letzte.index, letzte["Open"])}
+        if "Volume" in letzte.columns:
+            je_volumen[t] = {str(d.date()): round(float(v))
+                             for d, v in zip(letzte.index, letzte["Volume"])
+                             if pd.notna(v)}
         alle_tage.update(werte)
 
     if not je_wert:
@@ -349,51 +378,6 @@ def reihen() -> tuple[list[str], dict, dict, dict, dict]:
         # zwei zurueck und haette hier mit ValueError abgebrochen, statt
         # die vorgesehene Meldung auszugeben (Fund 09.09.2026).
         return [], {}, {}, {}, {}
-
-    # Bestand aus der bereits geschriebenen Datei uebernehmen, bevor die
-    # Achse gebildet wird.
-    #
-    # Bis 09.09.2026 baute dieses Skript die Dateien bei JEDEM Lauf
-    # komplett neu aus der Quelle auf. Was die Quelle an diesem Tag nicht
-    # hergab, war damit endgueltig weg - auch wenn es an einem frueheren
-    # Lauf schon einmal sauber erfasst worden war. Genau so ging der
-    # 07.09.2026 verloren: Yahoo hing fuer die 40 europaeischen Werte auf
-    # dem 04.09., marktdaten.csv fuehrt nur EINEN Tag je Ticker und konnte
-    # deshalb nur den 08.09. nachliefern, und der Montag fiel aus der
-    # Achse. Bei drei Laeufen taeglich darf ein einzelner Ausfall keinen
-    # Handelstag kosten.
-    #
-    # Deshalb jetzt additiv: frisch Abgerufenes gewinnt, alles andere
-    # bleibt stehen. Die Datei kann dadurch nur noch vollstaendiger
-    # werden, nie luecken- hafter. Nach einem einmaligen Nachtrag des
-    # 07.09. bleibt dieser dauerhaft erhalten.
-    def _bestand(pfad, neu_daten: dict) -> None:
-        if not pfad.exists():
-            return
-        uebernommen = 0
-        with open(pfad, newline="", encoding="utf-8") as f:
-            zeilen = csv.reader(f)
-            kopf = next(zeilen, None)
-            if not kopf:
-                return
-            alte_tage = kopf[1:]
-            for zeile in zeilen:
-                t = zeile[0]
-                ziel = neu_daten.setdefault(t, {})
-                for tag, wert in zip(alte_tage, zeile[1:]):
-                    if wert not in ("", None) and tag not in ziel:
-                        try:
-                            ziel[tag] = float(wert)
-                        except ValueError:
-                            continue
-                        alle_tage.add(tag)
-                        uebernommen += 1
-        if uebernommen:
-            print(f"  {uebernommen} Altwerte aus {pfad.name} uebernommen")
-
-    for pfad, daten in ((CSV_AUS, je_wert), (CSV_TIEF, je_tief),
-                        (CSV_HOCH, je_hoch), (CSV_EROEFF, je_eroeff)):
-        _bestand(pfad, daten)
 
     # Duenn besetzte Tage aus der Achse werfen, siehe MINDESTBESETZUNG.
     schwelle = len(je_wert) * MINDESTBESETZUNG
@@ -404,10 +388,35 @@ def reihen() -> tuple[list[str], dict, dict, dict, dict]:
         print(f"  {len(verworfen)} Tage verworfen (unter "
               f"{MINDESTBESETZUNG:.0%} der Werte): "
               + ", ".join(f"{d} ({gezaehlt[d]})" for d in verworfen))
-    # Fenster erst NACH dem Zusammenfuehren begrenzen: der Bestand kann
-    # weiter zurueckreichen als die frisch abgerufenen TAGE Kerzen.
-    behalten = behalten[-TAGE:]
-    return behalten, je_wert, je_tief, je_hoch, je_eroeff
+    return behalten, je_wert, je_tief, je_hoch, je_eroeff, je_volumen, ersatzkerzen
+
+
+def volumen_luecken(tage: list[str], je_wert: dict, je_volumen: dict,
+                    ersatzkerzen: dict[str, str]) -> list[tuple[str, str, str]]:
+    """Jede fehlende Volumenzelle mit Begruendung, oder ohne.
+
+    Die Volumendatei darf nicht stillschweigend luecken- haft sein. Es gibt
+    aber genau EINEN legitimen Grund fuer eine fehlende Zelle: die Kerze
+    wurde aus marktdaten.csv nachgetragen, weil die Erstquelle veraltet war -
+    und marktdaten.csv fuehrt kein Volumen. Diese Faelle sind bekannt und
+    stehen in ersatzkerzen.
+
+    Jede andere Luecke ist ein echter Fehler und muss den Lauf abbrechen.
+    Zurueckgegeben wird je Luecke (Ticker, Tag, Grund); Grund ist entweder
+    "Ersatzkerze aus marktdaten.csv" oder "unbekannt".
+    """
+    luecken = []
+    for t, kurse in je_wert.items():
+        vol = je_volumen.get(t, {})
+        for tag in tage:
+            if tag not in kurse:
+                continue          # kein Kurs, also auch kein Volumen erwartet
+            if tag in vol:
+                continue
+            grund = ("Ersatzkerze aus marktdaten.csv"
+                     if ersatzkerzen.get(t) == tag else "unbekannt")
+            luecken.append((t, tag, grund))
+    return luecken
 
 
 def _eine_datei(pfad, tage: list[str], je_wert: dict) -> None:
@@ -420,7 +429,7 @@ def _eine_datei(pfad, tage: list[str], je_wert: dict) -> None:
 
 
 def schreiben(tage: list[str], je_wert: dict, je_tief: dict,
-              je_hoch: dict, je_eroeff: dict) -> None:
+              je_hoch: dict, je_eroeff: dict, je_volumen: dict) -> None:
     DOCS.mkdir(exist_ok=True)
     _eine_datei(CSV_AUS, tage, je_wert)
     # Dieselbe Tagesachse wie die Schlusskursdatei - dadurch sind die drei
@@ -429,15 +438,38 @@ def schreiben(tage: list[str], je_wert: dict, je_tief: dict,
     _eine_datei(CSV_TIEF, tage, je_tief)
     _eine_datei(CSV_HOCH, tage, je_hoch)
     _eine_datei(CSV_EROEFF, tage, je_eroeff)
+    _eine_datei(CSV_VOLUMEN, tage, je_volumen)
 
 
 def main() -> None:
     kurse.aufraeumen()
-    tage, je_wert, je_tief, je_hoch, je_eroeff = reihen()
+    tage, je_wert, je_tief, je_hoch, je_eroeff, je_volumen, ersatzkerzen = reihen()
     if not je_wert:
         print("Keine Kursdaten erhalten - nichts geschrieben.")
         return
-    schreiben(tage, je_wert, je_tief, je_hoch, je_eroeff)
+    schreiben(tage, je_wert, je_tief, je_hoch, je_eroeff, je_volumen)
+
+    # Volumenpruefung. Der Bericht wird IMMER geschrieben, damit auch die
+    # erwarteten Luecken nachvollziehbar bleiben und nicht stillschweigend
+    # verschwinden. Unerklaerte Luecken lassen den Lauf abbrechen.
+    luecken = volumen_luecken(tage, je_wert, je_volumen, ersatzkerzen)
+    with open(CSV_VOL_BERICHT, "w", encoding="utf-8", newline="") as f:
+        w = csv.writer(f)
+        w.writerow(["ticker", "tag", "grund"])
+        w.writerows(luecken)
+    erwartet = [x for x in luecken if x[2] != "unbekannt"]
+    offen = [x for x in luecken if x[2] == "unbekannt"]
+    zellen = sum(len(v) for v in je_wert.values())
+    print(f"  Volumen: {zellen - len(luecken)}/{zellen} Zellen besetzt, "
+          f"{len(erwartet)} erwartete Luecken (Ersatzkerzen), "
+          f"{len(offen)} unerklaerte")
+    if offen:
+        for t, tag, _ in offen[:40]:
+            print(f"    FEHLT: {t} am {tag}")
+        raise SystemExit(
+            f"{len(offen)} Volumenzellen fehlen ohne erkennbaren Grund. "
+            f"Einzelheiten in {CSV_VOL_BERICHT.name}."
+        )
     print(f"Zeitraum {tage[0]} bis {tage[-1]}. "
           f"Erstellt {datetime.now(timezone.utc):%Y-%m-%d %H:%M} UTC.")
 

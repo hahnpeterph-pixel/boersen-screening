@@ -1,6 +1,6 @@
 # Tiefs, Volumen und Kaufregel-Check
 
-_Erstellt 2026-09-10 20:14 UTC. Fenster: letzte 90 Kalendertage. Tiefs nach der Umkehr-Regel (tiefs_regel.py): ein Tief zaehlt, sobald eine spaetere Kerze das Hoch der Tiefkerze ueberschreitet. Solange es abwaerts geht, gilt das tiefste Tief der Strecke. Gerechnet wird auf abgeschlossenen Tageskerzen._
+_Erstellt 2026-09-10 21:30 UTC. Fenster: letzte 90 Kalendertage. Tiefs nach der Umkehr-Regel (tiefs_regel.py): ein Tief zaehlt, sobald eine spaetere Kerze das Hoch der Tiefkerze ueberschreitet. Solange es abwaerts geht, gilt das tiefste Tief der Strecke. Gerechnet wird auf abgeschlossenen Tageskerzen._
 
 ## Kaufregel
 
@@ -41,7 +41,7 @@ Nur fuer Positionen mit `typ: Bestand`. RSI(14) nach Wilder-Glaettung; ab 70 gil
 | Micron (MU) | 53,3 | ja | VERKAUFSSIGNAL (Umkehrkerze) | X |
 | Microsoft (MSFT) | 55,0 | nein | unauffaellig | + |
 | Microsoft II (MSFT) | 55,0 | nein | unauffaellig | + |
-| Oracle (ORCL) | 53,7 | ja | VERKAUFSSIGNAL (Umkehrkerze) | X |
+| Oracle (ORCL) | 53,5 | ja | VERKAUFSSIGNAL (Umkehrkerze) | X |
 | Gold (Spot) (XAUUSD=X) | k.A. | k.A. | k.A. | - |
 
 _Legende: `+` unauffaellig, `!` beobachten (ab 60 RSI), `!!` ueberkauft (ab 70 RSI), `X` Umkehrkerze — reines Warnsignal, kein automatischer Verkauf._
@@ -101,7 +101,7 @@ Tief minus 2,0 x ATR. Die Hebelangabe ist das, was sich bei diesem KO rechnerisc
 | Micron (MU) | 977,41 | 44,51 | 884,47 | 10,5x | 648,85 | 3,0x |
 | Microsoft (MSFT) | 492,44 | 10,15 | 465,70 | 18,4x | 328,90 | 3,0x |
 | Microsoft II (MSFT) | 492,44 | 10,15 | 465,70 | 18,4x | 328,90 | 3,0x |
-| Oracle (ORCL) | 153,17 | 6,78 | 139,05 | 10,8x | 100,94 | 2,9x |
+| Oracle (ORCL) | 152,94 | 6,78 | 139,05 | 11,0x | 100,94 | 2,9x |
 
 _'nach Trendtief' orientiert sich am juengsten Tief und laesst mehr Hebel zu. 'konservativ' orientiert sich am tiefsten Tief des Fensters und ueberlebt auch einen Rueckfall dorthin._
 
@@ -115,16 +115,16 @@ _'nach Trendtief' orientiert sich am juengsten Tief und laesst mehr Hebel zu. 'k
 | Meta Platforms (META) | 01.09.2026 | 556,10 | 15,8 Mio. | 1,03x | 6,7 % |
 | Meta Platforms (META) | 19.08.2026 | 537,27 | 17,0 Mio. | 1,00x | 3,4 % |
 | Meta Platforms (META) | 30.07.2026 | 524,49 | 42,3 Mio. | 2,22x (Kapitulation) | 1,1 % |
-| Micron (MU) | 10.09.2026 | 973,50 | 24,7 Mio. | 0,90x | 11,7 % |
+| Micron (MU) | 10.09.2026 | 973,50 | 25,6 Mio. | 0,93x | 11,7 % |
 | Micron (MU) | 03.09.2026 | 918,88 | 24,2 Mio. | 0,86x | 6,4 % |
 | Micron (MU) | 24.08.2026 | 887,61 | 30,0 Mio. | 0,77x (duenn) | 3,1 % |
-| Microsoft (MSFT) | 10.09.2026 | 486,00 | 14,4 Mio. | 0,66x (duenn) | 28,3 % |
+| Microsoft (MSFT) | 10.09.2026 | 486,00 | 15,9 Mio. | 0,72x (duenn) | 28,3 % |
 | Microsoft (MSFT) | 02.09.2026 | 493,81 | 15,3 Mio. | 0,61x (duenn) | 29,5 % |
 | Microsoft (MSFT) | 21.08.2026 | 478,53 | 22,5 Mio. | 0,61x (duenn) | 27,2 % |
-| Microsoft II (MSFT) | 10.09.2026 | 486,00 | 14,4 Mio. | 0,66x (duenn) | 2,3 % |
+| Microsoft II (MSFT) | 10.09.2026 | 486,00 | 15,9 Mio. | 0,72x (duenn) | 2,3 % |
 | Microsoft II (MSFT) | 02.09.2026 | 493,81 | 15,3 Mio. | 0,61x (duenn) | 3,8 % |
 | Microsoft II (MSFT) | 21.08.2026 | 478,53 | 22,5 Mio. | 0,61x (duenn) | 0,8 % |
-| Oracle (ORCL) | 10.09.2026 | 152,61 | 38,1 Mio. | 1,63x (Kapitulation) | 26,1 % |
+| Oracle (ORCL) | 10.09.2026 | 152,61 | 50,9 Mio. | 2,18x (Kapitulation) | 26,1 % |
 | Oracle (ORCL) | 02.09.2026 | 139,72 | 21,9 Mio. | 0,97x | 19,3 % |
 | Oracle (ORCL) | 24.08.2026 | 141,25 | 14,2 Mio. | 0,49x (duenn) | 20,2 % |
 
@@ -136,9 +136,9 @@ _Diese Zeilen in die gelben Spalten uebertragen. Reihenfolge wie dort._
 |---|---|---|---|---|---|---|
 | TTWO | 216,96 | 8,23 | 37,4 | 231,58 | 2026-08-20 | 0,85 |
 | META | 644,38 | 20,67 | 66,4 | 524,52 | 2026-07-30 | 1,03 |
-| MU | 977,41 | 44,51 | 53,3 | 915,18 | 2026-08-19 | 0,90 |
-| MSFT | 492,44 | 10,15 | 55,0 | 477,15 | 2026-08-18 | 0,66 |
-| ORCL | 153,17 | 6,78 | 53,7 | 137,44 | 2026-08-19 | 1,63 |
+| MU | 977,41 | 44,51 | 53,3 | 915,18 | 2026-08-19 | 0,93 |
+| MSFT | 492,44 | 10,15 | 55,0 | 477,15 | 2026-08-18 | 0,72 |
+| ORCL | 152,94 | 6,78 | 53,5 | 137,44 | 2026-08-19 | 2,18 |
 | NVDA | 218,36 | 7,72 | 49,8 | 217,20 | 2026-09-10 | - |
 | AMAT | 454,01 | 16,03 | 40,8 | 450,56 | 2026-09-10 | - |
 

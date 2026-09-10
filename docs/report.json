@@ -4,16 +4,16 @@
   "turnaround": [
    "SAP.DE",
    "MDB",
-   "MTX.DE",
+   "GM",
    "NOW",
+   "MTX.DE",
    "KO",
    "BNY",
    "FANG",
-   "GM",
+   "XOM",
    "TRV",
    "BAS.DE",
    "DTE.DE",
-   "XOM",
    "FAST",
    "LMT",
    "FRE.DE"
@@ -32,8 +32,8 @@
    "RWE.DE",
    "BNR.DE",
    "MRNA",
-   "ILMN",
-   "KO"
+   "GM",
+   "XOM"
   ],
   "value": [
    "MU",
@@ -55,99 +55,12 @@
  },
  "changes": {
   "turnaround": {
-   "entries": [
-    {
-     "ticker": "MDB",
-     "rank": 2
-    },
-    {
-     "ticker": "NOW",
-     "rank": 4
-    },
-    {
-     "ticker": "GM",
-     "rank": 8
-    },
-    {
-     "ticker": "TRV",
-     "rank": 9
-    },
-    {
-     "ticker": "BAS.DE",
-     "rank": 10
-    },
-    {
-     "ticker": "DTE.DE",
-     "rank": 11
-    },
-    {
-     "ticker": "XOM",
-     "rank": 12
-    },
-    {
-     "ticker": "FAST",
-     "rank": 13
-    },
-    {
-     "ticker": "LMT",
-     "rank": 14
-    },
-    {
-     "ticker": "FRE.DE",
-     "rank": 15
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "MDT",
-     "old_rank": 2
-    },
-    {
-     "ticker": "TMO",
-     "old_rank": 3
-    },
-    {
-     "ticker": "WDAY",
-     "old_rank": 5
-    },
-    {
-     "ticker": "EMR",
-     "old_rank": 6
-    },
-    {
-     "ticker": "JPM",
-     "old_rank": 7
-    },
-    {
-     "ticker": "COF",
-     "old_rank": 8
-    },
-    {
-     "ticker": "CTSH",
-     "old_rank": 12
-    },
-    {
-     "ticker": "AIR.DE",
-     "old_rank": 13
-    },
-    {
-     "ticker": "T",
-     "old_rank": 14
-    },
-    {
-     "ticker": "COP",
-     "old_rank": 15
-    }
-   ],
+   "entries": [],
+   "exits": [],
    "moves": [
     {
-     "ticker": "MTX.DE",
+     "ticker": "GM",
      "rank": 3,
-     "delta": 8
-    },
-    {
-     "ticker": "KO",
-     "rank": 5,
      "delta": 5
     }
    ]
@@ -155,38 +68,22 @@
   "momentum": {
    "entries": [
     {
-     "ticker": "TEAM",
-     "rank": 4
+     "ticker": "GM",
+     "rank": 14
     },
     {
-     "ticker": "BAS.DE",
-     "rank": 8
-    },
-    {
-     "ticker": "BNR.DE",
-     "rank": 12
-    },
-    {
-     "ticker": "MRNA",
-     "rank": 13
+     "ticker": "XOM",
+     "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "CVX",
-     "old_rank": 7
+     "ticker": "ILMN",
+     "old_rank": 14
     },
     {
-     "ticker": "MRVL",
-     "old_rank": 8
-    },
-    {
-     "ticker": "BAYN.DE",
-     "old_rank": 9
-    },
-    {
-     "ticker": "MRK",
-     "old_rank": 11
+     "ticker": "KO",
+     "old_rank": 15
     }
    ],
    "moves": []

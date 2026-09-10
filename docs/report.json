@@ -3,9 +3,7 @@
  "ranks": {
   "turnaround": [
    "SAP.DE",
-   "DTE.DE",
    "MDT",
-   "SHL.DE",
    "TMO",
    "BNY",
    "WDAY",
@@ -13,25 +11,27 @@
    "JPM",
    "COF",
    "FANG",
-   "MTX.DE",
    "KO",
-   "HEN3.DE",
-   "CTSH"
+   "MTX.DE",
+   "CTSH",
+   "AIR.DE",
+   "T",
+   "COP"
   ],
   "momentum": [
    "BNY",
    "AMD",
-   "MU",
    "CBK.DE",
-   "MS",
+   "DBK.DE",
+   "MU",
    "COP",
-   "BAYN.DE",
    "CVX",
    "MRVL",
+   "BAYN.DE",
    "ILMN",
-   "BAS.DE",
    "MRK",
-   "BNR.DE",
+   "RWE.DE",
+   "DHL.DE",
    "FANG",
    "KO"
   ],
@@ -43,10 +43,10 @@
    "ABNB",
    "BLK",
    "MNST",
-   "MTX.DE",
    "COP",
    "REGN",
    "V",
+   "MTX.DE",
    "VRTX",
    "DXCM",
    "DB1.DE",
@@ -57,64 +57,61 @@
   "turnaround": {
    "entries": [
     {
-     "ticker": "SHL.DE",
-     "rank": 4
+     "ticker": "AIR.DE",
+     "rank": 13
     },
     {
-     "ticker": "HEN3.DE",
+     "ticker": "T",
      "rank": 14
     },
     {
-     "ticker": "CTSH",
+     "ticker": "COP",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "AIR.DE",
-     "old_rank": 11
+     "ticker": "DTE.DE",
+     "old_rank": 2
     },
     {
-     "ticker": "BAS.DE",
+     "ticker": "SHL.DE",
+     "old_rank": 4
+    },
+    {
+     "ticker": "HEN3.DE",
      "old_rank": 14
-    },
-    {
-     "ticker": "BAYN.DE",
-     "old_rank": 15
     }
    ],
-   "moves": [
-    {
-     "ticker": "DTE.DE",
-     "rank": 2,
-     "delta": 11
-    },
-    {
-     "ticker": "MTX.DE",
-     "rank": 12,
-     "delta": -9
-    }
-   ]
+   "moves": []
   },
   "momentum": {
    "entries": [
     {
-     "ticker": "MS",
-     "rank": 5
+     "ticker": "DBK.DE",
+     "rank": 4
     },
     {
-     "ticker": "KO",
-     "rank": 15
+     "ticker": "RWE.DE",
+     "rank": 12
+    },
+    {
+     "ticker": "DHL.DE",
+     "rank": 13
     }
    ],
    "exits": [
     {
-     "ticker": "DBK.DE",
-     "old_rank": 4
+     "ticker": "MS",
+     "old_rank": 5
     },
     {
-     "ticker": "RWE.DE",
-     "old_rank": 9
+     "ticker": "BAS.DE",
+     "old_rank": 11
+    },
+    {
+     "ticker": "BNR.DE",
+     "old_rank": 13
     }
    ],
    "moves": []

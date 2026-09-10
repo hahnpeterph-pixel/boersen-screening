@@ -1,8 +1,8 @@
 # Stundenwache
 
-Stand: 2026-09-09 · 158 Werte mit Stundendaten · erstellt 2026-09-10 09:29 UTC
+Stand: 2026-09-09 · 158 Werte mit Stundendaten · erstellt 2026-09-10 11:14 UTC
 
-> **Sitzung noch nicht abgeschlossen.** 40 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 3, 7). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
+> **Sitzung noch nicht abgeschlossen.** 40 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 4, 7). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
 
 Marken sind das juengste Swing-Tief und das juengste Swing-Hoch aus `tiefs_regel.py`, also dieselben wie im Tagesbericht. Geprueft wird nur, was der letzte Handelstag auf Stundenbasis damit gemacht hat.
 
@@ -13,15 +13,19 @@ Lesart der Urteile:
 - **angetestet** - nur mit dem Docht beruehrt, kein Schluss dahinter
 - **unklar** - Stunden- und Tagesreihe passen nicht zusammen, siehe unten
 
-## Tief gebrochen (0)
+## Tief gebrochen (1)
 
-Keine.
+Schluss unter dem juengsten Swing-Tief. Die Sequenz ist gerissen.
+
+| Wert | Marke | Schluss | Abstand (ATR) | Stunden dahinter |
+|---|---|---|---|---|
+| BAS.DE | 52.36 | 52.34 | -0.02 | 1 |
 
 ## Tief zurueckerobert (0)
 
 Keine.
 
-## Tief angetestet (21)
+## Tief angetestet (19)
 
 Docht bis unter die Marke, kein Stundenschluss darunter.
 
@@ -29,27 +33,25 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 |---|---|---|---|---|
 | PDD | 78.57 | 78.615 | 0.02 | 0 |
 | MCD | 253.35 | 253.53 | 0.045 | 0 |
-| VNA.DE | 18.4 | 18.42 | 0.052 | 0 |
 | ROST | 224.84 | 225.3 | 0.078 | 0 |
 | KDP | 31.99 | 32.08 | 0.136 | 0 |
 | SHW | 319.61 | 320.71 | 0.158 | 0 |
 | FAST | 48.6 | 48.79 | 0.182 | 0 |
 | MSFT | 489.8 | 491.77 | 0.199 | 0 |
 | CSGP | 29.33 | 29.58 | 0.205 | 0 |
+| VNA.DE | 18.4 | 18.495 | 0.256 | 0 |
 | EXC | 43.48 | 43.72 | 0.301 | 0 |
 | TTWO | 208.52 | 211.091 | 0.314 | 0 |
 | AMZN | 250.65 | 252.48 | 0.321 | 0 |
 | AEP | 123.92 | 124.7 | 0.377 | 0 |
-| CON.DE | 69.24 | 69.94 | 0.405 | 0 |
 | DXCM | 82.8 | 83.91 | 0.465 | 0 |
-| HNR1.DE | 246.8 | 248.6 | 0.506 | 0 |
 | XEL | 75.45 | 76.17 | 0.531 | 0 |
 | REGN | 796.73 | 807.66 | 0.553 | 0 |
-| DB1.DE | 272.1 | 275.4 | 0.643 | 0 |
 | MNST | 42.19 | 42.84 | 0.653 | 0 |
-| MUV2.DE | 496.8 | 503.0 | 0.765 | 0 |
+| CON.DE | 69.24 | 71.02 | 1.023 | 0 |
+| DB1.DE | 272.1 | 277.6 | 1.036 | 0 |
 
-## Swing-Hoch ueberwunden (15)
+## Swing-Hoch ueberwunden (13)
 
 | Wert | Hoch | Schluss | Abstand (ATR) | Stunden darueber |
 |---|---|---|---|---|
@@ -64,9 +66,7 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | BKR | 63.02 | 63.64 | 0.374 | 7 |
 | DDOG | 221.0 | 225.17 | 0.35 | 7 |
 | IBM | 238.29 | 239.95 | 0.295 | 3 |
-| RWE.DE | 60.3 | 60.54 | 0.172 | 3 |
-| DBK.DE | 35.03 | 35.12 | 0.116 | 3 |
-| BMW.DE | 62.72 | 62.84 | 0.075 | 3 |
+| BMW.DE | 62.72 | 62.8 | 0.05 | 4 |
 | WDAY | 185.82 | 186.04 | 0.026 | 1 |
 
 ## Reihen unstimmig - kein Urteil (0)

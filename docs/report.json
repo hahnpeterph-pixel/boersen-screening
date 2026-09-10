@@ -3,36 +3,36 @@
  "ranks": {
   "turnaround": [
    "SAP.DE",
-   "MDT",
-   "TMO",
-   "BNY",
-   "WDAY",
-   "EMR",
-   "JPM",
-   "COF",
-   "FANG",
-   "KO",
+   "MDB",
    "MTX.DE",
-   "CTSH",
-   "AIR.DE",
-   "T",
-   "COP"
+   "NOW",
+   "KO",
+   "BNY",
+   "FANG",
+   "GM",
+   "TRV",
+   "BAS.DE",
+   "DTE.DE",
+   "XOM",
+   "FAST",
+   "LMT",
+   "FRE.DE"
   ],
   "momentum": [
    "BNY",
-   "AMD",
    "CBK.DE",
-   "DBK.DE",
    "MU",
+   "TEAM",
+   "AMD",
+   "DBK.DE",
    "COP",
-   "CVX",
-   "MRVL",
-   "BAYN.DE",
-   "ILMN",
-   "MRK",
-   "RWE.DE",
+   "BAS.DE",
    "DHL.DE",
    "FANG",
+   "RWE.DE",
+   "BNR.DE",
+   "MRNA",
+   "ILMN",
    "KO"
   ],
   "value": [
@@ -43,75 +43,150 @@
    "ABNB",
    "BLK",
    "MNST",
-   "COP",
    "REGN",
    "V",
-   "MTX.DE",
+   "COP",
    "VRTX",
    "DXCM",
-   "DB1.DE",
-   "GE"
+   "MTX.DE",
+   "GE",
+   "DB1.DE"
   ]
  },
  "changes": {
   "turnaround": {
    "entries": [
     {
-     "ticker": "AIR.DE",
+     "ticker": "MDB",
+     "rank": 2
+    },
+    {
+     "ticker": "NOW",
+     "rank": 4
+    },
+    {
+     "ticker": "GM",
+     "rank": 8
+    },
+    {
+     "ticker": "TRV",
+     "rank": 9
+    },
+    {
+     "ticker": "BAS.DE",
+     "rank": 10
+    },
+    {
+     "ticker": "DTE.DE",
+     "rank": 11
+    },
+    {
+     "ticker": "XOM",
+     "rank": 12
+    },
+    {
+     "ticker": "FAST",
      "rank": 13
     },
     {
-     "ticker": "T",
+     "ticker": "LMT",
      "rank": 14
     },
     {
-     "ticker": "COP",
+     "ticker": "FRE.DE",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "DTE.DE",
+     "ticker": "MDT",
      "old_rank": 2
     },
     {
-     "ticker": "SHL.DE",
-     "old_rank": 4
+     "ticker": "TMO",
+     "old_rank": 3
     },
     {
-     "ticker": "HEN3.DE",
+     "ticker": "WDAY",
+     "old_rank": 5
+    },
+    {
+     "ticker": "EMR",
+     "old_rank": 6
+    },
+    {
+     "ticker": "JPM",
+     "old_rank": 7
+    },
+    {
+     "ticker": "COF",
+     "old_rank": 8
+    },
+    {
+     "ticker": "CTSH",
+     "old_rank": 12
+    },
+    {
+     "ticker": "AIR.DE",
+     "old_rank": 13
+    },
+    {
+     "ticker": "T",
      "old_rank": 14
+    },
+    {
+     "ticker": "COP",
+     "old_rank": 15
     }
    ],
-   "moves": []
+   "moves": [
+    {
+     "ticker": "MTX.DE",
+     "rank": 3,
+     "delta": 8
+    },
+    {
+     "ticker": "KO",
+     "rank": 5,
+     "delta": 5
+    }
+   ]
   },
   "momentum": {
    "entries": [
     {
-     "ticker": "DBK.DE",
+     "ticker": "TEAM",
      "rank": 4
     },
     {
-     "ticker": "RWE.DE",
+     "ticker": "BAS.DE",
+     "rank": 8
+    },
+    {
+     "ticker": "BNR.DE",
      "rank": 12
     },
     {
-     "ticker": "DHL.DE",
+     "ticker": "MRNA",
      "rank": 13
     }
    ],
    "exits": [
     {
-     "ticker": "MS",
-     "old_rank": 5
+     "ticker": "CVX",
+     "old_rank": 7
     },
     {
-     "ticker": "BAS.DE",
+     "ticker": "MRVL",
+     "old_rank": 8
+    },
+    {
+     "ticker": "BAYN.DE",
+     "old_rank": 9
+    },
+    {
+     "ticker": "MRK",
      "old_rank": 11
-    },
-    {
-     "ticker": "BNR.DE",
-     "old_rank": 13
     }
    ],
    "moves": []

@@ -1,8 +1,8 @@
 # Boersen-Screening - 2026-09-11
 
-_Stand: Schlusskurse vom 2026-09-11, aber 170 Werte haengen zurueck - siehe Standwarnung. Erstellt 2026-09-11T09:28:00+00:00 UTC. 210 Werte ausgewertet._
+_Stand: Schlusskurse vom 2026-09-11, aber 171 Werte haengen zurueck - siehe Standwarnung. Erstellt 2026-09-11T10:21:43+00:00 UTC. 211 Werte ausgewertet._
 
-> **Standwarnung: 170 von 210 Werten haengen zurueck.** Neuester Handelstag im Bericht ist 2026-09-11.
+> **Standwarnung: 171 von 211 Werten haengen zurueck.** Neuester Handelstag im Bericht ist 2026-09-11.
 >
 > Ursache ist in aller Regel Yahoo: die vorlaeufige Tageskerze einer Boerse wird ueber Nacht durch die offizielle Abrechnung ersetzt, und solange die fehlt, faellt der Tag weg. Betroffen sind meist die europaeischen Notierungen. Fuer diese Werte gelten Kurs, ATR, RSI und Tiefs unten NICHT fuer den neuesten Handelstag.
 >
@@ -19,6 +19,7 @@ _Stand: Schlusskurse vom 2026-09-11, aber 170 Werte haengen zurueck - siehe Stan
 > | ADSK | 2026-09-10 |
 > | AEP | 2026-09-10 |
 > | AMAT | 2026-09-10 |
+> | AMD | 2026-09-10 |
 > | AMGN | 2026-09-10 |
 > | AMT | 2026-09-10 |
 > | AMZN | 2026-09-10 |
@@ -190,12 +191,12 @@ _Stand: Schlusskurse vom 2026-09-11, aber 170 Werte haengen zurueck - siehe Stan
 
 ## 🎯 Analysten-Filter (Kursziel ≥15%, Kaufen-Anteil ≥75%)
 
-_Ueber alle 210 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei Gleichstand nach Kurspotenzial. Maximal 20 Treffer. Value-Trap-Ausschluesse gelten auch hier. RSI auf drei Zeitebenen, jeweils echt neu berechnet (nicht umgerechnet): Tag, Woche, Stunde. "k.A." bei Stunde heisst: fuer diesen Wert lagen keine verwertbaren Stundenkerzen vor._
+_Ueber alle 211 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei Gleichstand nach Kurspotenzial. Maximal 20 Treffer. Value-Trap-Ausschluesse gelten auch hier. RSI auf drei Zeitebenen, jeweils echt neu berechnet (nicht umgerechnet): Tag, Woche, Stunde. "k.A." bei Stunde heisst: fuer diesen Wert lagen keine verwertbaren Stundenkerzen vor._
 
 | Rang | Ticker | ISIN | Name | Index | Kurs | Abstand ATH (Info) | Kaufen-Anteil Analysten | Kursziel | RSI Tag | RSI Woche | RSI Stunde | Letztes Rating |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 1 | NVDA | - | NVIDIA Corporation | NASDAQ/DOW | 218.36 | -7% | 100% (29 Banken, ≤120T) | 327.13 (50% ueber Kurs) | 50 | 56 | 32 | 2026-09-10 Piper Sandler: neu bewertet mit Overweight |
-| 2 | ASML | USN070592100 | ASML Holding N.V. - New York Re | NASDAQ | 1481.20 | -14% | 100% (5 Banken, ≤120T) | 2167.96 (46% ueber Kurs) | 48 | 56 | 51 | keine in 30T |
+| 2 | ASML | USN070592100 | ASML Holding N.V. - New York Re | NASDAQ | 1487.40 | -14% | 100% (5 Banken, ≤120T) | 2167.96 (46% ueber Kurs) | 49 | 56 | 54 | keine in 30T |
 | 3 | BA | - | Boeing Company (The) | DOW | 204.80 | -52% | 100% (6 Banken, ≤120T) | 274.85 (34% ueber Kurs) | 36 | 44 | 32 | keine in 30T |
 | 4 | AZN | GB0009895292 | AstraZeneca PLC | NASDAQ | 159.64 | -24% | 100% (1 Banken, ≤120T) | 212.54 (33% ueber Kurs) | 43 | 39 | 48 | 2026-08-24 CICC: neu bewertet mit Outperform |
 | 5 | TTWO | - | Take-Two Interactive Software, | NASDAQ | 216.96 | -17% | 100% (10 Banken, ≤120T) | 286.89 (32% ueber Kurs) | 37 | 44 | 56 | keine in 30T |
@@ -213,7 +214,7 @@ _Ueber alle 210 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 | 17 | MU | US5951121038 | Micron Technology, Inc. | NASDAQ | 977.41 | -19% | 96% (23 Banken, ≤120T) | 1513.11 (55% ueber Kurs) | 53 | 61 | 42 | 2026-08-25 Mizuho: Rating bestaetigt: Outperform |
 | 18 | AMZN | - | Amazon.com, Inc. | NASDAQ/DOW | 251.89 | -11% | 95% (20 Banken, ≤120T) | 328.17 (30% ueber Kurs) | 44 | 51 | 38 | 2026-09-03 Wells Fargo: Rating bestaetigt: Overweight |
 | 19 | MSFT | - | Microsoft Corporation | NASDAQ/DOW | 492.44 | -8% | 95% (22 Banken, ≤120T) | 572.92 (16% ueber Kurs) | 55 | 61 | 45 | 2026-09-04 Stifel: Rating bestaetigt: Hold |
-| 20 | DTE.DE | - | DEUTSCHE TELEKOM AG | DAX | 28.17 | -16% | 94% (18 Banken, ≤120T) | 36.93 (31% ueber Kurs) | 49 | 50 | 53 | keine in 30T |
+| 20 | DTE.DE | - | DEUTSCHE TELEKOM AG | DAX | 28.24 | -16% | 94% (18 Banken, ≤120T) | 36.93 (31% ueber Kurs) | 50 | 51 | 55 | keine in 30T |
 
 
 ## 🧭 Analysten-Einstufungen (Filtertreffer, letzte 30 Tage)
@@ -295,6 +296,6 @@ _Ueber alle 210 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 
 ---
 
-_Nicht auswertbar heute (2): AMD, HONA_
+_Nicht auswertbar heute (1): HONA_
 
 _Automatisch erzeugte Kennzahlensortierung, keine Anlageberatung._

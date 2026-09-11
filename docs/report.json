@@ -4,9 +4,10 @@
   "turnaround": [
    "SAP.DE",
    "MDB",
+   "FRE.DE",
    "NOW",
    "GM",
-   "MTX.DE",
+   "BNR.DE",
    "KO",
    "BNY",
    "FANG",
@@ -14,26 +15,25 @@
    "TRV",
    "LMT",
    "FAST",
-   "DBK.DE",
-   "BAYN.DE",
-   "MBG.DE"
+   "PCAR",
+   "PAH3.DE"
   ],
   "momentum": [
    "BNY",
    "CBK.DE",
    "MU",
    "TEAM",
-   "DBK.DE",
-   "FTNT",
-   "BAYN.DE",
+   "AMD",
+   "C",
+   "BNR.DE",
    "COP",
    "FANG",
-   "RWE.DE",
-   "MRNA",
    "DHL.DE",
+   "MRNA",
    "GM",
    "XOM",
-   "ILMN"
+   "ILMN",
+   "KO"
   ],
   "value": [
    "NVDA",
@@ -49,37 +49,45 @@
    "VRTX",
    "DXCM",
    "ODFL",
-   "DB1.DE",
-   "GE"
+   "GE",
+   "DB1.DE"
   ]
  },
  "changes": {
   "turnaround": {
    "entries": [
     {
-     "ticker": "DBK.DE",
-     "rank": 13
+     "ticker": "FRE.DE",
+     "rank": 3
     },
     {
-     "ticker": "BAYN.DE",
+     "ticker": "BNR.DE",
+     "rank": 6
+    },
+    {
+     "ticker": "PCAR",
      "rank": 14
     },
     {
-     "ticker": "MBG.DE",
+     "ticker": "PAH3.DE",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "BAS.DE",
-     "old_rank": 11
+     "ticker": "MTX.DE",
+     "old_rank": 5
     },
     {
-     "ticker": "DTE.DE",
-     "old_rank": 12
+     "ticker": "DBK.DE",
+     "old_rank": 13
     },
     {
-     "ticker": "FRE.DE",
+     "ticker": "BAYN.DE",
+     "old_rank": 14
+    },
+    {
+     "ticker": "MBG.DE",
      "old_rank": 15
     }
    ],
@@ -88,47 +96,45 @@
   "momentum": {
    "entries": [
     {
-     "ticker": "FTNT",
+     "ticker": "AMD",
+     "rank": 5
+    },
+    {
+     "ticker": "C",
      "rank": 6
     },
     {
-     "ticker": "BAYN.DE",
+     "ticker": "BNR.DE",
      "rank": 7
     },
     {
-     "ticker": "ILMN",
+     "ticker": "KO",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "AMD",
+     "ticker": "DBK.DE",
      "old_rank": 5
     },
     {
-     "ticker": "BAS.DE",
-     "old_rank": 8
+     "ticker": "FTNT",
+     "old_rank": 6
     },
     {
-     "ticker": "BNR.DE",
-     "old_rank": 12
+     "ticker": "BAYN.DE",
+     "old_rank": 7
+    },
+    {
+     "ticker": "RWE.DE",
+     "old_rank": 10
     }
    ],
    "moves": []
   },
   "value": {
-   "entries": [
-    {
-     "ticker": "ODFL",
-     "rank": 13
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "MTX.DE",
-     "old_rank": 13
-    }
-   ],
+   "entries": [],
+   "exits": [],
    "moves": []
   },
   "analyst_flips": []

@@ -2,38 +2,38 @@
  "date": "2026-09-11",
  "ranks": {
   "turnaround": [
-   "SAP.DE",
-   "MDB",
    "FRE.DE",
-   "NOW",
-   "GM",
-   "BNR.DE",
+   "KHC",
+   "MTX.DE",
    "KO",
-   "BNY",
+   "SAP.DE",
+   "BIIB",
    "FANG",
-   "XOM",
-   "TRV",
-   "LMT",
+   "BNY",
    "FAST",
+   "ABBV",
+   "TRV",
+   "DTE.DE",
    "PCAR",
+   "TEAM",
    "PAH3.DE"
   ],
   "momentum": [
    "BNY",
    "CBK.DE",
-   "MU",
    "TEAM",
    "AMD",
    "C",
-   "BNR.DE",
-   "COP",
-   "FANG",
+   "CSCO",
    "DHL.DE",
-   "MRNA",
-   "GM",
-   "XOM",
    "ILMN",
-   "KO"
+   "MRNA",
+   "RWE.DE",
+   "BIIB",
+   "FANG",
+   "CVX",
+   "KO",
+   "COP"
   ],
   "value": [
    "NVDA",
@@ -42,14 +42,14 @@
    "AVGO",
    "ABNB",
    "BLK",
-   "MNST",
    "REGN",
-   "V",
+   "MNST",
+   "MTX.DE",
    "COP",
+   "V",
    "VRTX",
    "DXCM",
    "ODFL",
-   "GE",
    "DB1.DE"
   ]
  },
@@ -57,38 +57,54 @@
   "turnaround": {
    "entries": [
     {
-     "ticker": "FRE.DE",
+     "ticker": "KHC",
+     "rank": 2
+    },
+    {
+     "ticker": "MTX.DE",
      "rank": 3
     },
     {
-     "ticker": "BNR.DE",
+     "ticker": "BIIB",
      "rank": 6
     },
     {
-     "ticker": "PCAR",
-     "rank": 14
+     "ticker": "ABBV",
+     "rank": 10
     },
     {
-     "ticker": "PAH3.DE",
-     "rank": 15
+     "ticker": "DTE.DE",
+     "rank": 12
+    },
+    {
+     "ticker": "TEAM",
+     "rank": 14
     }
    ],
    "exits": [
     {
-     "ticker": "MTX.DE",
+     "ticker": "MDB",
+     "old_rank": 2
+    },
+    {
+     "ticker": "NOW",
+     "old_rank": 4
+    },
+    {
+     "ticker": "GM",
      "old_rank": 5
     },
     {
-     "ticker": "DBK.DE",
-     "old_rank": 13
+     "ticker": "BNR.DE",
+     "old_rank": 6
     },
     {
-     "ticker": "BAYN.DE",
-     "old_rank": 14
+     "ticker": "XOM",
+     "old_rank": 10
     },
     {
-     "ticker": "MBG.DE",
-     "old_rank": 15
+     "ticker": "LMT",
+     "old_rank": 12
     }
    ],
    "moves": []
@@ -96,45 +112,66 @@
   "momentum": {
    "entries": [
     {
-     "ticker": "AMD",
-     "rank": 5
-    },
-    {
-     "ticker": "C",
+     "ticker": "CSCO",
      "rank": 6
     },
     {
-     "ticker": "BNR.DE",
-     "rank": 7
+     "ticker": "RWE.DE",
+     "rank": 10
     },
     {
-     "ticker": "KO",
-     "rank": 15
+     "ticker": "BIIB",
+     "rank": 11
+    },
+    {
+     "ticker": "CVX",
+     "rank": 13
     }
    ],
    "exits": [
     {
-     "ticker": "DBK.DE",
-     "old_rank": 5
+     "ticker": "MU",
+     "old_rank": 3
     },
     {
-     "ticker": "FTNT",
-     "old_rank": 6
-    },
-    {
-     "ticker": "BAYN.DE",
+     "ticker": "BNR.DE",
      "old_rank": 7
     },
     {
-     "ticker": "RWE.DE",
-     "old_rank": 10
+     "ticker": "GM",
+     "old_rank": 12
+    },
+    {
+     "ticker": "XOM",
+     "old_rank": 13
     }
    ],
-   "moves": []
+   "moves": [
+    {
+     "ticker": "ILMN",
+     "rank": 8,
+     "delta": 6
+    },
+    {
+     "ticker": "COP",
+     "rank": 15,
+     "delta": -7
+    }
+   ]
   },
   "value": {
-   "entries": [],
-   "exits": [],
+   "entries": [
+    {
+     "ticker": "MTX.DE",
+     "rank": 9
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "GE",
+     "old_rank": 14
+    }
+   ],
    "moves": []
   },
   "analyst_flips": []

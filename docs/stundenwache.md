@@ -1,8 +1,8 @@
 # Stundenwache
 
-Stand: 2026-09-10 · 158 Werte mit Stundendaten · erstellt 2026-09-11 10:22 UTC
+Stand: 2026-09-11 · 158 Werte mit Stundendaten · erstellt 2026-09-11 21:38 UTC
 
-> **Sitzung noch nicht abgeschlossen.** 40 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 4, 7). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
+> **Sitzung noch nicht abgeschlossen.** 1 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 6, 7, 9). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
 
 Marken sind das juengste Swing-Tief und das juengste Swing-Hoch aus `tiefs_regel.py`, also dieselben wie im Tagesbericht. Geprueft wird nur, was der letzte Handelstag auf Stundenbasis damit gemacht hat.
 
@@ -17,36 +17,44 @@ Lesart der Urteile:
 
 Keine.
 
-## Tief zurueckerobert (0)
+## Tief zurueckerobert (1)
 
-Keine.
+Im Tagesverlauf unter der Marke, am Ende darueber. Das ist der Fall, den die Tageskerze verschluckt.
 
-## Tief angetestet (10)
+| Wert | Marke | Schluss | Abstand (ATR) | Stunden dahinter |
+|---|---|---|---|---|
+| CRWD | 205.4 | 206.67 | 0.095 | 1 |
+
+## Tief angetestet (8)
 
 Docht bis unter die Marke, kein Stundenschluss darunter.
 
 | Wert | Marke | Schluss | Abstand (ATR) | Stunden dahinter |
 |---|---|---|---|---|
-| KDP | 31.44 | 31.47 | 0.046 | 0 |
-| ZAL.DE | 22.14 | 22.25 | 0.16 | 0 |
-| LIN | 460.2 | 461.49 | 0.173 | 0 |
-| LULU | 95.67 | 96.89 | 0.201 | 0 |
-| PAYX | 114.51 | 115.2 | 0.254 | 0 |
-| CRWD | 205.4 | 208.77 | 0.256 | 0 |
-| BNR.DE | 60.28 | 60.68 | 0.295 | 0 |
-| MMM | 161.3 | 162.865 | 0.509 | 0 |
-| TMUS | 174.65 | 177.08 | 0.585 | 0 |
-| BIIB | 208.93 | 215.45 | 1.146 | 0 |
+| MRK | 143.69 | 143.93 | 0.068 | 0 |
+| MCD | 252.17 | 252.52 | 0.093 | 0 |
+| AEP | 122.92 | 123.34 | 0.227 | 0 |
+| BNR.DE | 60.28 | 60.62 | 0.251 | 0 |
+| SPGI | 407.45 | 410.69 | 0.267 | 0 |
+| ADP | 265.0 | 267.945 | 0.594 | 0 |
+| KHC | 24.15 | 24.61 | 0.703 | 0 |
+| ILMN | 200.01 | 206.47 | 0.747 | 0 |
 
-## Swing-Hoch ueberwunden (5)
+## Swing-Hoch ueberwunden (11)
 
 | Wert | Hoch | Schluss | Abstand (ATR) | Stunden darueber |
 |---|---|---|---|---|
-| MRNA | 65.525 | 136.62 | 5.52 | 7 |
-| META | 593.34 | 644.37 | 2.469 | 7 |
-| FRE.DE | 45.2 | 45.47 | 0.284 | 3 |
-| DDOG | 221.0 | 221.71 | 0.06 | 7 |
-| FANG | 205.0 | 205.32 | 0.059 | 3 |
+| MRNA | 65.525 | 143.94 | 6.536 | 7 |
+| META | 593.34 | 648.23 | 2.574 | 7 |
+| ADI | 366.97 | 378.98 | 1.218 | 7 |
+| NXPI | 231.3 | 236.68 | 0.844 | 7 |
+| CSCO | 110.43 | 112.12 | 0.811 | 7 |
+| TXN | 262.74 | 268.7 | 0.804 | 7 |
+| IBM | 238.29 | 243.235 | 0.78 | 6 |
+| ON | 75.33 | 76.15 | 0.307 | 1 |
+| AAPL | 330.81 | 332.23 | 0.181 | 7 |
+| CTAS | 201.38 | 201.61 | 0.071 | 7 |
+| FRE.DE | 45.2 | 45.265 | 0.066 | 8 |
 
 ## Reihen unstimmig - kein Urteil (0)
 

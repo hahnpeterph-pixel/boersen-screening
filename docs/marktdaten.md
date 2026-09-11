@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-09-10 21:30 UTC. 218 Werte, Fenster 90 Kalendertage. EUR/USD 1.1609._
+_Erstellt 2026-09-11 09:28 UTC. 218 Werte, Fenster 90 Kalendertage. EUR/USD 1.1634._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -83,12 +83,9 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | SY1.DE (SY1.DE) | 87.96 | - | - | ja | 40.46 |
 | VNA.DE (VNA.DE) | 17.945 | - | - | ja | 25.24 |
 | ZAL.DE (ZAL.DE) | 22.27 | - | - | ja | 36.9 |
-| Gold (GC=F) | 4358.5 | - | ja | ja | 47.37 |
-| Silber (SI=F) | 64.09 | - | ja | ja | 46.57 |
-| Platin (PL=F) | 1784.1 | - | - | ja | 49.46 |
-| Palladium (PA=F) | 1290.5 | - | ja | ja | 44.45 |
-| Kupfer (HG=F) | 6.526 | - | ja | ja | 48.13 |
-| EUR/USD (EURUSD=X) | 1.1609 | - | - | ja | 52.95 |
+| Gold (GC=F) | 4364.5 | - | ja | ja | 47.76 |
+| Erdgas (NG=F) | 2.834 | ja | - | - | 48.42 |
+| Kupfer (HG=F) | 6.467 | - | - | ja | 45.54 |
 
 ---
 

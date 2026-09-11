@@ -1,43 +1,43 @@
 {
- "date": "2026-09-10",
+ "date": "2026-09-11",
  "ranks": {
   "turnaround": [
    "SAP.DE",
    "MDB",
-   "GM",
    "NOW",
+   "GM",
    "MTX.DE",
    "KO",
    "BNY",
    "FANG",
    "XOM",
    "TRV",
-   "BAS.DE",
-   "DTE.DE",
-   "FAST",
    "LMT",
-   "FRE.DE"
+   "FAST",
+   "DBK.DE",
+   "BAYN.DE",
+   "MBG.DE"
   ],
   "momentum": [
    "BNY",
    "CBK.DE",
    "MU",
    "TEAM",
-   "AMD",
    "DBK.DE",
+   "FTNT",
+   "BAYN.DE",
    "COP",
-   "BAS.DE",
-   "DHL.DE",
    "FANG",
    "RWE.DE",
-   "BNR.DE",
    "MRNA",
+   "DHL.DE",
    "GM",
-   "XOM"
+   "XOM",
+   "ILMN"
   ],
   "value": [
-   "MU",
    "NVDA",
+   "MU",
    "META",
    "AVGO",
    "ABNB",
@@ -48,49 +48,87 @@
    "COP",
    "VRTX",
    "DXCM",
-   "MTX.DE",
-   "GE",
-   "DB1.DE"
+   "ODFL",
+   "DB1.DE",
+   "GE"
   ]
  },
  "changes": {
   "turnaround": {
-   "entries": [],
-   "exits": [],
-   "moves": [
-    {
-     "ticker": "GM",
-     "rank": 3,
-     "delta": 5
-    }
-   ]
-  },
-  "momentum": {
    "entries": [
     {
-     "ticker": "GM",
+     "ticker": "DBK.DE",
+     "rank": 13
+    },
+    {
+     "ticker": "BAYN.DE",
      "rank": 14
     },
     {
-     "ticker": "XOM",
+     "ticker": "MBG.DE",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "ILMN",
-     "old_rank": 14
+     "ticker": "BAS.DE",
+     "old_rank": 11
     },
     {
-     "ticker": "KO",
+     "ticker": "DTE.DE",
+     "old_rank": 12
+    },
+    {
+     "ticker": "FRE.DE",
      "old_rank": 15
     }
    ],
    "moves": []
   },
+  "momentum": {
+   "entries": [
+    {
+     "ticker": "FTNT",
+     "rank": 6
+    },
+    {
+     "ticker": "BAYN.DE",
+     "rank": 7
+    },
+    {
+     "ticker": "ILMN",
+     "rank": 15
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "AMD",
+     "old_rank": 5
+    },
+    {
+     "ticker": "BAS.DE",
+     "old_rank": 8
+    },
+    {
+     "ticker": "BNR.DE",
+     "old_rank": 12
+    }
+   ],
+   "moves": []
+  },
   "value": {
-   "entries": [],
-   "exits": [],
+   "entries": [
+    {
+     "ticker": "ODFL",
+     "rank": 13
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "MTX.DE",
+     "old_rank": 13
+    }
+   ],
    "moves": []
   },
   "analyst_flips": []

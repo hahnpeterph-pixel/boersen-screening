@@ -10,7 +10,8 @@ Spanne des Vortages liegt:
 zurueckgelaufen, also bei einer Aufwaerts-Luecke ein Tief <= High(gestern),
 bei einer Abwaerts-Luecke ein Hoch >= Low(gestern). Gemessen wird auf
 Tages-Hoch/Tief, nicht auf Schlusskursen - eine Luecke gilt als
-geschlossen, sobald sie intraday beruehrt wurde.
+geschlossen, sobald sie intraday beruehrt wurde - auch noch am Tag ihrer
+Entstehung (Korrektur vom 11.09.2026, siehe luecken_eines_werts).
 
 Ausgabe:
   docs/luecken.csv  - eine Zeile je Luecke, alle Werte
@@ -80,10 +81,37 @@ def luecken_eines_werts(ticker, name, df):
         if groesse_atr < MIN_ATR:
             continue
 
-        # Ab dem Folgetag suchen: schliesst der Kurs die Luecke wieder?
+        # Schliessung suchen - AB DEM ENTSTEHUNGSTAG SELBST, nicht erst ab
+        # dem Folgetag.
+        #
+        # Korrektur vom 11.09.2026. Die alte Fassung startete bei i + 1 und
+        # uebersah damit Luecken, die noch am Tag ihrer Entstehung wieder
+        # zuliefen. Aufgefallen bei Intuitive Surgical: Der Wert eroeffnete
+        # am 10.09.2026 bei 348,20 unter dem Vortagestief von 349,86, lief
+        # dann aber bis 362,475 und hatte die Zone laengst durchschritten.
+        # Die Datei fuehrte sie trotzdem als offen. Peter sah im Chart keine
+        # Luecke und hatte recht.
+        #
+        # Betroffen sind ausschliesslich Luecken mit Alter 0 bis 1 - wer am
+        # Entstehungstag nicht zurueckkommt, wird auch von der alten Logik
+        # richtig erfasst. Die Folgen waren trotzdem spuerbar: solche
+        # Scheinluecken tauchen dauerhaft als offen auf, verfaelschen die
+        # Lueckenquote je Wert und landen als vermeintliches Kursziel oder
+        # Risiko in jeder Kaufvorlage.
+        #
+        # tage_bis_schluss ist dann 0 - "am selben Tag geschlossen". Das ist
+        # ein gueltiger Wert und kein Fehlen: die Quantile ueber
+        # tage_bis_schluss (p75, p90) werden dadurch korrekt kleiner, statt
+        # dass die Faelle ganz fehlen.
+        # Am Entstehungstag genuegt dieselbe Pruefung wie an jedem anderen:
+        # Hoch und Tief dieses Tages schliessen die Eroeffnung bereits ein,
+        # ein Beruehren der Kante ist also zwangslaeufig eine Bewegung NACH
+        # der Eroeffnung zurueck in die Luecke hinein. Eine Sonderbehandlung
+        # fuer j == i braucht es deshalb nicht.
         geschlossen, tage_bis, datum_zu = 0, None, None
-        for j in range(i + 1, len(df)):
-            beruehrt = (tief[j] <= kante) if richtung == "aufwaerts" else (hoch[j] >= kante)
+        for j in range(i, len(df)):
+            beruehrt = ((tief[j] <= kante) if richtung == "aufwaerts"
+                        else (hoch[j] >= kante))
             if beruehrt:
                 geschlossen, tage_bis, datum_zu = 1, j - i, daten[j]
                 break

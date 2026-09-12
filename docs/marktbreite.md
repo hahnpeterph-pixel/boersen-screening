@@ -1,6 +1,6 @@
 # Marktbreite und was danach folgt
 
-Stand 10.09.2026 20:42 UTC. 212 Werte, 1709 auswertbare Handelstage (2019-09-12 bis 2026-09-10).
+Stand 12.09.2026 06:47 UTC. 212 Werte, 1709 auswertbare Handelstage (2019-09-13 bis 2026-09-11).
 
 Grundlage ist das gleichgewichtete Mittel aller Werte. Ein Tag zaehlt nur, wenn mindestens die Haelfte der Werte an ihm und am Vortag einen Kurs hat.
 
@@ -10,12 +10,12 @@ Breite im Mittel: Median 48 Prozent gefallene Werte, p25 32, p75 63, p95 86.
 
 | nach | Faelle | Median | positiv | p25 | p75 |
 |---|---|---|---|---|---|
-| 1 T | 1708 | +0.09 % | 55 % | -0.43 % | +0.67 % |
+| 1 T | 1708 | +0.10 % | 55 % | -0.43 % | +0.67 % |
 | 2 T | 1707 | +0.22 % | 57 % | -0.60 % | +0.99 % |
 | 3 T | 1706 | +0.30 % | 58 % | -0.69 % | +1.25 % |
-| 4 T | 1705 | +0.43 % | 60 % | -0.83 % | +1.46 % |
-| 5 T | 1704 | +0.53 % | 60 % | -0.87 % | +1.67 % |
-| 6 T | 1703 | +0.64 % | 61 % | -0.90 % | +1.84 % |
+| 4 T | 1705 | +0.43 % | 60 % | -0.84 % | +1.46 % |
+| 5 T | 1704 | +0.53 % | 60 % | -0.88 % | +1.67 % |
+| 6 T | 1703 | +0.64 % | 61 % | -0.91 % | +1.84 % |
 | 10 T | 1699 | +1.02 % | 63 % | -0.98 % | +2.64 % |
 | 20 T | 1688 | +1.81 % | 69 % | -0.88 % | +4.12 % |
 
@@ -25,13 +25,13 @@ Breite im Mittel: Median 48 Prozent gefallene Werte, p25 32, p75 63, p95 86.
 
 | nach | Faelle | Median | positiv | Basis positiv | Unterschied |
 |---|---|---|---|---|---|
-| 1 T | 500 | +0.14 % | 54 % | 55 % | -1 Punkte |
-| 2 T | 499 | +0.23 % | 56 % | 57 % | -1 Punkte |
-| 3 T | 498 | +0.40 % | 56 % | 58 % | -2 Punkte |
-| 4 T | 497 | +0.50 % | 60 % | 60 % | +0 Punkte |
+| 1 T | 501 | +0.14 % | 54 % | 55 % | -1 Punkte |
+| 2 T | 500 | +0.23 % | 56 % | 57 % | -1 Punkte |
+| 3 T | 499 | +0.40 % | 56 % | 58 % | -2 Punkte |
+| 4 T | 498 | +0.50 % | 60 % | 60 % | -0 Punkte |
 | 5 T | 497 | +0.79 % | 60 % | 60 % | -1 Punkte |
 | 6 T | 497 | +0.75 % | 61 % | 61 % | +0 Punkte |
-| 10 T | 494 | +1.28 % | 66 % | 63 % | +2 Punkte |
+| 10 T | 495 | +1.28 % | 66 % | 63 % | +2 Punkte |
 | 20 T | 492 | +2.23 % | 69 % | 69 % | -0 Punkte |
 
 ## Tage mit mindestens 65 Prozent gefallenen Werten
@@ -41,8 +41,8 @@ Breite im Mittel: Median 48 Prozent gefallene Werte, p25 32, p75 63, p95 86.
 | nach | Faelle | Median | positiv | Basis positiv | Unterschied |
 |---|---|---|---|---|---|
 | 1 T | 373 | +0.08 % | 51 % | 55 % | -4 Punkte |
-| 2 T | 372 | +0.24 % | 56 % | 57 % | -1 Punkte |
-| 3 T | 371 | +0.48 % | 57 % | 58 % | -1 Punkte |
+| 2 T | 373 | +0.25 % | 56 % | 57 % | -1 Punkte |
+| 3 T | 372 | +0.47 % | 57 % | 58 % | -1 Punkte |
 | 4 T | 371 | +0.50 % | 59 % | 60 % | -1 Punkte |
 | 5 T | 371 | +0.76 % | 59 % | 60 % | -1 Punkte |
 | 6 T | 371 | +0.81 % | 61 % | 61 % | -0 Punkte |
@@ -56,7 +56,7 @@ Breite im Mittel: Median 48 Prozent gefallene Werte, p25 32, p75 63, p95 86.
 | nach | Faelle | Median | positiv | Basis positiv | Unterschied |
 |---|---|---|---|---|---|
 | 1 T | 266 | +0.08 % | 52 % | 55 % | -3 Punkte |
-| 2 T | 265 | +0.29 % | 56 % | 57 % | -1 Punkte |
+| 2 T | 266 | +0.29 % | 56 % | 57 % | -1 Punkte |
 | 3 T | 265 | +0.48 % | 57 % | 58 % | -1 Punkte |
 | 4 T | 265 | +0.37 % | 58 % | 60 % | -1 Punkte |
 | 5 T | 265 | +0.50 % | 57 % | 60 % | -3 Punkte |
@@ -71,7 +71,7 @@ Breite im Mittel: Median 48 Prozent gefallene Werte, p25 32, p75 63, p95 86.
 | nach | Faelle | Median | positiv | Basis positiv | Unterschied |
 |---|---|---|---|---|---|
 | 1 T | 191 | +0.08 % | 52 % | 55 % | -3 Punkte |
-| 2 T | 190 | +0.33 % | 58 % | 57 % | +1 Punkte |
+| 2 T | 191 | +0.33 % | 59 % | 57 % | +2 Punkte |
 | 3 T | 190 | +0.59 % | 57 % | 58 % | -1 Punkte |
 | 4 T | 190 | +0.32 % | 58 % | 60 % | -1 Punkte |
 | 5 T | 190 | +0.49 % | 57 % | 60 % | -3 Punkte |
@@ -86,7 +86,7 @@ Breite im Mittel: Median 48 Prozent gefallene Werte, p25 32, p75 63, p95 86.
 | nach | Faelle | Median | positiv | Basis positiv | Unterschied |
 |---|---|---|---|---|---|
 | 1 T | 130 | +0.12 % | 52 % | 55 % | -3 Punkte |
-| 2 T | 129 | +0.33 % | 58 % | 57 % | +1 Punkte |
+| 2 T | 130 | +0.34 % | 58 % | 57 % | +1 Punkte |
 | 3 T | 129 | +0.52 % | 56 % | 58 % | -2 Punkte |
 | 4 T | 129 | +0.42 % | 57 % | 60 % | -2 Punkte |
 | 5 T | 129 | +0.47 % | 57 % | 60 % | -3 Punkte |

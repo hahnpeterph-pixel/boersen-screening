@@ -1,6 +1,53 @@
-# Boersen-Screening - 2026-09-11
+# Boersen-Screening - 2026-09-12
 
-_Stand: Schlusskurse vom 2026-09-11. Erstellt 2026-09-11T21:37:00+00:00 UTC. 211 Werte ausgewertet._
+_Stand: Schlusskurse vom 2026-09-11, aber 40 Werte haengen zurueck - siehe Standwarnung. Erstellt 2026-09-12T06:00:32+00:00 UTC. 211 Werte ausgewertet._
+
+> **Standwarnung: 40 von 211 Werten haengen zurueck.** Neuester Handelstag im Bericht ist 2026-09-11.
+>
+> Ursache ist in aller Regel Yahoo: die vorlaeufige Tageskerze einer Boerse wird ueber Nacht durch die offizielle Abrechnung ersetzt, und solange die fehlt, faellt der Tag weg. Betroffen sind meist die europaeischen Notierungen. Fuer diese Werte gelten Kurs, ATR, RSI und Tiefs unten NICHT fuer den neuesten Handelstag.
+>
+> | Wert | letzte Kerze |
+> |---|---|
+> | ADS.DE | 2026-09-10 |
+> | AIR.DE | 2026-09-10 |
+> | ALV.DE | 2026-09-10 |
+> | ASML | 2026-09-10 |
+> | BAS.DE | 2026-09-10 |
+> | BAYN.DE | 2026-09-10 |
+> | BEI.DE | 2026-09-10 |
+> | BMW.DE | 2026-09-10 |
+> | BNR.DE | 2026-09-10 |
+> | CBK.DE | 2026-09-10 |
+> | CON.DE | 2026-09-10 |
+> | DB1.DE | 2026-09-10 |
+> | DBK.DE | 2026-09-10 |
+> | DHL.DE | 2026-09-10 |
+> | DTE.DE | 2026-09-10 |
+> | DTG.DE | 2026-09-10 |
+> | ENR.DE | 2026-09-10 |
+> | EOAN.DE | 2026-09-10 |
+> | FRE.DE | 2026-09-10 |
+> | HEI.DE | 2026-09-10 |
+> | HEN3.DE | 2026-09-10 |
+> | HNR1.DE | 2026-09-10 |
+> | IFX.DE | 2026-09-10 |
+> | MBG.DE | 2026-09-10 |
+> | MRK.DE | 2026-09-10 |
+> | MTX.DE | 2026-09-10 |
+> | MUV2.DE | 2026-09-10 |
+> | P911.DE | 2026-09-10 |
+> | PAH3.DE | 2026-09-10 |
+> | QIA.DE | 2026-09-10 |
+> | RHM.DE | 2026-09-10 |
+> | RWE.DE | 2026-09-10 |
+> | SAP.DE | 2026-09-10 |
+> | SHL.DE | 2026-09-10 |
+> | SIE.DE | 2026-09-10 |
+> | SRT3.DE | 2026-09-10 |
+> | SY1.DE | 2026-09-10 |
+> | VNA.DE | 2026-09-10 |
+> | VOW3.DE | 2026-09-10 |
+> | ZAL.DE | 2026-09-10 |
 
 ## 📖 Glossar (was die Spalten bedeuten)
 
@@ -18,7 +65,7 @@ _Ueber alle 211 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 | Rang | Ticker | ISIN | Name | Index | Kurs | Abstand ATH (Info) | Kaufen-Anteil Analysten | Kursziel | RSI Tag | RSI Woche | RSI Stunde | Letztes Rating |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 1 | NVDA | - | NVIDIA Corporation | NASDAQ/DOW | 218.29 | -7% | 100% (29 Banken, ≤120T) | 327.13 (50% ueber Kurs) | 50 | 56 | 37 | 2026-09-10 Piper Sandler: neu bewertet mit Overweight |
-| 2 | ASML | USN070592100 | ASML Holding N.V. - New York Re | NASDAQ | 1478.40 | -14% | 100% (5 Banken, ≤120T) | 2167.96 (47% ueber Kurs) | 48 | 56 | 49 | keine in 30T |
+| 2 | ASML | USN070592100 | ASML Holding N.V. - New York Re | NASDAQ | 1474.20 | -14% | 100% (5 Banken, ≤120T) | 2167.96 (47% ueber Kurs) | 47 | 55 | 49 | keine in 30T |
 | 3 | TTWO | - | Take-Two Interactive Software, | NASDAQ | 215.47 | -18% | 100% (10 Banken, ≤120T) | 286.89 (33% ueber Kurs) | 36 | 43 | 47 | keine in 30T |
 | 4 | AZN | GB0009895292 | AstraZeneca PLC | NASDAQ | 160.17 | -23% | 100% (1 Banken, ≤120T) | 212.54 (33% ueber Kurs) | 44 | 40 | 54 | 2026-08-24 CICC: neu bewertet mit Outperform |
 | 5 | BA | - | Boeing Company (The) | DOW | 210.45 | -51% | 100% (6 Banken, ≤120T) | 274.85 (31% ueber Kurs) | 45 | 46 | 56 | keine in 30T |
@@ -36,7 +83,7 @@ _Ueber alle 211 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 | 17 | MU | US5951121038 | Micron Technology, Inc. | NASDAQ | 975.26 | -20% | 96% (23 Banken, ≤120T) | 1513.11 (55% ueber Kurs) | 53 | 61 | 41 | 2026-08-25 Mizuho: Rating bestaetigt: Outperform |
 | 18 | AMZN | - | Amazon.com, Inc. | NASDAQ/DOW | 256.78 | -10% | 95% (20 Banken, ≤120T) | 328.17 (28% ueber Kurs) | 49 | 53 | 59 | 2026-09-03 Wells Fargo: Rating bestaetigt: Overweight |
 | 19 | MSFT | - | Microsoft Corporation | NASDAQ/DOW | 495.63 | -8% | 95% (22 Banken, ≤120T) | 572.92 (16% ueber Kurs) | 57 | 61 | 52 | 2026-09-04 Stifel: Rating bestaetigt: Hold |
-| 20 | DTE.DE | - | DEUTSCHE TELEKOM AG | DAX | 28.59 | -15% | 94% (18 Banken, ≤120T) | 36.93 (29% ueber Kurs) | 54 | 52 | 69 | keine in 30T |
+| 20 | DTE.DE | - | DEUTSCHE TELEKOM AG | DAX | 27.88 | -17% | 94% (18 Banken, ≤120T) | 36.93 (32% ueber Kurs) | 46 | 49 | 69 | keine in 30T |
 
 
 ## 🧭 Analysten-Einstufungen (Filtertreffer, letzte 30 Tage)

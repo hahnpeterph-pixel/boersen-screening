@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-09-11 21:37 UTC. 218 Werte, Fenster 90 Kalendertage. EUR/USD 1.1602._
+_Erstellt 2026-09-12 06:00 UTC. 218 Werte, Fenster 90 Kalendertage. EUR/USD 1.1602._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -42,7 +42,8 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | RWE.DE (RWE.DE) | 59.84 | - | - | ja | 60.88 |
 | SHL.DE (SHL.DE) | 38.23 | - | - | ja | 44.53 |
 | SY1.DE (SY1.DE) | 87.2 | - | - | ja | 37.94 |
-| Kakao (CC=F) | 5913.0 | - | ja | ja | 49.52 |
+| Weizen (ZW=F) | 707.0 | - | - | ja | 51.21 |
+| Zucker (SB=F) | 18.15 | - | - | ja | 59.58 |
 
 ---
 

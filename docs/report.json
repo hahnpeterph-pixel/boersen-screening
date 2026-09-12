@@ -2,38 +2,38 @@
  "date": "2026-09-12",
  "ranks": {
   "turnaround": [
-   "SAP.DE",
+   "FRE.DE",
    "KHC",
    "MTX.DE",
    "KO",
+   "SAP.DE",
    "BIIB",
    "FANG",
    "BNY",
    "FAST",
    "ABBV",
-   "BAS.DE",
    "TRV",
    "DTE.DE",
    "PCAR",
-   "FRE.DE",
-   "TEAM"
+   "TEAM",
+   "PAH3.DE"
   ],
   "momentum": [
    "BNY",
    "CBK.DE",
    "TEAM",
-   "DBK.DE",
    "AMD",
+   "C",
    "CSCO",
+   "DHL.DE",
    "ILMN",
    "MRNA",
-   "BAS.DE",
-   "DHL.DE",
    "RWE.DE",
-   "BNR.DE",
    "BIIB",
    "FANG",
-   "CVX"
+   "CVX",
+   "KO",
+   "COP"
   ],
   "value": [
    "NVDA",
@@ -44,64 +44,64 @@
    "BLK",
    "REGN",
    "MNST",
+   "MTX.DE",
    "COP",
    "V",
    "VRTX",
    "DXCM",
    "ODFL",
-   "MTX.DE",
-   "GE"
+   "DB1.DE"
   ]
  },
  "changes": {
   "turnaround": {
    "entries": [
     {
-     "ticker": "BAS.DE",
-     "rank": 10
+     "ticker": "PAH3.DE",
+     "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "PAH3.DE",
-     "old_rank": 15
+     "ticker": "BAS.DE",
+     "old_rank": 10
     }
    ],
    "moves": [
     {
      "ticker": "FRE.DE",
-     "rank": 14,
-     "delta": -13
+     "rank": 1,
+     "delta": 13
     }
    ]
   },
   "momentum": {
    "entries": [
     {
-     "ticker": "DBK.DE",
-     "rank": 4
+     "ticker": "C",
+     "rank": 5
     },
     {
-     "ticker": "BAS.DE",
-     "rank": 9
+     "ticker": "KO",
+     "rank": 14
     },
     {
-     "ticker": "BNR.DE",
-     "rank": 12
+     "ticker": "COP",
+     "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "C",
-     "old_rank": 5
+     "ticker": "DBK.DE",
+     "old_rank": 4
     },
     {
-     "ticker": "KO",
-     "old_rank": 14
+     "ticker": "BAS.DE",
+     "old_rank": 9
     },
     {
-     "ticker": "COP",
-     "old_rank": 15
+     "ticker": "BNR.DE",
+     "old_rank": 12
     }
    ],
    "moves": []
@@ -109,21 +109,21 @@
   "value": {
    "entries": [
     {
-     "ticker": "GE",
+     "ticker": "DB1.DE",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "DB1.DE",
+     "ticker": "GE",
      "old_rank": 15
     }
    ],
    "moves": [
     {
      "ticker": "MTX.DE",
-     "rank": 14,
-     "delta": -5
+     "rank": 9,
+     "delta": 5
     }
    ]
   },

@@ -1,6 +1,8 @@
 # Stundenwache
 
-Stand: 2026-09-11 · 158 Werte mit Stundendaten · erstellt 2026-09-12 09:09 UTC
+Stand: 2026-09-14 · 158 Werte mit Stundendaten · erstellt 2026-09-14 22:25 UTC
+
+> **Sitzung noch nicht abgeschlossen.** 1 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 6, 7, 9). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
 
 Marken sind das juengste Swing-Tief und das juengste Swing-Hoch aus `tiefs_regel.py`, also dieselben wie im Tagesbericht. Geprueft wird nur, was der letzte Handelstag auf Stundenbasis damit gemacht hat.
 
@@ -11,47 +13,69 @@ Lesart der Urteile:
 - **angetestet** - nur mit dem Docht beruehrt, kein Schluss dahinter
 - **unklar** - Stunden- und Tagesreihe passen nicht zusammen, siehe unten
 
-## Tief gebrochen (0)
+## Tief gebrochen (10)
 
-Keine.
+Schluss unter dem juengsten Swing-Tief. Die Sequenz ist gerissen.
 
-## Tief zurueckerobert (1)
+| Wert | Marke | Schluss | Abstand (ATR) | Stunden dahinter |
+|---|---|---|---|---|
+| ENR.DE | 140.6 | 132.24 | -1.663 | 9 |
+| ASML | 1447.4 | 1386.2 | -1.356 | 9 |
+| RWE.DE | 58.88 | 57.62 | -0.909 | 9 |
+| MTX.DE | 337.2 | 329.3 | -0.886 | 9 |
+| DBK.DE | 34.675 | 34.115 | -0.687 | 9 |
+| IFX.DE | 55.2 | 53.95 | -0.577 | 9 |
+| HEI.DE | 152.5 | 149.85 | -0.527 | 9 |
+| SRT3.DE | 230.3 | 227.0 | -0.507 | 2 |
+| VNA.DE | 17.945 | 17.93 | -0.037 | 2 |
+| MRK.DE | 130.65 | 130.6 | -0.02 | 2 |
+
+## Tief zurueckerobert (2)
 
 Im Tagesverlauf unter der Marke, am Ende darueber. Das ist der Fall, den die Tageskerze verschluckt.
 
 | Wert | Marke | Schluss | Abstand (ATR) | Stunden dahinter |
 |---|---|---|---|---|
-| CRWD | 205.4 | 206.67 | 0.095 | 1 |
+| AIR.DE | 194.58 | 195.06 | 0.11 | 1 |
+| CON.DE | 69.24 | 69.6 | 0.203 | 4 |
 
-## Tief angetestet (7)
+## Tief angetestet (9)
 
 Docht bis unter die Marke, kein Stundenschluss darunter.
 
 | Wert | Marke | Schluss | Abstand (ATR) | Stunden dahinter |
 |---|---|---|---|---|
-| MCD | 252.15 | 252.52 | 0.098 | 0 |
-| AEP | 122.92 | 123.34 | 0.227 | 0 |
-| BNR.DE | 60.28 | 60.62 | 0.251 | 0 |
-| SPGI | 407.44 | 410.69 | 0.268 | 0 |
-| PDD | 77.25 | 77.81 | 0.27 | 0 |
-| KHC | 24.15 | 24.61 | 0.703 | 0 |
-| ILMN | 200.01 | 206.47 | 0.746 | 0 |
+| P911.DE | 44.49 | 44.86 | 0.28 | 0 |
+| MBG.DE | 46.33 | 46.69 | 0.347 | 0 |
+| SBUX | 98.2 | 99.08 | 0.401 | 0 |
+| AMGN | 376.8 | 381.56 | 0.44 | 0 |
+| MU | 902.6 | 924.29 | 0.497 | 0 |
+| SIE.DE | 258.1 | 261.25 | 0.514 | 0 |
+| MMM | 160.28 | 162.015 | 0.535 | 0 |
+| SY1.DE | 87.2 | 88.18 | 0.583 | 0 |
+| HEN3.DE | 72.3 | 73.14 | 0.752 | 0 |
 
-## Swing-Hoch ueberwunden (11)
+## Swing-Hoch ueberwunden (17)
 
 | Wert | Hoch | Schluss | Abstand (ATR) | Stunden darueber |
 |---|---|---|---|---|
-| MRNA | 65.525 | 143.94 | 6.535 | 7 |
-| META | 593.34 | 648.23 | 2.574 | 7 |
-| ADI | 366.97 | 378.98 | 1.218 | 7 |
-| NXPI | 231.3 | 236.68 | 0.844 | 7 |
-| CSCO | 110.43 | 112.12 | 0.811 | 7 |
-| TXN | 262.74 | 268.7 | 0.803 | 7 |
-| IBM | 238.29 | 243.235 | 0.779 | 6 |
-| ON | 75.33 | 76.15 | 0.307 | 1 |
-| AAPL | 330.81 | 332.23 | 0.181 | 7 |
-| CTAS | 201.38 | 201.61 | 0.071 | 7 |
-| FRE.DE | 45.2 | 45.265 | 0.066 | 8 |
+| MRNA | 65.525 | 146.77 | 7.073 | 7 |
+| META | 593.34 | 665.71 | 3.333 | 7 |
+| ZS | 169.1 | 191.6 | 2.056 | 7 |
+| IBM | 238.29 | 249.09 | 1.648 | 7 |
+| ADP | 268.73 | 276.415 | 1.46 | 6 |
+| CRWD | 218.31 | 235.44 | 1.127 | 7 |
+| WDAY | 185.82 | 194.14 | 0.949 | 7 |
+| GOOGL | 344.68 | 349.485 | 0.642 | 6 |
+| VZ | 50.93 | 51.295 | 0.433 | 7 |
+| DHL.DE | 55.7 | 55.94 | 0.286 | 4 |
+| AAPL | 330.81 | 333.05 | 0.285 | 7 |
+| TTWO | 220.71 | 222.94 | 0.275 | 3 |
+| TRV | 376.57 | 378.15 | 0.253 | 5 |
+| DDOG | 227.58 | 230.04 | 0.205 | 6 |
+| FRE.DE | 45.2 | 45.395 | 0.199 | 7 |
+| MAR | 339.3 | 340.54 | 0.172 | 1 |
+| KO | 89.23 | 89.365 | 0.105 | 2 |
 
 ## Reihen unstimmig - kein Urteil (0)
 

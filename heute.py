@@ -201,6 +201,30 @@ def block1_treffer(markt: pd.DataFrame, analysten: pd.DataFrame,
     genommen (Peters Festlegung). Die Sonderbehandlung "gruene Kerze nach
     roter Kerze" entfaellt damit.
     """
+    # VERALTETE WERTE KOMMEN NICHT IN BLOCK 1 (Peters Festlegung vom
+    # 15.09.2026).
+    #
+    # Anlass: Am 14.09.2026 lieferte Yahoo fuer 39 DAX-Werte plus ASML und
+    # KHC keinen Montag. Beide Zweitquellen halfen nicht - Stooq antwortet
+    # seit dem 09.09.2026 mit einer JavaScript-Browserpruefung statt einer
+    # CSV, und der Twelve-Data-Basistarif deckt XETRA nicht ab (404 fuer
+    # jedes deutsche Symbol ausser dem Trial-Symbol VOW3). Ein Tarif mit
+    # europaeischer Abdeckung kostet 79 USD im Monat - das ist es nicht
+    # wert.
+    #
+    # Ohne diese Pruefung waeren die veralteten Werte trotzdem als
+    # Kandidaten aufgetaucht: Das "frische Tief" haette sich aus den
+    # letzten beiden VORHANDENEN Tagen ergeben, also aus dem 10. und 11.09.
+    # Eine Kaufvorlage auf Basis eines zwei Tage alten Tiefs ist schlimmer
+    # als gar keine.
+    #
+    # Massstab ist der neueste Handelstag im gesamten Universum. An einem
+    # Feiertag EINER Boerse faellt deren Gruppe damit fuer einen Tag aus
+    # Block 1 - gewollt und harmlos: Die Werte melden sich am naechsten
+    # Handelstag von selbst zurueck.
+    neuester = str(markt["datum"].max())
+    veraltet = []
+
     treffer = []
     for ticker in markt.index:
         if ist_rohstoff_oder_fx(ticker):
@@ -209,6 +233,10 @@ def block1_treffer(markt: pd.DataFrame, analysten: pd.DataFrame,
             continue
         z = markt.loc[ticker]
         a = analysten.loc[ticker]
+
+        if str(z.datum) != neuester:
+            veraltet.append(ticker)
+            continue
 
         # Umkehrzeichen, eines von dreien.
         vortagestief = None
@@ -227,6 +255,11 @@ def block1_treffer(markt: pd.DataFrame, analysten: pd.DataFrame,
         if pd.isna(z.rsi14) or z.rsi14 >= 50:
             continue
         treffer.append(ticker)
+
+    if veraltet:
+        print(f"  {len(veraltet)} Werte nicht aktuell (Stand ungleich "
+              f"{neuester}) und deshalb NICHT in Block 1:")
+        print("    " + ", ".join(sorted(veraltet)))
     return treffer
 
 

@@ -1,56 +1,16 @@
 # Marktdaten
 
-_Erstellt 2026-09-15 05:27 UTC. 218 Werte, Fenster 90 Kalendertage. EUR/USD 1.1594._
+_Erstellt 2026-09-15 09:53 UTC. 218 Werte, Fenster 90 Kalendertage. EUR/USD 1.1594._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
 Vollstaendige Daten: `docs/marktdaten.csv`
 
-> **Standwarnung: 41 von 205 Aktien haengen zurueck.** Neuester Handelstag 2026-09-14. Fuer die folgenden Werte gelten Kurs, ATR, RSI und Tiefs NICHT fuer diesen Tag. Die Spalte `stand_zurueck` in der CSV markiert sie ebenfalls.
+> **Standwarnung: 1 von 205 Aktien haengen zurueck.** Neuester Handelstag 2026-09-14. Fuer die folgenden Werte gelten Kurs, ATR, RSI und Tiefs NICHT fuer diesen Tag. Die Spalte `stand_zurueck` in der CSV markiert sie ebenfalls.
 >
 > | Wert | letzte Kerze |
 > |---|---|
-> | ADS.DE | 2026-09-11 |
-> | AIR.DE | 2026-09-11 |
-> | ALV.DE | 2026-09-11 |
-> | ASML | 2026-09-11 |
-> | BAS.DE | 2026-09-11 |
-> | BAYN.DE | 2026-09-11 |
-> | BEI.DE | 2026-09-11 |
-> | BMW.DE | 2026-09-11 |
-> | BNR.DE | 2026-09-11 |
-> | CBK.DE | 2026-09-11 |
-> | CON.DE | 2026-09-11 |
-> | DB1.DE | 2026-09-11 |
-> | DBK.DE | 2026-09-11 |
-> | DHL.DE | 2026-09-11 |
-> | DTE.DE | 2026-09-11 |
-> | DTG.DE | 2026-09-11 |
-> | ENR.DE | 2026-09-11 |
-> | EOAN.DE | 2026-09-11 |
-> | FRE.DE | 2026-09-11 |
-> | HEI.DE | 2026-09-11 |
-> | HEN3.DE | 2026-09-11 |
-> | HNR1.DE | 2026-09-11 |
-> | IFX.DE | 2026-09-11 |
 > | KHC | 2026-09-11 |
-> | MBG.DE | 2026-09-11 |
-> | MRK.DE | 2026-09-11 |
-> | MTX.DE | 2026-09-11 |
-> | MUV2.DE | 2026-09-11 |
-> | P911.DE | 2026-09-11 |
-> | PAH3.DE | 2026-09-11 |
-> | QIA.DE | 2026-09-11 |
-> | RHM.DE | 2026-09-11 |
-> | RWE.DE | 2026-09-11 |
-> | SAP.DE | 2026-09-11 |
-> | SHL.DE | 2026-09-11 |
-> | SIE.DE | 2026-09-11 |
-> | SRT3.DE | 2026-09-11 |
-> | SY1.DE | 2026-09-11 |
-> | VNA.DE | 2026-09-11 |
-> | VOW3.DE | 2026-09-11 |
-> | ZAL.DE | 2026-09-11 |
 
 ## Kerzensignale von gestern
 
@@ -59,6 +19,7 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | ADI (ADI) | 361.02 | - | - | ja | 44.59 |
 | AEP (AEP) | 122.23 | - | - | ja | 38.72 |
 | ARM (ARM) | 239.01 | - | - | ja | 42.93 |
+| ASML (ASML) | 1387.8 | - | - | ja | 37.39 |
 | AVGO (AVGO) | 344.72 | - | - | ja | 34.32 |
 | BKR (BKR) | 56.78 | - | - | ja | 29.67 |
 | CDNS (CDNS) | 279.06 | - | - | ja | 28.92 |
@@ -85,14 +46,18 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | NEE (NEE) | 81.63 | - | - | ja | 33.34 |
 | RTX (RTX) | 195.34 | - | - | ja | 29.41 |
 | WFC (WFC) | 88.71 | - | - | ja | 54.33 |
-| BAS.DE (BAS.DE) | 51.83 | - | - | ja | 49.09 |
-| BAYN.DE (BAYN.DE) | 48.17 | - | - | ja | 46.8 |
-| BNR.DE (BNR.DE) | 60.62 | - | - | ja | 47.03 |
-| HEN3.DE (HEN3.DE) | 72.3 | - | - | ja | 33.61 |
-| RHM.DE (RHM.DE) | 990.6 | - | ja | ja | 32.01 |
-| RWE.DE (RWE.DE) | 59.84 | - | - | ja | 60.88 |
-| SHL.DE (SHL.DE) | 38.23 | - | - | ja | 44.53 |
-| SY1.DE (SY1.DE) | 87.2 | - | - | ja | 37.94 |
+| AIR.DE (AIR.DE) | 195.06 | - | - | ja | 39.49 |
+| CON.DE (CON.DE) | 69.6 | - | - | ja | 47.95 |
+| DBK.DE (DBK.DE) | 34.15 | - | - | ja | 52.51 |
+| EOAN.DE (EOAN.DE) | 17.325 | - | - | ja | 37.54 |
+| HEI.DE (HEI.DE) | 150.15 | - | - | ja | 33.08 |
+| IFX.DE (IFX.DE) | 54.04 | - | - | ja | 39.91 |
+| MRK.DE (MRK.DE) | 130.55 | - | ja | ja | 27.47 |
+| MTX.DE (MTX.DE) | 328.2 | - | - | ja | 34.39 |
+| RWE.DE (RWE.DE) | 57.4 | - | - | ja | 45.22 |
+| SRT3.DE (SRT3.DE) | 227.9 | - | - | ja | 39.7 |
+| ENR.DE (ENR.DE) | 132.66 | - | - | ja | 33.29 |
+| VNA.DE (VNA.DE) | 17.975 | - | - | ja | 27.43 |
 | Kupfer (HG=F) | 6.33 | - | - | ja | 39.82 |
 | EUR/USD (EURUSD=X) | 1.1594 | ja | - | - | 49.75 |
 

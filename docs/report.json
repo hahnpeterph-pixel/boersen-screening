@@ -2,38 +2,38 @@
  "date": "2026-09-15",
  "ranks": {
   "turnaround": [
+   "DTE.DE",
    "ZS",
-   "FRE.DE",
    "CTSH",
    "NOW",
    "KHC",
+   "FRE.DE",
    "VRSK",
-   "MTX.DE",
    "FAST",
+   "ALV.DE",
+   "MUV2.DE",
    "TMO",
    "BIIB",
    "MELI",
    "WBD",
-   "T",
-   "DASH",
-   "CVX"
+   "T"
   ],
   "momentum": [
    "CRWD",
    "PANW",
    "FTNT",
-   "CBK.DE",
    "MRNA",
    "ILMN",
+   "ALV.DE",
    "DHL.DE",
    "TMO",
    "TRV",
-   "C",
-   "RWE.DE",
+   "CBK.DE",
    "CVX",
-   "COP",
    "BNR.DE",
-   "KO"
+   "COP",
+   "KO",
+   "P911.DE"
   ],
   "value": [
    "NVDA",
@@ -43,31 +43,87 @@
    "ABNB",
    "BLK",
    "REGN",
-   "MTX.DE",
    "COP",
    "MNST",
    "V",
    "DXCM",
    "ODFL",
    "VRTX",
+   "MTX.DE",
    "DB1.DE"
   ]
  },
  "changes": {
   "turnaround": {
-   "entries": [],
-   "exits": [],
+   "entries": [
+    {
+     "ticker": "DTE.DE",
+     "rank": 1
+    },
+    {
+     "ticker": "ALV.DE",
+     "rank": 9
+    },
+    {
+     "ticker": "MUV2.DE",
+     "rank": 10
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "MTX.DE",
+     "old_rank": 7
+    },
+    {
+     "ticker": "DASH",
+     "old_rank": 14
+    },
+    {
+     "ticker": "CVX",
+     "old_rank": 15
+    }
+   ],
    "moves": []
   },
   "momentum": {
-   "entries": [],
-   "exits": [],
-   "moves": []
+   "entries": [
+    {
+     "ticker": "ALV.DE",
+     "rank": 6
+    },
+    {
+     "ticker": "P911.DE",
+     "rank": 15
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "C",
+     "old_rank": 10
+    },
+    {
+     "ticker": "RWE.DE",
+     "old_rank": 11
+    }
+   ],
+   "moves": [
+    {
+     "ticker": "CBK.DE",
+     "rank": 10,
+     "delta": -6
+    }
+   ]
   },
   "value": {
    "entries": [],
    "exits": [],
-   "moves": []
+   "moves": [
+    {
+     "ticker": "MTX.DE",
+     "rank": 14,
+     "delta": -6
+    }
+   ]
   },
   "analyst_flips": []
  }

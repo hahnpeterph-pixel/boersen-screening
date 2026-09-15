@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-09-14 22:23 UTC. 217 Werte, Fenster 90 Kalendertage. EUR/USD 1.1553._
+_Erstellt 2026-09-15 04:44 UTC. 218 Werte, Fenster 90 Kalendertage. EUR/USD 1.1594._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -65,7 +65,6 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | CEG (CEG) | 264.57 | - | - | ja | 40.47 |
 | CMCSA (CMCSA) | 24.88 | - | ja | ja | 42.32 |
 | EXC (EXC) | 42.72 | - | - | ja | 32.88 |
-| GILD (GILD) | 146.41 | ja | ja | - | 55.73 |
 | GS (GS) | 988.45 | - | - | ja | 39.01 |
 | JPM (JPM) | 350.13 | - | - | ja | 44.16 |
 | LRCX (LRCX) | 273.49 | - | - | ja | 37.24 |
@@ -94,12 +93,8 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | RWE.DE (RWE.DE) | 59.84 | - | - | ja | 60.88 |
 | SHL.DE (SHL.DE) | 38.23 | - | - | ja | 44.53 |
 | SY1.DE (SY1.DE) | 87.2 | - | - | ja | 37.94 |
-| Kupfer (HG=F) | 6.4 | - | - | ja | 42.55 |
-| EUR/USD (EURUSD=X) | 1.1553 | - | - | ja | 43.51 |
-
-## Ohne Daten
-
-CC=F
+| Kupfer (HG=F) | 6.33 | - | - | ja | 39.82 |
+| EUR/USD (EURUSD=X) | 1.1594 | ja | - | - | 49.75 |
 
 ---
 

@@ -1,6 +1,6 @@
 # Stundenwache
 
-Stand: 2026-09-14 · 158 Werte mit Stundendaten · erstellt 2026-09-14 22:25 UTC
+Stand: 2026-09-14 · 158 Werte mit Stundendaten · erstellt 2026-09-15 04:45 UTC
 
 > **Sitzung noch nicht abgeschlossen.** 1 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 6, 7, 9). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
 
@@ -39,21 +39,23 @@ Im Tagesverlauf unter der Marke, am Ende darueber. Das ist der Fall, den die Tag
 | AIR.DE | 194.58 | 195.06 | 0.11 | 1 |
 | CON.DE | 69.24 | 69.6 | 0.203 | 4 |
 
-## Tief angetestet (9)
+## Tief angetestet (11)
 
 Docht bis unter die Marke, kein Stundenschluss darunter.
 
 | Wert | Marke | Schluss | Abstand (ATR) | Stunden dahinter |
 |---|---|---|---|---|
+| BKR | 56.25 | 56.78 | 0.264 | 0 |
 | P911.DE | 44.49 | 44.86 | 0.28 | 0 |
 | MBG.DE | 46.33 | 46.69 | 0.347 | 0 |
+| MRVL | 213.63 | 219.09 | 0.4 | 0 |
 | SBUX | 98.2 | 99.08 | 0.401 | 0 |
-| AMGN | 376.8 | 381.56 | 0.44 | 0 |
+| JPM | 347.55 | 350.13 | 0.449 | 0 |
 | MU | 902.6 | 924.29 | 0.497 | 0 |
 | SIE.DE | 258.1 | 261.25 | 0.514 | 0 |
-| MMM | 160.28 | 162.015 | 0.535 | 0 |
 | SY1.DE | 87.2 | 88.18 | 0.583 | 0 |
 | HEN3.DE | 72.3 | 73.14 | 0.752 | 0 |
+| FAST | 48.63 | 49.46 | 0.784 | 0 |
 
 ## Swing-Hoch ueberwunden (17)
 
@@ -74,7 +76,7 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | TRV | 376.57 | 378.15 | 0.253 | 5 |
 | DDOG | 227.58 | 230.04 | 0.205 | 6 |
 | FRE.DE | 45.2 | 45.395 | 0.199 | 7 |
-| MAR | 339.3 | 340.54 | 0.172 | 1 |
+| MAR | 339.3 | 340.54 | 0.171 | 1 |
 | KO | 89.23 | 89.365 | 0.105 | 2 |
 
 ## Reihen unstimmig - kein Urteil (0)

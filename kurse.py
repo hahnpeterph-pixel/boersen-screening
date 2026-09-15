@@ -107,6 +107,12 @@ def quellen(tickers: list[str]) -> dict[str, str]:
 
 _MEM: dict[tuple, pd.DataFrame] = {}
 
+# Merker fuer die Stooq-Diagnose (15.09.2026): Die Antwort wird nur EINMAL
+# pro Lauf ausgegeben. Bei 219 Tickern waere das Log sonst unbrauchbar -
+# genau das war am 09. und 15.09.2026 das Problem, als 219 identische
+# Parser-Fehler die eigentliche Ursache verdeckten.
+_STOOQ_GEMELDET = False
+
 
 def _pfad(ticker: str, period: str, auto_adjust: bool = False) -> str:
     sicher = "".join(c if c.isalnum() or c in "-_" else "_" for c in ticker)
@@ -237,6 +243,34 @@ def kerzen_stooq(ticker: str) -> pd.DataFrame | None:
                           "AppleWebKit/537.36 (KHTML, like Gecko) "
                           "Chrome/124.0 Safari/537.36"})
         antwort.raise_for_status()
+
+        # DIAGNOSE, eingebaut am 15.09.2026.
+        #
+        # Am 09.09. und erneut am 15.09.2026 scheiterte JEDER Stooq-Abruf -
+        # 219 von 219, auch die US-Werte - mit derselben Meldung:
+        # "Missing column provided to 'parse_dates': 'Date'". Das ist ein
+        # Parser-Fehler, kein Netzwerkfehler: raise_for_status() ging
+        # durch, Stooq antwortet also mit HTTP 200. Der Inhalt ist nur
+        # keine CSV mit Date-Spalte.
+        #
+        # Der alte Code las die Antwort blind als CSV und meldete den
+        # Folgefehler statt der Ursache. Was Stooq tatsaechlich schickt -
+        # eine Limitmeldung, eine Sperrseite, eine HTML-Weiterleitung -
+        # war aus dem Log nicht erkennbar. Deshalb wird der Anfang der
+        # Antwort jetzt EINMAL pro Lauf ausgegeben, nicht 219-mal.
+        kopf = antwort.text.lstrip()[:200].replace("\n", " | ")
+        if not antwort.text.lstrip().startswith("Date,"):
+            global _STOOQ_GEMELDET
+            if not _STOOQ_GEMELDET:
+                _STOOQ_GEMELDET = True
+                print(f"  STOOQ ANTWORTET NICHT MIT CSV. HTTP "
+                      f"{antwort.status_code}, Content-Type "
+                      f"{antwort.headers.get('Content-Type', '?')}, "
+                      f"{len(antwort.text)} Zeichen.")
+                print(f"    Anfang der Antwort: {kopf}")
+                print(f"    Abgerufene URL: {url}")
+            raise ValueError("Antwort ist keine CSV")
+
         roh = pd.read_csv(StringIO(antwort.text), parse_dates=["Date"]).set_index("Date")
     except Exception as e:
         print(f"  {ticker}: Stooq-Abruf fehlgeschlagen ({e})")

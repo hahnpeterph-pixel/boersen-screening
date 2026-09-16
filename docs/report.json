@@ -9,14 +9,14 @@
    "DIS",
    "MDB",
    "JPM",
-   "BNR.DE",
    "SCHW",
-   "BAS.DE",
-   "MUV2.DE",
    "ILMN",
+   "BAS.DE",
+   "DB1.DE",
    "BIIB",
    "KHC",
-   "FAST"
+   "FAST",
+   "KO"
   ],
   "momentum": [
    "ILMN",
@@ -24,16 +24,16 @@
    "PANW",
    "CRWD",
    "MRNA",
-   "CBK.DE",
    "DXCM",
-   "BNR.DE",
-   "ALV.DE",
    "DHL.DE",
+   "ALV.DE",
    "JPM",
+   "BNR.DE",
+   "V",
    "CVX",
    "KO",
-   "COP",
-   "BAS.DE"
+   "SY1.DE",
+   "COP"
   ],
   "value": [
    "NVDA",
@@ -57,111 +57,44 @@
   "turnaround": {
    "entries": [
     {
-     "ticker": "DXCM",
-     "rank": 3
-    },
-    {
-     "ticker": "DIS",
-     "rank": 5
-    },
-    {
-     "ticker": "MDB",
-     "rank": 6
-    },
-    {
-     "ticker": "JPM",
-     "rank": 7
-    },
-    {
-     "ticker": "BNR.DE",
-     "rank": 8
-    },
-    {
-     "ticker": "SCHW",
-     "rank": 9
-    },
-    {
-     "ticker": "BAS.DE",
-     "rank": 10
-    },
-    {
-     "ticker": "ILMN",
-     "rank": 12
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "ZS",
-     "old_rank": 2
-    },
-    {
-     "ticker": "FRE.DE",
-     "old_rank": 6
-    },
-    {
-     "ticker": "VRSK",
-     "old_rank": 7
-    },
-    {
-     "ticker": "ALV.DE",
-     "old_rank": 9
-    },
-    {
-     "ticker": "TMO",
-     "old_rank": 11
-    },
-    {
-     "ticker": "MELI",
-     "old_rank": 13
-    },
-    {
-     "ticker": "WBD",
-     "old_rank": 14
-    },
-    {
-     "ticker": "T",
-     "old_rank": 15
-    }
-   ],
-   "moves": [
-    {
-     "ticker": "KHC",
-     "rank": 14,
-     "delta": -9
-    },
-    {
-     "ticker": "FAST",
-     "rank": 15,
-     "delta": -7
-    }
-   ]
-  },
-  "momentum": {
-   "entries": [
-    {
-     "ticker": "DXCM",
-     "rank": 7
-    },
-    {
-     "ticker": "JPM",
+     "ticker": "DB1.DE",
      "rank": 11
     },
     {
-     "ticker": "BAS.DE",
+     "ticker": "KO",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "TMO",
+     "ticker": "BNR.DE",
      "old_rank": 8
     },
     {
-     "ticker": "TRV",
-     "old_rank": 9
+     "ticker": "MUV2.DE",
+     "old_rank": 11
+    }
+   ],
+   "moves": []
+  },
+  "momentum": {
+   "entries": [
+    {
+     "ticker": "V",
+     "rank": 11
     },
     {
-     "ticker": "P911.DE",
+     "ticker": "SY1.DE",
+     "rank": 14
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "CBK.DE",
+     "old_rank": 6
+    },
+    {
+     "ticker": "BAS.DE",
      "old_rank": 15
     }
    ],

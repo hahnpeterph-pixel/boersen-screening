@@ -1,54 +1,10 @@
 # Marktdaten
 
-_Erstellt 2026-09-16 04:25 UTC. 218 Werte, Fenster 90 Kalendertage. EUR/USD 1.1549._
+_Erstellt 2026-09-16 09:47 UTC. 218 Werte, Fenster 90 Kalendertage. EUR/USD 1.1549._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
 Vollstaendige Daten: `docs/marktdaten.csv`
-
-> **Standwarnung: 39 von 205 Aktien haengen zurueck.** Neuester Handelstag 2026-09-15. Fuer die folgenden Werte gelten Kurs, ATR, RSI und Tiefs NICHT fuer diesen Tag. Die Spalte `stand_zurueck` in der CSV markiert sie ebenfalls.
->
-> | Wert | letzte Kerze |
-> |---|---|
-> | ADS.DE | 2026-09-14 |
-> | AIR.DE | 2026-09-14 |
-> | ALV.DE | 2026-09-14 |
-> | ASML | 2026-09-14 |
-> | BAS.DE | 2026-09-14 |
-> | BAYN.DE | 2026-09-14 |
-> | BEI.DE | 2026-09-14 |
-> | BMW.DE | 2026-09-14 |
-> | BNR.DE | 2026-09-14 |
-> | CBK.DE | 2026-09-14 |
-> | CON.DE | 2026-09-14 |
-> | DB1.DE | 2026-09-14 |
-> | DBK.DE | 2026-09-14 |
-> | DHL.DE | 2026-09-14 |
-> | DTE.DE | 2026-09-14 |
-> | DTG.DE | 2026-09-14 |
-> | ENR.DE | 2026-09-14 |
-> | EOAN.DE | 2026-09-14 |
-> | FRE.DE | 2026-09-14 |
-> | HEI.DE | 2026-09-14 |
-> | HEN3.DE | 2026-09-14 |
-> | HNR1.DE | 2026-09-14 |
-> | IFX.DE | 2026-09-14 |
-> | MBG.DE | 2026-09-14 |
-> | MRK.DE | 2026-09-14 |
-> | MTX.DE | 2026-09-14 |
-> | MUV2.DE | 2026-09-14 |
-> | P911.DE | 2026-09-14 |
-> | PAH3.DE | 2026-09-14 |
-> | QIA.DE | 2026-09-14 |
-> | RHM.DE | 2026-09-14 |
-> | RWE.DE | 2026-09-14 |
-> | SAP.DE | 2026-09-14 |
-> | SHL.DE | 2026-09-14 |
-> | SIE.DE | 2026-09-14 |
-> | SRT3.DE | 2026-09-14 |
-> | SY1.DE | 2026-09-14 |
-> | VNA.DE | 2026-09-14 |
-> | ZAL.DE | 2026-09-14 |
 
 ## Kerzensignale von gestern
 
@@ -58,7 +14,6 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | AEP (AEP) | 120.61 | - | - | ja | 33.94 |
 | AMGN (AMGN) | 375.65 | - | - | ja | 32.27 |
 | AMZN (AMZN) | 248.42 | - | - | ja | 41.42 |
-| ASML (ASML) | 1387.8 | - | - | ja | 37.39 |
 | AVGO (AVGO) | 339.27 | - | - | ja | 32.27 |
 | BKNG (BKNG) | 171.32 | - | - | ja | 29.51 |
 | CDNS (CDNS) | 273.96 | - | - | ja | 27.23 |
@@ -112,18 +67,12 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | PFE (PFE) | 27.55 | - | - | ja | 50.47 |
 | SO (SO) | 85.95 | - | - | ja | 27.33 |
 | USB (USB) | 62.22 | - | - | ja | 46.0 |
-| AIR.DE (AIR.DE) | 195.06 | - | - | ja | 39.49 |
-| CON.DE (CON.DE) | 69.6 | - | - | ja | 47.95 |
-| DBK.DE (DBK.DE) | 34.15 | - | - | ja | 52.51 |
-| EOAN.DE (EOAN.DE) | 17.325 | - | - | ja | 37.54 |
-| HEI.DE (HEI.DE) | 150.15 | - | - | ja | 33.08 |
-| IFX.DE (IFX.DE) | 54.04 | - | - | ja | 39.91 |
-| MRK.DE (MRK.DE) | 130.55 | - | ja | ja | 27.47 |
-| MTX.DE (MTX.DE) | 328.2 | - | - | ja | 34.39 |
-| RWE.DE (RWE.DE) | 57.4 | - | - | ja | 45.22 |
-| SRT3.DE (SRT3.DE) | 227.9 | - | - | ja | 39.7 |
-| ENR.DE (ENR.DE) | 132.66 | - | - | ja | 33.29 |
-| VNA.DE (VNA.DE) | 17.975 | - | - | ja | 27.43 |
+| BNR.DE (BNR.DE) | 60.7 | ja | - | - | 47.6 |
+| CON.DE (CON.DE) | 68.56 | - | ja | ja | 44.1 |
+| DTG.DE (DTG.DE) | 43.24 | - | - | ja | 34.56 |
+| DBK.DE (DBK.DE) | 33.34 | ja | - | ja | 44.69 |
+| VNA.DE (VNA.DE) | 18.01 | ja | - | - | 28.18 |
+| ZAL.DE (ZAL.DE) | 21.75 | - | - | ja | 35.04 |
 | Zucker (SB=F) | 17.94 | - | - | ja | 56.34 |
 
 ---

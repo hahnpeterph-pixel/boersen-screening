@@ -131,8 +131,32 @@ jobs:
         run: |
           python - <<'PY'
           import csv, sys
+          # ROHSTOFFE UND DEVISEN SIND AUSGENOMMEN (16.09.2026).
+          #
+          # Sie handeln rund um die Uhr und sind damit zum Abrufzeitpunkt
+          # NIE sicher geschlossen. kursverlauf.py verwirft die laufende
+          # Kerze deshalb grundsaetzlich, marktdaten.py behaelt sie - die
+          # beiden Dateien wenden also unterschiedliche Regeln an, und der
+          # Vergleich findet zwangslaeufig eine Differenz.
+          #
+          # Folge war ein Dauerfehlalarm mit ernster Wirkung: Die Pruefung
+          # bricht mit exit 1 ab, der Schritt "Ergebnis speichern" wird nie
+          # erreicht, und die frisch gerechneten Daten landen nicht im
+          # Repository. Am 15./16.09.2026 scheiterten die Laeufe 90 und 91
+          # genau daran - 205 bzw. 217 von 218 Tickern waren aktuell, und
+          # ALLE Nachzuegler waren =F oder =X. Peter sah drei Tage alte
+          # Daten, obwohl jeder Lauf sauber gerechnet hatte.
+          #
+          # Die Ausnahme ist unbedenklich: Rohstoffe und Devisen sind von
+          # Block 1 ohnehin ausgeschlossen (ist_rohstoff_oder_fx in
+          # heute.py), und im Depot werden keine gehalten. Geprueft wird,
+          # worauf Entscheidungen beruhen - die Aktien.
+          def ist_rohstoff_oder_fx(t):
+              return t.endswith("=F") or t.endswith("=X")
+
           with open("docs/marktdaten.csv", newline="", encoding="utf-8") as f:
-              soll = {z["ticker"]: z["datum"] for z in csv.DictReader(f) if z.get("datum")}
+              soll = {z["ticker"]: z["datum"] for z in csv.DictReader(f)
+                      if z.get("datum") and not ist_rohstoff_oder_fx(z["ticker"])}
           with open("docs/kursverlauf.csv", newline="", encoding="utf-8") as f:
               zeilen = list(csv.reader(f))
           tage = zeilen[0][1:]
@@ -144,12 +168,13 @@ jobs:
               (t, soll[t], ist.get(t, "keine Zeile"))
               for t in soll if ist.get(t, "") < soll[t]
           )
-          print(f"{len(soll) - len(fehlend)}/{len(soll)} Ticker aktuell")
+          print(f"{len(soll) - len(fehlend)}/{len(soll)} Aktien aktuell "
+                "(Rohstoffe und Devisen ausgenommen)")
           if fehlend:
               for t, s, i in fehlend[:40]:
                   print(f"  {t}: marktdaten {s}, kursverlauf {i}")
               sys.exit(
-                  f"{len(fehlend)} Ticker haengen in kursverlauf.csv zurueck. "
+                  f"{len(fehlend)} Aktien haengen in kursverlauf.csv zurueck. "
                   "Depot-Tabelle waere bei Folgekerze und KO intraday unvollstaendig."
               )
           PY

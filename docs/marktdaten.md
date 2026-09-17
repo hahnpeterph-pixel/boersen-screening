@@ -1,23 +1,10 @@
 # Marktdaten
 
-_Erstellt 2026-09-16 21:59 UTC. 218 Werte, Fenster 90 Kalendertage. EUR/USD 1.1465._
+_Erstellt 2026-09-17 09:56 UTC. 218 Werte, Fenster 90 Kalendertage. EUR/USD 1.1538._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
 Vollstaendige Daten: `docs/marktdaten.csv`
-
-> **Standwarnung: 8 von 205 Aktien haengen zurueck.** Neuester Handelstag 2026-09-16. Fuer die folgenden Werte gelten Kurs, ATR, RSI und Tiefs NICHT fuer diesen Tag. Die Spalte `stand_zurueck` in der CSV markiert sie ebenfalls.
->
-> | Wert | letzte Kerze |
-> |---|---|
-> | ENR.DE | 2026-09-15 |
-> | KHC | 2026-09-15 |
-> | SHL.DE | 2026-09-15 |
-> | SIE.DE | 2026-09-15 |
-> | SRT3.DE | 2026-09-15 |
-> | SY1.DE | 2026-09-15 |
-> | VNA.DE | 2026-09-15 |
-> | ZAL.DE | 2026-09-15 |
 
 ## Kerzensignale von gestern
 
@@ -95,12 +82,9 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | CBK.DE (CBK.DE) | 41.45 | - | ja | ja | 55.63 |
 | MBG.DE (MBG.DE) | 45.365 | - | - | ja | 42.02 |
 | PAH3.DE (PAH3.DE) | 28.73 | - | - | ja | 52.29 |
-| VOW3.DE (VOW3.DE) | 78.88 | - | - | ja | 56.36 |
-| VNA.DE (VNA.DE) | 18.01 | ja | - | - | 28.18 |
-| ZAL.DE (ZAL.DE) | 21.75 | - | - | ja | 35.04 |
-| Platin (PL=F) | 1759.1 | - | ja | ja | 46.53 |
-| Palladium (PA=F) | 1285.5 | - | ja | ja | 44.45 |
-| EUR/USD (EURUSD=X) | 1.1465 | - | - | ja | 33.05 |
+| SHL.DE (SHL.DE) | 38.36 | - | - | ja | 46.3 |
+| VOW3.DE (VOW3.DE) | 78.88 | - | - | ja | 53.36 |
+| ZAL.DE (ZAL.DE) | 21.48 | - | - | ja | 33.58 |
 
 ---
 

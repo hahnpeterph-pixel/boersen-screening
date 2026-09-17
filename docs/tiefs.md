@@ -1,6 +1,6 @@
 # Tiefs, Volumen und Kaufregel-Check
 
-_Erstellt 2026-09-16 21:58 UTC. Fenster: letzte 90 Kalendertage. Tiefs nach der Umkehr-Regel (tiefs_regel.py): ein Tief zaehlt, sobald eine spaetere Kerze das Hoch der Tiefkerze ueberschreitet. Solange es abwaerts geht, gilt das tiefste Tief der Strecke. Gerechnet wird auf abgeschlossenen Tageskerzen._
+_Erstellt 2026-09-17 09:56 UTC. Fenster: letzte 90 Kalendertage. Tiefs nach der Umkehr-Regel (tiefs_regel.py): ein Tief zaehlt, sobald eine spaetere Kerze das Hoch der Tiefkerze ueberschreitet. Solange es abwaerts geht, gilt das tiefste Tief der Strecke. Gerechnet wird auf abgeschlossenen Tageskerzen._
 
 ## Kaufregel
 
@@ -100,10 +100,10 @@ Tief minus 2,0 x ATR. Die Hebelangabe ist das, was sich bei diesem KO rechnerisc
 |---|---|---|---|---|---|---|
 | Take-Two (TTWO) | 211,81 | 8,24 | 194,24 | 12,1x | 192,04 | 10,7x |
 | Meta Platforms (META) | 673,31 | 21,32 | 513,46 | 4,2x | 481,85 | 3,5x |
-| Micron (MU) | 926,55 | 43,04 | 831,57 | 9,8x | 651,80 | 3,4x |
+| Micron (MU) | 926,55 | 43,04 | 831,56 | 9,8x | 651,80 | 3,4x |
 | Microsoft (MSFT) | 490,30 | 10,62 | 465,99 | 20,2x | 327,96 | 3,0x |
 | Microsoft II (MSFT) | 490,30 | 10,62 | 465,99 | 20,2x | 327,96 | 3,0x |
-| Oracle (ORCL) | 143,16 | 7,89 | 123,21 | 7,2x | 98,71 | 3,2x |
+| Oracle (ORCL) | 143,16 | 7,90 | 123,21 | 7,2x | 98,71 | 3,2x |
 
 _'nach Trendtief' orientiert sich am juengsten Tief und laesst mehr Hebel zu. 'konservativ' orientiert sich am tiefsten Tief des Fensters und ueberlebt auch einen Rueckfall dorthin._
 
@@ -117,16 +117,16 @@ _'nach Trendtief' orientiert sich am juengsten Tief und laesst mehr Hebel zu. 'k
 | Meta Platforms (META) | 01.09.2026 | 556,10 | 15,8 Mio. | 1,03x | 6,7 % |
 | Meta Platforms (META) | 19.08.2026 | 537,27 | 17,0 Mio. | 1,00x | 3,4 % |
 | Meta Platforms (META) | 30.07.2026 | 524,49 | 42,3 Mio. | 2,22x (Kapitulation) | 1,1 % |
-| Micron (MU) | 16.09.2026 | 917,65 | 20,0 Mio. | 0,79x (duenn) | 6,3 % |
+| Micron (MU) | 16.09.2026 | 917,64 | 20,0 Mio. | 0,79x (duenn) | 6,3 % |
 | Micron (MU) | 14.09.2026 | 902,60 | 27,1 Mio. | 1,04x | 4,7 % |
 | Micron (MU) | 03.09.2026 | 918,88 | 24,2 Mio. | 0,86x | 6,4 % |
-| Microsoft (MSFT) | 16.09.2026 | 487,23 | 16,5 Mio. | 0,80x | 28,5 % |
+| Microsoft (MSFT) | 16.09.2026 | 487,23 | 16,6 Mio. | 0,81x | 28,5 % |
 | Microsoft (MSFT) | 10.09.2026 | 486,00 | 16,0 Mio. | 0,73x (duenn) | 28,3 % |
 | Microsoft (MSFT) | 02.09.2026 | 493,81 | 15,3 Mio. | 0,61x (duenn) | 29,5 % |
-| Microsoft II (MSFT) | 16.09.2026 | 487,23 | 16,5 Mio. | 0,80x | 2,5 % |
+| Microsoft II (MSFT) | 16.09.2026 | 487,23 | 16,6 Mio. | 0,81x | 2,5 % |
 | Microsoft II (MSFT) | 10.09.2026 | 486,00 | 16,0 Mio. | 0,73x (duenn) | 2,3 % |
 | Microsoft II (MSFT) | 02.09.2026 | 493,81 | 15,3 Mio. | 0,61x (duenn) | 3,8 % |
-| Oracle (ORCL) | 16.09.2026 | 139,00 | 34,1 Mio. | 1,21x (erhoeht) | 18,9 % |
+| Oracle (ORCL) | 16.09.2026 | 139,00 | 34,2 Mio. | 1,21x (erhoeht) | 18,9 % |
 | Oracle (ORCL) | 02.09.2026 | 139,72 | 21,9 Mio. | 0,97x | 19,3 % |
 | Oracle (ORCL) | 24.08.2026 | 141,25 | 14,2 Mio. | 0,49x (duenn) | 20,2 % |
 
@@ -139,8 +139,8 @@ _Diese Zeilen in die gelben Spalten uebertragen. Reihenfolge wie dort._
 | TTWO | 211,81 | 8,24 | 36,9 | 231,58 | 2026-08-20 | 0,81 |
 | META | 673,31 | 21,32 | 72,2 | 524,52 | 2026-07-30 | 1,03 |
 | MU | 926,55 | 43,04 | 46,8 | 915,18 | 2026-08-19 | 0,79 |
-| MSFT | 490,30 | 10,62 | 51,7 | 477,15 | 2026-08-18 | 0,80 |
-| ORCL | 143,16 | 7,89 | 45,7 | 137,44 | 2026-08-19 | 1,21 |
+| MSFT | 490,30 | 10,62 | 51,7 | 477,15 | 2026-08-18 | 0,81 |
+| ORCL | 143,16 | 7,90 | 45,7 | 137,44 | 2026-08-19 | 1,21 |
 | NVDA | 213,90 | 7,55 | 46,7 | 208,93 | 2026-09-14 | - |
 | AMAT | 415,38 | 17,28 | 33,0 | 411,51 | 2026-09-16 | - |
 

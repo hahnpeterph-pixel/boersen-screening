@@ -252,17 +252,35 @@ def hoechster(werte) -> float | None:
     return float(max(sauber)) if sauber else None
 
 
+def perzentil(werte, q: float) -> float | None:
+    sauber = [w for w in werte if w is not None and np.isfinite(w)]
+    return float(np.percentile(sauber, q)) if sauber else None
+
+
 def spanne(name: str, werte) -> dict:
-    """Je Kennzahl drei Spalten: tiefster Wert, Median, hoechster Wert.
+    """Je Kennzahl sechs Spalten: tiefster Wert, Median, p75, p90, p95,
+    hoechster Wert.
 
     Beschlossen am 24.08.2026. Der Median bleibt der Median ueber ALLE
     Faelle - ein Vorhersagetest ueber 25.829 Faelle hat gezeigt, dass ein
     getrimmtes Mittel beim noetigen Puffer 9,9 Prozent und beim Anstieg
-    19,2 Prozent schlechter trifft. Die beiden Nachbarspalten zeigen nur
-    die Spannweite und aendern die Kennzahl nicht.
+    19,2 Prozent schlechter trifft. Die Nachbarspalten zeigen nur die
+    Verteilung und aendern die Kennzahl nicht.
+
+    Perzentile ergaenzt am 17.09.2026. Grund: Die Kaufvorlage braucht
+    Saetze der Form "neun von zehn Korrekturen blieben flacher als X ATR".
+    Dafuer reichten tiefster/Median/hoechster nicht - der hoechste Wert
+    ist ein Einzelfall und als Massstab unbrauchbar. Gemessen ueber 223
+    Werte mit halbierter Historie weicht der hoechste Wert zwischen beiden
+    Haelften im Mittel um 24,9 Prozent ab, p90 nur um 8,9 Prozent und der
+    Median um 6,4 Prozent. Der hoechste Wert bleibt als Randnotiz in der
+    Datei, taugt aber nicht als Entscheidungsgrundlage.
     """
     return {f"{name}_tiefster": tiefster(werte),
             name: median(werte),
+            f"{name}_p75": perzentil(werte, 75),
+            f"{name}_p90": perzentil(werte, 90),
+            f"{name}_p95": perzentil(werte, 95),
             f"{name}_hoechster": hoechster(werte)}
 
 
@@ -321,7 +339,10 @@ def main() -> int:
     # Wert an erster Stelle, fehlten die Spalten im Kopf - der Schreibvorgang
     # brach dann bei der ersten vollstaendigen Zeile ab.
     def drei(name: str) -> list[str]:
-        return [f"{name}_tiefster", name, f"{name}_hoechster"]
+        """Sechs Spalten seit 17.09.2026 - Name aus Ruecksicht auf die
+        Aufrufstellen beibehalten, siehe spanne()."""
+        return [f"{name}_tiefster", name, f"{name}_p75", f"{name}_p90",
+                f"{name}_p95", f"{name}_hoechster"]
 
     SPALTEN = (["ticker", "sequenzen"]
                + drei("tiefs_median") + ["tiefs_max"]

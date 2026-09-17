@@ -1,90 +1,99 @@
 # Marktdaten
 
-_Erstellt 2026-09-17 09:56 UTC. 218 Werte, Fenster 90 Kalendertage. EUR/USD 1.1538._
+_Erstellt 2026-09-17 22:00 UTC. 218 Werte, Fenster 90 Kalendertage. EUR/USD 1.148._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
 Vollstaendige Daten: `docs/marktdaten.csv`
 
+> **Standwarnung: 39 von 205 Aktien haengen zurueck.** Neuester Handelstag 2026-09-17. Fuer die folgenden Werte gelten Kurs, ATR, RSI und Tiefs NICHT fuer diesen Tag. Die Spalte `stand_zurueck` in der CSV markiert sie ebenfalls.
+>
+> | Wert | letzte Kerze |
+> |---|---|
+> | ADS.DE | 2026-09-16 |
+> | AIR.DE | 2026-09-16 |
+> | ALV.DE | 2026-09-16 |
+> | ASML | 2026-09-16 |
+> | BAS.DE | 2026-09-16 |
+> | BAYN.DE | 2026-09-16 |
+> | BEI.DE | 2026-09-16 |
+> | BMW.DE | 2026-09-16 |
+> | BNR.DE | 2026-09-16 |
+> | CBK.DE | 2026-09-16 |
+> | CON.DE | 2026-09-16 |
+> | DB1.DE | 2026-09-16 |
+> | DBK.DE | 2026-09-16 |
+> | DHL.DE | 2026-09-16 |
+> | DTE.DE | 2026-09-16 |
+> | DTG.DE | 2026-09-16 |
+> | ENR.DE | 2026-09-16 |
+> | EOAN.DE | 2026-09-16 |
+> | FRE.DE | 2026-09-16 |
+> | HEI.DE | 2026-09-16 |
+> | HEN3.DE | 2026-09-16 |
+> | HNR1.DE | 2026-09-16 |
+> | IFX.DE | 2026-09-16 |
+> | MBG.DE | 2026-09-16 |
+> | MRK.DE | 2026-09-16 |
+> | MTX.DE | 2026-09-16 |
+> | MUV2.DE | 2026-09-16 |
+> | P911.DE | 2026-09-16 |
+> | PAH3.DE | 2026-09-16 |
+> | QIA.DE | 2026-09-16 |
+> | RHM.DE | 2026-09-16 |
+> | RWE.DE | 2026-09-16 |
+> | SAP.DE | 2026-09-16 |
+> | SHL.DE | 2026-09-16 |
+> | SIE.DE | 2026-09-16 |
+> | SRT3.DE | 2026-09-16 |
+> | SY1.DE | 2026-09-16 |
+> | VNA.DE | 2026-09-16 |
+> | ZAL.DE | 2026-09-16 |
+
 ## Kerzensignale von gestern
 
 | Wert | Kurs | Hammer | hoeheres Hoch | Umkehrkerze | RSI |
 |---|---|---|---|---|---|
-| ADBE (ADBE) | 250.5 | - | - | ja | 42.94 |
-| ADP (ADP) | 273.19 | - | - | ja | 50.12 |
-| ADSK (ADSK) | 220.31 | - | - | ja | 42.44 |
-| AMAT (AMAT) | 415.38 | - | ja | ja | 32.98 |
-| AMZN (AMZN) | 245.96 | - | - | ja | 39.45 |
-| AXP (AXP) | 312.43 | - | - | ja | 31.87 |
-| BA (BA) | 201.96 | - | - | ja | 35.6 |
-| CDW (CDW) | 149.96 | - | - | ja | 54.76 |
-| CEG (CEG) | 259.53 | - | - | ja | 37.95 |
-| CHTR (CHTR) | 135.0 | - | - | ja | 41.58 |
-| CMCSA (CMCSA) | 23.73 | - | - | ja | 34.77 |
-| COST (COST) | 893.74 | - | - | ja | 35.01 |
-| CRM (CRM) | 250.54 | - | - | ja | 62.38 |
-| CSCO (CSCO) | 107.74 | - | - | ja | 41.09 |
-| CSGP (CSGP) | 30.36 | - | - | ja | 46.2 |
-| CSX (CSX) | 47.9 | - | - | ja | 34.92 |
-| CTSH (CTSH) | 61.85 | - | - | ja | 55.15 |
-| DASH (DASH) | 196.76 | - | - | ja | 37.62 |
-| FANG (FANG) | 194.54 | - | - | ja | 42.4 |
-| GEHC (GEHC) | 63.49 | - | - | ja | 28.14 |
-| GS (GS) | 937.98 | - | - | ja | 30.42 |
-| HD (HD) | 302.47 | - | - | ja | 29.78 |
-| IBM (IBM) | 237.49 | - | - | ja | 50.09 |
-| INTU (INTU) | 318.13 | - | - | ja | 43.44 |
-| LULU (LULU) | 95.98 | - | - | ja | 32.45 |
-| MAR (MAR) | 334.97 | - | - | ja | 40.02 |
-| MCD (MCD) | 248.56 | - | - | ja | 31.9 |
-| MCHP (MCHP) | 69.59 | - | ja | ja | 37.88 |
-| MSFT (MSFT) | 490.3 | - | - | ja | 51.72 |
-| NFLX (NFLX) | 76.41 | - | - | ja | 45.65 |
-| NKE (NKE) | 35.78 | - | - | ja | 30.94 |
-| NXPI (NXPI) | 218.98 | - | - | ja | 40.53 |
-| ON (ON) | 66.6 | - | - | ja | 36.31 |
-| ORLY (ORLY) | 83.68 | - | - | ja | 34.89 |
-| PAYX (PAYX) | 116.72 | - | - | ja | 43.19 |
-| PCAR (PCAR) | 118.22 | - | ja | ja | 29.87 |
-| PEP (PEP) | 134.34 | - | ja | ja | 34.37 |
-| PYPL (PYPL) | 52.71 | - | - | ja | 40.04 |
-| ROP (ROP) | 375.82 | - | - | ja | 36.17 |
-| ROST (ROST) | 224.8 | - | - | ja | 38.22 |
-| SPGI (SPGI) | 406.76 | - | - | ja | 40.43 |
-| TMUS (TMUS) | 176.26 | - | - | ja | 43.2 |
-| TTD (TTD) | 14.49 | - | - | ja | 48.23 |
-| TXN (TXN) | 260.67 | - | ja | ja | 45.02 |
-| UNH (UNH) | 375.26 | - | - | ja | 35.07 |
-| V (V) | 370.93 | - | ja | ja | 50.19 |
-| VZ (VZ) | 49.76 | - | - | ja | 52.41 |
-| WMT (WMT) | 107.5 | - | - | ja | 48.0 |
-| ACN (ACN) | 189.64 | - | - | ja | 57.62 |
-| BAC (BAC) | 57.9 | - | - | ja | 28.51 |
-| BLK (BLK) | 1037.24 | - | - | ja | 32.14 |
-| C (C) | 132.95 | - | - | ja | 43.71 |
-| COP (COP) | 132.54 | - | - | ja | 51.47 |
-| CVS (CVS) | 91.72 | - | - | ja | 35.6 |
-| DE (DE) | 669.47 | - | - | ja | 56.33 |
-| FDX (FDX) | 301.72 | - | - | ja | 33.38 |
-| GM (GM) | 84.29 | - | - | ja | 45.87 |
-| MDT (MDT) | 92.6 | - | - | ja | 55.44 |
-| NEE (NEE) | 80.37 | - | - | ja | 28.32 |
-| SCHW (SCHW) | 105.16 | - | - | ja | 41.35 |
-| SPG (SPG) | 202.94 | - | ja | ja | 28.0 |
-| T (T) | 25.86 | - | - | ja | 55.5 |
-| UBER (UBER) | 70.97 | - | - | ja | 40.5 |
-| UNP (UNP) | 280.92 | - | ja | ja | 32.1 |
-| UPS (UPS) | 98.77 | - | - | ja | 36.79 |
-| USB (USB) | 59.73 | - | - | ja | 33.38 |
-| WFC (WFC) | 87.05 | - | - | ja | 47.74 |
-| XOM (XOM) | 163.32 | - | - | ja | 53.23 |
+| ABNB (ABNB) | 165.93 | - | - | ja | 39.86 |
+| ADSK (ADSK) | 218.64 | - | - | ja | 41.61 |
+| BA (BA) | 197.0 | - | - | ja | 31.46 |
+| CHTR (CHTR) | 133.37 | - | - | ja | 40.56 |
+| CMCSA (CMCSA) | 22.91 | - | - | ja | 30.48 |
+| CPRT (CPRT) | 29.66 | - | - | ja | 40.32 |
+| CRM (CRM) | 242.85 | - | - | ja | 56.62 |
+| CSGP (CSGP) | 29.295 | - | - | ja | 41.3 |
+| DIS (DIS) | 105.35 | - | - | ja | 49.27 |
+| IDXX (IDXX) | 506.48 | - | - | ja | 34.59 |
+| INTU (INTU) | 313.13 | - | - | ja | 41.55 |
+| LIN (LIN) | 458.48 | - | - | ja | 29.66 |
+| MNST (MNST) | 44.51 | - | - | ja | 43.78 |
+| NFLX (NFLX) | 75.31 | - | - | ja | 43.14 |
+| PEP (PEP) | 133.66 | - | - | ja | 32.75 |
+| SPGI (SPGI) | 404.11 | - | - | ja | 39.25 |
+| TMUS (TMUS) | 166.45 | - | - | ja | 33.65 |
+| TTD (TTD) | 14.26 | - | - | ja | 46.14 |
+| TTWO (TTWO) | 210.62 | - | - | ja | 36.03 |
+| VRSK (VRSK) | 176.48 | - | - | ja | 42.06 |
+| VZ (VZ) | 48.33 | - | - | ja | 43.33 |
+| WMT (WMT) | 106.79 | - | - | ja | 45.99 |
+| AMT (AMT) | 175.58 | - | - | ja | 50.96 |
+| BMY (BMY) | 62.84 | - | - | ja | 39.25 |
+| BRK-B (BRK-B) | 509.2 | - | - | ja | 51.61 |
+| CVS (CVS) | 90.27 | - | - | ja | 32.4 |
+| GD (GD) | 355.95 | - | ja | ja | 34.56 |
+| MS (MS) | 203.52 | ja | - | - | 36.42 |
+| PM (PM) | 190.48 | - | - | ja | 51.81 |
+| RTX (RTX) | 193.54 | - | - | ja | 29.42 |
+| T (T) | 25.39 | - | - | ja | 50.23 |
+| UNP (UNP) | 282.48 | ja | - | - | 35.4 |
 | BMW.DE (BMW.DE) | 62.14 | - | ja | ja | 55.31 |
 | CBK.DE (CBK.DE) | 41.45 | - | ja | ja | 55.63 |
 | MBG.DE (MBG.DE) | 45.365 | - | - | ja | 42.02 |
 | PAH3.DE (PAH3.DE) | 28.73 | - | - | ja | 52.29 |
 | SHL.DE (SHL.DE) | 38.36 | - | - | ja | 46.3 |
-| VOW3.DE (VOW3.DE) | 78.88 | - | - | ja | 53.36 |
 | ZAL.DE (ZAL.DE) | 21.48 | - | - | ja | 33.58 |
+| Erdgas (NG=F) | 2.869 | - | - | ja | 50.55 |
+| Kakao (CC=F) | 5620.0 | - | - | ja | 41.96 |
 
 ---
 

@@ -919,7 +919,7 @@ W_ROE = 10          # Eigenkapitalrendite
 W_DEBT = 10         # Verschuldungsgrad (niedrig ist besser)
 W_STRUCTURE = 5     # Kurs ueber 200-Tage-Linie
 W_REVISIONS = 10    # Analysten-Ratingaenderungen, letzte 30 Tage
-W_UPSIDE = 5        # Abstand zum mittleren Analysten-Kursziel
+W_UPSIDE = 5        # Abstand zum Analysten-Kursziel (Median)
 
 
 def score_value(m: dict, f: dict, a: dict) -> tuple[float, list[str], list[dict]]:
@@ -947,7 +947,10 @@ def score_value(m: dict, f: dict, a: dict) -> tuple[float, list[str], list[dict]
     d2e = safe(f, "debtToEquity")
     fcf = safe(f, "freeCashflow")
     roe = safe(f, "returnOnEquity")
-    target = safe(f, "targetMeanPrice")
+    # Gleiche Definition wie in target_price_info seit 18.09.2026: Median
+    # statt Mittelwert. Zwei verschiedene Kurszielbegriffe in einer Datei
+    # waeren eine Fehlerquelle, auch wenn hier nur 5 von 100 Punkten haengen.
+    target = safe(safe(a, "price_targets") or {}, "median") or safe(f, "targetMeanPrice")
 
     if fpe and tpe and 0 < fpe < tpe:
         add("KGV verbessert", W_PE_IMPROVE, W_PE_IMPROVE, f"{fpe:.1f} < {tpe:.1f}")
@@ -1008,7 +1011,7 @@ def score_value(m: dict, f: dict, a: dict) -> tuple[float, list[str], list[dict]
         p = W_UPSIDE * ramp(upside, 0, 20)
         add("Kursziel-Abstand", p, W_UPSIDE, f"{upside:.0f}%")
         if upside > 8:
-            why.append(f"{upside:.0f}% Abstand zum mittleren Kursziel")
+            why.append(f"{upside:.0f}% Abstand zum Kursziel")
     else:
         add("Kursziel-Abstand", 0.0, W_UPSIDE, "k.A.")
 
@@ -1052,7 +1055,28 @@ def target_price_info(f: dict, a: dict, last: float) -> dict:
         "none": "keine Angabe", "underperform": "unterdurchschnittlich",
         "outperform": "ueberdurchschnittlich",
     }
-    target = safe(f, "targetMeanPrice")
+    # KURSZIEL IST SEIT 18.09.2026 DER MEDIAN, NICHT MEHR DER MITTELWERT
+    # (Entscheidung 195). Grund: gemessen an allen 211 Werten mit beiden
+    # Zahlen liegt das tiefste Analystenziel im Mittel 25 Prozent unter dem
+    # Median, das hoechste nur 20 Prozent darueber - der Ausreisser nach
+    # unten ist in 55 von 100 Faellen der groessere. Ein einzelner
+    # Pessimist zieht damit den Mittelwert, den Median nicht. Beispiel
+    # Goldman Sachs am 18.09.2026: tiefstes Ziel 730, Median 1.150,
+    # hoechstes 1.325 - der Mittelwert landete bei 1.141,70.
+    #
+    # Wirkung gemessen: die Renditehuerde entscheidet bei 6 von 143 Werten
+    # anders, alle sechs von "raus" auf "drin" (Keurig Dr Pepper, Ross
+    # Stores, Daimler Truck, Eli Lilly, Intuitive Surgical, Goldman Sachs).
+    # Die Kandidatenzahl steigt damit von 58 auf 64. Das ist bewusst in
+    # Kauf genommen: Peter hat am 18.09.2026 entschieden, die Huerde bei
+    # 150 Prozent zu belassen.
+    #
+    # Die Zahl kommt aus analyst_price_targets, das ohnehin taeglich
+    # abgerufen wird - kein zusaetzlicher Datenabruf. Faellt sie aus, wird
+    # auf targetMeanPrice zurueckgefallen: lieber der Mittelwert als gar
+    # kein Kursziel.
+    pt_roh = safe(a, "price_targets") or {}
+    target = safe(pt_roh, "median") or safe(f, "targetMeanPrice")
     n_analysts = safe(f, "numberOfAnalystOpinions")
     empfehlung = empfehlung_text.get(safe(f, "recommendationKey"), None)
     rec_breakdown = safe(a, "consensus")

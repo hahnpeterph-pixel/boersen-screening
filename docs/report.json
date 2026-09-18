@@ -3,20 +3,20 @@
  "ranks": {
   "turnaround": [
    "T",
-   "DTE.DE",
    "DIS",
    "DHR",
    "CTSH",
+   "SAP.DE",
    "WDAY",
    "COP",
-   "PLTR",
    "REGN",
    "MMM",
-   "BNR.DE",
-   "BAS.DE",
-   "SRT3.DE",
+   "QIA.DE",
    "KO",
-   "CVX"
+   "WBD",
+   "CVX",
+   "V",
+   "MUV2.DE"
   ],
   "momentum": [
    "FTNT",
@@ -25,15 +25,15 @@
    "ILMN",
    "MRK",
    "MRNA",
-   "SY1.DE",
-   "BNR.DE",
-   "TRV",
-   "ALV.DE",
    "DHL.DE",
+   "ALV.DE",
+   "TRV",
+   "BNR.DE",
+   "SY1.DE",
+   "CBK.DE",
    "KO",
-   "V",
    "CVX",
-   "COP"
+   "P911.DE"
   ],
   "value": [
    "NVDA",
@@ -43,60 +43,60 @@
    "META",
    "BLK",
    "REGN",
+   "MTX.DE",
    "COP",
    "V",
    "MNST",
    "UNP",
    "VRTX",
    "ODFL",
-   "DXCM",
-   "DB1.DE"
+   "DXCM"
   ]
  },
  "changes": {
   "turnaround": {
    "entries": [
     {
-     "ticker": "DTE.DE",
-     "rank": 2
+     "ticker": "SAP.DE",
+     "rank": 5
     },
     {
-     "ticker": "PLTR",
-     "rank": 8
+     "ticker": "QIA.DE",
+     "rank": 10
     },
     {
-     "ticker": "BNR.DE",
-     "rank": 11
+     "ticker": "WBD",
+     "rank": 12
     },
     {
-     "ticker": "SRT3.DE",
-     "rank": 13
+     "ticker": "V",
+     "rank": 14
     },
     {
-     "ticker": "CVX",
+     "ticker": "MUV2.DE",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "SAP.DE",
+     "ticker": "DTE.DE",
      "old_rank": 2
     },
     {
-     "ticker": "QIA.DE",
-     "old_rank": 6
+     "ticker": "PLTR",
+     "old_rank": 8
     },
     {
-     "ticker": "MUV2.DE",
+     "ticker": "BNR.DE",
      "old_rank": 11
     },
     {
-     "ticker": "HEN3.DE",
-     "old_rank": 13
+     "ticker": "BAS.DE",
+     "old_rank": 12
     },
     {
-     "ticker": "WBD",
-     "old_rank": 14
+     "ticker": "SRT3.DE",
+     "old_rank": 13
     }
    ],
    "moves": []
@@ -104,29 +104,21 @@
   "momentum": {
    "entries": [
     {
-     "ticker": "V",
-     "rank": 13
+     "ticker": "CBK.DE",
+     "rank": 12
     },
     {
-     "ticker": "CVX",
-     "rank": 14
-    },
-    {
-     "ticker": "COP",
+     "ticker": "P911.DE",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "P911.DE",
-     "old_rank": 12
-    },
-    {
-     "ticker": "CBK.DE",
+     "ticker": "V",
      "old_rank": 13
     },
     {
-     "ticker": "BAS.DE",
+     "ticker": "COP",
      "old_rank": 15
     }
    ],
@@ -135,14 +127,14 @@
   "value": {
    "entries": [
     {
-     "ticker": "DB1.DE",
-     "rank": 15
+     "ticker": "MTX.DE",
+     "rank": 8
     }
    ],
    "exits": [
     {
-     "ticker": "MTX.DE",
-     "old_rank": 9
+     "ticker": "DB1.DE",
+     "old_rank": 15
     }
    ],
    "moves": []

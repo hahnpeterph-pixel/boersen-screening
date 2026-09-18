@@ -6,9 +6,9 @@
    "DIS",
    "DHR",
    "CTSH",
-   "SAP.DE",
    "WDAY",
    "COP",
+   "PLTR",
    "REGN",
    "MMM",
    "QIA.DE",
@@ -26,14 +26,14 @@
    "MRK",
    "MRNA",
    "DHL.DE",
-   "ALV.DE",
-   "TRV",
    "BNR.DE",
    "SY1.DE",
+   "ALV.DE",
+   "TRV",
    "CBK.DE",
    "KO",
-   "CVX",
-   "P911.DE"
+   "P911.DE",
+   "CVX"
   ],
   "value": [
    "NVDA",
@@ -57,86 +57,26 @@
   "turnaround": {
    "entries": [
     {
-     "ticker": "SAP.DE",
-     "rank": 5
-    },
-    {
-     "ticker": "QIA.DE",
-     "rank": 10
-    },
-    {
-     "ticker": "WBD",
-     "rank": 12
-    },
-    {
-     "ticker": "V",
-     "rank": 14
-    },
-    {
-     "ticker": "MUV2.DE",
-     "rank": 15
+     "ticker": "PLTR",
+     "rank": 7
     }
    ],
    "exits": [
     {
-     "ticker": "DTE.DE",
-     "old_rank": 2
-    },
-    {
-     "ticker": "PLTR",
-     "old_rank": 8
-    },
-    {
-     "ticker": "BNR.DE",
-     "old_rank": 11
-    },
-    {
-     "ticker": "BAS.DE",
-     "old_rank": 12
-    },
-    {
-     "ticker": "SRT3.DE",
-     "old_rank": 13
+     "ticker": "SAP.DE",
+     "old_rank": 5
     }
    ],
    "moves": []
   },
   "momentum": {
-   "entries": [
-    {
-     "ticker": "CBK.DE",
-     "rank": 12
-    },
-    {
-     "ticker": "P911.DE",
-     "rank": 15
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "V",
-     "old_rank": 13
-    },
-    {
-     "ticker": "COP",
-     "old_rank": 15
-    }
-   ],
+   "entries": [],
+   "exits": [],
    "moves": []
   },
   "value": {
-   "entries": [
-    {
-     "ticker": "MTX.DE",
-     "rank": 8
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "DB1.DE",
-     "old_rank": 15
-    }
-   ],
+   "entries": [],
+   "exits": [],
    "moves": []
   },
   "analyst_flips": []

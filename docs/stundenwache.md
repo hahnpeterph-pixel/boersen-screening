@@ -1,8 +1,8 @@
 # Stundenwache
 
-Stand: 2026-09-17 · 158 Werte mit Stundendaten · erstellt 2026-09-18 08:14 UTC
+Stand: 2026-09-17 · 158 Werte mit Stundendaten · erstellt 2026-09-18 09:31 UTC
 
-> **Sitzung noch nicht abgeschlossen.** 40 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 1, 7). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
+> **Sitzung noch nicht abgeschlossen.** 40 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 3, 7). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
 
 Marken sind das juengste Swing-Tief und das juengste Swing-Hoch aus `tiefs_regel.py`, also dieselben wie im Tagesbericht. Geprueft wird nur, was der letzte Handelstag auf Stundenbasis damit gemacht hat.
 
@@ -20,13 +20,13 @@ Schluss unter dem juengsten Swing-Tief. Die Sequenz ist gerissen.
 | Wert | Marke | Schluss | Abstand (ATR) | Stunden dahinter |
 |---|---|---|---|---|
 | PCAR | 119.77 | 117.35 | -0.903 | 7 |
-| CBK.DE | 41.99 | 41.77 | -0.236 | 1 |
+| CBK.DE | 41.99 | 41.66 | -0.353 | 3 |
 
 ## Tief zurueckerobert (0)
 
 Keine.
 
-## Tief angetestet (9)
+## Tief angetestet (8)
 
 Docht bis unter die Marke, kein Stundenschluss darunter.
 
@@ -34,7 +34,6 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 |---|---|---|---|---|
 | CMCSA | 22.84 | 22.92 | 0.106 | 0 |
 | TXN | 257.1 | 258.11 | 0.122 | 0 |
-| MUV2.DE | 506.2 | 507.4 | 0.131 | 0 |
 | ADSK | 216.4 | 218.66 | 0.219 | 0 |
 | CSX | 47.53 | 47.895 | 0.356 | 0 |
 | LIN | 455.7 | 458.435 | 0.394 | 0 |
@@ -50,18 +49,18 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | ILMN | 221.76 | 245.13 | 2.318 | 7 |
 | CRWD | 218.31 | 245.72 | 2.028 | 7 |
 | WDAY | 185.82 | 199.205 | 1.476 | 7 |
-| QIA.DE | 37.24 | 38.555 | 1.324 | 1 |
+| QIA.DE | 37.24 | 38.655 | 1.421 | 3 |
 | GILD | 146.75 | 150.87 | 1.206 | 7 |
-| DHL.DE | 55.7 | 56.44 | 0.84 | 1 |
+| FRE.DE | 45.2 | 46.145 | 0.955 | 3 |
+| DHL.DE | 55.7 | 56.46 | 0.853 | 3 |
 | AMD | 526.79 | 544.78 | 0.819 | 7 |
 | AAPL | 330.81 | 337.08 | 0.801 | 7 |
 | ARM | 253.155 | 264.89 | 0.795 | 7 |
 | DDOG | 227.58 | 235.97 | 0.782 | 7 |
-| FRE.DE | 45.2 | 45.96 | 0.772 | 1 |
 | MU | 944.94 | 977.52 | 0.76 | 7 |
 | INTC | 104.9 | 108.75 | 0.683 | 7 |
+| P911.DE | 45.97 | 46.75 | 0.575 | 3 |
 | TRV | 376.57 | 379.5 | 0.459 | 7 |
-| P911.DE | 45.97 | 46.59 | 0.457 | 1 |
 | AZN | 164.55 | 166.125 | 0.453 | 7 |
 | QCOM | 185.46 | 188.71 | 0.402 | 7 |
 | ISRG | 382.41 | 383.57 | 0.1 | 4 |

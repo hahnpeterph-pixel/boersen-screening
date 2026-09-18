@@ -17,6 +17,19 @@ stattdessen eine fertige Tabelle (docs/heute.csv), aus der die Kaufvorlage
 nur noch in Prosa gegossen werden muss, statt jede Zahl neu herzuleiten.
 
 Ausgabe: docs/heute.csv, eine Zeile je Block-1-Treffer, EU vor USA sortiert.
+
+STAND 18.09.2026 - zwei Aenderungen gegenueber der Fassung vom 10.09.2026:
+
+1. BEZUGSTIEF: Das Tagestief gilt nur noch dann als Bezugstief, wenn an
+   diesem Tag auch wirklich ein neues Tief entstanden ist. Sonst gilt das
+   juengste bestaetigte Serientief. Details am Codeort weiter unten.
+
+2. SICHERHEITSMARKEN: Neue Spalten marke_9von10_* und marke_19von20_* je
+   Wert sowie p<puffer>_reserve_atr je Pufferstufe. Dafuer ist die Spalte
+   p<puffer>_ko_haelt_pct entfallen. Hintergrund: Die Kaufvorlage zeigte
+   bisher nur, wie sicher der KO innerhalb des Ankerfensters ist, das
+   spaetestens bei 4,00 ATR endet - die wirklich sicheren Stufen liegen
+   regelmaessig darueber und waren nirgends sichtbar.
 """
 
 from __future__ import annotations
@@ -406,6 +419,50 @@ def _haelt(teilmenge: pd.DataFrame, puffer_atr: float):
     return haelt.mean() * 100, len(beobachtet_genug)
 
 
+def _benoetigt(teilmenge: pd.DataFrame) -> np.ndarray:
+    """Benoetigter Puffer je Tief, in ATR - also wie viel Abstand unter dem
+    Tief noetig gewesen waere, damit der KO nicht faellt. Gleiche Grund-
+    gesamtheit wie _haelt(), damit Prozentwerte und Marken denselben
+    Nenner haben."""
+    if len(teilmenge) == 0:
+        return np.array([], dtype=float)
+    genug = teilmenge[teilmenge["beobachtet"] >= HALTE_FENSTER]
+    werte = genug["benoetigt_atr"].to_numpy(dtype=float)
+    return werte[~np.isnan(werte)]
+
+
+def _marke(werte: np.ndarray, anteil: float):
+    """Kleinster Puffer, bei dem mindestens <anteil> aller Ruecksetzer den
+    KO nie gerissen haetten.
+
+    AUSGEZAEHLT, nicht zwischen Perzentilen interpoliert - Peters
+    ausdrueckliche Vorgabe. Der Index laeuft ueber die sortierte Reihe der
+    benoetigten Puffer: bei 195 Faellen und 90 Prozent ist das der
+    176. Wert, also genau die Stufe, ab der 176 von 195 gehalten haetten.
+
+    Hintergrund (18.09.2026): Ein reissender KO reisst praktisch immer
+    innerhalb der ersten 63 Handelstage. Nachgemessen an Broadcom stimmt
+    "haelt 63 Tage" auf jeder einzelnen Pufferstufe exakt mit "reisst nie"
+    ueberein. Die Marken hier und die Halteraten-Spalten messen deshalb
+    dasselbe und sind untereinander vergleichbar."""
+    if len(werte) == 0:
+        return None
+    sortiert = np.sort(werte)
+    index = int(np.ceil(anteil * len(sortiert))) - 1
+    index = min(max(index, 0), len(sortiert) - 1)
+    return float(sortiert[index])
+
+
+def _haelt_bei(werte: np.ndarray, puffer_atr: float):
+    """Halteanteil bei einem beliebigen Puffer - auch ausserhalb der 16
+    festen tage_ko-Stufen, die nur bis 4,00 ATR reichen. Die Sicherheits-
+    marken liegen regelmaessig darueber (Broadcom 5,32, Sherwin-Williams
+    6,77 ATR), deshalb kann _haelt() sie nicht liefern."""
+    if len(werte) == 0:
+        return None, 0
+    return float((werte <= puffer_atr).mean() * 100), int(len(werte))
+
+
 def main() -> None:
     markt = pd.read_csv(os.path.join(DOCS, "marktdaten.csv")).set_index("ticker")
     analysten = pd.read_csv(os.path.join(DOCS, "analysten.csv")).set_index("ticker")
@@ -416,17 +473,12 @@ def main() -> None:
         puffer = pd.read_csv(f)
 
     puffer = puffer.sort_values(["ticker", "datum"])
-    puffer["serie"] = (puffer["position"] == 1).cumsum()
-    serientiefe = (
-        puffer.groupby(["ticker", "serie"])
-        .agg(n=("position", "max"), t1=("tief", "first"), tl=("tief", "last"), atr1=("atr", "first"))
-        .reset_index()
-    )
-    serientiefe = serientiefe[serientiefe.n >= 2]
-    serientiefe["tiefe_atr"] = (serientiefe.t1 - serientiefe.tl) / serientiefe.atr1
-    serientiefe_je_wert = {
-        t: g["tiefe_atr"].to_numpy() for t, g in serientiefe.groupby("ticker")
-    }
+    # Die Serientiefe-Aggregation ist am 18.09.2026 entfallen, zusammen mit
+    # der Spalte ko_haelt_pct, die als einzige daraus gespeist wurde. Die
+    # Serientiefe selbst bleibt unveraendert bestehen - sie wird von
+    # historie.py gerechnet und im Excel-Blatt "Serientiefe" gefuehrt
+    # (Entscheidung 100). Was hier wegfaellt, ist nur die zweite, kleinere
+    # Sicherheitsspalte in der Kaufvorlage.
 
     ketten_je_wert: dict[str, dict[int, tuple]] = {}
     for t, gruppe in rsi_schwellen.groupby("ticker"):
@@ -467,11 +519,41 @@ def main() -> None:
         if position != position or not position or int(position) == 1:
             continue
 
-        # BEZUGSTIEF ist ab Entscheidung 154 das TAGESTIEF dieses Tages,
-        # nicht mehr das letzte bestaetigte Tief aus tief1. Der KO wird
-        # daran verankert, und genau dieser Abstand entscheidet ueber die
-        # Rendite: Median 0,64 ATR statt 2,94 ATR unter der alten Regel.
-        tief = float(z.low) if pd.notna(z.low) else float(z.tief1)
+        # BEZUGSTIEF ist ab Entscheidung 154 das TAGESTIEF dieses Tages -
+        # aber nur dann, wenn an diesem Tag auch tatsaechlich ein neues
+        # Tief entstanden ist, das Tagestief also UNTER dem juengsten
+        # bestaetigten Serientief liegt. Sonst gilt dieses Serientief.
+        #
+        # KORREKTUR vom 18.09.2026: Die alte Fassung nahm bedingungslos
+        # z.low. An jedem Tag ohne neues Tief erklaerte sie damit das
+        # Tagestief einer AUFWAERTSkerze zum Bezugstief - einen Wert, der
+        # nie ein Tief war. Am 17.09.2026 betraf das alle drei Kandidaten:
+        # Broadcom 345,31 statt 335,82 (9,50 zu hoch), Sherwin-Williams
+        # 320,64 statt 315,42 (5,22 zu hoch), UnitedHealth 374,20 statt
+        # 373,63 (0,57 zu hoch). Folge: KO zu hoch verankert, Puffer zu
+        # klein, Rendite zu gross ausgewiesen. Bei Sherwin-Williams
+        # reichte der Fehler, um die Renditehuerde faelschlich zu nehmen -
+        # 180,1 Prozent ausgewiesen, tatsaechlich 148,6. Der Wert waere
+        # gar nicht in Block 1 gelandet. Aufgefallen durch Peters
+        # stock3-Charts, nicht durch das Skript.
+        #
+        # Entscheidung 154 bleibt damit unveraendert gueltig - sie war nur
+        # falsch umgesetzt. Das ist eine Fehlerkorrektur, keine
+        # Regelaenderung; die Stoppregel vom 17.09.2026 greift hier nicht.
+        tagestief = float(z.low) if pd.notna(z.low) else None
+        serientief = float(z.tief1) if pd.notna(z.tief1) else None
+        if tagestief is not None and serientief is not None:
+            if tagestief < serientief:
+                tief, tief_datum = tagestief, z.datum
+            else:
+                tief, tief_datum = serientief, z.tief1_datum
+        elif tagestief is not None:
+            tief, tief_datum = tagestief, z.datum
+        elif serientief is not None:
+            tief, tief_datum = serientief, z.tief1_datum
+        else:
+            print(f"WARNUNG: {t} hat weder Tagestief noch Serientief - uebersprungen.")
+            continue
         # Kein Analystenziel fuer Rohstoffe/FX moeglich - "Kursziel" und
         # "Eigenes Ziel" bleiben leer statt einer erfundenen Zahl. Peters
         # Regel "grobe Naeherungen sind kein akzeptables Ergebnis" gilt
@@ -489,7 +571,6 @@ def main() -> None:
 
         ueblich = phasen.loc[t, "korrektur_atr"] if t in phasen.index else None
         luecken_wert = luecken[luecken.ticker == t]
-        arr_serientiefe = serientiefe_je_wert.get(t)
 
         teil_puffer = puffer[puffer.ticker == t]
         teil_position = (
@@ -506,7 +587,7 @@ def main() -> None:
             "kurs": kurs,
             "atr14": atr,
             "bezugstief": tief,
-            "bezugstief_datum": z.datum,
+            "bezugstief_datum": tief_datum,
             "bezugstief_bestaetigt": 0,
             "position": position,
             "fortsetzungskette": fortsetzungskette(kette_roh, position),
@@ -596,6 +677,40 @@ def main() -> None:
             zeile["filter_ergebnis"] = f"raus - Rendite {r_eigen:.0f} %"
             zeile["filter_variante"] = None
 
+        # SICHERHEITSMARKEN (neu am 18.09.2026, auf Peters Vorgabe). Die
+        # Pufferstufen zeigen bisher nur, wie sicher der KO IN DIESEM
+        # Fenster ist - das Fenster endet aber spaetestens bei 4,00 ATR,
+        # und die wirklich sicheren Stufen liegen regelmaessig darueber.
+        # Gefragt war: "der Wert, wo es rein stochastisch fast
+        # ausgeschlossen ist, dass der KO gerissen wird" - und der Abstand
+        # dorthin, damit man sieht, ob die naechste Sicherheitsstufe
+        # billig zu haben ist oder teuer.
+        benoetigt_alle = _benoetigt(teil_puffer)
+        benoetigt_position = _benoetigt(teil_position)
+        marke90 = _marke(benoetigt_alle, 0.90)
+        marke95 = _marke(benoetigt_alle, 0.95)
+
+        for feld, quote in (("9von10", 0.90), ("19von20", 0.95)):
+            m = marke90 if feld == "9von10" else marke95
+            zeile[f"marke_{feld}_atr"] = m
+            if m is None:
+                continue
+            ko_m = tief - m * atr
+            hoehe_m = kurs - ko_m
+            hp_m, hpn_m = _haelt_bei(benoetigt_position, m)
+            ha_m, han_m = _haelt_bei(benoetigt_alle, m)
+            zeile[f"marke_{feld}_ko"] = ko_m
+            zeile[f"marke_{feld}_abstand_pct"] = (kurs - ko_m) / kurs * 100 if kurs else None
+            zeile[f"marke_{feld}_einsatz"] = 50 + 50 * m
+            zeile[f"marke_{feld}_haelt_position_pct"] = hp_m
+            zeile[f"marke_{feld}_haelt_position_n"] = hpn_m
+            zeile[f"marke_{feld}_haelt_alle_pct"] = ha_m
+            zeile[f"marke_{feld}_haelt_alle_n"] = han_m
+            if eigen is not None and hoehe_m:
+                zeile[f"marke_{feld}_rendite_eigen_pct"] = (eigen - kurs) / hoehe_m * 100
+            if ziel is not None and hoehe_m:
+                zeile[f"marke_{feld}_rendite_analyst_pct"] = (ziel - kurs) / hoehe_m * 100
+
         untergrenze = max(0.25, round(anker - 1.00, 2))
         fenster = [round(untergrenze + 0.25 * i, 2) for i in range(9)]
         fenster = [p for p in fenster if 0.25 <= p <= 4.00]
@@ -604,11 +719,6 @@ def main() -> None:
             ko = tief - puf * atr
             haelt_position, n_position = _haelt(teil_position, puf)
             haelt_alle, n_alle = _haelt(teil_puffer, puf)
-            ko_haelt = (
-                (arr_serientiefe < puf).mean() * 100
-                if arr_serientiefe is not None and len(arr_serientiefe)
-                else None
-            )
             hoehe = kurs - ko
             zeile[f"p{puf:g}_ko"] = ko
             zeile[f"p{puf:g}_abstand_pct"] = (kurs - ko) / kurs * 100 if kurs else None
@@ -617,7 +727,17 @@ def main() -> None:
             zeile[f"p{puf:g}_haelt63_position_n"] = n_position
             zeile[f"p{puf:g}_haelt63_alle_pct"] = haelt_alle
             zeile[f"p{puf:g}_haelt63_alle_n"] = n_alle
-            zeile[f"p{puf:g}_ko_haelt_pct"] = ko_haelt
+            # RESERVE: wie viele ATR von dieser Stufe bis zu der Stufe
+            # fehlen, ab der neun von zehn Ruecksetzer gehalten haetten.
+            # Ersetzt die Spalte ko_haelt_pct, die am 18.09.2026 gestrichen
+            # wurde: Sie mass dasselbe wie haelt63_alle_pct, nur auf der
+            # kleineren Grundgesamtheit der Serien (46 statt 195 Faellen
+            # bei Broadcom), und ihr Nenner stand nirgends in der Ausgabe.
+            # Zwei Sicherheitsspalten mit verschiedenen Nennern nebenein-
+            # ander waren der Grund, warum die Tabelle unklar wirkte.
+            zeile[f"p{puf:g}_reserve_atr"] = (
+                round(marke90 - puf, 2) if marke90 is not None else None
+            )
             zeile[f"p{puf:g}_ist_anker"] = 1 if puf == anker else 0
             if eigen is not None and hoehe:
                 zeile[f"p{puf:g}_rendite_eigen_pct"] = (eigen - kurs) / hoehe * 100

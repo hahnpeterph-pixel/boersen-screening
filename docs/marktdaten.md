@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-09-17 22:00 UTC. 218 Werte, Fenster 90 Kalendertage. EUR/USD 1.148._
+_Erstellt 2026-09-18 06:08 UTC. 218 Werte, Fenster 90 Kalendertage. EUR/USD 1.147._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -61,7 +61,7 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | CMCSA (CMCSA) | 22.91 | - | - | ja | 30.48 |
 | CPRT (CPRT) | 29.66 | - | - | ja | 40.32 |
 | CRM (CRM) | 242.85 | - | - | ja | 56.62 |
-| CSGP (CSGP) | 29.295 | - | - | ja | 41.3 |
+| CSGP (CSGP) | 29.3 | - | - | ja | 41.32 |
 | DIS (DIS) | 105.35 | - | - | ja | 49.27 |
 | IDXX (IDXX) | 506.48 | - | - | ja | 34.59 |
 | INTU (INTU) | 313.13 | - | - | ja | 41.55 |
@@ -73,7 +73,7 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | TMUS (TMUS) | 166.45 | - | - | ja | 33.65 |
 | TTD (TTD) | 14.26 | - | - | ja | 46.14 |
 | TTWO (TTWO) | 210.62 | - | - | ja | 36.03 |
-| VRSK (VRSK) | 176.48 | - | - | ja | 42.06 |
+| VRSK (VRSK) | 176.48 | - | ja | ja | 42.06 |
 | VZ (VZ) | 48.33 | - | - | ja | 43.33 |
 | WMT (WMT) | 106.79 | - | - | ja | 45.99 |
 | AMT (AMT) | 175.58 | - | - | ja | 50.96 |
@@ -92,8 +92,8 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | PAH3.DE (PAH3.DE) | 28.73 | - | - | ja | 52.29 |
 | SHL.DE (SHL.DE) | 38.36 | - | - | ja | 46.3 |
 | ZAL.DE (ZAL.DE) | 21.48 | - | - | ja | 33.58 |
-| Erdgas (NG=F) | 2.869 | - | - | ja | 50.55 |
-| Kakao (CC=F) | 5620.0 | - | - | ja | 41.96 |
+| Kakao (CC=F) | 5772.0 | - | - | ja | 45.48 |
+| Zucker (SB=F) | 17.42 | - | - | ja | 48.84 |
 
 ---
 

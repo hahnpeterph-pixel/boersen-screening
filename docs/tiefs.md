@@ -1,6 +1,6 @@
 # Tiefs, Volumen und Kaufregel-Check
 
-_Erstellt 2026-09-17 22:00 UTC. Fenster: letzte 90 Kalendertage. Tiefs nach der Umkehr-Regel (tiefs_regel.py): ein Tief zaehlt, sobald eine spaetere Kerze das Hoch der Tiefkerze ueberschreitet. Solange es abwaerts geht, gilt das tiefste Tief der Strecke. Gerechnet wird auf abgeschlossenen Tageskerzen._
+_Erstellt 2026-09-18 06:08 UTC. Fenster: letzte 90 Kalendertage. Tiefs nach der Umkehr-Regel (tiefs_regel.py): ein Tief zaehlt, sobald eine spaetere Kerze das Hoch der Tiefkerze ueberschreitet. Solange es abwaerts geht, gilt das tiefste Tief der Strecke. Gerechnet wird auf abgeschlossenen Tageskerzen._
 
 ## Kaufregel
 
@@ -113,7 +113,7 @@ _'nach Trendtief' orientiert sich am juengsten Tief und laesst mehr Hebel zu. 'k
 | Take-Two (TTWO) | 17.09.2026 | 207,77 | 2,6 Mio. | 0,98x | -10,1 % |
 | Take-Two (TTWO) | 09.09.2026 | 208,52 | 2,2 Mio. | 0,85x | -9,7 % |
 | Take-Two (TTWO) | 01.09.2026 | 214,14 | 2,8 Mio. | 1,03x | -6,9 % |
-| Meta Platforms (META) | 17.09.2026 | 667,05 | 15,7 Mio. | 0,87x | 22,2 % |
+| Meta Platforms (META) | 17.09.2026 | 667,05 | 15,9 Mio. | 0,88x | 22,2 % |
 | Meta Platforms (META) | 01.09.2026 | 556,10 | 15,8 Mio. | 1,03x | 6,7 % |
 | Meta Platforms (META) | 19.08.2026 | 537,27 | 17,0 Mio. | 1,00x | 3,4 % |
 | Micron (MU) | 16.09.2026 | 917,64 | 20,2 Mio. | 0,80x (duenn) | 6,3 % |
@@ -136,7 +136,7 @@ _Diese Zeilen in die gelben Spalten uebertragen. Reihenfolge wie dort._
 | Ticker | Kurs | ATR(14) | RSI | Chart-Tief | Datum Tief | Vol. rel. |
 |---|---|---|---|---|---|---|
 | TTWO | 210,62 | 7,71 | 36,0 | 231,58 | 2026-08-20 | 0,98 |
-| META | 682,31 | 20,99 | 74,0 | 524,52 | 2026-07-30 | 0,87 |
+| META | 682,31 | 20,99 | 74,0 | 524,52 | 2026-07-30 | 0,88 |
 | MU | 977,50 | 42,89 | 53,8 | 915,18 | 2026-08-19 | 0,80 |
 | MSFT | 497,75 | 10,25 | 55,6 | 477,15 | 2026-08-18 | 0,81 |
 | ORCL | 150,59 | 8,08 | 52,2 | 137,44 | 2026-08-19 | 1,22 |

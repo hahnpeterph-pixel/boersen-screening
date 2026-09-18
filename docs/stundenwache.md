@@ -1,6 +1,6 @@
 # Stundenwache
 
-Stand: 2026-09-17 · 158 Werte mit Stundendaten · erstellt 2026-09-17 22:01 UTC
+Stand: 2026-09-17 · 158 Werte mit Stundendaten · erstellt 2026-09-18 06:09 UTC
 
 > **Sitzung noch nicht abgeschlossen.** 1 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 6, 7, 9). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
 
@@ -26,20 +26,21 @@ Schluss unter dem juengsten Swing-Tief. Die Sequenz ist gerissen.
 
 Keine.
 
-## Tief angetestet (8)
+## Tief angetestet (9)
 
 Docht bis unter die Marke, kein Stundenschluss darunter.
 
 | Wert | Marke | Schluss | Abstand (ATR) | Stunden dahinter |
 |---|---|---|---|---|
 | CMCSA | 22.84 | 22.92 | 0.106 | 0 |
+| TXN | 257.1 | 258.11 | 0.122 | 0 |
 | HEI.DE | 146.9 | 147.6 | 0.142 | 0 |
 | ADSK | 216.4 | 218.66 | 0.219 | 0 |
 | CSX | 47.53 | 47.895 | 0.356 | 0 |
-| LIN | 455.695 | 458.435 | 0.395 | 0 |
+| LIN | 455.7 | 458.435 | 0.394 | 0 |
 | CTSH | 61.03 | 61.9 | 0.428 | 0 |
-| VRTX | 510.195 | 516.35 | 0.566 | 0 |
-| NKE | 35.73 | 36.385 | 0.728 | 0 |
+| MDLZ | 61.47 | 62.03 | 0.47 | 0 |
+| VRTX | 510.2 | 516.35 | 0.566 | 0 |
 
 ## Swing-Hoch ueberwunden (23)
 
@@ -60,7 +61,7 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | DHL.DE | 55.7 | 56.33 | 0.716 | 9 |
 | FRE.DE | 45.2 | 45.91 | 0.703 | 9 |
 | INTC | 104.9 | 108.75 | 0.683 | 7 |
-| TRV | 376.57 | 379.5 | 0.466 | 7 |
+| TRV | 376.57 | 379.5 | 0.459 | 7 |
 | AZN | 164.55 | 166.125 | 0.453 | 7 |
 | QCOM | 185.46 | 188.71 | 0.402 | 7 |
 | PAH3.DE | 29.78 | 29.97 | 0.233 | 3 |

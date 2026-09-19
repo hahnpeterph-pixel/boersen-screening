@@ -1,6 +1,6 @@
 # Quellencheck - Ersatz fuer die Aggregat-Werte
 
-_Erstellt 2026-09-12 06:32 UTC. Einmalige Diagnose, kein Teil des taeglichen Laufs._
+_Erstellt 2026-09-19 07:05 UTC. Einmalige Diagnose, kein Teil des taeglichen Laufs._
 
 ## Kurzfassung
 
@@ -61,13 +61,13 @@ _Kaufen/Halten/Verkaufen je Monatsfenster. `0m` ist der laufende Monat. Identisc
 
 | Ticker | Name | 0m | -1m | -2m | -3m | Urteil |
 |---|---|---|---|---|---|---|
-| ADS.DE | adidas AG | 23/7/0 | 22/8/0 | 23/7/0 | 23/6/0 | bewegt sich |
+| ADS.DE | adidas AG | 22/8/0 | 22/8/0 | 23/7/0 | 23/6/0 | bewegt sich |
 | AIR.DE | Airbus SE | - | - | - | - | keine Daten |
-| ALV.DE | Allianz SE v | 6/7/3 | 7/7/2 | 8/7/2 | 9/7/2 | bewegt sich |
+| ALV.DE | Allianz SE v | 6/7/4 | 7/7/2 | 8/7/2 | 9/7/2 | bewegt sich |
 | BAS.DE | BASF SE | 9/6/5 | 10/5/5 | 12/4/5 | 11/5/5 | bewegt sich |
 | BAYN.DE | Bayer AG | 13/4/1 | 13/4/1 | 14/3/1 | 14/4/0 | bewegt sich |
 | BEI.DE | BEIERSDORF AG | 7/9/4 | 7/10/3 | 7/11/2 | 7/11/2 | bewegt sich |
-| BMW.DE | BAYERISCHE MOTOREN WERKE AG | 10/9/3 | 10/9/3 | 10/9/3 | 9/11/3 | bewegt sich |
+| BMW.DE | BAYERISCHE MOTOREN WERKE AG | 11/8/3 | 10/9/3 | 10/9/3 | 9/11/3 | bewegt sich |
 | BNR.DE | Brenntag SE | 2/10/3 | 2/10/3 | 2/10/2 | 2/10/2 | bewegt sich |
 | CAT | Caterpillar, Inc. | 14/12/2 | 14/12/2 | 14/12/2 | 15/11/2 | bewegt sich |
 | CBK.DE | Commerzbank AG | 7/5/1 | 7/5/1 | 7/5/1 | 7/5/1 | EINGEFROREN (alle Fenster gleich) |
@@ -76,12 +76,12 @@ _Kaufen/Halten/Verkaufen je Monatsfenster. `0m` ist der laufende Monat. Identisc
 | DBK.DE | DEUTSCHE BANK AG | 9/9/0 | 8/10/0 | 7/11/0 | 6/10/1 | bewegt sich |
 | DHL.DE | DHL AG | 4/13/3 | 4/13/3 | 5/12/3 | 5/12/3 | bewegt sich |
 | DTE.DE | DEUTSCHE TELEKOM AG | 17/1/0 | 17/1/0 | 18/0/0 | 17/0/0 | bewegt sich |
-| DTG.DE | Daimler Truck Holding AG | 11/5/2 | 12/4/2 | 12/4/2 | 11/3/3 | bewegt sich |
+| DTG.DE | Daimler Truck Holding AG | 11/5/1 | 12/4/2 | 12/4/2 | 11/3/3 | bewegt sich |
 | ENR.DE | Siemens Energy AG | 19/4/2 | 19/4/2 | 19/3/3 | 19/4/2 | bewegt sich |
 | EOAN.DE | E.ON SE | 11/5/0 | 10/6/0 | 9/8/0 | 9/8/0 | bewegt sich |
 | FANG | Diamondback Energy, Inc. | 25/6/0 | 24/5/0 | 25/4/0 | 25/4/0 | bewegt sich |
 | FRE.DE | Fresenius SE & Co. KGaA | 13/1/0 | 13/1/0 | 13/1/0 | 13/1/0 | EINGEFROREN (alle Fenster gleich) |
-| HEI.DE | Heidelberg Materials AG | 15/2/3 | 15/2/3 | 15/2/2 | - | bewegt sich |
+| HEI.DE | Heidelberg Materials AG | 15/2/3 | 15/2/3 | 15/2/3 | 15/2/2 | bewegt sich |
 | HEN3.DE | Henkel AG & Co. KGaA | 7/8/4 | 7/8/4 | 7/8/4 | 6/9/4 | bewegt sich |
 | HNR1.DE | HANNOVER RUECK SE NA O.N. | 7/7/1 | 6/8/1 | 6/7/1 | 6/8/1 | bewegt sich |
 | IFX.DE | INFINEON TECHNOLOGIES AG | 19/5/0 | 19/5/0 | 19/4/1 | 19/4/1 | bewegt sich |

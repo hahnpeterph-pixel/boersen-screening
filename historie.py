@@ -251,6 +251,26 @@ def faelle_je_wert(ticker: str, df: pd.DataFrame) -> list[dict]:
 
     ergebnis = []
     for s in seqs:
+        # KORREKTUR AB HOCH bis zum Serienende (19.09.2026, Peter: "Es muss
+        # immer der gleiche Bezug sein. Also ab Hoch."). Gleiche Definition
+        # wie phasen.py und marktdaten.korrektur_ist(): Anker = letztes
+        # Swing-Hoch vor dem ersten Tief der Serie, Ende = letztes Tief der
+        # Serie, ATR am letzten Tief. Nur fuer abgeschlossene Serien - bei
+        # der laufenden steht das Ende noch nicht fest.
+        #
+        # Steht HIER statt nur in phasen.py, damit die Korrektur-Tabelle
+        # dieselben Faelle zaehlt wie die Fortsetzungskette (beide aus
+        # puffer_je_tief.csv.gz). Vorher: Costco 15 Faelle in der Kette,
+        # 17 in der Korrektur-Tabelle, weil phasen.py die Serien ohne die
+        # Filter dieser Funktion (Bestaetigung, Folgehoch, Resthistorie)
+        # zaehlte.
+        korr_serie = None
+        if not s["laufend"]:
+            davor = [h["i"] for h in hochs if h["i"] < s["start_i"]]
+            a_ende = a[s["ende_i"]]
+            if davor and np.isfinite(a_ende) and a_ende > 0:
+                korr_serie = (float(hoch_w[davor[-1]])
+                              - float(tief_w[s["ende_i"]])) / float(a_ende)
         for pos, i in enumerate(s["tiefs"], start=1):
             atr_i = a[i]
             if not np.isfinite(atr_i) or atr_i <= 0:
@@ -358,6 +378,7 @@ def faelle_je_wert(ticker: str, df: pd.DataFrame) -> list[dict]:
                 "ema50_atr": ema50_atr,
                 "ema50_neigung_atr": ema50_neigung_atr,
                 "hoch250_atr": hoch250_atr,
+                "korr_serie_atr": korr_serie,
                 "tage_bis_bruch": tage,
                 "tage_bis_ziel": tage_ziel,
                 "beobachtet": len(nach) - 1,
@@ -1064,6 +1085,9 @@ def csv_roh(fest: list[dict]) -> None:
     # heisst: in der gesamten beobachteten Zeit nicht eingetreten.
     felder += [f"tage_ko_{p:g}" for p in PUFFER]
     felder += [f"tage_ziel_{z:g}" for z in ZIELE]
+    # Am Ende angehaengt (19.09.2026), damit keine bestehende Spalte
+    # verrutscht. Leer bei Tiefs der laufenden Serie.
+    felder += ["korr_serie_atr"]
     DOCS.mkdir(exist_ok=True)
     with gzip.open(CSV_ROH, "wt", encoding="utf-8", newline="") as f:
         w = csv.writer(f)
@@ -1102,6 +1126,9 @@ def csv_roh(fest: list[dict]) -> None:
             ] + [
                 ("" if x.get("tage_bis_ziel", {}).get(z) is None
                  else x["tage_bis_ziel"][z]) for z in ZIELE
+            ] + [
+                ("" if x.get("korr_serie_atr") is None
+                 else round(x["korr_serie_atr"], 3)),
             ])
     print(f"Geschrieben: {CSV_ROH} ({len(fest)} Zeilen)")
 

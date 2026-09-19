@@ -284,6 +284,36 @@ def spanne(name: str, werte) -> dict:
             f"{name}_hoechster": hoechster(werte)}
 
 
+def korr_je_tief(ph: list[dict]) -> str:
+    """Korrekturtiefe AB HOCH, getrennt nach erreichter Tiefsposition.
+
+    Ergaenzt 19.09.2026 (Peter, Costco): "Es muss immer der gleiche Bezug
+    sein. Also ab Hoch." Die Kaufvorlage hatte zuvor die Tiefe ab Hoch aus
+    dieser Datei mit dem Rest ab dem damaligen Tief (benoetigt_atr aus
+    historie.py) addiert - zwei Bezuege, dazu zwei Zeitraeume. Ergebnis war
+    der Widerspruch "19 von 20 enden nach 0,1 ATR, 13 von 15 nach 5,8".
+
+    Je Position k zaehlen nur die Serien, die MINDESTENS k Tiefs erreicht
+    haben - also die Faelle, die an derselben Stelle standen wie der Wert
+    heute. Gemessen wird wie korrektur_atr: vom Hoch vor der Serie bis zum
+    letzten Tief der Serie (Peters Wahl a, 19.09.2026). Derselbe Anker wie
+    marktdaten.korrektur_ist(), die Ist-Tiefe ist also direkt vergleichbar.
+
+    Format je Position "k:faelle:p90:p95:max", Positionen mit ";" getrennt.
+    Eine Textspalte statt 5 x 4 Einzelspalten, damit phasen.csv nicht
+    ausufert und neue Positionen ohne neue Spalten dazukommen.
+    """
+    teile = []
+    for k in range(1, max((p["tiefs"] for p in ph), default=0) + 1):
+        w = [p["tiefe_ab"] for p in ph
+             if p["tiefs"] >= k and p["tiefe_ab"] is not None and np.isfinite(p["tiefe_ab"])]
+        if not w:
+            continue
+        teile.append(f"{k}:{len(w)}:{np.percentile(w, 90):.2f}:"
+                     f"{np.percentile(w, 95):.2f}:{max(w):.2f}")
+    return ";".join(teile)
+
+
 # lade() stand hier bis 30.08.2026 als wortwoertliche Kopie von
 # historie.lade() - selbe Funktion, zweimal im Repo gepflegt. Jetzt einfach
 # importiert (Frage 40, Fragen-Blatt).
@@ -330,6 +360,7 @@ def main() -> int:
             **spanne("anstieg_atr", [p["hoehe_auf"] for p in ph]),
             **spanne("weit_tage", [p["dauer_weit"] for p in ph]),
             **spanne("weit_atr", [p["hoehe_weit"] for p in ph]),
+            "korr_je_tief": korr_je_tief(ph),
             **vk, **ka, **pb,
         })
 
@@ -354,7 +385,8 @@ def main() -> int:
                   "vk_rsi_p75", "vk_rsi_faelle"]
                + ["kauf_rsi_tiefster", "kauf_rsi_median", "kauf_rsi_hoechster",
                   "kauf_rsi_p25", "kauf_rsi_faelle"]
-               + ["puffer_haelt_pct", "puffer_p75", "puffer_p90", "puffer_p95"])
+               + ["puffer_haelt_pct", "puffer_p75", "puffer_p90", "puffer_p95"]
+               + ["korr_je_tief"])
     with CSV_AUS.open("w", encoding="utf-8", newline="") as f:
         s = csv.DictWriter(f, fieldnames=SPALTEN, extrasaction="ignore")
         s.writeheader()

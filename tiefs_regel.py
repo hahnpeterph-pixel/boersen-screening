@@ -48,6 +48,46 @@ from __future__ import annotations
 import pandas as pd
 
 VARIANTEN = ("dow", "starthoch", "vorheriges_hoch")
+
+# GLEICHSTAND-TOLERANZ (19.09.2026). Anlass UnitedHealth: zwischen zwei
+# Historie-Laeufen am selben Tag kippte die Serie vom Fruehjahr 2022 - im
+# einen Lauf zaehlte ein Tief vom 25.04.2022 (Hoch am 26.04. lag darueber),
+# im anderen nicht. Die Kurse unterschieden sich nur in der vierten
+# Nachkommastelle (432,1839 gegen 432,1838): Yahoo rechnet bei jeder
+# Dividende alle alten Kurse neu um. Zwei im Original GLEICHE Tageshochs
+# werden dabei zufaellig mal gleich, mal um 0,0001 verschieden - und ein
+# strenges ">" entscheidet dann jedes Mal anders. Folge: Tief 5 hatte
+# einmal 2, einmal 3 Vergleichsfaelle, und der Wert sprang von "60/60 nie
+# erreicht" auf "drin".
+#
+# Regel jetzt: "ueber" bzw. "unter" heisst mehr Abstand als das
+# Rechenrauschen. Das Rauschen sitzt in der vierten Nachkommastelle,
+# unabhaengig von der Kurshoehe (+-0,0001 je Wert, zwischen zwei Werten
+# also bis 0,0002). Deshalb eine absolute Grenze von 0,00025, bei sehr
+# hohen Kursen ersatzweise ein Millionstel des Kurses. Ein echter Cent
+# Unterschied liegt deutlich darueber und zaehlt weiter - echte
+# Gleichstaende im Chart bleiben Gleichstaende.
+#
+# Grenzfall: sehr alte, stark split-bereinigte Kurse (Beispiel NVIDIA vor
+# dem 40:1-Split zusammengerechnet) - dort ist ein Original-Cent nur noch
+# 0,00025 wert und wird wie ein Gleichstand behandelt. Das betrifft nur
+# Tage vor grossen Splits und nur exakte Ein-Cent-Abstaende.
+TOLERANZ_ABS = 0.00025
+TOLERANZ_REL = 1e-6
+
+
+def _grenze(b: float) -> float:
+    return max(TOLERANZ_ABS, TOLERANZ_REL * abs(b))
+
+
+def _ueber(a: float, b: float) -> bool:
+    """a liegt echt ueber b - nicht nur durch Rundungsrauschen."""
+    return a - b > _grenze(b)
+
+
+def _unter(a: float, b: float) -> bool:
+    """a liegt echt unter b - nicht nur durch Rundungsrauschen."""
+    return b - a > _grenze(b)
 STANDARD = "dow"
 
 
@@ -79,15 +119,15 @@ def pivots(df: pd.DataFrame) -> list[tuple[str, int]]:
 
     for i in range(1, len(df)):
         if richtung == "ab":
-            if tief[i] < tief[kandidat]:
+            if _unter(tief[i], tief[kandidat]):
                 kandidat = i
-            elif hoch[i] > hoch[kandidat]:
+            elif _ueber(hoch[i], hoch[kandidat]):
                 punkte.append(("tief", kandidat))
                 richtung, gipfel = "auf", i
         else:
-            if hoch[i] > hoch[gipfel]:
+            if _ueber(hoch[i], hoch[gipfel]):
                 gipfel = i
-            elif tief[i] < tief[gipfel]:
+            elif _unter(tief[i], tief[gipfel]):
                 punkte.append(("hoch", gipfel))
                 richtung, kandidat = "ab", i
     return punkte
@@ -107,14 +147,14 @@ def _laufendes_tief(df: pd.DataFrame) -> int | None:
     kandidat = gipfel = 0
     for i in range(1, len(df)):
         if richtung == "ab":
-            if tief[i] < tief[kandidat]:
+            if _unter(tief[i], tief[kandidat]):
                 kandidat = i
-            elif hoch[i] > hoch[kandidat]:
+            elif _ueber(hoch[i], hoch[kandidat]):
                 richtung, gipfel = "auf", i
         else:
-            if hoch[i] > hoch[gipfel]:
+            if _ueber(hoch[i], hoch[gipfel]):
                 gipfel = i
-            elif tief[i] < tief[gipfel]:
+            elif _unter(tief[i], tief[gipfel]):
                 richtung, kandidat = "ab", i
     return kandidat if richtung == "ab" else None
 
@@ -243,7 +283,7 @@ def sequenzen(df: pd.DataFrame, variante: str = STANDARD) -> list[dict]:
                 grenze = seq["start_hoch"]
             else:
                 grenze = letztes_hoch
-            if grenze is not None and h > grenze:
+            if grenze is not None and _ueber(h, grenze):
                 schliessen(False)
                 seq = leer()
                 seq["start_hoch_i"], seq["start_hoch"] = i, h
@@ -252,7 +292,7 @@ def sequenzen(df: pd.DataFrame, variante: str = STANDARD) -> list[dict]:
             letztes_hoch = h
         else:
             t = float(tief[i])
-            if seq["tiefstand"] is None or t < seq["tiefstand"]:
+            if seq["tiefstand"] is None or _unter(t, seq["tiefstand"]):
                 seq["tiefs"].append(i)
                 seq["tiefstand"] = t
                 seq["ref_hoch"] = letztes_hoch
@@ -351,7 +391,7 @@ def aufwaertssequenzen(df: pd.DataFrame, variante: str = STANDARD) -> list[dict]
                 grenze = seq["start_tief"]
             else:
                 grenze = letztes_tief
-            if grenze is not None and t < grenze:
+            if grenze is not None and _unter(t, grenze):
                 schliessen(False)
                 seq = leer()
                 seq["start_tief_i"], seq["start_tief"] = i, t
@@ -360,7 +400,7 @@ def aufwaertssequenzen(df: pd.DataFrame, variante: str = STANDARD) -> list[dict]
             letztes_tief = t
         else:
             h = float(hoch[i])
-            if seq["hoechststand"] is None or h > seq["hoechststand"]:
+            if seq["hoechststand"] is None or _ueber(h, seq["hoechststand"]):
                 seq["hochs"].append(i)
                 seq["hoechststand"] = h
                 seq["ref_tief"] = letztes_tief

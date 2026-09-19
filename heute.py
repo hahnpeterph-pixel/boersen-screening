@@ -324,8 +324,13 @@ def fortsetzungskette(kette: dict[int, tuple], position: float) -> str:
     markiert = False
     for stufe in sorted(kette):
         ziel = stufe + 1
-        if ziel not in kette:
-            continue
+        # KORREKTUR 19.09.2026: Hier stand "if ziel not in kette: continue".
+        # kette enthaelt aber bereits nur Stufen, deren Uebergang existiert
+        # (kette_roh in main). Die Pruefung verlangte zusaetzlich, dass auch
+        # die ZIELstufe noch einen Nachfolger hat - dadurch fiel bei JEDEM
+        # Wert der letzte Uebergang der Kette weg. Aufgefallen bei Applied
+        # Materials: 1 von 4 Serien erreichte Tief 6, die Kette zeigte aber
+        # keinen Schritt Tief5->6 und markierte deshalb den ankommenden.
         faelle_ab, faelle_bis = kette[stufe]
         anteil = faelle_bis / faelle_ab if faelle_ab else 0.0
         stueck = f"Tief{stufe}\u2192{ziel}: {faelle_bis}/{faelle_ab}"

@@ -1,8 +1,8 @@
 # Boersen-Screening - 2026-09-19
 
-_Stand: Schlusskurse vom 2026-09-18, aber 34 Werte haengen zurueck - siehe Standwarnung. Erstellt 2026-09-19T10:47:23+00:00 UTC. 211 Werte ausgewertet._
+_Stand: Schlusskurse vom 2026-09-18, aber 34 Werte haengen zurueck - siehe Standwarnung. Erstellt 2026-09-19T11:19:35+00:00 UTC. 210 Werte ausgewertet._
 
-> **Standwarnung: 34 von 211 Werten haengen zurueck.** Neuester Handelstag im Bericht ist 2026-09-18.
+> **Standwarnung: 34 von 210 Werten haengen zurueck.** Neuester Handelstag im Bericht ist 2026-09-18.
 >
 > Ursache ist in aller Regel Yahoo: die vorlaeufige Tageskerze einer Boerse wird ueber Nacht durch die offizielle Abrechnung ersetzt, und solange die fehlt, faellt der Tag weg. Betroffen sind meist die europaeischen Notierungen. Fuer diese Werte gelten Kurs, ATR, RSI und Tiefs unten NICHT fuer den neuesten Handelstag.
 >
@@ -54,7 +54,7 @@ _Stand: Schlusskurse vom 2026-09-18, aber 34 Werte haengen zurueck - siehe Stand
 
 ## 🎯 Analysten-Filter (Kursziel ≥15%, Kaufen-Anteil ≥75%)
 
-_Ueber alle 211 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei Gleichstand nach Kurspotenzial. Maximal 20 Treffer. Value-Trap-Ausschluesse gelten auch hier. RSI auf drei Zeitebenen, jeweils echt neu berechnet (nicht umgerechnet): Tag, Woche, Stunde. "k.A." bei Stunde heisst: fuer diesen Wert lagen keine verwertbaren Stundenkerzen vor._
+_Ueber alle 210 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei Gleichstand nach Kurspotenzial. Maximal 20 Treffer. Value-Trap-Ausschluesse gelten auch hier. RSI auf drei Zeitebenen, jeweils echt neu berechnet (nicht umgerechnet): Tag, Woche, Stunde. "k.A." bei Stunde heisst: fuer diesen Wert lagen keine verwertbaren Stundenkerzen vor._
 
 | Rang | Ticker | ISIN | Name | Index | Kurs | Abstand ATH (Info) | Kaufen-Anteil Analysten | Kursziel | RSI Tag | RSI Woche | RSI Stunde | Letztes Rating |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -162,6 +162,6 @@ _Ueber alle 211 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 
 ---
 
-_Nicht auswertbar heute (1): HONA_
+_Nicht auswertbar heute (2): AMT, HONA_
 
 _Automatisch erzeugte Kennzahlensortierung, keine Anlageberatung._

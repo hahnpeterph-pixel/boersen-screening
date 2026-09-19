@@ -1472,7 +1472,6 @@
     "ZAL.DE",
     "SPG",
     "CL",
-    "AMT",
     "RWE.DE",
     "AEP",
     "DUK",
@@ -1483,7 +1482,8 @@
     "SRT3.DE",
     "CTSH",
     "CRWD",
-    "BMY"
+    "BMY",
+    "WBD"
    ],
    "momentum": [
     "CRWD",
@@ -1515,7 +1515,6 @@
     "CAT",
     "SPG",
     "AMZN",
-    "AMT",
     "AEP",
     "DUK",
     "FTNT",
@@ -1525,7 +1524,8 @@
     "ILMN",
     "INTC",
     "DXCM",
-    "AAPL"
+    "AAPL",
+    "ARM"
    ],
    "value": [
     "NVDA",
@@ -1556,7 +1556,6 @@
     "BAS.DE",
     "SHW",
     "SPG",
-    "AMT",
     "EXC",
     "AEP",
     "NEE",
@@ -1567,7 +1566,8 @@
     "MSFT",
     "ASML",
     "NXPI",
-    "MRVL"
+    "MRVL",
+    "TXN"
    ]
   }
  }

@@ -39,6 +39,7 @@ import gzip
 import os
 import re
 
+import tiefs_regel as regel
 import numpy as np
 import pandas as pd
 
@@ -596,8 +597,8 @@ def main() -> None:
         # Tief 2 zu 49,0, Tief 3 zu 51,5, Tief 4 zu 54,8. Bewusst
         # aufgegeben wird dabei, dass Tief 1 mit 31,8 ATR den hoechsten
         # Median-Anstieg der ganzen Reihe hat.
-        if position != position or not position or int(position) == 1:
-            continue
+        # (Tief-1-Ausschluss steht seit 19.09.2026 weiter unten, NACH der
+        # Positionskorrektur - siehe dort.)
 
         # BEZUGSTIEF ist ab Entscheidung 154 das TAGESTIEF dieses Tages -
         # aber nur dann, wenn an diesem Tag auch tatsaechlich ein neues
@@ -633,6 +634,31 @@ def main() -> None:
             tief, tief_datum = serientief, z.tief1_datum
         else:
             print(f"WARNUNG: {t} hat weder Tagestief noch Serientief - uebersprungen.")
+            continue
+
+        # POSITIONSKORREKTUR (19.09.2026, gefunden bei der Detailpruefung).
+        # tiefs_serie zaehlt nur BESTAETIGTE Tiefs. Liegt das Bezugstief
+        # aber UNTER dem tiefsten bestaetigten Tief der Serie, ist es ein
+        # weiteres, noch unbestaetigtes Tief - also Position + 1. Genau so
+        # zaehlt Peter im Chart. Vorher wurde es mit der Position des
+        # VORIGEN Tiefs gefuehrt: Mastercard lief als Tief 3, obwohl nach
+        # 27.08./01.09./10.09. das Tief vom 18.09. das vierte ist; ebenso
+        # GE Aerospace (2 statt 3), Linde (6 statt 7), Sherwin-Williams
+        # (3 statt 4), UnitedHealth (5 statt 6). Kette, RSI-Vergleich,
+        # Halteraten, Anker und Korrektur-Tabelle hingen alle an der
+        # falschen Position. Beginnt mit dem Bezugstief eine neue Serie
+        # (keine laufende), ist es Tief 1.
+        serie_tief = (float(z.tiefs_serie_tief)
+                      if pd.notna(z.tiefs_serie_tief) and str(z.tiefs_serie_tief) != ""
+                      else None)
+        if position == position and position and serie_tief is not None:
+            if regel._unter(tief, serie_tief):
+                position = int(position) + 1
+        elif position != position or not position:
+            position = 1 if tief is not None else position
+
+        # TIEF 1 AUSGESCHLOSSEN (Entscheidung 154), Begruendung oben.
+        if position != position or not position or int(position) == 1:
             continue
         # Kein Analystenziel fuer Rohstoffe/FX moeglich - "Kursziel" und
         # "Eigenes Ziel" bleiben leer statt einer erfundenen Zahl. Peters

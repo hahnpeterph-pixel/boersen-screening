@@ -1,47 +1,6 @@
 # Boersen-Screening - 2026-09-19
 
-_Stand: Schlusskurse vom 2026-09-18, aber 34 Werte haengen zurueck - siehe Standwarnung. Erstellt 2026-09-19T11:19:35+00:00 UTC. 210 Werte ausgewertet._
-
-> **Standwarnung: 34 von 210 Werten haengen zurueck.** Neuester Handelstag im Bericht ist 2026-09-18.
->
-> Ursache ist in aller Regel Yahoo: die vorlaeufige Tageskerze einer Boerse wird ueber Nacht durch die offizielle Abrechnung ersetzt, und solange die fehlt, faellt der Tag weg. Betroffen sind meist die europaeischen Notierungen. Fuer diese Werte gelten Kurs, ATR, RSI und Tiefs unten NICHT fuer den neuesten Handelstag.
->
-> | Wert | letzte Kerze |
-> |---|---|
-> | ADS.DE | 2026-09-16 |
-> | AIR.DE | 2026-09-16 |
-> | ALV.DE | 2026-09-16 |
-> | ASML | 2026-09-16 |
-> | BAS.DE | 2026-09-16 |
-> | BAYN.DE | 2026-09-16 |
-> | BEI.DE | 2026-09-16 |
-> | BMW.DE | 2026-09-16 |
-> | BNR.DE | 2026-09-16 |
-> | CBK.DE | 2026-09-16 |
-> | CON.DE | 2026-09-16 |
-> | DB1.DE | 2026-09-16 |
-> | DBK.DE | 2026-09-16 |
-> | DHL.DE | 2026-09-16 |
-> | DTE.DE | 2026-09-16 |
-> | EOAN.DE | 2026-09-16 |
-> | FRE.DE | 2026-09-16 |
-> | HEI.DE | 2026-09-16 |
-> | HEN3.DE | 2026-09-16 |
-> | HNR1.DE | 2026-09-16 |
-> | IFX.DE | 2026-09-16 |
-> | MBG.DE | 2026-09-16 |
-> | MRK.DE | 2026-09-16 |
-> | MTX.DE | 2026-09-16 |
-> | MUV2.DE | 2026-09-16 |
-> | PAH3.DE | 2026-09-16 |
-> | QIA.DE | 2026-09-16 |
-> | RHM.DE | 2026-09-16 |
-> | RWE.DE | 2026-09-16 |
-> | SAP.DE | 2026-09-16 |
-> | SIE.DE | 2026-09-16 |
-> | SRT3.DE | 2026-09-16 |
-> | SY1.DE | 2026-09-16 |
-> | VOW3.DE | 2026-09-16 |
+_Stand: Schlusskurse vom 2026-09-18. Erstellt 2026-09-19T11:45:05+00:00 UTC. 211 Werte ausgewertet._
 
 ## 📖 Glossar (was die Spalten bedeuten)
 
@@ -54,11 +13,11 @@ _Stand: Schlusskurse vom 2026-09-18, aber 34 Werte haengen zurueck - siehe Stand
 
 ## 🎯 Analysten-Filter (Kursziel ≥15%, Kaufen-Anteil ≥75%)
 
-_Ueber alle 210 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei Gleichstand nach Kurspotenzial. Maximal 20 Treffer. Value-Trap-Ausschluesse gelten auch hier. RSI auf drei Zeitebenen, jeweils echt neu berechnet (nicht umgerechnet): Tag, Woche, Stunde. "k.A." bei Stunde heisst: fuer diesen Wert lagen keine verwertbaren Stundenkerzen vor._
+_Ueber alle 211 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei Gleichstand nach Kurspotenzial. Maximal 20 Treffer. Value-Trap-Ausschluesse gelten auch hier. RSI auf drei Zeitebenen, jeweils echt neu berechnet (nicht umgerechnet): Tag, Woche, Stunde. "k.A." bei Stunde heisst: fuer diesen Wert lagen keine verwertbaren Stundenkerzen vor._
 
 | Rang | Ticker | ISIN | Name | Index | Kurs | Abstand ATH (Info) | Kaufen-Anteil Analysten | Kursziel | RSI Tag | RSI Woche | RSI Stunde | Letztes Rating |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | ASML | USN070592100 | ASML Holding N.V. - New York Re | NASDAQ | 1396.20 | -19% | 100% (5 Banken, ≤120T) | 2194.40 (57% ueber Kurs) | 39 | 49 | 59 | keine in 30T |
+| 1 | ASML | USN070592100 | ASML Holding N.V. - New York Re | NASDAQ | 1446.00 | -16% | 100% (5 Banken, ≤120T) | 2194.40 (52% ueber Kurs) | 47 | 53 | 59 | keine in 30T |
 | 2 | NVDA | - | NVIDIA Corporation | NASDAQ/DOW | 222.27 | -6% | 100% (23 Banken, ≤120T) | 315.00 (42% ueber Kurs) | 54 | 57 | 69 | 2026-09-10 Piper Sandler: neu bewertet mit Overweight |
 | 3 | TTWO | - | Take-Two Interactive Software, | NASDAQ | 205.45 | -22% | 100% (10 Banken, ≤120T) | 290.00 (41% ueber Kurs) | 32 | 40 | 32 | keine in 30T |
 | 4 | BA | - | Boeing Company (The) | DOW | 198.20 | -54% | 100% (6 Banken, ≤120T) | 278.50 (40% ueber Kurs) | 34 | 41 | 38 | 2026-09-18 B of A Securities: Rating bestaetigt: Buy |
@@ -162,6 +121,6 @@ _Ueber alle 210 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 
 ---
 
-_Nicht auswertbar heute (2): AMT, HONA_
+_Nicht auswertbar heute (1): HONA_
 
 _Automatisch erzeugte Kennzahlensortierung, keine Anlageberatung._

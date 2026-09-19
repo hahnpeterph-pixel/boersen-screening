@@ -206,9 +206,21 @@ def korrektur_ist(df, tiefe_liste, a):
         return None, None, None
     h_i = davor[-1]
     hoch = df["High"].values
-    juengstes = tiefe_liste[0]
-    tiefe_atr = (float(hoch[h_i]) - juengstes["tief"]) / a
-    dauer = juengstes["i"] - h_i
+    # KORREKTUR 19.09.2026 (Detailpruefung): gemessen wird bis zum
+    # TIEFSTEN Punkt der Serie, nicht bis zum juengsten Swing-Tief. Das
+    # juengste kann ein hoeheres Zwischentief sein, das in der Serie gar
+    # nicht zaehlt - dann war die Korrektur zu flach ausgewiesen (Apple
+    # 4,50 statt 5,79 ATR, AMD 4,20 statt 6,73). phasen.py und historie.py
+    # messen ebenfalls bis zum tiefsten Tief der Serie; erst jetzt sind
+    # Ist und Vergleichswerte wirklich gleich definiert. Ein noch
+    # unbestaetigtes neues Tief unter dem Serientief zaehlt mit.
+    tiefst_i = lauf["ende_i"]
+    for t in tiefe_liste:
+        if t["i"] > tiefst_i and regel._unter(t["tief"], float(df["Low"].values[tiefst_i])):
+            tiefst_i = t["i"]
+    tiefst = float(df["Low"].values[tiefst_i])
+    tiefe_atr = (float(hoch[h_i]) - tiefst) / a
+    dauer = tiefst_i - h_i
     return float(hoch[h_i]), round(tiefe_atr, 2), int(dauer)
 
 

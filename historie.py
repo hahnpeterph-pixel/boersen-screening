@@ -397,6 +397,44 @@ def faelle_je_wert(ticker: str, df: pd.DataFrame) -> list[dict]:
     return ergebnis
 
 
+def zaehlkontrolle(daten: dict) -> None:
+    """Prueft, ob die Serienzaehlung gegen Rechenrauschen fest ist.
+
+    Seit 19.09.2026 (Peter: "Die Tief-Zaehlung muss schon passen, darauf
+    baut fast alles auf"). Jeder Wert wird ein zweites Mal gezaehlt, mit
+    Kursen, die um +-0,0001 verrauscht sind - genau die Groessenordnung,
+    um die Yahoo alte Kurse bei jeder Dividende neu umrechnet. Weicht die
+    Zaehlung ab, haengt sie an einem Gleichstand, den die Toleranz in
+    tiefs_regel.py nicht abfaengt. Ergebnis im Log und in
+    docs/zaehlkontrolle.csv (leer = alles fest).
+    """
+    rng = np.random.default_rng(19092026)
+    abweichend = []
+    for ticker, df in daten.items():
+        try:
+            x = df.copy()
+            for k in ("Open", "High", "Low", "Close"):
+                x[k] = df[k].values + rng.choice([-1e-4, 0.0, 1e-4], len(df))
+            a = [(s["start_i"], s["anzahl"]) for s in regel.sequenzen(df)]
+            b = [(s["start_i"], s["anzahl"]) for s in regel.sequenzen(x)]
+            if a != b:
+                erste = next((p for p, q in zip(a, b) if p != q), None)
+                datum = (f"{df.index[erste[0]]:%Y-%m-%d}" if erste else "")
+                abweichend.append((ticker, len(a), len(b), datum))
+        except Exception as exc:  # noqa: BLE001
+            print(f"  ! Zaehlkontrolle {ticker}: {exc}")
+    pfad = DOCS / "zaehlkontrolle.csv"
+    with pfad.open("w", encoding="utf-8", newline="") as f:
+        w = csv.writer(f)
+        w.writerow(["ticker", "serien", "serien_verrauscht", "erste_abweichung"])
+        w.writerows(abweichend)
+    if abweichend:
+        print(f"  ZAEHLKONTROLLE: {len(abweichend)} Werte kippen bei Rauschen: "
+              + ", ".join(t for t, *_ in abweichend))
+    else:
+        print(f"  Zaehlkontrolle: alle {len(daten)} Werte fest.")
+
+
 def pivots_zeigen(ticker: str, df: pd.DataFrame, tage: int = 120) -> None:
     """Alle erkannten Tiefs und Hochs eines Wertes ausgeben, zum Abgleich
     mit dem Chart.
@@ -1261,6 +1299,7 @@ def main() -> int:
         except Exception as exc:  # noqa: BLE001
             print(f"  ! {ticker}: {exc}")
     print(f"  {len(alle)} Tiefs ausgewertet.")
+    zaehlkontrolle(daten)
     if not alle:
         print("Keine auswertbaren Tiefs - Abbruch.")
         return 1

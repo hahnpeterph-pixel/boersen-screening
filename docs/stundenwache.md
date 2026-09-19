@@ -1,6 +1,6 @@
 # Stundenwache
 
-Stand: 2026-09-18 · 158 Werte mit Stundendaten · erstellt 2026-09-19 09:12 UTC
+Stand: 2026-09-18 · 158 Werte mit Stundendaten · erstellt 2026-09-19 09:20 UTC
 
 Marken sind das juengste Swing-Tief und das juengste Swing-Hoch aus `tiefs_regel.py`, also dieselben wie im Tagesbericht. Geprueft wird nur, was der letzte Handelstag auf Stundenbasis damit gemacht hat.
 

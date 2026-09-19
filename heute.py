@@ -468,6 +468,25 @@ def _haelt_bei(werte: np.ndarray, puffer_atr: float):
     return float((werte <= puffer_atr).mean() * 100), int(len(werte))
 
 
+def korr_an_position(phasen: pd.DataFrame, t: str, position) -> tuple:
+    """Faelle, p90, p95, hoechster Wert der Korrektur ab Hoch fuer Serien,
+    die mindestens die heutige Tiefsposition erreicht haben. Leer, wenn
+    phasen.csv die Spalte noch nicht hat (alter Lauf) - dann lieber leer als
+    eine Zahl mit anderem Bezug."""
+    leer = (None, None, None, None)
+    if (t not in phasen.index or "korr_je_tief" not in phasen.columns
+            or position != position or not position):
+        return leer
+    roh = phasen.loc[t, "korr_je_tief"]
+    if not isinstance(roh, str):
+        return leer
+    for teil in roh.split(";"):
+        k, n, p90, p95, mx = teil.split(":")
+        if int(k) == int(position):
+            return int(n), float(p90), float(p95), float(mx)
+    return leer
+
+
 def main() -> None:
     markt = pd.read_csv(os.path.join(DOCS, "marktdaten.csv")).set_index("ticker")
     analysten = pd.read_csv(os.path.join(DOCS, "analysten.csv")).set_index("ticker")
@@ -589,6 +608,7 @@ def main() -> None:
         schwelle = kette_wert.get(int(position)) if position == position and position else None
 
         ueblich = phasen.loc[t, "korrektur_atr"] if t in phasen.index else None
+        korr_tief = korr_an_position(phasen, t, position)
         luecken_wert = luecken[luecken.ticker == t]
 
         teil_puffer = puffer[puffer.ticker == t]
@@ -623,6 +643,12 @@ def main() -> None:
             "korrektur_atr": z.korr_ist_atr,
             "korrektur_tage": z.korr_ist_tage,
             "korrektur_ueblich_atr": ueblich,
+            # Ab Hoch, nur Serien mit mindestens so vielen Tiefs wie heute
+            # (phasen.korr_je_tief, 19.09.2026). Rest = Marke minus Ist.
+            "korr_tief_faelle": korr_tief[0],
+            "korr_tief_p90": korr_tief[1],
+            "korr_tief_p95": korr_tief[2],
+            "korr_tief_max": korr_tief[3],
             "long_anteil_tr": "nicht erfasst - bitte Screenshot",
             "luecken": luecken_zeile(luecken_wert, kurs) if len(luecken_wert) else "keine Daten",
         }

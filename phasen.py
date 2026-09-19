@@ -53,7 +53,7 @@ DOCS = BASE / "docs"
 CSV_AUS = DOCS / "phasen.csv"
 MD_AUS = DOCS / "phasen.md"
 
-JAHRE = 3
+JAHRE = 7  # 19.09.2026: gleiche Grundlage wie historie.py und die Fortsetzungskette
 ATR_TAGE = 14
 
 

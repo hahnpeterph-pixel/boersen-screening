@@ -1,39 +1,39 @@
 {
- "date": "2026-09-18",
+ "date": "2026-09-19",
  "ranks": {
   "turnaround": [
    "T",
+   "DTE.DE",
    "MSTR",
    "ABT",
-   "QIA.DE",
    "XOM",
    "ZS",
    "DHR",
-   "DB1.DE",
+   "PFE",
    "PANW",
    "MMM",
    "ABNB",
    "BLK",
+   "COF",
    "KO",
-   "SCHW",
-   "META"
+   "SCHW"
   ],
   "momentum": [
    "CRWD",
    "PANW",
    "AMD",
    "MRNA",
+   "SY1.DE",
    "TMO",
+   "BNR.DE",
    "DHL.DE",
+   "ALV.DE",
    "ABBV",
    "TRV",
    "CBK.DE",
    "KO",
-   "DB1.DE",
-   "SY1.DE",
-   "RWE.DE",
-   "XOM",
-   "P911.DE"
+   "BAS.DE",
+   "XOM"
   ],
   "value": [
    "NVDA",
@@ -50,185 +50,93 @@
    "UNP",
    "ODFL",
    "LLY",
-   "MTX.DE"
+   "DB1.DE"
   ]
  },
  "changes": {
   "turnaround": {
    "entries": [
     {
-     "ticker": "MSTR",
+     "ticker": "DTE.DE",
      "rank": 2
     },
     {
-     "ticker": "ABT",
-     "rank": 3
-    },
-    {
-     "ticker": "XOM",
-     "rank": 5
-    },
-    {
-     "ticker": "ZS",
-     "rank": 6
-    },
-    {
-     "ticker": "DB1.DE",
+     "ticker": "PFE",
      "rank": 8
     },
     {
-     "ticker": "PANW",
-     "rank": 9
-    },
-    {
-     "ticker": "ABNB",
-     "rank": 11
-    },
-    {
-     "ticker": "BLK",
-     "rank": 12
-    },
-    {
-     "ticker": "SCHW",
-     "rank": 14
-    },
-    {
-     "ticker": "META",
-     "rank": 15
+     "ticker": "COF",
+     "rank": 13
     }
    ],
    "exits": [
     {
-     "ticker": "DIS",
-     "old_rank": 2
-    },
-    {
-     "ticker": "CTSH",
-     "old_rank": 4
-    },
-    {
-     "ticker": "WDAY",
-     "old_rank": 5
-    },
-    {
-     "ticker": "COP",
-     "old_rank": 6
-    },
-    {
-     "ticker": "PLTR",
-     "old_rank": 7
-    },
-    {
-     "ticker": "REGN",
-     "old_rank": 8
-    },
-    {
-     "ticker": "WBD",
-     "old_rank": 12
-    },
-    {
-     "ticker": "CVX",
-     "old_rank": 13
-    },
-    {
-     "ticker": "V",
-     "old_rank": 14
-    },
-    {
-     "ticker": "MUV2.DE",
-     "old_rank": 15
-    }
-   ],
-   "moves": [
-    {
      "ticker": "QIA.DE",
-     "rank": 4,
-     "delta": 6
-    }
-   ]
-  },
-  "momentum": {
-   "entries": [
-    {
-     "ticker": "CRWD",
-     "rank": 1
-    },
-    {
-     "ticker": "TMO",
-     "rank": 5
-    },
-    {
-     "ticker": "ABBV",
-     "rank": 7
+     "old_rank": 4
     },
     {
      "ticker": "DB1.DE",
-     "rank": 11
-    },
-    {
-     "ticker": "RWE.DE",
-     "rank": 13
-    },
-    {
-     "ticker": "XOM",
-     "rank": 14
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "FTNT",
-     "old_rank": 1
-    },
-    {
-     "ticker": "ILMN",
-     "old_rank": 4
-    },
-    {
-     "ticker": "MRK",
-     "old_rank": 5
-    },
-    {
-     "ticker": "BNR.DE",
      "old_rank": 8
     },
     {
-     "ticker": "ALV.DE",
-     "old_rank": 10
-    },
-    {
-     "ticker": "CVX",
+     "ticker": "META",
      "old_rank": 15
     }
    ],
    "moves": []
   },
-  "value": {
+  "momentum": {
    "entries": [
     {
-     "ticker": "LLY",
+     "ticker": "BNR.DE",
+     "rank": 7
+    },
+    {
+     "ticker": "ALV.DE",
+     "rank": 9
+    },
+    {
+     "ticker": "BAS.DE",
      "rank": 14
     }
    ],
    "exits": [
     {
-     "ticker": "DXCM",
+     "ticker": "DB1.DE",
+     "old_rank": 11
+    },
+    {
+     "ticker": "RWE.DE",
+     "old_rank": 13
+    },
+    {
+     "ticker": "P911.DE",
      "old_rank": 15
     }
    ],
    "moves": [
     {
-     "ticker": "MTX.DE",
-     "rank": 15,
-     "delta": -7
+     "ticker": "SY1.DE",
+     "rank": 5,
+     "delta": 7
     }
    ]
   },
-  "analyst_flips": [
-   {
-    "ticker": "PANW",
-    "now": -1,
-    "old": 0
-   }
-  ]
+  "value": {
+   "entries": [
+    {
+     "ticker": "DB1.DE",
+     "rank": 15
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "MTX.DE",
+     "old_rank": 15
+    }
+   ],
+   "moves": []
+  },
+  "analyst_flips": []
  }
 }

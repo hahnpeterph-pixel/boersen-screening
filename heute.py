@@ -424,6 +424,27 @@ def _haelt(teilmenge: pd.DataFrame, puffer_atr: float):
     return haelt.mean() * 100, len(beobachtet_genug)
 
 
+def _haelt_flex(teilmenge: pd.DataFrame, puffer_atr: float):
+    """Wie _haelt(), aber fuer JEDEN Puffer (19.09.2026, Peter: "Die
+    Spanne 0,25-4 ATR kann entfallen").
+
+    Bis 4,00 ATR stehen fertige Spalten tage_ko_* in der Rohdatei - dann
+    wird genau wie bisher gerechnet, keine Zahl aendert sich. Darueber
+    gibt es keine Spalte; dann entscheidet benoetigt_atr (Tiefe unter dem
+    Tief binnen 63 Tagen): gehalten, wenn benoetigt <= Puffer. Beide Wege
+    sind gleichwertig - nachgeprueft auf allen 638.832 Faellen der Stufen
+    0,25 bis 4,00: 37 Abweichungen, alle exakt auf der Stufe, weil
+    benoetigt_atr in der Datei auf drei Stellen gerundet ist.
+    """
+    if f"tage_ko_{puffer_atr:g}" in teilmenge.columns:
+        return _haelt(teilmenge, puffer_atr)
+    genug = teilmenge[teilmenge["beobachtet"] >= HALTE_FENSTER]
+    werte = genug["benoetigt_atr"].dropna().to_numpy(dtype=float)
+    if len(werte) == 0:
+        return None, 0
+    return float((werte <= puffer_atr + 1e-9).mean() * 100), int(len(werte))
+
+
 def _benoetigt(teilmenge: pd.DataFrame) -> np.ndarray:
     """Benoetigter Puffer je Tief, in ATR - also wie viel Abstand unter dem
     Tief noetig gewesen waere, damit der KO nicht faellt. Gleiche Grund-
@@ -687,38 +708,44 @@ def main() -> None:
         zeile["daten_wochenkontrolle"] = dl["wochenkontrolle"] if dl is not None else ""
 
         # ANKERZEILE UND PUFFERFENSTER (Entscheidung 149, Fassung vom
-        # 10.09.2026).
+        # 19.09.2026).
         #
-        # Die Ankerzeile ist die NIEDRIGSTE Pufferzeile zwischen 0,25 und
-        # 4,00 ATR, in der BEIDE 63-Tage-Halteraten mindestens 60 Prozent
-        # erreichen - die fuer diese Tiefsposition und die ueber alle
-        # Tiefen. Die niedrigste wird genommen, weil die Rendite mit
-        # sinkendem Puffer steigt: liegt sie dort schon ueber der Huerde,
-        # gilt das fuer jede tiefere Zeile erst recht.
+        # Die Ankerzeile ist die NIEDRIGSTE Pufferzeile, in der BEIDE
+        # 63-Tage-Halteraten mindestens 60 Prozent erreichen - die fuer
+        # diese Tiefsposition und die ueber alle Tiefs. Die niedrigste wird
+        # genommen, weil die Rendite mit sinkendem Puffer steigt.
+        #
+        # AENDERUNG 19.09.2026 (Peter): "Die Spanne 0,25-4 ATR kann
+        # entfallen. Wichtig ist die Rendite bei Haltewahrscheinlichkeiten."
+        # Bisher war bei 4,00 ATR Schluss - ein Wert, der 60/60 erst bei
+        # 4,25 schafft, flog mit "60/60 nie erreicht" raus, obwohl die
+        # Rendite dort noch reichen kann. Jetzt wird in Viertelschritten
+        # weitergesucht, bis beide Raten stehen oder kein Fall mehr tiefer
+        # fiel. Ob sich der Puffer lohnt, entscheidet allein die
+        # Renditepruefung darunter. 0,25 bleibt der kleinste Schritt - ein
+        # KO direkt auf dem Tief ist keiner.
         #
         # Ausgegeben wird ein FENSTER um den Anker: vier Viertelschritte
-        # darunter und vier darueber, gekappt bei 0,25 und 4,00 ATR. Ein
-        # festes Raster wurde am 08.09.2026 erprobt und wieder verworfen,
-        # weil es die Ankerzeile auf den naechsthoeheren Puffer schob und
-        # dadurch Rendite kostete (Applied Materials 180 auf 170 Prozent,
-        # Honeywell 152 auf 145, GE Aerospace 124 auf 115 und damit ganz
-        # raus). Obergrenze 4,00 ATR ist bewusst gesetzt: darueber treibt
-        # der Puffer den KO-Abstand und den Einsatz zu weit, ohne dass die
-        # Rendite mittraegt. Die Datenbasis in puffer_je_tief.csv.gz endet
-        # ohnehin bei tage_ko_4.
-        raster = [round(0.25 * i, 2) for i in range(1, 17)]
+        # darunter und vier darueber, unten bei 0,25 gekappt. Ein festes
+        # Raster wurde am 08.09.2026 erprobt und wieder verworfen, weil es
+        # die Ankerzeile auf den naechsthoeheren Puffer schob und dadurch
+        # Rendite kostete.
+        tiefste_faelle = _benoetigt(teil_puffer)
+        suchende = (float(tiefste_faelle.max()) + 0.25) if len(tiefste_faelle) else 4.0
         anker = None
-        for puf in raster:
-            hp, _ = _haelt(teil_position, puf)
-            ha, _ = _haelt(teil_puffer, puf)
+        puf = 0.25
+        while puf <= max(suchende, 0.25) + 1e-9:
+            hp, _ = _haelt_flex(teil_position, puf)
+            ha, _ = _haelt_flex(teil_puffer, puf)
             if hp is not None and ha is not None and hp >= 60 and ha >= 60:
                 anker = puf
                 break
+            puf = round(puf + 0.25, 2)
 
         zeile["anker_atr"] = anker
         if anker is None:
-            # Kein Puffer bis 4,00 ATR erreicht 60/60 - der Wert faellt
-            # nach Entscheidung 149 aus Block 1.
+            # Kein Puffer erreicht 60/60 (kommt nur bei zu wenigen
+            # Faellen vor) - der Wert faellt nach Entscheidung 149 raus.
             zeile["filter_ergebnis"] = "raus - 60/60 nie erreicht"
             zeile["filter_variante"] = None
             zeilen.append(zeile)
@@ -800,12 +827,12 @@ def main() -> None:
 
         untergrenze = max(0.25, round(anker - 1.00, 2))
         fenster = [round(untergrenze + 0.25 * i, 2) for i in range(9)]
-        fenster = [p for p in fenster if 0.25 <= p <= 4.00]
+        fenster = [p for p in fenster if p >= 0.25]
 
         for puf in fenster:
             ko = tief - puf * atr
-            haelt_position, n_position = _haelt(teil_position, puf)
-            haelt_alle, n_alle = _haelt(teil_puffer, puf)
+            haelt_position, n_position = _haelt_flex(teil_position, puf)
+            haelt_alle, n_alle = _haelt_flex(teil_puffer, puf)
             hoehe = kurs - ko
             zeile[f"p{puf:g}_ko"] = ko
             zeile[f"p{puf:g}_abstand_pct"] = (kurs - ko) / kurs * 100 if kurs else None

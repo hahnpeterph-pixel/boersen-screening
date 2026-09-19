@@ -1,6 +1,6 @@
 # Stundenwache
 
-Stand: 2026-09-18 · 158 Werte mit Stundendaten · erstellt 2026-09-19 09:20 UTC
+Stand: 2026-09-18 · 158 Werte mit Stundendaten · erstellt 2026-09-19 10:49 UTC
 
 Marken sind das juengste Swing-Tief und das juengste Swing-Hoch aus `tiefs_regel.py`, also dieselben wie im Tagesbericht. Geprueft wird nur, was der letzte Handelstag auf Stundenbasis damit gemacht hat.
 
@@ -19,13 +19,12 @@ Keine.
 
 Keine.
 
-## Tief angetestet (21)
+## Tief angetestet (19)
 
 Docht bis unter die Marke, kein Stundenschluss darunter.
 
 | Wert | Marke | Schluss | Abstand (ATR) | Stunden dahinter |
 |---|---|---|---|---|
-| DTG.DE | 43.05 | 43.1 | 0.051 | 0 |
 | MRK.DE | 129.4 | 129.65 | 0.091 | 0 |
 | DIS | 102.37 | 102.645 | 0.12 | 0 |
 | CBK.DE | 40.51 | 40.65 | 0.139 | 0 |
@@ -35,7 +34,6 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | SAP.DE | 182.56 | 183.72 | 0.205 | 0 |
 | MBG.DE | 43.6 | 43.92 | 0.249 | 0 |
 | MDLZ | 60.49 | 60.84 | 0.286 | 0 |
-| ZAL.DE | 21.31 | 21.53 | 0.323 | 0 |
 | HNR1.DE | 251.4 | 252.8 | 0.341 | 0 |
 | MUV2.DE | 502.8 | 506.3 | 0.383 | 0 |
 | ROP | 368.69 | 372.66 | 0.403 | 0 |

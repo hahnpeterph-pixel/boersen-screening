@@ -1,8 +1,8 @@
 # Boersen-Screening - 2026-09-19
 
-_Stand: Schlusskurse vom 2026-09-18, aber 40 Werte haengen zurueck - siehe Standwarnung. Erstellt 2026-09-19T09:18:24+00:00 UTC. 211 Werte ausgewertet._
+_Stand: Schlusskurse vom 2026-09-18, aber 34 Werte haengen zurueck - siehe Standwarnung. Erstellt 2026-09-19T10:47:23+00:00 UTC. 211 Werte ausgewertet._
 
-> **Standwarnung: 40 von 211 Werten haengen zurueck.** Neuester Handelstag im Bericht ist 2026-09-18.
+> **Standwarnung: 34 von 211 Werten haengen zurueck.** Neuester Handelstag im Bericht ist 2026-09-18.
 >
 > Ursache ist in aller Regel Yahoo: die vorlaeufige Tageskerze einer Boerse wird ueber Nacht durch die offizielle Abrechnung ersetzt, und solange die fehlt, faellt der Tag weg. Betroffen sind meist die europaeischen Notierungen. Fuer diese Werte gelten Kurs, ATR, RSI und Tiefs unten NICHT fuer den neuesten Handelstag.
 >
@@ -23,8 +23,6 @@ _Stand: Schlusskurse vom 2026-09-18, aber 40 Werte haengen zurueck - siehe Stand
 > | DBK.DE | 2026-09-16 |
 > | DHL.DE | 2026-09-16 |
 > | DTE.DE | 2026-09-16 |
-> | DTG.DE | 2026-09-16 |
-> | ENR.DE | 2026-09-16 |
 > | EOAN.DE | 2026-09-16 |
 > | FRE.DE | 2026-09-16 |
 > | HEI.DE | 2026-09-16 |
@@ -35,19 +33,15 @@ _Stand: Schlusskurse vom 2026-09-18, aber 40 Werte haengen zurueck - siehe Stand
 > | MRK.DE | 2026-09-16 |
 > | MTX.DE | 2026-09-16 |
 > | MUV2.DE | 2026-09-16 |
-> | P911.DE | 2026-09-16 |
 > | PAH3.DE | 2026-09-16 |
 > | QIA.DE | 2026-09-16 |
 > | RHM.DE | 2026-09-16 |
 > | RWE.DE | 2026-09-16 |
 > | SAP.DE | 2026-09-16 |
-> | SHL.DE | 2026-09-16 |
 > | SIE.DE | 2026-09-16 |
 > | SRT3.DE | 2026-09-16 |
 > | SY1.DE | 2026-09-16 |
-> | VNA.DE | 2026-09-16 |
 > | VOW3.DE | 2026-09-16 |
-> | ZAL.DE | 2026-09-16 |
 
 ## 📖 Glossar (was die Spalten bedeuten)
 

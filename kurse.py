@@ -24,12 +24,14 @@ from __future__ import annotations
 import os
 import time
 import shutil
-from datetime import date
+import json
+from datetime import date, datetime, timedelta, timezone
 from io import StringIO
 
 import pandas as pd
 import requests
 import yfinance as yf
+from dateutil.easter import easter
 
 HIER = os.path.dirname(os.path.abspath(__file__))
 CACHE = os.path.join(HIER, ".kurse_cache")
@@ -426,11 +428,19 @@ def kerzen(ticker: str, period: str = "400d", auto_adjust: bool = False) -> pd.D
         return None
 
     df = _aufbereiten(roh)
+    # LOECHER FUELLEN (19.09.2026). Siehe Abschnitt "Handelskalender und
+    # Lueckenfuellung" weiter unten.
+    bericht = {}
+    if df is not None:
+        df, bericht = _loecher_fuellen(ticker, holen, df, auto_adjust)
     _MEM[key] = df
+    _FUELLUNG[key] = bericht
     if df is not None:
         os.makedirs(CACHE, exist_ok=True)
         try:
             df.to_csv(pfad)
+            with open(_fuell_pfad(holen, period, auto_adjust), "w", encoding="utf-8") as f:
+                json.dump(bericht, f)
         except OSError as e:
             print(f"  {holen}: Cache nicht schreibbar ({e})")
     return None if df is None else df.copy()
@@ -597,3 +607,308 @@ def stundenkerzen(ticker: str, period: str = "5d", auto_adjust: bool = False) ->
         except OSError as e:
             print(f"  {holen}: Stunden-Cache nicht schreibbar ({e})")
     return None if df is None else df.copy()
+
+
+
+# ── Handelskalender und Lueckenfuellung ────────────────────────────
+# Eingebaut am 19.09.2026 auf Peters Vorgabe ("wenn keine vollstaendigen
+# Daten vorliegen, kann man das Tief nicht richtig bestimmen").
+#
+# ANLASS: Yahoo lieferte fuer alle 40 deutschen Werte und ASML nie eine
+# Kerze vom 17.09.2026 - in keinem Lauf, auch nicht nachtraeglich. Drei
+# Schwaechen kamen zusammen:
+#   1. Die Pruefung in kursverlauf.py schaute nur, ob der LETZTE Tag da
+#      ist. Ein Loch mitten in der Reihe (17.09. fehlt, 18.09. da) fiel
+#      niemandem auf.
+#   2. Die Zweitquelle Twelve Data deckt im Gratistarif NUR US-Boersen ab,
+#      kein XETRA (Preisseite, geprueft 19.09.2026). Der Notnagel, der fuer
+#      die deutschen Werte gedacht war, griff bei ihnen nie.
+#   3. Der Kalender wurde aus den gelieferten Daten abgeleitet. Fehlt ein
+#      Tag bei ALLEN Werten einer Boerse, sieht er aus wie ein Feiertag.
+# Folge: Luecken falsch als geschlossen gewertet (Infineon), Folgekerze
+# und Bezugstief der EU-Werte ungeprueft.
+#
+# DIE LOESUNG in drei Stufen, hier an der Quelle, damit ALLE Skripte, die
+# kerzen() nutzen, dieselben vollstaendigen Reihen bekommen:
+#   a) Fester Boersenkalender je Handelsplatz statt Ableitung aus Daten.
+#   b) Fehlender Tag zuerst aus dem ARCHIV (docs/kursverlauf*.csv aus dem
+#      letzten Lauf) - eine Kerze, die einmal da war, geht nicht mehr
+#      verloren, auch wenn Yahoo sie spaeter nicht mehr liefert.
+#   c) Sonst aus Yahoos STUNDENKERZEN nachgebaut: Eroeffnung der ersten
+#      Stunde, Hoch und Tief ueber alle Stunden, Schluss der letzten
+#      Stunde, Volumen als Summe. Anderer Abrufweg als die Tagesreihe und
+#      in der Praxis meist vollstaendig. Yahoo hat Stundenkerzen nur rund
+#      zwei Jahre zurueck, deshalb die Grenze STUNDEN_FUELLGRENZE_TAGE.
+# Was danach noch fehlt, bleibt ein ehrliches Loch. heute.py nimmt einen
+# Wert mit Loch in den letzten PRUEF_TAGE Handelstagen aus Block 1 (harte
+# Sperre, Peters Entscheidung vom 19.09.2026).
+#
+# Rohstoffe und Devisen (=F, =X) sind ausgenommen: sie handeln fast rund
+# um die Uhr, ein Tageskalender passt nicht, und sie kommen fuer Block 1
+# ohnehin nicht in Frage.
+
+# Unplanmaessige Boersenschliessungen, die kein Regelkalender kennt.
+# Fehlt ein solcher Tag hier, gilt er bei ALLEN Werten der Boerse als Loch
+# - das faellt im Protokoll sofort auf ("offen" bei jedem Wert desselben
+# Tages) und wird dann hier nachgetragen.
+SONDERSCHLIESSTAGE: dict[str, set] = {
+    "USA": {date(2025, 1, 9)},       # Staatstrauer Jimmy Carter
+    "XETRA": set(),
+    "Euronext": set(),
+}
+
+# Ab wann (UTC) ein Handelstag als abgeschlossen gilt - dieselben
+# Schwellen wie unfertige_heutige_kerze_verwerfen() in kursverlauf.py.
+SCHLUSS_UTC = {"XETRA": 17, "Euronext": 17, "USA": 21}
+
+STUNDEN_FUELLGRENZE_TAGE = 720
+MIN_STUNDEN_JE_TAG = 5
+# Obergrenze fuer Stundenabrufe je Prozess. Ein unbekannter Schliesstag
+# wuerde sonst bei jedem US-Wert einen Abruf ausloesen und Yahoo bremsen.
+MAX_FUELL_ANFRAGEN = 120
+_FUELL_ANFRAGEN = 0
+
+# Wie viele Handelstage zurueck ein Loch zur Kaufsperre fuehrt. 63 Tage
+# sind drei Monate - derselbe Horizont wie die Halteraten, und weit genug,
+# um jede laufende Korrektur samt ihrer Tiefs abzudecken.
+PRUEF_TAGE = 63
+
+_FUELLUNG: dict[tuple, dict] = {}
+_ARCHIV: dict[str, "pd.DataFrame"] | None = None
+
+
+def boerse(ticker: str) -> str | None:
+    """Handelsplatz fuer den Kalender, None fuer Rohstoffe/Devisen."""
+    if ticker.endswith("=F") or ticker.endswith("=X"):
+        return None
+    q = quelle(ticker)
+    if q.endswith(".DE"):
+        return "XETRA"
+    if q.endswith(".AS"):
+        return "Euronext"
+    if "." not in q:
+        return "USA"
+    return None
+
+
+def _feiertage(b: str, jahr: int) -> set:
+    ostern = easter(jahr)
+    karfreitag = ostern - timedelta(days=2)
+    ostermontag = ostern + timedelta(days=1)
+    if b == "XETRA":
+        return {date(jahr, 1, 1), karfreitag, ostermontag, date(jahr, 5, 1),
+                date(jahr, 12, 24), date(jahr, 12, 25), date(jahr, 12, 26),
+                date(jahr, 12, 31)}
+    if b == "Euronext":
+        # 24.12. und 31.12. sind in Amsterdam verkuerzte Handelstage, keine
+        # Feiertage.
+        return {date(jahr, 1, 1), karfreitag, ostermontag, date(jahr, 5, 1),
+                date(jahr, 12, 25), date(jahr, 12, 26)}
+    if b == "USA":
+        def nter(monat, wochentag, n):
+            d = date(jahr, monat, 1)
+            d += timedelta(days=(wochentag - d.weekday()) % 7)
+            return d + timedelta(days=7 * (n - 1))
+
+        def letzter(monat, wochentag):
+            d = (date(jahr, monat + 1, 1) - timedelta(days=1)) if monat < 12 else date(jahr, 12, 31)
+            return d - timedelta(days=(d.weekday() - wochentag) % 7)
+
+        def beobachtet(d):
+            if d.weekday() == 5:
+                return d - timedelta(days=1)
+            if d.weekday() == 6:
+                return d + timedelta(days=1)
+            return d
+
+        tage = {nter(1, 0, 3), nter(2, 0, 3), karfreitag, letzter(5, 0),
+                nter(9, 0, 1), nter(11, 3, 4), beobachtet(date(jahr, 6, 19)),
+                beobachtet(date(jahr, 7, 4)), beobachtet(date(jahr, 12, 25))}
+        # Faellt Neujahr auf einen Samstag, schliesst die NYSE am Freitag
+        # davor NICHT.
+        if date(jahr, 1, 1).weekday() != 5:
+            tage.add(beobachtet(date(jahr, 1, 1)))
+        return tage
+    return set()
+
+
+def handelstage(b: str, von: date, bis: date) -> list[date]:
+    """Alle regulaeren Handelstage eines Handelsplatzes von..bis."""
+    tage, feiertage, d = [], {}, von
+    while d <= bis:
+        if d.weekday() < 5:
+            if d.year not in feiertage:
+                feiertage[d.year] = _feiertage(b, d.year) | SONDERSCHLIESSTAGE.get(b, set())
+            if d not in feiertage[d.year]:
+                tage.append(d)
+        d += timedelta(days=1)
+    return tage
+
+
+def letzter_fertiger_tag(b: str, jetzt: datetime | None = None) -> date:
+    jetzt = jetzt or datetime.now(timezone.utc)
+    return jetzt.date() if jetzt.hour >= SCHLUSS_UTC.get(b, 21) else jetzt.date() - timedelta(days=1)
+
+
+def _fuell_pfad(holen: str, period: str, auto_adjust: bool) -> str:
+    return _pfad(f"fuell_{holen}", period, auto_adjust)[:-4] + ".json"
+
+
+def _archiv(ticker: str) -> "pd.DataFrame | None":
+    """Kerzen dieses Wertes aus den zuletzt geschriebenen docs/kursverlauf*."""
+    global _ARCHIV
+    if _ARCHIV is None:
+        _ARCHIV = {}
+        docs = os.path.join(HIER, "docs")
+        teile = {"Open": "kursverlauf_eroeffnung.csv", "High": "kursverlauf_hoch.csv",
+                 "Low": "kursverlauf_tief.csv", "Close": "kursverlauf.csv",
+                 "Volume": "kursverlauf_volumen.csv"}
+        try:
+            frames = {sp: pd.read_csv(os.path.join(docs, datei), index_col=0)
+                      for sp, datei in teile.items()}
+        except Exception as e:
+            print(f"  Archiv docs/kursverlauf* nicht lesbar ({e}) - ohne Archiv weiter")
+            return None
+        for t in frames["Close"].index:
+            teil = pd.DataFrame({sp: f.loc[t] if t in f.index else float("nan")
+                                 for sp, f in frames.items()})
+            teil.index = pd.to_datetime(teil.index)
+            teil = teil.dropna(subset=["Open", "High", "Low", "Close"])
+            _ARCHIV[t] = teil
+    return _ARCHIV.get(ticker)
+
+
+def _loecher_fuellen(ticker: str, holen: str, df: "pd.DataFrame",
+                     auto_adjust: bool) -> tuple["pd.DataFrame", dict]:
+    """Fehlende Handelstage erkennen und fuellen. Liefert die ergaenzte
+    Reihe und einen Bericht {"gefuellt": {tag: quelle}, "offen": [tage]}."""
+    global _FUELL_ANFRAGEN
+    b = boerse(ticker)
+    if b is None or df is None or df.empty:
+        return df, {}
+    vorhanden = set(df.index.date)
+    fehlend = [d for d in handelstage(b, df.index[0].date(), letzter_fertiger_tag(b))
+               if d not in vorhanden]
+    if not fehlend:
+        return df, {}
+
+    gefuellt: dict[str, str] = {}
+    neue = []
+
+    def _zeile(d, o, h, l, c, v):
+        z = pd.DataFrame({"Open": [o], "High": [h], "Low": [l], "Close": [c],
+                          "Volume": [v]}, index=[pd.Timestamp(d)])
+        for sp in ("Dividends", "Stock Splits"):
+            if sp in df.columns:
+                z[sp] = 0.0
+        return z
+
+    # b) Archiv - nur fuer die unbereinigte Reihe, das Archiv ist unbereinigt.
+    if not auto_adjust:
+        arch = _archiv(ticker)
+        if arch is not None:
+            for d in fehlend:
+                ts = pd.Timestamp(d)
+                if ts in arch.index:
+                    r = arch.loc[ts]
+                    neue.append(_zeile(d, r.Open, r.High, r.Low, r.Close, r.Volume))
+                    gefuellt[str(d)] = "archiv"
+
+    # c) Stundenkerzen
+    rest = [d for d in fehlend if str(d) not in gefuellt
+            and d >= date.today() - timedelta(days=STUNDEN_FUELLGRENZE_TAGE)]
+    if rest and _FUELL_ANFRAGEN < MAX_FUELL_ANFRAGEN:
+        _FUELL_ANFRAGEN += 1
+        try:
+            roh = yf.Ticker(holen).history(start=min(rest), end=max(rest) + timedelta(days=1),
+                                           interval="1h", auto_adjust=auto_adjust)
+            h = _aufbereiten_stunden(roh)
+        except Exception as e:
+            print(f"  {holen}: Stundenabruf zum Fuellen fehlgeschlagen ({e})")
+            h = None
+        if h is not None:
+            for d in rest:
+                tag = h[h.index.date == d]
+                if len(tag) >= MIN_STUNDEN_JE_TAG:
+                    vol = float(tag["Volume"].sum()) if "Volume" in tag.columns else float("nan")
+                    neue.append(_zeile(d, float(tag["Open"].iloc[0]), float(tag["High"].max()),
+                                       float(tag["Low"].min()), float(tag["Close"].iloc[-1]), vol))
+                    gefuellt[str(d)] = "stunden"
+    elif rest:
+        print(f"  {holen}: Obergrenze {MAX_FUELL_ANFRAGEN} Stundenabrufe erreicht - "
+              f"{len(rest)} Tage bleiben offen")
+
+    if neue:
+        df = pd.concat([df] + neue).sort_index()
+        df = df[~df.index.duplicated(keep="first")]
+    offen = [str(d) for d in fehlend if str(d) not in gefuellt]
+    if gefuellt:
+        print(f"  {ticker}: {len(gefuellt)} fehlende Tage gefuellt - "
+              + ", ".join(f"{t} ({q})" for t, q in sorted(gefuellt.items())))
+    if offen:
+        print(f"  {ticker}: {len(offen)} Tage weiterhin OFFEN - " + ", ".join(offen[-10:]))
+    return df, {"gefuellt": gefuellt, "offen": offen}
+
+
+def fuellbericht(ticker: str, period: str = "400d", auto_adjust: bool = False) -> dict:
+    """Bericht zur Lueckenfuellung aus dem letzten kerzen()-Aufruf - auch
+    wenn der in einem frueheren Workflow-Schritt (anderer Prozess) lief."""
+    key = (ticker, period, auto_adjust)
+    if key in _FUELLUNG:
+        return _FUELLUNG[key]
+    pfad = _fuell_pfad(quelle(ticker), period, auto_adjust)
+    try:
+        with open(pfad, encoding="utf-8") as f:
+            return json.load(f)
+    except (OSError, ValueError):
+        return {}
+
+
+def fehlende_tage(ticker: str, vorhandene_tage, pruef_tage: int = PRUEF_TAGE,
+                  jetzt: datetime | None = None) -> list[str]:
+    """Regulaere Handelstage der letzten pruef_tage, die in
+    vorhandene_tage fehlen - bis einschliesslich zum letzten
+    abgeschlossenen Handelstag. Grundlage der harten Kaufsperre."""
+    b = boerse(ticker)
+    if b is None:
+        return []
+    bis = letzter_fertiger_tag(b, jetzt)
+    kalender = handelstage(b, bis - timedelta(days=int(pruef_tage * 1.6) + 10), bis)[-pruef_tage:]
+    da = {d if isinstance(d, date) else pd.Timestamp(d).date() for d in vorhandene_tage}
+    if not da:
+        return [str(d) for d in kalender]
+    # Tage VOR der ersten Kerze sind kein Loch, sondern ein Wert, der
+    # damals noch nicht notierte (z. B. HONA nach der Abspaltung).
+    erster = min(da)
+    return [str(d) for d in kalender if d >= erster and d not in da]
+
+
+def wochenkontrolle(ticker: str, tag: date, tagestiefs: dict) -> str:
+    """Kontrolle ueber die Wochenkerze fuer einen fehlenden Tag.
+
+    Liegt das Wochentief unter allen bekannten Tagestiefs derselben Woche,
+    muss der fehlende Tag das tiefere Tief gemacht haben. Einschraenkung:
+    Die Wochenkerze kommt von derselben Quelle. Fehlt der Tag dort
+    ebenfalls, sagt ein gleiches Tief nichts - deshalb "kein Hinweis",
+    nie "sicher kein neues Tief".
+    """
+    montag = tag - timedelta(days=tag.weekday())
+    try:
+        w = yf.Ticker(quelle(ticker)).history(start=montag, end=montag + timedelta(days=7),
+                                              interval="1wk")
+    except Exception as e:
+        return f"Wochenkerze nicht abrufbar ({e})"
+    if w is None or w.empty:
+        return "Wochenkerze nicht verfuegbar"
+    wtief = float(w["Low"].min())
+    bekannt = [v for d, v in tagestiefs.items()
+               if montag <= pd.Timestamp(d).date() < montag + timedelta(days=5)
+               and v is not None and v == v]
+    if not bekannt:
+        return f"Wochentief {wtief:.2f}, keine Tagestiefs der Woche bekannt"
+    btief = min(bekannt)
+    if wtief < btief * 0.999:
+        return (f"Wochentief {wtief:.2f} liegt UNTER allen bekannten Tagestiefs "
+                f"({btief:.2f}) - der fehlende Tag hatte ein tieferes Tief")
+    return (f"Wochentief {wtief:.2f} = bekanntes Tief - kein Hinweis auf ein "
+            f"tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)")

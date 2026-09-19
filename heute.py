@@ -468,14 +468,35 @@ def _haelt_bei(werte: np.ndarray, puffer_atr: float):
     return float((werte <= puffer_atr).mean() * 100), int(len(werte))
 
 
-def korr_an_position(phasen: pd.DataFrame, t: str, position) -> tuple:
-    """Faelle, p90, p95, hoechster Wert der Korrektur ab Hoch fuer Serien,
-    die mindestens die heutige Tiefsposition erreicht haben. Leer, wenn
-    phasen.csv die Spalte noch nicht hat (alter Lauf) - dann lieber leer als
-    eine Zahl mit anderem Bezug."""
+def korr_an_position(puffer: pd.DataFrame, phasen: pd.DataFrame, t: str,
+                     position) -> tuple:
+    """Korrektur AB HOCH bis zum Serienende fuer alle abgeschlossenen
+    Serien dieses Werts, die die heutige Tiefsposition erreicht haben.
+    Rueckgabe: Faelle, 9 von 10, 19 von 20, tiefste.
+
+    QUELLE seit 19.09.2026: puffer_je_tief.csv.gz, Spalte korr_serie_atr
+    (historie.py). Damit zaehlt die Korrektur-Tabelle dieselben Faelle wie
+    die Fortsetzungskette. Die Zwischenloesung ueber phasen.korr_je_tief
+    zaehlte anders (Costco 17 statt 15) und bleibt nur Rueckfall, solange
+    die Rohdatei die neue Spalte noch nicht hat.
+
+    AUSGEZAEHLT, nicht interpoliert - wie die Sicherheitsmarken: "9 von
+    10" ist der Wert, unter dem mindestens 90 Prozent der Faelle liegen
+    (der k-te sortierte Wert mit k = aufgerundet 0,9 * n).
+    """
     leer = (None, None, None, None)
-    if (t not in phasen.index or "korr_je_tief" not in phasen.columns
-            or position != position or not position):
+    if position != position or not position:
+        return leer
+    if "korr_serie_atr" in puffer.columns:
+        w = puffer[(puffer.ticker == t) & (puffer.position == int(position))]
+        w = np.sort(w["korr_serie_atr"].dropna().to_numpy(dtype=float))
+        if len(w) == 0:
+            return leer
+        n = len(w)
+        marke = lambda q: float(w[min(n, int(np.ceil(q * n))) - 1])
+        return n, marke(0.90), marke(0.95), float(w[-1])
+    # Rueckfall: alte Rohdatei ohne korr_serie_atr.
+    if t not in phasen.index or "korr_je_tief" not in phasen.columns:
         return leer
     roh = phasen.loc[t, "korr_je_tief"]
     if not isinstance(roh, str):
@@ -608,7 +629,7 @@ def main() -> None:
         schwelle = kette_wert.get(int(position)) if position == position and position else None
 
         ueblich = phasen.loc[t, "korrektur_atr"] if t in phasen.index else None
-        korr_tief = korr_an_position(phasen, t, position)
+        korr_tief = korr_an_position(puffer, phasen, t, position)
         luecken_wert = luecken[luecken.ticker == t]
 
         teil_puffer = puffer[puffer.ticker == t]
@@ -627,7 +648,14 @@ def main() -> None:
             "atr14": atr,
             "bezugstief": tief,
             "bezugstief_datum": tief_datum,
-            "bezugstief_bestaetigt": 0,
+            # 19.09.2026: stand fest auf 0 - Costco wurde dadurch als
+            # "unbestaetigt" gefuehrt, obwohl tief1_best=1 (das Hoch vom
+            # 18.09. lag ueber dem Hoch der Tiefkerze vom 17.09.). Ein
+            # Tagestief von heute ist nie bestaetigt; ein Serientief traegt
+            # die Bestaetigung aus marktdaten.csv.
+            "bezugstief_bestaetigt": (int(z.tief1_best) if tief_datum == z.tief1_datum
+                                      and pd.notna(z.tief1_best) and str(z.tief1_best) != ""
+                                      else 0),
             "position": position,
             "fortsetzungskette": fortsetzungskette(kette_roh, position),
             "rsi_heute": z.rsi14,

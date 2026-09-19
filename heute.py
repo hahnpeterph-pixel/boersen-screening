@@ -469,6 +469,20 @@ def main() -> None:
     phasen = pd.read_csv(os.path.join(DOCS, "phasen.csv")).set_index("ticker")
     rsi_schwellen = pd.read_csv(os.path.join(DOCS, "rsi_schwellen.csv"))
     luecken = pd.read_csv(os.path.join(DOCS, "luecken.csv"))
+    # DATENLUECKEN (19.09.2026, harte Sperre nach Peters Entscheidung):
+    # "Wenn keine vollstaendigen Daten vorliegen, kann man das Tief nicht
+    # richtig bestimmen" - ein Wert mit fehlendem Handelstag in den letzten
+    # kurse.PRUEF_TAGE faellt aus Block 1. Geschrieben von kursverlauf.py,
+    # NACHDEM kurse.py versucht hat, die Loecher zu fuellen. Fehlt die
+    # Datei, laut melden und ohne Sperre weiter - ein fehlender Bericht
+    # darf nicht still als "alles vollstaendig" durchgehen.
+    datenluecken_pfad = os.path.join(DOCS, "datenluecken.csv")
+    if os.path.exists(datenluecken_pfad):
+        datenluecken = pd.read_csv(datenluecken_pfad, dtype=str).fillna("").set_index("ticker")
+    else:
+        datenluecken = None
+        print("WARNUNG: docs/datenluecken.csv fehlt - Vollstaendigkeit der "
+              "Kursreihen NICHT geprueft, Sperre wirkt heute nicht.")
     with gzip.open(os.path.join(DOCS, "puffer_je_tief.csv.gz")) as f:
         puffer = pd.read_csv(f)
 
@@ -607,6 +621,11 @@ def main() -> None:
             "long_anteil_tr": "nicht erfasst - bitte Screenshot",
             "luecken": luecken_zeile(luecken_wert, kurs) if len(luecken_wert) else "keine Daten",
         }
+        dl = (datenluecken.loc[t] if datenluecken is not None and t in datenluecken.index
+              else None)
+        zeile["daten_fehlend"] = dl["fehlend"] if dl is not None else ""
+        zeile["daten_gefuellt"] = dl["gefuellt"] if dl is not None else ""
+        zeile["daten_wochenkontrolle"] = dl["wochenkontrolle"] if dl is not None else ""
 
         # ANKERZEILE UND PUFFERFENSTER (Entscheidung 149, Fassung vom
         # 10.09.2026).
@@ -676,6 +695,15 @@ def main() -> None:
         else:
             zeile["filter_ergebnis"] = f"raus - Rendite {r_eigen:.0f} %"
             zeile["filter_variante"] = None
+
+        # HARTE SPERRE bei unvollstaendigen Daten (19.09.2026). Steht NACH
+        # der Renditepruefung, damit Anker, Renditen und Marken trotzdem
+        # gerechnet und sichtbar bleiben - man sieht, was der Wert waere,
+        # kann ihn aber nicht kaufen.
+        if zeile["daten_fehlend"]:
+            tage_txt = ", ".join(pd.Timestamp(d).strftime("%d.%m.")
+                                 for d in zeile["daten_fehlend"].split())
+            zeile["filter_ergebnis"] = f"raus - Daten unvollstaendig ({tage_txt})"
 
         # SICHERHEITSMARKEN (neu am 18.09.2026, auf Peters Vorgabe). Die
         # Pufferstufen zeigen bisher nur, wie sicher der KO IN DIESEM

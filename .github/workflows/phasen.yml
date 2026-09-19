@@ -12,9 +12,9 @@ on:
   workflow_dispatch:
     inputs:
       jahre:
-        description: "Jahre Kurshistorie (Standard 3)"
+        description: "Jahre Kurshistorie (Standard 7)"
         required: false
-        default: "3"
+        default: "7"
 
 concurrency:
   group: repo-schreiben
@@ -39,7 +39,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Phasen-Analyse ausfuehren
-        run: python phasen.py --jahre "${{ github.event.inputs.jahre || '3' }}"
+        run: python phasen.py --jahre "${{ github.event.inputs.jahre || '7' }}"
 
       - name: Ergebnis speichern
         run: |

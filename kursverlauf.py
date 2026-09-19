@@ -406,15 +406,22 @@ def volumen_luecken(tage: list[str], je_wert: dict, je_volumen: dict,
     "Ersatzkerze aus marktdaten.csv" oder "unbekannt".
     """
     luecken = []
-    for t, kurse in je_wert.items():
+    for t, schluss in je_wert.items():
         vol = je_volumen.get(t, {})
         for tag in tage:
-            if tag not in kurse:
+            if tag not in schluss:
                 continue          # kein Kurs, also auch kein Volumen erwartet
             if tag in vol:
                 continue
-            grund = ("Ersatzkerze aus marktdaten.csv"
-                     if ersatzkerzen.get(t) == tag else "unbekannt")
+            if ersatzkerzen.get(t) == tag:
+                grund = "Ersatzkerze aus marktdaten.csv"
+            elif tag in kurse.fuellbericht(t).get("gefuellt", {}):
+                # Aus Archiv oder Stundenkerzen gefuellter Tag (kurse.py,
+                # 19.09.2026). Das Archiv kann fuer einen Tag ohne Volumen
+                # sein - dann ist die Luecke erklaert, nicht unbekannt.
+                grund = "Fuellkerze (" + kurse.fuellbericht(t)["gefuellt"][tag] + ")"
+            else:
+                grund = "unbekannt"
             luecken.append((t, tag, grund))
     return luecken
 
@@ -441,6 +448,48 @@ def schreiben(tage: list[str], je_wert: dict, je_tief: dict,
     _eine_datei(CSV_VOLUMEN, tage, je_volumen)
 
 
+# Sechste Datei, ergaenzt am 19.09.2026: DATENLUECKEN je Wert.
+#
+# Anlass: Am 17.09.2026 fehlte bei allen 40 deutschen Werten und ASML die
+# Tageskerze. Niemand merkte es, weil nur der letzte Tag geprueft wurde.
+# Die Datei listet je Aktie, welche regulaeren Handelstage der letzten
+# kurse.PRUEF_TAGE nach dem Fuellen (kurse.py) noch fehlen, welche
+# gefuellt wurden und woher, und fuer jeden fehlenden Tag die Kontrolle
+# ueber die Wochenkerze. heute.py liest sie fuer die harte Kaufsperre,
+# die Depot-Tabelle fuer den Hinweis bei gehaltenen Werten.
+# Eine Datei nur mit Kopfzeile heisst: keine Luecke.
+CSV_DATENLUECKEN = DOCS / "datenluecken.csv"
+
+
+def datenluecken_schreiben(tage: list[str], je_wert: dict, je_tief: dict) -> None:
+    zeilen = []
+    grenze = tage[-kurse.PRUEF_TAGE] if len(tage) >= kurse.PRUEF_TAGE else tage[0]
+    for t in sorted(je_wert):
+        if kurse.boerse(t) is None:
+            continue
+        fehlend = kurse.fehlende_tage(t, je_wert[t].keys())
+        gefuellt = {d: q for d, q in kurse.fuellbericht(t).get("gefuellt", {}).items()
+                    if d >= grenze}
+        if not fehlend and not gefuellt:
+            continue
+        kontrolle = "; ".join(
+            f"{d}: " + kurse.wochenkontrolle(t, datetime.strptime(d, "%Y-%m-%d").date(),
+                                            je_tief.get(t, {}))
+            for d in fehlend)
+        zeilen.append([t, kurse.boerse(t), " ".join(fehlend),
+                       " ".join(f"{d}:{q}" for d, q in sorted(gefuellt.items())), kontrolle])
+    with open(CSV_DATENLUECKEN, "w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f)
+        w.writerow(["ticker", "boerse", "fehlend", "gefuellt", "wochenkontrolle"])
+        w.writerows(zeilen)
+    offen = [z for z in zeilen if z[2]]
+    print(f"  Datenluecken: {len(offen)} Werte mit offenem Tag, "
+          f"{sum(1 for z in zeilen if z[3])} mit gefuelltem Tag "
+          f"(letzte {kurse.PRUEF_TAGE} Handelstage)")
+    for z in offen[:40]:
+        print(f"    OFFEN {z[0]}: {z[2]}")
+
+
 def main() -> None:
     kurse.aufraeumen()
     tage, je_wert, je_tief, je_hoch, je_eroeff, je_volumen, ersatzkerzen = reihen()
@@ -448,6 +497,7 @@ def main() -> None:
         print("Keine Kursdaten erhalten - nichts geschrieben.")
         return
     schreiben(tage, je_wert, je_tief, je_hoch, je_eroeff, je_volumen)
+    datenluecken_schreiben(tage, je_wert, je_tief)
 
     # Volumenpruefung. Der Bericht wird IMMER geschrieben, damit auch die
     # erwarteten Luecken nachvollziehbar bleiben und nicht stillschweigend

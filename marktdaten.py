@@ -170,6 +170,88 @@ def tief_takt(treffer, df):
     return len(best), round(sum(abstaende) / len(abstaende), 1)
 
 
+VP_TAGE = 250          # rund ein Handelsjahr
+VP_BIN_ATR = 0.5       # Breite einer Preisstufe in ATR
+VP_ZONE_MIN = 0.5      # Knoten zaehlt ab 50 % des staerksten Preisbereichs
+
+
+def volumenprofil(df, a):
+    """Volumenprofil aus Tageskerzen (19.09.2026, Peter: "Ja, einbauen.
+    Geht ja um den Trend.").
+
+    Naeherung: Das Volumen jedes Tages wird gleichmaessig auf die Spanne
+    von Tagestief bis Tageshoch verteilt. Echte Profile nutzen
+    Minutendaten; fuer Zonen ueber ein Jahr reicht die Naeherung, weil der
+    Fehler ueber alle Tage gleichmaessig streut.
+
+    Rueckgabe: dict mit
+      vp_poc          Preis mit dem meisten Handel (Mitte der Stufe)
+      vp_va_unten/oben  Bereich, in dem 70 % des Volumens gehandelt wurden
+      vp_zonen        "von-bis:staerke;..." alle Knoten, staerke in % des
+                      staerksten Preisbereichs, aufsteigend nach Preis
+    Leer, wenn kein Volumen oder zu wenig Daten.
+    """
+    import numpy as np
+    leer = {"vp_poc": "", "vp_va_unten": "", "vp_va_oben": "", "vp_zonen": ""}
+    if a in (None, 0) or "Volume" not in df.columns:
+        return leer
+    d = df.tail(VP_TAGE)
+    d = d[(d["Volume"] > 0) & d["High"].notna() & d["Low"].notna()]
+    if len(d) < 60:
+        return leer
+    unten, oben = float(d["Low"].min()), float(d["High"].max())
+    breite = max(VP_BIN_ATR * a, (oben - unten) / 200)
+    n = int(np.ceil((oben - unten) / breite)) + 1
+    grenzen = unten + breite * np.arange(n + 1)
+    vol = np.zeros(n)
+    for lo, hi, v in zip(d["Low"].values, d["High"].values, d["Volume"].values):
+        if hi <= lo:
+            vol[min(int((lo - unten) / breite), n - 1)] += v
+            continue
+        i0, i1 = int((lo - unten) / breite), min(int((hi - unten) / breite), n - 1)
+        for i in range(i0, i1 + 1):
+            anteil = (min(hi, grenzen[i + 1]) - max(lo, grenzen[i])) / (hi - lo)
+            if anteil > 0:
+                vol[i] += v * anteil
+    glatt = np.convolve(vol, np.ones(3) / 3, mode="same")
+    poc = int(np.argmax(glatt))
+    # Wertbereich 70 %: vom staerksten Bereich aus nach beiden Seiten
+    # jeweils die groessere Nachbarstufe dazunehmen.
+    ziel, summe, li, re = 0.7 * vol.sum(), vol[poc], poc, poc
+    while summe < ziel and (li > 0 or re < n - 1):
+        l = vol[li - 1] if li > 0 else -1
+        r = vol[re + 1] if re < n - 1 else -1
+        if l >= r:
+            li -= 1; summe += vol[li]
+        else:
+            re += 1; summe += vol[re]
+    # Knoten: oertliche Maxima der geglaetteten Kurve ab VP_ZONE_MIN des
+    # staerksten; Zone = zusammenhaengende Stufen ab 70 % des Knotens.
+    spitze = glatt[poc]
+    zonen = []
+    for i in range(n):
+        links = glatt[i - 1] if i > 0 else -1
+        rechts = glatt[i + 1] if i < n - 1 else -1
+        if glatt[i] >= VP_ZONE_MIN * spitze and glatt[i] >= links and glatt[i] > rechts:
+            j0 = i
+            while j0 > 0 and glatt[j0 - 1] >= 0.7 * glatt[i]:
+                j0 -= 1
+            j1 = i
+            while j1 < n - 1 and glatt[j1 + 1] >= 0.7 * glatt[i]:
+                j1 += 1
+            if zonen and j0 <= zonen[-1][1]:
+                if glatt[i] > zonen[-1][2]:
+                    zonen[-1] = (zonen[-1][0], j1, glatt[i])
+                continue
+            zonen.append((j0, j1, glatt[i]))
+    txt = ";".join(f"{grenzen[j0]:.2f}-{grenzen[j1 + 1]:.2f}:{round(100 * s / spitze)}"
+                   for j0, j1, s in zonen)
+    return {"vp_poc": round(float(grenzen[poc] + breite / 2), 2),
+            "vp_va_unten": round(float(grenzen[li]), 2),
+            "vp_va_oben": round(float(grenzen[re + 1]), 2),
+            "vp_zonen": txt}
+
+
 def korrektur_ist(df, tiefe_liste, a):
     """Die LAUFENDE Korrektur, mit demselben Anker wie phasen.py.
 
@@ -612,6 +694,8 @@ def main():
         r["korr_hoch"] = z(k_hoch)
         r["korr_ist_atr"] = z(k_atr, 2) if k_atr is not None else ""
         r["korr_ist_tage"] = k_tage if k_tage is not None else ""
+        r.update(volumenprofil(df, a) if mitvol else
+                 {"vp_poc": "", "vp_va_unten": "", "vp_va_oben": "", "vp_zonen": ""})
         for n in (1, 2, 3):
             t = tr[n - 1] if len(tr) >= n else None
             r[f"tief{n}"] = z(t["tief"]) if t else ""
@@ -687,7 +771,15 @@ def main():
             print(f"      {r['ticker']:10s} letzte Kerze {r['datum']}")
 
     os.makedirs(DOCS, exist_ok=True)
-    felder = list(zeilen[0].keys()) if zeilen else []
+    # Spalten aus ALLEN Zeilen (19.09.2026): stand.zusammenfuehren kann
+    # Zeilen eines aelteren Laufs uebernehmen, denen neue Spalten fehlen.
+    # Mit den Spalten nur der ersten Zeile braeche der Schreibvorgang ab,
+    # sobald die erste Zeile eine alte ist.
+    felder = []
+    for r in zeilen:
+        for k in r:
+            if k not in felder:
+                felder.append(k)
     with open(CSV_AUS, "w", encoding="utf-8", newline="") as f:
         w = csv.DictWriter(f, fieldnames=felder)
         w.writeheader()

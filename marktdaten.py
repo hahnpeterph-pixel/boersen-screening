@@ -170,70 +170,6 @@ def tief_takt(treffer, df):
     return len(best), round(sum(abstaende) / len(abstaende), 1)
 
 
-VP_TAGE = 250          # rund ein Handelsjahr
-VP_BIN_ATR = 0.5       # Breite einer Preisstufe in ATR
-VP_SPITZE_MIN = 0.3    # Spitze zaehlt ab 30 % der staerksten
-VP_ABSTAND_ATR = 1.5   # zwei Spitzen enger als 1,5 ATR = eine
-
-
-def volumenprofil(df, a):
-    """Volumenprofil aus Tageskerzen (20.09.2026, Peter: "Ja, einbauen.
-    Geht ja um den Trend." / "wenn er eine Volumenspitze unterschritten
-    hat, kommt darunter irgendwann noch eine - das waere die naechste
-    Unterstuetzung").
-
-    Naeherung: das Volumen jedes Tages wird gleichmaessig auf die Spanne
-    Tagestief bis Tageshoch verteilt. Echte Profile nutzen Minutendaten;
-    der Fehler streut ueber alle Tage gleich, die Spitzen bleiben
-    aussagekraeftig.
-
-    Rueckgabe:
-      vp_poc       Preis mit dem meisten Handel
-      vp_spitzen   "preis:staerke;..." alle Volumenspitzen, aufsteigend,
-                   staerke in % der groessten Spitze
-    """
-    import numpy as np
-    leer = {"vp_poc": "", "vp_spitzen": ""}
-    if a in (None, 0) or "Volume" not in df.columns:
-        return leer
-    d = df.tail(VP_TAGE)
-    d = d[(d["Volume"] > 0) & d["High"].notna() & d["Low"].notna()]
-    if len(d) < 60:
-        return leer
-    unten, oben = float(d["Low"].min()), float(d["High"].max())
-    breite = max(VP_BIN_ATR * a, (oben - unten) / 200)
-    n = int(np.ceil((oben - unten) / breite)) + 1
-    grenzen = unten + breite * np.arange(n + 1)
-    vol = np.zeros(n)
-    for lo, hi, v in zip(d["Low"].values, d["High"].values, d["Volume"].values):
-        if hi <= lo:
-            vol[min(int((lo - unten) / breite), n - 1)] += v
-            continue
-        i0, i1 = int((lo - unten) / breite), min(int((hi - unten) / breite), n - 1)
-        for i in range(i0, i1 + 1):
-            anteil = (min(hi, grenzen[i + 1]) - max(lo, grenzen[i])) / (hi - lo)
-            if anteil > 0:
-                vol[i] += v * anteil
-    glatt = np.convolve(vol, np.ones(3) / 3, mode="same")
-    poc = int(np.argmax(glatt))
-    spitze = glatt[poc]
-    kandidaten = [i for i in range(n)
-                  if glatt[i] >= VP_SPITZE_MIN * spitze
-                  and glatt[i] >= (glatt[i - 1] if i > 0 else -1)
-                  and glatt[i] > (glatt[i + 1] if i < n - 1 else -1)]
-    # zu nahe Spitzen zusammenfassen - die staerkere bleibt
-    min_abstand = VP_ABSTAND_ATR * a
-    gewaehlt = []
-    for i in sorted(kandidaten, key=lambda k: -glatt[k]):
-        mitte = grenzen[i] + breite / 2
-        if all(abs(mitte - (grenzen[j] + breite / 2)) >= min_abstand for j in gewaehlt):
-            gewaehlt.append(i)
-    gewaehlt.sort()
-    return {"vp_poc": round(float(grenzen[poc] + breite / 2), 2),
-            "vp_spitzen": ";".join(f"{grenzen[i] + breite / 2:.2f}:{round(100 * glatt[i] / spitze)}"
-                                   for i in gewaehlt)}
-
-
 def korrektur_ist(df, tiefe_liste, a):
     """Die LAUFENDE Korrektur, mit demselben Anker wie phasen.py.
 
@@ -676,8 +612,6 @@ def main():
         r["korr_hoch"] = z(k_hoch)
         r["korr_ist_atr"] = z(k_atr, 2) if k_atr is not None else ""
         r["korr_ist_tage"] = k_tage if k_tage is not None else ""
-        r.update(volumenprofil(df, a) if mitvol else
-                 {"vp_poc": "", "vp_spitzen": ""})
         for n in (1, 2, 3):
             t = tr[n - 1] if len(tr) >= n else None
             r[f"tief{n}"] = z(t["tief"]) if t else ""

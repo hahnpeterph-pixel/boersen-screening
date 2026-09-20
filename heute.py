@@ -502,7 +502,14 @@ def stuetzen_leiste(stufen, ko, kurs, atr) -> str:
     if not stufen or atr in (None, 0):
         return ""
     fmt = lambda x: (f"{x:.0f}" if x >= 100 else f"{x:.1f}").replace(".", ",")
-    unten = sorted([s for s in stufen if s[0] < kurs], key=lambda s: -s[0])[:4]
+    # Bis zu 4 Stufen zwischen Kurs und KO plus IMMER die erste unter dem
+    # KO. Vorher wurde erst auf 4 gekuerzt und dann eingeordnet - dann
+    # stand "keine darunter", obwohl die fuenfte Stufe knapp unter dem KO
+    # lag (Fund 20.09.2026, Microsoft: Linie 0,4 ATR unter dem KO).
+    alle = sorted([s for s in stufen if s[0] < kurs], key=lambda s: -s[0])
+    ueber = [s for s in alle if s[0] >= ko][:4]
+    unter = [s for s in alle if s[0] < ko][:1]
+    unten = ueber + unter
     teile, ko_drin = [], False
     for preis, zusatz in unten:
         if not ko_drin and ko > preis:

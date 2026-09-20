@@ -490,41 +490,29 @@ def _haelt_bei(werte: np.ndarray, puffer_atr: float):
     return float((werte <= puffer_atr).mean() * 100), int(len(werte))
 
 
-def vp_zonen_lesen(txt) -> list[tuple[float, float, int]]:
-    if not isinstance(txt, str) or not txt:
-        return []
-    aus = []
-    for teil in txt.split(";"):
-        bereich, staerke = teil.rsplit(":", 1)
-        von, bis = bereich.split("-", 1)
-        aus.append((float(von), float(bis), int(staerke)))
-    return aus
-
-
-def vp_ko_lage(txt, ko, kurs, atr) -> str:
-    """Wo liegt der Anker-KO zum Volumenprofil? (19.09.2026)
-    Kernfrage aus Peters Chartlesen (Costco 845, Sherwin-Williams 290):
-    Ein KO knapp UEBER oder IN einer Zone mit viel Handel wird bei einem
-    normalen Test dieser Zone gerissen, obwohl sie haelt."""
-    zonen = vp_zonen_lesen(txt)
-    if not zonen or atr in (None, 0):
+def vp_leiste(txt, ko, kurs, atr) -> str:
+    """Volumenspitzen unter dem Kurs, naechste zuerst, mit dem Anker-KO an
+    seiner Stelle einsortiert (20.09.2026). Peter: "Einfach nur eine
+    Kennzahl" - eine Zeile, z. B. "205 · KO 187 · 183 (0,8 ATR)".
+    Lesart: jede Spitze ist eine Unterstuetzung; bricht die erste, ist die
+    naechste darunter das Ziel. Steht der KO VOR einer Spitze, reisst er,
+    bevor der Kurs diese Unterstuetzung erreicht. Die ATR-Zahl ist der
+    Abstand vom KO bis zur naechsten Spitze darunter."""
+    if not isinstance(txt, str) or not txt or atr in (None, 0):
         return ""
-    for von, bis, s in zonen:
-        if von <= ko <= bis:
-            return f"KO in Zone {von:.2f}-{bis:.2f} ({s} %)"
-    darunter = [z for z in zonen if z[1] < ko]
-    zwischen = [z for z in zonen if z[0] > ko and z[1] < kurs]
-    teile = []
-    if darunter:
-        von, bis, s = max(darunter, key=lambda z: z[1])
-        abst = (ko - bis) / atr
-        teile.append(f"{abst:.1f} ATR ueber Zone {von:.2f}-{bis:.2f} ({s} %)"
-                     + (" - knapp" if abst < 0.5 else ""))
-    else:
-        teile.append("keine Zone unter dem KO")
-    if zwischen:
-        von, bis, s = max(zwischen, key=lambda z: z[1])
-        teile.append(f"Zone {von:.2f}-{bis:.2f} ({s} %) zwischen Kurs und KO")
+    fmt = lambda x: f"{x:.0f}" if x >= 100 else f"{x:.1f}".replace(".", ",")
+    spitzen = sorted((float(t.split(":")[0]) for t in txt.split(";") if t), reverse=True)
+    unten = [s for s in spitzen if s < kurs][:4]
+    teile, ko_drin = [], False
+    for s in unten:
+        if not ko_drin and ko > s:
+            teile.append(f"KO {fmt(ko)}")
+            ko_drin = True
+            teile.append(f"{fmt(s)} ({(ko - s) / atr:.1f} ATR)".replace(".", ","))
+        else:
+            teile.append(fmt(s))
+    if not ko_drin:
+        teile.append(f"KO {fmt(ko)} (keine Spitze darunter)")
     return " · ".join(teile)
 
 
@@ -758,7 +746,7 @@ def main() -> None:
             "korrektur_ueblich_atr": ueblich,
             # Volumenprofil aus marktdaten.csv (19.09.2026), 1 Jahr Tageskerzen.
             "vp_poc": z.get("vp_poc", ""),
-            "vp_zonen": z.get("vp_zonen", ""),
+            "vp_spitzen": z.get("vp_spitzen", ""),
             # Ab Hoch, nur Serien mit mindestens so vielen Tiefs wie heute
             # (phasen.korr_je_tief, 19.09.2026). Rest = Marke minus Ist.
             "korr_tief_faelle": korr_tief[0],
@@ -819,7 +807,7 @@ def main() -> None:
             continue
 
         ko_anker = tief - anker * atr
-        zeile["vp_ko_lage"] = vp_ko_lage(z.get("vp_zonen", ""), ko_anker, kurs, atr)
+        zeile["vp_leiste"] = vp_leiste(z.get("vp_spitzen", ""), ko_anker, kurs, atr)
         hoehe_anker = kurs - ko_anker
         r_eigen = ((eigen - kurs) / hoehe_anker * 100
                    if eigen is not None and hoehe_anker else None)

@@ -78,6 +78,14 @@ jobs:
           TWELVEDATA_API_KEY: ${{ secrets.TWELVEDATA_API_KEY }}
         run: python marktdaten.py
 
+      # Unterstuetzungen (20.09.2026): Volumenspitzen aus Stundenkerzen und
+      # Chart-Tiefs aus Wochenkerzen fuer die Kaufvorlage. Braucht
+      # marktdaten.csv (ATR), wird von heute.py gelesen. continue-on-error:
+      # ein Aussetzer bei den Stundenkerzen darf den Bericht nicht kippen.
+      - name: Unterstuetzungen ausfuehren
+        run: python unterstuetzungen.py
+        continue-on-error: true
+
       # Nach marktdaten.py, weil die Stundenwache dieselben Tageskerzen aus
       # dem Cache mitbenutzt - laeuft sie zuerst, holt sie alles doppelt.
       # continue-on-error, weil die Stundenreihe bei Yahoo unzuverlaessiger

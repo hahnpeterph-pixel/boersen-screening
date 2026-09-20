@@ -3,37 +3,37 @@
  "ranks": {
   "turnaround": [
    "T",
-   "DTE.DE",
    "MSTR",
    "ABT",
+   "QIA.DE",
    "XOM",
    "ZS",
    "DHR",
-   "PFE",
+   "DB1.DE",
    "PANW",
    "MMM",
+   "CNQ",
    "ABNB",
    "BLK",
    "COF",
-   "KO",
-   "SCHW"
+   "KO"
   ],
   "momentum": [
    "CRWD",
    "PANW",
+   "DELL",
+   "VLO",
    "AMD",
    "MRNA",
-   "SY1.DE",
+   "ANET",
    "TMO",
-   "BNR.DE",
    "DHL.DE",
-   "ALV.DE",
    "ABBV",
    "TRV",
    "CBK.DE",
    "KO",
-   "BAS.DE",
-   "XOM"
+   "DB1.DE",
+   "SY1.DE"
   ],
   "value": [
    "NVDA",
@@ -50,36 +50,36 @@
    "UNP",
    "ODFL",
    "LLY",
-   "DB1.DE"
+   "MTX.DE"
   ]
  },
  "changes": {
   "turnaround": {
    "entries": [
     {
-     "ticker": "DTE.DE",
-     "rank": 2
+     "ticker": "QIA.DE",
+     "rank": 4
     },
     {
-     "ticker": "PFE",
+     "ticker": "DB1.DE",
      "rank": 8
     },
     {
-     "ticker": "SCHW",
-     "rank": 15
+     "ticker": "CNQ",
+     "rank": 11
     }
    ],
    "exits": [
     {
-     "ticker": "QIA.DE",
-     "old_rank": 4
+     "ticker": "DTE.DE",
+     "old_rank": 2
     },
     {
-     "ticker": "DB1.DE",
+     "ticker": "PFE",
      "old_rank": 8
     },
     {
-     "ticker": "META",
+     "ticker": "SCHW",
      "old_rank": 15
     }
    ],
@@ -88,50 +88,58 @@
   "momentum": {
    "entries": [
     {
-     "ticker": "BNR.DE",
+     "ticker": "DELL",
+     "rank": 3
+    },
+    {
+     "ticker": "VLO",
+     "rank": 4
+    },
+    {
+     "ticker": "ANET",
      "rank": 7
     },
     {
-     "ticker": "ALV.DE",
-     "rank": 9
-    },
-    {
-     "ticker": "BAS.DE",
+     "ticker": "DB1.DE",
      "rank": 14
     }
    ],
    "exits": [
     {
-     "ticker": "DB1.DE",
-     "old_rank": 11
+     "ticker": "BNR.DE",
+     "old_rank": 7
     },
     {
-     "ticker": "RWE.DE",
-     "old_rank": 13
+     "ticker": "ALV.DE",
+     "old_rank": 9
     },
     {
-     "ticker": "P911.DE",
+     "ticker": "BAS.DE",
+     "old_rank": 14
+    },
+    {
+     "ticker": "XOM",
      "old_rank": 15
     }
    ],
    "moves": [
     {
      "ticker": "SY1.DE",
-     "rank": 5,
-     "delta": 7
+     "rank": 15,
+     "delta": -10
     }
    ]
   },
   "value": {
    "entries": [
     {
-     "ticker": "DB1.DE",
+     "ticker": "MTX.DE",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "MTX.DE",
+     "ticker": "DB1.DE",
      "old_rank": 15
     }
    ],

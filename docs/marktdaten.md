@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-09-20 08:12 UTC. 218 Werte, Fenster 90 Kalendertage. EUR/USD 1.149._
+_Erstellt 2026-09-20 08:38 UTC. 280 Werte, Fenster 90 Kalendertage. EUR/USD 1.149._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -56,6 +56,14 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | NOW (NOW) | 135.47 | - | - | ja | 52.91 |
 | SO (SO) | 85.52 | - | - | ja | 29.51 |
 | UPS (UPS) | 99.06 | - | - | ja | 39.14 |
+| SPOT (SPOT) | 509.45 | - | - | ja | 43.39 |
+| PGR (PGR) | 213.48 | - | - | ja | 44.33 |
+| SYK (SYK) | 275.12 | - | - | ja | 31.26 |
+| WELL (WELL) | 228.87 | - | - | ja | 37.23 |
+| TM (TM) | 191.53 | - | - | ja | 47.98 |
+| SAN (SAN) | 14.31 | - | - | ja | 45.47 |
+| SNY (SNY) | 42.48 | - | - | ja | 39.51 |
+| BP (BP) | 44.58 | - | - | ja | 51.53 |
 | ADS.DE (ADS.DE) | 142.25 | - | - | ja | 34.38 |
 | AIR.DE (AIR.DE) | 193.34 | - | - | ja | 37.87 |
 | ALV.DE (ALV.DE) | 443.3 | - | - | ja | 49.86 |

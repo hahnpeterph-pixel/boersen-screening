@@ -50,23 +50,17 @@ MD_AUS = DOCS / "stundenwache.md"
 
 ATR_TAGE = 14
 
-# Universum wie in marktdaten.py. Bewusst dieselbe Liste und bewusst
-# dupliziert statt importiert: marktdaten.py baut UNIVERSUM auf Modulebene
-# mit Rohstoffen und Waehrung zusammen, die hier nichts zu suchen haben -
-# Gold und EUR/USD haben keine Swing-Tief-Logik im Sinne der Kaufregel.
-US = """AAPL ABNB ADBE ADI ADP ADSK AEP AMAT AMD AMGN AMZN ARM ASML AVGO
-AXP AZN BA BIIB BKNG BKR CAT CDNS CDW CEG CHTR CMCSA COST CPRT CRM CRWD CSCO
-CSGP CSX CTAS CTSH DASH DDOG DIS DXCM EXC FANG FAST FTNT GEHC GILD
-GOOGL GS HD HON IBM IDXX ILMN INTC INTU ISRG JNJ JPM KDP KHC KLAC KO LIN LRCX
-LULU MAR MCD MCHP MDB MDLZ MELI META MMM MNST MRK MRNA MRVL MSFT MU NFLX NKE
-NVDA NXPI ODFL ON ORCL ORLY PANW PAYX PCAR PDD PEP PG PLTR PYPL QCOM REGN ROP
-ROST SBUX SHW SNPS SPGI TEAM TMUS TRV TSLA TTD TTWO TXN UNH V VRSK VRTX VZ
-WBD WDAY WMT XEL ZS""".split()
-
-DAX = """ADS.DE AIR.DE ALV.DE BAS.DE BAYN.DE BEI.DE BMW.DE BNR.DE CBK.DE CON.DE
-DTG.DE DBK.DE DB1.DE DHL.DE DTE.DE EOAN.DE FRE.DE HNR1.DE HEI.DE HEN3.DE
-IFX.DE MBG.DE MRK.DE MTX.DE MUV2.DE P911.DE PAH3.DE QIA.DE RHM.DE RWE.DE SAP.DE
-SRT3.DE SIE.DE ENR.DE SHL.DE SY1.DE VOW3.DE VNA.DE ZAL.DE""".split()
+# Universum: die Aktienlisten US und DAX aus kursverlauf.py, NICHT mehr als
+# eigene Kopie. Umgestellt am 20.09.2026: die hier bis dahin gefuehrte
+# Kopie stand auf dem Stand vor der S&P-100-Ergaenzung und vor den 62
+# Watchlist-Werten - 158 statt 267 Aktien, darunter fehlten die
+# Bestaende GE Aerospace, Uber und CVS Health. Mit dem Import kann die
+# Liste nicht mehr auseinanderlaufen. kursverlauf.py fuehrt US und DAX
+# getrennt von den Rohstoffen (WEITERE), der Import hat keine
+# Nebenwirkungen (dort laeuft nichts auf Modulebene ausser den Listen).
+# Rohstoffe und Waehrung bleiben bewusst draussen: Gold und EUR/USD haben
+# keine Swing-Tief-Logik im Sinne der Kaufregel.
+from kursverlauf import US, DAX  # noqa: E402
 
 UNIVERSUM = list(dict.fromkeys(US + DAX))
 

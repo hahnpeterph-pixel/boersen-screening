@@ -3,37 +3,37 @@
  "ranks": {
   "turnaround": [
    "T",
+   "DTE.DE",
    "MSTR",
    "ABT",
-   "QIA.DE",
    "XOM",
    "ZS",
    "DHR",
-   "DB1.DE",
+   "PFE",
    "PANW",
    "MMM",
    "ABNB",
    "BLK",
    "COF",
    "KO",
-   "META"
+   "SCHW"
   ],
   "momentum": [
    "CRWD",
    "PANW",
    "AMD",
    "MRNA",
+   "SY1.DE",
    "TMO",
+   "BNR.DE",
    "DHL.DE",
+   "ALV.DE",
    "ABBV",
    "TRV",
    "CBK.DE",
    "KO",
-   "DB1.DE",
-   "SY1.DE",
-   "RWE.DE",
-   "XOM",
-   "P911.DE"
+   "BAS.DE",
+   "XOM"
   ],
   "value": [
    "NVDA",
@@ -50,23 +50,91 @@
    "UNP",
    "ODFL",
    "LLY",
-   "MTX.DE"
+   "DB1.DE"
   ]
  },
  "changes": {
   "turnaround": {
-   "entries": [],
-   "exits": [],
+   "entries": [
+    {
+     "ticker": "DTE.DE",
+     "rank": 2
+    },
+    {
+     "ticker": "PFE",
+     "rank": 8
+    },
+    {
+     "ticker": "SCHW",
+     "rank": 15
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "QIA.DE",
+     "old_rank": 4
+    },
+    {
+     "ticker": "DB1.DE",
+     "old_rank": 8
+    },
+    {
+     "ticker": "META",
+     "old_rank": 15
+    }
+   ],
    "moves": []
   },
   "momentum": {
-   "entries": [],
-   "exits": [],
-   "moves": []
+   "entries": [
+    {
+     "ticker": "BNR.DE",
+     "rank": 7
+    },
+    {
+     "ticker": "ALV.DE",
+     "rank": 9
+    },
+    {
+     "ticker": "BAS.DE",
+     "rank": 14
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "DB1.DE",
+     "old_rank": 11
+    },
+    {
+     "ticker": "RWE.DE",
+     "old_rank": 13
+    },
+    {
+     "ticker": "P911.DE",
+     "old_rank": 15
+    }
+   ],
+   "moves": [
+    {
+     "ticker": "SY1.DE",
+     "rank": 5,
+     "delta": 7
+    }
+   ]
   },
   "value": {
-   "entries": [],
-   "exits": [],
+   "entries": [
+    {
+     "ticker": "DB1.DE",
+     "rank": 15
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "MTX.DE",
+     "old_rank": 15
+    }
+   ],
    "moves": []
   },
   "analyst_flips": []

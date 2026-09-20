@@ -1,6 +1,6 @@
 # Stundenwache
 
-Stand: 2026-09-18 · 158 Werte mit Stundendaten · erstellt 2026-09-20 07:39 UTC
+Stand: 2026-09-18 · 158 Werte mit Stundendaten · erstellt 2026-09-20 08:14 UTC
 
 Marken sind das juengste Swing-Tief und das juengste Swing-Hoch aus `tiefs_regel.py`, also dieselben wie im Tagesbericht. Geprueft wird nur, was der letzte Handelstag auf Stundenbasis damit gemacht hat.
 
@@ -19,20 +19,26 @@ Keine.
 
 Keine.
 
-## Tief angetestet (13)
+## Tief angetestet (19)
 
 Docht bis unter die Marke, kein Stundenschluss darunter.
 
 | Wert | Marke | Schluss | Abstand (ATR) | Stunden dahinter |
 |---|---|---|---|---|
+| MRK.DE | 129.4 | 129.65 | 0.091 | 0 |
 | DIS | 102.37 | 102.645 | 0.12 | 0 |
+| CBK.DE | 40.51 | 40.65 | 0.139 | 0 |
 | CRM | 236.55 | 237.945 | 0.152 | 0 |
+| HEN3.DE | 72.82 | 73.02 | 0.164 | 0 |
 | MCD | 247.65 | 248.37 | 0.194 | 0 |
+| SAP.DE | 182.56 | 183.72 | 0.205 | 0 |
+| MBG.DE | 43.6 | 43.92 | 0.249 | 0 |
 | MDLZ | 60.49 | 60.84 | 0.286 | 0 |
 | HNR1.DE | 251.4 | 252.8 | 0.341 | 0 |
 | MUV2.DE | 502.8 | 506.3 | 0.383 | 0 |
 | ROP | 368.69 | 372.66 | 0.403 | 0 |
 | FAST | 48.57 | 48.97 | 0.405 | 0 |
+| PAH3.DE | 27.98 | 28.36 | 0.405 | 0 |
 | KHC | 24.15 | 24.4377 | 0.437 | 0 |
 | HON | 204.26 | 206.39 | 0.476 | 0 |
 | VOW3.DE | 74.96 | 76.52 | 0.487 | 0 |

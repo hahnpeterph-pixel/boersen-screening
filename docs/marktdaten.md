@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-09-19 11:45 UTC. 218 Werte, Fenster 90 Kalendertage. EUR/USD 1.1489._
+_Erstellt 2026-09-20 06:58 UTC. 218 Werte, Fenster 90 Kalendertage. EUR/USD 1.149._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -83,9 +83,10 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | VOW3.DE (VOW3.DE) | 76.52 | - | - | ja | 46.16 |
 | VNA.DE (VNA.DE) | 17.7 | - | - | ja | 27.05 |
 | ZAL.DE (ZAL.DE) | 21.52 | - | - | ja | 34.84 |
+| Brent Oel (BZ=F) | 99.29 | - | - | ja | 53.48 |
+| WTI Oel (CL=F) | 96.08 | - | - | ja | 55.83 |
 | Weizen (ZW=F) | 714.25 | - | - | ja | 51.84 |
-| Kakao (CC=F) | 5327.0 | - | - | ja | 35.98 |
-| Zucker (SB=F) | 17.36 | - | - | ja | 48.06 |
+| Kakao (CC=F) | 5330.0 | - | - | ja | 36.03 |
 
 ---
 

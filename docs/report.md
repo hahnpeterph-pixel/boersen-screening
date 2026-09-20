@@ -1,6 +1,6 @@
-# Boersen-Screening - 2026-09-19
+# Boersen-Screening - 2026-09-20
 
-_Stand: Schlusskurse vom 2026-09-18. Erstellt 2026-09-19T11:45:05+00:00 UTC. 211 Werte ausgewertet._
+_Stand: Schlusskurse vom 2026-09-18. Erstellt 2026-09-20T06:58:07+00:00 UTC. 211 Werte ausgewertet._
 
 ## 📖 Glossar (was die Spalten bedeuten)
 
@@ -17,7 +17,7 @@ _Ueber alle 211 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 
 | Rang | Ticker | ISIN | Name | Index | Kurs | Abstand ATH (Info) | Kaufen-Anteil Analysten | Kursziel | RSI Tag | RSI Woche | RSI Stunde | Letztes Rating |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | ASML | USN070592100 | ASML Holding N.V. - New York Re | NASDAQ | 1446.00 | -16% | 100% (5 Banken, ≤120T) | 2194.40 (52% ueber Kurs) | 47 | 53 | 59 | keine in 30T |
+| 1 | ASML | USN070592100 | ASML Holding N.V. - New York Re | NASDAQ | 1446.00 | -16% | 100% (5 Banken, ≤120T) | 2194.65 (52% ueber Kurs) | 47 | 53 | 59 | keine in 30T |
 | 2 | NVDA | - | NVIDIA Corporation | NASDAQ/DOW | 222.27 | -6% | 100% (23 Banken, ≤120T) | 315.00 (42% ueber Kurs) | 54 | 57 | 69 | 2026-09-10 Piper Sandler: neu bewertet mit Overweight |
 | 3 | TTWO | - | Take-Two Interactive Software, | NASDAQ | 205.45 | -22% | 100% (10 Banken, ≤120T) | 290.00 (41% ueber Kurs) | 32 | 40 | 32 | keine in 30T |
 | 4 | BA | - | Boeing Company (The) | DOW | 198.20 | -54% | 100% (6 Banken, ≤120T) | 278.50 (40% ueber Kurs) | 34 | 41 | 38 | 2026-09-18 B of A Securities: Rating bestaetigt: Buy |
@@ -50,8 +50,6 @@ _Ueber alle 211 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 - 2026-09-08: TD Cowen – Bestaetigung (Buy → Buy)
 - 2026-08-24: Baird – Bestaetigung (Outperform → Outperform)
 - 2026-08-21: BMO Capital – Erstbewertung (Outperform → Outperform)
-- 2026-08-20: JP Morgan – Bestaetigung (Overweight → Overweight)
-- 2026-08-20: Morgan Stanley – Bestaetigung (Overweight → Overweight)
 
 **ASML** (ASML Holding N.V. - New York Re, NASDAQ)
 - keine Ratingaenderung in den letzten 30 Tagen

@@ -490,6 +490,44 @@ def _haelt_bei(werte: np.ndarray, puffer_atr: float):
     return float((werte <= puffer_atr).mean() * 100), int(len(werte))
 
 
+def vp_zonen_lesen(txt) -> list[tuple[float, float, int]]:
+    if not isinstance(txt, str) or not txt:
+        return []
+    aus = []
+    for teil in txt.split(";"):
+        bereich, staerke = teil.rsplit(":", 1)
+        von, bis = bereich.split("-", 1)
+        aus.append((float(von), float(bis), int(staerke)))
+    return aus
+
+
+def vp_ko_lage(txt, ko, kurs, atr) -> str:
+    """Wo liegt der Anker-KO zum Volumenprofil? (19.09.2026)
+    Kernfrage aus Peters Chartlesen (Costco 845, Sherwin-Williams 290):
+    Ein KO knapp UEBER oder IN einer Zone mit viel Handel wird bei einem
+    normalen Test dieser Zone gerissen, obwohl sie haelt."""
+    zonen = vp_zonen_lesen(txt)
+    if not zonen or atr in (None, 0):
+        return ""
+    for von, bis, s in zonen:
+        if von <= ko <= bis:
+            return f"KO in Zone {von:.2f}-{bis:.2f} ({s} %)"
+    darunter = [z for z in zonen if z[1] < ko]
+    zwischen = [z for z in zonen if z[0] > ko and z[1] < kurs]
+    teile = []
+    if darunter:
+        von, bis, s = max(darunter, key=lambda z: z[1])
+        abst = (ko - bis) / atr
+        teile.append(f"{abst:.1f} ATR ueber Zone {von:.2f}-{bis:.2f} ({s} %)"
+                     + (" - knapp" if abst < 0.5 else ""))
+    else:
+        teile.append("keine Zone unter dem KO")
+    if zwischen:
+        von, bis, s = max(zwischen, key=lambda z: z[1])
+        teile.append(f"Zone {von:.2f}-{bis:.2f} ({s} %) zwischen Kurs und KO")
+    return " · ".join(teile)
+
+
 def korr_an_position(puffer: pd.DataFrame, phasen: pd.DataFrame, t: str,
                      position) -> tuple:
     """Korrektur AB HOCH bis zum Serienende fuer alle abgeschlossenen
@@ -718,6 +756,9 @@ def main() -> None:
             "korrektur_atr": z.korr_ist_atr,
             "korrektur_tage": z.korr_ist_tage,
             "korrektur_ueblich_atr": ueblich,
+            # Volumenprofil aus marktdaten.csv (19.09.2026), 1 Jahr Tageskerzen.
+            "vp_poc": z.get("vp_poc", ""),
+            "vp_zonen": z.get("vp_zonen", ""),
             # Ab Hoch, nur Serien mit mindestens so vielen Tiefs wie heute
             # (phasen.korr_je_tief, 19.09.2026). Rest = Marke minus Ist.
             "korr_tief_faelle": korr_tief[0],
@@ -778,6 +819,7 @@ def main() -> None:
             continue
 
         ko_anker = tief - anker * atr
+        zeile["vp_ko_lage"] = vp_ko_lage(z.get("vp_zonen", ""), ko_anker, kurs, atr)
         hoehe_anker = kurs - ko_anker
         r_eigen = ((eigen - kurs) / hoehe_anker * 100
                    if eigen is not None and hoehe_anker else None)

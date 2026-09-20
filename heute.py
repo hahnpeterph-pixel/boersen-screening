@@ -490,29 +490,29 @@ def _haelt_bei(werte: np.ndarray, puffer_atr: float):
     return float((werte <= puffer_atr).mean() * 100), int(len(werte))
 
 
-def vp_leiste(txt, ko, kurs, atr) -> str:
-    """Volumenspitzen unter dem Kurs, naechste zuerst, mit dem Anker-KO an
-    seiner Stelle einsortiert (20.09.2026). Peter: "Einfach nur eine
-    Kennzahl" - eine Zeile, z. B. "205 · KO 187 · 183 (0,8 ATR)".
-    Lesart: jede Spitze ist eine Unterstuetzung; bricht die erste, ist die
-    naechste darunter das Ziel. Steht der KO VOR einer Spitze, reisst er,
+def stuetzen_leiste(stufen, ko, kurs, atr) -> str:
+    """Unterstuetzungen unter dem Kurs, naechste zuerst, mit dem Anker-KO an
+    seiner Stelle einsortiert (20.09.2026). Peter: "einfach nur eine
+    Kennzahl" - eine Zeile, z. B. "308 · KO 292 · 287 (0,6 ATR)".
+    Lesart: jede Stufe ist eine Unterstuetzung; bricht die erste, ist die
+    naechste darunter das Ziel. Steht der KO VOR einer Stufe, reisst er,
     bevor der Kurs diese Unterstuetzung erreicht. Die ATR-Zahl ist der
-    Abstand vom KO bis zur naechsten Spitze darunter."""
-    if not isinstance(txt, str) or not txt or atr in (None, 0):
+    Abstand vom KO bis zur naechsten Stufe darunter.
+    stufen: [(preis, zusatztext)]"""
+    if not stufen or atr in (None, 0):
         return ""
-    fmt = lambda x: f"{x:.0f}" if x >= 100 else f"{x:.1f}".replace(".", ",")
-    spitzen = sorted((float(t.split(":")[0]) for t in txt.split(";") if t), reverse=True)
-    unten = [s for s in spitzen if s < kurs][:4]
+    fmt = lambda x: (f"{x:.0f}" if x >= 100 else f"{x:.1f}").replace(".", ",")
+    unten = sorted([s for s in stufen if s[0] < kurs], key=lambda s: -s[0])[:4]
     teile, ko_drin = [], False
-    for s in unten:
-        if not ko_drin and ko > s:
+    for preis, zusatz in unten:
+        if not ko_drin and ko > preis:
             teile.append(f"KO {fmt(ko)}")
             ko_drin = True
-            teile.append(f"{fmt(s)} ({(ko - s) / atr:.1f} ATR)".replace(".", ","))
+            teile.append(f"{fmt(preis)}{zusatz} ({(ko - preis) / atr:.1f} ATR)".replace(".", ","))
         else:
-            teile.append(fmt(s))
+            teile.append(f"{fmt(preis)}{zusatz}")
     if not ko_drin:
-        teile.append(f"KO {fmt(ko)} (keine Spitze darunter)")
+        teile.append(f"KO {fmt(ko)} (keine darunter)")
     return " · ".join(teile)
 
 
@@ -560,6 +560,10 @@ def main() -> None:
     markt = pd.read_csv(os.path.join(DOCS, "marktdaten.csv")).set_index("ticker")
     analysten = pd.read_csv(os.path.join(DOCS, "analysten.csv")).set_index("ticker")
     phasen = pd.read_csv(os.path.join(DOCS, "phasen.csv")).set_index("ticker")
+    # Unterstuetzungen (20.09.2026). Fehlt die Datei, bleiben die Zeilen leer.
+    pfad_st = os.path.join(DOCS, "unterstuetzungen.csv")
+    stuetzen = (pd.read_csv(pfad_st, dtype=str).fillna("").set_index("ticker").to_dict("index")
+                if os.path.exists(pfad_st) else {})
     rsi_schwellen = pd.read_csv(os.path.join(DOCS, "rsi_schwellen.csv"))
     luecken = pd.read_csv(os.path.join(DOCS, "luecken.csv"))
     # DATENLUECKEN (19.09.2026, harte Sperre nach Peters Entscheidung):
@@ -744,9 +748,10 @@ def main() -> None:
             "korrektur_atr": z.korr_ist_atr,
             "korrektur_tage": z.korr_ist_tage,
             "korrektur_ueblich_atr": ueblich,
-            # Volumenprofil aus marktdaten.csv (19.09.2026), 1 Jahr Tageskerzen.
-            "vp_poc": z.get("vp_poc", ""),
-            "vp_spitzen": z.get("vp_spitzen", ""),
+            # Unterstuetzungen aus unterstuetzungen.py (20.09.2026):
+            # Volumenspitzen aus Stundenkerzen, Chart-Tiefs aus Wochenkerzen.
+            "vp_spitzen": stuetzen.get(t, {}).get("vp_spitzen", ""),
+            "chart_tiefs": stuetzen.get(t, {}).get("chart_tiefs", ""),
             # Ab Hoch, nur Serien mit mindestens so vielen Tiefs wie heute
             # (phasen.korr_je_tief, 19.09.2026). Rest = Marke minus Ist.
             "korr_tief_faelle": korr_tief[0],
@@ -807,7 +812,13 @@ def main() -> None:
             continue
 
         ko_anker = tief - anker * atr
-        zeile["vp_leiste"] = vp_leiste(z.get("vp_spitzen", ""), ko_anker, kurs, atr)
+        zeile["vp_leiste"] = stuetzen_leiste(
+            [(float(s.split(":")[0]), "") for s in str(stuetzen.get(t, {}).get("vp_spitzen", "")).split(";") if s and s != "nan"],
+            ko_anker, kurs, atr)
+        zeile["ct_leiste"] = stuetzen_leiste(
+            [(float(s.split(":")[0]), (f" ({s.split(':')[1]}x)" if int(s.split(":")[1]) > 1 else ""))
+             for s in str(stuetzen.get(t, {}).get("chart_tiefs", "")).split(";") if s and s != "nan"],
+            ko_anker, kurs, atr)
         hoehe_anker = kurs - ko_anker
         r_eigen = ((eigen - kurs) / hoehe_anker * 100
                    if eigen is not None and hoehe_anker else None)

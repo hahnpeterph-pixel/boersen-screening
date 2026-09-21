@@ -1,6 +1,6 @@
 # Tiefs, Volumen und Kaufregel-Check
 
-_Erstellt 2026-09-20 08:37 UTC. Fenster: letzte 90 Kalendertage. Tiefs nach der Umkehr-Regel (tiefs_regel.py): ein Tief zaehlt, sobald eine spaetere Kerze das Hoch der Tiefkerze ueberschreitet. Solange es abwaerts geht, gilt das tiefste Tief der Strecke. Gerechnet wird auf abgeschlossenen Tageskerzen._
+_Erstellt 2026-09-21 22:33 UTC. Fenster: letzte 90 Kalendertage. Tiefs nach der Umkehr-Regel (tiefs_regel.py): ein Tief zaehlt, sobald eine spaetere Kerze das Hoch der Tiefkerze ueberschreitet. Solange es abwaerts geht, gilt das tiefste Tief der Strecke. Gerechnet wird auf abgeschlossenen Tageskerzen._
 
 ## Kaufregel
 
@@ -20,10 +20,10 @@ _Als juengstes Tief zaehlt auch das Tief des zuletzt abgeschlossenen Tages, sofe
 
 | Wert | KO | juengstes Tief | tiefstes Tief | Abstand | Regel 1 | Urteil | |
 |---|---|---|---|---|---|---|---|
-| Take-Two (TTWO) | 228,82 | 231,58 (20.08., Chart) | 205,19 (18.09.) | 0,4 x ATR | erfuellt | zu knapp | !! |
-| Meta Platforms (META) | 518,85 | 524,52 (30.07., Chart) | 524,49 (30.07.) | 0,3 x ATR | erfuellt | zu knapp | !! |
-| Micron (MU) | 859,80 | 915,18 (19.08., Chart) | 737,88 (29.07.) | 1,3 x ATR | erfuellt | knapp | ! |
-| Microsoft (MSFT) | 348,28 | 477,15 (18.08., Chart) | 349,20 (25.06.) | 13,1 x ATR | erfuellt | OK | + |
+| Take-Two (TTWO) | 228,82 | 231,58 (20.08., Chart) | 204,00 (21.09.) | 0,4 x ATR | erfuellt | zu knapp | !! |
+| Meta Platforms (META) | 518,85 | 524,52 (30.07., Chart) | 524,49 (30.07.) | 0,2 x ATR | erfuellt | zu knapp | !! |
+| Micron (MU) | 859,80 | 915,18 (19.08., Chart) | 737,88 (29.07.) | 1,2 x ATR | erfuellt | knapp | ! |
+| Microsoft (MSFT) | 348,28 | 477,15 (18.08., Chart) | 349,20 (25.06.) | 12,8 x ATR | erfuellt | OK | + |
 | Microsoft II (MSFT) | 474,89 | 477,15 (18.08., Chart) | 349,20 (25.06.) | 0,2 x ATR | erfuellt | zu knapp | !! |
 | Oracle (ORCL) | 112,72 | 137,44 (19.08., Chart) | 114,50 (28.07.) | 3,0 x ATR | erfuellt | OK | + |
 | Gold (Spot) (XAUUSD=X) | 4.171,71 | KEINE KURSDATEN | | | - | k.A. | - |
@@ -36,32 +36,31 @@ Nur fuer Positionen mit `typ: Bestand`. RSI(14) nach Wilder-Glaettung; ab 70 gil
 
 | Wert | RSI | Umkehrkerze | Urteil | |
 |---|---|---|---|---|
-| Take-Two (TTWO) | 32,5 | ja | VERKAUFSSIGNAL (Umkehrkerze) | X |
-| Meta Platforms (META) | 65,8 | ja | VERKAUFSSIGNAL (Umkehrkerze) | X |
-| Micron (MU) | 58,3 | nein | unauffaellig | + |
-| Microsoft (MSFT) | 53,1 | nein | unauffaellig | + |
-| Microsoft II (MSFT) | 53,1 | nein | unauffaellig | + |
-| Oracle (ORCL) | 49,6 | nein | unauffaellig | + |
+| Take-Two (TTWO) | 38,1 | nein | unauffaellig | + |
+| Meta Platforms (META) | 77,8 | nein | ueberhitzt (RSI) | !! |
+| Micron (MU) | 61,2 | nein | beobachten | ! |
+| Microsoft (MSFT) | 57,1 | nein | unauffaellig | + |
+| Microsoft II (MSFT) | 57,1 | nein | unauffaellig | + |
+| Oracle (ORCL) | 50,5 | nein | unauffaellig | + |
 | Gold (Spot) (XAUUSD=X) | k.A. | k.A. | k.A. | - |
 
 _Legende: `+` unauffaellig, `!` beobachten (ab 60 RSI), `!!` ueberkauft (ab 70 RSI), `X` Umkehrkerze — reines Warnsignal, kein automatischer Verkauf._
 
 ## Kaufsignal — bitte pruefen
 
-- **NVIDIA**: hoeheres Hoch — CHART PRUEFEN. Kurs 222,27, Marke 209,00.
-- **Applied Materials**: hoeheres Hoch + Marke erreicht — CHART PRUEFEN. Kurs 444,57, Marke 465,00.
+- **NVIDIA**: hoeheres Hoch — CHART PRUEFEN. Kurs 227,38, Marke 209,00.
+- **Applied Materials**: hoeheres Hoch + Marke erreicht — CHART PRUEFEN. Kurs 464,24, Marke 465,00.
 
 ## Verkaufssignal — bitte pruefen
 
-- **Take-Two**: Umkehrkerze — VERKAUFSSIGNAL (Umkehrkerze).
-- **Meta Platforms**: Umkehrkerze — VERKAUFSSIGNAL (Umkehrkerze).
+- **Meta Platforms**: RSI 77,8 — ueberhitzt (RSI).
 
 ## Achtung
 
-- **Take-Two**: Die KO-Schwelle 228,82 liegt nur 0,36 x ATR unter dem Tief 231,58 vom 20.08.2026. Nach Regel 2 bedeutet das reduzierten Einsatz, kein Ausschluss.
-- **Take-Two**: Der Kurs 205,45 steht nur -3,08 x ATR ueber dem KO 228,82. Eine Tagesschwankung reicht rechnerisch fuer den Totalverlust.
-- **Meta Platforms**: Die KO-Schwelle 518,85 liegt nur 0,26 x ATR unter dem Tief 524,52 vom 30.07.2026. Nach Regel 2 bedeutet das reduzierten Einsatz, kein Ausschluss.
-- **Microsoft II**: Die KO-Schwelle 474,89 liegt nur 0,23 x ATR unter dem Tief 477,15 vom 18.08.2026. Nach Regel 2 bedeutet das reduzierten Einsatz, kein Ausschluss.
+- **Take-Two**: Die KO-Schwelle 228,82 liegt nur 0,41 x ATR unter dem Tief 231,58 vom 20.08.2026. Nach Regel 2 bedeutet das reduzierten Einsatz, kein Ausschluss.
+- **Take-Two**: Der Kurs 209,92 steht nur -2,81 x ATR ueber dem KO 228,82. Eine Tagesschwankung reicht rechnerisch fuer den Totalverlust.
+- **Meta Platforms**: Die KO-Schwelle 518,85 liegt nur 0,21 x ATR unter dem Tief 524,52 vom 30.07.2026. Nach Regel 2 bedeutet das reduzierten Einsatz, kein Ausschluss.
+- **Microsoft II**: Die KO-Schwelle 474,89 liegt nur 0,22 x ATR unter dem Tief 477,15 vom 18.08.2026. Nach Regel 2 bedeutet das reduzierten Einsatz, kein Ausschluss.
 
 ## Ohne Befund
 
@@ -73,8 +72,8 @@ Umkehr = Hammer-Kerze ODER hoeheres Hoch als der Vortag. Die Spalte Schwelle ist
 
 | Wert | Kurs | Marke | Abstand | Tief | ATR | RSI | Schwelle | KO-Vorschlag | Einsatz | Signal | |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| NVIDIA (NVDA) _Kandidat_ | 222,27 | 209,00 | 6,3 % | 208,93 | 5,94 | 54,2 | 51,6 (35 Faelle, 28,5 % der Serien) | 197,06 | **150,00 EUR** | hoeheres Hoch — CHART PRUEFEN | + |
-| Applied Materials (AMAT) _Kandidat_ | 444,57 | 465,00 | -4,4 % | 411,51 | 17,76 | 43,8 | 35,5 (4 Faelle, 2,9 % der Serien) | 375,99 | **150,00 EUR** | hoeheres Hoch + Marke erreicht — CHART PRUEFEN | + |
+| NVIDIA (NVDA) _Kandidat_ | 227,38 | 209,00 | 8,8 % | 208,93 | 6,07 | 58,2 | 51,6 (35 Faelle, 28,5 % der Serien) | 196,79 | **150,00 EUR** | hoeheres Hoch — CHART PRUEFEN | + |
+| Applied Materials (AMAT) _Kandidat_ | 464,24 | 465,00 | -0,2 % | 411,51 | 18,61 | 49,7 | 35,5 (4 Faelle, 2,9 % der Serien) | 374,28 | **150,00 EUR** | hoeheres Hoch + Marke erreicht — CHART PRUEFEN | + |
 
 _Legende: `+` Signal da, `!` Signal da aber RSI zu hoch, `-` warten._
 
@@ -82,12 +81,12 @@ _Legende: `+` Signal da, `!` Signal da aber RSI zu hoch, `-` warten._
 
 | Wert | Bezugstief | Puffer | Faktor | Einsatz | Hinweis |
 |---|---|---|---|---|---|
-| Take-Two (TTWO) | 231,58 (20.08., Chart) | 0,36 x ATR | 0,18 | **68,20 EUR** | kaufbar |
-| Meta Platforms (META) | 524,52 (30.07., Chart) | 0,26 x ATR | 0,13 | **63,01 EUR** | kaufbar |
-| Micron (MU) | 915,18 (19.08., Chart) | 1,29 x ATR | 0,64 | **114,44 EUR** | kaufbar |
-| Microsoft (MSFT) | 477,15 (18.08., Chart) | 13,06 x ATR | 1,00 | **150,00 EUR** | kaufbar |
-| Microsoft II (MSFT) | 477,15 (18.08., Chart) | 0,23 x ATR | 0,11 | **61,46 EUR** | kaufbar |
-| Oracle (ORCL) | 137,44 (19.08., Chart) | 3,00 x ATR | 1,00 | **150,00 EUR** | kaufbar |
+| Take-Two (TTWO) | 231,58 (20.08., Chart) | 0,41 x ATR | 0,21 | **70,55 EUR** | kaufbar |
+| Meta Platforms (META) | 524,52 (30.07., Chart) | 0,21 x ATR | 0,10 | **60,37 EUR** | kaufbar |
+| Micron (MU) | 915,18 (19.08., Chart) | 1,25 x ATR | 0,62 | **112,41 EUR** | kaufbar |
+| Microsoft (MSFT) | 477,15 (18.08., Chart) | 12,75 x ATR | 1,00 | **150,00 EUR** | kaufbar |
+| Microsoft II (MSFT) | 477,15 (18.08., Chart) | 0,22 x ATR | 0,11 | **61,18 EUR** | kaufbar |
+| Oracle (ORCL) | 137,44 (19.08., Chart) | 2,99 x ATR | 1,00 | **150,00 EUR** | kaufbar |
 
 _Einsatz inklusive Ordergebuehr. Das tiefste Tief des Fensters steht in der Tabelle oben weiterhin zur Einordnung, geht aber nicht in die Bewertung ein._
 
@@ -97,12 +96,12 @@ Tief minus 2,0 x ATR. Die Hebelangabe ist das, was sich bei diesem KO rechnerisc
 
 | Wert | Kurs | ATR | nach Trendtief | Hebel | konservativ | Hebel |
 |---|---|---|---|---|---|---|
-| Take-Two (TTWO) | 205,45 | 7,58 | 190,03 | 13,3x | 190,03 | 13,3x |
-| Meta Platforms (META) | 665,75 | 21,79 | 617,22 | 13,7x | 480,91 | 3,6x |
-| Micron (MU) | 1.015,80 | 42,97 | 831,69 | 5,5x | 651,93 | 2,8x |
-| Microsoft (MSFT) | 493,78 | 9,86 | 471,37 | 22,0x | 329,47 | 3,0x |
-| Microsoft II (MSFT) | 493,78 | 9,86 | 471,37 | 22,0x | 329,47 | 3,0x |
-| Oracle (ORCL) | 147,61 | 8,24 | 127,93 | 7,5x | 98,03 | 3,0x |
+| Take-Two (TTWO) | 209,92 | 6,71 | 190,57 | 10,8x | 190,57 | 10,8x |
+| Meta Platforms (META) | 741,24 | 27,34 | 606,12 | 5,5x | 469,81 | 2,7x |
+| Micron (MU) | 1.043,96 | 44,37 | 828,91 | 4,9x | 649,15 | 2,6x |
+| Microsoft (MSFT) | 501,61 | 10,11 | 470,89 | 16,3x | 328,99 | 2,9x |
+| Microsoft II (MSFT) | 501,61 | 10,11 | 470,89 | 16,3x | 328,99 | 2,9x |
+| Oracle (ORCL) | 148,56 | 8,26 | 127,89 | 7,2x | 97,99 | 2,9x |
 
 _'nach Trendtief' orientiert sich am juengsten Tief und laesst mehr Hebel zu. 'konservativ' orientiert sich am tiefsten Tief des Fensters und ueberlebt auch einen Rueckfall dorthin._
 
@@ -110,7 +109,7 @@ _'nach Trendtief' orientiert sich am juengsten Tief und laesst mehr Hebel zu. 'k
 
 | Wert | Datum | Tief | Volumen | rel. zu Ø 20 T | Tief -> KO |
 |---|---|---|---|---|---|
-| Take-Two (TTWO) | 18.09.2026 | 205,19 | 5,7 Mio. | 2,14x (Kapitulation) | -11,5 % |
+| Take-Two (TTWO) | 21.09.2026 | 204,00 | 2,6 Mio. | 0,93x | -12,2 % |
 | Take-Two (TTWO) | 09.09.2026 | 208,52 | 2,2 Mio. | 0,85x | -9,7 % |
 | Take-Two (TTWO) | 01.09.2026 | 214,14 | 2,8 Mio. | 1,03x | -6,9 % |
 | Meta Platforms (META) | 18.09.2026 | 660,80 | 27,5 Mio. | 1,53x (Kapitulation) | 21,5 % |
@@ -135,13 +134,13 @@ _Diese Zeilen in die gelben Spalten uebertragen. Reihenfolge wie dort._
 
 | Ticker | Kurs | ATR(14) | RSI | Chart-Tief | Datum Tief | Vol. rel. |
 |---|---|---|---|---|---|---|
-| TTWO | 205,45 | 7,58 | 32,5 | 231,58 | 2026-08-20 | 2,14 |
-| META | 665,75 | 21,79 | 65,8 | 524,52 | 2026-07-30 | 1,53 |
-| MU | 1.015,80 | 42,97 | 58,3 | 915,18 | 2026-08-19 | 0,80 |
-| MSFT | 493,78 | 9,86 | 53,1 | 477,15 | 2026-08-18 | 1,97 |
-| ORCL | 147,61 | 8,24 | 49,6 | 137,44 | 2026-08-19 | 1,35 |
-| NVDA | 222,27 | 5,94 | 54,2 | 208,93 | 2026-09-14 | - |
-| AMAT | 444,57 | 17,76 | 43,8 | 411,51 | 2026-09-16 | - |
+| TTWO | 209,92 | 6,71 | 38,1 | 231,58 | 2026-08-20 | 0,93 |
+| META | 741,24 | 27,34 | 77,8 | 524,52 | 2026-07-30 | 1,53 |
+| MU | 1.043,96 | 44,37 | 61,2 | 915,18 | 2026-08-19 | 0,80 |
+| MSFT | 501,61 | 10,11 | 57,1 | 477,15 | 2026-08-18 | 1,97 |
+| ORCL | 148,56 | 8,26 | 50,5 | 137,44 | 2026-08-19 | 1,35 |
+| NVDA | 227,38 | 6,07 | 58,2 | 208,93 | 2026-09-14 | - |
+| AMAT | 464,24 | 18,61 | 49,7 | 411,51 | 2026-09-16 | - |
 
 ---
 

@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-09-21 22:33 UTC. 280 Werte, Fenster 90 Kalendertage. EUR/USD 1.1468._
+_Erstellt 2026-09-22 00:50 UTC. 280 Werte, Fenster 90 Kalendertage. EUR/USD 1.148._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -38,7 +38,7 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | FDX (FDX) | 295.79 | - | - | ja | 31.76 |
 | LOW (LOW) | 190.98 | - | - | ja | 29.12 |
 | MO (MO) | 68.53 | - | - | ja | 48.14 |
-| NEE (NEE) | 79.63 | - | - | ja | 41.56 |
+| NEE (NEE) | 79.63 | - | - | ja | 29.58 |
 | UNP (UNP) | 269.63 | - | - | ja | 24.3 |
 | UPS (UPS) | 94.75 | - | - | ja | 30.98 |
 | XOM (XOM) | 158.3 | - | - | ja | 44.56 |
@@ -62,8 +62,6 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | PAH3.DE (PAH3.DE) | 27.6 | - | - | ja | 42.7 |
 | RWE.DE (RWE.DE) | 59.92 | - | - | ja | 56.07 |
 | VNA.DE (VNA.DE) | 17.49 | - | - | ja | 24.88 |
-| WTI Oel (CL=F) | 91.93 | - | - | ja | 48.91 |
-| Erdgas (NG=F) | 2.827 | - | - | ja | 46.54 |
 
 ---
 

@@ -1,55 +1,55 @@
 {
- "date": "2026-09-21",
+ "date": "2026-09-22",
  "ranks": {
   "turnaround": [
    "T",
-   "QIA.DE",
-   "SHOP",
    "MSTR",
    "ABT",
-   "PFE",
-   "SAP.DE",
-   "ZS",
    "XOM",
+   "ZS",
+   "QIA.DE",
+   "DHR",
+   "PANW",
    "MMM",
-   "COF",
-   "AMZN",
+   "CNQ",
+   "ABNB",
    "BLK",
-   "SCCO",
-   "ABNB"
+   "COF",
+   "KO",
+   "SCHW"
   ],
   "momentum": [
-   "INTC",
    "CRWD",
-   "ANET",
+   "PANW",
+   "DELL",
+   "VLO",
+   "AMD",
    "MRNA",
    "SNOW",
-   "MPC",
-   "AMD",
    "TMO",
    "ILMN",
    "ALV.DE",
+   "TRV",
+   "KO",
    "P911.DE",
    "CBK.DE",
-   "SY1.DE",
-   "DHL.DE",
-   "RWE.DE"
+   "XOM"
   ],
   "value": [
    "NVDA",
    "MU",
    "CSCO",
    "ABNB",
-   "COP",
    "META",
    "BLK",
    "REGN",
+   "COP",
    "V",
    "MNST",
    "VRTX",
    "UNP",
    "ODFL",
-   "DXCM",
+   "LLY",
    "MTX.DE"
   ]
  },
@@ -57,150 +57,126 @@
   "turnaround": {
    "entries": [
     {
-     "ticker": "SHOP",
-     "rank": 3
-    },
-    {
-     "ticker": "PFE",
-     "rank": 6
-    },
-    {
-     "ticker": "SAP.DE",
+     "ticker": "DHR",
      "rank": 7
     },
     {
-     "ticker": "AMZN",
-     "rank": 12
-    },
-    {
-     "ticker": "SCCO",
-     "rank": 14
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "DHR",
-     "old_rank": 7
-    },
-    {
-     "ticker": "DB1.DE",
-     "old_rank": 8
-    },
-    {
      "ticker": "PANW",
-     "old_rank": 9
+     "rank": 8
     },
     {
      "ticker": "CNQ",
-     "old_rank": 11
-    },
-    {
-     "ticker": "KO",
-     "old_rank": 15
-    }
-   ],
-   "moves": []
-  },
-  "momentum": {
-   "entries": [
-    {
-     "ticker": "INTC",
-     "rank": 1
-    },
-    {
-     "ticker": "SNOW",
-     "rank": 5
-    },
-    {
-     "ticker": "MPC",
-     "rank": 6
-    },
-    {
-     "ticker": "ILMN",
-     "rank": 9
-    },
-    {
-     "ticker": "ALV.DE",
      "rank": 10
     },
     {
-     "ticker": "P911.DE",
-     "rank": 11
+     "ticker": "KO",
+     "rank": 14
     },
     {
-     "ticker": "RWE.DE",
+     "ticker": "SCHW",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "PANW",
-     "old_rank": 2
-    },
-    {
-     "ticker": "DELL",
+     "ticker": "SHOP",
      "old_rank": 3
     },
     {
-     "ticker": "VLO",
-     "old_rank": 4
+     "ticker": "PFE",
+     "old_rank": 6
     },
     {
-     "ticker": "ABBV",
-     "old_rank": 10
+     "ticker": "SAP.DE",
+     "old_rank": 7
     },
     {
-     "ticker": "TRV",
-     "old_rank": 11
+     "ticker": "AMZN",
+     "old_rank": 12
     },
     {
-     "ticker": "KO",
-     "old_rank": 13
-    },
-    {
-     "ticker": "DB1.DE",
+     "ticker": "SCCO",
      "old_rank": 14
     }
    ],
    "moves": [
     {
-     "ticker": "DHL.DE",
-     "rank": 14,
-     "delta": -5
+     "ticker": "XOM",
+     "rank": 4,
+     "delta": 5
     }
    ]
+  },
+  "momentum": {
+   "entries": [
+    {
+     "ticker": "PANW",
+     "rank": 2
+    },
+    {
+     "ticker": "DELL",
+     "rank": 3
+    },
+    {
+     "ticker": "VLO",
+     "rank": 4
+    },
+    {
+     "ticker": "TRV",
+     "rank": 11
+    },
+    {
+     "ticker": "KO",
+     "rank": 12
+    },
+    {
+     "ticker": "XOM",
+     "rank": 15
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "INTC",
+     "old_rank": 1
+    },
+    {
+     "ticker": "ANET",
+     "old_rank": 3
+    },
+    {
+     "ticker": "MPC",
+     "old_rank": 6
+    },
+    {
+     "ticker": "SY1.DE",
+     "old_rank": 13
+    },
+    {
+     "ticker": "DHL.DE",
+     "old_rank": 14
+    },
+    {
+     "ticker": "RWE.DE",
+     "old_rank": 15
+    }
+   ],
+   "moves": []
   },
   "value": {
    "entries": [
     {
-     "ticker": "DXCM",
+     "ticker": "LLY",
      "rank": 14
     }
    ],
    "exits": [
     {
-     "ticker": "LLY",
+     "ticker": "DXCM",
      "old_rank": 14
     }
    ],
    "moves": []
   },
-  "analyst_flips": [
-   {
-    "ticker": "ANET",
-    "now": 1,
-    "old": 0
-   },
-   {
-    "ticker": "SHOP",
-    "now": 1,
-    "old": 0
-   },
-   {
-    "ticker": "T",
-    "now": 1,
-    "old": 0
-   }
-  ]
+  "analyst_flips": []
  }
 }

@@ -1,6 +1,6 @@
 # Stundenwache
 
-Stand: 2026-09-21 · 267 Werte mit Stundendaten · erstellt 2026-09-21 22:35 UTC
+Stand: 2026-09-21 · 267 Werte mit Stundendaten · erstellt 2026-09-22 00:53 UTC
 
 > **Sitzung noch nicht abgeschlossen.** 3 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 6, 7, 9). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
 
@@ -21,27 +21,51 @@ Keine.
 
 Keine.
 
-## Tief angetestet (15)
+## Tief angetestet (39)
 
 Docht bis unter die Marke, kein Stundenschluss darunter.
 
 | Wert | Marke | Schluss | Abstand (ATR) | Stunden dahinter |
 |---|---|---|---|---|
 | BRK-B | 502.01 | 502.05 | 0.006 | 0 |
+| ENB | 48.195 | 48.2 | 0.006 | 0 |
 | CB | 337.24 | 337.33 | 0.017 | 0 |
+| EQNR | 42.48 | 42.5 | 0.017 | 0 |
+| SAP.DE | 182.48 | 182.6 | 0.022 | 0 |
+| ORLY | 82.84 | 82.9 | 0.035 | 0 |
 | CRM | 236.29 | 236.66 | 0.041 | 0 |
 | MO | 68.4466 | 68.54 | 0.067 | 0 |
 | COP | 127.2625 | 127.51 | 0.068 | 0 |
 | XOM | 157.95 | 158.3 | 0.089 | 0 |
 | TRV | 370.68 | 371.28 | 0.09 | 0 |
+| DUK | 116.6 | 116.74 | 0.09 | 0 |
 | TTD | 13.82 | 13.88 | 0.094 | 0 |
 | PGR | 211.84 | 212.21 | 0.095 | 0 |
+| ROP | 364.33 | 365.445 | 0.11 | 0 |
+| XEL | 71.71 | 71.88 | 0.131 | 0 |
+| CL | 86.03 | 86.25 | 0.14 | 0 |
+| TTE | 89.793 | 90.07 | 0.17 | 0 |
+| CPRT | 28.705 | 28.91 | 0.173 | 0 |
+| P911.DE | 44.48 | 44.73 | 0.174 | 0 |
 | EXC | 41.84 | 41.975 | 0.192 | 0 |
 | DELL | 567.435 | 575.5 | 0.214 | 0 |
+| VOW3.DE | 74.52 | 75.24 | 0.228 | 0 |
+| PAH3.DE | 27.3 | 27.6 | 0.318 | 0 |
+| PCAR | 113.77 | 114.72 | 0.344 | 0 |
 | PM | 185.84 | 187.51 | 0.368 | 0 |
+| CDW | 143.67 | 146.425 | 0.464 | 0 |
 | ADP | 267.9 | 270.57 | 0.5 | 0 |
-| SPOT | 503.44 | 517.09 | 0.709 | 0 |
+| ADBE | 244.23 | 249.51 | 0.521 | 0 |
+| VNA.DE | 17.285 | 17.49 | 0.526 | 0 |
+| CTAS | 194.8718 | 196.83 | 0.552 | 0 |
+| BEI.DE | 73.78 | 74.7 | 0.654 | 0 |
+| INTU | 295.11 | 304.19 | 0.677 | 0 |
+| V | 366.09 | 369.94 | 0.71 | 0 |
+| MUV2.DE | 502.4 | 509.6 | 0.789 | 0 |
 | COST | 888.04 | 898.45 | 0.806 | 0 |
+| NKE | 35.35 | 36.135 | 0.87 | 0 |
+| ODFL | 169.65 | 175.32 | 0.914 | 0 |
+| SHOP | 126.39 | 137.9 | 1.828 | 0 |
 
 ## Swing-Hoch ueberwunden (54)
 

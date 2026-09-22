@@ -1675,7 +1675,7 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | Kupfer (HG=F) | 2026-04-10 | aufwaerts | 5.748 | 0.245 | 0.513 | 112 |
 | Kupfer (HG=F) | 2026-07-30 | aufwaerts | 6.2765 | 0.594 | 1.06 | 36 |
 | Kupfer (HG=F) | 2026-09-17 | aufwaerts | 6.4385 | 1.117 | 2.042 | 2 |
-| Kupfer (HG=F) | 2026-09-21 | aufwaerts | 6.639 | 0.702 | 1.25 | 0 |
+| Kupfer (HG=F) | 2026-09-21 | aufwaerts | 6.639 | 0.697 | 1.25 | 0 |
 | HNR1.DE (HNR1.DE) | 2025-05-08 | abwaerts | 286.2 | 0.781 | 1.747 | 349 |
 | HNR1.DE (HNR1.DE) | 2026-09-07 | abwaerts | 260.4 | 0.317 | 0.461 | 10 |
 | HONA (HONA) | 2026-08-06 | abwaerts | 203.64 | 3.142 | 23.885 | 31 |
@@ -1711,6 +1711,7 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | IBN (IBN) | 2026-06-12 | aufwaerts | 27.51 | 0.821 | 1.745 | 68 |
 | IBN (IBN) | 2026-09-08 | abwaerts | 30.17 | 0.208 | 0.331 | 9 |
 | IBN (IBN) | 2026-09-15 | abwaerts | 29.08 | 1.377 | 2.545 | 4 |
+| IBN (IBN) | 2026-09-21 | aufwaerts | 28.15 | 0.143 | 0.249 | 0 |
 | IDXX (IDXX) | 2025-04-23 | aufwaerts | 423.44 | 0.374 | 1.363 | 354 |
 | IDXX (IDXX) | 2025-05-01 | aufwaerts | 440.0 | 1.673 | 6.405 | 348 |
 | IDXX (IDXX) | 2025-05-12 | aufwaerts | 493.77 | 0.397 | 1.262 | 341 |
@@ -2097,7 +2098,7 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | Palladium (PA=F) | 2026-09-11 | aufwaerts | 1281.3 | 0.307 | 0.913 | 6 |
 | Palladium (PA=F) | 2026-09-16 | aufwaerts | 1289.2 | 0.334 | 0.845 | 3 |
 | Palladium (PA=F) | 2026-09-18 | aufwaerts | 1290.2 | 0.177 | 0.411 | 1 |
-| Palladium (PA=F) | 2026-09-21 | aufwaerts | 1306.2 | 0.491 | 1.095 | 0 |
+| Palladium (PA=F) | 2026-09-21 | aufwaerts | 1306.2 | 0.484 | 1.095 | 0 |
 | PAH3.DE (PAH3.DE) | 2026-03-02 | abwaerts | 35.92 | 1.558 | 3.174 | 142 |
 | PAH3.DE (PAH3.DE) | 2026-06-17 | abwaerts | 30.86 | 0.497 | 1.167 | 68 |
 | PAH3.DE (PAH3.DE) | 2026-09-21 | abwaerts | 27.98 | 0.38 | 1.144 | 0 |
@@ -2176,7 +2177,7 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | Platin (PL=F) | 2026-09-16 | aufwaerts | 1773.2 | 0.318 | 0.564 | 3 |
 | Platin (PL=F) | 2026-09-17 | aufwaerts | 1783.2 | 0.275 | 0.46 | 2 |
 | Platin (PL=F) | 2026-09-18 | aufwaerts | 1791.4 | 0.126 | 0.201 | 1 |
-| Platin (PL=F) | 2026-09-21 | aufwaerts | 1803.5 | 0.145 | 0.216 | 0 |
+| Platin (PL=F) | 2026-09-21 | aufwaerts | 1803.5 | 0.14 | 0.216 | 0 |
 | PLD (PLD) | 2025-04-14 | aufwaerts | 96.41 | 0.269 | 1.276 | 360 |
 | PLD (PLD) | 2025-08-19 | aufwaerts | 106.61 | 0.373 | 0.807 | 273 |
 | PLD (PLD) | 2025-10-15 | aufwaerts | 115.71 | 0.35 | 0.83 | 233 |
@@ -2337,6 +2338,7 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | SIE.DE (SIE.DE) | 2026-04-14 | aufwaerts | 229.65 | 0.196 | 0.74 | 113 |
 | SIE.DE (SIE.DE) | 2026-09-01 | abwaerts | 284.5 | 0.301 | 0.615 | 14 |
 | SIE.DE (SIE.DE) | 2026-09-02 | abwaerts | 277.85 | 0.426 | 0.882 | 13 |
+| SIE.DE (SIE.DE) | 2026-09-21 | aufwaerts | 268.65 | 0.137 | 0.316 | 0 |
 | SKHY (SKHY) | 2026-08-12 | aufwaerts | 141.87 | 0.666 | 6.224 | 27 |
 | SKHY (SKHY) | 2026-09-17 | aufwaerts | 180.66 | 0.13 | 0.731 | 2 |
 | SMFG (SMFG) | 2025-04-14 | aufwaerts | 12.95 | 0.318 | 1.622 | 360 |
@@ -2603,6 +2605,7 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | XOM (XOM) | 2026-08-31 | aufwaerts | 157.42 | 0.723 | 1.601 | 14 |
 | ZAL.DE (ZAL.DE) | 2026-08-04 | abwaerts | 28.56 | 1.905 | 8.964 | 34 |
 | Mais (ZC=F) | 2026-09-15 | aufwaerts | 517.5 | 1.432 | 3.043 | 4 |
+| Mais (ZC=F) | 2026-09-21 | aufwaerts | 532.75 | 0.933 | 1.924 | 0 |
 | ZS (ZS) | 2025-11-14 | abwaerts | 307.2 | 0.329 | 1.12 | 211 |
 | ZS (ZS) | 2025-11-26 | abwaerts | 278.07 | 0.612 | 2.87 | 203 |
 | ZS (ZS) | 2025-12-01 | abwaerts | 249.68 | 0.209 | 1.033 | 201 |

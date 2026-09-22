@@ -85,9 +85,16 @@ ANALYST_MAX_AGE_DAYS = 1  # Ratingaenderungen taeglich frisch - das ist das kurz
 # frisch er nach dem Alter waere - sonst benutzt ein neuer Programmlauf
 # unbemerkt einen Cache mit alter, unvollstaendiger Datenstruktur.
 FUND_CACHE_VERSION = 5   # 5 ab 24.08.2026: Feld "country" ergaenzt
-ANALYST_CACHE_VERSION = 4
+ANALYST_CACHE_VERSION = 5  # 5 ab 22.09.2026: Aggregat-Rueckfall bei weniger als KONSENS_MIN_BANKEN Einzelratings
 REVISION_WINDOW_DAYS = 30  # Fenster fuer "kurzfristige" Analysten-Ratingaenderungen
 TARGET_FRESH_DAYS = 14     # Kursziel gilt als "frisch", wenn eine Ratingaenderung diese Zeit nicht ueberschreitet
+# Unter so vielen Banken mit Einzelrating wird zusaetzlich Yahoos
+# Gesamtzaehlung geholt und genommen, wenn sie mehr Banken zaehlt.
+# Anlass 22.09.2026: Bei ADRs (Novo Nordisk, Novartis, BHP, Toronto-
+# Dominion ...) enthaelt Yahoos Einzelrating-Tabelle meist nur EINE
+# US-Bank. Die alte Kaskade griff nur bei 0 Banken - eine einzige
+# "Underweight"-Wertung ergab so 0 % Kaufanteil (Novo Nordisk).
+KONSENS_MIN_BANKEN = 3
 CONSENSUS_MAX_AGE_DAYS = 120  # ~4 Monate: aeltere Einzelwertungen zaehlen nicht mehr mit
 ANALYST_FILTER_MIN_UPSIDE = 15    # Mindest-Kurspotenzial zum Analysten-Kursziel, in Prozent
 ANALYST_FILTER_MIN_KAUFEN_PCT = 75  # Mindestanteil "Kaufen"-Einstufungen, in Prozent
@@ -357,31 +364,8 @@ def get_hourly_rsi(tickers: list[str]) -> dict[str, float | None]:
     return out
 
 
-def get_fundamentals(tickers: list[str]) -> dict:
-    """Fundamentaldaten, hoechstens FUND_MAX_AGE_DAYS alt (Cache)."""
-    cache = {"updated": None, "data": {}}
-    if FUND_FILE.exists():
-        try:
-            cache = json.loads(FUND_FILE.read_text(encoding="utf-8"))
-        except Exception:  # noqa: BLE001
-            pass
-
-    age_days = 999.0
-    if cache.get("updated"):
-        try:
-            upd = datetime.fromisoformat(cache["updated"])
-            age_days = (datetime.now(timezone.utc) - upd).total_seconds() / 86400
-        except Exception:  # noqa: BLE001
-            pass
-
-    if (age_days < FUND_MAX_AGE_DAYS and cache.get("data")
-            and cache.get("version") == FUND_CACHE_VERSION):
-        print(f"Fundamentaldaten aus Cache ({age_days:.1f} Tage alt).")
-        return cache["data"]
-    if cache.get("data") and cache.get("version") != FUND_CACHE_VERSION:
-        print("Cache-Format veraltet (neue Version) - hole Fundamentaldaten neu.")
-
-    print("Aktualisiere Fundamentaldaten (dauert einige Minuten) ...")
+def _hole_fundamentaldaten(tickers: list[str]) -> dict:
+    """Abruf der Fundamentaldaten je Ticker (aus get_fundamentals ausgelagert, 22.09.2026)."""
     import yfinance as yf
 
     # PEG-Ratio bewusst nicht mehr genutzt: bei Yahoo haeufig aus nicht
@@ -412,6 +396,46 @@ def get_fundamentals(tickers: list[str]) -> dict:
         if n % 25 == 0:
             print(f"  {n}/{len(tickers)}")
         time.sleep(0.25)
+    return data
+
+
+def get_fundamentals(tickers: list[str]) -> dict:
+    """Fundamentaldaten, hoechstens FUND_MAX_AGE_DAYS alt (Cache)."""
+    cache = {"updated": None, "data": {}}
+    if FUND_FILE.exists():
+        try:
+            cache = json.loads(FUND_FILE.read_text(encoding="utf-8"))
+        except Exception:  # noqa: BLE001
+            pass
+
+    age_days = 999.0
+    if cache.get("updated"):
+        try:
+            upd = datetime.fromisoformat(cache["updated"])
+            age_days = (datetime.now(timezone.utc) - upd).total_seconds() / 86400
+        except Exception:  # noqa: BLE001
+            pass
+
+    if (age_days < FUND_MAX_AGE_DAYS and cache.get("data")
+            and cache.get("version") == FUND_CACHE_VERSION):
+        print(f"Fundamentaldaten aus Cache ({age_days:.1f} Tage alt).")
+        # 22.09.2026: Werte, die nach dem letzten Wochenabruf ins Universum
+        # kamen (62 Watchlist-Werte am 20.09.), fehlten bis zu sieben Tage
+        # komplett - Branche "unbekannt", kein Land. Fehlende jetzt einzeln
+        # nachholen; der Zeitstempel des Caches bleibt, damit der naechste
+        # volle Abruf wie gewohnt faellig wird.
+        fehlen = [t for t in tickers if t not in cache["data"]]
+        if fehlen:
+            print(f"  {len(fehlen)} Werte fehlen im Cache - hole sie nach.")
+            cache["data"].update(_hole_fundamentaldaten(fehlen))
+            STATE_DIR.mkdir(parents=True, exist_ok=True)
+            FUND_FILE.write_text(json.dumps(cache, indent=1), encoding="utf-8")
+        return cache["data"]
+    if cache.get("data") and cache.get("version") != FUND_CACHE_VERSION:
+        print("Cache-Format veraltet (neue Version) - hole Fundamentaldaten neu.")
+
+    print("Aktualisiere Fundamentaldaten (dauert einige Minuten) ...")
+    data = _hole_fundamentaldaten(tickers)
 
     STATE_DIR.mkdir(parents=True, exist_ok=True)
     FUND_FILE.write_text(json.dumps(
@@ -520,10 +544,10 @@ def get_analyst_data(tickers: list[str]) -> dict:
         # CONSENSUS_MAX_AGE_DAYS - z.B. META, RHM.DE), greift Yahoos
         # aggregierte Zaehlung. Die Herkunft steht in entry['quelle'],
         # damit beides nie verwechselt wird.
-        if entry['consensus']['total'] == 0:
+        if entry['consensus']['total'] < KONSENS_MIN_BANKEN:
             try:
                 agg = consensus_from_recommendations(yf.Ticker(t))
-                if agg['total'] > 0:
+                if agg['total'] > entry['consensus']['total']:
                     entry['consensus'] = agg
                     entry['quelle'] = 'Aggregat'
             except Exception:  # noqa: BLE001

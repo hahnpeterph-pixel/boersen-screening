@@ -4,12 +4,12 @@
   "turnaround": [
    "T",
    "SHOP",
-   "QIA.DE",
    "MSTR",
    "ABT",
    "PFE",
-   "SAP.DE",
+   "DHR",
    "XOM",
+   "ZS",
    "AMZN",
    "MMM",
    "COF",
@@ -28,12 +28,12 @@
    "TMO",
    "ING",
    "TD",
+   "DHL.DE",
    "ILMN",
    "PSX",
-   "ALV.DE",
    "SCCO",
    "DE",
-   "P911.DE"
+   "CBK.DE"
   ],
   "value": [
    "NVDA",
@@ -48,63 +48,31 @@
    "REGN",
    "META",
    "V",
+   "MTX.DE",
    "MNST",
-   "BHP",
-   "UNP"
+   "BHP"
   ]
  },
  "changes": {
   "turnaround": {
    "entries": [
     {
-     "ticker": "SHOP",
-     "rank": 2
-    },
-    {
-     "ticker": "PFE",
+     "ticker": "DHR",
      "rank": 6
     },
     {
-     "ticker": "SAP.DE",
-     "rank": 7
-    },
-    {
-     "ticker": "AMZN",
-     "rank": 9
-    },
-    {
-     "ticker": "SCCO",
-     "rank": 13
-    },
-    {
-     "ticker": "LMT",
-     "rank": 15
+     "ticker": "ZS",
+     "rank": 8
     }
    ],
    "exits": [
     {
-     "ticker": "ZS",
-     "old_rank": 5
+     "ticker": "QIA.DE",
+     "old_rank": 3
     },
     {
-     "ticker": "DHR",
+     "ticker": "SAP.DE",
      "old_rank": 7
-    },
-    {
-     "ticker": "PANW",
-     "old_rank": 8
-    },
-    {
-     "ticker": "CNQ",
-     "old_rank": 10
-    },
-    {
-     "ticker": "KO",
-     "old_rank": 14
-    },
-    {
-     "ticker": "SCHW",
-     "old_rank": 15
     }
    ],
    "moves": []
@@ -112,69 +80,21 @@
   "momentum": {
    "entries": [
     {
-     "ticker": "INTC",
-     "rank": 2
+     "ticker": "DHL.DE",
+     "rank": 10
     },
     {
-     "ticker": "ANET",
-     "rank": 3
-    },
-    {
-     "ticker": "MPC",
-     "rank": 5
-    },
-    {
-     "ticker": "ING",
-     "rank": 8
-    },
-    {
-     "ticker": "TD",
-     "rank": 9
-    },
-    {
-     "ticker": "PSX",
-     "rank": 11
-    },
-    {
-     "ticker": "SCCO",
-     "rank": 13
-    },
-    {
-     "ticker": "DE",
-     "rank": 14
+     "ticker": "CBK.DE",
+     "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "PANW",
-     "old_rank": 2
-    },
-    {
-     "ticker": "DELL",
-     "old_rank": 3
-    },
-    {
-     "ticker": "AMD",
-     "old_rank": 5
-    },
-    {
-     "ticker": "SNOW",
-     "old_rank": 7
-    },
-    {
-     "ticker": "TRV",
-     "old_rank": 11
-    },
-    {
-     "ticker": "KO",
+     "ticker": "ALV.DE",
      "old_rank": 12
     },
     {
-     "ticker": "CBK.DE",
-     "old_rank": 14
-    },
-    {
-     "ticker": "XOM",
+     "ticker": "P911.DE",
      "old_rank": 15
     }
    ],
@@ -183,55 +103,17 @@
   "value": {
    "entries": [
     {
-     "ticker": "SNDK",
-     "rank": 3
-    },
-    {
-     "ticker": "NEM",
-     "rank": 4
-    },
-    {
-     "ticker": "RIO",
-     "rank": 5
-    },
-    {
-     "ticker": "PBR",
-     "rank": 6
-    },
-    {
-     "ticker": "BHP",
-     "rank": 14
+     "ticker": "MTX.DE",
+     "rank": 13
     }
    ],
    "exits": [
     {
-     "ticker": "CSCO",
-     "old_rank": 3
-    },
-    {
-     "ticker": "VRTX",
-     "old_rank": 11
-    },
-    {
-     "ticker": "ODFL",
-     "old_rank": 13
-    },
-    {
-     "ticker": "LLY",
-     "old_rank": 14
-    },
-    {
-     "ticker": "MTX.DE",
+     "ticker": "UNP",
      "old_rank": 15
     }
    ],
-   "moves": [
-    {
-     "ticker": "META",
-     "rank": 11,
-     "delta": -6
-    }
-   ]
+   "moves": []
   },
   "analyst_flips": []
  }

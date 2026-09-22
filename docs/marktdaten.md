@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-09-22 06:50 UTC. 280 Werte, Fenster 90 Kalendertage. EUR/USD 1.148._
+_Erstellt 2026-09-22 09:45 UTC. 280 Werte, Fenster 90 Kalendertage. EUR/USD 1.148._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -56,12 +56,12 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | EQNR (EQNR) | 42.49 | - | - | ja | 48.3 |
 | CNQ (CNQ) | 48.28 | - | - | ja | 43.64 |
 | BP (BP) | 43.16 | - | - | ja | 44.1 |
-| BNR.DE (BNR.DE) | 59.26 | - | - | ja | 40.51 |
+| BNR.DE (BNR.DE) | 59.28 | - | - | ja | 40.6 |
 | FRE.DE (FRE.DE) | 45.1 | - | - | ja | 48.88 |
-| P911.DE (P911.DE) | 44.73 | - | - | ja | 48.47 |
-| PAH3.DE (PAH3.DE) | 27.6 | - | - | ja | 42.7 |
-| RWE.DE (RWE.DE) | 59.92 | - | - | ja | 56.07 |
-| VNA.DE (VNA.DE) | 17.49 | - | - | ja | 24.88 |
+| P911.DE (P911.DE) | 44.78 | - | - | ja | 48.73 |
+| PAH3.DE (PAH3.DE) | 27.46 | - | - | ja | 41.87 |
+| RWE.DE (RWE.DE) | 59.88 | - | - | ja | 55.84 |
+| VNA.DE (VNA.DE) | 17.48 | - | - | ja | 24.8 |
 | Silber (SI=F) | 65.825 | - | - | ja | 52.18 |
 | Brent Oel (BZ=F) | 100.34 | - | - | ja | 54.72 |
 | WTI Oel (CL=F) | 95.78 | - | - | ja | 54.78 |

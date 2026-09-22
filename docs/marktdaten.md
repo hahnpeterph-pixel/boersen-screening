@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-09-22 00:50 UTC. 280 Werte, Fenster 90 Kalendertage. EUR/USD 1.148._
+_Erstellt 2026-09-22 06:50 UTC. 280 Werte, Fenster 90 Kalendertage. EUR/USD 1.148._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -20,13 +20,13 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | KDP (KDP) | 30.62 | - | - | ja | 40.58 |
 | KO (KO) | 87.12 | - | ja | ja | 44.64 |
 | MDLZ (MDLZ) | 60.17 | - | - | ja | 36.5 |
+| MNST (MNST) | 44.0 | - | - | ja | 40.75 |
 | ORLY (ORLY) | 82.88 | - | - | ja | 34.77 |
-| PDD (PDD) | 79.295 | ja | ja | - | 40.59 |
+| PDD (PDD) | 79.3 | ja | ja | - | 40.61 |
 | ROP (ROP) | 365.4 | - | - | ja | 31.39 |
 | SBUX (SBUX) | 94.9 | - | - | ja | 27.11 |
 | TRV (TRV) | 371.13 | - | - | ja | 50.23 |
 | TTD (TTD) | 13.88 | - | - | ja | 42.83 |
-| V (V) | 369.95 | ja | - | - | 49.29 |
 | VRSK (VRSK) | 172.02 | - | - | ja | 38.5 |
 | WDAY (WDAY) | 191.92 | - | - | ja | 52.34 |
 | XEL (XEL) | 71.85 | - | - | ja | 31.13 |
@@ -62,6 +62,10 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | PAH3.DE (PAH3.DE) | 27.6 | - | - | ja | 42.7 |
 | RWE.DE (RWE.DE) | 59.92 | - | - | ja | 56.07 |
 | VNA.DE (VNA.DE) | 17.49 | - | - | ja | 24.88 |
+| Silber (SI=F) | 65.825 | - | - | ja | 52.18 |
+| Brent Oel (BZ=F) | 100.34 | - | - | ja | 54.72 |
+| WTI Oel (CL=F) | 95.78 | - | - | ja | 54.78 |
+| Erdgas (NG=F) | 2.836 | - | - | ja | 47.25 |
 
 ---
 

@@ -364,6 +364,11 @@ def get_hourly_rsi(tickers: list[str]) -> dict[str, float | None]:
     return out
 
 
+def _fund_brauchbar(eintrag) -> bool:
+    """Ein Fundamentaldaten-Eintrag zaehlt als brauchbar, wenn er eine Branche hat."""
+    return bool(eintrag) and bool(eintrag.get("sector"))
+
+
 def _hole_fundamentaldaten(tickers: list[str]) -> dict:
     """Abruf der Fundamentaldaten je Ticker (aus get_fundamentals ausgelagert, 22.09.2026)."""
     import yfinance as yf
@@ -424,10 +429,15 @@ def get_fundamentals(tickers: list[str]) -> dict:
         # komplett - Branche "unbekannt", kein Land. Fehlende jetzt einzeln
         # nachholen; der Zeitstempel des Caches bleibt, damit der naechste
         # volle Abruf wie gewohnt faellig wird.
-        fehlen = [t for t in tickers if t not in cache["data"]]
+        # Ebenso Werte, deren Eintrag leer ist oder keine Branche hat - so
+        # erholt sich ein Wert von selbst, sobald Yahoo wieder antwortet.
+        fehlen = [t for t in tickers
+                  if not _fund_brauchbar(cache["data"].get(t))]
         if fehlen:
             print(f"  {len(fehlen)} Werte fehlen im Cache - hole sie nach.")
-            cache["data"].update(_hole_fundamentaldaten(fehlen))
+            neu = _hole_fundamentaldaten(fehlen)
+            cache["data"].update({t: v for t, v in neu.items()
+                                  if _fund_brauchbar(v) or t not in cache["data"]})
             STATE_DIR.mkdir(parents=True, exist_ok=True)
             FUND_FILE.write_text(json.dumps(cache, indent=1), encoding="utf-8")
         return cache["data"]
@@ -436,6 +446,17 @@ def get_fundamentals(tickers: list[str]) -> dict:
 
     print("Aktualisiere Fundamentaldaten (dauert einige Minuten) ...")
     data = _hole_fundamentaldaten(tickers)
+    # 22.09.2026: Liefert Yahoo fuer einen Wert nichts (am 22.09. HTTP 404
+    # "No fundamentals data found" fuer 35 deutsche Werte, am 15.09. noch
+    # alle mit Branche), bleibt der alte Eintrag stehen, statt eine Woche
+    # lang "unbekannt" zu erzeugen.
+    alt_daten = cache.get("data") or {}
+    behalten = [t for t in data
+                if not _fund_brauchbar(data[t]) and _fund_brauchbar(alt_daten.get(t))]
+    for t in behalten:
+        data[t] = alt_daten[t]
+    if behalten:
+        print(f"  {len(behalten)} Werte ohne neue Daten - alter Stand behalten: {' '.join(behalten)}")
 
     STATE_DIR.mkdir(parents=True, exist_ok=True)
     FUND_FILE.write_text(json.dumps(

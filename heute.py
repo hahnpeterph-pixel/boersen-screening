@@ -706,7 +706,12 @@ def main() -> None:
         # Regel "grobe Naeherungen sind kein akzeptables Ergebnis" gilt
         # auch hier: lieber leer als falsch.
         ziel = float(a.kursziel) if a is not None and pd.notna(a.kursziel) else None
-        eigen = ziel - 0.10 * kurs if ziel is not None else None
+        # EIGENES ZIEL (Entscheidung Peter 23.09.2026): 5 Prozent unter dem
+        # Analystenziel. Grund: Kurse drehen oft knapp VOR dem Analystenziel -
+        # das ist ein Effekt am Zielniveau, deshalb ein fester Abstand zum Ziel
+        # und nicht zum heutigen Kurs. Frueher: Ziel minus 10 Prozent des Kurses.
+        ZIEL_ABSCHLAG = 0.05
+        eigen = ziel * (1 - ZIEL_ABSCHLAG) if ziel is not None else None
 
         kette_wert = ketten_je_wert.get(t, {})
         kette_roh = {

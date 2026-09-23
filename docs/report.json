@@ -3,51 +3,51 @@
  "ranks": {
   "turnaround": [
    "T",
-   "QIA.DE",
    "SHOP",
+   "VLO",
    "MSTR",
-   "ABT",
-   "PFE",
    "XOM",
-   "ZS",
-   "AMZN",
-   "MMM",
-   "COF",
+   "QIA.DE",
+   "MPC",
+   "SNOW",
+   "ABT",
+   "DXCM",
+   "KO",
+   "BEI.DE",
    "BLK",
    "SCCO",
-   "ABNB",
-   "LMT"
+   "TSLA"
   ],
   "momentum": [
-   "INTC",
-   "CRWD",
-   "ANET",
-   "MRNA",
-   "MPC",
    "VLO",
-   "TMO",
-   "ING",
-   "TD",
-   "ILMN",
+   "CRWD",
+   "MPC",
+   "MRNA",
+   "NET",
+   "DELL",
    "DHL.DE",
-   "PSX",
-   "SCCO",
+   "TMO",
+   "BAYN.DE",
+   "DE",
    "SY1.DE",
-   "DE"
+   "PSX",
+   "ING",
+   "SCCO",
+   "KO"
   ],
   "value": [
    "SNDK",
    "NVDA",
    "MU",
    "NEM",
+   "ABNB",
    "RIO",
    "PBR",
-   "ABNB",
    "COP",
    "BLK",
    "META",
-   "REGN",
    "V",
+   "REGN",
    "MNST",
    "MTX.DE",
    "BHP"
@@ -55,14 +55,122 @@
  },
  "changes": {
   "turnaround": {
-   "entries": [],
-   "exits": [],
+   "entries": [
+    {
+     "ticker": "VLO",
+     "rank": 3
+    },
+    {
+     "ticker": "MPC",
+     "rank": 7
+    },
+    {
+     "ticker": "SNOW",
+     "rank": 8
+    },
+    {
+     "ticker": "DXCM",
+     "rank": 10
+    },
+    {
+     "ticker": "KO",
+     "rank": 11
+    },
+    {
+     "ticker": "BEI.DE",
+     "rank": 12
+    },
+    {
+     "ticker": "TSLA",
+     "rank": 15
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "PFE",
+     "old_rank": 6
+    },
+    {
+     "ticker": "ZS",
+     "old_rank": 8
+    },
+    {
+     "ticker": "AMZN",
+     "old_rank": 9
+    },
+    {
+     "ticker": "MMM",
+     "old_rank": 10
+    },
+    {
+     "ticker": "COF",
+     "old_rank": 11
+    },
+    {
+     "ticker": "ABNB",
+     "old_rank": 14
+    },
+    {
+     "ticker": "LMT",
+     "old_rank": 15
+    }
+   ],
    "moves": []
   },
   "momentum": {
-   "entries": [],
-   "exits": [],
-   "moves": []
+   "entries": [
+    {
+     "ticker": "NET",
+     "rank": 5
+    },
+    {
+     "ticker": "DELL",
+     "rank": 6
+    },
+    {
+     "ticker": "BAYN.DE",
+     "rank": 9
+    },
+    {
+     "ticker": "KO",
+     "rank": 15
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "INTC",
+     "old_rank": 1
+    },
+    {
+     "ticker": "ANET",
+     "old_rank": 3
+    },
+    {
+     "ticker": "TD",
+     "old_rank": 9
+    },
+    {
+     "ticker": "ILMN",
+     "old_rank": 10
+    }
+   ],
+   "moves": [
+    {
+     "ticker": "VLO",
+     "rank": 1,
+     "delta": 5
+    },
+    {
+     "ticker": "DE",
+     "rank": 10,
+     "delta": 5
+    },
+    {
+     "ticker": "ING",
+     "rank": 13,
+     "delta": -5
+    }
+   ]
   },
   "value": {
    "entries": [],

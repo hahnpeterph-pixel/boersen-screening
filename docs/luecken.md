@@ -1427,7 +1427,7 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | CHTR (CHTR) | 2026-09-18 | abwaerts | 132.42 | 0.17 | 0.899 | 2 |
 | WTI Oel (CL=F) | 2026-05-20 | abwaerts | 106.76 | 0.396 | 2.473 | 85 |
 | WTI Oel (CL=F) | 2026-08-31 | aufwaerts | 83.78 | 0.259 | 1.086 | 15 |
-| WTI Oel (CL=F) | 2026-09-22 | abwaerts | 94.22 | 0.489 | 2.409 | 0 |
+| WTI Oel (CL=F) | 2026-09-22 | abwaerts | 94.22 | 0.945 | 4.596 | 0 |
 | CM (CM) | 2025-04-23 | aufwaerts | 59.87 | 0.331 | 0.785 | 355 |
 | CM (CM) | 2025-05-02 | aufwaerts | 63.35 | 0.289 | 0.552 | 348 |
 | CM (CM) | 2025-05-14 | aufwaerts | 64.87 | 0.13 | 0.2 | 340 |
@@ -1667,6 +1667,7 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | Kupfer (HG=F) | 2026-07-30 | aufwaerts | 6.2765 | 0.594 | 1.06 | 37 |
 | Kupfer (HG=F) | 2026-09-17 | aufwaerts | 6.4385 | 1.117 | 2.042 | 3 |
 | Kupfer (HG=F) | 2026-09-21 | aufwaerts | 6.639 | 0.188 | 0.324 | 1 |
+| Kupfer (HG=F) | 2026-09-22 | aufwaerts | 6.743 | 1.292 | 2.343 | 0 |
 | HNR1.DE (HNR1.DE) | 2025-05-08 | abwaerts | 286.2 | 0.782 | 1.747 | 350 |
 | HNR1.DE (HNR1.DE) | 2026-09-07 | abwaerts | 260.4 | 0.317 | 0.461 | 11 |
 | HONA (HONA) | 2026-08-06 | abwaerts | 203.64 | 3.142 | 23.885 | 32 |
@@ -1821,6 +1822,7 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | MAR (MAR) | 2025-12-15 | aufwaerts | 300.75 | 0.521 | 1.23 | 192 |
 | MAR (MAR) | 2026-08-03 | abwaerts | 372.63 | 1.325 | 3.54 | 35 |
 | MAR (MAR) | 2026-08-31 | abwaerts | 350.81 | 0.275 | 0.601 | 15 |
+| MAR (MAR) | 2026-09-22 | aufwaerts | 343.15 | 0.481 | 1.032 | 0 |
 | MBG.DE (MBG.DE) | 2026-03-02 | abwaerts | 58.31 | 0.89 | 2.247 | 143 |
 | MBG.DE (MBG.DE) | 2026-04-17 | abwaerts | 53.35 | 1.824 | 5.342 | 111 |
 | MCD (MCD) | 2026-03-03 | abwaerts | 334.41 | 0.757 | 1.292 | 140 |
@@ -1976,6 +1978,7 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | Erdgas (NG=F) | 2026-01-29 | abwaerts | 5.9 | 2.271 | 36.576 | 162 |
 | Erdgas (NG=F) | 2026-02-02 | abwaerts | 3.818 | 0.116 | 2.881 | 160 |
 | Erdgas (NG=F) | 2026-04-29 | aufwaerts | 2.578 | 0.765 | 3.957 | 100 |
+| Erdgas (NG=F) | 2026-09-22 | aufwaerts | 2.906 | 2.14 | 8.775 | 0 |
 | NKE (NKE) | 2025-09-02 | abwaerts | 77.12 | 0.776 | 1.919 | 265 |
 | NKE (NKE) | 2026-02-27 | abwaerts | 63.78 | 0.504 | 1.662 | 142 |
 | NKE (NKE) | 2026-03-18 | abwaerts | 55.0 | 0.285 | 0.909 | 129 |
@@ -2075,6 +2078,7 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | Palladium (PA=F) | 2026-09-11 | aufwaerts | 1281.3 | 0.307 | 0.913 | 7 |
 | Palladium (PA=F) | 2026-09-16 | aufwaerts | 1289.2 | 0.334 | 0.845 | 4 |
 | Palladium (PA=F) | 2026-09-18 | aufwaerts | 1290.2 | 0.177 | 0.411 | 2 |
+| Palladium (PA=F) | 2026-09-22 | aufwaerts | 1302.9 | 0.348 | 0.737 | 0 |
 | PAH3.DE (PAH3.DE) | 2026-03-02 | abwaerts | 35.92 | 1.558 | 3.174 | 143 |
 | PAH3.DE (PAH3.DE) | 2026-06-17 | abwaerts | 30.86 | 0.497 | 1.167 | 69 |
 | PAH3.DE (PAH3.DE) | 2026-09-21 | abwaerts | 27.98 | 0.38 | 1.144 | 1 |
@@ -2150,6 +2154,10 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | Platin (PL=F) | 2026-08-19 | aufwaerts | 1726.4 | 2.286 | 4.414 | 23 |
 | Platin (PL=F) | 2026-09-03 | aufwaerts | 1759.8 | 2.091 | 3.898 | 12 |
 | Platin (PL=F) | 2026-09-10 | abwaerts | 1904.2 | 2.717 | 5.624 | 8 |
+| Platin (PL=F) | 2026-09-16 | aufwaerts | 1773.2 | 0.318 | 0.564 | 4 |
+| Platin (PL=F) | 2026-09-17 | aufwaerts | 1783.2 | 0.275 | 0.46 | 3 |
+| Platin (PL=F) | 2026-09-18 | aufwaerts | 1791.4 | 0.126 | 0.201 | 2 |
+| Platin (PL=F) | 2026-09-22 | aufwaerts | 1798.5 | 1.452 | 2.285 | 0 |
 | PLD (PLD) | 2025-04-14 | aufwaerts | 96.41 | 0.267 | 1.276 | 361 |
 | PLD (PLD) | 2025-08-19 | aufwaerts | 106.61 | 0.373 | 0.807 | 274 |
 | PLD (PLD) | 2025-10-15 | aufwaerts | 115.71 | 0.35 | 0.83 | 234 |
@@ -2298,6 +2306,8 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | Silber (SI=F) | 2026-08-07 | aufwaerts | 61.91 | 0.955 | 2.762 | 31 |
 | Silber (SI=F) | 2026-09-16 | aufwaerts | 63.64 | 0.436 | 1.226 | 4 |
 | Silber (SI=F) | 2026-09-17 | aufwaerts | 64.535 | 0.535 | 1.449 | 3 |
+| Silber (SI=F) | 2026-09-18 | aufwaerts | 65.47 | 0.851 | 2.245 | 2 |
+| Silber (SI=F) | 2026-09-22 | aufwaerts | 66.665 | 0.555 | 1.418 | 0 |
 | SIE.DE (SIE.DE) | 2025-04-23 | aufwaerts | 189.32 | 0.263 | 1.268 | 360 |
 | SIE.DE (SIE.DE) | 2026-04-08 | aufwaerts | 215.55 | 1.585 | 6.704 | 118 |
 | SIE.DE (SIE.DE) | 2026-04-14 | aufwaerts | 229.65 | 0.196 | 0.74 | 114 |

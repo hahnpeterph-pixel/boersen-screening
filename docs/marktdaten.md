@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-09-22 21:54 UTC. 280 Werte, Fenster 90 Kalendertage. EUR/USD 1.1453._
+_Erstellt 2026-09-23 00:30 UTC. 280 Werte, Fenster 90 Kalendertage. EUR/USD 1.1465._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -74,6 +74,7 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | SMFG (SMFG) | 26.14 | - | - | ja | 48.92 |
 | BBVA (BBVA) | 28.67 | - | ja | ja | 50.4 |
 | UBS (UBS) | 49.19 | - | - | ja | 30.28 |
+| SONY (SONY) | 23.42 | - | ja | ja | 46.33 |
 | MFG (MFG) | 10.87 | - | - | ja | 50.09 |
 | BMO (BMO) | 174.35 | - | ja | ja | 48.57 |
 | HDB (HDB) | 23.41 | - | - | ja | 53.07 |
@@ -89,7 +90,9 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | MUV2.DE (MUV2.DE) | 501.8 | - | - | ja | 41.69 |
 | RHM.DE (RHM.DE) | 991.4 | - | - | ja | 36.02 |
 | SHL.DE (SHL.DE) | 37.43 | - | ja | ja | 39.05 |
-| WTI Oel (CL=F) | 89.85 | - | - | ja | 45.68 |
+| Brent Oel (BZ=F) | 98.78 | - | - | ja | 51.91 |
+| WTI Oel (CL=F) | 89.8 | - | - | ja | 45.62 |
+| Weizen (ZW=F) | 714.0 | - | - | ja | 51.22 |
 
 ---
 

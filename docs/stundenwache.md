@@ -1,6 +1,6 @@
 # Stundenwache
 
-Stand: 2026-09-22 · 267 Werte mit Stundendaten · erstellt 2026-09-22 21:57 UTC
+Stand: 2026-09-22 · 267 Werte mit Stundendaten · erstellt 2026-09-23 00:32 UTC
 
 > **Sitzung noch nicht abgeschlossen.** 3 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 6, 7, 9). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
 
@@ -31,7 +31,7 @@ Im Tagesverlauf unter der Marke, am Ende darueber. Das ist der Fall, den die Tag
 |---|---|---|---|---|
 | COF | 200.28 | 200.79 | 0.101 | 1 |
 
-## Tief angetestet (24)
+## Tief angetestet (52)
 
 Docht bis unter die Marke, kein Stundenschluss darunter.
 
@@ -39,28 +39,56 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 |---|---|---|---|---|
 | RHM.DE | 986.6 | 987.1 | 0.014 | 0 |
 | SMFG | 26.14 | 26.15 | 0.017 | 0 |
+| MFG | 10.86 | 10.865 | 0.02 | 0 |
+| TTD | 13.15 | 13.17 | 0.03 | 0 |
+| FANG | 184.29 | 184.5 | 0.032 | 0 |
+| NEE | 79.21 | 79.265 | 0.048 | 0 |
 | UNH | 372.42 | 372.95 | 0.053 | 0 |
 | SPGI | 401.95 | 402.57 | 0.059 | 0 |
 | CMCSA | 22.36 | 22.42 | 0.078 | 0 |
+| KHC | 23.945 | 24.0 | 0.083 | 0 |
 | MUV2.DE | 501.8 | 502.6 | 0.088 | 0 |
 | MDT | 90.56 | 90.77 | 0.098 | 0 |
+| BAC | 56.065 | 56.22 | 0.107 | 0 |
+| UBS | 49.045 | 49.19 | 0.133 | 0 |
+| VLO | 375.03 | 377.22 | 0.139 | 0 |
 | ENB | 47.795 | 47.92 | 0.151 | 0 |
+| CTSH | 58.35 | 58.7 | 0.16 | 0 |
 | BMY | 62.04 | 62.25 | 0.165 | 0 |
-| MUFG | 23.01 | 23.1 | 0.179 | 0 |
+| DUK | 116.0601 | 116.31 | 0.165 | 0 |
 | GD | 342.215 | 343.45 | 0.181 | 0 |
+| ACN | 182.155 | 183.72 | 0.214 | 0 |
 | COP | 124.4926 | 125.26 | 0.214 | 0 |
-| VZ | 46.1701 | 46.445 | 0.256 | 0 |
+| T | 24.98 | 25.12 | 0.221 | 0 |
+| NVO | 39.105 | 39.41 | 0.223 | 0 |
+| CAT | 802.61 | 808.27 | 0.265 | 0 |
+| SPOT | 495.59 | 501.27 | 0.282 | 0 |
 | HDB | 23.245 | 23.42 | 0.3 | 0 |
+| ROP | 360.65 | 363.8 | 0.304 | 0 |
 | CM | 114.13 | 114.79 | 0.316 | 0 |
 | BRK-B | 501.5 | 503.61 | 0.335 | 0 |
+| BKR | 56.57 | 57.26 | 0.344 | 0 |
+| JPM | 337.3 | 340.0 | 0.347 | 0 |
+| PAH3.DE | 26.97 | 27.3 | 0.358 | 0 |
 | HSBC | 100.92 | 101.6 | 0.365 | 0 |
+| CRM | 229.81 | 233.28 | 0.374 | 0 |
+| VOW3.DE | 73.92 | 75.12 | 0.387 | 0 |
 | MBG.DE | 42.895 | 43.375 | 0.391 | 0 |
 | EQNR | 41.3375 | 41.82 | 0.407 | 0 |
+| V | 359.8 | 362.14 | 0.41 | 0 |
+| PYPL | 52.1401 | 52.87 | 0.438 | 0 |
+| PAYX | 113.32 | 114.53 | 0.477 | 0 |
 | CB | 333.14 | 335.8 | 0.51 | 0 |
+| BKNG | 160.59 | 164.22 | 0.537 | 0 |
+| AEP | 119.155 | 120.27 | 0.576 | 0 |
+| SPCX | 150.5501 | 154.75 | 0.594 | 0 |
 | SNY | 42.03 | 42.48 | 0.656 | 0 |
-| CSCO | 104.51 | 106.43 | 0.67 | 0 |
+| ADP | 266.2975 | 270.145 | 0.705 | 0 |
+| FRE.DE | 44.96 | 45.705 | 0.705 | 0 |
 | PGR | 203.6456 | 206.92 | 0.761 | 0 |
+| VNA.DE | 17.06 | 17.365 | 0.77 | 0 |
 | PBR | 20.2407 | 20.75 | 0.835 | 0 |
+| RTX | 187.04 | 190.98 | 1.017 | 0 |
 
 ## Swing-Hoch ueberwunden (64)
 

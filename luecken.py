@@ -13,6 +13,9 @@ Tages-Hoch/Tief, nicht auf Schlusskursen - eine Luecke gilt als
 geschlossen, sobald sie intraday beruehrt wurde - auch noch am Tag ihrer
 Entstehung (Korrektur vom 11.09.2026, siehe luecken_eines_werts).
 
+Datenbasis: sieben Jahre Tageskerzen je Wert (seit 23.09.2026, Frage 115;
+vorher 400 Tage).
+
 Ausgabe:
   docs/luecken.csv  - eine Zeile je Luecke, alle Werte
   docs/luecken.md   - Zusammenfassung je Wert (Schliessquote, Dauer)
@@ -42,6 +45,22 @@ MIN_ATR = 0.10
 # Nur Luecken, die alt genug sind, um ueberhaupt schliessen zu koennen,
 # gehen in die Schliessquote ein. Frische Luecken werden getrennt gezeigt.
 REIFEZEIT_TAGE = 21
+
+# Zeitraum der Kurshistorie (Frage 115, 23.09.2026: vorher "400d").
+ZEITRAUM = "7y"
+
+
+def anhaengen(lang, neu):
+    """Haengt an die lange Reihe nur die Tage aus 'neu' an, die NACH ihrem
+    letzten Tag liegen. Die Historie bleibt so lang wie sie war."""
+    spalten = ["Open", "High", "Low", "Close"]
+    neu = neu[neu.index > lang.index[-1]]
+    if neu.empty:
+        return lang
+    teil = neu[[c for c in lang.columns if c in neu.columns]]
+    if not all(c in teil.columns for c in spalten):
+        return lang
+    return pd.concat([lang, teil]).sort_index()
 
 
 def atr(df, n=14):
@@ -166,12 +185,16 @@ def main():
             continue
 
         try:
-            # 400d wie marktdaten.py und kursverlauf.py - NICHT aendern:
-            # der Cache-Schluessel in kurse.py enthaelt den Zeitraum. Ein
-            # abweichender Wert (etwa 800d) laesst alle Werte ein zweites
-            # Mal bei Yahoo abrufen, statt den vorhandenen Cache zu nutzen.
-            # Rund anderthalb Jahre reichen fuer die Luecken-Statistik.
-            df = kurse.kerzen(ticker, period="400d")
+            # Sieben Jahre statt 400 Tage (Frage 115, Peter 23.09.2026: "OK").
+            # 400 Tage lieferten je Wert und Richtung oft nur eine Handvoll
+            # reifer Luecken - zu duenn fuer p90-Fenster und die Frage "wie
+            # viele schlossen noch, nachdem sie X Tage offen waren". Sieben
+            # Jahre wie historie.py und markthistorie.py.
+            #
+            # Preis dafuer: der Cache-Schluessel in kurse.py enthaelt den
+            # Zeitraum, marktdaten.py holt 400d - hier kommt also je Wert ein
+            # zweiter Yahoo-Abruf dazu (eine Anfrage je Wert, nur mehr Zeilen).
+            df = kurse.kerzen(ticker, period=ZEITRAUM)
         except Exception as fehler:
             print(f"  {ticker}: Abruf fehlgeschlagen ({fehler})")
             continue
@@ -198,8 +221,13 @@ def main():
             if bester_name != "Yahoo":
                 print(f"  {ticker}: Yahoo veraltet ({df.index[-1].date()}), "
                       f"{bester_name} aktueller ({bestes_df.index[-1].date()}) "
-                      f"- {bester_name} verwendet")
-                df = bestes_df
+                      f"- neuere Tage von {bester_name} angehaengt")
+                # ANHAENGEN statt ersetzen (23.09.2026, mit Frage 115): Twelve
+                # Data liefert nur 30 Tage. Die alte Fassung tauschte die ganze
+                # Reihe aus und haette die sieben Jahre an einem solchen Tag
+                # auf einen Monat geschrumpft - die Luecken-Statistik des
+                # Werts waere fuer diesen Lauf praktisch leer gewesen.
+                df = anhaengen(df, bestes_df)
 
         zeilen = luecken_eines_werts(ticker, name, df)
         alle.extend(zeilen)
@@ -222,7 +250,7 @@ def main():
     d = pd.DataFrame(alle)
     with open(MD_AUS, "w", encoding="utf-8") as f:
         f.write("# Kursluecken je Wert\n\n")
-        f.write(f"_Mindestgroesse {MIN_ATR} ATR. Als 'reif' gilt eine Luecke ab "
+        f.write(f"_Datenbasis {ZEITRAUM.replace('y', ' Jahre')} Tageskerzen je Wert. Mindestgroesse {MIN_ATR} ATR. Als 'reif' gilt eine Luecke ab "
                 f"{REIFEZEIT_TAGE} Handelstagen Alter - nur reife Luecken gehen in "
                 f"die Schliessquote ein._\n\n")
         f.write("Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine "

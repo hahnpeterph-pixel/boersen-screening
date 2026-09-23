@@ -53,6 +53,9 @@ CSV_AUS = os.path.join(DOCS, "heute.csv")
 # wird deshalb je Wert UND Richtung eigens aus den geschlossenen Luecken
 # hergeleitet, nicht global vorgegeben.
 LUECKEN_PERZENTIL = 90
+# Offene Luecken in der Anzeige: nur die der letzten 364 Kalendertage
+# (Peter 23.09.2026). Die Statistik nutzt die volle Historie aus luecken.csv.
+LUECKEN_ANZEIGE_TAGE = 364
 
 # Mindestbeobachtungszeit fuer die Halteraten-Spalten (Haelt63T) - deckungs-
 # gleich mit dem Rest des Projekts (QUARTAL = 63 Handelstage in historie.py).
@@ -367,8 +370,17 @@ def luecken_zeile(luecken_wert: pd.DataFrame, kurs: float) -> str:
         return "keine Daten"
     quote = len(geschlossen) / len(reif) * 100
     median = geschlossen.tage_bis_schluss.median() if len(geschlossen) else None
-    offen = luecken_wert[luecken_wert.geschlossen == 0].sort_values("alter_tage")
-    kopf = f"Quote {de(quote)} % ({len(geschlossen)}/{len(reif)}), Median {de(median)} Tag. {len(offen)} offen"
+    # ANZEIGE nur offene Luecken der letzten 364 Kalendertage (Peter
+    # 23.09.2026, mit Frage 115). Seit luecken.csv sieben Jahre umfasst,
+    # stuenden sonst jahrealte Luecken weit weg vom Kurs in jeder Zeile.
+    # Quote, Median und alle Vergleichsfaelle rechnen weiter mit ALLEN
+    # sieben Jahren - gekuerzt wird ausschliesslich die Liste.
+    ab = (pd.Timestamp.today().normalize()
+          - pd.Timedelta(days=LUECKEN_ANZEIGE_TAGE)).strftime("%Y-%m-%d")
+    offen = luecken_wert[(luecken_wert.geschlossen == 0)
+                         & (luecken_wert.datum >= ab)].sort_values("alter_tage")
+    kopf = (f"Quote {de(quote)} % ({len(geschlossen)}/{len(reif)}), Median {de(median)} Tag. "
+            f"{len(offen)} offen (letzte {LUECKEN_ANZEIGE_TAGE} T)")
     if len(offen) == 0:
         return kopf
 

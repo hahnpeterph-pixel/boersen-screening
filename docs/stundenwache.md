@@ -1,8 +1,8 @@
 # Stundenwache
 
-Stand: 2026-09-22 · 267 Werte mit Stundendaten · erstellt 2026-09-23 00:32 UTC
+Stand: 2026-09-22 · 267 Werte mit Stundendaten · erstellt 2026-09-23 09:01 UTC
 
-> **Sitzung noch nicht abgeschlossen.** 3 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 6, 7, 9). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
+> **Sitzung noch nicht abgeschlossen.** 40 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 2, 7). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
 
 Marken sind das juengste Swing-Tief und das juengste Swing-Hoch aus `tiefs_regel.py`, also dieselben wie im Tagesbericht. Geprueft wird nur, was der letzte Handelstag auf Stundenbasis damit gemacht hat.
 
@@ -13,7 +13,7 @@ Lesart der Urteile:
 - **angetestet** - nur mit dem Docht beruehrt, kein Schluss dahinter
 - **unklar** - Stunden- und Tagesreihe passen nicht zusammen, siehe unten
 
-## Tief gebrochen (3)
+## Tief gebrochen (5)
 
 Schluss unter dem juengsten Swing-Tief. Die Sequenz ist gerissen.
 
@@ -21,7 +21,9 @@ Schluss unter dem juengsten Swing-Tief. Die Sequenz ist gerissen.
 |---|---|---|---|---|
 | MA | 561.9 | 556.69 | -0.594 | 7 |
 | AXP | 308.67 | 305.21 | -0.531 | 6 |
+| SHL.DE | 37.27 | 37.26 | -0.015 | 1 |
 | MS | 200.26 | 200.21 | -0.009 | 3 |
+| PAH3.DE | 26.97 | 26.97 | -0.0 | 1 |
 
 ## Tief zurueckerobert (1)
 
@@ -31,13 +33,12 @@ Im Tagesverlauf unter der Marke, am Ende darueber. Das ist der Fall, den die Tag
 |---|---|---|---|---|
 | COF | 200.28 | 200.79 | 0.101 | 1 |
 
-## Tief angetestet (52)
+## Tief angetestet (46)
 
 Docht bis unter die Marke, kein Stundenschluss darunter.
 
 | Wert | Marke | Schluss | Abstand (ATR) | Stunden dahinter |
 |---|---|---|---|---|
-| RHM.DE | 986.6 | 987.1 | 0.014 | 0 |
 | SMFG | 26.14 | 26.15 | 0.017 | 0 |
 | MFG | 10.86 | 10.865 | 0.02 | 0 |
 | TTD | 13.15 | 13.17 | 0.03 | 0 |
@@ -47,7 +48,6 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | SPGI | 401.95 | 402.57 | 0.059 | 0 |
 | CMCSA | 22.36 | 22.42 | 0.078 | 0 |
 | KHC | 23.945 | 24.0 | 0.083 | 0 |
-| MUV2.DE | 501.8 | 502.6 | 0.088 | 0 |
 | MDT | 90.56 | 90.77 | 0.098 | 0 |
 | BAC | 56.065 | 56.22 | 0.107 | 0 |
 | UBS | 49.045 | 49.19 | 0.133 | 0 |
@@ -62,6 +62,7 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | T | 24.98 | 25.12 | 0.221 | 0 |
 | NVO | 39.105 | 39.41 | 0.223 | 0 |
 | CAT | 802.61 | 808.27 | 0.265 | 0 |
+| DTE.DE | 26.65 | 26.82 | 0.273 | 0 |
 | SPOT | 495.59 | 501.27 | 0.282 | 0 |
 | HDB | 23.245 | 23.42 | 0.3 | 0 |
 | ROP | 360.65 | 363.8 | 0.304 | 0 |
@@ -69,11 +70,8 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | BRK-B | 501.5 | 503.61 | 0.335 | 0 |
 | BKR | 56.57 | 57.26 | 0.344 | 0 |
 | JPM | 337.3 | 340.0 | 0.347 | 0 |
-| PAH3.DE | 26.97 | 27.3 | 0.358 | 0 |
 | HSBC | 100.92 | 101.6 | 0.365 | 0 |
 | CRM | 229.81 | 233.28 | 0.374 | 0 |
-| VOW3.DE | 73.92 | 75.12 | 0.387 | 0 |
-| MBG.DE | 42.895 | 43.375 | 0.391 | 0 |
 | EQNR | 41.3375 | 41.82 | 0.407 | 0 |
 | V | 359.8 | 362.14 | 0.41 | 0 |
 | PYPL | 52.1401 | 52.87 | 0.438 | 0 |
@@ -82,15 +80,13 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | BKNG | 160.59 | 164.22 | 0.537 | 0 |
 | AEP | 119.155 | 120.27 | 0.576 | 0 |
 | SPCX | 150.5501 | 154.75 | 0.594 | 0 |
+| ADP | 266.2975 | 269.59 | 0.604 | 0 |
 | SNY | 42.03 | 42.48 | 0.656 | 0 |
-| ADP | 266.2975 | 270.145 | 0.705 | 0 |
-| FRE.DE | 44.96 | 45.705 | 0.705 | 0 |
 | PGR | 203.6456 | 206.92 | 0.761 | 0 |
-| VNA.DE | 17.06 | 17.365 | 0.77 | 0 |
 | PBR | 20.2407 | 20.75 | 0.835 | 0 |
 | RTX | 187.04 | 190.98 | 1.017 | 0 |
 
-## Swing-Hoch ueberwunden (64)
+## Swing-Hoch ueberwunden (62)
 
 | Wert | Hoch | Schluss | Abstand (ATR) | Stunden darueber |
 |---|---|---|---|---|
@@ -100,19 +96,18 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | AMD | 526.79 | 624.0 | 3.811 | 7 |
 | MU | 944.94 | 1094.58 | 3.267 | 7 |
 | INTC | 104.9 | 123.84 | 2.888 | 7 |
-| DHL.DE | 55.7 | 58.64 | 2.751 | 9 |
-| SRT3.DE | 240.2 | 254.4 | 2.018 | 9 |
+| SRT3.DE | 240.2 | 254.2 | 1.996 | 2 |
 | SHOP | 134.74 | 147.8 | 1.982 | 7 |
 | BABA | 111.25 | 116.27 | 1.919 | 7 |
+| DHL.DE | 55.7 | 57.72 | 1.903 | 2 |
 | META | 685.31 | 736.68 | 1.887 | 7 |
 | NET | 319.43 | 352.945 | 1.85 | 7 |
 | DDOG | 227.58 | 247.51 | 1.848 | 7 |
-| IFX.DE | 55.6 | 59.97 | 1.682 | 9 |
 | ISRG | 382.41 | 402.02 | 1.647 | 7 |
 | TSM | 435.37 | 452.05 | 1.631 | 7 |
+| IFX.DE | 55.6 | 59.32 | 1.47 | 2 |
 | ZS | 196.575 | 210.24 | 1.333 | 7 |
 | QCOM | 185.46 | 198.27 | 1.326 | 7 |
-| QIA.DE | 37.24 | 38.5 | 1.298 | 9 |
 | AAPL | 330.81 | 339.73 | 1.249 | 7 |
 | MRK | 147.09 | 150.91 | 1.221 | 7 |
 | PH | 939.6 | 964.8 | 1.187 | 7 |
@@ -126,37 +121,36 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | PLTR | 177.88 | 184.98 | 1.007 | 7 |
 | EQIX | 1033.99 | 1059.27 | 1.002 | 7 |
 | CDNS | 293.4 | 302.81 | 0.991 | 7 |
-| SY1.DE | 91.74 | 93.58 | 0.937 | 7 |
 | ADI | 380.36 | 390.36 | 0.921 | 7 |
 | DE | 689.37 | 703.24 | 0.882 | 7 |
-| ZAL.DE | 21.95 | 22.47 | 0.826 | 8 |
 | MAR | 342.31 | 348.06 | 0.8 | 7 |
 | SNDK | 1807.38 | 1886.05 | 0.75 | 7 |
 | KLAC | 182.41 | 188.29 | 0.727 | 7 |
 | ANET | 200.25 | 205.175 | 0.637 | 7 |
-| BEI.DE | 75.74 | 76.62 | 0.595 | 6 |
+| SY1.DE | 91.74 | 92.82 | 0.57 | 2 |
 | EMR | 152.28 | 154.24 | 0.546 | 7 |
 | BIIB | 222.25 | 225.41 | 0.526 | 6 |
+| BEI.DE | 75.74 | 76.36 | 0.434 | 2 |
 | AMAT | 464.57 | 472.47 | 0.425 | 6 |
 | TXN | 267.97 | 271.41 | 0.423 | 7 |
-| ADS.DE | 145.25 | 146.75 | 0.42 | 8 |
 | TSLA | 374.12 | 378.86 | 0.361 | 7 |
 | BHP | 86.93 | 87.81 | 0.346 | 4 |
 | FAST | 49.78 | 50.09 | 0.306 | 4 |
 | WDAY | 185.82 | 188.19 | 0.298 | 7 |
 | LULU | 102.18 | 103.72 | 0.294 | 7 |
+| MTX.DE | 358.8 | 361.6 | 0.289 | 2 |
+| ZAL.DE | 21.95 | 22.13 | 0.288 | 2 |
 | HON | 210.59 | 211.85 | 0.287 | 5 |
 | MCHP | 75.16 | 75.815 | 0.262 | 6 |
 | PFE | 27.81 | 27.93 | 0.257 | 5 |
-| HEN3.DE | 74.9 | 75.2 | 0.223 | 3 |
 | WMT | 109.74 | 110.12 | 0.21 | 3 |
 | ABBV | 264.25 | 265.32 | 0.197 | 6 |
 | ABT | 103.3 | 103.71 | 0.173 | 7 |
 | ROST | 231.85 | 232.63 | 0.16 | 5 |
 | GOOGL | 349.91 | 351.185 | 0.147 | 7 |
-| MRK.DE | 133.45 | 133.8 | 0.135 | 2 |
 | DHR | 220.67 | 221.21 | 0.094 | 5 |
 | IDXX | 520.41 | 521.49 | 0.08 | 6 |
+| ADS.DE | 145.25 | 145.45 | 0.057 | 2 |
 | BNS | 94.02 | 94.04 | 0.013 | 7 |
 
 ## Reihen unstimmig - kein Urteil (0)

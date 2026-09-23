@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-09-23 00:30 UTC. 280 Werte, Fenster 90 Kalendertage. EUR/USD 1.1465._
+_Erstellt 2026-09-23 09:00 UTC. 280 Werte, Fenster 90 Kalendertage. EUR/USD 1.1465._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -90,9 +90,8 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | MUV2.DE (MUV2.DE) | 501.8 | - | - | ja | 41.69 |
 | RHM.DE (RHM.DE) | 991.4 | - | - | ja | 36.02 |
 | SHL.DE (SHL.DE) | 37.43 | - | ja | ja | 39.05 |
-| Brent Oel (BZ=F) | 98.78 | - | - | ja | 51.91 |
-| WTI Oel (CL=F) | 89.8 | - | - | ja | 45.62 |
-| Weizen (ZW=F) | 714.0 | - | - | ja | 51.22 |
+| Palladium (PA=F) | 1292.9 | - | - | ja | 45.6 |
+| Zucker (SB=F) | 17.59 | ja | - | - | 51.39 |
 
 ---
 

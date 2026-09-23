@@ -232,6 +232,16 @@ def main():
                 # Werts waere fuer diesen Lauf praktisch leer gewesen.
                 df = anhaengen(df, bestes_df)
 
+        # NUR FERTIGE TAGESKERZEN (23.09.2026). Ein Lauf tagsueber (Fund:
+        # Lauf 11:18 MESZ) nahm die halbfertige Kerze von heute mit - bei
+        # DAX-Werten und Futures standen dadurch Luecken vom 23.09. aus
+        # Vormittagskursen in luecken.csv. Dieselbe Grenze wie kurse.py:
+        # der letzte Tag, dessen Handelsschluss (UTC) schon vorbei ist.
+        # Rohstoffe/Devisen haben keinen Kalender - dort gilt 21 Uhr UTC.
+        if df is not None and len(df):
+            fertig = kurse.letzter_fertiger_tag(kurse.boerse(ticker))
+            df = df[df.index.date <= fertig]
+
         zeilen = luecken_eines_werts(ticker, name, df)
         alle.extend(zeilen)
         reif = [z for z in zeilen if z["reif"]]

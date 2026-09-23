@@ -3,8 +3,8 @@
  "ranks": {
   "turnaround": [
    "T",
-   "SHOP",
    "QIA.DE",
+   "SHOP",
    "MSTR",
    "ABT",
    "PFE",
@@ -32,8 +32,8 @@
    "DHL.DE",
    "PSX",
    "SCCO",
-   "DE",
-   "SY1.DE"
+   "SY1.DE",
+   "DE"
   ],
   "value": [
    "SNDK",
@@ -60,18 +60,8 @@
    "moves": []
   },
   "momentum": {
-   "entries": [
-    {
-     "ticker": "DHL.DE",
-     "rank": 11
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "CBK.DE",
-     "old_rank": 14
-    }
-   ],
+   "entries": [],
+   "exits": [],
    "moves": []
   },
   "value": {
@@ -79,22 +69,6 @@
    "exits": [],
    "moves": []
   },
-  "analyst_flips": [
-   {
-    "ticker": "MPC",
-    "now": -1,
-    "old": 0
-   },
-   {
-    "ticker": "SNDK",
-    "now": 1,
-    "old": 0
-   },
-   {
-    "ticker": "VLO",
-    "now": -1,
-    "old": 0
-   }
-  ]
+  "analyst_flips": []
  }
 }

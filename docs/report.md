@@ -1,6 +1,6 @@
 # Boersen-Screening - 2026-09-23
 
-_Stand: Schlusskurse vom 2026-09-23, aber 231 Werte haengen zurueck - siehe Standwarnung. Erstellt 2026-09-23T08:59:50+00:00 UTC. 271 Werte ausgewertet._
+_Stand: Schlusskurse vom 2026-09-23, aber 231 Werte haengen zurueck - siehe Standwarnung. Erstellt 2026-09-23T09:50:19+00:00 UTC. 271 Werte ausgewertet._
 
 > **Standwarnung: 231 von 271 Werten haengen zurueck.** Neuester Handelstag im Bericht ist 2026-09-23.
 >
@@ -255,7 +255,7 @@ _Ueber alle 271 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 
 | Rang | Ticker | ISIN | Name | Index | Kurs | Abstand ATH (Info) | Kaufen-Anteil Analysten | Kursziel | RSI Tag | RSI Woche | RSI Stunde | Letztes Rating |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | ASML | - | ASML Holding N.V. - New York Re | NASDAQ | 1515.20 | -12% | 100% (5 Banken, ≤120T) | 2181.62 (44% ueber Kurs) | 56 | 57 | 69 | keine in 30T |
+| 1 | ASML | - | ASML Holding N.V. - New York Re | NASDAQ | 1509.60 | -12% | 100% (5 Banken, ≤120T) | 2181.62 (44% ueber Kurs) | 56 | 57 | 67 | keine in 30T |
 | 2 | NVDA | - | NVIDIA Corporation | NASDAQ/DOW | 227.38 | -3% | 100% (23 Banken, ≤120T) | 315.00 (38% ueber Kurs) | 58 | 59 | 75 | 2026-09-10 Piper Sandler: neu bewertet mit Overweight |
 | 3 | TTWO | - | Take-Two Interactive Software, | NASDAQ | 209.92 | -20% | 100% (10 Banken, ≤120T) | 290.00 (38% ueber Kurs) | 38 | 42 | 40 | keine in 30T |
 | 4 | BA | - | Boeing Company (The) | DOW | 201.15 | -53% | 100% (7 Banken, ≤120T) | 276.00 (37% ueber Kurs) | 38 | 42 | 40 | 2026-09-21 Jefferies: Rating bestaetigt: Buy |

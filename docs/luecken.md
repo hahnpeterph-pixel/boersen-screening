@@ -1885,7 +1885,7 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | SAP.DE (SAP.DE) | 2026-07-27 | aufwaerts | 141.32 | 0.179 | 0.75 | 42 |
 | SAP.DE (SAP.DE) | 2026-08-03 | aufwaerts | 158.26 | 0.267 | 1.099 | 37 |
 | SAP.DE (SAP.DE) | 2026-09-14 | aufwaerts | 178.84 | 0.328 | 1.107 | 7 |
-| Zucker (SB=F) | 2026-09-23 | aufwaerts | 17.63 | 1.612 | 5.389 | 0 |
+| Zucker (SB=F) | 2026-09-23 | aufwaerts | 17.63 | 1.599 | 5.389 | 0 |
 | SBUX (SBUX) | 2026-09-09 | abwaerts | 101.75 | 0.447 | 1.091 | 9 |
 | SCCO (SCCO) | 2025-09-24 | aufwaerts | 108.5756 | 0.967 | 3.042 | 249 |
 | SCCO (SCCO) | 2025-09-29 | aufwaerts | 114.5455 | 0.488 | 1.471 | 246 |

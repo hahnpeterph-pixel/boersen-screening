@@ -49,6 +49,9 @@ REIFEZEIT_TAGE = 21
 # Zeitraum der Kurshistorie (Frage 115, 23.09.2026: vorher "400d").
 ZEITRAUM = "7y"
 
+# Offene Luecken in luecken.md: nur die der letzten 364 Kalendertage.
+ANZEIGE_TAGE = 364
+
 
 def anhaengen(lang, neu):
     """Haengt an die lange Reihe nur die Tage aus 'neu' an, die NACH ihrem
@@ -305,8 +308,12 @@ def main():
                           f"({100*len(spaeter_zu)/len(noch_offen):.0f}%) ")
             f.write(zeile + "|\n")
 
-        f.write("\n## Offene Luecken je Wert\n\n")
-        offen = d[d["geschlossen"] == 0]
+        # Nur offene Luecken der letzten 364 Kalendertage anzeigen (Peter
+        # 23.09.2026) - die Statistik oben nutzt alle sieben Jahre.
+        ab = (pd.Timestamp.today().normalize()
+              - pd.Timedelta(days=ANZEIGE_TAGE)).strftime("%Y-%m-%d")
+        f.write(f"\n## Offene Luecken je Wert (entstanden in den letzten {ANZEIGE_TAGE} Tagen)\n\n")
+        offen = d[(d["geschlossen"] == 0) & (d["datum"] >= ab)]
         if offen.empty:
             f.write("_Keine offenen Luecken._\n")
         else:

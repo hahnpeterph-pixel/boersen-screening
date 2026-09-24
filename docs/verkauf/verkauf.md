@@ -1,4 +1,4 @@
-# Verkaufs-Check - Stufe 1 (Stand 2026-09-24 18:50 UTC)
+# Verkaufs-Check - Stufe 1 (Stand 2026-09-24 19:00 UTC)
 
 Parallellauf. Kauf = Pruefttag mit Tief >= 2 und RSI < 50, Einstieg Schluss. Entscheidungspunkt = Hoch seit Kauf hoechstens 3 Tage alt, Anstieg mind. 1 ATR. Ganz weg = Kurs faellt auf den Einstieg, bevor ein neues Hoch kommt; halb weg = die Haelfte des Anstiegs geht verloren, bevor ein neues Hoch kommt.
 
@@ -62,3 +62,41 @@ Werte = mind. 10 Faelle mit UND ohne Merkmal in beiden Zeitraeumen. Verglichen w
 - **Weit ueber EMA50**: Abstand zur EMA50 groesser als an 7 von 10 frueheren Hochs
 - **Schneller Anstieg**: Anstieg je Tag mehr als 1,5x so schnell wie ueblich
 - **Kauf mit 2+ Punkten**: Einstieg hatte mind. 2 Boden-Punkte
+
+## Renditetest Verkaufsregeln
+
+Kauf = Pruefttag mit Tief >= 2 und RSI < 50, Einstieg Schluss, KO = Bezugstief minus Puffer. Schein ohne Aufgeld, Spread, Gebuehren; Knock-out = -100 %. Hoechstens 126 Handelstage. Je Wert Mittelwert (mind. 10 Kaeufe), dann Median ueber die Werte. 'Je Monat' = Rendite je 21 Handelstage Haltedauer (Geld ist frueher wieder frei). 'Besser als 187' = Werte, bei denen die Regel in BEIDEN Zeitraeumen mehr bringt als der Ausstiegsalarm 187.
+
+### Puffer 2 ATR
+
+| Regel | Rendite 19-22 / ab 23 | Tage | je Monat | besser als 187 |
+|---|---|---|---|---|
+| halten | 37 / 49 % | 67 | 13 % | 138 / 264 |
+| ruecksetzer_t | 11 / 9 % | 16 | 12 % | 46 / 264 |
+| alarm187 | 16 / 20 % | 18 | 20 % | - |
+| nachlauf25 | 10 / 16 % | 14 | 20 % | 51 / 264 |
+| nachlauf33 | 10 / 17 % | 16 | 19 % | 53 / 264 |
+| nachlauf40 | 11 / 17 % | 17 | 18 % | 59 / 264 |
+| nachlauf33_frueh | 6 / 9 % | 8 | 21 % | 32 / 264 |
+
+### Puffer 3 ATR
+
+| Regel | Rendite 19-22 / ab 23 | Tage | je Monat | besser als 187 |
+|---|---|---|---|---|
+| halten | 37 / 54 % | 82 | 11 % | 148 / 264 |
+| ruecksetzer_t | 8 / 7 % | 16 | 10 % | 36 / 264 |
+| alarm187 | 14 / 19 % | 23 | 14 % | - |
+| nachlauf25 | 10 / 16 % | 18 | 16 % | 43 / 264 |
+| nachlauf33 | 11 / 16 % | 19 | 15 % | 50 / 264 |
+| nachlauf40 | 11 / 16 % | 21 | 14 % | 56 / 264 |
+| nachlauf33_frueh | 6 / 8 % | 10 | 17 % | 28 / 264 |
+
+### Regeln
+
+- **halten**: Halten bis Knock-out oder 126 Tage
+- **ruecksetzer_t**: Verkauf beim Ruecksetzer um T ATR vom Hoch (Chance A)
+- **alarm187**: Verkauf zum Schluss am ersten Tag mit Alarm 187
+- **nachlauf25**: Nachlauf: ab ueblichem Anstieg Verkauf, wenn 25 % des Anstiegs weg
+- **nachlauf33**: Nachlauf: ab ueblichem Anstieg Verkauf, wenn 33 % des Anstiegs weg
+- **nachlauf40**: Nachlauf: ab ueblichem Anstieg Verkauf, wenn 40 % des Anstiegs weg
+- **nachlauf33_frueh**: Nachlauf 33 %, aber schon ab halbem ueblichen Anstieg

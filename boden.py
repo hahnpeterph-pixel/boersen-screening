@@ -86,6 +86,7 @@ CSV_KAND = AUS / "boden_kandidaten.csv.gz"
 CSV_PROFIL = AUS / "boden_profile.csv"
 CSV_MERKMALE = AUS / "boden_merkmale_werte.csv"
 CSV_RENDITE = AUS / "boden_rendite_werte.csv"
+CSV_ANKER = AUS / "boden_anker_werte.csv"
 MD_AUS = AUS / "boden.md"
 
 JAHRE = 7
@@ -102,6 +103,8 @@ RANG_TIEF = 0.3          # "RSI tiefer als 7 von 10 frueheren Boeden"
 MIN_VORFAELLE = 5        # so viele fruehere Korrekturen braucht ein Rang
 RATIO_BODEN = 0.1        # Mindestnenner fuer Chance/Rueckgang
 PUFFER_SIM = (1.0, 2.0, 3.0)   # KO-Abstand unter dem Bezugstief (ATR) fuer die Renditeprobe
+PUFFER_ANKER = tuple(round(0.25 * k, 2) for k in range(1, 17))   # 0,25 ... 4,00 ATR
+ANKER_HALTE = 0.60       # Anker-Regel 19.09.2026: niedrigster Puffer mit Halterate >= 60 %
 TEILUNG = pd.Timestamp("2023-01-01")   # Stoppregel: bis 2022 / ab 2023
 MIN_FAELLE = 10          # je Gruppe und Zeitraum fuer eine Quote
 STOPP_PP = 8.0           # Stoppregel: mindestens 8 Prozentpunkte
@@ -263,7 +266,10 @@ def ko_handel(O, H, L, C, d: int, ko: float, t: float, ad: float) -> float:
          Das ist dasselbe Anstiegsende wie bei Chance A.
       3. Sonst nach 63 Tagen Verkauf zum Schluss.
     KO wird vor dem Stopp geprueft - im Zweifel zaehlt der schlechtere Fall.
-    Rueckgabe: Rendite als Bruch (0,5 = +50 %)."""
+    Rueckgabe: Rendite als Bruch (0,5 = +50 %).
+
+    Im Lauf rechnet ko_handel_raster() dasselbe fuer alle Puffer auf einmal;
+    diese Schleifenfassung bleibt als lesbare Referenz fuer die Nachrechnung."""
     einsatz = C[d] - ko
     m = C[d]
     for j in range(d + 1, d + 1 + FENSTER):
@@ -276,6 +282,31 @@ def ko_handel(O, H, L, C, d: int, ko: float, t: float, ad: float) -> float:
         if H[j] > m:
             m = H[j]
     return (C[d + FENSTER] - ko) / einsatz - 1.0
+
+
+def ko_handel_raster(O, H, L, C, d: int, bez: float, t: float, ad: float,
+                     puffer=PUFFER_ANKER) -> np.ndarray:
+    """ko_handel() fuer alle Puffer auf einmal - dieselben Regeln, nur ohne
+    Schleife (sonst dauert der Lauf bei 16 Puffern zu lange). Der Stopp
+    haengt nicht vom KO ab; je Puffer wird nur gefragt, ob der KO VOR dem
+    Stopp (oder am selben Tag) fiel. Puffer mit KO ueber dem Einstieg: nan."""
+    lw, hw, ow = L[d + 1:d + 1 + FENSTER], H[d + 1:d + 1 + FENSTER], O[d + 1:d + 1 + FENSTER]
+    m_vor = np.maximum.accumulate(np.concatenate(([C[d]], hw[:-1])))
+    stopp = m_vor - t * ad
+    tr = np.flatnonzero(lw <= stopp)
+    js = int(tr[0]) if len(tr) else FENSTER
+    ko = bez - np.asarray(puffer, dtype=float) * ad
+    einsatz = C[d] - ko
+    # erster Tag mit Tief <= KO: laufendes Minimum faellt monoton
+    ko_i = np.searchsorted(-np.minimum.accumulate(lw), -ko, side="left")
+    if js < FENSTER:
+        verkauf = min(ow[js], stopp[js])
+    else:
+        verkauf = C[d + FENSTER]
+    erg = (verkauf - ko) / einsatz - 1.0
+    erg = np.where(ko_i <= js, -1.0, erg)
+    erg = np.where(ko_i >= FENSTER, (verkauf - ko) / einsatz - 1.0, erg)
+    return np.where(einsatz > 0, erg, np.nan)
 
 
 # ── Pruefttage eines Werts ─────────────────────────────────────────
@@ -440,10 +471,10 @@ def pruefttage(ticker: str, df: pd.DataFrame) -> tuple[list[dict], dict]:
             else:
                 z["chance_a"] = (max(C[d], rest_h.max()) - C[d]) / ad
                 z["tage_a"], z["offen_a"] = len(rest_h), 1
+            raster = ko_handel_raster(O, H, L, C, d, bez, t, ad)
+            z["_raster"] = raster
             for pp in PUFFER_SIM:
-                ko = bez - pp * ad
-                if ko < C[d]:
-                    z[f"rendite_p{pp:g}"] = ko_handel(O, H, L, C, d, ko, t, ad)
+                z[f"rendite_p{pp:g}"] = float(raster[PUFFER_ANKER.index(pp)])
         zeilen.append(z)
     info["pruefttage"] = len(zeilen)
     return zeilen, info
@@ -515,6 +546,78 @@ def zusammenfassung(mw: pd.DataFrame) -> pd.DataFrame:
     return pd.DataFrame(zeilen)
 
 
+# ── Anker je Punktestufe, je Wert ──────────────────────────────────
+
+GRUPPEN = {
+    "0 P": lambda g: g["punkte"] == 0,
+    "1 P": lambda g: g["punkte"] == 1,
+    "2+ P": lambda g: g["punkte"] >= 2,
+    "2+ P, Tief>=2": lambda g: (g["punkte"] >= 2) & (g["tief_ab_2"] == 1),
+    "2+ P, Tief>=2, RSI<50": lambda g: ((g["punkte"] >= 2) & (g["tief_ab_2"] == 1)
+                                        & (g["rsi_unter_50"] == 1)),
+    "alt: Tief>=2, RSI<50": lambda g: (g["tief_ab_2"] == 1) & (g["rsi_unter_50"] == 1),
+}
+
+
+def _anker(risiko: np.ndarray) -> float:
+    """Niedrigster Puffer, bei dem mind. 60 % der Faelle 63 Tage halten."""
+    for pp in PUFFER_ANKER:
+        if np.mean(risiko < pp) >= ANKER_HALTE:
+            return pp
+    return np.nan
+
+
+def anker_je_wert(ticker: str, g: pd.DataFrame) -> list[dict]:
+    """Anker aus 2019-2022 bestimmt, Rendite damit 2019-2022 (Lernzeitraum)
+    und ab 2023 (Pruefzeitraum, nicht zum Bestimmen benutzt). Dazu der
+    Anker ueber alle Jahre fuer die taegliche Anzeige."""
+    g = g[g["risiko"].notna()]
+    vor = pd.to_datetime(g["datum"]) < TEILUNG
+    zeilen = []
+    for name, bed in GRUPPEN.items():
+        h = g[bed(g)]
+        a, b = h[vor[h.index]], h[~vor[h.index]]
+        z = {"ticker": ticker, "gruppe": name, "faelle_bis2022": len(a),
+             "faelle_ab2023": len(b),
+             "anker_gesamt": _anker(h["risiko"].values) if len(h) >= MIN_FAELLE else np.nan}
+        anker = _anker(a["risiko"].values) if len(a) >= MIN_FAELLE else np.nan
+        z["anker_bis2022"] = anker
+        for zr, x in (("bis2022", a), ("ab2023", b)):
+            if np.isfinite(anker) and len(x) >= MIN_FAELLE:
+                k = PUFFER_ANKER.index(anker)
+                r = np.array([v[k] for v in x["_raster"]], dtype=float)
+                z[f"rendite_{zr}"] = round(100 * np.nanmean(r), 1)
+                z[f"ko_{zr}"] = round(100 * np.mean(r == -1.0), 1)
+                z[f"haelt_{zr}"] = round(100 * np.mean(x["risiko"].values < anker), 1)
+            else:
+                z[f"rendite_{zr}"] = z[f"ko_{zr}"] = z[f"haelt_{zr}"] = np.nan
+        zeilen.append(z)
+    return zeilen
+
+
+def anker_bericht(aw: pd.DataFrame) -> list[str]:
+    aus = ["## Anker je Punktestufe", "",
+           "Anker = niedrigster Puffer unter dem Bezugstief, bei dem mind. 60 % "
+           "der Faelle 63 Tage halten (Anker-Regel 19.09.2026), je Wert aus "
+           "2019-2022 bestimmt. Rendite am Anker (Renditeprobe wie unten): "
+           "2019-2022 = Lernzeitraum, ab 2023 = Pruefung mit dem alten Anker. "
+           "Median ueber die Werte.", "",
+           "| Gruppe | Anker | R 19-22 | R ab 23 | Haelt ab 23 |",
+           "|---|---|---|---|---|"]
+    zaehl = []
+    for name in GRUPPEN:
+        g = aw[(aw["gruppe"] == name) & aw["rendite_ab2023"].notna()]
+        if not len(g):
+            continue
+        aus.append(f"| {name} | {f(g['anker_bis2022'].median(), 2)} | "
+                   f"{f(g['rendite_bis2022'].median(), 0)} % | "
+                   f"{f(g['rendite_ab2023'].median(), 0)} % | "
+                   f"{f(g['haelt_ab2023'].median(), 0)} % |")
+        zaehl.append(f"{name}: {len(g)}")
+    aus += ["", "Werte je Gruppe: " + " · ".join(zaehl), ""]
+    return aus
+
+
 # ── Rendite je Punktestufe, je Wert ────────────────────────────────
 
 def rendite_je_stufe(kand: pd.DataFrame) -> pd.DataFrame:
@@ -581,7 +684,8 @@ def f(x, nk=1):
 
 
 def bericht(profil: pd.DataFrame, zf: pd.DataFrame, kand: pd.DataFrame,
-            jahre: int, stand: str, rw: pd.DataFrame | None = None) -> str:
+            jahre: int, stand: str, rw: pd.DataFrame | None = None,
+            aw: pd.DataFrame | None = None) -> str:
     aus = [f"# Boden-Screening - Stufe 1 (Stand {stand}, {jahre} Jahre)", "",
            "Parallellauf, aendert nichts am bestehenden Screening. "
            "Pruefttage = alle Tage mit Block-1-Umkehrzeichen (ohne RSI- und "
@@ -620,6 +724,8 @@ def bericht(profil: pd.DataFrame, zf: pd.DataFrame, kand: pd.DataFrame,
     aus += ["### Erklaerung der Merkmale", ""]
     aus += [f"- **{kurz}**: {lang}" for kurz, lang in MERKMALE.values()]
     aus.append("")
+    if aw is not None and len(aw):
+        aus += anker_bericht(aw)
     if rw is not None and len(rw):
         aus += rendite_bericht(rw)
 
@@ -665,8 +771,8 @@ def lade(tickers: list[str], jahre: int) -> dict[str, pd.DataFrame]:
     return daten
 
 
-def auswerten(daten: dict[str, pd.DataFrame]) -> tuple[pd.DataFrame, pd.DataFrame]:
-    teile, profile = [], []
+def auswerten(daten: dict[str, pd.DataFrame]) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+    teile, profile, anker = [], [], []
     for i, (ticker, df) in enumerate(sorted(daten.items()), start=1):
         try:
             zeilen, info = pruefttage(ticker, df)
@@ -680,6 +786,9 @@ def auswerten(daten: dict[str, pd.DataFrame]) -> tuple[pd.DataFrame, pd.DataFram
             profile.append(info)
             continue
         g, grenzen = bewerten(pd.DataFrame(zeilen))
+        if "_raster" in g:
+            anker += anker_je_wert(ticker, g)
+            g = g.drop(columns="_raster")
         teile.append(g)
         tiefe = np.array([k["tiefe"] for k in korr])
         dauer = np.array([k["dauer"] for k in korr])
@@ -699,10 +808,11 @@ def auswerten(daten: dict[str, pd.DataFrame]) -> tuple[pd.DataFrame, pd.DataFram
         })
         profile.append(p)
     kand = pd.concat(teile, ignore_index=True) if teile else pd.DataFrame()
-    return kand, pd.DataFrame(profile)
+    return kand, pd.DataFrame(profile), pd.DataFrame(anker)
 
 
-def schreiben(kand: pd.DataFrame, profil: pd.DataFrame, jahre: int) -> None:
+def schreiben(kand: pd.DataFrame, profil: pd.DataFrame, jahre: int,
+              aw: pd.DataFrame | None = None) -> None:
     AUS.mkdir(parents=True, exist_ok=True)
     stand = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     runden = kand.copy()
@@ -717,7 +827,9 @@ def schreiben(kand: pd.DataFrame, profil: pd.DataFrame, jahre: int) -> None:
     zf = zusammenfassung(mw)
     rw = rendite_je_stufe(kand)
     rw.to_csv(CSV_RENDITE, index=False)
-    MD_AUS.write_text(bericht(profil, zf, kand, jahre, stand, rw), encoding="utf-8")
+    if aw is not None:
+        aw.to_csv(CSV_ANKER, index=False)
+    MD_AUS.write_text(bericht(profil, zf, kand, jahre, stand, rw, aw), encoding="utf-8")
     print(f"  geschrieben: {CSV_KAND.name}, {CSV_PROFIL.name}, "
           f"{CSV_MERKMALE.name}, {CSV_RENDITE.name}, {MD_AUS.name}")
 
@@ -730,18 +842,18 @@ def main() -> int:
     if "--nur" in sys.argv:
         # Testlauf mit wenigen Werten: eigener Unterordner, damit die
         # vollstaendige Auswertung nicht ueberschrieben wird.
-        global AUS, CSV_KAND, CSV_PROFIL, CSV_MERKMALE, MD_AUS, CSV_RENDITE
+        global AUS, CSV_KAND, CSV_PROFIL, CSV_MERKMALE, MD_AUS, CSV_RENDITE, CSV_ANKER
         tickers = [t.strip() for t in
                    sys.argv[sys.argv.index("--nur") + 1].split(",") if t.strip()]
         AUS = AUS / "test"
         CSV_KAND, CSV_PROFIL = AUS / CSV_KAND.name, AUS / CSV_PROFIL.name
         CSV_MERKMALE, MD_AUS = AUS / CSV_MERKMALE.name, AUS / MD_AUS.name
-        CSV_RENDITE = AUS / CSV_RENDITE.name
+        CSV_RENDITE, CSV_ANKER = AUS / CSV_RENDITE.name, AUS / CSV_ANKER.name
     daten = lade(tickers, jahre)
     if not daten:
         print("Keine Kursdaten - Abbruch.")
         return 1
-    kand, profil = auswerten(daten)
+    kand, profil, anker = auswerten(daten)
     if kand.empty:
         print("Keine Pruefttage - Abbruch.")
         return 1
@@ -750,7 +862,7 @@ def main() -> int:
         print(f"  ! Wendepunkt-Kontrolle bei {len(abw)} Werten abweichend: "
               + ", ".join(abw["ticker"]))
     print(f"  {len(kand)} Pruefttage aus {len(profil)} Werten.")
-    schreiben(kand, profil, jahre)
+    schreiben(kand, profil, jahre, anker)
     return 0
 
 

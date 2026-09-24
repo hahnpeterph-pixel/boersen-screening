@@ -1,4 +1,4 @@
-# Verkaufs-Check - Stufe 1 (Stand 2026-09-24 18:44 UTC)
+# Verkaufs-Check - Stufe 1 (Stand 2026-09-24 18:50 UTC)
 
 Parallellauf. Kauf = Pruefttag mit Tief >= 2 und RSI < 50, Einstieg Schluss. Entscheidungspunkt = Hoch seit Kauf hoechstens 3 Tage alt, Anstieg mind. 1 ATR. Ganz weg = Kurs faellt auf den Einstieg, bevor ein neues Hoch kommt; halb weg = die Haelfte des Anstiegs geht verloren, bevor ein neues Hoch kommt.
 
@@ -13,35 +13,44 @@ Werte: 270 · Kaeufe: 35558 · Entscheidungspunkte: 600233
 | weit | 27 % / 30 % | 48 % / 51 % |
 | sehr weit | 13 % / 12 % | 26 % / 27 % |
 
+## Schon weit gelaufen: Rueckfall nach bereits abgegebenem Anteil
+
+| Schon abgegeben | ganz weg 19-22 / ab 23 | halb weg 19-22 / ab 23 |
+|---|---|---|
+| 0-10 % | 6 % / 4 % | 12 % / 10 % |
+| 10-25 % | 14 % / 13 % | 32 % / 30 % |
+| 25-40 % | 27 % / 28 % | 58 % / 60 % |
+| ueber 40 % | 58 % / 60 % | 91 % / 92 % |
+
 ## Merkmale einzeln - nur wenn schon mind. der uebliche Anstieg gelaufen ist
 
-Werte = mind. 10 Faelle mit UND ohne Merkmal in beiden Zeitraeumen. Plus = Rueckfall in beiden Zeitraeumen mind. 8 Prozentpunkte HAEUFIGER mit Merkmal (spricht fuer Verkauf), Minus = seltener. Diff = Median ueber die Werte (bis 2022 / ab 2023).
+Werte = mind. 10 Faelle mit UND ohne Merkmal in beiden Zeitraeumen. Verglichen wird nur bei gleicher bereits abgegebener Rueckgabe (0-10 / 10-25 / 25-40 / ueber 40 % des Anstiegs). Plus = Rueckfall in beiden Zeitraeumen mind. 8 Prozentpunkte HAEUFIGER mit Merkmal (spricht fuer Verkauf), Minus = seltener. Diff = Median ueber die Werte (bis 2022 / ab 2023).
 
 ### Gewinn ganz weg
 
 | Merkmal | Werte | Plus | Minus | Diff |
 |---|---|---|---|---|
-| Rote Kerze | 264 | 167 | 0 | 12.3 / 13.0 |
-| Rot + Volumen | 264 | 133 | 0 | 12.6 / 12.9 |
-| Alarm 187 | 264 | 3 | 10 | -1.2 / -2.9 |
-| Hoch heute | 264 | 0 | 225 | -13.5 / -13.6 |
-| RSI hoch | 264 | 0 | 191 | -15.8 / -17.2 |
-| Weit ueber EMA50 | 260 | 0 | 184 | -15.9 / -17.2 |
-| Schneller Anstieg | 264 | 18 | 4 | 3.3 / 2.1 |
-| Kauf mit 2+ Punkten | 262 | 6 | 4 | 0.3 / -1.7 |
+| Rote Kerze | 264 | 11 | 3 | 1.3 / -0.1 |
+| Rot + Volumen | 264 | 17 | 8 | 0.2 / 0.6 |
+| Alarm 187 | 264 | 1 | 6 | -1.7 / -2.7 |
+| Hoch heute | 264 | 0 | 0 | -0.5 / 0.5 |
+| RSI hoch | 264 | 1 | 12 | -3.7 / -3.0 |
+| Weit ueber EMA50 | 260 | 1 | 14 | -4.6 / -3.9 |
+| Schneller Anstieg | 264 | 4 | 4 | 0.6 / -0.3 |
+| Kauf mit 2+ Punkten | 262 | 2 | 0 | 0.1 / -0.5 |
 
 ### halber Gewinn weg
 
 | Merkmal | Werte | Plus | Minus | Diff |
 |---|---|---|---|---|
-| Rote Kerze | 264 | 251 | 0 | 23.4 / 24.7 |
-| Rot + Volumen | 264 | 224 | 0 | 22.8 / 23.6 |
-| Alarm 187 | 264 | 26 | 1 | 3.4 / 2.5 |
-| Hoch heute | 264 | 0 | 264 | -23.3 / -23.9 |
-| RSI hoch | 264 | 0 | 236 | -24.4 / -30.1 |
-| Weit ueber EMA50 | 260 | 0 | 225 | -24.0 / -30.1 |
-| Schneller Anstieg | 264 | 32 | 3 | 4.0 / 4.2 |
-| Kauf mit 2+ Punkten | 262 | 15 | 9 | 0.7 / -2.5 |
+| Rote Kerze | 264 | 16 | 2 | 2.5 / 1.1 |
+| Rot + Volumen | 264 | 13 | 5 | 2.1 / 1.1 |
+| Alarm 187 | 264 | 9 | 4 | -0.2 / -0.7 |
+| Hoch heute | 264 | 0 | 12 | -1.7 / -0.8 |
+| RSI hoch | 264 | 5 | 35 | -4.5 / -5.8 |
+| Weit ueber EMA50 | 260 | 2 | 40 | -4.0 / -6.9 |
+| Schneller Anstieg | 264 | 7 | 1 | 0.3 / 0.8 |
+| Kauf mit 2+ Punkten | 262 | 4 | 1 | -0.1 / -1.1 |
 
 ### Erklaerung der Merkmale
 

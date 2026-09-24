@@ -35,6 +35,9 @@ weit gelaufen (>= ueblicher Anstieg), Einstieg mit 2+ Boden-Punkten.
 PRUEFUNG je Wert (keine Pools), 2019-2022 / ab 2023, Stoppregel 8 Pp.
 Keine Positionsdaten im Repo (E58) - die Anwendung aufs Depot passiert lokal.
 
+Stufe 2 (24.09.2026): Renditetest der Verkaufsregeln (Halten, Ruecksetzer T,
+Alarm 187, Nachlauf 25/33/40 %), siehe handel().
+
 Aufruf: python verkauf.py [--jahre 7] [--nur AAPL,MSFT]
 """
 
@@ -90,11 +93,11 @@ def rang(wert: float, frueher: np.ndarray) -> float:
     return float(np.mean(frueher < wert))
 
 
-def punkte_je_wert(ticker: str, df: pd.DataFrame) -> list[dict]:
+def punkte_je_wert(ticker: str, df: pd.DataFrame) -> tuple[list[dict], list[dict]]:
     zeilen, info = boden.pruefttage(ticker, df)
     t = info.get("t_atr")
     if not zeilen or t is None:
-        return []
+        return [], []
     df = df.dropna(subset=["Open", "High", "Low", "Close"])
     n = len(df)
     O, H, L, C = (df[k].values.astype(float) for k in ("Open", "High", "Low", "Close"))
@@ -173,6 +176,128 @@ def punkte_je_wert(ticker: str, df: pd.DataFrame) -> list[dict]:
                 "weit_gelaufen": float(r_rel >= 1.0) if np.isfinite(r_rel) else np.nan,
                 "boden2": float(z["punkte"] >= 2),
             })
+    return aus, rendite_je_wert(ticker, df, zeilen, t, typ_anstieg)
+
+
+# ── Renditetest (Stufe 2, Peter 24.09.2026) ─────────────────────────
+
+HALTE_MAX = 126          # Handelstage, rund ein halbes Jahr - dann Verkauf zum Schluss
+PUFFER_TEST = (2.0, 3.0) # KO = Bezugstief minus Puffer x ATR des Kauftags
+STRATEGIEN = {
+    "halten": "Halten bis Knock-out oder 126 Tage",
+    "ruecksetzer_t": "Verkauf beim Ruecksetzer um T ATR vom Hoch (Chance A)",
+    "alarm187": "Verkauf zum Schluss am ersten Tag mit Alarm 187",
+    "nachlauf25": "Nachlauf: ab ueblichem Anstieg Verkauf, wenn 25 % des Anstiegs weg",
+    "nachlauf33": "Nachlauf: ab ueblichem Anstieg Verkauf, wenn 33 % des Anstiegs weg",
+    "nachlauf40": "Nachlauf: ab ueblichem Anstieg Verkauf, wenn 40 % des Anstiegs weg",
+    "nachlauf33_frueh": "Nachlauf 33 %, aber schon ab halbem ueblichen Anstieg",
+}
+
+
+def handel(O, H, L, C, a, e: int, ko: float, bez: float, t: float, typ: float) -> dict:
+    """Alle Strategien fuer einen Kauf in einem Durchgang. Wert des Scheins =
+    Kurs - KO (ohne Aufgeld, Spread, Gebuehren). Je Tag zuerst Knock-out
+    (Tief <= KO), dann die Verkaufsregel - im Zweifel der schlechtere Fall.
+    Rueckgabe je Strategie: (Rendite, Haltetage)."""
+    ce = C[e]
+    a0 = a[e]
+    einsatz = ce - ko
+    offen = set(STRATEGIEN)
+    erg = {}
+    hmax = ce              # hoechstes Hoch seit Kauf (inkl. Einstieg), bis Vortag
+    hmax_tag = e
+    def zu(name, preis, tag):
+        erg[name] = ((preis - ko) / einsatz - 1.0, tag - e)
+        offen.discard(name)
+    for k in range(e + 1, e + 1 + HALTE_MAX):
+        if L[k] <= ko:
+            for name in list(offen):
+                zu(name, ko, k)          # Knock-out: Rest 0
+            break
+        anstieg = (hmax - ce)
+        # Ruecksetzer um T vom Hoch bis Vortag (wie Chance A / Renditeprobe)
+        if "ruecksetzer_t" in offen and L[k] <= hmax - t * a0:
+            zu("ruecksetzer_t", min(O[k], hmax - t * a0), k)
+        # Nachlauf-Regeln: aktiv, sobald der Anstieg bis Vortag die Schwelle erreicht
+        for name, anteil, schwelle in (("nachlauf25", 0.25, 1.0), ("nachlauf33", 0.33, 1.0),
+                                       ("nachlauf40", 0.40, 1.0), ("nachlauf33_frueh", 0.33, 0.5)):
+            if name in offen and typ > 0 and anstieg / a0 >= schwelle * typ:
+                stopp = hmax - anteil * anstieg
+                if L[k] <= stopp:
+                    zu(name, min(O[k], stopp), k)
+        if H[k] > hmax:
+            hmax, hmax_tag = H[k], k
+        # Alarm 187 am Tagesschluss: Schluss > 3 ATR ueber Bezugstief, Hoch seit
+        # Kauf hoechstens 3 Tage alt, rote Kerze
+        if ("alarm187" in offen and C[k] < O[k] and k - hmax_tag <= HOCH_ALTER
+                and (C[k] - bez) / a[k] > ALARM_ATR):
+            zu("alarm187", C[k], k)
+    else:
+        k = e + HALTE_MAX
+        for name in list(offen):
+            zu(name, C[k], k)
+    return erg
+
+
+def rendite_je_wert(ticker: str, df: pd.DataFrame, zeilen: list[dict], t: float,
+                    typ_anstieg: float) -> list[dict]:
+    df = df.dropna(subset=["Open", "High", "Low", "Close"])
+    n = len(df)
+    O, H, L, C = (df[k].values.astype(float) for k in ("Open", "High", "Low", "Close"))
+    a = boden.atr(df)
+    idx = {f"{d:%Y-%m-%d}": i for i, d in enumerate(df.index)}
+    aus = []
+    for z in zeilen:
+        if not (z["tief_ab_2"] == 1 and z["rsi_unter_50"] == 1):
+            continue
+        e = idx.get(z["datum"])
+        if e is None or e + HALTE_MAX >= n or not (np.isfinite(a[e]) and a[e] > 0):
+            continue
+        for pp in PUFFER_TEST:
+            ko = z["bezugstief"] - pp * a[e]
+            if ko >= C[e]:
+                continue
+            for name, (rend, tage) in handel(O, H, L, C, a, e, ko, z["bezugstief"], t, typ_anstieg).items():
+                aus.append({"ticker": ticker, "kauf": z["datum"], "puffer": pp, "strategie": name,
+                            "rendite": round(rend, 4), "tage": tage, "punkte": z["punkte"]})
+    return aus
+
+
+def rendite_bericht(rd: pd.DataFrame) -> list[str]:
+    rd = rd.copy()
+    rd["zeitraum"] = np.where(pd.to_datetime(rd["kauf"]) < TEILUNG, "bis2022", "ab2023")
+    je = rd.groupby(["ticker", "zeitraum", "puffer", "strategie"]).agg(
+        r=("rendite", "mean"), tage=("tage", "mean"), n=("rendite", "size")).reset_index()
+    je = je[je["n"] >= MIN_FAELLE]
+    aus = ["## Renditetest Verkaufsregeln", "",
+           "Kauf = Pruefttag mit Tief >= 2 und RSI < 50, Einstieg Schluss, KO = Bezugstief "
+           "minus Puffer. Schein ohne Aufgeld, Spread, Gebuehren; Knock-out = -100 %. "
+           "Hoechstens 126 Handelstage. Je Wert Mittelwert (mind. 10 Kaeufe), dann Median "
+           "ueber die Werte. 'Je Monat' = Rendite je 21 Handelstage Haltedauer (Geld ist "
+           "frueher wieder frei). 'Besser als 187' = Werte, bei denen die Regel in BEIDEN "
+           "Zeitraeumen mehr bringt als der Ausstiegsalarm 187.", ""]
+    for pp in PUFFER_TEST:
+        g = je[je["puffer"] == pp]
+        breit = g.pivot_table(index=["ticker", "zeitraum"], columns="strategie", values="r")
+        aus += [f"### Puffer {pp:g} ATR", "",
+                "| Regel | Rendite 19-22 / ab 23 | Tage | je Monat | besser als 187 |",
+                "|---|---|---|---|---|"]
+        for name, text in STRATEGIEN.items():
+            if name not in breit.columns:
+                continue
+            a_ = g[(g["strategie"] == name) & (g["zeitraum"] == "bis2022")]
+            b_ = g[(g["strategie"] == name) & (g["zeitraum"] == "ab2023")]
+            besser = "-"
+            if name != "alarm187" and "alarm187" in breit.columns:
+                d = (breit[name] - breit["alarm187"]).dropna().unstack("zeitraum").dropna()
+                if {"bis2022", "ab2023"} <= set(d.columns):
+                    besser = f"{int(((d['bis2022'] > 0) & (d['ab2023'] > 0)).sum())} / {len(d)}"
+            gg = g[g["strategie"] == name]
+            monat = (gg["r"] / gg["tage"].clip(lower=1) * 21).median()
+            aus.append(f"| {name} | {f(100 * a_['r'].median())} / {f(100 * b_['r'].median())} % | "
+                       f"{f(gg['tage'].median())} | {f(100 * monat)} % | {besser} |")
+        aus.append("")
+    aus += ["### Regeln", ""] + [f"- **{k}**: {v}" for k, v in STRATEGIEN.items()] + [""]
     return aus
 
 
@@ -291,10 +416,12 @@ def main() -> int:
     if not daten:
         print("Keine Kursdaten - Abbruch.")
         return 1
-    alle = []
+    alle, renditen = [], []
     for i, (t, df) in enumerate(sorted(daten.items()), start=1):
         try:
-            alle += punkte_je_wert(t, df)
+            pk, rd = punkte_je_wert(t, df)
+            alle += pk
+            renditen += rd
         except Exception as exc:  # noqa: BLE001
             print(f"  ! {t}: {exc}")
         if i % 25 == 0:
@@ -309,7 +436,13 @@ def main() -> int:
     mw = je_wert_pruefen(p)
     mw.to_csv(aus / "verkauf_merkmale_werte.csv", index=False)
     stand = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
-    (aus / "verkauf.md").write_text(bericht(p, mw, stand), encoding="utf-8")
+    rd = pd.DataFrame(renditen)
+    text = bericht(p, mw, stand)
+    if len(rd):
+        with gzip.open(aus / "verkauf_rendite.csv.gz", "wt", encoding="utf-8", newline="") as fh:
+            rd.to_csv(fh, index=False)
+        text += "\n" + "\n".join(rendite_bericht(rd))
+    (aus / "verkauf.md").write_text(text, encoding="utf-8")
     print(f"  {len(p)} Entscheidungspunkte aus {p['ticker'].nunique()} Werten -> {aus}")
     return 0
 

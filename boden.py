@@ -752,6 +752,9 @@ def bericht(profil: pd.DataFrame, zf: pd.DataFrame, kand: pd.DataFrame,
 # Filter Tief >= 2 und RSI < 50 bleiben (am Anker in beiden Zeitraeumen
 # leicht besser), dazu mind. 2 Boden-Punkte.
 KANDIDATEN_GRUPPE = "2+ P, Tief>=2, RSI<50"
+# Analystenfilter wie Block 1 (Peter 24.09.2026: "bei 75 % lassen"). Historisch
+# nicht pruefbar (keine Analystenhistorie), gilt deshalb nur in der Anzeige.
+KAUFANTEIL_MIN = 75.0
 
 
 def gruppe_von(z: pd.Series) -> str:
@@ -791,7 +794,12 @@ def heute(daten: dict[str, pd.DataFrame]) -> int:
         grenze = f"{df.index[-FENSTER]:%Y-%m-%d}" if len(df) > FENSTER else ""
         return " ".join(x for x in LUECKEN_OFFEN.get(t, []) if x >= grenze)
     k["luecken"] = [luecke(t) for t in k["ticker"]]
-    k["kandidat"] = ((k["gruppe"] == KANDIDATEN_GRUPPE) & (k["luecken"] == "")).astype(int)
+    ana_pfad = BASE / "docs" / "analysten.csv"
+    ana = (pd.read_csv(ana_pfad).set_index("ticker")["kaufen_pct"]
+           if ana_pfad.exists() else pd.Series(dtype=float))
+    k["kaufanteil"] = [ana.get(t, np.nan) for t in k["ticker"]]
+    k["kandidat"] = ((k["gruppe"] == KANDIDATEN_GRUPPE) & (k["luecken"] == "")
+                     & (k["kaufanteil"] >= KAUFANTEIL_MIN)).astype(int)
     k["anker"] = np.nan
     if ANKER_QUELLE.exists():
         aw = pd.read_csv(ANKER_QUELLE).set_index(["ticker", "gruppe"])["anker_gesamt"]
@@ -800,14 +808,15 @@ def heute(daten: dict[str, pd.DataFrame]) -> int:
     spalten = ["ticker", "datum", "kandidat", "gruppe", "punkte", "position", "rsi",
                "erholung_begonnen", "rsi_tief_rang", "erholung_vol", "zweig_a",
                "einstieg", "bezugstief", "bezugstief_datum", "atr", "anker", "ko_marke",
-               "korr_atr", "korr_rang", "luecken"]
+               "korr_atr", "korr_rang", "luecken", "kaufanteil"]
     k = k.sort_values(["kandidat", "punkte", "ticker"], ascending=[False, False, True])
     k[spalten].to_csv(CSV_HEUTE, index=False)
 
     kand = k[k["kandidat"] == 1]
     aus = [f"# Boden-Screening {tag} (Stand {stand})", "",
            "Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + "
-           "Tief >= 2 + RSI < 50 + mind. 2 Boden-Punkte. Anker = niedrigster "
+           "Tief >= 2 + RSI < 50 + mind. 2 Boden-Punkte + mind. 75 % "
+           "Kaufempfehlungen. Anker = niedrigster "
            "Puffer mit 60 % Halterate fuer diese Gruppe und diesen Wert "
            "(Vollauf), KO-Marke = Bezugstief - Anker x ATR.", "",
            f"## Kandidaten ({len(kand)})", ""]
@@ -833,6 +842,8 @@ def heute(daten: dict[str, pd.DataFrame]) -> int:
             gruende.append("Umkehr a")
         if r["luecken"]:
             gruende.append("Daten unvollstaendig (" + r["luecken"] + ")")
+        if not r["kaufanteil"] >= KAUFANTEIL_MIN:
+            gruende.append(f"Analysten {f(r['kaufanteil'], 0)} %")
         aus.append(f"| {r['ticker']} | {int(r['punkte'])} | {', '.join(gruende)} |")
     if veraltet:
         aus += ["", "Nicht aktuell (kein Kurs vom " + tag + "): " + ", ".join(veraltet)]

@@ -7,6 +7,12 @@ name: Boden-Screening
 on:
   schedule:
     - cron: "0 8 1 * *"
+  # Startet auch von selbst, sobald boden.py geaendert hochgeladen wird
+  # (24.09.2026) - dann muss niemand von Hand auf "Run workflow" druecken.
+  push:
+    branches: [main]
+    paths:
+      - "boden.py"
   workflow_dispatch:
     inputs:
       jahre:

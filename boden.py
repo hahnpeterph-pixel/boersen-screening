@@ -85,6 +85,7 @@ AUS = BASE / "docs" / "boden"
 CSV_KAND = AUS / "boden_kandidaten.csv.gz"
 CSV_PROFIL = AUS / "boden_profile.csv"
 CSV_MERKMALE = AUS / "boden_merkmale_werte.csv"
+CSV_RENDITE = AUS / "boden_rendite_werte.csv"
 MD_AUS = AUS / "boden.md"
 
 JAHRE = 7
@@ -100,6 +101,7 @@ RANG_HOCH = 0.7          # "tiefer/laenger als 7 von 10 frueheren"
 RANG_TIEF = 0.3          # "RSI tiefer als 7 von 10 frueheren Boeden"
 MIN_VORFAELLE = 5        # so viele fruehere Korrekturen braucht ein Rang
 RATIO_BODEN = 0.1        # Mindestnenner fuer Chance/Rueckgang
+PUFFER_SIM = (1.0, 2.0, 3.0)   # KO-Abstand unter dem Bezugstief (ATR) fuer die Renditeprobe
 TEILUNG = pd.Timestamp("2023-01-01")   # Stoppregel: bis 2022 / ab 2023
 MIN_FAELLE = 10          # je Gruppe und Zeitraum fuer eine Quote
 STOPP_PP = 8.0           # Stoppregel: mindestens 8 Prozentpunkte
@@ -246,6 +248,36 @@ def zickzack(df: pd.DataFrame, a: np.ndarray, t: float):
     return zustand, extrem, k_hoch, korrekturen
 
 
+# ── Renditeprobe KO-Schein ─────────────────────────────────────────
+
+def ko_handel(O, H, L, C, d: int, ko: float, t: float, ad: float) -> float:
+    """Vereinfachter Turbo-Long-Handel ab Schluss des Pruefttags (24.09.2026,
+    Peter: "Rendite je Punktestufe"). Wert des Scheins = Kurs - KO, also
+    ohne Aufgeld, Spread, Gebuehren und Finanzierung. Ein spaeterer Einstieg
+    (weiter ueber dem Tief) hat damit automatisch weniger Hebel.
+
+    Tag fuer Tag, hoechstens 63 Handelstage:
+      1. Tagestief am oder unter KO -> Knock-out, -100 %.
+      2. Tagestief am oder unter (hoechster Stand bis Vortag - T ATR) ->
+         Verkauf zu dieser Marke (bei Eroeffnung darunter: zur Eroeffnung).
+         Das ist dasselbe Anstiegsende wie bei Chance A.
+      3. Sonst nach 63 Tagen Verkauf zum Schluss.
+    KO wird vor dem Stopp geprueft - im Zweifel zaehlt der schlechtere Fall.
+    Rueckgabe: Rendite als Bruch (0,5 = +50 %)."""
+    einsatz = C[d] - ko
+    m = C[d]
+    for j in range(d + 1, d + 1 + FENSTER):
+        if L[j] <= ko:
+            return -1.0
+        stopp = m - t * ad
+        if L[j] <= stopp:
+            verkauf = min(O[j], stopp)
+            return (verkauf - ko) / einsatz - 1.0
+        if H[j] > m:
+            m = H[j]
+    return (C[d + FENSTER] - ko) / einsatz - 1.0
+
+
 # ── Pruefttage eines Werts ─────────────────────────────────────────
 
 def pruefttage(ticker: str, df: pd.DataFrame) -> tuple[list[dict], dict]:
@@ -381,10 +413,18 @@ def pruefttage(ticker: str, df: pd.DataFrame) -> tuple[list[dict], dict]:
             "ueber_ema200": float(C[d] > ema200[d]) if d >= 199 else np.nan,
             "tief_ab_2": float(position >= 2),
         }
+        # Boden-Punkte (Vorschlag 24.09.2026): die drei eng verwandten
+        # Erholungszeichen zaehlen zusammen nur EINEN Punkt.
+        z["erholung_begonnen"] = float(max(z["kein_neues_tief"],
+                                           z["schluss_ueber_vortageshoch"], z["zweig_b"]))
+        z["punkte"] = int(z["erholung_begonnen"] + (z["rsi_tief_rang"] == 1)
+                          + (z["erholung_vol"] == 1))
 
         # Ergebnis - nur mit vollem 63-Tage-Fenster
         for k in ("risiko", "rueckgang", "chance_b", "chance_a", "tage_a", "offen_a"):
             z[k] = np.nan
+        for pp in PUFFER_SIM:
+            z[f"rendite_p{pp:g}"] = np.nan
         if d + FENSTER < n:
             lo = L[d + 1:d + 1 + FENSTER].min()
             hi = H[d + 1:d + 1 + FENSTER].max()
@@ -400,6 +440,10 @@ def pruefttage(ticker: str, df: pd.DataFrame) -> tuple[list[dict], dict]:
             else:
                 z["chance_a"] = (max(C[d], rest_h.max()) - C[d]) / ad
                 z["tage_a"], z["offen_a"] = len(rest_h), 1
+            for pp in PUFFER_SIM:
+                ko = bez - pp * ad
+                if ko < C[d]:
+                    z[f"rendite_p{pp:g}"] = ko_handel(O, H, L, C, d, ko, t, ad)
         zeilen.append(z)
     info["pruefttage"] = len(zeilen)
     return zeilen, info
@@ -471,6 +515,65 @@ def zusammenfassung(mw: pd.DataFrame) -> pd.DataFrame:
     return pd.DataFrame(zeilen)
 
 
+# ── Rendite je Punktestufe, je Wert ────────────────────────────────
+
+def rendite_je_stufe(kand: pd.DataFrame) -> pd.DataFrame:
+    """Je Wert, Zeitraum, Puffer und Punktestufe: mittlere Rendite und
+    KO-Quote. Mittelwert, nicht Median - fuer das Geld zaehlt der
+    Erwartungswert, ein Knock-out wiegt voll."""
+    k = kand.copy()
+    k["zeitraum"] = np.where(pd.to_datetime(k["datum"]) < TEILUNG, "bis2022", "ab2023")
+    zeilen = []
+    for pp in PUFFER_SIM:
+        sp = f"rendite_p{pp:g}"
+        h = k[k[sp].notna()]
+        for (ticker, zr, stufe), g in h.groupby(["ticker", "zeitraum", "punkte"]):
+            zeilen.append({"ticker": ticker, "zeitraum": zr, "puffer": pp, "punkte": stufe,
+                           "faelle": len(g), "rendite_mittel": round(100 * g[sp].mean(), 1),
+                           "rendite_median": round(100 * g[sp].median(), 1),
+                           "ko_quote": round(100 * (g[sp] == -1.0).mean(), 1)})
+    return pd.DataFrame(zeilen)
+
+
+def rendite_bericht(rw: pd.DataFrame) -> list[str]:
+    aus = ["## Rendite je Punktestufe (Renditeprobe KO-Schein)", "",
+           "Punkte: 1 Erholung begonnen (kein neues Tief / Schluss ueber "
+           "Vortageshoch / Umkehr b) + 1 RSI am Tief unter 7 von 10 frueheren "
+           "Boeden + 1 gruene Erholungskerze mit Volumen.",
+           "Schein: KO = Bezugstief minus Puffer, Einstieg Schluss Pruefttag, "
+           "Ausstieg beim Ruecksetzer um T ATR vom Hoch oder nach 63 Tagen, "
+           "Knock-out = -100 %. Ohne Aufgeld, Spread, Gebuehren.",
+           f"Je Wert Mittelwert (mind. {MIN_FAELLE} Faelle), dann Median ueber "
+           "die Werte. KO = Median der KO-Quoten.", ""]
+    ok = rw[rw["faelle"] >= MIN_FAELLE]
+    for pp in PUFFER_SIM:
+        g = ok[ok["puffer"] == pp]
+        aus += [f"### Puffer {pp:g} ATR", "",
+                "| Punkte | 19-22 | ab 23 | KO | Werte |", "|---|---|---|---|---|"]
+        for stufe in sorted(g["punkte"].unique()):
+            a = g[(g["punkte"] == stufe) & (g["zeitraum"] == "bis2022")]
+            b = g[(g["punkte"] == stufe) & (g["zeitraum"] == "ab2023")]
+            ko = g[g["punkte"] == stufe]["ko_quote"].median()
+            aus.append(f"| {stufe} | {f(a['rendite_mittel'].median(), 0)} % | "
+                       f"{f(b['rendite_mittel'].median(), 0)} % | {f(ko, 0)} % | "
+                       f"{a['ticker'].nunique()}/{b['ticker'].nunique()} |")
+        # Werte, bei denen Stufe >= 2 in BEIDEN Zeitraeumen besser als Stufe 0
+        breit = g.pivot_table(index=["ticker", "zeitraum"], columns="punkte",
+                              values="rendite_mittel")
+        hoch = breit[[c for c in breit.columns if c >= 2]].mean(axis=1) if any(
+            c >= 2 for c in breit.columns) else None
+        if hoch is not None and 0 in breit.columns:
+            vgl = (hoch - breit[0]).dropna().unstack("zeitraum").dropna()
+            if {"bis2022", "ab2023"} <= set(vgl.columns):
+                besser = int(((vgl["bis2022"] > 0) & (vgl["ab2023"] > 0)).sum())
+                schlechter = int(((vgl["bis2022"] < 0) & (vgl["ab2023"] < 0)).sum())
+                aus.append("")
+                aus.append(f"Stufe 2-3 gegen 0, je Wert: besser in beiden Zeitraeumen "
+                           f"{besser}, schlechter in beiden {schlechter}, von {len(vgl)}.")
+        aus.append("")
+    return aus
+
+
 # ── Bericht ────────────────────────────────────────────────────────
 
 def f(x, nk=1):
@@ -478,7 +581,7 @@ def f(x, nk=1):
 
 
 def bericht(profil: pd.DataFrame, zf: pd.DataFrame, kand: pd.DataFrame,
-            jahre: int, stand: str) -> str:
+            jahre: int, stand: str, rw: pd.DataFrame | None = None) -> str:
     aus = [f"# Boden-Screening - Stufe 1 (Stand {stand}, {jahre} Jahre)", "",
            "Parallellauf, aendert nichts am bestehenden Screening. "
            "Pruefttage = alle Tage mit Block-1-Umkehrzeichen (ohne RSI- und "
@@ -517,15 +620,17 @@ def bericht(profil: pd.DataFrame, zf: pd.DataFrame, kand: pd.DataFrame,
     aus += ["### Erklaerung der Merkmale", ""]
     aus += [f"- **{kurz}**: {lang}" for kurz, lang in MERKMALE.values()]
     aus.append("")
+    if rw is not None and len(rw):
+        aus += rendite_bericht(rw)
 
     letzter = kand["datum"].max()
     heute = kand[kand["datum"] == letzter].sort_values("ticker")
     aus += [f"## Pruefttage am {letzter} (nur Information)", "",
-            "| Wert | Tief | RSI | Korr ATR (Rang) |", "|---|---|---|---|"]
-    for _, r in heute.iterrows():
-        rg = "" if not np.isfinite(r["korr_rang"]) else f" ({r['korr_rang'] * 10:.0f}/10)"
+            "| Wert | Tief | RSI | Punkte |", "|---|---|---|---|"]
+    for _, r in heute.sort_values(["punkte", "ticker"], ascending=[False, True]).iterrows():
+        warn = " (Umkehr a)" if r["zweig_a"] == 1 and r["erholung_begonnen"] == 0 else ""
         aus.append(f"| {r['ticker']} | {r['position']} | {f(r['rsi'], 0)} | "
-                   f"{f(r['korr_atr'], 2)}{rg} |")
+                   f"{int(r['punkte'])}{warn} |")
     aus.append("")
     return "\n".join(aus)
 
@@ -610,9 +715,11 @@ def schreiben(kand: pd.DataFrame, profil: pd.DataFrame, jahre: int) -> None:
     mw = merkmale_pruefen(kand)
     mw.to_csv(CSV_MERKMALE, index=False)
     zf = zusammenfassung(mw)
-    MD_AUS.write_text(bericht(profil, zf, kand, jahre, stand), encoding="utf-8")
+    rw = rendite_je_stufe(kand)
+    rw.to_csv(CSV_RENDITE, index=False)
+    MD_AUS.write_text(bericht(profil, zf, kand, jahre, stand, rw), encoding="utf-8")
     print(f"  geschrieben: {CSV_KAND.name}, {CSV_PROFIL.name}, "
-          f"{CSV_MERKMALE.name}, {MD_AUS.name}")
+          f"{CSV_MERKMALE.name}, {CSV_RENDITE.name}, {MD_AUS.name}")
 
 
 def main() -> int:
@@ -623,12 +730,13 @@ def main() -> int:
     if "--nur" in sys.argv:
         # Testlauf mit wenigen Werten: eigener Unterordner, damit die
         # vollstaendige Auswertung nicht ueberschrieben wird.
-        global AUS, CSV_KAND, CSV_PROFIL, CSV_MERKMALE, MD_AUS
+        global AUS, CSV_KAND, CSV_PROFIL, CSV_MERKMALE, MD_AUS, CSV_RENDITE
         tickers = [t.strip() for t in
                    sys.argv[sys.argv.index("--nur") + 1].split(",") if t.strip()]
         AUS = AUS / "test"
         CSV_KAND, CSV_PROFIL = AUS / CSV_KAND.name, AUS / CSV_PROFIL.name
         CSV_MERKMALE, MD_AUS = AUS / CSV_MERKMALE.name, AUS / MD_AUS.name
+        CSV_RENDITE = AUS / CSV_RENDITE.name
     daten = lade(tickers, jahre)
     if not daten:
         print("Keine Kursdaten - Abbruch.")

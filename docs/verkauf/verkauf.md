@@ -1,4 +1,4 @@
-# Verkaufs-Check - Stufe 1 (Stand 2026-09-24 19:11 UTC)
+# Verkaufs-Check - Stufe 1 (Stand 2026-09-24 19:27 UTC)
 
 Parallellauf. Kauf = Pruefttag mit Tief >= 2 und RSI < 50, Einstieg Schluss. Entscheidungspunkt = Hoch seit Kauf hoechstens 3 Tage alt, Anstieg mind. 1 ATR. Ganz weg = Kurs faellt auf den Einstieg, bevor ein neues Hoch kommt; halb weg = die Haelfte des Anstiegs geht verloren, bevor ein neues Hoch kommt.
 
@@ -100,3 +100,29 @@ Kauf = Pruefttag mit Tief >= 2 und RSI < 50, Einstieg Schluss, KO = Bezugstief m
 - **nachlauf33**: Nachlauf: ab ueblichem Anstieg Verkauf, wenn 33 % des Anstiegs weg
 - **nachlauf40**: Nachlauf: ab ueblichem Anstieg Verkauf, wenn 40 % des Anstiegs weg
 - **nachlauf33_frueh**: Nachlauf 33 %, aber schon ab halbem ueblichen Anstieg
+
+## Lohnt Halten noch? (Erwartungswert ab heute)
+
+Wie viel kam ab einem Tag in dieser Lage im Schnitt noch dazu, wenn man nach der heutigen Regel weiter haelt (Alarm 187, KO 2 ATR unter Bezugstief, max. 126 T). In ATR, je Wert gemittelt (mind. 20 Tage), Median ueber die Werte, 2019-22 / ab 23. In Klammern: Werte, bei denen es in BEIDEN Zeitraeumen negativ war.
+
+| Gelaufen | schon abgegeben | Halten bringt noch |
+|---|---|---|
+| frueh | 0-10 % | 0.9 / - ATR (0/1) |
+| frueh | 10-25 % | 0.1 / 0.3 ATR (0/0) |
+| frueh | 40-100 % | 1.0 / 0.3 ATR (1/3) |
+| frueh | unter Einstieg | 0.7 / 0.2 ATR (0/4) |
+| mittel | 0-10 % | 0.1 / 0.4 ATR (21/164) |
+| mittel | 10-25 % | 0.3 / 0.3 ATR (30/231) |
+| mittel | 25-40 % | 0.5 / 0.3 ATR (19/205) |
+| mittel | 40-100 % | 0.5 / 0.3 ATR (38/260) |
+| mittel | unter Einstieg | 0.4 / 0.4 ATR (43/252) |
+| weit | 0-10 % | 0.1 / 0.2 ATR (33/193) |
+| weit | 10-25 % | 0.2 / 0.3 ATR (32/203) |
+| weit | 25-40 % | 0.3 / 0.3 ATR (30/152) |
+| weit | 40-100 % | 0.5 / 0.5 ATR (34/253) |
+| weit | unter Einstieg | 0.2 / 0.3 ATR (38/194) |
+| sehr weit | 0-10 % | 0.0 / 0.1 ATR (41/205) |
+| sehr weit | 10-25 % | 0.3 / 0.4 ATR (21/118) |
+| sehr weit | 25-40 % | 0.8 / 0.5 ATR (9/67) |
+| sehr weit | 40-100 % | 1.0 / 0.8 ATR (26/163) |
+| sehr weit | unter Einstieg | -0.4 / 0.3 ATR (18/72) |

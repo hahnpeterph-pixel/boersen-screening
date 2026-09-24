@@ -61,6 +61,7 @@ MIN_VOR = 5
 MIN_FAELLE = 10
 STOPP_PP = 8.0
 TEILUNG = pd.Timestamp("2023-01-01")
+RUECKGABE_KLASSEN = ((-1.0, 0.1), (0.1, 0.25), (0.25, 0.4), (0.4, 9.0))
 BAENDER = ((0.0, 0.5, "frueh"), (0.5, 1.0, "mittel"), (1.0, 1.5, "weit"), (1.5, 99.0, "sehr weit"))
 
 MERKMALE = {   # Schluessel: (kurz, Erklaerung)
@@ -156,6 +157,9 @@ def punkte_je_wert(ticker: str, df: pd.DataFrame) -> list[dict]:
             aus.append({
                 "ticker": ticker, "kauf": z["datum"], "datum": f"{df.index[k]:%Y-%m-%d}",
                 "tage_seit_kauf": k - e, "anstieg_atr": round(anstieg, 3),
+                # Wie viel vom Anstieg am Schluss des Entscheidungstags schon
+                # wieder abgegeben ist (0 = Schluss am Hoch, 1 = am Einstieg).
+                "rueckgabe": round((hmax - C[k]) / (hmax - ce), 4),
                 "anstieg_rel": round(r_rel, 3) if np.isfinite(r_rel) else np.nan,
                 "band": band(r_rel) if np.isfinite(r_rel) else "",
                 "ganz_weg": ganz, "halb_weg": halb,
@@ -190,8 +194,19 @@ def je_wert_pruefen(p: pd.DataFrame) -> pd.DataFrame:
                     mit, ohne = h[h[m] == 1], h[h[m] == 0]
                     z[f"n_mit_{zr}"], z[f"n_ohne_{zr}"] = len(mit), len(ohne)
                     ok = len(mit) >= MIN_FAELLE and len(ohne) >= MIN_FAELLE
-                    z[f"diff_{zr}"] = (round(100 * (mit[ziel].mean() - ohne[ziel].mean()), 1)
-                                       if ok else np.nan)
+                    # Innerhalb gleicher Rueckgabe vergleichen: Eine rote
+                    # Kerze hat vom Anstieg schon etwas abgegeben, der Weg
+                    # zurueck ist kuerzer - das waere sonst ein Rechen-
+                    # effekt, kein Signal. Gewichtet nach Faellen mit Merkmal.
+                    diffs, gew = [], []
+                    for lo, hi in RUECKGABE_KLASSEN:
+                        mk = mit[(mit["rueckgabe"] >= lo) & (mit["rueckgabe"] < hi)]
+                        ok_ = ohne[(ohne["rueckgabe"] >= lo) & (ohne["rueckgabe"] < hi)]
+                        if len(mk) >= 5 and len(ok_) >= 5:
+                            diffs.append(mk[ziel].mean() - ok_[ziel].mean())
+                            gew.append(len(mk))
+                    z[f"diff_{zr}"] = (round(100 * float(np.average(diffs, weights=gew)), 1)
+                                       if ok and diffs else np.nan)
                 zeilen.append(z)
     return pd.DataFrame(zeilen)
 
@@ -223,8 +238,27 @@ def bericht(p: pd.DataFrame, mw: pd.DataFrame, stand: str) -> str:
                 werte.append(f(100 * q.median()) + " %" if len(q) else "-")
             zeile.append(" / ".join(werte))
         aus.append("| " + " | ".join(zeile) + " |")
+    # Wie viel ist am Schluss schon abgegeben - und wie oft geht dann der Rest?
+    w = p[p["anstieg_rel"] >= 1.0]
+    aus += ["", "## Schon weit gelaufen: Rueckfall nach bereits abgegebenem Anteil", "",
+            "| Schon abgegeben | ganz weg 19-22 / ab 23 | halb weg 19-22 / ab 23 |",
+            "|---|---|---|"]
+    for lo, hi in RUECKGABE_KLASSEN:
+        name = f"{max(lo, 0) * 100:.0f}-{min(hi, 1) * 100:.0f} %" if hi < 9 else f"ueber {lo * 100:.0f} %"
+        zeile = [name]
+        for ziel in ZIELE:
+            werte = []
+            for zr in ("bis2022", "ab2023"):
+                g = w[(w["rueckgabe"] >= lo) & (w["rueckgabe"] < hi) & (w["zeitraum"] == zr)]
+                q = g.groupby("ticker")[ziel].agg(["mean", "size"])
+                q = q[q["size"] >= MIN_FAELLE]["mean"]
+                werte.append(f(100 * q.median()) + " %" if len(q) else "-")
+            zeile.append(" / ".join(werte))
+        aus.append("| " + " | ".join(zeile) + " |")
     aus += ["", "## Merkmale einzeln - nur wenn schon mind. der uebliche Anstieg gelaufen ist", "",
             f"Werte = mind. {MIN_FAELLE} Faelle mit UND ohne Merkmal in beiden Zeitraeumen. "
+            "Verglichen wird nur bei gleicher bereits abgegebener Rueckgabe "
+            "(0-10 / 10-25 / 25-40 / ueber 40 % des Anstiegs). "
             f"Plus = Rueckfall in beiden Zeitraeumen mind. {STOPP_PP:.0f} Prozentpunkte "
             "HAEUFIGER mit Merkmal (spricht fuer Verkauf), Minus = seltener. "
             "Diff = Median ueber die Werte (bis 2022 / ab 2023).", ""]

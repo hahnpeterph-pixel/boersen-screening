@@ -784,7 +784,14 @@ def heute(daten: dict[str, pd.DataFrame]) -> int:
     veraltet = sorted(t for t, d in daten.items() if f"{d.index[-1]:%Y-%m-%d}" != tag)
     k = k[k["datum"] == tag].copy()
     k["gruppe"] = k.apply(gruppe_von, axis=1)
-    k["kandidat"] = (k["gruppe"] == KANDIDATEN_GRUPPE).astype(int)
+    # Harte Sperre wie heute.py (19.09.2026): ohne vollstaendige Kurse der
+    # letzten 63 Handelstage kein Kandidat.
+    def luecke(t: str) -> str:
+        df = daten[t]
+        grenze = f"{df.index[-FENSTER]:%Y-%m-%d}" if len(df) > FENSTER else ""
+        return " ".join(x for x in LUECKEN_OFFEN.get(t, []) if x >= grenze)
+    k["luecken"] = [luecke(t) for t in k["ticker"]]
+    k["kandidat"] = ((k["gruppe"] == KANDIDATEN_GRUPPE) & (k["luecken"] == "")).astype(int)
     k["anker"] = np.nan
     if ANKER_QUELLE.exists():
         aw = pd.read_csv(ANKER_QUELLE).set_index(["ticker", "gruppe"])["anker_gesamt"]
@@ -793,7 +800,7 @@ def heute(daten: dict[str, pd.DataFrame]) -> int:
     spalten = ["ticker", "datum", "kandidat", "gruppe", "punkte", "position", "rsi",
                "erholung_begonnen", "rsi_tief_rang", "erholung_vol", "zweig_a",
                "einstieg", "bezugstief", "bezugstief_datum", "atr", "anker", "ko_marke",
-               "korr_atr", "korr_rang"]
+               "korr_atr", "korr_rang", "luecken"]
     k = k.sort_values(["kandidat", "punkte", "ticker"], ascending=[False, False, True])
     k[spalten].to_csv(CSV_HEUTE, index=False)
 
@@ -824,6 +831,8 @@ def heute(daten: dict[str, pd.DataFrame]) -> int:
             gruende.append("RSI >= 50")
         if r["zweig_a"] == 1 and r["erholung_begonnen"] == 0:
             gruende.append("Umkehr a")
+        if r["luecken"]:
+            gruende.append("Daten unvollstaendig (" + r["luecken"] + ")")
         aus.append(f"| {r['ticker']} | {int(r['punkte'])} | {', '.join(gruende)} |")
     if veraltet:
         aus += ["", "Nicht aktuell (kein Kurs vom " + tag + "): " + ", ".join(veraltet)]
@@ -846,10 +855,24 @@ def universum() -> list[str]:
     return sorted({t for t in werte if not t.endswith(("=F", "=X"))})
 
 
+# Offene Datenluecken je Wert (Handelstage ohne Kerze), aus lade().
+LUECKEN_OFFEN: dict[str, list[str]] = {}
+
+
 def lade(tickers: list[str], jahre: int) -> dict[str, pd.DataFrame]:
-    """Wie historie.lade(): kurse.kerzen_batch, bereinigt, >120 Kerzen."""
+    """kurse.kerzen_batch, 7 Jahre, >120 Kerzen.
+
+    UNBEREINIGT und MIT LUECKENFUELLUNG wie das taegliche Screening
+    (24.09.2026). Anlass: Yahoo lieferte den 22.09.2026 fuer rund 200
+    US-Werte nicht; kerzen_batch fuellt keine Luecken, die bereinigte Reihe
+    kann das Archiv (unbereinigt) nicht nutzen. Folge im ersten Lauf: der
+    23.09. wurde mit dem 21.09. verglichen, Umkehrzeichen fehlten (Costco,
+    GE Aerospace, Constellation, Welltower, Boeing standen in Block 1, im
+    Boden-Screening nicht). Jetzt: dieselbe Fuellung wie kurse.kerzen()
+    (Archiv docs/kursverlauf*, sonst Stundenkerzen). Unbereinigt heisst
+    ausserdem: Bezugstief und KO-Marke sind echte Kurse wie in Block 1."""
     print(f"Lade {len(tickers)} Werte, {jahre} Jahre ...")
-    roh = kurse.kerzen_batch(tickers, period=f"{jahre}y", auto_adjust=True)
+    roh = kurse.kerzen_batch(tickers, period=f"{jahre}y", auto_adjust=False)
     # Unfertige Tageskerze verwerfen (24.09.2026): der erste Lauf startete
     # 15:46 UTC bei offener US-Boerse, die Liste "Pruefttage am 24.09." beruhte
     # auf halben Kerzen. Dieselbe Regel wie marktdaten.py (EU ab 17:00 UTC,
@@ -859,6 +882,8 @@ def lade(tickers: list[str], jahre: int) -> dict[str, pd.DataFrame]:
     for t, d in roh.items():
         if len(d):
             d = marktdaten.unfertige_heutige_kerze_verwerfen(d, t, jetzt)
+            d, bericht = kurse._loecher_fuellen(t, kurse.quelle(t), d, False)
+            LUECKEN_OFFEN[t] = list((bericht or {}).get("offen", []))
         if len(d) > 120:
             daten[t] = d
     return daten
@@ -887,6 +912,7 @@ def auswerten(daten: dict[str, pd.DataFrame]) -> tuple[pd.DataFrame, pd.DataFram
         dauer = np.array([k["dauer"] for k in korr])
         jahre = max((df.index[-1] - df.index[0]).days / 365.25, 0.1)
         p = dict(info)
+        p["luecken_offen"] = len(LUECKEN_OFFEN.get(ticker, []))
         p.update({
             "korrekturen": len(korr), "korrekturen_je_jahr": round(len(korr) / jahre, 2),
             **{f"tiefe_p{q}": (round(float(np.percentile(tiefe, q)), 2) if len(tiefe) else np.nan)

@@ -1,0 +1,73 @@
+name: Verkaufs-Check
+
+# Parallellauf (Peter 24.09.2026): Verkaufsseite - nach einem neuen Hoch
+# kleiner Ruecksetzer oder Gewinn wieder weg? Schreibt NUR nach docs/verkauf/.
+# Monatlich am 2. (Tag nach dem Boden-Vollauf), bei Aenderung von
+# verkauf.py und manuell.
+on:
+  schedule:
+    - cron: "0 8 2 * *"
+  push:
+    branches: [main]
+    paths:
+      - "verkauf.py"
+  workflow_dispatch:
+    inputs:
+      jahre:
+        description: "Jahre Historie"
+        required: false
+        default: "7"
+      nur:
+        description: "Nur diese Werte, mit Komma. Leer = alle."
+        required: false
+        default: ""
+
+concurrency:
+  group: repo-schreiben
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  verkauf:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Abhaengigkeiten installieren
+        run: pip install -r requirements.txt
+
+      - name: Verkaufs-Check rechnen
+        run: |
+          if [ -n "${{ github.event.inputs.nur }}" ]; then
+            python verkauf.py --jahre ${{ github.event.inputs.jahre || '7' }} --nur "${{ github.event.inputs.nur }}"
+          else
+            python verkauf.py --jahre ${{ github.event.inputs.jahre || '7' }}
+          fi
+
+      - name: Ergebnis speichern
+        run: |
+          git config user.name "screening-bot"
+          git config user.email "actions@github.com"
+          git add docs/verkauf
+          if git diff --staged --quiet; then
+            echo "Nichts geaendert."
+            exit 0
+          fi
+          git commit -m "Verkaufs-Check $(date -u +%Y-%m-%d)"
+          for versuch in 1 2 3; do
+            if git pull --rebase --autostash origin main && git push origin main; then
+              echo "Gespeichert im Versuch $versuch."
+              exit 0
+            fi
+            echo "Versuch $versuch fehlgeschlagen, neuer Anlauf in 10 Sekunden ..."
+            sleep 10
+          done
+          exit 1

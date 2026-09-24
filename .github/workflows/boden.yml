@@ -13,6 +13,12 @@ on:
     branches: [main]
     paths:
       - "boden.py"
+  # Taegliche Anzeige (Stufe 2, 24.09.2026): nach jedem Lauf des
+  # bestehenden Screenings nur den letzten fertigen Handelstag rechnen
+  # (boden_heute.md/.csv). Der Vollauf bleibt monatlich/bei Aenderung.
+  workflow_run:
+    workflows: ["Boersen-Screening"]
+    types: [completed]
   workflow_dispatch:
     inputs:
       jahre:
@@ -23,6 +29,10 @@ on:
         description: "Nur diese Werte, mit Komma (z.B. UNH,RHM.DE). Leer = alle."
         required: false
         default: ""
+      modus:
+        description: "voll = 7-Jahres-Auswertung, heute = nur letzter Handelstag"
+        required: false
+        default: "voll"
 
 # Dieselbe Gruppe wie alle anderen Workflows, sonst kollidieren zwei Laeufe
 # beim Push nach docs/.
@@ -50,10 +60,13 @@ jobs:
 
       - name: Boden-Auswertung rechnen
         run: |
-          if [ -n "${{ github.event.inputs.nur }}" ]; then
+          if [ "${{ github.event_name }}" = "workflow_run" ] || [ "${{ github.event.inputs.modus }}" = "heute" ]; then
+            python boden.py --heute
+          elif [ -n "${{ github.event.inputs.nur }}" ]; then
             python boden.py --jahre ${{ github.event.inputs.jahre || '7' }} --nur "${{ github.event.inputs.nur }}"
           else
             python boden.py --jahre ${{ github.event.inputs.jahre || '7' }}
+            python boden.py --heute
           fi
 
       - name: Ergebnis speichern

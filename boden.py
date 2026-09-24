@@ -87,6 +87,9 @@ CSV_PROFIL = AUS / "boden_profile.csv"
 CSV_MERKMALE = AUS / "boden_merkmale_werte.csv"
 CSV_RENDITE = AUS / "boden_rendite_werte.csv"
 CSV_ANKER = AUS / "boden_anker_werte.csv"
+ANKER_QUELLE = AUS / "boden_anker_werte.csv"   # taegliche Anzeige liest immer den Vollauf
+CSV_HEUTE = AUS / "boden_heute.csv"
+MD_HEUTE = AUS / "boden_heute.md"
 MD_AUS = AUS / "boden.md"
 
 JAHRE = 7
@@ -311,7 +314,8 @@ def ko_handel_raster(O, H, L, C, d: int, bez: float, t: float, ad: float,
 
 # ── Pruefttage eines Werts ─────────────────────────────────────────
 
-def pruefttage(ticker: str, df: pd.DataFrame) -> tuple[list[dict], dict]:
+def pruefttage(ticker: str, df: pd.DataFrame,
+               nur_letzter: bool = False) -> tuple[list[dict], dict]:
     df = df.dropna(subset=["Open", "High", "Low", "Close"]).copy()
     n = len(df)
     info = {"ticker": ticker, "kerzen": n}
@@ -351,7 +355,7 @@ def pruefttage(ticker: str, df: pd.DataFrame) -> tuple[list[dict], dict]:
     serie_cache: dict[int, tuple] = {}
     swing_grenze = pd.Timedelta(days=marktdaten.FENSTER_TAGE)
     zeilen = []
-    for d in range(30, n):
+    for d in (range(n - 1, n) if nur_letzter else range(30, n)):
         ad = a[d]
         if not (np.isfinite(ad) and ad > 0):
             continue
@@ -741,6 +745,95 @@ def bericht(profil: pd.DataFrame, zf: pd.DataFrame, kand: pd.DataFrame,
     return "\n".join(aus)
 
 
+# ── Taegliche Anzeige (Stufe 2) ────────────────────────────────────
+
+# Kandidat im Parallel-Screening (Peter 24.09.2026: "so, dass es
+# bestmoeglich ins Profil passt"): Umkehrzeichen wie Block 1, die alten
+# Filter Tief >= 2 und RSI < 50 bleiben (am Anker in beiden Zeitraeumen
+# leicht besser), dazu mind. 2 Boden-Punkte.
+KANDIDATEN_GRUPPE = "2+ P, Tief>=2, RSI<50"
+
+
+def gruppe_von(z: pd.Series) -> str:
+    alt = z["tief_ab_2"] == 1 and z["rsi_unter_50"] == 1
+    if z["punkte"] >= 2:
+        return KANDIDATEN_GRUPPE if alt else "2+ P"
+    return "1 P" if z["punkte"] == 1 else "0 P"
+
+
+def heute(daten: dict[str, pd.DataFrame]) -> int:
+    """Pruefttage des letzten fertigen Handelstags mit Punkten, Gruppe und
+    Anker aus dem letzten Vollauf. Schreibt boden_heute.csv/.md."""
+    zeilen = []
+    for ticker, df in sorted(daten.items()):
+        try:
+            z, _ = pruefttage(ticker, df, nur_letzter=True)
+        except Exception as exc:  # noqa: BLE001
+            print(f"  ! {ticker}: {exc}")
+            continue
+        zeilen += z
+    AUS.mkdir(parents=True, exist_ok=True)
+    stand = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    if not zeilen:
+        MD_HEUTE.write_text(f"# Boden-Screening heute (Stand {stand})\n\nKeine Pruefttage.\n",
+                            encoding="utf-8")
+        return 0
+    k = pd.DataFrame(zeilen)
+    # Wie heute.py: nur Werte mit dem neuesten Handelstag, veraltete fallen raus
+    tag = k["datum"].max()
+    veraltet = sorted(t for t, d in daten.items() if f"{d.index[-1]:%Y-%m-%d}" != tag)
+    k = k[k["datum"] == tag].copy()
+    k["gruppe"] = k.apply(gruppe_von, axis=1)
+    k["kandidat"] = (k["gruppe"] == KANDIDATEN_GRUPPE).astype(int)
+    k["anker"] = np.nan
+    if ANKER_QUELLE.exists():
+        aw = pd.read_csv(ANKER_QUELLE).set_index(["ticker", "gruppe"])["anker_gesamt"]
+        k["anker"] = [aw.get((t, g), np.nan) for t, g in zip(k["ticker"], k["gruppe"])]
+    k["ko_marke"] = (k["bezugstief"] - k["anker"] * k["atr"]).round(2)
+    spalten = ["ticker", "datum", "kandidat", "gruppe", "punkte", "position", "rsi",
+               "erholung_begonnen", "rsi_tief_rang", "erholung_vol", "zweig_a",
+               "einstieg", "bezugstief", "bezugstief_datum", "atr", "anker", "ko_marke",
+               "korr_atr", "korr_rang"]
+    k = k.sort_values(["kandidat", "punkte", "ticker"], ascending=[False, False, True])
+    k[spalten].to_csv(CSV_HEUTE, index=False)
+
+    kand = k[k["kandidat"] == 1]
+    aus = [f"# Boden-Screening {tag} (Stand {stand})", "",
+           "Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + "
+           "Tief >= 2 + RSI < 50 + mind. 2 Boden-Punkte. Anker = niedrigster "
+           "Puffer mit 60 % Halterate fuer diese Gruppe und diesen Wert "
+           "(Vollauf), KO-Marke = Bezugstief - Anker x ATR.", "",
+           f"## Kandidaten ({len(kand)})", ""]
+    if len(kand):
+        aus += ["| Wert | Tief | RSI | Anker | KO-Marke |", "|---|---|---|---|---|"]
+        for _, r in kand.iterrows():
+            aus.append(f"| {r['ticker']} | {r['position']} | {f(r['rsi'], 0)} | "
+                       f"{f(r['anker'], 2)} | {f(r['ko_marke'], 2)} |")
+    else:
+        aus.append("_Keine._")
+    rest = k[k["kandidat"] == 0]
+    aus += ["", f"## Weitere Pruefttage ({len(rest)})", "",
+            "| Wert | Punkte | Grund |", "|---|---|---|"]
+    for _, r in rest.iterrows():
+        gruende = []
+        if r["punkte"] < 2:
+            gruende.append(f"{int(r['punkte'])} P")
+        if r["position"] < 2:
+            gruende.append("Tief 1")
+        if not r["rsi_unter_50"] == 1:
+            gruende.append("RSI >= 50")
+        if r["zweig_a"] == 1 and r["erholung_begonnen"] == 0:
+            gruende.append("Umkehr a")
+        aus.append(f"| {r['ticker']} | {int(r['punkte'])} | {', '.join(gruende)} |")
+    if veraltet:
+        aus += ["", "Nicht aktuell (kein Kurs vom " + tag + "): " + ", ".join(veraltet)]
+    aus.append("")
+    MD_HEUTE.write_text("\n".join(aus), encoding="utf-8")
+    print(f"  {tag}: {len(kand)} Kandidaten, {len(rest)} weitere Pruefttage "
+          f"-> {CSV_HEUTE.name}, {MD_HEUTE.name}")
+    return 0
+
+
 # ── Ablauf ─────────────────────────────────────────────────────────
 
 def universum() -> list[str]:
@@ -849,10 +942,14 @@ def main() -> int:
         CSV_KAND, CSV_PROFIL = AUS / CSV_KAND.name, AUS / CSV_PROFIL.name
         CSV_MERKMALE, MD_AUS = AUS / CSV_MERKMALE.name, AUS / MD_AUS.name
         CSV_RENDITE, CSV_ANKER = AUS / CSV_RENDITE.name, AUS / CSV_ANKER.name
+        global CSV_HEUTE, MD_HEUTE
+        CSV_HEUTE, MD_HEUTE = AUS / CSV_HEUTE.name, AUS / MD_HEUTE.name
     daten = lade(tickers, jahre)
     if not daten:
         print("Keine Kursdaten - Abbruch.")
         return 1
+    if "--heute" in sys.argv:
+        return heute(daten)
     kand, profil, anker = auswerten(daten)
     if kand.empty:
         print("Keine Pruefttage - Abbruch.")

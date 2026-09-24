@@ -1,4 +1,4 @@
-# Verkaufs-Check - Stufe 1 (Stand 2026-09-24 19:00 UTC)
+# Verkaufs-Check - Stufe 1 (Stand 2026-09-24 19:11 UTC)
 
 Parallellauf. Kauf = Pruefttag mit Tief >= 2 und RSI < 50, Einstieg Schluss. Entscheidungspunkt = Hoch seit Kauf hoechstens 3 Tage alt, Anstieg mind. 1 ATR. Ganz weg = Kurs faellt auf den Einstieg, bevor ein neues Hoch kommt; halb weg = die Haelfte des Anstiegs geht verloren, bevor ein neues Hoch kommt.
 

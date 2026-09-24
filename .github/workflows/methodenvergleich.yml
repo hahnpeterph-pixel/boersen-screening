@@ -1,0 +1,56 @@
+name: Methodenvergleich
+
+# Einmaliger Vergleich der Tiefzaehlung (24.09.2026): Standard "dow" gegen
+# "dow_schluss" (Serie endet erst mit einem Tagesschluss ueber der Referenz).
+# Nur manueller Start, schreibt nur docs/methodenvergleich.md.
+on:
+  workflow_dispatch:
+    inputs:
+      jahre:
+        description: "Jahre Historie"
+        required: false
+        default: "7"
+
+concurrency:
+  group: repo-schreiben
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  vergleich:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Abhaengigkeiten installieren
+        run: pip install -r requirements.txt
+
+      - name: Vergleich rechnen
+        run: python methodenvergleich.py --jahre ${{ github.event.inputs.jahre || '7' }}
+
+      - name: Ergebnis speichern
+        run: |
+          git config user.name "screening-bot"
+          git config user.email "actions@github.com"
+          git add docs/methodenvergleich.md
+          if git diff --staged --quiet; then
+            echo "Nichts geaendert."
+            exit 0
+          fi
+          git commit -m "Methodenvergleich $(date -u +%Y-%m-%d)"
+          for versuch in 1 2 3; do
+            if git pull --rebase --autostash origin main && git push origin main; then
+              echo "Gespeichert im Versuch $versuch."
+              exit 0
+            fi
+            sleep 10
+          done
+          exit 1

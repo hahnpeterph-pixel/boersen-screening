@@ -159,6 +159,7 @@ def punkte_je_wert(ticker: str, df: pd.DataFrame) -> tuple[list[dict], list[dict
             ema_r = rang((C[k] - ema50[k]) / ak, h_ema[fertig])
             aus.append({
                 "ticker": ticker, "kauf": z["datum"], "datum": f"{df.index[k]:%Y-%m-%d}",
+                "typ_anstieg": round(typ_anstieg, 3) if np.isfinite(typ_anstieg) else np.nan,
                 "tage_seit_kauf": k - e, "anstieg_atr": round(anstieg, 3),
                 # Wie viel vom Anstieg am Schluss des Entscheidungstags schon
                 # wieder abgegeben ist (0 = Schluss am Hoch, 1 = am Einstieg).
@@ -301,6 +302,24 @@ def rendite_bericht(rd: pd.DataFrame) -> list[str]:
     return aus
 
 
+def rueckfall_werte(p: pd.DataFrame) -> pd.DataFrame:
+    """Je Wert fuer die Depot-Tabelle (Peter 24.09.2026, "kurz und knapp"):
+    ueblicher Anstieg und - wenn schon mind. so weit gelaufen - wie oft der
+    Gewinn danach ganz weg war, je bereits abgegebenem Anteil. 7 Jahre."""
+    w = p[p["anstieg_rel"] >= 1.0]
+    zeilen = []
+    for t, g in p.groupby("ticker"):
+        z = {"ticker": t, "typ_anstieg": g["typ_anstieg"].iloc[0]}
+        gw = w[w["ticker"] == t]
+        for lo, hi in RUECKGABE_KLASSEN:
+            h = gw[(gw["rueckgabe"] >= lo) & (gw["rueckgabe"] < hi)]
+            name = f"{max(lo, 0):g}-{min(hi, 1):g}"
+            z[f"n_{name}"] = len(h)
+            z[f"ganz_{name}"] = round(100 * h["ganz_weg"].mean(), 1) if len(h) else np.nan
+        zeilen.append(z)
+    return pd.DataFrame(zeilen)
+
+
 def je_wert_pruefen(p: pd.DataFrame) -> pd.DataFrame:
     """Nur Entscheidungspunkte, an denen der Wert schon mindestens seinen
     ueblichen Anstieg gelaufen ist - Peters Fall ("schon ein ganzes Stueck in
@@ -434,6 +453,7 @@ def main() -> int:
     with gzip.open(aus / "verkauf_punkte.csv.gz", "wt", encoding="utf-8", newline="") as fh:
         p.to_csv(fh, index=False)
     mw = je_wert_pruefen(p)
+    rueckfall_werte(p).to_csv(aus / "verkauf_rueckfall_werte.csv", index=False)
     mw.to_csv(aus / "verkauf_merkmale_werte.csv", index=False)
     stand = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     rd = pd.DataFrame(renditen)

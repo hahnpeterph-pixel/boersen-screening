@@ -93,11 +93,11 @@ def rang(wert: float, frueher: np.ndarray) -> float:
     return float(np.mean(frueher < wert))
 
 
-def punkte_je_wert(ticker: str, df: pd.DataFrame) -> tuple[list[dict], list[dict]]:
+def punkte_je_wert(ticker: str, df: pd.DataFrame) -> tuple[list[dict], list[dict], list[dict]]:
     zeilen, info = boden.pruefttage(ticker, df)
     t = info.get("t_atr")
     if not zeilen or t is None:
-        return [], []
+        return [], [], []
     df = df.dropna(subset=["Open", "High", "Low", "Close"])
     n = len(df)
     O, H, L, C = (df[k].values.astype(float) for k in ("Open", "High", "Low", "Close"))
@@ -177,7 +177,7 @@ def punkte_je_wert(ticker: str, df: pd.DataFrame) -> tuple[list[dict], list[dict
                 "weit_gelaufen": float(r_rel >= 1.0) if np.isfinite(r_rel) else np.nan,
                 "boden2": float(z["punkte"] >= 2),
             })
-    return aus, rendite_je_wert(ticker, df, zeilen, t, typ_anstieg)
+    return aus, rendite_je_wert(ticker, df, zeilen, t, typ_anstieg), ew_je_wert(ticker, df, zeilen, typ_anstieg)
 
 
 # ── Renditetest (Stufe 2, Peter 24.09.2026) ─────────────────────────
@@ -261,6 +261,95 @@ def rendite_je_wert(ticker: str, df: pd.DataFrame, zeilen: list[dict], t: float,
             for name, (rend, tage) in handel(O, H, L, C, a, e, ko, z["bezugstief"], t, typ_anstieg).items():
                 aus.append({"ticker": ticker, "kauf": z["datum"], "puffer": pp, "strategie": name,
                             "rendite": round(rend, 4), "tage": tage, "punkte": z["punkte"]})
+    return aus
+
+
+# ── Lohnt Halten noch? (Stufe 3, Peter 24.09.2026) ─────────────────
+# "Bei 20 % Totalverlust rauszugehen verschenkt 80 % Chance." Deshalb nicht
+# die Rueckfallquote, sondern der Erwartungswert: Wie viel kam ab einem Tag in
+# dieser Lage im Schnitt noch dazu (oder ging verloren), wenn man nach der
+# heutigen Regel weiter haelt (Alarm 187, Knock-out bei 2 ATR unter dem
+# Bezugstief, spaetestens 126 Tage)? In ATR des Kauftags, je Wert.
+
+EW_KLASSEN = ((-1.0, 0.1, "0-10"), (0.1, 0.25, "10-25"), (0.25, 0.4, "25-40"),
+              (0.4, 1.0, "40-100"), (1.0, 99.0, "unter Einstieg"))
+EW_PUFFER = 2.0
+
+
+def ew_klasse(rg: float) -> str:
+    for lo, hi, name in EW_KLASSEN:
+        if lo <= rg < hi:
+            return name
+    return "unter Einstieg"
+
+
+def ew_je_wert(ticker: str, df: pd.DataFrame, zeilen: list[dict], typ: float) -> list[dict]:
+    if not (np.isfinite(typ) and typ > 0):
+        return []
+    df = df.dropna(subset=["Open", "High", "Low", "Close"])
+    n = len(df)
+    O, H, L, C = (df[k].values.astype(float) for k in ("Open", "High", "Low", "Close"))
+    a = boden.atr(df)
+    idx = {f"{d:%Y-%m-%d}": i for i, d in enumerate(df.index)}
+    summe: dict[tuple, list] = {}
+    for z in zeilen:
+        if not (z["tief_ab_2"] == 1 and z["rsi_unter_50"] == 1):
+            continue
+        e = idx.get(z["datum"])
+        if e is None or e + HALTE_MAX >= n or not (np.isfinite(a[e]) and a[e] > 0):
+            continue
+        ce, a0, bez = C[e], a[e], z["bezugstief"]
+        ko = bez - EW_PUFFER * a0
+        if ko >= ce:
+            continue
+        zeitraum = "bis2022" if df.index[e] < TEILUNG else "ab2023"
+        hmax, hmax_tag, offen = ce, e, []
+        preis = None
+        for k in range(e + 1, e + 1 + HALTE_MAX):
+            if L[k] <= ko:
+                preis = ko
+                break
+            if H[k] > hmax:
+                hmax, hmax_tag = H[k], k
+            if C[k] < O[k] and k - hmax_tag <= HOCH_ALTER and (C[k] - bez) / a[k] > ALARM_ATR:
+                preis = C[k]
+                break
+            offen.append((k, hmax))
+        if preis is None:
+            preis = C[e + HALTE_MAX]
+        for k, hm in offen:
+            anstieg = (hm - ce) / a0
+            if anstieg < MIN_ANSTIEG:
+                continue
+            key = (zeitraum, band(anstieg / typ), ew_klasse((hm - C[k]) / (hm - ce)))
+            s_ = summe.setdefault(key, [0.0, 0])
+            s_[0] += (preis - C[k]) / a0
+            s_[1] += 1
+    return [{"ticker": ticker, "zeitraum": zr, "band": b, "klasse": kl,
+             "n": v[1], "ew_atr": round(v[0] / v[1], 3)} for (zr, b, kl), v in summe.items()]
+
+
+def ew_bericht(ew: pd.DataFrame) -> list[str]:
+    aus = ["## Lohnt Halten noch? (Erwartungswert ab heute)", "",
+           "Wie viel kam ab einem Tag in dieser Lage im Schnitt noch dazu, wenn man nach der "
+           "heutigen Regel weiter haelt (Alarm 187, KO 2 ATR unter Bezugstief, max. 126 T). "
+           "In ATR, je Wert gemittelt (mind. 20 Tage), Median ueber die Werte, 2019-22 / ab 23. "
+           "In Klammern: Werte, bei denen es in BEIDEN Zeitraeumen negativ war.", "",
+           "| Gelaufen | schon abgegeben | Halten bringt noch |", "|---|---|---|"]
+    ok = ew[ew["n"] >= 20]
+    for _, _, b in BAENDER:
+        for _, _, kl in EW_KLASSEN:
+            g = ok[(ok["band"] == b) & (ok["klasse"] == kl)]
+            if not len(g):
+                continue
+            w = g.pivot_table(index="ticker", columns="zeitraum", values="ew_atr").dropna()
+            neg = int(((w.get("bis2022", pd.Series(dtype=float)) < 0)
+                       & (w.get("ab2023", pd.Series(dtype=float)) < 0)).sum()) if len(w) else 0
+            m1 = g[g["zeitraum"] == "bis2022"]["ew_atr"].median()
+            m2 = g[g["zeitraum"] == "ab2023"]["ew_atr"].median()
+            kl_text = kl if kl == "unter Einstieg" else f"{kl} %"
+            aus.append(f"| {b} | {kl_text} | {f(m1, 1)} / {f(m2, 1)} ATR ({neg}/{len(w)}) |")
+    aus.append("")
     return aus
 
 
@@ -435,12 +524,13 @@ def main() -> int:
     if not daten:
         print("Keine Kursdaten - Abbruch.")
         return 1
-    alle, renditen = [], []
+    alle, renditen, ews = [], [], []
     for i, (t, df) in enumerate(sorted(daten.items()), start=1):
         try:
-            pk, rd = punkte_je_wert(t, df)
+            pk, rd, ew = punkte_je_wert(t, df)
             alle += pk
             renditen += rd
+            ews += ew
         except Exception as exc:  # noqa: BLE001
             print(f"  ! {t}: {exc}")
         if i % 25 == 0:
@@ -462,6 +552,10 @@ def main() -> int:
         with gzip.open(aus / "verkauf_rendite.csv.gz", "wt", encoding="utf-8", newline="") as fh:
             rd.to_csv(fh, index=False)
         text += "\n" + "\n".join(rendite_bericht(rd))
+    if ews:
+        ew = pd.DataFrame(ews)
+        ew.to_csv(aus / "verkauf_ew_werte.csv", index=False)
+        text += "\n" + "\n".join(ew_bericht(ew))
     (aus / "verkauf.md").write_text(text, encoding="utf-8")
     print(f"  {len(p)} Entscheidungspunkte aus {p['ticker'].nunique()} Werten -> {aus}")
     return 0

@@ -546,7 +546,18 @@ def lade(tickers: list[str], jahre: int) -> dict[str, pd.DataFrame]:
     """Wie historie.lade(): kurse.kerzen_batch, bereinigt, >120 Kerzen."""
     print(f"Lade {len(tickers)} Werte, {jahre} Jahre ...")
     roh = kurse.kerzen_batch(tickers, period=f"{jahre}y", auto_adjust=True)
-    return {t: d for t, d in roh.items() if len(d) > 120}
+    # Unfertige Tageskerze verwerfen (24.09.2026): der erste Lauf startete
+    # 15:46 UTC bei offener US-Boerse, die Liste "Pruefttage am 24.09." beruhte
+    # auf halben Kerzen. Dieselbe Regel wie marktdaten.py (EU ab 17:00 UTC,
+    # sonst ab 21:00 UTC fertig) - gerechnet wird dann auf Stand Vortag.
+    jetzt = datetime.now(timezone.utc)
+    daten = {}
+    for t, d in roh.items():
+        if len(d):
+            d = marktdaten.unfertige_heutige_kerze_verwerfen(d, t, jetzt)
+        if len(d) > 120:
+            daten[t] = d
+    return daten
 
 
 def auswerten(daten: dict[str, pd.DataFrame]) -> tuple[pd.DataFrame, pd.DataFrame]:

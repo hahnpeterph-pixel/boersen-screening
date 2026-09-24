@@ -47,7 +47,17 @@ from __future__ import annotations
 
 import pandas as pd
 
-VARIANTEN = ("dow", "starthoch", "vorheriges_hoch")
+VARIANTEN = ("dow", "starthoch", "vorheriges_hoch", "dow_schluss")
+
+# VERGLEICHSVARIANTE "dow_schluss" (24.09.2026, Peter). Wie "dow", aber die
+# Serie endet erst, wenn ein TAGESSCHLUSS ueber der Referenz liegt - ein
+# Docht allein reicht nicht. Anlass UnitedHealth 22.09.2026: Hoch 381,00
+# ueber dem Vorhoch 380,50 (0,05 ATR), Schluss 372,95 darunter. Standard
+# beendete die Serie (Tief 6), das neue Tief vom 23.09. wurde Tief 1 statt
+# Tief 7. Stichprobe 6 Monate, 280 Werte: rund 30 % aller Serienenden kamen
+# nur durch einen Docht zustande. Laeuft nur als Vergleich (methodenvergleich.py),
+# STANDARD bleibt "dow", bis der Vergleich eine Umstellung traegt
+# (Stoppregel 17.09.2026: mindestens 8-10 Prozentpunkte, beide Zeitraeume).
 
 # GLEICHSTAND-TOLERANZ (19.09.2026). Anlass UnitedHealth: zwischen zwei
 # Historie-Laeufen am selben Tag kippte die Serie vom Fruehjahr 2022 - im
@@ -228,6 +238,18 @@ def sequenzen(df: pd.DataFrame, variante: str = STANDARD) -> list[dict]:
 
     seq = leer()
     letztes_hoch = None
+    schluss = df["Close"].values if "Close" in df.columns else None
+    pv = pivots(df)
+
+    def schluss_ueber(k: int, grenze: float) -> bool:
+        """dow_schluss: liegt im Anstieg rund um das Pivot-Hoch Nummer k
+        (vom vorigen bis vor den naechsten Wendepunkt) ein Tagesschluss
+        ueber der Grenze?"""
+        if schluss is None:
+            return True
+        von = pv[k - 1][1] + 1 if k > 0 else 0
+        bis = pv[k + 1][1] if k + 1 < len(pv) else len(df)
+        return any(_ueber(float(c), grenze) for c in schluss[von:bis])
 
     def schliessen(laufend: bool) -> None:
         if not seq["tiefs"]:
@@ -242,10 +264,10 @@ def sequenzen(df: pd.DataFrame, variante: str = STANDARD) -> list[dict]:
             "laufend": laufend,
         })
 
-    for art, i in pivots(df):
+    for k_pv, (art, i) in enumerate(pv):
         if art == "hoch":
             h = float(hoch[i])
-            if variante == "dow":
+            if variante in ("dow", "dow_schluss"):
                 # Dow: ein hoeheres Hoch beendet den Abwaertstrend nur, wenn
                 # zuvor ein hoeheres Tief kam - und gemessen wird gegen das
                 # Hoch VOR dem tiefsten Tief, nicht gegen ein beliebiges
@@ -283,7 +305,8 @@ def sequenzen(df: pd.DataFrame, variante: str = STANDARD) -> list[dict]:
                 grenze = seq["start_hoch"]
             else:
                 grenze = letztes_hoch
-            if grenze is not None and _ueber(h, grenze):
+            if (grenze is not None and _ueber(h, grenze)
+                    and (variante != "dow_schluss" or schluss_ueber(k_pv, grenze))):
                 schliessen(False)
                 seq = leer()
                 seq["start_hoch_i"], seq["start_hoch"] = i, h

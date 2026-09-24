@@ -1,0 +1,72 @@
+name: Boden-Screening
+
+# Parallellauf zum bestehenden Screening (Peter 24.09.2026). Stufe 1:
+# 7-Jahres-Auswertung je Wert, schreibt NUR nach docs/boden/. Die
+# Verteilungen stuetzen sich auf sieben Jahre, deshalb reicht ein Lauf im
+# Monat (Peter) - am 1. um 08:00 UTC - plus manueller Start.
+on:
+  schedule:
+    - cron: "0 8 1 * *"
+  workflow_dispatch:
+    inputs:
+      jahre:
+        description: "Jahre Historie"
+        required: false
+        default: "7"
+      nur:
+        description: "Nur diese Werte, mit Komma (z.B. UNH,RHM.DE). Leer = alle."
+        required: false
+        default: ""
+
+# Dieselbe Gruppe wie alle anderen Workflows, sonst kollidieren zwei Laeufe
+# beim Push nach docs/.
+concurrency:
+  group: repo-schreiben
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  boden:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Abhaengigkeiten installieren
+        run: pip install -r requirements.txt
+
+      - name: Boden-Auswertung rechnen
+        run: |
+          if [ -n "${{ github.event.inputs.nur }}" ]; then
+            python boden.py --jahre ${{ github.event.inputs.jahre || '7' }} --nur "${{ github.event.inputs.nur }}"
+          else
+            python boden.py --jahre ${{ github.event.inputs.jahre || '7' }}
+          fi
+
+      - name: Ergebnis speichern
+        run: |
+          git config user.name "screening-bot"
+          git config user.email "actions@github.com"
+          git add docs/boden
+          if git diff --staged --quiet; then
+            echo "Nichts geaendert."
+            exit 0
+          fi
+          git commit -m "Boden-Screening $(date -u +%Y-%m-%d)"
+          for versuch in 1 2 3; do
+            if git pull --rebase --autostash origin main && git push origin main; then
+              echo "Gespeichert im Versuch $versuch."
+              exit 0
+            fi
+            echo "Versuch $versuch fehlgeschlagen, neuer Anlauf in 10 Sekunden ..."
+            sleep 10
+          done
+          echo "Push nach drei Versuchen fehlgeschlagen."
+          exit 1

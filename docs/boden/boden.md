@@ -1,8 +1,8 @@
-# Boden-Screening - Stufe 1 (Stand 2026-09-24 16:30 UTC, 7 Jahre)
+# Boden-Screening - Stufe 1 (Stand 2026-09-24 17:08 UTC, 7 Jahre)
 
 Parallellauf, aendert nichts am bestehenden Screening. Pruefttage = alle Tage mit Block-1-Umkehrzeichen (ohne RSI- und Tief-1-Filter). Einstieg = Schluss, Bezugstief wie heute.py.
 
-Werte: 271 · Pruefttage: 140383 · davon mit 63-Tage-Ergebnis: 134938
+Werte: 271 · Pruefttage: 140400 · davon mit 63-Tage-Ergebnis: 134942
 
 ## Gutes Tief - Anteil je Wert
 
@@ -45,7 +45,7 @@ Werte = Werte mit mind. 10 Faellen mit UND ohne Merkmal in beiden Zeitraeumen. P
 | Merkmal | Werte | Plus | Minus | Diff |
 |---|---|---|---|---|
 | Korrektur >= T | 265 | 4 | 15 | -1.8 / -2.7 |
-| Korr. tiefer 7/10 | 261 | 24 | 28 | -1.8 / -0.5 |
+| Korr. tiefer 7/10 | 261 | 24 | 28 | -1.8 / -0.4 |
 | Korr. laenger 7/10 | 260 | 14 | 22 | -0.3 / -2.6 |
 | RSI Tief unter 7/10 | 259 | 48 | 11 | 2.4 / 5.8 |
 | RSI < 50 (alt) | 265 | 11 | 17 | -0.7 / -0.5 |
@@ -58,8 +58,8 @@ Werte = Werte mit mind. 10 Faellen mit UND ohne Merkmal in beiden Zeitraeumen. P
 | Hammer | 60 | 6 | 11 | -8.4 / -2.1 |
 | Doppelboden | 227 | 4 | 42 | -4.1 / -7.3 |
 | Schluss > VT-Hoch | 265 | 50 | 0 | 7.1 / 8.2 |
-| Kein neues Tief | 265 | 68 | 0 | 7.7 / 7.9 |
-| Ueber EMA200 | 252 | 11 | 39 | 1.1 / -6.2 |
+| Kein neues Tief | 265 | 69 | 0 | 7.7 / 8.0 |
+| Ueber EMA200 | 252 | 11 | 39 | 1.1 / -6.3 |
 | Tief >= 2 (alt) | 265 | 28 | 7 | 3.5 / 3.0 |
 
 ### haelt 2 ATR (63 T)
@@ -155,52 +155,24 @@ Stufe 2-3 gegen 0, je Wert: besser in beiden Zeitraeumen 72, schlechter in beide
 
 Stufe 2-3 gegen 0, je Wert: besser in beiden Zeitraeumen 76, schlechter in beiden 46, von 260.
 
-## Pruefttage am 2026-09-23 (nur Information)
+## Pruefttage am 2026-09-24 (nur Information)
 
 | Wert | Tief | RSI | Punkte |
 |---|---|---|---|
-| COST | 3 | 42 | 2 |
-| GE | 3 | 40 | 2 |
-| RTX | 5 | 31 | 2 |
-| TMUS | 2 | 37 | 2 |
-| VNA.DE | 6 | 24 | 2 |
-| WELL | 4 | 41 | 2 |
-| AIR.DE | 4 | 42 | 1 |
-| BAC | 1 | 25 | 1 (Umkehr a) |
-| CB | 2 | 40 | 1 |
-| CMCSA | 2 | 31 | 1 (Umkehr a) |
-| COP | 1 | 45 | 1 |
-| DASH | 3 | 33 | 1 |
-| DB1.DE | 1 | 55 | 1 |
-| DIS | 2 | 45 | 1 |
-| FTNT | 1 | 65 | 1 |
-| GM | 1 | 46 | 1 |
-| IBM | 2 | 47 | 1 |
-| IBN | 3 | 34 | 1 (Umkehr a) |
-| ISRG | 3 | 62 | 1 |
-| MO | 2 | 50 | 1 |
-| MSFT | 2 | 56 | 1 |
-| PLTR | 2 | 67 | 1 |
-| RHM.DE | 3 | 44 | 1 |
-| ROST | 5 | 53 | 1 |
-| SNOW | 1 | 54 | 1 |
-| SPGI | 1 | 42 | 1 |
-| TSLA | 1 | 61 | 1 |
-| TXN | 1 | 56 | 1 |
-| UNH | 1 | 34 | 1 (Umkehr a) |
-| WDAY | 1 | 53 | 1 |
-| ZS | 1 | 71 | 1 |
-| ADBE | 3 | 39 | 0 (Umkehr a) |
-| BLK | 1 | 42 | 0 (Umkehr a) |
-| BTI | 1 | 46 | 0 (Umkehr a) |
-| CAT | 3 | 49 | 0 (Umkehr a) |
-| CEG | 2 | 44 | 0 (Umkehr a) |
-| CPRT | 2 | 37 | 0 (Umkehr a) |
-| MCHP | 1 | 53 | 0 (Umkehr a) |
-| QIA.DE | 1 | 60 | 0 (Umkehr a) |
-| SCCO | 3 | 53 | 0 (Umkehr a) |
-| SHW | 1 | 44 | 0 (Umkehr a) |
-| SPOT | 2 | 45 | 0 (Umkehr a) |
-| T | 2 | 49 | 0 (Umkehr a) |
-| TTWO | 2 | 36 | 0 (Umkehr a) |
-| VRSK | 3 | 38 | 0 (Umkehr a) |
+| BEI.DE | 2 | 57 | 2 |
+| DTE.DE | 2 | 37 | 2 |
+| MRK.DE | 1 | 47 | 2 |
+| SIE.DE | 1 | 53 | 2 |
+| ALV.DE | 2 | 35 | 1 (Umkehr a) |
+| BAYN.DE | 2 | 55 | 1 |
+| BMW.DE | 1 | 32 | 1 (Umkehr a) |
+| CON.DE | 3 | 48 | 1 |
+| HEN3.DE | 3 | 47 | 1 |
+| HNR1.DE | 1 | 58 | 1 |
+| MUV2.DE | 1 | 52 | 1 |
+| SY1.DE | 1 | 59 | 1 |
+| ZAL.DE | 4 | 42 | 1 |
+| AIR.DE | 4 | 41 | 0 (Umkehr a) |
+| EOAN.DE | 2 | 40 | 0 (Umkehr a) |
+| P911.DE | 2 | 47 | 0 (Umkehr a) |
+| SHL.DE | 1 | 37 | 0 (Umkehr a) |

@@ -4,52 +4,52 @@
   "turnaround": [
    "T",
    "SHOP",
-   "ABT",
-   "QIA.DE",
+   "VLO",
    "MSTR",
-   "PFE",
    "XOM",
-   "ZS",
-   "SHEL",
-   "MMM",
-   "COF",
+   "QIA.DE",
+   "MPC",
+   "SNOW",
+   "ABT",
+   "DXCM",
+   "KO",
+   "BEI.DE",
    "BLK",
    "SCCO",
-   "ABNB",
-   "LMT"
+   "TSLA"
   ],
   "momentum": [
-   "CRWD",
-   "ANET",
-   "DELL",
-   "MRNA",
-   "MPC",
    "VLO",
+   "CRWD",
+   "MPC",
+   "MRNA",
+   "NET",
+   "DELL",
    "DHL.DE",
    "TMO",
    "BAYN.DE",
-   "TD",
-   "ING",
-   "PSX",
    "SY1.DE",
+   "DE",
+   "PSX",
+   "ING",
    "SCCO",
-   "DE"
+   "KO"
   ],
   "value": [
    "SNDK",
    "NVDA",
    "MU",
    "NEM",
+   "ABNB",
    "RIO",
    "PBR",
-   "ABNB",
    "COP",
    "BLK",
    "META",
-   "REGN",
    "V",
-   "MTX.DE",
+   "REGN",
    "MNST",
+   "MTX.DE",
    "BHP"
   ]
  },
@@ -57,103 +57,98 @@
   "turnaround": {
    "entries": [
     {
-     "ticker": "PFE",
-     "rank": 6
+     "ticker": "VLO",
+     "rank": 3
     },
     {
-     "ticker": "ZS",
+     "ticker": "MPC",
+     "rank": 7
+    },
+    {
+     "ticker": "SNOW",
      "rank": 8
     },
     {
-     "ticker": "SHEL",
-     "rank": 9
-    },
-    {
-     "ticker": "MMM",
+     "ticker": "DXCM",
      "rank": 10
     },
     {
-     "ticker": "COF",
+     "ticker": "KO",
      "rank": 11
     },
     {
-     "ticker": "ABNB",
-     "rank": 14
+     "ticker": "BEI.DE",
+     "rank": 12
     },
     {
-     "ticker": "LMT",
+     "ticker": "TSLA",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "VLO",
-     "old_rank": 3
+     "ticker": "PFE",
+     "old_rank": 6
     },
     {
-     "ticker": "MPC",
-     "old_rank": 7
-    },
-    {
-     "ticker": "SNOW",
+     "ticker": "ZS",
      "old_rank": 8
     },
     {
-     "ticker": "DXCM",
+     "ticker": "SHEL",
+     "old_rank": 9
+    },
+    {
+     "ticker": "MMM",
      "old_rank": 10
     },
     {
-     "ticker": "KO",
+     "ticker": "COF",
      "old_rank": 11
     },
     {
-     "ticker": "BEI.DE",
-     "old_rank": 12
+     "ticker": "ABNB",
+     "old_rank": 14
     },
     {
-     "ticker": "TSLA",
+     "ticker": "LMT",
      "old_rank": 15
     }
    ],
    "moves": [
     {
      "ticker": "ABT",
-     "rank": 3,
-     "delta": 6
+     "rank": 9,
+     "delta": -6
     }
    ]
   },
   "momentum": {
    "entries": [
     {
-     "ticker": "ANET",
-     "rank": 2
+     "ticker": "NET",
+     "rank": 5
     },
     {
-     "ticker": "TD",
-     "rank": 10
+     "ticker": "KO",
+     "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "NET",
-     "old_rank": 5
+     "ticker": "ANET",
+     "old_rank": 2
     },
     {
-     "ticker": "KO",
-     "old_rank": 15
+     "ticker": "TD",
+     "old_rank": 10
     }
    ],
    "moves": [
     {
      "ticker": "VLO",
-     "rank": 6,
-     "delta": -5
-    },
-    {
-     "ticker": "DE",
-     "rank": 15,
-     "delta": -5
+     "rank": 1,
+     "delta": 5
     }
    ]
   },

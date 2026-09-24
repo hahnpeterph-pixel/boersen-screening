@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-09-23 22:09 UTC. 280 Werte, Fenster 90 Kalendertage. EUR/USD 1.139._
+_Erstellt 2026-09-24 00:29 UTC. 280 Werte, Fenster 90 Kalendertage. EUR/USD 1.1448._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -99,11 +99,13 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | PAH3.DE (PAH3.DE) | 26.26 | - | - | ja | 35.14 |
 | SHL.DE (SHL.DE) | 37.29 | - | - | ja | 37.94 |
 | VOW3.DE (VOW3.DE) | 73.24 | - | - | ja | 39.46 |
-| Gold (GC=F) | 4324.2998 | - | - | ja | 42.19 |
-| Silber (SI=F) | 64.895 | - | - | ja | 48.91 |
-| Platin (PL=F) | 1755.2 | - | - | ja | 45.34 |
-| Weizen (ZW=F) | 707.25 | - | - | ja | 48.99 |
-| Mais (ZC=F) | 528.75 | - | - | ja | 61.81 |
+| Gold (GC=F) | 4322.8999 | - | - | ja | 42.09 |
+| Silber (SI=F) | 64.565 | - | - | ja | 47.86 |
+| Platin (PL=F) | 1750.0 | - | - | ja | 44.76 |
+| Palladium (PA=F) | 1268.0 | - | - | ja | 42.38 |
+| WTI Oel (CL=F) | 91.77 | - | - | ja | 47.97 |
+| Weizen (ZW=F) | 706.25 | - | - | ja | 48.69 |
+| EUR/USD (EURUSD=X) | 1.1448 | ja | - | - | 31.42 |
 
 ---
 

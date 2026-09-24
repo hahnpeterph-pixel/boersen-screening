@@ -1701,7 +1701,7 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | Erdgas (NG=F) | 2026-01-29 | abwaerts | 5.9 | 2.271 | 36.576 | 163 |
 | Erdgas (NG=F) | 2026-02-02 | abwaerts | 3.818 | 0.116 | 2.881 | 161 |
 | Erdgas (NG=F) | 2026-04-29 | aufwaerts | 2.578 | 0.765 | 3.957 | 101 |
-| Erdgas (NG=F) | 2026-09-23 | aufwaerts | 3.023 | 1.265 | 4.83 | 0 |
+| Erdgas (NG=F) | 2026-09-23 | aufwaerts | 3.023 | 1.255 | 4.83 | 0 |
 | NKE (NKE) | 2026-02-27 | abwaerts | 63.78 | 0.504 | 1.662 | 143 |
 | NKE (NKE) | 2026-03-18 | abwaerts | 55.0 | 0.285 | 0.909 | 130 |
 | NKE (NKE) | 2026-04-01 | abwaerts | 51.69 | 2.466 | 9.925 | 120 |
@@ -1769,7 +1769,7 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | Palladium (PA=F) | 2026-09-04 | abwaerts | 1421.5 | 0.87 | 2.209 | 12 |
 | Palladium (PA=F) | 2026-09-10 | abwaerts | 1367.3 | 2.217 | 6.29 | 9 |
 | Palladium (PA=F) | 2026-09-22 | abwaerts | 1302.9 | 0.197 | 0.414 | 1 |
-| Palladium (PA=F) | 2026-09-23 | abwaerts | 1284.5 | 0.482 | 1.012 | 0 |
+| Palladium (PA=F) | 2026-09-23 | abwaerts | 1284.5 | 0.477 | 1.012 | 0 |
 | PAH3.DE (PAH3.DE) | 2026-03-02 | abwaerts | 35.92 | 1.558 | 3.174 | 144 |
 | PAH3.DE (PAH3.DE) | 2026-06-17 | abwaerts | 30.86 | 0.497 | 1.167 | 70 |
 | PAH3.DE (PAH3.DE) | 2026-09-21 | abwaerts | 27.98 | 0.38 | 1.144 | 2 |
@@ -1823,7 +1823,7 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | Platin (PL=F) | 2026-08-14 | aufwaerts | 1725.2 | 0.891 | 1.438 | 27 |
 | Platin (PL=F) | 2026-08-19 | aufwaerts | 1726.4 | 2.286 | 4.414 | 24 |
 | Platin (PL=F) | 2026-09-10 | abwaerts | 1904.2 | 2.717 | 5.624 | 9 |
-| Platin (PL=F) | 2026-09-23 | abwaerts | 1791.1 | 1.13 | 1.909 | 0 |
+| Platin (PL=F) | 2026-09-23 | abwaerts | 1791.1 | 1.115 | 1.909 | 0 |
 | PLD (PLD) | 2025-10-15 | aufwaerts | 115.71 | 0.35 | 0.83 | 235 |
 | PLD (PLD) | 2026-08-31 | abwaerts | 140.41 | 0.18 | 0.292 | 16 |
 | PLTR (PLTR) | 2025-11-04 | abwaerts | 201.82 | 1.135 | 4.831 | 221 |
@@ -1889,7 +1889,6 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | SAP.DE (SAP.DE) | 2026-09-14 | aufwaerts | 178.84 | 0.328 | 1.107 | 7 |
 | Zucker (SB=F) | 2026-09-23 | aufwaerts | 17.63 | 1.541 | 5.389 | 0 |
 | SBUX (SBUX) | 2026-09-09 | abwaerts | 101.75 | 0.447 | 1.091 | 10 |
-| SCCO (SCCO) | 2025-09-24 | aufwaerts | 108.5756 | 0.967 | 3.042 | 250 |
 | SCCO (SCCO) | 2025-09-29 | aufwaerts | 114.5455 | 0.488 | 1.471 | 247 |
 | SCCO (SCCO) | 2025-11-25 | aufwaerts | 123.5372 | 0.372 | 1.351 | 206 |
 | SCCO (SCCO) | 2025-12-03 | aufwaerts | 132.0008 | 0.813 | 2.632 | 201 |
@@ -1927,8 +1926,7 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | Silber (SI=F) | 2026-08-05 | aufwaerts | 60.056 | 1.387 | 3.986 | 34 |
 | Silber (SI=F) | 2026-08-07 | aufwaerts | 61.91 | 0.955 | 2.762 | 32 |
 | Silber (SI=F) | 2026-09-16 | aufwaerts | 63.64 | 0.436 | 1.226 | 5 |
-| Silber (SI=F) | 2026-09-17 | aufwaerts | 64.535 | 0.535 | 1.449 | 4 |
-| Silber (SI=F) | 2026-09-23 | abwaerts | 65.39 | 0.307 | 0.726 | 0 |
+| Silber (SI=F) | 2026-09-23 | abwaerts | 65.39 | 0.301 | 0.726 | 0 |
 | SIE.DE (SIE.DE) | 2026-04-08 | aufwaerts | 215.55 | 1.585 | 6.704 | 119 |
 | SIE.DE (SIE.DE) | 2026-04-14 | aufwaerts | 229.65 | 0.196 | 0.74 | 115 |
 | SIE.DE (SIE.DE) | 2026-09-01 | abwaerts | 284.5 | 0.301 | 0.615 | 16 |
@@ -2127,6 +2125,7 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | XOM (XOM) | 2026-08-10 | aufwaerts | 153.67 | 0.206 | 0.54 | 31 |
 | ZAL.DE (ZAL.DE) | 2026-08-04 | abwaerts | 28.56 | 1.905 | 8.964 | 36 |
 | Mais (ZC=F) | 2026-09-15 | aufwaerts | 517.5 | 1.432 | 3.043 | 6 |
+| Mais (ZC=F) | 2026-09-23 | abwaerts | 535.5 | 0.827 | 1.681 | 0 |
 | ZS (ZS) | 2025-11-14 | abwaerts | 307.2 | 0.329 | 1.12 | 213 |
 | ZS (ZS) | 2025-11-26 | abwaerts | 278.07 | 0.612 | 2.87 | 205 |
 | ZS (ZS) | 2025-12-01 | abwaerts | 249.68 | 0.209 | 1.033 | 203 |
@@ -2134,3 +2133,4 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | ZS (ZS) | 2026-09-14 | aufwaerts | 165.95 | 0.676 | 4.128 | 7 |
 | Weizen (ZW=F) | 2026-07-10 | aufwaerts | 611.5 | 1.213 | 3.025 | 52 |
 | Weizen (ZW=F) | 2026-09-03 | abwaerts | 751.25 | 0.941 | 2.928 | 13 |
+| Weizen (ZW=F) | 2026-09-23 | abwaerts | 714.75 | 0.38 | 0.979 | 0 |

@@ -65,7 +65,9 @@ def melde(text: str) -> None:
     MELDUNGEN.append(text)
 
 HALTE_FENSTER = 63
-PUFFER = [1.0, 1.5, 2.0, 2.5, 3.0]
+# 0,25 bis 10 ATR in Viertelschritten (Peter 25.09.2026: bis 10 ATR).
+PUFFER = [round(0.25 * i, 2) for i in range(1, 41)]
+PUFFER_MD = [1.0, 1.5, 2.0, 2.5, 3.0, 4.0, 5.0, 7.0, 10.0]  # Auswahl fuer stimmung_auswertung.md
 MIN_FAELLE = 10  # je Wert und Lage, sonst kein Vergleich
 
 # Lagen. Feste Grenzen statt Quantilen, damit "ruhig" heute dasselbe
@@ -441,7 +443,7 @@ def auswertung(df: pd.DataFrame) -> None:
         if n:
             md += ["| Puffer | Median Unterschied haelt | Werte schlechter | Werte besser |",
                    "|---|---|---|---|"]
-            for p in PUFFER:
+            for p in PUFFER_MD:
                 d = np.array(diffs[p])
                 md.append(f"| {de(p, 2)} ATR | {'+' if np.median(d) > 0 else ''}{de(float(np.median(d)), 1)} Pp | "
                           f"{int((d < -0.5).sum())} | {int((d > 0.5).sum())} |")

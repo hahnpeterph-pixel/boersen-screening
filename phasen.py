@@ -361,6 +361,13 @@ def main() -> int:
             **spanne("weit_tage", [p["dauer_weit"] for p in ph]),
             **spanne("weit_atr", [p["hoehe_weit"] for p in ph]),
             "korr_je_tief": korr_je_tief(ph),
+            # Jede abgeschlossene Korrektur einzeln (Peter 25.09.2026): ersetzt
+            # in der Kaufvorlage die Spalte "alle". Gezaehlt wird ab dem Hoch:
+            # von allen Korrekturen, die mindestens so tief gingen wie die
+            # heutige, wie viele blieben ueber dem KO. Format "tiefs:tiefe_ab"
+            # je Korrektur, Leerzeichen getrennt, zeitlich geordnet.
+            "korr_tiefen": " ".join(f"{p['tiefs']}:{p['tiefe_ab']:.2f}" for p in ph
+                                    if p["tiefe_ab"] is not None and np.isfinite(p["tiefe_ab"])),
             **vk, **ka, **pb,
         })
 
@@ -386,7 +393,7 @@ def main() -> int:
                + ["kauf_rsi_tiefster", "kauf_rsi_median", "kauf_rsi_hoechster",
                   "kauf_rsi_p25", "kauf_rsi_faelle"]
                + ["puffer_haelt_pct", "puffer_p75", "puffer_p90", "puffer_p95"]
-               + ["korr_je_tief"])
+               + ["korr_je_tief", "korr_tiefen"])
     with CSV_AUS.open("w", encoding="utf-8", newline="") as f:
         s = csv.DictWriter(f, fieldnames=SPALTEN, extrasaction="ignore")
         s.writeheader()

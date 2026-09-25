@@ -74,12 +74,22 @@ LAGEN = {
     "vix":  [(0, 16, "ruhig"), (16, 22, "normal"), (22, 1e9, "unruhig")],
     "vdax": [(0, 18, "ruhig"), (18, 24, "normal"), (24, 1e9, "unruhig")],
     "fg":   [(0, 45, "Angst"), (45, 55, "neutral"), (55, 101, "Gier")],
+    # Gemessene DAX-Schwankung (Rueckfall ohne VDAX-NEW) liegt niedriger als
+    # die erwartete. Grenzen so gesetzt, dass die Anteile denen des VIX
+    # entsprechen (ruhig 34 %, unruhig 26 % der Tage 2018-2026).
+    "vdax_gem": [(0, 13, "ruhig"), (13, 19, "normal"), (19, 1e9, "unruhig")],
 }
 FG_TEXT = [(0, 25, "extreme Angst"), (25, 45, "Angst"), (45, 55, "neutral"),
            (55, 75, "Gier"), (75, 101, "extreme Gier")]
 REIHENFOLGE = {"vix": ["ruhig", "normal", "unruhig"],
                "vdax": ["ruhig", "normal", "unruhig"],
-               "fg": ["Angst", "neutral", "Gier"]}
+               "fg": ["Angst", "neutral", "Gier"],
+               "vdax_gem": ["ruhig", "normal", "unruhig"]}
+
+
+def vdax_art(df: pd.DataFrame) -> str:
+    q = df["vdax_quelle"].dropna().iloc[-1] if df["vdax_quelle"].notna().any() else ""
+    return "vdax_gem" if str(q).startswith("gemessen") else "vdax"
 
 
 def de(x, n=1):
@@ -169,14 +179,21 @@ def dax_schwankung() -> pd.Series | None:
 
 
 def fear_greed() -> pd.Series | None:
-    try:
-        r = requests.get(FG_URL.format(start=START), headers=FG_KOPF, timeout=30)
-        if r.status_code != 200:
-            melde(f"  Fear & Greed: HTTP {r.status_code}, Antwort: {r.text[:200]!r}")
-            return None
-        j = r.json()
-    except Exception as e:  # noqa: BLE001
-        melde(f"  Fear & Greed: Abruf fehlgeschlagen ({e})")
+    # Aelteres Startdatum als rund ein Jahr liefert HTTP 500 (25.09.2026,
+    # mit 2018-01-01 getestet). Deshalb 360 Tage zurueck, dann ohne Datum.
+    j = None
+    start = (dt.date.today() - dt.timedelta(days=360)).isoformat()
+    for url in (FG_URL.format(start=start), FG_URL.format(start="").rstrip("/")):
+        try:
+            r = requests.get(url, headers=FG_KOPF, timeout=30)
+            if r.status_code != 200:
+                melde(f"  Fear & Greed {url[-20:]}: HTTP {r.status_code}, Antwort: {r.text[:120]!r}")
+                continue
+            j = r.json()
+            break
+        except Exception as e:  # noqa: BLE001
+            melde(f"  Fear & Greed: Abruf fehlgeschlagen ({e})")
+    if j is None:
         return None
     punkte = (j.get("fear_and_greed_historical") or {}).get("data") or []
     werte = {}
@@ -216,13 +233,7 @@ def fortschreiben() -> pd.DataFrame:
             neu["vdax"] = s
             vdax_quelle = k
             break
-    if vdax_quelle is None:
-        for k in STOOQ_KANDIDATEN:
-            s = stooq(k)
-            if s is not None:
-                neu["vdax"] = s
-                vdax_quelle = f"stooq:{k}"
-                break
+    # Stooq am 25.09.2026 von GitHub aus nicht erreichbar (Timeout) - nicht mehr versucht.
     if vdax_quelle is None:
         s = dax_schwankung()
         if s is not None:
@@ -271,7 +282,7 @@ def tageszeile(df: pd.DataFrame) -> str:
     if v is not None:
         name = ("VSTOXX" if q and ("V2TX" in q.upper() or "VSTOXX" in q.upper())
                 else "DAX-Schwankung gemessen" if q and q.startswith("gemessen") else "VDAX-NEW")
-        teile.append(f"{name} {de(v)} ({lage(v, 'vdax')}, 5T {'+' if d and d > 0 else ''}{de(d)}, {t:%d.%m.})")
+        teile.append(f"{name} {de(v)} ({lage(v, vdax_art(df))}, 5T {'+' if d and d > 0 else ''}{de(d)}, {t:%d.%m.})")
     v, d, t = _stand(df["fg"], 1)
     if v is not None:
         teile.append(f"Fear & Greed {de(v, 0)} ({fg_text(v)}, Vortag {'+' if d and d > 0 else ''}{de(d, 0)}, {t:%d.%m.})")
@@ -288,7 +299,7 @@ def schreibe_md(df: pd.DataFrame) -> None:
         f"**{tageszeile(df)}**",
         "",
         "Lagen: VIX ruhig < 16 · normal 16–22 · unruhig > 22 | "
-        "VDAX-NEW ruhig < 18 · normal 18–24 · unruhig > 24 | "
+        "VDAX-NEW ruhig < 18 · normal 18–24 · unruhig > 24 (gemessene DAX-Schwankung: < 13 · 13–19 · > 19) | "
         "Fear & Greed 0–25 extreme Angst · 25–45 Angst · 45–55 neutral · 55–75 Gier · 75–100 extreme Gier.",
         "",
         f"Quellen: VIX = Yahoo ^VIX · VDAX = Yahoo {q} · Fear & Greed = CNN.",
@@ -336,7 +347,7 @@ def auswertung(df: pd.DataFrame) -> None:
         tiefs[art] = w
 
     zuordnung = [("vix", ~tiefs["eu"], "US-Werte gegen VIX"),
-                 ("vdax", tiefs["eu"], "Deutsche Werte gegen VDAX-NEW"),
+                 ("vdax", tiefs["eu"], "Deutsche Werte gegen VDAX-NEW" if vdax_art(df) == "vdax" else "Deutsche Werte gegen gemessene DAX-Schwankung (kein VDAX-NEW verfuegbar)"),
                  ("fg", ~tiefs["eu"], "US-Werte gegen Fear & Greed")]
 
     csv_zeilen = []
@@ -353,8 +364,9 @@ def auswertung(df: pd.DataFrame) -> None:
             md += [f"## {titel}", "", "Keine Stimmungsdaten.", ""]
             continue
         t = tiefs[maske & tiefs[art].notna()].copy()
-        t["lage"] = t[art].map(lambda v: lage(v, art))
-        lagen = REIHENFOLGE[art]
+        art_l = vdax_art(df) if art == "vdax" else art
+        t["lage"] = t[art].map(lambda v: lage(v, art_l))
+        lagen = REIHENFOLGE[art_l]
         tief_l, hoch_l = lagen[0], lagen[-1]
         if art == "fg":
             tief_l, hoch_l = "Gier", "Angst"  # Angst ist die "unruhige" Seite

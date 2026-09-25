@@ -40,10 +40,11 @@ on:
     # Schlechteres zu speichern - Yahoo hatte die Daten schlicht noch nicht.
     # Auch dieser Nachlauf reichte am 01.09.2026 nicht - bleibt trotzdem
     # bestehen, kostet nichts, wenn Yahoo immer noch nicht so weit ist.
-    - cron: "0 5 * * 2-6"
-    # So 08:00 UTC (Peter 25.09.2026): frischer Lauf nach allen Wochenendlaeufen,
-    # damit heute.csv juenger ist als Historie/Phasen (keine gemischten Datenstaende).
-    - cron: "0 8 * * 0"
+    - cron: "0 5 * * 2-5"
+    # Sa 05:30 UTC = 07:30 MESZ (Peter 25.09.2026): Lauf NACH allen Wochenendlaeufen
+    # (Historie, Hochs, Phasen, Ruecksetzer, Tagesreaktion), damit heute.csv juenger ist
+    # als deren Dateien - keine gemischten Datenstaende; Auswertung ab Sa-Vormittag.
+    - cron: "30 5 * * 6"
   workflow_dispatch:        # erlaubt manuelles Starten per Knopfdruck
 
 # Alle drei Workflows schreiben ins selbe Repo. Laufen zwei gleichzeitig,

@@ -16,9 +16,9 @@ name: Tagesreaktion
 #           docs/laeufe.csv, docs/laeufe_roh.csv, docs/wochentage.csv
 
 on:
-  # Wochenendlauf (Peter 25.09.2026): Sa 11:30 UTC, nach Ruecksetzer
+  # Wochenendlauf (Peter 25.09.2026): Sa 04:45 UTC, nach Ruecksetzer
   schedule:
-    - cron: "30 11 * * 6"
+    - cron: "45 4 * * 6"
   workflow_dispatch:
     inputs:
       jahre:

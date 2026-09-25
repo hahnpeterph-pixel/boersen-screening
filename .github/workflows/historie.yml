@@ -9,7 +9,7 @@ on:
     # teilen sich die Concurrency-Gruppe "repo-schreiben" und wuerden sich
     # sonst gegenseitig in die Warteschlange schicken, statt sauber
     # nacheinander zu laufen.
-    - cron: "0 6 * * 6"
+    - cron: "30 0 * * 6"   # Sa 00:30 UTC = 02:30 MESZ (Peter 25.09.: Auswertung schon Sa-Vormittag)
   workflow_dispatch:
     inputs:
       jahre:

@@ -10,7 +10,7 @@ on:
     # gegenseitig in die Warteschlange zu schicken. An dem Tag ist kein
     # Markt offen, die beiden kritischen Screening-Laeufe (18:00 und 22:15
     # UTC, werktags) sind ohnehin nicht betroffen.
-    - cron: "0 7 * * 6"
+    - cron: "45 1 * * 6"   # Sa 01:45 UTC, nach Historie
   workflow_dispatch:
     inputs:
       jahre:

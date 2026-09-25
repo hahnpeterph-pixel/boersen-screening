@@ -1,6 +1,6 @@
 # Lange Kurshistorie - laeuft NUR auf Zuruf.
 #
-# Zeitplan seit 25.09.2026: sonntags 06:00 UTC (Peter). Frueher bewusst ohne Zeitplan. Das Skript zieht sieben Jahre Tagesdaten fuer rund
+# Zeitplan seit 25.09.2026: samstags 00:00 UTC (Peter). Frueher bewusst ohne Zeitplan. Das Skript zieht sieben Jahre Tagesdaten fuer rund
 # 218 Werte und braucht dafuer 10 bis 20 Minuten. Taeglich waere das
 # verschwendet: die Auswertung, fuer die es gedacht ist - was folgt auf
 # Tage mit hohem Anteil gefallener Werte - aendert sich durch einen
@@ -13,9 +13,9 @@
 name: Markthistorie
 
 on:
-  # Wochenendlauf (Peter 25.09.2026): So 06:00 UTC - Grundlage auch fuer ko_halten.py (KO-Halte-Liste)
+  # Wochenendlauf (Peter 25.09.2026): Sa 00:00 UTC, eigene Gruppe - Grundlage auch fuer ko_halten.py (KO-Halte-Liste)
   schedule:
-    - cron: "0 6 * * 0"
+    - cron: "0 0 * * 6"
   workflow_dispatch:
 
 permissions:

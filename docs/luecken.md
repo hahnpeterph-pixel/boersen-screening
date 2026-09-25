@@ -1486,7 +1486,6 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | Kupfer (HG=F) | 2026-07-30 | aufwaerts | 6.2765 | 0.594 | 1.06 | 39 |
 | Kupfer (HG=F) | 2026-09-17 | aufwaerts | 6.4385 | 1.117 | 2.042 | 5 |
 | Kupfer (HG=F) | 2026-09-21 | aufwaerts | 6.639 | 0.188 | 0.324 | 3 |
-| Kupfer (HG=F) | 2026-09-24 | aufwaerts | 6.7595 | 0.184 | 0.311 | 0 |
 | HNR1.DE (HNR1.DE) | 2026-09-07 | abwaerts | 260.4 | 0.317 | 0.461 | 13 |
 | HONA (HONA) | 2026-08-06 | abwaerts | 203.64 | 3.142 | 23.885 | 34 |
 | HSBC (HSBC) | 2025-10-21 | aufwaerts | 65.83 | 0.635 | 1.048 | 232 |
@@ -1854,7 +1853,6 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | REGN (REGN) | 2026-09-08 | abwaerts | 825.83 | 0.546 | 1.389 | 12 |
 | RHM.DE (RHM.DE) | 2026-05-08 | abwaerts | 1326.4 | 0.115 | 0.573 | 99 |
 | RHM.DE (RHM.DE) | 2026-09-01 | abwaerts | 1110.8 | 0.151 | 0.594 | 17 |
-| RIO (RIO) | 2025-09-25 | aufwaerts | 64.21 | 0.795 | 1.355 | 250 |
 | RIO (RIO) | 2025-09-29 | aufwaerts | 65.15 | 0.378 | 0.645 | 248 |
 | RIO (RIO) | 2025-11-25 | aufwaerts | 70.55 | 0.877 | 1.559 | 207 |
 | RIO (RIO) | 2025-12-03 | aufwaerts | 72.38 | 0.558 | 0.981 | 202 |

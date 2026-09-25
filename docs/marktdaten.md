@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-09-24 22:11 UTC. 280 Werte, Fenster 90 Kalendertage. EUR/USD 1.138._
+_Erstellt 2026-09-25 00:33 UTC. 280 Werte, Fenster 90 Kalendertage. EUR/USD 1.1382._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -87,6 +87,11 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | ENR.DE (ENR.DE) | 141.46 | - | - | ja | 45.69 |
 | VOW3.DE (VOW3.DE) | 70.86 | - | - | ja | 35.2 |
 | VNA.DE (VNA.DE) | 17.095 | - | - | ja | 21.56 |
+| Gold (GC=F) | 4303.7002 | - | - | ja | 40.68 |
+| Silber (SI=F) | 64.095 | - | - | ja | 46.38 |
+| Weizen (ZW=F) | 700.5 | - | - | ja | 46.84 |
+| Mais (ZC=F) | 523.75 | - | - | ja | 58.28 |
+| EUR/USD (EURUSD=X) | 1.1382 | - | - | ja | 25.35 |
 
 ---
 

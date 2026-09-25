@@ -1,6 +1,6 @@
 # Tiefs, Volumen und Kaufregel-Check
 
-_Erstellt 2026-09-24 22:11 UTC. Fenster: letzte 90 Kalendertage. Tiefs nach der Umkehr-Regel (tiefs_regel.py): ein Tief zaehlt, sobald eine spaetere Kerze das Hoch der Tiefkerze ueberschreitet. Solange es abwaerts geht, gilt das tiefste Tief der Strecke. Gerechnet wird auf abgeschlossenen Tageskerzen._
+_Erstellt 2026-09-25 00:33 UTC. Fenster: letzte 90 Kalendertage. Tiefs nach der Umkehr-Regel (tiefs_regel.py): ein Tief zaehlt, sobald eine spaetere Kerze das Hoch der Tiefkerze ueberschreitet. Solange es abwaerts geht, gilt das tiefste Tief der Strecke. Gerechnet wird auf abgeschlossenen Tageskerzen._
 
 ## Kaufregel
 
@@ -92,7 +92,7 @@ Tief minus 2,0 x ATR. Die Hebelangabe ist das, was sich bei diesem KO rechnerisc
 
 | Wert | Kurs | ATR | nach Trendtief | Hebel | konservativ | Hebel |
 |---|---|---|---|---|---|---|
-| Take-Two (TTWO) | 202,98 | 6,84 | 188,69 | 14,2x | 188,69 | 14,2x |
+| Take-Two (TTWO) | 202,98 | 6,84 | 188,70 | 14,2x | 188,70 | 14,2x |
 | Meta Platforms (META) | 777,59 | 28,24 | 604,33 | 4,5x | 468,02 | 2,5x |
 | Micron (MU) | 1.080,53 | 46,28 | 951,45 | 8,4x | 645,33 | 2,5x |
 | Microsoft (MSFT) | 497,93 | 10,20 | 470,83 | 18,4x | 352,96 | 3,4x |

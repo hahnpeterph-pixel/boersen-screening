@@ -1,6 +1,6 @@
 # Stimmung und Tiefs – Auswertung
 
-Stand: 25.09.2026 20:39 UTC. Grundlage: puffer_je_tief.csv.gz, nur Tiefs mit mindestens 63 beobachteten Tagen. Haelt = KO faellt in 63 Tagen nicht (benoetigt_atr <= Puffer), wie in heute.py.
+Stand: 25.09.2026 20:55 UTC. Grundlage: puffer_je_tief.csv.gz, nur Tiefs mit mindestens 63 beobachteten Tagen. Haelt = KO faellt in 63 Tagen nicht (benoetigt_atr <= Puffer), wie in heute.py.
 
 Lesart: Zuerst je Wert verglichen (unruhig gegen ruhig bzw. Angst gegen Gier), nur Werte mit je mindestens 10 Faellen in beiden Lagen. Die Gesamtzeile ist nur zur Orientierung.
 
@@ -72,31 +72,35 @@ Staerkste Unterschiede bei 2 ATR (haelt ruhig → unruhig):
 
 ## US-Werte gegen Fear & Greed
 
-4747 Tiefs, 232 Werte, Zeitraum 09/2025 bis 07/2026.
+42907 Tiefs, 233 Werte, Zeitraum 10/2019 bis 07/2026.
 
 | Lage | Faelle | haelt 1,5 ATR | haelt 2 ATR | haelt 3 ATR | Median benoetigt |
 |---|---|---|---|---|---|
-| Angst | 2748 | 45 % | 54 % | 66 % | 1,77 ATR |
-| neutral | 761 | 37 % | 43 % | 52 % | 2,71 ATR |
-| Gier | 1238 | 46 % | 52 % | 64 % | 1,88 ATR |
+| Angst | 18866 | 48 % | 54 % | 65 % | 1,68 ATR |
+| neutral | 6545 | 39 % | 44 % | 55 % | 2,52 ATR |
+| Gier | 17496 | 40 % | 46 % | 58 % | 2,27 ATR |
 
-**Je Wert (Angst gegen Gier), 2 Werte vergleichbar:**
+**Je Wert (Angst gegen Gier), 231 Werte vergleichbar:**
 
 | Puffer | Median Unterschied haelt | Werte schlechter | Werte besser |
 |---|---|---|---|
-| 1,00 ATR | +3,9 Pp | 1 | 1 |
-| 1,50 ATR | -1,8 Pp | 1 | 1 |
-| 2,00 ATR | -3,0 Pp | 1 | 1 |
-| 2,50 ATR | +1,2 Pp | 1 | 1 |
-| 3,00 ATR | -2,4 Pp | 1 | 1 |
+| 1,00 ATR | +6,8 Pp | 55 | 169 |
+| 1,50 ATR | +7,8 Pp | 59 | 166 |
+| 2,00 ATR | +8,0 Pp | 54 | 172 |
+| 2,50 ATR | +7,5 Pp | 61 | 162 |
+| 3,00 ATR | +7,7 Pp | 54 | 168 |
 
-Benoetigter Puffer (Angst minus Gier), Median ueber die Werte: +0,19 ATR.
+Benoetigter Puffer (Angst minus Gier), Median ueber die Werte: -0,66 ATR.
 
 Staerkste Unterschiede bei 2 ATR (haelt Gier → Angst):
 
-- PG: 73 % (11) → 20 % (15)
-- NEM: 0 % (11) → 47 % (15)
-- PG: 73 % (11) → 20 % (15)
-- NEM: 0 % (11) → 47 % (15)
+- ARM: 70 % (20) → 44 % (32)
+- APP: 70 % (57) → 44 % (75)
+- CRWD: 71 % (66) → 53 % (64)
+- TSM: 67 % (101) → 50 % (103)
+- CEG: 67 % (45) → 49 % (55)
+- AEP: 34 % (80) → 67 % (66)
+- VRSK: 33 % (67) → 67 % (86)
+- AMT: 12 % (76) → 58 % (79)
 
 Je Wert, Tief-Position (1, 2, 3+) und Lage: docs/stimmung_halten.csv (fuer die Kaufvorlage: "Bei heutiger Lage hielt Tief N dieses Werts x %").

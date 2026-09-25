@@ -178,6 +178,31 @@ def dax_schwankung() -> pd.Series | None:
     return s if len(s) >= 50 else None
 
 
+FG_HIST_URL = "https://raw.githubusercontent.com/whit3rabbit/fear-greed-data/main/fear-greed.csv"
+# Stichproben aus Peters finhacker.cz-Ausdrucken (25.09.2026) zur Kontrolle.
+FG_KONTROLLE = {"2021-02-23": 57, "2022-01-24": 23, "2022-05-12": 3,
+                "2023-06-09": 76, "2024-08-02": 41, "2025-11-06": 24}
+
+
+def fear_greed_historie() -> pd.Series | None:
+    """Tageswerte ab 2011 (Sammlung whit3rabbit/fear-greed-data: bis
+    29.01.2021 eingefrorene Altdaten, danach CNN). Die CNN-Schnittstelle
+    selbst liefert nur rund ein Jahr; ohne diese Reihe waere die
+    Auswertung auf 2025/26 beschraenkt."""
+    try:
+        r = requests.get(FG_HIST_URL, timeout=60)
+        r.raise_for_status()
+        from io import StringIO
+        d = pd.read_csv(StringIO(r.text), parse_dates=["Date"]).set_index("Date")["Fear Greed"].dropna()
+    except Exception as e:  # noqa: BLE001
+        melde(f"  Fear & Greed Historie: Abruf fehlgeschlagen ({e})")
+        return None
+    d.index = pd.to_datetime(d.index).normalize()
+    ok = [f"{t}: {d.get(pd.Timestamp(t), float('nan')):.0f} (PDF {w})" for t, w in FG_KONTROLLE.items()]
+    melde(f"  Fear & Greed Historie: {len(d)} Tage {d.index[0].date()} bis {d.index[-1].date()}; Kontrolle " + ", ".join(ok))
+    return d
+
+
 def fear_greed() -> pd.Series | None:
     # Aelteres Startdatum als rund ein Jahr liefert HTTP 500 (25.09.2026,
     # mit 2018-01-01 getestet). Deshalb 360 Tage zurueck, dann ohne Datum.
@@ -240,6 +265,11 @@ def fortschreiben() -> pd.DataFrame:
             neu["vdax"] = s
             vdax_quelle = "gemessen:^GDAXI"
     fg = fear_greed()
+    hist = fear_greed_historie()
+    if fg is not None and hist is not None:
+        fg = fg.combine_first(hist)  # CNN direkt gewinnt
+    elif hist is not None:
+        fg = hist
     if fg is not None:
         neu["fg"] = fg
 

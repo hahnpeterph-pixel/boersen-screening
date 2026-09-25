@@ -1,4 +1,19 @@
-Lauf 2026-09-25 20:29 UTC, pandas 3.0.6, yfinance 1.7.0
-stimmung.csv: 2197 Tage, VIX 2197, VDAX 0, F&G 0
-Stimmung: VIX 14,9 (ruhig, 5T +0,1, 25.09.)
+Lauf 2026-09-25 20:31 UTC, pandas 3.0.6, yfinance 1.7.0
+  ^VIX: 2197 Kerzen bis 2026-09-25
+  ^V1X: keine Daten
+  V1X.DE: keine Daten
+  ^VDAX: keine Daten
+  VDAX.DE: keine Daten
+  ^V2TX: keine Daten
+  V2TX.DE: keine Daten
+  Stooq ^vdax: Abruf fehlgeschlagen (HTTPSConnectionPool(host='stooq.com', port=443): Max retries exceeded with url: /q/d/l/?s=%5Evdax&i=d (Caused by ConnectTimeoutError(<HTTPSConnection(host='stooq.com', port=443) at 0x7fd69090c170>, 'Connection to stooq.com timed out. (connect timeout=30)')))
+  Stooq vdax: Abruf fehlgeschlagen (HTTPSConnectionPool(host='stooq.com', port=443): Max retries exceeded with url: /q/d/l/?s=vdax&i=d (Caused by ConnectTimeoutError(<HTTPSConnection(host='stooq.com', port=443) at 0x7fd6909276e0>, 'Connection to stooq.com timed out. (connect timeout=30)')))
+  Stooq ^v1x: Abruf fehlgeschlagen (HTTPSConnectionPool(host='stooq.com', port=443): Max retries exceeded with url: /q/d/l/?s=%5Ev1x&i=d (Caused by ConnectTimeoutError(<HTTPSConnection(host='stooq.com', port=443) at 0x7fd6909256a0>, 'Connection to stooq.com timed out. (connect timeout=30)')))
+  Stooq v1x.de: Abruf fehlgeschlagen (HTTPSConnectionPool(host='stooq.com', port=443): Max retries exceeded with url: /q/d/l/?s=v1x.de&i=d (Caused by ConnectTimeoutError(<HTTPSConnection(host='stooq.com', port=443) at 0x7fd6937d0f20>, 'Connection to stooq.com timed out. (connect timeout=30)')))
+  Stooq ^vstoxx: Abruf fehlgeschlagen (HTTPSConnectionPool(host='stooq.com', port=443): Max retries exceeded with url: /q/d/l/?s=%5Evstoxx&i=d (Caused by ConnectTimeoutError(<HTTPSConnection(host='stooq.com', port=443) at 0x7fd69098c8c0>, 'Connection to stooq.com timed out. (connect timeout=30)')))
+  Stooq ^v2tx: Abruf fehlgeschlagen (HTTPSConnectionPool(host='stooq.com', port=443): Max retries exceeded with url: /q/d/l/?s=%5Ev2tx&i=d (Caused by ConnectTimeoutError(<HTTPSConnection(host='stooq.com', port=443) at 0x7fd69098d010>, 'Connection to stooq.com timed out. (connect timeout=30)')))
+  DAX-Schwankung (gemessen, 21T): 2218 Tage bis 2026-09-25
+  Fear & Greed: HTTP 500, Antwort: 'Internal Server Error'
+stimmung.csv: 2256 Tage, VIX 2197, VDAX 2218, F&G 0
+Stimmung: VIX 14,9 (ruhig, 5T +0,1, 25.09.) · DAX-Schwankung gemessen 12,9 (ruhig, 5T +0,5, 25.09.)
 Auswertung geschrieben.

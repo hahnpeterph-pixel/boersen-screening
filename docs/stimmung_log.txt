@@ -1,0 +1,4 @@
+Lauf 2026-09-25 20:29 UTC, pandas 3.0.6, yfinance 1.7.0
+stimmung.csv: 2197 Tage, VIX 2197, VDAX 0, F&G 0
+Stimmung: VIX 14,9 (ruhig, 5T +0,1, 25.09.)
+Auswertung geschrieben.

@@ -57,6 +57,12 @@ FG_KOPF = {
     "Origin": "https://edition.cnn.com",
 }
 START = "2018-01-01"
+MELDUNGEN: list[str] = []
+
+
+def melde(text: str) -> None:
+    print(text)
+    MELDUNGEN.append(text)
 
 HALTE_FENSTER = 63
 PUFFER = [1.0, 1.5, 2.0, 2.5, 3.0]
@@ -106,28 +112,71 @@ def schluss(ticker: str) -> pd.Series | None:
     try:
         roh = yf.Ticker(ticker).history(start=START, interval="1d", auto_adjust=False)
     except Exception as e:  # noqa: BLE001
-        print(f"  {ticker}: Abruf fehlgeschlagen ({e})")
+        melde(f"  {ticker}: Abruf fehlgeschlagen ({e})")
         return None
     if roh is None or roh.empty or "Close" not in roh:
-        print(f"  {ticker}: keine Daten")
+        melde(f"  {ticker}: keine Daten")
         return None
     s = roh["Close"].dropna()
     s.index = pd.to_datetime(s.index).tz_localize(None).normalize()
     s = s[~s.index.duplicated(keep="last")]
     if len(s) < 50:
-        print(f"  {ticker}: nur {len(s)} Kerzen - verworfen")
+        melde(f"  {ticker}: nur {len(s)} Kerzen - verworfen")
         return None
-    print(f"  {ticker}: {len(s)} Kerzen bis {s.index[-1].date()}")
+    melde(f"  {ticker}: {len(s)} Kerzen bis {s.index[-1].date()}")
     return s
+
+
+STOOQ_KANDIDATEN = ["^vdax", "vdax", "^v1x", "v1x.de", "^vstoxx", "^v2tx"]
+
+
+def stooq(sym: str) -> pd.Series | None:
+    url = f"https://stooq.com/q/d/l/?s={sym}&i=d"
+    try:
+        r = requests.get(url, headers={"User-Agent": FG_KOPF["User-Agent"]}, timeout=30)
+        if r.status_code != 200 or not r.text.startswith("Date"):
+            melde(f"  Stooq {sym}: HTTP {r.status_code}, {r.text[:60]!r}")
+            return None
+        from io import StringIO
+        d = pd.read_csv(StringIO(r.text), parse_dates=["Date"]).set_index("Date")["Close"].dropna()
+    except Exception as e:  # noqa: BLE001
+        melde(f"  Stooq {sym}: Abruf fehlgeschlagen ({e})")
+        return None
+    d = d[d.index >= START]
+    if len(d) < 50:
+        melde(f"  Stooq {sym}: nur {len(d)} Kerzen")
+        return None
+    melde(f"  Stooq {sym}: {len(d)} Kerzen bis {d.index[-1].date()}")
+    return d
+
+
+def dax_schwankung() -> pd.Series | None:
+    """Rueckfall, wenn kein VDAX-NEW zu bekommen ist: gemessene Schwankung
+    des DAX (Standardabweichung der Tagesrenditen ueber 21 Tage, auf das
+    Jahr hochgerechnet, in Prozent). Gleiche Groessenordnung wie VDAX-NEW,
+    aber rueckblickend statt erwartet - in stimmung.md so benannt."""
+    try:
+        roh = yf.Ticker("^GDAXI").history(start="2017-11-01", interval="1d", auto_adjust=False)
+        c = roh["Close"].dropna()
+        c.index = pd.to_datetime(c.index).tz_localize(None).normalize()
+    except Exception as e:  # noqa: BLE001
+        melde(f"  ^GDAXI: Abruf fehlgeschlagen ({e})")
+        return None
+    s = (np.log(c).diff().rolling(21).std() * np.sqrt(252) * 100).dropna()
+    s = s[s.index >= START]
+    melde(f"  DAX-Schwankung (gemessen, 21T): {len(s)} Tage bis {s.index[-1].date()}")
+    return s if len(s) >= 50 else None
 
 
 def fear_greed() -> pd.Series | None:
     try:
         r = requests.get(FG_URL.format(start=START), headers=FG_KOPF, timeout=30)
-        r.raise_for_status()
+        if r.status_code != 200:
+            melde(f"  Fear & Greed: HTTP {r.status_code}, Antwort: {r.text[:200]!r}")
+            return None
         j = r.json()
     except Exception as e:  # noqa: BLE001
-        print(f"  Fear & Greed: Abruf fehlgeschlagen ({e})")
+        melde(f"  Fear & Greed: Abruf fehlgeschlagen ({e})")
         return None
     punkte = (j.get("fear_and_greed_historical") or {}).get("data") or []
     werte = {}
@@ -144,10 +193,10 @@ def fear_greed() -> pd.Series | None:
     except (KeyError, TypeError, ValueError, AttributeError):
         pass
     if not werte:
-        print("  Fear & Greed: Antwort ohne Werte")
+        melde(f"  Fear & Greed: Antwort ohne Werte, Schluessel {list(j)[:5]}")
         return None
     s = pd.Series(werte).sort_index()
-    print(f"  Fear & Greed: {len(s)} Tage bis {s.index[-1].date()}")
+    melde(f"  Fear & Greed: {len(s)} Tage bis {s.index[-1].date()}")
     return s
 
 
@@ -167,6 +216,18 @@ def fortschreiben() -> pd.DataFrame:
             neu["vdax"] = s
             vdax_quelle = k
             break
+    if vdax_quelle is None:
+        for k in STOOQ_KANDIDATEN:
+            s = stooq(k)
+            if s is not None:
+                neu["vdax"] = s
+                vdax_quelle = f"stooq:{k}"
+                break
+    if vdax_quelle is None:
+        s = dax_schwankung()
+        if s is not None:
+            neu["vdax"] = s
+            vdax_quelle = "gemessen:^GDAXI"
     fg = fear_greed()
     if fg is not None:
         neu["fg"] = fg
@@ -208,7 +269,8 @@ def tageszeile(df: pd.DataFrame) -> str:
     q = df["vdax_quelle"].dropna().iloc[-1] if df["vdax_quelle"].notna().any() else None
     v, d, t = _stand(df["vdax"])
     if v is not None:
-        name = "VSTOXX" if q and "V2TX" in q else "VDAX-NEW"
+        name = ("VSTOXX" if q and ("V2TX" in q.upper() or "VSTOXX" in q.upper())
+                else "DAX-Schwankung gemessen" if q and q.startswith("gemessen") else "VDAX-NEW")
         teile.append(f"{name} {de(v)} ({lage(v, 'vdax')}, 5T {'+' if d and d > 0 else ''}{de(d)}, {t:%d.%m.})")
     v, d, t = _stand(df["fg"], 1)
     if v is not None:
@@ -379,6 +441,7 @@ def main() -> int:
         if not args.ohne_abruf:
             fortschreiben()
         # Immer aus der Datei lesen: gleiche Datentypen wie im getesteten Pfad.
+        log.extend(MELDUNGEN)
         df = pd.read_csv(CSV, parse_dates=["datum"]).set_index("datum")
         log.append(f"stimmung.csv: {len(df)} Tage, VIX {df['vix'].notna().sum()}, "
                    f"VDAX {df['vdax'].notna().sum()}, F&G {df['fg'].notna().sum()}")

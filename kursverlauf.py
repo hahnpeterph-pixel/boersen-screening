@@ -149,7 +149,10 @@ SRT3.DE SIE.DE ENR.DE SHL.DE SY1.DE VOW3.DE VNA.DE ZAL.DE""".split()
 # schlaegt die Pruefung taeglich fehl, ohne dass ein echter Fehler
 # vorliegt.
 WEITERE = ["GC=F", "SI=F", "PL=F", "PA=F", "HG=F", "CL=F", "BZ=F", "NG=F",
-           "ZW=F", "CC=F", "SB=F", "KC=F", "ZC=F", "EURUSD=X"]
+           "ZW=F", "CC=F", "SB=F", "KC=F", "ZC=F", "EURUSD=X",
+           # Rendite 10-jaehrige US-Staatsanleihe (Peter 25.09.2026): Zeile
+           # "Abhaengigkeit" der Kaufvorlage (Zinsen). Nur Kursreihe, kein Screening.
+           "^TNX"]
 
 UNIVERSUM = list(dict.fromkeys(US + DAX + WEITERE))
 

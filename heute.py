@@ -84,7 +84,8 @@ def ist_rohstoff_oder_fx(ticker: str) -> bool:
     marktdaten.py). Eine vierte waere genau der Fehler, der diese Woche
     schon zweimal Bugs verursacht hat (kursverlauf.py, luecken.py).
     """
-    return ticker.endswith("=F") or ticker.endswith("=X")
+    # "^" = Index/Zinsreihe (z. B. ^TNX seit 25.09.2026 in kursverlauf) - nie Kandidat.
+    return ticker.endswith("=F") or ticker.endswith("=X") or ticker.startswith("^")
 
 
 # Rohstoffe, auf die es bei Trade Republic KO-Zertifikate gibt. Alles

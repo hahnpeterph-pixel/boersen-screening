@@ -41,6 +41,9 @@ on:
     # Auch dieser Nachlauf reichte am 01.09.2026 nicht - bleibt trotzdem
     # bestehen, kostet nichts, wenn Yahoo immer noch nicht so weit ist.
     - cron: "0 5 * * 2-6"
+    # So 08:00 UTC (Peter 25.09.2026): frischer Lauf nach allen Wochenendlaeufen,
+    # damit heute.csv juenger ist als Historie/Phasen (keine gemischten Datenstaende).
+    - cron: "0 8 * * 0"
   workflow_dispatch:        # erlaubt manuelles Starten per Knopfdruck
 
 # Alle drei Workflows schreiben ins selbe Repo. Laufen zwei gleichzeitig,

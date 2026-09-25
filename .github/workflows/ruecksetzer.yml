@@ -1,6 +1,9 @@
 name: Ruecksetzer
 
 on:
+  # Wochenendlauf (Peter 25.09.2026): Sa 10:00 UTC, nach Phasen
+  schedule:
+    - cron: "0 10 * * 6"
   workflow_dispatch:
     inputs:
       jahre:

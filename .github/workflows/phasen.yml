@@ -9,6 +9,9 @@ name: Phasen-Analyse
 # Ergebnis: docs/phasen.csv (zum Einlesen ins Orderbuch) und docs/phasen.md.
 
 on:
+  # Wochenendlauf (Peter 25.09.2026): Sa 09:00 UTC, nach Historie (06:00) und Hochs (07:00)
+  schedule:
+    - cron: "0 9 * * 6"
   workflow_dispatch:
     inputs:
       jahre:

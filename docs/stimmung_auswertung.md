@@ -1,6 +1,6 @@
 # Stimmung und Tiefs – Auswertung
 
-Stand: 25.09.2026 20:55 UTC. Grundlage: puffer_je_tief.csv.gz, nur Tiefs mit mindestens 63 beobachteten Tagen. Haelt = KO faellt in 63 Tagen nicht (benoetigt_atr <= Puffer), wie in heute.py.
+Stand: 25.09.2026 21:02 UTC. Grundlage: puffer_je_tief.csv.gz, nur Tiefs mit mindestens 63 beobachteten Tagen. Haelt = KO faellt in 63 Tagen nicht (benoetigt_atr <= Puffer), wie in heute.py.
 
 Lesart: Zuerst je Wert verglichen (unruhig gegen ruhig bzw. Angst gegen Gier), nur Werte mit je mindestens 10 Faellen in beiden Lagen. Die Gesamtzeile ist nur zur Orientierung.
 
@@ -23,6 +23,10 @@ Lesart: Zuerst je Wert verglichen (unruhig gegen ruhig bzw. Angst gegen Gier), n
 | 2,00 ATR | +12,9 Pp | 35 | 195 |
 | 2,50 ATR | +14,3 Pp | 31 | 196 |
 | 3,00 ATR | +14,5 Pp | 25 | 198 |
+| 4,00 ATR | +15,3 Pp | 20 | 211 |
+| 5,00 ATR | +16,0 Pp | 12 | 215 |
+| 7,00 ATR | +15,2 Pp | 12 | 215 |
+| 10,00 ATR | +10,4 Pp | 8 | 213 |
 
 Benoetigter Puffer (unruhig minus ruhig), Median ueber die Werte: -1,12 ATR.
 
@@ -56,6 +60,10 @@ Staerkste Unterschiede bei 2 ATR (haelt ruhig → unruhig):
 | 2,00 ATR | +16,3 Pp | 10 | 28 |
 | 2,50 ATR | +15,6 Pp | 12 | 27 |
 | 3,00 ATR | +14,9 Pp | 12 | 27 |
+| 4,00 ATR | +11,9 Pp | 12 | 27 |
+| 5,00 ATR | +10,0 Pp | 12 | 27 |
+| 7,00 ATR | +8,1 Pp | 6 | 32 |
+| 10,00 ATR | +4,3 Pp | 1 | 36 |
 
 Benoetigter Puffer (unruhig minus ruhig), Median ueber die Werte: -1,35 ATR.
 
@@ -89,6 +97,10 @@ Staerkste Unterschiede bei 2 ATR (haelt ruhig → unruhig):
 | 2,00 ATR | +8,0 Pp | 54 | 172 |
 | 2,50 ATR | +7,5 Pp | 61 | 162 |
 | 3,00 ATR | +7,7 Pp | 54 | 168 |
+| 4,00 ATR | +6,9 Pp | 50 | 174 |
+| 5,00 ATR | +7,1 Pp | 47 | 184 |
+| 7,00 ATR | +5,8 Pp | 37 | 181 |
+| 10,00 ATR | +4,8 Pp | 26 | 187 |
 
 Benoetigter Puffer (Angst minus Gier), Median ueber die Werte: -0,66 ATR.
 

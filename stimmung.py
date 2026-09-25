@@ -359,21 +359,47 @@ def auswertung(df: pd.DataFrame) -> None:
     print(f"Auswertung geschrieben: {AUSW_MD}, {AUSW_CSV} ({len(csv_zeilen)} Zeilen)")
 
 
+LOG = os.path.join(DOCS, "stimmung_log.txt")
+
+
 def main() -> int:
+    """Jeder Teil einzeln abgesichert; Fehler landen mit Traceback in
+    docs/stimmung_log.txt (wird mit gespeichert), damit sie ohne Zugang
+    zu den Actions-Protokollen lesbar sind."""
+    import traceback
     ap = argparse.ArgumentParser()
     ap.add_argument("--auswertung", action="store_true")
     ap.add_argument("--ohne-abruf", action="store_true", help="nur gespeicherte stimmung.csv nutzen")
     args = ap.parse_args()
-
-    if args.ohne_abruf:
+    log = [f"Lauf {dt.datetime.utcnow():%Y-%m-%d %H:%M} UTC, pandas {pd.__version__}, "
+           f"yfinance {getattr(yf, '__version__', '?')}"]
+    fehler = False
+    df = None
+    try:
+        if not args.ohne_abruf:
+            fortschreiben()
+        # Immer aus der Datei lesen: gleiche Datentypen wie im getesteten Pfad.
         df = pd.read_csv(CSV, parse_dates=["datum"]).set_index("datum")
-    else:
-        df = fortschreiben()
-    schreibe_md(df)
-    print(tageszeile(df))
-    if args.auswertung:
-        auswertung(df)
-    return 0
+        log.append(f"stimmung.csv: {len(df)} Tage, VIX {df['vix'].notna().sum()}, "
+                   f"VDAX {df['vdax'].notna().sum()}, F&G {df['fg'].notna().sum()}")
+        schreibe_md(df)
+        log.append(tageszeile(df))
+        print(tageszeile(df))
+    except Exception:  # noqa: BLE001
+        fehler = True
+        log.append("FEHLER Abruf/Tageszeile:\n" + traceback.format_exc())
+    if args.auswertung and df is not None:
+        try:
+            auswertung(df)
+            log.append("Auswertung geschrieben.")
+        except Exception:  # noqa: BLE001
+            fehler = True
+            log.append("FEHLER Auswertung:\n" + traceback.format_exc())
+    os.makedirs(DOCS, exist_ok=True)
+    with open(LOG, "w", encoding="utf-8") as f:
+        f.write("\n".join(log) + "\n")
+    print("\n".join(log))
+    return 1 if fehler else 0
 
 
 if __name__ == "__main__":

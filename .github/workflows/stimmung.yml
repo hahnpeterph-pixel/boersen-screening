@@ -41,8 +41,11 @@ jobs:
       - name: Abhaengigkeiten installieren
         run: pip install -r requirements.txt
 
+      # continue-on-error: auch bei einem Fehler wird gespeichert, damit
+      # docs/stimmung_log.txt (mit Traceback) im Repo lesbar ist.
       - name: Stimmung abrufen und auswerten
         run: python stimmung.py --auswertung
+        continue-on-error: true
 
       - name: Ergebnis speichern
         run: |

@@ -1,0 +1,380 @@
+"""Marktstimmung: VIX, VDAX-NEW und CNN Fear & Greed (Peter 25.09.2026).
+
+NICHT als Kaufwert, sondern als Stimmungsbestimmung der Maerkte.
+
+Zwei Aufgaben:
+
+1. Taeglich (Schritt im Screening-Workflow): Reihen abrufen, in
+   docs/stimmung.csv fortschreiben und die Stimmungszeile fuer die
+   Tagesausgabe in docs/stimmung.md schreiben.
+
+2. Mit --auswertung (eigener Workflow stimmung.yml, Sa frueh und bei
+   Aenderung dieses Skripts): Wie gut hielten Tiefs je nach Stimmung am
+   Tag des Tiefs? Grundlage docs/puffer_je_tief.csv.gz, dieselbe
+   Halte-Definition wie heute.py (_haelt_flex): ein Puffer haelt, wenn
+   benoetigt_atr <= Puffer, nur Faelle mit >= 63 beobachteten Tagen.
+   WERTSPEZIFISCH (keine Pools): Vergleich ruhig gegen unruhig je Wert,
+   danach erst die Zusammenfassung ueber die Werte.
+   US-Werte gegen VIX und Fear & Greed, .DE-Werte gegen VDAX-NEW.
+
+Quellen:
+- VIX: Yahoo ^VIX.
+- VDAX-NEW: Yahoo, Kuerzel nicht sicher bekannt - es werden mehrere
+  Kandidaten probiert, der erste mit Daten gewinnt und wird in stimmung.md
+  genannt. Letzter Rueckfall ist VSTOXX (europaeisch, nicht DAX).
+- Fear & Greed: CNN-Datenschnittstelle hinter cnn.com/markets/fear-and-greed
+  (keine offizielle API). Liefert nur rund ein Jahr rueckwirkend, deshalb
+  wird die Reihe in stimmung.csv fortgeschrieben und nie gekuerzt.
+  Faellt der Abruf aus, bleibt der gespeicherte Stand stehen.
+"""
+from __future__ import annotations
+
+import argparse
+import datetime as dt
+import os
+import sys
+
+import numpy as np
+import pandas as pd
+import requests
+import yfinance as yf
+
+DOCS = "docs"
+CSV = os.path.join(DOCS, "stimmung.csv")
+MD = os.path.join(DOCS, "stimmung.md")
+AUSW_MD = os.path.join(DOCS, "stimmung_auswertung.md")
+AUSW_CSV = os.path.join(DOCS, "stimmung_halten.csv")
+TIEFS = os.path.join(DOCS, "puffer_je_tief.csv.gz")
+
+VIX = "^VIX"
+VDAX_KANDIDATEN = ["^V1X", "V1X.DE", "^VDAX", "VDAX.DE", "^V2TX", "V2TX.DE"]
+FG_URL = "https://production.dataviz.cnn.io/index/fearandgreed/graphdata/{start}"
+FG_KOPF = {
+    "User-Agent": ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                   "(KHTML, like Gecko) Chrome/124.0 Safari/537.36"),
+    "Accept": "application/json, text/plain, */*",
+    "Referer": "https://edition.cnn.com/markets/fear-and-greed",
+    "Origin": "https://edition.cnn.com",
+}
+START = "2018-01-01"
+
+HALTE_FENSTER = 63
+PUFFER = [1.0, 1.5, 2.0, 2.5, 3.0]
+MIN_FAELLE = 10  # je Wert und Lage, sonst kein Vergleich
+
+# Lagen. Feste Grenzen statt Quantilen, damit "ruhig" heute dasselbe
+# bedeutet wie 2019. VDAX-NEW liegt ueblicherweise 2-3 Punkte ueber VIX.
+LAGEN = {
+    "vix":  [(0, 16, "ruhig"), (16, 22, "normal"), (22, 1e9, "unruhig")],
+    "vdax": [(0, 18, "ruhig"), (18, 24, "normal"), (24, 1e9, "unruhig")],
+    "fg":   [(0, 45, "Angst"), (45, 55, "neutral"), (55, 101, "Gier")],
+}
+FG_TEXT = [(0, 25, "extreme Angst"), (25, 45, "Angst"), (45, 55, "neutral"),
+           (55, 75, "Gier"), (75, 101, "extreme Gier")]
+REIHENFOLGE = {"vix": ["ruhig", "normal", "unruhig"],
+               "vdax": ["ruhig", "normal", "unruhig"],
+               "fg": ["Angst", "neutral", "Gier"]}
+
+
+def de(x, n=1):
+    if x is None or (isinstance(x, float) and np.isnan(x)):
+        return "–"
+    return f"{x:,.{n}f}".replace(",", "X").replace(".", ",").replace("X", ".")
+
+
+def lage(wert, art):
+    if wert is None or pd.isna(wert):
+        return None
+    for lo, hi, name in LAGEN[art]:
+        if lo <= wert < hi:
+            return name
+    return None
+
+
+def fg_text(wert):
+    if wert is None or pd.isna(wert):
+        return "–"
+    for lo, hi, name in FG_TEXT:
+        if lo <= wert < hi:
+            return name
+    return "–"
+
+
+# ---------------------------------------------------------------- Abruf
+
+def schluss(ticker: str) -> pd.Series | None:
+    try:
+        roh = yf.Ticker(ticker).history(start=START, interval="1d", auto_adjust=False)
+    except Exception as e:  # noqa: BLE001
+        print(f"  {ticker}: Abruf fehlgeschlagen ({e})")
+        return None
+    if roh is None or roh.empty or "Close" not in roh:
+        print(f"  {ticker}: keine Daten")
+        return None
+    s = roh["Close"].dropna()
+    s.index = pd.to_datetime(s.index).tz_localize(None).normalize()
+    s = s[~s.index.duplicated(keep="last")]
+    if len(s) < 50:
+        print(f"  {ticker}: nur {len(s)} Kerzen - verworfen")
+        return None
+    print(f"  {ticker}: {len(s)} Kerzen bis {s.index[-1].date()}")
+    return s
+
+
+def fear_greed() -> pd.Series | None:
+    try:
+        r = requests.get(FG_URL.format(start=START), headers=FG_KOPF, timeout=30)
+        r.raise_for_status()
+        j = r.json()
+    except Exception as e:  # noqa: BLE001
+        print(f"  Fear & Greed: Abruf fehlgeschlagen ({e})")
+        return None
+    punkte = (j.get("fear_and_greed_historical") or {}).get("data") or []
+    werte = {}
+    for p in punkte:
+        try:
+            tag = pd.Timestamp(dt.datetime.utcfromtimestamp(p["x"] / 1000).date())
+            werte[tag] = float(p["y"])
+        except (KeyError, TypeError, ValueError):
+            continue
+    aktuell = j.get("fear_and_greed") or {}
+    try:
+        tag = pd.Timestamp(pd.to_datetime(aktuell["timestamp"]).tz_localize(None).date())
+        werte[tag] = float(aktuell["score"])
+    except (KeyError, TypeError, ValueError, AttributeError):
+        pass
+    if not werte:
+        print("  Fear & Greed: Antwort ohne Werte")
+        return None
+    s = pd.Series(werte).sort_index()
+    print(f"  Fear & Greed: {len(s)} Tage bis {s.index[-1].date()}")
+    return s
+
+
+def fortschreiben() -> pd.DataFrame:
+    alt = None
+    if os.path.exists(CSV):
+        alt = pd.read_csv(CSV, parse_dates=["datum"]).set_index("datum")
+
+    neu = {}
+    vix = schluss(VIX)
+    if vix is not None:
+        neu["vix"] = vix
+    vdax_quelle = None
+    for k in VDAX_KANDIDATEN:
+        s = schluss(k)
+        if s is not None:
+            neu["vdax"] = s
+            vdax_quelle = k
+            break
+    fg = fear_greed()
+    if fg is not None:
+        neu["fg"] = fg
+
+    df = pd.DataFrame(neu)
+    if alt is not None:
+        # Neuer Abruf gewinnt, gespeicherte Tage bleiben erhalten
+        # (wichtig fuer Fear & Greed, das nur ein Jahr rueckwirkend liefert).
+        df = df.combine_first(alt[[c for c in ("vix", "vdax", "fg") if c in alt]])
+        if vdax_quelle is None and "vdax_quelle" in alt:
+            vdax_quelle = alt["vdax_quelle"].dropna().iloc[-1] if alt["vdax_quelle"].notna().any() else None
+    for c in ("vix", "vdax", "fg"):
+        if c not in df:
+            df[c] = np.nan
+    df = df[["vix", "vdax", "fg"]].sort_index()
+    df["vdax_quelle"] = vdax_quelle
+    df.index.name = "datum"
+    os.makedirs(DOCS, exist_ok=True)
+    df.to_csv(CSV, float_format="%.2f")
+    return df
+
+
+# ---------------------------------------------------------------- Tageszeile
+
+def _stand(s: pd.Series, tage: int = 5):
+    s = s.dropna()
+    if s.empty:
+        return None, None, None
+    jetzt = s.iloc[-1]
+    vor = s.iloc[-1 - tage] if len(s) > tage else None
+    return jetzt, (None if vor is None else jetzt - vor), s.index[-1]
+
+
+def tageszeile(df: pd.DataFrame) -> str:
+    teile = []
+    v, d, t = _stand(df["vix"])
+    if v is not None:
+        teile.append(f"VIX {de(v)} ({lage(v, 'vix')}, 5T {'+' if d and d > 0 else ''}{de(d)}, {t:%d.%m.})")
+    q = df["vdax_quelle"].dropna().iloc[-1] if df["vdax_quelle"].notna().any() else None
+    v, d, t = _stand(df["vdax"])
+    if v is not None:
+        name = "VSTOXX" if q and "V2TX" in q else "VDAX-NEW"
+        teile.append(f"{name} {de(v)} ({lage(v, 'vdax')}, 5T {'+' if d and d > 0 else ''}{de(d)}, {t:%d.%m.})")
+    v, d, t = _stand(df["fg"], 1)
+    if v is not None:
+        teile.append(f"Fear & Greed {de(v, 0)} ({fg_text(v)}, Vortag {'+' if d and d > 0 else ''}{de(d, 0)}, {t:%d.%m.})")
+    return "Stimmung: " + (" · ".join(teile) if teile else "keine Daten")
+
+
+def schreibe_md(df: pd.DataFrame) -> None:
+    q = df["vdax_quelle"].dropna().iloc[-1] if df["vdax_quelle"].notna().any() else "keine"
+    zeilen = [
+        "# Marktstimmung",
+        "",
+        f"Stand Abruf: {dt.datetime.utcnow():%d.%m.%Y %H:%M} UTC",
+        "",
+        f"**{tageszeile(df)}**",
+        "",
+        "Lagen: VIX ruhig < 16 · normal 16–22 · unruhig > 22 | "
+        "VDAX-NEW ruhig < 18 · normal 18–24 · unruhig > 24 | "
+        "Fear & Greed 0–25 extreme Angst · 25–45 Angst · 45–55 neutral · 55–75 Gier · 75–100 extreme Gier.",
+        "",
+        f"Quellen: VIX = Yahoo ^VIX · VDAX = Yahoo {q} · Fear & Greed = CNN.",
+        "",
+        "Nur Stimmung, kein Kaufsignal. Ob die Lage fuer unsere Tiefs etwas aussagt: siehe stimmung_auswertung.md.",
+        "",
+        "| Tag | VIX | VDAX | F&G |",
+        "|---|---|---|---|",
+    ]
+    for tag, z in df.tail(10).iloc[::-1].iterrows():
+        zeilen.append(f"| {tag:%d.%m.%Y} | {de(z['vix'])} | {de(z['vdax'])} | {de(z['fg'], 0)} |")
+    with open(MD, "w", encoding="utf-8") as f:
+        f.write("\n".join(zeilen) + "\n")
+
+
+# ---------------------------------------------------------------- Auswertung
+
+def _haelt(benoetigt: np.ndarray, puffer: float):
+    if len(benoetigt) == 0:
+        return np.nan
+    return float((benoetigt <= puffer + 1e-9).mean() * 100)
+
+
+def auswertung(df: pd.DataFrame) -> None:
+    tiefs = pd.read_csv(TIEFS, usecols=["ticker", "datum", "position", "beobachtet", "benoetigt_atr"],
+                        parse_dates=["datum"])
+    tiefs = tiefs[~tiefs["ticker"].str.contains(r"=|\^", regex=True)]
+    tiefs = tiefs[(tiefs["beobachtet"] >= HALTE_FENSTER) & tiefs["benoetigt_atr"].notna()]
+    tiefs["eu"] = tiefs["ticker"].str.endswith(".DE") | tiefs["ticker"].str.endswith(".AS")
+    tiefs["pos"] = tiefs["position"].clip(upper=3).astype(int)  # 1, 2, 3+
+
+    # Stimmung am Tag des Tiefs (oder letzter Handelstag davor).
+    reihen = {}
+    for art in ("vix", "vdax", "fg"):
+        s = df[art].dropna().sort_index()
+        if s.empty:
+            continue
+        st = tiefs[["datum"]].copy().reset_index()
+        st = st.sort_values("datum")
+        m = pd.merge_asof(st, s.rename("wert").reset_index().rename(columns={"datum": "tag"}),
+                          left_on="datum", right_on="tag", direction="backward",
+                          tolerance=pd.Timedelta(days=5))
+        reihen[art] = m.set_index("index")["wert"]
+    for art, w in reihen.items():
+        tiefs[art] = w
+
+    zuordnung = [("vix", ~tiefs["eu"], "US-Werte gegen VIX"),
+                 ("vdax", tiefs["eu"], "Deutsche Werte gegen VDAX-NEW"),
+                 ("fg", ~tiefs["eu"], "US-Werte gegen Fear & Greed")]
+
+    csv_zeilen = []
+    md = ["# Stimmung und Tiefs – Auswertung", "",
+          f"Stand: {dt.datetime.utcnow():%d.%m.%Y %H:%M} UTC. Grundlage: puffer_je_tief.csv.gz, "
+          f"nur Tiefs mit mindestens {HALTE_FENSTER} beobachteten Tagen. "
+          "Haelt = KO faellt in 63 Tagen nicht (benoetigt_atr <= Puffer), wie in heute.py.", "",
+          "Lesart: Zuerst je Wert verglichen (unruhig gegen ruhig bzw. Angst gegen Gier), "
+          f"nur Werte mit je mindestens {MIN_FAELLE} Faellen in beiden Lagen. "
+          "Die Gesamtzeile ist nur zur Orientierung.", ""]
+
+    for art, maske, titel in zuordnung:
+        if art not in tiefs:
+            md += [f"## {titel}", "", "Keine Stimmungsdaten.", ""]
+            continue
+        t = tiefs[maske & tiefs[art].notna()].copy()
+        t["lage"] = t[art].map(lambda v: lage(v, art))
+        lagen = REIHENFOLGE[art]
+        tief_l, hoch_l = lagen[0], lagen[-1]
+        if art == "fg":
+            tief_l, hoch_l = "Gier", "Angst"  # Angst ist die "unruhige" Seite
+        von = t["datum"].min()
+        bis = t["datum"].max()
+        md += [f"## {titel}", "",
+               f"{len(t)} Tiefs, {t['ticker'].nunique()} Werte, Zeitraum "
+               f"{'–' if pd.isna(von) else f'{von:%m/%Y}'} bis {'–' if pd.isna(bis) else f'{bis:%m/%Y}'}.", ""]
+
+        # 1) Gesamtuebersicht
+        md += ["| Lage | Faelle | haelt 1,5 ATR | haelt 2 ATR | haelt 3 ATR | Median benoetigt |",
+               "|---|---|---|---|---|---|"]
+        for l in lagen:
+            b = t.loc[t["lage"] == l, "benoetigt_atr"].to_numpy(float)
+            md.append(f"| {l} | {len(b)} | {de(_haelt(b, 1.5), 0)} % | {de(_haelt(b, 2.0), 0)} % | "
+                      f"{de(_haelt(b, 3.0), 0)} % | {de(np.median(b) if len(b) else np.nan, 2)} ATR |")
+        md.append("")
+
+        # 2) Wertspezifisch
+        diffs = {p: [] for p in PUFFER}
+        med_diff = []
+        je_wert = []
+        for tick, g in t.groupby("ticker"):
+            a = g.loc[g["lage"] == tief_l, "benoetigt_atr"].to_numpy(float)
+            b = g.loc[g["lage"] == hoch_l, "benoetigt_atr"].to_numpy(float)
+            for pos in (1, 2, 3):
+                for l in lagen:
+                    x = g.loc[(g["lage"] == l) & (g["pos"] == pos), "benoetigt_atr"].to_numpy(float)
+                    if len(x):
+                        csv_zeilen.append({"reihe": art, "ticker": tick, "tief": pos if pos < 3 else "3+",
+                                           "lage": l, "faelle": len(x),
+                                           **{f"haelt_{p:g}_pct": round(_haelt(x, p), 1) for p in PUFFER},
+                                           "median_benoetigt_atr": round(float(np.median(x)), 3)})
+            if len(a) >= MIN_FAELLE and len(b) >= MIN_FAELLE:
+                for p in PUFFER:
+                    diffs[p].append(_haelt(b, p) - _haelt(a, p))
+                med_diff.append(float(np.median(b) - np.median(a)))
+                je_wert.append((tick, len(a), len(b), _haelt(a, 2.0), _haelt(b, 2.0)))
+
+        n = len(je_wert)
+        md += [f"**Je Wert ({hoch_l} gegen {tief_l}), {n} Werte vergleichbar:**", ""]
+        if n:
+            md += ["| Puffer | Median Unterschied haelt | Werte schlechter | Werte besser |",
+                   "|---|---|---|---|"]
+            for p in PUFFER:
+                d = np.array(diffs[p])
+                md.append(f"| {de(p, 2)} ATR | {'+' if np.median(d) > 0 else ''}{de(float(np.median(d)), 1)} Pp | "
+                          f"{int((d < -0.5).sum())} | {int((d > 0.5).sum())} |")
+            md += ["", f"Benoetigter Puffer ({hoch_l} minus {tief_l}), Median ueber die Werte: "
+                   f"{'+' if np.median(med_diff) > 0 else ''}{de(float(np.median(med_diff)), 2)} ATR.", ""]
+            je_wert.sort(key=lambda x: x[4] - x[3])
+            md += [f"Staerkste Unterschiede bei 2 ATR (haelt {tief_l} → {hoch_l}):", ""]
+            for tick, na, nb, ha, hb in je_wert[:5] + je_wert[-3:]:
+                md.append(f"- {tick}: {de(ha, 0)} % ({na}) → {de(hb, 0)} % ({nb})")
+            md.append("")
+        else:
+            md += ["Zu wenige Faelle je Wert fuer einen Vergleich.", ""]
+
+    pd.DataFrame(csv_zeilen).to_csv(AUSW_CSV, index=False)
+    md += ["Je Wert, Tief-Position (1, 2, 3+) und Lage: docs/stimmung_halten.csv "
+           "(fuer die Kaufvorlage: \"Bei heutiger Lage hielt Tief N dieses Werts x %\")."]
+    with open(AUSW_MD, "w", encoding="utf-8") as f:
+        f.write("\n".join(md) + "\n")
+    print(f"Auswertung geschrieben: {AUSW_MD}, {AUSW_CSV} ({len(csv_zeilen)} Zeilen)")
+
+
+def main() -> int:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--auswertung", action="store_true")
+    ap.add_argument("--ohne-abruf", action="store_true", help="nur gespeicherte stimmung.csv nutzen")
+    args = ap.parse_args()
+
+    if args.ohne_abruf:
+        df = pd.read_csv(CSV, parse_dates=["datum"]).set_index("datum")
+    else:
+        df = fortschreiben()
+    schreibe_md(df)
+    print(tageszeile(df))
+    if args.auswertung:
+        auswertung(df)
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

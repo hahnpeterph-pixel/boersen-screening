@@ -206,6 +206,14 @@ jobs:
         run: python heute.py
         continue-on-error: true
 
+      # Marktstimmung (25.09.2026): VIX, VDAX-NEW, Fear & Greed fortschreiben
+      # und Stimmungszeile fuer die Tagesausgabe (docs/stimmung.md). Kein
+      # Kaufwert. continue-on-error: ein CNN- oder Yahoo-Aussetzer darf den
+      # Tagesbericht nicht kippen.
+      - name: Stimmung ausfuehren
+        run: python stimmung.py
+        continue-on-error: true
+
       - name: Ergebnis speichern
         run: |
           git config user.name "screening-bot"

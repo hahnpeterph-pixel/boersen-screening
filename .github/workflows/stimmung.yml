@@ -1,0 +1,66 @@
+name: Stimmung-Auswertung
+
+# Marktstimmung (Peter 25.09.2026): VIX, VDAX-NEW, CNN Fear & Greed -
+# nicht als Kaufwert, sondern als Stimmungsbestimmung. Dieser Workflow
+# ruft die Reihen ab UND wertet aus, wie gut Tiefs je nach Stimmung am
+# Tag des Tiefs hielten (docs/stimmung_auswertung.md, docs/stimmung_halten.csv).
+# Die taegliche Stimmungszeile schreibt der Screening-Workflow.
+#
+# Laeuft: Sa 05:10 UTC (nach Tagesreaktion, vor dem abschliessenden
+# Screening 05:30), bei jeder Aenderung an stimmung.py und von Hand.
+
+on:
+  schedule:
+    - cron: "10 5 * * 6"
+  push:
+    branches: [main]
+    paths:
+      - "stimmung.py"
+      - ".github/workflows/stimmung.yml"
+  workflow_dispatch:
+
+concurrency:
+  group: repo-schreiben
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  stimmung:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Abhaengigkeiten installieren
+        run: pip install -r requirements.txt
+
+      - name: Stimmung abrufen und auswerten
+        run: python stimmung.py --auswertung
+
+      - name: Ergebnis speichern
+        run: |
+          git config user.name "screening-bot"
+          git config user.email "actions@github.com"
+          git add docs
+          if git diff --staged --quiet; then
+            echo "Nichts geaendert."
+            exit 0
+          fi
+          git commit -m "Stimmung-Auswertung $(date -u +%Y-%m-%d\ %H:%M)"
+          for versuch in 1 2 3; do
+            if git pull --rebase --autostash origin main && git push origin main; then
+              echo "Gespeichert im Versuch $versuch."
+              exit 0
+            fi
+            echo "Versuch $versuch fehlgeschlagen, neuer Anlauf in 10 Sekunden ..."
+            sleep 10
+          done
+          echo "Push nach drei Versuchen fehlgeschlagen."
+          exit 1

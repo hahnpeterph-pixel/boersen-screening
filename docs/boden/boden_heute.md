@@ -1,4 +1,4 @@
-# Boden-Screening 2026-09-24 (Stand 2026-09-24 22:27 UTC)
+# Boden-Screening 2026-09-24 (Stand 2026-09-25 00:54 UTC)
 
 Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RSI < 50 + mind. 2 Boden-Punkte + mind. 75 % Kaufempfehlungen. Anker = niedrigster Puffer mit 60 % Halterate fuer diese Gruppe und diesen Wert (Vollauf), KO-Marke = Bezugstief - Anker x ATR.
 
@@ -33,7 +33,7 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | BAYN.DE | 1 | 1 P, RSI >= 50, Analysten 72 % |
 | BBVA | 1 | 1 P, Analysten 0 % |
 | BEI.DE | 1 | 1 P, RSI >= 50, Analysten 35 % |
-| BLK | 1 | 1 P, Tief 1, Analysten - % |
+| BLK | 1 | 1 P, Tief 1 |
 | BMW.DE | 1 | 1 P, Tief 1, Umkehr a, Analysten 45 % |
 | CNQ | 1 | 1 P, Analysten 48 % |
 | COF | 1 | 1 P, Umkehr a |

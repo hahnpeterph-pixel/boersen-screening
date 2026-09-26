@@ -1,39 +1,39 @@
 {
- "date": "2026-09-25",
+ "date": "2026-09-26",
  "ranks": {
   "turnaround": [
-   "ZS",
-   "T",
    "SHOP",
    "SPOT",
-   "DIS",
-   "MCK",
-   "BBVA",
-   "AMGN",
+   "T",
+   "UL",
+   "MSTR",
    "ABT",
-   "ING",
-   "MDB",
+   "DXCM",
+   "SHEL",
    "BLK",
-   "XOM",
-   "CTAS",
-   "SCCO"
+   "ZS",
+   "VRTX",
+   "KO",
+   "EQNR",
+   "BEI.DE",
+   "XOM"
   ],
   "momentum": [
    "CRWD",
-   "PANW",
-   "ANET",
-   "ING",
-   "ILMN",
    "MRNA",
-   "MRK",
-   "BBVA",
-   "VLO",
+   "NET",
+   "INTC",
    "MPC",
+   "VLO",
+   "SRT3.DE",
+   "ILMN",
    "SY1.DE",
+   "ING",
    "CBK.DE",
-   "SCCO",
-   "META",
-   "SIE.DE"
+   "DE",
+   "KO",
+   "SIE.DE",
+   "MTX.DE"
   ],
   "value": [
    "SNDK",
@@ -44,11 +44,11 @@
    "PBR",
    "RIO",
    "COP",
+   "BLK",
    "META",
    "REGN",
-   "BLK",
-   "V",
    "MNST",
+   "V",
    "MTX.DE",
    "BHP"
   ]
@@ -57,169 +57,143 @@
   "turnaround": {
    "entries": [
     {
-     "ticker": "ZS",
-     "rank": 1
-    },
-    {
-     "ticker": "SPOT",
+     "ticker": "UL",
      "rank": 4
     },
     {
-     "ticker": "DIS",
+     "ticker": "MSTR",
      "rank": 5
     },
     {
-     "ticker": "MCK",
-     "rank": 6
-    },
-    {
-     "ticker": "BBVA",
+     "ticker": "DXCM",
      "rank": 7
     },
     {
-     "ticker": "AMGN",
+     "ticker": "SHEL",
      "rank": 8
     },
     {
-     "ticker": "ING",
-     "rank": 10
-    },
-    {
-     "ticker": "MDB",
+     "ticker": "VRTX",
      "rank": 11
     },
     {
-     "ticker": "CTAS",
+     "ticker": "KO",
+     "rank": 12
+    },
+    {
+     "ticker": "EQNR",
+     "rank": 13
+    },
+    {
+     "ticker": "BEI.DE",
      "rank": 14
     }
    ],
    "exits": [
     {
-     "ticker": "VLO",
-     "old_rank": 3
+     "ticker": "DIS",
+     "old_rank": 5
     },
     {
-     "ticker": "MSTR",
-     "old_rank": 4
-    },
-    {
-     "ticker": "MPC",
+     "ticker": "MCK",
      "old_rank": 6
     },
     {
-     "ticker": "SNOW",
+     "ticker": "BBVA",
      "old_rank": 7
     },
     {
-     "ticker": "DXCM",
-     "old_rank": 9
+     "ticker": "AMGN",
+     "old_rank": 8
     },
     {
-     "ticker": "QIA.DE",
+     "ticker": "ING",
      "old_rank": 10
     },
     {
-     "ticker": "KO",
+     "ticker": "MDB",
      "old_rank": 11
     },
     {
-     "ticker": "TSLA",
+     "ticker": "CTAS",
      "old_rank": 14
     },
     {
-     "ticker": "AMZN",
+     "ticker": "SCCO",
      "old_rank": 15
     }
    ],
    "moves": [
     {
-     "ticker": "XOM",
-     "rank": 13,
-     "delta": -8
+     "ticker": "ZS",
+     "rank": 10,
+     "delta": -9
     }
    ]
   },
   "momentum": {
    "entries": [
     {
-     "ticker": "PANW",
-     "rank": 2
-    },
-    {
-     "ticker": "ANET",
+     "ticker": "NET",
      "rank": 3
     },
     {
-     "ticker": "MRK",
+     "ticker": "INTC",
+     "rank": 4
+    },
+    {
+     "ticker": "SRT3.DE",
      "rank": 7
     },
     {
-     "ticker": "BBVA",
-     "rank": 8
+     "ticker": "DE",
+     "rank": 12
     },
     {
-     "ticker": "SY1.DE",
-     "rank": 11
+     "ticker": "KO",
+     "rank": 13
     },
     {
-     "ticker": "META",
-     "rank": 14
-    },
-    {
-     "ticker": "SIE.DE",
+     "ticker": "MTX.DE",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "NET",
-     "old_rank": 5
+     "ticker": "PANW",
+     "old_rank": 2
     },
     {
-     "ticker": "DELL",
-     "old_rank": 6
+     "ticker": "ANET",
+     "old_rank": 3
     },
     {
-     "ticker": "TMO",
+     "ticker": "MRK",
      "old_rank": 7
     },
     {
-     "ticker": "DHL.DE",
+     "ticker": "BBVA",
      "old_rank": 8
     },
     {
-     "ticker": "DE",
-     "old_rank": 9
+     "ticker": "SCCO",
+     "old_rank": 13
     },
     {
-     "ticker": "PSX",
-     "old_rank": 12
-    },
-    {
-     "ticker": "KO",
-     "old_rank": 15
+     "ticker": "META",
+     "old_rank": 14
     }
    ],
    "moves": [
     {
-     "ticker": "ING",
-     "rank": 4,
-     "delta": 9
-    },
-    {
-     "ticker": "ILMN",
+     "ticker": "MPC",
      "rank": 5,
      "delta": 5
     },
     {
-     "ticker": "VLO",
-     "rank": 9,
-     "delta": -8
-    },
-    {
-     "ticker": "MPC",
+     "ticker": "ING",
      "rank": 10,
-     "delta": -7
+     "delta": -6
     }
    ]
   },

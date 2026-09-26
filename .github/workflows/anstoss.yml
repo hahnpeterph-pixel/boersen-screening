@@ -8,8 +8,9 @@ name: Anstoss Wochenendkette
 # die Laeufe teilen die Concurrency-Gruppe "repo-schreiben", in der nur
 # EIN Lauf warten darf - gleichzeitig gestartet wuerden sie sich
 # gegenseitig verdraengen.
-# Uebersprungen wird ein Lauf, der in den letzten 10 Stunden schon lief
-# oder gerade laeuft/wartet (z. B. der verspaetete geplante Lauf).
+# Welche Laeufe: Zeile "laeufe: a.yml b.yml" in der hochgeladenen Datei,
+# sonst die ganze Kette. Uebersprungen wird nur, was nach dem Start DIESES
+# Ablaufs schon angelaufen ist (z. B. der verspaetete geplante Lauf).
 
 on:
   push:
@@ -34,11 +35,19 @@ jobs:
       GH_TOKEN: ${{ github.token }}
       GH_REPO: ${{ github.repository }}
     steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
       - name: Laeufe nacheinander starten
         run: |
           set -u
-          seit=$(date -u -d '10 hours ago' +%Y-%m-%dT%H:%M:%SZ)
-          for wf in historie.yml hochs.yml phasen.yml ruecksetzer.yml tagesreaktion.yml stimmung.yml screening.yml; do
+          seit=$(date -u -d '5 minutes ago' +%Y-%m-%dT%H:%M:%SZ)
+          datei=$(git diff --name-only HEAD~1 HEAD -- .github/anstoss | tail -1)
+          liste=$( [ -n "$datei" ] && grep -oP '^laeufe:\s*\K.*' "$datei" || true )
+          [ -z "$liste" ] && liste="historie.yml hochs.yml phasen.yml ruecksetzer.yml tagesreaktion.yml stimmung.yml screening.yml"
+          echo "Laeufe: $liste"
+          for wf in $liste; do
             schon=$(gh run list --workflow "$wf" --limit 5 --json createdAt,status,conclusion \
               --jq "[.[] | select(.createdAt > \"$seit\") | select(.status != \"completed\" or .conclusion == \"success\")] | length")
             if [ "$schon" != "0" ]; then

@@ -2,38 +2,38 @@
  "date": "2026-09-26",
  "ranks": {
   "turnaround": [
+   "ZS",
+   "T",
    "SHOP",
    "SPOT",
-   "T",
-   "UL",
-   "MSTR",
+   "DIS",
+   "MCK",
+   "BBVA",
+   "AMGN",
    "ABT",
-   "DXCM",
+   "ING",
    "SHEL",
+   "MDB",
    "BLK",
-   "ZS",
-   "VRTX",
-   "KO",
-   "EQNR",
-   "BEI.DE",
-   "XOM"
+   "XOM",
+   "CTAS"
   ],
   "momentum": [
    "CRWD",
-   "MRNA",
-   "NET",
-   "INTC",
-   "MPC",
-   "VLO",
-   "SRT3.DE",
-   "ILMN",
-   "SY1.DE",
+   "PANW",
+   "ANET",
    "ING",
+   "ILMN",
+   "MRNA",
+   "MRK",
+   "BBVA",
+   "VLO",
+   "MPC",
+   "SY1.DE",
    "CBK.DE",
-   "DE",
-   "KO",
-   "SIE.DE",
-   "MTX.DE"
+   "SCCO",
+   "META",
+   "SIE.DE"
   ],
   "value": [
    "SNDK",
@@ -44,11 +44,11 @@
    "PBR",
    "RIO",
    "COP",
-   "BLK",
    "META",
    "REGN",
-   "MNST",
+   "BLK",
    "V",
+   "MNST",
    "MTX.DE",
    "BHP"
   ]
@@ -57,143 +57,135 @@
   "turnaround": {
    "entries": [
     {
-     "ticker": "UL",
-     "rank": 4
-    },
-    {
-     "ticker": "MSTR",
+     "ticker": "DIS",
      "rank": 5
     },
     {
-     "ticker": "DXCM",
+     "ticker": "MCK",
+     "rank": 6
+    },
+    {
+     "ticker": "BBVA",
      "rank": 7
     },
     {
-     "ticker": "SHEL",
+     "ticker": "AMGN",
      "rank": 8
     },
     {
-     "ticker": "VRTX",
-     "rank": 11
+     "ticker": "ING",
+     "rank": 10
     },
     {
-     "ticker": "KO",
+     "ticker": "MDB",
      "rank": 12
     },
     {
-     "ticker": "EQNR",
-     "rank": 13
-    },
-    {
-     "ticker": "BEI.DE",
-     "rank": 14
+     "ticker": "CTAS",
+     "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "DIS",
+     "ticker": "UL",
+     "old_rank": 4
+    },
+    {
+     "ticker": "MSTR",
      "old_rank": 5
     },
     {
-     "ticker": "MCK",
-     "old_rank": 6
-    },
-    {
-     "ticker": "BBVA",
+     "ticker": "DXCM",
      "old_rank": 7
     },
     {
-     "ticker": "AMGN",
-     "old_rank": 8
-    },
-    {
-     "ticker": "ING",
-     "old_rank": 10
-    },
-    {
-     "ticker": "MDB",
+     "ticker": "VRTX",
      "old_rank": 11
     },
     {
-     "ticker": "CTAS",
-     "old_rank": 14
+     "ticker": "KO",
+     "old_rank": 12
     },
     {
-     "ticker": "SCCO",
-     "old_rank": 15
+     "ticker": "EQNR",
+     "old_rank": 13
+    },
+    {
+     "ticker": "BEI.DE",
+     "old_rank": 14
     }
    ],
    "moves": [
     {
      "ticker": "ZS",
-     "rank": 10,
-     "delta": -9
+     "rank": 1,
+     "delta": 9
     }
    ]
   },
   "momentum": {
    "entries": [
     {
-     "ticker": "NET",
+     "ticker": "PANW",
+     "rank": 2
+    },
+    {
+     "ticker": "ANET",
      "rank": 3
     },
     {
-     "ticker": "INTC",
-     "rank": 4
-    },
-    {
-     "ticker": "SRT3.DE",
+     "ticker": "MRK",
      "rank": 7
     },
     {
-     "ticker": "DE",
-     "rank": 12
+     "ticker": "BBVA",
+     "rank": 8
     },
     {
-     "ticker": "KO",
+     "ticker": "SCCO",
      "rank": 13
     },
     {
-     "ticker": "MTX.DE",
-     "rank": 15
+     "ticker": "META",
+     "rank": 14
     }
    ],
    "exits": [
     {
-     "ticker": "PANW",
-     "old_rank": 2
-    },
-    {
-     "ticker": "ANET",
+     "ticker": "NET",
      "old_rank": 3
     },
     {
-     "ticker": "MRK",
+     "ticker": "INTC",
+     "old_rank": 4
+    },
+    {
+     "ticker": "SRT3.DE",
      "old_rank": 7
     },
     {
-     "ticker": "BBVA",
-     "old_rank": 8
+     "ticker": "DE",
+     "old_rank": 12
     },
     {
-     "ticker": "SCCO",
+     "ticker": "KO",
      "old_rank": 13
     },
     {
-     "ticker": "META",
-     "old_rank": 14
+     "ticker": "MTX.DE",
+     "old_rank": 15
     }
    ],
    "moves": [
     {
-     "ticker": "MPC",
-     "rank": 5,
-     "delta": 5
+     "ticker": "ING",
+     "rank": 4,
+     "delta": 6
     },
     {
-     "ticker": "ING",
+     "ticker": "MPC",
      "rank": 10,
-     "delta": -6
+     "delta": -5
     }
    ]
   },

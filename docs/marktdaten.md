@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-09-26 00:39 UTC. 280 Werte, Fenster 90 Kalendertage. EUR/USD 1.1392._
+_Erstellt 2026-09-26 05:42 UTC. 280 Werte, Fenster 90 Kalendertage. EUR/USD 1.1392._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -25,7 +25,7 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | MCD (MCD) | 236.5 | - | - | ja | 24.65 |
 | MDB (MDB) | 410.44 | - | ja | ja | 53.68 |
 | MDLZ (MDLZ) | 60.25 | - | - | ja | 39.62 |
-| NFLX (NFLX) | 71.145 | - | - | ja | 37.07 |
+| NFLX (NFLX) | 71.15 | - | - | ja | 37.08 |
 | ODFL (ODFL) | 173.3 | - | - | ja | 28.75 |
 | PANW (PANW) | 374.74 | - | - | ja | 54.38 |
 | PDD (PDD) | 77.57 | - | - | ja | 37.03 |
@@ -51,6 +51,7 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | EQIX (EQIX) | 1008.08 | - | ja | ja | 41.97 |
 | TTE (TTE) | 90.94 | - | - | ja | 53.95 |
 | PBR (PBR) | 20.37 | - | - | ja | 51.83 |
+| BNS (BNS) | 93.48 | ja | ja | - | 54.67 |
 | ENB (ENB) | 46.74 | - | - | ja | 26.48 |
 | EQNR (EQNR) | 42.19 | - | - | ja | 47.18 |
 | CNQ (CNQ) | 47.41 | - | - | ja | 40.44 |
@@ -61,8 +62,8 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | HEN3.DE (HEN3.DE) | 73.82 | - | - | ja | 45.83 |
 | RHM.DE (RHM.DE) | 979.0 | - | - | ja | 37.07 |
 | ZAL.DE (ZAL.DE) | 21.9 | - | - | ja | 40.34 |
-| Brent Oel (BZ=F) | 97.47 | - | - | ja | 48.42 |
-| Weizen (ZW=F) | 704.0 | ja | - | - | 47.85 |
+| Kupfer (HG=F) | 6.6955 | - | - | ja | 56.13 |
+| Weizen (ZW=F) | 703.25 | ja | - | - | 47.59 |
 
 ---
 

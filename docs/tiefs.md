@@ -1,6 +1,6 @@
 # Tiefs, Volumen und Kaufregel-Check
 
-_Erstellt 2026-09-26 00:39 UTC. Fenster: letzte 90 Kalendertage. Tiefs nach der Umkehr-Regel (tiefs_regel.py): ein Tief zaehlt, sobald eine spaetere Kerze das Hoch der Tiefkerze ueberschreitet. Solange es abwaerts geht, gilt das tiefste Tief der Strecke. Gerechnet wird auf abgeschlossenen Tageskerzen._
+_Erstellt 2026-09-26 05:42 UTC. Fenster: letzte 90 Kalendertage. Tiefs nach der Umkehr-Regel (tiefs_regel.py): ein Tief zaehlt, sobald eine spaetere Kerze das Hoch der Tiefkerze ueberschreitet. Solange es abwaerts geht, gilt das tiefste Tief der Strecke. Gerechnet wird auf abgeschlossenen Tageskerzen._
 
 ## Kaufregel
 
@@ -73,8 +73,8 @@ Umkehr = Hammer-Kerze ODER hoeheres Hoch als der Vortag. Die Spalte Schwelle ist
 
 | Wert | Kurs | Marke | Abstand | Tief | ATR | RSI | Schwelle | KO-Vorschlag | Einsatz | Signal | |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| NVIDIA (NVDA) _Kandidat_ | 225,07 | 209,00 | 7,7 % | 221,09 | 5,22 | 55,2 | 65,2 (123 Faelle, 100,0 % der Serien) | 210,64 | **150,00 EUR** | hoeheres Hoch — CHART PRUEFEN | + |
-| Applied Materials (AMAT) _Kandidat_ | 485,00 | 465,00 | 4,3 % | 460,55 | 18,23 | 55,7 | 62,0 (139 Faelle, 100,0 % der Serien) | 424,09 | **150,00 EUR** | hoeheres Hoch — CHART PRUEFEN | + |
+| NVIDIA (NVDA) _Kandidat_ | 225,07 | 209,00 | 7,7 % | 221,09 | 5,22 | 55,2 | 65,7 (121 Faelle, 100,0 % der Serien) | 210,64 | **150,00 EUR** | hoeheres Hoch — CHART PRUEFEN | + |
+| Applied Materials (AMAT) _Kandidat_ | 485,00 | 465,00 | 4,3 % | 460,55 | 18,23 | 55,7 | 61,9 (140 Faelle, 100,0 % der Serien) | 424,09 | **150,00 EUR** | hoeheres Hoch — CHART PRUEFEN | + |
 
 _Legende: `+` Signal da, `!` Signal da aber RSI zu hoch, `-` warten._
 
@@ -85,8 +85,8 @@ _Legende: `+` Signal da, `!` Signal da aber RSI zu hoch, `-` warten._
 | Take-Two (TTWO) | 231,58 (20.08., Chart) | 0,41 x ATR | 0,21 | **70,65 EUR** | kaufbar |
 | Meta Platforms (META) | 524,52 (30.07., Chart) | 0,19 x ATR | 0,10 | **59,58 EUR** | kaufbar |
 | Micron (MU) | 915,18 (19.08., Chart) | 1,24 x ATR | 0,62 | **112,13 EUR** | kaufbar |
-| Microsoft (MSFT) | 477,15 (18.08., Chart) | 11,78 x ATR | 1,00 | **150,00 EUR** | kaufbar |
-| Microsoft II (MSFT) | 477,15 (18.08., Chart) | 0,21 x ATR | 0,10 | **60,33 EUR** | kaufbar |
+| Microsoft (MSFT) | 477,15 (18.08., Chart) | 11,77 x ATR | 1,00 | **150,00 EUR** | kaufbar |
+| Microsoft II (MSFT) | 477,15 (18.08., Chart) | 0,21 x ATR | 0,10 | **60,32 EUR** | kaufbar |
 | Oracle (ORCL) | 137,44 (19.08., Chart) | 3,21 x ATR | 1,00 | **150,00 EUR** | kaufbar |
 
 _Einsatz inklusive Ordergebuehr. Das tiefste Tief des Fensters steht in der Tabelle oben weiterhin zur Einordnung, geht aber nicht in die Bewertung ein._
@@ -100,8 +100,8 @@ Tief minus 2,0 x ATR. Die Hebelangabe ist das, was sich bei diesem KO rechnerisc
 | Take-Two (TTWO) | 201,44 | 6,68 | 187,18 | 14,1x | 187,18 | 14,1x |
 | Meta Platforms (META) | 751,66 | 29,58 | 601,64 | 5,0x | 465,33 | 2,6x |
 | Micron (MU) | 1.082,28 | 44,57 | 954,86 | 8,5x | 648,74 | 2,5x |
-| Microsoft (MSFT) | 516,17 | 10,94 | 469,34 | 11,0x | 351,47 | 3,1x |
-| Microsoft II (MSFT) | 516,17 | 10,94 | 469,34 | 11,0x | 351,47 | 3,1x |
+| Microsoft (MSFT) | 516,17 | 10,95 | 469,33 | 11,0x | 351,46 | 3,1x |
+| Microsoft II (MSFT) | 516,17 | 10,95 | 469,33 | 11,0x | 351,46 | 3,1x |
 | Oracle (ORCL) | 137,10 | 7,70 | 118,07 | 7,2x | 99,09 | 3,6x |
 
 _'nach Trendtief' orientiert sich am juengsten Tief und laesst mehr Hebel zu. 'konservativ' orientiert sich am tiefsten Tief des Fensters und ueberlebt auch einen Rueckfall dorthin._
@@ -138,7 +138,7 @@ _Diese Zeilen in die gelben Spalten uebertragen. Reihenfolge wie dort._
 | TTWO | 201,44 | 6,68 | 32,6 | 231,58 | 2026-08-20 | 0,70 |
 | META | 751,66 | 29,58 | 71,3 | 524,52 | 2026-07-30 | 1,53 |
 | MU | 1.082,28 | 44,57 | 63,2 | 915,18 | 2026-08-19 | 0,87 |
-| MSFT | 516,17 | 10,94 | 63,2 | 477,15 | 2026-08-18 | 0,77 |
+| MSFT | 516,17 | 10,95 | 63,2 | 477,15 | 2026-08-18 | 0,77 |
 | ORCL | 137,10 | 7,70 | 40,6 | 137,44 | 2026-08-19 | 1,78 |
 | NVDA | 225,07 | 5,22 | 55,2 | 221,09 | 2026-09-24 | - |
 | AMAT | 485,00 | 18,23 | 55,7 | 460,55 | 2026-09-24 | - |

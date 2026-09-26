@@ -1,4 +1,4 @@
-Lauf 2026-09-26 07:21 UTC, pandas 3.0.6, yfinance 1.7.0
+Lauf 2026-09-26 07:35 UTC, pandas 3.0.6, yfinance 1.7.0
   ^VIX: 3958 Kerzen bis 2026-09-25
   ^V1X: keine Daten
   V1X.DE: keine Daten

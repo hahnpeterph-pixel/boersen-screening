@@ -113,6 +113,47 @@ def abhaengigkeit(idx: pd.DataFrame) -> pd.DataFrame:
     return pd.DataFrame(zeilen).sort_values("ticker")
 
 
+# ── Marktlage mit 40-Tage-Blick und Warnfeldern (Peter 26.09.2026) ──────
+# Test 26.09.2026 (S&P 500, 2011-2026, getrennt 2011-18 / 2019-26 bestaetigt):
+# 40 Handelstage Rueckblick sagen am meisten ueber Einbrueche >= 10 % in den
+# naechsten 63 Tagen: Index unterstes Fuenftel 22 % gegen 9 %, VIX oberstes
+# Fuenftel 16 % gegen 8 %, Fear & Greed unterstes Fuenftel 16 % gegen 8 %.
+# Warnfelder: VIX ruhig (< 16) + F&G < 25 -> 43 % Einbrueche >= 10 %;
+# VIX normal (16-22) + F&G < 25 -> 29 %. Durchschnitt aller Tage 12 %.
+BLICK = 40
+
+
+def marktlage(idx: pd.DataFrame) -> tuple[str, list[str]]:
+    st = pd.read_csv(os.path.join(DOCS, "stimmung.csv"), parse_dates=["datum"]).set_index("datum")
+    sp = idx["^GSPC"].dropna()
+    d = pd.DataFrame({"k": sp})
+    d["v"] = st["vix"].reindex(d.index).ffill()
+    d["fg"] = st["fg"].reindex(d.index).ffill()
+    reihen = {"S&P": (d.k / d.k.shift(BLICK) - 1) * 100, "VIX": d.v - d.v.shift(BLICK), "F&G": d.fg - d.fg.shift(BLICK)}
+    teile, fuenftel = [], {}
+    for name, x in reihen.items():
+        x = x.dropna()
+        grenzen = x.quantile([0.2, 0.4, 0.6, 0.8]).to_numpy()
+        heute = x.iloc[-1]
+        q = int((heute > grenzen).sum()) + 1
+        fuenftel[name] = q
+        wert = f"{'+' if heute >= 0 else ''}{de(heute)}{' %' if name == 'S&P' else ''}"
+        teile.append(f"{name} {wert} ({q}/5)")
+    v, fg = d.v.dropna().iloc[-1], d.fg.dropna().iloc[-1]
+    alarme = []
+    if fg < 25 and v < 16:
+        alarme.append(f"Warnfeld VIX ruhig + Fear & Greed extreme Angst (VIX {de(v)}, F&G {de(fg, 0)}): früher 43 % Einbrüche ≥ 10 % in 63 Tagen")
+    elif fg < 25 and v < 22:
+        alarme.append(f"Warnfeld VIX normal + Fear & Greed extreme Angst (VIX {de(v)}, F&G {de(fg, 0)}): früher 29 % Einbrüche ≥ 10 % in 63 Tagen")
+    if fuenftel["S&P"] == 1:
+        alarme.append("S&P 500 über 40 Tage im untersten Fünftel: früher 22 % Einbrüche ≥ 10 % (Schnitt 12 %)")
+    if fuenftel["VIX"] == 5:
+        alarme.append("VIX über 40 Tage im obersten Fünftel: früher 16 % Einbrüche ≥ 10 % (Schnitt 12 %)")
+    if fuenftel["F&G"] == 1:
+        alarme.append("Fear & Greed über 40 Tage im untersten Fünftel: früher 16 % Einbrüche ≥ 10 % (Schnitt 12 %)")
+    return "40 T: " + " · ".join(teile), alarme
+
+
 def main() -> int:
     idx = hole()
     zeile = kurzzeile(idx)
@@ -130,6 +171,13 @@ def main() -> int:
         md += [f"**{name}:** {len(t)} Werte · Median Beta (250 T) {de(t.beta_250.median(), 2)} · "
                f"abwaerts {de(t.beta_abwaerts.median(), 2)} · Einbruch-Faktor {de(t.einbruch_faktor.median(), 2)} · "
                f"Gleichlauf (125 T) {de(t.korr_125.median(), 2)}", ""]
+    try:
+        blick, alarme = marktlage(idx)
+    except Exception as e:  # noqa: BLE001
+        blick, alarme = f"40 T: nicht berechenbar ({e})", []
+    md[4:4] = [f"**Marktlage {blick}**", "", "**Marktlage-Alarm:** " + ("; ".join(alarme) if alarme else "keiner"), "",
+               "Fünftel: 1 = stärkster Rückgang der letzten 40 Handelstage, 5 = stärkster Anstieg (Vergleich 2011–heute).", ""]
+    print(blick, alarme)
     with open(os.path.join(DOCS, "indizes.md"), "w", encoding="utf-8") as f:
         f.write("\n".join(md) + "\n")
     print(zeile)

@@ -752,15 +752,13 @@ def bericht(profil: pd.DataFrame, zf: pd.DataFrame, kand: pd.DataFrame,
 # Filter Tief >= 2 und RSI < 50 bleiben (am Anker in beiden Zeitraeumen
 # leicht besser), dazu mind. 2 Boden-Punkte.
 KANDIDATEN_GRUPPE = "2+ P, Tief>=2, RSI<50"
-# Analystenfilter wie Block 1 (Peter 24.09.2026: "bei 75 % lassen"). Historisch
-# nicht pruefbar (keine Analystenhistorie), gilt deshalb nur in der Anzeige.
+# Seit 26.09.2026 (Peter: "Alter und neuer Lauf entscheiden, wer
+# grundsaetzlich in Block 1 ist. Dann filtern die Filter Block 1 nochmal"):
+# Kandidat hier = nur die TECHNIK (Gruppe + vollstaendige Daten). Die Filter
+# (Analysten mind. 75 %, Anker 60 % in "Tief N", CRV 2:1) wendet heute.py
+# auf alten und neuen Lauf gleich an. Die Analystenquote steht hier nur
+# noch als Information.
 KAUFANTEIL_MIN = 75.0
-# CRV 2:1 wie Block 1 (Peter 26.09.2026: "Es gilt noch immer CRV 2:1!"):
-# Rendite auf das eigene Ziel (Analysten-Median - 5 %) am KO-Marke dieses
-# Screenings mindestens 200 %. Anlass: Welltower kam nur ueber dieses
-# Screening in die Liste, obwohl die Rendite am Anker bei 132 % lag.
-RENDITE_MIN_EIGEN = 200.0
-ZIEL_ABSCHLAG = 0.05
 
 
 def gruppe_von(z: pd.Series) -> str:
@@ -804,48 +802,33 @@ def heute(daten: dict[str, pd.DataFrame]) -> int:
     ana = (pd.read_csv(ana_pfad).set_index("ticker")["kaufen_pct"]
            if ana_pfad.exists() else pd.Series(dtype=float))
     k["kaufanteil"] = [ana.get(t, np.nan) for t in k["ticker"]]
-    k["kandidat"] = ((k["gruppe"] == KANDIDATEN_GRUPPE) & (k["luecken"] == "")
-                     & (k["kaufanteil"] >= KAUFANTEIL_MIN)).astype(int)
+    k["kandidat"] = ((k["gruppe"] == KANDIDATEN_GRUPPE) & (k["luecken"] == "")).astype(int)
     k["anker"] = np.nan
     if ANKER_QUELLE.exists():
         aw = pd.read_csv(ANKER_QUELLE).set_index(["ticker", "gruppe"])["anker_gesamt"]
         k["anker"] = [aw.get((t, g), np.nan) for t, g in zip(k["ticker"], k["gruppe"])]
     k["ko_marke"] = (k["bezugstief"] - k["anker"] * k["atr"]).round(2)
-    # CRV 2:1: Rendite auf das eigene Ziel an der KO-Marke
-    ziel_pfad = BASE / "state" / "analyst.json"
-    ziele = (json.loads(ziel_pfad.read_text(encoding="utf-8")).get("data", {})
-             if ziel_pfad.exists() else {})
-    def median_ziel(t: str) -> float:
-        m = (ziele.get(t, {}).get("price_targets") or {}).get("median")
-        return float(m) if m else np.nan
-    k["ziel_median"] = [median_ziel(t) for t in k["ticker"]]
-    k["eigenes_ziel"] = (k["ziel_median"] * (1 - ZIEL_ABSCHLAG)).round(2)
-    hoehe = k["einstieg"] - k["ko_marke"]
-    k["rendite_eigen_pct"] = ((k["eigenes_ziel"] - k["einstieg"]) / hoehe * 100).where(hoehe > 0).round(0)
-    k["kandidat"] = (k["kandidat"].astype(bool)
-                     & (k["rendite_eigen_pct"] >= RENDITE_MIN_EIGEN)).astype(int)
     spalten = ["ticker", "datum", "kandidat", "gruppe", "punkte", "position", "rsi",
                "erholung_begonnen", "rsi_tief_rang", "erholung_vol", "zweig_a",
                "einstieg", "bezugstief", "bezugstief_datum", "atr", "anker", "ko_marke",
-               "korr_atr", "korr_rang", "luecken", "kaufanteil", "eigenes_ziel",
-               "rendite_eigen_pct"]
+               "korr_atr", "korr_rang", "luecken", "kaufanteil"]
     k = k.sort_values(["kandidat", "punkte", "ticker"], ascending=[False, False, True])
     k[spalten].to_csv(CSV_HEUTE, index=False)
 
     kand = k[k["kandidat"] == 1]
     aus = [f"# Boden-Screening {tag} (Stand {stand})", "",
            "Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + "
-           "Tief >= 2 + RSI < 50 + mind. 2 Boden-Punkte + mind. 75 % "
-           "Kaufempfehlungen + CRV 2:1 (mind. 200 % Rendite auf das eigene "
-           "Ziel an der KO-Marke). Anker = niedrigster "
+           "Tief >= 2 + RSI < 50 + mind. 2 Boden-Punkte (nur Technik). Die "
+           "Filter (Analysten, Anker, CRV 2:1) stehen in docs/heute.csv. "
+           "Boden-Anker = niedrigster "
            "Puffer mit 60 % Halterate fuer diese Gruppe und diesen Wert "
            "(Vollauf), KO-Marke = Bezugstief - Anker x ATR.", "",
            f"## Kandidaten ({len(kand)})", ""]
     if len(kand):
-        aus += ["| Wert | Tief | RSI | Anker | KO-Marke | Rendite |", "|---|---|---|---|---|---|"]
+        aus += ["| Wert | Tief | RSI | Anker | KO-Marke | Analysten |", "|---|---|---|---|---|---|"]
         for _, r in kand.iterrows():
             aus.append(f"| {r['ticker']} | {r['position']} | {f(r['rsi'], 0)} | "
-                       f"{f(r['anker'], 2)} | {f(r['ko_marke'], 2)} | {f(r['rendite_eigen_pct'], 0)} % |")
+                       f"{f(r['anker'], 2)} | {f(r['ko_marke'], 2)} | {f(r['kaufanteil'], 0)} % |")
     else:
         aus.append("_Keine._")
     rest = k[k["kandidat"] == 0]
@@ -863,10 +846,6 @@ def heute(daten: dict[str, pd.DataFrame]) -> int:
             gruende.append("Umkehr a")
         if r["luecken"]:
             gruende.append("Daten unvollstaendig (" + r["luecken"] + ")")
-        if not r["kaufanteil"] >= KAUFANTEIL_MIN:
-            gruende.append(f"Analysten {f(r['kaufanteil'], 0)} %")
-        if not r["rendite_eigen_pct"] >= RENDITE_MIN_EIGEN:
-            gruende.append(f"unter CRV 2:1 ({f(r['rendite_eigen_pct'], 0)} %)")
         aus.append(f"| {r['ticker']} | {int(r['punkte'])} | {', '.join(gruende)} |")
     if veraltet:
         aus += ["", "Nicht aktuell (kein Kurs vom " + tag + "): " + ", ".join(veraltet)]

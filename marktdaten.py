@@ -92,6 +92,12 @@ WAEHRUNG = [(["EURUSD=X"], "EUR/USD", "Spot")]
 # Am 20.09.2026 ergaenzt (letzte zwei Zeilen): 26 grosse Werte mit
 # Hauptnotierung NYSE/NASDAQ, dazu 36 Werte ueber ihre US-Notierung (ADR),
 # Gruppe "Watchlist" in universe.json. KO-Scheine laufen in USD auf den US-Kurs.
+# Am 26.09.2026 ergaenzt (letzte Zeile): APP AXON CCEP CVX GFS MSTR standen in
+# universe.json (NASDAQ-100 bzw. Dow), fehlten aber hier. Das Boden-Screening
+# (liest universe.json) fand dadurch Kandidaten wie Axon, die das taegliche
+# Screening gar nicht kannte. Listen muessen gleich sein: universe.json,
+# marktdaten.py, kursverlauf.py. GOOG steht nur in universe.json und ist in
+# heute.py dauerhaft ausgeschlossen (AUSGESCHLOSSEN).
 US = """AAPL ABNB ADBE ADI ADP ADSK AEP AMAT AMD AMGN AMZN ARM ASML AVGO
 AXP AZN BA BIIB BKNG BKR CAT CDNS CDW CEG CHTR CMCSA COST CPRT CRM CRWD CSCO
 CSGP CSX CTAS CTSH DASH DDOG DIS DXCM EXC FANG FAST FTNT GEHC GILD
@@ -106,7 +112,8 @@ TMO UBER UNP UPS USB WFC XOM
 BABA DELL SNDK ANET STX APH WDC GLW SNOW NET SPOT ETN PH
 CB PGR TJX SYK MCK SCCO NEM MPC VLO PSX WELL PLD EQIX
 TSM SPCX SKHY SHOP HSBC RY SHEL NVS MUFG TM BHP SAN TTE TD NVO SMFG RIO BBVA
-UBS SONY PBR UL MFG BTI BMO HDB BNS ENB EQNR ING CNQ CM SNY IBN GSK BP""".split()
+UBS SONY PBR UL MFG BTI BMO HDB BNS ENB EQNR ING CNQ CM SNY IBN GSK BP
+APP AXON CCEP CVX GFS MSTR""".split()
 
 DAX = """ADS.DE AIR.DE ALV.DE BAS.DE BAYN.DE BEI.DE BMW.DE BNR.DE CBK.DE CON.DE
 DTG.DE DBK.DE DB1.DE DHL.DE DTE.DE EOAN.DE FRE.DE HNR1.DE HEI.DE HEN3.DE

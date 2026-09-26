@@ -195,6 +195,17 @@ jobs:
         run: python luecken.py
         continue-on-error: true
 
+      # Neuer Lauf (Boden-Screening, Tagesmodus) seit 26.09.2026 HIER und
+      # direkt vor heute.py, damit alter und neuer Lauf auf demselben
+      # Datenstand stehen. heute.py vereinigt beide zu Block 1 und wendet
+      # danach dieselben Filter an (Analysten, Anker 60 % in "Tief N",
+      # CRV 2:1, Datensperre). Vorher lief boden.py erst danach in einem
+      # eigenen Workflow - die Kandidatenliste hatte zwei Datenstaende und
+      # ungefilterte Boden-Werte (Welltower mit 132 % Rendite).
+      - name: Boden-Screening Tagesmodus
+        run: python boden.py --heute
+        continue-on-error: true
+
       # Komplette Block-1-Auswertung (Fortsetzungskette, Luecken-Fenster,
       # RSI-Schwelle, alle 9 Pufferstufen) fertig fuer die Kaufvorlage.
       # Nach marktdaten.py/rsi_schwellen-Aequivalent, luecken.py und

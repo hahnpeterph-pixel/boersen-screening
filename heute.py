@@ -251,10 +251,7 @@ def block1_treffer(markt: pd.DataFrame, analysten: pd.DataFrame,
     for ticker in markt.index:
         if ist_rohstoff_oder_fx(ticker):
             continue
-        if ticker not in analysten.index:
-            continue
         z = markt.loc[ticker]
-        a = analysten.loc[ticker]
 
         if str(z.datum) != neuester:
             veraltet.append(ticker)
@@ -272,8 +269,11 @@ def block1_treffer(markt: pd.DataFrame, analysten: pd.DataFrame,
         if not (zweig_a or zweig_b or zweig_c):
             continue
 
-        if not (pd.notna(a.kaufen_pct) and (a.kaufen_pct / 100) >= 0.75):
-            continue
+        # Analystenfilter (mind. 75 % Kauf) ist seit 26.09.2026 KEIN Teil
+        # der Block-1-Grundbedingung mehr, sondern Filter in main() - er
+        # gilt dort fuer beide Laeufe gleich (Peter: "Alter und neuer Lauf
+        # entscheiden, wer grundsaetzlich in Block 1 ist. Dann filtern die
+        # Filter Block 1 nochmal in die, die gecheckt werden sollen.").
         if pd.isna(z.rsi14) or z.rsi14 >= 50:
             continue
         treffer.append(ticker)
@@ -283,6 +283,41 @@ def block1_treffer(markt: pd.DataFrame, analysten: pd.DataFrame,
               f"{neuester}) und deshalb NICHT in Block 1:")
         print("    " + ", ".join(sorted(veraltet)))
     return treffer
+
+
+# Dauerhaft ausgeschlossene Werte (Peter): GOOG (Entscheidung 68, gleicher
+# Basiswert wie GOOGL), ASML (17.09.2026), BA/Boeing (24.09.2026). Gilt fuer
+# beide Laeufe. Die Kursdaten bleiben erhalten, nur Block 1 schliesst sie aus.
+AUSGESCHLOSSEN = {"GOOG", "ASML", "BA"}
+
+# Filter nach der Block-1-Zugehoerigkeit (26.09.2026, fuer alt UND neu):
+KAUFANTEIL_MIN = 75.0          # Analysten mind. 75 % Kaufempfehlungen
+ANKER_MIN_PCT = 60.0           # Anker = erste Stufe mit mind. 60 % in "Tief N"
+
+
+def boden_treffer(neuester: str) -> dict[str, float]:
+    """Technische Kandidaten des Boden-Screenings (neuer Lauf) vom selben
+    Handelstag wie marktdaten.csv: {ticker: Boden-Punkte}.
+
+    Seit 26.09.2026 laeuft boden.py --heute im Screening-Workflow direkt
+    VOR heute.py, damit beide Laeufe auf demselben Datenstand stehen. Ist
+    boden_heute.csv von einem anderen Tag, wird sie ignoriert (kein
+    gemischter Datenstand) - das wird gemeldet.
+    """
+    pfad = os.path.join(DOCS, "boden", "boden_heute.csv")
+    if not os.path.exists(pfad):
+        print("  boden_heute.csv fehlt - nur alter Lauf in Block 1")
+        return {}
+    b = pd.read_csv(pfad)
+    if b.empty or "kandidat" not in b.columns:
+        return {}
+    tag = str(b["datum"].max())
+    if tag != neuester:
+        print(f"  WARNUNG: boden_heute.csv ist vom {tag}, marktdaten vom {neuester} "
+              "- Boden-Kandidaten heute NICHT beruecksichtigt")
+        return {}
+    b = b[(b["kandidat"] == 1) & (b["datum"].astype(str) == neuester)]
+    return {str(t): float(p) for t, p in zip(b["ticker"], b["punkte"])}
 
 
 def vortagestiefs() -> pd.Series:
@@ -632,11 +667,25 @@ def main() -> None:
               "marktdaten.py ist nicht auf dem Stand vom 05.09.2026. "
               "Rohstoffe/FX koennen heute NICHT in Block 1 auftauchen.")
 
-    treffer = block1_treffer(markt, analysten, vortagestiefs())
-    print(f"Block-1-Treffer heute: {len(treffer)}")
+    treffer_alt = [t for t in block1_treffer(markt, analysten, vortagestiefs())
+                   if t not in AUSGESCHLOSSEN]
+    neuester = str(markt["datum"].max())
+    boden = {t: p for t, p in boden_treffer(neuester).items() if t not in AUSGESCHLOSSEN}
+    treffer = list(dict.fromkeys(treffer_alt + sorted(boden)))
+    print(f"Block 1 heute: {len(treffer)} (alter Lauf {len(treffer_alt)}, "
+          f"neuer Lauf {len(boden)}, beide {len(set(treffer_alt) & set(boden))})")
 
     zeilen = []
     for t in treffer:
+        quelle = ("beide" if t in treffer_alt and t in boden
+                  else "alt" if t in treffer_alt else "neu")
+        if t not in markt.index:
+            # Boden-Kandidat ohne Zeile im taeglichen Screening - darf nach
+            # dem Listenabgleich vom 26.09.2026 nicht mehr vorkommen.
+            print(f"  WARNUNG: {t} (neuer Lauf) fehlt in marktdaten.csv")
+            zeilen.append({"ticker": t, "quelle": quelle, "boden_punkte": boden.get(t),
+                           "filter_ergebnis": "raus - keine Marktdaten"})
+            continue
         z = markt.loc[t]
         rohstoff = ist_rohstoff_oder_fx(t)
         a = analysten.loc[t] if t in analysten.index else None
@@ -713,6 +762,9 @@ def main() -> None:
 
         # TIEF 1 AUSGESCHLOSSEN (Entscheidung 154), Begruendung oben.
         if position != position or not position or int(position) == 1:
+            if t in boden:  # neuer Lauf zaehlt anders - sichtbar machen statt still verwerfen
+                zeilen.append({"ticker": t, "quelle": quelle, "boden_punkte": boden.get(t),
+                               "filter_ergebnis": "raus - Tief 1 laut Screening"})
             continue
         # Kein Analystenziel fuer Rohstoffe/FX moeglich - "Kursziel" und
         # "Eigenes Ziel" bleiben leer statt einer erfundenen Zahl. Peters
@@ -770,6 +822,8 @@ def main() -> None:
             "rsi_schwelle": schwelle[1] if schwelle else None,
             "rsi_schwelle_faelle": schwelle[0] if schwelle else None,
             "rsi_schwelle_anteil_serien": schwelle[4] if schwelle else None,
+            "quelle": quelle,
+            "boden_punkte": boden.get(t),
             "kaufanteil_pct": (a.kaufen_pct if a is not None else None),
             "banken": (a.banken if a is not None else None),
             "kursziel": ziel,
@@ -826,7 +880,11 @@ def main() -> None:
         while puf <= max(suchende, 0.25) + 1e-9:
             hp, _ = _haelt_flex(teil_position, puf)
             ha, _ = _haelt_flex(teil_puffer, puf)
-            if hp is not None and ha is not None and hp >= 60 and ha >= 60:
+            # Seit 26.09.2026 (Peter): nur die Halterate DIESER Tiefsposition
+            # ("Tief N") muss 60 % erreichen. Die Rate ueber alle Tiefs
+            # ("alle") ist seit 25.09. aus der Vorlage gestrichen und zaehlt
+            # auch hier nicht mehr.
+            if hp is not None and hp >= ANKER_MIN_PCT:
                 anker = puf
                 break
             puf = round(puf + 0.25, 2)
@@ -835,7 +893,7 @@ def main() -> None:
         if anker is None:
             # Kein Puffer erreicht 60/60 (kommt nur bei zu wenigen
             # Faellen vor) - der Wert faellt nach Entscheidung 149 raus.
-            zeile["filter_ergebnis"] = "raus - 60/60 nie erreicht"
+            zeile["filter_ergebnis"] = "raus - 60 % nie erreicht"
             zeile["filter_variante"] = None
             zeilen.append(zeile)
             continue
@@ -870,6 +928,14 @@ def main() -> None:
             zeile["filter_variante"] = "Hauptregel"
         else:
             zeile["filter_ergebnis"] = f"raus - Rendite {r_eigen:.0f} %"
+            zeile["filter_variante"] = None
+
+        # ANALYSTENFILTER (seit 26.09.2026 hier statt in block1_treffer,
+        # gilt fuer alten und neuen Lauf): mind. 75 % Kaufempfehlungen.
+        kauf = a.kaufen_pct if a is not None else None
+        if not (kauf is not None and pd.notna(kauf) and float(kauf) >= KAUFANTEIL_MIN):
+            zeile["filter_ergebnis"] = ("raus - keine Analystendaten" if kauf is None or pd.isna(kauf)
+                                        else f"raus - Analysten {float(kauf):.0f} %")
             zeile["filter_variante"] = None
 
         # HARTE SPERRE bei unvollstaendigen Daten (19.09.2026). Steht NACH
@@ -954,7 +1020,11 @@ def main() -> None:
     zeilen.sort(key=lambda z: (0 if str(z["ticker"]).endswith(".DE") else 1, z["ticker"]))
 
     if not zeilen:
-        print("Keine Block-1-Treffer, nichts zu schreiben.")
+        # Leere Datei schreiben, sonst bliebe der Vortag stehen und saehe
+        # aus wie heute (gemischter Datenstand).
+        with open(CSV_AUS, "w", encoding="utf-8", newline="") as f:
+            f.write("ticker,quelle,filter_ergebnis\n")
+        print("Keine Block-1-Treffer - leere heute.csv geschrieben.")
         return
 
     # Spaltenmenge aus ALLEN Zeilen, nicht nur aus der ersten. Seit das

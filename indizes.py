@@ -83,6 +83,11 @@ def beta(r, m):
 def abhaengigkeit(idx: pd.DataFrame) -> pd.DataFrame:
     mh = pd.read_csv(gzip.open(os.path.join(DOCS, "markthistorie.csv.gz"))).set_index("ticker")
     mh.columns = pd.to_datetime(mh.columns)
+    # VIX-Gleichlauf (Peter 26.09.2026): nur fuer den Marktlage-Alarm - die drei
+    # empfindlichsten Depotwerte nennt Claude lokal (Positionen bleiben privat).
+    # Stabil gemessen (Rangfolge 2019-22 zu 2023-26: 0,64). Nur US-Werte; fuer
+    # .DE fehlt ein taeglicher Angstindex (XETRA schliesst vor US-Handel).
+    vix = pd.read_csv(os.path.join(DOCS, "stimmung.csv"), parse_dates=["datum"]).set_index("datum")["vix"]
     zeilen = []
     for t, z in mh.iterrows():
         if any(c in t for c in "=^"):
@@ -106,7 +111,13 @@ def abhaengigkeit(idx: pd.DataFrame) -> pd.DataFrame:
         s20 = s.pct_change(20)
         fall = i20 <= -0.08
         faktor = float(np.median(s20[fall] / i20[fall])) if fall.sum() >= 5 else np.nan
-        zeilen.append({"ticker": t, "index": INDIZES[heimat], "korr_125": round(k125, 2),
+        vk = np.nan
+        if heimat == HEIMAT_US:
+            vv = vix.reindex(s.index).ffill().diff()
+            ok = rs.notna() & vv.notna()
+            if ok.sum() >= 250:
+                vk = float(rs[ok].iloc[-500:].corr(vv[ok].iloc[-500:]))
+        zeilen.append({"ticker": t, "index": INDIZES[heimat], "vix_korr_500": round(vk, 2), "korr_125": round(k125, 2),
                        "beta_125": round(b125, 2), "beta_250": round(b250, 2),
                        "beta_abwaerts": round(bab, 2), "einbruch_faktor": round(faktor, 2),
                        "einbruch_faelle": int(fall.sum())})

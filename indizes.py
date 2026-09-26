@@ -121,6 +121,7 @@ def abhaengigkeit(idx: pd.DataFrame) -> pd.DataFrame:
 # Warnfelder: VIX ruhig (< 16) + F&G < 25 -> 43 % Einbrueche >= 10 %;
 # VIX normal (16-22) + F&G < 25 -> 29 %. Durchschnitt aller Tage 12 %.
 BLICK = 40
+SATZ = ""
 
 
 def marktlage(idx: pd.DataFrame) -> tuple[str, list[str]]:
@@ -140,6 +141,24 @@ def marktlage(idx: pd.DataFrame) -> tuple[str, list[str]]:
         wert = f"{'+' if heute >= 0 else ''}{de(heute)}{' %' if name == 'S&P' else ''}"
         teile.append(f"{name} {wert} ({q}/5)")
     v, fg = d.v.dropna().iloc[-1], d.fg.dropna().iloc[-1]
+    # Einbruch >= 4 % in den naechsten 10 Handelstagen (Peter 26.09.2026):
+    # Anteil der frueheren Tage mit gleicher VIX- und F&G-Lage.
+    c = d.k.to_numpy()
+    tief = np.full(len(c), np.nan)
+    for i in range(len(c) - 10):
+        tief[i] = c[i + 1:i + 11].min() / c[i] - 1
+    d["tief10"] = tief
+    vl = lambda x: 0 if x < 16 else (1 if x < 22 else 2)
+    fl = lambda x: 0 if x < 25 else (1 if x < 45 else (2 if x < 55 else (3 if x < 75 else 4)))
+    e = d.dropna(subset=["tief10", "v", "fg"])
+    gleich = e[(e.v.map(vl) == vl(v)) & (e.fg.map(fl) == fl(fg))]
+    p4 = (gleich.tief10 <= -0.04).mean() * 100 if len(gleich) >= 30 else np.nan
+    schnitt = (e.tief10 <= -0.04).mean() * 100
+    vtext = ["ruhig", "normal", "unruhig"][vl(v)]
+    ftext = ["extreme Angst", "Angst", "neutral", "Gier", "extreme Gier"][fl(fg)]
+    global SATZ
+    SATZ = (f"VIX {de(v)} {vtext} · Fear & Greed {de(fg, 0)} {ftext} – Rückgang um mindestens 4 % in den "
+            f"nächsten 10 Handelstagen: früher in {de(p4, 0)} % der Fälle (Schnitt {de(schnitt, 0)} %)")
     alarme = []
     if fg < 25 and v < 16:
         alarme.append(f"Warnfeld VIX ruhig + Fear & Greed extreme Angst (VIX {de(v)}, F&G {de(fg, 0)}): früher 43 % Einbrüche ≥ 10 % in 63 Tagen")
@@ -175,8 +194,8 @@ def main() -> int:
         blick, alarme = marktlage(idx)
     except Exception as e:  # noqa: BLE001
         blick, alarme = f"40 T: nicht berechenbar ({e})", []
-    md[4:4] = [f"**Marktlage {blick}**", "", "**Marktlage-Alarm:** " + ("; ".join(alarme) if alarme else "keiner"), "",
-               "Fünftel: 1 = stärkster Rückgang der letzten 40 Handelstage, 5 = stärkster Anstieg (Vergleich 2011–heute).", ""]
+    md[4:4] = [f"**Marktlage S&P 500:** {SATZ}", "", "**Marktlage-Alarm:** " + ("; ".join(alarme) if alarme else "keiner"), "",
+               f"(intern, nur für die Alarme: {blick}; Fünftel 1 = stärkster Rückgang, 5 = stärkster Anstieg seit 2011)", ""]
     print(blick, alarme)
     with open(os.path.join(DOCS, "indizes.md"), "w", encoding="utf-8") as f:
         f.write("\n".join(md) + "\n")

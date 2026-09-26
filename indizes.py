@@ -157,8 +157,12 @@ def marktlage(idx: pd.DataFrame) -> tuple[str, list[str]]:
     vtext = ["ruhig", "normal", "unruhig"][vl(v)]
     ftext = ["extreme Angst", "Angst", "neutral", "Gier", "extreme Gier"][fl(fg)]
     global SATZ
-    SATZ = (f"VIX {de(v)} {vtext} · Fear & Greed {de(fg, 0)} {ftext} – Rückgang um mindestens 4 % in den "
-            f"nächsten 10 Handelstagen: früher in {de(p4, 0)} % der Fälle (Schnitt {de(schnitt, 0)} %)")
+    # Einstufung (Peter 26.09.2026, Variante 1): niedrig < 2/3 des Schnitts,
+    # erhoeht > 1,5-fach, sonst normal.
+    stufe = ("–" if np.isnan(p4) else "niedrig" if p4 < schnitt * 2 / 3
+             else "erhöht" if p4 > schnitt * 1.5 else "normal")
+    SATZ = (f"VIX {de(v)} {vtext} · Fear & Greed {de(fg, 0)} {ftext} – Risiko für einen Rückgang um 4 % "
+            f"in den nächsten 2 Wochen: **{stufe} ({de(p4, 0)} von 100, sonst {de(schnitt, 0)})**")
     alarme = []
     if fg < 25 and v < 16:
         alarme.append(f"Warnfeld VIX ruhig + Fear & Greed extreme Angst (VIX {de(v)}, F&G {de(fg, 0)}): früher 43 % Einbrüche ≥ 10 % in 63 Tagen")

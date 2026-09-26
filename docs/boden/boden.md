@@ -1,4 +1,4 @@
-# Boden-Screening - Stufe 1 (Stand 2026-09-26 13:01 UTC, 7 Jahre)
+# Boden-Screening - Stufe 1 (Stand 2026-09-26 13:15 UTC, 7 Jahre)
 
 Parallellauf, aendert nichts am bestehenden Screening. Pruefttage = alle Tage mit Block-1-Umkehrzeichen (ohne RSI- und Tief-1-Filter). Einstieg = Schluss, Bezugstief wie heute.py.
 

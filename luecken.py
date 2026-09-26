@@ -26,9 +26,10 @@ Jahre mehr bei Yahoo geholt. Stattdessen:
     anhaengen, Alter um die Zahl neuer Tage erhoehen.
 Stand je Wert (letzter verarbeiteter Tag) in state/luecken_stand.json.
 Vollstaendig neu (sieben Jahre von Yahoo) wird gerechnet mit --voll, fuer
-einen Wert ohne Stand oder ohne passende Kerzen im Kursverlauf, und wenn
-die Stand-Datei fehlt. Der Screening-Lauf am Samstag ruft --voll auf -
-das faengt Aktiensplits und nachtraegliche Kurskorrekturen von Yahoo ab.
+einen Wert ohne Stand oder ohne passende Kerzen im Kursverlauf, wenn die
+Stand-Datei fehlt und wenn der letzte Vollabruf ("_voll" in der
+Stand-Datei) sechs oder mehr Tage zurueckliegt - also einmal pro Woche. Das
+faengt Aktiensplits und nachtraegliche Kurskorrekturen von Yahoo ab.
 
 Ausgabe:
   docs/luecken.csv  - eine Zeile je Luecke, alle Werte
@@ -323,9 +324,14 @@ def main():
     nur = argumente or None
     voll = "--voll" in sys.argv
     stand = {}
+    heute = pd.Timestamp.utcnow().strftime("%Y-%m-%d")
     if os.path.exists(STAND) and os.path.exists(CSV_AUS) and not voll:
         with open(STAND, encoding="utf-8") as f:
             stand = json.load(f)
+        zuletzt_voll = stand.pop("_voll", "")
+        if not zuletzt_voll or (pd.Timestamp(heute) - pd.Timestamp(zuletzt_voll)).days >= 6:
+            print(f"Letzter Vollabruf {zuletzt_voll or 'unbekannt'} - heute woechentlich komplett neu")
+            voll, stand = True, {}
     else:
         voll = True
     bestand = {}
@@ -337,6 +343,7 @@ def main():
     print("Modus:", "VOLL (sieben Jahre von Yahoo)" if voll else "Fortschreiben aus kursverlauf")
 
     alle, neuer_stand, voll_geholt = [], dict(stand), []
+    zuletzt_voll = heute if voll else zuletzt_voll
     for ticker, name in werte():
         if nur and ticker not in nur:
             alle.extend(bestand.get(ticker, []))
@@ -373,10 +380,14 @@ def main():
         w.writerows(alle)
     os.makedirs(os.path.dirname(STAND), exist_ok=True)
     with open(STAND, "w", encoding="utf-8") as f:
-        json.dump(neuer_stand, f, indent=0, sort_keys=True)
+        json.dump({"_voll": zuletzt_voll, **neuer_stand}, f, indent=0, sort_keys=True)
     print(f"Geschrieben: {CSV_AUS} ({len(alle)} Zeilen)")
 
     d = pd.DataFrame(alle)
+    # Fortgeschriebene Zeilen kommen als Text aus luecken.csv - fuer die
+    # Auswertung unten Zahlen draus machen (sonst gilt "1" != 1).
+    for spalte in ("geschlossen", "alter_tage", "reif"):
+        d[spalte] = pd.to_numeric(d[spalte], errors="coerce").astype(int)
     with open(MD_AUS, "w", encoding="utf-8") as f:
         f.write("# Kursluecken je Wert\n\n")
         f.write(f"_Datenbasis {ZEITRAUM.replace('y', ' Jahre')} Tageskerzen je Wert. Mindestgroesse {MIN_ATR} ATR. Als 'reif' gilt eine Luecke ab "

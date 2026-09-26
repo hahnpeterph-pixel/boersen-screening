@@ -192,11 +192,10 @@ jobs:
           PY
 
       # Seit 26.09.2026 schreibt luecken.py taeglich nur fort (neue Tage aus
-      # kursverlauf*.csv, kein Sieben-Jahres-Abruf mehr). Samstags (UTC)
-      # einmal komplett neu von Yahoo - faengt Splits und Kurskorrekturen ab.
+      # kursverlauf*.csv, kein Sieben-Jahres-Abruf mehr). Einmal pro Woche
+      # (letzter Vollabruf >= 6 Tage alt) rechnet es selbst komplett neu.
       - name: Luecken ausfuehren
-        run: |
-          if [ "$(date -u +%u)" = "6" ]; then python luecken.py --voll; else python luecken.py; fi
+        run: python luecken.py
         continue-on-error: true
 
       # Neuer Lauf (Boden-Screening, Tagesmodus) seit 26.09.2026 HIER und
@@ -250,7 +249,12 @@ jobs:
           # committet wurde. Deshalb vor jedem Versuch neu aufsetzen und bis
           # zu drei Anlaeufe nehmen, statt den ganzen Lauf zu verwerfen.
           for versuch in 1 2 3; do
-            if git pull --rebase --autostash origin main && git push origin main; then
+            # -X theirs: bei Konflikten in erzeugten Dateien gewinnt der
+            # frische Stand DIESES Laufs. Fund 26.09.2026: Der Boden-Vollauf
+            # hatte waehrend des Screenings docs/boden/boden_heute.* neu
+            # geschrieben, die das Screening seitdem ebenfalls schreibt -
+            # das Rebase brach dreimal am Konflikt ab, der Lauf ging verloren.
+            if git pull --rebase -X theirs --autostash origin main && git push origin main; then
               echo "Gespeichert im Versuch $versuch."
               exit 0
             fi

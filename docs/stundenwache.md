@@ -1,6 +1,6 @@
 # Stundenwache
 
-Stand: 2026-09-25 · 267 Werte mit Stundendaten · erstellt 2026-09-26 10:02 UTC
+Stand: 2026-09-25 · 273 Werte mit Stundendaten · erstellt 2026-09-26 13:43 UTC
 
 Marken sind das juengste Swing-Tief und das juengste Swing-Hoch aus `tiefs_regel.py`, also dieselben wie im Tagesbericht. Geprueft wird nur, was der letzte Handelstag auf Stundenbasis damit gemacht hat.
 
@@ -19,18 +19,20 @@ Keine.
 
 Keine.
 
-## Tief angetestet (21)
+## Tief angetestet (23)
 
 Docht bis unter die Marke, kein Stundenschluss darunter.
 
 | Wert | Marke | Schluss | Abstand (ATR) | Stunden dahinter |
 |---|---|---|---|---|
+| AXON | 429.56 | 430.0 | 0.02 | 0 |
 | ZS | 192.74 | 193.03 | 0.027 | 0 |
 | BABA | 109.56 | 109.76 | 0.069 | 0 |
 | PDD | 77.36 | 77.56 | 0.116 | 0 |
 | FANG | 185.51 | 186.56 | 0.159 | 0 |
 | FAST | 50.26 | 50.44 | 0.196 | 0 |
 | KO | 87.56 | 87.815 | 0.209 | 0 |
+| CVX | 203.4 | 204.43 | 0.215 | 0 |
 | NET | 344.268 | 348.895 | 0.24 | 0 |
 | ENB | 46.48 | 46.725 | 0.297 | 0 |
 | BHP | 84.21 | 84.98 | 0.319 | 0 |

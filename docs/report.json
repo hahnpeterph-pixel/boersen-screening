@@ -55,49 +55,13 @@
  },
  "changes": {
   "turnaround": {
-   "entries": [
-    {
-     "ticker": "SHL.DE",
-     "rank": 6
-    },
-    {
-     "ticker": "FRE.DE",
-     "rank": 9
-    },
-    {
-     "ticker": "SCCO",
-     "rank": 15
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "AMGN",
-     "old_rank": 8
-    },
-    {
-     "ticker": "ABT",
-     "old_rank": 9
-    },
-    {
-     "ticker": "SHEL",
-     "old_rank": 11
-    }
-   ],
+   "entries": [],
+   "exits": [],
    "moves": []
   },
   "momentum": {
-   "entries": [
-    {
-     "ticker": "DHL.DE",
-     "rank": 7
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "META",
-     "old_rank": 14
-    }
-   ],
+   "entries": [],
+   "exits": [],
    "moves": []
   },
   "value": {

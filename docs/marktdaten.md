@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-09-26 10:00 UTC. 280 Werte, Fenster 90 Kalendertage. EUR/USD 1.1375._
+_Erstellt 2026-09-26 13:41 UTC. 286 Werte, Fenster 90 Kalendertage. EUR/USD 1.1375._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -56,6 +56,7 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | EQNR (EQNR) | 42.19 | - | - | ja | 47.18 |
 | CNQ (CNQ) | 47.41 | - | - | ja | 40.44 |
 | GSK (GSK) | 49.24 | - | - | ja | 43.45 |
+| AXON (AXON) | 430.11 | - | ja | ja | 33.72 |
 | AIR.DE (AIR.DE) | 192.54 | ja | - | - | 37.55 |
 | BAS.DE (BAS.DE) | 50.42 | - | - | ja | 40.13 |
 | BMW.DE (BMW.DE) | 55.72 | - | - | ja | 30.35 |

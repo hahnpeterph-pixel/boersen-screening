@@ -191,8 +191,12 @@ jobs:
               )
           PY
 
+      # Seit 26.09.2026 schreibt luecken.py taeglich nur fort (neue Tage aus
+      # kursverlauf*.csv, kein Sieben-Jahres-Abruf mehr). Samstags (UTC)
+      # einmal komplett neu von Yahoo - faengt Splits und Kurskorrekturen ab.
       - name: Luecken ausfuehren
-        run: python luecken.py
+        run: |
+          if [ "$(date -u +%u)" = "6" ]; then python luecken.py --voll; else python luecken.py; fi
         continue-on-error: true
 
       # Neuer Lauf (Boden-Screening, Tagesmodus) seit 26.09.2026 HIER und

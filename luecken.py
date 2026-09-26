@@ -16,6 +16,20 @@ Entstehung (Korrektur vom 11.09.2026, siehe luecken_eines_werts).
 Datenbasis: sieben Jahre Tageskerzen je Wert (seit 23.09.2026, Frage 115;
 vorher 400 Tage).
 
+FORTSCHREIBEN STATT NEU LADEN (26.09.2026, Peter: "frisst massig Zeit,
+obwohl es immer nur um 1 Tag neuer wird"). Taeglich werden KEINE sieben
+Jahre mehr bei Yahoo geholt. Stattdessen:
+  - bestehende docs/luecken.csv lesen,
+  - die neuen Tageskerzen aus docs/kursverlauf*.csv nehmen (holt das
+    Screening ohnehin, gleiche ungeglaettete Kurse wie hier),
+  - offene Luecken gegen die neuen Tage pruefen, neue Luecken der neuen Tage
+    anhaengen, Alter um die Zahl neuer Tage erhoehen.
+Stand je Wert (letzter verarbeiteter Tag) in state/luecken_stand.json.
+Vollstaendig neu (sieben Jahre von Yahoo) wird gerechnet mit --voll, fuer
+einen Wert ohne Stand oder ohne passende Kerzen im Kursverlauf, und wenn
+die Stand-Datei fehlt. Der Screening-Lauf am Samstag ruft --voll auf -
+das faengt Aktiensplits und nachtraegliche Kurskorrekturen von Yahoo ab.
+
 Ausgabe:
   docs/luecken.csv  - eine Zeile je Luecke, alle Werte
   docs/luecken.md   - Zusammenfassung je Wert (Schliessquote, Dauer)
@@ -25,6 +39,7 @@ gibt bewusst keine wertuebergreifenden Mediane oder Sammelklassen.
 """
 
 import csv
+import json
 import os
 import sys
 
@@ -36,6 +51,10 @@ from marktdaten import UNIVERSUM
 DOCS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "docs")
 CSV_AUS = os.path.join(DOCS, "luecken.csv")
 MD_AUS = os.path.join(DOCS, "luecken.md")
+STAND = os.path.join(os.path.dirname(os.path.abspath(__file__)), "state", "luecken_stand.json")
+FELDER = ["ticker", "name", "datum", "richtung", "kante", "eroeffnung", "groesse",
+          "groesse_atr", "groesse_pct", "geschlossen", "tage_bis_schluss",
+          "datum_schluss", "alter_tage", "reif"]
 
 # Luecken unterhalb dieser Groesse werden ignoriert - sonst zaehlt jedes
 # Eroeffnungsrauschen als Luecke. In ATR gemessen, damit der Wert fuer
@@ -73,8 +92,10 @@ def atr(df, n=14):
     return spanne.ewm(alpha=1 / n, adjust=False).mean()
 
 
-def luecken_eines_werts(ticker, name, df):
-    """Findet alle Luecken und prueft je Luecke, ob und wann sie schloss."""
+def luecken_eines_werts(ticker, name, df, nur_nach=None):
+    """Findet alle Luecken und prueft je Luecke, ob und wann sie schloss.
+    nur_nach (JJJJ-MM-TT): nur Luecken, die NACH diesem Tag entstanden
+    (Fortschreiben - die aelteren stehen schon in luecken.csv)."""
     if df is None or len(df) < 30:
         return []
 
@@ -89,6 +110,8 @@ def luecken_eines_werts(ticker, name, df):
     daten = df.index
 
     for i in range(1, len(df)):
+        if nur_nach is not None and daten[i].strftime("%Y-%m-%d") <= nur_nach:
+            continue
         if pd.isna(atrw[i]) or atrw[i] <= 0:
             continue
 
@@ -159,10 +182,68 @@ def luecken_eines_werts(ticker, name, df):
     return zeilen
 
 
-def main():
-    nur = sys.argv[1:] if len(sys.argv) > 1 else None
-    alle = []
+def lade_voll(ticker):
+    """Sieben Jahre Tageskerzen von Yahoo (mit Frische-Pruefung), nur fertige Tage."""
+    try:
+        # Sieben Jahre statt 400 Tage (Frage 115, Peter 23.09.2026: "OK").
+        # 400 Tage lieferten je Wert und Richtung oft nur eine Handvoll
+        # reifer Luecken - zu duenn fuer p90-Fenster und die Frage "wie
+        # viele schlossen noch, nachdem sie X Tage offen waren". Sieben
+        # Jahre wie historie.py und markthistorie.py.
+        #
+        # Preis dafuer: der Cache-Schluessel in kurse.py enthaelt den
+        # Zeitraum, marktdaten.py holt 400d - hier kommt also je Wert ein
+        # zweiter Yahoo-Abruf dazu (eine Anfrage je Wert, nur mehr Zeilen).
+        df = kurse.kerzen(ticker, period=ZEITRAUM)
+    except Exception as fehler:
+        print(f"  {ticker}: Abruf fehlgeschlagen ({fehler})")
+        return None
 
+    # Yahoo "erfolgreich" heisst nicht zwangslaeufig aktuell - siehe
+    # marktdaten.py (01.09.2026, DAX+ASML blieben tagelang auf altem
+    # Schluss haengen, ohne dass kerzen() je einen Fehler warf).
+    # luecken.py hatte diese Pruefung bisher NICHT (Fund vom
+    # 05.09.2026, Peters Frage nach der neuen Applied-Materials-
+    # Luecke deckte auf, dass die Datei einen Tag zurueckhing).
+    # Dieselbe Freshness-Pruefung wie in marktdaten.py: fuer DAX-Werte
+    # und ASML zusaetzlich Stooq und Twelve Data einholen und die
+    # insgesamt aktuellste Quelle nehmen.
+    if df is not None and (ticker.endswith(".DE") or ticker == "ASML"):
+        kandidaten_quellen = [("Yahoo", df)]
+        df_stooq = kurse.kerzen_stooq(ticker)
+        if df_stooq is not None:
+            kandidaten_quellen.append(("Stooq", df_stooq))
+        df_td = kurse.kerzen_twelvedata(ticker)
+        if df_td is not None:
+            kandidaten_quellen.append(("Twelve Data", df_td))
+        bester_name, bestes_df = max(
+            kandidaten_quellen, key=lambda x: x[1].index[-1])
+        if bester_name != "Yahoo":
+            print(f"  {ticker}: Yahoo veraltet ({df.index[-1].date()}), "
+                  f"{bester_name} aktueller ({bestes_df.index[-1].date()}) "
+                  f"- neuere Tage von {bester_name} angehaengt")
+            # ANHAENGEN statt ersetzen (23.09.2026, mit Frage 115): Twelve
+            # Data liefert nur 30 Tage. Die alte Fassung tauschte die ganze
+            # Reihe aus und haette die sieben Jahre an einem solchen Tag
+            # auf einen Monat geschrumpft - die Luecken-Statistik des
+            # Werts waere fuer diesen Lauf praktisch leer gewesen.
+            df = anhaengen(df, bestes_df)
+
+    # NUR FERTIGE TAGESKERZEN (23.09.2026). Ein Lauf tagsueber (Fund:
+    # Lauf 11:18 MESZ) nahm die halbfertige Kerze von heute mit - bei
+    # DAX-Werten und Futures standen dadurch Luecken vom 23.09. aus
+    # Vormittagskursen in luecken.csv. Dieselbe Grenze wie kurse.py:
+    # der letzte Tag, dessen Handelsschluss (UTC) schon vorbei ist.
+    # Rohstoffe/Devisen haben keinen Kalender - dort gilt 21 Uhr UTC.
+    if df is not None and len(df):
+        fertig = kurse.letzter_fertiger_tag(kurse.boerse(ticker))
+        df = df[df.index.date <= fertig]
+    return df
+
+
+def werte():
+    """(ticker, name) wie bisher: Aktien und Rohstoffe, Spot/Future ueber den Future."""
+    aus = []
     for eintrag in UNIVERSUM:
         kandidaten, name, art = eintrag[0], eintrag[1], eintrag[2]
         # Bis 05.09.2026 stand hier `if art != "Aktie": continue` - dadurch
@@ -184,70 +265,102 @@ def main():
             ticker = kandidaten[-1] if art == "Spot/Future" else kandidaten[0]
         else:
             ticker = kandidaten
+        aus.append((ticker, name))
+    return aus
+
+
+def kurz_kerzen():
+    """Tageskerzen aus docs/kursverlauf*.csv als {ticker: DataFrame}."""
+    teile = {}
+    for spalte, datei in (("Open", "kursverlauf_eroeffnung.csv"), ("High", "kursverlauf_hoch.csv"),
+                          ("Low", "kursverlauf_tief.csv"), ("Close", "kursverlauf.csv")):
+        pfad = os.path.join(DOCS, datei)
+        if not os.path.exists(pfad):
+            return {}
+        teile[spalte] = pd.read_csv(pfad, index_col=0)
+    aus = {}
+    for t in teile["Close"].index:
+        if not all(t in teile[c].index for c in teile):
+            continue
+        df = pd.DataFrame({c: pd.to_numeric(teile[c].loc[t], errors="coerce") for c in teile})
+        df.index = pd.to_datetime(df.index)
+        aus[t] = df.dropna(subset=["Open", "High", "Low", "Close"])
+    return aus
+
+
+def fortschreiben(ticker, name, alte, bis, df):
+    """Schreibt die Luecken eines Werts um die Tage nach 'bis' fort.
+    alte: Zeilen aus luecken.csv (Texte). df: kurze Kerzenreihe, nur fertige
+    Tage. Gibt (zeilen, neuer_stand) zurueck oder None, wenn die kurze Reihe
+    den Stand-Tag nicht enthaelt (dann Vollabruf)."""
+    tage = [d.strftime("%Y-%m-%d") for d in df.index]
+    if bis not in tage:
+        return None
+    pos = tage.index(bis)
+    neue_tage = tage[pos + 1:]
+    if not neue_tage:
+        return alte, bis
+    hoch, tief = df["High"].values, df["Low"].values
+    n = len(neue_tage)
+    for z in alte:
+        alter = int(z["alter_tage"])
+        if str(z["geschlossen"]) != "1":
+            kante = float(z["kante"])
+            for k in range(1, n + 1):
+                j = pos + k
+                if (tief[j] <= kante) if z["richtung"] == "aufwaerts" else (hoch[j] >= kante):
+                    z["geschlossen"], z["tage_bis_schluss"] = 1, alter + k
+                    z["datum_schluss"] = tage[j]
+                    break
+        z["alter_tage"] = alter + n
+        z["reif"] = int(alter + n >= REIFEZEIT_TAGE)
+    neu = luecken_eines_werts(ticker, name, df, nur_nach=bis)
+    return alte + neu, tage[-1]
+
+
+def main():
+    argumente = [a for a in sys.argv[1:] if not a.startswith("--")]
+    nur = argumente or None
+    voll = "--voll" in sys.argv
+    stand = {}
+    if os.path.exists(STAND) and os.path.exists(CSV_AUS) and not voll:
+        with open(STAND, encoding="utf-8") as f:
+            stand = json.load(f)
+    else:
+        voll = True
+    bestand = {}
+    if not voll:
+        with open(CSV_AUS, encoding="utf-8", newline="") as f:
+            for z in csv.DictReader(f):
+                bestand.setdefault(z["ticker"], []).append(z)
+    kurz = {} if voll else kurz_kerzen()
+    print("Modus:", "VOLL (sieben Jahre von Yahoo)" if voll else "Fortschreiben aus kursverlauf")
+
+    alle, neuer_stand, voll_geholt = [], dict(stand), []
+    for ticker, name in werte():
         if nur and ticker not in nur:
+            alle.extend(bestand.get(ticker, []))
             continue
-
-        try:
-            # Sieben Jahre statt 400 Tage (Frage 115, Peter 23.09.2026: "OK").
-            # 400 Tage lieferten je Wert und Richtung oft nur eine Handvoll
-            # reifer Luecken - zu duenn fuer p90-Fenster und die Frage "wie
-            # viele schlossen noch, nachdem sie X Tage offen waren". Sieben
-            # Jahre wie historie.py und markthistorie.py.
-            #
-            # Preis dafuer: der Cache-Schluessel in kurse.py enthaelt den
-            # Zeitraum, marktdaten.py holt 400d - hier kommt also je Wert ein
-            # zweiter Yahoo-Abruf dazu (eine Anfrage je Wert, nur mehr Zeilen).
-            df = kurse.kerzen(ticker, period=ZEITRAUM)
-        except Exception as fehler:
-            print(f"  {ticker}: Abruf fehlgeschlagen ({fehler})")
-            continue
-
-        # Yahoo "erfolgreich" heisst nicht zwangslaeufig aktuell - siehe
-        # marktdaten.py (01.09.2026, DAX+ASML blieben tagelang auf altem
-        # Schluss haengen, ohne dass kerzen() je einen Fehler warf).
-        # luecken.py hatte diese Pruefung bisher NICHT (Fund vom
-        # 05.09.2026, Peters Frage nach der neuen Applied-Materials-
-        # Luecke deckte auf, dass die Datei einen Tag zurueckhing).
-        # Dieselbe Freshness-Pruefung wie in marktdaten.py: fuer DAX-Werte
-        # und ASML zusaetzlich Stooq und Twelve Data einholen und die
-        # insgesamt aktuellste Quelle nehmen.
-        if df is not None and (ticker.endswith(".DE") or ticker == "ASML"):
-            kandidaten_quellen = [("Yahoo", df)]
-            df_stooq = kurse.kerzen_stooq(ticker)
-            if df_stooq is not None:
-                kandidaten_quellen.append(("Stooq", df_stooq))
-            df_td = kurse.kerzen_twelvedata(ticker)
-            if df_td is not None:
-                kandidaten_quellen.append(("Twelve Data", df_td))
-            bester_name, bestes_df = max(
-                kandidaten_quellen, key=lambda x: x[1].index[-1])
-            if bester_name != "Yahoo":
-                print(f"  {ticker}: Yahoo veraltet ({df.index[-1].date()}), "
-                      f"{bester_name} aktueller ({bestes_df.index[-1].date()}) "
-                      f"- neuere Tage von {bester_name} angehaengt")
-                # ANHAENGEN statt ersetzen (23.09.2026, mit Frage 115): Twelve
-                # Data liefert nur 30 Tage. Die alte Fassung tauschte die ganze
-                # Reihe aus und haette die sieben Jahre an einem solchen Tag
-                # auf einen Monat geschrumpft - die Luecken-Statistik des
-                # Werts waere fuer diesen Lauf praktisch leer gewesen.
-                df = anhaengen(df, bestes_df)
-
-        # NUR FERTIGE TAGESKERZEN (23.09.2026). Ein Lauf tagsueber (Fund:
-        # Lauf 11:18 MESZ) nahm die halbfertige Kerze von heute mit - bei
-        # DAX-Werten und Futures standen dadurch Luecken vom 23.09. aus
-        # Vormittagskursen in luecken.csv. Dieselbe Grenze wie kurse.py:
-        # der letzte Tag, dessen Handelsschluss (UTC) schon vorbei ist.
-        # Rohstoffe/Devisen haben keinen Kalender - dort gilt 21 Uhr UTC.
-        if df is not None and len(df):
+        ergebnis = None
+        if not voll and ticker in stand and ticker in kurz:
+            df = kurz[ticker]
             fertig = kurse.letzter_fertiger_tag(kurse.boerse(ticker))
             df = df[df.index.date <= fertig]
-
-        zeilen = luecken_eines_werts(ticker, name, df)
+            ergebnis = fortschreiben(ticker, name, bestand.get(ticker, []), stand[ticker], df)
+        if ergebnis is None:
+            df = lade_voll(ticker)
+            if df is None or not len(df):
+                alle.extend(bestand.get(ticker, []))
+                continue
+            voll_geholt.append(ticker)
+            zeilen, bis = luecken_eines_werts(ticker, name, df), df.index[-1].strftime("%Y-%m-%d")
+        else:
+            zeilen, bis = ergebnis
+        neuer_stand[ticker] = bis
         alle.extend(zeilen)
-        reif = [z for z in zeilen if z["reif"]]
-        zu = sum(z["geschlossen"] for z in reif)
-        quote = f"{100*zu/len(reif):.0f}%" if reif else "keine reifen Faelle"
-        print(f"  {ticker}: {len(zeilen)} Luecken, davon reif {len(reif)}, geschlossen {quote}")
+    if not voll:
+        print(f"  fortgeschrieben: {len(neuer_stand) - len(voll_geholt)} Werte, "
+              f"voll geholt: {len(voll_geholt)} {' '.join(voll_geholt[:20])}")
 
     if not alle:
         print("Keine Luecken gefunden.")
@@ -255,9 +368,12 @@ def main():
 
     os.makedirs(DOCS, exist_ok=True)
     with open(CSV_AUS, "w", encoding="utf-8", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=list(alle[0].keys()))
+        w = csv.DictWriter(f, fieldnames=FELDER)
         w.writeheader()
         w.writerows(alle)
+    os.makedirs(os.path.dirname(STAND), exist_ok=True)
+    with open(STAND, "w", encoding="utf-8") as f:
+        json.dump(neuer_stand, f, indent=0, sort_keys=True)
     print(f"Geschrieben: {CSV_AUS} ({len(alle)} Zeilen)")
 
     d = pd.DataFrame(alle)

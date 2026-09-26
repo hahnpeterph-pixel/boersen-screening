@@ -214,6 +214,12 @@ jobs:
         run: python stimmung.py
         continue-on-error: true
 
+      # Indizes (26.09.2026): S&P 500, Nasdaq 100, Dow, DAX und Index-Beta je
+      # Wert (docs/indizes.md, docs/index_beta.csv). Kein Kaufwert.
+      - name: Indizes ausfuehren
+        run: python indizes.py
+        continue-on-error: true
+
       - name: Ergebnis speichern
         run: |
           git config user.name "screening-bot"

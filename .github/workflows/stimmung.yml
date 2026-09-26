@@ -16,6 +16,7 @@ on:
     branches: [main]
     paths:
       - "stimmung.py"
+      - "indizes.py"
       - ".github/workflows/stimmung.yml"
   workflow_dispatch:
 
@@ -45,6 +46,11 @@ jobs:
       # docs/stimmung_log.txt (mit Traceback) im Repo lesbar ist.
       - name: Stimmung abrufen und auswerten
         run: python stimmung.py --auswertung
+        continue-on-error: true
+
+      # Indizes und Index-Beta je Wert (26.09.2026)
+      - name: Indizes und Index-Abhaengigkeit
+        run: python indizes.py
         continue-on-error: true
 
       - name: Ergebnis speichern

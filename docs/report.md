@@ -1,54 +1,6 @@
 # Boersen-Screening - 2026-09-26
 
-_Stand: Schlusskurse vom 2026-09-25, aber 41 Werte haengen zurueck - siehe Standwarnung. Erstellt 2026-09-26T05:42:20+00:00 UTC. 271 Werte ausgewertet._
-
-> **Standwarnung: 41 von 271 Werten haengen zurueck.** Neuester Handelstag im Bericht ist 2026-09-25.
->
-> Ursache ist in aller Regel Yahoo: die vorlaeufige Tageskerze einer Boerse wird ueber Nacht durch die offizielle Abrechnung ersetzt, und solange die fehlt, faellt der Tag weg. Betroffen sind meist die europaeischen Notierungen. Fuer diese Werte gelten Kurs, ATR, RSI und Tiefs unten NICHT fuer den neuesten Handelstag.
->
-> | Wert | letzte Kerze |
-> |---|---|
-> | ADS.DE | 2026-09-24 |
-> | AIR.DE | 2026-09-24 |
-> | ALV.DE | 2026-09-24 |
-> | ASML | 2026-09-24 |
-> | BAS.DE | 2026-09-24 |
-> | BAYN.DE | 2026-09-24 |
-> | BEI.DE | 2026-09-24 |
-> | BMW.DE | 2026-09-24 |
-> | BNR.DE | 2026-09-24 |
-> | CBK.DE | 2026-09-24 |
-> | CON.DE | 2026-09-24 |
-> | DB1.DE | 2026-09-24 |
-> | DBK.DE | 2026-09-24 |
-> | DHL.DE | 2026-09-24 |
-> | DTE.DE | 2026-09-24 |
-> | DTG.DE | 2026-09-24 |
-> | ENR.DE | 2026-09-24 |
-> | EOAN.DE | 2026-09-24 |
-> | FRE.DE | 2026-09-24 |
-> | HEI.DE | 2026-09-24 |
-> | HEN3.DE | 2026-09-24 |
-> | HNR1.DE | 2026-09-24 |
-> | IFX.DE | 2026-09-24 |
-> | MBG.DE | 2026-09-24 |
-> | MRK.DE | 2026-09-24 |
-> | MTX.DE | 2026-09-24 |
-> | MUV2.DE | 2026-09-24 |
-> | P911.DE | 2026-09-24 |
-> | PAH3.DE | 2026-09-24 |
-> | QIA.DE | 2026-09-24 |
-> | RHM.DE | 2026-09-24 |
-> | RWE.DE | 2026-09-24 |
-> | SAP.DE | 2026-09-24 |
-> | SHEL | 2026-09-24 |
-> | SHL.DE | 2026-09-24 |
-> | SIE.DE | 2026-09-24 |
-> | SRT3.DE | 2026-09-24 |
-> | SY1.DE | 2026-09-24 |
-> | VNA.DE | 2026-09-24 |
-> | VOW3.DE | 2026-09-24 |
-> | ZAL.DE | 2026-09-24 |
+_Stand: Schlusskurse vom 2026-09-25. Erstellt 2026-09-26T10:00:46+00:00 UTC. 271 Werte ausgewertet._
 
 ## 📖 Glossar (was die Spalten bedeuten)
 
@@ -65,8 +17,8 @@ _Ueber alle 271 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 
 | Rang | Ticker | ISIN | Name | Index | Kurs | Abstand ATH (Info) | Kaufen-Anteil Analysten | Kursziel | RSI Tag | RSI Woche | RSI Stunde | Letztes Rating |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | ASML | - | ASML Holding N.V. - New York Re | NASDAQ | 1503.20 | -13% | 100% (5 Banken, ≤120T) | 2175.90 (45% ueber Kurs) | 54 | 57 | 56 | keine in 30T |
-| 2 | TTWO | - | Take-Two Interactive Software, | NASDAQ | 201.44 | -23% | 100% (10 Banken, ≤120T) | 290.00 (44% ueber Kurs) | 33 | 38 | 31 | keine in 30T |
+| 1 | TTWO | - | Take-Two Interactive Software, | NASDAQ | 201.44 | -23% | 100% (10 Banken, ≤120T) | 290.00 (44% ueber Kurs) | 33 | 38 | 31 | keine in 30T |
+| 2 | ASML | - | ASML Holding N.V. - New York Re | NASDAQ | 1522.60 | -11% | 100% (5 Banken, ≤120T) | 2175.90 (43% ueber Kurs) | 57 | 58 | 56 | keine in 30T |
 | 3 | NVDA | - | NVIDIA Corporation | NASDAQ/DOW | 225.07 | -4% | 100% (22 Banken, ≤120T) | 315.00 (40% ueber Kurs) | 55 | 58 | 54 | 2026-09-10 Piper Sandler: neu bewertet mit Overweight |
 | 4 | BA | - | Boeing Company (The) | DOW | 198.07 | -54% | 100% (7 Banken, ≤120T) | 273.50 (38% ueber Kurs) | 38 | 41 | 46 | 2026-09-21 Jefferies: Rating bestaetigt: Buy |
 | 5 | IBN | - | ICICI Bank Limited | Watchlist | 27.92 | -18% | 100% (4 Banken, ≤120T) | 36.50 (31% ueber Kurs) | 34 | 44 | 49 | keine in 30T |

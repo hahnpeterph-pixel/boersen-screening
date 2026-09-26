@@ -1,8 +1,6 @@
 # Stundenwache
 
-Stand: 2026-09-25 · 267 Werte mit Stundendaten · erstellt 2026-09-26 05:44 UTC
-
-> **Sitzung noch nicht abgeschlossen.** 2 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 6, 7, 9). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
+Stand: 2026-09-25 · 267 Werte mit Stundendaten · erstellt 2026-09-26 10:02 UTC
 
 Marken sind das juengste Swing-Tief und das juengste Swing-Hoch aus `tiefs_regel.py`, also dieselben wie im Tagesbericht. Geprueft wird nur, was der letzte Handelstag auf Stundenbasis damit gemacht hat.
 
@@ -21,28 +19,24 @@ Keine.
 
 Keine.
 
-## Tief angetestet (27)
+## Tief angetestet (21)
 
 Docht bis unter die Marke, kein Stundenschluss darunter.
 
 | Wert | Marke | Schluss | Abstand (ATR) | Stunden dahinter |
 |---|---|---|---|---|
 | ZS | 192.74 | 193.03 | 0.027 | 0 |
-| ZAL.DE | 21.88 | 21.9 | 0.034 | 0 |
 | BABA | 109.56 | 109.76 | 0.069 | 0 |
 | PDD | 77.36 | 77.56 | 0.116 | 0 |
 | FANG | 185.51 | 186.56 | 0.159 | 0 |
-| BMW.DE | 55.32 | 55.66 | 0.183 | 0 |
 | FAST | 50.26 | 50.44 | 0.196 | 0 |
 | KO | 87.56 | 87.815 | 0.209 | 0 |
 | NET | 344.268 | 348.895 | 0.24 | 0 |
-| SHEL | 95.28 | 95.78 | 0.291 | 0 |
 | ENB | 46.48 | 46.725 | 0.297 | 0 |
 | BHP | 84.21 | 84.98 | 0.319 | 0 |
 | CNQ | 46.99 | 47.42 | 0.326 | 0 |
 | BTI | 55.21 | 55.62 | 0.404 | 0 |
 | RIO | 93.56 | 94.55 | 0.446 | 0 |
-| PAH3.DE | 25.32 | 25.71 | 0.446 | 0 |
 | LOW | 187.15 | 189.22 | 0.49 | 0 |
 | IBN | 27.65 | 27.92 | 0.55 | 0 |
 | NKE | 35.22 | 35.76 | 0.593 | 0 |
@@ -50,9 +44,7 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | PSX | 250.09 | 255.7 | 0.614 | 0 |
 | MPC | 380.78 | 393.05 | 0.753 | 0 |
 | WMT | 106.45 | 107.98 | 0.841 | 0 |
-| BNR.DE | 58.44 | 59.58 | 0.844 | 0 |
 | VLO | 370.59 | 387.23 | 0.944 | 0 |
-| AIR.DE | 188.14 | 192.48 | 0.984 | 0 |
 | COST | 888.04 | 922.95 | 2.545 | 0 |
 
 ## Swing-Hoch ueberwunden (46)

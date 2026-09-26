@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-09-26 05:42 UTC. 280 Werte, Fenster 90 Kalendertage. EUR/USD 1.1392._
+_Erstellt 2026-09-26 10:00 UTC. 280 Werte, Fenster 90 Kalendertage. EUR/USD 1.1375._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -56,12 +56,12 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | EQNR (EQNR) | 42.19 | - | - | ja | 47.18 |
 | CNQ (CNQ) | 47.41 | - | - | ja | 40.44 |
 | GSK (GSK) | 49.24 | - | - | ja | 43.45 |
-| BAS.DE (BAS.DE) | 50.28 | - | - | ja | 39.45 |
-| BMW.DE (BMW.DE) | 55.66 | - | - | ja | 30.21 |
-| DTG.DE (DTG.DE) | 42.4 | ja | - | - | 35.72 |
-| HEN3.DE (HEN3.DE) | 73.82 | - | - | ja | 45.83 |
-| RHM.DE (RHM.DE) | 979.0 | - | - | ja | 37.07 |
-| ZAL.DE (ZAL.DE) | 21.9 | - | - | ja | 40.34 |
+| AIR.DE (AIR.DE) | 192.54 | ja | - | - | 37.55 |
+| BAS.DE (BAS.DE) | 50.42 | - | - | ja | 40.13 |
+| BMW.DE (BMW.DE) | 55.72 | - | - | ja | 30.35 |
+| DTG.DE (DTG.DE) | 42.54 | ja | ja | - | 37.0 |
+| HEN3.DE (HEN3.DE) | 73.74 | - | - | ja | 45.45 |
+| RHM.DE (RHM.DE) | 982.4 | - | - | ja | 37.54 |
 | Kupfer (HG=F) | 6.6955 | - | - | ja | 56.13 |
 | Weizen (ZW=F) | 703.25 | ja | - | - | 47.59 |
 

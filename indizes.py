@@ -32,7 +32,7 @@ import yfinance as yf
 DOCS = "docs"
 INDIZES = {"^GSPC": "S&P 500", "^NDX": "Nasdaq 100", "^DJI": "Dow Jones", "^GDAXI": "DAX"}
 HEIMAT_US, HEIMAT_DE = "^GSPC", "^GDAXI"
-START = "2019-01-01"
+START = "2011-01-01"  # seit 26.09.2026 ab 2011 (vorher 2019)
 
 
 def de(x, n=1):

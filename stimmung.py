@@ -56,7 +56,7 @@ FG_KOPF = {
     "Referer": "https://edition.cnn.com/markets/fear-and-greed",
     "Origin": "https://edition.cnn.com",
 }
-START = "2018-01-01"
+START = "2011-01-01"  # seit 26.09.2026 ab 2011 (vorher 2018), Peter: "Daten holen"
 MELDUNGEN: list[str] = []
 
 
@@ -168,7 +168,7 @@ def dax_schwankung() -> pd.Series | None:
     Jahr hochgerechnet, in Prozent). Gleiche Groessenordnung wie VDAX-NEW,
     aber rueckblickend statt erwartet - in stimmung.md so benannt."""
     try:
-        roh = yf.Ticker("^GDAXI").history(start="2017-11-01", interval="1d", auto_adjust=False)
+        roh = yf.Ticker("^GDAXI").history(start="2010-11-01", interval="1d", auto_adjust=False)
         c = roh["Close"].dropna()
         c.index = pd.to_datetime(c.index).tz_localize(None).normalize()
     except Exception as e:  # noqa: BLE001

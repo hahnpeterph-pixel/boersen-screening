@@ -1,4 +1,4 @@
-# Boden-Screening 2026-09-25 (Stand 2026-09-25 22:24 UTC)
+# Boden-Screening 2026-09-25 (Stand 2026-09-26 01:05 UTC)
 
 Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RSI < 50 + mind. 2 Boden-Punkte + mind. 75 % Kaufempfehlungen. Anker = niedrigster Puffer mit 60 % Halterate fuer diese Gruppe und diesen Wert (Vollauf), KO-Marke = Bezugstief - Anker x ATR.
 
@@ -44,8 +44,8 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | CBK.DE | 1 | 1 P, Tief 1, RSI >= 50, Analysten 54 % |
 | CCEP | 1 | 1 P |
 | CEG | 1 | 1 P |
-| CMCSA | 1 | 1 P, Umkehr a, Analysten 31 % |
-| COST | 1 | 1 P, RSI >= 50 |
+| CMCSA | 1 | 1 P, Umkehr a, Analysten 29 % |
+| COST | 1 | 1 P, RSI >= 50, Analysten 64 % |
 | DTG.DE | 1 | 1 P, Tief 1, Analysten 61 % |
 | DUK | 1 | 1 P, Umkehr a, Analysten 71 % |
 | ENR.DE | 1 | 1 P |
@@ -55,7 +55,7 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | FDX | 1 | 1 P, Umkehr a, Analysten 73 % |
 | FRE.DE | 1 | 1 P, Tief 1, RSI >= 50 |
 | GD | 1 | 1 P, Umkehr a, Analysten 64 % |
-| HON | 1 | 1 P |
+| HON | 1 | 1 P, Analysten 71 % |
 | INTU | 1 | 1 P, Umkehr a, Analysten 53 % |
 | ISRG | 1 | 1 P, Tief 1, RSI >= 50 |
 | KDP | 1 | 1 P, Tief 1, RSI >= 50 |
@@ -78,7 +78,7 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | SHW | 1 | 1 P, Tief 1 |
 | SNDK | 1 | 1 P, Tief 1, RSI >= 50 |
 | SNY | 1 | 1 P, Umkehr a, Analysten 50 % |
-| SO | 1 | 1 P, Tief 1, Umkehr a, Analysten 17 % |
+| SO | 1 | 1 P, Tief 1, Umkehr a, Analysten 29 % |
 | SONY | 1 | 1 P |
 | TM | 1 | 1 P |
 | TRV | 1 | 1 P, Tief 1, Analysten 29 % |
@@ -87,11 +87,11 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | AMT | 0 | 0 P, Umkehr a |
 | BHP | 0 | 0 P, Umkehr a, Analysten 12 % |
 | BKR | 0 | 0 P, Tief 1, Umkehr a |
-| BP | 0 | 0 P, Tief 1, Umkehr a, Analysten 40 % |
+| BP | 0 | 0 P, Tief 1, Umkehr a, Analysten 50 % |
 | BRK-B | 0 | 0 P, Tief 1, Umkehr a, Analysten 50 % |
 | BTI | 0 | 0 P, Tief 1, Umkehr a |
 | CL | 0 | 0 P, Umkehr a, Analysten 60 % |
-| CVX | 0 | 0 P, Tief 1, Umkehr a, Analysten 67 % |
+| CVX | 0 | 0 P, Tief 1, Umkehr a, Analysten 70 % |
 | DTE.DE | 0 | 0 P, Umkehr a |
 | GILD | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a, Analysten 62 % |
 | IDXX | 0 | 0 P, Umkehr a, Analysten 33 % |

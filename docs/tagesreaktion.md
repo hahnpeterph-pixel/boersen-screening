@@ -1,6 +1,6 @@
 # Tagesreaktion - was folgt auf einen harten Verlusttag?
 
-_Erstellt 2026-09-22 06:27 UTC. 7 Jahre, 283 Werte, 152729 Verlusttage._
+_Erstellt 2026-09-26 05:32 UTC. 7 Jahre, 283 Werte, 152952 Verlusttage._
 
 _HOEHER NACH X ist der Anteil der Faelle, in denen der Schluss nach X Handelstagen ueber dem Schluss des Verlusttags lag. TIEFER ist, wie weit der Kurs in dieser Zeit VORHER noch fiel - die Zahl, die entscheidet, ob ein Knock-out ueberlebt haette. Alles in ATR des Verlusttags._
 
@@ -8,16 +8,16 @@ _HOEHER NACH X ist der Anteil der Faelle, in denen der Schluss nach X Handelstag
 
 | Verlust ab | Faelle | hoeher 5T | hoeher 10T | hoeher 20T | hoeher 60T | tiefer 20T Median | tiefer 20T p90 |
 |---|---|---|---|---|---|---|---|
-| 0.25 ATR | 57255 | 54% | 56% | 57% | 60% | 1.81 | 5.26 |
-| 0.5 ATR | 39315 | 55% | 56% | 57% | 61% | 1.81 | 5.21 |
-| 0.75 ATR | 24303 | 54% | 56% | 56% | 60% | 1.88 | 5.45 |
-| 1.0 ATR | 14015 | 54% | 56% | 57% | 60% | 1.91 | 5.64 |
-| 1.25 ATR | 7691 | 54% | 56% | 56% | 62% | 1.92 | 5.92 |
-| 1.5 ATR | 4273 | 52% | 55% | 55% | 61% | 2.04 | 6.13 |
-| 1.75 ATR | 2298 | 53% | 56% | 56% | 64% | 1.89 | 6.32 |
-| 2.0 ATR | 1386 | 54% | 55% | 58% | 62% | 1.99 | 6.51 |
+| 0.25 ATR | 57334 | 54% | 56% | 57% | 60% | 1.80 | 5.26 |
+| 0.5 ATR | 39350 | 55% | 56% | 57% | 61% | 1.81 | 5.21 |
+| 0.75 ATR | 24356 | 54% | 56% | 56% | 60% | 1.88 | 5.45 |
+| 1.0 ATR | 14039 | 54% | 56% | 57% | 60% | 1.91 | 5.64 |
+| 1.25 ATR | 7706 | 54% | 56% | 56% | 62% | 1.92 | 5.92 |
+| 1.5 ATR | 4283 | 52% | 55% | 55% | 61% | 2.04 | 6.12 |
+| 1.75 ATR | 2300 | 53% | 56% | 56% | 64% | 1.89 | 6.33 |
+| 2.0 ATR | 1388 | 54% | 55% | 58% | 62% | 1.99 | 6.50 |
 | 2.25 ATR | 765 | 51% | 54% | 58% | 61% | 1.98 | 6.21 |
-| 2.5 ATR | 431 | 51% | 52% | 56% | 62% | 2.07 | 5.68 |
+| 2.5 ATR | 434 | 51% | 51% | 56% | 62% | 2.06 | 5.67 |
 | 2.75 ATR | 284 | 57% | 59% | 57% | 56% | 1.63 | 6.07 |
 | 3.0 ATR | 207 | 46% | 47% | 56% | 56% | 2.20 | 5.37 |
 | 3.25 ATR | 140 | 46% | 46% | 49% | 59% | 2.41 | 5.57 |
@@ -41,11 +41,11 @@ _Schluss ueber Eroeffnung je Wochentag, gemittelt ueber alle Werte. ERST RUNTER 
 
 | Wochentag | Faelle | Schluss ueber Eroeffnung | erst runter | mittlere Tagesrendite |
 |---|---|---|---|---|
-| Montag | 92679 | 52.7% | 51.7% | 0.112% |
-| Dienstag | 101106 | 48.8% | 48.6% | -0.034% |
-| Mittwoch | 100073 | 49.3% | 49.9% | 0.014% |
-| Donnerstag | 98375 | 50.5% | 49.7% | 0.027% |
-| Freitag | 97672 | 51.0% | 49.6% | 0.033% |
+| Montag | 92452 | 52.6% | 51.7% | 0.112% |
+| Dienstag | 101110 | 48.9% | 48.7% | -0.031% |
+| Mittwoch | 100124 | 49.2% | 49.8% | 0.011% |
+| Donnerstag | 98658 | 50.5% | 49.7% | 0.027% |
+| Freitag | 97913 | 51.0% | 49.6% | 0.034% |
 
 ## Wie weit werden grosse Laeufe korrigiert?
 
@@ -53,13 +53,13 @@ _Ein Lauf ist die Strecke von einem Tief bis zum naechsten Swing-Hoch, die Korre
 
 | Lauf ab | Faelle | Lauf Median | Anteil p10 | p25 | Median | p75 | p90 | ganz zurueck | Korrektur Tage |
 |---|---|---|---|---|---|---|---|---|---|
-| 1 ATR | 34216 | 1.5 ATR | 61% | 82% | 118% | 180% | 270% | 62% | 2 |
-| 2 ATR | 20151 | 2.4 ATR | 40% | 54% | 78% | 119% | 174% | 34% | 2 |
-| 3 ATR | 9520 | 3.4 ATR | 30% | 40% | 58% | 87% | 131% | 19% | 2 |
-| 4 ATR | 4463 | 4.4 ATR | 25% | 33% | 48% | 72% | 103% | 11% | 2 |
-| 5 ATR | 2237 | 5.4 ATR | 21% | 30% | 42% | 61% | 89% | 7% | 2 |
-| 6 ATR | 1191 | 6.4 ATR | 19% | 26% | 37% | 56% | 81% | 6% | 2 |
-| 7 ATR | 718 | 7.4 ATR | 17% | 23% | 34% | 50% | 72% | 3% | 2 |
+| 1 ATR | 34249 | 1.5 ATR | 61% | 82% | 118% | 180% | 270% | 62% | 2 |
+| 2 ATR | 20156 | 2.4 ATR | 40% | 54% | 78% | 119% | 175% | 34% | 2 |
+| 3 ATR | 9525 | 3.4 ATR | 30% | 40% | 58% | 88% | 131% | 19% | 2 |
+| 4 ATR | 4473 | 4.4 ATR | 25% | 33% | 48% | 72% | 103% | 11% | 2 |
+| 5 ATR | 2239 | 5.4 ATR | 21% | 30% | 42% | 61% | 89% | 7% | 2 |
+| 6 ATR | 1191 | 6.4 ATR | 19% | 26% | 37% | 56% | 80% | 6% | 2 |
+| 7 ATR | 715 | 7.4 ATR | 17% | 23% | 34% | 50% | 73% | 3% | 2 |
 | 8 ATR | 382 | 8.4 ATR | 17% | 23% | 32% | 48% | 67% | 2% | 2 |
 | 9 ATR | 231 | 9.5 ATR | 15% | 21% | 30% | 46% | 60% | 1% | 2 |
 | 10 ATR | 132 | 10.5 ATR | 14% | 18% | 28% | 44% | 68% | 2% | 2 |

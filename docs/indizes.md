@@ -1,6 +1,6 @@
 # Indizes
 
-Stand Abruf: 26.09.2026 06:54 UTC
+Stand Abruf: 26.09.2026 07:09 UTC
 
 **Indizes:** S&P 500 7.743 (+1,2 % 5T, -0,7 % vom Jahreshoch) · Nasdaq 100 30.608 (+3,3 % 5T, -0,4 % vom Jahreshoch) · Dow Jones 51.829 (+0,3 % 5T, -4,6 % vom Jahreshoch) · DAX 25.409 (+0,4 % 5T, -4,4 % vom Jahreshoch)
 

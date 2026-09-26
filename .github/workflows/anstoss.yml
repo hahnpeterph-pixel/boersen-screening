@@ -1,0 +1,62 @@
+name: Anstoss Wochenendkette
+
+# Startet die Wochenendlaeufe nacheinander per workflow_dispatch, wenn
+# GitHub die geplanten Laeufe stark verspaetet (26.09.2026: Markthistorie
+# 4,5 h zu spaet, Rest nicht gestartet). Claude hat keinen Knopf-Zugang,
+# kann aber eine Datei in .github/anstoss/ hochladen - das loest diesen
+# Ablauf aus. Jeder Lauf wird abgewartet, bevor der naechste startet:
+# die Laeufe teilen die Concurrency-Gruppe "repo-schreiben", in der nur
+# EIN Lauf warten darf - gleichzeitig gestartet wuerden sie sich
+# gegenseitig verdraengen.
+# Uebersprungen wird ein Lauf, der in den letzten 10 Stunden schon lief
+# oder gerade laeuft/wartet (z. B. der verspaetete geplante Lauf).
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/anstoss/**"
+  workflow_dispatch:
+
+concurrency:
+  group: anstoss
+  cancel-in-progress: false
+
+permissions:
+  actions: write
+  contents: read
+
+jobs:
+  kette:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+    steps:
+      - name: Laeufe nacheinander starten
+        run: |
+          set -u
+          seit=$(date -u -d '10 hours ago' +%Y-%m-%dT%H:%M:%SZ)
+          for wf in historie.yml hochs.yml phasen.yml ruecksetzer.yml tagesreaktion.yml stimmung.yml screening.yml; do
+            schon=$(gh run list --workflow "$wf" --limit 5 --json createdAt,status,conclusion \
+              --jq "[.[] | select(.createdAt > \"$seit\") | select(.status != \"completed\" or .conclusion == \"success\")] | length")
+            if [ "$schon" != "0" ]; then
+              echo "== $wf: lief schon oder laeuft (seit $seit) - uebersprungen"
+              id=$(gh run list --workflow "$wf" --limit 1 --json databaseId --jq '.[0].databaseId')
+              gh run watch "$id" --interval 30 > /dev/null 2>&1 || true
+              continue
+            fi
+            echo "== $wf: starte"
+            vorher=$(gh run list --workflow "$wf" --limit 1 --json databaseId --jq '.[0].databaseId // 0')
+            gh workflow run "$wf" --ref main
+            id=$vorher
+            for i in $(seq 1 30); do
+              sleep 10
+              id=$(gh run list --workflow "$wf" --limit 1 --json databaseId --jq '.[0].databaseId // 0')
+              [ "$id" != "$vorher" ] && break
+            done
+            if [ "$id" = "$vorher" ]; then echo "   $wf: kein neuer Lauf erschienen"; continue; fi
+            gh run watch "$id" --interval 30 > /dev/null 2>&1 || true
+            echo "   $wf: $(gh run view "$id" --json conclusion --jq .conclusion)"
+          done

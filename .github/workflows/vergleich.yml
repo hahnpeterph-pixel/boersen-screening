@@ -1,0 +1,58 @@
+name: Vergleich Historie 20 Jahre
+
+# Einmaliger Pruefauftrag (Peter 27.09.2026): Halteraten ALT (vor 27.09.2019) gegen NEU (ab 27.09.2019).
+# Nur manueller Start, schreibt NUR docs/vergleich/ - das taegliche Screening bleibt unberuehrt.
+# Startet automatisch, wenn vergleich_historie.py oder diese Datei gepusht wird (NICHT ueber .github/anstoss/ -
+# das wuerde die ganze Wochenendkette mitstarten).
+on:
+  workflow_dispatch:
+    inputs:
+      jahre:
+        description: "Jahre Historie"
+        required: false
+        default: "20"
+  push:
+    branches: [main]
+    paths:
+      - "vergleich_historie.py"
+      - ".github/workflows/vergleich.yml"
+
+concurrency:
+  group: repo-schreiben
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  vergleich:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Abhaengigkeiten installieren
+        run: pip install -r requirements.txt
+      - name: Vergleich rechnen
+        run: python vergleich_historie.py --jahre ${{ github.event.inputs.jahre || '20' }}
+      - name: Ergebnis speichern (nur docs/vergleich)
+        run: |
+          git config user.name "screening-bot"
+          git config user.email "actions@github.com"
+          git add docs/vergleich
+          if git diff --staged --quiet; then
+            echo "Nichts geaendert."
+            exit 0
+          fi
+          git commit -m "Vergleich Historie 20 Jahre $(date -u +%Y-%m-%d)"
+          for versuch in 1 2 3; do
+            if git pull --rebase --autostash origin main && git push origin main; then
+              echo "Gespeichert im Versuch $versuch."
+              exit 0
+            fi
+            sleep 10
+          done
+          exit 1

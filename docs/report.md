@@ -1,6 +1,6 @@
-# Boersen-Screening - 2026-09-26
+# Boersen-Screening - 2026-09-27
 
-_Stand: Schlusskurse vom 2026-09-25. Erstellt 2026-09-26T13:41:23+00:00 UTC. 271 Werte ausgewertet._
+_Stand: Schlusskurse vom 2026-09-25. Erstellt 2026-09-27T07:43:13+00:00 UTC. 271 Werte ausgewertet._
 
 ## 📖 Glossar (was die Spalten bedeuten)
 
@@ -18,7 +18,7 @@ _Ueber alle 271 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 | Rang | Ticker | ISIN | Name | Index | Kurs | Abstand ATH (Info) | Kaufen-Anteil Analysten | Kursziel | RSI Tag | RSI Woche | RSI Stunde | Letztes Rating |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 1 | TTWO | - | Take-Two Interactive Software, | NASDAQ | 201.44 | -23% | 100% (10 Banken, ≤120T) | 290.00 (44% ueber Kurs) | 33 | 38 | 31 | keine in 30T |
-| 2 | ASML | - | ASML Holding N.V. - New York Re | NASDAQ | 1522.60 | -11% | 100% (5 Banken, ≤120T) | 2175.90 (43% ueber Kurs) | 57 | 58 | 56 | keine in 30T |
+| 2 | ASML | - | ASML Holding N.V. - New York Re | NASDAQ | 1522.60 | -11% | 100% (5 Banken, ≤120T) | 2177.64 (43% ueber Kurs) | 57 | 58 | 56 | keine in 30T |
 | 3 | NVDA | - | NVIDIA Corporation | NASDAQ/DOW | 225.07 | -4% | 100% (22 Banken, ≤120T) | 315.00 (40% ueber Kurs) | 55 | 58 | 54 | 2026-09-10 Piper Sandler: neu bewertet mit Overweight |
 | 4 | BA | - | Boeing Company (The) | DOW | 198.07 | -54% | 100% (7 Banken, ≤120T) | 273.50 (38% ueber Kurs) | 38 | 41 | 46 | 2026-09-21 Jefferies: Rating bestaetigt: Buy |
 | 5 | IBN | - | ICICI Bank Limited | Watchlist | 27.92 | -18% | 100% (4 Banken, ≤120T) | 36.50 (31% ueber Kurs) | 34 | 44 | 49 | keine in 30T |
@@ -93,8 +93,6 @@ _Ueber alle 271 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 - 2026-09-10: Piper Sandler – Erstbewertung (Overweight)
 - 2026-09-04: Rosenblatt – Bestaetigung (Buy → Buy)
 - 2026-09-04: Needham – Bestaetigung (Buy → Buy)
-- 2026-08-27: Citigroup – Bestaetigung (Buy → Buy)
-- 2026-08-27: Mizuho – Bestaetigung (Outperform → Outperform)
 
 **ORLY** (O'Reilly Automotive, Inc., NASDAQ)
 - 2026-09-18: DA Davidson – Bestaetigung (Buy → Buy)

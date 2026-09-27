@@ -1,6 +1,6 @@
 {
- "date": "2026-09-26",
- "generated": "2026-09-26T13:41:23+00:00",
+ "date": "2026-09-27",
+ "generated": "2026-09-27T07:43:13+00:00",
  "ranks": {
   "turnaround": [
    "ZS",
@@ -1107,8 +1107,8 @@
     "above_sma100": true,
     "above_sma200": true,
     "pct_above_sma50": 5.676424143523606,
-    "pct_above_sma100": 1.125539105011919,
-    "pct_above_sma200": 10.972232299564721,
+    "pct_above_sma100": 1.1255390257222553,
+    "pct_above_sma200": 10.972232204082278,
     "sma50_slope": -2.95,
     "sma200_slope": 3.56,
     "higher_low": true,
@@ -1383,7 +1383,7 @@
     "above_sma200": true,
     "pct_above_sma50": -1.9069639954337636,
     "pct_above_sma100": 7.065926288497737,
-    "pct_above_sma200": 12.256142604807629,
+    "pct_above_sma200": 12.256142276642755,
     "sma50_slope": 6.43,
     "sma200_slope": 1.08,
     "higher_low": true,
@@ -1715,10 +1715,10 @@
      }
     ],
     "consensus": {
-     "kaufen_pct": 76,
-     "halten_pct": 24,
+     "kaufen_pct": 73,
+     "halten_pct": 27,
      "verkaufen_pct": 0,
-     "total": 17,
+     "total": 15,
      "unclassified": 0
     },
     "quelle": "Einzelratings",
@@ -1741,10 +1741,10 @@
     "n_analysts": 35,
     "empfehlung": "kaufen",
     "rec_breakdown": {
-     "kaufen_pct": 76,
-     "halten_pct": 24,
+     "kaufen_pct": 73,
+     "halten_pct": 27,
      "verkaufen_pct": 0,
-     "total": 17,
+     "total": 15,
      "unclassified": 0
     }
    },
@@ -2221,8 +2221,8 @@
     "above_sma100": false,
     "above_sma200": true,
     "pct_above_sma50": -1.0158528625486496,
-    "pct_above_sma100": -4.2000191873874275,
-    "pct_above_sma200": 15.283730854129196,
+    "pct_above_sma100": -4.200019360632313,
+    "pct_above_sma200": 15.283731042289016,
     "sma50_slope": -11.43,
     "sma200_slope": 5.27,
     "higher_low": true,
@@ -2776,7 +2776,7 @@
     "above_sma200": true,
     "pct_above_sma50": 2.742953742013965,
     "pct_above_sma100": 11.021093321302878,
-    "pct_above_sma200": 15.68252927709677,
+    "pct_above_sma200": 15.68252952335223,
     "sma50_slope": 5.07,
     "sma200_slope": 2.14,
     "higher_low": true,
@@ -3901,7 +3901,7 @@
     "above_sma200": true,
     "pct_above_sma50": 2.23352778365844,
     "pct_above_sma100": 1.8377135221905982,
-    "pct_above_sma200": 15.15754020020923,
+    "pct_above_sma200": 15.157540306527784,
     "sma50_slope": -3.2,
     "sma200_slope": 4.4,
     "higher_low": true,
@@ -3939,10 +3939,10 @@
     "quelle": "Einzelratings",
     "price_targets": {
      "current": 1743.94,
-     "high": 2822.1963,
-     "low": 881.3397,
-     "mean": 2121.8489,
-     "median": 2175.9
+     "high": 2824.4487,
+     "low": 882.04315,
+     "mean": 2123.5422,
+     "median": 2177.6365
     },
     "konsens_firmen": [],
     "merged_firmen": [],
@@ -3950,8 +3950,8 @@
    },
    "revision_note": null,
    "target": {
-    "target_abs": 2175.9,
-    "upside_pct": 42.9,
+    "target_abs": 2177.64,
+    "upside_pct": 43.0,
     "fresh": null,
     "n_analysts": 16,
     "empfehlung": "klar kaufen",
@@ -4168,8 +4168,8 @@
     "above_sma100": false,
     "above_sma200": false,
     "pct_above_sma50": -6.168934411845894,
-    "pct_above_sma100": -9.411042863706175,
-    "pct_above_sma200": -3.877472800711701,
+    "pct_above_sma100": -9.411042792722302,
+    "pct_above_sma200": -3.877472600909826,
     "sma50_slope": -2.55,
     "sma200_slope": -0.21,
     "higher_low": false,
@@ -5288,7 +5288,7 @@
     "above_sma200": false,
     "pct_above_sma50": -14.106775317536325,
     "pct_above_sma100": -8.831613016514527,
-    "pct_above_sma200": -10.443020243715695,
+    "pct_above_sma200": -10.443019609223237,
     "sma50_slope": 0.05,
     "sma200_slope": -1.01,
     "higher_low": true,
@@ -5329,13 +5329,6 @@
       "action": "init",
       "to_grade": "Buy",
       "from_grade": null
-     },
-     {
-      "date": "2026-08-27",
-      "firm": "BTIG",
-      "action": "reit",
-      "to_grade": "Buy",
-      "from_grade": "Buy"
      }
     ],
     "consensus": {
@@ -5574,7 +5567,7 @@
     "above_sma200": false,
     "pct_above_sma50": -4.521330419495206,
     "pct_above_sma100": -5.013732703190388,
-    "pct_above_sma200": -1.6908179756993325,
+    "pct_above_sma200": -1.6908180394515138,
     "sma50_slope": 2.35,
     "sma200_slope": 2.0,
     "higher_low": true,
@@ -5899,10 +5892,10 @@
     "quelle": "Einzelratings",
     "price_targets": {
      "current": 101.73,
-     "high": 118.701294,
-     "low": 90.176575,
-     "mean": 109.38141,
-     "median": 113.75598
+     "high": 118.796036,
+     "low": 90.24854,
+     "mean": 109.468704,
+     "median": 113.84677
     },
     "konsens_firmen": [],
     "merged_firmen": [],
@@ -5910,8 +5903,8 @@
    },
    "revision_note": null,
    "target": {
-    "target_abs": 113.76,
-    "upside_pct": 11.8,
+    "target_abs": 113.85,
+    "upside_pct": 11.9,
     "fresh": null,
     "n_analysts": 12,
     "empfehlung": "kaufen",
@@ -6165,8 +6158,8 @@
      "current": 326.13,
      "high": 470.0,
      "low": 300.0,
-     "mean": 403.37964,
-     "median": 405.0
+     "mean": 405.47116,
+     "median": 407.935
     },
     "konsens_firmen": [],
     "merged_firmen": [],
@@ -6174,8 +6167,8 @@
    },
    "revision_note": null,
    "target": {
-    "target_abs": 405.0,
-    "upside_pct": 24.2,
+    "target_abs": 407.94,
+    "upside_pct": 25.1,
     "fresh": null,
     "n_analysts": 27,
     "empfehlung": "klar kaufen",
@@ -6203,7 +6196,7 @@
      "erwartetes KGV unter aktuellem",
      "positiver Free Cashflow",
      "Umsatzwachstum 24%",
-     "24% Abstand zum Kursziel"
+     "25% Abstand zum Kursziel"
     ]
    },
    "breakdown": {
@@ -6366,7 +6359,7 @@
       "label": "Kursziel-Abstand",
       "points": 5.0,
       "max": 5,
-      "detail": "24%"
+      "detail": "25%"
      }
     ]
    }
@@ -6388,7 +6381,7 @@
     "above_sma200": true,
     "pct_above_sma50": -4.609219605110193,
     "pct_above_sma100": 1.57900408174656,
-    "pct_above_sma200": 3.4764428482626064,
+    "pct_above_sma200": 3.4764428181027984,
     "sma50_slope": 3.94,
     "sma200_slope": 0.54,
     "higher_low": true,
@@ -6668,8 +6661,8 @@
     "above_sma100": false,
     "above_sma200": false,
     "pct_above_sma50": -3.1228184590466834,
-    "pct_above_sma100": -2.52166709406787,
-    "pct_above_sma200": -9.087414860664156,
+    "pct_above_sma100": -2.5216669839228434,
+    "pct_above_sma200": -9.087414501388336,
     "sma50_slope": 2.77,
     "sma200_slope": -2.59,
     "higher_low": true,
@@ -7216,7 +7209,7 @@
     "above_sma200": false,
     "pct_above_sma50": -11.86645274572764,
     "pct_above_sma100": -10.197363939527449,
-    "pct_above_sma200": -16.956096200825833,
+    "pct_above_sma200": -16.956095990703957,
     "sma50_slope": 2.3,
     "sma200_slope": 0.04,
     "higher_low": false,
@@ -7509,7 +7502,7 @@
     "above_sma200": false,
     "pct_above_sma50": -1.2338100397261687,
     "pct_above_sma100": -3.46037289180815,
-    "pct_above_sma200": -3.7101431521158745,
+    "pct_above_sma200": -3.710143182779091,
     "sma50_slope": -1.18,
     "sma200_slope": 0.11,
     "higher_low": false,
@@ -7585,7 +7578,7 @@
      "current": 922.765,
      "high": 1315.0,
      "low": 740.0,
-     "mean": 1061.7142,
+     "mean": 1057.8,
      "median": 1065.0
     },
     "konsens_firmen": [],
@@ -8417,7 +8410,7 @@
     "above_sma200": true,
     "pct_above_sma50": -5.110685975473905,
     "pct_above_sma100": -6.276434739167291,
-    "pct_above_sma200": 10.5139370714441,
+    "pct_above_sma200": 10.513936765791687,
     "sma50_slope": -2.56,
     "sma200_slope": 3.62,
     "higher_low": false,
@@ -8962,8 +8955,8 @@
     "above_sma100": false,
     "above_sma200": true,
     "pct_above_sma50": -5.9493672876237635,
-    "pct_above_sma100": -2.9792769052508605,
-    "pct_above_sma200": 6.705457040811091,
+    "pct_above_sma100": -2.979276982009782,
+    "pct_above_sma200": 6.705456808690791,
     "sma50_slope": 0.29,
     "sma200_slope": 3.24,
     "higher_low": true,
@@ -8982,7 +8975,7 @@
     "vol_breakout": 0.8
    },
    "flags": [],
-   "earnings_in": 25,
+   "earnings_in": 24,
    "analyst": {
     "upgrades_30d": 0,
     "downgrades_30d": 0,
@@ -9237,7 +9230,7 @@
     "above_sma200": true,
     "pct_above_sma50": -1.0625069394733289,
     "pct_above_sma100": 6.319650400092658,
-    "pct_above_sma200": 6.867275925794236,
+    "pct_above_sma200": 6.867275838622633,
     "sma50_slope": 4.62,
     "sma200_slope": 0.87,
     "higher_low": true,
@@ -9537,8 +9530,8 @@
     "above_sma100": true,
     "above_sma200": false,
     "pct_above_sma50": 0.01620853548209844,
-    "pct_above_sma100": 9.290949202216915,
-    "pct_above_sma200": -5.91651813146955,
+    "pct_above_sma100": 9.290949043261065,
+    "pct_above_sma200": -5.9165183081653305,
     "sma50_slope": 15.35,
     "sma200_slope": -2.1,
     "higher_low": true,
@@ -10659,7 +10652,7 @@
     "above_sma200": false,
     "pct_above_sma50": -8.679518820935073,
     "pct_above_sma100": -9.704062319575135,
-    "pct_above_sma200": -10.270340990665627,
+    "pct_above_sma200": -10.270340914528553,
     "sma50_slope": -3.19,
     "sma200_slope": -0.36,
     "higher_low": false,
@@ -10935,8 +10928,8 @@
     "above_sma100": false,
     "above_sma200": true,
     "pct_above_sma50": -6.078300134377324,
-    "pct_above_sma100": -4.114060517142571,
-    "pct_above_sma200": 2.380261139245987,
+    "pct_above_sma100": -4.114060441987988,
+    "pct_above_sma200": 2.3802612677655377,
     "sma50_slope": 3.29,
     "sma200_slope": 2.81,
     "higher_low": true,
@@ -11203,7 +11196,7 @@
     "above_sma200": true,
     "pct_above_sma50": 2.157567890726897,
     "pct_above_sma100": 6.5059376347112785,
-    "pct_above_sma200": 10.420374139260469,
+    "pct_above_sma200": 10.420374554292922,
     "sma50_slope": 2.49,
     "sma200_slope": 2.16,
     "higher_low": true,
@@ -11745,7 +11738,7 @@
     "above_sma200": false,
     "pct_above_sma50": -2.5928273081099684,
     "pct_above_sma100": 1.0524338408305356,
-    "pct_above_sma200": -7.074451091722933,
+    "pct_above_sma200": -7.074451190598873,
     "sma50_slope": 1.55,
     "sma200_slope": -1.45,
     "higher_low": true,
@@ -12299,7 +12292,7 @@
     "above_sma200": true,
     "pct_above_sma50": 7.165780730847349,
     "pct_above_sma100": 11.968307592986172,
-    "pct_above_sma200": 12.256576002171649,
+    "pct_above_sma200": 12.256575779222324,
     "sma50_slope": 5.94,
     "sma200_slope": 2.02,
     "higher_low": true,
@@ -12572,8 +12565,8 @@
     "above_sma100": false,
     "above_sma200": true,
     "pct_above_sma50": -0.22448807026235196,
-    "pct_above_sma100": -3.9533301679479327,
-    "pct_above_sma200": 1.3923090584015974,
+    "pct_above_sma100": -3.9533300028702145,
+    "pct_above_sma200": 1.3923092883571409,
     "sma50_slope": -1.82,
     "sma200_slope": 1.09,
     "higher_low": true,
@@ -12837,7 +12830,7 @@
     "above_sma200": true,
     "pct_above_sma50": -0.06256215345408211,
     "pct_above_sma100": -3.8269568256673048,
-    "pct_above_sma200": 1.8064369503182354,
+    "pct_above_sma200": 1.8064372262262651,
     "sma50_slope": -1.65,
     "sma200_slope": 1.2,
     "higher_low": true,
@@ -13122,8 +13115,8 @@
     "above_sma100": false,
     "above_sma200": false,
     "pct_above_sma50": -4.790481298899563,
-    "pct_above_sma100": -6.274005058941889,
-    "pct_above_sma200": -7.034287135556672,
+    "pct_above_sma100": -6.274005185069176,
+    "pct_above_sma200": -7.03428698044497,
     "sma50_slope": -3.66,
     "sma200_slope": 0.36,
     "higher_low": false,
@@ -13442,8 +13435,8 @@
      "current": 519.26,
      "high": 805.0,
      "low": 470.0,
-     "mean": 698.9231,
-     "median": 700.0
+     "mean": 701.3333,
+     "median": 705.0
     },
     "konsens_firmen": [],
     "merged_firmen": [],
@@ -13451,8 +13444,8 @@
    },
    "revision_note": null,
    "target": {
-    "target_abs": 700.0,
-    "upside_pct": 34.8,
+    "target_abs": 705.0,
+    "upside_pct": 35.8,
     "fresh": null,
     "n_analysts": 13,
     "empfehlung": "kaufen",
@@ -13480,7 +13473,7 @@
      "erwartetes KGV unter aktuellem",
      "positiver Free Cashflow",
      "Umsatzwachstum 10%",
-     "35% Abstand zum Kursziel"
+     "36% Abstand zum Kursziel"
     ]
    },
    "breakdown": {
@@ -13643,7 +13636,7 @@
       "label": "Kursziel-Abstand",
       "points": 5.0,
       "max": 5,
-      "detail": "35%"
+      "detail": "36%"
      }
     ]
    }
@@ -13968,7 +13961,7 @@
     "above_sma200": false,
     "pct_above_sma50": -15.049999047482487,
     "pct_above_sma100": -13.188320444096412,
-    "pct_above_sma200": -31.271811857569542,
+    "pct_above_sma200": -31.27181175303223,
     "sma50_slope": 6.41,
     "sma200_slope": -7.48,
     "higher_low": true,
@@ -14545,7 +14538,7 @@
     "above_sma200": true,
     "pct_above_sma50": 2.4097566139466675,
     "pct_above_sma100": 3.646231544374068,
-    "pct_above_sma200": 9.624173131583147,
+    "pct_above_sma200": 9.624173059841423,
     "sma50_slope": 0.22,
     "sma200_slope": 1.7,
     "higher_low": true,
@@ -16232,7 +16225,7 @@
     "above_sma200": true,
     "pct_above_sma50": -0.12057913763294792,
     "pct_above_sma100": -3.0586804540219226,
-    "pct_above_sma200": 1.551682109510999,
+    "pct_above_sma200": 1.551682333014659,
     "sma50_slope": -3.98,
     "sma200_slope": 1.39,
     "higher_low": false,
@@ -16510,8 +16503,8 @@
     "above_sma100": false,
     "above_sma200": true,
     "pct_above_sma50": 3.692001946946011,
-    "pct_above_sma100": -6.447937666096815,
-    "pct_above_sma200": 1.0466511610945473,
+    "pct_above_sma100": -6.447937581241847,
+    "pct_above_sma200": 1.0466509878528596,
     "sma50_slope": -7.65,
     "sma200_slope": 2.51,
     "higher_low": false,
@@ -17311,7 +17304,7 @@
     "above_sma100": true,
     "above_sma200": true,
     "pct_above_sma50": 22.157572423407746,
-    "pct_above_sma100": 23.400563520225592,
+    "pct_above_sma100": 23.400563643875238,
     "pct_above_sma200": 20.18394813938411,
     "sma50_slope": 4.03,
     "sma200_slope": 0.59,
@@ -17352,8 +17345,8 @@
      "current": 751.66,
      "high": 1000.0,
      "low": 580.0,
-     "mean": 791.62665,
-     "median": 796.0
+     "mean": 790.2688,
+     "median": 790.0
     },
     "konsens_firmen": [],
     "merged_firmen": [
@@ -17402,8 +17395,8 @@
    },
    "revision_note": null,
    "target": {
-    "target_abs": 796.0,
-    "upside_pct": 5.9,
+    "target_abs": 790.0,
+    "upside_pct": 5.1,
     "fresh": null,
     "n_analysts": 56,
     "empfehlung": "klar kaufen",
@@ -17418,7 +17411,7 @@
    "scores": {
     "turnaround": 68.1,
     "momentum": 72.1,
-    "value": 85.7
+    "value": 85.5
    },
    "why": {
     "turnaround": [
@@ -17595,9 +17588,9 @@
      },
      {
       "label": "Kursziel-Abstand",
-      "points": 1.5,
+      "points": 1.3,
       "max": 5,
-      "detail": "6%"
+      "detail": "5%"
      }
     ]
    }
@@ -17883,7 +17876,7 @@
     "above_sma200": true,
     "pct_above_sma50": 18.75616700709548,
     "pct_above_sma100": 14.969045697033545,
-    "pct_above_sma200": 61.231349546441734,
+    "pct_above_sma200": 61.231349470725796,
     "sma50_slope": -4.1,
     "sma200_slope": 9.8,
     "higher_low": true,
@@ -17948,10 +17941,10 @@
      }
     ],
     "consensus": {
-     "kaufen_pct": 85,
-     "halten_pct": 15,
+     "kaufen_pct": 84,
+     "halten_pct": 16,
      "verkaufen_pct": 0,
-     "total": 20,
+     "total": 19,
      "unclassified": 0
     },
     "quelle": "Einzelratings",
@@ -17974,10 +17967,10 @@
     "n_analysts": 42,
     "empfehlung": "klar kaufen",
     "rec_breakdown": {
-     "kaufen_pct": 85,
-     "halten_pct": 15,
+     "kaufen_pct": 84,
+     "halten_pct": 16,
      "verkaufen_pct": 0,
-     "total": 20,
+     "total": 19,
      "unclassified": 0
     }
    },
@@ -18187,7 +18180,7 @@
     "above_sma100": true,
     "above_sma200": true,
     "pct_above_sma50": 8.575007147433201,
-    "pct_above_sma100": 17.80710055071242,
+    "pct_above_sma100": 17.807100714820614,
     "pct_above_sma200": 19.869539783362967,
     "sma50_slope": 11.27,
     "sma200_slope": 0.3,
@@ -18793,7 +18786,7 @@
     "above_sma200": true,
     "pct_above_sma50": 14.938674127845996,
     "pct_above_sma100": 15.68924968055092,
-    "pct_above_sma200": 63.73996156222263,
+    "pct_above_sma200": 63.73996146772307,
     "sma50_slope": -1.63,
     "sma200_slope": 13.01,
     "higher_low": true,
@@ -18812,7 +18805,7 @@
     "vol_breakout": 0.82
    },
    "flags": [],
-   "earnings_in": 4,
+   "earnings_in": 3,
    "analyst": {
     "upgrades_30d": 0,
     "downgrades_30d": 0,
@@ -19111,7 +19104,7 @@
    "flags": [
     "200-Tage-Linie faellt steil"
    ],
-   "earnings_in": 24,
+   "earnings_in": 23,
    "analyst": {
     "upgrades_30d": 0,
     "downgrades_30d": 2,
@@ -19380,7 +19373,7 @@
     "above_sma200": true,
     "pct_above_sma50": 4.298177626755995,
     "pct_above_sma100": 5.854897397153258,
-    "pct_above_sma200": 13.02824802101008,
+    "pct_above_sma200": 13.028248237539275,
     "sma50_slope": 3.78,
     "sma200_slope": 1.93,
     "higher_low": true,
@@ -19428,20 +19421,6 @@
       "action": "reit",
       "to_grade": "Buy",
       "from_grade": "Buy"
-     },
-     {
-      "date": "2026-08-27",
-      "firm": "Citigroup",
-      "action": "main",
-      "to_grade": "Buy",
-      "from_grade": "Buy"
-     },
-     {
-      "date": "2026-08-27",
-      "firm": "Mizuho",
-      "action": "main",
-      "to_grade": "Outperform",
-      "from_grade": "Outperform"
      }
     ],
     "consensus": {
@@ -19684,7 +19663,7 @@
     "above_sma200": false,
     "pct_above_sma50": 1.2472086306759111,
     "pct_above_sma100": -10.428878304472,
-    "pct_above_sma200": -2.210574109611496,
+    "pct_above_sma200": -2.2105743854109794,
     "sma50_slope": -9.05,
     "sma200_slope": 1.18,
     "higher_low": false,
@@ -19949,7 +19928,7 @@
     "above_sma200": false,
     "pct_above_sma50": -14.166462365861499,
     "pct_above_sma100": -17.75751226155693,
-    "pct_above_sma200": -12.816696426203212,
+    "pct_above_sma200": -12.816696560053131,
     "sma50_slope": -7.26,
     "sma200_slope": 2.29,
     "higher_low": false,
@@ -21115,7 +21094,7 @@
     "above_sma200": false,
     "pct_above_sma50": -14.244218310126088,
     "pct_above_sma100": -6.23611969025778,
-    "pct_above_sma200": -1.1251533289069249,
+    "pct_above_sma200": -1.1251536968005516,
     "sma50_slope": 5.15,
     "sma200_slope": 0.91,
     "higher_low": true,
@@ -21190,9 +21169,9 @@
     "price_targets": {
      "current": 101.37,
      "high": 150.0,
-     "low": 109.0,
-     "mean": 117.28571,
-     "median": 113.0
+     "low": 96.0,
+     "mean": 113.92857,
+     "median": 111.0
     },
     "konsens_firmen": [],
     "merged_firmen": [],
@@ -21200,8 +21179,8 @@
    },
    "revision_note": "Analysten ↑2 in 30T (UBS, 2026-09-24)",
    "target": {
-    "target_abs": 113.0,
-    "upside_pct": 11.5,
+    "target_abs": 111.0,
+    "upside_pct": 9.5,
     "fresh": true,
     "n_analysts": 14,
     "empfehlung": "halten",
@@ -21216,7 +21195,7 @@
    "scores": {
     "turnaround": 46.8,
     "momentum": 6.5,
-    "value": 81.2
+    "value": 80.7
    },
    "why": {
     "turnaround": [
@@ -21232,7 +21211,7 @@
      "positiver Free Cashflow",
      "Umsatzwachstum 12%",
      "Analysten zuletzt netto 2x hochgestuft (30 Tage)",
-     "11% Abstand zum Kursziel"
+     "9% Abstand zum Kursziel"
     ]
    },
    "breakdown": {
@@ -21393,9 +21372,9 @@
      },
      {
       "label": "Kursziel-Abstand",
-      "points": 2.9,
+      "points": 2.4,
       "max": 5,
-      "detail": "11%"
+      "detail": "9%"
      }
     ]
    }
@@ -21417,7 +21396,7 @@
     "above_sma200": false,
     "pct_above_sma50": -11.844457160116562,
     "pct_above_sma100": -8.357862275706463,
-    "pct_above_sma200": -7.396834599359181,
+    "pct_above_sma200": -7.396834628747695,
     "sma50_slope": -0.52,
     "sma200_slope": 1.67,
     "higher_low": true,
@@ -21744,10 +21723,10 @@
     "quelle": "Einzelratings",
     "price_targets": {
      "current": 77.57,
-     "high": 150.20113,
-     "low": 85.1355,
-     "mean": 114.47248,
-     "median": 114.682526
+     "high": 150.19664,
+     "low": 85.132965,
+     "mean": 114.46907,
+     "median": 114.67911
     },
     "konsens_firmen": [],
     "merged_firmen": [],
@@ -21969,8 +21948,8 @@
     "above_sma100": false,
     "above_sma200": false,
     "pct_above_sma50": -5.978309024210393,
-    "pct_above_sma100": -7.823439807401577,
-    "pct_above_sma200": -11.286388778690505,
+    "pct_above_sma100": -7.823439706611279,
+    "pct_above_sma200": -11.286387938455423,
     "sma50_slope": -1.11,
     "sma200_slope": -0.42,
     "higher_low": false,
@@ -22535,7 +22514,7 @@
     "above_sma200": true,
     "pct_above_sma50": -2.911146203962456,
     "pct_above_sma100": 8.957690732252255,
-    "pct_above_sma200": 9.65258484447018,
+    "pct_above_sma200": 9.652584969470347,
     "sma50_slope": 6.05,
     "sma200_slope": -1.65,
     "higher_low": true,
@@ -22822,7 +22801,7 @@
     "above_sma200": true,
     "pct_above_sma50": 19.058256927391515,
     "pct_above_sma100": 7.54583347591129,
-    "pct_above_sma200": 20.47394309223469,
+    "pct_above_sma200": 20.47394317447424,
     "sma50_slope": -2.25,
     "sma200_slope": 0.89,
     "higher_low": true,
@@ -23109,8 +23088,8 @@
     "above_sma100": true,
     "above_sma200": true,
     "pct_above_sma50": 1.498207358664616,
-    "pct_above_sma100": 10.854095447714386,
-    "pct_above_sma200": 7.345967465620262,
+    "pct_above_sma100": 10.854095542892118,
+    "pct_above_sma200": 7.3459673763712985,
     "sma50_slope": 9.01,
     "sma200_slope": 1.1,
     "higher_low": true,
@@ -23386,7 +23365,7 @@
     "above_sma200": false,
     "pct_above_sma50": -8.257914439072723,
     "pct_above_sma100": -1.422776475076304,
-    "pct_above_sma200": -3.1664815704303573,
+    "pct_above_sma200": -3.166481490623607,
     "sma50_slope": 4.74,
     "sma200_slope": -1.4,
     "higher_low": true,
@@ -23426,8 +23405,8 @@
      "current": 358.56,
      "high": 550.0,
      "low": 335.0,
-     "mean": 445.2,
-     "median": 424.0
+     "mean": 439.42856,
+     "median": 422.0
     },
     "konsens_firmen": [],
     "merged_firmen": [],
@@ -23435,8 +23414,8 @@
    },
    "revision_note": null,
    "target": {
-    "target_abs": 424.0,
-    "upside_pct": 18.3,
+    "target_abs": 422.0,
+    "upside_pct": 17.7,
     "fresh": null,
     "n_analysts": 15,
     "empfehlung": "kaufen",
@@ -23451,7 +23430,7 @@
    "scores": {
     "turnaround": 51.0,
     "momentum": 0.0,
-    "value": 73.3
+    "value": 73.1
    },
    "why": {
     "turnaround": [
@@ -23626,7 +23605,7 @@
      },
      {
       "label": "Kursziel-Abstand",
-      "points": 4.6,
+      "points": 4.4,
       "max": 5,
       "detail": "18%"
      }
@@ -23650,7 +23629,7 @@
     "above_sma200": true,
     "pct_above_sma50": -0.620705268980215,
     "pct_above_sma100": 2.4366951549458893,
-    "pct_above_sma200": 9.411823948549891,
+    "pct_above_sma200": 9.411824064589712,
     "sma50_slope": 1.54,
     "sma200_slope": 2.93,
     "higher_low": true,
@@ -23913,7 +23892,7 @@
     "above_sma100": false,
     "above_sma200": false,
     "pct_above_sma50": -7.915464469445754,
-    "pct_above_sma100": -7.466977787444851,
+    "pct_above_sma100": -7.4669776497142575,
     "pct_above_sma200": -2.795918081825177,
     "sma50_slope": -1.31,
     "sma200_slope": 1.7,
@@ -23962,7 +23941,7 @@
      "current": 94.86,
      "high": 143.0,
      "low": 81.0,
-     "mean": 112.22581,
+     "mean": 111.96667,
      "median": 112.0
     },
     "konsens_firmen": [],
@@ -24207,9 +24186,9 @@
    "flags": [],
    "earnings_in": null,
    "analyst": {
-    "upgrades_30d": 5,
+    "upgrades_30d": 4,
     "downgrades_30d": 0,
-    "net_30d": 5,
+    "net_30d": 4,
     "last_action": "up",
     "last_firm": "HSBC",
     "last_date": "2026-09-25",
@@ -24241,13 +24220,6 @@
       "action": "up",
       "to_grade": "Overweight",
       "from_grade": "Equal-Weight"
-     },
-     {
-      "date": "2026-08-27",
-      "firm": "Mizuho",
-      "action": "main",
-      "to_grade": "Outperform",
-      "from_grade": "Outperform"
      }
     ],
     "consensus": {
@@ -24262,17 +24234,17 @@
      "current": 425.76,
      "high": 700.0,
      "low": 414.77,
-     "mean": 553.62616,
-     "median": 561.875
+     "mean": 553.7712,
+     "median": 563.75
     },
     "konsens_firmen": [],
     "merged_firmen": [],
     "merged_ziele": {}
    },
-   "revision_note": "Analysten ↑5 in 30T (HSBC, 2026-09-25)",
+   "revision_note": "Analysten ↑4 in 30T (HSBC, 2026-09-25)",
    "target": {
-    "target_abs": 561.88,
-    "upside_pct": 32.0,
+    "target_abs": 563.75,
+    "upside_pct": 32.4,
     "fresh": true,
     "n_analysts": 26,
     "empfehlung": "klar kaufen",
@@ -24298,7 +24270,7 @@
      "erwartetes KGV unter aktuellem",
      "positiver Free Cashflow",
      "Umsatzwachstum 42%",
-     "Analysten zuletzt netto 5x hochgestuft (30 Tage)",
+     "Analysten zuletzt netto 4x hochgestuft (30 Tage)",
      "32% Abstand zum Kursziel"
     ]
    },
@@ -24456,7 +24428,7 @@
       "label": "Analysten-Revisionen",
       "points": 10.0,
       "max": 10,
-      "detail": "+5"
+      "detail": "+4"
      },
      {
       "label": "Kursziel-Abstand",
@@ -24778,7 +24750,7 @@
     "above_sma200": false,
     "pct_above_sma50": -7.165575902728294,
     "pct_above_sma100": -8.692376030179606,
-    "pct_above_sma200": -13.014772297051847,
+    "pct_above_sma200": -13.01477226215656,
     "sma50_slope": -1.09,
     "sma200_slope": -1.56,
     "higher_low": false,
@@ -25884,7 +25856,7 @@
     "above_sma200": true,
     "pct_above_sma50": 2.7152806983511635,
     "pct_above_sma100": -2.5095596059211744,
-    "pct_above_sma200": 13.719162784158634,
+    "pct_above_sma200": 13.719162855121825,
     "sma50_slope": -5.29,
     "sma200_slope": 4.28,
     "higher_low": false,
@@ -27263,8 +27235,8 @@
     "above_sma100": false,
     "above_sma200": false,
     "pct_above_sma50": -8.385076137945891,
-    "pct_above_sma100": -9.839085378619373,
-    "pct_above_sma200": -9.350159962581806,
+    "pct_above_sma100": -9.839085467472197,
+    "pct_above_sma200": -9.35016000749136,
     "sma50_slope": -3.01,
     "sma200_slope": -0.49,
     "higher_low": false,
@@ -27833,7 +27805,7 @@
     "above_sma200": false,
     "pct_above_sma50": -6.958877216684356,
     "pct_above_sma100": -6.247239443639662,
-    "pct_above_sma200": -7.227182130930199,
+    "pct_above_sma200": -7.227181875831068,
     "sma50_slope": -3.09,
     "sma200_slope": -1.11,
     "higher_low": true,
@@ -28383,7 +28355,7 @@
     "above_sma200": true,
     "pct_above_sma50": -0.9190516560314665,
     "pct_above_sma100": -6.4776742631933555,
-    "pct_above_sma200": 4.2994681459867845,
+    "pct_above_sma200": 4.299467782317268,
     "sma50_slope": -7.48,
     "sma200_slope": 3.11,
     "higher_low": false,
@@ -28648,7 +28620,7 @@
     "above_sma200": true,
     "pct_above_sma50": 9.68057134591569,
     "pct_above_sma100": 21.651946262425238,
-    "pct_above_sma200": 16.802299902536568,
+    "pct_above_sma200": 16.802299680149304,
     "sma50_slope": 19.49,
     "sma200_slope": 0.59,
     "higher_low": true,
@@ -28951,8 +28923,8 @@
     "above_sma100": true,
     "above_sma200": true,
     "pct_above_sma50": 2.064567756275437,
-    "pct_above_sma100": 7.501066021907143,
-    "pct_above_sma200": 11.943319606357349,
+    "pct_above_sma100": 7.501065935657247,
+    "pct_above_sma200": 11.943319793408037,
     "sma50_slope": 7.88,
     "sma200_slope": 3.5,
     "higher_low": true,
@@ -29250,7 +29222,7 @@
     "above_sma200": true,
     "pct_above_sma50": 2.5732712748007147,
     "pct_above_sma100": 4.093674241822964,
-    "pct_above_sma200": 2.6211890236051527,
+    "pct_above_sma200": 2.6211889857596704,
     "sma50_slope": 3.04,
     "sma200_slope": 0.09,
     "higher_low": true,
@@ -29516,8 +29488,8 @@
     "above_sma100": false,
     "above_sma200": false,
     "pct_above_sma50": -8.060631634490523,
-    "pct_above_sma100": -8.134814531601087,
-    "pct_above_sma200": -1.6797833491383751,
+    "pct_above_sma100": -8.134814421474712,
+    "pct_above_sma200": -1.6797834752848573,
     "sma50_slope": -2.77,
     "sma200_slope": 2.07,
     "higher_low": true,
@@ -29570,9 +29542,9 @@
     "quelle": "Einzelratings",
     "price_targets": {
      "current": 935.45,
-     "high": 1325.0,
+     "high": 1300.0,
      "low": 730.0,
-     "mean": 1134.15,
+     "mean": 1126.65,
      "median": 1150.0
     },
     "konsens_firmen": [],
@@ -29796,7 +29768,7 @@
     "above_sma200": false,
     "pct_above_sma50": -9.934916025478625,
     "pct_above_sma100": -9.473408022666508,
-    "pct_above_sma200": -12.77480917029722,
+    "pct_above_sma200": -12.774809209892169,
     "sma50_slope": -3.67,
     "sma200_slope": -1.06,
     "higher_low": false,
@@ -30065,8 +30037,8 @@
     "above_sma100": false,
     "above_sma200": false,
     "pct_above_sma50": -2.018379003071058,
-    "pct_above_sma100": -7.988692783602569,
-    "pct_above_sma200": -11.498406167611918,
+    "pct_above_sma100": -7.988692669033693,
+    "pct_above_sma200": -11.498406432600072,
     "sma50_slope": -5.3,
     "sma200_slope": -2.38,
     "higher_low": true,
@@ -30087,7 +30059,7 @@
    "flags": [
     "200-Tage-Linie faellt steil"
    ],
-   "earnings_in": 25,
+   "earnings_in": 24,
    "analyst": {
     "upgrades_30d": 0,
     "downgrades_30d": 0,
@@ -30105,10 +30077,10 @@
      }
     ],
     "consensus": {
-     "kaufen_pct": 69,
-     "halten_pct": 25,
-     "verkaufen_pct": 6,
-     "total": 16,
+     "kaufen_pct": 67,
+     "halten_pct": 27,
+     "verkaufen_pct": 7,
+     "total": 15,
      "unclassified": 0
     },
     "quelle": "Einzelratings",
@@ -30131,10 +30103,10 @@
     "n_analysts": 23,
     "empfehlung": "kaufen",
     "rec_breakdown": {
-     "kaufen_pct": 69,
-     "halten_pct": 25,
-     "verkaufen_pct": 6,
-     "total": 16,
+     "kaufen_pct": 67,
+     "halten_pct": 27,
+     "verkaufen_pct": 7,
+     "total": 15,
      "unclassified": 0
     }
    },
@@ -30338,8 +30310,8 @@
     "above_sma100": true,
     "above_sma200": true,
     "pct_above_sma50": 2.6268850027763024,
-    "pct_above_sma100": 8.30253405128396,
-    "pct_above_sma200": 13.833767322791136,
+    "pct_above_sma100": 8.302533985294346,
+    "pct_above_sma200": 13.833767359242222,
     "sma50_slope": 3.12,
     "sma200_slope": 3.12,
     "higher_low": true,
@@ -30620,7 +30592,7 @@
     "above_sma200": true,
     "pct_above_sma50": -2.9104239238988416,
     "pct_above_sma100": 2.4410666059177633,
-    "pct_above_sma200": 7.359867000017495,
+    "pct_above_sma200": 7.3598666924183265,
     "sma50_slope": 2.01,
     "sma200_slope": 1.51,
     "higher_low": true,
@@ -30660,7 +30632,7 @@
      "current": 343.06,
      "high": 436.0,
      "low": 305.0,
-     "mean": 374.2381,
+     "mean": 375.42856,
      "median": 372.0
     },
     "konsens_firmen": [],
@@ -30884,8 +30856,8 @@
     "above_sma100": true,
     "above_sma200": true,
     "pct_above_sma50": 0.8652790853641124,
-    "pct_above_sma100": 4.980571524558397,
-    "pct_above_sma200": 11.593242758517697,
+    "pct_above_sma100": 4.980571333047301,
+    "pct_above_sma200": 11.59324183882906,
     "sma50_slope": 2.98,
     "sma200_slope": 2.38,
     "higher_low": true,
@@ -31152,7 +31124,7 @@
     "above_sma200": false,
     "pct_above_sma50": -9.490855662262787,
     "pct_above_sma100": -11.752356704442658,
-    "pct_above_sma200": -17.9451481637552,
+    "pct_above_sma200": -17.945148120314435,
     "sma50_slope": -2.9,
     "sma200_slope": -1.62,
     "higher_low": false,
@@ -31228,7 +31200,7 @@
      "current": 236.5,
      "high": 390.0,
      "low": 250.0,
-     "mean": 299.8,
+     "mean": 300.27585,
      "median": 295.0
     },
     "konsens_firmen": [],
@@ -31451,7 +31423,7 @@
     "above_sma200": true,
     "pct_above_sma50": -2.012819133572008,
     "pct_above_sma100": 3.6723282107093302,
-    "pct_above_sma200": 6.3410519224215145,
+    "pct_above_sma200": 6.341051718879442,
     "sma50_slope": 1.75,
     "sma200_slope": 0.05,
     "higher_low": true,
@@ -31732,7 +31704,7 @@
     "above_sma200": true,
     "pct_above_sma50": 6.487853481809935,
     "pct_above_sma100": 15.42732828119071,
-    "pct_above_sma200": 23.780782295614024,
+    "pct_above_sma200": 23.780781942052933,
     "sma50_slope": 7.45,
     "sma200_slope": 4.57,
     "higher_low": true,
@@ -32028,7 +32000,7 @@
     "above_sma200": false,
     "pct_above_sma50": -9.275742989823698,
     "pct_above_sma100": -13.25694439251498,
-    "pct_above_sma200": -26.454051212157502,
+    "pct_above_sma200": -26.454050692707142,
     "sma50_slope": -5.22,
     "sma200_slope": -4.86,
     "higher_low": false,
@@ -32049,7 +32021,7 @@
    "flags": [
     "200-Tage-Linie faellt steil"
    ],
-   "earnings_in": 5,
+   "earnings_in": 4,
    "analyst": {
     "upgrades_30d": 2,
     "downgrades_30d": 2,
@@ -32329,7 +32301,7 @@
     "above_sma200": true,
     "pct_above_sma50": 0.253358099683032,
     "pct_above_sma100": 0.3958380958084984,
-    "pct_above_sma200": 0.14695687790247103,
+    "pct_above_sma200": 0.14695755815861133,
     "sma50_slope": -0.54,
     "sma200_slope": 0.17,
     "higher_low": true,
@@ -32888,8 +32860,8 @@
     "above_sma100": true,
     "above_sma200": true,
     "pct_above_sma50": -2.320535653745337,
-    "pct_above_sma100": 6.494328397815985,
-    "pct_above_sma200": 14.851327343621513,
+    "pct_above_sma100": 6.4943285884843105,
+    "pct_above_sma200": 14.851327676272552,
     "sma50_slope": 4.59,
     "sma200_slope": 2.81,
     "higher_low": true,
@@ -33168,7 +33140,7 @@
     "above_sma200": true,
     "pct_above_sma50": -5.235318744156158,
     "pct_above_sma100": -5.301573645280211,
-    "pct_above_sma200": 7.14790054506993,
+    "pct_above_sma200": 7.147900684623165,
     "sma50_slope": -3.18,
     "sma200_slope": 1.95,
     "higher_low": false,
@@ -33432,7 +33404,7 @@
     "above_sma200": true,
     "pct_above_sma50": -0.10571827305684289,
     "pct_above_sma100": 5.047050847608836,
-    "pct_above_sma200": 9.386192924950754,
+    "pct_above_sma200": 9.386192974647688,
     "sma50_slope": 3.05,
     "sma200_slope": 1.3,
     "higher_low": true,
@@ -33973,7 +33945,7 @@
     "above_sma200": false,
     "pct_above_sma50": -1.162142536023858,
     "pct_above_sma100": -5.662287964583301,
-    "pct_above_sma200": -8.574930914874734,
+    "pct_above_sma200": -8.57493118063488,
     "sma50_slope": -2.51,
     "sma200_slope": 0.07,
     "higher_low": false,
@@ -35074,14 +35046,13 @@
     "last_date": null,
     "actions": [],
     "consensus": {
-     "kaufen_pct": null,
-     "halten_pct": null,
-     "verkaufen_pct": null,
-     "total": 0,
-     "unclassified": 0,
-     "firmen": []
+     "kaufen_pct": 45,
+     "halten_pct": 30,
+     "verkaufen_pct": 25,
+     "total": 20,
+     "unclassified": 0
     },
-    "quelle": "keine",
+    "quelle": "Aggregat",
     "price_targets": {
      "current": 50.42,
      "high": 63.0,
@@ -35101,12 +35072,11 @@
     "n_analysts": 19,
     "empfehlung": "kaufen",
     "rec_breakdown": {
-     "kaufen_pct": null,
-     "halten_pct": null,
-     "verkaufen_pct": null,
-     "total": 0,
-     "unclassified": 0,
-     "firmen": []
+     "kaufen_pct": 45,
+     "halten_pct": 30,
+     "verkaufen_pct": 25,
+     "total": 20,
+     "unclassified": 0
     }
    },
    "scores": {
@@ -35598,7 +35568,7 @@
     "vol_breakout": 1.11
    },
    "flags": [],
-   "earnings_in": null,
+   "earnings_in": 30,
    "analyst": {
     "upgrades_30d": 0,
     "downgrades_30d": 0,
@@ -36407,7 +36377,7 @@
      "current": 42.19,
      "high": 45.0,
      "low": 31.6,
-     "mean": 41.26154,
+     "mean": 41.41538,
      "median": 42.0
     },
     "konsens_firmen": [],
@@ -37182,7 +37152,7 @@
     "vol_breakout": 1.0
    },
    "flags": [],
-   "earnings_in": null,
+   "earnings_in": 30,
    "analyst": {
     "upgrades_30d": 0,
     "downgrades_30d": 0,
@@ -37447,7 +37417,7 @@
     "vol_breakout": 0.86
    },
    "flags": [],
-   "earnings_in": 24,
+   "earnings_in": 23,
    "analyst": {
     "upgrades_30d": 0,
     "downgrades_30d": 0,
@@ -39587,8 +39557,8 @@
      "current": 56.71,
      "high": 124.0,
      "low": 50.0,
-     "mean": 86.59091,
-     "median": 90.5
+     "mean": 86.73913,
+     "median": 90.0
     },
     "konsens_firmen": [],
     "merged_firmen": [],
@@ -39596,8 +39566,8 @@
    },
    "revision_note": null,
    "target": {
-    "target_abs": 90.5,
-    "upside_pct": 59.6,
+    "target_abs": 90.0,
+    "upside_pct": 58.7,
     "fresh": null,
     "n_analysts": 22,
     "empfehlung": "kaufen",
@@ -39628,7 +39598,7 @@
      "erwartetes KGV unter aktuellem",
      "positiver Free Cashflow",
      "Umsatzwachstum 13%",
-     "60% Abstand zum Kursziel"
+     "59% Abstand zum Kursziel"
     ]
    },
    "breakdown": {
@@ -39791,7 +39761,7 @@
       "label": "Kursziel-Abstand",
       "points": 5.0,
       "max": 5,
-      "detail": "60%"
+      "detail": "59%"
      }
     ]
    }
@@ -41148,7 +41118,7 @@
     "vol_breakout": 0.86
    },
    "flags": [],
-   "earnings_in": null,
+   "earnings_in": 30,
    "analyst": {
     "upgrades_30d": 0,
     "downgrades_30d": 0,
@@ -42218,7 +42188,7 @@
     "vol_breakout": 0.76
    },
    "flags": [],
-   "earnings_in": 25,
+   "earnings_in": 24,
    "analyst": {
     "upgrades_30d": 0,
     "downgrades_30d": 0,
@@ -44864,7 +44834,7 @@
     "above_sma200": true,
     "pct_above_sma50": 4.769871914994073,
     "pct_above_sma100": 9.047142343943104,
-    "pct_above_sma200": 14.459375028428333,
+    "pct_above_sma200": 14.459374968996585,
     "sma50_slope": -0.25,
     "sma200_slope": 1.69,
     "higher_low": true,
@@ -45208,10 +45178,10 @@
     "quelle": "Einzelratings",
     "price_targets": {
      "current": 109.74,
-     "high": 238.11018,
-     "low": 95.158585,
-     "mean": 185.18456,
-     "median": 187.65997
+     "high": 238.10309,
+     "low": 95.15575,
+     "mean": 185.19698,
+     "median": 187.65437
     },
     "konsens_firmen": [],
     "merged_firmen": [],
@@ -45219,7 +45189,7 @@
    },
    "revision_note": null,
    "target": {
-    "target_abs": 187.66,
+    "target_abs": 187.65,
     "upside_pct": 71.0,
     "fresh": false,
     "n_analysts": 39,
@@ -46005,10 +45975,10 @@
     "quelle": "Aggregat",
     "price_targets": {
      "current": 172.3,
-     "high": 183.1452,
-     "low": 145.10785,
-     "mean": 166.90524,
-     "median": 172.46269
+     "high": 183.1193,
+     "low": 145.08733,
+     "mean": 166.88164,
+     "median": 172.4383
     },
     "konsens_firmen": [],
     "merged_firmen": [],
@@ -46016,7 +45986,7 @@
    },
    "revision_note": null,
    "target": {
-    "target_abs": 172.46,
+    "target_abs": 172.44,
     "upside_pct": 0.1,
     "fresh": null,
     "n_analysts": 3,
@@ -46269,10 +46239,10 @@
     "quelle": "Aggregat",
     "price_targets": {
      "current": 93.48,
-     "high": 99.66263,
-     "low": 76.4757,
-     "mean": 90.36589,
-     "median": 94.959335
+     "high": 99.64853,
+     "low": 76.46488,
+     "mean": 90.3531,
+     "median": 94.94589
     },
     "konsens_firmen": [],
     "merged_firmen": [],
@@ -46280,7 +46250,7 @@
    },
    "revision_note": null,
    "target": {
-    "target_abs": 94.96,
+    "target_abs": 94.95,
     "upside_pct": 1.6,
     "fresh": null,
     "n_analysts": 3,
@@ -46796,7 +46766,7 @@
     "above_sma200": false,
     "pct_above_sma50": -3.4573464584520375,
     "pct_above_sma100": -6.072230743116281,
-    "pct_above_sma200": -4.297215650575703,
+    "pct_above_sma200": -4.297215524963994,
     "sma50_slope": -2.98,
     "sma200_slope": 0.32,
     "higher_low": false,
@@ -47328,7 +47298,7 @@
     "above_sma200": true,
     "pct_above_sma50": -2.874771108346541,
     "pct_above_sma100": -0.9674624207460791,
-    "pct_above_sma200": 7.719502587490701,
+    "pct_above_sma200": 7.7195029381722735,
     "sma50_slope": -0.26,
     "sma200_slope": 2.87,
     "higher_low": true,
@@ -47366,10 +47336,10 @@
     "quelle": "Aggregat",
     "price_targets": {
      "current": 113.6,
-     "high": 127.4595,
-     "low": 103.27675,
-     "mean": 119.32056,
-     "median": 127.2254
+     "high": 127.44147,
+     "low": 103.26213,
+     "mean": 119.30367,
+     "median": 127.207405
     },
     "konsens_firmen": [],
     "merged_firmen": [],
@@ -47377,7 +47347,7 @@
    },
    "revision_note": null,
    "target": {
-    "target_abs": 127.23,
+    "target_abs": 127.21,
     "upside_pct": 12.0,
     "fresh": null,
     "n_analysts": 3,
@@ -47592,8 +47562,8 @@
     "above_sma100": true,
     "above_sma200": true,
     "pct_above_sma50": -1.2721163858313012,
-    "pct_above_sma100": 3.5229857842675516,
-    "pct_above_sma200": 10.635842225022806,
+    "pct_above_sma100": 3.522985956729663,
+    "pct_above_sma200": 10.63584276670495,
     "sma50_slope": 8.28,
     "sma200_slope": 4.18,
     "higher_low": true,
@@ -47631,10 +47601,10 @@
     "quelle": "Aggregat",
     "price_targets": {
      "current": 47.41,
-     "high": 56.502583,
-     "low": 43.593605,
-     "mean": 48.183746,
-     "median": 46.319397
+     "high": 56.494587,
+     "low": 43.587437,
+     "mean": 48.17693,
+     "median": 46.312843
     },
     "konsens_firmen": [],
     "merged_firmen": [],
@@ -47642,7 +47612,7 @@
    },
    "revision_note": null,
    "target": {
-    "target_abs": 46.32,
+    "target_abs": 46.31,
     "upside_pct": -2.3,
     "fresh": null,
     "n_analysts": 4,
@@ -47858,7 +47828,7 @@
     "above_sma200": true,
     "pct_above_sma50": 18.32974595648387,
     "pct_above_sma100": 34.52315510415349,
-    "pct_above_sma200": 99.34801686095749,
+    "pct_above_sma200": 99.34801667243704,
     "sma50_slope": 10.08,
     "sma200_slope": 16.44,
     "higher_low": true,
@@ -47923,10 +47893,10 @@
      }
     ],
     "consensus": {
-     "kaufen_pct": 76,
-     "halten_pct": 24,
+     "kaufen_pct": 72,
+     "halten_pct": 28,
      "verkaufen_pct": 0,
-     "total": 21,
+     "total": 18,
      "unclassified": 0
     },
     "quelle": "Einzelratings",
@@ -47949,10 +47919,10 @@
     "n_analysts": 25,
     "empfehlung": "kaufen",
     "rec_breakdown": {
-     "kaufen_pct": 76,
-     "halten_pct": 24,
+     "kaufen_pct": 72,
+     "halten_pct": 28,
      "verkaufen_pct": 0,
-     "total": 21,
+     "total": 18,
      "unclassified": 0
     }
    },
@@ -48163,7 +48133,7 @@
     "above_sma200": false,
     "pct_above_sma50": -8.375171120764069,
     "pct_above_sma100": -11.518286974082647,
-    "pct_above_sma200": -8.490849762746544,
+    "pct_above_sma200": -8.490849660230538,
     "sma50_slope": -4.0,
     "sma200_slope": 0.53,
     "higher_low": false,
@@ -48192,8 +48162,8 @@
     "last_date": null,
     "actions": [],
     "consensus": {
-     "kaufen_pct": 57,
-     "halten_pct": 39,
+     "kaufen_pct": 61,
+     "halten_pct": 35,
      "verkaufen_pct": 4,
      "total": 23,
      "unclassified": 0
@@ -48201,10 +48171,10 @@
     "quelle": "Aggregat",
     "price_targets": {
      "current": 46.74,
-     "high": 59.39812,
-     "low": 45.126247,
-     "mean": 51.541836,
-     "median": 50.821484
+     "high": 59.389713,
+     "low": 45.11986,
+     "mean": 51.839684,
+     "median": 51.424576
     },
     "konsens_firmen": [],
     "merged_firmen": [],
@@ -48212,14 +48182,14 @@
    },
    "revision_note": null,
    "target": {
-    "target_abs": 50.82,
-    "upside_pct": 8.7,
+    "target_abs": 51.42,
+    "upside_pct": 10.0,
     "fresh": null,
     "n_analysts": 4,
     "empfehlung": "kaufen",
     "rec_breakdown": {
-     "kaufen_pct": 57,
-     "halten_pct": 39,
+     "kaufen_pct": 61,
+     "halten_pct": 35,
      "verkaufen_pct": 4,
      "total": 23,
      "unclassified": 0
@@ -48228,7 +48198,7 @@
    "scores": {
     "turnaround": 14.7,
     "momentum": 1.3,
-    "value": 44.8
+    "value": 45.1
    },
    "why": {
     "turnaround": [
@@ -48240,7 +48210,7 @@
     "value": [
      "erwartetes KGV unter aktuellem",
      "Umsatzwachstum 97%",
-     "9% Abstand zum Kursziel"
+     "10% Abstand zum Kursziel"
     ]
    },
    "breakdown": {
@@ -48401,9 +48371,9 @@
      },
      {
       "label": "Kursziel-Abstand",
-      "points": 2.2,
+      "points": 2.5,
       "max": 5,
-      "detail": "9%"
+      "detail": "10%"
      }
     ]
    }
@@ -48424,8 +48394,8 @@
     "above_sma100": false,
     "above_sma200": true,
     "pct_above_sma50": -3.3077148509892296,
-    "pct_above_sma100": -3.9584290827787694,
-    "pct_above_sma200": 3.584176985154075,
+    "pct_above_sma100": -3.958429306168676,
+    "pct_above_sma200": 3.584176887708268,
     "sma50_slope": -0.61,
     "sma200_slope": 2.97,
     "higher_low": true,
@@ -48714,7 +48684,7 @@
     "above_sma200": true,
     "pct_above_sma50": 1.7151407990430911,
     "pct_above_sma100": 9.662470820092285,
-    "pct_above_sma200": 22.722030382143245,
+    "pct_above_sma200": 22.722030518317695,
     "sma50_slope": 11.48,
     "sma200_slope": 6.48,
     "higher_low": true,
@@ -48981,7 +48951,7 @@
     "above_sma200": true,
     "pct_above_sma50": 5.057476102213543,
     "pct_above_sma100": 7.048754717939376,
-    "pct_above_sma200": 14.215047503949352,
+    "pct_above_sma200": 14.21504741346704,
     "sma50_slope": 0.51,
     "sma200_slope": 1.91,
     "higher_low": true,
@@ -49269,8 +49239,8 @@
     "above_sma100": false,
     "above_sma200": true,
     "pct_above_sma50": 2.712931864630286,
-    "pct_above_sma100": -8.962013346738118,
-    "pct_above_sma200": 5.6006084510179965,
+    "pct_above_sma100": -8.96201326605448,
+    "pct_above_sma200": 5.6006088852611935,
     "sma50_slope": -10.93,
     "sma200_slope": 4.95,
     "higher_low": true,
@@ -49553,8 +49523,8 @@
     "above_sma100": false,
     "above_sma200": false,
     "pct_above_sma50": -2.8577642265342096,
-    "pct_above_sma100": -3.0564167904746697,
-    "pct_above_sma200": -4.693394168756471,
+    "pct_above_sma100": -3.0564166448583174,
+    "pct_above_sma200": -4.693394309496634,
     "sma50_slope": -1.38,
     "sma200_slope": 0.69,
     "higher_low": false,
@@ -50080,8 +50050,8 @@
     "above_sma100": true,
     "above_sma200": true,
     "pct_above_sma50": -2.2126637432369645,
-    "pct_above_sma100": 2.885685081259437,
-    "pct_above_sma200": 11.933771747580879,
+    "pct_above_sma100": 2.885685001258742,
+    "pct_above_sma200": 11.93377136881919,
     "sma50_slope": 2.8,
     "sma200_slope": 4.04,
     "higher_low": true,
@@ -50894,7 +50864,7 @@
     "above_sma200": true,
     "pct_above_sma50": 3.859723251585878,
     "pct_above_sma100": 11.385840493552625,
-    "pct_above_sma200": 22.237823287847867,
+    "pct_above_sma200": 22.23782371670895,
     "sma50_slope": 5.96,
     "sma200_slope": 4.1,
     "higher_low": true,
@@ -51160,8 +51130,8 @@
     "above_sma100": true,
     "above_sma200": true,
     "pct_above_sma50": -0.7035813685821846,
-    "pct_above_sma100": 5.644821694740831,
-    "pct_above_sma200": 2.648524453404999,
+    "pct_above_sma100": 5.644821537535316,
+    "pct_above_sma200": 2.6485247502342713,
     "sma50_slope": 5.29,
     "sma200_slope": 0.55,
     "higher_low": true,
@@ -51209,7 +51179,7 @@
      "current": 866.64,
      "high": 1065.0,
      "low": 845.0,
-     "mean": 980.73334,
+     "mean": 979.3571,
      "median": 1000.0
     },
     "konsens_firmen": [],
@@ -51499,10 +51469,10 @@
      }
     ],
     "consensus": {
-     "kaufen_pct": 89,
-     "halten_pct": 11,
+     "kaufen_pct": 92,
+     "halten_pct": 8,
      "verkaufen_pct": 0,
-     "total": 27,
+     "total": 25,
      "unclassified": 1
     },
     "quelle": "Einzelratings",
@@ -51525,10 +51495,10 @@
     "n_analysts": 37,
     "empfehlung": "kaufen",
     "rec_breakdown": {
-     "kaufen_pct": 89,
-     "halten_pct": 11,
+     "kaufen_pct": 92,
+     "halten_pct": 8,
      "verkaufen_pct": 0,
-     "total": 27,
+     "total": 25,
      "unclassified": 1
     }
    },
@@ -53421,7 +53391,7 @@
     "above_sma200": false,
     "pct_above_sma50": -14.810920497473035,
     "pct_above_sma100": -14.665196526583802,
-    "pct_above_sma200": -13.400275832121455,
+    "pct_above_sma200": -13.400276163919568,
     "sma50_slope": -3.81,
     "sma200_slope": -0.56,
     "higher_low": false,
@@ -53960,7 +53930,7 @@
     "above_sma200": false,
     "pct_above_sma50": -3.617129991447854,
     "pct_above_sma100": -14.715264276149654,
-    "pct_above_sma200": -16.306144751763874,
+    "pct_above_sma200": -16.3061448297235,
     "sma50_slope": 0.14,
     "sma200_slope": -3.74,
     "higher_low": true,
@@ -54261,8 +54231,8 @@
     "above_sma100": true,
     "above_sma200": true,
     "pct_above_sma50": 7.021236422386101,
-    "pct_above_sma100": 10.903701679990107,
-    "pct_above_sma200": 19.118465222152658,
+    "pct_above_sma100": 10.90370179515794,
+    "pct_above_sma200": 19.118465952887643,
     "sma50_slope": 9.93,
     "sma200_slope": 5.16,
     "higher_low": true,
@@ -54545,7 +54515,7 @@
     "above_sma200": false,
     "pct_above_sma50": -4.0359979927921845,
     "pct_above_sma100": -2.5355311184440232,
-    "pct_above_sma200": -1.4318347630263184,
+    "pct_above_sma200": -1.4318348712376805,
     "sma50_slope": -1.05,
     "sma200_slope": 0.19,
     "higher_low": true,
@@ -54583,13 +54553,6 @@
      {
       "date": "2026-09-16",
       "firm": "Mizuho",
-      "action": "main",
-      "to_grade": "Neutral",
-      "from_grade": "Neutral"
-     },
-     {
-      "date": "2026-08-27",
-      "firm": "UBS",
       "action": "main",
       "to_grade": "Neutral",
       "from_grade": "Neutral"
@@ -54830,7 +54793,7 @@
     "above_sma200": true,
     "pct_above_sma50": -0.8458237222437326,
     "pct_above_sma100": 3.3318712524860405,
-    "pct_above_sma200": 4.111044546079756,
+    "pct_above_sma200": 4.111044647512818,
     "sma50_slope": -0.17,
     "sma200_slope": 1.19,
     "higher_low": true,
@@ -55372,7 +55335,7 @@
     "above_sma200": true,
     "pct_above_sma50": 8.70158692729226,
     "pct_above_sma100": 24.022388588238243,
-    "pct_above_sma200": 42.518675830200905,
+    "pct_above_sma200": 42.51867586049707,
     "sma50_slope": 15.61,
     "sma200_slope": 7.42,
     "higher_low": true,
@@ -55675,7 +55638,7 @@
     "above_sma200": true,
     "pct_above_sma50": -3.1409770627860545,
     "pct_above_sma100": -3.5944705674081256,
-    "pct_above_sma200": 1.962501373984482,
+    "pct_above_sma200": 1.962501290103491,
     "sma50_slope": 3.17,
     "sma200_slope": 3.52,
     "higher_low": true,
@@ -55949,7 +55912,7 @@
     "above_sma200": true,
     "pct_above_sma50": -2.844341176530618,
     "pct_above_sma100": 0.21964437286412508,
-    "pct_above_sma200": 9.63549665938428,
+    "pct_above_sma200": 9.635497158816753,
     "sma50_slope": -0.18,
     "sma200_slope": 3.08,
     "higher_low": true,
@@ -55987,10 +55950,10 @@
     "quelle": "Aggregat",
     "price_targets": {
      "current": 201.98,
-     "high": 226.4856,
-     "low": 184.06181,
-     "mean": 208.94499,
-     "median": 216.28757
+     "high": 226.45355,
+     "low": 184.03577,
+     "mean": 208.91544,
+     "median": 216.25696
     },
     "konsens_firmen": [],
     "merged_firmen": [],
@@ -55998,7 +55961,7 @@
    },
    "revision_note": null,
    "target": {
-    "target_abs": 216.29,
+    "target_abs": 216.26,
     "upside_pct": 7.1,
     "fresh": null,
     "n_analysts": 3,
@@ -56479,8 +56442,8 @@
     "above_sma100": true,
     "above_sma200": true,
     "pct_above_sma50": 4.856984149784593,
-    "pct_above_sma100": 9.60585705259338,
-    "pct_above_sma200": 14.049886144933389,
+    "pct_above_sma100": 9.605857142486784,
+    "pct_above_sma200": 14.049886339594831,
     "sma50_slope": 5.77,
     "sma200_slope": 4.29,
     "higher_low": true,
@@ -56747,7 +56710,7 @@
     "above_sma200": true,
     "pct_above_sma50": 4.701728856606757,
     "pct_above_sma100": 10.089213920838368,
-    "pct_above_sma200": 14.771721036783013,
+    "pct_above_sma200": 14.771720617077166,
     "sma50_slope": 7.12,
     "sma200_slope": 2.75,
     "higher_low": true,
@@ -57920,7 +57883,7 @@
      "kaufen_pct": 91,
      "halten_pct": 9,
      "verkaufen_pct": 0,
-     "total": 34,
+     "total": 33,
      "unclassified": 1
     },
     "quelle": "Einzelratings",
@@ -57946,7 +57909,7 @@
      "kaufen_pct": 91,
      "halten_pct": 9,
      "verkaufen_pct": 0,
-     "total": 34,
+     "total": 33,
      "unclassified": 1
     }
    },
@@ -58685,7 +58648,7 @@
     "above_sma200": false,
     "pct_above_sma50": -4.219449934556174,
     "pct_above_sma100": -2.0118771771878596,
-    "pct_above_sma200": -4.958548693494036,
+    "pct_above_sma200": -4.958548522615313,
     "sma50_slope": 0.57,
     "sma200_slope": -1.05,
     "higher_low": true,
@@ -58988,10 +58951,10 @@
     "quelle": "Einzelratings",
     "price_targets": {
      "current": 510.01,
-     "high": 712.2078,
-     "low": 415.45456,
-     "mean": 602.2015,
-     "median": 613.29004
+     "high": 712.77625,
+     "low": 415.78613,
+     "mean": 602.6821,
+     "median": 613.77954
     },
     "konsens_firmen": [],
     "merged_firmen": [],
@@ -58999,7 +58962,7 @@
    },
    "revision_note": null,
    "target": {
-    "target_abs": 613.29,
+    "target_abs": 613.78,
     "upside_pct": 20.3,
     "fresh": null,
     "n_analysts": 38,
@@ -59215,7 +59178,7 @@
     "above_sma200": true,
     "pct_above_sma50": 7.977271226495386,
     "pct_above_sma100": 6.156139543352301,
-    "pct_above_sma200": 44.55504553788347,
+    "pct_above_sma200": 44.5550454683286,
     "sma50_slope": -3.5,
     "sma200_slope": 10.13,
     "higher_low": true,
@@ -59482,7 +59445,7 @@
     "above_sma200": false,
     "pct_above_sma50": -13.616752884639427,
     "pct_above_sma100": -12.87702189697596,
-    "pct_above_sma200": -17.736837921328107,
+    "pct_above_sma200": -17.73683799715401,
     "sma50_slope": -3.86,
     "sma200_slope": -2.2,
     "higher_low": false,
@@ -59814,10 +59777,10 @@
     "quelle": "Aggregat",
     "price_targets": {
      "current": 120.65,
-     "high": 136.28404,
-     "low": 96.08459,
-     "mean": 120.33572,
-     "median": 128.63852
+     "high": 136.26476,
+     "low": 96.07099,
+     "mean": 120.31869,
+     "median": 128.62032
     },
     "konsens_firmen": [],
     "merged_firmen": [],
@@ -59825,7 +59788,7 @@
    },
    "revision_note": null,
    "target": {
-    "target_abs": 128.64,
+    "target_abs": 128.62,
     "upside_pct": 6.6,
     "fresh": null,
     "n_analysts": 3,
@@ -60040,7 +60003,7 @@
     "above_sma200": false,
     "pct_above_sma50": -9.075376898198584,
     "pct_above_sma100": -12.938030168005643,
-    "pct_above_sma200": -14.631927274274448,
+    "pct_above_sma200": -14.631927146024104,
     "sma50_slope": -6.66,
     "sma200_slope": -1.19,
     "higher_low": false,
@@ -60568,7 +60531,7 @@
     "above_sma200": true,
     "pct_above_sma50": 7.482124156148795,
     "pct_above_sma100": 6.881883805938371,
-    "pct_above_sma200": 18.16268384984301,
+    "pct_above_sma200": 18.162683708002202,
     "sma50_slope": -0.79,
     "sma200_slope": 3.95,
     "higher_low": true,
@@ -60897,9 +60860,9 @@
     "quelle": "Einzelratings",
     "price_targets": {
      "current": 90.94,
-     "high": 108.0,
+     "high": 109.0,
      "low": 81.0,
-     "mean": 96.7,
+     "mean": 96.8,
      "median": 96.5
     },
     "konsens_firmen": [],
@@ -61391,7 +61354,7 @@
     "above_sma200": true,
     "pct_above_sma50": -0.7046385704930769,
     "pct_above_sma100": 3.2443270751914888,
-    "pct_above_sma200": 1.0946316477766116,
+    "pct_above_sma200": 1.0946319906399715,
     "sma50_slope": 1.86,
     "sma200_slope": -0.39,
     "higher_low": true,
@@ -61429,10 +61392,10 @@
     "quelle": "Aggregat",
     "price_targets": {
      "current": 62.54,
-     "high": 76.32718,
-     "low": 68.88471,
-     "mean": 72.54984,
-     "median": 72.49373
+     "high": 76.3881,
+     "low": 68.93969,
+     "mean": 72.60774,
+     "median": 72.55159
     },
     "konsens_firmen": [],
     "merged_firmen": [],
@@ -61440,8 +61403,8 @@
    },
    "revision_note": null,
    "target": {
-    "target_abs": 72.49,
-    "upside_pct": 15.9,
+    "target_abs": 72.55,
+    "upside_pct": 16.0,
     "fresh": null,
     "n_analysts": 4,
     "empfehlung": "kaufen",
@@ -61960,8 +61923,8 @@
     "above_sma100": false,
     "above_sma200": true,
     "pct_above_sma50": -3.5911575205371915,
-    "pct_above_sma100": -11.077554668830292,
-    "pct_above_sma200": 16.21713452659661,
+    "pct_above_sma100": -11.077554827304459,
+    "pct_above_sma200": 16.217134391250433,
     "sma50_slope": -11.61,
     "sma200_slope": 8.0,
     "higher_low": false,
@@ -62226,8 +62189,8 @@
     "above_sma100": true,
     "above_sma200": true,
     "pct_above_sma50": -2.315040281485492,
-    "pct_above_sma100": 1.981754175200856,
-    "pct_above_sma200": 9.198035648046998,
+    "pct_above_sma100": 1.9817541066112998,
+    "pct_above_sma200": 9.19803545144735,
     "sma50_slope": 1.4,
     "sma200_slope": 1.8,
     "higher_low": true,
@@ -62489,7 +62452,7 @@
     "above_sma200": true,
     "pct_above_sma50": 2.8367431493662387,
     "pct_above_sma100": 9.535091201893575,
-    "pct_above_sma200": 15.73735678179904,
+    "pct_above_sma200": 15.737356511171253,
     "sma50_slope": 2.63,
     "sma200_slope": 1.61,
     "higher_low": true,
@@ -63603,8 +63566,8 @@
     "above_sma100": false,
     "above_sma200": true,
     "pct_above_sma50": -7.530378842390217,
-    "pct_above_sma100": -2.141028208249507,
-    "pct_above_sma200": 3.478804990673745,
+    "pct_above_sma100": -2.141028014963864,
+    "pct_above_sma200": 3.4788050987352603,
     "sma50_slope": 1.02,
     "sma200_slope": 1.51,
     "higher_low": true,
@@ -63866,8 +63829,8 @@
     "above_sma100": true,
     "above_sma200": true,
     "pct_above_sma50": -1.6249006286305656,
-    "pct_above_sma100": 1.9106416447350671,
-    "pct_above_sma200": 3.357810091535063,
+    "pct_above_sma100": 1.910641294615334,
+    "pct_above_sma200": 3.3578098214345653,
     "sma50_slope": 2.91,
     "sma200_slope": 0.58,
     "higher_low": true,
@@ -64148,7 +64111,7 @@
     "above_sma200": true,
     "pct_above_sma50": -2.3209259398235704,
     "pct_above_sma100": 4.1293846403134715,
-    "pct_above_sma200": 7.612000988925316,
+    "pct_above_sma200": 7.612000813235276,
     "sma50_slope": 4.96,
     "sma200_slope": 3.06,
     "higher_low": true,
@@ -64429,7 +64392,7 @@
     "above_sma200": true,
     "pct_above_sma50": -5.34630693219712,
     "pct_above_sma100": -0.18725417355898166,
-    "pct_above_sma200": 10.945358879714728,
+    "pct_above_sma200": 10.94535844190936,
     "sma50_slope": 2.34,
     "sma200_slope": 3.72,
     "higher_low": true,
@@ -65511,7 +65474,7 @@
     "above_sma200": false,
     "pct_above_sma50": -5.440113023404425,
     "pct_above_sma100": -0.7968907424425131,
-    "pct_above_sma200": -2.5237839494430925,
+    "pct_above_sma200": -2.5237840218622187,
     "sma50_slope": 1.12,
     "sma200_slope": -0.28,
     "higher_low": true,
@@ -66060,7 +66023,7 @@
     "above_sma200": true,
     "pct_above_sma50": -8.128769823178494,
     "pct_above_sma100": -8.206514895390704,
-    "pct_above_sma200": 2.7949897082038433,
+    "pct_above_sma200": 2.794990024779942,
     "sma50_slope": -4.05,
     "sma200_slope": 1.94,
     "higher_low": false,
@@ -66331,7 +66294,7 @@
     "above_sma200": true,
     "pct_above_sma50": 7.7407468460072515,
     "pct_above_sma100": 13.028909329625659,
-    "pct_above_sma200": 18.82391173245541,
+    "pct_above_sma200": 18.823911638847957,
     "sma50_slope": 5.13,
     "sma200_slope": 3.75,
     "higher_low": true,
@@ -66620,7 +66583,7 @@
     "above_sma200": true,
     "pct_above_sma50": 9.034694321532545,
     "pct_above_sma100": 15.79259511060176,
-    "pct_above_sma200": 11.50300563319755,
+    "pct_above_sma200": 11.503005844466752,
     "sma50_slope": 3.9,
     "sma200_slope": -0.55,
     "higher_low": true,
@@ -67151,8 +67114,8 @@
     "above_sma100": true,
     "above_sma200": true,
     "pct_above_sma50": 3.6885617213499478,
-    "pct_above_sma100": 8.225185302433967,
-    "pct_above_sma200": 10.453198654228824,
+    "pct_above_sma100": 8.225185415384395,
+    "pct_above_sma200": 10.453198301282152,
     "sma50_slope": 2.77,
     "sma200_slope": 1.56,
     "higher_low": true,
@@ -67439,7 +67402,7 @@
     "above_sma200": false,
     "pct_above_sma50": -9.246684893368794,
     "pct_above_sma100": -9.41775970555181,
-    "pct_above_sma200": -3.2220858915488537,
+    "pct_above_sma200": -3.222085916546824,
     "sma50_slope": -0.98,
     "sma200_slope": 3.32,
     "higher_low": false,
@@ -67996,7 +67959,7 @@
     "above_sma200": true,
     "pct_above_sma50": -5.119195910913755,
     "pct_above_sma100": -3.3488013972590047,
-    "pct_above_sma200": 1.3135886971773925,
+    "pct_above_sma200": 1.3135886014098874,
     "sma50_slope": -4.29,
     "sma200_slope": 0.91,
     "higher_low": true,
@@ -68269,7 +68232,7 @@
     "above_sma200": true,
     "pct_above_sma50": -1.5699998479178467,
     "pct_above_sma100": -4.697580272935287,
-    "pct_above_sma200": 5.249826194560758,
+    "pct_above_sma200": 5.249826300465732,
     "sma50_slope": -5.94,
     "sma200_slope": 3.96,
     "higher_low": true,
@@ -68548,7 +68511,7 @@
     "above_sma200": true,
     "pct_above_sma50": -3.0921373005107666,
     "pct_above_sma100": 0.8460645998655592,
-    "pct_above_sma200": 2.785617930764084,
+    "pct_above_sma200": 2.7856178332163806,
     "sma50_slope": 3.61,
     "sma200_slope": 1.73,
     "higher_low": true,
@@ -68820,8 +68783,8 @@
     "above_sma100": true,
     "above_sma200": true,
     "pct_above_sma50": 0.5714863508494039,
-    "pct_above_sma100": 3.789524305354064,
-    "pct_above_sma200": 10.86316427853944,
+    "pct_above_sma100": 3.7895241942413893,
+    "pct_above_sma200": 10.863164437007256,
     "sma50_slope": -0.63,
     "sma200_slope": 1.13,
     "higher_low": true,
@@ -69109,7 +69072,7 @@
     "above_sma200": false,
     "pct_above_sma50": -6.395230699743626,
     "pct_above_sma100": -3.0212955598954094,
-    "pct_above_sma200": -6.5277700540918415,
+    "pct_above_sma200": -6.527769925793936,
     "sma50_slope": 1.45,
     "sma200_slope": 1.58,
     "higher_low": true,
@@ -69384,7 +69347,7 @@
     "above_sma200": false,
     "pct_above_sma50": -8.561805890206609,
     "pct_above_sma100": -10.632968233718875,
-    "pct_above_sma200": -18.1731911660011,
+    "pct_above_sma200": -18.173191219977845,
     "sma50_slope": -3.52,
     "sma200_slope": -1.51,
     "higher_low": false,
@@ -69942,7 +69905,7 @@
     "above_sma200": true,
     "pct_above_sma50": -0.12223298954316952,
     "pct_above_sma100": 6.267384504956275,
-    "pct_above_sma200": 1.4476716077836072,
+    "pct_above_sma200": 1.4476714749109165,
     "sma50_slope": 5.09,
     "sma200_slope": -0.68,
     "higher_low": true,
@@ -70244,7 +70207,7 @@
     "above_sma200": true,
     "pct_above_sma50": 1.0944606253922018,
     "pct_above_sma100": -0.17527712408504925,
-    "pct_above_sma200": 5.722784662416358,
+    "pct_above_sma200": 5.722784693394334,
     "sma50_slope": -1.23,
     "sma200_slope": 2.18,
     "higher_low": false,
@@ -70508,7 +70471,7 @@
     "above_sma200": true,
     "pct_above_sma50": -7.261550574361808,
     "pct_above_sma100": -6.59513298351404,
-    "pct_above_sma200": 2.1730041212503215,
+    "pct_above_sma200": 2.1730043646787323,
     "sma50_slope": -2.0,
     "sma200_slope": 2.35,
     "higher_low": true,
@@ -71335,8 +71298,8 @@
     "above_sma100": true,
     "above_sma200": true,
     "pct_above_sma50": 6.424186728400971,
-    "pct_above_sma100": 10.740262378592579,
-    "pct_above_sma200": 11.514193086018043,
+    "pct_above_sma100": 10.740262460178162,
+    "pct_above_sma200": 11.514193416937779,
     "sma50_slope": 6.4,
     "sma200_slope": 1.55,
     "higher_low": true,
@@ -71607,7 +71570,7 @@
     "above_sma200": true,
     "pct_above_sma50": 0.20864302944738622,
     "pct_above_sma100": 2.9257688916186853,
-    "pct_above_sma200": 8.596449010095263,
+    "pct_above_sma200": 8.596448962859382,
     "sma50_slope": 1.83,
     "sma200_slope": 2.28,
     "higher_low": true,
@@ -71883,7 +71846,7 @@
     "above_sma200": false,
     "pct_above_sma50": -8.660885665948726,
     "pct_above_sma100": -2.898432336206258,
-    "pct_above_sma200": -2.139817772471464,
+    "pct_above_sma200": -2.1398172709777397,
     "sma50_slope": 1.19,
     "sma200_slope": 1.39,
     "higher_low": true,
@@ -72154,8 +72117,8 @@
     "above_sma100": false,
     "above_sma200": true,
     "pct_above_sma50": -7.03738909276963,
-    "pct_above_sma100": -0.31045056168641505,
-    "pct_above_sma200": 1.271361149729655,
+    "pct_above_sma100": -0.31045063825005936,
+    "pct_above_sma200": 1.2713612682486275,
     "sma50_slope": 3.67,
     "sma200_slope": 1.42,
     "higher_low": true,
@@ -72694,8 +72657,8 @@
     "above_sma100": false,
     "above_sma200": true,
     "pct_above_sma50": -5.047239788424019,
-    "pct_above_sma100": -3.5371526907746476,
-    "pct_above_sma200": 2.7276345502676103,
+    "pct_above_sma100": -3.5371528987391043,
+    "pct_above_sma200": 2.7276342357954064,
     "sma50_slope": -2.31,
     "sma200_slope": 1.6,
     "higher_low": true,
@@ -72743,13 +72706,6 @@
       "action": "main",
       "to_grade": "In-Line",
       "from_grade": "In-Line"
-     },
-     {
-      "date": "2026-08-27",
-      "firm": "Mizuho",
-      "action": "main",
-      "to_grade": "Neutral",
-      "from_grade": "Neutral"
      }
     ],
     "consensus": {
@@ -73263,7 +73219,7 @@
     "above_sma200": true,
     "pct_above_sma50": 11.776338715813317,
     "pct_above_sma100": 24.300111440244798,
-    "pct_above_sma200": 25.15910955920897,
+    "pct_above_sma200": 25.159109488386488,
     "sma50_slope": 9.03,
     "sma200_slope": 1.0,
     "higher_low": true,
@@ -73841,8 +73797,8 @@
     "above_sma100": false,
     "above_sma200": true,
     "pct_above_sma50": -6.249556212280394,
-    "pct_above_sma100": -2.4358336065917308,
-    "pct_above_sma200": 4.639385815469543,
+    "pct_above_sma100": -2.4358339248901073,
+    "pct_above_sma200": 4.639385968026821,
     "sma50_slope": 1.36,
     "sma200_slope": 2.41,
     "higher_low": true,
@@ -74115,8 +74071,8 @@
     "above_sma100": false,
     "above_sma200": false,
     "pct_above_sma50": -9.129676495516781,
-    "pct_above_sma100": -9.389477515522549,
-    "pct_above_sma200": -8.300488291741992,
+    "pct_above_sma100": -9.389477448856542,
+    "pct_above_sma200": -8.300488325881016,
     "sma50_slope": -3.07,
     "sma200_slope": 0.96,
     "higher_low": false,
@@ -74379,7 +74335,7 @@
     "above_sma200": true,
     "pct_above_sma50": -5.368157079984193,
     "pct_above_sma100": -1.0533606619389402,
-    "pct_above_sma200": 4.1337763946184936,
+    "pct_above_sma200": 4.133776464340344,
     "sma50_slope": 0.16,
     "sma200_slope": 2.56,
     "higher_low": true,
@@ -74644,7 +74600,7 @@
     "above_sma200": false,
     "pct_above_sma50": -4.265740763048487,
     "pct_above_sma100": -0.7976024755753652,
-    "pct_above_sma200": -1.5653162190515268,
+    "pct_above_sma200": -1.5653161745027955,
     "sma50_slope": 1.02,
     "sma200_slope": 0.31,
     "higher_low": true,

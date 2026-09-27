@@ -1,29 +1,31 @@
-# Boden-Screening 2026-09-25 (Stand 2026-09-26 13:44 UTC)
+# Boden-Screening 2026-09-25 (Stand 2026-09-27 07:02 UTC)
 
 Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RSI < 50 + mind. 2 Boden-Punkte (nur Technik). Die Filter (Analysten, Anker, CRV 2:1) stehen in docs/heute.csv. Boden-Anker = niedrigster Puffer mit 60 % Halterate fuer diese Gruppe und diesen Wert (Vollauf), KO-Marke = Bezugstief - Anker x ATR.
 
-## Kandidaten (16)
+## Kandidaten (18)
 
 | Wert | Tief | RSI | Anker | KO-Marke | Analysten |
 |---|---|---|---|---|---|
 | AXON | 4 | 34 | 2.00 | 386.51 | 83 % |
-| CM | 3 | 46 | 4.00 | 101.95 | 36 % |
-| CSGP | 2 | 37 | - | - | 46 % |
+| BA | 2 | 38 | 2.50 | 179.78 | 100 % |
+| CCEP | 4 | 44 | 1.50 | 95.67 | 75 % |
+| CM | 3 | 46 | - | - | 36 % |
+| CSGP | 2 | 37 | 4.00 | 22.69 | 46 % |
 | DASH | 3 | 40 | 2.25 | 166.14 | 70 % |
-| DBK.DE | 2 | 38 | 0.75 | 30.21 | 50 % |
-| GS | 4 | 36 | 0.75 | 894.09 | 33 % |
-| LIN | 7 | 46 | 2.75 | 434.76 | 100 % |
-| PGR | 3 | 38 | 2.25 | 190.99 | 18 % |
-| SBUX | 2 | 32 | 2.50 | 87.25 | 45 % |
-| SCHW | 4 | 31 | 1.75 | 93.70 | 71 % |
-| SYK | 2 | 32 | 1.25 | 257.72 | 77 % |
-| UNP | 2 | 33 | 1.50 | 260.89 | 86 % |
-| USB | 2 | 38 | 1.25 | 56.40 | 57 % |
-| VNA.DE | 6 | 24 | 3.25 | 15.84 | 53 % |
-| WDC | 3 | 50 | 3.00 | 333.15 | 82 % |
-| WELL | 4 | 45 | 2.75 | 213.86 | 82 % |
+| DBK.DE | 2 | 38 | 2.50 | 28.52 | 50 % |
+| GS | 4 | 36 | 2.50 | 846.03 | 33 % |
+| LIN | 7 | 46 | 1.50 | 443.59 | 100 % |
+| NKE | 8 | 35 | 3.00 | 32.49 | 26 % |
+| PGR | 3 | 38 | 1.50 | 194.31 | 18 % |
+| SBUX | 2 | 32 | 2.75 | 86.70 | 45 % |
+| SCHW | 4 | 31 | 2.00 | 93.08 | 71 % |
+| SYK | 2 | 32 | 2.00 | 251.14 | 77 % |
+| UNP | 2 | 33 | 2.00 | 258.43 | 86 % |
+| USB | 2 | 38 | 1.75 | 55.79 | 57 % |
+| VNA.DE | 6 | 24 | 2.50 | 16.13 | 53 % |
+| WELL | 4 | 45 | 2.50 | 215.14 | 82 % |
 
-## Weitere Pruefttage (91)
+## Weitere Pruefttage (89)
 
 | Wert | Punkte | Grund |
 |---|---|---|
@@ -37,22 +39,20 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | AEP | 1 | 1 P, Umkehr a |
 | AMGN | 1 | 1 P, RSI >= 50 |
 | ASML | 1 | 1 P, RSI >= 50 |
-| BA | 1 | 1 P |
 | BAYN.DE | 1 | 1 P, RSI >= 50 |
 | BIIB | 1 | 1 P, Tief 1, RSI >= 50 |
 | BMO | 1 | 1 P, Tief 1 |
 | BNR.DE | 1 | 1 P |
 | BNS | 1 | 1 P, Tief 1, RSI >= 50 |
 | CBK.DE | 1 | 1 P, Tief 1, RSI >= 50 |
-| CCEP | 1 | 1 P |
 | CEG | 1 | 1 P |
+| CL | 1 | 1 P, Umkehr a |
 | CMCSA | 1 | 1 P, Umkehr a |
 | COST | 1 | 1 P, RSI >= 50 |
 | DUK | 1 | 1 P, Umkehr a |
 | ENR.DE | 1 | 1 P |
 | EQIX | 1 | 1 P, Tief 1 |
 | EXC | 1 | 1 P, Tief 1, Umkehr a |
-| FANG | 1 | 1 P, Umkehr a |
 | FDX | 1 | 1 P, Umkehr a |
 | FRE.DE | 1 | 1 P, Tief 1, RSI >= 50 |
 | GD | 1 | 1 P, Umkehr a |
@@ -66,7 +66,6 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | MELI | 1 | 1 P, Umkehr a |
 | MRK | 1 | 1 P, Tief 1, RSI >= 50 |
 | NEE | 1 | 1 P, Umkehr a |
-| NKE | 1 | 1 P |
 | NXPI | 1 | 1 P, Tief 1, RSI >= 50 |
 | PAYX | 1 | 1 P, Umkehr a |
 | PEP | 1 | 1 P, Umkehr a |
@@ -84,6 +83,7 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | TM | 1 | 1 P |
 | TRV | 1 | 1 P, Tief 1 |
 | VRSK | 1 | 1 P, Umkehr a |
+| WDC | 1 | 1 P |
 | XEL | 1 | 1 P, Umkehr a |
 | AIR.DE | 0 | 0 P |
 | AMT | 0 | 0 P, Umkehr a |
@@ -92,9 +92,9 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | BP | 0 | 0 P, Tief 1, Umkehr a |
 | BRK-B | 0 | 0 P, Tief 1, Umkehr a |
 | BTI | 0 | 0 P, Tief 1, Umkehr a |
-| CL | 0 | 0 P, Umkehr a |
 | CVX | 0 | 0 P, Tief 1, Umkehr a |
 | DTE.DE | 0 | 0 P, Umkehr a |
+| FANG | 0 | 0 P, Umkehr a |
 | GILD | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
 | IDXX | 0 | 0 P, Umkehr a |
 | MAR | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |

@@ -1,26 +1,26 @@
-# Verkaufs-Check - Stufe 1 (Stand 2026-09-24 19:27 UTC)
+# Verkaufs-Check - Stufe 1 (Stand 2026-09-27 07:39 UTC)
 
 Parallellauf. Kauf = Pruefttag mit Tief >= 2 und RSI < 50, Einstieg Schluss. Entscheidungspunkt = Hoch seit Kauf hoechstens 3 Tage alt, Anstieg mind. 1 ATR. Ganz weg = Kurs faellt auf den Einstieg, bevor ein neues Hoch kommt; halb weg = die Haelfte des Anstiegs geht verloren, bevor ein neues Hoch kommt.
 
-Werte: 270 · Kaeufe: 35558 · Entscheidungspunkte: 600233
+Werte: 271 · Kaeufe: 93271 · Entscheidungspunkte: 1586979
 
 ## Wie weit gelaufen - Rueckfallquote je Wert (Median ueber die Werte)
 
 | Lauf-Stand | ganz weg 19-22 / ab 23 | halb weg 19-22 / ab 23 |
 |---|---|---|
-| frueh | 50 % / 50 % | 70 % / 70 % |
-| mittel | 40 % / 42 % | 64 % / 64 % |
-| weit | 27 % / 30 % | 48 % / 51 % |
-| sehr weit | 13 % / 12 % | 26 % / 27 % |
+| frueh | 51 % / 52 % | 73 % / 75 % |
+| mittel | 42 % / 43 % | 65 % / 64 % |
+| weit | 28 % / 30 % | 49 % / 51 % |
+| sehr weit | 12 % / 12 % | 26 % / 26 % |
 
 ## Schon weit gelaufen: Rueckfall nach bereits abgegebenem Anteil
 
 | Schon abgegeben | ganz weg 19-22 / ab 23 | halb weg 19-22 / ab 23 |
 |---|---|---|
-| 0-10 % | 6 % / 4 % | 12 % / 10 % |
-| 10-25 % | 14 % / 13 % | 32 % / 30 % |
-| 25-40 % | 27 % / 28 % | 58 % / 60 % |
-| ueber 40 % | 58 % / 60 % | 91 % / 92 % |
+| 0-10 % | 5 % / 4 % | 12 % / 10 % |
+| 10-25 % | 14 % / 13 % | 31 % / 30 % |
+| 25-40 % | 28 % / 28 % | 60 % / 60 % |
+| ueber 40 % | 58 % / 60 % | 92 % / 92 % |
 
 ## Merkmale einzeln - nur wenn schon mind. der uebliche Anstieg gelaufen ist
 
@@ -30,27 +30,27 @@ Werte = mind. 10 Faelle mit UND ohne Merkmal in beiden Zeitraeumen. Verglichen w
 
 | Merkmal | Werte | Plus | Minus | Diff |
 |---|---|---|---|---|
-| Rote Kerze | 264 | 11 | 3 | 1.3 / -0.1 |
-| Rot + Volumen | 264 | 17 | 8 | 0.2 / 0.6 |
-| Alarm 187 | 264 | 1 | 6 | -1.7 / -2.7 |
-| Hoch heute | 264 | 0 | 0 | -0.5 / 0.5 |
-| RSI hoch | 264 | 1 | 12 | -3.7 / -3.0 |
-| Weit ueber EMA50 | 260 | 1 | 14 | -4.6 / -3.9 |
-| Schneller Anstieg | 264 | 4 | 4 | 0.6 / -0.3 |
-| Kauf mit 2+ Punkten | 262 | 2 | 0 | 0.1 / -0.5 |
+| Rote Kerze | 265 | 5 | 1 | 0.7 / -0.1 |
+| Rot + Volumen | 265 | 9 | 1 | 1.7 / 0.4 |
+| Alarm 187 | 265 | 0 | 0 | -1.3 / -2.6 |
+| Hoch heute | 265 | 0 | 0 | -0.3 / 0.5 |
+| RSI hoch | 265 | 0 | 3 | -2.9 / -3.2 |
+| Weit ueber EMA50 | 263 | 0 | 4 | -3.7 / -3.9 |
+| Schneller Anstieg | 265 | 0 | 0 | 0.3 / -0.3 |
+| Kauf mit 2+ Punkten | 264 | 0 | 0 | -0.2 / -0.2 |
 
 ### halber Gewinn weg
 
 | Merkmal | Werte | Plus | Minus | Diff |
 |---|---|---|---|---|
-| Rote Kerze | 264 | 16 | 2 | 2.5 / 1.1 |
-| Rot + Volumen | 264 | 13 | 5 | 2.1 / 1.1 |
-| Alarm 187 | 264 | 9 | 4 | -0.2 / -0.7 |
-| Hoch heute | 264 | 0 | 12 | -1.7 / -0.8 |
-| RSI hoch | 264 | 5 | 35 | -4.5 / -5.8 |
-| Weit ueber EMA50 | 260 | 2 | 40 | -4.0 / -6.9 |
-| Schneller Anstieg | 264 | 7 | 1 | 0.3 / 0.8 |
-| Kauf mit 2+ Punkten | 262 | 4 | 1 | -0.1 / -1.1 |
+| Rote Kerze | 265 | 1 | 1 | 1.2 / 1.4 |
+| Rot + Volumen | 265 | 6 | 1 | 1.8 / 1.2 |
+| Alarm 187 | 265 | 0 | 2 | -0.6 / -0.6 |
+| Hoch heute | 265 | 0 | 2 | -1.5 / -0.7 |
+| RSI hoch | 265 | 2 | 18 | -5.1 / -5.5 |
+| Weit ueber EMA50 | 263 | 0 | 27 | -4.9 / -6.2 |
+| Schneller Anstieg | 265 | 2 | 0 | 0.3 / 0.9 |
+| Kauf mit 2+ Punkten | 264 | 0 | 0 | -0.2 / -1.0 |
 
 ### Erklaerung der Merkmale
 
@@ -71,25 +71,25 @@ Kauf = Pruefttag mit Tief >= 2 und RSI < 50, Einstieg Schluss, KO = Bezugstief m
 
 | Regel | Rendite 19-22 / ab 23 | Tage | je Monat | besser als 187 |
 |---|---|---|---|---|
-| halten | 37 / 49 % | 67 | 13 % | 138 / 264 |
-| ruecksetzer_t | 11 / 9 % | 16 | 12 % | 46 / 264 |
-| alarm187 | 16 / 20 % | 18 | 20 % | - |
-| nachlauf25 | 10 / 16 % | 14 | 20 % | 51 / 264 |
-| nachlauf33 | 10 / 17 % | 16 | 19 % | 53 / 264 |
-| nachlauf40 | 11 / 17 % | 17 | 18 % | 59 / 264 |
-| nachlauf33_frueh | 6 / 9 % | 8 | 21 % | 32 / 264 |
+| halten | 46 / 49 % | 69 | 14 % | 157 / 265 |
+| ruecksetzer_t | 10 / 8 % | 16 | 12 % | 30 / 265 |
+| alarm187 | 17 / 19 % | 18 | 19 % | - |
+| nachlauf25 | 13 / 15 % | 15 | 19 % | 32 / 265 |
+| nachlauf33 | 13 / 16 % | 16 | 19 % | 46 / 265 |
+| nachlauf40 | 15 / 17 % | 18 | 18 % | 55 / 265 |
+| nachlauf33_frueh | 8 / 9 % | 8 | 21 % | 17 / 265 |
 
 ### Puffer 3 ATR
 
 | Regel | Rendite 19-22 / ab 23 | Tage | je Monat | besser als 187 |
 |---|---|---|---|---|
-| halten | 37 / 54 % | 82 | 11 % | 148 / 264 |
-| ruecksetzer_t | 8 / 7 % | 16 | 10 % | 36 / 264 |
-| alarm187 | 14 / 19 % | 23 | 14 % | - |
-| nachlauf25 | 10 / 16 % | 18 | 16 % | 43 / 264 |
-| nachlauf33 | 11 / 16 % | 19 | 15 % | 50 / 264 |
-| nachlauf40 | 11 / 16 % | 21 | 14 % | 56 / 264 |
-| nachlauf33_frueh | 6 / 8 % | 10 | 17 % | 28 / 264 |
+| halten | 44 / 54 % | 83 | 11 % | 168 / 265 |
+| ruecksetzer_t | 7 / 7 % | 16 | 9 % | 22 / 265 |
+| alarm187 | 17 / 19 % | 24 | 15 % | - |
+| nachlauf25 | 12 / 15 % | 18 | 15 % | 24 / 265 |
+| nachlauf33 | 13 / 15 % | 19 | 15 % | 34 / 265 |
+| nachlauf40 | 13 / 17 % | 21 | 14 % | 37 / 265 |
+| nachlauf33_frueh | 8 / 9 % | 10 | 16 % | 12 / 265 |
 
 ### Regeln
 
@@ -107,22 +107,22 @@ Wie viel kam ab einem Tag in dieser Lage im Schnitt noch dazu, wenn man nach der
 
 | Gelaufen | schon abgegeben | Halten bringt noch |
 |---|---|---|
-| frueh | 0-10 % | 0.9 / - ATR (0/1) |
-| frueh | 10-25 % | 0.1 / 0.3 ATR (0/0) |
-| frueh | 40-100 % | 1.0 / 0.3 ATR (1/3) |
-| frueh | unter Einstieg | 0.7 / 0.2 ATR (0/4) |
-| mittel | 0-10 % | 0.1 / 0.4 ATR (21/164) |
-| mittel | 10-25 % | 0.3 / 0.3 ATR (30/231) |
-| mittel | 25-40 % | 0.5 / 0.3 ATR (19/205) |
-| mittel | 40-100 % | 0.5 / 0.3 ATR (38/260) |
-| mittel | unter Einstieg | 0.4 / 0.4 ATR (43/252) |
-| weit | 0-10 % | 0.1 / 0.2 ATR (33/193) |
-| weit | 10-25 % | 0.2 / 0.3 ATR (32/203) |
-| weit | 25-40 % | 0.3 / 0.3 ATR (30/152) |
-| weit | 40-100 % | 0.5 / 0.5 ATR (34/253) |
-| weit | unter Einstieg | 0.2 / 0.3 ATR (38/194) |
-| sehr weit | 0-10 % | 0.0 / 0.1 ATR (41/205) |
-| sehr weit | 10-25 % | 0.3 / 0.4 ATR (21/118) |
-| sehr weit | 25-40 % | 0.8 / 0.5 ATR (9/67) |
-| sehr weit | 40-100 % | 1.0 / 0.8 ATR (26/163) |
-| sehr weit | unter Einstieg | -0.4 / 0.3 ATR (18/72) |
+| frueh | 10-25 % | 0.5 / 0.3 ATR (0/0) |
+| frueh | 25-40 % | 0.6 / - ATR (0/2) |
+| frueh | 40-100 % | 0.5 / -0.0 ATR (0/1) |
+| frueh | unter Einstieg | 0.6 / -1.4 ATR (1/7) |
+| mittel | 0-10 % | 0.2 / 0.3 ATR (16/189) |
+| mittel | 10-25 % | 0.3 / 0.3 ATR (22/239) |
+| mittel | 25-40 % | 0.4 / 0.3 ATR (13/215) |
+| mittel | 40-100 % | 0.4 / 0.4 ATR (18/264) |
+| mittel | unter Einstieg | 0.4 / 0.4 ATR (30/258) |
+| weit | 0-10 % | 0.1 / 0.3 ATR (23/211) |
+| weit | 10-25 % | 0.3 / 0.3 ATR (23/233) |
+| weit | 25-40 % | 0.4 / 0.3 ATR (21/193) |
+| weit | 40-100 % | 0.5 / 0.5 ATR (23/255) |
+| weit | unter Einstieg | 0.5 / 0.2 ATR (32/220) |
+| sehr weit | 0-10 % | 0.0 / 0.1 ATR (52/241) |
+| sehr weit | 10-25 % | 0.2 / 0.2 ATR (27/186) |
+| sehr weit | 25-40 % | 0.3 / 0.5 ATR (25/133) |
+| sehr weit | 40-100 % | 0.4 / 0.7 ATR (28/215) |
+| sehr weit | unter Einstieg | 0.2 / 0.3 ATR (29/142) |

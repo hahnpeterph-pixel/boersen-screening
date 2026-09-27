@@ -1,0 +1,71 @@
+name: Test 20 Jahre
+
+# TESTLAUF (Peter 27.09.2026: "erst mal testen"). Rechnet historie, rsi_schwellen, phasen und
+# markthistorie mit 20 Jahren und danach heute.py - alles nur im Arbeitsbereich des Laufs.
+# Gespeichert wird AUSSCHLIESSLICH docs/test20/. Alle anderen Dateien in docs/ werden vor dem
+# Speichern auf den alten Stand zurueckgesetzt - das taegliche Screening bleibt unberuehrt.
+# Startet beim Push dieser Datei oder von Hand.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/test20.yml"
+
+concurrency:
+  group: repo-schreiben
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  test20:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Abhaengigkeiten installieren
+        run: pip install -r requirements.txt
+      - name: Basis - heute.py mit den bestehenden 7-Jahres-Dateien
+        run: |
+          mkdir -p /tmp/t20
+          python heute.py > /tmp/t20/basis_log.txt 2>&1 || true
+          cp docs/heute.csv /tmp/t20/heute_7j.csv
+      - name: 20 Jahre - historie, rsi_schwellen, phasen, markthistorie
+        run: |
+          start=$(date +%s)
+          python lauf20.py historie.py --jahre 20
+          python rsi_schwellen.py
+          python lauf20.py phasen.py --jahre 20
+          python lauf20.py markthistorie.py
+          echo "Laufzeit 20 Jahre: $(( ($(date +%s)-start)/60 )) Minuten" > /tmp/t20/laufzeit.txt
+      - name: Test - heute.py mit 20 Jahren
+        run: |
+          python heute.py > /tmp/t20/test_log.txt 2>&1
+          cp docs/heute.csv /tmp/t20/heute_20j.csv
+          python test20_vergleich.py /tmp/t20/heute_7j.csv /tmp/t20/heute_20j.csv /tmp/t20/vergleich.md
+          ls -la docs/*.gz > /tmp/t20/groessen.txt
+          cp docs/puffer_je_tief.csv.gz /tmp/t20/puffer_je_tief_20j.csv.gz
+          cp docs/phasen.csv /tmp/t20/phasen_20j.csv
+          cp docs/rsi_schwellen.csv /tmp/t20/rsi_schwellen_20j.csv
+          cp docs/markthistorie.csv.gz /tmp/t20/markthistorie_20j.csv.gz
+      - name: Nur docs/test20 speichern, alles andere zuruecksetzen
+        run: |
+          git checkout -- docs state 2>/dev/null || git checkout -- docs
+          git clean -fdq docs
+          mkdir -p docs/test20 && cp /tmp/t20/* docs/test20/
+          git config user.name "screening-bot"
+          git config user.email "actions@github.com"
+          git add docs/test20
+          git status --short
+          git commit -m "Test 20 Jahre $(date -u +%Y-%m-%d) (nur docs/test20)"
+          for versuch in 1 2 3; do
+            if git pull --rebase --autostash origin main && git push origin main; then exit 0; fi
+            sleep 10
+          done
+          exit 1

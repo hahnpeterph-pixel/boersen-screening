@@ -1,6 +1,6 @@
 # Boersen-Screening - 2026-09-27
 
-_Stand: Schlusskurse vom 2026-09-25. Erstellt 2026-09-27T07:43:13+00:00 UTC. 271 Werte ausgewertet._
+_Stand: Schlusskurse vom 2026-09-25. Erstellt 2026-09-27T08:08:34+00:00 UTC. 265 Werte ausgewertet._
 
 ## 📖 Glossar (was die Spalten bedeuten)
 
@@ -13,7 +13,7 @@ _Stand: Schlusskurse vom 2026-09-25. Erstellt 2026-09-27T07:43:13+00:00 UTC. 271
 
 ## 🎯 Analysten-Filter (Kursziel ≥15%, Kaufen-Anteil ≥75%)
 
-_Ueber alle 271 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei Gleichstand nach Kurspotenzial. Maximal 20 Treffer. Value-Trap-Ausschluesse gelten auch hier. RSI auf drei Zeitebenen, jeweils echt neu berechnet (nicht umgerechnet): Tag, Woche, Stunde. "k.A." bei Stunde heisst: fuer diesen Wert lagen keine verwertbaren Stundenkerzen vor._
+_Ueber alle 265 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei Gleichstand nach Kurspotenzial. Maximal 20 Treffer. Value-Trap-Ausschluesse gelten auch hier. RSI auf drei Zeitebenen, jeweils echt neu berechnet (nicht umgerechnet): Tag, Woche, Stunde. "k.A." bei Stunde heisst: fuer diesen Wert lagen keine verwertbaren Stundenkerzen vor._
 
 | Rang | Ticker | ISIN | Name | Index | Kurs | Abstand ATH (Info) | Kaufen-Anteil Analysten | Kursziel | RSI Tag | RSI Woche | RSI Stunde | Letztes Rating |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -33,10 +33,10 @@ _Ueber alle 271 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 | 14 | GE | - | GE Aerospace | SP100 | 327.09 | -14% | 100% (8 Banken, ≤120T) | 400.00 (22% ueber Kurs) | 47 | 48 | 64 | 2026-09-23 Jefferies: Rating bestaetigt: Buy |
 | 15 | BLK | - | BlackRock, Inc. | SP100 | 1086.31 | -8% | 100% (8 Banken, ≤120T) | 1310.00 (21% ueber Kurs) | 49 | 52 | 66 | 2026-09-25 Morgan Stanley: Rating bestaetigt: Overweight |
 | 16 | DIS | - | Walt Disney Company (The) | DOW | 106.15 | -46% | 100% (11 Banken, ≤120T) | 127.50 (20% ueber Kurs) | 53 | 54 | 62 | keine in 30T |
-| 17 | ANET | - | Arista Networks, Inc. | Watchlist | 206.55 | -2% | 100% (13 Banken, ≤120T) | 246.50 (19% ueber Kurs) | 60 | 66 | 56 | 2026-09-01 Deutsche Bank: neu bewertet mit Buy |
-| 18 | ABT | - | Abbott Laboratories | SP100 | 101.29 | -25% | 100% (12 Banken, ≤120T) | 120.00 (18% ueber Kurs) | 36 | 48 | 40 | 2026-09-08 TD Cowen: Rating bestaetigt: Buy |
-| 19 | SMFG | - | Sumitomo Mitsui Financial Group | Watchlist | 26.61 | -3% | 100% (1 Banken, ≤120T) | 31.51 (18% ueber Kurs) | 54 | 61 | 65 | keine in 30T |
-| 20 | ADI | - | Analog Devices, Inc. | NASDAQ | 393.60 | -11% | 100% (12 Banken, ≤120T) | 463.50 (18% ueber Kurs) | 63 | 57 | 67 | 2026-09-08 TD Cowen: Rating bestaetigt: Buy |
+| 17 | ABT | - | Abbott Laboratories | SP100 | 101.29 | -25% | 100% (12 Banken, ≤120T) | 120.00 (18% ueber Kurs) | 36 | 48 | 40 | 2026-09-08 TD Cowen: Rating bestaetigt: Buy |
+| 18 | SMFG | - | Sumitomo Mitsui Financial Group | Watchlist | 26.61 | -3% | 100% (1 Banken, ≤120T) | 31.51 (18% ueber Kurs) | 54 | 61 | 65 | keine in 30T |
+| 19 | ADI | - | Analog Devices, Inc. | NASDAQ | 393.60 | -11% | 100% (12 Banken, ≤120T) | 463.50 (18% ueber Kurs) | 63 | 57 | 67 | 2026-09-08 TD Cowen: Rating bestaetigt: Buy |
+| 20 | MA | - | Mastercard Incorporated | SP100 | 567.65 | -5% | 100% (14 Banken, ≤120T) | 668.00 (18% ueber Kurs) | 49 | 58 | 60 | 2026-08-31 RBC Capital: Rating bestaetigt: Outperform |
 
 
 ## 🧭 Analysten-Einstufungen (Filtertreffer, letzte 30 Tage)
@@ -46,9 +46,6 @@ _Ueber alle 271 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 
 **ADI** (Analog Devices, Inc., NASDAQ)
 - 2026-09-08: TD Cowen – Bestaetigung (Buy → Buy)
-
-**ANET** (Arista Networks, Inc., Watchlist)
-- 2026-09-01: Deutsche Bank – Erstbewertung (Hold → Buy)
 
 **ASML** (ASML Holding N.V. - New York Re, NASDAQ)
 - keine Ratingaenderung in den letzten 30 Tagen
@@ -82,6 +79,9 @@ _Ueber alle 271 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 **IBN** (ICICI Bank Limited, Watchlist)
 - keine Ratingaenderung in den letzten 30 Tagen
 
+**MA** (Mastercard Incorporated, SP100)
+- 2026-08-31: RBC Capital – Bestaetigung (Outperform → Outperform)
+
 **MSTR** (Strategy Inc, NASDAQ)
 - 2026-09-22: B. Riley Securities – Bestaetigung (Buy → Buy)
 - 2026-09-15: Barclays – Bestaetigung (Overweight → Overweight)
@@ -113,6 +113,6 @@ _Ueber alle 271 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 
 ---
 
-_Nicht auswertbar heute (3): HONA, SKHY, SPCX_
+_Nicht auswertbar heute (9): ABNB, ALV.DE, AMAT, ANET, AXON, BABA, HONA, SKHY, SPCX_
 
 _Automatisch erzeugte Kennzahlensortierung, keine Anlageberatung._

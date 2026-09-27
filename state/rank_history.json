@@ -1592,7 +1592,6 @@
     "SCCO",
     "TSLA",
     "UL",
-    "ABNB",
     "BKR",
     "DE",
     "PBR",
@@ -1600,6 +1599,7 @@
     "AMZN",
     "AMT",
     "SY1.DE",
+    "GM",
     "CCEP",
     "SHW",
     "PM",
@@ -1619,7 +1619,7 @@
    "momentum": [
     "CRWD",
     "PANW",
-    "ANET",
+    "DELL",
     "ING",
     "ILMN",
     "MRNA",
@@ -1650,20 +1650,19 @@
     "EQIX",
     "AEP",
     "NEE",
-    "DELL",
     "NET",
     "INTC",
     "MRVL",
     "MU",
     "AMD",
-    "DDOG"
+    "DDOG",
+    "TEAM"
    ],
    "value": [
     "SNDK",
     "NVDA",
     "MU",
     "NEM",
-    "ABNB",
     "PBR",
     "RIO",
     "COP",
@@ -1684,6 +1683,7 @@
     "GOOG",
     "GOOGL",
     "DASH",
+    "ADS.DE",
     "KDP",
     "PG",
     "EQIX",
@@ -1697,8 +1697,8 @@
     "CSCO",
     "MSFT",
     "AVGO",
-    "AMAT",
-    "LRCX"
+    "LRCX",
+    "ASML"
    ]
   }
  }

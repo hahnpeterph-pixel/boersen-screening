@@ -21,7 +21,7 @@
   "momentum": [
    "CRWD",
    "PANW",
-   "ANET",
+   "DELL",
    "ING",
    "ILMN",
    "MRNA",
@@ -40,7 +40,6 @@
    "NVDA",
    "MU",
    "NEM",
-   "ABNB",
    "PBR",
    "RIO",
    "COP",
@@ -50,7 +49,8 @@
    "V",
    "MNST",
    "BHP",
-   "MTX.DE"
+   "MTX.DE",
+   "PH"
   ]
  },
  "changes": {
@@ -60,13 +60,33 @@
    "moves": []
   },
   "momentum": {
-   "entries": [],
-   "exits": [],
+   "entries": [
+    {
+     "ticker": "DELL",
+     "rank": 3
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "ANET",
+     "old_rank": 3
+    }
+   ],
    "moves": []
   },
   "value": {
-   "entries": [],
-   "exits": [],
+   "entries": [
+    {
+     "ticker": "PH",
+     "rank": 15
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "ABNB",
+     "old_rank": 5
+    }
+   ],
    "moves": []
   },
   "analyst_flips": []

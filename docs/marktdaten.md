@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-09-27 07:43 UTC. 286 Werte, Fenster 90 Kalendertage. EUR/USD 1.1401._
+_Erstellt 2026-09-27 08:08 UTC. 286 Werte, Fenster 90 Kalendertage. EUR/USD 1.1401._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -64,7 +64,6 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | HEN3.DE (HEN3.DE) | 73.74 | - | - | ja | 45.45 |
 | RHM.DE (RHM.DE) | 982.4 | - | - | ja | 37.54 |
 | Brent Oel (BZ=F) | 97.44 | - | - | ja | 48.39 |
-| Kupfer (HG=F) | 6.6955 | - | - | ja | 56.13 |
 | Weizen (ZW=F) | 703.25 | ja | - | - | 47.59 |
 
 ---

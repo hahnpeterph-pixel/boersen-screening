@@ -143,6 +143,14 @@ ROHSTOFF_BRANCHE = {
 # Erdgas und die Metalle stimmen dagegen direkt ueberein.
 
 
+
+def stand_aktien(markt: pd.DataFrame) -> str:
+    """Neuester Kursstand der AKTIEN (27.09.2026). Devisen (=X) und Futures (=F)
+    handeln auch am Wochenende - EURUSD=X mit Samstagsdatum hat am 27.09.2026
+    alle Aktien als 'nicht aktuell' aus Block 1 geworfen (leere heute.csv)."""
+    aktien = [t for t in markt.index if not ist_rohstoff_oder_fx(t)]
+    return str(markt.loc[aktien, "datum"].max() if aktien else markt["datum"].max())
+
 def gruen_nach_rot(z) -> bool:
     """Heutige Kerze gruen, die davor rot (Peters Kriterium vom 05.09.2026).
 
@@ -244,7 +252,7 @@ def block1_treffer(markt: pd.DataFrame, analysten: pd.DataFrame,
     # Feiertag EINER Boerse faellt deren Gruppe damit fuer einen Tag aus
     # Block 1 - gewollt und harmlos: Die Werte melden sich am naechsten
     # Handelstag von selbst zurueck.
-    neuester = str(markt["datum"].max())
+    neuester = stand_aktien(markt)
     veraltet = []
 
     treffer = []
@@ -669,7 +677,7 @@ def main() -> None:
 
     treffer_alt = [t for t in block1_treffer(markt, analysten, vortagestiefs())
                    if t not in AUSGESCHLOSSEN]
-    neuester = str(markt["datum"].max())
+    neuester = stand_aktien(markt)
     boden = {t: p for t, p in boden_treffer(neuester).items() if t not in AUSGESCHLOSSEN}
     treffer = list(dict.fromkeys(treffer_alt + sorted(boden)))
     print(f"Block 1 heute: {len(treffer)} (alter Lauf {len(treffer_alt)}, "

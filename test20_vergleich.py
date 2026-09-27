@@ -18,7 +18,7 @@ L += ["| Wert | Tief | Anker 7J | Anker 20J | Tief-N 2 ATR 7J (n) | 20J (n) | Ti
       "|---|---|---|---|---|---|---|---|---|---|"]
 def z(df, tk, p):
     try:
-        return f"{float(df.loc[tk, f'p{p}_haelt63_position_pct']):.0f} % ({int(df.loc[tk, f'p{p}_haelt63_position_n'])})"
+        return f"{float(df.loc[tk, f'p{p:g}_haelt63_position_pct']):.0f} % ({int(df.loc[tk, f'p{p:g}_haelt63_position_n'])})"
     except Exception:
         return "–"
 def k(df, tk):

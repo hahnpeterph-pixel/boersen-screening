@@ -15,7 +15,7 @@ on:
       jahre:
         description: "Jahre Historie"
         required: false
-        default: "7"
+        default: "20"
       pivots:
         description: "Ticker fuer die Wendepunkt-Ausgabe (z.B. CDNS). Leer lassen fuer den normalen Lauf."
         required: false
@@ -59,11 +59,11 @@ jobs:
       # falsch ausgewertet wird.
       - name: Wendepunkte pruefen
         if: github.event_name == 'workflow_dispatch' && github.event.inputs.pivots != ''
-        run: python historie.py --jahre ${{ github.event.inputs.jahre || '7' }} --pivots ${{ github.event.inputs.pivots }} --tage ${{ github.event.inputs.pivot_tage || '120' }}
+        run: python historie.py --jahre ${{ github.event.inputs.jahre || '20' }} --pivots ${{ github.event.inputs.pivots }} --tage ${{ github.event.inputs.pivot_tage || '120' }}
 
       - name: Historie ausfuehren
         if: github.event_name == 'schedule' || github.event.inputs.pivots == ''
-        run: python historie.py --jahre ${{ github.event.inputs.jahre || '7' }}
+        run: python historie.py --jahre ${{ github.event.inputs.jahre || '20' }}
 
       # Leitet die wertspezifischen Kauf-RSI-Schwellen aus der eben
       # geschriebenen docs/puffer_je_tief.csv.gz ab (Entscheidung 79).
@@ -80,6 +80,11 @@ jobs:
       # kostet ein paar Sekunden, aber nichts wird falsch oder inkonsistent.
       - name: RSI-Schwellen ableiten
         run: python rsi_schwellen.py
+
+      # Bruchjahr je Wert (27.09.2026, Peter): seit wann verhaelt sich ein Wert anders?
+      # Rechnet nur halbjaehrlich (erste Tage im Januar/Juli) oder wenn die Datei fehlt.
+      - name: Bruchjahr je Wert (halbjaehrlich)
+        run: python bruch.py
 
       - name: Ergebnis speichern
         run: |

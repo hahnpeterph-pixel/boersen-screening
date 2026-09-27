@@ -9,7 +9,7 @@ on:
       jahre:
         description: "Jahre Historie"
         required: false
-        default: "7"
+        default: "20"
       wert:
         description: "Ticker fuer eine einzelne Ausgabe im Log (z.B. CDNS). Leer lassen fuer den normalen Lauf, der schreibt."
         required: false
@@ -46,11 +46,11 @@ jobs:
 
       - name: Einzelwert pruefen
         if: github.event.inputs.wert != ''
-        run: python ruecksetzer.py --jahre ${{ github.event.inputs.jahre || '7' }} --wert ${{ github.event.inputs.wert }}
+        run: python ruecksetzer.py --jahre ${{ github.event.inputs.jahre || '20' }} --wert ${{ github.event.inputs.wert }}
 
       - name: Ruecksetzer ausfuehren
         if: github.event.inputs.wert == ''
-        run: python ruecksetzer.py --jahre ${{ github.event.inputs.jahre || '7' }}
+        run: python ruecksetzer.py --jahre ${{ github.event.inputs.jahre || '20' }}
 
       - name: Ergebnis speichern
         if: github.event.inputs.wert == ''

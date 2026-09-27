@@ -92,7 +92,7 @@ CSV_HEUTE = AUS / "boden_heute.csv"
 MD_HEUTE = AUS / "boden_heute.md"
 MD_AUS = AUS / "boden.md"
 
-JAHRE = 7
+JAHRE = 20  # 27.09.2026 Peter: 20 statt 7 Jahre
 ATR_TAGE = 14            # wie marktdaten.py / historie.py
 RSI_TAGE = 14
 FENSTER = 63             # Handelstage, rund drei Monate (wie historie.QUARTAL)

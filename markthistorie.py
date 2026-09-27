@@ -36,7 +36,7 @@ MD_AUS = os.path.join(DOCS, "marktbreite.md")
 # haben sich zu stark veraendert, und die Corona-Verwerfungen 2020 wuerden
 # als Ausreisser jede Verteilung dominieren, wenn der Zeitraum zu kurz ist,
 # um sie einzuordnen. Sieben Jahre enthalten sie MIT genug Umfeld.
-ZEITRAUM = "7y"
+ZEITRAUM = "20y"  # 27.09.2026 Peter: 20 statt 7 Jahre
 
 # Schwellen fuer die Breite-Auswertung, in Prozent gefallener Werte.
 SCHWELLEN = [60, 65, 70, 75, 80, 85]

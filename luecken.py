@@ -25,7 +25,7 @@ Jahre mehr bei Yahoo geholt. Stattdessen:
   - offene Luecken gegen die neuen Tage pruefen, neue Luecken der neuen Tage
     anhaengen, Alter um die Zahl neuer Tage erhoehen.
 Stand je Wert (letzter verarbeiteter Tag) in state/luecken_stand.json.
-Vollstaendig neu (sieben Jahre von Yahoo) wird gerechnet mit --voll, fuer
+Vollstaendig neu (20 Jahre von Yahoo, seit 27.09.2026; vorher sieben) wird gerechnet mit --voll, fuer
 einen Wert ohne Stand oder ohne passende Kerzen im Kursverlauf, wenn die
 Stand-Datei fehlt und wenn der letzte Vollabruf ("_voll" in der
 Stand-Datei) sechs oder mehr Tage zurueckliegt - also einmal pro Woche. Das
@@ -67,7 +67,7 @@ MIN_ATR = 0.10
 REIFEZEIT_TAGE = 21
 
 # Zeitraum der Kurshistorie (Frage 115, 23.09.2026: vorher "400d").
-ZEITRAUM = "7y"
+ZEITRAUM = "20y"  # 27.09.2026 Peter: 20 statt 7 Jahre
 
 # Offene Luecken in luecken.md: nur die der letzten 364 Kalendertage.
 ANZEIGE_TAGE = 364

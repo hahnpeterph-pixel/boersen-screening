@@ -30,6 +30,7 @@ from io import StringIO
 
 import pandas as pd
 import requests
+import re
 import yfinance as yf
 from dateutil.easter import easter
 
@@ -379,6 +380,25 @@ def kerzen_twelvedata(ticker: str, tage: int = 30) -> pd.DataFrame | None:
     return None if df is None else df.copy()
 
 
+# ── Lange Zeitraeume (27.09.2026, Peter: Historie 20 statt 7 Jahre) ──
+# Yahoo kennt feste Zeitraeume wie "10y" oder "max" sicher, "20y" nicht
+# verlaesslich. Zeitraeume ueber 10 Jahre werden deshalb mit "max" geholt und
+# danach auf die gewuenschte Laenge gekuerzt. Getestet im Testlauf test20.yml.
+def _abruf_zeitraum(period: str) -> tuple[str, int | None]:
+    m = re.fullmatch(r"(\d+)y", str(period))
+    if m and int(m.group(1)) > 10:
+        return "max", int(m.group(1))
+    return period, None
+
+
+def _kuerzen(df, jahre: int | None):
+    if df is None or jahre is None or len(df) == 0:
+        return df
+    ab = pd.Timestamp.today().normalize() - pd.DateOffset(years=jahre)
+    idx = df.index.tz_localize(None) if getattr(df.index, "tz", None) else df.index
+    return df[idx >= ab]
+
+
 def kerzen(ticker: str, period: str = "400d", auto_adjust: bool = False) -> pd.DataFrame | None:
     """Tageskerzen fuer einen Ticker. None, wenn keine brauchbaren Daten.
 
@@ -420,14 +440,15 @@ def kerzen(ticker: str, period: str = "400d", auto_adjust: bool = False) -> pd.D
             print(f"  {holen}: Cache unlesbar ({e}), hole neu")
 
     try:
-        roh = yf.Ticker(holen).history(period=period, interval="1d",
+        abruf, lang = _abruf_zeitraum(period)
+        roh = yf.Ticker(holen).history(period=abruf, interval="1d",
                                        auto_adjust=auto_adjust)
     except Exception as e:
         print(f"  {holen}: Abruf fehlgeschlagen ({e})")
         _MEM[key] = None
         return None
 
-    df = _aufbereiten(roh)
+    df = _kuerzen(_aufbereiten(roh), lang)
     # LOECHER FUELLEN (19.09.2026). Siehe Abschnitt "Handelskalender und
     # Lueckenfuellung" weiter unten.
     bericht = {}
@@ -500,7 +521,7 @@ def kerzen_batch(tickers: list[str], period: str = "400d",
     for i in range(0, len(quellticker), chunk):
         batch = quellticker[i:i + chunk]
         try:
-            data = yf.download(batch, period=period, interval="1d",
+            data = yf.download(batch, period=_abruf_zeitraum(period)[0], interval="1d",
                                 auto_adjust=auto_adjust, group_by="ticker",
                                 threads=True, progress=False)
         except Exception as e:
@@ -516,7 +537,7 @@ def kerzen_batch(tickers: list[str], period: str = "400d",
     os.makedirs(CACHE, exist_ok=True)
     for t in frisch:
         q = quelle_von[t]
-        df = _aufbereiten(roh_je_quelle.get(q))
+        df = _kuerzen(_aufbereiten(roh_je_quelle.get(q)), _abruf_zeitraum(period)[1])
         _MEM[(t, period, auto_adjust)] = df
         if df is not None:
             ergebnis[t] = df.copy()

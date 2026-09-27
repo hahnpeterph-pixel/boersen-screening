@@ -52,7 +52,7 @@ CSV_AUS = DOCS / "tagesreaktion.csv"
 CSV_WOCHENTAG = DOCS / "wochentage.csv"
 CSV_LAEUFE = DOCS / "laeufe.csv"
 
-JAHRE = 7
+JAHRE = 20  # 27.09.2026 Peter: 20 statt 7 Jahre
 ATR_TAGE = 14
 FRISTEN = (5, 10, 20, 60)
 # Verlustklassen in ATR, Viertelschritte. Oben offen, damit der Ausreisser

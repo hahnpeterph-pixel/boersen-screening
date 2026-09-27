@@ -16,7 +16,7 @@ on:
       jahre:
         description: "Jahre Historie"
         required: false
-        default: "7"
+        default: "20"
       nur:
         description: "Nur diese Werte, mit Komma. Leer = alle."
         required: false
@@ -47,9 +47,9 @@ jobs:
       - name: Verkaufs-Check rechnen
         run: |
           if [ -n "${{ github.event.inputs.nur }}" ]; then
-            python verkauf.py --jahre ${{ github.event.inputs.jahre || '7' }} --nur "${{ github.event.inputs.nur }}"
+            python verkauf.py --jahre ${{ github.event.inputs.jahre || '20' }} --nur "${{ github.event.inputs.nur }}"
           else
-            python verkauf.py --jahre ${{ github.event.inputs.jahre || '7' }}
+            python verkauf.py --jahre ${{ github.event.inputs.jahre || '20' }}
           fi
 
       - name: Ergebnis speichern

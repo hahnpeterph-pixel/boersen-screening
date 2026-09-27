@@ -17,7 +17,7 @@ on:
       jahre:
         description: "Jahre Kurshistorie (Standard 7)"
         required: false
-        default: "7"
+        default: "20"
 
 concurrency:
   group: repo-schreiben
@@ -42,7 +42,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Phasen-Analyse ausfuehren
-        run: python phasen.py --jahre "${{ github.event.inputs.jahre || '7' }}"
+        run: python phasen.py --jahre "${{ github.event.inputs.jahre || '20' }}"
 
       - name: Ergebnis speichern
         run: |

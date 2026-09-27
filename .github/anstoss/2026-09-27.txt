@@ -1,0 +1,2 @@
+Umstellung auf 20 Jahre (Peter 27.09.2026) - alle Laeufe neu mit Freitagsdaten.
+laeufe: markthistorie.yml historie.yml hochs.yml phasen.yml ruecksetzer.yml tagesreaktion.yml stimmung.yml verkauf.yml screening.yml

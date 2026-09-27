@@ -22,7 +22,7 @@ on:
       jahre:
         description: "Jahre Historie"
         required: false
-        default: "7"
+        default: "20"
       nur:
         description: "Nur diese Werte, mit Komma (z.B. UNH,RHM.DE). Leer = alle."
         required: false
@@ -61,9 +61,9 @@ jobs:
           if [ "${{ github.event_name }}" = "workflow_run" ] || [ "${{ github.event.inputs.modus }}" = "heute" ]; then
             python boden.py --heute
           elif [ -n "${{ github.event.inputs.nur }}" ]; then
-            python boden.py --jahre ${{ github.event.inputs.jahre || '7' }} --nur "${{ github.event.inputs.nur }}"
+            python boden.py --jahre ${{ github.event.inputs.jahre || '20' }} --nur "${{ github.event.inputs.nur }}"
           else
-            python boden.py --jahre ${{ github.event.inputs.jahre || '7' }}
+            python boden.py --jahre ${{ github.event.inputs.jahre || '20' }}
             python boden.py --heute
           fi
 

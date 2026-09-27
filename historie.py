@@ -100,7 +100,7 @@ CSV_ROH = DOCS / "puffer_je_tief.csv.gz"
 # je Kalenderjahr aufgeschluesselt. So bleibt sichtbar, ob eine Kennzahl
 # stabil ist oder von einer einzelnen Phase getragen wird, statt beides
 # stillschweigend zu vermischen.
-JAHRE = 7
+JAHRE = 20  # 27.09.2026 Peter: 20 statt 7 Jahre (Test docs/test20)
 ATR_TAGE = 14
 RSI_TAGE = 14
 

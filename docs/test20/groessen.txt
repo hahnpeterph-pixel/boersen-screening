@@ -1,0 +1,4 @@
+-rw-r--r-- 1 runner runner  3007645 Sep 27 06:18 docs/markthistorie.csv.gz
+-rw-r--r-- 1 runner runner  6967311 Sep 27 06:14 docs/puffer_je_hoch.csv.gz
+-rw-r--r-- 1 runner runner 20307349 Sep 27 06:17 docs/puffer_je_tief.csv.gz
+-rw-r--r-- 1 runner runner  7553036 Sep 27 06:14 docs/ruecksetzer_tage.csv.gz

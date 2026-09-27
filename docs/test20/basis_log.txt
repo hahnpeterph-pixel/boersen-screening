@@ -1,0 +1,2 @@
+Block 1 heute: 78 (alter Lauf 78, neuer Lauf 16, beide 16)
+Geschrieben: /home/runner/work/boersen-screening/boersen-screening/docs/heute.csv (58 Zeilen)

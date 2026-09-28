@@ -216,6 +216,13 @@ jobs:
       # dieser Schritt aus (z.B. weil eine der Eingabedateien fehlt), darf
       # das die vorherigen, bereits gesicherten Ergebnisse nicht mitreissen
       # - deshalb continue-on-error wie bei den anderen Zusatzauswertungen.
+      # Stundenkerzen als Zahlen (28.09.2026, kerzen.py --stunde): je Handelstag
+      # eine kleine Datei docs/kerzen/stunde/, 30 Tage bleiben liegen. Grundlage
+      # der Kaufvorlage ohne Stundenchart. Kein Kaufwert, continue-on-error.
+      - name: Stundenkerzen ablegen
+        run: python kerzen.py --stunde
+        continue-on-error: true
+
       - name: Heute-Auswertung ausfuehren
         run: python heute.py
         continue-on-error: true

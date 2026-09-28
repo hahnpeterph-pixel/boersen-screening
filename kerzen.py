@@ -14,7 +14,7 @@ Aufruf:
                               Tage aelter als STUNDE_TAGE Handelstage geloescht
                               (haelt das Repo klein: ~30 KB je Tag statt eine
                               grosse Datei, die taeglich komplett neu kaeme).
-  python kerzen.py --lang     Wochen- und Monatskerzen so lang wie verfuegbar.
+  python kerzen.py --lang     Wochen- und Monatskerzen so lang wie verfuegbar, Tageskerzen ab 2005 (seit 28.09.2026).
                               Bis 31.12.2025 in *_archiv.csv.gz (einmalig, nur
                               neu mit --neu), ab 2026 in woche.csv.gz / monat.csv.gz.
 
@@ -38,6 +38,7 @@ STD = os.path.join(KZ, "stunde")
 STUNDE_TAGE = 30          # so viele Handelstage Stundenkerzen bleiben liegen
 STUNDE_NEU = 3            # die juengsten 3 Tage werden bei jedem Lauf neu geschrieben
 ARCHIV_BIS = "2025-12-31"
+TAG_AB = "2005-01-01"      # Tageskerzen (OHLCV) ab hier, fuer Kennzahlen wie Stochastik, MFI, Kerzenmuster
 BATCH = 40
 SPALTEN = ["ticker", "zeit", "o", "h", "l", "c", "v"]
 
@@ -127,9 +128,11 @@ def stunde() -> None:
 def lang(neu: bool = False) -> None:
     os.makedirs(KZ, exist_ok=True)
     tick = _tickers()
-    for name, iv in (("woche", "1wk"), ("monat", "1mo")):
-        print(f"{name.capitalize()}nkerzen fuer {len(tick)} Werte ...")
+    for name, iv in (("woche", "1wk"), ("monat", "1mo"), ("tag", "1d")):
+        print(f"{name.capitalize()}(es)kerzen fuer {len(tick)} Werte ...")
         df = _laden(tick, "max", iv)
+        if name == "tag":   # 28.09.2026: Tageskerzen mit Hoch/Tief/Volumen ab 2005 (Kennzahl-Auswertung je Wert)
+            df = df[df.zeit >= TAG_AB]
         if df.empty:
             print(f"  keine {name.capitalize()}nkerzen erhalten")
             continue

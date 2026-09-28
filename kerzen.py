@@ -18,7 +18,7 @@ Aufruf:
                               Bis 31.12.2025 in *_archiv.csv.gz (einmalig, nur
                               neu mit --neu), ab 2026 in woche.csv.gz / monat.csv.gz.
 
-Spalten: ticker, zeit (Boersen-Ortszeit bei Stunden, Wochen-/Monatsbeginn sonst),
+Spalten: ticker, zeit (UTC bei Stunden, Wochen-/Monatsbeginn sonst),
 o, h, l, c, v. Nur Aktien (wie unterstuetzungen.py), keine Positionsdaten.
 Laeuft mit continue-on-error: ein Yahoo-Aussetzer darf nichts anderes kippen.
 """
@@ -55,7 +55,7 @@ def _laden(tickers, period, interval) -> pd.DataFrame:
         teil = tickers[i:i + BATCH]
         try:
             d = yf.download(teil, period=period, interval=interval, auto_adjust=False,
-                            group_by="ticker", threads=True, progress=False)
+                            group_by="ticker", threads=True, progress=False, ignore_tz=(interval != "1h"))
         except Exception as exc:  # noqa: BLE001
             print(f"  ! Abruf {interval} {teil[0]}..: {exc}")
             continue
@@ -69,9 +69,10 @@ def _laden(tickers, period, interval) -> pd.DataFrame:
                 continue
             idx = x.index
             if interval == "1h":
-                # Boersen-Ortszeit, ohne Zeitzonen-Anhang (09:00 = Xetra-Eroeffnung, 09:30 = NYSE)
-                zeit = idx.tz_localize(None) if idx.tz is None else idx.tz_convert(idx.tz).tz_localize(None)
-                zeit = zeit.strftime("%Y-%m-%d %H:%M")
+                # UTC (28.09.2026): yfinance rechnet einen gemischten Abruf in EINE Zeitzone um
+                # (Xetra stand dann in New Yorker Zeit). UTC ist eindeutig; die Kaufvorlage
+                # rechnet je Boerse in Ortszeit zurueck. Ohne Zeitzone = schon UTC.
+                zeit = (idx.tz_convert("UTC").tz_localize(None) if idx.tz is not None else idx).strftime("%Y-%m-%d %H:%M")
             else:
                 zeit = (idx.tz_localize(None) if idx.tz is not None else idx).strftime("%Y-%m-%d")
             teile.append(pd.DataFrame({
@@ -104,6 +105,7 @@ def stunde() -> None:
     if df.empty:
         print("  keine Stundenkerzen erhalten - nichts geschrieben")
         return
+    # Handelstag in Boersen-Ortszeit (UTC-Datum waere fuer alle hier gehandelten Boersen gleich)
     df["tag"] = df.zeit.str[:10]
     tage = sorted(df.tag.unique())
     vorhanden = sorted(f[:10] for f in os.listdir(STD) if f.endswith(".csv.gz"))

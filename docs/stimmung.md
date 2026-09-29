@@ -1,8 +1,8 @@
 # Marktstimmung
 
-Stand Abruf: 29.09.2026 01:59 UTC
+Stand Abruf: 29.09.2026 11:21 UTC
 
-**Stimmung: VIX 16,1 (normal, 5T +1,2, 28.09.) · DAX-Schwankung gemessen 12,5 (ruhig, 5T -0,4, 28.09.) · Fear & Greed 34 (Angst, Vortag -3, 28.09.)**
+**Stimmung: VIX 15,8 (ruhig, 5T +1,6, 29.09.) · DAX-Schwankung gemessen 12,4 (ruhig, 5T -0,5, 29.09.) · Fear & Greed 34 (Angst, Vortag 0, 29.09.)**
 
 Lagen: VIX ruhig < 16 · normal 16–22 · unruhig > 22 | VDAX-NEW ruhig < 18 · normal 18–24 · unruhig > 24 (gemessene DAX-Schwankung: < 13 · 13–19 · > 19) | Fear & Greed 0–25 extreme Angst · 25–45 Angst · 45–55 neutral · 55–75 Gier · 75–100 extreme Gier.
 
@@ -12,6 +12,7 @@ Nur Stimmung, kein Kaufsignal. Ob die Lage fuer unsere Tiefs etwas aussagt: sieh
 
 | Tag | VIX | VDAX | F&G |
 |---|---|---|---|
+| 29.09.2026 | 15,8 | 12,4 | 34 |
 | 28.09.2026 | 16,1 | 12,5 | 34 |
 | 25.09.2026 | 14,9 | 12,9 | 37 |
 | 24.09.2026 | 15,7 | 12,8 | 36 |
@@ -21,4 +22,3 @@ Nur Stimmung, kein Kaufsignal. Ob die Lage fuer unsere Tiefs etwas aussagt: sieh
 | 18.09.2026 | 14,8 | 12,4 | 30 |
 | 17.09.2026 | 15,4 | 11,2 | 28 |
 | 16.09.2026 | 17,7 | 10,9 | 27 |
-| 15.09.2026 | 17,2 | 10,9 | 28 |

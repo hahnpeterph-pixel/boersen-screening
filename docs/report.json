@@ -6,17 +6,17 @@
    "SHOP",
    "MDT",
    "CVX",
-   "SHL.DE",
+   "SAP.DE",
    "EQNR",
-   "FRE.DE",
    "UL",
    "PBR",
    "T",
-   "MUV2.DE",
+   "SHL.DE",
+   "AMGN",
    "MA",
-   "PANW",
-   "DB1.DE",
-   "DTE.DE"
+   "MUV2.DE",
+   "MMM",
+   "BRK-B"
   ],
   "momentum": [
    "AMD",
@@ -24,16 +24,16 @@
    "PANW",
    "ILMN",
    "MRNA",
-   "DHL.DE",
    "SY1.DE",
+   "CBK.DE",
    "TMO",
    "VLO",
    "ING",
-   "CBK.DE",
-   "MPC",
    "SIE.DE",
+   "MPC",
    "BBVA",
-   "DE"
+   "DE",
+   "PBR"
   ],
   "value": [
    "SNDK",
@@ -44,29 +44,89 @@
    "PBR",
    "RIO",
    "META",
-   "COP",
    "REGN",
+   "COP",
    "BLK",
    "V",
    "BHP",
-   "MTX.DE",
-   "PH"
+   "PH",
+   "UNP"
   ]
  },
  "changes": {
   "turnaround": {
-   "entries": [],
-   "exits": [],
-   "moves": []
+   "entries": [
+    {
+     "ticker": "SAP.DE",
+     "rank": 5
+    },
+    {
+     "ticker": "AMGN",
+     "rank": 11
+    },
+    {
+     "ticker": "MMM",
+     "rank": 14
+    },
+    {
+     "ticker": "BRK-B",
+     "rank": 15
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "FRE.DE",
+     "old_rank": 7
+    },
+    {
+     "ticker": "PANW",
+     "old_rank": 13
+    },
+    {
+     "ticker": "DB1.DE",
+     "old_rank": 14
+    },
+    {
+     "ticker": "DTE.DE",
+     "old_rank": 15
+    }
+   ],
+   "moves": [
+    {
+     "ticker": "SHL.DE",
+     "rank": 10,
+     "delta": -5
+    }
+   ]
   },
   "momentum": {
-   "entries": [],
-   "exits": [],
+   "entries": [
+    {
+     "ticker": "PBR",
+     "rank": 15
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "DHL.DE",
+     "old_rank": 6
+    }
+   ],
    "moves": []
   },
   "value": {
-   "entries": [],
-   "exits": [],
+   "entries": [
+    {
+     "ticker": "UNP",
+     "rank": 15
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "MTX.DE",
+     "old_rank": 14
+    }
+   ],
    "moves": []
   },
   "analyst_flips": []

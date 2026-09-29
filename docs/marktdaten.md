@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-09-29 01:56 UTC. 286 Werte, Fenster 90 Kalendertage. EUR/USD 1.1374._
+_Erstellt 2026-09-29 11:18 UTC. 286 Werte, Fenster 90 Kalendertage. EUR/USD 1.1374._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -74,12 +74,17 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | UBS (UBS) | 48.62 | - | - | ja | 35.18 |
 | HDB (HDB) | 22.41 | - | - | ja | 43.55 |
 | APP (APP) | 308.24 | - | ja | ja | 41.55 |
-| CON.DE (CON.DE) | 68.6 | - | - | ja | 45.55 |
-| HEI.DE (HEI.DE) | 143.75 | - | ja | ja | 32.19 |
-| RHM.DE (RHM.DE) | 967.4 | - | - | ja | 35.42 |
-| ENR.DE (ENR.DE) | 141.24 | - | - | ja | 45.38 |
-| ZAL.DE (ZAL.DE) | 21.86 | - | - | ja | 39.94 |
-| Platin (PL=F) | 1723.2 | - | - | ja | 42.33 |
+| BMW.DE (BMW.DE) | 55.18 | - | - | ja | 28.99 |
+| DTE.DE (DTE.DE) | 26.67 | - | ja | ja | 35.76 |
+| HEI.DE (HEI.DE) | 143.3 | - | ja | ja | 31.69 |
+| PAH3.DE (PAH3.DE) | 25.25 | - | ja | ja | 31.3 |
+| RHM.DE (RHM.DE) | 966.3 | - | - | ja | 35.27 |
+| ENR.DE (ENR.DE) | 140.88 | - | - | ja | 44.95 |
+| VNA.DE (VNA.DE) | 17.055 | - | - | ja | 22.8 |
+| ZAL.DE (ZAL.DE) | 21.8 | - | - | ja | 39.46 |
+| Silber (SI=F) | 61.22 | - | - | ja | 38.95 |
+| Palladium (PA=F) | 1209.8 | - | - | ja | 36.1 |
+| Erdgas (NG=F) | 3.0 | - | - | ja | 53.08 |
 
 ---
 

@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-09-28 23:49 UTC. 286 Werte, Fenster 90 Kalendertage. EUR/USD 1.1374._
+_Erstellt 2026-09-29 01:56 UTC. 286 Werte, Fenster 90 Kalendertage. EUR/USD 1.1374._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -79,8 +79,7 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | RHM.DE (RHM.DE) | 967.4 | - | - | ja | 35.42 |
 | ENR.DE (ENR.DE) | 141.24 | - | - | ja | 45.38 |
 | ZAL.DE (ZAL.DE) | 21.86 | - | - | ja | 39.94 |
-| Platin (PL=F) | 1734.1 | - | - | ja | 43.5 |
-| Brent Oel (BZ=F) | 98.6 | - | - | ja | 49.28 |
+| Platin (PL=F) | 1723.2 | - | - | ja | 42.33 |
 
 ---
 

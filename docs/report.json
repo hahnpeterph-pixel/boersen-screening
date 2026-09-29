@@ -1,5 +1,5 @@
 {
- "date": "2026-09-28",
+ "date": "2026-09-29",
  "ranks": {
   "turnaround": [
    "ZS",
@@ -25,14 +25,14 @@
    "ILMN",
    "MRNA",
    "DHL.DE",
-   "TMO",
    "SY1.DE",
+   "TMO",
    "VLO",
    "ING",
    "CBK.DE",
    "MPC",
-   "BBVA",
    "SIE.DE",
+   "BBVA",
    "DE"
   ],
   "value": [
@@ -55,156 +55,20 @@
  },
  "changes": {
   "turnaround": {
-   "entries": [
-    {
-     "ticker": "MDT",
-     "rank": 3
-    },
-    {
-     "ticker": "CVX",
-     "rank": 4
-    },
-    {
-     "ticker": "EQNR",
-     "rank": 6
-    },
-    {
-     "ticker": "UL",
-     "rank": 8
-    },
-    {
-     "ticker": "PBR",
-     "rank": 9
-    },
-    {
-     "ticker": "MUV2.DE",
-     "rank": 11
-    },
-    {
-     "ticker": "MA",
-     "rank": 12
-    },
-    {
-     "ticker": "PANW",
-     "rank": 13
-    },
-    {
-     "ticker": "DB1.DE",
-     "rank": 14
-    },
-    {
-     "ticker": "DTE.DE",
-     "rank": 15
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "SPOT",
-     "old_rank": 4
-    },
-    {
-     "ticker": "DIS",
-     "old_rank": 5
-    },
-    {
-     "ticker": "MCK",
-     "old_rank": 7
-    },
-    {
-     "ticker": "BBVA",
-     "old_rank": 8
-    },
-    {
-     "ticker": "ING",
-     "old_rank": 10
-    },
-    {
-     "ticker": "MDB",
-     "old_rank": 11
-    },
-    {
-     "ticker": "BLK",
-     "old_rank": 12
-    },
-    {
-     "ticker": "XOM",
-     "old_rank": 13
-    },
-    {
-     "ticker": "CTAS",
-     "old_rank": 14
-    },
-    {
-     "ticker": "SCCO",
-     "old_rank": 15
-    }
-   ],
-   "moves": [
-    {
-     "ticker": "T",
-     "rank": 10,
-     "delta": -8
-    }
-   ]
-  },
-  "momentum": {
-   "entries": [
-    {
-     "ticker": "AMD",
-     "rank": 1
-    },
-    {
-     "ticker": "TMO",
-     "rank": 7
-    },
-    {
-     "ticker": "DE",
-     "rank": 15
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "DELL",
-     "old_rank": 3
-    },
-    {
-     "ticker": "MRK",
-     "old_rank": 8
-    },
-    {
-     "ticker": "SCCO",
-     "old_rank": 15
-    }
-   ],
-   "moves": [
-    {
-     "ticker": "ING",
-     "rank": 10,
-     "delta": -6
-    }
-   ]
-  },
-  "value": {
-   "entries": [
-    {
-     "ticker": "ABNB",
-     "rank": 5
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "MNST",
-     "old_rank": 12
-    }
-   ],
+   "entries": [],
+   "exits": [],
    "moves": []
   },
-  "analyst_flips": [
-   {
-    "ticker": "MRNA",
-    "now": -1,
-    "old": 0
-   }
-  ]
+  "momentum": {
+   "entries": [],
+   "exits": [],
+   "moves": []
+  },
+  "value": {
+   "entries": [],
+   "exits": [],
+   "moves": []
+  },
+  "analyst_flips": []
  }
 }

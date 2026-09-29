@@ -1504,7 +1504,6 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | GOOGL (GOOGL) | 2026-04-08 | aufwaerts | 305.63 | 1.676 | 4.849 | 119 |
 | GOOGL (GOOGL) | 2026-09-11 | aufwaerts | 333.23 | 0.221 | 0.54 | 11 |
 | GS (GS) | 2026-09-14 | abwaerts | 1018.59 | 0.322 | 0.843 | 10 |
-| GSK (GSK) | 2025-09-29 | aufwaerts | 40.23 | 0.364 | 0.646 | 250 |
 | GSK (GSK) | 2025-09-30 | aufwaerts | 41.1 | 0.912 | 1.825 | 249 |
 | GSK (GSK) | 2025-10-29 | aufwaerts | 44.24 | 1.458 | 4.024 | 228 |
 | GSK (GSK) | 2026-04-21 | abwaerts | 57.3 | 0.685 | 1.431 | 110 |
@@ -1617,7 +1616,6 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | LMT (LMT) | 2026-07-22 | aufwaerts | 507.75 | 0.595 | 1.583 | 47 |
 | LOW (LOW) | 2026-02-25 | abwaerts | 277.09 | 1.42 | 3.912 | 148 |
 | LOW (LOW) | 2026-08-27 | abwaerts | 210.21 | 0.298 | 0.799 | 21 |
-| LRCX (LRCX) | 2025-09-29 | aufwaerts | 128.76 | 1.147 | 3.355 | 250 |
 | LRCX (LRCX) | 2025-11-24 | aufwaerts | 144.41 | 0.156 | 0.824 | 210 |
 | LRCX (LRCX) | 2026-01-02 | aufwaerts | 174.91 | 0.452 | 1.681 | 184 |
 | LRCX (LRCX) | 2026-01-05 | aufwaerts | 185.78 | 0.621 | 2.336 | 183 |
@@ -1667,7 +1665,6 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | MFG (MFG) | 2026-08-25 | aufwaerts | 10.27 | 0.246 | 0.584 | 23 |
 | MFG (MFG) | 2026-09-15 | abwaerts | 11.28 | 0.629 | 1.33 | 9 |
 | MFG (MFG) | 2026-09-25 | aufwaerts | 10.58 | 1.678 | 4.159 | 1 |
-| MNST (MNST) | 2025-09-29 | aufwaerts | 32.73 | 0.183 | 0.367 | 250 |
 | MNST (MNST) | 2025-11-07 | aufwaerts | 33.855 | 1.618 | 4.002 | 221 |
 | MNST (MNST) | 2026-05-08 | aufwaerts | 38.48 | 3.018 | 9.797 | 97 |
 | MNST (MNST) | 2026-08-27 | abwaerts | 47.79 | 0.681 | 1.674 | 21 |
@@ -1712,7 +1709,6 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | MSTR (MSTR) | 2026-09-21 | aufwaerts | 154.02 | 1.078 | 6.856 | 5 |
 | MTX.DE (MTX.DE) | 2026-06-12 | aufwaerts | 306.7 | 0.852 | 3.261 | 76 |
 | MTX.DE (MTX.DE) | 2026-06-15 | aufwaerts | 321.9 | 0.453 | 1.771 | 75 |
-| MU (MU) | 2025-09-29 | aufwaerts | 158.92 | 0.177 | 0.68 | 250 |
 | MU (MU) | 2025-12-18 | aufwaerts | 237.45 | 1.239 | 8.035 | 193 |
 | MU (MU) | 2026-01-02 | aufwaerts | 293.17 | 0.132 | 0.669 | 184 |
 | MU (MU) | 2026-04-01 | aufwaerts | 337.84 | 0.396 | 3.277 | 123 |
@@ -1901,7 +1897,6 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | REGN (REGN) | 2026-09-28 | abwaerts | 784.13 | 0.594 | 1.568 | 0 |
 | RHM.DE (RHM.DE) | 2026-05-08 | abwaerts | 1326.4 | 0.115 | 0.573 | 101 |
 | RHM.DE (RHM.DE) | 2026-09-01 | abwaerts | 1110.8 | 0.151 | 0.594 | 19 |
-| RIO (RIO) | 2025-09-29 | aufwaerts | 65.15 | 0.378 | 0.645 | 250 |
 | RIO (RIO) | 2025-11-25 | aufwaerts | 70.55 | 0.877 | 1.559 | 209 |
 | RIO (RIO) | 2025-12-03 | aufwaerts | 72.38 | 0.558 | 0.981 | 204 |
 | RIO (RIO) | 2025-12-17 | aufwaerts | 76.73 | 0.515 | 0.899 | 194 |
@@ -1938,7 +1933,6 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | Zucker (SB=F) | 2026-09-25 | aufwaerts | 18.02 | 0.863 | 2.886 | 1 |
 | Zucker (SB=F) | 2026-09-28 | aufwaerts | 17.71 | 1.488 | 5.025 | 0 |
 | SBUX (SBUX) | 2026-09-09 | abwaerts | 101.75 | 0.447 | 1.091 | 13 |
-| SCCO (SCCO) | 2025-09-29 | aufwaerts | 114.5455 | 0.488 | 1.471 | 250 |
 | SCCO (SCCO) | 2025-11-25 | aufwaerts | 123.5372 | 0.372 | 1.351 | 209 |
 | SCCO (SCCO) | 2025-12-03 | aufwaerts | 132.0008 | 0.813 | 2.632 | 204 |
 | SCCO (SCCO) | 2026-01-02 | aufwaerts | 140.4644 | 0.46 | 1.341 | 184 |
@@ -1997,7 +1991,6 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | SMFG (SMFG) | 2026-08-26 | aufwaerts | 25.18 | 0.409 | 0.834 | 22 |
 | SMFG (SMFG) | 2026-09-15 | abwaerts | 27.09 | 0.699 | 1.366 | 9 |
 | SMFG (SMFG) | 2026-09-25 | aufwaerts | 25.58 | 1.517 | 3.479 | 1 |
-| SNDK (SNDK) | 2025-09-29 | aufwaerts | 99.646 | 0.743 | 4.62 | 250 |
 | SNDK (SNDK) | 2025-10-15 | aufwaerts | 130.48 | 0.412 | 3.273 | 238 |
 | SNDK (SNDK) | 2025-10-29 | aufwaerts | 178.82 | 0.569 | 4.39 | 228 |
 | SNDK (SNDK) | 2026-01-02 | aufwaerts | 241.9 | 0.12 | 1.013 | 184 |
@@ -2153,7 +2146,6 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | WDAY (WDAY) | 2026-07-27 | aufwaerts | 136.0 | 0.653 | 4.081 | 44 |
 | WDAY (WDAY) | 2026-08-03 | aufwaerts | 160.89 | 0.516 | 3.077 | 39 |
 | WDAY (WDAY) | 2026-08-07 | aufwaerts | 171.4 | 0.307 | 1.692 | 35 |
-| WDC (WDC) | 2025-09-29 | aufwaerts | 108.06 | 1.032 | 3.665 | 250 |
 | WDC (WDC) | 2025-10-29 | aufwaerts | 126.82 | 0.606 | 3.635 | 228 |
 | WDC (WDC) | 2026-04-01 | aufwaerts | 271.09 | 0.41 | 3.471 | 123 |
 | WDC (WDC) | 2026-04-08 | aufwaerts | 312.2 | 0.995 | 7.303 | 119 |

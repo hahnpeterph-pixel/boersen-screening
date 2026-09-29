@@ -1,8 +1,8 @@
-# Boersen-Screening - 2026-09-28
+# Boersen-Screening - 2026-09-29
 
-_Stand: Schlusskurse vom 2026-09-28, aber 40 Werte haengen zurueck - siehe Standwarnung. Erstellt 2026-09-28T23:49:00+00:00 UTC. 271 Werte ausgewertet._
+_Stand: Schlusskurse vom 2026-09-28, aber 40 Werte haengen zurueck - siehe Standwarnung. Erstellt 2026-09-29T01:56:02+00:00 UTC. 270 Werte ausgewertet._
 
-> **Standwarnung: 40 von 271 Werten haengen zurueck.** Neuester Handelstag im Bericht ist 2026-09-28.
+> **Standwarnung: 40 von 270 Werten haengen zurueck.** Neuester Handelstag im Bericht ist 2026-09-28.
 >
 > Ursache ist in aller Regel Yahoo: die vorlaeufige Tageskerze einer Boerse wird ueber Nacht durch die offizielle Abrechnung ersetzt, und solange die fehlt, faellt der Tag weg. Betroffen sind meist die europaeischen Notierungen. Fuer diese Werte gelten Kurs, ATR, RSI und Tiefs unten NICHT fuer den neuesten Handelstag.
 >
@@ -60,7 +60,7 @@ _Stand: Schlusskurse vom 2026-09-28, aber 40 Werte haengen zurueck - siehe Stand
 
 ## 🎯 Analysten-Filter (Kursziel ≥15%, Kaufen-Anteil ≥75%)
 
-_Ueber alle 271 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei Gleichstand nach Kurspotenzial. Maximal 20 Treffer. Value-Trap-Ausschluesse gelten auch hier. RSI auf drei Zeitebenen, jeweils echt neu berechnet (nicht umgerechnet): Tag, Woche, Stunde. "k.A." bei Stunde heisst: fuer diesen Wert lagen keine verwertbaren Stundenkerzen vor._
+_Ueber alle 270 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei Gleichstand nach Kurspotenzial. Maximal 20 Treffer. Value-Trap-Ausschluesse gelten auch hier. RSI auf drei Zeitebenen, jeweils echt neu berechnet (nicht umgerechnet): Tag, Woche, Stunde. "k.A." bei Stunde heisst: fuer diesen Wert lagen keine verwertbaren Stundenkerzen vor._
 
 | Rang | Ticker | ISIN | Name | Index | Kurs | Abstand ATH (Info) | Kaufen-Anteil Analysten | Kursziel | RSI Tag | RSI Woche | RSI Stunde | Letztes Rating |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -161,6 +161,6 @@ _Ueber alle 271 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 
 ---
 
-_Nicht auswertbar heute (3): HONA, SKHY, SPCX_
+_Nicht auswertbar heute (4): ARM, HONA, SKHY, SPCX_
 
 _Automatisch erzeugte Kennzahlensortierung, keine Anlageberatung._

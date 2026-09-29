@@ -1,4 +1,4 @@
-# Boden-Screening 2026-09-28 (Stand 2026-09-28 23:52 UTC)
+# Boden-Screening 2026-09-28 (Stand 2026-09-29 01:58 UTC)
 
 Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RSI < 50 + mind. 2 Boden-Punkte (nur Technik). Die Filter (Analysten, Anker, CRV 2:1) stehen in docs/heute.csv. Boden-Anker = niedrigster Puffer mit 60 % Halterate fuer diese Gruppe und diesen Wert (Vollauf), KO-Marke = Bezugstief - Anker x ATR.
 
@@ -11,7 +11,7 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | LIN | 7 | 49 | 1.50 | 443.86 | 100 % |
 | MBG.DE | 2 | 28 | 3.75 | 36.69 | 52 % |
 | NVO | 3 | 31 | - | - | 21 % |
-| ODFL | 4 | 36 | 2.50 | 160.55 | 50 % |
+| ODFL | 4 | 36 | 2.50 | 160.53 | 50 % |
 | PCAR | 6 | 24 | 2.25 | 103.89 | 43 % |
 
 ## Weitere Pruefttage (80)

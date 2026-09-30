@@ -3,37 +3,37 @@
  "ranks": {
   "turnaround": [
    "ZS",
-   "SHOP",
-   "MDT",
    "SHL.DE",
+   "WDAY",
+   "AMGN",
    "CVX",
-   "EQNR",
-   "UL",
-   "PBR",
-   "BMY",
+   "XOM",
+   "ABNB",
+   "QIA.DE",
+   "SAP.DE",
+   "SHEL",
+   "CTAS",
    "T",
-   "MA",
-   "PANW",
    "BEI.DE",
-   "MMM",
-   "MUV2.DE"
+   "MA",
+   "AMZN"
   ],
   "momentum": [
    "CRWD",
-   "PANW",
    "ILMN",
    "MRNA",
-   "NET",
-   "SY1.DE",
-   "TMO",
+   "MU",
    "VLO",
-   "ING",
-   "SIE.DE",
-   "CBK.DE",
+   "STX",
    "MPC",
-   "BBVA",
+   "SY1.DE",
+   "BAYN.DE",
+   "SIE.DE",
+   "ING",
+   "CBK.DE",
+   "DB1.DE",
    "DHL.DE",
-   "DE"
+   "META"
   ],
   "value": [
    "SNDK",
@@ -43,9 +43,9 @@
    "ABNB",
    "PBR",
    "RIO",
-   "META",
-   "REGN",
    "COP",
+   "REGN",
+   "META",
    "BLK",
    "V",
    "BHP",
@@ -57,126 +57,134 @@
   "turnaround": {
    "entries": [
     {
-     "ticker": "MDT",
+     "ticker": "WDAY",
      "rank": 3
     },
     {
-     "ticker": "EQNR",
-     "rank": 6
-    },
-    {
-     "ticker": "UL",
-     "rank": 7
-    },
-    {
-     "ticker": "PBR",
-     "rank": 8
-    },
-    {
-     "ticker": "BMY",
-     "rank": 9
-    },
-    {
-     "ticker": "MA",
-     "rank": 11
-    },
-    {
-     "ticker": "PANW",
-     "rank": 12
-    },
-    {
-     "ticker": "MMM",
-     "rank": 14
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "WDAY",
-     "old_rank": 3
-    },
-    {
-     "ticker": "QIA.DE",
-     "old_rank": 4
-    },
-    {
      "ticker": "AMGN",
-     "old_rank": 6
+     "rank": 4
     },
     {
      "ticker": "XOM",
-     "old_rank": 7
+     "rank": 6
     },
     {
      "ticker": "ABNB",
-     "old_rank": 8
-    },
-    {
-     "ticker": "SHEL",
-     "old_rank": 9
-    },
-    {
-     "ticker": "CTAS",
-     "old_rank": 10
-    },
-    {
-     "ticker": "AMZN",
-     "old_rank": 15
-    }
-   ],
-   "moves": [
-    {
-     "ticker": "SHOP",
-     "rank": 2,
-     "delta": 9
-    }
-   ]
-  },
-  "momentum": {
-   "entries": [
-    {
-     "ticker": "PANW",
-     "rank": 2
-    },
-    {
-     "ticker": "NET",
-     "rank": 5
-    },
-    {
-     "ticker": "TMO",
      "rank": 7
     },
     {
-     "ticker": "BBVA",
-     "rank": 13
+     "ticker": "QIA.DE",
+     "rank": 8
     },
     {
-     "ticker": "DE",
+     "ticker": "SAP.DE",
+     "rank": 9
+    },
+    {
+     "ticker": "SHEL",
+     "rank": 10
+    },
+    {
+     "ticker": "CTAS",
+     "rank": 11
+    },
+    {
+     "ticker": "AMZN",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "MU",
-     "old_rank": 4
+     "ticker": "SHOP",
+     "old_rank": 2
     },
     {
-     "ticker": "STX",
+     "ticker": "MDT",
+     "old_rank": 3
+    },
+    {
+     "ticker": "EQNR",
      "old_rank": 6
     },
     {
-     "ticker": "BAYN.DE",
+     "ticker": "UL",
+     "old_rank": 7
+    },
+    {
+     "ticker": "PBR",
+     "old_rank": 8
+    },
+    {
+     "ticker": "BMY",
      "old_rank": 9
     },
     {
-     "ticker": "DB1.DE",
-     "old_rank": 13
+     "ticker": "PANW",
+     "old_rank": 12
     },
     {
-     "ticker": "META",
+     "ticker": "MMM",
+     "old_rank": 14
+    },
+    {
+     "ticker": "MUV2.DE",
      "old_rank": 15
     }
    ],
    "moves": []
+  },
+  "momentum": {
+   "entries": [
+    {
+     "ticker": "MU",
+     "rank": 4
+    },
+    {
+     "ticker": "STX",
+     "rank": 6
+    },
+    {
+     "ticker": "BAYN.DE",
+     "rank": 9
+    },
+    {
+     "ticker": "DB1.DE",
+     "rank": 13
+    },
+    {
+     "ticker": "META",
+     "rank": 15
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "PANW",
+     "old_rank": 2
+    },
+    {
+     "ticker": "NET",
+     "old_rank": 5
+    },
+    {
+     "ticker": "TMO",
+     "old_rank": 7
+    },
+    {
+     "ticker": "BBVA",
+     "old_rank": 13
+    },
+    {
+     "ticker": "DE",
+     "old_rank": 15
+    }
+   ],
+   "moves": [
+    {
+     "ticker": "MPC",
+     "rank": 7,
+     "delta": 5
+    }
+   ]
   },
   "value": {
    "entries": [],

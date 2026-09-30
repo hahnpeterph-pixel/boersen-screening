@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-09-30 01:19 UTC. 286 Werte, Fenster 90 Kalendertage. EUR/USD 1.1373._
+_Erstellt 2026-09-30 11:02 UTC. 286 Werte, Fenster 90 Kalendertage. EUR/USD 1.1373._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -18,7 +18,6 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | HD (HD) | 288.04 | - | - | ja | 28.15 |
 | JNJ (JNJ) | 267.57 | - | - | ja | 48.53 |
 | JPM (JPM) | 334.98 | - | - | ja | 34.7 |
-| KDP (KDP) | 31.03 | - | - | ja | 46.33 |
 | LULU (LULU) | 96.87 | - | - | ja | 36.74 |
 | NVDA (NVDA) | 227.21 | - | - | ja | 56.59 |
 | QCOM (QCOM) | 184.1 | - | - | ja | 51.79 |
@@ -55,21 +54,28 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | CM (CM) | 111.71 | - | - | ja | 41.18 |
 | APP (APP) | 305.66 | - | - | ja | 40.5 |
 | MSTR (MSTR) | 154.67 | - | - | ja | 60.34 |
-| ADS.DE (ADS.DE) | 145.2 | - | - | ja | 44.7 |
-| AIR.DE (AIR.DE) | 190.24 | - | - | ja | 34.48 |
-| BAYN.DE (BAYN.DE) | 48.9 | - | - | ja | 49.2 |
-| BMW.DE (BMW.DE) | 54.16 | - | - | ja | 26.57 |
-| CBK.DE (CBK.DE) | 42.05 | - | ja | ja | 55.96 |
-| CON.DE (CON.DE) | 68.4 | - | - | ja | 44.78 |
-| DTG.DE (DTG.DE) | 42.12 | - | - | ja | 36.26 |
-| DTE.DE (DTE.DE) | 26.33 | - | - | ja | 32.94 |
+| ADS.DE (ADS.DE) | 145.75 | - | - | ja | 45.52 |
+| AIR.DE (AIR.DE) | 190.58 | - | - | ja | 34.98 |
+| ALV.DE (ALV.DE) | 422.8 | - | ja | ja | 39.29 |
+| BAYN.DE (BAYN.DE) | 48.88 | - | - | ja | 49.08 |
+| BMW.DE (BMW.DE) | 54.5 | - | - | ja | 27.33 |
+| CBK.DE (CBK.DE) | 41.99 | - | ja | ja | 55.48 |
+| CON.DE (CON.DE) | 68.3 | - | - | ja | 44.42 |
+| DTG.DE (DTG.DE) | 42.16 | - | - | ja | 36.46 |
+| DHL.DE (DHL.DE) | 56.96 | - | - | ja | 54.69 |
+| DTE.DE (DTE.DE) | 26.4 | - | - | ja | 33.48 |
 | EOAN.DE (EOAN.DE) | 16.905 | - | - | ja | 34.36 |
-| FRE.DE (FRE.DE) | 43.93 | - | - | ja | 40.77 |
+| FRE.DE (FRE.DE) | 44.2 | - | - | ja | 42.12 |
 | HNR1.DE (HNR1.DE) | 256.2 | - | - | ja | 52.81 |
-| HEN3.DE (HEN3.DE) | 73.68 | - | - | ja | 45.36 |
-| MBG.DE (MBG.DE) | 40.445 | - | - | ja | 24.46 |
-| MUV2.DE (MUV2.DE) | 506.8 | - | - | ja | 46.8 |
-| Kakao (CC=F) | 5354.0 | - | - | ja | 38.58 |
+| MBG.DE (MBG.DE) | 40.665 | - | - | ja | 25.11 |
+| MUV2.DE (MUV2.DE) | 507.6 | - | - | ja | 47.41 |
+| RHM.DE (RHM.DE) | 960.4 | - | - | ja | 34.45 |
+| Platin (PL=F) | 1680.1 | - | - | ja | 37.99 |
+| Brent Oel (BZ=F) | 102.59 | - | - | ja | 54.75 |
+| WTI Oel (CL=F) | 89.38 | - | - | ja | 44.02 |
+| Kupfer (HG=F) | 6.5435 | - | ja | ja | 48.01 |
+| Weizen (ZW=F) | 692.75 | ja | - | - | 44.52 |
+| Kakao (CC=F) | 5408.0 | - | - | ja | 39.81 |
 
 ---
 

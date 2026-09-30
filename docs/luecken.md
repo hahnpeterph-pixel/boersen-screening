@@ -1511,7 +1511,6 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | GOOGL (GOOGL) | 2026-04-08 | aufwaerts | 305.63 | 1.676 | 4.849 | 120 |
 | GOOGL (GOOGL) | 2026-09-11 | aufwaerts | 333.23 | 0.221 | 0.54 | 12 |
 | GS (GS) | 2026-09-14 | abwaerts | 1018.59 | 0.322 | 0.843 | 11 |
-| GSK (GSK) | 2025-09-30 | aufwaerts | 41.1 | 0.912 | 1.825 | 250 |
 | GSK (GSK) | 2025-10-29 | aufwaerts | 44.24 | 1.458 | 4.024 | 229 |
 | GSK (GSK) | 2026-04-21 | abwaerts | 57.3 | 0.685 | 1.431 | 111 |
 | GSK (GSK) | 2026-09-14 | aufwaerts | 48.8 | 1.329 | 3.053 | 11 |
@@ -1663,7 +1662,6 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | MDT (MDT) | 2026-02-17 | abwaerts | 99.12 | 1.404 | 3.269 | 155 |
 | MDT (MDT) | 2026-03-05 | abwaerts | 95.42 | 0.311 | 0.702 | 143 |
 | MDT (MDT) | 2026-06-03 | aufwaerts | 74.48 | 1.447 | 3.545 | 81 |
-| MELI (MELI) | 2025-09-30 | abwaerts | 2484.6499 | 0.126 | 0.388 | 250 |
 | META (META) | 2026-09-03 | aufwaerts | 600.38 | 0.199 | 0.685 | 17 |
 | META (META) | 2026-09-09 | aufwaerts | 624.8 | 1.109 | 3.816 | 14 |
 | MFG (MFG) | 2025-10-20 | aufwaerts | 6.24 | 1.62 | 3.526 | 236 |

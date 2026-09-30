@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-09-29 22:53 UTC. 286 Werte, Fenster 90 Kalendertage. EUR/USD 1.1342._
+_Erstellt 2026-09-30 01:19 UTC. 286 Werte, Fenster 90 Kalendertage. EUR/USD 1.1373._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -18,6 +18,7 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | HD (HD) | 288.04 | - | - | ja | 28.15 |
 | JNJ (JNJ) | 267.57 | - | - | ja | 48.53 |
 | JPM (JPM) | 334.98 | - | - | ja | 34.7 |
+| KDP (KDP) | 31.03 | - | - | ja | 46.33 |
 | LULU (LULU) | 96.87 | - | - | ja | 36.74 |
 | NVDA (NVDA) | 227.21 | - | - | ja | 56.59 |
 | QCOM (QCOM) | 184.1 | - | - | ja | 51.79 |
@@ -68,10 +69,7 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | HEN3.DE (HEN3.DE) | 73.68 | - | - | ja | 45.36 |
 | MBG.DE (MBG.DE) | 40.445 | - | - | ja | 24.46 |
 | MUV2.DE (MUV2.DE) | 506.8 | - | - | ja | 46.8 |
-| Gold (GC=F) | 4210.1001 | - | - | ja | 35.16 |
-| Weizen (ZW=F) | 693.25 | ja | - | - | 44.72 |
 | Kakao (CC=F) | 5354.0 | - | - | ja | 38.58 |
-| EUR/USD (EURUSD=X) | 1.1342 | - | - | ja | 22.69 |
 
 ---
 

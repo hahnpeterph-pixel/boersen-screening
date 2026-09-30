@@ -1,4 +1,4 @@
-# Boden-Screening 2026-09-29 (Stand 2026-09-29 22:57 UTC)
+# Boden-Screening 2026-09-29 (Stand 2026-09-30 01:22 UTC)
 
 Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RSI < 50 + mind. 2 Boden-Punkte (nur Technik). Die Filter (Analysten, Anker, CRV 2:1) stehen in docs/heute.csv. Boden-Anker = niedrigster Puffer mit 60 % Halterate fuer diese Gruppe und diesen Wert (Vollauf), KO-Marke = Bezugstief - Anker x ATR.
 
@@ -14,12 +14,12 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | MELI | 2 | 35 | 2.50 | 1548.24 | 50 % |
 | ORCL | 3 | 43 | 1.75 | 118.11 | 83 % |
 | SCHW | 5 | 33 | 2.00 | 92.58 | 71 % |
-| SPG | 4 | 35 | 2.75 | 195.90 | 21 % |
+| SPG | 4 | 35 | 2.75 | 195.90 | 23 % |
 | UBER | 4 | 40 | 2.50 | 63.50 | 95 % |
 | UNP | 2 | 34 | 2.00 | 258.71 | 86 % |
 | VNA.DE | 7 | 32 | 2.50 | 15.95 | 53 % |
 | WELL | 4 | 48 | 2.50 | 215.73 | 82 % |
-| XEL | 3 | 35 | 1.50 | 66.73 | 83 % |
+| XEL | 3 | 35 | 1.50 | 66.73 | 86 % |
 
 ## Weitere Pruefttage (78)
 
@@ -32,6 +32,7 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | ACN | 1 | 1 P, Tief 1 |
 | ADI | 1 | 1 P, Tief 1, RSI >= 50 |
 | ADP | 1 | 1 P, Umkehr a |
+| AMT | 1 | 1 P, Umkehr a |
 | AMZN | 1 | 1 P |
 | AVGO | 1 | 1 P |
 | CAT | 1 | 1 P, RSI >= 50 |
@@ -64,7 +65,6 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | RHM.DE | 1 | 1 P, Umkehr a |
 | ROP | 1 | 1 P, Umkehr a |
 | SNY | 1 | 1 P, Umkehr a |
-| AMT | 0 | 0 P, Umkehr a |
 | BIIB | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
 | BNS | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
 | BP | 0 | 0 P, Tief 1, Umkehr a |

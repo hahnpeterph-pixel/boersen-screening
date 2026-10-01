@@ -4,19 +4,19 @@
   "turnaround": [
    "SAP.DE",
    "SONY",
-   "SHL.DE",
-   "QIA.DE",
-   "ZS",
    "FRE.DE",
+   "ZS",
+   "AMGN",
    "SHEL",
    "CTAS",
+   "DBK.DE",
+   "VRTX",
    "XOM",
-   "MUV2.DE",
    "EQNR",
    "MA",
+   "DB1.DE",
    "ABNB",
-   "SY1.DE",
-   "HNR1.DE"
+   "BHP"
   ],
   "momentum": [
    "MRNA",
@@ -26,13 +26,13 @@
    "ILMN",
    "VLO",
    "MPC",
-   "SY1.DE",
+   "DHL.DE",
    "TMO",
    "SIE.DE",
-   "CBK.DE",
+   "SY1.DE",
    "DB1.DE",
    "MFG",
-   "DHL.DE",
+   "MTX.DE",
    "PSX"
   ],
   "value": [
@@ -57,37 +57,45 @@
   "turnaround": {
    "entries": [
     {
-     "ticker": "SONY",
-     "rank": 2
+     "ticker": "AMGN",
+     "rank": 5
     },
     {
-     "ticker": "EQNR",
-     "rank": 11
+     "ticker": "DBK.DE",
+     "rank": 8
     },
     {
-     "ticker": "SY1.DE",
-     "rank": 14
+     "ticker": "VRTX",
+     "rank": 9
     },
     {
-     "ticker": "HNR1.DE",
+     "ticker": "DB1.DE",
+     "rank": 13
+    },
+    {
+     "ticker": "BHP",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "WDAY",
-     "old_rank": 5
+     "ticker": "SHL.DE",
+     "old_rank": 3
     },
     {
-     "ticker": "CVX",
-     "old_rank": 7
+     "ticker": "QIA.DE",
+     "old_rank": 4
     },
     {
-     "ticker": "T",
-     "old_rank": 13
+     "ticker": "MUV2.DE",
+     "old_rank": 10
     },
     {
-     "ticker": "AMZN",
+     "ticker": "SY1.DE",
+     "old_rank": 14
+    },
+    {
+     "ticker": "HNR1.DE",
      "old_rank": 15
     }
    ],
@@ -96,65 +104,23 @@
   "momentum": {
    "entries": [
     {
-     "ticker": "ANET",
-     "rank": 2
-    },
-    {
-     "ticker": "SNOW",
-     "rank": 3
-    },
-    {
-     "ticker": "AMD",
-     "rank": 4
-    },
-    {
-     "ticker": "DB1.DE",
-     "rank": 12
-    },
-    {
-     "ticker": "MFG",
-     "rank": 13
-    },
-    {
-     "ticker": "DHL.DE",
+     "ticker": "MTX.DE",
      "rank": 14
-    },
-    {
-     "ticker": "PSX",
-     "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "CRWD",
-     "old_rank": 1
-    },
-    {
-     "ticker": "MU",
-     "old_rank": 5
-    },
-    {
-     "ticker": "STX",
-     "old_rank": 6
-    },
-    {
-     "ticker": "ING",
-     "old_rank": 10
-    },
-    {
-     "ticker": "BBVA",
-     "old_rank": 13
-    },
-    {
-     "ticker": "META",
-     "old_rank": 14
-    },
-    {
-     "ticker": "EMR",
-     "old_rank": 15
+     "ticker": "CBK.DE",
+     "old_rank": 11
     }
    ],
-   "moves": []
+   "moves": [
+    {
+     "ticker": "DHL.DE",
+     "rank": 8,
+     "delta": 6
+    }
+   ]
   },
   "value": {
    "entries": [],

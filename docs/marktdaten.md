@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-10-01 04:03 UTC. 286 Werte, Fenster 90 Kalendertage. EUR/USD 1.1341._
+_Erstellt 2026-10-01 11:29 UTC. 286 Werte, Fenster 90 Kalendertage. EUR/USD 1.1341._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -107,22 +107,23 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | CM (CM) | 110.18 | - | - | ja | 37.66 |
 | GSK (GSK) | 48.17 | - | - | ja | 38.55 |
 | APP (APP) | 290.43 | - | - | ja | 34.87 |
-| ALV.DE (ALV.DE) | 416.2 | - | - | ja | 35.46 |
-| BAYN.DE (BAYN.DE) | 47.92 | - | - | ja | 43.79 |
-| BEI.DE (BEI.DE) | 77.32 | - | - | ja | 52.31 |
-| CBK.DE (CBK.DE) | 40.51 | - | - | ja | 45.33 |
-| CON.DE (CON.DE) | 67.16 | - | - | ja | 40.44 |
-| DTG.DE (DTG.DE) | 41.93 | - | - | ja | 35.27 |
-| DTE.DE (DTE.DE) | 26.15 | - | - | ja | 31.49 |
-| HNR1.DE (HNR1.DE) | 252.8 | - | - | ja | 47.2 |
-| HEI.DE (HEI.DE) | 141.85 | - | ja | ja | 31.42 |
-| HEN3.DE (HEN3.DE) | 73.16 | - | ja | ja | 42.67 |
-| MUV2.DE (MUV2.DE) | 503.6 | - | - | ja | 44.3 |
-| SAP.DE (SAP.DE) | 185.98 | ja | - | - | 55.63 |
-| SRT3.DE (SRT3.DE) | 257.0 | - | - | ja | 58.25 |
-| SIE.DE (SIE.DE) | 275.4 | - | - | ja | 52.13 |
-| SHL.DE (SHL.DE) | 38.02 | - | - | ja | 47.17 |
-| SY1.DE (SY1.DE) | 92.04 | - | - | ja | 53.41 |
+| ALV.DE (ALV.DE) | 416.3 | - | - | ja | 35.51 |
+| BAYN.DE (BAYN.DE) | 47.95 | - | - | ja | 43.93 |
+| BEI.DE (BEI.DE) | 76.94 | - | - | ja | 50.55 |
+| CBK.DE (CBK.DE) | 40.31 | - | - | ja | 44.24 |
+| CON.DE (CON.DE) | 67.12 | - | - | ja | 40.32 |
+| DTG.DE (DTG.DE) | 41.83 | - | - | ja | 34.77 |
+| DTE.DE (DTE.DE) | 26.11 | - | - | ja | 31.19 |
+| HNR1.DE (HNR1.DE) | 252.4 | - | - | ja | 46.62 |
+| HEI.DE (HEI.DE) | 141.75 | - | ja | ja | 31.31 |
+| HEN3.DE (HEN3.DE) | 73.02 | - | ja | ja | 42.02 |
+| MUV2.DE (MUV2.DE) | 502.4 | - | - | ja | 43.44 |
+| QIA.DE (QIA.DE) | 38.72 | - | - | ja | 58.68 |
+| SAP.DE (SAP.DE) | 185.66 | ja | - | - | 55.2 |
+| SIE.DE (SIE.DE) | 275.5 | - | - | ja | 52.24 |
+| SHL.DE (SHL.DE) | 37.97 | - | - | ja | 46.73 |
+| SY1.DE (SY1.DE) | 91.76 | - | - | ja | 52.35 |
+| VOW3.DE (VOW3.DE) | 70.46 | - | ja | ja | 35.71 |
 | Silber (SI=F) | 60.098 | - | - | ja | 36.28 |
 | Weizen (ZW=F) | 675.75 | - | ja | ja | 39.38 |
 | Mais (ZC=F) | 500.75 | - | - | ja | 43.04 |

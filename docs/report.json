@@ -3,37 +3,37 @@
  "ranks": {
   "turnaround": [
    "SAP.DE",
-   "ZS",
+   "SONY",
    "SHL.DE",
    "QIA.DE",
-   "WDAY",
+   "ZS",
    "FRE.DE",
-   "CVX",
-   "XOM",
-   "ABNB",
    "SHEL",
    "CTAS",
+   "XOM",
    "MUV2.DE",
-   "T",
+   "EQNR",
    "MA",
-   "AMZN"
+   "ABNB",
+   "SY1.DE",
+   "HNR1.DE"
   ],
   "momentum": [
-   "CRWD",
-   "ILMN",
    "MRNA",
+   "ANET",
+   "SNOW",
+   "AMD",
+   "ILMN",
    "VLO",
-   "MU",
-   "STX",
-   "SY1.DE",
    "MPC",
+   "SY1.DE",
    "TMO",
-   "ING",
    "SIE.DE",
    "CBK.DE",
-   "BBVA",
-   "META",
-   "EMR"
+   "DB1.DE",
+   "MFG",
+   "DHL.DE",
+   "PSX"
   ],
   "value": [
    "SNDK",
@@ -43,9 +43,9 @@
    "ABNB",
    "PBR",
    "RIO",
+   "META",
    "COP",
    "REGN",
-   "META",
    "BLK",
    "V",
    "BHP",
@@ -57,37 +57,37 @@
   "turnaround": {
    "entries": [
     {
-     "ticker": "WDAY",
-     "rank": 5
+     "ticker": "SONY",
+     "rank": 2
     },
     {
-     "ticker": "CVX",
-     "rank": 7
+     "ticker": "EQNR",
+     "rank": 11
     },
     {
-     "ticker": "T",
-     "rank": 13
+     "ticker": "SY1.DE",
+     "rank": 14
     },
     {
-     "ticker": "AMZN",
+     "ticker": "HNR1.DE",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "SONY",
-     "old_rank": 2
+     "ticker": "WDAY",
+     "old_rank": 5
     },
     {
-     "ticker": "EQNR",
-     "old_rank": 11
+     "ticker": "CVX",
+     "old_rank": 7
     },
     {
-     "ticker": "SY1.DE",
-     "old_rank": 14
+     "ticker": "T",
+     "old_rank": 13
     },
     {
-     "ticker": "WBD",
+     "ticker": "AMZN",
      "old_rank": 15
     }
    ],
@@ -96,61 +96,61 @@
   "momentum": {
    "entries": [
     {
-     "ticker": "CRWD",
-     "rank": 1
+     "ticker": "ANET",
+     "rank": 2
     },
     {
-     "ticker": "MU",
-     "rank": 5
+     "ticker": "SNOW",
+     "rank": 3
     },
     {
-     "ticker": "STX",
-     "rank": 6
+     "ticker": "AMD",
+     "rank": 4
     },
     {
-     "ticker": "ING",
-     "rank": 10
+     "ticker": "DB1.DE",
+     "rank": 12
     },
     {
-     "ticker": "BBVA",
+     "ticker": "MFG",
      "rank": 13
     },
     {
-     "ticker": "META",
+     "ticker": "DHL.DE",
      "rank": 14
     },
     {
-     "ticker": "EMR",
+     "ticker": "PSX",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "ANET",
-     "old_rank": 2
+     "ticker": "CRWD",
+     "old_rank": 1
     },
     {
-     "ticker": "SNOW",
-     "old_rank": 3
+     "ticker": "MU",
+     "old_rank": 5
     },
     {
-     "ticker": "AMD",
-     "old_rank": 4
+     "ticker": "STX",
+     "old_rank": 6
     },
     {
-     "ticker": "MFG",
-     "old_rank": 12
+     "ticker": "ING",
+     "old_rank": 10
     },
     {
-     "ticker": "DB1.DE",
+     "ticker": "BBVA",
      "old_rank": 13
     },
     {
-     "ticker": "PSX",
+     "ticker": "META",
      "old_rank": 14
     },
     {
-     "ticker": "DHL.DE",
+     "ticker": "EMR",
      "old_rank": 15
     }
    ],

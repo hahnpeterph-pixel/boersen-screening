@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-10-01 01:18 UTC. 286 Werte, Fenster 90 Kalendertage. EUR/USD 1.1341._
+_Erstellt 2026-10-01 04:03 UTC. 286 Werte, Fenster 90 Kalendertage. EUR/USD 1.1341._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -45,6 +45,7 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | SBUX (SBUX) | 93.96 | - | - | ja | 30.75 |
 | SHW (SHW) | 323.27 | - | - | ja | 43.53 |
 | TRV (TRV) | 356.51 | - | - | ja | 36.47 |
+| TSLA (TSLA) | 354.81 | ja | - | - | 46.0 |
 | TXN (TXN) | 280.09 | - | - | ja | 60.83 |
 | UNH (UNH) | 367.08 | - | - | ja | 33.25 |
 | V (V) | 359.33 | - | - | ja | 39.23 |
@@ -122,9 +123,9 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | SIE.DE (SIE.DE) | 275.4 | - | - | ja | 52.13 |
 | SHL.DE (SHL.DE) | 38.02 | - | - | ja | 47.17 |
 | SY1.DE (SY1.DE) | 92.04 | - | - | ja | 53.41 |
-| Palladium (PA=F) | 1208.5 | ja | ja | - | 36.61 |
-| Brent Oel (BZ=F) | 97.88 | - | - | ja | 47.23 |
-| Erdgas (NG=F) | 2.997 | - | - | ja | 52.81 |
+| Silber (SI=F) | 60.098 | - | - | ja | 36.28 |
+| Weizen (ZW=F) | 675.75 | - | ja | ja | 39.38 |
+| Mais (ZC=F) | 500.75 | - | - | ja | 43.04 |
 
 ---
 

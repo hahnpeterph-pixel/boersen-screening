@@ -1,4 +1,4 @@
-# Boden-Screening 2026-09-30 (Stand 2026-10-01 01:21 UTC)
+# Boden-Screening 2026-09-30 (Stand 2026-10-01 04:06 UTC)
 
 Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RSI < 50 + mind. 2 Boden-Punkte (nur Technik). Die Filter (Analysten, Anker, CRV 2:1) stehen in docs/heute.csv. Boden-Anker = niedrigster Puffer mit 60 % Halterate fuer diese Gruppe und diesen Wert (Vollauf), KO-Marke = Bezugstief - Anker x ATR.
 
@@ -6,16 +6,16 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 
 | Wert | Tief | RSI | Anker | KO-Marke | Analysten |
 |---|---|---|---|---|---|
-| ADSK | 2 | 39 | 3.00 | 176.99 | 73 % |
+| ADSK | 2 | 39 | 3.00 | 176.98 | 73 % |
 | AIR.DE | 4 | 35 | 2.25 | 180.29 | - % |
-| AXON | 4 | 33 | 2.00 | 372.34 | 83 % |
-| AXP | 3 | 33 | 2.50 | 288.42 | 36 % |
-| BKNG | 2 | 33 | 1.75 | 145.18 | 73 % |
+| AXON | 4 | 33 | 2.00 | 372.25 | 83 % |
+| AXP | 3 | 33 | 2.50 | 288.42 | 33 % |
+| BKNG | 2 | 33 | 1.75 | 145.17 | 75 % |
 | CMCSA | 2 | 28 | - | - | 29 % |
 | ENB | 6 | 27 | 2.25 | 44.87 | 61 % |
 | INTU | 3 | 33 | 2.25 | 234.96 | 53 % |
 | LLY | 3 | 47 | 1.50 | 1065.50 | 93 % |
-| LOW | 5 | 29 | 3.50 | 169.64 | 73 % |
+| LOW | 5 | 29 | 3.50 | 169.63 | 73 % |
 | RHM.DE | 4 | 34 | 3.50 | 837.79 | 86 % |
 | UL | 4 | 38 | 2.75 | 58.11 | 60 % |
 | VRSK | 3 | 37 | 3.00 | 147.90 | 60 % |

@@ -2023,7 +2023,6 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | SPG (SPG) | 2026-04-08 | aufwaerts | 191.08 | 0.396 | 0.806 | 121 |
 | SPG (SPG) | 2026-08-27 | abwaerts | 216.88 | 0.4 | 0.659 | 23 |
 | SPGI (SPGI) | 2026-02-03 | abwaerts | 495.298 | 1.502 | 3.921 | 165 |
-| SRT3.DE (SRT3.DE) | 2025-10-01 | aufwaerts | 197.9 | 1.073 | 4.042 | 252 |
 | STX (STX) | 2025-11-24 | aufwaerts | 240.5 | 0.139 | 1.006 | 212 |
 | STX (STX) | 2025-12-05 | aufwaerts | 266.4 | 0.219 | 1.28 | 204 |
 | STX (STX) | 2026-04-01 | aufwaerts | 392.01 | 0.153 | 1.143 | 125 |

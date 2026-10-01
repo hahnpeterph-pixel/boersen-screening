@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-09-30 22:53 UTC. 286 Werte, Fenster 90 Kalendertage. EUR/USD 1.1334._
+_Erstellt 2026-10-01 01:18 UTC. 286 Werte, Fenster 90 Kalendertage. EUR/USD 1.1341._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -122,9 +122,9 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | SIE.DE (SIE.DE) | 275.4 | - | - | ja | 52.13 |
 | SHL.DE (SHL.DE) | 38.02 | - | - | ja | 47.17 |
 | SY1.DE (SY1.DE) | 92.04 | - | - | ja | 53.41 |
-| Brent Oel (BZ=F) | 97.6 | - | - | ja | 46.85 |
-| Weizen (ZW=F) | 675.25 | - | ja | ja | 39.24 |
-| Mais (ZC=F) | 501.25 | - | - | ja | 43.28 |
+| Palladium (PA=F) | 1208.5 | ja | ja | - | 36.61 |
+| Brent Oel (BZ=F) | 97.88 | - | - | ja | 47.23 |
+| Erdgas (NG=F) | 2.997 | - | - | ja | 52.81 |
 
 ---
 

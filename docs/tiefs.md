@@ -1,6 +1,6 @@
 # Tiefs, Volumen und Kaufregel-Check
 
-_Erstellt 2026-10-01 23:03 UTC. Fenster: letzte 90 Kalendertage. Tiefs nach der Umkehr-Regel (tiefs_regel.py): ein Tief zaehlt, sobald eine spaetere Kerze das Hoch der Tiefkerze ueberschreitet. Solange es abwaerts geht, gilt das tiefste Tief der Strecke. Gerechnet wird auf abgeschlossenen Tageskerzen._
+_Erstellt 2026-10-02 01:43 UTC. Fenster: letzte 90 Kalendertage. Tiefs nach der Umkehr-Regel (tiefs_regel.py): ein Tief zaehlt, sobald eine spaetere Kerze das Hoch der Tiefkerze ueberschreitet. Solange es abwaerts geht, gilt das tiefste Tief der Strecke. Gerechnet wird auf abgeschlossenen Tageskerzen._
 
 ## Kaufregel
 
@@ -76,7 +76,7 @@ _Legende: `+` Signal da, `!` Signal da aber RSI zu hoch, `-` warten._
 
 | Wert | Bezugstief | Puffer | Faktor | Einsatz | Hinweis |
 |---|---|---|---|---|---|
-| Take-Two (TTWO) | 231,58 (20.08., Chart) | 0,43 x ATR | 0,22 | **71,53 EUR** | kaufbar |
+| Take-Two (TTWO) | 231,58 (20.08., Chart) | 0,43 x ATR | 0,22 | **71,52 EUR** | kaufbar |
 | Meta Platforms (META) | 524,52 (30.07., Chart) | 0,19 x ATR | 0,10 | **59,70 EUR** | kaufbar |
 | Micron (MU) | 915,18 (19.08., Chart) | 1,23 x ATR | 0,62 | **111,71 EUR** | kaufbar |
 | Microsoft (MSFT) | 477,15 (18.08., Chart) | 10,56 x ATR | 1,00 | **150,00 EUR** | kaufbar |
@@ -91,7 +91,7 @@ Tief minus 2,0 x ATR. Die Hebelangabe ist das, was sich bei diesem KO rechnerisc
 
 | Wert | Kurs | ATR | nach Trendtief | Hebel | konservativ | Hebel |
 |---|---|---|---|---|---|---|
-| Take-Two (TTWO) | 203,62 | 6,41 | 187,65 | 12,8x | 186,64 | 12,0x |
+| Take-Two (TTWO) | 203,62 | 6,41 | 187,62 | 12,7x | 186,64 | 12,0x |
 | Meta Platforms (META) | 725,93 | 29,23 | 654,74 | 10,2x | 466,04 | 2,8x |
 | Micron (MU) | 1.097,39 | 44,87 | 933,16 | 6,7x | 648,14 | 2,4x |
 | Microsoft (MSFT) | 512,80 | 12,20 | 466,82 | 11,2x | 348,95 | 3,1x |
@@ -104,13 +104,13 @@ _'nach Trendtief' orientiert sich am juengsten Tief und laesst mehr Hebel zu. 'k
 
 | Wert | Datum | Tief | Volumen | rel. zu Ø 20 T | Tief -> KO |
 |---|---|---|---|---|---|
-| Take-Two (TTWO) | 01.10.2026 | 200,47 | 2,7 Mio. | 1,06x | -14,1 % |
+| Take-Two (TTWO) | 01.10.2026 | 200,44 | 2,7 Mio. | 1,06x | -14,2 % |
 | Take-Two (TTWO) | 28.09.2026 | 199,46 | 2,1 Mio. | 0,73x (duenn) | -14,7 % |
 | Take-Two (TTWO) | 21.09.2026 | 204,00 | 2,6 Mio. | 0,93x | -12,2 % |
 | Meta Platforms (META) | 28.09.2026 | 713,19 | 27,9 Mio. | 1,22x (erhoeht) | 27,2 % |
 | Meta Platforms (META) | 18.09.2026 | 660,80 | 27,6 Mio. | 1,53x (Kapitulation) | 21,5 % |
 | Meta Platforms (META) | 01.09.2026 | 556,10 | 15,8 Mio. | 1,03x | 6,7 % |
-| Micron (MU) | 01.10.2026 | 1.022,90 | 44,8 Mio. | 1,79x (Kapitulation) | 15,9 % |
+| Micron (MU) | 01.10.2026 | 1.022,90 | 45,6 Mio. | 1,82x (Kapitulation) | 15,9 % |
 | Micron (MU) | 24.09.2026 | 1.044,00 | 22,1 Mio. | 0,87x | 17,6 % |
 | Micron (MU) | 16.09.2026 | 917,64 | 20,2 Mio. | 0,80x (duenn) | 6,3 % |
 | Microsoft (MSFT) | 24.09.2026 | 491,22 | 16,7 Mio. | 0,77x (duenn) | 29,1 % |
@@ -131,7 +131,7 @@ _Diese Zeilen in die gelben Spalten uebertragen. Reihenfolge wie dort._
 |---|---|---|---|---|---|---|
 | TTWO | 203,62 | 6,41 | 37,9 | 231,58 | 2026-08-20 | 1,06 |
 | META | 725,93 | 29,23 | 61,1 | 524,52 | 2026-07-30 | 1,22 |
-| MU | 1.097,39 | 44,87 | 63,5 | 915,18 | 2026-08-19 | 1,79 |
+| MU | 1.097,39 | 44,87 | 63,5 | 915,18 | 2026-08-19 | 1,82 |
 | MSFT | 512,80 | 12,20 | 60,2 | 477,15 | 2026-08-18 | 0,77 |
 | ORCL | 138,07 | 6,51 | 43,6 | 137,44 | 2026-08-19 | 1,08 |
 | NVDA | 230,86 | 5,32 | 60,1 | 227,03 | 2026-09-29 | - |

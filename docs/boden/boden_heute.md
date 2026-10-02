@@ -1,12 +1,12 @@
-# Boden-Screening 2026-10-01 (Stand 2026-10-01 23:06 UTC)
+# Boden-Screening 2026-10-01 (Stand 2026-10-02 02:07 UTC)
 
 Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RSI < 50 + mind. 2 Boden-Punkte (nur Technik). Die Filter (Analysten, Anker, CRV 2:1) stehen in docs/heute.csv. Boden-Anker = niedrigster Puffer mit 60 % Halterate fuer diese Gruppe und diesen Wert (Vollauf), KO-Marke = Bezugstief - Anker x ATR.
 
-## Kandidaten (14)
+## Kandidaten (13)
 
 | Wert | Tief | RSI | Anker | KO-Marke | Analysten |
 |---|---|---|---|---|---|
-| BA | 2 | 40 | 2.75 | 164.82 | 100 % |
+| BA | 2 | 40 | 2.75 | 164.81 | 100 % |
 | ADP | 3 | 44 | 1.75 | 247.90 | 25 % |
 | CDW | 2 | 44 | 2.75 | 112.95 | 33 % |
 | CPRT | 2 | 31 | 2.50 | 24.84 | 62 % |
@@ -17,11 +17,10 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | NKE | 9 | 34 | 3.25 | 31.89 | 26 % |
 | PAYX | 3 | 27 | 2.75 | 89.21 | 8 % |
 | PGR | 3 | 48 | 1.50 | 194.09 | 18 % |
-| SBUX | 2 | 35 | 2.75 | 87.30 | 50 % |
 | SNY | 5 | 33 | 2.25 | 38.74 | 50 % |
 | UNP | 2 | 32 | 2.00 | 259.00 | 86 % |
 
-## Weitere Pruefttage (111)
+## Weitere Pruefttage (113)
 
 | Wert | Punkte | Grund |
 |---|---|---|
@@ -83,6 +82,7 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | RIO | 1 | 1 P, Umkehr a |
 | RTX | 1 | 1 P, Umkehr a |
 | RY | 1 | 1 P, Umkehr a |
+| SBUX | 1 | 1 P, Umkehr a |
 | SCHW | 1 | 1 P, Umkehr a |
 | SHOP | 1 | 1 P, RSI >= 50 |
 | SNDK | 1 | 1 P, RSI >= 50 |
@@ -123,6 +123,7 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | MUV2.DE | 0 | 0 P, Tief 1, Umkehr a |
 | NET | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
 | ODFL | 0 | 0 P, Umkehr a |
+| PANW | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
 | PBR | 0 | 0 P, RSI >= 50, Umkehr a |
 | PH | 0 | 0 P, Tief 1, Umkehr a |
 | SHEL | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |

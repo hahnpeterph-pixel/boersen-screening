@@ -1,5 +1,5 @@
 {
- "date": "2026-10-01",
+ "date": "2026-10-02",
  "ranks": {
   "turnaround": [
    "SAP.DE",
@@ -27,8 +27,8 @@
    "MU",
    "SY1.DE",
    "MRNA",
-   "SIE.DE",
    "PSX",
+   "SIE.DE",
    "DHL.DE",
    "DB1.DE",
    "MRK.DE",
@@ -55,131 +55,19 @@
  },
  "changes": {
   "turnaround": {
-   "entries": [
-    {
-     "ticker": "MDT",
-     "rank": 3
-    },
-    {
-     "ticker": "CTSH",
-     "rank": 4
-    },
-    {
-     "ticker": "SHL.DE",
-     "rank": 5
-    },
-    {
-     "ticker": "BP",
-     "rank": 10
-    },
-    {
-     "ticker": "SY1.DE",
-     "rank": 14
-    },
-    {
-     "ticker": "EMR",
-     "rank": 15
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "ZS",
-     "old_rank": 4
-    },
-    {
-     "ticker": "AMGN",
-     "old_rank": 5
-    },
-    {
-     "ticker": "VRTX",
-     "old_rank": 9
-    },
-    {
-     "ticker": "XOM",
-     "old_rank": 10
-    },
-    {
-     "ticker": "MA",
-     "old_rank": 12
-    },
-    {
-     "ticker": "BHP",
-     "old_rank": 15
-    }
-   ],
-   "moves": [
-    {
-     "ticker": "ABNB",
-     "rank": 7,
-     "delta": 7
-    },
-    {
-     "ticker": "CTAS",
-     "rank": 12,
-     "delta": -5
-    }
-   ]
+   "entries": [],
+   "exits": [],
+   "moves": []
   },
   "momentum": {
-   "entries": [
-    {
-     "ticker": "MU",
-     "rank": 6
-    },
-    {
-     "ticker": "MRK.DE",
-     "rank": 13
-    },
-    {
-     "ticker": "CBK.DE",
-     "rank": 14
-    },
-    {
-     "ticker": "TRV",
-     "rank": 15
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "SNOW",
-     "old_rank": 3
-    },
-    {
-     "ticker": "TMO",
-     "old_rank": 9
-    },
-    {
-     "ticker": "MFG",
-     "old_rank": 13
-    },
-    {
-     "ticker": "MTX.DE",
-     "old_rank": 14
-    }
-   ],
-   "moves": [
-    {
-     "ticker": "MRNA",
-     "rank": 8,
-     "delta": -7
-    },
-    {
-     "ticker": "PSX",
-     "rank": 10,
-     "delta": 5
-    }
-   ]
+   "entries": [],
+   "exits": [],
+   "moves": []
   },
   "value": {
    "entries": [],
    "exits": [],
-   "moves": [
-    {
-     "ticker": "RIO",
-     "rank": 12,
-     "delta": -5
-    }
-   ]
+   "moves": []
   },
   "analyst_flips": []
  }

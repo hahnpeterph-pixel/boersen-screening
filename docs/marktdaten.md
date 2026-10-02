@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-10-01 23:03 UTC. 286 Werte, Fenster 90 Kalendertage. EUR/USD 1.1247._
+_Erstellt 2026-10-02 01:43 UTC. 286 Werte, Fenster 90 Kalendertage. EUR/USD 1.1247._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -116,7 +116,10 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | SY1.DE (SY1.DE) | 90.26 | - | - | ja | 47.0 |
 | VOW3.DE (VOW3.DE) | 68.12 | - | - | ja | 31.42 |
 | VNA.DE (VNA.DE) | 16.77 | - | - | ja | 25.96 |
-| Erdgas (NG=F) | 2.947 | - | - | ja | 49.87 |
+| Gold (GC=F) | 4176.8999 | - | - | ja | 34.33 |
+| Palladium (PA=F) | 1172.0 | - | - | ja | 32.04 |
+| Erdgas (NG=F) | 2.932 | - | - | ja | 49.11 |
+| Kupfer (HG=F) | 6.53 | - | - | ja | 47.29 |
 | Kakao (CC=F) | 5448.0 | ja | - | - | 41.94 |
 
 ---

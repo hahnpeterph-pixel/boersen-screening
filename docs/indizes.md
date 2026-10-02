@@ -1,14 +1,14 @@
 # Indizes
 
-Stand Abruf: 02.10.2026 11:03 UTC
+Stand Abruf: 02.10.2026 22:55 UTC
 
-**Marktlage S&P 500:** VIX 16,4 normal · Fear & Greed 27 Angst – Risiko für einen Rückgang um 4 % in den nächsten 2 Wochen: **normal (12 von 100, sonst 11)**
+**Marktlage S&P 500:** VIX 15,3 ruhig · Fear & Greed 31 Angst – Risiko für einen Rückgang um 4 % in den nächsten 2 Wochen: **niedrig (4 von 100, sonst 11)**
 
 **Marktlage-Alarm:** Fear & Greed über 40 Tage im untersten Fünftel: früher 16 % Einbrüche ≥ 10 % (Schnitt 12 %)
 
-(intern, nur für die Alarme: 40 T: S&P -0,7 % (2/5) · VIX +0,6 (4/5) · F&G -33,1 (1/5); Fünftel 1 = stärkster Rückgang, 5 = stärkster Anstieg seit 2011)
+(intern, nur für die Alarme: 40 T: S&P +0,2 % (2/5) · VIX +0,2 (3/5) · F&G -28,5 (1/5); Fünftel 1 = stärkster Rückgang, 5 = stärkster Anstieg seit 2011)
 
-**Indizes:** S&P 500 7.666 (-0,5 % 5T, -1,7 % vom Jahreshoch) · Nasdaq 100 30.502 (+0,1 % 5T, -0,8 % vom Jahreshoch) · Dow Jones 50.927 (-0,8 % 5T, -6,3 % vom Jahreshoch) · DAX 25.222 (-0,7 % 5T, -5,1 % vom Jahreshoch)
+**Indizes:** S&P 500 7.723 (-0,3 % 5T, -1,0 % vom Jahreshoch) · Nasdaq 100 30.808 (+0,7 % 5T, 0,0 % vom Jahreshoch) · Dow Jones 51.177 (-1,3 % 5T, -5,8 % vom Jahreshoch) · DAX 25.222 (-0,7 % 5T, -5,1 % vom Jahreshoch)
 
 ## Index-Abhaengigkeit je Wert (docs/index_beta.csv)
 

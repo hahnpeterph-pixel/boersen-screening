@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-10-02 01:43 UTC. 286 Werte, Fenster 90 Kalendertage. EUR/USD 1.1247._
+_Erstellt 2026-10-02 11:00 UTC. 286 Werte, Fenster 90 Kalendertage. EUR/USD 1.1247._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -93,34 +93,29 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | APP (APP) | 281.31 | - | - | ja | 32.01 |
 | AXON (AXON) | 422.21 | ja | - | - | 33.02 |
 | CCEP (CCEP) | 100.79 | - | - | ja | 41.78 |
-| AIR.DE (AIR.DE) | 186.28 | - | - | ja | 28.86 |
+| AIR.DE (AIR.DE) | 185.7 | - | - | ja | 28.2 |
 | ALV.DE (ALV.DE) | 412.0 | - | - | ja | 33.24 |
-| BAYN.DE (BAYN.DE) | 45.51 | - | - | ja | 33.89 |
-| BEI.DE (BEI.DE) | 75.86 | - | - | ja | 45.84 |
+| BAS.DE (BAS.DE) | 49.4 | - | - | ja | 35.51 |
+| BAYN.DE (BAYN.DE) | 45.4 | - | - | ja | 33.54 |
+| BEI.DE (BEI.DE) | 75.76 | - | - | ja | 45.44 |
 | CBK.DE (CBK.DE) | 39.4 | - | - | ja | 39.56 |
-| DBK.DE (DBK.DE) | 30.98 | - | - | ja | 34.91 |
-| DHL.DE (DHL.DE) | 55.64 | - | - | ja | 45.56 |
-| FRE.DE (FRE.DE) | 43.835 | - | - | ja | 41.06 |
-| HEN3.DE (HEN3.DE) | 71.8 | - | - | ja | 36.71 |
-| MBG.DE (MBG.DE) | 39.86 | - | - | ja | 22.56 |
-| MRK.DE (MRK.DE) | 134.2 | - | - | ja | 46.74 |
-| MTX.DE (MTX.DE) | 369.7 | - | - | ja | 59.07 |
-| P911.DE (P911.DE) | 43.35 | - | - | ja | 42.53 |
-| PAH3.DE (PAH3.DE) | 24.71 | - | - | ja | 30.51 |
-| QIA.DE (QIA.DE) | 38.145 | - | - | ja | 52.38 |
-| RHM.DE (RHM.DE) | 949.3 | - | - | ja | 32.83 |
-| RWE.DE (RWE.DE) | 58.36 | - | - | ja | 45.85 |
-| SRT3.DE (SRT3.DE) | 250.0 | - | - | ja | 51.75 |
-| SIE.DE (SIE.DE) | 273.2 | - | - | ja | 49.68 |
-| SHL.DE (SHL.DE) | 37.39 | - | - | ja | 41.89 |
-| SY1.DE (SY1.DE) | 90.26 | - | - | ja | 47.0 |
-| VOW3.DE (VOW3.DE) | 68.12 | - | - | ja | 31.42 |
-| VNA.DE (VNA.DE) | 16.77 | - | - | ja | 25.96 |
-| Gold (GC=F) | 4176.8999 | - | - | ja | 34.33 |
-| Palladium (PA=F) | 1172.0 | - | - | ja | 32.04 |
-| Erdgas (NG=F) | 2.932 | - | - | ja | 49.11 |
-| Kupfer (HG=F) | 6.53 | - | - | ja | 47.29 |
-| Kakao (CC=F) | 5448.0 | ja | - | - | 41.94 |
+| DBK.DE (DBK.DE) | 31.03 | - | - | ja | 35.17 |
+| DHL.DE (DHL.DE) | 55.74 | - | - | ja | 46.14 |
+| FRE.DE (FRE.DE) | 43.8 | - | - | ja | 40.89 |
+| HEN3.DE (HEN3.DE) | 71.92 | - | - | ja | 37.17 |
+| MBG.DE (MBG.DE) | 40.06 | - | - | ja | 23.15 |
+| MRK.DE (MRK.DE) | 134.45 | - | - | ja | 47.38 |
+| MTX.DE (MTX.DE) | 368.4 | - | - | ja | 58.02 |
+| P911.DE (P911.DE) | 43.02 | - | - | ja | 41.3 |
+| PAH3.DE (PAH3.DE) | 24.69 | - | - | ja | 30.42 |
+| QIA.DE (QIA.DE) | 38.19 | - | - | ja | 52.83 |
+| RHM.DE (RHM.DE) | 945.8 | - | - | ja | 32.33 |
+| RWE.DE (RWE.DE) | 58.4 | - | - | ja | 46.07 |
+| SRT3.DE (SRT3.DE) | 251.0 | - | - | ja | 52.56 |
+| SIE.DE (SIE.DE) | 271.9 | - | - | ja | 48.34 |
+| SY1.DE (SY1.DE) | 90.38 | - | - | ja | 47.39 |
+| VOW3.DE (VOW3.DE) | 68.02 | - | - | ja | 31.25 |
+| VNA.DE (VNA.DE) | 16.74 | - | - | ja | 25.7 |
 
 ---
 

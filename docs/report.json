@@ -2,21 +2,21 @@
  "date": "2026-10-02",
  "ranks": {
   "turnaround": [
-   "SAP.DE",
    "SONY",
+   "SAP.DE",
    "MDT",
    "CTSH",
-   "SHL.DE",
-   "FRE.DE",
    "ABNB",
    "SHEL",
-   "DBK.DE",
    "BP",
+   "AMGN",
+   "MCK",
    "EQNR",
    "CTAS",
    "DB1.DE",
-   "SY1.DE",
-   "EMR"
+   "EMR",
+   "AMZN",
+   "WBD"
   ],
   "momentum": [
    "AMD",
@@ -25,15 +25,15 @@
    "ILMN",
    "MPC",
    "MU",
-   "SY1.DE",
+   "DB1.DE",
    "MRNA",
    "PSX",
+   "SY1.DE",
+   "TRV",
+   "EMR",
+   "MTX.DE",
    "SIE.DE",
-   "DHL.DE",
-   "DB1.DE",
-   "MRK.DE",
-   "CBK.DE",
-   "TRV"
+   "WBD"
   ],
   "value": [
    "SNDK",
@@ -55,20 +55,92 @@
  },
  "changes": {
   "turnaround": {
-   "entries": [],
-   "exits": [],
+   "entries": [
+    {
+     "ticker": "AMGN",
+     "rank": 8
+    },
+    {
+     "ticker": "MCK",
+     "rank": 9
+    },
+    {
+     "ticker": "AMZN",
+     "rank": 14
+    },
+    {
+     "ticker": "WBD",
+     "rank": 15
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "SHL.DE",
+     "old_rank": 5
+    },
+    {
+     "ticker": "FRE.DE",
+     "old_rank": 6
+    },
+    {
+     "ticker": "DBK.DE",
+     "old_rank": 9
+    },
+    {
+     "ticker": "SY1.DE",
+     "old_rank": 14
+    }
+   ],
    "moves": []
   },
   "momentum": {
-   "entries": [],
-   "exits": [],
-   "moves": []
+   "entries": [
+    {
+     "ticker": "EMR",
+     "rank": 12
+    },
+    {
+     "ticker": "MTX.DE",
+     "rank": 13
+    },
+    {
+     "ticker": "WBD",
+     "rank": 15
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "DHL.DE",
+     "old_rank": 11
+    },
+    {
+     "ticker": "MRK.DE",
+     "old_rank": 13
+    },
+    {
+     "ticker": "CBK.DE",
+     "old_rank": 14
+    }
+   ],
+   "moves": [
+    {
+     "ticker": "DB1.DE",
+     "rank": 7,
+     "delta": 5
+    }
+   ]
   },
   "value": {
    "entries": [],
    "exits": [],
    "moves": []
   },
-  "analyst_flips": []
+  "analyst_flips": [
+   {
+    "ticker": "REGN",
+    "now": 1,
+    "old": 0
+   }
+  ]
  }
 }

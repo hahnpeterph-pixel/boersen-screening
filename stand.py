@@ -118,7 +118,13 @@ def zusammenfuehren(neue: list[dict], pfad, schluessel: str = "ticker",
         alt_d = alt_datum.get(k, "")
         # Nur zurueckhalten, wenn BEIDE ein Datum haben und das alte
         # spaeter liegt. Ohne Datum kein Urteil - dann gilt der Abruf.
-        if k and neu_d and alt_d and alt_d > neu_d and k in alt_zeilen:
+        # 03.10.2026: Hat die Kursquelle gewechselt (Heimatboerse statt US-Notierung), gilt die alte Zeile
+        # nicht mehr - anderer Handelsplatz, andere Waehrung. Fund HDB/IBN: indischer Feiertag 02.10., die
+        # alte ADR-Zeile (USD) gewann gegen den Heimatstand 01.10. (INR) und landete als Kurs im Kursverlauf.
+        quelle_neu = r.get("kursquelle", "")
+        quelle_alt = (alt_zeilen.get(k) or {}).get("kursquelle", "")
+        quelle_gewechselt = bool(quelle_neu) and quelle_neu != quelle_alt
+        if k and neu_d and alt_d and alt_d > neu_d and k in alt_zeilen and not quelle_gewechselt:
             behalten = dict(alt_zeilen[k])
             # Auf das aktuelle Spaltenbild bringen: fehlende Felder leer,
             # damit der DictWriter nicht ueber unbekannte Schluessel faellt.

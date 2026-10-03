@@ -1,0 +1,2 @@
+Heimatboerse 03.10.2026 Lauf 3 (Quellenwechsel schlaegt alte Zeile, Sonderschliesstage KRX/TWSE)
+laeufe: screening.yml kerzen.yml

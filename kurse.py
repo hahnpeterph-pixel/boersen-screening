@@ -762,6 +762,13 @@ _KAL_FEHLER: set = set()
 XCAL = {"LSE": "XLON", "SIX": "XSWX", "BME": "XMAD", "CPH": "XCSE", "OSL": "XOSL", "TSE": "XTKS", "TWSE": "XTAI",
         "HKEX": "XHKG", "ASX": "XASX", "NSE": "XBOM", "B3": "BVMF", "KRX": "XKRX"}
 
+# 03.10.2026: Schliesstage, die exchange_calendars (noch) nicht kennt - je Fall belegt.
+# KRX 03.06.2026 Kommunalwahl, 17.07.2026 Verfassungstag (2026 wieder Feiertag); TWSE 10.07.2026 Taifun Bavi.
+HEIMAT_SONDERSCHLUSS = {
+    "KRX": {date(2026, 6, 3), date(2026, 7, 17)},
+    "TWSE": {date(2026, 7, 10)},
+}
+
 STUNDEN_FUELLGRENZE_TAGE = 720
 MIN_STUNDEN_JE_TAG = 5
 # Obergrenze fuer Stundenabrufe je Prozess. Ein unbekannter Schliesstag
@@ -845,7 +852,8 @@ def handelstage(b: str, von: date, bis: date) -> list[date]:
                 _XKAL[schl] = xc.get_calendar(XCAL[b], start=pd.Timestamp(date(von.year, 1, 1)))
             kal = _XKAL[schl]
             s = kal.sessions_in_range(pd.Timestamp(von), pd.Timestamp(bis))
-            return [d.date() for d in s]
+            zu = HEIMAT_SONDERSCHLUSS.get(b, set())
+            return [d.date() for d in s if d.date() not in zu]
         except Exception as e:  # noqa: BLE001
             # 03.10.2026: OHNE Kalender keine Lueckenpruefung fuer diese Boerse (None) - Montag bis Freitag hatte die
             # Feiertage der Heimatboersen als "fehlend" gefuellt (mit Kursen der US-Notierung, Fund Shell 06.04.).

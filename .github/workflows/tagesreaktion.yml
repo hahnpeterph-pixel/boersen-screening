@@ -17,8 +17,8 @@ name: Tagesreaktion
 
 on:
   # Wochenendlauf (Peter 25.09.2026): Sa 04:45 UTC, nach Ruecksetzer
-  schedule:
-    - cron: "45 4 * * 6"
+  # schedule: (siehe Anstoss Wochenendkette)
+    # Samstag-Zeitplan entfernt 03.10.2026 (Peter): laeuft jetzt nur in der Kette "Anstoss Wochenendkette" (Sa 00:07 UTC)
   workflow_dispatch:
     inputs:
       jahre:

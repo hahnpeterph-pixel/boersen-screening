@@ -10,8 +10,8 @@ name: Stimmung-Auswertung
 # Screening 05:30), bei jeder Aenderung an stimmung.py und von Hand.
 
 on:
-  schedule:
-    - cron: "10 5 * * 6"
+  # schedule: (siehe Anstoss Wochenendkette)
+    # Samstag-Zeitplan entfernt 03.10.2026 (Peter): laeuft jetzt nur in der Kette "Anstoss Wochenendkette" (Sa 00:07 UTC)
   push:
     branches: [main]
     paths:

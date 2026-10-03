@@ -10,8 +10,8 @@ name: Phasen-Analyse
 
 on:
   # Wochenendlauf (Peter 25.09.2026): Sa 03:00 UTC, nach Historie (00:30) und Hochs (01:45)
-  schedule:
-    - cron: "0 3 * * 6"
+  # schedule: (siehe Anstoss Wochenendkette)
+    # Samstag-Zeitplan entfernt 03.10.2026 (Peter): laeuft jetzt nur in der Kette "Anstoss Wochenendkette" (Sa 00:07 UTC)
   workflow_dispatch:
     inputs:
       jahre:

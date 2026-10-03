@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-10-03 05:57 UTC. 286 Werte, Fenster 90 Kalendertage. EUR/USD 1.1257._
+_Erstellt 2026-10-03 07:12 UTC. 286 Werte, Fenster 90 Kalendertage. EUR/USD 1.1257._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -55,12 +55,12 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | BEI.DE (BEI.DE) | 75.26 | - | - | ja | 43.44 |
 | BMW.DE (BMW.DE) | 54.34 | - | - | ja | 29.62 |
 | DTG.DE (DTG.DE) | 40.75 | - | - | ja | 29.67 |
-| FRE.DE (FRE.DE) | 43.525 | - | - | ja | 39.51 |
-| PAH3.DE (PAH3.DE) | 24.6 | - | - | ja | 30.0 |
-| VOW3.DE (VOW3.DE) | 67.58 | - | - | ja | 30.52 |
+| FRE.DE (FRE.DE) | 43.525 | - | - | ja | 39.62 |
+| PAH3.DE (PAH3.DE) | 24.6 | - | - | ja | 30.01 |
+| VOW3.DE (VOW3.DE) | 67.58 | - | - | ja | 30.53 |
 | Gold (GC=F) | 4162.2998 | - | ja | ja | 34.14 |
-| Silber (SI=F) | 59.977 | - | ja | ja | 36.95 |
-| Platin (PL=F) | 1683.2 | - | ja | ja | 39.37 |
+| Silber (SI=F) | 59.977 | - | ja | ja | 37.11 |
+| Platin (PL=F) | 1683.2 | - | ja | ja | 44.71 |
 | Brent Oel (BZ=F) | 102.25 | ja | ja | - | 53.71 |
 
 ---

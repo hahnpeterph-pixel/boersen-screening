@@ -1,6 +1,6 @@
 # Indizes
 
-Stand Abruf: 03.10.2026 07:10 UTC
+Stand Abruf: 03.10.2026 07:15 UTC
 
 **Marktlage S&P 500:** VIX 15,3 ruhig · Fear & Greed 31 Angst – Risiko für einen Rückgang um 4 % in den nächsten 2 Wochen: **niedrig (4 von 100, sonst 11)**
 

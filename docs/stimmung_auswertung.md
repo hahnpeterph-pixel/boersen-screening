@@ -1,32 +1,32 @@
 # Stimmung und Tiefs – Auswertung
 
-Stand: 03.10.2026 07:10 UTC. Grundlage: puffer_je_tief.csv.gz, nur Tiefs mit mindestens 63 beobachteten Tagen. Haelt = KO faellt in 63 Tagen nicht (benoetigt_atr <= Puffer), wie in heute.py.
+Stand: 03.10.2026 20:52 UTC. Grundlage: puffer_je_tief.csv.gz, nur Tiefs mit mindestens 63 beobachteten Tagen. Haelt = KO faellt in 63 Tagen nicht (benoetigt_atr <= Puffer), wie in heute.py.
 
 Lesart: Zuerst je Wert verglichen (unruhig gegen ruhig bzw. Angst gegen Gier), nur Werte mit je mindestens 10 Faellen in beiden Lagen. Die Gesamtzeile ist nur zur Orientierung.
 
 ## US-Werte gegen VIX
 
-93474 Tiefs, 233 Werte, Zeitraum 01/2011 bis 07/2026.
+91068 Tiefs, 234 Werte, Zeitraum 01/2011 bis 07/2026.
 
 | Lage | Faelle | haelt 1,5 ATR | haelt 2 ATR | haelt 3 ATR | Median benoetigt |
 |---|---|---|---|---|---|
-| ruhig | 37697 | 40 % | 46 % | 57 % | 2,33 ATR |
-| normal | 33705 | 44 % | 51 % | 62 % | 1,96 ATR |
-| unruhig | 22072 | 54 % | 60 % | 72 % | 1,28 ATR |
+| ruhig | 36701 | 41 % | 47 % | 58 % | 2,24 ATR |
+| normal | 32837 | 45 % | 51 % | 63 % | 1,89 ATR |
+| unruhig | 21530 | 54 % | 61 % | 73 % | 1,24 ATR |
 
-**Je Wert (unruhig gegen ruhig), 232 Werte vergleichbar:**
+**Je Wert (unruhig gegen ruhig), 233 Werte vergleichbar:**
 
 | Puffer | Median Unterschied haelt | Werte schlechter | Werte besser |
 |---|---|---|---|
-| 1,00 ATR | +11,1 Pp | 17 | 211 |
-| 1,50 ATR | +12,5 Pp | 18 | 213 |
-| 2,00 ATR | +13,5 Pp | 11 | 218 |
-| 2,50 ATR | +13,5 Pp | 14 | 215 |
-| 3,00 ATR | +14,7 Pp | 10 | 220 |
-| 4,00 ATR | +14,8 Pp | 9 | 220 |
-| 5,00 ATR | +14,0 Pp | 10 | 219 |
-| 7,00 ATR | +10,6 Pp | 9 | 219 |
-| 10,00 ATR | +6,2 Pp | 5 | 211 |
+| 1,00 ATR | +11,1 Pp | 19 | 209 |
+| 1,50 ATR | +12,5 Pp | 22 | 210 |
+| 2,00 ATR | +13,6 Pp | 15 | 214 |
+| 2,50 ATR | +13,5 Pp | 19 | 211 |
+| 3,00 ATR | +14,3 Pp | 12 | 218 |
+| 4,00 ATR | +14,7 Pp | 12 | 218 |
+| 5,00 ATR | +13,2 Pp | 12 | 217 |
+| 7,00 ATR | +10,2 Pp | 11 | 218 |
+| 10,00 ATR | +5,9 Pp | 7 | 209 |
 
 Benoetigter Puffer (unruhig minus ruhig), Median ueber die Werte: -1,00 ATR.
 
@@ -43,12 +43,12 @@ Staerkste Unterschiede bei 2 ATR (haelt ruhig → unruhig):
 
 ## Deutsche Werte gegen gemessene DAX-Schwankung (kein VDAX-NEW verfuegbar)
 
-14734 Tiefs, 39 Werte, Zeitraum 01/2011 bis 07/2026.
+14736 Tiefs, 39 Werte, Zeitraum 01/2011 bis 07/2026.
 
 | Lage | Faelle | haelt 1,5 ATR | haelt 2 ATR | haelt 3 ATR | Median benoetigt |
 |---|---|---|---|---|---|
 | ruhig | 4918 | 39 % | 44 % | 56 % | 2,47 ATR |
-| normal | 5563 | 41 % | 47 % | 58 % | 2,26 ATR |
+| normal | 5565 | 41 % | 47 % | 58 % | 2,26 ATR |
 | unruhig | 4253 | 50 % | 58 % | 69 % | 1,47 ATR |
 
 **Je Wert (unruhig gegen ruhig), 39 Werte vergleichbar:**
@@ -80,29 +80,29 @@ Staerkste Unterschiede bei 2 ATR (haelt ruhig → unruhig):
 
 ## US-Werte gegen Fear & Greed
 
-93018 Tiefs, 233 Werte, Zeitraum 01/2011 bis 07/2026.
+90629 Tiefs, 234 Werte, Zeitraum 01/2011 bis 07/2026.
 
 | Lage | Faelle | haelt 1,5 ATR | haelt 2 ATR | haelt 3 ATR | Median benoetigt |
 |---|---|---|---|---|---|
-| Angst | 41416 | 48 % | 54 % | 65 % | 1,66 ATR |
-| neutral | 13518 | 43 % | 49 % | 60 % | 2,10 ATR |
-| Gier | 38084 | 42 % | 48 % | 60 % | 2,14 ATR |
+| Angst | 40388 | 49 % | 55 % | 66 % | 1,60 ATR |
+| neutral | 13244 | 43 % | 50 % | 61 % | 2,03 ATR |
+| Gier | 36997 | 43 % | 49 % | 61 % | 2,06 ATR |
 
-**Je Wert (Angst gegen Gier), 232 Werte vergleichbar:**
+**Je Wert (Angst gegen Gier), 233 Werte vergleichbar:**
 
 | Puffer | Median Unterschied haelt | Werte schlechter | Werte besser |
 |---|---|---|---|
 | 1,00 ATR | +5,1 Pp | 41 | 183 |
-| 1,50 ATR | +5,8 Pp | 46 | 180 |
-| 2,00 ATR | +5,5 Pp | 40 | 183 |
-| 2,50 ATR | +5,5 Pp | 46 | 176 |
-| 3,00 ATR | +5,4 Pp | 45 | 174 |
-| 4,00 ATR | +4,3 Pp | 51 | 174 |
-| 5,00 ATR | +3,2 Pp | 53 | 161 |
-| 7,00 ATR | +2,0 Pp | 69 | 147 |
-| 10,00 ATR | +1,4 Pp | 62 | 135 |
+| 1,50 ATR | +5,8 Pp | 47 | 180 |
+| 2,00 ATR | +5,8 Pp | 42 | 183 |
+| 2,50 ATR | +5,7 Pp | 47 | 176 |
+| 3,00 ATR | +5,5 Pp | 45 | 175 |
+| 4,00 ATR | +4,3 Pp | 50 | 176 |
+| 5,00 ATR | +3,3 Pp | 55 | 165 |
+| 7,00 ATR | +2,0 Pp | 71 | 146 |
+| 10,00 ATR | +1,2 Pp | 68 | 132 |
 
-Benoetigter Puffer (Angst minus Gier), Median ueber die Werte: -0,44 ATR.
+Benoetigter Puffer (Angst minus Gier), Median ueber die Werte: -0,46 ATR.
 
 Staerkste Unterschiede bei 2 ATR (haelt Gier → Angst):
 

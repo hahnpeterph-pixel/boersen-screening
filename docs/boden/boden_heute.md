@@ -1,4 +1,4 @@
-# Boden-Screening 2026-10-02 (Stand 2026-10-03 21:10 UTC)
+# Boden-Screening 2026-10-02 (Stand 2026-10-03 21:44 UTC)
 
 Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RSI < 50 + mind. 2 Boden-Punkte (nur Technik). Die Filter (Analysten, Anker, CRV 2:1) stehen in docs/heute.csv. Boden-Anker = niedrigster Puffer mit 60 % Halterate fuer diese Gruppe und diesen Wert (Vollauf), KO-Marke = Bezugstief - Anker x ATR.
 
@@ -6,7 +6,7 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 
 | Wert | Tief | RSI | Anker | KO-Marke | Analysten |
 |---|---|---|---|---|---|
-| ABNB | 4 | 46 | 1.75 | 139.65 | 60 % |
+| ABNB | 4 | 46 | 1.75 | 139.65 | 59 % |
 | AIR.DE | 5 | 38 | 2.25 | 175.84 | - % |
 | ALV.DE | 2 | 37 | 2.50 | 388.19 | 35 % |
 | AMT | 3 | 33 | 1.75 | 154.48 | 83 % |
@@ -20,7 +20,7 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | HD | 6 | 26 | 3.00 | 257.22 | 64 % |
 | LOW | 5 | 25 | 3.50 | 163.82 | 73 % |
 | MDLZ | 4 | 32 | 3.50 | 53.53 | 100 % |
-| ORCL | 3 | 48 | 1.75 | 120.49 | 83 % |
+| ORCL | 3 | 48 | 1.75 | 120.49 | 82 % |
 | RHM.DE | 5 | 36 | 3.50 | 838.75 | 86 % |
 | RIO | 3 | 40 | 2.75 | 64.62 | 50 % |
 | UNH | 2 | 40 | 2.75 | 342.42 | 80 % |

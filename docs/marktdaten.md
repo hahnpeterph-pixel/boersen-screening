@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-10-03 07:12 UTC. 286 Werte, Fenster 90 Kalendertage. EUR/USD 1.1257._
+_Erstellt 2026-10-03 21:19 UTC. 297 Werte, Fenster 90 Kalendertage. EUR/USD 1.1257._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -13,7 +13,6 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | ADBE (ADBE) | 237.69 | - | - | ja | 41.02 |
 | ADP (ADP) | 257.68 | - | - | ja | 37.41 |
 | AMGN (AMGN) | 403.04 | - | - | ja | 47.68 |
-| AZN (AZN) | 156.9 | - | - | ja | 37.88 |
 | BIIB (BIIB) | 219.88 | - | - | ja | 49.41 |
 | BKNG (BKNG) | 159.02 | - | - | ja | 30.35 |
 | CTAS (CTAS) | 193.02 | - | ja | ja | 40.26 |
@@ -43,25 +42,36 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | PFE (PFE) | 27.8 | - | - | ja | 47.71 |
 | SCHW (SCHW) | 96.7 | - | ja | ja | 29.81 |
 | UPS (UPS) | 93.02 | - | ja | ja | 34.1 |
-| BABA (BABA) | 105.85 | - | - | ja | 35.62 |
 | WDC (WDC) | 415.29 | ja | - | ja | 39.22 |
 | SPOT (SPOT) | 472.89 | - | - | ja | 34.42 |
-| TM (TM) | 181.49 | - | - | ja | 35.2 |
-| NVO (NVO) | 37.32 | - | - | ja | 26.96 |
+| HSBC (HSBC) | 14.422 | ja | - | - | 34.47 |
+| NVS (NVS) | 116.34 | - | - | ja | 41.73 |
+| MUFG (MUFG) | 3544.0 | - | - | ja | 44.24 |
+| TM (TM) | 2856.5 | - | - | ja | 35.85 |
+| SMFG (SMFG) | 3321.0 | - | - | ja | 43.68 |
+| BBVA (BBVA) | 23.73 | ja | - | ja | 35.07 |
+| MFG (MFG) | 8446.0 | - | - | ja | 47.74 |
+| BTI (BTI) | 39.6 | - | - | ja | 34.28 |
 | HDB (HDB) | 22.34 | - | - | ja | 44.39 |
-| GSK (GSK) | 47.03 | - | - | ja | 33.77 |
+| SNY (SNY) | 70.81 | - | - | ja | 35.32 |
+| GSK (GSK) | 17.795 | - | - | ja | 35.64 |
 | APP (APP) | 268.22 | - | - | ja | 28.4 |
-| BAYN.DE (BAYN.DE) | 44.9 | - | - | ja | 31.95 |
-| BEI.DE (BEI.DE) | 75.26 | - | - | ja | 43.44 |
-| BMW.DE (BMW.DE) | 54.34 | - | - | ja | 29.62 |
-| DTG.DE (DTG.DE) | 40.75 | - | - | ja | 29.67 |
-| FRE.DE (FRE.DE) | 43.525 | - | - | ja | 39.62 |
-| PAH3.DE (PAH3.DE) | 24.6 | - | - | ja | 30.01 |
-| VOW3.DE (VOW3.DE) | 67.58 | - | - | ja | 30.53 |
+| BAYN.DE (BAYN.DE) | 44.94 | - | - | ja | 32.07 |
+| BMW.DE (BMW.DE) | 54.32 | - | - | ja | 29.57 |
+| DTG.DE (DTG.DE) | 40.68 | - | - | ja | 29.38 |
+| FRE.DE (FRE.DE) | 43.635 | - | - | ja | 40.15 |
+| MBG.DE (MBG.DE) | 39.725 | - | - | ja | 22.11 |
+| P911.DE (P911.DE) | 43.0 | - | - | ja | 41.23 |
+| PAH3.DE (PAH3.DE) | 24.53 | - | - | ja | 29.7 |
+| VOW3.DE (VOW3.DE) | 67.48 | - | - | ja | 30.37 |
 | Gold (GC=F) | 4162.2998 | - | ja | ja | 34.14 |
 | Silber (SI=F) | 59.977 | - | ja | ja | 37.11 |
 | Platin (PL=F) | 1683.2 | - | ja | ja | 44.71 |
 | Brent Oel (BZ=F) | 102.25 | ja | ja | - | 53.71 |
+| EUR/GBP (EURGBP=X) | 0.8497 | - | - | ja | 31.02 |
+| EUR/CHF (EURCHF=X) | 0.9321 | - | - | ja | 36.12 |
+| EUR/TWD (EURTWD=X) | 35.823 | - | - | ja | 19.19 |
+| EUR/KRW (EURKRW=X) | 1510.0 | - | - | ja | 28.96 |
 
 ---
 

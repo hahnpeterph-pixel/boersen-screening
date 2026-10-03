@@ -1,6 +1,8 @@
 # Stundenwache
 
-Stand: 2026-10-02 · 273 Werte mit Stundendaten · erstellt 2026-10-03 07:13 UTC
+Stand: 2026-10-02 · 273 Werte mit Stundendaten · erstellt 2026-10-03 21:21 UTC
+
+> **Sitzung noch nicht abgeschlossen.** 2 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 5, 6, 7, 8, 9). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
 
 Marken sind das juengste Swing-Tief und das juengste Swing-Hoch aus `tiefs_regel.py`, also dieselben wie im Tagesbericht. Geprueft wird nur, was der letzte Handelstag auf Stundenbasis damit gemacht hat.
 
@@ -23,46 +25,37 @@ Schluss unter dem juengsten Swing-Tief. Die Sequenz ist gerissen.
 
 Keine.
 
-## Tief angetestet (26)
+## Tief angetestet (16)
 
 Docht bis unter die Marke, kein Stundenschluss darunter.
 
 | Wert | Marke | Schluss | Abstand (ATR) | Stunden dahinter |
 |---|---|---|---|---|
+| NVS | 116.2 | 116.34 | 0.065 | 0 |
 | ACN | 198.36 | 199.03 | 0.066 | 0 |
-| VOW3.DE | 67.38 | 67.58 | 0.08 | 0 |
-| MBG.DE | 39.725 | 39.825 | 0.088 | 0 |
-| BMW.DE | 54.1 | 54.34 | 0.125 | 0 |
 | ZS | 195.11 | 196.56 | 0.157 | 0 |
 | NFLX | 66.75 | 67.075 | 0.167 | 0 |
-| TM | 180.91 | 181.58 | 0.22 | 0 |
 | AXON | 408.24 | 413.375 | 0.245 | 0 |
-| BAYN.DE | 44.55 | 44.9 | 0.248 | 0 |
 | CMCSA | 21.4 | 21.58 | 0.283 | 0 |
-| P911.DE | 42.64 | 43.13 | 0.288 | 0 |
-| DTG.DE | 40.405 | 40.75 | 0.367 | 0 |
+| NVO | 246.15 | 248.75 | 0.353 | 0 |
+| DTG.DE | 40.41 | 40.75 | 0.362 | 0 |
 | VRTX | 499.95 | 504.57 | 0.403 | 0 |
-| DBK.DE | 30.41 | 30.785 | 0.405 | 0 |
 | KO | 85.17 | 85.665 | 0.431 | 0 |
+| BABA | 102.7 | 104.4 | 0.495 | 0 |
 | WELL | 225.36 | 227.75 | 0.513 | 0 |
-| SY1.DE | 89.78 | 91.04 | 0.656 | 0 |
+| UBS | 38.78 | 39.54 | 0.638 | 0 |
 | WDC | 396.57 | 415.12 | 0.713 | 0 |
-| SAN | 13.11 | 13.36 | 0.751 | 0 |
 | MA | 545.41 | 552.39 | 0.782 | 0 |
-| SIE.DE | 271.05 | 276.05 | 0.789 | 0 |
-| RWE.DE | 57.94 | 59.12 | 0.934 | 0 |
-| CBK.DE | 38.1 | 39.14 | 0.954 | 0 |
-| BBVA | 26.24 | 26.96 | 1.076 | 0 |
-| MRK.DE | 132.95 | 136.2 | 1.188 | 0 |
 | ABT | 95.06 | 97.51 | 1.22 | 0 |
 
-## Swing-Hoch ueberwunden (43)
+## Swing-Hoch ueberwunden (42)
 
 | Wert | Hoch | Schluss | Abstand (ATR) | Stunden darueber |
 |---|---|---|---|---|
 | WBD | 28.45 | 30.93 | 6.539 | 7 |
 | KLAC | 182.41 | 206.94 | 3.593 | 7 |
 | AMAT | 487.68 | 540.04 | 2.916 | 7 |
+| TSM | 2405.0 | 2505.0 | 2.857 | 5 |
 | ON | 74.48 | 84.89 | 2.807 | 7 |
 | SHOP | 134.74 | 151.39 | 2.557 | 7 |
 | LRCX | 317.13 | 347.45 | 2.344 | 7 |
@@ -71,7 +64,7 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | IFX.DE | 60.48 | 64.38 | 1.574 | 9 |
 | MPC | 398.33 | 422.5 | 1.396 | 7 |
 | TXN | 284.39 | 293.81 | 1.229 | 7 |
-| TSM | 461.87 | 472.91 | 1.12 | 7 |
+| PBR | 54.61 | 56.48 | 1.229 | 7 |
 | ADI | 405.38 | 417.185 | 1.09 | 7 |
 | APH | 84.48 | 87.0 | 0.962 | 7 |
 | CAT | 827.81 | 845.53 | 0.855 | 7 |
@@ -81,7 +74,6 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | CRWD | 263.87 | 270.07 | 0.557 | 7 |
 | NXPI | 239.83 | 243.76 | 0.544 | 7 |
 | ASML | 1630.2 | 1653.6 | 0.513 | 8 |
-| PBR | 21.34 | 21.645 | 0.51 | 3 |
 | GEV | 973.41 | 988.79 | 0.474 | 7 |
 | MRVL | 267.48 | 272.4 | 0.418 | 7 |
 | GLW | 161.39 | 164.23 | 0.394 | 7 |
@@ -89,11 +81,10 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | EMR | 160.29 | 161.62 | 0.35 | 7 |
 | MCHP | 80.37 | 81.32 | 0.345 | 7 |
 | ODFL | 178.99 | 180.53 | 0.324 | 7 |
-| SKHY | 192.83 | 195.11 | 0.292 | 6 |
-| QIA.DE | 39.765 | 40.095 | 0.289 | 1 |
+| QIA.DE | 39.765 | 40.095 | 0.284 | 1 |
 | CSCO | 111.5 | 112.19 | 0.261 | 3 |
 | ORCL | 140.88 | 142.51 | 0.257 | 5 |
-| SHEL | 95.85 | 96.23 | 0.228 | 5 |
+| SONY | 3745.0 | 3758.0 | 0.157 | 5 |
 | NVDA | 233.21 | 233.99 | 0.151 | 7 |
 | CNQ | 48.28 | 48.455 | 0.147 | 5 |
 | SPCX | 158.13 | 158.975 | 0.136 | 3 |

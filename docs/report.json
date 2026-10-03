@@ -2,21 +2,21 @@
  "date": "2026-10-03",
  "ranks": {
   "turnaround": [
+   "SAP.DE",
    "ZS",
-   "SONY",
    "ACN",
    "MCK",
-   "FRE.DE",
    "ABNB",
-   "DB1.DE",
-   "DBK.DE",
    "CNQ",
-   "SHEL",
    "TMO",
+   "DB1.DE",
    "EQNR",
-   "BHP",
+   "QIA.DE",
+   "PSX",
+   "SY1.DE",
    "EMR",
-   "TRV"
+   "TRV",
+   "TSLA"
   ],
   "momentum": [
    "AMD",
@@ -25,6 +25,7 @@
    "PSX",
    "MPC",
    "ILMN",
+   "SY1.DE",
    "VLO",
    "DB1.DE",
    "MRNA",
@@ -32,43 +33,130 @@
    "DHL.DE",
    "SIE.DE",
    "EMR",
-   "SY1.DE",
-   "TRV"
+   "MFG"
   ],
   "value": [
+   "SKHY",
    "SNDK",
-   "NVDA",
    "MU",
    "NEM",
    "ABNB",
    "REGN",
    "PBR",
-   "RIO",
-   "META",
-   "COP",
    "BLK",
+   "META",
    "V",
    "MNST",
+   "COP",
+   "RIO",
    "BHP",
-   "PH"
+   "VRTX"
   ]
  },
  "changes": {
   "turnaround": {
-   "entries": [],
-   "exits": [],
+   "entries": [
+    {
+     "ticker": "SAP.DE",
+     "rank": 1
+    },
+    {
+     "ticker": "QIA.DE",
+     "rank": 10
+    },
+    {
+     "ticker": "PSX",
+     "rank": 11
+    },
+    {
+     "ticker": "SY1.DE",
+     "rank": 12
+    },
+    {
+     "ticker": "TSLA",
+     "rank": 15
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "SONY",
+     "old_rank": 2
+    },
+    {
+     "ticker": "FRE.DE",
+     "old_rank": 5
+    },
+    {
+     "ticker": "DBK.DE",
+     "old_rank": 8
+    },
+    {
+     "ticker": "SHEL",
+     "old_rank": 10
+    },
+    {
+     "ticker": "BHP",
+     "old_rank": 13
+    }
+   ],
    "moves": []
   },
   "momentum": {
-   "entries": [],
-   "exits": [],
-   "moves": []
+   "entries": [
+    {
+     "ticker": "MFG",
+     "rank": 15
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "TRV",
+     "old_rank": 15
+    }
+   ],
+   "moves": [
+    {
+     "ticker": "SY1.DE",
+     "rank": 7,
+     "delta": 7
+    }
+   ]
   },
   "value": {
-   "entries": [],
-   "exits": [],
-   "moves": []
+   "entries": [
+    {
+     "ticker": "SKHY",
+     "rank": 1
+    },
+    {
+     "ticker": "VRTX",
+     "rank": 15
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "NVDA",
+     "old_rank": 2
+    },
+    {
+     "ticker": "PH",
+     "old_rank": 15
+    }
+   ],
+   "moves": [
+    {
+     "ticker": "RIO",
+     "rank": 13,
+     "delta": -5
+    }
+   ]
   },
-  "analyst_flips": []
+  "analyst_flips": [
+   {
+    "ticker": "BLK",
+    "now": 1,
+    "old": 0
+   }
+  ]
  }
 }

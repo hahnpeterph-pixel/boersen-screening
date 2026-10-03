@@ -25,13 +25,14 @@ def _kursverlauf():
 def main():
     zeilen = []
     K = _kursverlauf()
-    o, h, l, c = K["o"], K["h"], K["l"], K["c"]
+    o, h, l, c = (K[k].copy() for k in "ohlc")
     v = K["v"].reindex_like(c)
     roh = lambda t: t.endswith("=F") or t.endswith("=X") or t.startswith("^")
     platz = (o == h) & (h == l) & (l == c) & ((v == 0) | v.isna()) & c.notna()
     unlog = (h < l) | (c > h * 1.0001) | (c < l * 0.9999) | (o > h * 1.0001) | (o < l * 0.9999)
     r = c.pct_change(axis=1, fill_method=None); rn = r.shift(-1, axis=1)
-    sprung = (r.abs() > 0.25) & (rn.abs() > 0.20) & (r * rn < 0)
+    vm = v.T.rolling(20, min_periods=5).median().shift().T
+    sprung = (r.abs() > 0.25) & (rn.abs() > 0.20) & (r * rn < 0) & ~(v > 3 * vm)   # echte Kursspruenge kommen mit hohem Volumen (Moderna 19.08.2026: 46-fach)
     for art, m in (("Platzhalter", platz), ("unlogisch", unlog), ("Ausreisser", sprung)):
         for t in m.index:
             for d in m.columns[m.loc[t].fillna(False).values]:

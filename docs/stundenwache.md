@@ -1,8 +1,8 @@
 # Stundenwache
 
-Stand: 2026-10-02 · 273 Werte mit Stundendaten · erstellt 2026-10-03 01:14 UTC
+Stand: 2026-10-02 · 273 Werte mit Stundendaten · erstellt 2026-10-03 04:32 UTC
 
-> **Sitzung noch nicht abgeschlossen.** 2 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 6, 7, 9). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
+> **Sitzung noch nicht abgeschlossen.** 3 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 6, 7, 9). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
 
 Marken sind das juengste Swing-Tief und das juengste Swing-Hoch aus `tiefs_regel.py`, also dieselben wie im Tagesbericht. Geprueft wird nur, was der letzte Handelstag auf Stundenbasis damit gemacht hat.
 
@@ -25,72 +25,51 @@ Schluss unter dem juengsten Swing-Tief. Die Sequenz ist gerissen.
 
 Keine.
 
-## Tief angetestet (47)
+## Tief angetestet (26)
 
 Docht bis unter die Marke, kein Stundenschluss darunter.
 
 | Wert | Marke | Schluss | Abstand (ATR) | Stunden dahinter |
 |---|---|---|---|---|
-| BIIB | 219.84 | 220.01 | 0.033 | 0 |
-| ISRG | 391.4 | 391.94 | 0.05 | 0 |
-| ACN | 198.375 | 199.03 | 0.064 | 0 |
-| APP | 266.84 | 267.99 | 0.074 | 0 |
+| ACN | 198.36 | 199.03 | 0.066 | 0 |
 | VOW3.DE | 67.38 | 67.58 | 0.08 | 0 |
 | MBG.DE | 39.725 | 39.825 | 0.088 | 0 |
-| BKNG | 158.385 | 159.01 | 0.113 | 0 |
-| NVO | 37.17 | 37.295 | 0.117 | 0 |
-| AMGN | 401.96 | 403.1 | 0.118 | 0 |
 | BMW.DE | 54.1 | 54.34 | 0.125 | 0 |
-| CTSH | 58.21 | 58.51 | 0.129 | 0 |
-| PAYX | 98.52 | 98.95 | 0.137 | 0 |
-| SCHW | 96.32 | 96.705 | 0.158 | 0 |
-| GE | 308.2 | 309.55 | 0.159 | 0 |
-| T | 24.21 | 24.315 | 0.194 | 0 |
-| JNJ | 255.12 | 256.08 | 0.197 | 0 |
-| TM | 180.94 | 181.58 | 0.211 | 0 |
-| CL | 83.99 | 84.265 | 0.216 | 0 |
-| MMM | 161.12 | 161.89 | 0.218 | 0 |
-| VRSK | 162.8001 | 163.93 | 0.233 | 0 |
+| ZS | 195.11 | 196.56 | 0.157 | 0 |
+| NFLX | 66.75 | 67.075 | 0.167 | 0 |
+| TM | 180.91 | 181.58 | 0.22 | 0 |
+| AXON | 408.24 | 413.375 | 0.245 | 0 |
 | BAYN.DE | 44.55 | 44.9 | 0.248 | 0 |
-| HDB | 22.22 | 22.36 | 0.249 | 0 |
-| BABA | 105.15 | 105.85 | 0.258 | 0 |
+| CMCSA | 21.4 | 21.58 | 0.283 | 0 |
 | P911.DE | 42.64 | 43.13 | 0.288 | 0 |
-| LULU | 93.435 | 94.46 | 0.296 | 0 |
-| PM | 185.975 | 187.5 | 0.365 | 0 |
 | DTG.DE | 40.405 | 40.75 | 0.367 | 0 |
-| PCAR | 108.59 | 109.73 | 0.405 | 0 |
+| VRTX | 499.95 | 504.57 | 0.403 | 0 |
 | DBK.DE | 30.41 | 30.785 | 0.405 | 0 |
-| TMO | 648.29 | 654.94 | 0.411 | 0 |
 | KO | 85.17 | 85.665 | 0.431 | 0 |
-| MRNA | 183.28 | 189.91 | 0.483 | 0 |
-| MRK | 142.73 | 144.31 | 0.487 | 0 |
-| SPGI | 382.24 | 386.34 | 0.502 | 0 |
-| NVS | 139.95 | 141.03 | 0.511 | 0 |
-| IBN | 27.22 | 27.445 | 0.52 | 0 |
-| TMUS | 160.81 | 163.62 | 0.599 | 0 |
+| WELL | 225.36 | 227.75 | 0.513 | 0 |
 | SY1.DE | 89.78 | 91.04 | 0.656 | 0 |
-| SAN | 13.105 | 13.36 | 0.765 | 0 |
+| WDC | 396.57 | 415.12 | 0.713 | 0 |
+| SAN | 13.11 | 13.36 | 0.751 | 0 |
+| MA | 545.41 | 552.39 | 0.782 | 0 |
 | SIE.DE | 271.05 | 276.05 | 0.789 | 0 |
-| CEG | 249.06 | 257.55 | 0.849 | 0 |
 | RWE.DE | 57.94 | 59.12 | 0.934 | 0 |
 | CBK.DE | 38.1 | 39.14 | 0.954 | 0 |
-| ABBV | 257.87 | 263.0 | 1.083 | 0 |
+| BBVA | 26.24 | 26.96 | 1.076 | 0 |
 | MRK.DE | 132.95 | 136.2 | 1.188 | 0 |
-| ABT | 95.06 | 97.51 | 1.221 | 0 |
-| NKE | 31.97 | 33.885 | 1.693 | 0 |
+| ABT | 95.06 | 97.51 | 1.22 | 0 |
 
 ## Swing-Hoch ueberwunden (43)
 
 | Wert | Hoch | Schluss | Abstand (ATR) | Stunden darueber |
 |---|---|---|---|---|
-| WBD | 28.45 | 30.93 | 6.545 | 7 |
+| WBD | 28.45 | 30.93 | 6.539 | 7 |
 | KLAC | 182.41 | 206.94 | 3.593 | 7 |
 | AMAT | 487.68 | 540.04 | 2.916 | 7 |
 | ON | 74.48 | 84.89 | 2.807 | 7 |
 | SHOP | 134.74 | 151.39 | 2.557 | 7 |
 | LRCX | 317.13 | 347.45 | 2.344 | 7 |
-| SNPS | 445.92 | 490.05 | 2.344 | 7 |
-| CDNS | 330.81 | 351.49 | 1.754 | 7 |
+| SNPS | 445.92 | 490.05 | 2.341 | 7 |
+| CDNS | 330.81 | 351.49 | 1.753 | 7 |
 | IFX.DE | 60.48 | 64.38 | 1.574 | 9 |
 | MPC | 398.33 | 422.5 | 1.396 | 7 |
 | TXN | 284.39 | 293.81 | 1.229 | 7 |
@@ -99,7 +78,7 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | APH | 84.48 | 87.0 | 0.962 | 7 |
 | CAT | 827.81 | 845.53 | 0.855 | 7 |
 | MSFT | 509.44 | 517.86 | 0.711 | 7 |
-| VLO | 395.85 | 406.3 | 0.58 | 6 |
+| VLO | 395.85 | 406.3 | 0.579 | 6 |
 | PSX | 259.11 | 264.63 | 0.568 | 6 |
 | CRWD | 263.87 | 270.07 | 0.557 | 7 |
 | NXPI | 239.83 | 243.76 | 0.544 | 7 |
@@ -118,7 +97,7 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | ORCL | 140.88 | 142.51 | 0.257 | 5 |
 | SHEL | 95.85 | 96.23 | 0.228 | 5 |
 | NVDA | 233.21 | 233.99 | 0.151 | 7 |
-| CNQ | 48.28 | 48.455 | 0.148 | 5 |
+| CNQ | 48.28 | 48.455 | 0.147 | 5 |
 | SPCX | 158.13 | 158.975 | 0.136 | 3 |
 | AMZN | 250.88 | 251.53 | 0.121 | 3 |
 | HON | 213.64 | 214.01 | 0.088 | 6 |

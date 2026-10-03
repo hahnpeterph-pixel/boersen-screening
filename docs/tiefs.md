@@ -1,6 +1,6 @@
 # Tiefs, Volumen und Kaufregel-Check
 
-_Erstellt 2026-10-03 01:11 UTC. Fenster: letzte 90 Kalendertage. Tiefs nach der Umkehr-Regel (tiefs_regel.py): ein Tief zaehlt, sobald eine spaetere Kerze das Hoch der Tiefkerze ueberschreitet. Solange es abwaerts geht, gilt das tiefste Tief der Strecke. Gerechnet wird auf abgeschlossenen Tageskerzen._
+_Erstellt 2026-10-03 04:30 UTC. Fenster: letzte 90 Kalendertage. Tiefs nach der Umkehr-Regel (tiefs_regel.py): ein Tief zaehlt, sobald eine spaetere Kerze das Hoch der Tiefkerze ueberschreitet. Solange es abwaerts geht, gilt das tiefste Tief der Strecke. Gerechnet wird auf abgeschlossenen Tageskerzen._
 
 ## Kaufregel
 
@@ -68,8 +68,8 @@ Umkehr = Hammer-Kerze ODER hoeheres Hoch als der Vortag. Die Spalte Schwelle ist
 
 | Wert | Kurs | Marke | Abstand | Tief | ATR | RSI | Schwelle | KO-Vorschlag | Einsatz | Signal | |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| NVIDIA (NVDA) _Kandidat_ | 233,95 | 209,00 | 11,9 % | 227,03 | 5,15 | 62,9 | 64,6 (329 Faelle, 100,0 % der Serien) | 216,73 | **150,00 EUR** | hoeheres Hoch — CHART PRUEFEN | + |
-| Applied Materials (AMAT) _Kandidat_ | 540,04 | 465,00 | 16,1 % | 471,38 | 17,96 | 69,2 | 62,9 (346 Faelle, 100,0 % der Serien) | 435,47 | **150,00 EUR** | hoeheres Hoch — CHART PRUEFEN | + |
+| NVIDIA (NVDA) _Kandidat_ | 233,95 | 209,00 | 11,9 % | 227,03 | 5,15 | 62,9 | 64,8 (328 Faelle, 100,0 % der Serien) | 216,73 | **150,00 EUR** | hoeheres Hoch — CHART PRUEFEN | + |
+| Applied Materials (AMAT) _Kandidat_ | 540,04 | 465,00 | 16,1 % | 471,38 | 17,96 | 69,2 | 63,0 (346 Faelle, 100,0 % der Serien) | 435,47 | **150,00 EUR** | hoeheres Hoch — CHART PRUEFEN | + |
 
 _Legende: `+` Signal da, `!` Signal da aber RSI zu hoch, `-` warten._
 
@@ -79,7 +79,7 @@ _Legende: `+` Signal da, `!` Signal da aber RSI zu hoch, `-` warten._
 |---|---|---|---|---|---|
 | Take-Two (TTWO) | 231,58 (20.08., Chart) | 0,46 x ATR | 0,23 | **73,13 EUR** | kaufbar |
 | Meta Platforms (META) | 524,52 (30.07., Chart) | 0,20 x ATR | 0,10 | **59,82 EUR** | kaufbar |
-| Micron (MU) | 915,18 (19.08., Chart) | 1,31 x ATR | 0,66 | **115,55 EUR** | kaufbar |
+| Micron (MU) | 915,18 (19.08., Chart) | 1,31 x ATR | 0,66 | **115,54 EUR** | kaufbar |
 | Microsoft (MSFT) | 477,15 (18.08., Chart) | 10,88 x ATR | 1,00 | **150,00 EUR** | kaufbar |
 | Microsoft II (MSFT) | 477,15 (18.08., Chart) | 0,19 x ATR | 0,10 | **59,54 EUR** | kaufbar |
 | Oracle (ORCL) | 137,44 (19.08., Chart) | 3,90 x ATR | 1,00 | **150,00 EUR** | kaufbar |
@@ -94,7 +94,7 @@ Tief minus 2,0 x ATR. Die Hebelangabe ist das, was sich bei diesem KO rechnerisc
 |---|---|---|---|---|---|---|
 | Take-Two (TTWO) | 202,73 | 5,97 | 188,51 | 14,3x | 187,53 | 13,3x |
 | Meta Platforms (META) | 728,08 | 28,88 | 655,44 | 10,0x | 466,74 | 2,8x |
-| Micron (MU) | 1.074,89 | 42,24 | 938,42 | 7,9x | 653,40 | 2,6x |
+| Micron (MU) | 1.074,89 | 42,25 | 938,40 | 7,9x | 653,38 | 2,6x |
 | Microsoft (MSFT) | 517,53 | 11,85 | 467,52 | 10,3x | 349,65 | 3,1x |
 | Microsoft II (MSFT) | 517,53 | 11,85 | 467,52 | 10,3x | 349,65 | 3,1x |
 | Oracle (ORCL) | 142,30 | 6,34 | 118,91 | 6,1x | 101,83 | 3,5x |
@@ -132,7 +132,7 @@ _Diese Zeilen in die gelben Spalten uebertragen. Reihenfolge wie dort._
 |---|---|---|---|---|---|---|
 | TTWO | 202,73 | 5,97 | 37,2 | 231,58 | 2026-08-20 | 1,06 |
 | META | 728,08 | 28,88 | 61,5 | 524,52 | 2026-07-30 | 1,22 |
-| MU | 1.074,89 | 42,24 | 59,3 | 915,18 | 2026-08-19 | 1,83 |
+| MU | 1.074,89 | 42,25 | 59,3 | 915,18 | 2026-08-19 | 1,83 |
 | MSFT | 517,53 | 11,85 | 62,6 | 477,15 | 2026-08-18 | 0,77 |
 | ORCL | 142,30 | 6,34 | 48,3 | 137,44 | 2026-08-19 | 1,08 |
 | NVDA | 233,95 | 5,15 | 62,9 | 227,03 | 2026-09-29 | - |

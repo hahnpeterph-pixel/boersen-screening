@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-10-03 01:12 UTC. 286 Werte, Fenster 90 Kalendertage. EUR/USD 1.1257._
+_Erstellt 2026-10-03 04:30 UTC. 286 Werte, Fenster 90 Kalendertage. EUR/USD 1.1257._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -58,8 +58,10 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | FRE.DE (FRE.DE) | 43.525 | - | - | ja | 39.51 |
 | PAH3.DE (PAH3.DE) | 24.6 | - | - | ja | 30.0 |
 | VOW3.DE (VOW3.DE) | 67.58 | - | - | ja | 30.52 |
-| Silber (SI=F) | 60.71 | - | ja | ja | 38.86 |
-| Brent Oel (BZ=F) | 102.7 | ja | ja | - | 54.47 |
+| Gold (GC=F) | 4162.2998 | - | ja | ja | 34.14 |
+| Silber (SI=F) | 59.977 | - | ja | ja | 36.95 |
+| Platin (PL=F) | 1683.2 | - | ja | ja | 39.37 |
+| Brent Oel (BZ=F) | 102.25 | ja | ja | - | 53.71 |
 
 ---
 

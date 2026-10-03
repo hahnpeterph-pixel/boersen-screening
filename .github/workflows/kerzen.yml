@@ -48,11 +48,15 @@ jobs:
         run: python kerzen.py --stunde
         continue-on-error: true
 
+      - name: Datenpruefung
+        run: python datenpruefung.py
+        continue-on-error: true
+
       - name: Ergebnis speichern
         run: |
           git config user.name "screening-bot"
           git config user.email "actions@github.com"
-          git add docs/kerzen
+          git add docs/kerzen docs/datenpruefung.md docs/datenpruefung.csv
           if git diff --staged --quiet; then
             echo "Nichts geaendert."
             exit 0

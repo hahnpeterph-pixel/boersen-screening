@@ -30,6 +30,7 @@ from datetime import datetime, timezone
 
 import pandas as pd
 import yfinance as yf
+import kurse
 
 HIER = os.path.dirname(os.path.abspath(__file__))
 DOCS = os.path.join(HIER, "docs")
@@ -66,6 +67,8 @@ def _laden(tickers, period, interval) -> pd.DataFrame:
             except KeyError:
                 continue
             x = x.dropna(subset=["Open", "High", "Low", "Close"])
+            if interval != "1h":   # 03.10.2026: Yahoo-Platzhalter (O=H=L=C, Volumen 0) verwerfen, unlogische Kerzen bereinigen
+                x = kurse._platzhalter_weg(x, letzte_behalten=False)
             if not len(x):
                 continue
             idx = x.index
@@ -82,6 +85,27 @@ def _laden(tickers, period, interval) -> pd.DataFrame:
                 "l": x["Low"].round(4).values, "c": x["Close"].round(4).values,
                 "v": x["Volume"].fillna(0).astype("int64").values}))
     return pd.concat(teile, ignore_index=True) if teile else pd.DataFrame(columns=SPALTEN)
+
+
+def _mit_kursverlauf(df: pd.DataFrame) -> pd.DataFrame:
+    """03.10.2026: Fuer die Tage, die docs/kursverlauf* fuehrt (rund 6 Monate), gilt deren Kerze - dort sind
+    Platzhalter bereits aus Stundenkerzen ersetzt (kurse._loecher_fuellen). Aeltere Platzhalter bleiben
+    verworfen (fehlender Tag statt falscher Kerze)."""
+    try:
+        K = {k: pd.read_csv(os.path.join(DOCS, f"kursverlauf{s}.csv"), index_col=0)
+             for k, s in (("o", "_eroeffnung"), ("h", "_hoch"), ("l", "_tief"), ("c", ""), ("v", "_volumen"))}
+    except Exception as exc:  # noqa: BLE001
+        print(f"  ! kursverlauf nicht lesbar ({exc}) - Tageskerzen ohne Abgleich")
+        return df
+    lang = pd.concat({k: d.stack() for k, d in K.items()}, axis=1).reset_index()
+    lang.columns = ["ticker", "zeit", "o", "h", "l", "c", "v"]
+    lang = lang.dropna(subset=["o", "h", "l", "c"])
+    lang = lang[lang.ticker.isin(set(df.ticker))]
+    lang["v"] = lang["v"].fillna(0).astype("int64")
+    ab = lang.zeit.min()
+    df = pd.concat([df[df.zeit < ab], df[(df.zeit >= ab) & ~df.set_index(["ticker", "zeit"]).index.isin(
+        lang.set_index(["ticker", "zeit"]).index)], lang], ignore_index=True)
+    return df[SPALTEN]
 
 
 def _schreiben(df: pd.DataFrame, pfad: str) -> bool:
@@ -133,6 +157,7 @@ def lang(neu: bool = False) -> None:
         df = _laden(tick, "max", iv)
         if name == "tag":   # 28.09.2026: Tageskerzen mit Hoch/Tief/Volumen ab 2005 (Kennzahl-Auswertung je Wert)
             df = df[df.zeit >= TAG_AB]
+            df = _mit_kursverlauf(df)   # 03.10.2026: reparierte Tage aus docs/kursverlauf* uebernehmen
         if df.empty:
             print(f"  keine {name.capitalize()}nkerzen erhalten")
             continue
@@ -140,6 +165,13 @@ def lang(neu: bool = False) -> None:
         if neu or not os.path.exists(arch):
             _schreiben(df[df.zeit <= ARCHIV_BIS], arch)
             print(f"  Archiv geschrieben: {(df.zeit <= ARCHIV_BIS).sum()} Kerzen")
+        else:   # 03.10.2026: bestehendes Archiv von Yahoo-Platzhaltern befreien (O=H=L=C, Volumen 0), unlogische Kerzen bereinigen
+            a = pd.read_csv(arch, dtype={"ticker": str, "zeit": str})
+            platz = (a.o == a.h) & (a.h == a.l) & (a.l == a.c) & (a.v == 0)
+            a = a[~platz].copy()
+            a["h"], a["l"] = a[["o", "h", "l", "c"]].max(axis=1), a[["o", "h", "l", "c"]].min(axis=1)
+            if _schreiben(a[SPALTEN], arch):
+                print(f"  Archiv bereinigt: {int(platz.sum())} Platzhalter entfernt")
         akt = df[df.zeit > ARCHIV_BIS]
         _schreiben(akt, os.path.join(KZ, f"{name}.csv.gz"))
         print(f"  {name}: {df.ticker.nunique()} Werte, ab {df.zeit.min()}, aktuell {len(akt)} Kerzen")

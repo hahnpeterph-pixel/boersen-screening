@@ -239,6 +239,12 @@ jobs:
         run: python indizes.py
         continue-on-error: true
 
+      # Datenpruefung (03.10.2026, Peter: erst Daten pruefen, Fehler sofort korrigieren, dann auswerten):
+      # Platzhalter-Kerzen, unlogische Kerzen, Ausreisser, fehlende Tage -> docs/datenpruefung.md
+      - name: Datenpruefung
+        run: python datenpruefung.py
+        continue-on-error: true
+
       - name: Ergebnis speichern
         run: |
           git config user.name "screening-bot"

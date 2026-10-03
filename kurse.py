@@ -163,10 +163,36 @@ def leeren() -> None:
     shutil.rmtree(CACHE, ignore_errors=True)
 
 
+def _platzhalter_weg(df: pd.DataFrame, letzte_behalten: bool = True) -> pd.DataFrame:
+    """PLATZHALTER-KERZEN (03.10.2026, Peter: "Wenn Fehler vorhanden sind, muessen die sofort korrigiert
+    werden"). Yahoo liefert an manchen Tagen statt der echten Kerze einen Platzhalter: Eroeffnung = Hoch =
+    Tief = Schluss = Vortagesschluss, Volumen 0 (z. B. 25.06.2026 bei 13 deutschen Werten - Rheinmetall
+    fiel an dem Tag intraday bis rund 893, im Platzhalter stand 949). Solche Zeilen sind KEIN Kurs, sie
+    werden verworfen; der Tag gilt dann als fehlend und _loecher_fuellen baut ihn aus Stundenkerzen neu.
+    Die juengste Zeile bleibt stehen (sonst haengt der Wert in der Vollstaendigkeitspruefung zurueck);
+    datenpruefung.py meldet sie. Dazu werden unlogische Kerzen bereinigt (Schluss/Eroeffnung ausserhalb
+    von Hoch/Tief): Hoch = groesster, Tief = kleinster der vier Werte."""
+    if df is None or df.empty or not {"Open", "High", "Low", "Close"} <= set(df.columns):
+        return df
+    v = df["Volume"] if "Volume" in df.columns else pd.Series(0.0, index=df.index)
+    platz = ((df["Open"] == df["High"]) & (df["High"] == df["Low"]) & (df["Low"] == df["Close"])
+             & ((v == 0) | v.isna()))
+    if letzte_behalten and len(platz):
+        platz.iloc[-1] = False
+    if platz.any():
+        print(f"  Platzhalter verworfen: {', '.join(str(d)[:10] for d in df.index[platz])}")
+    df = df[~platz].copy()
+    vier = df[["Open", "High", "Low", "Close"]]
+    df["High"] = vier.max(axis=1)
+    df["Low"] = vier.min(axis=1)
+    return df
+
+
 def _aufbereiten(df: pd.DataFrame) -> pd.DataFrame | None:
     if df is None or df.empty or "Low" not in df.columns:
         return None
     df = df.dropna(subset=["Low", "Close"])
+    df = _platzhalter_weg(df)
     if len(df) < MINDESTKERZEN:
         return None
     df.index = pd.to_datetime(df.index).tz_localize(None)
@@ -795,6 +821,7 @@ def _archiv(ticker: str) -> "pd.DataFrame | None":
                                  for sp, f in frames.items()})
             teil.index = pd.to_datetime(teil.index)
             teil = teil.dropna(subset=["Open", "High", "Low", "Close"])
+            teil = _platzhalter_weg(teil, letzte_behalten=False)   # 03.10.2026: Platzhalter nie als Fuellkerze nutzen
             _ARCHIV[t] = teil
     return _ARCHIV.get(ticker)
 

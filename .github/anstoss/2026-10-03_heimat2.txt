@@ -1,0 +1,2 @@
+Heimatboerse 03.10.2026 Lauf 2 (ohne Archivfuellung, Kalenderpruefung): alle Laeufe neu
+laeufe: markthistorie.yml historie.yml hochs.yml phasen.yml ruecksetzer.yml tagesreaktion.yml stimmung.yml boden.yml screening.yml kerzen.yml

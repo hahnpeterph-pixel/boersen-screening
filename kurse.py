@@ -758,6 +758,7 @@ SCHLUSS_UTC = {"XETRA": 17, "Euronext": 17, "USA": 21,
                "ASX": 7, "NSE": 11, "B3": 21, "KRX": 8}
 # Kalender der Heimatboersen aus exchange_calendars (Feiertage je Boerse, auch Asien) - 03.10.2026
 _XKAL = {}
+_KAL_FEHLER: set = set()
 XCAL = {"LSE": "XLON", "SIX": "XSWX", "BME": "XMAD", "CPH": "XCSE", "OSL": "XOSL", "TSE": "XTKS", "TWSE": "XTAI",
         "HKEX": "XHKG", "ASX": "XASX", "NSE": "XBOM", "B3": "BVMF", "KRX": "XKRX"}
 
@@ -846,7 +847,13 @@ def handelstage(b: str, von: date, bis: date) -> list[date]:
             s = kal.sessions_in_range(pd.Timestamp(von), pd.Timestamp(bis))
             return [d.date() for d in s]
         except Exception as e:  # noqa: BLE001
-            print(f"  Kalender {b} nicht verfuegbar ({e}) - Montag bis Freitag")
+            # 03.10.2026: OHNE Kalender keine Lueckenpruefung fuer diese Boerse (None) - Montag bis Freitag hatte die
+            # Feiertage der Heimatboersen als "fehlend" gefuellt (mit Kursen der US-Notierung, Fund Shell 06.04.).
+            global _KAL_FEHLER
+            if b not in _KAL_FEHLER:
+                print(f"  !!! KALENDER {b} NICHT VERFUEGBAR ({e!r}) - keine Lueckenpruefung fuer diese Boerse")
+                _KAL_FEHLER.add(b)
+            return None
     tage, feiertage, d = [], {}, von
     while d <= bis:
         if d.weekday() < 5:
@@ -901,8 +908,10 @@ def _loecher_fuellen(ticker: str, holen: str, df: "pd.DataFrame",
     if b is None or df is None or df.empty:
         return df, {}
     vorhanden = set(df.index.date)
-    fehlend = [d for d in handelstage(b, df.index[0].date(), letzter_fertiger_tag(b))
-               if d not in vorhanden]
+    kal = handelstage(b, df.index[0].date(), letzter_fertiger_tag(b))
+    if kal is None:   # 03.10.2026: Kalender fehlt - nichts fuellen statt falsch fuellen
+        return df, {}
+    fehlend = [d for d in kal if d not in vorhanden]
     if not fehlend:
         return df, {}
 
@@ -918,7 +927,7 @@ def _loecher_fuellen(ticker: str, holen: str, df: "pd.DataFrame",
         return z
 
     # b) Archiv - nur fuer die unbereinigte Reihe, das Archiv ist unbereinigt.
-    if not auto_adjust:
+    if not auto_adjust and not _ohne_rueckfall(ticker):   # 03.10.2026: Archiv kann US-Kurse enthalten - Heimatwerte nur aus Stunden
         arch = _archiv(ticker)
         if arch is not None:
             for d in fehlend:
@@ -987,7 +996,10 @@ def fehlende_tage(ticker: str, vorhandene_tage, pruef_tage: int = PRUEF_TAGE,
     if b is None:
         return []
     bis = letzter_fertiger_tag(b, jetzt)
-    kalender = handelstage(b, bis - timedelta(days=int(pruef_tage * 1.6) + 10), bis)[-pruef_tage:]
+    kalender = handelstage(b, bis - timedelta(days=int(pruef_tage * 1.6) + 10), bis)
+    if kalender is None:   # 03.10.2026: ohne Kalender keine Aussage
+        return []
+    kalender = kalender[-pruef_tage:]
     da = {d if isinstance(d, date) else pd.Timestamp(d).date() for d in vorhandene_tage}
     if not da:
         return [str(d) for d in kalender]

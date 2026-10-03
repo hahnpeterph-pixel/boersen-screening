@@ -33,7 +33,9 @@ def main():
     r = c.pct_change(axis=1, fill_method=None); rn = r.shift(-1, axis=1)
     vm = v.T.rolling(20, min_periods=5).median().shift().T
     sprung = (r.abs() > 0.25) & (rn.abs() > 0.20) & (r * rn < 0) & ~(v > 3 * vm)   # echte Kursspruenge kommen mit hohem Volumen (Moderna 19.08.2026: 46-fach)
-    for art, m in (("Platzhalter", platz), ("unlogisch", unlog), ("Ausreisser", sprung)):
+    med = c.T.rolling(20, min_periods=5, center=True).median().T
+    einheit = ((c / med) > 3) | ((c / med) < 1 / 3)   # 03.10.2026: Mischdaten (z. B. US-Kurs in Heimatreihe) - Faktor 3 und mehr
+    for art, m in (("Platzhalter", platz), ("unlogisch", unlog), ("Ausreisser", sprung), ("Einheitensprung", einheit)):
         for t in m.index:
             for d in m.columns[m.loc[t].fillna(False).values]:
                 zeilen.append(dict(quelle="kursverlauf", art=art, ticker=t, tag=d, rohstoff_fx=roh(t)))
@@ -59,7 +61,12 @@ def main():
     akt = E[~E.rohstoff_fx]
     stand = c.columns[-1]
     kopf = "**OK - keine Fehler bei Aktien**" if akt.empty else f"**FEHLER - {len(akt)} Befunde bei Aktien, vor der Auswertung klaeren**"
-    md = [f"# Datenpruefung (Kurse bis {stand})", "", kopf, ""]
+    try:   # 03.10.2026: Boersenkalender der Heimatboersen verfuegbar?
+        import exchange_calendars as _xc  # noqa: F401
+        kal = "Kalender Heimatboersen: verfuegbar"
+    except Exception as e:  # noqa: BLE001
+        kal = f"**Kalender Heimatboersen: NICHT verfuegbar ({e!r})**"
+    md = [f"# Datenpruefung (Kurse bis {stand})", "", kopf, "", kal, ""]
     if len(E):
         g = E.groupby(["quelle", "art", "rohstoff_fx"]).size().reset_index(name="anzahl")
         md += ["| Quelle | Art | Rohstoff/Devise | Anzahl |", "|---|---|---|---|"]

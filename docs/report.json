@@ -55,131 +55,18 @@
  },
  "changes": {
   "turnaround": {
-   "entries": [
-    {
-     "ticker": "ZS",
-     "rank": 1
-    },
-    {
-     "ticker": "ACN",
-     "rank": 3
-    },
-    {
-     "ticker": "MCK",
-     "rank": 4
-    },
-    {
-     "ticker": "CNQ",
-     "rank": 9
-    },
-    {
-     "ticker": "TMO",
-     "rank": 11
-    },
-    {
-     "ticker": "BHP",
-     "rank": 13
-    },
-    {
-     "ticker": "TRV",
-     "rank": 15
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "SAP.DE",
-     "old_rank": 2
-    },
-    {
-     "ticker": "MDT",
-     "old_rank": 3
-    },
-    {
-     "ticker": "CTSH",
-     "old_rank": 4
-    },
-    {
-     "ticker": "BP",
-     "old_rank": 8
-    },
-    {
-     "ticker": "AMGN",
-     "old_rank": 9
-    },
-    {
-     "ticker": "CTAS",
-     "old_rank": 11
-    },
-    {
-     "ticker": "AMZN",
-     "old_rank": 15
-    }
-   ],
-   "moves": [
-    {
-     "ticker": "DB1.DE",
-     "rank": 7,
-     "delta": 5
-    },
-    {
-     "ticker": "DBK.DE",
-     "rank": 8,
-     "delta": 5
-    }
-   ]
+   "entries": [],
+   "exits": [],
+   "moves": []
   },
   "momentum": {
-   "entries": [
-    {
-     "ticker": "FTNT",
-     "rank": 2
-    },
-    {
-     "ticker": "PANW",
-     "rank": 3
-    },
-    {
-     "ticker": "TMO",
-     "rank": 10
-    },
-    {
-     "ticker": "EMR",
-     "rank": 13
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "ANET",
-     "old_rank": 2
-    },
-    {
-     "ticker": "MU",
-     "old_rank": 6
-    },
-    {
-     "ticker": "MTX.DE",
-     "old_rank": 13
-    },
-    {
-     "ticker": "WBD",
-     "old_rank": 15
-    }
-   ],
+   "entries": [],
+   "exits": [],
    "moves": []
   },
   "value": {
-   "entries": [
-    {
-     "ticker": "MNST",
-     "rank": 13
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "UNP",
-     "old_rank": 15
-    }
-   ],
+   "entries": [],
+   "exits": [],
    "moves": []
   },
   "analyst_flips": []

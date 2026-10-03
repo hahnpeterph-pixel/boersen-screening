@@ -1,6 +1,6 @@
 # Indizes
 
-Stand Abruf: 03.10.2026 06:00 UTC
+Stand Abruf: 03.10.2026 07:10 UTC
 
 **Marktlage S&P 500:** VIX 15,3 ruhig · Fear & Greed 31 Angst – Risiko für einen Rückgang um 4 % in den nächsten 2 Wochen: **niedrig (4 von 100, sonst 11)**
 
@@ -16,5 +16,5 @@ Beta = um wie viel Prozent der Wert im Schnitt mitgeht, wenn sein Index 1 % bewe
 
 **S&P 500:** 232 Werte · Median Beta (250 T) 0,70 · abwaerts 0,69 · Einbruch-Faktor 1,03 · Gleichlauf (125 T) 0,19
 
-**DAX:** 39 Werte · Median Beta (250 T) 0,79 · abwaerts 0,85 · Einbruch-Faktor 1,00 · Gleichlauf (125 T) 0,35
+**DAX:** 39 Werte · Median Beta (250 T) 0,79 · abwaerts 0,87 · Einbruch-Faktor 1,01 · Gleichlauf (125 T) 0,35
 

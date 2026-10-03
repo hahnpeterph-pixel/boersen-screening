@@ -1,5 +1,3 @@
 ticker,boerse,fehlend,gefuellt,wochenkontrolle
 FRE.DE,XETRA,,2026-08-13:archiv,
 PBR,B3,,2026-08-10:stunden,
-SKHY,KRX,2026-07-17,,2026-07-17: Wochentief 1677636.18 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
-TSM,TWSE,2026-07-10,,2026-07-10: Wochentief 2407.91 liegt UNTER allen bekannten Tagestiefs (2415.00) - der fehlende Tag hatte ein tieferes Tief

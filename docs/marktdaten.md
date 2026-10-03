@@ -1,10 +1,17 @@
 # Marktdaten
 
-_Erstellt 2026-10-03 21:19 UTC. 297 Werte, Fenster 90 Kalendertage. EUR/USD 1.1257._
+_Erstellt 2026-10-03 21:56 UTC. 297 Werte, Fenster 90 Kalendertage. EUR/USD 1.1257._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
 Vollstaendige Daten: `docs/marktdaten.csv`
+
+> **Standwarnung: 2 von 273 Aktien haengen zurueck.** Neuester Handelstag 2026-10-02. Fuer die folgenden Werte gelten Kurs, ATR, RSI und Tiefs NICHT fuer diesen Tag. Die Spalte `stand_zurueck` in der CSV markiert sie ebenfalls.
+>
+> | Wert | letzte Kerze |
+> |---|---|
+> | HDB | 2026-10-01 |
+> | IBN | 2026-10-01 |
 
 ## Kerzensignale von gestern
 
@@ -52,7 +59,6 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | BBVA (BBVA) | 23.73 | ja | - | ja | 35.07 |
 | MFG (MFG) | 8446.0 | - | - | ja | 47.74 |
 | BTI (BTI) | 39.6 | - | - | ja | 34.28 |
-| HDB (HDB) | 22.34 | - | - | ja | 44.39 |
 | SNY (SNY) | 70.81 | - | - | ja | 35.32 |
 | GSK (GSK) | 17.795 | - | - | ja | 35.64 |
 | APP (APP) | 268.22 | - | - | ja | 28.4 |

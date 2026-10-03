@@ -16,7 +16,8 @@ name: Anstoss Wochenendkette
 # Diese Kette IST jetzt der Wochenendlauf - eigener Zeitplan Sa 00:07 UTC, die Einzellaeufe haben
 # keinen Samstag-Zeitplan mehr (verspaetete Einzelstarts erzeugten Mischstaende, z. B. Historie 05:38
 # nach dem Screening). Reihenfolge: Markthistorie, Historie, Hochs, Phasen, Ruecksetzer,
-# Kerzen Woche und Monat (inkl. Tageskerzen), Tagesreaktion, Stimmung, zuletzt das abschliessende Screening.
+# Tagesreaktion, Stimmung, das abschliessende Screening und ZULETZT Kerzen Woche und Monat (inkl. Tageskerzen) -
+# der Kerzen-Lauf uebernimmt die vom Screening reparierten Tage aus docs/kursverlauf* (03.10.2026).
 
 on:
   schedule:
@@ -54,7 +55,7 @@ jobs:
           datei=""
           [ "$GITHUB_EVENT_NAME" = "push" ] && datei=$(git diff --name-only HEAD~1 HEAD -- .github/anstoss | tail -1)
           liste=$( [ -n "$datei" ] && grep -oP '^laeufe:\s*\K.*' "$datei" || true )
-          [ -z "$liste" ] && liste="markthistorie.yml historie.yml hochs.yml phasen.yml ruecksetzer.yml kerzen.yml tagesreaktion.yml stimmung.yml screening.yml"
+          [ -z "$liste" ] && liste="markthistorie.yml historie.yml hochs.yml phasen.yml ruecksetzer.yml tagesreaktion.yml stimmung.yml screening.yml kerzen.yml"
           echo "Laeufe: $liste"
           for wf in $liste; do
             schon=$(gh run list --workflow "$wf" --limit 5 --json createdAt,status,conclusion \

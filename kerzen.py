@@ -100,6 +100,7 @@ def _mit_kursverlauf(df: pd.DataFrame) -> pd.DataFrame:
     lang = pd.concat({k: d.stack() for k, d in K.items()}, axis=1).reset_index()
     lang.columns = ["ticker", "zeit", "o", "h", "l", "c", "v"]
     lang = lang.dropna(subset=["o", "h", "l", "c"])
+    lang = lang[~((lang.o == lang.h) & (lang.h == lang.l) & (lang.l == lang.c) & (lang.v.fillna(0) == 0))]   # nie Platzhalter uebernehmen
     lang = lang[lang.ticker.isin(set(df.ticker))]
     lang["v"] = lang["v"].fillna(0).astype("int64")
     ab = lang.zeit.min()

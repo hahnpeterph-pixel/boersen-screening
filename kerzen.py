@@ -55,18 +55,19 @@ def _laden(tickers, period, interval) -> pd.DataFrame:
     teile = []
     for i in range(0, len(tickers), BATCH):
         teil = tickers[i:i + BATCH]
+        holen = [kurse.quelle(t) for t in teil]   # 03.10.2026: Heimatboerse (kurse.KURSQUELLE), Name bleibt
         try:
-            d = yf.download(teil, period=period, interval=interval, auto_adjust=False,
+            d = yf.download(holen, period=period, interval=interval, auto_adjust=False,
                             group_by="ticker", threads=True, progress=False, ignore_tz=(interval != "1h"))
         except Exception as exc:  # noqa: BLE001
             print(f"  ! Abruf {interval} {teil[0]}..: {exc}")
             continue
-        for t in teil:
+        for t, q in zip(teil, holen):
             try:
-                x = d[t] if isinstance(d.columns, pd.MultiIndex) else d
+                x = d[q] if isinstance(d.columns, pd.MultiIndex) else d
             except KeyError:
                 continue
-            x = x.dropna(subset=["Open", "High", "Low", "Close"])
+            x = kurse._skalieren(x.dropna(subset=["Open", "High", "Low", "Close"]), t)
             if interval != "1h":   # 03.10.2026: Yahoo-Platzhalter (O=H=L=C, Volumen 0) verwerfen, unlogische Kerzen bereinigen
                 x = kurse._platzhalter_weg(x, letzte_behalten=False)
             if not len(x):
@@ -168,6 +169,10 @@ def lang(neu: bool = False) -> None:
             print(f"  Archiv geschrieben: {(df.zeit <= ARCHIV_BIS).sum()} Kerzen")
         else:   # 03.10.2026: bestehendes Archiv von Yahoo-Platzhaltern befreien (O=H=L=C, Volumen 0), unlogische Kerzen bereinigen
             a = pd.read_csv(arch, dtype={"ticker": str, "zeit": str})
+            # 03.10.2026 Heimatboerse: Archivzeilen dieser Werte durch die Heimatnotierung ersetzen (vorher US-Notierung in USD)
+            heim = sorted({t for t in df.ticker.unique() if kurse._ohne_rueckfall(t)})
+            if heim:
+                a = pd.concat([a[~a.ticker.isin(heim)], df[df.ticker.isin(heim) & (df.zeit <= ARCHIV_BIS)]], ignore_index=True)
             platz = (a.o == a.h) & (a.h == a.l) & (a.l == a.c) & (a.v == 0)
             a = a[~platz].copy()
             a["h"], a["l"] = a[["o", "h", "l", "c"]].max(axis=1), a[["o", "h", "l", "c"]].min(axis=1)

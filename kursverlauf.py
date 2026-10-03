@@ -52,7 +52,9 @@ import kurse
 # Schwelle seit dem 01.09.2026 verhindert, dass eine mitten im Handel
 # abgegriffene Kerze als Tagesschluss durchgeht.
 def _europaeisch(ticker: str) -> bool:
-    return ticker.endswith(".DE") or ticker == "ASML"
+    # 03.10.2026: Heimatboersen in Europa schliessen wie XETRA vor 17 UTC; Asien frueher - 17 ist dort ebenfalls sicher
+    return ticker.endswith(".DE") or ticker == "ASML" or (kurse.boerse(ticker) or "") in (
+        "LSE", "SIX", "BME", "CPH", "OSL", "Euronext", "TSE", "TWSE", "HKEX", "ASX", "NSE", "KRX")
 
 
 def unfertige_heutige_kerze_verwerfen(df, ticker, jetzt_utc):
@@ -157,6 +159,8 @@ SRT3.DE SIE.DE ENR.DE SHL.DE SY1.DE VOW3.DE VNA.DE ZAL.DE""".split()
 # vorliegt.
 WEITERE = ["GC=F", "SI=F", "PL=F", "PA=F", "HG=F", "CL=F", "BZ=F", "NG=F",
            "ZW=F", "CC=F", "SB=F", "KC=F", "ZC=F", "EURUSD=X",
+           # 03.10.2026 Heimatwaehrungen (Scheine auf Heimatboersen)
+           "EURGBP=X", "EURCHF=X", "EURDKK=X", "EURNOK=X", "EURJPY=X", "EURHKD=X", "EURTWD=X", "EURAUD=X", "EURINR=X", "EURBRL=X", "EURKRW=X",
            # Rendite 10-jaehrige US-Staatsanleihe (Peter 25.09.2026): Zeile
            # "Abhaengigkeit" der Kaufvorlage (Zinsen). Nur Kursreihe, kein Screening.
            "^TNX"]

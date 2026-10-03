@@ -40,7 +40,7 @@ CACHE = os.path.join(HIER, ".kurse_cache")
 # Version im Dateinamen: aendert sich das Format oder die Aufbereitung,
 # darf ein alter Cache nicht stillschweigend weiterbenutzt werden. Genau
 # dieser Fehler ist beim Fundamentaldaten-Cache schon einmal passiert.
-CACHE_VERSION = 1
+CACHE_VERSION = 2   # 03.10.2026: Heimatboerse/Pence-Umrechnung - alte Caches ungueltig
 
 MINDESTKERZEN = 30
 
@@ -69,7 +69,7 @@ MINDESTKERZEN = 30
 # betroffen sind: NXPI.AS kennt Yahoo nicht, NXP ist also kein
 # Zweitnotierungsfall. AZN und CCEP haben ihre Ratings ohnehin auf der
 # US-Seite. Bleibt ASML.
-KURSQUELLE: dict[str, dict[str, str]] = {
+KURSQUELLE: dict[str, dict] = {
     "ASML": {
         "ticker": "ASML.AS",
         "waehrung": "EUR",
@@ -77,6 +77,48 @@ KURSQUELLE: dict[str, dict[str, str]] = {
                  "nicht auf der New Yorker Registry-Notierung",
     },
 }
+
+# ── HEIMATBOERSE (03.10.2026, Peter: "Ja, ich haette nicht gedacht, dass wir die Heimatboerse ausgeschlossen haben.
+# Das betraf ja eigentlich nur ASML" · Umbau "Jetzt"). Werte, deren Haupthandel NICHT in den USA liegt, werden an der
+# Heimatboerse ausgewertet - Kurs, ATR, Tiefs, KO-Statistik in Heimatwaehrung. Anlass: BAT 02.10.2026 - London mit
+# 74 Mio. Stueck Volumen zeigte eine gruene Kerze, die US-Notierung nur einen Mini-Hammer; Trade Republic fuehrt
+# Turbos direkt auf die Londoner Notierung (SG DE000FA62HF8, KO in GBP). Der Name (US-Ticker) bleibt, damit alle
+# Verknuepfungen halten; Analysten-Kursziele rechnet screener.py in die Heimatwaehrung um.
+# "faktor": Yahoo notiert London in Pence (GBp) - 0,01 macht daraus Pfund wie bei Trade Republic.
+for _name, _q, _w, _f in (
+        ("BTI", "BATS.L", "GBP", 0.01), ("SHEL", "SHEL.L", "GBP", 0.01), ("HSBC", "HSBA.L", "GBP", 0.01),
+        ("UL", "ULVR.L", "GBP", 0.01), ("AZN", "AZN.L", "GBP", 0.01), ("GSK", "GSK.L", "GBP", 0.01),
+        ("BP", "BP.L", "GBP", 0.01), ("RIO", "RIO.L", "GBP", 0.01),
+        ("NVO", "NOVO-B.CO", "DKK", 1.0), ("NVS", "NOVN.SW", "CHF", 1.0), ("UBS", "UBSG.SW", "CHF", 1.0),
+        ("SNY", "SAN.PA", "EUR", 1.0), ("TTE", "TTE.PA", "EUR", 1.0), ("ING", "INGA.AS", "EUR", 1.0),
+        ("SAN", "SAN.MC", "EUR", 1.0), ("BBVA", "BBVA.MC", "EUR", 1.0), ("EQNR", "EQNR.OL", "NOK", 1.0),
+        ("TSM", "2330.TW", "TWD", 1.0), ("TM", "7203.T", "JPY", 1.0), ("SONY", "6758.T", "JPY", 1.0),
+        ("MUFG", "8306.T", "JPY", 1.0), ("SMFG", "8316.T", "JPY", 1.0), ("MFG", "8411.T", "JPY", 1.0),
+        ("BABA", "9988.HK", "HKD", 1.0), ("BHP", "BHP.AX", "AUD", 1.0), ("HDB", "HDFCBANK.NS", "INR", 1.0),
+        ("IBN", "ICICIBANK.NS", "INR", 1.0), ("PBR", "PETR3.SA", "BRL", 1.0), ("SKHY", "000660.KS", "KRW", 1.0)):
+    KURSQUELLE[_name] = {"ticker": _q, "waehrung": _w, "faktor": _f, "grund": "Heimatboerse (Peter 03.10.2026)"}
+
+
+def faktor(ticker: str) -> float:
+    """Umrechnung der Yahoo-Kurse in die Handelswaehrung (London: Pence -> Pfund)."""
+    return float(KURSQUELLE.get(ticker, {}).get("faktor", 1.0))
+
+
+def _skalieren(df, ticker):
+    """Open/High/Low/Close mit faktor() multiplizieren (Volumen bleibt). Nur EINMAL je Abruf aufrufen."""
+    f = faktor(ticker)
+    if df is None or f == 1.0:
+        return df
+    df = df.copy()
+    for sp in ("Open", "High", "Low", "Close", "Adj Close"):
+        if sp in df.columns:
+            df[sp] = df[sp] * f
+    return df
+
+
+def _ohne_rueckfall(ticker: str) -> bool:
+    """Heimatboerse ohne Stooq/Twelve-Data-Rueckfall (andere Waehrung/Einheit waere still falsch)."""
+    return ticker in KURSQUELLE and ticker != "ASML"
 
 
 def quelle(ticker: str) -> str:
@@ -236,6 +278,8 @@ def kerzen_stooq(ticker: str) -> pd.DataFrame | None:
     heute nicht mit einer erfolgreichen Stooq-Reihe von gestern verwechselt
     wird - beide landen unter unterschiedlichen Dateinamen.
     """
+    if _ohne_rueckfall(ticker):   # 03.10.2026: Heimatboerse - kein Rueckfall in fremder Einheit
+        return None
     holen = quelle(ticker)
     key = (ticker, "stooq")
     if key in _MEM:
@@ -335,6 +379,8 @@ def kerzen_twelvedata(ticker: str, tage: int = 30) -> pd.DataFrame | None:
     vollstaendige 400-Tage-Historie waere das Gratis-Kontingent
     (800 Anfragen/Tag, 8/Minute) zu knapp bemessen.
     """
+    if _ohne_rueckfall(ticker):   # 03.10.2026: Heimatboerse - kein Rueckfall in fremder Einheit
+        return None
     key = os.environ.get("TWELVEDATA_API_KEY")
     if not key:
         return None
@@ -474,7 +520,7 @@ def kerzen(ticker: str, period: str = "400d", auto_adjust: bool = False) -> pd.D
         _MEM[key] = None
         return None
 
-    df = _kuerzen(_aufbereiten(roh), lang)
+    df = _skalieren(_kuerzen(_aufbereiten(roh), lang), ticker)
     # LOECHER FUELLEN (19.09.2026). Siehe Abschnitt "Handelskalender und
     # Lueckenfuellung" weiter unten.
     bericht = {}
@@ -563,7 +609,7 @@ def kerzen_batch(tickers: list[str], period: str = "400d",
     os.makedirs(CACHE, exist_ok=True)
     for t in frisch:
         q = quelle_von[t]
-        df = _kuerzen(_aufbereiten(roh_je_quelle.get(q)), _abruf_zeitraum(period)[1])
+        df = _skalieren(_kuerzen(_aufbereiten(roh_je_quelle.get(q)), _abruf_zeitraum(period)[1]), t)
         _MEM[(t, period, auto_adjust)] = df
         if df is not None:
             ergebnis[t] = df.copy()
@@ -645,7 +691,7 @@ def stundenkerzen(ticker: str, period: str = "5d", auto_adjust: bool = False) ->
         _MEM[key] = None
         return None
 
-    df = _aufbereiten_stunden(roh)
+    df = _skalieren(_aufbereiten_stunden(roh), ticker)
     _MEM[key] = df
     if df is not None:
         os.makedirs(CACHE, exist_ok=True)
@@ -706,7 +752,14 @@ SONDERSCHLIESSTAGE: dict[str, set] = {
 
 # Ab wann (UTC) ein Handelstag als abgeschlossen gilt - dieselben
 # Schwellen wie unfertige_heutige_kerze_verwerfen() in kursverlauf.py.
-SCHLUSS_UTC = {"XETRA": 17, "Euronext": 17, "USA": 21}
+SCHLUSS_UTC = {"XETRA": 17, "Euronext": 17, "USA": 21,
+               # 03.10.2026 Heimatboersen (Stunde UTC, ab der der Tag sicher geschlossen ist)
+               "LSE": 17, "SIX": 17, "BME": 17, "CPH": 17, "OSL": 17, "TSE": 8, "TWSE": 7, "HKEX": 9,
+               "ASX": 7, "NSE": 11, "B3": 21, "KRX": 8}
+# Kalender der Heimatboersen aus exchange_calendars (Feiertage je Boerse, auch Asien) - 03.10.2026
+_XKAL = {}
+XCAL = {"LSE": "XLON", "SIX": "XSWX", "BME": "XMAD", "CPH": "XCSE", "OSL": "XOSL", "TSE": "XTKS", "TWSE": "XTAI",
+        "HKEX": "XHKG", "ASX": "XASX", "NSE": "XBOM", "B3": "BVMF", "KRX": "XKRX"}
 
 STUNDEN_FUELLGRENZE_TAGE = 720
 MIN_STUNDEN_JE_TAG = 5
@@ -731,11 +784,13 @@ def boerse(ticker: str) -> str | None:
     q = quelle(ticker)
     if q.endswith(".DE"):
         return "XETRA"
-    if q.endswith(".AS"):
+    if q.endswith(".AS") or q.endswith(".PA"):
         return "Euronext"
     if "." not in q:
         return "USA"
-    return None
+    # 03.10.2026: Heimatboersen, Kalender ueber exchange_calendars
+    return {".L": "LSE", ".SW": "SIX", ".MC": "BME", ".CO": "CPH", ".OL": "OSL", ".T": "TSE", ".TW": "TWSE",
+            ".HK": "HKEX", ".AX": "ASX", ".NS": "NSE", ".SA": "B3", ".KS": "KRX"}.get("." + q.rsplit(".", 1)[-1])
 
 
 def _feiertage(b: str, jahr: int) -> set:
@@ -781,6 +836,17 @@ def _feiertage(b: str, jahr: int) -> set:
 
 def handelstage(b: str, von: date, bis: date) -> list[date]:
     """Alle regulaeren Handelstage eines Handelsplatzes von..bis."""
+    if b in XCAL:   # 03.10.2026: Heimatboersen
+        try:
+            import exchange_calendars as xc
+            schl = (XCAL[b], von.year)
+            if schl not in _XKAL:
+                _XKAL[schl] = xc.get_calendar(XCAL[b], start=pd.Timestamp(date(von.year, 1, 1)))
+            kal = _XKAL[schl]
+            s = kal.sessions_in_range(pd.Timestamp(von), pd.Timestamp(bis))
+            return [d.date() for d in s]
+        except Exception as e:  # noqa: BLE001
+            print(f"  Kalender {b} nicht verfuegbar ({e}) - Montag bis Freitag")
     tage, feiertage, d = [], {}, von
     while d <= bis:
         if d.weekday() < 5:
@@ -870,7 +936,7 @@ def _loecher_fuellen(ticker: str, holen: str, df: "pd.DataFrame",
         try:
             roh = yf.Ticker(holen).history(start=min(rest), end=max(rest) + timedelta(days=1),
                                            interval="1h", auto_adjust=auto_adjust)
-            h = _aufbereiten_stunden(roh)
+            h = _skalieren(_aufbereiten_stunden(roh), ticker)
         except Exception as e:
             print(f"  {holen}: Stundenabruf zum Fuellen fehlgeschlagen ({e})")
             h = None
@@ -948,7 +1014,7 @@ def wochenkontrolle(ticker: str, tag: date, tagestiefs: dict) -> str:
         return f"Wochenkerze nicht abrufbar ({e})"
     if w is None or w.empty:
         return "Wochenkerze nicht verfuegbar"
-    wtief = float(w["Low"].min())
+    wtief = float(w["Low"].min()) * faktor(ticker)
     bekannt = [v for d, v in tagestiefs.items()
                if montag <= pd.Timestamp(d).date() < montag + timedelta(days=5)
                and v is not None and v == v]

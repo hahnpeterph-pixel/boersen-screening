@@ -72,7 +72,8 @@ ROHSTOFFE = [
     (["SB=F"], "Zucker", "Future"),
 ]
 
-WAEHRUNG = [(["EURUSD=X"], "EUR/USD", "Spot")]
+WAEHRUNG = [(["EURUSD=X"], "EUR/USD", "Spot")] + [([x], f"EUR/{x[3:6]}", "Spot") for x in (   # 03.10.2026: Heimatwaehrungen
+    "EURGBP=X", "EURCHF=X", "EURDKK=X", "EURNOK=X", "EURJPY=X", "EURHKD=X", "EURTWD=X", "EURAUD=X", "EURINR=X", "EURBRL=X", "EURKRW=X")]
 
 # ── Aktien: NASDAQ-100, Dow 30, DAX 40, S&P-100-Ergaenzung. Statisch,
 # aendert sich selten.
@@ -125,7 +126,7 @@ UNIVERSUM = ([([t], t, "Aktie") for t in dict.fromkeys(US)]
              + ROHSTOFFE + WAEHRUNG)
 
 # Ticker ohne brauchbares Volumen bei Yahoo
-OHNE_VOLUMEN = {"XAUUSD=X", "XAGUSD=X", "XPTUSD=X", "XPDUSD=X", "EURUSD=X"}
+OHNE_VOLUMEN = {"XAUUSD=X", "XAGUSD=X", "XPTUSD=X", "XPDUSD=X", "EURUSD=X", "EURGBP=X", "EURCHF=X", "EURDKK=X", "EURNOK=X", "EURJPY=X", "EURHKD=X", "EURTWD=X", "EURAUD=X", "EURINR=X", "EURBRL=X", "EURKRW=X"}
 
 
 # ── Berechnungen ───────────────────────────────────────────────────

@@ -84,8 +84,8 @@ ANALYST_MAX_AGE_DAYS = 1  # Ratingaenderungen taeglich frisch - das ist das kurz
 # mit abweichender Version wird ignoriert (sofort neu geholt), egal wie
 # frisch er nach dem Alter waere - sonst benutzt ein neuer Programmlauf
 # unbemerkt einen Cache mit alter, unvollstaendiger Datenstruktur.
-FUND_CACHE_VERSION = 5   # 5 ab 24.08.2026: Feld "country" ergaenzt
-ANALYST_CACHE_VERSION = 5  # 5 ab 22.09.2026: Aggregat-Rueckfall bei weniger als KONSENS_MIN_BANKEN Einzelratings
+FUND_CACHE_VERSION = 6   # 6 ab 03.10.2026: Feld "exchange" ergaenzt;  5 ab 24.08.2026: Feld "country" ergaenzt
+ANALYST_CACHE_VERSION = 6  # 6 ab 03.10.2026: Kursziele der Heimatboersen-Werte in Heimatwaehrung umgerechnet.  5 ab 22.09.2026: Aggregat-Rueckfall bei weniger als KONSENS_MIN_BANKEN Einzelratings
 REVISION_WINDOW_DAYS = 30  # Fenster fuer "kurzfristige" Analysten-Ratingaenderungen
 TARGET_FRESH_DAYS = 14     # Kursziel gilt als "frisch", wenn eine Ratingaenderung diese Zeit nicht ueberschreitet
 # Unter so vielen Banken mit Einzelrating wird zusaetzlich Yahoos
@@ -237,6 +237,24 @@ def clean_name(name: str | None, ticker: str) -> str:
     return n or ticker
 
 
+_BOERSE_YAHOO = {"NMS": "NASDAQ", "NGM": "NASDAQ", "NCM": "NASDAQ", "NAS": "NASDAQ", "NYQ": "NYSE", "NYS": "NYSE",
+                 "ASE": "NYSE American", "PCX": "NYSE Arca", "BTS": "Cboe", "GER": "XETRA", "AMS": "Amsterdam"}
+_BOERSE_HEIM = {"LSE": "London", "SIX": "Zürich", "BME": "Madrid", "CPH": "Kopenhagen", "OSL": "Oslo", "TSE": "Tokio",
+                "TWSE": "Taipeh", "HKEX": "Hongkong", "ASX": "Sydney", "NSE": "Mumbai", "B3": "São Paulo", "KRX": "Seoul"}
+
+
+def boerse_name(t: str, yahoo_code: str = "") -> str:
+    """03.10.2026: Handelsplatz im Klartext - Heimatboerse (kurse.KURSQUELLE), XETRA, sonst NYSE/NASDAQ aus Yahoo."""
+    b = kurse.boerse(t) or ""
+    if b in _BOERSE_HEIM:
+        return _BOERSE_HEIM[b]
+    if b == "Euronext":
+        return "Paris" if kurse.quelle(t).endswith(".PA") else "Amsterdam"
+    if b == "XETRA":
+        return "XETRA"
+    return _BOERSE_HEIM.get(yahoo_code, _BOERSE_YAHOO.get(yahoo_code, "USA" if b == "USA" else ""))
+
+
 def safe(d: dict, key: str, default=None):
     v = d.get(key, default)
     if v is None:
@@ -384,6 +402,7 @@ def _hole_fundamentaldaten(tickers: list[str]) -> dict:
         "freeCashflow", "returnOnEquity", "dividendYield", "earningsTimestamp",
         "shortName", "sector", "country",
         "targetMeanPrice", "numberOfAnalystOpinions", "recommendationKey",
+        "exchange",   # 03.10.2026 (Peter: "Boerse fehlt"): NYSE/NASDAQ im Kopf der Vorlagen
     )
     data: dict[str, dict] = {}
     for n, t in enumerate(tickers, 1):
@@ -577,6 +596,24 @@ def get_analyst_data(tickers: list[str]) -> dict:
             entry['price_targets'] = yf.Ticker(t).analyst_price_targets or {}
         except Exception:  # noqa: BLE001
             entry['price_targets'] = {}
+        # 03.10.2026 (Heimatboerse, kurse.KURSQUELLE): Yahoo liefert die Kursziele zum Namen (US-Notierung, USD), der Kurs
+        # kommt aber von der Heimatboerse (z. B. BAT London in GBP). Umrechnung mit dem Verhaeltnis der Schlusskurse am
+        # selben Tag (enthaelt Waehrung UND ADR-Verhaeltnis), sonst Kursziel und Kurs in verschiedenen Einheiten.
+        if t in kurse.KURSQUELLE and entry['price_targets']:
+            try:
+                heim = kurse.kerzen(t, period="400d")
+                us = yf.Ticker(t).history(period="1mo", auto_adjust=False)
+                us.index = pd.to_datetime(us.index).tz_localize(None).normalize()
+                gemeinsam = heim.index.normalize().intersection(us.index)
+                tag = gemeinsam.max()
+                f_ = float(heim.loc[heim.index.normalize() == tag, "Close"].iloc[-1]) / float(us.loc[tag, "Close"])
+                entry['price_targets'] = {k: (round(v * f_, 4) if isinstance(v, (int, float)) else v)
+                                          for k, v in entry['price_targets'].items()}
+                entry['umrechnung'] = {"faktor": round(f_, 6), "tag": str(tag.date()), "quelle": kurse.quelle(t),
+                                       "waehrung": kurse.waehrung(t)}
+            except Exception as e:  # noqa: BLE001
+                print(f"  {t}: Kursziel-Umrechnung fehlgeschlagen ({e}) - Kursziel verworfen, statt falsche Waehrung")
+                entry['price_targets'] = {}
 
         data[t] = entry
         if n % 25 == 0:
@@ -1280,6 +1317,7 @@ def build_state(prices, fundamentals, analyst, members, benchmarks) -> dict:
             # Der Index taugt dafuer nicht - ASML, AstraZeneca, PDD und
             # MercadoLibre notieren an der Nasdaq, sitzen aber woanders.
             "country": safe(f, "country", "unbekannt"),
+            "exchange": safe(f, "exchange", ""),   # 03.10.2026
             "metrics": m,
             "flags": flags,
             "earnings_in": earnings_in_days(f),
@@ -2166,6 +2204,7 @@ def build_analysten_csv(today: dict, prev: dict | None = None) -> str:
         "letztes_datum", "letzte_bank", "letzte_aktion",
         "letzte_von", "letzte_nach", "letzte_klartext", "aenderungen_30t",
         "einzelratings",
+        "boerse",   # 03.10.2026: Handelsplatz (Heimatboerse laut kurse.KURSQUELLE, sonst Yahoo-Boersencode)
     ]
     zeilen = [",".join(kopf)]
     vorrows = (prev or {}).get("rows", {}) or {}
@@ -2220,6 +2259,7 @@ def build_analysten_csv(today: dict, prev: dict | None = None) -> str:
                 + f" [{e.get('quelle','')}]"
                 for e in merged
             ),
+            boerse_name(t, r.get("exchange") or ""),
         ]
         zeilen.append(",".join(csv_feld(v) for v in werte))
 

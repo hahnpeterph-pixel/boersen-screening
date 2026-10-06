@@ -1,260 +1,56 @@
 ticker,boerse,fehlend,gefuellt,wochenkontrolle
-AAPL,USA,,2026-10-05:stunden,
-ABBV,USA,,2026-10-05:stunden,
-ABNB,USA,,2026-10-05:stunden,
-ABT,USA,,2026-10-05:stunden,
-ACN,USA,,2026-10-05:stunden,
-ADBE,USA,,2026-10-05:stunden,
-ADI,USA,,2026-10-05:stunden,
-ADP,USA,,2026-10-05:stunden,
-ADS.DE,XETRA,2026-10-05,,"2026-10-05: Wochentief 141.60, keine Tagestiefs der Woche bekannt"
-ADSK,USA,,2026-10-05:stunden,
-AEP,USA,,2026-10-05:stunden,
-AIR.DE,XETRA,2026-10-05,,"2026-10-05: Wochentief 188.18, keine Tagestiefs der Woche bekannt"
-ALV.DE,XETRA,2026-10-05,,"2026-10-05: Wochentief 415.70, keine Tagestiefs der Woche bekannt"
-AMAT,USA,,2026-10-05:stunden,
-AMD,USA,,2026-10-05:stunden,
-AMGN,USA,,2026-10-05:stunden,
-AMT,USA,,2026-10-05:stunden,
-AMZN,USA,,2026-10-05:stunden,
-ANET,USA,2026-10-05,,"2026-10-05: Wochentief 204.51, keine Tagestiefs der Woche bekannt"
-APH,USA,2026-10-05,,"2026-10-05: Wochentief 86.65, keine Tagestiefs der Woche bekannt"
-APP,USA,2026-10-05,,"2026-10-05: Wochentief 270.00, keine Tagestiefs der Woche bekannt"
-ARM,USA,,2026-10-05:stunden,
-ASML,Euronext,,2026-10-05:stunden,
-AVGO,USA,,2026-10-05:stunden,
-AXON,USA,2026-10-05,,"2026-10-05: Wochentief 408.00, keine Tagestiefs der Woche bekannt"
-AXP,USA,,2026-10-05:stunden,
+ADS.DE,XETRA,,2026-10-05:stunden,
+AIR.DE,XETRA,,2026-10-05:stunden,
+ALV.DE,XETRA,,2026-10-05:stunden,
+ASML,Euronext,,2026-10-05:archiv,
 AZN,LSE,,2026-10-05:stunden,
-BA,USA,,2026-10-05:stunden,
-BAC,USA,,2026-10-05:stunden,
-BAS.DE,XETRA,2026-10-05,,"2026-10-05: Wochentief 49.50, keine Tagestiefs der Woche bekannt"
-BAYN.DE,XETRA,2026-10-05,,"2026-10-05: Wochentief 43.64, keine Tagestiefs der Woche bekannt"
+BAS.DE,XETRA,,2026-10-05:stunden,
+BAYN.DE,XETRA,,2026-10-05:stunden,
 BBVA,BME,,2026-10-05:stunden,
-BEI.DE,XETRA,2026-10-05,,"2026-10-05: Wochentief 75.32, keine Tagestiefs der Woche bekannt"
-BIIB,USA,,2026-10-05:stunden,
-BKNG,USA,,2026-10-05:stunden,
-BKR,USA,,2026-10-05:stunden,
-BLK,USA,,2026-10-05:stunden,
-BMO,USA,2026-10-05,,"2026-10-05: Wochentief 164.17, keine Tagestiefs der Woche bekannt"
-BMW.DE,XETRA,2026-10-05,,"2026-10-05: Wochentief 54.12, keine Tagestiefs der Woche bekannt"
-BMY,USA,,2026-10-05:stunden,
-BNR.DE,XETRA,2026-10-05,,"2026-10-05: Wochentief 58.12, keine Tagestiefs der Woche bekannt"
-BNS,USA,2026-10-05,,"2026-10-05: Wochentief 90.26, keine Tagestiefs der Woche bekannt"
-BNY,USA,,2026-10-05:stunden,
+BEI.DE,XETRA,,2026-10-05:stunden,
+BMW.DE,XETRA,,2026-10-05:stunden,
+BNR.DE,XETRA,,2026-10-05:stunden,
 BP,LSE,,2026-10-05:stunden,
-BRK-B,USA,,2026-10-05:stunden,
 BTI,LSE,,2026-10-05:stunden,
-C,USA,,2026-10-05:stunden,
-CAT,USA,,2026-10-05:stunden,
-CB,USA,2026-10-05,,"2026-10-05: Wochentief 328.81, keine Tagestiefs der Woche bekannt"
-CBK.DE,XETRA,2026-10-05,,"2026-10-05: Wochentief 38.87, keine Tagestiefs der Woche bekannt"
-CCEP,USA,2026-10-05,,"2026-10-05: Wochentief 100.06, keine Tagestiefs der Woche bekannt"
-CDNS,USA,,2026-10-05:stunden,
-CDW,USA,,2026-10-05:stunden,
-CEG,USA,,2026-10-05:stunden,
-CHTR,USA,,2026-10-05:stunden,
-CL,USA,2026-10-05,,"2026-10-05: Wochentief 84.33, keine Tagestiefs der Woche bekannt"
-CM,USA,2026-10-05,,"2026-10-05: Wochentief 109.92, keine Tagestiefs der Woche bekannt"
-CMCSA,USA,,2026-10-05:stunden,
-CNQ,USA,2026-10-05,,"2026-10-05: Wochentief 47.33, keine Tagestiefs der Woche bekannt"
-COF,USA,2026-10-05,,"2026-10-05: Wochentief 194.28, keine Tagestiefs der Woche bekannt"
-CON.DE,XETRA,2026-10-05,,"2026-10-05: Wochentief 68.84, keine Tagestiefs der Woche bekannt"
-COP,USA,2026-10-05,,"2026-10-05: Wochentief 124.81, keine Tagestiefs der Woche bekannt"
-COST,USA,,2026-10-05:stunden,
-CPRT,USA,,2026-10-05:stunden,
-CRM,USA,,2026-10-05:stunden,
-CRWD,USA,,2026-10-05:stunden,
-CSCO,USA,,2026-10-05:stunden,
-CSGP,USA,,2026-10-05:stunden,
-CSX,USA,,2026-10-05:stunden,
-CTAS,USA,,2026-10-05:stunden,
-CTSH,USA,,2026-10-05:stunden,
-CVS,USA,2026-10-05,,"2026-10-05: Wochentief 86.33, keine Tagestiefs der Woche bekannt"
-CVX,USA,2026-10-05,,"2026-10-05: Wochentief 201.96, keine Tagestiefs der Woche bekannt"
-DASH,USA,,2026-10-05:stunden,
-DB1.DE,XETRA,2026-10-05,,"2026-10-05: Wochentief 286.40, keine Tagestiefs der Woche bekannt"
-DBK.DE,XETRA,2026-10-05,,"2026-10-05: Wochentief 30.72, keine Tagestiefs der Woche bekannt"
-DDOG,USA,,2026-10-05:stunden,
-DE,USA,2026-10-05,,"2026-10-05: Wochentief 676.31, keine Tagestiefs der Woche bekannt"
-DELL,USA,2026-10-05,,"2026-10-05: Wochentief 546.00, keine Tagestiefs der Woche bekannt"
-DHL.DE,XETRA,2026-10-05,,"2026-10-05: Wochentief 55.78, keine Tagestiefs der Woche bekannt"
-DHR,USA,2026-10-05,,"2026-10-05: Wochentief 213.69, keine Tagestiefs der Woche bekannt"
-DIS,USA,,2026-10-05:stunden,
-DTE.DE,XETRA,2026-10-05,,"2026-10-05: Wochentief 26.53, keine Tagestiefs der Woche bekannt"
-DTG.DE,XETRA,2026-10-05,,"2026-10-05: Wochentief 40.36, keine Tagestiefs der Woche bekannt"
-DUK,USA,2026-10-05,,"2026-10-05: Wochentief 113.29, keine Tagestiefs der Woche bekannt"
-DXCM,USA,,2026-10-05:stunden,
-EMR,USA,2026-10-05,,"2026-10-05: Wochentief 161.00, keine Tagestiefs der Woche bekannt"
-ENB,USA,2026-10-05,,"2026-10-05: Wochentief 45.49, keine Tagestiefs der Woche bekannt"
-ENR.DE,XETRA,2026-10-05,,"2026-10-05: Wochentief 142.92, keine Tagestiefs der Woche bekannt"
-EOAN.DE,XETRA,2026-10-05,,"2026-10-05: Wochentief 16.92, keine Tagestiefs der Woche bekannt"
-EQIX,USA,2026-10-05,,"2026-10-05: Wochentief 1007.09, keine Tagestiefs der Woche bekannt"
+CBK.DE,XETRA,,2026-10-05:stunden,
+CON.DE,XETRA,,2026-10-05:stunden,
+DB1.DE,XETRA,,2026-10-05:stunden,
+DBK.DE,XETRA,,2026-10-05:stunden,
+DHL.DE,XETRA,,2026-10-05:stunden,
+DTE.DE,XETRA,,2026-10-05:stunden,
+DTG.DE,XETRA,,2026-10-05:stunden,
+ENR.DE,XETRA,,2026-10-05:stunden,
+EOAN.DE,XETRA,,2026-10-05:stunden,
 EQNR,OSL,,2026-10-05:stunden,
-ETN,USA,2026-10-05,,"2026-10-05: Wochentief 431.38, keine Tagestiefs der Woche bekannt"
-EXC,USA,,2026-10-05:stunden,
-FANG,USA,,2026-10-05:stunden,
-FAST,USA,,2026-10-05:stunden,
-FDX,USA,2026-10-05,,"2026-10-05: Wochentief 285.04, keine Tagestiefs der Woche bekannt"
-FRE.DE,XETRA,2026-10-05,2026-08-13:archiv,"2026-10-05: Wochentief 43.79, keine Tagestiefs der Woche bekannt"
-FTNT,USA,,2026-10-05:stunden,
-GD,USA,2026-10-05,,"2026-10-05: Wochentief 327.47, keine Tagestiefs der Woche bekannt"
-GE,USA,2026-10-05,,"2026-10-05: Wochentief 305.36, keine Tagestiefs der Woche bekannt"
-GEHC,USA,,2026-10-05:stunden,
-GEV,USA,2026-10-05,,"2026-10-05: Wochentief 973.70, keine Tagestiefs der Woche bekannt"
-GFS,USA,2026-10-05,,"2026-10-05: Wochentief 47.50, keine Tagestiefs der Woche bekannt"
-GILD,USA,,2026-10-05:stunden,
-GLW,USA,2026-10-05,,"2026-10-05: Wochentief 158.44, keine Tagestiefs der Woche bekannt"
-GM,USA,2026-10-05,,"2026-10-05: Wochentief 78.66, keine Tagestiefs der Woche bekannt"
-GOOGL,USA,,2026-10-05:stunden,
-GS,USA,,2026-10-05:stunden,
+FRE.DE,XETRA,,2026-08-13:archiv 2026-10-05:stunden,
 GSK,LSE,,2026-10-05:stunden,
-HD,USA,,2026-10-05:stunden,
-HEI.DE,XETRA,2026-10-05,,"2026-10-05: Wochentief 145.70, keine Tagestiefs der Woche bekannt"
-HEN3.DE,XETRA,2026-10-05,,"2026-10-05: Wochentief 71.64, keine Tagestiefs der Woche bekannt"
-HNR1.DE,XETRA,2026-10-05,,"2026-10-05: Wochentief 253.60, keine Tagestiefs der Woche bekannt"
-HON,USA,,2026-10-05:stunden,
-HONA,USA,2026-10-05,,"2026-10-05: Wochentief 152.20, keine Tagestiefs der Woche bekannt"
+HEI.DE,XETRA,,2026-10-05:stunden,
+HEN3.DE,XETRA,,2026-10-05:stunden,
+HNR1.DE,XETRA,,2026-10-05:stunden,
 HSBC,LSE,,2026-10-05:stunden,
-IBM,USA,,2026-10-05:stunden,
-IDXX,USA,,2026-10-05:stunden,
-IFX.DE,XETRA,2026-10-05,,"2026-10-05: Wochentief 63.05, keine Tagestiefs der Woche bekannt"
-ILMN,USA,,2026-10-05:stunden,
+IFX.DE,XETRA,,2026-10-05:stunden,
 ING,Euronext,,2026-10-05:stunden,
-INTC,USA,,2026-10-05:stunden,
-INTU,USA,,2026-10-05:stunden,
-ISRG,USA,,2026-10-05:stunden,
-JNJ,USA,,2026-10-05:stunden,
-JPM,USA,,2026-10-05:stunden,
-KDP,USA,,2026-10-05:stunden,
-KHC,USA,,2026-10-05:stunden,
-KLAC,USA,,2026-10-05:stunden,
-KO,USA,,2026-10-05:stunden,
-LIN,USA,,2026-10-05:stunden,
-LLY,USA,2026-10-05,,"2026-10-05: Wochentief 1139.49, keine Tagestiefs der Woche bekannt"
-LMT,USA,2026-10-05,,"2026-10-05: Wochentief 501.12, keine Tagestiefs der Woche bekannt"
-LOW,USA,2026-10-05,,"2026-10-05: Wochentief 178.45, keine Tagestiefs der Woche bekannt"
-LRCX,USA,,2026-10-05:stunden,
-LULU,USA,,2026-10-05:stunden,
-MA,USA,2026-10-05,,"2026-10-05: Wochentief 551.15, keine Tagestiefs der Woche bekannt"
-MAR,USA,,2026-10-05:stunden,
-MBG.DE,XETRA,2026-10-05,,"2026-10-05: Wochentief 39.41, keine Tagestiefs der Woche bekannt"
-MCD,USA,,2026-10-05:stunden,
-MCHP,USA,,2026-10-05:stunden,
-MCK,USA,2026-10-05,,"2026-10-05: Wochentief 900.98, keine Tagestiefs der Woche bekannt"
-MDB,USA,,2026-10-05:stunden,
-MDLZ,USA,,2026-10-05:stunden,
-MDT,USA,2026-10-05,,"2026-10-05: Wochentief 85.53, keine Tagestiefs der Woche bekannt"
-MELI,USA,,2026-10-05:stunden,
-META,USA,,2026-10-05:stunden,
-MMM,USA,,2026-10-05:stunden,
-MNST,USA,,2026-10-05:stunden,
-MO,USA,2026-10-05,,"2026-10-05: Wochentief 65.78, keine Tagestiefs der Woche bekannt"
-MPC,USA,2026-10-05,,"2026-10-05: Wochentief 421.08, keine Tagestiefs der Woche bekannt"
-MRK,USA,,2026-10-05:stunden,
-MRK.DE,XETRA,2026-10-05,,"2026-10-05: Wochentief 135.05, keine Tagestiefs der Woche bekannt"
-MRNA,USA,,2026-10-05:stunden,
-MRVL,USA,,2026-10-05:stunden,
-MS,USA,2026-10-05,,"2026-10-05: Wochentief 187.60, keine Tagestiefs der Woche bekannt"
-MSFT,USA,,2026-10-05:stunden,
-MSTR,USA,2026-10-05,,"2026-10-05: Wochentief 160.12, keine Tagestiefs der Woche bekannt"
-MTX.DE,XETRA,2026-10-05,,"2026-10-05: Wochentief 367.60, keine Tagestiefs der Woche bekannt"
-MU,USA,,2026-10-05:stunden,
-MUV2.DE,XETRA,2026-10-05,,"2026-10-05: Wochentief 506.00, keine Tagestiefs der Woche bekannt"
-NEE,USA,2026-10-05,,"2026-10-05: Wochentief 75.89, keine Tagestiefs der Woche bekannt"
-NEM,USA,2026-10-05,,"2026-10-05: Wochentief 113.58, keine Tagestiefs der Woche bekannt"
-NET,USA,2026-10-05,,"2026-10-05: Wochentief 348.57, keine Tagestiefs der Woche bekannt"
-NFLX,USA,,2026-10-05:stunden,
-NKE,USA,,2026-10-05:stunden,
-NOW,USA,2026-10-05,,"2026-10-05: Wochentief 134.15, keine Tagestiefs der Woche bekannt"
-NVDA,USA,,2026-10-05:stunden,
+MBG.DE,XETRA,,2026-10-05:stunden,
+MRK.DE,XETRA,,2026-10-05:stunden,
+MTX.DE,XETRA,,2026-10-05:stunden,
+MUV2.DE,XETRA,,2026-10-05:stunden,
 NVO,CPH,,2026-10-05:stunden,
-NXPI,USA,,2026-10-05:stunden,
-ODFL,USA,,2026-10-05:stunden,
-ON,USA,,2026-10-05:stunden,
-ORCL,USA,,2026-10-05:stunden,
-ORLY,USA,,2026-10-05:stunden,
-P911.DE,XETRA,2026-10-05,,"2026-10-05: Wochentief 42.70, keine Tagestiefs der Woche bekannt"
-PAH3.DE,XETRA,2026-10-05,,"2026-10-05: Wochentief 24.29, keine Tagestiefs der Woche bekannt"
-PANW,USA,,2026-10-05:stunden,
-PAYX,USA,,2026-10-05:stunden,
-PBR,B3,,2026-08-10:stunden,
-PCAR,USA,,2026-10-05:stunden,
-PDD,USA,,2026-10-05:stunden,
-PEP,USA,,2026-10-05:stunden,
-PFE,USA,2026-10-05,,"2026-10-05: Wochentief 27.12, keine Tagestiefs der Woche bekannt"
-PG,USA,,2026-10-05:stunden,
-PGR,USA,2026-10-05,,"2026-10-05: Wochentief 208.12, keine Tagestiefs der Woche bekannt"
-PH,USA,2026-10-05,,"2026-10-05: Wochentief 958.06, keine Tagestiefs der Woche bekannt"
-PLD,USA,2026-10-05,,"2026-10-05: Wochentief 127.83, keine Tagestiefs der Woche bekannt"
-PLTR,USA,,2026-10-05:stunden,
-PM,USA,2026-10-05,,"2026-10-05: Wochentief 184.11, keine Tagestiefs der Woche bekannt"
-PSX,USA,2026-10-05,,"2026-10-05: Wochentief 262.03, keine Tagestiefs der Woche bekannt"
-PYPL,USA,,2026-10-05:stunden,
-QCOM,USA,,2026-10-05:stunden,
-QIA.DE,XETRA,2026-10-05,,"2026-10-05: Wochentief 39.67, keine Tagestiefs der Woche bekannt"
-REGN,USA,,2026-10-05:stunden,
-RHM.DE,XETRA,2026-10-05,,"2026-10-05: Wochentief 951.20, keine Tagestiefs der Woche bekannt"
+P911.DE,XETRA,,2026-10-05:stunden,
+PAH3.DE,XETRA,,2026-10-05:stunden,
+QIA.DE,XETRA,,2026-10-05:stunden,
+RHM.DE,XETRA,,2026-10-05:stunden,
 RIO,LSE,,2026-10-05:stunden,
-ROP,USA,,2026-10-05:stunden,
-ROST,USA,,2026-10-05:stunden,
-RTX,USA,2026-10-05,,"2026-10-05: Wochentief 182.62, keine Tagestiefs der Woche bekannt"
-RWE.DE,XETRA,2026-10-05,,"2026-10-05: Wochentief 58.24, keine Tagestiefs der Woche bekannt"
-RY,USA,2026-10-05,,"2026-10-05: Wochentief 194.26, keine Tagestiefs der Woche bekannt"
+RWE.DE,XETRA,,2026-10-05:stunden,
 SAN,BME,,2026-10-05:stunden,
-SAP.DE,XETRA,2026-10-05,,"2026-10-05: Wochentief 184.66, keine Tagestiefs der Woche bekannt"
-SBUX,USA,,2026-10-05:stunden,
-SCCO,USA,2026-10-05,,"2026-10-05: Wochentief 203.52, keine Tagestiefs der Woche bekannt"
-SCHW,USA,2026-10-05,,"2026-10-05: Wochentief 96.44, keine Tagestiefs der Woche bekannt"
+SAP.DE,XETRA,,2026-10-05:stunden,
 SHEL,LSE,,2026-10-05:stunden,
-SHL.DE,XETRA,2026-10-05,,"2026-10-05: Wochentief 37.20, keine Tagestiefs der Woche bekannt"
-SHOP,USA,2026-10-05,,"2026-10-05: Wochentief 151.70, keine Tagestiefs der Woche bekannt"
-SHW,USA,,2026-10-05:stunden,
-SIE.DE,XETRA,2026-10-05,,"2026-10-05: Wochentief 271.95, keine Tagestiefs der Woche bekannt"
-SNDK,USA,2026-10-05,,"2026-10-05: Wochentief 1681.00, keine Tagestiefs der Woche bekannt"
-SNOW,USA,2026-10-05,,"2026-10-05: Wochentief 337.87, keine Tagestiefs der Woche bekannt"
-SNPS,USA,,2026-10-05:stunden,
+SHL.DE,XETRA,,2026-10-05:stunden,
+SIE.DE,XETRA,,2026-10-05:stunden,
 SNY,Euronext,,2026-10-05:stunden,
-SO,USA,2026-10-05,,"2026-10-05: Wochentief 83.17, keine Tagestiefs der Woche bekannt"
-SPCX,USA,2026-10-05,,"2026-10-05: Wochentief 158.62, keine Tagestiefs der Woche bekannt"
-SPG,USA,2026-10-05,,"2026-10-05: Wochentief 199.76, keine Tagestiefs der Woche bekannt"
-SPGI,USA,,2026-10-05:stunden,
-SPOT,USA,2026-10-05,,"2026-10-05: Wochentief 470.25, keine Tagestiefs der Woche bekannt"
-SRT3.DE,XETRA,2026-10-05,,"2026-10-05: Wochentief 246.50, keine Tagestiefs der Woche bekannt"
-STX,USA,2026-10-05,,"2026-10-05: Wochentief 875.00, keine Tagestiefs der Woche bekannt"
-SY1.DE,XETRA,2026-10-05,,"2026-10-05: Wochentief 90.78, keine Tagestiefs der Woche bekannt"
-SYK,USA,2026-10-05,,"2026-10-05: Wochentief 275.00, keine Tagestiefs der Woche bekannt"
-T,USA,2026-10-05,,"2026-10-05: Wochentief 24.01, keine Tagestiefs der Woche bekannt"
-TD,USA,2026-10-05,,"2026-10-05: Wochentief 116.76, keine Tagestiefs der Woche bekannt"
-TEAM,USA,,2026-10-05:stunden,
-TJX,USA,2026-10-05,,"2026-10-05: Wochentief 133.34, keine Tagestiefs der Woche bekannt"
-TMO,USA,2026-10-05,,"2026-10-05: Wochentief 648.04, keine Tagestiefs der Woche bekannt"
-TMUS,USA,,2026-10-05:stunden,
-TRV,USA,,2026-10-05:stunden,
-TSLA,USA,,2026-10-05:stunden,
-TTD,USA,,2026-10-05:stunden,
+SRT3.DE,XETRA,,2026-10-05:stunden,
+SY1.DE,XETRA,,2026-10-05:stunden,
 TTE,Euronext,,2026-10-05:stunden,
-TTWO,USA,,2026-10-05:stunden,
-TXN,USA,,2026-10-05:stunden,
-UBER,USA,2026-10-05,,"2026-10-05: Wochentief 68.38, keine Tagestiefs der Woche bekannt"
 UL,LSE,,2026-10-05:stunden,
-UNH,USA,,2026-10-05:stunden,
-UNP,USA,2026-10-05,,"2026-10-05: Wochentief 274.45, keine Tagestiefs der Woche bekannt"
-UPS,USA,2026-10-05,,"2026-10-05: Wochentief 91.56, keine Tagestiefs der Woche bekannt"
-USB,USA,2026-10-05,,"2026-10-05: Wochentief 57.10, keine Tagestiefs der Woche bekannt"
-V,USA,,2026-10-05:stunden,
-VLO,USA,2026-10-05,,"2026-10-05: Wochentief 404.60, keine Tagestiefs der Woche bekannt"
-VNA.DE,XETRA,2026-10-05,,"2026-10-05: Wochentief 16.65, keine Tagestiefs der Woche bekannt"
-VRSK,USA,,2026-10-05:stunden,
-VRTX,USA,,2026-10-05:stunden,
-VZ,USA,,2026-10-05:stunden,
-WBD,USA,,2026-10-05:stunden,
-WDAY,USA,,2026-10-05:stunden,
-WDC,USA,2026-10-05,,"2026-10-05: Wochentief 429.44, keine Tagestiefs der Woche bekannt"
-WELL,USA,2026-10-05,,"2026-10-05: Wochentief 223.67, keine Tagestiefs der Woche bekannt"
-WFC,USA,2026-10-05,,"2026-10-05: Wochentief 80.94, keine Tagestiefs der Woche bekannt"
-WMT,USA,,2026-10-05:stunden,
-XEL,USA,,2026-10-05:stunden,
-XOM,USA,2026-10-05,,"2026-10-05: Wochentief 161.39, keine Tagestiefs der Woche bekannt"
-ZAL.DE,XETRA,2026-10-05,,"2026-10-05: Wochentief 22.02, keine Tagestiefs der Woche bekannt"
-ZS,USA,,2026-10-05:stunden,
+VNA.DE,XETRA,,2026-10-05:stunden,
+VOW3.DE,XETRA,,2026-10-05:archiv,
+ZAL.DE,XETRA,,2026-10-05:stunden,

@@ -2,35 +2,35 @@
  "date": "2026-10-06",
  "ranks": {
   "turnaround": [
-   "NOW",
-   "WDAY",
    "ACN",
-   "FRE.DE",
-   "MDT",
+   "SONY",
+   "SAP.DE",
+   "ABNB",
+   "CEG",
    "DASH",
-   "TSLA",
+   "REGN",
+   "COP",
    "MUFG",
-   "XOM",
    "TM",
-   "SHEL",
+   "DIS",
+   "BLK",
+   "PG",
    "MFG",
-   "NEM",
-   "PGR",
-   "ABBV"
+   "NEM"
   ],
   "momentum": [
-   "MRNA",
-   "AMD",
-   "DDOG",
-   "FTNT",
-   "PSX",
-   "MFG",
    "ILMN",
+   "DELL",
+   "TEAM",
+   "MU",
    "MPC",
-   "MRK.DE",
+   "MFG",
+   "PSX",
    "MUFG",
-   "SMFG",
    "VLO",
+   "SMFG",
+   "MRNA",
+   "ABBV",
    "DHL.DE",
    "SY1.DE",
    "EMR"
@@ -42,11 +42,11 @@
    "NEM",
    "RIO",
    "ABNB",
+   "REGN",
    "BHP",
    "BLK",
    "PBR",
    "META",
-   "REGN",
    "V",
    "SHEL",
    "MNST",
@@ -57,38 +57,78 @@
   "turnaround": {
    "entries": [
     {
-     "ticker": "ACN",
+     "ticker": "SONY",
+     "rank": 2
+    },
+    {
+     "ticker": "SAP.DE",
      "rank": 3
     },
     {
-     "ticker": "FRE.DE",
+     "ticker": "ABNB",
      "rank": 4
     },
     {
-     "ticker": "MUFG",
+     "ticker": "CEG",
+     "rank": 5
+    },
+    {
+     "ticker": "REGN",
+     "rank": 7
+    },
+    {
+     "ticker": "COP",
      "rank": 8
     },
     {
-     "ticker": "SHEL",
+     "ticker": "DIS",
      "rank": 11
+    },
+    {
+     "ticker": "BLK",
+     "rank": 12
+    },
+    {
+     "ticker": "PG",
+     "rank": 13
     }
    ],
    "exits": [
     {
-     "ticker": "SAP.DE",
+     "ticker": "NOW",
      "old_rank": 1
     },
     {
-     "ticker": "DB1.DE",
-     "old_rank": 10
+     "ticker": "WDAY",
+     "old_rank": 2
     },
     {
-     "ticker": "EQNR",
+     "ticker": "FRE.DE",
+     "old_rank": 4
+    },
+    {
+     "ticker": "MDT",
+     "old_rank": 5
+    },
+    {
+     "ticker": "TSLA",
+     "old_rank": 7
+    },
+    {
+     "ticker": "XOM",
+     "old_rank": 9
+    },
+    {
+     "ticker": "SHEL",
      "old_rank": 11
     },
     {
-     "ticker": "QIA.DE",
-     "old_rank": 13
+     "ticker": "PGR",
+     "old_rank": 14
+    },
+    {
+     "ticker": "ABBV",
+     "old_rank": 15
     }
    ],
    "moves": []
@@ -96,29 +136,50 @@
   "momentum": {
    "entries": [
     {
-     "ticker": "MRK.DE",
-     "rank": 9
+     "ticker": "DELL",
+     "rank": 2
     },
     {
-     "ticker": "EMR",
-     "rank": 15
+     "ticker": "TEAM",
+     "rank": 3
+    },
+    {
+     "ticker": "MU",
+     "rank": 4
+    },
+    {
+     "ticker": "ABBV",
+     "rank": 12
     }
    ],
    "exits": [
     {
-     "ticker": "TMO",
-     "old_rank": 10
+     "ticker": "AMD",
+     "old_rank": 2
     },
     {
-     "ticker": "SIE.DE",
-     "old_rank": 15
+     "ticker": "DDOG",
+     "old_rank": 3
+    },
+    {
+     "ticker": "FTNT",
+     "old_rank": 4
+    },
+    {
+     "ticker": "MRK.DE",
+     "old_rank": 9
     }
    ],
    "moves": [
     {
-     "ticker": "SY1.DE",
-     "rank": 14,
-     "delta": -5
+     "ticker": "ILMN",
+     "rank": 1,
+     "delta": 6
+    },
+    {
+     "ticker": "MRNA",
+     "rank": 11,
+     "delta": -10
     }
    ]
   },

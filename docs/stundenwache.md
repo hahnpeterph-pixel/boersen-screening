@@ -1,8 +1,8 @@
 # Stundenwache
 
-Stand: 2026-10-02 · 273 Werte mit Stundendaten · erstellt 2026-10-03 21:58 UTC
+Stand: 2026-10-05 · 273 Werte mit Stundendaten · erstellt 2026-10-06 00:47 UTC
 
-> **Sitzung noch nicht abgeschlossen.** 2 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 5, 6, 7, 8, 9). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
+> **Sitzung noch nicht abgeschlossen.** 12 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 1, 2, 5, 6, 7, 8, 9). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
 
 Marken sind das juengste Swing-Tief und das juengste Swing-Hoch aus `tiefs_regel.py`, also dieselben wie im Tagesbericht. Geprueft wird nur, was der letzte Handelstag auf Stundenbasis damit gemacht hat.
 
@@ -13,87 +13,102 @@ Lesart der Urteile:
 - **angetestet** - nur mit dem Docht beruehrt, kein Schluss dahinter
 - **unklar** - Stunden- und Tagesreihe passen nicht zusammen, siehe unten
 
-## Tief gebrochen (1)
+## Tief gebrochen (5)
 
 Schluss unter dem juengsten Swing-Tief. Die Sequenz ist gerissen.
 
 | Wert | Marke | Schluss | Abstand (ATR) | Stunden dahinter |
 |---|---|---|---|---|
-| REGN | 741.83 | 735.73 | -0.285 | 7 |
+| BAYN.DE | 44.55 | 43.89 | -0.467 | 3 |
+| WELL | 225.36 | 224.24 | -0.241 | 4 |
+| GE | 308.19 | 306.27 | -0.226 | 6 |
+| PFE | 27.44 | 27.41 | -0.064 | 5 |
+| PAH3.DE | 24.5 | 24.48 | -0.022 | 4 |
 
-## Tief zurueckerobert (0)
+## Tief zurueckerobert (3)
 
-Keine.
+Im Tagesverlauf unter der Marke, am Ende darueber. Das ist der Fall, den die Tageskerze verschluckt.
 
-## Tief angetestet (16)
+| Wert | Marke | Schluss | Abstand (ATR) | Stunden dahinter |
+|---|---|---|---|---|
+| T | 24.21 | 24.24 | 0.055 | 5 |
+| SHL.DE | 37.28 | 37.4 | 0.151 | 1 |
+| VOW3.DE | 67.38 | 68.48 | 0.44 | 1 |
+
+## Tief angetestet (25)
 
 Docht bis unter die Marke, kein Stundenschluss darunter.
 
 | Wert | Marke | Schluss | Abstand (ATR) | Stunden dahinter |
 |---|---|---|---|---|
-| NVS | 116.2 | 116.34 | 0.065 | 0 |
-| ACN | 198.36 | 199.03 | 0.066 | 0 |
-| ZS | 195.11 | 196.56 | 0.157 | 0 |
-| NFLX | 66.75 | 67.075 | 0.167 | 0 |
-| AXON | 408.24 | 413.375 | 0.245 | 0 |
-| CMCSA | 21.4 | 21.58 | 0.283 | 0 |
-| NVO | 246.15 | 248.75 | 0.353 | 0 |
-| DTG.DE | 40.41 | 40.75 | 0.362 | 0 |
-| VRTX | 499.95 | 504.57 | 0.403 | 0 |
-| KO | 85.17 | 85.665 | 0.431 | 0 |
-| BABA | 102.7 | 104.4 | 0.495 | 0 |
-| WELL | 225.36 | 227.75 | 0.513 | 0 |
-| UBS | 38.78 | 39.54 | 0.638 | 0 |
-| WDC | 396.57 | 415.12 | 0.713 | 0 |
-| MA | 545.41 | 552.39 | 0.782 | 0 |
-| ABT | 95.06 | 97.51 | 1.22 | 0 |
+| LOW | 179.21 | 179.465 | 0.058 | 0 |
+| JNJ | 252.51 | 252.9 | 0.083 | 0 |
+| INTC | 115.31 | 116.28 | 0.147 | 0 |
+| RTX | 183.83 | 184.37 | 0.152 | 0 |
+| AXON | 408.24 | 411.83 | 0.171 | 0 |
+| MBG.DE | 39.725 | 40.17 | 0.392 | 0 |
+| ADBE | 235.525 | 238.81 | 0.415 | 0 |
+| CMCSA | 21.3112 | 21.57 | 0.416 | 0 |
+| SRT3.DE | 247.0 | 251.1 | 0.469 | 0 |
+| NVO | 243.15 | 246.8 | 0.503 | 0 |
+| DTG.DE | 40.41 | 40.9 | 0.522 | 0 |
+| ENB | 45.7 | 46.045 | 0.528 | 0 |
+| NEM | 113.86 | 115.835 | 0.534 | 0 |
+| CCEP | 100.3 | 101.47 | 0.578 | 0 |
+| GD | 328.0 | 331.8 | 0.609 | 0 |
+| HONA | 152.26 | 155.71 | 0.648 | 0 |
+| UPS | 91.63 | 93.13 | 0.697 | 0 |
+| SPOT | 470.51 | 483.01 | 0.749 | 0 |
+| MCD | 229.61 | 233.08 | 0.75 | 0 |
+| PM | 185.88 | 189.58 | 0.883 | 0 |
+| CVX | 202.7 | 206.52 | 0.916 | 0 |
+| MDLZ | 57.35 | 58.485 | 1.008 | 0 |
+| KLAC | 199.6057 | 206.85 | 1.049 | 0 |
+| MO | 66.43 | 67.88 | 1.167 | 0 |
+| TMO | 648.29 | 673.57 | 1.561 | 0 |
 
-## Swing-Hoch ueberwunden (42)
+## Swing-Hoch ueberwunden (38)
 
 | Wert | Hoch | Schluss | Abstand (ATR) | Stunden darueber |
 |---|---|---|---|---|
-| WBD | 28.45 | 30.93 | 6.539 | 7 |
-| KLAC | 182.41 | 206.94 | 3.593 | 7 |
-| AMAT | 487.68 | 540.04 | 2.916 | 7 |
-| TSM | 2405.0 | 2505.0 | 2.857 | 5 |
-| ON | 74.48 | 84.89 | 2.807 | 7 |
-| SHOP | 134.74 | 151.39 | 2.557 | 7 |
-| LRCX | 317.13 | 347.45 | 2.344 | 7 |
-| SNPS | 445.92 | 490.05 | 2.341 | 7 |
-| CDNS | 330.81 | 351.49 | 1.753 | 7 |
-| IFX.DE | 60.48 | 64.38 | 1.574 | 9 |
-| MPC | 398.33 | 422.5 | 1.396 | 7 |
-| TXN | 284.39 | 293.81 | 1.229 | 7 |
-| PBR | 54.61 | 56.48 | 1.229 | 7 |
-| ADI | 405.38 | 417.185 | 1.09 | 7 |
-| APH | 84.48 | 87.0 | 0.962 | 7 |
-| CAT | 827.81 | 845.53 | 0.855 | 7 |
-| MSFT | 509.44 | 517.86 | 0.711 | 7 |
-| VLO | 395.85 | 406.3 | 0.579 | 6 |
-| PSX | 259.11 | 264.63 | 0.568 | 6 |
-| CRWD | 263.87 | 270.07 | 0.557 | 7 |
-| NXPI | 239.83 | 243.76 | 0.544 | 7 |
-| ASML | 1630.2 | 1653.6 | 0.513 | 8 |
-| GEV | 973.41 | 988.79 | 0.474 | 7 |
-| MRVL | 267.48 | 272.4 | 0.418 | 7 |
-| GLW | 161.39 | 164.23 | 0.394 | 7 |
-| GFS | 49.425 | 50.18 | 0.382 | 7 |
-| EMR | 160.29 | 161.62 | 0.35 | 7 |
-| MCHP | 80.37 | 81.32 | 0.345 | 7 |
-| ODFL | 178.99 | 180.53 | 0.324 | 7 |
-| QIA.DE | 39.765 | 40.095 | 0.284 | 1 |
-| CSCO | 111.5 | 112.19 | 0.261 | 3 |
-| ORCL | 140.88 | 142.51 | 0.257 | 5 |
-| SONY | 3745.0 | 3758.0 | 0.157 | 5 |
-| NVDA | 233.21 | 233.99 | 0.151 | 7 |
-| CNQ | 48.28 | 48.455 | 0.147 | 5 |
-| SPCX | 158.13 | 158.975 | 0.136 | 3 |
-| AMZN | 250.88 | 251.53 | 0.121 | 3 |
-| HON | 213.64 | 214.01 | 0.088 | 6 |
-| HEI.DE | 147.55 | 147.75 | 0.045 | 4 |
-| WDAY | 185.82 | 186.12 | 0.043 | 7 |
-| FDX | 290.16 | 290.41 | 0.038 | 1 |
-| XEL | 71.37 | 71.41 | 0.031 | 6 |
+| WBD | 28.45 | 30.97 | 6.918 | 7 |
+| TSM | 2405.0 | 2570.0 | 4.4 | 5 |
+| SHOP | 134.74 | 160.1 | 3.895 | 7 |
+| PBR | 54.61 | 60.52 | 3.405 | 7 |
+| ON | 74.48 | 85.96 | 3.154 | 7 |
+| SNPS | 445.92 | 488.57 | 2.202 | 7 |
+| SPCX | 158.13 | 171.1 | 2.092 | 7 |
+| MELI | 1739.88 | 1861.5 | 2.048 | 7 |
+| MPC | 398.33 | 433.43 | 2.027 | 7 |
+| CDNS | 330.81 | 353.62 | 1.902 | 7 |
+| TXN | 284.39 | 295.07 | 1.379 | 7 |
+| MSFT | 509.44 | 525.49 | 1.319 | 7 |
+| VLO | 395.85 | 419.51 | 1.312 | 7 |
+| IFX.DE | 60.48 | 63.57 | 1.247 | 9 |
+| NVDA | 233.21 | 239.11 | 1.097 | 7 |
+| PSX | 259.11 | 269.74 | 1.094 | 7 |
+| APH | 84.48 | 87.29 | 1.073 | 7 |
+| ILMN | 280.17 | 293.94 | 1.002 | 6 |
+| CRWD | 263.87 | 272.76 | 0.83 | 7 |
+| SYK | 280.17 | 285.34 | 0.823 | 7 |
+| ASML | 1630.2 | 1657.6 | 0.619 | 9 |
+| EMR | 160.29 | 162.37 | 0.547 | 7 |
+| GEV | 973.41 | 990.42 | 0.525 | 7 |
+| CSCO | 111.5 | 112.82 | 0.505 | 7 |
+| FTNT | 181.37 | 184.2 | 0.473 | 7 |
+| WDAY | 185.82 | 188.99 | 0.441 | 7 |
+| MCK | 907.07 | 916.21 | 0.393 | 6 |
+| LIN | 480.56 | 482.97 | 0.293 | 7 |
+| ORCL | 140.88 | 142.54 | 0.263 | 7 |
+| QIA.DE | 39.765 | 40.025 | 0.224 | 9 |
+| RHM.DE | 974.8 | 981.2 | 0.221 | 2 |
+| SONY | 3745.0 | 3762.0 | 0.206 | 1 |
+| MRNA | 201.0 | 203.21 | 0.151 | 4 |
+| NET | 357.64 | 359.63 | 0.123 | 7 |
+| AMZN | 250.88 | 251.51 | 0.12 | 7 |
+| XEL | 71.37 | 71.51 | 0.114 | 7 |
+| AVGO | 361.86 | 362.875 | 0.102 | 5 |
+| CNQ | 48.28 | 48.32 | 0.033 | 5 |
 
 ## Reihen unstimmig - kein Urteil (0)
 

@@ -1,122 +1,16 @@
-# Boden-Screening 2026-10-05 (Stand 2026-10-06 02:21 UTC)
+# Boden-Screening 2026-10-06 (Stand 2026-10-06 11:57 UTC)
 
 Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RSI < 50 + mind. 2 Boden-Punkte (nur Technik). Die Filter (Analysten, Anker, CRV 2:1) stehen in docs/heute.csv. Boden-Anker = niedrigster Puffer mit 60 % Halterate fuer diese Gruppe und diesen Wert (Vollauf), KO-Marke = Bezugstief - Anker x ATR.
 
-## Kandidaten (16)
+## Kandidaten (0)
 
-| Wert | Tief | RSI | Anker | KO-Marke | Analysten |
-|---|---|---|---|---|---|
-| MDT | 3 | 44 | 3.00 | 79.47 | 73 % |
-| NKE | 9 | 29 | 3.25 | 28.18 | 27 % |
-| APP | 2 | 36 | 3.25 | 214.17 | 73 % |
-| AXP | 4 | 35 | 2.50 | 282.10 | 33 % |
-| BAC | 2 | 25 | 3.00 | 49.66 | 83 % |
-| BTI | 2 | 36 | 2.25 | 37.63 | 100 % |
-| CDW | 2 | 42 | 2.75 | 113.08 | 33 % |
-| CL | 6 | 45 | 2.50 | 80.68 | 60 % |
-| CPRT | 2 | 36 | 2.50 | 25.10 | 62 % |
-| FDX | 5 | 38 | 2.25 | 269.05 | 89 % |
-| INTU | 3 | 40 | 2.25 | 236.34 | 53 % |
-| MBG.DE | 3 | 27 | 3.75 | 35.09 | 55 % |
-| MCD | 6 | 27 | 2.75 | 216.47 | 61 % |
-| MDLZ | 5 | 35 | 3.50 | 53.38 | 100 % |
-| PDD | 4 | 44 | 2.00 | 71.27 | 25 % |
-| XEL | 3 | 41 | 1.50 | 67.66 | 86 % |
+_Keine._
 
-## Weitere Pruefttage (91)
+## Weitere Pruefttage (2)
 
 | Wert | Punkte | Grund |
 |---|---|---|
-| ADSK | 2 | RSI >= 50 |
-| BBVA | 2 | Tief 1 |
-| IBN | 2 | Tief 1 |
-| SO | 2 | Tief 1 |
-| SPGI | 2 | Tief 1 |
-| TTE | 2 | Tief 1 |
-| VNA.DE | 2 | Tief 1 |
-| AMT | 1 | 1 P, Umkehr a |
-| ANET | 1 | 1 P, Tief 1, RSI >= 50 |
-| BEI.DE | 1 | 1 P |
-| BKNG | 1 | 1 P |
-| BNR.DE | 1 | 1 P |
-| CDNS | 1 | 1 P, Tief 1, RSI >= 50 |
-| CEG | 1 | 1 P, Tief 1, RSI >= 50 |
-| CHTR | 1 | 1 P |
-| COP | 1 | 1 P |
-| COST | 1 | 1 P, Tief 1, RSI >= 50 |
-| DBK.DE | 1 | 1 P |
-| DXCM | 1 | 1 P, RSI >= 50 |
-| ENB | 1 | 1 P, Umkehr a |
-| EXC | 1 | 1 P, Tief 1, Umkehr a |
-| FANG | 1 | 1 P, Umkehr a |
-| FRE.DE | 1 | 1 P, Tief 1 |
-| FTNT | 1 | 1 P, Tief 1, RSI >= 50 |
-| GD | 1 | 1 P, Umkehr a |
-| GEHC | 1 | 1 P |
-| GM | 1 | 1 P, Tief 1 |
-| IDXX | 1 | 1 P, RSI >= 50 |
-| ISRG | 1 | 1 P, Tief 1, RSI >= 50 |
-| KDP | 1 | 1 P, Tief 1 |
-| KO | 1 | 1 P |
-| LLY | 1 | 1 P, Tief 1 |
-| META | 1 | 1 P, Tief 1, RSI >= 50 |
-| MFG | 1 | 1 P, Tief 1, RSI >= 50 |
-| MO | 1 | 1 P |
-| MRNA | 1 | 1 P, RSI >= 50 |
-| MS | 1 | 1 P |
-| MSFT | 1 | 1 P, RSI >= 50 |
-| MUFG | 1 | 1 P, Tief 1 |
-| NEM | 1 | 1 P |
-| NET | 1 | 1 P, Tief 1, RSI >= 50 |
-| NFLX | 1 | 1 P, Umkehr a |
-| NVDA | 1 | 1 P, Tief 1, RSI >= 50 |
-| PBR | 1 | 1 P, RSI >= 50 |
-| PCAR | 1 | 1 P, Umkehr a |
-| PEP | 1 | 1 P |
-| PM | 1 | 1 P |
-| PYPL | 1 | 1 P, RSI >= 50 |
-| RTX | 1 | 1 P, Umkehr a |
-| SHOP | 1 | 1 P, RSI >= 50 |
-| SMFG | 1 | 1 P |
-| SNPS | 1 | 1 P, Tief 1, RSI >= 50 |
-| SPG | 1 | 1 P, Umkehr a |
-| TEAM | 1 | 1 P, Tief 1, RSI >= 50 |
-| TJX | 1 | 1 P, Tief 1, RSI >= 50 |
-| TM | 1 | 1 P |
-| TMO | 1 | 1 P, Tief 1, RSI >= 50 |
-| TSM | 1 | 1 P, RSI >= 50 |
-| TTD | 1 | 1 P, Umkehr a |
-| UBER | 1 | 1 P |
-| UL | 1 | 1 P, Tief 1 |
-| UPS | 1 | 1 P |
-| WBD | 1 | 1 P, RSI >= 50 |
-| WDAY | 1 | 1 P, Tief 1, RSI >= 50 |
-| WDC | 1 | 1 P |
-| XOM | 1 | 1 P, Tief 1, RSI >= 50 |
-| ZS | 1 | 1 P, Tief 1, RSI >= 50 |
-| ADBE | 0 | 0 P, Umkehr a |
-| ADI | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
-| ADP | 0 | 0 P, Umkehr a |
-| AEP | 0 | 0 P, Umkehr a |
-| AMAT | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
-| AMD | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
-| AMGN | 0 | 0 P, Umkehr a |
-| BIIB | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
-| BLK | 0 | 0 P, Tief 1, Umkehr a |
-| CAT | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
-| CCEP | 0 | 0 P, Tief 1, Umkehr a |
-| FAST | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
-| GILD | 0 | 0 P, Umkehr a |
-| INTC | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
-| KLAC | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
-| MCHP | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
-| MMM | 0 | 0 P, Tief 1, Umkehr a |
-| PANW | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
-| PH | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
-| SPOT | 0 | 0 P, Umkehr a |
-| TRV | 0 | 0 P, Umkehr a |
-| VOW3.DE | 0 | 0 P, Umkehr a |
-| VRTX | 0 | 0 P |
-| WMT | 0 | 0 P, Umkehr a |
+| BHP | 1 | 1 P, RSI >= 50 |
+| HDB | 0 | 0 P, Umkehr a |
 
-Nicht aktuell (kein Kurs vom 2026-10-05): SKHY
+Nicht aktuell (kein Kurs vom 2026-10-06): AAPL, ABBV, ABNB, ABT, ACN, ADBE, ADI, ADP, ADS.DE, ADSK, AEP, AIR.DE, ALV.DE, AMAT, AMD, AMGN, AMT, AMZN, ANET, APH, APP, ARM, ASML, AVGO, AXON, AXP, AZN, BA, BAC, BAS.DE, BAYN.DE, BBVA, BEI.DE, BIIB, BKNG, BKR, BLK, BMO, BMW.DE, BMY, BNR.DE, BNS, BNY, BP, BRK-B, BTI, C, CAT, CB, CBK.DE, CCEP, CDNS, CDW, CEG, CHTR, CL, CM, CMCSA, CNQ, COF, CON.DE, COP, COST, CPRT, CRM, CRWD, CSCO, CSGP, CSX, CTAS, CTSH, CVS, CVX, DASH, DB1.DE, DBK.DE, DDOG, DE, DELL, DHL.DE, DHR, DIS, DTE.DE, DTG.DE, DUK, DXCM, EMR, ENB, ENR.DE, EOAN.DE, EQIX, EQNR, ETN, EXC, FANG, FAST, FDX, FRE.DE, FTNT, GD, GE, GEHC, GEV, GFS, GILD, GLW, GM, GOOG, GOOGL, GS, GSK, HD, HEI.DE, HEN3.DE, HNR1.DE, HON, HSBC, IBM, IDXX, IFX.DE, ILMN, ING, INTC, INTU, ISRG, JNJ, JPM, KDP, KHC, KLAC, KO, LIN, LLY, LMT, LOW, LRCX, LULU, MA, MAR, MBG.DE, MCD, MCHP, MCK, MDB, MDLZ, MDT, MELI, META, MMM, MNST, MO, MPC, MRK, MRK.DE, MRNA, MRVL, MS, MSFT, MSTR, MTX.DE, MU, MUV2.DE, NEE, NEM, NET, NFLX, NKE, NOW, NVDA, NVO, NVS, NXPI, ODFL, ON, ORCL, ORLY, P911.DE, PAH3.DE, PANW, PAYX, PBR, PCAR, PDD, PEP, PFE, PG, PGR, PH, PLD, PLTR, PM, PSX, PYPL, QCOM, QIA.DE, REGN, RHM.DE, RIO, ROP, ROST, RTX, RWE.DE, RY, SAN, SAP.DE, SBUX, SCCO, SCHW, SHEL, SHL.DE, SHOP, SHW, SIE.DE, SNDK, SNOW, SNPS, SNY, SO, SPG, SPGI, SPOT, SRT3.DE, STX, SY1.DE, SYK, T, TD, TEAM, TJX, TMO, TMUS, TRV, TSLA, TTD, TTE, TTWO, TXN, UBER, UBS, UL, UNH, UNP, UPS, USB, V, VLO, VNA.DE, VOW3.DE, VRSK, VRTX, VZ, WBD, WDAY, WDC, WELL, WFC, WMT, XEL, XOM, ZAL.DE, ZS

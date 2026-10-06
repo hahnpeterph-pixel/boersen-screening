@@ -2,19 +2,19 @@
  "date": "2026-10-06",
  "ranks": {
   "turnaround": [
-   "SAP.DE",
    "NOW",
    "WDAY",
+   "ACN",
+   "FRE.DE",
    "MDT",
    "DASH",
    "TSLA",
-   "TM",
+   "MUFG",
    "XOM",
+   "TM",
+   "SHEL",
    "MFG",
-   "DB1.DE",
-   "EQNR",
    "NEM",
-   "QIA.DE",
    "PGR",
    "ABBV"
   ],
@@ -27,24 +27,24 @@
    "MFG",
    "ILMN",
    "MPC",
-   "SY1.DE",
-   "TMO",
+   "MRK.DE",
    "MUFG",
-   "VLO",
    "SMFG",
+   "VLO",
    "DHL.DE",
-   "SIE.DE"
+   "SY1.DE",
+   "EMR"
   ],
   "value": [
    "SKHY",
    "SNDK",
    "MU",
    "NEM",
+   "RIO",
    "ABNB",
    "BHP",
    "BLK",
    "PBR",
-   "RIO",
    "META",
    "REGN",
    "V",
@@ -57,78 +57,38 @@
   "turnaround": {
    "entries": [
     {
-     "ticker": "NOW",
-     "rank": 2
-    },
-    {
-     "ticker": "WDAY",
+     "ticker": "ACN",
      "rank": 3
     },
     {
-     "ticker": "MDT",
+     "ticker": "FRE.DE",
      "rank": 4
     },
     {
-     "ticker": "DASH",
-     "rank": 5
-    },
-    {
-     "ticker": "TSLA",
-     "rank": 6
-    },
-    {
-     "ticker": "XOM",
+     "ticker": "MUFG",
      "rank": 8
     },
     {
-     "ticker": "NEM",
-     "rank": 12
-    },
-    {
-     "ticker": "PGR",
-     "rank": 14
-    },
-    {
-     "ticker": "ABBV",
-     "rank": 15
+     "ticker": "SHEL",
+     "rank": 11
     }
    ],
    "exits": [
     {
-     "ticker": "ZS",
-     "old_rank": 2
+     "ticker": "SAP.DE",
+     "old_rank": 1
     },
     {
-     "ticker": "ACN",
-     "old_rank": 3
+     "ticker": "DB1.DE",
+     "old_rank": 10
     },
     {
-     "ticker": "MCK",
-     "old_rank": 4
+     "ticker": "EQNR",
+     "old_rank": 11
     },
     {
-     "ticker": "ABNB",
-     "old_rank": 5
-    },
-    {
-     "ticker": "CNQ",
-     "old_rank": 7
-    },
-    {
-     "ticker": "TMO",
-     "old_rank": 9
-    },
-    {
-     "ticker": "PSX",
+     "ticker": "QIA.DE",
      "old_rank": 13
-    },
-    {
-     "ticker": "SY1.DE",
-     "old_rank": 14
-    },
-    {
-     "ticker": "EMR",
-     "old_rank": 15
     }
    ],
    "moves": []
@@ -136,42 +96,36 @@
   "momentum": {
    "entries": [
     {
-     "ticker": "DDOG",
-     "rank": 3
+     "ticker": "MRK.DE",
+     "rank": 9
     },
     {
-     "ticker": "MUFG",
-     "rank": 11
+     "ticker": "EMR",
+     "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "PANW",
-     "old_rank": 3
+     "ticker": "TMO",
+     "old_rank": 10
     },
     {
-     "ticker": "DB1.DE",
-     "old_rank": 10
+     "ticker": "SIE.DE",
+     "old_rank": 15
     }
    ],
    "moves": [
     {
-     "ticker": "MRNA",
-     "rank": 1,
-     "delta": 10
+     "ticker": "SY1.DE",
+     "rank": 14,
+     "delta": -5
     }
    ]
   },
   "value": {
    "entries": [],
    "exits": [],
-   "moves": [
-    {
-     "ticker": "REGN",
-     "rank": 11,
-     "delta": -5
-    }
-   ]
+   "moves": []
   },
   "analyst_flips": []
  }

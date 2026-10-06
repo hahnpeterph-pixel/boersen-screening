@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-10-06 02:18 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1255._
+_Erstellt 2026-10-06 11:54 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1255._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -17,7 +17,7 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | Wert | Kurs | Hammer | hoeheres Hoch | Umkehrkerze | RSI |
 |---|---|---|---|---|---|
 | ARM (ARM) | 302.9 | - | - | ja | 56.79 |
-| AZN (AZN) | 117.38 | - | - | ja | 37.65 |
+| AZN (AZN) | 117.64 | - | - | ja | 38.15 |
 | BKNG (BKNG) | 158.33 | ja | - | ja | 29.81 |
 | CHTR (CHTR) | 107.77 | ja | - | ja | 27.39 |
 | CRM (CRM) | 229.79 | - | - | ja | 47.58 |
@@ -60,12 +60,13 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | BMO (BMO) | 164.45 | - | - | ja | 32.07 |
 | HDB (HDB) | 704.8 | - | ja | ja | 42.67 |
 | BNS (BNS) | 90.28 | - | - | ja | 42.4 |
-| GSK (GSK) | 17.6 | - | - | ja | 33.19 |
+| GSK (GSK) | 17.59 | - | - | ja | 33.08 |
 | GFS (GFS) | 48.56 | - | - | ja | 52.31 |
-| BAYN.DE (BAYN.DE) | 43.89 | - | - | ja | 28.94 |
-| HEN3.DE (HEN3.DE) | 71.7 | - | ja | ja | 37.16 |
-| PAH3.DE (PAH3.DE) | 24.48 | - | - | ja | 29.46 |
-| SHL.DE (SHL.DE) | 37.4 | - | - | ja | 42.3 |
+| BAYN.DE (BAYN.DE) | 43.96 | - | - | ja | 29.13 |
+| DTG.DE (DTG.DE) | 41.08 | ja | - | - | 33.33 |
+| HEN3.DE (HEN3.DE) | 71.66 | - | ja | ja | 37.0 |
+| PAH3.DE (PAH3.DE) | 24.46 | - | - | ja | 29.36 |
+| SHL.DE (SHL.DE) | 37.45 | - | - | ja | 42.7 |
 | Palladium (PA=F) | 1171.0 | - | - | ja | 36.83 |
 | EUR/USD (EURUSD=X) | 1.1255 | ja | - | - | 17.84 |
 | EUR/GBP (EURGBP=X) | 0.8497 | ja | - | ja | 30.71 |

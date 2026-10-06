@@ -1,68 +1,13 @@
 # Boersen-Screening - 2026-10-06
 
-_Stand: Schlusskurse vom 2026-10-06, aber 263 Werte haengen zurueck - siehe Standwarnung. Erstellt 2026-10-06T02:17:59+00:00 UTC. 272 Werte ausgewertet._
+_Stand: Schlusskurse vom 2026-10-06, aber 204 Werte haengen zurueck - siehe Standwarnung. Erstellt 2026-10-06T11:53:54+00:00 UTC. 272 Werte ausgewertet._
 
-> **Standwarnung: 263 von 272 Werten haengen zurueck.** Neuester Handelstag im Bericht ist 2026-10-06.
+> **Standwarnung: 204 von 272 Werten haengen zurueck.** Neuester Handelstag im Bericht ist 2026-10-06.
 >
 > Ursache ist in aller Regel Yahoo: die vorlaeufige Tageskerze einer Boerse wird ueber Nacht durch die offizielle Abrechnung ersetzt, und solange die fehlt, faellt der Tag weg. Betroffen sind meist die europaeischen Notierungen. Fuer diese Werte gelten Kurs, ATR, RSI und Tiefs unten NICHT fuer den neuesten Handelstag.
 >
 > | Wert | letzte Kerze |
 > |---|---|
-> | ADS.DE | 2026-10-02 |
-> | AIR.DE | 2026-10-02 |
-> | ALV.DE | 2026-10-02 |
-> | ASML | 2026-10-02 |
-> | AZN | 2026-10-02 |
-> | BAS.DE | 2026-10-02 |
-> | BAYN.DE | 2026-10-02 |
-> | BBVA | 2026-10-02 |
-> | BEI.DE | 2026-10-02 |
-> | BMW.DE | 2026-10-02 |
-> | BNR.DE | 2026-10-02 |
-> | BP | 2026-10-02 |
-> | BTI | 2026-10-02 |
-> | CBK.DE | 2026-10-02 |
-> | CON.DE | 2026-10-02 |
-> | DB1.DE | 2026-10-02 |
-> | DBK.DE | 2026-10-02 |
-> | DHL.DE | 2026-10-02 |
-> | DTE.DE | 2026-10-02 |
-> | DTG.DE | 2026-10-02 |
-> | ENR.DE | 2026-10-02 |
-> | EOAN.DE | 2026-10-02 |
-> | EQNR | 2026-10-02 |
-> | FRE.DE | 2026-10-02 |
-> | GSK | 2026-10-02 |
-> | HEI.DE | 2026-10-02 |
-> | HEN3.DE | 2026-10-02 |
-> | HNR1.DE | 2026-10-02 |
-> | HSBC | 2026-10-02 |
-> | IFX.DE | 2026-10-02 |
-> | ING | 2026-10-02 |
-> | MBG.DE | 2026-10-02 |
-> | MRK.DE | 2026-10-02 |
-> | MTX.DE | 2026-10-02 |
-> | MUV2.DE | 2026-10-02 |
-> | NVO | 2026-10-02 |
-> | P911.DE | 2026-10-02 |
-> | PAH3.DE | 2026-10-02 |
-> | QIA.DE | 2026-10-02 |
-> | RHM.DE | 2026-10-02 |
-> | RIO | 2026-10-02 |
-> | RWE.DE | 2026-10-02 |
-> | SAN | 2026-10-02 |
-> | SAP.DE | 2026-10-02 |
-> | SHEL | 2026-10-02 |
-> | SHL.DE | 2026-10-02 |
-> | SIE.DE | 2026-10-02 |
-> | SNY | 2026-10-02 |
-> | SRT3.DE | 2026-10-02 |
-> | SY1.DE | 2026-10-02 |
-> | TTE | 2026-10-02 |
-> | UL | 2026-10-02 |
-> | VNA.DE | 2026-10-02 |
-> | VOW3.DE | 2026-10-02 |
-> | ZAL.DE | 2026-10-02 |
 > | AAPL | 2026-10-05 |
 > | ABBV | 2026-10-05 |
 > | ABNB | 2026-10-05 |
@@ -150,10 +95,8 @@ _Stand: Schlusskurse vom 2026-10-06, aber 263 Werte haengen zurueck - siehe Stan
 > | GOOGL | 2026-10-05 |
 > | GS | 2026-10-05 |
 > | HD | 2026-10-05 |
-> | HDB | 2026-10-05 |
 > | HON | 2026-10-05 |
 > | IBM | 2026-10-05 |
-> | IBN | 2026-10-05 |
 > | IDXX | 2026-10-05 |
 > | ILMN | 2026-10-05 |
 > | INTC | 2026-10-05 |
@@ -199,7 +142,6 @@ _Stand: Schlusskurse vom 2026-10-06, aber 263 Werte haengen zurueck - siehe Stan
 > | NKE | 2026-10-05 |
 > | NOW | 2026-10-05 |
 > | NVDA | 2026-10-05 |
-> | NVS | 2026-10-05 |
 > | NXPI | 2026-10-05 |
 > | ODFL | 2026-10-05 |
 > | ON | 2026-10-05 |
@@ -252,7 +194,6 @@ _Stand: Schlusskurse vom 2026-10-06, aber 263 Werte haengen zurueck - siehe Stan
 > | TTWO | 2026-10-05 |
 > | TXN | 2026-10-05 |
 > | UBER | 2026-10-05 |
-> | UBS | 2026-10-05 |
 > | UNH | 2026-10-05 |
 > | UNP | 2026-10-05 |
 > | UPS | 2026-10-05 |
@@ -287,7 +228,7 @@ _Ueber alle 272 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 
 | Rang | Ticker | ISIN | Name | Index | Kurs | Abstand ATH (Info) | Kaufen-Anteil Analysten | Kursziel | RSI Tag | RSI Woche | RSI Stunde | Letztes Rating |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | BTI | - | British American Tobacco Indus | Watchlist | 39.60 | -29% | 100% (7 Banken, ≤120T) | 70.43 (78% ueber Kurs) | 34 | 40 | 41 | keine in 30T |
+| 1 | BTI | - | British American Tobacco Indus | Watchlist | 39.92 | -29% | 100% (7 Banken, ≤120T) | 70.43 (76% ueber Kurs) | 38 | 41 | 45 | keine in 30T |
 | 2 | TTWO | - | Take-Two Interactive Software, | NASDAQ | 203.46 | -22% | 100% (9 Banken, ≤120T) | 290.00 (42% ueber Kurs) | 38 | 40 | 51 | keine in 30T |
 | 3 | BA | - | Boeing Company (The) | DOW | 192.72 | -55% | 100% (7 Banken, ≤120T) | 272.50 (41% ueber Kurs) | 40 | 39 | 54 | 2026-09-21 Jefferies: Rating bestaetigt: Buy |
 | 4 | SPGI | US78409V1044 | S&P Global Inc. | Watchlist | 390.92 | -26% | 100% (10 Banken, ≤120T) | 525.00 (34% ueber Kurs) | 37 | 43 | 54 | keine in 30T |
@@ -296,8 +237,8 @@ _Ueber alle 272 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 | 7 | MSTR | US66538H1041 | Strategy Inc | NASDAQ | 164.43 | -65% | 100% (11 Banken, ≤120T) | 215.00 (31% ueber Kurs) | 65 | 59 | 61 | 2026-10-02 Citigroup: Rating bestaetigt: Buy |
 | 8 | COF | - | Capital One Financial Corporati | SP100 | 195.14 | -24% | 100% (11 Banken, ≤120T) | 255.00 (31% ueber Kurs) | 36 | 44 | 49 | 2026-10-05 Barclays: Rating bestaetigt: Overweight |
 | 9 | GE | US3696043013 | GE Aerospace | SP100 | 306.34 | -20% | 100% (9 Banken, ≤120T) | 400.00 (31% ueber Kurs) | 33 | 42 | 30 | 2026-09-30 Wells Fargo: Rating bestaetigt: Overweight |
-| 10 | SKHY | AR0272347318 | SK hynix Inc. | Watchlist | 1801000.00 | -38% | 100% (10 Banken, ≤120T) | 2287923.38 (27% ueber Kurs) | 52 | 54 | 45 | 2026-09-10 JP Morgan: neu bewertet mit Overweight |
-| 11 | ASML | USN070592100 | ASML Holding N.V. - New York Re | NASDAQ | 1653.00 | -4% | 100% (5 Banken, ≤120T) | 2096.77 (27% ueber Kurs) | 71 | 65 | 65 | keine in 30T |
+| 10 | SKHY | AR0272347318 | SK hynix Inc. | Watchlist | 1773000.00 | -39% | 100% (10 Banken, ≤120T) | 2287923.38 (29% ueber Kurs) | 50 | 53 | 40 | 2026-09-10 JP Morgan: neu bewertet mit Overweight |
+| 11 | ASML | USN070592100 | ASML Holding N.V. - New York Re | NASDAQ | 1666.80 | -3% | 100% (5 Banken, ≤120T) | 2096.77 (26% ueber Kurs) | 72 | 65 | 69 | keine in 30T |
 | 12 | GOOG | CA02080M1005 | Alphabet Inc. | NASDAQ | 343.83 | -14% | 100% (3 Banken, ≤120T) | 425.00 (24% ueber Kurs) | 53 | 52 | 60 | keine in 30T |
 | 13 | DIS | - | Walt Disney Company (The) | DOW | 103.61 | -47% | 100% (11 Banken, ≤120T) | 127.50 (23% ueber Kurs) | 47 | 51 | 56 | 2026-10-05 Raymond James: Rating bestaetigt: Outperform |
 | 14 | BLK | US09290D1019 | BlackRock, Inc. | SP100 | 1066.45 | -9% | 100% (9 Banken, ≤120T) | 1300.00 (22% ueber Kurs) | 46 | 50 | 52 | 2026-10-02 Wells Fargo: neu bewertet mit Overweight |

@@ -1,16 +1,10 @@
 # Marktdaten
 
-_Erstellt 2026-10-06 22:57 UTC. 297 Werte, Fenster 90 Kalendertage. EUR/USD 1.1261._
+_Erstellt 2026-10-07 01:34 UTC. 297 Werte, Fenster 90 Kalendertage. EUR/USD 1.1217._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
 Vollstaendige Daten: `docs/marktdaten.csv`
-
-> **Standwarnung: 1 von 273 Aktien haengen zurueck.** Neuester Handelstag 2026-10-06. Fuer die folgenden Werte gelten Kurs, ATR, RSI und Tiefs NICHT fuer diesen Tag. Die Spalte `stand_zurueck` in der CSV markiert sie ebenfalls.
->
-> | Wert | letzte Kerze |
-> |---|---|
-> | WBD | 2026-10-05 |
 
 ## Kerzensignale von gestern
 

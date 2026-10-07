@@ -1,4 +1,4 @@
-# Boden-Screening 2026-10-06 (Stand 2026-10-06 23:02 UTC)
+# Boden-Screening 2026-10-06 (Stand 2026-10-07 02:00 UTC)
 
 Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RSI < 50 + mind. 2 Boden-Punkte (nur Technik). Die Filter (Analysten, Anker, CRV 2:1) stehen in docs/heute.csv. Boden-Anker = niedrigster Puffer mit 60 % Halterate fuer diese Gruppe und diesen Wert (Vollauf), KO-Marke = Bezugstief - Anker x ATR.
 
@@ -7,7 +7,7 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | Wert | Tief | RSI | Anker | KO-Marke | Analysten |
 |---|---|---|---|---|---|
 | AIR.DE | 5 | 37 | 2.25 | 175.66 | - % |
-| AXON | 4 | 34 | 2.00 | 376.01 | 83 % |
+| AXON | 4 | 34 | 2.00 | 376.00 | 83 % |
 | BAC | 2 | 25 | 3.00 | 50.04 | 83 % |
 | BAYN.DE | 3 | 31 | 3.50 | 38.74 | 72 % |
 | BKNG | 3 | 29 | 1.75 | 144.23 | 75 % |
@@ -18,22 +18,22 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | DUK | 2 | 43 | 1.75 | 110.76 | 71 % |
 | EOAN.DE | 4 | 43 | 3.25 | 15.50 | 69 % |
 | GS | 5 | 32 | 2.50 | 836.07 | 33 % |
-| HD | 6 | 34 | 3.00 | 260.57 | 64 % |
+| HD | 6 | 34 | 3.00 | 260.55 | 64 % |
 | JPM | 5 | 33 | 1.75 | 315.61 | 58 % |
 | KHC | 2 | 26 | - | - | 12 % |
 | LOW | 6 | 34 | 3.50 | 163.41 | 73 % |
 | LULU | 2 | 34 | 3.75 | 78.61 | 0 % |
 | MS | 5 | 32 | 2.25 | 178.36 | 54 % |
-| NEE | 4 | 42 | 2.25 | 72.94 | 50 % |
+| NEE | 4 | 42 | 2.25 | 72.94 | 43 % |
 | NVO | 4 | 25 | 3.00 | 221.55 | 21 % |
 | PEP | 4 | 25 | 2.75 | 117.86 | 20 % |
-| REGN | 3 | 38 | 2.50 | 669.17 | 62 % |
+| REGN | 3 | 38 | 2.50 | 669.17 | 64 % |
 | RY | 3 | 37 | 3.25 | 184.86 | 60 % |
 | SBUX | 2 | 43 | 2.75 | 88.40 | 50 % |
 | SNY | 3 | 36 | 2.25 | 66.08 | 50 % |
 | VRSK | 4 | 36 | 3.00 | 148.31 | 60 % |
 
-## Weitere Pruefttage (61)
+## Weitere Pruefttage (62)
 
 | Wert | Punkte | Grund |
 |---|---|---|
@@ -96,7 +96,6 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | HDB | 0 | 0 P, Umkehr a |
 | HEI.DE | 0 | 0 P, Tief 1, Umkehr a |
 | IFX.DE | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
+| PBR | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
 | VZ | 0 | 0 P, Umkehr a |
 | WELL | 0 | 0 P, Tief 1, Umkehr a |
-
-Nicht aktuell (kein Kurs vom 2026-10-06): WBD

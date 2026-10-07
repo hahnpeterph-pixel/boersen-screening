@@ -6,8 +6,8 @@ Kalender Heimatboersen: verfuegbar
 
 | Quelle | Art | Rohstoff/Devise | Anzahl |
 |---|---|---|---|
-| kursverlauf | fehlt | nein | 1 |
+| kursverlauf | Platzhalter | nein | 1 |
 
 Aktien (hoechstens 60):
 
-- kursverlauf · fehlt · WBD · 2026-10-06
+- kursverlauf · Platzhalter · WBD · 2026-10-06

@@ -1,6 +1,6 @@
 # Tiefs, Volumen und Kaufregel-Check
 
-_Erstellt 2026-10-06 22:57 UTC. Fenster: letzte 90 Kalendertage. Tiefs nach der Umkehr-Regel (tiefs_regel.py): ein Tief zaehlt, sobald eine spaetere Kerze das Hoch der Tiefkerze ueberschreitet. Solange es abwaerts geht, gilt das tiefste Tief der Strecke. Gerechnet wird auf abgeschlossenen Tageskerzen._
+_Erstellt 2026-10-07 01:34 UTC. Fenster: letzte 90 Kalendertage. Tiefs nach der Umkehr-Regel (tiefs_regel.py): ein Tief zaehlt, sobald eine spaetere Kerze das Hoch der Tiefkerze ueberschreitet. Solange es abwaerts geht, gilt das tiefste Tief der Strecke. Gerechnet wird auf abgeschlossenen Tageskerzen._
 
 ## Kaufregel
 
@@ -115,7 +115,7 @@ _'nach Trendtief' orientiert sich am juengsten Tief und laesst mehr Hebel zu. 'k
 | Meta Platforms (META) | 28.09.2026 | 713,19 | 27,9 Mio. | 1,22x (erhoeht) | 27,2 % |
 | Meta Platforms (META) | 18.09.2026 | 660,80 | 27,6 Mio. | 1,53x (Kapitulation) | 21,5 % |
 | Meta Platforms (META) | 01.09.2026 | 556,10 | 15,8 Mio. | 1,03x | 6,7 % |
-| Micron (MU) | 06.10.2026 | 1.045,26 | 20,8 Mio. | 0,82x | 17,7 % |
+| Micron (MU) | 06.10.2026 | 1.045,26 | 21,7 Mio. | 0,85x | 17,7 % |
 | Micron (MU) | 01.10.2026 | 1.022,90 | 45,7 Mio. | 1,83x (Kapitulation) | 15,9 % |
 | Micron (MU) | 24.09.2026 | 1.044,00 | 22,1 Mio. | 0,87x | 17,6 % |
 | Microsoft (MSFT) | 24.09.2026 | 491,22 | 16,7 Mio. | 0,77x (duenn) | 29,1 % |
@@ -136,7 +136,7 @@ _Diese Zeilen in die gelben Spalten uebertragen. Reihenfolge wie dort._
 |---|---|---|---|---|---|---|
 | TTWO | 202,53 | 5,30 | 37,4 | 231,58 | 2026-08-20 | 1,06 |
 | META | 738,88 | 28,36 | 63,0 | 524,52 | 2026-07-30 | 1,22 |
-| MU | 1.045,56 | 42,25 | 53,9 | 915,18 | 2026-08-19 | 0,82 |
+| MU | 1.045,56 | 42,25 | 53,9 | 915,18 | 2026-08-19 | 0,85 |
 | MSFT | 529,30 | 12,21 | 67,9 | 477,15 | 2026-08-18 | 0,77 |
 | ORCL | 144,77 | 6,08 | 51,1 | 137,44 | 2026-08-19 | 1,08 |
 | NVDA | 239,24 | 5,37 | 67,2 | 227,03 | 2026-09-29 | - |

@@ -1,8 +1,8 @@
 # Stundenwache
 
-Stand: 2026-10-06 · 273 Werte mit Stundendaten · erstellt 2026-10-06 23:00 UTC
+Stand: 2026-10-06 · 273 Werte mit Stundendaten · erstellt 2026-10-07 01:58 UTC
 
-> **Sitzung noch nicht abgeschlossen.** 7 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 5, 6, 7, 8, 9). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
+> **Sitzung noch nicht abgeschlossen.** 11 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 1, 2, 3, 6, 7, 8, 9). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
 
 Marken sind das juengste Swing-Tief und das juengste Swing-Hoch aus `tiefs_regel.py`, also dieselben wie im Tagesbericht. Geprueft wird nur, was der letzte Handelstag auf Stundenbasis damit gemacht hat.
 
@@ -21,45 +21,45 @@ Keine.
 
 Keine.
 
-## Tief angetestet (8)
+## Tief angetestet (10)
 
 Docht bis unter die Marke, kein Stundenschluss darunter.
 
 | Wert | Marke | Schluss | Abstand (ATR) | Stunden dahinter |
 |---|---|---|---|---|
-| CRM | 222.891 | 224.97 | 0.256 | 0 |
-| CPRT | 26.64 | 26.83 | 0.277 | 0 |
-| MTX.DE | 364.2 | 366.8 | 0.28 | 0 |
-| BNS | 89.72 | 90.22 | 0.369 | 0 |
+| BA | 189.33 | 189.82 | 0.077 | 0 |
+| CTSH | 56.93 | 57.21 | 0.123 | 0 |
+| USB | 57.05 | 57.29 | 0.245 | 0 |
+| CPRT | 26.64 | 26.83 | 0.276 | 0 |
+| CVS | 85.53 | 86.43 | 0.456 | 0 |
 | KHC | 21.76 | 22.02 | 0.478 | 0 |
+| GILD | 142.6 | 144.27 | 0.482 | 0 |
+| ROST | 221.77 | 224.24 | 0.498 | 0 |
 | HON | 210.74 | 212.84 | 0.543 | 0 |
 | BEI.DE | 75.16 | 76.42 | 0.773 | 0 |
-| ADP | 255.96 | 262.5 | 1.19 | 0 |
 
-## Swing-Hoch ueberwunden (65)
+## Swing-Hoch ueberwunden (60)
 
 | Wert | Hoch | Schluss | Abstand (ATR) | Stunden darueber |
 |---|---|---|---|---|
-| WBD | 28.45 | 30.97 | 6.918 | 7 |
-| TSM | 2405.0 | 2580.0 | 4.712 | 5 |
+| WBD | 28.45 | 30.97 | 7.244 | 7 |
 | SHOP | 134.74 | 164.5 | 4.141 | 7 |
-| ON | 74.48 | 86.28 | 3.753 | 7 |
+| ON | 74.48 | 86.28 | 3.752 | 7 |
 | SNPS | 445.92 | 505.37 | 2.976 | 7 |
-| PBR | 54.61 | 59.46 | 2.938 | 7 |
 | CDNS | 330.81 | 359.58 | 2.393 | 7 |
 | CSCO | 111.5 | 117.97 | 2.338 | 7 |
 | CEG | 271.0 | 300.16 | 2.266 | 7 |
 | SPCX | 158.13 | 171.99 | 2.138 | 7 |
 | MPC | 398.33 | 432.33 | 2.035 | 7 |
 | MELI | 1739.88 | 1858.79 | 2.026 | 7 |
-| TXN | 284.39 | 297.32 | 1.756 | 7 |
+| TXN | 284.39 | 297.32 | 1.755 | 7 |
 | GEV | 973.41 | 1029.42 | 1.687 | 7 |
 | MSFT | 509.44 | 529.49 | 1.642 | 7 |
 | FTNT | 181.37 | 191.29 | 1.616 | 7 |
 | APH | 84.48 | 88.63 | 1.61 | 7 |
 | CRWD | 263.87 | 278.93 | 1.362 | 7 |
 | VLO | 395.85 | 419.34 | 1.352 | 7 |
-| AVGO | 361.86 | 375.92 | 1.323 | 7 |
+| AVGO | 361.86 | 375.91 | 1.322 | 7 |
 | ADSK | 222.0 | 231.27 | 1.303 | 7 |
 | DB1.DE | 291.3 | 296.7 | 1.176 | 9 |
 | SO | 83.98 | 85.43 | 1.15 | 7 |
@@ -81,22 +81,19 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | GLW | 165.14 | 168.99 | 0.497 | 7 |
 | EQIX | 1036.52 | 1047.3101 | 0.44 | 7 |
 | SBUX | 95.29 | 96.11 | 0.438 | 6 |
-| DUK | 115.17 | 115.67 | 0.346 | 1 |
+| DUK | 115.17 | 115.66 | 0.339 | 1 |
 | BNR.DE | 60.28 | 60.68 | 0.311 | 5 |
-| COST | 931.09 | 935.75 | 0.31 | 4 |
-| SONY | 3745.0 | 3769.0 | 0.29 | 7 |
+| COST | 931.09 | 935.75 | 0.307 | 4 |
 | EMR | 160.29 | 161.38 | 0.289 | 7 |
 | SAP.DE | 187.8 | 189.14 | 0.261 | 9 |
-| BABA | 107.4 | 108.2 | 0.231 | 7 |
 | DELL | 568.0 | 573.83 | 0.225 | 7 |
 | CAT | 858.87 | 863.4 | 0.2 | 7 |
 | ASML | 1630.2 | 1638.2 | 0.182 | 9 |
-| BHP | 62.69 | 62.86 | 0.164 | 3 |
 | AMD | 645.46 | 649.55 | 0.162 | 7 |
 | NEE | 77.7 | 77.88 | 0.137 | 1 |
 | CON.DE | 70.64 | 70.86 | 0.124 | 1 |
 | MAR | 360.6 | 361.32 | 0.106 | 5 |
-| HONA | 156.92 | 157.44 | 0.106 | 6 |
+| HONA | 156.92 | 157.44 | 0.105 | 6 |
 | BAS.DE | 50.93 | 51.04 | 0.101 | 5 |
 | ENR.DE | 146.84 | 147.26 | 0.089 | 3 |
 | WDAY | 185.82 | 186.46 | 0.088 | 7 |

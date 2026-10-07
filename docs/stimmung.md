@@ -1,8 +1,8 @@
 # Marktstimmung
 
-Stand Abruf: 06.10.2026 23:02 UTC
+Stand Abruf: 07.10.2026 02:00 UTC
 
-**Stimmung: VIX 15,0 (ruhig, 5T -1,0, 06.10.) · DAX-Schwankung gemessen 13,0 (ruhig, 5T +1,0, 06.10.) · Fear & Greed 47 (neutral, Vortag +4, 06.10.)**
+**Stimmung: VIX 15,0 (ruhig, 5T -1,0, 06.10.) · DAX-Schwankung gemessen 13,0 (normal, 5T +1,0, 06.10.) · Fear & Greed 47 (neutral, Vortag +4, 06.10.)**
 
 Lagen: VIX ruhig < 16 · normal 16–22 · unruhig > 22 | VDAX-NEW ruhig < 18 · normal 18–24 · unruhig > 24 (gemessene DAX-Schwankung: < 13 · 13–19 · > 19) | Fear & Greed 0–25 extreme Angst · 25–45 Angst · 45–55 neutral · 55–75 Gier · 75–100 extreme Gier.
 

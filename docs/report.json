@@ -1,193 +1,205 @@
 {
- "date": "2026-10-06",
+ "date": "2026-10-07",
  "ranks": {
   "turnaround": [
+   "NOW",
    "ACN",
-   "SONY",
-   "SAP.DE",
-   "ABNB",
-   "CEG",
+   "WDAY",
    "DASH",
    "REGN",
-   "COP",
-   "MUFG",
    "TM",
+   "COP",
    "DIS",
    "BLK",
    "PG",
-   "MFG",
-   "NEM"
+   "ABNB",
+   "NEM",
+   "CTAS",
+   "EQNR",
+   "ABBV"
   ],
   "momentum": [
-   "ILMN",
-   "DELL",
-   "TEAM",
-   "MU",
-   "MPC",
-   "MFG",
-   "PSX",
-   "MUFG",
-   "VLO",
-   "SMFG",
    "MRNA",
+   "ILMN",
+   "DDOG",
+   "PANW",
+   "ANET",
+   "PSX",
+   "MPC",
+   "VLO",
+   "DB1.DE",
    "ABBV",
+   "V",
    "DHL.DE",
    "SY1.DE",
+   "MUFG",
    "EMR"
   ],
   "value": [
-   "SKHY",
    "SNDK",
    "MU",
+   "NVDA",
    "NEM",
-   "RIO",
    "ABNB",
    "REGN",
-   "BHP",
+   "RIO",
    "BLK",
    "PBR",
    "META",
    "V",
-   "SHEL",
    "MNST",
-   "COP"
+   "COP",
+   "BHP",
+   "VRTX"
   ]
  },
  "changes": {
   "turnaround": {
    "entries": [
     {
-     "ticker": "SONY",
-     "rank": 2
-    },
-    {
-     "ticker": "SAP.DE",
-     "rank": 3
-    },
-    {
-     "ticker": "ABNB",
-     "rank": 4
-    },
-    {
-     "ticker": "CEG",
-     "rank": 5
-    },
-    {
-     "ticker": "REGN",
-     "rank": 7
-    },
-    {
-     "ticker": "COP",
-     "rank": 8
-    },
-    {
-     "ticker": "DIS",
-     "rank": 11
-    },
-    {
-     "ticker": "BLK",
-     "rank": 12
-    },
-    {
-     "ticker": "PG",
-     "rank": 13
-    }
-   ],
-   "exits": [
-    {
      "ticker": "NOW",
-     "old_rank": 1
+     "rank": 1
     },
     {
      "ticker": "WDAY",
-     "old_rank": 2
-    },
-    {
-     "ticker": "FRE.DE",
-     "old_rank": 4
-    },
-    {
-     "ticker": "MDT",
-     "old_rank": 5
-    },
-    {
-     "ticker": "TSLA",
-     "old_rank": 7
-    },
-    {
-     "ticker": "XOM",
-     "old_rank": 9
-    },
-    {
-     "ticker": "SHEL",
-     "old_rank": 11
-    },
-    {
-     "ticker": "PGR",
-     "old_rank": 14
-    },
-    {
-     "ticker": "ABBV",
-     "old_rank": 15
-    }
-   ],
-   "moves": []
-  },
-  "momentum": {
-   "entries": [
-    {
-     "ticker": "DELL",
-     "rank": 2
-    },
-    {
-     "ticker": "TEAM",
      "rank": 3
     },
     {
-     "ticker": "MU",
-     "rank": 4
+     "ticker": "CTAS",
+     "rank": 13
+    },
+    {
+     "ticker": "EQNR",
+     "rank": 14
     },
     {
      "ticker": "ABBV",
-     "rank": 12
+     "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "AMD",
+     "ticker": "SONY",
      "old_rank": 2
     },
     {
-     "ticker": "DDOG",
+     "ticker": "SAP.DE",
      "old_rank": 3
     },
     {
-     "ticker": "FTNT",
-     "old_rank": 4
+     "ticker": "CEG",
+     "old_rank": 5
     },
     {
-     "ticker": "MRK.DE",
+     "ticker": "MUFG",
      "old_rank": 9
+    },
+    {
+     "ticker": "MFG",
+     "old_rank": 14
     }
    ],
    "moves": [
     {
-     "ticker": "ILMN",
-     "rank": 1,
-     "delta": 6
+     "ticker": "ABNB",
+     "rank": 11,
+     "delta": -7
+    }
+   ]
+  },
+  "momentum": {
+   "entries": [
+    {
+     "ticker": "DDOG",
+     "rank": 3
     },
     {
+     "ticker": "PANW",
+     "rank": 4
+    },
+    {
+     "ticker": "ANET",
+     "rank": 5
+    },
+    {
+     "ticker": "DB1.DE",
+     "rank": 9
+    },
+    {
+     "ticker": "V",
+     "rank": 11
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "DELL",
+     "old_rank": 2
+    },
+    {
+     "ticker": "TEAM",
+     "old_rank": 3
+    },
+    {
+     "ticker": "MU",
+     "old_rank": 4
+    },
+    {
+     "ticker": "MFG",
+     "old_rank": 6
+    },
+    {
+     "ticker": "SMFG",
+     "old_rank": 10
+    }
+   ],
+   "moves": [
+    {
      "ticker": "MRNA",
-     "rank": 11,
-     "delta": -10
+     "rank": 1,
+     "delta": 10
+    },
+    {
+     "ticker": "MUFG",
+     "rank": 14,
+     "delta": -6
     }
    ]
   },
   "value": {
-   "entries": [],
-   "exits": [],
-   "moves": []
+   "entries": [
+    {
+     "ticker": "NVDA",
+     "rank": 3
+    },
+    {
+     "ticker": "VRTX",
+     "rank": 15
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "SKHY",
+     "old_rank": 1
+    },
+    {
+     "ticker": "SHEL",
+     "old_rank": 13
+    }
+   ],
+   "moves": [
+    {
+     "ticker": "BHP",
+     "rank": 14,
+     "delta": -6
+    }
+   ]
   },
-  "analyst_flips": []
+  "analyst_flips": [
+   {
+    "ticker": "PG",
+    "now": 1,
+    "old": 0
+   }
+  ]
  }
 }

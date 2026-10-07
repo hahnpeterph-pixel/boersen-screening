@@ -1,101 +1,18 @@
-# Boden-Screening 2026-10-06 (Stand 2026-10-07 02:00 UTC)
+# Boden-Screening 2026-10-07 (Stand 2026-10-07 11:44 UTC)
 
 Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RSI < 50 + mind. 2 Boden-Punkte (nur Technik). Die Filter (Analysten, Anker, CRV 2:1) stehen in docs/heute.csv. Boden-Anker = niedrigster Puffer mit 60 % Halterate fuer diese Gruppe und diesen Wert (Vollauf), KO-Marke = Bezugstief - Anker x ATR.
 
-## Kandidaten (26)
+## Kandidaten (0)
 
-| Wert | Tief | RSI | Anker | KO-Marke | Analysten |
-|---|---|---|---|---|---|
-| AIR.DE | 5 | 37 | 2.25 | 175.66 | - % |
-| AXON | 4 | 34 | 2.00 | 376.00 | 83 % |
-| BAC | 2 | 25 | 3.00 | 50.04 | 83 % |
-| BAYN.DE | 3 | 31 | 3.50 | 38.74 | 72 % |
-| BKNG | 3 | 29 | 1.75 | 144.23 | 75 % |
-| BMO | 2 | 37 | 4.00 | 152.88 | 33 % |
-| BTI | 2 | 38 | 2.25 | 37.59 | 100 % |
-| C | 3 | 39 | 3.25 | 114.11 | 70 % |
-| CHTR | 2 | 29 | 3.50 | 87.34 | 23 % |
-| DUK | 2 | 43 | 1.75 | 110.76 | 71 % |
-| EOAN.DE | 4 | 43 | 3.25 | 15.50 | 69 % |
-| GS | 5 | 32 | 2.50 | 836.07 | 33 % |
-| HD | 6 | 34 | 3.00 | 260.55 | 64 % |
-| JPM | 5 | 33 | 1.75 | 315.61 | 58 % |
-| KHC | 2 | 26 | - | - | 12 % |
-| LOW | 6 | 34 | 3.50 | 163.41 | 73 % |
-| LULU | 2 | 34 | 3.75 | 78.61 | 0 % |
-| MS | 5 | 32 | 2.25 | 178.36 | 54 % |
-| NEE | 4 | 42 | 2.25 | 72.94 | 43 % |
-| NVO | 4 | 25 | 3.00 | 221.55 | 21 % |
-| PEP | 4 | 25 | 2.75 | 117.86 | 20 % |
-| REGN | 3 | 38 | 2.50 | 669.17 | 64 % |
-| RY | 3 | 37 | 3.25 | 184.86 | 60 % |
-| SBUX | 2 | 43 | 2.75 | 88.40 | 50 % |
-| SNY | 3 | 36 | 2.25 | 66.08 | 50 % |
-| VRSK | 4 | 36 | 3.00 | 148.31 | 60 % |
+_Keine._
 
-## Weitere Pruefttage (62)
+## Weitere Pruefttage (4)
 
 | Wert | Punkte | Grund |
 |---|---|---|
-| ORCL | 2 | RSI >= 50 |
-| PLD | 2 | Tief 1 |
-| ADS.DE | 1 | 1 P |
-| ANET | 1 | 1 P, Tief 1, RSI >= 50 |
-| ASML | 1 | 1 P, Tief 1, RSI >= 50 |
-| AZN | 1 | 1 P |
-| BEI.DE | 1 | 1 P |
-| BHP | 1 | 1 P, RSI >= 50 |
-| CB | 1 | 1 P |
-| CDNS | 1 | 1 P, Tief 1, RSI >= 50 |
-| CM | 1 | 1 P |
-| CON.DE | 1 | 1 P, RSI >= 50 |
-| CVX | 1 | 1 P, Tief 1, RSI >= 50 |
-| DDOG | 1 | 1 P, Tief 1, RSI >= 50 |
-| DE | 1 | 1 P, Tief 1, RSI >= 50 |
-| DELL | 1 | 1 P, RSI >= 50 |
-| DHL.DE | 1 | 1 P, RSI >= 50 |
-| EQIX | 1 | 1 P, Tief 1, RSI >= 50 |
-| EQNR | 1 | 1 P, RSI >= 50 |
-| ETN | 1 | 1 P, Tief 1, RSI >= 50 |
-| FRE.DE | 1 | 1 P, Tief 1 |
-| GE | 1 | 1 P |
-| GFS | 1 | 1 P, Tief 1, RSI >= 50 |
-| GLW | 1 | 1 P, RSI >= 50 |
-| HEN3.DE | 1 | 1 P |
-| HON | 1 | 1 P, RSI >= 50 |
-| IBM | 1 | 1 P |
-| JNJ | 1 | 1 P, Tief 1, Umkehr a |
-| LLY | 1 | 1 P, Tief 1 |
-| MAR | 1 | 1 P, Tief 1, RSI >= 50 |
-| MDB | 1 | 1 P |
-| MRK.DE | 1 | 1 P, Tief 1, RSI >= 50 |
-| MRVL | 1 | 1 P, Tief 1, RSI >= 50 |
-| MSTR | 1 | 1 P, Tief 1, RSI >= 50 |
-| MTX.DE | 1 | 1 P, Tief 1, RSI >= 50 |
-| NEM | 1 | 1 P |
-| NVS | 1 | 1 P, Tief 1 |
-| NXPI | 1 | 1 P, Tief 1, RSI >= 50 |
-| ORLY | 1 | 1 P |
-| P911.DE | 1 | 1 P |
-| PLTR | 1 | 1 P, Tief 1, RSI >= 50 |
-| QIA.DE | 1 | 1 P, Tief 1, RSI >= 50 |
-| SAP.DE | 1 | 1 P, Tief 1, RSI >= 50 |
-| SHL.DE | 1 | 1 P |
-| SHW | 1 | 1 P, Tief 1 |
-| SNOW | 1 | 1 P, RSI >= 50 |
-| SY1.DE | 1 | 1 P, Tief 1, RSI >= 50 |
-| T | 1 | 1 P, Tief 1 |
-| TD | 1 | 1 P |
-| UL | 1 | 1 P, Tief 1 |
-| VRTX | 1 | 1 P |
-| ZAL.DE | 1 | 1 P |
-| AAPL | 0 | 0 P, RSI >= 50, Umkehr a |
-| BNS | 0 | 0 P, Umkehr a |
-| BP | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
-| FANG | 0 | 0 P, Umkehr a |
-| HDB | 0 | 0 P, Umkehr a |
-| HEI.DE | 0 | 0 P, Tief 1, Umkehr a |
-| IFX.DE | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
-| PBR | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
-| VZ | 0 | 0 P, Umkehr a |
-| WELL | 0 | 0 P, Tief 1, Umkehr a |
+| BABA | 0 | 0 P, Tief 1 |
+| BHP | 0 | 0 P, RSI >= 50, Umkehr a |
+| SKHY | 0 | 0 P, Umkehr a |
+| TSM | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
+
+Nicht aktuell (kein Kurs vom 2026-10-07): AAPL, ABBV, ABNB, ABT, ACN, ADBE, ADI, ADP, ADS.DE, ADSK, AEP, AIR.DE, ALV.DE, AMAT, AMD, AMGN, AMT, AMZN, ANET, APH, APP, ARM, ASML, AVGO, AXON, AXP, AZN, BA, BAC, BAS.DE, BAYN.DE, BBVA, BEI.DE, BIIB, BKNG, BKR, BLK, BMO, BMW.DE, BMY, BNR.DE, BNS, BNY, BP, BRK-B, BTI, C, CAT, CB, CBK.DE, CCEP, CDNS, CDW, CEG, CHTR, CL, CM, CMCSA, CNQ, COF, CON.DE, COP, COST, CPRT, CRM, CRWD, CSCO, CSGP, CSX, CTAS, CTSH, CVS, CVX, DASH, DB1.DE, DBK.DE, DDOG, DE, DELL, DHL.DE, DHR, DIS, DTE.DE, DTG.DE, DUK, DXCM, EMR, ENB, ENR.DE, EOAN.DE, EQIX, EQNR, ETN, EXC, FANG, FAST, FDX, FRE.DE, FTNT, GD, GE, GEHC, GEV, GFS, GILD, GLW, GM, GOOG, GOOGL, GS, GSK, HD, HEI.DE, HEN3.DE, HNR1.DE, HON, HSBC, IBM, IDXX, IFX.DE, ILMN, ING, INTC, INTU, ISRG, JNJ, JPM, KDP, KHC, KLAC, KO, LIN, LLY, LMT, LOW, LRCX, LULU, MA, MAR, MBG.DE, MCD, MCHP, MCK, MDB, MDLZ, MDT, MELI, META, MMM, MNST, MO, MPC, MRK, MRK.DE, MRNA, MRVL, MS, MSFT, MSTR, MTX.DE, MU, MUV2.DE, NEE, NEM, NET, NFLX, NKE, NOW, NVDA, NVO, NVS, NXPI, ODFL, ON, ORCL, ORLY, P911.DE, PAH3.DE, PANW, PAYX, PBR, PCAR, PDD, PEP, PFE, PG, PGR, PH, PLD, PLTR, PM, PSX, PYPL, QCOM, QIA.DE, REGN, RHM.DE, RIO, ROP, ROST, RTX, RWE.DE, RY, SAN, SAP.DE, SBUX, SCCO, SCHW, SHEL, SHL.DE, SHOP, SHW, SIE.DE, SNDK, SNOW, SNPS, SNY, SO, SPG, SPGI, SPOT, SRT3.DE, STX, SY1.DE, SYK, T, TD, TEAM, TJX, TMO, TMUS, TRV, TSLA, TTD, TTE, TTWO, TXN, UBER, UBS, UL, UNH, UNP, UPS, USB, V, VLO, VNA.DE, VOW3.DE, VRSK, VRTX, VZ, WBD, WDAY, WDC, WELL, WFC, WMT, XEL, XOM, ZAL.DE, ZS

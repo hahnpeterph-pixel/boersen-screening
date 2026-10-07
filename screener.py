@@ -85,7 +85,7 @@ ANALYST_MAX_AGE_DAYS = 1  # Ratingaenderungen taeglich frisch - das ist das kurz
 # frisch er nach dem Alter waere - sonst benutzt ein neuer Programmlauf
 # unbemerkt einen Cache mit alter, unvollstaendiger Datenstruktur.
 FUND_CACHE_VERSION = 6   # 6 ab 03.10.2026: Feld "exchange" ergaenzt;  5 ab 24.08.2026: Feld "country" ergaenzt
-ANALYST_CACHE_VERSION = 6  # 6 ab 03.10.2026: Kursziele der Heimatboersen-Werte in Heimatwaehrung umgerechnet.  5 ab 22.09.2026: Aggregat-Rueckfall bei weniger als KONSENS_MIN_BANKEN Einzelratings
+ANALYST_CACHE_VERSION = 7  # 7 ab 07.10.2026: Umrechnung nur ueber Tage mit Kurs an beiden Boersen, kein unumgerechneter targetMeanPrice-Rueckfall.  6 ab 03.10.2026: Kursziele der Heimatboersen-Werte in Heimatwaehrung umgerechnet.  5 ab 22.09.2026: Aggregat-Rueckfall bei weniger als KONSENS_MIN_BANKEN Einzelratings
 REVISION_WINDOW_DAYS = 30  # Fenster fuer "kurzfristige" Analysten-Ratingaenderungen
 TARGET_FRESH_DAYS = 14     # Kursziel gilt als "frisch", wenn eine Ratingaenderung diese Zeit nicht ueberschreitet
 # Unter so vielen Banken mit Einzelrating wird zusaetzlich Yahoos
@@ -253,6 +253,18 @@ def boerse_name(t: str, yahoo_code: str = "") -> str:
     if b == "XETRA":
         return "XETRA"
     return _BOERSE_HEIM.get(yahoo_code, _BOERSE_YAHOO.get(yahoo_code, "USA" if b == "USA" else ""))
+
+
+def ziel_rueckfall(a: dict, f: dict):
+    """07.10.2026: Rueckfall auf Yahoos targetMeanPrice (US-Notierung, USD). Bei Heimatboersen-Werten (a['umrechnung'] gesetzt)
+    nur mit gueltigem Umrechnungsfaktor, sonst kein Kursziel - nie ein Ziel in falscher Waehrung (Fund 07.10.: HDB 30,52 USD
+    gegen Kurs 704,80 INR, 15 Heimatwerte betroffen)."""
+    v = safe(f, "targetMeanPrice")
+    u = (a or {}).get("umrechnung")
+    if not u:
+        return v
+    fx = safe(u, "faktor")
+    return round(v * fx, 4) if (v and fx) else None
 
 
 def safe(d: dict, key: str, default=None):
@@ -604,9 +616,17 @@ def get_analyst_data(tickers: list[str]) -> dict:
                 heim = kurse.kerzen(t, period="400d")
                 us = yf.Ticker(t).history(period="1mo", auto_adjust=False)
                 us.index = pd.to_datetime(us.index).tz_localize(None).normalize()
-                gemeinsam = heim.index.normalize().intersection(us.index)
+                # 07.10.2026: nur Tage mit Schlusskurs an BEIDEN Boersen (vorher NaN-Zeile -> Faktor NaN, Kursziel unumgerechnet)
+                hc = heim["Close"].dropna(); hc = hc[hc > 0]; hc.index = pd.to_datetime(hc.index).normalize()
+                uc = us["Close"].dropna(); uc = uc[uc > 0]
+                hc = hc[~hc.index.duplicated(keep="last")]; uc = uc[~uc.index.duplicated(keep="last")]
+                gemeinsam = hc.index.intersection(uc.index)
+                if not len(gemeinsam):
+                    raise ValueError("kein gemeinsamer Handelstag")
                 tag = gemeinsam.max()
-                f_ = float(heim.loc[heim.index.normalize() == tag, "Close"].iloc[-1]) / float(us.loc[tag, "Close"])
+                f_ = float(hc.loc[tag]) / float(uc.loc[tag])
+                if not math.isfinite(f_) or f_ <= 0:
+                    raise ValueError(f"Faktor ungueltig ({f_})")
                 entry['price_targets'] = {k: (round(v * f_, 4) if isinstance(v, (int, float)) else v)
                                           for k, v in entry['price_targets'].items()}
                 entry['umrechnung'] = {"faktor": round(f_, 6), "tag": str(tag.date()), "quelle": kurse.quelle(t),
@@ -614,6 +634,7 @@ def get_analyst_data(tickers: list[str]) -> dict:
             except Exception as e:  # noqa: BLE001
                 print(f"  {t}: Kursziel-Umrechnung fehlgeschlagen ({e}) - Kursziel verworfen, statt falsche Waehrung")
                 entry['price_targets'] = {}
+                entry['umrechnung'] = {"faktor": None, "fehler": str(e)[:80]}  # 07.10.2026: sperrt auch den targetMeanPrice-Rueckfall
 
         data[t] = entry
         if n % 25 == 0:
@@ -1032,7 +1053,7 @@ def score_value(m: dict, f: dict, a: dict) -> tuple[float, list[str], list[dict]
     # Gleiche Definition wie in target_price_info seit 18.09.2026: Median
     # statt Mittelwert. Zwei verschiedene Kurszielbegriffe in einer Datei
     # waeren eine Fehlerquelle, auch wenn hier nur 5 von 100 Punkten haengen.
-    target = safe(safe(a, "price_targets") or {}, "median") or safe(f, "targetMeanPrice")
+    target = safe(safe(a, "price_targets") or {}, "median") or ziel_rueckfall(a, f)
 
     if fpe and tpe and 0 < fpe < tpe:
         add("KGV verbessert", W_PE_IMPROVE, W_PE_IMPROVE, f"{fpe:.1f} < {tpe:.1f}")
@@ -1158,7 +1179,7 @@ def target_price_info(f: dict, a: dict, last: float) -> dict:
     # auf targetMeanPrice zurueckgefallen: lieber der Mittelwert als gar
     # kein Kursziel.
     pt_roh = safe(a, "price_targets") or {}
-    target = safe(pt_roh, "median") or safe(f, "targetMeanPrice")
+    target = safe(pt_roh, "median") or ziel_rueckfall(a, f)
     n_analysts = safe(f, "numberOfAnalystOpinions")
     empfehlung = empfehlung_text.get(safe(f, "recommendationKey"), None)
     rec_breakdown = safe(a, "consensus")

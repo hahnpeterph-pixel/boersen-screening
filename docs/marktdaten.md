@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-10-08 01:55 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1254._
+_Erstellt 2026-10-08 11:55 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1254._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -12,7 +12,7 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 |---|---|---|---|---|---|
 | ADBE (ADBE) | 232.77 | - | - | ja | 38.0 |
 | ADI (ADI) | 410.08 | - | - | ja | 63.65 |
-| ASML (ASML) | 1611.0 | - | - | ja | 61.53 |
+| ASML (ASML) | 1610.2 | - | - | ja | 61.38 |
 | BKR (BKR) | 55.41 | - | - | ja | 37.68 |
 | CAT (CAT) | 813.83 | - | - | ja | 47.5 |
 | CHTR (CHTR) | 106.96 | - | - | ja | 27.7 |
@@ -73,42 +73,44 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | EQIX (EQIX) | 1031.77 | - | - | ja | 50.04 |
 | SPCX (SPCX) | 167.6 | - | - | ja | 64.95 |
 | SKHY (SKHY) | 1723000.0 | - | - | ja | 46.55 |
-| HSBC (HSBC) | 14.102 | - | - | ja | 33.09 |
+| HSBC (HSBC) | 14.08 | - | - | ja | 32.83 |
 | RY (RY) | 191.22 | - | - | ja | 29.65 |
 | TM (TM) | 2900.5 | - | ja | ja | 42.09 |
-| SAN (SAN) | 12.262 | ja | - | ja | 45.34 |
+| SAN (SAN) | 12.26 | ja | - | ja | 45.3 |
 | TD (TD) | 113.87 | - | - | ja | 33.3 |
 | SMFG (SMFG) | 3372.0 | - | ja | ja | 47.27 |
-| RIO (RIO) | 70.31 | - | - | ja | 40.79 |
+| RIO (RIO) | 70.22 | - | - | ja | 40.44 |
 | BBVA (BBVA) | 23.43 | - | - | ja | 35.58 |
 | UBS (UBS) | 39.33 | - | - | ja | 37.13 |
 | MFG (MFG) | 8644.0 | - | ja | ja | 51.44 |
 | BMO (BMO) | 161.75 | - | - | ja | 30.62 |
 | BNS (BNS) | 87.23 | - | - | ja | 32.7 |
-| ING (ING) | 30.285 | - | - | ja | 40.38 |
+| ING (ING) | 30.24 | - | - | ja | 40.03 |
 | CM (CM) | 108.33 | - | - | ja | 36.31 |
 | AXON (AXON) | 406.0 | - | - | ja | 31.32 |
 | CCEP (CCEP) | 100.86 | - | - | ja | 42.55 |
 | MSTR (MSTR) | 153.37 | - | - | ja | 54.89 |
-| ALV.DE (ALV.DE) | 416.5 | - | - | ja | 38.94 |
-| BMW.DE (BMW.DE) | 53.6 | - | ja | ja | 29.01 |
-| CBK.DE (CBK.DE) | 38.94 | - | - | ja | 39.27 |
-| DBK.DE (DBK.DE) | 29.88 | - | - | ja | 30.89 |
-| DHL.DE (DHL.DE) | 55.44 | - | - | ja | 44.84 |
-| EOAN.DE (EOAN.DE) | 16.87 | - | - | ja | 38.82 |
-| FRE.DE (FRE.DE) | 43.335 | - | - | ja | 38.89 |
-| HEI.DE (HEI.DE) | 142.0 | - | - | ja | 37.36 |
-| IFX.DE (IFX.DE) | 60.8 | - | - | ja | 53.37 |
-| MBG.DE (MBG.DE) | 39.875 | - | ja | ja | 28.6 |
-| MTX.DE (MTX.DE) | 352.3 | - | - | ja | 44.92 |
-| P911.DE (P911.DE) | 42.17 | - | ja | ja | 37.71 |
-| RHM.DE (RHM.DE) | 926.9 | - | - | ja | 33.52 |
-| RWE.DE (RWE.DE) | 57.64 | - | - | ja | 42.02 |
-| SIE.DE (SIE.DE) | 270.65 | - | - | ja | 46.73 |
-| ENR.DE (ENR.DE) | 142.78 | - | - | ja | 47.48 |
-| VNA.DE (VNA.DE) | 16.76 | - | - | ja | 30.05 |
-| Weizen (ZW=F) | 686.25 | - | - | ja | 44.77 |
-| Kakao (CC=F) | 5527.0 | - | - | ja | 46.06 |
+| ALV.DE (ALV.DE) | 417.3 | - | - | ja | 39.46 |
+| BAYN.DE (BAYN.DE) | 43.97 | - | - | ja | 30.9 |
+| BMW.DE (BMW.DE) | 53.66 | - | ja | ja | 29.18 |
+| CBK.DE (CBK.DE) | 38.56 | - | - | ja | 37.59 |
+| DBK.DE (DBK.DE) | 29.855 | - | - | ja | 30.78 |
+| DHL.DE (DHL.DE) | 55.56 | - | - | ja | 45.5 |
+| EOAN.DE (EOAN.DE) | 16.89 | - | - | ja | 39.19 |
+| FRE.DE (FRE.DE) | 43.285 | - | - | ja | 38.63 |
+| HEI.DE (HEI.DE) | 141.65 | - | - | ja | 36.97 |
+| IFX.DE (IFX.DE) | 60.95 | - | - | ja | 53.7 |
+| MBG.DE (MBG.DE) | 39.83 | - | ja | ja | 28.44 |
+| MTX.DE (MTX.DE) | 351.1 | - | - | ja | 44.2 |
+| RHM.DE (RHM.DE) | 926.2 | - | - | ja | 33.43 |
+| RWE.DE (RWE.DE) | 57.9 | - | - | ja | 43.4 |
+| SIE.DE (SIE.DE) | 271.2 | - | - | ja | 47.23 |
+| ENR.DE (ENR.DE) | 143.6 | - | - | ja | 48.56 |
+| SY1.DE (SY1.DE) | 91.04 | - | - | ja | 49.75 |
+| VNA.DE (VNA.DE) | 16.75 | - | - | ja | 29.94 |
+| Silber (SI=F) | 59.899 | - | - | ja | 38.41 |
+| Weizen (ZW=F) | 686.5 | - | ja | ja | 44.85 |
+| Kakao (CC=F) | 5582.0 | - | - | ja | 47.39 |
 | EUR/USD (EURUSD=X) | 1.1254 | ja | - | - | 24.55 |
 | EUR/GBP (EURGBP=X) | 0.8482 | ja | - | - | 28.28 |
 | EUR/CHF (EURCHF=X) | 0.9365 | ja | ja | - | 44.72 |

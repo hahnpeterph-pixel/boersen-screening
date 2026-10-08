@@ -6,6 +6,7 @@
    "ACN",
    "MSTR",
    "SPOT",
+   "SHL.DE",
    "DIS",
    "ABNB",
    "CEG",
@@ -13,7 +14,6 @@
    "TSLA",
    "DASH",
    "QIA.DE",
-   "SRT3.DE",
    "XOM",
    "NEM",
    "META"
@@ -27,13 +27,13 @@
    "MPC",
    "PSX",
    "ILMN",
-   "SRT3.DE",
    "DB1.DE",
-   "DHL.DE",
-   "ING",
+   "TMO",
    "SY1.DE",
    "PM",
-   "MFG"
+   "V",
+   "BNR.DE",
+   "EMR"
   ],
   "value": [
    "SKHY",
@@ -42,190 +42,109 @@
    "NEM",
    "ABNB",
    "REGN",
-   "RIO",
    "BLK",
    "PBR",
    "META",
+   "DXCM",
    "MNST",
+   "RIO",
    "V",
    "COP",
-   "BHP",
-   "VRTX"
+   "BHP"
   ]
  },
  "changes": {
   "turnaround": {
    "entries": [
     {
-     "ticker": "NOW",
-     "rank": 1
-    },
-    {
-     "ticker": "MSTR",
-     "rank": 3
-    },
-    {
-     "ticker": "SPOT",
-     "rank": 4
-    },
-    {
-     "ticker": "DHR",
-     "rank": 8
-    },
-    {
-     "ticker": "TSLA",
-     "rank": 9
-    },
-    {
-     "ticker": "QIA.DE",
-     "rank": 11
-    },
+     "ticker": "SHL.DE",
+     "rank": 5
+    }
+   ],
+   "exits": [
     {
      "ticker": "SRT3.DE",
-     "rank": 12
+     "old_rank": 12
+    }
+   ],
+   "moves": []
+  },
+  "momentum": {
+   "entries": [
+    {
+     "ticker": "TMO",
+     "rank": 10
     },
     {
-     "ticker": "XOM",
+     "ticker": "V",
      "rank": 13
     },
     {
-     "ticker": "META",
+     "ticker": "BNR.DE",
+     "rank": 14
+    },
+    {
+     "ticker": "EMR",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "SAP.DE",
-     "old_rank": 1
-    },
-    {
-     "ticker": "ZS",
-     "old_rank": 3
-    },
-    {
-     "ticker": "REGN",
-     "old_rank": 7
-    },
-    {
-     "ticker": "COP",
-     "old_rank": 8
-    },
-    {
-     "ticker": "TM",
+     "ticker": "SRT3.DE",
      "old_rank": 9
     },
     {
-     "ticker": "SHL.DE",
+     "ticker": "DHL.DE",
      "old_rank": 11
     },
     {
-     "ticker": "BLK",
+     "ticker": "ING",
      "old_rank": 12
     },
     {
-     "ticker": "PG",
-     "old_rank": 13
-    },
+     "ticker": "MFG",
+     "old_rank": 15
+    }
+   ],
+   "moves": []
+  },
+  "value": {
+   "entries": [
     {
-     "ticker": "CTAS",
+     "ticker": "DXCM",
+     "rank": 10
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "VRTX",
      "old_rank": 15
     }
    ],
    "moves": [
     {
-     "ticker": "DIS",
-     "rank": 5,
-     "delta": 5
-    }
-   ]
-  },
-  "momentum": {
-   "entries": [
-    {
-     "ticker": "AMD",
-     "rank": 1
-    },
-    {
-     "ticker": "DDOG",
-     "rank": 2
-    },
-    {
-     "ticker": "FTNT",
-     "rank": 3
-    },
-    {
-     "ticker": "SRT3.DE",
-     "rank": 9
-    },
-    {
-     "ticker": "ING",
-     "rank": 12
-    },
-    {
-     "ticker": "MFG",
-     "rank": 15
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "DELL",
-     "old_rank": 2
-    },
-    {
-     "ticker": "TEAM",
-     "old_rank": 3
-    },
-    {
-     "ticker": "PANW",
-     "old_rank": 4
-    },
-    {
-     "ticker": "MRK.DE",
-     "old_rank": 8
-    },
-    {
-     "ticker": "V",
-     "old_rank": 12
-    },
-    {
-     "ticker": "EMR",
-     "old_rank": 14
-    }
-   ],
-   "moves": [
-    {
-     "ticker": "MRNA",
-     "rank": 4,
-     "delta": 5
-    },
-    {
-     "ticker": "ILMN",
-     "rank": 8,
-     "delta": -7
-    }
-   ]
-  },
-  "value": {
-   "entries": [
-    {
-     "ticker": "VRTX",
-     "rank": 15
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "MTX.DE",
-     "old_rank": 12
-    }
-   ],
-   "moves": [
-    {
      "ticker": "RIO",
-     "rank": 7,
-     "delta": 6
+     "rank": 12,
+     "delta": -5
     }
    ]
   },
-  "analyst_flips": []
+  "analyst_flips": [
+   {
+    "ticker": "DXCM",
+    "now": 1,
+    "old": 0
+   },
+   {
+    "ticker": "PSX",
+    "now": -1,
+    "old": 0
+   },
+   {
+    "ticker": "SPOT",
+    "now": 1,
+    "old": 0
+   }
+  ]
  }
 }

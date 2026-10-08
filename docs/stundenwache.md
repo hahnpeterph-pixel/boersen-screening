@@ -1,8 +1,8 @@
 # Stundenwache
 
-Stand: 2026-10-07 · 272 Werte mit Stundendaten · erstellt 2026-10-08 01:57 UTC
+Stand: 2026-10-07 · 272 Werte mit Stundendaten · erstellt 2026-10-08 11:57 UTC
 
-> **Sitzung noch nicht abgeschlossen.** 10 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 1, 2, 3, 6, 7, 8, 9). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
+> **Sitzung noch nicht abgeschlossen.** 60 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 5, 6, 7). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
 
 Marken sind das juengste Swing-Tief und das juengste Swing-Hoch aus `tiefs_regel.py`, also dieselben wie im Tagesbericht. Geprueft wird nur, was der letzte Handelstag auf Stundenbasis damit gemacht hat.
 
@@ -13,26 +13,24 @@ Lesart der Urteile:
 - **angetestet** - nur mit dem Docht beruehrt, kein Schluss dahinter
 - **unklar** - Stunden- und Tagesreihe passen nicht zusammen, siehe unten
 
-## Tief gebrochen (0)
+## Tief gebrochen (1)
 
-Keine.
-
-## Tief zurueckerobert (1)
-
-Im Tagesverlauf unter der Marke, am Ende darueber. Das ist der Fall, den die Tageskerze verschluckt.
+Schluss unter dem juengsten Swing-Tief. Die Sequenz ist gerissen.
 
 | Wert | Marke | Schluss | Abstand (ATR) | Stunden dahinter |
 |---|---|---|---|---|
-| MBG.DE | 39.41 | 39.875 | 0.389 | 1 |
+| MBG.DE | 39.41 | 39.075 | -0.313 | 4 |
 
-## Tief angetestet (18)
+## Tief zurueckerobert (0)
+
+Keine.
+
+## Tief angetestet (16)
 
 Docht bis unter die Marke, kein Stundenschluss darunter.
 
 | Wert | Marke | Schluss | Abstand (ATR) | Stunden dahinter |
 |---|---|---|---|---|
-| MUFG | 3519.0 | 3519.0 | 0.0 | 0 |
-| MFG | 8380.0 | 8384.0 | 0.015 | 0 |
 | MDT | 85.43 | 85.51 | 0.04 | 0 |
 | CM | 108.24 | 108.33 | 0.042 | 0 |
 | AXON | 405.3 | 406.0 | 0.046 | 0 |
@@ -40,7 +38,7 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | PH | 951.62 | 952.74 | 0.056 | 0 |
 | SPG | 197.32 | 197.54 | 0.085 | 0 |
 | TD | 113.67 | 113.87 | 0.097 | 0 |
-| SY1.DE | 90.92 | 91.22 | 0.166 | 0 |
+| ALV.DE | 412.1 | 413.2 | 0.144 | 0 |
 | GD | 325.01 | 326.54 | 0.259 | 0 |
 | TSLA | 374.43 | 377.62 | 0.288 | 0 |
 | WDC | 397.02 | 405.4 | 0.301 | 0 |
@@ -50,11 +48,12 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | LULU | 90.56 | 91.88 | 0.404 | 0 |
 | TRV | 357.61 | 360.5 | 0.46 | 0 |
 
-## Swing-Hoch ueberwunden (35)
+## Swing-Hoch ueberwunden (39)
 
 | Wert | Hoch | Schluss | Abstand (ATR) | Stunden darueber |
 |---|---|---|---|---|
 | SHOP | 134.74 | 165.95 | 4.24 | 7 |
+| PBR | 54.61 | 60.33 | 3.412 | 7 |
 | SNPS | 445.92 | 502.51 | 2.821 | 7 |
 | MPC | 398.33 | 442.35 | 2.683 | 7 |
 | MELI | 1739.88 | 1872.8199 | 2.274 | 7 |
@@ -67,27 +66,30 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | PSX | 259.11 | 271.39 | 1.367 | 7 |
 | FTNT | 181.37 | 189.28 | 1.354 | 7 |
 | WMT | 105.14 | 108.12 | 1.349 | 7 |
+| BNR.DE | 60.28 | 61.82 | 1.271 | 5 |
 | SO | 83.98 | 85.44 | 1.155 | 7 |
 | ZS | 203.44 | 213.68 | 1.093 | 7 |
+| BP | 5.64 | 5.79 | 0.957 | 5 |
 | XEL | 71.37 | 72.4 | 0.835 | 7 |
-| BNR.DE | 60.28 | 61.34 | 0.829 | 9 |
+| SHEL | 36.815 | 37.31 | 0.71 | 5 |
 | COST | 931.09 | 942.01 | 0.703 | 7 |
+| BAS.DE | 50.93 | 51.62 | 0.643 | 5 |
 | ANET | 212.0 | 215.82 | 0.635 | 6 |
-| SHL.DE | 38.13 | 38.54 | 0.484 | 8 |
+| HNR1.DE | 260.8 | 263.2 | 0.54 | 5 |
 | ABBV | 268.93 | 271.31 | 0.438 | 7 |
 | EXC | 41.21 | 41.48 | 0.408 | 7 |
 | LIN | 480.56 | 483.94 | 0.401 | 7 |
 | GOOGL | 347.03 | 350.37 | 0.373 | 3 |
 | MRVL | 280.0 | 284.73 | 0.364 | 7 |
-| BAS.DE | 50.93 | 51.25 | 0.294 | 9 |
 | DUK | 115.17 | 115.49 | 0.222 | 7 |
+| MUV2.DE | 516.2 | 518.0 | 0.21 | 5 |
 | CVS | 87.51 | 87.94 | 0.207 | 7 |
-| HNR1.DE | 260.8 | 261.6 | 0.175 | 3 |
-| MUV2.DE | 516.2 | 517.6 | 0.159 | 1 |
 | AEP | 121.8 | 122.08 | 0.145 | 7 |
 | MCK | 907.07 | 909.79 | 0.115 | 7 |
+| SAP.DE | 187.8 | 188.22 | 0.087 | 5 |
 | AAPL | 336.21 | 336.62 | 0.066 | 3 |
 | PAYX | 101.33 | 101.52 | 0.063 | 6 |
+| SHL.DE | 38.13 | 38.15 | 0.024 | 3 |
 | AMD | 645.46 | 645.83 | 0.016 | 3 |
 
 ## Reihen unstimmig - kein Urteil (0)

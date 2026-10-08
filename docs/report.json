@@ -1,39 +1,39 @@
 {
- "date": "2026-10-07",
+ "date": "2026-10-08",
  "ranks": {
   "turnaround": [
-   "SAP.DE",
+   "NOW",
    "ACN",
-   "ZS",
+   "MSTR",
+   "SPOT",
+   "DIS",
    "ABNB",
    "CEG",
+   "DHR",
+   "TSLA",
    "DASH",
-   "REGN",
-   "COP",
-   "TM",
-   "DIS",
-   "SHL.DE",
-   "BLK",
-   "PG",
+   "QIA.DE",
+   "SRT3.DE",
+   "XOM",
    "NEM",
-   "CTAS"
+   "META"
   ],
   "momentum": [
-   "ILMN",
-   "DELL",
-   "TEAM",
-   "PANW",
+   "AMD",
+   "DDOG",
+   "FTNT",
+   "MRNA",
+   "VLO",
    "MPC",
    "PSX",
-   "VLO",
-   "MRK.DE",
-   "MRNA",
-   "SY1.DE",
+   "ILMN",
+   "SRT3.DE",
    "DB1.DE",
-   "V",
    "DHL.DE",
-   "EMR",
-   "PM"
+   "ING",
+   "SY1.DE",
+   "PM",
+   "MFG"
   ],
   "value": [
    "SKHY",
@@ -42,134 +42,187 @@
    "NEM",
    "ABNB",
    "REGN",
+   "RIO",
    "BLK",
    "PBR",
    "META",
-   "V",
    "MNST",
-   "MTX.DE",
-   "RIO",
+   "V",
    "COP",
-   "BHP"
+   "BHP",
+   "VRTX"
   ]
  },
  "changes": {
   "turnaround": {
    "entries": [
     {
-     "ticker": "SAP.DE",
+     "ticker": "NOW",
      "rank": 1
     },
     {
-     "ticker": "ZS",
+     "ticker": "MSTR",
      "rank": 3
     },
     {
-     "ticker": "CEG",
-     "rank": 5
+     "ticker": "SPOT",
+     "rank": 4
     },
     {
-     "ticker": "SHL.DE",
+     "ticker": "DHR",
+     "rank": 8
+    },
+    {
+     "ticker": "TSLA",
+     "rank": 9
+    },
+    {
+     "ticker": "QIA.DE",
      "rank": 11
+    },
+    {
+     "ticker": "SRT3.DE",
+     "rank": 12
+    },
+    {
+     "ticker": "XOM",
+     "rank": 13
+    },
+    {
+     "ticker": "META",
+     "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "NOW",
+     "ticker": "SAP.DE",
      "old_rank": 1
     },
     {
-     "ticker": "WDAY",
+     "ticker": "ZS",
      "old_rank": 3
     },
     {
-     "ticker": "EQNR",
-     "old_rank": 14
+     "ticker": "REGN",
+     "old_rank": 7
     },
     {
-     "ticker": "ABBV",
+     "ticker": "COP",
+     "old_rank": 8
+    },
+    {
+     "ticker": "TM",
+     "old_rank": 9
+    },
+    {
+     "ticker": "SHL.DE",
+     "old_rank": 11
+    },
+    {
+     "ticker": "BLK",
+     "old_rank": 12
+    },
+    {
+     "ticker": "PG",
+     "old_rank": 13
+    },
+    {
+     "ticker": "CTAS",
      "old_rank": 15
     }
    ],
    "moves": [
     {
-     "ticker": "ABNB",
-     "rank": 4,
-     "delta": 7
+     "ticker": "DIS",
+     "rank": 5,
+     "delta": 5
     }
    ]
   },
   "momentum": {
    "entries": [
     {
-     "ticker": "DELL",
+     "ticker": "AMD",
+     "rank": 1
+    },
+    {
+     "ticker": "DDOG",
      "rank": 2
     },
     {
-     "ticker": "TEAM",
+     "ticker": "FTNT",
      "rank": 3
     },
     {
-     "ticker": "MRK.DE",
-     "rank": 8
+     "ticker": "SRT3.DE",
+     "rank": 9
     },
     {
-     "ticker": "PM",
+     "ticker": "ING",
+     "rank": 12
+    },
+    {
+     "ticker": "MFG",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "DDOG",
+     "ticker": "DELL",
+     "old_rank": 2
+    },
+    {
+     "ticker": "TEAM",
      "old_rank": 3
     },
     {
-     "ticker": "ANET",
-     "old_rank": 5
+     "ticker": "PANW",
+     "old_rank": 4
     },
     {
-     "ticker": "ABBV",
-     "old_rank": 10
+     "ticker": "MRK.DE",
+     "old_rank": 8
     },
     {
-     "ticker": "MUFG",
+     "ticker": "V",
+     "old_rank": 12
+    },
+    {
+     "ticker": "EMR",
      "old_rank": 14
     }
    ],
    "moves": [
     {
      "ticker": "MRNA",
-     "rank": 9,
-     "delta": -8
+     "rank": 4,
+     "delta": 5
+    },
+    {
+     "ticker": "ILMN",
+     "rank": 8,
+     "delta": -7
     }
    ]
   },
   "value": {
    "entries": [
     {
-     "ticker": "SKHY",
-     "rank": 1
-    },
-    {
-     "ticker": "MTX.DE",
-     "rank": 12
+     "ticker": "VRTX",
+     "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "NVDA",
-     "old_rank": 3
-    },
-    {
-     "ticker": "VRTX",
-     "old_rank": 15
+     "ticker": "MTX.DE",
+     "old_rank": 12
     }
    ],
    "moves": [
     {
      "ticker": "RIO",
-     "rank": 13,
-     "delta": -6
+     "rank": 7,
+     "delta": 6
     }
    ]
   },

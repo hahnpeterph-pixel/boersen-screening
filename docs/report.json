@@ -2,21 +2,21 @@
  "date": "2026-10-09",
  "ranks": {
   "turnaround": [
-   "SAP.DE",
    "NOW",
    "T",
+   "SAP.DE",
    "MDT",
    "DHR",
    "SPOT",
-   "SHL.DE",
    "TSLA",
+   "SHL.DE",
    "NVDA",
-   "BEI.DE",
-   "AMZN",
    "EQNR",
+   "AMZN",
    "ABNB",
    "BP",
-   "XOM"
+   "XOM",
+   "FAST"
   ],
   "momentum": [
    "FTNT",
@@ -26,13 +26,13 @@
    "MRNA",
    "MPC",
    "PSX",
-   "MRK.DE",
    "DB1.DE",
    "ILMN",
-   "SY1.DE",
-   "PM",
-   "V",
+   "TMO",
    "BNR.DE",
+   "PM",
+   "SY1.DE",
+   "V",
    "TRV"
   ],
   "value": [
@@ -47,9 +47,9 @@
    "META",
    "DXCM",
    "MTX.DE",
-   "RIO",
    "V",
    "MNST",
+   "RIO",
    "MDT"
   ]
  },
@@ -57,132 +57,36 @@
   "turnaround": {
    "entries": [
     {
-     "ticker": "SAP.DE",
-     "rank": 1
-    },
-    {
-     "ticker": "T",
-     "rank": 3
-    },
-    {
-     "ticker": "MDT",
-     "rank": 4
-    },
-    {
-     "ticker": "NVDA",
-     "rank": 9
-    },
-    {
-     "ticker": "BEI.DE",
-     "rank": 10
-    },
-    {
-     "ticker": "AMZN",
-     "rank": 11
-    },
-    {
-     "ticker": "EQNR",
-     "rank": 12
-    },
-    {
-     "ticker": "BP",
-     "rank": 14
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "ACN",
-     "old_rank": 2
-    },
-    {
-     "ticker": "MSTR",
-     "old_rank": 3
-    },
-    {
-     "ticker": "DIS",
-     "old_rank": 6
-    },
-    {
-     "ticker": "CEG",
-     "old_rank": 8
-    },
-    {
-     "ticker": "DASH",
-     "old_rank": 11
-    },
-    {
-     "ticker": "QIA.DE",
-     "old_rank": 12
-    },
-    {
-     "ticker": "NEM",
-     "old_rank": 14
-    },
-    {
-     "ticker": "META",
-     "old_rank": 15
-    }
-   ],
-   "moves": [
-    {
-     "ticker": "ABNB",
-     "rank": 13,
-     "delta": -6
-    }
-   ]
-  },
-  "momentum": {
-   "entries": [
-    {
-     "ticker": "PANW",
-     "rank": 3
-    },
-    {
-     "ticker": "MRK.DE",
-     "rank": 8
-    },
-    {
-     "ticker": "TRV",
+     "ticker": "FAST",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "AMD",
-     "old_rank": 1
-    },
+     "ticker": "BEI.DE",
+     "old_rank": 10
+    }
+   ],
+   "moves": []
+  },
+  "momentum": {
+   "entries": [
     {
      "ticker": "TMO",
-     "old_rank": 10
-    },
+     "rank": 10
+    }
+   ],
+   "exits": [
     {
-     "ticker": "EMR",
-     "old_rank": 15
+     "ticker": "MRK.DE",
+     "old_rank": 8
     }
    ],
    "moves": []
   },
   "value": {
-   "entries": [
-    {
-     "ticker": "MTX.DE",
-     "rank": 11
-    },
-    {
-     "ticker": "MDT",
-     "rank": 15
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "COP",
-     "old_rank": 14
-    },
-    {
-     "ticker": "BHP",
-     "old_rank": 15
-    }
-   ],
+   "entries": [],
+   "exits": [],
    "moves": []
   },
   "analyst_flips": []

@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-10-09 02:07 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1201._
+_Erstellt 2026-10-09 11:45 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1201._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -14,6 +14,7 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | AMD (AMD) | 620.68 | - | - | ja | 61.29 |
 | ARM (ARM) | 275.29 | - | - | ja | 46.66 |
 | AVGO (AVGO) | 360.14 | - | - | ja | 49.31 |
+| AZN (AZN) | 118.92 | - | - | ja | 43.54 |
 | BIIB (BIIB) | 218.43 | - | - | ja | 46.6 |
 | CAT (CAT) | 796.18 | - | - | ja | 43.33 |
 | CDNS (CDNS) | 348.84 | - | - | ja | 64.41 |
@@ -45,35 +46,40 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | EQIX (EQIX) | 1011.16 | - | - | ja | 44.21 |
 | SPCX (SPCX) | 160.57 | - | - | ja | 57.65 |
 | SKHY (SKHY) | 1681000.0 | - | - | ja | 43.72 |
+| HSBC (HSBC) | 13.806 | - | - | ja | 29.7 |
 | MUFG (MUFG) | 3504.0 | - | - | ja | 42.68 |
 | BHP (BHP) | 61.19 | - | - | ja | 47.32 |
-| SAN (SAN) | 11.956 | - | - | ja | 39.98 |
+| SAN (SAN) | 11.91 | - | - | ja | 39.29 |
 | SMFG (SMFG) | 3297.0 | - | - | ja | 43.05 |
-| BBVA (BBVA) | 23.04 | - | - | ja | 32.4 |
+| BBVA (BBVA) | 23.02 | - | - | ja | 32.25 |
 | UBS (UBS) | 38.83 | - | - | ja | 34.83 |
 | SONY (SONY) | 3706.0 | - | - | ja | 47.24 |
 | MFG (MFG) | 8350.0 | - | - | ja | 45.52 |
 | HDB (HDB) | 692.25 | - | - | ja | 38.91 |
-| ING (ING) | 29.455 | - | - | ja | 34.4 |
-| GSK (GSK) | 17.405 | - | - | ja | 33.97 |
-| ALV.DE (ALV.DE) | 413.6 | - | - | ja | 37.02 |
-| BAYN.DE (BAYN.DE) | 42.66 | - | - | ja | 27.12 |
-| BMW.DE (BMW.DE) | 52.16 | - | - | ja | 25.26 |
-| CBK.DE (CBK.DE) | 37.77 | - | - | ja | 34.31 |
-| CON.DE (CON.DE) | 68.2 | - | - | ja | 45.81 |
-| DHL.DE (DHL.DE) | 54.9 | - | - | ja | 41.85 |
-| FRE.DE (FRE.DE) | 41.485 | - | - | ja | 30.53 |
-| HEI.DE (HEI.DE) | 139.0 | - | - | ja | 34.09 |
-| IFX.DE (IFX.DE) | 58.89 | - | - | ja | 49.19 |
+| ING (ING) | 29.425 | - | - | ja | 34.22 |
+| GSK (GSK) | 17.355 | - | - | ja | 33.43 |
+| ALV.DE (ALV.DE) | 413.4 | - | - | ja | 36.9 |
+| BAYN.DE (BAYN.DE) | 42.59 | - | - | ja | 26.95 |
+| BMW.DE (BMW.DE) | 52.18 | - | - | ja | 25.3 |
+| CBK.DE (CBK.DE) | 37.64 | - | - | ja | 33.82 |
+| CON.DE (CON.DE) | 68.1 | - | - | ja | 45.48 |
+| DHL.DE (DHL.DE) | 54.94 | - | - | ja | 42.05 |
+| FRE.DE (FRE.DE) | 41.59 | - | - | ja | 30.91 |
+| HEI.DE (HEI.DE) | 139.8 | - | - | ja | 34.91 |
+| IFX.DE (IFX.DE) | 58.9 | - | - | ja | 49.21 |
 | MRK.DE (MRK.DE) | 135.7 | - | - | ja | 49.22 |
-| MTX.DE (MTX.DE) | 345.5 | - | - | ja | 40.89 |
-| P911.DE (P911.DE) | 40.76 | - | - | ja | 32.75 |
-| QIA.DE (QIA.DE) | 39.61 | - | - | ja | 57.16 |
-| SAP.DE (SAP.DE) | 184.74 | - | ja | ja | 51.58 |
-| SRT3.DE (SRT3.DE) | 246.8 | - | - | ja | 47.49 |
-| SIE.DE (SIE.DE) | 264.35 | - | - | ja | 41.33 |
-| VOW3.DE (VOW3.DE) | 66.88 | - | - | ja | 32.95 |
+| MTX.DE (MTX.DE) | 343.7 | - | - | ja | 39.93 |
+| P911.DE (P911.DE) | 40.96 | - | - | ja | 33.4 |
+| QIA.DE (QIA.DE) | 39.575 | - | - | ja | 56.89 |
+| SAP.DE (SAP.DE) | 184.62 | - | ja | ja | 51.39 |
+| SRT3.DE (SRT3.DE) | 246.9 | - | - | ja | 47.56 |
+| SIE.DE (SIE.DE) | 264.25 | - | - | ja | 41.26 |
+| VOW3.DE (VOW3.DE) | 66.6 | - | - | ja | 32.46 |
 | VNA.DE (VNA.DE) | 16.205 | - | - | ja | 24.75 |
+| Kupfer (HG=F) | 6.519 | - | - | ja | 46.82 |
+| Weizen (ZW=F) | 683.25 | - | - | ja | 43.79 |
+| Mais (ZC=F) | 500.25 | - | - | ja | 44.44 |
+| Zucker (SB=F) | 20.15 | - | - | ja | 67.4 |
 
 ---
 

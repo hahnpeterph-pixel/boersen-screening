@@ -2,91 +2,184 @@
  "date": "2026-10-09",
  "ranks": {
   "turnaround": [
-   "NOW",
-   "T",
-   "SAP.DE",
+   "MSTR",
    "MDT",
-   "DHR",
-   "SPOT",
-   "TSLA",
+   "QIA.DE",
+   "ACN",
    "SHL.DE",
-   "NVDA",
+   "NOW",
+   "CEG",
+   "CVX",
+   "MELI",
    "EQNR",
-   "AMZN",
-   "ABNB",
-   "BP",
+   "SPOT",
+   "BLK",
    "XOM",
-   "FAST"
+   "ABNB",
+   "DTE.DE"
   ],
   "momentum": [
-   "FTNT",
+   "SNOW",
    "DDOG",
    "PANW",
-   "VLO",
-   "MRNA",
    "MPC",
+   "VLO",
    "PSX",
+   "MRNA",
+   "MRK",
    "DB1.DE",
-   "ILMN",
    "TMO",
-   "BNR.DE",
-   "PM",
-   "SY1.DE",
    "V",
-   "TRV"
+   "PM",
+   "KO",
+   "SY1.DE",
+   "BNR.DE"
   ],
   "value": [
    "SKHY",
    "SNDK",
    "MU",
    "NEM",
-   "ABNB",
    "REGN",
-   "BLK",
    "PBR",
+   "BLK",
+   "ABNB",
    "META",
    "DXCM",
-   "MTX.DE",
-   "V",
-   "MNST",
    "RIO",
-   "MDT"
+   "MNST",
+   "MDT",
+   "V",
+   "BHP"
   ]
  },
  "changes": {
   "turnaround": {
    "entries": [
     {
-     "ticker": "FAST",
+     "ticker": "MSTR",
+     "rank": 1
+    },
+    {
+     "ticker": "QIA.DE",
+     "rank": 3
+    },
+    {
+     "ticker": "ACN",
+     "rank": 4
+    },
+    {
+     "ticker": "CEG",
+     "rank": 7
+    },
+    {
+     "ticker": "CVX",
+     "rank": 8
+    },
+    {
+     "ticker": "MELI",
+     "rank": 9
+    },
+    {
+     "ticker": "BLK",
+     "rank": 12
+    },
+    {
+     "ticker": "DTE.DE",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "BEI.DE",
-     "old_rank": 10
+     "ticker": "T",
+     "old_rank": 2
+    },
+    {
+     "ticker": "SAP.DE",
+     "old_rank": 3
+    },
+    {
+     "ticker": "DHR",
+     "old_rank": 5
+    },
+    {
+     "ticker": "TSLA",
+     "old_rank": 7
+    },
+    {
+     "ticker": "NVDA",
+     "old_rank": 9
+    },
+    {
+     "ticker": "AMZN",
+     "old_rank": 11
+    },
+    {
+     "ticker": "BP",
+     "old_rank": 13
+    },
+    {
+     "ticker": "FAST",
+     "old_rank": 15
     }
    ],
-   "moves": []
+   "moves": [
+    {
+     "ticker": "NOW",
+     "rank": 6,
+     "delta": -5
+    },
+    {
+     "ticker": "SPOT",
+     "rank": 11,
+     "delta": -5
+    }
+   ]
   },
   "momentum": {
    "entries": [
     {
-     "ticker": "TMO",
-     "rank": 10
+     "ticker": "SNOW",
+     "rank": 1
+    },
+    {
+     "ticker": "MRK",
+     "rank": 8
+    },
+    {
+     "ticker": "KO",
+     "rank": 13
     }
    ],
    "exits": [
     {
-     "ticker": "MRK.DE",
-     "old_rank": 8
+     "ticker": "FTNT",
+     "old_rank": 1
+    },
+    {
+     "ticker": "ILMN",
+     "old_rank": 9
+    },
+    {
+     "ticker": "TRV",
+     "old_rank": 15
     }
    ],
    "moves": []
   },
   "value": {
-   "entries": [],
-   "exits": [],
+   "entries": [
+    {
+     "ticker": "BHP",
+     "rank": 15
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "MTX.DE",
+     "old_rank": 11
+    }
+   ],
    "moves": []
   },
   "analyst_flips": []

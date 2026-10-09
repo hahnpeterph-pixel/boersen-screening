@@ -163,7 +163,9 @@ WEITERE = ["GC=F", "SI=F", "PL=F", "PA=F", "HG=F", "CL=F", "BZ=F", "NG=F",
            "EURGBP=X", "EURCHF=X", "EURDKK=X", "EURNOK=X", "EURJPY=X", "EURHKD=X", "EURTWD=X", "EURAUD=X", "EURINR=X", "EURBRL=X", "EURKRW=X",
            # Rendite 10-jaehrige US-Staatsanleihe (Peter 25.09.2026): Zeile
            # "Abhaengigkeit" der Kaufvorlage (Zinsen). Nur Kursreihe, kein Screening.
-           "^TNX"]
+           "^TNX",
+           # 09.10.2026 DAX (Peter: DAX-Turbo im Depot) - Kursreihe mit Tagestief fuer Depot-Tabelle und KO-Pruefung, kein Screening
+           "^GDAXI"]
 
 UNIVERSUM = list(dict.fromkeys(US + DAX + WEITERE))
 

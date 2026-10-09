@@ -25,6 +25,7 @@ import os
 import time
 import shutil
 import json
+import statistics
 from datetime import date, datetime, timedelta, timezone
 from io import StringIO
 
@@ -907,6 +908,26 @@ def _archiv(ticker: str) -> "pd.DataFrame | None":
     return _ARCHIV.get(ticker)
 
 
+def _volumen_faktor(df: "pd.DataFrame | None", h: "pd.DataFrame | None") -> float:
+    """09.10.2026: Verhaeltnis echtes Tagesvolumen / Summe der Stundenvolumen an Tagen, fuer die beides vorliegt
+    (Median der letzten bis zu 10 Tage, mindestens 3). Ohne brauchbare Vergleichstage 1.0 (unveraendert)."""
+    try:
+        if df is None or h is None or "Volume" not in df.columns or "Volume" not in h.columns:
+            return 1.0
+        sh = h.groupby(h.index.date)["Volume"].agg(["sum", "count"])
+        sh = sh[(sh["count"] >= MIN_STUNDEN_JE_TAG) & (sh["sum"] > 0)]
+        dv = df["Volume"].copy(); dv.index = dv.index.date
+        dv = dv[~dv.index.duplicated(keep="first")]
+        gem = [d for d in sh.index if d in dv.index and dv[d] == dv[d] and dv[d] > 0]
+        r = [float(dv[d]) / float(sh.loc[d, "sum"]) for d in gem[-10:]]
+        if len(r) < 3:
+            return 1.0
+        f = float(statistics.median(r))
+        return f if 0.8 <= f <= 6.0 else 1.0
+    except Exception:  # noqa: BLE001
+        return 1.0
+
+
 def _loecher_fuellen(ticker: str, holen: str, df: "pd.DataFrame",
                      auto_adjust: bool) -> tuple["pd.DataFrame", dict]:
     """Fehlende Handelstage erkennen und fuellen. Liefert die ergaenzte
@@ -951,17 +972,23 @@ def _loecher_fuellen(ticker: str, holen: str, df: "pd.DataFrame",
     if rest and _FUELL_ANFRAGEN < MAX_FUELL_ANFRAGEN:
         _FUELL_ANFRAGEN += 1
         try:
-            roh = yf.Ticker(holen).history(start=min(rest), end=max(rest) + timedelta(days=1),
+            # 09.10.2026 (Peter, Fund Infineon 08.10.: Stunden 1,36 Mio. gegen 2,70 Mio. laut stock3): Stundenkerzen enthalten
+            # die Schlussauktion und Teile des Handels nicht - die Summe lag bei Heimatwerten bei 35-55 % des Tagesvolumens.
+            # Deshalb 20 Kalendertage frueher abrufen und das Volumen mit dem wertspezifischen Verhaeltnis Tag/Stundensumme
+            # der Vortage (Median, mindestens 3 Tage) hochrechnen. Kurse bleiben unveraendert; der naechste Lauf mit echter
+            # Tageskerze ersetzt die Fuellkerze wie bisher.
+            roh = yf.Ticker(holen).history(start=min(rest) - timedelta(days=20), end=max(rest) + timedelta(days=1),
                                            interval="1h", auto_adjust=auto_adjust)
             h = _skalieren(_aufbereiten_stunden(roh), ticker)
         except Exception as e:
             print(f"  {holen}: Stundenabruf zum Fuellen fehlgeschlagen ({e})")
             h = None
+        vfak = _volumen_faktor(df, h)
         if h is not None:
             for d in rest:
                 tag = h[h.index.date == d]
                 if len(tag) >= MIN_STUNDEN_JE_TAG:
-                    vol = float(tag["Volume"].sum()) if "Volume" in tag.columns else float("nan")
+                    vol = float(tag["Volume"].sum()) * vfak if "Volume" in tag.columns else float("nan")
                     neue.append(_zeile(d, float(tag["Open"].iloc[0]), float(tag["High"].max()),
                                        float(tag["Low"].min()), float(tag["Close"].iloc[-1]), vol))
                     gefuellt[str(d)] = "stunden"

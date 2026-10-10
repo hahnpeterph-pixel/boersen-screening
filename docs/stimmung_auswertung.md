@@ -1,54 +1,54 @@
 # Stimmung und Tiefs – Auswertung
 
-Stand: 03.10.2026 20:52 UTC. Grundlage: puffer_je_tief.csv.gz, nur Tiefs mit mindestens 63 beobachteten Tagen. Haelt = KO faellt in 63 Tagen nicht (benoetigt_atr <= Puffer), wie in heute.py.
+Stand: 10.10.2026 06:04 UTC. Grundlage: puffer_je_tief.csv.gz, nur Tiefs mit mindestens 63 beobachteten Tagen. Haelt = KO faellt in 63 Tagen nicht (benoetigt_atr <= Puffer), wie in heute.py.
 
 Lesart: Zuerst je Wert verglichen (unruhig gegen ruhig bzw. Angst gegen Gier), nur Werte mit je mindestens 10 Faellen in beiden Lagen. Die Gesamtzeile ist nur zur Orientierung.
 
 ## US-Werte gegen VIX
 
-91068 Tiefs, 234 Werte, Zeitraum 01/2011 bis 07/2026.
+90812 Tiefs, 233 Werte, Zeitraum 01/2011 bis 08/2026.
 
 | Lage | Faelle | haelt 1,5 ATR | haelt 2 ATR | haelt 3 ATR | Median benoetigt |
 |---|---|---|---|---|---|
-| ruhig | 36701 | 41 % | 47 % | 58 % | 2,24 ATR |
-| normal | 32837 | 45 % | 51 % | 63 % | 1,89 ATR |
-| unruhig | 21530 | 54 % | 61 % | 73 % | 1,24 ATR |
+| ruhig | 36618 | 41 % | 47 % | 58 % | 2,23 ATR |
+| normal | 32769 | 45 % | 51 % | 63 % | 1,89 ATR |
+| unruhig | 21425 | 54 % | 61 % | 73 % | 1,23 ATR |
 
-**Je Wert (unruhig gegen ruhig), 233 Werte vergleichbar:**
+**Je Wert (unruhig gegen ruhig), 232 Werte vergleichbar:**
 
 | Puffer | Median Unterschied haelt | Werte schlechter | Werte besser |
 |---|---|---|---|
-| 1,00 ATR | +11,1 Pp | 19 | 209 |
-| 1,50 ATR | +12,5 Pp | 22 | 210 |
-| 2,00 ATR | +13,6 Pp | 15 | 214 |
-| 2,50 ATR | +13,5 Pp | 19 | 211 |
-| 3,00 ATR | +14,3 Pp | 12 | 218 |
-| 4,00 ATR | +14,7 Pp | 12 | 218 |
-| 5,00 ATR | +13,2 Pp | 12 | 217 |
-| 7,00 ATR | +10,2 Pp | 11 | 218 |
-| 10,00 ATR | +5,9 Pp | 7 | 209 |
+| 1,00 ATR | +11,1 Pp | 19 | 208 |
+| 1,50 ATR | +12,4 Pp | 22 | 209 |
+| 2,00 ATR | +13,3 Pp | 15 | 213 |
+| 2,50 ATR | +13,5 Pp | 19 | 209 |
+| 3,00 ATR | +14,2 Pp | 12 | 218 |
+| 4,00 ATR | +14,8 Pp | 12 | 217 |
+| 5,00 ATR | +13,2 Pp | 11 | 216 |
+| 7,00 ATR | +10,3 Pp | 11 | 217 |
+| 10,00 ATR | +5,9 Pp | 7 | 207 |
 
-Benoetigter Puffer (unruhig minus ruhig), Median ueber die Werte: -1,00 ATR.
+Benoetigter Puffer (unruhig minus ruhig), Median ueber die Werte: -0,99 ATR.
 
 Staerkste Unterschiede bei 2 ATR (haelt ruhig → unruhig):
 
-- APP: 62 % (45) → 34 % (47)
-- LMT: 59 % (169) → 47 % (106)
-- SPOT: 52 % (71) → 42 % (79)
-- ADBE: 52 % (181) → 42 % (85)
-- NOW: 60 % (171) → 52 % (91)
+- APP: 60 % (47) → 34 % (47)
+- LMT: 59 % (170) → 47 % (106)
+- SPOT: 53 % (72) → 42 % (79)
+- ADBE: 53 % (183) → 42 % (85)
+- NOW: 60 % (172) → 52 % (91)
 - GE: 33 % (149) → 66 % (107)
-- UPS: 31 % (151) → 65 % (113)
+- UPS: 31 % (152) → 65 % (113)
 - GFS: 11 % (36) → 52 % (33)
 
 ## Deutsche Werte gegen gemessene DAX-Schwankung (kein VDAX-NEW verfuegbar)
 
-14736 Tiefs, 39 Werte, Zeitraum 01/2011 bis 07/2026.
+14755 Tiefs, 39 Werte, Zeitraum 01/2011 bis 07/2026.
 
 | Lage | Faelle | haelt 1,5 ATR | haelt 2 ATR | haelt 3 ATR | Median benoetigt |
 |---|---|---|---|---|---|
-| ruhig | 4918 | 39 % | 44 % | 56 % | 2,47 ATR |
-| normal | 5565 | 41 % | 47 % | 58 % | 2,26 ATR |
+| ruhig | 4919 | 39 % | 44 % | 56 % | 2,47 ATR |
+| normal | 5583 | 41 % | 47 % | 58 % | 2,25 ATR |
 | unruhig | 4253 | 50 % | 58 % | 69 % | 1,47 ATR |
 
 **Je Wert (unruhig gegen ruhig), 39 Werte vergleichbar:**
@@ -80,39 +80,39 @@ Staerkste Unterschiede bei 2 ATR (haelt ruhig → unruhig):
 
 ## US-Werte gegen Fear & Greed
 
-90629 Tiefs, 234 Werte, Zeitraum 01/2011 bis 07/2026.
+90376 Tiefs, 233 Werte, Zeitraum 01/2011 bis 08/2026.
 
 | Lage | Faelle | haelt 1,5 ATR | haelt 2 ATR | haelt 3 ATR | Median benoetigt |
 |---|---|---|---|---|---|
-| Angst | 40388 | 49 % | 55 % | 66 % | 1,60 ATR |
-| neutral | 13244 | 43 % | 50 % | 61 % | 2,03 ATR |
-| Gier | 36997 | 43 % | 49 % | 61 % | 2,06 ATR |
+| Angst | 40326 | 49 % | 55 % | 66 % | 1,60 ATR |
+| neutral | 13216 | 43 % | 50 % | 61 % | 2,03 ATR |
+| Gier | 36834 | 43 % | 49 % | 61 % | 2,06 ATR |
 
-**Je Wert (Angst gegen Gier), 233 Werte vergleichbar:**
+**Je Wert (Angst gegen Gier), 232 Werte vergleichbar:**
 
 | Puffer | Median Unterschied haelt | Werte schlechter | Werte besser |
 |---|---|---|---|
-| 1,00 ATR | +5,1 Pp | 41 | 183 |
-| 1,50 ATR | +5,8 Pp | 47 | 180 |
-| 2,00 ATR | +5,8 Pp | 42 | 183 |
-| 2,50 ATR | +5,7 Pp | 47 | 176 |
-| 3,00 ATR | +5,5 Pp | 45 | 175 |
-| 4,00 ATR | +4,3 Pp | 50 | 176 |
-| 5,00 ATR | +3,3 Pp | 55 | 165 |
-| 7,00 ATR | +2,0 Pp | 71 | 146 |
-| 10,00 ATR | +1,2 Pp | 68 | 132 |
+| 1,00 ATR | +5,0 Pp | 40 | 182 |
+| 1,50 ATR | +5,7 Pp | 46 | 179 |
+| 2,00 ATR | +5,8 Pp | 40 | 184 |
+| 2,50 ATR | +5,7 Pp | 42 | 175 |
+| 3,00 ATR | +5,6 Pp | 46 | 175 |
+| 4,00 ATR | +4,4 Pp | 50 | 175 |
+| 5,00 ATR | +3,3 Pp | 54 | 166 |
+| 7,00 ATR | +2,0 Pp | 70 | 148 |
+| 10,00 ATR | +1,2 Pp | 68 | 131 |
 
-Benoetigter Puffer (Angst minus Gier), Median ueber die Werte: -0,46 ATR.
+Benoetigter Puffer (Angst minus Gier), Median ueber die Werte: -0,45 ATR.
 
 Staerkste Unterschiede bei 2 ATR (haelt Gier → Angst):
 
-- ARM: 70 % (20) → 42 % (33)
-- APP: 70 % (57) → 43 % (76)
-- CRWD: 69 % (68) → 50 % (68)
-- CEG: 67 % (45) → 49 % (55)
-- CMCSA: 57 % (167) → 46 % (184)
+- ARM: 70 % (20) → 41 % (34)
+- APP: 70 % (57) → 42 % (78)
+- CRWD: 69 % (68) → 51 % (69)
+- CEG: 67 % (45) → 50 % (56)
+- CMCSA: 57 % (167) → 46 % (185)
 - PSX: 40 % (164) → 62 % (152)
-- UPS: 34 % (160) → 58 % (189)
-- GFS: 23 % (44) → 52 % (54)
+- UPS: 34 % (160) → 58 % (190)
+- GFS: 23 % (44) → 51 % (55)
 
 Je Wert, Tief-Position (1, 2, 3+) und Lage: docs/stimmung_halten.csv (fuer die Kaufvorlage: "Bei heutiger Lage hielt Tief N dieses Werts x %").

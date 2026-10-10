@@ -1,8 +1,8 @@
 # Boersen-Screening - 2026-10-10
 
-_Stand: Schlusskurse vom 2026-10-09, aber 56 Werte haengen zurueck - siehe Standwarnung. Erstellt 2026-10-10T01:45:45+00:00 UTC. 271 Werte ausgewertet._
+_Stand: Schlusskurse vom 2026-10-09, aber 57 Werte haengen zurueck - siehe Standwarnung. Erstellt 2026-10-10T06:05:46+00:00 UTC. 271 Werte ausgewertet._
 
-> **Standwarnung: 56 von 271 Werten haengen zurueck.** Neuester Handelstag im Bericht ist 2026-10-09.
+> **Standwarnung: 57 von 271 Werten haengen zurueck.** Neuester Handelstag im Bericht ist 2026-10-09.
 >
 > Ursache ist in aller Regel Yahoo: die vorlaeufige Tageskerze einer Boerse wird ueber Nacht durch die offizielle Abrechnung ersetzt, und solange die fehlt, faellt der Tag weg. Betroffen sind meist die europaeischen Notierungen. Fuer diese Werte gelten Kurs, ATR, RSI und Tiefs unten NICHT fuer den neuesten Handelstag.
 >
@@ -46,6 +46,7 @@ _Stand: Schlusskurse vom 2026-10-09, aber 56 Werte haengen zurueck - siehe Stand
 > | NVO | 2026-10-08 |
 > | P911.DE | 2026-10-08 |
 > | PAH3.DE | 2026-10-08 |
+> | PBR | 2026-10-08 |
 > | QIA.DE | 2026-10-08 |
 > | RHM.DE | 2026-10-08 |
 > | RIO | 2026-10-08 |

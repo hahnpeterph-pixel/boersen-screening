@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-10-10 01:45 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1206._
+_Erstellt 2026-10-10 06:05 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1206._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -38,11 +38,10 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | MFG (MFG) | 8214.0 | - | - | ja | 43.05 |
 | BMO (BMO) | 162.59 | ja | ja | - | 34.83 |
 | DTE.DE (DTE.DE) | 24.68 | - | - | ja | 29.35 |
-| Weizen (ZW=F) | 670.75 | - | - | ja | 39.86 |
-| Mais (ZC=F) | 480.5 | - | ja | ja | 35.01 |
+| Weizen (ZW=F) | 671.0 | - | - | ja | 39.94 |
+| Mais (ZC=F) | 479.75 | - | ja | ja | 34.73 |
 | EUR/GBP (EURGBP=X) | 0.8461 | - | - | ja | 25.02 |
 | EUR/CHF (EURCHF=X) | 0.9295 | - | - | ja | 36.03 |
-| EUR/AUD (EURAUD=X) | 1.6029 | - | - | ja | 35.84 |
 | EUR/BRL (EURBRL=X) | 5.5828 | - | ja | ja | 23.74 |
 
 ---

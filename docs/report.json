@@ -1,5 +1,5 @@
 {
- "date": "2026-10-09",
+ "date": "2026-10-10",
  "ranks": {
   "turnaround": [
    "MSTR",
@@ -27,8 +27,8 @@
    "PSX",
    "MRNA",
    "MRK",
-   "DB1.DE",
    "TMO",
+   "DB1.DE",
    "V",
    "PM",
    "KO",
@@ -55,131 +55,18 @@
  },
  "changes": {
   "turnaround": {
-   "entries": [
-    {
-     "ticker": "MSTR",
-     "rank": 1
-    },
-    {
-     "ticker": "QIA.DE",
-     "rank": 3
-    },
-    {
-     "ticker": "ACN",
-     "rank": 4
-    },
-    {
-     "ticker": "CEG",
-     "rank": 7
-    },
-    {
-     "ticker": "CVX",
-     "rank": 8
-    },
-    {
-     "ticker": "MELI",
-     "rank": 9
-    },
-    {
-     "ticker": "BLK",
-     "rank": 12
-    },
-    {
-     "ticker": "DTE.DE",
-     "rank": 15
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "T",
-     "old_rank": 2
-    },
-    {
-     "ticker": "SAP.DE",
-     "old_rank": 3
-    },
-    {
-     "ticker": "DHR",
-     "old_rank": 5
-    },
-    {
-     "ticker": "TSLA",
-     "old_rank": 7
-    },
-    {
-     "ticker": "NVDA",
-     "old_rank": 9
-    },
-    {
-     "ticker": "AMZN",
-     "old_rank": 11
-    },
-    {
-     "ticker": "BP",
-     "old_rank": 13
-    },
-    {
-     "ticker": "FAST",
-     "old_rank": 15
-    }
-   ],
-   "moves": [
-    {
-     "ticker": "NOW",
-     "rank": 6,
-     "delta": -5
-    },
-    {
-     "ticker": "SPOT",
-     "rank": 11,
-     "delta": -5
-    }
-   ]
+   "entries": [],
+   "exits": [],
+   "moves": []
   },
   "momentum": {
-   "entries": [
-    {
-     "ticker": "SNOW",
-     "rank": 1
-    },
-    {
-     "ticker": "MRK",
-     "rank": 8
-    },
-    {
-     "ticker": "KO",
-     "rank": 13
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "FTNT",
-     "old_rank": 1
-    },
-    {
-     "ticker": "ILMN",
-     "old_rank": 9
-    },
-    {
-     "ticker": "TRV",
-     "old_rank": 15
-    }
-   ],
+   "entries": [],
+   "exits": [],
    "moves": []
   },
   "value": {
-   "entries": [
-    {
-     "ticker": "BHP",
-     "rank": 15
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "MTX.DE",
-     "old_rank": 11
-    }
-   ],
+   "entries": [],
+   "exits": [],
    "moves": []
   },
   "analyst_flips": []

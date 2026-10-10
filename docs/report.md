@@ -1,8 +1,8 @@
-# Boersen-Screening - 2026-10-09
+# Boersen-Screening - 2026-10-10
 
-_Stand: Schlusskurse vom 2026-10-09, aber 61 Werte haengen zurueck - siehe Standwarnung. Erstellt 2026-10-09T23:10:15+00:00 UTC. 271 Werte ausgewertet._
+_Stand: Schlusskurse vom 2026-10-09, aber 56 Werte haengen zurueck - siehe Standwarnung. Erstellt 2026-10-10T01:45:45+00:00 UTC. 271 Werte ausgewertet._
 
-> **Standwarnung: 61 von 271 Werten haengen zurueck.** Neuester Handelstag im Bericht ist 2026-10-09.
+> **Standwarnung: 56 von 271 Werten haengen zurueck.** Neuester Handelstag im Bericht ist 2026-10-09.
 >
 > Ursache ist in aller Regel Yahoo: die vorlaeufige Tageskerze einer Boerse wird ueber Nacht durch die offizielle Abrechnung ersetzt, und solange die fehlt, faellt der Tag weg. Betroffen sind meist die europaeischen Notierungen. Fuer diese Werte gelten Kurs, ATR, RSI und Tiefs unten NICHT fuer den neuesten Handelstag.
 >
@@ -33,12 +33,10 @@ _Stand: Schlusskurse vom 2026-10-09, aber 61 Werte haengen zurueck - siehe Stand
 > | EQNR | 2026-10-08 |
 > | FRE.DE | 2026-10-08 |
 > | GSK | 2026-10-08 |
-> | HDB | 2026-10-08 |
 > | HEI.DE | 2026-10-08 |
 > | HEN3.DE | 2026-10-08 |
 > | HNR1.DE | 2026-10-08 |
 > | HSBC | 2026-10-08 |
-> | IBN | 2026-10-08 |
 > | IFX.DE | 2026-10-08 |
 > | ING | 2026-10-08 |
 > | MBG.DE | 2026-10-08 |
@@ -46,14 +44,12 @@ _Stand: Schlusskurse vom 2026-10-09, aber 61 Werte haengen zurueck - siehe Stand
 > | MTX.DE | 2026-10-08 |
 > | MUV2.DE | 2026-10-08 |
 > | NVO | 2026-10-08 |
-> | NVS | 2026-10-08 |
 > | P911.DE | 2026-10-08 |
 > | PAH3.DE | 2026-10-08 |
 > | QIA.DE | 2026-10-08 |
 > | RHM.DE | 2026-10-08 |
 > | RIO | 2026-10-08 |
 > | RWE.DE | 2026-10-08 |
-> | SAN | 2026-10-08 |
 > | SAP.DE | 2026-10-08 |
 > | SHEL | 2026-10-08 |
 > | SHL.DE | 2026-10-08 |
@@ -64,7 +60,6 @@ _Stand: Schlusskurse vom 2026-10-09, aber 61 Werte haengen zurueck - siehe Stand
 > | SY1.DE | 2026-10-08 |
 > | TSM | 2026-10-08 |
 > | TTE | 2026-10-08 |
-> | UBS | 2026-10-08 |
 > | UL | 2026-10-08 |
 > | VNA.DE | 2026-10-08 |
 > | VOW3.DE | 2026-10-08 |
@@ -91,7 +86,7 @@ _Ueber alle 271 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 | 4 | NVDA | - | NVIDIA Corporation | NASDAQ/DOW | 229.28 | -4% | 100% (21 Banken, ≤120T) | 315.00 (37% ueber Kurs) | 53 | 59 | 30 | 2026-10-01 Cantor Fitzgerald: Rating bestaetigt: Overweight |
 | 5 | TTWO | - | Take-Two Interactive Software, | NASDAQ | 213.44 | -19% | 100% (9 Banken, ≤120T) | 290.00 (36% ueber Kurs) | 53 | 45 | 66 | keine in 30T |
 | 6 | CVS | US1266501006 | CVS Health Corporation | SP100 | 86.16 | -22% | 100% (10 Banken, ≤120T) | 115.00 (34% ueber Kurs) | 39 | 43 | 41 | keine in 30T |
-| 7 | IBN | - | ICICI Bank Limited | Watchlist | 1349.00 | -8% | 100% (4 Banken, ≤120T) | 1773.31 (32% ueber Kurs) | 48 | 48 | 61 | keine in 30T |
+| 7 | IBN | - | ICICI Bank Limited | Watchlist | 1355.00 | -8% | 100% (4 Banken, ≤120T) | 1773.31 (31% ueber Kurs) | 50 | 49 | 61 | keine in 30T |
 | 8 | BTI | - | British American Tobacco Indus | Watchlist | 41.61 | -26% | 100% (7 Banken, ≤120T) | 54.02 (30% ueber Kurs) | 52 | 46 | 69 | keine in 30T |
 | 9 | GE | US3696043013 | GE Aerospace | SP100 | 308.20 | -19% | 100% (9 Banken, ≤120T) | 400.00 (30% ueber Kurs) | 39 | 43 | 57 | 2026-09-30 Wells Fargo: Rating bestaetigt: Overweight |
 | 10 | SPGI | US78409V1044 | S&P Global Inc. | Watchlist | 407.82 | -23% | 100% (11 Banken, ≤120T) | 521.00 (28% ueber Kurs) | 52 | 48 | 77 | 2026-10-07 Morgan Stanley: Rating bestaetigt: Overweight |

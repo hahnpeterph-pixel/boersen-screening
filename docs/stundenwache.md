@@ -1,8 +1,8 @@
 # Stundenwache
 
-Stand: 2026-10-09 · 272 Werte mit Stundendaten · erstellt 2026-10-09 23:17 UTC
+Stand: 2026-10-09 · 272 Werte mit Stundendaten · erstellt 2026-10-10 01:48 UTC
 
-> **Sitzung noch nicht abgeschlossen.** 5 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 5, 6, 7, 8, 9). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
+> **Sitzung noch nicht abgeschlossen.** 3 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 5, 6, 7, 8, 9). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
 
 Marken sind das juengste Swing-Tief und das juengste Swing-Hoch aus `tiefs_regel.py`, also dieselben wie im Tagesbericht. Geprueft wird nur, was der letzte Handelstag auf Stundenbasis damit gemacht hat.
 
@@ -21,41 +21,38 @@ Keine.
 
 Keine.
 
-## Tief angetestet (7)
+## Tief angetestet (4)
 
 Docht bis unter die Marke, kein Stundenschluss darunter.
 
 | Wert | Marke | Schluss | Abstand (ATR) | Stunden dahinter |
 |---|---|---|---|---|
 | NVDA | 229.11 | 229.34 | 0.044 | 0 |
-| DE | 619.995 | 620.9 | 0.044 | 0 |
-| AMD | 606.01 | 608.09 | 0.094 | 0 |
-| INTC | 104.05 | 104.7 | 0.118 | 0 |
 | CHTR | 102.37 | 103.37 | 0.19 | 0 |
-| CMCSA | 20.485 | 20.655 | 0.301 | 0 |
+| ROST | 220.1 | 222.41 | 0.494 | 0 |
 | KHC | 21.9 | 22.27 | 0.69 | 0 |
 
 ## Swing-Hoch ueberwunden (89)
 
 | Wert | Hoch | Schluss | Abstand (ATR) | Stunden darueber |
 |---|---|---|---|---|
-| SHOP | 134.74 | 170.87 | 5.098 | 7 |
+| SHOP | 134.74 | 170.87 | 5.097 | 7 |
 | PBR | 54.61 | 63.0 | 4.401 | 7 |
 | MPC | 398.33 | 454.91 | 3.377 | 7 |
 | ZS | 203.44 | 233.89 | 3.171 | 7 |
-| SNPS | 445.92 | 509.95 | 3.127 | 7 |
+| SNPS | 445.92 | 509.95 | 3.122 | 7 |
 | AMT | 168.3 | 182.23 | 3.029 | 7 |
 | WMT | 105.14 | 111.36 | 2.701 | 7 |
 | MELI | 1739.88 | 1889.1801 | 2.613 | 7 |
 | CSCO | 111.5 | 118.39 | 2.543 | 7 |
 | FTNT | 181.37 | 194.76 | 2.461 | 7 |
-| PLTR | 194.78 | 209.065 | 2.326 | 7 |
+| PLTR | 194.78 | 209.065 | 2.318 | 7 |
 | VLO | 395.85 | 433.67 | 2.176 | 7 |
 | PSX | 259.11 | 278.115 | 2.137 | 7 |
 | AMZN | 250.88 | 262.48 | 2.061 | 7 |
-| XEL | 71.37 | 73.78 | 1.978 | 7 |
+| XEL | 71.37 | 73.78 | 1.971 | 7 |
 | ADSK | 222.0 | 235.38 | 1.84 | 7 |
-| SO | 83.98 | 86.15 | 1.767 | 7 |
+| SO | 83.98 | 86.15 | 1.766 | 7 |
 | ZAL.DE | 22.75 | 23.92 | 1.719 | 9 |
 | MA | 571.35 | 589.235 | 1.675 | 7 |
 | BRK-B | 507.24 | 515.43 | 1.623 | 7 |
@@ -66,7 +63,7 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | BP | 5.64 | 5.867 | 1.446 | 9 |
 | VRSK | 171.31 | 177.55 | 1.425 | 7 |
 | PDD | 78.94 | 81.36 | 1.379 | 7 |
-| XOM | 164.37 | 168.95 | 1.379 | 7 |
+| XOM | 164.37 | 168.95 | 1.378 | 7 |
 | FANG | 186.18 | 192.13 | 1.375 | 7 |
 | PM | 195.22 | 201.21 | 1.328 | 7 |
 | MCK | 907.07 | 938.77 | 1.29 | 7 |
@@ -81,9 +78,9 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | COST | 931.09 | 946.75 | 1.006 | 7 |
 | MUV2.DE | 516.2 | 524.6 | 0.972 | 9 |
 | TRV | 362.75 | 368.92 | 0.954 | 7 |
-| UBER | 70.01 | 71.51 | 0.951 | 7 |
+| UBER | 70.01 | 71.51 | 0.949 | 7 |
 | ADP | 266.46 | 271.791 | 0.913 | 6 |
-| SPOT | 514.6 | 529.02 | 0.865 | 7 |
+| SPOT | 514.6 | 529.02 | 0.864 | 7 |
 | PAYX | 101.33 | 103.965 | 0.849 | 7 |
 | PG | 149.2 | 151.24 | 0.814 | 7 |
 | BAS.DE | 50.93 | 51.8 | 0.796 | 9 |
@@ -95,12 +92,12 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | TEAM | 200.0 | 206.805 | 0.762 | 7 |
 | DIS | 106.58 | 108.07 | 0.751 | 7 |
 | GILD | 148.6 | 151.17 | 0.728 | 7 |
-| WFC | 82.22 | 83.56 | 0.719 | 7 |
+| WFC | 82.22 | 83.56 | 0.718 | 7 |
 | ISRG | 416.51 | 424.12 | 0.7 | 7 |
 | DDOG | 285.68 | 293.27 | 0.668 | 5 |
 | TTWO | 210.15 | 213.54 | 0.634 | 7 |
-| KO | 87.29 | 88.05 | 0.601 | 7 |
-| AEP | 121.8 | 122.84 | 0.56 | 7 |
+| KO | 87.29 | 88.05 | 0.599 | 7 |
+| AEP | 121.8 | 122.84 | 0.557 | 7 |
 | GOOGL | 347.03 | 351.65 | 0.533 | 7 |
 | MAR | 362.46 | 365.86 | 0.492 | 7 |
 | CCEP | 103.27 | 104.25 | 0.473 | 7 |
@@ -122,7 +119,7 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | PFE | 28.17 | 28.27 | 0.179 | 3 |
 | ABNB | 164.91 | 165.87 | 0.174 | 6 |
 | LOW | 185.16 | 185.96 | 0.173 | 5 |
-| AXP | 307.3 | 308.18 | 0.16 | 4 |
+| AXP | 307.3 | 308.18 | 0.159 | 4 |
 | JNJ | 260.68 | 261.5 | 0.158 | 3 |
 | NEM | 117.33 | 117.83 | 0.14 | 7 |
 | WDAY | 185.82 | 186.56 | 0.115 | 7 |

@@ -4,12 +4,12 @@ AIR.DE,XETRA,,2026-10-12:archiv,
 ALV.DE,XETRA,,2026-10-12:archiv,
 ASML,Euronext,,2026-10-12:archiv,
 AZN,LSE,,2026-10-12:stunden,
-BABA,HKEX,,2026-10-12:stunden,
+BABA,HKEX,2026-10-13,2026-10-12:stunden,2026-10-13: Wochentief 104.90 liegt UNTER allen bekannten Tagestiefs (107.80) - der fehlende Tag hatte ein tieferes Tief
 BAS.DE,XETRA,,2026-10-12:archiv,
 BAYN.DE,XETRA,,2026-10-12:archiv,
 BBVA,BME,,2026-10-12:stunden,
 BEI.DE,XETRA,,2026-10-12:archiv,
-BHP,ASX,,2026-10-12:stunden,
+BHP,ASX,2026-10-13,,2026-10-13: Wochentief 61.10 liegt UNTER allen bekannten Tagestiefs (61.80) - der fehlende Tag hatte ein tieferes Tief
 BMW.DE,XETRA,,2026-10-12:archiv,
 BNR.DE,XETRA,,2026-10-12:archiv,
 BP,LSE,,2026-10-12:stunden,
@@ -26,17 +26,19 @@ EOAN.DE,XETRA,,2026-10-12:archiv,
 EQNR,OSL,,2026-10-12:stunden,
 FRE.DE,XETRA,,2026-08-13:archiv 2026-10-12:archiv,
 GSK,LSE,,2026-10-12:stunden,
-HDB,NSE,,2026-10-12:stunden,
+HDB,NSE,2026-10-13,2026-10-12:stunden,2026-10-13: Wochentief 705.10 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
 HEI.DE,XETRA,,2026-10-12:archiv,
 HEN3.DE,XETRA,,2026-10-12:archiv,
 HNR1.DE,XETRA,,2026-10-12:archiv,
 HSBC,LSE,,2026-10-12:stunden,
-IBN,NSE,,2026-10-12:stunden,
+IBN,NSE,2026-10-13,2026-10-12:stunden,2026-10-13: Wochentief 1329.40 liegt UNTER allen bekannten Tagestiefs (1334.50) - der fehlende Tag hatte ein tieferes Tief
 IFX.DE,XETRA,,2026-10-12:archiv,
 ING,Euronext,,2026-10-12:stunden,
 MBG.DE,XETRA,,2026-10-12:archiv,
+MFG,TSE,2026-10-13,,"2026-10-13: Wochentief 8276.00, keine Tagestiefs der Woche bekannt"
 MRK.DE,XETRA,,2026-10-12:archiv,
 MTX.DE,XETRA,,2026-10-12:archiv,
+MUFG,TSE,2026-10-13,,"2026-10-13: Wochentief 3495.00, keine Tagestiefs der Woche bekannt"
 MUV2.DE,XETRA,,2026-10-12:archiv,
 NVO,CPH,,2026-10-12:stunden,
 NVS,SIX,,2026-10-12:stunden,
@@ -51,14 +53,18 @@ SAP.DE,XETRA,,2026-10-12:archiv,
 SHEL,LSE,,2026-10-12:stunden,
 SHL.DE,XETRA,,2026-10-12:archiv,
 SIE.DE,XETRA,,2026-10-12:archiv,
-SKHY,KRX,,2026-10-12:stunden,
+SKHY,KRX,2026-10-13,2026-10-12:stunden,2026-10-13: Wochentief 1425000.00 liegt UNTER allen bekannten Tagestiefs (1605000.00) - der fehlende Tag hatte ein tieferes Tief
+SMFG,TSE,2026-10-13,,"2026-10-13: Wochentief 3287.00, keine Tagestiefs der Woche bekannt"
 SNY,Euronext,,2026-10-12:stunden,
+SONY,TSE,2026-10-13,,"2026-10-13: Wochentief 3787.00, keine Tagestiefs der Woche bekannt"
 SRT3.DE,XETRA,,2026-10-12:archiv,
 SY1.DE,XETRA,,2026-10-12:archiv,
-TSM,TWSE,,2026-10-12:stunden,
+TM,TSE,2026-10-13,,"2026-10-13: Wochentief 2916.50, keine Tagestiefs der Woche bekannt"
+TSM,TWSE,2026-10-13,2026-10-12:stunden,2026-10-13: Wochentief 2490.00 liegt UNTER allen bekannten Tagestiefs (2510.00) - der fehlende Tag hatte ein tieferes Tief
 TTE,Euronext,,2026-10-12:stunden,
 UBS,SIX,,2026-10-12:stunden,
 UL,LSE,,2026-10-12:stunden,
 VNA.DE,XETRA,,2026-10-12:archiv,
 VOW3.DE,XETRA,,2026-10-12:archiv,
 ZAL.DE,XETRA,,2026-10-12:archiv,
+^TNX,USA,,2026-10-12:stunden,

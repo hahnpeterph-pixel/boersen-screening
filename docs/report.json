@@ -2,20 +2,20 @@
  "date": "2026-10-13",
  "ranks": {
   "turnaround": [
-   "SAP.DE",
    "NOW",
-   "SONY",
-   "SHL.DE",
+   "SAP.DE",
+   "CRM",
    "MDT",
    "ABNB",
-   "QIA.DE",
    "DASH",
-   "TTE",
+   "MRK",
+   "SHL.DE",
    "CEG",
    "NEM",
    "CNQ",
    "MELI",
    "SPOT",
+   "EQNR",
    "BLK"
   ],
   "momentum": [
@@ -26,14 +26,14 @@
    "SNOW",
    "PSX",
    "VLO",
+   "SY1.DE",
+   "DB1.DE",
+   "DHL.DE",
    "MRK",
    "ABBV",
-   "DB1.DE",
    "KO",
-   "SY1.DE",
-   "V",
    "BNR.DE",
-   "DHL.DE"
+   "V"
   ],
   "value": [
    "SNDK",
@@ -47,8 +47,8 @@
    "META",
    "MTX.DE",
    "DXCM",
-   "MNST",
    "RIO",
+   "MNST",
    "BHP",
    "VRTX"
   ]
@@ -57,14 +57,30 @@
   "turnaround": {
    "entries": [
     {
-     "ticker": "SONY",
+     "ticker": "CRM",
      "rank": 3
+    },
+    {
+     "ticker": "MRK",
+     "rank": 7
+    },
+    {
+     "ticker": "EQNR",
+     "rank": 14
     }
    ],
    "exits": [
     {
-     "ticker": "CRM",
+     "ticker": "SONY",
      "old_rank": 3
+    },
+    {
+     "ticker": "QIA.DE",
+     "old_rank": 7
+    },
+    {
+     "ticker": "TTE",
+     "old_rank": 9
     }
    ],
    "moves": []
@@ -72,7 +88,13 @@
   "momentum": {
    "entries": [],
    "exits": [],
-   "moves": []
+   "moves": [
+    {
+     "ticker": "DHL.DE",
+     "rank": 10,
+     "delta": 5
+    }
+   ]
   },
   "value": {
    "entries": [],

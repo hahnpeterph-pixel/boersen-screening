@@ -1,8 +1,8 @@
 # Stundenwache
 
-Stand: 2026-10-12 · 272 Werte mit Stundendaten · erstellt 2026-10-13 03:04 UTC
+Stand: 2026-10-12 · 272 Werte mit Stundendaten · erstellt 2026-10-13 04:09 UTC
 
-> **Sitzung noch nicht abgeschlossen.** 12 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 2, 3, 4, 6, 7, 8, 9). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
+> **Sitzung noch nicht abgeschlossen.** 14 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 1, 3, 4, 5, 6, 7, 8, 9). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
 
 Marken sind das juengste Swing-Tief und das juengste Swing-Hoch aus `tiefs_regel.py`, also dieselben wie im Tagesbericht. Geprueft wird nur, was der letzte Handelstag auf Stundenbasis damit gemacht hat.
 
@@ -13,13 +13,9 @@ Lesart der Urteile:
 - **angetestet** - nur mit dem Docht beruehrt, kein Schluss dahinter
 - **unklar** - Stunden- und Tagesreihe passen nicht zusammen, siehe unten
 
-## Tief gebrochen (1)
+## Tief gebrochen (0)
 
-Schluss unter dem juengsten Swing-Tief. Die Sequenz ist gerissen.
-
-| Wert | Marke | Schluss | Abstand (ATR) | Stunden dahinter |
-|---|---|---|---|---|
-| SKHY | 1452000.0 | 1450000.0 | -0.026 | 1 |
+Keine.
 
 ## Tief zurueckerobert (0)
 
@@ -39,7 +35,7 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | HEI.DE | 141.9 | 142.9 | 0.229 | 0 |
 | MMM | 159.21 | 160.92 | 0.503 | 0 |
 | ADSK | 229.32 | 233.6 | 0.582 | 0 |
-| TXN | 277.06 | 281.97 | 0.652 | 0 |
+| TXN | 277.06 | 281.99 | 0.655 | 0 |
 | ADI | 398.97 | 406.22 | 0.676 | 0 |
 
 ## Swing-Hoch ueberwunden (103)
@@ -80,7 +76,7 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | PG | 149.2 | 153.19 | 1.586 | 7 |
 | MO | 69.6 | 71.66 | 1.577 | 7 |
 | PM | 195.22 | 201.97 | 1.57 | 7 |
-| AMZN | 250.88 | 259.44 | 1.536 | 7 |
+| AMZN | 250.88 | 259.49 | 1.545 | 7 |
 | TRV | 362.75 | 371.72 | 1.519 | 7 |
 | VRSK | 171.31 | 177.54 | 1.424 | 7 |
 | HNR1.DE | 260.8 | 267.0 | 1.4 | 9 |
@@ -94,7 +90,7 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | MUV2.DE | 516.2 | 525.5 | 1.089 | 9 |
 | ABBV | 274.94 | 281.09 | 1.057 | 7 |
 | ISRG | 416.51 | 427.94 | 1.038 | 7 |
-| CB | 339.66 | 345.05 | 1.034 | 7 |
+| CB | 339.66 | 345.0475 | 1.034 | 7 |
 | MAR | 362.46 | 369.36 | 1.003 | 7 |
 | DIS | 106.58 | 108.49 | 0.974 | 7 |
 | CTAS | 201.45 | 205.24 | 0.962 | 7 |
@@ -112,14 +108,15 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | JNJ | 260.68 | 264.025 | 0.656 | 7 |
 | WFC | 82.22 | 83.29 | 0.624 | 7 |
 | GILD | 148.6 | 150.43 | 0.542 | 7 |
+| TM | 2944.5 | 2973.0 | 0.541 | 4 |
 | EXC | 41.8 | 42.14 | 0.499 | 7 |
 | PYPL | 55.355 | 56.03 | 0.499 | 7 |
 | PFE | 28.17 | 28.42 | 0.465 | 7 |
 | HD | 287.7 | 290.59 | 0.464 | 7 |
 | IBM | 224.51 | 227.02 | 0.454 | 7 |
-| MSFT | 535.69 | 541.18 | 0.45 | 7 |
-| TM | 2944.5 | 2968.0 | 0.449 | 3 |
+| MSFT | 535.69 | 541.19 | 0.451 | 7 |
 | REGN | 753.68 | 763.08 | 0.43 | 7 |
+| SONY | 3797.0 | 3829.0 | 0.411 | 3 |
 | WDAY | 185.82 | 188.28 | 0.393 | 7 |
 | FDX | 290.16 | 292.23 | 0.393 | 7 |
 | ABT | 100.95 | 101.83 | 0.385 | 5 |
@@ -138,13 +135,12 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | SY1.DE | 92.68 | 92.88 | 0.128 | 2 |
 | MNST | 43.64 | 43.765 | 0.125 | 6 |
 | LMT | 510.87 | 511.97 | 0.121 | 7 |
-| FAST | 51.39 | 51.505 | 0.12 | 5 |
+| FAST | 51.39 | 51.5 | 0.114 | 5 |
 | BAC | 54.46 | 54.56 | 0.109 | 3 |
 | GM | 82.15 | 82.38 | 0.103 | 7 |
 | LOW | 185.16 | 185.61 | 0.102 | 7 |
 | EQNR | 419.3 | 420.3 | 0.093 | 3 |
 | MRNA | 212.22 | 213.69 | 0.092 | 6 |
-| SONY | 3797.0 | 3804.0 | 0.09 | 2 |
 | NVO | 255.9 | 256.4 | 0.085 | 8 |
 | CSX | 47.73 | 47.75 | 0.029 | 1 |
 | LULU | 94.59 | 94.65 | 0.019 | 1 |

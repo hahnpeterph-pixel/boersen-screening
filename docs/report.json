@@ -4,7 +4,7 @@
   "turnaround": [
    "SAP.DE",
    "NOW",
-   "CRM",
+   "SONY",
    "SHL.DE",
    "MDT",
    "ABNB",
@@ -57,53 +57,21 @@
   "turnaround": {
    "entries": [
     {
-     "ticker": "CRM",
+     "ticker": "SONY",
      "rank": 3
-    },
-    {
-     "ticker": "DASH",
-     "rank": 8
     }
    ],
    "exits": [
     {
-     "ticker": "SONY",
-     "old_rank": 2
-    },
-    {
-     "ticker": "TM",
-     "old_rank": 9
+     "ticker": "CRM",
+     "old_rank": 3
     }
    ],
-   "moves": [
-    {
-     "ticker": "ABNB",
-     "rank": 6,
-     "delta": 8
-    }
-   ]
+   "moves": []
   },
   "momentum": {
-   "entries": [
-    {
-     "ticker": "DELL",
-     "rank": 2
-    },
-    {
-     "ticker": "ABBV",
-     "rank": 9
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "PANW",
-     "old_rank": 3
-    },
-    {
-     "ticker": "ILMN",
-     "old_rank": 11
-    }
-   ],
+   "entries": [],
+   "exits": [],
    "moves": []
   },
   "value": {

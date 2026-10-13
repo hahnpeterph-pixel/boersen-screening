@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-10-13 03:03 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1213._
+_Erstellt 2026-10-13 04:06 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1213._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -56,7 +56,7 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | APP (APP) | 270.87 | - | ja | ja | 33.19 |
 | BAS.DE (BAS.DE) | 51.24 | - | - | ja | 49.74 |
 | IFX.DE (IFX.DE) | 57.32 | - | - | ja | 45.79 |
-| Silber (SI=F) | 60.425 | - | - | ja | 42.34 |
+| Platin (PL=F) | 1679.4 | - | - | ja | 44.69 |
 
 ---
 

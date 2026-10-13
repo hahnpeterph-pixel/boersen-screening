@@ -3,33 +3,33 @@
  "ranks": {
   "turnaround": [
    "SAP.DE",
-   "SONY",
    "NOW",
+   "CRM",
    "SHL.DE",
    "MDT",
+   "ABNB",
    "QIA.DE",
-   "CEG",
+   "DASH",
    "TTE",
-   "TM",
+   "CEG",
    "NEM",
    "CNQ",
    "MELI",
    "SPOT",
-   "ABNB",
    "BLK"
   ],
   "momentum": [
-   "SNOW",
    "DDOG",
-   "PANW",
+   "DELL",
    "MPC",
+   "MRNA",
+   "SNOW",
    "PSX",
    "VLO",
-   "MRNA",
    "MRK",
+   "ABBV",
    "DB1.DE",
    "KO",
-   "ILMN",
    "SY1.DE",
    "V",
    "BNR.DE",
@@ -42,8 +42,8 @@
    "NEM",
    "REGN",
    "PBR",
-   "BLK",
    "ABNB",
+   "BLK",
    "META",
    "MTX.DE",
    "DXCM",
@@ -57,102 +57,58 @@
   "turnaround": {
    "entries": [
     {
-     "ticker": "SAP.DE",
-     "rank": 1
+     "ticker": "CRM",
+     "rank": 3
     },
     {
-     "ticker": "SONY",
-     "rank": 2
-    },
-    {
-     "ticker": "TTE",
+     "ticker": "DASH",
      "rank": 8
-    },
-    {
-     "ticker": "TM",
-     "rank": 9
-    },
-    {
-     "ticker": "NEM",
-     "rank": 10
-    },
-    {
-     "ticker": "CNQ",
-     "rank": 11
     }
    ],
    "exits": [
     {
-     "ticker": "MSTR",
-     "old_rank": 1
+     "ticker": "SONY",
+     "old_rank": 2
     },
     {
-     "ticker": "ACN",
-     "old_rank": 4
-    },
-    {
-     "ticker": "CVX",
-     "old_rank": 8
-    },
-    {
-     "ticker": "EQNR",
-     "old_rank": 10
-    },
-    {
-     "ticker": "XOM",
-     "old_rank": 13
-    },
-    {
-     "ticker": "DTE.DE",
-     "old_rank": 15
+     "ticker": "TM",
+     "old_rank": 9
     }
    ],
-   "moves": []
+   "moves": [
+    {
+     "ticker": "ABNB",
+     "rank": 6,
+     "delta": 8
+    }
+   ]
   },
   "momentum": {
    "entries": [
     {
-     "ticker": "ILMN",
-     "rank": 11
+     "ticker": "DELL",
+     "rank": 2
     },
     {
-     "ticker": "DHL.DE",
-     "rank": 15
+     "ticker": "ABBV",
+     "rank": 9
     }
    ],
    "exits": [
     {
-     "ticker": "TMO",
-     "old_rank": 9
+     "ticker": "PANW",
+     "old_rank": 3
     },
     {
-     "ticker": "PM",
-     "old_rank": 12
+     "ticker": "ILMN",
+     "old_rank": 11
     }
    ],
    "moves": []
   },
   "value": {
-   "entries": [
-    {
-     "ticker": "MTX.DE",
-     "rank": 10
-    },
-    {
-     "ticker": "VRTX",
-     "rank": 15
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "MDT",
-     "old_rank": 13
-    },
-    {
-     "ticker": "V",
-     "old_rank": 14
-    }
-   ],
+   "entries": [],
+   "exits": [],
    "moves": []
   },
   "analyst_flips": []

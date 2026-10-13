@@ -1,8 +1,8 @@
 # Stundenwache
 
-Stand: 2026-10-12 · 272 Werte mit Stundendaten · erstellt 2026-10-13 01:20 UTC
+Stand: 2026-10-12 · 272 Werte mit Stundendaten · erstellt 2026-10-13 03:04 UTC
 
-> **Sitzung noch nicht abgeschlossen.** 10 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 1, 2, 3, 6, 7, 8, 9). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
+> **Sitzung noch nicht abgeschlossen.** 12 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 2, 3, 4, 6, 7, 8, 9). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
 
 Marken sind das juengste Swing-Tief und das juengste Swing-Hoch aus `tiefs_regel.py`, also dieselben wie im Tagesbericht. Geprueft wird nur, was der letzte Handelstag auf Stundenbasis damit gemacht hat.
 
@@ -13,20 +13,19 @@ Lesart der Urteile:
 - **angetestet** - nur mit dem Docht beruehrt, kein Schluss dahinter
 - **unklar** - Stunden- und Tagesreihe passen nicht zusammen, siehe unten
 
-## Tief gebrochen (2)
+## Tief gebrochen (1)
 
 Schluss unter dem juengsten Swing-Tief. Die Sequenz ist gerissen.
 
 | Wert | Marke | Schluss | Abstand (ATR) | Stunden dahinter |
 |---|---|---|---|---|
-| TSM | 2510.0 | 2505.0 | -0.137 | 1 |
-| SKHY | 1483000.0 | 1482000.0 | -0.013 | 1 |
+| SKHY | 1452000.0 | 1450000.0 | -0.026 | 1 |
 
 ## Tief zurueckerobert (0)
 
 Keine.
 
-## Tief angetestet (8)
+## Tief angetestet (10)
 
 Docht bis unter die Marke, kein Stundenschluss darunter.
 
@@ -35,7 +34,9 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | CPRT | 26.46 | 26.47 | 0.015 | 0 |
 | ARM | 253.34 | 255.05 | 0.099 | 0 |
 | CRWD | 261.62 | 263.02 | 0.128 | 0 |
+| IFX.DE | 56.94 | 57.32 | 0.14 | 0 |
 | STX | 750.68 | 758.12 | 0.151 | 0 |
+| HEI.DE | 141.9 | 142.9 | 0.229 | 0 |
 | MMM | 159.21 | 160.92 | 0.503 | 0 |
 | ADSK | 229.32 | 233.6 | 0.582 | 0 |
 | TXN | 277.06 | 281.97 | 0.652 | 0 |
@@ -45,7 +46,7 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 
 | Wert | Hoch | Schluss | Abstand (ATR) | Stunden darueber |
 |---|---|---|---|---|
-| SHOP | 134.74 | 179.21 | 6.42 | 7 |
+| SHOP | 134.74 | 179.21 | 6.418 | 7 |
 | PBR | 54.61 | 63.0 | 4.403 | 7 |
 | MPC | 398.33 | 459.0 | 3.681 | 7 |
 | WMT | 105.14 | 113.1 | 3.558 | 7 |
@@ -58,12 +59,12 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | XOM | 164.37 | 172.13 | 2.361 | 7 |
 | XEL | 71.37 | 74.16 | 2.299 | 7 |
 | ZAL.DE | 22.75 | 24.21 | 2.291 | 9 |
-| ZS | 203.44 | 225.94 | 2.269 | 7 |
+| ZS | 203.44 | 225.94 | 2.268 | 7 |
 | PLTR | 194.78 | 209.0073 | 2.222 | 7 |
 | FTNT | 181.37 | 192.93 | 2.138 | 7 |
 | COP | 130.97 | 137.56 | 2.124 | 7 |
 | BRK-B | 507.24 | 517.8 | 2.119 | 7 |
-| FANG | 186.18 | 195.091 | 2.024 | 7 |
+| FANG | 186.18 | 195.091 | 2.019 | 7 |
 | SHEL | 36.815 | 38.34 | 1.99 | 9 |
 | KO | 87.29 | 89.79 | 1.981 | 7 |
 | CL | 87.22 | 89.97 | 1.97 | 7 |
@@ -117,6 +118,7 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | HD | 287.7 | 290.59 | 0.464 | 7 |
 | IBM | 224.51 | 227.02 | 0.454 | 7 |
 | MSFT | 535.69 | 541.18 | 0.45 | 7 |
+| TM | 2944.5 | 2968.0 | 0.449 | 3 |
 | REGN | 753.68 | 763.08 | 0.43 | 7 |
 | WDAY | 185.82 | 188.28 | 0.393 | 7 |
 | FDX | 290.16 | 292.23 | 0.393 | 7 |
@@ -126,14 +128,12 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | MCD | 234.3 | 235.73 | 0.301 | 7 |
 | ADS.DE | 148.4 | 149.4 | 0.301 | 9 |
 | MDB | 374.79 | 381.28 | 0.262 | 7 |
-| SONY | 3797.0 | 3816.0 | 0.248 | 2 |
 | NEE | 78.16 | 78.5 | 0.242 | 6 |
 | ROP | 365.24 | 367.29 | 0.24 | 7 |
 | BIIB | 228.0 | 229.42 | 0.223 | 7 |
 | EOAN.DE | 17.22 | 17.29 | 0.221 | 9 |
 | AMGN | 415.79 | 417.57 | 0.181 | 5 |
 | SCCO | 207.63 | 208.75 | 0.169 | 7 |
-| TM | 2944.5 | 2953.0 | 0.163 | 2 |
 | DDOG | 285.68 | 287.3 | 0.135 | 7 |
 | SY1.DE | 92.68 | 92.88 | 0.128 | 2 |
 | MNST | 43.64 | 43.765 | 0.125 | 6 |
@@ -144,6 +144,7 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | LOW | 185.16 | 185.61 | 0.102 | 7 |
 | EQNR | 419.3 | 420.3 | 0.093 | 3 |
 | MRNA | 212.22 | 213.69 | 0.092 | 6 |
+| SONY | 3797.0 | 3804.0 | 0.09 | 2 |
 | NVO | 255.9 | 256.4 | 0.085 | 8 |
 | CSX | 47.73 | 47.75 | 0.029 | 1 |
 | LULU | 94.59 | 94.65 | 0.019 | 1 |

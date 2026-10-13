@@ -14,30 +14,30 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | ABT (ABT) | 442 | 430 | 97% | 0 | 1 | 11 | 12 |
 | ACN (ACN) | 526 | 508 | 97% | 0 | 2 | 20 | 18 |
 | ADBE (ADBE) | 529 | 512 | 97% | 0 | 2 | 11 | 17 |
-| ADI (ADI) | 605 | 586 | 97% | 0 | 1 | 12 | 19 |
+| ADI (ADI) | 606 | 587 | 97% | 0 | 1 | 12 | 19 |
 | ADP (ADP) | 544 | 529 | 97% | 0 | 1 | 7 | 15 |
 | ADS.DE (ADS.DE) | 492 | 486 | 99% | 0 | 2 | 12 | 6 |
 | ADSK (ADSK) | 444 | 428 | 96% | 0 | 3 | 21 | 16 |
 | AEP (AEP) | 398 | 395 | 99% | 0 | 0 | 3 | 3 |
 | AIR.DE (AIR.DE) | 544 | 529 | 97% | 0 | 3 | 19 | 15 |
-| ALV.DE (ALV.DE) | 590 | 578 | 98% | 0 | 2 | 14 | 12 |
+| ALV.DE (ALV.DE) | 591 | 579 | 98% | 0 | 2 | 14 | 12 |
 | AMAT (AMAT) | 596 | 572 | 96% | 0 | 2 | 13 | 24 |
 | AMD (AMD) | 575 | 553 | 96% | 0 | 1 | 11 | 22 |
 | AMGN (AMGN) | 427 | 411 | 96% | 0 | 1 | 12 | 16 |
 | AMT (AMT) | 430 | 425 | 99% | 0 | 1 | 8 | 5 |
-| AMZN (AMZN) | 593 | 559 | 94% | 0 | 3 | 16 | 34 |
+| AMZN (AMZN) | 594 | 560 | 94% | 0 | 3 | 16 | 34 |
 | ANET (ANET) | 359 | 338 | 94% | 0 | 2 | 13 | 21 |
-| APH (APH) | 617 | 584 | 95% | 0 | 2 | 13 | 33 |
+| APH (APH) | 618 | 585 | 95% | 0 | 2 | 13 | 33 |
 | APP (APP) | 146 | 137 | 94% | 0 | 3 | 18 | 9 |
 | ARM (ARM) | 100 | 96 | 96% | 0 | 3 | 10 | 4 |
 | ASML (ASML) | 752 | 725 | 96% | 0 | 2 | 16 | 27 |
 | AVGO (AVGO) | 545 | 510 | 94% | 0 | 2 | 10 | 35 |
 | AXON (AXON) | 408 | 389 | 95% | 0 | 2 | 23 | 19 |
-| AXP (AXP) | 616 | 592 | 96% | 0 | 3 | 20 | 24 |
+| AXP (AXP) | 617 | 593 | 96% | 0 | 3 | 20 | 24 |
 | AZN (AZN) | 454 | 448 | 99% | 0 | 1 | 14 | 6 |
 | BA (BA) | 550 | 542 | 99% | 0 | 4 | 23 | 8 |
 | BABA (BABA) | 326 | 321 | 98% | 1 | 4 | 26 | 5 |
-| BAC (BAC) | 638 | 617 | 97% | 0 | 3 | 23 | 21 |
+| BAC (BAC) | 639 | 618 | 97% | 0 | 3 | 23 | 21 |
 | BAS.DE (BAS.DE) | 545 | 543 | 100% | 0 | 3 | 15 | 2 |
 | BAYN.DE (BAYN.DE) | 497 | 493 | 99% | 0 | 3 | 15 | 4 |
 | BBVA (BBVA) | 394 | 383 | 97% | 0 | 2 | 7 | 11 |
@@ -46,19 +46,19 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | BIIB (BIIB) | 343 | 339 | 99% | 0 | 2 | 23 | 4 |
 | BKNG (BKNG) | 511 | 487 | 95% | 0 | 3 | 19 | 24 |
 | BKR (BKR) | 531 | 520 | 98% | 0 | 1 | 12 | 11 |
-| BLK (BLK) | 652 | 641 | 98% | 0 | 2 | 15 | 11 |
-| BMO (BMO) | 727 | 710 | 98% | 0 | 3 | 20 | 17 |
+| BLK (BLK) | 653 | 642 | 98% | 0 | 2 | 15 | 11 |
+| BMO (BMO) | 728 | 711 | 98% | 0 | 3 | 20 | 17 |
 | BMW.DE (BMW.DE) | 541 | 536 | 99% | 0 | 2 | 17 | 5 |
 | BMY (BMY) | 384 | 377 | 98% | 0 | 2 | 20 | 7 |
 | BNR.DE (BNR.DE) | 439 | 434 | 99% | 0 | 1 | 9 | 5 |
-| BNS (BNS) | 695 | 685 | 99% | 0 | 3 | 21 | 10 |
-| BNY (BNY) | 562 | 549 | 98% | 0 | 2 | 18 | 13 |
+| BNS (BNS) | 696 | 686 | 99% | 0 | 3 | 21 | 10 |
+| BNY (BNY) | 563 | 550 | 98% | 0 | 2 | 18 | 13 |
 | BP (BP) | 513 | 508 | 99% | 0 | 1 | 13 | 5 |
 | BRK-B (BRK-B) | 658 | 634 | 96% | 0 | 1 | 8 | 24 |
 | BTI (BTI) | 439 | 436 | 99% | 0 | 0 | 6 | 3 |
 | Brent Oel (BZ=F) | 327 | 326 | 100% | 0 | 3 | 25 | 1 |
-| C (C) | 658 | 640 | 97% | 0 | 3 | 17 | 18 |
-| CAT (CAT) | 664 | 639 | 96% | 0 | 3 | 21 | 25 |
+| C (C) | 659 | 641 | 97% | 0 | 3 | 17 | 18 |
+| CAT (CAT) | 665 | 640 | 96% | 0 | 3 | 21 | 25 |
 | CB (CB) | 537 | 524 | 98% | 0 | 1 | 6 | 13 |
 | CBK.DE (CBK.DE) | 490 | 486 | 99% | 0 | 2 | 14 | 4 |
 | Kakao (CC=F) | 520 | 506 | 97% | 1 | 6 | 22 | 14 |
@@ -72,7 +72,7 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | CM (CM) | 708 | 694 | 98% | 0 | 3 | 36 | 14 |
 | CMCSA (CMCSA) | 459 | 451 | 98% | 0 | 1 | 8 | 8 |
 | CNQ (CNQ) | 656 | 637 | 97% | 0 | 3 | 14 | 19 |
-| COF (COF) | 580 | 572 | 99% | 0 | 2 | 15 | 8 |
+| COF (COF) | 581 | 573 | 99% | 0 | 2 | 15 | 8 |
 | CON.DE (CON.DE) | 483 | 476 | 99% | 0 | 3 | 18 | 7 |
 | COP (COP) | 629 | 614 | 98% | 0 | 2 | 16 | 15 |
 | COST (COST) | 471 | 456 | 97% | 0 | 2 | 15 | 15 |
@@ -81,7 +81,7 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | CRWD (CRWD) | 220 | 211 | 96% | 0 | 2 | 10 | 9 |
 | CSCO (CSCO) | 530 | 511 | 96% | 0 | 2 | 14 | 19 |
 | CSGP (CSGP) | 377 | 371 | 98% | 0 | 1 | 8 | 6 |
-| CSX (CSX) | 535 | 517 | 97% | 0 | 1 | 16 | 18 |
+| CSX (CSX) | 536 | 518 | 97% | 0 | 1 | 16 | 18 |
 | CTAS (CTAS) | 549 | 518 | 94% | 0 | 1 | 6 | 31 |
 | CTSH (CTSH) | 522 | 509 | 98% | 0 | 2 | 21 | 13 |
 | CVS (CVS) | 438 | 426 | 97% | 0 | 2 | 16 | 12 |
@@ -90,16 +90,16 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | DB1.DE (DB1.DE) | 500 | 491 | 98% | 0 | 1 | 12 | 9 |
 | DBK.DE (DBK.DE) | 537 | 526 | 98% | 0 | 3 | 16 | 11 |
 | DDOG (DDOG) | 194 | 188 | 97% | 0 | 2 | 11 | 6 |
-| DE (DE) | 531 | 516 | 97% | 0 | 2 | 20 | 15 |
+| DE (DE) | 532 | 517 | 97% | 0 | 2 | 20 | 15 |
 | DELL (DELL) | 287 | 273 | 95% | 0 | 3 | 17 | 14 |
 | DHL.DE (DHL.DE) | 568 | 557 | 98% | 0 | 2 | 10 | 11 |
 | DHR (DHR) | 552 | 524 | 95% | 0 | 1 | 10 | 28 |
-| DIS (DIS) | 524 | 505 | 96% | 0 | 2 | 17 | 19 |
+| DIS (DIS) | 525 | 506 | 96% | 0 | 2 | 16 | 19 |
 | DTE.DE (DTE.DE) | 491 | 485 | 99% | 0 | 1 | 12 | 6 |
 | DTG.DE (DTG.DE) | 124 | 123 | 99% | 0 | 2 | 20 | 1 |
 | DUK (DUK) | 381 | 379 | 99% | 0 | 0 | 3 | 2 |
 | DXCM (DXCM) | 307 | 295 | 96% | 0 | 1 | 18 | 12 |
-| EMR (EMR) | 577 | 566 | 98% | 0 | 2 | 12 | 11 |
+| EMR (EMR) | 578 | 567 | 98% | 0 | 2 | 12 | 11 |
 | ENB (ENB) | 584 | 576 | 99% | 0 | 1 | 9 | 8 |
 | ENR.DE (ENR.DE) | 185 | 175 | 95% | 0 | 1 | 6 | 10 |
 | EOAN.DE (EOAN.DE) | 450 | 447 | 99% | 0 | 1 | 5 | 3 |
@@ -108,23 +108,23 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | ETN (ETN) | 639 | 616 | 96% | 0 | 2 | 14 | 23 |
 | EXC (EXC) | 350 | 350 | 100% | 0 | 0 | 8 | 0 |
 | FANG (FANG) | 390 | 381 | 98% | 0 | 1 | 11 | 9 |
-| FAST (FAST) | 459 | 450 | 98% | 0 | 1 | 10 | 9 |
-| FDX (FDX) | 494 | 483 | 98% | 0 | 3 | 15 | 11 |
+| FAST (FAST) | 460 | 451 | 98% | 0 | 1 | 10 | 9 |
+| FDX (FDX) | 495 | 484 | 98% | 0 | 3 | 15 | 11 |
 | FRE.DE (FRE.DE) | 463 | 458 | 99% | 0 | 1 | 6 | 5 |
 | FTNT (FTNT) | 410 | 401 | 98% | 0 | 1 | 9 | 9 |
 | Gold (GC=F) | 565 | 534 | 95% | 1 | 4 | 28 | 31 |
-| GD (GD) | 491 | 476 | 97% | 0 | 2 | 11 | 15 |
+| GD (GD) | 492 | 477 | 97% | 0 | 2 | 11 | 15 |
 | GE (GE) | 536 | 526 | 98% | 0 | 2 | 24 | 10 |
 | GEHC (GEHC) | 67 | 67 | 100% | 0 | 4 | 29 | 0 |
 | GEV (GEV) | 89 | 82 | 92% | 0 | 0 | 5 | 7 |
 | GFS (GFS) | 137 | 136 | 99% | 0 | 2 | 11 | 1 |
 | GILD (GILD) | 375 | 359 | 96% | 0 | 2 | 10 | 16 |
 | GLW (GLW) | 557 | 538 | 97% | 0 | 3 | 15 | 19 |
-| GM (GM) | 454 | 445 | 98% | 0 | 3 | 20 | 9 |
-| GOOGL (GOOGL) | 606 | 576 | 95% | 0 | 3 | 24 | 30 |
-| GS (GS) | 576 | 549 | 95% | 0 | 3 | 27 | 27 |
+| GM (GM) | 455 | 446 | 98% | 0 | 3 | 20 | 9 |
+| GOOGL (GOOGL) | 607 | 576 | 95% | 0 | 3 | 24 | 31 |
+| GS (GS) | 577 | 550 | 95% | 0 | 3 | 27 | 27 |
 | GSK (GSK) | 395 | 394 | 100% | 0 | 1 | 5 | 1 |
-| HD (HD) | 517 | 499 | 97% | 0 | 2 | 16 | 18 |
+| HD (HD) | 518 | 500 | 97% | 0 | 2 | 16 | 18 |
 | HDB (HDB) | 415 | 403 | 97% | 0 | 1 | 8 | 12 |
 | HEI.DE (HEI.DE) | 519 | 515 | 99% | 0 | 2 | 15 | 4 |
 | HEN3.DE (HEN3.DE) | 420 | 414 | 99% | 0 | 1 | 9 | 6 |
@@ -143,15 +143,15 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | INTU (INTU) | 506 | 492 | 97% | 0 | 1 | 11 | 14 |
 | ISRG (ISRG) | 455 | 433 | 95% | 0 | 3 | 25 | 22 |
 | JNJ (JNJ) | 462 | 453 | 98% | 0 | 2 | 14 | 9 |
-| JPM (JPM) | 631 | 602 | 95% | 0 | 2 | 19 | 29 |
+| JPM (JPM) | 632 | 603 | 95% | 0 | 2 | 19 | 29 |
 | KDP (KDP) | 380 | 372 | 98% | 0 | 1 | 10 | 8 |
 | KHC (KHC) | 191 | 191 | 100% | 0 | 1 | 9 | 0 |
-| KLAC (KLAC) | 564 | 536 | 95% | 0 | 2 | 10 | 28 |
+| KLAC (KLAC) | 565 | 537 | 95% | 0 | 2 | 10 | 28 |
 | KO (KO) | 446 | 436 | 98% | 0 | 1 | 12 | 10 |
 | LIN (LIN) | 614 | 596 | 97% | 0 | 1 | 9 | 18 |
 | LLY (LLY) | 481 | 459 | 95% | 0 | 1 | 6 | 22 |
 | LMT (LMT) | 443 | 433 | 98% | 0 | 1 | 8 | 10 |
-| LOW (LOW) | 453 | 442 | 98% | 0 | 2 | 13 | 11 |
+| LOW (LOW) | 454 | 443 | 98% | 0 | 2 | 13 | 11 |
 | LRCX (LRCX) | 579 | 551 | 95% | 0 | 2 | 15 | 28 |
 | LULU (LULU) | 446 | 434 | 97% | 0 | 1 | 16 | 12 |
 | MA (MA) | 610 | 584 | 96% | 0 | 1 | 8 | 26 |
@@ -161,8 +161,8 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | MCHP (MCHP) | 566 | 556 | 98% | 0 | 2 | 14 | 10 |
 | MCK (MCK) | 413 | 389 | 94% | 0 | 1 | 10 | 24 |
 | MDB (MDB) | 206 | 203 | 99% | 0 | 4 | 23 | 3 |
-| MDLZ (MDLZ) | 449 | 442 | 98% | 0 | 1 | 10 | 7 |
-| MDT (MDT) | 473 | 460 | 97% | 0 | 2 | 10 | 13 |
+| MDLZ (MDLZ) | 450 | 443 | 98% | 0 | 1 | 10 | 7 |
+| MDT (MDT) | 474 | 461 | 97% | 0 | 2 | 10 | 13 |
 | MELI (MELI) | 432 | 416 | 96% | 0 | 1 | 10 | 16 |
 | META (META) | 430 | 412 | 96% | 0 | 4 | 28 | 18 |
 | MFG (MFG) | 824 | 803 | 97% | 0 | 3 | 15 | 21 |
@@ -175,7 +175,7 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | MRNA (MRNA) | 147 | 143 | 97% | 0 | 2 | 16 | 4 |
 | MRVL (MRVL) | 564 | 544 | 96% | 0 | 2 | 12 | 20 |
 | MS (MS) | 614 | 592 | 96% | 0 | 3 | 20 | 22 |
-| MSFT (MSFT) | 611 | 581 | 95% | 0 | 2 | 11 | 30 |
+| MSFT (MSFT) | 612 | 582 | 95% | 0 | 2 | 11 | 30 |
 | MSTR (MSTR) | 412 | 402 | 98% | 0 | 2 | 17 | 10 |
 | MTX.DE (MTX.DE) | 410 | 400 | 98% | 0 | 1 | 9 | 10 |
 | MU (MU) | 659 | 631 | 96% | 0 | 4 | 17 | 28 |
@@ -184,17 +184,17 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | NEE (NEE) | 422 | 411 | 97% | 0 | 1 | 7 | 11 |
 | NEM (NEM) | 637 | 626 | 98% | 0 | 2 | 10 | 11 |
 | NET (NET) | 193 | 186 | 96% | 0 | 3 | 26 | 7 |
-| NFLX (NFLX) | 437 | 413 | 95% | 0 | 2 | 16 | 24 |
+| NFLX (NFLX) | 438 | 414 | 95% | 0 | 2 | 16 | 24 |
 | Erdgas (NG=F) | 205 | 201 | 98% | 0 | 4 | 19 | 4 |
 | NKE (NKE) | 535 | 529 | 99% | 0 | 3 | 26 | 6 |
 | NOW (NOW) | 372 | 359 | 97% | 0 | 2 | 14 | 13 |
 | NVDA (NVDA) | 621 | 580 | 93% | 0 | 2 | 14 | 41 |
 | NVO (NVO) | 584 | 569 | 97% | 0 | 1 | 12 | 15 |
 | NVS (NVS) | 528 | 518 | 98% | 0 | 1 | 9 | 10 |
-| NXPI (NXPI) | 501 | 488 | 97% | 0 | 2 | 13 | 13 |
+| NXPI (NXPI) | 502 | 489 | 97% | 0 | 2 | 13 | 13 |
 | ODFL (ODFL) | 428 | 419 | 98% | 0 | 1 | 8 | 9 |
-| ON (ON) | 545 | 533 | 98% | 0 | 2 | 20 | 12 |
-| ORCL (ORCL) | 504 | 491 | 97% | 0 | 2 | 23 | 13 |
+| ON (ON) | 546 | 534 | 98% | 0 | 2 | 20 | 12 |
+| ORCL (ORCL) | 505 | 492 | 97% | 0 | 2 | 23 | 13 |
 | ORLY (ORLY) | 407 | 383 | 94% | 0 | 0 | 5 | 24 |
 | P911.DE (P911.DE) | 79 | 79 | 100% | 0 | 1 | 5 | 0 |
 | Palladium (PA=F) | 866 | 815 | 94% | 3 | 12 | 57 | 51 |
@@ -202,27 +202,27 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | PANW (PANW) | 336 | 313 | 93% | 0 | 2 | 15 | 23 |
 | PAYX (PAYX) | 558 | 547 | 98% | 0 | 0 | 3 | 11 |
 | PBR (PBR) | 511 | 511 | 100% | 0 | 2 | 25 | 0 |
-| PCAR (PCAR) | 499 | 493 | 99% | 0 | 1 | 14 | 6 |
+| PCAR (PCAR) | 500 | 494 | 99% | 0 | 1 | 14 | 6 |
 | PDD (PDD) | 293 | 291 | 99% | 0 | 2 | 19 | 2 |
 | PEP (PEP) | 420 | 418 | 100% | 0 | 1 | 7 | 2 |
 | PFE (PFE) | 396 | 391 | 99% | 0 | 2 | 15 | 5 |
 | PG (PG) | 385 | 377 | 98% | 0 | 1 | 9 | 8 |
 | PGR (PGR) | 516 | 500 | 97% | 0 | 0 | 5 | 16 |
-| PH (PH) | 596 | 578 | 97% | 0 | 2 | 13 | 18 |
-| Platin (PL=F) | 1012 | 979 | 97% | 3 | 11 | 58 | 33 |
+| PH (PH) | 597 | 579 | 97% | 0 | 2 | 13 | 18 |
+| Platin (PL=F) | 1011 | 978 | 97% | 3 | 11 | 58 | 33 |
 | PLD (PLD) | 459 | 447 | 97% | 0 | 1 | 7 | 12 |
 | PLTR (PLTR) | 161 | 145 | 90% | 0 | 2 | 7 | 16 |
 | PM (PM) | 394 | 383 | 97% | 0 | 1 | 12 | 11 |
 | PSX (PSX) | 345 | 335 | 97% | 0 | 1 | 12 | 10 |
 | PYPL (PYPL) | 343 | 338 | 99% | 0 | 2 | 17 | 5 |
 | QCOM (QCOM) | 576 | 563 | 98% | 0 | 2 | 13 | 13 |
-| QIA.DE (QIA.DE) | 538 | 533 | 99% | 0 | 1 | 9 | 5 |
+| QIA.DE (QIA.DE) | 539 | 534 | 99% | 0 | 1 | 9 | 5 |
 | REGN (REGN) | 302 | 293 | 97% | 0 | 1 | 13 | 9 |
 | RHM.DE (RHM.DE) | 471 | 451 | 96% | 0 | 2 | 18 | 20 |
 | RIO (RIO) | 752 | 745 | 99% | 0 | 2 | 16 | 7 |
 | ROP (ROP) | 539 | 527 | 98% | 0 | 1 | 9 | 12 |
 | ROST (ROST) | 450 | 430 | 96% | 0 | 1 | 10 | 20 |
-| RTX (RTX) | 616 | 603 | 98% | 0 | 2 | 15 | 13 |
+| RTX (RTX) | 617 | 604 | 98% | 0 | 2 | 15 | 13 |
 | RWE.DE (RWE.DE) | 398 | 391 | 98% | 0 | 1 | 5 | 7 |
 | RY (RY) | 703 | 682 | 97% | 0 | 3 | 15 | 21 |
 | SAN (SAN) | 405 | 397 | 98% | 0 | 2 | 8 | 8 |
@@ -230,14 +230,14 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | Zucker (SB=F) | 98 | 96 | 98% | 0 | 4 | 20 | 2 |
 | SBUX (SBUX) | 475 | 462 | 97% | 0 | 2 | 15 | 13 |
 | SCCO (SCCO) | 809 | 789 | 98% | 0 | 3 | 14 | 20 |
-| SCHW (SCHW) | 523 | 513 | 98% | 0 | 2 | 18 | 10 |
+| SCHW (SCHW) | 524 | 514 | 98% | 0 | 2 | 18 | 10 |
 | SHEL (SHEL) | 521 | 515 | 99% | 0 | 2 | 15 | 6 |
 | SHL.DE (SHL.DE) | 180 | 179 | 99% | 0 | 1 | 8 | 1 |
-| SHOP (SHOP) | 295 | 286 | 97% | 0 | 2 | 12 | 9 |
-| SHW (SHW) | 453 | 438 | 97% | 0 | 1 | 6 | 15 |
+| SHOP (SHOP) | 296 | 287 | 97% | 0 | 2 | 12 | 9 |
+| SHW (SHW) | 454 | 439 | 97% | 0 | 1 | 6 | 15 |
 | Silber (SI=F) | 1220 | 1186 | 97% | 2 | 8 | 42 | 34 |
 | SIE.DE (SIE.DE) | 589 | 577 | 98% | 0 | 3 | 19 | 12 |
-| SKHY (SKHY) | 848 | 813 | 96% | 0 | 2 | 11 | 35 |
+| SKHY (SKHY) | 849 | 814 | 96% | 0 | 2 | 11 | 35 |
 | SMFG (SMFG) | 876 | 852 | 97% | 1 | 4 | 19 | 24 |
 | SNDK (SNDK) | 74 | 61 | 82% | 0 | 2 | 5 | 13 |
 | SNOW (SNOW) | 159 | 154 | 97% | 0 | 3 | 26 | 5 |
@@ -254,27 +254,27 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | SY1.DE (SY1.DE) | 474 | 464 | 98% | 0 | 1 | 5 | 10 |
 | SYK (SYK) | 522 | 508 | 97% | 0 | 2 | 12 | 14 |
 | T (T) | 445 | 442 | 99% | 0 | 2 | 19 | 3 |
-| TD (TD) | 711 | 696 | 98% | 0 | 3 | 20 | 15 |
+| TD (TD) | 712 | 697 | 98% | 0 | 3 | 19 | 15 |
 | TEAM (TEAM) | 213 | 207 | 97% | 0 | 2 | 11 | 6 |
 | TJX (TJX) | 462 | 443 | 96% | 0 | 1 | 6 | 19 |
 | TM (TM) | 929 | 907 | 98% | 0 | 4 | 23 | 22 |
-| TMO (TMO) | 534 | 512 | 96% | 0 | 1 | 10 | 22 |
+| TMO (TMO) | 535 | 513 | 96% | 0 | 1 | 10 | 22 |
 | TMUS (TMUS) | 412 | 407 | 99% | 0 | 1 | 8 | 5 |
 | TRV (TRV) | 557 | 539 | 97% | 0 | 1 | 9 | 18 |
 | TSLA (TSLA) | 505 | 481 | 95% | 0 | 3 | 22 | 24 |
-| TSM (TSM) | 1142 | 1077 | 94% | 0 | 2 | 10 | 65 |
+| TSM (TSM) | 1143 | 1078 | 94% | 0 | 2 | 10 | 65 |
 | TTD (TTD) | 245 | 241 | 98% | 0 | 2 | 23 | 4 |
 | TTE (TTE) | 551 | 543 | 99% | 0 | 1 | 9 | 8 |
 | TTWO (TTWO) | 394 | 378 | 96% | 0 | 1 | 9 | 16 |
-| TXN (TXN) | 560 | 539 | 96% | 0 | 1 | 8 | 21 |
+| TXN (TXN) | 561 | 540 | 96% | 0 | 1 | 8 | 21 |
 | UBER (UBER) | 191 | 183 | 96% | 0 | 2 | 19 | 8 |
 | UBS (UBS) | 599 | 590 | 98% | 0 | 3 | 14 | 9 |
 | UL (UL) | 458 | 453 | 99% | 0 | 1 | 10 | 5 |
 | UNH (UNH) | 432 | 417 | 97% | 0 | 2 | 17 | 15 |
 | UNP (UNP) | 482 | 467 | 97% | 0 | 3 | 17 | 15 |
 | UPS (UPS) | 469 | 462 | 99% | 0 | 3 | 17 | 7 |
-| USB (USB) | 571 | 559 | 98% | 0 | 2 | 11 | 12 |
-| V (V) | 580 | 551 | 95% | 0 | 2 | 10 | 29 |
+| USB (USB) | 572 | 560 | 98% | 0 | 2 | 11 | 12 |
+| V (V) | 581 | 552 | 95% | 0 | 1 | 10 | 29 |
 | VLO (VLO) | 479 | 467 | 97% | 0 | 1 | 14 | 12 |
 | VNA.DE (VNA.DE) | 335 | 334 | 100% | 0 | 1 | 12 | 1 |
 | VOW3.DE (VOW3.DE) | 480 | 479 | 100% | 0 | 3 | 21 | 1 |
@@ -284,7 +284,7 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | WDAY (WDAY) | 281 | 272 | 97% | 0 | 2 | 15 | 9 |
 | WDC (WDC) | 550 | 534 | 97% | 0 | 4 | 23 | 16 |
 | WELL (WELL) | 399 | 391 | 98% | 0 | 1 | 9 | 8 |
-| WFC (WFC) | 534 | 523 | 98% | 0 | 2 | 14 | 11 |
+| WFC (WFC) | 535 | 524 | 98% | 0 | 2 | 14 | 11 |
 | WMT (WMT) | 398 | 378 | 95% | 0 | 1 | 10 | 20 |
 | XEL (XEL) | 380 | 374 | 98% | 0 | 0 | 1 | 6 |
 | XOM (XOM) | 620 | 604 | 97% | 0 | 2 | 12 | 16 |
@@ -302,7 +302,7 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | ABNB (ABNB) | 142 | 142 | 100% | 0 | 2 | 25 | 0 |
 | ABT (ABT) | 386 | 384 | 99% | 0 | 1 | 9 | 2 |
 | ACN (ACN) | 529 | 526 | 99% | 0 | 2 | 13 | 3 |
-| ADBE (ADBE) | 429 | 421 | 98% | 0 | 2 | 15 | 8 |
+| ADBE (ADBE) | 430 | 422 | 98% | 0 | 2 | 15 | 8 |
 | ADI (ADI) | 500 | 499 | 100% | 0 | 2 | 11 | 1 |
 | ADP (ADP) | 457 | 456 | 100% | 0 | 1 | 6 | 1 |
 | ADS.DE (ADS.DE) | 451 | 446 | 99% | 0 | 1 | 10 | 5 |
@@ -325,13 +325,13 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | AXP (AXP) | 483 | 482 | 100% | 0 | 2 | 10 | 1 |
 | AZN (AZN) | 428 | 426 | 100% | 0 | 1 | 6 | 2 |
 | BA (BA) | 477 | 472 | 99% | 0 | 4 | 18 | 5 |
-| BABA (BABA) | 318 | 306 | 96% | 1 | 5 | 29 | 12 |
+| BABA (BABA) | 319 | 307 | 96% | 1 | 5 | 29 | 12 |
 | BAC (BAC) | 573 | 573 | 100% | 0 | 3 | 18 | 0 |
 | BAS.DE (BAS.DE) | 468 | 465 | 99% | 0 | 2 | 14 | 3 |
 | BAYN.DE (BAYN.DE) | 440 | 433 | 98% | 0 | 1 | 10 | 7 |
 | BBVA (BBVA) | 358 | 358 | 100% | 0 | 2 | 21 | 0 |
 | BEI.DE (BEI.DE) | 409 | 404 | 99% | 0 | 1 | 6 | 5 |
-| BHP (BHP) | 1150 | 1149 | 100% | 1 | 5 | 27 | 1 |
+| BHP (BHP) | 1151 | 1150 | 100% | 1 | 5 | 27 | 1 |
 | BIIB (BIIB) | 307 | 305 | 99% | 0 | 1 | 19 | 2 |
 | BKNG (BKNG) | 411 | 411 | 100% | 0 | 2 | 22 | 0 |
 | BKR (BKR) | 476 | 475 | 100% | 0 | 2 | 14 | 1 |
@@ -360,11 +360,11 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | WTI Oel (CL=F) | 49 | 48 | 98% | 0 | 3 | 31 | 1 |
 | CM (CM) | 564 | 563 | 100% | 0 | 3 | 19 | 1 |
 | CMCSA (CMCSA) | 373 | 370 | 99% | 0 | 1 | 7 | 3 |
-| CNQ (CNQ) | 604 | 604 | 100% | 0 | 3 | 14 | 0 |
+| CNQ (CNQ) | 605 | 605 | 100% | 0 | 3 | 14 | 0 |
 | COF (COF) | 514 | 512 | 100% | 0 | 2 | 10 | 2 |
 | CON.DE (CON.DE) | 418 | 412 | 99% | 0 | 2 | 12 | 6 |
 | COP (COP) | 573 | 573 | 100% | 0 | 2 | 10 | 0 |
-| COST (COST) | 376 | 374 | 99% | 0 | 2 | 13 | 2 |
+| COST (COST) | 376 | 375 | 100% | 0 | 2 | 14 | 1 |
 | CPRT (CPRT) | 340 | 339 | 100% | 0 | 1 | 5 | 1 |
 | CRM (CRM) | 442 | 438 | 99% | 0 | 2 | 13 | 4 |
 | CRWD (CRWD) | 165 | 165 | 100% | 0 | 2 | 12 | 0 |
@@ -414,7 +414,7 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | GS (GS) | 522 | 522 | 100% | 0 | 2 | 17 | 0 |
 | GSK (GSK) | 445 | 445 | 100% | 0 | 0 | 5 | 0 |
 | HD (HD) | 459 | 455 | 99% | 0 | 2 | 10 | 4 |
-| HDB (HDB) | 389 | 386 | 99% | 0 | 1 | 8 | 3 |
+| HDB (HDB) | 390 | 387 | 99% | 0 | 1 | 8 | 3 |
 | HEI.DE (HEI.DE) | 429 | 428 | 100% | 0 | 2 | 14 | 1 |
 | HEN3.DE (HEN3.DE) | 445 | 436 | 98% | 0 | 1 | 8 | 9 |
 | Kupfer (HG=F) | 778 | 778 | 100% | 1 | 5 | 25 | 0 |
@@ -478,7 +478,7 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | NKE (NKE) | 480 | 465 | 97% | 0 | 1 | 8 | 15 |
 | NOW (NOW) | 261 | 259 | 99% | 0 | 1 | 10 | 2 |
 | NVDA (NVDA) | 432 | 432 | 100% | 0 | 2 | 12 | 0 |
-| NVO (NVO) | 479 | 474 | 99% | 0 | 1 | 8 | 5 |
+| NVO (NVO) | 480 | 474 | 99% | 0 | 1 | 8 | 6 |
 | NVS (NVS) | 543 | 541 | 100% | 0 | 1 | 14 | 2 |
 | NXPI (NXPI) | 377 | 375 | 99% | 0 | 2 | 8 | 2 |
 | ODFL (ODFL) | 355 | 354 | 100% | 0 | 1 | 12 | 1 |
@@ -486,7 +486,7 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | ORCL (ORCL) | 480 | 477 | 99% | 0 | 2 | 12 | 3 |
 | ORLY (ORLY) | 351 | 349 | 99% | 0 | 0 | 8 | 2 |
 | P911.DE (P911.DE) | 85 | 81 | 95% | 0 | 2 | 10 | 4 |
-| Palladium (PA=F) | 834 | 820 | 98% | 3 | 12 | 85 | 14 |
+| Palladium (PA=F) | 835 | 821 | 98% | 3 | 12 | 85 | 14 |
 | PAH3.DE (PAH3.DE) | 337 | 331 | 98% | 0 | 3 | 18 | 6 |
 | PANW (PANW) | 248 | 248 | 100% | 0 | 3 | 16 | 0 |
 | PAYX (PAYX) | 437 | 433 | 99% | 0 | 2 | 17 | 4 |
@@ -515,7 +515,7 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | RWE.DE (RWE.DE) | 291 | 290 | 100% | 0 | 2 | 28 | 1 |
 | RY (RY) | 597 | 596 | 100% | 0 | 2 | 12 | 1 |
 | SAN (SAN) | 381 | 381 | 100% | 0 | 2 | 23 | 0 |
-| SAP.DE (SAP.DE) | 573 | 570 | 99% | 0 | 2 | 9 | 3 |
+| SAP.DE (SAP.DE) | 573 | 571 | 100% | 0 | 2 | 10 | 2 |
 | Zucker (SB=F) | 86 | 86 | 100% | 0 | 4 | 17 | 0 |
 | SBUX (SBUX) | 427 | 424 | 99% | 0 | 2 | 12 | 3 |
 | SCCO (SCCO) | 648 | 648 | 100% | 0 | 3 | 15 | 0 |
@@ -524,7 +524,7 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | SHL.DE (SHL.DE) | 202 | 197 | 98% | 0 | 2 | 13 | 5 |
 | SHOP (SHOP) | 212 | 212 | 100% | 0 | 2 | 12 | 0 |
 | SHW (SHW) | 419 | 418 | 100% | 0 | 1 | 9 | 1 |
-| Silber (SI=F) | 975 | 971 | 100% | 2 | 8 | 46 | 4 |
+| Silber (SI=F) | 976 | 972 | 100% | 2 | 8 | 46 | 4 |
 | SIE.DE (SIE.DE) | 544 | 544 | 100% | 0 | 2 | 12 | 0 |
 | SKHY (SKHY) | 617 | 615 | 100% | 0 | 2 | 13 | 2 |
 | SMFG (SMFG) | 797 | 797 | 100% | 1 | 4 | 24 | 0 |
@@ -558,7 +558,7 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | TXN (TXN) | 483 | 482 | 100% | 0 | 1 | 6 | 1 |
 | UBER (UBER) | 164 | 163 | 99% | 0 | 2 | 23 | 1 |
 | UBS (UBS) | 578 | 573 | 99% | 0 | 2 | 20 | 5 |
-| UL (UL) | 445 | 445 | 100% | 0 | 1 | 8 | 0 |
+| UL (UL) | 446 | 446 | 100% | 0 | 1 | 8 | 0 |
 | UNH (UNH) | 371 | 370 | 100% | 0 | 2 | 16 | 1 |
 | UNP (UNP) | 457 | 456 | 100% | 0 | 1 | 8 | 1 |
 | UPS (UPS) | 466 | 460 | 99% | 0 | 2 | 16 | 6 |
@@ -656,7 +656,7 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | BBVA (BBVA) | aufwaerts | 41/52 (79%) | 16/27 (59%) | 9/20 (45%) |
 | BEI.DE (BEI.DE) | abwaerts | 46/51 (90%) | 15/20 (75%) | 4/9 (44%) |
 | BEI.DE (BEI.DE) | aufwaerts | 51/55 (93%) | 23/27 (85%) | 14/18 (78%) |
-| BHP (BHP) | abwaerts | 279/280 (100%) | 130/131 (99%) | 67/67 (100%) |
+| BHP (BHP) | abwaerts | 280/281 (100%) | 130/131 (99%) | 67/67 (100%) |
 | BHP (BHP) | aufwaerts | 315/347 (91%) | 144/176 (82%) | 68/99 (69%) |
 | BIIB (BIIB) | abwaerts | 49/51 (96%) | 28/30 (93%) | 16/18 (89%) |
 | BIIB (BIIB) | aufwaerts | 55/59 (93%) | 35/39 (90%) | 22/26 (85%) |
@@ -695,7 +695,7 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | CBK.DE (CBK.DE) | abwaerts | 55/60 (92%) | 34/39 (87%) | 22/27 (81%) |
 | CBK.DE (CBK.DE) | aufwaerts | 77/81 (95%) | 37/41 (90%) | 18/22 (82%) |
 | Kakao (CC=F) | abwaerts | 127/132 (96%) | 65/70 (93%) | 43/46 (93%) |
-| Kakao (CC=F) | aufwaerts | 128/142 (90%) | 53/67 (79%) | 28/40 (70%) |
+| Kakao (CC=F) | aufwaerts | 128/142 (90%) | 53/67 (79%) | 28/41 (68%) |
 | CCEP (CCEP) | abwaerts | 64/65 (98%) | 29/30 (97%) | 15/15 (100%) |
 | CCEP (CCEP) | aufwaerts | 60/76 (79%) | 33/49 (67%) | 19/35 (54%) |
 | CDNS (CDNS) | abwaerts | 44/44 (100%) | 21/21 (100%) | 9/9 (100%) |
@@ -722,7 +722,7 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | CON.DE (CON.DE) | aufwaerts | 88/95 (93%) | 40/47 (85%) | 23/30 (77%) |
 | COP (COP) | abwaerts | 86/86 (100%) | 43/43 (100%) | 20/20 (100%) |
 | COP (COP) | aufwaerts | 99/114 (87%) | 51/66 (77%) | 24/37 (65%) |
-| COST (COST) | abwaerts | 57/59 (97%) | 26/28 (93%) | 10/11 (91%) |
+| COST (COST) | abwaerts | 58/59 (98%) | 27/28 (96%) | 10/11 (91%) |
 | COST (COST) | aufwaerts | 71/86 (83%) | 38/53 (72%) | 17/32 (53%) |
 | CPRT (CPRT) | abwaerts | 34/35 (97%) | 17/18 (94%) | 6/7 (86%) |
 | CPRT (CPRT) | aufwaerts | 58/73 (79%) | 35/50 (70%) | 24/39 (62%) |
@@ -815,7 +815,7 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | GM (GM) | abwaerts | 85/85 (100%) | 44/44 (100%) | 23/23 (100%) |
 | GM (GM) | aufwaerts | 82/91 (90%) | 43/52 (83%) | 23/32 (72%) |
 | GOOGL (GOOGL) | abwaerts | 66/66 (100%) | 31/31 (100%) | 15/15 (100%) |
-| GOOGL (GOOGL) | aufwaerts | 108/138 (78%) | 60/90 (67%) | 32/62 (52%) |
+| GOOGL (GOOGL) | aufwaerts | 108/139 (78%) | 60/91 (66%) | 32/62 (52%) |
 | GS (GS) | abwaerts | 93/93 (100%) | 43/43 (100%) | 18/18 (100%) |
 | GS (GS) | aufwaerts | 109/136 (80%) | 61/88 (69%) | 35/62 (56%) |
 | GSK (GSK) | abwaerts | 41/41 (100%) | 11/11 (100%) | 3/3 (100%) |
@@ -837,7 +837,7 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | HONA (HONA) | abwaerts | 1/2 (50%) | 0/1 (0%) | keine Faelle |
 | HSBC (HSBC) | abwaerts | 85/85 (100%) | 37/37 (100%) | 19/19 (100%) |
 | HSBC (HSBC) | aufwaerts | 93/105 (89%) | 48/60 (80%) | 22/34 (65%) |
-| IBM (IBM) | abwaerts | 93/94 (99%) | 46/47 (98%) | 20/20 (100%) |
+| IBM (IBM) | abwaerts | 93/94 (99%) | 46/47 (98%) | 20/21 (95%) |
 | IBM (IBM) | aufwaerts | 96/101 (95%) | 53/58 (91%) | 26/31 (84%) |
 | IBN (IBN) | abwaerts | 45/45 (100%) | 20/20 (100%) | 11/11 (100%) |
 | IBN (IBN) | aufwaerts | 66/86 (77%) | 24/44 (55%) | 14/34 (41%) |
@@ -949,7 +949,7 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | NOW (NOW) | aufwaerts | 58/71 (82%) | 25/38 (66%) | 15/25 (60%) |
 | NVDA (NVDA) | abwaerts | 70/70 (100%) | 27/27 (100%) | 16/16 (100%) |
 | NVDA (NVDA) | aufwaerts | 90/131 (69%) | 46/87 (53%) | 20/61 (33%) |
-| NVO (NVO) | abwaerts | 55/60 (92%) | 26/31 (84%) | 11/15 (73%) |
+| NVO (NVO) | abwaerts | 55/61 (90%) | 26/32 (81%) | 11/15 (73%) |
 | NVO (NVO) | aufwaerts | 79/94 (84%) | 43/58 (74%) | 18/33 (55%) |
 | NVS (NVS) | abwaerts | 79/81 (98%) | 41/43 (95%) | 21/21 (100%) |
 | NVS (NVS) | aufwaerts | 69/79 (87%) | 33/43 (77%) | 11/21 (52%) |
@@ -990,7 +990,7 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | PH (PH) | abwaerts | 78/78 (100%) | 28/28 (100%) | 6/6 (100%) |
 | PH (PH) | aufwaerts | 90/108 (83%) | 52/70 (74%) | 29/47 (62%) |
 | Platin (PL=F) | abwaerts | 362/371 (98%) | 184/193 (95%) | 99/104 (95%) |
-| Platin (PL=F) | aufwaerts | 355/388 (91%) | 163/196 (83%) | 92/125 (74%) |
+| Platin (PL=F) | aufwaerts | 354/387 (91%) | 163/196 (83%) | 92/125 (74%) |
 | PLD (PLD) | abwaerts | 44/45 (98%) | 17/18 (94%) | 9/9 (100%) |
 | PLD (PLD) | aufwaerts | 51/63 (81%) | 22/34 (65%) | 14/26 (54%) |
 | PLTR (PLTR) | abwaerts | 27/27 (100%) | 18/18 (100%) | 10/10 (100%) |
@@ -1023,7 +1023,7 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | RY (RY) | aufwaerts | 120/141 (85%) | 58/79 (73%) | 30/51 (59%) |
 | SAN (SAN) | abwaerts | 65/65 (100%) | 39/39 (100%) | 25/25 (100%) |
 | SAN (SAN) | aufwaerts | 52/60 (87%) | 20/28 (71%) | 8/16 (50%) |
-| SAP.DE (SAP.DE) | abwaerts | 74/77 (96%) | 34/37 (92%) | 15/18 (83%) |
+| SAP.DE (SAP.DE) | abwaerts | 75/77 (97%) | 35/37 (95%) | 16/18 (89%) |
 | SAP.DE (SAP.DE) | aufwaerts | 93/103 (90%) | 50/60 (83%) | 33/41 (80%) |
 | Zucker (SB=F) | abwaerts | 19/19 (100%) | 7/7 (100%) | 4/4 (100%) |
 | Zucker (SB=F) | aufwaerts | 22/24 (92%) | 10/12 (83%) | 8/10 (80%) |
@@ -1046,7 +1046,7 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | SIE.DE (SIE.DE) | abwaerts | 78/78 (100%) | 37/37 (100%) | 18/18 (100%) |
 | SIE.DE (SIE.DE) | aufwaerts | 103/115 (90%) | 52/64 (81%) | 33/45 (73%) |
 | SKHY (SKHY) | abwaerts | 94/96 (98%) | 51/53 (96%) | 28/29 (97%) |
-| SKHY (SKHY) | aufwaerts | 109/144 (76%) | 55/90 (61%) | 23/58 (40%) |
+| SKHY (SKHY) | aufwaerts | 110/145 (76%) | 55/90 (61%) | 23/58 (40%) |
 | SMFG (SMFG) | abwaerts | 166/166 (100%) | 87/87 (100%) | 48/48 (100%) |
 | SMFG (SMFG) | aufwaerts | 179/203 (88%) | 79/103 (77%) | 38/62 (61%) |
 | SNDK (SNDK) | abwaerts | 3/3 (100%) | 1/1 (100%) | keine Faelle |
@@ -1158,437 +1158,449 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 
 | Wert | Datum | Richtung | Kante | Groesse ATR | Groesse % | Alter (Tage) |
 |---|---|---|---|---|---|---|
-| ABNB (ABNB) | 2026-06-15 | aufwaerts | 132.72 | 0.37 | 1.281 | 81 |
-| ABNB (ABNB) | 2026-07-27 | aufwaerts | 142.7 | 0.184 | 0.561 | 53 |
-| ABNB (ABNB) | 2026-07-28 | aufwaerts | 147.03 | 0.4 | 1.224 | 52 |
-| ABT (ABT) | 2026-01-22 | abwaerts | 120.33 | 4.137 | 10.637 | 180 |
-| ABT (ABT) | 2026-07-16 | aufwaerts | 89.88 | 1.717 | 6.019 | 60 |
-| ABT (ABT) | 2026-08-27 | abwaerts | 114.01 | 0.497 | 1.105 | 30 |
-| ACN (ACN) | 2026-02-03 | abwaerts | 262.15 | 1.292 | 4.848 | 172 |
-| ACN (ACN) | 2026-07-24 | aufwaerts | 139.3 | 0.461 | 2.297 | 54 |
-| ACN (ACN) | 2026-07-27 | aufwaerts | 147.53 | 0.373 | 1.81 | 53 |
-| ACN (ACN) | 2026-10-01 | aufwaerts | 184.3 | 3.307 | 17.189 | 6 |
-| ADBE (ADBE) | 2026-01-13 | abwaerts | 323.5 | 0.106 | 0.312 | 186 |
-| ADBE (ADBE) | 2026-07-01 | aufwaerts | 205.6 | 0.417 | 1.863 | 70 |
-| ADBE (ADBE) | 2026-09-04 | abwaerts | 283.84 | 0.836 | 3.301 | 24 |
-| ADBE (ADBE) | 2026-09-16 | abwaerts | 257.25 | 0.365 | 1.52 | 17 |
-| ADI (ADI) | 2025-11-26 | aufwaerts | 252.48 | 0.341 | 1.085 | 217 |
-| ADI (ADI) | 2026-04-08 | aufwaerts | 327.51 | 1.699 | 5.588 | 128 |
-| ADI (ADI) | 2026-06-23 | abwaerts | 436.39 | 0.488 | 2.184 | 76 |
-| ADI (ADI) | 2026-10-07 | abwaerts | 417.19 | 0.51 | 1.364 | 2 |
-| ADP (ADP) | 2026-04-29 | aufwaerts | 201.52 | 1.091 | 3.106 | 113 |
-| ADP (ADP) | 2026-07-01 | aufwaerts | 225.87 | 0.483 | 1.355 | 70 |
-| ADP (ADP) | 2026-09-04 | abwaerts | 281.4 | 0.152 | 0.33 | 24 |
-| ADS.DE (ADS.DE) | 2026-07-30 | abwaerts | 179.25 | 3.25 | 12.273 | 51 |
-| ADSK (ADSK) | 2026-01-08 | abwaerts | 293.04 | 0.297 | 0.696 | 189 |
-| ADSK (ADSK) | 2026-07-01 | aufwaerts | 195.0 | 0.582 | 2.564 | 70 |
-| ADSK (ADSK) | 2026-09-01 | abwaerts | 257.4 | 0.392 | 1.523 | 27 |
-| ADSK (ADSK) | 2026-10-05 | aufwaerts | 214.33 | 0.581 | 2.286 | 4 |
-| AIR.DE (AIR.DE) | 2026-06-12 | aufwaerts | 176.94 | 0.642 | 2.046 | 85 |
-| ALV.DE (ALV.DE) | 2026-04-01 | aufwaerts | 361.2 | 0.439 | 0.941 | 134 |
-| ALV.DE (ALV.DE) | 2026-06-15 | aufwaerts | 388.3 | 0.404 | 0.695 | 84 |
-| AMAT (AMAT) | 2026-01-02 | aufwaerts | 261.83 | 0.669 | 2.005 | 193 |
-| AMAT (AMAT) | 2026-01-05 | aufwaerts | 271.23 | 0.566 | 1.803 | 192 |
-| AMAT (AMAT) | 2026-02-06 | aufwaerts | 304.35 | 0.335 | 1.663 | 169 |
-| AMAT (AMAT) | 2026-04-08 | aufwaerts | 356.0 | 1.306 | 6.43 | 128 |
-| AMAT (AMAT) | 2026-07-01 | abwaerts | 696.0 | 0.621 | 3.964 | 70 |
-| AMAT (AMAT) | 2026-09-21 | aufwaerts | 445.0 | 0.502 | 2.461 | 14 |
-| AMAT (AMAT) | 2026-09-29 | aufwaerts | 487.45 | 0.852 | 3.541 | 8 |
-| AMAT (AMAT) | 2026-10-07 | abwaerts | 526.52 | 0.51 | 1.825 | 2 |
-| AMD (AMD) | 2026-04-08 | aufwaerts | 222.1 | 0.972 | 4.511 | 128 |
-| AMD (AMD) | 2026-04-10 | aufwaerts | 237.1 | 0.186 | 0.801 | 126 |
-| AMD (AMD) | 2026-04-16 | aufwaerts | 258.18 | 0.652 | 2.638 | 122 |
-| AMD (AMD) | 2026-05-06 | aufwaerts | 359.57 | 2.417 | 13.883 | 108 |
-| AMD (AMD) | 2026-09-08 | aufwaerts | 478.83 | 0.431 | 2.107 | 23 |
-| AMD (AMD) | 2026-09-17 | aufwaerts | 527.25 | 0.26 | 1.204 | 16 |
-| AMD (AMD) | 2026-09-21 | aufwaerts | 559.91 | 0.91 | 4.281 | 14 |
-| AMGN (AMGN) | 2025-11-05 | aufwaerts | 299.06 | 0.534 | 1.361 | 232 |
-| AMGN (AMGN) | 2026-06-23 | aufwaerts | 345.11 | 0.368 | 0.927 | 76 |
-| AMGN (AMGN) | 2026-07-24 | aufwaerts | 371.84 | 0.101 | 0.239 | 54 |
-| AMGN (AMGN) | 2026-09-08 | abwaerts | 435.0 | 2.145 | 6.0 | 23 |
-| AMGN (AMGN) | 2026-09-22 | aufwaerts | 394.5 | 0.988 | 2.725 | 13 |
-| AMT (AMT) | 2026-10-09 | aufwaerts | 167.42 | 2.06 | 5.668 | 0 |
-| AMZN (AMZN) | 2026-03-31 | aufwaerts | 203.8 | 0.176 | 0.515 | 133 |
-| AMZN (AMZN) | 2026-04-08 | aufwaerts | 213.97 | 1.576 | 4.589 | 128 |
-| AMZN (AMZN) | 2026-07-31 | aufwaerts | 239.82 | 2.647 | 10.5 | 49 |
-| ANET (ANET) | 2026-04-08 | aufwaerts | 133.7 | 1.401 | 6.956 | 128 |
-| ANET (ANET) | 2026-07-31 | aufwaerts | 171.51 | 0.594 | 3.551 | 49 |
-| APH (APH) | 2026-05-22 | aufwaerts | 62.585 | 0.346 | 1.558 | 96 |
-| APH (APH) | 2026-05-26 | aufwaerts | 66.295 | 0.708 | 3.236 | 95 |
-| APH (APH) | 2026-07-29 | aufwaerts | 73.0 | 0.852 | 4.315 | 51 |
-| APP (APP) | 2025-12-29 | abwaerts | 708.2 | 0.102 | 0.448 | 196 |
-| APP (APP) | 2026-07-13 | abwaerts | 504.19 | 0.199 | 1.426 | 63 |
-| APP (APP) | 2026-08-06 | abwaerts | 416.09 | 2.624 | 18.659 | 45 |
-| APP (APP) | 2026-08-11 | abwaerts | 338.71 | 0.339 | 2.69 | 42 |
-| APP (APP) | 2026-09-23 | abwaerts | 323.68 | 0.449 | 2.404 | 12 |
-| APP (APP) | 2026-09-30 | abwaerts | 304.84 | 0.34 | 1.752 | 7 |
-| ARM (ARM) | 2026-03-16 | aufwaerts | 118.06 | 0.242 | 1.22 | 144 |
-| ARM (ARM) | 2026-03-17 | aufwaerts | 123.439 | 0.287 | 1.402 | 143 |
-| ARM (ARM) | 2026-03-20 | aufwaerts | 130.725 | 0.998 | 4.724 | 140 |
-| ARM (ARM) | 2026-06-23 | abwaerts | 401.95 | 0.879 | 7.949 | 76 |
-| ARM (ARM) | 2026-09-17 | aufwaerts | 252.795 | 0.55 | 3.641 | 16 |
-| ARM (ARM) | 2026-10-07 | abwaerts | 301.07 | 0.577 | 3.308 | 2 |
-| ARM (ARM) | 2026-10-08 | abwaerts | 290.5 | 0.212 | 1.298 | 1 |
-| ASML (ASML) | 2026-01-05 | aufwaerts | 998.7 | 0.299 | 0.871 | 196 |
-| ASML (ASML) | 2026-04-08 | aufwaerts | 1139.8 | 0.942 | 4.843 | 131 |
-| ASML (ASML) | 2026-05-06 | aufwaerts | 1232.0 | 0.337 | 1.364 | 112 |
-| ASML (ASML) | 2026-09-21 | aufwaerts | 1448.4 | 0.677 | 2.361 | 14 |
-| ASML (ASML) | 2026-09-29 | aufwaerts | 1553.8 | 0.301 | 0.978 | 8 |
-| AVGO (AVGO) | 2026-04-07 | aufwaerts | 316.4 | 0.82 | 3.265 | 129 |
-| AVGO (AVGO) | 2026-04-08 | aufwaerts | 334.15 | 1.339 | 5.267 | 128 |
-| AVGO (AVGO) | 2026-06-04 | abwaerts | 472.64 | 2.921 | 13.467 | 88 |
-| AVGO (AVGO) | 2026-08-18 | abwaerts | 391.31 | 0.438 | 1.786 | 37 |
-| AXON (AXON) | 2025-11-04 | abwaerts | 720.74 | 0.217 | 0.733 | 233 |
-| AXON (AXON) | 2025-11-05 | abwaerts | 698.32 | 4.075 | 19.258 | 232 |
-| AXON (AXON) | 2026-04-14 | aufwaerts | 364.88 | 0.246 | 1.798 | 124 |
-| AXP (AXP) | 2026-01-12 | abwaerts | 373.83 | 1.596 | 3.566 | 187 |
-| AZN (AZN) | 2026-04-13 | abwaerts | 152.3 | 0.529 | 1.221 | 126 |
-| AZN (AZN) | 2026-07-09 | abwaerts | 140.86 | 1.403 | 6.262 | 65 |
-| BABA (BABA) | 2026-02-12 | abwaerts | 159.6 | 0.305 | 1.065 | 159 |
-| BABA (BABA) | 2026-02-20 | abwaerts | 153.9 | 0.684 | 2.534 | 157 |
-| BABA (BABA) | 2026-08-24 | abwaerts | 121.5 | 1.51 | 6.914 | 33 |
-| BABA (BABA) | 2026-10-07 | abwaerts | 107.7 | 0.268 | 0.929 | 2 |
-| BAYN.DE (BAYN.DE) | 2025-11-24 | aufwaerts | 27.89 | 1.82 | 6.633 | 221 |
-| BAYN.DE (BAYN.DE) | 2025-12-02 | aufwaerts | 30.655 | 2.775 | 10.912 | 215 |
-| BAYN.DE (BAYN.DE) | 2026-10-01 | abwaerts | 47.88 | 0.413 | 1.19 | 6 |
-| BBVA (BBVA) | 2025-10-17 | aufwaerts | 15.825 | 1.948 | 5.245 | 249 |
-| BBVA (BBVA) | 2026-05-06 | aufwaerts | 18.26 | 0.375 | 1.232 | 112 |
-| BBVA (BBVA) | 2026-06-12 | aufwaerts | 19.515 | 0.681 | 1.717 | 85 |
-| BBVA (BBVA) | 2026-06-15 | aufwaerts | 20.24 | 0.632 | 1.581 | 84 |
-| BBVA (BBVA) | 2026-10-01 | abwaerts | 24.81 | 0.427 | 0.887 | 6 |
-| BBVA (BBVA) | 2026-10-07 | abwaerts | 24.22 | 0.432 | 1.032 | 2 |
-| BEI.DE (BEI.DE) | 2026-03-03 | abwaerts | 103.55 | 2.292 | 8.45 | 155 |
-| BEI.DE (BEI.DE) | 2026-10-09 | aufwaerts | 77.92 | 0.652 | 1.335 | 0 |
-| BHP (BHP) | 2025-11-26 | aufwaerts | 41.03 | 0.75 | 1.438 | 220 |
-| BHP (BHP) | 2025-12-01 | aufwaerts | 41.76 | 0.315 | 0.551 | 217 |
-| BHP (BHP) | 2025-12-02 | aufwaerts | 42.3 | 0.815 | 1.418 | 216 |
-| BHP (BHP) | 2025-12-04 | aufwaerts | 43.04 | 1.034 | 1.882 | 214 |
-| BHP (BHP) | 2026-01-05 | aufwaerts | 45.76 | 0.349 | 0.524 | 195 |
-| BHP (BHP) | 2026-03-24 | aufwaerts | 47.11 | 1.199 | 4.012 | 140 |
-| BHP (BHP) | 2026-03-25 | aufwaerts | 49.06 | 0.526 | 1.712 | 139 |
-| BHP (BHP) | 2026-04-01 | aufwaerts | 50.78 | 1.154 | 3.387 | 134 |
-| BHP (BHP) | 2026-04-08 | aufwaerts | 53.02 | 1.691 | 5.243 | 131 |
-| BHP (BHP) | 2026-05-06 | aufwaerts | 54.81 | 0.283 | 0.62 | 111 |
-| BHP (BHP) | 2026-07-10 | aufwaerts | 56.92 | 0.51 | 1.283 | 65 |
-| BHP (BHP) | 2026-07-22 | aufwaerts | 58.29 | 0.749 | 1.939 | 57 |
-| BHP (BHP) | 2026-09-02 | abwaerts | 65.71 | 0.298 | 0.685 | 27 |
-| BHP (BHP) | 2026-10-08 | abwaerts | 61.785 | 0.385 | 0.785 | 1 |
-| BIIB (BIIB) | 2026-04-20 | aufwaerts | 178.41 | 0.203 | 0.633 | 120 |
-| BKR (BKR) | 2026-01-05 | aufwaerts | 47.41 | 1.606 | 4.282 | 192 |
-| BKR (BKR) | 2026-01-21 | aufwaerts | 51.98 | 0.188 | 0.539 | 181 |
-| BMO (BMO) | 2026-04-08 | aufwaerts | 138.29 | 1.425 | 3.16 | 128 |
-| BMO (BMO) | 2026-04-14 | aufwaerts | 146.22 | 0.23 | 0.465 | 124 |
-| BMO (BMO) | 2026-10-07 | abwaerts | 165.29 | 0.238 | 0.442 | 2 |
-| BMW.DE (BMW.DE) | 2026-03-02 | abwaerts | 88.18 | 0.892 | 2.2 | 156 |
-| BMW.DE (BMW.DE) | 2026-05-14 | abwaerts | 79.54 | 1.04 | 2.942 | 106 |
-| BMW.DE (BMW.DE) | 2026-06-03 | abwaerts | 72.56 | 0.232 | 0.634 | 92 |
-| BMW.DE (BMW.DE) | 2026-06-16 | abwaerts | 68.34 | 0.175 | 0.498 | 83 |
-| BMW.DE (BMW.DE) | 2026-06-17 | abwaerts | 66.84 | 2.425 | 8.558 | 82 |
-| BMW.DE (BMW.DE) | 2026-09-24 | abwaerts | 57.88 | 0.952 | 2.868 | 11 |
-| BMY (BMY) | 2025-10-30 | aufwaerts | 43.15 | 0.117 | 0.278 | 236 |
-| BMY (BMY) | 2025-11-24 | aufwaerts | 46.99 | 0.948 | 2.554 | 219 |
-| BMY (BMY) | 2025-12-03 | aufwaerts | 49.18 | 0.584 | 1.545 | 213 |
-| BMY (BMY) | 2025-12-12 | aufwaerts | 51.48 | 0.604 | 1.535 | 206 |
-| BMY (BMY) | 2026-06-23 | aufwaerts | 54.73 | 0.493 | 1.206 | 76 |
-| BMY (BMY) | 2026-09-08 | abwaerts | 66.58 | 0.584 | 1.382 | 23 |
-| BMY (BMY) | 2026-10-02 | abwaerts | 61.25 | 0.419 | 0.963 | 5 |
-| BMY (BMY) | 2026-10-05 | abwaerts | 60.24 | 0.232 | 0.581 | 4 |
-| BNR.DE (BNR.DE) | 2026-03-10 | aufwaerts | 44.83 | 0.447 | 1.718 | 150 |
-| BNS (BNS) | 2025-11-25 | aufwaerts | 66.92 | 0.266 | 0.359 | 218 |
-| BNS (BNS) | 2026-04-08 | aufwaerts | 70.0 | 0.922 | 1.786 | 128 |
-| BNS (BNS) | 2026-06-12 | aufwaerts | 82.86 | 0.109 | 0.169 | 82 |
-| BNS (BNS) | 2026-10-07 | abwaerts | 89.68 | 0.36 | 0.636 | 2 |
-| BNY (BNY) | 2026-04-08 | aufwaerts | 125.25 | 0.347 | 0.814 | 128 |
-| BP (BP) | 2026-01-09 | aufwaerts | 4.184 | 0.352 | 0.777 | 190 |
-| BP (BP) | 2026-07-13 | aufwaerts | 4.8445 | 0.728 | 2.075 | 63 |
-| BP (BP) | 2026-09-01 | aufwaerts | 5.218 | 0.255 | 0.709 | 28 |
-| C (C) | 2026-04-08 | aufwaerts | 117.7 | 1.081 | 3.611 | 128 |
-| CAT (CAT) | 2025-10-29 | aufwaerts | 530.29 | 1.725 | 5.259 | 237 |
-| CAT (CAT) | 2026-04-08 | aufwaerts | 725.73 | 1.429 | 5.359 | 128 |
-| CAT (CAT) | 2026-10-07 | abwaerts | 851.47 | 0.204 | 0.642 | 2 |
-| CB (CB) | 2025-10-22 | aufwaerts | 269.89 | 1.24 | 2.212 | 242 |
-| CB (CB) | 2025-11-04 | aufwaerts | 278.36 | 0.331 | 0.582 | 233 |
-| CB (CB) | 2026-07-30 | abwaerts | 360.59 | 0.266 | 0.618 | 50 |
-| CBK.DE (CBK.DE) | 2026-04-08 | aufwaerts | 32.07 | 1.192 | 5.737 | 131 |
-| CBK.DE (CBK.DE) | 2026-09-30 | abwaerts | 41.99 | 0.265 | 0.619 | 7 |
-| CBK.DE (CBK.DE) | 2026-10-08 | abwaerts | 38.46 | 0.307 | 0.806 | 1 |
-| Kakao (CC=F) | 2026-03-11 | aufwaerts | 2967.0 | 1.905 | 13.246 | 123 |
-| Kakao (CC=F) | 2026-05-08 | aufwaerts | 3281.0 | 4.295 | 28.772 | 92 |
-| Kakao (CC=F) | 2026-06-15 | aufwaerts | 3853.0 | 0.408 | 2.258 | 68 |
-| Kakao (CC=F) | 2026-06-22 | aufwaerts | 4164.0 | 0.257 | 1.441 | 64 |
-| Kakao (CC=F) | 2026-06-24 | aufwaerts | 4594.0 | 0.235 | 1.219 | 62 |
-| Kakao (CC=F) | 2026-07-06 | aufwaerts | 4911.0 | 0.775 | 4.439 | 59 |
-| Kakao (CC=F) | 2026-09-02 | abwaerts | 6552.0 | 0.176 | 0.778 | 23 |
-| Kakao (CC=F) | 2026-09-03 | abwaerts | 6254.0 | 0.311 | 1.407 | 22 |
-| CCEP (CCEP) | 2026-06-09 | aufwaerts | 95.48 | 0.336 | 0.786 | 85 |
-| CCEP (CCEP) | 2026-09-04 | abwaerts | 107.82 | 0.117 | 0.223 | 24 |
-| CDNS (CDNS) | 2026-09-23 | aufwaerts | 303.85 | 0.17 | 0.586 | 12 |
-| CDNS (CDNS) | 2026-10-01 | aufwaerts | 335.0 | 0.358 | 1.301 | 6 |
-| CDW (CDW) | 2026-05-27 | aufwaerts | 110.69 | 0.15 | 0.669 | 94 |
-| CDW (CDW) | 2026-09-24 | abwaerts | 145.81 | 0.31 | 1.289 | 11 |
-| CEG (CEG) | 2026-01-16 | abwaerts | 335.04 | 0.74 | 3.758 | 183 |
-| CEG (CEG) | 2026-07-09 | aufwaerts | 244.81 | 0.333 | 1.385 | 65 |
-| CEG (CEG) | 2026-10-06 | aufwaerts | 271.19 | 1.526 | 7.345 | 3 |
-| CHTR (CHTR) | 2026-04-24 | abwaerts | 241.41 | 0.645 | 3.484 | 116 |
-| CHTR (CHTR) | 2026-09-18 | abwaerts | 132.42 | 0.17 | 0.899 | 15 |
-| WTI Oel (CL=F) | 2026-05-20 | abwaerts | 106.76 | 0.396 | 2.473 | 98 |
-| WTI Oel (CL=F) | 2026-08-31 | aufwaerts | 83.78 | 0.259 | 1.086 | 28 |
-| CM (CM) | 2026-04-08 | aufwaerts | 98.3 | 1.302 | 2.869 | 128 |
-| CM (CM) | 2026-09-09 | abwaerts | 116.53 | 0.142 | 0.3 | 22 |
-| CM (CM) | 2026-10-07 | abwaerts | 110.85 | 0.412 | 0.812 | 2 |
-| CMCSA (CMCSA) | 2026-09-15 | abwaerts | 24.82 | 0.297 | 0.846 | 18 |
-| CMCSA (CMCSA) | 2026-09-25 | abwaerts | 22.02 | 0.353 | 1.181 | 10 |
-| CNQ (CNQ) | 2026-01-13 | aufwaerts | 32.39 | 0.12 | 0.34 | 186 |
-| CNQ (CNQ) | 2026-07-08 | aufwaerts | 40.7 | 0.615 | 1.794 | 66 |
-| CNQ (CNQ) | 2026-08-10 | aufwaerts | 45.71 | 0.406 | 1.181 | 43 |
-| COF (COF) | 2026-01-12 | abwaerts | 249.09 | 3.047 | 7.684 | 187 |
-| COF (COF) | 2026-01-23 | abwaerts | 232.31 | 1.136 | 3.668 | 179 |
-| COF (COF) | 2026-06-15 | aufwaerts | 185.5 | 0.58 | 1.806 | 81 |
-| CON.DE (CON.DE) | 2025-10-17 | aufwaerts | 54.64 | 1.925 | 6.149 | 247 |
-| CON.DE (CON.DE) | 2026-04-01 | aufwaerts | 60.16 | 0.714 | 2.56 | 134 |
-| CON.DE (CON.DE) | 2026-05-06 | aufwaerts | 62.48 | 0.463 | 1.761 | 112 |
-| COP (COP) | 2025-12-30 | aufwaerts | 92.73 | 0.285 | 0.669 | 195 |
-| COP (COP) | 2026-01-23 | aufwaerts | 97.01 | 0.487 | 1.412 | 179 |
-| COP (COP) | 2026-07-13 | aufwaerts | 109.42 | 0.526 | 1.417 | 63 |
-| COP (COP) | 2026-07-17 | aufwaerts | 112.89 | 0.953 | 2.463 | 59 |
-| COP (COP) | 2026-08-10 | aufwaerts | 118.52 | 0.2 | 0.599 | 43 |
-| COP (COP) | 2026-10-08 | aufwaerts | 132.12 | 0.194 | 0.484 | 1 |
-| COST (COST) | 2026-05-21 | abwaerts | 1072.0 | 0.393 | 0.801 | 97 |
-| COST (COST) | 2026-08-27 | abwaerts | 954.54 | 0.344 | 0.657 | 30 |
-| COST (COST) | 2026-10-07 | aufwaerts | 937.04 | 0.248 | 0.406 | 2 |
-| CPRT (CPRT) | 2026-09-16 | abwaerts | 30.99 | 0.355 | 1.355 | 17 |
-| CPRT (CPRT) | 2026-09-25 | abwaerts | 28.0 | 0.121 | 0.429 | 10 |
-| CRM (CRM) | 2026-07-27 | aufwaerts | 164.45 | 0.45 | 2.159 | 53 |
-| CRM (CRM) | 2026-08-07 | aufwaerts | 187.02 | 0.492 | 2.176 | 44 |
-| CRM (CRM) | 2026-08-27 | aufwaerts | 206.44 | 2.217 | 11.437 | 30 |
-| CRM (CRM) | 2026-09-17 | abwaerts | 249.6 | 0.551 | 2.171 | 16 |
-| CRWD (CRWD) | 2026-05-07 | aufwaerts | 118.824 | 0.549 | 2.271 | 107 |
-| CRWD (CRWD) | 2026-08-27 | aufwaerts | 191.32 | 1.458 | 8.849 | 30 |
-| CRWD (CRWD) | 2026-09-14 | aufwaerts | 213.19 | 0.452 | 2.725 | 19 |
-| CSCO (CSCO) | 2026-04-17 | aufwaerts | 84.53 | 0.318 | 0.781 | 121 |
-| CSCO (CSCO) | 2026-05-08 | aufwaerts | 92.73 | 0.259 | 0.647 | 106 |
-| CSCO (CSCO) | 2026-05-14 | aufwaerts | 102.01 | 4.46 | 15.234 | 102 |
-| CSCO (CSCO) | 2026-08-13 | abwaerts | 122.26 | 1.863 | 6.813 | 40 |
-| CSCO (CSCO) | 2026-10-06 | aufwaerts | 113.19 | 0.123 | 0.3 | 3 |
-| CSGP (CSGP) | 2025-10-29 | abwaerts | 77.4 | 1.876 | 6.537 | 237 |
-| CSGP (CSGP) | 2026-02-03 | abwaerts | 61.04 | 0.306 | 1.491 | 172 |
-| CSX (CSX) | 2026-04-23 | aufwaerts | 43.8 | 1.669 | 3.813 | 117 |
-| CSX (CSX) | 2026-10-02 | aufwaerts | 46.56 | 0.359 | 0.687 | 5 |
-| CTAS (CTAS) | 2026-05-15 | aufwaerts | 166.09 | 0.36 | 0.837 | 101 |
-| CTAS (CTAS) | 2026-07-01 | aufwaerts | 170.51 | 0.236 | 0.622 | 70 |
-| CTAS (CTAS) | 2026-07-13 | aufwaerts | 179.87 | 0.278 | 0.678 | 63 |
-| CTAS (CTAS) | 2026-07-15 | aufwaerts | 184.67 | 0.675 | 1.798 | 61 |
-| CTAS (CTAS) | 2026-07-30 | abwaerts | 213.54 | 0.474 | 1.339 | 50 |
-| CTSH (CTSH) | 2026-02-03 | abwaerts | 81.95 | 0.306 | 0.903 | 172 |
-| CTSH (CTSH) | 2026-02-09 | abwaerts | 76.63 | 0.359 | 1.227 | 168 |
-| CTSH (CTSH) | 2026-02-12 | abwaerts | 70.79 | 0.131 | 0.537 | 165 |
-| CTSH (CTSH) | 2026-07-01 | aufwaerts | 39.01 | 0.297 | 1.769 | 70 |
-| CTSH (CTSH) | 2026-07-24 | aufwaerts | 43.11 | 0.151 | 0.696 | 54 |
-| CTSH (CTSH) | 2026-07-27 | aufwaerts | 45.49 | 0.494 | 2.198 | 53 |
-| CTSH (CTSH) | 2026-07-28 | aufwaerts | 48.0 | 0.171 | 0.771 | 52 |
-| CTSH (CTSH) | 2026-07-29 | aufwaerts | 51.05 | 0.505 | 2.468 | 51 |
-| CVS (CVS) | 2026-04-07 | aufwaerts | 73.75 | 1.696 | 4.976 | 129 |
-| CVS (CVS) | 2026-04-28 | aufwaerts | 78.67 | 0.253 | 0.648 | 114 |
-| CVS (CVS) | 2026-05-06 | aufwaerts | 82.3 | 1.342 | 3.9 | 108 |
-| CVS (CVS) | 2026-07-30 | abwaerts | 105.84 | 0.319 | 0.794 | 50 |
-| CVS (CVS) | 2026-08-05 | abwaerts | 103.27 | 3.134 | 9.248 | 46 |
-| CVX (CVX) | 2026-07-07 | aufwaerts | 169.26 | 0.217 | 0.52 | 67 |
-| CVX (CVX) | 2026-07-13 | aufwaerts | 176.42 | 0.645 | 1.474 | 63 |
-| CVX (CVX) | 2026-07-17 | aufwaerts | 184.83 | 0.675 | 1.428 | 59 |
-| CVX (CVX) | 2026-08-10 | aufwaerts | 187.75 | 0.242 | 0.602 | 43 |
-| DASH (DASH) | 2026-07-27 | aufwaerts | 175.55 | 0.228 | 1.111 | 53 |
-| DASH (DASH) | 2026-09-08 | abwaerts | 211.18 | 0.268 | 1.061 | 23 |
-| DB1.DE (DB1.DE) | 2026-10-06 | aufwaerts | 290.3 | 0.217 | 0.379 | 3 |
-| DBK.DE (DBK.DE) | 2026-06-12 | aufwaerts | 27.5 | 0.322 | 0.982 | 85 |
-| DBK.DE (DBK.DE) | 2026-06-15 | aufwaerts | 28.74 | 0.989 | 2.992 | 84 |
-| DBK.DE (DBK.DE) | 2026-10-07 | abwaerts | 31.175 | 0.165 | 0.465 | 2 |
-| DDOG (DDOG) | 2026-04-16 | aufwaerts | 121.18 | 1.0 | 5.95 | 122 |
-| DDOG (DDOG) | 2026-05-07 | aufwaerts | 145.69 | 4.13 | 29.034 | 107 |
-| DE (DE) | 2026-01-14 | aufwaerts | 499.59 | 0.294 | 0.729 | 185 |
-| DE (DE) | 2026-06-02 | aufwaerts | 544.57 | 1.025 | 3.201 | 90 |
-| DELL (DELL) | 2026-02-27 | aufwaerts | 126.0 | 1.583 | 9.024 | 155 |
-| DELL (DELL) | 2026-05-06 | aufwaerts | 217.4 | 0.352 | 1.564 | 108 |
-| DELL (DELL) | 2026-05-22 | aufwaerts | 254.38 | 0.912 | 5.394 | 96 |
-| DELL (DELL) | 2026-05-26 | aufwaerts | 298.32 | 0.129 | 0.647 | 95 |
-| DELL (DELL) | 2026-05-29 | aufwaerts | 327.73 | 4.05 | 27.544 | 92 |
-| DHL.DE (DHL.DE) | 2025-11-06 | aufwaerts | 40.1 | 1.649 | 3.741 | 233 |
-| DHL.DE (DHL.DE) | 2026-05-22 | aufwaerts | 48.51 | 0.88 | 2.453 | 100 |
-| DHR (DHR) | 2026-07-23 | aufwaerts | 180.12 | 0.657 | 2.776 | 55 |
-| DIS (DIS) | 2026-08-03 | aufwaerts | 96.59 | 0.443 | 1.066 | 48 |
-| DIS (DIS) | 2026-08-05 | aufwaerts | 98.57 | 1.4 | 3.47 | 46 |
-| DIS (DIS) | 2026-08-27 | abwaerts | 109.45 | 0.282 | 0.612 | 30 |
-| DTE.DE (DTE.DE) | 2026-04-02 | abwaerts | 31.77 | 1.063 | 2.896 | 133 |
-| DTE.DE (DTE.DE) | 2026-04-13 | abwaerts | 30.99 | 0.388 | 1.129 | 128 |
-| DTE.DE (DTE.DE) | 2026-09-18 | abwaerts | 28.28 | 0.911 | 2.051 | 15 |
-| DTE.DE (DTE.DE) | 2026-10-09 | abwaerts | 26.81 | 2.195 | 5.707 | 0 |
-| DTG.DE (DTG.DE) | 2025-12-04 | aufwaerts | 35.51 | 0.163 | 0.451 | 213 |
-| DTG.DE (DTG.DE) | 2026-08-07 | abwaerts | 47.91 | 1.131 | 2.943 | 45 |
-| DTG.DE (DTG.DE) | 2026-09-09 | abwaerts | 44.84 | 0.334 | 0.736 | 22 |
-| DXCM (DXCM) | 2026-07-31 | aufwaerts | 74.87 | 1.572 | 6.692 | 49 |
-| EMR (EMR) | 2026-09-22 | aufwaerts | 152.25 | 0.256 | 0.624 | 13 |
-| ENB (ENB) | 2026-09-10 | abwaerts | 49.85 | 1.615 | 3.129 | 21 |
-| ENR.DE (ENR.DE) | 2025-10-24 | aufwaerts | 99.44 | 0.38 | 1.669 | 242 |
-| ENR.DE (ENR.DE) | 2025-11-26 | aufwaerts | 107.4 | 0.424 | 2.281 | 219 |
-| ENR.DE (ENR.DE) | 2026-09-16 | aufwaerts | 134.12 | 0.15 | 0.641 | 17 |
-| EQIX (EQIX) | 2026-02-12 | aufwaerts | 868.02 | 3.247 | 10.186 | 165 |
-| EQNR (EQNR) | 2026-01-09 | aufwaerts | 234.1 | 0.762 | 1.709 | 189 |
-| EQNR (EQNR) | 2026-01-13 | aufwaerts | 241.2 | 0.529 | 1.161 | 187 |
-| EQNR (EQNR) | 2026-02-19 | aufwaerts | 270.2 | 0.243 | 0.666 | 160 |
-| EQNR (EQNR) | 2026-03-02 | aufwaerts | 284.3 | 1.897 | 6.015 | 153 |
-| EQNR (EQNR) | 2026-07-08 | aufwaerts | 326.3 | 0.801 | 2.36 | 67 |
-| EQNR (EQNR) | 2026-07-13 | aufwaerts | 331.8 | 0.535 | 1.567 | 64 |
-| EQNR (EQNR) | 2026-07-22 | aufwaerts | 364.4 | 0.305 | 0.878 | 57 |
-| ETN (ETN) | 2026-09-17 | aufwaerts | 403.32 | 0.756 | 2.916 | 16 |
-| FANG (FANG) | 2026-07-07 | aufwaerts | 174.31 | 0.344 | 1.124 | 67 |
-| FANG (FANG) | 2026-09-16 | abwaerts | 206.78 | 1.428 | 4.715 | 17 |
-| FDX (FDX) | 2025-10-27 | aufwaerts | 195.1894 | 0.415 | 1.049 | 239 |
-| FDX (FDX) | 2026-02-03 | aufwaerts | 270.4351 | 0.948 | 2.303 | 172 |
-| FRE.DE (FRE.DE) | 2026-06-15 | aufwaerts | 38.08 | 0.156 | 0.394 | 84 |
-| FRE.DE (FRE.DE) | 2026-10-08 | abwaerts | 43.11 | 0.18 | 0.487 | 1 |
-| FTNT (FTNT) | 2026-05-07 | aufwaerts | 90.11 | 3.57 | 16.813 | 107 |
-| FTNT (FTNT) | 2026-09-14 | aufwaerts | 159.3 | 0.424 | 1.902 | 19 |
-| FTNT (FTNT) | 2026-10-06 | aufwaerts | 184.63 | 0.452 | 1.56 | 3 |
-| GD (GD) | 2026-04-29 | aufwaerts | 314.75 | 2.439 | 7.412 | 113 |
-| GEHC (GEHC) | 2026-03-03 | abwaerts | 79.565 | 0.504 | 1.602 | 153 |
-| GEHC (GEHC) | 2026-09-08 | abwaerts | 68.485 | 0.304 | 0.781 | 23 |
-| GEV (GEV) | 2026-08-18 | abwaerts | 1065.405 | 0.347 | 1.737 | 37 |
-| GFS (GFS) | 2026-01-05 | aufwaerts | 36.99 | 0.428 | 1.352 | 192 |
-| GFS (GFS) | 2026-07-01 | abwaerts | 80.37 | 0.664 | 4.361 | 70 |
-| GFS (GFS) | 2026-07-13 | abwaerts | 67.97 | 0.194 | 1.42 | 63 |
-| GFS (GFS) | 2026-08-18 | abwaerts | 53.27 | 0.577 | 3.801 | 37 |
-| GFS (GFS) | 2026-09-17 | aufwaerts | 44.16 | 0.31 | 1.608 | 16 |
-| GILD (GILD) | 2026-08-18 | aufwaerts | 139.49 | 0.132 | 0.366 | 37 |
-| GLW (GLW) | 2026-01-15 | aufwaerts | 90.8 | 0.382 | 1.322 | 184 |
-| GLW (GLW) | 2026-01-27 | aufwaerts | 95.55 | 1.542 | 6.824 | 177 |
-| GLW (GLW) | 2026-07-01 | abwaerts | 250.5 | 0.557 | 4.391 | 70 |
-| GLW (GLW) | 2026-10-08 | abwaerts | 161.79 | 0.419 | 2.182 | 1 |
-| GM (GM) | 2025-10-21 | aufwaerts | 58.56 | 2.555 | 8.88 | 243 |
-| GM (GM) | 2026-05-20 | aufwaerts | 72.88 | 0.208 | 0.7 | 98 |
-| GOOGL (GOOGL) | 2025-10-24 | aufwaerts | 255.04 | 0.244 | 0.604 | 240 |
-| GOOGL (GOOGL) | 2025-10-27 | aufwaerts | 261.68 | 0.477 | 1.2 | 239 |
-| GOOGL (GOOGL) | 2026-04-01 | aufwaerts | 288.08 | 0.326 | 0.958 | 132 |
-| GOOGL (GOOGL) | 2026-04-08 | aufwaerts | 305.63 | 1.676 | 4.849 | 128 |
-| GOOGL (GOOGL) | 2026-09-11 | aufwaerts | 333.23 | 0.221 | 0.54 | 20 |
-| GS (GS) | 2026-09-14 | abwaerts | 1018.59 | 0.322 | 0.843 | 19 |
-| GSK (GSK) | 2025-10-29 | aufwaerts | 16.605 | 0.503 | 1.174 | 239 |
-| HD (HD) | 2026-02-25 | abwaerts | 382.21 | 0.117 | 0.298 | 157 |
-| HD (HD) | 2026-08-27 | abwaerts | 334.51 | 0.474 | 1.178 | 30 |
-| HDB (HDB) | 2026-07-20 | abwaerts | 808.5 | 1.072 | 2.288 | 57 |
-| HDB (HDB) | 2026-07-21 | abwaerts | 774.55 | 0.313 | 0.697 | 56 |
-| HEI.DE (HEI.DE) | 2026-02-04 | abwaerts | 233.4 | 0.998 | 3.128 | 174 |
-| HEI.DE (HEI.DE) | 2026-10-09 | aufwaerts | 141.1 | 0.323 | 1.028 | 0 |
-| HEN3.DE (HEN3.DE) | 2026-03-02 | abwaerts | 82.66 | 0.945 | 1.669 | 156 |
-| HEN3.DE (HEN3.DE) | 2026-05-06 | aufwaerts | 62.3 | 0.226 | 0.449 | 112 |
-| HEN3.DE (HEN3.DE) | 2026-06-24 | aufwaerts | 70.94 | 0.33 | 0.62 | 77 |
-| HEN3.DE (HEN3.DE) | 2026-08-12 | abwaerts | 78.12 | 0.358 | 0.666 | 42 |
-| HEN3.DE (HEN3.DE) | 2026-09-09 | abwaerts | 75.9 | 0.5 | 0.791 | 22 |
-| HEN3.DE (HEN3.DE) | 2026-10-09 | aufwaerts | 74.14 | 0.235 | 0.405 | 0 |
-| Kupfer (HG=F) | 2025-11-25 | aufwaerts | 4.975 | 0.399 | 0.563 | 218 |
-| Kupfer (HG=F) | 2025-11-26 | aufwaerts | 5.003 | 0.237 | 0.35 | 217 |
-| Kupfer (HG=F) | 2026-04-08 | aufwaerts | 5.5675 | 1.513 | 3.449 | 128 |
-| Kupfer (HG=F) | 2026-04-10 | aufwaerts | 5.748 | 0.245 | 0.513 | 126 |
-| Kupfer (HG=F) | 2026-07-30 | aufwaerts | 6.2765 | 0.594 | 1.06 | 50 |
-| Kupfer (HG=F) | 2026-09-17 | aufwaerts | 6.4385 | 1.117 | 2.042 | 16 |
-| HONA (HONA) | 2026-08-06 | abwaerts | 203.64 | 3.142 | 23.885 | 45 |
-| HSBC (HSBC) | 2025-10-28 | aufwaerts | 10.048 | 1.371 | 2.767 | 240 |
-| HSBC (HSBC) | 2026-06-11 | aufwaerts | 12.972 | 0.331 | 1.018 | 85 |
-| HSBC (HSBC) | 2026-06-12 | aufwaerts | 13.348 | 0.488 | 1.498 | 84 |
-| HSBC (HSBC) | 2026-10-08 | abwaerts | 14.08 | 0.793 | 1.889 | 1 |
-| IBM (IBM) | 2026-07-14 | abwaerts | 289.1 | 3.717 | 21.698 | 62 |
-| IBM (IBM) | 2026-09-16 | abwaerts | 246.15 | 0.745 | 2.295 | 17 |
-| IDXX (IDXX) | 2025-12-01 | abwaerts | 748.0 | 0.299 | 0.86 | 215 |
-| IDXX (IDXX) | 2026-01-20 | abwaerts | 710.96 | 1.015 | 2.415 | 182 |
-| IDXX (IDXX) | 2026-02-02 | abwaerts | 668.99 | 0.645 | 1.791 | 173 |
-| IDXX (IDXX) | 2026-08-12 | abwaerts | 586.01 | 0.305 | 1.026 | 41 |
-| IFX.DE (IFX.DE) | 2026-04-08 | aufwaerts | 39.98 | 0.964 | 5.278 | 131 |
-| IFX.DE (IFX.DE) | 2026-04-14 | aufwaerts | 43.025 | 0.345 | 1.557 | 127 |
-| IFX.DE (IFX.DE) | 2026-04-23 | aufwaerts | 49.555 | 0.761 | 3.158 | 120 |
-| IFX.DE (IFX.DE) | 2026-09-18 | aufwaerts | 55.41 | 0.233 | 1.083 | 15 |
-| ILMN (ILMN) | 2025-10-31 | aufwaerts | 99.39 | 1.437 | 7.566 | 235 |
-| ING (ING) | 2026-04-01 | aufwaerts | 22.265 | 0.628 | 1.999 | 134 |
-| ING (ING) | 2026-04-08 | aufwaerts | 23.385 | 0.914 | 3.058 | 131 |
-| ING (ING) | 2026-05-06 | aufwaerts | 24.41 | 0.709 | 2.007 | 112 |
-| ING (ING) | 2026-06-12 | aufwaerts | 25.4 | 0.303 | 0.689 | 85 |
-| ING (ING) | 2026-06-15 | aufwaerts | 26.06 | 0.704 | 1.573 | 84 |
-| ING (ING) | 2026-10-07 | abwaerts | 31.045 | 0.399 | 0.854 | 2 |
-| ING (ING) | 2026-10-08 | abwaerts | 30.0 | 0.213 | 0.483 | 1 |
-| INTC (INTC) | 2026-01-02 | aufwaerts | 37.58 | 0.115 | 0.506 | 193 |
-| INTC (INTC) | 2026-04-01 | aufwaerts | 44.23 | 0.279 | 1.741 | 132 |
-| INTC (INTC) | 2026-04-08 | aufwaerts | 53.27 | 0.683 | 3.942 | 128 |
-| INTC (INTC) | 2026-04-24 | aufwaerts | 68.28 | 3.246 | 20.387 | 116 |
-| INTC (INTC) | 2026-10-05 | abwaerts | 118.96 | 0.604 | 3.043 | 4 |
-| INTU (INTU) | 2026-01-02 | abwaerts | 662.21 | 0.109 | 0.243 | 193 |
-| INTU (INTU) | 2026-01-14 | abwaerts | 604.39 | 0.695 | 2.217 | 185 |
-| INTU (INTU) | 2026-01-29 | abwaerts | 537.35 | 1.201 | 4.632 | 175 |
-| INTU (INTU) | 2026-02-03 | abwaerts | 486.62 | 0.805 | 3.724 | 172 |
-| INTU (INTU) | 2026-05-20 | abwaerts | 397.91 | 0.701 | 3.383 | 98 |
-| INTU (INTU) | 2026-05-21 | abwaerts | 374.91 | 2.646 | 16.703 | 97 |
-| INTU (INTU) | 2026-09-16 | abwaerts | 328.66 | 0.447 | 1.963 | 17 |
-| ISRG (ISRG) | 2026-01-08 | abwaerts | 590.8 | 0.709 | 1.373 | 189 |
-| ISRG (ISRG) | 2026-01-14 | abwaerts | 556.04 | 1.601 | 3.971 | 185 |
-| ISRG (ISRG) | 2026-07-27 | aufwaerts | 341.83 | 0.133 | 0.635 | 53 |
-| JNJ (JNJ) | 2025-11-11 | aufwaerts | 188.42 | 0.329 | 0.515 | 228 |
-| JNJ (JNJ) | 2026-06-04 | aufwaerts | 224.93 | 0.512 | 0.96 | 88 |
-| JNJ (JNJ) | 2026-06-23 | aufwaerts | 231.45 | 0.834 | 1.81 | 76 |
-| JNJ (JNJ) | 2026-10-01 | abwaerts | 264.51 | 0.159 | 0.314 | 6 |
-| JPM (JPM) | 2026-06-04 | aufwaerts | 301.96 | 0.59 | 1.252 | 88 |
-| JPM (JPM) | 2026-06-12 | aufwaerts | 314.72 | 0.196 | 0.397 | 82 |
-| KDP (KDP) | 2026-04-23 | aufwaerts | 26.96 | 0.452 | 1.224 | 117 |
-| KDP (KDP) | 2026-08-13 | aufwaerts | 29.67 | 0.39 | 1.314 | 40 |
-| KHC (KHC) | 2026-07-30 | abwaerts | 27.21 | 0.25 | 0.735 | 50 |
-| KHC (KHC) | 2026-09-04 | abwaerts | 25.3 | 0.435 | 1.206 | 24 |
-| KLAC (KLAC) | 2025-10-15 | aufwaerts | 104.246 | 0.375 | 1.402 | 247 |
-| KLAC (KLAC) | 2026-01-05 | aufwaerts | 128.399 | 0.61 | 2.023 | 192 |
-| KLAC (KLAC) | 2026-04-08 | aufwaerts | 154.891 | 1.627 | 7.572 | 128 |
-| KLAC (KLAC) | 2026-09-21 | aufwaerts | 177.14 | 0.253 | 1.219 | 14 |
-| KLAC (KLAC) | 2026-09-29 | aufwaerts | 190.7 | 0.535 | 2.223 | 8 |
-| KO (KO) | 2026-04-28 | aufwaerts | 76.71 | 1.879 | 3.663 | 114 |
-| KO (KO) | 2026-07-27 | aufwaerts | 82.33 | 0.443 | 0.911 | 53 |
-| KO (KO) | 2026-07-28 | aufwaerts | 84.14 | 2.07 | 4.944 | 52 |
-| LIN (LIN) | 2025-12-11 | aufwaerts | 394.35 | 0.123 | 0.226 | 207 |
-| LIN (LIN) | 2025-12-12 | aufwaerts | 404.29 | 0.316 | 0.608 | 206 |
-| LIN (LIN) | 2026-07-31 | abwaerts | 502.62 | 2.155 | 5.499 | 49 |
-| LLY (LLY) | 2026-04-30 | aufwaerts | 869.02 | 0.945 | 3.425 | 112 |
-| LMT (LMT) | 2026-04-10 | abwaerts | 623.09 | 0.229 | 0.611 | 126 |
-| LOW (LOW) | 2026-02-25 | abwaerts | 277.09 | 1.42 | 3.912 | 157 |
-| LOW (LOW) | 2026-08-27 | abwaerts | 210.21 | 0.298 | 0.799 | 30 |
-| LRCX (LRCX) | 2025-11-24 | aufwaerts | 144.41 | 0.156 | 0.824 | 219 |
-| LRCX (LRCX) | 2026-01-02 | aufwaerts | 174.91 | 0.452 | 1.681 | 193 |
-| LRCX (LRCX) | 2026-01-05 | aufwaerts | 185.78 | 0.621 | 2.336 | 192 |
-| LRCX (LRCX) | 2026-04-08 | aufwaerts | 224.49 | 1.429 | 8.134 | 128 |
-| LRCX (LRCX) | 2026-09-21 | aufwaerts | 288.27 | 0.265 | 1.464 | 14 |
-| LULU (LULU) | 2026-01-20 | abwaerts | 201.5 | 0.41 | 1.533 | 182 |
-| LULU (LULU) | 2026-03-02 | abwaerts | 180.98 | 0.22 | 0.884 | 154 |
-| LULU (LULU) | 2026-04-23 | abwaerts | 161.21 | 1.266 | 5.663 | 117 |
-| LULU (LULU) | 2026-04-29 | abwaerts | 142.23 | 0.109 | 0.513 | 113 |
-| LULU (LULU) | 2026-09-04 | abwaerts | 117.89 | 3.349 | 16.744 | 24 |
-| MA (MA) | 2026-07-27 | aufwaerts | 540.0 | 0.269 | 0.589 | 53 |
-| MAR (MAR) | 2025-12-15 | aufwaerts | 300.75 | 0.521 | 1.23 | 205 |
-| MAR (MAR) | 2026-08-03 | abwaerts | 372.63 | 1.325 | 3.54 | 48 |
-| MBG.DE (MBG.DE) | 2026-03-02 | abwaerts | 58.31 | 0.89 | 2.247 | 156 |
-| MBG.DE (MBG.DE) | 2026-04-17 | abwaerts | 53.35 | 1.824 | 5.342 | 124 |
-| MBG.DE (MBG.DE) | 2026-09-24 | abwaerts | 42.015 | 0.269 | 0.75 | 11 |
-| MCD (MCD) | 2026-03-03 | abwaerts | 334.41 | 0.757 | 1.292 | 153 |
-| MCD (MCD) | 2026-03-18 | abwaerts | 326.12 | 0.417 | 0.721 | 142 |
-| MCD (MCD) | 2026-04-27 | abwaerts | 299.22 | 0.274 | 0.478 | 115 |
-| MCD (MCD) | 2026-08-27 | abwaerts | 266.11 | 0.119 | 0.233 | 30 |
-| MCHP (MCHP) | 2025-12-03 | aufwaerts | 57.35 | 0.735 | 3.4 | 213 |
-| MCHP (MCHP) | 2026-04-08 | aufwaerts | 67.79 | 1.43 | 6.24 | 128 |
-| MCHP (MCHP) | 2026-06-23 | abwaerts | 101.1 | 0.729 | 3.966 | 76 |
-| MCHP (MCHP) | 2026-10-07 | abwaerts | 80.76 | 0.663 | 2.34 | 2 |
-| MCK (MCK) | 2026-03-05 | abwaerts | 977.32 | 1.146 | 2.99 | 151 |
-| MCK (MCK) | 2026-06-04 | aufwaerts | 743.28 | 0.452 | 1.114 | 88 |
-| MCK (MCK) | 2026-08-05 | aufwaerts | 835.95 | 0.173 | 0.532 | 46 |
-| MCK (MCK) | 2026-10-01 | aufwaerts | 866.19 | 0.83 | 2.341 | 6 |
-| MDB (MDB) | 2026-05-07 | aufwaerts | 268.82 | 1.338 | 7.901 | 107 |
-| MDB (MDB) | 2026-09-28 | abwaerts | 409.18 | 3.52 | 23.91 | 9 |
-| MDLZ (MDLZ) | 2026-03-16 | aufwaerts | 55.02 | 0.377 | 1.018 | 144 |
-| MDT (MDT) | 2026-02-17 | abwaerts | 99.12 | 1.404 | 3.269 | 163 |
-| MDT (MDT) | 2026-03-05 | abwaerts | 95.42 | 0.311 | 0.702 | 151 |
-| MDT (MDT) | 2026-06-03 | aufwaerts | 74.48 | 1.447 | 3.545 | 89 |
-| MELI (MELI) | 2026-10-05 | aufwaerts | 1709.36 | 1.013 | 3.782 | 4 |
-| META (META) | 2026-09-03 | aufwaerts | 600.38 | 0.199 | 0.685 | 25 |
-| META (META) | 2026-09-09 | aufwaerts | 624.8 | 1.109 | 3.816 | 22 |
+| ABNB (ABNB) | 2026-06-15 | aufwaerts | 132.72 | 0.37 | 1.281 | 82 |
+| ABNB (ABNB) | 2026-07-27 | aufwaerts | 142.7 | 0.184 | 0.561 | 54 |
+| ABNB (ABNB) | 2026-07-28 | aufwaerts | 147.03 | 0.4 | 1.224 | 53 |
+| ABT (ABT) | 2026-01-22 | abwaerts | 120.33 | 4.137 | 10.637 | 181 |
+| ABT (ABT) | 2026-07-16 | aufwaerts | 89.88 | 1.717 | 6.019 | 61 |
+| ABT (ABT) | 2026-08-27 | abwaerts | 114.01 | 0.497 | 1.105 | 31 |
+| ACN (ACN) | 2026-02-03 | abwaerts | 262.15 | 1.292 | 4.848 | 173 |
+| ACN (ACN) | 2026-07-24 | aufwaerts | 139.3 | 0.461 | 2.297 | 55 |
+| ACN (ACN) | 2026-07-27 | aufwaerts | 147.53 | 0.373 | 1.81 | 54 |
+| ACN (ACN) | 2026-10-01 | aufwaerts | 184.3 | 3.307 | 17.189 | 7 |
+| ACN (ACN) | 2026-10-12 | aufwaerts | 209.06 | 0.196 | 0.842 | 0 |
+| ADBE (ADBE) | 2026-01-13 | abwaerts | 323.5 | 0.106 | 0.312 | 187 |
+| ADBE (ADBE) | 2026-07-01 | aufwaerts | 205.6 | 0.417 | 1.863 | 71 |
+| ADBE (ADBE) | 2026-09-04 | abwaerts | 283.84 | 0.836 | 3.301 | 25 |
+| ADBE (ADBE) | 2026-09-16 | abwaerts | 257.25 | 0.365 | 1.52 | 18 |
+| ADI (ADI) | 2025-11-26 | aufwaerts | 252.48 | 0.341 | 1.085 | 218 |
+| ADI (ADI) | 2026-04-08 | aufwaerts | 327.51 | 1.699 | 5.588 | 129 |
+| ADI (ADI) | 2026-06-23 | abwaerts | 436.39 | 0.488 | 2.184 | 77 |
+| ADI (ADI) | 2026-10-07 | abwaerts | 417.19 | 0.51 | 1.364 | 3 |
+| ADP (ADP) | 2026-04-29 | aufwaerts | 201.52 | 1.091 | 3.106 | 114 |
+| ADP (ADP) | 2026-07-01 | aufwaerts | 225.87 | 0.483 | 1.355 | 71 |
+| ADP (ADP) | 2026-09-04 | abwaerts | 281.4 | 0.152 | 0.33 | 25 |
+| ADS.DE (ADS.DE) | 2026-07-30 | abwaerts | 179.25 | 3.25 | 12.273 | 52 |
+| ADSK (ADSK) | 2026-01-08 | abwaerts | 293.04 | 0.297 | 0.696 | 190 |
+| ADSK (ADSK) | 2026-07-01 | aufwaerts | 195.0 | 0.582 | 2.564 | 71 |
+| ADSK (ADSK) | 2026-09-01 | abwaerts | 257.4 | 0.392 | 1.523 | 28 |
+| ADSK (ADSK) | 2026-10-05 | aufwaerts | 214.33 | 0.581 | 2.286 | 5 |
+| AIR.DE (AIR.DE) | 2026-06-12 | aufwaerts | 176.94 | 0.642 | 2.046 | 86 |
+| ALV.DE (ALV.DE) | 2026-04-01 | aufwaerts | 361.2 | 0.439 | 0.941 | 135 |
+| ALV.DE (ALV.DE) | 2026-06-15 | aufwaerts | 388.3 | 0.404 | 0.695 | 85 |
+| AMAT (AMAT) | 2026-01-02 | aufwaerts | 261.83 | 0.669 | 2.005 | 194 |
+| AMAT (AMAT) | 2026-01-05 | aufwaerts | 271.23 | 0.566 | 1.803 | 193 |
+| AMAT (AMAT) | 2026-02-06 | aufwaerts | 304.35 | 0.335 | 1.663 | 170 |
+| AMAT (AMAT) | 2026-04-08 | aufwaerts | 356.0 | 1.306 | 6.43 | 129 |
+| AMAT (AMAT) | 2026-07-01 | abwaerts | 696.0 | 0.621 | 3.964 | 71 |
+| AMAT (AMAT) | 2026-09-21 | aufwaerts | 445.0 | 0.502 | 2.461 | 15 |
+| AMAT (AMAT) | 2026-09-29 | aufwaerts | 487.45 | 0.852 | 3.541 | 9 |
+| AMAT (AMAT) | 2026-10-07 | abwaerts | 526.52 | 0.51 | 1.825 | 3 |
+| AMAT (AMAT) | 2026-10-12 | abwaerts | 504.8 | 0.205 | 0.749 | 0 |
+| AMD (AMD) | 2026-04-08 | aufwaerts | 222.1 | 0.972 | 4.511 | 129 |
+| AMD (AMD) | 2026-04-10 | aufwaerts | 237.1 | 0.186 | 0.801 | 127 |
+| AMD (AMD) | 2026-04-16 | aufwaerts | 258.18 | 0.652 | 2.638 | 123 |
+| AMD (AMD) | 2026-05-06 | aufwaerts | 359.57 | 2.417 | 13.883 | 109 |
+| AMD (AMD) | 2026-09-08 | aufwaerts | 478.83 | 0.431 | 2.107 | 24 |
+| AMD (AMD) | 2026-09-17 | aufwaerts | 527.25 | 0.26 | 1.204 | 17 |
+| AMD (AMD) | 2026-09-21 | aufwaerts | 559.91 | 0.91 | 4.281 | 15 |
+| AMD (AMD) | 2026-10-12 | abwaerts | 606.0 | 0.256 | 1.002 | 0 |
+| AMGN (AMGN) | 2025-11-05 | aufwaerts | 299.06 | 0.534 | 1.361 | 233 |
+| AMGN (AMGN) | 2026-06-23 | aufwaerts | 345.11 | 0.368 | 0.927 | 77 |
+| AMGN (AMGN) | 2026-07-24 | aufwaerts | 371.84 | 0.101 | 0.239 | 55 |
+| AMGN (AMGN) | 2026-09-08 | abwaerts | 435.0 | 2.145 | 6.0 | 24 |
+| AMGN (AMGN) | 2026-09-22 | aufwaerts | 394.5 | 0.988 | 2.725 | 14 |
+| AMT (AMT) | 2026-10-09 | aufwaerts | 167.42 | 2.06 | 5.668 | 1 |
+| AMZN (AMZN) | 2026-03-31 | aufwaerts | 203.8 | 0.176 | 0.515 | 134 |
+| AMZN (AMZN) | 2026-04-08 | aufwaerts | 213.97 | 1.576 | 4.589 | 129 |
+| AMZN (AMZN) | 2026-07-31 | aufwaerts | 239.82 | 2.647 | 10.5 | 50 |
+| ANET (ANET) | 2026-04-08 | aufwaerts | 133.7 | 1.401 | 6.956 | 129 |
+| ANET (ANET) | 2026-07-31 | aufwaerts | 171.51 | 0.594 | 3.551 | 50 |
+| APH (APH) | 2026-05-22 | aufwaerts | 62.585 | 0.346 | 1.558 | 97 |
+| APH (APH) | 2026-05-26 | aufwaerts | 66.295 | 0.708 | 3.236 | 96 |
+| APH (APH) | 2026-07-29 | aufwaerts | 73.0 | 0.852 | 4.315 | 52 |
+| APP (APP) | 2025-12-29 | abwaerts | 708.2 | 0.102 | 0.448 | 197 |
+| APP (APP) | 2026-07-13 | abwaerts | 504.19 | 0.199 | 1.426 | 64 |
+| APP (APP) | 2026-08-06 | abwaerts | 416.09 | 2.624 | 18.659 | 46 |
+| APP (APP) | 2026-08-11 | abwaerts | 338.71 | 0.339 | 2.69 | 43 |
+| APP (APP) | 2026-09-23 | abwaerts | 323.68 | 0.449 | 2.404 | 13 |
+| APP (APP) | 2026-09-30 | abwaerts | 304.84 | 0.34 | 1.752 | 8 |
+| ARM (ARM) | 2026-03-16 | aufwaerts | 118.06 | 0.242 | 1.22 | 145 |
+| ARM (ARM) | 2026-03-17 | aufwaerts | 123.439 | 0.287 | 1.402 | 144 |
+| ARM (ARM) | 2026-03-20 | aufwaerts | 130.725 | 0.998 | 4.724 | 141 |
+| ARM (ARM) | 2026-06-23 | abwaerts | 401.95 | 0.879 | 7.949 | 77 |
+| ARM (ARM) | 2026-09-17 | aufwaerts | 252.795 | 0.55 | 3.641 | 17 |
+| ARM (ARM) | 2026-10-07 | abwaerts | 301.07 | 0.577 | 3.308 | 3 |
+| ARM (ARM) | 2026-10-08 | abwaerts | 290.5 | 0.212 | 1.298 | 2 |
+| ARM (ARM) | 2026-10-12 | abwaerts | 265.6 | 0.286 | 1.864 | 0 |
+| ASML (ASML) | 2026-01-05 | aufwaerts | 998.7 | 0.299 | 0.871 | 197 |
+| ASML (ASML) | 2026-04-08 | aufwaerts | 1139.8 | 0.942 | 4.843 | 132 |
+| ASML (ASML) | 2026-05-06 | aufwaerts | 1232.0 | 0.337 | 1.364 | 113 |
+| ASML (ASML) | 2026-09-21 | aufwaerts | 1448.4 | 0.677 | 2.361 | 15 |
+| ASML (ASML) | 2026-09-29 | aufwaerts | 1553.8 | 0.301 | 0.978 | 9 |
+| AVGO (AVGO) | 2026-04-07 | aufwaerts | 316.4 | 0.82 | 3.265 | 130 |
+| AVGO (AVGO) | 2026-04-08 | aufwaerts | 334.15 | 1.339 | 5.267 | 129 |
+| AVGO (AVGO) | 2026-06-04 | abwaerts | 472.64 | 2.921 | 13.467 | 89 |
+| AVGO (AVGO) | 2026-08-18 | abwaerts | 391.31 | 0.438 | 1.786 | 38 |
+| AVGO (AVGO) | 2026-10-12 | abwaerts | 361.1 | 0.152 | 0.462 | 0 |
+| AXON (AXON) | 2025-11-04 | abwaerts | 720.74 | 0.217 | 0.733 | 234 |
+| AXON (AXON) | 2025-11-05 | abwaerts | 698.32 | 4.075 | 19.258 | 233 |
+| AXON (AXON) | 2026-04-14 | aufwaerts | 364.88 | 0.246 | 1.798 | 125 |
+| AXP (AXP) | 2026-01-12 | abwaerts | 373.83 | 1.596 | 3.566 | 188 |
+| AZN (AZN) | 2026-04-13 | abwaerts | 152.3 | 0.529 | 1.221 | 127 |
+| AZN (AZN) | 2026-07-09 | abwaerts | 140.86 | 1.403 | 6.262 | 66 |
+| BABA (BABA) | 2026-02-12 | abwaerts | 159.6 | 0.305 | 1.065 | 160 |
+| BABA (BABA) | 2026-02-20 | abwaerts | 153.9 | 0.684 | 2.534 | 158 |
+| BABA (BABA) | 2026-08-24 | abwaerts | 121.5 | 1.51 | 6.914 | 34 |
+| BABA (BABA) | 2026-10-12 | aufwaerts | 107.3 | 0.742 | 2.516 | 0 |
+| BAYN.DE (BAYN.DE) | 2025-11-24 | aufwaerts | 27.89 | 1.82 | 6.633 | 222 |
+| BAYN.DE (BAYN.DE) | 2025-12-02 | aufwaerts | 30.655 | 2.775 | 10.912 | 216 |
+| BAYN.DE (BAYN.DE) | 2026-10-01 | abwaerts | 47.88 | 0.413 | 1.19 | 7 |
+| BBVA (BBVA) | 2025-10-17 | aufwaerts | 15.825 | 1.948 | 5.245 | 250 |
+| BBVA (BBVA) | 2026-05-06 | aufwaerts | 18.26 | 0.375 | 1.232 | 113 |
+| BBVA (BBVA) | 2026-06-12 | aufwaerts | 19.515 | 0.681 | 1.717 | 86 |
+| BBVA (BBVA) | 2026-06-15 | aufwaerts | 20.24 | 0.632 | 1.581 | 85 |
+| BBVA (BBVA) | 2026-10-01 | abwaerts | 24.81 | 0.427 | 0.887 | 7 |
+| BBVA (BBVA) | 2026-10-07 | abwaerts | 24.22 | 0.432 | 1.032 | 3 |
+| BEI.DE (BEI.DE) | 2026-03-03 | abwaerts | 103.55 | 2.292 | 8.45 | 156 |
+| BEI.DE (BEI.DE) | 2026-10-09 | aufwaerts | 77.92 | 0.652 | 1.335 | 1 |
+| BHP (BHP) | 2025-11-26 | aufwaerts | 41.03 | 0.75 | 1.438 | 221 |
+| BHP (BHP) | 2025-12-01 | aufwaerts | 41.76 | 0.315 | 0.551 | 218 |
+| BHP (BHP) | 2025-12-02 | aufwaerts | 42.3 | 0.815 | 1.418 | 217 |
+| BHP (BHP) | 2025-12-04 | aufwaerts | 43.04 | 1.034 | 1.882 | 215 |
+| BHP (BHP) | 2026-01-05 | aufwaerts | 45.76 | 0.349 | 0.524 | 196 |
+| BHP (BHP) | 2026-03-24 | aufwaerts | 47.11 | 1.199 | 4.012 | 141 |
+| BHP (BHP) | 2026-03-25 | aufwaerts | 49.06 | 0.526 | 1.712 | 140 |
+| BHP (BHP) | 2026-04-01 | aufwaerts | 50.78 | 1.154 | 3.387 | 135 |
+| BHP (BHP) | 2026-04-08 | aufwaerts | 53.02 | 1.691 | 5.243 | 132 |
+| BHP (BHP) | 2026-05-06 | aufwaerts | 54.81 | 0.283 | 0.62 | 112 |
+| BHP (BHP) | 2026-07-10 | aufwaerts | 56.92 | 0.51 | 1.283 | 66 |
+| BHP (BHP) | 2026-07-22 | aufwaerts | 58.29 | 0.749 | 1.939 | 58 |
+| BHP (BHP) | 2026-09-02 | abwaerts | 65.71 | 0.298 | 0.685 | 28 |
+| BHP (BHP) | 2026-10-12 | aufwaerts | 61.235 | 0.596 | 1.233 | 0 |
+| BIIB (BIIB) | 2026-04-20 | aufwaerts | 178.41 | 0.203 | 0.633 | 121 |
+| BIIB (BIIB) | 2026-10-12 | aufwaerts | 227.2 | 1.041 | 2.984 | 0 |
+| BKR (BKR) | 2026-01-05 | aufwaerts | 47.41 | 1.606 | 4.282 | 193 |
+| BKR (BKR) | 2026-01-21 | aufwaerts | 51.98 | 0.188 | 0.539 | 182 |
+| BMO (BMO) | 2026-04-08 | aufwaerts | 138.29 | 1.425 | 3.16 | 129 |
+| BMO (BMO) | 2026-04-14 | aufwaerts | 146.22 | 0.23 | 0.465 | 125 |
+| BMO (BMO) | 2026-10-07 | abwaerts | 165.29 | 0.238 | 0.442 | 3 |
+| BMW.DE (BMW.DE) | 2026-03-02 | abwaerts | 88.18 | 0.892 | 2.2 | 157 |
+| BMW.DE (BMW.DE) | 2026-05-14 | abwaerts | 79.54 | 1.04 | 2.942 | 107 |
+| BMW.DE (BMW.DE) | 2026-06-03 | abwaerts | 72.56 | 0.232 | 0.634 | 93 |
+| BMW.DE (BMW.DE) | 2026-06-16 | abwaerts | 68.34 | 0.175 | 0.498 | 84 |
+| BMW.DE (BMW.DE) | 2026-06-17 | abwaerts | 66.84 | 2.425 | 8.558 | 83 |
+| BMW.DE (BMW.DE) | 2026-09-24 | abwaerts | 57.88 | 0.952 | 2.868 | 12 |
+| BMY (BMY) | 2025-10-30 | aufwaerts | 43.15 | 0.117 | 0.278 | 237 |
+| BMY (BMY) | 2025-11-24 | aufwaerts | 46.99 | 0.948 | 2.554 | 220 |
+| BMY (BMY) | 2025-12-03 | aufwaerts | 49.18 | 0.584 | 1.545 | 214 |
+| BMY (BMY) | 2025-12-12 | aufwaerts | 51.48 | 0.604 | 1.535 | 207 |
+| BMY (BMY) | 2026-06-23 | aufwaerts | 54.73 | 0.493 | 1.206 | 77 |
+| BMY (BMY) | 2026-09-08 | abwaerts | 66.58 | 0.584 | 1.382 | 24 |
+| BMY (BMY) | 2026-10-02 | abwaerts | 61.25 | 0.419 | 0.963 | 6 |
+| BNR.DE (BNR.DE) | 2026-03-10 | aufwaerts | 44.83 | 0.447 | 1.718 | 151 |
+| BNS (BNS) | 2025-11-25 | aufwaerts | 66.92 | 0.266 | 0.359 | 219 |
+| BNS (BNS) | 2026-04-08 | aufwaerts | 70.0 | 0.922 | 1.786 | 129 |
+| BNS (BNS) | 2026-06-12 | aufwaerts | 82.86 | 0.109 | 0.169 | 83 |
+| BNS (BNS) | 2026-10-07 | abwaerts | 89.68 | 0.36 | 0.636 | 3 |
+| BNY (BNY) | 2026-04-08 | aufwaerts | 125.25 | 0.347 | 0.814 | 129 |
+| BP (BP) | 2026-01-09 | aufwaerts | 4.184 | 0.352 | 0.777 | 191 |
+| BP (BP) | 2026-07-13 | aufwaerts | 4.8445 | 0.728 | 2.075 | 64 |
+| BP (BP) | 2026-09-01 | aufwaerts | 5.218 | 0.255 | 0.709 | 29 |
+| Brent Oel (BZ=F) | 2026-10-12 | aufwaerts | 105.07 | 0.243 | 0.971 | 0 |
+| C (C) | 2026-04-08 | aufwaerts | 117.7 | 1.081 | 3.611 | 129 |
+| CAT (CAT) | 2025-10-29 | aufwaerts | 530.29 | 1.725 | 5.259 | 238 |
+| CAT (CAT) | 2026-04-08 | aufwaerts | 725.73 | 1.429 | 5.359 | 129 |
+| CAT (CAT) | 2026-10-07 | abwaerts | 851.47 | 0.204 | 0.642 | 3 |
+| CB (CB) | 2025-10-22 | aufwaerts | 269.89 | 1.24 | 2.212 | 243 |
+| CB (CB) | 2025-11-04 | aufwaerts | 278.36 | 0.331 | 0.582 | 234 |
+| CB (CB) | 2026-07-30 | abwaerts | 360.59 | 0.266 | 0.618 | 51 |
+| CBK.DE (CBK.DE) | 2026-04-08 | aufwaerts | 32.07 | 1.192 | 5.737 | 132 |
+| CBK.DE (CBK.DE) | 2026-09-30 | abwaerts | 41.99 | 0.265 | 0.619 | 8 |
+| Kakao (CC=F) | 2026-03-11 | aufwaerts | 2967.0 | 1.905 | 13.246 | 124 |
+| Kakao (CC=F) | 2026-05-08 | aufwaerts | 3281.0 | 4.295 | 28.772 | 93 |
+| Kakao (CC=F) | 2026-06-15 | aufwaerts | 3853.0 | 0.408 | 2.258 | 69 |
+| Kakao (CC=F) | 2026-06-22 | aufwaerts | 4164.0 | 0.257 | 1.441 | 65 |
+| Kakao (CC=F) | 2026-06-24 | aufwaerts | 4594.0 | 0.235 | 1.219 | 63 |
+| Kakao (CC=F) | 2026-07-06 | aufwaerts | 4911.0 | 0.775 | 4.439 | 60 |
+| Kakao (CC=F) | 2026-09-02 | abwaerts | 6552.0 | 0.176 | 0.778 | 24 |
+| Kakao (CC=F) | 2026-09-03 | abwaerts | 6254.0 | 0.311 | 1.407 | 23 |
+| CCEP (CCEP) | 2026-06-09 | aufwaerts | 95.48 | 0.336 | 0.786 | 86 |
+| CCEP (CCEP) | 2026-09-04 | abwaerts | 107.82 | 0.117 | 0.223 | 25 |
+| CDNS (CDNS) | 2026-09-23 | aufwaerts | 303.85 | 0.17 | 0.586 | 13 |
+| CDNS (CDNS) | 2026-10-01 | aufwaerts | 335.0 | 0.358 | 1.301 | 7 |
+| CDW (CDW) | 2026-05-27 | aufwaerts | 110.69 | 0.15 | 0.669 | 95 |
+| CEG (CEG) | 2026-01-16 | abwaerts | 335.04 | 0.74 | 3.758 | 184 |
+| CEG (CEG) | 2026-07-09 | aufwaerts | 244.81 | 0.333 | 1.385 | 66 |
+| CEG (CEG) | 2026-10-06 | aufwaerts | 271.19 | 1.526 | 7.345 | 4 |
+| CHTR (CHTR) | 2026-04-24 | abwaerts | 241.41 | 0.645 | 3.484 | 117 |
+| CHTR (CHTR) | 2026-09-18 | abwaerts | 132.42 | 0.17 | 0.899 | 16 |
+| WTI Oel (CL=F) | 2026-05-20 | abwaerts | 106.76 | 0.396 | 2.473 | 99 |
+| WTI Oel (CL=F) | 2026-08-31 | aufwaerts | 83.78 | 0.259 | 1.086 | 29 |
+| WTI Oel (CL=F) | 2026-10-12 | aufwaerts | 92.17 | 0.256 | 1.128 | 0 |
+| CM (CM) | 2026-04-08 | aufwaerts | 98.3 | 1.302 | 2.869 | 129 |
+| CM (CM) | 2026-09-09 | abwaerts | 116.53 | 0.142 | 0.3 | 23 |
+| CM (CM) | 2026-10-07 | abwaerts | 110.85 | 0.412 | 0.812 | 3 |
+| CMCSA (CMCSA) | 2026-09-15 | abwaerts | 24.82 | 0.297 | 0.846 | 19 |
+| CMCSA (CMCSA) | 2026-09-25 | abwaerts | 22.02 | 0.353 | 1.181 | 11 |
+| CNQ (CNQ) | 2026-01-13 | aufwaerts | 32.39 | 0.12 | 0.34 | 187 |
+| CNQ (CNQ) | 2026-07-08 | aufwaerts | 40.7 | 0.615 | 1.794 | 67 |
+| CNQ (CNQ) | 2026-08-10 | aufwaerts | 45.71 | 0.406 | 1.181 | 44 |
+| CNQ (CNQ) | 2026-10-12 | aufwaerts | 49.93 | 0.308 | 0.761 | 0 |
+| COF (COF) | 2026-01-12 | abwaerts | 249.09 | 3.047 | 7.684 | 188 |
+| COF (COF) | 2026-01-23 | abwaerts | 232.31 | 1.136 | 3.668 | 180 |
+| COF (COF) | 2026-06-15 | aufwaerts | 185.5 | 0.58 | 1.806 | 82 |
+| CON.DE (CON.DE) | 2025-10-17 | aufwaerts | 54.64 | 1.925 | 6.149 | 248 |
+| CON.DE (CON.DE) | 2026-04-01 | aufwaerts | 60.16 | 0.714 | 2.56 | 135 |
+| CON.DE (CON.DE) | 2026-05-06 | aufwaerts | 62.48 | 0.463 | 1.761 | 113 |
+| COP (COP) | 2025-12-30 | aufwaerts | 92.73 | 0.285 | 0.669 | 196 |
+| COP (COP) | 2026-01-23 | aufwaerts | 97.01 | 0.487 | 1.412 | 180 |
+| COP (COP) | 2026-07-13 | aufwaerts | 109.42 | 0.526 | 1.417 | 64 |
+| COP (COP) | 2026-07-17 | aufwaerts | 112.89 | 0.953 | 2.463 | 60 |
+| COP (COP) | 2026-08-10 | aufwaerts | 118.52 | 0.2 | 0.599 | 44 |
+| COP (COP) | 2026-10-08 | aufwaerts | 132.12 | 0.194 | 0.484 | 2 |
+| COP (COP) | 2026-10-12 | aufwaerts | 135.56 | 0.137 | 0.332 | 0 |
+| COST (COST) | 2026-05-21 | abwaerts | 1072.0 | 0.393 | 0.801 | 98 |
+| COST (COST) | 2026-10-07 | aufwaerts | 937.04 | 0.248 | 0.406 | 3 |
+| CPRT (CPRT) | 2026-09-16 | abwaerts | 30.99 | 0.355 | 1.355 | 18 |
+| CPRT (CPRT) | 2026-09-25 | abwaerts | 28.0 | 0.121 | 0.429 | 11 |
+| CRM (CRM) | 2026-07-27 | aufwaerts | 164.45 | 0.45 | 2.159 | 54 |
+| CRM (CRM) | 2026-08-07 | aufwaerts | 187.02 | 0.492 | 2.176 | 45 |
+| CRM (CRM) | 2026-08-27 | aufwaerts | 206.44 | 2.217 | 11.437 | 31 |
+| CRM (CRM) | 2026-09-17 | abwaerts | 249.6 | 0.551 | 2.171 | 17 |
+| CRM (CRM) | 2026-10-12 | aufwaerts | 230.71 | 0.707 | 2.575 | 0 |
+| CRWD (CRWD) | 2026-05-07 | aufwaerts | 118.824 | 0.549 | 2.271 | 108 |
+| CRWD (CRWD) | 2026-08-27 | aufwaerts | 191.32 | 1.458 | 8.849 | 31 |
+| CRWD (CRWD) | 2026-09-14 | aufwaerts | 213.19 | 0.452 | 2.725 | 20 |
+| CSCO (CSCO) | 2026-04-17 | aufwaerts | 84.53 | 0.318 | 0.781 | 122 |
+| CSCO (CSCO) | 2026-05-08 | aufwaerts | 92.73 | 0.259 | 0.647 | 107 |
+| CSCO (CSCO) | 2026-05-14 | aufwaerts | 102.01 | 4.46 | 15.234 | 103 |
+| CSCO (CSCO) | 2026-08-13 | abwaerts | 122.26 | 1.863 | 6.813 | 41 |
+| CSCO (CSCO) | 2026-10-06 | aufwaerts | 113.19 | 0.123 | 0.3 | 4 |
+| CSGP (CSGP) | 2025-10-29 | abwaerts | 77.4 | 1.876 | 6.537 | 238 |
+| CSGP (CSGP) | 2026-02-03 | abwaerts | 61.04 | 0.306 | 1.491 | 173 |
+| CSX (CSX) | 2026-04-23 | aufwaerts | 43.8 | 1.669 | 3.813 | 118 |
+| CSX (CSX) | 2026-10-02 | aufwaerts | 46.56 | 0.359 | 0.687 | 6 |
+| CTAS (CTAS) | 2026-05-15 | aufwaerts | 166.09 | 0.36 | 0.837 | 102 |
+| CTAS (CTAS) | 2026-07-01 | aufwaerts | 170.51 | 0.236 | 0.622 | 71 |
+| CTAS (CTAS) | 2026-07-13 | aufwaerts | 179.87 | 0.278 | 0.678 | 64 |
+| CTAS (CTAS) | 2026-07-15 | aufwaerts | 184.67 | 0.675 | 1.798 | 62 |
+| CTAS (CTAS) | 2026-07-30 | abwaerts | 213.54 | 0.474 | 1.339 | 51 |
+| CTSH (CTSH) | 2026-02-03 | abwaerts | 81.95 | 0.306 | 0.903 | 173 |
+| CTSH (CTSH) | 2026-02-09 | abwaerts | 76.63 | 0.359 | 1.227 | 169 |
+| CTSH (CTSH) | 2026-02-12 | abwaerts | 70.79 | 0.131 | 0.537 | 166 |
+| CTSH (CTSH) | 2026-07-01 | aufwaerts | 39.01 | 0.297 | 1.769 | 71 |
+| CTSH (CTSH) | 2026-07-24 | aufwaerts | 43.11 | 0.151 | 0.696 | 55 |
+| CTSH (CTSH) | 2026-07-27 | aufwaerts | 45.49 | 0.494 | 2.198 | 54 |
+| CTSH (CTSH) | 2026-07-28 | aufwaerts | 48.0 | 0.171 | 0.771 | 53 |
+| CTSH (CTSH) | 2026-07-29 | aufwaerts | 51.05 | 0.505 | 2.468 | 52 |
+| CVS (CVS) | 2026-04-07 | aufwaerts | 73.75 | 1.696 | 4.976 | 130 |
+| CVS (CVS) | 2026-04-28 | aufwaerts | 78.67 | 0.253 | 0.648 | 115 |
+| CVS (CVS) | 2026-05-06 | aufwaerts | 82.3 | 1.342 | 3.9 | 109 |
+| CVS (CVS) | 2026-07-30 | abwaerts | 105.84 | 0.319 | 0.794 | 51 |
+| CVS (CVS) | 2026-08-05 | abwaerts | 103.27 | 3.134 | 9.248 | 47 |
+| CVX (CVX) | 2026-07-07 | aufwaerts | 169.26 | 0.217 | 0.52 | 68 |
+| CVX (CVX) | 2026-07-13 | aufwaerts | 176.42 | 0.645 | 1.474 | 64 |
+| CVX (CVX) | 2026-07-17 | aufwaerts | 184.83 | 0.675 | 1.428 | 60 |
+| CVX (CVX) | 2026-08-10 | aufwaerts | 187.75 | 0.242 | 0.602 | 44 |
+| CVX (CVX) | 2026-10-12 | aufwaerts | 213.72 | 0.188 | 0.384 | 0 |
+| DASH (DASH) | 2026-07-27 | aufwaerts | 175.55 | 0.228 | 1.111 | 54 |
+| DASH (DASH) | 2026-09-08 | abwaerts | 211.18 | 0.268 | 1.061 | 24 |
+| DB1.DE (DB1.DE) | 2026-10-06 | aufwaerts | 290.3 | 0.217 | 0.379 | 4 |
+| DBK.DE (DBK.DE) | 2026-06-12 | aufwaerts | 27.5 | 0.322 | 0.982 | 86 |
+| DBK.DE (DBK.DE) | 2026-06-15 | aufwaerts | 28.74 | 0.989 | 2.992 | 85 |
+| DBK.DE (DBK.DE) | 2026-10-07 | abwaerts | 31.175 | 0.165 | 0.465 | 3 |
+| DDOG (DDOG) | 2026-04-16 | aufwaerts | 121.18 | 1.0 | 5.95 | 123 |
+| DDOG (DDOG) | 2026-05-07 | aufwaerts | 145.69 | 4.13 | 29.034 | 108 |
+| DE (DE) | 2026-01-14 | aufwaerts | 499.59 | 0.294 | 0.729 | 186 |
+| DE (DE) | 2026-06-02 | aufwaerts | 544.57 | 1.025 | 3.201 | 91 |
+| DELL (DELL) | 2026-02-27 | aufwaerts | 126.0 | 1.583 | 9.024 | 156 |
+| DELL (DELL) | 2026-05-06 | aufwaerts | 217.4 | 0.352 | 1.564 | 109 |
+| DELL (DELL) | 2026-05-22 | aufwaerts | 254.38 | 0.912 | 5.394 | 97 |
+| DELL (DELL) | 2026-05-26 | aufwaerts | 298.32 | 0.129 | 0.647 | 96 |
+| DELL (DELL) | 2026-05-29 | aufwaerts | 327.73 | 4.05 | 27.544 | 93 |
+| DHL.DE (DHL.DE) | 2025-11-06 | aufwaerts | 40.1 | 1.649 | 3.741 | 234 |
+| DHL.DE (DHL.DE) | 2026-05-22 | aufwaerts | 48.51 | 0.88 | 2.453 | 101 |
+| DHR (DHR) | 2026-07-23 | aufwaerts | 180.12 | 0.657 | 2.776 | 56 |
+| DIS (DIS) | 2026-08-03 | aufwaerts | 96.59 | 0.443 | 1.066 | 49 |
+| DIS (DIS) | 2026-08-05 | aufwaerts | 98.57 | 1.4 | 3.47 | 47 |
+| DIS (DIS) | 2026-08-27 | abwaerts | 109.45 | 0.282 | 0.612 | 31 |
+| DTE.DE (DTE.DE) | 2026-04-02 | abwaerts | 31.77 | 1.063 | 2.896 | 134 |
+| DTE.DE (DTE.DE) | 2026-04-13 | abwaerts | 30.99 | 0.388 | 1.129 | 129 |
+| DTE.DE (DTE.DE) | 2026-09-18 | abwaerts | 28.28 | 0.911 | 2.051 | 16 |
+| DTE.DE (DTE.DE) | 2026-10-09 | abwaerts | 26.81 | 2.195 | 5.707 | 1 |
+| DTG.DE (DTG.DE) | 2025-12-04 | aufwaerts | 35.51 | 0.163 | 0.451 | 214 |
+| DTG.DE (DTG.DE) | 2026-08-07 | abwaerts | 47.91 | 1.131 | 2.943 | 46 |
+| DTG.DE (DTG.DE) | 2026-09-09 | abwaerts | 44.84 | 0.334 | 0.736 | 23 |
+| DXCM (DXCM) | 2026-07-31 | aufwaerts | 74.87 | 1.572 | 6.692 | 50 |
+| EMR (EMR) | 2026-09-22 | aufwaerts | 152.25 | 0.256 | 0.624 | 14 |
+| ENB (ENB) | 2026-09-10 | abwaerts | 49.85 | 1.615 | 3.129 | 22 |
+| ENR.DE (ENR.DE) | 2025-10-24 | aufwaerts | 99.44 | 0.38 | 1.669 | 243 |
+| ENR.DE (ENR.DE) | 2025-11-26 | aufwaerts | 107.4 | 0.424 | 2.281 | 220 |
+| ENR.DE (ENR.DE) | 2026-09-16 | aufwaerts | 134.12 | 0.15 | 0.641 | 18 |
+| EQIX (EQIX) | 2026-02-12 | aufwaerts | 868.02 | 3.247 | 10.186 | 166 |
+| EQNR (EQNR) | 2026-01-09 | aufwaerts | 234.1 | 0.762 | 1.709 | 190 |
+| EQNR (EQNR) | 2026-01-13 | aufwaerts | 241.2 | 0.529 | 1.161 | 188 |
+| EQNR (EQNR) | 2026-02-19 | aufwaerts | 270.2 | 0.243 | 0.666 | 161 |
+| EQNR (EQNR) | 2026-03-02 | aufwaerts | 284.3 | 1.897 | 6.015 | 154 |
+| EQNR (EQNR) | 2026-07-08 | aufwaerts | 326.3 | 0.801 | 2.36 | 68 |
+| EQNR (EQNR) | 2026-07-13 | aufwaerts | 331.8 | 0.535 | 1.567 | 65 |
+| EQNR (EQNR) | 2026-07-22 | aufwaerts | 364.4 | 0.305 | 0.878 | 58 |
+| ETN (ETN) | 2026-09-17 | aufwaerts | 403.32 | 0.756 | 2.916 | 17 |
+| FANG (FANG) | 2026-07-07 | aufwaerts | 174.31 | 0.344 | 1.124 | 68 |
+| FANG (FANG) | 2026-09-16 | abwaerts | 206.78 | 1.428 | 4.715 | 18 |
+| FANG (FANG) | 2026-10-12 | aufwaerts | 194.39 | 0.119 | 0.319 | 0 |
+| FDX (FDX) | 2025-10-27 | aufwaerts | 195.1894 | 0.415 | 1.049 | 240 |
+| FDX (FDX) | 2026-02-03 | aufwaerts | 270.4351 | 0.948 | 2.303 | 173 |
+| FRE.DE (FRE.DE) | 2026-06-15 | aufwaerts | 38.08 | 0.156 | 0.394 | 85 |
+| FRE.DE (FRE.DE) | 2026-10-08 | abwaerts | 43.11 | 0.18 | 0.487 | 2 |
+| FTNT (FTNT) | 2026-05-07 | aufwaerts | 90.11 | 3.57 | 16.813 | 108 |
+| FTNT (FTNT) | 2026-09-14 | aufwaerts | 159.3 | 0.424 | 1.902 | 20 |
+| FTNT (FTNT) | 2026-10-06 | aufwaerts | 184.63 | 0.452 | 1.56 | 4 |
+| GD (GD) | 2026-04-29 | aufwaerts | 314.75 | 2.439 | 7.412 | 114 |
+| GEHC (GEHC) | 2026-03-03 | abwaerts | 79.565 | 0.504 | 1.602 | 154 |
+| GEHC (GEHC) | 2026-09-08 | abwaerts | 68.485 | 0.304 | 0.781 | 24 |
+| GEV (GEV) | 2026-08-18 | abwaerts | 1065.405 | 0.347 | 1.737 | 38 |
+| GFS (GFS) | 2026-01-05 | aufwaerts | 36.99 | 0.428 | 1.352 | 193 |
+| GFS (GFS) | 2026-07-01 | abwaerts | 80.37 | 0.664 | 4.361 | 71 |
+| GFS (GFS) | 2026-07-13 | abwaerts | 67.97 | 0.194 | 1.42 | 64 |
+| GFS (GFS) | 2026-08-18 | abwaerts | 53.27 | 0.577 | 3.801 | 38 |
+| GFS (GFS) | 2026-09-17 | aufwaerts | 44.16 | 0.31 | 1.608 | 17 |
+| GILD (GILD) | 2026-08-18 | aufwaerts | 139.49 | 0.132 | 0.366 | 38 |
+| GLW (GLW) | 2026-01-15 | aufwaerts | 90.8 | 0.382 | 1.322 | 185 |
+| GLW (GLW) | 2026-01-27 | aufwaerts | 95.55 | 1.542 | 6.824 | 178 |
+| GLW (GLW) | 2026-07-01 | abwaerts | 250.5 | 0.557 | 4.391 | 71 |
+| GLW (GLW) | 2026-10-08 | abwaerts | 161.79 | 0.419 | 2.182 | 2 |
+| GM (GM) | 2025-10-21 | aufwaerts | 58.56 | 2.555 | 8.88 | 244 |
+| GM (GM) | 2026-05-20 | aufwaerts | 72.88 | 0.208 | 0.7 | 99 |
+| GOOGL (GOOGL) | 2025-10-24 | aufwaerts | 255.04 | 0.244 | 0.604 | 241 |
+| GOOGL (GOOGL) | 2025-10-27 | aufwaerts | 261.68 | 0.477 | 1.2 | 240 |
+| GOOGL (GOOGL) | 2026-04-01 | aufwaerts | 288.08 | 0.326 | 0.958 | 133 |
+| GOOGL (GOOGL) | 2026-04-08 | aufwaerts | 305.63 | 1.676 | 4.849 | 129 |
+| GOOGL (GOOGL) | 2026-09-11 | aufwaerts | 333.23 | 0.221 | 0.54 | 21 |
+| GS (GS) | 2026-09-14 | abwaerts | 1018.59 | 0.322 | 0.843 | 20 |
+| GSK (GSK) | 2025-10-29 | aufwaerts | 16.605 | 0.503 | 1.174 | 240 |
+| HD (HD) | 2026-02-25 | abwaerts | 382.21 | 0.117 | 0.298 | 158 |
+| HD (HD) | 2026-08-27 | abwaerts | 334.51 | 0.474 | 1.178 | 31 |
+| HDB (HDB) | 2026-07-20 | abwaerts | 808.5 | 1.072 | 2.288 | 58 |
+| HDB (HDB) | 2026-07-21 | abwaerts | 774.55 | 0.313 | 0.697 | 57 |
+| HEI.DE (HEI.DE) | 2026-02-04 | abwaerts | 233.4 | 0.998 | 3.128 | 175 |
+| HEI.DE (HEI.DE) | 2026-10-09 | aufwaerts | 141.1 | 0.323 | 1.028 | 1 |
+| HEN3.DE (HEN3.DE) | 2026-03-02 | abwaerts | 82.66 | 0.945 | 1.669 | 157 |
+| HEN3.DE (HEN3.DE) | 2026-05-06 | aufwaerts | 62.3 | 0.226 | 0.449 | 113 |
+| HEN3.DE (HEN3.DE) | 2026-06-24 | aufwaerts | 70.94 | 0.33 | 0.62 | 78 |
+| HEN3.DE (HEN3.DE) | 2026-08-12 | abwaerts | 78.12 | 0.358 | 0.666 | 43 |
+| HEN3.DE (HEN3.DE) | 2026-09-09 | abwaerts | 75.9 | 0.5 | 0.791 | 23 |
+| HEN3.DE (HEN3.DE) | 2026-10-09 | aufwaerts | 74.14 | 0.235 | 0.405 | 1 |
+| Kupfer (HG=F) | 2025-11-25 | aufwaerts | 4.975 | 0.399 | 0.563 | 219 |
+| Kupfer (HG=F) | 2025-11-26 | aufwaerts | 5.003 | 0.237 | 0.35 | 218 |
+| Kupfer (HG=F) | 2026-04-08 | aufwaerts | 5.5675 | 1.513 | 3.449 | 129 |
+| Kupfer (HG=F) | 2026-04-10 | aufwaerts | 5.748 | 0.245 | 0.513 | 127 |
+| Kupfer (HG=F) | 2026-07-30 | aufwaerts | 6.2765 | 0.594 | 1.06 | 51 |
+| Kupfer (HG=F) | 2026-09-17 | aufwaerts | 6.4385 | 1.117 | 2.042 | 17 |
+| Kupfer (HG=F) | 2026-10-12 | aufwaerts | 6.653 | 1.12 | 1.563 | 0 |
+| HONA (HONA) | 2026-08-06 | abwaerts | 203.64 | 3.142 | 23.885 | 46 |
+| HSBC (HSBC) | 2025-10-28 | aufwaerts | 10.048 | 1.371 | 2.767 | 241 |
+| HSBC (HSBC) | 2026-06-11 | aufwaerts | 12.972 | 0.331 | 1.018 | 86 |
+| HSBC (HSBC) | 2026-06-12 | aufwaerts | 13.348 | 0.488 | 1.498 | 85 |
+| HSBC (HSBC) | 2026-10-12 | aufwaerts | 14.006 | 0.257 | 0.6 | 0 |
+| IBM (IBM) | 2026-07-14 | abwaerts | 289.1 | 3.717 | 21.698 | 63 |
+| IBM (IBM) | 2026-09-16 | abwaerts | 246.15 | 0.745 | 2.295 | 18 |
+| IDXX (IDXX) | 2025-12-01 | abwaerts | 748.0 | 0.299 | 0.86 | 216 |
+| IDXX (IDXX) | 2026-01-20 | abwaerts | 710.96 | 1.015 | 2.415 | 183 |
+| IDXX (IDXX) | 2026-02-02 | abwaerts | 668.99 | 0.645 | 1.791 | 174 |
+| IDXX (IDXX) | 2026-08-12 | abwaerts | 586.01 | 0.305 | 1.026 | 42 |
+| IFX.DE (IFX.DE) | 2026-04-08 | aufwaerts | 39.98 | 0.964 | 5.278 | 132 |
+| IFX.DE (IFX.DE) | 2026-04-14 | aufwaerts | 43.025 | 0.345 | 1.557 | 128 |
+| IFX.DE (IFX.DE) | 2026-04-23 | aufwaerts | 49.555 | 0.761 | 3.158 | 121 |
+| IFX.DE (IFX.DE) | 2026-09-18 | aufwaerts | 55.41 | 0.233 | 1.083 | 16 |
+| ILMN (ILMN) | 2025-10-31 | aufwaerts | 99.39 | 1.437 | 7.566 | 236 |
+| ING (ING) | 2026-04-01 | aufwaerts | 22.265 | 0.628 | 1.999 | 135 |
+| ING (ING) | 2026-04-08 | aufwaerts | 23.385 | 0.914 | 3.058 | 132 |
+| ING (ING) | 2026-05-06 | aufwaerts | 24.41 | 0.709 | 2.007 | 113 |
+| ING (ING) | 2026-06-12 | aufwaerts | 25.4 | 0.303 | 0.689 | 86 |
+| ING (ING) | 2026-06-15 | aufwaerts | 26.06 | 0.704 | 1.573 | 85 |
+| ING (ING) | 2026-10-07 | abwaerts | 31.045 | 0.399 | 0.854 | 3 |
+| INTC (INTC) | 2026-01-02 | aufwaerts | 37.58 | 0.115 | 0.506 | 194 |
+| INTC (INTC) | 2026-04-01 | aufwaerts | 44.23 | 0.279 | 1.741 | 133 |
+| INTC (INTC) | 2026-04-08 | aufwaerts | 53.27 | 0.683 | 3.942 | 129 |
+| INTC (INTC) | 2026-04-24 | aufwaerts | 68.28 | 3.246 | 20.387 | 117 |
+| INTC (INTC) | 2026-10-05 | abwaerts | 118.96 | 0.604 | 3.043 | 5 |
+| INTC (INTC) | 2026-10-12 | abwaerts | 104.0 | 0.257 | 1.423 | 0 |
+| INTU (INTU) | 2026-01-02 | abwaerts | 662.21 | 0.109 | 0.243 | 194 |
+| INTU (INTU) | 2026-01-14 | abwaerts | 604.39 | 0.695 | 2.217 | 186 |
+| INTU (INTU) | 2026-01-29 | abwaerts | 537.35 | 1.201 | 4.632 | 176 |
+| INTU (INTU) | 2026-02-03 | abwaerts | 486.62 | 0.805 | 3.724 | 173 |
+| INTU (INTU) | 2026-05-20 | abwaerts | 397.91 | 0.701 | 3.383 | 99 |
+| INTU (INTU) | 2026-05-21 | abwaerts | 374.91 | 2.646 | 16.703 | 98 |
+| INTU (INTU) | 2026-09-16 | abwaerts | 328.66 | 0.447 | 1.963 | 18 |
+| ISRG (ISRG) | 2026-01-08 | abwaerts | 590.8 | 0.709 | 1.373 | 190 |
+| ISRG (ISRG) | 2026-01-14 | abwaerts | 556.04 | 1.601 | 3.971 | 186 |
+| ISRG (ISRG) | 2026-07-27 | aufwaerts | 341.83 | 0.133 | 0.635 | 54 |
+| JNJ (JNJ) | 2025-11-11 | aufwaerts | 188.42 | 0.329 | 0.515 | 229 |
+| JNJ (JNJ) | 2026-06-04 | aufwaerts | 224.93 | 0.512 | 0.96 | 89 |
+| JNJ (JNJ) | 2026-06-23 | aufwaerts | 231.45 | 0.834 | 1.81 | 77 |
+| JNJ (JNJ) | 2026-10-01 | abwaerts | 264.51 | 0.159 | 0.314 | 7 |
+| JPM (JPM) | 2026-06-04 | aufwaerts | 301.96 | 0.59 | 1.252 | 89 |
+| JPM (JPM) | 2026-06-12 | aufwaerts | 314.72 | 0.196 | 0.397 | 83 |
+| JPM (JPM) | 2026-10-12 | aufwaerts | 333.54 | 0.134 | 0.228 | 0 |
+| KDP (KDP) | 2026-04-23 | aufwaerts | 26.96 | 0.452 | 1.224 | 118 |
+| KDP (KDP) | 2026-08-13 | aufwaerts | 29.67 | 0.39 | 1.314 | 41 |
+| KHC (KHC) | 2026-07-30 | abwaerts | 27.21 | 0.25 | 0.735 | 51 |
+| KHC (KHC) | 2026-09-04 | abwaerts | 25.3 | 0.435 | 1.206 | 25 |
+| KLAC (KLAC) | 2025-10-15 | aufwaerts | 104.246 | 0.375 | 1.402 | 248 |
+| KLAC (KLAC) | 2026-01-05 | aufwaerts | 128.399 | 0.61 | 2.023 | 193 |
+| KLAC (KLAC) | 2026-04-08 | aufwaerts | 154.891 | 1.627 | 7.572 | 129 |
+| KLAC (KLAC) | 2026-09-21 | aufwaerts | 177.14 | 0.253 | 1.219 | 15 |
+| KLAC (KLAC) | 2026-10-12 | abwaerts | 195.08 | 0.181 | 0.718 | 0 |
+| KO (KO) | 2026-04-28 | aufwaerts | 76.71 | 1.879 | 3.663 | 115 |
+| KO (KO) | 2026-07-27 | aufwaerts | 82.33 | 0.443 | 0.911 | 54 |
+| KO (KO) | 2026-07-28 | aufwaerts | 84.14 | 2.07 | 4.944 | 53 |
+| LIN (LIN) | 2025-12-11 | aufwaerts | 394.35 | 0.123 | 0.226 | 208 |
+| LIN (LIN) | 2025-12-12 | aufwaerts | 404.29 | 0.316 | 0.608 | 207 |
+| LIN (LIN) | 2026-07-31 | abwaerts | 502.62 | 2.155 | 5.499 | 50 |
+| LLY (LLY) | 2026-04-30 | aufwaerts | 869.02 | 0.945 | 3.425 | 113 |
+| LMT (LMT) | 2026-04-10 | abwaerts | 623.09 | 0.229 | 0.611 | 127 |
+| LOW (LOW) | 2026-02-25 | abwaerts | 277.09 | 1.42 | 3.912 | 158 |
+| LOW (LOW) | 2026-08-27 | abwaerts | 210.21 | 0.298 | 0.799 | 31 |
+| LRCX (LRCX) | 2025-11-24 | aufwaerts | 144.41 | 0.156 | 0.824 | 220 |
+| LRCX (LRCX) | 2026-01-02 | aufwaerts | 174.91 | 0.452 | 1.681 | 194 |
+| LRCX (LRCX) | 2026-01-05 | aufwaerts | 185.78 | 0.621 | 2.336 | 193 |
+| LRCX (LRCX) | 2026-04-08 | aufwaerts | 224.49 | 1.429 | 8.134 | 129 |
+| LRCX (LRCX) | 2026-09-21 | aufwaerts | 288.27 | 0.265 | 1.464 | 15 |
+| LULU (LULU) | 2026-01-20 | abwaerts | 201.5 | 0.41 | 1.533 | 183 |
+| LULU (LULU) | 2026-03-02 | abwaerts | 180.98 | 0.22 | 0.884 | 155 |
+| LULU (LULU) | 2026-04-23 | abwaerts | 161.21 | 1.266 | 5.663 | 118 |
+| LULU (LULU) | 2026-04-29 | abwaerts | 142.23 | 0.109 | 0.513 | 114 |
+| LULU (LULU) | 2026-09-04 | abwaerts | 117.89 | 3.349 | 16.744 | 25 |
+| MA (MA) | 2026-07-27 | aufwaerts | 540.0 | 0.269 | 0.589 | 54 |
+| MAR (MAR) | 2025-12-15 | aufwaerts | 300.75 | 0.521 | 1.23 | 206 |
+| MAR (MAR) | 2026-08-03 | abwaerts | 372.63 | 1.325 | 3.54 | 49 |
+| MBG.DE (MBG.DE) | 2026-03-02 | abwaerts | 58.31 | 0.89 | 2.247 | 157 |
+| MBG.DE (MBG.DE) | 2026-04-17 | abwaerts | 53.35 | 1.824 | 5.342 | 125 |
+| MBG.DE (MBG.DE) | 2026-09-24 | abwaerts | 42.015 | 0.269 | 0.75 | 12 |
+| MCD (MCD) | 2026-03-03 | abwaerts | 334.41 | 0.757 | 1.292 | 154 |
+| MCD (MCD) | 2026-03-18 | abwaerts | 326.12 | 0.417 | 0.721 | 143 |
+| MCD (MCD) | 2026-04-27 | abwaerts | 299.22 | 0.274 | 0.478 | 116 |
+| MCD (MCD) | 2026-08-27 | abwaerts | 266.11 | 0.119 | 0.233 | 31 |
+| MCHP (MCHP) | 2025-12-03 | aufwaerts | 57.35 | 0.735 | 3.4 | 214 |
+| MCHP (MCHP) | 2026-04-08 | aufwaerts | 67.79 | 1.43 | 6.24 | 129 |
+| MCHP (MCHP) | 2026-06-23 | abwaerts | 101.1 | 0.729 | 3.966 | 77 |
+| MCHP (MCHP) | 2026-10-07 | abwaerts | 80.76 | 0.663 | 2.34 | 3 |
+| MCK (MCK) | 2026-03-05 | abwaerts | 977.32 | 1.146 | 2.99 | 152 |
+| MCK (MCK) | 2026-06-04 | aufwaerts | 743.28 | 0.452 | 1.114 | 89 |
+| MCK (MCK) | 2026-08-05 | aufwaerts | 835.95 | 0.173 | 0.532 | 47 |
+| MCK (MCK) | 2026-10-01 | aufwaerts | 866.19 | 0.83 | 2.341 | 7 |
+| MDB (MDB) | 2026-05-07 | aufwaerts | 268.82 | 1.338 | 7.901 | 108 |
+| MDB (MDB) | 2026-09-28 | abwaerts | 409.18 | 3.52 | 23.91 | 10 |
+| MDLZ (MDLZ) | 2026-03-16 | aufwaerts | 55.02 | 0.377 | 1.018 | 145 |
+| MDT (MDT) | 2026-02-17 | abwaerts | 99.12 | 1.404 | 3.269 | 164 |
+| MDT (MDT) | 2026-03-05 | abwaerts | 95.42 | 0.311 | 0.702 | 152 |
+| MDT (MDT) | 2026-06-03 | aufwaerts | 74.48 | 1.447 | 3.545 | 90 |
+| MDT (MDT) | 2026-10-12 | aufwaerts | 89.81 | 0.4 | 1.058 | 0 |
+| MELI (MELI) | 2026-10-05 | aufwaerts | 1709.36 | 1.013 | 3.782 | 5 |
+| META (META) | 2026-09-03 | aufwaerts | 600.38 | 0.199 | 0.685 | 26 |
+| META (META) | 2026-09-09 | aufwaerts | 624.8 | 1.109 | 3.816 | 23 |
 | MFG (MFG) | 2025-10-20 | aufwaerts | 4653.0 | 0.101 | 0.279 | 236 |
 | MFG (MFG) | 2025-11-26 | aufwaerts | 5266.0 | 0.51 | 1.386 | 211 |
 | MFG (MFG) | 2026-01-05 | aufwaerts | 5752.0 | 0.238 | 0.487 | 186 |
@@ -1597,62 +1609,61 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | MFG (MFG) | 2026-05-19 | aufwaerts | 6583.0 | 0.419 | 1.625 | 98 |
 | MFG (MFG) | 2026-06-12 | aufwaerts | 7479.0 | 0.465 | 1.685 | 80 |
 | MFG (MFG) | 2026-10-08 | abwaerts | 8644.0 | 0.326 | 0.972 | 1 |
-| MNST (MNST) | 2025-11-07 | aufwaerts | 33.855 | 1.618 | 4.002 | 230 |
-| MNST (MNST) | 2026-05-08 | aufwaerts | 38.48 | 3.018 | 9.797 | 106 |
-| MNST (MNST) | 2026-08-27 | abwaerts | 47.79 | 0.681 | 1.674 | 30 |
-| MO (MO) | 2026-01-09 | aufwaerts | 56.29 | 0.514 | 0.87 | 188 |
-| MO (MO) | 2026-07-30 | abwaerts | 74.61 | 1.778 | 5.241 | 50 |
-| MO (MO) | 2026-10-08 | aufwaerts | 69.62 | 0.266 | 0.546 | 1 |
-| MPC (MPC) | 2026-01-05 | aufwaerts | 165.36 | 1.642 | 4.711 | 192 |
-| MPC (MPC) | 2026-02-04 | aufwaerts | 187.64 | 0.218 | 0.719 | 171 |
-| MPC (MPC) | 2026-03-02 | aufwaerts | 200.01 | 0.546 | 1.96 | 154 |
-| MPC (MPC) | 2026-04-29 | aufwaerts | 233.73 | 0.276 | 0.941 | 113 |
-| MPC (MPC) | 2026-07-08 | aufwaerts | 269.49 | 0.246 | 0.794 | 66 |
-| MPC (MPC) | 2026-07-13 | aufwaerts | 287.15 | 0.408 | 1.278 | 63 |
-| MPC (MPC) | 2026-10-08 | aufwaerts | 444.99 | 0.284 | 1.002 | 1 |
-| MRK (MRK) | 2026-06-23 | aufwaerts | 115.63 | 0.282 | 0.778 | 76 |
-| MRK (MRK) | 2026-08-19 | aufwaerts | 137.98 | 2.076 | 6.494 | 36 |
-| MRK.DE (MRK.DE) | 2026-05-06 | aufwaerts | 110.7 | 0.303 | 0.903 | 112 |
-| MRK.DE (MRK.DE) | 2026-05-13 | aufwaerts | 115.0 | 1.36 | 4.348 | 107 |
-| MRK.DE (MRK.DE) | 2026-05-21 | aufwaerts | 122.9 | 0.301 | 0.895 | 101 |
-| MRNA (MRNA) | 2026-02-13 | aufwaerts | 40.91 | 0.291 | 2.298 | 164 |
-| MRNA (MRNA) | 2026-08-19 | aufwaerts | 64.46 | 4.483 | 79.988 | 36 |
-| MRNA (MRNA) | 2026-09-17 | aufwaerts | 148.93 | 0.299 | 2.397 | 16 |
-| MRVL (MRVL) | 2026-02-06 | aufwaerts | 74.79 | 0.521 | 2.741 | 169 |
-| MRVL (MRVL) | 2026-03-06 | aufwaerts | 80.26 | 0.98 | 5.557 | 150 |
-| MRVL (MRVL) | 2026-04-01 | aufwaerts | 99.56 | 0.221 | 1.266 | 132 |
-| MRVL (MRVL) | 2026-04-08 | aufwaerts | 110.12 | 0.685 | 3.523 | 128 |
-| MRVL (MRVL) | 2026-04-09 | aufwaerts | 115.66 | 0.569 | 2.853 | 127 |
-| MRVL (MRVL) | 2026-04-10 | aufwaerts | 121.97 | 0.277 | 1.386 | 126 |
-| MRVL (MRVL) | 2026-04-20 | aufwaerts | 139.91 | 1.195 | 5.432 | 120 |
-| MRVL (MRVL) | 2026-08-04 | aufwaerts | 194.44 | 0.778 | 8.008 | 47 |
-| MRVL (MRVL) | 2026-09-17 | aufwaerts | 233.77 | 0.421 | 2.695 | 16 |
-| MRVL (MRVL) | 2026-09-21 | aufwaerts | 244.44 | 0.474 | 2.847 | 14 |
-| MS (MS) | 2026-04-08 | aufwaerts | 168.9 | 1.394 | 4.737 | 128 |
-| MS (MS) | 2026-04-14 | aufwaerts | 181.18 | 0.313 | 0.933 | 124 |
-| MS (MS) | 2026-10-07 | abwaerts | 190.55 | 0.618 | 1.501 | 2 |
-| MSFT (MSFT) | 2026-07-30 | aufwaerts | 401.25 | 2.305 | 9.134 | 50 |
-| MSFT (MSFT) | 2026-08-03 | aufwaerts | 466.84 | 0.553 | 1.99 | 48 |
-| MSTR (MSTR) | 2025-11-04 | abwaerts | 259.85 | 0.296 | 1.805 | 233 |
-| MSTR (MSTR) | 2026-05-18 | abwaerts | 173.61 | 0.385 | 2.552 | 100 |
-| MSTR (MSTR) | 2026-08-20 | aufwaerts | 106.9 | 0.964 | 5.921 | 35 |
-| MSTR (MSTR) | 2026-08-21 | aufwaerts | 113.74 | 0.878 | 5.231 | 34 |
-| MSTR (MSTR) | 2026-09-18 | aufwaerts | 133.42 | 0.338 | 2.368 | 15 |
-| MSTR (MSTR) | 2026-10-07 | abwaerts | 163.18 | 0.604 | 3.358 | 2 |
-| MTX.DE (MTX.DE) | 2026-06-12 | aufwaerts | 306.7 | 0.852 | 3.261 | 85 |
-| MTX.DE (MTX.DE) | 2026-06-15 | aufwaerts | 321.9 | 0.453 | 1.771 | 84 |
-| MTX.DE (MTX.DE) | 2026-10-07 | abwaerts | 364.2 | 0.315 | 0.851 | 2 |
-| MTX.DE (MTX.DE) | 2026-10-08 | abwaerts | 351.1 | 0.242 | 0.684 | 1 |
-| MU (MU) | 2025-12-18 | aufwaerts | 237.45 | 1.239 | 8.035 | 202 |
-| MU (MU) | 2026-01-02 | aufwaerts | 293.17 | 0.132 | 0.669 | 193 |
-| MU (MU) | 2026-04-01 | aufwaerts | 337.84 | 0.396 | 3.277 | 132 |
-| MU (MU) | 2026-04-08 | aufwaerts | 379.25 | 1.317 | 9.461 | 128 |
-| MU (MU) | 2026-04-22 | aufwaerts | 457.82 | 0.194 | 1.116 | 118 |
-| MU (MU) | 2026-05-04 | aufwaerts | 545.91 | 0.493 | 2.691 | 110 |
-| MU (MU) | 2026-05-05 | aufwaerts | 592.8 | 0.513 | 2.864 | 109 |
-| MU (MU) | 2026-07-01 | abwaerts | 1124.66 | 0.446 | 3.792 | 70 |
-| MU (MU) | 2026-08-12 | aufwaerts | 879.0 | 0.446 | 3.861 | 41 |
-| MU (MU) | 2026-09-17 | aufwaerts | 941.2 | 0.267 | 1.421 | 16 |
+| MNST (MNST) | 2025-11-07 | aufwaerts | 33.855 | 1.618 | 4.002 | 231 |
+| MNST (MNST) | 2026-05-08 | aufwaerts | 38.48 | 3.018 | 9.797 | 107 |
+| MNST (MNST) | 2026-08-27 | abwaerts | 47.79 | 0.681 | 1.674 | 31 |
+| MO (MO) | 2026-01-09 | aufwaerts | 56.29 | 0.514 | 0.87 | 189 |
+| MO (MO) | 2026-07-30 | abwaerts | 74.61 | 1.778 | 5.241 | 51 |
+| MO (MO) | 2026-10-08 | aufwaerts | 69.62 | 0.266 | 0.546 | 2 |
+| MPC (MPC) | 2026-01-05 | aufwaerts | 165.36 | 1.642 | 4.711 | 193 |
+| MPC (MPC) | 2026-02-04 | aufwaerts | 187.64 | 0.218 | 0.719 | 172 |
+| MPC (MPC) | 2026-03-02 | aufwaerts | 200.01 | 0.546 | 1.96 | 155 |
+| MPC (MPC) | 2026-04-29 | aufwaerts | 233.73 | 0.276 | 0.941 | 114 |
+| MPC (MPC) | 2026-07-08 | aufwaerts | 269.49 | 0.246 | 0.794 | 67 |
+| MPC (MPC) | 2026-07-13 | aufwaerts | 287.15 | 0.408 | 1.278 | 64 |
+| MPC (MPC) | 2026-10-08 | aufwaerts | 444.99 | 0.284 | 1.002 | 2 |
+| MRK (MRK) | 2026-06-23 | aufwaerts | 115.63 | 0.282 | 0.778 | 77 |
+| MRK (MRK) | 2026-08-19 | aufwaerts | 137.98 | 2.076 | 6.494 | 37 |
+| MRK.DE (MRK.DE) | 2026-05-06 | aufwaerts | 110.7 | 0.303 | 0.903 | 113 |
+| MRK.DE (MRK.DE) | 2026-05-13 | aufwaerts | 115.0 | 1.36 | 4.348 | 108 |
+| MRK.DE (MRK.DE) | 2026-05-21 | aufwaerts | 122.9 | 0.301 | 0.895 | 102 |
+| MRNA (MRNA) | 2026-02-13 | aufwaerts | 40.91 | 0.291 | 2.298 | 165 |
+| MRNA (MRNA) | 2026-08-19 | aufwaerts | 64.46 | 4.483 | 79.988 | 37 |
+| MRNA (MRNA) | 2026-09-17 | aufwaerts | 148.93 | 0.299 | 2.397 | 17 |
+| MRVL (MRVL) | 2026-02-06 | aufwaerts | 74.79 | 0.521 | 2.741 | 170 |
+| MRVL (MRVL) | 2026-03-06 | aufwaerts | 80.26 | 0.98 | 5.557 | 151 |
+| MRVL (MRVL) | 2026-04-01 | aufwaerts | 99.56 | 0.221 | 1.266 | 133 |
+| MRVL (MRVL) | 2026-04-08 | aufwaerts | 110.12 | 0.685 | 3.523 | 129 |
+| MRVL (MRVL) | 2026-04-09 | aufwaerts | 115.66 | 0.569 | 2.853 | 128 |
+| MRVL (MRVL) | 2026-04-10 | aufwaerts | 121.97 | 0.277 | 1.386 | 127 |
+| MRVL (MRVL) | 2026-04-20 | aufwaerts | 139.91 | 1.195 | 5.432 | 121 |
+| MRVL (MRVL) | 2026-08-04 | aufwaerts | 194.44 | 0.778 | 8.008 | 48 |
+| MRVL (MRVL) | 2026-09-17 | aufwaerts | 233.77 | 0.421 | 2.695 | 17 |
+| MRVL (MRVL) | 2026-09-21 | aufwaerts | 244.44 | 0.474 | 2.847 | 15 |
+| MS (MS) | 2026-04-08 | aufwaerts | 168.9 | 1.394 | 4.737 | 129 |
+| MS (MS) | 2026-04-14 | aufwaerts | 181.18 | 0.313 | 0.933 | 125 |
+| MSFT (MSFT) | 2026-07-30 | aufwaerts | 401.25 | 2.305 | 9.134 | 51 |
+| MSFT (MSFT) | 2026-08-03 | aufwaerts | 466.84 | 0.553 | 1.99 | 49 |
+| MSTR (MSTR) | 2025-11-04 | abwaerts | 259.85 | 0.296 | 1.805 | 234 |
+| MSTR (MSTR) | 2026-05-18 | abwaerts | 173.61 | 0.385 | 2.552 | 101 |
+| MSTR (MSTR) | 2026-08-20 | aufwaerts | 106.9 | 0.964 | 5.921 | 36 |
+| MSTR (MSTR) | 2026-08-21 | aufwaerts | 113.74 | 0.878 | 5.231 | 35 |
+| MSTR (MSTR) | 2026-09-18 | aufwaerts | 133.42 | 0.338 | 2.368 | 16 |
+| MSTR (MSTR) | 2026-10-07 | abwaerts | 163.18 | 0.604 | 3.358 | 3 |
+| MTX.DE (MTX.DE) | 2026-06-12 | aufwaerts | 306.7 | 0.852 | 3.261 | 86 |
+| MTX.DE (MTX.DE) | 2026-06-15 | aufwaerts | 321.9 | 0.453 | 1.771 | 85 |
+| MTX.DE (MTX.DE) | 2026-10-07 | abwaerts | 364.2 | 0.315 | 0.851 | 3 |
+| MU (MU) | 2025-12-18 | aufwaerts | 237.45 | 1.239 | 8.035 | 203 |
+| MU (MU) | 2026-01-02 | aufwaerts | 293.17 | 0.132 | 0.669 | 194 |
+| MU (MU) | 2026-04-01 | aufwaerts | 337.84 | 0.396 | 3.277 | 133 |
+| MU (MU) | 2026-04-08 | aufwaerts | 379.25 | 1.317 | 9.461 | 129 |
+| MU (MU) | 2026-04-22 | aufwaerts | 457.82 | 0.194 | 1.116 | 119 |
+| MU (MU) | 2026-05-04 | aufwaerts | 545.91 | 0.493 | 2.691 | 111 |
+| MU (MU) | 2026-05-05 | aufwaerts | 592.8 | 0.513 | 2.864 | 110 |
+| MU (MU) | 2026-07-01 | abwaerts | 1124.66 | 0.446 | 3.792 | 71 |
+| MU (MU) | 2026-08-12 | aufwaerts | 879.0 | 0.446 | 3.861 | 42 |
+| MU (MU) | 2026-09-17 | aufwaerts | 941.2 | 0.267 | 1.421 | 17 |
+| MU (MU) | 2026-10-12 | abwaerts | 1017.0 | 0.314 | 1.431 | 0 |
 | MUFG (MUFG) | 2025-12-22 | aufwaerts | 2470.0 | 0.519 | 1.174 | 193 |
 | MUFG (MUFG) | 2026-01-05 | aufwaerts | 2507.0 | 0.241 | 0.459 | 186 |
 | MUFG (MUFG) | 2026-04-01 | aufwaerts | 2683.0 | 0.268 | 1.006 | 128 |
@@ -1660,91 +1671,90 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | MUFG (MUFG) | 2026-06-03 | aufwaerts | 3047.0 | 0.192 | 0.492 | 87 |
 | MUFG (MUFG) | 2026-07-07 | aufwaerts | 3370.0 | 0.698 | 1.78 | 63 |
 | MUFG (MUFG) | 2026-10-08 | abwaerts | 3622.0 | 0.34 | 0.856 | 1 |
-| NEE (NEE) | 2026-05-18 | abwaerts | 92.7 | 0.625 | 1.704 | 100 |
-| NEE (NEE) | 2026-09-23 | abwaerts | 79.21 | 0.129 | 0.215 | 12 |
-| NEM (NEM) | 2026-08-04 | aufwaerts | 95.52 | 0.664 | 2.439 | 47 |
-| NEM (NEM) | 2026-08-05 | aufwaerts | 98.52 | 1.376 | 5.339 | 46 |
-| NEM (NEM) | 2026-08-07 | aufwaerts | 106.4 | 1.002 | 3.872 | 44 |
-| NEM (NEM) | 2026-09-28 | abwaerts | 119.9 | 0.998 | 3.653 | 9 |
-| NEM (NEM) | 2026-10-09 | aufwaerts | 115.91 | 0.447 | 1.441 | 0 |
-| NET (NET) | 2026-09-09 | aufwaerts | 289.0 | 0.382 | 2.249 | 22 |
-| NFLX (NFLX) | 2025-10-22 | abwaerts | 123.176 | 2.54 | 7.214 | 242 |
-| NFLX (NFLX) | 2026-04-17 | abwaerts | 106.62 | 2.947 | 9.614 | 121 |
-| NFLX (NFLX) | 2026-09-18 | abwaerts | 75.3 | 1.658 | 5.352 | 15 |
-| Erdgas (NG=F) | 2026-01-29 | abwaerts | 5.9 | 2.271 | 36.576 | 175 |
-| Erdgas (NG=F) | 2026-02-02 | abwaerts | 3.818 | 0.116 | 2.881 | 173 |
-| Erdgas (NG=F) | 2026-04-29 | aufwaerts | 2.578 | 0.765 | 3.957 | 113 |
-| NKE (NKE) | 2026-02-27 | abwaerts | 63.78 | 0.504 | 1.662 | 155 |
-| NKE (NKE) | 2026-03-18 | abwaerts | 55.0 | 0.285 | 0.909 | 142 |
-| NKE (NKE) | 2026-04-01 | abwaerts | 51.69 | 2.466 | 9.925 | 132 |
-| NKE (NKE) | 2026-08-25 | abwaerts | 40.68 | 0.943 | 2.852 | 32 |
-| NKE (NKE) | 2026-09-01 | abwaerts | 39.03 | 0.579 | 1.717 | 27 |
-| NKE (NKE) | 2026-09-09 | abwaerts | 37.9 | 0.101 | 0.29 | 22 |
-| NOW (NOW) | 2025-12-15 | abwaerts | 171.582 | 2.223 | 6.983 | 205 |
-| NOW (NOW) | 2026-07-27 | aufwaerts | 98.93 | 0.457 | 2.972 | 53 |
-| NOW (NOW) | 2026-08-07 | aufwaerts | 117.42 | 0.629 | 3.619 | 44 |
-| NOW (NOW) | 2026-08-27 | aufwaerts | 126.56 | 0.613 | 3.097 | 30 |
-| NVDA (NVDA) | 2026-04-08 | aufwaerts | 178.23 | 1.145 | 3.518 | 128 |
-| NVDA (NVDA) | 2026-04-14 | aufwaerts | 189.66 | 0.218 | 0.622 | 124 |
-| NVDA (NVDA) | 2026-09-17 | aufwaerts | 216.76 | 0.247 | 0.747 | 16 |
-| NVDA (NVDA) | 2026-09-28 | aufwaerts | 226.94 | 0.466 | 1.238 | 9 |
-| NVO (NVO) | 2026-01-29 | abwaerts | 379.45 | 0.319 | 1.173 | 174 |
-| NVO (NVO) | 2026-02-04 | abwaerts | 367.05 | 3.637 | 17.722 | 170 |
-| NVO (NVO) | 2026-04-14 | aufwaerts | 239.3 | 0.628 | 2.298 | 124 |
-| NVO (NVO) | 2026-09-09 | abwaerts | 291.65 | 0.2 | 0.566 | 22 |
-| NVO (NVO) | 2026-09-11 | abwaerts | 285.7 | 0.45 | 1.295 | 20 |
-| NVS (NVS) | 2026-09-07 | abwaerts | 129.4 | 1.677 | 3.679 | 24 |
-| NVS (NVS) | 2026-09-08 | abwaerts | 124.6 | 3.102 | 8.989 | 23 |
-| NXPI (NXPI) | 2026-04-08 | aufwaerts | 196.88 | 1.19 | 4.607 | 128 |
-| NXPI (NXPI) | 2026-06-23 | abwaerts | 316.0 | 0.522 | 2.671 | 76 |
-| NXPI (NXPI) | 2026-07-29 | abwaerts | 259.1 | 0.462 | 2.37 | 51 |
-| NXPI (NXPI) | 2026-10-07 | abwaerts | 240.45 | 0.267 | 0.836 | 2 |
-| ODFL (ODFL) | 2026-07-29 | abwaerts | 225.82 | 0.55 | 1.851 | 51 |
-| ON (ON) | 2026-01-02 | aufwaerts | 54.6 | 0.382 | 1.19 | 193 |
-| ON (ON) | 2026-04-08 | aufwaerts | 64.0 | 1.182 | 5.469 | 128 |
-| ON (ON) | 2026-06-23 | abwaerts | 125.19 | 0.223 | 1.558 | 76 |
-| ON (ON) | 2026-06-26 | abwaerts | 112.16 | 1.373 | 12.366 | 73 |
-| ON (ON) | 2026-07-10 | abwaerts | 97.68 | 0.165 | 1.392 | 64 |
-| ON (ON) | 2026-09-25 | aufwaerts | 73.3 | 0.272 | 1.323 | 10 |
-| ON (ON) | 2026-10-07 | abwaerts | 85.22 | 0.292 | 1.185 | 2 |
-| ON (ON) | 2026-10-08 | abwaerts | 82.05 | 0.452 | 1.926 | 1 |
-| ORCL (ORCL) | 2025-10-30 | abwaerts | 271.35 | 0.203 | 0.962 | 236 |
-| ORCL (ORCL) | 2026-06-11 | abwaerts | 198.18 | 1.315 | 9.34 | 83 |
-| ORCL (ORCL) | 2026-06-23 | abwaerts | 174.4 | 0.344 | 2.391 | 76 |
-| ORLY (ORLY) | 2026-08-27 | abwaerts | 89.35 | 0.3 | 0.75 | 30 |
-| Palladium (PA=F) | 2026-01-30 | abwaerts | 2000.6 | 1.71 | 8.727 | 79 |
-| Palladium (PA=F) | 2026-03-03 | abwaerts | 1757.0 | 1.207 | 6.061 | 68 |
-| Palladium (PA=F) | 2026-03-17 | abwaerts | 1621.9 | 0.119 | 0.487 | 61 |
-| Palladium (PA=F) | 2026-03-19 | abwaerts | 1614.0 | 2.413 | 11.115 | 60 |
-| Palladium (PA=F) | 2026-04-20 | abwaerts | 1590.4 | 0.701 | 1.937 | 46 |
-| Palladium (PA=F) | 2026-04-23 | abwaerts | 1559.6 | 1.625 | 4.809 | 45 |
-| Palladium (PA=F) | 2026-05-15 | abwaerts | 1531.0 | 2.713 | 7.061 | 34 |
-| Palladium (PA=F) | 2026-09-08 | abwaerts | 1421.5 | 0.433 | 1.548 | 6 |
-| Palladium (PA=F) | 2026-09-11 | abwaerts | 1355.6 | 1.204 | 4.618 | 5 |
-| Palladium (PA=F) | 2026-09-28 | abwaerts | 1284.5 | 1.289 | 5.099 | 2 |
-| Palladium (PA=F) | 2026-10-09 | abwaerts | 1201.6 | 1.457 | 6.0 | 0 |
-| PAH3.DE (PAH3.DE) | 2026-03-02 | abwaerts | 35.92 | 1.558 | 3.174 | 156 |
-| PAH3.DE (PAH3.DE) | 2026-06-17 | abwaerts | 30.86 | 0.497 | 1.167 | 82 |
-| PAH3.DE (PAH3.DE) | 2026-09-21 | abwaerts | 27.98 | 0.38 | 1.144 | 14 |
-| PANW (PANW) | 2026-03-30 | aufwaerts | 149.37 | 0.375 | 1.727 | 134 |
-| PANW (PANW) | 2026-05-07 | aufwaerts | 184.98 | 0.785 | 3.13 | 107 |
-| PAYX (PAYX) | 2026-09-08 | abwaerts | 121.65 | 0.418 | 1.102 | 23 |
-| PAYX (PAYX) | 2026-09-23 | abwaerts | 113.32 | 1.12 | 3.221 | 12 |
-| PDD (PDD) | 2025-11-14 | abwaerts | 133.94 | 0.715 | 1.74 | 225 |
-| PDD (PDD) | 2025-11-18 | abwaerts | 128.86 | 1.529 | 4.408 | 223 |
-| PDD (PDD) | 2026-01-13 | abwaerts | 117.11 | 1.219 | 4.005 | 186 |
-| PDD (PDD) | 2026-01-14 | abwaerts | 110.66 | 0.951 | 3.452 | 185 |
-| PDD (PDD) | 2026-05-27 | abwaerts | 94.5 | 1.558 | 6.148 | 94 |
-| PDD (PDD) | 2026-10-09 | aufwaerts | 78.94 | 0.19 | 0.456 | 0 |
-| PEP (PEP) | 2026-08-25 | abwaerts | 144.38 | 0.244 | 0.45 | 32 |
-| PEP (PEP) | 2026-09-15 | abwaerts | 136.15 | 0.172 | 0.279 | 18 |
-| PEP (PEP) | 2026-09-18 | abwaerts | 132.93 | 0.312 | 0.542 | 15 |
-| PFE (PFE) | 2026-08-18 | aufwaerts | 27.02 | 0.236 | 0.481 | 37 |
-| PG (PG) | 2026-03-03 | abwaerts | 163.45 | 0.398 | 0.771 | 153 |
-| PG (PG) | 2026-03-05 | abwaerts | 157.31 | 0.115 | 0.235 | 151 |
-| PG (PG) | 2026-10-06 | aufwaerts | 146.09 | 0.797 | 1.321 | 3 |
-| PGR (PGR) | 2026-07-15 | abwaerts | 225.77 | 2.553 | 7.862 | 61 |
-| PH (PH) | 2025-11-06 | aufwaerts | 779.99 | 2.321 | 6.304 | 231 |
+| NEE (NEE) | 2026-05-18 | abwaerts | 92.7 | 0.625 | 1.704 | 101 |
+| NEE (NEE) | 2026-09-23 | abwaerts | 79.21 | 0.129 | 0.215 | 13 |
+| NEM (NEM) | 2026-08-04 | aufwaerts | 95.52 | 0.664 | 2.439 | 48 |
+| NEM (NEM) | 2026-08-05 | aufwaerts | 98.52 | 1.376 | 5.339 | 47 |
+| NEM (NEM) | 2026-08-07 | aufwaerts | 106.4 | 1.002 | 3.872 | 45 |
+| NEM (NEM) | 2026-09-28 | abwaerts | 119.9 | 0.998 | 3.653 | 10 |
+| NEM (NEM) | 2026-10-09 | aufwaerts | 115.91 | 0.447 | 1.441 | 1 |
+| NET (NET) | 2026-09-09 | aufwaerts | 289.0 | 0.382 | 2.249 | 23 |
+| NFLX (NFLX) | 2025-10-22 | abwaerts | 123.176 | 2.54 | 7.214 | 243 |
+| NFLX (NFLX) | 2026-04-17 | abwaerts | 106.62 | 2.947 | 9.614 | 122 |
+| NFLX (NFLX) | 2026-09-18 | abwaerts | 75.3 | 1.658 | 5.352 | 16 |
+| Erdgas (NG=F) | 2026-01-29 | abwaerts | 5.9 | 2.271 | 36.576 | 176 |
+| Erdgas (NG=F) | 2026-02-02 | abwaerts | 3.818 | 0.116 | 2.881 | 174 |
+| Erdgas (NG=F) | 2026-04-29 | aufwaerts | 2.578 | 0.765 | 3.957 | 114 |
+| NKE (NKE) | 2026-02-27 | abwaerts | 63.78 | 0.504 | 1.662 | 156 |
+| NKE (NKE) | 2026-03-18 | abwaerts | 55.0 | 0.285 | 0.909 | 143 |
+| NKE (NKE) | 2026-04-01 | abwaerts | 51.69 | 2.466 | 9.925 | 133 |
+| NKE (NKE) | 2026-08-25 | abwaerts | 40.68 | 0.943 | 2.852 | 33 |
+| NKE (NKE) | 2026-09-01 | abwaerts | 39.03 | 0.579 | 1.717 | 28 |
+| NKE (NKE) | 2026-09-09 | abwaerts | 37.9 | 0.101 | 0.29 | 23 |
+| NOW (NOW) | 2025-12-15 | abwaerts | 171.582 | 2.223 | 6.983 | 206 |
+| NOW (NOW) | 2026-07-27 | aufwaerts | 98.93 | 0.457 | 2.972 | 54 |
+| NOW (NOW) | 2026-08-07 | aufwaerts | 117.42 | 0.629 | 3.619 | 45 |
+| NOW (NOW) | 2026-08-27 | aufwaerts | 126.56 | 0.613 | 3.097 | 31 |
+| NVDA (NVDA) | 2026-04-08 | aufwaerts | 178.23 | 1.145 | 3.518 | 129 |
+| NVDA (NVDA) | 2026-04-14 | aufwaerts | 189.66 | 0.218 | 0.622 | 125 |
+| NVDA (NVDA) | 2026-09-17 | aufwaerts | 216.76 | 0.247 | 0.747 | 17 |
+| NVO (NVO) | 2026-01-29 | abwaerts | 379.45 | 0.319 | 1.173 | 175 |
+| NVO (NVO) | 2026-02-04 | abwaerts | 367.05 | 3.637 | 17.722 | 171 |
+| NVO (NVO) | 2026-04-14 | aufwaerts | 239.3 | 0.628 | 2.298 | 125 |
+| NVO (NVO) | 2026-09-09 | abwaerts | 291.65 | 0.2 | 0.566 | 23 |
+| NVO (NVO) | 2026-09-11 | abwaerts | 285.7 | 0.45 | 1.295 | 21 |
+| NVS (NVS) | 2026-09-07 | abwaerts | 129.4 | 1.677 | 3.679 | 25 |
+| NVS (NVS) | 2026-09-08 | abwaerts | 124.6 | 3.102 | 8.989 | 24 |
+| NXPI (NXPI) | 2026-04-08 | aufwaerts | 196.88 | 1.19 | 4.607 | 129 |
+| NXPI (NXPI) | 2026-06-23 | abwaerts | 316.0 | 0.522 | 2.671 | 77 |
+| NXPI (NXPI) | 2026-07-29 | abwaerts | 259.1 | 0.462 | 2.37 | 52 |
+| NXPI (NXPI) | 2026-10-07 | abwaerts | 240.45 | 0.267 | 0.836 | 3 |
+| ODFL (ODFL) | 2026-07-29 | abwaerts | 225.82 | 0.55 | 1.851 | 52 |
+| ON (ON) | 2026-01-02 | aufwaerts | 54.6 | 0.382 | 1.19 | 194 |
+| ON (ON) | 2026-04-08 | aufwaerts | 64.0 | 1.182 | 5.469 | 129 |
+| ON (ON) | 2026-06-23 | abwaerts | 125.19 | 0.223 | 1.558 | 77 |
+| ON (ON) | 2026-06-26 | abwaerts | 112.16 | 1.373 | 12.366 | 74 |
+| ON (ON) | 2026-07-10 | abwaerts | 97.68 | 0.165 | 1.392 | 65 |
+| ON (ON) | 2026-09-25 | aufwaerts | 73.3 | 0.272 | 1.323 | 11 |
+| ON (ON) | 2026-10-07 | abwaerts | 85.22 | 0.292 | 1.185 | 3 |
+| ON (ON) | 2026-10-08 | abwaerts | 82.05 | 0.452 | 1.926 | 2 |
+| ORCL (ORCL) | 2025-10-30 | abwaerts | 271.35 | 0.203 | 0.962 | 237 |
+| ORCL (ORCL) | 2026-06-11 | abwaerts | 198.18 | 1.315 | 9.34 | 84 |
+| ORCL (ORCL) | 2026-06-23 | abwaerts | 174.4 | 0.344 | 2.391 | 77 |
+| ORLY (ORLY) | 2026-08-27 | abwaerts | 89.35 | 0.3 | 0.75 | 31 |
+| Palladium (PA=F) | 2026-01-30 | abwaerts | 2000.6 | 1.71 | 8.727 | 80 |
+| Palladium (PA=F) | 2026-03-03 | abwaerts | 1757.0 | 1.207 | 6.061 | 69 |
+| Palladium (PA=F) | 2026-03-17 | abwaerts | 1621.9 | 0.119 | 0.487 | 62 |
+| Palladium (PA=F) | 2026-03-19 | abwaerts | 1614.0 | 2.413 | 11.115 | 61 |
+| Palladium (PA=F) | 2026-04-20 | abwaerts | 1590.4 | 0.701 | 1.937 | 47 |
+| Palladium (PA=F) | 2026-04-23 | abwaerts | 1559.6 | 1.625 | 4.809 | 46 |
+| Palladium (PA=F) | 2026-05-15 | abwaerts | 1531.0 | 2.713 | 7.061 | 35 |
+| Palladium (PA=F) | 2026-09-08 | abwaerts | 1421.5 | 0.433 | 1.548 | 7 |
+| Palladium (PA=F) | 2026-09-11 | abwaerts | 1355.6 | 1.204 | 4.618 | 6 |
+| Palladium (PA=F) | 2026-09-28 | abwaerts | 1284.5 | 1.289 | 5.099 | 3 |
+| Palladium (PA=F) | 2026-10-09 | abwaerts | 1201.6 | 1.457 | 6.0 | 1 |
+| PAH3.DE (PAH3.DE) | 2026-03-02 | abwaerts | 35.92 | 1.558 | 3.174 | 157 |
+| PAH3.DE (PAH3.DE) | 2026-06-17 | abwaerts | 30.86 | 0.497 | 1.167 | 83 |
+| PAH3.DE (PAH3.DE) | 2026-09-21 | abwaerts | 27.98 | 0.38 | 1.144 | 15 |
+| PANW (PANW) | 2026-03-30 | aufwaerts | 149.37 | 0.375 | 1.727 | 135 |
+| PANW (PANW) | 2026-05-07 | aufwaerts | 184.98 | 0.785 | 3.13 | 108 |
+| PAYX (PAYX) | 2026-09-08 | abwaerts | 121.65 | 0.418 | 1.102 | 24 |
+| PAYX (PAYX) | 2026-09-23 | abwaerts | 113.32 | 1.12 | 3.221 | 13 |
+| PDD (PDD) | 2025-11-14 | abwaerts | 133.94 | 0.715 | 1.74 | 226 |
+| PDD (PDD) | 2025-11-18 | abwaerts | 128.86 | 1.529 | 4.408 | 224 |
+| PDD (PDD) | 2026-01-13 | abwaerts | 117.11 | 1.219 | 4.005 | 187 |
+| PDD (PDD) | 2026-01-14 | abwaerts | 110.66 | 0.951 | 3.452 | 186 |
+| PDD (PDD) | 2026-05-27 | abwaerts | 94.5 | 1.558 | 6.148 | 95 |
+| PDD (PDD) | 2026-10-09 | aufwaerts | 78.94 | 0.19 | 0.456 | 1 |
+| PEP (PEP) | 2026-08-25 | abwaerts | 144.38 | 0.244 | 0.45 | 33 |
+| PEP (PEP) | 2026-09-15 | abwaerts | 136.15 | 0.172 | 0.279 | 19 |
+| PEP (PEP) | 2026-09-18 | abwaerts | 132.93 | 0.312 | 0.542 | 16 |
+| PFE (PFE) | 2026-08-18 | aufwaerts | 27.02 | 0.236 | 0.481 | 38 |
+| PG (PG) | 2026-03-03 | abwaerts | 163.45 | 0.398 | 0.771 | 154 |
+| PG (PG) | 2026-03-05 | abwaerts | 157.31 | 0.115 | 0.235 | 152 |
+| PG (PG) | 2026-10-06 | aufwaerts | 146.09 | 0.797 | 1.321 | 4 |
+| PGR (PGR) | 2026-07-15 | abwaerts | 225.77 | 2.553 | 7.862 | 62 |
+| PH (PH) | 2025-11-06 | aufwaerts | 779.99 | 2.321 | 6.304 | 232 |
 | Platin (PL=F) | 2025-11-12 | aufwaerts | 1528.3 | 1.942 | 6.151 | 112 |
 | Platin (PL=F) | 2026-01-28 | abwaerts | 2852.3999 | 2.251 | 8.649 | 87 |
 | Platin (PL=F) | 2026-01-30 | abwaerts | 2597.3999 | 0.977 | 4.905 | 85 |
@@ -1756,239 +1766,245 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | Platin (PL=F) | 2026-05-22 | abwaerts | 1955.1 | 0.374 | 1.202 | 36 |
 | Platin (PL=F) | 2026-06-03 | abwaerts | 1922.2 | 0.961 | 2.783 | 32 |
 | Platin (PL=F) | 2026-07-30 | aufwaerts | 1590.1 | 0.49 | 1.384 | 15 |
+| Platin (PL=F) | 2026-08-19 | aufwaerts | 1650.3 | 3.063 | 9.229 | 13 |
 | Platin (PL=F) | 2026-09-18 | abwaerts | 1904.2 | 1.98 | 5.735 | 9 |
 | Platin (PL=F) | 2026-09-28 | abwaerts | 1791.1 | 1.229 | 3.903 | 7 |
-| PLD (PLD) | 2025-10-15 | aufwaerts | 115.71 | 0.35 | 0.83 | 247 |
-| PLD (PLD) | 2026-08-31 | abwaerts | 140.41 | 0.18 | 0.292 | 28 |
-| PLTR (PLTR) | 2026-06-29 | aufwaerts | 114.08 | 0.33 | 1.885 | 72 |
-| PLTR (PLTR) | 2026-08-03 | aufwaerts | 123.39 | 0.524 | 2.683 | 48 |
-| PLTR (PLTR) | 2026-08-04 | aufwaerts | 126.965 | 2.103 | 14.319 | 47 |
-| PLTR (PLTR) | 2026-08-07 | aufwaerts | 158.0 | 0.231 | 1.31 | 44 |
-| PLTR (PLTR) | 2026-10-08 | aufwaerts | 194.7 | 0.681 | 2.209 | 1 |
-| PM (PM) | 2026-10-08 | aufwaerts | 192.87 | 0.42 | 1.021 | 1 |
-| PSX (PSX) | 2026-01-05 | aufwaerts | 130.63 | 1.534 | 4.111 | 192 |
-| PSX (PSX) | 2026-02-04 | aufwaerts | 148.1 | 0.434 | 1.283 | 171 |
-| PSX (PSX) | 2026-07-08 | aufwaerts | 180.89 | 0.274 | 0.857 | 66 |
-| PSX (PSX) | 2026-08-10 | aufwaerts | 206.04 | 0.269 | 0.908 | 43 |
-| PYPL (PYPL) | 2025-11-14 | abwaerts | 65.15 | 0.438 | 1.596 | 225 |
-| PYPL (PYPL) | 2026-06-15 | aufwaerts | 41.59 | 0.62 | 1.847 | 81 |
-| PYPL (PYPL) | 2026-07-10 | aufwaerts | 45.38 | 0.404 | 1.256 | 64 |
-| PYPL (PYPL) | 2026-07-15 | aufwaerts | 47.39 | 3.822 | 15.731 | 61 |
-| PYPL (PYPL) | 2026-08-28 | abwaerts | 61.37 | 3.88 | 12.441 | 29 |
-| QCOM (QCOM) | 2026-04-08 | aufwaerts | 125.41 | 0.84 | 2.584 | 128 |
-| QCOM (QCOM) | 2026-04-24 | aufwaerts | 136.99 | 1.959 | 6.292 | 116 |
-| QCOM (QCOM) | 2026-08-04 | aufwaerts | 151.68 | 0.545 | 3.494 | 47 |
-| QIA.DE (QIA.DE) | 2026-01-27 | abwaerts | 46.325 | 0.354 | 0.993 | 180 |
-| QIA.DE (QIA.DE) | 2026-02-17 | abwaerts | 42.73 | 0.478 | 1.381 | 165 |
-| QIA.DE (QIA.DE) | 2026-06-04 | aufwaerts | 31.005 | 0.349 | 1.0 | 91 |
-| REGN (REGN) | 2025-10-28 | aufwaerts | 586.15 | 1.311 | 4.414 | 238 |
-| REGN (REGN) | 2026-09-08 | abwaerts | 825.83 | 0.546 | 1.389 | 23 |
-| REGN (REGN) | 2026-09-28 | abwaerts | 784.13 | 0.292 | 0.77 | 9 |
-| RHM.DE (RHM.DE) | 2026-05-08 | abwaerts | 1326.4 | 0.115 | 0.573 | 110 |
-| RHM.DE (RHM.DE) | 2026-09-01 | abwaerts | 1110.8 | 0.151 | 0.594 | 28 |
-| RIO (RIO) | 2025-12-10 | aufwaerts | 55.38 | 0.293 | 0.596 | 209 |
-| RIO (RIO) | 2026-06-04 | abwaerts | 80.39 | 0.117 | 0.547 | 90 |
-| RIO (RIO) | 2026-10-09 | aufwaerts | 70.37 | 0.324 | 0.782 | 0 |
-| ROP (ROP) | 2025-10-23 | abwaerts | 508.57 | 3.416 | 8.162 | 241 |
-| ROP (ROP) | 2026-09-08 | abwaerts | 405.57 | 0.326 | 0.9 | 23 |
-| ROP (ROP) | 2026-09-15 | abwaerts | 393.93 | 0.638 | 1.744 | 18 |
-| ROP (ROP) | 2026-09-16 | abwaerts | 382.18 | 0.397 | 1.117 | 17 |
-| ROST (ROST) | 2025-12-10 | aufwaerts | 177.69 | 0.14 | 0.253 | 208 |
-| ROST (ROST) | 2026-03-04 | aufwaerts | 199.33 | 2.965 | 7.736 | 152 |
-| RTX (RTX) | 2025-10-20 | aufwaerts | 158.54 | 0.354 | 0.713 | 244 |
-| RTX (RTX) | 2025-10-21 | aufwaerts | 162.07 | 2.291 | 6.01 | 243 |
-| RWE.DE (RWE.DE) | 2026-01-06 | aufwaerts | 47.24 | 0.106 | 0.191 | 195 |
-| RY (RY) | 2026-04-08 | aufwaerts | 165.6 | 1.294 | 2.289 | 128 |
-| RY (RY) | 2026-09-09 | abwaerts | 208.8 | 0.328 | 0.532 | 22 |
-| RY (RY) | 2026-10-07 | abwaerts | 195.4 | 0.333 | 0.542 | 2 |
-| SAN (SAN) | 2026-06-12 | aufwaerts | 10.62 | 0.829 | 2.166 | 85 |
-| SAN (SAN) | 2026-06-15 | aufwaerts | 11.026 | 0.941 | 2.485 | 84 |
-| SAP.DE (SAP.DE) | 2025-10-29 | abwaerts | 232.75 | 0.171 | 0.451 | 239 |
-| SAP.DE (SAP.DE) | 2026-01-29 | abwaerts | 194.34 | 1.985 | 7.893 | 178 |
-| SAP.DE (SAP.DE) | 2026-07-27 | aufwaerts | 141.32 | 0.179 | 0.75 | 54 |
-| SAP.DE (SAP.DE) | 2026-08-03 | aufwaerts | 158.26 | 0.267 | 1.099 | 49 |
-| SAP.DE (SAP.DE) | 2026-09-14 | aufwaerts | 178.84 | 0.328 | 1.107 | 19 |
-| Zucker (SB=F) | 2026-10-01 | aufwaerts | 18.01 | 0.977 | 3.331 | 6 |
-| SBUX (SBUX) | 2026-09-09 | abwaerts | 101.75 | 0.447 | 1.091 | 22 |
-| SCCO (SCCO) | 2025-11-25 | aufwaerts | 123.5372 | 0.372 | 1.351 | 218 |
-| SCCO (SCCO) | 2025-12-03 | aufwaerts | 132.0008 | 0.813 | 2.632 | 213 |
-| SCCO (SCCO) | 2026-01-02 | aufwaerts | 140.4644 | 0.46 | 1.341 | 193 |
-| SCCO (SCCO) | 2026-01-05 | aufwaerts | 144.6864 | 0.989 | 2.932 | 192 |
-| SCCO (SCCO) | 2026-07-09 | aufwaerts | 166.581 | 0.564 | 2.693 | 65 |
-| SCCO (SCCO) | 2026-10-09 | aufwaerts | 201.23 | 0.285 | 1.063 | 0 |
-| SCHW (SCHW) | 2026-08-26 | abwaerts | 112.08 | 1.671 | 3.417 | 31 |
-| SHEL (SHEL) | 2026-09-01 | aufwaerts | 33.4453 | 0.833 | 1.643 | 28 |
-| SHL.DE (SHL.DE) | 2025-11-05 | abwaerts | 48.46 | 4.388 | 10.235 | 234 |
-| SHL.DE (SHL.DE) | 2026-01-19 | abwaerts | 46.3 | 1.633 | 2.765 | 186 |
-| SHL.DE (SHL.DE) | 2026-03-02 | abwaerts | 42.0 | 1.67 | 3.571 | 156 |
-| SHL.DE (SHL.DE) | 2026-07-27 | aufwaerts | 35.06 | 0.617 | 1.54 | 54 |
-| SHL.DE (SHL.DE) | 2026-10-09 | aufwaerts | 38.56 | 0.25 | 0.519 | 0 |
-| SHOP (SHOP) | 2026-07-27 | aufwaerts | 114.6 | 0.573 | 3.137 | 53 |
-| SHOP (SHOP) | 2026-08-05 | aufwaerts | 123.695 | 3.27 | 21.266 | 46 |
-| SHW (SHW) | 2026-06-03 | aufwaerts | 295.57 | 0.594 | 1.671 | 89 |
-| SHW (SHW) | 2026-08-31 | abwaerts | 343.0 | 0.183 | 0.437 | 28 |
-| Silber (SI=F) | 2025-11-05 | aufwaerts | 47.13 | 0.317 | 0.912 | 229 |
-| Silber (SI=F) | 2025-11-07 | aufwaerts | 47.794 | 0.198 | 0.494 | 227 |
-| Silber (SI=F) | 2025-11-10 | aufwaerts | 48.04 | 1.158 | 3.039 | 226 |
-| Silber (SI=F) | 2025-11-25 | aufwaerts | 50.295 | 0.406 | 1.094 | 215 |
-| Silber (SI=F) | 2026-05-15 | abwaerts | 84.9 | 1.136 | 5.053 | 98 |
-| Silber (SI=F) | 2026-05-27 | abwaerts | 76.095 | 0.491 | 2.004 | 91 |
-| Silber (SI=F) | 2026-06-03 | abwaerts | 75.311 | 0.684 | 2.437 | 86 |
-| Silber (SI=F) | 2026-06-05 | abwaerts | 73.09 | 0.187 | 0.705 | 84 |
-| Silber (SI=F) | 2026-08-04 | aufwaerts | 57.8 | 0.175 | 0.519 | 46 |
-| Silber (SI=F) | 2026-09-24 | abwaerts | 64.382 | 0.613 | 1.525 | 11 |
-| Silber (SI=F) | 2026-09-28 | abwaerts | 63.625 | 1.357 | 3.521 | 9 |
-| Silber (SI=F) | 2026-10-09 | aufwaerts | 59.064 | 0.267 | 0.67 | 0 |
-| SIE.DE (SIE.DE) | 2026-04-08 | aufwaerts | 215.55 | 1.585 | 6.704 | 131 |
-| SIE.DE (SIE.DE) | 2026-04-14 | aufwaerts | 229.65 | 0.196 | 0.74 | 127 |
-| SKHY (SKHY) | 2025-10-24 | aufwaerts | 488500.0 | 0.213 | 0.921 | 233 |
-| SKHY (SKHY) | 2025-12-23 | aufwaerts | 580000.0 | 0.189 | 0.862 | 191 |
-| SKHY (SKHY) | 2025-12-29 | aufwaerts | 605000.0 | 0.975 | 4.132 | 188 |
-| SKHY (SKHY) | 2026-04-08 | aufwaerts | 933000.0 | 1.086 | 7.931 | 122 |
-| SKHY (SKHY) | 2026-04-14 | aufwaerts | 1043000.0 | 0.751 | 4.698 | 118 |
-| SKHY (SKHY) | 2026-04-21 | aufwaerts | 1175000.0 | 0.349 | 1.787 | 113 |
-| SKHY (SKHY) | 2026-04-27 | aufwaerts | 1242000.0 | 0.177 | 0.886 | 109 |
-| SKHY (SKHY) | 2026-07-02 | abwaerts | 2502000.0 | 0.68 | 6.035 | 65 |
-| SKHY (SKHY) | 2026-07-16 | abwaerts | 2070000.0 | 0.701 | 8.116 | 55 |
+| Platin (PL=F) | 2026-10-06 | abwaerts | 1706.9 | 0.288 | 0.832 | 1 |
+| PLD (PLD) | 2025-10-15 | aufwaerts | 115.71 | 0.35 | 0.83 | 248 |
+| PLD (PLD) | 2026-08-31 | abwaerts | 140.41 | 0.18 | 0.292 | 29 |
+| PLTR (PLTR) | 2026-06-29 | aufwaerts | 114.08 | 0.33 | 1.885 | 73 |
+| PLTR (PLTR) | 2026-08-03 | aufwaerts | 123.39 | 0.524 | 2.683 | 49 |
+| PLTR (PLTR) | 2026-08-04 | aufwaerts | 126.965 | 2.103 | 14.319 | 48 |
+| PLTR (PLTR) | 2026-08-07 | aufwaerts | 158.0 | 0.231 | 1.31 | 45 |
+| PLTR (PLTR) | 2026-10-08 | aufwaerts | 194.7 | 0.681 | 2.209 | 2 |
+| PM (PM) | 2026-10-08 | aufwaerts | 192.87 | 0.42 | 1.021 | 2 |
+| PSX (PSX) | 2026-01-05 | aufwaerts | 130.63 | 1.534 | 4.111 | 193 |
+| PSX (PSX) | 2026-02-04 | aufwaerts | 148.1 | 0.434 | 1.283 | 172 |
+| PSX (PSX) | 2026-07-08 | aufwaerts | 180.89 | 0.274 | 0.857 | 67 |
+| PSX (PSX) | 2026-08-10 | aufwaerts | 206.04 | 0.269 | 0.908 | 44 |
+| PYPL (PYPL) | 2025-11-14 | abwaerts | 65.15 | 0.438 | 1.596 | 226 |
+| PYPL (PYPL) | 2026-06-15 | aufwaerts | 41.59 | 0.62 | 1.847 | 82 |
+| PYPL (PYPL) | 2026-07-10 | aufwaerts | 45.38 | 0.404 | 1.256 | 65 |
+| PYPL (PYPL) | 2026-07-15 | aufwaerts | 47.39 | 3.822 | 15.731 | 62 |
+| PYPL (PYPL) | 2026-08-28 | abwaerts | 61.37 | 3.88 | 12.441 | 30 |
+| QCOM (QCOM) | 2026-04-08 | aufwaerts | 125.41 | 0.84 | 2.584 | 129 |
+| QCOM (QCOM) | 2026-04-24 | aufwaerts | 136.99 | 1.959 | 6.292 | 117 |
+| QCOM (QCOM) | 2026-08-04 | aufwaerts | 151.68 | 0.545 | 3.494 | 48 |
+| QIA.DE (QIA.DE) | 2026-01-27 | abwaerts | 46.325 | 0.354 | 0.993 | 181 |
+| QIA.DE (QIA.DE) | 2026-02-17 | abwaerts | 42.73 | 0.478 | 1.381 | 166 |
+| QIA.DE (QIA.DE) | 2026-06-04 | aufwaerts | 31.005 | 0.349 | 1.0 | 92 |
+| REGN (REGN) | 2025-10-28 | aufwaerts | 586.15 | 1.311 | 4.414 | 239 |
+| REGN (REGN) | 2026-09-08 | abwaerts | 825.83 | 0.546 | 1.389 | 24 |
+| REGN (REGN) | 2026-09-28 | abwaerts | 784.13 | 0.292 | 0.77 | 10 |
+| RHM.DE (RHM.DE) | 2026-05-08 | abwaerts | 1326.4 | 0.115 | 0.573 | 111 |
+| RHM.DE (RHM.DE) | 2026-09-01 | abwaerts | 1110.8 | 0.151 | 0.594 | 29 |
+| RIO (RIO) | 2025-12-10 | aufwaerts | 55.38 | 0.293 | 0.596 | 210 |
+| RIO (RIO) | 2026-06-04 | abwaerts | 80.39 | 0.117 | 0.547 | 91 |
+| RIO (RIO) | 2026-10-09 | aufwaerts | 70.37 | 0.324 | 0.782 | 1 |
+| ROP (ROP) | 2025-10-23 | abwaerts | 508.57 | 3.416 | 8.162 | 242 |
+| ROP (ROP) | 2026-09-08 | abwaerts | 405.57 | 0.326 | 0.9 | 24 |
+| ROP (ROP) | 2026-09-15 | abwaerts | 393.93 | 0.638 | 1.744 | 19 |
+| ROP (ROP) | 2026-09-16 | abwaerts | 382.18 | 0.397 | 1.117 | 18 |
+| ROST (ROST) | 2025-12-10 | aufwaerts | 177.69 | 0.14 | 0.253 | 209 |
+| ROST (ROST) | 2026-03-04 | aufwaerts | 199.33 | 2.965 | 7.736 | 153 |
+| RTX (RTX) | 2025-10-20 | aufwaerts | 158.54 | 0.354 | 0.713 | 245 |
+| RTX (RTX) | 2025-10-21 | aufwaerts | 162.07 | 2.291 | 6.01 | 244 |
+| RWE.DE (RWE.DE) | 2026-01-06 | aufwaerts | 47.24 | 0.106 | 0.191 | 196 |
+| RWE.DE (RWE.DE) | 2026-10-12 | aufwaerts | 58.24 | 0.319 | 0.687 | 0 |
+| RY (RY) | 2026-04-08 | aufwaerts | 165.6 | 1.294 | 2.289 | 129 |
+| RY (RY) | 2026-09-09 | abwaerts | 208.8 | 0.328 | 0.532 | 23 |
+| RY (RY) | 2026-10-07 | abwaerts | 195.4 | 0.333 | 0.542 | 3 |
+| SAN (SAN) | 2026-06-12 | aufwaerts | 10.62 | 0.829 | 2.166 | 86 |
+| SAN (SAN) | 2026-06-15 | aufwaerts | 11.026 | 0.941 | 2.485 | 85 |
+| SAP.DE (SAP.DE) | 2025-10-29 | abwaerts | 232.75 | 0.171 | 0.451 | 240 |
+| SAP.DE (SAP.DE) | 2026-07-27 | aufwaerts | 141.32 | 0.179 | 0.75 | 55 |
+| SAP.DE (SAP.DE) | 2026-08-03 | aufwaerts | 158.26 | 0.267 | 1.099 | 50 |
+| SAP.DE (SAP.DE) | 2026-09-14 | aufwaerts | 178.84 | 0.328 | 1.107 | 20 |
+| Zucker (SB=F) | 2026-10-01 | aufwaerts | 18.01 | 0.977 | 3.331 | 7 |
+| SBUX (SBUX) | 2026-09-09 | abwaerts | 101.75 | 0.447 | 1.091 | 23 |
+| SCCO (SCCO) | 2025-11-25 | aufwaerts | 123.5372 | 0.372 | 1.351 | 219 |
+| SCCO (SCCO) | 2025-12-03 | aufwaerts | 132.0008 | 0.813 | 2.632 | 214 |
+| SCCO (SCCO) | 2026-01-02 | aufwaerts | 140.4644 | 0.46 | 1.341 | 194 |
+| SCCO (SCCO) | 2026-01-05 | aufwaerts | 144.6864 | 0.989 | 2.932 | 193 |
+| SCCO (SCCO) | 2026-07-09 | aufwaerts | 166.581 | 0.564 | 2.693 | 66 |
+| SCCO (SCCO) | 2026-10-09 | aufwaerts | 201.23 | 0.285 | 1.063 | 1 |
+| SCHW (SCHW) | 2026-08-26 | abwaerts | 112.08 | 1.671 | 3.417 | 32 |
+| SHEL (SHEL) | 2026-09-01 | aufwaerts | 33.4453 | 0.833 | 1.643 | 29 |
+| SHL.DE (SHL.DE) | 2025-11-05 | abwaerts | 48.46 | 4.388 | 10.235 | 235 |
+| SHL.DE (SHL.DE) | 2026-01-19 | abwaerts | 46.3 | 1.633 | 2.765 | 187 |
+| SHL.DE (SHL.DE) | 2026-03-02 | abwaerts | 42.0 | 1.67 | 3.571 | 157 |
+| SHL.DE (SHL.DE) | 2026-07-27 | aufwaerts | 35.06 | 0.617 | 1.54 | 55 |
+| SHL.DE (SHL.DE) | 2026-10-09 | aufwaerts | 38.56 | 0.25 | 0.519 | 1 |
+| SHOP (SHOP) | 2026-07-27 | aufwaerts | 114.6 | 0.573 | 3.137 | 54 |
+| SHOP (SHOP) | 2026-08-05 | aufwaerts | 123.695 | 3.27 | 21.266 | 47 |
+| SHOP (SHOP) | 2026-10-12 | aufwaerts | 171.045 | 0.424 | 1.669 | 0 |
+| SHW (SHW) | 2026-06-03 | aufwaerts | 295.57 | 0.594 | 1.671 | 90 |
+| SHW (SHW) | 2026-08-31 | abwaerts | 343.0 | 0.183 | 0.437 | 29 |
+| Silber (SI=F) | 2025-11-05 | aufwaerts | 47.13 | 0.317 | 0.912 | 230 |
+| Silber (SI=F) | 2025-11-07 | aufwaerts | 47.794 | 0.198 | 0.494 | 228 |
+| Silber (SI=F) | 2025-11-10 | aufwaerts | 48.04 | 1.158 | 3.039 | 227 |
+| Silber (SI=F) | 2025-11-25 | aufwaerts | 50.295 | 0.406 | 1.094 | 216 |
+| Silber (SI=F) | 2026-05-15 | abwaerts | 84.9 | 1.136 | 5.053 | 99 |
+| Silber (SI=F) | 2026-05-27 | abwaerts | 76.095 | 0.491 | 2.004 | 92 |
+| Silber (SI=F) | 2026-06-03 | abwaerts | 75.311 | 0.684 | 2.437 | 87 |
+| Silber (SI=F) | 2026-06-05 | abwaerts | 73.09 | 0.187 | 0.705 | 85 |
+| Silber (SI=F) | 2026-08-04 | aufwaerts | 57.8 | 0.175 | 0.519 | 47 |
+| Silber (SI=F) | 2026-09-24 | abwaerts | 64.382 | 0.613 | 1.525 | 12 |
+| Silber (SI=F) | 2026-09-28 | abwaerts | 63.625 | 1.357 | 3.521 | 10 |
+| Silber (SI=F) | 2026-10-09 | aufwaerts | 59.064 | 0.267 | 0.67 | 1 |
+| SIE.DE (SIE.DE) | 2026-04-08 | aufwaerts | 215.55 | 1.585 | 6.704 | 132 |
+| SIE.DE (SIE.DE) | 2026-04-14 | aufwaerts | 229.65 | 0.196 | 0.74 | 128 |
+| SKHY (SKHY) | 2025-10-24 | aufwaerts | 488500.0 | 0.213 | 0.921 | 234 |
+| SKHY (SKHY) | 2025-12-23 | aufwaerts | 580000.0 | 0.189 | 0.862 | 192 |
+| SKHY (SKHY) | 2025-12-29 | aufwaerts | 605000.0 | 0.975 | 4.132 | 189 |
+| SKHY (SKHY) | 2026-04-08 | aufwaerts | 933000.0 | 1.086 | 7.931 | 123 |
+| SKHY (SKHY) | 2026-04-14 | aufwaerts | 1043000.0 | 0.751 | 4.698 | 119 |
+| SKHY (SKHY) | 2026-04-21 | aufwaerts | 1175000.0 | 0.349 | 1.787 | 114 |
+| SKHY (SKHY) | 2026-04-27 | aufwaerts | 1242000.0 | 0.177 | 0.886 | 110 |
+| SKHY (SKHY) | 2026-07-02 | abwaerts | 2502000.0 | 0.68 | 6.035 | 66 |
+| SKHY (SKHY) | 2026-07-16 | abwaerts | 2070000.0 | 0.701 | 8.116 | 56 |
+| SKHY (SKHY) | 2026-10-12 | abwaerts | 1681000.0 | 0.476 | 2.38 | 0 |
 | SMFG (SMFG) | 2025-11-27 | aufwaerts | 2319.0 | 0.432 | 1.056 | 210 |
 | SMFG (SMFG) | 2025-12-01 | aufwaerts | 2360.5 | 0.565 | 1.356 | 208 |
 | SMFG (SMFG) | 2026-04-01 | aufwaerts | 2598.0 | 0.392 | 1.636 | 128 |
 | SMFG (SMFG) | 2026-06-03 | aufwaerts | 2975.5 | 0.552 | 1.496 | 87 |
 | SMFG (SMFG) | 2026-06-12 | aufwaerts | 3116.5 | 0.656 | 1.877 | 80 |
 | SMFG (SMFG) | 2026-10-08 | abwaerts | 3372.0 | 0.338 | 0.89 | 1 |
-| SNDK (SNDK) | 2025-10-15 | aufwaerts | 130.48 | 0.412 | 3.273 | 247 |
-| SNDK (SNDK) | 2025-10-29 | aufwaerts | 178.82 | 0.569 | 4.39 | 237 |
-| SNDK (SNDK) | 2026-01-02 | aufwaerts | 241.9 | 0.12 | 1.013 | 193 |
-| SNDK (SNDK) | 2026-01-06 | aufwaerts | 285.0 | 0.153 | 1.314 | 191 |
-| SNDK (SNDK) | 2026-04-01 | aufwaerts | 636.32 | 0.273 | 2.51 | 132 |
-| SNDK (SNDK) | 2026-04-08 | aufwaerts | 738.006 | 0.77 | 6.232 | 128 |
-| SNDK (SNDK) | 2026-08-12 | aufwaerts | 1287.04 | 0.434 | 5.531 | 41 |
-| SNOW (SNOW) | 2026-05-07 | aufwaerts | 140.63 | 1.471 | 9.102 | 107 |
-| SNOW (SNOW) | 2026-05-22 | aufwaerts | 165.74 | 0.239 | 1.207 | 96 |
-| SNOW (SNOW) | 2026-05-28 | aufwaerts | 179.1 | 4.584 | 32.328 | 93 |
-| SNPS (SNPS) | 2026-10-01 | aufwaerts | 445.57 | 1.159 | 5.0 | 6 |
-| SNY (SNY) | 2026-10-02 | abwaerts | 72.44 | 0.71 | 1.574 | 5 |
-| SO (SO) | 2026-08-27 | abwaerts | 89.67 | 0.426 | 0.747 | 30 |
+| SNDK (SNDK) | 2025-10-15 | aufwaerts | 130.48 | 0.412 | 3.273 | 248 |
+| SNDK (SNDK) | 2025-10-29 | aufwaerts | 178.82 | 0.569 | 4.39 | 238 |
+| SNDK (SNDK) | 2026-01-02 | aufwaerts | 241.9 | 0.12 | 1.013 | 194 |
+| SNDK (SNDK) | 2026-01-06 | aufwaerts | 285.0 | 0.153 | 1.314 | 192 |
+| SNDK (SNDK) | 2026-04-01 | aufwaerts | 636.32 | 0.273 | 2.51 | 133 |
+| SNDK (SNDK) | 2026-04-08 | aufwaerts | 738.006 | 0.77 | 6.232 | 129 |
+| SNDK (SNDK) | 2026-08-12 | aufwaerts | 1287.04 | 0.434 | 5.531 | 42 |
+| SNDK (SNDK) | 2026-10-12 | abwaerts | 1575.6899 | 0.399 | 2.446 | 0 |
+| SNOW (SNOW) | 2026-05-07 | aufwaerts | 140.63 | 1.471 | 9.102 | 108 |
+| SNOW (SNOW) | 2026-05-22 | aufwaerts | 165.74 | 0.239 | 1.207 | 97 |
+| SNOW (SNOW) | 2026-05-28 | aufwaerts | 179.1 | 4.584 | 32.328 | 94 |
+| SNPS (SNPS) | 2026-10-01 | aufwaerts | 445.57 | 1.159 | 5.0 | 7 |
+| SNY (SNY) | 2026-10-02 | abwaerts | 72.44 | 0.71 | 1.574 | 6 |
+| SO (SO) | 2026-08-27 | abwaerts | 89.67 | 0.426 | 0.747 | 31 |
 | SONY (SONY) | 2025-12-01 | abwaerts | 4552.0 | 0.345 | 1.033 | 208 |
 | SONY (SONY) | 2025-12-05 | abwaerts | 4398.0 | 0.676 | 1.864 | 204 |
 | SONY (SONY) | 2026-06-29 | aufwaerts | 3199.0 | 0.17 | 0.531 | 69 |
 | SONY (SONY) | 2026-07-27 | aufwaerts | 3433.0 | 0.219 | 0.583 | 50 |
-| SPCX (SPCX) | 2026-10-07 | abwaerts | 171.39 | 0.458 | 1.902 | 2 |
-| SPG (SPG) | 2025-11-04 | aufwaerts | 177.7 | 0.107 | 0.203 | 233 |
-| SPG (SPG) | 2026-04-08 | aufwaerts | 191.08 | 0.396 | 0.806 | 128 |
-| SPG (SPG) | 2026-08-27 | abwaerts | 216.88 | 0.4 | 0.659 | 30 |
-| SPGI (SPGI) | 2026-02-03 | abwaerts | 495.298 | 1.502 | 3.921 | 172 |
-| STX (STX) | 2025-11-24 | aufwaerts | 240.5 | 0.139 | 1.006 | 219 |
-| STX (STX) | 2025-12-05 | aufwaerts | 266.4 | 0.219 | 1.28 | 211 |
-| STX (STX) | 2026-04-01 | aufwaerts | 392.01 | 0.153 | 1.143 | 132 |
-| STX (STX) | 2026-04-06 | aufwaerts | 429.41 | 0.713 | 5.0 | 130 |
-| STX (STX) | 2026-04-08 | aufwaerts | 468.85 | 1.108 | 7.326 | 128 |
-| STX (STX) | 2026-04-29 | aufwaerts | 592.84 | 2.147 | 12.675 | 113 |
-| STX (STX) | 2026-08-18 | abwaerts | 978.63 | 0.667 | 5.02 | 37 |
-| STX (STX) | 2026-10-06 | abwaerts | 875.0 | 0.308 | 2.043 | 3 |
-| SY1.DE (SY1.DE) | 2026-06-09 | aufwaerts | 76.02 | 0.49 | 1.342 | 88 |
-| SY1.DE (SY1.DE) | 2026-10-09 | aufwaerts | 91.02 | 0.257 | 0.483 | 0 |
-| SYK (SYK) | 2026-03-05 | abwaerts | 380.87 | 0.435 | 0.982 | 151 |
-| SYK (SYK) | 2026-03-06 | abwaerts | 368.44 | 0.208 | 0.508 | 150 |
-| SYK (SYK) | 2026-09-08 | abwaerts | 302.51 | 0.135 | 0.499 | 23 |
-| T (T) | 2026-04-08 | abwaerts | 27.92 | 1.053 | 2.471 | 128 |
-| T (T) | 2026-10-09 | abwaerts | 24.5 | 3.174 | 8.653 | 0 |
-| TD (TD) | 2025-12-05 | aufwaerts | 86.34 | 0.373 | 0.591 | 211 |
-| TD (TD) | 2025-12-10 | aufwaerts | 89.24 | 0.159 | 0.247 | 208 |
-| TD (TD) | 2026-04-08 | aufwaerts | 97.06 | 0.939 | 1.741 | 128 |
-| TD (TD) | 2026-10-07 | abwaerts | 117.8 | 0.507 | 0.908 | 2 |
-| TEAM (TEAM) | 2026-05-01 | aufwaerts | 69.585 | 2.313 | 19.164 | 111 |
-| TEAM (TEAM) | 2026-07-01 | aufwaerts | 79.2 | 0.25 | 1.793 | 70 |
-| TEAM (TEAM) | 2026-07-27 | aufwaerts | 87.09 | 0.455 | 3.491 | 53 |
-| TEAM (TEAM) | 2026-08-03 | aufwaerts | 101.62 | 0.496 | 3.395 | 48 |
-| TEAM (TEAM) | 2026-08-07 | aufwaerts | 110.88 | 3.672 | 30.894 | 44 |
-| TJX (TJX) | 2026-08-12 | abwaerts | 155.49 | 0.539 | 1.19 | 41 |
-| TJX (TJX) | 2026-08-19 | abwaerts | 150.85 | 1.856 | 4.448 | 36 |
+| SPCX (SPCX) | 2026-10-07 | abwaerts | 171.39 | 0.458 | 1.902 | 3 |
+| SPG (SPG) | 2025-11-04 | aufwaerts | 177.7 | 0.107 | 0.203 | 234 |
+| SPG (SPG) | 2026-04-08 | aufwaerts | 191.08 | 0.396 | 0.806 | 129 |
+| SPG (SPG) | 2026-08-27 | abwaerts | 216.88 | 0.4 | 0.659 | 31 |
+| SPGI (SPGI) | 2026-02-03 | abwaerts | 495.298 | 1.502 | 3.921 | 173 |
+| SPGI (SPGI) | 2026-10-12 | aufwaerts | 408.66 | 0.154 | 0.328 | 0 |
+| STX (STX) | 2025-11-24 | aufwaerts | 240.5 | 0.139 | 1.006 | 220 |
+| STX (STX) | 2025-12-05 | aufwaerts | 266.4 | 0.219 | 1.28 | 212 |
+| STX (STX) | 2026-04-01 | aufwaerts | 392.01 | 0.153 | 1.143 | 133 |
+| STX (STX) | 2026-04-06 | aufwaerts | 429.41 | 0.713 | 5.0 | 131 |
+| STX (STX) | 2026-04-08 | aufwaerts | 468.85 | 1.108 | 7.326 | 129 |
+| STX (STX) | 2026-04-29 | aufwaerts | 592.84 | 2.147 | 12.675 | 114 |
+| STX (STX) | 2026-08-18 | abwaerts | 978.63 | 0.667 | 5.02 | 38 |
+| STX (STX) | 2026-10-06 | abwaerts | 875.0 | 0.308 | 2.043 | 4 |
+| SY1.DE (SY1.DE) | 2026-06-09 | aufwaerts | 76.02 | 0.49 | 1.342 | 89 |
+| SY1.DE (SY1.DE) | 2026-10-09 | aufwaerts | 91.02 | 0.257 | 0.483 | 1 |
+| SYK (SYK) | 2026-03-05 | abwaerts | 380.87 | 0.435 | 0.982 | 152 |
+| SYK (SYK) | 2026-03-06 | abwaerts | 368.44 | 0.208 | 0.508 | 151 |
+| SYK (SYK) | 2026-09-08 | abwaerts | 302.51 | 0.135 | 0.499 | 24 |
+| T (T) | 2026-04-08 | abwaerts | 27.92 | 1.053 | 2.471 | 129 |
+| T (T) | 2026-10-09 | abwaerts | 24.5 | 3.174 | 8.653 | 1 |
+| TD (TD) | 2025-12-05 | aufwaerts | 86.34 | 0.373 | 0.591 | 212 |
+| TD (TD) | 2025-12-10 | aufwaerts | 89.24 | 0.159 | 0.247 | 209 |
+| TD (TD) | 2026-04-08 | aufwaerts | 97.06 | 0.939 | 1.741 | 129 |
+| TD (TD) | 2026-10-07 | abwaerts | 117.8 | 0.507 | 0.908 | 3 |
+| TEAM (TEAM) | 2026-05-01 | aufwaerts | 69.585 | 2.313 | 19.164 | 112 |
+| TEAM (TEAM) | 2026-07-01 | aufwaerts | 79.2 | 0.25 | 1.793 | 71 |
+| TEAM (TEAM) | 2026-07-27 | aufwaerts | 87.09 | 0.455 | 3.491 | 54 |
+| TEAM (TEAM) | 2026-08-03 | aufwaerts | 101.62 | 0.496 | 3.395 | 49 |
+| TEAM (TEAM) | 2026-08-07 | aufwaerts | 110.88 | 3.672 | 30.894 | 45 |
+| TJX (TJX) | 2026-08-12 | abwaerts | 155.49 | 0.539 | 1.19 | 42 |
+| TJX (TJX) | 2026-08-19 | abwaerts | 150.85 | 1.856 | 4.448 | 37 |
 | TM (TM) | 2026-04-21 | abwaerts | 3380.0 | 0.378 | 1.036 | 114 |
 | TM (TM) | 2026-04-22 | abwaerts | 3280.0 | 0.65 | 1.829 | 113 |
 | TM (TM) | 2026-09-08 | abwaerts | 3088.0 | 0.616 | 1.554 | 20 |
 | TM (TM) | 2026-09-29 | abwaerts | 2986.5 | 0.96 | 2.059 | 8 |
-| TMO (TMO) | 2026-05-28 | aufwaerts | 457.4 | 0.262 | 0.842 | 93 |
-| TMO (TMO) | 2026-06-24 | aufwaerts | 471.12 | 0.501 | 1.486 | 75 |
-| TMO (TMO) | 2026-07-23 | aufwaerts | 528.81 | 2.532 | 8.485 | 55 |
-| TMO (TMO) | 2026-08-19 | aufwaerts | 592.22 | 0.187 | 0.488 | 36 |
-| TMUS (TMUS) | 2026-10-09 | abwaerts | 167.92 | 2.238 | 7.39 | 0 |
-| TRV (TRV) | 2026-07-17 | aufwaerts | 337.99 | 0.501 | 1.382 | 59 |
-| TSLA (TSLA) | 2025-12-29 | abwaerts | 473.82 | 0.275 | 1.017 | 196 |
-| TSLA (TSLA) | 2026-10-09 | aufwaerts | 375.96 | 0.542 | 1.708 | 0 |
-| TSM (TSM) | 2026-01-05 | aufwaerts | 1585.0 | 1.347 | 2.839 | 183 |
-| TSM (TSM) | 2026-01-16 | aufwaerts | 1700.0 | 0.979 | 2.059 | 174 |
-| TSM (TSM) | 2026-04-01 | aufwaerts | 1790.0 | 0.988 | 2.793 | 129 |
-| TSM (TSM) | 2026-04-08 | aufwaerts | 1860.0 | 1.39 | 4.032 | 126 |
-| TSM (TSM) | 2026-04-10 | aufwaerts | 1955.0 | 0.389 | 1.023 | 124 |
-| TSM (TSM) | 2026-04-14 | aufwaerts | 1995.0 | 0.395 | 1.003 | 122 |
-| TSM (TSM) | 2026-07-31 | aufwaerts | 2260.0 | 1.156 | 3.982 | 47 |
-| TSM (TSM) | 2026-09-17 | aufwaerts | 2395.0 | 0.24 | 0.418 | 13 |
-| TSM (TSM) | 2026-10-05 | aufwaerts | 2515.0 | 0.868 | 1.392 | 3 |
-| TTD (TTD) | 2026-08-07 | abwaerts | 17.39 | 3.473 | 25.992 | 44 |
-| TTE (TTE) | 2025-10-15 | aufwaerts | 50.36 | 0.487 | 0.973 | 251 |
-| TTE (TTE) | 2026-01-13 | aufwaerts | 55.36 | 0.155 | 0.289 | 190 |
-| TTE (TTE) | 2026-09-29 | abwaerts | 79.92 | 0.298 | 0.613 | 8 |
-| TXN (TXN) | 2026-04-08 | aufwaerts | 200.38 | 1.042 | 3.129 | 128 |
-| TXN (TXN) | 2026-04-09 | aufwaerts | 209.86 | 0.445 | 1.291 | 127 |
-| TXN (TXN) | 2026-04-17 | aufwaerts | 224.02 | 0.693 | 1.893 | 121 |
-| TXN (TXN) | 2026-04-23 | aufwaerts | 238.8 | 2.415 | 9.008 | 117 |
-| TXN (TXN) | 2026-06-23 | abwaerts | 326.04 | 0.83 | 3.72 | 76 |
-| TXN (TXN) | 2026-09-04 | aufwaerts | 254.57 | 0.226 | 0.782 | 24 |
-| TXN (TXN) | 2026-10-07 | abwaerts | 294.23 | 0.46 | 1.268 | 2 |
-| UBER (UBER) | 2025-11-04 | abwaerts | 96.78 | 1.507 | 4.97 | 233 |
-| UBS (UBS) | 2026-04-08 | aufwaerts | 31.95 | 1.039 | 3.286 | 129 |
-| UBS (UBS) | 2026-05-13 | aufwaerts | 34.96 | 0.493 | 1.259 | 105 |
-| UBS (UBS) | 2026-09-15 | abwaerts | 43.29 | 1.038 | 2.402 | 18 |
-| UNH (UNH) | 2026-04-07 | aufwaerts | 283.3 | 2.685 | 9.019 | 129 |
-| UNH (UNH) | 2026-04-21 | aufwaerts | 325.4 | 2.74 | 8.485 | 119 |
-| UNP (UNP) | 2026-04-08 | aufwaerts | 246.75 | 0.774 | 1.516 | 128 |
-| UNP (UNP) | 2026-04-23 | aufwaerts | 254.76 | 1.351 | 3.14 | 117 |
-| UNP (UNP) | 2026-08-31 | abwaerts | 306.67 | 0.247 | 0.47 | 28 |
-| UNP (UNP) | 2026-10-02 | aufwaerts | 272.59 | 0.224 | 0.415 | 5 |
-| UPS (UPS) | 2025-10-28 | aufwaerts | 89.32 | 3.733 | 10.222 | 238 |
-| UPS (UPS) | 2026-07-28 | abwaerts | 112.37 | 1.125 | 3.355 | 52 |
-| USB (USB) | 2025-11-25 | aufwaerts | 47.93 | 0.112 | 0.25 | 218 |
-| VLO (VLO) | 2026-01-05 | aufwaerts | 165.67 | 2.672 | 8.463 | 192 |
-| VLO (VLO) | 2026-03-02 | aufwaerts | 205.03 | 1.481 | 4.858 | 154 |
-| VLO (VLO) | 2026-07-08 | aufwaerts | 269.54 | 0.247 | 0.916 | 66 |
-| VNA.DE (VNA.DE) | 2026-03-19 | abwaerts | 24.37 | 0.529 | 1.97 | 143 |
-| VNA.DE (VNA.DE) | 2026-07-08 | abwaerts | 22.37 | 0.61 | 1.654 | 67 |
-| VNA.DE (VNA.DE) | 2026-08-17 | abwaerts | 20.53 | 0.127 | 0.292 | 39 |
-| VNA.DE (VNA.DE) | 2026-08-31 | abwaerts | 19.815 | 0.272 | 0.555 | 29 |
-| VNA.DE (VNA.DE) | 2026-09-07 | abwaerts | 19.1 | 0.675 | 1.466 | 24 |
-| VOW3.DE (VOW3.DE) | 2026-03-02 | abwaerts | 100.5 | 0.769 | 1.99 | 156 |
-| VOW3.DE (VOW3.DE) | 2026-06-17 | abwaerts | 88.58 | 0.338 | 0.881 | 82 |
-| VOW3.DE (VOW3.DE) | 2026-09-24 | abwaerts | 72.9 | 0.219 | 0.796 | 11 |
-| VRSK (VRSK) | 2025-10-29 | abwaerts | 231.84 | 3.358 | 10.067 | 237 |
-| VRSK (VRSK) | 2026-07-30 | abwaerts | 212.01 | 0.944 | 3.594 | 50 |
-| VRSK (VRSK) | 2026-09-04 | abwaerts | 189.3 | 0.429 | 1.463 | 24 |
-| VRTX (VRTX) | 2026-06-04 | aufwaerts | 429.01 | 0.515 | 1.385 | 88 |
-| VRTX (VRTX) | 2026-09-08 | abwaerts | 544.48 | 1.063 | 2.726 | 23 |
-| VZ (VZ) | 2026-01-30 | aufwaerts | 40.3 | 1.934 | 4.243 | 174 |
-| VZ (VZ) | 2026-10-09 | abwaerts | 45.72 | 2.412 | 6.321 | 0 |
-| WDAY (WDAY) | 2026-07-01 | aufwaerts | 123.3 | 0.768 | 4.428 | 70 |
-| WDAY (WDAY) | 2026-07-27 | aufwaerts | 136.0 | 0.653 | 4.081 | 53 |
-| WDAY (WDAY) | 2026-08-03 | aufwaerts | 160.89 | 0.516 | 3.077 | 48 |
-| WDAY (WDAY) | 2026-08-07 | aufwaerts | 171.4 | 0.307 | 1.692 | 44 |
-| WDC (WDC) | 2025-10-29 | aufwaerts | 126.82 | 0.606 | 3.635 | 237 |
-| WDC (WDC) | 2026-04-01 | aufwaerts | 271.09 | 0.41 | 3.471 | 132 |
-| WDC (WDC) | 2026-04-08 | aufwaerts | 312.2 | 0.995 | 7.303 | 128 |
-| WDC (WDC) | 2026-07-01 | abwaerts | 630.3 | 0.471 | 4.084 | 70 |
-| WMT (WMT) | 2025-11-20 | aufwaerts | 101.71 | 1.01 | 2.193 | 221 |
-| WMT (WMT) | 2026-05-21 | abwaerts | 130.33 | 1.782 | 4.542 | 97 |
-| WMT (WMT) | 2026-06-25 | abwaerts | 118.93 | 0.519 | 1.228 | 74 |
-| WMT (WMT) | 2026-08-20 | abwaerts | 113.99 | 2.48 | 6.676 | 35 |
-| XEL (XEL) | 2026-10-02 | aufwaerts | 70.69 | 0.493 | 0.919 | 5 |
-| XOM (XOM) | 2026-01-13 | aufwaerts | 124.5 | 0.199 | 0.402 | 186 |
-| XOM (XOM) | 2026-07-13 | aufwaerts | 138.97 | 0.553 | 1.403 | 63 |
-| XOM (XOM) | 2026-08-10 | aufwaerts | 153.67 | 0.206 | 0.54 | 43 |
-| ZAL.DE (ZAL.DE) | 2026-08-04 | abwaerts | 28.56 | 1.889 | 8.964 | 48 |
-| ZS (ZS) | 2025-11-14 | abwaerts | 307.2 | 0.329 | 1.12 | 225 |
-| ZS (ZS) | 2025-11-26 | abwaerts | 278.07 | 0.612 | 2.87 | 217 |
-| ZS (ZS) | 2025-12-01 | abwaerts | 249.68 | 0.209 | 1.033 | 215 |
-| ZS (ZS) | 2026-06-29 | aufwaerts | 132.54 | 0.232 | 1.471 | 72 |
-| ZS (ZS) | 2026-09-14 | aufwaerts | 165.95 | 0.676 | 4.128 | 19 |
-| ZS (ZS) | 2026-10-09 | aufwaerts | 218.82 | 0.353 | 1.588 | 0 |
-| Weizen (ZW=F) | 2026-07-10 | aufwaerts | 611.5 | 1.213 | 3.025 | 64 |
-| Weizen (ZW=F) | 2026-09-03 | abwaerts | 751.25 | 0.941 | 2.928 | 25 |
+| TMO (TMO) | 2026-05-28 | aufwaerts | 457.4 | 0.262 | 0.842 | 94 |
+| TMO (TMO) | 2026-06-24 | aufwaerts | 471.12 | 0.501 | 1.486 | 76 |
+| TMO (TMO) | 2026-07-23 | aufwaerts | 528.81 | 2.532 | 8.485 | 56 |
+| TMO (TMO) | 2026-08-19 | aufwaerts | 592.22 | 0.187 | 0.488 | 37 |
+| TMUS (TMUS) | 2026-10-09 | abwaerts | 167.92 | 2.238 | 7.39 | 1 |
+| TRV (TRV) | 2026-07-17 | aufwaerts | 337.99 | 0.501 | 1.382 | 60 |
+| TSLA (TSLA) | 2025-12-29 | abwaerts | 473.82 | 0.275 | 1.017 | 197 |
+| TSLA (TSLA) | 2026-10-09 | aufwaerts | 375.96 | 0.542 | 1.708 | 1 |
+| TSM (TSM) | 2026-01-05 | aufwaerts | 1585.0 | 1.347 | 2.839 | 184 |
+| TSM (TSM) | 2026-01-16 | aufwaerts | 1700.0 | 0.979 | 2.059 | 175 |
+| TSM (TSM) | 2026-04-01 | aufwaerts | 1790.0 | 0.988 | 2.793 | 130 |
+| TSM (TSM) | 2026-04-08 | aufwaerts | 1860.0 | 1.39 | 4.032 | 127 |
+| TSM (TSM) | 2026-04-10 | aufwaerts | 1955.0 | 0.389 | 1.023 | 125 |
+| TSM (TSM) | 2026-04-14 | aufwaerts | 1995.0 | 0.395 | 1.003 | 123 |
+| TSM (TSM) | 2026-07-31 | aufwaerts | 2260.0 | 1.156 | 3.982 | 48 |
+| TSM (TSM) | 2026-09-17 | aufwaerts | 2395.0 | 0.24 | 0.418 | 14 |
+| TTD (TTD) | 2026-08-07 | abwaerts | 17.39 | 3.473 | 25.992 | 45 |
+| TTE (TTE) | 2025-10-15 | aufwaerts | 50.36 | 0.487 | 0.973 | 252 |
+| TTE (TTE) | 2026-01-13 | aufwaerts | 55.36 | 0.155 | 0.289 | 191 |
+| TTE (TTE) | 2026-09-29 | abwaerts | 79.92 | 0.298 | 0.613 | 9 |
+| TXN (TXN) | 2026-04-08 | aufwaerts | 200.38 | 1.042 | 3.129 | 129 |
+| TXN (TXN) | 2026-04-09 | aufwaerts | 209.86 | 0.445 | 1.291 | 128 |
+| TXN (TXN) | 2026-04-17 | aufwaerts | 224.02 | 0.693 | 1.893 | 122 |
+| TXN (TXN) | 2026-04-23 | aufwaerts | 238.8 | 2.415 | 9.008 | 118 |
+| TXN (TXN) | 2026-06-23 | abwaerts | 326.04 | 0.83 | 3.72 | 77 |
+| TXN (TXN) | 2026-09-04 | aufwaerts | 254.57 | 0.226 | 0.782 | 25 |
+| TXN (TXN) | 2026-10-07 | abwaerts | 294.23 | 0.46 | 1.268 | 3 |
+| UBER (UBER) | 2025-11-04 | abwaerts | 96.78 | 1.507 | 4.97 | 234 |
+| UBS (UBS) | 2026-04-08 | aufwaerts | 31.95 | 1.039 | 3.286 | 130 |
+| UBS (UBS) | 2026-05-13 | aufwaerts | 34.96 | 0.493 | 1.259 | 106 |
+| UBS (UBS) | 2026-09-15 | abwaerts | 43.29 | 1.038 | 2.402 | 19 |
+| UNH (UNH) | 2026-04-07 | aufwaerts | 283.3 | 2.685 | 9.019 | 130 |
+| UNH (UNH) | 2026-04-21 | aufwaerts | 325.4 | 2.74 | 8.485 | 120 |
+| UNP (UNP) | 2026-04-08 | aufwaerts | 246.75 | 0.774 | 1.516 | 129 |
+| UNP (UNP) | 2026-04-23 | aufwaerts | 254.76 | 1.351 | 3.14 | 118 |
+| UNP (UNP) | 2026-08-31 | abwaerts | 306.67 | 0.247 | 0.47 | 29 |
+| UNP (UNP) | 2026-10-02 | aufwaerts | 272.59 | 0.224 | 0.415 | 6 |
+| UPS (UPS) | 2025-10-28 | aufwaerts | 89.32 | 3.733 | 10.222 | 239 |
+| UPS (UPS) | 2026-07-28 | abwaerts | 112.37 | 1.125 | 3.355 | 53 |
+| USB (USB) | 2025-11-25 | aufwaerts | 47.93 | 0.112 | 0.25 | 219 |
+| VLO (VLO) | 2026-01-05 | aufwaerts | 165.67 | 2.672 | 8.463 | 193 |
+| VLO (VLO) | 2026-03-02 | aufwaerts | 205.03 | 1.481 | 4.858 | 155 |
+| VLO (VLO) | 2026-07-08 | aufwaerts | 269.54 | 0.247 | 0.916 | 67 |
+| VNA.DE (VNA.DE) | 2026-03-19 | abwaerts | 24.37 | 0.529 | 1.97 | 144 |
+| VNA.DE (VNA.DE) | 2026-07-08 | abwaerts | 22.37 | 0.61 | 1.654 | 68 |
+| VNA.DE (VNA.DE) | 2026-08-17 | abwaerts | 20.53 | 0.127 | 0.292 | 40 |
+| VNA.DE (VNA.DE) | 2026-08-31 | abwaerts | 19.815 | 0.272 | 0.555 | 30 |
+| VNA.DE (VNA.DE) | 2026-09-07 | abwaerts | 19.1 | 0.675 | 1.466 | 25 |
+| VOW3.DE (VOW3.DE) | 2026-03-02 | abwaerts | 100.5 | 0.769 | 1.99 | 157 |
+| VOW3.DE (VOW3.DE) | 2026-06-17 | abwaerts | 88.58 | 0.338 | 0.881 | 83 |
+| VOW3.DE (VOW3.DE) | 2026-09-24 | abwaerts | 72.9 | 0.219 | 0.796 | 12 |
+| VRSK (VRSK) | 2025-10-29 | abwaerts | 231.84 | 3.358 | 10.067 | 238 |
+| VRSK (VRSK) | 2026-07-30 | abwaerts | 212.01 | 0.944 | 3.594 | 51 |
+| VRSK (VRSK) | 2026-09-04 | abwaerts | 189.3 | 0.429 | 1.463 | 25 |
+| VRTX (VRTX) | 2026-06-04 | aufwaerts | 429.01 | 0.515 | 1.385 | 89 |
+| VRTX (VRTX) | 2026-09-08 | abwaerts | 544.48 | 1.063 | 2.726 | 24 |
+| VZ (VZ) | 2026-01-30 | aufwaerts | 40.3 | 1.934 | 4.243 | 175 |
+| VZ (VZ) | 2026-10-09 | abwaerts | 45.72 | 2.412 | 6.321 | 1 |
+| WDAY (WDAY) | 2026-07-01 | aufwaerts | 123.3 | 0.768 | 4.428 | 71 |
+| WDAY (WDAY) | 2026-07-27 | aufwaerts | 136.0 | 0.653 | 4.081 | 54 |
+| WDAY (WDAY) | 2026-08-03 | aufwaerts | 160.89 | 0.516 | 3.077 | 49 |
+| WDAY (WDAY) | 2026-08-07 | aufwaerts | 171.4 | 0.307 | 1.692 | 45 |
+| WDC (WDC) | 2025-10-29 | aufwaerts | 126.82 | 0.606 | 3.635 | 238 |
+| WDC (WDC) | 2026-04-01 | aufwaerts | 271.09 | 0.41 | 3.471 | 133 |
+| WDC (WDC) | 2026-04-08 | aufwaerts | 312.2 | 0.995 | 7.303 | 129 |
+| WDC (WDC) | 2026-07-01 | abwaerts | 630.3 | 0.471 | 4.084 | 71 |
+| WMT (WMT) | 2025-11-20 | aufwaerts | 101.71 | 1.01 | 2.193 | 222 |
+| WMT (WMT) | 2026-05-21 | abwaerts | 130.33 | 1.782 | 4.542 | 98 |
+| WMT (WMT) | 2026-06-25 | abwaerts | 118.93 | 0.519 | 1.228 | 75 |
+| WMT (WMT) | 2026-08-20 | abwaerts | 113.99 | 2.48 | 6.676 | 36 |
+| XEL (XEL) | 2026-10-02 | aufwaerts | 70.69 | 0.493 | 0.919 | 6 |
+| XOM (XOM) | 2026-01-13 | aufwaerts | 124.5 | 0.199 | 0.402 | 187 |
+| XOM (XOM) | 2026-07-13 | aufwaerts | 138.97 | 0.553 | 1.403 | 64 |
+| XOM (XOM) | 2026-08-10 | aufwaerts | 153.67 | 0.206 | 0.54 | 44 |
+| XOM (XOM) | 2026-10-12 | aufwaerts | 170.29 | 0.205 | 0.423 | 0 |
+| ZAL.DE (ZAL.DE) | 2026-08-04 | abwaerts | 28.56 | 1.889 | 8.964 | 49 |
+| ZS (ZS) | 2025-11-14 | abwaerts | 307.2 | 0.329 | 1.12 | 226 |
+| ZS (ZS) | 2025-11-26 | abwaerts | 278.07 | 0.612 | 2.87 | 218 |
+| ZS (ZS) | 2025-12-01 | abwaerts | 249.68 | 0.209 | 1.033 | 216 |
+| ZS (ZS) | 2026-06-29 | aufwaerts | 132.54 | 0.232 | 1.471 | 73 |
+| ZS (ZS) | 2026-09-14 | aufwaerts | 165.95 | 0.676 | 4.128 | 20 |
+| ZS (ZS) | 2026-10-09 | aufwaerts | 218.82 | 0.353 | 1.588 | 1 |
+| Weizen (ZW=F) | 2026-07-10 | aufwaerts | 611.5 | 1.213 | 3.025 | 65 |
+| Weizen (ZW=F) | 2026-09-03 | abwaerts | 751.25 | 0.941 | 2.928 | 26 |

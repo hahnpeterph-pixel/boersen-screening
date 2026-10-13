@@ -1,72 +1,158 @@
 {
- "date": "2026-10-10",
+ "date": "2026-10-13",
  "ranks": {
   "turnaround": [
-   "MSTR",
+   "SAP.DE",
+   "SONY",
+   "NOW",
+   "SHL.DE",
    "MDT",
    "QIA.DE",
-   "ACN",
-   "SHL.DE",
-   "NOW",
    "CEG",
-   "CVX",
+   "TTE",
+   "TM",
+   "NEM",
+   "CNQ",
    "MELI",
-   "EQNR",
    "SPOT",
-   "BLK",
-   "XOM",
    "ABNB",
-   "DTE.DE"
+   "BLK"
   ],
   "momentum": [
    "SNOW",
    "DDOG",
    "PANW",
    "MPC",
-   "VLO",
    "PSX",
+   "VLO",
    "MRNA",
    "MRK",
-   "TMO",
    "DB1.DE",
-   "V",
-   "PM",
    "KO",
+   "ILMN",
    "SY1.DE",
-   "BNR.DE"
+   "V",
+   "BNR.DE",
+   "DHL.DE"
   ],
   "value": [
-   "SKHY",
    "SNDK",
    "MU",
+   "SKHY",
    "NEM",
    "REGN",
    "PBR",
    "BLK",
    "ABNB",
    "META",
+   "MTX.DE",
    "DXCM",
-   "RIO",
    "MNST",
-   "MDT",
-   "V",
-   "BHP"
+   "RIO",
+   "BHP",
+   "VRTX"
   ]
  },
  "changes": {
   "turnaround": {
-   "entries": [],
-   "exits": [],
+   "entries": [
+    {
+     "ticker": "SAP.DE",
+     "rank": 1
+    },
+    {
+     "ticker": "SONY",
+     "rank": 2
+    },
+    {
+     "ticker": "TTE",
+     "rank": 8
+    },
+    {
+     "ticker": "TM",
+     "rank": 9
+    },
+    {
+     "ticker": "NEM",
+     "rank": 10
+    },
+    {
+     "ticker": "CNQ",
+     "rank": 11
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "MSTR",
+     "old_rank": 1
+    },
+    {
+     "ticker": "ACN",
+     "old_rank": 4
+    },
+    {
+     "ticker": "CVX",
+     "old_rank": 8
+    },
+    {
+     "ticker": "EQNR",
+     "old_rank": 10
+    },
+    {
+     "ticker": "XOM",
+     "old_rank": 13
+    },
+    {
+     "ticker": "DTE.DE",
+     "old_rank": 15
+    }
+   ],
    "moves": []
   },
   "momentum": {
-   "entries": [],
-   "exits": [],
+   "entries": [
+    {
+     "ticker": "ILMN",
+     "rank": 11
+    },
+    {
+     "ticker": "DHL.DE",
+     "rank": 15
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "TMO",
+     "old_rank": 9
+    },
+    {
+     "ticker": "PM",
+     "old_rank": 12
+    }
+   ],
    "moves": []
   },
   "value": {
-   "entries": [],
-   "exits": [],
+   "entries": [
+    {
+     "ticker": "MTX.DE",
+     "rank": 10
+    },
+    {
+     "ticker": "VRTX",
+     "rank": 15
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "MDT",
+     "old_rank": 13
+    },
+    {
+     "ticker": "V",
+     "old_rank": 14
+    }
+   ],
    "moves": []
   },
   "analyst_flips": []

@@ -1,4 +1,4 @@
-# Datenpruefung (Kurse bis 2026-10-09)
+# Datenpruefung (Kurse bis 2026-10-12)
 
 **OK - keine Fehler bei Aktien**
 

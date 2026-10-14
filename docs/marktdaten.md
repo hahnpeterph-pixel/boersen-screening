@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-10-14 01:13 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1201._
+_Erstellt 2026-10-14 10:02 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1201._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -13,8 +13,8 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | AMAT (AMAT) | 464.24 | - | - | ja | 40.58 |
 | AMGN (AMGN) | 412.84 | - | ja | ja | 52.93 |
 | AMZN (AMZN) | 258.58 | - | - | ja | 54.45 |
-| ASML (ASML) | 1511.8 | - | - | ja | 44.63 |
-| AZN (AZN) | 119.06 | - | ja | ja | 44.23 |
+| ASML (ASML) | 1509.6 | - | - | ja | 44.37 |
+| AZN (AZN) | 118.96 | - | ja | ja | 44.02 |
 | BA (BA) | 186.49 | - | - | ja | 36.23 |
 | BIIB (BIIB) | 228.9 | - | - | ja | 59.65 |
 | BKNG (BKNG) | 157.51 | - | - | ja | 33.46 |
@@ -28,7 +28,7 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | JNJ (JNJ) | 248.61 | - | - | ja | 34.39 |
 | JPM (JPM) | 331.43 | - | ja | ja | 37.26 |
 | KLAC (KLAC) | 184.0 | - | - | ja | 43.37 |
-| LRCX (LRCX) | 301.11 | - | - | ja | 42.79 |
+| LRCX (LRCX) | 301.11 | ja | - | ja | 42.79 |
 | MDB (MDB) | 373.07 | - | ja | ja | 48.3 |
 | MRK (MRK) | 141.98 | - | - | ja | 44.26 |
 | NFLX (NFLX) | 70.46 | - | - | ja | 44.45 |
@@ -65,19 +65,21 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | SKHY (SKHY) | 1443000.0 | - | - | ja | 31.41 |
 | RY (RY) | 194.67 | ja | ja | - | 40.46 |
 | BHP (BHP) | 61.28 | - | - | ja | 48.01 |
-| RIO (RIO) | 70.14 | - | - | ja | 41.49 |
+| RIO (RIO) | 69.97 | - | - | ja | 40.82 |
 | BBVA (BBVA) | 23.22 | - | - | ja | 37.36 |
-| SNY (SNY) | 70.7 | - | ja | ja | 39.73 |
+| SNY (SNY) | 70.74 | - | ja | ja | 39.88 |
 | GFS (GFS) | 46.7 | - | - | ja | 45.17 |
-| AIR.DE (AIR.DE) | 186.58 | - | ja | ja | 34.52 |
-| DTG.DE (DTG.DE) | 40.44 | - | - | ja | 33.23 |
-| DBK.DE (DBK.DE) | 29.92 | - | ja | ja | 34.47 |
-| EOAN.DE (EOAN.DE) | 17.09 | - | ja | ja | 45.62 |
-| P911.DE (P911.DE) | 41.34 | - | - | ja | 37.89 |
-| SRT3.DE (SRT3.DE) | 251.5 | - | - | ja | 51.07 |
-| ENR.DE (ENR.DE) | 142.94 | - | - | ja | 47.58 |
-| Gold (GC=F) | 4176.6001 | - | - | ja | 40.2 |
+| AIR.DE (AIR.DE) | 186.42 | - | ja | ja | 34.25 |
+| DTG.DE (DTG.DE) | 40.46 | - | - | ja | 33.34 |
+| DBK.DE (DBK.DE) | 29.84 | - | ja | ja | 34.04 |
+| EOAN.DE (EOAN.DE) | 17.12 | - | ja | ja | 46.25 |
+| MRK.DE (MRK.DE) | 137.6 | - | ja | ja | 52.81 |
+| P911.DE (P911.DE) | 41.35 | - | - | ja | 37.93 |
+| SRT3.DE (SRT3.DE) | 251.3 | - | - | ja | 50.89 |
+| ENR.DE (ENR.DE) | 143.06 | - | - | ja | 47.74 |
+| Gold (GC=F) | 4177.2998 | - | - | ja | 40.26 |
 | Silber (SI=F) | 59.195 | - | - | ja | 38.72 |
+| Platin (PL=F) | 1657.4 | - | - | ja | 42.64 |
 
 ---
 

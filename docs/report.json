@@ -2,199 +2,226 @@
  "date": "2026-10-14",
  "ranks": {
   "turnaround": [
-   "NOW",
-   "SAP.DE",
-   "CRM",
-   "MDT",
-   "ABNB",
-   "DASH",
-   "MRK",
-   "GILD",
-   "TM",
-   "CEG",
-   "TTE",
-   "NEM",
-   "CNQ",
+   "CTSH",
    "SPOT",
-   "BLK"
+   "GILD",
+   "SHL.DE",
+   "REGN",
+   "MDB",
+   "T",
+   "ABNB",
+   "SONY",
+   "MELI",
+   "ING",
+   "BBVA",
+   "TM",
+   "FAST",
+   "META"
   ],
   "momentum": [
-   "DDOG",
-   "DELL",
-   "MPC",
-   "MRNA",
-   "SNOW",
-   "PSX",
    "VLO",
+   "PSX",
+   "SNOW",
+   "DDOG",
+   "MPC",
    "SY1.DE",
-   "MRK",
+   "MRNA",
+   "PLTR",
    "ABBV",
+   "TRV",
    "DHL.DE",
-   "DB1.DE",
-   "KO",
+   "ILMN",
    "V",
-   "PM"
+   "PM",
+   "KO"
   ],
   "value": [
    "SNDK",
    "MU",
-   "SKHY",
    "NEM",
+   "NVDA",
    "REGN",
-   "RIO",
    "PBR",
-   "ABNB",
    "BLK",
+   "ABNB",
    "META",
-   "MTX.DE",
+   "VRTX",
+   "RIO",
    "DXCM",
    "MNST",
-   "BHP",
-   "VRTX"
+   "MTX.DE",
+   "BHP"
   ]
  },
  "changes": {
   "turnaround": {
    "entries": [
     {
-     "ticker": "NOW",
+     "ticker": "CTSH",
      "rank": 1
     },
     {
-     "ticker": "CRM",
-     "rank": 3
-    },
-    {
-     "ticker": "MDT",
+     "ticker": "SHL.DE",
      "rank": 4
     },
     {
-     "ticker": "DASH",
+     "ticker": "REGN",
+     "rank": 5
+    },
+    {
+     "ticker": "MDB",
      "rank": 6
     },
     {
-     "ticker": "MRK",
+     "ticker": "T",
      "rank": 7
     },
     {
-     "ticker": "CEG",
+     "ticker": "SONY",
+     "rank": 9
+    },
+    {
+     "ticker": "MELI",
      "rank": 10
     },
     {
-     "ticker": "NEM",
+     "ticker": "ING",
+     "rank": 11
+    },
+    {
+     "ticker": "BBVA",
      "rank": 12
     },
     {
-     "ticker": "CNQ",
-     "rank": 13
+     "ticker": "FAST",
+     "rank": 14
     },
     {
-     "ticker": "BLK",
+     "ticker": "META",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "CTSH",
+     "ticker": "NOW",
      "old_rank": 1
     },
     {
-     "ticker": "REGN",
-     "old_rank": 5
+     "ticker": "SAP.DE",
+     "old_rank": 2
     },
     {
-     "ticker": "MDB",
+     "ticker": "CRM",
+     "old_rank": 3
+    },
+    {
+     "ticker": "MDT",
+     "old_rank": 4
+    },
+    {
+     "ticker": "DASH",
      "old_rank": 6
     },
     {
-     "ticker": "TMO",
+     "ticker": "MRK",
      "old_rank": 7
     },
     {
-     "ticker": "T",
-     "old_rank": 9
+     "ticker": "CEG",
+     "old_rank": 10
     },
     {
-     "ticker": "MELI",
+     "ticker": "TTE",
      "old_rank": 11
     },
     {
-     "ticker": "EQNR",
+     "ticker": "NEM",
+     "old_rank": 12
+    },
+    {
+     "ticker": "CNQ",
      "old_rank": 13
     },
     {
-     "ticker": "FAST",
-     "old_rank": 14
-    },
-    {
-     "ticker": "BBVA",
+     "ticker": "BLK",
      "old_rank": 15
     }
    ],
    "moves": [
     {
-     "ticker": "ABNB",
-     "rank": 5,
-     "delta": 5
+     "ticker": "SPOT",
+     "rank": 2,
+     "delta": 12
     },
     {
-     "ticker": "SPOT",
-     "rank": 14,
-     "delta": -11
+     "ticker": "GILD",
+     "rank": 3,
+     "delta": 5
     }
    ]
   },
   "momentum": {
    "entries": [
     {
-     "ticker": "DELL",
-     "rank": 2
+     "ticker": "PLTR",
+     "rank": 8
     },
     {
-     "ticker": "MRK",
-     "rank": 9
+     "ticker": "TRV",
+     "rank": 10
     },
     {
-     "ticker": "KO",
-     "rank": 13
+     "ticker": "ILMN",
+     "rank": 12
     }
    ],
    "exits": [
     {
-     "ticker": "PLTR",
-     "old_rank": 8
+     "ticker": "DELL",
+     "old_rank": 2
     },
     {
-     "ticker": "TRV",
+     "ticker": "MRK",
+     "old_rank": 9
+    },
+    {
+     "ticker": "DB1.DE",
      "old_rank": 12
-    },
-    {
-     "ticker": "ILMN",
-     "old_rank": 13
     }
    ],
    "moves": [
     {
      "ticker": "VLO",
-     "rank": 7,
-     "delta": -6
+     "rank": 1,
+     "delta": 6
     }
    ]
   },
   "value": {
    "entries": [
     {
-     "ticker": "SKHY",
-     "rank": 3
+     "ticker": "NVDA",
+     "rank": 4
     }
    ],
    "exits": [
     {
-     "ticker": "NVDA",
-     "old_rank": 4
+     "ticker": "SKHY",
+     "old_rank": 3
     }
    ],
-   "moves": []
+   "moves": [
+    {
+     "ticker": "VRTX",
+     "rank": 10,
+     "delta": 5
+    },
+    {
+     "ticker": "RIO",
+     "rank": 11,
+     "delta": -5
+    }
+   ]
   },
   "analyst_flips": []
  }

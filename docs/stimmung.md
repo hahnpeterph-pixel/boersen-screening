@@ -1,8 +1,8 @@
 # Marktstimmung
 
-Stand Abruf: 14.10.2026 01:17 UTC
+Stand Abruf: 14.10.2026 10:06 UTC
 
-**Stimmung: VIX 15,3 (ruhig, 5T +0,3, 13.10.) · DAX-Schwankung gemessen 13,5 (normal, 5T +0,4, 13.10.) · Fear & Greed 45 (Angst, Vortag -2, 13.10.)**
+**Stimmung: VIX 15,2 (ruhig, 5T +0,1, 14.10.) · DAX-Schwankung gemessen 13,6 (normal, 5T -0,1, 14.10.) · Fear & Greed 45 (neutral, Vortag 0, 14.10.)**
 
 Lagen: VIX ruhig < 16 · normal 16–22 · unruhig > 22 | VDAX-NEW ruhig < 18 · normal 18–24 · unruhig > 24 (gemessene DAX-Schwankung: < 13 · 13–19 · > 19) | Fear & Greed 0–25 extreme Angst · 25–45 Angst · 45–55 neutral · 55–75 Gier · 75–100 extreme Gier.
 
@@ -12,6 +12,7 @@ Nur Stimmung, kein Kaufsignal. Ob die Lage fuer unsere Tiefs etwas aussagt: sieh
 
 | Tag | VIX | VDAX | F&G |
 |---|---|---|---|
+| 14.10.2026 | 15,2 | 13,6 | 45 |
 | 13.10.2026 | 15,3 | 13,5 | 45 |
 | 12.10.2026 | 15,2 | 13,6 | 46 |
 | 09.10.2026 | 14,8 | 13,6 | 46 |
@@ -21,4 +22,3 @@ Nur Stimmung, kein Kaufsignal. Ob die Lage fuer unsere Tiefs etwas aussagt: sieh
 | 05.10.2026 | 15,5 | 12,7 | 44 |
 | 02.10.2026 | 15,3 | 12,7 | 40 |
 | 01.10.2026 | 16,4 | 12,1 | 29 |
-| 30.09.2026 | 16,3 | 11,8 | 30 |

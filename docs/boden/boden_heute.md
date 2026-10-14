@@ -1,4 +1,4 @@
-# Boden-Screening 2026-10-13 (Stand 2026-10-13 23:17 UTC)
+# Boden-Screening 2026-10-13 (Stand 2026-10-14 01:17 UTC)
 
 Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RSI < 50 + mind. 2 Boden-Punkte (nur Technik). Die Filter (Analysten, Anker, CRV 2:1) stehen in docs/heute.csv. Boden-Anker = niedrigster Puffer mit 60 % Halterate fuer diese Gruppe und diesen Wert (Vollauf), KO-Marke = Bezugstief - Anker x ATR.
 
@@ -11,10 +11,10 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | BMW.DE | 2 | 39 | 2.50 | 47.70 | 35 % |
 | CHTR | 3 | 35 | 3.50 | 85.27 | 25 % |
 | CMCSA | 4 | 29 | - | - | 31 % |
-| FDX | 5 | 41 | 2.25 | 272.00 | 88 % |
-| GS | 6 | 34 | 2.50 | 819.02 | 38 % |
+| FDX | 5 | 41 | 2.25 | 271.97 | 88 % |
+| GS | 6 | 34 | 2.50 | 819.00 | 38 % |
 | LULU | 3 | 38 | 3.75 | 78.72 | 0 % |
-| MS | 5 | 30 | 2.25 | 176.12 | 50 % |
+| MS | 5 | 30 | 2.25 | 176.10 | 50 % |
 | NVO | 4 | 42 | 3.00 | 226.32 | 21 % |
 | PEP | 5 | 42 | 2.75 | 116.48 | 21 % |
 | RY | 4 | 40 | 3.25 | 179.76 | 60 % |
@@ -22,7 +22,7 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | VNA.DE | 2 | 32 | 2.50 | 15.15 | 50 % |
 | VOW3.DE | 5 | 40 | 2.75 | 60.81 | 65 % |
 
-## Weitere Pruefttage (75)
+## Weitere Pruefttage (76)
 
 | Wert | Punkte | Grund |
 |---|---|---|
@@ -96,6 +96,7 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | NET | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
 | NVDA | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
 | ON | 0 | 0 P, Tief 1, Umkehr a |
+| PBR | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
 | PLTR | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
 | STX | 0 | 0 P, Umkehr a |
 | TSLA | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |

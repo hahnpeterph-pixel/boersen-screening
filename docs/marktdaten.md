@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-10-13 23:14 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1201._
+_Erstellt 2026-10-14 01:13 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1201._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -66,7 +66,7 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | RY (RY) | 194.67 | ja | ja | - | 40.46 |
 | BHP (BHP) | 61.28 | - | - | ja | 48.01 |
 | RIO (RIO) | 70.14 | - | - | ja | 41.49 |
-| BBVA (BBVA) | 23.25 | - | - | ja | 37.62 |
+| BBVA (BBVA) | 23.22 | - | - | ja | 37.36 |
 | SNY (SNY) | 70.7 | - | ja | ja | 39.73 |
 | GFS (GFS) | 46.7 | - | - | ja | 45.17 |
 | AIR.DE (AIR.DE) | 186.58 | - | ja | ja | 34.52 |
@@ -76,7 +76,8 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | P911.DE (P911.DE) | 41.34 | - | - | ja | 37.89 |
 | SRT3.DE (SRT3.DE) | 251.5 | - | - | ja | 51.07 |
 | ENR.DE (ENR.DE) | 142.94 | - | - | ja | 47.58 |
-| Silber (SI=F) | 59.33 | - | - | ja | 39.09 |
+| Gold (GC=F) | 4176.6001 | - | - | ja | 40.2 |
+| Silber (SI=F) | 59.195 | - | - | ja | 38.72 |
 
 ---
 

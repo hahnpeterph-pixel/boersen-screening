@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-10-15 00:32 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1204._
+_Erstellt 2026-10-15 09:42 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1204._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -69,27 +69,28 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | SPCX (SPCX) | 152.16 | - | - | ja | 48.89 |
 | SKHY (SKHY) | 1419000.0 | - | - | ja | 30.46 |
 | SHOP (SHOP) | 172.5 | - | - | ja | 67.74 |
-| HSBC (HSBC) | 14.222 | - | - | ja | 40.01 |
+| HSBC (HSBC) | 14.226 | - | - | ja | 40.07 |
 | MUFG (MUFG) | 3482.0 | - | - | ja | 42.96 |
 | BHP (BHP) | 60.86 | - | - | ja | 46.27 |
-| SAN (SAN) | 12.12 | - | - | ja | 44.59 |
+| SAN (SAN) | 12.13 | - | - | ja | 44.78 |
 | SMFG (SMFG) | 3285.0 | - | - | ja | 43.78 |
-| UBS (UBS) | 39.49 | - | - | ja | 40.85 |
+| UBS (UBS) | 39.47 | - | - | ja | 40.75 |
 | MFG (MFG) | 8136.0 | - | - | ja | 42.36 |
 | APP (APP) | 262.19 | - | - | ja | 30.62 |
 | AXON (AXON) | 408.42 | - | - | ja | 34.77 |
 | MSTR (MSTR) | 143.24 | - | - | ja | 46.0 |
-| CBK.DE (CBK.DE) | 38.22 | - | ja | ja | 39.21 |
-| DBK.DE (DBK.DE) | 29.61 | - | - | ja | 32.76 |
-| DTE.DE (DTE.DE) | 25.31 | ja | - | - | 36.62 |
-| HNR1.DE (HNR1.DE) | 268.0 | - | - | ja | 66.3 |
-| HEI.DE (HEI.DE) | 141.25 | - | ja | ja | 38.66 |
-| PAH3.DE (PAH3.DE) | 24.55 | - | - | ja | 36.41 |
-| RWE.DE (RWE.DE) | 58.92 | - | - | ja | 50.92 |
-| ENR.DE (ENR.DE) | 135.7 | - | - | ja | 38.96 |
-| VOW3.DE (VOW3.DE) | 67.36 | - | - | ja | 36.98 |
-| ZAL.DE (ZAL.DE) | 23.98 | - | - | ja | 60.92 |
-| Kupfer (HG=F) | 6.6205 | - | - | ja | 51.91 |
+| CBK.DE (CBK.DE) | 38.09 | - | ja | ja | 38.59 |
+| DBK.DE (DBK.DE) | 29.58 | - | - | ja | 32.6 |
+| DTE.DE (DTE.DE) | 25.28 | ja | - | - | 36.27 |
+| HNR1.DE (HNR1.DE) | 268.4 | - | - | ja | 67.16 |
+| HEI.DE (HEI.DE) | 141.4 | - | ja | ja | 38.86 |
+| PAH3.DE (PAH3.DE) | 24.49 | - | - | ja | 36.05 |
+| ENR.DE (ENR.DE) | 135.28 | - | - | ja | 38.56 |
+| VOW3.DE (VOW3.DE) | 67.04 | - | - | ja | 36.32 |
+| ZAL.DE (ZAL.DE) | 23.96 | - | - | ja | 60.67 |
+| Gold (GC=F) | 4107.8999 | - | - | ja | 34.99 |
+| Silber (SI=F) | 55.55 | - | - | ja | 30.92 |
+| Kupfer (HG=F) | 6.6115 | - | - | ja | 51.36 |
 | EUR/USD (EURUSD=X) | 1.1204 | ja | ja | - | 29.49 |
 | EUR/NOK (EURNOK=X) | 10.6589 | ja | - | - | 28.86 |
 | EUR/HKD (EURHKD=X) | 8.7901 | ja | ja | - | 29.84 |

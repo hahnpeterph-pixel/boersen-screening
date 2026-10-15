@@ -2,54 +2,54 @@
  "date": "2026-10-15",
  "ranks": {
   "turnaround": [
-   "CTSH",
+   "NOW",
    "SONY",
-   "SPOT",
-   "SAP.DE",
-   "GILD",
-   "REGN",
-   "SHL.DE",
+   "ZS",
+   "BLK",
    "T",
+   "DE",
+   "VRTX",
+   "AMGN",
+   "REGN",
+   "EMR",
+   "META",
+   "ING",
    "ABNB",
-   "MELI",
-   "TTE",
-   "BBVA",
-   "FAST",
-   "EQNR",
-   "META"
+   "PGR",
+   "CNQ"
   ],
   "momentum": [
-   "SY1.DE",
    "VLO",
    "PSX",
-   "SNOW",
-   "DDOG",
    "MPC",
+   "ABBV",
+   "TEAM",
    "MRNA",
    "PLTR",
-   "ABBV",
-   "DB1.DE",
-   "TRV",
-   "TMO",
+   "DDOG",
+   "LLY",
+   "SY1.DE",
    "PM",
-   "KDP",
-   "V"
+   "V",
+   "TRV",
+   "DHL.DE",
+   "KDP"
   ],
   "value": [
    "SNDK",
    "MU",
-   "NEM",
    "NVDA",
+   "NEM",
    "REGN",
    "PBR",
    "BLK",
    "ABNB",
    "META",
-   "MTX.DE",
-   "VRTX",
-   "DXCM",
-   "MNST",
    "RIO",
+   "DXCM",
+   "MTX.DE",
+   "MNST",
+   "VRTX",
    "BHP"
   ]
  },
@@ -57,118 +57,131 @@
   "turnaround": {
    "entries": [
     {
-     "ticker": "CTSH",
+     "ticker": "NOW",
      "rank": 1
     },
     {
-     "ticker": "SONY",
-     "rank": 2
-    },
-    {
-     "ticker": "SPOT",
+     "ticker": "ZS",
      "rank": 3
     },
     {
-     "ticker": "SAP.DE",
+     "ticker": "BLK",
      "rank": 4
     },
     {
-     "ticker": "GILD",
-     "rank": 5
-    },
-    {
-     "ticker": "REGN",
+     "ticker": "DE",
      "rank": 6
     },
     {
-     "ticker": "MELI",
+     "ticker": "VRTX",
+     "rank": 7
+    },
+    {
+     "ticker": "AMGN",
+     "rank": 8
+    },
+    {
+     "ticker": "EMR",
      "rank": 10
     },
     {
-     "ticker": "BBVA",
+     "ticker": "ING",
      "rank": 12
     },
     {
+     "ticker": "PGR",
+     "rank": 14
+    },
+    {
+     "ticker": "CNQ",
+     "rank": 15
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "CTSH",
+     "old_rank": 1
+    },
+    {
+     "ticker": "SPOT",
+     "old_rank": 3
+    },
+    {
+     "ticker": "SAP.DE",
+     "old_rank": 4
+    },
+    {
+     "ticker": "GILD",
+     "old_rank": 5
+    },
+    {
+     "ticker": "SHL.DE",
+     "old_rank": 7
+    },
+    {
+     "ticker": "MELI",
+     "old_rank": 10
+    },
+    {
+     "ticker": "TTE",
+     "old_rank": 11
+    },
+    {
+     "ticker": "BBVA",
+     "old_rank": 12
+    },
+    {
      "ticker": "FAST",
-     "rank": 13
+     "old_rank": 13
     },
     {
      "ticker": "EQNR",
+     "old_rank": 14
+    }
+   ],
+   "moves": []
+  },
+  "momentum": {
+   "entries": [
+    {
+     "ticker": "TEAM",
+     "rank": 5
+    },
+    {
+     "ticker": "LLY",
+     "rank": 9
+    },
+    {
+     "ticker": "DHL.DE",
      "rank": 14
     }
    ],
    "exits": [
     {
-     "ticker": "NOW",
-     "old_rank": 1
-    },
-    {
-     "ticker": "ZS",
-     "old_rank": 2
-    },
-    {
-     "ticker": "WDAY",
-     "old_rank": 3
-    },
-    {
-     "ticker": "BLK",
+     "ticker": "SNOW",
      "old_rank": 4
     },
     {
-     "ticker": "DE",
-     "old_rank": 6
-    },
-    {
-     "ticker": "VRTX",
-     "old_rank": 7
-    },
-    {
-     "ticker": "AMGN",
-     "old_rank": 8
-    },
-    {
-     "ticker": "EMR",
+     "ticker": "DB1.DE",
      "old_rank": 10
     },
     {
-     "ticker": "TM",
-     "old_rank": 13
-    },
-    {
-     "ticker": "PGR",
-     "old_rank": 15
+     "ticker": "TMO",
+     "old_rank": 12
     }
    ],
    "moves": [
     {
-     "ticker": "ABNB",
-     "rank": 9,
+     "ticker": "ABBV",
+     "rank": 4,
      "delta": 5
+    },
+    {
+     "ticker": "SY1.DE",
+     "rank": 10,
+     "delta": -9
     }
    ]
-  },
-  "momentum": {
-   "entries": [
-    {
-     "ticker": "SNOW",
-     "rank": 4
-    },
-    {
-     "ticker": "TMO",
-     "rank": 12
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "TEAM",
-     "old_rank": 6
-    },
-    {
-     "ticker": "BIIB",
-     "old_rank": 10
-    }
-   ],
-   "moves": []
   },
   "value": {
    "entries": [],

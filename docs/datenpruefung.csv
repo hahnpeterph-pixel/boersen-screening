@@ -1,11 +1,2 @@
 quelle,art,ticker,tag,rohstoff_fx
 kursverlauf,Platzhalter,^TNX,2026-10-12,True
-kursverlauf,fehlt,BABA,2026-10-15,False
-kursverlauf,fehlt,BHP,2026-10-15,False
-kursverlauf,fehlt,MFG,2026-10-15,False
-kursverlauf,fehlt,MUFG,2026-10-15,False
-kursverlauf,fehlt,SKHY,2026-10-15,False
-kursverlauf,fehlt,SMFG,2026-10-15,False
-kursverlauf,fehlt,SONY,2026-10-15,False
-kursverlauf,fehlt,TM,2026-10-15,False
-kursverlauf,fehlt,TSM,2026-10-15,False

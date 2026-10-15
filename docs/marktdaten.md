@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-10-15 09:42 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1204._
+_Erstellt 2026-10-15 22:04 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1221._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -10,92 +10,35 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 
 | Wert | Kurs | Hammer | hoeheres Hoch | Umkehrkerze | RSI |
 |---|---|---|---|---|---|
-| AMAT (AMAT) | 446.63 | - | - | ja | 36.39 |
-| AMZN (AMZN) | 254.08 | - | - | ja | 49.34 |
-| ARM (ARM) | 238.01 | - | - | ja | 35.87 |
-| AVGO (AVGO) | 346.25 | - | - | ja | 42.28 |
-| AXP (AXP) | 306.95 | - | - | ja | 41.89 |
-| BA (BA) | 184.66 | - | - | ja | 34.48 |
-| BKR (BKR) | 55.37 | - | ja | ja | 39.46 |
-| CAT (CAT) | 748.98 | - | - | ja | 33.7 |
-| CDNS (CDNS) | 329.46 | - | - | ja | 49.71 |
-| CEG (CEG) | 279.54 | - | - | ja | 51.13 |
-| CPRT (CPRT) | 26.27 | ja | - | - | 32.41 |
-| CRWD (CRWD) | 249.29 | - | - | ja | 48.96 |
-| DASH (DASH) | 184.01 | - | - | ja | 39.69 |
-| DDOG (DDOG) | 269.33 | - | - | ja | 54.05 |
-| DXCM (DXCM) | 83.47 | - | - | ja | 41.39 |
-| FTNT (FTNT) | 184.05 | - | - | ja | 56.15 |
-| GOOGL (GOOGL) | 347.64 | - | ja | ja | 51.24 |
-| GS (GS) | 878.72 | - | - | ja | 30.81 |
-| INTC (INTC) | 98.12 | - | - | ja | 37.89 |
-| KLAC (KLAC) | 178.81 | - | - | ja | 39.32 |
-| LRCX (LRCX) | 286.92 | - | - | ja | 37.32 |
-| MCHP (MCHP) | 71.25 | - | - | ja | 37.77 |
-| MDB (MDB) | 356.29 | - | - | ja | 43.28 |
-| MELI (MELI) | 1839.11 | - | - | ja | 50.48 |
-| MRVL (MRVL) | 245.28 | - | - | ja | 44.45 |
-| MSFT (MSFT) | 533.69 | - | - | ja | 62.45 |
-| MU (MU) | 914.13 | - | - | ja | 36.25 |
-| NVDA (NVDA) | 221.3 | - | - | ja | 43.94 |
-| NXPI (NXPI) | 220.83 | - | - | ja | 38.47 |
-| ON (ON) | 73.36 | - | - | ja | 42.99 |
-| ORCL (ORCL) | 130.55 | - | - | ja | 40.19 |
-| PANW (PANW) | 375.04 | - | - | ja | 46.12 |
-| PLTR (PLTR) | 200.97 | - | - | ja | 63.25 |
-| SNPS (SNPS) | 479.93 | - | - | ja | 59.73 |
-| SPGI (SPGI) | 408.57 | - | - | ja | 52.04 |
-| TEAM (TEAM) | 204.66 | - | - | ja | 63.06 |
-| TSLA (TSLA) | 367.16 | - | - | ja | 49.27 |
-| ZS (ZS) | 220.79 | - | - | ja | 60.92 |
-| BNY (BNY) | 137.64 | - | - | ja | 20.05 |
-| C (C) | 122.27 | - | - | ja | 33.06 |
-| COF (COF) | 194.35 | - | - | ja | 38.04 |
-| GEV (GEV) | 941.78 | - | - | ja | 43.56 |
-| SPG (SPG) | 198.7 | - | - | ja | 34.66 |
-| UBER (UBER) | 69.29 | - | - | ja | 43.97 |
-| DELL (DELL) | 507.93 | - | - | ja | 41.92 |
-| ANET (ANET) | 195.42 | - | - | ja | 42.67 |
-| APH (APH) | 82.69 | - | - | ja | 46.52 |
-| GLW (GLW) | 140.89 | - | - | ja | 40.52 |
-| SNOW (SNOW) | 335.08 | - | - | ja | 48.47 |
-| NET (NET) | 324.33 | - | - | ja | 44.82 |
-| SPOT (SPOT) | 523.96 | - | - | ja | 54.27 |
-| ETN (ETN) | 408.85 | - | - | ja | 41.38 |
-| SCCO (SCCO) | 200.68 | - | - | ja | 48.62 |
-| NEM (NEM) | 111.56 | - | - | ja | 37.7 |
-| PLD (PLD) | 130.46 | - | - | ja | 43.33 |
-| EQIX (EQIX) | 995.9 | - | - | ja | 40.96 |
-| SPCX (SPCX) | 152.16 | - | - | ja | 48.89 |
-| SKHY (SKHY) | 1419000.0 | - | - | ja | 30.46 |
-| SHOP (SHOP) | 172.5 | - | - | ja | 67.74 |
-| HSBC (HSBC) | 14.226 | - | - | ja | 40.07 |
-| MUFG (MUFG) | 3482.0 | - | - | ja | 42.96 |
-| BHP (BHP) | 60.86 | - | - | ja | 46.27 |
-| SAN (SAN) | 12.13 | - | - | ja | 44.78 |
-| SMFG (SMFG) | 3285.0 | - | - | ja | 43.78 |
-| UBS (UBS) | 39.47 | - | - | ja | 40.75 |
-| MFG (MFG) | 8136.0 | - | - | ja | 42.36 |
-| APP (APP) | 262.19 | - | - | ja | 30.62 |
-| AXON (AXON) | 408.42 | - | - | ja | 34.77 |
-| MSTR (MSTR) | 143.24 | - | - | ja | 46.0 |
-| CBK.DE (CBK.DE) | 38.09 | - | ja | ja | 38.59 |
-| DBK.DE (DBK.DE) | 29.58 | - | - | ja | 32.6 |
-| DTE.DE (DTE.DE) | 25.28 | ja | - | - | 36.27 |
-| HNR1.DE (HNR1.DE) | 268.4 | - | - | ja | 67.16 |
-| HEI.DE (HEI.DE) | 141.4 | - | ja | ja | 38.86 |
-| PAH3.DE (PAH3.DE) | 24.49 | - | - | ja | 36.05 |
-| ENR.DE (ENR.DE) | 135.28 | - | - | ja | 38.56 |
-| VOW3.DE (VOW3.DE) | 67.04 | - | - | ja | 36.32 |
-| ZAL.DE (ZAL.DE) | 23.96 | - | - | ja | 60.67 |
-| Gold (GC=F) | 4107.8999 | - | - | ja | 34.99 |
-| Silber (SI=F) | 55.55 | - | - | ja | 30.92 |
-| Kupfer (HG=F) | 6.6115 | - | - | ja | 51.36 |
-| EUR/USD (EURUSD=X) | 1.1204 | ja | ja | - | 29.49 |
-| EUR/NOK (EURNOK=X) | 10.6589 | ja | - | - | 28.86 |
-| EUR/HKD (EURHKD=X) | 8.7901 | ja | ja | - | 29.84 |
-| EUR/AUD (EURAUD=X) | 1.6038 | ja | - | - | 37.41 |
-| EUR/KRW (EURKRW=X) | 1499.92 | ja | - | - | 32.55 |
+| AEP (AEP) | 124.29 | - | ja | ja | 58.23 |
+| AMAT (AMAT) | 430.01 | - | - | ja | 32.93 |
+| BKR (BKR) | 54.4 | - | - | ja | 35.98 |
+| CAT (CAT) | 735.64 | ja | - | - | 31.47 |
+| CEG (CEG) | 275.0 | - | - | ja | 48.87 |
+| CSCO (CSCO) | 109.85 | - | - | ja | 45.36 |
+| FANG (FANG) | 195.6 | - | - | ja | 54.79 |
+| KLAC (KLAC) | 174.46 | ja | - | - | 36.26 |
+| SNPS (SNPS) | 468.11 | ja | - | ja | 54.81 |
+| BNY (BNY) | 142.09 | ja | ja | - | 36.25 |
+| C (C) | 123.21 | ja | - | - | 35.59 |
+| MS (MS) | 182.1 | ja | - | - | 26.78 |
+| PM (PM) | 199.9 | - | ja | ja | 58.25 |
+| BABA (BABA) | 106.4 | - | - | ja | 46.0 |
+| ANET (ANET) | 185.58 | ja | - | ja | 36.14 |
+| VLO (VLO) | 444.06 | - | - | ja | 66.2 |
+| PSX (PSX) | 289.2 | - | - | ja | 68.63 |
+| PLD (PLD) | 126.94 | - | - | ja | 36.07 |
+| SPCX (SPCX) | 148.62 | ja | - | - | 45.95 |
+| SKHY (SKHY) | 1262000.0 | - | - | ja | 25.1 |
+| BHP (BHP) | 58.0 | - | - | ja | 36.52 |
+| ENB (ENB) | 46.83 | - | ja | ja | 41.94 |
+| ING (ING) | 29.645 | - | - | ja | 38.23 |
+| CBK.DE (CBK.DE) | 37.7 | - | - | ja | 36.71 |
+| DBK.DE (DBK.DE) | 29.085 | - | - | ja | 29.99 |
+| RWE.DE (RWE.DE) | 57.84 | - | - | ja | 44.43 |
+| SIE.DE (SIE.DE) | 269.65 | - | - | ja | 46.42 |
+| VOW3.DE (VOW3.DE) | 66.46 | - | - | ja | 35.09 |
+| Kupfer (HG=F) | 6.5625 | - | - | ja | 48.33 |
 
 ---
 

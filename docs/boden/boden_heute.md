@@ -1,4 +1,4 @@
-# Boden-Screening 2026-10-14 (Stand 2026-10-14 22:12 UTC)
+# Boden-Screening 2026-10-14 (Stand 2026-10-15 01:19 UTC)
 
 Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RSI < 50 + mind. 2 Boden-Punkte (nur Technik). Die Filter (Analysten, Anker, CRV 2:1) stehen in docs/heute.csv. Boden-Anker = niedrigster Puffer mit 60 % Halterate fuer diese Gruppe und diesen Wert (Vollauf), KO-Marke = Bezugstief - Anker x ATR.
 
@@ -8,7 +8,7 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 |---|---|---|---|---|---|
 | AIR.DE | 6 | 46 | 2.25 | 174.62 | - % |
 | CMCSA | 4 | 32 | - | - | 31 % |
-| GSK | 2 | 50 | 2.00 | 16.46 | 44 % |
+| GSK | 2 | 49 | 2.00 | 16.46 | 44 % |
 | KHC | 2 | 41 | - | - | 12 % |
 | MBG.DE | 4 | 33 | 3.75 | 35.04 | 52 % |
 | PEP | 5 | 48 | 2.75 | 116.66 | 21 % |
@@ -16,7 +16,7 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | SBUX | 3 | 40 | 2.75 | 80.94 | 50 % |
 | VNA.DE | 2 | 33 | 2.50 | 15.10 | 53 % |
 
-## Weitere Pruefttage (97)
+## Weitere Pruefttage (98)
 
 | Wert | Punkte | Grund |
 |---|---|---|
@@ -80,6 +80,7 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | MTX.DE | 1 | 1 P, Tief 1, RSI >= 50 |
 | NVS | 1 | 1 P, Tief 1, RSI >= 50 |
 | P911.DE | 1 | 1 P |
+| PBR | 1 | 1 P, RSI >= 50 |
 | PFE | 1 | 1 P, Tief 1, RSI >= 50 |
 | PG | 1 | 1 P, Tief 1, RSI >= 50 |
 | PM | 1 | 1 P, RSI >= 50 |

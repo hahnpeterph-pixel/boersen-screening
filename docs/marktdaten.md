@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-10-14 22:09 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1159._
+_Erstellt 2026-10-15 00:32 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1204._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -69,12 +69,11 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | SPCX (SPCX) | 152.16 | - | - | ja | 48.89 |
 | SKHY (SKHY) | 1419000.0 | - | - | ja | 30.46 |
 | SHOP (SHOP) | 172.5 | - | - | ja | 67.74 |
-| HSBC (HSBC) | 14.226 | - | - | ja | 40.07 |
+| HSBC (HSBC) | 14.222 | - | - | ja | 40.01 |
 | MUFG (MUFG) | 3482.0 | - | - | ja | 42.96 |
 | BHP (BHP) | 60.86 | - | - | ja | 46.27 |
 | SAN (SAN) | 12.12 | - | - | ja | 44.59 |
 | SMFG (SMFG) | 3285.0 | - | - | ja | 43.78 |
-| RIO (RIO) | 69.23 | - | ja | ja | 37.94 |
 | UBS (UBS) | 39.49 | - | - | ja | 40.85 |
 | MFG (MFG) | 8136.0 | - | - | ja | 42.36 |
 | APP (APP) | 262.19 | - | - | ja | 30.62 |
@@ -90,11 +89,12 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | ENR.DE (ENR.DE) | 135.7 | - | - | ja | 38.96 |
 | VOW3.DE (VOW3.DE) | 67.36 | - | - | ja | 36.98 |
 | ZAL.DE (ZAL.DE) | 23.98 | - | - | ja | 60.92 |
-| Gold (GC=F) | 4126.0 | - | - | ja | 36.23 |
-| Silber (SI=F) | 55.75 | - | - | ja | 31.71 |
-| Platin (PL=F) | 1604.8 | - | - | ja | 38.76 |
-| Palladium (PA=F) | 1096.5 | - | ja | ja | 32.44 |
-| Kupfer (HG=F) | 6.628 | - | - | ja | 52.38 |
+| Kupfer (HG=F) | 6.6205 | - | - | ja | 51.91 |
+| EUR/USD (EURUSD=X) | 1.1204 | ja | ja | - | 29.49 |
+| EUR/NOK (EURNOK=X) | 10.6589 | ja | - | - | 28.86 |
+| EUR/HKD (EURHKD=X) | 8.7901 | ja | ja | - | 29.84 |
+| EUR/AUD (EURAUD=X) | 1.6038 | ja | - | - | 37.41 |
+| EUR/KRW (EURKRW=X) | 1499.92 | ja | - | - | 32.55 |
 
 ---
 

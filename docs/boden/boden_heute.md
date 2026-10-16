@@ -1,8 +1,8 @@
-# Boden-Screening 2026-10-15 (Stand 2026-10-15 22:08 UTC)
+# Boden-Screening 2026-10-15 (Stand 2026-10-16 00:27 UTC)
 
 Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RSI < 50 + mind. 2 Boden-Punkte (nur Technik). Die Filter (Analysten, Anker, CRV 2:1) stehen in docs/heute.csv. Boden-Anker = niedrigster Puffer mit 60 % Halterate fuer diese Gruppe und diesen Wert (Vollauf), KO-Marke = Bezugstief - Anker x ATR.
 
-## Kandidaten (8)
+## Kandidaten (7)
 
 | Wert | Tief | RSI | Anker | KO-Marke | Analysten |
 |---|---|---|---|---|---|
@@ -11,7 +11,6 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | BNY | 5 | 36 | 1.75 | 129.61 | 60 % |
 | CHTR | 3 | 41 | 3.50 | 85.21 | 25 % |
 | ENB | 7 | 42 | 2.25 | 43.88 | 58 % |
-| HSBC | 3 | 40 | 3.50 | 12.91 | 33 % |
 | MBG.DE | 4 | 36 | 3.75 | 35.00 | 52 % |
 | MS | 6 | 27 | 2.25 | 165.99 | 47 % |
 
@@ -49,6 +48,7 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | GM | 1 | 1 P, Tief 1, RSI >= 50 |
 | HDB | 1 | 1 P, RSI >= 50 |
 | HNR1.DE | 1 | 1 P, Tief 1, RSI >= 50 |
+| HSBC | 1 | 1 P |
 | IBM | 1 | 1 P, RSI >= 50 |
 | INTC | 1 | 1 P, Umkehr a |
 | ISRG | 1 | 1 P, Tief 1, RSI >= 50 |
@@ -115,7 +115,6 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | ORCL | 0 | 0 P, Umkehr a |
 | PANW | 0 | 0 P, Umkehr a |
 | PLTR | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
-| SAN | 0 | 0 P, Umkehr a |
 | SCCO | 0 | 0 P, Umkehr a |
 | SHOP | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
 | SMFG | 0 | 0 P, Umkehr a |

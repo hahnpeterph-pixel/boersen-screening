@@ -1,8 +1,8 @@
 # Stundenwache
 
-Stand: 2026-10-15 · 272 Werte mit Stundendaten · erstellt 2026-10-15 22:06 UTC
+Stand: 2026-10-15 · 272 Werte mit Stundendaten · erstellt 2026-10-16 00:26 UTC
 
-> **Sitzung noch nicht abgeschlossen.** 5 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 5, 6, 7, 8, 9). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
+> **Sitzung noch nicht abgeschlossen.** 11 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 1, 2, 5, 6, 7, 8, 9). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
 
 Marken sind das juengste Swing-Tief und das juengste Swing-Hoch aus `tiefs_regel.py`, also dieselben wie im Tagesbericht. Geprueft wird nur, was der letzte Handelstag auf Stundenbasis damit gemacht hat.
 
@@ -17,26 +17,67 @@ Lesart der Urteile:
 
 Keine.
 
-## Tief zurueckerobert (0)
+## Tief zurueckerobert (1)
 
-Keine.
+Im Tagesverlauf unter der Marke, am Ende darueber. Das ist der Fall, den die Tageskerze verschluckt.
 
-## Tief angetestet (10)
+| Wert | Marke | Schluss | Abstand (ATR) | Stunden dahinter |
+|---|---|---|---|---|
+| HEI.DE | 140.4 | 141.65 | 0.298 | 1 |
+
+## Tief angetestet (47)
 
 Docht bis unter die Marke, kein Stundenschluss darunter.
 
 | Wert | Marke | Schluss | Abstand (ATR) | Stunden dahinter |
 |---|---|---|---|---|
+| VOW3.DE | 65.92 | 66.46 | 0.262 | 0 |
 | CNQ | 51.6451 | 51.97 | 0.275 | 0 |
+| PSX | 286.395 | 289.09 | 0.306 | 0 |
+| DBK.DE | 28.81 | 29.085 | 0.353 | 0 |
+| PAH3.DE | 24.24 | 24.52 | 0.393 | 0 |
+| VLO | 437.02 | 443.98 | 0.423 | 0 |
 | CRWD | 239.83 | 244.69 | 0.437 | 0 |
+| CEG | 267.61 | 274.985 | 0.443 | 0 |
+| MPC | 469.4 | 476.74 | 0.452 | 0 |
 | CSCO | 108.45 | 109.84 | 0.475 | 0 |
 | PANW | 361.68 | 370.16 | 0.485 | 0 |
+| STX | 652.29 | 683.15 | 0.567 | 0 |
+| RWE.DE | 57.16 | 57.84 | 0.57 | 0 |
+| AMAT | 418.24 | 430.28 | 0.597 | 0 |
+| CON.DE | 69.2 | 70.22 | 0.624 | 0 |
+| BKR | 53.44 | 54.395 | 0.633 | 0 |
+| FTNT | 178.28 | 181.91 | 0.643 | 0 |
+| SNPS | 454.49 | 468.02 | 0.646 | 0 |
 | DELL | 452.4201 | 472.71 | 0.679 | 0 |
+| TXN | 273.59 | 279.13 | 0.683 | 0 |
+| MSFT | 531.22 | 539.33 | 0.714 | 0 |
+| KLAC | 168.42 | 174.44 | 0.756 | 0 |
+| SIE.DE | 264.4 | 269.65 | 0.766 | 0 |
+| LRCX | 266.12 | 277.33 | 0.827 | 0 |
+| ZS | 212.14 | 220.25 | 0.841 | 0 |
+| MRVL | 227.31 | 241.379 | 0.855 | 0 |
+| AVGO | 334.61 | 344.27 | 0.856 | 0 |
 | ADI | 394.18 | 404.015 | 0.86 | 0 |
 | C | 120.2 | 123.21 | 0.919 | 0 |
+| INTC | 90.02 | 95.31 | 0.949 | 0 |
 | ORCL | 128.0 | 134.455 | 0.95 | 0 |
+| GOOGL | 340.61 | 349.21 | 1.019 | 0 |
+| CAT | 704.0101 | 735.5 | 1.041 | 0 |
 | AMZN | 248.65 | 254.71 | 1.052 | 0 |
+| ARM | 226.54 | 244.59 | 1.078 | 0 |
+| PDD | 80.225 | 82.42 | 1.127 | 0 |
+| GE | 304.09 | 311.95 | 1.135 | 0 |
 | APH | 78.41 | 81.47 | 1.154 | 0 |
+| ENR.DE | 124.46 | 131.64 | 1.276 | 0 |
+| EQIX | 961.93 | 995.85 | 1.321 | 0 |
+| SCCO | 192.39 | 201.81 | 1.343 | 0 |
+| GFS | 45.6073 | 48.77 | 1.403 | 0 |
+| APP | 260.99 | 279.19 | 1.41 | 0 |
+| QCOM | 168.84 | 178.36 | 1.432 | 0 |
+| SCHW | 91.38 | 94.19 | 1.433 | 0 |
+| MSTR | 134.892 | 151.27 | 1.791 | 0 |
+| SHOP | 163.252 | 178.11 | 2.061 | 0 |
 
 ## Swing-Hoch ueberwunden (127)
 
@@ -48,7 +89,7 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | SY1.DE | 92.68 | 99.4 | 3.843 | 9 |
 | MCK | 907.07 | 999.58 | 3.813 | 7 |
 | BNR.DE | 60.28 | 64.7 | 3.697 | 9 |
-| SO | 83.98 | 89.175 | 3.655 | 7 |
+| SO | 83.98 | 89.17 | 3.651 | 7 |
 | COP | 130.97 | 141.75 | 3.645 | 7 |
 | ADP | 266.46 | 286.54 | 3.562 | 6 |
 | BRK-B | 507.24 | 525.98 | 3.43 | 7 |
@@ -72,31 +113,33 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | PG | 149.2 | 157.08 | 2.874 | 7 |
 | MDT | 88.5 | 95.48 | 2.781 | 7 |
 | CVX | 207.41 | 219.39 | 2.756 | 7 |
+| SONY | 3797.0 | 4006.0 | 2.629 | 1 |
+| TM | 2944.5 | 3087.0 | 2.559 | 1 |
 | SAP.DE | 187.8 | 201.7 | 2.442 | 9 |
 | CB | 339.66 | 352.92 | 2.319 | 7 |
 | PAYX | 105.66 | 110.77 | 2.299 | 7 |
 | KDP | 32.14 | 34.17 | 2.29 | 7 |
 | DUK | 115.17 | 118.89 | 2.281 | 7 |
 | GEHC | 66.55 | 70.37 | 2.24 | 7 |
-| NVS | 120.02 | 125.58 | 2.23 | 9 |
+| NVS | 120.02 | 125.58 | 2.22 | 9 |
 | PFE | 28.17 | 29.42 | 2.132 | 7 |
 | ABNB | 164.91 | 174.27 | 2.065 | 7 |
 | MCD | 234.3 | 242.51 | 2.044 | 7 |
 | ROP | 365.24 | 382.53 | 2.039 | 7 |
 | UNH | 383.48 | 406.6 | 1.939 | 7 |
 | HEN3.DE | 75.6 | 78.16 | 1.921 | 9 |
-| TM | 2944.5 | 3044.0 | 1.844 | 7 |
 | HD | 296.6 | 308.27 | 1.808 | 7 |
 | CSGP | 30.16 | 31.99 | 1.796 | 7 |
 | SHW | 322.85 | 336.945 | 1.77 | 7 |
 | LMT | 515.77 | 532.88 | 1.739 | 7 |
 | TJX | 139.62 | 144.57 | 1.72 | 7 |
 | AMGN | 415.79 | 434.03 | 1.712 | 7 |
+| GSK | 17.91 | 18.705 | 1.702 | 9 |
 | MNST | 43.64 | 45.33 | 1.694 | 7 |
-| IBM | 224.51 | 234.14 | 1.674 | 7 |
+| IBM | 224.51 | 234.07 | 1.662 | 7 |
 | AZN | 121.8 | 126.98 | 1.633 | 9 |
 | WDAY | 185.82 | 196.66 | 1.629 | 7 |
-| DB1.DE | 296.8 | 305.1 | 1.605 | 9 |
+| DB1.DE | 296.8 | 305.2 | 1.624 | 9 |
 | ABT | 100.95 | 104.69 | 1.581 | 7 |
 | CSX | 47.73 | 48.7 | 1.454 | 7 |
 | BTI | 42.42 | 43.67 | 1.414 | 9 |
@@ -111,14 +154,12 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | LLY | 1206.63 | 1252.1 | 1.226 | 7 |
 | LOW | 190.0 | 195.77 | 1.219 | 7 |
 | ABBV | 274.94 | 283.36 | 1.213 | 7 |
-| GSK | 17.91 | 18.705 | 1.191 | 9 |
 | REGN | 768.66 | 796.37 | 1.186 | 7 |
 | AEP | 121.8 | 124.3 | 1.184 | 7 |
 | CVS | 89.93 | 92.57 | 1.162 | 7 |
 | EQNR | 419.3 | 430.0 | 1.128 | 8 |
 | BLK | 1092.92 | 1121.0601 | 1.107 | 6 |
 | SPGI | 416.02 | 424.89 | 1.075 | 7 |
-| SONY | 3797.0 | 3880.0 | 1.062 | 7 |
 | NKE | 35.85 | 37.17 | 1.056 | 7 |
 | IBN | 1360.8 | 1389.4 | 1.047 | 7 |
 | EOAN.DE | 17.22 | 17.565 | 1.016 | 9 |
@@ -163,7 +204,7 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | CRM | 245.06 | 246.7 | 0.194 | 4 |
 | CM | 111.89 | 112.26 | 0.187 | 3 |
 | LIN | 492.1 | 493.23 | 0.138 | 7 |
-| BMO | 165.67 | 166.01 | 0.12 | 3 |
+| BMO | 165.67 | 166.02 | 0.124 | 3 |
 | NOW | 148.14 | 148.6 | 0.077 | 2 |
 | SBUX | 96.73 | 96.87 | 0.056 | 1 |
 | AAPL | 341.57 | 341.91 | 0.052 | 7 |

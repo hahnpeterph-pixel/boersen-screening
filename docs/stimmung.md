@@ -1,6 +1,6 @@
 # Marktstimmung
 
-Stand Abruf: 15.10.2026 22:08 UTC
+Stand Abruf: 16.10.2026 00:27 UTC
 
 **Stimmung: VIX 16,5 (normal, 5T +1,1, 15.10.) · DAX-Schwankung gemessen 13,4 (normal, 5T +0,2, 15.10.) · Fear & Greed 32 (Angst, Vortag +5, 15.10.)**
 

@@ -1262,7 +1262,6 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | BAYN.DE (BAYN.DE) | 2025-11-24 | aufwaerts | 27.89 | 1.82 | 6.633 | 226 |
 | BAYN.DE (BAYN.DE) | 2025-12-02 | aufwaerts | 30.655 | 2.775 | 10.912 | 220 |
 | BAYN.DE (BAYN.DE) | 2026-10-01 | abwaerts | 47.88 | 0.413 | 1.19 | 11 |
-| BBVA (BBVA) | 2025-10-17 | aufwaerts | 15.825 | 1.948 | 5.245 | 254 |
 | BBVA (BBVA) | 2026-05-06 | aufwaerts | 18.26 | 0.375 | 1.232 | 117 |
 | BBVA (BBVA) | 2026-06-12 | aufwaerts | 19.515 | 0.681 | 1.717 | 90 |
 | BBVA (BBVA) | 2026-06-15 | aufwaerts | 20.24 | 0.632 | 1.581 | 89 |
@@ -1352,7 +1351,6 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | COF (COF) | 2026-01-12 | abwaerts | 249.09 | 3.047 | 7.684 | 192 |
 | COF (COF) | 2026-01-23 | abwaerts | 232.31 | 1.136 | 3.668 | 184 |
 | COF (COF) | 2026-06-15 | aufwaerts | 185.5 | 0.58 | 1.806 | 86 |
-| CON.DE (CON.DE) | 2025-10-17 | aufwaerts | 54.64 | 1.925 | 6.149 | 252 |
 | CON.DE (CON.DE) | 2026-04-01 | aufwaerts | 60.16 | 0.714 | 2.56 | 139 |
 | CON.DE (CON.DE) | 2026-05-06 | aufwaerts | 62.48 | 0.463 | 1.761 | 117 |
 | COP (COP) | 2025-12-30 | aufwaerts | 92.73 | 0.285 | 0.669 | 200 |

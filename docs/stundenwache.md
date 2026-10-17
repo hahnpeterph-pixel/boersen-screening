@@ -1,6 +1,6 @@
 # Stundenwache
 
-Stand: 2026-10-16 · 272 Werte mit Stundendaten · erstellt 2026-10-16 22:02 UTC
+Stand: 2026-10-16 · 272 Werte mit Stundendaten · erstellt 2026-10-17 00:31 UTC
 
 > **Sitzung noch nicht abgeschlossen.** 5 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 5, 6, 7, 8, 9). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
 
@@ -25,7 +25,7 @@ Schluss unter dem juengsten Swing-Tief. Die Sequenz ist gerissen.
 
 Keine.
 
-## Tief angetestet (4)
+## Tief angetestet (21)
 
 Docht bis unter die Marke, kein Stundenschluss darunter.
 
@@ -33,8 +33,25 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 |---|---|---|---|---|
 | KLAC | 165.28 | 165.75 | 0.058 | 0 |
 | MRVL | 226.62 | 227.76 | 0.069 | 0 |
+| AMD | 526.8324 | 528.75 | 0.073 | 0 |
+| CSCO | 107.14 | 107.375 | 0.078 | 0 |
+| AMAT | 407.52 | 409.29 | 0.086 | 0 |
+| GILD | 155.62 | 156.19 | 0.152 | 0 |
+| VRTX | 497.4935 | 499.78 | 0.176 | 0 |
+| PLTR | 184.45 | 186.03 | 0.211 | 0 |
+| DE | 636.49 | 641.96 | 0.27 | 0 |
+| SNOW | 302.24 | 306.695 | 0.272 | 0 |
 | PLD | 124.9 | 125.71 | 0.273 | 0 |
-| SNPS | 448.19 | 454.79 | 0.304 | 0 |
+| META | 702.7101 | 709.34 | 0.3 | 0 |
+| NET | 291.15 | 296.12 | 0.308 | 0 |
+| MSFT | 524.43 | 528.95 | 0.385 | 0 |
+| MDB | 328.15 | 337.49 | 0.412 | 0 |
+| NFLX | 69.82 | 70.54 | 0.437 | 0 |
+| AAPL | 340.46 | 343.47 | 0.45 | 0 |
+| UNH | 395.5175 | 401.41 | 0.466 | 0 |
+| MRNA | 208.92 | 218.0 | 0.49 | 0 |
+| TSLA | 349.33 | 354.67 | 0.492 | 0 |
+| BEI.DE | 80.64 | 81.54 | 0.65 | 0 |
 
 ## Swing-Hoch ueberwunden (122)
 
@@ -63,8 +80,8 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | COST | 931.09 | 989.11 | 3.618 | 7 |
 | DUK | 115.17 | 121.46 | 3.594 | 7 |
 | V | 377.17 | 402.58 | 3.551 | 7 |
+| TRV | 362.75 | 389.33 | 3.486 | 7 |
 | MAR | 362.46 | 388.03 | 3.462 | 7 |
-| TRV | 362.75 | 389.15 | 3.462 | 7 |
 | SHEL | 36.815 | 39.38 | 3.39 | 9 |
 | MUV2.DE | 516.2 | 545.6 | 3.39 | 9 |
 | LMT | 515.77 | 551.86 | 3.366 | 7 |
@@ -124,7 +141,7 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | BAS.DE | 52.26 | 53.27 | 1.009 | 9 |
 | CNQ | 52.57 | 53.83 | 0.999 | 7 |
 | GSK | 17.91 | 18.57 | 0.994 | 9 |
-| SYK | 287.45 | 294.67 | 0.944 | 7 |
+| SYK | 287.45 | 294.7 | 0.948 | 7 |
 | INTU | 314.95 | 325.24 | 0.893 | 7 |
 | ORLY | 87.77 | 89.27 | 0.872 | 7 |
 | ZAL.DE | 24.73 | 25.27 | 0.798 | 9 |

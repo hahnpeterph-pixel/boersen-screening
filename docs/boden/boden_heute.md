@@ -1,4 +1,4 @@
-# Boden-Screening 2026-10-16 (Stand 2026-10-17 00:33 UTC)
+# Boden-Screening 2026-10-16 (Stand 2026-10-17 04:44 UTC)
 
 Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RSI < 50 + mind. 2 Boden-Punkte (nur Technik). Die Filter (Analysten, Anker, CRV 2:1) stehen in docs/heute.csv. Boden-Anker = niedrigster Puffer mit 60 % Halterate fuer diese Gruppe und diesen Wert (Vollauf), KO-Marke = Bezugstief - Anker x ATR.
 
@@ -16,11 +16,12 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | Wert | Punkte | Grund |
 |---|---|---|
 | BTI | 3 | RSI >= 50 |
+| ENB | 3 | RSI >= 50 |
 | RTX | 3 | RSI >= 50 |
 | CNQ | 2 | Tief 1, RSI >= 50 |
 | DB1.DE | 2 | Tief 1, RSI >= 50 |
-| ENB | 2 | RSI >= 50 |
 | GD | 2 | RSI >= 50 |
+| PG | 2 | Tief 1, RSI >= 50 |
 | RWE.DE | 2 | Tief 1, RSI >= 50 |
 | SO | 2 | Tief 1, RSI >= 50 |
 | TRV | 2 | RSI >= 50 |
@@ -50,7 +51,6 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | ORLY | 1 | 1 P, Tief 1, RSI >= 50 |
 | PAH3.DE | 1 | 1 P |
 | PBR | 1 | 1 P, Tief 1, RSI >= 50 |
-| PG | 1 | 1 P, Tief 1, RSI >= 50 |
 | SHEL | 1 | 1 P, Tief 1, RSI >= 50 |
 | TJX | 1 | 1 P, Tief 1, RSI >= 50 |
 | UL | 1 | 1 P, Tief 1, RSI >= 50 |

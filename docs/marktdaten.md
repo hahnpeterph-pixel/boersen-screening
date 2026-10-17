@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-10-17 00:29 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1244._
+_Erstellt 2026-10-17 04:40 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1244._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -24,7 +24,7 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | KLAC (KLAC) | 165.74 | - | - | ja | 31.05 |
 | LRCX (LRCX) | 263.94 | - | - | ja | 30.26 |
 | MDB (MDB) | 337.57 | - | ja | ja | 39.25 |
-| META (META) | 709.325 | - | - | ja | 50.23 |
+| META (META) | 709.33 | - | - | ja | 50.23 |
 | MSFT (MSFT) | 529.05 | - | ja | ja | 57.33 |
 | PANW (PANW) | 342.0 | - | ja | ja | 36.97 |
 | PLTR (PLTR) | 186.03 | - | ja | ja | 46.27 |
@@ -43,11 +43,10 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | NET (NET) | 296.3 | - | ja | ja | 35.89 |
 | PLD (PLD) | 125.75 | - | - | ja | 34.0 |
 | AXON (AXON) | 390.29 | - | ja | ja | 32.12 |
-| Palladium (PA=F) | 1115.0 | - | ja | ja | 35.44 |
-| Erdgas (NG=F) | 3.117 | - | - | ja | 52.36 |
-| Weizen (ZW=F) | 659.75 | - | - | ja | 36.81 |
+| Erdgas (NG=F) | 3.116 | - | - | ja | 52.31 |
+| Weizen (ZW=F) | 660.5 | - | - | ja | 37.05 |
 | Mais (ZC=F) | 474.25 | - | - | ja | 33.03 |
-| Kakao (CC=F) | 5686.0 | - | - | ja | 49.78 |
+| Kakao (CC=F) | 5645.0 | - | - | ja | 48.44 |
 | EUR/GBP (EURGBP=X) | 0.8432 | - | - | ja | 24.58 |
 | EUR/CHF (EURCHF=X) | 0.9255 | - | - | ja | 33.12 |
 | EUR/NOK (EURNOK=X) | 10.595 | - | - | ja | 23.58 |

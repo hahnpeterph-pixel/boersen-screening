@@ -1,69 +1,65 @@
-# Boersen-Screening - 2026-10-17
+# Boersen-Screening - 2026-10-19
 
-_Stand: Schlusskurse vom 2026-10-16, aber 56 Werte haengen zurueck - siehe Standwarnung. Erstellt 2026-10-17T04:40:09+00:00 UTC. 271 Werte ausgewertet._
+_Stand: Schlusskurse vom 2026-10-19, aber 52 Werte haengen zurueck - siehe Standwarnung. Erstellt 2026-10-19T22:53:06+00:00 UTC. 271 Werte ausgewertet._
 
-> **Standwarnung: 56 von 271 Werten haengen zurueck.** Neuester Handelstag im Bericht ist 2026-10-16.
+> **Standwarnung: 52 von 271 Werten haengen zurueck.** Neuester Handelstag im Bericht ist 2026-10-19.
 >
 > Ursache ist in aller Regel Yahoo: die vorlaeufige Tageskerze einer Boerse wird ueber Nacht durch die offizielle Abrechnung ersetzt, und solange die fehlt, faellt der Tag weg. Betroffen sind meist die europaeischen Notierungen. Fuer diese Werte gelten Kurs, ATR, RSI und Tiefs unten NICHT fuer den neuesten Handelstag.
 >
 > | Wert | letzte Kerze |
 > |---|---|
-> | ADS.DE | 2026-10-15 |
-> | AIR.DE | 2026-10-15 |
-> | ALV.DE | 2026-10-15 |
-> | ASML | 2026-10-15 |
-> | AZN | 2026-10-15 |
-> | BAS.DE | 2026-10-15 |
-> | BAYN.DE | 2026-10-15 |
-> | BBVA | 2026-10-15 |
-> | BEI.DE | 2026-10-15 |
-> | BMW.DE | 2026-10-15 |
-> | BNR.DE | 2026-10-15 |
-> | BP | 2026-10-15 |
-> | BTI | 2026-10-15 |
-> | CBK.DE | 2026-10-15 |
-> | CON.DE | 2026-10-15 |
-> | DB1.DE | 2026-10-15 |
-> | DBK.DE | 2026-10-15 |
-> | DHL.DE | 2026-10-15 |
-> | DTE.DE | 2026-10-15 |
-> | DTG.DE | 2026-10-15 |
-> | ENR.DE | 2026-10-15 |
-> | EOAN.DE | 2026-10-15 |
-> | EQNR | 2026-10-15 |
-> | FRE.DE | 2026-10-15 |
-> | GSK | 2026-10-15 |
-> | HEI.DE | 2026-10-15 |
-> | HEN3.DE | 2026-10-15 |
-> | HNR1.DE | 2026-10-15 |
-> | HSBC | 2026-10-15 |
-> | IFX.DE | 2026-10-15 |
-> | ING | 2026-10-15 |
-> | MBG.DE | 2026-10-15 |
-> | MRK.DE | 2026-10-15 |
-> | MTX.DE | 2026-10-15 |
-> | MUV2.DE | 2026-10-15 |
-> | NVO | 2026-10-15 |
-> | P911.DE | 2026-10-15 |
-> | PAH3.DE | 2026-10-15 |
-> | PBR | 2026-10-15 |
-> | QIA.DE | 2026-10-15 |
-> | RHM.DE | 2026-10-15 |
-> | RIO | 2026-10-15 |
-> | RWE.DE | 2026-10-15 |
-> | SAN | 2026-10-15 |
-> | SAP.DE | 2026-10-15 |
-> | SHEL | 2026-10-15 |
-> | SHL.DE | 2026-10-15 |
-> | SIE.DE | 2026-10-15 |
-> | SNY | 2026-10-15 |
-> | SRT3.DE | 2026-10-15 |
-> | SY1.DE | 2026-10-15 |
-> | TTE | 2026-10-15 |
-> | UL | 2026-10-15 |
-> | VNA.DE | 2026-10-15 |
-> | VOW3.DE | 2026-10-15 |
-> | ZAL.DE | 2026-10-15 |
+> | ADS.DE | 2026-10-16 |
+> | AIR.DE | 2026-10-16 |
+> | ALV.DE | 2026-10-16 |
+> | ASML | 2026-10-16 |
+> | BABA | 2026-10-16 |
+> | BAS.DE | 2026-10-16 |
+> | BAYN.DE | 2026-10-16 |
+> | BBVA | 2026-10-16 |
+> | BEI.DE | 2026-10-16 |
+> | BMW.DE | 2026-10-16 |
+> | BNR.DE | 2026-10-16 |
+> | CBK.DE | 2026-10-16 |
+> | CON.DE | 2026-10-16 |
+> | DB1.DE | 2026-10-16 |
+> | DBK.DE | 2026-10-16 |
+> | DHL.DE | 2026-10-16 |
+> | DTE.DE | 2026-10-16 |
+> | DTG.DE | 2026-10-16 |
+> | ENR.DE | 2026-10-16 |
+> | EOAN.DE | 2026-10-16 |
+> | EQNR | 2026-10-16 |
+> | FRE.DE | 2026-10-16 |
+> | HDB | 2026-10-16 |
+> | HEI.DE | 2026-10-16 |
+> | HEN3.DE | 2026-10-16 |
+> | HNR1.DE | 2026-10-16 |
+> | IBN | 2026-10-16 |
+> | IFX.DE | 2026-10-16 |
+> | ING | 2026-10-16 |
+> | MBG.DE | 2026-10-16 |
+> | MRK.DE | 2026-10-16 |
+> | MTX.DE | 2026-10-16 |
+> | MUV2.DE | 2026-10-16 |
+> | NVO | 2026-10-16 |
+> | NVS | 2026-10-16 |
+> | P911.DE | 2026-10-16 |
+> | PAH3.DE | 2026-10-16 |
+> | QIA.DE | 2026-10-16 |
+> | RHM.DE | 2026-10-16 |
+> | RWE.DE | 2026-10-16 |
+> | SAN | 2026-10-16 |
+> | SAP.DE | 2026-10-16 |
+> | SHL.DE | 2026-10-16 |
+> | SIE.DE | 2026-10-16 |
+> | SNY | 2026-10-16 |
+> | SRT3.DE | 2026-10-16 |
+> | SY1.DE | 2026-10-16 |
+> | TTE | 2026-10-16 |
+> | UBS | 2026-10-16 |
+> | VNA.DE | 2026-10-16 |
+> | VOW3.DE | 2026-10-16 |
+> | ZAL.DE | 2026-10-16 |
 
 ## 📖 Glossar (was die Spalten bedeuten)
 
@@ -80,29 +76,34 @@ _Ueber alle 271 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 
 | Rang | Ticker | ISIN | Name | Index | Kurs | Abstand ATH (Info) | Kaufen-Anteil Analysten | Kursziel | RSI Tag | RSI Woche | RSI Stunde | Letztes Rating |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | SKHY | AR0272347318 | SK hynix Inc. | Watchlist | 1272000.00 | -56% | 100% (10 Banken, ≤120T) | 2094552.04 (65% ueber Kurs) | 26 | 40 | 29 | keine in 30T |
-| 2 | MSTR | US66538H1041 | Strategy Inc | NASDAQ | 136.83 | -71% | 100% (11 Banken, ≤120T) | 215.00 (57% ueber Kurs) | 43 | 49 | 32 | 2026-10-16 Cantor Fitzgerald: Rating bestaetigt: Overweight |
-| 3 | NVDA | - | NVIDIA Corporation | NASDAQ/DOW | 214.13 | -10% | 100% (21 Banken, ≤120T) | 315.00 (47% ueber Kurs) | 38 | 51 | 30 | 2026-10-01 Cantor Fitzgerald: Rating bestaetigt: Overweight |
-| 4 | LRCX | - | Lam Research Corporation | NASDAQ | 263.94 | -39% | 100% (13 Banken, ≤120T) | 385.00 (46% ueber Kurs) | 30 | 44 | 27 | 2026-10-05 Morgan Stanley: Rating bestaetigt: Overweight |
-| 5 | BA | - | Boeing Company (The) | DOW | 190.21 | -56% | 100% (10 Banken, ≤120T) | 270.00 (42% ueber Kurs) | 44 | 38 | 60 | 2026-10-15 RBC Capital: Rating bestaetigt: Outperform |
-| 6 | TTWO | - | Take-Two Interactive Software, | NASDAQ | 205.28 | -22% | 100% (9 Banken, ≤120T) | 290.00 (41% ueber Kurs) | 46 | 42 | 48 | keine in 30T |
-| 7 | ANET | US0404132054 | Arista Networks, Inc. | Watchlist | 176.98 | -18% | 100% (15 Banken, ≤120T) | 250.00 (41% ueber Kurs) | 32 | 49 | 24 | 2026-10-08 Citigroup: Rating bestaetigt: Buy |
-| 8 | ASML | USN070592100 | ASML Holding N.V. - New York Re | NASDAQ | 1464.20 | -15% | 100% (5 Banken, ≤120T) | 2040.30 (39% ueber Kurs) | 40 | 51 | 43 | 2026-10-15 JP Morgan: Rating bestaetigt: Overweight |
-| 9 | GE | US3696043013 | GE Aerospace | SP100 | 313.83 | -18% | 100% (9 Banken, ≤120T) | 400.00 (28% ueber Kurs) | 47 | 45 | 57 | 2026-09-30 Wells Fargo: Rating bestaetigt: Overweight |
-| 10 | ETN | - | Eaton Corporation, PLC | Watchlist | 391.25 | -15% | 100% (7 Banken, ≤120T) | 496.50 (27% ueber Kurs) | 35 | 45 | 30 | 2026-10-14 RBC Capital: Rating bestaetigt: Outperform |
-| 11 | PLD | US74340W1036 | Prologis, Inc. | Watchlist | 125.75 | -16% | 100% (8 Banken, ≤120T) | 158.00 (26% ueber Kurs) | 34 | 36 | 32 | 2026-10-16 BTIG: Rating bestaetigt: Buy |
-| 12 | BTI | - | British American Tobacco Indus | Watchlist | 43.66 | -22% | 100% (7 Banken, ≤120T) | 53.82 (23% ueber Kurs) | 66 | 52 | 70 | keine in 30T |
-| 13 | IBN | - | ICICI Bank Limited | Watchlist | 1397.00 | -5% | 100% (4 Banken, ≤120T) | 1722.59 (23% ueber Kurs) | 59 | 56 | 72 | keine in 30T |
-| 14 | CVS | US1266501006 | CVS Health Corporation | SP100 | 92.36 | -16% | 100% (11 Banken, ≤120T) | 113.00 (22% ueber Kurs) | 58 | 51 | 64 | 2026-10-12 Leerink Partners: Rating bestaetigt: Outperform |
-| 15 | SPGI | US78409V1044 | S&P Global Inc. | Watchlist | 429.64 | -19% | 100% (11 Banken, ≤120T) | 515.00 (20% ueber Kurs) | 66 | 53 | 77 | 2026-10-14 JP Morgan: Rating bestaetigt: Overweight |
-| 16 | TM | - | Toyota Motor Corporation | Watchlist | 3094.00 | -19% | 100% (4 Banken, ≤120T) | 3684.86 (19% ueber Kurs) | 65 | 56 | 80 | keine in 30T |
-| 17 | NEM | US6516391066 | Newmont Corporation | Watchlist | 118.60 | -12% | 100% (8 Banken, ≤120T) | 140.00 (18% ueber Kurs) | 51 | 55 | 64 | keine in 30T |
-| 18 | ADI | US0326541051 | Analog Devices, Inc. | NASDAQ | 395.44 | -11% | 100% (12 Banken, ≤120T) | 463.50 (17% ueber Kurs) | 50 | 56 | 37 | keine in 30T |
-| 19 | DIS | - | Walt Disney Company (The) | DOW | 110.59 | -44% | 100% (11 Banken, ≤120T) | 127.50 (15% ueber Kurs) | 65 | 58 | 55 | 2026-10-16 Citigroup: Rating bestaetigt: Buy |
-| 20 | MU | US5951121038 | Micron Technology, Inc. | NASDAQ | 878.84 | -28% | 95% (20 Banken, ≤120T) | 1550.00 (76% ueber Kurs) | 34 | 51 | 31 | 2026-10-13 Rosenblatt: Rating bestaetigt: Buy |
+| 1 | SKHY | AR0272347318 | SK hynix Inc. | Watchlist | 1277000.00 | -56% | 100% (10 Banken, ≤120T) | 2167512.50 (70% ueber Kurs) | 26 | 40 | 33 | keine in 30T |
+| 2 | MSTR | US66538H1041 | Strategy Inc | NASDAQ | 136.02 | -71% | 100% (11 Banken, ≤120T) | 215.00 (58% ueber Kurs) | 42 | 49 | 34 | 2026-10-16 Cantor Fitzgerald: Rating bestaetigt: Overweight |
+| 3 | NVDA | - | NVIDIA Corporation | NASDAQ/DOW | 217.09 | -9% | 100% (21 Banken, ≤120T) | 315.00 (45% ueber Kurs) | 42 | 52 | 43 | 2026-10-01 Cantor Fitzgerald: Rating bestaetigt: Overweight |
+| 4 | ASML | USN070592100 | ASML Holding N.V. - New York Re | NASDAQ | 1477.20 | -14% | 100% (5 Banken, ≤120T) | 2094.73 (42% ueber Kurs) | 42 | 52 | 53 | 2026-10-15 JP Morgan: Rating bestaetigt: Overweight |
+| 5 | TTWO | - | Take-Two Interactive Software, | NASDAQ | 204.92 | -22% | 100% (9 Banken, ≤120T) | 290.00 (42% ueber Kurs) | 46 | 42 | 47 | keine in 30T |
+| 6 | LRCX | - | Lam Research Corporation | NASDAQ | 272.20 | -37% | 100% (13 Banken, ≤120T) | 380.00 (40% ueber Kurs) | 35 | 46 | 41 | 2026-10-05 Morgan Stanley: Rating bestaetigt: Overweight |
+| 7 | ANET | US0404132054 | Arista Networks, Inc. | Watchlist | 182.95 | -16% | 100% (15 Banken, ≤120T) | 248.00 (36% ueber Kurs) | 38 | 51 | 42 | 2026-10-08 Citigroup: Rating bestaetigt: Buy |
+| 8 | GE | US3696043013 | GE Aerospace | SP100 | 311.28 | -18% | 100% (9 Banken, ≤120T) | 400.00 (28% ueber Kurs) | 44 | 44 | 48 | 2026-09-30 Wells Fargo: Rating bestaetigt: Overweight |
+| 9 | ETN | - | Eaton Corporation, PLC | Watchlist | 391.50 | -15% | 100% (7 Banken, ≤120T) | 492.50 (26% ueber Kurs) | 35 | 45 | 36 | 2026-10-14 RBC Capital: Rating bestaetigt: Outperform |
+| 10 | IBN | - | ICICI Bank Limited | Watchlist | 1397.00 | -5% | 100% (4 Banken, ≤120T) | 1756.70 (26% ueber Kurs) | 59 | 56 | 54 | keine in 30T |
+| 11 | PLD | US74340W1036 | Prologis, Inc. | Watchlist | 124.09 | -18% | 100% (8 Banken, ≤120T) | 156.00 (26% ueber Kurs) | 32 | 34 | 30 | 2026-10-16 BTIG: Rating bestaetigt: Buy |
+| 12 | CVS | US1266501006 | CVS Health Corporation | SP100 | 92.68 | -16% | 100% (11 Banken, ≤120T) | 113.00 (22% ueber Kurs) | 59 | 52 | 64 | 2026-10-12 Leerink Partners: Rating bestaetigt: Outperform |
+| 13 | SPGI | US78409V1044 | S&P Global Inc. | Watchlist | 427.83 | -19% | 100% (11 Banken, ≤120T) | 515.00 (20% ueber Kurs) | 64 | 53 | 63 | 2026-10-14 JP Morgan: Rating bestaetigt: Overweight |
+| 14 | TM | - | Toyota Motor Corporation | Watchlist | 3102.00 | -19% | 100% (4 Banken, ≤120T) | 3732.44 (20% ueber Kurs) | 65 | 56 | 71 | keine in 30T |
+| 15 | NEM | US6516391066 | Newmont Corporation | Watchlist | 118.01 | -12% | 100% (8 Banken, ≤120T) | 140.00 (19% ueber Kurs) | 50 | 54 | 58 | 2026-10-19 Barclays: Rating bestaetigt: Overweight |
+| 16 | ADI | US0326541051 | Analog Devices, Inc. | NASDAQ | 394.35 | -11% | 100% (12 Banken, ≤120T) | 467.50 (18% ueber Kurs) | 49 | 55 | 41 | keine in 30T |
+| 17 | DIS | - | Walt Disney Company (The) | DOW | 109.59 | -44% | 100% (11 Banken, ≤120T) | 127.50 (16% ueber Kurs) | 61 | 57 | 47 | 2026-10-16 Citigroup: Rating bestaetigt: Buy |
+| 18 | ABT | US0028241000 | Abbott Laboratories | SP100 | 104.06 | -23% | 100% (13 Banken, ≤120T) | 120.00 (15% ueber Kurs) | 57 | 52 | 54 | 2026-10-16 TD Cowen: Rating bestaetigt: Buy |
+| 19 | DDOG | US23804L1035 | Datadog, Inc. | NASDAQ | 260.36 | -11% | 96% (23 Banken, ≤120T) | 300.00 (15% ueber Kurs) | 49 | 57 | 47 | 2026-10-19 Bernstein: hochgestuft auf Outperform |
+| 20 | MU | US5951121038 | Micron Technology, Inc. | NASDAQ | 904.90 | -25% | 95% (20 Banken, ≤120T) | 1550.00 (71% ueber Kurs) | 38 | 52 | 45 | 2026-10-13 Rosenblatt: Rating bestaetigt: Buy |
 
 
 ## 🧭 Analysten-Einstufungen (Filtertreffer, letzte 30 Tage)
+
+**ABT** (Abbott Laboratories, SP100)
+- 2026-10-16: TD Cowen – Bestaetigung (Buy → Buy)
+- 2026-10-07: Barclays – Erstbewertung (Overweight)
+- 2026-10-02: Rothschild & Co – Hochstufung (Neutral → Buy)
 
 **ADI** (Analog Devices, Inc., NASDAQ)
 - keine Ratingaenderung in den letzten 30 Tagen
@@ -114,18 +115,15 @@ _Ueber alle 271 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 **ASML** (ASML Holding N.V. - New York Re, NASDAQ)
 - 2026-10-15: JP Morgan – Bestaetigung (Overweight → Overweight)
 
-**BA** (Boeing Company (The), DOW)
-- 2026-10-15: RBC Capital – Bestaetigung (Outperform → Outperform)
-- 2026-10-12: Bernstein – Bestaetigung (Outperform → Outperform)
-- 2026-10-09: TD Cowen – Bestaetigung (Buy → Buy)
-- 2026-10-09: Barclays – Erstbewertung (Overweight)
-- 2026-09-21: Jefferies – Bestaetigung (Buy → Buy)
-
-**BTI** (British American Tobacco Indus, Watchlist)
-- keine Ratingaenderung in den letzten 30 Tagen
-
 **CVS** (CVS Health Corporation, SP100)
 - 2026-10-12: Leerink Partners – Bestaetigung (Outperform → Outperform)
+
+**DDOG** (Datadog, Inc., NASDAQ)
+- 2026-10-19: Bernstein – Hochstufung (Market Perform → Outperform)
+- 2026-10-15: Mizuho – Bestaetigung (Outperform → Outperform)
+- 2026-10-13: Barclays – Bestaetigung (Overweight → Overweight)
+- 2026-10-12: RBC Capital – Bestaetigung (Outperform → Outperform)
+- 2026-10-09: CIBC – Bestaetigung (Outperformer → Outperformer)
 
 **DIS** (Walt Disney Company (The), DOW)
 - 2026-10-16: Citigroup – Bestaetigung (Buy → Buy)
@@ -163,7 +161,7 @@ _Ueber alle 271 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 - 2026-10-01: TD Cowen – Bestaetigung (Buy → Buy)
 
 **NEM** (Newmont Corporation, Watchlist)
-- keine Ratingaenderung in den letzten 30 Tagen
+- 2026-10-19: Barclays – Bestaetigung (Overweight → Overweight)
 
 **NVDA** (NVIDIA Corporation, NASDAQ/DOW)
 - 2026-10-01: Cantor Fitzgerald – Bestaetigung (Overweight → Overweight)

@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-10-20 01:06 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1225._
+_Erstellt 2026-10-20 10:00 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1225._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -18,7 +18,7 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 |---|---|---|---|---|---|
 | ADI (ADI) | 394.35 | - | - | ja | 48.91 |
 | AMGN (AMGN) | 424.94 | - | - | ja | 56.97 |
-| AZN (AZN) | 123.9 | - | - | ja | 53.93 |
+| AZN (AZN) | 124.0 | - | - | ja | 54.15 |
 | CAT (CAT) | 725.79 | - | - | ja | 29.83 |
 | CEG (CEG) | 263.19 | - | ja | ja | 43.24 |
 | CPRT (CPRT) | 27.51 | - | - | ja | 44.85 |
@@ -66,36 +66,33 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | SPOT (SPOT) | 518.76 | - | - | ja | 50.78 |
 | VLO (VLO) | 433.31 | - | ja | ja | 59.67 |
 | PLD (PLD) | 124.09 | - | - | ja | 31.3 |
-| HSBC (HSBC) | 13.968 | - | - | ja | 36.4 |
+| HSBC (HSBC) | 13.972 | - | - | ja | 36.46 |
 | RY (RY) | 196.3 | - | - | ja | 45.63 |
-| SAN (SAN) | 11.758 | - | - | ja | 38.09 |
+| SAN (SAN) | 11.772 | - | - | ja | 38.32 |
 | NVO (NVO) | 256.5 | - | - | ja | 43.49 |
-| BBVA (BBVA) | 22.66 | - | - | ja | 33.55 |
+| BBVA (BBVA) | 22.73 | - | - | ja | 34.13 |
 | UBS (UBS) | 39.08 | - | - | ja | 38.92 |
 | HDB (HDB) | 712.0 | - | - | ja | 47.92 |
-| ING (ING) | 29.455 | - | - | ja | 38.48 |
+| ING (ING) | 29.505 | - | - | ja | 38.85 |
 | CM (CM) | 111.8 | - | - | ja | 49.0 |
-| SNY (SNY) | 70.98 | - | ja | ja | 42.12 |
+| SNY (SNY) | 71.01 | - | ja | ja | 42.24 |
 | AXON (AXON) | 383.09 | - | - | ja | 30.57 |
 | GFS (GFS) | 46.11 | - | - | ja | 43.73 |
-| AIR.DE (AIR.DE) | 194.44 | - | - | ja | 52.73 |
-| ALV.DE (ALV.DE) | 426.3 | - | - | ja | 49.19 |
-| BAYN.DE (BAYN.DE) | 43.59 | - | - | ja | 36.66 |
-| BNR.DE (BNR.DE) | 64.18 | - | - | ja | 64.61 |
-| CBK.DE (CBK.DE) | 37.07 | - | - | ja | 34.28 |
-| CON.DE (CON.DE) | 68.32 | - | - | ja | 45.5 |
-| DTG.DE (DTG.DE) | 40.95 | - | - | ja | 40.78 |
+| AIR.DE (AIR.DE) | 194.26 | - | - | ja | 52.42 |
+| ALV.DE (ALV.DE) | 425.9 | - | - | ja | 48.86 |
+| BAYN.DE (BAYN.DE) | 43.4 | - | - | ja | 35.96 |
+| CBK.DE (CBK.DE) | 37.09 | - | - | ja | 34.37 |
+| CON.DE (CON.DE) | 68.84 | - | - | ja | 47.47 |
+| DTG.DE (DTG.DE) | 40.87 | - | - | ja | 40.3 |
 | DBK.DE (DBK.DE) | 28.52 | - | - | ja | 28.45 |
-| DHL.DE (DHL.DE) | 57.5 | - | - | ja | 55.96 |
-| EOAN.DE (EOAN.DE) | 17.495 | - | - | ja | 53.11 |
-| MTX.DE (MTX.DE) | 346.5 | - | - | ja | 43.08 |
-| RWE.DE (RWE.DE) | 57.22 | - | ja | ja | 42.45 |
-| SIE.DE (SIE.DE) | 265.7 | - | - | ja | 42.65 |
-| Gold (GC=F) | 4149.7002 | - | - | ja | 40.86 |
-| Silber (SI=F) | 56.985 | - | ja | ja | 36.47 |
-| Erdgas (NG=F) | 3.022 | - | - | ja | 47.34 |
-| Weizen (ZW=F) | 653.5 | - | - | ja | 34.78 |
-| Mais (ZC=F) | 464.75 | - | - | ja | 29.09 |
+| MTX.DE (MTX.DE) | 346.8 | - | - | ja | 43.27 |
+| RWE.DE (RWE.DE) | 57.18 | - | ja | ja | 42.29 |
+| SIE.DE (SIE.DE) | 266.2 | - | - | ja | 43.08 |
+| Gold (GC=F) | 4160.1001 | - | - | ja | 41.7 |
+| Silber (SI=F) | 56.974 | - | ja | ja | 36.44 |
+| Erdgas (NG=F) | 3.058 | - | - | ja | 49.13 |
+| Weizen (ZW=F) | 655.25 | - | - | ja | 35.32 |
+| Mais (ZC=F) | 467.0 | - | - | ja | 29.93 |
 | EUR/GBP (EURGBP=X) | 0.8417 | - | - | ja | 22.32 |
 | EUR/CHF (EURCHF=X) | 0.9246 | - | - | ja | 32.04 |
 | EUR/NOK (EURNOK=X) | 10.5829 | - | - | ja | 22.57 |

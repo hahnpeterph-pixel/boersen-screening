@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-10-19 22:53 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1216._
+_Erstellt 2026-10-20 01:06 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1225._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -18,7 +18,7 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 |---|---|---|---|---|---|
 | ADI (ADI) | 394.35 | - | - | ja | 48.91 |
 | AMGN (AMGN) | 424.94 | - | - | ja | 56.97 |
-| AZN (AZN) | 124.0 | - | - | ja | 54.15 |
+| AZN (AZN) | 123.9 | - | - | ja | 53.93 |
 | CAT (CAT) | 725.79 | - | - | ja | 29.83 |
 | CEG (CEG) | 263.19 | - | ja | ja | 43.24 |
 | CPRT (CPRT) | 27.51 | - | - | ja | 44.85 |
@@ -66,12 +66,12 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | SPOT (SPOT) | 518.76 | - | - | ja | 50.78 |
 | VLO (VLO) | 433.31 | - | ja | ja | 59.67 |
 | PLD (PLD) | 124.09 | - | - | ja | 31.3 |
-| HSBC (HSBC) | 13.972 | - | - | ja | 36.46 |
+| HSBC (HSBC) | 13.968 | - | - | ja | 36.4 |
 | RY (RY) | 196.3 | - | - | ja | 45.63 |
 | SAN (SAN) | 11.758 | - | - | ja | 38.09 |
 | NVO (NVO) | 256.5 | - | - | ja | 43.49 |
 | BBVA (BBVA) | 22.66 | - | - | ja | 33.55 |
-| UBS (UBS) | 38.92 | - | - | ja | 38.04 |
+| UBS (UBS) | 39.08 | - | - | ja | 38.92 |
 | HDB (HDB) | 712.0 | - | - | ja | 47.92 |
 | ING (ING) | 29.455 | - | - | ja | 38.48 |
 | CM (CM) | 111.8 | - | - | ja | 49.0 |
@@ -91,12 +91,17 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | MTX.DE (MTX.DE) | 346.5 | - | - | ja | 43.08 |
 | RWE.DE (RWE.DE) | 57.22 | - | ja | ja | 42.45 |
 | SIE.DE (SIE.DE) | 265.7 | - | - | ja | 42.65 |
-| Gold (GC=F) | 4155.8999 | - | - | ja | 41.36 |
-| Erdgas (NG=F) | 3.038 | - | - | ja | 48.12 |
-| Weizen (ZW=F) | 656.0 | - | - | ja | 35.56 |
-| Mais (ZC=F) | 466.75 | - | - | ja | 29.84 |
-| EUR/BRL (EURBRL=X) | 5.6505 | - | - | ja | 38.84 |
-| EUR/KRW (EURKRW=X) | 1491.4 | - | - | ja | 30.66 |
+| Gold (GC=F) | 4149.7002 | - | - | ja | 40.86 |
+| Silber (SI=F) | 56.985 | - | ja | ja | 36.47 |
+| Erdgas (NG=F) | 3.022 | - | - | ja | 47.34 |
+| Weizen (ZW=F) | 653.5 | - | - | ja | 34.78 |
+| Mais (ZC=F) | 464.75 | - | - | ja | 29.09 |
+| EUR/GBP (EURGBP=X) | 0.8417 | - | - | ja | 22.32 |
+| EUR/CHF (EURCHF=X) | 0.9246 | - | - | ja | 32.04 |
+| EUR/NOK (EURNOK=X) | 10.5829 | - | - | ja | 22.57 |
+| EUR/JPY (EURJPY=X) | 177.14 | - | - | ja | 38.01 |
+| EUR/AUD (EURAUD=X) | 1.61 | - | - | ja | 46.15 |
+| EUR/BRL (EURBRL=X) | 5.6818 | - | - | ja | 41.27 |
 
 ---
 

@@ -1610,7 +1610,6 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | MELI (MELI) | 2026-10-05 | aufwaerts | 1709.36 | 1.013 | 3.782 | 10 |
 | META (META) | 2026-09-03 | aufwaerts | 600.38 | 0.199 | 0.685 | 31 |
 | META (META) | 2026-09-09 | aufwaerts | 624.8 | 1.109 | 3.816 | 28 |
-| MFG (MFG) | 2025-10-20 | aufwaerts | 4653.0 | 0.101 | 0.279 | 241 |
 | MFG (MFG) | 2025-11-26 | aufwaerts | 5266.0 | 0.51 | 1.386 | 216 |
 | MFG (MFG) | 2026-01-05 | aufwaerts | 5752.0 | 0.238 | 0.487 | 191 |
 | MFG (MFG) | 2026-03-24 | aufwaerts | 5973.0 | 0.625 | 2.963 | 139 |
@@ -1818,7 +1817,6 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | ROST (ROST) | 2025-12-10 | aufwaerts | 177.69 | 0.14 | 0.253 | 214 |
 | ROST (ROST) | 2026-03-04 | aufwaerts | 199.33 | 2.965 | 7.736 | 158 |
 | ROST (ROST) | 2026-10-15 | aufwaerts | 230.67 | 0.724 | 1.686 | 2 |
-| RTX (RTX) | 2025-10-20 | aufwaerts | 158.54 | 0.354 | 0.713 | 250 |
 | RTX (RTX) | 2025-10-21 | aufwaerts | 162.07 | 2.291 | 6.01 | 249 |
 | RWE.DE (RWE.DE) | 2026-01-06 | aufwaerts | 47.24 | 0.106 | 0.191 | 201 |
 | RY (RY) | 2026-04-08 | aufwaerts | 165.6 | 1.294 | 2.289 | 134 |

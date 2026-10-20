@@ -1,39 +1,39 @@
 {
- "date": "2026-10-19",
+ "date": "2026-10-20",
  "ranks": {
   "turnaround": [
-   "NOW",
-   "QCOM",
    "WDAY",
-   "MDT",
    "VRTX",
-   "DHR",
-   "VLO",
-   "T",
-   "SCCO",
-   "DE",
-   "DIS",
-   "ABNB",
+   "NOW",
+   "SAP.DE",
+   "META",
+   "AMGN",
+   "MRNA",
    "FAST",
-   "CVX",
-   "SPGI"
+   "EMR",
+   "ABNB",
+   "T",
+   "SPGI",
+   "NEM",
+   "CNQ",
+   "DE"
   ],
   "momentum": [
-   "MPC",
-   "PSX",
-   "VLO",
    "MRNA",
    "TEAM",
-   "TRV",
+   "MPC",
+   "VLO",
+   "PBR",
+   "PM",
+   "BIIB",
    "ABBV",
-   "LLY",
+   "TRV",
    "SY1.DE",
-   "KDP",
    "V",
+   "KDP",
    "KO",
    "AAPL",
-   "CRM",
-   "DHL.DE"
+   "CRM"
   ],
   "value": [
    "SNDK",
@@ -57,76 +57,73 @@
   "turnaround": {
    "entries": [
     {
-     "ticker": "QCOM",
-     "rank": 2
-    },
-    {
-     "ticker": "MDT",
+     "ticker": "SAP.DE",
      "rank": 4
     },
     {
-     "ticker": "DHR",
+     "ticker": "META",
+     "rank": 5
+    },
+    {
+     "ticker": "AMGN",
      "rank": 6
     },
     {
-     "ticker": "VLO",
+     "ticker": "MRNA",
      "rank": 7
     },
     {
-     "ticker": "SCCO",
+     "ticker": "EMR",
      "rank": 9
     },
     {
-     "ticker": "DE",
-     "rank": 10
+     "ticker": "NEM",
+     "rank": 13
     },
     {
-     "ticker": "DIS",
-     "rank": 11
-    },
-    {
-     "ticker": "CVX",
+     "ticker": "CNQ",
      "rank": 14
     }
    ],
    "exits": [
     {
-     "ticker": "CRM",
+     "ticker": "QCOM",
+     "old_rank": 2
+    },
+    {
+     "ticker": "MDT",
      "old_rank": 4
     },
     {
-     "ticker": "META",
-     "old_rank": 5
-    },
-    {
-     "ticker": "AMGN",
+     "ticker": "DHR",
      "old_rank": 6
     },
     {
-     "ticker": "MRNA",
+     "ticker": "VLO",
      "old_rank": 7
     },
     {
-     "ticker": "EMR",
+     "ticker": "SCCO",
      "old_rank": 9
     },
     {
-     "ticker": "MTX.DE",
-     "old_rank": 12
+     "ticker": "DIS",
+     "old_rank": 11
     },
     {
-     "ticker": "NEM",
+     "ticker": "CVX",
      "old_rank": 14
-    },
-    {
-     "ticker": "BBVA",
-     "old_rank": 15
     }
    ],
    "moves": [
     {
      "ticker": "FAST",
-     "rank": 13,
+     "rank": 8,
+     "delta": 5
+    },
+    {
+     "ticker": "DE",
+     "rank": 15,
      "delta": -5
     }
    ]
@@ -134,30 +131,30 @@
   "momentum": {
    "entries": [
     {
-     "ticker": "PSX",
-     "rank": 2
+     "ticker": "PBR",
+     "rank": 5
     },
     {
-     "ticker": "LLY",
-     "rank": 8
+     "ticker": "PM",
+     "rank": 6
     },
     {
-     "ticker": "DHL.DE",
-     "rank": 15
+     "ticker": "BIIB",
+     "rank": 7
     }
    ],
    "exits": [
     {
-     "ticker": "EQNR",
-     "old_rank": 5
+     "ticker": "PSX",
+     "old_rank": 2
     },
     {
-     "ticker": "PM",
-     "old_rank": 6
+     "ticker": "LLY",
+     "old_rank": 8
     },
     {
-     "ticker": "BIIB",
-     "old_rank": 7
+     "ticker": "DHL.DE",
+     "old_rank": 15
     }
    ],
    "moves": []

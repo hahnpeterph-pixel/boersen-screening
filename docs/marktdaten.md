@@ -1,104 +1,63 @@
 # Marktdaten
 
-_Erstellt 2026-10-20 10:00 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1225._
+_Erstellt 2026-10-20 22:11 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1236._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
 Vollstaendige Daten: `docs/marktdaten.csv`
 
-> **Standwarnung: 1 von 272 Aktien haengen zurueck.** Neuester Handelstag 2026-10-19. Fuer die folgenden Werte gelten Kurs, ATR, RSI und Tiefs NICHT fuer diesen Tag. Die Spalte `stand_zurueck` in der CSV markiert sie ebenfalls.
+> **Standwarnung: 2 von 272 Aktien haengen zurueck.** Neuester Handelstag 2026-10-20. Fuer die folgenden Werte gelten Kurs, ATR, RSI und Tiefs NICHT fuer diesen Tag. Die Spalte `stand_zurueck` in der CSV markiert sie ebenfalls.
 >
 > | Wert | letzte Kerze |
 > |---|---|
-> | BABA | 2026-10-16 |
+> | HDB | 2026-10-19 |
+> | IBN | 2026-10-19 |
 
 ## Kerzensignale von gestern
 
 | Wert | Kurs | Hammer | hoeheres Hoch | Umkehrkerze | RSI |
 |---|---|---|---|---|---|
-| ADI (ADI) | 394.35 | - | - | ja | 48.91 |
-| AMGN (AMGN) | 424.94 | - | - | ja | 56.97 |
-| AZN (AZN) | 124.0 | - | - | ja | 54.15 |
-| CAT (CAT) | 725.79 | - | - | ja | 29.83 |
-| CEG (CEG) | 263.19 | - | ja | ja | 43.24 |
-| CPRT (CPRT) | 27.51 | - | - | ja | 44.85 |
-| CSCO (CSCO) | 106.5 | - | - | ja | 39.74 |
-| CSX (CSX) | 47.88 | - | - | ja | 49.61 |
-| EXC (EXC) | 42.41 | - | - | ja | 52.0 |
-| GILD (GILD) | 153.07 | - | - | ja | 56.63 |
-| GS (GS) | 875.78 | - | - | ja | 32.9 |
-| HON (HON) | 209.98 | - | - | ja | 47.85 |
-| JNJ (JNJ) | 253.79 | - | - | ja | 41.99 |
-| JPM (JPM) | 333.53 | - | - | ja | 42.9 |
-| KHC (KHC) | 23.17 | - | - | ja | 48.13 |
-| MDLZ (MDLZ) | 63.34 | - | - | ja | 62.15 |
-| MMM (MMM) | 162.01 | - | - | ja | 42.59 |
-| MRK (MRK) | 143.63 | - | - | ja | 47.6 |
-| PCAR (PCAR) | 108.42 | - | - | ja | 35.42 |
-| REGN (REGN) | 782.04 | - | - | ja | 53.95 |
-| SHW (SHW) | 331.61 | - | - | ja | 54.66 |
-| TMUS (TMUS) | 156.09 | - | - | ja | 40.43 |
-| VZ (VZ) | 44.15 | - | - | ja | 40.09 |
-| ABBV (ABBV) | 282.68 | - | ja | ja | 66.26 |
-| ABT (ABT) | 104.06 | - | - | ja | 55.71 |
-| BAC (BAC) | 50.39 | - | - | ja | 21.72 |
-| BMY (BMY) | 58.83 | - | - | ja | 41.12 |
-| C (C) | 121.69 | - | - | ja | 34.44 |
-| COF (COF) | 199.83 | - | - | ja | 48.5 |
-| DE (DE) | 627.0 | - | - | ja | 38.02 |
-| DHR (DHR) | 224.43 | - | - | ja | 56.17 |
-| GE (GE) | 311.28 | - | - | ja | 44.07 |
-| GEV (GEV) | 908.44 | - | - | ja | 37.87 |
-| GM (GM) | 82.75 | - | - | ja | 49.81 |
-| HONA (HONA) | 162.49 | - | - | ja | 54.01 |
-| LLY (LLY) | 1240.34 | - | - | ja | 63.38 |
-| MDT (MDT) | 92.77 | - | - | ja | 56.64 |
-| MO (MO) | 74.09 | - | - | ja | 68.62 |
-| MS (MS) | 178.47 | - | - | ja | 23.54 |
-| NEE (NEE) | 78.17 | - | - | ja | 46.11 |
-| PM (PM) | 201.05 | - | - | ja | 57.37 |
-| SCHW (SCHW) | 89.58 | - | - | ja | 24.26 |
-| SPG (SPG) | 202.49 | - | - | ja | 46.68 |
-| T (T) | 23.2 | - | - | ja | 39.67 |
-| TMO (TMO) | 679.38 | - | - | ja | 58.65 |
-| USB (USB) | 57.85 | - | - | ja | 45.59 |
-| WFC (WFC) | 81.8 | - | - | ja | 45.52 |
-| SPOT (SPOT) | 518.76 | - | - | ja | 50.78 |
-| VLO (VLO) | 433.31 | - | ja | ja | 59.67 |
-| PLD (PLD) | 124.09 | - | - | ja | 31.3 |
-| HSBC (HSBC) | 13.972 | - | - | ja | 36.46 |
-| RY (RY) | 196.3 | - | - | ja | 45.63 |
-| SAN (SAN) | 11.772 | - | - | ja | 38.32 |
-| NVO (NVO) | 256.5 | - | - | ja | 43.49 |
-| BBVA (BBVA) | 22.73 | - | - | ja | 34.13 |
-| UBS (UBS) | 39.08 | - | - | ja | 38.92 |
+| AAPL (AAPL) | 339.5 | - | - | ja | 55.53 |
+| AMAT (AMAT) | 404.98 | - | - | ja | 29.28 |
+| ARM (ARM) | 221.06 | - | - | ja | 32.84 |
+| CDNS (CDNS) | 319.87 | - | - | ja | 44.87 |
+| CEG (CEG) | 258.84 | - | - | ja | 41.31 |
+| GOOGL (GOOGL) | 340.275 | - | - | ja | 44.66 |
+| KLAC (KLAC) | 161.74 | - | - | ja | 29.27 |
+| LRCX (LRCX) | 263.45 | - | - | ja | 32.55 |
+| NFLX (NFLX) | 68.69 | - | ja | ja | 40.5 |
+| PANW (PANW) | 340.28 | - | - | ja | 37.25 |
+| SNPS (SNPS) | 447.62 | - | - | ja | 47.17 |
+| WMT (WMT) | 117.85 | - | ja | ja | 69.15 |
+| ABT (ABT) | 102.45 | - | ja | ja | 49.9 |
+| GE (GE) | 299.87 | - | - | ja | 34.33 |
+| GM (GM) | 77.09 | - | - | ja | 37.13 |
+| HONA (HONA) | 159.9 | - | - | ja | 51.05 |
+| PM (PM) | 199.9 | - | - | ja | 55.7 |
+| UBER (UBER) | 68.94 | - | - | ja | 43.46 |
+| BABA (BABA) | 104.9 | - | - | ja | 44.12 |
+| PH (PH) | 944.61 | - | - | ja | 42.48 |
+| HSBC (HSBC) | 13.852 | - | - | ja | 34.67 |
+| MUFG (MUFG) | 3351.0 | - | - | ja | 37.84 |
+| TTE (TTE) | 80.05 | - | - | ja | 58.62 |
+| SMFG (SMFG) | 3148.0 | - | - | ja | 37.75 |
+| RIO (RIO) | 65.45 | - | - | ja | 27.62 |
+| MFG (MFG) | 7686.0 | - | - | ja | 36.51 |
 | HDB (HDB) | 712.0 | - | - | ja | 47.92 |
-| ING (ING) | 29.505 | - | - | ja | 38.85 |
-| CM (CM) | 111.8 | - | - | ja | 49.0 |
-| SNY (SNY) | 71.01 | - | ja | ja | 42.24 |
-| AXON (AXON) | 383.09 | - | - | ja | 30.57 |
-| GFS (GFS) | 46.11 | - | - | ja | 43.73 |
-| AIR.DE (AIR.DE) | 194.26 | - | - | ja | 52.42 |
-| ALV.DE (ALV.DE) | 425.9 | - | - | ja | 48.86 |
-| BAYN.DE (BAYN.DE) | 43.4 | - | - | ja | 35.96 |
-| CBK.DE (CBK.DE) | 37.09 | - | - | ja | 34.37 |
-| CON.DE (CON.DE) | 68.84 | - | - | ja | 47.47 |
-| DTG.DE (DTG.DE) | 40.87 | - | - | ja | 40.3 |
-| DBK.DE (DBK.DE) | 28.52 | - | - | ja | 28.45 |
-| MTX.DE (MTX.DE) | 346.8 | - | - | ja | 43.27 |
-| RWE.DE (RWE.DE) | 57.18 | - | ja | ja | 42.29 |
-| SIE.DE (SIE.DE) | 266.2 | - | - | ja | 43.08 |
-| Gold (GC=F) | 4160.1001 | - | - | ja | 41.7 |
-| Silber (SI=F) | 56.974 | - | ja | ja | 36.44 |
-| Erdgas (NG=F) | 3.058 | - | - | ja | 49.13 |
-| Weizen (ZW=F) | 655.25 | - | - | ja | 35.32 |
-| Mais (ZC=F) | 467.0 | - | - | ja | 29.93 |
-| EUR/GBP (EURGBP=X) | 0.8417 | - | - | ja | 22.32 |
-| EUR/CHF (EURCHF=X) | 0.9246 | - | - | ja | 32.04 |
-| EUR/NOK (EURNOK=X) | 10.5829 | - | - | ja | 22.57 |
-| EUR/JPY (EURJPY=X) | 177.14 | - | - | ja | 38.01 |
-| EUR/AUD (EURAUD=X) | 1.61 | - | - | ja | 46.15 |
-| EUR/BRL (EURBRL=X) | 5.6818 | - | - | ja | 41.27 |
+| EQNR (EQNR) | 428.6 | - | - | ja | 60.75 |
+| BP (BP) | 6.058 | - | - | ja | 64.73 |
+| BNR.DE (BNR.DE) | 62.5 | - | - | ja | 53.84 |
+| CBK.DE (CBK.DE) | 36.7 | - | - | ja | 32.63 |
+| DBK.DE (DBK.DE) | 28.265 | - | - | ja | 27.27 |
+| SIE.DE (SIE.DE) | 259.85 | ja | - | ja | 37.89 |
+| ENR.DE (ENR.DE) | 130.32 | - | - | ja | 35.34 |
+| ZAL.DE (ZAL.DE) | 25.0 | - | ja | ja | 62.35 |
+| Palladium (PA=F) | 1104.0 | - | ja | ja | 34.76 |
+| Weizen (ZW=F) | 642.75 | - | - | ja | 31.55 |
+| Mais (ZC=F) | 461.5 | - | - | ja | 27.8 |
+| EUR/GBP (EURGBP=X) | 0.8425 | ja | - | - | 25.81 |
+| EUR/AUD (EURAUD=X) | 1.6025 | - | - | ja | 41.13 |
+| EUR/BRL (EURBRL=X) | 5.6345 | - | - | ja | 37.46 |
 
 ---
 

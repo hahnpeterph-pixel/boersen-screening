@@ -1,64 +1,56 @@
 # Marktdaten
 
-_Erstellt 2026-10-21 09:56 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1216._
+_Erstellt 2026-10-21 22:13 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1235._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
 Vollstaendige Daten: `docs/marktdaten.csv`
 
-> **Standwarnung: 2 von 272 Aktien haengen zurueck.** Neuester Handelstag 2026-10-20. Fuer die folgenden Werte gelten Kurs, ATR, RSI und Tiefs NICHT fuer diesen Tag. Die Spalte `stand_zurueck` in der CSV markiert sie ebenfalls.
->
-> | Wert | letzte Kerze |
-> |---|---|
-> | HDB | 2026-10-19 |
-> | IBN | 2026-10-19 |
-
 ## Kerzensignale von gestern
 
 | Wert | Kurs | Hammer | hoeheres Hoch | Umkehrkerze | RSI |
 |---|---|---|---|---|---|
-| AAPL (AAPL) | 339.5 | - | - | ja | 55.53 |
-| AMAT (AMAT) | 404.98 | - | - | ja | 29.28 |
-| ARM (ARM) | 221.06 | - | - | ja | 32.84 |
-| CDNS (CDNS) | 319.87 | - | - | ja | 44.87 |
-| CEG (CEG) | 258.84 | - | - | ja | 41.31 |
-| GOOGL (GOOGL) | 340.28 | - | - | ja | 44.66 |
-| KLAC (KLAC) | 161.74 | - | - | ja | 29.27 |
-| LRCX (LRCX) | 263.45 | - | - | ja | 32.55 |
-| NFLX (NFLX) | 68.69 | - | ja | ja | 40.5 |
-| PANW (PANW) | 340.28 | - | - | ja | 37.25 |
-| SNPS (SNPS) | 447.62 | - | - | ja | 47.17 |
-| WMT (WMT) | 117.85 | - | ja | ja | 69.15 |
-| ABT (ABT) | 102.45 | - | ja | ja | 49.9 |
-| GE (GE) | 299.87 | - | - | ja | 34.33 |
-| GM (GM) | 77.09 | - | - | ja | 37.13 |
-| HONA (HONA) | 159.9 | - | - | ja | 51.05 |
-| PM (PM) | 199.9 | - | - | ja | 55.7 |
-| UBER (UBER) | 68.94 | - | - | ja | 43.46 |
-| BABA (BABA) | 104.9 | - | - | ja | 44.12 |
-| PH (PH) | 944.61 | - | - | ja | 42.48 |
-| HSBC (HSBC) | 13.852 | - | - | ja | 34.67 |
-| MUFG (MUFG) | 3351.0 | - | - | ja | 37.84 |
-| TTE (TTE) | 79.94 | - | - | ja | 57.98 |
-| SMFG (SMFG) | 3148.0 | - | - | ja | 37.75 |
-| RIO (RIO) | 65.45 | - | - | ja | 27.62 |
-| MFG (MFG) | 7686.0 | - | - | ja | 36.51 |
-| HDB (HDB) | 712.0 | - | - | ja | 47.92 |
-| EQNR (EQNR) | 427.3 | - | - | ja | 59.62 |
-| BP (BP) | 6.058 | - | - | ja | 64.73 |
-| BNR.DE (BNR.DE) | 62.26 | - | - | ja | 52.6 |
-| CBK.DE (CBK.DE) | 36.69 | - | - | ja | 32.58 |
-| DBK.DE (DBK.DE) | 28.265 | - | - | ja | 27.27 |
-| RWE.DE (RWE.DE) | 56.96 | - | - | ja | 41.32 |
-| SIE.DE (SIE.DE) | 260.25 | ja | - | ja | 38.18 |
-| ENR.DE (ENR.DE) | 130.32 | - | - | ja | 35.34 |
-| Gold (GC=F) | 4142.6001 | - | - | ja | 40.21 |
-| Palladium (PA=F) | 1104.0 | - | - | ja | 34.76 |
-| Erdgas (NG=F) | 2.963 | - | - | ja | 44.37 |
-| Weizen (ZW=F) | 643.25 | - | - | ja | 31.68 |
-| Mais (ZC=F) | 462.0 | - | - | ja | 27.98 |
-| EUR/GBP (EURGBP=X) | 0.8425 | ja | - | - | 25.81 |
-| EUR/BRL (EURBRL=X) | 5.6465 | - | - | ja | 38.36 |
+| ABNB (ABNB) | 173.69 | - | - | ja | 58.59 |
+| BKNG (BKNG) | 158.38 | - | - | ja | 39.19 |
+| CHTR (CHTR) | 107.26 | - | - | ja | 38.61 |
+| DASH (DASH) | 184.45 | - | - | ja | 42.22 |
+| DXCM (DXCM) | 80.26 | - | - | ja | 36.05 |
+| GEHC (GEHC) | 69.01 | - | - | ja | 56.69 |
+| GILD (GILD) | 153.57 | - | - | ja | 55.74 |
+| GOOGL (GOOGL) | 334.76 | ja | - | ja | 40.25 |
+| LULU (LULU) | 96.53 | - | ja | ja | 45.35 |
+| MDLZ (MDLZ) | 62.74 | - | - | ja | 56.48 |
+| MU (MU) | 913.67 | ja | ja | - | 40.45 |
+| ORLY (ORLY) | 89.2 | - | - | ja | 60.09 |
+| PDD (PDD) | 78.72 | - | - | ja | 44.55 |
+| PG (PG) | 156.84 | - | - | ja | 63.41 |
+| ROST (ROST) | 234.18 | - | - | ja | 53.93 |
+| ABBV (ABBV) | 284.8 | - | - | ja | 64.42 |
+| ABT (ABT) | 100.51 | - | ja | ja | 43.95 |
+| AMT (AMT) | 177.64 | - | - | ja | 53.47 |
+| MDT (MDT) | 93.03 | - | ja | ja | 55.77 |
+| MO (MO) | 73.83 | - | - | ja | 64.72 |
+| NEE (NEE) | 78.28 | - | ja | ja | 46.91 |
+| UBER (UBER) | 67.62 | - | - | ja | 39.31 |
+| BABA (BABA) | 103.7 | - | ja | ja | 42.37 |
+| CB (CB) | 354.95 | - | - | ja | 63.61 |
+| TJX (TJX) | 145.52 | - | - | ja | 67.65 |
+| WELL (WELL) | 234.19 | - | ja | ja | 53.91 |
+| BHP (BHP) | 58.54 | - | - | ja | 40.76 |
+| RIO (RIO) | 64.82 | - | - | ja | 26.14 |
+| UL (UL) | 48.2 | - | - | ja | 57.11 |
+| BTI (BTI) | 43.87 | - | - | ja | 62.71 |
+| HDB (HDB) | 706.95 | - | - | ja | 45.95 |
+| CCEP (CCEP) | 110.29 | - | - | ja | 61.85 |
+| CON.DE (CON.DE) | 67.9 | - | - | ja | 43.57 |
+| HEN3.DE (HEN3.DE) | 78.18 | - | - | ja | 63.97 |
+| RHM.DE (RHM.DE) | 1021.0 | - | - | ja | 52.21 |
+| Platin (PL=F) | 1634.2 | - | - | ja | 42.6 |
+| Palladium (PA=F) | 1089.0 | - | - | ja | 33.86 |
+| Erdgas (NG=F) | 2.777 | - | - | ja | 36.84 |
+| Weizen (ZW=F) | 628.25 | - | - | ja | 27.82 |
+| Mais (ZC=F) | 464.25 | ja | - | - | 30.19 |
+| EUR/INR (EURINR=X) | 106.1329 | - | - | ja | 39.95 |
 
 ---
 

@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-10-20 22:11 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1236._
+_Erstellt 2026-10-21 00:39 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1216._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -37,27 +37,28 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | UBER (UBER) | 68.94 | - | - | ja | 43.46 |
 | BABA (BABA) | 104.9 | - | - | ja | 44.12 |
 | PH (PH) | 944.61 | - | - | ja | 42.48 |
-| HSBC (HSBC) | 13.852 | - | - | ja | 34.67 |
+| HSBC (HSBC) | 13.832 | - | - | ja | 34.39 |
 | MUFG (MUFG) | 3351.0 | - | - | ja | 37.84 |
 | TTE (TTE) | 80.05 | - | - | ja | 58.62 |
 | SMFG (SMFG) | 3148.0 | - | - | ja | 37.75 |
-| RIO (RIO) | 65.45 | - | - | ja | 27.62 |
+| RIO (RIO) | 65.6 | - | - | ja | 27.97 |
 | MFG (MFG) | 7686.0 | - | - | ja | 36.51 |
 | HDB (HDB) | 712.0 | - | - | ja | 47.92 |
 | EQNR (EQNR) | 428.6 | - | - | ja | 60.75 |
-| BP (BP) | 6.058 | - | - | ja | 64.73 |
+| BP (BP) | 6.067 | - | - | ja | 65.32 |
 | BNR.DE (BNR.DE) | 62.5 | - | - | ja | 53.84 |
 | CBK.DE (CBK.DE) | 36.7 | - | - | ja | 32.63 |
 | DBK.DE (DBK.DE) | 28.265 | - | - | ja | 27.27 |
 | SIE.DE (SIE.DE) | 259.85 | ja | - | ja | 37.89 |
 | ENR.DE (ENR.DE) | 130.32 | - | - | ja | 35.34 |
 | ZAL.DE (ZAL.DE) | 25.0 | - | ja | ja | 62.35 |
-| Palladium (PA=F) | 1104.0 | - | ja | ja | 34.76 |
-| Weizen (ZW=F) | 642.75 | - | - | ja | 31.55 |
+| Gold (GC=F) | 4136.3999 | - | - | ja | 39.71 |
+| Palladium (PA=F) | 1104.0 | - | - | ja | 34.76 |
+| Erdgas (NG=F) | 2.977 | - | - | ja | 45.01 |
+| Weizen (ZW=F) | 641.75 | - | - | ja | 31.28 |
 | Mais (ZC=F) | 461.5 | - | - | ja | 27.8 |
 | EUR/GBP (EURGBP=X) | 0.8425 | ja | - | - | 25.81 |
-| EUR/AUD (EURAUD=X) | 1.6025 | - | - | ja | 41.13 |
-| EUR/BRL (EURBRL=X) | 5.6345 | - | - | ja | 37.46 |
+| EUR/BRL (EURBRL=X) | 5.6465 | - | - | ja | 38.36 |
 
 ---
 

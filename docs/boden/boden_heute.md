@@ -1,4 +1,4 @@
-# Boden-Screening 2026-10-20 (Stand 2026-10-20 22:15 UTC)
+# Boden-Screening 2026-10-20 (Stand 2026-10-21 01:04 UTC)
 
 Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RSI < 50 + mind. 2 Boden-Punkte (nur Technik). Die Filter (Analysten, Anker, CRV 2:1) stehen in docs/heute.csv. Boden-Anker = niedrigster Puffer mit 60 % Halterate fuer diese Gruppe und diesen Wert (Vollauf), KO-Marke = Bezugstief - Anker x ATR.
 
@@ -19,7 +19,6 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 |---|---|---|
 | RTX | 3 | RSI >= 50 |
 | AVGO | 2 | Tief 1 |
-| AZN | 2 | RSI >= 50 |
 | BNS | 2 | RSI >= 50 |
 | BTI | 2 | RSI >= 50 |
 | DUK | 2 | RSI >= 50 |
@@ -41,6 +40,7 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | AMGN | 1 | 1 P, RSI >= 50 |
 | ANET | 1 | 1 P, Tief 1, Umkehr a |
 | APP | 1 | 1 P |
+| AZN | 1 | 1 P, RSI >= 50 |
 | BAC | 1 | 1 P, Tief 1, Umkehr a |
 | BLK | 1 | 1 P, Tief 1, RSI >= 50 |
 | BMO | 1 | 1 P, Tief 1 |
@@ -66,6 +66,7 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | GILD | 1 | 1 P, Tief 1, RSI >= 50 |
 | GS | 1 | 1 P, Tief 1 |
 | HON | 1 | 1 P, RSI >= 50 |
+| IFX.DE | 1 | 1 P, Umkehr a |
 | ILMN | 1 | 1 P, Tief 1, RSI >= 50 |
 | INTC | 1 | 1 P, Umkehr a |
 | JNJ | 1 | 1 P |
@@ -125,7 +126,6 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | FTNT | 0 | 0 P, Tief 1, Umkehr a |
 | GFS | 0 | 0 P, Umkehr a |
 | GLW | 0 | 0 P, Tief 1, Umkehr a |
-| IFX.DE | 0 | 0 P, Umkehr a |
 | ING | 0 | 0 P, Umkehr a |
 | JPM | 0 | 0 P, Tief 1, Umkehr a |
 | MPC | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |

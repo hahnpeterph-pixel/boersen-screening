@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-10-22 00:43 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1227._
+_Erstellt 2026-10-22 09:57 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1227._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -12,12 +12,11 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 |---|---|---|---|---|---|
 | ABNB (ABNB) | 173.69 | - | - | ja | 58.59 |
 | BKNG (BKNG) | 158.38 | - | - | ja | 39.19 |
-| CHTR (CHTR) | 107.26 | - | - | ja | 38.61 |
 | DASH (DASH) | 184.45 | - | - | ja | 42.22 |
 | DXCM (DXCM) | 80.26 | - | - | ja | 36.05 |
 | GEHC (GEHC) | 69.01 | - | - | ja | 56.69 |
 | GILD (GILD) | 153.57 | - | - | ja | 55.74 |
-| GOOGL (GOOGL) | 334.76 | ja | - | ja | 40.25 |
+| GOOGL (GOOGL) | 334.76 | - | - | ja | 40.25 |
 | LULU (LULU) | 96.53 | - | ja | ja | 45.35 |
 | MDLZ (MDLZ) | 62.74 | - | - | ja | 56.48 |
 | MU (MU) | 913.67 | ja | ja | - | 40.45 |
@@ -38,16 +37,22 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | WELL (WELL) | 234.19 | - | ja | ja | 53.91 |
 | BHP (BHP) | 58.54 | - | - | ja | 40.76 |
 | RIO (RIO) | 64.82 | - | - | ja | 26.14 |
-| UL (UL) | 48.215 | ja | - | ja | 57.23 |
-| BTI (BTI) | 43.78 | - | - | ja | 61.84 |
+| UL (UL) | 48.2 | - | - | ja | 57.11 |
+| BTI (BTI) | 43.87 | - | - | ja | 62.71 |
 | HDB (HDB) | 706.95 | - | - | ja | 45.95 |
 | CCEP (CCEP) | 110.29 | - | - | ja | 61.85 |
-| CON.DE (CON.DE) | 67.9 | - | - | ja | 43.57 |
-| HEN3.DE (HEN3.DE) | 78.18 | - | - | ja | 63.97 |
-| RHM.DE (RHM.DE) | 1021.0 | - | - | ja | 52.21 |
+| BEI.DE (BEI.DE) | 81.18 | - | - | ja | 63.96 |
+| CON.DE (CON.DE) | 67.74 | - | - | ja | 42.96 |
+| DTE.DE (DTE.DE) | 25.5 | - | - | ja | 40.54 |
+| HEN3.DE (HEN3.DE) | 78.04 | - | - | ja | 63.08 |
+| MRK.DE (MRK.DE) | 142.25 | - | ja | ja | 56.77 |
+| RHM.DE (RHM.DE) | 1020.0 | - | - | ja | 52.04 |
 | Platin (PL=F) | 1619.1 | - | - | ja | 41.08 |
 | Palladium (PA=F) | 1079.5 | - | - | ja | 33.32 |
+| WTI Oel (CL=F) | 97.15 | - | - | ja | 54.29 |
+| Erdgas (NG=F) | 2.79 | - | - | ja | 37.29 |
 | Weizen (ZW=F) | 628.25 | - | - | ja | 27.82 |
+| Mais (ZC=F) | 463.25 | ja | - | - | 29.22 |
 | EUR/NOK (EURNOK=X) | 10.556 | ja | - | - | 20.69 |
 
 ---

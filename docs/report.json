@@ -2,38 +2,38 @@
  "date": "2026-10-22",
  "ranks": {
   "turnaround": [
+   "MSTR",
    "QCOM",
-   "TMO",
+   "ZS",
+   "AMT",
    "SCCO",
-   "NOW",
+   "TMO",
    "MRK",
-   "EQNR",
-   "ABT",
-   "VLO",
-   "TTE",
+   "NEM",
    "MELI",
-   "SAP.DE",
-   "T",
+   "VLO",
+   "QIA.DE",
    "DE",
-   "TM",
-   "BNR.DE"
+   "ABNB",
+   "BEI.DE",
+   "EQNR"
   ],
   "momentum": [
-   "MPC",
-   "PSX",
    "VLO",
-   "TEAM",
    "MRK",
    "MRNA",
+   "TMO",
+   "TEAM",
    "TRV",
-   "ILMN",
-   "DHL.DE",
-   "V",
-   "SY1.DE",
+   "CVX",
    "KO",
    "KDP",
-   "DB1.DE",
-   "ADP"
+   "SY1.DE",
+   "EQNR",
+   "DHL.DE",
+   "SHOP",
+   "ADP",
+   "V"
   ],
   "value": [
    "SNDK",
@@ -45,112 +45,140 @@
    "CNQ",
    "PBR",
    "RIO",
-   "MTX.DE",
-   "ABNB",
    "DXCM",
+   "ABNB",
    "BHP",
-   "VRTX",
-   "MNST"
+   "PH",
+   "MNST",
+   "VRTX"
   ]
  },
  "changes": {
   "turnaround": {
    "entries": [
     {
-     "ticker": "NOW",
-     "rank": 4
-    },
-    {
-     "ticker": "ABT",
-     "rank": 7
-    },
-    {
-     "ticker": "SAP.DE",
-     "rank": 11
-    },
-    {
-     "ticker": "T",
-     "rank": 12
-    },
-    {
-     "ticker": "DE",
-     "rank": 13
-    }
-   ],
-   "exits": [
-    {
      "ticker": "MSTR",
-     "old_rank": 1
-    },
-    {
-     "ticker": "ZS",
-     "old_rank": 3
-    },
-    {
-     "ticker": "AMT",
-     "old_rank": 4
-    },
-    {
-     "ticker": "NEM",
-     "old_rank": 9
-    },
-    {
-     "ticker": "UL",
-     "old_rank": 14
-    }
-   ],
-   "moves": []
-  },
-  "momentum": {
-   "entries": [
-    {
-     "ticker": "MPC",
      "rank": 1
     },
     {
-     "ticker": "PSX",
-     "rank": 2
+     "ticker": "ZS",
+     "rank": 3
     },
     {
-     "ticker": "ILMN",
+     "ticker": "AMT",
+     "rank": 4
+    },
+    {
+     "ticker": "NEM",
      "rank": 8
     },
     {
-     "ticker": "V",
-     "rank": 10
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "TMO",
-     "old_rank": 4
+     "ticker": "QIA.DE",
+     "rank": 11
     },
     {
-     "ticker": "CVX",
-     "old_rank": 7
+     "ticker": "ABNB",
+     "rank": 13
     },
     {
-     "ticker": "EQNR",
-     "old_rank": 10
-    },
-    {
-     "ticker": "SHOP",
-     "old_rank": 13
-    }
-   ],
-   "moves": []
-  },
-  "value": {
-   "entries": [
-    {
-     "ticker": "VRTX",
+     "ticker": "BEI.DE",
      "rank": 14
     }
    ],
    "exits": [
     {
-     "ticker": "PH",
+     "ticker": "NOW",
+     "old_rank": 4
+    },
+    {
+     "ticker": "ABT",
+     "old_rank": 7
+    },
+    {
+     "ticker": "TTE",
+     "old_rank": 9
+    },
+    {
+     "ticker": "SAP.DE",
+     "old_rank": 11
+    },
+    {
+     "ticker": "T",
+     "old_rank": 12
+    },
+    {
+     "ticker": "TM",
      "old_rank": 14
+    },
+    {
+     "ticker": "BNR.DE",
+     "old_rank": 15
+    }
+   ],
+   "moves": [
+    {
+     "ticker": "EQNR",
+     "rank": 15,
+     "delta": -9
+    }
+   ]
+  },
+  "momentum": {
+   "entries": [
+    {
+     "ticker": "TMO",
+     "rank": 4
+    },
+    {
+     "ticker": "CVX",
+     "rank": 7
+    },
+    {
+     "ticker": "EQNR",
+     "rank": 11
+    },
+    {
+     "ticker": "SHOP",
+     "rank": 13
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "MPC",
+     "old_rank": 1
+    },
+    {
+     "ticker": "PSX",
+     "old_rank": 2
+    },
+    {
+     "ticker": "ILMN",
+     "old_rank": 8
+    },
+    {
+     "ticker": "DB1.DE",
+     "old_rank": 14
+    }
+   ],
+   "moves": [
+    {
+     "ticker": "V",
+     "rank": 15,
+     "delta": -5
+    }
+   ]
+  },
+  "value": {
+   "entries": [
+    {
+     "ticker": "PH",
+     "rank": 13
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "MTX.DE",
+     "old_rank": 10
     }
    ],
    "moves": []

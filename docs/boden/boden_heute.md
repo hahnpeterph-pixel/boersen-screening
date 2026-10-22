@@ -1,8 +1,8 @@
-# Boden-Screening 2026-10-21 (Stand 2026-10-22 00:46 UTC)
+# Boden-Screening 2026-10-21 (Stand 2026-10-22 10:02 UTC)
 
 Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RSI < 50 + mind. 2 Boden-Punkte (nur Technik). Die Filter (Analysten, Anker, CRV 2:1) stehen in docs/heute.csv. Boden-Anker = niedrigster Puffer mit 60 % Halterate fuer diese Gruppe und diesen Wert (Vollauf), KO-Marke = Bezugstief - Anker x ATR.
 
-## Kandidaten (9)
+## Kandidaten (8)
 
 | Wert | Tief | RSI | Anker | KO-Marke | Analysten |
 |---|---|---|---|---|---|
@@ -10,24 +10,22 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | ARM | 2 | 36 | 3.75 | 160.68 | 82 % |
 | BA | 2 | 47 | 2.75 | 172.40 | 91 % |
 | CBK.DE | 5 | 38 | 3.50 | 32.84 | 38 % |
-| DBK.DE | 6 | 33 | 2.50 | 25.72 | 50 % |
-| ENR.DE | 2 | 40 | 4.00 | 107.07 | 75 % |
-| GE | 5 | 32 | 3.75 | 263.49 | 91 % |
+| DBK.DE | 6 | 34 | 2.50 | 25.72 | 50 % |
+| ENR.DE | 2 | 41 | 4.00 | 107.07 | 75 % |
+| GE | 5 | 32 | 3.75 | 263.46 | 91 % |
 | PANW | 2 | 40 | 2.00 | 298.66 | 83 % |
-| SKHY | 5 | 31 | 2.75 | 936285.71 | 100 % |
 
-## Weitere Pruefttage (62)
+## Weitere Pruefttage (57)
 
 | Wert | Punkte | Grund |
 |---|---|---|
+| GSK | 3 | RSI >= 50 |
 | FRE.DE | 2 | Tief 1, RSI >= 50 |
-| GSK | 2 | RSI >= 50 |
 | PEP | 2 | RSI >= 50 |
 | TMO | 2 | Tief 1, RSI >= 50 |
 | AAPL | 1 | 1 P, Tief 1, RSI >= 50 |
 | ABT | 1 | 1 P, Tief 1 |
 | ADS.DE | 1 | 1 P, RSI >= 50 |
-| BABA | 1 | 1 P |
 | BAS.DE | 1 | 1 P, Tief 1, RSI >= 50 |
 | BAYN.DE | 1 | 1 P, Tief 1 |
 | BMO | 1 | 1 P, RSI >= 50 |
@@ -52,7 +50,6 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | SHL.DE | 1 | 1 P, Tief 1, RSI >= 50 |
 | SIE.DE | 1 | 1 P |
 | SNPS | 1 | 1 P, Tief 1 |
-| SONY | 1 | 1 P, Tief 1, RSI >= 50 |
 | SPGI | 1 | 1 P, Tief 1, RSI >= 50 |
 | SY1.DE | 1 | 1 P, Tief 1, RSI >= 50 |
 | T | 1 | 1 P, Umkehr a |
@@ -60,10 +57,10 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | VLO | 1 | 1 P, Tief 1, RSI >= 50 |
 | ACN | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
 | BNR.DE | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
+| CHTR | 0 | 0 P, Tief 1, Umkehr a |
 | CMCSA | 0 | 0 P, Tief 1, Umkehr a |
 | DB1.DE | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
 | EQNR | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
-| GOOGL | 0 | 0 P |
 | IDXX | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
 | ISRG | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
 | JNJ | 0 | 0 P, Umkehr a |
@@ -71,14 +68,13 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | MCD | 0 | 0 P, RSI >= 50, Umkehr a |
 | MNST | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
 | PAH3.DE | 0 | 0 P, Umkehr a |
-| PBR | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
 | PM | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
 | SBUX | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
 | SPOT | 0 | 0 P, RSI >= 50, Umkehr a |
 | SYK | 0 | 0 P, RSI >= 50, Umkehr a |
 | TMUS | 0 | 0 P, Tief 1, Umkehr a |
-| UL | 0 | 0 P, Tief 1, RSI >= 50 |
-| VOW3.DE | 0 | 0 P, Umkehr a |
 | VRSK | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
 | VZ | 0 | 0 P, Tief 1, Umkehr a |
 | WMT | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
+
+Nicht aktuell (kein Kurs vom 2026-10-21): BABA, BHP, MFG, MUFG, SKHY, SMFG, SONY, TM, TSM

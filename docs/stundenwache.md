@@ -1,8 +1,8 @@
 # Stundenwache
 
-Stand: 2026-10-21 · 272 Werte mit Stundendaten · erstellt 2026-10-21 22:15 UTC
+Stand: 2026-10-21 · 272 Werte mit Stundendaten · erstellt 2026-10-22 00:45 UTC
 
-> **Sitzung noch nicht abgeschlossen.** 5 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 5, 6, 7, 8, 9). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
+> **Sitzung noch nicht abgeschlossen.** 11 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 1, 2, 5, 6, 7, 8, 9). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
 
 Marken sind das juengste Swing-Tief und das juengste Swing-Hoch aus `tiefs_regel.py`, also dieselben wie im Tagesbericht. Geprueft wird nur, was der letzte Handelstag auf Stundenbasis damit gemacht hat.
 
@@ -25,27 +25,42 @@ Schluss unter dem juengsten Swing-Tief. Die Sequenz ist gerissen.
 
 Keine.
 
-## Tief angetestet (16)
+## Tief angetestet (31)
 
 Docht bis unter die Marke, kein Stundenschluss darunter.
 
 | Wert | Marke | Schluss | Abstand (ATR) | Stunden dahinter |
 |---|---|---|---|---|
+| ROST | 233.98 | 234.18 | 0.036 | 0 |
 | AMT | 177.145 | 177.62 | 0.095 | 0 |
+| DXCM | 79.92 | 80.25 | 0.12 | 0 |
 | LRCX | 259.06 | 260.81 | 0.124 | 0 |
 | GEHC | 68.71 | 68.995 | 0.163 | 0 |
+| BKNG | 156.93 | 158.33 | 0.288 | 0 |
 | GE | 293.525 | 295.835 | 0.288 | 0 |
 | MDLZ | 62.376 | 62.745 | 0.298 | 0 |
+| APP | 264.08 | 267.84 | 0.313 | 0 |
 | ABBV | 282.155 | 284.72 | 0.35 | 0 |
+| DTE.DE | 25.31 | 25.58 | 0.402 | 0 |
 | LOW | 194.485 | 196.55 | 0.433 | 0 |
+| BNR.DE | 62.16 | 62.71 | 0.438 | 0 |
+| IDXX | 547.6 | 553.23 | 0.44 | 0 |
+| MCK | 1005.42 | 1015.5 | 0.453 | 0 |
+| WMT | 116.63 | 117.73 | 0.463 | 0 |
 | SBUX | 97.92 | 99.09 | 0.468 | 0 |
+| JNJ | 254.56 | 257.7 | 0.492 | 0 |
+| NFLX | 64.1 | 65.0475 | 0.493 | 0 |
+| SNDK | 1327.62 | 1378.3 | 0.562 | 0 |
+| CB | 351.61 | 355.02 | 0.569 | 0 |
+| MPC | 458.6919 | 468.27 | 0.577 | 0 |
 | EQNR | 426.3 | 432.6 | 0.667 | 0 |
 | MCD | 243.3292 | 246.22 | 0.717 | 0 |
 | ACN | 234.01 | 240.27 | 0.755 | 0 |
+| VLO | 423.685 | 436.88 | 0.77 | 0 |
+| PAH3.DE | 24.82 | 25.35 | 0.784 | 0 |
 | ABT | 97.67 | 100.56 | 0.976 | 0 |
 | ADS.DE | 155.95 | 160.9 | 1.37 | 0 |
 | BMO | 165.6 | 170.44 | 1.697 | 0 |
-| ISRG | 398.992 | 428.05 | 2.229 | 0 |
 | DHR | 217.56 | 234.02 | 2.356 | 0 |
 
 ## Swing-Hoch ueberwunden (84)
@@ -60,14 +75,14 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | SO | 83.98 | 90.385 | 4.363 | 7 |
 | CVX | 207.41 | 226.77 | 4.187 | 7 |
 | XOM | 164.37 | 178.09 | 3.829 | 7 |
+| SONY | 3797.0 | 4114.0 | 3.793 | 1 |
 | CL | 87.22 | 93.405 | 3.784 | 7 |
 | KO | 87.29 | 92.675 | 3.611 | 7 |
 | KDP | 32.14 | 34.46 | 3.105 | 7 |
 | DUK | 115.17 | 120.68 | 2.993 | 7 |
 | NVS | 120.02 | 127.04 | 2.966 | 9 |
 | MO | 69.6 | 73.83 | 2.901 | 7 |
-| TM | 2944.5 | 3096.0 | 2.773 | 7 |
-| SONY | 3797.0 | 4011.0 | 2.751 | 7 |
+| TM | 2944.5 | 3089.0 | 2.641 | 1 |
 | PEP | 127.21 | 134.69 | 2.634 | 7 |
 | WDAY | 185.82 | 202.9 | 2.583 | 7 |
 | AEP | 121.8 | 127.37 | 2.458 | 7 |

@@ -1309,7 +1309,6 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | CAT (CAT) | 2025-10-29 | aufwaerts | 530.29 | 1.725 | 5.259 | 245 |
 | CAT (CAT) | 2026-10-07 | abwaerts | 851.47 | 0.204 | 0.642 | 10 |
 | CAT (CAT) | 2026-10-13 | abwaerts | 795.76 | 0.177 | 0.598 | 6 |
-| CB (CB) | 2025-10-22 | aufwaerts | 269.89 | 1.24 | 2.212 | 250 |
 | CB (CB) | 2025-11-04 | aufwaerts | 278.36 | 0.331 | 0.582 | 241 |
 | CBK.DE (CBK.DE) | 2026-04-08 | aufwaerts | 32.07 | 1.192 | 5.737 | 139 |
 | CBK.DE (CBK.DE) | 2026-09-30 | abwaerts | 41.99 | 0.265 | 0.619 | 15 |
@@ -1688,7 +1687,6 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | NEM (NEM) | 2026-08-05 | aufwaerts | 98.52 | 1.376 | 5.339 | 54 |
 | NEM (NEM) | 2026-08-07 | aufwaerts | 106.4 | 1.002 | 3.872 | 52 |
 | NET (NET) | 2026-10-15 | abwaerts | 323.0 | 0.744 | 3.854 | 4 |
-| NFLX (NFLX) | 2025-10-22 | abwaerts | 123.176 | 2.54 | 7.214 | 250 |
 | NFLX (NFLX) | 2026-04-17 | abwaerts | 106.62 | 2.947 | 9.614 | 129 |
 | NFLX (NFLX) | 2026-09-18 | abwaerts | 75.3 | 1.658 | 5.352 | 23 |
 | NFLX (NFLX) | 2026-10-21 | abwaerts | 68.2 | 1.939 | 5.968 | 0 |

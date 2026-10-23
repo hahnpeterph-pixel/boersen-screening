@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-10-23 00:40 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1235._
+_Erstellt 2026-10-23 09:53 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1235._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -15,7 +15,7 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | AMD (AMD) | 507.93 | - | - | ja | 36.51 |
 | AMZN (AMZN) | 250.38 | - | - | ja | 45.11 |
 | ARM (ARM) | 210.1 | - | - | ja | 31.43 |
-| ASML (ASML) | 1423.0 | - | - | ja | 38.48 |
+| ASML (ASML) | 1419.6 | - | - | ja | 38.19 |
 | AVGO (AVGO) | 323.24 | - | - | ja | 34.78 |
 | BA (BA) | 187.55 | - | - | ja | 41.02 |
 | BKR (BKR) | 53.62 | - | - | ja | 35.78 |
@@ -32,7 +32,7 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | LRCX (LRCX) | 230.15 | - | - | ja | 24.56 |
 | MCHP (MCHP) | 74.52 | - | - | ja | 47.11 |
 | MDB (MDB) | 362.24 | - | - | ja | 47.57 |
-| MELI (MELI) | 1824.955 | - | - | ja | 47.88 |
+| MELI (MELI) | 1824.96 | - | - | ja | 47.88 |
 | META (META) | 648.85 | - | - | ja | 36.83 |
 | MRNA (MRNA) | 202.63 | - | - | ja | 51.02 |
 | MRVL (MRVL) | 223.47 | - | - | ja | 38.34 |
@@ -66,36 +66,38 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | SPCX (SPCX) | 144.75 | - | - | ja | 44.48 |
 | SKHY (SKHY) | 1223000.0 | - | - | ja | 28.61 |
 | SHOP (SHOP) | 168.81 | - | - | ja | 57.78 |
-| HSBC (HSBC) | 13.646 | - | - | ja | 33.25 |
-| SHEL (SHEL) | 38.92 | - | ja | ja | 69.88 |
+| HSBC (HSBC) | 13.666 | - | - | ja | 33.51 |
+| SHEL (SHEL) | 38.885 | - | ja | ja | 69.3 |
 | MUFG (MUFG) | 3373.0 | - | ja | ja | 40.5 |
 | BHP (BHP) | 57.13 | - | - | ja | 36.76 |
-| SAN (SAN) | 11.51 | - | - | ja | 36.29 |
-| TTE (TTE) | 80.18 | - | ja | ja | 57.56 |
+| SAN (SAN) | 11.484 | - | - | ja | 35.93 |
+| TTE (TTE) | 79.98 | - | ja | ja | 56.47 |
 | RIO (RIO) | 62.6 | - | - | ja | 21.71 |
-| BBVA (BBVA) | 22.25 | - | - | ja | 32.66 |
+| BBVA (BBVA) | 22.19 | - | - | ja | 32.22 |
 | UBS (UBS) | 38.39 | - | - | ja | 36.28 |
 | MFG (MFG) | 7660.0 | - | ja | ja | 37.61 |
 | HDB (HDB) | 694.05 | - | - | ja | 41.28 |
-| ING (ING) | 28.765 | - | - | ja | 35.29 |
-| BP (BP) | 6.13 | - | ja | ja | 65.78 |
+| ING (ING) | 28.79 | - | - | ja | 35.44 |
+| BP (BP) | 6.119 | - | ja | ja | 65.06 |
 | GFS (GFS) | 43.37 | - | - | ja | 37.58 |
-| BAS.DE (BAS.DE) | 52.43 | ja | - | - | 55.61 |
-| BNR.DE (BNR.DE) | 62.1 | - | - | ja | 51.42 |
-| CBK.DE (CBK.DE) | 35.87 | - | - | ja | 31.57 |
-| CON.DE (CON.DE) | 66.72 | - | - | ja | 39.2 |
-| DTG.DE (DTG.DE) | 40.45 | - | - | ja | 37.61 |
-| DBK.DE (DBK.DE) | 27.975 | - | - | ja | 29.42 |
-| DHL.DE (DHL.DE) | 57.2 | - | - | ja | 53.08 |
-| IFX.DE (IFX.DE) | 49.935 | - | - | ja | 33.38 |
-| MTX.DE (MTX.DE) | 334.0 | - | - | ja | 35.21 |
-| RWE.DE (RWE.DE) | 56.98 | - | - | ja | 42.89 |
+| BAS.DE (BAS.DE) | 52.37 | ja | - | - | 55.03 |
+| BNR.DE (BNR.DE) | 62.0 | - | - | ja | 50.91 |
+| CBK.DE (CBK.DE) | 35.86 | - | - | ja | 31.54 |
+| CON.DE (CON.DE) | 67.08 | - | - | ja | 40.45 |
+| DTG.DE (DTG.DE) | 40.43 | - | - | ja | 37.49 |
+| DBK.DE (DBK.DE) | 28.005 | - | - | ja | 29.55 |
+| DHL.DE (DHL.DE) | 57.12 | - | - | ja | 52.52 |
+| IFX.DE (IFX.DE) | 49.885 | - | - | ja | 33.3 |
+| MTX.DE (MTX.DE) | 332.8 | - | - | ja | 34.6 |
+| RWE.DE (RWE.DE) | 56.84 | - | - | ja | 42.33 |
 | SIE.DE (SIE.DE) | 255.7 | - | - | ja | 37.39 |
-| ENR.DE (ENR.DE) | 121.1 | - | - | ja | 30.41 |
-| Silber (SI=F) | 54.635 | - | - | ja | 32.27 |
+| ENR.DE (ENR.DE) | 122.2 | - | - | ja | 31.1 |
+| Gold (GC=F) | 4060.3999 | - | ja | ja | 34.06 |
+| Silber (SI=F) | 54.764 | - | - | ja | 32.52 |
 | Platin (PL=F) | 1572.3 | - | - | ja | 37.02 |
 | Palladium (PA=F) | 1051.5 | - | - | ja | 31.81 |
-| Kakao (CC=F) | 5607.0 | - | - | ja | 46.74 |
+| Kupfer (HG=F) | 6.3625 | - | - | ja | 37.61 |
+| Kakao (CC=F) | 5582.0 | - | - | ja | 45.99 |
 | Zucker (SB=F) | 20.13 | - | - | ja | 56.45 |
 | EUR/CHF (EURCHF=X) | 0.9258 | ja | - | - | 35.65 |
 

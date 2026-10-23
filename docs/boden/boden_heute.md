@@ -1,4 +1,4 @@
-# Boden-Screening 2026-10-22 (Stand 2026-10-22 22:16 UTC)
+# Boden-Screening 2026-10-22 (Stand 2026-10-23 01:05 UTC)
 
 Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RSI < 50 + mind. 2 Boden-Punkte (nur Technik). Die Filter (Analysten, Anker, CRV 2:1) stehen in docs/heute.csv. Boden-Anker = niedrigster Puffer mit 60 % Halterate fuer diese Gruppe und diesen Wert (Vollauf), KO-Marke = Bezugstief - Anker x ATR.
 
@@ -8,7 +8,7 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 |---|---|---|---|---|---|
 | MBG.DE | 4 | 48 | 3.75 | 34.86 | 52 % |
 
-## Weitere Pruefttage (88)
+## Weitere Pruefttage (89)
 
 | Wert | Punkte | Grund |
 |---|---|---|
@@ -23,6 +23,7 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | CSGP | 2 | Tief 1, RSI >= 50 |
 | DUK | 2 | RSI >= 50 |
 | GD | 2 | RSI >= 50 |
+| IBM | 2 | RSI >= 50 |
 | KDP | 2 | Tief 1, RSI >= 50 |
 | ODFL | 2 | RSI >= 50 |
 | PG | 2 | RSI >= 50 |
@@ -60,7 +61,6 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | NKE | 1 | 1 P, Tief 1, RSI >= 50 |
 | NVO | 1 | 1 P, Tief 1, RSI >= 50 |
 | ORLY | 1 | 1 P, Tief 1, RSI >= 50 |
-| PBR | 1 | 1 P, Tief 1, RSI >= 50 |
 | PFE | 1 | 1 P, Tief 1, RSI >= 50 |
 | PGR | 1 | 1 P, Tief 1, RSI >= 50 |
 | QIA.DE | 1 | 1 P, Tief 1, RSI >= 50 |
@@ -96,6 +96,7 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | MSTR | 0 | 0 P, Umkehr a |
 | NEM | 0 | 0 P, Tief 1, Umkehr a |
 | NXPI | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
+| PBR | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
 | PDD | 0 | 0 P, Umkehr a |
 | PYPL | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
 | ROST | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |

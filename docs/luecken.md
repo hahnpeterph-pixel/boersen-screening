@@ -1836,7 +1836,6 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | RIO (RIO) | 2025-12-10 | aufwaerts | 55.38 | 0.293 | 0.596 | 218 |
 | RIO (RIO) | 2026-06-04 | abwaerts | 80.39 | 0.117 | 0.547 | 99 |
 | RIO (RIO) | 2026-10-22 | abwaerts | 64.65 | 0.377 | 1.33 | 0 |
-| ROP (ROP) | 2025-10-23 | abwaerts | 508.57 | 3.416 | 8.162 | 250 |
 | ROP (ROP) | 2026-10-15 | aufwaerts | 373.84 | 0.703 | 1.688 | 5 |
 | ROP (ROP) | 2026-10-20 | aufwaerts | 385.08 | 0.309 | 0.758 | 2 |
 | ROP (ROP) | 2026-10-22 | aufwaerts | 398.92 | 0.766 | 2.221 | 0 |

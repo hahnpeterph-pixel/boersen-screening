@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-10-22 22:13 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1222._
+_Erstellt 2026-10-23 00:40 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1235._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -66,19 +66,19 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | SPCX (SPCX) | 144.75 | - | - | ja | 44.48 |
 | SKHY (SKHY) | 1223000.0 | - | - | ja | 28.61 |
 | SHOP (SHOP) | 168.81 | - | - | ja | 57.78 |
-| HSBC (HSBC) | 13.666 | - | - | ja | 33.51 |
-| SHEL (SHEL) | 38.885 | - | ja | ja | 69.3 |
+| HSBC (HSBC) | 13.646 | - | - | ja | 33.25 |
+| SHEL (SHEL) | 38.92 | - | ja | ja | 69.88 |
 | MUFG (MUFG) | 3373.0 | - | ja | ja | 40.5 |
 | BHP (BHP) | 57.13 | - | - | ja | 36.76 |
 | SAN (SAN) | 11.51 | - | - | ja | 36.29 |
 | TTE (TTE) | 80.18 | - | ja | ja | 57.56 |
 | RIO (RIO) | 62.6 | - | - | ja | 21.71 |
 | BBVA (BBVA) | 22.25 | - | - | ja | 32.66 |
-| UBS (UBS) | 38.51 | - | - | ja | 36.91 |
+| UBS (UBS) | 38.39 | - | - | ja | 36.28 |
 | MFG (MFG) | 7660.0 | - | ja | ja | 37.61 |
 | HDB (HDB) | 694.05 | - | - | ja | 41.28 |
 | ING (ING) | 28.765 | - | - | ja | 35.29 |
-| BP (BP) | 6.119 | - | ja | ja | 65.06 |
+| BP (BP) | 6.13 | - | ja | ja | 65.78 |
 | GFS (GFS) | 43.37 | - | - | ja | 37.58 |
 | BAS.DE (BAS.DE) | 52.43 | ja | - | - | 55.61 |
 | BNR.DE (BNR.DE) | 62.1 | - | - | ja | 51.42 |
@@ -92,14 +92,12 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | RWE.DE (RWE.DE) | 56.98 | - | - | ja | 42.89 |
 | SIE.DE (SIE.DE) | 255.7 | - | - | ja | 37.39 |
 | ENR.DE (ENR.DE) | 121.1 | - | - | ja | 30.41 |
-| Gold (GC=F) | 4041.8999 | - | - | ja | 32.89 |
-| Silber (SI=F) | 54.69 | - | - | ja | 32.37 |
-| Platin (PL=F) | 1571.6 | - | - | ja | 37.39 |
+| Silber (SI=F) | 54.635 | - | - | ja | 32.27 |
+| Platin (PL=F) | 1572.3 | - | - | ja | 37.02 |
+| Palladium (PA=F) | 1051.5 | - | - | ja | 31.81 |
 | Kakao (CC=F) | 5607.0 | - | - | ja | 46.74 |
 | Zucker (SB=F) | 20.13 | - | - | ja | 56.45 |
-| EUR/GBP (EURGBP=X) | 0.8371 | - | - | ja | 19.15 |
-| EUR/NOK (EURNOK=X) | 10.4621 | - | - | ja | 15.57 |
-| EUR/JPY (EURJPY=X) | 175.816 | - | - | ja | 32.85 |
+| EUR/CHF (EURCHF=X) | 0.9258 | ja | - | - | 35.65 |
 
 ---
 

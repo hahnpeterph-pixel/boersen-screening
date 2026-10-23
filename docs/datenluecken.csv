@@ -1,12 +1,5 @@
 ticker,boerse,fehlend,gefuellt,wochenkontrolle
-BABA,HKEX,2026-10-23,,2026-10-23: Wochentief 95.30 liegt UNTER allen bekannten Tagestiefs (96.80) - der fehlende Tag hatte ein tieferes Tief
-BHP,ASX,2026-10-23,,2026-10-23: Wochentief 54.78 liegt UNTER allen bekannten Tagestiefs (57.13) - der fehlende Tag hatte ein tieferes Tief
 FRE.DE,XETRA,,2026-08-13:archiv,
-MFG,TSE,2026-10-23,,2026-10-23: Wochentief 7153.00 liegt UNTER allen bekannten Tagestiefs (7603.00) - der fehlende Tag hatte ein tieferes Tief
-MUFG,TSE,2026-10-23,,2026-10-23: Wochentief 3190.00 liegt UNTER allen bekannten Tagestiefs (3340.00) - der fehlende Tag hatte ein tieferes Tief
-SKHY,KRX,2026-10-23,,2026-10-23: Wochentief 1171000.00 liegt UNTER allen bekannten Tagestiefs (1183000.00) - der fehlende Tag hatte ein tieferes Tief
-SMFG,TSE,2026-10-23,,2026-10-23: Wochentief 2999.00 liegt UNTER allen bekannten Tagestiefs (3148.00) - der fehlende Tag hatte ein tieferes Tief
-SONY,TSE,2026-10-23,,2026-10-23: Wochentief 3920.00 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
-TM,TSE,2026-10-23,,2026-10-23: Wochentief 3054.00 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
-TSM,TWSE,2026-10-23,,2026-10-23: Wochentief 2385.00 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+HDB,NSE,,2026-10-23:stunden,
+IBN,NSE,,2026-10-23:stunden,
 ^TNX,USA,,2026-10-12:stunden,

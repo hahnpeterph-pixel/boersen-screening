@@ -1449,7 +1449,6 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | DXCM (DXCM) | 2026-07-31 | aufwaerts | 74.87 | 1.572 | 6.692 | 59 |
 | EMR (EMR) | 2026-09-22 | aufwaerts | 152.25 | 0.256 | 0.624 | 23 |
 | ENB (ENB) | 2026-09-10 | abwaerts | 49.85 | 1.615 | 3.129 | 31 |
-| ENR.DE (ENR.DE) | 2025-10-24 | aufwaerts | 99.44 | 0.38 | 1.669 | 252 |
 | ENR.DE (ENR.DE) | 2025-11-26 | aufwaerts | 107.4 | 0.424 | 2.281 | 229 |
 | EQIX (EQIX) | 2026-02-12 | aufwaerts | 868.02 | 3.247 | 10.186 | 175 |
 | EQNR (EQNR) | 2026-01-09 | aufwaerts | 234.1 | 0.762 | 1.709 | 199 |
@@ -1489,7 +1488,6 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | GLW (GLW) | 2026-10-22 | abwaerts | 133.22 | 0.515 | 3.168 | 1 |
 | GM (GM) | 2026-05-20 | aufwaerts | 72.88 | 0.208 | 0.7 | 108 |
 | GM (GM) | 2026-10-20 | abwaerts | 82.34 | 2.02 | 6.218 | 3 |
-| GOOGL (GOOGL) | 2025-10-24 | aufwaerts | 255.04 | 0.244 | 0.604 | 250 |
 | GOOGL (GOOGL) | 2025-10-27 | aufwaerts | 261.68 | 0.477 | 1.2 | 249 |
 | GOOGL (GOOGL) | 2026-04-01 | aufwaerts | 288.08 | 0.326 | 0.958 | 142 |
 | GOOGL (GOOGL) | 2026-04-08 | aufwaerts | 305.63 | 1.676 | 4.849 | 138 |
@@ -1872,7 +1870,6 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | SIE.DE (SIE.DE) | 2026-04-08 | aufwaerts | 215.55 | 1.585 | 6.704 | 141 |
 | SIE.DE (SIE.DE) | 2026-04-14 | aufwaerts | 229.65 | 0.196 | 0.74 | 137 |
 | SIE.DE (SIE.DE) | 2026-10-15 | abwaerts | 274.55 | 0.68 | 1.621 | 6 |
-| SKHY (SKHY) | 2025-10-24 | aufwaerts | 488500.0 | 0.213 | 0.921 | 243 |
 | SKHY (SKHY) | 2025-12-23 | aufwaerts | 580000.0 | 0.189 | 0.862 | 201 |
 | SKHY (SKHY) | 2025-12-29 | aufwaerts | 605000.0 | 0.975 | 4.132 | 198 |
 | SKHY (SKHY) | 2026-04-08 | aufwaerts | 933000.0 | 1.086 | 7.931 | 132 |

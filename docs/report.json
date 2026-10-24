@@ -1,205 +1,218 @@
 {
- "date": "2026-10-23",
+ "date": "2026-10-24",
  "ranks": {
   "turnaround": [
-   "MSTR",
-   "NET",
-   "QCOM",
+   "ZS",
    "ISRG",
+   "ADBE",
+   "VLO",
    "ILMN",
-   "SPOT",
-   "FAST",
-   "ABNB",
-   "BP",
-   "TMO",
    "EQNR",
-   "SHW",
+   "MRK",
+   "QCOM",
+   "SPOT",
+   "BP",
+   "DE",
    "BEI.DE",
-   "CVX",
-   "DIS"
+   "AMT",
+   "DB1.DE",
+   "ABNB"
   ],
   "momentum": [
-   "CRWD",
-   "EQNR",
-   "FTNT",
-   "DDOG",
-   "CVX",
    "BIIB",
-   "TRV",
+   "VLO",
    "ILMN",
+   "TEAM",
    "ABBV",
-   "SY1.DE",
-   "CNQ",
-   "V",
-   "TD",
+   "TRV",
+   "EQNR",
+   "AAPL",
+   "KO",
+   "CVX",
    "KDP",
-   "DHL.DE"
+   "DB1.DE",
+   "SY1.DE",
+   "BNS",
+   "HEN3.DE"
   ],
   "value": [
    "MU",
    "SNDK",
    "NVDA",
+   "NEM",
    "REGN",
    "META",
    "CNQ",
    "PBR",
    "RIO",
-   "NEM",
    "DXCM",
    "ABNB",
    "VLO",
    "MNST",
    "VRTX",
-   "ROST"
+   "ADS.DE"
   ]
  },
  "changes": {
   "turnaround": {
    "entries": [
     {
-     "ticker": "MSTR",
-     "rank": 1
-    },
-    {
-     "ticker": "NET",
-     "rank": 2
-    },
-    {
-     "ticker": "FAST",
-     "rank": 7
-    },
-    {
-     "ticker": "BP",
-     "rank": 9
-    },
-    {
-     "ticker": "TMO",
-     "rank": 10
-    },
-    {
-     "ticker": "EQNR",
-     "rank": 11
-    },
-    {
-     "ticker": "SHW",
-     "rank": 12
-    },
-    {
-     "ticker": "DIS",
-     "rank": 15
-    }
-   ],
-   "exits": [
-    {
      "ticker": "ZS",
-     "old_rank": 1
+     "rank": 1
     },
     {
      "ticker": "ADBE",
-     "old_rank": 3
-    },
-    {
-     "ticker": "VLO",
-     "old_rank": 4
-    },
-    {
-     "ticker": "AZN",
-     "old_rank": 6
-    },
-    {
-     "ticker": "DE",
-     "old_rank": 9
-    },
-    {
-     "ticker": "AMT",
-     "old_rank": 10
-    },
-    {
-     "ticker": "XOM",
-     "old_rank": 13
-    },
-    {
-     "ticker": "BLK",
-     "old_rank": 15
-    }
-   ],
-   "moves": []
-  },
-  "momentum": {
-   "entries": [
-    {
-     "ticker": "CRWD",
-     "rank": 1
-    },
-    {
-     "ticker": "EQNR",
-     "rank": 2
-    },
-    {
-     "ticker": "FTNT",
      "rank": 3
     },
     {
-     "ticker": "DDOG",
+     "ticker": "VLO",
      "rank": 4
     },
     {
-     "ticker": "CNQ",
+     "ticker": "MRK",
+     "rank": 7
+    },
+    {
+     "ticker": "DE",
      "rank": 11
     },
     {
-     "ticker": "TD",
+     "ticker": "AMT",
      "rank": 13
     },
     {
-     "ticker": "DHL.DE",
-     "rank": 15
+     "ticker": "DB1.DE",
+     "rank": 14
     }
    ],
    "exits": [
     {
-     "ticker": "VLO",
+     "ticker": "MSTR",
+     "old_rank": 1
+    },
+    {
+     "ticker": "NET",
      "old_rank": 2
     },
     {
-     "ticker": "TEAM",
-     "old_rank": 4
-    },
-    {
-     "ticker": "AAPL",
+     "ticker": "FAST",
      "old_rank": 7
     },
     {
-     "ticker": "KO",
-     "old_rank": 8
+     "ticker": "TMO",
+     "old_rank": 10
     },
     {
-     "ticker": "PSX",
-     "old_rank": 11
+     "ticker": "SHW",
+     "old_rank": 12
     },
     {
-     "ticker": "ADP",
-     "old_rank": 13
-    },
-    {
-     "ticker": "BNS",
+     "ticker": "CVX",
      "old_rank": 14
+    },
+    {
+     "ticker": "DIS",
+     "old_rank": 15
     }
    ],
    "moves": [
     {
-     "ticker": "CVX",
-     "rank": 5,
+     "ticker": "EQNR",
+     "rank": 6,
      "delta": 5
     },
     {
-     "ticker": "BIIB",
-     "rank": 6,
+     "ticker": "QCOM",
+     "rank": 8,
      "delta": -5
     },
     {
+     "ticker": "ABNB",
+     "rank": 15,
+     "delta": -7
+    }
+   ]
+  },
+  "momentum": {
+   "entries": [
+    {
+     "ticker": "VLO",
+     "rank": 2
+    },
+    {
+     "ticker": "TEAM",
+     "rank": 4
+    },
+    {
+     "ticker": "AAPL",
+     "rank": 8
+    },
+    {
+     "ticker": "KO",
+     "rank": 9
+    },
+    {
+     "ticker": "DB1.DE",
+     "rank": 12
+    },
+    {
+     "ticker": "BNS",
+     "rank": 14
+    },
+    {
+     "ticker": "HEN3.DE",
+     "rank": 15
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "CRWD",
+     "old_rank": 1
+    },
+    {
+     "ticker": "FTNT",
+     "old_rank": 3
+    },
+    {
+     "ticker": "DDOG",
+     "old_rank": 4
+    },
+    {
+     "ticker": "CNQ",
+     "old_rank": 11
+    },
+    {
+     "ticker": "V",
+     "old_rank": 12
+    },
+    {
+     "ticker": "TD",
+     "old_rank": 13
+    },
+    {
+     "ticker": "DHL.DE",
+     "old_rank": 15
+    }
+   ],
+   "moves": [
+    {
+     "ticker": "BIIB",
+     "rank": 1,
+     "delta": 5
+    },
+    {
      "ticker": "ILMN",
-     "rank": 8,
+     "rank": 3,
+     "delta": 5
+    },
+    {
+     "ticker": "EQNR",
+     "rank": 7,
+     "delta": -5
+    },
+    {
+     "ticker": "CVX",
+     "rank": 10,
      "delta": -5
     }
    ]
@@ -207,21 +220,21 @@
   "value": {
    "entries": [
     {
-     "ticker": "ROST",
+     "ticker": "ADS.DE",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "ADS.DE",
+     "ticker": "ROST",
      "old_rank": 15
     }
    ],
    "moves": [
     {
      "ticker": "NEM",
-     "rank": 9,
-     "delta": -5
+     "rank": 4,
+     "delta": 5
     }
    ]
   },

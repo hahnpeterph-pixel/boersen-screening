@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-10-23 21:56 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1204._
+_Erstellt 2026-10-24 00:40 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1204._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -48,13 +48,14 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | TJX (TJX) | 145.06 | - | - | ja | 62.69 |
 | MCK (MCK) | 1000.77 | - | - | ja | 66.41 |
 | NEM (NEM) | 108.87 | - | - | ja | 36.18 |
-| HSBC (HSBC) | 13.52 | - | - | ja | 31.56 |
+| HSBC (HSBC) | 13.474 | - | - | ja | 31.0 |
 | BHP (BHP) | 55.05 | - | - | ja | 31.79 |
+| SAN (SAN) | 11.47 | - | - | ja | 35.73 |
 | NVO (NVO) | 260.15 | - | - | ja | 47.57 |
-| RIO (RIO) | 62.31 | - | - | ja | 21.21 |
-| BBVA (BBVA) | 22.23 | ja | - | - | 32.87 |
-| UBS (UBS) | 38.32 | - | - | ja | 35.9 |
-| ING (ING) | 28.46 | - | - | ja | 33.36 |
+| RIO (RIO) | 62.16 | - | - | ja | 20.96 |
+| BBVA (BBVA) | 22.12 | - | - | ja | 31.68 |
+| UBS (UBS) | 38.28 | - | - | ja | 35.69 |
+| ING (ING) | 28.405 | - | - | ja | 33.04 |
 | APP (APP) | 260.25 | - | - | ja | 35.7 |
 | CCEP (CCEP) | 110.84 | - | - | ja | 58.89 |
 | AIR.DE (AIR.DE) | 192.38 | - | - | ja | 48.38 |

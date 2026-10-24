@@ -1,4 +1,4 @@
-# Boden-Screening 2026-10-23 (Stand 2026-10-24 00:44 UTC)
+# Boden-Screening 2026-10-23 (Stand 2026-10-24 04:55 UTC)
 
 Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RSI < 50 + mind. 2 Boden-Punkte (nur Technik). Die Filter (Analysten, Anker, CRV 2:1) stehen in docs/heute.csv. Boden-Anker = niedrigster Puffer mit 60 % Halterate fuer diese Gruppe und diesen Wert (Vollauf), KO-Marke = Bezugstief - Anker x ATR.
 
@@ -6,7 +6,7 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 
 _Keine._
 
-## Weitere Pruefttage (63)
+## Weitere Pruefttage (62)
 
 | Wert | Punkte | Grund |
 |---|---|---|
@@ -33,7 +33,6 @@ _Keine._
 | HEI.DE | 1 | 1 P, Tief 1, RSI >= 50 |
 | LRCX | 1 | 1 P, Umkehr a |
 | META | 1 | 1 P, Umkehr a |
-| NVDA | 1 | 1 P, Tief 1, Umkehr a |
 | ORCL | 1 | 1 P |
 | PBR | 1 | 1 P, Tief 1, RSI >= 50 |
 | PH | 1 | 1 P, Umkehr a |

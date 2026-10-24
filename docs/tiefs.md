@@ -1,6 +1,6 @@
 # Tiefs, Volumen und Kaufregel-Check
 
-_Erstellt 2026-10-24 00:40 UTC. Fenster: letzte 90 Kalendertage. Tiefs nach der Umkehr-Regel (tiefs_regel.py): ein Tief zaehlt, sobald eine spaetere Kerze das Hoch der Tiefkerze ueberschreitet. Solange es abwaerts geht, gilt das tiefste Tief der Strecke. Gerechnet wird auf abgeschlossenen Tageskerzen._
+_Erstellt 2026-10-24 04:51 UTC. Fenster: letzte 90 Kalendertage. Tiefs nach der Umkehr-Regel (tiefs_regel.py): ein Tief zaehlt, sobald eine spaetere Kerze das Hoch der Tiefkerze ueberschreitet. Solange es abwaerts geht, gilt das tiefste Tief der Strecke. Gerechnet wird auf abgeschlossenen Tageskerzen._
 
 ## Kaufregel
 
@@ -73,7 +73,7 @@ Umkehr = Hammer-Kerze ODER hoeheres Hoch als der Vortag. Die Spalte Schwelle ist
 | Wert | Kurs | Marke | Abstand | Tief | ATR | RSI | Schwelle | KO-Vorschlag | Einsatz | Signal | |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | NVIDIA (NVDA) _Kandidat_ | 210,96 | 209,00 | 0,9 % | 210,18 | 5,98 | 38,1 | k.A. (noch nie) | 198,22 | **150,00 EUR** | warten | - |
-| Applied Materials (AMAT) _Kandidat_ | 377,24 | 465,00 | -18,9 % | 372,80 | 20,56 | 26,1 | 52,1 (130 Faelle, 37,6 % der Serien) | 331,67 | **150,00 EUR** | Marke erreicht — CHART PRUEFEN | + |
+| Applied Materials (AMAT) _Kandidat_ | 377,24 | 465,00 | -18,9 % | 372,80 | 20,56 | 26,1 | 52,5 (130 Faelle, 37,7 % der Serien) | 331,67 | **150,00 EUR** | Marke erreicht — CHART PRUEFEN | + |
 
 _Legende: `+` Signal da, `!` Signal da aber RSI zu hoch, `-` warten._
 
@@ -112,16 +112,16 @@ _'nach Trendtief' orientiert sich am juengsten Tief und laesst mehr Hebel zu. 'k
 | Take-Two (TTWO) | 23.10.2026 | 203,53 | 1,6 Mio. | 0,67x (duenn) | -12,4 % |
 | Take-Two (TTWO) | 13.10.2026 | 196,30 | 5,2 Mio. | 2,11x (Kapitulation) | -16,6 % |
 | Take-Two (TTWO) | 01.10.2026 | 200,44 | 2,7 Mio. | 1,06x | -14,2 % |
-| Meta Platforms (META) | 23.10.2026 | 633,27 | 14,7 Mio. | 0,74x (duenn) | 18,1 % |
+| Meta Platforms (META) | 23.10.2026 | 633,27 | 14,8 Mio. | 0,75x (duenn) | 18,1 % |
 | Meta Platforms (META) | 20.10.2026 | 681,05 | 17,0 Mio. | 0,85x | 23,8 % |
 | Meta Platforms (META) | 08.10.2026 | 711,68 | 16,0 Mio. | 0,72x (duenn) | 27,1 % |
 | Micron (MU) | 22.10.2026 | 849,25 | 32,2 Mio. | 1,22x (erhoeht) | -1,2 % |
 | Micron (MU) | 01.10.2026 | 1.022,90 | 45,7 Mio. | 1,83x (Kapitulation) | 15,9 % |
 | Micron (MU) | 24.09.2026 | 1.044,00 | 22,1 Mio. | 0,87x | 17,6 % |
-| Microsoft (MSFT) | 23.10.2026 | 515,70 | 13,6 Mio. | 0,64x (duenn) | 32,5 % |
+| Microsoft (MSFT) | 23.10.2026 | 515,70 | 13,7 Mio. | 0,64x (duenn) | 32,5 % |
 | Microsoft (MSFT) | 08.10.2026 | 518,79 | 20,2 Mio. | 0,92x | 32,9 % |
 | Microsoft (MSFT) | 24.09.2026 | 491,22 | 16,7 Mio. | 0,77x (duenn) | 29,1 % |
-| Microsoft II (MSFT) | 23.10.2026 | 515,70 | 13,6 Mio. | 0,64x (duenn) | 7,9 % |
+| Microsoft II (MSFT) | 23.10.2026 | 515,70 | 13,7 Mio. | 0,64x (duenn) | 7,9 % |
 | Microsoft II (MSFT) | 08.10.2026 | 518,79 | 20,2 Mio. | 0,92x | 8,5 % |
 | Microsoft II (MSFT) | 24.09.2026 | 491,22 | 16,7 Mio. | 0,77x (duenn) | 3,3 % |
 | Oracle (ORCL) | 22.10.2026 | 122,76 | 36,6 Mio. | 1,20x | 8,2 % |
@@ -135,7 +135,7 @@ _Diese Zeilen in die gelben Spalten uebertragen. Reihenfolge wie dort._
 | Ticker | Kurs | ATR(14) | RSI | Chart-Tief | Datum Tief | Vol. rel. |
 |---|---|---|---|---|---|---|
 | TTWO | 203,69 | 6,31 | 44,4 | 231,58 | 2026-08-20 | 0,67 |
-| META | 642,62 | 25,28 | 35,7 | 524,52 | 2026-07-30 | 0,74 |
+| META | 642,62 | 25,28 | 35,7 | 524,52 | 2026-07-30 | 0,75 |
 | MU | 877,55 | 50,33 | 38,2 | 915,18 | 2026-08-19 | 1,22 |
 | MSFT | 524,51 | 11,04 | 52,6 | 477,15 | 2026-08-18 | 0,64 |
 | ORCL | 126,16 | 6,60 | 39,1 | 137,44 | 2026-08-19 | 1,20 |

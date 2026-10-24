@@ -7,7 +7,7 @@ Kalender Heimatboersen: verfuegbar
 | Quelle | Art | Rohstoff/Devise | Anzahl |
 |---|---|---|---|
 | kursverlauf | Platzhalter | nein | 1 |
-| kursverlauf | Platzhalter | ja | 1 |
+| kursverlauf | Platzhalter | ja | 3 |
 
 Aktien (hoechstens 60):
 

@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-10-24 00:40 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1204._
+_Erstellt 2026-10-24 04:51 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1204._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -23,6 +23,7 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | KO (KO) | 92.71 | - | - | ja | 59.73 |
 | MAR (MAR) | 390.71 | - | - | ja | 65.77 |
 | MNST (MNST) | 46.19 | - | - | ja | 58.78 |
+| NVDA (NVDA) | 210.96 | - | - | ja | 38.09 |
 | NXPI (NXPI) | 234.92 | - | - | ja | 51.37 |
 | ODFL (ODFL) | 182.7 | - | - | ja | 46.87 |
 | ON (ON) | 72.25 | - | - | ja | 42.92 |
@@ -70,13 +71,10 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | PAH3.DE (PAH3.DE) | 24.72 | - | - | ja | 39.29 |
 | RWE.DE (RWE.DE) | 55.62 | - | - | ja | 37.73 |
 | ENR.DE (ENR.DE) | 118.68 | - | - | ja | 28.84 |
-| Gold (GC=F) | 4010.0 | - | - | ja | 30.84 |
-| Silber (SI=F) | 53.96 | - | - | ja | 30.93 |
-| Platin (PL=F) | 1555.8 | - | - | ja | 36.27 |
-| Palladium (PA=F) | 1046.5 | - | - | ja | 31.56 |
+| Gold (GC=F) | 4007.8999 | - | - | ja | 30.72 |
+| Erdgas (NG=F) | 2.64 | - | - | ja | 32.3 |
 | Mais (ZC=F) | 456.0 | - | - | ja | 26.26 |
-| EUR/NOK (EURNOK=X) | 10.4423 | - | - | ja | 14.59 |
-| EUR/AUD (EURAUD=X) | 1.5916 | - | - | ja | 34.44 |
+| EUR/NOK (EURNOK=X) | 10.4646 | - | - | ja | 15.51 |
 | EUR/BRL (EURBRL=X) | 5.5615 | - | ja | ja | 31.94 |
 
 ---

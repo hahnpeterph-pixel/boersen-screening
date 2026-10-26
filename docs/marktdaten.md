@@ -1,81 +1,70 @@
 # Marktdaten
 
-_Erstellt 2026-10-24 04:51 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1204._
+_Erstellt 2026-10-26 23:07 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1177._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
 Vollstaendige Daten: `docs/marktdaten.csv`
 
+> **Standwarnung: 1 von 272 Aktien haengen zurueck.** Neuester Handelstag 2026-10-26. Fuer die folgenden Werte gelten Kurs, ATR, RSI und Tiefs NICHT fuer diesen Tag. Die Spalte `stand_zurueck` in der CSV markiert sie ebenfalls.
+>
+> | Wert | letzte Kerze |
+> |---|---|
+> | TSM | 2026-10-23 |
+
 ## Kerzensignale von gestern
 
 | Wert | Kurs | Hammer | hoeheres Hoch | Umkehrkerze | RSI |
 |---|---|---|---|---|---|
-| ABNB (ABNB) | 172.01 | - | - | ja | 54.81 |
-| ASML (ASML) | 1407.2 | - | - | ja | 37.1 |
-| AXP (AXP) | 313.22 | - | - | ja | 48.54 |
-| BKNG (BKNG) | 155.83 | - | - | ja | 37.83 |
-| CAT (CAT) | 687.0 | - | - | ja | 26.75 |
-| DASH (DASH) | 179.38 | - | - | ja | 38.96 |
-| GOOGL (GOOGL) | 320.21 | - | - | ja | 31.29 |
-| GS (GS) | 875.68 | - | - | ja | 37.44 |
-| JPM (JPM) | 331.58 | - | - | ja | 41.14 |
-| KLAC (KLAC) | 145.61 | - | - | ja | 23.26 |
-| KO (KO) | 92.71 | - | - | ja | 59.73 |
-| MAR (MAR) | 390.71 | - | - | ja | 65.77 |
-| MNST (MNST) | 46.19 | - | - | ja | 58.78 |
-| NVDA (NVDA) | 210.96 | - | - | ja | 38.09 |
-| NXPI (NXPI) | 234.92 | - | - | ja | 51.37 |
-| ODFL (ODFL) | 182.7 | - | - | ja | 46.87 |
-| ON (ON) | 72.25 | - | - | ja | 42.92 |
-| PCAR (PCAR) | 106.96 | - | - | ja | 34.18 |
-| PG (PG) | 161.02 | - | - | ja | 63.65 |
-| ROST (ROST) | 229.3 | - | - | ja | 46.32 |
-| TMUS (TMUS) | 146.54 | - | - | ja | 35.46 |
-| TRV (TRV) | 398.28 | - | - | ja | 67.97 |
-| TSLA (TSLA) | 372.22 | - | - | ja | 51.52 |
-| TTWO (TTWO) | 203.69 | - | - | ja | 44.38 |
-| BLK (BLK) | 1118.25 | - | - | ja | 55.15 |
-| C (C) | 120.62 | - | - | ja | 34.9 |
-| CL (CL) | 94.04 | - | - | ja | 60.22 |
-| LLY (LLY) | 1273.46 | - | - | ja | 62.22 |
-| MA (MA) | 623.6 | - | - | ja | 70.01 |
-| MS (MS) | 179.49 | - | - | ja | 34.1 |
-| SCHW (SCHW) | 90.58 | - | - | ja | 30.45 |
-| T (T) | 20.93 | - | - | ja | 31.14 |
-| UBER (UBER) | 66.7 | - | - | ja | 38.58 |
-| SNDK (SNDK) | 1238.03 | - | - | ja | 30.35 |
-| WDC (WDC) | 343.67 | - | - | ja | 35.75 |
-| CB (CB) | 355.11 | - | - | ja | 58.75 |
-| TJX (TJX) | 145.06 | - | - | ja | 62.69 |
-| MCK (MCK) | 1000.77 | - | - | ja | 66.41 |
-| NEM (NEM) | 108.87 | - | - | ja | 36.18 |
-| HSBC (HSBC) | 13.474 | - | - | ja | 31.0 |
-| BHP (BHP) | 55.05 | - | - | ja | 31.79 |
-| SAN (SAN) | 11.47 | - | - | ja | 35.73 |
-| NVO (NVO) | 260.15 | - | - | ja | 47.57 |
-| RIO (RIO) | 62.16 | - | - | ja | 20.96 |
-| BBVA (BBVA) | 22.12 | - | - | ja | 31.68 |
-| UBS (UBS) | 38.28 | - | - | ja | 35.69 |
-| ING (ING) | 28.405 | - | - | ja | 33.04 |
-| APP (APP) | 260.25 | - | - | ja | 35.7 |
-| CCEP (CCEP) | 110.84 | - | - | ja | 58.89 |
-| AIR.DE (AIR.DE) | 192.38 | - | - | ja | 48.38 |
-| ALV.DE (ALV.DE) | 427.9 | - | - | ja | 49.54 |
-| BAYN.DE (BAYN.DE) | 43.98 | ja | - | - | 40.98 |
-| DTG.DE (DTG.DE) | 40.05 | - | - | ja | 35.08 |
-| DBK.DE (DBK.DE) | 27.925 | - | - | ja | 29.17 |
-| DTE.DE (DTE.DE) | 25.35 | - | - | ja | 41.22 |
-| IFX.DE (IFX.DE) | 48.67 | - | - | ja | 31.3 |
-| MTX.DE (MTX.DE) | 316.7 | - | - | ja | 27.69 |
-| P911.DE (P911.DE) | 41.6 | - | - | ja | 41.2 |
-| PAH3.DE (PAH3.DE) | 24.72 | - | - | ja | 39.29 |
-| RWE.DE (RWE.DE) | 55.62 | - | - | ja | 37.73 |
-| ENR.DE (ENR.DE) | 118.68 | - | - | ja | 28.84 |
-| Gold (GC=F) | 4007.8999 | - | - | ja | 30.72 |
-| Erdgas (NG=F) | 2.64 | - | - | ja | 32.3 |
-| Mais (ZC=F) | 456.0 | - | - | ja | 26.26 |
-| EUR/NOK (EURNOK=X) | 10.4646 | - | - | ja | 15.51 |
-| EUR/BRL (EURBRL=X) | 5.5615 | - | ja | ja | 31.94 |
+| ADBE (ADBE) | 258.62 | - | - | ja | 55.83 |
+| BKNG (BKNG) | 153.14 | - | - | ja | 35.22 |
+| CHTR (CHTR) | 102.18 | - | - | ja | 35.81 |
+| CMCSA (CMCSA) | 22.05 | - | - | ja | 46.95 |
+| CSGP (CSGP) | 33.7 | - | - | ja | 63.76 |
+| CTSH (CTSH) | 69.34 | - | - | ja | 63.99 |
+| DASH (DASH) | 168.44 | - | - | ja | 32.6 |
+| DIS (DIS) | 110.4 | - | - | ja | 57.39 |
+| GOOGL (GOOGL) | 316.8 | - | - | ja | 29.54 |
+| INTU (INTU) | 339.89 | - | - | ja | 61.81 |
+| MDLZ (MDLZ) | 62.97 | - | - | ja | 54.16 |
+| META (META) | 630.56 | - | - | ja | 33.65 |
+| MRK (MRK) | 140.61 | - | ja | ja | 42.46 |
+| NFLX (NFLX) | 63.9 | - | - | ja | 33.46 |
+| PAYX (PAYX) | 115.7 | - | - | ja | 61.08 |
+| PCAR (PCAR) | 104.37 | - | - | ja | 29.19 |
+| PDD (PDD) | 78.13 | - | - | ja | 42.78 |
+| PG (PG) | 159.92 | - | - | ja | 61.34 |
+| PYPL (PYPL) | 54.99 | - | - | ja | 46.29 |
+| SHW (SHW) | 335.16 | - | - | ja | 54.35 |
+| TTD (TTD) | 12.77 | - | - | ja | 49.53 |
+| TTWO (TTWO) | 203.35 | - | - | ja | 44.01 |
+| UNH (UNH) | 410.7 | - | - | ja | 59.98 |
+| V (V) | 404.16 | - | - | ja | 65.27 |
+| VRTX (VRTX) | 517.49 | - | - | ja | 51.72 |
+| VZ (VZ) | 43.1 | - | - | ja | 39.01 |
+| CL (CL) | 93.1 | - | - | ja | 57.0 |
+| CVS (CVS) | 92.53 | - | ja | ja | 54.58 |
+| MA (MA) | 613.5 | - | - | ja | 61.64 |
+| MDT (MDT) | 94.79 | - | - | ja | 57.85 |
+| MO (MO) | 73.62 | - | - | ja | 58.06 |
+| PFE (PFE) | 29.79 | - | - | ja | 61.82 |
+| SCHW (SCHW) | 89.73 | - | - | ja | 28.86 |
+| SO (SO) | 92.57 | - | - | ja | 65.9 |
+| UBER (UBER) | 66.13 | - | - | ja | 37.12 |
+| TJX (TJX) | 143.7 | - | - | ja | 58.48 |
+| MCK (MCK) | 992.87 | - | - | ja | 63.22 |
+| MSTR (MSTR) | 139.82 | - | - | ja | 45.51 |
+| DTE.DE (DTE.DE) | 25.0 | - | - | ja | 38.66 |
+| P911.DE (P911.DE) | 41.48 | - | - | ja | 40.58 |
+| SY1.DE (SY1.DE) | 100.3 | - | - | ja | 66.98 |
+| Platin (PL=F) | 1533.9 | - | - | ja | 34.83 |
+| Weizen (ZW=F) | 615.5 | - | - | ja | 24.85 |
+| Kakao (CC=F) | 5503.0 | - | - | ja | 43.5 |
+| Zucker (SB=F) | 19.1 | - | - | ja | 44.05 |
+| EUR/USD (EURUSD=X) | 1.1177 | - | - | ja | 30.95 |
+| EUR/NOK (EURNOK=X) | 10.4099 | - | - | ja | 13.3 |
+| EUR/TWD (EURTWD=X) | 36.408 | - | - | ja | 54.56 |
+| EUR/KRW (EURKRW=X) | 1479.7 | - | - | ja | 28.21 |
 
 ---
 

@@ -1,4 +1,4 @@
-# Boden-Screening 2026-10-26 (Stand 2026-10-26 23:10 UTC)
+# Boden-Screening 2026-10-26 (Stand 2026-10-27 01:45 UTC)
 
 Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RSI < 50 + mind. 2 Boden-Punkte (nur Technik). Die Filter (Analysten, Anker, CRV 2:1) stehen in docs/heute.csv. Boden-Anker = niedrigster Puffer mit 60 % Halterate fuer diese Gruppe und diesen Wert (Vollauf), KO-Marke = Bezugstief - Anker x ATR.
 
@@ -17,13 +17,13 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | DTG.DE | 2 | 44 | 3.50 | 36.96 | 61 % |
 | ENR.DE | 3 | 36 | 4.00 | 92.66 | 75 % |
 | GEV | 2 | 38 | - | - | 80 % |
-| HSBC | 5 | 35 | 3.50 | 12.32 | 33 % |
+| HSBC | 5 | 36 | 3.50 | 12.32 | 33 % |
 | ING | 6 | 40 | 2.75 | 25.99 | 33 % |
 | KLAC | 2 | 28 | 2.75 | 122.77 | 69 % |
 | MBG.DE | 4 | 50 | 3.75 | 34.77 | 52 % |
 | MS | 6 | 41 | 2.25 | 167.14 | 47 % |
 | STX | 4 | 34 | - | - | 92 % |
-| WDC | 5 | 40 | 3.50 | 265.50 | 82 % |
+| WDC | 5 | 40 | 3.50 | 265.47 | 82 % |
 
 ## Weitere Pruefttage (75)
 
@@ -34,6 +34,7 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | GSK | 2 | RSI >= 50 |
 | NVDA | 2 | Tief 1 |
 | RTX | 2 | RSI >= 50 |
+| RY | 2 | Tief 1, RSI >= 50 |
 | ADS.DE | 1 | 1 P, Tief 1, RSI >= 50 |
 | AIR.DE | 1 | 1 P, Tief 1, RSI >= 50 |
 | ALV.DE | 1 | 1 P, RSI >= 50 |
@@ -76,7 +77,6 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | RHM.DE | 1 | 1 P, Tief 1, RSI >= 50 |
 | ROP | 1 | 1 P, Tief 1, RSI >= 50 |
 | ROST | 1 | 1 P, Tief 1, RSI >= 50 |
-| RY | 1 | 1 P, Tief 1, RSI >= 50 |
 | SAN | 1 | 1 P, Umkehr a |
 | SBUX | 1 | 1 P, Tief 1, RSI >= 50 |
 | SIE.DE | 1 | 1 P |

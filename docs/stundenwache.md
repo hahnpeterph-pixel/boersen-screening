@@ -1,8 +1,8 @@
 # Stundenwache
 
-Stand: 2026-10-26 · 272 Werte mit Stundendaten · erstellt 2026-10-26 23:08 UTC
+Stand: 2026-10-26 · 272 Werte mit Stundendaten · erstellt 2026-10-27 01:31 UTC
 
-> **Sitzung noch nicht abgeschlossen.** 5 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 5, 6, 7, 8, 9). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
+> **Sitzung noch nicht abgeschlossen.** 10 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 1, 2, 3, 6, 7, 8, 9). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
 
 Marken sind das juengste Swing-Tief und das juengste Swing-Hoch aus `tiefs_regel.py`, also dieselben wie im Tagesbericht. Geprueft wird nur, was der letzte Handelstag auf Stundenbasis damit gemacht hat.
 
@@ -21,20 +21,48 @@ Keine.
 
 Keine.
 
-## Tief angetestet (8)
+## Tief angetestet (36)
 
 Docht bis unter die Marke, kein Stundenschluss darunter.
 
 | Wert | Marke | Schluss | Abstand (ATR) | Stunden dahinter |
 |---|---|---|---|---|
+| TJX | 143.62 | 143.7 | 0.031 | 0 |
+| MRK | 139.93 | 140.595 | 0.139 | 0 |
 | MCK | 988.445 | 992.25 | 0.174 | 0 |
+| MA | 611.37 | 613.59 | 0.206 | 0 |
 | UBER | 65.72 | 66.12 | 0.22 | 0 |
+| CMCSA | 21.9 | 22.065 | 0.233 | 0 |
+| MSTR | 137.26 | 139.84 | 0.256 | 0 |
+| MDT | 94.09 | 94.78 | 0.268 | 0 |
+| LOW | 196.715 | 198.22 | 0.29 | 0 |
+| SPOT | 565.665 | 572.09 | 0.29 | 0 |
+| CL | 92.49 | 93.11 | 0.314 | 0 |
+| PDD | 77.45 | 78.13 | 0.333 | 0 |
+| PCAR | 103.335 | 104.265 | 0.355 | 0 |
+| ADSK | 246.545 | 249.43 | 0.383 | 0 |
 | TEAM | 220.0 | 223.4 | 0.39 | 0 |
 | VZ | 42.4735 | 43.11 | 0.41 | 0 |
+| CTSH | 68.2 | 69.335 | 0.411 | 0 |
+| ABNB | 169.265 | 171.035 | 0.416 | 0 |
 | CAT | 679.5501 | 691.91 | 0.427 | 0 |
+| PAYX | 114.53 | 115.73 | 0.438 | 0 |
+| TMUS | 143.92 | 146.92 | 0.449 | 0 |
+| AAPL | 341.03 | 343.98 | 0.461 | 0 |
+| KO | 91.935 | 92.71 | 0.464 | 0 |
 | TTD | 12.515 | 12.765 | 0.47 | 0 |
 | ADBE | 254.0601 | 258.62 | 0.49 | 0 |
+| INTU | 333.49 | 339.959 | 0.496 | 0 |
+| REGN | 796.61 | 807.89 | 0.517 | 0 |
+| CSGP | 33.015 | 33.7 | 0.518 | 0 |
+| DASH | 163.68 | 168.35 | 0.55 | 0 |
+| TTWO | 199.9 | 203.45 | 0.557 | 0 |
+| VRTX | 509.33 | 517.52 | 0.564 | 0 |
+| DXCM | 76.52 | 78.56 | 0.766 | 0 |
 | DE | 625.97 | 641.26 | 0.775 | 0 |
+| ORLY | 89.49 | 91.065 | 0.855 | 0 |
+| BAS.DE | 51.42 | 52.21 | 0.867 | 0 |
+| NEM | 106.96 | 110.38 | 0.869 | 0 |
 
 ## Swing-Hoch ueberwunden (78)
 
@@ -46,12 +74,11 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | ROP | 391.01 | 441.76 | 4.341 | 7 |
 | LMT | 559.48 | 635.31 | 4.139 | 7 |
 | IBM | 224.51 | 253.43 | 3.846 | 7 |
-| SONY | 3797.0 | 4131.0 | 3.717 | 7 |
 | WDAY | 185.82 | 208.45 | 3.335 | 7 |
-| TM | 2944.5 | 3127.0 | 3.282 | 7 |
 | SRT3.DE | 257.7 | 288.9 | 3.184 | 9 |
 | BTI | 42.42 | 45.26 | 3.171 | 9 |
 | AEP | 121.8 | 129.23 | 3.155 | 7 |
+| TM | 2944.5 | 3103.0 | 2.861 | 2 |
 | ZAL.DE | 24.73 | 26.87 | 2.692 | 9 |
 | QIA.DE | 42.345 | 45.115 | 2.589 | 9 |
 | CDW | 150.34 | 163.21 | 2.481 | 7 |
@@ -98,6 +125,7 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | BEI.DE | 82.52 | 83.1 | 0.399 | 9 |
 | ACN | 243.67 | 247.25 | 0.366 | 7 |
 | AMT | 186.0 | 188.34 | 0.361 | 7 |
+| SKHY | 1329000.0 | 1364000.0 | 0.358 | 2 |
 | MRK.DE | 142.6 | 143.8 | 0.353 | 9 |
 | HEI.DE | 145.65 | 146.8 | 0.318 | 9 |
 | NXPI | 243.0 | 245.88 | 0.308 | 6 |

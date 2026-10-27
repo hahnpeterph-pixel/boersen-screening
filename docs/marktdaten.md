@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-10-26 23:07 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1177._
+_Erstellt 2026-10-27 01:28 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1218._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -56,15 +56,16 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | MSTR (MSTR) | 139.82 | - | - | ja | 45.51 |
 | DTE.DE (DTE.DE) | 25.0 | - | - | ja | 38.66 |
 | P911.DE (P911.DE) | 41.48 | - | - | ja | 40.58 |
-| SY1.DE (SY1.DE) | 100.3 | - | - | ja | 66.98 |
-| Platin (PL=F) | 1533.9 | - | - | ja | 34.83 |
-| Weizen (ZW=F) | 615.5 | - | - | ja | 24.85 |
+| SY1.DE (SY1.DE) | 100.3 | - | ja | ja | 66.98 |
+| Platin (PL=F) | 1525.4 | - | - | ja | 34.3 |
+| Palladium (PA=F) | 1042.0 | - | - | ja | 31.33 |
+| Brent Oel (BZ=F) | 109.85 | - | - | ja | 57.15 |
+| Weizen (ZW=F) | 614.75 | - | - | ja | 24.68 |
+| Mais (ZC=F) | 453.5 | - | - | ja | 25.28 |
 | Kakao (CC=F) | 5503.0 | - | - | ja | 43.5 |
 | Zucker (SB=F) | 19.1 | - | - | ja | 44.05 |
-| EUR/USD (EURUSD=X) | 1.1177 | - | - | ja | 30.95 |
-| EUR/NOK (EURNOK=X) | 10.4099 | - | - | ja | 13.3 |
-| EUR/TWD (EURTWD=X) | 36.408 | - | - | ja | 54.56 |
-| EUR/KRW (EURKRW=X) | 1479.7 | - | - | ja | 28.21 |
+| EUR/TWD (EURTWD=X) | 35.388 | - | - | ja | 34.82 |
+| EUR/BRL (EURBRL=X) | 5.536 | - | ja | ja | 31.57 |
 
 ---
 

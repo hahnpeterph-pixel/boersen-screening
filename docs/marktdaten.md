@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-10-27 01:28 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1218._
+_Erstellt 2026-10-27 10:22 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1218._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -16,6 +16,8 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 
 | Wert | Kurs | Hammer | hoeheres Hoch | Umkehrkerze | RSI |
 |---|---|---|---|---|---|
+| AAPL (AAPL) | 343.91 | - | - | ja | 57.69 |
+| ABNB (ABNB) | 171.05 | - | - | ja | 53.32 |
 | ADBE (ADBE) | 258.62 | - | - | ja | 55.83 |
 | BKNG (BKNG) | 153.14 | - | - | ja | 35.22 |
 | CHTR (CHTR) | 102.18 | - | - | ja | 35.81 |
@@ -54,15 +56,12 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | TJX (TJX) | 143.7 | - | - | ja | 58.48 |
 | MCK (MCK) | 992.87 | - | - | ja | 63.22 |
 | MSTR (MSTR) | 139.82 | - | - | ja | 45.51 |
-| DTE.DE (DTE.DE) | 25.0 | - | - | ja | 38.66 |
-| P911.DE (P911.DE) | 41.48 | - | - | ja | 40.58 |
-| SY1.DE (SY1.DE) | 100.3 | - | ja | ja | 66.98 |
-| Platin (PL=F) | 1525.4 | - | - | ja | 34.3 |
+| DTE.DE (DTE.DE) | 24.98 | - | - | ja | 38.52 |
+| P911.DE (P911.DE) | 41.33 | - | - | ja | 39.83 |
+| SY1.DE (SY1.DE) | 100.15 | - | - | ja | 66.26 |
 | Palladium (PA=F) | 1042.0 | - | - | ja | 31.33 |
-| Brent Oel (BZ=F) | 109.85 | - | - | ja | 57.15 |
-| Weizen (ZW=F) | 614.75 | - | - | ja | 24.68 |
-| Mais (ZC=F) | 453.5 | - | - | ja | 25.28 |
-| Kakao (CC=F) | 5503.0 | - | - | ja | 43.5 |
+| Weizen (ZW=F) | 616.0 | - | - | ja | 24.96 |
+| Kakao (CC=F) | 5490.0 | - | - | ja | 43.11 |
 | Zucker (SB=F) | 19.1 | - | - | ja | 44.05 |
 | EUR/TWD (EURTWD=X) | 35.388 | - | - | ja | 34.82 |
 | EUR/BRL (EURBRL=X) | 5.536 | - | ja | ja | 31.57 |

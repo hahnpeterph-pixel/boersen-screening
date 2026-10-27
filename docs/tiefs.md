@@ -1,6 +1,6 @@
 # Tiefs, Volumen und Kaufregel-Check
 
-_Erstellt 2026-10-27 01:28 UTC. Fenster: letzte 90 Kalendertage. Tiefs nach der Umkehr-Regel (tiefs_regel.py): ein Tief zaehlt, sobald eine spaetere Kerze das Hoch der Tiefkerze ueberschreitet. Solange es abwaerts geht, gilt das tiefste Tief der Strecke. Gerechnet wird auf abgeschlossenen Tageskerzen._
+_Erstellt 2026-10-27 10:22 UTC. Fenster: letzte 90 Kalendertage. Tiefs nach der Umkehr-Regel (tiefs_regel.py): ein Tief zaehlt, sobald eine spaetere Kerze das Hoch der Tiefkerze ueberschreitet. Solange es abwaerts geht, gilt das tiefste Tief der Strecke. Gerechnet wird auf abgeschlossenen Tageskerzen._
 
 ## Kaufregel
 
@@ -59,7 +59,7 @@ _Legende: `+` unauffaellig, `!` beobachten (ab 60 RSI), `!!` ueberkauft (ab 70 R
 ## Achtung
 
 - **Take-Two**: Die KO-Schwelle 228,82 liegt nur 0,43 x ATR unter dem Tief 231,58 vom 20.08.2026. Nach Regel 2 bedeutet das reduzierten Einsatz, kein Ausschluss.
-- **Take-Two**: Der Kurs 203,35 steht nur -4,00 x ATR ueber dem KO 228,82. Eine Tagesschwankung reicht rechnerisch fuer den Totalverlust.
+- **Take-Two**: Der Kurs 203,35 steht nur -3,99 x ATR ueber dem KO 228,82. Eine Tagesschwankung reicht rechnerisch fuer den Totalverlust.
 - **Meta Platforms**: Die KO-Schwelle 518,85 liegt nur 0,22 x ATR unter dem Tief 524,52 vom 30.07.2026. Nach Regel 2 bedeutet das reduzierten Einsatz, kein Ausschluss.
 - **Micron**: Der Kurs 903,70 steht nur 0,86 x ATR ueber dem KO 859,80. Eine Tagesschwankung reicht rechnerisch fuer den Totalverlust.
 - **Microsoft II**: Die KO-Schwelle 474,89 liegt nur 0,20 x ATR unter dem Tief 477,15 vom 18.08.2026. Nach Regel 2 bedeutet das reduzierten Einsatz, kein Ausschluss.
@@ -83,7 +83,7 @@ _Legende: `+` Signal da, `!` Signal da aber RSI zu hoch, `-` warten._
 
 | Wert | Bezugstief | Puffer | Faktor | Einsatz | Hinweis |
 |---|---|---|---|---|---|
-| Take-Two (TTWO) | 231,58 (20.08., Chart) | 0,43 x ATR | 0,22 | **71,65 EUR** | kaufbar |
+| Take-Two (TTWO) | 231,58 (20.08., Chart) | 0,43 x ATR | 0,22 | **71,64 EUR** | kaufbar |
 | Meta Platforms (META) | 524,52 (30.07., Chart) | 0,22 x ATR | 0,11 | **60,94 EUR** | kaufbar |
 | Micron (MU) | 915,18 (19.08., Chart) | 1,09 x ATR | 0,54 | **104,31 EUR** | kaufbar |
 | Microsoft (MSFT) | 477,15 (18.08., Chart) | 11,59 x ATR | 1,00 | **150,00 EUR** | kaufbar |
@@ -99,7 +99,7 @@ Tief minus 2,0 x ATR. Die Hebelangabe ist das, was sich bei diesem KO rechnerisc
 | Wert | Kurs | ATR | nach Trendtief | Hebel | konservativ | Hebel |
 |---|---|---|---|---|---|---|
 | Take-Two (TTWO) | 203,35 | 6,38 | 187,15 | 12,6x | 183,55 | 10,3x |
-| Meta Platforms (META) | 630,56 | 25,92 | 575,97 | 11,6x | 472,64 | 4,0x |
+| Meta Platforms (META) | 630,56 | 25,92 | 575,95 | 11,5x | 472,64 | 4,0x |
 | Micron (MU) | 903,70 | 50,98 | 747,28 | 5,8x | 635,91 | 3,4x |
 | Microsoft (MSFT) | 532,60 | 11,12 | 493,47 | 13,6x | 454,92 | 6,9x |
 | Microsoft II (MSFT) | 532,60 | 11,12 | 493,47 | 13,6x | 454,92 | 6,9x |
@@ -114,7 +114,7 @@ _'nach Trendtief' orientiert sich am juengsten Tief und laesst mehr Hebel zu. 'k
 | Take-Two (TTWO) | 26.10.2026 | 199,90 | 1,7 Mio. | 0,72x (duenn) | -14,5 % |
 | Take-Two (TTWO) | 13.10.2026 | 196,30 | 5,2 Mio. | 2,11x (Kapitulation) | -16,6 % |
 | Take-Two (TTWO) | 01.10.2026 | 200,44 | 2,7 Mio. | 1,06x | -14,2 % |
-| Meta Platforms (META) | 26.10.2026 | 627,82 | 30,8 Mio. | 1,60x (Kapitulation) | 17,4 % |
+| Meta Platforms (META) | 26.10.2026 | 627,80 | 30,9 Mio. | 1,60x (Kapitulation) | 17,4 % |
 | Meta Platforms (META) | 20.10.2026 | 681,05 | 17,0 Mio. | 0,85x | 23,8 % |
 | Meta Platforms (META) | 08.10.2026 | 711,68 | 16,0 Mio. | 0,72x (duenn) | 27,1 % |
 | Micron (MU) | 22.10.2026 | 849,25 | 32,2 Mio. | 1,22x (erhoeht) | -1,2 % |

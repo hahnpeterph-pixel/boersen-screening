@@ -1,12 +1,6 @@
 ticker,boerse,fehlend,gefuellt,wochenkontrolle
-BABA,HKEX,2026-10-27,,2026-10-27: Wochentief 96.05 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
-BHP,ASX,2026-10-27,,2026-10-27: Wochentief 55.38 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
 FRE.DE,XETRA,,2026-08-13:archiv,
-MFG,TSE,2026-10-27,,2026-10-27: Wochentief 7377.00 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
-MUFG,TSE,2026-10-27,,2026-10-27: Wochentief 3260.00 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
-SKHY,KRX,2026-10-27,,2026-10-27: Wochentief 1267000.00 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
-SMFG,TSE,2026-10-27,,2026-10-27: Wochentief 3076.00 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
-SONY,TSE,2026-10-27,,2026-10-27: Wochentief 4023.00 liegt UNTER allen bekannten Tagestiefs (4091.00) - der fehlende Tag hatte ein tieferes Tief
-TM,TSE,2026-10-27,,2026-10-27: Wochentief 3069.00 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
-TSM,TWSE,2026-10-27,,"2026-10-27: Wochentief 2380.00, keine Tagestiefs der Woche bekannt"
+HDB,NSE,,2026-10-27:stunden,
+IBN,NSE,,2026-10-27:stunden,
+TSM,TWSE,2026-10-23,,2026-10-23: Wochentief 2385.00 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
 ^TNX,USA,,2026-10-12:stunden,

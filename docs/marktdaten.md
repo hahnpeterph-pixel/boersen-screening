@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-10-27 22:54 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1133._
+_Erstellt 2026-10-28 01:21 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1174._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -63,12 +63,12 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | PSX (PSX) | 268.53 | - | - | ja | 44.54 |
 | WELL (WELL) | 226.72 | - | - | ja | 42.76 |
 | SHOP (SHOP) | 165.81 | - | - | ja | 54.16 |
-| HSBC (HSBC) | 12.914 | ja | - | ja | 26.67 |
-| SHEL (SHEL) | 39.275 | - | - | ja | 63.43 |
+| HSBC (HSBC) | 12.85 | - | - | ja | 26.12 |
+| SHEL (SHEL) | 39.305 | - | - | ja | 63.77 |
 | NVO (NVO) | 259.5 | - | - | ja | 46.85 |
-| UL (UL) | 48.925 | - | - | ja | 58.46 |
+| UL (UL) | 48.935 | - | - | ja | 58.54 |
 | HDB (HDB) | 680.2 | - | - | ja | 36.5 |
-| EQNR (EQNR) | 440.5 | - | - | ja | 60.49 |
+| EQNR (EQNR) | 441.2 | - | - | ja | 60.98 |
 | CNQ (CNQ) | 54.07 | - | - | ja | 65.33 |
 | BP (BP) | 6.127 | - | - | ja | 58.53 |
 | CCEP (CCEP) | 110.89 | - | - | ja | 57.73 |
@@ -80,11 +80,11 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | VOW3.DE (VOW3.DE) | 68.8 | ja | - | ja | 43.54 |
 | VNA.DE (VNA.DE) | 16.54 | - | - | ja | 36.7 |
 | ZAL.DE (ZAL.DE) | 26.56 | - | - | ja | 69.48 |
-| Brent Oel (BZ=F) | 109.44 | - | - | ja | 55.49 |
-| WTI Oel (CL=F) | 99.89 | - | - | ja | 56.17 |
-| Weizen (ZW=F) | 611.0 | - | - | ja | 23.8 |
-| Mais (ZC=F) | 450.0 | - | - | ja | 23.9 |
-| EUR/AUD (EURAUD=X) | 1.5831 | - | - | ja | 29.79 |
+| EUR/USD (EURUSD=X) | 1.1174 | - | - | ja | 30.33 |
+| EUR/GBP (EURGBP=X) | 0.8373 | - | - | ja | 23.41 |
+| EUR/NOK (EURNOK=X) | 10.4042 | - | - | ja | 12.99 |
+| EUR/HKD (EURHKD=X) | 8.7654 | - | - | ja | 31.16 |
+| EUR/AUD (EURAUD=X) | 1.5918 | ja | - | ja | 34.22 |
 
 ---
 

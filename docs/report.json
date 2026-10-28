@@ -1,197 +1,220 @@
 {
- "date": "2026-10-27",
+ "date": "2026-10-28",
  "ranks": {
   "turnaround": [
    "QCOM",
-   "MSTR",
-   "SPOT",
-   "NET",
    "TSLA",
-   "GEHC",
-   "CTAS",
+   "MSTR",
+   "SONY",
+   "ISRG",
+   "VLO",
+   "SPOT",
    "TMO",
-   "DHR",
-   "BP",
-   "SPGI",
-   "NEM",
-   "FAST",
-   "CNQ",
-   "XOM"
+   "ILMN",
+   "BEI.DE",
+   "DIS",
+   "SHW",
+   "EMR",
+   "MA",
+   "ORLY"
   ],
   "momentum": [
+   "SY1.DE",
+   "CRWD",
    "DDOG",
+   "FTNT",
+   "VLO",
    "ILMN",
    "BIIB",
-   "FTNT",
+   "CVX",
    "AMGN",
-   "CRWD",
+   "COP",
+   "V",
    "TRV",
    "DHL.DE",
-   "PM",
-   "XOM",
-   "CNQ",
-   "CTAS",
-   "KDP",
-   "MPC",
-   "SY1.DE"
+   "DB1.DE",
+   "KDP"
   ],
   "value": [
    "MU",
    "SNDK",
    "NVDA",
-   "NEM",
    "REGN",
    "PBR",
    "CNQ",
    "DXCM",
+   "NEM",
    "RIO",
-   "ABNB",
    "META",
+   "ABNB",
    "BHP",
    "ROST",
-   "MNST",
-   "SPOT"
+   "VRTX",
+   "MNST"
   ]
  },
  "changes": {
   "turnaround": {
    "entries": [
     {
-     "ticker": "GEHC",
+     "ticker": "SONY",
+     "rank": 4
+    },
+    {
+     "ticker": "ISRG",
+     "rank": 5
+    },
+    {
+     "ticker": "VLO",
      "rank": 6
     },
     {
-     "ticker": "CTAS",
-     "rank": 7
-    },
-    {
-     "ticker": "DHR",
+     "ticker": "ILMN",
      "rank": 9
     },
     {
-     "ticker": "SPGI",
+     "ticker": "BEI.DE",
+     "rank": 10
+    },
+    {
+     "ticker": "DIS",
      "rank": 11
     },
     {
-     "ticker": "NEM",
+     "ticker": "SHW",
      "rank": 12
     },
     {
-     "ticker": "FAST",
+     "ticker": "EMR",
      "rank": 13
     },
     {
-     "ticker": "CNQ",
+     "ticker": "MA",
      "rank": 14
     },
     {
-     "ticker": "XOM",
+     "ticker": "ORLY",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "ISRG",
-     "old_rank": 5
+     "ticker": "NET",
+     "old_rank": 4
     },
     {
-     "ticker": "VLO",
+     "ticker": "GEHC",
      "old_rank": 6
     },
     {
-     "ticker": "ILMN",
+     "ticker": "CTAS",
+     "old_rank": 7
+    },
+    {
+     "ticker": "DHR",
      "old_rank": 9
     },
     {
-     "ticker": "DIS",
+     "ticker": "BP",
      "old_rank": 10
     },
     {
-     "ticker": "SHW",
+     "ticker": "SPGI",
      "old_rank": 11
     },
     {
-     "ticker": "EMR",
+     "ticker": "NEM",
      "old_rank": 12
     },
     {
-     "ticker": "MA",
+     "ticker": "FAST",
      "old_rank": 13
     },
     {
-     "ticker": "ORLY",
+     "ticker": "CNQ",
      "old_rank": 14
+    },
+    {
+     "ticker": "XOM",
+     "old_rank": 15
     }
    ],
-   "moves": [
-    {
-     "ticker": "BP",
-     "rank": 10,
-     "delta": 5
-    }
-   ]
+   "moves": []
   },
   "momentum": {
    "entries": [
     {
-     "ticker": "PM",
-     "rank": 9
+     "ticker": "VLO",
+     "rank": 5
     },
     {
-     "ticker": "XOM",
+     "ticker": "CVX",
+     "rank": 8
+    },
+    {
+     "ticker": "COP",
      "rank": 10
     },
     {
-     "ticker": "CNQ",
+     "ticker": "V",
      "rank": 11
     },
     {
-     "ticker": "MPC",
+     "ticker": "DB1.DE",
      "rank": 14
     }
    ],
    "exits": [
     {
-     "ticker": "VLO",
-     "old_rank": 4
-    },
-    {
-     "ticker": "CVX",
-     "old_rank": 8
-    },
-    {
-     "ticker": "COP",
+     "ticker": "PM",
      "old_rank": 9
     },
     {
-     "ticker": "V",
+     "ticker": "XOM",
+     "old_rank": 10
+    },
+    {
+     "ticker": "CNQ",
      "old_rank": 11
+    },
+    {
+     "ticker": "CTAS",
+     "old_rank": 12
+    },
+    {
+     "ticker": "MPC",
+     "old_rank": 14
     }
    ],
    "moves": [
     {
-     "ticker": "CRWD",
-     "rank": 6,
-     "delta": -5
+     "ticker": "SY1.DE",
+     "rank": 1,
+     "delta": 14
     },
     {
      "ticker": "TRV",
-     "rank": 7,
-     "delta": 5
+     "rank": 12,
+     "delta": -5
+    },
+    {
+     "ticker": "DHL.DE",
+     "rank": 13,
+     "delta": -5
     }
    ]
   },
   "value": {
    "entries": [
     {
-     "ticker": "SPOT",
-     "rank": 15
+     "ticker": "VRTX",
+     "rank": 14
     }
    ],
    "exits": [
     {
-     "ticker": "VRTX",
-     "old_rank": 14
+     "ticker": "SPOT",
+     "old_rank": 15
     }
    ],
    "moves": []

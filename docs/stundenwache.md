@@ -1,8 +1,8 @@
 # Stundenwache
 
-Stand: 2026-10-27 · 272 Werte mit Stundendaten · erstellt 2026-10-27 22:56 UTC
+Stand: 2026-10-27 · 272 Werte mit Stundendaten · erstellt 2026-10-28 01:24 UTC
 
-> **Sitzung noch nicht abgeschlossen.** 5 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 5, 6, 7, 8, 9). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
+> **Sitzung noch nicht abgeschlossen.** 10 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 1, 2, 3, 6, 7, 8, 9). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
 
 Marken sind das juengste Swing-Tief und das juengste Swing-Hoch aus `tiefs_regel.py`, also dieselben wie im Tagesbericht. Geprueft wird nur, was der letzte Handelstag auf Stundenbasis damit gemacht hat.
 
@@ -21,27 +21,79 @@ Keine.
 
 Keine.
 
-## Tief angetestet (13)
+## Tief angetestet (65)
 
 Docht bis unter die Marke, kein Stundenschluss darunter.
 
 | Wert | Marke | Schluss | Abstand (ATR) | Stunden dahinter |
 |---|---|---|---|---|
+| NFLX | 62.48 | 62.52 | 0.018 | 0 |
 | MCK | 966.575 | 967.025 | 0.02 | 0 |
+| KHC | 24.06 | 24.075 | 0.023 | 0 |
 | CRM | 240.635 | 240.87 | 0.027 | 0 |
+| ACN | 234.855 | 235.14 | 0.028 | 0 |
 | META | 619.22 | 620.12 | 0.035 | 0 |
+| ADSK | 241.78 | 242.09 | 0.041 | 0 |
+| SCHW | 89.21 | 89.3 | 0.044 | 0 |
+| BKNG | 149.87 | 150.14 | 0.052 | 0 |
+| ADBE | 247.79 | 248.32 | 0.057 | 0 |
 | MDT | 93.755 | 93.93 | 0.071 | 0 |
+| MPC | 434.235 | 435.83 | 0.083 | 0 |
 | VLO | 385.695 | 387.34 | 0.083 | 0 |
+| TEAM | 218.43 | 219.305 | 0.099 | 0 |
+| PSX | 267.33 | 268.4 | 0.103 | 0 |
+| MNST | 45.3001 | 45.44 | 0.133 | 0 |
+| BA | 167.4101 | 168.16 | 0.139 | 0 |
+| CL | 91.89 | 92.187 | 0.148 | 0 |
+| CTSH | 65.77 | 66.21 | 0.151 | 0 |
+| ISRG | 443.8501 | 445.89 | 0.158 | 0 |
+| CCEP | 110.49 | 110.9 | 0.173 | 0 |
+| COST | 989.04 | 992.13 | 0.188 | 0 |
+| CMCSA | 21.71 | 21.84 | 0.189 | 0 |
+| KO | 90.81 | 91.18 | 0.214 | 0 |
+| MMM | 170.67 | 171.58 | 0.216 | 0 |
+| FAST | 51.225 | 51.57 | 0.222 | 0 |
 | WFC | 82.22 | 82.675 | 0.228 | 0 |
+| PG | 158.42 | 159.21 | 0.241 | 0 |
+| INTU | 325.15 | 328.41 | 0.242 | 0 |
 | AMT | 182.07 | 183.83 | 0.264 | 0 |
+| PGR | 223.825 | 225.52 | 0.282 | 0 |
+| SYK | 298.86 | 301.51 | 0.324 | 0 |
+| SPG | 211.14 | 212.29 | 0.328 | 0 |
 | WELL | 224.735 | 226.64 | 0.335 | 0 |
+| BMY | 60.92 | 61.58 | 0.34 | 0 |
+| CPRT | 28.595 | 28.92 | 0.367 | 0 |
+| MA | 605.81 | 609.95 | 0.383 | 0 |
+| ROST | 227.76 | 230.08 | 0.397 | 0 |
+| MRK | 139.8301 | 141.84 | 0.418 | 0 |
+| USB | 59.195 | 59.75 | 0.48 | 0 |
 | ABBV | 283.16 | 286.41 | 0.485 | 0 |
+| GEHC | 70.17 | 71.05 | 0.487 | 0 |
+| DTE.DE | 24.82 | 25.16 | 0.487 | 0 |
+| SO | 91.84 | 92.65 | 0.497 | 0 |
 | LOW | 195.61 | 198.22 | 0.503 | 0 |
 | PFE | 29.5105 | 29.8 | 0.517 | 0 |
+| DUK | 123.7 | 124.8 | 0.528 | 0 |
+| JNJ | 264.83 | 268.78 | 0.548 | 0 |
 | CB | 352.4256 | 356.26 | 0.568 | 0 |
+| LIN | 504.56 | 508.58 | 0.575 | 0 |
 | GLW | 121.765 | 126.4 | 0.589 | 0 |
+| V | 397.36 | 401.79 | 0.597 | 0 |
+| VNA.DE | 16.31 | 16.58 | 0.651 | 0 |
+| KDP | 34.28 | 34.845 | 0.724 | 0 |
+| EOAN.DE | 18.3 | 18.56 | 0.743 | 0 |
+| TD | 124.215 | 125.735 | 0.752 | 0 |
+| VOW3.DE | 67.2 | 68.76 | 0.803 | 0 |
+| VRTX | 509.205 | 521.11 | 0.808 | 0 |
+| GILD | 155.76 | 159.07 | 0.815 | 0 |
+| SY1.DE | 98.78 | 100.3 | 0.84 | 0 |
+| PAH3.DE | 24.24 | 24.87 | 0.941 | 0 |
+| HEI.DE | 145.2 | 148.7 | 1.004 | 0 |
+| BEI.DE | 79.14 | 80.96 | 1.104 | 0 |
+| CTAS | 209.0006 | 214.78 | 1.166 | 0 |
+| MRNA | 179.53 | 207.94 | 1.173 | 0 |
 
-## Swing-Hoch ueberwunden (63)
+## Swing-Hoch ueberwunden (62)
 
 | Wert | Hoch | Schluss | Abstand (ATR) | Stunden darueber |
 |---|---|---|---|---|
@@ -51,9 +103,9 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | LMT | 559.48 | 623.0 | 3.455 | 7 |
 | IBM | 224.51 | 250.24 | 3.401 | 7 |
 | SRT3.DE | 257.7 | 290.7 | 3.319 | 9 |
-| TM | 2944.5 | 3115.0 | 3.062 | 7 |
 | CSX | 49.22 | 52.255 | 2.945 | 7 |
 | WDAY | 185.82 | 205.46 | 2.915 | 7 |
+| TM | 2944.5 | 3105.0 | 2.913 | 2 |
 | BTI | 42.42 | 44.98 | 2.904 | 9 |
 | QIA.DE | 42.345 | 45.115 | 2.762 | 9 |
 | GSK | 17.91 | 19.19 | 2.162 | 9 |
@@ -76,6 +128,7 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | CSCO | 107.9 | 111.349 | 1.099 | 7 |
 | SBUX | 100.33 | 103.04 | 1.051 | 7 |
 | LULU | 100.67 | 104.62 | 0.993 | 7 |
+| SKHY | 1329000.0 | 1422000.0 | 0.931 | 2 |
 | CDNS | 331.5 | 343.18 | 0.908 | 7 |
 | TTE | 81.63 | 83.11 | 0.822 | 9 |
 | SNPS | 459.88 | 474.19 | 0.798 | 7 |
@@ -93,14 +146,12 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | ORCL | 128.33 | 130.56 | 0.328 | 7 |
 | EMR | 165.01 | 166.27 | 0.288 | 4 |
 | ON | 77.69 | 78.67 | 0.277 | 5 |
-| TMO | 694.33 | 699.855 | 0.263 | 3 |
 | RY | 202.42 | 203.1 | 0.244 | 6 |
 | DDOG | 277.26 | 280.86 | 0.227 | 5 |
 | BNY | 146.86 | 147.59 | 0.224 | 7 |
 | GS | 906.48 | 912.0 | 0.222 | 7 |
 | DBK.DE | 28.815 | 28.945 | 0.175 | 2 |
 | DHL.DE | 58.64 | 58.82 | 0.174 | 2 |
-| SKHY | 1329000.0 | 1346000.0 | 0.173 | 6 |
 | AXON | 422.81 | 425.69 | 0.162 | 6 |
 | AMD | 556.79 | 560.45 | 0.123 | 5 |
 | AVGO | 341.1 | 342.45 | 0.114 | 5 |

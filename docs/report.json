@@ -5,43 +5,43 @@
    "QCOM",
    "MSTR",
    "SPOT",
-   "NET",
-   "TSLA",
-   "GEHC",
-   "CTAS",
-   "TMO",
-   "DHR",
-   "SPGI",
+   "SONY",
+   "BIIB",
+   "ORLY",
+   "ABT",
+   "ISRG",
    "NEM",
-   "FAST",
+   "SCCO",
+   "TSLA",
    "CNQ",
-   "XOM",
-   "PM"
+   "DE",
+   "SPGI",
+   "TTE"
   ],
   "momentum": [
+   "CRWD",
    "DDOG",
    "ILMN",
+   "AMD",
+   "ABBV",
    "BIIB",
-   "FTNT",
-   "AMGN",
-   "CRWD",
    "DHL.DE",
-   "TRV",
-   "PM",
-   "XOM",
+   "BNS",
    "CNQ",
-   "DB1.DE",
-   "CTAS",
+   "PSX",
+   "COP",
+   "TRV",
+   "EMR",
    "KDP",
-   "MPC"
+   "PM"
   ],
   "value": [
    "MU",
    "SKHY",
    "SNDK",
    "NEM",
-   "REGN",
    "PBR",
+   "REGN",
    "CNQ",
    "DXCM",
    "RIO",
@@ -49,172 +49,157 @@
    "META",
    "BHP",
    "ROST",
-   "MNST",
-   "SPOT"
+   "SPOT",
+   "MNST"
   ]
  },
  "changes": {
   "turnaround": {
    "entries": [
     {
-     "ticker": "NET",
+     "ticker": "SONY",
      "rank": 4
     },
     {
-     "ticker": "GEHC",
-     "rank": 6
-    },
-    {
-     "ticker": "CTAS",
-     "rank": 7
-    },
-    {
-     "ticker": "DHR",
-     "rank": 9
-    },
-    {
-     "ticker": "SPGI",
-     "rank": 10
-    },
-    {
-     "ticker": "NEM",
-     "rank": 11
-    },
-    {
-     "ticker": "FAST",
-     "rank": 12
-    },
-    {
-     "ticker": "CNQ",
-     "rank": 13
-    },
-    {
-     "ticker": "XOM",
-     "rank": 14
-    },
-    {
-     "ticker": "PM",
-     "rank": 15
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "SONY",
-     "old_rank": 4
-    },
-    {
-     "ticker": "ISRG",
-     "old_rank": 5
-    },
-    {
-     "ticker": "VLO",
-     "old_rank": 6
-    },
-    {
-     "ticker": "ILMN",
-     "old_rank": 9
-    },
-    {
-     "ticker": "BEI.DE",
-     "old_rank": 10
-    },
-    {
-     "ticker": "DIS",
-     "old_rank": 11
-    },
-    {
-     "ticker": "SHW",
-     "old_rank": 12
-    },
-    {
-     "ticker": "EMR",
-     "old_rank": 13
-    },
-    {
-     "ticker": "MA",
-     "old_rank": 14
+     "ticker": "BIIB",
+     "rank": 5
     },
     {
      "ticker": "ORLY",
-     "old_rank": 15
-    }
-   ],
-   "moves": []
-  },
-  "momentum": {
-   "entries": [
-    {
-     "ticker": "PM",
-     "rank": 9
+     "rank": 6
     },
     {
-     "ticker": "XOM",
+     "ticker": "ABT",
+     "rank": 7
+    },
+    {
+     "ticker": "ISRG",
+     "rank": 8
+    },
+    {
+     "ticker": "SCCO",
      "rank": 10
     },
     {
-     "ticker": "CNQ",
-     "rank": 11
-    },
-    {
-     "ticker": "CTAS",
+     "ticker": "DE",
      "rank": 13
     },
     {
-     "ticker": "MPC",
+     "ticker": "TTE",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "SY1.DE",
-     "old_rank": 1
+     "ticker": "NET",
+     "old_rank": 4
     },
     {
-     "ticker": "VLO",
-     "old_rank": 5
+     "ticker": "GEHC",
+     "old_rank": 6
     },
     {
-     "ticker": "CVX",
+     "ticker": "CTAS",
+     "old_rank": 7
+    },
+    {
+     "ticker": "TMO",
      "old_rank": 8
     },
     {
-     "ticker": "COP",
-     "old_rank": 10
+     "ticker": "DHR",
+     "old_rank": 9
     },
     {
-     "ticker": "V",
-     "old_rank": 11
+     "ticker": "FAST",
+     "old_rank": 12
+    },
+    {
+     "ticker": "XOM",
+     "old_rank": 14
+    },
+    {
+     "ticker": "PM",
+     "old_rank": 15
     }
    ],
    "moves": [
     {
-     "ticker": "DHL.DE",
-     "rank": 7,
-     "delta": 6
+     "ticker": "TSLA",
+     "rank": 11,
+     "delta": -6
     }
    ]
   },
-  "value": {
+  "momentum": {
    "entries": [
     {
-     "ticker": "SKHY",
-     "rank": 2
+     "ticker": "AMD",
+     "rank": 4
     },
     {
-     "ticker": "SPOT",
-     "rank": 15
+     "ticker": "ABBV",
+     "rank": 5
+    },
+    {
+     "ticker": "BNS",
+     "rank": 8
+    },
+    {
+     "ticker": "PSX",
+     "rank": 10
+    },
+    {
+     "ticker": "COP",
+     "rank": 11
+    },
+    {
+     "ticker": "EMR",
+     "rank": 13
     }
    ],
    "exits": [
     {
-     "ticker": "NVDA",
-     "old_rank": 3
+     "ticker": "FTNT",
+     "old_rank": 4
     },
     {
-     "ticker": "VRTX",
-     "old_rank": 14
+     "ticker": "AMGN",
+     "old_rank": 5
+    },
+    {
+     "ticker": "XOM",
+     "old_rank": 10
+    },
+    {
+     "ticker": "DB1.DE",
+     "old_rank": 12
+    },
+    {
+     "ticker": "CTAS",
+     "old_rank": 13
+    },
+    {
+     "ticker": "MPC",
+     "old_rank": 15
     }
    ],
+   "moves": [
+    {
+     "ticker": "CRWD",
+     "rank": 1,
+     "delta": 5
+    },
+    {
+     "ticker": "PM",
+     "rank": 15,
+     "delta": -6
+    }
+   ]
+  },
+  "value": {
+   "entries": [],
+   "exits": [],
    "moves": []
   },
   "analyst_flips": []

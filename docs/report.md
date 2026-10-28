@@ -1,216 +1,64 @@
 # Boersen-Screening - 2026-10-28
 
-_Stand: Schlusskurse vom 2026-10-28, aber 203 Werte haengen zurueck - siehe Standwarnung. Erstellt 2026-10-28T11:10:31+00:00 UTC. 271 Werte ausgewertet._
+_Stand: Schlusskurse vom 2026-10-28, aber 51 Werte haengen zurueck - siehe Standwarnung. Erstellt 2026-10-28T23:02:04+00:00 UTC. 271 Werte ausgewertet._
 
-> **Standwarnung: 203 von 271 Werten haengen zurueck.** Neuester Handelstag im Bericht ist 2026-10-28.
+> **Standwarnung: 51 von 271 Werten haengen zurueck.** Neuester Handelstag im Bericht ist 2026-10-28.
 >
 > Ursache ist in aller Regel Yahoo: die vorlaeufige Tageskerze einer Boerse wird ueber Nacht durch die offizielle Abrechnung ersetzt, und solange die fehlt, faellt der Tag weg. Betroffen sind meist die europaeischen Notierungen. Fuer diese Werte gelten Kurs, ATR, RSI und Tiefs unten NICHT fuer den neuesten Handelstag.
 >
 > | Wert | letzte Kerze |
 > |---|---|
-> | AAPL | 2026-10-27 |
-> | ABBV | 2026-10-27 |
-> | ABNB | 2026-10-27 |
-> | ABT | 2026-10-27 |
-> | ACN | 2026-10-27 |
-> | ADBE | 2026-10-27 |
-> | ADI | 2026-10-27 |
-> | ADP | 2026-10-27 |
-> | ADSK | 2026-10-27 |
-> | AEP | 2026-10-27 |
-> | AMAT | 2026-10-27 |
-> | AMD | 2026-10-27 |
-> | AMGN | 2026-10-27 |
-> | AMT | 2026-10-27 |
-> | AMZN | 2026-10-27 |
-> | ANET | 2026-10-27 |
-> | APH | 2026-10-27 |
-> | APP | 2026-10-27 |
-> | ARM | 2026-10-27 |
-> | AVGO | 2026-10-27 |
-> | AXON | 2026-10-27 |
-> | AXP | 2026-10-27 |
-> | BA | 2026-10-27 |
-> | BAC | 2026-10-27 |
-> | BIIB | 2026-10-27 |
-> | BKNG | 2026-10-27 |
-> | BKR | 2026-10-27 |
-> | BLK | 2026-10-27 |
-> | BMO | 2026-10-27 |
-> | BMY | 2026-10-27 |
-> | BNS | 2026-10-27 |
-> | BNY | 2026-10-27 |
-> | BRK-B | 2026-10-27 |
-> | C | 2026-10-27 |
-> | CAT | 2026-10-27 |
-> | CB | 2026-10-27 |
-> | CCEP | 2026-10-27 |
-> | CDNS | 2026-10-27 |
-> | CDW | 2026-10-27 |
-> | CEG | 2026-10-27 |
-> | CHTR | 2026-10-27 |
-> | CL | 2026-10-27 |
-> | CM | 2026-10-27 |
-> | CMCSA | 2026-10-27 |
-> | CNQ | 2026-10-27 |
-> | COF | 2026-10-27 |
-> | COP | 2026-10-27 |
-> | COST | 2026-10-27 |
-> | CPRT | 2026-10-27 |
-> | CRM | 2026-10-27 |
-> | CRWD | 2026-10-27 |
-> | CSCO | 2026-10-27 |
-> | CSGP | 2026-10-27 |
-> | CSX | 2026-10-27 |
-> | CTAS | 2026-10-27 |
-> | CTSH | 2026-10-27 |
-> | CVS | 2026-10-27 |
-> | CVX | 2026-10-27 |
-> | DASH | 2026-10-27 |
-> | DDOG | 2026-10-27 |
-> | DE | 2026-10-27 |
-> | DELL | 2026-10-27 |
-> | DHR | 2026-10-27 |
-> | DIS | 2026-10-27 |
-> | DUK | 2026-10-27 |
-> | DXCM | 2026-10-27 |
-> | EMR | 2026-10-27 |
-> | ENB | 2026-10-27 |
-> | EQIX | 2026-10-27 |
-> | ETN | 2026-10-27 |
-> | EXC | 2026-10-27 |
-> | FANG | 2026-10-27 |
-> | FAST | 2026-10-27 |
-> | FDX | 2026-10-27 |
-> | FTNT | 2026-10-27 |
-> | GD | 2026-10-27 |
-> | GE | 2026-10-27 |
-> | GEHC | 2026-10-27 |
-> | GEV | 2026-10-27 |
-> | GFS | 2026-10-27 |
-> | GILD | 2026-10-27 |
-> | GLW | 2026-10-27 |
-> | GM | 2026-10-27 |
-> | GOOG | 2026-10-27 |
-> | GOOGL | 2026-10-27 |
-> | GS | 2026-10-27 |
-> | HD | 2026-10-27 |
-> | HON | 2026-10-27 |
-> | IBM | 2026-10-27 |
-> | IDXX | 2026-10-27 |
-> | ILMN | 2026-10-27 |
-> | INTC | 2026-10-27 |
-> | INTU | 2026-10-27 |
-> | ISRG | 2026-10-27 |
-> | JNJ | 2026-10-27 |
-> | JPM | 2026-10-27 |
-> | KDP | 2026-10-27 |
-> | KHC | 2026-10-27 |
-> | KLAC | 2026-10-27 |
-> | KO | 2026-10-27 |
-> | LIN | 2026-10-27 |
-> | LLY | 2026-10-27 |
-> | LMT | 2026-10-27 |
-> | LOW | 2026-10-27 |
-> | LRCX | 2026-10-27 |
-> | LULU | 2026-10-27 |
-> | MA | 2026-10-27 |
-> | MAR | 2026-10-27 |
-> | MCD | 2026-10-27 |
-> | MCHP | 2026-10-27 |
-> | MCK | 2026-10-27 |
-> | MDB | 2026-10-27 |
-> | MDLZ | 2026-10-27 |
-> | MDT | 2026-10-27 |
-> | MELI | 2026-10-27 |
-> | META | 2026-10-27 |
-> | MMM | 2026-10-27 |
-> | MNST | 2026-10-27 |
-> | MO | 2026-10-27 |
-> | MPC | 2026-10-27 |
-> | MRK | 2026-10-27 |
-> | MRNA | 2026-10-27 |
-> | MRVL | 2026-10-27 |
-> | MS | 2026-10-27 |
-> | MSFT | 2026-10-27 |
-> | MSTR | 2026-10-27 |
-> | MU | 2026-10-27 |
-> | NEE | 2026-10-27 |
-> | NEM | 2026-10-27 |
-> | NET | 2026-10-27 |
-> | NFLX | 2026-10-27 |
-> | NKE | 2026-10-27 |
-> | NOW | 2026-10-27 |
-> | NVDA | 2026-10-27 |
-> | NXPI | 2026-10-27 |
-> | ODFL | 2026-10-27 |
-> | ON | 2026-10-27 |
-> | ORCL | 2026-10-27 |
-> | ORLY | 2026-10-27 |
-> | PANW | 2026-10-27 |
-> | PAYX | 2026-10-27 |
-> | PBR | 2026-10-27 |
-> | PCAR | 2026-10-27 |
-> | PDD | 2026-10-27 |
-> | PEP | 2026-10-27 |
-> | PFE | 2026-10-27 |
-> | PG | 2026-10-27 |
-> | PGR | 2026-10-27 |
-> | PH | 2026-10-27 |
-> | PLD | 2026-10-27 |
-> | PLTR | 2026-10-27 |
-> | PM | 2026-10-27 |
-> | PSX | 2026-10-27 |
-> | PYPL | 2026-10-27 |
-> | QCOM | 2026-10-27 |
-> | REGN | 2026-10-27 |
-> | ROP | 2026-10-27 |
-> | ROST | 2026-10-27 |
-> | RTX | 2026-10-27 |
-> | RY | 2026-10-27 |
-> | SBUX | 2026-10-27 |
-> | SCCO | 2026-10-27 |
-> | SCHW | 2026-10-27 |
-> | SHOP | 2026-10-27 |
-> | SHW | 2026-10-27 |
-> | SNDK | 2026-10-27 |
-> | SNOW | 2026-10-27 |
-> | SNPS | 2026-10-27 |
-> | SO | 2026-10-27 |
-> | SPG | 2026-10-27 |
-> | SPGI | 2026-10-27 |
-> | SPOT | 2026-10-27 |
-> | STX | 2026-10-27 |
-> | SYK | 2026-10-27 |
-> | T | 2026-10-27 |
-> | TD | 2026-10-27 |
-> | TEAM | 2026-10-27 |
-> | TJX | 2026-10-27 |
-> | TMO | 2026-10-27 |
-> | TMUS | 2026-10-27 |
-> | TRV | 2026-10-27 |
-> | TSLA | 2026-10-27 |
-> | TTD | 2026-10-27 |
-> | TTWO | 2026-10-27 |
-> | TXN | 2026-10-27 |
-> | UBER | 2026-10-27 |
-> | UNH | 2026-10-27 |
-> | UNP | 2026-10-27 |
-> | UPS | 2026-10-27 |
-> | USB | 2026-10-27 |
-> | V | 2026-10-27 |
-> | VLO | 2026-10-27 |
-> | VRSK | 2026-10-27 |
-> | VRTX | 2026-10-27 |
-> | VZ | 2026-10-27 |
-> | WDAY | 2026-10-27 |
-> | WDC | 2026-10-27 |
-> | WELL | 2026-10-27 |
-> | WFC | 2026-10-27 |
-> | WMT | 2026-10-27 |
-> | XEL | 2026-10-27 |
-> | XOM | 2026-10-27 |
-> | ZS | 2026-10-27 |
+> | ADS.DE | 2026-10-27 |
+> | AIR.DE | 2026-10-27 |
+> | ALV.DE | 2026-10-27 |
+> | ASML | 2026-10-27 |
+> | BAS.DE | 2026-10-27 |
+> | BAYN.DE | 2026-10-27 |
+> | BBVA | 2026-10-27 |
+> | BEI.DE | 2026-10-27 |
+> | BMW.DE | 2026-10-27 |
+> | BNR.DE | 2026-10-27 |
+> | CBK.DE | 2026-10-27 |
+> | CON.DE | 2026-10-27 |
+> | DB1.DE | 2026-10-27 |
+> | DBK.DE | 2026-10-27 |
+> | DHL.DE | 2026-10-27 |
+> | DTE.DE | 2026-10-27 |
+> | DTG.DE | 2026-10-27 |
+> | ENR.DE | 2026-10-27 |
+> | EOAN.DE | 2026-10-27 |
+> | EQNR | 2026-10-27 |
+> | FRE.DE | 2026-10-27 |
+> | HDB | 2026-10-27 |
+> | HEI.DE | 2026-10-27 |
+> | HEN3.DE | 2026-10-27 |
+> | HNR1.DE | 2026-10-27 |
+> | IBN | 2026-10-27 |
+> | IFX.DE | 2026-10-27 |
+> | ING | 2026-10-27 |
+> | MBG.DE | 2026-10-27 |
+> | MRK.DE | 2026-10-27 |
+> | MTX.DE | 2026-10-27 |
+> | MUV2.DE | 2026-10-27 |
+> | NVO | 2026-10-27 |
+> | NVS | 2026-10-27 |
+> | P911.DE | 2026-10-27 |
+> | PAH3.DE | 2026-10-27 |
+> | QIA.DE | 2026-10-27 |
+> | RHM.DE | 2026-10-27 |
+> | RWE.DE | 2026-10-27 |
+> | SAN | 2026-10-27 |
+> | SAP.DE | 2026-10-27 |
+> | SHL.DE | 2026-10-27 |
+> | SIE.DE | 2026-10-27 |
+> | SNY | 2026-10-27 |
+> | SRT3.DE | 2026-10-27 |
+> | SY1.DE | 2026-10-27 |
+> | TTE | 2026-10-27 |
+> | UBS | 2026-10-27 |
+> | VNA.DE | 2026-10-27 |
+> | VOW3.DE | 2026-10-27 |
+> | ZAL.DE | 2026-10-27 |
 
 ## 📖 Glossar (was die Spalten bedeuten)
 
@@ -227,26 +75,26 @@ _Ueber alle 271 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 
 | Rang | Ticker | ISIN | Name | Index | Kurs | Abstand ATH (Info) | Kaufen-Anteil Analysten | Kursziel | RSI Tag | RSI Woche | RSI Stunde | Letztes Rating |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | MU | US5951121038 | Micron Technology, Inc. | NASDAQ | 928.76 | -23% | 100% (14 Banken, ≤120T) | 1550.00 (67% ueber Kurs) | 46 | 54 | 64 | 2026-10-22 Rosenblatt: Rating bestaetigt: Buy |
-| 2 | MSTR | US66538H1041 | Strategy Inc | NASDAQ | 141.40 | -70% | 100% (11 Banken, ≤120T) | 215.00 (52% ueber Kurs) | 47 | 51 | 44 | 2026-10-16 Cantor Fitzgerald: Rating bestaetigt: Overweight |
-| 3 | LRCX | - | Lam Research Corporation | NASDAQ | 240.85 | -44% | 100% (12 Banken, ≤120T) | 352.50 (46% ueber Kurs) | 31 | 41 | 48 | 2026-10-22 UBS: Rating bestaetigt: Buy |
+| 1 | MU | US5951121038 | Micron Technology, Inc. | NASDAQ | 983.23 | -19% | 100% (14 Banken, ≤120T) | 1550.00 (58% ueber Kurs) | 53 | 57 | 76 | 2026-10-22 Rosenblatt: Rating bestaetigt: Buy |
+| 2 | MSTR | US66538H1041 | Strategy Inc | NASDAQ | 145.16 | -69% | 100% (11 Banken, ≤120T) | 215.00 (48% ueber Kurs) | 50 | 52 | 60 | 2026-10-16 Cantor Fitzgerald: Rating bestaetigt: Overweight |
+| 3 | NVDA | - | NVIDIA Corporation | NASDAQ/DOW | 215.38 | -10% | 100% (21 Banken, ≤120T) | 315.00 (46% ueber Kurs) | 44 | 52 | 45 | 2026-10-22 Needham: Rating bestaetigt: Buy |
 | 4 | SKHY | AR0272347318 | SK hynix Inc. | Watchlist | 1487000.00 | -49% | 100% (10 Banken, ≤120T) | 2167911.31 (46% ueber Kurs) | 50 | 47 | 75 | 2026-10-26 Cantor Fitzgerald: Rating bestaetigt: Overweight |
-| 5 | NVDA | - | NVIDIA Corporation | NASDAQ/DOW | 217.94 | -9% | 100% (21 Banken, ≤120T) | 315.00 (44% ueber Kurs) | 46 | 53 | 58 | 2026-10-22 Needham: Rating bestaetigt: Buy |
-| 6 | TTWO | - | Take-Two Interactive Software, | NASDAQ | 201.28 | -23% | 100% (9 Banken, ≤120T) | 290.00 (44% ueber Kurs) | 42 | 40 | 38 | 2026-10-27 B of A Securities: Rating bestaetigt: Buy |
-| 7 | ASML | USN070592100 | ASML Holding N.V. - New York Re | NASDAQ | 1486.40 | -13% | 100% (4 Banken, ≤120T) | 2054.50 (38% ueber Kurs) | 48 | 52 | 73 | 2026-10-15 JP Morgan: Rating bestaetigt: Overweight |
-| 8 | ANET | US0404132054 | Arista Networks, Inc. | Watchlist | 187.00 | -14% | 100% (15 Banken, ≤120T) | 248.00 (33% ueber Kurs) | 46 | 53 | 65 | 2026-10-19 TD Cowen: Rating bestaetigt: Buy |
-| 9 | IBN | - | ICICI Bank Limited | Watchlist | 1377.60 | -6% | 100% (4 Banken, ≤120T) | 1796.88 (30% ueber Kurs) | 52 | 52 | 44 | keine in 30T |
-| 10 | ETN | - | Eaton Corporation, PLC | Watchlist | 384.20 | -16% | 100% (7 Banken, ≤120T) | 492.50 (28% ueber Kurs) | 41 | 45 | 60 | 2026-10-14 RBC Capital: Rating bestaetigt: Outperform |
-| 11 | CVS | US1266501006 | CVS Health Corporation | SP100 | 91.13 | -16% | 100% (10 Banken, ≤120T) | 113.00 (24% ueber Kurs) | 52 | 50 | 28 | 2026-10-12 Leerink Partners: Rating bestaetigt: Outperform |
-| 12 | TM | - | Toyota Motor Corporation | Watchlist | 3051.00 | -20% | 100% (4 Banken, ≤120T) | 3682.55 (21% ueber Kurs) | 54 | 53 | 32 | keine in 30T |
-| 13 | BLK | US09290D1019 | BlackRock, Inc. | SP100 | 1136.05 | -4% | 100% (10 Banken, ≤120T) | 1350.00 (19% ueber Kurs) | 60 | 57 | 55 | 2026-10-20 TD Cowen: hochgestuft auf Buy |
-| 14 | DIS | - | Walt Disney Company (The) | DOW | 110.23 | -44% | 100% (11 Banken, ≤120T) | 127.50 (16% ueber Kurs) | 57 | 57 | 44 | 2026-10-16 Citigroup: Rating bestaetigt: Buy |
-| 15 | AMZN | - | Amazon.com, Inc. | NASDAQ/DOW | 253.10 | -11% | 95% (22 Banken, ≤120T) | 330.00 (30% ueber Kurs) | 49 | 51 | 53 | 2026-10-26 UBS: Rating bestaetigt: Buy |
-| 16 | UBER | US90353T1007 | Uber Technologies, Inc. | SP100 | 65.78 | -34% | 94% (18 Banken, ≤120T) | 100.50 (53% ueber Kurs) | 36 | 39 | 29 | 2026-10-16 Guggenheim: Rating bestaetigt: Buy |
-| 17 | DXCM | US2521311074 | DexCom, Inc. | NASDAQ | 78.56 | -52% | 93% (14 Banken, ≤120T) | 95.00 (21% ueber Kurs) | 34 | 49 | 42 | 2026-10-12 BTIG: Rating bestaetigt: Buy |
-| 18 | FRE.DE | - | Fresenius SE & Co. KGaA | DAX | 45.99 | -31% | 93% (14 Banken, ≤120T) | 55.60 (21% ueber Kurs) | 58 | 56 | 47 | keine in 30T |
-| 19 | ABT | US0028241000 | Abbott Laboratories | SP100 | 103.10 | -24% | 93% (14 Banken, ≤120T) | 120.00 (16% ueber Kurs) | 52 | 51 | 48 | 2026-10-27 Argus Research: abgestuft auf Hold |
-| 20 | STX | - | Seagate Technology Holdings PLC | Watchlist | 667.85 | -39% | 92% (12 Banken, ≤120T) | 1065.00 (60% ueber Kurs) | 38 | 45 | 52 | 2026-10-27 Rosenblatt: Rating bestaetigt: Buy |
+| 5 | ASML | USN070592100 | ASML Holding N.V. - New York Re | NASDAQ | 1470.00 | -14% | 100% (4 Banken, ≤120T) | 2054.50 (40% ueber Kurs) | 46 | 52 | 69 | 2026-10-15 JP Morgan: Rating bestaetigt: Overweight |
+| 6 | LRCX | - | Lam Research Corporation | NASDAQ | 253.82 | -41% | 100% (12 Banken, ≤120T) | 352.50 (39% ueber Kurs) | 38 | 44 | 67 | 2026-10-22 UBS: Rating bestaetigt: Buy |
+| 7 | ANET | US0404132054 | Arista Networks, Inc. | Watchlist | 186.72 | -14% | 100% (15 Banken, ≤120T) | 248.00 (33% ueber Kurs) | 46 | 53 | 61 | 2026-10-19 TD Cowen: Rating bestaetigt: Buy |
+| 8 | IBN | - | ICICI Bank Limited | Watchlist | 1386.90 | -5% | 100% (4 Banken, ≤120T) | 1796.88 (30% ueber Kurs) | 54 | 54 | 44 | keine in 30T |
+| 9 | CVS | US1266501006 | CVS Health Corporation | SP100 | 89.95 | -18% | 100% (10 Banken, ≤120T) | 113.00 (26% ueber Kurs) | 48 | 49 | 24 | 2026-10-12 Leerink Partners: Rating bestaetigt: Outperform |
+| 10 | ETN | - | Eaton Corporation, PLC | Watchlist | 392.88 | -15% | 100% (7 Banken, ≤120T) | 492.50 (25% ueber Kurs) | 45 | 47 | 68 | 2026-10-14 RBC Capital: Rating bestaetigt: Outperform |
+| 11 | TM | - | Toyota Motor Corporation | Watchlist | 3051.00 | -20% | 100% (4 Banken, ≤120T) | 3682.55 (21% ueber Kurs) | 54 | 53 | 32 | keine in 30T |
+| 12 | DIS | - | Walt Disney Company (The) | DOW | 109.04 | -44% | 100% (11 Banken, ≤120T) | 127.50 (17% ueber Kurs) | 52 | 55 | 37 | 2026-10-16 Citigroup: Rating bestaetigt: Buy |
+| 13 | BLK | US09290D1019 | BlackRock, Inc. | SP100 | 1157.88 | -2% | 100% (10 Banken, ≤120T) | 1350.00 (17% ueber Kurs) | 64 | 60 | 70 | 2026-10-20 TD Cowen: hochgestuft auf Buy |
+| 14 | AMZN | - | Amazon.com, Inc. | NASDAQ/DOW | 254.60 | -10% | 95% (22 Banken, ≤120T) | 330.00 (30% ueber Kurs) | 50 | 52 | 59 | 2026-10-26 UBS: Rating bestaetigt: Buy |
+| 15 | UBER | US90353T1007 | Uber Technologies, Inc. | SP100 | 65.27 | -35% | 94% (18 Banken, ≤120T) | 100.50 (54% ueber Kurs) | 35 | 38 | 35 | 2026-10-16 Guggenheim: Rating bestaetigt: Buy |
+| 16 | DXCM | US2521311074 | DexCom, Inc. | NASDAQ | 78.62 | -52% | 93% (14 Banken, ≤120T) | 95.00 (21% ueber Kurs) | 34 | 49 | 43 | 2026-10-12 BTIG: Rating bestaetigt: Buy |
+| 17 | FRE.DE | - | Fresenius SE & Co. KGaA | DAX | 46.26 | -30% | 93% (14 Banken, ≤120T) | 55.60 (20% ueber Kurs) | 61 | 57 | 52 | keine in 30T |
+| 18 | ABT | US0028241000 | Abbott Laboratories | SP100 | 102.64 | -24% | 93% (14 Banken, ≤120T) | 120.00 (17% ueber Kurs) | 51 | 51 | 44 | 2026-10-27 Argus Research: abgestuft auf Hold |
+| 19 | STX | - | Seagate Technology Holdings PLC | Watchlist | 697.97 | -36% | 92% (12 Banken, ≤120T) | 1065.00 (53% ueber Kurs) | 43 | 47 | 60 | 2026-10-27 Rosenblatt: Rating bestaetigt: Buy |
+| 20 | COF | - | Capital One Financial Corporati | SP100 | 204.88 | -20% | 92% (13 Banken, ≤120T) | 251.00 (22% ueber Kurs) | 55 | 51 | 58 | 2026-10-21 Citigroup: Rating bestaetigt: Buy |
 
 
 ## 🧭 Analysten-Einstufungen (Filtertreffer, letzte 30 Tage)
@@ -279,6 +127,13 @@ _Ueber alle 271 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 - 2026-10-15: UBS – Bestaetigung (Buy → Buy)
 - 2026-10-15: Morgan Stanley – Bestaetigung (Overweight → Overweight)
 - 2026-10-15: JP Morgan – Bestaetigung (Overweight → Overweight)
+
+**COF** (Capital One Financial Corporati, SP100)
+- 2026-10-21: Citigroup – Bestaetigung (Buy → Buy)
+- 2026-10-21: BMO Capital – Bestaetigung (Market Perform → Market Perform)
+- 2026-10-21: JP Morgan – Bestaetigung (Overweight → Overweight)
+- 2026-10-21: Piper Sandler – Bestaetigung (Overweight → Overweight)
+- 2026-10-21: TD Cowen – Bestaetigung (Buy → Buy)
 
 **CVS** (CVS Health Corporation, SP100)
 - 2026-10-12: Leerink Partners – Bestaetigung (Outperform → Outperform)
@@ -340,10 +195,6 @@ _Ueber alle 271 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 
 **TM** (Toyota Motor Corporation, Watchlist)
 - keine Ratingaenderung in den letzten 30 Tagen
-
-**TTWO** (Take-Two Interactive Software,, NASDAQ)
-- 2026-10-27: B of A Securities – Bestaetigung (Buy → Buy)
-- 2026-10-26: Freedom Capital Markets – Bestaetigung (Buy → Buy)
 
 **UBER** (Uber Technologies, Inc., SP100)
 - 2026-10-16: Guggenheim – Bestaetigung (Buy → Buy)

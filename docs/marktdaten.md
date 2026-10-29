@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-10-29 01:49 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.113._
+_Erstellt 2026-10-29 11:24 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.113._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -44,17 +44,19 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | PLD (PLD) | 125.22 | - | - | ja | 36.87 |
 | SPCX (SPCX) | 145.23 | - | - | ja | 45.1 |
 | TM (TM) | 3051.0 | - | ja | ja | 52.62 |
-| SAN (SAN) | 10.628 | - | - | ja | 27.33 |
+| SAN (SAN) | 10.638 | - | - | ja | 27.42 |
 | NVO (NVO) | 255.0 | - | - | ja | 42.1 |
 | SONY (SONY) | 3957.0 | - | - | ja | 54.85 |
-| UL (UL) | 47.965 | - | - | ja | 51.03 |
-| GSK (GSK) | 18.225 | - | - | ja | 46.12 |
-| DHL.DE (DHL.DE) | 57.76 | - | - | ja | 54.26 |
-| RHM.DE (RHM.DE) | 1009.8 | - | - | ja | 49.57 |
-| SAP.DE (SAP.DE) | 211.6 | - | - | ja | 69.85 |
-| SY1.DE (SY1.DE) | 90.24 | - | - | ja | 36.22 |
-| ZAL.DE (ZAL.DE) | 26.01 | - | - | ja | 63.02 |
+| PBR (PBR) | 59.03 | - | - | ja | 46.86 |
+| UL (UL) | 47.92 | - | - | ja | 50.72 |
+| GSK (GSK) | 18.315 | - | - | ja | 47.23 |
+| RHM.DE (RHM.DE) | 1012.0 | - | - | ja | 49.99 |
+| SAP.DE (SAP.DE) | 211.2 | - | - | ja | 69.09 |
+| SY1.DE (SY1.DE) | 89.8 | - | - | ja | 35.51 |
+| ZAL.DE (ZAL.DE) | 26.09 | - | - | ja | 63.88 |
+| Silber (SI=F) | 53.457 | - | - | ja | 31.17 |
 | Palladium (PA=F) | 1014.0 | - | - | ja | 30.0 |
+| Weizen (ZW=F) | 599.0 | - | - | ja | 21.27 |
 | EUR/USD (EURUSD=X) | 1.113 | - | - | ja | 26.2 |
 | EUR/GBP (EURGBP=X) | 0.8361 | - | ja | ja | 21.97 |
 | EUR/NOK (EURNOK=X) | 10.3857 | ja | - | - | 12.32 |

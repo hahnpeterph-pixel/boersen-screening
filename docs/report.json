@@ -5,14 +5,14 @@
    "QCOM",
    "MSTR",
    "SPOT",
+   "TM",
    "MRVL",
    "BIIB",
-   "TM",
    "ORLY",
-   "BP",
    "ABT",
    "REGN",
    "NEM",
+   "BP",
    "FAST",
    "SCCO",
    "TSLA",
@@ -24,7 +24,7 @@
    "ILMN",
    "AMD",
    "ABBV",
-   "BIIB",
+   "MRK.DE",
    "DHL.DE",
    "BNS",
    "CNQ",
@@ -44,8 +44,8 @@
    "PBR",
    "CNQ",
    "DXCM",
-   "ABNB",
    "RIO",
+   "ABNB",
    "META",
    "BHP",
    "ROST",
@@ -55,55 +55,23 @@
  },
  "changes": {
   "turnaround": {
+   "entries": [],
+   "exits": [],
+   "moves": []
+  },
+  "momentum": {
    "entries": [
     {
-     "ticker": "MRVL",
-     "rank": 4
-    },
-    {
-     "ticker": "TM",
+     "ticker": "MRK.DE",
      "rank": 6
-    },
-    {
-     "ticker": "BP",
-     "rank": 8
-    },
-    {
-     "ticker": "REGN",
-     "rank": 10
-    },
-    {
-     "ticker": "FAST",
-     "rank": 12
     }
    ],
    "exits": [
     {
-     "ticker": "SONY",
-     "old_rank": 4
-    },
-    {
-     "ticker": "ISRG",
-     "old_rank": 8
-    },
-    {
-     "ticker": "DE",
-     "old_rank": 13
-    },
-    {
-     "ticker": "SPGI",
-     "old_rank": 14
-    },
-    {
-     "ticker": "TTE",
-     "old_rank": 15
+     "ticker": "BIIB",
+     "old_rank": 6
     }
    ],
-   "moves": []
-  },
-  "momentum": {
-   "entries": [],
-   "exits": [],
    "moves": []
   },
   "value": {

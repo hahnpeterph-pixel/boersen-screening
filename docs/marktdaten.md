@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-10-28 23:02 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1156._
+_Erstellt 2026-10-29 01:49 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.113._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -25,7 +25,7 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | META (META) | 612.49 | - | - | ja | 30.66 |
 | NVDA (NVDA) | 215.38 | - | ja | ja | 43.87 |
 | ODFL (ODFL) | 173.32 | - | ja | ja | 37.13 |
-| PDD (PDD) | 77.465 | - | ja | ja | 40.81 |
+| PDD (PDD) | 77.47 | - | ja | ja | 40.82 |
 | TTWO (TTWO) | 195.29 | - | - | ja | 35.88 |
 | XEL (XEL) | 77.18 | - | ja | ja | 59.35 |
 | BRK-B (BRK-B) | 540.34 | - | - | ja | 65.32 |
@@ -47,16 +47,22 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | SAN (SAN) | 10.628 | - | - | ja | 27.33 |
 | NVO (NVO) | 255.0 | - | - | ja | 42.1 |
 | SONY (SONY) | 3957.0 | - | - | ja | 54.85 |
-| PBR (PBR) | 59.03 | - | - | ja | 46.86 |
-| UL (UL) | 47.92 | - | - | ja | 50.72 |
-| GSK (GSK) | 18.315 | - | - | ja | 47.23 |
+| UL (UL) | 47.965 | - | - | ja | 51.03 |
+| GSK (GSK) | 18.225 | - | - | ja | 46.12 |
 | DHL.DE (DHL.DE) | 57.76 | - | - | ja | 54.26 |
 | RHM.DE (RHM.DE) | 1009.8 | - | - | ja | 49.57 |
 | SAP.DE (SAP.DE) | 211.6 | - | - | ja | 69.85 |
 | SY1.DE (SY1.DE) | 90.24 | - | - | ja | 36.22 |
 | ZAL.DE (ZAL.DE) | 26.01 | - | - | ja | 63.02 |
-| Palladium (PA=F) | 1014.5 | - | - | ja | 30.02 |
-| Weizen (ZW=F) | 599.5 | - | - | ja | 21.36 |
+| Palladium (PA=F) | 1014.0 | - | - | ja | 30.0 |
+| EUR/USD (EURUSD=X) | 1.113 | - | - | ja | 26.2 |
+| EUR/GBP (EURGBP=X) | 0.8361 | - | ja | ja | 21.97 |
+| EUR/NOK (EURNOK=X) | 10.3857 | ja | - | - | 12.32 |
+| EUR/HKD (EURHKD=X) | 8.7262 | - | - | ja | 26.59 |
+| EUR/TWD (EURTWD=X) | 36.0792 | - | - | ja | 48.39 |
+| EUR/AUD (EURAUD=X) | 1.5826 | - | - | ja | 29.24 |
+| EUR/INR (EURINR=X) | 105.761 | - | - | ja | 39.52 |
+| EUR/KRW (EURKRW=X) | 1474.64 | - | ja | ja | 28.1 |
 
 ---
 

@@ -1,4 +1,4 @@
-# Boden-Screening 2026-10-28 (Stand 2026-10-28 23:05 UTC)
+# Boden-Screening 2026-10-28 (Stand 2026-10-29 01:55 UTC)
 
 Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RSI < 50 + mind. 2 Boden-Punkte (nur Technik). Die Filter (Analysten, Anker, CRV 2:1) stehen in docs/heute.csv. Boden-Anker = niedrigster Puffer mit 60 % Halterate fuer diese Gruppe und diesen Wert (Vollauf), KO-Marke = Bezugstief - Anker x ATR.
 
@@ -6,14 +6,14 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 
 | Wert | Tief | RSI | Anker | KO-Marke | Analysten |
 |---|---|---|---|---|---|
-| STX | 4 | 43 | - | - | 92 % |
-| HSBC | 6 | 28 | 3.50 | 11.51 | 33 % |
+| STX | 4 | 43 | - | - | 85 % |
+| HSBC | 6 | 27 | 3.50 | 11.51 | 67 % |
 | LRCX | 2 | 38 | 3.00 | 180.60 | 100 % |
 | PH | 3 | 41 | 2.50 | 808.75 | 82 % |
 | SKHY | 6 | 49 | 2.75 | 882053.57 | 100 % |
 | VOW3.DE | 5 | 45 | 2.75 | 62.12 | 67 % |
 
-## Weitere Pruefttage (88)
+## Weitere Pruefttage (91)
 
 | Wert | Punkte | Grund |
 |---|---|---|
@@ -51,6 +51,7 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | MDB | 1 | 1 P, RSI >= 50 |
 | MDT | 1 | 1 P, Tief 1, RSI >= 50 |
 | MMM | 1 | 1 P, RSI >= 50 |
+| MSFT | 1 | 1 P, Tief 1, RSI >= 50 |
 | MSTR | 1 | 1 P |
 | NFLX | 1 | 1 P, Umkehr a |
 | QIA.DE | 1 | 1 P, Tief 1, RSI >= 50 |
@@ -59,6 +60,7 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | RY | 1 | 1 P, Tief 1, RSI >= 50 |
 | SHEL | 1 | 1 P, Tief 1, RSI >= 50 |
 | SHL.DE | 1 | 1 P, Tief 1, RSI >= 50 |
+| SPG | 1 | 1 P, Tief 1, RSI >= 50 |
 | TMUS | 1 | 1 P |
 | UNH | 1 | 1 P, Tief 1, RSI >= 50 |
 | V | 1 | 1 P, Tief 1, RSI >= 50 |
@@ -93,6 +95,7 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | NXPI | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
 | ORLY | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
 | PAYX | 0 | 0 P, Umkehr a |
+| PBR | 0 | 0 P, Umkehr a |
 | PEP | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
 | PG | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
 | PM | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |

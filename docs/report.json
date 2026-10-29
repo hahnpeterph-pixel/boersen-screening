@@ -1,22 +1,22 @@
 {
- "date": "2026-10-28",
+ "date": "2026-10-29",
  "ranks": {
   "turnaround": [
    "QCOM",
    "MSTR",
    "SPOT",
-   "SONY",
+   "MRVL",
    "BIIB",
+   "TM",
    "ORLY",
+   "BP",
    "ABT",
-   "ISRG",
+   "REGN",
    "NEM",
+   "FAST",
    "SCCO",
    "TSLA",
-   "CNQ",
-   "DE",
-   "SPGI",
-   "TTE"
+   "CNQ"
   ],
   "momentum": [
    "CRWD",
@@ -40,12 +40,12 @@
    "SKHY",
    "SNDK",
    "NEM",
-   "PBR",
    "REGN",
+   "PBR",
    "CNQ",
    "DXCM",
-   "RIO",
    "ABNB",
+   "RIO",
    "META",
    "BHP",
    "ROST",
@@ -57,145 +57,54 @@
   "turnaround": {
    "entries": [
     {
-     "ticker": "SONY",
+     "ticker": "MRVL",
      "rank": 4
     },
     {
-     "ticker": "BIIB",
-     "rank": 5
-    },
-    {
-     "ticker": "ORLY",
+     "ticker": "TM",
      "rank": 6
     },
     {
-     "ticker": "ABT",
-     "rank": 7
-    },
-    {
-     "ticker": "ISRG",
+     "ticker": "BP",
      "rank": 8
     },
     {
-     "ticker": "SCCO",
+     "ticker": "REGN",
      "rank": 10
-    },
-    {
-     "ticker": "DE",
-     "rank": 13
-    },
-    {
-     "ticker": "TTE",
-     "rank": 15
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "NET",
-     "old_rank": 4
-    },
-    {
-     "ticker": "GEHC",
-     "old_rank": 6
-    },
-    {
-     "ticker": "CTAS",
-     "old_rank": 7
-    },
-    {
-     "ticker": "TMO",
-     "old_rank": 8
-    },
-    {
-     "ticker": "DHR",
-     "old_rank": 9
     },
     {
      "ticker": "FAST",
-     "old_rank": 12
-    },
-    {
-     "ticker": "XOM",
-     "old_rank": 14
-    },
-    {
-     "ticker": "PM",
-     "old_rank": 15
-    }
-   ],
-   "moves": [
-    {
-     "ticker": "TSLA",
-     "rank": 11,
-     "delta": -6
-    }
-   ]
-  },
-  "momentum": {
-   "entries": [
-    {
-     "ticker": "AMD",
-     "rank": 4
-    },
-    {
-     "ticker": "ABBV",
-     "rank": 5
-    },
-    {
-     "ticker": "BNS",
-     "rank": 8
-    },
-    {
-     "ticker": "PSX",
-     "rank": 10
-    },
-    {
-     "ticker": "COP",
-     "rank": 11
-    },
-    {
-     "ticker": "EMR",
-     "rank": 13
+     "rank": 12
     }
    ],
    "exits": [
     {
-     "ticker": "FTNT",
+     "ticker": "SONY",
      "old_rank": 4
     },
     {
-     "ticker": "AMGN",
-     "old_rank": 5
+     "ticker": "ISRG",
+     "old_rank": 8
     },
     {
-     "ticker": "XOM",
-     "old_rank": 10
-    },
-    {
-     "ticker": "DB1.DE",
-     "old_rank": 12
-    },
-    {
-     "ticker": "CTAS",
+     "ticker": "DE",
      "old_rank": 13
     },
     {
-     "ticker": "MPC",
+     "ticker": "SPGI",
+     "old_rank": 14
+    },
+    {
+     "ticker": "TTE",
      "old_rank": 15
     }
    ],
-   "moves": [
-    {
-     "ticker": "CRWD",
-     "rank": 1,
-     "delta": 5
-    },
-    {
-     "ticker": "PM",
-     "rank": 15,
-     "delta": -6
-    }
-   ]
+   "moves": []
+  },
+  "momentum": {
+   "entries": [],
+   "exits": [],
+   "moves": []
   },
   "value": {
    "entries": [],

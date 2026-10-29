@@ -2,77 +2,192 @@
  "date": "2026-10-29",
  "ranks": {
   "turnaround": [
-   "QCOM",
    "MSTR",
-   "SPOT",
    "TM",
-   "MRVL",
-   "BIIB",
-   "ORLY",
+   "PANW",
+   "QCOM",
+   "TSLA",
+   "NEM",
+   "BEI.DE",
    "ABT",
    "REGN",
-   "NEM",
    "BP",
-   "FAST",
    "SCCO",
-   "TSLA",
-   "CNQ"
+   "DE",
+   "MRNA",
+   "SPOT",
+   "CVX"
   ],
   "momentum": [
    "CRWD",
    "DDOG",
-   "ILMN",
-   "AMD",
+   "PANW",
    "ABBV",
-   "MRK.DE",
+   "MRNA",
    "DHL.DE",
-   "BNS",
-   "CNQ",
-   "PSX",
-   "COP",
-   "TRV",
-   "EMR",
+   "AMGN",
+   "CVX",
+   "DB1.DE",
+   "SHEL",
+   "PM",
    "KDP",
-   "PM"
+   "XOM",
+   "LMT",
+   "BNS"
   ],
   "value": [
    "MU",
    "SKHY",
    "SNDK",
-   "NEM",
    "REGN",
    "PBR",
    "CNQ",
-   "DXCM",
+   "NEM",
    "RIO",
+   "DXCM",
    "ABNB",
    "META",
    "BHP",
    "ROST",
-   "SPOT",
-   "MNST"
+   "MNST",
+   "SPOT"
   ]
  },
  "changes": {
   "turnaround": {
-   "entries": [],
-   "exits": [],
-   "moves": []
-  },
-  "momentum": {
    "entries": [
     {
-     "ticker": "MRK.DE",
-     "rank": 6
+     "ticker": "PANW",
+     "rank": 3
+    },
+    {
+     "ticker": "BEI.DE",
+     "rank": 7
+    },
+    {
+     "ticker": "DE",
+     "rank": 12
+    },
+    {
+     "ticker": "MRNA",
+     "rank": 13
+    },
+    {
+     "ticker": "CVX",
+     "rank": 15
     }
    ],
    "exits": [
     {
+     "ticker": "MRVL",
+     "old_rank": 5
+    },
+    {
      "ticker": "BIIB",
      "old_rank": 6
+    },
+    {
+     "ticker": "ORLY",
+     "old_rank": 7
+    },
+    {
+     "ticker": "FAST",
+     "old_rank": 12
+    },
+    {
+     "ticker": "CNQ",
+     "old_rank": 15
     }
    ],
-   "moves": []
+   "moves": [
+    {
+     "ticker": "TSLA",
+     "rank": 5,
+     "delta": 9
+    },
+    {
+     "ticker": "SPOT",
+     "rank": 14,
+     "delta": -11
+    }
+   ]
+  },
+  "momentum": {
+   "entries": [
+    {
+     "ticker": "PANW",
+     "rank": 3
+    },
+    {
+     "ticker": "MRNA",
+     "rank": 5
+    },
+    {
+     "ticker": "AMGN",
+     "rank": 7
+    },
+    {
+     "ticker": "CVX",
+     "rank": 8
+    },
+    {
+     "ticker": "DB1.DE",
+     "rank": 9
+    },
+    {
+     "ticker": "SHEL",
+     "rank": 10
+    },
+    {
+     "ticker": "XOM",
+     "rank": 13
+    },
+    {
+     "ticker": "LMT",
+     "rank": 14
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "ILMN",
+     "old_rank": 3
+    },
+    {
+     "ticker": "AMD",
+     "old_rank": 4
+    },
+    {
+     "ticker": "MRK.DE",
+     "old_rank": 6
+    },
+    {
+     "ticker": "CNQ",
+     "old_rank": 9
+    },
+    {
+     "ticker": "PSX",
+     "old_rank": 10
+    },
+    {
+     "ticker": "COP",
+     "old_rank": 11
+    },
+    {
+     "ticker": "TRV",
+     "old_rank": 12
+    },
+    {
+     "ticker": "EMR",
+     "old_rank": 13
+    }
+   ],
+   "moves": [
+    {
+     "ticker": "BNS",
+     "rank": 15,
+     "delta": -7
+    }
+   ]
   },
   "value": {
    "entries": [],

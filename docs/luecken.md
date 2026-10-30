@@ -1302,7 +1302,6 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | BMW.DE (BMW.DE) | 2026-06-03 | abwaerts | 72.56 | 0.232 | 0.634 | 106 |
 | BMW.DE (BMW.DE) | 2026-06-16 | abwaerts | 68.34 | 0.175 | 0.498 | 97 |
 | BMW.DE (BMW.DE) | 2026-06-17 | abwaerts | 66.84 | 2.425 | 8.558 | 96 |
-| BMY (BMY) | 2025-10-30 | aufwaerts | 43.15 | 0.117 | 0.278 | 250 |
 | BMY (BMY) | 2025-11-24 | aufwaerts | 46.99 | 0.948 | 2.554 | 233 |
 | BMY (BMY) | 2025-12-03 | aufwaerts | 49.18 | 0.584 | 1.545 | 227 |
 | BMY (BMY) | 2025-12-12 | aufwaerts | 51.48 | 0.604 | 1.535 | 220 |
@@ -1739,7 +1738,6 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | ON (ON) | 2026-07-10 | abwaerts | 97.68 | 0.165 | 1.392 | 78 |
 | ON (ON) | 2026-10-07 | abwaerts | 85.22 | 0.292 | 1.185 | 16 |
 | ON (ON) | 2026-10-08 | abwaerts | 82.05 | 0.452 | 1.926 | 15 |
-| ORCL (ORCL) | 2025-10-30 | abwaerts | 271.35 | 0.203 | 0.962 | 250 |
 | ORCL (ORCL) | 2026-06-11 | abwaerts | 198.18 | 1.315 | 9.34 | 97 |
 | ORCL (ORCL) | 2026-06-23 | abwaerts | 174.4 | 0.344 | 2.391 | 90 |
 | Palladium (PA=F) | 2026-01-30 | abwaerts | 2000.6 | 1.71 | 8.727 | 82 |

@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-10-30 02:00 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1156._
+_Erstellt 2026-10-30 11:16 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1156._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -32,14 +32,14 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | SNDK (SNDK) | 1330.05 | - | - | ja | 40.98 |
 | MPC (MPC) | 432.51 | - | ja | ja | 46.22 |
 | BHP (BHP) | 57.52 | - | - | ja | 42.61 |
-| RIO (RIO) | 62.4 | - | ja | ja | 27.74 |
+| RIO (RIO) | 62.06 | - | ja | ja | 26.99 |
 | SONY (SONY) | 3936.0 | - | - | ja | 53.05 |
 | APP (APP) | 254.91 | - | - | ja | 34.01 |
-| Gold (GC=F) | 4010.3999 | - | - | ja | 34.47 |
-| Silber (SI=F) | 51.27 | - | - | ja | 26.88 |
-| Platin (PL=F) | 1462.0 | - | - | ja | 30.76 |
-| Palladium (PA=F) | 982.5 | - | - | ja | 28.63 |
-| Kupfer (HG=F) | 6.559 | - | - | ja | 49.86 |
+| QIA.DE (QIA.DE) | 45.05 | - | ja | ja | 80.1 |
+| Gold (GC=F) | 4031.3999 | - | - | ja | 35.93 |
+| Silber (SI=F) | 52.191 | - | - | ja | 28.53 |
+| Platin (PL=F) | 1494.8 | - | - | ja | 32.76 |
+| Kupfer (HG=F) | 6.581 | - | - | ja | 51.11 |
 | EUR/NOK (EURNOK=X) | 10.3174 | - | - | ja | 10.22 |
 
 ---

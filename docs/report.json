@@ -7,16 +7,16 @@
    "QCOM",
    "TSLA",
    "NEM",
-   "TM",
-   "BEI.DE",
    "ABT",
    "REGN",
+   "TM",
    "SCCO",
    "DE",
    "MRNA",
    "SPOT",
    "CVX",
-   "TTE"
+   "FAST",
+   "DB1.DE"
   ],
   "momentum": [
    "CRWD",
@@ -24,16 +24,16 @@
    "PANW",
    "ABBV",
    "MRNA",
-   "DHL.DE",
-   "AMGN",
    "DB1.DE",
+   "AMGN",
    "CVX",
+   "DHL.DE",
    "PM",
+   "HEN3.DE",
    "KDP",
    "XOM",
    "LMT",
-   "COP",
-   "CSX"
+   "COP"
   ],
   "value": [
    "MU",
@@ -43,8 +43,8 @@
    "PBR",
    "CNQ",
    "NEM",
-   "DXCM",
    "RIO",
+   "DXCM",
    "ABNB",
    "META",
    "BHP",
@@ -57,14 +57,22 @@
   "turnaround": {
    "entries": [
     {
-     "ticker": "TTE",
+     "ticker": "FAST",
+     "rank": 14
+    },
+    {
+     "ticker": "DB1.DE",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "BP",
-     "old_rank": 10
+     "ticker": "BEI.DE",
+     "old_rank": 7
+    },
+    {
+     "ticker": "TTE",
+     "old_rank": 15
     }
    ],
    "moves": []
@@ -72,39 +80,21 @@
   "momentum": {
    "entries": [
     {
-     "ticker": "COP",
-     "rank": 14
-    },
-    {
-     "ticker": "CSX",
-     "rank": 15
+     "ticker": "HEN3.DE",
+     "rank": 11
     }
    ],
    "exits": [
     {
-     "ticker": "SHEL",
-     "old_rank": 10
-    },
-    {
-     "ticker": "BNS",
+     "ticker": "CSX",
      "old_rank": 15
     }
    ],
    "moves": []
   },
   "value": {
-   "entries": [
-    {
-     "ticker": "NVDA",
-     "rank": 3
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "SKHY",
-     "old_rank": 2
-    }
-   ],
+   "entries": [],
+   "exits": [],
    "moves": []
   },
   "analyst_flips": []

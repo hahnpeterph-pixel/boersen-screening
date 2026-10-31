@@ -1,6 +1,6 @@
 # Marktbreite und was danach folgt
 
-Stand 24.10.2026 04:31 UTC. 273 Werte, 4843 auswertbare Handelstage (2006-10-25 bis 2026-10-23).
+Stand 31.10.2026 05:31 UTC. 273 Werte, 4843 auswertbare Handelstage (2006-11-01 bis 2026-10-30).
 
 Grundlage ist das gleichgewichtete Mittel aller Werte. Ein Tag zaehlt nur, wenn mindestens die Haelfte der Werte an ihm und am Vortag einen Kurs hat.
 
@@ -10,9 +10,9 @@ Breite im Mittel: Median 47 Prozent gefallene Werte, p25 31, p75 63, p95 88.
 
 | nach | Faelle | Median | positiv | p25 | p75 |
 |---|---|---|---|---|---|
-| 1 T | 4842 | +0.10 % | 56 % | -0.38 % | +0.59 % |
+| 1 T | 4842 | +0.10 % | 57 % | -0.38 % | +0.59 % |
 | 2 T | 4841 | +0.21 % | 58 % | -0.57 % | +0.95 % |
-| 3 T | 4840 | +0.29 % | 59 % | -0.71 % | +1.19 % |
+| 3 T | 4840 | +0.30 % | 59 % | -0.71 % | +1.19 % |
 | 4 T | 4839 | +0.40 % | 60 % | -0.79 % | +1.37 % |
 | 5 T | 4837 | +0.47 % | 61 % | -0.83 % | +1.56 % |
 | 6 T | 4837 | +0.58 % | 61 % | -0.90 % | +1.74 % |
@@ -21,63 +21,63 @@ Breite im Mittel: Median 47 Prozent gefallene Werte, p25 31, p75 63, p95 88.
 
 ## Tage mit mindestens 60 Prozent gefallenen Werten
 
-1412 von 4843 Tagen (29.2 Prozent).
+1411 von 4843 Tagen (29.1 Prozent).
 
 | nach | Faelle | Median | positiv | Basis positiv | Unterschied |
 |---|---|---|---|---|---|
-| 1 T | 1411 | +0.05 % | 53 % | 56 % | -4 Punkte |
+| 1 T | 1411 | +0.05 % | 53 % | 57 % | -4 Punkte |
 | 2 T | 1411 | +0.18 % | 55 % | 58 % | -3 Punkte |
 | 3 T | 1411 | +0.27 % | 56 % | 59 % | -3 Punkte |
-| 4 T | 1411 | +0.40 % | 58 % | 60 % | -1 Punkte |
+| 4 T | 1411 | +0.41 % | 59 % | 60 % | -1 Punkte |
 | 5 T | 1411 | +0.58 % | 59 % | 61 % | -2 Punkte |
-| 6 T | 1411 | +0.69 % | 61 % | 61 % | -0 Punkte |
-| 10 T | 1411 | +0.93 % | 64 % | 64 % | -0 Punkte |
-| 20 T | 1408 | +1.88 % | 68 % | 68 % | -0 Punkte |
+| 6 T | 1410 | +0.69 % | 61 % | 61 % | -0 Punkte |
+| 10 T | 1410 | +0.93 % | 64 % | 64 % | -0 Punkte |
+| 20 T | 1409 | +1.89 % | 68 % | 68 % | -0 Punkte |
 
 ## Tage mit mindestens 65 Prozent gefallenen Werten
 
-1102 von 4843 Tagen (22.8 Prozent).
+1101 von 4843 Tagen (22.7 Prozent).
 
 | nach | Faelle | Median | positiv | Basis positiv | Unterschied |
 |---|---|---|---|---|---|
-| 1 T | 1101 | +0.02 % | 51 % | 56 % | -5 Punkte |
-| 2 T | 1101 | +0.18 % | 54 % | 58 % | -4 Punkte |
+| 1 T | 1101 | +0.02 % | 51 % | 57 % | -5 Punkte |
+| 2 T | 1101 | +0.18 % | 55 % | 58 % | -4 Punkte |
 | 3 T | 1101 | +0.27 % | 55 % | 59 % | -4 Punkte |
-| 4 T | 1101 | +0.38 % | 58 % | 60 % | -2 Punkte |
+| 4 T | 1101 | +0.39 % | 58 % | 60 % | -2 Punkte |
 | 5 T | 1101 | +0.58 % | 58 % | 61 % | -3 Punkte |
-| 6 T | 1101 | +0.69 % | 61 % | 61 % | -0 Punkte |
-| 10 T | 1101 | +0.94 % | 63 % | 64 % | -0 Punkte |
+| 6 T | 1100 | +0.70 % | 61 % | 61 % | -0 Punkte |
+| 10 T | 1100 | +0.95 % | 63 % | 64 % | -0 Punkte |
 | 20 T | 1100 | +1.95 % | 67 % | 68 % | -1 Punkte |
 
 ## Tage mit mindestens 70 Prozent gefallenen Werten
 
-843 von 4843 Tagen (17.4 Prozent).
+842 von 4843 Tagen (17.4 Prozent).
 
 | nach | Faelle | Median | positiv | Basis positiv | Unterschied |
 |---|---|---|---|---|---|
-| 1 T | 843 | +0.03 % | 51 % | 56 % | -5 Punkte |
-| 2 T | 843 | +0.18 % | 54 % | 58 % | -4 Punkte |
-| 3 T | 843 | +0.25 % | 54 % | 59 % | -5 Punkte |
-| 4 T | 843 | +0.38 % | 58 % | 60 % | -2 Punkte |
-| 5 T | 843 | +0.57 % | 58 % | 61 % | -3 Punkte |
-| 6 T | 843 | +0.69 % | 61 % | 61 % | -1 Punkte |
-| 10 T | 843 | +0.91 % | 62 % | 64 % | -2 Punkte |
-| 20 T | 843 | +1.86 % | 66 % | 68 % | -2 Punkte |
+| 1 T | 842 | +0.03 % | 51 % | 57 % | -5 Punkte |
+| 2 T | 842 | +0.18 % | 54 % | 58 % | -4 Punkte |
+| 3 T | 842 | +0.26 % | 54 % | 59 % | -5 Punkte |
+| 4 T | 842 | +0.38 % | 58 % | 60 % | -2 Punkte |
+| 5 T | 842 | +0.57 % | 58 % | 61 % | -3 Punkte |
+| 6 T | 842 | +0.69 % | 61 % | 61 % | -1 Punkte |
+| 10 T | 842 | +0.91 % | 62 % | 64 % | -2 Punkte |
+| 20 T | 842 | +1.86 % | 66 % | 68 % | -2 Punkte |
 
 ## Tage mit mindestens 75 Prozent gefallenen Werten
 
-655 von 4843 Tagen (13.5 Prozent).
+654 von 4843 Tagen (13.5 Prozent).
 
 | nach | Faelle | Median | positiv | Basis positiv | Unterschied |
 |---|---|---|---|---|---|
-| 1 T | 655 | -0.01 % | 49 % | 56 % | -7 Punkte |
-| 2 T | 655 | +0.15 % | 53 % | 58 % | -5 Punkte |
-| 3 T | 655 | +0.20 % | 54 % | 59 % | -5 Punkte |
-| 4 T | 655 | +0.37 % | 58 % | 60 % | -2 Punkte |
-| 5 T | 655 | +0.54 % | 57 % | 61 % | -3 Punkte |
-| 6 T | 655 | +0.75 % | 61 % | 61 % | -0 Punkte |
-| 10 T | 655 | +0.93 % | 62 % | 64 % | -2 Punkte |
-| 20 T | 655 | +2.06 % | 66 % | 68 % | -2 Punkte |
+| 1 T | 654 | -0.02 % | 49 % | 57 % | -8 Punkte |
+| 2 T | 654 | +0.16 % | 53 % | 58 % | -5 Punkte |
+| 3 T | 654 | +0.21 % | 54 % | 59 % | -5 Punkte |
+| 4 T | 654 | +0.37 % | 58 % | 60 % | -2 Punkte |
+| 5 T | 654 | +0.54 % | 57 % | 61 % | -3 Punkte |
+| 6 T | 654 | +0.75 % | 61 % | 61 % | -0 Punkte |
+| 10 T | 654 | +0.93 % | 62 % | 64 % | -2 Punkte |
+| 20 T | 654 | +2.06 % | 66 % | 68 % | -2 Punkte |
 
 ## Tage mit mindestens 80 Prozent gefallenen Werten
 
@@ -85,7 +85,7 @@ Breite im Mittel: Median 47 Prozent gefallene Werte, p25 31, p75 63, p95 88.
 
 | nach | Faelle | Median | positiv | Basis positiv | Unterschied |
 |---|---|---|---|---|---|
-| 1 T | 475 | -0.01 % | 49 % | 56 % | -7 Punkte |
+| 1 T | 475 | -0.01 % | 49 % | 57 % | -7 Punkte |
 | 2 T | 475 | +0.20 % | 54 % | 58 % | -4 Punkte |
 | 3 T | 475 | +0.27 % | 54 % | 59 % | -5 Punkte |
 | 4 T | 475 | +0.56 % | 59 % | 60 % | -1 Punkte |
@@ -100,7 +100,7 @@ Breite im Mittel: Median 47 Prozent gefallene Werte, p25 31, p75 63, p95 88.
 
 | nach | Faelle | Median | positiv | Basis positiv | Unterschied |
 |---|---|---|---|---|---|
-| 1 T | 324 | -0.04 % | 47 % | 56 % | -10 Punkte |
+| 1 T | 324 | -0.04 % | 47 % | 57 % | -10 Punkte |
 | 2 T | 324 | +0.18 % | 52 % | 58 % | -6 Punkte |
 | 3 T | 324 | +0.13 % | 52 % | 59 % | -7 Punkte |
 | 4 T | 324 | +0.58 % | 59 % | 60 % | -1 Punkte |

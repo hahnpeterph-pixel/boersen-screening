@@ -1,8 +1,8 @@
 # Stundenwache
 
-Stand: 2026-10-30 · 272 Werte mit Stundendaten · erstellt 2026-10-30 22:54 UTC
+Stand: 2026-10-30 · 272 Werte mit Stundendaten · erstellt 2026-10-31 01:37 UTC
 
-> **Sitzung noch nicht abgeschlossen.** 5 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 5, 6, 7, 8, 9). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
+> **Sitzung noch nicht abgeschlossen.** 2 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 5, 6, 7, 8, 9). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
 
 Marken sind das juengste Swing-Tief und das juengste Swing-Hoch aus `tiefs_regel.py`, also dieselben wie im Tagesbericht. Geprueft wird nur, was der letzte Handelstag auf Stundenbasis damit gemacht hat.
 
@@ -19,7 +19,7 @@ Schluss unter dem juengsten Swing-Tief. Die Sequenz ist gerissen.
 
 | Wert | Marke | Schluss | Abstand (ATR) | Stunden dahinter |
 |---|---|---|---|---|
-| ISRG | 437.51 | 431.88 | -0.409 | 4 |
+| ISRG | 437.51 | 431.88 | -0.408 | 4 |
 | IDXX | 555.21 | 551.31 | -0.25 | 2 |
 | TTD | 12.375 | 12.29 | -0.149 | 4 |
 
@@ -27,23 +27,26 @@ Schluss unter dem juengsten Swing-Tief. Die Sequenz ist gerissen.
 
 Keine.
 
-## Tief angetestet (11)
+## Tief angetestet (14)
 
 Docht bis unter die Marke, kein Stundenschluss darunter.
 
 | Wert | Marke | Schluss | Abstand (ATR) | Stunden dahinter |
 |---|---|---|---|---|
-| TRV | 395.9 | 396.25 | 0.039 | 0 |
+| RWE.DE | 57.46 | 57.58 | 0.088 | 0 |
+| CBK.DE | 37.69 | 37.78 | 0.103 | 0 |
 | ASML | 1405.6 | 1411.8 | 0.107 | 0 |
-| GE | 299.9817 | 301.785 | 0.178 | 0 |
+| AIR.DE | 191.28 | 192.26 | 0.185 | 0 |
 | USB | 59.19 | 59.44 | 0.201 | 0 |
-| PANW | 360.02 | 365.8 | 0.289 | 0 |
-| BMO | 170.21 | 171.21 | 0.32 | 0 |
-| TD | 123.755 | 124.49 | 0.357 | 0 |
-| BLK | 1137.03 | 1147.9 | 0.371 | 0 |
-| CRWD | 245.17 | 250.38 | 0.382 | 0 |
-| LRCX | 232.65 | 239.25 | 0.425 | 0 |
-| PH | 886.91 | 899.72 | 0.493 | 0 |
+| WFC | 82.97 | 83.42 | 0.231 | 0 |
+| AXP | 316.68 | 319.02 | 0.334 | 0 |
+| EMR | 163.14 | 164.8 | 0.351 | 0 |
+| STX | 625.3 | 644.37 | 0.373 | 0 |
+| SNPS | 460.14 | 467.9 | 0.394 | 0 |
+| CDNS | 322.25 | 328.03 | 0.407 | 0 |
+| MU | 861.59 | 884.89 | 0.457 | 0 |
+| NVDA | 200.92 | 204.81 | 0.595 | 0 |
+| MCHP | 75.32 | 77.35 | 0.608 | 0 |
 
 ## Swing-Hoch ueberwunden (78)
 
@@ -60,7 +63,7 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | AZN | 128.06 | 139.98 | 3.295 | 9 |
 | AEP | 121.8 | 130.15 | 3.186 | 7 |
 | BAYN.DE | 45.83 | 50.22 | 3.078 | 9 |
-| EXC | 43.58 | 46.15 | 2.834 | 7 |
+| EXC | 43.58 | 46.15 | 2.835 | 7 |
 | MRK.DE | 142.6 | 151.15 | 2.512 | 9 |
 | CSX | 49.22 | 51.98 | 2.401 | 7 |
 | P911.DE | 43.59 | 46.57 | 2.349 | 9 |
@@ -68,32 +71,32 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | MCD | 247.29 | 258.18 | 2.262 | 7 |
 | RTX | 187.41 | 199.86 | 2.226 | 7 |
 | TTE | 81.63 | 85.38 | 2.188 | 9 |
-| XEL | 76.54 | 79.82 | 2.179 | 7 |
+| XEL | 76.54 | 79.82 | 2.178 | 7 |
 | GD | 357.46 | 372.7 | 2.131 | 7 |
 | AMGN | 441.76 | 466.05 | 2.046 | 7 |
-| UPS | 103.08 | 108.25 | 2.029 | 7 |
+| UPS | 103.08 | 108.25 | 2.027 | 7 |
 | LLY | 1321.21 | 1416.3 | 1.971 | 7 |
-| GEHC | 72.3 | 76.57 | 1.961 | 7 |
+| GEHC | 72.3 | 76.57 | 1.96 | 7 |
 | UNP | 291.93 | 303.91 | 1.946 | 7 |
 | ADS.DE | 161.15 | 168.75 | 1.935 | 9 |
-| HD | 314.66 | 329.25 | 1.904 | 7 |
-| ENB | 48.14 | 49.45 | 1.759 | 7 |
+| HD | 314.66 | 329.25 | 1.903 | 7 |
+| ENB | 48.14 | 49.45 | 1.757 | 7 |
 | NVS | 129.34 | 134.12 | 1.714 | 9 |
 | WDAY | 185.82 | 197.731 | 1.624 | 7 |
 | BIIB | 240.99 | 253.68 | 1.601 | 7 |
-| LULU | 100.67 | 107.27 | 1.514 | 7 |
+| LULU | 100.67 | 107.27 | 1.512 | 7 |
 | DBK.DE | 28.815 | 30.15 | 1.481 | 9 |
 | HNR1.DE | 283.2 | 290.0 | 1.417 | 9 |
 | SBUX | 100.33 | 103.58 | 1.365 | 7 |
 | VRTX | 537.81 | 559.05 | 1.25 | 7 |
-| ROP | 450.76 | 466.81 | 1.183 | 7 |
+| ROP | 450.76 | 466.81 | 1.179 | 7 |
 | SPG | 213.63 | 217.77 | 1.09 | 7 |
-| MO | 76.09 | 78.0 | 1.063 | 7 |
+| MO | 76.09 | 78.0 | 1.062 | 7 |
 | SHL.DE | 42.06 | 42.82 | 1.042 | 9 |
-| LOW | 204.52 | 209.12 | 0.887 | 7 |
+| LOW | 204.52 | 209.12 | 0.885 | 7 |
 | DXCM | 79.86 | 82.32 | 0.875 | 7 |
 | SHEL | 39.8 | 40.485 | 0.87 | 9 |
-| DE | 660.39 | 675.285 | 0.856 | 7 |
+| DE | 660.39 | 675.285 | 0.854 | 7 |
 | PM | 204.0 | 208.9 | 0.839 | 7 |
 | CPRT | 29.43 | 30.12 | 0.817 | 7 |
 | ABBV | 289.59 | 294.88 | 0.766 | 7 |
@@ -115,7 +118,7 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | MA | 633.29 | 638.01 | 0.402 | 7 |
 | CVX | 234.08 | 235.59 | 0.319 | 7 |
 | ALV.DE | 437.5 | 439.5 | 0.309 | 8 |
-| ORCL | 128.33 | 130.69 | 0.294 | 7 |
+| ORCL | 128.33 | 130.69 | 0.293 | 7 |
 | UBS | 38.96 | 39.21 | 0.29 | 9 |
 | NVO | 264.75 | 266.1 | 0.251 | 7 |
 | LIN | 512.49 | 514.48 | 0.25 | 6 |

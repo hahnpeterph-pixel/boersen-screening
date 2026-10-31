@@ -1,5 +1,5 @@
 {
- "date": "2026-10-30",
+ "date": "2026-10-31",
  "ranks": {
   "turnaround": [
    "SNPS",
@@ -25,15 +25,15 @@
    "ABBV",
    "MRK",
    "MPC",
-   "DB1.DE",
    "MA",
-   "HEN3.DE",
    "CCEP",
-   "DHL.DE",
    "ACN",
    "KO",
    "CSX",
-   "LMT"
+   "KDP",
+   "LMT",
+   "DB1.DE",
+   "BNS"
   ],
   "value": [
    "MU",
@@ -55,209 +55,42 @@
  },
  "changes": {
   "turnaround": {
-   "entries": [
-    {
-     "ticker": "SNPS",
-     "rank": 1
-    },
-    {
-     "ticker": "PSX",
-     "rank": 2
-    },
-    {
-     "ticker": "ADI",
-     "rank": 4
-    },
-    {
-     "ticker": "ORLY",
-     "rank": 5
-    },
-    {
-     "ticker": "MPC",
-     "rank": 6
-    },
-    {
-     "ticker": "CDNS",
-     "rank": 7
-    },
-    {
-     "ticker": "VLO",
-     "rank": 8
-    },
-    {
-     "ticker": "ILMN",
-     "rank": 9
-    },
-    {
-     "ticker": "MRK",
-     "rank": 11
-    },
-    {
-     "ticker": "EMR",
-     "rank": 12
-    },
-    {
-     "ticker": "MO",
-     "rank": 15
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "MSTR",
-     "old_rank": 1
-    },
-    {
-     "ticker": "PANW",
-     "old_rank": 2
-    },
-    {
-     "ticker": "QCOM",
-     "old_rank": 3
-    },
-    {
-     "ticker": "ABT",
-     "old_rank": 6
-    },
-    {
-     "ticker": "REGN",
-     "old_rank": 7
-    },
-    {
-     "ticker": "SCCO",
-     "old_rank": 9
-    },
-    {
-     "ticker": "DE",
-     "old_rank": 10
-    },
-    {
-     "ticker": "SPOT",
-     "old_rank": 12
-    },
-    {
-     "ticker": "CVX",
-     "old_rank": 13
-    },
-    {
-     "ticker": "FAST",
-     "old_rank": 14
-    },
-    {
-     "ticker": "DB1.DE",
-     "old_rank": 15
-    }
-   ],
-   "moves": [
-    {
-     "ticker": "NEM",
-     "rank": 13,
-     "delta": -8
-    },
-    {
-     "ticker": "TM",
-     "rank": 14,
-     "delta": -6
-    }
-   ]
+   "entries": [],
+   "exits": [],
+   "moves": []
   },
   "momentum": {
    "entries": [
     {
-     "ticker": "PSX",
-     "rank": 1
-    },
-    {
-     "ticker": "MRK",
-     "rank": 5
-    },
-    {
-     "ticker": "MPC",
-     "rank": 6
-    },
-    {
-     "ticker": "MA",
-     "rank": 8
-    },
-    {
-     "ticker": "CCEP",
-     "rank": 10
-    },
-    {
-     "ticker": "ACN",
+     "ticker": "KDP",
      "rank": 12
     },
     {
-     "ticker": "KO",
-     "rank": 13
-    },
-    {
-     "ticker": "CSX",
-     "rank": 14
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "CRWD",
-     "old_rank": 1
-    },
-    {
-     "ticker": "DDOG",
-     "old_rank": 2
-    },
-    {
-     "ticker": "PANW",
-     "old_rank": 3
-    },
-    {
-     "ticker": "AMGN",
-     "old_rank": 7
-    },
-    {
-     "ticker": "PM",
-     "old_rank": 10
-    },
-    {
-     "ticker": "KDP",
-     "old_rank": 12
-    },
-    {
-     "ticker": "XOM",
-     "old_rank": 13
-    },
-    {
-     "ticker": "COP",
-     "old_rank": 15
-    }
-   ],
-   "moves": [
-    {
-     "ticker": "CVX",
-     "rank": 3,
-     "delta": 5
-    }
-   ]
-  },
-  "value": {
-   "entries": [
-    {
-     "ticker": "CSCO",
-     "rank": 3
-    },
-    {
-     "ticker": "V",
+     "ticker": "BNS",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "SNDK",
-     "old_rank": 2
+     "ticker": "HEN3.DE",
+     "old_rank": 9
     },
     {
-     "ticker": "SPOT",
-     "old_rank": 14
+     "ticker": "DHL.DE",
+     "old_rank": 11
     }
    ],
+   "moves": [
+    {
+     "ticker": "DB1.DE",
+     "rank": 14,
+     "delta": -7
+    }
+   ]
+  },
+  "value": {
+   "entries": [],
+   "exits": [],
    "moves": []
   },
   "analyst_flips": []

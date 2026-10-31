@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-10-30 22:52 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1166._
+_Erstellt 2026-10-31 01:35 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1183._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -40,7 +40,7 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | MRVL (MRVL) | 196.4 | - | - | ja | 33.96 |
 | MSFT (MSFT) | 521.91 | ja | - | - | 49.02 |
 | NVDA (NVDA) | 204.64 | - | - | ja | 35.06 |
-| ON (ON) | 71.67 | - | - | ja | 43.12 |
+| ON (ON) | 71.67 | ja | - | ja | 43.12 |
 | ORCL (ORCL) | 130.67 | - | - | ja | 45.62 |
 | PANW (PANW) | 365.87 | - | ja | ja | 46.19 |
 | PLTR (PLTR) | 184.11 | - | - | ja | 41.86 |
@@ -81,12 +81,12 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | SPCX (SPCX) | 134.72 | - | - | ja | 37.47 |
 | SKHY (SKHY) | 1418000.0 | - | - | ja | 45.48 |
 | SHOP (SHOP) | 157.49 | - | - | ja | 44.61 |
-| HSBC (HSBC) | 12.77 | - | - | ja | 25.97 |
+| HSBC (HSBC) | 12.738 | - | - | ja | 25.66 |
 | RY (RY) | 202.98 | - | - | ja | 55.84 |
 | SAN (SAN) | 10.118 | - | - | ja | 22.9 |
 | TD (TD) | 124.5 | - | - | ja | 58.63 |
-| RIO (RIO) | 60.94 | - | - | ja | 24.64 |
-| BBVA (BBVA) | 21.06 | - | - | ja | 27.24 |
+| RIO (RIO) | 60.96 | - | - | ja | 24.68 |
+| BBVA (BBVA) | 21.04 | - | - | ja | 27.13 |
 | BMO (BMO) | 171.13 | - | - | ja | 53.0 |
 | BNS (BNS) | 93.76 | - | - | ja | 56.52 |
 | APP (APP) | 228.5 | - | - | ja | 25.04 |
@@ -94,6 +94,7 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | MSTR (MSTR) | 130.51 | - | - | ja | 40.11 |
 | AIR.DE (AIR.DE) | 192.44 | - | - | ja | 48.43 |
 | CBK.DE (CBK.DE) | 37.78 | - | - | ja | 45.99 |
+| CON.DE (CON.DE) | 66.58 | - | - | ja | 41.49 |
 | IFX.DE (IFX.DE) | 50.56 | - | - | ja | 39.97 |
 | RWE.DE (RWE.DE) | 57.54 | - | - | ja | 47.55 |
 | SRT3.DE (SRT3.DE) | 291.8 | - | - | ja | 69.01 |
@@ -105,9 +106,9 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | Palladium (PA=F) | 977.5 | - | ja | ja | 28.24 |
 | Erdgas (NG=F) | 2.883 | - | - | ja | 47.4 |
 | Kupfer (HG=F) | 6.5095 | - | - | ja | 46.99 |
-| EUR/GBP (EURGBP=X) | 0.8332 | - | - | ja | 20.68 |
-| EUR/CHF (EURCHF=X) | 0.9202 | - | - | ja | 34.73 |
-| EUR/NOK (EURNOK=X) | 10.2679 | - | - | ja | 9.01 |
+| EUR/GBP (EURGBP=X) | 0.8358 | ja | - | - | 23.75 |
+| EUR/CHF (EURCHF=X) | 0.9209 | - | - | ja | 35.55 |
+| EUR/NOK (EURNOK=X) | 10.3393 | ja | - | - | 15.22 |
 
 ---
 

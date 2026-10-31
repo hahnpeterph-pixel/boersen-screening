@@ -1537,7 +1537,6 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | IFX.DE (IFX.DE) | 2026-04-08 | aufwaerts | 39.98 | 0.964 | 5.278 | 146 |
 | IFX.DE (IFX.DE) | 2026-04-14 | aufwaerts | 43.025 | 0.345 | 1.557 | 142 |
 | IFX.DE (IFX.DE) | 2026-10-30 | abwaerts | 52.79 | 0.424 | 2.178 | 0 |
-| ILMN (ILMN) | 2025-10-31 | aufwaerts | 99.39 | 1.437 | 7.566 | 250 |
 | ILMN (ILMN) | 2026-10-30 | abwaerts | 283.0 | 1.715 | 10.304 | 0 |
 | ING (ING) | 2026-04-01 | aufwaerts | 22.265 | 0.628 | 1.999 | 149 |
 | ING (ING) | 2026-04-08 | aufwaerts | 23.385 | 0.914 | 3.058 | 146 |

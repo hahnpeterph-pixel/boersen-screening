@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-10-31 01:35 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1183._
+_Erstellt 2026-10-31 05:54 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1183._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -100,12 +100,9 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | SRT3.DE (SRT3.DE) | 291.8 | - | - | ja | 69.01 |
 | SIE.DE (SIE.DE) | 265.65 | - | - | ja | 47.32 |
 | ENR.DE (ENR.DE) | 126.92 | - | - | ja | 42.15 |
-| Gold (GC=F) | 3884.8999 | - | - | ja | 27.24 |
-| Silber (SI=F) | 49.135 | - | - | ja | 23.39 |
-| Platin (PL=F) | 1434.5 | - | - | ja | 29.03 |
-| Palladium (PA=F) | 977.5 | - | ja | ja | 28.24 |
-| Erdgas (NG=F) | 2.883 | - | - | ja | 47.4 |
-| Kupfer (HG=F) | 6.5095 | - | - | ja | 46.99 |
+| Gold (GC=F) | 3898.8999 | - | - | ja | 27.89 |
+| Silber (SI=F) | 49.097 | - | - | ja | 23.33 |
+| Kupfer (HG=F) | 6.4585 | - | - | ja | 44.43 |
 | EUR/GBP (EURGBP=X) | 0.8358 | ja | - | - | 23.75 |
 | EUR/CHF (EURCHF=X) | 0.9209 | - | - | ja | 35.55 |
 | EUR/NOK (EURNOK=X) | 10.3393 | ja | - | - | 15.22 |

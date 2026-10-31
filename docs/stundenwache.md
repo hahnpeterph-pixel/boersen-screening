@@ -1,8 +1,8 @@
 # Stundenwache
 
-Stand: 2026-10-30 · 272 Werte mit Stundendaten · erstellt 2026-10-31 01:37 UTC
+Stand: 2026-10-30 · 272 Werte mit Stundendaten · erstellt 2026-10-31 05:56 UTC
 
-> **Sitzung noch nicht abgeschlossen.** 2 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 5, 6, 7, 8, 9). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
+> **Sitzung noch nicht abgeschlossen.** 4 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 5, 6, 7, 8, 9). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
 
 Marken sind das juengste Swing-Tief und das juengste Swing-Hoch aus `tiefs_regel.py`, also dieselben wie im Tagesbericht. Geprueft wird nur, was der letzte Handelstag auf Stundenbasis damit gemacht hat.
 
@@ -34,8 +34,8 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | Wert | Marke | Schluss | Abstand (ATR) | Stunden dahinter |
 |---|---|---|---|---|
 | RWE.DE | 57.46 | 57.58 | 0.088 | 0 |
+| ASML | 1405.6 | 1411.4 | 0.1 | 0 |
 | CBK.DE | 37.69 | 37.78 | 0.103 | 0 |
-| ASML | 1405.6 | 1411.8 | 0.107 | 0 |
 | AIR.DE | 191.28 | 192.26 | 0.185 | 0 |
 | USB | 59.19 | 59.44 | 0.201 | 0 |
 | WFC | 82.97 | 83.42 | 0.231 | 0 |
@@ -46,7 +46,7 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | CDNS | 322.25 | 328.03 | 0.407 | 0 |
 | MU | 861.59 | 884.89 | 0.457 | 0 |
 | NVDA | 200.92 | 204.81 | 0.595 | 0 |
-| MCHP | 75.32 | 77.35 | 0.608 | 0 |
+| MCHP | 75.32 | 77.364 | 0.612 | 0 |
 
 ## Swing-Hoch ueberwunden (78)
 
@@ -61,7 +61,7 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | REGN | 825.52 | 927.86 | 3.702 | 7 |
 | QIA.DE | 42.345 | 45.09 | 3.539 | 9 |
 | AZN | 128.06 | 139.98 | 3.295 | 9 |
-| AEP | 121.8 | 130.15 | 3.186 | 7 |
+| AEP | 121.8 | 130.19 | 3.201 | 7 |
 | BAYN.DE | 45.83 | 50.22 | 3.078 | 9 |
 | EXC | 43.58 | 46.15 | 2.835 | 7 |
 | MRK.DE | 142.6 | 151.15 | 2.512 | 9 |
@@ -69,14 +69,14 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | P911.DE | 43.59 | 46.57 | 2.349 | 9 |
 | GILD | 159.69 | 170.8 | 2.306 | 7 |
 | MCD | 247.29 | 258.18 | 2.262 | 7 |
-| RTX | 187.41 | 199.86 | 2.226 | 7 |
+| RTX | 187.41 | 199.84 | 2.222 | 7 |
 | TTE | 81.63 | 85.38 | 2.188 | 9 |
 | XEL | 76.54 | 79.82 | 2.178 | 7 |
 | GD | 357.46 | 372.7 | 2.131 | 7 |
 | AMGN | 441.76 | 466.05 | 2.046 | 7 |
 | UPS | 103.08 | 108.25 | 2.027 | 7 |
-| LLY | 1321.21 | 1416.3 | 1.971 | 7 |
-| GEHC | 72.3 | 76.57 | 1.96 | 7 |
+| LLY | 1321.21 | 1416.54 | 1.976 | 7 |
+| GEHC | 72.3 | 76.58 | 1.965 | 7 |
 | UNP | 291.93 | 303.91 | 1.946 | 7 |
 | ADS.DE | 161.15 | 168.75 | 1.935 | 9 |
 | HD | 314.66 | 329.25 | 1.903 | 7 |
@@ -104,7 +104,7 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | FDX | 307.94 | 313.29 | 0.698 | 7 |
 | MUV2.DE | 561.0 | 567.2 | 0.685 | 9 |
 | EOAN.DE | 18.67 | 18.905 | 0.642 | 9 |
-| KDP | 35.4 | 35.855 | 0.621 | 7 |
+| KDP | 35.4 | 35.865 | 0.635 | 7 |
 | FANG | 208.65 | 212.06 | 0.606 | 7 |
 | HEN3.DE | 79.44 | 80.3 | 0.59 | 9 |
 | NEE | 82.81 | 83.755 | 0.574 | 7 |
@@ -125,8 +125,8 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | NKE | 38.5 | 38.69 | 0.182 | 7 |
 | PGR | 230.28 | 231.27 | 0.165 | 7 |
 | MAR | 398.42 | 399.66 | 0.145 | 7 |
-| ABT | 105.88 | 106.25 | 0.124 | 7 |
-| JNJ | 272.36 | 273.2 | 0.109 | 7 |
+| ABT | 105.88 | 106.24 | 0.121 | 7 |
+| JNJ | 272.36 | 273.23 | 0.112 | 7 |
 | PFE | 30.44 | 30.505 | 0.108 | 4 |
 | PAH3.DE | 25.6 | 25.64 | 0.061 | 7 |
 | BNR.DE | 63.18 | 63.22 | 0.031 | 3 |

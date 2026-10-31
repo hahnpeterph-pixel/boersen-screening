@@ -1,6 +1,6 @@
 # Tiefs, Volumen und Kaufregel-Check
 
-_Erstellt 2026-10-31 01:35 UTC. Fenster: letzte 90 Kalendertage. Tiefs nach der Umkehr-Regel (tiefs_regel.py): ein Tief zaehlt, sobald eine spaetere Kerze das Hoch der Tiefkerze ueberschreitet. Solange es abwaerts geht, gilt das tiefste Tief der Strecke. Gerechnet wird auf abgeschlossenen Tageskerzen._
+_Erstellt 2026-10-31 05:54 UTC. Fenster: letzte 90 Kalendertage. Tiefs nach der Umkehr-Regel (tiefs_regel.py): ein Tief zaehlt, sobald eine spaetere Kerze das Hoch der Tiefkerze ueberschreitet. Solange es abwaerts geht, gilt das tiefste Tief der Strecke. Gerechnet wird auf abgeschlossenen Tageskerzen._
 
 ## Kaufregel
 
@@ -74,7 +74,7 @@ Umkehr = Hammer-Kerze ODER hoeheres Hoch als der Vortag. Die Spalte Schwelle ist
 
 | Wert | Kurs | Marke | Abstand | Tief | ATR | RSI | Schwelle | KO-Vorschlag | Einsatz | Signal | |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| NVIDIA (NVDA) _Kandidat_ | 204,64 | 209,00 | -2,1 % | 200,92 | 6,54 | 35,1 | 64,7 (327 Faelle, 100,0 % der Serien) | 187,84 | **150,00 EUR** | Marke erreicht — CHART PRUEFEN | + |
+| NVIDIA (NVDA) _Kandidat_ | 204,64 | 209,00 | -2,1 % | 200,92 | 6,54 | 35,1 | 64,6 (327 Faelle, 100,0 % der Serien) | 187,84 | **150,00 EUR** | Marke erreicht — CHART PRUEFEN | + |
 | Applied Materials (AMAT) _Kandidat_ | 390,09 | 465,00 | -16,1 % | 382,62 | 22,32 | 36,3 | k.A. (noch nie) | 337,98 | **150,00 EUR** | Marke erreicht — CHART PRUEFEN | + |
 
 _Legende: `+` Signal da, `!` Signal da aber RSI zu hoch, `-` warten._

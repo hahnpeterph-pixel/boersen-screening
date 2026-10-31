@@ -38,7 +38,7 @@
   "value": [
    "MU",
    "NVDA",
-   "CSCO",
+   "TSM",
    "PBR",
    "CNQ",
    "REGN",
@@ -50,7 +50,7 @@
    "BHP",
    "ROST",
    "MNST",
-   "V"
+   "PSX"
   ]
  },
  "changes": {
@@ -60,37 +60,31 @@
    "moves": []
   },
   "momentum": {
+   "entries": [],
+   "exits": [],
+   "moves": []
+  },
+  "value": {
    "entries": [
     {
-     "ticker": "KDP",
-     "rank": 12
+     "ticker": "TSM",
+     "rank": 3
     },
     {
-     "ticker": "BNS",
+     "ticker": "PSX",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "HEN3.DE",
-     "old_rank": 9
+     "ticker": "CSCO",
+     "old_rank": 3
     },
     {
-     "ticker": "DHL.DE",
-     "old_rank": 11
+     "ticker": "V",
+     "old_rank": 15
     }
    ],
-   "moves": [
-    {
-     "ticker": "DB1.DE",
-     "rank": 14,
-     "delta": -7
-    }
-   ]
-  },
-  "value": {
-   "entries": [],
-   "exits": [],
    "moves": []
   },
   "analyst_flips": []

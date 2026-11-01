@@ -1,18 +1,18 @@
-# Boden-Screening - Stufe 1 (Stand 2026-10-03 21:08 UTC, 20 Jahre)
+# Boden-Screening - Stufe 1 (Stand 2026-11-01 15:02 UTC, 20 Jahre)
 
 Parallellauf, aendert nichts am bestehenden Screening. Pruefttage = alle Tage mit Block-1-Umkehrzeichen (ohne RSI- und Tief-1-Filter). Einstieg = Schluss, Bezugstief wie heute.py.
 
-Werte: 272 · Pruefttage: 365615 · davon mit 63-Tage-Ergebnis: 360147
+Werte: 271 · Pruefttage: 364594 · davon mit 63-Tage-Ergebnis: 359223
 
 ## Gutes Tief - Anteil je Wert
 
 | | Median | p25 | p75 |
 |---|---|---|---|
 | gut A | 28.2 % | 27.7 % | 28.6 % |
-| gut B | 29.0 % | 28.6 % | 29.4 % |
-| haelt 2 ATR | 50.2 % | 47.5 % | 53.3 % |
+| gut B | 29.0 % | 28.6 % | 29.5 % |
+| haelt 2 ATR | 50.3 % | 47.6 % | 53.4 % |
 
-Korrekturschwelle T (Median je Wert): Median 2.28 ATR, Spanne 2.00-3.16 ATR.
+Korrekturschwelle T (Median je Wert): Median 2.28 ATR, Spanne 2.01-3.18 ATR.
 
 ## Merkmale einzeln - je Wert gezaehlt
 
@@ -22,67 +22,67 @@ Werte = Werte mit mind. 10 Faellen mit UND ohne Merkmal in beiden Zeitraeumen. P
 
 | Merkmal | Werte | Plus | Minus | Diff |
 |---|---|---|---|---|
-| Korrektur >= T | 267 | 0 | 3 | -0.8 / -0.9 |
-| Korr. tiefer 7/10 | 261 | 9 | 4 | 1.1 / 1.6 |
-| Korr. laenger 7/10 | 261 | 6 | 7 | 0.9 / -1.2 |
-| RSI Tief unter 7/10 | 263 | 30 | 2 | 4.0 / 8.2 |
-| RSI < 50 (alt) | 267 | 3 | 4 | -0.3 / 1.0 |
-| RSI-Divergenz | 187 | 15 | 7 | 2.7 / -1.0 |
-| Ausverkauf | 228 | 46 | 2 | 4.1 / 9.9 |
-| Erschoepfung | 264 | 7 | 4 | 1.2 / -3.1 |
-| Erholung + Vol. | 183 | 34 | 0 | 5.6 / 10.3 |
-| Umkehr a | 267 | 0 | 3 | -2.3 / -2.7 |
-| Umkehr b | 267 | 8 | 0 | 3.9 / 3.8 |
-| Hammer | 118 | 2 | 10 | -2.4 / -1.8 |
-| Doppelboden | 252 | 3 | 28 | -2.0 / -7.8 |
-| Schluss > VT-Hoch | 267 | 37 | 0 | 6.5 / 6.2 |
-| Kein neues Tief | 267 | 29 | 0 | 6.1 / 6.4 |
-| Ueber EMA200 | 257 | 0 | 27 | -3.2 / -5.5 |
-| Tief >= 2 (alt) | 266 | 14 | 3 | 3.1 / 4.8 |
+| Korrektur >= T | 266 | 0 | 3 | -0.9 / -1.1 |
+| Korr. tiefer 7/10 | 260 | 9 | 2 | 1.1 / 1.8 |
+| Korr. laenger 7/10 | 260 | 7 | 5 | 1.6 / -0.5 |
+| RSI Tief unter 7/10 | 262 | 32 | 2 | 3.7 / 8.3 |
+| RSI < 50 (alt) | 266 | 3 | 3 | -0.2 / 1.3 |
+| RSI-Divergenz | 193 | 16 | 7 | 2.6 / -0.6 |
+| Ausverkauf | 230 | 40 | 2 | 4.3 / 10.2 |
+| Erschoepfung | 263 | 8 | 5 | 1.2 / -3.3 |
+| Erholung + Vol. | 187 | 31 | 0 | 5.7 / 9.6 |
+| Umkehr a | 266 | 0 | 4 | -2.2 / -2.8 |
+| Umkehr b | 266 | 5 | 0 | 3.9 / 3.5 |
+| Hammer | 120 | 3 | 9 | -2.2 / -1.6 |
+| Doppelboden | 252 | 2 | 26 | -2.3 / -6.7 |
+| Schluss > VT-Hoch | 266 | 33 | 0 | 6.3 / 6.2 |
+| Kein neues Tief | 266 | 33 | 0 | 6.1 / 6.2 |
+| Ueber EMA200 | 257 | 1 | 29 | -3.3 / -6.0 |
+| Tief >= 2 (alt) | 265 | 15 | 1 | 2.9 / 4.7 |
 
 ### gut (Chance B)
 
 | Merkmal | Werte | Plus | Minus | Diff |
 |---|---|---|---|---|
-| Korrektur >= T | 267 | 0 | 6 | -1.6 / -3.2 |
-| Korr. tiefer 7/10 | 261 | 13 | 9 | -0.2 / 0.7 |
-| Korr. laenger 7/10 | 261 | 7 | 9 | 0.4 / -2.8 |
-| RSI Tief unter 7/10 | 263 | 27 | 3 | 2.5 / 7.9 |
-| RSI < 50 (alt) | 267 | 1 | 9 | -1.8 / -1.2 |
-| RSI-Divergenz | 187 | 14 | 10 | 2.7 / -0.6 |
-| Ausverkauf | 228 | 35 | 1 | 2.8 / 8.4 |
-| Erschoepfung | 264 | 7 | 2 | 0.9 / -2.9 |
-| Erholung + Vol. | 183 | 47 | 1 | 7.8 / 11.5 |
-| Umkehr a | 267 | 0 | 6 | -3.1 / -3.8 |
-| Umkehr b | 267 | 13 | 0 | 4.8 / 5.8 |
-| Hammer | 118 | 4 | 11 | -3.0 / -1.2 |
-| Doppelboden | 252 | 2 | 32 | -3.2 / -7.7 |
-| Schluss > VT-Hoch | 267 | 63 | 0 | 7.5 / 8.3 |
-| Kein neues Tief | 267 | 65 | 0 | 7.6 / 8.3 |
-| Ueber EMA200 | 257 | 2 | 21 | -1.7 / -6.1 |
-| Tief >= 2 (alt) | 266 | 21 | 1 | 2.3 / 3.8 |
+| Korrektur >= T | 266 | 0 | 6 | -1.6 / -2.5 |
+| Korr. tiefer 7/10 | 260 | 11 | 9 | -0.1 / 0.7 |
+| Korr. laenger 7/10 | 260 | 6 | 8 | 0.9 / -2.5 |
+| RSI Tief unter 7/10 | 262 | 24 | 3 | 2.2 / 7.5 |
+| RSI < 50 (alt) | 266 | 0 | 11 | -1.8 / -1.6 |
+| RSI-Divergenz | 193 | 15 | 9 | 2.5 / 0.4 |
+| Ausverkauf | 230 | 36 | 1 | 2.9 / 8.4 |
+| Erschoepfung | 263 | 7 | 4 | 0.8 / -3.0 |
+| Erholung + Vol. | 187 | 48 | 1 | 7.8 / 10.8 |
+| Umkehr a | 266 | 0 | 4 | -3.0 / -3.9 |
+| Umkehr b | 266 | 14 | 0 | 4.8 / 5.7 |
+| Hammer | 120 | 4 | 10 | -3.2 / -1.1 |
+| Doppelboden | 252 | 2 | 32 | -3.3 / -7.2 |
+| Schluss > VT-Hoch | 266 | 58 | 0 | 7.5 / 8.3 |
+| Kein neues Tief | 266 | 71 | 0 | 7.6 / 8.6 |
+| Ueber EMA200 | 257 | 1 | 20 | -1.7 / -6.2 |
+| Tief >= 2 (alt) | 265 | 18 | 1 | 2.4 / 4.0 |
 
 ### haelt 2 ATR (63 T)
 
 | Merkmal | Werte | Plus | Minus | Diff |
 |---|---|---|---|---|
-| Korrektur >= T | 267 | 0 | 11 | -2.4 / -3.8 |
-| Korr. tiefer 7/10 | 261 | 12 | 12 | 0.6 / -0.3 |
-| Korr. laenger 7/10 | 261 | 5 | 15 | -0.9 / -3.0 |
-| RSI Tief unter 7/10 | 263 | 53 | 1 | 6.4 / 8.7 |
-| RSI < 50 (alt) | 267 | 1 | 13 | -1.0 / -2.1 |
-| RSI-Divergenz | 187 | 29 | 2 | 4.2 / 2.8 |
-| Ausverkauf | 228 | 74 | 2 | 8.4 / 12.9 |
-| Erschoepfung | 264 | 11 | 7 | 1.1 / -1.1 |
-| Erholung + Vol. | 183 | 79 | 0 | 11.1 / 14.9 |
-| Umkehr a | 267 | 0 | 18 | -4.7 / -5.8 |
-| Umkehr b | 267 | 32 | 0 | 6.3 / 6.9 |
-| Hammer | 118 | 5 | 12 | -2.6 / -3.4 |
-| Doppelboden | 252 | 4 | 39 | -4.0 / -7.2 |
-| Schluss > VT-Hoch | 267 | 125 | 0 | 10.1 / 9.9 |
-| Kein neues Tief | 267 | 123 | 0 | 10.0 / 10.3 |
-| Ueber EMA200 | 257 | 5 | 36 | -3.7 / -5.6 |
-| Tief >= 2 (alt) | 266 | 30 | 2 | 4.2 / 4.0 |
+| Korrektur >= T | 266 | 0 | 14 | -2.5 / -3.7 |
+| Korr. tiefer 7/10 | 260 | 13 | 11 | 0.8 / 0.0 |
+| Korr. laenger 7/10 | 260 | 7 | 16 | -0.1 / -3.1 |
+| RSI Tief unter 7/10 | 262 | 54 | 1 | 6.3 / 8.6 |
+| RSI < 50 (alt) | 266 | 1 | 12 | -1.1 / -1.9 |
+| RSI-Divergenz | 193 | 31 | 2 | 4.5 / 3.1 |
+| Ausverkauf | 230 | 71 | 2 | 8.4 / 12.4 |
+| Erschoepfung | 263 | 9 | 5 | 1.0 / -1.2 |
+| Erholung + Vol. | 187 | 82 | 0 | 10.9 / 15.2 |
+| Umkehr a | 266 | 0 | 14 | -4.7 / -5.6 |
+| Umkehr b | 266 | 32 | 0 | 6.3 / 6.8 |
+| Hammer | 120 | 5 | 12 | -2.7 / -2.5 |
+| Doppelboden | 252 | 3 | 37 | -4.0 / -6.9 |
+| Schluss > VT-Hoch | 266 | 126 | 0 | 10.0 / 9.9 |
+| Kein neues Tief | 266 | 120 | 0 | 9.9 / 10.3 |
+| Ueber EMA200 | 257 | 3 | 37 | -3.8 / -6.6 |
+| Tief >= 2 (alt) | 265 | 27 | 2 | 4.1 / 4.5 |
 
 ### Erklaerung der Merkmale
 
@@ -110,14 +110,14 @@ Anker = niedrigster Puffer unter dem Bezugstief, bei dem mind. 60 % der Faelle 6
 
 | Gruppe | Anker | R 19-22 | R ab 23 | Haelt ab 23 |
 |---|---|---|---|---|
-| 0 P | 3.25 | 6 % | 4 % | 58 % |
-| 1 P | 2.75 | 5 % | 4 % | 60 % |
+| 0 P | 3.25 | 6 % | 4 % | 59 % |
+| 1 P | 2.75 | 5 % | 3 % | 61 % |
 | 2+ P | 2.25 | 6 % | 10 % | 62 % |
-| 2+ P, Tief>=2 | 2.00 | 7 % | 12 % | 62 % |
-| 2+ P, Tief>=2, RSI<50 | 2.38 | 9 % | 11 % | 61 % |
-| alt: Tief>=2, RSI<50 | 2.75 | 8 % | 7 % | 59 % |
+| 2+ P, Tief>=2 | 2.00 | 7 % | 11 % | 62 % |
+| 2+ P, Tief>=2, RSI<50 | 2.25 | 8 % | 12 % | 61 % |
+| alt: Tief>=2, RSI<50 | 2.75 | 8 % | 6 % | 59 % |
 
-Werte je Gruppe: 0 P: 227 · 1 P: 259 · 2+ P: 256 · 2+ P, Tief>=2: 250 · 2+ P, Tief>=2, RSI<50: 234 · alt: Tief>=2, RSI<50: 251
+Werte je Gruppe: 0 P: 224 · 1 P: 258 · 2+ P: 256 · 2+ P, Tief>=2: 248 · 2+ P, Tief>=2, RSI<50: 233 · alt: Tief>=2, RSI<50: 249
 
 ## Rendite je Punktestufe (Renditeprobe KO-Schein)
 
@@ -129,114 +129,82 @@ Je Wert Mittelwert (mind. 10 Faelle), dann Median ueber die Werte. KO = Median d
 
 | Punkte | 19-22 | ab 23 | KO | Werte |
 |---|---|---|---|---|
-| 0 | 11 % | 11 % | 37 % | 267/272 |
-| 1 | 8 % | 7 % | 23 % | 267/272 |
-| 2 | 10 % | 14 % | 17 % | 264/272 |
-| 3 | 0 % | - % | 12 % | 151/0 |
+| 0 | 12 % | 12 % | 37 % | 266/271 |
+| 1 | 8 % | 7 % | 23 % | 266/271 |
+| 2 | 11 % | 14 % | 17 % | 263/271 |
+| 3 | 0 % | - % | 13 % | 148/0 |
 
-Stufe 2-3 gegen 0, je Wert: besser in beiden Zeitraeumen 56, schlechter in beiden 68, von 264.
+Stufe 2-3 gegen 0, je Wert: besser in beiden Zeitraeumen 59, schlechter in beiden 77, von 263.
 
 ### Puffer 2 ATR
 
 | Punkte | 19-22 | ab 23 | KO | Werte |
 |---|---|---|---|---|
-| 0 | 7 % | 8 % | 10 % | 267/272 |
-| 1 | 6 % | 4 % | 6 % | 267/272 |
-| 2 | 7 % | 12 % | 4 % | 264/272 |
-| 3 | 1 % | - % | 0 % | 151/0 |
+| 0 | 7 % | 7 % | 10 % | 266/271 |
+| 1 | 6 % | 4 % | 6 % | 266/271 |
+| 2 | 7 % | 11 % | 4 % | 263/271 |
+| 3 | 1 % | - % | 0 % | 148/0 |
 
-Stufe 2-3 gegen 0, je Wert: besser in beiden Zeitraeumen 68, schlechter in beiden 64, von 264.
+Stufe 2-3 gegen 0, je Wert: besser in beiden Zeitraeumen 62, schlechter in beiden 67, von 263.
 
 ### Puffer 3 ATR
 
 | Punkte | 19-22 | ab 23 | KO | Werte |
 |---|---|---|---|---|
-| 0 | 6 % | 6 % | 2 % | 267/272 |
-| 1 | 4 % | 3 % | 1 % | 267/272 |
-| 2 | 6 % | 9 % | 0 % | 264/272 |
-| 3 | 1 % | - % | 0 % | 151/0 |
+| 0 | 5 % | 6 % | 2 % | 266/271 |
+| 1 | 4 % | 3 % | 1 % | 266/271 |
+| 2 | 5 % | 8 % | 0 % | 263/271 |
+| 3 | 1 % | - % | 0 % | 148/0 |
 
-Stufe 2-3 gegen 0, je Wert: besser in beiden Zeitraeumen 67, schlechter in beiden 59, von 264.
+Stufe 2-3 gegen 0, je Wert: besser in beiden Zeitraeumen 61, schlechter in beiden 63, von 263.
 
-## Pruefttage am 2026-10-02 (nur Information)
+## Pruefttage am 2026-10-30 (nur Information)
 
 | Wert | Tief | RSI | Punkte |
 |---|---|---|---|
-| ABNB | 4 | 46 | 2 |
-| AIR.DE | 5 | 38 | 2 |
-| ALV.DE | 2 | 37 | 2 |
-| AMT | 3 | 33 | 2 |
-| AXON | 4 | 31 | 2 |
-| BAS.DE | 3 | 40 | 2 |
-| BMO | 2 | 34 | 2 |
-| CHTR | 2 | 28 | 2 |
-| CVS | 2 | 37 | 2 |
-| DASH | 4 | 43 | 2 |
-| FDX | 5 | 39 | 2 |
-| HD | 6 | 26 | 2 |
-| LOW | 5 | 25 | 2 |
-| MDLZ | 4 | 32 | 2 |
-| ORCL | 3 | 48 | 2 |
-| RHM.DE | 5 | 36 | 2 |
-| RIO | 3 | 40 | 2 |
-| UNH | 2 | 40 | 2 |
-| ABBV | 2 | 54 | 1 |
-| ABT | 1 | 30 | 1 (Umkehr a) |
-| AMZN | 2 | 49 | 1 |
-| ANET | 1 | 60 | 1 |
-| ARM | 1 | 59 | 1 |
-| ASML | 1 | 71 | 1 |
-| AVGO | 2 | 48 | 1 |
-| BBVA | 1 | 35 | 1 |
-| CCEP | 1 | 43 | 1 |
-| DDOG | 1 | 71 | 1 |
-| DHL.DE | 2 | 53 | 1 |
-| ENR.DE | 4 | 52 | 1 |
-| FTNT | 1 | 64 | 1 |
-| IFX.DE | 1 | 65 | 1 |
-| ILMN | 1 | 70 | 1 |
-| LIN | 1 | 56 | 1 |
-| LLY | 1 | 43 | 1 |
-| MA | 5 | 39 | 1 (Umkehr a) |
-| MAR | 1 | 60 | 1 |
-| MDB | 3 | 44 | 1 |
-| META | 1 | 61 | 1 |
-| NEM | 4 | 41 | 1 |
-| NKE | 9 | 28 | 1 (Umkehr a) |
-| NVO | 4 | 26 | 1 (Umkehr a) |
-| PG | 1 | 47 | 1 |
-| PLTR | 1 | 61 | 1 |
-| QCOM | 1 | 52 | 1 |
-| QIA.DE | 1 | 67 | 1 |
-| ROST | 1 | 43 | 1 |
-| RTX | 6 | 24 | 1 (Umkehr a) |
-| SAN | 2 | 31 | 1 (Umkehr a) |
-| SCCO | 3 | 56 | 1 |
-| SHOP | 3 | 61 | 1 |
-| SONY | 1 | 51 | 1 |
-| TMUS | 3 | 37 | 1 |
-| TSLA | 1 | 55 | 1 |
-| TXN | 1 | 70 | 1 |
-| WMT | 4 | 40 | 1 |
-| ADS.DE | 5 | 44 | 0 (Umkehr a) |
-| AZN | 3 | 40 | 0 (Umkehr a) |
-| BABA | 3 | 39 | 0 (Umkehr a) |
-| BMY | 1 | 38 | 0 (Umkehr a) |
-| CBK.DE | 2 | 38 | 0 (Umkehr a) |
-| HSBC | 2 | 34 | 0 (Umkehr a) |
-| ING | 2 | 43 | 0 (Umkehr a) |
-| MRK | 1 | 46 | 0 (Umkehr a) |
-| MRK.DE | 1 | 54 | 0 (Umkehr a) |
-| MTX.DE | 1 | 59 | 0 (Umkehr a) |
-| PM | 1 | 45 | 0 (Umkehr a) |
-| RWE.DE | 1 | 51 | 0 (Umkehr a) |
-| SIE.DE | 1 | 53 | 0 (Umkehr a) |
-| SRT3.DE | 2 | 53 | 0 (Umkehr a) |
-| STX | 1 | 46 | 0 (Umkehr a) |
-| SY1.DE | 1 | 50 | 0 (Umkehr a) |
-| SYK | 2 | 38 | 0 (Umkehr a) |
-| TMO | 1 | 57 | 0 (Umkehr a) |
-| UBS | 2 | 35 | 0 (Umkehr a) |
-| V | 4 | 41 | 0 (Umkehr a) |
-| WDC | 4 | 39 | 0 |
-| WELL | 1 | 40 | 0 (Umkehr a) |
+| ADP | 1 | 59 | 2 |
+| BKNG | 3 | 33 | 2 |
+| CVX | 1 | 73 | 2 |
+| DASH | 2 | 44 | 2 |
+| LIN | 1 | 69 | 2 |
+| NFLX | 5 | 31 | 2 |
+| PEP | 1 | 61 | 2 |
+| PFE | 1 | 67 | 2 |
+| PSX | 1 | 55 | 2 |
+| REGN | 1 | 79 | 2 |
+| T | 4 | 38 | 2 |
+| TMUS | 2 | 49 | 2 |
+| VLO | 1 | 45 | 2 |
+| XOM | 1 | 73 | 2 |
+| ABBV | 2 | 73 | 1 |
+| AMGN | 2 | 71 | 1 |
+| BABA | 3 | 37 | 1 |
+| BEI.DE | 1 | 61 | 1 |
+| BIIB | 1 | 67 | 1 |
+| BRK-B | 2 | 67 | 1 |
+| CCEP | 1 | 62 | 1 |
+| CVS | 1 | 47 | 1 |
+| DELL | 2 | 36 | 1 (Umkehr a) |
+| EQNR | 1 | 62 | 1 |
+| FANG | 1 | 67 | 1 |
+| GEV | 2 | 41 | 1 (Umkehr a) |
+| GLW | 1 | 36 | 1 (Umkehr a) |
+| HEN3.DE | 1 | 69 | 1 |
+| JNJ | 1 | 60 | 1 |
+| KHC | 1 | 56 | 1 |
+| MAR | 2 | 68 | 1 |
+| META | 3 | 33 | 1 (Umkehr a) |
+| PAYX | 3 | 53 | 1 |
+| SONY | 1 | 55 | 1 |
+| UL | 1 | 56 | 1 |
+| UNH | 1 | 56 | 1 |
+| VRSK | 1 | 62 | 1 |
+| VZ | 1 | 49 | 1 |
+| WDAY | 1 | 52 | 1 |
+| AMZN | 2 | 38 | 0 (Umkehr a) |
+| APH | 1 | 47 | 0 (Umkehr a) |
+| MSFT | 2 | 49 | 0 |
+| MU | 2 | 42 | 0 (Umkehr a) |
+| ON | 2 | 43 | 0 |
+| SYK | 2 | 48 | 0 (Umkehr a) |
+| TSLA | 1 | 61 | 0 (Umkehr a) |

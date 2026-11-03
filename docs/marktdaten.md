@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-11-03 03:29 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1157._
+_Erstellt 2026-11-03 12:46 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1157._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -65,24 +65,25 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | VLO (VLO) | 381.46 | - | - | ja | 39.35 |
 | PSX (PSX) | 275.04 | - | - | ja | 49.4 |
 | EQIX (EQIX) | 993.69 | - | - | ja | 47.09 |
-| SHEL (SHEL) | 39.1 | - | - | ja | 56.12 |
-| TTE (TTE) | 83.3 | - | - | ja | 59.77 |
+| SHEL (SHEL) | 39.21 | - | - | ja | 57.1 |
+| TTE (TTE) | 83.61 | - | - | ja | 61.17 |
 | ENB (ENB) | 49.2 | - | - | ja | 61.2 |
-| EQNR (EQNR) | 428.6 | - | - | ja | 50.65 |
+| EQNR (EQNR) | 427.9 | - | - | ja | 50.32 |
+| ING (ING) | 28.135 | - | - | ja | 34.81 |
 | CNQ (CNQ) | 53.64 | - | - | ja | 55.99 |
-| BP (BP) | 5.982 | - | - | ja | 49.85 |
+| GSK (GSK) | 18.245 | - | - | ja | 46.85 |
+| BP (BP) | 6.0 | - | - | ja | 50.52 |
 | CVX (CVX) | 227.77 | - | - | ja | 58.7 |
-| DB1.DE (DB1.DE) | 314.2 | - | - | ja | 64.37 |
-| DTE.DE (DTE.DE) | 25.76 | - | - | ja | 47.54 |
-| EOAN.DE (EOAN.DE) | 18.77 | - | - | ja | 66.63 |
+| DB1.DE (DB1.DE) | 313.6 | - | - | ja | 63.4 |
+| EOAN.DE (EOAN.DE) | 18.75 | - | - | ja | 66.09 |
+| MRK.DE (MRK.DE) | 150.0 | - | - | ja | 64.78 |
 | QIA.DE (QIA.DE) | 45.0 | - | ja | ja | 78.83 |
-| RHM.DE (RHM.DE) | 994.1 | - | - | ja | 46.22 |
-| RWE.DE (RWE.DE) | 56.76 | - | - | ja | 44.28 |
+| RHM.DE (RHM.DE) | 1000.0 | - | - | ja | 47.17 |
+| RWE.DE (RWE.DE) | 56.52 | - | - | ja | 43.37 |
 | Palladium (PA=F) | 955.0 | - | - | ja | 27.23 |
-| Brent Oel (BZ=F) | 104.78 | - | - | ja | 44.48 |
-| WTI Oel (CL=F) | 96.62 | - | - | ja | 48.42 |
-| Mais (ZC=F) | 446.75 | - | - | ja | 24.75 |
-| Zucker (SB=F) | 19.0 | - | - | ja | 43.16 |
+| Brent Oel (BZ=F) | 104.77 | - | - | ja | 44.46 |
+| WTI Oel (CL=F) | 96.46 | - | - | ja | 48.2 |
+| Zucker (SB=F) | 19.06 | - | - | ja | 43.8 |
 | EUR/TWD (EURTWD=X) | 35.377 | - | - | ja | 40.27 |
 
 ---

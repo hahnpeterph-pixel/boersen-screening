@@ -1,5 +1,5 @@
 {
- "date": "2026-10-31",
+ "date": "2026-11-03",
  "ranks": {
   "turnaround": [
    "SNPS",
@@ -15,24 +15,24 @@
    "MRK",
    "EMR",
    "NEM",
-   "TM",
-   "MO"
+   "MO",
+   "DE"
   ],
   "momentum": [
    "PSX",
    "MRNA",
-   "CVX",
    "ABBV",
    "MRK",
    "MPC",
+   "CVX",
+   "DB1.DE",
    "MA",
    "CCEP",
-   "ACN",
-   "KO",
+   "HEN3.DE",
+   "DHL.DE",
    "CSX",
    "KDP",
-   "LMT",
-   "DB1.DE",
+   "ACN",
    "BNS"
   ],
   "value": [
@@ -44,45 +44,76 @@
    "REGN",
    "NEM",
    "RIO",
-   "ABNB",
    "DXCM",
    "META",
-   "BHP",
+   "ABNB",
    "ROST",
    "MNST",
+   "V",
    "PSX"
   ]
  },
  "changes": {
   "turnaround": {
-   "entries": [],
-   "exits": [],
-   "moves": []
-  },
-  "momentum": {
-   "entries": [],
-   "exits": [],
-   "moves": []
-  },
-  "value": {
    "entries": [
     {
-     "ticker": "TSM",
-     "rank": 3
-    },
-    {
-     "ticker": "PSX",
+     "ticker": "DE",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "CSCO",
-     "old_rank": 3
+     "ticker": "TM",
+     "old_rank": 14
+    }
+   ],
+   "moves": []
+  },
+  "momentum": {
+   "entries": [
+    {
+     "ticker": "HEN3.DE",
+     "rank": 10
     },
     {
+     "ticker": "DHL.DE",
+     "rank": 11
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "KO",
+     "old_rank": 10
+    },
+    {
+     "ticker": "LMT",
+     "old_rank": 13
+    }
+   ],
+   "moves": [
+    {
+     "ticker": "DB1.DE",
+     "rank": 7,
+     "delta": 7
+    },
+    {
+     "ticker": "ACN",
+     "rank": 14,
+     "delta": -5
+    }
+   ]
+  },
+  "value": {
+   "entries": [
+    {
      "ticker": "V",
-     "old_rank": 15
+     "rank": 14
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "BHP",
+     "old_rank": 12
     }
    ],
    "moves": []

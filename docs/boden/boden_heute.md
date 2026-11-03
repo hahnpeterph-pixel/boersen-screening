@@ -1,8 +1,8 @@
-# Boden-Screening 2026-11-02 (Stand 2026-11-03 01:54 UTC)
+# Boden-Screening 2026-11-02 (Stand 2026-11-03 03:32 UTC)
 
 Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RSI < 50 + mind. 2 Boden-Punkte (nur Technik). Die Filter (Analysten, Anker, CRV 2:1) stehen in docs/heute.csv. Boden-Anker = niedrigster Puffer mit 60 % Halterate fuer diese Gruppe und diesen Wert (Vollauf), KO-Marke = Bezugstief - Anker x ATR.
 
-## Kandidaten (16)
+## Kandidaten (14)
 
 | Wert | Tief | RSI | Anker | KO-Marke | Analysten |
 |---|---|---|---|---|---|
@@ -15,32 +15,24 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | NEM | 2 | 41 | 3.50 | 89.60 | 89 % |
 | NVDA | 2 | 33 | 2.00 | 187.45 | 100 % |
 | ODFL | 5 | 42 | 2.50 | 149.12 | 43 % |
-| PCAR | 2 | 30 | 2.25 | 93.85 | 50 % |
-| PH | 3 | 48 | 2.50 | 817.44 | 82 % |
+| PCAR | 2 | 29 | 2.25 | 93.85 | 50 % |
 | RIO | 6 | 31 | 2.75 | 53.84 | 50 % |
 | SAN | 5 | 30 | 3.50 | 8.80 | 33 % |
-| SCCO | 5 | 37 | 3.50 | 141.62 | 0 % |
+| SCCO | 5 | 35 | 3.50 | 142.10 | 0 % |
 | TTWO | 2 | 35 | 2.25 | 170.85 | 100 % |
-| UBER | 2 | 43 | 2.50 | 59.60 | 95 % |
 
-## Weitere Pruefttage (103)
+## Weitere Pruefttage (104)
 
 | Wert | Punkte | Grund |
 |---|---|---|
+| DASH | 3 | RSI >= 50 |
 | ABNB | 2 | Tief 1, RSI >= 50 |
-| BRK-B | 2 | RSI >= 50 |
 | BTI | 2 | RSI >= 50 |
-| DASH | 2 | RSI >= 50 |
 | DBK.DE | 2 | RSI >= 50 |
-| DUK | 2 | Tief 1, RSI >= 50 |
-| HD | 2 | Tief 1, RSI >= 50 |
 | IDXX | 2 | Tief 1, RSI >= 50 |
 | KDP | 2 | Tief 1, RSI >= 50 |
-| KO | 2 | Tief 1, RSI >= 50 |
 | PLD | 2 | Tief 1, RSI >= 50 |
 | SHW | 2 | Tief 1, RSI >= 50 |
-| V | 2 | Tief 1, RSI >= 50 |
-| ADBE | 1 | 1 P, Tief 1, RSI >= 50 |
 | ADI | 1 | 1 P, Tief 1, RSI >= 50 |
 | AIR.DE | 1 | 1 P, Tief 1, RSI >= 50 |
 | ALV.DE | 1 | 1 P, RSI >= 50 |
@@ -52,6 +44,7 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | BLK | 1 | 1 P, Tief 1, RSI >= 50 |
 | BMW.DE | 1 | 1 P, Tief 1, RSI >= 50 |
 | BNR.DE | 1 | 1 P, Tief 1, RSI >= 50 |
+| BRK-B | 1 | 1 P, RSI >= 50 |
 | C | 1 | 1 P, Tief 1 |
 | CB | 1 | 1 P, Tief 1, RSI >= 50 |
 | CBK.DE | 1 | 1 P, Tief 1 |
@@ -60,11 +53,12 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | CSX | 1 | 1 P, RSI >= 50 |
 | CTAS | 1 | 1 P, Tief 1, RSI >= 50 |
 | DIS | 1 | 1 P, Tief 1, RSI >= 50 |
+| DUK | 1 | 1 P, Tief 1, RSI >= 50 |
 | ENR.DE | 1 | 1 P, Tief 1 |
-| FAST | 1 | 1 P, Tief 1, RSI >= 50 |
 | GE | 1 | 1 P, RSI >= 50 |
 | GEHC | 1 | 1 P, RSI >= 50 |
 | GS | 1 | 1 P, Tief 1 |
+| HD | 1 | 1 P, Tief 1, RSI >= 50 |
 | HEI.DE | 1 | 1 P, Tief 1, RSI >= 50 |
 | HNR1.DE | 1 | 1 P, Tief 1, RSI >= 50 |
 | HON | 1 | 1 P, Tief 1, RSI >= 50 |
@@ -72,6 +66,7 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | IBM | 1 | 1 P, RSI >= 50 |
 | IFX.DE | 1 | 1 P, Tief 1 |
 | KHC | 1 | 1 P, Tief 1, RSI >= 50 |
+| KO | 1 | 1 P, Tief 1, RSI >= 50 |
 | LOW | 1 | 1 P, Tief 1, RSI >= 50 |
 | MA | 1 | 1 P, Tief 1, RSI >= 50 |
 | MAR | 1 | 1 P, RSI >= 50 |
@@ -90,6 +85,7 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | ORLY | 1 | 1 P, Tief 1, RSI >= 50 |
 | PAH3.DE | 1 | 1 P, RSI >= 50 |
 | PDD | 1 | 1 P, RSI >= 50 |
+| PH | 1 | 1 P |
 | QIA.DE | 1 | 1 P, Tief 1, RSI >= 50 |
 | SHL.DE | 1 | 1 P, Tief 1, RSI >= 50 |
 | SIE.DE | 1 | 1 P, Tief 1, RSI >= 50 |
@@ -99,12 +95,15 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | SRT3.DE | 1 | 1 P, Tief 1, RSI >= 50 |
 | TSM | 1 | 1 P, Umkehr a, Daten unvollstaendig (2026-10-23) |
 | TXN | 1 | 1 P, Tief 1, RSI >= 50 |
+| UBER | 1 | 1 P |
 | UBS | 1 | 1 P, RSI >= 50 |
 | UNP | 1 | 1 P, RSI >= 50 |
+| V | 1 | 1 P, Tief 1, RSI >= 50 |
 | VRSK | 1 | 1 P, Tief 1, RSI >= 50 |
 | VZ | 1 | 1 P, Tief 1, RSI >= 50 |
 | WDAY | 1 | 1 P, Tief 1, RSI >= 50 |
 | WFC | 1 | 1 P, Tief 1, RSI >= 50 |
+| ADBE | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
 | AEP | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
 | AMGN | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
 | AMT | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
@@ -131,4 +130,4 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | XEL | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
 | ZAL.DE | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
 
-Nicht aktuell (kein Kurs vom 2026-11-02): DHL.DE, PBR
+Nicht aktuell (kein Kurs vom 2026-11-02): PBR

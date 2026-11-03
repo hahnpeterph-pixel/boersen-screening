@@ -3,117 +3,245 @@
  "ranks": {
   "turnaround": [
    "SNPS",
-   "PSX",
-   "TSLA",
-   "ADI",
-   "ORLY",
-   "MPC",
    "CDNS",
-   "VLO",
-   "ILMN",
+   "CNQ",
+   "TMO",
+   "COP",
+   "ISRG",
+   "XOM",
    "MRNA",
-   "MRK",
-   "EMR",
-   "NEM",
+   "ADBE",
+   "TSLA",
+   "ORLY",
    "MO",
-   "DE"
+   "DE",
+   "EMR",
+   "MAR"
   ],
   "momentum": [
-   "PSX",
    "MRNA",
-   "ABBV",
-   "MRK",
-   "MPC",
-   "CVX",
-   "DB1.DE",
-   "MA",
+   "VRTX",
    "CCEP",
-   "HEN3.DE",
-   "DHL.DE",
-   "CSX",
+   "AMGN",
+   "ADP",
+   "V",
+   "MAR",
+   "COP",
+   "DB1.DE",
+   "BNS",
    "KDP",
-   "ACN",
-   "BNS"
+   "CNQ",
+   "XOM",
+   "PM",
+   "DHL.DE"
   ],
   "value": [
    "MU",
-   "NVDA",
    "TSM",
+   "AVGO",
    "PBR",
    "CNQ",
-   "REGN",
    "NEM",
    "RIO",
-   "DXCM",
+   "REGN",
    "META",
-   "ABNB",
+   "DXCM",
    "ROST",
+   "ABNB",
+   "PSX",
    "MNST",
-   "V",
-   "PSX"
+   "UNP"
   ]
  },
  "changes": {
   "turnaround": {
    "entries": [
     {
-     "ticker": "DE",
+     "ticker": "CNQ",
+     "rank": 3
+    },
+    {
+     "ticker": "TMO",
+     "rank": 4
+    },
+    {
+     "ticker": "COP",
+     "rank": 5
+    },
+    {
+     "ticker": "ISRG",
+     "rank": 6
+    },
+    {
+     "ticker": "XOM",
+     "rank": 7
+    },
+    {
+     "ticker": "ADBE",
+     "rank": 9
+    },
+    {
+     "ticker": "MAR",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "TM",
-     "old_rank": 14
-    }
-   ],
-   "moves": []
-  },
-  "momentum": {
-   "entries": [
-    {
-     "ticker": "HEN3.DE",
-     "rank": 10
+     "ticker": "PSX",
+     "old_rank": 2
     },
     {
-     "ticker": "DHL.DE",
-     "rank": 11
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "KO",
-     "old_rank": 10
+     "ticker": "ADI",
+     "old_rank": 4
     },
     {
-     "ticker": "LMT",
+     "ticker": "MPC",
+     "old_rank": 6
+    },
+    {
+     "ticker": "VLO",
+     "old_rank": 8
+    },
+    {
+     "ticker": "ILMN",
+     "old_rank": 9
+    },
+    {
+     "ticker": "MRK",
+     "old_rank": 11
+    },
+    {
+     "ticker": "NEM",
      "old_rank": 13
     }
    ],
    "moves": [
     {
-     "ticker": "DB1.DE",
-     "rank": 7,
-     "delta": 7
+     "ticker": "CDNS",
+     "rank": 2,
+     "delta": 5
+    },
+    {
+     "ticker": "TSLA",
+     "rank": 10,
+     "delta": -7
+    },
+    {
+     "ticker": "ORLY",
+     "rank": 11,
+     "delta": -6
+    }
+   ]
+  },
+  "momentum": {
+   "entries": [
+    {
+     "ticker": "VRTX",
+     "rank": 2
+    },
+    {
+     "ticker": "AMGN",
+     "rank": 4
+    },
+    {
+     "ticker": "ADP",
+     "rank": 5
+    },
+    {
+     "ticker": "V",
+     "rank": 6
+    },
+    {
+     "ticker": "MAR",
+     "rank": 7
+    },
+    {
+     "ticker": "COP",
+     "rank": 8
+    },
+    {
+     "ticker": "CNQ",
+     "rank": 12
+    },
+    {
+     "ticker": "XOM",
+     "rank": 13
+    },
+    {
+     "ticker": "PM",
+     "rank": 14
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "PSX",
+     "old_rank": 1
+    },
+    {
+     "ticker": "ABBV",
+     "old_rank": 3
+    },
+    {
+     "ticker": "MRK",
+     "old_rank": 4
+    },
+    {
+     "ticker": "MPC",
+     "old_rank": 5
+    },
+    {
+     "ticker": "CVX",
+     "old_rank": 6
+    },
+    {
+     "ticker": "MA",
+     "old_rank": 8
+    },
+    {
+     "ticker": "HEN3.DE",
+     "old_rank": 10
+    },
+    {
+     "ticker": "CSX",
+     "old_rank": 12
     },
     {
      "ticker": "ACN",
-     "rank": 14,
-     "delta": -5
+     "old_rank": 14
+    }
+   ],
+   "moves": [
+    {
+     "ticker": "CCEP",
+     "rank": 3,
+     "delta": 6
+    },
+    {
+     "ticker": "BNS",
+     "rank": 10,
+     "delta": 5
     }
    ]
   },
   "value": {
    "entries": [
     {
-     "ticker": "V",
-     "rank": 14
+     "ticker": "AVGO",
+     "rank": 3
+    },
+    {
+     "ticker": "UNP",
+     "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "BHP",
-     "old_rank": 12
+     "ticker": "NVDA",
+     "old_rank": 2
+    },
+    {
+     "ticker": "V",
+     "old_rank": 14
     }
    ],
    "moves": []

@@ -1,4 +1,4 @@
-# Boden-Screening 2026-11-03 (Stand 2026-11-04 02:24 UTC)
+# Boden-Screening 2026-11-03 (Stand 2026-11-04 04:47 UTC)
 
 Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RSI < 50 + mind. 2 Boden-Punkte (nur Technik). Die Filter (Analysten, Anker, CRV 2:1) stehen in docs/heute.csv. Boden-Anker = niedrigster Puffer mit 60 % Halterate fuer diese Gruppe und diesen Wert (Vollauf), KO-Marke = Bezugstief - Anker x ATR.
 
@@ -63,7 +63,7 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | MCK | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
 | MDB | 0 | 0 P, Umkehr a |
 | MO | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
-| PBR | 0 | 0 P, Umkehr a |
+| PBR | 0 | 0 P |
 | PLD | 0 | 0 P, Tief 1, Umkehr a |
 | PM | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
 | QCOM | 0 | 0 P, Tief 1, Umkehr a |
@@ -73,4 +73,4 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | VLO | 0 | 0 P, Tief 1, Umkehr a |
 | ZS | 0 | 0 P, Tief 1, Umkehr a |
 
-Nicht aktuell (kein Kurs vom 2026-11-03): DHL.DE, MFG, MUFG, SMFG, SONY, TM
+Nicht aktuell (kein Kurs vom 2026-11-03): MFG, MUFG, SMFG, SONY, TM

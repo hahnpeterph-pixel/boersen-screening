@@ -1,5 +1,5 @@
 {
- "date": "2026-11-03",
+ "date": "2026-11-04",
  "ranks": {
   "turnaround": [
    "SNPS",
@@ -10,18 +10,18 @@
    "ISRG",
    "XOM",
    "MRNA",
-   "BEI.DE",
    "ADBE",
    "TSLA",
    "ORLY",
    "MO",
+   "BEI.DE",
    "DE",
-   "EMR"
+   "DB1.DE"
   ],
   "momentum": [
    "MRNA",
-   "DB1.DE",
    "VRTX",
+   "DB1.DE",
    "CCEP",
    "AMGN",
    "ADP",
@@ -29,17 +29,17 @@
    "MAR",
    "COP",
    "BNS",
-   "KDP",
+   "CVX",
    "CNQ",
-   "XOM",
+   "KDP",
    "PM",
-   "LMT"
+   "DHL.DE"
   ],
   "value": [
    "MU",
    "TSM",
-   "AVGO",
    "PBR",
+   "AVGO",
    "CNQ",
    "NEM",
    "RIO",
@@ -49,21 +49,21 @@
    "ROST",
    "ABNB",
    "DXCM",
-   "MNST",
-   "V"
+   "MTX.DE",
+   "MNST"
   ]
  },
  "changes": {
   "turnaround": {
    "entries": [
     {
-     "ticker": "BEI.DE",
-     "rank": 9
+     "ticker": "DB1.DE",
+     "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "MAR",
+     "ticker": "EMR",
      "old_rank": 15
     }
    ],
@@ -72,42 +72,36 @@
   "momentum": {
    "entries": [
     {
-     "ticker": "LMT",
+     "ticker": "CVX",
+     "rank": 11
+    },
+    {
+     "ticker": "DHL.DE",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "DHL.DE",
+     "ticker": "XOM",
+     "old_rank": 13
+    },
+    {
+     "ticker": "LMT",
      "old_rank": 15
     }
    ],
-   "moves": [
-    {
-     "ticker": "DB1.DE",
-     "rank": 2,
-     "delta": 7
-    }
-   ]
+   "moves": []
   },
   "value": {
    "entries": [
     {
-     "ticker": "VLO",
-     "rank": 10
-    },
-    {
-     "ticker": "V",
-     "rank": 15
+     "ticker": "MTX.DE",
+     "rank": 14
     }
    ],
    "exits": [
     {
-     "ticker": "PSX",
-     "old_rank": 13
-    },
-    {
-     "ticker": "UNP",
+     "ticker": "V",
      "old_rank": 15
     }
    ],

@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-11-04 04:44 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1192._
+_Erstellt 2026-11-04 12:52 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1192._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -59,32 +59,30 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | MPC (MPC) | 427.34 | - | - | ja | 44.72 |
 | PSX (PSX) | 271.94 | - | - | ja | 47.24 |
 | TSM (TSM) | 2295.0 | - | - | ja | 30.19 |
-| SHEL (SHEL) | 38.67 | - | - | ja | 52.28 |
+| SHEL (SHEL) | 38.635 | - | - | ja | 51.99 |
 | BHP (BHP) | 56.42 | - | ja | ja | 39.15 |
 | TD (TD) | 124.74 | - | - | ja | 58.84 |
-| PBR (PBR) | 57.98 | ja | - | ja | 43.94 |
-| BTI (BTI) | 45.34 | - | - | ja | 64.49 |
+| PBR (PBR) | 57.82 | ja | - | ja | 43.5 |
+| BTI (BTI) | 45.29 | - | - | ja | 63.95 |
 | BMO (BMO) | 171.7 | - | - | ja | 53.47 |
 | BNS (BNS) | 93.66 | - | - | ja | 55.55 |
 | ENB (ENB) | 48.94 | - | - | ja | 58.01 |
-| EQNR (EQNR) | 421.1 | - | - | ja | 47.07 |
+| EQNR (EQNR) | 422.1 | - | - | ja | 47.52 |
+| ING (ING) | 27.715 | - | - | ja | 32.16 |
 | CM (CM) | 116.52 | - | - | ja | 57.28 |
-| BP (BP) | 5.888 | - | - | ja | 46.39 |
+| BP (BP) | 5.893 | - | - | ja | 46.56 |
 | AXON (AXON) | 416.57 | - | - | ja | 45.0 |
 | CCEP (CCEP) | 111.56 | - | - | ja | 55.39 |
-| EOAN.DE (EOAN.DE) | 18.44 | - | - | ja | 58.25 |
-| MRK.DE (MRK.DE) | 148.65 | - | - | ja | 61.39 |
-| SAP.DE (SAP.DE) | 206.25 | - | - | ja | 57.79 |
+| EOAN.DE (EOAN.DE) | 18.455 | - | - | ja | 58.59 |
+| MRK.DE (MRK.DE) | 149.15 | - | - | ja | 62.6 |
+| P911.DE (P911.DE) | 46.04 | - | - | ja | 61.89 |
+| SAP.DE (SAP.DE) | 206.65 | ja | - | ja | 58.44 |
 | VOW3.DE (VOW3.DE) | 68.66 | - | ja | ja | 43.89 |
-| ZAL.DE (ZAL.DE) | 25.42 | - | ja | ja | 52.88 |
-| Silber (SI=F) | 49.33 | - | - | ja | 28.07 |
-| Platin (PL=F) | 1395.5 | - | - | ja | 28.33 |
-| Brent Oel (BZ=F) | 102.75 | - | - | ja | 41.87 |
-| WTI Oel (CL=F) | 95.14 | - | - | ja | 46.32 |
-| Kupfer (HG=F) | 6.283 | - | - | ja | 38.17 |
-| Weizen (ZW=F) | 591.0 | - | - | ja | 23.01 |
-| Mais (ZC=F) | 438.75 | - | - | ja | 21.89 |
-| Zucker (SB=F) | 18.35 | - | - | ja | 36.82 |
+| ZAL.DE (ZAL.DE) | 25.29 | - | ja | ja | 51.87 |
+| Kupfer (HG=F) | 6.3785 | - | - | ja | 41.63 |
+| Weizen (ZW=F) | 599.75 | - | - | ja | 25.09 |
+| Mais (ZC=F) | 442.5 | - | - | ja | 23.3 |
+| Zucker (SB=F) | 18.33 | - | - | ja | 36.66 |
 
 ---
 

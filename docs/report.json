@@ -21,19 +21,19 @@
   "momentum": [
    "MRNA",
    "AMGN",
-   "DB1.DE",
    "GILD",
    "V",
    "ADP",
+   "DB1.DE",
    "BNS",
    "CTAS",
    "PM",
    "KDP",
-   "DHL.DE",
    "CCEP",
    "LMT",
    "CNQ",
-   "CVX"
+   "CVX",
+   "TXN"
   ],
   "value": [
    "MU",
@@ -55,150 +55,28 @@
  },
  "changes": {
   "turnaround": {
+   "entries": [],
+   "exits": [],
+   "moves": []
+  },
+  "momentum": {
    "entries": [
     {
-     "ticker": "CTSH",
-     "rank": 2
-    },
-    {
-     "ticker": "PFE",
-     "rank": 3
-    },
-    {
-     "ticker": "ADSK",
-     "rank": 6
-    },
-    {
-     "ticker": "CVX",
-     "rank": 7
-    },
-    {
-     "ticker": "DHR",
-     "rank": 8
-    },
-    {
-     "ticker": "KDP",
-     "rank": 9
-    },
-    {
-     "ticker": "EMR",
-     "rank": 14
-    },
-    {
-     "ticker": "COF",
+     "ticker": "TXN",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "CDNS",
-     "old_rank": 2
-    },
-    {
-     "ticker": "TMO",
-     "old_rank": 4
-    },
-    {
-     "ticker": "COP",
-     "old_rank": 5
-    },
-    {
-     "ticker": "MRNA",
-     "old_rank": 8
-    },
-    {
-     "ticker": "ADBE",
-     "old_rank": 9
-    },
-    {
-     "ticker": "TSLA",
-     "old_rank": 10
-    },
-    {
-     "ticker": "MO",
-     "old_rank": 12
-    },
-    {
-     "ticker": "DE",
-     "old_rank": 14
+     "ticker": "DHL.DE",
+     "old_rank": 11
     }
    ],
-   "moves": [
-    {
-     "ticker": "ISRG",
-     "rank": 1,
-     "delta": 5
-    },
-    {
-     "ticker": "SNPS",
-     "rank": 10,
-     "delta": -9
-    }
-   ]
-  },
-  "momentum": {
-   "entries": [
-    {
-     "ticker": "GILD",
-     "rank": 4
-    },
-    {
-     "ticker": "CTAS",
-     "rank": 8
-    },
-    {
-     "ticker": "LMT",
-     "rank": 13
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "VRTX",
-     "old_rank": 2
-    },
-    {
-     "ticker": "MAR",
-     "old_rank": 8
-    },
-    {
-     "ticker": "COP",
-     "old_rank": 9
-    }
-   ],
-   "moves": [
-    {
-     "ticker": "PM",
-     "rank": 9,
-     "delta": 5
-    },
-    {
-     "ticker": "CCEP",
-     "rank": 12,
-     "delta": -8
-    }
-   ]
+   "moves": []
   },
   "value": {
-   "entries": [
-    {
-     "ticker": "NVDA",
-     "rank": 2
-    },
-    {
-     "ticker": "TTE",
-     "rank": 10
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "AVGO",
-     "old_rank": 4
-    },
-    {
-     "ticker": "VLO",
-     "old_rank": 10
-    }
-   ],
+   "entries": [],
+   "exits": [],
    "moves": []
   },
   "analyst_flips": []

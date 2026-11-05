@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-11-05 02:26 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1207._
+_Erstellt 2026-11-05 13:01 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1207._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -13,7 +13,7 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | ADI (ADI) | 406.24 | - | - | ja | 50.26 |
 | AMAT (AMAT) | 369.4 | - | - | ja | 33.52 |
 | ARM (ARM) | 191.8 | - | ja | ja | 32.62 |
-| ASML (ASML) | 1331.2 | - | - | ja | 33.48 |
+| ASML (ASML) | 1337.6 | - | - | ja | 33.96 |
 | AVGO (AVGO) | 325.48 | - | - | ja | 42.03 |
 | BKR (BKR) | 49.87 | - | - | ja | 33.2 |
 | CAT (CAT) | 591.3 | - | - | ja | 22.68 |
@@ -50,20 +50,21 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | VLO (VLO) | 365.34 | - | - | ja | 35.73 |
 | PSX (PSX) | 259.63 | - | - | ja | 39.79 |
 | TSM (TSM) | 2260.0 | - | - | ja | 27.28 |
-| SHEL (SHEL) | 38.005 | - | - | ja | 47.03 |
+| SHEL (SHEL) | 37.955 | - | - | ja | 46.68 |
 | MUFG (MUFG) | 3360.0 | ja | ja | - | 42.69 |
 | BHP (BHP) | 55.56 | - | - | ja | 36.5 |
-| TTE (TTE) | 81.68 | - | - | ja | 52.61 |
+| TTE (TTE) | 81.57 | - | - | ja | 52.18 |
 | SONY (SONY) | 3933.0 | - | ja | ja | 52.15 |
+| PBR (PBR) | 53.4 | - | - | ja | 33.61 |
 | ENB (ENB) | 48.78 | - | - | ja | 56.07 |
-| EQNR (EQNR) | 406.1 | - | - | ja | 40.8 |
+| EQNR (EQNR) | 406.6 | - | - | ja | 40.98 |
 | CNQ (CNQ) | 49.64 | - | - | ja | 39.03 |
-| BP (BP) | 5.733 | - | - | ja | 41.35 |
+| BP (BP) | 5.716 | - | - | ja | 40.86 |
 | CVX (CVX) | 216.96 | - | - | ja | 44.84 |
 | GFS (GFS) | 40.34 | - | - | ja | 34.78 |
-| ENR.DE (ENR.DE) | 120.12 | - | - | ja | 37.66 |
-| Brent Oel (BZ=F) | 93.7 | - | - | ja | 32.61 |
-| WTI Oel (CL=F) | 87.05 | - | - | ja | 36.81 |
+| ENR.DE (ENR.DE) | 119.46 | - | - | ja | 37.24 |
+| Brent Oel (BZ=F) | 94.62 | - | - | ja | 33.36 |
+| WTI Oel (CL=F) | 88.12 | - | - | ja | 37.83 |
 
 ---
 

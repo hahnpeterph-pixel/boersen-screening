@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-11-05 00:14 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1207._
+_Erstellt 2026-11-05 02:26 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1207._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -55,7 +55,6 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | BHP (BHP) | 55.56 | - | - | ja | 36.5 |
 | TTE (TTE) | 81.68 | - | - | ja | 52.61 |
 | SONY (SONY) | 3933.0 | - | ja | ja | 52.15 |
-| PBR (PBR) | 53.4 | - | - | ja | 33.61 |
 | ENB (ENB) | 48.78 | - | - | ja | 56.07 |
 | EQNR (EQNR) | 406.1 | - | - | ja | 40.8 |
 | CNQ (CNQ) | 49.64 | - | - | ja | 39.03 |
@@ -63,6 +62,8 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | CVX (CVX) | 216.96 | - | - | ja | 44.84 |
 | GFS (GFS) | 40.34 | - | - | ja | 34.78 |
 | ENR.DE (ENR.DE) | 120.12 | - | - | ja | 37.66 |
+| Brent Oel (BZ=F) | 93.7 | - | - | ja | 32.61 |
+| WTI Oel (CL=F) | 87.05 | - | - | ja | 36.81 |
 
 ---
 

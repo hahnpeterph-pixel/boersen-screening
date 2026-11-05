@@ -1,4 +1,4 @@
-# Boden-Screening 2026-11-04 (Stand 2026-11-05 00:18 UTC)
+# Boden-Screening 2026-11-04 (Stand 2026-11-05 02:29 UTC)
 
 Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RSI < 50 + mind. 2 Boden-Punkte (nur Technik). Die Filter (Analysten, Anker, CRV 2:1) stehen in docs/heute.csv. Boden-Anker = niedrigster Puffer mit 60 % Halterate fuer diese Gruppe und diesen Wert (Vollauf), KO-Marke = Bezugstief - Anker x ATR.
 
@@ -7,18 +7,18 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | Wert | Tief | RSI | Anker | KO-Marke | Analysten |
 |---|---|---|---|---|---|
 | ING | 7 | 47 | 2.75 | 25.36 | 33 % |
+| MELI | 2 | 47 | 2.50 | 1441.59 | 80 % |
 | BA | 2 | 41 | 2.75 | 148.49 | 93 % |
 | CRM | 3 | 43 | 2.25 | 193.29 | 64 % |
 | FTNT | 2 | 27 | 2.00 | 103.94 | 24 % |
 | GOOG | 4 | 30 | 1.75 | 253.23 | 80 % |
 | GOOGL | 3 | 30 | 1.50 | 261.21 | 83 % |
 | HSBC | 7 | 40 | 3.50 | 11.34 | 67 % |
-| MELI | 2 | 47 | 2.50 | 1441.59 | 80 % |
 | MTX.DE | 2 | 50 | 1.50 | 293.90 | 50 % |
 | PCAR | 2 | 45 | 2.25 | 93.32 | 50 % |
-| SCCO | 6 | 37 | 3.50 | 140.73 | 0 % |
+| SCCO | 6 | 37 | 3.50 | 140.71 | 0 % |
 
-## Weitere Pruefttage (124)
+## Weitere Pruefttage (125)
 
 | Wert | Punkte | Grund |
 |---|---|---|
@@ -108,6 +108,7 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | P911.DE | 1 | 1 P, Tief 1, RSI >= 50 |
 | PAH3.DE | 1 | 1 P, RSI >= 50 |
 | PANW | 1 | 1 P |
+| PBR | 1 | 1 P, Umkehr a |
 | PDD | 1 | 1 P, Tief 1, RSI >= 50 |
 | PEP | 1 | 1 P, Tief 1, RSI >= 50 |
 | PG | 1 | 1 P, Tief 1, RSI >= 50 |

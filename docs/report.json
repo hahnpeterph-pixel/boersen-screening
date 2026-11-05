@@ -2,53 +2,53 @@
  "date": "2026-11-05",
  "ranks": {
   "turnaround": [
-   "CTSH",
-   "CDNS",
-   "META",
-   "WDAY",
    "ISRG",
-   "TTE",
-   "BEI.DE",
-   "MRK",
-   "ORLY",
+   "CTSH",
+   "PFE",
+   "XOM",
+   "CNQ",
+   "ADSK",
+   "CVX",
    "DHR",
-   "DE",
-   "TSLA",
-   "TJX",
-   "AXP",
-   "MO"
+   "BEI.DE",
+   "KDP",
+   "SNPS",
+   "ORLY",
+   "TM",
+   "EMR",
+   "COF"
   ],
   "momentum": [
-   "AMGN",
-   "TRV",
    "MRNA",
-   "ABBV",
-   "KDP",
-   "BNS",
-   "CCEP",
+   "AMGN",
+   "GILD",
    "DB1.DE",
-   "MMM",
-   "ABNB",
-   "PM",
-   "FAST",
+   "BNS",
    "ADP",
-   "MAR",
-   "TTE"
+   "V",
+   "CTAS",
+   "KDP",
+   "CCEP",
+   "PM",
+   "CNQ",
+   "LMT",
+   "TXN",
+   "FAST"
   ],
   "value": [
    "MU",
+   "NVDA",
    "PBR",
-   "NEM",
    "TSM",
-   "AVGO",
    "CNQ",
-   "REGN",
+   "NEM",
    "RIO",
-   "VLO",
    "META",
-   "BHP",
-   "ABNB",
+   "TTE",
+   "REGN",
    "ROST",
+   "ABNB",
+   "BHP",
    "DXCM",
    "MNST"
   ]
@@ -57,197 +57,170 @@
   "turnaround": {
    "entries": [
     {
-     "ticker": "CDNS",
-     "rank": 2
-    },
-    {
-     "ticker": "META",
+     "ticker": "PFE",
      "rank": 3
     },
     {
-     "ticker": "WDAY",
+     "ticker": "XOM",
      "rank": 4
     },
     {
-     "ticker": "TTE",
+     "ticker": "CNQ",
+     "rank": 5
+    },
+    {
+     "ticker": "ADSK",
      "rank": 6
     },
     {
-     "ticker": "MRK",
-     "rank": 8
+     "ticker": "CVX",
+     "rank": 7
     },
     {
-     "ticker": "DE",
+     "ticker": "KDP",
+     "rank": 10
+    },
+    {
+     "ticker": "SNPS",
      "rank": 11
     },
     {
-     "ticker": "TSLA",
-     "rank": 12
-    },
-    {
-     "ticker": "TJX",
+     "ticker": "TM",
      "rank": 13
     },
     {
-     "ticker": "AXP",
+     "ticker": "EMR",
      "rank": 14
     },
     {
-     "ticker": "MO",
+     "ticker": "COF",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "PFE",
+     "ticker": "CDNS",
+     "old_rank": 2
+    },
+    {
+     "ticker": "META",
      "old_rank": 3
     },
     {
-     "ticker": "XOM",
+     "ticker": "WDAY",
      "old_rank": 4
     },
     {
-     "ticker": "CNQ",
-     "old_rank": 5
-    },
-    {
-     "ticker": "ADSK",
+     "ticker": "TTE",
      "old_rank": 6
     },
     {
-     "ticker": "CVX",
-     "old_rank": 7
+     "ticker": "MRK",
+     "old_rank": 8
     },
     {
-     "ticker": "KDP",
-     "old_rank": 9
+     "ticker": "DE",
+     "old_rank": 11
     },
     {
-     "ticker": "SNPS",
-     "old_rank": 10
+     "ticker": "TSLA",
+     "old_rank": 12
     },
     {
-     "ticker": "DB1.DE",
+     "ticker": "TJX",
      "old_rank": 13
     },
     {
-     "ticker": "EMR",
+     "ticker": "AXP",
      "old_rank": 14
     },
     {
-     "ticker": "COF",
+     "ticker": "MO",
      "old_rank": 15
     }
    ],
-   "moves": [
-    {
-     "ticker": "BEI.DE",
-     "rank": 7,
-     "delta": 5
-    }
-   ]
+   "moves": []
   },
   "momentum": {
    "entries": [
     {
-     "ticker": "TRV",
-     "rank": 2
+     "ticker": "GILD",
+     "rank": 3
     },
     {
-     "ticker": "ABBV",
-     "rank": 4
+     "ticker": "V",
+     "rank": 7
     },
     {
-     "ticker": "MMM",
-     "rank": 9
+     "ticker": "CTAS",
+     "rank": 8
     },
     {
-     "ticker": "ABNB",
-     "rank": 10
-    },
-    {
-     "ticker": "FAST",
+     "ticker": "CNQ",
      "rank": 12
     },
     {
-     "ticker": "MAR",
-     "rank": 14
+     "ticker": "LMT",
+     "rank": 13
     },
     {
-     "ticker": "TTE",
-     "rank": 15
+     "ticker": "TXN",
+     "rank": 14
     }
    ],
    "exits": [
     {
-     "ticker": "GILD",
-     "old_rank": 3
+     "ticker": "TRV",
+     "old_rank": 2
     },
     {
-     "ticker": "V",
+     "ticker": "ABBV",
      "old_rank": 4
     },
     {
-     "ticker": "CTAS",
-     "old_rank": 8
+     "ticker": "MMM",
+     "old_rank": 9
     },
     {
-     "ticker": "LMT",
-     "old_rank": 12
+     "ticker": "ABNB",
+     "old_rank": 10
     },
     {
-     "ticker": "CNQ",
-     "old_rank": 13
-    },
-    {
-     "ticker": "CVX",
+     "ticker": "MAR",
      "old_rank": 14
     },
     {
-     "ticker": "TXN",
+     "ticker": "TTE",
      "old_rank": 15
     }
    ],
    "moves": [
     {
-     "ticker": "KDP",
-     "rank": 5,
-     "delta": 5
-    },
-    {
      "ticker": "ADP",
-     "rank": 13,
-     "delta": -8
+     "rank": 6,
+     "delta": 7
     }
    ]
   },
   "value": {
    "entries": [
     {
-     "ticker": "AVGO",
-     "rank": 5
+     "ticker": "NVDA",
+     "rank": 2
     },
     {
-     "ticker": "VLO",
+     "ticker": "TTE",
      "rank": 9
-    },
-    {
-     "ticker": "BHP",
-     "rank": 11
     }
    ],
    "exits": [
     {
-     "ticker": "NVDA",
-     "old_rank": 2
+     "ticker": "AVGO",
+     "old_rank": 5
     },
     {
-     "ticker": "TTE",
-     "old_rank": 10
-    },
-    {
-     "ticker": "MTX.DE",
-     "old_rank": 14
+     "ticker": "VLO",
+     "old_rank": 9
     }
    ],
    "moves": []

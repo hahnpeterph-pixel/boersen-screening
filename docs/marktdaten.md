@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-11-06 02:24 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1235._
+_Erstellt 2026-11-06 12:50 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1235._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -17,7 +17,7 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | AMGN (AMGN) | 460.28 | - | ja | ja | 60.41 |
 | AMZN (AMZN) | 260.21 | - | ja | ja | 54.97 |
 | ARM (ARM) | 166.72 | - | - | ja | 27.19 |
-| ASML (ASML) | 1244.4 | - | - | ja | 27.75 |
+| ASML (ASML) | 1250.0 | - | - | ja | 28.06 |
 | AVGO (AVGO) | 291.53 | - | - | ja | 31.45 |
 | AXP (AXP) | 324.97 | - | ja | ja | 55.61 |
 | BA (BA) | 172.5 | - | - | ja | 37.28 |
@@ -112,6 +112,7 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | RY (RY) | 203.76 | - | ja | ja | 53.48 |
 | TD (TD) | 123.09 | - | ja | ja | 50.83 |
 | NVO (NVO) | 271.25 | - | - | ja | 54.98 |
+| PBR (PBR) | 51.78 | - | - | ja | 30.85 |
 | BMO (BMO) | 172.45 | - | ja | ja | 52.88 |
 | BNS (BNS) | 91.77 | - | ja | ja | 46.92 |
 | ENB (ENB) | 48.11 | - | ja | ja | 48.72 |
@@ -121,9 +122,12 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | CVX (CVX) | 212.93 | - | - | ja | 40.9 |
 | GFS (GFS) | 36.36 | - | - | ja | 28.25 |
 | MSTR (MSTR) | 129.3 | - | - | ja | 41.56 |
-| IFX.DE (IFX.DE) | 45.905 | - | - | ja | 33.15 |
-| RHM.DE (RHM.DE) | 844.7 | - | - | ja | 28.56 |
-| ENR.DE (ENR.DE) | 113.36 | - | - | ja | 33.51 |
+| IFX.DE (IFX.DE) | 45.95 | - | - | ja | 33.22 |
+| RHM.DE (RHM.DE) | 841.5 | - | - | ja | 28.33 |
+| SRT3.DE (SRT3.DE) | 287.5 | - | - | ja | 61.55 |
+| ENR.DE (ENR.DE) | 113.84 | - | - | ja | 33.78 |
+| Kupfer (HG=F) | 6.249 | - | - | ja | 36.95 |
+| Kakao (CC=F) | 5181.0 | - | - | ja | 34.13 |
 
 ---
 

@@ -2,38 +2,38 @@
  "date": "2026-11-06",
  "ranks": {
   "turnaround": [
-   "ISRG",
    "CTSH",
-   "AZN",
-   "WDAY",
-   "PFE",
+   "ISRG",
+   "NXPI",
+   "MSTR",
+   "TMO",
+   "DHR",
    "EMR",
-   "ORLY",
-   "BEI.DE",
-   "SAP.DE",
+   "META",
    "ZAL.DE",
-   "SY1.DE",
-   "CTAS",
+   "EXC",
+   "SPOT",
+   "ORLY",
+   "V",
    "MAR",
-   "HON",
-   "V"
+   "BEI.DE"
   ],
   "momentum": [
-   "MAR",
-   "V",
-   "MNST",
-   "DB1.DE",
-   "CTAS",
-   "KO",
-   "WELL",
+   "ABNB",
+   "MRNA",
    "KDP",
-   "MA",
-   "ROP",
-   "SY1.DE",
-   "QIA.DE",
-   "MMM",
+   "CCEP",
+   "V",
+   "MAR",
+   "FAST",
+   "ADP",
+   "WELL",
+   "TMO",
+   "DB1.DE",
    "SAP.DE",
-   "REGN"
+   "DHL.DE",
+   "SHL.DE",
+   "ZAL.DE"
   ],
   "value": [
    "PBR",
@@ -42,141 +42,210 @@
    "MU",
    "PLTR",
    "CNQ",
-   "REGN",
    "PSX",
+   "REGN",
    "RIO",
    "META",
-   "BHP",
    "ROST",
-   "ABNB",
+   "BHP",
+   "MTX.DE",
    "MNST",
-   "V"
+   "DXCM"
   ]
  },
  "changes": {
   "turnaround": {
    "entries": [
     {
-     "ticker": "AZN",
+     "ticker": "NXPI",
      "rank": 3
     },
     {
-     "ticker": "SAP.DE",
-     "rank": 9
+     "ticker": "MSTR",
+     "rank": 4
     },
     {
-     "ticker": "ZAL.DE",
+     "ticker": "TMO",
+     "rank": 5
+    },
+    {
+     "ticker": "DHR",
+     "rank": 6
+    },
+    {
+     "ticker": "META",
+     "rank": 8
+    },
+    {
+     "ticker": "EXC",
      "rank": 10
     },
     {
-     "ticker": "SY1.DE",
+     "ticker": "SPOT",
      "rank": 11
     }
    ],
    "exits": [
     {
-     "ticker": "REGN",
-     "old_rank": 7
+     "ticker": "AZN",
+     "old_rank": 3
     },
     {
-     "ticker": "SONY",
-     "old_rank": 8
+     "ticker": "WDAY",
+     "old_rank": 4
     },
     {
-     "ticker": "TM",
+     "ticker": "PFE",
+     "old_rank": 5
+    },
+    {
+     "ticker": "SAP.DE",
+     "old_rank": 9
+    },
+    {
+     "ticker": "SY1.DE",
+     "old_rank": 11
+    },
+    {
+     "ticker": "CTAS",
+     "old_rank": 12
+    },
+    {
+     "ticker": "HON",
      "old_rank": 14
-    },
-    {
-     "ticker": "WMT",
-     "old_rank": 15
     }
    ],
-   "moves": []
+   "moves": [
+    {
+     "ticker": "ORLY",
+     "rank": 12,
+     "delta": -5
+    },
+    {
+     "ticker": "BEI.DE",
+     "rank": 15,
+     "delta": -7
+    }
+   ]
   },
   "momentum": {
    "entries": [
     {
-     "ticker": "DB1.DE",
+     "ticker": "ABNB",
+     "rank": 1
+    },
+    {
+     "ticker": "MRNA",
+     "rank": 2
+    },
+    {
+     "ticker": "CCEP",
      "rank": 4
     },
     {
-     "ticker": "SY1.DE",
-     "rank": 11
+     "ticker": "FAST",
+     "rank": 7
     },
     {
-     "ticker": "QIA.DE",
-     "rank": 12
+     "ticker": "ADP",
+     "rank": 8
     },
     {
-     "ticker": "SAP.DE",
+     "ticker": "TMO",
+     "rank": 10
+    },
+    {
+     "ticker": "DHL.DE",
+     "rank": 13
+    },
+    {
+     "ticker": "SHL.DE",
      "rank": 14
     },
     {
-     "ticker": "REGN",
+     "ticker": "ZAL.DE",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "MRK.DE",
+     "ticker": "MNST",
      "old_rank": 3
     },
     {
-     "ticker": "NVS",
+     "ticker": "CTAS",
+     "old_rank": 5
+    },
+    {
+     "ticker": "KO",
+     "old_rank": 6
+    },
+    {
+     "ticker": "MA",
+     "old_rank": 9
+    },
+    {
+     "ticker": "ROP",
      "old_rank": 10
     },
     {
-     "ticker": "CB",
+     "ticker": "SY1.DE",
+     "old_rank": 11
+    },
+    {
+     "ticker": "QIA.DE",
      "old_rank": 12
     },
     {
-     "ticker": "DHL.DE",
+     "ticker": "MMM",
      "old_rank": 13
     },
     {
-     "ticker": "SHL.DE",
-     "old_rank": 14
+     "ticker": "REGN",
+     "old_rank": 15
     }
    ],
-   "moves": []
+   "moves": [
+    {
+     "ticker": "KDP",
+     "rank": 3,
+     "delta": 5
+    },
+    {
+     "ticker": "MAR",
+     "rank": 6,
+     "delta": -5
+    },
+    {
+     "ticker": "DB1.DE",
+     "rank": 11,
+     "delta": -7
+    }
+   ]
   },
   "value": {
    "entries": [
     {
-     "ticker": "BHP",
-     "rank": 11
+     "ticker": "MTX.DE",
+     "rank": 13
     },
     {
-     "ticker": "MNST",
-     "rank": 14
-    },
-    {
-     "ticker": "V",
+     "ticker": "DXCM",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "DXCM",
+     "ticker": "ABNB",
      "old_rank": 13
     },
     {
-     "ticker": "MTX.DE",
-     "old_rank": 14
-    },
-    {
-     "ticker": "UNP",
+     "ticker": "V",
      "old_rank": 15
     }
    ],
    "moves": []
   },
-  "analyst_flips": [
-   {
-    "ticker": "MA",
-    "now": -1,
-    "old": 0
-   }
-  ]
+  "analyst_flips": []
  }
 }

@@ -1,8 +1,8 @@
 # Stundenwache
 
-Stand: 2026-11-06 · 272 Werte mit Stundendaten · erstellt 2026-11-07 01:56 UTC
+Stand: 2026-11-06 · 272 Werte mit Stundendaten · erstellt 2026-11-07 06:15 UTC
 
-> **Sitzung noch nicht abgeschlossen.** 5 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 5, 6, 7, 8, 9). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
+> **Sitzung noch nicht abgeschlossen.** 3 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 5, 6, 7, 8, 9). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
 
 Marken sind das juengste Swing-Tief und das juengste Swing-Hoch aus `tiefs_regel.py`, also dieselben wie im Tagesbericht. Geprueft wird nur, was der letzte Handelstag auf Stundenbasis damit gemacht hat.
 
@@ -28,21 +28,20 @@ Schluss unter dem juengsten Swing-Tief. Die Sequenz ist gerissen.
 
 Keine.
 
-## Tief angetestet (33)
+## Tief angetestet (29)
 
 Docht bis unter die Marke, kein Stundenschluss darunter.
 
 | Wert | Marke | Schluss | Abstand (ATR) | Stunden dahinter |
 |---|---|---|---|---|
 | RY | 200.8 | 201.13 | 0.092 | 0 |
-| NOW | 100.5501 | 101.95 | 0.179 | 0 |
 | HNR1.DE | 291.4 | 292.6 | 0.198 | 0 |
 | BNR.DE | 61.48 | 61.74 | 0.201 | 0 |
 | SAP.DE | 208.9 | 210.4 | 0.232 | 0 |
 | MPC | 367.72 | 372.73 | 0.233 | 0 |
 | AVGO | 289.77 | 293.32 | 0.235 | 0 |
 | VOW3.DE | 69.42 | 70.04 | 0.281 | 0 |
-| GEHC | 81.4926 | 82.38 | 0.306 | 0 |
+| GEHC | 81.493 | 82.38 | 0.306 | 0 |
 | DHL.DE | 57.1 | 57.5 | 0.306 | 0 |
 | EXC | 45.3 | 45.605 | 0.317 | 0 |
 | SMFG | 2954.5 | 2992.5 | 0.326 | 0 |
@@ -52,10 +51,8 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | MTX.DE | 336.8 | 343.2 | 0.452 | 0 |
 | BEI.DE | 83.88 | 84.88 | 0.455 | 0 |
 | SHW | 338.2 | 344.07 | 0.461 | 0 |
-| CDW | 152.4 | 156.99 | 0.541 | 0 |
 | P911.DE | 46.19 | 46.91 | 0.562 | 0 |
 | TRV | 389.64 | 395.25 | 0.619 | 0 |
-| HONA | 147.4 | 152.93 | 0.638 | 0 |
 | NEE | 85.64 | 86.95 | 0.647 | 0 |
 | LULU | 107.55 | 110.75 | 0.676 | 0 |
 | ENB | 46.38 | 46.89 | 0.693 | 0 |
@@ -63,7 +60,6 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | HEN3.DE | 82.06 | 83.26 | 0.821 | 0 |
 | SBUX | 102.69 | 105.39 | 0.91 | 0 |
 | TMUS | 155.58 | 161.95 | 0.975 | 0 |
-| PYPL | 57.57 | 59.23 | 1.014 | 0 |
 | HON | 211.94 | 220.15 | 1.129 | 0 |
 | JNJ | 265.55 | 276.26 | 1.363 | 0 |
 | DTG.DE | 38.42 | 40.36 | 1.811 | 0 |
@@ -72,7 +68,7 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 
 | Wert | Hoch | Schluss | Abstand (ATR) | Stunden darueber |
 |---|---|---|---|---|
-| APP | 264.045 | 391.25 | 5.985 | 7 |
+| APP | 264.045 | 391.25 | 5.98 | 7 |
 | QIA.DE | 42.345 | 45.2 | 5.181 | 9 |
 | IBN | 1404.9 | 1571.2 | 4.866 | 7 |
 | FRE.DE | 47.295 | 52.23 | 4.452 | 9 |
@@ -81,7 +77,7 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | TM | 3115.0 | 3340.0 | 2.077 | 7 |
 | NEM | 110.83 | 120.9 | 2.058 | 7 |
 | ABNB | 180.06 | 190.02 | 1.495 | 7 |
-| WDAY | 185.82 | 192.91 | 0.899 | 7 |
+| WDAY | 185.82 | 192.91 | 0.898 | 7 |
 | BABA | 101.6 | 104.9 | 0.813 | 7 |
 | SCHW | 89.96 | 91.49 | 0.797 | 7 |
 | UBS | 38.96 | 39.61 | 0.609 | 9 |

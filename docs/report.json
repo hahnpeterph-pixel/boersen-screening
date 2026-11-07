@@ -4,21 +4,23 @@
   "turnaround": [
    "CTSH",
    "ISRG",
-   "WDAY",
    "NXPI",
+   "MSTR",
    "DHR",
    "TMO",
    "EMR",
+   "META",
    "ZAL.DE",
    "EXC",
+   "SPOT",
    "ORLY",
    "V",
    "MAR",
-   "BEI.DE",
-   "DIS",
-   "FAST"
+   "BEI.DE"
   ],
   "momentum": [
+   "ABNB",
+   "MRNA",
    "KDP",
    "CCEP",
    "V",
@@ -31,16 +33,14 @@
    "DB1.DE",
    "SHL.DE",
    "SAP.DE",
-   "ZAL.DE",
-   "IBN",
-   "QIA.DE"
+   "ZAL.DE"
   ],
   "value": [
    "PBR",
    "NEM",
+   "AVGO",
    "MU",
    "PLTR",
-   "WDC",
    "CNQ",
    "PSX",
    "REGN",
@@ -48,39 +48,39 @@
    "META",
    "ROST",
    "BHP",
-   "ABNB",
    "MTX.DE",
-   "MNST"
+   "MNST",
+   "DXCM"
   ]
  },
  "changes": {
   "turnaround": {
    "entries": [
     {
-     "ticker": "WDAY",
-     "rank": 3
+     "ticker": "MSTR",
+     "rank": 4
     },
     {
-     "ticker": "DIS",
-     "rank": 14
+     "ticker": "META",
+     "rank": 8
     },
     {
-     "ticker": "FAST",
-     "rank": 15
+     "ticker": "SPOT",
+     "rank": 11
     }
    ],
    "exits": [
     {
-     "ticker": "MSTR",
-     "old_rank": 4
+     "ticker": "WDAY",
+     "old_rank": 3
     },
     {
-     "ticker": "META",
-     "old_rank": 8
+     "ticker": "DIS",
+     "old_rank": 14
     },
     {
-     "ticker": "SPOT",
-     "old_rank": 11
+     "ticker": "FAST",
+     "old_rank": 15
     }
    ],
    "moves": []
@@ -88,51 +88,45 @@
   "momentum": {
    "entries": [
     {
+     "ticker": "ABNB",
+     "rank": 1
+    },
+    {
+     "ticker": "MRNA",
+     "rank": 2
+    }
+   ],
+   "exits": [
+    {
      "ticker": "IBN",
-     "rank": 14
+     "old_rank": 14
     },
     {
      "ticker": "QIA.DE",
+     "old_rank": 15
+    }
+   ],
+   "moves": []
+  },
+  "value": {
+   "entries": [
+    {
+     "ticker": "AVGO",
+     "rank": 3
+    },
+    {
+     "ticker": "DXCM",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "ABNB",
-     "old_rank": 1
-    },
-    {
-     "ticker": "MRNA",
-     "old_rank": 2
-    }
-   ],
-   "moves": [
-    {
-     "ticker": "DHL.DE",
-     "rank": 6,
-     "delta": 7
-    }
-   ]
-  },
-  "value": {
-   "entries": [
-    {
      "ticker": "WDC",
-     "rank": 5
+     "old_rank": 5
     },
     {
      "ticker": "ABNB",
-     "rank": 13
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "AVGO",
-     "old_rank": 3
-    },
-    {
-     "ticker": "DXCM",
-     "old_rank": 15
+     "old_rank": 13
     }
    ],
    "moves": []

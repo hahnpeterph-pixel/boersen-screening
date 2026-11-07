@@ -1,3 +1,5 @@
 quelle,art,ticker,tag,rohstoff_fx
+kursverlauf,Platzhalter,PA=F,2026-11-06,True
+kursverlauf,Platzhalter,PL=F,2026-11-06,True
 kursverlauf,Platzhalter,^TNX,2026-10-12,True
 kursverlauf,fehlt,TSM,2026-10-23,False

@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-11-07 01:54 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1228._
+_Erstellt 2026-11-07 06:13 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1228._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -52,7 +52,7 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | PSX (PSX) | 245.72 | - | - | ja | 33.35 |
 | PLD (PLD) | 126.96 | - | - | ja | 44.08 |
 | RY (RY) | 201.16 | - | - | ja | 49.04 |
-| NVS (NVS) | 132.84 | ja | - | - | 65.0 |
+| NVS (NVS) | 133.08 | ja | - | - | 65.81 |
 | MUFG (MUFG) | 3224.0 | - | - | ja | 37.7 |
 | TD (TD) | 122.4 | - | - | ja | 49.1 |
 | PBR (PBR) | 51.21 | - | - | ja | 29.91 |
@@ -76,8 +76,8 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | SAP.DE (SAP.DE) | 210.4 | - | - | ja | 58.86 |
 | SIE.DE (SIE.DE) | 263.05 | - | - | ja | 44.87 |
 | VOW3.DE (VOW3.DE) | 70.04 | - | - | ja | 49.18 |
-| Weizen (ZW=F) | 590.5 | - | - | ja | 22.88 |
-| Zucker (SB=F) | 18.25 | - | - | ja | 37.04 |
+| Weizen (ZW=F) | 591.25 | - | - | ja | 23.08 |
+| Zucker (SB=F) | 18.24 | - | - | ja | 36.95 |
 | EUR/INR (EURINR=X) | 106.001 | ja | - | - | 42.65 |
 
 ---

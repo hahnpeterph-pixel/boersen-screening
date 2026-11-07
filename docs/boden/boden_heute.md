@@ -1,4 +1,4 @@
-# Boden-Screening 2026-11-06 (Stand 2026-11-07 01:57 UTC)
+# Boden-Screening 2026-11-06 (Stand 2026-11-07 06:16 UTC)
 
 Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RSI < 50 + mind. 2 Boden-Punkte (nur Technik). Die Filter (Analysten, Anker, CRV 2:1) stehen in docs/heute.csv. Boden-Anker = niedrigster Puffer mit 60 % Halterate fuer diese Gruppe und diesen Wert (Vollauf), KO-Marke = Bezugstief - Anker x ATR.
 
@@ -9,13 +9,13 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | AMD | 2 | 38 | 2.75 | 297.54 | 86 % |
 | CEG | 3 | 43 | 2.00 | 207.27 | 100 % |
 | CVS | 3 | 40 | 3.00 | 67.33 | 100 % |
-| ANET | 2 | 43 | 1.75 | 139.38 | 100 % |
+| ANET | 2 | 43 | 1.75 | 139.33 | 100 % |
 | DDOG | 2 | 28 | 2.00 | 134.47 | 96 % |
 | ETN | 2 | 37 | 2.50 | 271.65 | 100 % |
 | MDB | 4 | 37 | 2.00 | 251.35 | 84 % |
 | NET | 3 | 39 | 2.00 | 188.61 | 75 % |
 
-## Weitere Pruefttage (127)
+## Weitere Pruefttage (128)
 
 | Wert | Punkte | Grund |
 |---|---|---|
@@ -120,6 +120,7 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | REGN | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
 | RIO | 0 | 0 P, Tief 1, Umkehr a |
 | RTX | 0 | 0 P, Tief 1, Umkehr a |
+| SAN | 0 | 0 P, Umkehr a |
 | SBUX | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
 | SHW | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
 | SMFG | 0 | 0 P, Umkehr a |

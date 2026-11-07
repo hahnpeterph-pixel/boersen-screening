@@ -1,6 +1,6 @@
 # Stundenwache
 
-Stand: 2026-11-06 · 272 Werte mit Stundendaten · erstellt 2026-11-06 23:44 UTC
+Stand: 2026-11-06 · 272 Werte mit Stundendaten · erstellt 2026-11-07 01:56 UTC
 
 > **Sitzung noch nicht abgeschlossen.** 5 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 5, 6, 7, 8, 9). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
 
@@ -28,30 +28,45 @@ Schluss unter dem juengsten Swing-Tief. Die Sequenz ist gerissen.
 
 Keine.
 
-## Tief angetestet (18)
+## Tief angetestet (33)
 
 Docht bis unter die Marke, kein Stundenschluss darunter.
 
 | Wert | Marke | Schluss | Abstand (ATR) | Stunden dahinter |
 |---|---|---|---|---|
-| BKNG | 160.59 | 160.64 | 0.007 | 0 |
-| CNQ | 48.425 | 48.53 | 0.065 | 0 |
-| UNP | 289.56 | 290.13 | 0.075 | 0 |
-| RY | 200.805 | 201.13 | 0.091 | 0 |
+| RY | 200.8 | 201.13 | 0.092 | 0 |
 | NOW | 100.5501 | 101.95 | 0.179 | 0 |
-| LMT | 562.12 | 567.11 | 0.211 | 0 |
-| MMM | 183.595 | 185.17 | 0.26 | 0 |
-| BNS | 91.14 | 91.72 | 0.319 | 0 |
+| HNR1.DE | 291.4 | 292.6 | 0.198 | 0 |
+| BNR.DE | 61.48 | 61.74 | 0.201 | 0 |
+| SAP.DE | 208.9 | 210.4 | 0.232 | 0 |
+| MPC | 367.72 | 372.73 | 0.233 | 0 |
+| AVGO | 289.77 | 293.32 | 0.235 | 0 |
+| VOW3.DE | 69.42 | 70.04 | 0.281 | 0 |
+| GEHC | 81.4926 | 82.38 | 0.306 | 0 |
+| DHL.DE | 57.1 | 57.5 | 0.306 | 0 |
+| EXC | 45.3 | 45.605 | 0.317 | 0 |
 | SMFG | 2954.5 | 2992.5 | 0.326 | 0 |
-| CM | 114.31 | 115.19 | 0.334 | 0 |
-| ACN | 255.61 | 260.51 | 0.418 | 0 |
-| DUK | 126.74 | 127.79 | 0.438 | 0 |
-| BMY | 61.33 | 62.13 | 0.447 | 0 |
-| IBM | 240.426 | 244.95 | 0.556 | 0 |
-| GD | 349.01 | 354.12 | 0.569 | 0 |
-| MA | 639.04 | 652.64 | 0.85 | 0 |
-| V | 413.0 | 422.73 | 1.009 | 0 |
-| MCD | 269.125 | 276.42 | 1.109 | 0 |
+| CTSH | 63.69 | 64.725 | 0.341 | 0 |
+| CMCSA | 24.09 | 24.395 | 0.384 | 0 |
+| PAYX | 115.27 | 117.02 | 0.449 | 0 |
+| MTX.DE | 336.8 | 343.2 | 0.452 | 0 |
+| BEI.DE | 83.88 | 84.88 | 0.455 | 0 |
+| SHW | 338.2 | 344.07 | 0.461 | 0 |
+| CDW | 152.4 | 156.99 | 0.541 | 0 |
+| P911.DE | 46.19 | 46.91 | 0.562 | 0 |
+| TRV | 389.64 | 395.25 | 0.619 | 0 |
+| HONA | 147.4 | 152.93 | 0.638 | 0 |
+| NEE | 85.64 | 86.95 | 0.647 | 0 |
+| LULU | 107.55 | 110.75 | 0.676 | 0 |
+| ENB | 46.38 | 46.89 | 0.693 | 0 |
+| EOAN.DE | 18.785 | 19.085 | 0.769 | 0 |
+| HEN3.DE | 82.06 | 83.26 | 0.821 | 0 |
+| SBUX | 102.69 | 105.39 | 0.91 | 0 |
+| TMUS | 155.58 | 161.95 | 0.975 | 0 |
+| PYPL | 57.57 | 59.23 | 1.014 | 0 |
+| HON | 211.94 | 220.15 | 1.129 | 0 |
+| JNJ | 265.55 | 276.26 | 1.363 | 0 |
+| DTG.DE | 38.42 | 40.36 | 1.811 | 0 |
 
 ## Swing-Hoch ueberwunden (17)
 

@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-11-06 23:42 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1143._
+_Erstellt 2026-11-07 01:54 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1228._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -11,7 +11,7 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | Wert | Kurs | Hammer | hoeheres Hoch | Umkehrkerze | RSI |
 |---|---|---|---|---|---|
 | ADSK (ADSK) | 261.72 | - | - | ja | 61.71 |
-| BKNG (BKNG) | 160.665 | - | - | ja | 49.9 |
+| BKNG (BKNG) | 160.67 | - | - | ja | 49.91 |
 | CDW (CDW) | 157.0 | - | - | ja | 52.77 |
 | CRM (CRM) | 213.65 | - | - | ja | 33.77 |
 | CSCO (CSCO) | 93.85 | - | - | ja | 28.34 |
@@ -56,7 +56,8 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | MUFG (MUFG) | 3224.0 | - | - | ja | 37.7 |
 | TD (TD) | 122.4 | - | - | ja | 49.1 |
 | PBR (PBR) | 51.21 | - | - | ja | 29.91 |
-| BTI (BTI) | 45.67 | - | - | ja | 59.43 |
+| UL (UL) | 49.25 | - | - | ja | 55.69 |
+| BTI (BTI) | 45.75 | - | - | ja | 60.04 |
 | ENB (ENB) | 46.89 | - | - | ja | 38.76 |
 | CNQ (CNQ) | 48.55 | - | - | ja | 35.77 |
 | AXON (AXON) | 313.0 | - | - | ja | 23.86 |
@@ -77,11 +78,7 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | VOW3.DE (VOW3.DE) | 70.04 | - | - | ja | 49.18 |
 | Weizen (ZW=F) | 590.5 | - | - | ja | 22.88 |
 | Zucker (SB=F) | 18.25 | - | - | ja | 37.04 |
-| EUR/USD (EURUSD=X) | 1.1143 | - | - | ja | 37.65 |
-| EUR/JPY (EURJPY=X) | 176.585 | - | - | ja | 44.52 |
-| EUR/HKD (EURHKD=X) | 8.7357 | - | - | ja | 37.5 |
-| EUR/TWD (EURTWD=X) | 36.557 | - | ja | ja | 53.28 |
-| EUR/INR (EURINR=X) | 104.6632 | - | - | ja | 34.73 |
+| EUR/INR (EURINR=X) | 106.001 | ja | - | - | 42.65 |
 
 ---
 

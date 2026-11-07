@@ -1639,7 +1639,6 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | MFG (MFG) | 2026-10-15 | abwaerts | 8125.0 | 1.115 | 3.557 | 15 |
 | MFG (MFG) | 2026-11-06 | abwaerts | 7629.0 | 1.967 | 8.232 | 0 |
 | MMM (MMM) | 2026-11-04 | aufwaerts | 178.17 | 2.875 | 8.152 | 2 |
-| MNST (MNST) | 2025-11-07 | aufwaerts | 33.855 | 1.618 | 4.002 | 250 |
 | MNST (MNST) | 2026-05-08 | aufwaerts | 38.48 | 3.018 | 9.797 | 126 |
 | MNST (MNST) | 2026-11-06 | abwaerts | 47.74 | 2.755 | 7.75 | 0 |
 | MO (MO) | 2026-01-09 | aufwaerts | 56.29 | 0.514 | 0.87 | 208 |
@@ -1866,7 +1865,6 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | SHW (SHW) | 2026-06-03 | aufwaerts | 295.57 | 0.594 | 1.671 | 109 |
 | SHW (SHW) | 2026-11-02 | aufwaerts | 335.06 | 0.605 | 1.728 | 4 |
 | SHW (SHW) | 2026-11-06 | abwaerts | 347.23 | 0.557 | 1.881 | 0 |
-| Silber (SI=F) | 2025-11-07 | aufwaerts | 47.794 | 0.198 | 0.494 | 245 |
 | Silber (SI=F) | 2025-11-10 | aufwaerts | 48.04 | 1.158 | 3.039 | 244 |
 | Silber (SI=F) | 2026-05-15 | abwaerts | 84.9 | 1.136 | 5.053 | 116 |
 | Silber (SI=F) | 2026-05-27 | abwaerts | 76.095 | 0.491 | 2.004 | 109 |

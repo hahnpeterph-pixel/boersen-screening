@@ -1,4 +1,4 @@
-# Boden-Screening 2026-11-06 (Stand 2026-11-06 23:45 UTC)
+# Boden-Screening 2026-11-06 (Stand 2026-11-07 01:57 UTC)
 
 Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RSI < 50 + mind. 2 Boden-Punkte (nur Technik). Die Filter (Analysten, Anker, CRV 2:1) stehen in docs/heute.csv. Boden-Anker = niedrigster Puffer mit 60 % Halterate fuer diese Gruppe und diesen Wert (Vollauf), KO-Marke = Bezugstief - Anker x ATR.
 
@@ -8,8 +8,8 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 |---|---|---|---|---|---|
 | AMD | 2 | 38 | 2.75 | 297.54 | 86 % |
 | CEG | 3 | 43 | 2.00 | 207.27 | 100 % |
-| ANET | 2 | 43 | 1.75 | 139.38 | 100 % |
 | CVS | 3 | 40 | 3.00 | 67.33 | 100 % |
+| ANET | 2 | 43 | 1.75 | 139.38 | 100 % |
 | DDOG | 2 | 28 | 2.00 | 134.47 | 96 % |
 | ETN | 2 | 37 | 2.50 | 271.65 | 100 % |
 | MDB | 4 | 37 | 2.00 | 251.35 | 84 % |

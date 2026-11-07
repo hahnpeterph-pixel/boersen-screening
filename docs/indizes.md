@@ -1,6 +1,6 @@
 # Indizes
 
-Stand Abruf: 07.11.2026 01:58 UTC
+Stand Abruf: 07.11.2026 06:12 UTC
 
 **Marktlage S&P 500:** VIX 25,6 unruhig · Fear & Greed 22 extreme Angst – Risiko für einen Rückgang um 4 % in den nächsten 2 Wochen: **erhöht (24 von 100, sonst 11)**
 
@@ -14,7 +14,7 @@ Stand Abruf: 07.11.2026 01:58 UTC
 
 Beta = um wie viel Prozent der Wert im Schnitt mitgeht, wenn sein Index 1 % bewegt (US-Werte gegen S&P 500, deutsche gegen DAX). Einbruch-Faktor = Median des Wertverlusts geteilt durch den Indexverlust in 20-Tage-Fenstern mit mindestens 8 % Indexminus seit 2019.
 
-**S&P 500:** 232 Werte · Median Beta (250 T) 0,60 · abwaerts 0,49 · Einbruch-Faktor 1,02 · Gleichlauf (125 T) 0,11
+**S&P 500:** 232 Werte · Median Beta (250 T) 0,61 · abwaerts 0,54 · Einbruch-Faktor 1,02 · Gleichlauf (125 T) 0,14
 
-**DAX:** 39 Werte · Median Beta (250 T) 0,80 · abwaerts 0,90 · Einbruch-Faktor 1,00 · Gleichlauf (125 T) 0,32
+**DAX:** 39 Werte · Median Beta (250 T) 0,82 · abwaerts 0,93 · Einbruch-Faktor 1,00 · Gleichlauf (125 T) 0,35
 

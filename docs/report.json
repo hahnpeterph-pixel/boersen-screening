@@ -3,15 +3,15 @@
  "ranks": {
   "turnaround": [
    "CTSH",
-   "ISRG",
+   "SNPS",
    "NXPI",
-   "MSTR",
-   "DHR",
-   "TMO",
-   "EMR",
-   "BEI.DE",
-   "SY1.DE",
+   "ISRG",
    "META",
+   "BEI.DE",
+   "DHR",
+   "SY1.DE",
+   "AMGN",
+   "DE",
    "MUV2.DE",
    "DHL.DE",
    "DB1.DE",
@@ -19,183 +19,168 @@
    "EXC"
   ],
   "momentum": [
+   "BIIB",
+   "AMGN",
    "ABNB",
    "DB1.DE",
-   "MRNA",
+   "ABBV",
    "KDP",
-   "CCEP",
-   "V",
-   "HEN3.DE",
-   "FAST",
-   "BAYN.DE",
-   "SY1.DE",
-   "ADP",
    "MAR",
-   "TMO",
+   "CCEP",
+   "FAST",
+   "MSFT",
+   "HEN3.DE",
+   "MMM",
    "WELL",
-   "HNR1.DE"
+   "BNS",
+   "DE"
   ],
   "value": [
    "PBR",
    "TSM",
-   "NEM",
+   "META",
    "AVGO",
-   "PSX",
    "MU",
+   "NEM",
+   "PSX",
    "CNQ",
    "REGN",
+   "APP",
    "RIO",
-   "META",
    "ABNB",
-   "ROST",
    "BHP",
-   "MNST",
-   "MTX.DE"
+   "ROST",
+   "MNST"
   ]
  },
  "changes": {
   "turnaround": {
    "entries": [
     {
-     "ticker": "SY1.DE",
+     "ticker": "SNPS",
+     "rank": 2
+    },
+    {
+     "ticker": "AMGN",
      "rank": 9
     },
     {
-     "ticker": "MUV2.DE",
-     "rank": 11
-    },
-    {
-     "ticker": "DHL.DE",
-     "rank": 12
-    },
-    {
-     "ticker": "DB1.DE",
-     "rank": 13
-    },
-    {
-     "ticker": "HNR1.DE",
-     "rank": 14
+     "ticker": "DE",
+     "rank": 10
     }
    ],
    "exits": [
     {
-     "ticker": "ZAL.DE",
-     "old_rank": 9
+     "ticker": "MSTR",
+     "old_rank": 4
     },
     {
-     "ticker": "SPOT",
-     "old_rank": 11
+     "ticker": "TMO",
+     "old_rank": 6
     },
     {
-     "ticker": "ORLY",
-     "old_rank": 12
-    },
-    {
-     "ticker": "V",
-     "old_rank": 13
-    },
-    {
-     "ticker": "MAR",
-     "old_rank": 14
+     "ticker": "EMR",
+     "old_rank": 7
     }
    ],
    "moves": [
     {
-     "ticker": "BEI.DE",
-     "rank": 8,
-     "delta": 7
-    },
-    {
-     "ticker": "EXC",
-     "rank": 15,
-     "delta": -5
+     "ticker": "META",
+     "rank": 5,
+     "delta": 5
     }
    ]
   },
   "momentum": {
    "entries": [
     {
-     "ticker": "HEN3.DE",
-     "rank": 7
+     "ticker": "BIIB",
+     "rank": 1
     },
     {
-     "ticker": "BAYN.DE",
-     "rank": 9
+     "ticker": "AMGN",
+     "rank": 2
     },
     {
-     "ticker": "SY1.DE",
+     "ticker": "ABBV",
+     "rank": 5
+    },
+    {
+     "ticker": "MSFT",
      "rank": 10
     },
     {
-     "ticker": "HNR1.DE",
+     "ticker": "MMM",
+     "rank": 12
+    },
+    {
+     "ticker": "BNS",
+     "rank": 14
+    },
+    {
+     "ticker": "DE",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "DHL.DE",
-     "old_rank": 8
+     "ticker": "MRNA",
+     "old_rank": 3
     },
     {
-     "ticker": "SHL.DE",
+     "ticker": "V",
+     "old_rank": 6
+    },
+    {
+     "ticker": "BAYN.DE",
+     "old_rank": 9
+    },
+    {
+     "ticker": "SY1.DE",
+     "old_rank": 10
+    },
+    {
+     "ticker": "ADP",
+     "old_rank": 11
+    },
+    {
+     "ticker": "TMO",
      "old_rank": 13
     },
     {
-     "ticker": "SAP.DE",
-     "old_rank": 14
-    },
-    {
-     "ticker": "ZAL.DE",
+     "ticker": "HNR1.DE",
      "old_rank": 15
     }
    ],
    "moves": [
     {
-     "ticker": "DB1.DE",
-     "rank": 2,
-     "delta": 10
-    },
-    {
      "ticker": "MAR",
-     "rank": 12,
-     "delta": -6
+     "rank": 7,
+     "delta": 5
     }
    ]
   },
   "value": {
    "entries": [
     {
-     "ticker": "TSM",
-     "rank": 2
-    },
-    {
-     "ticker": "ABNB",
-     "rank": 11
+     "ticker": "APP",
+     "rank": 10
     }
    ],
    "exits": [
     {
-     "ticker": "PLTR",
-     "old_rank": 5
-    },
-    {
-     "ticker": "DXCM",
+     "ticker": "MTX.DE",
      "old_rank": 15
     }
    ],
-   "moves": []
+   "moves": [
+    {
+     "ticker": "META",
+     "rank": 3,
+     "delta": 7
+    }
+   ]
   },
-  "analyst_flips": [
-   {
-    "ticker": "ABNB",
-    "now": 1,
-    "old": 0
-   },
-   {
-    "ticker": "PSX",
-    "now": 1,
-    "old": 0
-   }
-  ]
+  "analyst_flips": []
  }
 }

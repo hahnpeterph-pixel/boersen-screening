@@ -1,8 +1,8 @@
 # Stundenwache
 
-Stand: 2026-11-09 · 272 Werte mit Stundendaten · erstellt 2026-11-10 04:08 UTC
+Stand: 2026-11-09 · 272 Werte mit Stundendaten · erstellt 2026-11-10 13:27 UTC
 
-> **Sitzung noch nicht abgeschlossen.** 12 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 3, 4, 5, 6, 7, 8, 9). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
+> **Sitzung noch nicht abgeschlossen.** 60 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 1, 5, 6, 7). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
 
 Marken sind das juengste Swing-Tief und das juengste Swing-Hoch aus `tiefs_regel.py`, also dieselben wie im Tagesbericht. Geprueft wird nur, was der letzte Handelstag auf Stundenbasis damit gemacht hat.
 
@@ -36,46 +36,54 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | COP | 133.4 | 134.5 | 0.241 | 0 |
 | GS | 892.1 | 906.24 | 0.476 | 0 |
 
-## Swing-Hoch ueberwunden (37)
+## Swing-Hoch ueberwunden (45)
 
 | Wert | Hoch | Schluss | Abstand (ATR) | Stunden darueber |
 |---|---|---|---|---|
+| QIA.DE | 42.345 | 45.14 | 7.425 | 6 |
 | APP | 264.045 | 410.0 | 6.498 | 7 |
-| QIA.DE | 42.345 | 45.12 | 6.416 | 9 |
 | IBN | 1404.9 | 1589.0 | 5.538 | 7 |
-| FRE.DE | 47.295 | 52.71 | 4.762 | 9 |
+| FRE.DE | 47.295 | 53.4 | 5.372 | 6 |
 | HDB | 734.9 | 798.15 | 3.633 | 7 |
 | NEM | 110.83 | 125.16 | 2.846 | 7 |
-| TM | 3115.0 | 3418.0 | 2.542 | 4 |
-| TTD | 13.68 | 14.96 | 1.82 | 7 |
+| TM | 3115.0 | 3424.0 | 2.583 | 7 |
+| TTD | 13.68 | 14.955 | 1.813 | 7 |
+| HEN3.DE | 84.46 | 87.18 | 1.632 | 6 |
 | ABNB | 180.06 | 190.27 | 1.467 | 7 |
 | SCHW | 89.96 | 92.72 | 1.443 | 7 |
-| SONY | 4068.0 | 4233.0 | 1.105 | 4 |
+| HSBC | 13.086 | 13.586 | 1.34 | 6 |
+| BBVA | 22.84 | 23.82 | 1.326 | 6 |
+| SONY | 4068.0 | 4259.0 | 1.279 | 7 |
+| AIR.DE | 204.5 | 211.55 | 1.275 | 6 |
+| SHL.DE | 42.06 | 43.32 | 1.202 | 6 |
 | AMZN | 255.36 | 267.01 | 1.104 | 7 |
-| SHL.DE | 42.06 | 43.22 | 1.065 | 9 |
+| CON.DE | 72.02 | 73.94 | 0.982 | 6 |
+| HEI.DE | 179.6 | 184.25 | 0.804 | 6 |
 | TMUS | 163.35 | 168.65 | 0.793 | 7 |
-| HSBC | 13.086 | 13.3653 | 0.75 | 9 |
+| SAN | 11.05 | 11.356 | 0.732 | 6 |
 | PH | 930.84 | 957.06 | 0.694 | 7 |
-| BBVA | 22.84 | 23.33 | 0.667 | 9 |
 | MRNA | 254.48 | 268.94 | 0.611 | 7 |
-| BHP | 59.0 | 60.0 | 0.6 | 5 |
+| DTG.DE | 42.33 | 43.02 | 0.59 | 6 |
 | WDAY | 185.82 | 190.15 | 0.562 | 7 |
-| CEG | 268.64 | 276.03 | 0.537 | 6 |
-| TMO | 712.17 | 720.73 | 0.347 | 2 |
-| CON.DE | 72.02 | 72.68 | 0.344 | 3 |
+| MTX.DE | 357.5 | 365.3 | 0.555 | 6 |
+| CEG | 268.64 | 275.96 | 0.532 | 6 |
+| BHP | 59.0 | 59.87 | 0.522 | 7 |
+| ING | 29.68 | 30.055 | 0.442 | 6 |
+| SNY | 85.37 | 86.1 | 0.386 | 6 |
+| TMO | 712.17 | 721.64 | 0.384 | 3 |
+| GSK | 19.155 | 19.345 | 0.375 | 6 |
+| MFG | 7824.0 | 7951.0 | 0.367 | 7 |
+| BAYN.DE | 56.6 | 57.22 | 0.332 | 6 |
 | HONA | 161.7 | 164.73 | 0.328 | 6 |
 | SPG | 231.66 | 233.11 | 0.318 | 4 |
-| SNY | 85.37 | 85.94 | 0.3 | 7 |
-| CDNS | 331.67 | 336.46 | 0.296 | 7 |
+| CDNS | 331.67 | 336.47 | 0.297 | 7 |
 | BNY | 150.28 | 151.16 | 0.266 | 7 |
-| MFG | 7824.0 | 7900.0 | 0.22 | 4 |
+| CBK.DE | 40.39 | 40.68 | 0.242 | 6 |
 | DE | 687.07 | 691.28 | 0.214 | 7 |
-| AIR.DE | 204.5 | 205.65 | 0.204 | 2 |
+| UL | 49.355 | 49.585 | 0.189 | 3 |
 | GE | 333.75 | 335.58 | 0.146 | 3 |
-| RIO | 64.08 | 64.19 | 0.067 | 5 |
+| SMFG | 3237.0 | 3248.0 | 0.09 | 6 |
 | SNPS | 465.86 | 466.88 | 0.05 | 6 |
-| SAN | 11.05 | 11.066 | 0.038 | 2 |
-| HEI.DE | 179.6 | 179.75 | 0.026 | 1 |
 | JNJ | 281.92 | 282.1 | 0.023 | 3 |
 
 ## Reihen unstimmig - kein Urteil (0)

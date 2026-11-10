@@ -9,22 +9,22 @@
    "META",
    "BEI.DE",
    "DHR",
-   "SY1.DE",
    "AMGN",
-   "DE",
-   "MUV2.DE",
-   "DHL.DE",
    "DB1.DE",
-   "HNR1.DE",
-   "EXC"
+   "DE",
+   "EXC",
+   "ZAL.DE",
+   "EMR",
+   "MAR",
+   "TM"
   ],
   "momentum": [
    "BIIB",
    "AMGN",
    "ABNB",
-   "DB1.DE",
    "ABBV",
    "KDP",
+   "DB1.DE",
    "MAR",
    "CCEP",
    "FAST",
@@ -41,145 +41,85 @@
    "META",
    "AVGO",
    "MU",
-   "NEM",
    "PSX",
-   "CNQ",
+   "NEM",
+   "TTE",
    "REGN",
-   "APP",
    "RIO",
    "ABNB",
+   "BLK",
    "BHP",
-   "ROST",
-   "MNST"
+   "APP",
+   "ROST"
   ]
  },
  "changes": {
   "turnaround": {
    "entries": [
     {
-     "ticker": "SNPS",
-     "rank": 2
-    },
-    {
-     "ticker": "AMGN",
-     "rank": 9
-    },
-    {
-     "ticker": "DE",
-     "rank": 10
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "MSTR",
-     "old_rank": 4
-    },
-    {
-     "ticker": "TMO",
-     "old_rank": 6
-    },
-    {
-     "ticker": "EMR",
-     "old_rank": 7
-    }
-   ],
-   "moves": [
-    {
-     "ticker": "META",
-     "rank": 5,
-     "delta": 5
-    }
-   ]
-  },
-  "momentum": {
-   "entries": [
-    {
-     "ticker": "BIIB",
-     "rank": 1
-    },
-    {
-     "ticker": "AMGN",
-     "rank": 2
-    },
-    {
-     "ticker": "ABBV",
-     "rank": 5
-    },
-    {
-     "ticker": "MSFT",
-     "rank": 10
-    },
-    {
-     "ticker": "MMM",
+     "ticker": "ZAL.DE",
      "rank": 12
     },
     {
-     "ticker": "BNS",
+     "ticker": "EMR",
+     "rank": 13
+    },
+    {
+     "ticker": "MAR",
      "rank": 14
     },
     {
-     "ticker": "DE",
+     "ticker": "TM",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "MRNA",
-     "old_rank": 3
-    },
-    {
-     "ticker": "V",
-     "old_rank": 6
-    },
-    {
-     "ticker": "BAYN.DE",
-     "old_rank": 9
-    },
-    {
      "ticker": "SY1.DE",
-     "old_rank": 10
+     "old_rank": 8
     },
     {
-     "ticker": "ADP",
+     "ticker": "MUV2.DE",
      "old_rank": 11
     },
     {
-     "ticker": "TMO",
-     "old_rank": 13
+     "ticker": "DHL.DE",
+     "old_rank": 12
     },
     {
      "ticker": "HNR1.DE",
-     "old_rank": 15
+     "old_rank": 14
     }
    ],
-   "moves": [
-    {
-     "ticker": "MAR",
-     "rank": 7,
-     "delta": 5
-    }
-   ]
+   "moves": []
+  },
+  "momentum": {
+   "entries": [],
+   "exits": [],
+   "moves": []
   },
   "value": {
    "entries": [
     {
-     "ticker": "APP",
-     "rank": 10
+     "ticker": "TTE",
+     "rank": 8
+    },
+    {
+     "ticker": "BLK",
+     "rank": 12
     }
    ],
    "exits": [
     {
-     "ticker": "MTX.DE",
+     "ticker": "CNQ",
+     "old_rank": 8
+    },
+    {
+     "ticker": "MNST",
      "old_rank": 15
     }
    ],
-   "moves": [
-    {
-     "ticker": "META",
-     "rank": 3,
-     "delta": 7
-    }
-   ]
+   "moves": []
   },
   "analyst_flips": []
  }

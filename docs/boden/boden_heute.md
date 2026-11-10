@@ -1,4 +1,4 @@
-# Boden-Screening 2026-11-09 (Stand 2026-11-10 04:09 UTC)
+# Boden-Screening 2026-11-09 (Stand 2026-11-10 13:28 UTC)
 
 Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RSI < 50 + mind. 2 Boden-Punkte (nur Technik). Die Filter (Analysten, Anker, CRV 2:1) stehen in docs/heute.csv. Boden-Anker = niedrigster Puffer mit 60 % Halterate fuer diese Gruppe und diesen Wert (Vollauf), KO-Marke = Bezugstief - Anker x ATR.
 
@@ -27,13 +27,13 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | ON | 3 | 45 | 2.25 | 51.75 | 53 % |
 | PANW | 3 | 40 | 2.00 | 270.36 | 83 % |
 | PCAR | 2 | 46 | 2.25 | 94.20 | 50 % |
-| RHM.DE | 2 | 32 | 3.25 | 639.57 | 73 % |
+| RHM.DE | 2 | 32 | 3.25 | 639.36 | 73 % |
 | SCCO | 6 | 42 | 3.50 | 130.32 | 0 % |
 | SNOW | 2 | 41 | 2.50 | 225.86 | 91 % |
 | VLO | 2 | 36 | 1.50 | 311.64 | 43 % |
 | WDC | 6 | 35 | 3.50 | 159.96 | 90 % |
 
-## Weitere Pruefttage (61)
+## Weitere Pruefttage (60)
 
 | Wert | Punkte | Grund |
 |---|---|---|
@@ -52,7 +52,6 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | ADS.DE | 1 | 1 P, Tief 1, RSI >= 50 |
 | ADSK | 1 | 1 P, Tief 1, RSI >= 50 |
 | AMGN | 1 | 1 P, Tief 1, RSI >= 50 |
-| BABA | 1 | 1 P, Tief 1, RSI >= 50 |
 | C | 1 | 1 P |
 | CDW | 1 | 1 P, Tief 1, RSI >= 50 |
 | CNQ | 1 | 1 P, Tief 1, Umkehr a |
@@ -64,12 +63,12 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | FDX | 1 | 1 P, Tief 1, RSI >= 50 |
 | GM | 1 | 1 P, Tief 1, RSI >= 50 |
 | GS | 1 | 1 P, RSI >= 50 |
-| ING | 1 | 1 P, Tief 1, RSI >= 50 |
+| ING | 1 | 1 P, Tief 1 |
 | LMT | 1 | 1 P, RSI >= 50 |
 | MS | 1 | 1 P |
-| MUFG | 1 | 1 P, Tief 1 |
 | NVDA | 1 | 1 P, Umkehr a |
 | ORCL | 1 | 1 P |
+| PBR | 1 | 1 P, Umkehr a |
 | PLD | 1 | 1 P, Tief 1, RSI >= 50 |
 | PSX | 1 | 1 P |
 | ROST | 1 | 1 P, Tief 1, RSI >= 50 |
@@ -98,3 +97,5 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | VOW3.DE | 0 | 0 P, Tief 1, Umkehr a |
 | XOM | 0 | 0 P, Tief 1, Umkehr a |
 | ZS | 0 | 0 P, Umkehr a |
+
+Nicht aktuell (kein Kurs vom 2026-11-09): BABA, BHP, MFG, MUFG, SKHY, SMFG, SONY, TM, TSM

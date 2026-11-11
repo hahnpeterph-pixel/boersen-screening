@@ -1,38 +1,54 @@
 # Marktdaten
 
-_Erstellt 2026-11-10 13:25 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1147._
+_Erstellt 2026-11-11 01:55 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1222._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
 Vollstaendige Daten: `docs/marktdaten.csv`
 
+> **Standwarnung: 2 von 272 Aktien haengen zurueck.** Neuester Handelstag 2026-11-10. Fuer die folgenden Werte gelten Kurs, ATR, RSI und Tiefs NICHT fuer diesen Tag. Die Spalte `stand_zurueck` in der CSV markiert sie ebenfalls.
+>
+> | Wert | letzte Kerze |
+> |---|---|
+> | HDB | 2026-11-09 |
+> | IBN | 2026-11-09 |
+
 ## Kerzensignale von gestern
 
 | Wert | Kurs | Hammer | hoeheres Hoch | Umkehrkerze | RSI |
 |---|---|---|---|---|---|
-| AMGN (AMGN) | 465.23 | ja | ja | - | 62.5 |
-| CTSH (CTSH) | 63.6 | - | - | ja | 48.18 |
-| PAYX (PAYX) | 114.76 | - | - | ja | 53.88 |
-| PDD (PDD) | 80.5 | - | - | ja | 50.21 |
-| TTWO (TTWO) | 207.4 | - | - | ja | 52.32 |
-| VRTX (VRTX) | 550.87 | ja | ja | - | 59.27 |
-| WDAY (WDAY) | 190.21 | - | - | ja | 42.92 |
-| ACN (ACN) | 254.37 | - | ja | ja | 61.2 |
-| C (C) | 121.97 | ja | ja | - | 45.03 |
-| COF (COF) | 198.58 | - | - | ja | 43.22 |
-| PM (PM) | 193.12 | - | - | ja | 40.76 |
-| BTI (BTI) | 44.77 | - | - | ja | 52.94 |
-| EQNR (EQNR) | 384.7 | - | - | ja | 33.24 |
-| AXON (AXON) | 303.18 | - | - | ja | 22.74 |
-| BMW.DE (BMW.DE) | 58.86 | - | - | ja | 54.32 |
-| BNR.DE (BNR.DE) | 61.18 | - | - | ja | 43.41 |
-| DB1.DE (DB1.DE) | 315.0 | - | - | ja | 56.88 |
-| SHL.DE (SHL.DE) | 43.16 | - | ja | ja | 60.15 |
-| SY1.DE (SY1.DE) | 94.36 | - | - | ja | 47.67 |
-| Brent Oel (BZ=F) | 92.57 | - | - | ja | 33.87 |
-| WTI Oel (CL=F) | 86.85 | - | - | ja | 37.72 |
-| Kakao (CC=F) | 5004.0 | - | - | ja | 29.47 |
-| EUR/TWD (EURTWD=X) | 35.535 | - | - | ja | 43.48 |
+| ABNB (ABNB) | 186.94 | - | - | ja | 62.64 |
+| BKNG (BKNG) | 159.26 | - | ja | ja | 48.44 |
+| CRM (CRM) | 213.48 | - | - | ja | 34.3 |
+| DASH (DASH) | 178.24 | - | - | ja | 45.23 |
+| GOOGL (GOOGL) | 287.38 | - | - | ja | 32.54 |
+| ISRG (ISRG) | 450.04 | - | - | ja | 55.0 |
+| MELI (MELI) | 1490.24 | - | - | ja | 31.16 |
+| MRNA (MRNA) | 250.71 | - | - | ja | 59.62 |
+| MSFT (MSFT) | 533.16 | - | - | ja | 52.3 |
+| NVDA (NVDA) | 168.89 | - | - | ja | 23.95 |
+| PDD (PDD) | 79.389 | - | - | ja | 47.15 |
+| PYPL (PYPL) | 58.8 | - | - | ja | 57.4 |
+| TEAM (TEAM) | 148.53 | - | - | ja | 25.73 |
+| ZS (ZS) | 194.92 | - | - | ja | 36.7 |
+| NOW (NOW) | 99.61 | - | - | ja | 27.11 |
+| BABA (BABA) | 101.6 | - | - | ja | 47.01 |
+| SCCO (SCCO) | 170.36 | - | - | ja | 37.93 |
+| NEM (NEM) | 119.96 | - | - | ja | 54.79 |
+| SHOP (SHOP) | 146.59 | - | - | ja | 41.79 |
+| SHEL (SHEL) | 36.27 | - | - | ja | 35.47 |
+| BNS (BNS) | 92.63 | - | ja | ja | 49.77 |
+| CM (CM) | 115.78 | - | - | ja | 51.94 |
+| MSTR (MSTR) | 121.07 | - | - | ja | 37.0 |
+| BMW.DE (BMW.DE) | 58.34 | - | ja | ja | 51.97 |
+| P911.DE (P911.DE) | 46.13 | - | - | ja | 58.54 |
+| PAH3.DE (PAH3.DE) | 25.19 | - | ja | ja | 44.59 |
+| SAP.DE (SAP.DE) | 210.1 | - | - | ja | 57.83 |
+| SHL.DE (SHL.DE) | 42.79 | - | - | ja | 56.86 |
+| SY1.DE (SY1.DE) | 93.72 | - | - | ja | 46.32 |
+| VOW3.DE (VOW3.DE) | 68.51 | - | ja | ja | 44.17 |
+| Kakao (CC=F) | 4852.0 | - | - | ja | 26.13 |
+| Zucker (SB=F) | 18.15 | - | - | ja | 36.06 |
 
 ---
 

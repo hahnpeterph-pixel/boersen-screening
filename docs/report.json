@@ -6,34 +6,34 @@
    "CTSH",
    "IBM",
    "META",
-   "DB1.DE",
+   "BEI.DE",
    "ISRG",
    "TSLA",
    "AMGN",
    "DHR",
-   "TM",
+   "ZAL.DE",
    "EXC",
-   "MUV2.DE",
+   "DB1.DE",
    "DE",
    "HON",
-   "DHL.DE"
+   "TM"
   ],
   "momentum": [
    "BIIB",
    "AMGN",
    "ABNB",
    "ABBV",
-   "DB1.DE",
    "MAR",
    "FAST",
+   "CDW",
    "ADP",
-   "HEN3.DE",
    "V",
+   "IBN",
    "MA",
    "CTAS",
    "CCEP",
    "MMM",
-   "SAP.DE"
+   "HEN3.DE"
   ],
   "value": [
    "PBR",
@@ -44,125 +44,100 @@
    "MU",
    "PSX",
    "REGN",
-   "TTE",
    "RIO",
+   "VLO",
    "ABNB",
    "BLK",
    "BHP",
-   "APP",
-   "ROST"
+   "ROST",
+   "MNST"
   ]
  },
  "changes": {
   "turnaround": {
    "entries": [
     {
-     "ticker": "IBM",
-     "rank": 3
+     "ticker": "BEI.DE",
+     "rank": 5
     },
     {
-     "ticker": "TSLA",
-     "rank": 7
-    },
-    {
-     "ticker": "MUV2.DE",
-     "rank": 12
-    },
-    {
-     "ticker": "HON",
-     "rank": 14
-    },
-    {
-     "ticker": "DHL.DE",
-     "rank": 15
+     "ticker": "ZAL.DE",
+     "rank": 10
     }
    ],
    "exits": [
     {
-     "ticker": "NXPI",
-     "old_rank": 3
-    },
-    {
-     "ticker": "BEI.DE",
-     "old_rank": 6
-    },
-    {
-     "ticker": "ZAL.DE",
+     "ticker": "MUV2.DE",
      "old_rank": 12
     },
     {
-     "ticker": "EMR",
-     "old_rank": 13
-    },
-    {
-     "ticker": "MAR",
-     "old_rank": 14
+     "ticker": "DHL.DE",
+     "old_rank": 15
     }
    ],
    "moves": [
     {
+     "ticker": "DB1.DE",
+     "rank": 12,
+     "delta": -7
+    },
+    {
      "ticker": "TM",
-     "rank": 10,
-     "delta": 5
+     "rank": 15,
+     "delta": -5
     }
    ]
   },
   "momentum": {
    "entries": [
     {
-     "ticker": "ADP",
-     "rank": 8
+     "ticker": "CDW",
+     "rank": 7
     },
     {
-     "ticker": "V",
+     "ticker": "IBN",
      "rank": 10
-    },
-    {
-     "ticker": "MA",
-     "rank": 11
-    },
-    {
-     "ticker": "CTAS",
-     "rank": 12
-    },
-    {
-     "ticker": "SAP.DE",
-     "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "KDP",
+     "ticker": "DB1.DE",
      "old_rank": 5
     },
     {
-     "ticker": "MSFT",
-     "old_rank": 10
-    },
-    {
-     "ticker": "WELL",
-     "old_rank": 13
-    },
-    {
-     "ticker": "BNS",
-     "old_rank": 14
-    },
-    {
-     "ticker": "DE",
+     "ticker": "SAP.DE",
      "old_rank": 15
     }
    ],
    "moves": [
     {
-     "ticker": "CCEP",
-     "rank": 13,
-     "delta": -5
+     "ticker": "HEN3.DE",
+     "rank": 15,
+     "delta": -6
     }
    ]
   },
   "value": {
-   "entries": [],
-   "exits": [],
+   "entries": [
+    {
+     "ticker": "VLO",
+     "rank": 10
+    },
+    {
+     "ticker": "MNST",
+     "rank": 15
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "TTE",
+     "old_rank": 9
+    },
+    {
+     "ticker": "APP",
+     "old_rank": 14
+    }
+   ],
    "moves": []
   },
   "analyst_flips": []

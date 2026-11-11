@@ -1,6 +1,6 @@
 # Tiefs, Volumen und Kaufregel-Check
 
-_Erstellt 2026-11-11 01:55 UTC. Fenster: letzte 90 Kalendertage. Tiefs nach der Umkehr-Regel (tiefs_regel.py): ein Tief zaehlt, sobald eine spaetere Kerze das Hoch der Tiefkerze ueberschreitet. Solange es abwaerts geht, gilt das tiefste Tief der Strecke. Gerechnet wird auf abgeschlossenen Tageskerzen._
+_Erstellt 2026-11-11 12:35 UTC. Fenster: letzte 90 Kalendertage. Tiefs nach der Umkehr-Regel (tiefs_regel.py): ein Tief zaehlt, sobald eine spaetere Kerze das Hoch der Tiefkerze ueberschreitet. Solange es abwaerts geht, gilt das tiefste Tief der Strecke. Gerechnet wird auf abgeschlossenen Tageskerzen._
 
 ## Kaufregel
 
@@ -37,7 +37,7 @@ Nur fuer Positionen mit `typ: Bestand`. RSI(14) nach Wilder-Glaettung; ab 70 gil
 | Wert | RSI | Umkehrkerze | Urteil | |
 |---|---|---|---|---|
 | Take-Two (TTWO) | 64,5 | nein | beobachten | ! |
-| Meta Platforms (META) | 46,6 | nein | unauffaellig | + |
+| Meta Platforms (META) | 46,5 | nein | unauffaellig | + |
 | Micron (MU) | 35,8 | nein | unauffaellig | + |
 | Microsoft (MSFT) | 52,3 | ja | VERKAUFSSIGNAL (Umkehrkerze) | X |
 | Microsoft II (MSFT) | 52,3 | ja | VERKAUFSSIGNAL (Umkehrkerze) | X |
@@ -101,7 +101,7 @@ Tief minus 2,0 x ATR. Die Hebelangabe ist das, was sich bei diesem KO rechnerisc
 | Wert | Kurs | ATR | nach Trendtief | Hebel | konservativ | Hebel |
 |---|---|---|---|---|---|---|
 | Take-Two (TTWO) | 224,64 | 8,79 | 188,77 | 6,3x | 166,27 | 3,8x |
-| Meta Platforms (META) | 641,66 | 23,90 | 536,01 | 6,1x | 489,48 | 4,2x |
+| Meta Platforms (META) | 641,39 | 23,90 | 536,01 | 6,1x | 489,48 | 4,2x |
 | Micron (MU) | 725,11 | 60,62 | 528,76 | 3,7x | 528,76 | 3,7x |
 | Microsoft (MSFT) | 533,16 | 17,29 | 491,78 | 12,9x | 442,56 | 5,9x |
 | Microsoft II (MSFT) | 533,16 | 17,29 | 491,78 | 12,9x | 442,56 | 5,9x |
@@ -139,7 +139,7 @@ _Diese Zeilen in die gelben Spalten uebertragen. Reihenfolge wie dort._
 | Ticker | Kurs | ATR(14) | RSI | Chart-Tief | Datum Tief | Vol. rel. |
 |---|---|---|---|---|---|---|
 | TTWO | 224,64 | 8,79 | 64,5 | 231,58 | 2026-08-20 | 2,21 |
-| META | 641,66 | 23,90 | 46,6 | 524,52 | 2026-07-30 | 1,18 |
+| META | 641,39 | 23,90 | 46,5 | 524,52 | 2026-07-30 | 1,18 |
 | MU | 725,11 | 60,62 | 35,8 | 915,18 | 2026-08-19 | 2,89 |
 | MSFT | 533,16 | 17,29 | 52,3 | 477,15 | 2026-08-18 | 1,04 |
 | ORCL | 117,98 | 8,71 | 40,7 | 137,44 | 2026-08-19 | 1,12 |

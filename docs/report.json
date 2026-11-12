@@ -1,5 +1,5 @@
 {
- "date": "2026-11-11",
+ "date": "2026-11-12",
  "ranks": {
   "turnaround": [
    "SNPS",
@@ -8,18 +8,19 @@
    "META",
    "BEI.DE",
    "ISRG",
+   "AZN",
    "TSLA",
    "AMGN",
-   "DHR",
-   "ZAL.DE",
-   "EXC",
    "DB1.DE",
+   "EXC",
    "DE",
    "HON",
-   "TM"
+   "MUV2.DE",
+   "ZAL.DE"
   ],
   "momentum": [
    "BIIB",
+   "DB1.DE",
    "AMGN",
    "ABNB",
    "ABBV",
@@ -27,13 +28,12 @@
    "FAST",
    "CDW",
    "ADP",
-   "V",
-   "IBN",
+   "HEN3.DE",
    "MA",
+   "V",
    "CTAS",
    "CCEP",
-   "MMM",
-   "HEN3.DE"
+   "MMM"
   ],
   "value": [
    "PBR",
@@ -44,8 +44,8 @@
    "MU",
    "PSX",
    "REGN",
+   "TTE",
    "RIO",
-   "VLO",
    "ABNB",
    "BLK",
    "BHP",
@@ -57,32 +57,27 @@
   "turnaround": {
    "entries": [
     {
-     "ticker": "BEI.DE",
-     "rank": 5
+     "ticker": "AZN",
+     "rank": 7
     },
     {
-     "ticker": "ZAL.DE",
-     "rank": 10
+     "ticker": "MUV2.DE",
+     "rank": 14
     }
    ],
    "exits": [
     {
-     "ticker": "MUV2.DE",
-     "old_rank": 12
+     "ticker": "DHR",
+     "old_rank": 9
     },
     {
-     "ticker": "DHL.DE",
+     "ticker": "TM",
      "old_rank": 15
     }
    ],
    "moves": [
     {
-     "ticker": "DB1.DE",
-     "rank": 12,
-     "delta": -7
-    },
-    {
-     "ticker": "TM",
+     "ticker": "ZAL.DE",
      "rank": 15,
      "delta": -5
     }
@@ -91,51 +86,35 @@
   "momentum": {
    "entries": [
     {
-     "ticker": "CDW",
-     "rank": 7
-    },
-    {
-     "ticker": "IBN",
-     "rank": 10
+     "ticker": "DB1.DE",
+     "rank": 2
     }
    ],
    "exits": [
     {
-     "ticker": "DB1.DE",
-     "old_rank": 5
-    },
-    {
-     "ticker": "SAP.DE",
-     "old_rank": 15
+     "ticker": "IBN",
+     "old_rank": 10
     }
    ],
    "moves": [
     {
      "ticker": "HEN3.DE",
-     "rank": 15,
-     "delta": -6
+     "rank": 10,
+     "delta": 5
     }
    ]
   },
   "value": {
    "entries": [
     {
-     "ticker": "VLO",
-     "rank": 10
-    },
-    {
-     "ticker": "MNST",
-     "rank": 15
+     "ticker": "TTE",
+     "rank": 9
     }
    ],
    "exits": [
     {
-     "ticker": "TTE",
-     "old_rank": 9
-    },
-    {
-     "ticker": "APP",
-     "old_rank": 14
+     "ticker": "VLO",
+     "old_rank": 10
     }
    ],
    "moves": []

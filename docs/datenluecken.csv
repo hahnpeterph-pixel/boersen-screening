@@ -1,13 +1,266 @@
 ticker,boerse,fehlend,gefuellt,wochenkontrolle
-BABA,HKEX,2026-11-11,,2026-11-11: Wochentief 100.10 liegt UNTER allen bekannten Tagestiefs (100.50) - der fehlende Tag hatte ein tieferes Tief
-BHP,ASX,2026-11-11,,2026-11-11: Wochentief 58.30 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+AAPL,USA,,2026-11-11:stunden,
+ABBV,USA,,2026-11-11:stunden,
+ABNB,USA,,2026-11-11:stunden,
+ABT,USA,,2026-11-11:stunden,
+ACN,USA,,2026-11-11:stunden,
+ADBE,USA,,2026-11-11:stunden,
+ADI,USA,,2026-11-11:stunden,
+ADP,USA,,2026-11-11:stunden,
+ADS.DE,XETRA,2026-11-11,,2026-11-11: Wochentief 171.50 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+ADSK,USA,,2026-11-11:stunden,
+AEP,USA,,2026-11-11:stunden,
+AIR.DE,XETRA,2026-11-11,,2026-11-11: Wochentief 195.76 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+ALV.DE,XETRA,2026-11-11,,2026-11-11: Wochentief 447.00 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+AMAT,USA,,2026-11-11:stunden,
+AMD,USA,,2026-11-11:stunden,
+AMGN,USA,,2026-11-11:stunden,
+AMT,USA,,2026-11-11:stunden,
+AMZN,USA,,2026-11-11:stunden,
+ANET,USA,2026-11-11,,2026-11-11: Wochentief 176.25 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+APH,USA,2026-11-11,,2026-11-11: Wochentief 75.51 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+APP,USA,2026-11-11,,2026-11-11: Wochentief 383.31 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+ARM,USA,,2026-11-11:stunden,
+ASML,Euronext,,2026-11-11:stunden,
+AVGO,USA,,2026-11-11:stunden,
+AXON,USA,2026-11-11,,2026-11-11: Wochentief 291.45 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+AXP,USA,,2026-11-11:stunden,
+AZN,LSE,,2026-11-11:stunden,
+BA,USA,,2026-11-11:stunden,
+BAC,USA,,2026-11-11:stunden,
+BAS.DE,XETRA,2026-11-11,,2026-11-11: Wochentief 53.44 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+BAYN.DE,XETRA,2026-11-11,,2026-11-11: Wochentief 55.10 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+BBVA,BME,2026-11-11,,2026-11-11: Wochentief 22.62 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+BEI.DE,XETRA,2026-11-11,,2026-11-11: Wochentief 83.94 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+BIIB,USA,,2026-11-11:stunden,
+BKNG,USA,,2026-11-11:stunden,
+BKR,USA,,2026-11-11:stunden,
+BLK,USA,,2026-11-11:stunden,
+BMO,USA,2026-11-11,,2026-11-11: Wochentief 172.09 liegt UNTER allen bekannten Tagestiefs (172.44) - der fehlende Tag hatte ein tieferes Tief
+BMW.DE,XETRA,2026-11-11,,2026-11-11: Wochentief 57.62 liegt UNTER allen bekannten Tagestiefs (58.12) - der fehlende Tag hatte ein tieferes Tief
+BMY,USA,,2026-11-11:stunden,
+BNR.DE,XETRA,2026-11-11,,2026-11-11: Wochentief 58.42 liegt UNTER allen bekannten Tagestiefs (60.90) - der fehlende Tag hatte ein tieferes Tief
+BNS,USA,2026-11-11,,2026-11-11: Wochentief 92.53 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+BNY,USA,,2026-11-11:stunden,
+BP,LSE,2026-11-11,,2026-11-11: Wochentief 5.40 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+BRK-B,USA,,2026-11-11:stunden,
+BTI,LSE,2026-11-11,,2026-11-11: Wochentief 44.65 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+C,USA,2026-11-11,,2026-11-11: Wochentief 118.21 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+CAT,USA,,2026-11-11:stunden,
+CB,USA,2026-11-11,,2026-11-11: Wochentief 360.48 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+CBK.DE,XETRA,2026-11-11,,2026-11-11: Wochentief 38.34 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+CCEP,USA,2026-11-11,,2026-11-11: Wochentief 115.19 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+CDNS,USA,,2026-11-11:stunden,
+CDW,USA,,2026-11-11:stunden,
+CEG,USA,,2026-11-11:stunden,
+CHTR,USA,,2026-11-11:stunden,
+CL,USA,2026-11-11,,2026-11-11: Wochentief 96.56 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+CM,USA,2026-11-11,,2026-11-11: Wochentief 115.40 liegt UNTER allen bekannten Tagestiefs (115.55) - der fehlende Tag hatte ein tieferes Tief
+CMCSA,USA,,2026-11-11:stunden,
+CNQ,USA,2026-11-11,,2026-11-11: Wochentief 46.87 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+COF,USA,2026-11-11,,2026-11-11: Wochentief 190.62 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+CON.DE,XETRA,2026-11-11,,2026-11-11: Wochentief 69.88 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+COP,USA,2026-11-11,,2026-11-11: Wochentief 131.12 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+COST,USA,,2026-11-11:stunden,
+CPRT,USA,,2026-11-11:stunden,
+CRM,USA,,2026-11-11:stunden,
+CRWD,USA,,2026-11-11:stunden,
+CSCO,USA,,2026-11-11:stunden,
+CSGP,USA,,2026-11-11:stunden,
+CSX,USA,,2026-11-11:stunden,
+CTAS,USA,,2026-11-11:stunden,
+CTSH,USA,,2026-11-11:stunden,
+CVS,USA,2026-11-11,,2026-11-11: Wochentief 83.83 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+CVX,USA,2026-11-11,,2026-11-11: Wochentief 206.01 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+DASH,USA,,2026-11-11:stunden,
+DB1.DE,XETRA,2026-11-11,,2026-11-11: Wochentief 312.80 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+DBK.DE,XETRA,2026-11-11,,2026-11-11: Wochentief 31.57 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+DDOG,USA,,2026-11-11:stunden,
+DE,USA,2026-11-11,,2026-11-11: Wochentief 673.80 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+DELL,USA,2026-11-11,,2026-11-11: Wochentief 321.25 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+DHL.DE,XETRA,2026-11-11,,2026-11-11: Wochentief 57.82 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+DHR,USA,2026-11-11,,2026-11-11: Wochentief 228.37 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+DIS,USA,,2026-11-11:stunden,
+DTE.DE,XETRA,2026-11-11,,2026-11-11: Wochentief 25.63 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+DTG.DE,XETRA,2026-11-11,,2026-11-11: Wochentief 40.15 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+DUK,USA,2026-11-11,,2026-11-11: Wochentief 127.14 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+DXCM,USA,,2026-11-11:stunden,
+EMR,USA,2026-11-11,,2026-11-11: Wochentief 165.41 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+ENB,USA,2026-11-11,,2026-11-11: Wochentief 46.75 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+ENR.DE,XETRA,2026-11-11,,2026-11-11: Wochentief 117.42 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+EOAN.DE,XETRA,2026-11-11,,2026-11-11: Wochentief 18.71 liegt UNTER allen bekannten Tagestiefs (18.84) - der fehlende Tag hatte ein tieferes Tief
+EQIX,USA,2026-11-11,,2026-11-11: Wochentief 1027.47 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+EQNR,OSL,2026-11-11,,2026-11-11: Wochentief 373.20 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+ETN,USA,2026-11-11,,2026-11-11: Wochentief 344.78 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+EXC,USA,,2026-11-11:stunden,
+FANG,USA,,2026-11-11:stunden,
+FAST,USA,,2026-11-11:stunden,
+FDX,USA,2026-11-11,,2026-11-11: Wochentief 312.25 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+FRE.DE,XETRA,2026-11-11,,2026-11-11: Wochentief 52.45 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+FTNT,USA,,2026-11-11:stunden,
+GD,USA,2026-11-11,,2026-11-11: Wochentief 356.88 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+GE,USA,2026-11-11,,2026-11-11: Wochentief 328.26 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+GEHC,USA,,2026-11-11:stunden,
+GEV,USA,2026-11-11,,2026-11-11: Wochentief 747.00 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+GFS,USA,2026-11-11,,2026-11-11: Wochentief 38.70 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+GILD,USA,,2026-11-11:stunden,
+GLW,USA,2026-11-11,,2026-11-11: Wochentief 107.91 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+GM,USA,2026-11-11,,2026-11-11: Wochentief 87.09 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+GOOGL,USA,,2026-11-11:stunden,
+GS,USA,,2026-11-11:stunden,
+GSK,LSE,2026-11-11,,2026-11-11: Wochentief 18.75 liegt UNTER allen bekannten Tagestiefs (18.85) - der fehlende Tag hatte ein tieferes Tief
+HD,USA,,2026-11-11:stunden,
 HDB,NSE,2026-11-11,,2026-11-11: Wochentief 785.95 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+HEI.DE,XETRA,2026-11-11,,2026-11-11: Wochentief 173.00 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+HEN3.DE,XETRA,2026-11-11,,2026-11-11: Wochentief 83.04 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+HNR1.DE,XETRA,2026-11-11,,2026-11-11: Wochentief 285.40 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+HON,USA,,2026-11-11:stunden,
+HONA,USA,2026-11-11,,2026-11-11: Wochentief 154.45 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+HSBC,LSE,2026-11-11,,2026-11-11: Wochentief 12.98 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+IBM,USA,,2026-11-11:stunden,
 IBN,NSE,2026-11-11,,2026-11-11: Wochentief 1563.10 liegt UNTER allen bekannten Tagestiefs (1572.20) - der fehlende Tag hatte ein tieferes Tief
-MFG,TSE,2026-11-11,,2026-11-11: Wochentief 7309.00 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
-MUFG,TSE,2026-11-11,,2026-11-11: Wochentief 3319.00 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
-SKHY,KRX,2026-11-11,,2026-11-11: Wochentief 1116000.00 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
-SMFG,TSE,2026-11-11,,2026-11-11: Wochentief 3050.00 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
-SONY,TSE,2026-11-11,,2026-11-11: Wochentief 4150.00 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
-TM,TSE,2026-11-11,,2026-11-11: Wochentief 3333.00 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
-TSM,TWSE,2026-10-23 2026-11-11,,2026-10-23: Wochentief 2385.00 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle); 2026-11-11: Wochentief 2190.00 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+IDXX,USA,,2026-11-11:stunden,
+IFX.DE,XETRA,2026-11-11,,2026-11-11: Wochentief 45.82 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+ILMN,USA,,2026-11-11:stunden,
+ING,Euronext,2026-11-11,,2026-11-11: Wochentief 28.55 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+INTC,USA,,2026-11-11:stunden,
+INTU,USA,,2026-11-11:stunden,
+ISRG,USA,,2026-11-11:stunden,
+JNJ,USA,,2026-11-11:stunden,
+JPM,USA,,2026-11-11:stunden,
+KDP,USA,,2026-11-11:stunden,
+KHC,USA,,2026-11-11:stunden,
+KLAC,USA,,2026-11-11:stunden,
+KO,USA,,2026-11-11:stunden,
+LIN,USA,,2026-11-11:stunden,
+LLY,USA,2026-11-11,,2026-11-11: Wochentief 1364.58 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+LMT,USA,2026-11-11,,2026-11-11: Wochentief 566.27 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+LOW,USA,2026-11-11,,2026-11-11: Wochentief 227.23 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+LRCX,USA,,2026-11-11:stunden,
+LULU,USA,,2026-11-11:stunden,
+MA,USA,2026-11-11,,2026-11-11: Wochentief 646.26 liegt UNTER allen bekannten Tagestiefs (648.54) - der fehlende Tag hatte ein tieferes Tief
+MAR,USA,,2026-11-11:stunden,
+MBG.DE,XETRA,2026-11-11,,2026-11-11: Wochentief 41.12 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+MCD,USA,,2026-11-11:stunden,
+MCHP,USA,,2026-11-11:stunden,
+MCK,USA,2026-11-11,,2026-11-11: Wochentief 1055.73 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+MDB,USA,,2026-11-11:stunden,
+MDLZ,USA,,2026-11-11:stunden,
+MDT,USA,2026-11-11,,2026-11-11: Wochentief 100.02 liegt UNTER allen bekannten Tagestiefs (100.80) - der fehlende Tag hatte ein tieferes Tief
+MELI,USA,,2026-11-11:stunden,
+META,USA,,2026-11-11:stunden,
+MMM,USA,,2026-11-11:stunden,
+MNST,USA,,2026-11-11:stunden,
+MO,USA,2026-11-11,,2026-11-11: Wochentief 75.12 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+MPC,USA,2026-11-11,,2026-11-11: Wochentief 370.05 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+MRK,USA,,2026-11-11:stunden,
+MRK.DE,XETRA,2026-11-11,,2026-11-11: Wochentief 147.65 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+MRNA,USA,,2026-11-11:stunden,
+MRVL,USA,,2026-11-11:stunden,
+MS,USA,2026-11-11,,2026-11-11: Wochentief 184.37 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+MSFT,USA,,2026-11-11:stunden,
+MSTR,USA,2026-11-11,,2026-11-11: Wochentief 118.43 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+MTX.DE,XETRA,2026-11-11,,2026-11-11: Wochentief 344.30 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+MU,USA,,2026-11-11:stunden,
+MUV2.DE,XETRA,2026-11-11,,2026-11-11: Wochentief 563.80 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+NEE,USA,2026-11-11,,2026-11-11: Wochentief 85.57 liegt UNTER allen bekannten Tagestiefs (85.83) - der fehlende Tag hatte ein tieferes Tief
+NEM,USA,2026-11-11,,2026-11-11: Wochentief 118.19 liegt UNTER allen bekannten Tagestiefs (118.93) - der fehlende Tag hatte ein tieferes Tief
+NET,USA,2026-11-11,,2026-11-11: Wochentief 274.00 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+NFLX,USA,,2026-11-11:stunden,
+NKE,USA,,2026-11-11:stunden,
+NOW,USA,2026-11-11,,2026-11-11: Wochentief 97.00 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+NVDA,USA,,2026-11-11:stunden,
+NVO,CPH,2026-11-11,,2026-11-11: Wochentief 269.80 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+NVS,SIX,2026-11-11,,2026-11-11: Wochentief 132.48 liegt UNTER allen bekannten Tagestiefs (132.70) - der fehlende Tag hatte ein tieferes Tief
+NXPI,USA,,2026-11-11:stunden,
+ODFL,USA,,2026-11-11:stunden,
+ON,USA,,2026-11-11:stunden,
+ORCL,USA,,2026-11-11:stunden,
+ORLY,USA,,2026-11-11:stunden,
+P911.DE,XETRA,2026-11-11,,2026-11-11: Wochentief 45.67 liegt UNTER allen bekannten Tagestiefs (46.06) - der fehlende Tag hatte ein tieferes Tief
+PAH3.DE,XETRA,2026-11-11,,2026-11-11: Wochentief 25.09 liegt UNTER allen bekannten Tagestiefs (25.17) - der fehlende Tag hatte ein tieferes Tief
+PANW,USA,,2026-11-11:stunden,
+PAYX,USA,,2026-11-11:stunden,
+PCAR,USA,,2026-11-11:stunden,
+PDD,USA,,2026-11-11:stunden,
+PEP,USA,,2026-11-11:stunden,
+PFE,USA,2026-11-11,,2026-11-11: Wochentief 28.95 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+PG,USA,,2026-11-11:stunden,
+PGR,USA,2026-11-11,,2026-11-11: Wochentief 224.71 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+PH,USA,2026-11-11,,2026-11-11: Wochentief 930.45 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+PLD,USA,2026-11-11,,2026-11-11: Wochentief 127.65 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+PLTR,USA,,2026-11-11:stunden,
+PM,USA,2026-11-11,,2026-11-11: Wochentief 192.26 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+PSX,USA,2026-11-11,,2026-11-11: Wochentief 240.93 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+PYPL,USA,,2026-11-11:stunden,
+QCOM,USA,,2026-11-11:stunden,
+QIA.DE,XETRA,2026-11-11,,2026-11-11: Wochentief 45.10 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+REGN,USA,,2026-11-11:stunden,
+RHM.DE,XETRA,2026-11-11,,2026-11-11: Wochentief 792.60 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+RIO,LSE,2026-11-11,,2026-11-11: Wochentief 63.04 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+ROP,USA,,2026-11-11:stunden,
+ROST,USA,,2026-11-11:stunden,
+RTX,USA,2026-11-11,,2026-11-11: Wochentief 191.47 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+RWE.DE,XETRA,2026-11-11,,2026-11-11: Wochentief 56.90 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+RY,USA,2026-11-11,,2026-11-11: Wochentief 202.01 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+SAN,BME,2026-11-11,,2026-11-11: Wochentief 10.62 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+SAP.DE,XETRA,2026-11-11,,2026-11-11: Wochentief 207.75 liegt UNTER allen bekannten Tagestiefs (208.60) - der fehlende Tag hatte ein tieferes Tief
+SBUX,USA,,2026-11-11:stunden,
+SCCO,USA,2026-11-11,,2026-11-11: Wochentief 168.50 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+SCHW,USA,2026-11-11,,2026-11-11: Wochentief 91.63 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+SHEL,LSE,2026-11-11,,2026-11-11: Wochentief 35.85 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+SHL.DE,XETRA,2026-11-11,,2026-11-11: Wochentief 42.67 liegt UNTER allen bekannten Tagestiefs (42.75) - der fehlende Tag hatte ein tieferes Tief
+SHOP,USA,2026-11-11,,2026-11-11: Wochentief 142.10 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+SHW,USA,,2026-11-11:stunden,
+SIE.DE,XETRA,2026-11-11,,2026-11-11: Wochentief 262.90 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+SNDK,USA,2026-11-11,,2026-11-11: Wochentief 826.67 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+SNOW,USA,2026-11-11,,2026-11-11: Wochentief 278.32 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+SNPS,USA,,2026-11-11:stunden,
+SNY,Euronext,2026-11-11,,2026-11-11: Wochentief 84.39 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+SO,USA,2026-11-11,,2026-11-11: Wochentief 91.85 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+SPCX,USA,2026-11-11,,2026-11-11: Wochentief 135.37 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+SPG,USA,2026-11-11,,2026-11-11: Wochentief 228.97 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+SPGI,USA,,2026-11-11:stunden,
+SPOT,USA,2026-11-11,,2026-11-11: Wochentief 588.24 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+SRT3.DE,XETRA,2026-11-11,,2026-11-11: Wochentief 288.20 liegt UNTER allen bekannten Tagestiefs (289.00) - der fehlende Tag hatte ein tieferes Tief
+STX,USA,2026-11-11,,2026-11-11: Wochentief 466.16 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+SY1.DE,XETRA,2026-11-11,,2026-11-11: Wochentief 92.16 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+SYK,USA,2026-11-11,,2026-11-11: Wochentief 315.37 liegt UNTER allen bekannten Tagestiefs (317.87) - der fehlende Tag hatte ein tieferes Tief
+T,USA,2026-11-11,,2026-11-11: Wochentief 21.53 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+TD,USA,2026-11-11,,2026-11-11: Wochentief 123.03 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+TEAM,USA,,2026-11-11:stunden,
+TJX,USA,2026-11-11,,2026-11-11: Wochentief 134.86 liegt UNTER allen bekannten Tagestiefs (136.00) - der fehlende Tag hatte ein tieferes Tief
+TMO,USA,2026-11-11,,2026-11-11: Wochentief 692.39 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+TMUS,USA,,2026-11-11:stunden,
+TRV,USA,,2026-11-11:stunden,
+TSLA,USA,,2026-11-11:stunden,
+TSM,TWSE,2026-10-23,,2026-10-23: Wochentief 2385.00 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+TTD,USA,,2026-11-11:stunden,
+TTE,Euronext,2026-11-11,,2026-11-11: Wochentief 77.19 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+TTWO,USA,,2026-11-11:stunden,
+TXN,USA,,2026-11-11:stunden,
+UBER,USA,2026-11-11,,2026-11-11: Wochentief 68.84 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+UBS,SIX,2026-11-11,,2026-11-11: Wochentief 39.01 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+UL,LSE,2026-11-11,,2026-11-11: Wochentief 48.80 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+UNH,USA,,2026-11-11:stunden,
+UNP,USA,2026-11-11,,2026-11-11: Wochentief 290.49 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+UPS,USA,2026-11-11,,2026-11-11: Wochentief 108.94 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+USB,USA,2026-11-11,,2026-11-11: Wochentief 59.95 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+V,USA,,2026-11-11:stunden,
+VLO,USA,2026-11-11,,2026-11-11: Wochentief 341.51 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+VNA.DE,XETRA,2026-11-11,,2026-11-11: Wochentief 16.81 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+VOW3.DE,XETRA,2026-11-11,,2026-11-11: Wochentief 68.46 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+VRSK,USA,,2026-11-11:stunden,
+VRTX,USA,,2026-11-11:stunden,
+VZ,USA,,2026-11-11:stunden,
+WDAY,USA,,2026-11-11:stunden,
+WDC,USA,2026-11-11,,2026-11-11: Wochentief 269.87 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+WELL,USA,2026-11-11,,2026-11-11: Wochentief 243.40 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+WFC,USA,2026-11-11,,2026-11-11: Wochentief 84.25 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+WMT,USA,,2026-11-11:stunden,
+XEL,USA,,2026-11-11:stunden,
+XOM,USA,2026-11-11,,2026-11-11: Wochentief 160.11 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+ZAL.DE,XETRA,2026-11-11,,2026-11-11: Wochentief 27.25 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+ZS,USA,,2026-11-11:stunden,
+^GDAXI,USA,,2026-11-11:stunden,
 ^TNX,USA,,2026-10-12:stunden,

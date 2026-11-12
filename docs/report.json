@@ -3,50 +3,50 @@
  "ranks": {
   "turnaround": [
    "SNPS",
+   "TSLA",
    "CTSH",
    "IBM",
-   "META",
    "BEI.DE",
-   "ISRG",
+   "DHR",
    "AZN",
-   "TSLA",
-   "AMGN",
+   "META",
    "DB1.DE",
+   "BIIB",
+   "COP",
    "EXC",
    "DE",
-   "HON",
    "MUV2.DE",
    "ZAL.DE"
   ],
   "momentum": [
    "BIIB",
    "DB1.DE",
-   "AMGN",
-   "ABNB",
    "ABBV",
-   "MAR",
+   "AMGN",
    "FAST",
-   "CDW",
    "ADP",
-   "HEN3.DE",
-   "MA",
-   "V",
-   "CTAS",
+   "MAR",
    "CCEP",
-   "MMM"
+   "IBN",
+   "CDW",
+   "HEN3.DE",
+   "KDP",
+   "AMD",
+   "ABNB",
+   "DE"
   ],
   "value": [
+   "MU",
    "PBR",
    "TSM",
-   "META",
-   "AVGO",
    "NEM",
-   "MU",
+   "AVGO",
    "PSX",
-   "REGN",
    "TTE",
    "RIO",
+   "REGN",
    "ABNB",
+   "META",
    "BLK",
    "BHP",
    "ROST",
@@ -57,67 +57,105 @@
   "turnaround": {
    "entries": [
     {
-     "ticker": "AZN",
-     "rank": 7
+     "ticker": "DHR",
+     "rank": 6
     },
     {
-     "ticker": "MUV2.DE",
-     "rank": 14
+     "ticker": "BIIB",
+     "rank": 10
+    },
+    {
+     "ticker": "COP",
+     "rank": 11
     }
    ],
    "exits": [
     {
-     "ticker": "DHR",
+     "ticker": "ISRG",
+     "old_rank": 6
+    },
+    {
+     "ticker": "AMGN",
      "old_rank": 9
     },
     {
-     "ticker": "TM",
-     "old_rank": 15
+     "ticker": "HON",
+     "old_rank": 13
     }
    ],
    "moves": [
     {
-     "ticker": "ZAL.DE",
-     "rank": 15,
-     "delta": -5
+     "ticker": "TSLA",
+     "rank": 2,
+     "delta": 6
     }
    ]
   },
   "momentum": {
    "entries": [
     {
-     "ticker": "DB1.DE",
-     "rank": 2
+     "ticker": "IBN",
+     "rank": 9
+    },
+    {
+     "ticker": "KDP",
+     "rank": 12
+    },
+    {
+     "ticker": "AMD",
+     "rank": 13
+    },
+    {
+     "ticker": "DE",
+     "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "IBN",
-     "old_rank": 10
+     "ticker": "MA",
+     "old_rank": 11
+    },
+    {
+     "ticker": "V",
+     "old_rank": 12
+    },
+    {
+     "ticker": "CTAS",
+     "old_rank": 13
+    },
+    {
+     "ticker": "MMM",
+     "old_rank": 15
     }
    ],
    "moves": [
     {
-     "ticker": "HEN3.DE",
-     "rank": 10,
-     "delta": 5
+     "ticker": "CCEP",
+     "rank": 8,
+     "delta": 6
+    },
+    {
+     "ticker": "ABNB",
+     "rank": 14,
+     "delta": -10
     }
    ]
   },
   "value": {
-   "entries": [
+   "entries": [],
+   "exits": [],
+   "moves": [
     {
-     "ticker": "TTE",
-     "rank": 9
-    }
-   ],
-   "exits": [
+     "ticker": "MU",
+     "rank": 1,
+     "delta": 5
+    },
     {
-     "ticker": "VLO",
-     "old_rank": 10
+     "ticker": "META",
+     "rank": 11,
+     "delta": -8
     }
-   ],
-   "moves": []
+   ]
   },
   "analyst_flips": []
  }

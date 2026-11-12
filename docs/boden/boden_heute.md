@@ -1,4 +1,4 @@
-# Boden-Screening 2026-11-11 (Stand 2026-11-12 01:29 UTC)
+# Boden-Screening 2026-11-11 (Stand 2026-11-12 03:01 UTC)
 
 Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RSI < 50 + mind. 2 Boden-Punkte (nur Technik). Die Filter (Analysten, Anker, CRV 2:1) stehen in docs/heute.csv. Boden-Anker = niedrigster Puffer mit 60 % Halterate fuer diese Gruppe und diesen Wert (Vollauf), KO-Marke = Bezugstief - Anker x ATR.
 
@@ -6,22 +6,21 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 
 | Wert | Tief | RSI | Anker | KO-Marke | Analysten |
 |---|---|---|---|---|---|
+| NVDA | 3 | 29 | 2.00 | 147.61 | 96 % |
 | CRM | 4 | 39 | 2.25 | 189.36 | 64 % |
 | DELL | 2 | 40 | 2.75 | 227.64 | 67 % |
-| NVDA | 3 | 29 | 2.00 | 147.61 | 96 % |
 | GLW | 2 | 44 | 2.25 | 83.60 | 60 % |
 | GOOGL | 3 | 38 | 1.50 | 269.04 | 83 % |
 | ILMN | 3 | 37 | 2.00 | 171.94 | 69 % |
 | NOW | 3 | 31 | 2.75 | 75.82 | 86 % |
-| ODFL | 6 | 42 | 2.50 | 145.15 | 42 % |
+| ODFL | 6 | 42 | 2.50 | 145.13 | 42 % |
 | SKHY | 2 | 43 | 2.75 | 764892.86 | 100 % |
 | ZS | 2 | 36 | 3.00 | 147.62 | 84 % |
 
-## Weitere Pruefttage (87)
+## Weitere Pruefttage (93)
 
 | Wert | Punkte | Grund |
 |---|---|---|
-| AAPL | 2 | Tief 1, RSI >= 50 |
 | ANET | 2 | RSI >= 50 |
 | APH | 2 | Tief 1 |
 | ARM | 2 | Tief 1 |
@@ -30,10 +29,9 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | FRE.DE | 2 | Tief 1, RSI >= 50 |
 | GOOG | 2 | Tief 1 |
 | IFX.DE | 2 | RSI >= 50 |
-| KO | 2 | Tief 1, RSI >= 50 |
 | SHEL | 2 | Tief 1 |
 | SNDK | 2 | Tief 1 |
-| TRV | 2 | Tief 1, RSI >= 50 |
+| AAPL | 1 | 1 P, Tief 1, RSI >= 50 |
 | ABBV | 1 | 1 P, Tief 1, RSI >= 50 |
 | ADBE | 1 | 1 P |
 | APP | 1 | 1 P, Tief 1, RSI >= 50 |
@@ -44,6 +42,7 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | COF | 1 | 1 P, Tief 1 |
 | CON.DE | 1 | 1 P, Tief 1, RSI >= 50 |
 | DASH | 1 | 1 P, Tief 1 |
+| DHL.DE | 1 | 1 P, Tief 1, RSI >= 50 |
 | DTG.DE | 1 | 1 P, Tief 1, RSI >= 50 |
 | EMR | 1 | 1 P, Tief 1, RSI >= 50 |
 | GM | 1 | 1 P, Tief 1, RSI >= 50 |
@@ -51,6 +50,7 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | IDXX | 1 | 1 P, Tief 1, RSI >= 50 |
 | ING | 1 | 1 P, Tief 1, RSI >= 50 |
 | JPM | 1 | 1 P, Tief 1, RSI >= 50 |
+| KO | 1 | 1 P, Tief 1, RSI >= 50 |
 | MDLZ | 1 | 1 P, Tief 1, RSI >= 50 |
 | MELI | 1 | 1 P, Umkehr a |
 | MNST | 1 | 1 P, Tief 1 |
@@ -60,7 +60,6 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | MUFG | 1 | 1 P, Tief 1, RSI >= 50 |
 | NFLX | 1 | 1 P |
 | ORLY | 1 | 1 P, Tief 1, RSI >= 50 |
-| PBR | 1 | 1 P, Umkehr a |
 | PEP | 1 | 1 P, Tief 1, RSI >= 50 |
 | PM | 1 | 1 P |
 | REGN | 1 | 1 P, Tief 1, RSI >= 50 |
@@ -74,7 +73,10 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | SONY | 1 | 1 P, Tief 1, RSI >= 50 |
 | SY1.DE | 1 | 1 P, Tief 1 |
 | TM | 1 | 1 P, RSI >= 50 |
+| TMO | 1 | 1 P, Tief 1, RSI >= 50 |
 | TMUS | 1 | 1 P, Tief 1, RSI >= 50 |
+| TRV | 1 | 1 P, Tief 1, RSI >= 50 |
+| UBER | 1 | 1 P, RSI >= 50 |
 | V | 1 | 1 P, Tief 1, RSI >= 50 |
 | WDAY | 1 | 1 P, Tief 1 |
 | WMT | 1 | 1 P, Tief 1, RSI >= 50 |
@@ -107,6 +109,8 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | SAP.DE | 0 | 0 P, RSI >= 50, Umkehr a |
 | SHL.DE | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
 | SRT3.DE | 0 | 0 P, RSI >= 50, Umkehr a |
+| TD | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
+| TJX | 0 | 0 P, Tief 1, Umkehr a |
+| VOW3.DE | 0 | 0 P, Tief 1, Umkehr a |
 | VRTX | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
-
-Nicht aktuell (kein Kurs vom 2026-11-11): DHL.DE, T, TD, TJX, TMO, TTE, UBER, UBS, UL, UNP, UPS, USB, VLO, VNA.DE, VOW3.DE, WDC, WELL, WFC, XOM, ZAL.DE
+| WFC | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |

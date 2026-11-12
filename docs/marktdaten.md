@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-11-12 02:57 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1169._
+_Erstellt 2026-11-12 13:40 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1169._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -22,21 +22,20 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | NVS (NVS) | 132.74 | - | - | ja | 61.99 |
 | BBVA (BBVA) | 23.61 | - | - | ja | 56.78 |
 | SONY (SONY) | 4200.0 | - | ja | ja | 61.86 |
-| UL (UL) | 49.075 | - | - | ja | 54.0 |
 | IBN (IBN) | 1571.6 | - | ja | ja | 76.11 |
-| GSK (GSK) | 18.845 | - | - | ja | 53.38 |
+| GSK (GSK) | 18.87 | - | - | ja | 53.79 |
 | ADS.DE (ADS.DE) | 177.1 | - | - | ja | 66.81 |
-| BEI.DE (BEI.DE) | 84.28 | - | - | ja | 58.3 |
-| BMW.DE (BMW.DE) | 58.04 | - | - | ja | 50.67 |
-| BNR.DE (BNR.DE) | 59.28 | - | - | ja | 36.21 |
-| DTG.DE (DTG.DE) | 42.305 | - | ja | ja | 55.99 |
-| EOAN.DE (EOAN.DE) | 18.895 | - | - | ja | 59.3 |
-| HEI.DE (HEI.DE) | 180.35 | - | - | ja | 77.68 |
-| MTX.DE (MTX.DE) | 356.5 | - | - | ja | 56.39 |
-| P911.DE (P911.DE) | 46.05 | - | - | ja | 58.01 |
-| RHM.DE (RHM.DE) | 797.4 | - | - | ja | 29.09 |
-| VNA.DE (VNA.DE) | 16.995 | - | - | ja | 52.91 |
-| Gold (GC=F) | 3986.6001 | - | - | ja | 41.51 |
+| BEI.DE (BEI.DE) | 84.34 | - | - | ja | 58.55 |
+| BMW.DE (BMW.DE) | 57.98 | - | - | ja | 50.41 |
+| BNR.DE (BNR.DE) | 59.42 | - | - | ja | 36.68 |
+| CBK.DE (CBK.DE) | 40.16 | - | - | ja | 58.48 |
+| DTG.DE (DTG.DE) | 42.33 | - | ja | ja | 56.17 |
+| EOAN.DE (EOAN.DE) | 18.82 | - | - | ja | 57.75 |
+| HEI.DE (HEI.DE) | 181.0 | - | - | ja | 78.92 |
+| MTX.DE (MTX.DE) | 358.2 | - | - | ja | 57.55 |
+| RHM.DE (RHM.DE) | 794.1 | - | - | ja | 28.86 |
+| VNA.DE (VNA.DE) | 17.005 | - | - | ja | 53.13 |
+| Gold (GC=F) | 4000.5 | - | - | ja | 42.35 |
 | Platin (PL=F) | 1535.1 | - | ja | ja | 42.13 |
 | EUR/USD (EURUSD=X) | 1.1169 | ja | - | - | 42.69 |
 | EUR/HKD (EURHKD=X) | 8.7616 | ja | - | - | 43.17 |

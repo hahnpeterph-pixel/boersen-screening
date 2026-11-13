@@ -1,14 +1,13 @@
 # Boersen-Screening - 2026-11-13
 
-_Stand: Schlusskurse vom 2026-11-13, aber 270 Werte haengen zurueck - siehe Standwarnung. Erstellt 2026-11-13T00:00:39+00:00 UTC. 271 Werte ausgewertet._
+_Stand: Schlusskurse vom 2026-11-13, aber 261 Werte haengen zurueck - siehe Standwarnung. Erstellt 2026-11-13T02:37:25+00:00 UTC. 270 Werte ausgewertet._
 
-> **Standwarnung: 270 von 271 Werten haengen zurueck.** Neuester Handelstag im Bericht ist 2026-11-13.
+> **Standwarnung: 261 von 270 Werten haengen zurueck.** Neuester Handelstag im Bericht ist 2026-11-13.
 >
 > Ursache ist in aller Regel Yahoo: die vorlaeufige Tageskerze einer Boerse wird ueber Nacht durch die offizielle Abrechnung ersetzt, und solange die fehlt, faellt der Tag weg. Betroffen sind meist die europaeischen Notierungen. Fuer diese Werte gelten Kurs, ATR, RSI und Tiefs unten NICHT fuer den neuesten Handelstag.
 >
 > | Wert | letzte Kerze |
 > |---|---|
-> | ADS.DE | 2026-11-11 |
 > | AIR.DE | 2026-11-11 |
 > | ALV.DE | 2026-11-11 |
 > | ASML | 2026-11-11 |
@@ -33,12 +32,10 @@ _Stand: Schlusskurse vom 2026-11-13, aber 270 Werte haengen zurueck - siehe Stan
 > | EQNR | 2026-11-11 |
 > | FRE.DE | 2026-11-11 |
 > | GSK | 2026-11-11 |
-> | HDB | 2026-11-11 |
 > | HEI.DE | 2026-11-11 |
 > | HEN3.DE | 2026-11-11 |
 > | HNR1.DE | 2026-11-11 |
 > | HSBC | 2026-11-11 |
-> | IBN | 2026-11-11 |
 > | IFX.DE | 2026-11-11 |
 > | ING | 2026-11-11 |
 > | MBG.DE | 2026-11-11 |
@@ -62,7 +59,6 @@ _Stand: Schlusskurse vom 2026-11-13, aber 270 Werte haengen zurueck - siehe Stan
 > | SRT3.DE | 2026-11-11 |
 > | SY1.DE | 2026-11-11 |
 > | TTE | 2026-11-11 |
-> | UBS | 2026-11-11 |
 > | UL | 2026-11-11 |
 > | VNA.DE | 2026-11-11 |
 > | VOW3.DE | 2026-11-11 |
@@ -90,7 +86,6 @@ _Stand: Schlusskurse vom 2026-11-13, aber 270 Werte haengen zurueck - siehe Stan
 > | AXON | 2026-11-12 |
 > | AXP | 2026-11-12 |
 > | BA | 2026-11-12 |
-> | BABA | 2026-11-12 |
 > | BAC | 2026-11-12 |
 > | BIIB | 2026-11-12 |
 > | BKNG | 2026-11-12 |
@@ -155,8 +150,10 @@ _Stand: Schlusskurse vom 2026-11-13, aber 270 Werte haengen zurueck - siehe Stan
 > | GOOGL | 2026-11-12 |
 > | GS | 2026-11-12 |
 > | HD | 2026-11-12 |
+> | HDB | 2026-11-12 |
 > | HON | 2026-11-12 |
 > | IBM | 2026-11-12 |
+> | IBN | 2026-11-12 |
 > | IDXX | 2026-11-12 |
 > | ILMN | 2026-11-12 |
 > | INTC | 2026-11-12 |
@@ -184,7 +181,6 @@ _Stand: Schlusskurse vom 2026-11-13, aber 270 Werte haengen zurueck - siehe Stan
 > | MDT | 2026-11-12 |
 > | MELI | 2026-11-12 |
 > | META | 2026-11-12 |
-> | MFG | 2026-11-12 |
 > | MMM | 2026-11-12 |
 > | MNST | 2026-11-12 |
 > | MO | 2026-11-12 |
@@ -196,7 +192,6 @@ _Stand: Schlusskurse vom 2026-11-13, aber 270 Werte haengen zurueck - siehe Stan
 > | MSFT | 2026-11-12 |
 > | MSTR | 2026-11-12 |
 > | MU | 2026-11-12 |
-> | MUFG | 2026-11-12 |
 > | NEE | 2026-11-12 |
 > | NEM | 2026-11-12 |
 > | NET | 2026-11-12 |
@@ -235,13 +230,10 @@ _Stand: Schlusskurse vom 2026-11-13, aber 270 Werte haengen zurueck - siehe Stan
 > | SCHW | 2026-11-12 |
 > | SHOP | 2026-11-12 |
 > | SHW | 2026-11-12 |
-> | SKHY | 2026-11-12 |
-> | SMFG | 2026-11-12 |
 > | SNDK | 2026-11-12 |
 > | SNOW | 2026-11-12 |
 > | SNPS | 2026-11-12 |
 > | SO | 2026-11-12 |
-> | SONY | 2026-11-12 |
 > | SPG | 2026-11-12 |
 > | SPGI | 2026-11-12 |
 > | SPOT | 2026-11-12 |
@@ -251,16 +243,15 @@ _Stand: Schlusskurse vom 2026-11-13, aber 270 Werte haengen zurueck - siehe Stan
 > | TD | 2026-11-12 |
 > | TEAM | 2026-11-12 |
 > | TJX | 2026-11-12 |
-> | TM | 2026-11-12 |
 > | TMO | 2026-11-12 |
 > | TMUS | 2026-11-12 |
 > | TRV | 2026-11-12 |
 > | TSLA | 2026-11-12 |
-> | TSM | 2026-11-12 |
 > | TTD | 2026-11-12 |
 > | TTWO | 2026-11-12 |
 > | TXN | 2026-11-12 |
 > | UBER | 2026-11-12 |
+> | UBS | 2026-11-12 |
 > | UNH | 2026-11-12 |
 > | UNP | 2026-11-12 |
 > | UPS | 2026-11-12 |
@@ -290,12 +281,12 @@ _Stand: Schlusskurse vom 2026-11-13, aber 270 Werte haengen zurueck - siehe Stan
 
 ## 🎯 Analysten-Filter (Kursziel ≥15%, Kaufen-Anteil ≥75%)
 
-_Ueber alle 271 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei Gleichstand nach Kurspotenzial. Maximal 20 Treffer. Value-Trap-Ausschluesse gelten auch hier. RSI auf drei Zeitebenen, jeweils echt neu berechnet (nicht umgerechnet): Tag, Woche, Stunde. "k.A." bei Stunde heisst: fuer diesen Wert lagen keine verwertbaren Stundenkerzen vor._
+_Ueber alle 270 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei Gleichstand nach Kurspotenzial. Maximal 20 Treffer. Value-Trap-Ausschluesse gelten auch hier. RSI auf drei Zeitebenen, jeweils echt neu berechnet (nicht umgerechnet): Tag, Woche, Stunde. "k.A." bei Stunde heisst: fuer diesen Wert lagen keine verwertbaren Stundenkerzen vor._
 
 | Rang | Ticker | ISIN | Name | Index | Kurs | Abstand ATH (Info) | Kaufen-Anteil Analysten | Kursziel | RSI Tag | RSI Woche | RSI Stunde | Letztes Rating |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 1 | MU | US5951121038 | Micron Technology, Inc. | NASDAQ | 798.44 | -34% | 100% (13 Banken, ≤120T) | 1550.00 (94% ueber Kurs) | 44 | 47 | 58 | 2026-10-22 Rosenblatt: Rating bestaetigt: Buy |
-| 2 | SKHY | AR0272347318 | SK hynix Inc. | Watchlist | 1254000.00 | -57% | 100% (10 Banken, ≤120T) | 2289173.99 (82% ueber Kurs) | 42 | 42 | 50 | 2026-10-28 RBC Capital: Rating bestaetigt: Outperform |
+| 2 | SKHY | AR0272347318 | SK hynix Inc. | Watchlist | 1264000.00 | -57% | 100% (10 Banken, ≤120T) | 2289173.99 (81% ueber Kurs) | 43 | 42 | 52 | 2026-10-28 RBC Capital: Rating bestaetigt: Outperform |
 | 3 | LRCX | - | Lam Research Corporation | NASDAQ | 233.78 | -46% | 100% (9 Banken, ≤120T) | 352.50 (51% ueber Kurs) | 44 | 42 | 57 | 2026-11-09 B. Riley Securities: Rating bestaetigt: Buy |
 | 4 | ASML | USN070592100 | ASML Holding N.V. - New York Re | NASDAQ | 1403.80 | -18% | 100% (3 Banken, ≤120T) | 2084.14 (48% ueber Kurs) | 48 | 49 | 54 | 2026-10-15 JP Morgan: Rating bestaetigt: Overweight |
 | 5 | ETN | - | Eaton Corporation, PLC | Watchlist | 359.04 | -22% | 100% (7 Banken, ≤120T) | 485.00 (35% ueber Kurs) | 44 | 41 | 51 | 2026-11-10 Evercore ISI Group: Rating bestaetigt: Outperform |
@@ -441,6 +432,6 @@ _Ueber alle 271 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 
 ---
 
-_Nicht auswertbar heute (2): HONA, SPCX_
+_Nicht auswertbar heute (3): ADS.DE, HONA, SPCX_
 
 _Automatisch erzeugte Kennzahlensortierung, keine Anlageberatung._

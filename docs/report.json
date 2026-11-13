@@ -55,136 +55,14 @@
  },
  "changes": {
   "turnaround": {
-   "entries": [
-    {
-     "ticker": "CDNS",
-     "rank": 2
-    },
-    {
-     "ticker": "CVX",
-     "rank": 7
-    },
-    {
-     "ticker": "XOM",
-     "rank": 9
-    },
-    {
-     "ticker": "HON",
-     "rank": 11
-    },
-    {
-     "ticker": "AMGN",
-     "rank": 12
-    },
-    {
-     "ticker": "BEI.DE",
-     "rank": 15
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "CTSH",
-     "old_rank": 3
-    },
-    {
-     "ticker": "SRT3.DE",
-     "old_rank": 9
-    },
-    {
-     "ticker": "AEP",
-     "old_rank": 12
-    },
-    {
-     "ticker": "MAR",
-     "old_rank": 13
-    },
-    {
-     "ticker": "NEM",
-     "old_rank": 14
-    },
-    {
-     "ticker": "COST",
-     "old_rank": 15
-    }
-   ],
-   "moves": [
-    {
-     "ticker": "TSLA",
-     "rank": 8,
-     "delta": -6
-    }
-   ]
+   "entries": [],
+   "exits": [],
+   "moves": []
   },
   "momentum": {
-   "entries": [
-    {
-     "ticker": "LLY",
-     "rank": 3
-    },
-    {
-     "ticker": "DB1.DE",
-     "rank": 8
-    },
-    {
-     "ticker": "MA",
-     "rank": 9
-    },
-    {
-     "ticker": "CSX",
-     "rank": 10
-    },
-    {
-     "ticker": "SAP.DE",
-     "rank": 12
-    },
-    {
-     "ticker": "KO",
-     "rank": 13
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "ABBV",
-     "old_rank": 2
-    },
-    {
-     "ticker": "FAST",
-     "old_rank": 4
-    },
-    {
-     "ticker": "ADP",
-     "old_rank": 5
-    },
-    {
-     "ticker": "KDP",
-     "old_rank": 9
-    },
-    {
-     "ticker": "DE",
-     "old_rank": 12
-    },
-    {
-     "ticker": "HEN3.DE",
-     "old_rank": 14
-    }
-   ],
-   "moves": [
-    {
-     "ticker": "ABNB",
-     "rank": 6,
-     "delta": 5
-    },
-    {
-     "ticker": "V",
-     "rank": 7,
-     "delta": 8
-    },
-    {
-     "ticker": "CCEP",
-     "rank": 15,
-     "delta": -8
-    }
-   ]
+   "entries": [],
+   "exits": [],
+   "moves": []
   },
   "value": {
    "entries": [],

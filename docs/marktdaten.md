@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-11-13 00:00 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1095._
+_Erstellt 2026-11-13 02:37 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1095._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -62,8 +62,6 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | SAP.DE (SAP.DE) | 212.25 | ja | ja | - | 60.29 |
 | SRT3.DE (SRT3.DE) | 287.5 | - | ja | ja | 57.18 |
 | VOW3.DE (VOW3.DE) | 67.9 | - | ja | ja | 42.85 |
-| Weizen (ZW=F) | 582.5 | - | - | ja | 26.71 |
-| Mais (ZC=F) | 442.25 | - | - | ja | 33.01 |
 
 ---
 

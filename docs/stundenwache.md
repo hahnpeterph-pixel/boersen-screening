@@ -1,8 +1,8 @@
 # Stundenwache
 
-Stand: 2026-11-11 · 272 Werte mit Stundendaten · erstellt 2026-11-12 13:42 UTC
+Stand: 2026-11-12 · 272 Werte mit Stundendaten · erstellt 2026-11-13 00:02 UTC
 
-> **Sitzung noch nicht abgeschlossen.** 60 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 1, 5, 6, 7). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
+> **Sitzung noch nicht abgeschlossen.** 6 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 1, 5, 6, 7, 8, 9). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
 
 Marken sind das juengste Swing-Tief und das juengste Swing-Hoch aus `tiefs_regel.py`, also dieselben wie im Tagesbericht. Geprueft wird nur, was der letzte Handelstag auf Stundenbasis damit gemacht hat.
 
@@ -13,86 +13,79 @@ Lesart der Urteile:
 - **angetestet** - nur mit dem Docht beruehrt, kein Schluss dahinter
 - **unklar** - Stunden- und Tagesreihe passen nicht zusammen, siehe unten
 
-## Tief gebrochen (0)
+## Tief gebrochen (1)
 
-Keine.
+Schluss unter dem juengsten Swing-Tief. Die Sequenz ist gerissen.
+
+| Wert | Marke | Schluss | Abstand (ATR) | Stunden dahinter |
+|---|---|---|---|---|
+| PFE | 28.95 | 28.83 | -0.147 | 1 |
 
 ## Tief zurueckerobert (0)
 
 Keine.
 
-## Tief angetestet (6)
+## Tief angetestet (8)
 
 Docht bis unter die Marke, kein Stundenschluss darunter.
 
 | Wert | Marke | Schluss | Abstand (ATR) | Stunden dahinter |
 |---|---|---|---|---|
-| BMW.DE | 57.0 | 57.2 | 0.117 | 0 |
-| NEE | 85.57 | 85.995 | 0.246 | 0 |
-| CL | 96.82 | 98.03 | 0.491 | 0 |
-| CPRT | 31.68 | 32.18 | 0.536 | 0 |
-| AMGN | 459.14 | 468.25 | 0.703 | 0 |
-| HD | 344.31 | 351.38 | 0.708 | 0 |
+| ACN | 249.85 | 250.05 | 0.019 | 0 |
+| DHR | 231.84 | 232.17 | 0.051 | 0 |
+| BNS | 92.43 | 92.685 | 0.145 | 0 |
+| AMAT | 376.25 | 381.28 | 0.191 | 0 |
+| RY | 201.98 | 202.74 | 0.214 | 0 |
+| SNOW | 288.82 | 298.75 | 0.618 | 0 |
+| MRK.DE | 145.5 | 148.25 | 0.794 | 0 |
+| DELL | 336.085 | 371.35 | 0.972 | 0 |
 
-## Swing-Hoch ueberwunden (55)
+## Swing-Hoch ueberwunden (42)
 
 | Wert | Hoch | Schluss | Abstand (ATR) | Stunden darueber |
 |---|---|---|---|---|
-| QIA.DE | 42.345 | 45.345 | 15.054 | 6 |
-| IBN | 1404.9 | 1590.0 | 5.336 | 7 |
-| FRE.DE | 47.295 | 53.9 | 5.333 | 6 |
-| TTD | 13.68 | 15.99 | 2.745 | 7 |
+| QIA.DE | 42.345 | 45.295 | 14.542 | 9 |
+| IBN | 1404.9 | 1590.0 | 5.343 | 7 |
+| FRE.DE | 47.295 | 53.55 | 5.05 | 9 |
 | TM | 3115.0 | 3415.0 | 2.513 | 7 |
-| HEN3.DE | 84.46 | 87.66 | 1.865 | 6 |
-| CON.DE | 72.02 | 75.1 | 1.588 | 6 |
-| SCHW | 89.96 | 92.79 | 1.478 | 7 |
-| SNY | 85.37 | 88.03 | 1.418 | 6 |
+| TTD | 13.68 | 15.46 | 2.073 | 7 |
+| HEN3.DE | 84.46 | 87.38 | 1.702 | 9 |
+| SNY | 85.37 | 88.36 | 1.593 | 9 |
+| AMD | 514.61 | 585.5801 | 1.591 | 7 |
+| AVGO | 335.74 | 364.38 | 1.5 | 7 |
+| ANET | 188.53 | 206.76 | 1.457 | 7 |
 | SONY | 4068.0 | 4275.0 | 1.376 | 7 |
-| TMUS | 163.35 | 172.21 | 1.36 | 7 |
-| TTWO | 218.78 | 230.98 | 1.314 | 7 |
-| CHTR | 127.16 | 136.34 | 1.307 | 7 |
-| PH | 930.84 | 972.18 | 1.228 | 7 |
+| TMUS | 163.35 | 171.06 | 1.296 | 7 |
+| CON.DE | 72.02 | 74.5 | 1.257 | 9 |
+| CEG | 268.64 | 282.33 | 1.023 | 7 |
 | MFG | 7824.0 | 8160.0 | 0.984 | 7 |
-| AMD | 514.61 | 552.96 | 0.896 | 7 |
-| HONA | 161.7 | 169.47 | 0.836 | 7 |
-| GE | 333.75 | 342.68 | 0.753 | 7 |
-| BNY | 150.28 | 152.69 | 0.745 | 7 |
-| AIR.DE | 204.5 | 208.5 | 0.728 | 6 |
-| SPG | 231.66 | 234.75 | 0.716 | 7 |
-| WDAY | 185.82 | 191.17 | 0.714 | 7 |
-| MRK.DE | 152.0 | 154.05 | 0.7 | 6 |
-| ANET | 188.53 | 196.74 | 0.691 | 7 |
-| DELL | 354.5 | 373.75 | 0.566 | 7 |
-| AVGO | 335.74 | 345.45 | 0.544 | 7 |
-| ING | 29.68 | 30.08 | 0.529 | 6 |
-| VRSK | 201.65 | 205.98 | 0.513 | 7 |
+| SCHW | 89.96 | 91.72 | 0.89 | 7 |
+| BNY | 150.28 | 152.79 | 0.79 | 7 |
+| CHTR | 127.16 | 132.67 | 0.762 | 7 |
+| ALV.DE | 466.4 | 472.8 | 0.723 | 9 |
+| AIR.DE | 204.5 | 208.3 | 0.677 | 9 |
+| WDAY | 185.82 | 190.57 | 0.637 | 7 |
+| MUV2.DE | 579.8 | 587.6 | 0.637 | 9 |
+| VRSK | 201.65 | 206.32 | 0.594 | 7 |
+| XEL | 80.67 | 81.505 | 0.534 | 7 |
 | SMFG | 3237.0 | 3298.0 | 0.512 | 7 |
-| CEG | 268.64 | 274.759 | 0.47 | 7 |
-| ALV.DE | 466.4 | 470.3 | 0.442 | 6 |
-| FAST | 54.96 | 55.49 | 0.407 | 7 |
-| MS | 188.3 | 190.61 | 0.386 | 7 |
-| BHP | 59.0 | 59.61 | 0.382 | 7 |
-| GS | 916.95 | 927.34 | 0.353 | 7 |
-| EQIX | 1055.62 | 1068.47 | 0.338 | 7 |
-| KDP | 37.89 | 38.28 | 0.333 | 5 |
-| COST | 1081.55 | 1087.52 | 0.275 | 2 |
-| XEL | 80.67 | 81.11 | 0.273 | 2 |
-| SNOW | 296.84 | 301.27 | 0.272 | 7 |
-| TMO | 712.17 | 717.71 | 0.264 | 7 |
-| QCOM | 174.0 | 176.55 | 0.256 | 7 |
-| UPS | 111.83 | 112.44 | 0.206 | 7 |
-| MUV2.DE | 579.8 | 582.2 | 0.202 | 6 |
-| BRK-B | 586.3 | 588.28 | 0.174 | 2 |
-| AEP | 128.72 | 129.21 | 0.17 | 3 |
-| BKR | 49.02 | 49.4 | 0.158 | 7 |
-| T | 22.21 | 22.26 | 0.082 | 1 |
-| KO | 97.39 | 97.545 | 0.08 | 2 |
-| CAT | 599.78 | 601.94 | 0.069 | 6 |
-| CDW | 172.47 | 173.09 | 0.068 | 7 |
-| ENR.DE | 131.78 | 132.26 | 0.06 | 6 |
-| AAPL | 355.38 | 355.79 | 0.043 | 1 |
-| SIE.DE | 280.4 | 280.7 | 0.035 | 6 |
-| NVO | 278.0 | 278.1 | 0.013 | 6 |
+| HONA | 161.7 | 166.17 | 0.511 | 7 |
+| ING | 29.68 | 30.065 | 0.508 | 9 |
+| COST | 1081.55 | 1092.37 | 0.504 | 7 |
+| FAST | 54.96 | 55.55 | 0.459 | 7 |
+| SPG | 231.66 | 233.63 | 0.45 | 7 |
+| BRK-B | 586.3 | 589.92 | 0.316 | 7 |
+| QCOM | 174.0 | 177.16 | 0.311 | 7 |
+| RWE.DE | 58.92 | 59.32 | 0.293 | 7 |
+| SIE.DE | 280.4 | 282.5 | 0.244 | 9 |
+| GOOGL | 296.33 | 298.75 | 0.212 | 6 |
+| CAT | 599.78 | 605.4 | 0.179 | 6 |
+| ENR.DE | 131.78 | 133.2 | 0.179 | 8 |
+| BHP | 59.0 | 59.25 | 0.159 | 1 |
+| MS | 188.3 | 189.19 | 0.152 | 7 |
+| AEP | 128.72 | 128.9 | 0.063 | 7 |
+| JNJ | 283.25 | 283.57 | 0.044 | 6 |
+| KO | 97.39 | 97.42 | 0.016 | 7 |
 
 ## Reihen unstimmig - kein Urteil (0)
 

@@ -1,39 +1,39 @@
 {
- "date": "2026-11-12",
+ "date": "2026-11-13",
  "ranks": {
   "turnaround": [
-   "SNPS",
-   "TSLA",
-   "CTSH",
    "IBM",
+   "CDNS",
+   "SNPS",
+   "COP",
    "DHR",
    "META",
+   "CVX",
+   "TSLA",
+   "XOM",
    "BIIB",
-   "COP",
-   "SRT3.DE",
-   "EXC",
+   "HON",
+   "AMGN",
    "DE",
-   "AEP",
-   "MAR",
-   "NEM",
-   "COST"
+   "EXC",
+   "BEI.DE"
   ],
   "momentum": [
    "BIIB",
-   "ABBV",
    "AMGN",
-   "FAST",
-   "ADP",
+   "LLY",
    "MAR",
-   "CCEP",
    "CDW",
-   "KDP",
-   "AMD",
    "ABNB",
-   "DE",
+   "V",
+   "DB1.DE",
+   "MA",
+   "CSX",
+   "AMD",
+   "SAP.DE",
+   "KO",
    "CTAS",
-   "HEN3.DE",
-   "V"
+   "CCEP"
   ],
   "value": [
    "MU",
@@ -42,8 +42,8 @@
    "NEM",
    "AVGO",
    "PSX",
-   "RIO",
    "TTE",
+   "RIO",
    "REGN",
    "ABNB",
    "META",
@@ -57,84 +57,140 @@
   "turnaround": {
    "entries": [
     {
-     "ticker": "SRT3.DE",
+     "ticker": "CDNS",
+     "rank": 2
+    },
+    {
+     "ticker": "CVX",
+     "rank": 7
+    },
+    {
+     "ticker": "XOM",
      "rank": 9
     },
     {
-     "ticker": "AEP",
+     "ticker": "HON",
+     "rank": 11
+    },
+    {
+     "ticker": "AMGN",
      "rank": 12
     },
     {
-     "ticker": "MAR",
-     "rank": 13
-    },
-    {
-     "ticker": "NEM",
-     "rank": 14
-    },
-    {
-     "ticker": "COST",
+     "ticker": "BEI.DE",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "BEI.DE",
-     "old_rank": 5
+     "ticker": "CTSH",
+     "old_rank": 3
     },
     {
-     "ticker": "AZN",
-     "old_rank": 7
-    },
-    {
-     "ticker": "DB1.DE",
+     "ticker": "SRT3.DE",
      "old_rank": 9
     },
     {
-     "ticker": "MUV2.DE",
+     "ticker": "AEP",
+     "old_rank": 12
+    },
+    {
+     "ticker": "MAR",
+     "old_rank": 13
+    },
+    {
+     "ticker": "NEM",
      "old_rank": 14
     },
     {
-     "ticker": "ZAL.DE",
+     "ticker": "COST",
      "old_rank": 15
     }
    ],
-   "moves": []
+   "moves": [
+    {
+     "ticker": "TSLA",
+     "rank": 8,
+     "delta": -6
+    }
+   ]
   },
   "momentum": {
    "entries": [
     {
-     "ticker": "CTAS",
-     "rank": 13
+     "ticker": "LLY",
+     "rank": 3
     },
     {
-     "ticker": "V",
-     "rank": 15
+     "ticker": "DB1.DE",
+     "rank": 8
+    },
+    {
+     "ticker": "MA",
+     "rank": 9
+    },
+    {
+     "ticker": "CSX",
+     "rank": 10
+    },
+    {
+     "ticker": "SAP.DE",
+     "rank": 12
+    },
+    {
+     "ticker": "KO",
+     "rank": 13
     }
    ],
    "exits": [
     {
-     "ticker": "DB1.DE",
+     "ticker": "ABBV",
      "old_rank": 2
     },
     {
-     "ticker": "IBN",
+     "ticker": "FAST",
+     "old_rank": 4
+    },
+    {
+     "ticker": "ADP",
+     "old_rank": 5
+    },
+    {
+     "ticker": "KDP",
      "old_rank": 9
+    },
+    {
+     "ticker": "DE",
+     "old_rank": 12
+    },
+    {
+     "ticker": "HEN3.DE",
+     "old_rank": 14
     }
    ],
-   "moves": []
+   "moves": [
+    {
+     "ticker": "ABNB",
+     "rank": 6,
+     "delta": 5
+    },
+    {
+     "ticker": "V",
+     "rank": 7,
+     "delta": 8
+    },
+    {
+     "ticker": "CCEP",
+     "rank": 15,
+     "delta": -8
+    }
+   ]
   },
   "value": {
    "entries": [],
    "exits": [],
    "moves": []
   },
-  "analyst_flips": [
-   {
-    "ticker": "COP",
-    "now": -2,
-    "old": 0
-   }
-  ]
+  "analyst_flips": []
  }
 }

@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-11-13 02:37 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1095._
+_Erstellt 2026-11-13 12:56 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1095._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -50,18 +50,24 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | NEM (NEM) | 112.64 | - | - | ja | 45.64 |
 | PLD (PLD) | 128.55 | - | - | ja | 47.94 |
 | SHOP (SHOP) | 146.78 | - | ja | ja | 42.42 |
-| SAN (SAN) | 11.126 | - | - | ja | 46.81 |
+| SAN (SAN) | 11.082 | - | - | ja | 46.13 |
 | RIO (RIO) | 63.25 | - | - | ja | 42.31 |
 | APP (APP) | 393.68 | - | - | ja | 70.4 |
-| BMW.DE (BMW.DE) | 57.36 | - | ja | ja | 47.64 |
-| BNR.DE (BNR.DE) | 57.96 | - | - | ja | 32.01 |
-| MBG.DE (MBG.DE) | 40.855 | - | ja | ja | 46.93 |
-| MRK.DE (MRK.DE) | 148.25 | - | ja | ja | 55.63 |
+| BEI.DE (BEI.DE) | 84.08 | - | ja | ja | 57.38 |
+| BMW.DE (BMW.DE) | 57.18 | - | ja | ja | 46.89 |
+| BNR.DE (BNR.DE) | 57.44 | - | - | ja | 30.62 |
+| HEN3.DE (HEN3.DE) | 86.32 | - | ja | ja | 72.95 |
+| MBG.DE (MBG.DE) | 40.695 | - | ja | ja | 46.07 |
+| MRK.DE (MRK.DE) | 148.15 | - | ja | ja | 55.39 |
 | PAH3.DE (PAH3.DE) | 24.62 | - | ja | ja | 39.35 |
-| RHM.DE (RHM.DE) | 774.7 | - | - | ja | 27.47 |
-| SAP.DE (SAP.DE) | 212.25 | ja | ja | - | 60.29 |
-| SRT3.DE (SRT3.DE) | 287.5 | - | ja | ja | 57.18 |
-| VOW3.DE (VOW3.DE) | 67.9 | - | ja | ja | 42.85 |
+| RHM.DE (RHM.DE) | 772.6 | - | - | ja | 27.32 |
+| SAP.DE (SAP.DE) | 212.55 | ja | ja | - | 60.63 |
+| SRT3.DE (SRT3.DE) | 287.1 | - | ja | ja | 56.8 |
+| VOW3.DE (VOW3.DE) | 67.72 | - | ja | ja | 42.35 |
+| Gold (GC=F) | 3885.3 | - | - | ja | 35.84 |
+| Silber (SI=F) | 49.972 | - | - | ja | 35.48 |
+| Weizen (ZW=F) | 584.25 | - | - | ja | 27.21 |
+| Mais (ZC=F) | 442.5 | - | - | ja | 33.15 |
 
 ---
 

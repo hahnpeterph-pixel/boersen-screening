@@ -8,6 +8,7 @@
    "COP",
    "DHR",
    "META",
+   "BTI",
    "CVX",
    "TSLA",
    "XOM",
@@ -15,8 +16,7 @@
    "HON",
    "AMGN",
    "DE",
-   "EXC",
-   "BEI.DE"
+   "UL"
   ],
   "momentum": [
    "BIIB",
@@ -26,14 +26,14 @@
    "CDW",
    "ABNB",
    "V",
-   "DB1.DE",
    "MA",
    "CSX",
-   "AMD",
    "SAP.DE",
+   "AMD",
+   "BNS",
+   "HEN3.DE",
    "KO",
-   "CTAS",
-   "CCEP"
+   "CTAS"
   ],
   "value": [
    "MU",
@@ -42,10 +42,10 @@
    "NEM",
    "AVGO",
    "PSX",
-   "TTE",
    "RIO",
    "REGN",
    "ABNB",
+   "TTE",
    "META",
    "BLK",
    "BHP",
@@ -55,13 +55,49 @@
  },
  "changes": {
   "turnaround": {
-   "entries": [],
-   "exits": [],
+   "entries": [
+    {
+     "ticker": "BTI",
+     "rank": 7
+    },
+    {
+     "ticker": "UL",
+     "rank": 15
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "EXC",
+     "old_rank": 14
+    },
+    {
+     "ticker": "BEI.DE",
+     "old_rank": 15
+    }
+   ],
    "moves": []
   },
   "momentum": {
-   "entries": [],
-   "exits": [],
+   "entries": [
+    {
+     "ticker": "BNS",
+     "rank": 12
+    },
+    {
+     "ticker": "HEN3.DE",
+     "rank": 13
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "DB1.DE",
+     "old_rank": 8
+    },
+    {
+     "ticker": "CCEP",
+     "old_rank": 15
+    }
+   ],
    "moves": []
   },
   "value": {

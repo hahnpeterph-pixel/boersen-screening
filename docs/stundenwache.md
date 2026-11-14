@@ -1,8 +1,8 @@
 # Stundenwache
 
-Stand: 2026-11-13 · 272 Werte mit Stundendaten · erstellt 2026-11-14 00:19 UTC
+Stand: 2026-11-13 · 272 Werte mit Stundendaten · erstellt 2026-11-14 02:27 UTC
 
-> **Sitzung noch nicht abgeschlossen.** 5 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 5, 6, 7, 8, 9). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
+> **Sitzung noch nicht abgeschlossen.** 4 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 5, 6, 7, 8, 9). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
 
 Marken sind das juengste Swing-Tief und das juengste Swing-Hoch aus `tiefs_regel.py`, also dieselben wie im Tagesbericht. Geprueft wird nur, was der letzte Handelstag auf Stundenbasis damit gemacht hat.
 
@@ -21,22 +21,32 @@ Keine.
 
 Keine.
 
-## Tief angetestet (10)
+## Tief angetestet (20)
 
 Docht bis unter die Marke, kein Stundenschluss darunter.
 
 | Wert | Marke | Schluss | Abstand (ATR) | Stunden dahinter |
 |---|---|---|---|---|
-| SPG | 232.91 | 233.01 | 0.023 | 0 |
 | GM | 85.91 | 86.02 | 0.035 | 0 |
-| SCCO | 162.64 | 164.05 | 0.172 | 0 |
-| CM | 115.14 | 115.76 | 0.255 | 0 |
-| DE | 667.65 | 673.36 | 0.284 | 0 |
-| TD | 123.16 | 123.83 | 0.313 | 0 |
-| GD | 360.27 | 363.43 | 0.332 | 0 |
-| RY | 201.14 | 202.36 | 0.343 | 0 |
-| TMO | 689.79 | 699.72 | 0.462 | 0 |
-| LLY | 1419.8101 | 1444.615 | 0.486 | 0 |
+| TMUS | 169.55 | 169.965 | 0.07 | 0 |
+| SHW | 348.92 | 349.87 | 0.074 | 0 |
+| MRNA | 221.7 | 223.23 | 0.08 | 0 |
+| IFX.DE | 49.425 | 49.88 | 0.148 | 0 |
+| ASML | 1325.2 | 1337.6 | 0.192 | 0 |
+| CDNS | 319.86 | 323.04 | 0.208 | 0 |
+| ABBV | 293.56 | 295.17 | 0.217 | 0 |
+| SYK | 306.55 | 309.64 | 0.235 | 0 |
+| NET | 300.28 | 305.73 | 0.24 | 0 |
+| ENB | 47.46 | 47.675 | 0.273 | 0 |
+| MBG.DE | 40.385 | 40.745 | 0.284 | 0 |
+| SNDK | 848.4983 | 884.5003 | 0.316 | 0 |
+| GE | 328.1 | 331.83 | 0.318 | 0 |
+| BMW.DE | 56.8 | 57.56 | 0.44 | 0 |
+| DHR | 229.92 | 233.05 | 0.483 | 0 |
+| ADS.DE | 174.95 | 178.25 | 0.635 | 0 |
+| SHL.DE | 43.32 | 44.1 | 0.695 | 0 |
+| HEN3.DE | 84.42 | 87.16 | 1.425 | 0 |
+| SCHW | 89.76 | 92.99 | 1.534 | 0 |
 
 ## Swing-Hoch ueberwunden (34)
 
@@ -45,7 +55,7 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | QIA.DE | 42.345 | 45.295 | 15.101 | 9 |
 | IBN | 1404.9 | 1583.6 | 5.182 | 7 |
 | TM | 3115.0 | 3429.0 | 2.582 | 7 |
-| TTD | 13.68 | 15.69 | 2.311 | 7 |
+| TTD | 13.68 | 15.685 | 2.306 | 7 |
 | SONY | 4068.0 | 4355.0 | 1.921 | 7 |
 | CHTR | 127.16 | 138.49 | 1.574 | 7 |
 | WDAY | 185.82 | 196.39 | 1.432 | 7 |
@@ -64,7 +74,7 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | UL | 49.355 | 49.915 | 0.475 | 9 |
 | RWE.DE | 58.92 | 59.56 | 0.475 | 9 |
 | MS | 188.3 | 190.67 | 0.42 | 7 |
-| JNJ | 283.25 | 286.055 | 0.401 | 7 |
+| JNJ | 283.25 | 286.055 | 0.393 | 7 |
 | DB1.DE | 329.1 | 331.1 | 0.305 | 5 |
 | CL | 99.01 | 99.68 | 0.291 | 6 |
 | ODFL | 172.8 | 174.57 | 0.244 | 5 |
@@ -75,7 +85,7 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | UNH | 406.72 | 407.6 | 0.081 | 2 |
 | NVO | 278.0 | 278.45 | 0.059 | 1 |
 | EOAN.DE | 19.46 | 19.47 | 0.026 | 4 |
-| PG | 169.79 | 169.86 | 0.022 | 6 |
+| PG | 169.79 | 169.86 | 0.021 | 6 |
 
 ## Reihen unstimmig - kein Urteil (0)
 

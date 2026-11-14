@@ -4,16 +4,16 @@
   "turnaround": [
    "SNPS",
    "TSLA",
-   "META",
    "NXPI",
-   "CRM",
+   "SHOP",
    "COP",
    "DHR",
+   "META",
    "KDP",
    "XOM",
    "SRT3.DE",
    "PM",
-   "CNQ",
+   "PSX",
    "ORLY",
    "BIIB",
    "SO"
@@ -26,186 +26,84 @@
    "MAR",
    "TRV",
    "CDW",
+   "ABNB",
    "V",
    "AAPL",
+   "REGN",
    "HEN3.DE",
-   "ABBV",
    "ADP",
-   "BNS",
-   "SPOT",
-   "FAST"
+   "FAST",
+   "CTAS"
   ],
   "value": [
    "MU",
    "PBR",
    "TSM",
    "NEM",
-   "META",
    "AVGO",
    "PSX",
    "RIO",
    "REGN",
    "TTE",
    "ABNB",
+   "META",
    "BLK",
    "ROST",
-   "APP",
-   "BHP"
+   "BHP",
+   "PH"
   ]
  },
  "changes": {
   "turnaround": {
    "entries": [
     {
-     "ticker": "NXPI",
+     "ticker": "SHOP",
      "rank": 4
     },
     {
-     "ticker": "CRM",
-     "rank": 5
-    },
-    {
-     "ticker": "KDP",
-     "rank": 8
-    },
-    {
-     "ticker": "SRT3.DE",
-     "rank": 10
-    },
-    {
-     "ticker": "PM",
-     "rank": 11
-    },
-    {
-     "ticker": "CNQ",
+     "ticker": "PSX",
      "rank": 12
-    },
-    {
-     "ticker": "ORLY",
-     "rank": 13
-    },
-    {
-     "ticker": "SO",
-     "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "IBM",
-     "old_rank": 1
+     "ticker": "CRM",
+     "old_rank": 5
     },
     {
-     "ticker": "CDNS",
-     "old_rank": 2
-    },
-    {
-     "ticker": "BTI",
-     "old_rank": 7
-    },
-    {
-     "ticker": "CVX",
-     "old_rank": 8
-    },
-    {
-     "ticker": "HON",
+     "ticker": "CNQ",
      "old_rank": 12
-    },
-    {
-     "ticker": "AMGN",
-     "old_rank": 13
-    },
-    {
-     "ticker": "DE",
-     "old_rank": 14
-    },
-    {
-     "ticker": "UL",
-     "old_rank": 15
     }
    ],
-   "moves": [
-    {
-     "ticker": "TSLA",
-     "rank": 2,
-     "delta": 7
-    }
-   ]
+   "moves": []
   },
   "momentum": {
    "entries": [
     {
-     "ticker": "KDP",
-     "rank": 2
+     "ticker": "ABNB",
+     "rank": 8
     },
     {
-     "ticker": "GILD",
-     "rank": 3
-    },
-    {
-     "ticker": "CCEP",
-     "rank": 4
-    },
-    {
-     "ticker": "TRV",
-     "rank": 6
-    },
-    {
-     "ticker": "AAPL",
-     "rank": 9
-    },
-    {
-     "ticker": "ABBV",
+     "ticker": "REGN",
      "rank": 11
     },
     {
-     "ticker": "ADP",
-     "rank": 12
-    },
-    {
-     "ticker": "SPOT",
-     "rank": 14
-    },
-    {
-     "ticker": "FAST",
+     "ticker": "CTAS",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "AMGN",
-     "old_rank": 2
-    },
-    {
-     "ticker": "LLY",
-     "old_rank": 3
-    },
-    {
-     "ticker": "ABNB",
-     "old_rank": 6
-    },
-    {
-     "ticker": "MA",
-     "old_rank": 8
-    },
-    {
-     "ticker": "CSX",
-     "old_rank": 9
-    },
-    {
-     "ticker": "SAP.DE",
-     "old_rank": 10
-    },
-    {
-     "ticker": "AMD",
+     "ticker": "ABBV",
      "old_rank": 11
     },
     {
-     "ticker": "KO",
-     "old_rank": 14
+     "ticker": "BNS",
+     "old_rank": 13
     },
     {
-     "ticker": "CTAS",
-     "old_rank": 15
+     "ticker": "SPOT",
+     "old_rank": 14
     }
    ],
    "moves": []
@@ -213,21 +111,21 @@
   "value": {
    "entries": [
     {
-     "ticker": "APP",
-     "rank": 14
+     "ticker": "PH",
+     "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "MNST",
-     "old_rank": 15
+     "ticker": "APP",
+     "old_rank": 14
     }
    ],
    "moves": [
     {
      "ticker": "META",
-     "rank": 5,
-     "delta": 6
+     "rank": 11,
+     "delta": -6
     }
    ]
   },

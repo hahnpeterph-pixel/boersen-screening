@@ -1,0 +1,64 @@
+yfinance 1.8.0
+NVDA insider_transactions: 150 Zeilen, Spalten ['Shares', 'Value', 'URL', 'Text', 'Insider', 'Position', 'Transaction', 'Start Date', 'Ownership']
+   Zeitraum 2025-03-03 bis 2026-09-21
+NVDA insider_purchases: 7 Zeilen, Spalten ['Insider Purchases Last 6m', 'Shares', 'Trans']
+          Insider Purchases Last 6m        Shares  Trans
+   0                      Purchases     2613243.0     18
+   1                          Sales     6198325.0      9
+   2    Net Shares Purchased (Sold)    -3585082.0     27
+   3      Total Insider Shares Held  1001596032.0   <NA>
+   4  % Net Shares Purchased (Sold)        -0.004   <NA>
+   5                   % Buy Shares         0.003   <NA>
+   6                  % Sell Shares         0.006   <NA>
+NVDA insider_roster_holders: 10 Zeilen, Spalten ['Name', 'Position', 'URL', 'Most Recent Transaction', 'Latest Transaction Date', 'Shares Owned Indirectly', 'Position Indirect Date', 'Shares Owned Directly', 'Position Direct Date', 'positionSummary', 'positionSummaryDate']
+                     Name                 Position URL Most Recent Transaction Latest Transaction Date  Shares Owned Indirectly  Position Indirect Date  Shares Owned Directly Position Direct Date  positionSummary  positionSummaryDate
+   0         COXE TENCH C                 Director                  Stock Gift              2026-09-02               29081200.0            1.788307e+09                    NaN                  NaT              NaN                  NaN
+   1       HUANG JEN-HSUN  Chief Executive Officer                  Stock Gift              2026-06-16              812050000.0            1.781568e+09                    NaN                  NaT              NaN                  NaN
+   2  HUDSON BEACH DAWN E                 Director          Stock Award(Grant)              2026-06-25                      NaN                     NaN               370098.0           2026-06-25              NaN                  NaN
+   3   JONES HARVEY C JR.                 Director          Stock Award(Grant)              2026-06-25                      NaN                     NaN              7004900.0           2026-06-25              NaN                  NaN
+   4     KRESS COLETTE M.  Chief Financial Officer                        Sale              2026-03-20                      NaN                     NaN                    NaN                  NaT        4892020.0         1.773965e+09
+   5          PURI AJAY K                  Officer                        Sale              2026-03-18                3702160.0            1.773792e+09                    NaN                  NaT              NaN                  NaN
+   6     SEAWELL A BROOKE                 Director          Stock Award(Grant)              2026-06-25                      NaN                     NaN              2507820.0           2026-06-25              NaN                  NaN
+   7    SHOQUIST DEBORA C                  Officer          Stock Award(Grant)              2026-03-09                      NaN                     NaN              2046510.0           2026-03-09              NaN                  NaN
+AXON insider_transactions: 127 Zeilen, Spalten ['Shares', 'Value', 'URL', 'Text', 'Insider', 'Position', 'Transaction', 'Start Date', 'Ownership']
+   Zeitraum 2024-11-15 bis 2026-09-11
+AXON insider_purchases: 7 Zeilen, Spalten ['Insider Purchases Last 6m', 'Shares', 'Trans']
+          Insider Purchases Last 6m     Shares  Trans
+   0                      Purchases   410172.0     22
+   1                          Sales   112355.0     16
+   2    Net Shares Purchased (Sold)   297817.0     38
+   3      Total Insider Shares Held  4368865.0   <NA>
+   4  % Net Shares Purchased (Sold)      0.073   <NA>
+   5                   % Buy Shares      0.101   <NA>
+   6                  % Sell Shares      0.028   <NA>
+AXON insider_roster_holders: 10 Zeilen, Spalten ['Name', 'Position', 'URL', 'Most Recent Transaction', 'Latest Transaction Date', 'Shares Owned Directly', 'Position Direct Date']
+                         Name                  Position URL Most Recent Transaction Latest Transaction Date  Shares Owned Directly Position Direct Date
+   0          BAGLEY BRITTANY   Chief Operating Officer          Stock Award(Grant)              2026-08-14                 121685           2026-08-14
+   1     BROOKS CAMERON DAVID                   Officer          Stock Award(Grant)              2026-08-14                  67980           2026-08-14
+   2  COUGHLIN ELIZABETH REID                   Officer          Stock Award(Grant)              2026-08-14                  40841           2026-08-14
+   3            FIELDS ISAIAH                   Officer                        Sale              2026-09-11                  56263           2026-09-11
+   4       GARNREITER MICHAEL                  Director          Stock Award(Grant)              2026-05-29                  18398           2026-05-29
+   5           ISNER JOSHUA M                 President                        Sale              2026-08-31                 296974           2026-08-31
+   6         KUNINS JEFFREY C  Chief Technology Officer                        Sale              2026-08-21                 184029           2026-08-21
+   7           MAK JENNIFER H                   Officer          Stock Award(Grant)              2026-08-14                  13756           2026-08-14
+AMAT insider_transactions: 74 Zeilen, Spalten ['Shares', 'Value', 'URL', 'Text', 'Insider', 'Position', 'Transaction', 'Start Date', 'Ownership']
+   Zeitraum 2024-11-25 bis 2026-10-02
+AMAT insider_purchases: 7 Zeilen, Spalten ['Insider Purchases Last 6m', 'Shares', 'Trans']
+          Insider Purchases Last 6m     Shares  Trans
+   0                      Purchases    37429.0      5
+   1                          Sales   287313.0     13
+   2    Net Shares Purchased (Sold)  -249884.0     18
+   3      Total Insider Shares Held  4876950.0   <NA>
+   4  % Net Shares Purchased (Sold)     -0.049   <NA>
+   5                   % Buy Shares      0.007   <NA>
+   6                  % Sell Shares      0.056   <NA>
+AMAT insider_roster_holders: 10 Zeilen, Spalten ['Name', 'Position', 'URL', 'Most Recent Transaction', 'Latest Transaction Date', 'Shares Owned Indirectly', 'Position Indirect Date', 'Shares Owned Directly', 'Position Direct Date']
+                   Name                 Position URL Most Recent Transaction Latest Transaction Date  Shares Owned Indirectly  Position Indirect Date  Shares Owned Directly Position Direct Date
+   0        BRUNER JUDY                 Director                        Sale              2026-09-08                  26285.0            1.788826e+09                    NaN                  NaT
+   1      CHEN XUN ERIC                 Director          Stock Award(Grant)              2026-03-12                      NaN                     NaN                45970.0           2026-03-12
+   2     DE GEUS AART J                 Director                  Stock Gift              2026-05-21                      NaN                     NaN                93928.0           2026-05-21
+   3    DEANE TIMOTHY M                  Officer                  Stock Gift              2026-06-15                      NaN                     NaN               133086.0           2026-06-15
+   4   DICKERSON GARY E  Chief Executive Officer                        Sale              2026-06-30                      NaN                     NaN              1599840.0           2026-06-30
+   5         HILL BRICE  Chief Financial Officer                        Sale              2026-08-25                      NaN                     NaN               128613.0           2026-08-25
+   6  IANNOTTI THOMAS J                 Director                  Stock Gift              2026-06-16                      NaN                     NaN                41309.0           2026-06-16
+   7      LITTLE TERI A                  Officer          Stock Award(Grant)              2025-12-11                      NaN                     NaN               107421.0           2025-12-11

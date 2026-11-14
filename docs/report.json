@@ -4,16 +4,16 @@
   "turnaround": [
    "SNPS",
    "TSLA",
+   "META",
    "NXPI",
-   "SHOP",
+   "CRM",
    "COP",
    "DHR",
-   "META",
    "KDP",
    "XOM",
    "SRT3.DE",
    "PM",
-   "PSX",
+   "CNQ",
    "ORLY",
    "BIIB",
    "SO"
@@ -26,52 +26,52 @@
    "MAR",
    "TRV",
    "CDW",
-   "ABNB",
    "V",
    "AAPL",
-   "REGN",
+   "ABBV",
    "HEN3.DE",
    "ADP",
-   "FAST",
-   "CTAS"
+   "IBN",
+   "SPOT",
+   "FAST"
   ],
   "value": [
    "MU",
    "PBR",
    "TSM",
    "NEM",
+   "META",
    "AVGO",
    "PSX",
    "RIO",
    "REGN",
    "TTE",
    "ABNB",
-   "META",
    "BLK",
    "ROST",
-   "BHP",
-   "PH"
+   "APP",
+   "BHP"
   ]
  },
  "changes": {
   "turnaround": {
    "entries": [
     {
-     "ticker": "SHOP",
-     "rank": 4
+     "ticker": "CRM",
+     "rank": 5
     },
     {
-     "ticker": "PSX",
+     "ticker": "CNQ",
      "rank": 12
     }
    ],
    "exits": [
     {
-     "ticker": "CRM",
-     "old_rank": 5
+     "ticker": "SHOP",
+     "old_rank": 4
     },
     {
-     "ticker": "CNQ",
+     "ticker": "PSX",
      "old_rank": 12
     }
    ],
@@ -80,30 +80,30 @@
   "momentum": {
    "entries": [
     {
-     "ticker": "ABNB",
-     "rank": 8
+     "ticker": "ABBV",
+     "rank": 10
     },
     {
-     "ticker": "REGN",
-     "rank": 11
+     "ticker": "IBN",
+     "rank": 13
     },
     {
-     "ticker": "CTAS",
-     "rank": 15
+     "ticker": "SPOT",
+     "rank": 14
     }
    ],
    "exits": [
     {
-     "ticker": "ABBV",
+     "ticker": "ABNB",
+     "old_rank": 8
+    },
+    {
+     "ticker": "REGN",
      "old_rank": 11
     },
     {
-     "ticker": "BNS",
-     "old_rank": 13
-    },
-    {
-     "ticker": "SPOT",
-     "old_rank": 14
+     "ticker": "CTAS",
+     "old_rank": 15
     }
    ],
    "moves": []
@@ -111,21 +111,21 @@
   "value": {
    "entries": [
     {
-     "ticker": "PH",
-     "rank": 15
+     "ticker": "APP",
+     "rank": 14
     }
    ],
    "exits": [
     {
-     "ticker": "APP",
-     "old_rank": 14
+     "ticker": "PH",
+     "old_rank": 15
     }
    ],
    "moves": [
     {
      "ticker": "META",
-     "rank": 11,
-     "delta": -6
+     "rank": 5,
+     "delta": 6
     }
    ]
   },

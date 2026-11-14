@@ -1,6 +1,6 @@
 # Indizes
 
-Stand Abruf: 14.11.2026 06:31 UTC
+Stand Abruf: 14.11.2026 06:35 UTC
 
 **Marktlage S&P 500:** VIX 19,3 normal · Fear & Greed 39 Angst – Risiko für einen Rückgang um 4 % in den nächsten 2 Wochen: **normal (12 von 100, sonst 11)**
 

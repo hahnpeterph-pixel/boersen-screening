@@ -1,6 +1,6 @@
 # Stundenwache
 
-Stand: 2026-11-13 · 272 Werte mit Stundendaten · erstellt 2026-11-14 02:27 UTC
+Stand: 2026-11-13 · 272 Werte mit Stundendaten · erstellt 2026-11-14 06:34 UTC
 
 > **Sitzung noch nicht abgeschlossen.** 4 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 5, 6, 7, 8, 9). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
 
@@ -21,7 +21,7 @@ Keine.
 
 Keine.
 
-## Tief angetestet (20)
+## Tief angetestet (17)
 
 Docht bis unter die Marke, kein Stundenschluss darunter.
 
@@ -30,17 +30,14 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | GM | 85.91 | 86.02 | 0.035 | 0 |
 | TMUS | 169.55 | 169.965 | 0.07 | 0 |
 | SHW | 348.92 | 349.87 | 0.074 | 0 |
-| MRNA | 221.7 | 223.23 | 0.08 | 0 |
 | IFX.DE | 49.425 | 49.88 | 0.148 | 0 |
 | ASML | 1325.2 | 1337.6 | 0.192 | 0 |
 | CDNS | 319.86 | 323.04 | 0.208 | 0 |
-| ABBV | 293.56 | 295.17 | 0.217 | 0 |
 | SYK | 306.55 | 309.64 | 0.235 | 0 |
-| NET | 300.28 | 305.73 | 0.24 | 0 |
 | ENB | 47.46 | 47.675 | 0.273 | 0 |
 | MBG.DE | 40.385 | 40.745 | 0.284 | 0 |
-| SNDK | 848.4983 | 884.5003 | 0.316 | 0 |
 | GE | 328.1 | 331.83 | 0.318 | 0 |
+| DELL | 330.42 | 344.38 | 0.369 | 0 |
 | BMW.DE | 56.8 | 57.56 | 0.44 | 0 |
 | DHR | 229.92 | 233.05 | 0.483 | 0 |
 | ADS.DE | 174.95 | 178.25 | 0.635 | 0 |
@@ -53,9 +50,9 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | Wert | Hoch | Schluss | Abstand (ATR) | Stunden darueber |
 |---|---|---|---|---|
 | QIA.DE | 42.345 | 45.295 | 15.101 | 9 |
-| IBN | 1404.9 | 1583.6 | 5.182 | 7 |
+| IBN | 1404.9 | 1583.6 | 5.181 | 7 |
 | TM | 3115.0 | 3429.0 | 2.582 | 7 |
-| TTD | 13.68 | 15.685 | 2.306 | 7 |
+| TTD | 13.68 | 15.69 | 2.311 | 7 |
 | SONY | 4068.0 | 4355.0 | 1.921 | 7 |
 | CHTR | 127.16 | 138.49 | 1.574 | 7 |
 | WDAY | 185.82 | 196.39 | 1.432 | 7 |

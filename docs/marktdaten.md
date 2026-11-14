@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-11-14 02:25 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.105._
+_Erstellt 2026-11-14 06:32 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.105._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -54,7 +54,7 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | EQIX (EQIX) | 1053.79 | - | ja | ja | 55.76 |
 | SKHY (SKHY) | 1216000.0 | - | ja | ja | 40.08 |
 | BHP (BHP) | 58.86 | - | - | ja | 49.64 |
-| UBS (UBS) | 40.33 | - | - | ja | 51.86 |
+| UBS (UBS) | 40.45 | - | - | ja | 52.64 |
 | MFG (MFG) | 8020.0 | - | - | ja | 51.77 |
 | MSTR (MSTR) | 111.62 | - | - | ja | 32.57 |
 | BAS.DE (BAS.DE) | 54.31 | - | - | ja | 57.99 |
@@ -64,9 +64,7 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | P911.DE (P911.DE) | 45.45 | - | - | ja | 53.47 |
 | PAH3.DE (PAH3.DE) | 24.35 | - | - | ja | 37.13 |
 | VNA.DE (VNA.DE) | 16.755 | - | - | ja | 47.64 |
-| Silber (SI=F) | 48.65 | - | ja | ja | 32.71 |
-| Platin (PL=F) | 1492.2 | - | - | ja | 39.15 |
-| Kupfer (HG=F) | 6.0635 | - | ja | ja | 33.96 |
+| Silber (SI=F) | 49.031 | - | - | ja | 33.47 |
 
 ---
 

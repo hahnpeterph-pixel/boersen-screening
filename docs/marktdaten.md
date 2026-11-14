@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-11-13 12:56 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1095._
+_Erstellt 2026-11-14 00:17 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.105._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -10,64 +10,63 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 
 | Wert | Kurs | Hammer | hoeheres Hoch | Umkehrkerze | RSI |
 |---|---|---|---|---|---|
-| AXP (AXP) | 318.06 | - | ja | ja | 48.36 |
-| BA (BA) | 171.55 | - | ja | ja | 37.83 |
-| DASH (DASH) | 172.58 | - | - | ja | 41.75 |
-| DIS (DIS) | 118.23 | - | ja | ja | 65.57 |
-| GEHC (GEHC) | 81.84 | - | - | ja | 65.92 |
-| GILD (GILD) | 167.95 | - | ja | ja | 59.11 |
-| HON (HON) | 223.45 | - | - | ja | 54.64 |
-| ISRG (ISRG) | 439.89 | - | ja | ja | 50.55 |
-| KDP (KDP) | 35.42 | - | - | ja | 51.65 |
-| LULU (LULU) | 104.46 | - | - | ja | 48.83 |
-| MCD (MCD) | 273.63 | - | ja | ja | 64.01 |
-| META (META) | 623.61 | - | - | ja | 42.11 |
-| MMM (MMM) | 186.24 | - | - | ja | 60.71 |
-| MRNA (MRNA) | 231.35 | - | - | ja | 52.41 |
-| NFLX (NFLX) | 62.69 | - | - | ja | 39.72 |
-| PANW (PANW) | 322.66 | - | - | ja | 38.73 |
-| ROST (ROST) | 237.24 | - | ja | ja | 53.03 |
-| SBUX (SBUX) | 107.26 | - | ja | ja | 59.45 |
-| SPGI (SPGI) | 468.51 | - | ja | ja | 61.92 |
-| ABT (ABT) | 107.25 | - | ja | ja | 51.39 |
-| ACN (ACN) | 249.95 | - | ja | ja | 56.63 |
-| BLK (BLK) | 1216.61 | - | - | ja | 62.51 |
-| COF (COF) | 193.6 | - | ja | ja | 38.09 |
-| DE (DE) | 678.79 | - | ja | ja | 55.59 |
-| DHR (DHR) | 232.16 | - | - | ja | 53.77 |
-| GD (GD) | 363.07 | - | ja | ja | 55.93 |
-| GE (GE) | 330.86 | - | ja | ja | 57.04 |
-| GM (GM) | 86.25 | - | - | ja | 52.14 |
-| NEE (NEE) | 85.29 | - | ja | ja | 58.75 |
-| PFE (PFE) | 28.83 | - | ja | ja | 44.31 |
-| SCHW (SCHW) | 91.72 | - | ja | ja | 44.96 |
-| SO (SO) | 92.47 | - | ja | ja | 54.61 |
-| TMO (TMO) | 699.44 | - | - | ja | 53.45 |
-| UPS (UPS) | 110.38 | - | ja | ja | 61.6 |
-| BABA (BABA) | 93.8 | - | - | ja | 36.98 |
-| PH (PH) | 957.98 | - | - | ja | 53.92 |
-| SYK (SYK) | 312.39 | - | ja | ja | 52.59 |
-| NEM (NEM) | 112.64 | - | - | ja | 45.64 |
-| PLD (PLD) | 128.55 | - | - | ja | 47.94 |
-| SHOP (SHOP) | 146.78 | - | ja | ja | 42.42 |
-| SAN (SAN) | 11.082 | - | - | ja | 46.13 |
-| RIO (RIO) | 63.25 | - | - | ja | 42.31 |
-| APP (APP) | 393.68 | - | - | ja | 70.4 |
-| BEI.DE (BEI.DE) | 84.08 | - | ja | ja | 57.38 |
-| BMW.DE (BMW.DE) | 57.18 | - | ja | ja | 46.89 |
-| BNR.DE (BNR.DE) | 57.44 | - | - | ja | 30.62 |
-| HEN3.DE (HEN3.DE) | 86.32 | - | ja | ja | 72.95 |
-| MBG.DE (MBG.DE) | 40.695 | - | ja | ja | 46.07 |
-| MRK.DE (MRK.DE) | 148.15 | - | ja | ja | 55.39 |
-| PAH3.DE (PAH3.DE) | 24.62 | - | ja | ja | 39.35 |
-| RHM.DE (RHM.DE) | 772.6 | - | - | ja | 27.32 |
-| SAP.DE (SAP.DE) | 212.55 | ja | ja | - | 60.63 |
-| SRT3.DE (SRT3.DE) | 287.1 | - | ja | ja | 56.8 |
-| VOW3.DE (VOW3.DE) | 67.72 | - | ja | ja | 42.35 |
-| Gold (GC=F) | 3885.3 | - | - | ja | 35.84 |
-| Silber (SI=F) | 49.972 | - | - | ja | 35.48 |
-| Weizen (ZW=F) | 584.25 | - | - | ja | 27.21 |
-| Mais (ZC=F) | 442.5 | - | - | ja | 33.15 |
+| ADI (ADI) | 397.97 | - | - | ja | 49.19 |
+| AMAT (AMAT) | 370.5 | - | - | ja | 42.58 |
+| AMD (AMD) | 534.06 | - | - | ja | 50.36 |
+| AMGN (AMGN) | 465.67 | - | - | ja | 61.77 |
+| AMZN (AMZN) | 266.66 | - | - | ja | 57.43 |
+| ASML (ASML) | 1337.6 | - | - | ja | 41.36 |
+| AVGO (AVGO) | 347.01 | - | - | ja | 53.19 |
+| CDNS (CDNS) | 323.01 | - | ja | ja | 47.49 |
+| CPRT (CPRT) | 31.83 | - | - | ja | 61.43 |
+| CSCO (CSCO) | 95.64 | - | - | ja | 37.06 |
+| CSX (CSX) | 52.05 | - | - | ja | 58.55 |
+| CTAS (CTAS) | 226.24 | - | - | ja | 61.6 |
+| DASH (DASH) | 171.51 | - | - | ja | 41.11 |
+| FAST (FAST) | 55.19 | - | - | ja | 67.32 |
+| HON (HON) | 222.46 | - | - | ja | 53.38 |
+| KLAC (KLAC) | 152.32 | - | - | ja | 44.89 |
+| LRCX (LRCX) | 225.92 | - | - | ja | 41.94 |
+| MAR (MAR) | 423.16 | - | - | ja | 68.16 |
+| MCD (MCD) | 271.97 | - | - | ja | 61.77 |
+| MMM (MMM) | 183.66 | - | - | ja | 56.99 |
+| MRNA (MRNA) | 223.37 | - | - | ja | 49.72 |
+| NFLX (NFLX) | 62.15 | - | - | ja | 38.43 |
+| PLTR (PLTR) | 167.99 | - | - | ja | 39.46 |
+| QCOM (QCOM) | 172.47 | - | - | ja | 48.8 |
+| ROST (ROST) | 231.68 | - | - | ja | 47.91 |
+| SBUX (SBUX) | 106.44 | - | - | ja | 57.18 |
+| SHW (SHW) | 349.89 | - | - | ja | 54.9 |
+| TMUS (TMUS) | 169.95 | - | - | ja | 59.81 |
+| TXN (TXN) | 303.6 | - | - | ja | 54.83 |
+| VRTX (VRTX) | 538.6 | - | - | ja | 52.83 |
+| DE (DE) | 673.54 | - | - | ja | 53.21 |
+| GM (GM) | 86.0 | - | - | ja | 51.65 |
+| HONA (HONA) | 165.01 | - | - | ja | 53.37 |
+| LMT (LMT) | 596.04 | - | - | ja | 53.51 |
+| SPG (SPG) | 232.97 | - | - | ja | 74.86 |
+| UNP (UNP) | 302.44 | - | ja | ja | 57.24 |
+| BABA (BABA) | 90.55 | - | - | ja | 33.73 |
+| PH (PH) | 955.68 | - | - | ja | 53.38 |
+| SYK (SYK) | 309.64 | - | - | ja | 50.93 |
+| SCCO (SCCO) | 164.08 | - | - | ja | 34.89 |
+| WELL (WELL) | 244.46 | - | - | ja | 58.13 |
+| EQIX (EQIX) | 1053.79 | - | ja | ja | 55.76 |
+| SKHY (SKHY) | 1216000.0 | - | ja | ja | 40.08 |
+| BHP (BHP) | 58.86 | - | - | ja | 49.64 |
+| UBS (UBS) | 40.33 | - | - | ja | 51.86 |
+| MFG (MFG) | 8020.0 | - | - | ja | 51.77 |
+| MSTR (MSTR) | 111.62 | - | - | ja | 32.57 |
+| BAS.DE (BAS.DE) | 54.31 | - | - | ja | 57.99 |
+| DBK.DE (DBK.DE) | 33.215 | - | - | ja | 61.76 |
+| HEI.DE (HEI.DE) | 177.2 | - | - | ja | 71.45 |
+| MTX.DE (MTX.DE) | 353.0 | - | - | ja | 53.65 |
+| P911.DE (P911.DE) | 45.45 | - | - | ja | 53.47 |
+| PAH3.DE (PAH3.DE) | 24.35 | - | - | ja | 37.13 |
+| VNA.DE (VNA.DE) | 16.755 | - | - | ja | 47.64 |
+| Silber (SI=F) | 48.65 | - | ja | ja | 32.71 |
+| Platin (PL=F) | 1492.2 | - | - | ja | 39.15 |
+| Kupfer (HG=F) | 6.0635 | - | ja | ja | 33.96 |
 
 ---
 

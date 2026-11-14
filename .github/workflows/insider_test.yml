@@ -1,0 +1,38 @@
+name: Insider Test
+
+# 14.11.2026 (Peter: pruefen, ob Insiderdaten ueberhaupt geliefert werden): Machbarkeitstest nur auf dem Zweig insider-test.
+# Beruehrt main und das Screening nicht.
+
+on:
+  push:
+    branches: [insider-test]
+    paths:
+      - "test/insider_test.py"
+      - ".github/workflows/insider_test.yml"
+  workflow_dispatch:
+
+concurrency:
+  group: insider-test
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install yfinance pandas
+      - run: python test/insider_test.py
+      - name: Ergebnis sichern (nur Testzweig)
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add test/insider_test.csv test/insider_test.txt || true
+          git commit -m "Insider-Test $(date -u +%Y-%m-%d)" || exit 0
+          git push origin HEAD:insider-test

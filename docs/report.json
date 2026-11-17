@@ -5,35 +5,35 @@
    "TSLA",
    "IBM",
    "COP",
+   "SAP.DE",
    "KDP",
    "TXN",
    "PFE",
-   "SHOP",
    "VLO",
    "SRT3.DE",
    "PSX",
-   "TM",
    "MRK.DE",
-   "BEI.DE",
-   "SY1.DE",
-   "SPGI"
+   "TM",
+   "ZAL.DE",
+   "SPGI",
+   "PM"
   ],
   "momentum": [
    "LLY",
    "TRV",
-   "DB1.DE",
    "CCEP",
    "MAR",
    "MCK",
    "FAST",
-   "HEN3.DE",
    "ABBV",
    "KDP",
+   "HEN3.DE",
    "CSX",
    "CTAS",
-   "V",
    "SAP.DE",
-   "SY1.DE"
+   "V",
+   "DB1.DE",
+   "ZAL.DE"
   ],
   "value": [
    "PBR",
@@ -41,15 +41,15 @@
    "MU",
    "WDC",
    "PSX",
+   "NEM",
    "RIO",
    "VLO",
-   "NEM",
-   "META",
    "ABNB",
-   "REGN",
+   "META",
    "BLK",
-   "APP",
+   "REGN",
    "SCCO",
+   "APP",
    "MNST"
   ]
  },
@@ -57,86 +57,30 @@
   "turnaround": {
    "entries": [
     {
-     "ticker": "IBM",
-     "rank": 2
+     "ticker": "SAP.DE",
+     "rank": 4
     },
     {
-     "ticker": "TXN",
-     "rank": 5
-    },
-    {
-     "ticker": "PFE",
-     "rank": 6
-    },
-    {
-     "ticker": "SHOP",
-     "rank": 7
-    },
-    {
-     "ticker": "VLO",
-     "rank": 8
-    },
-    {
-     "ticker": "PSX",
-     "rank": 10
-    },
-    {
-     "ticker": "MRK.DE",
-     "rank": 12
-    },
-    {
-     "ticker": "BEI.DE",
+     "ticker": "ZAL.DE",
      "rank": 13
     },
     {
-     "ticker": "SY1.DE",
-     "rank": 14
-    },
-    {
-     "ticker": "SPGI",
+     "ticker": "PM",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "SNPS",
-     "old_rank": 1
-    },
-    {
-     "ticker": "META",
-     "old_rank": 3
-    },
-    {
-     "ticker": "NXPI",
-     "old_rank": 4
-    },
-    {
-     "ticker": "CRM",
-     "old_rank": 5
-    },
-    {
-     "ticker": "DHR",
+     "ticker": "SHOP",
      "old_rank": 7
     },
     {
-     "ticker": "XOM",
-     "old_rank": 9
-    },
-    {
-     "ticker": "PM",
-     "old_rank": 10
-    },
-    {
-     "ticker": "CNQ",
-     "old_rank": 12
-    },
-    {
-     "ticker": "ORLY",
+     "ticker": "BEI.DE",
      "old_rank": 13
     },
     {
-     "ticker": "BIIB",
-     "old_rank": 15
+     "ticker": "SY1.DE",
+     "old_rank": 14
     }
    ],
    "moves": []
@@ -144,124 +88,27 @@
   "momentum": {
    "entries": [
     {
-     "ticker": "LLY",
-     "rank": 1
-    },
-    {
-     "ticker": "MCK",
-     "rank": 6
-    },
-    {
-     "ticker": "FAST",
-     "rank": 7
-    },
-    {
-     "ticker": "CSX",
-     "rank": 11
-    },
-    {
-     "ticker": "CTAS",
-     "rank": 12
-    },
-    {
-     "ticker": "SAP.DE",
-     "rank": 14
-    },
-    {
-     "ticker": "SY1.DE",
+     "ticker": "ZAL.DE",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "BIIB",
-     "old_rank": 1
-    },
-    {
-     "ticker": "AAPL",
-     "old_rank": 3
-    },
-    {
-     "ticker": "GILD",
-     "old_rank": 5
-    },
-    {
-     "ticker": "CDW",
-     "old_rank": 8
-    },
-    {
-     "ticker": "ADP",
-     "old_rank": 12
-    },
-    {
-     "ticker": "SPG",
-     "old_rank": 14
-    },
-    {
-     "ticker": "SPOT",
+     "ticker": "SY1.DE",
      "old_rank": 15
     }
    ],
    "moves": [
     {
-     "ticker": "TRV",
-     "rank": 2,
-     "delta": 5
-    },
-    {
      "ticker": "DB1.DE",
-     "rank": 3,
-     "delta": 8
-    },
-    {
-     "ticker": "HEN3.DE",
-     "rank": 8,
-     "delta": 5
-    },
-    {
-     "ticker": "KDP",
-     "rank": 10,
-     "delta": -8
+     "rank": 14,
+     "delta": -11
     }
    ]
   },
   "value": {
-   "entries": [
-    {
-     "ticker": "WDC",
-     "rank": 4
-    },
-    {
-     "ticker": "VLO",
-     "rank": 7
-    },
-    {
-     "ticker": "SCCO",
-     "rank": 14
-    },
-    {
-     "ticker": "MNST",
-     "rank": 15
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "TSM",
-     "old_rank": 3
-    },
-    {
-     "ticker": "TTE",
-     "old_rank": 9
-    },
-    {
-     "ticker": "ROST",
-     "old_rank": 13
-    },
-    {
-     "ticker": "PH",
-     "old_rank": 15
-    }
-   ],
+   "entries": [],
+   "exits": [],
    "moves": []
   },
   "analyst_flips": []

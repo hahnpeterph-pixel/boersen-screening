@@ -1,60 +1,13 @@
 ticker,boerse,fehlend,gefuellt,wochenkontrolle
-ADS.DE,XETRA,,2026-11-16:stunden,
-AIR.DE,XETRA,,2026-11-16:stunden,
-ALV.DE,XETRA,,2026-11-16:stunden,
-ASML,Euronext,,2026-11-16:archiv,
-AZN,LSE,,2026-11-16:stunden,
-BAS.DE,XETRA,,2026-11-16:stunden,
-BAYN.DE,XETRA,,2026-11-16:stunden,
-BBVA,BME,,2026-11-16:stunden,
-BEI.DE,XETRA,,2026-11-16:stunden,
-BMW.DE,XETRA,,2026-11-16:stunden,
-BNR.DE,XETRA,,2026-11-16:stunden,
-BP,LSE,,2026-11-16:stunden,
-BTI,LSE,,2026-11-16:stunden,
-CBK.DE,XETRA,,2026-11-16:stunden,
-CON.DE,XETRA,,2026-11-16:stunden,
-DB1.DE,XETRA,,2026-11-16:stunden,
-DBK.DE,XETRA,,2026-11-16:stunden,
-DHL.DE,XETRA,,2026-11-16:stunden,
-DTE.DE,XETRA,,2026-11-16:stunden,
-DTG.DE,XETRA,,2026-11-16:stunden,
-ENR.DE,XETRA,,2026-11-16:stunden,
-EOAN.DE,XETRA,,2026-11-16:stunden,
-EQNR,OSL,,2026-11-16:stunden,
-FRE.DE,XETRA,,2026-11-16:stunden,
-GSK,LSE,,2026-11-16:stunden,
-HEI.DE,XETRA,,2026-11-16:stunden,
-HEN3.DE,XETRA,,2026-11-16:stunden,
-HNR1.DE,XETRA,,2026-11-16:stunden,
-HSBC,LSE,,2026-11-16:stunden,
-IFX.DE,XETRA,,2026-11-16:stunden,
-ING,Euronext,,2026-11-16:stunden,
-MBG.DE,XETRA,,2026-11-16:stunden,
-MRK.DE,XETRA,,2026-11-16:stunden,
-MTX.DE,XETRA,,2026-11-16:stunden,
-MUV2.DE,XETRA,,2026-11-16:stunden,
-NVO,CPH,,2026-11-16:stunden,
-P911.DE,XETRA,,2026-11-16:stunden,
-PAH3.DE,XETRA,,2026-11-16:stunden,
-PBR,B3,,2026-11-16:stunden,
-QIA.DE,XETRA,,2026-11-16:stunden,
-RHM.DE,XETRA,,2026-11-16:stunden,
-RIO,LSE,,2026-11-16:stunden,
-RWE.DE,XETRA,,2026-11-16:stunden,
-SAN,BME,,2026-11-16:stunden,
-SAP.DE,XETRA,,2026-11-16:stunden,
-SHEL,LSE,,2026-11-16:stunden,
-SHL.DE,XETRA,,2026-11-16:stunden,
-SIE.DE,XETRA,,2026-11-16:stunden,
-SNY,Euronext,,2026-11-16:stunden,
-SRT3.DE,XETRA,,2026-11-16:stunden,
-SY1.DE,XETRA,,2026-11-16:stunden,
-TSM,TWSE,2026-10-23,,2026-10-23: Wochentief 2385.00 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
-TTE,Euronext,,2026-11-16:stunden,
-UBS,SIX,,2026-11-16:stunden,
-UL,LSE,,2026-11-16:stunden,
-VNA.DE,XETRA,,2026-11-16:stunden,
-VOW3.DE,XETRA,,2026-11-16:archiv,
-ZAL.DE,XETRA,,2026-11-16:stunden,
+BABA,HKEX,2026-11-17,,2026-11-17: Wochentief 85.10 liegt UNTER allen bekannten Tagestiefs (89.80) - der fehlende Tag hatte ein tieferes Tief
+BHP,ASX,2026-11-17,,2026-11-17: Wochentief 54.38 liegt UNTER allen bekannten Tagestiefs (57.21) - der fehlende Tag hatte ein tieferes Tief
+HDB,NSE,2026-11-17,,2026-11-17: Wochentief 802.40 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+IBN,NSE,2026-11-17,,2026-11-17: Wochentief 1577.00 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+MFG,TSE,2026-11-17,,2026-11-17: Wochentief 7825.00 liegt UNTER allen bekannten Tagestiefs (8222.00) - der fehlende Tag hatte ein tieferes Tief
+MUFG,TSE,2026-11-17,,2026-11-17: Wochentief 3259.00 liegt UNTER allen bekannten Tagestiefs (3365.00) - der fehlende Tag hatte ein tieferes Tief
+SKHY,KRX,2026-11-17,,2026-11-17: Wochentief 1092000.00 liegt UNTER allen bekannten Tagestiefs (1113000.00) - der fehlende Tag hatte ein tieferes Tief
+SMFG,TSE,2026-11-17,,2026-11-17: Wochentief 3107.00 liegt UNTER allen bekannten Tagestiefs (3235.00) - der fehlende Tag hatte ein tieferes Tief
+SONY,TSE,2026-11-17,,2026-11-17: Wochentief 4210.00 liegt UNTER allen bekannten Tagestiefs (4242.00) - der fehlende Tag hatte ein tieferes Tief
+TM,TSE,2026-11-17,,2026-11-17: Wochentief 3383.00 liegt UNTER allen bekannten Tagestiefs (3402.00) - der fehlende Tag hatte ein tieferes Tief
+TSM,TWSE,2026-10-23 2026-11-17,,2026-10-23: Wochentief 2385.00 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle); 2026-11-17: Wochentief 2155.00 liegt UNTER allen bekannten Tagestiefs (2215.00) - der fehlende Tag hatte ein tieferes Tief
 ^TNX,USA,,2026-10-12:stunden 2026-11-11:stunden,

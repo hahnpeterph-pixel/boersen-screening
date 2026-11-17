@@ -1,14 +1,25 @@
 # Datenpruefung (Kurse bis 2026-11-16)
 
-**FEHLER - 1 Befunde bei Aktien, vor der Auswertung klaeren**
+**FEHLER - 12 Befunde bei Aktien, vor der Auswertung klaeren**
 
 Kalender Heimatboersen: verfuegbar
 
 | Quelle | Art | Rohstoff/Devise | Anzahl |
 |---|---|---|---|
 | kursverlauf | Platzhalter | ja | 2 |
-| kursverlauf | fehlt | nein | 1 |
+| kursverlauf | fehlt | nein | 12 |
 
 Aktien (hoechstens 60):
 
+- kursverlauf · fehlt · BABA · 2026-11-17
+- kursverlauf · fehlt · BHP · 2026-11-17
+- kursverlauf · fehlt · HDB · 2026-11-17
+- kursverlauf · fehlt · IBN · 2026-11-17
+- kursverlauf · fehlt · MFG · 2026-11-17
+- kursverlauf · fehlt · MUFG · 2026-11-17
+- kursverlauf · fehlt · SKHY · 2026-11-17
+- kursverlauf · fehlt · SMFG · 2026-11-17
+- kursverlauf · fehlt · SONY · 2026-11-17
+- kursverlauf · fehlt · TM · 2026-11-17
+- kursverlauf · fehlt · TSM · 2026-11-17
 - kursverlauf · fehlt · TSM · 2026-10-23

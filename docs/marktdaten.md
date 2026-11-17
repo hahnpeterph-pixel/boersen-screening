@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-11-17 04:28 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1025._
+_Erstellt 2026-11-17 14:18 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1025._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -14,7 +14,7 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | ADI (ADI) | 383.17 | - | - | ja | 44.36 |
 | AMZN (AMZN) | 257.75 | - | - | ja | 49.63 |
 | ARM (ARM) | 175.05 | - | - | ja | 36.42 |
-| ASML (ASML) | 1305.2 | - | - | ja | 38.68 |
+| ASML (ASML) | 1306.6 | - | - | ja | 38.79 |
 | BA (BA) | 165.22 | - | - | ja | 31.9 |
 | BKNG (BKNG) | 157.53 | - | - | ja | 46.49 |
 | BKR (BKR) | 47.94 | - | - | ja | 36.95 |
@@ -99,30 +99,35 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | MUFG (MUFG) | 3415.0 | - | - | ja | 48.05 |
 | BHP (BHP) | 57.21 | - | - | ja | 44.17 |
 | TD (TD) | 121.76 | - | - | ja | 46.06 |
-| PBR (PBR) | 50.24 | - | - | ja | 32.8 |
+| RIO (RIO) | 61.5 | - | - | ja | 36.37 |
+| PBR (PBR) | 50.19 | - | - | ja | 32.7 |
 | BMO (BMO) | 169.74 | - | - | ja | 46.82 |
 | BNS (BNS) | 90.63 | - | - | ja | 42.95 |
 | ENB (ENB) | 47.29 | - | - | ja | 43.34 |
-| EQNR (EQNR) | 395.7 | - | ja | ja | 41.9 |
+| EQNR (EQNR) | 395.6 | - | ja | ja | 41.86 |
 | CNQ (CNQ) | 48.17 | - | - | ja | 37.9 |
 | CM (CM) | 113.75 | - | - | ja | 45.74 |
 | GFS (GFS) | 39.42 | - | - | ja | 39.82 |
 | MSTR (MSTR) | 103.03 | - | - | ja | 28.73 |
-| BAS.DE (BAS.DE) | 53.81 | - | - | ja | 53.7 |
-| BEI.DE (BEI.DE) | 83.6 | - | ja | ja | 54.9 |
-| CON.DE (CON.DE) | 72.8 | - | - | ja | 59.96 |
-| DBK.DE (DBK.DE) | 32.975 | - | - | ja | 59.9 |
-| IFX.DE (IFX.DE) | 49.11 | - | - | ja | 43.17 |
-| P911.DE (P911.DE) | 43.96 | - | - | ja | 44.47 |
-| PAH3.DE (PAH3.DE) | 24.09 | - | - | ja | 35.05 |
+| AIR.DE (AIR.DE) | 204.2 | - | ja | ja | 56.78 |
+| BAS.DE (BAS.DE) | 53.74 | - | - | ja | 53.14 |
+| BEI.DE (BEI.DE) | 83.46 | - | ja | ja | 54.27 |
+| CON.DE (CON.DE) | 72.58 | - | - | ja | 58.94 |
+| DBK.DE (DBK.DE) | 32.915 | - | - | ja | 59.45 |
+| IFX.DE (IFX.DE) | 49.24 | - | - | ja | 43.42 |
+| P911.DE (P911.DE) | 44.1 | - | - | ja | 45.18 |
+| PAH3.DE (PAH3.DE) | 24.04 | - | - | ja | 34.68 |
 | SIE.DE (SIE.DE) | 272.55 | - | - | ja | 50.81 |
-| ENR.DE (ENR.DE) | 129.12 | - | - | ja | 49.05 |
+| ENR.DE (ENR.DE) | 128.98 | - | - | ja | 48.93 |
+| SY1.DE (SY1.DE) | 96.02 | - | - | ja | 51.14 |
 | VOW3.DE (VOW3.DE) | 67.04 | - | ja | ja | 40.33 |
-| ZAL.DE (ZAL.DE) | 28.02 | - | - | ja | 60.07 |
-| Brent Oel (BZ=F) | 91.54 | - | - | ja | 35.75 |
-| WTI Oel (CL=F) | 84.95 | - | - | ja | 37.04 |
-| Erdgas (NG=F) | 3.085 | - | - | ja | 51.86 |
-| Kupfer (HG=F) | 5.9745 | - | - | ja | 31.29 |
+| ZAL.DE (ZAL.DE) | 28.03 | - | - | ja | 60.15 |
+| Gold (GC=F) | 3853.0 | - | - | ja | 34.17 |
+| Silber (SI=F) | 46.785 | - | - | ja | 29.2 |
+| Brent Oel (BZ=F) | 92.44 | - | - | ja | 36.64 |
+| WTI Oel (CL=F) | 85.72 | - | - | ja | 37.94 |
+| Erdgas (NG=F) | 3.122 | - | - | ja | 53.44 |
+| Kupfer (HG=F) | 5.9975 | - | - | ja | 31.93 |
 | Zucker (SB=F) | 18.1 | - | - | ja | 38.81 |
 | EUR/USD (EURUSD=X) | 1.1025 | - | - | ja | 31.33 |
 | EUR/HKD (EURHKD=X) | 8.6486 | - | - | ja | 32.05 |

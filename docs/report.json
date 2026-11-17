@@ -1,5 +1,5 @@
 {
- "date": "2026-11-14",
+ "date": "2026-11-17",
  "ranks": {
   "turnaround": [
    "SNPS",
@@ -11,29 +11,29 @@
    "DHR",
    "KDP",
    "XOM",
-   "SRT3.DE",
    "PM",
+   "SRT3.DE",
    "CNQ",
    "ORLY",
-   "BIIB",
-   "SO"
+   "TM",
+   "BIIB"
   ],
   "momentum": [
    "BIIB",
    "KDP",
+   "AAPL",
+   "MAR",
    "GILD",
    "CCEP",
-   "MAR",
    "TRV",
    "CDW",
    "V",
-   "AAPL",
    "ABBV",
-   "HEN3.DE",
+   "DB1.DE",
    "ADP",
-   "IBN",
-   "SPOT",
-   "FAST"
+   "HEN3.DE",
+   "SPG",
+   "SPOT"
   ],
   "value": [
    "MU",
@@ -44,35 +44,27 @@
    "AVGO",
    "PSX",
    "RIO",
-   "REGN",
    "TTE",
    "ABNB",
+   "REGN",
    "BLK",
    "ROST",
    "APP",
-   "BHP"
+   "PH"
   ]
  },
  "changes": {
   "turnaround": {
    "entries": [
     {
-     "ticker": "CRM",
-     "rank": 5
-    },
-    {
-     "ticker": "CNQ",
-     "rank": 12
+     "ticker": "TM",
+     "rank": 14
     }
    ],
    "exits": [
     {
-     "ticker": "SHOP",
-     "old_rank": 4
-    },
-    {
-     "ticker": "PSX",
-     "old_rank": 12
+     "ticker": "SO",
+     "old_rank": 15
     }
    ],
    "moves": []
@@ -80,54 +72,46 @@
   "momentum": {
    "entries": [
     {
-     "ticker": "ABBV",
-     "rank": 10
+     "ticker": "DB1.DE",
+     "rank": 11
     },
+    {
+     "ticker": "SPG",
+     "rank": 14
+    }
+   ],
+   "exits": [
     {
      "ticker": "IBN",
-     "rank": 13
+     "old_rank": 13
     },
     {
-     "ticker": "SPOT",
-     "rank": 14
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "ABNB",
-     "old_rank": 8
-    },
-    {
-     "ticker": "REGN",
-     "old_rank": 11
-    },
-    {
-     "ticker": "CTAS",
-     "old_rank": 15
-    }
-   ],
-   "moves": []
-  },
-  "value": {
-   "entries": [
-    {
-     "ticker": "APP",
-     "rank": 14
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "PH",
+     "ticker": "FAST",
      "old_rank": 15
     }
    ],
    "moves": [
     {
-     "ticker": "META",
-     "rank": 5,
+     "ticker": "AAPL",
+     "rank": 3,
      "delta": 6
     }
    ]
+  },
+  "value": {
+   "entries": [
+    {
+     "ticker": "PH",
+     "rank": 15
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "BHP",
+     "old_rank": 15
+    }
+   ],
+   "moves": []
   },
   "analyst_flips": []
  }

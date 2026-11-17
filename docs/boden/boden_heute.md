@@ -1,4 +1,4 @@
-# Boden-Screening 2026-11-16 (Stand 2026-11-17 02:45 UTC)
+# Boden-Screening 2026-11-16 (Stand 2026-11-17 04:33 UTC)
 
 Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RSI < 50 + mind. 2 Boden-Punkte (nur Technik). Die Filter (Analysten, Anker, CRV 2:1) stehen in docs/heute.csv. Boden-Anker = niedrigster Puffer mit 60 % Halterate fuer diese Gruppe und diesen Wert (Vollauf), KO-Marke = Bezugstief - Anker x ATR.
 
@@ -6,12 +6,12 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 
 _Keine._
 
-## Weitere Pruefttage (61)
+## Weitere Pruefttage (59)
 
 | Wert | Punkte | Grund |
 |---|---|---|
+| ABNB | 2 | Tief 1, RSI >= 50 |
 | ABBV | 1 | 1 P, Tief 1, RSI >= 50 |
-| ABNB | 1 | 1 P, Tief 1, RSI >= 50 |
 | ADP | 1 | 1 P, Tief 1, RSI >= 50 |
 | ADSK | 1 | 1 P, RSI >= 50 |
 | AEP | 1 | 1 P, Tief 1, RSI >= 50 |
@@ -35,7 +35,6 @@ _Keine._
 | MTX.DE | 1 | 1 P, Tief 1, RSI >= 50 |
 | NVS | 1 | 1 P, Tief 1, RSI >= 50 |
 | PAYX | 1 | 1 P, Tief 1, RSI >= 50 |
-| PBR | 1 | 1 P, Umkehr a |
 | PFE | 1 | 1 P, Tief 1 |
 | PGR | 1 | 1 P, Tief 1, RSI >= 50 |
 | PLD | 1 | 1 P, Tief 1 |
@@ -45,10 +44,10 @@ _Keine._
 | SBUX | 1 | 1 P, Tief 1, RSI >= 50 |
 | SHW | 1 | 1 P, Tief 1, RSI >= 50 |
 | SNY | 1 | 1 P, Tief 1, RSI >= 50 |
-| STX | 1 | 1 P, Tief 1, Umkehr a |
 | T | 1 | 1 P, RSI >= 50 |
 | TEAM | 1 | 1 P, Umkehr a |
 | TRV | 1 | 1 P, Tief 1, RSI >= 50 |
+| TTWO | 1 | 1 P, RSI >= 50 |
 | UBS | 1 | 1 P, Tief 1, RSI >= 50 |
 | UNH | 1 | 1 P, RSI >= 50 |
 | UPS | 1 | 1 P, Tief 1, RSI >= 50 |
@@ -58,7 +57,6 @@ _Keine._
 | VRSK | 1 | 1 P, Tief 1, RSI >= 50 |
 | VRTX | 1 | 1 P, Tief 1, RSI >= 50 |
 | VZ | 1 | 1 P, Tief 1, RSI >= 50 |
-| WDC | 1 | 1 P, Umkehr a |
 | WELL | 1 | 1 P, Tief 1, RSI >= 50 |
 | XEL | 1 | 1 P, Tief 1, RSI >= 50 |
 | ZS | 1 | 1 P, Umkehr a |
@@ -71,5 +69,3 @@ _Keine._
 | HEI.DE | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
 | SHOP | 0 | 0 P, Umkehr a |
 | SY1.DE | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
-
-Nicht aktuell (kein Kurs vom 2026-11-16): DHL.DE

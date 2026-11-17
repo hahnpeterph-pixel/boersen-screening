@@ -1,274 +1,272 @@
 # Boersen-Screening - 2026-11-17
 
-_Stand: Schlusskurse vom 2026-11-17, aber 261 Werte haengen zurueck - siehe Standwarnung. Erstellt 2026-11-17T02:25:39+00:00 UTC. 270 Werte ausgewertet._
+_Stand: Schlusskurse vom 2026-11-17, aber 259 Werte haengen zurueck - siehe Standwarnung. Erstellt 2026-11-17T04:28:26+00:00 UTC. 270 Werte ausgewertet._
 
-> **Standwarnung: 261 von 270 Werten haengen zurueck.** Neuester Handelstag im Bericht ist 2026-11-17.
+> **Standwarnung: 259 von 270 Werten haengen zurueck.** Neuester Handelstag im Bericht ist 2026-11-17.
 >
 > Ursache ist in aller Regel Yahoo: die vorlaeufige Tageskerze einer Boerse wird ueber Nacht durch die offizielle Abrechnung ersetzt, und solange die fehlt, faellt der Tag weg. Betroffen sind meist die europaeischen Notierungen. Fuer diese Werte gelten Kurs, ATR, RSI und Tiefs unten NICHT fuer den neuesten Handelstag.
 >
 > | Wert | letzte Kerze |
 > |---|---|
-> | AAPL | 2026-11-13 |
-> | ABBV | 2026-11-13 |
-> | ABNB | 2026-11-13 |
-> | ABT | 2026-11-13 |
-> | ACN | 2026-11-13 |
-> | ADBE | 2026-11-13 |
-> | ADI | 2026-11-13 |
-> | ADP | 2026-11-13 |
 > | ADS.DE | 2026-11-13 |
-> | ADSK | 2026-11-13 |
-> | AEP | 2026-11-13 |
 > | AIR.DE | 2026-11-13 |
 > | ALV.DE | 2026-11-13 |
-> | AMAT | 2026-11-13 |
-> | AMGN | 2026-11-13 |
-> | AMT | 2026-11-13 |
-> | AMZN | 2026-11-13 |
-> | ANET | 2026-11-13 |
-> | APH | 2026-11-13 |
-> | APP | 2026-11-13 |
-> | ARM | 2026-11-13 |
 > | ASML | 2026-11-13 |
-> | AVGO | 2026-11-13 |
-> | AXON | 2026-11-13 |
-> | AXP | 2026-11-13 |
 > | AZN | 2026-11-13 |
-> | BA | 2026-11-13 |
-> | BAC | 2026-11-13 |
 > | BAS.DE | 2026-11-13 |
 > | BAYN.DE | 2026-11-13 |
 > | BBVA | 2026-11-13 |
 > | BEI.DE | 2026-11-13 |
-> | BIIB | 2026-11-13 |
-> | BKNG | 2026-11-13 |
-> | BKR | 2026-11-13 |
-> | BLK | 2026-11-13 |
-> | BMO | 2026-11-13 |
 > | BMW.DE | 2026-11-13 |
-> | BMY | 2026-11-13 |
 > | BNR.DE | 2026-11-13 |
-> | BNS | 2026-11-13 |
-> | BNY | 2026-11-13 |
 > | BP | 2026-11-13 |
-> | BRK-B | 2026-11-13 |
 > | BTI | 2026-11-13 |
-> | C | 2026-11-13 |
-> | CAT | 2026-11-13 |
-> | CB | 2026-11-13 |
 > | CBK.DE | 2026-11-13 |
-> | CCEP | 2026-11-13 |
-> | CDNS | 2026-11-13 |
-> | CDW | 2026-11-13 |
-> | CEG | 2026-11-13 |
-> | CHTR | 2026-11-13 |
-> | CL | 2026-11-13 |
-> | CM | 2026-11-13 |
-> | CMCSA | 2026-11-13 |
-> | CNQ | 2026-11-13 |
-> | COF | 2026-11-13 |
 > | CON.DE | 2026-11-13 |
-> | COP | 2026-11-13 |
-> | COST | 2026-11-13 |
-> | CPRT | 2026-11-13 |
-> | CRM | 2026-11-13 |
-> | CRWD | 2026-11-13 |
-> | CSCO | 2026-11-13 |
-> | CSGP | 2026-11-13 |
-> | CSX | 2026-11-13 |
-> | CTAS | 2026-11-13 |
-> | CTSH | 2026-11-13 |
-> | CVS | 2026-11-13 |
-> | CVX | 2026-11-13 |
-> | DASH | 2026-11-13 |
 > | DB1.DE | 2026-11-13 |
 > | DBK.DE | 2026-11-13 |
-> | DDOG | 2026-11-13 |
-> | DE | 2026-11-13 |
-> | DELL | 2026-11-13 |
 > | DHL.DE | 2026-11-13 |
-> | DHR | 2026-11-13 |
-> | DIS | 2026-11-13 |
 > | DTE.DE | 2026-11-13 |
 > | DTG.DE | 2026-11-13 |
-> | DUK | 2026-11-13 |
-> | DXCM | 2026-11-13 |
-> | EMR | 2026-11-13 |
-> | ENB | 2026-11-13 |
 > | ENR.DE | 2026-11-13 |
 > | EOAN.DE | 2026-11-13 |
-> | EQIX | 2026-11-13 |
 > | EQNR | 2026-11-13 |
-> | ETN | 2026-11-13 |
-> | EXC | 2026-11-13 |
-> | FANG | 2026-11-13 |
-> | FAST | 2026-11-13 |
-> | FDX | 2026-11-13 |
 > | FRE.DE | 2026-11-13 |
-> | FTNT | 2026-11-13 |
-> | GD | 2026-11-13 |
-> | GE | 2026-11-13 |
-> | GEHC | 2026-11-13 |
-> | GEV | 2026-11-13 |
-> | GFS | 2026-11-13 |
-> | GILD | 2026-11-13 |
-> | GLW | 2026-11-13 |
-> | GM | 2026-11-13 |
-> | GOOG | 2026-11-13 |
-> | GOOGL | 2026-11-13 |
-> | GS | 2026-11-13 |
 > | GSK | 2026-11-13 |
-> | HD | 2026-11-13 |
-> | HDB | 2026-11-13 |
 > | HEI.DE | 2026-11-13 |
 > | HEN3.DE | 2026-11-13 |
 > | HNR1.DE | 2026-11-13 |
-> | HON | 2026-11-13 |
 > | HSBC | 2026-11-13 |
-> | IBM | 2026-11-13 |
-> | IBN | 2026-11-13 |
-> | IDXX | 2026-11-13 |
 > | IFX.DE | 2026-11-13 |
-> | ILMN | 2026-11-13 |
 > | ING | 2026-11-13 |
-> | INTC | 2026-11-13 |
-> | INTU | 2026-11-13 |
-> | ISRG | 2026-11-13 |
-> | JNJ | 2026-11-13 |
-> | JPM | 2026-11-13 |
-> | KDP | 2026-11-13 |
-> | KHC | 2026-11-13 |
-> | KLAC | 2026-11-13 |
-> | KO | 2026-11-13 |
-> | LIN | 2026-11-13 |
-> | LLY | 2026-11-13 |
-> | LMT | 2026-11-13 |
-> | LOW | 2026-11-13 |
-> | LRCX | 2026-11-13 |
-> | LULU | 2026-11-13 |
-> | MA | 2026-11-13 |
-> | MAR | 2026-11-13 |
 > | MBG.DE | 2026-11-13 |
-> | MCD | 2026-11-13 |
-> | MCHP | 2026-11-13 |
-> | MCK | 2026-11-13 |
-> | MDB | 2026-11-13 |
-> | MDLZ | 2026-11-13 |
-> | MDT | 2026-11-13 |
-> | MELI | 2026-11-13 |
-> | META | 2026-11-13 |
-> | MMM | 2026-11-13 |
-> | MNST | 2026-11-13 |
-> | MO | 2026-11-13 |
-> | MPC | 2026-11-13 |
-> | MRK | 2026-11-13 |
 > | MRK.DE | 2026-11-13 |
-> | MRNA | 2026-11-13 |
-> | MRVL | 2026-11-13 |
-> | MS | 2026-11-13 |
-> | MSFT | 2026-11-13 |
-> | MSTR | 2026-11-13 |
 > | MTX.DE | 2026-11-13 |
-> | MU | 2026-11-13 |
 > | MUV2.DE | 2026-11-13 |
-> | NEE | 2026-11-13 |
-> | NEM | 2026-11-13 |
-> | NET | 2026-11-13 |
-> | NFLX | 2026-11-13 |
-> | NKE | 2026-11-13 |
-> | NOW | 2026-11-13 |
-> | NVDA | 2026-11-13 |
 > | NVO | 2026-11-13 |
-> | NVS | 2026-11-13 |
-> | NXPI | 2026-11-13 |
-> | ODFL | 2026-11-13 |
-> | ON | 2026-11-13 |
-> | ORCL | 2026-11-13 |
-> | ORLY | 2026-11-13 |
 > | P911.DE | 2026-11-13 |
 > | PAH3.DE | 2026-11-13 |
-> | PANW | 2026-11-13 |
-> | PAYX | 2026-11-13 |
-> | PCAR | 2026-11-13 |
-> | PDD | 2026-11-13 |
-> | PEP | 2026-11-13 |
-> | PFE | 2026-11-13 |
-> | PG | 2026-11-13 |
-> | PGR | 2026-11-13 |
-> | PH | 2026-11-13 |
-> | PLD | 2026-11-13 |
-> | PLTR | 2026-11-13 |
-> | PM | 2026-11-13 |
-> | PSX | 2026-11-13 |
-> | PYPL | 2026-11-13 |
-> | QCOM | 2026-11-13 |
+> | PBR | 2026-11-13 |
 > | QIA.DE | 2026-11-13 |
-> | REGN | 2026-11-13 |
 > | RHM.DE | 2026-11-13 |
 > | RIO | 2026-11-13 |
-> | ROP | 2026-11-13 |
-> | ROST | 2026-11-13 |
-> | RTX | 2026-11-13 |
 > | RWE.DE | 2026-11-13 |
-> | RY | 2026-11-13 |
 > | SAN | 2026-11-13 |
 > | SAP.DE | 2026-11-13 |
-> | SBUX | 2026-11-13 |
-> | SCCO | 2026-11-13 |
-> | SCHW | 2026-11-13 |
 > | SHEL | 2026-11-13 |
 > | SHL.DE | 2026-11-13 |
-> | SHOP | 2026-11-13 |
-> | SHW | 2026-11-13 |
 > | SIE.DE | 2026-11-13 |
-> | SNDK | 2026-11-13 |
-> | SNOW | 2026-11-13 |
-> | SNPS | 2026-11-13 |
 > | SNY | 2026-11-13 |
-> | SO | 2026-11-13 |
-> | SPG | 2026-11-13 |
-> | SPGI | 2026-11-13 |
-> | SPOT | 2026-11-13 |
 > | SRT3.DE | 2026-11-13 |
-> | STX | 2026-11-13 |
 > | SY1.DE | 2026-11-13 |
-> | SYK | 2026-11-13 |
-> | T | 2026-11-13 |
-> | TD | 2026-11-13 |
-> | TEAM | 2026-11-13 |
-> | TJX | 2026-11-13 |
-> | TMO | 2026-11-13 |
-> | TMUS | 2026-11-13 |
-> | TRV | 2026-11-13 |
-> | TSLA | 2026-11-13 |
-> | TTD | 2026-11-13 |
 > | TTE | 2026-11-13 |
-> | TTWO | 2026-11-13 |
-> | TXN | 2026-11-13 |
-> | UBER | 2026-11-13 |
 > | UBS | 2026-11-13 |
 > | UL | 2026-11-13 |
-> | UNH | 2026-11-13 |
-> | UNP | 2026-11-13 |
-> | UPS | 2026-11-13 |
-> | USB | 2026-11-13 |
-> | V | 2026-11-13 |
-> | VLO | 2026-11-13 |
 > | VNA.DE | 2026-11-13 |
 > | VOW3.DE | 2026-11-13 |
-> | VRSK | 2026-11-13 |
-> | VRTX | 2026-11-13 |
-> | VZ | 2026-11-13 |
-> | WDAY | 2026-11-13 |
-> | WDC | 2026-11-13 |
-> | WELL | 2026-11-13 |
-> | WFC | 2026-11-13 |
-> | WMT | 2026-11-13 |
-> | XEL | 2026-11-13 |
-> | XOM | 2026-11-13 |
 > | ZAL.DE | 2026-11-13 |
-> | ZS | 2026-11-13 |
-> | PBR | 2026-11-16 |
+> | AAPL | 2026-11-16 |
+> | ABBV | 2026-11-16 |
+> | ABNB | 2026-11-16 |
+> | ABT | 2026-11-16 |
+> | ACN | 2026-11-16 |
+> | ADBE | 2026-11-16 |
+> | ADI | 2026-11-16 |
+> | ADP | 2026-11-16 |
+> | ADSK | 2026-11-16 |
+> | AEP | 2026-11-16 |
+> | AMAT | 2026-11-16 |
+> | AMD | 2026-11-16 |
+> | AMT | 2026-11-16 |
+> | AMZN | 2026-11-16 |
+> | ANET | 2026-11-16 |
+> | APH | 2026-11-16 |
+> | APP | 2026-11-16 |
+> | ARM | 2026-11-16 |
+> | AVGO | 2026-11-16 |
+> | AXON | 2026-11-16 |
+> | AXP | 2026-11-16 |
+> | BA | 2026-11-16 |
+> | BAC | 2026-11-16 |
+> | BIIB | 2026-11-16 |
+> | BKNG | 2026-11-16 |
+> | BKR | 2026-11-16 |
+> | BLK | 2026-11-16 |
+> | BMO | 2026-11-16 |
+> | BMY | 2026-11-16 |
+> | BNS | 2026-11-16 |
+> | BNY | 2026-11-16 |
+> | BRK-B | 2026-11-16 |
+> | C | 2026-11-16 |
+> | CAT | 2026-11-16 |
+> | CB | 2026-11-16 |
+> | CCEP | 2026-11-16 |
+> | CDNS | 2026-11-16 |
+> | CDW | 2026-11-16 |
+> | CEG | 2026-11-16 |
+> | CHTR | 2026-11-16 |
+> | CL | 2026-11-16 |
+> | CM | 2026-11-16 |
+> | CMCSA | 2026-11-16 |
+> | CNQ | 2026-11-16 |
+> | COF | 2026-11-16 |
+> | COP | 2026-11-16 |
+> | COST | 2026-11-16 |
+> | CPRT | 2026-11-16 |
+> | CRM | 2026-11-16 |
+> | CRWD | 2026-11-16 |
+> | CSCO | 2026-11-16 |
+> | CSGP | 2026-11-16 |
+> | CSX | 2026-11-16 |
+> | CTAS | 2026-11-16 |
+> | CTSH | 2026-11-16 |
+> | CVS | 2026-11-16 |
+> | CVX | 2026-11-16 |
+> | DASH | 2026-11-16 |
+> | DDOG | 2026-11-16 |
+> | DE | 2026-11-16 |
+> | DELL | 2026-11-16 |
+> | DHR | 2026-11-16 |
+> | DIS | 2026-11-16 |
+> | DUK | 2026-11-16 |
+> | DXCM | 2026-11-16 |
+> | EMR | 2026-11-16 |
+> | ENB | 2026-11-16 |
+> | EQIX | 2026-11-16 |
+> | ETN | 2026-11-16 |
+> | EXC | 2026-11-16 |
+> | FANG | 2026-11-16 |
+> | FAST | 2026-11-16 |
+> | FDX | 2026-11-16 |
+> | FTNT | 2026-11-16 |
+> | GD | 2026-11-16 |
+> | GE | 2026-11-16 |
+> | GEHC | 2026-11-16 |
+> | GEV | 2026-11-16 |
+> | GFS | 2026-11-16 |
+> | GILD | 2026-11-16 |
+> | GLW | 2026-11-16 |
+> | GM | 2026-11-16 |
+> | GOOG | 2026-11-16 |
+> | GOOGL | 2026-11-16 |
+> | GS | 2026-11-16 |
+> | HD | 2026-11-16 |
+> | HON | 2026-11-16 |
+> | IBM | 2026-11-16 |
+> | IDXX | 2026-11-16 |
+> | ILMN | 2026-11-16 |
+> | INTC | 2026-11-16 |
+> | INTU | 2026-11-16 |
+> | ISRG | 2026-11-16 |
+> | JNJ | 2026-11-16 |
+> | JPM | 2026-11-16 |
+> | KDP | 2026-11-16 |
+> | KHC | 2026-11-16 |
+> | KLAC | 2026-11-16 |
+> | KO | 2026-11-16 |
+> | LIN | 2026-11-16 |
+> | LLY | 2026-11-16 |
+> | LMT | 2026-11-16 |
+> | LOW | 2026-11-16 |
+> | LRCX | 2026-11-16 |
+> | LULU | 2026-11-16 |
+> | MA | 2026-11-16 |
+> | MAR | 2026-11-16 |
+> | MCD | 2026-11-16 |
+> | MCHP | 2026-11-16 |
+> | MCK | 2026-11-16 |
+> | MDB | 2026-11-16 |
+> | MDLZ | 2026-11-16 |
+> | MDT | 2026-11-16 |
+> | MELI | 2026-11-16 |
+> | META | 2026-11-16 |
+> | MMM | 2026-11-16 |
+> | MNST | 2026-11-16 |
+> | MO | 2026-11-16 |
+> | MPC | 2026-11-16 |
+> | MRK | 2026-11-16 |
+> | MRNA | 2026-11-16 |
+> | MRVL | 2026-11-16 |
+> | MS | 2026-11-16 |
+> | MSFT | 2026-11-16 |
+> | MSTR | 2026-11-16 |
+> | MU | 2026-11-16 |
+> | NEE | 2026-11-16 |
+> | NEM | 2026-11-16 |
+> | NET | 2026-11-16 |
+> | NFLX | 2026-11-16 |
+> | NKE | 2026-11-16 |
+> | NOW | 2026-11-16 |
+> | NVDA | 2026-11-16 |
+> | NVS | 2026-11-16 |
+> | NXPI | 2026-11-16 |
+> | ODFL | 2026-11-16 |
+> | ON | 2026-11-16 |
+> | ORCL | 2026-11-16 |
+> | ORLY | 2026-11-16 |
+> | PANW | 2026-11-16 |
+> | PAYX | 2026-11-16 |
+> | PCAR | 2026-11-16 |
+> | PDD | 2026-11-16 |
+> | PEP | 2026-11-16 |
+> | PFE | 2026-11-16 |
+> | PG | 2026-11-16 |
+> | PGR | 2026-11-16 |
+> | PH | 2026-11-16 |
+> | PLD | 2026-11-16 |
+> | PLTR | 2026-11-16 |
+> | PM | 2026-11-16 |
+> | PSX | 2026-11-16 |
+> | PYPL | 2026-11-16 |
+> | QCOM | 2026-11-16 |
+> | REGN | 2026-11-16 |
+> | ROP | 2026-11-16 |
+> | ROST | 2026-11-16 |
+> | RTX | 2026-11-16 |
+> | RY | 2026-11-16 |
+> | SBUX | 2026-11-16 |
+> | SCCO | 2026-11-16 |
+> | SCHW | 2026-11-16 |
+> | SHOP | 2026-11-16 |
+> | SHW | 2026-11-16 |
+> | SNDK | 2026-11-16 |
+> | SNOW | 2026-11-16 |
+> | SNPS | 2026-11-16 |
+> | SO | 2026-11-16 |
+> | SPG | 2026-11-16 |
+> | SPGI | 2026-11-16 |
+> | SPOT | 2026-11-16 |
+> | STX | 2026-11-16 |
+> | SYK | 2026-11-16 |
+> | T | 2026-11-16 |
+> | TD | 2026-11-16 |
+> | TEAM | 2026-11-16 |
+> | TJX | 2026-11-16 |
+> | TMO | 2026-11-16 |
+> | TMUS | 2026-11-16 |
+> | TRV | 2026-11-16 |
+> | TSLA | 2026-11-16 |
+> | TTD | 2026-11-16 |
+> | TTWO | 2026-11-16 |
+> | TXN | 2026-11-16 |
+> | UBER | 2026-11-16 |
+> | UNH | 2026-11-16 |
+> | UNP | 2026-11-16 |
+> | UPS | 2026-11-16 |
+> | USB | 2026-11-16 |
+> | V | 2026-11-16 |
+> | VLO | 2026-11-16 |
+> | VRSK | 2026-11-16 |
+> | VRTX | 2026-11-16 |
+> | VZ | 2026-11-16 |
+> | WDAY | 2026-11-16 |
+> | WDC | 2026-11-16 |
+> | WELL | 2026-11-16 |
+> | WFC | 2026-11-16 |
+> | WMT | 2026-11-16 |
+> | XEL | 2026-11-16 |
+> | XOM | 2026-11-16 |
+> | ZS | 2026-11-16 |
 
 ## 📖 Glossar (was die Spalten bedeuten)
 
@@ -285,26 +283,26 @@ _Ueber alle 270 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 
 | Rang | Ticker | ISIN | Name | Index | Kurs | Abstand ATH (Info) | Kaufen-Anteil Analysten | Kursziel | RSI Tag | RSI Woche | RSI Stunde | Letztes Rating |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | SKHY | AR0272347318 | SK hynix Inc. | Watchlist | 1124000.00 | -62% | 100% (10 Banken, ≤120T) | 2352834.17 (109% ueber Kurs) | 36 | 39 | 29 | 2026-10-28 RBC Capital: Rating bestaetigt: Outperform |
-| 2 | MU | US5951121038 | Micron Technology, Inc. | NASDAQ | 778.31 | -36% | 100% (13 Banken, ≤120T) | 1550.00 (99% ueber Kurs) | 42 | 46 | 37 | 2026-10-22 Rosenblatt: Rating bestaetigt: Buy |
-| 3 | LRCX | - | Lam Research Corporation | NASDAQ | 225.92 | -48% | 100% (9 Banken, ≤120T) | 352.50 (56% ueber Kurs) | 42 | 41 | 36 | 2026-11-09 B. Riley Securities: Rating bestaetigt: Buy |
-| 4 | TSM | US8740391003 | Taiwan Semiconductor Manufactur | Watchlist | 2220.00 | -14% | 100% (5 Banken, ≤120T) | 3300.48 (49% ueber Kurs) | 39 | 46 | 32 | 2026-11-04 Bernstein: Rating bestaetigt: Outperform |
-| 5 | ETN | - | Eaton Corporation, PLC | Watchlist | 352.97 | -23% | 100% (7 Banken, ≤120T) | 485.00 (37% ueber Kurs) | 42 | 39 | 30 | 2026-11-10 Evercore ISI Group: Rating bestaetigt: Outperform |
-| 6 | TTWO | - | Take-Two Interactive Software, | NASDAQ | 227.82 | -13% | 100% (11 Banken, ≤120T) | 289.00 (27% ueber Kurs) | 64 | 54 | 29 | 2026-11-10 UBS: Rating bestaetigt: Buy |
-| 7 | ANET | US0404132054 | Arista Networks, Inc. | Watchlist | 197.29 | -9% | 100% (16 Banken, ≤120T) | 245.00 (24% ueber Kurs) | 55 | 57 | 41 | 2026-11-04 UBS: Rating bestaetigt: Buy |
-| 8 | CEG | - | Constellation Energy Corporatio | NASDAQ | 280.20 | -30% | 100% (8 Banken, ≤120T) | 346.00 (24% ueber Kurs) | 56 | 51 | 57 | 2026-10-30 Morgan Stanley: Rating bestaetigt: Overweight |
-| 9 | CVS | US1266501006 | CVS Health Corporation | SP100 | 89.35 | -18% | 100% (7 Banken, ≤120T) | 108.00 (21% ueber Kurs) | 51 | 49 | 52 | 2026-11-12 Wells Fargo: Rating bestaetigt: Overweight |
-| 10 | MSFT | - | Microsoft Corporation | NASDAQ/DOW | 523.88 | -6% | 100% (24 Banken, ≤120T) | 631.00 (20% ueber Kurs) | 49 | 63 | 39 | 2026-10-29 Bernstein: Rating bestaetigt: Outperform |
-| 11 | ADI | US0326541051 | Analog Devices, Inc. | NASDAQ | 397.97 | -10% | 100% (10 Banken, ≤120T) | 470.00 (18% ueber Kurs) | 49 | 54 | 37 | 2026-10-19 TD Cowen: Rating bestaetigt: Buy |
-| 12 | DDOG | US23804L1035 | Datadog, Inc. | NASDAQ | 184.16 | -37% | 96% (23 Banken, ≤120T) | 275.00 (49% ueber Kurs) | 32 | 42 | 33 | 2026-11-05 Citigroup: Rating bestaetigt: Buy |
-| 13 | AMZN | - | Amazon.com, Inc. | NASDAQ/DOW | 266.66 | -6% | 96% (26 Banken, ≤120T) | 328.00 (23% ueber Kurs) | 57 | 57 | 32 | 2026-11-03 Freedom Broker: Rating bestaetigt: Buy |
-| 14 | AVGO | CA11134P1009 | Broadcom Inc. | NASDAQ | 347.01 | -28% | 94% (16 Banken, ≤120T) | 530.00 (53% ueber Kurs) | 53 | 48 | 44 | 2026-10-27 Rosenblatt: Rating bestaetigt: Buy |
-| 15 | DXCM | US2521311074 | DexCom, Inc. | NASDAQ | 83.33 | -49% | 94% (16 Banken, ≤120T) | 96.50 (16% ueber Kurs) | 51 | 54 | 48 | 2026-10-31 UBS: Rating bestaetigt: Buy |
+| 1 | MU | US5951121038 | Micron Technology, Inc. | NASDAQ | 719.02 | -41% | 100% (13 Banken, ≤120T) | 1550.00 (116% ueber Kurs) | 38 | 43 | 37 | 2026-10-22 Rosenblatt: Rating bestaetigt: Buy |
+| 2 | SKHY | AR0272347318 | SK hynix Inc. | Watchlist | 1118000.00 | -62% | 100% (10 Banken, ≤120T) | 2352834.17 (110% ueber Kurs) | 36 | 39 | 31 | 2026-10-28 RBC Capital: Rating bestaetigt: Outperform |
+| 3 | LRCX | - | Lam Research Corporation | NASDAQ | 210.83 | -51% | 100% (9 Banken, ≤120T) | 352.50 (67% ueber Kurs) | 38 | 39 | 36 | 2026-11-09 B. Riley Securities: Rating bestaetigt: Buy |
+| 4 | TSM | US8740391003 | Taiwan Semiconductor Manufactur | Watchlist | 2200.00 | -15% | 100% (5 Banken, ≤120T) | 3300.48 (50% ueber Kurs) | 38 | 45 | 32 | 2026-11-04 Bernstein: Rating bestaetigt: Outperform |
+| 5 | ETN | - | Eaton Corporation, PLC | Watchlist | 336.88 | -26% | 100% (7 Banken, ≤120T) | 485.00 (44% ueber Kurs) | 38 | 36 | 30 | 2026-11-10 Evercore ISI Group: Rating bestaetigt: Outperform |
+| 6 | TTWO | - | Take-Two Interactive Software, | NASDAQ | 213.47 | -19% | 100% (11 Banken, ≤120T) | 289.00 (35% ueber Kurs) | 52 | 48 | 29 | 2026-11-10 UBS: Rating bestaetigt: Buy |
+| 7 | ANET | US0404132054 | Arista Networks, Inc. | Watchlist | 187.02 | -14% | 100% (16 Banken, ≤120T) | 245.00 (31% ueber Kurs) | 50 | 53 | 41 | 2026-11-04 UBS: Rating bestaetigt: Buy |
+| 8 | CEG | - | Constellation Energy Corporatio | NASDAQ | 277.82 | -31% | 100% (8 Banken, ≤120T) | 346.00 (24% ueber Kurs) | 55 | 51 | 57 | 2026-10-30 Morgan Stanley: Rating bestaetigt: Overweight |
+| 9 | ADI | US0326541051 | Analog Devices, Inc. | NASDAQ | 383.17 | -14% | 100% (10 Banken, ≤120T) | 470.00 (23% ueber Kurs) | 44 | 51 | 37 | 2026-10-19 TD Cowen: Rating bestaetigt: Buy |
+| 10 | CVS | US1266501006 | CVS Health Corporation | SP100 | 88.59 | -19% | 100% (7 Banken, ≤120T) | 108.00 (22% ueber Kurs) | 50 | 48 | 52 | 2026-11-12 Wells Fargo: Rating bestaetigt: Overweight |
+| 11 | MSFT | - | Microsoft Corporation | NASDAQ/DOW | 517.99 | -7% | 100% (24 Banken, ≤120T) | 631.00 (22% ueber Kurs) | 46 | 60 | 39 | 2026-10-29 Bernstein: Rating bestaetigt: Outperform |
+| 12 | DDOG | US23804L1035 | Datadog, Inc. | NASDAQ | 172.86 | -41% | 96% (23 Banken, ≤120T) | 275.00 (59% ueber Kurs) | 28 | 41 | 33 | 2026-11-05 Citigroup: Rating bestaetigt: Buy |
+| 13 | AMZN | - | Amazon.com, Inc. | NASDAQ/DOW | 257.75 | -9% | 96% (26 Banken, ≤120T) | 328.00 (27% ueber Kurs) | 50 | 53 | 32 | 2026-11-03 Freedom Broker: Rating bestaetigt: Buy |
+| 14 | AVGO | CA11134P1009 | Broadcom Inc. | NASDAQ | 333.40 | -30% | 94% (16 Banken, ≤120T) | 530.00 (59% ueber Kurs) | 49 | 46 | 44 | 2026-10-27 Rosenblatt: Rating bestaetigt: Buy |
+| 15 | DXCM | US2521311074 | DexCom, Inc. | NASDAQ | 81.61 | -50% | 94% (16 Banken, ≤120T) | 96.50 (18% ueber Kurs) | 48 | 52 | 48 | 2026-10-31 UBS: Rating bestaetigt: Buy |
 | 16 | ASML | USN070592100 | ASML Holding N.V. - New York Re | NASDAQ | 1338.80 | -22% | 93% (41 Banken, ≤120T) | 2023.67 (51% ueber Kurs) | 42 | 45 | 33 | keine in 30T |
 | 17 | IFX.DE | - | INFINEON TECHNOLOGIES AG | DAX | 49.88 | -43% | 92% (24 Banken, ≤120T) | 80.50 (61% ueber Kurs) | 45 | 43 | 38 | keine in 30T |
-| 18 | ARM | US0420682058 | Arm Holdings plc | NASDAQ | 190.53 | -57% | 92% (12 Banken, ≤120T) | 265.00 (39% ueber Kurs) | 41 | 41 | 35 | 2026-11-06 UBS: Rating bestaetigt: Buy |
-| 19 | BAC | - | Bank of America Corporation | SP100 | 51.02 | -21% | 92% (12 Banken, ≤120T) | 62.00 (22% ueber Kurs) | 46 | 39 | 41 | 2026-11-02 UBS: Rating bestaetigt: Buy |
-| 20 | EQIX | US29444U7000 | Equinix, Inc. | Watchlist | 1053.79 | -5% | 92% (13 Banken, ≤120T) | 1230.00 (17% ueber Kurs) | 56 | 55 | 41 | 2026-10-29 JP Morgan: Rating bestaetigt: Overweight |
+| 18 | ARM | US0420682058 | Arm Holdings plc | NASDAQ | 175.05 | -60% | 92% (12 Banken, ≤120T) | 265.00 (51% ueber Kurs) | 36 | 39 | 35 | 2026-11-06 UBS: Rating bestaetigt: Buy |
+| 19 | BAC | - | Bank of America Corporation | SP100 | 50.08 | -22% | 92% (12 Banken, ≤120T) | 62.00 (24% ueber Kurs) | 41 | 37 | 41 | 2026-11-02 UBS: Rating bestaetigt: Buy |
+| 20 | EQIX | US29444U7000 | Equinix, Inc. | Watchlist | 1043.06 | -6% | 92% (13 Banken, ≤120T) | 1230.00 (18% ueber Kurs) | 54 | 54 | 41 | 2026-10-29 JP Morgan: Rating bestaetigt: Overweight |
 
 
 ## 🧭 Analysten-Einstufungen (Filtertreffer, letzte 30 Tage)
@@ -425,6 +423,6 @@ _Ueber alle 270 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 
 ---
 
-_Nicht auswertbar heute (3): AMD, HONA, SPCX_
+_Nicht auswertbar heute (3): AMGN, HONA, SPCX_
 
 _Automatisch erzeugte Kennzahlensortierung, keine Anlageberatung._

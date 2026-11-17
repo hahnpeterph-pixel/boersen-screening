@@ -1,215 +1,128 @@
 # Marktdaten
 
-_Erstellt 2026-11-17 02:25 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1025._
+_Erstellt 2026-11-17 04:28 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.1025._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
 Vollstaendige Daten: `docs/marktdaten.csv`
 
-> **Standwarnung: 114 von 272 Aktien haengen zurueck.** Neuester Handelstag 2026-11-16. Fuer die folgenden Werte gelten Kurs, ATR, RSI und Tiefs NICHT fuer diesen Tag. Die Spalte `stand_zurueck` in der CSV markiert sie ebenfalls.
->
-> | Wert | letzte Kerze |
-> |---|---|
-> | ADS.DE | 2026-11-13 |
-> | AIR.DE | 2026-11-13 |
-> | ALV.DE | 2026-11-13 |
-> | ANET | 2026-11-13 |
-> | APH | 2026-11-13 |
-> | APP | 2026-11-13 |
-> | AXON | 2026-11-13 |
-> | BAS.DE | 2026-11-13 |
-> | BAYN.DE | 2026-11-13 |
-> | BEI.DE | 2026-11-13 |
-> | BMO | 2026-11-13 |
-> | BMW.DE | 2026-11-13 |
-> | BNR.DE | 2026-11-13 |
-> | BNS | 2026-11-13 |
-> | CB | 2026-11-13 |
-> | CBK.DE | 2026-11-13 |
-> | CCEP | 2026-11-13 |
-> | CM | 2026-11-13 |
-> | CNQ | 2026-11-13 |
-> | COF | 2026-11-13 |
-> | CON.DE | 2026-11-13 |
-> | COP | 2026-11-13 |
-> | CVS | 2026-11-13 |
-> | CVX | 2026-11-13 |
-> | DB1.DE | 2026-11-13 |
-> | DBK.DE | 2026-11-13 |
-> | DE | 2026-11-13 |
-> | DELL | 2026-11-13 |
-> | DHL.DE | 2026-11-13 |
-> | DHR | 2026-11-13 |
-> | DTE.DE | 2026-11-13 |
-> | DTG.DE | 2026-11-13 |
-> | DUK | 2026-11-13 |
-> | EMR | 2026-11-13 |
-> | ENB | 2026-11-13 |
-> | ENR.DE | 2026-11-13 |
-> | EOAN.DE | 2026-11-13 |
-> | EQIX | 2026-11-13 |
-> | ETN | 2026-11-13 |
-> | FDX | 2026-11-13 |
-> | FRE.DE | 2026-11-13 |
-> | GD | 2026-11-13 |
-> | GE | 2026-11-13 |
-> | GEV | 2026-11-13 |
-> | GFS | 2026-11-13 |
-> | GLW | 2026-11-13 |
-> | GM | 2026-11-13 |
-> | HEI.DE | 2026-11-13 |
-> | HEN3.DE | 2026-11-13 |
-> | HNR1.DE | 2026-11-13 |
-> | HONA | 2026-11-13 |
-> | IFX.DE | 2026-11-13 |
-> | LLY | 2026-11-13 |
-> | LMT | 2026-11-13 |
-> | LOW | 2026-11-13 |
-> | MA | 2026-11-13 |
-> | MBG.DE | 2026-11-13 |
-> | MCK | 2026-11-13 |
-> | MDT | 2026-11-13 |
-> | MO | 2026-11-13 |
-> | MPC | 2026-11-13 |
-> | MRK.DE | 2026-11-13 |
-> | MS | 2026-11-13 |
-> | MSTR | 2026-11-13 |
-> | MTX.DE | 2026-11-13 |
-> | MUV2.DE | 2026-11-13 |
-> | NEE | 2026-11-13 |
-> | NEM | 2026-11-13 |
-> | NET | 2026-11-13 |
-> | NOW | 2026-11-13 |
-> | P911.DE | 2026-11-13 |
-> | PAH3.DE | 2026-11-13 |
-> | PFE | 2026-11-13 |
-> | PGR | 2026-11-13 |
-> | PH | 2026-11-13 |
-> | PLD | 2026-11-13 |
-> | PM | 2026-11-13 |
-> | PSX | 2026-11-13 |
-> | QIA.DE | 2026-11-13 |
-> | RHM.DE | 2026-11-13 |
-> | RTX | 2026-11-13 |
-> | RWE.DE | 2026-11-13 |
-> | RY | 2026-11-13 |
-> | SAP.DE | 2026-11-13 |
-> | SCCO | 2026-11-13 |
-> | SCHW | 2026-11-13 |
-> | SHL.DE | 2026-11-13 |
-> | SHOP | 2026-11-13 |
-> | SIE.DE | 2026-11-13 |
-> | SNDK | 2026-11-13 |
-> | SNOW | 2026-11-13 |
-> | SO | 2026-11-13 |
-> | SPCX | 2026-11-13 |
-> | SPG | 2026-11-13 |
-> | SPOT | 2026-11-13 |
-> | SRT3.DE | 2026-11-13 |
-> | STX | 2026-11-13 |
-> | SY1.DE | 2026-11-13 |
-> | SYK | 2026-11-13 |
-> | T | 2026-11-13 |
-> | TD | 2026-11-13 |
-> | TJX | 2026-11-13 |
-> | TMO | 2026-11-13 |
-> | UBER | 2026-11-13 |
-> | UNP | 2026-11-13 |
-> | UPS | 2026-11-13 |
-> | USB | 2026-11-13 |
-> | VLO | 2026-11-13 |
-> | VNA.DE | 2026-11-13 |
-> | WDC | 2026-11-13 |
-> | WELL | 2026-11-13 |
-> | WFC | 2026-11-13 |
-> | XOM | 2026-11-13 |
-> | ZAL.DE | 2026-11-13 |
-
 ## Kerzensignale von gestern
 
 | Wert | Kurs | Hammer | hoeheres Hoch | Umkehrkerze | RSI |
 |---|---|---|---|---|---|
-| AAPL (AAPL) | 352.81 | - | - | ja | 57.03 |
-| ADI (ADI) | 383.23 | - | - | ja | 44.38 |
-| AMZN (AMZN) | 257.8 | - | - | ja | 49.67 |
-| ARM (ARM) | 175.03 | - | - | ja | 36.42 |
+| AAPL (AAPL) | 352.78 | - | - | ja | 57.0 |
+| ADI (ADI) | 383.17 | - | - | ja | 44.36 |
+| AMZN (AMZN) | 257.75 | - | - | ja | 49.63 |
+| ARM (ARM) | 175.05 | - | - | ja | 36.42 |
 | ASML (ASML) | 1305.2 | - | - | ja | 38.68 |
-| BA (BA) | 165.255 | - | - | ja | 31.93 |
-| BKNG (BKNG) | 157.59 | - | - | ja | 46.55 |
+| BA (BA) | 165.22 | - | - | ja | 31.9 |
+| BKNG (BKNG) | 157.53 | - | - | ja | 46.49 |
 | BKR (BKR) | 47.94 | - | - | ja | 36.95 |
-| CAT (CAT) | 570.42 | - | - | ja | 31.29 |
-| CDNS (CDNS) | 309.49 | - | - | ja | 41.76 |
-| CDW (CDW) | 165.83 | - | - | ja | 55.78 |
-| CRM (CRM) | 214.87 | - | - | ja | 37.12 |
+| CAT (CAT) | 570.49 | - | - | ja | 31.3 |
+| CDNS (CDNS) | 309.43 | - | - | ja | 41.74 |
+| CDW (CDW) | 165.82 | - | - | ja | 55.77 |
+| CRM (CRM) | 214.83 | - | - | ja | 37.09 |
 | CTAS (CTAS) | 224.16 | - | ja | ja | 57.94 |
-| CTSH (CTSH) | 62.33 | - | ja | ja | 44.84 |
-| DDOG (DDOG) | 172.96 | - | - | ja | 28.51 |
-| FANG (FANG) | 177.47 | - | - | ja | 36.15 |
-| FTNT (FTNT) | 123.29 | - | - | ja | 30.78 |
-| GOOGL (GOOGL) | 283.8 | - | - | ja | 34.49 |
-| GS (GS) | 891.61 | - | - | ja | 46.28 |
-| HON (HON) | 218.0 | - | - | ja | 47.99 |
-| IBM (IBM) | 242.54 | - | - | ja | 47.9 |
-| IDXX (IDXX) | 700.895 | - | ja | ja | 70.32 |
-| ILMN (ILMN) | 197.79 | - | - | ja | 32.22 |
-| INTC (INTC) | 55.46 | - | - | ja | 29.87 |
-| ISRG (ISRG) | 437.87 | - | - | ja | 49.53 |
-| JPM (JPM) | 338.33 | - | - | ja | 48.49 |
-| KLAC (KLAC) | 144.04 | - | - | ja | 40.74 |
-| LRCX (LRCX) | 210.9288 | - | - | ja | 37.68 |
+| CTSH (CTSH) | 62.29 | - | ja | ja | 44.74 |
+| DDOG (DDOG) | 172.86 | - | - | ja | 28.48 |
+| FANG (FANG) | 177.41 | - | - | ja | 36.11 |
+| FTNT (FTNT) | 123.27 | - | - | ja | 30.77 |
+| GOOGL (GOOGL) | 283.72 | - | - | ja | 34.45 |
+| GS (GS) | 891.54 | - | - | ja | 46.27 |
+| HON (HON) | 217.95 | - | - | ja | 47.94 |
+| IBM (IBM) | 242.51 | - | - | ja | 47.87 |
+| IDXX (IDXX) | 700.65 | - | ja | ja | 70.23 |
+| ILMN (ILMN) | 198.0 | - | - | ja | 32.27 |
+| INTC (INTC) | 55.47 | - | - | ja | 29.87 |
+| ISRG (ISRG) | 437.75 | - | - | ja | 49.48 |
+| JPM (JPM) | 338.21 | - | - | ja | 48.39 |
+| KLAC (KLAC) | 143.96 | - | - | ja | 40.7 |
+| LRCX (LRCX) | 210.83 | - | - | ja | 37.66 |
 | MCHP (MCHP) | 58.64 | - | - | ja | 31.54 |
-| MDB (MDB) | 316.68 | - | - | ja | 39.73 |
-| MELI (MELI) | 1461.7 | - | - | ja | 31.76 |
-| MMM (MMM) | 181.77 | - | - | ja | 54.35 |
-| MRK (MRK) | 144.51 | - | ja | ja | 46.81 |
-| MRNA (MRNA) | 215.49 | - | - | ja | 47.15 |
-| MRVL (MRVL) | 145.43 | - | - | ja | 32.57 |
-| MU (MU) | 719.07 | - | - | ja | 38.01 |
+| MDB (MDB) | 316.92 | - | - | ja | 39.78 |
+| MELI (MELI) | 1462.12 | - | - | ja | 31.79 |
+| MMM (MMM) | 181.68 | - | - | ja | 54.23 |
+| MRK (MRK) | 144.46 | - | ja | ja | 46.73 |
+| MRNA (MRNA) | 215.27 | - | - | ja | 47.08 |
+| MRVL (MRVL) | 145.36 | - | - | ja | 32.55 |
+| MU (MU) | 719.02 | - | - | ja | 38.01 |
 | NFLX (NFLX) | 60.75 | - | - | ja | 35.24 |
-| NVDA (NVDA) | 156.16 | - | - | ja | 22.72 |
+| NVDA (NVDA) | 156.14 | - | - | ja | 22.72 |
 | ON (ON) | 67.69 | - | - | ja | 42.91 |
-| ORCL (ORCL) | 119.045 | - | - | ja | 42.61 |
-| PCAR (PCAR) | 105.57 | - | - | ja | 46.31 |
+| ORCL (ORCL) | 119.09 | - | - | ja | 42.64 |
+| PCAR (PCAR) | 105.53 | - | - | ja | 46.22 |
 | PLTR (PLTR) | 160.39 | - | - | ja | 34.89 |
-| ROST (ROST) | 223.0 | - | - | ja | 41.21 |
+| ROST (ROST) | 222.99 | - | - | ja | 41.21 |
 | SNPS (SNPS) | 441.33 | - | - | ja | 43.79 |
-| TSLA (TSLA) | 379.78 | - | - | ja | 49.47 |
+| TSLA (TSLA) | 379.74 | - | - | ja | 49.46 |
 | TTD (TTD) | 14.83 | - | - | ja | 59.29 |
-| TTWO (TTWO) | 213.48 | - | - | ja | 51.75 |
-| TXN (TXN) | 294.25 | - | - | ja | 49.82 |
-| ACN (ACN) | 247.77 | - | - | ja | 54.79 |
-| BAC (BAC) | 50.1099 | - | - | ja | 40.82 |
-| BLK (BLK) | 1199.45 | - | - | ja | 57.51 |
-| C (C) | 121.33 | - | - | ja | 43.67 |
-| DE (DE) | 673.54 | - | - | ja | 53.21 |
-| GM (GM) | 86.0 | - | - | ja | 51.65 |
-| HONA (HONA) | 165.01 | - | - | ja | 53.37 |
-| LMT (LMT) | 596.04 | - | - | ja | 53.51 |
-| SPG (SPG) | 232.97 | - | - | ja | 74.86 |
-| UNP (UNP) | 302.44 | - | ja | ja | 57.24 |
-| PH (PH) | 955.68 | - | - | ja | 53.38 |
-| SYK (SYK) | 309.64 | - | - | ja | 50.93 |
-| SCCO (SCCO) | 164.08 | - | - | ja | 34.89 |
-| WELL (WELL) | 244.46 | - | - | ja | 58.13 |
-| EQIX (EQIX) | 1053.79 | - | ja | ja | 55.76 |
+| TTWO (TTWO) | 213.47 | - | ja | ja | 51.74 |
+| TXN (TXN) | 294.21 | - | - | ja | 49.8 |
+| ACN (ACN) | 247.7 | - | - | ja | 54.74 |
+| BAC (BAC) | 50.08 | - | - | ja | 40.67 |
+| BLK (BLK) | 1197.97 | - | - | ja | 57.17 |
+| C (C) | 121.32 | - | - | ja | 43.65 |
+| COF (COF) | 193.22 | - | - | ja | 38.5 |
+| DE (DE) | 653.99 | - | - | ja | 45.43 |
+| DHR (DHR) | 229.91 | - | - | ja | 50.84 |
+| EMR (EMR) | 160.65 | - | - | ja | 44.97 |
+| GD (GD) | 359.69 | - | - | ja | 52.3 |
+| GE (GE) | 325.18 | - | ja | ja | 53.36 |
+| GEV (GEV) | 763.57 | - | - | ja | 37.39 |
+| GM (GM) | 83.67 | - | - | ja | 47.22 |
+| LMT (LMT) | 585.21 | - | - | ja | 50.01 |
+| MS (MS) | 185.57 | - | - | ja | 46.77 |
+| NOW (NOW) | 99.37 | - | - | ja | 30.18 |
+| PM (PM) | 196.04 | - | ja | ja | 45.4 |
+| RTX (RTX) | 194.89 | - | - | ja | 49.0 |
+| SPG (SPG) | 232.78 | - | - | ja | 74.33 |
+| WFC (WFC) | 84.84 | - | - | ja | 51.5 |
+| XOM (XOM) | 166.87 | - | - | ja | 43.08 |
+| DELL (DELL) | 320.55 | - | - | ja | 33.26 |
+| SNDK (SNDK) | 809.11 | - | - | ja | 31.27 |
+| ANET (ANET) | 187.02 | - | - | ja | 50.16 |
+| STX (STX) | 499.0 | - | - | ja | 34.41 |
+| APH (APH) | 75.43 | - | - | ja | 43.4 |
+| WDC (WDC) | 280.93 | - | - | ja | 36.06 |
+| GLW (GLW) | 106.17 | - | - | ja | 35.88 |
+| SNOW (SNOW) | 280.54 | - | - | ja | 38.15 |
+| NET (NET) | 293.59 | - | - | ja | 46.81 |
+| ETN (ETN) | 336.88 | - | - | ja | 37.56 |
+| PH (PH) | 934.8 | - | - | ja | 48.62 |
+| TJX (TJX) | 131.09 | - | - | ja | 37.23 |
+| SCCO (SCCO) | 153.87 | - | - | ja | 29.7 |
+| NEM (NEM) | 110.31 | - | - | ja | 43.07 |
+| PLD (PLD) | 127.6 | - | ja | ja | 45.42 |
 | TSM (TSM) | 2215.0 | - | - | ja | 38.79 |
 | SKHY (SKHY) | 1120000.0 | - | - | ja | 35.71 |
+| RY (RY) | 199.61 | - | - | ja | 45.57 |
 | MUFG (MUFG) | 3415.0 | - | - | ja | 48.05 |
 | BHP (BHP) | 57.21 | - | - | ja | 44.17 |
+| TD (TD) | 121.76 | - | - | ja | 46.06 |
+| PBR (PBR) | 50.24 | - | - | ja | 32.8 |
+| BMO (BMO) | 169.74 | - | - | ja | 46.82 |
+| BNS (BNS) | 90.63 | - | - | ja | 42.95 |
+| ENB (ENB) | 47.29 | - | - | ja | 43.34 |
 | EQNR (EQNR) | 395.7 | - | ja | ja | 41.9 |
-| MSTR (MSTR) | 111.62 | - | - | ja | 32.57 |
-| BAS.DE (BAS.DE) | 54.27 | - | - | ja | 57.64 |
-| CON.DE (CON.DE) | 73.78 | - | - | ja | 64.92 |
-| DBK.DE (DBK.DE) | 33.185 | - | - | ja | 61.54 |
-| HEI.DE (HEI.DE) | 177.15 | - | - | ja | 71.36 |
-| MTX.DE (MTX.DE) | 351.6 | - | - | ja | 52.68 |
-| P911.DE (P911.DE) | 45.4 | - | - | ja | 53.13 |
-| PAH3.DE (PAH3.DE) | 24.4 | - | - | ja | 37.52 |
-| VOW3.DE (VOW3.DE) | 67.04 | - | ja | ja | 47.37 |
-| VNA.DE (VNA.DE) | 16.755 | - | - | ja | 47.64 |
-| Brent Oel (BZ=F) | 91.69 | - | - | ja | 35.89 |
-| WTI Oel (CL=F) | 85.07 | - | - | ja | 37.18 |
-| Erdgas (NG=F) | 3.109 | - | - | ja | 52.87 |
+| CNQ (CNQ) | 48.17 | - | - | ja | 37.9 |
+| CM (CM) | 113.75 | - | - | ja | 45.74 |
+| GFS (GFS) | 39.42 | - | - | ja | 39.82 |
+| MSTR (MSTR) | 103.03 | - | - | ja | 28.73 |
+| BAS.DE (BAS.DE) | 53.81 | - | - | ja | 53.7 |
+| BEI.DE (BEI.DE) | 83.6 | - | ja | ja | 54.9 |
+| CON.DE (CON.DE) | 72.8 | - | - | ja | 59.96 |
+| DBK.DE (DBK.DE) | 32.975 | - | - | ja | 59.9 |
+| IFX.DE (IFX.DE) | 49.11 | - | - | ja | 43.17 |
+| P911.DE (P911.DE) | 43.96 | - | - | ja | 44.47 |
+| PAH3.DE (PAH3.DE) | 24.09 | - | - | ja | 35.05 |
+| SIE.DE (SIE.DE) | 272.55 | - | - | ja | 50.81 |
+| ENR.DE (ENR.DE) | 129.12 | - | - | ja | 49.05 |
+| VOW3.DE (VOW3.DE) | 67.04 | - | ja | ja | 40.33 |
+| ZAL.DE (ZAL.DE) | 28.02 | - | - | ja | 60.07 |
+| Brent Oel (BZ=F) | 91.54 | - | - | ja | 35.75 |
+| WTI Oel (CL=F) | 84.95 | - | - | ja | 37.04 |
+| Erdgas (NG=F) | 3.085 | - | - | ja | 51.86 |
+| Kupfer (HG=F) | 5.9745 | - | - | ja | 31.29 |
 | Zucker (SB=F) | 18.1 | - | - | ja | 38.81 |
 | EUR/USD (EURUSD=X) | 1.1025 | - | - | ja | 31.33 |
 | EUR/HKD (EURHKD=X) | 8.6486 | - | - | ja | 32.05 |

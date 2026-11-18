@@ -1,4 +1,4 @@
-# Boden-Screening 2026-11-17 (Stand 2026-11-18 03:48 UTC)
+# Boden-Screening 2026-11-17 (Stand 2026-11-18 14:10 UTC)
 
 Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RSI < 50 + mind. 2 Boden-Punkte (nur Technik). Die Filter (Analysten, Anker, CRV 2:1) stehen in docs/heute.csv. Boden-Anker = niedrigster Puffer mit 60 % Halterate fuer diese Gruppe und diesen Wert (Vollauf), KO-Marke = Bezugstief - Anker x ATR.
 
@@ -9,7 +9,7 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | BKR | 2 | 36 | 2.25 | 42.68 | 73 % |
 | MCHP | 3 | 33 | 2.75 | 41.45 | 71 % |
 
-## Weitere Pruefttage (65)
+## Weitere Pruefttage (63)
 
 | Wert | Punkte | Grund |
 |---|---|---|
@@ -27,7 +27,6 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | DXCM | 1 | 1 P, Tief 1 |
 | FTNT | 1 | 1 P, Umkehr a |
 | HON | 1 | 1 P, Tief 1 |
-| IBN | 1 | 1 P, Tief 1, RSI >= 50 |
 | ILMN | 1 | 1 P, Umkehr a |
 | LULU | 1 | 1 P |
 | MCD | 1 | 1 P, RSI >= 50 |
@@ -41,7 +40,6 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | RIO | 1 | 1 P, Tief 1, Umkehr a |
 | SCCO | 1 | 1 P, Umkehr a |
 | SHW | 1 | 1 P, Tief 1, RSI >= 50 |
-| SONY | 1 | 1 P, Tief 1, RSI >= 50 |
 | SRT3.DE | 1 | 1 P, RSI >= 50 |
 | SYK | 1 | 1 P, RSI >= 50 |
 | T | 1 | 1 P |
@@ -78,3 +76,5 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | WELL | 0 | 0 P, RSI >= 50, Umkehr a |
 | WMT | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
 | ZAL.DE | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
+
+Nicht aktuell (kein Kurs vom 2026-11-17): BABA, BHP, HDB, IBN, MFG, MUFG, SKHY, SMFG, SONY, TM, TSM

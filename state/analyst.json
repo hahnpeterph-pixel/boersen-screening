@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17T02:25:38.149187+00:00",
+ "updated": "2026-11-18T03:44:35.161873+00:00",
  "version": 7,
  "data": {
   "AAPL": {
@@ -55,7 +55,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 352.78,
+    "current": 351.91,
     "high": 425.0,
     "low": 250.0,
     "mean": 345.6313,
@@ -118,7 +118,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 294.55,
+    "current": 292.82,
     "high": 350.0,
     "low": 237.0,
     "mean": 314.1154,
@@ -173,15 +173,15 @@
     }
    ],
    "consensus": {
-    "kaufen_pct": 58,
-    "halten_pct": 35,
-    "verkaufen_pct": 6,
-    "total": 31,
+    "kaufen_pct": 60,
+    "halten_pct": 37,
+    "verkaufen_pct": 3,
+    "total": 30,
     "unclassified": 1
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 186.19,
+    "current": 180.94,
     "high": 245.0,
     "low": 147.0,
     "mean": 205.4405,
@@ -244,7 +244,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 107.45,
+    "current": 104.71,
     "high": 130.0,
     "low": 100.0,
     "mean": 118.90731,
@@ -286,7 +286,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 247.7,
+    "current": 239.28,
     "high": 300.0,
     "low": 163.0,
     "mean": 233.83708,
@@ -320,15 +320,15 @@
     }
    ],
    "consensus": {
-    "kaufen_pct": 20,
-    "halten_pct": 60,
-    "verkaufen_pct": 20,
-    "total": 20,
+    "kaufen_pct": 16,
+    "halten_pct": 63,
+    "verkaufen_pct": 21,
+    "total": 19,
     "unclassified": 0
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 246.0,
+    "current": 235.55,
     "high": 373.0,
     "low": 140.0,
     "mean": 266.9097,
@@ -363,7 +363,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 383.17,
+    "current": 383.67,
     "high": 675.0,
     "low": 365.0,
     "mean": 473.42422,
@@ -426,7 +426,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 313.43,
+    "current": 308.29,
     "high": 340.0,
     "low": 250.0,
     "mean": 298.26666,
@@ -453,7 +453,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 177.0,
+    "current": 173.75,
     "high": 245.0,
     "low": 156.0,
     "mean": 198.46667,
@@ -480,11 +480,11 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 265.53,
+    "current": 255.22,
     "high": 375.0,
     "low": 215.0,
-    "mean": 308.27676,
-    "median": 307.5
+    "mean": 309.60028,
+    "median": 310.0
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -543,10 +543,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 129.34,
-    "high": 153.0,
+    "current": 125.97,
+    "high": 154.0,
     "low": 126.0,
-    "mean": 141.56818,
+    "mean": 141.61365,
     "median": 141.25
    },
    "konsens_firmen": [],
@@ -571,7 +571,7 @@
    },
    "quelle": "keine",
    "price_targets": {
-    "current": 204.2
+    "current": 201.05
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -594,10 +594,10 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 475.2,
+    "current": 466.5,
     "high": 684.0,
-    "low": 351.0,
-    "mean": 451.72015,
+    "low": 365.0,
+    "mean": 453.72015,
     "median": 443.3
    },
    "konsens_firmen": [],
@@ -636,7 +636,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 350.25,
+    "current": 349.23,
     "high": 900.0,
     "low": 358.0,
     "mean": 561.8889,
@@ -699,7 +699,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 504.28,
+    "current": 503.41,
     "high": 1250.0,
     "low": 525.0,
     "mean": 657.74286,
@@ -762,7 +762,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 462.32,
+    "current": 457.93,
     "high": 536.0,
     "low": 230.0,
     "mean": 432.84033,
@@ -825,11 +825,11 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 190.74,
+    "current": 183.18,
     "high": 260.0,
     "low": 188.0,
-    "mean": 215.8261,
-    "median": 210.0
+    "mean": 216.08333,
+    "median": 212.5
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -888,10 +888,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 257.75,
+    "current": 257.89,
     "high": 405.0,
     "low": 230.0,
-    "mean": 326.29034,
+    "mean": 326.09033,
     "median": 328.0
    },
    "konsens_firmen": [],
@@ -951,7 +951,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 187.02,
+    "current": 186.42,
     "high": 305.0,
     "low": 201.73,
     "mean": 249.64662,
@@ -1014,7 +1014,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 75.43,
+    "current": 76.36,
     "high": 130.0,
     "low": 85.0,
     "mean": 106.97368,
@@ -1077,11 +1077,11 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 415.22,
+    "current": 398.94,
     "high": 600.0,
     "low": 347.0,
-    "mean": 453.28033,
-    "median": 450.0
+    "mean": 455.61368,
+    "median": 452.5
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -1140,7 +1140,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 175.05,
+    "current": 183.39,
     "high": 500.0,
     "low": 125.0,
     "mean": 272.43,
@@ -1167,18 +1167,18 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 1259.6715,
-    "high": 2503.6809,
-    "low": 762.1682,
-    "mean": 1889.5297,
-    "median": 2023.6708
+    "current": 1243.4,
+    "high": 2511.7171,
+    "low": 764.6146,
+    "mean": 1895.5946,
+    "median": 2030.166
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 0.895423,
-    "tag": "2026-11-13",
+    "faktor": 0.898989,
+    "tag": "2026-11-17",
     "quelle": "ASML.AS",
     "waehrung": "EUR"
    }
@@ -1222,7 +1222,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 333.4,
+    "current": 341.6,
     "high": 660.0,
     "low": 398.4699,
     "mean": 528.17426,
@@ -1285,7 +1285,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 306.44,
+    "current": 298.59,
     "high": 700.0,
     "low": 380.0,
     "mean": 541.3158,
@@ -1341,7 +1341,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 319.05,
+    "current": 315.78,
     "high": 425.0,
     "low": 329.0,
     "mean": 364.78708,
@@ -1368,18 +1368,18 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 139.494,
-    "high": 181.929,
-    "low": 119.7699,
-    "mean": 157.7286,
-    "median": 159.1879
+    "current": 137.68,
+    "high": 181.2871,
+    "low": 119.3473,
+    "mean": 157.1721,
+    "median": 158.6262
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 0.758037,
-    "tag": "2026-11-13",
+    "faktor": 0.755363,
+    "tag": "2026-11-17",
     "quelle": "AZN.L",
     "waehrung": "GBP"
    }
@@ -1437,7 +1437,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 165.22,
+    "current": 163.91,
     "high": 305.0,
     "low": 157.0,
     "mean": 233.34615,
@@ -1464,18 +1464,18 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 86.9426,
-    "high": 213.1201,
-    "low": 91.9532,
-    "mean": 177.1213,
-    "median": 181.1261
+    "current": 85.45,
+    "high": 219.022,
+    "low": 94.4996,
+    "mean": 182.0239,
+    "median": 186.142
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 0.959419,
-    "tag": "2026-11-13",
+    "faktor": 0.986151,
+    "tag": "2026-11-17",
     "quelle": "9988.HK",
     "waehrung": "HKD"
    }
@@ -1512,7 +1512,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 50.08,
+    "current": 49.44,
     "high": 71.0,
     "low": 56.0,
     "mean": 62.47727,
@@ -1539,7 +1539,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 53.74,
+    "current": 52.24,
     "high": 61.0,
     "low": 42.0,
     "mean": 53.36111,
@@ -1566,7 +1566,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 57.0,
+    "current": 56.14,
     "high": 70.0,
     "low": 48.5,
     "mean": 60.11111,
@@ -1593,18 +1593,18 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 23.3609,
-    "high": 27.2801,
-    "low": 23.279,
-    "mean": 25.4887,
-    "median": 25.907
+    "current": 23.21,
+    "high": 27.2738,
+    "low": 23.2736,
+    "mean": 25.4828,
+    "median": 25.901
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 0.909336,
-    "tag": "2026-11-13",
+    "faktor": 0.909126,
+    "tag": "2026-11-17",
     "quelle": "BBVA.MC",
     "waehrung": "EUR"
    }
@@ -1618,19 +1618,19 @@
    "last_date": null,
    "actions": [],
    "consensus": {
-    "kaufen_pct": 33,
-    "halten_pct": 43,
+    "kaufen_pct": 29,
+    "halten_pct": 48,
     "verkaufen_pct": 24,
     "total": 21,
     "unclassified": 0
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 83.46,
+    "current": 82.56,
     "high": 95.0,
     "low": 68.0,
-    "mean": 81.5,
-    "median": 81.5
+    "mean": 81.85714,
+    "median": 82.0
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -1653,18 +1653,18 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 55.9425,
-    "high": 71.0852,
-    "low": 49.6115,
-    "mean": 58.7616,
-    "median": 57.0162
+    "current": 54.38,
+    "high": 70.6425,
+    "low": 49.3026,
+    "mean": 58.3957,
+    "median": 56.6612
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 0.740471,
-    "tag": "2026-11-13",
+    "faktor": 0.735859,
+    "tag": "2026-11-17",
     "quelle": "BHP.AX",
     "waehrung": "AUD"
    }
@@ -1722,7 +1722,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 251.65,
+    "current": 250.79,
     "high": 350.0,
     "low": 175.0,
     "mean": 268.2603,
@@ -1785,7 +1785,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 157.53,
+    "current": 154.46,
     "high": 267.0,
     "low": 150.0,
     "mean": 215.5294,
@@ -1848,7 +1848,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 47.94,
+    "current": 47.46,
     "high": 85.0,
     "low": 51.0,
     "mean": 70.0,
@@ -1897,11 +1897,11 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 1197.97,
+    "current": 1180.67,
     "high": 1531.0,
     "low": 1250.0,
-    "mean": 1361.0588,
-    "median": 1350.0
+    "mean": 1366.0,
+    "median": 1352.5
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -1924,11 +1924,11 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 169.74,
-    "high": 180.94276,
-    "low": 143.36284,
-    "mean": 164.8732,
-    "median": 170.31395
+    "current": 166.3,
+    "high": 180.97945,
+    "low": 143.3919,
+    "mean": 164.9066,
+    "median": 170.34848
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -1951,7 +1951,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 56.98,
+    "current": 56.1,
     "high": 82.5,
     "low": 52.0,
     "mean": 67.03684,
@@ -1993,7 +1993,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 62.93,
+    "current": 61.35,
     "high": 80.0,
     "low": 40.0,
     "mean": 65.25,
@@ -2020,7 +2020,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 58.14,
+    "current": 57.92,
     "high": 76.0,
     "low": 48.0,
     "mean": 59.2,
@@ -2047,11 +2047,11 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 90.63,
-    "high": 98.46413,
-    "low": 75.55604,
-    "mean": 90.08252,
-    "median": 96.22741
+    "current": 89.13,
+    "high": 98.48477,
+    "low": 75.57188,
+    "mean": 90.10141,
+    "median": 96.24758
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -2081,15 +2081,15 @@
     }
    ],
    "consensus": {
-    "kaufen_pct": 67,
-    "halten_pct": 33,
+    "kaufen_pct": 60,
+    "halten_pct": 40,
     "verkaufen_pct": 0,
-    "total": 6,
+    "total": 5,
     "unclassified": 0
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 151.69,
+    "current": 149.79,
     "high": 182.0,
     "low": 135.0,
     "mean": 163.7,
@@ -2138,18 +2138,18 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 5.6509,
-    "high": 9.5607,
-    "low": 5.4093,
-    "mean": 7.0312,
-    "median": 6.9189
+    "current": 5.684,
+    "high": 9.6318,
+    "low": 5.4495,
+    "mean": 7.0834,
+    "median": 6.9703
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 0.125799,
-    "tag": "2026-11-13",
+    "faktor": 0.126734,
+    "tag": "2026-11-17",
     "quelle": "BP.L",
     "waehrung": "GBP"
    }
@@ -2179,7 +2179,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 592.85,
+    "current": 586.76,
     "high": 628.0,
     "low": 510.0,
     "mean": 564.6667,
@@ -2206,18 +2206,18 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 46.7255,
-    "high": 56.4227,
-    "low": 47.3951,
-    "mean": 52.937,
-    "median": 53.7896
+    "current": 45.44,
+    "high": 57.6065,
+    "low": 48.3895,
+    "mean": 54.0477,
+    "median": 54.9182
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 0.752302,
-    "tag": "2026-11-13",
+    "faktor": 0.768087,
+    "tag": "2026-11-17",
     "quelle": "BATS.L",
     "waehrung": "GBP"
    }
@@ -2247,7 +2247,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 121.32,
+    "current": 119.94,
     "high": 170.0,
     "low": 127.0,
     "mean": 150.59525,
@@ -2310,7 +2310,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 570.49,
+    "current": 570.79,
     "high": 1027.0,
     "low": 575.0,
     "mean": 807.2604,
@@ -2373,7 +2373,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 381.28,
+    "current": 375.64,
     "high": 425.0,
     "low": 314.0,
     "mean": 374.08698,
@@ -2400,7 +2400,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 39.66,
+    "current": 39.06,
     "high": 47.0,
     "low": 39.0,
     "mean": 42.50833,
@@ -2456,11 +2456,11 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 119.19,
-    "high": 126.78658,
-    "low": 90.188126,
-    "mean": 113.01917,
-    "median": 117.29868
+    "current": 118.42,
+    "high": 126.70294,
+    "low": 90.12863,
+    "mean": 112.94461,
+    "median": 117.2213
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -2519,7 +2519,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 309.43,
+    "current": 306.97,
     "high": 470.0,
     "low": 300.0,
     "mean": 411.7604,
@@ -2568,7 +2568,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 165.82,
+    "current": 163.07,
     "high": 204.0,
     "low": 164.0,
     "mean": 185.88889,
@@ -2631,10 +2631,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 277.82,
+    "current": 268.07,
     "high": 399.0,
     "low": 240.0,
-    "mean": 338.2452,
+    "mean": 338.94086,
     "median": 346.0
    },
    "konsens_firmen": [],
@@ -2694,7 +2694,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 138.95,
+    "current": 138.5,
     "high": 345.0,
     "low": 68.0,
     "mean": 157.22221,
@@ -2757,7 +2757,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 100.99,
+    "current": 99.61,
     "high": 112.0,
     "low": 88.0,
     "mean": 101.7,
@@ -2784,11 +2784,11 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 113.75,
-    "high": 125.92673,
-    "low": 102.03478,
-    "mean": 117.95622,
-    "median": 125.90716
+    "current": 111.89,
+    "high": 125.94872,
+    "low": 102.052605,
+    "mean": 117.97683,
+    "median": 125.92915
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -2847,7 +2847,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 25.6,
+    "current": 25.31,
     "high": 42.0,
     "low": 17.0,
     "mean": 27.97727,
@@ -2874,11 +2874,11 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 48.17,
-    "high": 57.87127,
-    "low": 43.329376,
-    "mean": 48.86016,
-    "median": 48.2214
+    "current": 47.74,
+    "high": 57.872887,
+    "low": 43.33058,
+    "mean": 48.861523,
+    "median": 48.222744
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -2937,7 +2937,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 193.22,
+    "current": 186.78,
     "high": 290.0,
     "low": 225.0,
     "mean": 254.4762,
@@ -2964,7 +2964,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 72.58,
+    "current": 71.0,
     "high": 90.0,
     "low": 74.0,
     "mean": 80.66667,
@@ -3027,7 +3027,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 140.52,
+    "current": 139.48,
     "high": 185.0,
     "low": 122.0,
     "mean": 152.96297,
@@ -3076,10 +3076,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 1113.74,
+    "current": 1110.08,
     "high": 1315.0,
     "low": 770.0,
-    "mean": 1080.7567,
+    "mean": 1085.3513,
     "median": 1100.0
    },
    "konsens_firmen": [],
@@ -3103,7 +3103,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 32.08,
+    "current": 31.45,
     "high": 55.0,
     "low": 25.0,
     "mean": 39.0,
@@ -3137,15 +3137,15 @@
     }
    ],
    "consensus": {
-    "kaufen_pct": 64,
-    "halten_pct": 32,
+    "kaufen_pct": 67,
+    "halten_pct": 30,
     "verkaufen_pct": 4,
-    "total": 28,
+    "total": 27,
     "unclassified": 1
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 214.83,
+    "current": 194.52,
     "high": 475.0,
     "low": 165.0,
     "mean": 287.0836,
@@ -3194,10 +3194,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 223.21,
+    "current": 219.58,
     "high": 325.0,
     "low": 132.0,
-    "mean": 250.1834,
+    "mean": 250.6834,
     "median": 250.0
    },
    "konsens_firmen": [],
@@ -3229,11 +3229,11 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 94.52,
+    "current": 95.11,
     "high": 160.0,
     "low": 109.0,
-    "mean": 129.95833,
-    "median": 128.5
+    "mean": 130.5,
+    "median": 130.0
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -3285,7 +3285,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 31.24,
+    "current": 30.59,
     "high": 50.0,
     "low": 26.0,
     "mean": 35.85,
@@ -3348,7 +3348,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 52.03,
+    "current": 51.14,
     "high": 60.0,
     "low": 32.0,
     "mean": 53.80739,
@@ -3375,7 +3375,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 224.16,
+    "current": 222.2,
     "high": 250.0,
     "low": 181.0,
     "mean": 218.4375,
@@ -3438,7 +3438,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 62.29,
+    "current": 60.0,
     "high": 84.0,
     "low": 47.0,
     "mean": 69.424,
@@ -3494,11 +3494,11 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 88.59,
+    "current": 85.81,
     "high": 146.0,
     "low": 86.0,
-    "mean": 108.9584,
-    "median": 108.0
+    "mean": 109.30615,
+    "median": 109.0
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -3557,11 +3557,11 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 217.14,
+    "current": 216.13,
     "high": 272.0,
     "low": 202.0,
-    "mean": 242.45833,
-    "median": 242.5
+    "mean": 242.54167,
+    "median": 243.5
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -3620,7 +3620,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 169.78,
+    "current": 164.91,
     "high": 340.0,
     "low": 200.0,
     "mean": 250.39105,
@@ -3647,7 +3647,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 329.5,
+    "current": 324.2,
     "high": 347.0,
     "low": 252.0,
     "mean": 312.14285,
@@ -3674,7 +3674,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 32.915,
+    "current": 30.94,
     "high": 47.75,
     "low": 10.9,
     "mean": 35.24594,
@@ -3733,11 +3733,11 @@
     "halten_pct": 4,
     "verkaufen_pct": 0,
     "total": 23,
-    "unclassified": 2
+    "unclassified": 1
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 172.86,
+    "current": 165.18,
     "high": 330.0,
     "low": 171.0,
     "mean": 269.65457,
@@ -3764,7 +3764,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 653.99,
+    "current": 649.23,
     "high": 813.18,
     "low": 500.0,
     "mean": 694.0078,
@@ -3791,11 +3791,11 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 320.55,
+    "current": 322.79,
     "high": 700.0,
     "low": 403.0,
-    "mean": 585.68,
-    "median": 600.0
+    "mean": 583.68,
+    "median": 590.0
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -3818,7 +3818,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 61.0,
+    "current": 60.2,
     "high": 70.0,
     "low": 45.0,
     "mean": 58.95204,
@@ -3881,7 +3881,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 229.91,
+    "current": 225.77,
     "high": 310.0,
     "low": 220.0,
     "mean": 259.90475,
@@ -3903,16 +3903,16 @@
     "kaufen_pct": 100,
     "halten_pct": 0,
     "verkaufen_pct": 0,
-    "total": 10,
+    "total": 9,
     "unclassified": 0
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 118.7,
+    "current": 116.94,
     "high": 144.0,
     "low": 86.0,
-    "mean": 126.78833,
-    "median": 129.5
+    "mean": 127.5371,
+    "median": 130.0
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -3935,7 +3935,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 27.0,
+    "current": 27.12,
     "high": 43.0,
     "low": 28.1,
     "mean": 35.92222,
@@ -3962,7 +3962,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 43.09,
+    "current": 42.01,
     "high": 63.0,
     "low": 33.0,
     "mean": 49.53333,
@@ -4004,10 +4004,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 130.59,
+    "current": 129.84,
     "high": 145.0,
     "low": 121.0,
-    "mean": 132.8158,
+    "mean": 132.86842,
     "median": 131.0
    },
    "konsens_firmen": [],
@@ -4067,7 +4067,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 81.61,
+    "current": 82.04,
     "high": 120.0,
     "low": 79.0,
     "mean": 98.57692,
@@ -4130,7 +4130,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 160.65,
+    "current": 159.15,
     "high": 209.0,
     "low": 113.0,
     "mean": 182.99963,
@@ -4149,19 +4149,19 @@
    "last_date": null,
    "actions": [],
    "consensus": {
-    "kaufen_pct": 58,
-    "halten_pct": 38,
+    "kaufen_pct": 54,
+    "halten_pct": 42,
     "verkaufen_pct": 4,
     "total": 24,
     "unclassified": 0
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 47.29,
-    "high": 58.68666,
-    "low": 44.58202,
-    "mean": 50.674137,
-    "median": 49.791084
+    "current": 47.15,
+    "high": 58.697323,
+    "low": 44.590122,
+    "mean": 50.683346,
+    "median": 49.80013
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -4184,10 +4184,10 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 128.98,
+    "current": 125.0,
     "high": 260.0,
     "low": 100.0,
-    "mean": 190.96036,
+    "mean": 191.53178,
     "median": 200.0
    },
    "konsens_firmen": [],
@@ -4211,7 +4211,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 19.255,
+    "current": 18.93,
     "high": 22.7,
     "low": 18.5,
     "mean": 20.85711,
@@ -4274,7 +4274,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 1043.06,
+    "current": 1034.83,
     "high": 1380.0,
     "low": 1100.0,
     "mean": 1234.875,
@@ -4294,25 +4294,25 @@
    "actions": [],
    "consensus": {
     "kaufen_pct": 14,
-    "halten_pct": 43,
-    "verkaufen_pct": 43,
+    "halten_pct": 57,
+    "verkaufen_pct": 29,
     "total": 7,
     "unclassified": 0
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 389.5688,
-    "high": 483.9953,
-    "low": 313.1735,
-    "mean": 388.4164,
-    "median": 389.0943
+    "current": 399.3,
+    "high": 491.4165,
+    "low": 356.5179,
+    "mean": 401.6676,
+    "median": 395.0603
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 9.490105,
-    "tag": "2026-11-13",
+    "faktor": 9.635618,
+    "tag": "2026-11-17",
     "quelle": "EQNR.OL",
     "waehrung": "NOK"
    }
@@ -4356,7 +4356,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 336.88,
+    "current": 337.11,
     "high": 539.0,
     "low": 333.0,
     "mean": 468.74075,
@@ -4412,10 +4412,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 46.46,
+    "current": 45.86,
     "high": 58.0,
     "low": 44.0,
-    "mean": 48.0,
+    "mean": 47.94118,
     "median": 47.0
    },
    "konsens_firmen": [],
@@ -4475,10 +4475,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 177.41,
+    "current": 177.07,
     "high": 266.0,
     "low": 192.0,
-    "mean": 238.24138,
+    "mean": 238.51724,
     "median": 237.0
    },
    "konsens_firmen": [],
@@ -4510,7 +4510,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 55.11,
+    "current": 54.35,
     "high": 61.0,
     "low": 39.9,
     "mean": 51.14615,
@@ -4559,7 +4559,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 327.65,
+    "current": 319.94,
     "high": 479.0,
     "low": 160.0,
     "mean": 356.80768,
@@ -4586,10 +4586,10 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 53.86,
-    "high": 64.5,
+    "current": 53.75,
+    "high": 65.0,
     "low": 52.0,
-    "mean": 57.72857,
+    "mean": 58.19286,
     "median": 58.0
    },
    "konsens_firmen": [],
@@ -4649,10 +4649,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 123.27,
+    "current": 124.5,
     "high": 190.0,
     "low": 110.0,
-    "mean": 145.03432,
+    "mean": 144.68297,
     "median": 140.0
    },
    "konsens_firmen": [],
@@ -4705,7 +4705,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 359.69,
+    "current": 355.63,
     "high": 480.0,
     "low": 320.0,
     "mean": 419.29428,
@@ -4768,7 +4768,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 325.18,
+    "current": 326.4,
     "high": 431.0,
     "low": 280.0,
     "mean": 378.42856,
@@ -4831,7 +4831,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 82.96,
+    "current": 81.84,
     "high": 100.0,
     "low": 75.0,
     "mean": 87.85,
@@ -4894,7 +4894,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 763.57,
+    "current": 779.91,
     "high": 1400.0,
     "low": 940.0,
     "mean": 1176.0137,
@@ -4957,7 +4957,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 39.42,
+    "current": 39.6,
     "high": 140.0,
     "low": 43.0,
     "mean": 64.77273,
@@ -5020,7 +5020,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 167.58,
+    "current": 170.26,
     "high": 200.0,
     "low": 131.0,
     "mean": 175.92308,
@@ -5083,10 +5083,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 106.17,
+    "current": 108.49,
     "high": 220.0,
     "low": 120.0,
-    "mean": 174.94444,
+    "mean": 171.88889,
     "median": 177.5
    },
    "konsens_firmen": [],
@@ -5146,7 +5146,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 83.67,
+    "current": 84.05,
     "high": 132.0,
     "low": 75.0,
     "mean": 101.17391,
@@ -5195,10 +5195,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 281.26,
+    "current": 277.6,
     "high": 460.0,
-    "low": 340.0,
-    "mean": 393.0,
+    "low": 320.0,
+    "mean": 389.0,
     "median": 380.0
    },
    "konsens_firmen": [],
@@ -5258,7 +5258,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 283.72,
+    "current": 280.2,
     "high": 500.0,
     "low": 300.0,
     "mean": 400.37357,
@@ -5307,7 +5307,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 891.54,
+    "current": 877.52,
     "high": 1250.0,
     "low": 730.0,
     "mean": 1030.6666,
@@ -5342,18 +5342,18 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 19.0998,
-    "high": 26.5223,
-    "low": 18.5656,
-    "mean": 22.4017,
-    "median": 21.9756
+    "current": 18.71,
+    "high": 26.5983,
+    "low": 18.6188,
+    "mean": 22.4658,
+    "median": 22.0386
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 0.37889,
-    "tag": "2026-11-13",
+    "faktor": 0.379976,
+    "tag": "2026-11-17",
     "quelle": "GSK.L",
     "waehrung": "GBP"
    }
@@ -5397,10 +5397,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 347.51,
+    "current": 339.01,
     "high": 425.0,
     "low": 310.0,
-    "mean": 377.59375,
+    "mean": 377.78125,
     "median": 385.0
    },
    "konsens_firmen": [],
@@ -5424,18 +5424,18 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 818.3182,
-    "high": 1027.1777,
-    "low": 815.5168,
-    "mean": 943.1359,
-    "median": 964.9245
+    "current": 814.95,
+    "high": 1024.1184,
+    "low": 813.088,
+    "mean": 940.3269,
+    "median": 962.0507
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 31.126597,
-    "tag": "2026-11-13",
+    "faktor": 31.033892,
+    "tag": "2026-11-17",
     "quelle": "HDFCBANK.NS",
     "waehrung": "INR"
    }
@@ -5457,7 +5457,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 177.15,
+    "current": 177.45,
     "high": 282.0,
     "low": 140.0,
     "mean": 207.05556,
@@ -5484,10 +5484,10 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 87.76,
-    "high": 95.0,
+    "current": 88.3,
+    "high": 105.0,
     "low": 65.0,
-    "mean": 80.38588,
+    "mean": 81.75333,
     "median": 82.0
    },
    "konsens_firmen": [],
@@ -5511,10 +5511,10 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 301.0,
+    "current": 296.0,
     "high": 340.0,
-    "low": 251.0,
-    "mean": 285.46667,
+    "low": 260.0,
+    "mean": 286.8,
     "median": 280.0
    },
    "konsens_firmen": [],
@@ -5567,7 +5567,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 217.95,
+    "current": 218.96,
     "high": 290.0,
     "low": 186.0,
     "mean": 253.86957,
@@ -5609,7 +5609,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 163.36,
+    "current": 160.64,
     "high": 261.0,
     "low": 170.0,
     "mean": 193.26666,
@@ -5636,18 +5636,18 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 13.3218,
-    "high": 16.9338,
-    "low": 13.6014,
-    "mean": 15.5686,
-    "median": 16.1706
+    "current": 13.208,
+    "high": 16.9564,
+    "low": 13.6196,
+    "mean": 15.5894,
+    "median": 16.1922
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 0.151127,
-    "tag": "2026-11-13",
+    "faktor": 0.151329,
+    "tag": "2026-11-17",
     "quelle": "HSBA.L",
     "waehrung": "GBP"
    }
@@ -5705,7 +5705,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 242.51,
+    "current": 231.09,
     "high": 300.0,
     "low": 174.0,
     "mean": 259.84738,
@@ -5732,18 +5732,18 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 1579.0125,
-    "high": 1834.9942,
-    "low": 1651.4947,
-    "mean": 1731.7757,
-    "median": 1720.307
+    "current": 1598.7,
+    "high": 1837.5862,
+    "low": 1653.8276,
+    "mean": 1734.222,
+    "median": 1722.7371
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 45.874854,
-    "tag": "2026-11-13",
+    "faktor": 45.939655,
+    "tag": "2026-11-17",
     "quelle": "ICICIBANK.NS",
     "waehrung": "INR"
    }
@@ -5787,7 +5787,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 700.65,
+    "current": 690.24,
     "high": 810.0,
     "low": 470.0,
     "mean": 717.1667,
@@ -5814,7 +5814,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 49.24,
+    "current": 48.685,
     "high": 124.0,
     "low": 50.0,
     "mean": 80.79167,
@@ -5870,7 +5870,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 198.0,
+    "current": 202.61,
     "high": 365.0,
     "low": 165.0,
     "mean": 261.45,
@@ -5897,18 +5897,18 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 29.5628,
-    "high": 38.9938,
-    "low": 29.0187,
-    "mean": 33.2506,
-    "median": 31.7392
+    "current": 29.335,
+    "high": 39.0528,
+    "low": 29.0625,
+    "mean": 33.3008,
+    "median": 31.7872
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 0.906833,
-    "tag": "2026-11-13",
+    "faktor": 0.908204,
+    "tag": "2026-11-17",
     "quelle": "INGA.AS",
     "waehrung": "EUR"
    }
@@ -5966,7 +5966,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 55.47,
+    "current": 55.17,
     "high": 160.0,
     "low": 63.0,
     "mean": 90.65116,
@@ -6001,7 +6001,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 345.56,
+    "current": 320.79,
     "high": 732.0,
     "low": 290.0,
     "mean": 407.8884,
@@ -6064,7 +6064,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 437.75,
+    "current": 430.53,
     "high": 685.0,
     "low": 324.0,
     "mean": 486.56668,
@@ -6091,11 +6091,11 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 282.55,
+    "current": 278.7,
     "high": 320.0,
     "low": 190.0,
-    "mean": 279.4091,
-    "median": 280.5
+    "mean": 280.18182,
+    "median": 283.0
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -6126,7 +6126,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 338.21,
+    "current": 329.96,
     "high": 425.0,
     "low": 312.0,
     "mean": 373.47827,
@@ -6189,10 +6189,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 35.58,
+    "current": 34.79,
     "high": 42.0,
     "low": 32.0,
-    "mean": 38.02778,
+    "mean": 38.63889,
     "median": 40.0
    },
    "konsens_firmen": [],
@@ -6238,7 +6238,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 25.07,
+    "current": 25.11,
     "high": 41.0,
     "low": 20.0,
     "mean": 25.14706,
@@ -6301,7 +6301,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 143.96,
+    "current": 144.56,
     "high": 275.0,
     "low": 175.0,
     "mean": 219.61539,
@@ -6364,10 +6364,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 99.48,
-    "high": 106.0,
+    "current": 98.79,
+    "high": 112.0,
     "low": 80.0,
-    "mean": 98.43478,
+    "mean": 98.79167,
     "median": 100.0
    },
    "konsens_firmen": [],
@@ -6427,7 +6427,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 523.46,
+    "current": 515.11,
     "high": 600.0,
     "low": 400.0,
     "mean": 551.03705,
@@ -6490,7 +6490,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 1431.67,
+    "current": 1415.55,
     "high": 1700.0,
     "low": 940.0,
     "mean": 1468.5737,
@@ -6553,7 +6553,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 585.21,
+    "current": 590.34,
     "high": 835.0,
     "low": 498.0,
     "mean": 660.86365,
@@ -6609,7 +6609,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 224.93,
+    "current": 220.46,
     "high": 290.0,
     "low": 190.0,
     "mean": 250.69698,
@@ -6672,7 +6672,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 210.83,
+    "current": 210.69,
     "high": 500.0,
     "low": 255.0,
     "mean": 362.1,
@@ -6721,7 +6721,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 105.46,
+    "current": 104.14,
     "high": 255.0,
     "low": 44.0,
     "mean": 104.4,
@@ -6784,7 +6784,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 661.71,
+    "current": 645.73,
     "high": 800.0,
     "low": 550.0,
     "mean": 720.68677,
@@ -6847,10 +6847,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 425.7,
-    "high": 478.0,
+    "current": 422.74,
+    "high": 479.0,
     "low": 302.0,
-    "mean": 420.42307,
+    "mean": 421.73077,
     "median": 425.5
    },
    "konsens_firmen": [],
@@ -6874,7 +6874,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 40.425,
+    "current": 39.535,
     "high": 70.0,
     "low": 32.0,
     "mean": 50.5525,
@@ -6937,7 +6937,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 274.67,
+    "current": 275.82,
     "high": 390.0,
     "low": 230.0,
     "mean": 299.0,
@@ -7000,7 +7000,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 58.64,
+    "current": 59.43,
     "high": 120.0,
     "low": 62.0,
     "mean": 86.48,
@@ -7063,10 +7063,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 1105.04,
+    "current": 1091.67,
     "high": 1260.0,
     "low": 965.0,
-    "mean": 1144.2858,
+    "mean": 1161.0714,
     "median": 1200.0
    },
    "konsens_firmen": [],
@@ -7098,7 +7098,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 316.92,
+    "current": 298.63,
     "high": 565.0,
     "low": 335.0,
     "mean": 452.02896,
@@ -7154,7 +7154,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 67.54,
+    "current": 66.75,
     "high": 77.0,
     "low": 56.0,
     "mean": 70.45455,
@@ -7181,11 +7181,11 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 102.88,
+    "current": 102.32,
     "high": 121.0,
-    "low": 85.0,
-    "mean": 105.0,
-    "median": 106.0
+    "low": 92.0,
+    "mean": 106.34615,
+    "median": 107.0
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -7244,11 +7244,11 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 1462.12,
+    "current": 1436.83,
     "high": 2800.0,
     "low": 1600.0,
-    "mean": 2204.5474,
-    "median": 2165.0
+    "mean": 2194.2976,
+    "median": 2115.0
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -7307,10 +7307,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 626.41,
+    "current": 618.87,
     "high": 1050.0,
     "low": 650.0,
-    "mean": 850.58826,
+    "mean": 848.2262,
     "median": 850.0
    },
    "konsens_firmen": [],
@@ -7334,18 +7334,18 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 7950.1933,
-    "high": 10139.374,
-    "low": 7911.4119,
-    "mean": 9025.393,
-    "median": 9025.393
+    "current": 7868.0001,
+    "high": 10463.2875,
+    "low": 8164.1506,
+    "mean": 9313.7191,
+    "median": 9313.7191
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 775.628615,
-    "tag": "2026-11-13",
+    "faktor": 800.406924,
+    "tag": "2026-11-17",
     "quelle": "8411.T",
     "waehrung": "JPY"
    }
@@ -7403,11 +7403,11 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 181.68,
+    "current": 180.88,
     "high": 230.0,
     "low": 125.0,
-    "mean": 193.42587,
-    "median": 197.0
+    "mean": 194.01411,
+    "median": 198.0
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -7458,18 +7458,18 @@
     }
    ],
    "consensus": {
-    "kaufen_pct": 44,
-    "halten_pct": 56,
+    "kaufen_pct": 57,
+    "halten_pct": 43,
     "verkaufen_pct": 0,
-    "total": 9,
+    "total": 7,
     "unclassified": 0
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 45.8,
+    "current": 44.44,
     "high": 57.0,
     "low": 37.0,
-    "mean": 50.13043,
+    "mean": 50.08696,
     "median": 50.0
    },
    "konsens_firmen": [],
@@ -7522,7 +7522,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 78.9,
+    "current": 77.46,
     "high": 85.0,
     "low": 59.0,
     "mean": 73.45455,
@@ -7578,7 +7578,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 402.19,
+    "current": 395.61,
     "high": 564.0,
     "low": 236.0,
     "mean": 458.2353,
@@ -7641,7 +7641,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 144.46,
+    "current": 143.37,
     "high": 186.0,
     "low": 105.0,
     "mean": 161.525,
@@ -7668,11 +7668,11 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 149.7,
+    "current": 150.75,
     "high": 179.0,
     "low": 135.0,
-    "mean": 156.85715,
-    "median": 157.0
+    "mean": 159.2143,
+    "median": 159.0
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -7731,11 +7731,11 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 215.27,
+    "current": 206.8,
     "high": 305.0,
     "low": 45.0,
-    "mean": 159.78947,
-    "median": 125.0
+    "mean": 165.3158,
+    "median": 145.0
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -7794,11 +7794,11 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 145.36,
+    "current": 148.74,
     "high": 450.0,
     "low": 175.0,
-    "mean": 310.31824,
-    "median": 300.0
+    "mean": 310.89325,
+    "median": 301.5
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -7836,7 +7836,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 185.57,
+    "current": 183.53,
     "high": 262.0,
     "low": 185.0,
     "mean": 211.5,
@@ -7894,12 +7894,12 @@
     "kaufen_pct": 100,
     "halten_pct": 0,
     "verkaufen_pct": 0,
-    "total": 24,
+    "total": 23,
     "unclassified": 1
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 517.99,
+    "current": 506.24,
     "high": 870.0,
     "low": 440.0,
     "mean": 636.12427,
@@ -7948,7 +7948,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 103.03,
+    "current": 96.5,
     "high": 435.0,
     "low": 165.0,
     "mean": 233.26666,
@@ -7975,7 +7975,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 355.0,
+    "current": 347.8,
     "high": 530.0,
     "low": 325.0,
     "mean": 408.35,
@@ -8017,7 +8017,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 719.02,
+    "current": 712.42,
     "high": 3000.0,
     "low": 361.0,
     "mean": 1561.9111,
@@ -8044,18 +8044,18 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 3374.7137,
-    "high": 4223.2711,
-    "low": 3342.8768,
-    "mean": 3783.0732,
-    "median": 3783.0732
+    "current": 3287.0001,
+    "high": 4260.1978,
+    "low": 3372.1056,
+    "mean": 3816.1509,
+    "median": 3816.1509
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 159.184609,
-    "tag": "2026-11-13",
+    "faktor": 160.576459,
+    "tag": "2026-11-17",
     "quelle": "8306.T",
     "waehrung": "JPY"
    }
@@ -8077,10 +8077,10 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 591.6,
-    "high": 632.0,
+    "current": 583.2,
+    "high": 644.0,
     "low": 480.0,
-    "mean": 554.0,
+    "mean": 557.125,
     "median": 557.5
    },
    "konsens_firmen": [],
@@ -8133,10 +8133,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 85.34,
+    "current": 84.42,
     "high": 110.0,
     "low": 56.0,
-    "mean": 94.0,
+    "mean": 94.10526,
     "median": 99.0
    },
    "konsens_firmen": [],
@@ -8189,7 +8189,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 110.31,
+    "current": 111.26,
     "high": 165.0,
     "low": 70.0,
     "mean": 135.39,
@@ -8252,7 +8252,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 293.59,
+    "current": 284.8,
     "high": 430.0,
     "low": 190.0,
     "mean": 344.1875,
@@ -8315,7 +8315,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 60.75,
+    "current": 59.68,
     "high": 126.0,
     "low": 57.0,
     "mean": 84.76326,
@@ -8378,7 +8378,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 38.26,
+    "current": 35.85,
     "high": 60.0,
     "low": 19.0,
     "mean": 36.46053,
@@ -8433,15 +8433,15 @@
     }
    ],
    "consensus": {
-    "kaufen_pct": 86,
-    "halten_pct": 7,
-    "verkaufen_pct": 7,
-    "total": 28,
+    "kaufen_pct": 88,
+    "halten_pct": 8,
+    "verkaufen_pct": 4,
+    "total": 26,
     "unclassified": 0
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 99.37,
+    "current": 92.9,
     "high": 266.0,
     "low": 72.0,
     "mean": 155.8187,
@@ -8504,10 +8504,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 156.14,
+    "current": 155.46,
     "high": 515.0,
     "low": 130.0,
-    "mean": 267.6463,
+    "mean": 265.23456,
     "median": 255.0
    },
    "konsens_firmen": [],
@@ -8531,18 +8531,18 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 278.2493,
-    "high": 428.9667,
-    "low": 263.9794,
-    "mean": 306.1643,
-    "median": 291.3127
+    "current": 275.5,
+    "high": 433.8514,
+    "low": 266.9853,
+    "mean": 309.6506,
+    "median": 294.6299
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 6.688686,
-    "tag": "2026-11-13",
+    "faktor": 6.769042,
+    "tag": "2026-11-17",
     "quelle": "NOVO-B.CO",
     "waehrung": "DKK"
    }
@@ -8572,18 +8572,18 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 133.8094,
-    "high": 154.524,
-    "low": 108.5844,
-    "mean": 131.2201,
-    "median": 132.3895
+    "current": 133.28,
+    "high": 154.9475,
+    "low": 108.882,
+    "mean": 131.5798,
+    "median": 132.7523
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 0.835265,
-    "tag": "2026-11-13",
+    "faktor": 0.837554,
+    "tag": "2026-11-17",
     "quelle": "NOVN.SW",
     "waehrung": "CHF"
    }
@@ -8641,7 +8641,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 254.19,
+    "current": 252.51,
     "high": 400.0,
     "low": 175.0,
     "mean": 300.48276,
@@ -8704,7 +8704,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 174.29,
+    "current": 171.85,
     "high": 245.0,
     "low": 158.0,
     "mean": 213.4762,
@@ -8767,7 +8767,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 67.69,
+    "current": 67.93,
     "high": 125.0,
     "low": 75.0,
     "mean": 96.16,
@@ -8822,15 +8822,15 @@
     }
    ],
    "consensus": {
-    "kaufen_pct": 85,
-    "halten_pct": 15,
+    "kaufen_pct": 89,
+    "halten_pct": 11,
     "verkaufen_pct": 0,
-    "total": 20,
+    "total": 19,
     "unclassified": 1
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 119.09,
+    "current": 115.0,
     "high": 400.0,
     "low": 110.0,
     "mean": 236.184,
@@ -8886,10 +8886,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 92.7,
+    "current": 92.69,
     "high": 122.0,
     "low": 91.0,
-    "mean": 106.46154,
+    "mean": 106.40741,
     "median": 108.0
    },
    "konsens_firmen": [],
@@ -8913,7 +8913,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 44.1,
+    "current": 43.44,
     "high": 60.0,
     "low": 39.0,
     "mean": 47.29444,
@@ -8940,7 +8940,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 24.04,
+    "current": 23.72,
     "high": 42.0,
     "low": 24.0,
     "mean": 34.78125,
@@ -8975,7 +8975,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 316.09,
+    "current": 309.29,
     "high": 525.0,
     "low": 190.0,
     "mean": 398.62686,
@@ -9002,7 +9002,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 117.77,
+    "current": 114.1,
     "high": 150.0,
     "low": 96.0,
     "mean": 114.57143,
@@ -9029,18 +9029,18 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 48.9286,
-    "high": 76.3626,
-    "low": 49.2114,
-    "mean": 65.7893,
-    "median": 67.8779
+    "current": 50.11,
+    "high": 77.7122,
+    "low": 50.0812,
+    "mean": 65.8156,
+    "median": 67.6384
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 2.828244,
-    "tag": "2026-11-13",
+    "faktor": 2.878231,
+    "tag": "2026-11-17",
     "quelle": "PETR3.SA",
     "waehrung": "BRL"
    }
@@ -9091,7 +9091,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 105.53,
+    "current": 104.61,
     "high": 150.0,
     "low": 104.0,
     "mean": 125.10125,
@@ -9126,11 +9126,11 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 78.11,
-    "high": 151.27841,
-    "low": 82.14269,
-    "mean": 113.65867,
-    "median": 112.4788
+    "current": 77.39,
+    "high": 151.2557,
+    "low": 82.13037,
+    "mean": 113.64162,
+    "median": 112.46192
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -9153,10 +9153,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 146.43,
+    "current": 142.02,
     "high": 169.0,
     "low": 106.0,
-    "mean": 141.59091,
+    "mean": 141.45454,
     "median": 140.5
    },
    "konsens_firmen": [],
@@ -9216,7 +9216,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 28.86,
+    "current": 28.47,
     "high": 37.0,
     "low": 25.0,
     "mean": 30.22115,
@@ -9279,10 +9279,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 173.02,
+    "current": 171.72,
     "high": 190.0,
     "low": 151.0,
-    "mean": 174.04349,
+    "mean": 174.26086,
     "median": 176.0
    },
    "konsens_firmen": [],
@@ -9314,11 +9314,11 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 237.33,
+    "current": 234.67,
     "high": 262.0,
     "low": 196.0,
-    "mean": 232.38095,
-    "median": 233.0
+    "mean": 233.57143,
+    "median": 235.0
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -9349,10 +9349,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 934.8,
+    "current": 920.84,
     "high": 1280.0,
     "low": 740.0,
-    "mean": 1137.5955,
+    "mean": 1138.0955,
     "median": 1176.0
    },
    "konsens_firmen": [],
@@ -9405,7 +9405,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 127.6,
+    "current": 125.56,
     "high": 170.0,
     "low": 136.0,
     "mean": 152.07143,
@@ -9468,11 +9468,11 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 160.39,
+    "current": 156.56,
     "high": 273.0,
     "low": 80.0,
-    "mean": 223.43214,
-    "median": 237.5
+    "mean": 222.9,
+    "median": 235.0
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -9524,10 +9524,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 196.04,
+    "current": 194.38,
     "high": 240.0,
     "low": 175.0,
-    "mean": 212.4375,
+    "mean": 212.6875,
     "median": 217.5
    },
    "konsens_firmen": [],
@@ -9587,7 +9587,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 260.62,
+    "current": 256.93,
     "high": 346.0,
     "low": 188.0,
     "mean": 290.5263,
@@ -9650,7 +9650,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 58.83,
+    "current": 58.11,
     "high": 80.0,
     "low": 36.0,
     "mean": 57.31364,
@@ -9713,7 +9713,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 168.52,
+    "current": 166.67,
     "high": 320.0,
     "low": 100.0,
     "mean": 185.9643,
@@ -9769,7 +9769,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 45.31,
+    "current": 45.2,
     "high": 46.5,
     "low": 34.0,
     "mean": 43.1,
@@ -9832,11 +9832,11 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 952.4,
+    "current": 957.76,
     "high": 1175.0,
     "low": 812.0,
-    "mean": 984.96295,
-    "median": 997.0
+    "mean": 990.8148,
+    "median": 1000.0
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -9859,7 +9859,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 769.7,
+    "current": 760.9,
     "high": 2000.0,
     "low": 900.0,
     "mean": 1328.5,
@@ -9886,18 +9886,18 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 60.7589,
-    "high": 88.8043,
-    "low": 65.6545,
-    "mean": 79.9192,
-    "median": 82.2958
+    "current": 60.47,
+    "high": 89.0272,
+    "low": 65.8192,
+    "mean": 80.1197,
+    "median": 82.5023
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 0.759011,
-    "tag": "2026-11-13",
+    "faktor": 0.760916,
+    "tag": "2026-11-17",
     "quelle": "RIO.L",
     "waehrung": "GBP"
    }
@@ -9955,7 +9955,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 483.72,
+    "current": 471.92,
     "high": 550.0,
     "low": 335.0,
     "mean": 469.17786,
@@ -10011,10 +10011,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 222.99,
+    "current": 220.45,
     "high": 315.0,
     "low": 187.0,
-    "mean": 273.5263,
+    "mean": 273.21054,
     "median": 279.0
    },
    "konsens_firmen": [],
@@ -10053,10 +10053,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 194.89,
+    "current": 198.0,
     "high": 250.0,
     "low": 200.0,
-    "mean": 227.91304,
+    "mean": 228.13043,
     "median": 235.0
    },
    "konsens_firmen": [],
@@ -10080,7 +10080,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 59.26,
+    "current": 57.7,
     "high": 77.5,
     "low": 60.0,
     "mean": 69.87222,
@@ -10107,11 +10107,11 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 199.61,
-    "high": 229.15349,
-    "low": 181.84328,
-    "mean": 208.34644,
-    "median": 214.04256
+    "current": 196.49,
+    "high": 229.21434,
+    "low": 181.89157,
+    "mean": 208.40176,
+    "median": 214.0994
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -10142,18 +10142,18 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 10.8811,
-    "high": 14.1418,
-    "low": 11.8075,
-    "mean": 13.2214,
-    "median": 13.7149
+    "current": 10.82,
+    "high": 14.2167,
+    "low": 11.87,
+    "mean": 13.2914,
+    "median": 13.7875
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 0.908272,
-    "tag": "2026-11-13",
+    "faktor": 0.91308,
+    "tag": "2026-11-17",
     "quelle": "SAN.MC",
     "waehrung": "EUR"
    }
@@ -10175,7 +10175,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 213.4,
+    "current": 201.5,
     "high": 290.0,
     "low": 198.84,
     "mean": 243.54222,
@@ -10238,7 +10238,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 108.72,
+    "current": 107.49,
     "high": 141.0,
     "low": 82.0,
     "mean": 111.06667,
@@ -10294,7 +10294,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 153.87,
+    "current": 155.42,
     "high": 272.11557,
     "low": 143.47913,
     "mean": 177.77461,
@@ -10343,7 +10343,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 92.94,
+    "current": 91.84,
     "high": 147.0,
     "low": 82.0,
     "mean": 116.63636,
@@ -10370,26 +10370,26 @@
     }
    ],
    "consensus": {
-    "kaufen_pct": 25,
-    "halten_pct": 75,
+    "kaufen_pct": 33,
+    "halten_pct": 67,
     "verkaufen_pct": 0,
-    "total": 4,
+    "total": 3,
     "unclassified": 0
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 36.6807,
-    "high": 48.4271,
-    "low": 37.5404,
-    "mean": 41.5972,
-    "median": 40.1682
+    "current": 36.805,
+    "high": 48.8261,
+    "low": 37.8497,
+    "mean": 41.9399,
+    "median": 40.4991
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 0.375404,
-    "tag": "2026-11-13",
+    "faktor": 0.378497,
+    "tag": "2026-11-17",
     "quelle": "SHEL.L",
     "waehrung": "GBP"
    }
@@ -10411,7 +10411,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 44.0,
+    "current": 43.3,
     "high": 57.4,
     "low": 37.0,
     "mean": 46.745,
@@ -10474,10 +10474,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 147.81,
+    "current": 141.9,
     "high": 220.0,
     "low": 120.0,
-    "mean": 177.28612,
+    "mean": 177.18408,
     "median": 180.0
    },
    "konsens_firmen": [],
@@ -10537,10 +10537,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 350.54,
+    "current": 344.15,
     "high": 420.0,
     "low": 329.0,
-    "mean": 374.25,
+    "mean": 373.83334,
     "median": 374.0
    },
    "konsens_firmen": [],
@@ -10564,11 +10564,11 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 272.55,
+    "current": 269.8,
     "high": 345.0,
     "low": 240.0,
-    "mean": 308.7164,
-    "median": 310.0
+    "mean": 311.5796,
+    "median": 315.0
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -10627,18 +10627,18 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 1127330.5074,
-    "high": 3690720.273,
-    "low": 1513195.3119,
-    "mean": 2394354.7771,
-    "median": 2352834.174
+    "current": 1097999.9945,
+    "high": 3582089.5344,
+    "low": 1468656.7091,
+    "mean": 2323880.5854,
+    "median": 2283582.0782
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 9226.800683,
-    "tag": "2026-11-13",
+    "faktor": 8955.223836,
+    "tag": "2026-11-17",
     "quelle": "000660.KS",
     "waehrung": "KRW"
    }
@@ -10660,18 +10660,18 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 3200.8691,
-    "high": 2085.5952,
-    "low": 2085.5952,
-    "mean": 2085.5952,
-    "median": 2085.5952
+    "current": 3137.9999,
+    "high": 2117.31,
+    "low": 2117.31,
+    "mean": 2117.31,
+    "median": 2117.31
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 132.376719,
-    "tag": "2026-11-13",
+    "faktor": 134.389719,
+    "tag": "2026-11-17",
     "quelle": "8316.T",
     "waehrung": "JPY"
    }
@@ -10729,7 +10729,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 809.11,
+    "current": 797.24,
     "high": 3000.0,
     "low": 870.0,
     "mean": 2047.375,
@@ -10756,7 +10756,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 280.54,
+    "current": 272.94,
     "high": 540.0,
     "low": 280.0,
     "mean": 434.08533,
@@ -10791,7 +10791,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 441.33,
+    "current": 435.51,
     "high": 700.0,
     "low": 475.0,
     "mean": 589.546,
@@ -10818,18 +10818,18 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 87.6362,
-    "high": 114.0955,
-    "low": 81.4968,
-    "mean": 99.4663,
-    "median": 101.056
+    "current": 86.64,
+    "high": 114.8395,
+    "low": 82.0282,
+    "mean": 100.1149,
+    "median": 101.715
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 1.81104,
-    "tag": "2026-11-13",
+    "faktor": 1.822849,
+    "tag": "2026-11-17",
     "quelle": "SAN.PA",
     "waehrung": "EUR"
    }
@@ -10873,11 +10873,11 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 94.64,
+    "current": 93.6,
     "high": 115.0,
     "low": 74.0,
-    "mean": 96.02632,
-    "median": 95.0
+    "mean": 96.275,
+    "median": 96.5
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -10900,18 +10900,18 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 4348.1759,
-    "high": 5467.3809,
-    "low": 4180.9384,
-    "mean": 5105.569,
-    "median": 5386.9783
+    "current": 4271.0,
+    "high": 5442.8035,
+    "low": 4162.1439,
+    "mean": 5082.618,
+    "median": 5362.7623
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 160.805321,
-    "tag": "2026-11-13",
+    "faktor": 160.082457,
+    "tag": "2026-11-17",
     "quelle": "6758.T",
     "waehrung": "JPY"
    }
@@ -10969,11 +10969,11 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 137.36,
+    "current": 141.7,
     "high": 800.0,
     "low": 70.0,
-    "mean": 255.63026,
-    "median": 240.0
+    "mean": 257.49515,
+    "median": 250.0
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -11018,10 +11018,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 232.78,
+    "current": 230.24,
     "high": 275.0,
     "low": 207.0,
-    "mean": 234.8158,
+    "mean": 235.23685,
     "median": 229.0
    },
    "konsens_firmen": [],
@@ -11081,10 +11081,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 471.59,
+    "current": 452.35,
     "high": 572.0,
-    "low": 485.0,
-    "mean": 526.7,
+    "low": 500.0,
+    "mean": 529.35,
     "median": 525.0
    },
    "konsens_firmen": [],
@@ -11144,11 +11144,11 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 611.73,
-    "high": 736.4687,
-    "low": 450.9417,
-    "mean": 636.0852,
-    "median": 645.6376
+    "current": 602.01,
+    "high": 735.98285,
+    "low": 450.64423,
+    "mean": 636.2504,
+    "median": 645.2116
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -11171,7 +11171,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 291.0,
+    "current": 291.5,
     "high": 340.0,
     "low": 200.0,
     "mean": 297.5,
@@ -11234,7 +11234,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 499.0,
+    "current": 504.4,
     "high": 1588.0,
     "low": 700.0,
     "mean": 1044.8334,
@@ -11261,7 +11261,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 96.02,
+    "current": 94.96,
     "high": 119.0,
     "low": 93.5,
     "mean": 103.43333,
@@ -11324,7 +11324,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 310.72,
+    "current": 317.54,
     "high": 410.0,
     "low": 275.0,
     "mean": 339.37296,
@@ -11387,7 +11387,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 22.36,
+    "current": 22.29,
     "high": 34.0,
     "low": 20.0,
     "mean": 27.58696,
@@ -11414,11 +11414,11 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 121.76,
-    "high": 134.64139,
-    "low": 94.92647,
-    "mean": 118.95679,
-    "median": 127.30252
+    "current": 119.68,
+    "high": 134.67432,
+    "low": 94.949684,
+    "mean": 118.98588,
+    "median": 127.33366
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -11477,7 +11477,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 149.94,
+    "current": 140.98,
     "high": 480.0,
     "low": 150.0,
     "mean": 216.94258,
@@ -11533,7 +11533,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 131.09,
+    "current": 129.85,
     "high": 190.0,
     "low": 130.0,
     "mean": 165.4,
@@ -11568,18 +11568,18 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 3440.8479,
-    "high": 4070.7717,
-    "low": 3700.7015,
-    "mean": 3830.6769,
-    "median": 3775.6172
+    "current": 3414.0001,
+    "high": 4052.8436,
+    "low": 3684.4032,
+    "mean": 3813.8062,
+    "median": 3758.989
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 16.090007,
-    "tag": "2026-11-13",
+    "faktor": 16.019145,
+    "tag": "2026-11-17",
     "quelle": "7203.T",
     "waehrung": "JPY"
    }
@@ -11637,7 +11637,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 691.33,
+    "current": 686.79,
     "high": 830.0,
     "low": 590.0,
     "mean": 756.52,
@@ -11692,18 +11692,18 @@
     }
    ],
    "consensus": {
-    "kaufen_pct": 77,
-    "halten_pct": 23,
+    "kaufen_pct": 75,
+    "halten_pct": 25,
     "verkaufen_pct": 0,
-    "total": 13,
+    "total": 12,
     "unclassified": 0
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 170.01,
+    "current": 167.9,
     "high": 296.0,
-    "low": 165.0,
-    "mean": 225.44,
+    "low": 169.0,
+    "mean": 226.24,
     "median": 235.0
    },
    "konsens_firmen": [],
@@ -11755,15 +11755,15 @@
     }
    ],
    "consensus": {
-    "kaufen_pct": 23,
-    "halten_pct": 54,
-    "verkaufen_pct": 23,
-    "total": 13,
+    "kaufen_pct": 27,
+    "halten_pct": 55,
+    "verkaufen_pct": 18,
+    "total": 11,
     "unclassified": 0
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 403.06,
+    "current": 397.58,
     "high": 460.0,
     "low": 262.0,
     "mean": 376.54166,
@@ -11826,7 +11826,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 379.74,
+    "current": 380.11,
     "high": 600.0,
     "low": 128.11,
     "mean": 412.47626,
@@ -11861,18 +11861,18 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 2201.0069,
-    "high": 5893.7124,
-    "low": 2593.2334,
-    "mean": 3457.7998,
-    "median": 3300.4789
+    "current": 2170.0,
+    "high": 6032.9728,
+    "low": 2654.508,
+    "mean": 3539.5029,
+    "median": 3378.4648
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 5.893712,
-    "tag": "2026-11-13",
+    "faktor": 6.032973,
+    "tag": "2026-11-17",
     "quelle": "2330.TW",
     "waehrung": "TWD"
    }
@@ -11930,10 +11930,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 14.83,
+    "current": 14.93,
     "high": 20.0,
-    "low": 9.0,
-    "mean": 14.95,
+    "low": 8.0,
+    "mean": 14.91667,
     "median": 15.0
    },
    "konsens_firmen": [],
@@ -11957,26 +11957,26 @@
     }
    ],
    "consensus": {
-    "kaufen_pct": 40,
-    "halten_pct": 60,
+    "kaufen_pct": 25,
+    "halten_pct": 75,
     "verkaufen_pct": 0,
-    "total": 5,
+    "total": 4,
     "unclassified": 0
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 81.4456,
-    "high": 107.761,
-    "low": 82.4054,
-    "mean": 91.3252,
-    "median": 90.5554
+    "current": 82.06,
+    "high": 108.0215,
+    "low": 82.6046,
+    "mean": 91.5459,
+    "median": 90.7743
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 0.905554,
-    "tag": "2026-11-13",
+    "faktor": 0.907743,
+    "tag": "2026-11-17",
     "quelle": "TTE.PA",
     "waehrung": "EUR"
    }
@@ -12034,7 +12034,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 213.47,
+    "current": 203.93,
     "high": 330.0,
     "low": 170.0,
     "mean": 283.92828,
@@ -12097,7 +12097,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 294.21,
+    "current": 295.86,
     "high": 422.0,
     "low": 250.0,
     "mean": 338.7931,
@@ -12160,7 +12160,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 69.99,
+    "current": 68.81,
     "high": 150.0,
     "low": 70.0,
     "mean": 98.232,
@@ -12187,18 +12187,18 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 39.8639,
-    "high": 52.415,
-    "low": 42.7023,
-    "mean": 46.219,
-    "median": 43.5396
+    "current": 39.06,
+    "high": 52.5162,
+    "low": 42.7848,
+    "mean": 46.3082,
+    "median": 43.6237
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 0.837301,
-    "tag": "2026-11-13",
+    "faktor": 0.838918,
+    "tag": "2026-11-17",
     "quelle": "UBSG.SW",
     "waehrung": "CHF"
    }
@@ -12220,18 +12220,18 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 50.327,
-    "high": 56.5063,
-    "low": 52.0629,
-    "mean": 54.0565,
-    "median": 53.8284
+    "current": 49.59,
+    "high": 56.9201,
+    "low": 52.4441,
+    "mean": 54.4523,
+    "median": 54.2225
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 0.753285,
-    "tag": "2026-11-13",
+    "faktor": 0.759302,
+    "tag": "2026-11-17",
     "quelle": "ULVR.L",
     "waehrung": "GBP"
    }
@@ -12282,10 +12282,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 412.02,
+    "current": 389.68,
     "high": 531.0,
     "low": 380.0,
-    "mean": 476.36,
+    "mean": 476.16,
     "median": 490.0
    },
    "konsens_firmen": [],
@@ -12345,7 +12345,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 303.71,
+    "current": 297.03,
     "high": 375.0,
     "low": 245.0,
     "mean": 329.95834,
@@ -12408,7 +12408,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 111.82,
+    "current": 110.31,
     "high": 135.0,
     "low": 76.0,
     "mean": 115.46154,
@@ -12457,7 +12457,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 60.43,
+    "current": 59.18,
     "high": 75.0,
     "low": 65.0,
     "mean": 68.79545,
@@ -12520,7 +12520,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 426.46,
+    "current": 416.77,
     "high": 500.0,
     "low": 330.0,
     "mean": 449.06433,
@@ -12583,7 +12583,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 369.73,
+    "current": 363.77,
     "high": 530.0,
     "low": 238.0,
     "mean": 421.3158,
@@ -12610,7 +12610,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 16.815,
+    "current": 16.81,
     "high": 45.0,
     "low": 14.0,
     "mean": 22.31333,
@@ -12637,7 +12637,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 67.04,
+    "current": 66.3,
     "high": 120.0,
     "low": 67.3,
     "mean": 98.15556,
@@ -12679,7 +12679,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 212.76,
+    "current": 205.31,
     "high": 265.0,
     "low": 195.0,
     "mean": 235.94118,
@@ -12742,7 +12742,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 537.79,
+    "current": 534.2,
     "high": 725.0,
     "low": 350.0,
     "mean": 595.3571,
@@ -12805,7 +12805,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 46.34,
+    "current": 45.93,
     "high": 62.0,
     "low": 44.0,
     "mean": 50.65,
@@ -12824,15 +12824,15 @@
    "last_date": null,
    "actions": [],
    "consensus": {
-    "kaufen_pct": 42,
-    "halten_pct": 50,
-    "verkaufen_pct": 8,
-    "total": 24,
+    "kaufen_pct": 43,
+    "halten_pct": 52,
+    "verkaufen_pct": 4,
+    "total": 23,
     "unclassified": 0
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 194.06,
+    "current": 182.8,
     "high": 275.0,
     "low": 92.0,
     "mean": 209.25323,
@@ -12895,7 +12895,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 280.93,
+    "current": 283.33,
     "high": 900.0,
     "low": 405.0,
     "mean": 613.375,
@@ -12958,7 +12958,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 244.65,
+    "current": 245.76,
     "high": 292.0,
     "low": 230.0,
     "mean": 265.45456,
@@ -12993,7 +12993,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 84.84,
+    "current": 82.69,
     "high": 108.0,
     "low": 88.0,
     "mean": 97.375,
@@ -13056,10 +13056,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 128.41,
+    "current": 127.52,
     "high": 155.0,
     "low": 81.0,
-    "mean": 131.45,
+    "mean": 131.90244,
     "median": 132.0
    },
    "konsens_firmen": [],
@@ -13112,10 +13112,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 81.21,
-    "high": 99.0,
+    "current": 80.72,
+    "high": 103.0,
     "low": 76.0,
-    "mean": 89.81579,
+    "mean": 90.28947,
     "median": 92.0
    },
    "konsens_firmen": [],
@@ -13175,7 +13175,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 166.87,
+    "current": 167.21,
     "high": 213.0,
     "low": 160.0,
     "mean": 184.18182,
@@ -13202,7 +13202,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 28.03,
+    "current": 28.34,
     "high": 53.0,
     "low": 25.0,
     "mean": 35.34783,
@@ -13244,7 +13244,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 190.84,
+    "current": 185.19,
     "high": 298.0,
     "low": 164.75,
     "mean": 235.19444,

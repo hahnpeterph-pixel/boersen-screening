@@ -1,39 +1,39 @@
 {
- "date": "2026-11-17",
+ "date": "2026-11-18",
  "ranks": {
   "turnaround": [
    "TSLA",
    "IBM",
    "COP",
-   "SAP.DE",
    "KDP",
    "TXN",
+   "SHOP",
    "PFE",
    "VLO",
    "SRT3.DE",
    "PSX",
+   "BEI.DE",
    "MRK.DE",
-   "TM",
+   "SY1.DE",
    "ZAL.DE",
-   "SPGI",
-   "PM"
+   "SPGI"
   ],
   "momentum": [
    "LLY",
+   "MCK",
    "TRV",
    "CCEP",
    "MAR",
-   "MCK",
+   "DB1.DE",
    "FAST",
-   "ABBV",
    "KDP",
    "HEN3.DE",
    "CSX",
    "CTAS",
    "SAP.DE",
+   "ABBV",
    "V",
-   "DB1.DE",
-   "ZAL.DE"
+   "PAYX"
   ],
   "value": [
    "PBR",
@@ -57,30 +57,30 @@
   "turnaround": {
    "entries": [
     {
-     "ticker": "SAP.DE",
-     "rank": 4
+     "ticker": "SHOP",
+     "rank": 6
     },
     {
-     "ticker": "ZAL.DE",
+     "ticker": "BEI.DE",
+     "rank": 11
+    },
+    {
+     "ticker": "SY1.DE",
      "rank": 13
-    },
-    {
-     "ticker": "PM",
-     "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "SHOP",
-     "old_rank": 7
+     "ticker": "SAP.DE",
+     "old_rank": 4
     },
     {
-     "ticker": "BEI.DE",
-     "old_rank": 13
+     "ticker": "TM",
+     "old_rank": 12
     },
     {
-     "ticker": "SY1.DE",
-     "old_rank": 14
+     "ticker": "PM",
+     "old_rank": 15
     }
    ],
    "moves": []
@@ -88,21 +88,26 @@
   "momentum": {
    "entries": [
     {
-     "ticker": "ZAL.DE",
+     "ticker": "PAYX",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "SY1.DE",
+     "ticker": "ZAL.DE",
      "old_rank": 15
     }
    ],
    "moves": [
     {
      "ticker": "DB1.DE",
-     "rank": 14,
-     "delta": -11
+     "rank": 6,
+     "delta": 8
+    },
+    {
+     "ticker": "ABBV",
+     "rank": 13,
+     "delta": -6
     }
    ]
   },

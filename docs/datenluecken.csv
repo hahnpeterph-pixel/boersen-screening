@@ -1,13 +1,266 @@
 ticker,boerse,fehlend,gefuellt,wochenkontrolle
-BABA,HKEX,2026-11-17,,2026-11-17: Wochentief 85.10 liegt UNTER allen bekannten Tagestiefs (89.80) - der fehlende Tag hatte ein tieferes Tief
-BHP,ASX,2026-11-17,,2026-11-17: Wochentief 54.38 liegt UNTER allen bekannten Tagestiefs (57.21) - der fehlende Tag hatte ein tieferes Tief
+AAPL,USA,,2026-11-17:stunden,
+ABBV,USA,,2026-11-17:stunden,
+ABNB,USA,,2026-11-17:stunden,
+ABT,USA,,2026-11-17:stunden,
+ACN,USA,,2026-11-17:stunden,
+ADBE,USA,,2026-11-17:stunden,
+ADI,USA,,2026-11-17:stunden,
+ADP,USA,,2026-11-17:stunden,
+ADS.DE,XETRA,2026-11-17,,2026-11-17: Wochentief 172.35 liegt UNTER allen bekannten Tagestiefs (177.00) - der fehlende Tag hatte ein tieferes Tief
+ADSK,USA,,2026-11-17:stunden,
+AEP,USA,,2026-11-17:stunden,
+AIR.DE,XETRA,2026-11-17,,2026-11-17: Wochentief 200.75 liegt UNTER allen bekannten Tagestiefs (204.20) - der fehlende Tag hatte ein tieferes Tief
+ALV.DE,XETRA,2026-11-17,,2026-11-17: Wochentief 466.50 liegt UNTER allen bekannten Tagestiefs (474.50) - der fehlende Tag hatte ein tieferes Tief
+AMAT,USA,,2026-11-17:stunden,
+AMD,USA,,2026-11-17:stunden,
+AMGN,USA,,2026-11-17:stunden,
+AMT,USA,,2026-11-17:stunden,
+AMZN,USA,,2026-11-17:stunden,
+ANET,USA,2026-11-17,,2026-11-17: Wochentief 183.12 liegt UNTER allen bekannten Tagestiefs (184.44) - der fehlende Tag hatte ein tieferes Tief
+APH,USA,2026-11-17,,2026-11-17: Wochentief 74.62 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+APP,USA,2026-11-17,,2026-11-17: Wochentief 388.74 liegt UNTER allen bekannten Tagestiefs (404.78) - der fehlende Tag hatte ein tieferes Tief
+ARM,USA,,2026-11-17:stunden,
+ASML,Euronext,,2026-11-17:stunden,
+AVGO,USA,,2026-11-17:stunden,
+AXON,USA,2026-11-17,,2026-11-17: Wochentief 291.11 liegt UNTER allen bekannten Tagestiefs (304.17) - der fehlende Tag hatte ein tieferes Tief
+AXP,USA,,2026-11-17:stunden,
+AZN,LSE,,2026-11-17:stunden,
+BA,USA,,2026-11-17:stunden,
+BAC,USA,,2026-11-17:stunden,
+BAS.DE,XETRA,2026-11-17,,2026-11-17: Wochentief 51.94 liegt UNTER allen bekannten Tagestiefs (53.74) - der fehlende Tag hatte ein tieferes Tief
+BAYN.DE,XETRA,2026-11-17,,2026-11-17: Wochentief 55.84 liegt UNTER allen bekannten Tagestiefs (56.70) - der fehlende Tag hatte ein tieferes Tief
+BBVA,BME,2026-11-17,,2026-11-17: Wochentief 23.14 liegt UNTER allen bekannten Tagestiefs (23.42) - der fehlende Tag hatte ein tieferes Tief
+BEI.DE,XETRA,2026-11-17,,2026-11-17: Wochentief 82.48 liegt UNTER allen bekannten Tagestiefs (83.46) - der fehlende Tag hatte ein tieferes Tief
+BIIB,USA,,2026-11-17:stunden,
+BKNG,USA,,2026-11-17:stunden,
+BKR,USA,,2026-11-17:stunden,
+BLK,USA,,2026-11-17:stunden,
+BMO,USA,2026-11-17,,2026-11-17: Wochentief 165.15 liegt UNTER allen bekannten Tagestiefs (169.31) - der fehlende Tag hatte ein tieferes Tief
+BMW.DE,XETRA,2026-11-17,,2026-11-17: Wochentief 56.00 liegt UNTER allen bekannten Tagestiefs (56.98) - der fehlende Tag hatte ein tieferes Tief
+BMY,USA,,2026-11-17:stunden,
+BNR.DE,XETRA,2026-11-17,,2026-11-17: Wochentief 56.96 liegt UNTER allen bekannten Tagestiefs (57.78) - der fehlende Tag hatte ein tieferes Tief
+BNS,USA,2026-11-17,,2026-11-17: Wochentief 88.75 liegt UNTER allen bekannten Tagestiefs (90.39) - der fehlende Tag hatte ein tieferes Tief
+BNY,USA,,2026-11-17:stunden,
+BP,LSE,2026-11-17,,2026-11-17: Wochentief 5.64 liegt UNTER allen bekannten Tagestiefs (5.67) - der fehlende Tag hatte ein tieferes Tief
+BRK-B,USA,,2026-11-17:stunden,
+BTI,LSE,2026-11-17,,2026-11-17: Wochentief 45.24 liegt UNTER allen bekannten Tagestiefs (46.73) - der fehlende Tag hatte ein tieferes Tief
+C,USA,2026-11-17,,2026-11-17: Wochentief 118.38 liegt UNTER allen bekannten Tagestiefs (120.21) - der fehlende Tag hatte ein tieferes Tief
+CAT,USA,,2026-11-17:stunden,
+CB,USA,2026-11-17,,2026-11-17: Wochentief 373.92 liegt UNTER allen bekannten Tagestiefs (379.29) - der fehlende Tag hatte ein tieferes Tief
+CBK.DE,XETRA,2026-11-17,,2026-11-17: Wochentief 38.93 liegt UNTER allen bekannten Tagestiefs (39.52) - der fehlende Tag hatte ein tieferes Tief
+CCEP,USA,2026-11-17,,2026-11-17: Wochentief 117.89 liegt UNTER allen bekannten Tagestiefs (118.94) - der fehlende Tag hatte ein tieferes Tief
+CDNS,USA,,2026-11-17:stunden,
+CDW,USA,,2026-11-17:stunden,
+CEG,USA,,2026-11-17:stunden,
+CHTR,USA,,2026-11-17:stunden,
+CL,USA,2026-11-17,,2026-11-17: Wochentief 99.53 liegt UNTER allen bekannten Tagestiefs (100.00) - der fehlende Tag hatte ein tieferes Tief
+CM,USA,2026-11-17,,2026-11-17: Wochentief 111.33 liegt UNTER allen bekannten Tagestiefs (113.68) - der fehlende Tag hatte ein tieferes Tief
+CMCSA,USA,,2026-11-17:stunden,
+CNQ,USA,2026-11-17,,2026-11-17: Wochentief 47.66 liegt UNTER allen bekannten Tagestiefs (47.93) - der fehlende Tag hatte ein tieferes Tief
+COF,USA,2026-11-17,,2026-11-17: Wochentief 186.23 liegt UNTER allen bekannten Tagestiefs (191.38) - der fehlende Tag hatte ein tieferes Tief
+CON.DE,XETRA,2026-11-17,,2026-11-17: Wochentief 70.62 liegt UNTER allen bekannten Tagestiefs (72.58) - der fehlende Tag hatte ein tieferes Tief
+COP,USA,2026-11-17,,2026-11-17: Wochentief 138.83 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+COST,USA,,2026-11-17:stunden,
+CPRT,USA,,2026-11-17:stunden,
+CRM,USA,,2026-11-17:stunden,
+CRWD,USA,,2026-11-17:stunden,
+CSCO,USA,,2026-11-17:stunden,
+CSGP,USA,,2026-11-17:stunden,
+CSX,USA,,2026-11-17:stunden,
+CTAS,USA,,2026-11-17:stunden,
+CTSH,USA,,2026-11-17:stunden,
+CVS,USA,2026-11-17,,2026-11-17: Wochentief 84.67 liegt UNTER allen bekannten Tagestiefs (88.02) - der fehlende Tag hatte ein tieferes Tief
+CVX,USA,2026-11-17,,2026-11-17: Wochentief 215.27 liegt UNTER allen bekannten Tagestiefs (216.54) - der fehlende Tag hatte ein tieferes Tief
+DASH,USA,,2026-11-17:stunden,
+DB1.DE,XETRA,2026-11-17,,2026-11-17: Wochentief 323.80 liegt UNTER allen bekannten Tagestiefs (329.20) - der fehlende Tag hatte ein tieferes Tief
+DBK.DE,XETRA,2026-11-17,,2026-11-17: Wochentief 30.76 liegt UNTER allen bekannten Tagestiefs (32.91) - der fehlende Tag hatte ein tieferes Tief
+DDOG,USA,,2026-11-17:stunden,
+DE,USA,2026-11-17,,2026-11-17: Wochentief 644.88 liegt UNTER allen bekannten Tagestiefs (653.53) - der fehlende Tag hatte ein tieferes Tief
+DELL,USA,2026-11-17,,2026-11-17: Wochentief 306.00 liegt UNTER allen bekannten Tagestiefs (318.03) - der fehlende Tag hatte ein tieferes Tief
+DHL.DE,XETRA,2026-11-17,,2026-11-17: Wochentief 60.14 liegt UNTER allen bekannten Tagestiefs (60.88) - der fehlende Tag hatte ein tieferes Tief
+DHR,USA,2026-11-17,,2026-11-17: Wochentief 225.07 liegt UNTER allen bekannten Tagestiefs (229.67) - der fehlende Tag hatte ein tieferes Tief
+DIS,USA,,2026-11-17:stunden,
+DTE.DE,XETRA,2026-11-17,,2026-11-17: Wochentief 26.81 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+DTG.DE,XETRA,2026-11-17,,2026-11-17: Wochentief 42.01 liegt UNTER allen bekannten Tagestiefs (42.65) - der fehlende Tag hatte ein tieferes Tief
+DUK,USA,2026-11-17,,2026-11-17: Wochentief 129.19 liegt UNTER allen bekannten Tagestiefs (129.96) - der fehlende Tag hatte ein tieferes Tief
+DXCM,USA,,2026-11-17:stunden,
+EMR,USA,2026-11-17,,2026-11-17: Wochentief 157.92 liegt UNTER allen bekannten Tagestiefs (160.17) - der fehlende Tag hatte ein tieferes Tief
+ENB,USA,2026-11-17,,2026-11-17: Wochentief 47.07 liegt UNTER allen bekannten Tagestiefs (47.25) - der fehlende Tag hatte ein tieferes Tief
+ENR.DE,XETRA,2026-11-17,,2026-11-17: Wochentief 124.12 liegt UNTER allen bekannten Tagestiefs (128.04) - der fehlende Tag hatte ein tieferes Tief
+EOAN.DE,XETRA,2026-11-17,,2026-11-17: Wochentief 18.86 liegt UNTER allen bekannten Tagestiefs (19.16) - der fehlende Tag hatte ein tieferes Tief
+EQIX,USA,2026-11-17,,2026-11-17: Wochentief 1023.73 liegt UNTER allen bekannten Tagestiefs (1037.84) - der fehlende Tag hatte ein tieferes Tief
+EQNR,OSL,2026-11-17,,2026-11-17: Wochentief 393.20 liegt UNTER allen bekannten Tagestiefs (394.00) - der fehlende Tag hatte ein tieferes Tief
+ETN,USA,2026-11-17,,2026-11-17: Wochentief 331.27 liegt UNTER allen bekannten Tagestiefs (336.20) - der fehlende Tag hatte ein tieferes Tief
+EXC,USA,,2026-11-17:stunden,
+FANG,USA,,2026-11-17:stunden,
+FAST,USA,,2026-11-17:stunden,
+FDX,USA,2026-11-17,,2026-11-17: Wochentief 318.04 liegt UNTER allen bekannten Tagestiefs (323.00) - der fehlende Tag hatte ein tieferes Tief
+FRE.DE,XETRA,2026-11-17,,2026-11-17: Wochentief 53.32 liegt UNTER allen bekannten Tagestiefs (53.86) - der fehlende Tag hatte ein tieferes Tief
+FTNT,USA,,2026-11-17:stunden,
+GD,USA,2026-11-17,,2026-11-17: Wochentief 354.46 liegt UNTER allen bekannten Tagestiefs (357.74) - der fehlende Tag hatte ein tieferes Tief
+GE,USA,2026-11-17,,2026-11-17: Wochentief 323.28 liegt UNTER allen bekannten Tagestiefs (323.89) - der fehlende Tag hatte ein tieferes Tief
+GEHC,USA,,2026-11-17:stunden,
+GEV,USA,2026-11-17,,2026-11-17: Wochentief 753.03 liegt UNTER allen bekannten Tagestiefs (760.00) - der fehlende Tag hatte ein tieferes Tief
+GFS,USA,2026-11-17,,2026-11-17: Wochentief 38.15 liegt UNTER allen bekannten Tagestiefs (39.36) - der fehlende Tag hatte ein tieferes Tief
+GILD,USA,,2026-11-17:stunden,
+GLW,USA,2026-11-17,,2026-11-17: Wochentief 104.44 liegt UNTER allen bekannten Tagestiefs (105.41) - der fehlende Tag hatte ein tieferes Tief
+GM,USA,2026-11-17,,2026-11-17: Wochentief 82.34 liegt UNTER allen bekannten Tagestiefs (83.07) - der fehlende Tag hatte ein tieferes Tief
+GOOGL,USA,,2026-11-17:stunden,
+GS,USA,,2026-11-17:stunden,
+GSK,LSE,2026-11-17,,2026-11-17: Wochentief 18.69 liegt UNTER allen bekannten Tagestiefs (19.16) - der fehlende Tag hatte ein tieferes Tief
+HD,USA,,2026-11-17:stunden,
 HDB,NSE,2026-11-17,,2026-11-17: Wochentief 802.40 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+HEI.DE,XETRA,2026-11-17,,2026-11-17: Wochentief 174.75 liegt UNTER allen bekannten Tagestiefs (176.60) - der fehlende Tag hatte ein tieferes Tief
+HEN3.DE,XETRA,2026-11-17,,2026-11-17: Wochentief 87.18 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+HNR1.DE,XETRA,2026-11-17,,2026-11-17: Wochentief 296.00 liegt UNTER allen bekannten Tagestiefs (300.20) - der fehlende Tag hatte ein tieferes Tief
+HON,USA,,2026-11-17:stunden,
+HONA,USA,2026-11-17,,2026-11-17: Wochentief 160.26 liegt UNTER allen bekannten Tagestiefs (162.34) - der fehlende Tag hatte ein tieferes Tief
+HSBC,LSE,2026-11-17,,2026-11-17: Wochentief 13.15 liegt UNTER allen bekannten Tagestiefs (13.47) - der fehlende Tag hatte ein tieferes Tief
+IBM,USA,,2026-11-17:stunden,
 IBN,NSE,2026-11-17,,2026-11-17: Wochentief 1577.00 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
-MFG,TSE,2026-11-17,,2026-11-17: Wochentief 7825.00 liegt UNTER allen bekannten Tagestiefs (8222.00) - der fehlende Tag hatte ein tieferes Tief
-MUFG,TSE,2026-11-17,,2026-11-17: Wochentief 3259.00 liegt UNTER allen bekannten Tagestiefs (3365.00) - der fehlende Tag hatte ein tieferes Tief
-SKHY,KRX,2026-11-17,,2026-11-17: Wochentief 1092000.00 liegt UNTER allen bekannten Tagestiefs (1113000.00) - der fehlende Tag hatte ein tieferes Tief
-SMFG,TSE,2026-11-17,,2026-11-17: Wochentief 3107.00 liegt UNTER allen bekannten Tagestiefs (3235.00) - der fehlende Tag hatte ein tieferes Tief
-SONY,TSE,2026-11-17,,2026-11-17: Wochentief 4210.00 liegt UNTER allen bekannten Tagestiefs (4242.00) - der fehlende Tag hatte ein tieferes Tief
-TM,TSE,2026-11-17,,2026-11-17: Wochentief 3383.00 liegt UNTER allen bekannten Tagestiefs (3402.00) - der fehlende Tag hatte ein tieferes Tief
-TSM,TWSE,2026-10-23 2026-11-17,,2026-10-23: Wochentief 2385.00 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle); 2026-11-17: Wochentief 2155.00 liegt UNTER allen bekannten Tagestiefs (2215.00) - der fehlende Tag hatte ein tieferes Tief
+IDXX,USA,,2026-11-17:stunden,
+IFX.DE,XETRA,2026-11-17,,2026-11-17: Wochentief 48.08 liegt UNTER allen bekannten Tagestiefs (48.59) - der fehlende Tag hatte ein tieferes Tief
+ILMN,USA,,2026-11-17:stunden,
+ING,Euronext,2026-11-17,,2026-11-17: Wochentief 29.23 liegt UNTER allen bekannten Tagestiefs (29.89) - der fehlende Tag hatte ein tieferes Tief
+INTC,USA,,2026-11-17:stunden,
+INTU,USA,,2026-11-17:stunden,
+ISRG,USA,,2026-11-17:stunden,
+JNJ,USA,,2026-11-17:stunden,
+JPM,USA,,2026-11-17:stunden,
+KDP,USA,,2026-11-17:stunden,
+KHC,USA,,2026-11-17:stunden,
+KLAC,USA,,2026-11-17:stunden,
+KO,USA,,2026-11-17:stunden,
+LIN,USA,,2026-11-17:stunden,
+LLY,USA,2026-11-17,,2026-11-17: Wochentief 1401.66 liegt UNTER allen bekannten Tagestiefs (1427.66) - der fehlende Tag hatte ein tieferes Tief
+LMT,USA,2026-11-17,,2026-11-17: Wochentief 581.22 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+LOW,USA,2026-11-17,,2026-11-17: Wochentief 220.14 liegt UNTER allen bekannten Tagestiefs (223.98) - der fehlende Tag hatte ein tieferes Tief
+LRCX,USA,,2026-11-17:stunden,
+LULU,USA,,2026-11-17:stunden,
+MA,USA,2026-11-17,,2026-11-17: Wochentief 644.90 liegt UNTER allen bekannten Tagestiefs (659.48) - der fehlende Tag hatte ein tieferes Tief
+MAR,USA,,2026-11-17:stunden,
+MBG.DE,XETRA,2026-11-17,,2026-11-17: Wochentief 39.33 liegt UNTER allen bekannten Tagestiefs (40.42) - der fehlende Tag hatte ein tieferes Tief
+MCD,USA,,2026-11-17:stunden,
+MCHP,USA,,2026-11-17:stunden,
+MCK,USA,2026-11-17,,2026-11-17: Wochentief 1085.18 liegt UNTER allen bekannten Tagestiefs (1099.70) - der fehlende Tag hatte ein tieferes Tief
+MDB,USA,,2026-11-17:stunden,
+MDLZ,USA,,2026-11-17:stunden,
+MDT,USA,2026-11-17,,2026-11-17: Wochentief 102.12 liegt UNTER allen bekannten Tagestiefs (102.85) - der fehlende Tag hatte ein tieferes Tief
+MELI,USA,,2026-11-17:stunden,
+META,USA,,2026-11-17:stunden,
+MMM,USA,,2026-11-17:stunden,
+MNST,USA,,2026-11-17:stunden,
+MO,USA,2026-11-17,,2026-11-17: Wochentief 77.40 liegt UNTER allen bekannten Tagestiefs (78.45) - der fehlende Tag hatte ein tieferes Tief
+MPC,USA,2026-11-17,,2026-11-17: Wochentief 391.36 liegt UNTER allen bekannten Tagestiefs (398.10) - der fehlende Tag hatte ein tieferes Tief
+MRK,USA,,2026-11-17:stunden,
+MRK.DE,XETRA,2026-11-17,,2026-11-17: Wochentief 149.20 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+MRNA,USA,,2026-11-17:stunden,
+MRVL,USA,,2026-11-17:stunden,
+MS,USA,2026-11-17,,2026-11-17: Wochentief 181.26 liegt UNTER allen bekannten Tagestiefs (183.45) - der fehlende Tag hatte ein tieferes Tief
+MSFT,USA,,2026-11-17:stunden,
+MSTR,USA,2026-11-17,,2026-11-17: Wochentief 96.35 liegt UNTER allen bekannten Tagestiefs (101.70) - der fehlende Tag hatte ein tieferes Tief
+MTX.DE,XETRA,2026-11-17,,2026-11-17: Wochentief 346.80 liegt UNTER allen bekannten Tagestiefs (352.40) - der fehlende Tag hatte ein tieferes Tief
+MU,USA,,2026-11-17:stunden,
+MUV2.DE,XETRA,2026-11-17,,2026-11-17: Wochentief 583.20 liegt UNTER allen bekannten Tagestiefs (589.20) - der fehlende Tag hatte ein tieferes Tief
+NEE,USA,2026-11-17,,2026-11-17: Wochentief 84.21 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+NEM,USA,2026-11-17,,2026-11-17: Wochentief 110.14 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+NET,USA,2026-11-17,,2026-11-17: Wochentief 277.20 liegt UNTER allen bekannten Tagestiefs (290.30) - der fehlende Tag hatte ein tieferes Tief
+NFLX,USA,,2026-11-17:stunden,
+NKE,USA,,2026-11-17:stunden,
+NOW,USA,2026-11-17,,2026-11-17: Wochentief 92.03 liegt UNTER allen bekannten Tagestiefs (98.88) - der fehlende Tag hatte ein tieferes Tief
+NVDA,USA,,2026-11-17:stunden,
+NVO,CPH,2026-11-17,,2026-11-17: Wochentief 274.10 liegt UNTER allen bekannten Tagestiefs (282.60) - der fehlende Tag hatte ein tieferes Tief
+NVS,SIX,2026-11-17,,2026-11-17: Wochentief 133.08 liegt UNTER allen bekannten Tagestiefs (134.70) - der fehlende Tag hatte ein tieferes Tief
+NXPI,USA,,2026-11-17:stunden,
+ODFL,USA,,2026-11-17:stunden,
+ON,USA,,2026-11-17:stunden,
+ORCL,USA,,2026-11-17:stunden,
+ORLY,USA,,2026-11-17:stunden,
+P911.DE,XETRA,2026-11-17,,2026-11-17: Wochentief 43.09 liegt UNTER allen bekannten Tagestiefs (43.87) - der fehlende Tag hatte ein tieferes Tief
+PAH3.DE,XETRA,2026-11-17,,2026-11-17: Wochentief 23.53 liegt UNTER allen bekannten Tagestiefs (24.04) - der fehlende Tag hatte ein tieferes Tief
+PANW,USA,,2026-11-17:stunden,
+PAYX,USA,,2026-11-17:stunden,
+PCAR,USA,,2026-11-17:stunden,
+PDD,USA,,2026-11-17:stunden,
+PEP,USA,,2026-11-17:stunden,
+PFE,USA,2026-11-17,,2026-11-17: Wochentief 28.35 liegt UNTER allen bekannten Tagestiefs (28.81) - der fehlende Tag hatte ein tieferes Tief
+PG,USA,,2026-11-17:stunden,
+PGR,USA,2026-11-17,,2026-11-17: Wochentief 234.22 liegt UNTER allen bekannten Tagestiefs (236.71) - der fehlende Tag hatte ein tieferes Tief
+PH,USA,2026-11-17,,2026-11-17: Wochentief 918.06 liegt UNTER allen bekannten Tagestiefs (930.37) - der fehlende Tag hatte ein tieferes Tief
+PLD,USA,2026-11-17,,2026-11-17: Wochentief 125.08 liegt UNTER allen bekannten Tagestiefs (127.33) - der fehlende Tag hatte ein tieferes Tief
+PLTR,USA,,2026-11-17:stunden,
+PM,USA,2026-11-17,,2026-11-17: Wochentief 193.94 liegt UNTER allen bekannten Tagestiefs (195.38) - der fehlende Tag hatte ein tieferes Tief
+PSX,USA,2026-11-17,,2026-11-17: Wochentief 253.74 liegt UNTER allen bekannten Tagestiefs (257.18) - der fehlende Tag hatte ein tieferes Tief
+PYPL,USA,,2026-11-17:stunden,
+QCOM,USA,,2026-11-17:stunden,
+QIA.DE,XETRA,2026-11-17,,2026-11-17: Wochentief 45.19 liegt UNTER allen bekannten Tagestiefs (45.26) - der fehlende Tag hatte ein tieferes Tief
+REGN,USA,,2026-11-17:stunden,
+RHM.DE,XETRA,2026-11-17,,2026-11-17: Wochentief 738.70 liegt UNTER allen bekannten Tagestiefs (763.70) - der fehlende Tag hatte ein tieferes Tief
+RIO,LSE,2026-11-17,,2026-11-17: Wochentief 60.05 liegt UNTER allen bekannten Tagestiefs (61.50) - der fehlende Tag hatte ein tieferes Tief
+ROP,USA,,2026-11-17:stunden,
+ROST,USA,,2026-11-17:stunden,
+RTX,USA,2026-11-17,,2026-11-17: Wochentief 193.00 liegt UNTER allen bekannten Tagestiefs (194.21) - der fehlende Tag hatte ein tieferes Tief
+RWE.DE,XETRA,2026-11-17,,2026-11-17: Wochentief 57.44 liegt UNTER allen bekannten Tagestiefs (58.84) - der fehlende Tag hatte ein tieferes Tief
+RY,USA,2026-11-17,,2026-11-17: Wochentief 195.32 liegt UNTER allen bekannten Tagestiefs (199.22) - der fehlende Tag hatte ein tieferes Tief
+SAN,BME,2026-11-17,,2026-11-17: Wochentief 10.80 liegt UNTER allen bekannten Tagestiefs (11.02) - der fehlende Tag hatte ein tieferes Tief
+SAP.DE,XETRA,2026-11-17,,2026-11-17: Wochentief 200.90 liegt UNTER allen bekannten Tagestiefs (211.85) - der fehlende Tag hatte ein tieferes Tief
+SBUX,USA,,2026-11-17:stunden,
+SCCO,USA,2026-11-17,,2026-11-17: Wochentief 153.01 liegt UNTER allen bekannten Tagestiefs (153.21) - der fehlende Tag hatte ein tieferes Tief
+SCHW,USA,2026-11-17,,2026-11-17: Wochentief 90.14 liegt UNTER allen bekannten Tagestiefs (92.07) - der fehlende Tag hatte ein tieferes Tief
+SHEL,LSE,2026-11-17,,2026-11-17: Wochentief 36.64 liegt UNTER allen bekannten Tagestiefs (36.95) - der fehlende Tag hatte ein tieferes Tief
+SHL.DE,XETRA,2026-11-17,,2026-11-17: Wochentief 43.20 liegt UNTER allen bekannten Tagestiefs (43.92) - der fehlende Tag hatte ein tieferes Tief
+SHOP,USA,2026-11-17,,2026-11-17: Wochentief 141.06 liegt UNTER allen bekannten Tagestiefs (141.56) - der fehlende Tag hatte ein tieferes Tief
+SHW,USA,,2026-11-17:stunden,
+SIE.DE,XETRA,2026-11-17,,2026-11-17: Wochentief 269.55 liegt UNTER allen bekannten Tagestiefs (270.60) - der fehlende Tag hatte ein tieferes Tief
+SNDK,USA,2026-11-17,,2026-11-17: Wochentief 749.39 liegt UNTER allen bekannten Tagestiefs (799.00) - der fehlende Tag hatte ein tieferes Tief
+SNOW,USA,2026-11-17,,2026-11-17: Wochentief 263.84 liegt UNTER allen bekannten Tagestiefs (278.69) - der fehlende Tag hatte ein tieferes Tief
+SNPS,USA,,2026-11-17:stunden,
+SNY,Euronext,2026-11-17,,2026-11-17: Wochentief 86.16 liegt UNTER allen bekannten Tagestiefs (87.52) - der fehlende Tag hatte ein tieferes Tief
+SO,USA,2026-11-17,,2026-11-17: Wochentief 93.15 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+SPCX,USA,2026-11-17,,2026-11-17: Wochentief 135.00 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+SPG,USA,2026-11-17,,2026-11-17: Wochentief 230.12 liegt UNTER allen bekannten Tagestiefs (230.72) - der fehlende Tag hatte ein tieferes Tief
+SPGI,USA,,2026-11-17:stunden,
+SPOT,USA,2026-11-17,,2026-11-17: Wochentief 598.50 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+SRT3.DE,XETRA,2026-11-17,,2026-11-17: Wochentief 288.90 liegt UNTER allen bekannten Tagestiefs (289.70) - der fehlende Tag hatte ein tieferes Tief
+STX,USA,2026-11-17,,2026-11-17: Wochentief 483.10 liegt UNTER allen bekannten Tagestiefs (491.04) - der fehlende Tag hatte ein tieferes Tief
+SY1.DE,XETRA,2026-11-17,,2026-11-17: Wochentief 94.90 liegt UNTER allen bekannten Tagestiefs (95.32) - der fehlende Tag hatte ein tieferes Tief
+SYK,USA,2026-11-17,,2026-11-17: Wochentief 308.00 liegt UNTER allen bekannten Tagestiefs (309.24) - der fehlende Tag hatte ein tieferes Tief
+T,USA,2026-11-17,,2026-11-17: Wochentief 22.22 liegt UNTER allen bekannten Tagestiefs (22.25) - der fehlende Tag hatte ein tieferes Tief
+TD,USA,2026-11-17,,2026-11-17: Wochentief 119.06 liegt UNTER allen bekannten Tagestiefs (121.41) - der fehlende Tag hatte ein tieferes Tief
+TEAM,USA,,2026-11-17:stunden,
+TJX,USA,2026-11-17,,2026-11-17: Wochentief 129.39 liegt UNTER allen bekannten Tagestiefs (130.67) - der fehlende Tag hatte ein tieferes Tief
+TMO,USA,2026-11-17,,2026-11-17: Wochentief 683.62 liegt UNTER allen bekannten Tagestiefs (687.92) - der fehlende Tag hatte ein tieferes Tief
+TMUS,USA,,2026-11-17:stunden,
+TRV,USA,,2026-11-17:stunden,
+TSLA,USA,,2026-11-17:stunden,
+TSM,TWSE,2026-10-23,,2026-10-23: Wochentief 2385.00 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+TTD,USA,,2026-11-17:stunden,
+TTE,Euronext,2026-11-17,,2026-11-17: Wochentief 81.46 liegt UNTER allen bekannten Tagestiefs (81.91) - der fehlende Tag hatte ein tieferes Tief
+TTWO,USA,,2026-11-17:stunden,
+TXN,USA,,2026-11-17:stunden,
+UBER,USA,2026-11-17,,2026-11-17: Wochentief 67.06 liegt UNTER allen bekannten Tagestiefs (69.45) - der fehlende Tag hatte ein tieferes Tief
+UBS,SIX,2026-11-17,,2026-11-17: Wochentief 38.93 liegt UNTER allen bekannten Tagestiefs (40.27) - der fehlende Tag hatte ein tieferes Tief
+UL,LSE,2026-11-17,,2026-11-17: Wochentief 49.55 liegt UNTER allen bekannten Tagestiefs (50.02) - der fehlende Tag hatte ein tieferes Tief
+UNH,USA,,2026-11-17:stunden,
+UNP,USA,2026-11-17,,2026-11-17: Wochentief 296.07 liegt UNTER allen bekannten Tagestiefs (303.28) - der fehlende Tag hatte ein tieferes Tief
+UPS,USA,2026-11-17,,2026-11-17: Wochentief 109.84 liegt UNTER allen bekannten Tagestiefs (110.28) - der fehlende Tag hatte ein tieferes Tief
+USB,USA,2026-11-17,,2026-11-17: Wochentief 58.88 liegt UNTER allen bekannten Tagestiefs (60.10) - der fehlende Tag hatte ein tieferes Tief
+V,USA,,2026-11-17:stunden,
+VLO,USA,2026-11-17,,2026-11-17: Wochentief 360.63 liegt UNTER allen bekannten Tagestiefs (366.26) - der fehlende Tag hatte ein tieferes Tief
+VNA.DE,XETRA,2026-11-17,,2026-11-17: Wochentief 16.61 liegt UNTER allen bekannten Tagestiefs (16.74) - der fehlende Tag hatte ein tieferes Tief
+VOW3.DE,XETRA,2026-11-17,,2026-11-17: Wochentief 65.84 liegt UNTER allen bekannten Tagestiefs (67.04) - der fehlende Tag hatte ein tieferes Tief
+VRSK,USA,,2026-11-17:stunden,
+VRTX,USA,,2026-11-17:stunden,
+VZ,USA,,2026-11-17:stunden,
+WDAY,USA,,2026-11-17:stunden,
+WDC,USA,2026-11-17,,2026-11-17: Wochentief 271.83 liegt UNTER allen bekannten Tagestiefs (275.34) - der fehlende Tag hatte ein tieferes Tief
+WELL,USA,2026-11-17,,2026-11-17: Wochentief 241.51 liegt UNTER allen bekannten Tagestiefs (244.46) - der fehlende Tag hatte ein tieferes Tief
+WFC,USA,2026-11-17,,2026-11-17: Wochentief 82.42 liegt UNTER allen bekannten Tagestiefs (84.05) - der fehlende Tag hatte ein tieferes Tief
+WMT,USA,,2026-11-17:stunden,
+XEL,USA,,2026-11-17:stunden,
+XOM,USA,2026-11-17,,2026-11-17: Wochentief 166.23 liegt UNTER allen bekannten Tagestiefs (166.45) - der fehlende Tag hatte ein tieferes Tief
+ZAL.DE,XETRA,2026-11-17,,2026-11-17: Wochentief 27.55 liegt UNTER allen bekannten Tagestiefs (27.92) - der fehlende Tag hatte ein tieferes Tief
+ZS,USA,,2026-11-17:stunden,
+^GDAXI,USA,,2026-11-17:stunden,
 ^TNX,USA,,2026-10-12:stunden 2026-11-11:stunden,

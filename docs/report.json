@@ -1,39 +1,39 @@
 {
- "date": "2026-11-18",
+ "date": "2026-11-19",
  "ranks": {
   "turnaround": [
    "BTI",
    "TSLA",
    "AEP",
    "VRSK",
-   "UL",
-   "AZN",
    "TXN",
+   "SAP.DE",
    "VLO",
-   "TTE",
+   "UL",
    "ADSK",
-   "EOAN.DE",
    "CVX",
-   "SHOP",
+   "MRK.DE",
+   "MPC",
    "MA",
+   "TM",
    "V"
   ],
   "momentum": [
    "CCEP",
+   "KO",
    "REGN",
-   "HEN3.DE",
    "V",
-   "SRT3.DE",
+   "HEN3.DE",
+   "BRK-B",
    "MA",
    "ADP",
-   "KO",
-   "BRK-B",
    "ROP",
+   "FRE.DE",
    "MDT",
-   "DHL.DE",
-   "SY1.DE",
+   "ZAL.DE",
+   "SAP.DE",
    "UPS",
-   "VRSK"
+   "TTE"
   ],
   "value": [
    "PBR",
@@ -57,90 +57,84 @@
   "turnaround": {
    "entries": [
     {
-     "ticker": "BTI",
-     "rank": 1
-    },
-    {
-     "ticker": "UL",
-     "rank": 5
-    },
-    {
-     "ticker": "AZN",
+     "ticker": "SAP.DE",
      "rank": 6
     },
     {
-     "ticker": "TTE",
-     "rank": 9
+     "ticker": "MRK.DE",
+     "rank": 11
     },
     {
-     "ticker": "EOAN.DE",
-     "rank": 11
+     "ticker": "MPC",
+     "rank": 12
+    },
+    {
+     "ticker": "TM",
+     "rank": 14
     }
    ],
    "exits": [
     {
-     "ticker": "MPC",
-     "old_rank": 8
+     "ticker": "AZN",
+     "old_rank": 6
     },
+    {
+     "ticker": "TTE",
+     "old_rank": 9
+    },
+    {
+     "ticker": "EOAN.DE",
+     "old_rank": 11
+    },
+    {
+     "ticker": "SHOP",
+     "old_rank": 13
+    }
+   ],
+   "moves": []
+  },
+  "momentum": {
+   "entries": [
+    {
+     "ticker": "FRE.DE",
+     "rank": 10
+    },
+    {
+     "ticker": "ZAL.DE",
+     "rank": 12
+    },
+    {
+     "ticker": "SAP.DE",
+     "rank": 13
+    },
+    {
+     "ticker": "TTE",
+     "rank": 15
+    }
+   ],
+   "exits": [
     {
      "ticker": "SRT3.DE",
-     "old_rank": 10
+     "old_rank": 5
     },
     {
-     "ticker": "BEI.DE",
+     "ticker": "DHL.DE",
      "old_rank": 12
     },
     {
-     "ticker": "MRK.DE",
-     "old_rank": 14
+     "ticker": "SY1.DE",
+     "old_rank": 13
     },
     {
-     "ticker": "SY1.DE",
+     "ticker": "VRSK",
      "old_rank": 15
     }
    ],
    "moves": [
     {
-     "ticker": "CVX",
-     "rank": 12,
-     "delta": -5
-    }
-   ]
-  },
-  "momentum": {
-   "entries": [
-    {
-     "ticker": "BRK-B",
-     "rank": 9
-    },
-    {
-     "ticker": "DHL.DE",
-     "rank": 12
-    },
-    {
-     "ticker": "SY1.DE",
-     "rank": 13
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "DB1.DE",
-     "old_rank": 1
-    },
-    {
-     "ticker": "SAP.DE",
-     "old_rank": 6
-    },
-    {
-     "ticker": "ZAL.DE",
-     "old_rank": 13
-    }
-   ],
-   "moves": [
-    {
-     "ticker": "SRT3.DE",
-     "rank": 5,
-     "delta": 5
+     "ticker": "KO",
+     "rank": 2,
+     "delta": 6
     }
    ]
   },

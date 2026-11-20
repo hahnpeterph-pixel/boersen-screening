@@ -1,146 +1,263 @@
 {
- "date": "2026-11-19",
+ "date": "2026-11-20",
  "ranks": {
   "turnaround": [
    "BTI",
-   "TSLA",
-   "AEP",
-   "VRSK",
-   "TXN",
-   "SAP.DE",
-   "VLO",
+   "AZN",
+   "EXC",
    "UL",
-   "ADSK",
-   "CVX",
+   "SYK",
+   "ORLY",
+   "PGR",
+   "AEP",
+   "CCEP",
    "MRK.DE",
-   "MPC",
-   "MA",
-   "TM",
-   "V"
+   "TTE",
+   "UPS",
+   "ADSK",
+   "MUV2.DE",
+   "SY1.DE"
   ],
   "momentum": [
    "CCEP",
-   "KO",
-   "REGN",
-   "V",
-   "HEN3.DE",
-   "BRK-B",
-   "MA",
-   "ADP",
-   "ROP",
+   "WELL",
    "FRE.DE",
-   "MDT",
+   "DHL.DE",
+   "MUV2.DE",
+   "SRT3.DE",
+   "PGR",
+   "HNR1.DE",
+   "HEN3.DE",
+   "REGN",
+   "SY1.DE",
    "ZAL.DE",
-   "SAP.DE",
    "UPS",
+   "KDP",
    "TTE"
   ],
   "value": [
    "PBR",
-   "AVGO",
-   "MU",
-   "WDC",
    "PSX",
+   "AVGO",
+   "NXPI",
+   "MU",
+   "TTE",
+   "ABNB",
    "NEM",
    "RIO",
-   "ABNB",
-   "VLO",
    "META",
-   "BLK",
-   "REGN",
    "SCCO",
+   "REGN",
+   "BLK",
    "MNST",
-   "ENR.DE"
+   "V"
   ]
  },
  "changes": {
   "turnaround": {
    "entries": [
     {
-     "ticker": "SAP.DE",
+     "ticker": "AZN",
+     "rank": 2
+    },
+    {
+     "ticker": "EXC",
+     "rank": 3
+    },
+    {
+     "ticker": "SYK",
+     "rank": 5
+    },
+    {
+     "ticker": "ORLY",
      "rank": 6
     },
     {
-     "ticker": "MRK.DE",
+     "ticker": "PGR",
+     "rank": 7
+    },
+    {
+     "ticker": "CCEP",
+     "rank": 9
+    },
+    {
+     "ticker": "TTE",
      "rank": 11
     },
     {
-     "ticker": "MPC",
+     "ticker": "UPS",
      "rank": 12
     },
     {
-     "ticker": "TM",
+     "ticker": "MUV2.DE",
      "rank": 14
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "AZN",
-     "old_rank": 6
     },
     {
-     "ticker": "TTE",
-     "old_rank": 9
-    },
-    {
-     "ticker": "EOAN.DE",
-     "old_rank": 11
-    },
-    {
-     "ticker": "SHOP",
-     "old_rank": 13
-    }
-   ],
-   "moves": []
-  },
-  "momentum": {
-   "entries": [
-    {
-     "ticker": "FRE.DE",
-     "rank": 10
-    },
-    {
-     "ticker": "ZAL.DE",
-     "rank": 12
-    },
-    {
-     "ticker": "SAP.DE",
-     "rank": 13
-    },
-    {
-     "ticker": "TTE",
+     "ticker": "SY1.DE",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "SRT3.DE",
-     "old_rank": 5
-    },
-    {
-     "ticker": "DHL.DE",
-     "old_rank": 12
-    },
-    {
-     "ticker": "SY1.DE",
-     "old_rank": 13
+     "ticker": "TSLA",
+     "old_rank": 2
     },
     {
      "ticker": "VRSK",
+     "old_rank": 4
+    },
+    {
+     "ticker": "TXN",
+     "old_rank": 5
+    },
+    {
+     "ticker": "SAP.DE",
+     "old_rank": 6
+    },
+    {
+     "ticker": "VLO",
+     "old_rank": 7
+    },
+    {
+     "ticker": "CVX",
+     "old_rank": 10
+    },
+    {
+     "ticker": "MPC",
+     "old_rank": 12
+    },
+    {
+     "ticker": "MA",
+     "old_rank": 13
+    },
+    {
+     "ticker": "TM",
+     "old_rank": 14
+    },
+    {
+     "ticker": "V",
      "old_rank": 15
     }
    ],
    "moves": [
     {
+     "ticker": "AEP",
+     "rank": 8,
+     "delta": -5
+    }
+   ]
+  },
+  "momentum": {
+   "entries": [
+    {
+     "ticker": "WELL",
+     "rank": 2
+    },
+    {
+     "ticker": "DHL.DE",
+     "rank": 4
+    },
+    {
+     "ticker": "MUV2.DE",
+     "rank": 5
+    },
+    {
+     "ticker": "SRT3.DE",
+     "rank": 6
+    },
+    {
+     "ticker": "PGR",
+     "rank": 7
+    },
+    {
+     "ticker": "HNR1.DE",
+     "rank": 8
+    },
+    {
+     "ticker": "SY1.DE",
+     "rank": 11
+    },
+    {
+     "ticker": "KDP",
+     "rank": 14
+    }
+   ],
+   "exits": [
+    {
      "ticker": "KO",
-     "rank": 2,
-     "delta": 6
+     "old_rank": 2
+    },
+    {
+     "ticker": "V",
+     "old_rank": 4
+    },
+    {
+     "ticker": "BRK-B",
+     "old_rank": 6
+    },
+    {
+     "ticker": "MA",
+     "old_rank": 7
+    },
+    {
+     "ticker": "ADP",
+     "old_rank": 8
+    },
+    {
+     "ticker": "ROP",
+     "old_rank": 9
+    },
+    {
+     "ticker": "MDT",
+     "old_rank": 11
+    },
+    {
+     "ticker": "SAP.DE",
+     "old_rank": 13
+    }
+   ],
+   "moves": [
+    {
+     "ticker": "FRE.DE",
+     "rank": 3,
+     "delta": 7
+    },
+    {
+     "ticker": "REGN",
+     "rank": 10,
+     "delta": -7
     }
    ]
   },
   "value": {
-   "entries": [],
-   "exits": [],
+   "entries": [
+    {
+     "ticker": "NXPI",
+     "rank": 4
+    },
+    {
+     "ticker": "TTE",
+     "rank": 6
+    },
+    {
+     "ticker": "V",
+     "rank": 15
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "WDC",
+     "old_rank": 4
+    },
+    {
+     "ticker": "VLO",
+     "old_rank": 9
+    },
+    {
+     "ticker": "ENR.DE",
+     "old_rank": 15
+    }
+   ],
    "moves": []
   },
   "analyst_flips": []

@@ -1,11 +1,11 @@
 {
- "updated": "2026-11-18T03:44:35.161873+00:00",
+ "updated": "2026-11-20T03:11:13.642072+00:00",
  "version": 7,
  "data": {
   "AAPL": {
    "upgrades_30d": 1,
-   "downgrades_30d": 1,
-   "net_30d": 0,
+   "downgrades_30d": 0,
+   "net_30d": 1,
    "last_action": "up",
    "last_firm": "China Renaissance",
    "last_date": "2026-11-11",
@@ -55,7 +55,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 351.91,
+    "current": 349.21,
     "high": 425.0,
     "low": 250.0,
     "mean": 345.6313,
@@ -118,11 +118,11 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 292.82,
+    "current": 283.54,
     "high": 350.0,
     "low": 237.0,
-    "mean": 314.1154,
-    "median": 319.5
+    "mean": 315.8846,
+    "median": 321.0
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -181,7 +181,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 180.94,
+    "current": 172.79,
     "high": 245.0,
     "low": 147.0,
     "mean": 205.4405,
@@ -244,7 +244,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 104.71,
+    "current": 103.87,
     "high": 130.0,
     "low": 100.0,
     "mean": 118.90731,
@@ -286,7 +286,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 239.28,
+    "current": 218.58,
     "high": 300.0,
     "low": 163.0,
     "mean": 233.83708,
@@ -320,15 +320,15 @@
     }
    ],
    "consensus": {
-    "kaufen_pct": 16,
-    "halten_pct": 63,
-    "verkaufen_pct": 21,
-    "total": 19,
+    "kaufen_pct": 17,
+    "halten_pct": 67,
+    "verkaufen_pct": 17,
+    "total": 18,
     "unclassified": 0
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 235.55,
+    "current": 221.68,
     "high": 373.0,
     "low": 140.0,
     "mean": 266.9097,
@@ -342,18 +342,10 @@
    "upgrades_30d": 0,
    "downgrades_30d": 0,
    "net_30d": 0,
-   "last_action": "main",
-   "last_firm": "TD Cowen",
-   "last_date": "2026-10-19",
-   "actions": [
-    {
-     "date": "2026-10-19",
-     "firm": "TD Cowen",
-     "action": "main",
-     "to_grade": "Buy",
-     "from_grade": "Buy"
-    }
-   ],
+   "last_action": null,
+   "last_firm": null,
+   "last_date": null,
+   "actions": [],
    "consensus": {
     "kaufen_pct": 100,
     "halten_pct": 0,
@@ -363,11 +355,11 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 383.67,
+    "current": 377.44,
     "high": 675.0,
     "low": 365.0,
-    "mean": 473.42422,
-    "median": 470.0
+    "mean": 474.46875,
+    "median": 472.5
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -418,15 +410,15 @@
     }
    ],
    "consensus": {
-    "kaufen_pct": 22,
-    "halten_pct": 67,
-    "verkaufen_pct": 11,
-    "total": 9,
+    "kaufen_pct": 25,
+    "halten_pct": 62,
+    "verkaufen_pct": 12,
+    "total": 8,
     "unclassified": 0
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 308.29,
+    "current": 301.19,
     "high": 340.0,
     "low": 250.0,
     "mean": 298.26666,
@@ -453,7 +445,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 173.75,
+    "current": 172.2,
     "high": 245.0,
     "low": 156.0,
     "mean": 198.46667,
@@ -480,7 +472,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 255.22,
+    "current": 243.45,
     "high": 375.0,
     "low": 215.0,
     "mean": 309.60028,
@@ -491,9 +483,9 @@
    "merged_ziele": {}
   },
   "AEP": {
-   "upgrades_30d": 2,
+   "upgrades_30d": 1,
    "downgrades_30d": 0,
-   "net_30d": 2,
+   "net_30d": 1,
    "last_action": "main",
    "last_firm": "Barclays",
    "last_date": "2026-11-02",
@@ -543,7 +535,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 125.97,
+    "current": 124.97,
     "high": 154.0,
     "low": 126.0,
     "mean": 141.61365,
@@ -571,7 +563,7 @@
    },
    "quelle": "keine",
    "price_targets": {
-    "current": 201.05
+    "current": 198.22
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -594,11 +586,11 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 466.5,
+    "current": 457.5,
     "high": 684.0,
     "low": 365.0,
-    "mean": 453.72015,
-    "median": 443.3
+    "mean": 455.48486,
+    "median": 446.19
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -636,10 +628,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 349.23,
+    "current": 338.93,
     "high": 900.0,
     "low": 358.0,
-    "mean": 561.8889,
+    "mean": 557.8611,
     "median": 565.0
    },
    "konsens_firmen": [],
@@ -699,7 +691,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 503.41,
+    "current": 489.19,
     "high": 1250.0,
     "low": 525.0,
     "mean": 657.74286,
@@ -762,10 +754,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 457.93,
-    "high": 536.0,
+    "current": 438.82,
+    "high": 542.0,
     "low": 230.0,
-    "mean": 432.84033,
+    "mean": 435.7714,
     "median": 440.0
    },
    "konsens_firmen": [],
@@ -825,10 +817,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 183.18,
+    "current": 181.15,
     "high": 260.0,
     "low": 188.0,
-    "mean": 216.08333,
+    "mean": 216.125,
     "median": 212.5
    },
    "konsens_firmen": [],
@@ -888,7 +880,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 257.89,
+    "current": 257.37,
     "high": 405.0,
     "low": 230.0,
     "mean": 326.09033,
@@ -951,7 +943,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 186.42,
+    "current": 189.59,
     "high": 305.0,
     "low": 201.73,
     "mean": 249.64662,
@@ -1014,7 +1006,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 76.36,
+    "current": 75.61,
     "high": 130.0,
     "low": 85.0,
     "mean": 106.97368,
@@ -1077,7 +1069,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 398.94,
+    "current": 379.02,
     "high": 600.0,
     "low": 347.0,
     "mean": 455.61368,
@@ -1132,15 +1124,15 @@
     }
    ],
    "consensus": {
-    "kaufen_pct": 92,
-    "halten_pct": 8,
+    "kaufen_pct": 91,
+    "halten_pct": 9,
     "verkaufen_pct": 0,
-    "total": 12,
+    "total": 11,
     "unclassified": 0
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 183.39,
+    "current": 177.17,
     "high": 500.0,
     "low": 125.0,
     "mean": 272.43,
@@ -1167,18 +1159,18 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 1243.4,
-    "high": 2511.7171,
-    "low": 764.6146,
-    "mean": 1895.5946,
-    "median": 2030.166
+    "current": 1292.0,
+    "high": 2657.295,
+    "low": 808.9313,
+    "mean": 2007.9679,
+    "median": 2147.8337
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 0.898989,
-    "tag": "2026-11-17",
+    "faktor": 0.952662,
+    "tag": "2026-11-19",
     "quelle": "ASML.AS",
     "waehrung": "EUR"
    }
@@ -1222,11 +1214,11 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 341.6,
+    "current": 346.65,
     "high": 660.0,
     "low": 398.4699,
-    "mean": 528.17426,
-    "median": 530.0
+    "mean": 526.4721,
+    "median": 525.0
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -1285,7 +1277,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 298.59,
+    "current": 306.98,
     "high": 700.0,
     "low": 380.0,
     "mean": 541.3158,
@@ -1341,7 +1333,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 315.78,
+    "current": 311.11,
     "high": 425.0,
     "low": 329.0,
     "mean": 364.78708,
@@ -1368,18 +1360,18 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 137.68,
-    "high": 181.2871,
-    "low": 119.3473,
-    "mean": 157.1721,
-    "median": 158.6262
+    "current": 133.0,
+    "high": 181.9737,
+    "low": 119.7993,
+    "mean": 159.1574,
+    "median": 165.6719
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 0.755363,
-    "tag": "2026-11-17",
+    "faktor": 0.758224,
+    "tag": "2026-11-19",
     "quelle": "AZN.L",
     "waehrung": "GBP"
    }
@@ -1437,7 +1429,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 163.91,
+    "current": 160.51,
     "high": 305.0,
     "low": 157.0,
     "mean": 233.34615,
@@ -1464,18 +1456,18 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 85.45,
-    "high": 219.022,
-    "low": 94.4996,
-    "mean": 182.0239,
-    "median": 186.142
+    "current": 84.1789,
+    "high": 224.2394,
+    "low": 96.7507,
+    "mean": 186.3624,
+    "median": 190.5761
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 0.986151,
-    "tag": "2026-11-17",
+    "faktor": 1.01043,
+    "tag": "2026-11-18",
     "quelle": "9988.HK",
     "waehrung": "HKD"
    }
@@ -1512,7 +1504,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 49.44,
+    "current": 48.57,
     "high": 71.0,
     "low": 56.0,
     "mean": 62.47727,
@@ -1539,7 +1531,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 52.24,
+    "current": 50.68,
     "high": 61.0,
     "low": 42.0,
     "mean": 53.36111,
@@ -1566,11 +1558,11 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 56.14,
+    "current": 54.68,
     "high": 70.0,
     "low": 48.5,
-    "mean": 60.11111,
-    "median": 60.5
+    "mean": 60.58333,
+    "median": 61.5
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -1593,18 +1585,18 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 23.21,
-    "high": 27.2738,
-    "low": 23.2736,
-    "mean": 25.4828,
-    "median": 25.901
+    "current": 22.63,
+    "high": 27.7896,
+    "low": 23.7138,
+    "mean": 25.9648,
+    "median": 26.3909
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 0.909126,
-    "tag": "2026-11-17",
+    "faktor": 0.92632,
+    "tag": "2026-11-19",
     "quelle": "BBVA.MC",
     "waehrung": "EUR"
    }
@@ -1626,7 +1618,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 82.56,
+    "current": 79.02,
     "high": 95.0,
     "low": 68.0,
     "mean": 81.85714,
@@ -1653,18 +1645,18 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 54.38,
-    "high": 70.6425,
-    "low": 49.3026,
-    "mean": 58.3957,
-    "median": 56.6612
+    "current": 52.34,
+    "high": 73.2989,
+    "low": 51.1565,
+    "mean": 60.5916,
+    "median": 58.7918
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 0.735859,
-    "tag": "2026-11-17",
+    "faktor": 0.76353,
+    "tag": "2026-11-19",
     "quelle": "BHP.AX",
     "waehrung": "AUD"
    }
@@ -1722,7 +1714,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 250.79,
+    "current": 247.13,
     "high": 350.0,
     "low": 175.0,
     "mean": 268.2603,
@@ -1785,7 +1777,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 154.46,
+    "current": 147.32,
     "high": 267.0,
     "low": 150.0,
     "mean": 215.5294,
@@ -1848,20 +1840,20 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 47.46,
+    "current": 46.67,
     "high": 85.0,
     "low": 51.0,
-    "mean": 70.0,
-    "median": 70.5
+    "mean": 69.75,
+    "median": 70.0
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {}
   },
   "BLK": {
-   "upgrades_30d": 1,
+   "upgrades_30d": 0,
    "downgrades_30d": 0,
-   "net_30d": 1,
+   "net_30d": 0,
    "last_action": "main",
    "last_firm": "Evercore ISI Group",
    "last_date": "2026-11-06",
@@ -1869,20 +1861,6 @@
     {
      "date": "2026-11-06",
      "firm": "Evercore ISI Group",
-     "action": "main",
-     "to_grade": "Outperform",
-     "from_grade": "Outperform"
-    },
-    {
-     "date": "2026-10-20",
-     "firm": "TD Cowen",
-     "action": "up",
-     "to_grade": "Buy",
-     "from_grade": "Hold"
-    },
-    {
-     "date": "2026-10-19",
-     "firm": "BMO Capital",
      "action": "main",
      "to_grade": "Outperform",
      "from_grade": "Outperform"
@@ -1897,7 +1875,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 1180.67,
+    "current": 1135.81,
     "high": 1531.0,
     "low": 1250.0,
     "mean": 1366.0,
@@ -1924,11 +1902,11 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 166.3,
-    "high": 180.97945,
-    "low": 143.3919,
-    "mean": 164.9066,
-    "median": 170.34848
+    "current": 160.84,
+    "high": 180.62471,
+    "low": 143.11084,
+    "mean": 164.58337,
+    "median": 170.01457
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -1951,7 +1929,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 56.1,
+    "current": 54.34,
     "high": 82.5,
     "low": 52.0,
     "mean": 67.03684,
@@ -1993,7 +1971,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 61.35,
+    "current": 58.34,
     "high": 80.0,
     "low": 40.0,
     "mean": 65.25,
@@ -2020,10 +1998,10 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 57.92,
+    "current": 57.58,
     "high": 76.0,
     "low": 48.0,
-    "mean": 59.2,
+    "mean": 59.53333,
     "median": 58.0
    },
    "konsens_firmen": [],
@@ -2047,11 +2025,11 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 89.13,
-    "high": 98.48477,
-    "low": 75.57188,
-    "mean": 90.10141,
-    "median": 96.24758
+    "current": 85.96,
+    "high": 98.313675,
+    "low": 75.44058,
+    "mean": 89.94488,
+    "median": 96.080376
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -2071,25 +2049,18 @@
      "action": "main",
      "to_grade": "Overweight",
      "from_grade": "Overweight"
-    },
-    {
-     "date": "2026-10-19",
-     "firm": "Citigroup",
-     "action": "main",
-     "to_grade": "Neutral",
-     "from_grade": "Neutral"
     }
    ],
    "consensus": {
-    "kaufen_pct": 60,
-    "halten_pct": 40,
+    "kaufen_pct": 50,
+    "halten_pct": 50,
     "verkaufen_pct": 0,
-    "total": 5,
+    "total": 4,
     "unclassified": 0
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 149.79,
+    "current": 144.83,
     "high": 182.0,
     "low": 135.0,
     "mean": 163.7,
@@ -2120,13 +2091,6 @@
      "action": "main",
      "to_grade": "Overweight",
      "from_grade": "Overweight"
-    },
-    {
-     "date": "2026-10-20",
-     "firm": "TD Cowen",
-     "action": "main",
-     "to_grade": "Hold",
-     "from_grade": "Hold"
     }
    ],
    "consensus": {
@@ -2138,18 +2102,18 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 5.684,
-    "high": 9.6318,
-    "low": 5.4495,
-    "mean": 7.0834,
-    "median": 6.9703
+    "current": 5.513,
+    "high": 9.6966,
+    "low": 5.4862,
+    "mean": 7.1311,
+    "median": 7.0172
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 0.126734,
-    "tag": "2026-11-17",
+    "faktor": 0.127586,
+    "tag": "2026-11-19",
     "quelle": "BP.L",
     "waehrung": "GBP"
    }
@@ -2179,7 +2143,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 586.76,
+    "current": 572.04,
     "high": 628.0,
     "low": 510.0,
     "mean": 564.6667,
@@ -2206,18 +2170,18 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 45.44,
-    "high": 57.6065,
-    "low": 48.3895,
-    "mean": 54.0477,
-    "median": 54.9182
+    "current": 43.6,
+    "high": 56.8993,
+    "low": 47.7954,
+    "mean": 53.3841,
+    "median": 54.244
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 0.768087,
-    "tag": "2026-11-17",
+    "faktor": 0.758657,
+    "tag": "2026-11-19",
     "quelle": "BATS.L",
     "waehrung": "GBP"
    }
@@ -2247,7 +2211,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 119.94,
+    "current": 115.28,
     "high": 170.0,
     "low": 127.0,
     "mean": 150.59525,
@@ -2310,7 +2274,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 570.79,
+    "current": 537.37,
     "high": 1027.0,
     "low": 575.0,
     "mean": 807.2604,
@@ -2369,11 +2333,11 @@
     "halten_pct": 75,
     "verkaufen_pct": 0,
     "total": 8,
-    "unclassified": 1
+    "unclassified": 0
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 375.64,
+    "current": 370.11,
     "high": 425.0,
     "low": 314.0,
     "mean": 374.08698,
@@ -2400,7 +2364,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 39.06,
+    "current": 37.27,
     "high": 47.0,
     "low": 39.0,
     "mean": 42.50833,
@@ -2456,11 +2420,11 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 118.42,
-    "high": 126.70294,
-    "low": 90.12863,
-    "mean": 112.94461,
-    "median": 117.2213
+    "current": 116.26,
+    "high": 129.52914,
+    "low": 89.98025,
+    "mean": 113.42013,
+    "median": 117.02831
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -2519,7 +2483,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 306.97,
+    "current": 304.88,
     "high": 470.0,
     "low": 300.0,
     "mean": 411.7604,
@@ -2568,7 +2532,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 163.07,
+    "current": 167.61,
     "high": 204.0,
     "low": 164.0,
     "mean": 185.88889,
@@ -2631,10 +2595,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 268.07,
+    "current": 252.03,
     "high": 399.0,
     "low": 240.0,
-    "mean": 338.94086,
+    "mean": 339.0713,
     "median": 346.0
    },
    "konsens_firmen": [],
@@ -2694,7 +2658,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 138.5,
+    "current": 133.18,
     "high": 345.0,
     "low": 68.0,
     "mean": 157.22221,
@@ -2757,7 +2721,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 99.61,
+    "current": 96.88,
     "high": 112.0,
     "low": 88.0,
     "mean": 101.7,
@@ -2784,11 +2748,11 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 111.89,
-    "high": 125.94872,
-    "low": 102.052605,
-    "mean": 117.97683,
-    "median": 125.92915
+    "current": 106.03,
+    "high": 125.70625,
+    "low": 101.85614,
+    "mean": 117.74971,
+    "median": 125.68672
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -2829,13 +2793,6 @@
      "action": "main",
      "to_grade": "Buy",
      "from_grade": "Buy"
-    },
-    {
-     "date": "2026-10-19",
-     "firm": "Rosenblatt",
-     "action": "main",
-     "to_grade": "Buy",
-     "from_grade": "Buy"
     }
    ],
    "consensus": {
@@ -2847,7 +2804,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 25.31,
+    "current": 24.86,
     "high": 42.0,
     "low": 17.0,
     "mean": 27.97727,
@@ -2874,11 +2831,11 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 47.74,
-    "high": 57.872887,
-    "low": 43.33058,
-    "mean": 48.861523,
-    "median": 48.222744
+    "current": 44.7,
+    "high": 57.759453,
+    "low": 43.245655,
+    "mean": 48.925133,
+    "median": 47.34771
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -2937,7 +2894,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 186.78,
+    "current": 181.76,
     "high": 290.0,
     "low": 225.0,
     "mean": 254.4762,
@@ -2964,7 +2921,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 71.0,
+    "current": 71.16,
     "high": 90.0,
     "low": 74.0,
     "mean": 80.66667,
@@ -3009,13 +2966,6 @@
      "action": "main",
      "to_grade": "Overweight",
      "from_grade": "Overweight"
-    },
-    {
-     "date": "2026-10-20",
-     "firm": "Susquehanna",
-     "action": "main",
-     "to_grade": "Positive",
-     "from_grade": "Positive"
     }
    ],
    "consensus": {
@@ -3027,10 +2977,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 139.48,
+    "current": 134.99,
     "high": 185.0,
     "low": 122.0,
-    "mean": 152.96297,
+    "mean": 153.0,
     "median": 152.0
    },
    "konsens_firmen": [],
@@ -3076,7 +3026,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 1110.08,
+    "current": 1093.83,
     "high": 1315.0,
     "low": 770.0,
     "mean": 1085.3513,
@@ -3103,7 +3053,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 31.45,
+    "current": 30.86,
     "high": 55.0,
     "low": 25.0,
     "mean": 39.0,
@@ -3145,10 +3095,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 194.52,
+    "current": 183.31,
     "high": 475.0,
     "low": 165.0,
-    "mean": 287.0836,
+    "mean": 286.1402,
     "median": 285.0
    },
    "konsens_firmen": [],
@@ -3194,11 +3144,11 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 219.58,
+    "current": 243.46,
     "high": 325.0,
     "low": 132.0,
-    "mean": 250.6834,
-    "median": 250.0
+    "mean": 251.2834,
+    "median": 252.0
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -3229,7 +3179,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 95.11,
+    "current": 94.7,
     "high": 160.0,
     "low": 109.0,
     "mean": 130.5,
@@ -3285,7 +3235,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 30.59,
+    "current": 28.7,
     "high": 50.0,
     "low": 26.0,
     "mean": 35.85,
@@ -3348,7 +3298,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 51.14,
+    "current": 49.98,
     "high": 60.0,
     "low": 32.0,
     "mean": 53.80739,
@@ -3375,7 +3325,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 222.2,
+    "current": 218.92,
     "high": 250.0,
     "low": 181.0,
     "mean": 218.4375,
@@ -3438,7 +3388,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 60.0,
+    "current": 56.31,
     "high": 84.0,
     "low": 47.0,
     "mean": 69.424,
@@ -3494,7 +3444,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 85.81,
+    "current": 80.04,
     "high": 146.0,
     "low": 86.0,
     "mean": 109.30615,
@@ -3557,7 +3507,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 216.13,
+    "current": 206.5,
     "high": 272.0,
     "low": 202.0,
     "mean": 242.54167,
@@ -3620,7 +3570,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 164.91,
+    "current": 157.13,
     "high": 340.0,
     "low": 200.0,
     "mean": 250.39105,
@@ -3639,18 +3589,18 @@
    "last_date": null,
    "actions": [],
    "consensus": {
-    "kaufen_pct": 50,
-    "halten_pct": 50,
+    "kaufen_pct": 43,
+    "halten_pct": 57,
     "verkaufen_pct": 0,
     "total": 14,
     "unclassified": 0
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 324.2,
-    "high": 347.0,
+    "current": 320.8,
+    "high": 378.0,
     "low": 252.0,
-    "mean": 312.14285,
+    "mean": 315.64285,
     "median": 320.0
    },
    "konsens_firmen": [],
@@ -3667,17 +3617,17 @@
    "actions": [],
    "consensus": {
     "kaufen_pct": 50,
-    "halten_pct": 44,
-    "verkaufen_pct": 6,
+    "halten_pct": 50,
+    "verkaufen_pct": 0,
     "total": 18,
     "unclassified": 0
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 30.94,
+    "current": 30.1,
     "high": 47.75,
     "low": 10.9,
-    "mean": 35.24594,
+    "mean": 35.18767,
     "median": 35.5
    },
    "konsens_firmen": [],
@@ -3685,9 +3635,9 @@
    "merged_ziele": {}
   },
   "DDOG": {
-   "upgrades_30d": 1,
+   "upgrades_30d": 0,
    "downgrades_30d": 0,
-   "net_30d": 1,
+   "net_30d": 0,
    "last_action": "main",
    "last_firm": "Citigroup",
    "last_date": "2026-11-05",
@@ -3729,15 +3679,15 @@
     }
    ],
    "consensus": {
-    "kaufen_pct": 96,
-    "halten_pct": 4,
+    "kaufen_pct": 100,
+    "halten_pct": 0,
     "verkaufen_pct": 0,
-    "total": 23,
+    "total": 21,
     "unclassified": 1
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 165.18,
+    "current": 166.46,
     "high": 330.0,
     "low": 171.0,
     "mean": 269.65457,
@@ -3764,7 +3714,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 649.23,
+    "current": 624.89,
     "high": 813.18,
     "low": 500.0,
     "mean": 694.0078,
@@ -3791,7 +3741,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 322.79,
+    "current": 312.54,
     "high": 700.0,
     "low": 403.0,
     "mean": 583.68,
@@ -3818,10 +3768,10 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 60.2,
+    "current": 58.98,
     "high": 70.0,
     "low": 45.0,
-    "mean": 58.95204,
+    "mean": 58.96783,
     "median": 61.0
    },
    "konsens_firmen": [],
@@ -3873,15 +3823,15 @@
     }
    ],
    "consensus": {
-    "kaufen_pct": 90,
-    "halten_pct": 10,
+    "kaufen_pct": 100,
+    "halten_pct": 0,
     "verkaufen_pct": 0,
-    "total": 10,
+    "total": 9,
     "unclassified": 0
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 225.77,
+    "current": 227.56,
     "high": 310.0,
     "low": 220.0,
     "mean": 259.90475,
@@ -3908,11 +3858,11 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 116.94,
+    "current": 120.25,
     "high": 144.0,
     "low": 86.0,
-    "mean": 127.5371,
-    "median": 130.0
+    "mean": 131.34355,
+    "median": 135.0
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -3935,10 +3885,10 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 27.12,
+    "current": 26.04,
     "high": 43.0,
     "low": 28.1,
-    "mean": 35.92222,
+    "mean": 35.81111,
     "median": 35.6
    },
    "konsens_firmen": [],
@@ -3962,7 +3912,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 42.01,
+    "current": 41.2,
     "high": 63.0,
     "low": 33.0,
     "mean": 49.53333,
@@ -4004,10 +3954,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 129.84,
+    "current": 128.86,
     "high": 145.0,
     "low": 121.0,
-    "mean": 132.86842,
+    "mean": 133.39474,
     "median": 131.0
    },
    "konsens_firmen": [],
@@ -4067,7 +4017,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 82.04,
+    "current": 80.19,
     "high": 120.0,
     "low": 79.0,
     "mean": 98.57692,
@@ -4130,7 +4080,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 159.15,
+    "current": 157.6,
     "high": 209.0,
     "low": 113.0,
     "mean": 182.99963,
@@ -4157,11 +4107,11 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 47.15,
-    "high": 58.697323,
-    "low": 44.590122,
-    "mean": 50.683346,
-    "median": 49.80013
+    "current": 45.92,
+    "high": 58.599033,
+    "low": 44.515453,
+    "mean": 50.598473,
+    "median": 49.716736
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -4184,7 +4134,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 125.0,
+    "current": 126.7,
     "high": 260.0,
     "low": 100.0,
     "mean": 191.53178,
@@ -4211,10 +4161,10 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 18.93,
+    "current": 18.515,
     "high": 22.7,
     "low": 18.5,
-    "mean": 20.85711,
+    "mean": 20.95711,
     "median": 21.014
    },
    "konsens_firmen": [],
@@ -4274,7 +4224,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 1034.83,
+    "current": 1018.05,
     "high": 1380.0,
     "low": 1100.0,
     "mean": 1234.875,
@@ -4301,18 +4251,18 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 399.3,
-    "high": 491.4165,
-    "low": 356.5179,
-    "mean": 401.6676,
-    "median": 395.0603
+    "current": 389.4,
+    "high": 500.3628,
+    "low": 363.0083,
+    "mean": 408.98,
+    "median": 402.2525
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 9.635618,
-    "tag": "2026-11-17",
+    "faktor": 9.811036,
+    "tag": "2026-11-19",
     "quelle": "EQNR.OL",
     "waehrung": "NOK"
    }
@@ -4356,10 +4306,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 337.11,
+    "current": 330.57,
     "high": 539.0,
     "low": 333.0,
-    "mean": 468.74075,
+    "mean": 469.0,
     "median": 485.0
    },
    "konsens_firmen": [],
@@ -4387,20 +4337,6 @@
      "action": "main",
      "to_grade": "Equal-Weight",
      "from_grade": "Equal-Weight"
-    },
-    {
-     "date": "2026-10-19",
-     "firm": "JP Morgan",
-     "action": "main",
-     "to_grade": "Neutral",
-     "from_grade": "Neutral"
-    },
-    {
-     "date": "2026-10-19",
-     "firm": "Barclays",
-     "action": "main",
-     "to_grade": "Equal-Weight",
-     "from_grade": "Equal-Weight"
     }
    ],
    "consensus": {
@@ -4412,7 +4348,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 45.86,
+    "current": 45.42,
     "high": 58.0,
     "low": 44.0,
     "mean": 47.94118,
@@ -4467,15 +4403,15 @@
     }
    ],
    "consensus": {
-    "kaufen_pct": 75,
-    "halten_pct": 25,
+    "kaufen_pct": 73,
+    "halten_pct": 27,
     "verkaufen_pct": 0,
-    "total": 12,
+    "total": 11,
     "unclassified": 0
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 177.07,
+    "current": 176.77,
     "high": 266.0,
     "low": 192.0,
     "mean": 238.51724,
@@ -4510,7 +4446,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 54.35,
+    "current": 52.68,
     "high": 61.0,
     "low": 39.9,
     "mean": 51.14615,
@@ -4559,7 +4495,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 319.94,
+    "current": 314.64,
     "high": 479.0,
     "low": 160.0,
     "mean": 356.80768,
@@ -4578,15 +4514,15 @@
    "last_date": null,
    "actions": [],
    "consensus": {
-    "kaufen_pct": 93,
-    "halten_pct": 7,
+    "kaufen_pct": 86,
+    "halten_pct": 14,
     "verkaufen_pct": 0,
     "total": 14,
     "unclassified": 0
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 53.75,
+    "current": 51.78,
     "high": 65.0,
     "low": 52.0,
     "mean": 58.19286,
@@ -4649,7 +4585,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 124.5,
+    "current": 131.46,
     "high": 190.0,
     "low": 110.0,
     "mean": 144.68297,
@@ -4705,7 +4641,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 355.63,
+    "current": 347.34,
     "high": 480.0,
     "low": 320.0,
     "mean": 419.29428,
@@ -4768,7 +4704,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 326.4,
+    "current": 318.88,
     "high": 431.0,
     "low": 280.0,
     "mean": 378.42856,
@@ -4831,11 +4767,11 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 81.84,
+    "current": 81.89,
     "high": 100.0,
     "low": 75.0,
-    "mean": 87.85,
-    "median": 88.5
+    "mean": 88.25,
+    "median": 89.5
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -4894,10 +4830,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 779.91,
+    "current": 756.28,
     "high": 1400.0,
-    "low": 940.0,
-    "mean": 1176.0137,
+    "low": 797.0,
+    "mean": 1167.1349,
     "median": 1200.0
    },
    "konsens_firmen": [],
@@ -4957,7 +4893,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 39.6,
+    "current": 38.94,
     "high": 140.0,
     "low": 43.0,
     "mean": 64.77273,
@@ -5012,15 +4948,15 @@
     }
    ],
    "consensus": {
-    "kaufen_pct": 80,
-    "halten_pct": 20,
+    "kaufen_pct": 86,
+    "halten_pct": 14,
     "verkaufen_pct": 0,
-    "total": 15,
+    "total": 14,
     "unclassified": 0
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 170.26,
+    "current": 166.53,
     "high": 200.0,
     "low": 131.0,
     "mean": 175.92308,
@@ -5083,7 +5019,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 108.49,
+    "current": 105.97,
     "high": 220.0,
     "low": 120.0,
     "mean": 171.88889,
@@ -5138,15 +5074,15 @@
     }
    ],
    "consensus": {
-    "kaufen_pct": 90,
+    "kaufen_pct": 100,
     "halten_pct": 0,
-    "verkaufen_pct": 10,
-    "total": 10,
+    "verkaufen_pct": 0,
+    "total": 9,
     "unclassified": 0
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 84.05,
+    "current": 81.75,
     "high": 132.0,
     "low": 75.0,
     "mean": 101.17391,
@@ -5195,7 +5131,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 277.6,
+    "current": 271.02,
     "high": 460.0,
     "low": 320.0,
     "mean": 389.0,
@@ -5258,10 +5194,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 280.2,
+    "current": 272.66,
     "high": 500.0,
     "low": 300.0,
-    "mean": 400.37357,
+    "mean": 400.14716,
     "median": 400.0
    },
    "konsens_firmen": [],
@@ -5289,13 +5225,6 @@
      "action": "up",
      "to_grade": "Buy",
      "from_grade": "Hold"
-    },
-    {
-     "date": "2026-10-19",
-     "firm": "BMO Capital",
-     "action": "main",
-     "to_grade": "Market Perform",
-     "from_grade": "Market Perform"
     }
    ],
    "consensus": {
@@ -5307,7 +5236,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 877.52,
+    "current": 847.53,
     "high": 1250.0,
     "low": 730.0,
     "mean": 1030.6666,
@@ -5342,18 +5271,18 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 18.71,
-    "high": 26.5983,
-    "low": 18.6188,
-    "mean": 22.4658,
-    "median": 22.0386
+    "current": 18.26,
+    "high": 26.7294,
+    "low": 18.7106,
+    "mean": 22.5766,
+    "median": 22.1472
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 0.379976,
-    "tag": "2026-11-17",
+    "faktor": 0.381849,
+    "tag": "2026-11-19",
     "quelle": "GSK.L",
     "waehrung": "GBP"
    }
@@ -5397,10 +5326,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 339.01,
+    "current": 336.68,
     "high": 425.0,
     "low": 310.0,
-    "mean": 377.78125,
+    "mean": 376.53125,
     "median": 385.0
    },
    "konsens_firmen": [],
@@ -5424,18 +5353,18 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 814.95,
-    "high": 1024.1184,
-    "low": 813.088,
-    "mean": 940.3269,
-    "median": 962.0507
+    "current": 821.8,
+    "high": 1033.5137,
+    "low": 820.5473,
+    "mean": 948.9535,
+    "median": 970.8765
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 31.033892,
-    "tag": "2026-11-17",
+    "faktor": 31.318597,
+    "tag": "2026-11-19",
     "quelle": "HDFCBANK.NS",
     "waehrung": "INR"
    }
@@ -5457,7 +5386,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 177.45,
+    "current": 174.85,
     "high": 282.0,
     "low": 140.0,
     "mean": 207.05556,
@@ -5476,19 +5405,19 @@
    "last_date": null,
    "actions": [],
    "consensus": {
-    "kaufen_pct": 32,
-    "halten_pct": 53,
+    "kaufen_pct": 26,
+    "halten_pct": 58,
     "verkaufen_pct": 16,
     "total": 19,
     "unclassified": 0
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 88.3,
+    "current": 85.92,
     "high": 105.0,
     "low": 65.0,
-    "mean": 81.75333,
-    "median": 82.0
+    "mean": 82.47556,
+    "median": 83.5
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -5511,7 +5440,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 296.0,
+    "current": 288.8,
     "high": 340.0,
     "low": 260.0,
     "mean": 286.8,
@@ -5567,7 +5496,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 218.96,
+    "current": 217.84,
     "high": 290.0,
     "low": 186.0,
     "mean": 253.86957,
@@ -5609,7 +5538,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 160.64,
+    "current": 155.84,
     "high": 261.0,
     "low": 170.0,
     "mean": 193.26666,
@@ -5636,18 +5565,18 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 13.208,
-    "high": 16.9564,
-    "low": 13.6196,
-    "mean": 15.5894,
-    "median": 16.1922
+    "current": 12.833,
+    "high": 17.2518,
+    "low": 13.8569,
+    "mean": 15.861,
+    "median": 16.4743
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 0.151329,
-    "tag": "2026-11-17",
+    "faktor": 0.153965,
+    "tag": "2026-11-19",
     "quelle": "HSBA.L",
     "waehrung": "GBP"
    }
@@ -5705,7 +5634,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 231.09,
+    "current": 223.88,
     "high": 300.0,
     "low": 174.0,
     "mean": 259.84738,
@@ -5732,18 +5661,18 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 1598.7,
-    "high": 1837.5862,
-    "low": 1653.8276,
-    "mean": 1734.222,
-    "median": 1722.7371
+    "current": 1608.9,
+    "high": 1844.0114,
+    "low": 1659.6103,
+    "mean": 1740.2858,
+    "median": 1728.7607
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 45.939655,
-    "tag": "2026-11-17",
+    "faktor": 46.100285,
+    "tag": "2026-11-19",
     "quelle": "ICICIBANK.NS",
     "waehrung": "INR"
    }
@@ -5787,7 +5716,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 690.24,
+    "current": 689.65,
     "high": 810.0,
     "low": 470.0,
     "mean": 717.1667,
@@ -5814,7 +5743,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 48.685,
+    "current": 49.345,
     "high": 124.0,
     "low": 50.0,
     "mean": 80.79167,
@@ -5852,13 +5781,6 @@
      "action": "main",
      "to_grade": "Outperform",
      "from_grade": "Outperform"
-    },
-    {
-     "date": "2026-10-19",
-     "firm": "Canaccord Genuity",
-     "action": "main",
-     "to_grade": "Hold",
-     "from_grade": "Hold"
     }
    ],
    "consensus": {
@@ -5870,7 +5792,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 202.61,
+    "current": 200.655,
     "high": 365.0,
     "low": 165.0,
     "mean": 261.45,
@@ -5897,26 +5819,26 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 29.335,
-    "high": 39.0528,
-    "low": 29.0625,
-    "mean": 33.3008,
-    "median": 31.7872
+    "current": 28.235,
+    "high": 39.5861,
+    "low": 29.4594,
+    "mean": 33.7556,
+    "median": 32.2212
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 0.908204,
-    "tag": "2026-11-17",
+    "faktor": 0.920606,
+    "tag": "2026-11-19",
     "quelle": "INGA.AS",
     "waehrung": "EUR"
    }
   },
   "INTC": {
-   "upgrades_30d": 3,
+   "upgrades_30d": 2,
    "downgrades_30d": 4,
-   "net_30d": -1,
+   "net_30d": -2,
    "last_action": "main",
    "last_firm": "B of A Securities",
    "last_date": "2026-11-12",
@@ -5966,7 +5888,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 55.17,
+    "current": 55.72,
     "high": 160.0,
     "low": 63.0,
     "mean": 90.65116,
@@ -6001,10 +5923,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 320.79,
+    "current": 310.02,
     "high": 732.0,
     "low": 290.0,
-    "mean": 407.8884,
+    "mean": 408.85614,
     "median": 400.0
    },
    "konsens_firmen": [],
@@ -6064,10 +5986,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 430.53,
+    "current": 407.24,
     "high": 685.0,
     "low": 324.0,
-    "mean": 486.56668,
+    "mean": 488.53333,
     "median": 500.0
    },
    "konsens_firmen": [],
@@ -6091,7 +6013,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 278.7,
+    "current": 267.14,
     "high": 320.0,
     "low": 190.0,
     "mean": 280.18182,
@@ -6126,7 +6048,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 329.96,
+    "current": 320.22,
     "high": 425.0,
     "low": 312.0,
     "mean": 373.47827,
@@ -6189,10 +6111,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 34.79,
+    "current": 34.41,
     "high": 42.0,
     "low": 32.0,
-    "mean": 38.63889,
+    "mean": 38.81579,
     "median": 40.0
    },
    "konsens_firmen": [],
@@ -6220,13 +6142,6 @@
      "action": "main",
      "to_grade": "Equal-Weight",
      "from_grade": "Equal-Weight"
-    },
-    {
-     "date": "2026-10-20",
-     "firm": "JP Morgan",
-     "action": "main",
-     "to_grade": "Underweight",
-     "from_grade": "Underweight"
     }
    ],
    "consensus": {
@@ -6238,7 +6153,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 25.11,
+    "current": 24.92,
     "high": 41.0,
     "low": 20.0,
     "mean": 25.14706,
@@ -6301,7 +6216,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 144.56,
+    "current": 141.48,
     "high": 275.0,
     "low": 175.0,
     "mean": 219.61539,
@@ -6364,10 +6279,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 98.79,
+    "current": 96.09,
     "high": 112.0,
-    "low": 80.0,
-    "mean": 98.79167,
+    "low": 88.0,
+    "mean": 99.64,
     "median": 100.0
    },
    "konsens_firmen": [],
@@ -6427,7 +6342,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 515.11,
+    "current": 510.21,
     "high": 600.0,
     "low": 400.0,
     "mean": 551.03705,
@@ -6490,11 +6405,11 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 1415.55,
+    "current": 1351.12,
     "high": 1700.0,
     "low": 940.0,
-    "mean": 1468.5737,
-    "median": 1570.0
+    "mean": 1470.0565,
+    "median": 1573.0
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -6553,7 +6468,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 590.34,
+    "current": 571.85,
     "high": 835.0,
     "low": 498.0,
     "mean": 660.86365,
@@ -6591,13 +6506,6 @@
      "action": "main",
      "to_grade": "Hold",
      "from_grade": "Hold"
-    },
-    {
-     "date": "2026-10-20",
-     "firm": "Evercore ISI Group",
-     "action": "main",
-     "to_grade": "In-Line",
-     "from_grade": "In-Line"
     }
    ],
    "consensus": {
@@ -6609,10 +6517,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 220.46,
+    "current": 219.14,
     "high": 290.0,
     "low": 190.0,
-    "mean": 250.69698,
+    "mean": 248.8125,
     "median": 255.0
    },
    "konsens_firmen": [],
@@ -6672,7 +6580,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 210.69,
+    "current": 203.68,
     "high": 500.0,
     "low": 255.0,
     "mean": 362.1,
@@ -6703,13 +6611,6 @@
      "action": "init",
      "to_grade": "Underperform",
      "from_grade": null
-    },
-    {
-     "date": "2026-10-19",
-     "firm": "Wells Fargo",
-     "action": "main",
-     "to_grade": "Equal-Weight",
-     "from_grade": "Equal-Weight"
     }
    ],
    "consensus": {
@@ -6721,7 +6622,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 104.14,
+    "current": 105.53,
     "high": 255.0,
     "low": 44.0,
     "mean": 104.4,
@@ -6784,7 +6685,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 645.73,
+    "current": 626.5,
     "high": 800.0,
     "low": 550.0,
     "mean": 720.68677,
@@ -6839,15 +6740,15 @@
     }
    ],
    "consensus": {
-    "kaufen_pct": 47,
-    "halten_pct": 53,
+    "kaufen_pct": 44,
+    "halten_pct": 56,
     "verkaufen_pct": 0,
-    "total": 17,
+    "total": 16,
     "unclassified": 0
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 422.74,
+    "current": 414.04,
     "high": 479.0,
     "low": 302.0,
     "mean": 421.73077,
@@ -6874,7 +6775,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 39.535,
+    "current": 38.265,
     "high": 70.0,
     "low": 32.0,
     "mean": 50.5525,
@@ -6937,7 +6838,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 275.82,
+    "current": 272.35,
     "high": 390.0,
     "low": 230.0,
     "mean": 299.0,
@@ -7000,7 +6901,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 59.43,
+    "current": 58.47,
     "high": 120.0,
     "low": 62.0,
     "mean": 86.48,
@@ -7063,7 +6964,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 1091.67,
+    "current": 1062.16,
     "high": 1260.0,
     "low": 965.0,
     "mean": 1161.0714,
@@ -7098,11 +6999,11 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 298.63,
+    "current": 297.01,
     "high": 565.0,
     "low": 335.0,
-    "mean": 452.02896,
-    "median": 462.5
+    "mean": 451.63422,
+    "median": 455.0
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -7154,7 +7055,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 66.75,
+    "current": 65.69,
     "high": 77.0,
     "low": 56.0,
     "mean": 70.45455,
@@ -7181,7 +7082,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 102.32,
+    "current": 100.61,
     "high": 121.0,
     "low": 92.0,
     "mean": 106.34615,
@@ -7244,11 +7145,11 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 1436.83,
-    "high": 2800.0,
+    "current": 1355.49,
+    "high": 2700.0,
     "low": 1600.0,
-    "mean": 2194.2976,
-    "median": 2115.0
+    "mean": 2168.1438,
+    "median": 2110.0
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -7302,12 +7203,12 @@
     "kaufen_pct": 82,
     "halten_pct": 18,
     "verkaufen_pct": 0,
-    "total": 34,
+    "total": 33,
     "unclassified": 1
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 618.87,
+    "current": 596.22,
     "high": 1050.0,
     "low": 650.0,
     "mean": 848.2262,
@@ -7334,18 +7235,18 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 7868.0001,
-    "high": 10463.2875,
-    "low": 8164.1506,
-    "mean": 9313.7191,
-    "median": 9313.7191
+    "current": 7659.9997,
+    "high": 10664.0085,
+    "low": 8320.7665,
+    "mean": 9492.3875,
+    "median": 9492.3875
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 800.406924,
-    "tag": "2026-11-17",
+    "faktor": 815.761419,
+    "tag": "2026-11-19",
     "quelle": "8411.T",
     "waehrung": "JPY"
    }
@@ -7395,15 +7296,15 @@
     }
    ],
    "consensus": {
-    "kaufen_pct": 33,
-    "halten_pct": 56,
-    "verkaufen_pct": 11,
-    "total": 9,
+    "kaufen_pct": 25,
+    "halten_pct": 62,
+    "verkaufen_pct": 12,
+    "total": 8,
     "unclassified": 0
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 180.88,
+    "current": 178.47,
     "high": 230.0,
     "low": 125.0,
     "mean": 194.01411,
@@ -7466,11 +7367,11 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 44.44,
+    "current": 43.94,
     "high": 57.0,
     "low": 37.0,
-    "mean": 50.08696,
-    "median": 50.0
+    "mean": 50.25,
+    "median": 50.5
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -7522,7 +7423,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 77.46,
+    "current": 74.68,
     "high": 85.0,
     "low": 59.0,
     "mean": 73.45455,
@@ -7578,7 +7479,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 395.61,
+    "current": 367.93,
     "high": 564.0,
     "low": 236.0,
     "mean": 458.2353,
@@ -7641,7 +7542,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 143.37,
+    "current": 132.81,
     "high": 186.0,
     "low": 105.0,
     "mean": 161.525,
@@ -7668,10 +7569,10 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 150.75,
-    "high": 179.0,
+    "current": 148.4,
+    "high": 180.0,
     "low": 135.0,
-    "mean": 159.2143,
+    "mean": 159.2857,
     "median": 159.0
    },
    "konsens_firmen": [],
@@ -7731,10 +7632,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 206.8,
+    "current": 199.33,
     "high": 305.0,
     "low": 45.0,
-    "mean": 165.3158,
+    "mean": 164.52632,
     "median": 145.0
    },
    "konsens_firmen": [],
@@ -7794,7 +7695,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 148.74,
+    "current": 138.47,
     "high": 450.0,
     "low": 175.0,
     "mean": 310.89325,
@@ -7818,13 +7719,6 @@
      "action": "main",
      "to_grade": "Buy",
      "from_grade": "Buy"
-    },
-    {
-     "date": "2026-10-19",
-     "firm": "BMO Capital",
-     "action": "main",
-     "to_grade": "Outperform",
-     "from_grade": "Outperform"
     }
    ],
    "consensus": {
@@ -7836,7 +7730,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 183.53,
+    "current": 174.98,
     "high": 262.0,
     "low": 185.0,
     "mean": 211.5,
@@ -7899,7 +7793,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 506.24,
+    "current": 498.3,
     "high": 870.0,
     "low": 440.0,
     "mean": 636.12427,
@@ -7948,7 +7842,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 96.5,
+    "current": 86.13,
     "high": 435.0,
     "low": 165.0,
     "mean": 233.26666,
@@ -7975,7 +7869,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 347.8,
+    "current": 345.3,
     "high": 530.0,
     "low": 325.0,
     "mean": 408.35,
@@ -8017,7 +7911,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 712.42,
+    "current": 690.44,
     "high": 3000.0,
     "low": 361.0,
     "mean": 1561.9111,
@@ -8044,18 +7938,18 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 3287.0001,
-    "high": 4260.1978,
-    "low": 3372.1056,
-    "mean": 3816.1509,
-    "median": 3816.1509
+    "current": 3197.0001,
+    "high": 4316.4626,
+    "low": 3416.6413,
+    "mean": 3866.5511,
+    "median": 3866.5511
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 160.576459,
-    "tag": "2026-11-17",
+    "faktor": 162.697204,
+    "tag": "2026-11-19",
     "quelle": "8306.T",
     "waehrung": "JPY"
    }
@@ -8069,19 +7963,19 @@
    "last_date": null,
    "actions": [],
    "consensus": {
-    "kaufen_pct": 19,
-    "halten_pct": 56,
+    "kaufen_pct": 25,
+    "halten_pct": 50,
     "verkaufen_pct": 25,
     "total": 16,
     "unclassified": 0
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 583.2,
+    "current": 574.8,
     "high": 644.0,
     "low": 480.0,
-    "mean": 557.125,
-    "median": 557.5
+    "mean": 557.875,
+    "median": 560.0
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -8108,20 +8002,6 @@
      "action": "reit",
      "to_grade": "Outperform",
      "from_grade": "Outperform"
-    },
-    {
-     "date": "2026-10-20",
-     "firm": "BMO Capital",
-     "action": "main",
-     "to_grade": "Outperform",
-     "from_grade": "Outperform"
-    },
-    {
-     "date": "2026-10-19",
-     "firm": "Barclays",
-     "action": "main",
-     "to_grade": "Equal-Weight",
-     "from_grade": "Equal-Weight"
     }
    ],
    "consensus": {
@@ -8133,7 +8013,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 84.42,
+    "current": 83.79,
     "high": 110.0,
     "low": 56.0,
     "mean": 94.10526,
@@ -8164,20 +8044,6 @@
      "action": "down",
      "to_grade": "Hold",
      "from_grade": "Buy"
-    },
-    {
-     "date": "2026-10-20",
-     "firm": "Citigroup",
-     "action": "main",
-     "to_grade": "Buy",
-     "from_grade": "Buy"
-    },
-    {
-     "date": "2026-10-19",
-     "firm": "Barclays",
-     "action": "main",
-     "to_grade": "Overweight",
-     "from_grade": "Overweight"
     }
    ],
    "consensus": {
@@ -8189,10 +8055,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 111.26,
+    "current": 100.05,
     "high": 165.0,
     "low": 70.0,
-    "mean": 135.39,
+    "mean": 134.56842,
     "median": 140.0
    },
    "konsens_firmen": [],
@@ -8252,10 +8118,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 284.8,
+    "current": 303.68,
     "high": 430.0,
     "low": 190.0,
-    "mean": 344.1875,
+    "mean": 343.25,
     "median": 350.0
    },
    "konsens_firmen": [],
@@ -8307,15 +8173,15 @@
     }
    ],
    "consensus": {
-    "kaufen_pct": 68,
-    "halten_pct": 28,
+    "kaufen_pct": 67,
+    "halten_pct": 29,
     "verkaufen_pct": 4,
-    "total": 25,
+    "total": 24,
     "unclassified": 0
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 59.68,
+    "current": 58.46,
     "high": 126.0,
     "low": 57.0,
     "mean": 84.76326,
@@ -8378,11 +8244,11 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 35.85,
+    "current": 34.33,
     "high": 60.0,
     "low": 19.0,
-    "mean": 36.46053,
-    "median": 34.0
+    "mean": 36.69737,
+    "median": 34.9
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -8441,10 +8307,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 92.9,
+    "current": 88.87,
     "high": 266.0,
     "low": 72.0,
-    "mean": 155.8187,
+    "mean": 155.75348,
     "median": 155.0
    },
    "konsens_firmen": [],
@@ -8504,11 +8370,11 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 155.46,
-    "high": 515.0,
+    "current": 145.98,
+    "high": 425.0,
     "low": 130.0,
-    "mean": 265.23456,
-    "median": 255.0
+    "mean": 246.67091,
+    "median": 240.0
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -8523,26 +8389,26 @@
    "last_date": null,
    "actions": [],
    "consensus": {
-    "kaufen_pct": 21,
-    "halten_pct": 71,
-    "verkaufen_pct": 7,
-    "total": 14,
+    "kaufen_pct": 15,
+    "halten_pct": 77,
+    "verkaufen_pct": 8,
+    "total": 13,
     "unclassified": 0
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 275.5,
-    "high": 433.8514,
-    "low": 266.9853,
-    "mean": 309.6506,
-    "median": 294.6299
+    "current": 265.15,
+    "high": 436.4214,
+    "low": 268.5669,
+    "mean": 311.4849,
+    "median": 296.3752
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 6.769042,
-    "tag": "2026-11-17",
+    "faktor": 6.821456,
+    "tag": "2026-11-19",
     "quelle": "NOVO-B.CO",
     "waehrung": "DKK"
    }
@@ -8572,18 +8438,18 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 133.28,
-    "high": 154.9475,
-    "low": 108.882,
-    "mean": 131.5798,
-    "median": 132.7523
+    "current": 127.24,
+    "high": 155.6633,
+    "low": 109.385,
+    "mean": 132.1876,
+    "median": 133.3656
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 0.837554,
-    "tag": "2026-11-17",
+    "faktor": 0.841423,
+    "tag": "2026-11-19",
     "quelle": "NOVN.SW",
     "waehrung": "CHF"
    }
@@ -8641,11 +8507,11 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 252.51,
+    "current": 251.76,
     "high": 400.0,
     "low": 175.0,
-    "mean": 300.48276,
-    "median": 300.0
+    "mean": 301.8,
+    "median": 302.5
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -8704,7 +8570,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 171.85,
+    "current": 173.83,
     "high": 245.0,
     "low": 158.0,
     "mean": 213.4762,
@@ -8767,7 +8633,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 67.93,
+    "current": 65.72,
     "high": 125.0,
     "low": 75.0,
     "mean": 96.16,
@@ -8830,7 +8696,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 115.0,
+    "current": 110.57,
     "high": 400.0,
     "low": 110.0,
     "mean": 236.184,
@@ -8868,13 +8734,6 @@
      "action": "main",
      "to_grade": "Outperform",
      "from_grade": "Outperform"
-    },
-    {
-     "date": "2026-10-20",
-     "firm": "RBC Capital",
-     "action": "main",
-     "to_grade": "Outperform",
-     "from_grade": "Outperform"
     }
    ],
    "consensus": {
@@ -8886,7 +8745,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 92.69,
+    "current": 92.61,
     "high": 122.0,
     "low": 91.0,
     "mean": 106.40741,
@@ -8913,7 +8772,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 43.44,
+    "current": 43.16,
     "high": 60.0,
     "low": 39.0,
     "mean": 47.29444,
@@ -8940,7 +8799,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 23.72,
+    "current": 23.04,
     "high": 42.0,
     "low": 24.0,
     "mean": 34.78125,
@@ -8975,10 +8834,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 309.29,
+    "current": 361.73,
     "high": 525.0,
     "low": 190.0,
-    "mean": 398.62686,
+    "mean": 405.78372,
     "median": 415.0
    },
    "konsens_firmen": [],
@@ -9002,7 +8861,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 114.1,
+    "current": 111.4,
     "high": 150.0,
     "low": 96.0,
     "mean": 114.57143,
@@ -9029,18 +8888,18 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 50.11,
-    "high": 77.7122,
-    "low": 50.0812,
-    "mean": 65.8156,
-    "median": 67.6384
+    "current": 48.69,
+    "high": 80.7017,
+    "low": 52.0077,
+    "mean": 68.2228,
+    "median": 69.4931
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 2.878231,
-    "tag": "2026-11-17",
+    "faktor": 2.98895,
+    "tag": "2026-11-19",
     "quelle": "PETR3.SA",
     "waehrung": "BRL"
    }
@@ -9091,7 +8950,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 104.61,
+    "current": 104.15,
     "high": 150.0,
     "low": 104.0,
     "mean": 125.10125,
@@ -9126,11 +8985,11 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 77.39,
-    "high": 151.2557,
-    "low": 82.13037,
-    "mean": 113.64162,
-    "median": 112.46192
+    "current": 86.0,
+    "high": 151.13782,
+    "low": 81.99259,
+    "mean": 113.62853,
+    "median": 112.37426
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -9153,10 +9012,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 142.02,
-    "high": 169.0,
+    "current": 139.0,
+    "high": 165.0,
     "low": 106.0,
-    "mean": 141.45454,
+    "mean": 141.13635,
     "median": 140.5
    },
    "konsens_firmen": [],
@@ -9216,7 +9075,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 28.47,
+    "current": 27.54,
     "high": 37.0,
     "low": 25.0,
     "mean": 30.22115,
@@ -9279,11 +9138,11 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 171.72,
+    "current": 167.85,
     "high": 190.0,
     "low": 151.0,
-    "mean": 174.26086,
-    "median": 176.0
+    "mean": 174.78261,
+    "median": 180.0
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -9314,10 +9173,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 234.67,
-    "high": 262.0,
+    "current": 229.96,
+    "high": 265.0,
     "low": 196.0,
-    "mean": 233.57143,
+    "mean": 234.4762,
     "median": 235.0
    },
    "konsens_firmen": [],
@@ -9349,7 +9208,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 920.84,
+    "current": 906.13,
     "high": 1280.0,
     "low": 740.0,
     "mean": 1138.0955,
@@ -9387,13 +9246,6 @@
      "action": "up",
      "to_grade": "Outperform",
      "from_grade": "Market Perform"
-    },
-    {
-     "date": "2026-10-20",
-     "firm": "Baird",
-     "action": "main",
-     "to_grade": "Neutral",
-     "from_grade": "Neutral"
     }
    ],
    "consensus": {
@@ -9405,7 +9257,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 125.56,
+    "current": 123.36,
     "high": 170.0,
     "low": 136.0,
     "mean": 152.07143,
@@ -9468,7 +9320,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 156.56,
+    "current": 153.68,
     "high": 273.0,
     "low": 80.0,
     "mean": 222.9,
@@ -9524,7 +9376,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 194.38,
+    "current": 186.43,
     "high": 240.0,
     "low": 175.0,
     "mean": 212.6875,
@@ -9587,7 +9439,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 256.93,
+    "current": 242.71,
     "high": 346.0,
     "low": 188.0,
     "mean": 290.5263,
@@ -9650,7 +9502,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 58.11,
+    "current": 56.37,
     "high": 80.0,
     "low": 36.0,
     "mean": 57.31364,
@@ -9713,10 +9565,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 166.67,
-    "high": 320.0,
+    "current": 162.01,
+    "high": 305.0,
     "low": 100.0,
-    "mean": 185.9643,
+    "mean": 185.25,
     "median": 175.0
    },
    "konsens_firmen": [],
@@ -9769,7 +9621,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 45.2,
+    "current": 45.25,
     "high": 46.5,
     "low": 34.0,
     "mean": 43.1,
@@ -9832,7 +9684,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 957.76,
+    "current": 923.34,
     "high": 1175.0,
     "low": 812.0,
     "mean": 990.8148,
@@ -9859,10 +9711,10 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 760.9,
+    "current": 725.6,
     "high": 2000.0,
     "low": 900.0,
-    "mean": 1328.5,
+    "mean": 1326.2273,
     "median": 1275.0
    },
    "konsens_firmen": [],
@@ -9886,18 +9738,18 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 60.47,
-    "high": 89.0272,
-    "low": 65.8192,
-    "mean": 80.1197,
-    "median": 82.5023
+    "current": 57.85,
+    "high": 90.6084,
+    "low": 66.9883,
+    "mean": 81.5428,
+    "median": 83.9677
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 0.760916,
-    "tag": "2026-11-17",
+    "faktor": 0.774431,
+    "tag": "2026-11-19",
     "quelle": "RIO.L",
     "waehrung": "GBP"
    }
@@ -9955,7 +9807,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 471.92,
+    "current": 462.96,
     "high": 550.0,
     "low": 335.0,
     "mean": 469.17786,
@@ -10011,7 +9863,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 220.45,
+    "current": 219.88,
     "high": 315.0,
     "low": 187.0,
     "mean": 273.21054,
@@ -10053,7 +9905,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 198.0,
+    "current": 193.44,
     "high": 250.0,
     "low": 200.0,
     "mean": 228.13043,
@@ -10080,11 +9932,11 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 57.7,
+    "current": 57.18,
     "high": 77.5,
     "low": 60.0,
-    "mean": 69.87222,
-    "median": 69.35
+    "mean": 69.92778,
+    "median": 69.5
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -10107,11 +9959,11 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 196.49,
-    "high": 229.21434,
-    "low": 181.89157,
-    "mean": 208.40176,
-    "median": 214.0994
+    "current": 187.7,
+    "high": 228.73474,
+    "low": 181.51099,
+    "mean": 207.96571,
+    "median": 213.65143
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -10119,20 +9971,12 @@
   },
   "SAN": {
    "upgrades_30d": 0,
-   "downgrades_30d": 1,
-   "net_30d": -1,
-   "last_action": "down",
-   "last_firm": "Jefferies",
-   "last_date": "2026-10-20",
-   "actions": [
-    {
-     "date": "2026-10-20",
-     "firm": "Jefferies",
-     "action": "down",
-     "to_grade": "Hold",
-     "from_grade": "Buy"
-    }
-   ],
+   "downgrades_30d": 0,
+   "net_30d": 0,
+   "last_action": null,
+   "last_firm": null,
+   "last_date": null,
+   "actions": [],
    "consensus": {
     "kaufen_pct": 33,
     "halten_pct": 67,
@@ -10142,18 +9986,18 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 10.82,
-    "high": 14.2167,
-    "low": 11.87,
-    "mean": 13.2914,
-    "median": 13.7875
+    "current": 10.576,
+    "high": 14.47,
+    "low": 12.0815,
+    "mean": 13.5282,
+    "median": 14.0332
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 0.91308,
-    "tag": "2026-11-17",
+    "faktor": 0.92935,
+    "tag": "2026-11-19",
     "quelle": "SAN.MC",
     "waehrung": "EUR"
    }
@@ -10175,7 +10019,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 201.5,
+    "current": 187.02,
     "high": 290.0,
     "low": 198.84,
     "mean": 243.54222,
@@ -10238,7 +10082,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 107.49,
+    "current": 104.47,
     "high": 141.0,
     "low": 82.0,
     "mean": 111.06667,
@@ -10276,13 +10120,6 @@
      "action": "main",
      "to_grade": "Equal-Weight",
      "from_grade": "Equal-Weight"
-    },
-    {
-     "date": "2026-10-19",
-     "firm": "Barclays",
-     "action": "main",
-     "to_grade": "Underweight",
-     "from_grade": "Underweight"
     }
    ],
    "consensus": {
@@ -10294,7 +10131,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 155.42,
+    "current": 141.46,
     "high": 272.11557,
     "low": 143.47913,
     "mean": 177.77461,
@@ -10325,13 +10162,6 @@
      "action": "main",
      "to_grade": "Overweight",
      "from_grade": "Overweight"
-    },
-    {
-     "date": "2026-10-19",
-     "firm": "BMO Capital",
-     "action": "main",
-     "to_grade": "Market Perform",
-     "from_grade": "Market Perform"
     }
    ],
    "consensus": {
@@ -10343,7 +10173,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 91.84,
+    "current": 92.12,
     "high": 147.0,
     "low": 82.0,
     "mean": 116.63636,
@@ -10378,18 +10208,18 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 36.805,
-    "high": 48.8261,
-    "low": 37.8497,
-    "mean": 41.9399,
-    "median": 40.4991
+    "current": 35.8292,
+    "high": 49.1647,
+    "low": 38.1121,
+    "mean": 42.2308,
+    "median": 40.78
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 0.378497,
-    "tag": "2026-11-17",
+    "faktor": 0.381121,
+    "tag": "2026-11-18",
     "quelle": "SHEL.L",
     "waehrung": "GBP"
    }
@@ -10411,7 +10241,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 43.3,
+    "current": 43.82,
     "high": 57.4,
     "low": 37.0,
     "mean": 46.745,
@@ -10466,15 +10296,15 @@
     }
    ],
    "consensus": {
-    "kaufen_pct": 82,
-    "halten_pct": 18,
+    "kaufen_pct": 86,
+    "halten_pct": 14,
     "verkaufen_pct": 0,
-    "total": 22,
+    "total": 21,
     "unclassified": 1
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 141.9,
+    "current": 131.97,
     "high": 220.0,
     "low": 120.0,
     "mean": 177.18408,
@@ -10537,7 +10367,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 344.15,
+    "current": 339.83,
     "high": 420.0,
     "low": 329.0,
     "mean": 373.83334,
@@ -10556,19 +10386,19 @@
    "last_date": null,
    "actions": [],
    "consensus": {
-    "kaufen_pct": 64,
-    "halten_pct": 28,
+    "kaufen_pct": 60,
+    "halten_pct": 32,
     "verkaufen_pct": 8,
     "total": 25,
     "unclassified": 0
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 269.8,
+    "current": 266.9,
     "high": 345.0,
     "low": 240.0,
-    "mean": 311.5796,
-    "median": 315.0
+    "mean": 310.64825,
+    "median": 310.0
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -10627,18 +10457,18 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 1097999.9945,
-    "high": 3582089.5344,
-    "low": 1468656.7091,
-    "mean": 2323880.5854,
-    "median": 2283582.0782
+    "current": 1113454.7125,
+    "high": 3736425.2098,
+    "low": 1531934.336,
+    "mean": 2424005.8548,
+    "median": 2381971.0712
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 8955.223836,
-    "tag": "2026-11-17",
+    "faktor": 9341.063024,
+    "tag": "2026-11-18",
     "quelle": "000660.KS",
     "waehrung": "KRW"
    }
@@ -10660,18 +10490,18 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 3137.9999,
-    "high": 2117.31,
-    "low": 2117.31,
-    "mean": 2117.31,
-    "median": 2117.31
+    "current": 3077.0,
+    "high": 2155.5418,
+    "low": 2155.5418,
+    "mean": 2155.5418,
+    "median": 2155.5418
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 134.389719,
-    "tag": "2026-11-17",
+    "faktor": 136.816364,
+    "tag": "2026-11-19",
     "quelle": "8316.T",
     "waehrung": "JPY"
    }
@@ -10729,11 +10559,11 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 797.24,
-    "high": 3000.0,
-    "low": 870.0,
-    "mean": 2047.375,
-    "median": 2050.0
+    "current": 755.16,
+    "high": 375.0,
+    "low": 108.75,
+    "mean": 255.92188,
+    "median": 256.25
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -10756,10 +10586,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 272.94,
+    "current": 268.59,
     "high": 540.0,
     "low": 280.0,
-    "mean": 434.08533,
+    "mean": 433.02148,
     "median": 447.0
    },
    "konsens_firmen": [],
@@ -10770,18 +10600,10 @@
    "upgrades_30d": 0,
    "downgrades_30d": 0,
    "net_30d": 0,
-   "last_action": "main",
-   "last_firm": "Morgan Stanley",
-   "last_date": "2026-10-20",
-   "actions": [
-    {
-     "date": "2026-10-20",
-     "firm": "Morgan Stanley",
-     "action": "main",
-     "to_grade": "Overweight",
-     "from_grade": "Overweight"
-    }
-   ],
+   "last_action": null,
+   "last_firm": null,
+   "last_date": null,
+   "actions": [],
    "consensus": {
     "kaufen_pct": 90,
     "halten_pct": 10,
@@ -10791,10 +10613,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 435.51,
+    "current": 430.91,
     "high": 700.0,
     "low": 475.0,
-    "mean": 589.546,
+    "mean": 591.4865,
     "median": 600.0
    },
    "konsens_firmen": [],
@@ -10818,18 +10640,18 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 86.64,
-    "high": 114.8395,
-    "low": 82.0282,
-    "mean": 100.1149,
-    "median": 101.715
+    "current": 83.5,
+    "high": 114.2097,
+    "low": 81.5784,
+    "mean": 99.5659,
+    "median": 101.1572
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 1.822849,
-    "tag": "2026-11-17",
+    "faktor": 1.812853,
+    "tag": "2026-11-19",
     "quelle": "SAN.PA",
     "waehrung": "EUR"
    }
@@ -10855,13 +10677,6 @@
      "action": "main",
      "to_grade": "Underweight",
      "from_grade": "Underweight"
-    },
-    {
-     "date": "2026-10-20",
-     "firm": "Jefferies",
-     "action": "main",
-     "to_grade": "Hold",
-     "from_grade": "Hold"
     }
    ],
    "consensus": {
@@ -10873,7 +10688,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 93.6,
+    "current": 93.29,
     "high": 115.0,
     "low": 74.0,
     "mean": 96.275,
@@ -10900,18 +10715,18 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 4271.0,
-    "high": 5442.8035,
-    "low": 4162.1439,
-    "mean": 5082.618,
-    "median": 5362.7623
+    "current": 4364.9999,
+    "high": 5456.2498,
+    "low": 4172.4264,
+    "mean": 5095.1745,
+    "median": 5376.0109
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 160.082457,
-    "tag": "2026-11-17",
+    "faktor": 160.477937,
+    "tag": "2026-11-19",
     "quelle": "6758.T",
     "waehrung": "JPY"
    }
@@ -10969,7 +10784,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 141.7,
+    "current": 138.43,
     "high": 800.0,
     "low": 70.0,
     "mean": 257.49515,
@@ -11018,7 +10833,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 230.24,
+    "current": 225.22,
     "high": 275.0,
     "low": 207.0,
     "mean": 235.23685,
@@ -11081,7 +10896,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 452.35,
+    "current": 442.66,
     "high": 572.0,
     "low": 500.0,
     "mean": 529.35,
@@ -11136,19 +10951,19 @@
     }
    ],
    "consensus": {
-    "kaufen_pct": 69,
-    "halten_pct": 31,
+    "kaufen_pct": 67,
+    "halten_pct": 33,
     "verkaufen_pct": 0,
-    "total": 16,
+    "total": 15,
     "unclassified": 1
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 602.01,
-    "high": 735.98285,
-    "low": 450.64423,
-    "mean": 636.2504,
-    "median": 645.2116
+    "current": 583.85,
+    "high": 734.69055,
+    "low": 449.85297,
+    "mean": 635.13324,
+    "median": 644.07874
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -11163,19 +10978,19 @@
    "last_date": null,
    "actions": [],
    "consensus": {
-    "kaufen_pct": 80,
-    "halten_pct": 15,
+    "kaufen_pct": 81,
+    "halten_pct": 14,
     "verkaufen_pct": 5,
-    "total": 20,
+    "total": 21,
     "unclassified": 0
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 291.5,
-    "high": 340.0,
+    "current": 299.0,
+    "high": 395.0,
     "low": 200.0,
-    "mean": 297.5,
-    "median": 307.5
+    "mean": 302.14285,
+    "median": 310.0
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -11234,7 +11049,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 504.4,
+    "current": 521.39,
     "high": 1588.0,
     "low": 700.0,
     "mean": 1044.8334,
@@ -11261,11 +11076,11 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 94.96,
+    "current": 95.26,
     "high": 119.0,
     "low": 93.5,
-    "mean": 103.43333,
-    "median": 102.0
+    "mean": 104.16667,
+    "median": 103.0
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -11324,11 +11139,11 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 317.54,
+    "current": 313.08,
     "high": 410.0,
     "low": 275.0,
-    "mean": 339.37296,
-    "median": 336.0
+    "mean": 340.89148,
+    "median": 340.0
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -11387,7 +11202,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 22.29,
+    "current": 21.85,
     "high": 34.0,
     "low": 20.0,
     "mean": 27.58696,
@@ -11414,11 +11229,11 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 119.68,
-    "high": 134.67432,
-    "low": 94.949684,
-    "mean": 118.98588,
-    "median": 127.33366
+    "current": 115.1,
+    "high": 134.39064,
+    "low": 94.74969,
+    "mean": 118.73526,
+    "median": 127.06545
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -11477,10 +11292,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 140.98,
+    "current": 133.01,
     "high": 480.0,
     "low": 150.0,
-    "mean": 216.94258,
+    "mean": 216.62,
     "median": 204.0
    },
    "konsens_firmen": [],
@@ -11533,10 +11348,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 129.85,
+    "current": 139.41,
     "high": 190.0,
-    "low": 130.0,
-    "mean": 165.4,
+    "low": 135.0,
+    "mean": 164.52632,
     "median": 170.0
    },
    "konsens_firmen": [],
@@ -11568,18 +11383,18 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 3414.0001,
-    "high": 4052.8436,
-    "low": 3684.4032,
-    "mean": 3813.8062,
-    "median": 3758.989
+    "current": 3378.0,
+    "high": 4050.974,
+    "low": 3682.7037,
+    "mean": 3812.047,
+    "median": 3757.2551
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 16.019145,
-    "tag": "2026-11-17",
+    "faktor": 16.011755,
+    "tag": "2026-11-19",
     "quelle": "7203.T",
     "waehrung": "JPY"
    }
@@ -11637,7 +11452,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 686.79,
+    "current": 688.75,
     "high": 830.0,
     "low": 590.0,
     "mean": 756.52,
@@ -11700,7 +11515,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 167.9,
+    "current": 162.53,
     "high": 296.0,
     "low": 169.0,
     "mean": 226.24,
@@ -11731,39 +11546,18 @@
      "action": "main",
      "to_grade": "Underweight",
      "from_grade": "Underweight"
-    },
-    {
-     "date": "2026-10-20",
-     "firm": "BMO Capital",
-     "action": "main",
-     "to_grade": "Market Perform",
-     "from_grade": "Market Perform"
-    },
-    {
-     "date": "2026-10-20",
-     "firm": "JP Morgan",
-     "action": "main",
-     "to_grade": "Neutral",
-     "from_grade": "Neutral"
-    },
-    {
-     "date": "2026-10-20",
-     "firm": "Mizuho",
-     "action": "main",
-     "to_grade": "Neutral",
-     "from_grade": "Neutral"
     }
    ],
    "consensus": {
-    "kaufen_pct": 27,
-    "halten_pct": 55,
-    "verkaufen_pct": 18,
-    "total": 11,
+    "kaufen_pct": 22,
+    "halten_pct": 67,
+    "verkaufen_pct": 11,
+    "total": 9,
     "unclassified": 0
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 397.58,
+    "current": 390.61,
     "high": 460.0,
     "low": 262.0,
     "mean": 376.54166,
@@ -11826,7 +11620,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 380.11,
+    "current": 374.41,
     "high": 600.0,
     "low": 128.11,
     "mean": 412.47626,
@@ -11861,18 +11655,18 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 2170.0,
-    "high": 6032.9728,
-    "low": 2654.508,
-    "mean": 3539.5029,
-    "median": 3378.4648
+    "current": 2100.0,
+    "high": 5964.3842,
+    "low": 2624.329,
+    "mean": 3499.2624,
+    "median": 3340.0551
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 6.032973,
-    "tag": "2026-11-17",
+    "faktor": 5.964384,
+    "tag": "2026-11-19",
     "quelle": "2330.TW",
     "waehrung": "TWD"
    }
@@ -11930,7 +11724,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 14.93,
+    "current": 14.56,
     "high": 20.0,
     "low": 8.0,
     "mean": 14.91667,
@@ -11965,18 +11759,18 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 82.06,
-    "high": 108.0215,
-    "low": 82.6046,
-    "mean": 91.5459,
-    "median": 90.7743
+    "current": 79.39,
+    "high": 109.5352,
+    "low": 83.7622,
+    "mean": 92.8288,
+    "median": 92.0464
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 0.907743,
-    "tag": "2026-11-17",
+    "faktor": 0.920464,
+    "tag": "2026-11-19",
     "quelle": "TTE.PA",
     "waehrung": "EUR"
    }
@@ -12034,7 +11828,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 203.93,
+    "current": 208.65,
     "high": 330.0,
     "low": 170.0,
     "mean": 283.92828,
@@ -12089,15 +11883,15 @@
     }
    ],
    "consensus": {
-    "kaufen_pct": 55,
-    "halten_pct": 35,
-    "verkaufen_pct": 10,
-    "total": 20,
+    "kaufen_pct": 53,
+    "halten_pct": 37,
+    "verkaufen_pct": 11,
+    "total": 19,
     "unclassified": 0
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 295.86,
+    "current": 285.75,
     "high": 422.0,
     "low": 250.0,
     "mean": 338.7931,
@@ -12160,7 +11954,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 68.81,
+    "current": 65.6,
     "high": 150.0,
     "low": 70.0,
     "mean": 98.232,
@@ -12187,18 +11981,18 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 39.06,
-    "high": 52.5162,
-    "low": 42.7848,
-    "mean": 46.3082,
-    "median": 43.6237
+    "current": 38.0278,
+    "high": 52.8775,
+    "low": 43.0791,
+    "mean": 46.6268,
+    "median": 43.9238
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 0.838918,
-    "tag": "2026-11-17",
+    "faktor": 0.844688,
+    "tag": "2026-11-18",
     "quelle": "UBSG.SW",
     "waehrung": "CHF"
    }
@@ -12220,18 +12014,18 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 49.59,
-    "high": 56.9201,
-    "low": 52.4441,
-    "mean": 54.4523,
-    "median": 54.2225
+    "current": 47.845,
+    "high": 56.5079,
+    "low": 52.0643,
+    "mean": 54.058,
+    "median": 53.8299
    },
    "konsens_firmen": [],
    "merged_firmen": [],
    "merged_ziele": {},
    "umrechnung": {
-    "faktor": 0.759302,
-    "tag": "2026-11-17",
+    "faktor": 0.755129,
+    "tag": "2026-11-19",
     "quelle": "ULVR.L",
     "waehrung": "GBP"
    }
@@ -12264,13 +12058,6 @@
      "action": "main",
      "to_grade": "Outperform",
      "from_grade": "Outperform"
-    },
-    {
-     "date": "2026-10-20",
-     "firm": "RBC Capital",
-     "action": "main",
-     "to_grade": "Outperform",
-     "from_grade": "Outperform"
     }
    ],
    "consensus": {
@@ -12282,7 +12069,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 389.68,
+    "current": 330.48,
     "high": 531.0,
     "low": 380.0,
     "mean": 476.16,
@@ -12345,7 +12132,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 297.03,
+    "current": 290.63,
     "high": 375.0,
     "low": 245.0,
     "mean": 329.95834,
@@ -12408,7 +12195,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 110.31,
+    "current": 109.11,
     "high": 135.0,
     "low": 76.0,
     "mean": 115.46154,
@@ -12457,7 +12244,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 59.18,
+    "current": 57.26,
     "high": 75.0,
     "low": 65.0,
     "mean": 68.79545,
@@ -12520,11 +12307,11 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 416.77,
+    "current": 402.25,
     "high": 500.0,
     "low": 330.0,
-    "mean": 449.06433,
-    "median": 455.0
+    "mean": 450.9562,
+    "median": 457.0
    },
    "konsens_firmen": [],
    "merged_firmen": [],
@@ -12583,7 +12370,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 363.77,
+    "current": 338.46,
     "high": 530.0,
     "low": 238.0,
     "mean": 421.3158,
@@ -12610,7 +12397,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 16.81,
+    "current": 16.8,
     "high": 45.0,
     "low": 14.0,
     "mean": 22.31333,
@@ -12637,7 +12424,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 66.3,
+    "current": 64.64,
     "high": 120.0,
     "low": 67.3,
     "mean": 98.15556,
@@ -12679,7 +12466,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 205.31,
+    "current": 200.52,
     "high": 265.0,
     "low": 195.0,
     "mean": 235.94118,
@@ -12742,7 +12529,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 534.2,
+    "current": 520.66,
     "high": 725.0,
     "low": 350.0,
     "mean": 595.3571,
@@ -12805,7 +12592,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 45.93,
+    "current": 45.74,
     "high": 62.0,
     "low": 44.0,
     "mean": 50.65,
@@ -12832,10 +12619,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 182.8,
+    "current": 173.36,
     "high": 275.0,
     "low": 92.0,
-    "mean": 209.25323,
+    "mean": 208.95595,
     "median": 210.0
    },
    "konsens_firmen": [],
@@ -12895,7 +12682,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 283.33,
+    "current": 296.78,
     "high": 900.0,
     "low": 405.0,
     "mean": 613.375,
@@ -12953,12 +12740,12 @@
     "kaufen_pct": 92,
     "halten_pct": 8,
     "verkaufen_pct": 0,
-    "total": 13,
+    "total": 12,
     "unclassified": 0
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 245.76,
+    "current": 243.19,
     "high": 292.0,
     "low": 230.0,
     "mean": 265.45456,
@@ -12993,7 +12780,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 82.69,
+    "current": 80.61,
     "high": 108.0,
     "low": 88.0,
     "mean": 97.375,
@@ -13038,13 +12825,6 @@
      "action": "main",
      "to_grade": "Overweight",
      "from_grade": "Overweight"
-    },
-    {
-     "date": "2026-10-20",
-     "firm": "Evercore ISI Group",
-     "action": "main",
-     "to_grade": "Outperform",
-     "from_grade": "Outperform"
     }
    ],
    "consensus": {
@@ -13056,7 +12836,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 127.52,
+    "current": 126.04,
     "high": 155.0,
     "low": 81.0,
     "mean": 131.90244,
@@ -13094,13 +12874,6 @@
      "action": "main",
      "to_grade": "Equal-Weight",
      "from_grade": "Equal-Weight"
-    },
-    {
-     "date": "2026-10-20",
-     "firm": "BMO Capital",
-     "action": "main",
-     "to_grade": "Outperform",
-     "from_grade": "Outperform"
     }
    ],
    "consensus": {
@@ -13112,7 +12885,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 80.72,
+    "current": 79.46,
     "high": 103.0,
     "low": 76.0,
     "mean": 90.28947,
@@ -13175,7 +12948,7 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 167.21,
+    "current": 158.93,
     "high": 213.0,
     "low": 160.0,
     "mean": 184.18182,
@@ -13202,7 +12975,7 @@
    },
    "quelle": "Aggregat",
    "price_targets": {
-    "current": 28.34,
+    "current": 28.82,
     "high": 53.0,
     "low": 25.0,
     "mean": 35.34783,
@@ -13244,10 +13017,10 @@
    },
    "quelle": "Einzelratings",
    "price_targets": {
-    "current": 185.19,
+    "current": 205.71,
     "high": 298.0,
-    "low": 164.75,
-    "mean": 235.19444,
+    "low": 170.0,
+    "mean": 236.34044,
     "median": 247.0
    },
    "konsens_firmen": [],

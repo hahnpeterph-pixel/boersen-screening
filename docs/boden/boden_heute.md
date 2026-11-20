@@ -1,106 +1,84 @@
-# Boden-Screening 2026-11-18 (Stand 2026-11-19 01:05 UTC)
+# Boden-Screening 2026-11-19 (Stand 2026-11-20 03:13 UTC)
 
 Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RSI < 50 + mind. 2 Boden-Punkte (nur Technik). Die Filter (Analysten, Anker, CRV 2:1) stehen in docs/heute.csv. Boden-Anker = niedrigster Puffer mit 60 % Halterate fuer diese Gruppe und diesen Wert (Vollauf), KO-Marke = Bezugstief - Anker x ATR.
 
-## Kandidaten (6)
+## Kandidaten (12)
 
 | Wert | Tief | RSI | Anker | KO-Marke | Analysten |
 |---|---|---|---|---|---|
-| PANW | 4 | 48 | 2.00 | 260.92 | 82 % |
-| DELL | 3 | 33 | 2.75 | 204.11 | 67 % |
-| GOOGL | 3 | 35 | 1.50 | 264.21 | 83 % |
-| NVDA | 4 | 21 | 2.00 | 126.48 | 71 % |
-| RHM.DE | 4 | 26 | 3.25 | 573.04 | 77 % |
-| ZS | 4 | 43 | 3.00 | 143.46 | 84 % |
+| BKR | 2 | 34 | 2.25 | 41.67 | 73 % |
+| BNR.DE | 2 | 34 | 3.25 | 52.28 | 13 % |
+| CRM | 5 | 22 | 2.25 | 162.45 | 67 % |
+| DDOG | 3 | 28 | 2.00 | 135.26 | 100 % |
+| DELL | 3 | 33 | 2.75 | 211.41 | 67 % |
+| GOOG | 2 | 30 | 1.75 | 252.43 | 80 % |
+| GOOGL | 4 | 31 | 1.50 | 256.37 | 83 % |
+| MCHP | 3 | 32 | 2.75 | 41.93 | 71 % |
+| META | 2 | 37 | 2.50 | 540.71 | 82 % |
+| NOW | 4 | 25 | 2.75 | 75.41 | 88 % |
+| SKHY | 2 | 41 | 2.75 | 803250.00 | 100 % |
+| SNDK | 2 | 29 | - | - | 73 % |
 
-## Weitere Pruefttage (85)
+## Weitere Pruefttage (59)
 
 | Wert | Punkte | Grund |
 |---|---|---|
-| AAPL | 2 | Tief 1, RSI >= 50 |
-| DASH | 2 | Tief 1 |
-| DIS | 2 | Tief 1, RSI >= 50 |
-| GOOG | 2 | Tief 1 |
+| AMAT | 2 | Tief 1 |
+| ASML | 2 | Tief 1 |
+| COF | 2 | Tief 1 |
+| FANG | 2 | Tief 1 |
+| INTC | 2 | Tief 1 |
 | MRVL | 2 | Tief 1 |
+| MS | 2 | Tief 1 |
+| ORCL | 2 | Tief 1 |
+| PLTR | 2 | Tief 1 |
 | STX | 2 | Tief 1 |
-| TTWO | 2 | RSI >= 50 |
-| AMAT | 1 | 1 P, Tief 1 |
-| AMD | 1 | 1 P, Tief 1, RSI >= 50 |
-| ANET | 1 | 1 P, Tief 1, RSI >= 50 |
-| BAYN.DE | 1 | 1 P, Tief 1, RSI >= 50 |
-| BIIB | 1 | 1 P, Tief 1, RSI >= 50 |
+| ADI | 1 | 1 P, Tief 1 |
+| AIR.DE | 1 | 1 P, Tief 1 |
+| APH | 1 | 1 P, Tief 1 |
+| BAS.DE | 1 | 1 P |
+| BLK | 1 | 1 P |
+| BNY | 1 | 1 P, Tief 1 |
 | CDNS | 1 | 1 P, Tief 1 |
-| CDW | 1 | 1 P, Tief 1, RSI >= 50 |
-| CRWD | 1 | 1 P |
-| CSCO | 1 | 1 P, Tief 1 |
-| CTAS | 1 | 1 P, RSI >= 50 |
-| EMR | 1 | 1 P |
+| CEG | 1 | 1 P, Tief 1 |
+| DBK.DE | 1 | 1 P |
+| DTG.DE | 1 | 1 P, Tief 1 |
 | ENR.DE | 1 | 1 P, Tief 1 |
-| GEHC | 1 | 1 P, RSI >= 50 |
+| GEV | 1 | 1 P, Tief 1 |
 | GFS | 1 | 1 P, Tief 1 |
+| GLW | 1 | 1 P |
+| GS | 1 | 1 P |
+| HDB | 1 | 1 P, Tief 1, RSI >= 50 |
+| IBN | 1 | 1 P, Tief 1, RSI >= 50 |
 | IFX.DE | 1 | 1 P |
 | KLAC | 1 | 1 P |
-| LULU | 1 | 1 P, RSI >= 50 |
-| MTX.DE | 1 | 1 P, RSI >= 50 |
-| NET | 1 | 1 P |
-| ODFL | 1 | 1 P |
-| ROST | 1 | 1 P |
+| LRCX | 1 | 1 P |
+| MU | 1 | 1 P |
+| NXPI | 1 | 1 P, Tief 1, RSI >= 50 |
+| ON | 1 | 1 P, Tief 1 |
+| PCAR | 1 | 1 P |
+| QCOM | 1 | 1 P, Tief 1 |
+| QIA.DE | 1 | 1 P, Tief 1, RSI >= 50 |
+| RWE.DE | 1 | 1 P, Tief 1 |
+| SIE.DE | 1 | 1 P, Tief 1 |
 | SNPS | 1 | 1 P, Tief 1 |
-| SO | 1 | 1 P, Tief 1, RSI >= 50 |
-| SONY | 1 | 1 P, Tief 1, RSI >= 50 |
-| SY1.DE | 1 | 1 P, Tief 1, RSI >= 50 |
-| TSLA | 1 | 1 P, Tief 1, RSI >= 50 |
+| TM | 1 | 1 P, RSI >= 50 |
+| TSLA | 1 | 1 P, Tief 1 |
 | TXN | 1 | 1 P, Tief 1 |
-| ABNB | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
-| ABT | 0 | 0 P, Tief 1, Umkehr a |
-| ADP | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
-| ADS.DE | 0 | 0 P, RSI >= 50, Umkehr a |
-| AEP | 0 | 0 P, Tief 1, Umkehr a |
-| AMT | 0 | 0 P, Tief 1, Umkehr a |
-| BKNG | 0 | 0 P, Umkehr a |
-| CCEP | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
-| CHTR | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
-| CL | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
-| CMCSA | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
-| CPRT | 0 | 0 P, RSI >= 50, Umkehr a |
-| CSX | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
-| DB1.DE | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
-| DE | 0 | 0 P, Tief 1, Umkehr a |
+| VRSK | 1 | 1 P, Tief 1, RSI >= 50 |
+| WDC | 1 | 1 P |
+| BP | 0 | 0 P, Umkehr a |
+| CB | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
+| COST | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
 | DUK | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
-| DXCM | 0 | 0 P, Tief 1, Umkehr a |
-| EQIX | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
-| EXC | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
-| FDX | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
-| HD | 0 | 0 P, RSI >= 50, Umkehr a |
-| HNR1.DE | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
-| IDXX | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
-| KDP | 0 | 0 P, Umkehr a |
-| KO | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
-| LIN | 0 | 0 P, RSI >= 50, Umkehr a |
-| LOW | 0 | 0 P, RSI >= 50, Umkehr a |
-| MA | 0 | 0 P, RSI >= 50, Umkehr a |
-| MCK | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
+| MCD | 0 | 0 P, RSI >= 50, Umkehr a |
 | MDLZ | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
-| MMM | 0 | 0 P, RSI >= 50, Umkehr a |
-| MNST | 0 | 0 P, Tief 1, Umkehr a |
-| MUV2.DE | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
-| NEE | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
-| NKE | 0 | 0 P, Tief 1, Umkehr a |
-| ORLY | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
-| P911.DE | 0 | 0 P, Tief 1, Umkehr a |
-| PDD | 0 | 0 P, Tief 1, Umkehr a |
-| PEP | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
-| PG | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
-| PLD | 0 | 0 P, Tief 1, Umkehr a |
-| PM | 0 | 0 P, Umkehr a |
-| PYPL | 0 | 0 P, RSI >= 50, Umkehr a |
-| ROP | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
-| SHL.DE | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
-| SHW | 0 | 0 P, RSI >= 50, Umkehr a |
-| SPG | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
-| SPOT | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
-| VZ | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
+| MFG | 0 | 0 P, Tief 1, Umkehr a |
+| MO | 0 | 0 P, Tief 1 |
+| MRNA | 0 | 0 P, Tief 1, Umkehr a |
+| MUFG | 0 | 0 P, Tief 1, Umkehr a |
+| PGR | 0 | 0 P, RSI >= 50, Umkehr a |
+| SMFG | 0 | 0 P, Tief 1, Umkehr a |
+| TRV | 0 | 0 P, Umkehr a |
+| VZ | 0 | 0 P, Tief 1, RSI >= 50 |
 | WMT | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
-| XEL | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
-
-Nicht aktuell (kein Kurs vom 2026-11-18): T, TD, TJX, TMO, TTE, UBER, UBS, UL, UNP, UPS, USB, VLO, VNA.DE, VOW3.DE, WDC, WELL, WFC, XOM, ZAL.DE

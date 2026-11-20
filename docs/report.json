@@ -2,38 +2,38 @@
  "date": "2026-11-20",
  "ranks": {
   "turnaround": [
-   "BTI",
-   "AZN",
+   "ZS",
    "EXC",
-   "UL",
    "SYK",
    "ORLY",
    "PGR",
    "AEP",
    "CCEP",
    "MRK.DE",
-   "TTE",
    "UPS",
+   "KHC",
+   "KDP",
    "ADSK",
-   "MUV2.DE",
-   "SY1.DE"
+   "REGN",
+   "ZAL.DE",
+   "CRWD"
   ],
   "momentum": [
    "CCEP",
    "WELL",
-   "FRE.DE",
-   "DHL.DE",
-   "MUV2.DE",
-   "SRT3.DE",
+   "PANW",
    "PGR",
-   "HNR1.DE",
-   "HEN3.DE",
+   "CRWD",
    "REGN",
-   "SY1.DE",
+   "BIIB",
    "ZAL.DE",
+   "IBN",
    "UPS",
+   "SRT3.DE",
    "KDP",
-   "TTE"
+   "DB1.DE",
+   "HEN3.DE",
+   "CDW"
   ],
   "value": [
    "PBR",
@@ -57,207 +57,127 @@
   "turnaround": {
    "entries": [
     {
-     "ticker": "AZN",
-     "rank": 2
+     "ticker": "ZS",
+     "rank": 1
     },
     {
-     "ticker": "EXC",
-     "rank": 3
+     "ticker": "KHC",
+     "rank": 10
     },
     {
-     "ticker": "SYK",
-     "rank": 5
-    },
-    {
-     "ticker": "ORLY",
-     "rank": 6
-    },
-    {
-     "ticker": "PGR",
-     "rank": 7
-    },
-    {
-     "ticker": "CCEP",
-     "rank": 9
-    },
-    {
-     "ticker": "TTE",
+     "ticker": "KDP",
      "rank": 11
     },
     {
-     "ticker": "UPS",
-     "rank": 12
+     "ticker": "REGN",
+     "rank": 13
     },
     {
-     "ticker": "MUV2.DE",
+     "ticker": "ZAL.DE",
      "rank": 14
     },
     {
-     "ticker": "SY1.DE",
+     "ticker": "CRWD",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "TSLA",
+     "ticker": "BTI",
+     "old_rank": 1
+    },
+    {
+     "ticker": "AZN",
      "old_rank": 2
     },
     {
-     "ticker": "VRSK",
+     "ticker": "UL",
      "old_rank": 4
     },
     {
-     "ticker": "TXN",
-     "old_rank": 5
+     "ticker": "TTE",
+     "old_rank": 11
     },
     {
-     "ticker": "SAP.DE",
-     "old_rank": 6
-    },
-    {
-     "ticker": "VLO",
-     "old_rank": 7
-    },
-    {
-     "ticker": "CVX",
-     "old_rank": 10
-    },
-    {
-     "ticker": "MPC",
-     "old_rank": 12
-    },
-    {
-     "ticker": "MA",
-     "old_rank": 13
-    },
-    {
-     "ticker": "TM",
+     "ticker": "MUV2.DE",
      "old_rank": 14
     },
     {
-     "ticker": "V",
+     "ticker": "SY1.DE",
      "old_rank": 15
     }
    ],
-   "moves": [
-    {
-     "ticker": "AEP",
-     "rank": 8,
-     "delta": -5
-    }
-   ]
+   "moves": []
   },
   "momentum": {
    "entries": [
     {
-     "ticker": "WELL",
-     "rank": 2
+     "ticker": "PANW",
+     "rank": 3
     },
     {
-     "ticker": "DHL.DE",
-     "rank": 4
-    },
-    {
-     "ticker": "MUV2.DE",
+     "ticker": "CRWD",
      "rank": 5
     },
     {
-     "ticker": "SRT3.DE",
-     "rank": 6
-    },
-    {
-     "ticker": "PGR",
+     "ticker": "BIIB",
      "rank": 7
     },
     {
-     "ticker": "HNR1.DE",
-     "rank": 8
+     "ticker": "IBN",
+     "rank": 9
     },
     {
-     "ticker": "SY1.DE",
-     "rank": 11
+     "ticker": "DB1.DE",
+     "rank": 13
     },
     {
-     "ticker": "KDP",
-     "rank": 14
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "KO",
-     "old_rank": 2
-    },
-    {
-     "ticker": "V",
-     "old_rank": 4
-    },
-    {
-     "ticker": "BRK-B",
-     "old_rank": 6
-    },
-    {
-     "ticker": "MA",
-     "old_rank": 7
-    },
-    {
-     "ticker": "ADP",
-     "old_rank": 8
-    },
-    {
-     "ticker": "ROP",
-     "old_rank": 9
-    },
-    {
-     "ticker": "MDT",
-     "old_rank": 11
-    },
-    {
-     "ticker": "SAP.DE",
-     "old_rank": 13
-    }
-   ],
-   "moves": [
-    {
-     "ticker": "FRE.DE",
-     "rank": 3,
-     "delta": 7
-    },
-    {
-     "ticker": "REGN",
-     "rank": 10,
-     "delta": -7
-    }
-   ]
-  },
-  "value": {
-   "entries": [
-    {
-     "ticker": "NXPI",
-     "rank": 4
-    },
-    {
-     "ticker": "TTE",
-     "rank": 6
-    },
-    {
-     "ticker": "V",
+     "ticker": "CDW",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "WDC",
+     "ticker": "FRE.DE",
+     "old_rank": 3
+    },
+    {
+     "ticker": "DHL.DE",
      "old_rank": 4
     },
     {
-     "ticker": "VLO",
-     "old_rank": 9
+     "ticker": "MUV2.DE",
+     "old_rank": 5
     },
     {
-     "ticker": "ENR.DE",
+     "ticker": "HNR1.DE",
+     "old_rank": 8
+    },
+    {
+     "ticker": "SY1.DE",
+     "old_rank": 11
+    },
+    {
+     "ticker": "TTE",
      "old_rank": 15
     }
    ],
+   "moves": [
+    {
+     "ticker": "SRT3.DE",
+     "rank": 11,
+     "delta": -5
+    },
+    {
+     "ticker": "HEN3.DE",
+     "rank": 14,
+     "delta": -5
+    }
+   ]
+  },
+  "value": {
+   "entries": [],
+   "exits": [],
    "moves": []
   },
   "analyst_flips": []

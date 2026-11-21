@@ -1,8 +1,8 @@
 # Stundenwache
 
-Stand: 2026-11-20 · 272 Werte mit Stundendaten · erstellt 2026-11-21 03:15 UTC
+Stand: 2026-11-20 · 272 Werte mit Stundendaten · erstellt 2026-11-21 07:20 UTC
 
-> **Sitzung noch nicht abgeschlossen.** 3 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 5, 6, 7, 8, 9). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
+> **Sitzung noch nicht abgeschlossen.** 2 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 5, 6, 7, 8, 9). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
 
 Marken sind das juengste Swing-Tief und das juengste Swing-Hoch aus `tiefs_regel.py`, also dieselben wie im Tagesbericht. Geprueft wird nur, was der letzte Handelstag auf Stundenbasis damit gemacht hat.
 
@@ -35,7 +35,7 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 
 | Wert | Marke | Schluss | Abstand (ATR) | Stunden dahinter |
 |---|---|---|---|---|
-| AXON | 291.11 | 291.42 | 0.012 | 0 |
+| AXON | 291.11 | 291.43 | 0.012 | 0 |
 | ENR.DE | 118.56 | 118.68 | 0.016 | 0 |
 | SHL.DE | 42.85 | 42.87 | 0.018 | 0 |
 | RHM.DE | 692.3 | 693.3 | 0.02 | 0 |

@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-11-21 03:14 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.097._
+_Erstellt 2026-11-21 07:18 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.097._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -192,13 +192,9 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | SHL.DE (SHL.DE) | 42.87 | - | - | ja | 51.56 |
 | VOW3.DE (VOW3.DE) | 62.78 | - | - | ja | 29.21 |
 | ZAL.DE (ZAL.DE) | 28.23 | - | - | ja | 58.13 |
-| Gold (GC=F) | 3539.0 | - | - | ja | 22.19 |
-| Silber (SI=F) | 41.08 | - | - | ja | 21.85 |
-| Platin (PL=F) | 1286.0 | - | - | ja | 29.17 |
-| Palladium (PA=F) | 893.0 | - | - | ja | 24.38 |
-| Brent Oel (BZ=F) | 89.87 | - | - | ja | 34.11 |
-| Kupfer (HG=F) | 5.465 | - | - | ja | 20.24 |
-| Zucker (SB=F) | 17.07 | - | - | ja | 29.49 |
+| Gold (GC=F) | 3515.3999 | - | - | ja | 21.57 |
+| Silber (SI=F) | 41.035 | - | - | ja | 21.8 |
+| Zucker (SB=F) | 17.03 | - | - | ja | 29.19 |
 | EUR/JPY (EURJPY=X) | 175.168 | ja | - | - | 37.5 |
 
 ---

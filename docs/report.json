@@ -55,33 +55,13 @@
  },
  "changes": {
   "turnaround": {
-   "entries": [
-    {
-     "ticker": "CCEP",
-     "rank": 6
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "AMT",
-     "old_rank": 15
-    }
-   ],
+   "entries": [],
+   "exits": [],
    "moves": []
   },
   "momentum": {
-   "entries": [
-    {
-     "ticker": "CCEP",
-     "rank": 1
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "KO",
-     "old_rank": 7
-    }
-   ],
+   "entries": [],
+   "exits": [],
    "moves": []
   },
   "value": {

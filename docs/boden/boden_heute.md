@@ -1,4 +1,4 @@
-# Boden-Screening 2026-11-20 (Stand 2026-11-21 00:44 UTC)
+# Boden-Screening 2026-11-20 (Stand 2026-11-21 03:16 UTC)
 
 Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RSI < 50 + mind. 2 Boden-Punkte (nur Technik). Die Filter (Analysten, Anker, CRV 2:1) stehen in docs/heute.csv. Boden-Anker = niedrigster Puffer mit 60 % Halterate fuer diese Gruppe und diesen Wert (Vollauf), KO-Marke = Bezugstief - Anker x ATR.
 
@@ -6,17 +6,17 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 
 | Wert | Tief | RSI | Anker | KO-Marke | Analysten |
 |---|---|---|---|---|---|
-| BA | 2 | 25 | 2.75 | 141.50 | 93 % |
+| BA | 2 | 25 | 2.75 | 141.49 | 93 % |
 | CTSH | 2 | 38 | 3.00 | 48.96 | 60 % |
 | CVS | 3 | 37 | 3.00 | 67.24 | 100 % |
 | CVX | 2 | 40 | 2.25 | 193.67 | 67 % |
-| GD | 2 | 37 | 1.75 | 325.31 | 56 % |
+| GD | 2 | 37 | 1.75 | 325.27 | 56 % |
 | IBM | 2 | 34 | 3.00 | 202.03 | 50 % |
 | PFE | 2 | 32 | 1.50 | 26.19 | 33 % |
 | PLD | 2 | 34 | 3.00 | 114.20 | 86 % |
 | TEAM | 3 | 24 | 2.50 | 104.75 | 89 % |
 
-## Weitere Pruefttage (54)
+## Weitere Pruefttage (55)
 
 | Wert | Punkte | Grund |
 |---|---|---|
@@ -71,6 +71,7 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | TMUS | 1 | 1 P, Tief 1, RSI >= 50 |
 | UL | 1 | 1 P, Tief 1, RSI >= 50 |
 | VZ | 1 | 1 P, Tief 1, RSI >= 50 |
+| ADSK | 0 | 0 P, Tief 1, Umkehr a |
 | CCEP | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
 | EOAN.DE | 0 | 0 P, Tief 1, Umkehr a |
 | TTWO | 0 | 0 P, Umkehr a |

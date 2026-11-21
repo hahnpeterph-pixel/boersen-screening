@@ -1,8 +1,8 @@
 # Marktstimmung
 
-Stand Abruf: 21.11.2026 00:44 UTC
+Stand Abruf: 21.11.2026 03:16 UTC
 
-**Stimmung: VIX 35,9 (unruhig, 5T +16,6, 20.11.) · DAX-Schwankung gemessen 20,0 (unruhig, 5T +3,2, 20.11.) · Fear & Greed 10 (extreme Angst, Vortag -6, 20.11.)**
+**Stimmung: VIX 35,9 (unruhig, 5T +16,6, 20.11.) · DAX-Schwankung gemessen 20,2 (unruhig, 5T +3,4, 20.11.) · Fear & Greed 10 (extreme Angst, Vortag -6, 20.11.)**
 
 Lagen: VIX ruhig < 16 · normal 16–22 · unruhig > 22 | VDAX-NEW ruhig < 18 · normal 18–24 · unruhig > 24 (gemessene DAX-Schwankung: < 13 · 13–19 · > 19) | Fear & Greed 0–25 extreme Angst · 25–45 Angst · 45–55 neutral · 55–75 Gier · 75–100 extreme Gier.
 
@@ -12,7 +12,7 @@ Nur Stimmung, kein Kaufsignal. Ob die Lage fuer unsere Tiefs etwas aussagt: sieh
 
 | Tag | VIX | VDAX | F&G |
 |---|---|---|---|
-| 20.11.2026 | 35,9 | 20,0 | 10 |
+| 20.11.2026 | 35,9 | 20,2 | 10 |
 | 19.11.2026 | 28,4 | 18,4 | 16 |
 | 18.11.2026 | 24,6 | 18,6 | 30 |
 | 17.11.2026 | 25,5 | 18,0 | 26 |

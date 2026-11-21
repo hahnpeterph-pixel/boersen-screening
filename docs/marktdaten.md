@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-11-21 00:42 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.097._
+_Erstellt 2026-11-21 03:14 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.097._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -144,13 +144,13 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | MUFG (MUFG) | 3024.0 | - | - | ja | 31.49 |
 | TM (TM) | 3312.0 | - | - | ja | 54.24 |
 | BHP (BHP) | 51.4 | - | - | ja | 30.3 |
-| SAN (SAN) | 10.31 | - | - | ja | 34.13 |
+| SAN (SAN) | 10.32 | - | - | ja | 34.26 |
 | TTE (TTE) | 78.49 | - | - | ja | 41.85 |
 | TD (TD) | 112.87 | - | - | ja | 28.56 |
 | NVO (NVO) | 264.5 | - | - | ja | 45.81 |
 | SMFG (SMFG) | 2936.0 | - | - | ja | 34.5 |
-| BBVA (BBVA) | 21.86 | - | - | ja | 37.15 |
-| UBS (UBS) | 37.01 | - | - | ja | 33.69 |
+| BBVA (BBVA) | 21.83 | - | - | ja | 36.91 |
+| UBS (UBS) | 36.97 | - | - | ja | 33.53 |
 | MFG (MFG) | 7315.0 | - | - | ja | 39.6 |
 | BMO (BMO) | 156.29 | - | - | ja | 29.85 |
 | BNS (BNS) | 83.63 | - | - | ja | 27.25 |
@@ -195,7 +195,7 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | Gold (GC=F) | 3539.0 | - | - | ja | 22.19 |
 | Silber (SI=F) | 41.08 | - | - | ja | 21.85 |
 | Platin (PL=F) | 1286.0 | - | - | ja | 29.17 |
-| Palladium (PA=F) | 893.0 | - | - | ja | 24.31 |
+| Palladium (PA=F) | 893.0 | - | - | ja | 24.38 |
 | Brent Oel (BZ=F) | 89.87 | - | - | ja | 34.11 |
 | Kupfer (HG=F) | 5.465 | - | - | ja | 20.24 |
 | Zucker (SB=F) | 17.07 | - | - | ja | 29.49 |

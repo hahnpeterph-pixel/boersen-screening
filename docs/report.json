@@ -7,6 +7,7 @@
    "EXC",
    "ORLY",
    "PGR",
+   "CCEP",
    "PEP",
    "MCD",
    "MRK.DE",
@@ -15,21 +16,20 @@
    "ZS",
    "SHL.DE",
    "HEN3.DE",
-   "WELL",
-   "AMT"
+   "WELL"
   ],
   "momentum": [
+   "CCEP",
    "HEN3.DE",
    "PGR",
    "WELL",
    "ZAL.DE",
    "MCK",
    "PG",
-   "KO",
    "QIA.DE",
-   "IBN",
    "ADP",
    "SHL.DE",
+   "IBN",
    "DUK",
    "CB",
    "PANW",
@@ -57,180 +57,36 @@
   "turnaround": {
    "entries": [
     {
-     "ticker": "PEP",
+     "ticker": "CCEP",
      "rank": 6
-    },
-    {
-     "ticker": "MCD",
-     "rank": 7
-    },
-    {
-     "ticker": "LOW",
-     "rank": 10
-    },
-    {
-     "ticker": "SHL.DE",
-     "rank": 12
-    },
-    {
-     "ticker": "HEN3.DE",
-     "rank": 13
-    },
-    {
-     "ticker": "WELL",
-     "rank": 14
-    },
-    {
-     "ticker": "AMT",
-     "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "CCEP",
-     "old_rank": 7
-    },
-    {
-     "ticker": "UPS",
-     "old_rank": 9
-    },
-    {
-     "ticker": "KHC",
-     "old_rank": 10
-    },
-    {
-     "ticker": "KDP",
-     "old_rank": 11
-    },
-    {
-     "ticker": "REGN",
-     "old_rank": 13
-    },
-    {
-     "ticker": "ZAL.DE",
-     "old_rank": 14
-    },
-    {
-     "ticker": "CRWD",
+     "ticker": "AMT",
      "old_rank": 15
     }
    ],
-   "moves": [
-    {
-     "ticker": "ADSK",
-     "rank": 1,
-     "delta": 11
-    },
-    {
-     "ticker": "ZS",
-     "rank": 11,
-     "delta": -10
-    }
-   ]
+   "moves": []
   },
   "momentum": {
    "entries": [
     {
-     "ticker": "MCK",
-     "rank": 5
-    },
-    {
-     "ticker": "PG",
-     "rank": 6
-    },
+     "ticker": "CCEP",
+     "rank": 1
+    }
+   ],
+   "exits": [
     {
      "ticker": "KO",
-     "rank": 7
-    },
-    {
-     "ticker": "QIA.DE",
-     "rank": 8
-    },
-    {
-     "ticker": "ADP",
-     "rank": 10
-    },
-    {
-     "ticker": "SHL.DE",
-     "rank": 11
-    },
-    {
-     "ticker": "DUK",
-     "rank": 12
-    },
-    {
-     "ticker": "CB",
-     "rank": 13
-    },
-    {
-     "ticker": "CTAS",
-     "rank": 15
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "CCEP",
-     "old_rank": 1
-    },
-    {
-     "ticker": "CRWD",
-     "old_rank": 5
-    },
-    {
-     "ticker": "REGN",
-     "old_rank": 6
-    },
-    {
-     "ticker": "BIIB",
      "old_rank": 7
-    },
-    {
-     "ticker": "UPS",
-     "old_rank": 10
-    },
-    {
-     "ticker": "SRT3.DE",
-     "old_rank": 11
-    },
-    {
-     "ticker": "KDP",
-     "old_rank": 12
-    },
-    {
-     "ticker": "DB1.DE",
-     "old_rank": 13
-    },
-    {
-     "ticker": "CDW",
-     "old_rank": 15
     }
    ],
-   "moves": [
-    {
-     "ticker": "HEN3.DE",
-     "rank": 1,
-     "delta": 13
-    },
-    {
-     "ticker": "PANW",
-     "rank": 14,
-     "delta": -11
-    }
-   ]
+   "moves": []
   },
   "value": {
-   "entries": [
-    {
-     "ticker": "WDC",
-     "rank": 5
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "NXPI",
-     "old_rank": 4
-    }
-   ],
+   "entries": [],
+   "exits": [],
    "moves": []
   },
   "analyst_flips": []

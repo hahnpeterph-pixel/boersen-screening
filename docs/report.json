@@ -1,48 +1,48 @@
 {
- "date": "2026-11-20",
+ "date": "2026-11-21",
  "ranks": {
   "turnaround": [
-   "ZS",
-   "EXC",
+   "ADSK",
    "SYK",
+   "EXC",
    "ORLY",
    "PGR",
-   "AEP",
-   "CCEP",
+   "PEP",
+   "MCD",
    "MRK.DE",
-   "UPS",
-   "KHC",
-   "KDP",
-   "ADSK",
-   "REGN",
-   "ZAL.DE",
-   "CRWD"
+   "AEP",
+   "LOW",
+   "ZS",
+   "SHL.DE",
+   "HEN3.DE",
+   "WELL",
+   "AMT"
   ],
   "momentum": [
-   "CCEP",
-   "WELL",
-   "PANW",
-   "PGR",
-   "CRWD",
-   "REGN",
-   "BIIB",
-   "ZAL.DE",
-   "IBN",
-   "UPS",
-   "SRT3.DE",
-   "KDP",
-   "DB1.DE",
    "HEN3.DE",
-   "CDW"
+   "PGR",
+   "WELL",
+   "ZAL.DE",
+   "MCK",
+   "PG",
+   "KO",
+   "QIA.DE",
+   "IBN",
+   "ADP",
+   "SHL.DE",
+   "DUK",
+   "CB",
+   "PANW",
+   "CTAS"
   ],
   "value": [
    "PBR",
    "PSX",
    "AVGO",
-   "NXPI",
    "MU",
-   "TTE",
+   "WDC",
    "ABNB",
+   "TTE",
    "NEM",
    "RIO",
    "META",
@@ -57,127 +57,180 @@
   "turnaround": {
    "entries": [
     {
-     "ticker": "ZS",
-     "rank": 1
+     "ticker": "PEP",
+     "rank": 6
     },
     {
-     "ticker": "KHC",
-     "rank": 10
-    },
-    {
-     "ticker": "KDP",
-     "rank": 11
-    },
-    {
-     "ticker": "REGN",
-     "rank": 13
-    },
-    {
-     "ticker": "ZAL.DE",
-     "rank": 14
-    },
-    {
-     "ticker": "CRWD",
-     "rank": 15
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "BTI",
-     "old_rank": 1
-    },
-    {
-     "ticker": "AZN",
-     "old_rank": 2
-    },
-    {
-     "ticker": "UL",
-     "old_rank": 4
-    },
-    {
-     "ticker": "TTE",
-     "old_rank": 11
-    },
-    {
-     "ticker": "MUV2.DE",
-     "old_rank": 14
-    },
-    {
-     "ticker": "SY1.DE",
-     "old_rank": 15
-    }
-   ],
-   "moves": []
-  },
-  "momentum": {
-   "entries": [
-    {
-     "ticker": "PANW",
-     "rank": 3
-    },
-    {
-     "ticker": "CRWD",
-     "rank": 5
-    },
-    {
-     "ticker": "BIIB",
+     "ticker": "MCD",
      "rank": 7
     },
     {
-     "ticker": "IBN",
-     "rank": 9
+     "ticker": "LOW",
+     "rank": 10
     },
     {
-     "ticker": "DB1.DE",
+     "ticker": "SHL.DE",
+     "rank": 12
+    },
+    {
+     "ticker": "HEN3.DE",
      "rank": 13
     },
     {
-     "ticker": "CDW",
+     "ticker": "WELL",
+     "rank": 14
+    },
+    {
+     "ticker": "AMT",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "FRE.DE",
-     "old_rank": 3
+     "ticker": "CCEP",
+     "old_rank": 7
     },
     {
-     "ticker": "DHL.DE",
-     "old_rank": 4
+     "ticker": "UPS",
+     "old_rank": 9
     },
     {
-     "ticker": "MUV2.DE",
-     "old_rank": 5
+     "ticker": "KHC",
+     "old_rank": 10
     },
     {
-     "ticker": "HNR1.DE",
-     "old_rank": 8
-    },
-    {
-     "ticker": "SY1.DE",
+     "ticker": "KDP",
      "old_rank": 11
     },
     {
-     "ticker": "TTE",
+     "ticker": "REGN",
+     "old_rank": 13
+    },
+    {
+     "ticker": "ZAL.DE",
+     "old_rank": 14
+    },
+    {
+     "ticker": "CRWD",
      "old_rank": 15
     }
    ],
    "moves": [
     {
-     "ticker": "SRT3.DE",
-     "rank": 11,
-     "delta": -5
+     "ticker": "ADSK",
+     "rank": 1,
+     "delta": 11
     },
     {
+     "ticker": "ZS",
+     "rank": 11,
+     "delta": -10
+    }
+   ]
+  },
+  "momentum": {
+   "entries": [
+    {
+     "ticker": "MCK",
+     "rank": 5
+    },
+    {
+     "ticker": "PG",
+     "rank": 6
+    },
+    {
+     "ticker": "KO",
+     "rank": 7
+    },
+    {
+     "ticker": "QIA.DE",
+     "rank": 8
+    },
+    {
+     "ticker": "ADP",
+     "rank": 10
+    },
+    {
+     "ticker": "SHL.DE",
+     "rank": 11
+    },
+    {
+     "ticker": "DUK",
+     "rank": 12
+    },
+    {
+     "ticker": "CB",
+     "rank": 13
+    },
+    {
+     "ticker": "CTAS",
+     "rank": 15
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "CCEP",
+     "old_rank": 1
+    },
+    {
+     "ticker": "CRWD",
+     "old_rank": 5
+    },
+    {
+     "ticker": "REGN",
+     "old_rank": 6
+    },
+    {
+     "ticker": "BIIB",
+     "old_rank": 7
+    },
+    {
+     "ticker": "UPS",
+     "old_rank": 10
+    },
+    {
+     "ticker": "SRT3.DE",
+     "old_rank": 11
+    },
+    {
+     "ticker": "KDP",
+     "old_rank": 12
+    },
+    {
+     "ticker": "DB1.DE",
+     "old_rank": 13
+    },
+    {
+     "ticker": "CDW",
+     "old_rank": 15
+    }
+   ],
+   "moves": [
+    {
      "ticker": "HEN3.DE",
+     "rank": 1,
+     "delta": 13
+    },
+    {
+     "ticker": "PANW",
      "rank": 14,
-     "delta": -5
+     "delta": -11
     }
    ]
   },
   "value": {
-   "entries": [],
-   "exits": [],
+   "entries": [
+    {
+     "ticker": "WDC",
+     "rank": 5
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "NXPI",
+     "old_rank": 4
+    }
+   ],
    "moves": []
   },
   "analyst_flips": []

@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-11-24 06:01 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.0972._
+_Erstellt 2026-11-24 15:45 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.0972._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -35,17 +35,17 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | PSX (PSX) | 237.22 | - | - | ja | 33.2 |
 | MUFG (MUFG) | 3024.0 | - | - | ja | 31.49 |
 | TM (TM) | 3312.0 | - | - | ja | 54.24 |
-| TTE (TTE) | 77.44 | - | - | ja | 38.58 |
+| TTE (TTE) | 77.49 | - | - | ja | 38.72 |
 | SMFG (SMFG) | 2936.0 | - | - | ja | 34.5 |
-| RIO (RIO) | 57.82 | ja | ja | - | 31.97 |
+| PBR (PBR) | 47.02 | - | - | ja | 26.44 |
 | MFG (MFG) | 7315.0 | - | - | ja | 39.6 |
 | ENB (ENB) | 45.37 | - | - | ja | 30.11 |
-| EQNR (EQNR) | 380.7 | - | - | ja | 36.41 |
+| EQNR (EQNR) | 380.5 | - | - | ja | 36.34 |
 | CNQ (CNQ) | 43.74 | - | - | ja | 25.65 |
 | IBN (IBN) | 1585.5 | - | - | ja | 65.34 |
-| BAYN.DE (BAYN.DE) | 53.34 | - | ja | ja | 54.46 |
-| DB1.DE (DB1.DE) | 309.2 | - | - | ja | 43.54 |
-| P911.DE (P911.DE) | 42.88 | ja | - | ja | 39.52 |
+| BAYN.DE (BAYN.DE) | 52.98 | - | ja | ja | 52.75 |
+| DB1.DE (DB1.DE) | 310.9 | ja | - | ja | 45.0 |
+| P911.DE (P911.DE) | 42.89 | ja | - | - | 39.57 |
 | Platin (PL=F) | 1294.6 | - | - | ja | 29.48 |
 | Palladium (PA=F) | 886.0 | - | - | ja | 24.1 |
 | Brent Oel (BZ=F) | 89.37 | - | ja | ja | 33.91 |

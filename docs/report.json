@@ -2,67 +2,190 @@
  "date": "2026-11-24",
  "ranks": {
   "turnaround": [
-   "TSLA",
-   "HON",
-   "LOW",
    "ADSK",
-   "ZS",
+   "HON",
+   "TJX",
+   "CTSH",
+   "AZN",
    "SYK",
+   "AMT",
+   "TSLA",
+   "EOAN.DE",
    "SRT3.DE",
+   "NEE",
+   "LOW",
+   "IBM",
    "AEP",
-   "KDP",
-   "ABBV",
-   "EXC",
-   "MUV2.DE",
-   "MCD",
-   "CCEP",
-   "CTAS"
+   "KDP"
   ],
   "momentum": [
-   "BIIB",
    "ABBV",
-   "CCEP",
+   "BIIB",
+   "WELL",
+   "HNR1.DE",
+   "ADP",
+   "SNY",
    "CTAS",
    "MUV2.DE",
+   "ZAL.DE",
    "IBN",
    "KDP",
-   "WELL",
-   "SRT3.DE",
-   "HNR1.DE",
-   "CDW",
-   "ADP",
+   "CCEP",
    "PG",
-   "PANW",
-   "ZAL.DE"
+   "CDW",
+   "AAPL"
   ],
   "value": [
    "TSM",
    "PSX",
    "MU",
-   "WDC",
    "NEM",
+   "WDC",
    "VLO",
-   "TTE",
    "ABNB",
+   "TTE",
+   "SCCO",
    "RIO",
    "META",
-   "SCCO",
-   "REGN",
    "BLK",
-   "V",
-   "ENR.DE"
+   "REGN",
+   "ENR.DE",
+   "V"
   ]
  },
  "changes": {
   "turnaround": {
-   "entries": [],
-   "exits": [],
-   "moves": []
+   "entries": [
+    {
+     "ticker": "TJX",
+     "rank": 3
+    },
+    {
+     "ticker": "CTSH",
+     "rank": 4
+    },
+    {
+     "ticker": "AZN",
+     "rank": 5
+    },
+    {
+     "ticker": "AMT",
+     "rank": 7
+    },
+    {
+     "ticker": "EOAN.DE",
+     "rank": 9
+    },
+    {
+     "ticker": "NEE",
+     "rank": 11
+    },
+    {
+     "ticker": "IBM",
+     "rank": 13
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "ZS",
+     "old_rank": 5
+    },
+    {
+     "ticker": "ABBV",
+     "old_rank": 10
+    },
+    {
+     "ticker": "EXC",
+     "old_rank": 11
+    },
+    {
+     "ticker": "MUV2.DE",
+     "old_rank": 12
+    },
+    {
+     "ticker": "MCD",
+     "old_rank": 13
+    },
+    {
+     "ticker": "CCEP",
+     "old_rank": 14
+    },
+    {
+     "ticker": "CTAS",
+     "old_rank": 15
+    }
+   ],
+   "moves": [
+    {
+     "ticker": "TSLA",
+     "rank": 8,
+     "delta": -7
+    },
+    {
+     "ticker": "LOW",
+     "rank": 12,
+     "delta": -9
+    },
+    {
+     "ticker": "AEP",
+     "rank": 14,
+     "delta": -6
+    },
+    {
+     "ticker": "KDP",
+     "rank": 15,
+     "delta": -6
+    }
+   ]
   },
   "momentum": {
-   "entries": [],
-   "exits": [],
-   "moves": []
+   "entries": [
+    {
+     "ticker": "SNY",
+     "rank": 6
+    },
+    {
+     "ticker": "AAPL",
+     "rank": 15
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "SRT3.DE",
+     "old_rank": 9
+    },
+    {
+     "ticker": "PANW",
+     "old_rank": 14
+    }
+   ],
+   "moves": [
+    {
+     "ticker": "WELL",
+     "rank": 3,
+     "delta": 5
+    },
+    {
+     "ticker": "HNR1.DE",
+     "rank": 4,
+     "delta": 6
+    },
+    {
+     "ticker": "ADP",
+     "rank": 5,
+     "delta": 7
+    },
+    {
+     "ticker": "ZAL.DE",
+     "rank": 9,
+     "delta": 6
+    },
+    {
+     "ticker": "CCEP",
+     "rank": 12,
+     "delta": -9
+    }
+   ]
   },
   "value": {
    "entries": [],

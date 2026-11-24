@@ -1,72 +1,261 @@
 {
- "date": "2026-11-21",
+ "date": "2026-11-24",
  "ranks": {
   "turnaround": [
-   "ADSK",
-   "SYK",
-   "EXC",
-   "ORLY",
-   "PGR",
-   "CCEP",
-   "PEP",
-   "MCD",
-   "MRK.DE",
-   "AEP",
+   "TSLA",
+   "HON",
    "LOW",
+   "ADSK",
    "ZS",
-   "SHL.DE",
-   "HEN3.DE",
-   "WELL"
-  ],
-  "momentum": [
+   "SYK",
+   "SRT3.DE",
+   "AEP",
+   "KDP",
+   "ABBV",
+   "EXC",
+   "MUV2.DE",
+   "MCD",
    "CCEP",
-   "HEN3.DE",
-   "PGR",
-   "WELL",
-   "ZAL.DE",
-   "MCK",
-   "PG",
-   "QIA.DE",
-   "ADP",
-   "SHL.DE",
-   "IBN",
-   "DUK",
-   "CB",
-   "PANW",
    "CTAS"
   ],
+  "momentum": [
+   "BIIB",
+   "ABBV",
+   "CCEP",
+   "CTAS",
+   "MUV2.DE",
+   "IBN",
+   "KDP",
+   "WELL",
+   "SRT3.DE",
+   "HNR1.DE",
+   "CDW",
+   "ADP",
+   "PG",
+   "PANW",
+   "ZAL.DE"
+  ],
   "value": [
-   "PBR",
+   "TSM",
    "PSX",
-   "AVGO",
    "MU",
    "WDC",
-   "ABNB",
-   "TTE",
    "NEM",
+   "VLO",
+   "TTE",
+   "ABNB",
    "RIO",
    "META",
    "SCCO",
    "REGN",
    "BLK",
-   "MNST",
-   "V"
+   "V",
+   "ENR.DE"
   ]
  },
  "changes": {
   "turnaround": {
-   "entries": [],
-   "exits": [],
-   "moves": []
+   "entries": [
+    {
+     "ticker": "TSLA",
+     "rank": 1
+    },
+    {
+     "ticker": "HON",
+     "rank": 2
+    },
+    {
+     "ticker": "SRT3.DE",
+     "rank": 7
+    },
+    {
+     "ticker": "KDP",
+     "rank": 9
+    },
+    {
+     "ticker": "ABBV",
+     "rank": 10
+    },
+    {
+     "ticker": "MUV2.DE",
+     "rank": 12
+    },
+    {
+     "ticker": "CTAS",
+     "rank": 15
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "ORLY",
+     "old_rank": 4
+    },
+    {
+     "ticker": "PGR",
+     "old_rank": 5
+    },
+    {
+     "ticker": "PEP",
+     "old_rank": 7
+    },
+    {
+     "ticker": "MRK.DE",
+     "old_rank": 9
+    },
+    {
+     "ticker": "SHL.DE",
+     "old_rank": 13
+    },
+    {
+     "ticker": "HEN3.DE",
+     "old_rank": 14
+    },
+    {
+     "ticker": "WELL",
+     "old_rank": 15
+    }
+   ],
+   "moves": [
+    {
+     "ticker": "LOW",
+     "rank": 3,
+     "delta": 8
+    },
+    {
+     "ticker": "ZS",
+     "rank": 5,
+     "delta": 7
+    },
+    {
+     "ticker": "EXC",
+     "rank": 11,
+     "delta": -8
+    },
+    {
+     "ticker": "MCD",
+     "rank": 13,
+     "delta": -5
+    },
+    {
+     "ticker": "CCEP",
+     "rank": 14,
+     "delta": -8
+    }
+   ]
   },
   "momentum": {
-   "entries": [],
-   "exits": [],
-   "moves": []
+   "entries": [
+    {
+     "ticker": "BIIB",
+     "rank": 1
+    },
+    {
+     "ticker": "ABBV",
+     "rank": 2
+    },
+    {
+     "ticker": "MUV2.DE",
+     "rank": 5
+    },
+    {
+     "ticker": "KDP",
+     "rank": 7
+    },
+    {
+     "ticker": "SRT3.DE",
+     "rank": 9
+    },
+    {
+     "ticker": "HNR1.DE",
+     "rank": 10
+    },
+    {
+     "ticker": "CDW",
+     "rank": 11
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "HEN3.DE",
+     "old_rank": 2
+    },
+    {
+     "ticker": "PGR",
+     "old_rank": 3
+    },
+    {
+     "ticker": "MCK",
+     "old_rank": 6
+    },
+    {
+     "ticker": "QIA.DE",
+     "old_rank": 8
+    },
+    {
+     "ticker": "SHL.DE",
+     "old_rank": 10
+    },
+    {
+     "ticker": "DUK",
+     "old_rank": 12
+    },
+    {
+     "ticker": "CB",
+     "old_rank": 13
+    }
+   ],
+   "moves": [
+    {
+     "ticker": "CTAS",
+     "rank": 4,
+     "delta": 11
+    },
+    {
+     "ticker": "IBN",
+     "rank": 6,
+     "delta": 5
+    },
+    {
+     "ticker": "PG",
+     "rank": 13,
+     "delta": -6
+    },
+    {
+     "ticker": "ZAL.DE",
+     "rank": 15,
+     "delta": -10
+    }
+   ]
   },
   "value": {
-   "entries": [],
-   "exits": [],
+   "entries": [
+    {
+     "ticker": "TSM",
+     "rank": 1
+    },
+    {
+     "ticker": "VLO",
+     "rank": 6
+    },
+    {
+     "ticker": "ENR.DE",
+     "rank": 15
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "PBR",
+     "old_rank": 1
+    },
+    {
+     "ticker": "AVGO",
+     "old_rank": 3
+    },
+    {
+     "ticker": "MNST",
+     "old_rank": 14
+    }
+   ],
    "moves": []
   },
   "analyst_flips": []

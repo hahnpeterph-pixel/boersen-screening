@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-11-24 04:16 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.0972._
+_Erstellt 2026-11-24 06:01 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.0972._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -48,8 +48,8 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | P911.DE (P911.DE) | 42.88 | ja | - | ja | 39.52 |
 | Platin (PL=F) | 1294.6 | - | - | ja | 29.48 |
 | Palladium (PA=F) | 886.0 | - | - | ja | 24.1 |
-| Brent Oel (BZ=F) | 86.28 | - | - | ja | 30.77 |
-| WTI Oel (CL=F) | 79.74 | - | - | ja | 31.5 |
+| Brent Oel (BZ=F) | 89.37 | - | ja | ja | 33.91 |
+| WTI Oel (CL=F) | 80.17 | - | - | ja | 31.97 |
 | EUR/CHF (EURCHF=X) | 0.9226 | ja | - | - | 46.48 |
 | EUR/TWD (EURTWD=X) | 34.986 | - | - | ja | 40.6 |
 

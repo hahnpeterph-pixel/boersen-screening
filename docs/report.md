@@ -1,8 +1,8 @@
 # Boersen-Screening - 2026-11-24
 
-_Stand: Schlusskurse vom 2026-11-24, aber 262 Werte haengen zurueck - siehe Standwarnung. Erstellt 2026-11-24T04:16:40+00:00 UTC. 271 Werte ausgewertet._
+_Stand: Schlusskurse vom 2026-11-24, aber 261 Werte haengen zurueck - siehe Standwarnung. Erstellt 2026-11-24T06:00:54+00:00 UTC. 270 Werte ausgewertet._
 
-> **Standwarnung: 262 von 271 Werten haengen zurueck.** Neuester Handelstag im Bericht ist 2026-11-24.
+> **Standwarnung: 261 von 270 Werten haengen zurueck.** Neuester Handelstag im Bericht ist 2026-11-24.
 >
 > Ursache ist in aller Regel Yahoo: die vorlaeufige Tageskerze einer Boerse wird ueber Nacht durch die offizielle Abrechnung ersetzt, und solange die fehlt, faellt der Tag weg. Betroffen sind meist die europaeischen Notierungen. Fuer diese Werte gelten Kurs, ATR, RSI und Tiefs unten NICHT fuer den neuesten Handelstag.
 >
@@ -15,7 +15,6 @@ _Stand: Schlusskurse vom 2026-11-24, aber 262 Werte haengen zurueck - siehe Stan
 > | ASML | 2026-11-20 |
 > | AZN | 2026-11-20 |
 > | BAS.DE | 2026-11-20 |
-> | BAYN.DE | 2026-11-20 |
 > | BBVA | 2026-11-20 |
 > | BEI.DE | 2026-11-20 |
 > | BMW.DE | 2026-11-20 |
@@ -282,12 +281,12 @@ _Stand: Schlusskurse vom 2026-11-24, aber 262 Werte haengen zurueck - siehe Stan
 
 ## 🎯 Analysten-Filter (Kursziel ≥15%, Kaufen-Anteil ≥75%)
 
-_Ueber alle 271 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei Gleichstand nach Kurspotenzial. Maximal 20 Treffer. Value-Trap-Ausschluesse gelten auch hier. RSI auf drei Zeitebenen, jeweils echt neu berechnet (nicht umgerechnet): Tag, Woche, Stunde. "k.A." bei Stunde heisst: fuer diesen Wert lagen keine verwertbaren Stundenkerzen vor._
+_Ueber alle 270 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei Gleichstand nach Kurspotenzial. Maximal 20 Treffer. Value-Trap-Ausschluesse gelten auch hier. RSI auf drei Zeitebenen, jeweils echt neu berechnet (nicht umgerechnet): Tag, Woche, Stunde. "k.A." bei Stunde heisst: fuer diesen Wert lagen keine verwertbaren Stundenkerzen vor._
 
 | Rang | Ticker | ISIN | Name | Index | Kurs | Abstand ATH (Info) | Kaufen-Anteil Analysten | Kursziel | RSI Tag | RSI Woche | RSI Stunde | Letztes Rating |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 1 | MU | US5951121038 | Micron Technology, Inc. | NASDAQ | 707.70 | -42% | 100% (13 Banken, ≤120T) | 1550.00 (119% ueber Kurs) | 42 | 44 | 57 | keine in 30T |
-| 2 | SKHY | AR0272347318 | SK hynix Inc. | Watchlist | 1177000.00 | -60% | 100% (10 Banken, ≤120T) | 2226223.07 (89% ueber Kurs) | 44 | 41 | 60 | 2026-10-28 RBC Capital: Rating bestaetigt: Outperform |
+| 2 | SKHY | AR0272347318 | SK hynix Inc. | Watchlist | 1176500.00 | -60% | 100% (10 Banken, ≤120T) | 2226223.07 (89% ueber Kurs) | 44 | 41 | 59 | 2026-10-28 RBC Capital: Rating bestaetigt: Outperform |
 | 3 | LRCX | - | Lam Research Corporation | NASDAQ | 209.76 | -52% | 100% (9 Banken, ≤120T) | 350.00 (67% ueber Kurs) | 42 | 41 | 56 | 2026-11-09 B. Riley Securities: Rating bestaetigt: Buy |
 | 4 | DDOG | US23804L1035 | Datadog, Inc. | NASDAQ | 169.02 | -42% | 100% (21 Banken, ≤120T) | 275.00 (63% ueber Kurs) | 33 | 41 | 53 | 2026-11-05 Citigroup: Rating bestaetigt: Buy |
 | 5 | ETN | - | Eaton Corporation, PLC | Watchlist | 336.34 | -27% | 100% (7 Banken, ≤120T) | 485.00 (44% ueber Kurs) | 42 | 39 | 56 | 2026-11-10 Evercore ISI Group: Rating bestaetigt: Outperform |
@@ -419,6 +418,6 @@ _Ueber alle 271 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 
 ---
 
-_Nicht auswertbar heute (2): HONA, SPCX_
+_Nicht auswertbar heute (3): BAYN.DE, HONA, SPCX_
 
 _Automatisch erzeugte Kennzahlensortierung, keine Anlageberatung._

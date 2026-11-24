@@ -1,4 +1,4 @@
-Lauf 2026-11-24 04:34 UTC, pandas 3.1.1, yfinance 1.8.0
+Lauf 2026-11-24 06:25 UTC, pandas 3.1.1, yfinance 1.8.0
   ^VIX: 3999 Kerzen bis 2026-11-23
   ^V1X: keine Daten
   V1X.DE: keine Daten
@@ -7,7 +7,7 @@ Lauf 2026-11-24 04:34 UTC, pandas 3.1.1, yfinance 1.8.0
   ^V2TX: keine Daten
   V2TX.DE: keine Daten
   DAX-Schwankung (gemessen, 21T): 4032 Tage bis 2026-11-23
-  Fear & Greed: 246 Tage bis 2026-11-23
+  Fear & Greed: 247 Tage bis 2026-11-24
   Fear & Greed Historie: 3973 Tage 2011-01-03 bis 2026-11-20; Kontrolle 2021-02-23: 51 (PDF 57), 2022-01-24: 23 (PDF 23), 2022-05-12: 3 (PDF 3), 2023-06-09: 77 (PDF 76), 2024-08-02: 41 (PDF 41), 2025-11-06: 24 (PDF 24)
-stimmung.csv: 4103 Tage, VIX 3999, VDAX 4032, F&G 3974
-Stimmung: VIX 26,6 (unruhig, 5T +3,7, 23.11.) · DAX-Schwankung gemessen 21,5 (unruhig, 5T +4,7, 23.11.) · Fear & Greed 17 (extreme Angst, Vortag -2, 23.11.)
+stimmung.csv: 4104 Tage, VIX 3999, VDAX 4032, F&G 3975
+Stimmung: VIX 26,6 (unruhig, 5T +3,7, 23.11.) · DAX-Schwankung gemessen 21,5 (unruhig, 5T +4,7, 23.11.) · Fear & Greed 17 (extreme Angst, Vortag 0, 24.11.)

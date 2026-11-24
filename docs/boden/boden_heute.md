@@ -1,4 +1,4 @@
-# Boden-Screening 2026-11-23 (Stand 2026-11-24 04:34 UTC)
+# Boden-Screening 2026-11-23 (Stand 2026-11-24 06:25 UTC)
 
 Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RSI < 50 + mind. 2 Boden-Punkte (nur Technik). Die Filter (Analysten, Anker, CRV 2:1) stehen in docs/heute.csv. Boden-Anker = niedrigster Puffer mit 60 % Halterate fuer diese Gruppe und diesen Wert (Vollauf), KO-Marke = Bezugstief - Anker x ATR.
 

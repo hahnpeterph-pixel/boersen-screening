@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-11-25 02:59 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.0908._
+_Erstellt 2026-11-25 04:55 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.0908._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -60,6 +60,7 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | SPCX (SPCX) | 125.81 | - | - | ja | 38.98 |
 | HSBC (HSBC) | 12.402 | - | ja | ja | 34.46 |
 | RIO (RIO) | 55.4 | - | - | ja | 26.56 |
+| PBR (PBR) | 46.62 | - | - | ja | 25.72 |
 | IBN (IBN) | 1585.5 | - | - | ja | 65.34 |
 | GFS (GFS) | 36.42 | - | - | ja | 38.15 |
 | MSTR (MSTR) | 77.55 | - | - | ja | 24.64 |
@@ -72,10 +73,12 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | IFX.DE (IFX.DE) | 43.56 | - | - | ja | 36.12 |
 | SIE.DE (SIE.DE) | 255.05 | - | - | ja | 40.73 |
 | ENR.DE (ENR.DE) | 117.55 | - | - | ja | 41.78 |
-| Silber (SI=F) | 40.685 | - | - | ja | 26.52 |
-| Platin (PL=F) | 1257.1 | - | - | ja | 28.16 |
-| Brent Oel (BZ=F) | 87.59 | - | - | ja | 31.89 |
-| Kupfer (HG=F) | 5.4675 | - | - | ja | 25.92 |
+| Gold (GC=F) | 3547.8999 | - | - | ja | 29.59 |
+| Silber (SI=F) | 40.57 | - | - | ja | 26.37 |
+| Platin (PL=F) | 1248.0 | - | - | ja | 27.86 |
+| Palladium (PA=F) | 850.5 | - | - | ja | 22.77 |
+| Brent Oel (BZ=F) | 87.5 | - | - | ja | 31.79 |
+| Kupfer (HG=F) | 5.445 | - | - | ja | 25.52 |
 
 ---
 

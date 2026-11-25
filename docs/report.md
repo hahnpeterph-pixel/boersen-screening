@@ -1,8 +1,8 @@
 # Boersen-Screening - 2026-11-25
 
-_Stand: Schlusskurse vom 2026-11-25, aber 261 Werte haengen zurueck - siehe Standwarnung. Erstellt 2026-11-25T02:58:49+00:00 UTC. 270 Werte ausgewertet._
+_Stand: Schlusskurse vom 2026-11-25, aber 260 Werte haengen zurueck - siehe Standwarnung. Erstellt 2026-11-25T04:55:26+00:00 UTC. 271 Werte ausgewertet._
 
-> **Standwarnung: 261 von 270 Werten haengen zurueck.** Neuester Handelstag im Bericht ist 2026-11-25.
+> **Standwarnung: 260 von 271 Werten haengen zurueck.** Neuester Handelstag im Bericht ist 2026-11-25.
 >
 > Ursache ist in aller Regel Yahoo: die vorlaeufige Tageskerze einer Boerse wird ueber Nacht durch die offizielle Abrechnung ersetzt, und solange die fehlt, faellt der Tag weg. Betroffen sind meist die europaeischen Notierungen. Fuer diese Werte gelten Kurs, ATR, RSI und Tiefs unten NICHT fuer den neuesten Handelstag.
 >
@@ -34,12 +34,10 @@ _Stand: Schlusskurse vom 2026-11-25, aber 261 Werte haengen zurueck - siehe Stan
 > | EQNR | 2026-11-23 |
 > | FRE.DE | 2026-11-23 |
 > | GSK | 2026-11-23 |
-> | HDB | 2026-11-23 |
 > | HEI.DE | 2026-11-23 |
 > | HEN3.DE | 2026-11-23 |
 > | HNR1.DE | 2026-11-23 |
 > | HSBC | 2026-11-23 |
-> | IBN | 2026-11-23 |
 > | IFX.DE | 2026-11-23 |
 > | ING | 2026-11-23 |
 > | MBG.DE | 2026-11-23 |
@@ -49,6 +47,7 @@ _Stand: Schlusskurse vom 2026-11-25, aber 261 Werte haengen zurueck - siehe Stan
 > | NVO | 2026-11-23 |
 > | P911.DE | 2026-11-23 |
 > | PAH3.DE | 2026-11-23 |
+> | PBR | 2026-11-23 |
 > | QIA.DE | 2026-11-23 |
 > | RHM.DE | 2026-11-23 |
 > | RIO | 2026-11-23 |
@@ -88,6 +87,7 @@ _Stand: Schlusskurse vom 2026-11-25, aber 261 Werte haengen zurueck - siehe Stan
 > | ARM | 2026-11-24 |
 > | AVGO | 2026-11-24 |
 > | AXON | 2026-11-24 |
+> | AXP | 2026-11-24 |
 > | BA | 2026-11-24 |
 > | BAC | 2026-11-24 |
 > | BIIB | 2026-11-24 |
@@ -208,7 +208,6 @@ _Stand: Schlusskurse vom 2026-11-25, aber 261 Werte haengen zurueck - siehe Stan
 > | ORLY | 2026-11-24 |
 > | PANW | 2026-11-24 |
 > | PAYX | 2026-11-24 |
-> | PBR | 2026-11-24 |
 > | PCAR | 2026-11-24 |
 > | PDD | 2026-11-24 |
 > | PEP | 2026-11-24 |
@@ -281,29 +280,29 @@ _Stand: Schlusskurse vom 2026-11-25, aber 261 Werte haengen zurueck - siehe Stan
 
 ## 🎯 Analysten-Filter (Kursziel ≥15%, Kaufen-Anteil ≥75%)
 
-_Ueber alle 270 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei Gleichstand nach Kurspotenzial. Maximal 20 Treffer. Value-Trap-Ausschluesse gelten auch hier. RSI auf drei Zeitebenen, jeweils echt neu berechnet (nicht umgerechnet): Tag, Woche, Stunde. "k.A." bei Stunde heisst: fuer diesen Wert lagen keine verwertbaren Stundenkerzen vor._
+_Ueber alle 271 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei Gleichstand nach Kurspotenzial. Maximal 20 Treffer. Value-Trap-Ausschluesse gelten auch hier. RSI auf drei Zeitebenen, jeweils echt neu berechnet (nicht umgerechnet): Tag, Woche, Stunde. "k.A." bei Stunde heisst: fuer diesen Wert lagen keine verwertbaren Stundenkerzen vor._
 
 | Rang | Ticker | ISIN | Name | Index | Kurs | Abstand ATH (Info) | Kaufen-Anteil Analysten | Kursziel | RSI Tag | RSI Woche | RSI Stunde | Letztes Rating |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | MU | US5951121038 | Micron Technology, Inc. | NASDAQ | 629.79 | -48% | 100% (13 Banken, ≤120T) | 1550.00 (146% ueber Kurs) | 37 | 40 | 40 | keine in 30T |
-| 2 | SKHY | AR0272347318 | SK hynix Inc. | Watchlist | 1059000.00 | -64% | 100% (10 Banken, ≤120T) | 2226223.07 (110% ueber Kurs) | 37 | 38 | 38 | 2026-10-28 RBC Capital: Rating bestaetigt: Outperform |
+| 1 | SKHY | AR0272347318 | SK hynix Inc. | Watchlist | 1044000.00 | -64% | 100% (10 Banken, ≤120T) | 2585283.01 (148% ueber Kurs) | 37 | 38 | 36 | 2026-10-28 RBC Capital: Rating bestaetigt: Outperform |
+| 2 | MU | US5951121038 | Micron Technology, Inc. | NASDAQ | 629.79 | -48% | 100% (13 Banken, ≤120T) | 1540.00 (144% ueber Kurs) | 37 | 40 | 40 | keine in 30T |
 | 3 | LRCX | - | Lam Research Corporation | NASDAQ | 196.16 | -55% | 100% (9 Banken, ≤120T) | 350.00 (78% ueber Kurs) | 39 | 38 | 44 | 2026-11-09 B. Riley Securities: Rating bestaetigt: Buy |
-| 4 | DDOG | US23804L1035 | Datadog, Inc. | NASDAQ | 165.38 | -44% | 100% (21 Banken, ≤120T) | 275.00 (66% ueber Kurs) | 32 | 40 | 46 | 2026-11-05 Citigroup: Rating bestaetigt: Buy |
-| 5 | TSM | US8740391003 | Taiwan Semiconductor Manufactur | Watchlist | 2055.00 | -20% | 100% (5 Banken, ≤120T) | 3126.51 (52% ueber Kurs) | 39 | 41 | 41 | 2026-11-04 Bernstein: Rating bestaetigt: Outperform |
-| 6 | ETN | - | Eaton Corporation, PLC | Watchlist | 319.27 | -30% | 100% (7 Banken, ≤120T) | 485.00 (52% ueber Kurs) | 38 | 34 | 40 | 2026-11-10 Evercore ISI Group: Rating bestaetigt: Outperform |
-| 7 | ADI | US0326541051 | Analog Devices, Inc. | NASDAQ | 312.95 | -30% | 100% (10 Banken, ≤120T) | 467.50 (49% ueber Kurs) | 33 | 39 | 29 | keine in 30T |
-| 8 | ANET | US0404132054 | Arista Networks, Inc. | Watchlist | 168.56 | -22% | 100% (16 Banken, ≤120T) | 245.00 (45% ueber Kurs) | 43 | 47 | 38 | 2026-11-04 UBS: Rating bestaetigt: Buy |
+| 4 | TSM | US8740391003 | Taiwan Semiconductor Manufactur | Watchlist | 2135.00 | -17% | 100% (5 Banken, ≤120T) | 3576.17 (68% ueber Kurs) | 42 | 45 | 50 | 2026-11-04 Bernstein: Rating bestaetigt: Outperform |
+| 5 | DDOG | US23804L1035 | Datadog, Inc. | NASDAQ | 165.38 | -44% | 100% (21 Banken, ≤120T) | 275.00 (66% ueber Kurs) | 32 | 40 | 46 | 2026-11-05 Citigroup: Rating bestaetigt: Buy |
+| 6 | ETN | - | Eaton Corporation, PLC | Watchlist | 319.27 | -30% | 100% (7 Banken, ≤120T) | 480.00 (50% ueber Kurs) | 38 | 34 | 40 | 2026-11-10 Evercore ISI Group: Rating bestaetigt: Outperform |
+| 7 | ANET | US0404132054 | Arista Networks, Inc. | Watchlist | 168.56 | -22% | 100% (16 Banken, ≤120T) | 245.00 (45% ueber Kurs) | 43 | 47 | 38 | 2026-11-04 UBS: Rating bestaetigt: Buy |
+| 8 | ADI | US0326541051 | Analog Devices, Inc. | NASDAQ | 312.95 | -30% | 100% (10 Banken, ≤120T) | 454.00 (45% ueber Kurs) | 33 | 39 | 29 | keine in 30T |
 | 9 | CEG | - | Constellation Energy Corporatio | NASDAQ | 244.84 | -39% | 100% (8 Banken, ≤120T) | 346.00 (41% ueber Kurs) | 42 | 45 | 38 | 2026-10-30 Morgan Stanley: Rating bestaetigt: Overweight |
 | 10 | CVS | US1266501006 | CVS Health Corporation | SP100 | 80.69 | -26% | 100% (7 Banken, ≤120T) | 109.00 (35% ueber Kurs) | 38 | 41 | 44 | 2026-11-12 Wells Fargo: Rating bestaetigt: Overweight |
 | 11 | TTWO | - | Take-Two Interactive Software, | NASDAQ | 220.41 | -16% | 100% (11 Banken, ≤120T) | 290.00 (32% ueber Kurs) | 56 | 51 | 58 | 2026-11-10 UBS: Rating bestaetigt: Buy |
 | 12 | MSFT | - | Microsoft Corporation | NASDAQ/DOW | 496.13 | -11% | 100% (23 Banken, ≤120T) | 631.00 (27% ueber Kurs) | 41 | 54 | 48 | 2026-10-29 Bernstein: Rating bestaetigt: Outperform |
-| 13 | GM | - | General Motors Company | SP100 | 82.32 | -11% | 100% (9 Banken, ≤120T) | 100.00 (22% ueber Kurs) | 47 | 51 | 54 | 2026-10-28 Tigress Financial: Rating bestaetigt: Strong Buy |
+| 13 | GM | - | General Motors Company | SP100 | 82.32 | -11% | 100% (8 Banken, ≤120T) | 100.00 (22% ueber Kurs) | 47 | 51 | 54 | 2026-10-28 Tigress Financial: Rating bestaetigt: Strong Buy |
 | 14 | BLK | US09290D1019 | BlackRock, Inc. | SP100 | 1146.03 | -6% | 100% (9 Banken, ≤120T) | 1352.50 (18% ueber Kurs) | 48 | 54 | 50 | 2026-11-06 Evercore ISI Group: Rating bestaetigt: Outperform |
 | 15 | SPGI | US78409V1044 | S&P Global Inc. | Watchlist | 455.17 | -14% | 100% (10 Banken, ≤120T) | 525.00 (15% ueber Kurs) | 52 | 56 | 56 | 2026-11-02 Barclays: Rating bestaetigt: Overweight |
 | 16 | AMZN | - | Amazon.com, Inc. | NASDAQ/DOW | 252.29 | -11% | 96% (26 Banken, ≤120T) | 328.00 (30% ueber Kurs) | 46 | 50 | 42 | 2026-11-03 Freedom Broker: Rating bestaetigt: Buy |
 | 17 | AVGO | CA11134P1009 | Broadcom Inc. | NASDAQ | 301.08 | -37% | 94% (16 Banken, ≤120T) | 525.00 (74% ueber Kurs) | 41 | 41 | 33 | 2026-10-27 Rosenblatt: Rating bestaetigt: Buy |
 | 18 | UBER | US90353T1007 | Uber Technologies, Inc. | SP100 | 64.70 | -35% | 94% (18 Banken, ≤120T) | 99.20 (53% ueber Kurs) | 39 | 41 | 42 | 2026-11-06 UBS: Rating bestaetigt: Buy |
-| 19 | ASML | USN070592100 | ASML Holding N.V. - New York Re | NASDAQ | 1272.20 | -26% | 93% (41 Banken, ≤120T) | 2068.55 (63% ueber Kurs) | 43 | 44 | 35 | keine in 30T |
+| 19 | ASML | USN070592100 | ASML Holding N.V. - New York Re | NASDAQ | 1272.20 | -26% | 93% (41 Banken, ≤120T) | 2018.07 (59% ueber Kurs) | 43 | 44 | 35 | keine in 30T |
 | 20 | IFX.DE | - | INFINEON TECHNOLOGIES AG | DAX | 48.42 | -45% | 92% (25 Banken, ≤120T) | 80.00 (65% ueber Kurs) | 44 | 43 | 26 | keine in 30T |
 
 
@@ -414,6 +413,6 @@ _Ueber alle 270 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 
 ---
 
-_Nicht auswertbar heute (3): AXP, HONA, SPCX_
+_Nicht auswertbar heute (2): HONA, SPCX_
 
 _Automatisch erzeugte Kennzahlensortierung, keine Anlageberatung._

@@ -1,61 +1,14 @@
 ticker,boerse,fehlend,gefuellt,wochenkontrolle
-ADS.DE,XETRA,,2026-11-24:archiv,
-AIR.DE,XETRA,,2026-11-24:archiv,
-ALV.DE,XETRA,,2026-11-24:archiv,
-ASML,Euronext,,2026-11-24:archiv,
-AZN,LSE,,2026-11-24:stunden,
-BAS.DE,XETRA,,2026-11-24:archiv,
-BAYN.DE,XETRA,,2026-11-24:archiv,
-BBVA,BME,,2026-11-24:stunden,
-BEI.DE,XETRA,,2026-11-24:archiv,
-BMW.DE,XETRA,,2026-11-24:archiv,
-BNR.DE,XETRA,,2026-11-24:archiv,
-BP,LSE,,2026-11-24:stunden,
-BTI,LSE,,2026-11-24:stunden,
-CBK.DE,XETRA,,2026-11-24:archiv,
-CON.DE,XETRA,,2026-11-24:archiv,
-DB1.DE,XETRA,,2026-11-24:archiv,
-DBK.DE,XETRA,,2026-11-24:archiv,
-DHL.DE,XETRA,,2026-11-24:archiv,
-DTE.DE,XETRA,,2026-11-24:archiv,
-DTG.DE,XETRA,,2026-11-24:archiv,
-ENR.DE,XETRA,,2026-11-24:archiv,
-EOAN.DE,XETRA,,2026-11-24:archiv,
-EQNR,OSL,,2026-11-24:stunden,
-FRE.DE,XETRA,,2026-11-24:archiv,
-GSK,LSE,,2026-11-24:stunden,
-HEI.DE,XETRA,,2026-11-24:archiv,
-HEN3.DE,XETRA,,2026-11-24:archiv,
-HNR1.DE,XETRA,,2026-11-24:archiv,
-HSBC,LSE,,2026-11-24:stunden,
-IFX.DE,XETRA,,2026-11-24:archiv,
-ING,Euronext,,2026-11-24:stunden,
-MBG.DE,XETRA,,2026-11-24:archiv,
-MRK.DE,XETRA,,2026-11-24:archiv,
-MTX.DE,XETRA,,2026-11-24:archiv,
-MUV2.DE,XETRA,,2026-11-24:archiv,
-NVO,CPH,,2026-11-24:stunden,
-P911.DE,XETRA,,2026-11-24:archiv,
-PAH3.DE,XETRA,,2026-11-24:archiv,
-PBR,B3,,2026-11-24:stunden,
-QIA.DE,XETRA,,2026-11-24:archiv,
-RHM.DE,XETRA,,2026-11-24:archiv,
-RIO,LSE,,2026-11-24:stunden,
-RWE.DE,XETRA,,2026-11-24:archiv,
-SAN,BME,,2026-11-24:stunden,
-SAP.DE,XETRA,,2026-11-24:archiv,
-SHEL,LSE,,2026-11-24:stunden,
-SHL.DE,XETRA,,2026-11-24:archiv,
-SIE.DE,XETRA,,2026-11-24:archiv,
+BABA,HKEX,2026-11-25,,2026-11-25: Wochentief 79.50 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+BHP,ASX,2026-11-25,,2026-11-25: Wochentief 50.94 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+HDB,NSE,2026-11-25,,2026-11-25: Wochentief 814.05 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+IBN,NSE,2026-11-25,,2026-11-25: Wochentief 1585.50 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+MFG,TSE,2026-11-25,2026-11-25:stunden,2026-11-25: Wochentief 7362.00 liegt UNTER allen bekannten Tagestiefs (7405.00) - der fehlende Tag hatte ein tieferes Tief
+MUFG,TSE,2026-11-25,2026-11-25:stunden,2026-11-25: Wochentief 3048.00 liegt UNTER allen bekannten Tagestiefs (3082.00) - der fehlende Tag hatte ein tieferes Tief
+SKHY,KRX,2026-11-25,2026-11-25:stunden,2026-11-25: Wochentief 1027000.00 liegt UNTER allen bekannten Tagestiefs (1044000.00) - der fehlende Tag hatte ein tieferes Tief
+SMFG,TSE,2026-11-25,2026-11-25:stunden,2026-11-25: Wochentief 2942.50 liegt UNTER allen bekannten Tagestiefs (2959.00) - der fehlende Tag hatte ein tieferes Tief
 SNDK,USA,,2026-11-20:archiv 2026-11-23:archiv 2026-11-24:archiv,
-SNY,Euronext,,2026-11-24:stunden,
-SRT3.DE,XETRA,,2026-11-24:archiv,
-SY1.DE,XETRA,,2026-11-24:archiv,
-TSM,TWSE,2026-10-23,,2026-10-23: Wochentief 2385.00 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
-TTE,Euronext,,2026-11-24:stunden,
-UBS,SIX,,2026-11-24:stunden,
-UL,LSE,,2026-11-24:stunden,
-VNA.DE,XETRA,,2026-11-24:archiv,
-VOW3.DE,XETRA,,2026-11-24:archiv,
-ZAL.DE,XETRA,,2026-11-24:archiv,
+SONY,TSE,2026-11-25,2026-11-25:stunden,2026-11-25: Wochentief 4282.00 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+TM,TSE,2026-11-25,2026-11-25:stunden,2026-11-25: Wochentief 3290.00 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+TSM,TWSE,2026-10-23 2026-11-25,,2026-10-23: Wochentief 2385.00 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle); 2026-11-25: Wochentief 1970.00 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
 ^TNX,USA,,2026-10-12:stunden 2026-11-11:stunden,

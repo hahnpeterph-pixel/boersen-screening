@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-11-25 04:55 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.0908._
+_Erstellt 2026-11-25 15:24 UTC. 296 Werte, Fenster 90 Kalendertage. EUR/USD 1.0908._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -21,7 +21,7 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | AMAT (AMAT) | 323.76 | - | - | ja | 39.18 |
 | AMD (AMD) | 413.27 | - | - | ja | 38.68 |
 | ARM (ARM) | 161.56 | - | - | ja | 38.2 |
-| ASML (ASML) | 1198.8 | - | - | ja | 38.24 |
+| ASML (ASML) | 1201.2 | - | - | ja | 38.37 |
 | AVGO (AVGO) | 301.08 | - | - | ja | 40.8 |
 | CDNS (CDNS) | 296.6 | - | - | ja | 41.17 |
 | CDW (CDW) | 164.16 | - | - | ja | 52.0 |
@@ -58,27 +58,24 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | VLO (VLO) | 324.67 | - | - | ja | 31.1 |
 | EQIX (EQIX) | 982.77 | - | - | ja | 43.12 |
 | SPCX (SPCX) | 125.81 | - | - | ja | 38.98 |
-| HSBC (HSBC) | 12.402 | - | ja | ja | 34.46 |
-| RIO (RIO) | 55.4 | - | - | ja | 26.56 |
-| PBR (PBR) | 46.62 | - | - | ja | 25.72 |
+| HSBC (HSBC) | 12.392 | - | ja | ja | 34.35 |
+| RIO (RIO) | 55.5 | - | - | ja | 26.73 |
+| PBR (PBR) | 46.31 | - | - | ja | 25.19 |
+| ING (ING) | 27.215 | - | - | ja | 35.8 |
 | IBN (IBN) | 1585.5 | - | - | ja | 65.34 |
 | GFS (GFS) | 36.42 | - | - | ja | 38.15 |
 | MSTR (MSTR) | 77.55 | - | - | ja | 24.64 |
-| BAS.DE (BAS.DE) | 49.1 | - | ja | ja | 31.44 |
+| BAS.DE (BAS.DE) | 49.15 | - | ja | ja | 31.62 |
 | BMW.DE (BMW.DE) | 53.26 | ja | - | - | 32.46 |
-| CBK.DE (CBK.DE) | 35.65 | - | - | ja | 34.0 |
-| CON.DE (CON.DE) | 69.12 | - | ja | ja | 45.46 |
-| DTG.DE (DTG.DE) | 40.22 | - | ja | ja | 41.67 |
-| DHL.DE (DHL.DE) | 56.36 | - | - | ja | 39.54 |
-| IFX.DE (IFX.DE) | 43.56 | - | - | ja | 36.12 |
-| SIE.DE (SIE.DE) | 255.05 | - | - | ja | 40.73 |
-| ENR.DE (ENR.DE) | 117.55 | - | - | ja | 41.78 |
-| Gold (GC=F) | 3547.8999 | - | - | ja | 29.59 |
-| Silber (SI=F) | 40.57 | - | - | ja | 26.37 |
+| CBK.DE (CBK.DE) | 35.55 | - | - | ja | 33.62 |
+| CON.DE (CON.DE) | 68.78 | - | ja | ja | 44.52 |
+| DTG.DE (DTG.DE) | 40.14 | - | ja | ja | 41.26 |
+| DHL.DE (DHL.DE) | 56.32 | - | - | ja | 39.4 |
+| IFX.DE (IFX.DE) | 43.735 | - | - | ja | 36.36 |
+| SIE.DE (SIE.DE) | 254.65 | - | - | ja | 40.52 |
+| ENR.DE (ENR.DE) | 117.88 | - | - | ja | 41.99 |
 | Platin (PL=F) | 1248.0 | - | - | ja | 27.86 |
 | Palladium (PA=F) | 850.5 | - | - | ja | 22.77 |
-| Brent Oel (BZ=F) | 87.5 | - | - | ja | 31.79 |
-| Kupfer (HG=F) | 5.445 | - | - | ja | 25.52 |
 
 ---
 

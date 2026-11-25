@@ -1,46 +1,46 @@
 {
- "date": "2026-11-24",
+ "date": "2026-11-25",
  "ranks": {
   "turnaround": [
    "ADSK",
-   "HON",
-   "TJX",
-   "CTSH",
-   "AZN",
-   "SYK",
    "AMT",
-   "TSLA",
-   "EOAN.DE",
-   "SRT3.DE",
-   "NEE",
-   "LOW",
+   "HON",
    "IBM",
-   "AEP",
-   "KDP"
+   "NEE",
+   "ACN",
+   "NVS",
+   "TJX",
+   "SYK",
+   "MAR",
+   "DHR",
+   "SPOT",
+   "MCD",
+   "KDP",
+   "UPS"
   ],
   "momentum": [
    "ABBV",
-   "BIIB",
+   "TRV",
    "WELL",
-   "HNR1.DE",
    "ADP",
-   "SNY",
+   "BIIB",
+   "AAPL",
    "CTAS",
-   "MUV2.DE",
+   "VRTX",
    "ZAL.DE",
    "IBN",
-   "KDP",
-   "CCEP",
-   "PG",
-   "CDW",
-   "AAPL"
+   "PGR",
+   "MAR",
+   "SPOT",
+   "MMM",
+   "SONY"
   ],
   "value": [
-   "TSM",
    "PSX",
    "MU",
    "NEM",
    "WDC",
+   "MSFT",
    "VLO",
    "ABNB",
    "TTE",
@@ -49,147 +49,185 @@
    "META",
    "BLK",
    "REGN",
-   "ENR.DE",
-   "V"
+   "ROST",
+   "ENR.DE"
   ]
  },
  "changes": {
   "turnaround": {
    "entries": [
     {
-     "ticker": "TJX",
-     "rank": 3
+     "ticker": "ACN",
+     "rank": 6
     },
     {
-     "ticker": "CTSH",
-     "rank": 4
-    },
-    {
-     "ticker": "AZN",
-     "rank": 5
-    },
-    {
-     "ticker": "AMT",
+     "ticker": "NVS",
      "rank": 7
     },
     {
-     "ticker": "EOAN.DE",
-     "rank": 9
+     "ticker": "MAR",
+     "rank": 10
     },
     {
-     "ticker": "NEE",
+     "ticker": "DHR",
      "rank": 11
     },
     {
-     "ticker": "IBM",
+     "ticker": "SPOT",
+     "rank": 12
+    },
+    {
+     "ticker": "MCD",
      "rank": 13
+    },
+    {
+     "ticker": "UPS",
+     "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "ZS",
+     "ticker": "CTSH",
+     "old_rank": 4
+    },
+    {
+     "ticker": "AZN",
      "old_rank": 5
     },
     {
-     "ticker": "ABBV",
+     "ticker": "TSLA",
+     "old_rank": 8
+    },
+    {
+     "ticker": "EOAN.DE",
+     "old_rank": 9
+    },
+    {
+     "ticker": "SRT3.DE",
      "old_rank": 10
     },
     {
-     "ticker": "EXC",
-     "old_rank": 11
-    },
-    {
-     "ticker": "MUV2.DE",
+     "ticker": "LOW",
      "old_rank": 12
     },
     {
-     "ticker": "MCD",
-     "old_rank": 13
-    },
-    {
-     "ticker": "CCEP",
+     "ticker": "AEP",
      "old_rank": 14
-    },
-    {
-     "ticker": "CTAS",
-     "old_rank": 15
     }
    ],
    "moves": [
     {
-     "ticker": "TSLA",
+     "ticker": "AMT",
+     "rank": 2,
+     "delta": 5
+    },
+    {
+     "ticker": "IBM",
+     "rank": 4,
+     "delta": 9
+    },
+    {
+     "ticker": "NEE",
+     "rank": 5,
+     "delta": 6
+    },
+    {
+     "ticker": "TJX",
      "rank": 8,
-     "delta": -7
-    },
-    {
-     "ticker": "LOW",
-     "rank": 12,
-     "delta": -9
-    },
-    {
-     "ticker": "AEP",
-     "rank": 14,
-     "delta": -6
-    },
-    {
-     "ticker": "KDP",
-     "rank": 15,
-     "delta": -6
+     "delta": -5
     }
    ]
   },
   "momentum": {
    "entries": [
     {
-     "ticker": "SNY",
-     "rank": 6
+     "ticker": "TRV",
+     "rank": 2
     },
     {
-     "ticker": "AAPL",
+     "ticker": "VRTX",
+     "rank": 8
+    },
+    {
+     "ticker": "PGR",
+     "rank": 11
+    },
+    {
+     "ticker": "MAR",
+     "rank": 12
+    },
+    {
+     "ticker": "SPOT",
+     "rank": 13
+    },
+    {
+     "ticker": "MMM",
+     "rank": 14
+    },
+    {
+     "ticker": "SONY",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "SRT3.DE",
-     "old_rank": 9
+     "ticker": "HNR1.DE",
+     "old_rank": 4
     },
     {
-     "ticker": "PANW",
+     "ticker": "SNY",
+     "old_rank": 6
+    },
+    {
+     "ticker": "MUV2.DE",
+     "old_rank": 8
+    },
+    {
+     "ticker": "KDP",
+     "old_rank": 11
+    },
+    {
+     "ticker": "CCEP",
+     "old_rank": 12
+    },
+    {
+     "ticker": "PG",
+     "old_rank": 13
+    },
+    {
+     "ticker": "CDW",
      "old_rank": 14
     }
    ],
    "moves": [
     {
-     "ticker": "WELL",
-     "rank": 3,
-     "delta": 5
-    },
-    {
-     "ticker": "HNR1.DE",
-     "rank": 4,
-     "delta": 6
-    },
-    {
-     "ticker": "ADP",
-     "rank": 5,
-     "delta": 7
-    },
-    {
-     "ticker": "ZAL.DE",
-     "rank": 9,
-     "delta": 6
-    },
-    {
-     "ticker": "CCEP",
-     "rank": 12,
-     "delta": -9
+     "ticker": "AAPL",
+     "rank": 6,
+     "delta": 9
     }
    ]
   },
   "value": {
-   "entries": [],
-   "exits": [],
+   "entries": [
+    {
+     "ticker": "MSFT",
+     "rank": 5
+    },
+    {
+     "ticker": "ROST",
+     "rank": 14
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "TSM",
+     "old_rank": 1
+    },
+    {
+     "ticker": "V",
+     "old_rank": 15
+    }
+   ],
    "moves": []
   },
   "analyst_flips": []

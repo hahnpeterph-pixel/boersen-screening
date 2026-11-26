@@ -1,39 +1,39 @@
 {
- "date": "2026-11-25",
+ "date": "2026-11-26",
  "ranks": {
   "turnaround": [
    "ADSK",
-   "BTI",
-   "BEI.DE",
+   "AMT",
    "HON",
-   "NVS",
+   "ADS.DE",
+   "IBM",
+   "NEE",
    "ACN",
-   "SPGI",
-   "CTSH",
-   "LOW",
-   "KDP",
-   "LMT",
-   "EOAN.DE",
-   "AEP",
-   "ISRG",
-   "GSK"
+   "NVS",
+   "TJX",
+   "SYK",
+   "GSK",
+   "MAR",
+   "SPOT",
+   "BTI",
+   "KDP"
   ],
   "momentum": [
+   "ABBV",
    "TRV",
-   "BIIB",
-   "MCK",
-   "GILD",
+   "WELL",
    "HNR1.DE",
    "ADP",
-   "IBN",
-   "COST",
-   "KDP",
-   "KO",
+   "BIIB",
+   "SNY",
+   "AAPL",
    "CTAS",
-   "WELL",
-   "PAYX",
-   "SPG",
-   "ZAL.DE"
+   "ZAL.DE",
+   "MUV2.DE",
+   "MAR",
+   "SONY",
+   "SPOT",
+   "SPG"
   ],
   "value": [
    "PSX",
@@ -49,196 +49,178 @@
    "META",
    "BLK",
    "REGN",
-   "ENR.DE",
-   "V"
+   "ROST",
+   "ENR.DE"
   ]
  },
  "changes": {
   "turnaround": {
    "entries": [
     {
-     "ticker": "BTI",
+     "ticker": "AMT",
      "rank": 2
     },
     {
-     "ticker": "BEI.DE",
-     "rank": 3
-    },
-    {
-     "ticker": "SPGI",
-     "rank": 7
-    },
-    {
-     "ticker": "CTSH",
-     "rank": 8
-    },
-    {
-     "ticker": "LOW",
-     "rank": 9
-    },
-    {
-     "ticker": "LMT",
-     "rank": 11
-    },
-    {
-     "ticker": "EOAN.DE",
-     "rank": 12
-    },
-    {
-     "ticker": "AEP",
-     "rank": 13
-    },
-    {
-     "ticker": "ISRG",
-     "rank": 14
-    },
-    {
-     "ticker": "GSK",
-     "rank": 15
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "AMT",
-     "old_rank": 2
-    },
-    {
-     "ticker": "IBM",
-     "old_rank": 4
-    },
-    {
-     "ticker": "NEE",
-     "old_rank": 5
-    },
-    {
-     "ticker": "TJX",
-     "old_rank": 8
-    },
-    {
-     "ticker": "SYK",
-     "old_rank": 9
-    },
-    {
-     "ticker": "MAR",
-     "old_rank": 10
-    },
-    {
-     "ticker": "DHR",
-     "old_rank": 11
-    },
-    {
-     "ticker": "SPOT",
-     "old_rank": 12
-    },
-    {
-     "ticker": "MCD",
-     "old_rank": 13
-    },
-    {
-     "ticker": "UPS",
-     "old_rank": 15
-    }
-   ],
-   "moves": []
-  },
-  "momentum": {
-   "entries": [
-    {
-     "ticker": "MCK",
-     "rank": 3
-    },
-    {
-     "ticker": "GILD",
+     "ticker": "ADS.DE",
      "rank": 4
     },
     {
-     "ticker": "HNR1.DE",
+     "ticker": "IBM",
      "rank": 5
     },
     {
-     "ticker": "COST",
-     "rank": 8
+     "ticker": "NEE",
+     "rank": 6
     },
     {
-     "ticker": "KDP",
+     "ticker": "TJX",
      "rank": 9
     },
     {
-     "ticker": "KO",
+     "ticker": "SYK",
      "rank": 10
     },
     {
-     "ticker": "PAYX",
-     "rank": 13
+     "ticker": "MAR",
+     "rank": 12
     },
     {
-     "ticker": "SPG",
-     "rank": 14
+     "ticker": "SPOT",
+     "rank": 13
     }
    ],
    "exits": [
     {
-     "ticker": "ABBV",
-     "old_rank": 1
+     "ticker": "BEI.DE",
+     "old_rank": 3
     },
     {
-     "ticker": "AAPL",
-     "old_rank": 6
+     "ticker": "SPGI",
+     "old_rank": 7
     },
     {
-     "ticker": "VRTX",
+     "ticker": "CTSH",
      "old_rank": 8
     },
     {
-     "ticker": "PGR",
-     "old_rank": 10
+     "ticker": "LOW",
+     "old_rank": 9
     },
     {
-     "ticker": "SONY",
+     "ticker": "LMT",
      "old_rank": 11
     },
     {
-     "ticker": "MAR",
+     "ticker": "EOAN.DE",
+     "old_rank": 12
+    },
+    {
+     "ticker": "AEP",
      "old_rank": 13
     },
     {
-     "ticker": "SPOT",
+     "ticker": "ISRG",
      "old_rank": 14
-    },
-    {
-     "ticker": "MMM",
-     "old_rank": 15
     }
    ],
    "moves": [
     {
-     "ticker": "IBN",
-     "rank": 7,
-     "delta": 5
+     "ticker": "BTI",
+     "rank": 14,
+     "delta": -12
     },
     {
+     "ticker": "KDP",
+     "rank": 15,
+     "delta": -5
+    }
+   ]
+  },
+  "momentum": {
+   "entries": [
+    {
+     "ticker": "ABBV",
+     "rank": 1
+    },
+    {
+     "ticker": "SNY",
+     "rank": 7
+    },
+    {
+     "ticker": "AAPL",
+     "rank": 8
+    },
+    {
+     "ticker": "MUV2.DE",
+     "rank": 11
+    },
+    {
+     "ticker": "MAR",
+     "rank": 12
+    },
+    {
+     "ticker": "SONY",
+     "rank": 13
+    },
+    {
+     "ticker": "SPOT",
+     "rank": 14
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "MCK",
+     "old_rank": 3
+    },
+    {
+     "ticker": "GILD",
+     "old_rank": 4
+    },
+    {
+     "ticker": "IBN",
+     "old_rank": 7
+    },
+    {
+     "ticker": "COST",
+     "old_rank": 8
+    },
+    {
+     "ticker": "KDP",
+     "old_rank": 9
+    },
+    {
+     "ticker": "KO",
+     "old_rank": 10
+    },
+    {
+     "ticker": "PAYX",
+     "old_rank": 13
+    }
+   ],
+   "moves": [
+    {
      "ticker": "WELL",
-     "rank": 12,
-     "delta": -9
+     "rank": 3,
+     "delta": 9
     },
     {
      "ticker": "ZAL.DE",
-     "rank": 15,
-     "delta": -6
+     "rank": 10,
+     "delta": 5
     }
    ]
   },
   "value": {
    "entries": [
     {
-     "ticker": "V",
-     "rank": 15
+     "ticker": "ROST",
+     "rank": 14
     }
    ],
    "exits": [
     {
-     "ticker": "ROST",
-     "old_rank": 14
+     "ticker": "V",
+     "old_rank": 15
     }
    ],
    "moves": []

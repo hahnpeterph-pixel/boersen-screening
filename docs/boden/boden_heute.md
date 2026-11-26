@@ -1,4 +1,4 @@
-# Boden-Screening 2026-11-25 (Stand 2026-11-26 02:09 UTC)
+# Boden-Screening 2026-11-25 (Stand 2026-11-26 04:34 UTC)
 
 Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RSI < 50 + mind. 2 Boden-Punkte (nur Technik). Die Filter (Analysten, Anker, CRV 2:1) stehen in docs/heute.csv. Boden-Anker = niedrigster Puffer mit 60 % Halterate fuer diese Gruppe und diesen Wert (Vollauf), KO-Marke = Bezugstief - Anker x ATR.
 
@@ -7,14 +7,14 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | Wert | Tief | RSI | Anker | KO-Marke | Analysten |
 |---|---|---|---|---|---|
 | MBG.DE | 2 | 32 | 3.75 | 33.44 | 48 % |
-| META | 2 | 46 | 2.50 | 497.89 | 82 % |
 | AXP | 2 | 47 | 2.50 | 283.07 | 45 % |
 | BA | 2 | 40 | 2.75 | 141.17 | 93 % |
 | BNR.DE | 3 | 29 | 3.25 | 50.15 | 13 % |
 | BP | 3 | 35 | 2.50 | 5.06 | 57 % |
-| DASH | 2 | 44 | 2.25 | 134.73 | 72 % |
-| FTNT | 2 | 46 | 2.00 | 110.90 | 24 % |
+| DASH | 2 | 44 | 2.25 | 134.72 | 72 % |
+| FTNT | 2 | 46 | 2.00 | 110.79 | 24 % |
 | MELI | 3 | 41 | 2.50 | 1201.60 | 75 % |
+| META | 2 | 46 | 2.50 | 497.89 | 82 % |
 | PLTR | 2 | 45 | 2.00 | 123.86 | 80 % |
 | QCOM | 2 | 50 | 2.75 | 121.36 | 19 % |
 | RY | 2 | 38 | 3.25 | 170.57 | 57 % |
@@ -22,15 +22,15 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | SHEL | 2 | 34 | 3.00 | 32.91 | 33 % |
 | TEAM | 3 | 34 | 2.50 | 105.57 | 89 % |
 
-## Weitere Pruefttage (100)
+## Weitere Pruefttage (104)
 
 | Wert | Punkte | Grund |
 |---|---|---|
 | BMW.DE | 3 | Tief 1 |
 | WDAY | 3 | Tief 1 |
-| AAPL | 2 | RSI >= 50 |
 | FAST | 2 | Tief 1, RSI >= 50 |
-| MMM | 2 | RSI >= 50 |
+| VOW3.DE | 2 | Tief 1 |
+| AAPL | 1 | 1 P, RSI >= 50 |
 | ALV.DE | 1 | 1 P, Tief 1, RSI >= 50 |
 | AMAT | 1 | 1 P, Umkehr a |
 | BHP | 1 | 1 P, Tief 1, Umkehr a |
@@ -42,7 +42,7 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | CDW | 1 | 1 P, Tief 1, RSI >= 50 |
 | CM | 1 | 1 P, Umkehr a |
 | COF | 1 | 1 P, Umkehr a |
-| DDOG | 1 | 1 P, Umkehr a |
+| DDOG | 1 | 1 P |
 | DE | 1 | 1 P |
 | DELL | 1 | 1 P, Tief 1, Umkehr a |
 | DTG.DE | 1 | 1 P, Tief 1 |
@@ -61,6 +61,7 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | JPM | 1 | 1 P, Umkehr a |
 | LRCX | 1 | 1 P, Umkehr a |
 | MAR | 1 | 1 P, RSI >= 50 |
+| MMM | 1 | 1 P, RSI >= 50 |
 | MNST | 1 | 1 P, Umkehr a |
 | MPC | 1 | 1 P, Umkehr a |
 | MRVL | 1 | 1 P, Umkehr a |
@@ -70,13 +71,13 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | NEM | 1 | 1 P |
 | NOW | 1 | 1 P, Umkehr a |
 | NVDA | 1 | 1 P, Tief 1, Umkehr a |
-| PBR | 1 | 1 P, Umkehr a |
 | PCAR | 1 | 1 P, RSI >= 50 |
 | PSX | 1 | 1 P, Umkehr a |
 | SHL.DE | 1 | 1 P, Tief 1, RSI >= 50 |
 | SNDK | 1 | 1 P, Umkehr a |
 | SONY | 1 | 1 P, Tief 1, RSI >= 50 |
 | TTD | 1 | 1 P, RSI >= 50 |
+| VLO | 1 | 1 P, Umkehr a |
 | ABNB | 0 | 0 P, Umkehr a |
 | ADI | 0 | 0 P, Umkehr a |
 | ADSK | 0 | 0 P, Umkehr a |
@@ -122,9 +123,10 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | SNOW | 0 | 0 P, Umkehr a |
 | SNPS | 0 | 0 P, Umkehr a |
 | STX | 0 | 0 P, Umkehr a |
+| TD | 0 | 0 P, Umkehr a |
+| TMO | 0 | 0 P, Tief 1, Umkehr a |
 | TSLA | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
 | TSM | 0 | 0 P, Daten unvollstaendig (2026-10-23) |
 | TXN | 0 | 0 P, Umkehr a |
+| WDC | 0 | 0 P, Umkehr a |
 | ZS | 0 | 0 P, Tief 1, RSI >= 50, Umkehr a |
-
-Nicht aktuell (kein Kurs vom 2026-11-25): DHL.DE, T, TD, TJX, TMO, TTE, UBER, UBS, UL, UNP, UPS, USB, VLO, VNA.DE, VOW3.DE, WDC, WELL, WFC, XOM, ZAL.DE

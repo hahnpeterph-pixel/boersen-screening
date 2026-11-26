@@ -3,36 +3,36 @@
  "ranks": {
   "turnaround": [
    "ADSK",
-   "AMT",
+   "SPGI",
    "HON",
    "ADS.DE",
-   "IBM",
-   "NEE",
-   "ACN",
-   "NVS",
+   "ZS",
    "TJX",
+   "NVS",
+   "LMT",
+   "CTSH",
+   "VRSK",
+   "NEE",
+   "AMT",
+   "KDP",
    "SYK",
-   "GSK",
-   "MAR",
-   "SPOT",
-   "BTI",
-   "KDP"
+   "GSK"
   ],
   "momentum": [
+   "BIIB",
    "ABBV",
+   "AAPL",
+   "CSX",
+   "SPOT",
+   "V",
    "TRV",
    "WELL",
    "HNR1.DE",
-   "ADP",
-   "BIIB",
    "SNY",
-   "AAPL",
-   "CTAS",
+   "MMM",
    "ZAL.DE",
-   "MUV2.DE",
-   "MAR",
-   "SONY",
-   "SPOT",
+   "MDLZ",
+   "KHC",
    "SPG"
   ],
   "value": [
@@ -49,178 +49,158 @@
    "META",
    "BLK",
    "REGN",
-   "ROST",
-   "ENR.DE"
+   "ENR.DE",
+   "MTX.DE"
   ]
  },
  "changes": {
   "turnaround": {
    "entries": [
     {
-     "ticker": "AMT",
+     "ticker": "SPGI",
      "rank": 2
     },
     {
-     "ticker": "ADS.DE",
-     "rank": 4
-    },
-    {
-     "ticker": "IBM",
+     "ticker": "ZS",
      "rank": 5
     },
     {
-     "ticker": "NEE",
-     "rank": 6
+     "ticker": "LMT",
+     "rank": 8
     },
     {
-     "ticker": "TJX",
+     "ticker": "CTSH",
      "rank": 9
     },
     {
-     "ticker": "SYK",
+     "ticker": "VRSK",
      "rank": 10
-    },
-    {
-     "ticker": "MAR",
-     "rank": 12
-    },
-    {
-     "ticker": "SPOT",
-     "rank": 13
     }
    ],
    "exits": [
     {
-     "ticker": "BEI.DE",
-     "old_rank": 3
+     "ticker": "IBM",
+     "old_rank": 5
     },
     {
-     "ticker": "SPGI",
+     "ticker": "ACN",
      "old_rank": 7
     },
     {
-     "ticker": "CTSH",
-     "old_rank": 8
-    },
-    {
-     "ticker": "LOW",
-     "old_rank": 9
-    },
-    {
-     "ticker": "LMT",
-     "old_rank": 11
-    },
-    {
-     "ticker": "EOAN.DE",
+     "ticker": "MAR",
      "old_rank": 12
     },
     {
-     "ticker": "AEP",
+     "ticker": "SPOT",
      "old_rank": 13
     },
     {
-     "ticker": "ISRG",
+     "ticker": "BTI",
      "old_rank": 14
     }
    ],
    "moves": [
     {
-     "ticker": "BTI",
-     "rank": 14,
-     "delta": -12
+     "ticker": "NEE",
+     "rank": 11,
+     "delta": -5
     },
     {
-     "ticker": "KDP",
-     "rank": 15,
-     "delta": -5
+     "ticker": "AMT",
+     "rank": 12,
+     "delta": -10
     }
    ]
   },
   "momentum": {
    "entries": [
     {
-     "ticker": "ABBV",
-     "rank": 1
+     "ticker": "CSX",
+     "rank": 4
     },
     {
-     "ticker": "SNY",
-     "rank": 7
+     "ticker": "V",
+     "rank": 6
     },
     {
-     "ticker": "AAPL",
-     "rank": 8
-    },
-    {
-     "ticker": "MUV2.DE",
+     "ticker": "MMM",
      "rank": 11
     },
     {
-     "ticker": "MAR",
-     "rank": 12
-    },
-    {
-     "ticker": "SONY",
+     "ticker": "MDLZ",
      "rank": 13
     },
     {
-     "ticker": "SPOT",
+     "ticker": "KHC",
      "rank": 14
     }
    ],
    "exits": [
     {
-     "ticker": "MCK",
-     "old_rank": 3
+     "ticker": "ADP",
+     "old_rank": 5
     },
     {
-     "ticker": "GILD",
-     "old_rank": 4
-    },
-    {
-     "ticker": "IBN",
-     "old_rank": 7
-    },
-    {
-     "ticker": "COST",
-     "old_rank": 8
-    },
-    {
-     "ticker": "KDP",
+     "ticker": "CTAS",
      "old_rank": 9
     },
     {
-     "ticker": "KO",
-     "old_rank": 10
+     "ticker": "MUV2.DE",
+     "old_rank": 11
     },
     {
-     "ticker": "PAYX",
+     "ticker": "MAR",
+     "old_rank": 12
+    },
+    {
+     "ticker": "SONY",
      "old_rank": 13
     }
    ],
    "moves": [
     {
-     "ticker": "WELL",
+     "ticker": "BIIB",
+     "rank": 1,
+     "delta": 5
+    },
+    {
+     "ticker": "AAPL",
      "rank": 3,
+     "delta": 5
+    },
+    {
+     "ticker": "SPOT",
+     "rank": 5,
      "delta": 9
     },
     {
-     "ticker": "ZAL.DE",
-     "rank": 10,
-     "delta": 5
+     "ticker": "TRV",
+     "rank": 7,
+     "delta": -5
+    },
+    {
+     "ticker": "WELL",
+     "rank": 8,
+     "delta": -5
+    },
+    {
+     "ticker": "HNR1.DE",
+     "rank": 9,
+     "delta": -5
     }
    ]
   },
   "value": {
    "entries": [
     {
-     "ticker": "ROST",
-     "rank": 14
+     "ticker": "MTX.DE",
+     "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "V",
-     "old_rank": 15
+     "ticker": "ROST",
+     "old_rank": 14
     }
    ],
    "moves": []

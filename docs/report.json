@@ -55,80 +55,18 @@
  },
  "changes": {
   "turnaround": {
-   "entries": [
-    {
-     "ticker": "BEI.DE",
-     "rank": 2
-    },
-    {
-     "ticker": "BTI",
-     "rank": 3
-    },
-    {
-     "ticker": "EOAN.DE",
-     "rank": 12
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "NVS",
-     "old_rank": 7
-    },
-    {
-     "ticker": "SYK",
-     "old_rank": 14
-    },
-    {
-     "ticker": "GSK",
-     "old_rank": 15
-    }
-   ],
+   "entries": [],
+   "exits": [],
    "moves": []
   },
   "momentum": {
-   "entries": [
-    {
-     "ticker": "CB",
-     "rank": 9
-    },
-    {
-     "ticker": "HEN3.DE",
-     "rank": 11
-    },
-    {
-     "ticker": "VRTX",
-     "rank": 13
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "HNR1.DE",
-     "old_rank": 9
-    },
-    {
-     "ticker": "SNY",
-     "old_rank": 10
-    },
-    {
-     "ticker": "ZAL.DE",
-     "old_rank": 12
-    }
-   ],
+   "entries": [],
+   "exits": [],
    "moves": []
   },
   "value": {
-   "entries": [
-    {
-     "ticker": "V",
-     "rank": 15
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "MTX.DE",
-     "old_rank": 15
-    }
-   ],
+   "entries": [],
+   "exits": [],
    "moves": []
   },
   "analyst_flips": []

@@ -1,6 +1,6 @@
 # Stundenwache
 
-Stand: 2026-11-25 · 272 Werte mit Stundendaten · erstellt 2026-11-27 06:20 UTC
+Stand: 2026-11-25 · 272 Werte mit Stundendaten · erstellt 2026-11-27 06:38 UTC
 
 > **Sitzung noch nicht abgeschlossen.** 5 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 3, 5, 6, 7, 8, 9). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
 
@@ -25,7 +25,7 @@ Im Tagesverlauf unter der Marke, am Ende darueber. Das ist der Fall, den die Tag
 |---|---|---|---|---|
 | COF | 177.86 | 182.62 | 0.835 | 1 |
 
-## Tief angetestet (15)
+## Tief angetestet (17)
 
 Docht bis unter die Marke, kein Stundenschluss darunter.
 
@@ -33,9 +33,10 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 |---|---|---|---|---|
 | TMUS | 165.73 | 166.2 | 0.096 | 0 |
 | SNDK | 67.02 | 73.51 | 0.518 | 0 |
+| HNR1.DE | 293.8 | 297.6 | 0.695 | 0 |
 | DHR | 223.25 | 227.35 | 0.706 | 0 |
 | MDT | 94.13 | 96.06 | 0.739 | 0 |
-| SKHY | 1027000.0 | 1102000.0 | 0.829 | 0 |
+| SKHY | 1027000.0 | 1103000.0 | 0.84 | 0 |
 | MRVL | 117.8 | 130.9 | 0.858 | 0 |
 | ETN | 301.43 | 317.52 | 0.895 | 0 |
 | FDX | 301.17 | 308.75 | 0.908 | 0 |
@@ -44,6 +45,7 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | ON | 57.49 | 62.475 | 1.047 | 0 |
 | INTC | 49.16 | 54.4408 | 1.093 | 0 |
 | BLK | 1103.49 | 1141.64 | 1.121 | 0 |
+| ZAL.DE | 28.38 | 29.49 | 1.196 | 0 |
 | NFLX | 57.03 | 59.42 | 1.229 | 0 |
 | DE | 605.34 | 641.14 | 1.468 | 0 |
 
@@ -53,9 +55,9 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 |---|---|---|---|---|
 | QIA.DE | 42.345 | 45.095 | 15.369 | 9 |
 | SNY | 89.0 | 99.15 | 3.979 | 9 |
-| TM | 3115.0 | 3395.0 | 3.391 | 7 |
+| TM | 3115.0 | 3384.0 | 3.258 | 7 |
 | PDD | 79.88 | 87.42 | 2.433 | 7 |
-| HDB | 821.0 | 861.4 | 1.854 | 3 |
+| HDB | 821.0 | 862.1 | 1.887 | 3 |
 | TJX | 138.17 | 146.11 | 1.843 | 7 |
 | CSGP | 31.64 | 34.02 | 1.789 | 7 |
 | VNA.DE | 16.99 | 17.68 | 1.72 | 9 |
@@ -94,11 +96,11 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | JNJ | 272.5 | 273.94 | 0.222 | 7 |
 | CVX | 210.13 | 211.005 | 0.194 | 6 |
 | VZ | 47.11 | 47.295 | 0.193 | 7 |
-| BABA | 86.75 | 87.55 | 0.192 | 2 |
 | CB | 379.21 | 380.5 | 0.19 | 7 |
 | PEP | 143.28 | 143.92 | 0.186 | 7 |
-| MUFG | 3178.0 | 3195.0 | 0.15 | 6 |
+| BABA | 86.75 | 87.45 | 0.168 | 2 |
 | NEE | 85.26 | 85.45 | 0.129 | 6 |
+| MUFG | 3178.0 | 3191.0 | 0.115 | 6 |
 | TTWO | 225.69 | 227.27 | 0.104 | 3 |
 | EOAN.DE | 18.82 | 18.85 | 0.1 | 2 |
 | EXC | 46.44 | 46.51 | 0.093 | 7 |

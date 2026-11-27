@@ -1,6 +1,6 @@
 # Boersen-Screening - 2026-11-27
 
-_Stand: Schlusskurse vom 2026-11-27, aber 260 Werte haengen zurueck - siehe Standwarnung. Erstellt 2026-11-27T06:17:38+00:00 UTC. 271 Werte ausgewertet._
+_Stand: Schlusskurse vom 2026-11-27, aber 260 Werte haengen zurueck - siehe Standwarnung. Erstellt 2026-11-27T06:36:47+00:00 UTC. 271 Werte ausgewertet._
 
 > **Standwarnung: 260 von 271 Werten haengen zurueck.** Neuester Handelstag im Bericht ist 2026-11-27.
 >
@@ -285,7 +285,7 @@ _Ueber alle 271 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei
 | Rang | Ticker | ISIN | Name | Index | Kurs | Abstand ATH (Info) | Kaufen-Anteil Analysten | Kursziel | RSI Tag | RSI Woche | RSI Stunde | Letztes Rating |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 1 | MU | US5951121038 | Micron Technology, Inc. | NASDAQ | 601.25 | -50% | 100% (13 Banken, ≤120T) | 1540.00 (156% ueber Kurs) | 36 | 38 | 43 | keine in 30T |
-| 2 | SKHY | AR0272347318 | SK hynix Inc. | Watchlist | 1102000.00 | -62% | 100% (10 Banken, ≤120T) | 2316897.62 (110% ueber Kurs) | 43 | 39 | 53 | 2026-10-28 RBC Capital: Rating bestaetigt: Outperform |
+| 2 | SKHY | AR0272347318 | SK hynix Inc. | Watchlist | 1104500.00 | -61% | 100% (10 Banken, ≤120T) | 2316897.62 (110% ueber Kurs) | 43 | 40 | 53 | 2026-10-28 RBC Capital: Rating bestaetigt: Outperform |
 | 3 | LRCX | - | Lam Research Corporation | NASDAQ | 185.01 | -57% | 100% (9 Banken, ≤120T) | 350.00 (89% ueber Kurs) | 36 | 36 | 42 | 2026-11-09 B. Riley Securities: Rating bestaetigt: Buy |
 | 4 | DDOG | US23804L1035 | Datadog, Inc. | NASDAQ | 158.25 | -46% | 100% (20 Banken, ≤120T) | 275.00 (74% ueber Kurs) | 30 | 39 | 42 | 2026-11-05 Citigroup: Rating bestaetigt: Buy |
 | 5 | TSM | US8740391003 | Taiwan Semiconductor Manufactur | Watchlist | 2180.00 | -16% | 100% (5 Banken, ≤120T) | 3516.97 (61% ueber Kurs) | 45 | 46 | 53 | 2026-11-04 Bernstein: Rating bestaetigt: Outperform |

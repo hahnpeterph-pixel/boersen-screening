@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "generated": "2026-11-27T06:17:38+00:00",
+ "generated": "2026-11-27T06:36:47+00:00",
  "ranks": {
   "turnaround": [
    "ADSK",
@@ -201,7 +201,7 @@
     "above_sma200": true,
     "pct_above_sma50": 3.7165656433393535,
     "pct_above_sma100": 7.4682013283481785,
-    "pct_above_sma200": 16.98284248991242,
+    "pct_above_sma200": 16.982842548637954,
     "sma50_slope": 3.43,
     "sma200_slope": 2.98,
     "higher_low": true,
@@ -1098,7 +1098,7 @@
     "above_sma200": false,
     "pct_above_sma50": -15.548287102684865,
     "pct_above_sma100": -13.226144839240849,
-    "pct_above_sma200": -11.6803916174531,
+    "pct_above_sma200": -11.680391474528607,
     "sma50_slope": 2.13,
     "sma200_slope": 2.12,
     "higher_low": false,
@@ -1364,7 +1364,7 @@
     "above_sma200": true,
     "pct_above_sma50": 10.310431786557306,
     "pct_above_sma100": 14.598931062415478,
-    "pct_above_sma200": 29.936656405688055,
+    "pct_above_sma200": 29.936656446358413,
     "sma50_slope": 3.95,
     "sma200_slope": 2.59,
     "higher_low": true,
@@ -1937,8 +1937,8 @@
     "above_sma100": true,
     "above_sma200": true,
     "pct_above_sma50": 2.5781618223413405,
-    "pct_above_sma100": 1.971751942114519,
-    "pct_above_sma200": 0.4155569905330614,
+    "pct_above_sma100": 1.9717520664694899,
+    "pct_above_sma200": 0.4155573221510833,
     "sma50_slope": 1.73,
     "sma200_slope": 0.94,
     "higher_low": true,
@@ -2221,8 +2221,8 @@
     "above_sma100": false,
     "above_sma200": false,
     "pct_above_sma50": -25.81709726671775,
-    "pct_above_sma100": -32.74845034310621,
-    "pct_above_sma200": -30.22841512819535,
+    "pct_above_sma100": -32.748450076975956,
+    "pct_above_sma200": -30.22841515206608,
     "sma50_slope": -8.92,
     "sma200_slope": 0.86,
     "higher_low": false,
@@ -2805,7 +2805,7 @@
     "above_sma200": true,
     "pct_above_sma50": 8.28695742012615,
     "pct_above_sma100": 13.18031609560164,
-    "pct_above_sma200": 23.37770736115994,
+    "pct_above_sma200": 23.377707311660735,
     "sma50_slope": 4.05,
     "sma200_slope": 3.26,
     "higher_low": true,
@@ -4016,8 +4016,8 @@
     "above_sma100": false,
     "above_sma200": false,
     "pct_above_sma50": -21.358963949928633,
-    "pct_above_sma100": -22.94668069865905,
-    "pct_above_sma200": -19.046388792001668,
+    "pct_above_sma100": -22.946680762706208,
+    "pct_above_sma200": -19.04638854456866,
     "sma50_slope": -4.04,
     "sma200_slope": 1.0,
     "higher_low": false,
@@ -4288,7 +4288,7 @@
     "above_sma200": false,
     "pct_above_sma50": -11.648395554963031,
     "pct_above_sma100": -16.57671887505432,
-    "pct_above_sma200": -17.8953685856576,
+    "pct_above_sma200": -17.89536872241503,
     "sma50_slope": -3.7,
     "sma200_slope": -0.08,
     "higher_low": false,
@@ -5436,7 +5436,7 @@
     "above_sma200": false,
     "pct_above_sma50": -5.601523662123098,
     "pct_above_sma100": -14.849861979460865,
-    "pct_above_sma200": -13.47217860177048,
+    "pct_above_sma200": -13.472178525353407,
     "sma50_slope": -8.77,
     "sma200_slope": -2.27,
     "higher_low": false,
@@ -5737,8 +5737,8 @@
     "above_sma100": false,
     "above_sma200": false,
     "pct_above_sma50": -12.700073388280408,
-    "pct_above_sma100": -18.19752728093339,
-    "pct_above_sma200": -21.515458225308905,
+    "pct_above_sma100": -18.197527446118443,
+    "pct_above_sma200": -21.515458047909185,
     "sma50_slope": -8.76,
     "sma200_slope": -0.97,
     "higher_low": false,
@@ -6039,7 +6039,7 @@
     "above_sma200": true,
     "pct_above_sma50": 8.85271423892453,
     "pct_above_sma100": 10.3999354258407,
-    "pct_above_sma200": 16.61662389736225,
+    "pct_above_sma200": 16.616623985298062,
     "sma50_slope": 3.84,
     "sma200_slope": 2.59,
     "higher_low": true,
@@ -6600,8 +6600,8 @@
     "above_sma100": true,
     "above_sma200": true,
     "pct_above_sma50": 14.35921731506391,
-    "pct_above_sma100": 19.223080320073336,
-    "pct_above_sma200": 29.656876838260104,
+    "pct_above_sma100": 19.223080444032092,
+    "pct_above_sma200": 29.656876911562403,
     "sma50_slope": 5.18,
     "sma200_slope": 2.67,
     "higher_low": true,
@@ -6892,7 +6892,7 @@
     "above_sma200": false,
     "pct_above_sma50": -11.158158089212378,
     "pct_above_sma100": -12.027362020109123,
-    "pct_above_sma200": -15.082332502723183,
+    "pct_above_sma200": -15.082332409190979,
     "sma50_slope": -2.86,
     "sma200_slope": -0.94,
     "higher_low": false,
@@ -7745,9 +7745,9 @@
     "above_sma50": true,
     "above_sma100": true,
     "above_sma200": true,
-    "pct_above_sma50": 11.920495978137268,
-    "pct_above_sma100": 15.50694720800443,
-    "pct_above_sma200": 14.216417094815782,
+    "pct_above_sma50": 11.920496259525336,
+    "pct_above_sma100": 15.506947133076675,
+    "pct_above_sma200": 14.21641691165878,
     "sma50_slope": 6.26,
     "sma200_slope": 1.14,
     "higher_low": true,
@@ -8580,7 +8580,7 @@
     "above_sma200": false,
     "pct_above_sma50": -10.54357248965565,
     "pct_above_sma100": -13.72848139360119,
-    "pct_above_sma200": -7.875141357806859,
+    "pct_above_sma200": -7.87514156401895,
     "sma50_slope": -4.16,
     "sma200_slope": 2.05,
     "higher_low": false,
@@ -9149,7 +9149,7 @@
     "above_sma200": true,
     "pct_above_sma50": 3.8271543891037485,
     "pct_above_sma100": 2.967667043260813,
-    "pct_above_sma200": 9.730490684105032,
+    "pct_above_sma200": 9.730490459652685,
     "sma50_slope": 1.0,
     "sma200_slope": 3.0,
     "higher_low": true,
@@ -9418,7 +9418,7 @@
     "above_sma200": true,
     "pct_above_sma50": 7.266634300371755,
     "pct_above_sma100": 10.448988927913172,
-    "pct_above_sma200": 18.463258580177477,
+    "pct_above_sma200": 18.463258250956272,
     "sma50_slope": 4.36,
     "sma200_slope": 1.7,
     "higher_low": true,
@@ -9683,8 +9683,8 @@
     "above_sma100": true,
     "above_sma200": true,
     "pct_above_sma50": 2.159790214232271,
-    "pct_above_sma100": 8.44402118365335,
-    "pct_above_sma200": 11.789943004306602,
+    "pct_above_sma100": 8.44402132535025,
+    "pct_above_sma200": 11.789942627867568,
     "sma50_slope": 0.35,
     "sma200_slope": -2.97,
     "higher_low": true,
@@ -10876,7 +10876,7 @@
     "above_sma200": true,
     "pct_above_sma50": 6.4828346316905705,
     "pct_above_sma100": 5.064110104186725,
-    "pct_above_sma200": 2.808558773980474,
+    "pct_above_sma200": 2.808558730635169,
     "sma50_slope": 2.25,
     "sma200_slope": 0.64,
     "higher_low": true,
@@ -11141,8 +11141,8 @@
     "above_sma100": false,
     "above_sma200": false,
     "pct_above_sma50": -4.373399722035365,
-    "pct_above_sma100": -6.536076648430167,
-    "pct_above_sma200": -4.849934548290024,
+    "pct_above_sma100": -6.536076574440031,
+    "pct_above_sma200": -4.849934701657754,
     "sma50_slope": -3.94,
     "sma200_slope": 1.5,
     "higher_low": false,
@@ -11443,8 +11443,8 @@
     "above_sma100": true,
     "above_sma200": true,
     "pct_above_sma50": 2.347158346968503,
-    "pct_above_sma100": 5.562853724946493,
-    "pct_above_sma200": 11.268656262465381,
+    "pct_above_sma100": 5.562853564322512,
+    "pct_above_sma200": 11.268656039394,
     "sma50_slope": 3.06,
     "sma200_slope": 2.05,
     "higher_low": true,
@@ -12015,7 +12015,7 @@
     "above_sma200": true,
     "pct_above_sma50": 13.716612745005863,
     "pct_above_sma100": 17.81185324406018,
-    "pct_above_sma200": 19.122961973592734,
+    "pct_above_sma200": 19.122961648790017,
     "sma50_slope": 7.24,
     "sma200_slope": 0.18,
     "higher_low": true,
@@ -12318,7 +12318,7 @@
     "above_sma200": false,
     "pct_above_sma50": -18.615986054646704,
     "pct_above_sma100": -24.451313648990425,
-    "pct_above_sma200": -33.82108141647899,
+    "pct_above_sma200": -33.82108104726274,
     "sma50_slope": -4.51,
     "sma200_slope": -0.51,
     "higher_low": false,
@@ -12619,7 +12619,7 @@
     "above_sma200": true,
     "pct_above_sma50": 11.18296944848758,
     "pct_above_sma100": 18.94831528657801,
-    "pct_above_sma200": 24.783604537708893,
+    "pct_above_sma200": 24.783604705747962,
     "sma50_slope": 6.21,
     "sma200_slope": 2.52,
     "higher_low": true,
@@ -12920,7 +12920,7 @@
     "above_sma200": false,
     "pct_above_sma50": -14.052579797749608,
     "pct_above_sma100": -17.774204824068295,
-    "pct_above_sma200": -18.83960435523573,
+    "pct_above_sma200": -18.839604466509396,
     "sma50_slope": -6.74,
     "sma200_slope": -1.49,
     "higher_low": false,
@@ -13205,7 +13205,7 @@
     "above_sma200": false,
     "pct_above_sma50": -14.184477302452025,
     "pct_above_sma100": -17.75451248048716,
-    "pct_above_sma200": -18.735032822811093,
+    "pct_above_sma200": -18.73503289660747,
     "sma50_slope": -6.8,
     "sma200_slope": -1.41,
     "higher_low": false,
@@ -13505,7 +13505,7 @@
     "above_sma200": false,
     "pct_above_sma50": 4.435190806609501,
     "pct_above_sma100": 2.3394928748960098,
-    "pct_above_sma200": -1.1698877669172547,
+    "pct_above_sma200": -1.1698876013924164,
     "sma50_slope": 2.17,
     "sma200_slope": -0.44,
     "higher_low": true,
@@ -14354,8 +14354,8 @@
     "above_sma100": false,
     "above_sma200": false,
     "pct_above_sma50": -13.268028489477645,
-    "pct_above_sma100": -14.379227331167044,
-    "pct_above_sma200": -20.610830670926074,
+    "pct_above_sma100": -14.379227413502472,
+    "pct_above_sma200": -20.61083014002667,
     "sma50_slope": -1.91,
     "sma200_slope": -4.94,
     "higher_low": true,
@@ -14900,7 +14900,7 @@
     "above_sma200": true,
     "pct_above_sma50": 5.315576395776467,
     "pct_above_sma100": 10.047195961973078,
-    "pct_above_sma200": 17.056652197613587,
+    "pct_above_sma200": 17.05665227096467,
     "sma50_slope": 5.23,
     "sma200_slope": 2.97,
     "higher_low": true,
@@ -15207,7 +15207,7 @@
     "above_sma200": true,
     "pct_above_sma50": 10.452811168925958,
     "pct_above_sma100": 7.989864985045592,
-    "pct_above_sma200": 12.666542054950813,
+    "pct_above_sma200": 12.666542328938824,
     "sma50_slope": -0.02,
     "sma200_slope": 1.0,
     "higher_low": true,
@@ -15487,7 +15487,7 @@
     "above_sma200": false,
     "pct_above_sma50": -19.491013267867018,
     "pct_above_sma100": -25.672567225013722,
-    "pct_above_sma200": -25.98061530766006,
+    "pct_above_sma200": -25.980615276512175,
     "sma50_slope": -7.03,
     "sma200_slope": -0.02,
     "higher_low": false,
@@ -15788,7 +15788,7 @@
     "above_sma200": true,
     "pct_above_sma50": 5.333471759824793,
     "pct_above_sma100": 6.078774124248509,
-    "pct_above_sma200": 5.562820184256956,
+    "pct_above_sma200": 5.562820087021025,
     "sma50_slope": 3.31,
     "sma200_slope": 1.44,
     "higher_low": true,
@@ -16092,7 +16092,7 @@
     "above_sma200": false,
     "pct_above_sma50": -29.596159803224765,
     "pct_above_sma100": -35.35795719898728,
-    "pct_above_sma200": -34.51775500799514,
+    "pct_above_sma200": -34.51775497263028,
     "sma50_slope": -11.46,
     "sma200_slope": -0.34,
     "higher_low": false,
@@ -16640,7 +16640,7 @@
     "above_sma200": true,
     "pct_above_sma50": 7.268036178923953,
     "pct_above_sma100": 11.96438394220063,
-    "pct_above_sma200": 14.421688985297587,
+    "pct_above_sma200": 14.421689081395428,
     "sma50_slope": 8.29,
     "sma200_slope": 2.73,
     "higher_low": true,
@@ -16946,7 +16946,7 @@
     "above_sma200": false,
     "pct_above_sma50": -18.70978753793682,
     "pct_above_sma100": -21.908361693259494,
-    "pct_above_sma200": -25.47702925822022,
+    "pct_above_sma200": -25.477029184735724,
     "sma50_slope": -4.8,
     "sma200_slope": -1.32,
     "higher_low": false,
@@ -17846,7 +17846,7 @@
     "above_sma200": false,
     "pct_above_sma50": -9.295945797633165,
     "pct_above_sma100": -4.482918639595745,
-    "pct_above_sma200": -2.706814429589932,
+    "pct_above_sma200": -2.7068147137837673,
     "sma50_slope": 0.84,
     "sma200_slope": -0.7,
     "higher_low": true,
@@ -18447,8 +18447,8 @@
     "above_sma100": false,
     "above_sma200": false,
     "pct_above_sma50": -39.10084037684543,
-    "pct_above_sma100": -39.199958598910726,
-    "pct_above_sma200": -30.850861618381863,
+    "pct_above_sma100": -39.199958641992005,
+    "pct_above_sma200": -30.85086174376438,
     "sma50_slope": -11.9,
     "sma200_slope": 4.11,
     "higher_low": false,
@@ -18750,8 +18750,8 @@
     "above_sma100": true,
     "above_sma200": true,
     "pct_above_sma50": -5.5364343605602055,
-    "pct_above_sma100": 0.24634058988113328,
-    "pct_above_sma200": 10.536502546654237,
+    "pct_above_sma100": 0.2463403394933783,
+    "pct_above_sma200": 10.53650235638548,
     "sma50_slope": 1.66,
     "sma200_slope": 1.8,
     "higher_low": true,
@@ -19341,7 +19341,7 @@
     "above_sma200": false,
     "pct_above_sma50": -32.85217542147774,
     "pct_above_sma100": -33.981768225645425,
-    "pct_above_sma200": -22.549384446894404,
+    "pct_above_sma200": -22.54938406630671,
     "sma50_slope": -8.67,
     "sma200_slope": 4.78,
     "higher_low": false,
@@ -19874,7 +19874,7 @@
     "above_sma200": false,
     "pct_above_sma50": -26.689527987006066,
     "pct_above_sma100": -28.39638904860282,
-    "pct_above_sma200": -26.315497075704542,
+    "pct_above_sma200": -26.315497047959692,
     "sma50_slope": -8.26,
     "sma200_slope": -0.6,
     "higher_low": false,
@@ -20176,7 +20176,7 @@
     "above_sma200": false,
     "pct_above_sma50": -0.2406093981371593,
     "pct_above_sma100": 0.08759198916077349,
-    "pct_above_sma200": -1.77309745765184,
+    "pct_above_sma200": -1.7730973667573702,
     "sma50_slope": 5.4,
     "sma200_slope": 1.08,
     "higher_low": true,
@@ -21638,7 +21638,7 @@
     "above_sma200": true,
     "pct_above_sma50": 7.786817239585697,
     "pct_above_sma100": 4.532340540184365,
-    "pct_above_sma200": 15.412042850243513,
+    "pct_above_sma200": 15.412043021773725,
     "sma50_slope": -2.03,
     "sma200_slope": 1.48,
     "higher_low": true,
@@ -21903,8 +21903,8 @@
     "above_sma100": false,
     "above_sma200": false,
     "pct_above_sma50": 0.44315700140451497,
-    "pct_above_sma100": -8.016380755912088,
-    "pct_above_sma200": -8.282246174346097,
+    "pct_above_sma100": -8.016380217727892,
+    "pct_above_sma200": -8.282245877080763,
     "sma50_slope": -6.93,
     "sma200_slope": -1.48,
     "higher_low": false,
@@ -23047,7 +23047,7 @@
     "above_sma200": true,
     "pct_above_sma50": 3.002046616620202,
     "pct_above_sma100": 3.0048768451942154,
-    "pct_above_sma200": 14.469023362706302,
+    "pct_above_sma200": 14.469023319474527,
     "sma50_slope": 1.09,
     "sma200_slope": 1.46,
     "higher_low": true,
@@ -23353,7 +23353,7 @@
     "above_sma200": false,
     "pct_above_sma50": -4.297910261138238,
     "pct_above_sma100": -2.009579586021726,
-    "pct_above_sma200": -0.8033163091351159,
+    "pct_above_sma200": -0.803316398158127,
     "sma50_slope": -0.48,
     "sma200_slope": 1.06,
     "higher_low": true,
@@ -23653,7 +23653,7 @@
     "above_sma200": true,
     "pct_above_sma50": 16.840002425850862,
     "pct_above_sma100": 22.903083944460278,
-    "pct_above_sma200": 30.450585779030813,
+    "pct_above_sma200": 30.45058609638147,
     "sma50_slope": 6.25,
     "sma200_slope": 2.49,
     "higher_low": true,
@@ -23956,7 +23956,7 @@
     "above_sma200": true,
     "pct_above_sma50": 15.794279566214753,
     "pct_above_sma100": 19.951631628925746,
-    "pct_above_sma200": 29.77846269058979,
+    "pct_above_sma200": 29.778463169373957,
     "sma50_slope": 7.04,
     "sma200_slope": 2.56,
     "higher_low": true,
@@ -24497,7 +24497,7 @@
     "above_sma200": true,
     "pct_above_sma50": 7.750287871577055,
     "pct_above_sma100": 5.695712850982937,
-    "pct_above_sma200": 7.974931608404057,
+    "pct_above_sma200": 7.974931484567094,
     "sma50_slope": 1.34,
     "sma200_slope": 1.4,
     "higher_low": true,
@@ -25371,7 +25371,7 @@
     "above_sma200": false,
     "pct_above_sma50": 3.7155962721991065,
     "pct_above_sma100": -2.208020393855592,
-    "pct_above_sma200": -8.700524075194727,
+    "pct_above_sma200": -8.700523769171099,
     "sma50_slope": -4.02,
     "sma200_slope": -1.32,
     "higher_low": false,
@@ -26545,7 +26545,7 @@
     "above_sma200": true,
     "pct_above_sma50": -5.5850868870885195,
     "pct_above_sma100": -3.4913511949560716,
-    "pct_above_sma200": 1.9874739915496598,
+    "pct_above_sma200": 1.9874742852567628,
     "sma50_slope": 4.93,
     "sma200_slope": 3.53,
     "higher_low": true,
@@ -26813,7 +26813,7 @@
     "above_sma200": true,
     "pct_above_sma50": 8.872036136989593,
     "pct_above_sma100": 8.515993680916068,
-    "pct_above_sma200": 10.360608070074505,
+    "pct_above_sma200": 10.360608433121744,
     "sma50_slope": 3.84,
     "sma200_slope": -0.18,
     "higher_low": true,
@@ -28209,7 +28209,7 @@
     "above_sma200": false,
     "pct_above_sma50": -0.2991249488702219,
     "pct_above_sma100": -3.936681203739689,
-    "pct_above_sma200": -2.7064514466328404,
+    "pct_above_sma200": -2.7064515853442828,
     "sma50_slope": -1.18,
     "sma200_slope": -1.11,
     "higher_low": true,
@@ -28782,8 +28782,8 @@
     "above_sma100": false,
     "above_sma200": false,
     "pct_above_sma50": -22.199499568656012,
-    "pct_above_sma100": -29.494605804272567,
-    "pct_above_sma200": -31.891982560346854,
+    "pct_above_sma100": -29.49460597168767,
+    "pct_above_sma200": -31.89198245619783,
     "sma50_slope": -11.4,
     "sma200_slope": -1.03,
     "higher_low": false,
@@ -29084,7 +29084,7 @@
     "above_sma200": true,
     "pct_above_sma50": -12.69729235022863,
     "pct_above_sma100": -8.152134615242645,
-    "pct_above_sma200": 0.001057781576685457,
+    "pct_above_sma200": 0.0010579363265428299,
     "sma50_slope": -4.99,
     "sma200_slope": -0.26,
     "higher_low": true,
@@ -29925,7 +29925,7 @@
     "above_sma200": false,
     "pct_above_sma50": -10.498078052832016,
     "pct_above_sma100": -17.04533701376508,
-    "pct_above_sma200": -15.420274840837568,
+    "pct_above_sma200": -15.42027473182067,
     "sma50_slope": -5.87,
     "sma200_slope": -0.49,
     "higher_low": false,
@@ -30197,7 +30197,7 @@
     "above_sma200": true,
     "pct_above_sma50": 13.674196415806716,
     "pct_above_sma100": 11.344500203504438,
-    "pct_above_sma200": 10.058405671791748,
+    "pct_above_sma200": 10.058405978763108,
     "sma50_slope": 3.09,
     "sma200_slope": -0.84,
     "higher_low": true,
@@ -30478,7 +30478,7 @@
     "above_sma200": true,
     "pct_above_sma50": 3.3168496335905573,
     "pct_above_sma100": 4.0308062182922155,
-    "pct_above_sma200": 1.06271110701317,
+    "pct_above_sma200": 1.0627112990469811,
     "sma50_slope": 1.29,
     "sma200_slope": -1.96,
     "higher_low": true,
@@ -30743,8 +30743,8 @@
     "above_sma100": true,
     "above_sma200": true,
     "pct_above_sma50": 2.7737403167340524,
-    "pct_above_sma100": 3.9006297257386358,
-    "pct_above_sma200": 10.108989710693915,
+    "pct_above_sma100": 3.900629364950503,
+    "pct_above_sma200": 10.108989575629735,
     "sma50_slope": 0.96,
     "sma200_slope": 2.17,
     "higher_low": true,
@@ -31011,7 +31011,7 @@
     "above_sma200": false,
     "pct_above_sma50": -5.420118904492965,
     "pct_above_sma100": -7.6132381815326555,
-    "pct_above_sma200": -1.9046049603433812,
+    "pct_above_sma200": -1.90460523848478,
     "sma50_slope": -2.28,
     "sma200_slope": 0.92,
     "higher_low": false,
@@ -31587,7 +31587,7 @@
     "above_sma200": true,
     "pct_above_sma50": 11.669039779372724,
     "pct_above_sma100": 9.25793132793411,
-    "pct_above_sma200": 2.242397801116347,
+    "pct_above_sma200": 2.2423975197973345,
     "sma50_slope": 2.22,
     "sma200_slope": -1.24,
     "higher_low": true,
@@ -31890,7 +31890,7 @@
     "above_sma200": true,
     "pct_above_sma50": 9.765609364490668,
     "pct_above_sma100": 10.43136632466355,
-    "pct_above_sma200": 17.36699859671722,
+    "pct_above_sma200": 17.366998707442605,
     "sma50_slope": 3.03,
     "sma200_slope": 1.48,
     "higher_low": true,
@@ -32483,7 +32483,7 @@
     "above_sma200": false,
     "pct_above_sma50": 0.06605555707301924,
     "pct_above_sma100": -4.80382068541415,
-    "pct_above_sma200": -15.076586965266737,
+    "pct_above_sma200": -15.076586927744163,
     "sma50_slope": -0.86,
     "sma200_slope": -5.39,
     "higher_low": false,
@@ -32769,8 +32769,8 @@
     "above_sma100": true,
     "above_sma200": true,
     "pct_above_sma50": 9.751361178550244,
-    "pct_above_sma100": 14.4334674431134,
-    "pct_above_sma200": 16.489444377874875,
+    "pct_above_sma100": 14.433467558459533,
+    "pct_above_sma200": 16.48944348141392,
     "sma50_slope": 6.36,
     "sma200_slope": 1.4,
     "higher_low": true,
@@ -33036,8 +33036,8 @@
     "above_sma100": true,
     "above_sma200": true,
     "pct_above_sma50": 7.861477789601468,
-    "pct_above_sma100": 7.2681407781575835,
-    "pct_above_sma200": 9.177040389026626,
+    "pct_above_sma100": 7.268141069955081,
+    "pct_above_sma200": 9.177040288268179,
     "sma50_slope": 1.64,
     "sma200_slope": -0.13,
     "higher_low": true,
@@ -33340,7 +33340,7 @@
     "above_sma200": true,
     "pct_above_sma50": 5.696531421860529,
     "pct_above_sma100": 8.183214719701226,
-    "pct_above_sma200": 20.09689541908748,
+    "pct_above_sma200": 20.0968950945313,
     "sma50_slope": 3.24,
     "sma200_slope": 3.64,
     "higher_low": true,
@@ -33607,7 +33607,7 @@
     "above_sma200": false,
     "pct_above_sma50": -10.426528586094863,
     "pct_above_sma100": -12.420038336955773,
-    "pct_above_sma200": -5.649961270145942,
+    "pct_above_sma200": -5.649961152436611,
     "sma50_slope": -0.52,
     "sma200_slope": 2.26,
     "higher_low": false,
@@ -33868,7 +33868,7 @@
     "above_sma200": true,
     "pct_above_sma50": 6.989596355522543,
     "pct_above_sma100": 11.40325592317113,
-    "pct_above_sma200": 21.49396701492925,
+    "pct_above_sma200": 21.493966802641793,
     "sma50_slope": 4.73,
     "sma200_slope": 2.75,
     "higher_low": true,
@@ -34174,7 +34174,7 @@
     "above_sma200": true,
     "pct_above_sma50": 4.214554871590326,
     "pct_above_sma100": 2.7287332406982667,
-    "pct_above_sma200": 2.7613350009540127,
+    "pct_above_sma200": 2.7613348305530305,
     "sma50_slope": -2.88,
     "sma200_slope": 1.28,
     "higher_low": true,
@@ -34455,7 +34455,7 @@
     "above_sma200": true,
     "pct_above_sma50": 11.786656406953778,
     "pct_above_sma100": 15.736916436182735,
-    "pct_above_sma200": 11.126707272270897,
+    "pct_above_sma200": 11.126707415088077,
     "sma50_slope": 7.6,
     "sma200_slope": 0.52,
     "higher_low": true,
@@ -45429,7 +45429,7 @@
     "above_sma200": false,
     "pct_above_sma50": -8.92898347174259,
     "pct_above_sma100": -8.741668133541669,
-    "pct_above_sma200": -3.2775595008368352,
+    "pct_above_sma200": -3.277559134587138,
     "sma50_slope": -1.2,
     "sma200_slope": 0.52,
     "higher_low": false,
@@ -45721,32 +45721,32 @@
    "country": "China",
    "exchange": "NYQ",
    "metrics": {
-    "last": 87.55,
+    "last": 87.4,
     "dd_ath": -71.3,
     "days_since_ath": 2221,
-    "range_pos": 7.5,
+    "range_pos": 7.4,
     "above_sma50": false,
     "above_sma100": false,
     "above_sma200": false,
-    "pct_above_sma50": -12.503369945978848,
-    "pct_above_sma100": -18.768582728324535,
-    "pct_above_sma200": -25.386847969077976,
+    "pct_above_sma50": -12.650661117329943,
+    "pct_above_sma100": -18.906629846231905,
+    "pct_above_sma200": -25.514208376786463,
     "sma50_slope": -7.24,
     "sma200_slope": -5.6,
     "higher_low": false,
     "higher_low_pct": -22.8,
-    "rsi14": 42.2,
+    "rsi14": 41.9,
     "rsi_min60": 25.2,
-    "rsi_week": 36.7,
+    "rsi_week": 36.6,
     "perf": {
-     "m1": -8.9,
-     "m3": -23.1,
-     "m6": -27.5,
-     "m12": -43.4
+     "m1": -9.1,
+     "m3": -23.3,
+     "m6": -27.6,
+     "m12": -43.5
     },
-    "rs6": -13.7,
-    "vol_pressure_5d": 0.44,
-    "vol_breakout": 0.59
+    "rs6": -13.8,
+    "vol_pressure_5d": 0.46,
+    "vol_breakout": 0.66
    },
    "flags": [
     "200-Tage-Linie faellt steil"
@@ -45788,7 +45788,7 @@
    "revision_note": null,
    "target": {
     "target_abs": 151.05,
-    "upside_pct": 72.5,
+    "upside_pct": 72.8,
     "fresh": null,
     "n_analysts": 40,
     "empfehlung": "klar kaufen",
@@ -45801,7 +45801,7 @@
     }
    },
    "scores": {
-    "turnaround": 17.5,
+    "turnaround": 17.4,
     "momentum": 0.0,
     "value": 57.4
    },
@@ -45831,7 +45831,7 @@
       "label": "Abstand 50T-Linie",
       "points": 0.0,
       "max": 10,
-      "detail": "-12.5% darunter 50T-Linie"
+      "detail": "-12.7% darunter 50T-Linie"
      },
      {
       "label": "Ueber 100T-Linie",
@@ -45855,19 +45855,19 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.59x Ø20T)"
+      "detail": "unterdurchschnittlich (0.66x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
-      "points": 2.5,
+      "points": 2.4,
       "max": 10,
-      "detail": "8% der Jahres-Spanne (0%=Jahrestief, 100%=Jahreshoch)"
+      "detail": "7% der Jahres-Spanne (0%=Jahrestief, 100%=Jahreshoch)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 0.0,
       "max": 20,
-      "detail": "mehr Verkaeufer als Kaeufer (0.44x)"
+      "detail": "mehr Verkaeufer als Kaeufer (0.46x)"
      }
     ],
     "momentum": [
@@ -45881,13 +45881,13 @@
       "label": "Abstand 50T-Linie",
       "points": 0.0,
       "max": 10,
-      "detail": "-12.5% darunter 50T-Linie"
+      "detail": "-12.7% darunter 50T-Linie"
      },
      {
       "label": "Abstand 200T-Linie",
       "points": 0.0,
       "max": 10,
-      "detail": "-25.4% darunter 200T-Linie"
+      "detail": "-25.5% darunter 200T-Linie"
      },
      {
       "label": "Ueber 100T-Linie",
@@ -45905,19 +45905,19 @@
       "label": "Position 52W-Spanne",
       "points": 0.0,
       "max": 15,
-      "detail": "8% der Jahres-Spanne (0%=Jahrestief, 100%=Jahreshoch)"
+      "detail": "7% der Jahres-Spanne (0%=Jahrestief, 100%=Jahreshoch)"
      },
      {
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.59x Ø20T)"
+      "detail": "unterdurchschnittlich (0.66x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 0.0,
       "max": 18,
-      "detail": "mehr Verkaeufer als Kaeufer (0.44x)"
+      "detail": "mehr Verkaeufer als Kaeufer (0.46x)"
      }
     ],
     "value": [
@@ -46273,7 +46273,7 @@
     "above_sma200": false,
     "pct_above_sma50": -5.649058946623664,
     "pct_above_sma100": -7.880314990557324,
-    "pct_above_sma200": -4.382882887379846,
+    "pct_above_sma200": -4.38288282403736,
     "sma50_slope": -4.7,
     "sma200_slope": 1.37,
     "higher_low": false,
@@ -46807,7 +46807,7 @@
     "above_sma200": true,
     "pct_above_sma50": -7.506842230199984,
     "pct_above_sma100": -6.377091619662556,
-    "pct_above_sma200": 2.002476243686213,
+    "pct_above_sma200": 2.0024762907737026,
     "sma50_slope": -0.16,
     "sma200_slope": 2.21,
     "higher_low": false,
@@ -47070,7 +47070,7 @@
     "above_sma100": false,
     "above_sma200": true,
     "pct_above_sma50": -5.677794746151199,
-    "pct_above_sma100": -1.837171466645604,
+    "pct_above_sma100": -1.8371714666455707,
     "pct_above_sma200": 0.497335271514876,
     "sma50_slope": 1.63,
     "sma200_slope": 2.14,
@@ -47909,7 +47909,7 @@
     "above_sma200": false,
     "pct_above_sma50": -7.082033896663509,
     "pct_above_sma100": -8.782496786600857,
-    "pct_above_sma200": -4.428186789717337,
+    "pct_above_sma200": -4.428186656447741,
     "sma50_slope": -0.62,
     "sma200_slope": 1.99,
     "higher_low": false,
@@ -48172,7 +48172,7 @@
     "above_sma200": false,
     "pct_above_sma50": -8.507439395862837,
     "pct_above_sma100": -5.990290611580551,
-    "pct_above_sma200": -1.839996184285042,
+    "pct_above_sma200": -1.8399960229326107,
     "sma50_slope": -1.17,
     "sma200_slope": 2.93,
     "higher_low": false,
@@ -48969,7 +48969,7 @@
     "above_sma200": false,
     "pct_above_sma50": -3.31870833758241,
     "pct_above_sma100": -4.449243934800851,
-    "pct_above_sma200": -4.065999431167244,
+    "pct_above_sma200": -4.0659995173022985,
     "sma50_slope": -0.74,
     "sma200_slope": 2.26,
     "higher_low": false,
@@ -49263,7 +49263,7 @@
     "above_sma200": true,
     "pct_above_sma50": -5.91369463965491,
     "pct_above_sma100": -2.4372515880243584,
-    "pct_above_sma200": 6.142408905101204,
+    "pct_above_sma200": 6.142408480469652,
     "sma50_slope": -0.02,
     "sma200_slope": 4.49,
     "higher_low": true,
@@ -49534,7 +49534,7 @@
     "above_sma200": false,
     "pct_above_sma50": -18.009752315901363,
     "pct_above_sma100": -20.665978265507366,
-    "pct_above_sma200": -19.37263483621271,
+    "pct_above_sma200": -19.37263508590631,
     "sma50_slope": -5.78,
     "sma200_slope": 0.06,
     "higher_low": false,
@@ -49820,8 +49820,8 @@
     "above_sma100": false,
     "above_sma200": false,
     "pct_above_sma50": -24.562400432859953,
-    "pct_above_sma100": -30.59172461875844,
-    "pct_above_sma200": -35.50823065015015,
+    "pct_above_sma100": -30.591724838758484,
+    "pct_above_sma200": -35.508230982539345,
     "sma50_slope": -10.54,
     "sma200_slope": 0.56,
     "higher_low": false,
@@ -50123,7 +50123,7 @@
     "above_sma200": false,
     "pct_above_sma50": 3.447155349604092,
     "pct_above_sma100": 2.31427807823561,
-    "pct_above_sma200": -1.3266736404993096,
+    "pct_above_sma200": -1.3266737333772705,
     "sma50_slope": 0.38,
     "sma200_slope": -0.3,
     "higher_low": true,
@@ -50396,32 +50396,32 @@
    "country": "India",
    "exchange": "NYQ",
    "metrics": {
-    "last": 860.95,
-    "dd_ath": -13.6,
+    "last": 861.45,
+    "dd_ath": -13.5,
     "days_since_ath": 485,
-    "range_pos": 57.8,
+    "range_pos": 57.9,
     "above_sma50": true,
     "above_sma100": true,
     "above_sma200": true,
-    "pct_above_sma50": 15.72328741158806,
-    "pct_above_sma100": 15.55259260464128,
-    "pct_above_sma200": 11.533772574756828,
+    "pct_above_sma50": 15.788937792274105,
+    "pct_above_sma100": 15.618924322127349,
+    "pct_above_sma200": 11.598184806985179,
     "sma50_slope": 4.26,
     "sma200_slope": -1.66,
     "higher_low": false,
     "higher_low_pct": -1.0,
-    "rsi14": 72.5,
+    "rsi14": 72.7,
     "rsi_min60": 29.4,
     "rsi_week": 66.2,
     "perf": {
      "m1": 26.6,
-     "m3": 18.3,
+     "m3": 18.4,
      "m6": 12.4,
      "m12": -11.8
     },
     "rs6": 26.2,
-    "vol_pressure_5d": 2.62,
-    "vol_breakout": 0.38
+    "vol_pressure_5d": 2.58,
+    "vol_breakout": 0.4
    },
    "flags": [],
    "earnings_in": null,
@@ -50461,7 +50461,7 @@
    "revision_note": null,
    "target": {
     "target_abs": 970.07,
-    "upside_pct": 12.7,
+    "upside_pct": 12.6,
     "fresh": null,
     "n_analysts": 4,
     "empfehlung": "kaufen",
@@ -50474,8 +50474,8 @@
     }
    },
    "scores": {
-    "turnaround": 56.1,
-    "momentum": 70.6,
+    "turnaround": 56.3,
+    "momentum": 70.7,
     "value": 46.3
    },
    "why": {
@@ -50506,7 +50506,7 @@
       "label": "Abstand 50T-Linie",
       "points": 10.0,
       "max": 10,
-      "detail": "+15.7% darueber 50T-Linie"
+      "detail": "+15.8% darueber 50T-Linie"
      },
      {
       "label": "Ueber 100T-Linie",
@@ -50524,13 +50524,13 @@
       "label": "RSI-Erholung",
       "points": 3.0,
       "max": 15,
-      "detail": "RSI 72, aus Ueberverkauft"
+      "detail": "RSI 73, aus Ueberverkauft"
      },
      {
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.38x Ø20T)"
+      "detail": "unterdurchschnittlich (0.40x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -50540,9 +50540,9 @@
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
-      "points": 19.5,
+      "points": 19.7,
       "max": 20,
-      "detail": "mehr Kaeufer als Verkaeufer (2.62x)"
+      "detail": "mehr Kaeufer als Verkaeufer (2.58x)"
      }
     ],
     "momentum": [
@@ -50556,13 +50556,13 @@
       "label": "Abstand 50T-Linie",
       "points": 10.0,
       "max": 10,
-      "detail": "+15.7% darueber 50T-Linie"
+      "detail": "+15.8% darueber 50T-Linie"
      },
      {
       "label": "Abstand 200T-Linie",
       "points": 10.0,
       "max": 10,
-      "detail": "+11.5% darueber 200T-Linie"
+      "detail": "+11.6% darueber 200T-Linie"
      },
      {
       "label": "Ueber 100T-Linie",
@@ -50586,13 +50586,13 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.38x Ø20T)"
+      "detail": "unterdurchschnittlich (0.40x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
-      "points": 17.6,
+      "points": 17.7,
       "max": 18,
-      "detail": "mehr Kaeufer als Verkaeufer (2.62x)"
+      "detail": "mehr Kaeufer als Verkaeufer (2.58x)"
      }
     ],
     "value": [
@@ -50675,9 +50675,9 @@
     "above_sma50": false,
     "above_sma100": false,
     "above_sma200": false,
-    "pct_above_sma50": -11.9329582088325,
-    "pct_above_sma100": -16.300008262972867,
-    "pct_above_sma200": -12.48131052356759,
+    "pct_above_sma50": -11.932958208832488,
+    "pct_above_sma100": -16.300008122455832,
+    "pct_above_sma200": -12.481310638791076,
     "sma50_slope": -6.35,
     "sma200_slope": 0.25,
     "higher_low": false,
@@ -50936,32 +50936,32 @@
    "country": "India",
    "exchange": "NYQ",
    "metrics": {
-    "last": 1595.0,
-    "dd_ath": -2.7,
+    "last": 1597.3,
+    "dd_ath": -2.6,
     "days_since_ath": 7,
-    "range_pos": 89.9,
+    "range_pos": 90.4,
     "above_sma50": true,
     "above_sma100": true,
     "above_sma200": true,
-    "pct_above_sma50": 11.558433105019672,
-    "pct_above_sma100": 11.953148805391244,
-    "pct_above_sma200": 16.93384014603765,
-    "sma50_slope": 3.69,
+    "pct_above_sma50": 11.715710108166878,
+    "pct_above_sma100": 12.112779420020026,
+    "pct_above_sma200": 17.101475756797633,
+    "sma50_slope": 3.7,
     "sma200_slope": 1.26,
     "higher_low": true,
     "higher_low_pct": 3.6,
-    "rsi14": 61.6,
+    "rsi14": 62.1,
     "rsi_min60": 22.9,
-    "rsi_week": 69.7,
+    "rsi_week": 70.1,
     "perf": {
-     "m1": 15.0,
-     "m3": 12.1,
-     "m6": 25.7,
-     "m12": 17.1
+     "m1": 15.2,
+     "m3": 12.3,
+     "m6": 25.9,
+     "m12": 17.3
     },
-    "rs6": 39.6,
-    "vol_pressure_5d": 0.9,
-    "vol_breakout": 0.19
+    "rs6": 39.7,
+    "vol_pressure_5d": 0.89,
+    "vol_breakout": 0.22
    },
    "flags": [],
    "earnings_in": null,
@@ -51001,7 +51001,7 @@
    "revision_note": null,
    "target": {
     "target_abs": 1729.86,
-    "upside_pct": 8.5,
+    "upside_pct": 8.3,
     "fresh": null,
     "n_analysts": 4,
     "empfehlung": "keine Angabe",
@@ -51014,8 +51014,8 @@
     }
    },
    "scores": {
-    "turnaround": 64.9,
-    "momentum": 81.6,
+    "turnaround": 64.3,
+    "momentum": 81.3,
     "value": 58.9
    },
    "why": {
@@ -51047,7 +51047,7 @@
       "label": "Abstand 50T-Linie",
       "points": 10.0,
       "max": 10,
-      "detail": "+11.6% darueber 50T-Linie"
+      "detail": "+11.7% darueber 50T-Linie"
      },
      {
       "label": "Ueber 100T-Linie",
@@ -51063,7 +51063,7 @@
      },
      {
       "label": "RSI-Erholung",
-      "points": 8.0,
+      "points": 7.7,
       "max": 15,
       "detail": "RSI 62, aus Ueberverkauft"
      },
@@ -51071,7 +51071,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.19x Ø20T)"
+      "detail": "unterdurchschnittlich (0.22x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -51081,9 +51081,9 @@
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
-      "points": 11.7,
+      "points": 11.4,
       "max": 20,
-      "detail": "ausgeglichen (0.90x)"
+      "detail": "ausgeglichen (0.89x)"
      }
     ],
     "momentum": [
@@ -51097,13 +51097,13 @@
       "label": "Abstand 50T-Linie",
       "points": 10.0,
       "max": 10,
-      "detail": "+11.6% darueber 50T-Linie"
+      "detail": "+11.7% darueber 50T-Linie"
      },
      {
       "label": "Abstand 200T-Linie",
       "points": 10.0,
       "max": 10,
-      "detail": "+16.9% darueber 200T-Linie"
+      "detail": "+17.1% darueber 200T-Linie"
      },
      {
       "label": "Ueber 100T-Linie",
@@ -51127,13 +51127,13 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.19x Ø20T)"
+      "detail": "unterdurchschnittlich (0.22x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
-      "points": 10.5,
+      "points": 10.2,
       "max": 18,
-      "detail": "ausgeglichen (0.90x)"
+      "detail": "ausgeglichen (0.89x)"
      }
     ],
     "value": [
@@ -51507,7 +51507,7 @@
     "above_sma200": false,
     "pct_above_sma50": -11.371051889623807,
     "pct_above_sma100": -11.917940571360452,
-    "pct_above_sma200": -2.9193383433405273,
+    "pct_above_sma200": -2.9193385137301076,
     "sma50_slope": -3.15,
     "sma200_slope": 1.8,
     "higher_low": false,
@@ -52345,32 +52345,32 @@
    "country": "Japan",
    "exchange": "NYQ",
    "metrics": {
-    "last": 7734.0,
-    "dd_ath": -12.7,
+    "last": 7710.0,
+    "dd_ath": -13.0,
     "days_since_ath": 52,
-    "range_pos": 71.5,
+    "range_pos": 70.9,
     "above_sma50": false,
     "above_sma100": false,
     "above_sma200": true,
-    "pct_above_sma50": -3.8468335165095513,
-    "pct_above_sma100": -5.224680177966013,
-    "pct_above_sma200": 2.8968018310448596,
+    "pct_above_sma50": -4.139493588618337,
+    "pct_above_sma100": -5.516006305972199,
+    "pct_above_sma200": 2.5791321689834,
     "sma50_slope": -3.07,
     "sma200_slope": 1.89,
     "higher_low": false,
     "higher_low_pct": -6.9,
-    "rsi14": 49.0,
+    "rsi14": 48.6,
     "rsi_min60": 34.7,
-    "rsi_week": 50.0,
+    "rsi_week": 49.8,
     "perf": {
-     "m1": 1.9,
-     "m3": -3.5,
-     "m6": 7.1,
-     "m12": 52.7
+     "m1": 1.6,
+     "m3": -3.8,
+     "m6": 6.8,
+     "m12": 52.2
     },
-    "rs6": 20.9,
-    "vol_pressure_5d": 0.6,
-    "vol_breakout": 0.52
+    "rs6": 20.6,
+    "vol_pressure_5d": 0.61,
+    "vol_breakout": 0.56
    },
    "flags": [],
    "earnings_in": null,
@@ -52410,7 +52410,7 @@
    "revision_note": null,
    "target": {
     "target_abs": 9290.22,
-    "upside_pct": 20.1,
+    "upside_pct": 20.5,
     "fresh": null,
     "n_analysts": 2,
     "empfehlung": "kaufen",
@@ -52423,8 +52423,8 @@
     }
    },
    "scores": {
-    "turnaround": 16.8,
-    "momentum": 44.5,
+    "turnaround": 17.5,
+    "momentum": 43.8,
     "value": 64.0
    },
    "why": {
@@ -52454,7 +52454,7 @@
       "label": "Abstand 50T-Linie",
       "points": 0.0,
       "max": 10,
-      "detail": "-3.8% darunter 50T-Linie"
+      "detail": "-4.1% darunter 50T-Linie"
      },
      {
       "label": "Ueber 100T-Linie",
@@ -52478,25 +52478,25 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.52x Ø20T)"
+      "detail": "unterdurchschnittlich (0.56x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
-      "points": 1.8,
+      "points": 2.0,
       "max": 10,
-      "detail": "72% der Jahres-Spanne (0%=Jahrestief, 100%=Jahreshoch)"
+      "detail": "71% der Jahres-Spanne (0%=Jahrestief, 100%=Jahreshoch)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
-      "points": 0.0,
+      "points": 0.5,
       "max": 20,
-      "detail": "mehr Verkaeufer als Kaeufer (0.60x)"
+      "detail": "mehr Verkaeufer als Kaeufer (0.61x)"
      }
     ],
     "momentum": [
      {
       "label": "Rel. Staerke 6M",
-      "points": 24.2,
+      "points": 23.9,
       "max": 28,
       "detail": "+21% staerker/schwaecher als der Index"
      },
@@ -52504,13 +52504,13 @@
       "label": "Abstand 50T-Linie",
       "points": 0.0,
       "max": 10,
-      "detail": "-3.8% darunter 50T-Linie"
+      "detail": "-4.1% darunter 50T-Linie"
      },
      {
       "label": "Abstand 200T-Linie",
-      "points": 9.8,
+      "points": 9.3,
       "max": 10,
-      "detail": "+2.9% darueber 200T-Linie"
+      "detail": "+2.6% darueber 200T-Linie"
      },
      {
       "label": "Ueber 100T-Linie",
@@ -52526,21 +52526,21 @@
      },
      {
       "label": "Position 52W-Spanne",
-      "points": 5.8,
+      "points": 5.5,
       "max": 15,
-      "detail": "72% der Jahres-Spanne (0%=Jahrestief, 100%=Jahreshoch)"
+      "detail": "71% der Jahres-Spanne (0%=Jahrestief, 100%=Jahreshoch)"
      },
      {
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.52x Ø20T)"
+      "detail": "unterdurchschnittlich (0.56x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
-      "points": 0.0,
+      "points": 0.4,
       "max": 18,
-      "detail": "mehr Verkaeufer als Kaeufer (0.60x)"
+      "detail": "mehr Verkaeufer als Kaeufer (0.61x)"
      }
     ],
     "value": [
@@ -52624,8 +52624,8 @@
     "above_sma100": false,
     "above_sma200": true,
     "pct_above_sma50": -17.219697542027323,
-    "pct_above_sma100": -8.66467987772339,
-    "pct_above_sma200": 12.678320990846249,
+    "pct_above_sma100": -8.66467958363849,
+    "pct_above_sma200": 12.678321158690785,
     "sma50_slope": 1.16,
     "sma200_slope": 7.41,
     "higher_low": true,
@@ -53190,32 +53190,32 @@
    "country": "Japan",
    "exchange": "NYQ",
    "metrics": {
-    "last": 3198.0,
-    "dd_ath": -14.7,
+    "last": 3191.0,
+    "dd_ath": -14.9,
     "days_since_ath": 123,
-    "range_pos": 62.8,
+    "range_pos": 62.3,
     "above_sma50": false,
     "above_sma100": false,
     "above_sma200": true,
-    "pct_above_sma50": -7.10267414253356,
-    "pct_above_sma100": -8.314135151594726,
-    "pct_above_sma200": 0.6305791021212537,
-    "sma50_slope": -2.95,
+    "pct_above_sma50": -7.302244298236338,
+    "pct_above_sma100": -8.51298737417957,
+    "pct_above_sma200": 0.4114179098078097,
+    "sma50_slope": -2.96,
     "sma200_slope": 2.05,
     "higher_low": false,
     "higher_low_pct": -11.6,
-    "rsi14": 43.4,
+    "rsi14": 43.0,
     "rsi_min60": 31.6,
-    "rsi_week": 47.3,
+    "rsi_week": 47.1,
     "perf": {
-     "m1": -5.1,
-     "m3": -6.9,
-     "m6": 5.7,
-     "m12": 37.6
+     "m1": -5.3,
+     "m3": -7.1,
+     "m6": 5.4,
+     "m12": 37.3
     },
-    "rs6": 19.5,
-    "vol_pressure_5d": 0.53,
-    "vol_breakout": 0.49
+    "rs6": 19.3,
+    "vol_pressure_5d": 0.54,
+    "vol_breakout": 0.52
    },
    "flags": [],
    "earnings_in": null,
@@ -53255,7 +53255,7 @@
    "revision_note": null,
    "target": {
     "target_abs": 3793.22,
-    "upside_pct": 18.6,
+    "upside_pct": 18.9,
     "fresh": null,
     "n_analysts": 2,
     "empfehlung": "kaufen",
@@ -53268,8 +53268,8 @@
     }
    },
    "scores": {
-    "turnaround": 21.1,
-    "momentum": 35.5,
+    "turnaround": 21.4,
+    "momentum": 34.6,
     "value": 47.6
    },
    "why": {
@@ -53278,7 +53278,7 @@
      "aber: Verkaufsdruck diese Woche - Wende noch nicht bestaetigt"
     ],
     "momentum": [
-     "relative Staerke +20% vs. Index",
+     "relative Staerke +19% vs. Index",
      "aber: Verkaufsdruck diese Woche trotz Naehe zum Hoch"
     ],
     "value": [
@@ -53298,7 +53298,7 @@
       "label": "Abstand 50T-Linie",
       "points": 0.0,
       "max": 10,
-      "detail": "-7.1% darunter 50T-Linie"
+      "detail": "-7.3% darunter 50T-Linie"
      },
      {
       "label": "Ueber 100T-Linie",
@@ -53322,39 +53322,39 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.49x Ø20T)"
+      "detail": "unterdurchschnittlich (0.52x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
-      "points": 6.1,
+      "points": 6.4,
       "max": 10,
-      "detail": "63% der Jahres-Spanne (0%=Jahrestief, 100%=Jahreshoch)"
+      "detail": "62% der Jahres-Spanne (0%=Jahrestief, 100%=Jahreshoch)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 0.0,
       "max": 20,
-      "detail": "mehr Verkaeufer als Kaeufer (0.53x)"
+      "detail": "mehr Verkaeufer als Kaeufer (0.54x)"
      }
     ],
     "momentum": [
      {
       "label": "Rel. Staerke 6M",
-      "points": 22.9,
+      "points": 22.7,
       "max": 28,
-      "detail": "+20% staerker/schwaecher als der Index"
+      "detail": "+19% staerker/schwaecher als der Index"
      },
      {
       "label": "Abstand 50T-Linie",
       "points": 0.0,
       "max": 10,
-      "detail": "-7.1% darunter 50T-Linie"
+      "detail": "-7.3% darunter 50T-Linie"
      },
      {
       "label": "Abstand 200T-Linie",
-      "points": 6.1,
+      "points": 5.7,
       "max": 10,
-      "detail": "+0.6% darueber 200T-Linie"
+      "detail": "+0.4% darueber 200T-Linie"
      },
      {
       "label": "Ueber 100T-Linie",
@@ -53370,21 +53370,21 @@
      },
      {
       "label": "Position 52W-Spanne",
-      "points": 1.4,
+      "points": 1.1,
       "max": 15,
-      "detail": "63% der Jahres-Spanne (0%=Jahrestief, 100%=Jahreshoch)"
+      "detail": "62% der Jahres-Spanne (0%=Jahrestief, 100%=Jahreshoch)"
      },
      {
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.49x Ø20T)"
+      "detail": "unterdurchschnittlich (0.52x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 0.0,
       "max": 18,
-      "detail": "mehr Verkaeufer als Kaeufer (0.53x)"
+      "detail": "mehr Verkaeufer als Kaeufer (0.54x)"
      }
     ],
     "value": [
@@ -53468,8 +53468,8 @@
     "above_sma100": false,
     "above_sma200": false,
     "pct_above_sma50": -11.079475292754337,
-    "pct_above_sma100": -9.814816575607853,
-    "pct_above_sma200": -8.671527573648463,
+    "pct_above_sma100": -9.814816636779645,
+    "pct_above_sma200": -8.671527322718099,
     "sma50_slope": -5.68,
     "sma200_slope": -0.7,
     "higher_low": true,
@@ -54036,7 +54036,7 @@
     "above_sma200": false,
     "pct_above_sma50": 4.236725976732747,
     "pct_above_sma100": -3.221132457683895,
-    "pct_above_sma200": -0.5058605384796411,
+    "pct_above_sma200": -0.5058605935463811,
     "sma50_slope": -3.08,
     "sma200_slope": -2.81,
     "higher_low": true,
@@ -54591,7 +54591,7 @@
     "above_sma200": false,
     "pct_above_sma50": -20.05933689002074,
     "pct_above_sma100": -23.09193994037323,
-    "pct_above_sma200": -31.457694944683332,
+    "pct_above_sma200": -31.457695255223705,
     "sma50_slope": -8.31,
     "sma200_slope": -3.18,
     "higher_low": false,
@@ -55708,7 +55708,7 @@
     "above_sma200": false,
     "pct_above_sma50": -1.527743889775024,
     "pct_above_sma100": -5.7200173885015975,
-    "pct_above_sma200": -6.665326356974088,
+    "pct_above_sma200": -6.66532630465383,
     "sma50_slope": -3.04,
     "sma200_slope": -0.08,
     "higher_low": false,
@@ -55980,7 +55980,7 @@
     "above_sma200": true,
     "pct_above_sma50": -10.984555489650615,
     "pct_above_sma100": -3.5972428937045,
-    "pct_above_sma200": 14.354103847732013,
+    "pct_above_sma200": 14.354104059034412,
     "sma50_slope": 0.68,
     "sma200_slope": 5.77,
     "higher_low": true,
@@ -56284,7 +56284,7 @@
     "above_sma200": false,
     "pct_above_sma50": -15.83419625997442,
     "pct_above_sma100": -19.882530462370607,
-    "pct_above_sma200": -22.181071953881737,
+    "pct_above_sma200": -22.181071846882404,
     "sma50_slope": -8.22,
     "sma200_slope": -0.94,
     "higher_low": false,
@@ -56554,7 +56554,7 @@
     "above_sma200": false,
     "pct_above_sma50": -4.286618386385232,
     "pct_above_sma100": -6.606488457565318,
-    "pct_above_sma200": -0.22205993343469288,
+    "pct_above_sma200": -0.22206001363265226,
     "sma50_slope": -1.26,
     "sma200_slope": 1.74,
     "higher_low": false,
@@ -57357,7 +57357,7 @@
     "above_sma200": true,
     "pct_above_sma50": -4.819638178543039,
     "pct_above_sma100": 0.5078800768420599,
-    "pct_above_sma200": 5.6628347557635905,
+    "pct_above_sma200": 5.662834717432275,
     "sma50_slope": 2.83,
     "sma200_slope": 2.92,
     "higher_low": true,
@@ -57933,32 +57933,32 @@
    "country": "South Korea",
    "exchange": "NMS",
    "metrics": {
-    "last": 1102000.0,
-    "dd_ath": -61.5,
+    "last": 1104500.0,
+    "dd_ath": -61.4,
     "days_since_ath": 158,
-    "range_pos": 25.2,
+    "range_pos": 25.3,
     "above_sma50": false,
     "above_sma100": false,
     "above_sma200": false,
-    "pct_above_sma50": -20.877722167482972,
-    "pct_above_sma100": -29.045094275224237,
-    "pct_above_sma200": -26.80003487476833,
+    "pct_above_sma50": -20.70107195090145,
+    "pct_above_sma100": -28.8852704043287,
+    "pct_above_sma200": -26.634582498299373,
     "sma50_slope": -12.51,
     "sma200_slope": 2.83,
     "higher_low": false,
     "higher_low_pct": -18.4,
-    "rsi14": 43.0,
+    "rsi14": 43.2,
     "rsi_min60": 24.6,
-    "rsi_week": 39.4,
+    "rsi_week": 39.5,
     "perf": {
-     "m1": -26.4,
-     "m3": -33.4,
-     "m6": -45.2,
-     "m12": 85.9
+     "m1": -26.2,
+     "m3": -33.3,
+     "m6": -45.1,
+     "m12": 86.3
     },
-    "rs6": -31.4,
-    "vol_pressure_5d": 1.23,
-    "vol_breakout": 0.64
+    "rs6": -31.3,
+    "vol_pressure_5d": 1.24,
+    "vol_breakout": 0.67
    },
    "flags": [],
    "earnings_in": null,
@@ -58027,7 +58027,7 @@
    "revision_note": null,
    "target": {
     "target_abs": 2316897.62,
-    "upside_pct": 110.2,
+    "upside_pct": 109.8,
     "fresh": false,
     "n_analysts": 14,
     "empfehlung": "klar kaufen",
@@ -58071,7 +58071,7 @@
       "label": "Abstand 50T-Linie",
       "points": 0.0,
       "max": 10,
-      "detail": "-20.9% darunter 50T-Linie"
+      "detail": "-20.7% darunter 50T-Linie"
      },
      {
       "label": "Ueber 100T-Linie",
@@ -58095,7 +58095,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.64x Ø20T)"
+      "detail": "unterdurchschnittlich (0.67x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -58107,7 +58107,7 @@
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 20.0,
       "max": 20,
-      "detail": "mehr Kaeufer als Verkaeufer (1.23x)"
+      "detail": "mehr Kaeufer als Verkaeufer (1.24x)"
      }
     ],
     "momentum": [
@@ -58121,13 +58121,13 @@
       "label": "Abstand 50T-Linie",
       "points": 0.0,
       "max": 10,
-      "detail": "-20.9% darunter 50T-Linie"
+      "detail": "-20.7% darunter 50T-Linie"
      },
      {
       "label": "Abstand 200T-Linie",
       "points": 0.0,
       "max": 10,
-      "detail": "-26.8% darunter 200T-Linie"
+      "detail": "-26.6% darunter 200T-Linie"
      },
      {
       "label": "Ueber 100T-Linie",
@@ -58151,13 +58151,13 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.64x Ø20T)"
+      "detail": "unterdurchschnittlich (0.67x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 18.0,
       "max": 18,
-      "detail": "mehr Kaeufer als Verkaeufer (1.23x)"
+      "detail": "mehr Kaeufer als Verkaeufer (1.24x)"
      }
     ],
     "value": [
@@ -58233,32 +58233,32 @@
    "country": "Japan",
    "exchange": "NYQ",
    "metrics": {
-    "last": 3058.0,
-    "dd_ath": -14.0,
+    "last": 3055.0,
+    "dd_ath": -14.1,
     "days_since_ath": 123,
-    "range_pos": 65.8,
+    "range_pos": 65.6,
     "above_sma50": false,
     "above_sma100": false,
     "above_sma200": false,
-    "pct_above_sma50": -5.643829018033597,
-    "pct_above_sma100": -7.509155508265531,
-    "pct_above_sma200": -0.11616382027653804,
+    "pct_above_sma50": -5.734650405371555,
+    "pct_above_sma100": -7.599053696953762,
+    "pct_above_sma200": -0.21366429517448715,
     "sma50_slope": -2.83,
     "sma200_slope": 1.71,
     "higher_low": false,
     "higher_low_pct": -8.6,
-    "rsi14": 44.7,
+    "rsi14": 44.5,
     "rsi_min60": 34.6,
-    "rsi_week": 47.4,
+    "rsi_week": 47.3,
     "perf": {
-     "m1": -4.0,
-     "m3": -5.9,
-     "m6": 2.5,
-     "m12": 47.2
+     "m1": -4.1,
+     "m3": -6.0,
+     "m6": 2.4,
+     "m12": 47.0
     },
-    "rs6": 16.3,
-    "vol_pressure_5d": 0.45,
-    "vol_breakout": 0.45
+    "rs6": 16.2,
+    "vol_pressure_5d": 0.46,
+    "vol_breakout": 0.49
    },
    "flags": [],
    "earnings_in": null,
@@ -58298,7 +58298,7 @@
    "revision_note": null,
    "target": {
     "target_abs": 2086.02,
-    "upside_pct": -31.8,
+    "upside_pct": -31.7,
     "fresh": null,
     "n_analysts": 1,
     "empfehlung": "klar kaufen",
@@ -58311,8 +58311,8 @@
     }
    },
    "scores": {
-    "turnaround": 19.6,
-    "momentum": 31.9,
+    "turnaround": 19.7,
+    "momentum": 31.5,
     "value": 24.1
    },
    "why": {
@@ -58338,7 +58338,7 @@
       "label": "Abstand 50T-Linie",
       "points": 0.0,
       "max": 10,
-      "detail": "-5.6% darunter 50T-Linie"
+      "detail": "-5.7% darunter 50T-Linie"
      },
      {
       "label": "Ueber 100T-Linie",
@@ -58356,17 +58356,17 @@
       "label": "RSI-Erholung",
       "points": 15.0,
       "max": 15,
-      "detail": "RSI 45, aus Ueberverkauft"
+      "detail": "RSI 44, aus Ueberverkauft"
      },
      {
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.45x Ø20T)"
+      "detail": "unterdurchschnittlich (0.49x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
-      "points": 4.6,
+      "points": 4.7,
       "max": 10,
       "detail": "66% der Jahres-Spanne (0%=Jahrestief, 100%=Jahreshoch)"
      },
@@ -58374,13 +58374,13 @@
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 0.0,
       "max": 20,
-      "detail": "mehr Verkaeufer als Kaeufer (0.45x)"
+      "detail": "mehr Verkaeufer als Kaeufer (0.46x)"
      }
     ],
     "momentum": [
      {
       "label": "Rel. Staerke 6M",
-      "points": 19.9,
+      "points": 19.8,
       "max": 28,
       "detail": "+16% staerker/schwaecher als der Index"
      },
@@ -58388,13 +58388,13 @@
       "label": "Abstand 50T-Linie",
       "points": 0.0,
       "max": 10,
-      "detail": "-5.6% darunter 50T-Linie"
+      "detail": "-5.7% darunter 50T-Linie"
      },
      {
       "label": "Abstand 200T-Linie",
-      "points": 4.8,
+      "points": 4.6,
       "max": 10,
-      "detail": "-0.1% darunter 200T-Linie"
+      "detail": "-0.2% darunter 200T-Linie"
      },
      {
       "label": "Ueber 100T-Linie",
@@ -58410,7 +58410,7 @@
      },
      {
       "label": "Position 52W-Spanne",
-      "points": 2.9,
+      "points": 2.8,
       "max": 15,
       "detail": "66% der Jahres-Spanne (0%=Jahrestief, 100%=Jahreshoch)"
      },
@@ -58418,13 +58418,13 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.45x Ø20T)"
+      "detail": "unterdurchschnittlich (0.49x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 0.0,
       "max": 18,
-      "detail": "mehr Verkaeufer als Kaeufer (0.45x)"
+      "detail": "mehr Verkaeufer als Kaeufer (0.46x)"
      }
     ],
     "value": [
@@ -59364,8 +59364,8 @@
      "m12": -5.5
     },
     "rs6": 36.4,
-    "vol_pressure_5d": 1.13,
-    "vol_breakout": 0.4
+    "vol_pressure_5d": 1.12,
+    "vol_breakout": 0.42
    },
    "flags": [],
    "earnings_in": null,
@@ -59418,8 +59418,8 @@
     }
    },
    "scores": {
-    "turnaround": 73.9,
-    "momentum": 84.4,
+    "turnaround": 73.6,
+    "momentum": 84.2,
     "value": 58.7
    },
    "why": {
@@ -59476,7 +59476,7 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.40x Ø20T)"
+      "detail": "unterdurchschnittlich (0.42x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
@@ -59486,9 +59486,9 @@
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
-      "points": 18.3,
+      "points": 18.0,
       "max": 20,
-      "detail": "ausgeglichen (1.13x)"
+      "detail": "ausgeglichen (1.12x)"
      }
     ],
     "momentum": [
@@ -59532,13 +59532,13 @@
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.40x Ø20T)"
+      "detail": "unterdurchschnittlich (0.42x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
-      "points": 16.4,
+      "points": 16.2,
       "max": 18,
-      "detail": "ausgeglichen (1.13x)"
+      "detail": "ausgeglichen (1.12x)"
      }
     ],
     "value": [
@@ -59622,8 +59622,8 @@
     "above_sma100": true,
     "above_sma200": true,
     "pct_above_sma50": 6.390633596127904,
-    "pct_above_sma100": 7.404276757022954,
-    "pct_above_sma200": 11.281492421981199,
+    "pct_above_sma100": 7.4042768334306786,
+    "pct_above_sma200": 11.281491847814419,
     "sma50_slope": 3.32,
     "sma200_slope": -0.31,
     "higher_low": true,
@@ -60196,7 +60196,7 @@
     "above_sma200": false,
     "pct_above_sma50": -31.160798338182527,
     "pct_above_sma100": -38.279918521229284,
-    "pct_above_sma200": -32.84651106435285,
+    "pct_above_sma200": -32.84651109348965,
     "sma50_slope": -14.82,
     "sma200_slope": 2.21,
     "higher_low": false,
@@ -60797,8 +60797,8 @@
     "above_sma100": false,
     "above_sma200": true,
     "pct_above_sma50": -3.6196072630284792,
-    "pct_above_sma100": -3.399823635170429,
-    "pct_above_sma200": 3.841623695196561,
+    "pct_above_sma100": -3.399823573827665,
+    "pct_above_sma200": 3.8416238015230864,
     "sma50_slope": 0.73,
     "sma200_slope": 2.61,
     "higher_low": false,
@@ -61337,32 +61337,32 @@
    "country": "Japan",
    "exchange": "NYQ",
    "metrics": {
-    "last": 3395.0,
-    "dd_ath": -11.2,
+    "last": 3384.0,
+    "dd_ath": -11.4,
     "days_since_ath": 270,
-    "range_pos": 63.9,
+    "range_pos": 63.0,
     "above_sma50": true,
     "above_sma100": true,
     "above_sma200": true,
-    "pct_above_sma50": 8.59597637894447,
-    "pct_above_sma100": 11.986170393438766,
-    "pct_above_sma200": 9.87454971091617,
-    "sma50_slope": 4.19,
+    "pct_above_sma50": 8.251736852157897,
+    "pct_above_sma100": 11.627378912029386,
+    "pct_above_sma200": 9.520499162085883,
+    "sma50_slope": 4.18,
     "sma200_slope": -0.19,
     "higher_low": true,
     "higher_low_pct": 7.1,
-    "rsi14": 59.0,
+    "rsi14": 58.3,
     "rsi_min60": 38.8,
-    "rsi_week": 63.9,
+    "rsi_week": 63.5,
     "perf": {
-     "m1": 9.4,
-     "m3": 10.5,
-     "m6": 14.1,
-     "m12": 9.9
+     "m1": 9.1,
+     "m3": 10.1,
+     "m6": 13.7,
+     "m12": 9.5
     },
-    "rs6": 27.9,
-    "vol_pressure_5d": 0.49,
-    "vol_breakout": 0.36
+    "rs6": 27.6,
+    "vol_pressure_5d": 0.5,
+    "vol_breakout": 0.39
    },
    "flags": [],
    "earnings_in": null,
@@ -61410,7 +61410,7 @@
    "revision_note": "Analysten ↓1 in 30T (Freedom Broker, 2026-11-12)",
    "target": {
     "target_abs": 3703.78,
-    "upside_pct": 9.1,
+    "upside_pct": 9.4,
     "fresh": false,
     "n_analysts": 4,
     "empfehlung": "kaufen",
@@ -61423,9 +61423,9 @@
     }
    },
    "scores": {
-    "turnaround": 58.9,
-    "momentum": 54.9,
-    "value": 39.7
+    "turnaround": 59.7,
+    "momentum": 54.5,
+    "value": 39.8
    },
    "why": {
     "turnaround": [
@@ -61456,7 +61456,7 @@
       "label": "Abstand 50T-Linie",
       "points": 10.0,
       "max": 10,
-      "detail": "+8.6% darueber 50T-Linie"
+      "detail": "+8.3% darueber 50T-Linie"
      },
      {
       "label": "Ueber 100T-Linie",
@@ -61472,27 +61472,27 @@
      },
      {
       "label": "RSI-Erholung",
-      "points": 6.6,
+      "points": 7.0,
       "max": 15,
-      "detail": "RSI 59"
+      "detail": "RSI 58"
      },
      {
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 5,
-      "detail": "unterdurchschnittlich (0.36x Ø20T)"
+      "detail": "unterdurchschnittlich (0.39x Ø20T)"
      },
      {
       "label": "Position 52W-Spanne",
-      "points": 5.6,
+      "points": 6.0,
       "max": 10,
-      "detail": "64% der Jahres-Spanne (0%=Jahrestief, 100%=Jahreshoch)"
+      "detail": "63% der Jahres-Spanne (0%=Jahrestief, 100%=Jahreshoch)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 0.0,
       "max": 20,
-      "detail": "mehr Verkaeufer als Kaeufer (0.49x)"
+      "detail": "mehr Verkaeufer als Kaeufer (0.50x)"
      }
     ],
     "momentum": [
@@ -61506,13 +61506,13 @@
       "label": "Abstand 50T-Linie",
       "points": 10.0,
       "max": 10,
-      "detail": "+8.6% darueber 50T-Linie"
+      "detail": "+8.3% darueber 50T-Linie"
      },
      {
       "label": "Abstand 200T-Linie",
       "points": 10.0,
       "max": 10,
-      "detail": "+9.9% darueber 200T-Linie"
+      "detail": "+9.5% darueber 200T-Linie"
      },
      {
       "label": "Ueber 100T-Linie",
@@ -61528,21 +61528,21 @@
      },
      {
       "label": "Position 52W-Spanne",
-      "points": 1.9,
+      "points": 1.5,
       "max": 15,
-      "detail": "64% der Jahres-Spanne (0%=Jahrestief, 100%=Jahreshoch)"
+      "detail": "63% der Jahres-Spanne (0%=Jahrestief, 100%=Jahreshoch)"
      },
      {
       "label": "Volumen-Ausbruch",
       "points": 0.0,
       "max": 4,
-      "detail": "unterdurchschnittlich (0.36x Ø20T)"
+      "detail": "unterdurchschnittlich (0.39x Ø20T)"
      },
      {
       "label": "Kauf-/Verkaufsdruck 5T",
       "points": 0.0,
       "max": 18,
-      "detail": "mehr Verkaeufer als Kaeufer (0.49x)"
+      "detail": "mehr Verkaeufer als Kaeufer (0.50x)"
      }
     ],
     "value": [
@@ -61602,7 +61602,7 @@
      },
      {
       "label": "Kursziel-Abstand",
-      "points": 2.3,
+      "points": 2.4,
       "max": 5,
       "detail": "9%"
      }
@@ -61627,7 +61627,7 @@
     "above_sma200": false,
     "pct_above_sma50": -7.682676968133883,
     "pct_above_sma100": -8.179480068814959,
-    "pct_above_sma200": -2.1856246000113266,
+    "pct_above_sma200": -2.185624412500231,
     "sma50_slope": -3.13,
     "sma200_slope": 2.44,
     "higher_low": false,
@@ -61906,7 +61906,7 @@
     "above_sma200": true,
     "pct_above_sma50": -2.917678737546414,
     "pct_above_sma100": 0.32949188401456553,
-    "pct_above_sma200": 3.654048041399527,
+    "pct_above_sma200": 3.654048545235433,
     "sma50_slope": 2.08,
     "sma200_slope": 3.03,
     "higher_low": true,
@@ -62461,7 +62461,7 @@
     "above_sma200": true,
     "pct_above_sma50": 5.445265725307813,
     "pct_above_sma100": 6.907175394010823,
-    "pct_above_sma200": 9.151256210011983,
+    "pct_above_sma200": 9.151255980393591,
     "sma50_slope": 1.9,
     "sma200_slope": -0.09,
     "higher_low": true,
@@ -63009,7 +63009,7 @@
     "above_sma200": false,
     "pct_above_sma50": -25.351621091173282,
     "pct_above_sma100": -36.030495898153625,
-    "pct_above_sma200": -35.476333882233746,
+    "pct_above_sma200": -35.476333917209146,
     "sma50_slope": -14.09,
     "sma200_slope": 1.22,
     "higher_low": false,
@@ -63274,7 +63274,7 @@
     "above_sma200": true,
     "pct_above_sma50": 4.600124044652354,
     "pct_above_sma100": 4.370127993936879,
-    "pct_above_sma200": 10.853557691069838,
+    "pct_above_sma200": 10.853557881487209,
     "sma50_slope": 1.12,
     "sma200_slope": 2.66,
     "higher_low": true,
@@ -63885,7 +63885,7 @@
     "above_sma200": true,
     "pct_above_sma50": 4.016121901652303,
     "pct_above_sma100": 3.433374834768488,
-    "pct_above_sma200": 7.640531442822218,
+    "pct_above_sma200": 7.640531238197545,
     "sma50_slope": -0.34,
     "sma200_slope": -0.3,
     "higher_low": true,
@@ -64154,7 +64154,7 @@
     "above_sma200": true,
     "pct_above_sma50": 7.60066027820181,
     "pct_above_sma100": 22.94726405126848,
-    "pct_above_sma200": 28.508170543463773,
+    "pct_above_sma200": 28.50817072683136,
     "sma50_slope": 12.43,
     "sma200_slope": -0.63,
     "higher_low": true,
@@ -64422,7 +64422,7 @@
     "above_sma200": true,
     "pct_above_sma50": 2.756786974892189,
     "pct_above_sma100": 5.412349554098683,
-    "pct_above_sma200": 5.040471428638416,
+    "pct_above_sma200": 5.04047133743204,
     "sma50_slope": 3.05,
     "sma200_slope": 0.89,
     "higher_low": true,
@@ -65003,7 +65003,7 @@
     "above_sma200": true,
     "pct_above_sma50": 1.4235300739579682,
     "pct_above_sma100": 2.6396562184225036,
-    "pct_above_sma200": 7.383082611527048,
+    "pct_above_sma200": 7.3830826731636545,
     "sma50_slope": 2.18,
     "sma200_slope": 0.83,
     "higher_low": true,
@@ -65281,7 +65281,7 @@
     "above_sma200": true,
     "pct_above_sma50": 0.6691976411331568,
     "pct_above_sma100": -0.9464449051499124,
-    "pct_above_sma200": 3.4460151202937883,
+    "pct_above_sma200": 3.4460149876707424,
     "sma50_slope": -2.27,
     "sma200_slope": 1.2,
     "higher_low": true,
@@ -65555,8 +65555,8 @@
     "above_sma100": false,
     "above_sma200": true,
     "pct_above_sma50": 0.2556470255354215,
-    "pct_above_sma100": -3.5306772375965023,
-    "pct_above_sma200": 4.447174187767544,
+    "pct_above_sma100": -3.5306773340923803,
+    "pct_above_sma200": 4.447174131209608,
     "sma50_slope": -3.02,
     "sma200_slope": 2.1,
     "higher_low": true,
@@ -66368,8 +66368,8 @@
     "above_sma100": true,
     "above_sma200": true,
     "pct_above_sma50": 7.702347269994259,
-    "pct_above_sma100": 8.933421512459795,
-    "pct_above_sma200": 11.106883257648438,
+    "pct_above_sma100": 8.933421603302815,
+    "pct_above_sma200": 11.106883399404733,
     "sma50_slope": 4.01,
     "sma200_slope": 1.27,
     "higher_low": true,
@@ -66672,7 +66672,7 @@
     "above_sma200": false,
     "pct_above_sma50": -7.262278679023737,
     "pct_above_sma100": -10.520249091124523,
-    "pct_above_sma200": -7.308204051711198,
+    "pct_above_sma200": -7.308203656658641,
     "sma50_slope": -3.63,
     "sma200_slope": -1.37,
     "higher_low": false,
@@ -66943,7 +66943,7 @@
     "above_sma200": true,
     "pct_above_sma50": -1.0616285185430785,
     "pct_above_sma100": 3.9264714568977954,
-    "pct_above_sma200": 9.804845931676297,
+    "pct_above_sma200": 9.804845999805757,
     "sma50_slope": 1.48,
     "sma200_slope": 3.34,
     "higher_low": true,
@@ -67535,7 +67535,7 @@
     "above_sma200": true,
     "pct_above_sma50": -2.9775602392617673,
     "pct_above_sma100": -0.2852155209813523,
-    "pct_above_sma200": 4.505613134584263,
+    "pct_above_sma200": 4.505613602535075,
     "sma50_slope": 0.08,
     "sma200_slope": 2.12,
     "higher_low": true,
@@ -68070,7 +68070,7 @@
     "above_sma200": true,
     "pct_above_sma50": 8.522537386319073,
     "pct_above_sma100": 8.338546181348239,
-    "pct_above_sma200": 7.155318568669444,
+    "pct_above_sma200": 7.155318734709448,
     "sma50_slope": 3.03,
     "sma200_slope": 1.01,
     "higher_low": true,
@@ -68336,7 +68336,7 @@
     "above_sma200": true,
     "pct_above_sma50": -1.9810920023735856,
     "pct_above_sma100": 1.3851332147996054,
-    "pct_above_sma200": 6.906249018712218,
+    "pct_above_sma200": 6.906249767389427,
     "sma50_slope": 2.8,
     "sma200_slope": 0.98,
     "higher_low": true,
@@ -68639,7 +68639,7 @@
     "above_sma200": true,
     "pct_above_sma50": 1.96589600134911,
     "pct_above_sma100": -0.43538797782757266,
-    "pct_above_sma200": 0.32587706559106255,
+    "pct_above_sma200": 0.3258772644889829,
     "sma50_slope": -0.53,
     "sma200_slope": 1.83,
     "higher_low": true,
@@ -69219,7 +69219,7 @@
     "above_sma200": false,
     "pct_above_sma50": 0.8527184493819506,
     "pct_above_sma100": -4.467285804340393,
-    "pct_above_sma200": -2.0473989071596033,
+    "pct_above_sma200": -2.04739950759113,
     "sma50_slope": -1.38,
     "sma200_slope": 0.46,
     "higher_low": false,
@@ -69786,7 +69786,7 @@
     "above_sma200": true,
     "pct_above_sma50": 1.2022790713051679,
     "pct_above_sma100": 0.36656973301223417,
-    "pct_above_sma200": 4.132219606158927,
+    "pct_above_sma200": 4.132219803157344,
     "sma50_slope": -0.03,
     "sma200_slope": 0.48,
     "higher_low": false,
@@ -70060,7 +70060,7 @@
     "above_sma200": true,
     "pct_above_sma50": 8.706647720460992,
     "pct_above_sma100": 13.267884340523572,
-    "pct_above_sma200": 24.272763070391278,
+    "pct_above_sma200": 24.272763341213377,
     "sma50_slope": 7.59,
     "sma200_slope": 3.28,
     "higher_low": true,
@@ -70652,7 +70652,7 @@
     "above_sma200": true,
     "pct_above_sma50": 15.723044540678298,
     "pct_above_sma100": 14.434534417967049,
-    "pct_above_sma200": 7.464166906236014,
+    "pct_above_sma200": 7.464167728805671,
     "sma50_slope": 4.15,
     "sma200_slope": -2.03,
     "higher_low": true,
@@ -71242,7 +71242,7 @@
     "above_sma200": true,
     "pct_above_sma50": 1.3313619741832428,
     "pct_above_sma100": 5.3477138541561775,
-    "pct_above_sma200": 10.226717086226444,
+    "pct_above_sma200": 10.22671732747309,
     "sma50_slope": 3.98,
     "sma200_slope": 0.28,
     "higher_low": true,
@@ -71512,7 +71512,7 @@
     "above_sma200": true,
     "pct_above_sma50": 4.106671821083485,
     "pct_above_sma100": 7.768432441582762,
-    "pct_above_sma200": 10.974363385969532,
+    "pct_above_sma200": 10.974363601526838,
     "sma50_slope": 5.22,
     "sma200_slope": 2.53,
     "higher_low": true,
@@ -72081,7 +72081,7 @@
     "above_sma200": false,
     "pct_above_sma50": 5.225943247140785,
     "pct_above_sma100": 2.646524001025119,
-    "pct_above_sma200": -1.1824804965805291,
+    "pct_above_sma200": -1.182480452967205,
     "sma50_slope": 1.14,
     "sma200_slope": 0.08,
     "higher_low": true,
@@ -72645,7 +72645,7 @@
     "above_sma200": true,
     "pct_above_sma50": -0.3231227285057092,
     "pct_above_sma100": 4.341290331902736,
-    "pct_above_sma200": 8.2089494601564,
+    "pct_above_sma200": 8.20894981328597,
     "sma50_slope": 1.8,
     "sma200_slope": 1.6,
     "higher_low": true,
@@ -72947,7 +72947,7 @@
     "above_sma200": true,
     "pct_above_sma50": -5.834326548070001,
     "pct_above_sma100": -3.789069582776039,
-    "pct_above_sma200": 1.5850651887909128,
+    "pct_above_sma200": 1.5850651460761922,
     "sma50_slope": 1.72,
     "sma200_slope": 1.39,
     "higher_low": true,
@@ -73220,8 +73220,8 @@
     "above_sma100": false,
     "above_sma200": true,
     "pct_above_sma50": 2.329202690728449,
-    "pct_above_sma100": -1.5775216962869876,
-    "pct_above_sma200": 1.267970368217175,
+    "pct_above_sma100": -1.577521545604843,
+    "pct_above_sma200": 1.2679704878578058,
     "sma50_slope": -1.54,
     "sma200_slope": 0.06,
     "higher_low": true,
@@ -73490,7 +73490,7 @@
     "above_sma200": false,
     "pct_above_sma50": -0.7763196216265422,
     "pct_above_sma100": -6.693720008582005,
-    "pct_above_sma200": -2.6098163585709933,
+    "pct_above_sma200": -2.6098163972888444,
     "sma50_slope": -6.75,
     "sma200_slope": -1.05,
     "higher_low": false,
@@ -73762,8 +73762,8 @@
     "above_sma100": true,
     "above_sma200": true,
     "pct_above_sma50": 6.6061640887066675,
-    "pct_above_sma100": 5.53832190969441,
-    "pct_above_sma200": 3.984841477587975,
+    "pct_above_sma100": 5.538321820243075,
+    "pct_above_sma200": 3.984841217075963,
     "sma50_slope": 2.42,
     "sma200_slope": 0.77,
     "higher_low": true,
@@ -74029,7 +74029,7 @@
     "above_sma200": true,
     "pct_above_sma50": 9.393596894814227,
     "pct_above_sma100": 8.435690235747861,
-    "pct_above_sma200": 13.107634153836045,
+    "pct_above_sma200": 13.107633945259622,
     "sma50_slope": 3.44,
     "sma200_slope": 2.25,
     "higher_low": true,
@@ -75169,7 +75169,7 @@
     "above_sma200": true,
     "pct_above_sma50": 3.327909714586874,
     "pct_above_sma100": 2.4652658481615353,
-    "pct_above_sma200": 8.729596317190813,
+    "pct_above_sma200": 8.729596286962371,
     "sma50_slope": 0.53,
     "sma200_slope": 2.45,
     "higher_low": true,
@@ -75447,8 +75447,8 @@
     "above_sma100": true,
     "above_sma200": true,
     "pct_above_sma50": 10.544827746701557,
-    "pct_above_sma100": 8.85074666141168,
-    "pct_above_sma200": 9.815385390368746,
+    "pct_above_sma100": 8.850746337031069,
+    "pct_above_sma200": 9.81538481259674,
     "sma50_slope": 3.36,
     "sma200_slope": 0.57,
     "higher_low": true,
@@ -75751,7 +75751,7 @@
     "above_sma200": true,
     "pct_above_sma50": -0.32164639875406076,
     "pct_above_sma100": -3.4279589437756552,
-    "pct_above_sma200": 1.7819586053885672,
+    "pct_above_sma200": 1.7819581666678408,
     "sma50_slope": -1.5,
     "sma200_slope": 0.76,
     "higher_low": false,
@@ -76308,7 +76308,7 @@
     "above_sma100": false,
     "above_sma200": true,
     "pct_above_sma50": -5.877164906402276,
-    "pct_above_sma100": -2.191357469388522,
+    "pct_above_sma100": -2.1913571923635855,
     "pct_above_sma200": 1.954954746226778,
     "sma50_slope": 1.22,
     "sma200_slope": 2.12,

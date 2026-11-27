@@ -208,7 +208,15 @@ def reihen() -> tuple[list[str], dict, dict, dict, dict, dict]:
     for i, t in enumerate(UNIVERSUM, 1):
         df = kurse.kerzen(t, period="400d")
         if df is None or df.empty:
-            continue
+            # 27.11.2026: Yahoo kennt Anthropic (ANT, Boersengang 19.11.2026)
+            # noch nicht. marktdaten.py holt solche Werte ueber Twelve Data,
+            # hier fehlte dieser Rueckfall - ANT bekam keine Zeile und die
+            # Vollstaendigkeitspruefung liess den ganzen Lauf scheitern
+            # (26.11. 14:51 bis 27.11.). Derselbe Rueckfall wie in marktdaten.py.
+            df = kurse.kerzen_twelvedata(t)
+            if df is None or df.empty:
+                continue
+            print(f"  {t}: Kurse von Twelve Data (Yahoo lieferte nichts)")
 
         # Rohdaten sammeln. Die Aktualitaetspruefung folgt weiter unten,
         # erst nachdem die unfertige heutige Kerze entfernt wurde - sonst

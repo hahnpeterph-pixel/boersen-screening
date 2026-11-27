@@ -6007,6 +6007,28 @@
    "recommendationKey": "buy",
    "exchange": "NMS",
    "isin": "US98980G1022"
+  },
+  "ANT": {
+   "trailingPE": null,
+   "forwardPE": 161.60136,
+   "priceToBook": -1.214963,
+   "profitMargins": 0.0,
+   "operatingMargins": -0.11609,
+   "revenueGrowth": 11.269,
+   "earningsGrowth": null,
+   "debtToEquity": 1767.527,
+   "freeCashflow": null,
+   "returnOnEquity": null,
+   "dividendYield": 0.0,
+   "earningsTimestamp": null,
+   "shortName": "Anthropic, PBC",
+   "sector": "Technology",
+   "country": "United States",
+   "targetMeanPrice": 136.32571,
+   "numberOfAnalystOpinions": 14,
+   "recommendationKey": "strong_buy",
+   "exchange": "NMS",
+   "isin": null
   }
  }
 }

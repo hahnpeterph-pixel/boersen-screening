@@ -1,6 +1,6 @@
 # Tiefs, Volumen und Kaufregel-Check
 
-_Erstellt 2026-11-26 04:09 UTC. Fenster: letzte 90 Kalendertage. Tiefs nach der Umkehr-Regel (tiefs_regel.py): ein Tief zaehlt, sobald eine spaetere Kerze das Hoch der Tiefkerze ueberschreitet. Solange es abwaerts geht, gilt das tiefste Tief der Strecke. Gerechnet wird auf abgeschlossenen Tageskerzen._
+_Erstellt 2026-11-27 06:17 UTC. Fenster: letzte 90 Kalendertage. Tiefs nach der Umkehr-Regel (tiefs_regel.py): ein Tief zaehlt, sobald eine spaetere Kerze das Hoch der Tiefkerze ueberschreitet. Solange es abwaerts geht, gilt das tiefste Tief der Strecke. Gerechnet wird auf abgeschlossenen Tageskerzen._
 
 ## Kaufregel
 
@@ -115,16 +115,16 @@ _'nach Trendtief' orientiert sich am juengsten Tief und laesst mehr Hebel zu. 'k
 | Meta Platforms (META) | 20.11.2026 | 558,68 | 25,7 Mio. | 1,22x (erhoeht) | 7,1 % |
 | Meta Platforms (META) | 12.11.2026 | 618,92 | 10,3 Mio. | 0,42x (duenn) | 16,2 % |
 | Meta Platforms (META) | 05.11.2026 | 583,80 | 28,7 Mio. | 1,18x | 11,1 % |
-| Micron (MU) | 25.11.2026 | 548,13 | 52,5 Mio. | 1,46x (erhoeht) | -56,9 % |
+| Micron (MU) | 25.11.2026 | 548,13 | 53,0 Mio. | 1,47x (erhoeht) | -56,9 % |
 | Micron (MU) | 20.11.2026 | 585,25 | 59,4 Mio. | 1,86x (Kapitulation) | -46,9 % |
 | Micron (MU) | 17.11.2026 | 666,88 | 33,5 Mio. | 1,09x | -28,9 % |
-| Microsoft (MSFT) | 25.11.2026 | 477,39 | 26,7 Mio. | 0,87x | 27,0 % |
+| Microsoft (MSFT) | 25.11.2026 | 477,39 | 26,8 Mio. | 0,87x | 27,0 % |
 | Microsoft (MSFT) | 20.11.2026 | 481,03 | 47,2 Mio. | 1,67x (Kapitulation) | 27,6 % |
 | Microsoft (MSFT) | 17.11.2026 | 496,51 | 28,0 Mio. | 1,04x | 29,9 % |
-| Microsoft II (MSFT) | 25.11.2026 | 477,39 | 26,7 Mio. | 0,87x | 0,5 % |
+| Microsoft II (MSFT) | 25.11.2026 | 477,39 | 26,8 Mio. | 0,87x | 0,5 % |
 | Microsoft II (MSFT) | 20.11.2026 | 481,03 | 47,2 Mio. | 1,67x (Kapitulation) | 1,3 % |
 | Microsoft II (MSFT) | 17.11.2026 | 496,51 | 28,0 Mio. | 1,04x | 4,4 % |
-| Oracle (ORCL) | 25.11.2026 | 99,34 | 38,3 Mio. | 0,90x | -13,5 % |
+| Oracle (ORCL) | 25.11.2026 | 99,34 | 38,5 Mio. | 0,90x | -13,5 % |
 | Oracle (ORCL) | 20.11.2026 | 100,25 | 47,8 Mio. | 1,17x | -12,4 % |
 | Oracle (ORCL) | 06.11.2026 | 109,21 | 47,6 Mio. | 1,12x | -3,2 % |
 
@@ -136,7 +136,7 @@ _Diese Zeilen in die gelben Spalten uebertragen. Reihenfolge wie dort._
 |---|---|---|---|---|---|---|
 | TTWO | 227,34 | 15,16 | 59,5 | 231,58 | 2026-08-20 | 2,35 |
 | META | 609,89 | 24,32 | 45,7 | 524,52 | 2026-07-30 | 1,22 |
-| MU | 601,25 | 70,99 | 35,7 | 915,18 | 2026-08-19 | 1,46 |
+| MU | 601,25 | 70,99 | 35,7 | 915,18 | 2026-08-19 | 1,47 |
 | MSFT | 489,93 | 17,05 | 38,7 | 477,15 | 2026-08-18 | 0,87 |
 | ORCL | 103,88 | 8,32 | 37,7 | 137,44 | 2026-08-19 | 0,90 |
 | NVDA | 149,30 | 15,83 | 37,5 | 141,17 | 2026-11-25 | - |

@@ -1,8 +1,8 @@
 # Stundenwache
 
-Stand: 2026-11-25 · 272 Werte mit Stundendaten · erstellt 2026-11-26 04:33 UTC
+Stand: 2026-11-25 · 272 Werte mit Stundendaten · erstellt 2026-11-27 06:20 UTC
 
-> **Sitzung noch nicht abgeschlossen.** 13 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 1, 3, 4, 5, 6, 7, 8, 9). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
+> **Sitzung noch nicht abgeschlossen.** 5 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 3, 5, 6, 7, 8, 9). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
 
 Marken sind das juengste Swing-Tief und das juengste Swing-Hoch aus `tiefs_regel.py`, also dieselben wie im Tagesbericht. Geprueft wird nur, was der letzte Handelstag auf Stundenbasis damit gemacht hat.
 
@@ -25,15 +25,17 @@ Im Tagesverlauf unter der Marke, am Ende darueber. Das ist der Fall, den die Tag
 |---|---|---|---|---|
 | COF | 177.86 | 182.62 | 0.835 | 1 |
 
-## Tief angetestet (13)
+## Tief angetestet (15)
 
 Docht bis unter die Marke, kein Stundenschluss darunter.
 
 | Wert | Marke | Schluss | Abstand (ATR) | Stunden dahinter |
 |---|---|---|---|---|
 | TMUS | 165.73 | 166.2 | 0.096 | 0 |
+| SNDK | 67.02 | 73.51 | 0.518 | 0 |
 | DHR | 223.25 | 227.35 | 0.706 | 0 |
 | MDT | 94.13 | 96.06 | 0.739 | 0 |
+| SKHY | 1027000.0 | 1102000.0 | 0.829 | 0 |
 | MRVL | 117.8 | 130.9 | 0.858 | 0 |
 | ETN | 301.43 | 317.52 | 0.895 | 0 |
 | FDX | 301.17 | 308.75 | 0.908 | 0 |
@@ -45,39 +47,42 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | NFLX | 57.03 | 59.42 | 1.229 | 0 |
 | DE | 605.34 | 641.14 | 1.468 | 0 |
 
-## Swing-Hoch ueberwunden (53)
+## Swing-Hoch ueberwunden (56)
 
 | Wert | Hoch | Schluss | Abstand (ATR) | Stunden darueber |
 |---|---|---|---|---|
-| QIA.DE | 42.345 | 45.07 | 14.078 | 9 |
-| SNY | 89.0 | 97.95 | 3.464 | 9 |
-| TM | 3115.0 | 3390.0 | 2.85 | 5 |
-| SONY | 4068.0 | 4475.0 | 2.755 | 5 |
+| QIA.DE | 42.345 | 45.095 | 15.369 | 9 |
+| SNY | 89.0 | 99.15 | 3.979 | 9 |
+| TM | 3115.0 | 3395.0 | 3.391 | 7 |
 | PDD | 79.88 | 87.42 | 2.433 | 7 |
+| HDB | 821.0 | 861.4 | 1.854 | 3 |
 | TJX | 138.17 | 146.11 | 1.843 | 7 |
 | CSGP | 31.64 | 34.02 | 1.789 | 7 |
-| HDB | 821.0 | 856.95 | 1.629 | 1 |
+| VNA.DE | 16.99 | 17.68 | 1.72 | 9 |
+| HEI.DE | 179.45 | 186.85 | 1.587 | 9 |
 | DIS | 120.44 | 125.62 | 1.507 | 7 |
-| UL | 49.355 | 50.78 | 1.459 | 9 |
+| DTE.DE | 26.51 | 27.21 | 1.39 | 9 |
+| UL | 49.355 | 50.62 | 1.38 | 9 |
 | ORLY | 93.93 | 96.685 | 1.378 | 7 |
 | VRTX | 542.76 | 563.95 | 1.345 | 7 |
+| ADP | 308.66 | 316.75 | 1.238 | 7 |
 | HD | 349.73 | 361.27 | 1.221 | 7 |
-| ADP | 308.66 | 316.44 | 1.191 | 6 |
+| P911.DE | 43.83 | 45.24 | 1.195 | 9 |
 | GILD | 171.7 | 176.75 | 1.16 | 7 |
 | SYK | 321.83 | 332.89 | 1.125 | 7 |
 | PAYX | 115.3 | 118.5 | 1.068 | 7 |
 | LOW | 228.7 | 235.66 | 0.982 | 7 |
-| VNA.DE | 16.99 | 17.365 | 0.933 | 9 |
 | AXON | 320.17 | 343.25 | 0.905 | 6 |
 | KHC | 25.835 | 26.5 | 0.885 | 7 |
-| DTE.DE | 26.51 | 26.95 | 0.852 | 9 |
 | CPRT | 32.38 | 33.175 | 0.819 | 6 |
 | MCD | 278.29 | 283.5 | 0.802 | 7 |
+| BHP | 53.96 | 55.06 | 0.65 | 7 |
 | TRV | 402.12 | 406.95 | 0.564 | 7 |
 | CHTR | 142.6 | 147.23 | 0.553 | 5 |
 | PG | 171.61 | 173.24 | 0.517 | 7 |
 | WMT | 130.52 | 131.9 | 0.49 | 7 |
 | T | 22.75 | 22.965 | 0.447 | 7 |
+| SHEL | 35.88 | 36.175 | 0.424 | 8 |
 | CDW | 172.23 | 175.01 | 0.341 | 4 |
 | CMCSA | 25.49 | 25.71 | 0.327 | 7 |
 | PGR | 237.07 | 238.74 | 0.32 | 7 |
@@ -86,17 +91,17 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | MDLZ | 67.39 | 67.8 | 0.304 | 7 |
 | SO | 94.49 | 95.005 | 0.295 | 7 |
 | DXCM | 84.02 | 84.81 | 0.277 | 6 |
-| HEI.DE | 179.45 | 180.65 | 0.261 | 9 |
 | JNJ | 272.5 | 273.94 | 0.222 | 7 |
 | CVX | 210.13 | 211.005 | 0.194 | 6 |
 | VZ | 47.11 | 47.295 | 0.193 | 7 |
+| BABA | 86.75 | 87.55 | 0.192 | 2 |
 | CB | 379.21 | 380.5 | 0.19 | 7 |
 | PEP | 143.28 | 143.92 | 0.186 | 7 |
-| P911.DE | 43.83 | 43.98 | 0.132 | 7 |
+| MUFG | 3178.0 | 3195.0 | 0.15 | 6 |
 | NEE | 85.26 | 85.45 | 0.129 | 6 |
 | TTWO | 225.69 | 227.27 | 0.104 | 3 |
+| EOAN.DE | 18.82 | 18.85 | 0.1 | 2 |
 | EXC | 46.44 | 46.51 | 0.093 | 7 |
-| BHP | 53.96 | 54.115 | 0.092 | 4 |
 | HON | 224.66 | 225.1 | 0.063 | 4 |
 | SHW | 361.0 | 361.15 | 0.016 | 4 |
 | CL | 99.63 | 99.66 | 0.014 | 5 |

@@ -1,6 +1,6 @@
 # Stundenwache
 
-Stand: 2026-11-25 · 272 Werte mit Stundendaten · erstellt 2026-11-27 06:38 UTC
+Stand: 2026-11-25 · 233 Werte mit Stundendaten · erstellt 2026-11-27 06:42 UTC
 
 > **Sitzung noch nicht abgeschlossen.** 5 Werte haben weniger als 7 Stundenkerzen (erfasste Stunden: 3, 5, 6, 7, 8, 9). Bei diesen ist "Schluss" der Stand im Moment des Abrufs, nicht der Tagesschluss - die Urteile koennen sich bis Handelsende noch drehen.
 
@@ -25,7 +25,7 @@ Im Tagesverlauf unter der Marke, am Ende darueber. Das ist der Fall, den die Tag
 |---|---|---|---|---|
 | COF | 177.86 | 182.62 | 0.835 | 1 |
 
-## Tief angetestet (17)
+## Tief angetestet (15)
 
 Docht bis unter die Marke, kein Stundenschluss darunter.
 
@@ -33,7 +33,6 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 |---|---|---|---|---|
 | TMUS | 165.73 | 166.2 | 0.096 | 0 |
 | SNDK | 67.02 | 73.51 | 0.518 | 0 |
-| HNR1.DE | 293.8 | 297.6 | 0.695 | 0 |
 | DHR | 223.25 | 227.35 | 0.706 | 0 |
 | MDT | 94.13 | 96.06 | 0.739 | 0 |
 | SKHY | 1027000.0 | 1103000.0 | 0.84 | 0 |
@@ -45,31 +44,25 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | ON | 57.49 | 62.475 | 1.047 | 0 |
 | INTC | 49.16 | 54.4408 | 1.093 | 0 |
 | BLK | 1103.49 | 1141.64 | 1.121 | 0 |
-| ZAL.DE | 28.38 | 29.49 | 1.196 | 0 |
 | NFLX | 57.03 | 59.42 | 1.229 | 0 |
 | DE | 605.34 | 641.14 | 1.468 | 0 |
 
-## Swing-Hoch ueberwunden (56)
+## Swing-Hoch ueberwunden (50)
 
 | Wert | Hoch | Schluss | Abstand (ATR) | Stunden darueber |
 |---|---|---|---|---|
-| QIA.DE | 42.345 | 45.095 | 15.369 | 9 |
 | SNY | 89.0 | 99.15 | 3.979 | 9 |
-| TM | 3115.0 | 3384.0 | 3.258 | 7 |
+| TM | 3115.0 | 3385.0 | 3.27 | 7 |
 | PDD | 79.88 | 87.42 | 2.433 | 7 |
-| HDB | 821.0 | 862.1 | 1.887 | 3 |
+| HDB | 821.0 | 862.45 | 1.903 | 3 |
 | TJX | 138.17 | 146.11 | 1.843 | 7 |
 | CSGP | 31.64 | 34.02 | 1.789 | 7 |
-| VNA.DE | 16.99 | 17.68 | 1.72 | 9 |
-| HEI.DE | 179.45 | 186.85 | 1.587 | 9 |
 | DIS | 120.44 | 125.62 | 1.507 | 7 |
-| DTE.DE | 26.51 | 27.21 | 1.39 | 9 |
 | UL | 49.355 | 50.62 | 1.38 | 9 |
 | ORLY | 93.93 | 96.685 | 1.378 | 7 |
 | VRTX | 542.76 | 563.95 | 1.345 | 7 |
 | ADP | 308.66 | 316.75 | 1.238 | 7 |
 | HD | 349.73 | 361.27 | 1.221 | 7 |
-| P911.DE | 43.83 | 45.24 | 1.195 | 9 |
 | GILD | 171.7 | 176.75 | 1.16 | 7 |
 | SYK | 321.83 | 332.89 | 1.125 | 7 |
 | PAYX | 115.3 | 118.5 | 1.068 | 7 |
@@ -94,15 +87,14 @@ Docht bis unter die Marke, kein Stundenschluss darunter.
 | SO | 94.49 | 95.005 | 0.295 | 7 |
 | DXCM | 84.02 | 84.81 | 0.277 | 6 |
 | JNJ | 272.5 | 273.94 | 0.222 | 7 |
+| BABA | 86.75 | 87.65 | 0.216 | 2 |
 | CVX | 210.13 | 211.005 | 0.194 | 6 |
 | VZ | 47.11 | 47.295 | 0.193 | 7 |
 | CB | 379.21 | 380.5 | 0.19 | 7 |
 | PEP | 143.28 | 143.92 | 0.186 | 7 |
-| BABA | 86.75 | 87.45 | 0.168 | 2 |
+| MUFG | 3178.0 | 3194.0 | 0.141 | 6 |
 | NEE | 85.26 | 85.45 | 0.129 | 6 |
-| MUFG | 3178.0 | 3191.0 | 0.115 | 6 |
 | TTWO | 225.69 | 227.27 | 0.104 | 3 |
-| EOAN.DE | 18.82 | 18.85 | 0.1 | 2 |
 | EXC | 46.44 | 46.51 | 0.093 | 7 |
 | HON | 224.66 | 225.1 | 0.063 | 4 |
 | SHW | 361.0 | 361.15 | 0.016 | 4 |

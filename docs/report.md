@@ -1,8 +1,8 @@
 # Boersen-Screening - 2026-11-27
 
-_Stand: Schlusskurse vom 2026-11-27, aber 260 Werte haengen zurueck - siehe Standwarnung. Erstellt 2026-11-27T06:36:47+00:00 UTC. 271 Werte ausgewertet._
+_Stand: Schlusskurse vom 2026-11-27, aber 221 Werte haengen zurueck - siehe Standwarnung. Erstellt 2026-11-27T06:41:13+00:00 UTC. 232 Werte ausgewertet._
 
-> **Standwarnung: 260 von 271 Werten haengen zurueck.** Neuester Handelstag im Bericht ist 2026-11-27.
+> **Standwarnung: 221 von 232 Werten haengen zurueck.** Neuester Handelstag im Bericht ist 2026-11-27.
 >
 > Ursache ist in aller Regel Yahoo: die vorlaeufige Tageskerze einer Boerse wird ueber Nacht durch die offizielle Abrechnung ersetzt, und solange die fehlt, faellt der Tag weg. Betroffen sind meist die europaeischen Notierungen. Fuer diese Werte gelten Kurs, ATR, RSI und Tiefs unten NICHT fuer den neuesten Handelstag.
 >
@@ -17,11 +17,8 @@ _Stand: Schlusskurse vom 2026-11-27, aber 260 Werte haengen zurueck - siehe Stan
 > | ADBE | 2026-11-25 |
 > | ADI | 2026-11-25 |
 > | ADP | 2026-11-25 |
-> | ADS.DE | 2026-11-25 |
 > | ADSK | 2026-11-25 |
 > | AEP | 2026-11-25 |
-> | AIR.DE | 2026-11-25 |
-> | ALV.DE | 2026-11-25 |
 > | AMAT | 2026-11-25 |
 > | AMD | 2026-11-25 |
 > | AMGN | 2026-11-25 |
@@ -38,18 +35,13 @@ _Stand: Schlusskurse vom 2026-11-27, aber 260 Werte haengen zurueck - siehe Stan
 > | AZN | 2026-11-25 |
 > | BA | 2026-11-25 |
 > | BAC | 2026-11-25 |
-> | BAS.DE | 2026-11-25 |
-> | BAYN.DE | 2026-11-25 |
 > | BBVA | 2026-11-25 |
-> | BEI.DE | 2026-11-25 |
 > | BIIB | 2026-11-25 |
 > | BKNG | 2026-11-25 |
 > | BKR | 2026-11-25 |
 > | BLK | 2026-11-25 |
 > | BMO | 2026-11-25 |
-> | BMW.DE | 2026-11-25 |
 > | BMY | 2026-11-25 |
-> | BNR.DE | 2026-11-25 |
 > | BNS | 2026-11-25 |
 > | BNY | 2026-11-25 |
 > | BP | 2026-11-25 |
@@ -58,7 +50,6 @@ _Stand: Schlusskurse vom 2026-11-27, aber 260 Werte haengen zurueck - siehe Stan
 > | C | 2026-11-25 |
 > | CAT | 2026-11-25 |
 > | CB | 2026-11-25 |
-> | CBK.DE | 2026-11-25 |
 > | CCEP | 2026-11-25 |
 > | CDNS | 2026-11-25 |
 > | CDW | 2026-11-25 |
@@ -69,7 +60,6 @@ _Stand: Schlusskurse vom 2026-11-27, aber 260 Werte haengen zurueck - siehe Stan
 > | CMCSA | 2026-11-25 |
 > | CNQ | 2026-11-25 |
 > | COF | 2026-11-25 |
-> | CON.DE | 2026-11-25 |
 > | COP | 2026-11-25 |
 > | COST | 2026-11-25 |
 > | CPRT | 2026-11-25 |
@@ -83,22 +73,15 @@ _Stand: Schlusskurse vom 2026-11-27, aber 260 Werte haengen zurueck - siehe Stan
 > | CVS | 2026-11-25 |
 > | CVX | 2026-11-25 |
 > | DASH | 2026-11-25 |
-> | DB1.DE | 2026-11-25 |
-> | DBK.DE | 2026-11-25 |
 > | DDOG | 2026-11-25 |
 > | DE | 2026-11-25 |
 > | DELL | 2026-11-25 |
-> | DHL.DE | 2026-11-25 |
 > | DHR | 2026-11-25 |
 > | DIS | 2026-11-25 |
-> | DTE.DE | 2026-11-25 |
-> | DTG.DE | 2026-11-25 |
 > | DUK | 2026-11-25 |
 > | DXCM | 2026-11-25 |
 > | EMR | 2026-11-25 |
 > | ENB | 2026-11-25 |
-> | ENR.DE | 2026-11-25 |
-> | EOAN.DE | 2026-11-25 |
 > | EQIX | 2026-11-25 |
 > | EQNR | 2026-11-25 |
 > | ETN | 2026-11-25 |
@@ -106,7 +89,6 @@ _Stand: Schlusskurse vom 2026-11-27, aber 260 Werte haengen zurueck - siehe Stan
 > | FANG | 2026-11-25 |
 > | FAST | 2026-11-25 |
 > | FDX | 2026-11-25 |
-> | FRE.DE | 2026-11-25 |
 > | FTNT | 2026-11-25 |
 > | GD | 2026-11-25 |
 > | GE | 2026-11-25 |
@@ -121,14 +103,10 @@ _Stand: Schlusskurse vom 2026-11-27, aber 260 Werte haengen zurueck - siehe Stan
 > | GS | 2026-11-25 |
 > | GSK | 2026-11-25 |
 > | HD | 2026-11-25 |
-> | HEI.DE | 2026-11-25 |
-> | HEN3.DE | 2026-11-25 |
-> | HNR1.DE | 2026-11-25 |
 > | HON | 2026-11-25 |
 > | HSBC | 2026-11-25 |
 > | IBM | 2026-11-25 |
 > | IDXX | 2026-11-25 |
-> | IFX.DE | 2026-11-25 |
 > | ILMN | 2026-11-25 |
 > | ING | 2026-11-25 |
 > | INTC | 2026-11-25 |
@@ -148,7 +126,6 @@ _Stand: Schlusskurse vom 2026-11-27, aber 260 Werte haengen zurueck - siehe Stan
 > | LULU | 2026-11-25 |
 > | MA | 2026-11-25 |
 > | MAR | 2026-11-25 |
-> | MBG.DE | 2026-11-25 |
 > | MCD | 2026-11-25 |
 > | MCHP | 2026-11-25 |
 > | MCK | 2026-11-25 |
@@ -162,15 +139,12 @@ _Stand: Schlusskurse vom 2026-11-27, aber 260 Werte haengen zurueck - siehe Stan
 > | MO | 2026-11-25 |
 > | MPC | 2026-11-25 |
 > | MRK | 2026-11-25 |
-> | MRK.DE | 2026-11-25 |
 > | MRNA | 2026-11-25 |
 > | MRVL | 2026-11-25 |
 > | MS | 2026-11-25 |
 > | MSFT | 2026-11-25 |
 > | MSTR | 2026-11-25 |
-> | MTX.DE | 2026-11-25 |
 > | MU | 2026-11-25 |
-> | MUV2.DE | 2026-11-25 |
 > | NEE | 2026-11-25 |
 > | NEM | 2026-11-25 |
 > | NET | 2026-11-25 |
@@ -184,8 +158,6 @@ _Stand: Schlusskurse vom 2026-11-27, aber 260 Werte haengen zurueck - siehe Stan
 > | ON | 2026-11-25 |
 > | ORCL | 2026-11-25 |
 > | ORLY | 2026-11-25 |
-> | P911.DE | 2026-11-25 |
-> | PAH3.DE | 2026-11-25 |
 > | PANW | 2026-11-25 |
 > | PAYX | 2026-11-25 |
 > | PBR | 2026-11-25 |
@@ -202,25 +174,19 @@ _Stand: Schlusskurse vom 2026-11-27, aber 260 Werte haengen zurueck - siehe Stan
 > | PSX | 2026-11-25 |
 > | PYPL | 2026-11-25 |
 > | QCOM | 2026-11-25 |
-> | QIA.DE | 2026-11-25 |
 > | REGN | 2026-11-25 |
-> | RHM.DE | 2026-11-25 |
 > | RIO | 2026-11-25 |
 > | ROP | 2026-11-25 |
 > | ROST | 2026-11-25 |
 > | RTX | 2026-11-25 |
-> | RWE.DE | 2026-11-25 |
 > | RY | 2026-11-25 |
 > | SAN | 2026-11-25 |
-> | SAP.DE | 2026-11-25 |
 > | SBUX | 2026-11-25 |
 > | SCCO | 2026-11-25 |
 > | SCHW | 2026-11-25 |
 > | SHEL | 2026-11-25 |
-> | SHL.DE | 2026-11-25 |
 > | SHOP | 2026-11-25 |
 > | SHW | 2026-11-25 |
-> | SIE.DE | 2026-11-25 |
 > | SNOW | 2026-11-25 |
 > | SNPS | 2026-11-25 |
 > | SNY | 2026-11-25 |
@@ -228,9 +194,7 @@ _Stand: Schlusskurse vom 2026-11-27, aber 260 Werte haengen zurueck - siehe Stan
 > | SPG | 2026-11-25 |
 > | SPGI | 2026-11-25 |
 > | SPOT | 2026-11-25 |
-> | SRT3.DE | 2026-11-25 |
 > | STX | 2026-11-25 |
-> | SY1.DE | 2026-11-25 |
 > | SYK | 2026-11-25 |
 > | T | 2026-11-25 |
 > | TD | 2026-11-25 |
@@ -252,8 +216,6 @@ _Stand: Schlusskurse vom 2026-11-27, aber 260 Werte haengen zurueck - siehe Stan
 > | USB | 2026-11-25 |
 > | V | 2026-11-25 |
 > | VLO | 2026-11-25 |
-> | VNA.DE | 2026-11-25 |
-> | VOW3.DE | 2026-11-25 |
 > | VRSK | 2026-11-25 |
 > | VRTX | 2026-11-25 |
 > | VZ | 2026-11-25 |
@@ -264,7 +226,6 @@ _Stand: Schlusskurse vom 2026-11-27, aber 260 Werte haengen zurueck - siehe Stan
 > | WMT | 2026-11-25 |
 > | XEL | 2026-11-25 |
 > | XOM | 2026-11-25 |
-> | ZAL.DE | 2026-11-25 |
 > | ZS | 2026-11-25 |
 > | NVS | 2026-11-26 |
 > | UBS | 2026-11-26 |
@@ -280,12 +241,12 @@ _Stand: Schlusskurse vom 2026-11-27, aber 260 Werte haengen zurueck - siehe Stan
 
 ## 🎯 Analysten-Filter (Kursziel ≥15%, Kaufen-Anteil ≥75%)
 
-_Ueber alle 271 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei Gleichstand nach Kurspotenzial. Maximal 20 Treffer. Value-Trap-Ausschluesse gelten auch hier. RSI auf drei Zeitebenen, jeweils echt neu berechnet (nicht umgerechnet): Tag, Woche, Stunde. "k.A." bei Stunde heisst: fuer diesen Wert lagen keine verwertbaren Stundenkerzen vor._
+_Ueber alle 232 ausgewerteten Werte. Sortiert nach Kaufen-Anteil absteigend, bei Gleichstand nach Kurspotenzial. Maximal 20 Treffer. Value-Trap-Ausschluesse gelten auch hier. RSI auf drei Zeitebenen, jeweils echt neu berechnet (nicht umgerechnet): Tag, Woche, Stunde. "k.A." bei Stunde heisst: fuer diesen Wert lagen keine verwertbaren Stundenkerzen vor._
 
 | Rang | Ticker | ISIN | Name | Index | Kurs | Abstand ATH (Info) | Kaufen-Anteil Analysten | Kursziel | RSI Tag | RSI Woche | RSI Stunde | Letztes Rating |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 1 | MU | US5951121038 | Micron Technology, Inc. | NASDAQ | 601.25 | -50% | 100% (13 Banken, ≤120T) | 1540.00 (156% ueber Kurs) | 36 | 38 | 43 | keine in 30T |
-| 2 | SKHY | AR0272347318 | SK hynix Inc. | Watchlist | 1104500.00 | -61% | 100% (10 Banken, ≤120T) | 2316897.62 (110% ueber Kurs) | 43 | 40 | 53 | 2026-10-28 RBC Capital: Rating bestaetigt: Outperform |
+| 2 | SKHY | AR0272347318 | SK hynix Inc. | Watchlist | 1107000.00 | -61% | 100% (10 Banken, ≤120T) | 2316897.62 (109% ueber Kurs) | 43 | 40 | 53 | 2026-10-28 RBC Capital: Rating bestaetigt: Outperform |
 | 3 | LRCX | - | Lam Research Corporation | NASDAQ | 185.01 | -57% | 100% (9 Banken, ≤120T) | 350.00 (89% ueber Kurs) | 36 | 36 | 42 | 2026-11-09 B. Riley Securities: Rating bestaetigt: Buy |
 | 4 | DDOG | US23804L1035 | Datadog, Inc. | NASDAQ | 158.25 | -46% | 100% (20 Banken, ≤120T) | 275.00 (74% ueber Kurs) | 30 | 39 | 42 | 2026-11-05 Citigroup: Rating bestaetigt: Buy |
 | 5 | TSM | US8740391003 | Taiwan Semiconductor Manufactur | Watchlist | 2180.00 | -16% | 100% (5 Banken, ≤120T) | 3516.97 (61% ueber Kurs) | 45 | 46 | 53 | 2026-11-04 Bernstein: Rating bestaetigt: Outperform |

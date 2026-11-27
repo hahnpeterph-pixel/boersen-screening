@@ -1,6 +1,6 @@
 # Marktstimmung
 
-Stand Abruf: 27.11.2026 06:39 UTC
+Stand Abruf: 27.11.2026 06:43 UTC
 
 **Stimmung: VIX 26,8 (unruhig, 5T -1,6, 26.11.) · DAX-Schwankung gemessen 23,1 (unruhig, 5T +4,7, 26.11.) · Fear & Greed 15 (extreme Angst, Vortag -1, 26.11.)**
 

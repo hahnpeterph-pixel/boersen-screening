@@ -3,9 +3,7 @@
  "ranks": {
   "turnaround": [
    "ADSK",
-   "BEI.DE",
    "BTI",
-   "ADS.DE",
    "SPGI",
    "HON",
    "ZS",
@@ -13,10 +11,12 @@
    "LMT",
    "CTSH",
    "VRSK",
-   "EOAN.DE",
    "NEE",
    "AMT",
-   "KDP"
+   "KDP",
+   "SYK",
+   "AZN",
+   "MO"
   ],
   "momentum": [
    "BIIB",
@@ -29,11 +29,11 @@
    "WELL",
    "CB",
    "MMM",
-   "HEN3.DE",
    "MDLZ",
    "VRTX",
    "KHC",
-   "SPG"
+   "SPG",
+   "DIS"
   ],
   "value": [
    "PSX",
@@ -49,24 +49,70 @@
    "META",
    "BLK",
    "REGN",
-   "ENR.DE",
-   "V"
+   "V",
+   "ODFL"
   ]
  },
  "changes": {
   "turnaround": {
-   "entries": [],
-   "exits": [],
+   "entries": [
+    {
+     "ticker": "SYK",
+     "rank": 13
+    },
+    {
+     "ticker": "AZN",
+     "rank": 14
+    },
+    {
+     "ticker": "MO",
+     "rank": 15
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "BEI.DE",
+     "old_rank": 2
+    },
+    {
+     "ticker": "ADS.DE",
+     "old_rank": 4
+    },
+    {
+     "ticker": "EOAN.DE",
+     "old_rank": 12
+    }
+   ],
    "moves": []
   },
   "momentum": {
-   "entries": [],
-   "exits": [],
+   "entries": [
+    {
+     "ticker": "DIS",
+     "rank": 15
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "HEN3.DE",
+     "old_rank": 11
+    }
+   ],
    "moves": []
   },
   "value": {
-   "entries": [],
-   "exits": [],
+   "entries": [
+    {
+     "ticker": "ODFL",
+     "rank": 15
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "ENR.DE",
+     "old_rank": 14
+    }
+   ],
    "moves": []
   },
   "analyst_flips": []

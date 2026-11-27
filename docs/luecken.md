@@ -16,11 +16,8 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | ADBE (ADBE) | 529 | 512 | 97% | 0 | 2 | 12 | 17 |
 | ADI (ADI) | 606 | 588 | 97% | 0 | 1 | 12 | 18 |
 | ADP (ADP) | 547 | 531 | 97% | 0 | 1 | 7 | 16 |
-| ADS.DE (ADS.DE) | 493 | 487 | 99% | 0 | 2 | 12 | 6 |
 | ADSK (ADSK) | 449 | 431 | 96% | 0 | 3 | 21 | 18 |
 | AEP (AEP) | 400 | 397 | 99% | 0 | 0 | 3 | 3 |
-| AIR.DE (AIR.DE) | 543 | 528 | 97% | 0 | 3 | 19 | 15 |
-| ALV.DE (ALV.DE) | 593 | 581 | 98% | 0 | 2 | 14 | 12 |
 | AMAT (AMAT) | 599 | 577 | 96% | 0 | 2 | 14 | 22 |
 | AMD (AMD) | 583 | 562 | 96% | 0 | 2 | 11 | 21 |
 | AMGN (AMGN) | 428 | 411 | 96% | 0 | 1 | 12 | 17 |
@@ -38,19 +35,14 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | BA (BA) | 550 | 543 | 99% | 0 | 4 | 23 | 7 |
 | BABA (BABA) | 332 | 330 | 99% | 1 | 5 | 27 | 2 |
 | BAC (BAC) | 636 | 615 | 97% | 0 | 3 | 24 | 21 |
-| BAS.DE (BAS.DE) | 545 | 543 | 100% | 0 | 3 | 15 | 2 |
-| BAYN.DE (BAYN.DE) | 497 | 492 | 99% | 0 | 3 | 15 | 5 |
 | BBVA (BBVA) | 395 | 384 | 97% | 0 | 1 | 6 | 11 |
-| BEI.DE (BEI.DE) | 476 | 471 | 99% | 0 | 1 | 6 | 5 |
 | BHP (BHP) | 1304 | 1276 | 98% | 1 | 5 | 26 | 28 |
 | BIIB (BIIB) | 345 | 341 | 99% | 0 | 2 | 21 | 4 |
 | BKNG (BKNG) | 512 | 488 | 95% | 0 | 3 | 19 | 24 |
 | BKR (BKR) | 533 | 524 | 98% | 0 | 1 | 13 | 9 |
 | BLK (BLK) | 657 | 646 | 98% | 0 | 2 | 14 | 11 |
 | BMO (BMO) | 731 | 714 | 98% | 0 | 3 | 20 | 17 |
-| BMW.DE (BMW.DE) | 540 | 535 | 99% | 0 | 2 | 17 | 5 |
 | BMY (BMY) | 384 | 377 | 98% | 0 | 2 | 20 | 7 |
-| BNR.DE (BNR.DE) | 444 | 439 | 99% | 0 | 1 | 8 | 5 |
 | BNS (BNS) | 698 | 689 | 99% | 0 | 3 | 21 | 9 |
 | BNY (BNY) | 563 | 550 | 98% | 0 | 2 | 17 | 13 |
 | BP (BP) | 516 | 511 | 99% | 0 | 1 | 13 | 5 |
@@ -60,7 +52,6 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | C (C) | 660 | 643 | 97% | 0 | 3 | 17 | 17 |
 | CAT (CAT) | 668 | 645 | 97% | 0 | 3 | 22 | 23 |
 | CB (CB) | 536 | 523 | 98% | 0 | 1 | 6 | 13 |
-| CBK.DE (CBK.DE) | 490 | 486 | 99% | 0 | 2 | 14 | 4 |
 | Kakao (CC=F) | 516 | 504 | 98% | 2 | 6 | 26 | 12 |
 | CCEP (CCEP) | 464 | 447 | 96% | 0 | 2 | 10 | 17 |
 | CDNS (CDNS) | 439 | 421 | 96% | 0 | 1 | 13 | 18 |
@@ -73,7 +64,6 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | CMCSA (CMCSA) | 460 | 452 | 98% | 0 | 1 | 8 | 8 |
 | CNQ (CNQ) | 657 | 639 | 97% | 0 | 3 | 15 | 18 |
 | COF (COF) | 580 | 573 | 99% | 0 | 2 | 17 | 7 |
-| CON.DE (CON.DE) | 486 | 479 | 99% | 0 | 3 | 18 | 7 |
 | COP (COP) | 636 | 621 | 98% | 0 | 2 | 16 | 15 |
 | COST (COST) | 479 | 463 | 97% | 0 | 2 | 14 | 16 |
 | CPRT (CPRT) | 435 | 419 | 96% | 0 | 1 | 12 | 16 |
@@ -87,22 +77,15 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | CVS (CVS) | 442 | 432 | 98% | 0 | 2 | 16 | 10 |
 | CVX (CVX) | 633 | 624 | 99% | 0 | 2 | 17 | 9 |
 | DASH (DASH) | 131 | 126 | 96% | 0 | 1 | 9 | 5 |
-| DB1.DE (DB1.DE) | 501 | 491 | 98% | 0 | 1 | 12 | 10 |
-| DBK.DE (DBK.DE) | 535 | 526 | 98% | 0 | 3 | 18 | 9 |
 | DDOG (DDOG) | 198 | 192 | 97% | 0 | 2 | 11 | 6 |
 | DE (DE) | 532 | 517 | 97% | 0 | 2 | 20 | 15 |
 | DELL (DELL) | 289 | 277 | 96% | 0 | 3 | 21 | 12 |
-| DHL.DE (DHL.DE) | 566 | 555 | 98% | 0 | 2 | 11 | 11 |
 | DHR (DHR) | 551 | 523 | 95% | 0 | 1 | 10 | 28 |
 | DIS (DIS) | 525 | 506 | 96% | 0 | 2 | 16 | 19 |
-| DTE.DE (DTE.DE) | 491 | 485 | 99% | 0 | 1 | 12 | 6 |
-| DTG.DE (DTG.DE) | 126 | 125 | 99% | 0 | 2 | 20 | 1 |
 | DUK (DUK) | 385 | 383 | 99% | 0 | 0 | 3 | 2 |
 | DXCM (DXCM) | 307 | 295 | 96% | 0 | 1 | 18 | 12 |
 | EMR (EMR) | 580 | 569 | 98% | 0 | 2 | 12 | 11 |
 | ENB (ENB) | 586 | 578 | 99% | 0 | 1 | 9 | 8 |
-| ENR.DE (ENR.DE) | 191 | 181 | 95% | 0 | 1 | 6 | 10 |
-| EOAN.DE (EOAN.DE) | 453 | 450 | 99% | 0 | 1 | 5 | 3 |
 | EQIX (EQIX) | 389 | 376 | 97% | 0 | 1 | 6 | 13 |
 | EQNR (EQNR) | 671 | 661 | 99% | 0 | 2 | 13 | 10 |
 | ETN (ETN) | 642 | 621 | 97% | 0 | 2 | 15 | 21 |
@@ -110,7 +93,6 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | FANG (FANG) | 395 | 387 | 98% | 0 | 1 | 11 | 8 |
 | FAST (FAST) | 463 | 454 | 98% | 0 | 1 | 10 | 9 |
 | FDX (FDX) | 495 | 484 | 98% | 0 | 3 | 15 | 11 |
-| FRE.DE (FRE.DE) | 460 | 455 | 99% | 0 | 1 | 7 | 5 |
 | FTNT (FTNT) | 415 | 406 | 98% | 0 | 1 | 10 | 9 |
 | Gold (GC=F) | 553 | 527 | 95% | 1 | 4 | 28 | 26 |
 | GD (GD) | 491 | 476 | 97% | 0 | 2 | 11 | 15 |
@@ -126,17 +108,13 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | GSK (GSK) | 396 | 395 | 100% | 0 | 1 | 5 | 1 |
 | HD (HD) | 521 | 502 | 96% | 0 | 2 | 16 | 19 |
 | HDB (HDB) | 414 | 402 | 97% | 0 | 1 | 8 | 12 |
-| HEI.DE (HEI.DE) | 520 | 516 | 99% | 0 | 2 | 14 | 4 |
-| HEN3.DE (HEN3.DE) | 425 | 417 | 98% | 0 | 1 | 8 | 8 |
 | Kupfer (HG=F) | 907 | 883 | 97% | 1 | 4 | 26 | 24 |
-| HNR1.DE (HNR1.DE) | 555 | 543 | 98% | 0 | 1 | 6 | 12 |
 | HON (HON) | 562 | 543 | 97% | 0 | 2 | 14 | 19 |
 | HONA (HONA) | 5 | 5 | 100% | 0 | 0 | 13 | 0 |
 | HSBC (HSBC) | 542 | 532 | 98% | 0 | 3 | 17 | 10 |
 | IBM (IBM) | 470 | 465 | 99% | 0 | 4 | 26 | 5 |
 | IBN (IBN) | 494 | 474 | 96% | 0 | 1 | 10 | 20 |
 | IDXX (IDXX) | 373 | 364 | 98% | 0 | 1 | 7 | 9 |
-| IFX.DE (IFX.DE) | 606 | 589 | 97% | 0 | 2 | 14 | 17 |
 | ILMN (ILMN) | 360 | 355 | 99% | 0 | 2 | 21 | 5 |
 | ING (ING) | 624 | 606 | 97% | 0 | 2 | 16 | 18 |
 | INTC (INTC) | 516 | 510 | 99% | 0 | 2 | 15 | 6 |
@@ -156,7 +134,6 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | LULU (LULU) | 449 | 437 | 97% | 0 | 1 | 16 | 12 |
 | MA (MA) | 610 | 585 | 96% | 0 | 1 | 8 | 25 |
 | MAR (MAR) | 476 | 461 | 97% | 0 | 3 | 16 | 15 |
-| MBG.DE (MBG.DE) | 541 | 536 | 99% | 0 | 2 | 14 | 5 |
 | MCD (MCD) | 502 | 491 | 98% | 0 | 1 | 8 | 11 |
 | MCHP (MCHP) | 572 | 564 | 99% | 0 | 2 | 14 | 8 |
 | MCK (MCK) | 418 | 393 | 94% | 0 | 1 | 10 | 25 |
@@ -171,16 +148,13 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | MO (MO) | 463 | 456 | 98% | 0 | 1 | 7 | 7 |
 | MPC (MPC) | 372 | 359 | 97% | 0 | 1 | 8 | 13 |
 | MRK (MRK) | 446 | 434 | 97% | 0 | 1 | 10 | 12 |
-| MRK.DE (MRK.DE) | 443 | 435 | 98% | 0 | 1 | 9 | 8 |
 | MRNA (MRNA) | 149 | 144 | 97% | 0 | 2 | 15 | 5 |
 | MRVL (MRVL) | 565 | 548 | 97% | 0 | 2 | 13 | 17 |
 | MS (MS) | 614 | 594 | 97% | 0 | 3 | 21 | 20 |
 | MSFT (MSFT) | 614 | 584 | 95% | 0 | 2 | 11 | 30 |
 | MSTR (MSTR) | 414 | 407 | 98% | 0 | 2 | 22 | 7 |
-| MTX.DE (MTX.DE) | 409 | 400 | 98% | 0 | 1 | 9 | 9 |
 | MU (MU) | 664 | 638 | 96% | 0 | 4 | 18 | 26 |
 | MUFG (MUFG) | 926 | 897 | 97% | 1 | 4 | 20 | 29 |
-| MUV2.DE (MUV2.DE) | 566 | 555 | 98% | 0 | 1 | 10 | 11 |
 | NEE (NEE) | 421 | 410 | 97% | 0 | 1 | 6 | 11 |
 | NEM (NEM) | 634 | 626 | 99% | 0 | 2 | 12 | 8 |
 | NET (NET) | 193 | 187 | 97% | 0 | 3 | 28 | 6 |
@@ -196,9 +170,7 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | ON (ON) | 549 | 538 | 98% | 0 | 2 | 20 | 11 |
 | ORCL (ORCL) | 508 | 497 | 98% | 0 | 2 | 27 | 11 |
 | ORLY (ORLY) | 411 | 387 | 94% | 0 | 0 | 5 | 24 |
-| P911.DE (P911.DE) | 81 | 81 | 100% | 0 | 1 | 5 | 0 |
 | Palladium (PA=F) | 870 | 831 | 96% | 3 | 14 | 82 | 39 |
-| PAH3.DE (PAH3.DE) | 399 | 399 | 100% | 0 | 3 | 21 | 0 |
 | PANW (PANW) | 343 | 320 | 93% | 0 | 2 | 14 | 23 |
 | PAYX (PAYX) | 558 | 547 | 98% | 0 | 0 | 3 | 11 |
 | PBR (PBR) | 512 | 512 | 100% | 0 | 2 | 25 | 0 |
@@ -216,27 +188,21 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | PSX (PSX) | 347 | 337 | 97% | 0 | 1 | 11 | 10 |
 | PYPL (PYPL) | 344 | 339 | 99% | 0 | 2 | 17 | 5 |
 | QCOM (QCOM) | 574 | 562 | 98% | 0 | 2 | 13 | 12 |
-| QIA.DE (QIA.DE) | 546 | 540 | 99% | 0 | 1 | 9 | 6 |
 | REGN (REGN) | 301 | 292 | 97% | 0 | 1 | 9 | 9 |
-| RHM.DE (RHM.DE) | 473 | 455 | 96% | 0 | 2 | 19 | 18 |
 | RIO (RIO) | 750 | 744 | 99% | 0 | 2 | 17 | 6 |
 | ROP (ROP) | 538 | 523 | 97% | 0 | 1 | 8 | 15 |
 | ROST (ROST) | 450 | 430 | 96% | 0 | 1 | 10 | 20 |
 | RTX (RTX) | 614 | 601 | 98% | 0 | 2 | 15 | 13 |
-| RWE.DE (RWE.DE) | 397 | 390 | 98% | 0 | 1 | 5 | 7 |
 | RY (RY) | 705 | 684 | 97% | 0 | 3 | 15 | 21 |
 | SAN (SAN) | 405 | 399 | 99% | 0 | 2 | 10 | 6 |
-| SAP.DE (SAP.DE) | 622 | 611 | 98% | 0 | 2 | 12 | 11 |
 | Zucker (SB=F) | 95 | 93 | 98% | 0 | 5 | 27 | 2 |
 | SBUX (SBUX) | 477 | 463 | 97% | 0 | 2 | 15 | 14 |
 | SCCO (SCCO) | 810 | 794 | 98% | 0 | 3 | 16 | 16 |
 | SCHW (SCHW) | 522 | 512 | 98% | 0 | 2 | 18 | 10 |
 | SHEL (SHEL) | 523 | 517 | 99% | 0 | 2 | 15 | 6 |
-| SHL.DE (SHL.DE) | 185 | 183 | 99% | 0 | 1 | 8 | 2 |
 | SHOP (SHOP) | 299 | 291 | 97% | 0 | 2 | 13 | 8 |
 | SHW (SHW) | 456 | 441 | 97% | 0 | 1 | 6 | 15 |
 | Silber (SI=F) | 1214 | 1188 | 98% | 2 | 7 | 45 | 26 |
-| SIE.DE (SIE.DE) | 587 | 575 | 98% | 0 | 3 | 19 | 12 |
 | SKHY (SKHY) | 849 | 817 | 96% | 0 | 2 | 11 | 32 |
 | SMFG (SMFG) | 873 | 851 | 97% | 1 | 4 | 20 | 22 |
 | SNDK (SNDK) | 76 | 66 | 87% | 0 | 2 | 11 | 10 |
@@ -249,9 +215,7 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | SPG (SPG) | 462 | 451 | 98% | 0 | 1 | 6 | 11 |
 | SPGI (SPGI) | 525 | 504 | 96% | 0 | 1 | 11 | 21 |
 | SPOT (SPOT) | 216 | 207 | 96% | 0 | 1 | 8 | 9 |
-| SRT3.DE (SRT3.DE) | 407 | 395 | 97% | 0 | 1 | 7 | 12 |
 | STX (STX) | 504 | 486 | 96% | 0 | 2 | 20 | 18 |
-| SY1.DE (SY1.DE) | 479 | 469 | 98% | 0 | 1 | 6 | 10 |
 | SYK (SYK) | 524 | 510 | 97% | 0 | 2 | 12 | 14 |
 | T (T) | 449 | 446 | 99% | 0 | 2 | 18 | 3 |
 | TD (TD) | 711 | 696 | 98% | 0 | 3 | 20 | 15 |
@@ -276,8 +240,6 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | USB (USB) | 571 | 559 | 98% | 0 | 2 | 11 | 12 |
 | V (V) | 584 | 555 | 95% | 0 | 1 | 10 | 29 |
 | VLO (VLO) | 478 | 466 | 97% | 0 | 1 | 14 | 12 |
-| VNA.DE (VNA.DE) | 339 | 338 | 100% | 0 | 1 | 11 | 1 |
-| VOW3.DE (VOW3.DE) | 482 | 481 | 100% | 0 | 3 | 21 | 1 |
 | VRSK (VRSK) | 379 | 370 | 98% | 0 | 1 | 7 | 9 |
 | VRTX (VRTX) | 317 | 305 | 96% | 0 | 1 | 8 | 12 |
 | VZ (VZ) | 431 | 427 | 99% | 0 | 1 | 11 | 4 |
@@ -288,7 +250,6 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | WMT (WMT) | 403 | 382 | 95% | 0 | 1 | 10 | 21 |
 | XEL (XEL) | 382 | 375 | 98% | 0 | 0 | 1 | 7 |
 | XOM (XOM) | 626 | 610 | 97% | 0 | 2 | 12 | 16 |
-| ZAL.DE (ZAL.DE) | 260 | 259 | 100% | 0 | 4 | 32 | 1 |
 | Mais (ZC=F) | 176 | 175 | 99% | 1 | 12 | 80 | 1 |
 | ZS (ZS) | 219 | 213 | 97% | 0 | 2 | 17 | 6 |
 | Weizen (ZW=F) | 307 | 301 | 98% | 1 | 9 | 34 | 6 |
@@ -305,11 +266,8 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | ADBE (ADBE) | 433 | 425 | 98% | 0 | 2 | 15 | 8 |
 | ADI (ADI) | 505 | 504 | 100% | 0 | 2 | 12 | 1 |
 | ADP (ADP) | 457 | 457 | 100% | 0 | 1 | 6 | 0 |
-| ADS.DE (ADS.DE) | 453 | 449 | 99% | 0 | 1 | 10 | 4 |
 | ADSK (ADSK) | 417 | 415 | 100% | 0 | 3 | 22 | 2 |
 | AEP (AEP) | 295 | 295 | 100% | 0 | 1 | 7 | 0 |
-| AIR.DE (AIR.DE) | 482 | 482 | 100% | 0 | 2 | 10 | 0 |
-| ALV.DE (ALV.DE) | 453 | 453 | 100% | 0 | 3 | 24 | 0 |
 | AMAT (AMAT) | 504 | 499 | 99% | 0 | 2 | 12 | 5 |
 | AMD (AMD) | 450 | 450 | 100% | 0 | 3 | 32 | 0 |
 | AMGN (AMGN) | 372 | 372 | 100% | 0 | 1 | 14 | 0 |
@@ -327,19 +285,14 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | BA (BA) | 480 | 475 | 99% | 0 | 4 | 18 | 5 |
 | BABA (BABA) | 326 | 314 | 96% | 1 | 5 | 28 | 12 |
 | BAC (BAC) | 574 | 573 | 100% | 0 | 3 | 18 | 1 |
-| BAS.DE (BAS.DE) | 468 | 465 | 99% | 0 | 2 | 14 | 3 |
-| BAYN.DE (BAYN.DE) | 440 | 433 | 98% | 0 | 1 | 10 | 7 |
 | BBVA (BBVA) | 362 | 360 | 99% | 0 | 2 | 21 | 2 |
-| BEI.DE (BEI.DE) | 409 | 404 | 99% | 0 | 1 | 6 | 5 |
 | BHP (BHP) | 1155 | 1153 | 100% | 1 | 5 | 27 | 2 |
 | BIIB (BIIB) | 307 | 306 | 100% | 0 | 1 | 20 | 1 |
 | BKNG (BKNG) | 413 | 413 | 100% | 0 | 2 | 22 | 0 |
 | BKR (BKR) | 479 | 478 | 100% | 0 | 2 | 13 | 1 |
 | BLK (BLK) | 464 | 464 | 100% | 0 | 2 | 11 | 0 |
 | BMO (BMO) | 573 | 573 | 100% | 0 | 3 | 16 | 0 |
-| BMW.DE (BMW.DE) | 454 | 446 | 98% | 0 | 2 | 14 | 8 |
 | BMY (BMY) | 339 | 337 | 99% | 0 | 2 | 13 | 2 |
-| BNR.DE (BNR.DE) | 370 | 369 | 100% | 0 | 2 | 16 | 1 |
 | BNS (BNS) | 581 | 581 | 100% | 0 | 3 | 23 | 0 |
 | BNY (BNY) | 503 | 503 | 100% | 0 | 2 | 11 | 0 |
 | BP (BP) | 486 | 486 | 100% | 0 | 1 | 10 | 0 |
@@ -349,7 +302,6 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | C (C) | 570 | 564 | 99% | 0 | 3 | 19 | 6 |
 | CAT (CAT) | 513 | 511 | 100% | 0 | 3 | 15 | 2 |
 | CB (CB) | 448 | 448 | 100% | 0 | 1 | 4 | 0 |
-| CBK.DE (CBK.DE) | 378 | 372 | 98% | 0 | 2 | 12 | 6 |
 | Kakao (CC=F) | 454 | 449 | 99% | 2 | 7 | 47 | 5 |
 | CCEP (CCEP) | 432 | 432 | 100% | 0 | 1 | 11 | 0 |
 | CDNS (CDNS) | 382 | 382 | 100% | 0 | 1 | 8 | 0 |
@@ -362,7 +314,6 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | CMCSA (CMCSA) | 379 | 376 | 99% | 0 | 1 | 7 | 3 |
 | CNQ (CNQ) | 608 | 608 | 100% | 0 | 3 | 14 | 0 |
 | COF (COF) | 515 | 513 | 100% | 0 | 2 | 10 | 2 |
-| CON.DE (CON.DE) | 420 | 414 | 99% | 0 | 2 | 12 | 6 |
 | COP (COP) | 575 | 575 | 100% | 0 | 2 | 10 | 0 |
 | COST (COST) | 374 | 374 | 100% | 0 | 2 | 14 | 0 |
 | CPRT (CPRT) | 339 | 338 | 100% | 0 | 1 | 6 | 1 |
@@ -376,22 +327,15 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | CVS (CVS) | 392 | 389 | 99% | 0 | 1 | 13 | 3 |
 | CVX (CVX) | 532 | 532 | 100% | 0 | 3 | 20 | 0 |
 | DASH (DASH) | 114 | 113 | 99% | 0 | 1 | 8 | 1 |
-| DB1.DE (DB1.DE) | 404 | 404 | 100% | 0 | 1 | 7 | 0 |
-| DBK.DE (DBK.DE) | 500 | 494 | 99% | 0 | 2 | 15 | 6 |
 | DDOG (DDOG) | 153 | 153 | 100% | 0 | 2 | 8 | 0 |
 | DE (DE) | 482 | 482 | 100% | 0 | 2 | 11 | 0 |
 | DELL (DELL) | 236 | 236 | 100% | 0 | 3 | 12 | 0 |
-| DHL.DE (DHL.DE) | 476 | 476 | 100% | 0 | 2 | 24 | 0 |
 | DHR (DHR) | 466 | 464 | 100% | 0 | 1 | 8 | 2 |
 | DIS (DIS) | 439 | 435 | 99% | 0 | 2 | 11 | 4 |
-| DTE.DE (DTE.DE) | 385 | 381 | 99% | 0 | 2 | 20 | 4 |
-| DTG.DE (DTG.DE) | 123 | 121 | 98% | 0 | 3 | 13 | 2 |
 | DUK (DUK) | 272 | 272 | 100% | 0 | 1 | 11 | 0 |
 | DXCM (DXCM) | 248 | 247 | 100% | 0 | 1 | 9 | 1 |
 | EMR (EMR) | 503 | 503 | 100% | 0 | 2 | 15 | 0 |
 | ENB (ENB) | 442 | 441 | 100% | 0 | 2 | 13 | 1 |
-| ENR.DE (ENR.DE) | 117 | 117 | 100% | 0 | 2 | 21 | 0 |
-| EOAN.DE (EOAN.DE) | 346 | 342 | 99% | 0 | 1 | 13 | 4 |
 | EQIX (EQIX) | 291 | 291 | 100% | 0 | 2 | 9 | 0 |
 | EQNR (EQNR) | 638 | 638 | 100% | 0 | 2 | 19 | 0 |
 | ETN (ETN) | 483 | 482 | 100% | 0 | 2 | 9 | 1 |
@@ -399,7 +343,6 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | FANG (FANG) | 302 | 302 | 100% | 0 | 2 | 10 | 0 |
 | FAST (FAST) | 359 | 359 | 100% | 0 | 2 | 11 | 0 |
 | FDX (FDX) | 470 | 470 | 100% | 0 | 2 | 18 | 0 |
-| FRE.DE (FRE.DE) | 342 | 340 | 99% | 0 | 2 | 15 | 2 |
 | FTNT (FTNT) | 295 | 294 | 100% | 0 | 1 | 12 | 1 |
 | Gold (GC=F) | 396 | 396 | 100% | 1 | 4 | 31 | 0 |
 | GD (GD) | 404 | 404 | 100% | 0 | 1 | 9 | 0 |
@@ -415,17 +358,13 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | GSK (GSK) | 446 | 446 | 100% | 0 | 0 | 5 | 0 |
 | HD (HD) | 458 | 455 | 99% | 0 | 2 | 10 | 3 |
 | HDB (HDB) | 394 | 393 | 100% | 0 | 1 | 8 | 1 |
-| HEI.DE (HEI.DE) | 428 | 427 | 100% | 0 | 2 | 14 | 1 |
-| HEN3.DE (HEN3.DE) | 447 | 442 | 99% | 0 | 1 | 10 | 5 |
 | Kupfer (HG=F) | 780 | 780 | 100% | 1 | 5 | 23 | 0 |
-| HNR1.DE (HNR1.DE) | 388 | 388 | 100% | 0 | 2 | 13 | 0 |
 | HON (HON) | 457 | 457 | 100% | 0 | 2 | 10 | 0 |
 | HONA (HONA) | 6 | 5 | 83% | 0 | 0 | 5 | 1 |
 | HSBC (HSBC) | 525 | 525 | 100% | 0 | 2 | 12 | 0 |
 | IBM (IBM) | 475 | 474 | 100% | 0 | 3 | 21 | 1 |
 | IBN (IBN) | 387 | 387 | 100% | 0 | 1 | 8 | 0 |
 | IDXX (IDXX) | 306 | 305 | 100% | 0 | 1 | 13 | 1 |
-| IFX.DE (IFX.DE) | 511 | 511 | 100% | 0 | 2 | 14 | 0 |
 | ILMN (ILMN) | 344 | 341 | 99% | 0 | 1 | 18 | 3 |
 | ING (ING) | 482 | 481 | 100% | 0 | 2 | 20 | 1 |
 | INTC (INTC) | 501 | 498 | 99% | 0 | 2 | 31 | 3 |
@@ -445,7 +384,6 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | LULU (LULU) | 359 | 352 | 98% | 0 | 2 | 12 | 7 |
 | MA (MA) | 425 | 425 | 100% | 0 | 1 | 9 | 0 |
 | MAR (MAR) | 451 | 451 | 100% | 0 | 2 | 13 | 0 |
-| MBG.DE (MBG.DE) | 482 | 475 | 99% | 0 | 3 | 20 | 7 |
 | MCD (MCD) | 403 | 400 | 99% | 0 | 1 | 9 | 3 |
 | MCHP (MCHP) | 471 | 470 | 100% | 0 | 2 | 15 | 1 |
 | MCK (MCK) | 340 | 340 | 100% | 0 | 1 | 12 | 0 |
@@ -460,16 +398,13 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | MO (MO) | 372 | 371 | 100% | 0 | 2 | 13 | 1 |
 | MPC (MPC) | 302 | 302 | 100% | 0 | 2 | 10 | 0 |
 | MRK (MRK) | 405 | 405 | 100% | 0 | 1 | 10 | 0 |
-| MRK.DE (MRK.DE) | 388 | 387 | 100% | 0 | 1 | 7 | 1 |
 | MRNA (MRNA) | 133 | 130 | 98% | 0 | 1 | 38 | 3 |
 | MRVL (MRVL) | 468 | 468 | 100% | 0 | 2 | 10 | 0 |
 | MS (MS) | 547 | 547 | 100% | 0 | 3 | 13 | 0 |
 | MSFT (MSFT) | 454 | 454 | 100% | 0 | 2 | 12 | 0 |
 | MSTR (MSTR) | 350 | 346 | 99% | 0 | 2 | 16 | 4 |
-| MTX.DE (MTX.DE) | 389 | 389 | 100% | 0 | 1 | 8 | 0 |
 | MU (MU) | 502 | 500 | 100% | 0 | 2 | 11 | 2 |
 | MUFG (MUFG) | 798 | 797 | 100% | 1 | 4 | 25 | 1 |
-| MUV2.DE (MUV2.DE) | 427 | 427 | 100% | 0 | 2 | 9 | 0 |
 | NEE (NEE) | 320 | 319 | 100% | 0 | 1 | 9 | 1 |
 | NEM (NEM) | 586 | 586 | 100% | 0 | 3 | 32 | 0 |
 | NET (NET) | 149 | 149 | 100% | 0 | 1 | 7 | 0 |
@@ -485,9 +420,7 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | ON (ON) | 471 | 466 | 99% | 0 | 1 | 9 | 5 |
 | ORCL (ORCL) | 484 | 481 | 99% | 0 | 2 | 12 | 3 |
 | ORLY (ORLY) | 352 | 351 | 100% | 0 | 0 | 8 | 1 |
-| P911.DE (P911.DE) | 86 | 82 | 95% | 0 | 2 | 10 | 4 |
 | Palladium (PA=F) | 835 | 821 | 98% | 3 | 12 | 85 | 14 |
-| PAH3.DE (PAH3.DE) | 339 | 332 | 98% | 0 | 3 | 18 | 7 |
 | PANW (PANW) | 251 | 251 | 100% | 0 | 3 | 15 | 0 |
 | PAYX (PAYX) | 439 | 436 | 99% | 0 | 2 | 20 | 3 |
 | PBR (PBR) | 424 | 423 | 100% | 0 | 3 | 21 | 1 |
@@ -505,27 +438,21 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | PSX (PSX) | 314 | 314 | 100% | 0 | 2 | 18 | 0 |
 | PYPL (PYPL) | 259 | 251 | 97% | 0 | 2 | 15 | 8 |
 | QCOM (QCOM) | 510 | 510 | 100% | 0 | 1 | 13 | 0 |
-| QIA.DE (QIA.DE) | 482 | 481 | 100% | 0 | 1 | 11 | 1 |
 | REGN (REGN) | 261 | 260 | 100% | 0 | 1 | 15 | 1 |
-| RHM.DE (RHM.DE) | 344 | 342 | 99% | 0 | 2 | 9 | 2 |
 | RIO (RIO) | 670 | 669 | 100% | 0 | 2 | 11 | 1 |
 | ROP (ROP) | 388 | 387 | 100% | 0 | 1 | 5 | 1 |
 | ROST (ROST) | 364 | 364 | 100% | 0 | 1 | 8 | 0 |
 | RTX (RTX) | 489 | 489 | 100% | 0 | 1 | 6 | 0 |
-| RWE.DE (RWE.DE) | 292 | 291 | 100% | 0 | 2 | 28 | 1 |
 | RY (RY) | 598 | 598 | 100% | 0 | 2 | 12 | 0 |
 | SAN (SAN) | 386 | 385 | 100% | 0 | 2 | 22 | 1 |
-| SAP.DE (SAP.DE) | 568 | 566 | 100% | 0 | 2 | 10 | 2 |
 | Zucker (SB=F) | 81 | 80 | 99% | 0 | 5 | 19 | 1 |
 | SBUX (SBUX) | 425 | 423 | 100% | 0 | 2 | 12 | 2 |
 | SCCO (SCCO) | 650 | 650 | 100% | 0 | 3 | 15 | 0 |
 | SCHW (SCHW) | 460 | 459 | 100% | 0 | 2 | 15 | 1 |
 | SHEL (SHEL) | 455 | 455 | 100% | 0 | 2 | 16 | 0 |
-| SHL.DE (SHL.DE) | 204 | 200 | 98% | 0 | 2 | 14 | 4 |
 | SHOP (SHOP) | 214 | 214 | 100% | 0 | 2 | 12 | 0 |
 | SHW (SHW) | 419 | 419 | 100% | 0 | 1 | 10 | 0 |
 | Silber (SI=F) | 980 | 970 | 99% | 2 | 8 | 46 | 10 |
-| SIE.DE (SIE.DE) | 546 | 546 | 100% | 0 | 2 | 12 | 0 |
 | SKHY (SKHY) | 625 | 621 | 99% | 0 | 2 | 12 | 4 |
 | SMFG (SMFG) | 802 | 801 | 100% | 1 | 4 | 24 | 1 |
 | SNDK (SNDK) | 44 | 43 | 98% | 0 | 2 | 4 | 1 |
@@ -538,9 +465,7 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | SPG (SPG) | 348 | 348 | 100% | 0 | 1 | 11 | 0 |
 | SPGI (SPGI) | 414 | 413 | 100% | 0 | 1 | 9 | 1 |
 | SPOT (SPOT) | 183 | 183 | 100% | 0 | 2 | 15 | 0 |
-| SRT3.DE (SRT3.DE) | 371 | 370 | 100% | 0 | 1 | 7 | 1 |
 | STX (STX) | 434 | 432 | 100% | 0 | 2 | 22 | 2 |
-| SY1.DE (SY1.DE) | 373 | 373 | 100% | 0 | 1 | 6 | 0 |
 | SYK (SYK) | 401 | 399 | 100% | 0 | 2 | 10 | 2 |
 | T (T) | 397 | 394 | 99% | 0 | 3 | 17 | 3 |
 | TD (TD) | 572 | 572 | 100% | 0 | 2 | 13 | 0 |
@@ -565,8 +490,6 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | USB (USB) | 511 | 511 | 100% | 0 | 2 | 11 | 0 |
 | V (V) | 403 | 403 | 100% | 0 | 1 | 6 | 0 |
 | VLO (VLO) | 354 | 354 | 100% | 0 | 2 | 10 | 0 |
-| VNA.DE (VNA.DE) | 225 | 220 | 98% | 0 | 1 | 8 | 5 |
-| VOW3.DE (VOW3.DE) | 421 | 416 | 99% | 0 | 3 | 20 | 5 |
 | VRSK (VRSK) | 335 | 333 | 99% | 0 | 0 | 4 | 2 |
 | VRTX (VRTX) | 275 | 275 | 100% | 0 | 1 | 15 | 0 |
 | VZ (VZ) | 381 | 379 | 99% | 0 | 3 | 15 | 2 |
@@ -577,7 +500,6 @@ Aufwaerts- und Abwaerts-Luecken werden getrennt ausgewiesen: eine Aufwaerts-Luec
 | WMT (WMT) | 397 | 397 | 100% | 0 | 1 | 8 | 0 |
 | XEL (XEL) | 317 | 317 | 100% | 0 | 0 | 4 | 0 |
 | XOM (XOM) | 566 | 566 | 100% | 0 | 2 | 12 | 0 |
-| ZAL.DE (ZAL.DE) | 232 | 229 | 99% | 0 | 2 | 18 | 3 |
 | Mais (ZC=F) | 108 | 106 | 98% | 0 | 7 | 44 | 2 |
 | ZS (ZS) | 151 | 149 | 99% | 0 | 2 | 17 | 2 |
 | Weizen (ZW=F) | 176 | 175 | 99% | 1 | 4 | 16 | 1 |
@@ -604,16 +526,10 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | ADI (ADI) | aufwaerts | 78/96 (81%) | 43/61 (70%) | 21/39 (54%) |
 | ADP (ADP) | abwaerts | 54/54 (100%) | 23/23 (100%) | 7/7 (100%) |
 | ADP (ADP) | aufwaerts | 59/75 (79%) | 40/56 (71%) | 15/30 (50%) |
-| ADS.DE (ADS.DE) | abwaerts | 65/69 (94%) | 26/30 (87%) | 10/14 (71%) |
-| ADS.DE (ADS.DE) | aufwaerts | 79/85 (93%) | 40/46 (87%) | 19/25 (76%) |
 | ADSK (ADSK) | abwaerts | 75/77 (97%) | 42/44 (95%) | 21/23 (91%) |
 | ADSK (ADSK) | aufwaerts | 90/108 (83%) | 42/60 (70%) | 21/37 (57%) |
 | AEP (AEP) | abwaerts | 32/32 (100%) | 16/16 (100%) | 5/5 (100%) |
 | AEP (AEP) | aufwaerts | 30/33 (91%) | 16/19 (84%) | 6/9 (67%) |
-| AIR.DE (AIR.DE) | abwaerts | 72/72 (100%) | 32/32 (100%) | 14/14 (100%) |
-| AIR.DE (AIR.DE) | aufwaerts | 96/111 (86%) | 49/64 (77%) | 22/37 (59%) |
-| ALV.DE (ALV.DE) | abwaerts | 87/87 (100%) | 48/48 (100%) | 22/22 (100%) |
-| ALV.DE (ALV.DE) | aufwaerts | 88/100 (88%) | 44/56 (79%) | 19/31 (61%) |
 | AMAT (AMAT) | abwaerts | 79/84 (94%) | 32/37 (86%) | 17/18 (94%) |
 | AMAT (AMAT) | aufwaerts | 96/118 (81%) | 50/72 (69%) | 28/50 (56%) |
 | AMD (AMD) | abwaerts | 89/89 (100%) | 57/57 (100%) | 29/29 (100%) |
@@ -648,14 +564,8 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | BABA (BABA) | aufwaerts | 74/76 (97%) | 36/38 (95%) | 18/20 (90%) |
 | BAC (BAC) | abwaerts | 114/115 (99%) | 55/56 (98%) | 28/28 (100%) |
 | BAC (BAC) | aufwaerts | 121/142 (85%) | 65/86 (76%) | 32/53 (60%) |
-| BAS.DE (BAS.DE) | abwaerts | 78/81 (96%) | 36/39 (92%) | 27/30 (90%) |
-| BAS.DE (BAS.DE) | aufwaerts | 107/109 (98%) | 43/45 (96%) | 22/24 (92%) |
-| BAYN.DE (BAYN.DE) | abwaerts | 62/69 (90%) | 26/33 (79%) | 16/23 (70%) |
-| BAYN.DE (BAYN.DE) | aufwaerts | 84/89 (94%) | 41/46 (89%) | 22/26 (85%) |
 | BBVA (BBVA) | abwaerts | 64/66 (97%) | 36/38 (95%) | 18/18 (100%) |
 | BBVA (BBVA) | aufwaerts | 40/51 (78%) | 16/27 (59%) | 9/20 (45%) |
-| BEI.DE (BEI.DE) | abwaerts | 46/51 (90%) | 15/20 (75%) | 4/9 (44%) |
-| BEI.DE (BEI.DE) | aufwaerts | 51/56 (91%) | 23/28 (82%) | 14/18 (78%) |
 | BHP (BHP) | abwaerts | 280/282 (99%) | 129/131 (98%) | 67/67 (100%) |
 | BHP (BHP) | aufwaerts | 317/345 (92%) | 146/174 (84%) | 71/99 (72%) |
 | BIIB (BIIB) | abwaerts | 50/51 (98%) | 29/30 (97%) | 17/18 (94%) |
@@ -668,12 +578,8 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | BLK (BLK) | aufwaerts | 95/106 (90%) | 51/62 (82%) | 28/39 (72%) |
 | BMO (BMO) | abwaerts | 100/100 (100%) | 49/49 (100%) | 26/26 (100%) |
 | BMO (BMO) | aufwaerts | 142/159 (89%) | 69/86 (80%) | 32/49 (65%) |
-| BMW.DE (BMW.DE) | abwaerts | 76/84 (90%) | 31/39 (79%) | 11/19 (58%) |
-| BMW.DE (BMW.DE) | aufwaerts | 90/95 (95%) | 46/51 (90%) | 22/27 (81%) |
 | BMY (BMY) | abwaerts | 55/57 (96%) | 27/29 (93%) | 18/19 (95%) |
 | BMY (BMY) | aufwaerts | 66/73 (90%) | 36/43 (84%) | 19/26 (73%) |
-| BNR.DE (BNR.DE) | abwaerts | 64/65 (98%) | 30/31 (97%) | 10/11 (91%) |
-| BNR.DE (BNR.DE) | aufwaerts | 55/60 (92%) | 28/33 (85%) | 17/22 (77%) |
 | BNS (BNS) | abwaerts | 106/106 (100%) | 59/59 (100%) | 37/37 (100%) |
 | BNS (BNS) | aufwaerts | 116/125 (93%) | 67/76 (88%) | 40/49 (82%) |
 | BNY (BNY) | abwaerts | 72/72 (100%) | 32/32 (100%) | 17/17 (100%) |
@@ -692,8 +598,6 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | CAT (CAT) | aufwaerts | 132/155 (85%) | 65/88 (74%) | 40/63 (63%) |
 | CB (CB) | abwaerts | 42/42 (100%) | 14/14 (100%) | 3/3 (100%) |
 | CB (CB) | aufwaerts | 56/69 (81%) | 25/38 (66%) | 15/28 (54%) |
-| CBK.DE (CBK.DE) | abwaerts | 56/62 (90%) | 34/40 (85%) | 22/27 (81%) |
-| CBK.DE (CBK.DE) | aufwaerts | 77/81 (95%) | 37/41 (90%) | 18/22 (82%) |
 | Kakao (CC=F) | abwaerts | 127/132 (96%) | 65/70 (93%) | 43/46 (93%) |
 | Kakao (CC=F) | aufwaerts | 129/141 (91%) | 54/66 (82%) | 29/41 (71%) |
 | CCEP (CCEP) | abwaerts | 66/66 (100%) | 30/30 (100%) | 15/15 (100%) |
@@ -718,8 +622,6 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | CNQ (CNQ) | aufwaerts | 115/133 (86%) | 50/68 (74%) | 25/43 (58%) |
 | COF (COF) | abwaerts | 70/72 (97%) | 37/39 (95%) | 15/17 (88%) |
 | COF (COF) | aufwaerts | 93/100 (93%) | 49/56 (88%) | 31/38 (82%) |
-| CON.DE (CON.DE) | abwaerts | 64/70 (91%) | 30/36 (83%) | 16/22 (73%) |
-| CON.DE (CON.DE) | aufwaerts | 88/95 (93%) | 40/47 (85%) | 23/30 (77%) |
 | COP (COP) | abwaerts | 87/87 (100%) | 43/43 (100%) | 20/20 (100%) |
 | COP (COP) | aufwaerts | 102/117 (87%) | 52/67 (78%) | 24/39 (62%) |
 | COST (COST) | abwaerts | 59/59 (100%) | 28/28 (100%) | 11/11 (100%) |
@@ -746,26 +648,16 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | CVX (CVX) | aufwaerts | 101/110 (92%) | 54/63 (86%) | 38/47 (81%) |
 | DASH (DASH) | abwaerts | 15/16 (94%) | 5/6 (83%) | 2/2 (100%) |
 | DASH (DASH) | aufwaerts | 17/22 (77%) | 11/16 (69%) | 6/11 (55%) |
-| DB1.DE (DB1.DE) | abwaerts | 45/45 (100%) | 25/25 (100%) | 13/13 (100%) |
-| DB1.DE (DB1.DE) | aufwaerts | 68/78 (87%) | 28/38 (74%) | 9/18 (50%) |
-| DBK.DE (DBK.DE) | abwaerts | 83/89 (93%) | 40/46 (87%) | 23/29 (79%) |
-| DBK.DE (DBK.DE) | aufwaerts | 99/108 (92%) | 47/56 (84%) | 22/31 (71%) |
 | DDOG (DDOG) | abwaerts | 22/22 (100%) | 11/11 (100%) | 7/7 (100%) |
 | DDOG (DDOG) | aufwaerts | 25/31 (81%) | 10/16 (62%) | 4/10 (40%) |
 | DE (DE) | abwaerts | 69/69 (100%) | 31/31 (100%) | 14/14 (100%) |
 | DE (DE) | aufwaerts | 88/103 (85%) | 51/66 (77%) | 22/37 (59%) |
 | DELL (DELL) | abwaerts | 41/41 (100%) | 17/17 (100%) | 11/11 (100%) |
 | DELL (DELL) | aufwaerts | 54/66 (82%) | 28/40 (70%) | 17/29 (59%) |
-| DHL.DE (DHL.DE) | abwaerts | 82/82 (100%) | 49/49 (100%) | 24/24 (100%) |
-| DHL.DE (DHL.DE) | aufwaerts | 79/90 (88%) | 36/47 (77%) | 25/36 (69%) |
 | DHR (DHR) | abwaerts | 58/60 (97%) | 25/27 (93%) | 7/9 (78%) |
 | DHR (DHR) | aufwaerts | 74/102 (73%) | 39/67 (58%) | 17/45 (38%) |
 | DIS (DIS) | abwaerts | 66/70 (94%) | 30/34 (88%) | 17/21 (81%) |
 | DIS (DIS) | aufwaerts | 94/113 (83%) | 44/63 (70%) | 27/46 (59%) |
-| DTE.DE (DTE.DE) | abwaerts | 65/69 (94%) | 37/41 (90%) | 14/17 (82%) |
-| DTE.DE (DTE.DE) | aufwaerts | 70/76 (92%) | 37/43 (86%) | 21/27 (78%) |
-| DTG.DE (DTG.DE) | abwaerts | 21/23 (91%) | 11/13 (85%) | 4/5 (80%) |
-| DTG.DE (DTG.DE) | aufwaerts | 24/25 (96%) | 12/13 (92%) | 8/9 (89%) |
 | DUK (DUK) | abwaerts | 38/38 (100%) | 16/16 (100%) | 10/10 (100%) |
 | DUK (DUK) | aufwaerts | 32/34 (94%) | 20/22 (91%) | 11/13 (85%) |
 | DXCM (DXCM) | abwaerts | 34/35 (97%) | 21/22 (95%) | 7/8 (88%) |
@@ -774,10 +666,6 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | EMR (EMR) | aufwaerts | 84/95 (88%) | 45/56 (80%) | 24/35 (69%) |
 | ENB (ENB) | abwaerts | 73/74 (99%) | 33/34 (97%) | 19/19 (100%) |
 | ENB (ENB) | aufwaerts | 78/86 (91%) | 40/48 (83%) | 20/28 (71%) |
-| ENR.DE (ENR.DE) | abwaerts | 17/17 (100%) | 12/12 (100%) | 4/4 (100%) |
-| ENR.DE (ENR.DE) | aufwaerts | 20/30 (67%) | 9/19 (47%) | 4/14 (29%) |
-| EOAN.DE (EOAN.DE) | abwaerts | 49/53 (92%) | 26/30 (87%) | 15/19 (79%) |
-| EOAN.DE (EOAN.DE) | aufwaerts | 43/46 (93%) | 21/24 (88%) | 9/12 (75%) |
 | EQIX (EQIX) | abwaerts | 43/43 (100%) | 19/19 (100%) | 9/9 (100%) |
 | EQIX (EQIX) | aufwaerts | 44/57 (77%) | 15/28 (54%) | 8/21 (38%) |
 | EQNR (EQNR) | abwaerts | 107/107 (100%) | 60/60 (100%) | 37/37 (100%) |
@@ -792,8 +680,6 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | FAST (FAST) | aufwaerts | 62/71 (87%) | 35/44 (80%) | 15/24 (62%) |
 | FDX (FDX) | abwaerts | 89/89 (100%) | 45/45 (100%) | 22/22 (100%) |
 | FDX (FDX) | aufwaerts | 91/102 (89%) | 40/51 (78%) | 22/33 (67%) |
-| FRE.DE (FRE.DE) | abwaerts | 57/59 (97%) | 28/30 (93%) | 11/13 (85%) |
-| FRE.DE (FRE.DE) | aufwaerts | 49/54 (91%) | 31/36 (86%) | 14/19 (74%) |
 | FTNT (FTNT) | abwaerts | 39/40 (98%) | 22/23 (96%) | 11/11 (100%) |
 | FTNT (FTNT) | aufwaerts | 52/61 (85%) | 29/38 (76%) | 15/24 (62%) |
 | Gold (GC=F) | abwaerts | 80/80 (100%) | 45/45 (100%) | 29/29 (100%) |
@@ -824,14 +710,8 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | HD (HD) | aufwaerts | 92/111 (83%) | 47/66 (71%) | 23/41 (56%) |
 | HDB (HDB) | abwaerts | 50/51 (98%) | 21/22 (95%) | 11/12 (92%) |
 | HDB (HDB) | aufwaerts | 53/65 (82%) | 23/35 (66%) | 12/24 (50%) |
-| HEI.DE (HEI.DE) | abwaerts | 62/63 (98%) | 34/35 (97%) | 17/18 (94%) |
-| HEI.DE (HEI.DE) | aufwaerts | 83/87 (95%) | 43/47 (91%) | 27/31 (87%) |
-| HEN3.DE (HEN3.DE) | abwaerts | 58/63 (92%) | 31/36 (86%) | 13/18 (72%) |
-| HEN3.DE (HEN3.DE) | aufwaerts | 52/60 (87%) | 30/38 (79%) | 16/22 (73%) |
 | Kupfer (HG=F) | abwaerts | 180/180 (100%) | 82/82 (100%) | 52/52 (100%) |
 | Kupfer (HG=F) | aufwaerts | 201/225 (89%) | 103/127 (81%) | 53/77 (69%) |
-| HNR1.DE (HNR1.DE) | abwaerts | 60/60 (100%) | 31/31 (100%) | 13/13 (100%) |
-| HNR1.DE (HNR1.DE) | aufwaerts | 56/68 (82%) | 30/42 (71%) | 13/24 (54%) |
 | HON (HON) | abwaerts | 63/63 (100%) | 32/32 (100%) | 15/15 (100%) |
 | HON (HON) | aufwaerts | 89/108 (82%) | 42/61 (69%) | 17/36 (47%) |
 | HONA (HONA) | abwaerts | 1/2 (50%) | 0/1 (0%) | 0/1 (0%) |
@@ -844,8 +724,6 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | IBN (IBN) | aufwaerts | 66/86 (77%) | 24/44 (55%) | 14/34 (41%) |
 | IDXX (IDXX) | abwaerts | 46/47 (98%) | 22/23 (96%) | 10/11 (91%) |
 | IDXX (IDXX) | aufwaerts | 41/50 (82%) | 22/31 (71%) | 15/23 (65%) |
-| IFX.DE (IFX.DE) | abwaerts | 82/82 (100%) | 39/39 (100%) | 17/17 (100%) |
-| IFX.DE (IFX.DE) | aufwaerts | 99/116 (85%) | 46/63 (73%) | 23/40 (58%) |
 | ILMN (ILMN) | abwaerts | 57/60 (95%) | 33/36 (92%) | 21/24 (88%) |
 | ILMN (ILMN) | aufwaerts | 69/74 (93%) | 36/41 (88%) | 23/28 (82%) |
 | ING (ING) | abwaerts | 79/80 (99%) | 47/48 (98%) | 25/25 (100%) |
@@ -884,8 +762,6 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | MA (MA) | aufwaerts | 71/96 (74%) | 36/61 (59%) | 16/41 (39%) |
 | MAR (MAR) | abwaerts | 69/69 (100%) | 33/33 (100%) | 14/14 (100%) |
 | MAR (MAR) | aufwaerts | 78/93 (84%) | 42/57 (74%) | 22/36 (61%) |
-| MBG.DE (MBG.DE) | abwaerts | 90/97 (93%) | 46/53 (87%) | 22/29 (76%) |
-| MBG.DE (MBG.DE) | aufwaerts | 81/86 (94%) | 41/46 (89%) | 26/31 (84%) |
 | MCD (MCD) | abwaerts | 56/59 (95%) | 33/36 (92%) | 14/17 (82%) |
 | MCD (MCD) | aufwaerts | 57/68 (84%) | 34/45 (76%) | 21/31 (68%) |
 | MCHP (MCHP) | abwaerts | 71/72 (99%) | 37/38 (97%) | 16/17 (94%) |
@@ -914,8 +790,6 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | MPC (MPC) | aufwaerts | 44/57 (77%) | 22/35 (63%) | 14/27 (52%) |
 | MRK (MRK) | abwaerts | 47/47 (100%) | 25/25 (100%) | 13/13 (100%) |
 | MRK (MRK) | aufwaerts | 67/79 (85%) | 34/46 (74%) | 17/29 (59%) |
-| MRK.DE (MRK.DE) | abwaerts | 45/46 (98%) | 30/31 (97%) | 17/18 (94%) |
-| MRK.DE (MRK.DE) | aufwaerts | 49/57 (86%) | 28/36 (78%) | 12/20 (60%) |
 | MRNA (MRNA) | abwaerts | 24/27 (89%) | 15/18 (83%) | 10/13 (77%) |
 | MRNA (MRNA) | aufwaerts | 26/31 (84%) | 13/18 (72%) | 9/13 (69%) |
 | MRVL (MRVL) | abwaerts | 67/67 (100%) | 32/32 (100%) | 19/19 (100%) |
@@ -926,14 +800,10 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | MSFT (MSFT) | aufwaerts | 85/115 (74%) | 38/68 (56%) | 19/49 (39%) |
 | MSTR (MSTR) | abwaerts | 54/58 (93%) | 30/34 (88%) | 20/23 (87%) |
 | MSTR (MSTR) | aufwaerts | 71/78 (91%) | 42/49 (86%) | 20/27 (74%) |
-| MTX.DE (MTX.DE) | abwaerts | 51/51 (100%) | 24/24 (100%) | 14/14 (100%) |
-| MTX.DE (MTX.DE) | aufwaerts | 54/63 (86%) | 23/32 (72%) | 15/24 (62%) |
 | MU (MU) | abwaerts | 79/81 (98%) | 35/37 (95%) | 17/18 (94%) |
 | MU (MU) | aufwaerts | 131/157 (83%) | 55/81 (68%) | 30/56 (54%) |
 | MUFG (MUFG) | abwaerts | 160/161 (99%) | 90/91 (99%) | 48/48 (100%) |
 | MUFG (MUFG) | aufwaerts | 194/223 (87%) | 86/115 (75%) | 45/74 (61%) |
-| MUV2.DE (MUV2.DE) | abwaerts | 58/58 (100%) | 33/33 (100%) | 16/16 (100%) |
-| MUV2.DE (MUV2.DE) | aufwaerts | 76/87 (87%) | 38/49 (78%) | 16/26 (62%) |
 | NEE (NEE) | abwaerts | 48/49 (98%) | 18/19 (95%) | 6/7 (86%) |
 | NEE (NEE) | aufwaerts | 45/56 (80%) | 25/36 (69%) | 5/16 (31%) |
 | NEM (NEM) | abwaerts | 115/115 (100%) | 67/67 (100%) | 35/35 (100%) |
@@ -964,12 +834,8 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | ORCL (ORCL) | aufwaerts | 89/100 (89%) | 52/63 (83%) | 28/39 (72%) |
 | ORLY (ORLY) | abwaerts | 42/43 (98%) | 17/18 (94%) | 4/5 (80%) |
 | ORLY (ORLY) | aufwaerts | 38/62 (61%) | 14/38 (37%) | 7/31 (23%) |
-| P911.DE (P911.DE) | abwaerts | 14/18 (78%) | 6/10 (60%) | 2/6 (33%) |
-| P911.DE (P911.DE) | aufwaerts | 6/6 (100%) | 2/2 (100%) | 1/1 (100%) |
 | Palladium (PA=F) | abwaerts | 320/334 (96%) | 149/163 (91%) | 92/103 (89%) |
 | Palladium (PA=F) | aufwaerts | 332/371 (89%) | 143/182 (79%) | 89/128 (70%) |
-| PAH3.DE (PAH3.DE) | abwaerts | 62/69 (90%) | 31/38 (82%) | 14/20 (70%) |
-| PAH3.DE (PAH3.DE) | aufwaerts | 75/75 (100%) | 39/39 (100%) | 22/22 (100%) |
 | PANW (PANW) | abwaerts | 52/52 (100%) | 23/23 (100%) | 12/12 (100%) |
 | PANW (PANW) | aufwaerts | 52/75 (69%) | 25/48 (52%) | 7/30 (23%) |
 | PAYX (PAYX) | abwaerts | 72/75 (96%) | 41/44 (93%) | 15/18 (83%) |
@@ -1004,12 +870,8 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | PYPL (PYPL) | aufwaerts | 60/65 (92%) | 32/37 (86%) | 21/26 (81%) |
 | QCOM (QCOM) | abwaerts | 73/73 (100%) | 40/40 (100%) | 25/25 (100%) |
 | QCOM (QCOM) | aufwaerts | 94/106 (89%) | 46/58 (79%) | 21/33 (64%) |
-| QIA.DE (QIA.DE) | abwaerts | 63/64 (98%) | 41/42 (98%) | 17/18 (94%) |
-| QIA.DE (QIA.DE) | aufwaerts | 67/73 (92%) | 37/43 (86%) | 14/19 (74%) |
 | REGN (REGN) | abwaerts | 39/40 (98%) | 16/17 (94%) | 8/9 (89%) |
 | REGN (REGN) | aufwaerts | 36/45 (80%) | 20/29 (69%) | 11/20 (55%) |
-| RHM.DE (RHM.DE) | abwaerts | 46/48 (96%) | 22/24 (92%) | 11/12 (92%) |
-| RHM.DE (RHM.DE) | aufwaerts | 79/97 (81%) | 44/62 (71%) | 26/44 (59%) |
 | RIO (RIO) | abwaerts | 99/100 (99%) | 44/45 (98%) | 21/22 (95%) |
 | RIO (RIO) | aufwaerts | 121/127 (95%) | 66/72 (92%) | 33/39 (85%) |
 | ROP (ROP) | abwaerts | 39/40 (98%) | 16/17 (94%) | 5/6 (83%) |
@@ -1018,14 +880,10 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | ROST (ROST) | aufwaerts | 53/73 (73%) | 30/50 (60%) | 15/35 (43%) |
 | RTX (RTX) | abwaerts | 55/55 (100%) | 26/26 (100%) | 17/17 (100%) |
 | RTX (RTX) | aufwaerts | 93/106 (88%) | 52/65 (80%) | 26/39 (67%) |
-| RWE.DE (RWE.DE) | abwaerts | 54/55 (98%) | 33/34 (97%) | 20/21 (95%) |
-| RWE.DE (RWE.DE) | aufwaerts | 39/46 (85%) | 20/27 (74%) | 9/16 (56%) |
 | RY (RY) | abwaerts | 95/95 (100%) | 43/43 (100%) | 18/18 (100%) |
 | RY (RY) | aufwaerts | 119/140 (85%) | 57/78 (73%) | 29/50 (58%) |
 | SAN (SAN) | abwaerts | 66/67 (99%) | 39/40 (98%) | 25/25 (100%) |
 | SAN (SAN) | aufwaerts | 54/60 (90%) | 22/28 (79%) | 10/16 (62%) |
-| SAP.DE (SAP.DE) | abwaerts | 74/76 (97%) | 34/36 (94%) | 16/18 (89%) |
-| SAP.DE (SAP.DE) | aufwaerts | 93/104 (89%) | 50/61 (82%) | 33/43 (77%) |
 | Zucker (SB=F) | abwaerts | 19/20 (95%) | 7/8 (88%) | 4/4 (100%) |
 | Zucker (SB=F) | aufwaerts | 22/24 (92%) | 11/13 (85%) | 8/10 (80%) |
 | SBUX (SBUX) | abwaerts | 62/64 (97%) | 32/34 (94%) | 20/22 (91%) |
@@ -1036,16 +894,12 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | SCHW (SCHW) | aufwaerts | 89/99 (90%) | 45/55 (82%) | 25/35 (71%) |
 | SHEL (SHEL) | abwaerts | 80/80 (100%) | 42/42 (100%) | 22/22 (100%) |
 | SHEL (SHEL) | aufwaerts | 83/89 (93%) | 42/48 (88%) | 27/32 (84%) |
-| SHL.DE (SHL.DE) | abwaerts | 38/42 (90%) | 16/20 (80%) | 5/9 (56%) |
-| SHL.DE (SHL.DE) | aufwaerts | 26/28 (93%) | 12/14 (86%) | 7/8 (88%) |
 | SHOP (SHOP) | abwaerts | 35/35 (100%) | 16/16 (100%) | 9/9 (100%) |
 | SHOP (SHOP) | aufwaerts | 46/54 (85%) | 23/31 (74%) | 18/26 (69%) |
 | SHW (SHW) | abwaerts | 52/52 (100%) | 28/28 (100%) | 8/8 (100%) |
 | SHW (SHW) | aufwaerts | 46/61 (75%) | 26/41 (63%) | 11/26 (42%) |
 | Silber (SI=F) | abwaerts | 300/310 (97%) | 150/160 (94%) | 72/76 (95%) |
 | Silber (SI=F) | aufwaerts | 342/368 (93%) | 177/203 (87%) | 93/119 (78%) |
-| SIE.DE (SIE.DE) | abwaerts | 79/79 (100%) | 37/37 (100%) | 18/18 (100%) |
-| SIE.DE (SIE.DE) | aufwaerts | 102/114 (89%) | 52/64 (81%) | 33/45 (73%) |
 | SKHY (SKHY) | abwaerts | 95/99 (96%) | 51/55 (93%) | 28/30 (93%) |
 | SKHY (SKHY) | aufwaerts | 114/146 (78%) | 58/90 (64%) | 26/58 (45%) |
 | SMFG (SMFG) | abwaerts | 166/167 (99%) | 87/88 (99%) | 48/48 (100%) |
@@ -1070,12 +924,8 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | SPGI (SPGI) | aufwaerts | 71/92 (77%) | 32/53 (60%) | 22/41 (54%) |
 | SPOT (SPOT) | abwaerts | 29/29 (100%) | 15/15 (100%) | 7/7 (100%) |
 | SPOT (SPOT) | aufwaerts | 28/37 (76%) | 15/24 (62%) | 8/16 (50%) |
-| SRT3.DE (SRT3.DE) | abwaerts | 49/50 (98%) | 19/20 (95%) | 9/10 (90%) |
-| SRT3.DE (SRT3.DE) | aufwaerts | 43/55 (78%) | 18/30 (60%) | 7/19 (37%) |
 | STX (STX) | abwaerts | 74/76 (97%) | 45/47 (96%) | 26/27 (96%) |
 | STX (STX) | aufwaerts | 89/107 (83%) | 49/67 (73%) | 23/41 (56%) |
-| SY1.DE (SY1.DE) | abwaerts | 45/45 (100%) | 22/22 (100%) | 9/9 (100%) |
-| SY1.DE (SY1.DE) | aufwaerts | 49/59 (83%) | 19/29 (66%) | 10/20 (50%) |
 | SYK (SYK) | abwaerts | 60/62 (97%) | 24/26 (92%) | 9/11 (82%) |
 | SYK (SYK) | aufwaerts | 69/83 (83%) | 36/50 (72%) | 17/31 (55%) |
 | T (T) | abwaerts | 76/79 (96%) | 37/40 (92%) | 21/23 (91%) |
@@ -1124,10 +974,6 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | V (V) | aufwaerts | 79/108 (73%) | 37/66 (56%) | 18/47 (38%) |
 | VLO (VLO) | abwaerts | 49/49 (100%) | 27/27 (100%) | 12/12 (100%) |
 | VLO (VLO) | aufwaerts | 64/76 (84%) | 38/50 (76%) | 19/31 (61%) |
-| VNA.DE (VNA.DE) | abwaerts | 30/35 (86%) | 10/15 (67%) | 1/5 (20%) |
-| VNA.DE (VNA.DE) | aufwaerts | 50/51 (98%) | 25/26 (96%) | 15/16 (94%) |
-| VOW3.DE (VOW3.DE) | abwaerts | 73/78 (94%) | 40/45 (89%) | 13/18 (72%) |
-| VOW3.DE (VOW3.DE) | aufwaerts | 88/89 (99%) | 47/48 (98%) | 25/26 (96%) |
 | VRSK (VRSK) | abwaerts | 32/34 (94%) | 18/20 (90%) | 5/7 (71%) |
 | VRSK (VRSK) | aufwaerts | 39/48 (81%) | 20/29 (69%) | 13/21 (62%) |
 | VRTX (VRTX) | abwaerts | 41/41 (100%) | 22/22 (100%) | 10/10 (100%) |
@@ -1148,8 +994,6 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | XEL (XEL) | aufwaerts | 21/28 (75%) | 9/16 (56%) | 3/9 (33%) |
 | XOM (XOM) | abwaerts | 86/86 (100%) | 45/45 (100%) | 29/29 (100%) |
 | XOM (XOM) | aufwaerts | 84/100 (84%) | 41/57 (72%) | 16/32 (50%) |
-| ZAL.DE (ZAL.DE) | abwaerts | 36/39 (92%) | 21/24 (88%) | 10/13 (77%) |
-| ZAL.DE (ZAL.DE) | aufwaerts | 58/59 (98%) | 35/36 (97%) | 19/20 (95%) |
 | Mais (ZC=F) | abwaerts | 29/31 (94%) | 17/19 (89%) | 10/12 (83%) |
 | Mais (ZC=F) | aufwaerts | 57/58 (98%) | 34/35 (97%) | 20/21 (95%) |
 | ZS (ZS) | abwaerts | 26/28 (93%) | 14/16 (88%) | 6/8 (75%) |
@@ -1182,19 +1026,12 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | ADP (ADP) | 2026-07-01 | aufwaerts | 225.87 | 0.483 | 1.355 | 103 |
 | ADP (ADP) | 2026-10-15 | aufwaerts | 280.59 | 1.055 | 2.106 | 29 |
 | ADP (ADP) | 2026-10-30 | aufwaerts | 289.89 | 0.461 | 1.142 | 18 |
-| ADS.DE (ADS.DE) | 2026-10-29 | aufwaerts | 158.8 | 0.955 | 2.361 | 20 |
-| ADS.DE (ADS.DE) | 2026-11-17 | abwaerts | 177.0 | 0.236 | 0.593 | 7 |
-| ADS.DE (ADS.DE) | 2026-11-26 | aufwaerts | 171.0 | 0.308 | 0.819 | 0 |
 | ADSK (ADSK) | 2026-01-08 | abwaerts | 293.04 | 0.297 | 0.696 | 222 |
 | ADSK (ADSK) | 2026-07-01 | aufwaerts | 195.0 | 0.582 | 2.564 | 103 |
 | ADSK (ADSK) | 2026-10-05 | aufwaerts | 214.33 | 0.581 | 2.286 | 37 |
 | ADSK (ADSK) | 2026-10-15 | aufwaerts | 232.39 | 0.22 | 0.77 | 29 |
 | ADSK (ADSK) | 2026-11-17 | abwaerts | 263.88 | 0.217 | 0.712 | 6 |
 | ADSK (ADSK) | 2026-11-25 | abwaerts | 253.64 | 0.891 | 3.544 | 0 |
-| AIR.DE (AIR.DE) | 2026-06-12 | aufwaerts | 176.94 | 0.642 | 2.046 | 119 |
-| AIR.DE (AIR.DE) | 2026-11-20 | abwaerts | 197.9 | 0.576 | 1.577 | 4 |
-| ALV.DE (ALV.DE) | 2026-04-01 | aufwaerts | 361.2 | 0.439 | 0.941 | 168 |
-| ALV.DE (ALV.DE) | 2026-06-15 | aufwaerts | 388.3 | 0.404 | 0.695 | 118 |
 | AMAT (AMAT) | 2026-01-02 | aufwaerts | 261.83 | 0.669 | 2.005 | 226 |
 | AMAT (AMAT) | 2026-01-05 | aufwaerts | 271.23 | 0.566 | 1.803 | 225 |
 | AMAT (AMAT) | 2026-07-01 | abwaerts | 696.0 | 0.621 | 3.964 | 103 |
@@ -1250,17 +1087,11 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | BABA (BABA) | 2026-11-12 | abwaerts | 100.1 | 0.41 | 1.698 | 10 |
 | BABA (BABA) | 2026-11-17 | abwaerts | 89.8 | 0.629 | 2.895 | 7 |
 | BAC (BAC) | 2026-10-14 | abwaerts | 53.64 | 2.853 | 7.103 | 30 |
-| BAS.DE (BAS.DE) | 2026-11-17 | abwaerts | 53.74 | 0.217 | 0.447 | 7 |
-| BAYN.DE (BAYN.DE) | 2025-12-02 | aufwaerts | 30.655 | 2.775 | 10.912 | 249 |
-| BAYN.DE (BAYN.DE) | 2026-10-26 | aufwaerts | 44.28 | 0.25 | 0.723 | 23 |
-| BAYN.DE (BAYN.DE) | 2026-10-30 | aufwaerts | 47.96 | 1.609 | 4.796 | 19 |
 | BBVA (BBVA) | 2026-05-06 | aufwaerts | 18.26 | 0.375 | 1.232 | 146 |
 | BBVA (BBVA) | 2026-06-12 | aufwaerts | 19.515 | 0.681 | 1.717 | 119 |
 | BBVA (BBVA) | 2026-06-15 | aufwaerts | 20.24 | 0.632 | 1.581 | 118 |
 | BBVA (BBVA) | 2026-10-01 | abwaerts | 24.81 | 0.427 | 0.887 | 40 |
 | BBVA (BBVA) | 2026-10-07 | abwaerts | 24.22 | 0.432 | 1.032 | 36 |
-| BEI.DE (BEI.DE) | 2026-03-03 | abwaerts | 103.55 | 2.292 | 8.45 | 189 |
-| BEI.DE (BEI.DE) | 2026-10-09 | aufwaerts | 77.92 | 0.652 | 1.335 | 34 |
 | BHP (BHP) | 2025-12-01 | aufwaerts | 41.76 | 0.315 | 0.551 | 251 |
 | BHP (BHP) | 2025-12-02 | aufwaerts | 42.3 | 0.815 | 1.418 | 250 |
 | BHP (BHP) | 2025-12-04 | aufwaerts | 43.04 | 1.034 | 1.882 | 248 |
@@ -1277,19 +1108,11 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | BIIB (BIIB) | 2026-04-20 | aufwaerts | 178.41 | 0.203 | 0.633 | 153 |
 | BMO (BMO) | 2026-04-08 | aufwaerts | 138.29 | 1.425 | 3.16 | 161 |
 | BMO (BMO) | 2026-04-14 | aufwaerts | 146.22 | 0.23 | 0.465 | 157 |
-| BMW.DE (BMW.DE) | 2026-03-02 | abwaerts | 88.18 | 0.892 | 2.2 | 190 |
-| BMW.DE (BMW.DE) | 2026-05-14 | abwaerts | 79.54 | 1.04 | 2.942 | 140 |
-| BMW.DE (BMW.DE) | 2026-06-03 | abwaerts | 72.56 | 0.232 | 0.634 | 126 |
-| BMW.DE (BMW.DE) | 2026-06-16 | abwaerts | 68.34 | 0.175 | 0.498 | 117 |
-| BMW.DE (BMW.DE) | 2026-06-17 | abwaerts | 66.84 | 2.425 | 8.558 | 116 |
 | BMY (BMY) | 2025-12-03 | aufwaerts | 49.18 | 0.584 | 1.545 | 246 |
 | BMY (BMY) | 2025-12-12 | aufwaerts | 51.48 | 0.604 | 1.535 | 239 |
 | BMY (BMY) | 2026-06-23 | aufwaerts | 54.73 | 0.493 | 1.206 | 109 |
 | BMY (BMY) | 2026-09-08 | abwaerts | 66.58 | 0.584 | 1.382 | 56 |
 | BMY (BMY) | 2026-11-17 | abwaerts | 62.82 | 0.378 | 1.098 | 6 |
-| BNR.DE (BNR.DE) | 2026-03-10 | aufwaerts | 44.83 | 0.447 | 1.718 | 184 |
-| BNR.DE (BNR.DE) | 2026-11-06 | abwaerts | 63.62 | 0.487 | 0.975 | 14 |
-| BNR.DE (BNR.DE) | 2026-11-11 | abwaerts | 60.98 | 0.9 | 2.033 | 11 |
 | BNS (BNS) | 2026-04-08 | aufwaerts | 70.0 | 0.922 | 1.786 | 161 |
 | BNY (BNY) | 2026-04-08 | aufwaerts | 125.25 | 0.347 | 0.814 | 161 |
 | BP (BP) | 2026-01-09 | aufwaerts | 4.184 | 0.352 | 0.777 | 224 |
@@ -1306,11 +1129,6 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | CAT (CAT) | 2026-10-29 | abwaerts | 707.63 | 2.351 | 10.076 | 19 |
 | CAT (CAT) | 2026-11-04 | abwaerts | 617.01 | 0.255 | 1.225 | 15 |
 | CB (CB) | 2026-11-25 | aufwaerts | 375.92 | 0.19 | 0.343 | 0 |
-| CBK.DE (CBK.DE) | 2026-04-08 | aufwaerts | 32.07 | 1.192 | 5.737 | 165 |
-| CBK.DE (CBK.DE) | 2026-09-30 | abwaerts | 41.99 | 0.265 | 0.619 | 41 |
-| CBK.DE (CBK.DE) | 2026-11-17 | abwaerts | 39.52 | 0.182 | 0.481 | 7 |
-| CBK.DE (CBK.DE) | 2026-11-20 | abwaerts | 37.27 | 0.466 | 1.368 | 4 |
-| CBK.DE (CBK.DE) | 2026-11-25 | abwaerts | 35.55 | 0.114 | 0.366 | 1 |
 | Kakao (CC=F) | 2026-03-11 | aufwaerts | 2967.0 | 1.905 | 13.246 | 155 |
 | Kakao (CC=F) | 2026-05-08 | aufwaerts | 3281.0 | 4.295 | 28.772 | 124 |
 | Kakao (CC=F) | 2026-06-15 | aufwaerts | 3853.0 | 0.408 | 2.258 | 100 |
@@ -1337,8 +1155,6 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | CNQ (CNQ) | 2026-11-18 | abwaerts | 47.66 | 0.232 | 0.713 | 5 |
 | COF (COF) | 2026-01-12 | abwaerts | 249.09 | 3.047 | 7.684 | 220 |
 | COF (COF) | 2026-01-23 | abwaerts | 232.31 | 1.136 | 3.668 | 212 |
-| CON.DE (CON.DE) | 2026-04-01 | aufwaerts | 60.16 | 0.714 | 2.56 | 168 |
-| CON.DE (CON.DE) | 2026-05-06 | aufwaerts | 62.48 | 0.463 | 1.761 | 146 |
 | COP (COP) | 2025-12-30 | aufwaerts | 92.73 | 0.285 | 0.669 | 228 |
 | COP (COP) | 2026-01-23 | aufwaerts | 97.01 | 0.487 | 1.412 | 212 |
 | COP (COP) | 2026-07-13 | aufwaerts | 109.42 | 0.526 | 1.417 | 96 |
@@ -1388,8 +1204,6 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | CVX (CVX) | 2026-11-04 | abwaerts | 224.46 | 0.369 | 0.846 | 15 |
 | CVX (CVX) | 2026-11-18 | abwaerts | 215.27 | 0.508 | 1.24 | 5 |
 | DASH (DASH) | 2026-09-08 | abwaerts | 211.18 | 0.268 | 1.061 | 56 |
-| DB1.DE (DB1.DE) | 2026-10-06 | aufwaerts | 290.3 | 0.217 | 0.379 | 37 |
-| DBK.DE (DBK.DE) | 2026-11-17 | abwaerts | 32.905 | 1.728 | 5.394 | 7 |
 | DDOG (DDOG) | 2026-04-16 | aufwaerts | 121.18 | 1.0 | 5.95 | 155 |
 | DDOG (DDOG) | 2026-05-07 | aufwaerts | 145.69 | 4.13 | 29.034 | 140 |
 | DDOG (DDOG) | 2026-10-29 | abwaerts | 275.49 | 0.417 | 2.156 | 19 |
@@ -1404,19 +1218,9 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | DELL (DELL) | 2026-10-30 | abwaerts | 472.17 | 1.656 | 11.254 | 18 |
 | DELL (DELL) | 2026-11-04 | abwaerts | 396.52 | 0.365 | 2.983 | 15 |
 | DELL (DELL) | 2026-11-24 | abwaerts | 322.31 | 0.294 | 3.509 | 1 |
-| DHL.DE (DHL.DE) | 2026-05-22 | aufwaerts | 48.51 | 0.88 | 2.453 | 134 |
-| DHL.DE (DHL.DE) | 2026-11-20 | abwaerts | 58.96 | 0.349 | 0.712 | 4 |
 | DHR (DHR) | 2026-07-23 | aufwaerts | 180.12 | 0.657 | 2.776 | 88 |
 | DIS (DIS) | 2026-08-03 | aufwaerts | 96.59 | 0.443 | 1.066 | 81 |
 | DIS (DIS) | 2026-08-05 | aufwaerts | 98.57 | 1.4 | 3.47 | 79 |
-| DTE.DE (DTE.DE) | 2026-04-02 | abwaerts | 31.77 | 1.063 | 2.896 | 167 |
-| DTE.DE (DTE.DE) | 2026-04-13 | abwaerts | 30.99 | 0.388 | 1.129 | 162 |
-| DTE.DE (DTE.DE) | 2026-09-18 | abwaerts | 28.28 | 0.911 | 2.051 | 49 |
-| DTE.DE (DTE.DE) | 2026-10-29 | aufwaerts | 25.31 | 0.204 | 0.514 | 20 |
-| DTG.DE (DTG.DE) | 2025-12-04 | aufwaerts | 35.51 | 0.163 | 0.451 | 247 |
-| DTG.DE (DTG.DE) | 2026-08-07 | abwaerts | 47.91 | 1.131 | 2.943 | 79 |
-| DTG.DE (DTG.DE) | 2026-09-09 | abwaerts | 44.84 | 0.334 | 0.736 | 56 |
-| DTG.DE (DTG.DE) | 2026-11-26 | aufwaerts | 41.48 | 0.216 | 0.579 | 0 |
 | DUK (DUK) | 2026-10-30 | aufwaerts | 126.07 | 0.741 | 1.134 | 18 |
 | DXCM (DXCM) | 2026-07-31 | aufwaerts | 74.87 | 1.572 | 6.692 | 82 |
 | ENB (ENB) | 2026-09-10 | abwaerts | 49.85 | 1.615 | 3.129 | 54 |
@@ -1436,8 +1240,6 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | FANG (FANG) | 2026-11-04 | abwaerts | 192.23 | 0.281 | 0.957 | 15 |
 | FANG (FANG) | 2026-11-16 | abwaerts | 183.14 | 0.185 | 0.622 | 7 |
 | FDX (FDX) | 2026-02-03 | aufwaerts | 270.4351 | 0.948 | 2.303 | 205 |
-| FRE.DE (FRE.DE) | 2026-06-15 | aufwaerts | 38.08 | 0.156 | 0.394 | 118 |
-| FRE.DE (FRE.DE) | 2026-10-30 | aufwaerts | 47.18 | 0.239 | 0.466 | 19 |
 | FTNT (FTNT) | 2026-05-07 | aufwaerts | 90.11 | 3.57 | 16.813 | 140 |
 | FTNT (FTNT) | 2026-10-14 | abwaerts | 190.3 | 0.578 | 1.86 | 30 |
 | FTNT (FTNT) | 2026-10-29 | abwaerts | 173.02 | 4.518 | 26.043 | 19 |
@@ -1471,15 +1273,6 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | HD (HD) | 2026-10-29 | aufwaerts | 321.6 | 0.368 | 0.83 | 19 |
 | HDB (HDB) | 2026-11-03 | aufwaerts | 700.75 | 0.484 | 1.035 | 15 |
 | HDB (HDB) | 2026-11-05 | aufwaerts | 741.3 | 1.152 | 2.523 | 13 |
-| HEI.DE (HEI.DE) | 2026-02-04 | abwaerts | 233.4 | 0.998 | 3.128 | 208 |
-| HEI.DE (HEI.DE) | 2026-11-04 | aufwaerts | 159.8 | 1.405 | 4.506 | 16 |
-| HEI.DE (HEI.DE) | 2026-11-26 | aufwaerts | 182.8 | 0.24 | 0.656 | 0 |
-| HEN3.DE (HEN3.DE) | 2026-05-06 | aufwaerts | 62.3 | 0.226 | 0.449 | 146 |
-| HEN3.DE (HEN3.DE) | 2026-06-24 | aufwaerts | 70.94 | 0.33 | 0.62 | 111 |
-| HEN3.DE (HEN3.DE) | 2026-10-09 | aufwaerts | 74.14 | 0.235 | 0.405 | 34 |
-| HEN3.DE (HEN3.DE) | 2026-10-13 | aufwaerts | 75.48 | 0.408 | 0.689 | 32 |
-| HEN3.DE (HEN3.DE) | 2026-11-10 | aufwaerts | 83.96 | 0.347 | 0.667 | 12 |
-| HEN3.DE (HEN3.DE) | 2026-11-25 | aufwaerts | 86.94 | 0.314 | 0.575 | 1 |
 | Kupfer (HG=F) | 2026-11-10 | abwaerts | 6.3285 | 0.647 | 1.09 | 11 |
 | Kupfer (HG=F) | 2026-11-12 | abwaerts | 6.2555 | 0.739 | 1.223 | 9 |
 | Kupfer (HG=F) | 2026-11-13 | abwaerts | 6.164 | 0.805 | 1.371 | 8 |
@@ -1487,7 +1280,6 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | Kupfer (HG=F) | 2026-11-18 | abwaerts | 5.973 | 2.442 | 4.705 | 5 |
 | Kupfer (HG=F) | 2026-11-24 | abwaerts | 5.622 | 1.059 | 2.446 | 1 |
 | Kupfer (HG=F) | 2026-11-25 | aufwaerts | 5.3625 | 0.867 | 2.2 | 0 |
-| HNR1.DE (HNR1.DE) | 2026-10-15 | aufwaerts | 269.0 | 0.426 | 0.743 | 30 |
 | HONA (HONA) | 2026-08-06 | abwaerts | 203.64 | 3.142 | 23.885 | 78 |
 | HSBC (HSBC) | 2026-11-17 | abwaerts | 13.47 | 0.426 | 0.95 | 7 |
 | IBM (IBM) | 2026-07-14 | abwaerts | 289.1 | 3.717 | 21.698 | 95 |
@@ -1496,7 +1288,6 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | IDXX (IDXX) | 2025-12-01 | abwaerts | 748.0 | 0.299 | 0.86 | 248 |
 | IDXX (IDXX) | 2026-10-15 | aufwaerts | 529.63 | 0.668 | 1.645 | 29 |
 | IDXX (IDXX) | 2026-11-02 | aufwaerts | 586.0 | 1.705 | 6.655 | 17 |
-| IFX.DE (IFX.DE) | 2026-04-08 | aufwaerts | 39.98 | 0.964 | 5.278 | 165 |
 | ILMN (ILMN) | 2026-10-30 | abwaerts | 283.0 | 1.601 | 9.622 | 18 |
 | ING (ING) | 2026-04-01 | aufwaerts | 22.265 | 0.628 | 1.999 | 168 |
 | ING (ING) | 2026-04-08 | aufwaerts | 23.385 | 0.914 | 3.058 | 165 |
@@ -1572,9 +1363,6 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | MAR (MAR) | 2026-10-15 | aufwaerts | 373.26 | 0.405 | 0.812 | 29 |
 | MAR (MAR) | 2026-10-29 | aufwaerts | 394.76 | 0.63 | 1.302 | 19 |
 | MAR (MAR) | 2026-11-02 | aufwaerts | 404.44 | 2.092 | 5.084 | 17 |
-| MBG.DE (MBG.DE) | 2026-03-02 | abwaerts | 58.31 | 0.89 | 2.247 | 190 |
-| MBG.DE (MBG.DE) | 2026-04-17 | abwaerts | 53.35 | 1.824 | 5.342 | 158 |
-| MBG.DE (MBG.DE) | 2026-11-06 | abwaerts | 42.545 | 0.273 | 0.799 | 14 |
 | MCD (MCD) | 2026-03-03 | abwaerts | 334.41 | 0.757 | 1.292 | 186 |
 | MCD (MCD) | 2026-03-18 | abwaerts | 326.12 | 0.417 | 0.721 | 175 |
 | MCD (MCD) | 2026-04-27 | abwaerts | 299.22 | 0.274 | 0.478 | 148 |
@@ -1615,9 +1403,6 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | MPC (MPC) | 2026-07-08 | aufwaerts | 269.49 | 0.246 | 0.794 | 99 |
 | MPC (MPC) | 2026-07-13 | aufwaerts | 287.15 | 0.408 | 1.278 | 96 |
 | MRK (MRK) | 2026-06-23 | aufwaerts | 115.63 | 0.282 | 0.778 | 109 |
-| MRK.DE (MRK.DE) | 2026-05-06 | aufwaerts | 110.7 | 0.303 | 0.903 | 146 |
-| MRK.DE (MRK.DE) | 2026-05-13 | aufwaerts | 115.0 | 1.36 | 4.348 | 141 |
-| MRK.DE (MRK.DE) | 2026-05-21 | aufwaerts | 122.9 | 0.301 | 0.895 | 135 |
 | MRNA (MRNA) | 2026-02-13 | aufwaerts | 40.91 | 0.291 | 2.298 | 197 |
 | MRNA (MRNA) | 2026-08-19 | aufwaerts | 64.46 | 4.483 | 79.988 | 69 |
 | MRNA (MRNA) | 2026-09-17 | aufwaerts | 148.93 | 0.299 | 2.397 | 49 |
@@ -1636,8 +1421,6 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | MSTR (MSTR) | 2026-11-16 | abwaerts | 108.25 | 0.506 | 4.166 | 7 |
 | MSTR (MSTR) | 2026-11-18 | abwaerts | 96.35 | 0.154 | 1.38 | 5 |
 | MSTR (MSTR) | 2026-11-24 | abwaerts | 83.95 | 0.192 | 2.037 | 1 |
-| MTX.DE (MTX.DE) | 2026-06-12 | aufwaerts | 306.7 | 0.852 | 3.261 | 119 |
-| MTX.DE (MTX.DE) | 2026-11-26 | aufwaerts | 343.4 | 0.365 | 1.165 | 0 |
 | MU (MU) | 2025-12-18 | aufwaerts | 237.45 | 1.239 | 8.035 | 235 |
 | MU (MU) | 2026-01-02 | aufwaerts | 293.17 | 0.132 | 0.669 | 226 |
 | MU (MU) | 2026-04-01 | aufwaerts | 337.84 | 0.396 | 3.277 | 165 |
@@ -1654,8 +1437,6 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | MUFG (MUFG) | 2026-05-18 | aufwaerts | 2951.5 | 0.359 | 0.932 | 130 |
 | MUFG (MUFG) | 2026-10-08 | abwaerts | 3622.0 | 0.34 | 0.856 | 32 |
 | MUFG (MUFG) | 2026-11-16 | abwaerts | 3464.0 | 0.243 | 0.779 | 7 |
-| MUV2.DE (MUV2.DE) | 2026-10-15 | aufwaerts | 533.4 | 0.573 | 0.937 | 30 |
-| MUV2.DE (MUV2.DE) | 2026-10-30 | aufwaerts | 562.0 | 0.137 | 0.214 | 19 |
 | NEE (NEE) | 2026-05-18 | abwaerts | 92.7 | 0.625 | 1.704 | 133 |
 | NEE (NEE) | 2026-10-30 | aufwaerts | 82.84 | 0.254 | 0.471 | 18 |
 | NEM (NEM) | 2026-11-10 | abwaerts | 124.58 | 0.853 | 3.331 | 11 |
@@ -1721,11 +1502,6 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | Palladium (PA=F) | 2026-11-16 | abwaerts | 992.0 | 0.417 | 2.036 | 3 |
 | Palladium (PA=F) | 2026-11-18 | abwaerts | 971.8 | 0.466 | 2.233 | 2 |
 | Palladium (PA=F) | 2026-11-24 | abwaerts | 950.1 | 1.839 | 9.799 | 1 |
-| PAH3.DE (PAH3.DE) | 2026-03-02 | abwaerts | 35.92 | 1.558 | 3.174 | 190 |
-| PAH3.DE (PAH3.DE) | 2026-06-17 | abwaerts | 30.86 | 0.497 | 1.167 | 116 |
-| PAH3.DE (PAH3.DE) | 2026-09-21 | abwaerts | 27.98 | 0.38 | 1.144 | 48 |
-| PAH3.DE (PAH3.DE) | 2026-11-17 | abwaerts | 24.04 | 0.163 | 0.458 | 7 |
-| PAH3.DE (PAH3.DE) | 2026-11-25 | aufwaerts | 22.59 | 0.159 | 0.487 | 1 |
 | PANW (PANW) | 2026-03-30 | aufwaerts | 149.37 | 0.375 | 1.727 | 167 |
 | PANW (PANW) | 2026-05-07 | aufwaerts | 184.98 | 0.785 | 3.13 | 140 |
 | PANW (PANW) | 2026-10-29 | abwaerts | 393.49 | 1.315 | 6.267 | 19 |
@@ -1779,15 +1555,8 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | PYPL (PYPL) | 2026-08-28 | abwaerts | 61.37 | 3.88 | 12.441 | 62 |
 | QCOM (QCOM) | 2026-04-08 | aufwaerts | 125.41 | 0.84 | 2.584 | 161 |
 | QCOM (QCOM) | 2026-04-24 | aufwaerts | 136.99 | 1.959 | 6.292 | 149 |
-| QIA.DE (QIA.DE) | 2026-01-27 | abwaerts | 46.325 | 0.354 | 0.993 | 214 |
-| QIA.DE (QIA.DE) | 2026-06-04 | aufwaerts | 31.005 | 0.349 | 1.0 | 125 |
-| QIA.DE (QIA.DE) | 2026-10-22 | aufwaerts | 43.65 | 1.163 | 3.322 | 25 |
 | REGN (REGN) | 2026-10-30 | aufwaerts | 828.19 | 1.522 | 4.98 | 18 |
 | REGN (REGN) | 2026-11-24 | aufwaerts | 946.36 | 0.116 | 0.385 | 1 |
-| RHM.DE (RHM.DE) | 2026-05-08 | abwaerts | 1326.4 | 0.115 | 0.573 | 144 |
-| RHM.DE (RHM.DE) | 2026-09-01 | abwaerts | 1110.8 | 0.151 | 0.594 | 62 |
-| RHM.DE (RHM.DE) | 2026-11-05 | abwaerts | 970.0 | 1.493 | 7.216 | 15 |
-| RHM.DE (RHM.DE) | 2026-11-26 | aufwaerts | 752.8 | 0.12 | 0.611 | 0 |
 | RIO (RIO) | 2026-06-04 | abwaerts | 80.39 | 0.117 | 0.547 | 124 |
 | RIO (RIO) | 2026-11-17 | abwaerts | 61.5 | 0.731 | 2.033 | 7 |
 | RIO (RIO) | 2026-11-18 | abwaerts | 60.0478 | 0.165 | 0.496 | 6 |
@@ -1799,14 +1568,10 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | ROP (ROP) | 2026-11-06 | abwaerts | 490.89 | 0.881 | 2.553 | 13 |
 | ROST (ROST) | 2025-12-10 | aufwaerts | 177.69 | 0.14 | 0.253 | 241 |
 | ROST (ROST) | 2026-03-04 | aufwaerts | 199.33 | 2.965 | 7.736 | 185 |
-| RWE.DE (RWE.DE) | 2026-01-06 | aufwaerts | 47.24 | 0.106 | 0.191 | 229 |
 | RY (RY) | 2026-04-08 | aufwaerts | 165.6 | 1.294 | 2.289 | 161 |
 | RY (RY) | 2026-11-17 | abwaerts | 199.22 | 0.307 | 0.522 | 6 |
 | SAN (SAN) | 2026-10-19 | abwaerts | 12.012 | 0.38 | 0.932 | 28 |
 | SAN (SAN) | 2026-11-17 | abwaerts | 11.022 | 0.226 | 0.653 | 7 |
-| SAP.DE (SAP.DE) | 2026-07-27 | aufwaerts | 141.32 | 0.179 | 0.75 | 88 |
-| SAP.DE (SAP.DE) | 2026-08-03 | aufwaerts | 158.26 | 0.267 | 1.099 | 83 |
-| SAP.DE (SAP.DE) | 2026-09-14 | aufwaerts | 178.84 | 0.328 | 1.107 | 53 |
 | Zucker (SB=F) | 2026-10-26 | abwaerts | 20.02 | 0.258 | 0.849 | 22 |
 | SBUX (SBUX) | 2026-10-15 | aufwaerts | 93.42 | 0.562 | 1.499 | 29 |
 | SCCO (SCCO) | 2026-10-30 | abwaerts | 185.5247 | 0.546 | 2.412 | 18 |
@@ -1817,9 +1582,6 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | SCHW (SCHW) | 2026-11-04 | aufwaerts | 89.42 | 0.774 | 1.767 | 15 |
 | SHEL (SHEL) | 2026-09-01 | aufwaerts | 33.4453 | 0.833 | 1.643 | 62 |
 | SHEL (SHEL) | 2026-11-02 | abwaerts | 40.28 | 0.505 | 1.03 | 18 |
-| SHL.DE (SHL.DE) | 2026-01-19 | abwaerts | 46.3 | 1.633 | 2.765 | 220 |
-| SHL.DE (SHL.DE) | 2026-07-27 | aufwaerts | 35.06 | 0.617 | 1.54 | 88 |
-| SHL.DE (SHL.DE) | 2026-10-09 | aufwaerts | 38.56 | 0.25 | 0.519 | 34 |
 | SHOP (SHOP) | 2026-07-27 | aufwaerts | 114.6 | 0.573 | 3.137 | 86 |
 | SHW (SHW) | 2026-06-03 | aufwaerts | 295.57 | 0.594 | 1.671 | 122 |
 | SHW (SHW) | 2026-11-02 | aufwaerts | 335.06 | 0.605 | 1.728 | 17 |
@@ -1840,9 +1602,6 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | Silber (SI=F) | 2026-11-20 | abwaerts | 44.318 | 1.247 | 4.723 | 3 |
 | Silber (SI=F) | 2026-11-24 | abwaerts | 42.125 | 0.747 | 3.157 | 1 |
 | Silber (SI=F) | 2026-11-25 | aufwaerts | 40.76 | 0.549 | 2.318 | 0 |
-| SIE.DE (SIE.DE) | 2026-04-08 | aufwaerts | 215.55 | 1.585 | 6.704 | 165 |
-| SIE.DE (SIE.DE) | 2026-04-14 | aufwaerts | 229.65 | 0.196 | 0.74 | 161 |
-| SIE.DE (SIE.DE) | 2026-11-20 | abwaerts | 266.9 | 0.799 | 2.417 | 4 |
 | SKHY (SKHY) | 2025-12-23 | aufwaerts | 580000.0 | 0.189 | 0.862 | 225 |
 | SKHY (SKHY) | 2025-12-29 | aufwaerts | 605000.0 | 0.975 | 4.132 | 222 |
 | SKHY (SKHY) | 2026-04-08 | aufwaerts | 933000.0 | 1.086 | 7.931 | 156 |
@@ -1892,8 +1651,6 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | STX (STX) | 2026-11-04 | abwaerts | 599.02 | 0.577 | 4.913 | 15 |
 | STX (STX) | 2026-11-24 | abwaerts | 510.14 | 0.164 | 1.686 | 1 |
 | STX (STX) | 2026-11-25 | abwaerts | 473.96 | 0.438 | 4.838 | 0 |
-| SY1.DE (SY1.DE) | 2026-06-09 | aufwaerts | 76.02 | 0.49 | 1.342 | 122 |
-| SY1.DE (SY1.DE) | 2026-11-25 | aufwaerts | 95.32 | 0.341 | 0.755 | 1 |
 | SYK (SYK) | 2026-03-05 | abwaerts | 380.87 | 0.435 | 0.982 | 184 |
 | SYK (SYK) | 2026-03-06 | abwaerts | 368.44 | 0.208 | 0.508 | 183 |
 | T (T) | 2026-04-08 | abwaerts | 27.92 | 1.053 | 2.471 | 161 |
@@ -1954,15 +1711,6 @@ _Je Wert und Richtung: von den Luecken, die nach X Tagen noch offen waren, wurde
 | VLO (VLO) | 2026-01-05 | aufwaerts | 165.67 | 2.672 | 8.463 | 225 |
 | VLO (VLO) | 2026-03-02 | aufwaerts | 205.03 | 1.481 | 4.858 | 187 |
 | VLO (VLO) | 2026-07-08 | aufwaerts | 269.54 | 0.247 | 0.916 | 99 |
-| VNA.DE (VNA.DE) | 2026-03-19 | abwaerts | 24.37 | 0.529 | 1.97 | 177 |
-| VNA.DE (VNA.DE) | 2026-07-08 | abwaerts | 22.37 | 0.61 | 1.654 | 101 |
-| VNA.DE (VNA.DE) | 2026-08-17 | abwaerts | 20.53 | 0.127 | 0.292 | 73 |
-| VNA.DE (VNA.DE) | 2026-08-31 | abwaerts | 19.815 | 0.272 | 0.555 | 63 |
-| VNA.DE (VNA.DE) | 2026-09-07 | abwaerts | 19.1 | 0.675 | 1.466 | 58 |
-| VNA.DE (VNA.DE) | 2026-11-25 | aufwaerts | 17.175 | 0.127 | 0.32 | 1 |
-| VOW3.DE (VOW3.DE) | 2026-03-02 | abwaerts | 100.5 | 0.769 | 1.99 | 190 |
-| VOW3.DE (VOW3.DE) | 2026-06-17 | abwaerts | 88.58 | 0.338 | 0.881 | 116 |
-| VOW3.DE (VOW3.DE) | 2026-11-06 | abwaerts | 71.8 | 0.175 | 0.557 | 14 |
 | VRSK (VRSK) | 2026-10-15 | aufwaerts | 181.27 | 0.756 | 2.311 | 29 |
 | VRSK (VRSK) | 2026-10-30 | aufwaerts | 192.46 | 0.62 | 2.032 | 18 |
 | VRTX (VRTX) | 2026-06-04 | aufwaerts | 429.01 | 0.515 | 1.385 | 121 |

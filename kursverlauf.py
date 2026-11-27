@@ -143,10 +143,13 @@ TSM SPCX SKHY SHOP HSBC RY SHEL NVS MUFG TM BHP SAN TTE TD NVO SMFG RIO BBVA
 UBS SONY PBR UL MFG BTI BMO HDB BNS ENB EQNR ING CNQ CM SNY IBN GSK BP
 APP AXON CCEP CVX GFS MSTR ANT""".split()
 
-DAX = """ADS.DE AIR.DE ALV.DE BAS.DE BAYN.DE BEI.DE BMW.DE BNR.DE CBK.DE CON.DE
-DTG.DE DBK.DE DB1.DE DHL.DE DTE.DE EOAN.DE FRE.DE HNR1.DE HEI.DE HEN3.DE
-IFX.DE MBG.DE MRK.DE MTX.DE MUV2.DE P911.DE PAH3.DE QIA.DE RHM.DE RWE.DE SAP.DE
-SRT3.DE SIE.DE ENR.DE SHL.DE SY1.DE VOW3.DE VNA.DE ZAL.DE""".split()
+# 27.11.2026 (Peter): DAX-Einzelaktien aus dem Screening genommen - gekauft
+# wird nur noch in den USA. Der DAX-Index (^GDAXI) bleibt in WEITERE, er
+# traegt die Stimmungsmessung. Gleich in universe.json, marktdaten.py,
+# kursverlauf.py. Bisherige Liste: ADS AIR ALV BAS BAYN BEI BMW BNR CBK CON
+# DTG DBK DB1 DHL DTE EOAN FRE HNR1 HEI HEN3 IFX MBG MRK MTX MUV2 P911 PAH3
+# QIA RHM RWE SAP SRT3 SIE ENR SHL SY1 VOW3 VNA ZAL (jeweils .DE).
+DAX: list[str] = []
 
 # Rohstoffe und Waehrung bewusst mit drin: Gold wurde gehandelt (zwei
 # Positionen im August 2026), also muss es auch auswertbar sein.

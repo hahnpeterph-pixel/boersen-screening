@@ -1,6 +1,6 @@
 # Marktdaten
 
-_Erstellt 2026-11-27 06:41 UTC. 258 Werte, Fenster 90 Kalendertage. EUR/USD 1.097._
+_Erstellt 2026-11-27 14:51 UTC. 258 Werte, Fenster 90 Kalendertage. EUR/USD 1.097._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
@@ -222,6 +222,7 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | CEG (CEG) | 235.28 | - | - | ja | 38.91 |
 | DDOG (DDOG) | 158.25 | ja | - | - | 29.94 |
 | TMUS (TMUS) | 166.25 | - | - | ja | 53.73 |
+| EQNR (EQNR) | 383.7 | ja | - | - | 38.88 |
 | IBN (IBN) | 1611.0 | - | ja | ja | 64.91 |
 | Gold (GC=F) | 3535.8 | - | - | ja | 29.16 |
 | Weizen (ZW=F) | 565.5 | ja | - | ja | 31.18 |

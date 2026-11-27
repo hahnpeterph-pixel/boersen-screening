@@ -1,21 +1,14 @@
 ticker,boerse,fehlend,gefuellt,wochenkontrolle
-ASML,Euronext,,2026-11-26:archiv,
-AZN,LSE,,2026-11-26:stunden,
-BBVA,BME,,2026-11-26:stunden,
-BP,LSE,,2026-11-26:stunden,
-BTI,LSE,,2026-11-26:stunden,
-EQNR,OSL,,2026-11-26:stunden,
-GSK,LSE,,2026-11-26:stunden,
-HSBC,LSE,,2026-11-26:stunden,
-ING,Euronext,,2026-11-26:stunden,
-NVO,CPH,,2026-11-26:stunden,
-PBR,B3,,2026-11-26:stunden,
-RIO,LSE,,2026-11-26:stunden,
-SAN,BME,,2026-11-26:stunden,
-SHEL,LSE,,2026-11-26:stunden,
+BABA,HKEX,2026-11-27,,2026-11-27: Wochentief 79.50 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+BHP,ASX,2026-11-27,,2026-11-27: Wochentief 50.94 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+HDB,NSE,2026-11-27,,2026-11-27: Wochentief 814.05 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+IBN,NSE,2026-11-27,,2026-11-27: Wochentief 1584.90 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+MFG,TSE,2026-11-27,,2026-11-27: Wochentief 7345.00 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+MUFG,TSE,2026-11-27,,2026-11-27: Wochentief 3048.00 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+SKHY,KRX,2026-11-27,,2026-11-27: Wochentief 1022000.00 liegt UNTER allen bekannten Tagestiefs (1027000.00) - der fehlende Tag hatte ein tieferes Tief
+SMFG,TSE,2026-11-27,,2026-11-27: Wochentief 2942.50 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
 SNDK,USA,,2026-11-20:archiv 2026-11-23:archiv 2026-11-24:archiv 2026-11-25:archiv,
-SNY,Euronext,,2026-11-26:stunden,
-TSM,TWSE,2026-10-23,,2026-10-23: Wochentief 2385.00 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
-TTE,Euronext,,2026-11-26:stunden,
-UL,LSE,,2026-11-26:stunden,
+SONY,TSE,2026-11-27,,2026-11-27: Wochentief 4282.00 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+TM,TSE,2026-11-27,,2026-11-27: Wochentief 3290.00 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
+TSM,TWSE,2026-10-23 2026-11-27,,2026-10-23: Wochentief 2385.00 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle); 2026-11-27: Wochentief 1970.00 = bekanntes Tief - kein Hinweis auf ein tieferes Tief am fehlenden Tag (Kontrolle aus derselben Quelle)
 ^TNX,USA,,2026-10-12:stunden 2026-11-11:stunden,

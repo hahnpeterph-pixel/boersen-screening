@@ -3,37 +3,37 @@
  "ranks": {
   "turnaround": [
    "ADSK",
-   "BTI",
    "SPGI",
-   "HON",
-   "ZS",
-   "TJX",
-   "LMT",
-   "CTSH",
-   "VRSK",
-   "NEE",
    "AMT",
-   "KDP",
+   "HON",
+   "NEE",
    "SYK",
+   "TJX",
+   "VRSK",
+   "MO",
+   "NVS",
    "AZN",
-   "MO"
+   "LMT",
+   "PEP",
+   "KDP",
+   "CDW"
   ],
   "momentum": [
-   "BIIB",
-   "ABBV",
    "AAPL",
+   "BIIB",
    "CSX",
-   "SPOT",
    "V",
-   "TRV",
+   "REGN",
+   "ABBV",
+   "CDW",
    "WELL",
    "CB",
+   "MA",
    "MMM",
-   "MDLZ",
-   "VRTX",
-   "KHC",
    "SPG",
-   "DIS"
+   "COST",
+   "SPOT",
+   "SBUX"
   ],
   "value": [
    "PSX",
@@ -44,11 +44,11 @@
    "VLO",
    "ABNB",
    "TTE",
-   "SCCO",
    "RIO",
    "META",
-   "BLK",
+   "SCCO",
    "REGN",
+   "BLK",
    "V",
    "ODFL"
   ]
@@ -57,62 +57,116 @@
   "turnaround": {
    "entries": [
     {
-     "ticker": "SYK",
+     "ticker": "NVS",
+     "rank": 10
+    },
+    {
+     "ticker": "PEP",
      "rank": 13
     },
     {
-     "ticker": "AZN",
-     "rank": 14
-    },
-    {
-     "ticker": "MO",
+     "ticker": "CDW",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "BEI.DE",
+     "ticker": "BTI",
      "old_rank": 2
     },
     {
-     "ticker": "ADS.DE",
-     "old_rank": 4
+     "ticker": "ZS",
+     "old_rank": 5
     },
     {
-     "ticker": "EOAN.DE",
-     "old_rank": 12
+     "ticker": "CTSH",
+     "old_rank": 8
     }
    ],
-   "moves": []
+   "moves": [
+    {
+     "ticker": "AMT",
+     "rank": 3,
+     "delta": 8
+    },
+    {
+     "ticker": "NEE",
+     "rank": 5,
+     "delta": 5
+    },
+    {
+     "ticker": "SYK",
+     "rank": 6,
+     "delta": 7
+    },
+    {
+     "ticker": "MO",
+     "rank": 9,
+     "delta": 6
+    },
+    {
+     "ticker": "LMT",
+     "rank": 12,
+     "delta": -5
+    }
+   ]
   },
   "momentum": {
    "entries": [
     {
-     "ticker": "DIS",
+     "ticker": "REGN",
+     "rank": 5
+    },
+    {
+     "ticker": "CDW",
+     "rank": 7
+    },
+    {
+     "ticker": "MA",
+     "rank": 10
+    },
+    {
+     "ticker": "COST",
+     "rank": 13
+    },
+    {
+     "ticker": "SBUX",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "HEN3.DE",
+     "ticker": "TRV",
+     "old_rank": 7
+    },
+    {
+     "ticker": "MDLZ",
      "old_rank": 11
+    },
+    {
+     "ticker": "VRTX",
+     "old_rank": 12
+    },
+    {
+     "ticker": "KHC",
+     "old_rank": 13
+    },
+    {
+     "ticker": "DIS",
+     "old_rank": 15
     }
    ],
-   "moves": []
+   "moves": [
+    {
+     "ticker": "SPOT",
+     "rank": 14,
+     "delta": -9
+    }
+   ]
   },
   "value": {
-   "entries": [
-    {
-     "ticker": "ODFL",
-     "rank": 15
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "ENR.DE",
-     "old_rank": 14
-    }
-   ],
+   "entries": [],
+   "exits": [],
    "moves": []
   },
   "analyst_flips": []

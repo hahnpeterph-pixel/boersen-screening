@@ -1,6 +1,6 @@
 # Indizes
 
-Stand Abruf: 28.11.2026 07:56 UTC
+Stand Abruf: 28.11.2026 08:02 UTC
 
 **Marktlage S&P 500:** VIX 23,8 unruhig · Fear & Greed 25 extreme Angst – Risiko für einen Rückgang um 4 % in den nächsten 2 Wochen: **erhöht (24 von 100, sonst 11)**
 

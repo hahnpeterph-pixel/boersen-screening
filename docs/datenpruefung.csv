@@ -1,4 +1,6 @@
 quelle,art,ticker,tag,rohstoff_fx
+kursverlauf,Platzhalter,CC=F,2026-11-27,True
+kursverlauf,Platzhalter,KC=F,2026-11-27,True
 kursverlauf,Platzhalter,^TNX,2026-10-12,True
 kursverlauf,Platzhalter,^TNX,2026-11-11,True
 kursverlauf,fehlt,SNDK,2026-11-27,False

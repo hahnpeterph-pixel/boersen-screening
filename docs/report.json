@@ -55,111 +55,19 @@
  },
  "changes": {
   "turnaround": {
-   "entries": [
-    {
-     "ticker": "ISRG",
-     "rank": 6
-    },
-    {
-     "ticker": "NXPI",
-     "rank": 9
-    },
-    {
-     "ticker": "FAST",
-     "rank": 14
-    },
-    {
-     "ticker": "CDW",
-     "rank": 15
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "ZS",
-     "old_rank": 5
-    },
-    {
-     "ticker": "LMT",
-     "old_rank": 7
-    },
-    {
-     "ticker": "CTSH",
-     "old_rank": 8
-    },
-    {
-     "ticker": "MO",
-     "old_rank": 14
-    }
-   ],
+   "entries": [],
+   "exits": [],
    "moves": []
   },
   "momentum": {
-   "entries": [
-    {
-     "ticker": "LLY",
-     "rank": 1
-    },
-    {
-     "ticker": "CDW",
-     "rank": 4
-    },
-    {
-     "ticker": "BRK-B",
-     "rank": 9
-    },
-    {
-     "ticker": "FAST",
-     "rank": 13
-    },
-    {
-     "ticker": "COST",
-     "rank": 14
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "SPOT",
-     "old_rank": 5
-    },
-    {
-     "ticker": "TRV",
-     "old_rank": 7
-    },
-    {
-     "ticker": "VRTX",
-     "old_rank": 11
-    },
-    {
-     "ticker": "KDP",
-     "old_rank": 12
-    },
-    {
-     "ticker": "DIS",
-     "old_rank": 13
-    }
-   ],
+   "entries": [],
+   "exits": [],
    "moves": []
   },
   "value": {
-   "entries": [
-    {
-     "ticker": "NXPI",
-     "rank": 3
-    }
-   ],
-   "exits": [
-    {
-     "ticker": "MSFT",
-     "old_rank": 5
-    }
-   ],
-   "moves": [
-    {
-     "ticker": "META",
-     "rank": 1,
-     "delta": 10
-    }
-   ]
+   "entries": [],
+   "exits": [],
+   "moves": []
   },
   "analyst_flips": []
  }

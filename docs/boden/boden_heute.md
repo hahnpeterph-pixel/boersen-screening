@@ -1,4 +1,4 @@
-# Boden-Screening 2026-11-27 (Stand 2026-11-28 04:00 UTC)
+# Boden-Screening 2026-11-27 (Stand 2026-11-28 08:02 UTC)
 
 Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RSI < 50 + mind. 2 Boden-Punkte (nur Technik). Die Filter (Analysten, Anker, CRV 2:1) stehen in docs/heute.csv. Boden-Anker = niedrigster Puffer mit 60 % Halterate fuer diese Gruppe und diesen Wert (Vollauf), KO-Marke = Bezugstief - Anker x ATR.
 
@@ -10,7 +10,7 @@ Parallellauf, nur Information. Kandidat = Block-1-Umkehrzeichen + Tief >= 2 + RS
 | BBVA | 3 | 46 | 3.75 | 19.13 | 33 % |
 | HSBC | 2 | 43 | 3.50 | 11.09 | 67 % |
 | ING | 2 | 40 | 2.75 | 24.48 | 33 % |
-| PM | 3 | 41 | 2.50 | 169.61 | 80 % |
+| PM | 3 | 41 | 2.50 | 169.61 | 75 % |
 | RIO | 2 | 39 | 2.75 | 50.66 | 60 % |
 | ROST | 3 | 47 | 2.50 | 188.33 | 80 % |
 | XOM | 2 | 40 | 3.50 | 144.40 | 60 % |

@@ -1,39 +1,39 @@
 {
- "date": "2026-11-27",
+ "date": "2026-11-28",
  "ranks": {
   "turnaround": [
    "ADSK",
+   "BTI",
    "SPGI",
-   "AMT",
    "HON",
-   "NEE",
-   "SYK",
+   "ZS",
    "TJX",
-   "VRSK",
-   "MO",
-   "NVS",
-   "AZN",
    "LMT",
-   "PEP",
+   "CTSH",
+   "VRSK",
+   "NEE",
+   "AMT",
    "KDP",
-   "CDW"
+   "SYK",
+   "MO",
+   "ABBV"
   ],
   "momentum": [
-   "AAPL",
    "BIIB",
-   "CSX",
-   "V",
-   "REGN",
    "ABBV",
-   "CDW",
+   "AAPL",
+   "CSX",
+   "SPOT",
+   "V",
+   "TRV",
    "WELL",
    "CB",
-   "MA",
    "MMM",
-   "SPG",
-   "COST",
-   "SPOT",
-   "SBUX"
+   "VRTX",
+   "KDP",
+   "DIS",
+   "KHC",
+   "MDLZ"
   ],
   "value": [
    "PSX",
@@ -44,11 +44,11 @@
    "VLO",
    "ABNB",
    "TTE",
+   "SCCO",
    "RIO",
    "META",
-   "SCCO",
-   "REGN",
    "BLK",
+   "REGN",
    "V",
    "ODFL"
   ]
@@ -57,56 +57,64 @@
   "turnaround": {
    "entries": [
     {
-     "ticker": "NVS",
-     "rank": 10
+     "ticker": "BTI",
+     "rank": 2
     },
     {
-     "ticker": "PEP",
-     "rank": 13
+     "ticker": "ZS",
+     "rank": 5
     },
     {
-     "ticker": "CDW",
+     "ticker": "CTSH",
+     "rank": 8
+    },
+    {
+     "ticker": "ABBV",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "BTI",
-     "old_rank": 2
+     "ticker": "NVS",
+     "old_rank": 10
     },
     {
-     "ticker": "ZS",
-     "old_rank": 5
+     "ticker": "AZN",
+     "old_rank": 11
     },
     {
-     "ticker": "CTSH",
-     "old_rank": 8
+     "ticker": "PEP",
+     "old_rank": 13
+    },
+    {
+     "ticker": "CDW",
+     "old_rank": 15
     }
    ],
    "moves": [
     {
-     "ticker": "AMT",
-     "rank": 3,
-     "delta": 8
-    },
-    {
-     "ticker": "NEE",
-     "rank": 5,
+     "ticker": "LMT",
+     "rank": 7,
      "delta": 5
     },
     {
+     "ticker": "NEE",
+     "rank": 10,
+     "delta": -5
+    },
+    {
+     "ticker": "AMT",
+     "rank": 11,
+     "delta": -8
+    },
+    {
      "ticker": "SYK",
-     "rank": 6,
-     "delta": 7
+     "rank": 13,
+     "delta": -7
     },
     {
      "ticker": "MO",
-     "rank": 9,
-     "delta": 6
-    },
-    {
-     "ticker": "LMT",
-     "rank": 12,
+     "rank": 14,
      "delta": -5
     }
    ]
@@ -114,53 +122,61 @@
   "momentum": {
    "entries": [
     {
-     "ticker": "REGN",
-     "rank": 5
-    },
-    {
-     "ticker": "CDW",
+     "ticker": "TRV",
      "rank": 7
     },
     {
-     "ticker": "MA",
-     "rank": 10
+     "ticker": "VRTX",
+     "rank": 11
     },
     {
-     "ticker": "COST",
+     "ticker": "KDP",
+     "rank": 12
+    },
+    {
+     "ticker": "DIS",
      "rank": 13
     },
     {
-     "ticker": "SBUX",
+     "ticker": "KHC",
+     "rank": 14
+    },
+    {
+     "ticker": "MDLZ",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "TRV",
+     "ticker": "REGN",
+     "old_rank": 5
+    },
+    {
+     "ticker": "CDW",
      "old_rank": 7
     },
     {
-     "ticker": "MDLZ",
-     "old_rank": 11
+     "ticker": "MA",
+     "old_rank": 10
     },
     {
-     "ticker": "VRTX",
+     "ticker": "SPG",
      "old_rank": 12
     },
     {
-     "ticker": "KHC",
+     "ticker": "COST",
      "old_rank": 13
     },
     {
-     "ticker": "DIS",
+     "ticker": "SBUX",
      "old_rank": 15
     }
    ],
    "moves": [
     {
      "ticker": "SPOT",
-     "rank": 14,
-     "delta": -9
+     "rank": 5,
+     "delta": 9
     }
    ]
   },

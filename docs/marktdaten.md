@@ -1,12 +1,12 @@
 # Marktdaten
 
-_Erstellt 2026-11-27 14:51 UTC. 258 Werte, Fenster 90 Kalendertage. EUR/USD 1.097._
+_Erstellt 2026-11-28 01:50 UTC. 258 Werte, Fenster 90 Kalendertage. EUR/USD 1.0972._
 
 Reiner Datenabzug. Knock-out-Schwellen, Positionsgroessen und Regelpruefung werden bewusst NICHT hier gerechnet - sie aendern sich staendig und wuerden diese Datei pflegebeduerftig machen.
 
 Vollstaendige Daten: `docs/marktdaten.csv`
 
-> **Standwarnung: 204 von 234 Aktien haengen zurueck.** Neuester Handelstag 2026-11-26. Fuer die folgenden Werte gelten Kurs, ATR, RSI und Tiefs NICHT fuer diesen Tag. Die Spalte `stand_zurueck` in der CSV markiert sie ebenfalls.
+> **Standwarnung: 221 von 234 Aktien haengen zurueck.** Neuester Handelstag 2026-11-27. Fuer die folgenden Werte gelten Kurs, ATR, RSI und Tiefs NICHT fuer diesen Tag. Die Spalte `stand_zurueck` in der CSV markiert sie ebenfalls.
 >
 > | Wert | letzte Kerze |
 > |---|---|
@@ -26,7 +26,6 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 > | AMT | 2026-11-25 |
 > | AMZN | 2026-11-25 |
 > | ANET | 2026-11-25 |
-> | ANT | 2026-11-25 |
 > | APH | 2026-11-25 |
 > | APP | 2026-11-25 |
 > | ARM | 2026-11-25 |
@@ -214,6 +213,24 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 > | XEL | 2026-11-25 |
 > | XOM | 2026-11-25 |
 > | ZS | 2026-11-25 |
+> | BBVA | 2026-11-26 |
+> | BP | 2026-11-26 |
+> | BTI | 2026-11-26 |
+> | EQNR | 2026-11-26 |
+> | GSK | 2026-11-26 |
+> | HDB | 2026-11-26 |
+> | HSBC | 2026-11-26 |
+> | IBN | 2026-11-26 |
+> | ING | 2026-11-26 |
+> | NVO | 2026-11-26 |
+> | NVS | 2026-11-26 |
+> | RIO | 2026-11-26 |
+> | SAN | 2026-11-26 |
+> | SHEL | 2026-11-26 |
+> | SNY | 2026-11-26 |
+> | TTE | 2026-11-26 |
+> | UBS | 2026-11-26 |
+> | UL | 2026-11-26 |
 
 ## Kerzensignale von gestern
 
@@ -222,11 +239,11 @@ Vollstaendige Daten: `docs/marktdaten.csv`
 | CEG (CEG) | 235.28 | - | - | ja | 38.91 |
 | DDOG (DDOG) | 158.25 | ja | - | - | 29.94 |
 | TMUS (TMUS) | 166.25 | - | - | ja | 53.73 |
+| PBR (PBR) | 47.55 | - | ja | ja | 34.61 |
 | EQNR (EQNR) | 383.7 | ja | - | - | 38.88 |
 | IBN (IBN) | 1611.0 | - | ja | ja | 64.91 |
-| Gold (GC=F) | 3535.8 | - | - | ja | 29.16 |
-| Weizen (ZW=F) | 565.5 | ja | - | ja | 31.18 |
-| EUR/BRL (EURBRL=X) | 6.3816 | ja | - | - | 63.82 |
+| EUR/GBP (EURGBP=X) | 0.8369 | ja | - | - | 47.34 |
+| EUR/BRL (EURBRL=X) | 6.1919 | ja | - | - | 49.69 |
 
 ---
 

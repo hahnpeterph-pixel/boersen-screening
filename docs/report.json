@@ -5,48 +5,48 @@
    "ADSK",
    "BTI",
    "SPGI",
-   "HON",
-   "ZS",
    "TJX",
-   "LMT",
-   "CTSH",
    "VRSK",
-   "NEE",
+   "ISRG",
    "AMT",
+   "HON",
+   "NXPI",
    "KDP",
+   "NEE",
+   "ABBV",
    "SYK",
-   "MO",
-   "ABBV"
+   "FAST",
+   "CDW"
   ],
   "momentum": [
-   "BIIB",
+   "LLY",
    "ABBV",
    "AAPL",
+   "CDW",
+   "BIIB",
    "CSX",
-   "SPOT",
    "V",
-   "TRV",
    "WELL",
+   "BRK-B",
    "CB",
    "MMM",
-   "VRTX",
-   "KDP",
-   "DIS",
-   "KHC",
-   "MDLZ"
+   "MDLZ",
+   "FAST",
+   "COST",
+   "KHC"
   ],
   "value": [
+   "META",
    "PSX",
+   "NXPI",
    "MU",
    "NEM",
    "WDC",
-   "MSFT",
    "VLO",
    "ABNB",
    "TTE",
-   "SCCO",
    "RIO",
-   "META",
+   "SCCO",
    "BLK",
    "REGN",
    "V",
@@ -57,133 +57,109 @@
   "turnaround": {
    "entries": [
     {
-     "ticker": "BTI",
-     "rank": 2
+     "ticker": "ISRG",
+     "rank": 6
     },
     {
-     "ticker": "ZS",
-     "rank": 5
+     "ticker": "NXPI",
+     "rank": 9
     },
     {
-     "ticker": "CTSH",
-     "rank": 8
+     "ticker": "FAST",
+     "rank": 14
     },
     {
-     "ticker": "ABBV",
+     "ticker": "CDW",
      "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "NVS",
-     "old_rank": 10
+     "ticker": "ZS",
+     "old_rank": 5
     },
-    {
-     "ticker": "AZN",
-     "old_rank": 11
-    },
-    {
-     "ticker": "PEP",
-     "old_rank": 13
-    },
-    {
-     "ticker": "CDW",
-     "old_rank": 15
-    }
-   ],
-   "moves": [
     {
      "ticker": "LMT",
-     "rank": 7,
-     "delta": 5
+     "old_rank": 7
     },
     {
-     "ticker": "NEE",
-     "rank": 10,
-     "delta": -5
-    },
-    {
-     "ticker": "AMT",
-     "rank": 11,
-     "delta": -8
-    },
-    {
-     "ticker": "SYK",
-     "rank": 13,
-     "delta": -7
+     "ticker": "CTSH",
+     "old_rank": 8
     },
     {
      "ticker": "MO",
-     "rank": 14,
-     "delta": -5
+     "old_rank": 14
     }
-   ]
+   ],
+   "moves": []
   },
   "momentum": {
    "entries": [
     {
-     "ticker": "TRV",
-     "rank": 7
+     "ticker": "LLY",
+     "rank": 1
     },
     {
-     "ticker": "VRTX",
-     "rank": 11
+     "ticker": "CDW",
+     "rank": 4
     },
     {
-     "ticker": "KDP",
-     "rank": 12
+     "ticker": "BRK-B",
+     "rank": 9
     },
     {
-     "ticker": "DIS",
+     "ticker": "FAST",
      "rank": 13
     },
     {
-     "ticker": "KHC",
+     "ticker": "COST",
      "rank": 14
-    },
-    {
-     "ticker": "MDLZ",
-     "rank": 15
     }
    ],
    "exits": [
     {
-     "ticker": "REGN",
+     "ticker": "SPOT",
      "old_rank": 5
     },
     {
-     "ticker": "CDW",
+     "ticker": "TRV",
      "old_rank": 7
     },
     {
-     "ticker": "MA",
-     "old_rank": 10
+     "ticker": "VRTX",
+     "old_rank": 11
     },
     {
-     "ticker": "SPG",
+     "ticker": "KDP",
      "old_rank": 12
     },
     {
-     "ticker": "COST",
+     "ticker": "DIS",
      "old_rank": 13
-    },
+    }
+   ],
+   "moves": []
+  },
+  "value": {
+   "entries": [
     {
-     "ticker": "SBUX",
-     "old_rank": 15
+     "ticker": "NXPI",
+     "rank": 3
+    }
+   ],
+   "exits": [
+    {
+     "ticker": "MSFT",
+     "old_rank": 5
     }
    ],
    "moves": [
     {
-     "ticker": "SPOT",
-     "rank": 5,
-     "delta": 9
+     "ticker": "META",
+     "rank": 1,
+     "delta": 10
     }
    ]
-  },
-  "value": {
-   "entries": [],
-   "exits": [],
-   "moves": []
   },
   "analyst_flips": []
  }
